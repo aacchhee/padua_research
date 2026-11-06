@@ -1,0 +1,44 @@
+{
+  "status": "finite interval check; independent review/rerun required",
+  "N": 8,
+  "theta": 64,
+  "h": "constant 1 on D",
+  "norm_h_squared": "1/24",
+  "arithmetic": "256-bit integer dyadic intervals; exact isqrt",
+  "target_source_outer_cells": 36,
+  "lower_interior_cells": 28,
+  "r": {
+    "lo_integer": "813661781295015610936057954285876456287730052151414173187245469028971515616",
+    "hi_integer": "60432944336358956477390236958074091457081076085871819491667696799177780623288",
+    "binary_scale_bits": 256,
+    "decimal_lo": "0.007026920290102146979525",
+    "decimal_hi": "0.521909093569436129911493"
+  },
+  "c_minus": {
+    "lo_integer": "-60432944336358956477390236958074091457081076085871819491667696799177780623288",
+    "hi_integer": "-813661781295015610936057954285876456287730052151414173187245469028971515616",
+    "binary_scale_bits": 256,
+    "decimal_lo": "-0.521909093569436129911493",
+    "decimal_hi": "-0.007026920290102146979525"
+  },
+  "c_plus_scope": "inherited strict positivity; c_plus<=r<=U only, no improved positive spectral certificate",
+  "strict_positive_lower": true,
+  "seconds": 0.16968610899999703,
+  "cpu_seconds": 0.169472752,
+  "round2_trigger": true,
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/P1_rectangle.py",
+    "--N",
+    "8",
+    "--theta",
+    "64",
+    "--output",
+    "/tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit2/P1/P1-N8.json"
+  ],
+  "python": "3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ]",
+  "platform": "Linux-6.18.44-fc-v242-x86_64-with-glibc2.39",
+  "producer_sha256": "c65b45fc2d4748e21ae7540bb47824dbc033f0d22917e49ac68084b7c1652963",
+  "arithmetic_sha256": "8a90618d19ffd8f8efde50bc9002b0b0e26f62d243b4086c674cedcf657945fc",
+  "protocol_sha256": "020c957b49c0c50bf8176d37b87fb3bd5196439f262618950b7fd0a382a9aded",
+  "reduction_sha256": "4cee5449c0b1634e4d868a41c474b0c938a5394bc87e8f45e197219508a911a9"
+}

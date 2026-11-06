@@ -1,0 +1,127 @@
+{
+  "status": "MEASURED",
+  "rigorous_enclosures": false,
+  "source_head": "0205690b9c4e959a28e949083e9a1808735abf4b",
+  "protocol_commit": "d03e74dcf94020ba26d9fae84d3ff6c5519db901",
+  "identities": {
+    "topics/padua-mz-sharp-constants-20261106/code/P2_modes.py": "8e15fe58b19a1ef1a2ff71da80d18de04349d90081e02a885bcbb38b143d1161",
+    "topics/padua-mz-2d-frontier-20261105/code/g1_spectral.py": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+    "tracks/mz-constants/code/mz2d_spectra.py": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+    "topics/padua-mz-2d-20261101/definitions.md": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+    "topics/padua-mz-sharp-constants-20261106/ideas/P2-protocol.md": "2dc19f83257528f338ce642d6a9f2b63963627d1f816294610a9e075bdb50f39"
+  },
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/P2_modes.py",
+    "model",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/P2-b2-calibration.json"
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "seed": 1,
+  "tol": 1e-09,
+  "ncv": 40,
+  "maxiter": 3000,
+  "results": [
+    {
+      "order": 128,
+      "K": 16,
+      "nodes": 26,
+      "rank": 26,
+      "gram_min": 0.00022321004893304923,
+      "gram_max": 0.04726945480358777,
+      "largest_discarded": 0.0,
+      "low4": [
+        -0.13331539897257771,
+        -0.09553548888365128,
+        -0.039537670479894704,
+        -0.03421580074602683
+      ],
+      "b2": -0.09553548888365128,
+      "tail_bound": 7.5
+    },
+    {
+      "order": 128,
+      "K": 32,
+      "nodes": 59,
+      "rank": 59,
+      "gram_min": 0.00010465554300230712,
+      "gram_max": 0.047282706466530246,
+      "largest_discarded": 0.0,
+      "low4": [
+        -0.13366182820469658,
+        -0.09552827572107567,
+        -0.03963137964190013,
+        -0.0340277701866554
+      ],
+      "b2": -0.09552827572107567,
+      "tail_bound": 3.75
+    },
+    {
+      "order": 128,
+      "K": 64,
+      "nodes": 142,
+      "rank": 142,
+      "gram_min": 4.429070522676672e-05,
+      "gram_max": 0.047292007009973505,
+      "largest_discarded": 0.0,
+      "low4": [
+        -0.13356329196245498,
+        -0.09552988626610408,
+        -0.03963468302656495,
+        -0.034168040362175
+      ],
+      "b2": -0.09552988626610408,
+      "tail_bound": 1.875
+    },
+    {
+      "order": 128,
+      "K": 128,
+      "nodes": 323,
+      "rank": 323,
+      "gram_min": 2.751896762713831e-06,
+      "gram_max": 0.04729367309610372,
+      "largest_discarded": 0.0,
+      "low4": [
+        -0.13358000212000087,
+        -0.0955298083997758,
+        -0.03963525902754041,
+        -0.03415856678993304
+      ],
+      "b2": -0.0955298083997758,
+      "tail_bound": 0.9375
+    },
+    {
+      "order": 160,
+      "K": 128,
+      "nodes": 323,
+      "rank": 323,
+      "gram_min": 2.030302740482418e-05,
+      "gram_max": 0.04729367309610386,
+      "largest_discarded": 0.0,
+      "low4": [
+        -0.13358000212000062,
+        -0.09552980839977611,
+        -0.03963525902753881,
+        -0.03415856678991326
+      ],
+      "b2": -0.09552980839977611,
+      "tail_bound": 0.9375
+    }
+  ],
+  "registered_b2": -0.0955298083997758,
+  "checks": {
+    "K_difference": 7.78663282741121e-08,
+    "audit_proxy_difference": 2.9808399775801964e-05,
+    "quadrature_difference": 3.0531133177191805e-16
+  },
+  "calibration_pass": true,
+  "cpu_seconds": 0.770505124,
+  "wall_seconds": 0.7712660990000586
+}

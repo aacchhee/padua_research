@@ -1,0 +1,45 @@
+{
+  "J": 512,
+  "arithmetic": "integer dyadic outward intervals",
+  "bits": 256,
+  "target": "10044369/10000000",
+  "denominator_positive": true,
+  "numerator": {
+    "lo_integer": "116305849342432471227689603465235047943630362852280221324816633460929077351851",
+    "hi_integer": "116305849342432471227689612317099969675439325368927733460764174600641388932981",
+    "binary_scale_bits": 256,
+    "decimal_lo": "1.004436918864667197598902",
+    "decimal_hi": "1.004436918864667197598903"
+  },
+  "denominator": {
+    "lo_integer": "115792089237316185871550240837028218671690902879419349208392029151524561013052",
+    "hi_integer": "115792089237316185871550595945743738458489198142062234804539687116533503027913",
+    "binary_scale_bits": 256,
+    "decimal_lo": "0.999999999999999917507138",
+    "decimal_hi": "0.999999999999999917507142"
+  },
+  "quotient": {
+    "lo_integer": "116305849342432480822091531988099090144867257093130662113780343045029786815708",
+    "hi_integer": "116305849342432480822091897524268090561013385863202042963137816062543494955443",
+    "binary_scale_bits": 256,
+    "decimal_lo": "1.004436918864667280457774",
+    "decimal_hi": "1.004436918864667280457779"
+  },
+  "finite_threshold_pass": true,
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/P4_rayleigh.py",
+    "--trial",
+    "topics/padua-mz-sharp-constants-20261106/evidence/P4-trial-J512.json",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/P4-rayleigh.json"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "producer_sha256": "7bcf4032590cf07c12943ecd5b9bf1f3cef18f32240d884acba60ad5047947eb",
+  "arithmetic_sha256": "8a90618d19ffd8f8efde50bc9002b0b0e26f62d243b4086c674cedcf657945fc",
+  "protocol_sha256": "101bc61acd673f71195b1e0c002101106f1e6d15dbc7b2b679eb614807d84a77",
+  "trial_sha256": "a472d397b6a802d7bfe9c06bdb25d2f572d18134726b8dad9f695772f0956da8",
+  "seconds": 5.671584972000346,
+  "cpu_seconds": 5.664794012,
+  "status": "finite check; independent rerun/proof review required"
+}

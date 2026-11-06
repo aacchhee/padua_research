@@ -201,9 +201,9 @@ Authoritative batch reservations, integration order and allocation owner: [share
 
 | Original target ID / file | Split result ID / file | Relation / exact scope | Source commit | Reason / history |
 |---|---|---|---|---|
-| M2 endpoint order in plan | PD-T017; PD-T018 | lower and matching upper inequalities, both PROVED | 2dc9264 | substantive separate statements; sharp constant PD-T020 stays OPEN |
+| M2 endpoint order in plan | PD-T017; PD-T018 | lower and matching upper inequalities, both PROVED | 2dc9264 | substantive separate statements; sharp constant PD-T020 now PROVED via PD-T546/523 |
 | PD-T024 fixed-ratio MZ | PD-T022; PD-T023 | explicit upper and lower spectral intervals, both PROVED | 2dc9264 | original target remains PROVED by the two parts |
-| M1 sharp strengthening | PD-T014 vs PD-T027 | strict threshold PROVED; stronger sharp limit/uniform gap OPEN | 2dc9264 | no silent narrowing of sharp target |
+| M1 sharp strengthening | PD-T014 vs PD-T027 | strict threshold PROVED; sharper target PD-T027 now PARTIAL via PD-T526/530 | 2dc9264 | no silent narrowing of sharp target |
 | M4 two-dimensional target PD-T028 | PD-T021 marginal compression | supporting reduction only; main target stays OPEN | 2dc9264 | signed-weight upper spectrum does not follow from compression |
 
 ## Audit-01 literature response additions
@@ -225,7 +225,7 @@ Same authoritative [batch ledger](topics/padua-batch-20261031/ALLOCATIONS.md); n
 | PD-T014 | PD-T015 | Independent supporting mass inequality split during the original quantitative refinement; original application retained but dominated by PD-T022 |
 | PD-T019 | PD-T018 | Simple U prototype extended to a different admissible harmonic-U witness; matching-order theorem has its own independent proof |
 | PD-T019 | PD-N004 | Exact U norms used for a separately registered finite eta counterexample |
-| PD-T014 | PD-T027 | Proved strict threshold retained separately from stronger OPEN sharp-limit target |
+| PD-T014 | PD-T027 | Proved strict threshold retained separately from stronger PARTIAL sharp-limit target PD-T027 |
 | PD-T021 | PD-T028 | Proved marginal reduction supports an independently OPEN full2Dtarget, not a proved case of it |
 
 ## Lattice campaign — final allocation (2026-11-01)
@@ -1280,7 +1280,7 @@ Source: [audit-01](topics/padua-mz-2d-frontier-20261105/audit-01.md) and [respon
 | IDEA?mz2d-frontier-codex-f4-02 | IDEA-396 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f4.md) |
 | IDEA?mz2d-frontier-codex-f4-03 | IDEA-397 | retained candidate; [candidate records](topics/padua-mz-2d-frontier-20261105/ideas-f4.md) |
 
-Original-target mapping: PD-T028 positivity/endpoint-order/eta assertions are refuted by PD-N105/106; PD-T110 upper assertion by PD-N106; PD-T116 universal fixed-ratio assertion by PD-N107. Per AC, all three Status cells remain exactly OPEN with REJECTED: refuted disposition, while their negative statements are PROVED under the new IDs. PD-T114 is PROVED at its unchanged endpoint target via the stronger all-n<m PD-T297 theorem. The positive reference PD-T296 is supporting context, not a signed transfer or proved parameter slice. Historical f3-signed-target-open remains the existing PD-T116 continuation and receives no duplicate ID. PD-T027 remains OPEN.
+Original-target mapping: PD-T028 positivity/endpoint-order/eta assertions are refuted by PD-N105/106; PD-T110 upper assertion by PD-N106; PD-T116 universal fixed-ratio assertion by PD-N107. Per AC, all three Status cells remain exactly OPEN with REJECTED: refuted disposition, while their negative statements are PROVED under the new IDs. PD-T114 is PROVED at its unchanged endpoint target via the stronger all-n<m PD-T297 theorem. The positive reference PD-T296 is supporting context, not a signed transfer or proved parameter slice. Historical f3-signed-target-open remains the existing PD-T116 continuation and receives no duplicate ID. PD-T027 is now PARTIAL via PD-T526/530, with decimal value OPEN.
 
 Permanent unused gaps: T301–323,N108–115,IDEA398–413,LIT574–581. No new LIT assignment, no reuse of another topic’s reservation, and no effective finite onset or exact m1600 certificate.
 
@@ -1342,7 +1342,7 @@ Reservation first published ee490356ce51d5e2f4a84f2c45e6ccb98a19bd90, [PR26](htt
 | PD-T?mz-cleanup-codex-03 | PD-T378 | [record](topics/padua-mz-cleanup-20261105/theory/odd-carriers.md); PROVED |
 | PD-T?mz-cleanup-codex-04 | PD-T379 | [record](topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md); PROVED |
 | PD-T?mz-cleanup-codex-05 | PD-T380 | [record](topics/padua-mz-cleanup-20261105/theory/finite-measurements.md); MEASURED |
-| PD-T?mz-cleanup-codex-06 | PD-T381 | [record](topics/padua-mz-cleanup-20261105/theory/sharp-growth-open.md); OPEN |
+| PD-T?mz-cleanup-codex-06 | PD-T381 | [record](topics/padua-mz-cleanup-20261105/theory/sharp-growth-open.md); PARTIAL (existence/agreement/operator characterization PROVED; decimals OPEN) |
 | IDEA?mz-cleanup-codex-01 | IDEA-466 | [candidate](topics/padua-mz-cleanup-20261105/novelty-gate-math.md); active (PROVED outcome) |
 | IDEA?mz-cleanup-codex-02 | IDEA-467 | [candidate](topics/padua-mz-cleanup-20261105/novelty-gate-math.md); active (PROVED outcome) |
 | IDEA?mz-cleanup-codex-03 | IDEA-468 | [candidate](topics/padua-mz-cleanup-20261105/novelty-gate-math.md); active (PROVED outcome) |
@@ -1350,7 +1350,7 @@ Reservation first published ee490356ce51d5e2f4a84f2c45e6ccb98a19bd90, [PR26](htt
 | IDEA?mz-cleanup-codex-05 | IDEA-470 | [candidate](topics/padua-mz-cleanup-20261105/novelty-gate-math.md); deferred |
 | IDEA?mz-cleanup-codex-06 | IDEA-471 | [candidate](topics/padua-mz-cleanup-20261105/novelty-gate-math.md); abandoned |
 
-Original C3 target PD-T381 remains OPEN; split/support PD-T379 is PROVED. These supporting bounds are not a proved conjunct of the target and do not make it PARTIAL. PD-T377/378 extend PD-T295/PD-N105–107 without splitting or narrowing accepted statements. Permanent unused gaps: T382–391, N138–145, IDEA472–489; no LIT assignment.
+Original C3 target PD-T381 is now PARTIAL via PD-T534/535/536: both parity limits, agreement and operator characterization are PROVED; decimal values remain OPEN. Split/support PD-T379 is PROVED and remains supporting rather than a target conjunct. PD-T377/378 extend PD-T295/PD-N105–107 without splitting or narrowing accepted statements. Permanent unused gaps: T382–391, N138–145, IDEA472–489; no LIT assignment.
 
 
 ## Effective Padua argmax phase2 — final mapping
@@ -1692,3 +1692,65 @@ The handoff01 label `PD-T?nn-mop-stability-codex-NN` is an identifier-template p
 | IDEA?nn-mop-cond-codex-C3-03 | IDEA-601 | [record](topics/nn-mop-conditioning-20261106/attempts/C3.md) | deferred |
 | IDEA?nn-mop-cond-codex-C3-04 | IDEA-602 | [record](topics/nn-mop-conditioning-20261106/attempts/C3.md) | abandoned |
 | IDEA?nn-mop-cond-codex-response-gauge-01; IDEA?nn-mop-cond-response-gauge | IDEA-603 | [record](topics/nn-mop-conditioning-20261106/response-gauge-candidate.md) | retained; alternatives deferred/abandoned |
+
+Sharp MZ constants reserves PD-T522–553, IDEA-608–615 and LIT-633–635 in its [topic ledger](topics/padua-mz-sharp-constants-20261106/ALLOCATIONS.md), after the full main/open-PR/retired union refresh; no PD-N range. Final assignments are recorded below and in the final map.
+
+
+## Sharp CC / signed Padua constants — final mappings and preserved targets
+
+[Reservation ledger](topics/padua-mz-sharp-constants-20261106/ALLOCATIONS.md), first published `dd57b6439d539164cdee7ab01a11b6080a03af10`; [complete final map](topics/padua-mz-sharp-constants-20261106/final-id-map.json). All 27 theory records, fourteen candidate records and one literature record retain their provisional aliases. Four new IDEA identities consolidate the P1/P2/P4 continuations; existing IDEA-071/386/469/470 retain their predecessor identities and all their continuation records.
+
+| Provisional alias / shorthand | Final ID | Durable record / scope and disposition |
+|---|---|---|
+| `PD-T?mz-sharp-codex-P1-01`; `P1-01` | PD-T539 | [record](topics/padua-mz-sharp-constants-20261106/theory/P1-elliptic-kernel.md); PROVED |
+| `PD-T?mz-sharp-codex-P1-04`; `P1-04` | PD-T542 | [record](topics/padua-mz-sharp-constants-20261106/theory/P1-numeric-certificate.md); PROVED |
+| `PD-T?mz-sharp-codex-P1-02`; `P1-02` | PD-T540 | [record](topics/padua-mz-sharp-constants-20261106/theory/P1-positive-spectrum.md); PROVED |
+| `PD-T?mz-sharp-codex-P1-03`; `P1-03` | PD-T541 | [record](topics/padua-mz-sharp-constants-20261106/theory/P1-rectangle-certificate.md); PROVED |
+| `PD-T?mz-sharp-codex-P2-01`; `P2-01`; `P2-measurements` | PD-T543 | [record](topics/padua-mz-sharp-constants-20261106/theory/P2-measurements.md); MEASURED |
+| `PD-T?mz-sharp-codex-P3-02`; `P3-02` | PD-T545 | [record](topics/padua-mz-sharp-constants-20261106/theory/P3-discrete-primitive.md); PROVED |
+| `PD-T?mz-sharp-codex-P3-03`; `P3-03` | PD-T546 | [record](topics/padua-mz-sharp-constants-20261106/theory/P3-reverse-bound.md); PROVED |
+| `PD-T?mz-sharp-codex-P3-01`; `P3-01` | PD-T544 | [record](topics/padua-mz-sharp-constants-20261106/theory/P3-signed-remainder.md); PROVED |
+| `PD-T?mz-sharp-codex-P4-01`; `P4-01` | PD-T547 | [record](topics/padua-mz-sharp-constants-20261106/theory/P4-certified-lower.md); PROVED |
+| `PD-T?mz-sharp-codex-P4-02`; `P4-02` | PD-T548 | [record](topics/padua-mz-sharp-constants-20261106/theory/P4-denominator-closed-form.md); PROVED |
+| `PD-T?mz-sharp-codex-901`; `901`; `S1-measured` | PD-T525 | [record](topics/padua-mz-sharp-constants-20261106/theory/S1-measured.md); MEASURED |
+| `PD-T?mz-sharp-codex-904`; `904`; `S1-model` | PD-T524 | [record](topics/padua-mz-sharp-constants-20261106/theory/S1-model.md); Historical CONDITIONAL prediction, resolved separately via PD-T546 |
+| `PD-T?mz-sharp-codex-S1-02`; `S1-02` | PD-T523 | [record](topics/padua-mz-sharp-constants-20261106/theory/S1-sharp-one-sided.md); PROVED |
+| `PD-T?mz-sharp-codex-S1-01`; `S1-01` | PD-T522 | [record](topics/padua-mz-sharp-constants-20261106/theory/S1-volterra-model.md); PROVED |
+| `PD-T?mz-sharp-codex-S2-03`; `S2-03` | PD-T528 | [record](topics/padua-mz-sharp-constants-20261106/theory/S2-endpoint-model.md); Registered definition/prediction only; no separate epistemic claim; convergence/certificate under PD-T530/531 |
+| `PD-T?mz-sharp-codex-S2-02`; `S2-02` | PD-T527 | [record](topics/padua-mz-sharp-constants-20261106/theory/S2-eta-deficit.md); PROVED |
+| `PD-T?mz-sharp-codex-S2-06`; `S2-06` | PD-T531 | [record](topics/padua-mz-sharp-constants-20261106/theory/S2-finite-certificate.md); PROVED |
+| `PD-T?mz-sharp-codex-S2-04`; `S2-04` | PD-T529 | [record](topics/padua-mz-sharp-constants-20261106/theory/S2-fixed-trial-limit.md); PROVED |
+| `PD-T?mz-sharp-codex-902`; `902`; `S2-measured` | PD-T532 | [record](topics/padua-mz-sharp-constants-20261106/theory/S2-measured.md); MEASURED |
+| `PD-T?mz-sharp-codex-S2-05`; `S2-05` | PD-T530 | [record](topics/padua-mz-sharp-constants-20261106/theory/S2-qualitative-limit.md); PROVED |
+| `PD-T?mz-sharp-codex-S2-01`; `S2-01` | PD-T526 | [record](topics/padua-mz-sharp-constants-20261106/theory/S2-uniform-upper.md); PROVED |
+| `PD-T?mz-sharp-codex-S3-04`; `PD-T?S3-04`; `S3-04` | PD-T537 | [record](topics/padua-mz-sharp-constants-20261106/theory/S3-carrier-family-ceiling.md); PROVED |
+| `PD-T?mz-sharp-codex-S3-kernel`; `S3-kernel` | PD-T535 | [record](topics/padua-mz-sharp-constants-20261106/theory/S3-corner-kernel-hard.md); PROVED |
+| `PD-T?mz-sharp-codex-S3-03`; `S3-03` | PD-T536 | [record](topics/padua-mz-sharp-constants-20261106/theory/S3-corner-operator-limit.md); PROVED |
+| `PD-T?mz-sharp-codex-S3-02`; `S3-02` | PD-T534 | [record](topics/padua-mz-sharp-constants-20261106/theory/S3-full-form-log-model.md); PROVED |
+| `PD-T?mz-sharp-codex-903`; `903`; `S3-measured` | PD-T538 | [record](topics/padua-mz-sharp-constants-20261106/theory/S3-measured.md); MEASURED |
+| `PD-T?mz-sharp-codex-S3-01`; `S3-01` | PD-T533 | [record](topics/padua-mz-sharp-constants-20261106/theory/S3-normalized-carrier-improvement.md); PROVED |
+| `IDEA?mz-sharp-codex-P1-01` | IDEA-608 | [record](topics/padua-mz-sharp-constants-20261106/ideas/P1-kernel.md); Retained candidate |
+| `IDEA?mz-sharp-codex-P1-04` | IDEA-609 | [record](topics/padua-mz-sharp-constants-20261106/ideas/P1-numeric-protocol.md); Retained candidate; numerical protocol and rectangle instance share IDEA-609 |
+| `IDEA?mz-sharp-codex-P1-02` | IDEA-609 | [record](topics/padua-mz-sharp-constants-20261106/ideas/P1-rectangle-certificate.md); Retained candidate; numerical protocol and rectangle instance share IDEA-609 |
+| `IDEA?mz-sharp-codex-P2-01` | IDEA-610 | [record](topics/padua-mz-sharp-constants-20261106/ideas/P2.md); Retained candidate |
+| `IDEA?mz-sharp-codex-P3-01` | IDEA-071 | [record](topics/padua-mz-sharp-constants-20261106/ideas/P3-reverse.md); Retained continuation, consolidated under existing predecessor |
+| `IDEA?mz-sharp-codex-P4-01` | IDEA-611 | [record](topics/padua-mz-sharp-constants-20261106/ideas/P4-rayleigh.md); Retained candidate |
+| `IDEA?mz-sharp-codex-S1-01`; `IDEA?S1-01` | IDEA-071 | [record](topics/padua-mz-sharp-constants-20261106/ideas/S1.md); Resolved via P3; historical deferred stop retained |
+| `IDEA?mz-sharp-codex-S2-04` | IDEA-386 | [record](topics/padua-mz-sharp-constants-20261106/ideas/S2-certificate.md); Retained continuation, consolidated under existing predecessor |
+| `IDEA?mz-sharp-codex-S2-03` | IDEA-386 | [record](topics/padua-mz-sharp-constants-20261106/ideas/S2-compactness.md); Retained continuation, consolidated under existing predecessor |
+| `IDEA?mz-sharp-codex-S2-01` | IDEA-386 | [record](topics/padua-mz-sharp-constants-20261106/ideas/S2-core.md); Retained continuation, consolidated under existing predecessor |
+| `IDEA?mz-sharp-codex-S2-02` | IDEA-386 | [record](topics/padua-mz-sharp-constants-20261106/ideas/S2-endpoint.md); Retained continuation, consolidated under existing predecessor |
+| `IDEA?mz-sharp-codex-S3-01` | IDEA-469 | [record](topics/padua-mz-sharp-constants-20261106/ideas/S3-carrier-variant.md); Retained continuation, consolidated under existing predecessor |
+| `IDEA?mz-sharp-codex-S3-03` | IDEA-470 | [record](topics/padua-mz-sharp-constants-20261106/ideas/S3-corner-operator.md); Retained continuation, consolidated under existing predecessor |
+| `IDEA?mz-sharp-codex-S3-02` | IDEA-470 | [record](topics/padua-mz-sharp-constants-20261106/ideas/S3-full-form-reduction.md); Retained continuation, consolidated under existing predecessor |
+| `LIT?mz-sharp-codex-01` | LIT-633 | [record](topics/padua-mz-sharp-constants-20261106/literature/basor-ehrhardt-1999.md); LITERATURE; source facts only, no inherited local proof |
+
+The nonnumeric provisional `PD-T?mz-sharp-codex-S3-kernel` and shorthand `S3-kernel` map explicitly to PD-T535. Immutable audit/support records retain their historical provisional labels; the mappings above resolve them. `PD-T?S3-04` maps to PD-T537 and `IDEA?S1-01` to IDEA-071. P2-protocol.md is the companion of IDEA-610, not a new candidate; P1 candidate suffix 03 has no record and is not invented.
+
+| Original unchanged target | Split results | Exact decomposition / relationship |
+|---|---|---|
+| PD-T020 | PD-T546 with PD-T523; model/support PD-T522/544/545 | Existence through all N and value pi⁴/8 PROVED; overall PROVED. PD-T017/018 remain supporting comparisons. Historical CONDITIONAL prediction PD-T524 is resolved under the separate theorem. |
+| PD-T027 | PD-T526 and PD-T530; definition/support PD-T527/528/529/531/548 | Uniform gap and existence/operator identification PROVED; decimal-value conjunct OPEN; overall PARTIAL. PD-T547 is one-sided support only. PD-T014/022 remain background. |
+| PD-T381 | PD-T534/535/536, with PD-T539/540/541/542 | Existence on both parities, agreement/full-integer limits and exact inf/sup spectrum(B) characterization PROVED; decimal-values conjunct OPEN; overall PARTIAL. P1 enclosure gives no useful digits. PD-T379 remains supporting packet bounds. |
+
+The original wording and dated decomposition are preserved in each target theory record; [canonical decision](topics/padua-mz-sharp-constants-20261106/LOG.md). No PD-N is created. Unused reserved headroom PD-T549–553, IDEA-612–615 and LIT-634–635 stays permanently unused (permanent gaps of this topic’s reservation; never reallocated).

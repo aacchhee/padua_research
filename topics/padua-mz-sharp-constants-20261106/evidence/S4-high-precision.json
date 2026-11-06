@@ -1,0 +1,116 @@
+{
+  "status": "MEASURED",
+  "fits_executed": false,
+  "pin": "2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861",
+  "preregistration_commit": "e2652c344819ba47621d3e19912dc0c376abd9ca",
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/S4_scan.py",
+    "--suite",
+    "high-precision",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/S4-high-precision.json"
+  ],
+  "started_utc": "2026-11-06T11:37:36.522641+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "mpmath": "1.3.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "code_and_proposal_sha256": {
+    "topics/padua-mz-sharp-constants-20261106/code/S4_scan.py": "d514d10fdd0367b0279bd23f5f07b144e52dad67501ab02f4415df840d14b7d4",
+    "topics/padua-mz-sharp-constants-20261106/code/S4_structured.py": "40e9ffc00edbf8ff9009cfa133646a69815f8423ad8baf4bdd23a69ae604bd8d",
+    "topics/padua-mz-sharp-constants-20261106/S4-scan-proposal.json": "26a8dc6f0943fa76abfa9aecbd2d22574bfa94d13bc7453cd6fb9a8c409f9177"
+  },
+  "seed": 20261106,
+  "tol": 2e-12,
+  "ncv": 40,
+  "maxiter": 3000,
+  "inverse_residual_guard": 1e-09,
+  "constraint_guard": 1e-09,
+  "results": [
+    {
+      "N": 20,
+      "n": 19,
+      "seconds": 0.005723764999970626,
+      "results": {
+        "minimum": {
+          "eigenvalue": 0.3181387355603942,
+          "inverse_eigenvalue": 3.143282751276806,
+          "inverse_residual_2_float": 2.57827322717091e-15,
+          "constraint_residual_float": 6.793414348921651e-17,
+          "matvecs": 23
+        },
+        "maximum": {
+          "eigenvalue": 1.004649255151355,
+          "inverse_eigenvalue": 0.9953722603908618,
+          "inverse_residual_2_float": 8.540221617118647e-16,
+          "constraint_residual_float": 2.0485889659133138e-14,
+          "matvecs": 23
+        }
+      },
+      "started_utc": "2026-11-06T11:37:36.523891+00:00",
+      "code_and_proposal_sha256": {
+        "topics/padua-mz-sharp-constants-20261106/code/S4_scan.py": "d514d10fdd0367b0279bd23f5f07b144e52dad67501ab02f4415df840d14b7d4",
+        "topics/padua-mz-sharp-constants-20261106/code/S4_structured.py": "40e9ffc00edbf8ff9009cfa133646a69815f8423ad8baf4bdd23a69ae604bd8d",
+        "topics/padua-mz-sharp-constants-20261106/S4-scan-proposal.json": "26a8dc6f0943fa76abfa9aecbd2d22574bfa94d13bc7453cd6fb9a8c409f9177"
+      },
+      "peak_rss_kib": 54624,
+      "guards_pass": true,
+      "inverse_extrema_order_pass": true,
+      "mpmath_dps": 75,
+      "high_precision_seconds": 0.029153798000038478,
+      "reference_extrema_75digit": [
+        "0.3181387355603943623191756624701924432345067433110746540026966115531393",
+        "1.004649255151355406837859288328153443678836613648004277732821694980103"
+      ],
+      "high_precision_max_relative_error": 5.688868526322723e-16,
+      "high_precision_pass_1e10": true
+    },
+    {
+      "N": 40,
+      "n": 39,
+      "seconds": 0.009651011999949333,
+      "results": {
+        "minimum": {
+          "eigenvalue": 0.2598490248754951,
+          "inverse_eigenvalue": 3.8483885035902796,
+          "inverse_residual_2_float": 1.9744224670589946e-15,
+          "constraint_residual_float": 2.6526640868134078e-17,
+          "matvecs": 42
+        },
+        "maximum": {
+          "eigenvalue": 1.0044711207220716,
+          "inverse_eigenvalue": 0.9955487812144788,
+          "inverse_residual_2_float": 1.939446932763086e-15,
+          "constraint_residual_float": 1.5043276136986496e-14,
+          "matvecs": 42
+        }
+      },
+      "started_utc": "2026-11-06T11:37:36.559272+00:00",
+      "code_and_proposal_sha256": {
+        "topics/padua-mz-sharp-constants-20261106/code/S4_scan.py": "d514d10fdd0367b0279bd23f5f07b144e52dad67501ab02f4415df840d14b7d4",
+        "topics/padua-mz-sharp-constants-20261106/code/S4_structured.py": "40e9ffc00edbf8ff9009cfa133646a69815f8423ad8baf4bdd23a69ae604bd8d",
+        "topics/padua-mz-sharp-constants-20261106/S4-scan-proposal.json": "26a8dc6f0943fa76abfa9aecbd2d22574bfa94d13bc7453cd6fb9a8c409f9177"
+      },
+      "peak_rss_kib": 54880,
+      "guards_pass": true,
+      "inverse_extrema_order_pass": true,
+      "mpmath_dps": 75,
+      "high_precision_seconds": 0.16657181800007947,
+      "reference_extrema_75digit": [
+        "0.2598490248754946142438957828978883956118324595991764197513214400640059",
+        "1.004471120722070715911590390943528270106993869691705261066020141666385"
+      ],
+      "high_precision_max_relative_error": 1.8880744592895143e-15,
+      "high_precision_pass_1e10": true
+    }
+  ],
+  "elapsed_seconds": 0.21225418099993476,
+  "peak_rss_kib": 55520,
+  "completed": true
+}

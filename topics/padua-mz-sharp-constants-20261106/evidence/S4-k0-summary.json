@@ -1,0 +1,65 @@
+{
+  "status": "MEASURED",
+  "scope": "K0 only",
+  "verdict": "PASS with documented finite-norm interpretation",
+  "max_cc_relative_error": 3.9968028886505635e-15,
+  "padua": [
+    {
+      "m": 800,
+      "n": 799,
+      "dimension": 320400,
+      "minimum": 0.04002526215157158,
+      "reference": 0.04002526215157158,
+      "relative_error": 0.0,
+      "pass_1e10": true,
+      "residual_2_float": 2.473016091030122e-14,
+      "matvecs": 162,
+      "seconds": 18.418155197000033
+    },
+    {
+      "m": 1000,
+      "n": 999,
+      "dimension": 500500,
+      "minimum": 0.019659472013741602,
+      "reference": 0.019659472013741602,
+      "relative_error": 0.0,
+      "pass_1e10": true,
+      "residual_2_float": 1.6534429670217869e-13,
+      "matvecs": 142,
+      "seconds": 30.165041228000007
+    }
+  ],
+  "max_finite_norm_relative_error": 3.3101308776823565e-16,
+  "largest_carrier_m": 4096,
+  "largest_carrier_relative_limit_difference": -5.2175085856147984e-05,
+  "files": {
+    "code/S4_k0_replay.py": {
+      "sha256": "707d8d925d34c09846ac454a7482be2efc8563b33dd0e5e9ad2a16842d605285",
+      "bytes": 5659
+    },
+    "code/S4_k0_replay_initial.py": {
+      "sha256": "628b7f86952619b03f1e6077750d1116705b029609dc6add81838e660250322a",
+      "bytes": 5460
+    },
+    "evidence/S4-input-supplement.json": {
+      "sha256": "89f1196b72f4f80fb4fa1922246bfda98748528c8a1ae4ee50d459cb56176bd0",
+      "bytes": 776
+    },
+    "evidence/S4-k0-carrier-initial.json": {
+      "sha256": "9e7bdd6a322a8db3690e239e3f908e10bbfeb2a5c1631b3c24ae7cc048271b76",
+      "bytes": 4279
+    },
+    "evidence/S4-k0-carrier.json": {
+      "sha256": "f925c919725dbbd3fb57097bd3a58c03687e655725d633c71af00b7d4d1e157c",
+      "bytes": 4278
+    },
+    "evidence/S4-k0-cc.json": {
+      "sha256": "5a2eae3b33636c71e2296d1cf5ccac9e8cb46fef42c044bf3933da7428f7638d",
+      "bytes": 5194
+    },
+    "evidence/S4-k0-padua.json": {
+      "sha256": "aa22868fa079ec8b5760a06a35f1ed9657ab9cfd535c69e18bd08774b74bbf9f",
+      "bytes": 2862
+    }
+  }
+}

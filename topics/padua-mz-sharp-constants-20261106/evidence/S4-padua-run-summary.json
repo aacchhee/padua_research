@@ -1,0 +1,30 @@
+{
+  "status": "MEASURED",
+  "all16_minima_completed": true,
+  "all_residual_guards_pass": true,
+  "maximum_minimum_residual_2_float": 1.4226775045102327e-12,
+  "maximum_minimum_matvecs": 162,
+  "sum_minimum_cpu_seconds": 2955.218323862,
+  "sum_minimum_case_wall_seconds": 2956.963230223001,
+  "pilot_cpu_seconds": 336.42063584799996,
+  "peak_rss_kib": 2181312,
+  "raw_receipt": {
+    "path": "/tmp/sharp-S4/padua-minima-raw.json",
+    "sha256": "2f32cf77ba5c5a5fc0df61ca93a1bc35c661cfa149980b7cafe58a8e8bc6a4b1",
+    "bytes": 11949,
+    "storage": "Local pending AC-designated archival; one compact essential data file committed, no split raw outputs."
+  },
+  "essential_sha256": "6d7665a71d4afc42b909deb194596a4fd1873bc7208b2c4673f436d7bfd4cdad",
+  "essential_bytes": 8666,
+  "deterministic_regeneration_exactly_equal": true,
+  "fit_sha256": "16ffc8171928e17db1eb5d1b16d0547cd0f158b821670ab2e362985205c160f9",
+  "minimum_K4": "Operational KILL_MODEL for finiteK128 heuristic proxy; no certified proxy-tail or finite-window-bias bound",
+  "minimum_K5": "Finite-window MEASURED parity agreement only",
+  "maximum_K4_K5": "INCONCLUSIVE; pilot hit cap, no accepted upper eigenvalue",
+  "script_and_proposal_sha256": {
+    "code/S4_padua_scan.py": "a392135e3a538d90f3d368f8172facabf5c63ab9f941cd0aba2727e5fbe7773b",
+    "code/S4_padua_essential.py": "01dcb063fee71dda9df79d851f3d9f07abac4d2cb72051d49a4e842acf11ae6e",
+    "code/S4_padua_fit.py": "529ca7a310341e3a30c50446de1d605baf489e4654436fe5285b1553e309cb13",
+    "S4-padua-proposal.json": "3fc44adc5470e7ab9889fa218fc8b3dd14f6d83895de3638531717213dd6c59c"
+  }
+}

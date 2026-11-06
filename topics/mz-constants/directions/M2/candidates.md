@@ -143,3 +143,8 @@ Aliases: exact leading logarithmic constant.
 - Disposition reason: resume only after order theorem audit and prior-art comparison, with a concrete sharpness mechanism.
 - Canonical theory / negative-result ID: PD-T020, OPEN.
 - Topic / audit / history: split out at M2 completion; not counted as a new conceptual mechanism round.
+
+
+## 2026-11-06 completed continuation of IDEA-071
+
+The historical deferred target above is resolved by the S1/P3 continuations, consolidated under IDEA-071. [PD-T523](../../../padua-mz-sharp-constants-20261106/theory/S1-sharp-one-sided.md) proves the limsup and [PD-T546](../../../padua-mz-sharp-constants-20261106/theory/P3-reverse-bound.md) proves the matching liminf, yielding lim (log N)² λ_min = π⁴/8 through all N and both parities. PD-T020 is PROVED. The original order proofs and the S1 historical K2 stop are retained; the reverse-bound resume condition is met, with no PD-N or priority claim. [S1 candidate](../../../padua-mz-sharp-constants-20261106/ideas/S1.md), [P3 candidate](../../../padua-mz-sharp-constants-20261106/ideas/P3-reverse.md), completed [audit-01](../../../padua-mz-sharp-constants-20261106/audit-01.md) and [audit-02](../../../padua-mz-sharp-constants-20261106/audit-02.md).

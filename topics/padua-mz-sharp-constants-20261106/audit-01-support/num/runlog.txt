@@ -1,0 +1,9 @@
+manifest rc=0 wall=.121483124 cmd=python topics/padua-mz-sharp-constants-20261106/code/evidence_manifest.py --checks
+k0cc rc=0 wall=.629685557 cmd=python topics/padua-mz-sharp-constants-20261106/code/S4_k0_replay.py --suite cc --output /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/k0-cc.json
+k0carrier rc=0 wall=.488227087 cmd=python topics/padua-mz-sharp-constants-20261106/code/S4_k0_replay.py --suite carrier --output /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/k0-carrier.json
+k1 rc=0 wall=.120791721 cmd=python topics/padua-mz-sharp-constants-20261106/code/S4_k1_fit.py --raw topics/padua-mz-sharp-constants-20261106/evidence/S4-essential-cc.json --output /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/k1.json
+k3 rc=0 wall=.104843407 cmd=python topics/padua-mz-sharp-constants-20261106/code/S4_k3_fit.py --raw topics/padua-mz-sharp-constants-20261106/evidence/S4-essential-cc.json --output /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/k3.json
+s2 rc=0 wall=.607928457 cmd=python topics/padua-mz-sharp-constants-20261106/code/S2_model.py --output /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/upper-model.json
+s3 rc=0 wall=1.268234351 cmd=python topics/padua-mz-sharp-constants-20261106/code/S3_corner_model.py --orders 128 192 --cuts 16 32 64 128 --output /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/corner-model.json
+padua rc=0 wall=.110153351 cmd=python topics/padua-mz-sharp-constants-20261106/code/S4_padua_fit.py --essential topics/padua-mz-sharp-constants-20261106/evidence/S4-padua-essential.json --output /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/padua-fits.json
+DONE

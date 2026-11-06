@@ -1,0 +1,43 @@
+{
+  "checker": "independent grouped form assembly; shared scalar intervals",
+  "trial_sha256": "a472d397b6a802d7bfe9c06bdb25d2f572d18134726b8dad9f695772f0956da8",
+  "producer_receipt_sha256": "a4807c3b928e8f169f6f999f2284c82991fe7535e13d6001d67fd3bb36edfe07",
+  "checker_sha256": "63d53b6686e0a5259cab30bbb233d9ad8ad566283ae3f257bfb4411e455f4163",
+  "arithmetic_sha256": "8a90618d19ffd8f8efde50bc9002b0b0e26f62d243b4086c674cedcf657945fc",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/P4_check_grouped.py",
+    "--trial",
+    "topics/padua-mz-sharp-constants-20261106/evidence/P4-trial-J512.json",
+    "--producer",
+    "topics/padua-mz-sharp-constants-20261106/evidence/P4-rayleigh.json",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/P4-grouped-check.json"
+  ],
+  "numerator": {
+    "lo_integer": "116305849342432471227689603465235047943630362852280221324816633460929077351851",
+    "hi_integer": "116305849342432471227689612317099969675439325368927733460764174600641388932981",
+    "binary_scale_bits": 256,
+    "decimal_lo": "1.004436918864667197598902",
+    "decimal_hi": "1.004436918864667197598903"
+  },
+  "denominator": {
+    "lo_integer": "115792089237316185871550335483916830296796016268384661419475629840496389902885",
+    "hi_integer": "115792089237316185871550501298855126833384084753096922593456086427561674138071",
+    "binary_scale_bits": 256,
+    "decimal_lo": "0.999999999999999917507139",
+    "decimal_hi": "0.999999999999999917507142"
+  },
+  "quotient": {
+    "lo_integer": "116305849342432480822091627054928267332962430549943488868990117444774393873666",
+    "hi_integer": "116305849342432480822091802457438913372918212405954295637648394199093154468277",
+    "binary_scale_bits": 256,
+    "decimal_lo": "1.004436918864667280457775",
+    "decimal_hi": "1.004436918864667280457778"
+  },
+  "finite_threshold_pass": true,
+  "producer_enclosure_overlap": true,
+  "seconds": 3.2350721059992793,
+  "cpu_seconds": 3.233675191
+}
