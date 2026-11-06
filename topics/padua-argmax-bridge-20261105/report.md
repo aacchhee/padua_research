@@ -193,3 +193,23 @@ The new25-round campaign is2/25 complete. D03 addresses cancellation
 before absolute bounding and cheap near-only feasibility. Existing n32
 records have280 far,52 near-labelled and32 outside leaves, but no
 per-class CPU was saved. Counts alone supply no throughput projection.
+
+## Post-audit D03 — cancellation lemma and near-only pilot
+
+The [accepted difference lemma](independent-checks-D03-cancellation.md)
+bounds the ordinary-row cancellation perturbation by112P H_n/(pi n),
+without a fixed-R floor or inverse-a factor. The symmetric reference
+still needs its own finite-degree estimate; the full far target is OPEN.
+The corner-baseline alternative is deferred because a limiting-profile
+bound alone misses a required log²n/n compensation.
+
+The n512 near-only floating pilot used486.13603aggregate runner CPU-s.
+At the fixed128 visits per radius, rho1/2 retains36 leaves and60
+unresolved boxes; rho1/8 retains25 leaves and82 unresolved boxes.
+Both are INCOMPLETE. Source controls and saved-tree/identity checks pass,
+with no exact certificate or growth/throughput projection.
+[Result review](independent-checks-D03-pilot-result.md).
+Most native cost occurred without projected-profile computation, so a
+profile-skip optimization alone cannot eliminate the observed cost.
+The campaign is3/25 complete; D04 targets a linear-row analytical reduction
+and reuse of already accepted fixed-work native components.

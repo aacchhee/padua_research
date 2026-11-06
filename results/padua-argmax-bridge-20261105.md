@@ -75,3 +75,11 @@ all-n boundary error formula. Its practical interior rate remains OPEN.
 [Corner review](../topics/padua-argmax-bridge-20261105/independent-checks-D02-corner.md),
 [far review](../topics/padua-argmax-bridge-20261105/independent-checks-D02-far.md).
 D03 continues with joint cancellation and cheap near-only feasibility.
+
+D03 is complete,3/25. Its accepted cancellation-perturbation lemma has
+error112P H_n/(pi n); the full reference estimate remains OPEN. The
+n512 float pilot cost486.136CPU and reached both128-visit caps with
+60/82 unresolved boxes. This measures incomplete feasibility, with no
+new degree or exact-checker throughput claim.
+[D03 result review](../topics/padua-argmax-bridge-20261105/independent-checks-D03-pilot-result.md).
+D04 continues with the endpoint reference and fixed-work component adoption.

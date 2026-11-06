@@ -6,14 +6,15 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **2/25**. Active: **D03**.
+Completed: **3/25**. Active: **D04**.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
 | D01 | COMPLETE | Claude P4 corner constants and P1 exact-component/a=0 diagnostic; resolve audit records in parallel | Exact frozen-envelope K0(1000)>1289/300>4; measured corner gate/kill fail. Exact fixed-cutoff far bias bδ≈−.00115002 forbids uniform vanishing error; signed geometry-corrected diagnostics expose cancellation. Both independently accepted. |
 
 | D02 | COMPLETE | New pure-coordinate strip allocation; joint/bias-aware far remainder | Independently accepted local corner descent for all n>=10000, K_new<7.772. Exact full-phase bias/completed constant and boundary contract accepted; practical interior rate OPEN. |
-| D03 | ACTIVE | Symmetric cancellation perturbation; endpoint-complete corner baseline; cheap near-only feasibility | Floor-free difference lemma under review, remaining reference OPEN. Baseline-only route deferred with exact lost log²n/n term. Existing-class accounting complete; thin float-pilot source review precedes any execution. |
+| D03 | COMPLETE | Symmetric cancellation perturbation; endpoint-complete corner baseline; cheap near-only feasibility | Difference lemma independently accepted; full reference OPEN. Baseline-only route deferred. Float n512 pilot486.136CPU, both128-visit caps INCOMPLETE,60/82 frontier; source and saved-result checks pass, no degree proof. |
+| D04 | ACTIVE | Endpoint-complete digamma reference; fixed-work component adoption | Half-line reference/reduction under development, full model rate OPEN. Ratio-derivative math consolidates with accepted C01/C03; stronger-floor C08 adoption prepared for distinct source review, no run yet. |
 
 The initial scientific boundary is exact argmax degrees2–40 and alln>=500000,
 with exact two parity-correct corners. Gap41–499999 staysOPEN. Claude's

@@ -48,3 +48,15 @@ the group links response-01 F5. These remain ephemeral working copies,
 not delivered archives or externally retrievable evidence. The original
 C03postcheck-script limitation is canonical in response-01 F5. No
 mathematical execution or retrospective script reconstruction is claimed.
+
+## D03 pilot retention addendum —2026-11-06
+
+The one-shot near-only pilot's32 raw artifacts, its artifact inventory
+and initial derived receipt are hash-verified and listed in
+pending_local.files. The group pins source5264178, exact invocation,
+small result receipt and independent saved-result check. These include
+the compiled binary, headers/runtime inventories, terminal partitions
+and checkpoints. Physical delivery and durable external retrieval remain
+pending; this records local custody only. Regeneration of the scientific
+scope follows the frozen source/spec; historical timing bytes are not
+promised. No exact-degree proof depends on these floating outputs.
