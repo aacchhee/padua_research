@@ -1,5 +1,36 @@
 # Current frontier
 
+## Sharp CC and signed Padua spectral constants — scoped outcome
+
+[Results](../results/padua-mz-sharp-constants-20261106.md) and
+[durable records](../PROOF_STATUS.md) preserve the all-N sharp CC lower
+limit pi⁴/8 (PD-T546 with PD-T523), the uniform upper bound 5/3
+(PD-T526), and upper convergence to the explicit endpoint norm Lambda_edge
+(PD-T530) with computable vanishing error (PD-T531). PD-T527 proves
+1−eta_N has reciprocal-log-squared order. PD-T547 gives only the one-sided
+Lambda_edge>=1.0044369; its certified decimal value stays OPEN in PD-T027.
+PD-T524 preserves its historical CONDITIONAL prediction, resolved under
+PD-T546, and PD-T528 preserves the registered definition without a second
+convergence claim.
+
+PD-T534/535/536 prove the signed Padua full-form/corner-operator limits,
+including both parities and agreement. PD-T539/540 identify the explicit
+elliptic kernel and simple negative ground eigenvalue; PD-T541/542 give a
+coarse exact enclosure with no useful digits. PD-T533/537 remain scoped
+scalar-carrier improvement/ceiling results. Useful decimal values of both
+c_minus and c_plus remain OPEN in PD-T381. PD-T525/532/538/543 are separate
+finite MEASURED records; finite-window fits prove no spectral limit.
+
+[Audits 01](../topics/padua-mz-sharp-constants-20261106/audit-01.md),
+[02](../topics/padua-mz-sharp-constants-20261106/audit-02.md) and
+[03](../topics/padua-mz-sharp-constants-20261106/audit-03.md) accept these
+scopes. IDEA-071's deferred route is resolved via P3; IDEA-386's genuine
+one-dimensional continuation and IDEA-470's full-form resume condition are
+met. Decimal certification and practical rates are unassigned mathematical
+frontiers; completed registration/preparation creates no new campaign.
+The manuscript insert remains a proposal, and literature coverage supplies
+no novelty clearance.
+
 ## Signed Padua MZ — accepted frontier and cleanup
 
 The accepted [PR23 report](../topics/padua-mz-2d-frontier-20261105/report.md)
@@ -14,8 +45,11 @@ diamond theorem and never a signed transfer.
 AC retains registry Status OPEN for PD-T028/110/116 with binding
 **REJECTED: refuted** dispositions via PD-N105/106/107. Their historical
 positive statements are neither unresolved conjectures nor usable dependencies.
-PD-T020 and the genuine one-dimensional PD-T027 remain OPEN; the scoped
-PD-N104 intermediary obstruction and PD-T294 do not resolve PD-T027.
+PD-T020 is PROVED via PD-T546 with PD-T523: the all-N sharp endpoint
+limit is pi⁴/8. The genuine one-dimensional PD-T027 is PARTIAL: PD-T526
+proves the uniform gap and PD-T530 the common-parity operator-identified
+upper limit; its decimal value remains OPEN. PD-N104 retains its scoped
+intermediary obstruction and PD-T294 remains separate support.
 
 PD-T298/299 certify m60/80; independent inherited coverage is exactly
 m10/20/30/40/60/80, not a gap-free independently certified 2..80 range.
@@ -31,8 +65,10 @@ PD-T376 certifies finite negative trial directions at m=1101,1240,1600;
 PD-T377 supplies the odd-m weight limit and PD-T378 the all-integer
 spectral divergence above half-exactness. PD-T379 gives exact continuous
 carrier norms and explicit normalized one-sided bounds. PD-T380 keeps
-the 23 scans/fits MEASURED; PD-T381 retains the original sharp-growth
-target OPEN, with PD-T379 as separate support, not a proved conjunct.
+the 23 scans/fits MEASURED. PD-T381 retains its original sharp-growth
+statement with PARTIAL status: PD-T534/535/536 prove both parity limits,
+agreement and the exact inf/sup spectrum(B) characterization; decimal
+values remain OPEN. PD-T379 remains separate supporting bounds.
 
 Claude [cleanup audit-01](../topics/padua-mz-cleanup-20261105/audit-01.md)
 accepts the new mathematics at its stated scope; the response resolves
@@ -86,7 +122,7 @@ Mechanisms are conservatively attributed to existing determinant and kernel theo
 
 AC stated: “I have no windows python. proceed as is, no need to check”. The Windows verification/receipt requirement is therefore waived for readiness. Cloud bundle integrity is verified; Windows delivery and verification remain unconfirmed and are no longer blocking. No merge, force-push, tag, rule or workflow change is authorized by this waiver. Only AC merges.
 
-MZ track — completed integration: AC merged [PR #3](https://github.com/aacchhee/padua_research/pull/3) into main at `07c5f5465d6de306aa81dbe8ca1f615295163864`; its tree matches the accepted ready head exactly. PD-T014 retains the strict CC threshold through degree N−1; PD-T022 exposes the stronger endpoint constant 2−4/N+4/N². PD-T017/018 prove the minimum-eigenvalue logarithmic order, PD-T024 gives explicit fixed-ratio eta(theta)<1, PD-N004 gives the finite eta≤3/4 applicability obstruction, PD-T025 the upper-Gram hyperinterpolation application, and PD-T021 the exact signed-Padua marginal reduction. Audit-01 accepted the original mathematical statements and audit-02 accepted [response-01](../topics/mz-constants/response-01.md); see the accepted [report](../topics/mz-constants/report.md). Proofs, IDs and statuses are unchanged. The bounded mean-convergence/Lobatto prior-art comparison is completed in the [PR #11 literature record](../topics/mz-prior-art-20261101/comparison.md), with its source-specific reading limits and residual fulltext gaps; it supplies no novelty clearance. The mathematical frontier remains the sharp lower-spectrum constant PD-T020 OPEN, the sharp upper-spectrum/uniform-gap target PD-T027 OPEN, and the genuine signed-Padua targets PD-T028 OPEN. Novelty remains unresolved and finite spectra remain MEASURED. [Post-merge frontier and source links](../topics/mz-constants/POST_MERGE.md) replace the completed merge-decision/audit-preparation task. The single [batch ledger](../topics/padua-batch-20261031/ALLOCATIONS.md) retains the accepted reservations; later members reconcile from MZ-bearing main and record their integration before readiness. This scoped paragraph does not replace the charter.
+MZ track — completed integration: AC merged [PR #3](https://github.com/aacchhee/padua_research/pull/3) into main at `07c5f5465d6de306aa81dbe8ca1f615295163864`; its tree matches the accepted ready head exactly. PD-T014 retains the strict CC threshold through degree N−1; PD-T022 exposes the stronger endpoint constant 2−4/N+4/N². PD-T017/018 prove the minimum-eigenvalue logarithmic order, PD-T024 gives explicit fixed-ratio eta(theta)<1, PD-N004 gives the finite eta≤3/4 applicability obstruction, PD-T025 the upper-Gram hyperinterpolation application, and PD-T021 the exact signed-Padua marginal reduction. Audit-01 accepted the original mathematical statements and audit-02 accepted [response-01](../topics/mz-constants/response-01.md); see the accepted [report](../topics/mz-constants/report.md). Proofs, IDs and statuses are unchanged. The bounded mean-convergence/Lobatto prior-art comparison is completed in the [PR #11 literature record](../topics/mz-prior-art-20261101/comparison.md), with its source-specific reading limits and residual fulltext gaps; it supplies no novelty clearance. The sharp lower-spectrum target PD-T020 is now PROVED via PD-T546/523. The upper-spectrum target PD-T027 is PARTIAL with decimal value OPEN; signed-Padua PD-T028 retains its exact OPEN display with REJECTED: refuted disposition (see the accepted frontier above). Novelty remains unresolved and finite spectra remain MEASURED. [Post-merge frontier and source links](../topics/mz-constants/POST_MERGE.md) replace the completed merge-decision/audit-preparation task. The single [batch ledger](../topics/padua-batch-20261031/ALLOCATIONS.md) retains the accepted reservations; later members reconcile from MZ-bearing main and record their integration before readiness. This scoped paragraph does not replace the charter.
 
 [Lattice-unisolvence campaign](../topics/lattice-unisolvence-20261031/report.md), stacked on the charter, is at **Stage PR**: periodic count screens and an infinite correct-cardinality cyclic6 family are proved at their exact scopes; all412 admissible small3D patterns were ranked, with an isolated degree-two all-field axis-factorized survivor but no unbounded3D structural/stability family. The strongest continuing lead is the all-degree parity-adapted adjacent-mod4 2D schedule: correct cardinality and row-moment/antipodal-Gram reductions are PROVED, while all-degree unisolvence and polylogarithmic Lebesgue growth remain OPEN; finite diagnostics stay MEASURED. The lattice content is already integrated on main through PR #5. Claude audit-01 accepted the existing scopes/statuses; the separate new F2 lemma remains in the immutable audit for later development. PR #6 allocates PD-T081–094, PD-N032–038, IDEA-177–189 and LIT-300–331, preserving provisional aliases and all scientific content. The continuing frontier is the OPEN structural/stability work above; completed PR #4/#5 preparation is historical.
 

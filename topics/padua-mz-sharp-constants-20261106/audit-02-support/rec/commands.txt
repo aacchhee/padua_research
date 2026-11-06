@@ -1,0 +1,9 @@
+HEAD 0e7be6e7c16dd30791d44268ff5d3cfc1d2e2bf9
+Manifest verified: 90 file identities, 9988 bytes, status=FINAL snapshot
+Python AST: 30 files; JSON parse/size: 77 files
+Topic JSON total: 327453 bytes including manifest; largest: input-snapshot.json (16342 bytes)
+Markdown: 101 documents, 357 local file links, 0 missing targets
+exit=0
+0
+0
+results/padua-mz-sharp-constants-20261106.md

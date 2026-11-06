@@ -1,11 +1,9 @@
 # PD-T020 — sharp endpoint leading constant
 
-Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md. The original development-stage pending-review wording below is historical. Required Claude audit and unresolved literature/novelty coverage remain PENDING. This administrative update changes no mathematical claim or proof.
-
 ID kind: PD-T.
 Aliases: limit of logarithm-squared minimum eigenvalue.
 Split from: the original M2 request for endpoint order with an explicit constant if possible.
-Split into: proved comparison estimates PD-T017 and PD-T018; they do not settle this sharper statement.
+Split into: [PD-T546](../../../topics/padua-mz-sharp-constants-20261106/theory/P3-reverse-bound.md), [PD-T523](../../../topics/padua-mz-sharp-constants-20261106/theory/S1-sharp-one-sided.md) settle the unchanged sharp limit; PD-T017 and PD-T018 remain separate comparison estimates.
 
 ## Statement
 
@@ -25,21 +23,22 @@ All integers N≥2; no restriction to one parity or a selected subsequence.
 
 ## Status by part
 
-Overall status: OPEN.
+Overall status: PROVED.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| Limit exists and can be identified | OPEN | Comparison bounds do not prove convergence or identify an extremizer |
+| Limit exists over all integers N, hence both parities | PROVED | [PD-T546](../../../topics/padua-mz-sharp-constants-20261106/theory/P3-reverse-bound.md) with the matching one-sided result [PD-T523](../../../topics/padua-mz-sharp-constants-20261106/theory/S1-sharp-one-sided.md) |
+| Exact value c_*=pi⁴/8 | PROVED | The same sharp limit theorem |
 
-Candidate / claim disposition: deferred; no rejection. This target is retained explicitly and no new mechanism is launched.
+Candidate / claim disposition: resolved at the original statement's full scope.
 
 ## Depends on
 
-The precise definitions only. PD-T017 and PD-T018 supply positive finite comparison bounds but are supporting results, not proved cases of the limit statement.
+[PD-T546](../../../topics/padua-mz-sharp-constants-20261106/theory/P3-reverse-bound.md), [PD-T523](../../../topics/padua-mz-sharp-constants-20261106/theory/S1-sharp-one-sided.md). Their own files carry the proofs and dependencies. PD-T017 and PD-T018 remain supporting comparison results.
 
 ## Checks
 
-No new run is claimed. Supplied finite eigenvalue tables are provenance reports only; harmonic-witness diagnostics in the M2 log are not eigenvalue asymptotics.
+The sharp limit is accepted in [audit-02](../../../topics/padua-mz-sharp-constants-20261106/audit-02.md). No new computation is claimed by this target record.
 
 ## Sources
 
@@ -47,7 +46,7 @@ Incomplete historical interpolation and matrix screen documented in topic litera
 
 ## Proof or evidence
 
-No proof of this statement. The two comparison theorems show the scaled quantities are bounded away from zero and infinity (after harmless conversion of 1+log N to log N), which alone leaves both convergence and the exact value unresolved.
+The reverse all-input interpolation estimate in [PD-T546](../../../topics/padua-mz-sharp-constants-20261106/theory/P3-reverse-bound.md) gives the liminf pi⁴/8. The admissible degree-(N−1) trial in [PD-T523](../../../topics/padua-mz-sharp-constants-20261106/theory/S1-sharp-one-sided.md) gives the matching limsup through all N. The split records contain the substantive proofs; none is duplicated here.
 
 ## Scope
 
@@ -55,8 +54,12 @@ Separate sharper target; it does not weaken the independently PROVED comparison-
 
 ## Open items
 
-After independent acceptance of the order theorem and literature comparison, decide whether a sharper rescaled limiting operator is a justified later direction. No such exploration is undertaken here.
+No unresolved part remains in the original target. Practical finite-N rates are outside its statement.
 
 ## History
 
 2026-10-31, Codex gpt-6.1-sol xhigh (explicit orchestrator assignment), rules/base d36722823441dc40c6e19d69a174459348dd309c. Split to preserve the unanswered meaning of an exact leading constant while keeping proved nonsharp comparisons separate.
+
+2026-11-06: Original Statement preserved verbatim. Its existence and explicit-value obligations are both resolved by [PD-T546](../../../topics/padua-mz-sharp-constants-20261106/theory/P3-reverse-bound.md), [PD-T523](../../../topics/padua-mz-sharp-constants-20261106/theory/S1-sharp-one-sided.md). Overall status OPEN → PROVED; earlier comparison-only limitations describe the prior state. See [canonical decision](../../../topics/padua-mz-sharp-constants-20261106/LOG.md).
+
+2026-11-06 (readiness-01 fix R2): the removed header note read “Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md.” Its pending-audit wording is superseded by the completed audits linked in PROOF_STATUS.md.

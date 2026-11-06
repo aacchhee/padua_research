@@ -1,0 +1,22 @@
+{
+ "audit": "P3a adversarial audit of P3-01/02/03 at HEAD 0e7be6e7c16dd30791d44268ff5d3cfc1d2e2bf9",
+ "verdict": "PASS: no BLOCKING or MAJOR finding",
+ "files": [
+  "p302_primitive.py/json",
+  "p301_remainder.py/json",
+  "p303_cc.py/json",
+  "p303_groups.py/json",
+  "p303_discrim.py/json",
+  "p303_discrim2.py/json"
+ ],
+ "key_numbers": {
+  "P3_01_norm": "1.564-1.5707 (~pi/2) for supports 1..1500 and shifted to k0=5000; claimed <=40",
+  "P3_02": "lam/H_J^2 -> 0.20265 (2/pi^2=0.20264); lam/bound <=0.79 up to J=1e6",
+  "CC_remainder": "0.995-0.9998 for N=256..8192 both parities, M=N/L and N/4-1; claimed 80+6sqrt(L+1)~95-98",
+  "CC_primitive_over_L": "0.271->0.277 (target 0.2866), always <= proof's bound",
+  "control": "primitive factor 0 or 2 gives remainder ~L growth (2.04->2.77); exact factor 1 is minimal and bounded",
+  "bulk": "1.04-1.07 vs claim sqrt(pi L/2)=3.07-3.56",
+  "endpoints": "1.99-2.24 vs 10sqrt(L+5)",
+  "PiN_vs_PiN1": "lambda_min(Pi_N) equals evidence Pi_(N-1) to <5e-14 at N=400..3201"
+ }
+}

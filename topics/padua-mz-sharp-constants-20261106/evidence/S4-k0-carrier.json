@@ -1,0 +1,107 @@
+{
+  "status": "MEASURED",
+  "pin": "2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861",
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/S4_k0_replay.py",
+    "--suite",
+    "carrier",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/S4-k0-carrier.json"
+  ],
+  "started_utc": "2026-11-06T11:31:25.117734+00:00",
+  "model": "gpt-6.1-sol medium",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "mpmath": "1.3.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "script_sha256": "707d8d925d34c09846ac454a7482be2efc8563b33dd0e5e9ad2a16842d605285",
+  "input_hashes": {
+    "topics/mz-constants/sources/padua_mz_inputs/code/cc_mz_large.py": {
+      "sha256": "df392b043fad81395ce6e07258a438bbd5fc609fc83fc51fa03314b885ac5af9",
+      "git_blob": "b5e2b2c9e53c0ed56983732e4f4aee65519ff374"
+    },
+    "tracks/mz-constants/code/mz2d_spectra.py": {
+      "sha256": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+      "git_blob": "7b342216e14053d28ff3f99d5f5685135c2522f1"
+    },
+    "topics/padua-mz-2d-frontier-20261105/code/g1_spectral.py": {
+      "sha256": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+      "git_blob": "c16eaff0f020017d9c8086842bed7ffa07e421b3"
+    },
+    "topics/padua-mz-2d-frontier-20261105/evidence/g1-minimum-only.json": {
+      "sha256": "82ada412cd2886c6c569431bbb77bf4d786f96bfc8190554d5fe2e8b95d12b00",
+      "git_blob": "c6ae25bdc140b1c727ea6832e3511a4920dfeae7"
+    },
+    "tracks/mz-constants/theory/reproduced-spectra.md": {
+      "sha256": "4f5d7452aa65f4f15f8eb0d773ec4469d3a003d1b1e3660f6ac6d8c7eae7a4a4",
+      "git_blob": "1666a74b8d208f30aec7925b73ce61af623c98e3"
+    },
+    "topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md": {
+      "sha256": "8f88baa6870fbc00132622fe5b3e2e461bbdf96ff4fffad41b33f288761ff3e7",
+      "git_blob": "5c7ab7eb32c90559295e3bd008e23fd029b1b8aa"
+    }
+  },
+  "results": [
+    {
+      "m": 512,
+      "r": 128,
+      "s": 102,
+      "degree": 486,
+      "finite_norm_squared_75digit": "3.74932357377354115591624603015061619927823175436195166522083",
+      "gauss_norm_squared": 3.74932357377354,
+      "quadrature_relative_error": 2.5578481952923474e-16,
+      "pass_1e10": true,
+      "relative_difference_from_limit": -0.0004437864111843278,
+      "seconds": 0.006975612000019282
+    },
+    {
+      "m": 1024,
+      "r": 256,
+      "s": 204,
+      "degree": 972,
+      "finite_norm_squared_75digit": "3.75018397658731318719647505395365823203372791775309329921981",
+      "gauss_norm_squared": 3.7501839765873135,
+      "quadrature_relative_error": 8.494240575920418e-17,
+      "pass_1e10": true,
+      "relative_difference_from_limit": -0.00021440610783815423,
+      "seconds": 0.01361938600001622
+    },
+    {
+      "m": 2048,
+      "r": 512,
+      "s": 409,
+      "degree": 1945,
+      "finite_norm_squared_75digit": "3.7505932229879851627526260775369861889990782414334797026616",
+      "gauss_norm_squared": 3.750593222987984,
+      "quadrature_relative_error": 3.3101308776823565e-16,
+      "pass_1e10": true,
+      "relative_difference_from_limit": -0.00010530248564295803,
+      "seconds": 0.027482860000020537
+    },
+    {
+      "m": 4096,
+      "r": 1024,
+      "s": 819,
+      "degree": 3891,
+      "finite_norm_squared_75digit": "3.75079250323828624211083614035304760191464729749129593584902",
+      "gauss_norm_squared": 3.750792503238286,
+      "quadrature_relative_error": 1.0841593793004967e-16,
+      "pass_1e10": true,
+      "relative_difference_from_limit": -5.2175085856147984e-05,
+      "seconds": 0.055091378999975404
+    }
+  ],
+  "carrier": "even minus, a=1/4 b=1/5, strict a+b<1/2",
+  "limit": "3.750988211370259884384963454664701991610560335750029136799",
+  "A": "2.77258872223978123766892848583270627230200053744102101648272",
+  "J_minus": "1.3528830227442092000149439568359030963899742049023721994246",
+  "comparison_policy": "1e-10 finite norm formula vs independent Gauss quadrature; finite-to-limit discrepancies separately recorded, no fit or extrapolation",
+  "seconds": 0.1076043630000072,
+  "peak_rss_kib": 57820
+}

@@ -1,0 +1,103 @@
+{
+  "status": "MEASURED; no rigorous quadrature or decimal enclosure",
+  "source_head": "2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861",
+  "prereg_sha256": "c2e8b10ac01c04c514b16b1c239682d16342aef7a55590c99afc22e5611c5263",
+  "code_sha256": "dc4c5f0c4d935d065ea3409d234c2727890a3ddcb10cdaf59c397127bda03b20",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "runs": [
+    {
+      "quadrature_order": 128,
+      "seconds": 0.29174732399997083,
+      "results": [
+        {
+          "cut": 16,
+          "nodes": 26,
+          "retained_rank": 26,
+          "gram_min": 0.00022321004893304923,
+          "gram_max": 0.04726945480358777,
+          "lambda_min": -0.13331539897257788,
+          "lambda_max": 0.04567831707822774,
+          "rigorous_tail_bound": 7.5
+        },
+        {
+          "cut": 32,
+          "nodes": 59,
+          "retained_rank": 59,
+          "gram_min": 0.00010465554300230712,
+          "gram_max": 0.047282706466530246,
+          "lambda_min": -0.1336618282046965,
+          "lambda_max": 0.04556991954887048,
+          "rigorous_tail_bound": 3.75
+        },
+        {
+          "cut": 64,
+          "nodes": 142,
+          "retained_rank": 142,
+          "gram_min": 4.429070522676672e-05,
+          "gram_max": 0.047292007009973505,
+          "lambda_min": -0.13356329196245517,
+          "lambda_max": 0.04560509980106201,
+          "rigorous_tail_bound": 1.875
+        },
+        {
+          "cut": 128,
+          "nodes": 323,
+          "retained_rank": 323,
+          "gram_min": 2.751896762713831e-06,
+          "gram_max": 0.04729367309610372,
+          "lambda_min": -0.13358000212000082,
+          "lambda_max": 0.0455983195703239,
+          "rigorous_tail_bound": 0.9375
+        }
+      ]
+    },
+    {
+      "quadrature_order": 192,
+      "seconds": 0.6084393240000736,
+      "results": [
+        {
+          "cut": 16,
+          "nodes": 26,
+          "retained_rank": 26,
+          "gram_min": 0.00022321004893305157,
+          "gram_max": 0.04726945480358773,
+          "lambda_min": -0.13331539897257774,
+          "lambda_max": 0.04567831707822757,
+          "rigorous_tail_bound": 7.5
+        },
+        {
+          "cut": 32,
+          "nodes": 59,
+          "retained_rank": 59,
+          "gram_min": 0.00010465554300230799,
+          "gram_max": 0.04728270646653021,
+          "lambda_min": -0.13366182820469663,
+          "lambda_max": 0.04556991954887041,
+          "rigorous_tail_bound": 3.75
+        },
+        {
+          "cut": 64,
+          "nodes": 142,
+          "retained_rank": 142,
+          "gram_min": 4.429070522676661e-05,
+          "gram_max": 0.04729200700997348,
+          "lambda_min": -0.13356329196245528,
+          "lambda_max": 0.045605099801062046,
+          "rigorous_tail_bound": 1.875
+        },
+        {
+          "cut": 128,
+          "nodes": 323,
+          "retained_rank": 323,
+          "gram_min": 2.0303028400501835e-05,
+          "gram_max": 0.04729367309610368,
+          "lambda_min": -0.13358000211999999,
+          "lambda_max": 0.045598319570321344,
+          "rigorous_tail_bound": 0.9375
+        }
+      ]
+    }
+  ]
+}

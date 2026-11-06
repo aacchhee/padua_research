@@ -1,0 +1,8 @@
+# run 2026-11-06 ~18:10 UTC from repo root after `git fetch origin`; heads: main 64409c4, PR27 389dbc1, PR33 d0e1bbb, PR31 6fdd9df
+main origin/main ledger-max(excl ours): {'PD-T': 553, 'PD-N': 185, 'IDEA': 615, 'LIT': 635} used-max: {'PD-T': 517, 'PD-N': 183, 'IDEA': 603, 'LIT': 630} OVERLAPS: [('topics/nn-mop-conditioning-20261106/ALLOCATIONS.md', 'PD-T', 522, 553), ('topics/nn-mop-conditioning-20261106/ALLOCATIONS.md', 'IDEA', 608, 615), ('topics/nn-mop-conditioning-20261106/ALLOCATIONS.md', 'LIT', 633, 635)]
+PR27 origin/codex/padua-argmax-bridge-20261105 ledger-max(excl ours): {'PD-T': 501, 'PD-N': 180, 'IDEA': 589, 'LIT': 632} used-max: {'PD-T': 494, 'PD-N': 178, 'IDEA': 584, 'LIT': 630} OVERLAPS: []
+PR33 origin/codex/padua-3d-20261106 ledger-max(excl ours): {'PD-T': 501, 'PD-N': 180, 'IDEA': 589, 'LIT': 632} used-max: {'PD-T': 494, 'PD-N': 178, 'IDEA': 584, 'LIT': 630} OVERLAPS: []
+PR31 origin/codex/padua-mz-sharp-constants-20261106 ledger-max(excl ours): {'PD-T': 553, 'PD-N': 185, 'IDEA': 615, 'LIT': 635} used-max: {'PD-T': 548, 'PD-N': 183, 'IDEA': 611, 'LIT': 633} OVERLAPS: (same three NN-ledger mentions)
+# The main/PR31 "overlaps" are topics/nn-mop-conditioning-20261106/ALLOCATIONS.md:36, which only records PR31's reservation
+# ("Since this reservation, PR31 has reserved PD-T522–553, IDEA608–615 and LIT633–635, above this range"); NN's own ranges are
+# PD-T502–521, PD-N181–185, IDEA590–607. No genuine collision.

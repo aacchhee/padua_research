@@ -1,0 +1,36 @@
+{
+  "status": "MEASURED",
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/S4_k3_compare.py",
+    "--model",
+    "topics/padua-mz-sharp-constants-20261106/evidence/check-S2-model-replay.json",
+    "--fit",
+    "/tmp/check-fits-k3-essential.json",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/check-fits-k3-comparison.json"
+  ],
+  "script_sha256": "8636ff80576715094c9e0a76b6409883717c5459116e8f1970912a282aac346f",
+  "inputs": {
+    "model": {
+      "path": "topics/padua-mz-sharp-constants-20261106/evidence/check-S2-model-replay.json",
+      "sha256": "15598ff686fa183f63b1448e1d07eb15854bf7ac8446ff41c4158cfe51c9c858"
+    },
+    "fit": {
+      "path": "/tmp/check-fits-k3-essential.json",
+      "sha256": "348fdc59cfd18cd05539171042db3a9bd88be8cfb90164516be8d4e22373bb11"
+    }
+  },
+  "model_estimate_kind": "finite J512 Galerkin norm; unbounded infinite tail",
+  "model_estimate": 1.0044369188646673,
+  "finite_CC_fitted_limits": {
+    "even": 1.0044369722946567,
+    "odd": 1.0044369722985076
+  },
+  "absolute_discrepancies": {
+    "even": 5.342998932178489e-08,
+    "odd": 5.34338402413681e-08
+  },
+  "absolute_kill_threshold": 0.001,
+  "K3_operational_verdict": "PASS",
+  "limitation": "Measured operational comparison only. No certified full infinite model norm, no finite-to-model convergence theorem, no proof of the actual upper limit."
+}

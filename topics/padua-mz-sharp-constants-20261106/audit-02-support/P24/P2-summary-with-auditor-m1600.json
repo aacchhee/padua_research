@@ -1,0 +1,115 @@
+{
+  "status": "MEASURED",
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/P2_summary.py",
+    "--directory",
+    "/tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit2/P24/sumdir",
+    "--output",
+    "/tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit2/P24/P2-summary-with-auditor-m1600.json"
+  ],
+  "code_sha256": "85d8e7d5bd3e876bd1f3addfbf03998042077b498b300357d44dbe26ada9f102",
+  "evidence_identities": {
+    "P2-b2-calibration.json": "fa842ea6e511bdeaf8137554db3b9fc2a24e7a1ec308754e44c873dae2ff3bd1",
+    "P2-m1600.json": "6d46c09f6054967f36e4a3b5df43d4bf4edea1a913cbafe06e8b077a99b76c5b",
+    "P2-m1601.json": "1f7cefad8a95008db9bac0ba11fef712f60a04658a9a3af0b147c59155c7932f",
+    "P2-m3000.json": "ca7c0aa3cdfe67b4b481c04ac2bf4bbcf30c90c166790d57061726882c7feccd",
+    "P2-m3001.json": "ab052bae9dd3e1e936ea4368c006e2793a20e57a62f4ab13eb4aa611de167039"
+  },
+  "registered_b2": -0.0955298083997758,
+  "source_code_identities": [
+    {
+      "topics/padua-mz-sharp-constants-20261106/code/P2_modes.py": "8e15fe58b19a1ef1a2ff71da80d18de04349d90081e02a885bcbb38b143d1161",
+      "topics/padua-mz-2d-frontier-20261105/code/g1_spectral.py": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+      "tracks/mz-constants/code/mz2d_spectra.py": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+      "topics/padua-mz-2d-20261101/definitions.md": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+      "topics/padua-mz-sharp-constants-20261106/ideas/P2-protocol.md": "2dc19f83257528f338ce642d6a9f2b63963627d1f816294610a9e075bdb50f39"
+    },
+    {
+      "topics/padua-mz-sharp-constants-20261106/code/P2_modes.py": "8e15fe58b19a1ef1a2ff71da80d18de04349d90081e02a885bcbb38b143d1161",
+      "topics/padua-mz-2d-frontier-20261105/code/g1_spectral.py": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+      "tracks/mz-constants/code/mz2d_spectra.py": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+      "topics/padua-mz-2d-20261101/definitions.md": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+      "topics/padua-mz-sharp-constants-20261106/ideas/P2-protocol.md": "2dc19f83257528f338ce642d6a9f2b63963627d1f816294610a9e075bdb50f39"
+    },
+    {
+      "topics/padua-mz-sharp-constants-20261106/code/P2_modes.py": "8e15fe58b19a1ef1a2ff71da80d18de04349d90081e02a885bcbb38b143d1161",
+      "topics/padua-mz-2d-frontier-20261105/code/g1_spectral.py": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+      "tracks/mz-constants/code/mz2d_spectra.py": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+      "topics/padua-mz-2d-20261101/definitions.md": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+      "topics/padua-mz-sharp-constants-20261106/ideas/P2-protocol.md": "2dc19f83257528f338ce642d6a9f2b63963627d1f816294610a9e075bdb50f39"
+    },
+    {
+      "topics/padua-mz-sharp-constants-20261106/code/P2_modes.py": "8e15fe58b19a1ef1a2ff71da80d18de04349d90081e02a885bcbb38b143d1161",
+      "topics/padua-mz-2d-frontier-20261105/code/g1_spectral.py": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+      "tracks/mz-constants/code/mz2d_spectra.py": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+      "topics/padua-mz-2d-20261101/definitions.md": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+      "topics/padua-mz-sharp-constants-20261106/ideas/P2-protocol.md": "2dc19f83257528f338ce642d6a9f2b63963627d1f816294610a9e075bdb50f39"
+    }
+  ],
+  "row_tests": [
+    {
+      "m": 1600,
+      "numerically_valid": true,
+      "mode2_weight": 0.9589539148418367,
+      "L_distance": 0.0036209250628058687,
+      "mode2_pass": true
+    },
+    {
+      "m": 1601,
+      "numerically_valid": true,
+      "mode2_weight": 0.9634703972134077,
+      "L_distance": 0.0032651386244369196,
+      "mode2_pass": true
+    },
+    {
+      "m": 3000,
+      "numerically_valid": true,
+      "mode2_weight": 0.964492122993133,
+      "L_distance": 0.0031788293520045863,
+      "mode2_pass": true
+    },
+    {
+      "m": 3001,
+      "numerically_valid": true,
+      "mode2_weight": 0.9680259907269178,
+      "L_distance": 0.0028898545757079924,
+      "mode2_pass": true
+    }
+  ],
+  "pair_tests": [
+    {
+      "parity": "even",
+      "cases": [
+        1600,
+        3000
+      ],
+      "numerically_valid": true,
+      "branch_decrease_rate_logR": 0.03844594388505272,
+      "rate_target_pass": true,
+      "rate_relative_deviation": 0.011735365396124285,
+      "rate_kill": false,
+      "Q_min_secant_logm": -0.09212119390162271,
+      "slope_difference_from_b2": 0.0034086144981530925,
+      "slope_target_pass": true
+    },
+    {
+      "parity": "odd",
+      "cases": [
+        1601,
+        3001
+      ],
+      "numerically_valid": true,
+      "branch_decrease_rate_logR": 0.03759101681732508,
+      "rate_target_pass": true,
+      "rate_relative_deviation": 0.010762715333550487,
+      "rate_kill": false,
+      "Q_min_secant_logm": -0.09246210231483683,
+      "slope_difference_from_b2": 0.003067706084938976,
+      "slope_target_pass": true
+    }
+  ],
+  "outcome": "PASS_FINITE_TEST",
+  "prerequisite_failures": [],
+  "valid_row_departures": [],
+  "limitations": "Finite floating measurements only; no two-term theorem, crossing-degree or asymptotic-value conclusion; K4 unchanged."
+}
