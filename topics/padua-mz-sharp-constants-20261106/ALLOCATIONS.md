@@ -28,3 +28,7 @@ PR32 published its new allocation while the initial scan was in progress. Its ne
 Priority is the first pushed commit containing this ledger, linked from PR31; the date alone grants no priority. Only the coordinator publishes this topic's reservation. The readiness check refreshes main, every open PR including drafts, closed-unmerged/retired reservations, ledgers and used IDs again before any ready-for-merge decision. No other branch's ledger or IDs are changed.
 
 Reservation first published in commit [dd57b6439d539164cdee7ab01a11b6080a03af10](https://github.com/aacchhee/padua_research/commit/dd57b6439d539164cdee7ab01a11b6080a03af10), before assignment. [Final map](final-id-map.json) retains every original alias and the distinct eight final IDEA IDs.
+
+## Readiness refresh (2026-11-06, Claude readiness-01)
+
+Repeated steps 1–3 at heads main `64409c4` (PR32 merged), PR27 `389dbc1`, PR33 `d0e1bbb`, PR31 `6fdd9df`; no closed-unmerged PRs. Other owners' maxima: PD-T521, PD-N185, IDEA607 (PR32 on main); PD-T501, PD-N180, IDEA589, LIT632 (PR27/PR33). No collision with PD-T522–553, IDEA-608–615, LIT-633–635; priority commit `dd57b6439d539164cdee7ab01a11b6080a03af10` unchanged; permanent gaps PD-T549–553, IDEA-612–615, LIT-634–635 unused. [readiness-01](readiness-01.md). Repeat if any ledger changes before AC's merge.

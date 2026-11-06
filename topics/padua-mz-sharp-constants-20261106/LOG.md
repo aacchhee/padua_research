@@ -1,7 +1,7 @@
 # Sharp MZ constants via limiting operators (PD-T020, PD-T027, PD-T381): log
 
 - Branch: `codex/padua-mz-sharp-constants-20261106` · Base: main `64409c4` (original `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR · Next: `Claude (Opus 5.5, high): Continue codex/padua-mz-sharp-constants-20261106.` · Next handoff: [08-readiness.md](https://github.com/aacchhee/padua_research/blob/codex/padua-mz-sharp-constants-20261106/topics/padua-mz-sharp-constants-20261106/handoffs/08-readiness.md), published after preparation outputs.
+- Stage: PR — READY for AC merge decision ([readiness-01](readiness-01.md)); no open handoff; only AC merges.
 - Reserved final-ID ranges: PD-T522–553; IDEA-608–615; LIT-633–635; no PD-N range. [Ledger](ALLOCATIONS.md), first published dd57b6439d539164cdee7ab01a11b6080a03af10.
 - Current claims: exact scaled CC minimum limit pi^4/8; CC uniform upper bound, endpoint limit, computable error and certified lower1.0044369; signed Padua compact-operator logarithmic limits, elliptic kernel, simple positive ground state, coarse enclosure and finite-mode measurements. Final records/checks are linked in [report.md](report.md); PD-T522–548, IDEA-608–611 plus consolidated aliases, and LIT-633 are assigned.
 
@@ -261,3 +261,8 @@ Final remote verification found main64409c47a717aef074f611b31a9fd48b7a15101b (me
 A standard local Git2.52.0 three-way merge reconstructed exact published trees in a disposable repository, using read-only older-checkout object alternates. Four shared-document content conflicts were resolved by preserving incoming NN and own sharp sections; state/CURRENT merged cleanly. Incoming PD-T448 PARTIAL supersedes old OPEN context. All27 sharp new primary rows and18 incoming NN primary rows remain exact; all other RESULTS sections match new main, with no conflict markers. Incoming unrelated files are retained by Git SHA. Sharp science/proofs/evidence/gates remain unchanged. The NN reservation was already included in our allocation refresh, so all ranges and final IDs remain valid; full readiness refresh still required.
 
 Reconciled candidate integration:95 manifest identities,30 Python ASTs,107 JSON files,469 local links across113 Markdown documents, zero missing targets. Original handoff08 snapshot counts remain historical; the current merged head and reconciliation companion are the readiness input for base integration. No new proof or numerical run.
+
+## 2026-11-06 — Claude readiness-01 (Claude, claude-opus-5-5 configured, high; one read-only Opus 5.5 high helper)
+
+- Rules read at `6fdd9df4bf8986477c9d6e947c43d97efcad23ae` (merged main `64409c4`); prepared input `7322d4c`.
+- [readiness-01](readiness-01.md): READY. Reservation refresh at main/PR27/PR33/PR31 heads finds no collision; final IDs PD-T522–548, IDEA-608–611, LIT-633 unique and fully mapped; shared diff matches AC's A3 decision (PD-T020 PROVED; PD-T027, PD-T381 PARTIAL), preserves PR32 content and original target statements; manifest checks pass. MINOR fixes R1–R3 committed separately in `0a7a00c`. Handoff 08 closed; all assigned agent work complete pending AC's merge decision.
