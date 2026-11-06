@@ -303,3 +303,51 @@ their bounded stops are finalized in [rounds](rounds.md).
 - AC: "make then a more adventurous handoff for one more codex round, indicate what are the most promising rounds".
 - AC: "one more means restarting the 25 counter".
 - [Handoff 06](handoffs/06-work.md): Part A responds to audit 02. Part B restarts the counters at 0 with 25 rounds each for T7, T8, T9 and a new T10 (near-Padua Chebyshev-lattice cubature plus extraction; added as Claude's proposal, and AC may drop it). It sets a stricter stop rule and ranks the most promising routes: T10 lattice cubature and extraction; T8 phase-shifted M=N orbits on admissible degrees; T7 census, survivor quality and phase optimization; T9 unconditional packing bound and class-specific lower bounds.
+
+## 2026-11-06 — Codex continuation of handoff06
+
+- Role: developer/orchestrator; assigned coordinator gpt-6-astra high as
+  requested in the current continuation. Rules read at full branch head
+  `7afa6a54a4db4652267e38cd48658ba435d20481`. Main refreshed through the
+  connector remains `f70a260e5b5f9a01209dc8a05faabdcf8db1feeb`, already an
+  ancestor. Shell Git fetch still cannot reach the configured proxy. The
+  connector-restored branch exactly matches upstream tree
+  `f1269442917af91fa61fafbfa05cfff35d6ead71`; no history was rewritten.
+- Audit02 accepts the mathematics and returns process findings C1–C4 and
+  n1–n6. PartA is assigned Sol high; mathematical direction workers use
+  Sol xhigh, including their code. A distinct Astra high supplementary
+  checker covers new results. Assigned metadata is recorded honestly;
+  runtime model identity/effort is not independently exposed.
+- PartA fixes precede the first counted PartB round. Four disjoint new
+  direction records use the restarted counters in rounds.md. Each worker
+  completes the full prospective gate before new analytical mechanisms
+  or runs. Web-connector primary-source retrieval is available this time;
+  source reading and local proof remain separately labeled.
+- This continuation uses handoff06's stricter stop rule: every listed route
+  needs an actual result, prospective gate kill or whole-route obstruction
+  before an early stop. A blocked source/computation needs measured evidence
+  and its listed fallback. Unused old budgets are not a valid new stop.
+- No final ranges, global IDs or shared-registry application are needed.
+
+## 2026-11-06 — handoff06 PartA response completed
+
+- [Response02](response-02.md) disposes C1–C4 and n1–n6 before the first
+  counted PartB round. Canonical timing/edit/allocation and pilot-provenance
+  limits are preserved once in [deviations02](response-deviations-02.md).
+  Earlier unsupported model-attribution and stronger T9 gate-timing prose
+  are withdrawn by that dated record; no missing execution history is inferred.
+- The old direction-wide stop decisions are explicitly withdrawn in rounds,
+  report-continuation-04 and the three historical attempts. Fresh counters
+  remain zero until the next pushed result boundary. Accepted mathematical
+  statements remain intact; C4 classifies scoped failed inferences separately.
+- T8's code metadata/path repair pins the two historical preregistrations
+  and uses unique/configurable scratch. An actual isolated D0/n2 full census
+  reproduces its scientific fields and raw digest; original receipts retain
+  their old executed-source hash rather than pretending to use edited code.
+- T9's unchanged historical producers were actually replayed through
+  code/legacy_t9_metadata.py. Scientific receipts match excluding timing;
+  the new companion records current observed versions/commands/source hashes
+  and26 raw arrays, without retrospectively inventing old missing versions.
+  Aggregation metadata and raw inventory are updated; no archive is delivered.
+- Source comparisons remain coverage-qualified and require no historical
+  novelty claim. The stricter handoff06 route rule governs all resumed work.

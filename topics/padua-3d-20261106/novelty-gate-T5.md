@@ -20,10 +20,10 @@ Repeating them exactly is certificate development, not a new bound.
 
 | Candidate / alias | Closest predecessor and separation | Prospective kill / disposition |
 |---|---|---|
-| IDEA?padua-3d-codex-T5-01; exact moment certificate | Classical product Chebyshev quadrature; known symmetric degree-five cube formulas. Exact finite arithmetic and a written spanning reduction, not a new construction mechanism. | D4 must verify known existence first. A nonzero exact residual kills the implementation. Retain as validation only. |
-| IDEA?padua-3d-codex-T5-02; exact section ranks | IDEA-207, DST/Möller, PD-T097. Exact rational section matrices in an orthogonal, nonnormalized Chebyshev basis; same ranks as the earlier floating census. | If bound is exactly the known commutator mechanism, retain as specialized evaluation and do not claim novelty. No inference of attaining the bound. |
-| IDEA?padua-3d-codex-T5-03; finite-support certificate | Standard moment linear algebra / Farkas duality; X7. Distinction must be an exact polynomial separating one explicitly fixed finite support, with arbitrary weights or positive weights stated. | No universal conclusion from a support-restricted LP. Kill a support claim if a known rule on that support is excluded. |
-| IDEA?padua-3d-codex-T5-04; fully symmetric small-degree class | Classical symmetric cubature orbit reductions. Only a specific finite orbit-count obstruction could survive; changing symmetry assumptions does not solve arbitrary support. | If a short orbit/moment argument settles it, record known-mechanism consequence with no novelty claim. General near-minimal target remains OPEN. |
+| IDEA?padua-3d-20261106-codex-T5-01; exact moment certificate | Classical product Chebyshev quadrature; known symmetric degree-five cube formulas. Exact finite arithmetic and a written spanning reduction, not a new construction mechanism. | D4 must verify known existence first. A nonzero exact residual kills the implementation. Retain as validation only. |
+| IDEA?padua-3d-20261106-codex-T5-02; exact section ranks | IDEA-207, DST/Möller, PD-T097. Exact rational section matrices in an orthogonal, nonnormalized Chebyshev basis; same ranks as the earlier floating census. | If bound is exactly the known commutator mechanism, retain as specialized evaluation and do not claim novelty. No inference of attaining the bound. |
+| IDEA?padua-3d-20261106-codex-T5-03; finite-support certificate | Standard moment linear algebra / Farkas duality; X7. Distinction must be an exact polynomial separating one explicitly fixed finite support, with arbitrary weights or positive weights stated. | No universal conclusion from a support-restricted LP. Kill a support claim if a known rule on that support is excluded. |
+| IDEA?padua-3d-20261106-codex-T5-04; fully symmetric small-degree class | Classical symmetric cubature orbit reductions. Only a specific finite orbit-count obstruction could survive; changing symmetry assumptions does not solve arbitrary support. | If a short orbit/moment argument settles it, record known-mechanism consequence with no novelty claim. General near-minimal target remains OPEN. |
 
 No new completion or cubature mechanism is proposed at this gate. No external
 theorem is promoted from inherited digest to local proof. Primary arXiv HTML
@@ -32,7 +32,7 @@ theorem is promoted from inherited digest to local proof. Primary arXiv HTML
 
 ## Prospective finite-support refinement, after D4 and before its run
 
-IDEA?padua-3d-codex-T5-05: replace the initial Lobatto support probe by the
+IDEA?padua-3d-20261106-codex-T5-05: replace the initial Lobatto support probe by the
 three-point Gaussian tensor grid `G={-sqrt(3)/2,0,sqrt(3)/2}^3` at degree five.
 Closest predecessors are tensor Gaussian quadrature, discrete product
 orthogonality, and IDEA-207's warning that a specified support does not settle

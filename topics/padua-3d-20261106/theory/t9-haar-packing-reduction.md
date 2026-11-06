@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T9-03 — exact Haar cubature to lattice packing
+# PD-T?padua-3d-20261106-codex-T9-03 — exact Haar cubature to lattice packing
 
 ID kind: PD-T. Aliases: T9-HAAR; dual-lattice packing sketch.
 Split from: none. Split into: none. Supports: T9-PACK conditional corollary.
@@ -93,3 +93,12 @@ classification, optimized weights, and finite3D all-lattice census are OPEN.
 
 2026-11-06 Codex: close T1 unshifted Haar reduction; isolate the source
 density dependency and the phase scope before claiming any obstruction.
+
+
+## Dated audit-02 attribution — 2026-11-06
+
+Claude's [handoff04](../handoffs/04-work.md) supplied the packing argument:
+the l1 dual criterion, 2^d fold bound, 2-D Padua check, conditional 18/19
+value, coefficient 19n^3/108, threshold n>=110 and escape list. The earlier
+T1 coordinator sketch is an additional lead. This record gives the local
+proof and exact scope; it does not claim origin of that mechanism.

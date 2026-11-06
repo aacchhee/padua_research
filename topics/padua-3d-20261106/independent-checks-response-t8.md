@@ -38,7 +38,7 @@ original accepted T1–T6 batch was not re-audited in full.
 | M2 | T2(a) is subsumed only for its specified unshifted parity LC class. T2(b)/(c) are recorded not launched. Phase/omit-n3/union/mod6, Haar, Lobatto, symmetric and slice routes have reasons and resume conditions. The assigned completion probe remains explicitly unexecuted, with deviation recorded. |
 | M3 | The overstated gate is qualified and permanent timing language retained; later reading is not claimed to cure chronology. AC's disposition remains a separate unresolved administrative item. |
 | M4 | Complete reflection-class count/screen reduction is valid at each tested n2–6; independently reconstructed every per-code bucket and separately reran the producer. Details below. |
-| M5 | Short-relation theorem is now PD-T?padua-3d-codex-T3-02; old PD-N alias retained as provenance. Statement/proof/status are unchanged; final mapping belongs to preparation. |
+| M5 | Short-relation theorem is now PD-T?padua-3d-20261106-codex-T3-02; old PD-N alias retained as provenance. Statement/proof/status are unchanged; final mapping belongs to preparation. |
 | m1–m2 | Each-coordinate hypothesis and original C_k wording/reason are explicit. The audit's ten-node counterexample is attributed as audit evidence rather than a new developer run. |
 | m3–m4 | Exact equivalences and lexicographic (1,15,19) choice verified independently; omitted-n3 scope includes odd n>=5. |
 | m5 | Dated completed-audit addenda and corrected T6 round count resolve historical pending text. Assertions-disabled execution of the original T1 script remains explicitly outside its validity claim. |

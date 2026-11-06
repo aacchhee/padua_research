@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T9-04 — prefix-bound transfer
+# PD-T?padua-3d-20261106-codex-T9-04 — prefix-bound transfer
 
 ID kind: PD-T. Aliases: T9-LOWERSET; hierarchical Cartesian upper bound.
 Split from: none. Split into: none. T9 route4 is its task provenance.

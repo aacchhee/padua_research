@@ -15,7 +15,7 @@ No unsuccessful source fetch is misreported as a reading.
 | De Marchi–Vianello–Xu2009, BIT49,55–73; LIT322 | record: inherited abstract p1, §3 pp7–8 eq17–19, algorithm opening p10 | Positive cubature/hyperinterpolation with excess nodes; not minimal-node interpolation. Closest periodic-grid predecessor. |
 | Bos–De Marchi–Vianello2017, IMAJNA37,519–541; LIT321/392 | record: inherited preprint1502.04114 pp1–3,p14 paragraph | Extracted Fekete/Leja measured behavior and specific non-self-intersecting curve; no universal 3D obstruction. |
 | Cools–Poppe2011; LIT323/381 | T1 and INDEX report bounded source sections3.2,6 | Padua rank-one Chebyshev lattice and higher-dimensional blending are precedents, not a proof of Haar packing density. |
-| Lattice octahedron packing density18/19; T1 lead, DOI10.1016/S0885-064X(03)00005-0 | Bibliographic/secondary lead only | Unverified primary theorem and normalization. T9 proves the reduction with parameterδ, then makes the18/19 corollary CONDITIONAL. |
+| Lattice octahedron packing density18/19; T1 lead, DOI10.1016/S0885-064X(03)00005-0 | Bibliographic/secondary lead only | Unverified primary upper bound; lattice packing density is linear-invariant. T9 proves the reduction with parameterδ, then makes the18/19 corollary CONDITIONAL. |
 | Wang–Wang–Wang2014; LIT391 | inherited secondary statement O(log^d n), DOI unverified | No norm estimate imported into a theorem here. Extraction lemma requires any actually verified projection and a separately controlled inverse. |
 | WAM approximate Fekete/discrete Leja; LIT382/383 | inherited secondary report, complete source theorem not inspected | Classical extraction and Λ≤N C(mesh) are precedents. Global Fekete Λ≤N is elementary baseline, no novelty. |
 | T6 universal lower and T4 stack obstruction | local audited analytic proofs read | Dependencies reproduced in T9 proofs. Keeping the averaged kernel and changing the bounded Fourier test improve explicit constants; sharp minimal projection constants remain open. |
@@ -25,3 +25,15 @@ Source URLs retained by inherited records: lower-set PDF
 https://www.maths.tcd.ie/EMIS/journals/DRNA/pdf/carnicergodes_10ypdpts.pdf ;
 DMVX https://arxiv.org/abs/0805.3529 ; trivariate Lissajous
 https://arxiv.org/abs/1502.04114 . These links are leads, not new reading claims.
+
+
+## Dated audit-02 source and attribution correction — 2026-11-06
+
+The packing mechanism and 18/19 lead were supplied by Claude handoff04,
+which names Minkowski (1904), *Dichteste gitterförmige Lagerung kongruenter
+Körper*, Nachr. Ges. Wiss. Göttingen. Betke–Henk (2000) is a confirmation
+lead reported by the auditor, not newly read here. The unrelated DOI lead
+above does not establish the primary theorem. No new fulltext reading or
+source-status upgrade is claimed by this legacy correction. Subbotin's
+Corollary 1 is an additional projection comparator; the retrospective
+comparison and limits are in novelty-gate-T9.md.

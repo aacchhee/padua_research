@@ -1,4 +1,4 @@
-# PD-N?padua-3d-codex-T3-02 — Full unshifted order-39 class reduction
+# PD-N?padua-3d-20261106-codex-T3-02 — Full unshifted order-39 class reduction
 
 ID kind: PD-N.
 Aliases: nonunit-coordinate reduction; normalized cubic cyclic obstruction.
@@ -49,7 +49,7 @@ shifted cosets, growing-degree subsequences and unions remain outside it.
 
 ## Depends on
 
-PD-T?padua-3d-codex-T3-01 for D-to-real-kernel equivalence. H39 inputs and
+PD-T?padua-3d-20261106-codex-T3-01 for D-to-real-kernel equivalence. H39 inputs and
 check: `evidence/t2-n3-null-cover.json` and T2's finite-cover checker,
 whose exact command is:
 
@@ -60,7 +60,7 @@ Checker SHA-256: `3b52ba33640a3f46971d4e86ab345d68af653fcf011fc25600ac631d4eb2a5
 T2's original same-agent run passed; T3 did not execute that checker.
 The subsequent distinct-agent execution and separate reconstruction have
 discharged the obligation. Its canonical normalized claim is
-`PD-N?padua-3d-codex-T2-02`,
+`PD-N?padua-3d-20261106-codex-T2-02`,
 [normalized screen](t2-normalized-screen.md). The proof uses the checked
 nonzero null polynomials, not the maximum-rank report. See the separate
 [independent check](../independent-checks-computation.md).
@@ -129,5 +129,6 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.

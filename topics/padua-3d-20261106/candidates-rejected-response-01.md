@@ -5,7 +5,7 @@ These name the construction scopes actually excluded by the accepted results;
 they do not manufacture a failed proposal for the T3 prerequisite theorem.
 No new theorem, status or novelty claim is made.
 
-## IDEA?padua-3d-codex-T1-construction — minimal reflection-stable single coset
+## IDEA?padua-3d-20261106-codex-T1-construction — minimal reflection-stable single coset
 
 Aliases: restricted C_1 construction; reflection-invariant Padua-like nodes.
 
@@ -18,12 +18,12 @@ Aliases: restricted C_1 construction; reflection-invariant Padua-like nodes.
 - Verdict: known construction-class variant.
 - Cheapest test / kill criterion: exact injectivity/cardinality obstruction; failure kills only this restricted scope.
 - Discriminability: the accepted hand proof covers every allowed order/phase, unlike a bounded census.
-- Actual results / evidence: PD-N?padua-3d-codex-T1-01 PROVED and accepted by audit-01; finite developer full-class diagnostic separately recorded.
+- Actual results / evidence: PD-N?padua-3d-20261106-codex-T1-01 PROVED and accepted by audit-01; finite developer full-class diagnostic separately recorded.
 - Disposition / reason: REJECTED: failed, in precisely this class for n≥2; the broad C_k target stays OPEN.
 - Canonical theory: theory/t1-minimal-obstruction.md. T1-01's successful classification/obstruction candidate is a separate retained tool.
 - Topic / audit / history: handoff 01 T1/T2; audit-01 m9; dated bookkeeping 2026-11-06.
 
-## IDEA?padua-3d-codex-T4-monotone-polynomial — polynomial-quality monotone stack
+## IDEA?padua-3d-20261106-codex-T4-monotone-polynomial — polynomial-quality monotone stack
 
 Aliases: T4-02 monotone quality subtarget; restricted BRIEF E2 expectation.
 
@@ -36,12 +36,12 @@ Aliases: T4-02 monotone quality subtarget; restricted BRIEF E2 expectation.
 - Verdict: known baseline variant; rate expectation unproved before its refutation.
 - Cheapest test / kill criterion: derive the weighted log-determinant rate with rigorous diagonal/end-point tail control.
 - Discriminability: an all-n analytic positive exponent refutes polynomial growth; mesh slopes alone do not.
-- Actual result / evidence: PROVED PD-N?padua-3d-codex-T4-01, accepted in audit-01.
+- Actual result / evidence: PROVED PD-N?padua-3d-20261106-codex-T4-01, accepted in audit-01.
 - Disposition / reason: REJECTED: refuted for this ordering's polynomial-growth assertion. The successful T4-04 determinant method remains retained; arbitrary orderings remain OPEN.
 - Canonical theory: theory/t4-monotone-lower.md.
 - Topic / audit / history: attempts/T4.md; audit-01 m9; 2026-11-06.
 
-## IDEA?padua-3d-codex-T5-grid-construction — near-minimal degree-five Gaussian-grid rule
+## IDEA?padua-3d-20261106-codex-T5-grid-construction — near-minimal degree-five Gaussian-grid rule
 
 Aliases: T5-03 finite-support existence subtarget; ≤20 positive / ≤14 signed grid nodes.
 
@@ -54,7 +54,7 @@ Aliases: T5-03 finite-support existence subtarget; ≤20 positive / ≤14 signed
 - Verdict: known fixed-support construction variant.
 - Cheapest test / kill criterion: derive the complete moment kernel, positivity interval and zero-weight counts; missing weights invalidate completeness.
 - Discriminability: hand classification over all real weights covers the support; one LP optimum would require a separate exact certificate.
-- Actual results / evidence: PROVED PD-N?padua-3d-codex-T5-03, accepted in audit-01; sharp 21/15 supports attained.
+- Actual results / evidence: PROVED PD-N?padua-3d-20261106-codex-T5-03, accepted in audit-01; sharp 21/15 supports attained.
 - Disposition / reason: REJECTED: refuted in precisely the two support subtargets above. Candidate T5-05's classification itself succeeded and stays retained.
 - Canonical theory: theory/t5-gaussian-grid-obstruction.md.
 - Topic / audit / history: attempts/T5.md; audit-01 m9; 2026-11-06.

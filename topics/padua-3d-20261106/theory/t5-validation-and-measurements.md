@@ -3,7 +3,7 @@
 This is a verification record, not a new mechanism or a claim of historical
 priority. The exact ranks and bound have their hand proof in T5-02. The
 separate auxiliary numerical table below has provisional ID
-**PD-T?padua-3d-codex-T5-04**, ID kind PD-T, status MEASURED pending actual
+**PD-T?padua-3d-20261106-codex-T5-04**, ID kind PD-T, status MEASURED pending actual
 independent replay. Aliases: exact uncompleted-section norm census.
 Split from: none. Split into: none.
 
@@ -143,9 +143,9 @@ the exact controls and section census; the census remains MEASURED, and
 all earlier process-pending prose is historical.
 
 The handoff-assigned completed-section n<=4 minimization was **not executed**.
-Its separate IDEA?padua-3d-codex-T5-completion record and resume condition
+Its separate IDEA?padua-3d-20261106-codex-T5-completion record and resume condition
 are in ../candidates-deferred-response-01.md. This is a disclosed scope
-deviation for AC in the canonical LOG response entry, not equivalent work
+deviation for AC in ../response-deviations-01.md, not equivalent work
 completed by the uncompleted-section census. No optimizer result is claimed.
 
 
@@ -158,5 +158,6 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.

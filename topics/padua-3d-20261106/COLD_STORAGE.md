@@ -73,3 +73,14 @@ The independently executed checks keep their own outputs in separate tmp
 directories; their compact receipts and code are retained in the repository.
 The final code/data manifest also pins the two inherited lattice-quality
 helpers used by the numerical comparisons, along with all local scripts.
+
+## Audit02 metadata/inventory correction — 2026-11-06
+
+The aggregation input is now7afa6a54; original per-artifact commits/hashes
+remain historical identities. The unchanged T9 producers were actually
+replayed in isolated scratch by code/legacy_t9_metadata.py. Its compact
+[companion receipt](evidence/legacy-t9-metadata-r06.json) records commands,
+observed Python/NumPy/SciPy/mpmath versions, source hashes, scientific-field
+equality and all26 raw node-array identities. Those are new replay metadata,
+not invented historical observations. The ledger references their complete
+identity list once; all are regenerate-only, with no archive delivery.

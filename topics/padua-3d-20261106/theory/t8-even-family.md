@@ -1,4 +1,4 @@
-# PD-N?padua-3d-codex-T8-03 — E fails the frozen quality gate
+# PD-N?padua-3d-20261106-codex-T8-03 — E fails the frozen quality gate
 
 ID kind: PD-N. Aliases: odd-degree even half-grid lex selector; E.
 Split from: none. Split into: none.
@@ -81,3 +81,14 @@ select generators after inspecting quality.
 Recorded after the prospective selector stopped; root owns status
 integration and independent verification. No external theorem is used;
 literature-T8.md retains the primary-reading and priority limitations.
+
+## Dated audit-02 verification and chronology correction — 2026-11-06
+
+The independent E rerun completed in [audit-02/T8](../audit-02/T8.md).
+Earlier "required/awaiting rerun" wording is historical; the classification
+and quality retain their conservative MEASURED status with regenerate-only
+raw catalogues. The gate entry was absent from gates.md before execution:
+its later retrospective entry cannot prove prospective registry timing.
+The frozen E append and content-bound receipt support the worker's timing
+attestation, with the limit recorded in
+[canonical deviations](../response-deviations-02.md).

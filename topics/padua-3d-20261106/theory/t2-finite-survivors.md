@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T2-02 — Finite cyclic survivors and measured quality
+# PD-T?padua-3d-20261106-codex-T2-02 — Finite cyclic survivors and measured quality
 
 ID kind: PD-T. Aliases: normalized rank-one survivor screen. Split from: none. Split into: none.
 
@@ -12,7 +12,7 @@ Overall status: MEASURED. Exact finite ranks use integer dictionary determinants
 
 ## Depends on / sources
 
-Canonical PD-T?padua-3d-codex-T3-01; immutable inherited c3_lebesgue.py and c3_rank.py; D0/D1 receipt replay.json. Literature background not load bearing.
+Canonical PD-T?padua-3d-20261106-codex-T3-01; immutable inherited c3_lebesgue.py and c3_rank.py; D0/D1 receipt replay.json. Literature background not load bearing.
 
 ## Evidence
 
@@ -47,8 +47,9 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.
 
 
 ## Symmetry, selection and scope correction — 2026-11-06 — m3/m4

@@ -44,7 +44,8 @@ def main():
                              "command_as_recorded": command})
     output = {
         "schema": "padua-3d-code-data-manifest-v1",
-        "rules_input_sha": "ccd9e905d19c0c625c196c4a3f3e707058ed042a",
+        "rules_input_sha": "7afa6a54a4db4652267e38cd48658ba435d20481",
+        "historical_rules_input_sha": "ccd9e905d19c0c625c196c4a3f3e707058ed042a",
         "generate": "python topics/padua-3d-20261106/code/artifact_manifest.py",
         "verify": "python topics/padua-3d-20261106/code/artifact_manifest.py --verify",
         "artifacts": observed,

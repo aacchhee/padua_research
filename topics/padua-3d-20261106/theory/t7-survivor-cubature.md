@@ -11,7 +11,7 @@ product first-kind Chebyshev measure. In particular no positive-weight
 degree5 rule, the n=3 Padua cubature marker, exists on these nodes.
 
 Overall status: PROVED by the written identity and integral below.
-Candidate IDEA?…T7-08 (using this isolated survivor as a Padua cubature
+Candidate IDEA?padua-3d-20261106-codex-T7-08 (using this isolated survivor as a Padua cubature
 mechanism) is REJECTED within this scope: the necessary exactness
 fails. Its Π3-unisolvence remains a separate positive result.
 

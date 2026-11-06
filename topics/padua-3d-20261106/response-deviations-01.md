@@ -18,15 +18,17 @@ following IDEA-576. AC's acceptance of this deviation is not presumed.
 section commutator minimization was not launched. The developer stopped
 after fixed-Gaussian-grid classification without performing that separately
 assigned nonlinear probe; the rank/norm census is not a replacement.
-IDEA?padua-3d-codex-T5-completion in [deferred candidates](candidates-deferred-response-01.md)
+IDEA?padua-3d-20261106-codex-T5-completion in [deferred candidates](candidates-deferred-response-01.md)
 requires a frozen surplus, variables, compatibility equations, solver starts
 and tolerances and known-positive-rule validation before resuming. Any local
 optimum is at most MEASURED. This scope deviation is preserved for AC.
 
 **m11, historical model attribution.** Claude's handoff01 selected Astra-high
 coordination; AC's earlier quote allowed Astra Ultra when necessary. The
-old claim that AC selected Astra high at setup is superseded. AC explicitly
-selects Astra high in the present continuation, a separate instruction.
+old claim that AC selected Astra high at setup is superseded. The further
+claim that AC explicitly selected high in that continuation had no quoted
+source and is withdrawn (dated audit-02 n1 correction, 2026-11-06). The
+record establishes Claude's allocation and AC's allowance of Ultra only.
 
 **Unused original budgets.** T1–T3 previously stopped by coordinator judgement
 without their stop rules firing. Handoff04 authorizes restarted T7–T9

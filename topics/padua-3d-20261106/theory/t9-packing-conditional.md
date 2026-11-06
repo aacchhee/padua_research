@@ -1,4 +1,4 @@
-# PD-N?padua-3d-codex-T9-01 — conditional unshifted Haar count obstruction
+# PD-N?padua-3d-20261106-codex-T9-01 — conditional unshifted Haar count obstruction
 
 ID kind: PD-N. Aliases: T9-PACK;18/19 threshold110.
 Split from: none; split into: none. Depends on: T9-HAAR.
@@ -18,7 +18,7 @@ disposition: conditional class obstruction retained. No universal nonexistence.
 Attempted mechanism: finite subgroup H⊂T³, *unshifted*, equal torus
 Haar masses followed by cosine folding, product-arcsine cubature precision
 2n−1. Arbitrary phases, non-Haar masses and interpolation without this
-cubature requirement are excluded from the conclusion's scope.
+cubature requirement, and unions of cosets, are excluded from the conclusion's scope.
 
 ## Depends on / proof
 
@@ -32,8 +32,14 @@ not an exhaustive lattice census. No conclusion is obtained at n≤109.
 ## Checks / sources / open items
 
 Exact threshold checks: code/t9_checks.py, evidence/t9-checks.json.
-T1 packing lead, DOI10.1016/S0885-064X(03)00005-0, and literature-T9.md
-retain missing primary statement and normalization. Independent proof of
+Claude handoff04 attributes the 18/19 lead to Minkowski (1904),
+*Dichteste gitterförmige Lagerung kongruenter Körper*, Nachr. Ges. Wiss.
+Göttingen. Betke–Henk (2000) is an auditor-recollection confirmation lead.
+Neither primary packing proof was read in this legacy response. The T1
+DOI10.1016/S0885-064X(03)00005-0 remains an unverified secondary lead,
+not the source of the bound. Packing density is invariant under invertible
+linear maps; only the upper bound itself needs source verification, not
+a change of normalization. See literature-T9.md. Independent proof of
 δ≤18/19, or inspection of a correct source theorem with that bound,
 would discharge this specific dependency. Any other explicit δ<1 would
 give an eventual obstruction via T9-HAAR, with its own threshold, but need

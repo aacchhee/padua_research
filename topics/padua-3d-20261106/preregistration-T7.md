@@ -61,3 +61,16 @@ before accepting it as a quality mechanism. Use the explicit dual vector
 at degree4, which would also exclude degree5 exactness. This test is
 analytic, uses the frozen group/phase, and requires no higher-degree
 node construction or parameter search.
+
+## Dated audit-02 pilot-provenance qualification — 2026-11-06
+
+The published record fixes (7,7,4)/10, (5,0,5)/10 and (1,2,4)/101 but
+contains no recorded selection rationale or list of earlier trials. This
+response cannot reconstruct those historical choices and does not assert
+that no exploratory trials occurred. The round2 registration and result
+first entered Git together in e80e000, so its pre-execution timing is a
+developer attestation, not independently established by commit order. No
+120-second symbolic pilot receipt is present; none is claimed here. This
+provenance limitation is preserved for AC in response-deviations-02.md. It
+changes neither the explicit existence theorem nor its exact certificates.
+Future prospective work must preserve its trial choices and outcome ledger.

@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T8-03 — parity gate for the minimal even half-grid
+# PD-T?padua-3d-20261106-codex-T8-03 — parity gate for the minimal even half-grid
 
 ID kind: PD-T. Aliases: half-period trace obstruction; signed eigenspace
 dimension test. Split from: none. Split into: none.

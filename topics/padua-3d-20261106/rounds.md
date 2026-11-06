@@ -3,6 +3,34 @@
 A round ends with a pushed LOG entry, not with an internal reasoning pass.
 Budgets are ceilings, not targets. Handoff 01 defines progress and kill rules.
 
+## Active handoff06 restart
+
+Each counter below restarted at zero at AC's instruction. A round is counted
+only when its completed result and LOG entry are pushed. Internal searches,
+optimization starts and reasoning steps are not rounds. Before round1 counts,
+PartA must dispose C1–C4 and n1–n6 in response-02.md.
+
+| Direction | New completed rounds / ceiling | Required routes | Current state |
+|---|---:|---|---|
+| T10 | 0 /25 | dual-lattice census; projection quality; QR/LU and structured extraction; ratio/projection theory | prospective gate/source reading |
+| T8 | 0 /25 | admissible degrees; phase optimization; nearby/odd moduli; special phases; cyclic coset unions | prospective gate/preregistration |
+| T7 | 0 /25 | all-coset census and listed fallback; survivor quality; phase optimization; noncyclic unions | prospective gate/preregistration |
+| T9 | 0 /25 | packing source/extensions and finite complement; class lower bounds; refined benchmarks; explicit R-Leja upper theorem | prospective gate/source reading |
+
+The valid early-stop tests are exactly handoff06(a) every listed route has
+an outcome, (b) a theorem closes the direction, or(c) AC stops it. An untried
+route is not closed by saying "programme exhausted" or "requires premises".
+If blocked, record measured feasibility/source evidence, try the listed
+fallback and continue to the next route. The old counts below are history.
+
+## Historical handoffs01/04 counts
+
+Audit02 C1 correction — 2026-11-06: the preceding direction-wide stops
+for T7(2/25), T8(2/25) and T9(1/25) are withdrawn. Shortcut refutations,
+fixed-set cubature obstructions and P/E rule kills remain valid; none
+covered every untried direction route. Handoff06 restarts all four counters
+and applies its stricter rule. The historical counts below are preserved.
+
 | Direction | Completed rounds | Current action | Consecutive rounds without progress |
 |---|---:|---|---:|
 | D0/D1 | 1 | PASS; separate replay and audit-01 completed | 0 |

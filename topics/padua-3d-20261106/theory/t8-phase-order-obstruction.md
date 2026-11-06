@@ -1,4 +1,4 @@
-# PD-N?padua-3d-codex-T8-02 — order-ten cyclic images fail for every phase
+# PD-N?padua-3d-20261106-codex-T8-02 — order-ten cyclic images fail for every phase
 
 ID kind: PD-N. Aliases: generic-phase minimal-order obstruction;
 no-fold half-period trace; all continuous phases at M10.
@@ -28,7 +28,7 @@ no eigenspace dimension or rank.
 
 Overall status: **PROVED**, elementary hand proof. The finite measured
 P ranks are corroboration only. Candidate disposition: the every-n>=2
-M=N no-fold translated route in IDEA?padua-3d-codex-T8-02 is
+M=N no-fold translated route in IDEA?padua-3d-20261106-codex-T8-02 is
 **REJECTED: failed**. Other orders, omitted-degree sequences, unions and
 multi-orbit constructions remain OPEN.
 

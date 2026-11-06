@@ -45,7 +45,7 @@ equality precede rank. Modular full rank lifts through T3; modular deficiency
 alone never certifies characteristic-zero deficiency. Finite full rank does
 not imply good quality or an all-degree theorem. D2 remains unchanged.
 
-## IDEA?padua-3d-codex-T8-01 — complete unshifted cyclic class
+## IDEA?padua-3d-20261106-codex-T8-01 — complete unshifted cyclic class
 
 Aliases: even moduli; non-unit coordinates; designed generating-curve folds.
 
@@ -53,6 +53,7 @@ Aliases: even moduli; non-unit coordinates; designed generating-curve folds.
   N=binom(n+3,3) nodes at n=2,3, with every possible order M<=8N.
 - Mechanism/hypotheses: z in (Z/M)^3, gcd(M,z_1,z_2,z_3)=1;
   coordinate sign and permutation plus unit reparameterization quotiented.
+- Literature baseline and coverage: Cools–Poppe LIT-323/381 and Dencker–Erb LIT-014/319; bounded inherited source reading in literature-T8.md, no new fulltext verification.
 - Closest predecessor: T2 normalized odd M=2N-1 slice and T3 H39; LC
   parity class is already subsumed by T1 (Part A T2-a).
 - Separation/falsifier: allow every M and no unit coordinate, while retaining
@@ -73,13 +74,14 @@ Aliases: even moduli; non-unit coordinates; designed generating-curve folds.
   continuation and full D2 before it can be called promising.
 - Canonical theory: t8-cyclic-reduction.md and finite-screen record.
 
-## IDEA?padua-3d-codex-T8-02 — phased minimal-order rules
+## IDEA?padua-3d-20261106-codex-T8-02 — phased minimal-order rules
 
 Aliases: translated cosine orbit; generic no-fold sampling; special phase.
 
 - Question/scope: fixed degree-uniform phases and generators with M=N.
 - Mechanism/hypotheses: use the full phased character matrix, never a
   zero-phase half-grid. Exact rational phases only in the executed screen.
+- Literature baseline and coverage: translated Chebyshev-lattice framework and T3 phased dictionary; exact source limits in literature-T8.md, no new architecture or source theorem.
 - Closest predecessor: T2-phase and T3-01; general phases remain continuous.
 - Separation/falsifier: phase must remove inherited unshifted nulls; persistent
   null or wrong cardinality kills that rule before a quality run.
@@ -97,13 +99,14 @@ Aliases: translated cosine orbit; generic no-fold sampling; special phase.
   with prospective D2 and exact fold/count obligations.
 - Canonical theory: t8-phases.md.
 
-## IDEA?padua-3d-codex-T8-03 — omit-n3 odd slice
+## IDEA?padua-3d-20261106-codex-T8-03 — omit-n3 odd slice
 
 Aliases: M=111 and M=167; degrees n=5,6; degree-sequence escape.
 
 - Question/scope: diagnose the original normalized odd slice at n=5,6.
 - Mechanism/hypotheses: M=2N-1 and z=(1,b,c), all 1<=b<c<=N-1;
   count distinct node sets and quotient exact symmetries.
+- Literature baseline and coverage: Cools–Poppe lattice prior art and the T2 normalized odd slice; literature-T8.md records bounded inherited coverage, no all-degree source claim.
 - Closest predecessor: T2 finite screen, Part A T2-omit-n3.
 - Separation/falsifier: these degrees escape the n=3 quantifier; one finite
   success supplies no uniform prescription, and no post-hoc sequence is made.
@@ -118,12 +121,13 @@ Aliases: M=111 and M=167; degrees n=5,6; degree-sequence escape.
   structural family survives. Resume with a rule addressing n=4's poor quality.
 - Canonical theory: finite-screen record.
 
-## IDEA?padua-3d-codex-T8-04 — unions and correction
+## IDEA?padua-3d-20261106-codex-T8-04 — unions and correction
 
 Aliases: two/three cosets; DMVX thinning; structured boundary replacement.
 
 - Question/scope: leave a failed single-orbit null variety without node excess.
 - Mechanism/hypotheses: no mask/replacement rule has yet been specified.
+- Literature baseline and coverage: DMVX LIT-306/322, IDEA-182/PD-N034 and the C1 union record; no source theorem grants minimal cardinality or inverse control.
 - Closest predecessor: IDEA-181/182, PD-N034, Part A T2-02, DMVX LIT-322.
 - Separation/falsifier: a proposed correction must leave the displayed null
   variety and differ from PD-N034's unshifted adjacent-mod4 phases. A union
@@ -138,12 +142,13 @@ Aliases: two/three cosets; DMVX thinning; structured boundary replacement.
   mask/coset/correction rule, exact count and a demonstrated old-null escape.
 - Canonical theory: no PD-N for deferral; this retained record.
 
-## IDEA?padua-3d-codex-T8-05 — mod-6 revisit
+## IDEA?padua-3d-20261106-codex-T8-05 — mod-6 revisit
 
 Aliases: cardinality-valid fibre; Lobatto index selection.
 
 - Question/scope: a genuinely distinct mechanism improving PD-N037 fibres.
 - Mechanism/hypotheses: fixed periodic mask on prescribed cosine axes.
+- Literature baseline and coverage: LIT-014/319/381 and the inherited mod-6 fibre baseline; no fresh source result or novelty from a renamed mask.
 - Closest predecessor: IDEA-178/185/187/188; PD-N035/037 and Part A T2-c.
 - Separation/falsifier: must escape a named old null/count defect and provide
   a structural reason for quality. Renaming a screened fibre is duplicate.
@@ -160,7 +165,7 @@ Aliases: cardinality-valid fibre; Lobatto index selection.
 History: all five records were retained before new runs; outcomes are dated
 in the attempt, without overwriting this prospective text.
 
-## IDEA?padua-3d-codex-T8-06 — rank-selected odd-degree even half-grid
+## IDEA?padua-3d-20261106-codex-T8-06 — rank-selected odd-degree even half-grid
 
 Aliases: E; endpoint half-grid; M=2N-2 lex-first full rank; half-period trace.
 
@@ -194,7 +199,7 @@ Aliases: E; endpoint half-grid; M=2N-2 lex-first full rank; half-period trace.
 - Disposition/reason: active prospective screen after round1 publication;
   outcome/stop recorded in attempt. Resume after a kill only with a genuinely
   separated structural rule, not a quality-optimized generator splice.
-- Canonical theory: PD-T?padua-3d-codex-T8-03 trace gate;
+- Canonical theory: PD-T?padua-3d-20261106-codex-T8-03 trace gate;
   future finite E measurement record. History:2026-11-06, after51c031.
 
 ## Outcome append after round2 (prospective records above retained)
@@ -219,3 +224,14 @@ retained, not promising. T8-04/T8-05 remain deferred with the structural
 resume conditions above. Final attempt stop is recorded scope exhaustion
 after two rounds, below the 25-round ceiling; no separated new rule was
 available after the active gate kills. The broad target remains OPEN.
+
+
+## Dated audit-02 history correction — 2026-11-06
+
+The preceding model/provenance header was edited in place after its first
+publication. This note preserves that fact; it does not establish an earlier
+execution order. See [canonical disclosure](response-deviations-02.md).
+The independent T8 executions completed in audit-02/T8.md; classification
+status remains MEASURED with regenerate-only raw catalogues. The former
+"scope exhaustion" stop is withdrawn under handoff06; special strata,
+coset unions and admissible-degree phased orbits resume under new counters.

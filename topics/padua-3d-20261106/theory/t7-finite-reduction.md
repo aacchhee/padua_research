@@ -132,3 +132,13 @@ quotients need a separate proof that translations and ranks are carried
 along. Bibliographic limits are in literature-T7; no external theorem
 is used in the proof. 2026-11-06, Codex, assigned gpt-6.1-sol xhigh,
 rules e5b6445; provisional ID.
+
+
+## Dated audit-02 attribution and split — 2026-11-06
+
+Claude's [handoff04](../handoffs/04-work.md) supplied the fold bound
+|H|<=8N and finite-search sketch. The proof above supplies the full symbolic
+stratum formulation. Its positive finite reduction remains
+PD-T?padua-3d-20261106-codex-T7-03. The rejected one-phase-per-stratum
+inference is separately mapped to [PD-N T7-09](t7-one-phase-refutation.md);
+its counterexample remains here as proof context.

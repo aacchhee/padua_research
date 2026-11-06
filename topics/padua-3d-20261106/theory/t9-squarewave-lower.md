@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T9-02 — odd-harmonic universal lower estimate
+# PD-T?padua-3d-20261106-codex-T9-02 — odd-harmonic universal lower estimate
 
 ID kind: PD-T. Aliases: T9-SQ; positive-facet square-wave dual.
 Split from: none; retained-kernel comparison T9-K is a dependency.
@@ -81,3 +81,13 @@ not rigorous decimal enclosures. Sharpness and constructive upper remain OPEN.
 2026-11-06 Codex: replace the T6 sawtooth test by an odd square wave and
 retain its averaged kernel. Proof inclusion and parity are explicit so the
 improvement is not attributed merely to numerical kernel norms.
+
+
+## Dated audit-02 threshold clarification — 2026-11-06
+
+The recorded n=2420 crossing compares O_floor(n/2)^3/(3*pi^3) with 1.
+The operative second term in the displayed maximum overtakes
+3/4+3/(2*pi) only at n=4592, as independently interval-checked by
+[Claude audit-02/T9](../audit-02/T9.md). This response imports no new
+computer-proof claim for that threshold. "Stronger finite-degree formula"
+compares with the O_m term, not automatically with the constant bound.

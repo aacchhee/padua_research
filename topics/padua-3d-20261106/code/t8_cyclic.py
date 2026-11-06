@@ -7,9 +7,11 @@ import hashlib
 import itertools as it
 import json
 import math
+import os
 from pathlib import Path
 import platform
 import time
+import tempfile
 
 import numpy as np
 import sympy as sp
@@ -17,7 +19,14 @@ from sympy.polys.domains import ZZ
 from sympy.polys.matrices import DomainMatrix
 
 TOP = Path(__file__).resolve().parents[1]
-SCRATCH = Path('/tmp/padua-3d-20261106')
+# Each run gets its own raw-output directory; callers may supply a stable
+# task-specific path with PADUA3D_T8_SCRATCH or --scratch-dir.
+SCRATCH = Path(os.environ.get('PADUA3D_T8_SCRATCH') or
+               tempfile.mkdtemp(prefix='padua-3d-20261106-t8-'))
+# Historical preregistration content identities: never hash the currently
+# amended prose in a reproduction of a historical U/O/P or E experiment.
+PREREG_UOP_SHA256 = 'f089f36d00a771b3d86d1a78e2e5d3e0de50373a166d403ed5fdb3f5bc3dcad4'
+PREREG_E_SHA256 = '8cad326a7fea6d7c2b629d6417f222756a61a60a714affaa3daf5564351754a9'
 
 
 def sha(p):
@@ -121,11 +130,12 @@ def invariant(M, z):
 def metadata(command):
     return {'schema': 't8-cyclic-v1', 'command': command,
             'source_sha256': sha(__file__),
-            'preregistration_sha256': sha(TOP / 'preregistration-T8.md'),
+            'preregistration_sha256': (PREREG_E_SHA256 if 't8_even_family.py' in command
+                                        else PREREG_UOP_SHA256),
             'rules_sha': 'e5b64450fce42262dafc88ee357b72e5f203916b',
             'versions': {'python': platform.python_version(), 'sympy': sp.__version__,
                          'numpy': np.__version__},
-            'status': 'MEASURED exact finite results; independent rerun required'}
+            'status': 'MEASURED exact finite results; independent reruns recorded in audit-02/T8.md'}
 
 
 def write_receipt(name, data):
@@ -282,7 +292,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('command', choices=['controls', 'census', 'odd'])
     parser.add_argument('--n', type=int)
+    parser.add_argument('--scratch-dir', type=Path, help='isolated raw-output directory')
     args = parser.parse_args()
+    global SCRATCH
+    if args.scratch_dir is not None:
+        SCRATCH = args.scratch_dir
+    SCRATCH.mkdir(parents=True, exist_ok=True)
     if args.command == 'controls':
         controls()
     else:

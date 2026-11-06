@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T1-01 — reflection-stable finite torus cosets
+# PD-T?padua-3d-20261106-codex-T1-01 — reflection-stable finite torus cosets
 
 ID kind: PD-T. Aliases: binary annihilator classification; parity coupling.
 Split from: none. Split into: none.
@@ -189,5 +189,6 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.

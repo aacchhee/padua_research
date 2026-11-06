@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T8-02 — finite cyclic census and survivors
+# PD-T?padua-3d-20261106-codex-T8-02 — finite cyclic census and survivors
 
 ID kind: PD-T. Aliases: complete unshifted quadratic/cubic census;
 even-order cubic survivor; omit-n3 diagnosis. Split from: none.
@@ -12,7 +12,7 @@ reduction M<=8N in T8-01. Equivalence is unit reparameterization, generator
 coordinate signs and physical axis permutations, followed by exact node-set
 deduplication using reduced rational angles. Each minimal-count class has
 an integer dictionary full-rank certificate mod1000003 or an exactly verified
-rational nullvector. These are finite computations awaiting separate rerun;
+rational nullvector. These finite computations were independently reproduced in audit-02/T8;
 no unbounded-degree conclusion is claimed.
 
 ## Definitions and assumptions
@@ -26,8 +26,10 @@ degrees; it is not a full all-modulus census there.
 ## Status by part
 
 Overall status: **MEASURED**, exact finite executions. The analytic finite
-reduction is separately PROVED in T8-01. Independent rerun is required
-before upgrading these computed classifications. No D2 promising family.
+reduction is separately PROVED in T8-01. Independent reruns completed
+(../audit-02/T8.md); status remains conservatively MEASURED because raw
+catalogues are regenerate-only and no classification status upgrade is
+asserted here. No D2 promising family.
 
 | Screen | Generator classes | Distinct N-node sets | Full rank |
 |---|---:|---:|---:|
@@ -113,3 +115,14 @@ any family-quality conclusion. Finite ranks provide no Lebesgue estimate.
 2026-11-06, Codex T8, assigned gpt-6.1-sol high, rules e5b64450.
 Preregistered after Part A M2 and full original plus main-delta gate read.
 All listed commands actually executed. No Git/shared files changed.
+
+
+## Dated audit-02 history correction — 2026-11-06
+
+The preceding model/provenance header was edited in place after its first
+publication. This note preserves that fact; it does not establish an earlier
+execution order. See [canonical disclosure](../response-deviations-02.md).
+The independent T8 executions completed in ../audit-02/T8.md; classification
+status remains MEASURED with regenerate-only raw catalogues. The former
+"scope exhaustion" stop is withdrawn under handoff06; special strata,
+coset unions and admissible-degree phased orbits resume under new counters.

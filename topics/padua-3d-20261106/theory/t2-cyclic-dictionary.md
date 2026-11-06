@@ -1,6 +1,6 @@
 # T2 verification/specialization note — exact folded cosine dictionary
 
-Verification note, no separate mathematical result ID. Historical provisional alias PD-T?padua-3d-codex-T2-01 consolidated into canonical T3-01 (not rejected). Aliases: signed-frequency reduction; actual Chebyshev-specialization rank.
+Verification note, no separate mathematical result ID. Historical provisional alias PD-T?padua-3d-20261106-codex-T2-01 consolidated into canonical T3-01 (not rejected). Aliases: signed-frequency reduction; actual Chebyshev-specialization rank.
 
 ## Statement
 
@@ -14,7 +14,7 @@ T_j(cos θ)=cos(jθ), including T₀=1. There are eight signs even when some com
 
 ## Status by part
 
-Canonical mathematical claim: [PD-T?padua-3d-codex-T3-01](t3-cyclic-rank.md). This note records the exact specialization implemented by T2 and its verification obligations; no separate PD-T status or allocation. Finite checker outputs retain their separate MEASURED records until independent replay. No historical novelty claim.
+Canonical mathematical claim: [PD-T?padua-3d-20261106-codex-T3-01](t3-cyclic-rank.md). This note records the exact specialization implemented by T2 and its verification obligations; no separate PD-T status or allocation. Finite checker outputs retain their separate MEASURED records until independent replay. No historical novelty claim.
 
 ## Proof
 
@@ -54,5 +54,6 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.

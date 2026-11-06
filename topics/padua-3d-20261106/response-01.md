@@ -11,9 +11,9 @@ no audit files or earlier handoff instruction bodies are edited.
 The coordinator owns the canonical LOG/report/rounds/gates/results/manifest/
 cold-storage/PR integration. The coordinator has integrated LOG (linking
 [canonical deviations](response-deviations-01.md)), report, rounds, gates
-and cold-storage inventory. Results/PR and final manifest integration remain
-with the coordinator until the new-direction outputs are complete. This worker did not perform Git or PR
-mutations. Source comparisons below report the stated repository/primary
+and cold-storage inventory. Results, PR and manifest integration completed
+at e80e000f2ba439ea62c966d255ef1b900b608b27 (dated audit-02 n1 correction).
+This worker did not perform Git or PR mutations. Source comparisons below report the stated repository/primary
 coverage honestly; they make no historical novelty or priority claim.
 
 ## MAJOR findings
@@ -72,7 +72,7 @@ resume under T7/T8's distinct records and restarted budgets.
 The first coverage line in [novelty-gate-T2.md](novelty-gate-T2.md) is now
 explicitly qualified. Its and [attempts/T2.md](attempts/T2.md)'s addenda
 withdraw the nonexistent “relaxed bounded scan” exemption. The canonical disclosure is [response-deviations-01.md](response-deviations-01.md),
-linked from LOG; required PR wording is supplied in the integration notes. Every eventual T2 registration must retain the permanent
+linked from LOG; the permanent qualifier is written in candidates-response-01.md. Every eventual T2 registration must retain the permanent
 qualifier in candidates-response-01.md (IDEA-576 precedent). Later reading
 and audit cannot cure pre-run timing. No AC acceptance is presumed here.
 Audit-01's full registry read found no missed entry changing T2-01's verdict.
@@ -110,8 +110,8 @@ records the bound, command, exact scope and original producer limitations.
 **M5 — fixed by reclassification, no theorem change.**
 
 Canonical [short relations](theory/t3-short-relations.md) is now
-**PD-T?padua-3d-codex-T3-02**. Old provisional
-`PD-N?padua-3d-codex-T3-01` is retained only as a provenance alias mapping to
+**PD-T?padua-3d-20261106-codex-T3-02**. Old provisional
+`PD-N?padua-3d-20261106-codex-T3-01` is retained only as a provenance alias mapping to
 that same file/theorem, with no second allocation. The successful
 annihilator-tool candidate does not support a failed-mechanism field; that
 post hoc wording was removed. [Attempt T3](attempts/T3.md)'s canonical link
@@ -125,7 +125,7 @@ must be used to distinguish them. No proof, assumptions or PROVED status changed
 |---|---|
 |m1|Fixed: T1 obstruction statement says **each R1,R2,R3**, with dated provenance; coordinator applies same wording to report.|
 |m2|Fixed: t1-open-class.md now quotes original handoff wording verbatim, records “specified basis” / product-Chebyshev clarifications and why existential (i) is vacuous by Gram–Schmidt. It records the auditor-verified 10-node noninvariant Π2 example with determinant magnitude256, expressly as audit evidence.|
-|m3|Fixed: t2-finite-survivors.md records exact survivor classes; the 5e−13 gap is rounding and lexicographic n4 representative is **(1,15,19)**. New developer folded-residue checker confirms36/171/561 pairs ->18/100/301 classes, MEASURED. Report correction is in integration notes.|
+|m3|Fixed: t2-finite-survivors.md records exact survivor classes; the 5e−13 gap is rounding and lexicographic n4 representative is **(1,15,19)**. New developer folded-residue checker confirms36/171/561 pairs ->18/100/301 classes, MEASURED. The completed report correction is recorded in report.md's dated symmetry addendum.|
 |m4|Fixed: dated T2 scope addenda cover **any sequence omitting n3, including odd n≥5**, not just even degrees; no surviving infinite family claimed.|
 |m5|Fixed process prose by dated completed-audit addenda in all21 preexisting theory files and attempt ledgers. T4's actual Newton/direct comparisons through n4 are recorded MEASURED. Coordinator corrects rounds (T6 has2) and old current actions. Original t1 producer's hard-coded PENDING/PASS is historical; its receipt used assertions-enabled Python. Its `python -O` hazard remains explicitly documented, and no optimized-Python validity is claimed. New full-class producer uses explicit failures. Original producer/evidence are preserved.|
 |m6|Fixed: T6 gate verdict is **literature duplicate, retained as local reproof**. Gate/theory/literature/attempt addenda qualify the recorded developer primary reading, unread Yudin input and absent second Subbotin verification. Russian original1982 / English1983 distinguished. Source-index consolidation is deferred to PR preparation as required.|

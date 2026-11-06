@@ -1,5 +1,16 @@
 # Handoff04 results — 2026-11-06
 
+## Audit02 correction — 2026-11-06
+
+The earlier direction-wide stop decisions below are withdrawn under C1.
+T7's shortcut refutations and fixed-set cubature obstruction, T8's P/E
+rule kills and T9's scoped results remain valid; none closed all untried
+routes. Handoff06 restarts T7/T8/T9/T10 at zero with stricter whole-route
+stop conditions. The accepted mathematical statuses are unchanged.
+The canonical new timing/history disclosure is response-deviations-02.md.
+The square-wave term crosses1 near2420 but becomes operative against the
+other proved lower bound at4592, as independently certified in audit02.
+
 The continuation answers audit01 and explores the three newly authorized
 directions. **A minimal-node 3-D family with a proved polylogarithmic
 Lebesgue constant remains OPEN.** No historical novelty is claimed.

@@ -1,4 +1,4 @@
-# PD-N?padua-3d-codex-T4-01 — exponential growth for monotone-height Padua stacks
+# PD-N?padua-3d-20261106-codex-T4-01 — exponential growth for monotone-height Padua stacks
 
 ID kind: PD-N. Aliases: monotone Radon stack; weighted logarithmic energy.
 Split from: none. Split into: none.
@@ -28,14 +28,14 @@ No such assertion about the Leja ordering or all plane stacks is refuted.
 
 ## Negative-result scope
 
-Attempted mechanism: IDEA?padua-3d-codex-T4-02's monotone ordering as a
+Attempted mechanism: IDEA?padua-3d-20261106-codex-T4-02's monotone ordering as a
 polynomial-quality baseline, and the restricted BRIEF E2 expectation.
 Parameter range: this exact all-n family, with an eventual lower bound;
 the onset n_0 is not made effective. No claim of rank failure is involved.
 
 ## Depends on
 
-PD-T?padua-3d-codex-T4-01 (all-n unisolvence) and T4-02 (exact determinant
+PD-T?padua-3d-20261106-codex-T4-01 (all-n unisolvence) and T4-02 (exact determinant
 factor and permutation-average comparison). Elementary trigonometry,
 integrable Riemann sums and the absolutely convergent integrated Fourier
 series justified below. No measurement or unread literature theorem.
@@ -148,14 +148,15 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.
 
 
 ## Candidate bookkeeping addendum — 2026-11-06 — m9
 
 The refuted construction/rate target is
-IDEA?padua-3d-codex-T4-monotone-polynomial, recorded in
+IDEA?padua-3d-20261106-codex-T4-monotone-polynomial, recorded in
 ../candidates-rejected-response-01.md (the T4-02 monotone subtarget / BRIEF
 expectation). The determinant comparison method T4-04 succeeded and remains
 retained. No disposition attaches a refutation to that successful method.

@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T9-01 — retained-kernel projection lower bound
+# PD-T?padua-3d-20261106-codex-T9-01 — retained-kernel projection lower bound
 
 ID kind: PD-T. Aliases: T9-K; practical all-degree lower bound.
 Split from: none. Split into: none. Supports: T9-SQ logarithmic estimate.

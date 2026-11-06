@@ -1,4 +1,4 @@
-# PD-N?padua-3d-codex-T5-03 — Sharp degree-five support bounds on a fixed Gaussian grid
+# PD-N?padua-3d-20261106-codex-T5-03 — Sharp degree-five support bounds on a fixed Gaussian grid
 
 ID kind: PD-N.
 Aliases: Gauss3 tensor-grid thinning; one-parameter finite-support moment space.
@@ -32,7 +32,7 @@ are combined before counting support.
 
 Overall status: PROVED, by the hand proof below. The exact computation
 is corroborative and is not needed for the mathematical reduction.
-Candidate IDEA?padua-3d-codex-T5-05: retained scoped certificate.
+Candidate IDEA?padua-3d-20261106-codex-T5-05: retained scoped certificate.
 Attempted thinning to <=20 positive nodes on G: REJECTED: refuted.
 This is a finite-support consequence of standard tensor orthogonality;
 no historical novelty claim is made.
@@ -164,15 +164,16 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.
 
 
 ## Attempted-construction field correction — 2026-11-06 — m9/m10
 
-The successful affine-weight classification is IDEA?padua-3d-codex-T5-05,
+The successful affine-weight classification is IDEA?padua-3d-20261106-codex-T5-05,
 not a failed mechanism. The negative construction subtargets are explicitly
-recorded as IDEA?padua-3d-codex-T5-grid-construction in
+recorded as IDEA?padua-3d-20261106-codex-T5-grid-construction in
 ../candidates-rejected-response-01.md: ≤20 positive nodes or ≤14 signed
 nodes on this exact Gaussian grid. That supersedes the earlier attempted-
 mechanism field. The theorem/ID/status is unchanged; final crosswalk must

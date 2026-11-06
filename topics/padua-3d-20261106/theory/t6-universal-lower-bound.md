@@ -1,11 +1,11 @@
-# PD-T?padua-3d-codex-T6-01 — universal cube Lebesgue lower bound
+# PD-T?padua-3d-20261106-codex-T6-01 — universal cube Lebesgue lower bound
 
 ID kind: PD-T.
 Aliases: explicit total-degree projection lower bound; corrected cosine
 averaging; factor27 transfer.
 Split from: none. Split into: none (field correction 2026-11-06, audit m9).
 Source task: T6 universal Lebesgue lower bound.
-Supporting dependency: PD-T?padua-3d-codex-T6-02, explicit Fourier estimate
+Supporting dependency: PD-T?padua-3d-20261106-codex-T6-02, explicit Fourier estimate
 [t6-fourier-lower-bound](t6-fourier-lower-bound.md); this is not a conjunct
 split from the universal interpolation statement.
 
@@ -69,7 +69,7 @@ Rejection reason: none. No new Padua construction is inferred.
 
 ## Depends on
 
-PD-T?padua-3d-codex-T6-02 for the Fourier lower estimate in (2).
+PD-T?padua-3d-20261106-codex-T6-02 for the Fourier lower estimate in (2).
 The projection comparison (1) is proved independently below. No source
 theorem is imported as a premise.
 
@@ -84,7 +84,7 @@ Independent check: pending; coordinator will attach its separate record.
 ## Sources
 
 [literature-T6](../literature-T6.md) records Subbotin1983 Theorem 1 and
-Corollaries 1,3 (provisional LIT?padua-3d-codex-T6-02) as LITERATURE for
+Corollaries 1,3 (provisional LIT?padua-3d-20261106-codex-T6-02) as LITERATURE for
 this same comparison and universal logarithmic order; its primary
 fulltext was read. DEKL2017 Theorem2.3 supplies a precise Fourier match.
 The source results are context, not premises of the local proof below.
@@ -242,8 +242,9 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.
 
 
 ## Audit-response limits and source qualification — 2026-11-06 — m6/m7/m8/m9
@@ -275,3 +276,12 @@ projection test is claimed for that producer. Audit-01 T5/T6 command6
 independently tested a real interpolation projection and obtained multiplier
 error 3.5e-16. The analytic argument, not either floating sanity run, proves
 this theorem.
+
+
+## Dated audit-02 comparison pointer — 2026-11-06
+
+[T9-K](t9-averaged-projection-lower.md) and
+[T9-SQ](t9-squarewave-lower.md) give later local explicit constants.
+The logarithmic order is already LITERATURE; the factor 27 compares the
+two local displayed coefficients only. See [the qualified source comparison](../novelty-gate-T9.md)
+for Subbotin's Corollary 1 and remaining primary-source limits.

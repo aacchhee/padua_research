@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T6-02 — explicit octahedral Fourier L1 lower bound
+# PD-T?padua-3d-20261106-codex-T6-02 — explicit octahedral Fourier L1 lower bound
 
 ID kind: PD-T.
 Aliases: facet-coordinate sawtooth bound; positive-frequency vertex test.
@@ -66,7 +66,7 @@ Independent check: pending at developer handoff.
 ## Sources
 
 Context only: [literature-T6](../literature-T6.md), provisional
-LIT?padua-3d-codex-T6-01 (DEKL2017 Theorem2.3) already gives the Fourier
+LIT?padua-3d-20261106-codex-T6-01 (DEKL2017 Theorem2.3) already gives the Fourier
 logarithmic order. It is not used as a proof premise. Exact constant priority
 and relation to older polyhedral proofs are unresolved.
 
@@ -187,8 +187,9 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.
 
 
 ## Attribution/priority wording addendum — 2026-11-06 — m14

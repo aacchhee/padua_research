@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T9-06 — refined finite Lebesgue samples
+# PD-T?padua-3d-20261106-codex-T9-06 — refined finite Lebesgue samples
 
 ID kind: PD-T. Aliases: T9-MAX; T9-LOCALDET. Split from: none.
 Split into: none.

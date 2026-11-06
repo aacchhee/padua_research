@@ -1,7 +1,7 @@
 {
   "schema": "padua-cold-storage-v1",
   "slug": "padua-3d-20261106",
-  "source_commit": "7407e13a0fb7b4ddbeb846d24c765fda0bd4f13c",
+  "source_commit": "7afa6a54a4db4652267e38cd48658ba435d20481",
   "entries": [],
   "total_bytes": 0,
   "note": "No archived payload. The pending_local_working_outputs below are regenerable scratch, not retrievable cold-storage deliveries. Essential H39 null cover is committed.",
@@ -158,6 +158,17 @@
     {
       "working_path_pattern": "D0 pinned historical fixtures restored by code/replay.py",
       "retention": "Git-restorable or regenerate-only from source commits and blobs in evidence/replay.json; not a separate cold-storage delivery"
+    },
+    {
+      "working_path_pattern": "/tmp/padua-3d-r06-legacy-t9-nolw0ayj/raw/t9-*.npy",
+      "array_count": 26,
+      "summary": "evidence/legacy-t9-metadata-r06.json",
+      "identity_fields": "individual observed bytes/SHA-256/path are in the summary receipt",
+      "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/legacy_t9_metadata.py --output topics/padua-3d-20261106/evidence/legacy-t9-metadata-r06.json",
+      "retention": "regenerate-only new replay of unchanged historical producers; original missing execution metadata not retroactively invented",
+      "archival_delivery": "NOT PERFORMED"
     }
-  ]
+  ],
+  "historical_source_commit": "7407e13a0fb7b4ddbeb846d24c765fda0bd4f13c",
+  "aggregation_input_commit": "7afa6a54a4db4652267e38cd48658ba435d20481"
 }

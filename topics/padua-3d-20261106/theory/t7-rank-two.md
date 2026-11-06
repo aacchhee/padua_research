@@ -1,7 +1,8 @@
-# PD-T?padua-3d-20261106-codex-T7-04 — what abstract rank two does and does not imply
+# PD-N?padua-3d-20261106-codex-T7-08 — what abstract rank two does and does not imply
 
-ID kind: PD-T. Aliases: rank-two plane-shortcut counterexample.
-Split from: none. Split into: none. Supports the OPEN T7 target.
+ID kind: PD-N. Aliases: rank-two plane-shortcut counterexample.
+Split from: historical PD-T?padua-3d-20261106-codex-T7-04.
+Split into: none. Supports the OPEN T7 target.
 
 ## Statement, definitions and status
 
@@ -60,3 +61,16 @@ rank-two and rank-three construction problems stay OPEN.
 
 2026-11-06, Codex, assigned gpt-6.1-sol xhigh; rules e5b6445.
 Provisional ID.
+
+
+## Dated audit-02 classification correction — 2026-11-06
+
+Historical alias PD-T?padua-3d-20261106-codex-T7-04 maps to the scoped
+PD-N?padua-3d-20261106-codex-T7-08. The attempted mechanism is candidate
+IDEA?padua-3d-20261106-codex-T7-03: infer a cubic-compatible short
+relation from abstract generator rank two alone. It is REJECTED: refuted
+by H_5 above; the negative statement remains PROVED. Plane containment is
+retained as a supporting algebraic fact, with no bound on its character
+size or phase. The translated minimal cubic survivor and the general
+rank-two construction/quality targets retain their existing statuses.
+The file path is kept for historical links; no final ID is allocated.

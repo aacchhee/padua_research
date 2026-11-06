@@ -1,4 +1,4 @@
-# PD-N?padua-3d-codex-T8-01 — three translated rules fail in degree two
+# PD-N?padua-3d-20261106-codex-T8-01 — three translated rules fail in degree two
 
 ID kind: PD-N. Aliases: phased PK/PT/PO quadratic kills.
 Split from: none. Split into: none.
@@ -30,7 +30,7 @@ their first admissible degree. Other translated rules remain OPEN.
 
 ## Negative-result scope
 
-Attempted mechanism: IDEA?padua-3d-codex-T8-02's three prospectively frozen
+Attempted mechanism: IDEA?padua-3d-20261106-codex-T8-02's three prospectively frozen
 uniform translated K/T/O rules, phases as above, degrees n>=2.
 Parameter failure: n=2 only suffices to kill each all-n>=2 rule.
 
@@ -98,3 +98,16 @@ No quality run or growth fit was performed after the rank kills.
 The rules were prospectively frozen; exact kernels prompted the displayed
 independent elementary identities. An initial SymPy field-matrix coercion
 error produced no receipt; direct typed matrix construction fixed it.
+
+
+## Dated audit-02 scope and provenance correction — 2026-11-06
+
+The earlier OPEN wording concerns extensions beyond this fixed P trio.
+[PD-N T8-02](t8-phase-order-obstruction.md) separately excludes every
+phase/generator choice at n=2, M=N=10, and thus every such all-n>=2
+family. It leaves degree sequences omitting n=2 and other orbit orders
+OPEN. The independent phase checks completed in ../audit-02/T8.md;
+finite auxiliary measurements retain their conservative status. The model
+header/history was corrected in place during the preceding response; the
+original wording survives in Git. Canonical timing/allocation disclosure:
+[response-deviations-02](../response-deviations-02.md).

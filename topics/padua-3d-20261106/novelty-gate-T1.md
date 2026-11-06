@@ -28,7 +28,7 @@ parity-index constructions are a close source comparison. The local result
 must not reject their different spectral interpolation spaces. The
 Li–Sun–Xu bound is conjectural and is not a proof premise.
 
-## IDEA?padua-3d-codex-T1-01 — reflection-stable single coset
+## IDEA?padua-3d-20261106-codex-T1-01 — reflection-stable single coset
 
 Aliases: binary annihilator code; parity coupling; reflection folding.
 
@@ -64,10 +64,10 @@ Aliases: binary annihilator code; parity coupling; reflection folding.
   result are in attempts/T1.md and evidence/t1-reflection-enum.json.
 - Disposition: retained/successful obstruction route; the minimal-node
   construction within this class fails. No broader target is rejected.
-- Canonical theory: PD-T?padua-3d-codex-T1-01 (classification),
-  PD-N?padua-3d-codex-T1-01 (obstruction).
+- Canonical theory: PD-T?padua-3d-20261106-codex-T1-01 (classification),
+  PD-N?padua-3d-20261106-codex-T1-01 (obstruction).
 
-## IDEA?padua-3d-codex-T1-02 — unrestricted C_k obstruction
+## IDEA?padua-3d-20261106-codex-T1-02 — unrestricted C_k obstruction
 
 Aliases: arbitrary coset phases; unions of cosets; near-minimal cubature.
 

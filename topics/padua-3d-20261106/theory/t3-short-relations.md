@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T3-02 — Short compatible relations obstruct injectivity
+# PD-T?padua-3d-20261106-codex-T3-02 — Short compatible relations obstruct injectivity
 
 ID kind: PD-T (reclassified 2026-11-06, audit M5).
 Aliases: cosine-addition annihilator; three-coordinate Chebyshev surface;
@@ -8,7 +8,7 @@ Split from: none. Split into: none.
 ## Statement
 
 Fix d=3, n>=0, M>=1, z in Z^3, phi in R^3 and the full cyclic cosine
-image X defined in PD-T?padua-3d-codex-T3-01. Suppose a nonzero u in Z^3
+image X defined in PD-T?padua-3d-20261106-codex-T3-01. Suppose a nonzero u in Z^3
 satisfies
 
     u dot z = 0 (mod M),   u dot phi = delta*pi (mod 2*pi),
@@ -55,7 +55,7 @@ sets; no universal cyclic or growing-generator family is rejected.
 ## Scope of the obstruction tool (corrected 2026-11-06, audit M5)
 
 This is a retained prerequisite theorem, not a failed-mechanism record.
-IDEA?padua-3d-codex-T3-02 proposed the annihilator tool itself, which succeeded;
+IDEA?padua-3d-20261106-codex-T3-02 proposed the annihilator tool itself, which succeeded;
 no independently proposed construction is rejected here.
 Parameter range: precisely all integer n,M,z,u and real phi satisfying
 the stated congruence, phase and q(u)<=n conditions. A failed search for
@@ -144,8 +144,8 @@ substantive audit remains due; this addendum changes no mathematical claim.
 
 ## ID-kind response addendum — 2026-11-06 — M5
 
-Old provisional ID `PD-N?padua-3d-codex-T3-01` maps to
-**PD-T?padua-3d-codex-T3-02**, the same theorem in this same file.
+Old provisional ID `PD-N?padua-3d-20261106-codex-T3-01` maps to
+**PD-T?padua-3d-20261106-codex-T3-02**, the same theorem in this same file.
 The old label is retained only as provenance, not a second result. The
 statement, proof, assumptions and PROVED status are unchanged. The original
 post hoc attempted-mechanism wording was removed above because no genuine
@@ -162,5 +162,6 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.

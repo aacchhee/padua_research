@@ -4,7 +4,7 @@ Rules/input: ccd9e905d19c0c625c196c4a3f3e707058ed042a. Codex developer; assigned
 
 Scope (qualified 2026-11-06, audit M3): IDEAS registry heading/alias/summary scan and selected obstruction/disposition searches, **not a complete pre-run reading of every obstruction/disposition table**; literature INDEX scan; searches across tracks/theory/topics for rank-1, rank one, Lissajous, Chebyshev lattice, cosine orbit, coset union, boundary correction, aliasing, 3D. Shortlist IDEA-013/029/120/178/181/185/186/187/188; C0 density theorem, C3 rank reduction/observations, deficiencies, Chebyshev observations and candidates. The closest executed screen is PD-N037: fixed modulus≤6 fibres of a three-axis Lobatto product box. Its generic modular witnesses do not certify cosine specialization. PD-T081 assumes a fixed periodic product-grid mask, which these growing cyclic groups escape. No historical priority claim; rank-one cosine lattices and Fourier dictionaries are established mechanisms.
 
-## IDEA?padua-3d-codex-T2-01 — minimal cyclic cosine orbit
+## IDEA?padua-3d-20261106-codex-T2-01 — minimal cyclic cosine orbit
 Aliases: exact-cardinality rank-one lattice; triangular generator; Kronecker generator; octahedral generator.
 
 - Question/scope: can explicit rank-one cosine orbits of exactly dim Π_n nodes pass D2?
@@ -21,7 +21,7 @@ Aliases: exact-cardinality rank-one lattice; triangular generator; Kronecker gen
 - Canonical theory: t2-cyclic-dictionary.md; negative scope t2-cyclic-screen.md.
 - History: 2026-11-06, pre-run.
 
-## IDEA?padua-3d-codex-T2-02 — small explicit correction / coset union
+## IDEA?padua-3d-20261106-codex-T2-02 — small explicit correction / coset union
 Aliases: corrected rank-one lattice; shifted union.
 
 - Question/scope: escape a specific cyclic nullspace using a second coset or explicit boundary replacements while retaining N nodes.

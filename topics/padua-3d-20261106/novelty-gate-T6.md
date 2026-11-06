@@ -39,7 +39,7 @@ Primary survey and exact actual coverage are in [literature-T6](literature-T6.md
 The DEKL 2017 Theorem2.3 Fourier order already covers the octahedral frequency
 set. Therefore logarithmic-cubed growth is not offered as a new discovery.
 
-## IDEA?padua-3d-codex-T6-01 — quantified even-subspace transfer
+## IDEA?padua-3d-20261106-codex-T6-01 — quantified even-subspace transfer
 
 Aliases: cosine lift; translation averaging; coordinate-zero correction;
 cube projection comparison.
@@ -74,10 +74,10 @@ cube projection comparison.
 - Result: written proof in `theory/t6-universal-lower-bound.md`; exact
   multiplier sanity checks in `code/t6_sanity.py`.
 - Disposition: retained; historical novelty unresolved, not asserted.
-- Canonical result: PD-T?padua-3d-codex-T6-01.
+- Canonical result: PD-T?padua-3d-20261106-codex-T6-01.
 - Audit/history: developer result, independent review pending.
 
-## IDEA?padua-3d-codex-T6-02 — explicit octahedral Fourier lower bound
+## IDEA?padua-3d-20261106-codex-T6-02 — explicit octahedral Fourier lower bound
 
 Aliases: vertex facet coordinates; positive-frequency sawtooth test;
 harmonic minimum-coordinate subset.
@@ -109,7 +109,7 @@ harmonic minimum-coordinate subset.
   the all-n result; that rests entirely on the written argument.
 - Result: `theory/t6-fourier-lower-bound.md`, with sanity checks only.
 - Disposition: retained explicit known-mechanism proof; no rejected family.
-- Canonical result: PD-T?padua-3d-codex-T6-02.
+- Canonical result: PD-T?padua-3d-20261106-codex-T6-02.
 - Audit/history: developer result, independent review pending.
 
 No separate candidate was pursued for the unjustified tensor-subspace
@@ -123,7 +123,7 @@ Theorem 3.4 proof exposed equation (3.15)'s precise Subbotin attribution.
 Subbotin1983's full primary text was then read. Its Theorem 1 and
 Corollary 1 already contain the same `3^-d` comparison, and Corollary 3
 already yields universal total-degree cube `c_d log^d n` growth. See
-LIT?padua-3d-codex-T6-02 in `literature-T6.md` for hypotheses and coverage.
+LIT?padua-3d-20261106-codex-T6-02 in `literature-T6.md` for hypotheses and coverage.
 
 This supersedes any weaker description above of historical novelty as
 unresolved: T6-01 is a known-result reproving certificate, and T6-02 is

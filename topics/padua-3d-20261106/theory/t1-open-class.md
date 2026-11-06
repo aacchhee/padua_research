@@ -1,7 +1,7 @@
-# PD-T?padua-3d-codex-T1-02 — original C_k obstruction target
+# PD-T?padua-3d-20261106-codex-T1-02 — original C_k obstruction target
 
 ID kind: PD-T. Aliases: broad torus-coset obstruction; cubature Padua package.
-Split from: none. Split into: PD-N?padua-3d-codex-T1-01, the explicitly
+Split from: none. Split into: PD-N?padua-3d-20261106-codex-T1-01, the explicitly
 restricted reflection-stable single-coset obstruction. The original target
 below is retained unchanged in scope and stays OPEN.
 
@@ -28,7 +28,7 @@ different cosets in this broad definition; this choice only enlarges C_k.
 Overall status: **OPEN**. A proved supporting/restricted result does not
 make this target PARTIAL: its unrestricted quantifiers have not been
 decomposed into an exhaustive proved/open case partition.
-Candidate disposition: IDEA?padua-3d-codex-T1-02 deferred, not rejected.
+Candidate disposition: IDEA?padua-3d-20261106-codex-T1-02 deferred, not rejected.
 
 ## Depends on
 
@@ -79,8 +79,9 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.
 
 
 ## Original wording and class boundary — 2026-11-06 — m2
@@ -112,4 +113,15 @@ cannot be silently dropped from the narrower theorem. No all-n conclusion
 or disproof of the additional cubature package follows.
 
 The Haar-packing lead is separately retained with a concrete resume condition
-in IDEA?padua-3d-codex-T1-Haar, ../candidates-deferred-response-01.md.
+in IDEA?padua-3d-20261106-codex-T1-Haar, ../candidates-deferred-response-01.md.
+
+
+## Dated audit-02 dependency synchronization — 2026-11-06
+
+The unrestricted target remains OPEN. [T7's symbolic reduction](t7-finite-reduction.md)
+covers arbitrary finite single cosets and continuous phase strata;
+[its cubic survivor](t7-rank-two-survivor.md) is a computer-assisted PROVED
+finite example. [T9-HAAR](t9-haar-packing-reduction.md) proves the
+unshifted Haar/dual reduction, with [a conditional count obstruction](t9-packing-conditional.md)
+under its stated density premise. These results do not settle unrestricted
+minimal-node interpolation or its quality.

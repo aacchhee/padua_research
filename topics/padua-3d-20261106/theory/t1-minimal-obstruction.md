@@ -1,4 +1,4 @@
-# PD-N?padua-3d-codex-T1-01 — no minimal total-degree set from a reflection-stable coset
+# PD-N?padua-3d-20261106-codex-T1-01 — no minimal total-degree set from a reflection-stable coset
 
 ID kind: PD-N. Aliases: binary-coupling node excess; reflection-coset obstruction.
 Split from: original T1 C_k target (preserved OPEN in t1-open-class.md).
@@ -22,7 +22,7 @@ The conclusion requires neither of these extra assumptions.
 Pi_n denotes real polynomials of total degree at most n. Torus, cosine
 map, canonical m_j, binary code B, affine parity code C, coupled Lobatto
 denominators q_j=m_j/2, and counts e(q),o(q) follow the classification
-PD-T?padua-3d-codex-T1-01. Injectivity is the necessary property; for
+PD-T?padua-3d-20261106-codex-T1-01. Injectivity is the necessary property; for
 cardinality (1) it is equivalent to unisolvence.
 
 ## Assumptions
@@ -42,13 +42,13 @@ home. Unrestricted C_k remains OPEN.
 
 ## Negative-result scope
 
-Attempted mechanism: IDEA?padua-3d-codex-T1-01, one reflection-stable coset.
+Attempted mechanism: IDEA?padua-3d-20261106-codex-T1-01, one reflection-stable coset.
 Parameter range: every n>=2, every such finite coset in T^3. An arbitrary
 cosine image is not sufficient to meet the reflection hypothesis.
 
 ## Depends on
 
-PD-T?padua-3d-codex-T1-01. The coordinate annihilator behind PD-N032 is
+PD-T?padua-3d-20261106-codex-T1-01. The coordinate annihilator behind PD-N032 is
 reproved below. No external cubature bound, including the LSX conjecture,
 is used.
 
@@ -193,8 +193,9 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.
 
 
 ## Audit-response scope/candidate addendum — 2026-11-06 — m1/m9
@@ -202,6 +203,6 @@ not another approval of the unchanged accepted mathematics.
 The statement now says “each coordinate negation R_1,R_2,R_3”, clarifying
 the hypothesis used throughout its accepted proof. This corrects the
 ambiguous “any single” wording without changing its intended quantifier.
-The attempted construction is IDEA?padua-3d-codex-T1-construction in
+The attempted construction is IDEA?padua-3d-20261106-codex-T1-construction in
 ../candidates-rejected-response-01.md, not successful obstruction-tool
 candidate T1-01. That historical attempted-mechanism field is superseded.

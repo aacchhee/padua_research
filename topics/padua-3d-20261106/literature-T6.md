@@ -11,7 +11,7 @@ comparison and his Corollary 3 supplies logarithmic growth. T6 retains
 separate local analytic proofs with explicit constants. Those proofs use
 no imported lower-bound theorem as a premise.
 
-## LIT?padua-3d-codex-T6-01 — exact Fourier theorem coverage
+## LIT?padua-3d-20261106-codex-T6-01 — exact Fourier theorem coverage
 
 Peter Dencker, Wolfgang Erb, Yurii Kolomoitsev and Tetiana Lomako,
 *Lebesgue constants for polyhedral sets and polynomial interpolation on
@@ -39,7 +39,7 @@ Primary author preprint:
   interpolation spaces; arbitrary total-degree nodes are not its statement.
 - Gaps: complete auxiliary proof audit and journal/preprint comparison.
 
-## LIT?padua-3d-codex-T6-02 — universal cube comparison and growth
+## LIT?padua-3d-20261106-codex-T6-02 — universal cube comparison and growth
 
 Yu. N. Subbotin, *The Lebesgue constants of certain m-dimensional
 interpolation polynomials*, Mathematics of the USSR-Sbornik **46**(4)
@@ -71,7 +71,7 @@ and [English fulltext](https://www.mathnet.ru/php/getFT.phtml?jrnid=sm&option_la
 - Gaps: the cited Yudin lower-bound proof underlying Corollary 3 was not
   separately read. No priority claim for T6's displayed explicit constant.
 
-## LIT?padua-3d-codex-T6-03 — original Padua introduction and its scope
+## LIT?padua-3d-20261106-codex-T6-03 — original Padua introduction and its scope
 
 Len Bos, Marco Caliari, Stefano De Marchi, Marco Vianello and Yuan Xu,
 *Bivariate Lagrange interpolation at the Padua points: the generating
@@ -116,9 +116,9 @@ These are search leads, not verified premises or absence evidence.
 
 ## Relation to the retained local records
 
-- PD-T?padua-3d-codex-T6-01 locally proves the same known `3^-d`
+- PD-T?padua-3d-20261106-codex-T6-01 locally proves the same known `3^-d`
   comparison with every multiplier and real operator norm written out.
-- PD-T?padua-3d-codex-T6-02 locally proves
+- PD-T?padua-3d-20261106-codex-T6-02 locally proves
   `||D_n^3||_1 >= H_floor(n/2)^3/(24*pi^3)` by a bounded dual test.
 - Combining them gives `Lambda>=max(1,H_floor(n/2)^3/(648*pi^3))`.
   The explicit coefficient is coarse. No sharp constant or matching 3-D

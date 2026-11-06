@@ -135,3 +135,41 @@ D3(a)'s all-degree 2-D Padua escape remains the accepted analytic proof.
 The [continuation report](report-continuation-04.md) links exact scopes,
 receipts, supplementary checks and remaining open targets. Required Claude
 review covers PartA material changes and the new T7–T9 batch.
+
+## Handoff06 prospective restart — 2026-11-06
+
+The restarted counters and strict route-completion rule are in rounds.md
+and immutable handoff06. New runs use separate round06 preregistrations;
+no killed T4 or E family is reopened. PartA response02 precedes the first
+counted PartB boundary. Prospective files are linked here before family runs.
+
+- [T7 protocol](preregistration-T7-round06.md): complete symbolic-census
+  objective, explicit measured-feasibility pilot/fallback, survivor quality,
+  phase optimization and noncyclic coset unions. Incomplete coverage is
+  retained as incomplete, never an exhaustive all-coset conclusion.
+- [T8 protocol](preregistration-T8-round06.md): admissibility and exact
+  witnesses, prospectively defined determinant-based phase optimization,
+  nearby/odd moduli, mixed special phases and cyclic coset unions. A
+  necessary parity condition is not sufficient without its exact witness.
+- [T9 protocol](preregistration-T9-round06.md): inspected packing/Leja
+  source dependencies, class-specific lower bounds, n<=16 benchmark
+  measurements and their cost fallback. A budget or missing premise does
+  not silently close an untried listed route.
+- [T10 protocol](preregistration-T10.md): source-gated lattice seeds and
+  exact small-degree search, cubature projection quality, QR/LU and
+  structured extraction, and the ratio/projection theory route. Global
+  determinant optimality is claimed only for an actually exhausted class.
+
+The prospective T8 Phi3b append enumerates the gcd-based exact-count strata
+for M=N+s, s1..4, then optimizes only the remaining free phases under its
+frozen determinant objective. It is recorded before that new run. The
+initial bounded special-phase results are disclosed starting evidence,
+not unseen validation data; prior failed frozen rules remain failed.
+
+## Retrospective audit02 E chronology correction — 2026-11-06
+
+The old E rule's separate preregistration append and receipt are retained,
+but its prospective gates.md entry was missing. This row is retrospective,
+not a backdated gate. The canonical timing/allocation record is
+[response-deviations-02](response-deviations-02.md). E remains killed under
+its own n7/n9 quality rule and is not resumed by the new phase families.

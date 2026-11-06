@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T4-01 — Padua-plane stack and Newton recursion
+# PD-T?padua-3d-20261106-codex-T4-01 — Padua-plane stack and Newton recursion
 
 ID kind: PD-T. Aliases: Radon/Berzolari stack; plane removal.
 Split from: none; supplied BRIEF E2 baseline. Split into: none.
@@ -93,8 +93,9 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.
 
 
 ## Executed-check correction — 2026-11-06 — m5

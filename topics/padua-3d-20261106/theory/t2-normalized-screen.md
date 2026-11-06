@@ -1,4 +1,4 @@
-# PD-N?padua-3d-codex-T2-02 — Finite normalized cyclic rank screen
+# PD-N?padua-3d-20261106-codex-T2-02 — Finite normalized cyclic rank screen
 
 ID kind: PD-N. Aliases: odd cyclic M39 null cover; normalized z1=1 diagnosis. Split from: none. Split into: none (field correction 2026-11-06, audit m9). Related measured quality is separately in t2-finite-survivors.md.
 
@@ -22,11 +22,11 @@ statement needs only the checked nonzero null polynomials.
 
 ## Negative-result scope
 
-Attempted mechanism: IDEA?padua-3d-codex-T2-01 as the subsequently preregistered exhaustive normalized generator class, not only the three killed formulas. n3 only; no all-large-n obstruction.
+Attempted mechanism: IDEA?padua-3d-20261106-codex-T2-01 as the subsequently preregistered exhaustive normalized generator class, not only the three killed formulas. n3 only; no all-large-n obstruction.
 
 ## Depends on
 
-Canonical [PD-T?padua-3d-codex-T3-01](t3-cyclic-rank.md); its T2 specialization in t2-cyclic-dictionary.md. No generic-axis rank theorem is substituted for the algebraic specialization.
+Canonical [PD-T?padua-3d-20261106-codex-T3-01](t3-cyclic-rank.md); its T2 specialization in t2-cyclic-dictionary.md. No generic-axis rank theorem is substituted for the algebraic specialization.
 
 ## Finite reduction and exact evidence
 
@@ -88,8 +88,9 @@ mathematical scopes supersede earlier “audit/replay/rerun pending” and
 “planned, no run claimed” process descriptions where those refer to that
 completed work. This addendum changes no mathematical statement or status;
 MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
-new response dispositions/ID-kind/evidence changes require focused re-audit,
-not another approval of the unchanged accepted mathematics.
+response dispositions, ID-kind mappings and evidence changes were covered
+by [Claude audit-02](../audit-02.md); its accepted mathematical scope is
+recorded there. This dated correction changes no statement or status.
 
 
 ## Scope-wording addendum — 2026-11-06 — m4

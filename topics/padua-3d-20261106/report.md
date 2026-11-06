@@ -211,7 +211,7 @@ The PR remains a draft, with no final IDs or shared-registry edits.
   harmonic lower term exceeds1 only near n=7.2e11; at practical degrees
   it gives only Lambda>=1. The producer multiplier sanity is tautological;
   audit01's actual-projection check is separate evidence.
-- Short relations now use **PD-T?padua-3d-codex-T3-02**. The old PD-N alias
+- Short relations now use **PD-T?padua-3d-20261106-codex-T3-02**. The old PD-N alias
   is retained only as provenance; the accepted statement/status is unchanged.
   Full provisional namespace mappings will be applied at PR preparation.
 
@@ -236,3 +236,14 @@ The matching minimal-node polylogarithmic construction is OPEN. New results
 and PartA material fixes pass next to Claude; the original accepted T1–T6
 theorems are not reopened. Provisional IDs and source-reading limits remain
 explicit, with no shared-registry application or merge request.
+
+## Audit02 response clarification — 2026-11-06
+
+The assigned completed-section n<=4 optimization was not executed; the
+exact uncompleted-section census does not replace it. Earlier garbled
+"not an unperformed rank computation" wording is superseded here.
+The historical direction-wide stop decisions are withdrawn under C1;
+handoff06 resumes their untried routes. Full provisional IDs use the
+padua-3d-20261106 slug; abbreviated old-slug IDs are historical aliases,
+not separate allocations. C4's scoped negative mappings and the response
+are in response-02.md; no accepted positive reduction is removed.

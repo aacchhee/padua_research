@@ -1,4 +1,4 @@
-# PD-T?padua-3d-codex-T8-01 — finite unshifted cyclic reduction
+# PD-T?padua-3d-20261106-codex-T8-01 — finite unshifted cyclic reduction
 
 ID kind: PD-T. Aliases: eight-fold order cap; exact cosine node census;
 primitive cyclic-generator normal form. Split from: none. Split into: none.
@@ -99,3 +99,18 @@ separate obligations.
 
 2026-11-06, Codex T8, assigned gpt-6.1-sol high, rules e5b64450.
 Written after the full gate and Part A M2, before mechanism execution.
+
+
+## Dated audit-02 history correction — 2026-11-06
+
+The preceding model/provenance header was edited in place after its first
+publication. This note preserves that fact; it does not establish an earlier
+execution order. See [canonical disclosure](../response-deviations-02.md).
+The independent T8 executions completed in ../audit-02/T8.md; classification
+status remains MEASURED with regenerate-only raw catalogues. The former
+"scope exhaustion" stop is withdrawn under handoff06; special strata,
+coset unions and admissible-degree phased orbits resume under new counters.
+
+
+Attribution correction (2026-11-06, n5): the |H|<=8N fold bound was
+supplied in Claude's handoff04; this record proves its cyclic application.
