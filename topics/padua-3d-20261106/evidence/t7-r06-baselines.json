@@ -1,0 +1,57 @@
+{
+  "schema": "t7-round06-v1",
+  "rules_sha": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "source_sha256": "63218f04a9a49fce610810871c59b16cc25e3afeb61c756acf9f362b45d89dea",
+  "command": "topics/padua-3d-20261106/code/t7_r06_baselines.py --receipt topics/padua-3d-20261106/evidence/t7-r06-baselines.json",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "status": "MEASURED finite scope unless separate written theorem",
+  "baseline_correction": "Primary QR pivots use inherited UNscaled product-Chebyshev columns; previous receipt QR was orthonormal-column extraction, a distinct secondary comparator.",
+  "baselines": [
+    {
+      "n": 3,
+      "inherited_unscaled_qr": {
+        "lambda21": 8.320670614689938,
+        "logabsdet_orthonormal": 32.54429265921366,
+        "condition2": 7.381478580920907,
+        "inverse_residual_inf": 1.3185762176483253e-15
+      },
+      "nodes_sha256": "a80c13c616898d696e3e306c66b5a11ff9fb499213d6d9e7cdfbc82015949c16"
+    },
+    {
+      "n": 4,
+      "inherited_unscaled_qr": {
+        "lambda21": 11.244877689647982,
+        "logabsdet_orthonormal": 65.7487043282473,
+        "condition2": 9.718338187981269,
+        "inverse_residual_inf": 6.9308429768523526e-15
+      },
+      "nodes_sha256": "e0843177fd6117f29b6fc28e8bb1b8b91c8ebcb06c6c7f41cf18e312c014f6eb"
+    },
+    {
+      "n": 5,
+      "inherited_unscaled_qr": {
+        "lambda21": 13.857502185117356,
+        "logabsdet_orthonormal": 117.27469789037887,
+        "condition2": 9.505672311182169,
+        "inverse_residual_inf": 1.1245704888803927e-14
+      },
+      "nodes_sha256": "9a2a396d7af9715f333aa71ec6bd92815fe7067cfb2a6ddd7d34bb26d6fb23a0"
+    },
+    {
+      "n": 6,
+      "inherited_unscaled_qr": {
+        "lambda21": 22.19147373989026,
+        "logabsdet_orthonormal": 190.32118279063,
+        "condition2": 15.309793070652603,
+        "inverse_residual_inf": 2.2659808373920944e-14
+      },
+      "nodes_sha256": "674de58cb5ca7e5b39c96ae69d67b535cf60136e689e84919732268934f60e00"
+    }
+  ],
+  "seconds": 0.14456922299996222
+}

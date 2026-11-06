@@ -12,10 +12,10 @@ PartA must dispose C1–C4 and n1–n6 in response-02.md.
 
 | Direction | New completed rounds / ceiling | Required routes | Current state |
 |---|---:|---|---|
-| T10 | 0 /25 | dual-lattice census; projection quality; QR/LU and structured extraction; ratio/projection theory | prospective gate/source reading |
-| T8 | 0 /25 | admissible degrees; phase optimization; nearby/odd moduli; special phases; cyclic coset unions | prospective gate/preregistration |
-| T7 | 0 /25 | all-coset census and listed fallback; survivor quality; phase optimization; noncyclic unions | prospective gate/preregistration |
-| T9 | 0 /25 | packing source/extensions and finite complement; class lower bounds; refined benchmarks; explicit R-Leja upper theorem | prospective gate/source reading |
+| T10 | 1 /25 | dual-lattice census; projection quality; QR/LU and structured extraction; ratio/projection theory | census/extraction boundary complete; theory route active |
+| T8 | 1 /25 | admissible degrees; phase optimization; nearby/odd moduli; special phases; cyclic coset unions | initial families/finite witnesses complete; new mixed-stratum extension active |
+| T7 | 1 /25 | all-coset census and listed fallback; survivor quality; phase optimization; noncyclic unions | sampled quality/phase/union results; complete n2 census still required |
+| T9 | 1 /25 | packing source/extensions and finite complement; class lower bounds; refined benchmarks; explicit R-Leja upper theorem | QR/localdet n<=16 boundary complete; source/theory/snapshot routes active |
 
 The valid early-stop tests are exactly handoff06(a) every listed route has
 an outcome, (b) a theorem closes the direction, or(c) AC stops it. An untried

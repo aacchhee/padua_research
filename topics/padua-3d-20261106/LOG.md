@@ -351,3 +351,40 @@ their bounded stops are finalized in [rounds](rounds.md).
   Aggregation metadata and raw inventory are updated; no archive is delivered.
 - Source comparisons remain coverage-qualified and require no historical
   novelty claim. The stricter handoff06 route rule governs all resumed work.
+
+## 2026-11-06 — handoff06 first counted research boundary
+
+PartA was published first in7f773ebe6ca04dbfdcb743b22e92da6469741748.
+The following checkpoint counts one new round per direction; no direction
+is declared stopped. All initial protocols were written and linked before
+their corresponding runs, with publication and execution timing distinguished.
+
+- T10 round1: exact HNF search gives global determinant minima2/12/38
+  at n1/2/3; n4..16 entries are explicitly source/seed comparisons rather
+  than asserted global optima. Cubature projection and restricted extraction
+  are measured through n10. Extraction hits its frozen loss gate at n6/n7;
+  the projection/theory route continues. Inherited QR column/point ordering
+  was restored after the independent checker found tie-dependent differences;
+  the n6/n7 extraction stop is unchanged. No exact subset-singularity claim.
+- T8 round1: nine exact M=N witnesses cover the parity-allowed degrees
+  through12, corroborated on actual cosine nodes at independent splitting
+  primes. The first determinant-optimized phase rule loses at n7/n8 under
+  its registered gate. Nearby orders, special phases and cyclic unions
+  have recorded initial outcomes; a separately prospective mixed-stratum
+  extension remains active. Parity necessity is not an all-degree existence proof.
+- T7 round1: measured fixed-survivor Lambda21 is1998.9502, with54/256
+  exact full-rank n3 sample witnesses and best sampled Lambda21=12.2934.
+  Sampled phase/common-subgroup unions and the hand torsion obstruction
+  are retained. The orthonormal-QR secondary was distinguished from the
+  inherited unscaled primary comparator and corrected without reoptimizing
+  any candidate. Complete n2 symbolic-census work is not closed by its
+  measured partial pilot and continues under the strict stop rule.
+- T9 round1: QR and one-sweep determinant controls execute n2..16 with
+  guards passing. At n16 refined lower samples are168.340 and93.6385.
+  These are MEASURED samples, not certified suprema or new growth laws.
+  Primary packing/Leja verification, class-bound proofs and incoming
+  constructive snapshots are separate active outputs for the next boundary.
+- The distinct checker has independently executed initial actual-node rank,
+  sample-quality and global-HNF controls. Its final scope/hashes will be
+  recorded after the new mathematical/source files are frozen. The required
+  substantive Claude audit is not replaced by supplementary checking.
