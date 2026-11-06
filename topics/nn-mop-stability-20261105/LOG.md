@@ -1,10 +1,10 @@
 # NN MOP IEP: conditioning and stable algorithms: log
 
 - Branch: `codex/nn-mop-stability-20261105` · Initial base: main `b4d292e`; reconciled main `5adc3e2` (PR #24 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK (audit-01 findings) · Next: `Codex (gpt-6.1-sol, high): Continue codex/nn-mop-stability-20261105.` · Next handoff: [handoffs/03-response.md](handoffs/03-response.md).
+- Stage: WORK (audit-01 findings) · Next: `Codex (gpt-6.1-sol, high): Continue codex/nn-mop-stability-20261105.` · Next handoff: [handoffs/04-response.md](handoffs/04-response.md).
 - Reserved final-ID ranges: T432–471, N=162–177, IDEA530–569, LIT614–629; reservation only, no assignments. See ALLOCATIONS.md.
 - Claims: provisional analytic/exact PROVED and floating MEASURED records in theory/; general solver stability and matching sharp growth remain OPEN. [Claude audit-01](audit-01.md): no BLOCKING; four MAJOR findings to answer.
-- Open for AC: G5 stays BLOCKED unless AC allows gitlab.kuleuven.be / epubs.siam.org in the environment network; the D6 gate-timing and D4-C1a post-run-record deviations need AC's decision at PR. Ask AC before using Syvert.
+- Open for AC: none (2026-11-06 decisions below). Ask AC before using Syvert.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -94,3 +94,13 @@
   - Also 16 MINOR items and several notes. Stage → WORK; the response's material changes get a focused re-audit.
 - AC 2026-11-06: storage is a separate cleanup topic; take no cleaning action while the material stays under 10 MB. The topic is 0.58 MB committed; recorded as a NOTE only.
 - Handoff: [handoffs/03-response.md](handoffs/03-response.md).
+
+## 2026-11-06 — AC decisions (canonical record) — Claude orchestrator
+
+- AC: "G5: access is allowed. Gates are OK."
+- **G5.** AC authorizes retrieving and running the public IEP-MOP code and the SIAM supplement for G5. Claude created the personal environment `padua_research` (allowed hosts gitlab.kuleuven.be, epubs.siam.org, arxiv.org) and switched this session's network to it.
+  - Observed at 08:02–08:05 UTC: arxiv.org 200.
+  - The SIAM supplement ZIP returned 403 with a Cloudflare bot challenge, a site-side refusal; it was not bypassed.
+  - The GitLab tunnel first got CONNECT 403, then opened but closed after about 10 s (`ws_closed_mid_exchange`), so no source was retrieved. G5 is no longer blocked by policy; execution is still pending.
+- **Gate deviations.** AC accepts the D6 gate-timing deviation (novelty-gate-D6-D7.md) and the post-run prospective record of D4-C1a (novelty-gate-D4.md) as disclosed. This is the canonical record for audit-01 MINOR 9. It grants no retrospective prospective clearance or novelty claim.
+- Redirection: handoff03 superseded by [handoffs/04-response.md](handoffs/04-response.md), which adds G5 as step 6.

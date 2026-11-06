@@ -2,7 +2,7 @@
 
 A new numbered file each time work passes to another agent or session, opened by the orchestrator holding the previous handoff. Never overwrite an earlier handoff or alter its body; only the status line changes. AC starts the step with `<Agent> (<model, effort>): Continue <branch>.`
 
-- Status: open
+- Status: superseded by 04: AC 2026-11-06 authorized G5 network access and accepted the D6/D4 gate deviations
 - Previous handoff: [02-audit.md](02-audit.md)
 
 - Next agent / model / effort: Codex, `gpt-6.1-sol` high (mathematical development row: the response corrects proof text and measured statements). Use `gpt-6.1-sol` medium for purely mechanical record edits.
