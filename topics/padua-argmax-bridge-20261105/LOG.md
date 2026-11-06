@@ -987,3 +987,10 @@ Prospective exceptional allocation justification: one bounded Astra ultra paper 
 
 
 E01 pause boundary confirmed: D21 created/changed ZERO pack files; only pinned reference and existing dependency/source layouts were read. D29 wrote ONLY independent-checks-D40-syvert2-pack.md preparation/reference notes, no test/source files. No builder, fake-worker, compiler, native, campaign or remote job ran. Preserve that unexecuted preparation report as historical; D40 remains PAUSED until renewed research ends. PR27 draft WORK body updated for E01–E15; title retains current proved1024 threshold. E01 assignedSolxhighD14near/floor,D16corner; Astraultra/root/e01_joint_relative bounded10min paperhelper; AstraxhighD30adversarialfrontiercheck. Servingmetadataunexposed. AllnumericaljobsremainUNRELEASED.
+
+
+### E01 first paper outcomes, no numerical execution
+
+Solxhigh near lead and distinctAstraxhigh adversarial checker independently derive fixedn512 feasible-trial obstructions for the UNCHANGED D35/D37 near envelope: even exact feasible-region optimization cannot fit its old1/20,3/50,1/16 floors. D30 also derives a positive unchangedwideFAR upper atx=y=1/4,rho1/2, invariantunderdualmultiplierchoices. Solxhighcornerlead derivesnegativeoldD27axisallowanceat512evenaftervalidD35coefficientsubstitution. Thesekillonlyspecificconservativeallocations, notactualargmax(thedegree512isalreadyfinite-proved). Full details/frozenreportsforthcoming; no globalonsetchangeornewjob.
+
+BoundedAstraultra helper completes paperquantitativeconsequences ofacceptedD25/D35/D37: proposed6rho/n+uA_Nallowancereduction onclosedrho<=1/2,n>=32. FrozenE01-joint-relative5c88d977... isUNADOPTEDpendingdistinctreview; fullD13stillOPEN. The helper's incompletefresh-gate timing and exactlylimitedcandidatecoverage are canonical in ideas/E01-joint-relative.md; this is disclosed, not waived or retroactively cured. PairedShiftwasdeferred; anyfurthernewmechanismmustcompleteitsgatefirst. No numerical/source/packjoboccurred.
