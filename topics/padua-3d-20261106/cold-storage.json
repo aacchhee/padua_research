@@ -177,6 +177,7 @@
     "identity_locations": "individual source-linked receipts under evidence/*r06*.json and evidence/t10-*.json; final manifests pin them",
     "missing_optional_paths": 0,
     "retention": "regenerate-only; no cold-storage delivery",
-    "verification": "observed existing file SHA-256/byte sizes compared with recorded identities; missing optional paths not claimed observed"
+    "verification": "observed existing file SHA-256/byte sizes compared with recorded identities; missing optional paths not claimed observed",
+    "correction": "2026-11-06 response03: 26 legacy-T9 arrays plus25 T7/T8 raw identities, excluding T10 and node-only T9-r06 hashes. See response-03-hygiene.md and evidence/r08-hygiene-raw-inventory.json for actual stream command/list."
   }
 }

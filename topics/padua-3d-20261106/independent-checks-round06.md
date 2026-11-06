@@ -252,3 +252,13 @@ manifest is root-owned and must be regenerated after final integration.
 No final-source changes are planned by this checker. All owned evidence
 files are below16KiB. The remaining required Claude audit07 is an independent
 workflow step and has not been substituted by this report.
+
+## Dated response03 correction — 2026-11-06
+
+The unqualified complement statement “input hashes match exactly” above
+was wrong for its uncommitted prose pin. The current code/data-only
+receipt removes that entry transparently; see [response03 hygiene](response-03-hygiene.md).
+The same record supersedes the51-file inventory scope wording with its
+explicit source-derived list and actual stream command. Prose pins are
+removed from the supplementary pin receipt; this does not reattribute
+historical executions or alter accepted mathematics.

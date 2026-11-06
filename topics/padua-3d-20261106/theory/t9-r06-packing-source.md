@@ -6,7 +6,7 @@ Status: **PROVED with the explicitly imported LITERATURE theorem below**. No con
 
 ## Imported theorem and source coverage
 
-For the octahedron O={x in R^3: ||x||_1<=1}, the maximal lattice packing density is 18/19. Betke–Henk, *Densest Lattice Packings of 3-Polytopes*, arXiv:math/9909172, PDF page index 30 (printed page 31), explicitly gives this normalization, density, and the critical lattice with basis
+For the octahedron O={x in R^3: ||x||_1<=1}, the maximal lattice packing density is 18/19. Betke–Henk, *Densest Lattice Packings of 3-Polytopes*, arXiv:math/9909172, PDF page index 30 (printed page 31), explicitly gives this normalization, density, and the densest packing lattice Λ*(O) (a critical lattice of O−O=2O) with basis
 
 ```
 Bcrit = (1/3) [[ 2,-1,-3],
@@ -32,7 +32,7 @@ Proof. The local nonnegative-witness lemma in `t9-r06-phase-weight-boundaries.md
 (4n^3/3)/det(L) <= 18/19.
 ```
 
-Since det(L)=|H| and each cosine fiber has at most eight points, the inequalities follow. Notice that the critical comparison lattice is **n Bcrit**, not (n/2)Bcrit. To compare cardinalities, multiply the difference by 648: the required strict inequality is equivalent to
+Since det(L)=|H| and each cosine fiber has at most eight points, the inequalities follow. Notice that the comparison packing lattice is **n Bcrit**, not (n/2)Bcrit. To compare cardinalities, multiply the difference19n^3/108−binom(n+3,3) by108: the required strict inequality is equivalent to
 
 ```
 f(n)=n^3-108n^2-198n-108 > 0.
@@ -43,3 +43,18 @@ Here f(109)=-9809, f(110)=2312, and f(n+1)-f(n)=3n^2-213n-305>0 for n>=109. QED.
 ## Boundary and finite complement
 
 The proof assumes zero phase and strictly positive masses on the full cosine image (positive identity mass already suffices for the witness contradiction). It gives no such sharp theorem if zero masses permit removal of the identity, or for a translated torus subgroup. The separate `t9-r06-phase-weight-boundaries.md` proves why the shortest-dual criterion fails for phases and supplies a weaker phase-uniform annihilator criterion. The degrees1..109 are not excluded by this density estimate. T10's finite computation covers selected lattices through16 and a complete determinant-minimizer census only through3. The additional exact parity-family data through109 and timed sparse-rank probes at17/24/32 are in `t9-r06-finite-complement.md`; they prove that family's oversampling in every degree, not a global complement classification. No global minimal-node claim follows from these larger-degree seeds/families.
+
+## Status by part and dated history — 2026-11-06, response03
+
+ID kind: PD-T. Split from: none. Split into: none.
+Betke–Henk's density theorem is LITERATURE, not a locally verified proof;
+the witness and implication are local proofs. Overall: **PROVED with
+explicit LITERATURE dependency**, under the criterion proposed to AC in
+[response03](../response-03.md#e4--proposed-uniform-literature-criterion-ac-decision-requested).
+Depends on PD-T?padua-3d-20261106-codex-T9-r06-02 and
+LIT?padua-3d-20261106-codex-T9-r06-01. Audit03 companion wording corrections
+T9-F2/F3/NV-F13 are applied here; Betke–Henk lead came from Claude
+audit02/T9 (recollection). No underlying proof changes. The historical
+finite-search boundary above is superseded by the round08 lattice record
+when completed; it was not an unrestricted complement classification.
+Open: phases, omitted zero-weight supports, self-contained density proof.

@@ -12,7 +12,7 @@ Alias: T9-R06-LIT-BH. Provisional local source ID, not a global allocation.
 
 ### LIT?padua-3d-20261106-codex-T9-r06-01 — maximal lattice packing density of the regular octahedron
 
-- Faithful statement: for P_o={x:|x1|+|x2|+|x3|<=1}, maximal lattice density is 18/19. The displayed critical lattice is twice the matrix with columns (1/3,1/2,1/6),(-1/6,-1/3,1/2),(-1/2,1/6,-1/3). The source attributes this case to Minkowski [Min04].
+- Faithful statement: for P_o={x:|x1|+|x2|+|x3|<=1}, maximal lattice density is 18/19. The displayed densest packing lattice Λ*(P_o) (a critical lattice of P_o−P_o, source Algorithm4.2) is twice the matrix with columns (1/3,1/2,1/6),(-1/6,-1/3,1/2),(-1/2,1/6,-1/3). The source attributes this case to Minkowski [Min04].
 - Hypotheses: translational lattice packings of this 3D centrally symmetric body. This is a global packing-density assertion, not a cubature theorem and not a statement about phases.
 - Page: printed page 31 / PDF zero-based page 30, octahedron block. Primary PDF text lines 2648–2699 and the page screenshot agree.
 - Evidence and limits: exact normalized body, density, and basis were visually checked. The determinant 38/27 and resulting density are locally checked; that calculation alone does not prove optimality. Optimality remains an imported LITERATURE theorem.
@@ -25,3 +25,5 @@ Parent source assistance located arXiv math/9909172, DOI, and Henk's 2023 erratu
 ## History
 
 2026-11-06: provisional source record created before importing the density into a new theorem record; no novelty claim.
+
+2026-11-06 response03: applied audit03 companion T9-F4; the reported2024 erratum (Comput.Geom.119,102076) is an unread bibliographic lead, not a primary-verified proof.

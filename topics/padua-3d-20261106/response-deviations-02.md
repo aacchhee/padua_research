@@ -63,9 +63,25 @@ and completion-probe decisions remain preserved in response-deviations-01.md.
 
 The T7 worker reports that some initial combined IDEAS outputs were
 truncated. Relevant obstruction/shortlisted tables and records were
-supplemented before mechanisms, but an unrelated Lanczos registration
-range641–690 was reread after initial runs as an additional completeness
+supplemented before mechanisms, but state/IDEAS.md lines641–690 (Lanczos
+registrations IDEA-081–IDEA-128, including IDEA-109 and IDEA-120; IDEA-120
+was already treated by the inherited T7 gate) were reread after initial
+runs as an additional completeness
 check. Therefore the stronger personal full-table pre-run assurance is
 qualified for those initial T7 runs. That later reading and the distinct
 checker's complete registry read cannot repair chronology. All new T7
 registrations retain this qualification; no historical novelty is claimed.
+
+## Audit03 timing clarification — 2026-11-06
+
+Round06 execution order remains developer attestation. The initial protocols
+were published in7f773eb after some local runs; the T7 complete-census
+addendum first appeared with results inaa48696, and T9 P follow-ups and
+three T10 addenda with results in696bca5. Publication does not independently
+establish the claimed pre-execution order. T8 C0/C3 linked bodies and T3
+proofs were read after its initial runs; later reading does not cure that
+gate qualification. This paragraph is the canonical disclosure for those
+round06 qualifications. The new T8 round08 gate/protocol is published before its dependent
+experiments. The existing-route T9/T10 round08 protocols were written
+before new enumeration per worker attestation, but first published after
+the first executions. No publication-before-run claim is made for them.

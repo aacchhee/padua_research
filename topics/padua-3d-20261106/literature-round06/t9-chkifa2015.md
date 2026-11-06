@@ -40,3 +40,11 @@ Chkifa's 2013 JAT paper is *On the Lebesgue constant of Leja sequences for the c
 ## History
 
 2026-11-06: exact difference/prefix hypotheses verified from later primary source; priority claim gate-killed before final theorem status.
+
+## Bibliographic status clarification — 2026-11-06 response03
+
+The inspected artifact is the arXiv author preprint (1503.01731v2), not
+a locally verified refereed edition. Its displayed arXiv2015 and internal
+2021 dates remain unreconciled; refereeing/publication status was not
+verified. This source identity limitation does not change the exact
+statement imported from the inspected artifact.

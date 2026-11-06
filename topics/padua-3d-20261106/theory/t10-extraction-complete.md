@@ -27,3 +27,13 @@ The frozen helper `t10_lattices.py` remains43d074620c0ea271dbd94a774f472dd5fb0f2
 ## Scope, sources and history
 
 Closest mechanism IDEA027, T9-05 and standard approximate Fekete extraction; no novelty claimed. All conclusions are restricted to these frozen input families, rules and finite degrees. Structured exact ranks, continuous Λ maxima, and uniform N-node bounds remain unresolved. History:2026-11-06 same-rule verification addendum after the initial operational gate was recognized as insufficient for the literal kill wording. The canonical interrupted-invocation disclosure is in attempts/T10, without changing any result used here.
+
+## Response03 correction — 2026-11-06
+
+The preregistered kill was met at n6/7 (frozen t10-quality receipt);
+n8..16 is post-kill verification. The contrary “no literal kill”
+interpretation is withdrawn. Same-order globalQR at n8 gives35.816
+against restricted45.458; the small inherited-order exception depends
+on mesh/ordering. Scoped failure homes are r08-negative-t10-extract-QR.md
+and r08-negative-t10-extract-boundary.md. Numerically invalid structured
+subsets do not establish exact singularity or a universal norm inequality.

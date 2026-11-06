@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Create or verify the topic's code/data identities; never pin prose."""
 import argparse
+import base64
 import hashlib
 import json
 from pathlib import Path
@@ -16,16 +17,26 @@ def identity(path, base=TOP):
 
 
 def artifacts():
-    return sorted([*TOP.joinpath("code").glob("*.py"),
-                   *TOP.joinpath("evidence").glob("*.json")])
+    # Recursive, suffix-independent coverage, excluding Python bytecode caches.
+    return sorted(path for directory in ("code", "evidence")
+                  for path in TOP.joinpath(directory).rglob("*")
+                  if path.is_file() and "__pycache__" not in path.parts
+                  and path.suffix != ".pyc")
 
 
 def packed(rows):
-    """Losslessly encode fixed .py/.json suffixes without repeating key names."""
-    result = {"code": {}, "evidence": {}}
+    """Lossless compact identities: SHA-256 bytes in RFC4648 base64."""
+    result = {"code": {}, "evidence": {}, "other": {}}
     for row in rows:
         path = Path(row["path"])
-        result[path.parts[0]][path.stem] = [row["bytes"], row["sha256"]]
+        expected = ".py" if path.parts[0] == "code" else ".json"
+        if path.suffix == expected:
+            group = path.parts[0]
+            key = path.relative_to(group).with_suffix("").as_posix()
+        else:
+            group, key = "other", path.as_posix()
+        result[group][key] = [row["bytes"], base64.b64encode(
+            bytes.fromhex(row["sha256"])).decode("ascii")]
     return result
 
 
@@ -45,12 +56,12 @@ def main():
                           "bytes": sum(row["bytes"] for row in observed)}))
         return
     output = {
-        "schema": "padua-3d-code-data-manifest-v2",
-        "rules_input_sha": "7afa6a54a4db4652267e38cd48658ba435d20481",
+        "schema": "padua-3d-code-data-manifest-v3",
+        "rules_input_sha": "9042e1c42964150f30fdbe8563c12ba6c6a8692a",
         "historical_rules_input_sha": "ccd9e905d19c0c625c196c4a3f3e707058ed042a",
         "generate": "python topics/padua-3d-20261106/code/artifact_manifest.py",
         "verify": "python topics/padua-3d-20261106/code/artifact_manifest.py --verify",
-        "format": "code/evidence maps filename stems to [bytes, SHA-256 hex]; append .py/.json respectively",
+        "format": "code/evidence map relative stems to [bytes, RFC4648 base64 SHA-256]; append .py/.json. other keys are full topic-relative paths. Recursive scope excludes __pycache__ and .pyc only.",
         "artifacts": packed(observed),
         "inherited_inputs": inherited,
         "commands": "Commands and execution metadata are in the hash-pinned receipts and linked attempts; historical metadata companions preserve missing-field limits.",

@@ -6,7 +6,7 @@ Task provenance: handoff06 T10.4. Supporting dependency: PD-T?padua-3d-20261106-
 
 ## Statement and status
 
-For the best tested full-rank cubature family, prove a degree-uniform `||Pn||∞=O(log(n+2)^3)`. Overall status:**OPEN**, not PARTIAL. All finite mesh values remain MEASURED lower bounds. The separate self-contained theorem proves O(log⁴) and exact Gram control, but neither is a case or conjunct of the original log³ statement.
+For the best tested full-rank cubature family, prove a degree-uniform `||Pn||∞=O(log(n+2)^3)`. Overall status: **PROVED with explicit LITERATURE dependency**, by the separate source-dependent corollary under the response03 E4 proposal. All finite mesh values remain MEASURED lower bounds. The separate self-contained theorem proves O(log⁴) and exact Gram control, but neither is a case or conjunct of the original log³ statement.
 
 ## Actual proof attempt and exact remaining gap
 
@@ -16,4 +16,10 @@ The projection-bound attempt therefore produced a genuine uniform polylog suppor
 
 ## Dated source addendum, 2026-11-06
 
-Subsequent actual primary retrieval found Kolomoitsev–Lomako arXiv1801.00608v1 Theorem4.1 in the exact form needed. The separate `t10-log3-corollary.md` records the local implication and the source-proof coverage limit. Current target status is **CONDITIONAL** on that named, statement-verified external theorem, with the original self-contained log³ target still OPEN. This does not change the initial proof-gap history or import the unread supporting §3 proofs.
+Subsequent actual primary retrieval found Kolomoitsev–Lomako arXiv1801.00608v1 Theorem4.1 in the exact form needed. The separate `t10-log3-corollary.md` records the local implication and the source-proof coverage limit. At that source-addendum boundary the implication was labelled CONDITIONAL. Response03 harmonizes it as **PROVED with explicit LITERATURE dependency**; the remaining self-contained proof task is OPEN. This does not change the initial proof-gap history or import the unread supporting §3 proofs.
+
+History 2026-11-06 (response03): the original OPEN analytic gap and later
+CONDITIONAL label are historical. The present target has one overall
+status, **PROVED with explicit LITERATURE dependency**, via T10-07;
+removing the external theorem is a distinct OPEN proof task, not a second
+status for this statement. No claim about N-node interpolation follows.

@@ -12,7 +12,7 @@ PartA must dispose C1–C4 and n1–n6 in response-02.md.
 
 | Direction | New completed rounds / ceiling | Required routes | Current state |
 |---|---:|---|---|
-| T10 | 2 /25 | dual-lattice census; projection quality; QR/LU and structured extraction; ratio/projection theory | all four routes have actual outcomes; stop(a), no literal extraction kill |
+| T10 | 2 /25 | dual-lattice census; projection quality; QR/LU and structured extraction; ratio/projection theory | audit03 reopens T10.1; extraction kill met n6/7, n8..16 post-kill |
 | T8 | 2 /25 | admissible degrees; phase optimization; nearby/odd moduli; special phases; cyclic coset unions | all listed routes have actual outcomes; stop under(a), broader ranks/target remain OPEN |
 | T7 | 3 /25 | all-coset census and listed fallback; survivor quality; phase optimization; noncyclic unions | complete n2 independently verified; prescribed fallback and all Q/Phi/U outcomes; stop(a) |
 | T9 | 2 /25 | packing source/extensions and finite complement; class lower bounds; refined benchmarks; explicit R-Leja upper theorem | all P/B/M/U outcomes incl109-degree family fallback; stop(a), global complement OPEN |
@@ -122,3 +122,12 @@ the no-progress kill. The new ceilings remain25 per direction.
 - T9 stops after recorded bounded-programme exhaustion: routes1–3 have
   outcomes, routes4–5 have proved reductions and explicit missing premises.
   The broad matching construction and sharp bounds remain OPEN.
+
+## Handoff08 reopening — 2026-11-06
+
+Audit03 E1/E3 withdraws handoff06 stop(a) for T10.1 and the unrestricted
+T9 complement until measured completion/feasibility is recorded. Other
+accepted route outcomes stand. E2 corrects the extraction disposition:
+kill met at n6/7; n8..16 post-kill. Starting counters remain
+T7=3,T8=2,T9=2,T10=2; the new completed output boundary increments only
+the directions with actual new work, never the number of internal runs.

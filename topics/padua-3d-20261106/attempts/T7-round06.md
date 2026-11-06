@@ -14,10 +14,10 @@ They are continuations, with no historical novelty claim.
 
 | Provisional IDEA | Question/mechanism | Closest entries and separation/kill | Initial disposition / resume |
 |---|---|---|---|
-| IDEA?padua-3d-20261106-codex-T7-R06-C | Execute T7-03 full mixed-stratum symbolic census n2/n3 | T7-03; coverage and exact symbolic decisions, not sampled deficiency | Active; incomplete coverage remains OPEN |
-| IDEA?padua-3d-20261106-codex-T7-R06-Q | Measure explicit20-node T7-06 and discovered survivors | T7-06/T9; common-mesh measured quality only | Active; no asymptotic inference |
-| IDEA?padua-3d-20261106-codex-T7-R06-Phi | Optimize noncyclic orderN subgroup phases n3..6 | T7-06/T8; rank2/3 invariant factors separate; torsion dimension may kill types | Active; bounded-sample failure never kills full class |
-| IDEA?padua-3d-20261106-codex-T7-R06-U | Optimize2–4 noncyclic coset unions of exact sizeN | IDEA181/182/PD-N034; independent phases escape fixed involution; exact cardinality/rank first | Active; record every failed sample |
+| IDEA?padua-3d-20261106-codex-T7-R06-C | Execute T7-03 full mixed-stratum symbolic census n2/n3 | T7-03; coverage and exact symbolic decisions, not sampled deficiency | Deferred: full n2 complete; n3 coverage OPEN; resume with larger exact budget, see candidates-round08.md |
+| IDEA?padua-3d-20261106-codex-T7-R06-Q | Measure explicit20-node T7-06 and discovered survivors | T7-06/T9; common-mesh measured quality only | Completed finite measurement; asymptotic target deferred, see candidates-round08.md |
+| IDEA?padua-3d-20261106-codex-T7-R06-Phi | Optimize noncyclic orderN subgroup phases n3..6 | T7-06/T8; rank2/3 invariant factors separate; torsion dimension may kill types | Deferred: bounded outcomes recorded; resume only with structural family, see candidates-round08.md |
+| IDEA?padua-3d-20261106-codex-T7-R06-U | Optimize2–4 noncyclic coset unions of exact sizeN | IDEA181/182/PD-N034; independent phases escape fixed involution; exact cardinality/rank first | Deferred: sampled unions retained; folded/mixed unions resume conditions in candidates-round08.md |
 
 Literature limits and applicable obstructions are in the linked gate and
 ledger. Raw parameter rows inherit these records and retain all outcomes.
@@ -211,3 +211,5 @@ topics/padua-3d-20261106/code/t7_r06_census_quality.py --output-dir /tmp/padua-t
 topics/padua-3d-20261106/code/t7_r06_n3_survivor_quality.py --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-n3-pilot-quality.json
 topics/padua-3d-20261106/code/t7_r06_final_refine.py --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-final-refinements.json
 ```
+
+2026-11-06 response03: candidate rows now show current dispositions; initial registration and trial history remain in Git. Full template records: ../candidates-round08.md.

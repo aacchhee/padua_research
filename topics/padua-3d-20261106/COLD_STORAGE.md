@@ -99,3 +99,14 @@ aggregation without duplicating every receipt row. They remain regeneration-
 only temporary outputs, not archival deliveries or hidden theorem inputs.
 The compact complete n2 positive certificate and all regenerating code and
 independent exact-check evidence are committed.
+
+## Response03 scope correction — 2026-11-06
+
+The51-file stream check comprises26 legacy-T9 arrays plus25 T7/T8
+round06 raw paths, not T10 receipts. The exact command/list and repeated
+stream hashes are in [response03 hygiene](response-03-hygiene.md) and its
+linked inventory. T10 has separate identities; T9-r06 node-only hashes
+are not full raw-byte identities. No cold-storage archival delivery is
+claimed for these transient regeneration-only files. Round08 raw identities
+are in the new receipt families and their attempts; those are also
+regenerate-only, not verified cold-storage locators.

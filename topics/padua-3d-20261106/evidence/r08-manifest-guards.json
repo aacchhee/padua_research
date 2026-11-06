@@ -1,0 +1,53 @@
+{
+  "schema": "padua-r08-manifest-guards-v1",
+  "rules_input": "9042e1c42964150f30fdbe8563c12ba6c6a8692a",
+  "command": "python topics/padua-3d-20261106/code/r08_manifest_check.py --out topics/padua-3d-20261106/evidence/r08-manifest-guards.json",
+  "source_sha256": "e143499dbd3e04d297f00a0a3bdc237b1bdcbaf8e410a38f0ccfa8a99d37cd30",
+  "manifest_code_sha256": "f9eb90f03915934d2f605a91e033db71d2c558d1350981ec565363b2c76ab504",
+  "python": "3.12.14",
+  "scratch": "/tmp/padua-r08-manifest-gwsmsxd_",
+  "baseline_and_restored_pass": true,
+  "cases": [
+    {
+      "mutation": "append byte",
+      "path": "code/t10_lattices.py",
+      "rejected": true
+    },
+    {
+      "mutation": "append byte",
+      "path": "evidence/t10-census.json",
+      "rejected": true
+    },
+    {
+      "mutation": "append byte",
+      "path": "../../tracks/lattice-unisolvence/code/c3_rank.py",
+      "rejected": true
+    },
+    {
+      "mutation": "add file",
+      "path": "code/extra.txt",
+      "rejected": true
+    },
+    {
+      "mutation": "add file",
+      "path": "code/sub/extra.cpp",
+      "rejected": true
+    },
+    {
+      "mutation": "add file",
+      "path": "code/sub/extra.py",
+      "rejected": true
+    },
+    {
+      "mutation": "add file",
+      "path": "evidence/sub/extra.json",
+      "rejected": true
+    },
+    {
+      "mutation": "add file",
+      "path": "evidence/extra.bin",
+      "rejected": true
+    }
+  ],
+  "scope": "Code/data identities only; Python bytecode caches are intentionally excluded."
+}

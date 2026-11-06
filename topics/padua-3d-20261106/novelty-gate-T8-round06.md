@@ -76,20 +76,20 @@ Actual outcomes and canonical records now are:
   specializations at every permitted n<=12, retained as finite witnesses.
   Parity permission is necessary only; no unbounded sufficiency theorem.
 - Phi2: frozen F loses to Leja at the consecutive eligible tested n7/n8
-  and is REJECTED under D2. Broader phase optimization remains OPEN.
+  and is REJECTED: failed under D2. Broader phase optimization remains OPEN.
 - Initial Phi3: generic count excess and actual half-grid selector
-  failures at n2/n3; REJECTED as those selectors. The successful 2N-1
+  failures at n2/n3; REJECTED: failed as those selectors. The successful 2N-1
   rows were zero-phase inherited baselines. The all-continuous-phase
   first-unit 2N-1 rigidity theorem rules out a new phase set at fixed z,
   while nonunit/different-generator questions remain OPEN.
 - S: complete frozen27-state finite samples at eight (n,M) pairs gave
   cubic mixed-stratum positives. The sampled positive is retained;
   unsampled symbolic rank strata remain OPEN. This is no full census.
-- U2/U3/U4: all three frozen det-only rules REJECTED under D2, at eligible
+- U2/U3/U4: all three frozen det-only rules REJECTED: failed under D2, at eligible
   n7/n9, n7/n8, n6/n7 respectively. Common even-order no-fold U2/U3 also
   fail at n6 by the analytic trace theorem. Broader unions remain OPEN.
 - Phi3b: all four separated s1..4 selectors reach complete count
-  obstructions, at n6,n3,n3,n4 respectively. REJECTED in the stated
+  obstructions, at n6,n3,n3,n4 respectively. REJECTED: failed in the stated
   first-unit domain. Cubic M21 is an exact positive with poor measured
   quality; count-permitted intermediate strata lacking a certified
   finalist remain rank OPEN. No modular lower bound is used as an

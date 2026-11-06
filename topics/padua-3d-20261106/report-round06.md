@@ -146,7 +146,7 @@ counterexample, method obstruction or the documented measured fallback.
 
 ## T10: good oversampled projections, difficult minimal extraction
 
-The [exact census](theory/t10-census.md) certifies determinant minima2,12,38
+The [exact census](theory/t10-census.md) records exact determinant minima2,12,38
 at n1,2,3 by complete search. Higher-degree source/seed and4941-neighborhood
 comparisons through16 are explicitly bounded searches, not global optimality.
 The best tested full-rank catalogue is the known anisotropic parity family,
@@ -191,3 +191,15 @@ The next step is Claude's focused review of PartA material changes and
 substantive audit of the restarted work. The old accepted results are not
 reopened wholesale. Canonical unresolved administrative decisions remain
 visible for AC; completing these routes does not retrospectively approve them.
+
+## Dated response03 corrections — 2026-11-06
+
+Audit03 accepted the mathematics but reopened T10.1 and the unrestricted
+T9 complement. Earlier statements that all routes met stop(a) are
+superseded for those two sub-routes by the round08 outcomes. The frozen
+extraction receipt records the preregistered kill at n6/7; n8..16 is
+post-kill verification. The n8 sample exception depends on mesh and
+QR ordering, with like-for-like globalQR35.816 versus restricted45.458.
+No exact singularity of structured subsets follows from numerical failure.
+The E4 proposal applies the explicit-LITERATURE label uniformly to the
+packing, R-Leja and sharp-projection consequences; see response03.

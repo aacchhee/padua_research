@@ -2,7 +2,7 @@
 
 Aliases: T9-R06-U; T9-R06-TH04; explicit R-Leja lower-set specialization. Explicit dependency: LIT?padua-3d-20261106-codex-T9-r06-03/04. Provisional local ID, no global allocation.
 
-Status: **PROVED transfer with explicit LITERATURE dependency**. This is an explicit specialization of the existing lower-set interpolation theorem and known R-Leja bounds. It is not a new priority claim; the primary source itself reports the earlier cubic bound in the number of multivariate points.
+Status: **PROVED with explicit LITERATURE dependency**. This is an explicit specialization of the existing lower-set interpolation theorem and known R-Leja bounds. It is not a new priority claim; the primary source itself reports the earlier cubic bound in the number of multivariate points.
 
 ## Verified one-dimensional premise
 
@@ -49,3 +49,16 @@ For the equality, sum_(k>=0)(k+1)^2 t^k=(1+t)/(1-t)^3. Cubing this series and ta
 ## Source comparison and priority gate
 
 Chkifa's primary introduction explicitly attributes an earlier cubic-in-point-count multivariate R-Leja interpolation bound to Cohen–Chkifa, *On the Stability of Polynomial Interpolation Using Hierarchical Sampling*, reference [7], formula (25). The construction and O(N^3) order above are therefore already within known multivariate R-Leja theory. The locally useful deliverable is the checked every-prefix/difference premise and a transparent three-dimensional constant, not a first explicit polynomial-bound claim. Full text of the cited hierarchical-sampling chapter was not read; this priority gate is already supported by the accessible author's explicit statement.
+
+## Status by part and dated history — 2026-11-06, response03
+
+ID kind: PD-T. Split from: none. Split into: none.
+Imported Chkifa Cor4.3 is LITERATURE; Newton unisolvence, the tensor transfer
+and coefficient sum are local proofs. Depends on
+LIT?padua-3d-20261106-codex-T9-r06-03/04 as source aliases mapped in the
+round08 source record. Overall: **PROVED with explicit LITERATURE
+dependency**, under the uniform criterion proposed to AC in response03.
+The supporting external lemma [7,Lemma7] was not read; no local proof of
+the imported theorem is claimed. Lead: Claude audit02:168 (recollection),
+handoff06 T9.U, applying companion correction NV-F13.
+Open: a matching polylogarithmic minimal-node bound.

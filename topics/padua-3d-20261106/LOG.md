@@ -505,3 +505,24 @@ their corresponding runs, with publication and execution timing distinguished.
   The reopened T9/T10 replication protocols were written before their new
   enumerations, but this checkpoint follows the first executions; that
   timing remains worker attestation, not a publication-before-run claim.
+
+## 2026-11-06 — handoff08 progress checkpoint — Codex, Astra high
+
+- New exact lattice implementation and supplementary independent checks
+  extend the small catalogue; the producer has completed determinant
+  windows through16, with a5772 witness improving the old5792 seed at16.
+  Full complement scans through6 and higher-degree feasibility are being
+  finalized. These are an unfinished checkpoint, not the final scoped
+  computer-assisted status or a claim that independent coverage is complete.
+- New half-shift screen completed the prescribed3..8 degrees: exact trace
+  excludes even degrees; odd-degree determinant selection has finite
+  measured outcomes. The cubic floating tie is corrected separately using
+  exact determinants and the registered lexicographic tie-break. Source
+  snapshots and both runs are preserved; final interpretation/checks follow.
+- Technical hygiene replay is complete; response-03-hygiene records the
+  actual shifts, selected-node linkage, current code-only pins and51raw
+  identities. The manifest v3 losslessly uses base64 SHA-256 and recursively
+  includes arbitrary code/data suffixes (including the new C++ source).
+  Eight mutation controls pass; this snapshot's manifest is generated
+  against its staged tree, so ongoing worker edits are not misattributed.
+- response03 and records/theory remain in progress. Handoff08 stays open.

@@ -20,3 +20,12 @@ The seed census alone does not search beyond literature families. Add a separate
 ## Same-rule extraction verification addendum, before final n8..16 pass
 
 The n6/7 eligible restricted-QR losses and structured numerical ineligibility do not establish the handoff's literal every-extracted-set continuous-norm kill. Therefore complete the unchanged frozen extraction rules at n8..16, comparing both meshes to the already frozen primary inherited QR baselines. No input, tie-break, rank repair, threshold, or quality objective changes. Retain invalid matrices as numerical failures, without exact singularity claims. The final stop basis will be complete finite route outcomes, not an unsupported kill. This supersedes only the earlier operational decision to cease extraction after7. The earlier interrupted high-degree invocation is disclosed in attempts/T10; this is a verification pass of preregistered rules, not a claim that no extraction setup ever ran at those degrees.
+
+## Dated response03 correction — 2026-11-06
+
+The preregistered extraction kill was met at n6/7, as the frozen quality
+receipt records. The final n8..16 pass is post-kill verification of the
+unchanged rules. The earlier same-rule addendum's denial of a literal kill
+is withdrawn; numerical structured ineligibility is not exact singularity.
+The n8 sample win depends on mesh and QR ordering: like-for-like globalQR
+gives35.816 against restricted45.458 (audit03). No killed family is revived.

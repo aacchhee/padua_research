@@ -8,7 +8,7 @@ Status: **PROVED local statements**. Scope: finite cosine images of torus cosets
 
 For q>=2, let H_q={2pi j/q:0<=j<q} and a=pi/(2q). The q distinct numbers cos(a+H_q) are precisely the q zeros of T_q. For each integer 1<=m<=2q-1, the Haar average of cos(m(a+theta)) is zero: it vanishes by the character average unless q divides m; the only remaining m=q has cos(qa)=0. Thus this is the positive q-point Gauss–Chebyshev rule of degree 2q-1, although the shortest dual vector has length q.
 
-Taking three tensor factors gives H=H_q^3 and phase (a,a,a). Its q^3 distinct cosine points are exact on Pi_(2q-1), while the shortest nonzero vector of L=q Z^3 still has length q. In particular the assertion 'exactness on Pi_(2n-1) implies dual minimum >=2n' is false for translated Haar cosine rules, for every n=q>=2. This counterexample concerns that criterion; q^3 exceeds the minimal total-degree cardinality and does not refute the unshifted packing theorem's cardinality conclusion for the larger translated class.
+Taking three tensor factors gives H=H_q^3 and phase (a,a,a). Its q^3 distinct cosine points are exact on Pi_(2q-1), while the shortest nonzero vector of L=q Z^3 still has length q. In particular the assertion 'exactness on Pi_(2n-1) implies dual minimum >=2n' is false for translated Haar cosine rules, for every n=q>=2. This counterexample concerns that criterion; for q>=3, q^3 exceeds the total-degree cardinality, whereas q=2 has8<10. For every q>=2, T_q(x1) is a nonzero degree-q polynomial vanishing on these nodes, so the set is not Pi_q-unisolvent. The example therefore does not establish a translated Padua-type interpolation rule.
 
 ## A phase-uniform annihilator
 
@@ -67,4 +67,10 @@ Thus Lambda(X_1)=2 while Lambda(X_t) tends to infinity as t tends to zero, with 
 
 ## Two-dimensional control
 
-For the standard two-dimensional Padua torus representation, the cyclic order is 2n(n+1) and generator (n,n+1). Reducing its dual congruence modulo n and n+1 gives the exact dual lattice {((n+1)a,nb):a+b even}, whose shortest l1 length is2n, attained at(0,2n). An odd pair has norm at least2n+1; a nonzero even coordinate costs at least2n. Thus **every** dual vector has mr>=r>=2n>n and 2mr>=4n>2n-1. Neither rank/exactness obstruction falsely triggers on Padua. The mixed vector(n+1,-n) has length2n+1 and annihilator degree2(2n+1). Exact arithmetic controls through16 are in `evidence/t9-r06-exact.json`; the inequalities prove compatibility for all n.
+For the standard two-dimensional Padua torus representation, the cyclic order is 2n(n+1) and generator (n,n+1). Reducing its dual congruence modulo n and n+1 gives the exact dual lattice {((n+1)a,nb):a+b even}, whose shortest l1 length is2n, attained at(0,2n). An odd pair has norm at least2n+1; a nonzero even coordinate costs at least2n. Thus **every** dual vector has mr>=r>=2n>n and 2mr>=4n>2n-1. Neither rank/exactness obstruction falsely triggers on Padua. The mixed vector(n+1,-n) has length2n+1 and annihilator degree2(2n+1). Closed-form values through16 are tabulated (not enumerated) in `evidence/t9-r06-exact.json`; the inequalities prove compatibility for all n.
+
+Dated correction 2026-11-06 (response03): the old blanket q^3>N
+claim had the exceptional q=2 case wrong. The non-unisolvence argument
+above supplies the correct scope; phase-blind short-dual inference is
+still refuted exactly as before. The tabulation wording also applies
+audit03 companion T9-F7. This is disclosed for focused material re-audit.

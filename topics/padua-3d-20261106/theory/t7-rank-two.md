@@ -1,7 +1,7 @@
 # PD-N?padua-3d-20261106-codex-T7-08 — what abstract rank two does and does not imply
 
 ID kind: PD-N. Aliases: rank-two plane-shortcut counterexample.
-Split from: historical PD-T?padua-3d-20261106-codex-T7-04.
+Split from: none; whole record reclassified, historical alias PD-T?padua-3d-20261106-codex-T7-04.
 Split into: none. Supports the OPEN T7 target.
 
 ## Statement, definitions and status

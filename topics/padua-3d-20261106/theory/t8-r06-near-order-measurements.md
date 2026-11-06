@@ -97,7 +97,7 @@ No external literature theorem is a proof dependency. Relevant source
 coverage and known-mechanism comparison remain in literature-T8-round06.md.
 The checker is an implementation, not an independent proof audit.
 
-Candidate disposition: each frozen s1..4 rule REJECTED at its first
+Candidate disposition: each frozen s1..4 rule REJECTED: failed at its first
 complete count-obstruction degree. The intermediate rank questions,
 broader continuous cyclic families, and arbitrary subgroup unions remain
 OPEN. No global ID is allocated by this worker.
