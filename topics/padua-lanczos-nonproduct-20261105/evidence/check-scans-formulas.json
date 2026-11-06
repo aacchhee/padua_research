@@ -1,0 +1,174 @@
+{
+  "status": "PASS supplementary formula",
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_review.py",
+    "bytes": 12172,
+    "sha256": "ca9c40ccdf17df450ed6411287b143d08ca33e26b093a7b1a0a0ebcfbd84b289"
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/check_scans_review.py",
+    "--mode",
+    "formula",
+    "--output",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/check-scans-formulas.json"
+  ],
+  "head": "dbe5c811e0b22498382c8b3a6f2b0f2d9eb66bfc",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "elapsed_seconds": 3.3809944270001324,
+  "results": {
+    "checks": [
+      {
+        "family": "T24",
+        "degree": 3,
+        "rule": "bj",
+        "point_count": 325,
+        "source_count": 9,
+        "endpoint_match": true,
+        "choice_tie_match": true
+      },
+      {
+        "family": "T24",
+        "degree": 3,
+        "rule": "mirror",
+        "point_count": 325,
+        "source_count": 9,
+        "endpoint_match": true,
+        "choice_tie_match": true
+      },
+      {
+        "family": "T24",
+        "degree": 3,
+        "rule": "alt",
+        "point_count": 325,
+        "source_count": 9,
+        "endpoint_match": true,
+        "choice_tie_match": true
+      },
+      {
+        "family": "T24",
+        "degree": 3,
+        "rule": "pivot",
+        "point_count": 325,
+        "source_count": 9,
+        "endpoint_match": true,
+        "choice_tie_match": true
+      },
+      {
+        "family": "H24_222",
+        "degree": 3,
+        "rule": "bj",
+        "point_count": 325,
+        "source_count": 9,
+        "endpoint_match": true,
+        "choice_tie_match": true
+      },
+      {
+        "family": "H24_222",
+        "degree": 3,
+        "rule": "mirror",
+        "point_count": 325,
+        "source_count": 9,
+        "endpoint_match": true,
+        "choice_tie_match": true
+      },
+      {
+        "family": "H24_222",
+        "degree": 3,
+        "rule": "alt",
+        "point_count": 325,
+        "source_count": 9,
+        "endpoint_match": true,
+        "choice_tie_match": true
+      },
+      {
+        "family": "H24_222",
+        "degree": 3,
+        "rule": "pivot",
+        "point_count": 325,
+        "source_count": 9,
+        "endpoint_match": true,
+        "choice_tie_match": true
+      },
+      {
+        "family": "D36x9",
+        "degree": 3,
+        "rule": "bj",
+        "point_count": 324,
+        "source_count": 9,
+        "endpoint_match": true,
+        "choice_tie_match": true
+      },
+      {
+        "family": "D36x9",
+        "degree": 3,
+        "rule": "mirror",
+        "point_count": 324,
+        "source_count": 9,
+        "endpoint_match": true,
+        "choice_tie_match": true
+      },
+      {
+        "family": "D36x9",
+        "degree": 3,
+        "rule": "alt",
+        "point_count": 324,
+        "source_count": 9,
+        "endpoint_match": true,
+        "choice_tie_match": true
+      },
+      {
+        "family": "D36x9",
+        "degree": 3,
+        "rule": "pivot",
+        "point_count": 324,
+        "source_count": 9,
+        "endpoint_match": true,
+        "choice_tie_match": true
+      }
+    ],
+    "inputs": [
+      {
+        "family": "T24",
+        "receipt": {
+          "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/p6-pilot-T24.json",
+          "bytes": 10337,
+          "sha256": "fc19459471f2dba627e56368e167e4f97ea89efe687fa09048b22acc98c3e12a"
+        },
+        "input": {
+          "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/pilot-T24/input.txt",
+          "bytes": 5126,
+          "sha256": "b4b007cf1fe522f33326b2a7925c1dbd1b78428f34073a79d6aba54d4fd0453f"
+        }
+      },
+      {
+        "family": "H24_222",
+        "receipt": {
+          "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/p6-pilot-H24_222.json",
+          "bytes": 10477,
+          "sha256": "b0baad1aeb006fb71e065f3ca683d71cdf47f8f14db92e51b398a41109dc3728"
+        },
+        "input": {
+          "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/pilot-H24_222/input.txt",
+          "bytes": 5873,
+          "sha256": "b54d4a053d4d0c86c7f00715d309015126760ecc55be40435072caca7e900b61"
+        }
+      },
+      {
+        "family": "D36x9",
+        "receipt": {
+          "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/p6-pilot-D36x9.json",
+          "bytes": 10774,
+          "sha256": "2e816b5266ea8e74834e663c7c3f37cd0027d0b075cb68df263256eeaf227b55"
+        },
+        "input": {
+          "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/pilot-D36x9/input.txt",
+          "bytes": 5734,
+          "sha256": "48977eefea1c662c3ef23c8ed17d49e3cb0310a6d53321add8c51c91866313f6"
+        }
+      }
+    ]
+  }
+}

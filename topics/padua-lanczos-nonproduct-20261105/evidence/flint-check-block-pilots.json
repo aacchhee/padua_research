@@ -1,0 +1,97 @@
+{
+  "status": "INCOMPLETE: block alt8 timeout60; bounded attempt stopped",
+  "checker": {
+    "path": "topics/padua-lanczos-nonproduct-20261105/code/flint_disk_block_check.py",
+    "bytes": 14611,
+    "sha256": "08399cf88fa086a2e948685738de2a98eea45721f5c05ce2f7cd59f03457bb3b"
+  },
+  "per_case_seconds": 60,
+  "runs": [
+    {
+      "degree": 6,
+      "rule": "bj",
+      "command": [
+        "python",
+        "-B",
+        "topics/padua-lanczos-nonproduct-20261105/code/flint_disk_block_check.py",
+        "--input",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "--basis",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/D36x9-bj-d6.json",
+        "--output",
+        "/tmp/padua-lanczos-nonproduct-20261105/flint-check/D36x9-bj-d6-block.jsonl",
+        "--receipt",
+        "topics/padua-lanczos-nonproduct-20261105/evidence/flint-check-D36x9-bj-d6-block.json",
+        "--export-source",
+        "topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+        "--export-binary",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/producer-bj.jsonl",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/checker-bj.jsonl"
+      ],
+      "status": "completed",
+      "returncode": 0,
+      "wall_seconds": 3.550590112000009,
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/flint-check/D36x9-bj-d6-block.log",
+        "bytes": 360,
+        "sha256": "ada8557319bdac89f0b99dff80356cdc5fc9c844c3b555e5752b3f55b349e6c2"
+      },
+      "receipt": {
+        "path": "topics/padua-lanczos-nonproduct-20261105/evidence/flint-check-D36x9-bj-d6-block.json",
+        "bytes": 4617,
+        "sha256": "3ae32a43b6bc8cf1087634c260d3639fcf0df6fea6eaf67802830b2dc73af4e4"
+      },
+      "checks": {
+        "full_weighted_gram_entries": 784,
+        "candidate_creator_vectors_checked": 27,
+        "candidate_creator_scalar_entries_checked": 8748,
+        "all_exported_points_match_input": true,
+        "positive_pivots_scales": true,
+        "choices_ties": true,
+        "node_inverse_count": 324,
+        "node_inverse_product_checks": 324,
+        "every_source_prefix": true,
+        "normal_diagonal_trace": true,
+        "phase_inverse_seconds": 0.8315345419987352,
+        "phase_inverse_validation_seconds": 1.03046890700125,
+        "phase_energy_accumulation_seconds": 1.1629029459977573
+      }
+    },
+    {
+      "degree": 8,
+      "rule": "alt",
+      "command": [
+        "python",
+        "-B",
+        "topics/padua-lanczos-nonproduct-20261105/code/flint_disk_block_check.py",
+        "--input",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "--basis",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/D36x9-alt-d8.json",
+        "--output",
+        "/tmp/padua-lanczos-nonproduct-20261105/flint-check/D36x9-alt-d8-block.jsonl",
+        "--receipt",
+        "topics/padua-lanczos-nonproduct-20261105/evidence/flint-check-D36x9-alt-d8-block.json",
+        "--export-source",
+        "topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+        "--export-binary",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/producer-alt.jsonl",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/checker-alt.jsonl"
+      ],
+      "status": "INCOMPLETE timeout60",
+      "returncode": null,
+      "wall_seconds": 60.007630144999894,
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/flint-check/D36x9-alt-d8-block.log",
+        "bytes": 107,
+        "sha256": "84a6b6db739097519d75002dc3337fdbac0e6287544b64430aa5a902c0c68331"
+      }
+    }
+  ]
+}

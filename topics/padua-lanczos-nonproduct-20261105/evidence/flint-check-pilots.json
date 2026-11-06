@@ -1,0 +1,202 @@
+{
+  "status": "INCOMPLETE: generic inverse pilot stopped after alt8 timeout60",
+  "export_source": {
+    "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+    "bytes": 9144,
+    "sha256": "aa4c74c57e150b748f1d225f3cfad5c2bbbe3d55e61d3c7702fbe8edd3414e44"
+  },
+  "export_binary": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+    "bytes": 69864,
+    "sha256": "14432bb379fba07129ab94a28f9d8269da11fa64979b8b1da37eac8091503f7e"
+  },
+  "checker_source": {
+    "path": "topics/padua-lanczos-nonproduct-20261105/code/flint_disk_check.py",
+    "bytes": 13351,
+    "sha256": "49a09bc0ddf12a95c1810c47f939a6596657d23e722a72608f60489c75dddf73"
+  },
+  "per_process_seconds": 60,
+  "concurrency": "serial; one extra CPU process",
+  "runs": [
+    {
+      "family": "D36x9",
+      "max_degree": 6,
+      "rule": "bj",
+      "export": {
+        "command": [
+          "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+          "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+          "6",
+          "bj",
+          "D36x9"
+        ],
+        "wall_seconds": 0.18910887100037144,
+        "returncode": 0,
+        "input": {
+          "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+          "bytes": 5734,
+          "sha256": "48977eefea1c662c3ef23c8ed17d49e3cb0310a6d53321add8c51c91866313f6"
+        },
+        "output": {
+          "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/D36x9-bj-d6.json",
+          "bytes": 862708,
+          "sha256": "078bb0675e79d34d68af56089e8b27dab463a4e9595a7fb6f8a3e85f3b0c0d63"
+        }
+      },
+      "checker_command": [
+        "python",
+        "-B",
+        "topics/padua-lanczos-nonproduct-20261105/code/flint_disk_check.py",
+        "--input",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "--basis",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/D36x9-bj-d6.json",
+        "--output",
+        "/tmp/padua-lanczos-nonproduct-20261105/flint-check/D36x9-bj-d6.jsonl",
+        "--receipt",
+        "topics/padua-lanczos-nonproduct-20261105/evidence/flint-check-D36x9-bj-d6.json",
+        "--export-source",
+        "topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+        "--export-binary",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/producer-bj.jsonl",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/checker-bj.jsonl"
+      ],
+      "checker_status": "completed",
+      "returncode": 0,
+      "checker_wall_seconds": 17.408476925000286,
+      "checker_log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/flint-check/D36x9-bj-d6.log",
+        "bytes": 354,
+        "sha256": "37f6d1f80a7b6ccb7fd566df114f09bc828f10ae72a462cfd40f47681e3a5dbd"
+      },
+      "checker_receipt": {
+        "path": "topics/padua-lanczos-nonproduct-20261105/evidence/flint-check-D36x9-bj-d6.json",
+        "bytes": 4392,
+        "sha256": "a0dc3f0034efc49012d3e86525fcd3348cefad023c2e0ae7000fbdb0630bade8"
+      }
+    },
+    {
+      "family": "D36x9",
+      "max_degree": 6,
+      "rule": "pivot",
+      "export": {
+        "command": [
+          "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+          "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+          "6",
+          "pivot",
+          "D36x9"
+        ],
+        "wall_seconds": 0.11671963800017693,
+        "returncode": 0,
+        "input": {
+          "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+          "bytes": 5734,
+          "sha256": "48977eefea1c662c3ef23c8ed17d49e3cb0310a6d53321add8c51c91866313f6"
+        },
+        "output": {
+          "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/D36x9-pivot-d6.json",
+          "bytes": 862130,
+          "sha256": "a8cff95a78364ebf75c34ab55d176fa50720153bbc8493c2c694874b2651bc3e"
+        }
+      },
+      "checker_command": [
+        "python",
+        "-B",
+        "topics/padua-lanczos-nonproduct-20261105/code/flint_disk_check.py",
+        "--input",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "--basis",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/D36x9-pivot-d6.json",
+        "--output",
+        "/tmp/padua-lanczos-nonproduct-20261105/flint-check/D36x9-pivot-d6.jsonl",
+        "--receipt",
+        "topics/padua-lanczos-nonproduct-20261105/evidence/flint-check-D36x9-pivot-d6.json",
+        "--export-source",
+        "topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+        "--export-binary",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/producer-pivot.jsonl",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/checker-pivot.jsonl"
+      ],
+      "checker_status": "completed",
+      "returncode": 0,
+      "checker_wall_seconds": 35.81919437799979,
+      "checker_log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/flint-check/D36x9-pivot-d6.log",
+        "bytes": 358,
+        "sha256": "de0609e8c6b0830f8d0ee0212f98760a4e395baf11837146ac21b778fdd724b8"
+      },
+      "checker_receipt": {
+        "path": "topics/padua-lanczos-nonproduct-20261105/evidence/flint-check-D36x9-pivot-d6.json",
+        "bytes": 4423,
+        "sha256": "752b432c92e823380d7eea86851e9cd986c4c3ede18ea7f2aa63b90b78cb52a5"
+      }
+    },
+    {
+      "family": "D36x9",
+      "max_degree": 8,
+      "rule": "alt",
+      "export": {
+        "command": [
+          "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+          "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+          "8",
+          "alt",
+          "D36x9"
+        ],
+        "wall_seconds": 0.55043864199979,
+        "returncode": 0,
+        "input": {
+          "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+          "bytes": 5734,
+          "sha256": "48977eefea1c662c3ef23c8ed17d49e3cb0310a6d53321add8c51c91866313f6"
+        },
+        "output": {
+          "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/D36x9-alt-d8.json",
+          "bytes": 2527526,
+          "sha256": "2a0970b2af23285e683622e33404fd020f0569cf2488b4c0c4485de9df8106f0"
+        }
+      },
+      "checker_command": [
+        "python",
+        "-B",
+        "topics/padua-lanczos-nonproduct-20261105/code/flint_disk_check.py",
+        "--input",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "--basis",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/D36x9-alt-d8.json",
+        "--output",
+        "/tmp/padua-lanczos-nonproduct-20261105/flint-check/D36x9-alt-d8.jsonl",
+        "--receipt",
+        "topics/padua-lanczos-nonproduct-20261105/evidence/flint-check-D36x9-alt-d8.json",
+        "--export-source",
+        "topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+        "--export-binary",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/producer-alt.jsonl",
+        "--reference",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/checker-alt.jsonl"
+      ],
+      "checker_status": "INCOMPLETE timeout60",
+      "returncode": null,
+      "checker_wall_seconds": 60.00739275099977,
+      "checker_log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/flint-check/D36x9-alt-d8.log",
+        "bytes": 44,
+        "sha256": "e36ff72b3c546e6505065ebda0cb4b046405bdf6aa0461a9fa0a0b740de88112"
+      }
+    }
+  ],
+  "unexecuted_cases": [
+    "D36x9-pivot8",
+    "D65x9-alt8",
+    "D65x9-pivot8"
+  ]
+}

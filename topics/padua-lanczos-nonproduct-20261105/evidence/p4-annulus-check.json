@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "scope": "exact degree2 moment/Gram check only",
+  "rows": [
+    {
+      "epsilon": "1",
+      "shear": 0,
+      "covariance": [
+        [
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "2"
+        ]
+      ],
+      "last_pivot_squared": "32/9",
+      "last_raw_scale_squared": "8",
+      "capacity_squared_lower": "9/4",
+      "status": "PASS"
+    },
+    {
+      "epsilon": "1/2",
+      "shear": 0,
+      "covariance": [
+        [
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "2"
+        ]
+      ],
+      "last_pivot_squared": "52/45",
+      "last_raw_scale_squared": "13/2",
+      "capacity_squared_lower": "45/8",
+      "status": "PASS"
+    },
+    {
+      "epsilon": "1/4",
+      "shear": 0,
+      "covariance": [
+        [
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "2"
+        ]
+      ],
+      "last_pivot_squared": "49/153",
+      "last_raw_scale_squared": "49/8",
+      "capacity_squared_lower": "153/8",
+      "status": "PASS"
+    },
+    {
+      "epsilon": "1/8",
+      "shear": 0,
+      "covariance": [
+        [
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "2"
+        ]
+      ],
+      "last_pivot_squared": "193/2340",
+      "last_raw_scale_squared": "193/32",
+      "capacity_squared_lower": "585/8",
+      "status": "PASS"
+    },
+    {
+      "epsilon": "1",
+      "shear": 1,
+      "covariance": [
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "5/2"
+        ]
+      ],
+      "last_pivot_squared": "32/9",
+      "last_raw_scale_squared": "26/3",
+      "capacity_squared_lower": "39/16",
+      "status": "PASS"
+    },
+    {
+      "epsilon": "1/2",
+      "shear": 1,
+      "covariance": [
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "5/2"
+        ]
+      ],
+      "last_pivot_squared": "52/45",
+      "last_raw_scale_squared": "169/24",
+      "capacity_squared_lower": "195/32",
+      "status": "PASS"
+    },
+    {
+      "epsilon": "1/4",
+      "shear": 1,
+      "covariance": [
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "5/2"
+        ]
+      ],
+      "last_pivot_squared": "49/153",
+      "last_raw_scale_squared": "637/96",
+      "capacity_squared_lower": "663/32",
+      "status": "PASS"
+    },
+    {
+      "epsilon": "1/8",
+      "shear": 1,
+      "covariance": [
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "5/2"
+        ]
+      ],
+      "last_pivot_squared": "193/2340",
+      "last_raw_scale_squared": "2509/384",
+      "capacity_squared_lower": "2535/32",
+      "status": "PASS"
+    }
+  ],
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "code_sha256": "89e8724c7eb2fc0eb52e4c61281ea6606fa9de34c5c8859087ccd257620136b2",
+  "independent_rerun": "NOT CLAIMED",
+  "cross_family_degree_12_16_gate": "NOT RUN"
+}

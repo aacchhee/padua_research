@@ -1,0 +1,60 @@
+{
+  "status": "PASS independent raw-log enclosures and compact N2",
+  "family": "D36x9",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/check_scans_compact.py",
+    "--family",
+    "D36x9"
+  ],
+  "code": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_compact.py",
+    "bytes": 6868,
+    "sha256": "b8a26dc84e04186a5094e32e5dfdb5cec62ae6bc778752197e2d02aadb596669"
+  },
+  "rational_log_code": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_review.py",
+    "bytes": 12172,
+    "sha256": "ca9c40ccdf17df450ed6411287b143d08ca33e26b093a7b1a0a0ebcfbd84b289"
+  },
+  "table": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/p6-log-endpoints-D36x9.json",
+    "bytes": 10358,
+    "sha256": "6e9d31615ee5660752724018c9175a19c554c007fee71decc807dbfce829471d"
+  },
+  "scan_receipt": {
+    "path": "topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk16-recovered-acceptance.json",
+    "bytes": 13568,
+    "sha256": "aefa709edb828fd3157218c974b22cd09525f5909ca6d192cba858e7a0b95877"
+  },
+  "primary_n2": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/p6-n2-D36x9.json",
+    "bytes": 5164,
+    "sha256": "e78aef097a86801d43d716033aea5561a970bd2f8e2075280a0a373683dfb444"
+  },
+  "standalone_replay": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/p6-compact-n2-D36x9.json",
+    "bytes": 2216,
+    "sha256": "532cfdaa45e48441155930741dc251586f90dcad03f9f758f8fb1e62a20ff98a"
+  },
+  "exact_two_path_rows": 60,
+  "independent_endpoint_log_enclosures": 120,
+  "case_provenance_checked": 8,
+  "corners_per_window": 32,
+  "windows_outward": [
+    [
+      "-2031392944557/4000000000000",
+      "530523752578707/500000000000000"
+    ],
+    [
+      "-887372978742641/1000000000000000",
+      "1162463772216737/1000000000000000"
+    ]
+  ],
+  "N2_verdict": "INCONCLUSIVE",
+  "python": "3.12.14",
+  "elapsed_seconds": 26.07869381099954,
+  "method": "Independent192-bit mantissa/96-term rational atanh bounds; every original raw endpoint; all32 signed OLS corners",
+  "scope": "Finite endpoint interval evidence. This validates compact enclosures, not exact capacities or asymptotic growth."
+}
