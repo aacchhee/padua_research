@@ -50,3 +50,39 @@
   reconstruction and Claude's substantive audit remain separate obligations.
 - Opened draft [PR #33](https://github.com/aacchhee/padua_research/pull/33),
   audit PENDING, with no IDs reserved and no shared-registry edits.
+
+## 2026-11-06 — first mathematical checkpoint
+
+Coordinator Codex, assigned gpt-6-astra high; mathematical workers assigned
+gpt-6.1-sol xhigh, T2 screen worker gpt-6.1-sol medium. Runtime model metadata
+is not independently exposed. No Astra-ultra escalation has been needed.
+
+- T1 round 1: elementary binary-code classification and a hand proof excluding
+  a **single coordinate-reflection-invariant whole coset** at minimal node
+  count for every n>=2. [Classification](theory/t1-reflection-classification.md),
+  [scoped obstruction](theory/t1-minimal-obstruction.md). Developer PROVED;
+  D3 enumeration and supplementary independent review still in progress.
+  The original unrestricted C_k target remains OPEN.
+- T2 round 1: three frozen cyclic formulas fail at n=2 by explicit quadratic
+  annihilators, [scoped proof](theory/t2-cyclic-screen.md). Round 2: complete
+  normalized generator census at n=2,3,4 finds 4,0,4 full-rank cases; all
+  eight finite survivors lose to same-degree controls on the frozen mesh.
+  [Attempt](attempts/T2.md). Exact computations remain conservatively MEASURED
+  until a separate replay of the committed cover; no D2-promising family.
+- T3 round 1: [exact cyclic rank reduction](theory/t3-cyclic-rank.md) and
+  [short-relation annihilators](theory/t3-short-relations.md), developer PROVED
+  analytic prerequisites. [Whole order-39 exclusion](theory/t3-degree3-extension.md)
+  is CONDITIONAL on the separately checked H39 finite cover. Survivor-dependent
+  T3 remains blocked on D2, not PARTIAL.
+- T4 round 1: all-n stack unisolvence, exact determinant height factor, and
+  a [monotone-order exponential lower bound](theory/t4-monotone-lower.md),
+  developer PROVED. This contradicts the polynomial expectation only for
+  the specified monotone ordering. Other orderings and actual numerical
+  diagnostics remain in progress.
+- T5 round 1: D4 passed by exact known degree-five cubature controls before
+  any nonexistence claim; [code](code/t5_exact.py), [receipt](evidence/t5-exact.json).
+  The fixed-grid sharp support theorem is being written separately.
+- T6: explicit universal logarithmic-cubed lower-bound proof is being written;
+  not included as a completed result in this checkpoint.
+- This is an honestly unfinished development checkpoint. Claude audit is
+  PENDING; no shared scientific registry, final allocation or readiness change.
