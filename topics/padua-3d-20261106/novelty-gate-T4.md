@@ -1,7 +1,7 @@
 # T4 prospective gate — Padua-plane stacking
 
 2026-11-06. Codex mathematical developer; assigned model gpt-6.1-sol,
-inherited effort high (runtime model metadata not exposed). Rules/input
+assigned effort xhigh (runtime model metadata not exposed). Rules/input
 `ccd9e905d19c0c625c196c4a3f3e707058ed042a`; branch
 `codex/padua-3d-20261106`. No Git operations delegated to this worker.
 

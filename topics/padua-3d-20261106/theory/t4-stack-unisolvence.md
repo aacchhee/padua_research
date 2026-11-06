@@ -73,5 +73,5 @@ Independent audit of this hand proof remains pending.
 
 ## History
 
-2026-11-06, Codex developer, assigned gpt-6.1-sol/high (runtime model metadata
+2026-11-06, Codex developer, assigned gpt-6.1-sol/xhigh (runtime model metadata
 unexposed), rules/input ccd9e905d19c0c625c196c4a3f3e707058ed042a.

@@ -114,3 +114,18 @@ harmonic minimum-coordinate subset.
 No separate candidate was pursued for the unjustified tensor-subspace
 shortcut or the claim that translation averaging alone is a projection.
 They are excluded proof steps, preserved above, not new PD-N entries.
+
+## Subsequent source refinement and final disposition
+
+After the initial survey, gate and local proof writeup, reading DEKL's
+Theorem 3.4 proof exposed equation (3.15)'s precise Subbotin attribution.
+Subbotin1983's full primary text was then read. Its Theorem 1 and
+Corollary 1 already contain the same `3^-d` comparison, and Corollary 3
+already yields universal total-degree cube `c_d log^d n` growth. See
+LIT?padua-3d-codex-T6-02 in `literature-T6.md` for hypotheses and coverage.
+
+This supersedes any weaker description above of historical novelty as
+unresolved: T6-01 is a known-result reproving certificate, and T6-02 is
+an explicit known-mechanism constant certificate. No novel order, transfer
+mechanism, or priority for the displayed constant is asserted. Both are
+retained only for their complete local proof and useful explicit bound.

@@ -82,9 +82,12 @@ Independent check: pending; coordinator will attach its separate record.
 
 ## Sources
 
-[literature-T6](../literature-T6.md) records DEKL2017 Theorem2.3 as
-LITERATURE for the already-known Fourier order and the relevant source
-coverage. The original Padua generating-curve introduction states its
+[literature-T6](../literature-T6.md) records Subbotin1983 Theorem 1 and
+Corollaries 1,3 (provisional LIT?padua-3d-codex-T6-02) as LITERATURE for
+this same comparison and universal logarithmic order; its primary
+fulltext was read. DEKL2017 Theorem2.3 supplies a precise Fourier match.
+The source results are context, not premises of the local proof below.
+The original Padua generating-curve introduction states its
 displayed multidimensional lower bound in the tensor-product setting;
 that passage is not used to assert the universal total-degree theorem.
 IDEA-206's leading-constant obstruction is respected: neither (1) nor (2)
@@ -216,3 +219,7 @@ future work, not prerequisites of this local proof.
 `ccd9e905d19c0c625c196c4a3f3e707058ed042a`: primary survey first, then
 explicit developer proof. No registry edits, final-ID allocation or Git
 operations by this worker.
+
+Later source refinement: DEKL equation (3.15) led to Subbotin's exact
+prior `3^-d` comparison and universal logarithmic bound. The local proof
+is retained as a self-contained explicit certificate, with no novelty claim.

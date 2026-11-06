@@ -125,7 +125,7 @@ O(log^3 n) construction target remains OPEN.
 
 ## History
 
-2026-11-06, Codex developer, assigned gpt-6.1-sol/high, runtime metadata
+2026-11-06, Codex developer, assigned gpt-6.1-sol/xhigh, runtime metadata
 unexposed; rules/input ccd9e905d19c0c625c196c4a3f3e707058ed042a.
 The restricted negative conclusion is split from the supplied expectation;
 it does not silently replace the original 3-D target.

@@ -160,9 +160,10 @@ value 8, so they are Pi_1-unisolvent. No n=1 exclusion is claimed.
 ## Scope
 
 A finite reflection-stable single coset is ruled out already by
-injectivity and minimal cardinality. Noninvariant cosets, noninvariant
-subgroups, unions of cosets, noncubature constructions and non-total-degree
-spectral spaces are not ruled out. This result therefore does not prove
+injectivity and minimal cardinality, whether or not it carries cubature.
+Noninvariant cosets, noninvariant subgroups, unions of cosets, arbitrary
+constructions outside this coset class and non-total-degree spectral spaces
+are not ruled out. This result therefore does not prove
 the broad expected nonexistence statement E1 or the LSX cubature conjecture.
 
 ## Open items
