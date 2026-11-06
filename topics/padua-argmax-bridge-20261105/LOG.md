@@ -405,3 +405,39 @@
 - AC clarifies: “this will be interim audit and it has to come with own ideas on how to close the gap and set branch to work”, then “codex does the work then”. This overrides any default promotion to PR after a clean audit: Claude must perform an INTERIM audit, supply its own independently gated ideas, leave/set the topic and PR stage WORK, and hand implementation back to Codex. No final merge-readiness claim. AC has already requested the post-audit return to work; do not insert a routine reapproval question. Keep the completed15-round campaign count intact and record the subsequent work step separately.
 
 - Finalinterim-auditinput verification: 121PythonASTs, all124essentialbyte/hashidentities, completeevidence-indexcoverage, immutabledecompressedn32candidate and currentreport/C13relativeMDlinks PASS (parserexcludesmathematicalcode). Sourcehashesofrepairedglobal/C15andtheiracceptedreportsmatch. Conservativegeneratedoutput7,915,495bytes<10MB; index13,882B; everyessentialentry<16KiB. Freshmain76ba421unchangedandonlytopic/resultsdiffer. No mathematical/native rerunsperformedbythesepublicationchecks.
+
+## 2026-11-06 — INTERIM Claude audit-01 and Claude's own ideas (handoff 07)
+
+- Claude, configured and last-served `claude-opus-5-5`. Session metadata reports effort `high`; xhigh was requested and is disclosed, not silently substituted. Role: interim independent auditor and idea proposer, with six Claude subagents. Rules were read at be9a831 and are byte-identical at 02beaef. Candidate: head `02beaef2b22f8232286713dab0a1b7c95582ce13`, science input 99c6b6f. Report: [audit-01.md](audit-01.md); review records and auditor scripts: [audit-01/](audit-01/).
+- **Interim verdict: no BLOCKING or MAJOR finding.** The n>=500000 theorem reconstructs. Its near, corner and far lower-domain rechecks, exact arithmetic, monotonicity, geometry and PD-T364 assembly were verified independently. The finite 2–40 range meets the computer-proof requirements. C03 mode0 n32 is supported as one known-case measurement.
+- Nine MINOR record findings go back to Codex (round 1, so no in-place fixes):
+  - F1: stale "pending" status in all seven C13 files.
+  - F2: degree-domain lemma scope, and the miscited log n0<14.
+  - F3: incomplete corner floor-check list.
+  - F4: traceability of imported constants.
+  - F5: /tmp-only C13 freeze snapshot and C03 postcheck.
+  - F6: missing executor identity in the C03 check record.
+  - F7: overstated identity-closure completeness.
+  - F8: CPU-measure labelling.
+  - F9: non-additive C12/C15 out[] diagnostics.
+
+  Statuses, estimates and thresholds are unchanged. The n-independent upstream cores that were taken as written are listed in audit-01 and remain for the final audit.
+- Executed by the auditors, in fresh scratch paths, unchanged candidate bytes, about 1,650 CPU-s in total:
+  - exact Fraction recomputation of every C13 scalar, all reproduced;
+  - independent n37 native GMP replay from the committed certificate: ACCEPTED, exit 0, 833.6 CPU-s;
+  - native negative controls rejected as required;
+  - C03 mode0 n32 364/364 on g++13.3/FLINT3.0.1/Python3.13, all counters and margins identical, 33.7 s;
+  - C02 kernel 76 failed, as recorded;
+  - v3 accepted, same-host ratio 3.91x;
+  - ratio fuzz 191,904 samples, C12/C15 box fuzz 3,839 points with fault probes, C11 partial sums 919 points: 0 violations.
+
+  n40 was not replayed (over cap). Author wrappers were not rerun unchanged, because their receipts exist and they need the pinned FLINT.
+- Own ideas: [audit-01-ideas.md](audit-01-ideas.md). The full novelty gate was run (IDEAS.md sha256 68bf789c…, obstruction tables, shortlist), and proposals were generated only after it. MEASURED planning finding: the true model error is about 0.4·L/n and the true far margin is >=0.21 down to n=41, so the half-million onset comes from proof constants. Ranked proposals:
+  - P4: corner bracket constants;
+  - P1: validated degree-free model with phase-local constants on the full diamond;
+  - P2: h=1/n Taylor models for the endpoint blocks, resuming IDEA-337;
+  - P3: near- and corner-only finite certificates with a split radius ρ0(n);
+  - P5: declared first-order far correction.
+
+  Retained or rejected candidates are listed with scoped reasons. No PD-N and no final IDs.
+- Stage stays **WORK** per AC's explicit handoff 07 instruction; PR27 stays draft. Codex implements next under handoff 08. The closed 15/15 campaign count is unchanged; resumed work is recorded as a separate step. Final audit, registry application and readiness are pending; only AC merges.

@@ -23,7 +23,7 @@ stronger corner lower bound. Lower-domain conditions were rechecked
 rather than inferred from the older n>=10^6 theorems. The single near
 correction remains the only one; original tighter C1 is still OPEN and
 unnecessary for this actual global result. C13's split/baseline review
-findings are resolved. Formal Claude audit remains separate and PENDING.
+findings are resolved. An INTERIM Claude audit-01 found no BLOCKING/MAJOR finding (nine MINOR record findings to answer); the formal final Claude audit remains PENDING.
 
 The new fixed-work checker PASSes all364 regions of the unchanged known
 n32 certificate in **46.09totalCPU seconds**(45.23subprocess), versus

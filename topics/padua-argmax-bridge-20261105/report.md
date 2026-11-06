@@ -130,7 +130,7 @@ specified families failed, with scoped negative records retained. N5's
 quarter target remains OPEN; its failed particular certificate does not
 refute the target. No practical Syvert pack or completed finite bridge exists.
 
-Formal **Claude Opus5.5 xhigh audit remains PENDING**. Supplementary distinct
+An INTERIM Claude audit ([audit-01](audit-01.md), 2026-11-06) found no BLOCKING/MAJOR finding and returned nine MINOR record findings; Claude's own ranked proposals are in [audit-01-ideas](audit-01-ideas.md). The formal final Claude audit remains PENDING. Supplementary distinct
 Astra mathematical/source checks do not replace it. PR27 remains draft WORK. The next Claude audit is explicitly interim,
 must include its own independent ideas, and must leave WORK for Codex
 to implement next. Final audit/readiness remain pending; final shared-registry application and merge
