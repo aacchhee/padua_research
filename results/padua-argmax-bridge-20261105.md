@@ -74,3 +74,13 @@ rows plus periodic jumps and endpoint compaction give known error
 Independent review accepts all four component proofs. An O(n) central/
 interior outer sum and the far-domain model remain, so this is not an
 effective onset or B3 PASS.
+
+A new [maximum-bootstrap reduction](../topics/padua-argmax-bridge-20261105/theory/N3-bootstrap-corner.md)
+uses the unknown global maximum in the local energy inequality and absorbs
+it at a putative maximizer, avoiding a prior global/corner norm ratio.
+Its energy premise W<=(3/4)n^4Lambda_c is now independently proved for
+all n2–128 by fresh MPFR/GMP threshold sweeps
+([finite energy](../topics/padua-argmax-bridge-20261105/theory/N3-bootstrap-finite.md)).
+This admits a half-phase corner patch for a future global cover; it
+does not supply the missing complement or an all-degree energy bound.
+No new global degree follows from this helper alone.

@@ -74,3 +74,11 @@ The one correction improves known primitive/endpoint/jump error below
 1/14000 at rho<=1/2,n>=10^6. The old unchanged-certificate obstruction
 is preserved. An O(n) central/interior sum and far domain remain; this
 is neither a complete model nor an onset and does not pass B3/B4.
+
+## 2026-11-06 N3 maximum-bootstrap helper
+
+The new maximum-exclusion cover reduction is proved under3/4 energy;
+all n2..128 now have a distinct fresh exact verification of that energy
+threshold. No larger-patch phase complement was executed and no global
+range extension is inferred. The existing B2 measurements/17–32 complete
+phase validations are unchanged. All-n energy, B3 and B4 remain OPEN.
