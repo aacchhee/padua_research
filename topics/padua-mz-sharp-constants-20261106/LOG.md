@@ -1,7 +1,7 @@
 # Sharp MZ constants via limiting operators (PD-T020, PD-T027, PD-T381): log
 
 - Branch: `codex/padua-mz-sharp-constants-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5, xhigh): Continue codex/padua-mz-sharp-constants-20261106.` · Next handoff: [04-focused-audit.md](https://github.com/aacchhee/padua_research/blob/codex/padua-mz-sharp-constants-20261106/topics/padua-mz-sharp-constants-20261106/handoffs/04-focused-audit.md), published immediately after scientific outputs.
+- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-mz-sharp-constants-20261106.` · Open handoff: [handoffs/05-response-02.md](handoffs/05-response-02.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Current claims: exact scaled CC minimum limit pi^4/8; CC uniform upper bound, endpoint limit, computable error and certified lower1.0044369; signed Padua compact-operator logarithmic limits, elliptic kernel, simple positive ground state, coarse enclosure and finite-mode measurements. Exact local records/checks are linked in [report.md](report.md); no final IDs assigned.
 
@@ -215,3 +215,5 @@ P1 protocol/code published c1e6e59dd9155b87d9847155d3455d602a5f84e9 before execu
 - Rules read at `0e7be6e7c16dd30791d44268ff5d3cfc1d2e2bf9`; main `76ba421` unchanged; audited input `2429e75` (head diff handoff-only).
 - [audit-02](audit-02.md): ACCEPTED at stated scopes — P3 full limit lim (log N)²λ_min = π⁴/8 PROVED (two independent reconstructions plus auditor); P1 kernel, positive spectrum, rectangle reduction and coarse computer-assisted enclosure PROVED; P4 Λ_edge ≥ 1.0044369 computer-assisted PROVED; P2 MEASURED PASS_FINITE_TEST; response-01 A1–A13 accepted. No BLOCKING.
 - Stage → WORK for MAJOR B1 (P2 secant criterion largely postdictive from pre-existing S4 rows; records say "fresh") and B2 (P4 closed-form denominator derivation lacks a durable theory record), plus MINOR C1–C4 (C1: audit-02-support JSON breaks manifest membership until scope covers `audit-*-support/`). Reruns: P1 N8/N16 bit-identical, P4 grouped/producer identical plus own 60-digit check, P2 validate/summary/m1600 agree, controls 10/10. Support in [audit-02-support](audit-02-support/). No registry, final ID, manuscript or gate changed; PD-T020 registry application deferred to PR preparation.
+
+- [Handoff 05](handoffs/05-response-02.md): bounded Codex response to audit-02 B1, B2, C1–C4; then Claude focused recheck of B2 and PR preparation. Handoff 04 done in d8b0286.
