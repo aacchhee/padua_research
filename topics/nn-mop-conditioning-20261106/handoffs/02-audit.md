@@ -1,6 +1,6 @@
 # Handoff 02 — NN MOP conditioning — substantive Claude audit
 
-- Status: open
+- Status: done in c5f2820232885fe78504a9bae75b6da68491b1be
 - Previous handoff: [01-work.md](01-work.md)
 - Next agent / model / effort: Claude, Opus 5.5 xhigh
 - Role: independent substantive auditor and topic orchestrator
