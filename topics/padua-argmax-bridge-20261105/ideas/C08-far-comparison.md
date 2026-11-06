@@ -137,3 +137,39 @@ integral budget kills this allocation. The analytic constants pass before
 durable proof writing, with no run. This stronger corner lower would
 allow the relaxed sufficient constant budget C_far<=3, or K<=1 with
 the endpoint theorem, while preserving the original target M_far+1/2.
+
+## C08 regularized pole functional
+
+The complementary integral worker requested an upper for the one-variable
+functional H defined in C08-far-pole-functional.md. The considered sharp
+variant H(x)<=cos(x/2)H(0) is deferred: it is unnecessary if a uniform
+H<1/2 bound closes the enlarged corner-margin budget. The retained exact
+target is H(x)<1/2 for all real x. Its cheapest test uses the already
+proved global distributional Phi_0''<=12, including negative integer
+atoms, and the range1/2<=Phi_0<=1. The scalar kernel is bounded by
+1/v+v/16 and the positive second-difference envelope is integrated
+exactly. This differs from a coarse Lipschitz bound by preserving the
+quadratic upper at short distance and the range bound at long distance.
+It would fail if an uncharged positive derivative atom existed or the
+explicit scalar integral exceeded1/2. The analytic test passes with
+749/1500; no numerical integration is performed. The previous stronger
+cosine-shaped conjecture is neither proved nor refuted.
+
+## Completed analytic comparison
+
+The complementary worker froze K_delta<49/50 in
+theory/C08-far-integral-bound.md. Together with E_64<49/25+1/3000
+this proves C_far<3. The original task is now a complete written
+developer theorem in theory/C08-far-model-comparison.md:
+
+    M_far+1/2<Lambda_c-1/10,
+    S_n<Lambda_c-6/25,
+      n>=10^6, 1/2<=|alpha|+|beta|<=pi.
+
+The proof uses the original fixed model without another correction.
+The stronger sufficient C_far<=5/2, K_delta<=1/2 and cosine-shaped H
+variants remain unproved and are not used. The exact endpoint theorem,
+weighted coefficient, finite corner margin and uniform H estimate are
+retained as separate substantive results. No computational route was
+needed or executed. Distinct review of the final assembly and formal
+audit remain separate from this developer proof completion.

@@ -45,3 +45,37 @@ correction exceeds1/2 for every n>=10^6, without numerical quadrature.
 This gives Lambda_c>=A_n^2+1/2-.001 and relaxes the sufficient integral
 target to K<=1. The original far inequality is still OPEN pending that
 integral bound; all auxiliary proofs require distinct acceptance.
+
+The scalar pole functional is now bounded analytically by749/1500<1/2,
+with the two-channel delta=.01 cutoff cost below.027. Its complete proof
+is theory/C08-far-pole-functional.md; it uses the global one-sided
+periodic curvature, including negative atoms, together with the newly
+proved range1/2<=Phi_0<=1. The exact integral of the minimum of its
+quadratic and range envelopes supplies the numerical bound without
+quadrature or sampling.
+
+The complementary C08 worker froze K_delta<49/50, source
+445a449d83e3d575222b3832ad6adb3c401a21e2e89d1d2ced8e8b1dca860ead.
+I read its full proof and checked the renormalization, cancellation sign,
+sine-log primitive and finite-cutoff constants. Combining it with the
+other frozen lemmas gives C_far<3. The final comparison is now a written
+PROVED developer result in theory/C08-far-model-comparison.md:
+M_far+1/2<Lambda_c-1/10 and S_n<Lambda_c-6/25 for every integer
+n>=10^6 on the entire closed far diamond1/2<=rho<=pi. The weaker
+constant budget is enabled by the independently proved extra1/2 finite
+corner lower; it does not change the model or discard any earlier
+correction. All previous OPEN entries in this attempt are dated working
+states superseded for the original task by this completed analytic
+assembly. The unused stronger sufficient budgets remain unproved.
+
+No mathematical executable ran during C08. Distinct reconstruction and
+formal audit remain separate; global integration and smaller degrees
+are owned by the coordinator. Every earlier C01–C07 proof is unchanged.
+
+Before the final assembly freeze, the complementary integral reviewer
+requested one MINOR zero-phase correction: its intermediate positive
+sine estimate uses <= rather than < when p=0. The corrected source is
+e76a45698ab5c0f2af53816fb74487fb929eff99011e8004e9f79e3f84f8f7a5;
+the final strict K_delta<49/50 and all assembly constants are unchanged.
+The final comparison pins this corrected source. The previous hash above
+is retained as the actual earlier development freeze.

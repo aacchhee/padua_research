@@ -1,53 +1,51 @@
 # Padua argmax bridge — WORK checkpoint, 2026-11-06
 
 The exact global equality set is proved for **degrees2–40** and for
-**every integer n>=ceil(exp(256))**. It consists of {(-1,-1),(1,-1)} for
-even n and {(-1,-1),(-1,1)} for odd n. The intervening finite gap and
-all-degree PD-T099 remain OPEN. This is a much smaller effective upper
-boundary than C01's exp(10^12) and C03's exp(10^7), but still impractical.
-The campaign prioritizes reducing that boundary and developing a cheap
-certifier; it has not run a new old-tech degree-extension campaign.
+**every integer n>=1000000**. It consists of {(-1,-1),(1,-1)} for even n
+and {(-1,-1),(-1,1)} for odd n. The remaining gap41–999999 and all-degree
+PD-T099 remain OPEN. The fresh campaign has replaced its initial
+astronomical upper boundary with this explicit million-degree threshold.
+No mass degree enumeration or energy premise enters the analytic theorem.
 
 ## Analytic progress
 
-The [C06 global assembly](theory/C06-effective-argmax.md) and
-[distinct coordinator reconstruction](independent-checks-C06-effective.md)
-combine three independently checked pointwise cases on the complete
-closed physical phase cover, with both parities and exact corner equality.
-No energy premise or assumed global maximum is used.
+The [C08 global assembly](theory/C08-effective-million.md) and
+[distinct mathematical reconstruction](independent-checks-C08-global.md)
+combine all three independently accepted cases on the complete closed
+physical phase cover, with both parities and exact corner equality.
 
 | Case | Proven comparison | Exact scope |
 |---|---|---|
-| Far phases | S<Lambda_c with gap>3592/15 | rho>=1/2, log n>=256; full closed phase diamond |
-| Near noncorner centers | lambda<Lambda_c-869/28000 | rho<=1/2, every integer n>=10^6, all admissible noncorner odd centers |
-| Actual corner patches | lambda<Lambda_c away from the origin | rho<=1/2, log n>=25, direct C05 theorem |
+| Far phases | S<Lambda_c-6/25 | rho>=1/2, every integer n>=10^6; full closed phase diamond |
+| Near noncorner centers | lambda<Lambda_c-869/28000 | rho<=1/2, every integer n>=10^6, all admissible odd noncorner centers |
+| Actual corner patches | lambda<=Lambda_c-(alpha²+beta²) | both inward rho<=1/2 patches, every integer n>=10^6 |
 
-Sources: [far](theory/C06-far-comparison.md),
+Sources: [far](theory/C08-far-model-comparison.md),
 [actual finite-degree near](theory/C05-finiteh-model-comparison.md),
 [all-class defect](theory/C02-defect-dense-band.md),
-[actual corner](theory/C05-corner-quarterangle-bound.md).
-The far result controls a=0, axes, endpoints and polynomial collisions.
-The closed odd-center cover and endpoint-weighted reflection preserve
-the exceptional x mode and exact identity lambda=S-Delta.
+[actual corner](theory/C07-corner-million-onset.md).
+The exact identity lambda=S-Delta and the endpoint-weighted odd-center
+cover preserve the exceptional x mode, edges, nodes, tied charts and
+polynomial collisions. The corner comparison is direct and has no
+positive absolute approximation error at its origin.
+
+The far proof introduces a full-domain fixed-count model with uniform
+error<9/25, proves its weighted logarithmic coefficient gap, and controls
+the remaining constant by exact endpoint convolution and a regularized
+integral. A strengthened finite corner lower bound supplies the slack.
+The result is M_far+1/2<Lambda_c-1/10, including a=0 and all boundary
+limits. It is analytic; the earlier floating35-case diagnostic is not
+a premise. Each new substantive component has a separate independent
+mathematical reconstruction. Superseded stronger sufficient subtargets
+remain unproved and retained rather than relabeled as proved.
 
 The near proof uses the unchanged fixed-count model with
-|S-M_near|<3/14000 and proves M_near<Lambda_c+1/32. Strong projected
-defect>1/16 supplies the actual margin. The **original tighter C1 bound
-with1/4096 remains OPEN at n>=10^6**; it is unnecessary for the sufficient
-weaker comparison just proved. C04's limiting residual inequality is
-separate from the finite-h C05 proof; no limiting statement has been
-silently substituted for the actual degree-dependent model.
-
-C07's stronger actual-corner result is now independently accepted:
-for every n>=10^6 on both inward half diamonds,
-lambda<=Lambda_c-(alpha²+beta²). Its separate finite positive-deformation
-lemma gives Lambda_c>=(nL_n²+1)/(n+1) for all n>=2.
-[Corner proof](theory/C07-corner-million-onset.md),
-[lower bound](theory/C07-corner-positive-deformation.md),
-[independent review](independent-checks-C07-corner.md).
-Thus the current far target at n>=10^6 is the remaining analytic phase
-case. A compact full-phase model/error proof and a separate all-phase
-comparison are in development. Binary64 diagnostics are measurements only.
+|S-M_near|<3/14000, M_near<Lambda_c+1/32 and strong projected defect>1/16.
+The **original tighter C1 bound with1/4096 stays OPEN at n>=10^6**;
+it is unnecessary for this sufficient actual comparison. The one near
+correction remains the only one. C13 is checking whether the SAME fixed
+models and unrounded error budgets can lower the onset below one million;
+no smaller threshold is claimed yet.
 
 ## Cheap certification progress
 
@@ -73,8 +71,9 @@ The C03 refinement removes degree-growing harmonic evaluation using
 validated fixed-work ratio charts and sharp endpoint monotonicity. All
 three source modes have independent bounded controls; only mode0 was
 released for the full run. The original producer cost222.813CPU seconds
-has not been reduced by this checker result. A fresh MPFR producer port
-is now being developed with bounded controls only; C02's earlier bounded
+has not been reduced by this checker result. The new MPFR producer component is independently accepted after a
+geometry guard repair; a complete producer controller is prepared but
+unreviewed/unreleased and deferred after its cost gate; C02's earlier bounded
 port/tightness and compile failures remain preserved.
 
 For larger algorithmic gains, [C02 row reduction](theory/C02-row-cotangent.md)
@@ -85,14 +84,19 @@ in2.69CPU seconds. It is one component; it does not itself implement full
 S or whole-box/gradient/defect/corner predicates. C07 guarded point-S integration is now independently accepted on LP64.
 It is still expensive: n128 costs11.55CPU in the fixed cost pilot,
 and the n512 attempt reached its cap. Source countO(n) is not yet cheap
-runtime. A faster interval moment recurrence is in development.
+runtime. An independently accepted640-bit interval recurrence reduced n128 cost
+to0.688s; a fixed J16 variant reduces it further to0.150s and evaluates
+n2048 in2.456s in the bounded pilot. These are point-only measurements,
+with detailed timing scopes in the attempts.
 The direct moving-root whole-box interface and its fixed-width quadratic
 enumeration obstruction are now proved; a coefficient-convexity escape
-to guardedO(n) whole-box upper bounds is under independent review.
+to guardedO(n) whole-box upper bounds is now independently accepted
+mathematically. Its first implementation is in progress, with tighter
+global coefficient coupling being investigated separately.
 
 ## Limits, resources and next work
 
-The fresh campaign has completed seven coordinated rounds; C08/C09/C10
+The fresh campaign has completed eleven coordinated rounds; C12/C13/C14
 work continues under AC's allowance of up to15. The [campaign ledger](campaign-20261106.md)
 is authoritative for round outcomes, with historical direction totals in
 [rounds](rounds.md). Next scientific priorities are the practical far
