@@ -147,5 +147,3 @@ class Native:
   recheck_build(self.manifest)
   save(self.out/(self.stage+'-runtime-after.json'),{'loaded':after,'all_file_mappings':mapped_after})
   (self.out/(self.stage+'-loaded-after.maps')).write_text(pathlib.Path('/proc/self/maps').read_text())
-
-

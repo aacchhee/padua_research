@@ -281,3 +281,46 @@ this source candidate and root's allowed safe-recovery policy. D14 norm
 acceptance, generic D15 contract acceptance, distinct source review and
 root release remain blocking. Independent full native replay and archive
 disposition remain later adoption obligations.
+
+### Focused resource-finalization response D15-S1 — 2026-11-06
+
+The first candidate4e12e141 was preserved/published at d85007bc before
+repair. Distinct source inspection found MAJOR D15-S1: the old inclusive
+CPU check preceded final serialization, and RLIMIT_CPU397/398 bounded
+supervisor self CPU without subtracting already waited descendants.
+Root authorized only this resource repair and runtime EOF whitespace.
+No mathematics, arithmetic, case, cap or native source changed.
+
+After all stages, final_cpu_limit independently establishes ECHILD with
+wait4(WNOHANG), also on failure paths, before subtracting the fixed waited
+child CPU. It lowers the supervisor's ABSOLUTE self soft/hard limit to
+min(previous_hard, floor(398-waited_child_CPU)-1), with one whole CPU
+second reserved for enforcement/tick slack. Insufficient two-second self
+headroom or incomplete stage accounting precludes acceptance. No subsequent
+child is launched. Thus the final writes/return remain under the inherited
+aggregate398 cap; there is no resource-cap growth.
+
+summary.json and the essential receipt now remain explicitly PROVISIONAL.
+After summary serialization, persistence and stdout output, frozen inputs
+are checked again and inclusive CPU sampled/gated. Final-account bytes
+are serialized and inclusive CPU gated again before exclusive temporary
+creation and atomic final-accounting.json replacement. Any caught late
+failure keeps the first failure, rewrites the summary as STOP, and commits
+only failed accounting. A killed finalizer can leave a provisional summary;
+it never suffices for acceptance. Primary acceptance requires BOTH
+final-accounting result EXACT_COVER_ACCEPTED_PENDING_INDEPENDENT_REPLAY
+with complete=true and supervisor process return0. Its CPU sample is
+explicitly before final-account serialization/last write; remaining work
+is bounded by the tightened absolute self limit. A failed incomplete-reap
+path reports a lower bound and cannot certify complete accounting.
+
+Repaired controller SHA256
+74cbe3d39bf8aaf393bdc0074c2938d34bc3dd4b5771339fdf6b4a8917c3b0a1;
+runtime1f6eef3495d06824dafdb6c35a49ba26522f3f1063b0f18d412c82583480e792
+(EOF whitespace only). Refreshed FREEZE SHA256
+cb38e21b38de2da2fee2738da25c73a248d362826c4038e021f0e961a8e5143b;
+SOURCES remainsc9b232cceab301eae8c500fb9c3984702c21bef89f144b89d087f01a5cf1ab4f.
+Both pure preflight shares are consumed; NO imports, controls, native,
+compile or numerical reruns occurred for this repair. Distinct STATIC
+focused re-review and root publication/release remain required. Root
+reports D14 and generic D15 mathematical gates accepted separately.

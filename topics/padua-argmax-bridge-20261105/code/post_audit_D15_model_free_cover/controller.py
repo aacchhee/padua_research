@@ -1,5 +1,5 @@
 """One-shot D15 controller. No run occurs on import; source audit precedes release."""
-import argparse,json,os,pathlib,resource,signal,subprocess,sys,time
+import argparse,json,math,os,pathlib,resource,signal,subprocess,sys,time
 import runtime as R
 from fractions import Fraction as F
 HERE=R.HERE
@@ -117,7 +117,7 @@ def essential_receipt(summary):
   rows.append([api,a,b,*native['raw_hex'],native['counts'],call['cpu_seconds']])
  if actual_count!=3 or s_count>384 or s_count!=exact['verification']['vertices']:
   raise RuntimeError('all-row receipt call-count closure')
- doc={'format':'D15-allrow-v1','n':2048,'status':'PRIMARY_ACCEPTED_PENDING_INDEPENDENT_FRESH_REPLAY',
+ doc={'format':'D15-allrow-v1','n':2048,'status':'PROVISIONAL_PRIMARY_REQUIRES_FINAL_ACCOUNTING_AND_RETURN0',
       'S_units':'ordinary phase/pi','lambda_units':'physical inward angle/pi',
       'columns':['api','a','b','lower_hex','upper_hex','radius_hex','counts','CPU'],
       'S_count_columns':['retained','direct','blocks','maxdirect','maxblocks','ordinary'],
@@ -136,6 +136,33 @@ def essential_receipt(summary):
  return R.identity(OUT/'essential-receipt.json')
 
 
+def final_cpu_limit(results):
+ # No more children may be launched after this boundary. Stage supervisors
+ # already killed/reaped their groups; independently establish ECHILD even
+ # on a failed-stage path before subtracting waited-child CPU from398.
+ reaped=[]
+ while True:
+  try:pid,status,usage=os.wait4(-1,os.WNOHANG)
+  except ChildProcessError:break
+  if not pid:raise RuntimeError('live/unreaped child at finalization; no acceptance')
+  reaped.append({'pid':pid,'status':status,'user_CPU':usage.ru_utime,'system_CPU':usage.ru_stime})
+ child=resource.getrusage(resource.RUSAGE_CHILDREN)
+ child_cpu=child.ru_utime+child.ru_stime
+ own=resource.getrusage(resource.RUSAGE_SELF);self_cpu=own.ru_utime+own.ru_stime
+ old_soft,old_hard=resource.getrlimit(resource.RLIMIT_CPU)
+ # Absolute (not remaining) self CPU limit. One whole CPU second is
+ # reserved for integer/tick enforcement slack; child+hard <=397 <398.
+ hard=min(old_hard,max(0,math.floor(TOTAL-child_cpu)-1))
+ resource.setrlimit(resource.RLIMIT_CPU,(hard,hard))
+ if hard-self_cpu<2:raise RuntimeError('insufficient finalization CPU headroom')
+ if any(not x['accounting_complete'] for x in results):
+  raise RuntimeError('stage descendant accounting incomplete; no acceptance')
+ return {'waited_child_CPU':child_cpu,'self_CPU_at_tightening':self_cpu,
+         'absolute_self_CPU_hard':hard,'integer_enforcement_reserve_CPU':1,
+         'additional_reaped':reaped,'no_live_children':True,
+         'scope':'No subsequent children; waited-child CPU fixed. Absolute self limit bounds final serialization/write/return.'}
+
+
 def run_once():
  resource.setrlimit(resource.RLIMIT_CPU,(397,398))
  # mkdir is the no-retry lock: even a failed preregistration permanently consumes it.
@@ -152,7 +179,11 @@ def run_once():
   R.registration_check(OUT)
   if R.cpu()>=TOTAL:raise RuntimeError('inclusive CPU cap')
  except BaseException as error:failure=repr(error)
- summary={'result':'EXACT_COVER_ACCEPTED_PENDING_INDEPENDENT_REPLAY' if failure is None else 'STOP_OR_FIRST_FAILURE','first_failure':failure,'stages':results,'total_waited_descendant_CPU_before_summary':R.cpu(),'reserved_pure_CPU':2,'aggregate_cap':400,'wall_seconds':time.monotonic()-started,'freeze':R.identity(HERE/'FREEZE.json'),'scope':'D15 conditional model-free norm/corner/full-cover instance; adoption requires accepted D14/D15 mathematics and independent fresh native replay'}
+ limit=None
+ try:limit=final_cpu_limit(results)
+ except BaseException as error:
+  if failure is None:failure=repr(error)
+ summary={'result':'PROVISIONAL_COVER_PENDING_FINAL_ACCOUNTING' if failure is None else 'STOP_OR_FIRST_FAILURE','first_failure':failure,'stages':results,'total_waited_descendant_CPU_before_summary':R.cpu(),'reserved_pure_CPU':2,'aggregate_cap':400,'wall_seconds':time.monotonic()-started,'freeze':R.identity(HERE/'FREEZE.json'),'scope':'D15 conditional model-free instance; only final-accounting acceptance AND return0 complete the primary run. Independent fresh replay remains required.'}
  if failure is None:
   try:
    summary['essential_receipt']=essential_receipt(summary)
@@ -160,9 +191,34 @@ def run_once():
    if R.cpu()>=TOTAL:raise RuntimeError('inclusive CPU cap after receipt')
   except BaseException as error:
    summary['result']='STOP_OR_FIRST_FAILURE';summary['first_failure']=failure=repr(error)
+ # Never persist an accepted summary before the final CPU gate. A killed
+ # finalizer leaves only a provisional summary, not an acceptance record.
  R.save(OUT/'summary.json',summary)
- R.save(OUT/'final-accounting.json',{'total_CPU_through_summary':R.cpu(),'reserved_pure_CPU':2,'complete':all(x['accounting_complete'] for x in results),'hard_self_cap':398,'scope':'supervisor plus all waited descendants; final accounting write bounded by supervisor RLIMIT_CPU; no hermetic-build claim'})
  print(json.dumps(summary),flush=True)
+ try:
+  R.registration_check(OUT)
+  through_summary=R.cpu()
+  if through_summary>=TOTAL:raise RuntimeError('inclusive CPU cap after summary serialization/output')
+  account={'result':'EXACT_COVER_ACCEPTED_PENDING_INDEPENDENT_REPLAY' if failure is None else 'STOP_OR_FIRST_FAILURE',
+           'first_failure':failure,'total_CPU_through_summary':through_summary,
+           'reserved_pure_CPU':2,'complete':failure is None and limit is not None,
+           'final_self_limit':limit,'hard_aggregate_cap':398,
+           'scope':'Inclusive sample after persisted provisional summary/output and freeze recheck, before final-account serialization and atomic last write. Final serialization/write/return bounded by tightened absolute self limit; acceptance additionally requires process return0.'}
+  data=(json.dumps(account,indent=2,allow_nan=False)+'\n').encode()
+  if R.cpu()>=TOTAL:raise RuntimeError('inclusive CPU cap after final-account serialization')
+ except BaseException as error:
+  if failure is None:failure=repr(error)
+  summary['result']='STOP_OR_FIRST_FAILURE';summary['first_failure']=failure
+  R.save(OUT/'summary.json',summary)
+  account={'result':'STOP_OR_FIRST_FAILURE','first_failure':failure,'complete':False,
+           'total_CPU_before_failure_account':R.cpu(),'final_self_limit':limit,
+           'scope':'Failed finalization; no acceptance. Any incomplete descendant accounting remains a lower bound.'}
+  data=(json.dumps(account,indent=2,allow_nan=False)+'\n').encode()
+ # Exclusive temporary creation plus atomic rename; a killed write cannot
+ # leave a successful partial final-accounting.json. No later work/children.
+ temp=OUT/'final-accounting.json.tmp'
+ with temp.open('xb') as stream:stream.write(data)
+ temp.replace(OUT/'final-accounting.json')
  if failure:raise SystemExit(1)
 
 

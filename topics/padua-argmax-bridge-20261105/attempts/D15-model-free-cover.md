@@ -83,3 +83,36 @@ c9b232cceab301eae8c500fb9c3984702c21bef89f144b89d087f01a5cf1ab4f,
 FREEZE4e12e141f774ac2bea65f2581c7d2a5a4b35b795ef45f635c31fecc35e31a45e.
 Both source audit and final edits' independent synthetic check are pending.
 No further author control invocation is authorized/attempted.
+
+## D15-S1 resource-only repair response — 2026-11-06
+
+Root preserved/published first source candidate4e12e141 at d85007bc,
+including the independent source finding D15-S1 MAJOR. The old final
+inclusive check preceded summary/final-account output, while process
+RLIMIT_CPU alone did not subtract waited descendant CPU. Root assigned
+a focused10-minute resource repair plus runtime EOF whitespace cleanup;
+no scientific parameters/algorithm/native code were changed.
+
+The new finalizer establishes ECHILD before any waited-child subtraction,
+then tightens ABSOLUTE supervisor self soft/hard CPU limit to
+min(old_hard,floor(398-waited_child_CPU)-1). It rejects inadequate self
+headroom/incomplete accounting. No later subprocess exists. Provisional
+summary/receipt status prevents premature acceptance. After persisted
+summary serialization/output it rechecks frozen sources and gates inclusive
+CPU; it serializes final-accounting then gates inclusive CPU again before
+an exclusive-temp atomic last write. Only final-accounting success plus
+supervisor return0 accepts the primary run; final tiny work is bounded by
+the lowered self limit. Late caught failures preserve first_failure and
+rewrite STOP summary before failed accounting. Failed incomplete-reap
+paths explicitly cannot establish complete accounting.
+
+Repaired controller74cbe3d39bf8aaf393bdc0074c2938d34bc3dd4b5771339fdf6b4a8917c3b0a1,
+runtime1f6eef3495d06824dafdb6c35a49ba26522f3f1063b0f18d412c82583480e792,
+FREEZEcb38e21b38de2da2fee2738da25c73a248d362826c4038e021f0e961a8e5143b.
+SOURCES unchangedc9b232cceab301eae8c500fb9c3984702c21bef89f144b89d087f01a5cf1ab4f.
+Exact resource-only diff and pins sent directly to independent source
+reviewer for focused STATIC acceptance; source bytes held fixed pending
+that review. Both pure-control shares are already consumed, so no imports,
+controls, compiler/native/producer/checker or numerical calls were run.
+Root reports D14/genericD15 mathematics accepted; this technical finding
+still blocks execution until distinct focused acceptance and root release.

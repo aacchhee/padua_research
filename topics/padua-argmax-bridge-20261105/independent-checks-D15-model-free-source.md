@@ -147,3 +147,71 @@ itself. A later root release may authorize exactly the fixed once-only
 controller. Only a successful primary instance, independent fresh complete
 native replay, theorem-application review and evidence/archive disposition
 can establish a new global2048 result. Final Claude audit remains separate.
+
+## Dated focused D15-S1 closure — 2026-11-06
+
+**ACCEPTED at the technical-source scope; D15-S1 RESOLVED.** Root requested
+this focused static re-review after publishing the initial source/report at
+`d85007bc29b7be427a484cccb5c3f67c8636dcc5`. Rules are unchanged from the
+initial review. Reviewer remains the requested Astra medium independent
+source reviewer; serving metadata is unexposed. No mathematical predicate,
+degree, point, cap, native source or test strategy changed. No additional
+test, module import, native compilation/loading or numerical job ran.
+
+| Repaired artifact | SHA256 |
+|---|---|
+| FREEZE.json | cb38e21b38de2da2fee2738da25c73a248d362826c4038e021f0e961a8e5143b |
+| controller.py,13485bytes | 74cbe3d39bf8aaf393bdc0074c2938d34bc3dd4b5771339fdf6b4a8917c3b0a1 |
+| runtime.py,8459bytes | 1f6eef3495d06824dafdb6c35a49ba26522f3f1063b0f18d412c82583480e792 |
+| SOURCES.json,unchanged | c9b232cceab301eae8c500fb9c3984702c21bef89f144b89d087f01a5cf1ab4f |
+
+Reviewed the full controller/runtime/FREEZE diff against d85007b and
+independently checked these file hashes and sizes. checker.py, controls.py
+and producer.py retain the exact hashes in the original table. Runtime's
+only change removes two trailing blank lines. FREEZE changes only the
+controller/runtime identities. The initial synthetic receipt remains
+byte-for-byte SHA256
+c3b735a5e38866e08923fa9601a60d4f0aed52a7cba0af3cfaaa5188afad05f0;
+it is evidence for the initial candidate, not an executed test of this
+resource repair. Both pure-control slots remain consumed. The original
+report prefix is preserved (9285bytes, original SHA256
+1fd0e3cd5d0bf07b2ec94d16b698ca616abab1119bf7f66ddb5ffb0a42dbc241).
+
+The repair now independently establishes ECHILD with wait4 before fixing
+the waited-descendant CPU total C. No later child is launched. It lowers
+the absolute supervisor self hard limit to
+
+    H=min(old_hard,max(0,floor(398-C)-1)),
+
+then requires at least2CPU of remaining self headroom and complete stage
+descendant accounting. On an accepted path H+C<=397, reserving a full
+second below398 for integer/tick enforcement slack. The limit includes
+receipt construction, source verification, summary/final-account
+serialization, final atomic write and interpreter return. An incomplete
+reap or failed headroom condition cannot produce acceptance. Failed
+incomplete-descendant paths explicitly retain a lower-bound accounting
+qualification; this is not an adversarial escaped-process guarantee.
+
+Receipt and summary now say PROVISIONAL. After saving/printing the summary,
+the controller rechecks source/FREEZE and gates inclusive CPU<398. It then
+serializes final accounting and gates inclusive CPU<398 again. The recorded
+through-summary sample explicitly precedes final-account serialization and
+the last atomic write; those remaining operations are covered by H. An
+exception retains the first failure and rewrites summary as STOP. The final
+account uses exclusive temporary creation and atomic replacement, so an
+interrupted write cannot leave a partial accepted account. Acceptance
+requires BOTH a complete successful final-accounting record AND controller
+exit0; an earlier summary/receipt or an account from a nonzero exit is
+insufficient. There is no later expensive work or child launch.
+
+These changes close the specific source-level aggregate-finalization gap.
+The new execution paths were statically inspected, not exercised; this
+limitation is explicit and does not justify a third preflight. No unresolved
+BLOCKING, MAJOR or MINOR source finding remains in this bounded scope.
+Root reports D14 and generic D15 mathematical reviews both accepted; this
+review does not substitute for their mathematical acceptance. Root must
+publish/accept this repaired freeze before its separately authorized
+once-only execution. A successful2048 instance, independent fresh complete
+native replay, theorem application and evidence/archive disposition remain
+unperformed obligations. Source acceptance is not a numerical result or an
+execution release; final Claude audit remains separate.

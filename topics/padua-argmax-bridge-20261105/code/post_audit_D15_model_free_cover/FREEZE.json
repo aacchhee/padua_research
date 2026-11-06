@@ -9,8 +9,8 @@
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/controller.py",
-      "bytes": 10153,
-      "sha256": "2710c8e5fca417259f11db5913771bcaecd40cb8b8af15fe5ed30bd62228b6a9"
+      "bytes": 13485,
+      "sha256": "74cbe3d39bf8aaf393bdc0074c2938d34bc3dd4b5771339fdf6b4a8917c3b0a1"
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/controls.py",
@@ -24,8 +24,8 @@
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/runtime.py",
-      "bytes": 8461,
-      "sha256": "8bb7bb3f3bb44242787c96ce09c5f21372a30c005799e6691884736e4f063bb2"
+      "bytes": 8459,
+      "sha256": "1f6eef3495d06824dafdb6c35a49ba26522f3f1063b0f18d412c82583480e792"
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/SOURCES.json",
