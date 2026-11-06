@@ -1,6 +1,7 @@
-# C4 — external/native monic matrix and full-field measurements
+# PD-T?nn-mop-cond-codex-C4-01 — external/native matrix and field measurements
 
-ID kind: finite comparison/verification record; no new theorem or negative-result ID.
+ID kind: PD-T. Distinct finite comparison claim, status MEASURED;
+no new algorithmic theorem or negative-result ID.
 Aliases: IEP-MOP comparison; anchored full-NN lift.
 Split from: none. Split into: none.
 
@@ -22,7 +23,7 @@ For the added lift, with normalized masses and first-e1 monic path, ell1=e0 and 
 
 M4 actual unchanged-driver replay passes selected Kravchuk paperN10 CORE:2.691214553706643e-10, log10ratio−0.4058177524 to the inherited quoted paper6.851191e-10. The paper-data source itself is not newly authenticated here. M2 exact-generator fidelity passes at topicN6, using full IEEE matrix bits: relative spectral discrepancy7.18485e-17 (Krawtchouk),3.90939e-17 (Hahn). Every returned H is monic according to the inspected source; scaled returned basis matrices do not define a different returned-H gauge. Source constants and matrix orientation were sent to C1.
 
-An initial wrapper using decimal JSON did not preserve all normalized input bits. It moved some N12 nodes by one ulp. That exploratory comparison is rejected for the identical-input claim and its receipt retained. Final tables use the repaired hex transport. A separate exploratory all-solver1e-12 diagnostic failed because KRYL's numerical error exceeded that threshold; the actual M2 criterion concerns normalization agreement with the source exact generator, which passes. Both issues and the source-access history remain in attempts/C4.md.
+An initial wrapper using decimal JSON did not preserve all normalized input bits. It changed normalized node bits (first detected at Krawtchouk N12) by one ulp. That exploratory comparison is rejected for the identical-input claim and its receipt retained. Final tables use the repaired hex transport. A separate exploratory all-solver1e-12 diagnostic failed because KRYL's numerical error exceeded that threshold; the actual M2 criterion concerns normalization agreement with the source exact generator, which passes. Both issues and the source-access history remain in attempts/C4.md.
 
 ## Selected final shared-input measurements
 

@@ -1,9 +1,9 @@
 # NN MOP conditioning: intrinsic or metric? Sharp rates, weak stability, IEP-MOP comparison: log
 
 - Branch: `codex/nn-mop-conditioning-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6.1-sol, high): Continue codex/nn-mop-conditioning-20261106.` · [Audit 01](audit-01.md) found no BLOCKING, 3 MAJOR and 11 MINOR findings; response handoff [03](handoffs/03-response.md).
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/nn-mop-conditioning-20261106.` · [Audit01](audit-01.md) accepted original science; [response01](response-01.md) fixes all3 MAJOR/all11 MINOR findings and adds a separately checked gauge theorem. Focused handoff04 follows the response output commit.
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
-- Claims: none yet.
+- Claims: accepted within audit-01 scope; response addresses classification, attribution, records and robustness; see response-01.md.
 
 ## 2026-11-06 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -17,9 +17,12 @@
 - Up to 8 rounds per direction, in parallel; coordinator gpt-6-astra high.
 - Rules read at `76ba421`. Branch created from main `76ba421`. Only this LOG, handoff 01 and the results stub were added. No computation was run and no claim made.
 
-## Runs needed
+## Runs needed / undelivered artifacts
 
-- M0–M4 and C1–C4 as in handoff 01.
+- Initial M0–M4/C1–C4 items are historical setup work; completed scope and amendments are in gates.md.
+- Advanpix-dependent archive experiments remain unrun (licensed toolbox absent).
+- Padua cold-storage delivery remains pending; no destination is attached.
+- General weak stability and matching full-Hahn/general-pair uppers remain OPEN mathematical tasks, not completed executions.
 
 ## 2026-11-06 — Codex coordinator, requested gpt-6-astra high — replay and launch
 
@@ -252,3 +255,81 @@ LIT-502 and Fischer (LIT-113) attribution; candidate and PD-N records for
 the failed C2 subroutes. There are also eleven MINOR findings and seven NOTEs.
 Stage WORK; the response is [handoff 03](handoffs/03-response.md).
 
+
+## 2026-11-06 — Codex response start (requested gpt-6.1-sol high)
+
+Rules read at3d5b29d7aa8c1274793139d7040695035e1bda22; main refreshed
+and remains76ba4214b100c86a44941f5e9a662ce9ce48efb8, an ancestor.
+The additional-network shell fetch now works. Preserved the prior local
+pinned-file snapshot under /tmp/nn-mop-pre-response-3d5b29d and checked
+out the actual topic commit; no user changes were discarded. Git actions
+remain with the coordinator. User authorized work on some optional NOTEs.
+
+The substantive audit accepted mathematics/measurement scopes. This step
+proposes a PARTIAL decomposition of PD-T448 in classification-proposal.md,
+adds attribution and failed-route records, fixes the listed MINOR items,
+and develops optional NOTE-1 gauge attainment separately for focused audit.
+Only topic/results files are changed; no final IDs/ranges or shared edits.
+
+Canonical C3 gate-coverage qualification (MINOR-9): the original C3 read
+used bounded table-summary views and omitted the PR15/17/22/23/25, cleanup,
+frontier, nonproduct and unnumbered-subroute tables noted by audit-01.
+It produced no new mechanism, so this causes no claim change. Completing
+IDEA fields in this response is retrospective; it does not imply a fully
+prospective original gate. The optional new gauge result has a fresh gate.
+
+One correction to the earlier LOG statement that report/results both
+included the stronger Hahn rate: the committed results file was stale.
+This response repairs that file explicitly rather than treating the
+previous statement as evidence that it had been published.
+
+Optional NOTE-1 gate timing qualification: all closest NN/Fischer/C1
+records and obstruction/disposition tables were read before development.
+Four unrelated lattice inventory summary rows, IDEA177–180, were hidden
+by a truncated aggregate view and reread only after proof drafting.
+The new work refines the audit-supplied degree taper; no historical
+novelty or perfectly prospective whole-inventory completion is claimed.
+Gate/candidate histories link here rather than duplicating the exception.
+
+The new finite-attainment theorem uses analytic all-N reductions plus96
+exact finite comparisons; a distinct requested Astrahigh worker replayed
+and independently reconstructed every comparison using direct SymPy
+moment differentials. Both benchmark applications are PROVED in the
+recorded computer-assisted sense, subject to the focused Claude audit.
+It does not promise a numerically representable/useful small taper or
+optimize a relative global matrix norm.
+
+## 2026-11-06 — response completed; focused AUDIT
+
+All3 MAJOR/all11 MINOR findings have explicit fixes in response-01.md.
+PD-T448's direct solved Krawtchouk rate conjunct now has a PARTIAL
+classification proposal, without a shared-registry edit. C2 failed
+subforms and two scoped negative homes preserve accepted mathematics.
+Source attribution separates scaled-algorithm residuals from fieldwise
+forward conditioning; Fischer and the unverified AT-system lead retain
+bounded coverage qualifiers. Namespace-qualified mappings preserve aliases.
+
+New NOTE-1 finite positive attainment is PROVED for both benchmarks,
+allN>=2 and six node/mass variants. The exact finite reduction has96
+Fraction checks and an independent direct-moment reconstruction with
+identical exact payload digests. It resolves only the stated b-dominant
+fieldwise optimization, without promising practical floating scaling.
+
+The changed postprocessor passes the116-case healthy scientific payload
+comparison,58 bitwise identities and14 byte-identical CSVs; four actual-
+producer-shaped missing/broken-native paths record statuses and blank
+metrics. The extracted hard checker passes50/735/1050/330 exact counts.
+The C1 diagnostic changes only its stale receipt identity, with12
+summaries/348 underlying rows unchanged. The final M2 metadata replay
+from existing bit-grid output matches; no fresh third-party execution is
+claimed in this response. Historical source receipts keep their original
+producer provenance; response-code-checks pins the robust-code replay.
+
+The manifest now includes the missing c1-matrix-all.json raw artifact.
+Verifier passes86 code/data/import identities and12 temporary raw pins.
+No shared registries, final IDs/ranges, rules, workflows or unrelated
+topic files changed. Supplementary response-independent.md found no
+unresolved defect; it is not Claude approval or readiness.
+
+Next: [handoff04 — focused re-audit](handoffs/04-reaudit.md), published
+after the response scientific output, closing03 by status only.

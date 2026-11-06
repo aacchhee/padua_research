@@ -35,8 +35,8 @@ preserve mass. The theorem is local first-order sensitivity in exact real
 arithmetic. Normality of all required indices through degree N is proved
 in PD-T433; it persists in a neighborhood of the base input.
 
-Overall status: PROVED (written analytic development; independent checking
-and the required Claude audit are pending). Candidate disposition:
+Overall status: PROVED (written analytic development; supplementary checks
+and substantive Claude audit-01 accepted this theorem within its scope). Candidate disposition:
 retained quantitative continuation of IDEA-533/535 and C2-01 in
 ../novelty-gate-C2.md; no priority or new-core-mechanism claim.
 
@@ -126,7 +126,9 @@ polynomial sources −ell_s f, and the one common analytic source
     G=g+ell f.                                             (7)
 
 Only the common source will be integrated on a contour enclosing both
-jet points. This common-node cancellation is essential to the estimate.
+jet points. It cannot use the rectangles: Gamma1 encloses the logarithmic
+branch point0 and Gamma2 encloses branch point1. The disk Gamma0 instead
+avoids both; this common-node cancellation is essential to the estimate.
 
 ### 3. An inverse-jet formula for the top three coefficients
 
@@ -334,9 +336,10 @@ lower bound and (1) prove (2).
 
 ## Checks, sources and limits
 
-The proof is analytic. Supplementary exact small-degree checks and a
-separate reconstruction are requested in ../attempts/C2-hard.md; none
-is a premise of the all-N conclusion. No literature novelty claim or
+The proof is analytic. Completed supplementary exact small-degree checks
+and separate reconstruction are recorded in ../attempts/C2-hard.md and
+independent-checks-01.md; Claude audit-01 also reconstructed the proof and
+executed independent checks. None is a premise of the all-N conclusion. No literature novelty claim or
 unread external formula is used. The mechanism is the already gated
 binomial/Hermite continuation, with a norm-matched all-field transfer.
 

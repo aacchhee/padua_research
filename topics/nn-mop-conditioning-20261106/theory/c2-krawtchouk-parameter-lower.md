@@ -3,7 +3,8 @@
 ID kind: PD-T.
 Aliases: two-parameter terminal parity bound; binomial Hermite response sum;
 explicit rho lower; digits capacity versus measure separation.
-Split from: PD-T448 (sharp matching rate target, OPEN).
+Split from: none; this lower bound is a supporting dependency of PD-T448,
+not a resolved full general-parameter matching-rate target case.
 Split into: none. This is a lower bound, not the matching-rate target.
 
 ## Statement
@@ -230,15 +231,20 @@ response in (8) is divided by 1+|c0|<=2, giving the stated one-half
 bound. When the perturbed marginal has p2=1/2, c0=0 and there is no
 factor loss. For a pair with a symmetric marginal, use that orientation
 directly in (8)–(13), without the optional q_*-minimizing choice (3).
-It has b=1, e=0 and q2=1/4, proving the stronger specialization above.
+If the nonsymmetric parameter exceeds1/2, first reflect k to M-k and
+then relabel so it is the first parameter below1/2 while the symmetric
+second remains1/2. In that orientation b=1, e=0 and q2=1/4, proving the
+stronger specialization above.
 
 ## Checks
 
 `../code/c2_rate_checks.py` independently solves the defining moment
 systems and their differentiated equations in Fraction arithmetic,
 compares all selected terminal rows with (8), and compares their signed
-sum with (11). It also checks the predecessor specialization and the
-field-scale formula. The receipt `../c2-rate-checks.json` records actual
+sum with (11), and checks the field-scale formula. This script tests
+selected exact derivatives/orientations, not a direct general verification
+of PD-T437(13); the latter specialization was checked separately in
+audit-01's C/t2 and C/t7 scripts. The receipt `../c2-rate-checks.json` records actual
 scope, hashes and platform. These finite checks support the algebra;
 the all-N proof has no computational premise. Supplementary independent
 rerun and Claude audit remain separate records, when performed.
@@ -256,7 +262,10 @@ the true rate, a finite-perturbation radius or actual rounding loss.
 The input direction leaves the binomial family, as the input model permits.
 The matching upper, gauge-optimal interpretation, full Hahn lower and
 general solver stability remain separate tasks. The original PD-T448
-statement and OPEN status are preserved.
+statement and registered OPEN display are preserved in this response;
+the [parent classification proposal](../classification-proposal.md) proposes
+PARTIAL through the separately solved benchmark rate conjunct, with all
+remaining target conjuncts OPEN.
 
 ## History
 
@@ -264,3 +273,10 @@ statement and OPEN status are preserved.
 `76ba4214b100c86a44941f5e9a662ce9ce48efb8`, coordinator pinned topic
 `b4a04981d42c7cd872957facf5e3995e4096ca67`. First written parameter
 extension after the C2 gate. No predecessor edits or Git mutations.
+
+2026-11-06 response, Codex gpt-6.1-sol high, rules/source `3d5b29d`:
+the former “Split from: PD-T448 (sharp matching rate target, OPEN)”
+label is corrected to a supporting-dependency relation (MINOR-6).
+This general-pair lower does not settle the full matching-rate target;
+the benchmark rate conjunct is solved by the separate sharp-upper result
+with PD-T437. Statement, proof and PROVED status remain unchanged.

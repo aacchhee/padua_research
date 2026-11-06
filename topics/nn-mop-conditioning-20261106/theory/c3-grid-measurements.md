@@ -23,6 +23,16 @@ independent reference algorithm or rigorous interval certificate.
 
 ## Measured results
 
+Completion of all232 solves and every table maximum below are observations
+on the developer stack only. In audit-01's Python3.13.18/NumPy2.5.3 rerun,
+Krawtchouk N32 A-LU broke down (singular matrix), so231/232 completed.
+Its Krawtchouk A-LU full-grid maximum was1.609547 atN21 and the
+kappa*u<=1 maximum was.809084 atN17, versus1.132694/.809315 here.
+All C4 values and the Hahn A-LU cutoff maximum reproduced. These are
+attributed audit observations, not a new developer rerun or all-platform
+completion claim. See [audit-01 section4](../audit-01.md#4-c3-weak-stability-open-target-confirmed-grid-accepted-as-measured).
+
+
 Each pair below is `maximum E/(kappa*u) (N attaining it)` over the stated
 subset. A cutoff is a diagnostic subset, not a proved finite-u Taylor
 radius; even kappa*u<1 alone does not control the remainder.
@@ -107,7 +117,8 @@ temporary, regenerable and not committed; no archival delivery is claimed.
 
 ## Scope, open items and history
 
-The original general stability target remains OPEN in
+The distinct forward weak-stability target PD-T?nn-mop-cond-codex-C3-02
+remains OPEN in
 [c3-weak-stability-open.md](c3-weak-stability-open.md). Measurements do not
 supply its constant C_N, precision radius or remainder bound. M2/M4 and
 the external IEP-MOP comparison are outside this record; no literature

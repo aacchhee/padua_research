@@ -60,13 +60,64 @@ mkdir -p /tmp/c4-g5-replay
 python3 topics/nn-mop-conditioning-20261106/code/c4_fidelity.py --external /tmp/c4-fidelity-replay.json --receipt /tmp/c4-m2-replay.json
 ```
 
-Only after both gates pass:
+Historical ordering matters: the **pre-grid M2 gate** is
+[`c4-m2-receipt.json`](c4-m2-receipt.json), whose selected Krawtchouk
+exact-generator error was 8.657548935371719e-17. It passed before the
+full grid. The `m2` wrapper mode above selects only Krawtchouk N6; its replay
+receipt is a fresh single-configuration check, not a reproduction of the
+committed two-family `c4-m2-bits-receipt.json`. The latter was produced
+**after** the full bit-transport grid, by applying the fidelity checker to
+that full output. Its two selected N6 cases confirm the final transport and
+normalization; it was not the gate used to authorize that same grid.
+
+Only after the pre-grid M2 and M4 gates pass:
 
 ```sh
 /tmp/c4-apt/root/usr/bin/octave-cli --no-init-file --no-site-file --quiet --eval "addpath('/workspace/padua_research/topics/nn-mop-conditioning-20261106/code'); c4_external('/tmp/c4-iep-source/IEP-MOP-main/src','/tmp/c4-shared-input.json','/tmp/c4-external-grid-bits.json','full');"
+python3 topics/nn-mop-conditioning-20261106/code/c4_fidelity.py --external /tmp/c4-external-grid-bits.json --receipt /tmp/c4-m2-bits-replay.json
 OPENBLAS_NUM_THREADS=1 python3 topics/nn-mop-conditioning-20261106/code/c4_compare.py --external /tmp/c4-external-grid-bits.json --native /tmp/nn-mop-c3-grid-raw.json --raw /tmp/c4-comparison-bits-raw.json --evidence topics/nn-mop-conditioning-20261106/c4-tables
 ```
 
 The external wrapper executes348 calls across both families and every topicN4–32, each in original archive integer mode and shared normalized mode. Original paperN5–30 is included. The external source's remaining Advanpix-only conditioning/backward/random-weight experiments were not executed; a licensed toolbox is unavailable. No statement that every configuration in every archive script has been reproduced is made.
 
 All NN comparisons for the external methods add a high-precision H+d0 functional lift, with d0 calculated from the actual binary64 input. This is labeled as composite postprocessing throughout. It can return a formal moment array lacking positive-real spectral data; no compatible positive common-input inverse is claimed. No eigenvalue-based positivity check, MATLAB experiment, licensed Advanpix reproduction or uniform stability result is inferred from these finite outputs.
+
+### Response replay and table interpretation
+
+The final two-family M2 receipt pins `/tmp/c4-external-grid-bits.json`
+(SHA256 `efc7fd299093f433d8936ff628b6df2dd4561ca0572ad9dcdc56ff4ccb697e6b`).
+The post-grid fidelity command immediately above reproduces its scientific
+payload; the replay output filename is deliberately separate. The comparison
+uses `/tmp/nn-mop-c3-grid-raw.json`, the preserved native producer output.
+To produce a fresh platform-specific native run, execute:
+
+```sh
+OPENBLAS_NUM_THREADS=1 python3 topics/nn-mop-conditioning-20261106/code/c3_grid.py --output /tmp/c3-replay-summary.json --raw /tmp/c3-replay-raw.json
+```
+
+Pass that fresh raw path to `c4_compare.py --native` to compare that run;
+completion and errors may differ with the numerical stack. A native
+`breakdown`, missing method or missing coefficients now produces a recorded
+failure status and blank metrics in its CSV row, while other methods remain
+available. The original authenticated tables retain their schema and bytes.
+
+CSV columns `a1`, `a2`, `b1`, `b2` and `E_NN` in CORE/KRYL/REORTH tables
+measure **returned H plus the input-anchor functional lift**. `H_integer`
+measures the returned matrix alone. In C4/A-LU/A-QR/B-nodeqr tables the NN
+columns measure native full NN coefficients. The CSV headers are shared
+across those methods; interpret them with these method-specific definitions.
+The rejected exploratory receipt retains its historical M2/M4 gate labels;
+those labels do not validate its discarded decimal-transport comparison.
+
+The response regression command, using preserved authenticated raw inputs,
+is:
+
+```sh
+OPENBLAS_NUM_THREADS=1 python3 topics/nn-mop-conditioning-20261106/code/response_code_checks.py
+```
+
+It writes replay tables and raw output under `/tmp/nn-mop-response-code-checks`,
+compares the full healthy scientific payload and every CSV byte, exercises
+native failure rows, runs the byte-exact extracted C2 checker, and refreshes
+`c1-error-comparison.json` against the final comparison receipt. See
+[response-code-checks.md](response-code-checks.md) and its JSON record.

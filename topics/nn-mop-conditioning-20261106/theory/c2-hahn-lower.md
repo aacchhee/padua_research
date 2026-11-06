@@ -2,7 +2,8 @@
 
 ID kind: PD-T. Aliases: Hahn terminal one-cross-step annihilator; base-two
 Hahn lower; relative signed-binomial direction with fixed mass.
-Split from: PD-T448 (sharp matching-growth target, OPEN).
+Split from: none; this lower bound is a supporting dependency of PD-T448,
+not a resolved full sharp-Hahn target case.
 Split into: none; this is a lower bound, not the sharp Hahn target.
 
 ## Statement
@@ -167,3 +168,11 @@ finite-error radius and actual floating-rounding loss remain OPEN.
 `76ba4214b100c86a44941f5e9a662ce9ce48efb8`, topic pin
 `b4a04981d42c7cd872957facf5e3995e4096ca67`. Written after C2 gate;
 no predecessor or shared registry edits, no Git mutations.
+
+2026-11-06 response, Codex gpt-6.1-sol high, rules/source `3d5b29d`:
+the former “Split from: PD-T448 (sharp matching-growth target, OPEN)”
+label is corrected to a supporting-dependency relation (MINOR-6).
+The [parent classification proposal](../classification-proposal.md) separates
+the proved benchmark Krawtchouk rate conjunct from the remaining OPEN
+conjuncts; this Hahn lower is not one of the resolved target cases.
+The theorem, proof and PROVED status are unchanged.

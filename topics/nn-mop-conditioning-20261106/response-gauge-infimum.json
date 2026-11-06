@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "purpose": "finite dominance obligation; not a floating fit",
+  "rules_source": "3d5b29d7aa8c1274793139d7040695035e1bda22",
+  "python": "3.12.14",
+  "arithmetic": "fractions.Fraction",
+  "code_sha256": "320466b23f96e8ec0973eaccf977200fcb2d22ac0f055b842ad08f0f49c4968e",
+  "checks": 96,
+  "all_pass": true,
+  "rows": [
+    {
+      "family": "hahn",
+      "N": 2,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "62681787787dd1745c8f095f69ca58d11e4e19bebd346ad7c2fff240c101adc9",
+      "smallest_dominance_ratio": "243/38"
+    },
+    {
+      "family": "hahn",
+      "N": 3,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "545c467296ac0f395ac409c9359e56ceebe3fdf7346bc427375cf9bf0ae6c62c",
+      "smallest_dominance_ratio": "877422/35695"
+    },
+    {
+      "family": "hahn",
+      "N": 4,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "a7173a4ae2b5cdf84b0926beb88a55536e800a0d3b969f226ad1259c195a0046",
+      "smallest_dominance_ratio": "32071365/144326"
+    },
+    {
+      "family": "hahn",
+      "N": 5,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "534c68b12b254964b764830fb0dbfb1b2a83b4fa274a0167f543a15c6d5cfca7",
+      "smallest_dominance_ratio": "29909474985/14855246"
+    },
+    {
+      "family": "hahn",
+      "N": 6,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "bfeb077586118b43e980e10f5160cb3c549c4b200a7877268795aa10c742b17e",
+      "smallest_dominance_ratio": "2741571200511/148115450"
+    },
+    {
+      "family": "hahn",
+      "N": 7,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "d26095e888ef73b3f5c8a52b5b2cd0f1af9681d15b69298987d83aa55347f403",
+      "smallest_dominance_ratio": "2771096145237927/15538184750"
+    },
+    {
+      "family": "hahn",
+      "N": 8,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "50480fa79b3392b975a68539d25fe4e5f7e74673b73348268d0c1e34913a7cfa",
+      "smallest_dominance_ratio": "2789193788139699/1788020000"
+    },
+    {
+      "family": "hahn",
+      "N": 9,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "e229284bdf02758123038b3ee5045b47362d6b260bd53e68792fc525001ad277",
+      "smallest_dominance_ratio": "193376689323282957/13689736375"
+    },
+    {
+      "family": "hahn",
+      "N": 10,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "44d86d9188aff40cad78ef2717897bd1708a751271c8bf07648f3b5c1fe2ec92",
+      "smallest_dominance_ratio": "1091870964761129633597/7870740684800"
+    },
+    {
+      "family": "hahn",
+      "N": 11,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "40e91b572c35fc456d96eac3270edaeb13dd8b6a5cc353bb46881eadf6682bc3",
+      "smallest_dominance_ratio": "230784295436972940706450/169903186768091"
+    },
+    {
+      "family": "hahn",
+      "N": 12,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "4fd09755352cb3ba10033bc920a8dab5f69bc4168132f538c10a5882c4d97914",
+      "smallest_dominance_ratio": "3033611772422034226502365/223079170627936"
+    },
+    {
+      "family": "hahn",
+      "N": 13,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "d34f5e3ab639a60953f783ceaa2f8bd2479847dfc0501487478f97a609db99fc",
+      "smallest_dominance_ratio": "9769520775315199210509839368311/70760045322081068800"
+    },
+    {
+      "family": "hahn",
+      "N": 14,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "c2e6af9119ea34a24607d35fd69776a9a2fddfe180b3fa1f9627ab80f18e3289",
+      "smallest_dominance_ratio": "21465668482889746510980785445895/14884158552457537728"
+    },
+    {
+      "family": "krawtchouk",
+      "N": 2,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "6056d01bf48edacad66688146d29e716eebe25b27700040094a5440b62b13560",
+      "smallest_dominance_ratio": "42/13"
+    },
+    {
+      "family": "krawtchouk",
+      "N": 4,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "bde7ebf7b5a9ba471c033d425280757efde68120c1326e9ca5e524550bd3c441",
+      "smallest_dominance_ratio": "2649/100"
+    },
+    {
+      "family": "krawtchouk",
+      "N": 6,
+      "variants": 6,
+      "all_pass": true,
+      "exact_comparisons_sha256": "0ffae40ac343655c1b2ff8813962a45ba32431637bc2c8246010c42c75196548",
+      "smallest_dominance_ratio": "2712704/2375"
+    }
+  ],
+  "independent_rerun": "separate execution required; not self-certified"
+}

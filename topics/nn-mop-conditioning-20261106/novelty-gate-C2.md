@@ -172,3 +172,25 @@ on that differentiation operator kills the claimed polynomial transfer;
 it does not kill weighted or correlated node estimates. Preserve the
 two actual attempted inequalities, their precise failures and the
 remaining stronger inequalities in the upper-search record and ledger.
+
+## 2026-11-06 response addendum — candidate homes and namespace map
+
+The three existing failed subroutes now have complete provisional
+IDEA-template records in [candidates-response-C2.md](candidates-response-C2.md):
+`IDEA?nn-mop-cond-codex-C2-03-r4`, `-r5` and `-r6`, all retained under
+parent C2-03. That record includes the response reading coverage,
+literature baselines, exact obstructions, variant verdicts, separation and
+kill criteria, discriminability, outcomes and candidate-to-result mapping.
+It is a retrospective extraction, not a claim that these new records or
+their full template fields existed before testing; the original entries
+above preserve their existing gate wording and timing evidence.
+
+The round-4 [envelope PD-N](theory/c2-hahn-upper-envelope.md) is unchanged.
+Round 5's exact sign counterexample now has a
+[PROVED scoped PD-N home](theory/response-c2-positivity-failure.md), and
+round 6's all-M unweighted differentiation loss has its own
+[PROVED scoped PD-N home](theory/response-c2-node-transfer-failure.md).
+Only their attempted estimates are REJECTED: failed. Parent C2-03 and the
+full-map Hahn upper remain retained/OPEN at their unresolved scope.
+These are records of audited mathematics, not new mechanisms or broader
+negative claims. No final IDs or shared registries are changed here.

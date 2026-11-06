@@ -12,8 +12,10 @@ For every integer N>=2, M=N-1, on k=0,...,M, put
     W_(s,k)=(alpha_s+1)_k/k! * (2)_(M-k)/(M-k)!,
     Z_s=(alpha_s+3)_M/M!, w_(s,k)=W_(s,k)/Z_s.
 
-Here (a)_r is the rising factorial, (a)_0=1. These are exactly the
-PD-T290 Hahn input weights, before z=2k/M-1 scaling. Every mixed
+Here (a)_r is the rising factorial, (a)_0=1. The unnormalized W are the PD-T290 Hahn weights, before z=2k/M-1
+scaling; w fixes their separate masses to one. Scaling an entire weight
+vector changes neither the MOP coefficients nor the componentwise-relative
+weight condition number, so this normalization does not change kappa. Every mixed
 index of degree <=N is normal.
 
 For n,m>=0, t=n+m<=M, the coefficient tau_(n,m) of k^(t-1) in the

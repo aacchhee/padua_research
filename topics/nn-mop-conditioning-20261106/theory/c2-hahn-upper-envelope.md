@@ -37,6 +37,8 @@ Changing to normalized weights leaves this envelope unchanged because
 the dual scales inversely with that normalization.
 
 Overall status: PROVED (scoped failed-route lemma).
+Candidate: [IDEA?nn-mop-cond-codex-C2-03-r4](../candidates-response-C2.md#ideann-mop-cond-codex-c2-03-r4--separate-global-maxima),
+a retained subform of parent C2-03.
 Candidate disposition: REJECTED: failed (global-maxima decoupling); retain
 pointwise correlation and the full sharp-Hahn target. Closest entries:
 IDEA-534/535 and C2-03. No external theorem or novelty claim.
@@ -130,3 +132,7 @@ extensions follows by enlarging E_M or by fitting the terminal row.
 76ba4214b100c86a44941f5e9a662ce9ce48efb8, published topic pin
 b4a04981d42c7cd872957facf5e3995e4096ca67. Prospective round4 subroute
 gate in `../novelty-gate-C2.md`. No Git/shared registry mutation.
+
+2026-11-06 response, Codex gpt-6.1-sol high, rules/source `3d5b29d`:
+added the explicit round-4 candidate ID/link for MAJOR-3. Statement,
+proof, PROVED negative status and rejected scope are unchanged.

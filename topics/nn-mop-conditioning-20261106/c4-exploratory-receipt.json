@@ -5,6 +5,7 @@
   "disposition": "EXPLORATORY; rejected for identical-input comparison after binary64 JSON roundtrip mismatch was discovered",
   "failure": "Octave jsondecode decimal parsing moved some normalized nodes by one ulp at N12; subsequent hex2num/num2hex wrapper replaces this transport",
   "failures": [],
+  "gate_labels_scope": "Historical source/normalization gates only; M2/M4 PASS does not validate this rejected decimal-transport comparison. Authoritative comparison: c4-comparison-receipt.json; final transport fidelity: c4-m2-bits-receipt.json.",
   "input_files": {
     "/tmp/c4-external-grid.json": "3a9ce8a60bdbb0455f7e1d10a68b14a8a2946c7b94ee68c6e91d8be1a2361c71",
     "/tmp/nn-mop-c3-grid-raw.json": "3da04b46dcc7d621543544235adf8517b26f316f8b303e4dc77fc5027fb873f6",

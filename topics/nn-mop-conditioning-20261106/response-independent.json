@@ -1,0 +1,124 @@
+{
+  "status": "PASS; supplementary independent checks, not Claude audit",
+  "rules_source": "3d5b29d7aa8c1274793139d7040695035e1bda22",
+  "model_allocation": "worker explicitly requested gpt-6-astra high; root coordinator requested gpt-6.1-sol high; serving model/effort metadata not separately exposed to worker",
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "commands": [
+    "python topics/nn-mop-conditioning-20261106/code/response_gauge_infimum.py > /tmp/response-gauge-independent-replay.json",
+    "python topics/nn-mop-conditioning-20261106/code/response_independent.py > /tmp/response-independent-exact.json"
+  ],
+  "exact_comparisons": 96,
+  "all_payload_digests_match": true,
+  "negative_arithmetic_checks": 16,
+  "tail_polynomial": "2*m**3 + m**2 + 2*m + 5",
+  "code_regression": "reviewed checker, failure shape, unchanged-payload assertions and current receipt pins; not rerun by this worker",
+  "code": [
+    {
+      "path": "topics/nn-mop-conditioning-20261106/code/response_independent.py",
+      "bytes": 4406,
+      "sha256": "fe476965cd00ec998c2d877591f2f9467934c642935c77e62361e69c4ab97e2b"
+    },
+    {
+      "path": "topics/nn-mop-conditioning-20261106/code/response_gauge_infimum.py",
+      "bytes": 6557,
+      "sha256": "320466b23f96e8ec0973eaccf977200fcb2d22ac0f055b842ad08f0f49c4968e"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/tmp/response-gauge-independent-replay.json",
+      "bytes": 4607,
+      "sha256": "eddfe64a3429965755b96c7731f2fa4930729d6e0fa4ebf74aef8b12b4a2fd38"
+    },
+    {
+      "path": "/tmp/response-independent-exact.json",
+      "bytes": 16149,
+      "sha256": "f00457e06dc8f5cba0467a084c1c33abadcc45ca3d390674edcf9310235afff9"
+    }
+  ],
+  "cases": [
+    {
+      "family": "hahn",
+      "N": 2,
+      "min_ratio": "243/38"
+    },
+    {
+      "family": "hahn",
+      "N": 3,
+      "min_ratio": "877422/35695"
+    },
+    {
+      "family": "hahn",
+      "N": 4,
+      "min_ratio": "32071365/144326"
+    },
+    {
+      "family": "hahn",
+      "N": 5,
+      "min_ratio": "29909474985/14855246"
+    },
+    {
+      "family": "hahn",
+      "N": 6,
+      "min_ratio": "2741571200511/148115450"
+    },
+    {
+      "family": "hahn",
+      "N": 7,
+      "min_ratio": "2771096145237927/15538184750"
+    },
+    {
+      "family": "hahn",
+      "N": 8,
+      "min_ratio": "2789193788139699/1788020000"
+    },
+    {
+      "family": "hahn",
+      "N": 9,
+      "min_ratio": "193376689323282957/13689736375"
+    },
+    {
+      "family": "hahn",
+      "N": 10,
+      "min_ratio": "1091870964761129633597/7870740684800"
+    },
+    {
+      "family": "hahn",
+      "N": 11,
+      "min_ratio": "230784295436972940706450/169903186768091"
+    },
+    {
+      "family": "hahn",
+      "N": 12,
+      "min_ratio": "3033611772422034226502365/223079170627936"
+    },
+    {
+      "family": "hahn",
+      "N": 13,
+      "min_ratio": "9769520775315199210509839368311/70760045322081068800"
+    },
+    {
+      "family": "hahn",
+      "N": 14,
+      "min_ratio": "21465668482889746510980785445895/14884158552457537728"
+    },
+    {
+      "family": "krawtchouk",
+      "N": 2,
+      "min_ratio": "42/13"
+    },
+    {
+      "family": "krawtchouk",
+      "N": 4,
+      "min_ratio": "2649/100"
+    },
+    {
+      "family": "krawtchouk",
+      "N": 6,
+      "min_ratio": "2712704/2375"
+    }
+  ]
+}

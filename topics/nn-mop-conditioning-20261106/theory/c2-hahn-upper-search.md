@@ -1,10 +1,22 @@
 # C2 Hahn full-upper search — retained unresolved estimates
 
+Record kind: attempt record (parent candidate C2-03); no PD-T/PD-N ID
+or overall theorem status is assigned to this unresolved search ledger.
+Open targets: the correlated arbitrary-index and common-node estimates
+below. Scoped negative statements have their own PROVED PD-N homes:
+[positivity failure](response-c2-positivity-failure.md) and
+[unweighted node-transfer failure](response-c2-node-transfer-failure.md).
+Full retained candidate records:
+[C2-03-r5 and C2-03-r6](../candidates-response-C2.md).
+
 This is an attempt record, not a new proved full-map rate claim or a
 historical novelty claim. It continues C2-03 after the PROVED terminal
 rate and the separately PROVED rejection of the global-maxima envelope.
 The full Hahn upper in PD-T448 remains OPEN. These were rounds5 and6
 of the bounded C2 search; neither supplies a new quantitative upper.
+The full parent target's classification proposal, distinguishing its
+proved benchmark Krawtchouk rate conjunct from the open Hahn obligations,
+is in [classification-proposal.md](../classification-proposal.md).
 
 ## Round5: arbitrary-index Cauchy inverse
 
@@ -51,7 +63,10 @@ unchanged positive-difference extension is M=3,t=1,nu=(1,0):
 
 Thus Delta^k U(0)>0 is false below terminal degree, even at a balanced
 index. The terminal proof's positive sum cannot be carried over as
-written. An upper could still bound the cancellations in (2), use a
+written. The canonical scoped PROVED negative statement and candidate
+disposition are [PD-N?nn-mop-cond-codex-response-C2-positivity](response-c2-positivity-failure.md)
+and [C2-03-r5](../candidates-response-C2.md).
+An upper could still bound the cancellations in (2), use a
 different coefficient representation, and prove uniformly over n,m,t
 
     (M-t+1)!/t! *sum_s,k W_s(k)|P(k)Q_s(k)|
@@ -98,6 +113,9 @@ The actual terminal P and Q can have additional weighted correlation;
 (6) does not rule out exploiting it, nor assert the node condition is
 larger than rho_H. Disposition: REJECTED: failed for the polynomial
 unweighted transfer; the weighted estimate for (4) remains OPEN.
+Canonical scoped PROVED negative statement:
+[PD-N?nn-mop-cond-codex-response-C2-node-transfer](response-c2-node-transfer-failure.md);
+retained candidate: [C2-03-r6](../candidates-response-C2.md).
 
 ## Stop and remaining task
 
@@ -122,3 +140,8 @@ are retained unchanged.
 2026-11-06: Codex gpt-6.1-sol xhigh; rules/local source76ba421,
 published topic pin b4a04981d42c7cd872957facf5e3995e4096ca67.
 Gate: C2-03 rounds5--6. No predecessor/shared edits or Git mutations.
+
+2026-11-06 response, Codex gpt-6.1-sol high, rules/source `3d5b29d`:
+explicit attempt label and candidate links added for MAJOR-3; the two
+already audited negatives receive standalone provisional PD-N homes.
+The formulas and unresolved estimates are unchanged.

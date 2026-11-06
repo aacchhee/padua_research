@@ -34,9 +34,10 @@ NN lower bound
     K_dep >= 5/[2(N-1)^2] *
       [(5+2sqrt(6))^(N-2)+(5-2sqrt(6))^(N-2)].              (2)
 
-For the same inputs and the alternating step-line, every N>=3,
+For the same inputs and the alternating step-line, let K_dep^SL denote
+its distinct gauge infimum. For every N>=3,
 
-    K_dep >= (4sqrt(6))^(N-1)/[4(N-1)(N-2)].                (3)
+    K_dep^SL >= (4sqrt(6))^(N-1)/[4(N-1)(N-2)].                (3)
 
 Both statements also hold for node scales |x_l| or 2/(N-1), logarithmic
 weight input, and fixed-mass tangent boxes: the witness changes weights

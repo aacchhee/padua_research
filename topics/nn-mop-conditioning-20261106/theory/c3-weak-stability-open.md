@@ -1,9 +1,12 @@
-# C3 — weak stability remains OPEN (PD-T449 continuation)
+# PD-T?nn-mop-cond-codex-C3-02 — forward weak-stability target
 
-ID kind: PD-T; continuation of the original PD-T449 target, whose canonical
-home remains the predecessor's `theory/stable-solver-target.md`.
+ID kind: PD-T. This is a distinct OPEN forward-error target related to
+PD-T449, whose strict backward and correction/data targets retain their
+original home in the predecessor `theory/stable-solver-target.md`.
 Aliases: A-LU rounding analysis; common-input residual transfer.
-Split from / into: none. No new proved stability result or negative ID.
+Split from: none. Split into: none. No stability theorem is claimed.
+The forward inequality below is not substituted for PD-T449's backward
+models; the algorithms and conditioning dependencies overlap.
 
 ## Statement, definitions and assumptions
 
@@ -150,3 +153,10 @@ as a weak-stability result.
 `b4a04981d42c7cd872957facf5e3995e4096ca67`. C3 preserves the original
 target and records the missing norm transfer after two proof routes made
 no substantive progress; candidate dispositions are in `attempts/C3.md`.
+
+## Response clarification — 2026-11-06
+
+Audit-01 MINOR-8: the forward target now has its own provisional ID. Its
+inequality and OPEN status are unchanged. PD-T449 retains its original
+strict raw-array and correction/data backward targets; shared algorithmic
+dependencies do not make the forward statement an equivalent reformulation.

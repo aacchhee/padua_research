@@ -33,3 +33,24 @@ that state without deleting the earlier access attempt. Final comparison
 uses hex transport after the initial JSON decimal route failed an identical-
 input check; all58 shared cases now match bitwise. See external-code.md and
 attempts/C4.md. No numerical criterion was silently weakened.
+
+## M1 coverage clarification — audit response, 2026-11-06
+
+The original scalar monic mixed-input ratios over N32–64 are1.020563 and
+1.021977 for Krawtchouk marginals1/2, and1.019914/1.019878 for Hahn.
+The orthonormal controls are reported separately in c1-summary.json.
+For the authenticated LIT-347 monic integer-node matrix, numerically
+evaluated signed-fit condition bounds are [6.826640,13.380272] Krawtchouk
+and [8.456263,15.940784] Hahn with absolute integer-node scaleone.
+Under normalized-node scaleone they are [7.389245,12.584685] and
+[8.517136,15.831249]. These are bounds, not an exact box-to-spectral
+condition or the paper's perturbation-based estimator. The node units
+are deliberately distinguished. No original threshold is changed.
+
+The original M1 screen did not solve an optimizer; the response's separate
+PROVED finite-attainment result resolves the benchmark fieldwise NN
+infima under b-dominance. It does not turn finite fitted bounds into
+certified intervals, a scalar polynomial-growth theorem, or an arbitrary
+matrix-similarity optimization. Completion of all native solver cases
+in the original M3 diagnostic row is developer-platform-specific; M3
+remains unactivated because no stability theorem was asserted.

@@ -44,6 +44,19 @@ standard derivative/control variant, historical novelty unclaimed.
 PD-T432 is the corresponding NN induced-norm predecessor, and PD-T286
 supplies the scalar moment formulation. No external theorem is imported.
 
+**LITERATURE attribution (2026-11-06, audit-01 MAJOR-2):** Fischer 1998,
+*On Generating Orthogonal Polynomials for Discrete Measures*, Lemmas 4–5,
+pp. 190–191 (LIT-113), is the closest predecessor for scalar node/weight
+derivatives; see also its Theorem 2 and Corollaries 1–2, pp. 192–193,
+for conditioning. LIT-112/365 and IDEA-087/088 record the related scalar
+and Fischer-type baseline. The local LIT-113/365 records are secondary;
+this response checked selected original extracted passages only, with
+formula/OCR and hypothesis limits recorded in
+[response-literature.md](../response-literature.md). The secondary
+O(N²) report is not an all-N bound for our scalar benchmark metric.
+The proof below is local; its fixed-mass support and coordinate conventions
+are stated explicitly, without claiming historical priority.
+
 ## Proof
 
 Differentiate L(p_k p_j)=delta_kj. For j<k, polynomial degree makes

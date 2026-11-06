@@ -38,7 +38,7 @@ Local definitions above suffice for the algebra. External fulltext access and th
 
 ## Scope and open items
 
-This interface is useful preparation for M2. It does not return a full NN triangle from one step-line path, does not implement IEP-MOP, and does not claim a LIT-347 condition number or stability comparison. M4 external rerun and M2 fidelity remain BLOCKED by missing archive.
+This interface is useful preparation for M2. It does not return a full NN triangle from one step-line path, does not implement IEP-MOP, and does not claim a LIT-347 condition number or stability comparison. At the initial interface checkpoint M4/M2 were BLOCKED by the missing archive; the superseding execution addendum below records their completed PASS.
 
 ## History
 

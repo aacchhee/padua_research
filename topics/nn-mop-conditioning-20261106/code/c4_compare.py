@@ -46,6 +46,29 @@ def normed_error(got,ref):
     return float(max(fields.values())),{k:float(v) for k,v in fields.items()}
 
 
+
+def native_result(case,method,ref,N,s,Href):
+    """C3 reports completed/breakdown, and omits coefficients on breakdown."""
+    source=case.get(method)
+    measurement=case.get('measurement',{}).get(method,{})
+    if measurement.get('status')!='completed':
+        return dict(status=measurement.get('status','missing_status'),
+                    reason=measurement.get('reason','native method did not complete'))
+    if source is None:
+        return dict(status='missing',reason='native method absent')
+    if 'coefficients' not in source:
+        return dict(status='missing_coefficients',reason='completed native method has no coefficients')
+    try:
+        co={tuple(nu):{k:mp.mpf(v) for k,v in r.items()}
+            for nu,r in source['coefficients']}
+        E,fields=normed_error(co,ref)
+        return dict(status='ok',E_NN=E,fields=fields,
+            H_integer=distance(affine_monic(monic_hessenberg(co,N),s,s),Href),
+            output='native full NN',input_sha256=case['measurement']['input_sha256'])
+    except (ArithmeticError,KeyError,TypeError,ValueError) as exc:
+        return dict(status='invalid_coefficients',reason=str(exc))
+
+
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--external',type=Path,required=True)
     ap.add_argument('--native',type=Path,required=True);ap.add_argument('--raw',type=Path,required=True)
@@ -76,12 +99,7 @@ def main():
             row=dict(N=N,family=f,input_kind=kind,methods={})
             if kind=='shared_normalized':
                 for method in METHODS[:4]:
-                    co={tuple(nu):{k:mp.mpf(v) for k,v in r.items()}
-                        for nu,r in native[f,N][method]['coefficients']}
-                    E,fields=normed_error(co,ref)
-                    row['methods'][method]=dict(status='ok',E_NN=E,fields=fields,
-                        H_integer=distance(affine_monic(monic_hessenberg(co,N),s,s),Href),
-                        output='native full NN',input_sha256=native[f,N]['measurement']['input_sha256'])
+                    row['methods'][method]=native_result(native[f,N],method,ref,N,s,Href)
             z=np.array(frombits(inp['nodes_bits']),dtype=float);w=np.array([frombits(inp['weights1_bits']),frombits(inp['weights2_bits'])],dtype=float)
             # Actual input, not a reference NN coefficient or exact oracle anchor.
             d0=float(np.dot(z,w[1])/np.sum(w[1])-np.dot(z,w[0])/np.sum(w[0]))

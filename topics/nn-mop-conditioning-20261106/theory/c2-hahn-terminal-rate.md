@@ -2,7 +2,8 @@
 
 ID kind: PD-T. Aliases: positive half-grid Hahn dual; balanced terminal
 parity response; algebraic Hahn lower base; finite-type coefficient bound.
-Split from: PD-T448 (sharp full-map Hahn growth, OPEN).
+Split from: none; the row rate and full-map liminf lower are supporting
+dependencies of PD-T448, not a resolved full sharp-Hahn target case.
 Split into: none. This proves a row rate and a full-map lower, not a
 matching rate for the full NN map.
 
@@ -220,7 +221,8 @@ Existence/uniqueness can be checked without an asymptotic theorem:
 normalize p_j=[z^j]H(z) r^j/H(r) to a probability distribution.
 Its mean is rH'/H, and the derivative of that mean with respect to
 log r is its strictly positive variance. The mean tends from zero
-to infinity as r increases from zero to R. All moments are finite
+to infinity as r increases from zero to R: H' is of order
+(R-r)^(-3/2), while H is of order(R-r)^(-1/2). All moments are finite
 at each r<R. Thus (10) has exactly one solution.
 
 Let b_M=[z^M]f(z)H(z)^(M-1). Positivity gives, at any a in (0,R),
@@ -275,8 +277,12 @@ rho^4-14rho^3+24rho^2-14rho+1=0. The corresponding positive
 solution has rho>12; writing u=rho+rho^(-1) reduces its equation to
 u^2-14u+22=0, hence u=7+3sqrt(3) and rho is exactly rho_H in (2).
 The other root for u is below two and cannot yield rho>1 real.
+The reciprocal real branch rho_H^(-1)<1 would give
+r=3/(1+rho)>3/2>R, so it is excluded by the saddle domain.
 Conversely this value gives r=3/(rho_H+1) in (0,R), satisfies (10),
-and all quantities in the unsquared equation are positive. Uniqueness
+and all quantities in the unsquared equation are positive. For explicit
+bounds, 12<rho_H<61/5 gives10/13<w<17/22; hence
+2w^2-1>31/169>0.18 and1-2w^3>822/10648>0.07. Uniqueness
 in (10) therefore excludes extraneous roots from squaring.
 
 ## Checks
@@ -306,3 +312,12 @@ is not a proof premise and is not claimed equal to rho_H at finite N.
 `b4a04981d42c7cd872957facf5e3995e4096ca67`. Written after the C2
 round3 subroute gate and exact first check. No predecessor/shared
 registry edits or Git mutations.
+
+2026-11-06 response, Codex gpt-6.1-sol high, rules/source `3d5b29d`:
+the former “Split from: PD-T448 (sharp full-map Hahn growth, OPEN)”
+label is corrected to a supporting-dependency relation (MINOR-6).
+The [parent classification proposal](../classification-proposal.md) separates
+the proved benchmark Krawtchouk rate conjunct from the remaining OPEN
+conjuncts. An exact Hahn row rate and a full-map lower do not settle a
+full-map matching-rate conjunct. Statement, proof and PROVED status remain
+unchanged.
