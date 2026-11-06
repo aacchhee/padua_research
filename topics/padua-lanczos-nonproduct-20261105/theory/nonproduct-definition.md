@@ -4,9 +4,9 @@ ID kind: PD-T.
 Aliases: genuinely non-product; invertible-affine independence; support-hull
 admission; nonmultiplicative rectangular weights.
 Split from: the P4 structural-family target, which remains OPEN.
-Split into: weighted aggregate model in p4-weighted-normal-quotient.md;
-continuous model in p4-continuous-capacity.md; moment/source transfer in
-p4-moment-capacity-transfer.md.
+Split into: none. The weighted model, atomless model and transfer are
+separate supporting results split from that same target, not from these
+admission lemmas; see the corresponding P4 theory records.
 
 ## Statement
 
@@ -33,8 +33,9 @@ The following admission statements hold.
    conv(K) is a nondegenerate parallelogram. If K itself is convex it must
    itself be that parallelogram.
 2. Consequently a measure with support a nondegenerate triangle or a closed
-   disk is genuinely non-product. A positive finite measure on
-   `{(i,j):i,j>=0,i+j<=L}`, L>=1, is genuinely non-product. An invertible
+   disk is genuinely non-product. A finite measure with strictly positive
+   weight at every node of `{(i,j):i,j>=0,i+j<=L}`, L>=1, is genuinely
+   non-product. An invertible
    affine image of any of these remains genuinely non-product.
 3. Let A={a_1,...,a_r}, B={b_1,...,b_s}, with distinct real entries and
    r,s>=2. Give every point of A times B a positive weight W_ij, with total

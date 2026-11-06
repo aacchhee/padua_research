@@ -94,4 +94,14 @@ frontier G1 paths were outside the explicitly read campaign root and remain
 unavailable to this inventory; no new campaign path is unavailable. The
 18 JSON index/chunk files total238,041 bytes and each is below16KiB. The
 [canonical repository-wide budget observation](LOG.md#canonical-storage-budget-observation)
-remains an audit issue. No inventory observation changes a run's status.
+was resolved for this PR by AC's 2026-11-06 separate-cleanup decision
+recorded in LOG; no cleaning action is taken while the repository stays
+under 10 MB. No inventory observation changes a run's status.
+
+2026-11-06 response note: the index remains a frozen observation of source
+`62668c1`, not an assertion about the current tree or current `/tmp`
+availability. The later P5 checker edit only annotates the analytic lower
+field; its executable AST is unchanged, and the frozen receipt's original
+source remains recoverable at the indexed Git blob. Audit01 code and later
+response prose are outside that historical inventory. No receipt or inventory
+bytes were rewritten and no storage cleanup was performed.

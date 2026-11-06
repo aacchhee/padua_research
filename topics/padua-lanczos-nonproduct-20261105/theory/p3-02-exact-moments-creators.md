@@ -51,13 +51,13 @@ capacity are not needed to state the moment and creator identities.
 
 ## Status by part
 
-Overall status: PROVED (written analytic proof; independent audit pending).
+Overall status: PROVED (written analytic proof; accepted at stated scope in [audit 01](../audit-01.md)).
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
-| Moment equality through2n+1 and strict difference at2n+2 | PROVED | Separable finite sum below |
+| Moment equality through 2n+1 and strict difference at 2n+2 | PROVED | Separable finite sum below |
 | Exact bases, monic factors, pivots, creators and scales | PROVED | Matched moments and recurrence |
-| Unit normal vector e | PROVED | Degree2n+1 pairing and sign identity |
+| Unit normal vector e | PROVED | Degree 2n+1 pairing and sign identity |
 
 Candidate disposition: retained. Capacity application is a separate result.
 
@@ -70,7 +70,7 @@ are the exact PD-T324 identities, justified for these new weights here.
 ## Checks
 
 Analytic proof only; no symbolic/numerical experiment or finite scan.
-Independent mathematical reconstruction remains requested.
+Independent mathematical reconstruction was accepted in [audit 01](../audit-01.md).
 
 ## Sources
 
@@ -121,6 +121,10 @@ eta. Only the normal vector actually used is claimed.
 
 ## Scope
 
+The combined P3 result concerns non-affine-product measures moment-equivalent
+to SH_n through degree 2n+1, with an n-dependent weight mode; see the
+[capacity result's Scope](p3-03-uniform-capacity-radius.md#scope).
+
 These are exact matched moments/coefficients on an n-dependent family;
 matching them does not identify the full ambient projectors or capacities.
 The density is between 1-|eta| and 1+|eta| relative to nu_n, but no
@@ -130,8 +134,8 @@ source/monic conversion is handled in the capacity application.
 ## Open items
 
 The separate [P3-03](p3-03-uniform-capacity-radius.md) applies the actual
-normal vector and all-source comparator. Independent audit and final IDs
-remain pending.
+normal vector and all-source comparator. The [completed audit](../audit-01.md)
+accepts all three at their stated scopes; final IDs remain unallocated.
 
 ## History
 
@@ -139,3 +143,6 @@ remain pending.
   ed5515ed84e0e7b12163175dce9f22a859c89c99. Developed after pushed
   round-1 checkpoint 6988024. Gate followed the initial proposal; see
   [canonical protocol disclosure](../LOG.md#canonical-protocol-disclosure--p3-gate-timing).
+
+- 2026-11-06: audit-response Scope wording, metadata and spacing only; accepted
+  theorem Statement and proof unchanged.

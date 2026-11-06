@@ -39,7 +39,7 @@ weights. There is no numerical rounding or node perturbation in the claim.
 
 ## Status by part
 
-Overall status: PROVED (analytic admission; independent audit pending).
+Overall status: PROVED (analytic admission; accepted at stated scope in [audit 01](../audit-01.md)).
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
@@ -59,7 +59,8 @@ is proved here, rather than inherited from that affine-product family.
 ## Checks
 
 No computer-assisted proof or numerical experiment. Written proof only.
-Independent review of hull rigidity and the rank criterion is requested.
+Independent review of hull rigidity and the rank criterion was accepted
+in [audit 01](../audit-01.md).
 
 ## Sources
 
@@ -125,6 +126,10 @@ non-affine-product admission for the full stated parameter range.
 
 ## Scope
 
+The combined P3 result concerns non-affine-product measures moment-equivalent
+to SH_n through degree 2n+1, with an n-dependent weight mode; see the
+[capacity result's Scope](p3-03-uniform-capacity-radius.md#scope).
+
 This is an n-dependent weight family on affine-sheared tensor nodes. A
 single fixed eta may be used for all n, but the density's polynomial
 frequency changes with n. No conclusion about one fixed smooth density,
@@ -134,8 +139,9 @@ a nonlinear node map, or capacity equivalence follows from this admission.
 
 The later [P3-02](p3-02-exact-moments-creators.md) supplies matched moments/
 creators and [P3-03](p3-03-uniform-capacity-radius.md) supplies the actual
-normal-projected capacity/radius theorem. Independent audit and final
-result-ID allocation belong to the coordinator.
+normal-projected capacity/radius theorem. The [completed audit](../audit-01.md)
+accepts all three at their stated scopes; final result-ID allocation belongs
+to the coordinator.
 
 ## History
 
@@ -145,3 +151,6 @@ result-ID allocation belong to the coordinator.
   Round-1 analytic admission, before capacity development.
 - 2026-11-05: after round-2 development, linked the separate P3-02/03
   results; admission statement and proof unchanged.
+
+- 2026-11-06: audit-response Scope wording, metadata and spacing only; accepted
+  theorem Statement and proof unchanged.

@@ -3,7 +3,7 @@
 ID kind: PD-T.
 Aliases: positive-weight PD-T136/137 extension; weighted source convention;
 normal leverage; finite arbitrary-vector aggregate model.
-Split from: P4 model/criterion target.
+Split from: the P4 structural-family target, which remains OPEN.
 Split into: none.
 
 ## Statement
@@ -103,8 +103,10 @@ BJ/mirror weighted-triangle cases. Independently differentiated full
 sequential projection agrees with the constant terminal block on a common
 normal vector, including the generalized Rayleigh quotient and zero
 earlier-degree responses. [Receipt](../evidence/p4-terminal-check.json)
-pins both source files. This is developer execution; no independent
-rerun, spectral maximum computation or cross-family gate pass is claimed.
+pins both source files. These were developer executions. Independent
+reruns are recorded in [check-math-reruns.json](../evidence/check-math-reruns.json)
+and [audit 01](../audit-01.md#independent-reruns-actually-executed). No
+spectral maximum computation or cross-family gate pass is claimed.
 
 ## Sources
 
@@ -157,7 +159,7 @@ length and contributes no additional w_i. This completes the proof.
 This is a PROVED corollary of the displayed normal quotient, consolidated
 with PD-T324's common-normal-source construction. It has no new theorem
 ID or historical-mechanism claim. The same statement holds in the compact
-L2 model of [P4-03](p4-continuous-capacity.md), without requiring atomlessness,
+L2 model of [PD-T?lanczos-nonproduct-codex-P4-03](p4-continuous-capacity.md), without requiring atomlessness,
 provided the polynomial normal space is nonzero.
 
 Fix s>=1 and let T={N_(s-1),...,N_s-1} be exactly the s+1 final-degree
@@ -223,7 +225,7 @@ M>N_s and U(s) are separate admission requirements.
 
 ## Open items
 
-Complete cross-family tests and independent check. Tighter row spectral
+Complete cross-family tests. Tighter row spectral
 bounds and atomless model are proved separately in
 [p4-continuous-capacity.md](p4-continuous-capacity.md); moment transfer in
 [p4-moment-capacity-transfer.md](p4-moment-capacity-transfer.md).

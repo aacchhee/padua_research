@@ -4,13 +4,13 @@ ID kind: PD-T.
 Aliases: Chebyshev impulse upper; top-x normal witness; unsaturated Padua
 aggregate drift bound; polynomial BJ/best ratio.
 Split from: prescribed P5 capacity target.
-Split into: admission/cubature hypotheses in p5-01; arbitrary-rule upper
+Split into: admission/cubature hypotheses in PD-T?lanczos-nonproduct-codex-p5-01; arbitrary-rule upper
 target remains separate and OPEN in the candidate record.
 
 ## Statement
 
 For every pair of integers m>=2 and 1<=s<m, take the exact positive Padua
-probability measure ν_m and weighted Euclidean representation of p5-01.
+probability measure ν_m and weighted Euclidean representation of PD-T?lanczos-nonproduct-codex-p5-01.
 Order (a,b) by increasing a+b and then increasing b. For either fixed rule
 
 - BJ: choose X from (a-1,0) for b=0; choose Y from (a,b-1) for b>0;
@@ -52,7 +52,7 @@ capacities or differentiate through adaptive switching.
 ## Definitions
 
 Weighted polynomial vectors, X,Y,N_s and q_ab=p_a(x)p_b(y) are as in
-p5-01. All sources are arbitrary represented vectors in R^M, with no
+PD-T?lanczos-nonproduct-codex-p5-01. All sources are arbitrary represented vectors in R^M, with no
 polynomial restriction. All nonconstant source positions through s are
 included. Matrix output uses the spectral norm. The two rules use their
 own exact σ_h, in the identical relative-raw-product convention.
@@ -80,7 +80,7 @@ are the present application. No historical novelty assertion.
 
 ## Depends on
 
-p5-01, at its exact unsaturated cubature and orthonormal-basis scope.
+PD-T?lanczos-nonproduct-codex-p5-01, at its exact unsaturated cubature and orthonormal-basis scope.
 The normalized weighted quotient calculation is rederived below rather
 than applying uniform monic PD-T136 outside its hypotheses. PD-T324 fixes
 the comparison model only; its exponential result is not a proof premise.

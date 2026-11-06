@@ -101,3 +101,21 @@ the coordinator for the prescribed Astra-ultra allocation before pursuit.
 
 At this file's initial boundary: candidate retained for admission;
 capacity/radius theorem OPEN; no scientific code run.
+
+## Predecessor completeness addendum — 2026-11-06 (audit MINOR 3)
+
+This is a directed record correction, not a new gate or a claim that these
+reads preceded the original proposal. Read the full PD-N012 record, full
+PD-T039 record (including part 2 and its proof), full IDEA-415 candidate
+record and its dated dispositions, and PD-T324's full theory record.
+
+| Additional predecessor | Comparison and retained distinction |
+|---|---|
+| [PD-N012(a)](../../tracks/bivariate-lanczos/theory/support-shape-does-not-classify-loss-regime.md) | Product support with non-product weights is already represented. Its finite MEASURED loss counterexample does not prove this all-degree normal-capacity separation. |
+| [IDEA-415](../padua-lanczos-frontier-20261105/ideas-l1-l2.md) and [PD-T324](../padua-lanczos-frontier-20261105/theory/l1-01-sheared-U-aggregate-separation.md) | The discrete highest-U sign channel is a predecessor; P3's perturbing mode is the tensor square of PD-T324's own normal witness. P3 does not establish the deferred scalar-operation activation. |
+| [PD-T039 part 2](../../tracks/bivariate-lanczos/theory/moment-matching-product-factorization-checkerboards.md) | The parity sign-indicator cancellation is an established mechanism. Here mu_(n,eta)=(1-|eta|) SH_n+2|eta| times its restriction to the parity a_k*a_l=sign(eta); the positive full-grid mixture still needs its non-affine-product admission and actual normal-capacity proof. |
+
+The verdict remains a variant of IDEA-137/PD-T039 and IDEA-414/PD-T324.
+The permanent timing qualifier and accepted decision are recorded in the
+[P3 IDEA](ideas/P3.md); the single canonical disclosure remains in
+[LOG](LOG.md#canonical-protocol-disclosure--p3-gate-timing).

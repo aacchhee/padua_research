@@ -3,7 +3,7 @@
 ID kind: PD-T.
 Aliases: positive Chebyshev Padua measure; non-affine-product hexagonal
 support; sharp cubature cutoff; truncated checkerboard admission.
-Split from: P5 aggregate-capacity target (the capacity result is p5-02).
+Split from: P5 aggregate-capacity target (the capacity result is PD-T?lanczos-nonproduct-codex-p5-02).
 Split into: none.
 
 ## Statement
@@ -176,7 +176,7 @@ no top-stage s=m capacity claim, and no IEEE rounding statement.
 ## Open items
 
 Independent mathematical check, coordinated separately. Aggregate capacity
-is the separate p5-02 theorem. Alternating/pivot capacity upper bounds are
+is the separate PD-T?lanczos-nonproduct-codex-p5-02 theorem. Alternating/pivot capacity upper bounds are
 not supplied by this admission lemma.
 
 ## History

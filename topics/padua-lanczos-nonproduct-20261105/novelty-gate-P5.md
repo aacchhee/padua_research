@@ -76,3 +76,27 @@ Actual claims and retained alternatives are to be preregistered in ideas/P5.
 
 No derivation, code execution, new candidate formula or scientific result
 preceded this file's creation. The gate clears prospective development only.
+
+## 2026-11-06 audit-response predecessor addendum
+
+MINOR 4 identified two omitted predecessors. The response worker read both
+complete durable records now; this is a retrospective coverage correction,
+not a claim that they were read prospectively:
+
+- [PD-T040](../../tracks/bivariate-lanczos/theory/checkerboard-and-near-product-measurements.md),
+  especially (a), measures Chebyshev–Lobatto checkerboards at m=30 with flat
+  floating-point loss through completion. It also contrasts clustered
+  product-type coefficient-channel loss. These are floating-point loss
+  observations, not an all-source normalized spectral span-capacity bound
+  for every unsaturated Padua order/stage. P5 makes no historical novelty
+  claim for the Padua family or its favorable measured behavior.
+- [PD-N063](../../tracks/bivariate-lanczos/theory/drift-codex-e5-32-failed-negative-witness-paths.md)
+  proves three scoped failures of Padua positivity-radius negative-witness
+  paths: equal phase, the two positive square edges, and eventual negativity
+  along a fixed nonzero A/n^3 common-angle path. The last failure permits
+  finite-n negative points. Its named obstruction polynomial and radius
+  question differ from P5's arbitrary-source normal quotient. None of those
+  failed witness paths rejects the P5 capacity argument.
+
+The verdict remains a variant with the stated output/domain distinction;
+no new mechanism, proof or priority assertion is added.

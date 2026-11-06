@@ -3,8 +3,9 @@
 ID kind: PD-T.
 Aliases: continuous L2 source model; localized-source norm; pointwise row
 spectral response; finite-rank normal projection removal.
-Split from: P4 structural criterion and finite/continuous model distinction.
-Split into: moment-preserving transfer in p4-moment-capacity-transfer.md.
+Split from: the P4 structural-family target, which remains OPEN.
+Split into: none. Moment/source transfer is a separate supporting result
+split from that same target and depends on this model identity.
 
 ## Statement
 
@@ -80,7 +81,7 @@ Overall status: PROVED (analytic fixed-degree model theorem).
 | Hilbert-space normal derivative | PROVED | Finite projection/graph proof below |
 | Exact atomless formula (1), finite bounds (2) | PROVED | Localization and norm proof below |
 
-Candidate disposition: retained P4-02 model variant. The structural
+Candidate disposition: retained IDEA?lanczos-nonproduct-codex-P4-02 model variant. The structural
 all-degree family criterion remains OPEN pending the prescribed tests.
 
 ## Depends on

@@ -65,6 +65,13 @@ below remain subject to the coordinator's final allocation.
 - Named gap: full simplex chapter acquisition and reading remain deferred.
   The 2001 first edition and 2014 second edition must not be conflated.
 
+2026-11-06 cross-reference: the existing [LIT-292 primary-reading addendum](../../padua-literature-20261103/addenda/dunkl-xu-2014.addendum.md)
+records Claude's reading of selected Chapter 3 sections from an AC-supplied
+PDF. That does not supply a Chapter 5 read; AC may be able to supply that
+chapter by the same route if a future concrete obligation warrants it.
+The Xu 2015 provisional source record above is a separate article, not a
+duplicate of that addendum.
+
 ## GriffithsSpano2013 — Orthogonal polynomial kernels and canonical correlations for Dirichlet measures
 
 - Authors: Robert C. Griffiths and Dario Spanò; Bernoulli 19(2) (2013),

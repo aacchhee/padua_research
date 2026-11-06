@@ -9,14 +9,16 @@ head `cafb74ab6f7738c8af83d0cd0f518b81af16f253`; base main
 
 ## Main result and its limit
 
-The requested existence goal is proved for the authorized weight-perturbation
-route. There is an explicit family of positive measures that are **not an
-affine image of any product measure**, on which BJ has an exponential
-first-order aggregate span-capacity lower bound and mirror has a polynomial
-full-source upper bound. One fixed nonzero perturbation parameter works at
-every degree. The support stays the sheared tensor grid; the nonmultiplicative
-weight mode changes with degree. This does not isolate a nonlinear geometric
-effect or prove robustness under one fixed smooth density.
+The accepted weaker variant of the formal goal is an all-degree separation
+on **non-affine-product measures moment-equivalent to SH_n through degree
+2n+1, with an n-dependent weight mode**. The degree-n Gram matrices,
+monic basis, creators, pivots, source scales and frozen-response map are
+eta-independent; only the ambient normal projector changes. BJ retains an
+exponential first-order aggregate span-capacity lower bound and mirror a
+polynomial full-source upper bound. One fixed nonzero eta works at every
+degree, but the weight mode changes with n on the same sheared tensor grid.
+An n-independent perturbation remains an OPEN, deferred follow-up target,
+not a precondition for this PR; see the [AC scope decision](LOG.md#2026-11-06--claude-audit-01).
 
 Let m=n+2, theta_k=k*pi/(m+1), s_k=cos(theta_k), and
 v_k=2*sin(theta_k)^2/(m+1). At physical nodes
@@ -30,17 +32,18 @@ use weights
 The measures are positive, normalized and genuinely non-product; a nonzero
 weight minor and convex-hull edge rigidity exclude all alternate affine
 product axes. The perturbation is invisible to polynomial moments through
-degree2n+1. Crucially, the top-U witness remains unit and normal to the
+degree 2n+1. Crucially, the top-U witness remains unit and normal to the
 *actual* reweighted polynomial space. This proves, for every n>=2,
 
     kappa_BJ >= sqrt(2*(4^(n+1)-1)/3),
     0<kappa_mirror <= 2sqrt(6)(n+1)^2(N_n-1).
 
-The ratio lower is exponential up to a polynomial factor; it need not exceed
-one at small degrees. A sufficient parameter-radius certificate is
+The ratio lower is exponential up to a polynomial factor and first exceeds
+one at n=18. It proves no BJ>mirror ordering at the N4 degrees 2–10. A sufficient parameter-radius certificate is
 eta_0(n)=1/2 for all n>=2, including each requested n=2,...,10. The theorem
-actually covers the larger open interval0<|eta|<1. This is not a maximal
-radius or a claim of strict small-degree ordering.
+actually certifies every sufficient radius eta_0<1 on 0<|eta|<1;
+|eta|=1 gives zero weights and leaves the admitted family. This is not a
+maximal-radius claim.
 
 Proofs: [admission](theory/p3-01-high-mode-weight-admission.md),
 [moments and normal witness](theory/p3-02-exact-moments-creators.md),
@@ -125,8 +128,7 @@ Griffiths–Spanò's fulltext was acquired but only its introduction read;
 no theorem is imported. No third-party PDF or extract is committed.
 
 The [disk admission](theory/p2-01-family-admission.md) distinguishes continuous
-radial measures from the324-point rational D36x9 grid. The latter has only
-D4 symmetry and no asserted cubature relation to the continuous disk.
+radial measures from the324-point rational D36x9 grid. The latter is D4-invariant, not rotation-invariant, and no asserted cubature relation to the continuous disk.
 [Whole-algorithm covariance](theory/p2-02-rotation-covariance.md) is proved,
 but coordinate swapping mixes fixed Gram–Schmidt columns already at degree2.
 It therefore does not identify fixed-order BJ and mirror. The
@@ -137,8 +139,9 @@ A separately admitted [D65x9 variant](theory/p2-04-low-denominator-rings.md)
 uses36 integer-circle directions with hypotenuse65 and nine radii. Its
 coordinate denominator is585 instead of49,725; it is a distinct measure,
 not a replacement identity for D36x9. Its exact2–8 pilot matches both
-arithmetic paths. The change was motivated by arithmetic cost before
-observing a high-degree capacity result; N2 thresholds are unchanged.
+arithmetic paths. The change was motivated by arithmetic cost after the D36 BJ/mirror/pivot
+degree16 producers had completed (22:33–22:35 UTC); it was admitted before
+its own capacity probes. N2 thresholds are unchanged.
 
 ## Exact scans and verification
 
@@ -160,9 +163,9 @@ complete scan. H24_222 uses normalized rational weights proportional to
 | Positive Padua | analytic all-degree bounds; algebraic m2–5 checks | UNRUN |
 
 T24 slope intervals on8–12 and12–16 are approximately
-[.1374,1.8024] and[-.2165,1.8228]; H24 intervals are
-[.0553,1.5395] and[-.2202,1.6512]. D36x9 intervals are
-[-.5078,1.0611] and[-.8874,1.1625]. Exact outward rational receipts are
+[.1373,1.8024] and[-.2165,1.8229]; H24 intervals are
+[.0553,1.5396] and[-.2203,1.6513]. D36x9 intervals are
+[-.5079,1.0611] and[-.8874,1.1625]. These decimal displays round outward. Exact outward rational receipts are
 authoritative. Independent signed-OLS/corner calculations agree. These
 screens are inconclusive because of interval uncertainty, not because a
 true rate was computed and rejected.
@@ -172,14 +175,17 @@ the P3/P4/P5 proofs in its recorded scope and actually reruns exact checks.
 [Distinct scan review](independent-checks-scans.md) reproduces the60 Hahn
 and28 disk row pairs, independently reconstructs12 small cases with Fraction
 arithmetic, verifies all three N2 outcomes and exercises malformed controls.
-The separately launched disk16 alternating/pivot replay also matches all30
+The separately launched disk16 alternating/pivot repeatability rerun uses
+the same reflection source and binary, rather than a distinct implementation.
+It also matches all 30
 rows against both producer and primary checker, including Gram counts and
 all reflection guards. Disk16 BJ/mirror were reviewed from completed primary
 artifacts; they were not freshly rerun by this supplementary reviewer. The
-reviewer's interrupted collector is retained separately: its saved pivot
-exit/timing and unsaved alternating metadata are distinguished from validated
-complete scientific artifacts. These checks supplement the required
-subsequent Claude substantive audit.
+reviewer's collector receipt remains INCOMPLETE: its saved pivot
+exit/timing and unsaved alternating exit code/timing are distinguished from validated
+complete scientific artifacts. These supplementary checks precede the completed [Claude substantive audit](audit-01.md),
+which accepted every proof in scope and returned three MAJOR record/wording
+findings. Its fresh reruns and omitted coverage are recorded separately.
 The mathematical review also accepts the P1/P2 admission and covariance
 proofs in its dated additions. Registry readiness remains outside these supplementary review scopes.
 
@@ -206,17 +212,19 @@ for every degree/rule row; standalone exact OLS replay needs only those tables.
 Raw rational arrays remain local working artifacts. The final inventory and
 [COLD_STORAGE.md](COLD_STORAGE.md) record identity, availability and regeneration;
 external archival delivery is pending. The [aggregate evidence-size observation](LOG.md#canonical-storage-budget-observation)
-is a separate audit issue.
+is resolved for this PR by AC's [separate-cleanup decision](LOG.md#2026-11-06--claude-audit-01); no cleanup is taken.
 
 ## Remaining scope and paper consequence
 
 For the bivariate Lanczos/V+A note, the all-degree separation theorem can
-now say **non-affine-product positive measures**, with the explicit
-n-dependent rank-two weight family and the original worst-case aggregate
-first-order model. The Padua theorem demonstrates that non-productness alone
-does not force exponential BJ capacity. The statement must retain the
-degree-dependent weight frequency, exact projection and free-source
-limitations; it does not become an IEEE or geometry-only instability theorem.
+state **non-affine-product measures moment-equivalent to SH_n through degree
+2n+1, with an n-dependent weight mode**. The degree-n Gram matrices, monic
+basis, creators, pivots, source scales and frozen-response map are
+eta-independent; only the ambient normal projector changes. This is the
+weaker variant accepted by AC. The Padua theorem demonstrates that
+non-productness alone does not force exponential BJ capacity. The statement
+retains exact projection and free-source limitations. The deferred
+n-independent perturbation target is not a precondition for this PR.
 
 OPEN work includes continuous triangle/disk rates, a useful cross-family
 growth criterion, fixed smooth-density or nonlinear-node robustness, sharp
@@ -226,6 +234,7 @@ than being replaced by supporting lemmas. Candidate dispositions are retained
 in `ideas/` and `attempts/`; actual round budgets are in [rounds](rounds.md).
 
 The [canonical P3 gate-timing disclosure](LOG.md#canonical-protocol-disclosure--p3-gate-timing)
-requires a separate protocol disposition; mathematical acceptance does not
-waive it. Final IDs, shared registry application, the Claude audit and
-readiness review remain later steps. Only AC merges.
+records AC's accepted disposition and historical precision limits. The
+[response to audit01](response-01.md) lists each correction; the BJ-only P1
+chain qualifier receives a focused diff re-audit. Final IDs, shared registry
+application and readiness review remain later steps. Only AC merges.

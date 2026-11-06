@@ -22,6 +22,11 @@
 ## Runs needed
 
 - Development runs are complete. The next independent substantive audit is specified in handoff02. Unrun algebraic bulk scans and unresolved rates are listed in the [report](report.md); they are not premises of the analytic proofs. External archival delivery remains pending.
+- Optional, unrun: exact positive-Padua scan at degrees 2–16, all four rules,
+  for the OPEN sharp-exponent question. A follow-up must select unsaturated
+  Padua orders m>s, use exact algebraic inputs and full-source endpoints,
+  and freeze the run specification before execution. No P3 scan is required.
+  This is not a precondition for this PR.
 
 ## 2026-11-05 — continuation setup — Codex, requested gpt-6-astra high
 
@@ -59,16 +64,38 @@
 
 ### Canonical protocol disclosure — P3 gate timing
 
-The P3 worker sent the coordinator a precise high-mode nonmultiplicative
-weight candidate and a moment-cancellation observation before finishing all
-required shortlisted and full-table reads. No new experiment or file had yet
-been written. The coordinator stopped further derivation/testing until those
-reads were completed and required preservation of the chronology. Later
-reading cannot make that proposal prospective. The older campaign's AC
-acceptance does not cover this new deviation; retain it for the independent
-audit and AC's disposition. Other records refer to this paragraph rather than
-repeating the process limitation. This does not establish or refute the
-candidate's mathematics.
+The proposal was sent during the initial P3 launch on 2026-11-05, after
+N0's launch checkpoint `ddb6c2f` (22:06:45 UTC) and before this disclosure
+was first committed in `2ebea9a` (22:08:34 UTC). An exact message timestamp
+is not preserved. It proposed a high-mode nonmultiplicative reweighting of
+SH_n and observed its low-moment cancellation, aiming to retain the
+all-degree separation with a uniform nonzero parameter. No experiment or
+P3 file had yet been written.
+
+Required shortlisted-entry/theory reads and complete obstruction/disposition
+table reads were still incomplete. The gate record later reports recovering
+ranges omitted by truncated initial previews. The exact per-entry list of
+reads still outstanding at proposal time is not preserved; no worker
+transcript is available, and a retrospective exact list cannot be supplied.
+The coordinator stopped further derivation/testing until completion of those
+reads and required preservation of this chronology.
+
+The retained candidate uses the same high-mode rank-two mechanism:
+`w_kl=v_k v_l[1+eta*(-1)^(k+l)]` on SH_n, with admitted range
+`n>=2, 0<|eta|<1` and the same separation/radius target. No different initial
+candidate is recorded. Identity of every formula/range detail with the
+unpreserved proposal message cannot be independently established. The gate
+and admission first entered Git together in `6988024` (22:15:43 UTC), so
+"gate completed before admission" rests on worker self-report, not an
+ordered pair of Git snapshots. The moment-cancellation observation predates
+the completed gate.
+
+Later reading cannot make the proposal prospective. **AC decision
+2026-11-06: accepted**, with audit-01 A2's qualifier: disclosed, not waived,
+not cured; mathematical acceptance is unaffected. The prior campaign's
+acceptance did not cover this deviation; this topic's Q1 decision does.
+Other records link here rather than repeat the chronology. The remaining
+historical precision limits above are explicit, not reconstructed facts.
 
 ## 2026-11-05 — P1/P6 round 1 checkpoint
 
@@ -91,10 +118,12 @@ candidate's mathematics.
 - Completed [P2 prospective gate](novelty-gate-P2.md), then proved
   [continuous radial disk and D36x9 admission](theory/p2-01-family-admission.md).
   The finite 324-point rational ring grid is injective through17, has36
-  convex-hull vertices and only D4 symmetry. It is a distinct finite measure,
+  convex-hull vertices and D4 invariance without full rotation invariance. It is a distinct finite measure,
   with no asserted cubature relation to the continuous radial disk.
-- P2's preregistered cheapest exact moment/creator reconstruction through8
-  executed successfully in0.154s before the coordinator separated admission
+- P2's tiny exact moment/creator reconstruction through 8
+  executed successfully in 0.154s; its fuller IDEA record was written after
+  execution, as [P2 chronology](attempts/P2.md#execution-timing-and-parked-probe)
+  records. This was before the coordinator separated admission
   and structural interpretation into round boundaries. Code and compact
   evidence are preserved; interpretation is round2, not an N2 rate claim.
 - No external fulltext or published recurrence theorem was used for these
@@ -136,7 +165,7 @@ candidate's mathematics.
   redundant rounds; P4 owns the common criterion route.
 - P3 proved [exact moments/creators and actual normal witness](theory/p3-02-exact-moments-creators.md),
   then the [all-degree separation and uniform sufficient eta range](theory/p3-03-uniform-capacity-radius.md).
-  For every n>=2 and0<|eta|<1, original PD-T324 BJ and mirror bounds survive
+  For every n>=2 and 0<|eta|<1, original PD-T324 BJ and mirror bounds survive
   unchanged. In particular eta_0(n)=1/2 passes N4 analytically. This is the
   authorized nonmultiplicative-weight route, with n-dependent frequency;
   no fixed-density/node-map claim, empirical N2 pass, maximal radius or
@@ -180,7 +209,7 @@ candidate's mathematics.
   minutes: the complete Xu preprint is read, other fulltext/access limits
   are in the [source checkpoint](theory/p1-literature-checkpoint.md). The
   triangle rate target stays OPEN; no theorem is imported from an unread
-  source. P1 pauses after three productive rounds.
+  source. P1 pauses after three recorded rounds.
 - P4 round3 consolidated a routine attained terminal-degree block norm
   into its existing weighted quotient record, without a new ID. It supplies
   a restricted capacity, hence an all-source lower only. Twenty-two exact
@@ -390,3 +419,46 @@ recorded by the final inventory.
     - A P3 scan is not required.
     - An exact Padua scan (degrees 2–16, four rules) goes under "Runs needed" as optional evidence for the OPEN sharp-exponent question.
   - These are wording and record additions, so they need no further audit round. Handoff 03 is superseded by [handoff 04](handoffs/04-response.md).
+
+## 2026-11-06 — Codex response setup and scope clarification
+
+- Coordinator/developer: Codex, requested gpt-6-astra high; serving metadata
+  not independently exposed. Rules read at local `b5d2d5d`, then current
+  input `1f809519b353512a447661b35df9e92ad0ec6e06`; rule files are unchanged.
+  Fetched main `be9a8318150204711d5446d2ea26284cf1ed0819` and the remote
+  topic, then fast-forwarded the clean topic to the latter. Main is already
+  an ancestor. Open handoff04 governs this response.
+- The reading allowing an n-dependent weight mode was the Codex coordinator's
+  decision, as recorded in attempts/P3, not AC's original scope instruction.
+  AC's [Q2 decision](#2026-11-06--claude-audit-01) now accepts the result as
+  the formal goal's weaker variant: non-affine-product measures
+  moment-equivalent to SH_n through degree 2n+1, with an n-dependent weight
+  mode. The n-independent target is OPEN/deferred to a follow-up topic.
+- A3 is delegated as a mathematical statement correction (Sol high), with
+  mechanical record responses on disjoint files (Sol medium). No accepted
+  theorem proof, finite outcome or frozen receipt is reopened. These are
+  responses to findings, not generation of a new mechanism; no new novelty
+  gate or scan is required. Omitted predecessor records are read before
+  adding their retrospective cross-references.
+
+### Canonical N2 chronology correction — P3/P5 analytic proofs
+
+This is the dated 2026-11-06 retrospective record of the coordinator's
+2026-11-05 decision to proceed directly to the P3/P5 analytic proofs without
+the handoff01 N2 screens or the requested P6 bulk algebraic scans. The
+proofs have no screen premise, but the omitted screen-before-proof step was
+a protocol deviation; it was not prospectively waived. AC's [Q3 decision](#2026-11-06--claude-audit-01)
+accepts that deviation and requires no new scans for this PR. No P3 scan
+is required. The optional Padua scan below concerns the OPEN sharp-exponent
+question and is not an acceptance condition.
+
+### Canonical frozen-receipt provenance qualification
+
+The H24/D36 full16 and benchmark8 receipts record head `6988024`, while
+their pinned harness `cbb3314d` is the p6_scan.py revision first committed
+in `dbe5c81`: those executions used a dirty working tree, and the source
+is recoverable by its pinned hash/later commit. N0's original harness
+`18981aa5` is absent from committed history; its exact original harness
+cannot be recovered from Git. Frozen receipts remain byte-unchanged. These
+provenance limits do not alter the scientific comparisons; [audit01](audit-01.md)
+records its fresh reproductions and their scope.

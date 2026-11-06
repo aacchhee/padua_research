@@ -1,4 +1,4 @@
-# PD-T?lanczos-nonproduct-codex-P3-03 — uniform high-mode nonproduct separation
+# PD-T?lanczos-nonproduct-codex-P3-03 — non-affine-product measures moment-equivalent to SH_n through degree 2n+1, with an n-dependent weight mode
 
 ID kind: PD-T.
 Aliases: unchanged SH constants on rank-two weights; uniform eta certificate.
@@ -61,13 +61,13 @@ f when taking epsilon to zero. No scalar-operation or IEEE model is used.
 
 ## Status by part
 
-Overall status: PROVED (analytic; independent audit pending).
+Overall status: PROVED (analytic; accepted at stated scope in [audit 01](../audit-01.md)).
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
 | Normalized source/quotient application | PROVED | Exact differentiated recurrence below |
 | BJ normal lower and all-source mirror upper | PROVED | Preserved unit normal witness and explicit U solutions |
-| Degree-uniform sufficient eta range and n2–10 certificate | PROVED | Bounds hold throughout 0<|eta|<1 |
+| Degree-uniform sufficient eta range and n 2–10 certificate | PROVED | Bounds hold throughout 0<|eta|<1 |
 
 Candidate disposition: retained successful weight variant. N2 measured
 growth screen remains UNRUN/INCONCLUSIVE and is not promoted by this proof.
@@ -86,8 +86,9 @@ of projectors, or generic equality of finite capacities, is assumed.
 
 Written analytic proof only. No new numerical, symbolic or exact scan is a
 premise; no N2 execution is reported. Distinct independent mathematical
-review of this proof and its dependencies is requested. Supplementary
-finite algebraic checks may be added by their actual producer/checker.
+review of this proof and its dependencies was accepted in
+[audit 01](../audit-01.md), which also records the auditor's separate
+finite algebraic checks and their exact scope.
 
 ## Sources
 
@@ -143,7 +144,7 @@ f_(n,0)=e/sqrt(2) and all other sources zero. The source scale at this
 position is 1/sqrt(2), so the source budget is one. All responses before
 degree n vanish. The first degree-n column has V_(n,0)=2f_(n,0).
 At each next degree-n BJ column (r,j)=(n-j,j), the only earlier term of
-degree n in its Y creator has coefficient1 at (r+1,j-1); every other
+degree n in its Y creator has coefficient 1 at (r+1,j-1); every other
 term and the parent have vanishing response. Equation (4) gives
 
     V_(n-j,j)=-2 V_(n-j+1,j-1)=2*(-2)^j*f_(n,0).            (6)
@@ -202,7 +203,10 @@ lower by the positive mirror upper proves (3).
 ### Uniform radius certificate and its meaning
 
 None of these estimates loses a factor as eta varies inside 0<|eta|<1.
-Choose eta_0(n)=1/2 for a closed sufficient range 0<|eta|<=eta_0(n).
+Every choice 0<eta_0<1 certifies the closed sufficient range
+0<|eta|<=eta_0 for all n>=2; eta_0(n)=1/2 is one such choice.
+At |eta|=1 some weights vanish, leaving the admitted positive full-support
+family. No endpoint claim is made.
 In particular the requested finite table is an analytic certificate:
 
 | n | Certified sufficient eta_0(n) |
@@ -220,28 +224,39 @@ In particular the requested finite table is an analytic certificate:
 This proves the bounded-decay sufficient-radius property with c=1/2,k=0
 for preservation of the all-degree inequalities (1)–(3). It is neither
 a numerical growth scan nor a computation of a maximal radius. The
-conservative ratio lower in (3) need not exceed one for a small listed n;
-the conclusion is an all-degree exponential-versus-polynomial law and
-eventual capacity ordering. No necessity or upper-radius theorem is
+conservative ratio lower in (3) is below one for 2<=n<=17 and exceeds
+one for every n>=18. Thus the n=2–10 certificate preserves (1)–(3)
+without proving BJ>mirror there; strict capacity ordering is certified
+for n>=18 by this bound. No necessity or upper-radius theorem is
 claimed by this table.
 
 ## Scope
 
-One may fix eta!=0 once for the entire sequence of degrees; the weights'
-mode U_(n+1)(s)U_(n+1)(t) changes with n. This proves the authorized
-nonmultiplicative-weight version of P3, not robustness under one fixed
-smooth density or nonlinear node geometry. It is a worst-case aggregate
-first-order statement with degree-dependent sources. It supplies no
-finite-epsilon uniform remainder, IEEE/scalar realization, every-error
-lower bound, closure theorem, or comparison with every possible rule.
-The two finite capacities are not asserted equal to those at eta=0.
+The result concerns non-affine-product measures moment-equivalent to SH_n
+through degree 2n+1, with an n-dependent weight mode. At fixed n,
+mu_(n,eta) agrees with SH_n on all moments through degree 2n+1.
+Consequently the Gram matrices, monic polynomial basis, creators, pivots,
+source scales and frozen-response map f->V are eta-independent; only the
+ambient normal projector changes in the capacity formula. Represented
+weighted basis vectors themselves vary with eta. The two finite capacities
+are not asserted equal to those at eta=0.
+
+One may fix eta!=0 once for all degrees, but the weight mode
+U_(n+1)(s)U_(n+1)(t) changes with n. This is the weaker variant accepted
+in [AC's Q2 decision](../LOG.md#2026-11-06--claude-audit-01).
+It does not prove robustness under one fixed smooth density or nonlinear
+node geometry. It is a worst-case aggregate first-order statement with
+degree-dependent sources. It supplies no finite-epsilon uniform remainder,
+IEEE/scalar realization, every-error lower bound, closure theorem, or
+comparison with every possible rule.
 
 ## Open items
 
-Independent mathematical check and later required Claude audit; N2 exact
-growth screen if required separately; optional fixed-density or nonlinear
-node-map directions. The original successful all-degree weight/radius
-target is proved at this scope rather than substituted for those tasks.
+The [completed Claude audit](../audit-01.md#accepted-claims-audit-scope)
+accepts P3-01/02/03 at their stated scope. The n-independent perturbation
+remains OPEN and [deferred to a follow-up topic](../ideas/P3.md),
+not a precondition for this PR. No P3 scan is required; see
+[AC's Q3 decision](../LOG.md#2026-11-06--claude-audit-01).
 
 ## History
 
@@ -249,3 +264,8 @@ target is proved at this scope rather than substituted for those tasks.
   ed5515ed84e0e7b12163175dce9f22a859c89c99. Round2 after pushed
   checkpoint 6988024. Routine PD-T324 extension required no hard-step
   escalation. Gate followed initial proposal; [canonical protocol disclosure](../LOG.md#canonical-protocol-disclosure--p3-gate-timing).
+
+- 2026-11-06: audit-response wording for A1 and MINOR 1/18; title and Scope
+  carry the moment-equivalence limitation, and the radius discussion states
+  the threshold and open endpoints. The theorem Statement and proof arguments
+  are unchanged; the certificate discussion adds the audited clarifications.

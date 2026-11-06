@@ -34,6 +34,17 @@ findings, among them that the P3 family is moment-equivalent to SH_n through deg
   [Weighted model](../topics/padua-lanczos-nonproduct-20261105/theory/p4-weighted-normal-quotient.md),
   [atomless model](../topics/padua-lanczos-nonproduct-20261105/theory/p4-continuous-capacity.md),
   [transfer](../topics/padua-lanczos-nonproduct-20261105/theory/p4-moment-capacity-transfer.md).
+- **PROVED, covariance obstruction:** fixed covariance and distinct physical
+  principal-axis angles do not bound absolute degree-two aggregate capacity
+  on the specified thin-annulus family. This does not refute an all-degree
+  BJ/best ratio criterion.
+  [Scoped PD-N](../topics/padua-lanczos-nonproduct-20261105/theory/p4-covariance-capacity-obstruction.md).
+- **MEASURED, P1/P2 probes:** exact low-degree triangle and radial-disk
+  moments/bases/creators through8; the P1 final-source central-binomial chain
+  is checked under BJ only. Restricted chains and sampled spectra do not
+  close an all-source capacity recursion or prove a rate.
+  [Triangle probe](../topics/padua-lanczos-nonproduct-20261105/theory/p1-continuous-creator-probe.md),
+  [disk probe](../topics/padua-lanczos-nonproduct-20261105/theory/p2-03-finite-recurrence-probe.md).
 - **MEASURED:**36 exact pilot rows on three finite measures, four rules and
   degrees2–4 agree between two arithmetic implementations. This is one
   worker's execution, with distinct-agent checking separate.
@@ -43,12 +54,16 @@ findings, among them that the P3 family is moment-equivalent to SH_n through deg
   degree12 cost probe.
   [Screens](../topics/padua-lanczos-nonproduct-20261105/theory/p6-n2-screen.md).
 
-- **PROVED, all-degree separation:** an explicit n-dependent rank-two
-  positive reweighting of SH is not affine-product and retains the original
+- **PROVED, all-degree separation on non-affine-product measures
+  moment-equivalent to SH_n through degree 2n+1, with an n-dependent weight
+  mode:** an explicit positive rank-two reweighting retains the original
   exponential BJ lower and polynomial full-source mirror upper for every
-  n>=2 and0<|eta|<1. Fixed eta is allowed; eta_0(n)=1/2 is a uniform sufficient
-  certificate. The weight frequency changes with n, so this is not a fixed
-  smooth-density/node-geometry theorem.
+  n>=2 and 0<|eta|<1. Gram matrices, monic basis, creators, pivots, source
+  scales and frozen response are eta-independent; only the ambient normal
+  projector changes. Fixed eta is allowed; every eta_0<1 is sufficient,
+  including eta_0=1/2. The ratio lower first exceeds1 at n=18. AC accepts
+  this weaker variant; the n-independent perturbation is OPEN/deferred to a
+  follow-up topic and is not a precondition for this PR.
   [Moment/witness proof](../topics/padua-lanczos-nonproduct-20261105/theory/p3-02-exact-moments-creators.md),
   [capacity/radius proof](../topics/padua-lanczos-nonproduct-20261105/theory/p3-03-uniform-capacity-radius.md).
 - **PROVED, Padua contrast:** for every m>s>=1, positive Chebyshev Padua
@@ -65,9 +80,10 @@ accept the P3/P4/P5 proofs and terminal-block corollary, and reproduce the
 completed Hahn16/disk8 finite evidence and separately launched disk16
 alternating/pivot replay without unresolved findings. Compact endpoint tables
 and N2 screens have distinct independent validation. The
-required Claude substantive audit remains pending; final scan-review coverage
-is recorded in the dated supplementary review.
+completed Claude substantive audit accepted every proof in scope. The
+[response](../topics/padua-lanczos-nonproduct-20261105/response-01.md) addresses its findings and AC's Q1–Q3 decisions; the material BJ chain qualifier receives focused diff
+re-audit before preparation. Final scan-review coverage is in the dated records.
 
 ## Next step
 
-`Claude (Opus 5.5 xhigh): Continue codex/padua-lanczos-nonproduct-20261105.`
+`Claude (Opus 5.5 high): Continue codex/padua-lanczos-nonproduct-20261105.`

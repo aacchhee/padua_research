@@ -3,8 +3,8 @@
 ID kind: PD-N.
 Aliases: thin-annulus fixed-covariance obstruction; distinct fixed principal
 axes; degree2 last-pivot blowup; second-moment capacity limitation.
-Split from: P4-04's covariance-only finite-degree control candidate.
-Split into: none. Original P4-01's all-degree BJ/best ratio iff remains OPEN.
+Split from: IDEA?lanczos-nonproduct-codex-P4-04's covariance-only finite-degree control candidate.
+Split into: none. Original IDEA?lanczos-nonproduct-codex-P4-01's all-degree BJ/best ratio iff remains OPEN.
 
 ## Statement
 
@@ -39,7 +39,7 @@ the lower (2) holds for every admissible rule and supplies no ratio growth.
 ## Definitions
 
 Graded order is 1,x,y,x^2,xy,y^2 through degree2. The model is exactly
-P4-03: arbitrary L2 injections immediately before exact full projection,
+PD-T?lanczos-nonproduct-codex-P4-03: arbitrary L2 injections immediately before exact full projection,
 rule's own relative raw-product norm, spectral normal output, exact start.
 For epsilon=1 the annulus fills a disk (its inner radius is zero).
 
@@ -58,8 +58,8 @@ Overall status: PROVED (analytic fixed-degree negative statement).
 |---|---|---|
 | Admission, fixed covariance, unbounded lower (2) | PROVED | Written proof below |
 
-Candidate disposition: P4-04 REJECTED: refuted for covariance-only finite
-absolute-capacity control. P4-01's original asymptotic ratio target is
+Candidate disposition: IDEA?lanczos-nonproduct-codex-P4-04 REJECTED: refuted for covariance-only finite
+absolute-capacity control. IDEA?lanczos-nonproduct-codex-P4-01's original asymptotic ratio target is
 deferred/OPEN, not rejected by this result.
 
 ## Negative-result scope
@@ -72,7 +72,7 @@ the c=1,lambda=2 subfamily fixes distinct axes at nonzero angles.
 
 ## Depends on
 
-P4-01 common admission lemmas, P4-03 continuous model derivative. The lower
+PD-T?lanczos-nonproduct-codex-P4-01 common admission lemmas, PD-T?lanczos-nonproduct-codex-P4-03 continuous model derivative. The lower
 uses just a last-column source normal to Pi_2; it does not need numerical
 maximization of the pointwise response matrix.
 
@@ -87,7 +87,10 @@ All8 cases PASS, preserving covariance, last-pivot squared norm, last raw
 source squared norm and their displayed ratio. The finite check corroborates
 the analytic formulas; it is not a finite reduction of the epsilon->0
 proof. Receipt records source hash, Python and platform. Developer
-execution only; no independent rerun or cross-family12–16 gate claimed.
+execution. Independent reruns are recorded in
+[check-math-reruns.json](../evidence/check-math-reruns.json) and
+[audit 01](../audit-01.md#independent-reruns-actually-executed). No
+cross-family degree 12–16 gate pass is claimed.
 
 ## Sources
 
@@ -179,8 +182,8 @@ uniform remainder follows. All-degree P4 controls remain incomplete.
 ## Open items
 
 Original covariance/axis asymptotic iff; useful normalized invariants
-including higher-degree Gram data; complete cross-family exact tests;
-independent mathematical check of this negative result.
+including higher-degree Gram data; complete cross-family exact tests.
+Independent mathematical reconstruction is recorded in [audit 01](../audit-01.md).
 
 ## History
 

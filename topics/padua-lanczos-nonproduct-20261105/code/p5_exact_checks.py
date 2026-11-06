@@ -154,6 +154,8 @@ def run_order(m, dual):
                         assert all(x == zero for x in normal(axpy(d, -one, v)))
                     dual_directions += 1
 
+        # lower_capacity_squared below is the analytic theorem's ceil(s/2),
+        # not a capacity computed by this checker; finite readouts are above.
         rule_rows.append({'rule': rule, 'exact_creators': creator_checks,
                           'normal_x_readout_squares': pure_x_squares,
                           'lower_capacity_squared': (s+1)//2})

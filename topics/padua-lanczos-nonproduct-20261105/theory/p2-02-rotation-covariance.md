@@ -25,7 +25,7 @@ by a nontrivial orthogonal matrix, rather than permuting them.
 
 ## Definitions
 
-The disk measure ν_μ and Π_s are defined in P2-01. Ordered graded-lex
+The disk measure ν_μ and Π_s are defined in PD-T?lanczos-nonproduct-codex-P2-01. Ordered graded-lex
 monomials here are 1,x,y,x²,xy,y²,…, within each degree increasing the
 exponent of y. For the creator convention, an unnormalized raw product
 is a_i b_parent, and its source scale is σ=||a_i b_parent||_H. Additive
@@ -57,8 +57,8 @@ refuted by this result.
 
 ## Depends on
 
-P2-01 supplies ν_μ and its moments. The definition of normal capacity is
-the weighted monic model of P4-02 and its continuous extension P4-03 in
+PD-T?lanczos-nonproduct-codex-P2-01 supplies ν_μ and its moments. The definition of normal capacity is
+the weighted monic model of PD-T?lanczos-nonproduct-codex-P4-02 and its continuous extension PD-T?lanczos-nonproduct-codex-P4-03 in
 [p4-continuous-capacity.md](p4-continuous-capacity.md). The covariance
 proof also applies directly to finite-epsilon subspace distance, without
 using P4's formula for its derivative.
@@ -102,7 +102,7 @@ Taking the source supremum proves the capacity assertion. This transports
 the ordered seeds and the parent graph together; it supplies no relation
 between algorithms obtained by changing only one of them.
 
-For the stated fixed-order limitation, P2-01's moments at μ=0 give the
+For the stated fixed-order limitation, PD-T?lanczos-nonproduct-codex-P2-01's moments at μ=0 give the
 monic degree-two GS polynomials and norms
 
     b20=x²-1/4,                    d20=1/16,

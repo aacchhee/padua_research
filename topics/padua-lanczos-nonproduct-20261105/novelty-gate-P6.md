@@ -33,7 +33,7 @@ priority or exhaustive novelty claim is introduced.
 | Generic positive rational weighted-node scan interface | PD-T136/137 uniform-nodal formulas; PD-T324 weighted normalized normal quotient | Implementation variant requiring a written weighted-coordinate reduction from mathematics workers before weighted execution. Exact uniform-weight overlap and an independent scalar-rational path must agree. |
 | Rational disk or Hahn family | Same quotient machinery, but a changed positive measure, support and recurrence | Deferred until an exact specification and N1 proof from the owning math worker. No proposed finite circular grid is silently continuous rotational symmetry. |
 | Continuous simplex moments | P1 proposed exact moment functional | Deferred for scans: moments alone do not justify a finite-node normal-diagonal formula or a finite atomic impulse lower bound. Require a continuous-model reduction. |
-| Approximate rational Padua replacement | Algebraic Padua construction versus changed rational support | Not pursued as a substitute. A changed family would require separate admission and cannot verify the Padua claim. |
+| Approximate rational Padua replacement | Algebraic Padua construction versus changed rational support | abandoned as a substitute: a changed family would require separate admission and cannot verify the Padua claim. |
 
 Inherited obstructions remain binding: large raw responses can vanish in the
 normal quotient; all-source upper bounds cannot be replaced by restricted
