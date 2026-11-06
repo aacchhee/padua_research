@@ -103,9 +103,12 @@ The [explicit bootstrap certificate mode](theory/N3-bootstrap-cover-r8.md)
 now has independent mathematical/source acceptance, including exact
 boundary, malformed-partition, premise and strict-defect controls. Its
 first known-degree n32 producer completes364leaves in222.813childCPU-s,
-versus992leaves/620.093CPU-s in round6. Full independent replay is
-pending at this checkpoint; no new global degree or complexity law is
-inferred from the producer result.
+versus992leaves/620.093CPU-s in round6. The first independent replay checks all364leaves but rejects20bootstrap
+leaves because its projected-defect lower enclosure is zero. All other
+344leaves pass. TotalcheckerCPU136.175s, no cap or source/input change.
+This is a failed sufficient enclosure, not a counterexample or accepted
+new-mode certificate. No retry or new degree is counted; see the
+[failed replay](independent-checks-bootstrap-r8-n32.md).
 
 ## Gates and remaining work
 

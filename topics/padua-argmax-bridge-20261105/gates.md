@@ -101,3 +101,14 @@ bounded controls. One n32 producer completes364leaves/222.813CPU-s;
 independent full replay is pending. The analytic energy tail threshold
 log n>=128000000000 is not an argmax onset or practical bridge. Global
 range remains2–40; no n64/128 run, cost law or all-n energy assertion.
+
+### Round8 full replay disposition
+
+The first bootstrap-mode n32 replay checks every364leaf but rejects20
+bootstrap defect comparisons (all their independent lower bounds are0).
+All344 other leaves pass; no cap, pending region, source/input mutation or
+retry. This is an insufficient independent defect enclosure, not a
+counterexample, source soundness failure or accepted new-mode proof.
+Prior accepted17/24/32 round5/6 validations stand unchanged. New bootstrap
+performance remains a producer-only measurement; no higher-degree scaling
+or B3/B4 pass follows. A source change requires a separate bounded gate.

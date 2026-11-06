@@ -1,0 +1,127 @@
+{
+  "format": "independent-bootstrap-r8-n32-v1",
+  "status": "FAIL",
+  "accepted": false,
+  "scope": "one known-degree n32 full independent Arb replay; no degree extension",
+  "source_commit": "c8bdb63de00984701515a2d9c193dea32766a6c0",
+  "candidate": {
+    "path": "local-output/argmax-bridge-20261105/bootstrap-r8/n32/n32-phase-compact.json",
+    "bytes": 21338,
+    "sha256": "97c339181652d37e7e3c34522959f1b7157b8ea26d3f0ab83c0ebc1c3901528e"
+  },
+  "checker_sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8.py",
+      "bytes": 10583,
+      "sha256": "3c71ada8e49829cb897ee1c064fcdc70d08c846afcb1fb067c6c84673e205bb9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py",
+      "bytes": 12518,
+      "sha256": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5609,
+      "sha256": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v2.cpp",
+      "bytes": 10891,
+      "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+    }
+  ],
+  "supervisor": {
+    "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8_run.py",
+    "bytes": 7516,
+    "sha256": "77e543ed9c2e37b16a8af42e711c8e1f586918498767181a610f81f6d0adef4b"
+  },
+  "supervisor_argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8_run.py",
+    "--run-once"
+  ],
+  "worker_argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8_run.py",
+    "--worker"
+  ],
+  "checker_execution": "runpy.run_path of unchanged checker with exact CLI sys.argv; accounting only surrounds execution",
+  "execution_started_utc": "2026-11-06T09:24:25Z",
+  "execution_finished_utc": "2026-11-06T09:26:42Z",
+  "process_exit_status": 1,
+  "watchdog_stopped": false,
+  "total_subprocess_cpu_seconds": 136.175287,
+  "elapsed_wall_seconds": 136.2062988409998,
+  "total_cpu_limit_seconds": 1200,
+  "aggregate_watchdog_trigger_cpu_seconds": 1188,
+  "aggregate_observed_peak_seconds": 135.97,
+  "accounting": {
+    "checker_argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8.py",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/n32/n32-phase-compact.json",
+      "--kernel",
+      "round5",
+      "--output",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/checker-n32/checker-report.json"
+    ],
+    "exit_status": 1,
+    "checker_process_cpu_seconds": 134.957831783,
+    "compiler_build_helper_cpu_seconds": 1.172865,
+    "process_rlimit_cpu": [
+      1190,
+      1191
+    ]
+  },
+  "source_input_supervisor_unchanged_after": true,
+  "checked_leaves": 364,
+  "total_leaves": 364,
+  "pending": 0,
+  "failed_leaves_count": 20,
+  "complete": true,
+  "kind_counts": {
+    "outside": 32,
+    "far": 280,
+    "corner-orbit-plus-defect": 28,
+    "maximum-exclusion-plus-defect": 24
+  },
+  "checker_report": {
+    "path": "local-output/argmax-bridge-20261105/bootstrap-r8/checker-n32/checker-report.json",
+    "bytes": 168068,
+    "sha256": "b7801039c828a200f46aa44787cca370e6fcc09c1e300f196d160b76877107a1"
+  },
+  "stdout": {
+    "path": "local-output/argmax-bridge-20261105/bootstrap-r8/checker-n32/stdout.txt",
+    "bytes": 168068,
+    "sha256": "b7801039c828a200f46aa44787cca370e6fcc09c1e300f196d160b76877107a1"
+  },
+  "stderr": {
+    "path": "local-output/argmax-bridge-20261105/bootstrap-r8/checker-n32/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "worker_accounting": {
+    "path": "local-output/argmax-bridge-20261105/bootstrap-r8/checker-n32/worker-accounting.json",
+    "bytes": 643,
+    "sha256": "941dd8f5b9e0c4ad739c711f4040cd2c2bc1cda14153554fe7a405c9268de880"
+  },
+  "full_build_runtime_closure_in_raw_report": true,
+  "closure_entries_rehashed_after": 254,
+  "closure_unchanged_after": true,
+  "kernel_variant": "round5",
+  "kernel_source": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-6x7bcoag/hybrid_kernel_v2.cpp",
+    "bytes": 10891,
+    "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+  },
+  "checker_binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-6x7bcoag/libphase_checker.so",
+    "bytes": 60728,
+    "sha256": "c21f33079d590cea57fe4a29af71b14acc8ee69c2ca751844b9b9c0e93a401f2"
+  },
+  "no_max_leaves": true,
+  "retries": 0,
+  "other_degrees_executed": [],
+  "arithmetic": "FLINT 3.1.3 Arb 160-bit balls; exact rational acceptance/geometry"
+}

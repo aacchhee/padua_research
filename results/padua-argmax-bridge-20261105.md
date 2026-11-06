@@ -57,8 +57,10 @@ does not establish an argmax onset or close the intermediate energy range.
 
 The explicit maximum-bootstrap certificate mode has passed independent
 source/math review and controls. One known n32 producer completes364leaves
-in222.813CPU-s; full independent replay remains pending. This is a
-finite performance measurement, with no new global degree.
+in222.813CPU-s. The full independent replay checks364leaves but rejects
+20bootstrap leaves with insufficient projected-defect enclosures, in
+136.175CPU-s. The new-mode certificate is unaccepted; no retry,
+mathematical counterexample or new global degree is counted.
 [Cover reduction](../topics/padua-argmax-bridge-20261105/theory/N3-bootstrap-cover-r8.md).
 
 Other retained results include exact full-phase cotangent rows, uniform
@@ -69,8 +71,8 @@ phase-blind certificate was disproved by a strict limiting bound.
 No unread external theorem or historical priority claim is transferred.
 
 Next: validated model evaluation/maximum comparison, far phases and
-remaining center classes/corner coherence; complete independent replay
-of the first bootstrap-mode calibration. No B3 PASS,
+remaining center classes/corner coherence; gate a focused independent
+defect-enclosure improvement after the preserved failed bootstrap replay. No B3 PASS,
 actual onset or B4/Syvert release. Required Claude audit remains pending.
 AC permits10MB total generated outputs for now and directs major cleanup
 to a separate topic; see the canonical LOG instruction.
