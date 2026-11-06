@@ -25,3 +25,7 @@ Accept the exact grid, disjoint windows, SVD columns, parity treatment, toleranc
 ## Independent K0 outcome
 
 PASS under the dated clarification above. [Independent check](independent-checks-k0.md) changed the Padua seed and separately reran all cases; maximum relative reference differences4.00e-15 (CC),1.84e-14 (Padua) and3.31e-16 (finite carrier quadrature). No limiting-norm equality or spectral proof follows.
+
+## 2026-11-06 — S1 prediction registration before K1
+
+S1 registers c_model=pi^4/8 for both N parities, before any K1 fit or disclosure of final-window data to S1. [Model record](theory/S1-model.md) labels transfer CONDITIONAL; [Volterra model](theory/S1-volterra-model.md) supplies its separate analytic model norm. Neither proves the finite CC spectral limit. K5's S1 parity prediction is equality; the2-D K5 prediction is not yet registered. K2 compares the committed prediction against K1 only if K1 passes. The original handoff fit is retained as a preregistered numerical ansatz; classical Widom–Wilf attribution has not been verified by the [bounded literature screen](literature-screen.md).
