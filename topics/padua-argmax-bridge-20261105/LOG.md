@@ -803,3 +803,16 @@ Report600b3956... ACCEPTS both frozen proofs with no unresolved findings. Root a
 
 - D25 adversarial reportff101f70... ACCEPTS exactouteroperatorrelativebound without unresolved findings. Root adopts it for alln>=32/closednear rho<=1/2; no scalar/nativejobs. D25complete,total23/40withotheractiveoutoforderrounds. FullD13relative remainsOPEN. D31usesnewouteronly througha separately frozen assembly.
 - D26 prerelease reportf50f64f3... ACCEPTS unchanged conditional assembly/sourceFREEZE42271abd.../evaluate57d94154...; noendpointjobbyreviewer. Root releases EXACT fixed4096--run-once afterthispublication, whole<=5CPU/nochildren, nofallback/retry. RootmustdirectlyobserveEXIT0andreadcompletepersistedreceipt; independentfresh4096directedreplaythenrequired beforeglobal4096adoption.
+
+
+### D32 prospective lower-domain generic certifier contract
+
+- Solxhigh20min mathematical adapter: new generic sufficient implication fromn41 using D29's newlyprovedpositive/radius-dependent noncorner floor (distinct review pending), D14/D19 norm witnesses and unrestrictedD08 actualcornercriterion. ExistingD15n160theorem remains unchanged. Forn>=1024 D27analyticcorner may replace freshlambdaifaccepted; lowerdegrees use independentlycertified actualthreepointlosses withinliteralD07guard. No sourceguard widening or samplednormassumption.
+- Adaptive producer may query13coarsegridSpoints to establishM, then buildclosed exact midpointgeometry and finally verify/prune usingitsOWNretainedcorners/norm. Every finalphasepredicate and actualcornercriterion mustrecompute underchosenfinalnorm; deletedgridpoints cannot be hiddenpremises. Actualnear subset ofB hasradius <=r_B=min(1/2,p_hi*(a_hi+b_hi)), enablingprovedD29floor atthatguard evenforseamleaves. No claimofexistence/termination/smallpointcount.
+- No native/scalarjob in thispaperadapter; source and a fixed firstn41 prototype willbe separatelyfrozen/audited/released. CheapC23analyticinclusion validalln2 despiteits especiallysmall uniformerrorcorollary onlyfrom160; returnedwidth mustbechargedhonestly. Fullresidualrange/openall-degreeclaimunchanged.
+
+
+### First D26 endpoint passed; D27 primary release
+
+- RootexecutedexactD26frozen4096commandONCE after9ec4521dpublication; toolchunk579ea3 directlyreportsEXIT0. Receiptpassed=true, all15controls, FarGate>.1671480439691848334, CPUcheckpoint.032066 beforefinalreceipt. Firstpersistedreceipt copiedbyteidenticaltoevidence/d26-budget4096.json. No fallback/thresholdscan/sourcechange/retry. Independentfresh4096directedreplay nowreleased toprerelease reviewer with ownsource/SPEC/cap10 beforeexecution. Global4096adoptionwaitsfinalresultreview.
+- D27 prerelease report1473ba56... ACCEPTS original pi/4corner1024mathematicalreduction/globalnorm/source/SPEC unchanged. Root releases EXACTfrozen evaluate.py--run-once N1024ONLY afterthispublication, <=5CPU/nochildren, no source/parameter/precision/case/caprescue. Corner1024stillOPENuntilfirstpersistedPASS+EXIT0 andfreshindependent1024replay.
