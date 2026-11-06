@@ -1,0 +1,64 @@
+{
+  "schema": "c01-ratio-independent-exact-controls-v1",
+  "status": "PASS",
+  "checks": 9270,
+  "k_range": [
+    1,
+    1024
+  ],
+  "turns": [
+    -5,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    5
+  ],
+  "E0": "295147905179352825856/1977102884522998647965158659724414716688295149481318583375252605621337890625",
+  "E1": "147573952589676412928/59912208621909049938338141203770142929948337863070260102280381988525390625",
+  "saved_root_inputs": [
+    {
+      "path": "evidence/n3-phase-n17.json.gz",
+      "bytes": 5266,
+      "sha256": "80dcb2db069332e018653931bdb94e3995ceca5c9d96741fd1b87110474267a6",
+      "plain_sha256": "64f7befd86658c8d9f29b05c1cb5a0162e611b726b161e737610547bed218c4b",
+      "pi_hi": "7074237752028441/2251799813685248",
+      "residual_slack": "1720402628730753/9007199254740992",
+      "scaled_slack": "657608258821763/9007199254740992"
+    },
+    {
+      "path": "evidence/n3-phase-n24-r6.json.gz",
+      "bytes": 5070,
+      "sha256": "77bbdcf13363835fbca25d96b69eb277e2e5778e0e001c621f7eab0fc05ad51d",
+      "plain_sha256": "8c984dc87c9170ae07f106a530a7915596bca30f273371bb2de2f89c8443ec92",
+      "pi_hi": "7074237752028441/2251799813685248",
+      "residual_slack": "1720402628730753/9007199254740992",
+      "scaled_slack": "657608258821763/9007199254740992"
+    },
+    {
+      "path": "evidence/n3-phase-n32-r6.json.gz",
+      "bytes": 4989,
+      "sha256": "2107db169168455ba770fcce7f5fd60d0fb4454575a83077aaffc9a4e4d024e3",
+      "plain_sha256": "1cedd123ca9bfb69c200036161c521b5cbe1fca8e7197c4dd5ec557b640fa234",
+      "pi_hi": "7074237752028441/2251799813685248",
+      "residual_slack": "1720402628730753/9007199254740992",
+      "scaled_slack": "657608258821763/9007199254740992"
+    },
+    {
+      "path": "evidence/n3-phase-n32-bootstrap-r8.json.gz",
+      "bytes": 3367,
+      "sha256": "a01bc14b968676161afa0690e5ed41005da8cb3f87fb8c6393594bc37ed3986a",
+      "plain_sha256": "97c339181652d37e7e3c34522959f1b7157b8ea26d3f0ab83c0ebc1c3901528e",
+      "pi_hi": "7074237752028441/2251799813685248",
+      "residual_slack": "1720402628730753/9007199254740992",
+      "scaled_slack": "657608258821763/9007199254740992"
+    }
+  ],
+  "cpu_seconds": 0.15047866199999999,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "source_sha256": "30d5e78bd753c016dae9fa4cb8cbead3cfc74877f4fc1b89e120172bf3c8b767",
+  "command": "python topics/padua-argmax-bridge-20261105/code/cheap_c01_ratio_review/controls.py",
+  "scope": "Exact supplemental algebra/root-width controls; no interval backend, full cover, timing comparison, or all-k computational proof."
+}

@@ -1,0 +1,308 @@
+{
+  "status": "MEASURED",
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v3.cpp",
+    "bytes": 12716,
+    "sha256": "f52d1a9da3c86212663f7ac22e9475b76811d7be4bbc4916779fd32a59d95bf0"
+  },
+  "instrumentation": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C01/profile.py",
+    "bytes": 5102,
+    "sha256": "c839838a51766f322ed6d1f2df155307c42e6d24980015f9aaea57311862762a"
+  },
+  "generated_source": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C01/instrumented.cpp",
+    "bytes": 13231,
+    "sha256": "6765b5e4d41b84f575bd5b37cc9780bde6a7544d579ff18556e941b3a25b80f4"
+  },
+  "builder": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+    "bytes": 5703,
+    "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+  },
+  "inputs": [
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-phase-compact.json",
+      "bytes": 81585,
+      "sha256": "64f7befd86658c8d9f29b05c1cb5a0162e611b726b161e737610547bed218c4b"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/N3/outward-r6/n24/n24-phase-compact.json",
+      "bytes": 62755,
+      "sha256": "8c984dc87c9170ae07f106a530a7915596bca30f273371bb2de2f89c8443ec92"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/n32/n32-phase-compact.json",
+      "bytes": 21338,
+      "sha256": "97c339181652d37e7e3c34522959f1b7157b8ea26d3f0ab83c0ebc1c3901528e"
+    }
+  ],
+  "results": [
+    {
+      "n": 17,
+      "box": [
+        -3.1415926535897936,
+        -2.3561944901923453,
+        -0.7853981633974484,
+        -0.3926990816987242
+      ],
+      "scope": "first saved nonlocal leaf",
+      "status": 0,
+      "bounds": [
+        7.432628467777676,
+        5.954040899406666,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "cpu": 0.09206625799999996,
+      "wall": 0.09391539300122531,
+      "stats": [
+        0.04011834199999992,
+        0.019872039000000064,
+        0.07999711300000001,
+        0.012069145000000003,
+        3672.0,
+        62424.0,
+        7344.0,
+        7314.0,
+        3.0,
+        1836.0,
+        2.0,
+        45288.0
+      ]
+    },
+    {
+      "n": 24,
+      "box": [
+        -3.1415926535897936,
+        -2.3561944901923453,
+        -0.7853981633974484,
+        0.0
+      ],
+      "scope": "first saved nonlocal leaf",
+      "status": 0,
+      "bounds": [
+        9.665716867437379,
+        9.060485929124837,
+        0.0,
+        9.872512535796146,
+        9.872512535796147,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "cpu": 0.21994521900000008,
+      "wall": 0.21954627799641457,
+      "stats": [
+        0.12784035499999985,
+        0.03604450000000009,
+        0.18393317599999998,
+        0.03601204300000005,
+        7200.0,
+        172800.0,
+        14400.0,
+        14344.0,
+        3.0,
+        3600.0,
+        2.0,
+        122400.0
+      ]
+    },
+    {
+      "n": 32,
+      "box": [
+        -3.1415926535897936,
+        -2.3561944901923453,
+        -0.7853981633974484,
+        0.0
+      ],
+      "scope": "first saved nonlocal leaf",
+      "status": 0,
+      "bounds": [
+        10.559446940553098,
+        9.97026067079385,
+        0.0,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "cpu": 0.4799728019999999,
+      "wall": 0.47944713099786895,
+      "stats": [
+        0.2882008399999998,
+        0.08014123500000014,
+        0.4039293439999999,
+        0.07604345800000001,
+        12672.0,
+        405504.0,
+        25344.0,
+        25272.0,
+        3.0,
+        6336.0,
+        2.0,
+        283008.0
+      ]
+    },
+    {
+      "n": 64,
+      "box": [
+        0.125,
+        0.1328125,
+        0.25,
+        0.2578125
+      ],
+      "scope": "synthetic fixed box",
+      "status": 0,
+      "bounds": [
+        13.804216557606926,
+        13.784364046174396,
+        0.545910696198033,
+        13.973207805351173,
+        13.973207805351175,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "cpu": 3.4346302029999998,
+      "wall": 3.4335251360025723,
+      "stats": [
+        2.146514625000001,
+        0.41660845699999793,
+        2.662891871,
+        0.7676958150000006,
+        49920.0,
+        3194880.0,
+        99840.0,
+        99834.0,
+        3.0,
+        24960.0,
+        2.0,
+        2179840.0
+      ]
+    },
+    {
+      "n": 128,
+      "box": [
+        0.125,
+        0.1328125,
+        0.25,
+        0.2578125
+      ],
+      "scope": "synthetic fixed box",
+      "status": 0,
+      "bounds": [
+        17.12591196322084,
+        17.101031716308903,
+        0.5384801500877558,
+        17.346056800070027,
+        17.34605680007003,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "cpu": 24.119949651,
+      "wall": 24.126697900999716,
+      "stats": [
+        16.848202889000003,
+        1.4762140230000087,
+        18.844697101,
+        5.267246734,
+        198144.0,
+        25362432.0,
+        396288.0,
+        396282.0,
+        3.0,
+        99072.0,
+        2.0,
+        17106432.0
+      ]
+    }
+  ],
+  "stats_order": [
+    "harmonic_cpu",
+    "refine_cpu",
+    "board_cpu",
+    "collect_cpu",
+    "ratio_calls",
+    "harmonic_iterations",
+    "refine_calls",
+    "quotient_attempts",
+    "board_calls",
+    "primitive_calls",
+    "collect_calls",
+    "pair_visits"
+  ],
+  "own_cpu": 28.707125859999998,
+  "child_cpu": 1.400104,
+  "wall": 30.11190833499859,
+  "exit_status": 0,
+  "format": "C01-fast-profile-v1",
+  "rules_head": "4b728b04216a5490910780bc609a82b853058426",
+  "developer": "Codex; requested gpt-6.1-sol medium; serving metadata unexposed",
+  "raw_receipt": {
+    "path": "local-output/argmax-bridge-20261105/cheap-C01/profile.json",
+    "bytes": 58016,
+    "sha256": "3cb5ae233c12a306478284764af33c9a14abc71468d4e82572c42a0b703edfcb"
+  },
+  "compiler_version": "x86_64-linux-gnu-g++-14 (Debian 14.2.0-19) 14.2.0",
+  "compile_command": [
+    "/usr/bin/x86_64-linux-gnu-g++-14",
+    "-std=c++17",
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-fPIC",
+    "-shared",
+    "-x",
+    "c++-cpp-output",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C01/check-fydu64x8/kernel.ii",
+    "-L/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C01/check-fydu64x8/deps",
+    "-Wl,-rpath,/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C01/check-fydu64x8/deps",
+    "-Wl,--disable-new-dtags",
+    "-l:libflint.so.19",
+    "-l:libgmp.so.10",
+    "-o",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C01/check-fydu64x8/libphase_checker.so"
+  ],
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C01/check-fydu64x8/libphase_checker.so",
+    "bytes": 65480,
+    "sha256": "a33e10a87b25c6ee9194f6a4cd5285df3eca824f8884432d1fc6cd77fb5726b6"
+  },
+  "preprocessed": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C01/check-fydu64x8/kernel.ii",
+    "bytes": 1459958,
+    "sha256": "8d2a5cec2f0e59db82ffe63f7c64cd24e01c29160f3fa08971ff6ea0fc958ad7"
+  },
+  "closure_entry_counts": {
+    "toolchain": 4,
+    "toolchain_dependency_closure": 13,
+    "headers": 218,
+    "dependency_inputs": 6,
+    "linked_dependency_closure": 8,
+    "loaded_dependency_closure": 8
+  },
+  "disassembly": [
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C01/arb_sinc.disassembly.txt",
+      "bytes": 8112,
+      "sha256": "8d84a08f99cf218c6f046533126704e04892c0b5badd401ed768f9dfa9bbedad"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C01/arb_sinc_direct.disassembly.txt",
+      "bytes": 2183,
+      "sha256": "88a3aeb1bdd4f1bdf1291500cf1588381ce4b09ea5811262fa4354298aa66d92"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C01/arb_sinc_derivative_bound.disassembly.txt",
+      "bytes": 5647,
+      "sha256": "d44d8fb1ed059bacfc50d37bdbc25108baffcc9aed2d4cdadef1b94f9aa4789b"
+    }
+  ],
+  "limitations": [
+    "Selected-box timings only; no certification or full candidate replay.",
+    "Instrumentation CPU overhead included; no uninstrumented comparator executed.",
+    "Runtime/build closure full manifest remains local and hash-pinned by raw_receipt."
+  ]
+}

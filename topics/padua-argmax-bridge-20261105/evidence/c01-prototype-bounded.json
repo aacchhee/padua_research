@@ -1,0 +1,414 @@
+{
+  "format": "C01-prototype-bounded-v1",
+  "status": "MEASURED",
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C01/prototype.cpp",
+    "bytes": 14311,
+    "sha256": "178bbe5a969a018d91454dc877572a691c9831a4b8793971f5aa303343465dab"
+  },
+  "builder": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C01/build_prototype.py",
+    "bytes": 891,
+    "sha256": "d46f0dcb6e4d9687c9d985a5d5dd65bd6b9d72b69001c174f5380b88c6b27f75"
+  },
+  "source_controls": {
+    "status": "PASS",
+    "assertions": 731,
+    "unit_charts": {
+      "fallback": 21,
+      "quotient_or_R1": 31,
+      "pole": 36
+    },
+    "counts": [
+      88.0,
+      95.0,
+      36.0,
+      21.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "results": [
+    {
+      "n": 32,
+      "box": [
+        -0.29452431127404316,
+        -0.1963495408493621,
+        -0.1963495408493621,
+        0.0
+      ],
+      "reference": [
+        11.174094925592955,
+        11.13400010303907,
+        0.4055197168017104,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "saved n32 former failure",
+      "root": 0,
+      "path": "111111011",
+      "status": 0,
+      "bounds": [
+        11.335010140105657,
+        11.294486232059041,
+        0.4011634787898494,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        25344.0,
+        57008.0,
+        36.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        3.0
+      ],
+      "cpu": 0.12000816800000001,
+      "wall": 0.11946240700126509,
+      "S_strict_corner": false,
+      "S_minus_defect_strict_corner": true,
+      "upper_changes": {
+        "0": 0.16091521451270197,
+        "1": 0.16048612901997217,
+        "4": 0.0,
+        "6": 0.0
+      },
+      "lower_changes": {
+        "2": -0.004356238011860969,
+        "3": 0.0,
+        "5": 0.0
+      }
+    },
+    {
+      "n": 32,
+      "box": [
+        0.0,
+        0.09817477042468105,
+        -0.1963495408493621,
+        0.0
+      ],
+      "reference": [
+        11.222000368124668,
+        11.203263246144903,
+        0.39771335296366644,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "saved n32 former failure",
+      "root": 2,
+      "path": "010101010",
+      "status": 0,
+      "bounds": [
+        11.373455138185156,
+        11.354600386105604,
+        0.3951040267742795,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        25344.0,
+        57004.0,
+        36.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        3.0
+      ],
+      "cpu": 0.12410039899999997,
+      "wall": 0.12213029200211167,
+      "S_strict_corner": false,
+      "S_minus_defect_strict_corner": true,
+      "upper_changes": {
+        "0": 0.15145477006048758,
+        "1": 0.15133713996070064,
+        "4": 0.0,
+        "6": 0.0
+      },
+      "lower_changes": {
+        "2": -0.002609326189386918,
+        "3": 0.0,
+        "5": 0.0
+      }
+    },
+    {
+      "n": 64,
+      "box": [
+        0.125,
+        0.1328125,
+        0.25,
+        0.2578125
+      ],
+      "reference": [
+        13.804216557606926,
+        13.784364046174396,
+        0.545910696198033,
+        13.973207805351173,
+        13.973207805351175,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "same synthetic narrow box",
+      "baseline_cpu": 3.4346302029999998,
+      "status": 0,
+      "bounds": [
+        13.809211282867782,
+        13.809211282867782,
+        0.0,
+        13.973207805351173,
+        13.973207805351175,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        99840.0,
+        224634.0,
+        6.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        3.0
+      ],
+      "cpu": 0.299869964,
+      "wall": 0.30056361599781667,
+      "S_strict_corner": true,
+      "S_minus_defect_strict_corner": true,
+      "upper_changes": {
+        "0": 0.004994725260855759,
+        "1": 0.024847236693386066,
+        "4": 0.0,
+        "6": 0.0
+      },
+      "lower_changes": {
+        "2": -0.545910696198033,
+        "3": 0.0,
+        "5": 0.0
+      }
+    },
+    {
+      "n": 64,
+      "box": [
+        0.0,
+        0.25,
+        0.0,
+        0.25
+      ],
+      "kind": "synthetic full half-radius square",
+      "status": 0,
+      "bounds": [
+        15.198199261090373,
+        15.116064812039864,
+        0.00048828125,
+        13.973207805351173,
+        13.973207805351175,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        99840.0,
+        224592.0,
+        104.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        3.0
+      ],
+      "cpu": 0.324003617,
+      "wall": 0.32309074200020405,
+      "S_strict_corner": false,
+      "S_minus_defect_strict_corner": false
+    },
+    {
+      "n": 128,
+      "box": [
+        0.125,
+        0.1328125,
+        0.25,
+        0.2578125
+      ],
+      "reference": [
+        17.12591196322084,
+        17.101031716308903,
+        0.5384801500877558,
+        17.346056800070027,
+        17.34605680007003,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "same synthetic narrow box",
+      "baseline_cpu": 24.119949651,
+      "status": 0,
+      "bounds": [
+        17.131173108490902,
+        17.131173108490902,
+        0.0,
+        17.346056800070027,
+        17.34605680007003,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        396288.0,
+        891642.0,
+        10.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        3.0
+      ],
+      "cpu": 1.1359552160000002,
+      "wall": 1.1389196079981048,
+      "S_strict_corner": true,
+      "S_minus_defect_strict_corner": true,
+      "upper_changes": {
+        "0": 0.005261145270061718,
+        "1": 0.030141392181999294,
+        "4": 0.0,
+        "6": 0.0
+      },
+      "lower_changes": {
+        "2": -0.5384801500877558,
+        "3": 0.0,
+        "5": 0.0
+      }
+    },
+    {
+      "n": 128,
+      "box": [
+        0.0,
+        0.25,
+        0.0,
+        0.25
+      ],
+      "kind": "synthetic full half-radius square",
+      "status": 0,
+      "bounds": [
+        18.823239182382956,
+        18.721507776314894,
+        0.00048828125,
+        17.346056800070027,
+        17.34605680007003,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        396288.0,
+        891560.0,
+        200.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        3.0
+      ],
+      "cpu": 1.1679862330000002,
+      "wall": 1.1714506809985323,
+      "S_strict_corner": false,
+      "S_minus_defect_strict_corner": false
+    }
+  ],
+  "counter_order": [
+    "ratio_calls",
+    "sin_cos_calls",
+    "pole_charts",
+    "global_fallbacks",
+    "lazy_S_skips",
+    "analytic_floor_skips",
+    "profile_scans",
+    "boards"
+  ],
+  "receipts": [
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C01/prototype/unit-controls.json",
+      "bytes": 83360,
+      "sha256": "582e41d57c60dd39d68f3ca5e3ae536cc910b4cdf71427217565c433728ac2f3"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C01/prototype/box-controls.json",
+      "bytes": 7488,
+      "sha256": "40c371dab21274be67abcfdbaf58ce9900c194efe5bdf43fb8208c6c1024e377"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C01/prototype/unit-controls-v2.json",
+      "bytes": 83362,
+      "sha256": "777141504448c4c305a9de847bd9f69524051624e5cd10d06526df94ffc057c0"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C01/prototype/box-controls-v2.json",
+      "bytes": 7479,
+      "sha256": "83cc91b3530517a993cef70314de3cece38f332c7b2dbdac9e4a62b0a468db7c"
+    }
+  ],
+  "first_source": {
+    "path": "local-output/argmax-bridge-20261105/cheap-C01/prototype/prototype-first.cpp",
+    "bytes": 14253,
+    "sha256": "6913cfe5c9028d1b1dc6bbddfe0f0d9367158011563189cfce53333e9f88d1fb"
+  },
+  "current_source": {
+    "path": "topics/padua-argmax-bridge-20261105/code/cheap_C01/prototype.cpp",
+    "bytes": 14311,
+    "sha256": "178bbe5a969a018d91454dc877572a691c9831a4b8793971f5aa303343465dab"
+  },
+  "compiler_version": "x86_64-linux-gnu-g++-14 (Debian 14.2.0-19) 14.2.0",
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C01/prototype/check-to4i3iy0/libphase_checker.so",
+    "bytes": 69704,
+    "sha256": "5087aa2e48a1ac234aad984492bd167370187ae6e26806dc0b9eae5700aa5e0b"
+  },
+  "preprocessed": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C01/prototype/check-to4i3iy0/kernel.ii",
+    "bytes": 1454288,
+    "sha256": "4e5a7c347067c6f3d20c26f50a14e343f51852c4e6892f0263f155f79d48e453"
+  },
+  "prototype_total_cpu": 15.199337914,
+  "prototype_runs": [
+    {
+      "status": "PASS",
+      "own_cpu": 1.511646719,
+      "child_cpu": 1.257355,
+      "wall": 2.7712763250019634
+    },
+    {
+      "status": "MEASURED",
+      "own_cpu": 5.985436113,
+      "child_cpu": 0.0,
+      "wall": 5.987257862998376
+    },
+    {
+      "status": "PASS",
+      "own_cpu": 1.711280556,
+      "child_cpu": 1.480781,
+      "wall": 3.192336232001253
+    },
+    {
+      "status": "MEASURED",
+      "own_cpu": 3.252838526,
+      "child_cpu": 0.0,
+      "wall": 3.2540064540007734
+    }
+  ],
+  "whole_candidate_replayed": false,
+  "new_certified_degree": false,
+  "limitations": [
+    "Only two saved n32 leaves and four synthetic boxes per source; no complete candidate replay.",
+    "Synthetic broad boxes remain non-strict; analytic floor is weaker than measured scan.",
+    "New n32 S upper bounds are weaker; all other original leaves untested.",
+    "Old baseline profile includes nested timers; selected timing ratios are not whole-certifier complexity claims.",
+    "No global degree extension or million-degree practical feasibility claim."
+  ]
+}

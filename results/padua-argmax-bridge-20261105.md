@@ -4,8 +4,12 @@ The exact global corner-argmax range is **2–40**. Small complete
 certificates33–40 and separate exact C++/GMP checks prove the maximum
 and exact two-nonnode-corner equality set.
 [Finite theorem](../topics/padua-argmax-bridge-20261105/theory/native-finite-range.md).
-All-degree **PD-T099 remains OPEN**; the bridge41<=n<N_* has no effective
-onset. The inherited eventual N_* remains non-effective.
+Fresh C01 proves an actual effective analytic upper boundary
+**N0=ceil(exp(10^12))**: every n>=N0 has exactly those two maximizers.
+[Effective tail](../topics/padua-argmax-bridge-20261105/theory/C01-effective-argmax.md),
+[independent reconstruction](../topics/padua-argmax-bridge-20261105/independent-checks-C01-effective.md).
+All-degree **PD-T099 remains OPEN** on the intervening41<=n<N0. This
+bound is astronomical; it does not make a practical finite bridge.
 
 **Finite-dimensional near-phase model.** The degree-growing sums are now
 removed on rho=|alpha|+|beta|<=1/2. For every n>=10^6, the explicit
@@ -84,6 +88,24 @@ No unread external theorem or historical priority claim is transferred.
 Next: validated model evaluation/maximum comparison, far phases and
 remaining center classes/corner coherence; gate any higher-degree cost
 assessment after the accepted bootstrap calibration. No B3 PASS,
-actual onset or B4/Syvert release. Required Claude audit remains pending.
+practical meeting onset or B4/Syvert release. Required Claude audit remains pending.
 AC permits10MB total generated outputs for now and directs major cleanup
 to a separate topic; see the canonical LOG instruction.
+
+**Fresh research campaign C01.** An all-center analytic defect>1/2048
+now holds for n>=64,rho<=1/2, including both parities and orientations.
+Fixed-work ratio/derivative charts and an independently reviewed cheap
+Arb prototype remove harmonic loops and skip justified profile scans.
+Bounded n128 timing falls24.120 to1.136CPU-s; full known-case validation
+is pending, with no extra degree or higher-degree complexity claim.
+[Allclass defect](../topics/padua-argmax-bridge-20261105/theory/C01-allclass-defect.md),
+[ratio charts](../topics/padua-argmax-bridge-20261105/theory/C01-ratio-enclosures.md).
+
+A sharp central fractional upper and actual nonzero axis coefficient are
+proved; the pure-quadratic/vanishing-cusp modulus is specifically ruled
+out. Full sharp near Q comparison still needs its other coupled parts.
+[Central bound](../topics/padua-argmax-bridge-20261105/theory/C01-near-central-upper.md),
+[axis limit](../topics/padua-argmax-bridge-20261105/theory/C01-near-axis-limit.md).
+
+AC authorizes15fresh coordinated rounds; C01 is complete and C02/C03
+continue without an early handoff. No legacy degree-extension campaign.

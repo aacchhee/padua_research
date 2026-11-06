@@ -1,9 +1,15 @@
 # Padua argmax bridge — WORK checkpoint, 2026-11-06
 
-The independently checked exact global range is **2–40**, extended from
-2–32. PD-T099 remains **OPEN** for the full all-degree statement. The
-remaining bridge is41<=n<N_*, where the inherited eventual onset is
-non-effective. No effective argmax n1 or Syvert campaign is claimed.
+The finite exact global range is **2–40**, with exactly the two expected
+nonnode corners. Fresh campaign C01 now proves an **effective analytic
+upper boundary**
+
+    N0=ceil(exp(10^12)).
+
+Every n>=N0 has the same exact two-corner argmax. The intervening
+41<=n<N0 and all-degree PD-T099 remain OPEN. N0 is astronomical and
+does not justify a finite campaign or Syvert pack. The next priorities
+are a much smaller analytic boundary and genuinely cheap certification.
 
 ## What is proved
 
@@ -148,7 +154,7 @@ known-degree comparison, with no higher-degree complexity assertion.
 |B1|Finite diagnostic map complete; continuous extrema not certified|
 |B2|Finite floating33/64/128 throughput/count scope passes; independent outward17/24/32 validates the method, not higher-degree scaling|
 |B3|Near-domain model/error constructed; uniform maximum comparison, far phases and full-square closure OPEN|
-|B4|Blocked: no actual effective argmax onset; no Syvert pack|
+|B4|Blocked: explicit N0 exists but its finite bridge is infeasible; no Syvert pack|
 |B5|Unrestricted transport reformulates the target; specified structured classes fail only in their stated scopes|
 |B6|No confirmed noncorner counterexample to PD-T099|
 
@@ -175,8 +181,8 @@ Both near-profile logarithmic coefficients favor the corner, and all
 branch artifacts fit a small proved allowance. The continuous residual
 comparison remains unresolved.
 The full all-degree maximum statement remains unresolved because the
-model comparison, far-domain/corner coverage and effective meet-in-the-
-middle onset have not been certified.
+sharp model comparison, practical far-domain/corner thresholds and
+a feasible meet-in-the-middle onset have not been certified.
 
 ## Evidence and review
 
@@ -192,3 +198,34 @@ This is WORK, not merge readiness. Required Claude Opus5.5 xhigh audit
 remains pending; Codex supplements do not replace it. Final IDs/shared
 registry changes wait for audited preparation. Protocol history and
 finding dispositions have canonical records in LOG/linked reviews.
+
+## Fresh campaign C01 — effective tail and cheaper arithmetic
+
+The [effective global lemma](theory/C01-effective-global.md) gives
+S<=aLambda_c+10^6log(n+1) on the full phase diamond. The separately
+[proved tail assembly](theory/C01-effective-argmax.md) uses explicit
+local envelopes, all-center defects and reflection-first corner control
+to obtain N0 above, without an ineffective localization or energy premise.
+[Independent reconstruction](independent-checks-C01-effective.md).
+
+The [allclass defect](theory/C01-allclass-defect.md) now covers every
+noncorner odd center at n>=64,rho<=1/2 with Delta>1/2048; its analytic
+source guard can avoid the degree-growing projected-profile scan.
+[Review](independent-checks-C01-allclass.md).
+
+A new [central integral upper](theory/C01-near-central-upper.md) has
+explicit fractional and entropy constants. The [actual axis limit](theory/C01-near-axis-limit.md)
+proves a nonzero alpha^(3/2) term; the [scoped obstruction](theory/C01-near-quadratic-obstruction.md)
+rules out only the proposed quadratic/log modulus with vanishing linear
+allowances. These support continued sharp Q comparison; C1 remains OPEN.
+
+The [fixed-work ratio charts](theory/C01-ratio-enclosures.md) eliminate
+degree-growing finite harmonic sums. An independently reviewed Arb
+prototype adds strict lazyS and full-box analytic-defect guards. Five
+baseline box timings and new bounded tests show substantial finite
+cost reductions (n128 narrow case24.120 to1.136CPU-s), not a full-cover
+or complexity claim. The full known n32 candidate is the next gated
+validation; no additional old-tech degrees are planned.
+
+The campaign ledger records1/15 completed research rounds and continuing
+C02/C03 work. All formal Claude audit/readiness work remains pending.

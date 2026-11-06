@@ -1,0 +1,42 @@
+{
+  "status": "MEASURED",
+  "source": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/c01_allclass_diagnostic.py",
+  "source_sha256": "d2b3872cfbbb89e550cc874be195b8aa125570fc1283a70c5adf7ad876a0d598",
+  "input_head": "4b728b04216a5490910780bc609a82b853058426",
+  "command": "python topics/padua-argmax-bridge-20261105/code/c01_allclass_diagnostic.py --output /tmp/c01-allclass-cases.json --receipt topics/padua-argmax-bridge-20261105/evidence/c01-allclass-diagnostic.json",
+  "seed": null,
+  "precision_decimal_digits": 60,
+  "python": "3.12.14",
+  "mpmath": "1.3.0",
+  "cases": 108,
+  "categories": {
+    "v-near": 30,
+    "v-small": 12,
+    "v-middle": 6,
+    "h-near": 48,
+    "h-small": 6,
+    "h-middle": 6
+  },
+  "minimum_case_floor_ratio": 16.639737611663254,
+  "maximum_polynomial_quotient_error": 1.13009957446e-57,
+  "normalization_controls": [
+    {
+      "n": 3,
+      "J": 1,
+      "K": 0,
+      "error": "7.77876909733e-62"
+    },
+    {
+      "n": 4,
+      "J": 1,
+      "K": 0,
+      "error": "2.3336307292e-61"
+    }
+  ],
+  "exact_rational_constants": true,
+  "cpu_seconds": 2.310044272,
+  "raw_output": "/tmp/c01-allclass-cases.json",
+  "raw_sha256": "bc6e738c23402d098b3c23be5a8947f7c830f3f8cdf9c9316ca65df8f4177670",
+  "raw_bytes": 45728,
+  "limitations": "Floating selected-block and normalization diagnostics only; no outward intervals, exhaustive all-center check, independent rerun or proof premise."
+}

@@ -1,0 +1,90 @@
+{
+  "format": "C01-independent-profile-review-v1",
+  "status": "MEASURED",
+  "rules_head": "4b728b04216a5490910780bc609a82b853058426",
+  "reviewer": "Codex; supplementary independent review; serving metadata unexposed",
+  "code": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_c01_review/profile_review.py",
+    "bytes": 6645,
+    "sha256": "b395cb60b1a9b537c69e90566ed15aab8b99013ab35c5b9357e70a91730e62c7"
+  },
+  "frozen_profile": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/evidence/c01-fast-profile.json",
+    "bytes": 8591,
+    "sha256": "146abbe78426ab81bdd5f73a4e46e1677da732fc1210dd87084609edf144688b"
+  },
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v3.cpp",
+    "bytes": 12716,
+    "sha256": "f52d1a9da3c86212663f7ac22e9475b76811d7be4bbc4916779fd32a59d95bf0"
+  },
+  "input": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/n32/n32-phase-compact.json",
+    "bytes": 21338,
+    "sha256": "97c339181652d37e7e3c34522959f1b7157b8ea26d3f0ab83c0ebc1c3901528e"
+  },
+  "source_instrumentation_only": true,
+  "saved_closure_entries_checked": 257,
+  "formula_checks": [
+    {
+      "n": 17,
+      "inferred_trig_calls": 78918
+    },
+    {
+      "n": 24,
+      "inferred_trig_calls": 205144
+    },
+    {
+      "n": 32,
+      "inferred_trig_calls": 462456
+    },
+    {
+      "n": 64,
+      "inferred_trig_calls": 3419514
+    },
+    {
+      "n": 128,
+      "inferred_trig_calls": 26254074
+    }
+  ],
+  "replay": {
+    "n": 32,
+    "box": [
+      -3.1415926535897936,
+      -2.3561944901923453,
+      -0.7853981633974484,
+      0.0
+    ],
+    "status": 0,
+    "bounds": [
+      10.559446940553098,
+      9.97026067079385,
+      0.0,
+      10.993594541100443,
+      10.993594541100444,
+      3.141592653589793,
+      3.1415926535897936
+    ],
+    "identical_to_frozen_profile": true,
+    "cpu": 0.435974357,
+    "wall": 0.43801194399929955
+  },
+  "build_manifest": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c01-review-profile/build-manifest.json",
+    "bytes": 48612,
+    "sha256": "411606c5d6865f7db5238345eba4a17bfd8a463ca1b69053ff243fb4f79c34cf"
+  },
+  "compiler_version": "x86_64-linux-gnu-g++-14 (Debian 14.2.0-19) 14.2.0",
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c01-review-profile/check-rdpguzq6/libphase_checker.so",
+    "bytes": 65168,
+    "sha256": "9a26cd6ebf3108a714c81475cc29c251b50797b58d15f8c1f6be559f7ea43e60"
+  },
+  "own_cpu": 0.9269189999999999,
+  "child_cpu": 1.385574,
+  "wall": 2.3121608280016517,
+  "limitations": [
+    "One uninstrumented saved box; no full replay or certification.",
+    "Source equality and one output comparison do not measure timer overhead generally."
+  ]
+}

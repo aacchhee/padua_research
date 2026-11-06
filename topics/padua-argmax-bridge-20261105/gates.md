@@ -132,3 +132,17 @@ combined CPU than round6 at known n32. This validates the explicit
 bootstrap cover mode at its finite premise, not an all-n cost law or
 new global degree. Higher-degree cost needs a fresh bounded gate.
 B3/continuous model comparison and B4 remain OPEN/blocked.
+
+## 2026-11-06 fresh campaign C01 disposition
+
+An actual effective global argmax onset N0=ceil(exp(10^12)) is now PROVED
+with distinct reconstruction. The open bridge is41<=n<N0. This is not a
+practical meet-in-the-middle onset. B4 is now blocked by infeasibility of
+that bound, rather than absence of every explicit global threshold. No
+Syvert pack is justified. B3's sharp compact-model comparison stays OPEN.
+
+C01 allclass near defect>1/2048, fixed-work ratio charts, central fractional
+upper/axis obstruction and bounded cheap-backend source checks pass their
+stated scopes. No full cheap-backend cover or higher-degree scaling law
+is claimed. C02 gates the full known n32 input on changed source and
+new mathematical cost reductions; no legacy degree extension.
