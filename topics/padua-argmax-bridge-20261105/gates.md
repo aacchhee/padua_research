@@ -2,11 +2,11 @@
 
 ## Current campaign checkpoint — 2026-11-06
 
-The actual global theorem now covers every integer **n>=1000000**,
+The actual global theorem now covers every integer **n>=500000**,
 with exactly the two parity-correct nonnode corners, plus the unchanged
-finite exact range2–40. [Proof](theory/C08-effective-million.md),
-[independent reconstruction](independent-checks-C08-global.md).
-The remaining gap41–999999 and all-degree PD-T099 remain OPEN.
+finite exact range2–40. [Proof](theory/C13-onset-budget.md),
+[independent reconstruction](independent-checks-C13-onset.md).
+The remaining gap41–499999 and all-degree PD-T099 remain OPEN.
 Older dated gate notes below are historical and superseded here.
 
 Original B0–B6 criteria remain unchanged in [handoff01](handoffs/01-work.md).
@@ -18,8 +18,8 @@ gates or establish a practical meet-in-the-middle compute projection.
 | B0 | PASS | Frozen fresh exact replays remain accepted |
 | B1 | FINITE MAP COMPLETE; CONTINUOUS EXTREMA NOT COMPUTED | Historical seven-degree measurements remain scoped; new analytic phase inequalities are separate proofs |
 | B2 | ORIGINAL FINITE FLOAT PASS; OUTWARD KNOWN-CASE VALIDATED | Complete immutable n32 checker now46.09totalCPU,3.08x lower subprocess cost; no higher-degree box-count scaling theorem |
-| B3 | ANALYTIC GLOBAL OBJECTIVE CLOSED FROM10^6 | Fixed near/full-phase models plus exact defect/corner comparisons prove actual global tail; original B1 half-margin comparison is not separately recomputed or relabeled |
-| B4 | RESOURCE PROJECTION OPEN | Explicit n1=1000000 now exists, but whole-certifier throughput across41–999999 is unproved/unmeasured; no Syvert pack justified by point timings |
+| B3 | ANALYTIC GLOBAL OBJECTIVE CLOSED FROM500000 | Fixed near/full-phase models plus exact defect/corner comparisons prove actual global tail; original B1 half-margin comparison is not separately recomputed or relabeled |
+| B4 | RESOURCE PROJECTION OPEN | Explicit n1=500000 now exists, but whole-certifier throughput across41–499999 is unproved/unmeasured; no Syvert pack justified by point timings |
 | B5 | UNRESTRICTED EQUIVALENCE; CLASS-ONLY OBSTRUCTION | N4 specified classes remain stopped, broad route deferred; no unrestricted counterexample |
 | B6 | NO CONFIRMED COUNTEREXAMPLE | Insufficient predicates or capped runs are not counterexamples |
 
@@ -29,13 +29,16 @@ C11's independently accepted linear-work point evaluator costs.150CPU
 at n128 and2.456CPU at n2048 in bounded pilots. C09's guarded linear-work
 whole-box upper construction is mathematically accepted; C12's source
 implementation is independently accepted within n<=4096 whole-triangle
-S-upper calls; C15 quality remains experimental. Point-only performance is
+S-upper calls; C15 source also independently accepted; quality remains experimental. Point-only performance is
 not full certification throughput.
 
-Thirteen fresh rounds complete; C13/C15 active; all fifteen rounds started, no C16 authorized.
-C13's same-model lower-onset audit has no accepted smaller theorem yet.
-C14 explores tighter global coefficient coupling. One near correction
-remains the only one. Formal Claude audit PENDING; draftPR27 WORK.
+All15freshrounds complete. C13 supports the same-model500000 threshold
+and its F1/F2 findings are resolved. C15's source is independently valid
+but does not certify the selected far leaves; no replacement is adopted.
+AC requests an INTERIM Claude audit with its own ideas; Claude must leave
+WORK and hand implementation back to Codex. Final audit/readiness remain
+pending; PR27 draft WORK. Historical notes below retain
+their original scopes and dates.
 
 ## 2026-11-05 operational clarification before B1 execution
 

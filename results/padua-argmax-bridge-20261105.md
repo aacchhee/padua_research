@@ -1,69 +1,57 @@
 # Padua argmax bridge — current research results
 
 The exact two-corner global argmax is proved for **degrees2–40** and
-**every integer n>=1000000**. Its equality set is {(-1,-1),(1,-1)} for
-even n and {(-1,-1),(-1,1)} for odd n. The remaining gap41–999999 and
-all-degree PD-T099 remain OPEN. The analytic threshold has fallen from
-the initial exp(10^12) to one million, without a mass finite-degree scan.
+**every integer n>=500000**. Its equality set is {(-1,-1),(1,-1)} for
+even n and {(-1,-1),(-1,1)} for odd n. The remaining gap **41–499999**
+and all-degree PD-T099 stay OPEN. This is a sufficient upper boundary,
+not a claim of the minimum onset.
 
-- [Global theorem](../topics/padua-argmax-bridge-20261105/theory/C08-effective-million.md) and [independent reconstruction](../topics/padua-argmax-bridge-20261105/independent-checks-C08-global.md).
-- [Far comparison](../topics/padua-argmax-bridge-20261105/theory/C08-far-model-comparison.md): S<Lambda_c-6/25 throughout rho>=1/2, n>=10^6.
-- [Actual near noncorner comparison](../topics/padua-argmax-bridge-20261105/theory/C05-finiteh-model-comparison.md): lambda<Lambda_c-869/28000.
-- [Actual corner comparison](../topics/padua-argmax-bridge-20261105/theory/C07-corner-million-onset.md): lambda<=Lambda_c-(alpha²+beta²) on both inward half diamonds.
+[Global theorem](../topics/padua-argmax-bridge-20261105/theory/C13-onset-budget.md),
+[independent reconstruction and focused repair review](../topics/padua-argmax-bridge-20261105/independent-checks-C13-onset.md).
+The proof covers the full closed square, both parities, nodes, axes,
+collisions and exact equality; it uses no energy premise or mass degree scan.
 
-The full closed cover, axes, nodes, collisions, parity and exact equality
-set are included. The far proof uses a fixed-count full-phase model,
-uniform error<9/25, exact coefficient/endpoint/integral bounds and a
-stronger finite corner lower bound. Every component is analytically
-proved and independently reconstructed; floating diagnostics are not
-proof premises. A same-model onset audit is investigating smaller
-thresholds; none is claimed yet.
+At every n>=500000 the three cases are:
 
-The near comparison uses the unchanged fixed-count model, its proved
-3/14000 primitive error and a sufficient model allowance1/32, together
-with all-class projected defect>1/16. Original tight C1 with1/4096 is
-still OPEN at n>=10^6. No second correction was introduced. A separate
-finite positive-deformation result proves Lambda_c>=(nL_n²+1)/(n+1)
-for every n>=2, improving the usable corner lower bound without changing
-the existing asymptotic remainder theorem.
+- Far phases: S<Lambda_c-1/2000.
+- Near noncorner centers: lambda<Lambda_c-1/32.
+- Both inward actual-corner patches: lambda<=Lambda_c-(alpha²+beta²)/6.
 
-The new cheap checker **PASSes all364 regions of the unchanged known
-n32 certificate in46.09totalCPU seconds** (45.23subprocess), versus
-139.41subprocess for the previous accepted checker: about3.08times faster.
-It recovers all76 failures of the preserved first fixed-work attempt,
-without changing the tree, running a producer, switching modes or adding
-a new certified degree. All254 build/runtime identities were checked.
-[Independent whole-run outcome](../topics/padua-argmax-bridge-20261105/independent-checks-C03-cheap-n32.md).
-This finite known-case result is not a scaling theorem; original producer
-cost222.81CPU has not yet been reduced by that checker result.
+The unchanged fixed models are controlled by explicit analytic errors,
+weighted coefficient bounds, finite endpoint/collision estimates and a
+stronger corner lower bound. Lower-domain conditions were rechecked
+rather than inferred from the older n>=10^6 theorems. The single near
+correction remains the only one; original tighter C1 is still OPEN and
+unnecessary for this actual global result. C13's split/baseline review
+findings are resolved. Formal Claude audit remains separate and PENDING.
 
-The [exact-real row reduction](../topics/padua-argmax-bridge-20261105/theory/C02-row-cotangent.md)
-offers an O(n) point representation. Its partial-cotangent backend passed
-independent LP64 source/control review,76 native cases and784 exact moment
-checks in2.69CPU seconds. Guarded full point-S integration has now passed independent review.
-Its first prototype was slow(n128:11.55CPU seconds). Independently
-accepted interval moment evaluation and fixed J16 tuning now give
-0.150CPU at n128 and2.456CPU at n2048 in bounded point pilots. These
-are point costs, not whole-certifier costs. Direct moving-root whole-box
-enumeration has a proved fixed-width quadratic obstruction; the guarded
-linear-work convexity escape is independently accepted mathematically
-and its C12 native S-upper implementation is independently accepted
-within guarded n<=4096 calls. A tighter coherent-global variant is
-in independent review with mixed measured quality; selected known far
-leaves still fail its strict upper predicates. No full replacement
-certifier is claimed. The new MPFR producer component has passed
-independent review after a geometry guard repair; its complete known-case
-producer run is not yet released.
+The new fixed-work checker PASSes all364 regions of the unchanged known
+n32 certificate in **46.09totalCPU seconds**(45.23subprocess), versus
+139.41subprocess previously: about3.08times faster. It recovers all76
+preserved first-attempt failures, with no new tree, mode switch, retry,
+producer or certified degree. All254 build/runtime identities were checked.
+[Whole-run outcome](../topics/padua-argmax-bridge-20261105/independent-checks-C03-cheap-n32.md).
 
-Finite energy2–128 and its analytic tail, N4/N6 scoped failures, N5's OPEN
-quarter target and earlier failed mechanisms remain preserved in their
-records. They do not close the finite global gap. No practical Syvert pack
-is ready. Major archive cleanup remains a separate topic.
+Separately, guarded linear-work point and whole-box S-upper methods now
+have mathematical and source checks. Point pilots take.150CPU at n128
+and2.456CPU at n2048; timing scopes are recorded in the attempts. The
+native whole-box API is limited to n<=4096 and nonnegative rational
+rectangles contained in the closed phase triangle. It supplies no
+standalone gradient, corner-orbit or defect certifier.
 
-Thirteen fresh coordinated rounds are complete; C13/C15 work continues
-within AC's authorized allowance of15. Formal **Claude Opus5.5 xhigh audit
-is PENDING**; independent Astra checks supplement it. PR27 remains draft
-WORK with final shared-registry application pending. See the
-[current report](../topics/padua-argmax-bridge-20261105/report.md) and
+The shared eight-vertex variant has independently accepted source
+validation but **mixed quality and roughly twice C12's n32 cost**.
+Neither row bound certifies the two selected known far leaves. This
+is enclosure insufficiency, not a mathematical counterexample. No full
+replacement certifier, new degree or end-to-end scaling claim follows.
+[Source review](../topics/padua-argmax-bridge-20261105/independent-checks-C15-global.md).
+
+All **15/15** newly authorized coordinated rounds are complete. AC asks
+for an INTERIM Claude audit with its own independent ideas, then WORK
+with Codex implementing. A clean interim audit must not promote to PR.
+PR27 remains draft WORK; final shared-registry application and final audit
+are pending. Major archive cleanup remains a separate topic; no Syvert
+pack is justified by point-only timings. See the
+[report](../topics/padua-argmax-bridge-20261105/report.md) and
 [campaign ledger](../topics/padua-argmax-bridge-20261105/campaign-20261106.md)
-for exact scopes, costs and remaining work.
+for exact proof dependencies, costs, failures and remaining work.

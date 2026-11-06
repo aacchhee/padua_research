@@ -1,51 +1,60 @@
-# Padua argmax bridge — WORK checkpoint, 2026-11-06
+# Padua argmax bridge — WORK checkpoint for interim Claude audit, 2026-11-06
 
 The exact global equality set is proved for **degrees2–40** and for
-**every integer n>=1000000**. It consists of {(-1,-1),(1,-1)} for even n
-and {(-1,-1),(-1,1)} for odd n. The remaining gap41–999999 and all-degree
+**every integer n>=500000**. It consists of {(-1,-1),(1,-1)} for even n
+and {(-1,-1),(-1,1)} for odd n. The remaining gap41–499999 and all-degree
 PD-T099 remain OPEN. The fresh campaign has replaced its initial
-astronomical upper boundary with this explicit million-degree threshold.
+astronomical upper boundary with this explicit half-million-degree threshold.
 No mass degree enumeration or energy premise enters the analytic theorem.
 
 ## Analytic progress
 
-The [C08 global assembly](theory/C08-effective-million.md) and
-[distinct mathematical reconstruction](independent-checks-C08-global.md)
+The [C13 global assembly](theory/C13-onset-budget.md) and
+[distinct mathematical reconstruction and focused repair review](independent-checks-C13-onset.md)
 combine all three independently accepted cases on the complete closed
 physical phase cover, with both parities and exact corner equality.
 
 | Case | Proven comparison | Exact scope |
 |---|---|---|
-| Far phases | S<Lambda_c-6/25 | rho>=1/2, every integer n>=10^6; full closed phase diamond |
-| Near noncorner centers | lambda<Lambda_c-869/28000 | rho<=1/2, every integer n>=10^6, all admissible odd noncorner centers |
-| Actual corner patches | lambda<=Lambda_c-(alpha²+beta²) | both inward rho<=1/2 patches, every integer n>=10^6 |
+| Far phases | S<Lambda_c-1/2000 | rho>=1/2, every integer n>=500000; full closed phase diamond |
+| Near noncorner centers | lambda<Lambda_c-1/32 | rho<=1/2, every integer n>=500000, all admissible odd noncorner centers |
+| Actual corner patches | lambda<=Lambda_c-(alpha²+beta²)/6 | both inward rho<=1/2 patches, every integer n>=500000 |
 
-Sources: [far](theory/C08-far-model-comparison.md),
-[actual finite-degree near](theory/C05-finiteh-model-comparison.md),
-[all-class defect](theory/C02-defect-dense-band.md),
-[actual corner](theory/C07-corner-million-onset.md).
-The exact identity lambda=S-Delta and the endpoint-weighted odd-center
-cover preserve the exceptional x mode, edges, nodes, tied charts and
-polynomial collisions. The corner comparison is direct and has no
-positive absolute approximation error at its origin.
+Sources: [far](theory/C13-far-comparison.md),
+[near](theory/C13-near-comparison.md),
+[actual corner](theory/C13-corner-comparison.md), and their separate
+representation/corner-value dependencies linked in the global assembly.
+The exact identity lambda=S-Delta and endpoint-weighted odd-center cover
+preserve the exceptional x mode, edges, nodes, tied charts and collisions.
+The corner comparison is direct, with no positive absolute error at its origin.
 
-The far proof introduces a full-domain fixed-count model with uniform
+At n>=10^6, C08 supplies a full-domain fixed-count model with uniform
 error<9/25, proves its weighted logarithmic coefficient gap, and controls
 the remaining constant by exact endpoint convolution and a regularized
 integral. A strengthened finite corner lower bound supplies the slack.
-The result is M_far+1/2<Lambda_c-1/10, including a=0 and all boundary
+That earlier comparison is M_far+1/2<Lambda_c-1/10 at n>=10^6,
+including a=0 and all boundary
 limits. It is analytic; the earlier floating35-case diagnostic is not
 a premise. Each new substantive component has a separate independent
-mathematical reconstruction. Superseded stronger sufficient subtargets
+mathematical reconstruction. C13 rechecks every lower-domain condition
+for the unchanged models and retains the unrounded finite deformation
+and error budgets; it does not extrapolate old n>=10^6 statements.
+The exact far scalar slack is greater than1/2000. Superseded stronger sufficient subtargets
 remain unproved and retained rather than relabeled as proved.
 
-The near proof uses the unchanged fixed-count model with
-|S-M_near|<3/14000, M_near<Lambda_c+1/32 and strong projected defect>1/16.
-The **original tighter C1 bound with1/4096 stays OPEN at n>=10^6**;
-it is unnecessary for this sufficient actual comparison. The one near
-correction remains the only one. C13 is checking whether the SAME fixed
-models and unrounded error budgets can lower the onset below one million;
-no smaller threshold is claimed yet.
+At n>=500000 the near representation error is<1/1000, and the proved
+primitive allowance is S-Lambda_c<383/12500<1/32. The all-class projected
+defect>1/16 gives the actual noncorner comparison. At n>=10^6, the earlier
+C05/C08/C07 bounds retain their stronger stated scopes, including far
+gap6/25 and actual-corner loss alpha²+beta². The original tighter near-model
+C1 tolerance1/4096 remains OPEN and unnecessary for the global theorem.
+There has been no second near-model correction or parameter change.
+
+C13's initial combined record received a MAJOR split finding and a MINOR
+baseline clarification. The author split six substantive supporting
+results from the global assembly and explicitly separated the same-mesh
+baseline from finite deformation. The focused independent review closes
+both findings; proof estimates and the500000 threshold are unchanged.
 
 ## Cheap certification progress
 
@@ -82,9 +91,9 @@ blocks, four retained rows and ambiguous endpoint samples. The C06 partial
 backend passed independent LP64 review:76 cases and784 exact moment checks
 in2.69CPU seconds. It is one component; it does not itself implement full
 S or whole-box/gradient/defect/corner predicates. C07 guarded point-S integration is now independently accepted on LP64.
-It is still expensive: n128 costs11.55CPU in the fixed cost pilot,
-and the n512 attempt reached its cap. Source countO(n) is not yet cheap
-runtime. An independently accepted640-bit interval recurrence reduced n128 cost
+The original C07 prototype was expensive: n128 cost11.55CPU
+in its fixed pilot, and n512 reached its cap. This showed that a linear
+operation count alone did not give cheap runtime. An independently accepted640-bit interval recurrence reduced n128 cost
 to0.688s; a fixed J16 variant reduces it further to0.150s and evaluates
 n2048 in2.456s in the bounded pilot. These are point-only measurements,
 with detailed timing scopes in the attempts.
@@ -94,18 +103,25 @@ to guardedO(n) whole-box upper bounds is now independently accepted
 mathematically. Its C12 native whole-box implementation is independently accepted
 for successful guarded calls at n<=4096, S upper only. C14 coherent
 eight-vertex coupling is also mathematically accepted. C15 native
-validation is under independent review: measured quality is mixed,
+source validation is independently accepted: measured quality is mixed,
 roughly twice the C12 cost at n32, and neither row bound certifies the
 two selected known far leaves. A complete cheap replacement remains OPEN.
 
 ## Limits, resources and next work
 
-The fresh campaign has completed thirteen coordinated rounds; C13/C15
-work continues under AC's allowance of up to15. The [campaign ledger](campaign-20261106.md)
-is authoritative for round outcomes, with historical direction totals in
-[rounds](rounds.md). Next scientific priorities are the practical far
-comparison, reviewed full point-S evaluation, rigorous whole-box root
-handling and a cheaper producer. No second near-model correction is allowed.
+All **15/15** fresh coordinated research rounds are complete; the
+[campaign ledger](campaign-20261106.md) records the outcomes, with older
+direction totals in [rounds](rounds.md). AC now requests Claude audit and
+independent suggestions, then a return to work. No further research round
+is started in this checkpoint. The next reviewer should assess both the
+half-million theorem and the actual remaining obstacles, rather than
+assume the experimental row upper bounds already constitute a cheap certifier.
+
+The complete known-n32 checker improvement is validated. The experimental
+linear-work whole-box methods are valid guarded S-upper components, but
+still too loose on the selected known far leaves; their next use needs
+a new tightness/coverage argument. Full producer cost, remaining degrees,
+whole-certifier throughput and a feasible bridge projection remain OPEN.
 
 Finite bootstrap energy2–128 and its astronomical analytic tail remain
 separate results. They are unnecessary for the new actual-corner/far
@@ -115,8 +131,10 @@ quarter target remains OPEN; its failed particular certificate does not
 refute the target. No practical Syvert pack or completed finite bridge exists.
 
 Formal **Claude Opus5.5 xhigh audit remains PENDING**. Supplementary distinct
-Astra mathematical/source checks do not replace it. PR27 remains draft
-WORK; final shared-registry application and merge readiness are pending.
+Astra mathematical/source checks do not replace it. PR27 remains draft WORK. The next Claude audit is explicitly interim,
+must include its own independent ideas, and must leave WORK for Codex
+to implement next. Final audit/readiness remain pending; final shared-registry application and merge
+readiness are pending.
 Only AC merges. Generated evidence remains under the temporary10,000,000-byte
 aggregate ceiling; major archive cleanup is a separate topic. Large raw
 outputs stay local with identities in small receipts; physical archival
