@@ -1,6 +1,6 @@
 # Handoff 04 — padua-3d-20261106 — new directions T7/T8/T9, plus the audit-01 response
 
-- Status: open
+- Status: done in e80e000f2ba439ea62c966d255ef1b900b608b27
 - Previous handoff: [03-response.md](03-response.md), superseded by this handoff.
 - Next agent / model / effort: **Codex**.
   - Coordinator: **gpt-6-astra high**, as in handoffs 01–03.
