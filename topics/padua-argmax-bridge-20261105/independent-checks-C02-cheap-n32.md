@@ -157,3 +157,124 @@ Next step: distinct/coordinator source review, publication, explicit run
 release, then one invocation under this unchanged prospective contract.
 Until that release the run remains NOT RUN. No acceptance result or
 timing estimate is inferred from wrapper preparation.
+
+## 2026-11-06 released execution — COMPLETE CHECK, NOT ACCEPTED
+
+The preparation-only status above is historical. The coordinator completed
+its distinct source-only wrapper review, committed and pushed the accepted
+C01 bundle and frozen C02 wrapper at
+`b6e67b3c78cb668b6d2f9da5a5560537d2960bf3`, and explicitly released exactly
+one full known-candidate replay. Rules AGENTS/WORKFLOW/CODEX were re-read
+at that input. The executing reviewer remained assigned Astra high,
+serving metadata unexposed. No source was changed for execution.
+
+Executed exactly once from repository root:
+
+    python topics/padua-argmax-bridge-20261105/code/cheap_C02/replay.py --run-once --source-commit b6e67b3c78cb668b6d2f9da5a5560537d2960bf3
+
+**Actual exit1, status FAIL, accepted=false.** The checker completed
+364/364 leaves with zero pending,76 failed predicates and288 passed.
+It was not watchdog-stopped and reported no source/runtime error. There
+was no retry, rescue, candidate change, tree refinement, new producer or
+additional degree. The first outcome has been preserved; no follow-up
+native run was performed.
+
+| Unchanged leaf kind | Checked | Passed | Failed |
+|---|---:|---:|---:|
+| outside |32|32|0|
+| far |280|232|48|
+| corner-orbit-plus-defect |28|0|28|
+| maximum-exclusion-plus-defect |24|24|0|
+| Total |364|288|76|
+
+The first failure is root0, path`0101`, kind`far`. Its complete returned
+tuple `(S_upper,C_upper,defect_lower,Lc_lower,Lc_upper,pi_lower,pi_upper)`
+is
+
+    [11.467798411235936, 10.920225581178373, 0.0,
+     10.993594541100443, 10.993594541100444,
+     3.141592653589793, 3.1415926535897936].
+
+Its exact strict margin `Lc_lower-S_upper` is
+`-133476523302491/281474976710656`, so the required far predicate fails.
+The old v3 tuple on that same leaf began
+`[10.559446940553098,9.97026067079385,0.0]`, with identical constants
+and positive margin`122201685753051/281474976710656`. Thus this is an
+observed loss of enclosure tightness on the frozen tree, not an input,
+geometry, constant, proof-premise or provenance discrepancy.
+
+The read-only comparison with the hash-verified old full report confirms
+all364 root/path/kind triples remain in exactly the same order. All332
+numerical S upper bounds and corner upper bounds weaken;270 defect lower
+bounds weaken. Every Lc/pi output tuple is bit-identical to its old
+counterpart. Precisely76 formerly valid predicates now fail. All per-leaf
+bounds and all failed leaves are retained in the full raw report; the
+small receipt carries the first failure and summary counts. No predicate
+was changed to convert any of these failures into acceptance.
+
+### Actual cost and operation counts
+
+Total measured supervisor+subprocess CPU is31.965007580s, comprising
+31.414464 subprocess CPU and.550543580 supervisor CPU. Worker accounting
+records29.880111699 process CPU and1.449228 compiler/helper CPU; the
+remaining subprocess overhead includes worker startup and pre-accounting
+work. Native bound calls total29.221249906CPU-s. Wall time is
+31.616981617s. All are within the prospective180CPU-s cap; watchdog stop
+is false and native/report error lists are empty.
+
+The333 native calls comprise one constants call and332 numerical leaves.
+Aggregate native counters, in the frozen order, are:
+
+    ratio_calls       8,439,552
+    sin_cos_calls    18,980,740
+    pole_charts         17,900
+    global_fallbacks         0
+    lazy_S_skips           232
+    analytic_floor_skips     0
+    profile_scans          101
+    boards                999
+
+The analytic n>=64 floor correctly did not activate at n32. The232 lazy
+skips coincide with the232 passing far leaves. The full checker run has
+no hidden harmonic fallback; the zero global-fallback count also shows
+these particular losses cannot be attributed to resorting to the coarse
+global caps. This does not isolate a single tighter replacement formula.
+
+Old v3 accepted this exact candidate in139.405409 subprocess CPU seconds;
+the new failed check used31.414464 subprocess CPU seconds. This measures
+the cheaper unsuccessful replay only. Since the outcomes differ, it is
+not an accepted-certifier speedup or evidence of a complete cheap
+certifier. The mathematical source review remains valid for enclosure
+correctness; adoption on this unchanged tree fails its tightness test.
+
+### Frozen provenance and retained output
+
+Publication-content checks passed for every pinned code/data input and
+the supervisor. The candidate stayed21338 bytes with SHA`97c3391816...`;
+prototype SHA`178bbe5a...` and wrapper SHA`d3fc74db...` were unchanged.
+All5 project Python source modules, the Python executable, input snapshot,
+executed adapted builder, source snapshot, preprocessed unit, binary and
+254 build/runtime entries were checked unchanged after execution.
+The closure contains4 toolchain entries,13 toolchain-runtime entries,
+212 headers,6 dependency inputs,8 linked and8 actually loaded entries.
+Actual loaded mappings were checked in the worker before and after the
+full replay. Python3.12.14 and Debian g++14.2.0 were recorded. No seed is
+used by this deterministic replay.
+
+Essential receipt `evidence/c02-cheap-n32.json`:4417 bytes, SHA256
+`924e8ebbe15ff8fd9a46e1d6c6887ae77e47fa4533af548df864fcea19bf3f41`.
+It pins all raw artifacts and the exact command. Under
+`local-output/argmax-bridge-20261105/cheap-C02/n32/`:
+
+| Artifact | Bytes | SHA256 |
+|---|---:|---|
+| checker-report.json |189283|`fe8436d5d7e6232d9e235052abf7bd69a2833883a394c16a602ddb1fdd664157`|
+| native-calls.jsonl |120105|`7ed5e356b08d996800c48777351989c5875972afe83374bb8117d0c0281032d2`|
+| worker-accounting.json |152|`46c724a10715cd0d10dfbc95876ab9491df5bb689f8e31b4811a4d4816d3fd6e`|
+
+Raw outputs remain local and regenerable from the published source and
+frozen input; physical archive transfer is pending. The one-shot wrapper
+will refuse reuse of this output directory or essential receipt. Source,
+input, controls, old C01 reports, and the old accepted v3 receipt were not
+edited. No new degree or status of PD-T099 follows from this failed
+known-candidate replay. This authorized execution task is complete.

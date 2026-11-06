@@ -1,5 +1,37 @@
 # Padua argmax bridge — current research results
 
+## Fresh campaign checkpoint — 2026-11-06
+
+The independently checked global tail is now **n>=ceil(exp(10^7))**
+([proof](../topics/padua-argmax-bridge-20261105/theory/C03-effective-argmax.md),
+[review](../topics/padua-argmax-bridge-20261105/independent-checks-C03-effective.md)). The exact finite range
+remains2–40; the intervening gap is OPEN. C06 separately proves strict
+far comparison for log n>=256; C05 proves strict actual-corner comparison
+for log n>=25. Their global assembly is in progress, rather than already
+counted as an accepted global theorem.
+
+More substantially, C05 closes the **actual near NONCORNER comparison
+for every n>=10^6**, with gap869/28000, using the unchanged fixed model
+and the stronger all-class defect. [Finite-h proof](../topics/padua-argmax-bridge-20261105/theory/C05-finiteh-model-comparison.md)
+and [independent review](../topics/padua-argmax-bridge-20261105/independent-checks-C05-finiteh.md). The model
+bound needed here is1/32. Original tight C1 with1/4096 remains OPEN;
+the limiting residual estimate alone is not a finite-degree proof.
+
+The first cheap whole n32 replay **failed76/364 leaves**, in31.965CPU-s;
+this failure is preserved. The new C03 endpoint-monotonicity refinement
+has passed separate mathematical/source controls, and its mode0 whole
+replay controller has now passed distinct review. One full original-case
+run is pending publication/release; no new degree is claimed. The C02
+MPFR port is experimental and failed one of two saved tightness cases;
+no complete producer ran. The independently checked C06 partial-cotangent
+backend is a useful fixed-work component (76 cases,784 exact moment
+checks in2.69CPU-s), but full point-S and whole-box interfaces remain OPEN.
+
+Formal Claude audit remains PENDING; PR27 stays draft WORK. Historical
+checkpoints below retain earlier outcomes and are superseded by this dated
+checkpoint where thresholds or OPEN obligations have changed.
+
+
 The exact global corner-argmax range is **2–40**. Small complete
 certificates33–40 and separate exact C++/GMP checks prove the maximum
 and exact two-nonnode-corner equality set.

@@ -1,0 +1,51 @@
+{
+  "schema": "C02-row-independent-exact-controls-v1",
+  "status": "PASS",
+  "assertions": 118,
+  "cpu_seconds": 0.196677181,
+  "python": "3.12.14",
+  "source_sha256": "97d0d0d211a5542da93abe72e5a2bd0d66a8c7c737d508f64cdac7ab9b1b79f5",
+  "bernoulli_B64": "-106783830147866529886385444979142647942017/510",
+  "geometric_sum": "1520/81",
+  "polynomial_degrees": [
+    0,
+    1,
+    2,
+    3,
+    31,
+    193
+  ],
+  "em_cases": [
+    {
+      "K": 2,
+      "L": 1,
+      "q": 17,
+      "y": "1/10",
+      "exact_remainder_bound_pass": true
+    },
+    {
+      "K": 64,
+      "L": 32,
+      "q": 65,
+      "y": "1/10",
+      "exact_remainder_bound_pass": true
+    },
+    {
+      "K": 64,
+      "L": 32,
+      "q": 100,
+      "y": "1/10",
+      "exact_remainder_bound_pass": true
+    },
+    {
+      "K": 64,
+      "L": 32,
+      "q": 100,
+      "y": "5",
+      "exact_remainder_bound_pass": true
+    }
+  ],
+  "open_arc_cases": 75,
+  "command": "python topics/padua-argmax-bridge-20261105/code/cheap_c02_row_review/control.py",
+  "scope": "Supplementary exact controls; no production row evaluation, whole-box enclosure, cover, or degree certification."
+}
