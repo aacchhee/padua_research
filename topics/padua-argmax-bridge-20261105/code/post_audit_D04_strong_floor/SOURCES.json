@@ -1,0 +1,31 @@
+{
+  "input_head": "5264178be22cc80f61952ff4cc534e2866073d44",
+  "frozen_ancestors": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/producer.c",
+      "bytes": 6341,
+      "sha256": "270eb7b0f073efcb996c7c832f6e946d37b0e6f780fdac63fc66591332560a5e"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/c08_interval.h",
+      "bytes": 6575,
+      "sha256": "275936b502180f2d92af94eb2138815114ba75afb9c258cadffa44e580be0a03"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/build.py",
+      "bytes": 3463,
+      "sha256": "fff281f0c765025ec182937aff38398e7eedfd11b66bfeb36f105734b730d81f"
+    }
+  ],
+  "source_changes": "producer: one guarded floor expression; header identical; builder output destination only",
+  "registry": {
+    "path": "/workspace/padua_research/state/IDEAS.md",
+    "bytes": 291332,
+    "sha256": "68bf789c82967944421e6fc54f8164dbdb91d1096fa10694008261fbd54f9e9d"
+  },
+  "premise": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/theory/C02-defect-dense-band.md",
+    "bytes": 15433,
+    "sha256": "d28bbc8f7ae3823ff220b452630b0c30c939b9851fa0c151d2ac5962a301dec7"
+  }
+}

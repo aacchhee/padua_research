@@ -1,0 +1,11 @@
+--- cheap_C08_mpfr/producer.c
++++ post_audit_D04_strong_floor/producer.c
+@@ -35,7 +35,7 @@
+  double cu=up(upper(cq,ra,rb)/(4*norm));out[1]=cu;out[5]=up(cq.natural/(4*norm));
+  if(!isfinite(cu)){free(h);return 2;}
+  if(!local&&cu>=threshold){free(h);return 0;}
+- if(n>=64&&full_half_radius(al,ah,bl,bh)){out[2]=1./2048;out[3]=1;c08_stat[6]++;free(h);return 0;}
++ if(n>=64&&full_half_radius(al,ah,bl,bh)){out[2]=n>=160?1./32:1./64;out[3]=1;c08_stat[6]++;free(h);return 0;}
+  c08_stat[7]++;
+  /* Reuse the rigorous mathematical pair-defect predicate; floating intervals
+     here are only diagnostics. Take maximum with analytic constant. */
