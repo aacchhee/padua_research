@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **23/40** (D01–D20, D22, D24 and D25). Active: **D21** fixed static benchmark; D23 matched backend trial, D24 far refinement and D25/D26 analytic work in parallel.
+Completed: **25/40** (D01–D20, D22, D24–D27). Active: **D21** fixed static benchmark; D23 matched backend trial, D24 far refinement and D25/D26 analytic work in parallel.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -21,7 +21,7 @@ Completed: **23/40** (D01–D20, D22, D24 and D25). Active: **D21** fixed static
 | D08 | COMPLETE | Lower global analytic onset; point-to-box reduction | Global theorem independently accepted for every n>=50000, primary40000 far failure preserved. Three split point-to-box proofs independently accepted with no findings; no patch instances. |
 | D09 | COMPLETE | Three-point actual-corner trial and a useful independent global norm | Global M512=34 accepted; primary three-point trial PASS11.265CPU and fresh independent replay PASS11.016CPU. Whole actual-corner rectangles certified with19/5 radial-square loss. Full global512 stillOPEN. |
 
-Current boundary: exact argmax2–40,512,2048 and every integer n>=7000;41–6999 excluding512/2048 OPEN.
+Current boundary: exact argmax2–40,512,2048 and every integer n>=4096;41–4095 excluding512/2048 OPEN.
 
 The initial scientific boundary is exact argmax degrees2–40 and alln>=500000,
 with exact two parity-correct corners. Gap41–499999 staysOPEN. Claude's
@@ -69,11 +69,14 @@ AC clarification: pack preparation waits until research ends and is necessary on
 
 | D24 | COMPLETE | Sharper far completed-constant bound | Independent review accepts new rho<=3/4 extension and wholefar coefficient25/2, no scalar/onsetclaim. |
 | D25 | COMPLETE | Actual-origin relative outer quadrature | Independent adversarial review accepts outer relative rho[(35/2)logn+75]/n; all movingmesh/cusp/removal terms explicit, no jobs. |
-| D26 | PREPARING | Global4096 analytic assembly | Fixed4096ONLY source/SPEC/math preparation using D24ifaccepted; no scalar before rootrelease. |
+| D26 | COMPLETE | Global4096 analytic assembly | Independent27interval/15control replay accepts exact GLOBALargmaxEVERYn>=4096; far1/6,near3/2000,corner1/8. |
 
-| D27 | PREPARING | Wider analytic actual-corner bridge | New pi/4 square and D20error/globalnorm; fixed1024ONLY scalar after proof/source/SPEC/rootrelease, no nativejobs. |
+| D27 | COMPLETE | Wider analytic actual-corner bridge | Independent34interval/10control replay accepts actual-cornerpi/4squares loss1/8EVERYn>=1024; no global1024claim. |
 
 | D28 | PREPARING | Full cheap static pipeline and independent replay | Same6912/41point witness, D23backend and cheaper supervision; firstsource freeze/audit before independent execution. |
 | D29 | ACTIVE | Practical defect floors for generic certification | Paper-only5121/20 and41positive-floor targets with explicit olddomainlimits, no numericaljobs. |
 | D30 | ACTIVE | Two-region far telescope | Paper-onlyrho3/4 split and retained-row extension, no scalarsearch. |
 | D31 | PREPARING | Exact-radical near2048 comparison | Fixed2048ONLY; D25outer plusD22exactradicalenvelope, source/proofaudit before <=5CPUprimary. |
+
+| D32 | REVIEW | Lower-domain generic sufficient contract | Paperadapterfrom41 with actualnear radiusfloors andnorm/corner witnesses, no degree/jobclaim. |
+| D34 | PREPARING | First adaptive cheap n41 prototype | C23cachedS producer plus3actualpoints, fixed120CPU/256S/2047nodes/depth18 only aftermath/sourceaudit androotrelease. |

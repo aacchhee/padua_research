@@ -470,3 +470,8 @@ The distinct D20 review accepts all four split scopes with no findings. Root now
 
 
 D22 is independently accepted: a fully charged partial ACTUAL-origin subtraction and anisotropic envelope give near noncorner exclusion at every n>=4096 with gap3/2000, entirely by rational paper inequalities. Actual-corner loss1/8 already holds from4096. Far exclusion still binds the global boundary7000. D24 has a new developer far-constant improvement under review; global4096 is not yet proved.
+
+
+### Current analytic boundary4096; actual corners1024
+
+D26 final independent result review accepts exact two-corner global argmax for EVERYn>=4096, with far1/6 and near noncorner3/2000 gaps. D27 separately accepts actual-corner loss1/8 on the larger pi/4 squares from1024. Full physical/parity/collision coverage and explicit PD271 provenance remain; no global1024 follows. The first matched cheap-backend point trial improves2.453814→.431206CPU; fullcover independent6912 benchmark is separately released, and no uniform speed claim follows.

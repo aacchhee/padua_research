@@ -219,3 +219,72 @@ the fixed primary under its authorized protocol. A new all-n conclusion
 still requires the first actual outcome and the later independently
 preregistered directed replay; that execution is not authorized by this
 report alone. First failures, if any, must remain preserved.
+
+## Result completion — 2026-11-06
+
+**FINAL ACCEPT: the existing exact far/global targets hold for EVERY
+integer n>=4096. No unresolved finding.** This dated completion preserves
+the12595-byte prerelease prefix, SHA256
+`f50f64f389e25f97b72954a35c5f72692cf7c488632a3347020deb67a0ee3709`.
+Its earlier OPEN/no-execution statements describe the prerelease stage.
+The author confirms its proof/attempt files still have the prerelease
+hashes above; root owns their result/status closure. The following
+verified endpoint discharges precisely their written conditional premise,
+with no formula or claim change.
+
+Root reports the sole PRIMARY4096 invocation after publication at
+`9ec4521d8e954e3283e86f724b4bf1d67468e915`, tool chunk579ea3, EXIT0.
+Its preserved5498B receipt has SHA256
+`132c03cbda7a2bd10f4f962a5a67ea373941b9ee4fca53c48ea765db0a95e408`;
+all15 controls and passed=true, CPU before receipt0.032066 seconds.
+I verified its bytes/identities and read the actual intervals; I did not
+perform that primary invocation or infer exit status from the receipt.
+
+After root's separate authorization, my own source and SPEC were frozen
+and communicated BEFORE the sole independent command:
+
+    python3 topics/padua-argmax-bridge-20261105/code/post_audit_D26_review/check.py --run-once
+
+Observed EXIT0, tool chunka8fdcb. All27 scalar intervals and the pi
+interval are contained in the primary enclosures; all15 exact controls
+match and pass. Actual key sets/counts and input hashes were checked
+and recorded before arithmetic. The independent gate enclosure is
+
+    [0.1671480439691848334124644363380586547759478293496472098223486356336713,
+     0.1671480439691848334124644363380586547759478293496472098223486356337255].
+
+In particular FarGate>0.1671480439691848334>1/6 by exact rational
+comparison. The previously reviewed strict real-n monotonicity and
+phase-u reduction therefore prove S_n<Lambda_c-1/6 on the entire
+closed signed far diamond for every integer n>=4096. Accepted D22
+near-noncorner gap3/2000 and D17 inward corner loss(A^2+B^2)/8,
+with the closed physical cover already checked above, prove the exact
+two-corner maximizer sets for both parities at every such n.
+
+The replay uses only seven AST-selected definitions from the accepted
+independent D08 arithmetic source. It does not import author code or
+execute an old main. Directed Decimal70 basics, positive90-term atanh
+logarithms with explicit geometric tail, rational Machin70/20 pi and an
+exact integer80-decimal-place square-root bracket provide independent
+transcendental enclosures without Decimal ln/sqrt. Expanded Gg and
+regrouped scalar terms cross-check the author's component sum. All
+source/SPEC/input identities are rechecked after arithmetic.
+
+Own source/SPEC in code/post_audit_D26_review/:
+check.py `43efb3afacfe937822fa5bffb855a0cb6d9b53403068c6ab0d8d2d9f733384f1`;
+SPEC.md `d70549ec88c9eba6e5b59e2212e5b45cdec3d4bf421fe3ee2a478605395ce8e8`.
+Own evidence in evidence/post_audit_D26_review/:
+identities.json2038B
+`bc59b575a8e8aa1aa31bc78828cb4401902c309eb22430c2c41147c75d1e8157`;
+scalars.json7131B
+`92902210673f2ff28c79d30d04e9f3aa28014757af17310efde0c378bd9a14de`.
+The independent run used0.086363 CPU seconds through pre-serialization,
+under the whole-process soft9/hard10 limit, with no children. The final
+output CPU check also passed; the checkpoint is not an exact exit CPU.
+No retry, threshold scan, additional degree, native/S/lambda/phase/board/
+quadrature computation or source retuning occurred. D23/D28 executions
+are outside this record and were not launched.
+
+Inherited limiting-origin premises and earlier failures remain. No minimum
+onset, residual finite coverage, full D13 theorem or performance claim
+follows. Root integration and final Claude audit remain separate.

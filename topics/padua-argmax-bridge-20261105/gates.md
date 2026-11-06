@@ -188,3 +188,6 @@ D24 accepted600b3956...: domainextensionrho<=3/4 and wholeFAR trueconstant relat
 
 
 D25 accepted ff101f70...: regularouterACTUAL-origin increment fullyrelative alln32closednear. D26pre-release f50f64f3... accepts original4096source/conditionalassembly; rootfirstendpointrelease inLOG, notyetglobal4096adoption.
+
+
+D26 finalACCEPT e40c805f... rootglobalonset4096 (far1/6,near3/2000,corner1/8). D27 finalACCEPT830eaf21... actualcornerpi/4squaresfrom1024loss1/8, no global1024claim. D28independentfullcheapreplayreleaseinLOG; D31andD30remainpending.

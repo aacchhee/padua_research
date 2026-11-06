@@ -816,3 +816,21 @@ Report600b3956... ACCEPTS both frozen proofs with no unresolved findings. Root a
 
 - RootexecutedexactD26frozen4096commandONCE after9ec4521dpublication; toolchunk579ea3 directlyreportsEXIT0. Receiptpassed=true, all15controls, FarGate>.1671480439691848334, CPUcheckpoint.032066 beforefinalreceipt. Firstpersistedreceipt copiedbyteidenticaltoevidence/d26-budget4096.json. No fallback/thresholdscan/sourcechange/retry. Independentfresh4096directedreplay nowreleased toprerelease reviewer with ownsource/SPEC/cap10 beforeexecution. Global4096adoptionwaitsfinalresultreview.
 - D27 prerelease report1473ba56... ACCEPTS original pi/4corner1024mathematicalreduction/globalnorm/source/SPEC unchanged. Root releases EXACTfrozen evaluate.py--run-once N1024ONLY afterthispublication, <=5CPU/nochildren, no source/parameter/precision/case/caprescue. Corner1024stillOPENuntilfirstpersistedPASS+EXIT0 andfreshindependent1024replay.
+
+
+### D34 prospective adaptive cheap n41 prototype
+
+- TechnicalSolmedium source/SPEC preparation only, following newD32genericn41contract (distinct review pending) andacceptedD29floors. Fixed FIRSTn41ONLY, no FLOAT discovery:13coarsegrid freshC23Svalues establishM; deterministicexactmidpointphaseproducer queriescachednewSvertices andfreshD07threeactualcornerpoints. Everyoraclecall/outwardendpoint isauthenticated; fullrawtrace retained offGit.
+- Proposed whole120CPU/control2/worker100/safety110/completed10/unfinished15, atmost256uniqueSpoints plus3lambda,2047nodes/depth18. ExactleafFAR/NEAR/SPLIT tests and actual-near radiusfloor decide splits; no newcase/seed/source/order/precision/caprescue afterfirstfailure. No existence/termination guarantee. Finalnorm may choose a PREDECLAREDminimumofindependentlyvalidcoarsegrid/adaptivebounds, retainingallpremisesofchosenwitness and recomputingallpredicates/cornercriterion.
+- A compact essential proof certificate mayretainALL finalSvertexUPPERS, actualoriginLOWER, actualcornerpointUPPERS, finalgeometry/norm/floors/sourceidentities. Nonproof diagnostics/fullradii/counters/build/runtime/allvisitedpoints remain asONEwholeoffGit rawtracewithhashprovenance; this is essential-proofselection, notsplittingoutputs to evade16KiB. Firstwholecertificateoverflow remainsafailure. No native/control run untilmath/sourceaudit, publication androotrelease. Independentfresh retained-point replay required for degreeadoption.
+
+
+### D26 and D27 final adoption
+
+- D26 final e40c805f... preserves exact12595Bprereleaseprefix, ACCEPTS27freshintervals+pi/15controls andunconditionalalln4096far/globaltargets. Rootnowadopts exactglobalargmaxEVERYintegern>=4096: far gap1/6, near3/2000, actualcorner1/8. Residual41–4095 except512/2048OPEN. Sourceandfirstprimaryunchanged; independentCPUcheckpoint.086363, EXIT0/no retries.
+- D27 final830eaf21... preserves exact15548Bprereleaseprefix, ACCEPTS globalnormandactualcornerloss1/8onpi/4squaresEVERYn>=1024. FirstprimaryEXIT0passF>.14441754/radial>.23412. Independentall34intervals/pi/10controlspass, soleactualCPUcheckpoint.096387/Bashtime.104user,.000system. Missing/usr/bin/time launch-only wrapper attempt occurredbeforePythonstarted andiscanonicalintheD27review/execution.json; no scalarretry. Thisisnotglobal1024.
+- D26,D27complete,total25/40withD21/D23resultreviewoutoforder. D29positive/radiusfloorsfrom41areindependentlyaccepted84fbde47... (rootclosurepending), D30two-regionpaper isunderadversarialreview, D31radicalnear2048sourceunderprereleasereview.
+
+### D28 independent native release
+
+- Ordinarysource review15b80aa2... ACCEPTS unchanged FREEZE4769e50f... /SPECda0bce3a... /SOURCEd76247be..., ownmetadata11rejectionsPASS. Rootreleases EXACT D28controller--run-once afterthispublicationtoDISTINCTAstrahigh /root/d13_support_review as soleindependentexecutor. Sourceauthor/rootneverexecuteit. Same6912/41points/113Btree, freshC23backend/widerintervals, allfreshnorm/origin/leafchecks andoldnewdiagnosticguards. Fixed200wholeCPU/control2/worker180/safety190/call15/20/poll.25. No rescue/retry; onlyfinalaccountacceptedANDdirectEXIT0qualifies. Ownindependentmetadatareconstructionpreregisteredbeforeexecution. ThisreplaysD21independentlyandbenchmarksfullcheappipeline; no newcaseoruniformspeedlaw.

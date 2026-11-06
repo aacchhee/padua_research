@@ -1,0 +1,13 @@
+{
+  "status": "PASS_METADATA_SYNTHETIC_ONLY",
+  "freeze_sha256": "4769e50fbedcdfc54ce771a60f2870e725db71a04ea8933c9c0d6bd1655cf150",
+  "frozen_files": 14,
+  "baseline_rows_metadata": 41,
+  "synthetic_rejections": 11,
+  "cpu_through_receipt": 0.012344765,
+  "check_sha256": "eee2a4a07e3b6cc97284f9c2d7ae049f0dda089b89276892d9491beb4f243e68",
+  "native_calls": 0,
+  "author_controls": 0,
+  "controller_invocations": 0,
+  "limit": "soft1/hard2CPU; no children; receipt serialization/return remain inside hard limit"
+}

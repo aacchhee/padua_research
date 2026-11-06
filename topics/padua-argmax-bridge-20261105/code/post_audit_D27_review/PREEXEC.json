@@ -1,0 +1,18 @@
+{
+  "N": 1024,
+  "cpu_cap_seconds": 10,
+  "input_head": "4f8c169171e55b7d5f00f57a8b3ce8340a498960",
+  "inputs": {
+    "code/post_audit_D27_review/check.py": "eb9496b89c6382b5e7029de3fe8fbb6eb8fb1bc5ef1bf5bc6e204439703b6a26",
+    "code/post_audit_D27_review/SPEC.md": "af9c976a8b094c56e4c7e626b6a5623b9f43c78d584713c86ed5d55b164ff154",
+    "code/post_audit_D27_corner/evaluate.py": "2d700d172f3c4c86493751289a96fb9e066fa6173c3c599df1a60b9028f9297f",
+    "code/post_audit_D27_corner/SPEC.md": "106baa1c04632e6ab26e4220addc6e5aaa01b3b5d3250b88f17ceacc3f30717f",
+    "code/post_audit_D27_corner/budget-1024.json": "252e48bb9031f013bb54774f7eab18a8452e579be267bcd5f6df0deb540609ad",
+    "code/post_audit_D08_review/check.py": "37e58bc880259c27cd2282dab48231f11822452d6fd2db876c846d1b9a008485"
+  },
+  "reviewed_theory_hashes": {
+    "D27-global-norm.md": "653a15b5a7b4b3fb9f719d74d53efc9d295adf65c40deb62001a61f153fdad1b",
+    "D27-wide-corner.md": "468692e38256387e8f5c9e3626d857ad0dd6b319d115705256da3a3ab05067ea"
+  },
+  "no_scientific_execution_before_this_freeze": true
+}

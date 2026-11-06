@@ -113,3 +113,8 @@ or resolve full D13 phase-relative errors. Old D20/D24 formulas,
 source and evidence remain unchanged. 2026-11-06, parent-assigned
 Codex gpt-6.1-sol xhigh; rules/input
 0174900a19087d728f3f947b52f205e5b76b0a41, serving metadata unexposed.
+
+
+## Current result and root review closure — 2026-11-06
+
+Current status: **PROVED**. The sole primary4096 endpoint and independent directed replay passed. Final review [D26](../independent-checks-D26-onset.md), SHA256 `e40c805fc98b8e591b807ff9e2a91f0d664a5ab641219be197bbc95cd9d35455`, accepts the strict far gap1/6 on the complete closed signed far diamond for EVERY n>=4096, and the full parity-correct two-corner global argmax via accepted D22 near gap3/2000 and D17 actual-corner loss1/8. Root adopts those exact scopes. Primary FarGate>.1671480439691848334; independent27intervals+pi/15controls agree, firstexecutiononly. Historical prerelease OPEN text above is preserved; no scope below4096 follows. Final Claude audit remains separate.

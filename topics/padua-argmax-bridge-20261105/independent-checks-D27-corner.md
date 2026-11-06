@@ -289,3 +289,105 @@ they are not substituted into historical execution receipts.
 Prerelease scope is closed with no unresolved finding. The endpoint,
 independent execution, final corner theorem and root adoption are pending;
 there is no global1024, noncorner/far1024, minimum-onset or full-D13 claim.
+
+## Sole independent endpoint and completed review — appended closure
+
+This section is appended after the unchanged15548-byte prerelease
+prefix, SHA2561473ba56312ab3817fa323c66b16caf0a21b3d1e69c3b0bdb6b1d1d692858055.
+It preserves the earlier OPEN chronology rather than rewriting it.
+
+**FINAL ACCEPTED, no unresolved finding:** the global norm and the
+completed actual-corner statement hold for EVERY integer n>=1024.
+On both parity-correct closed pi/4 inward squares,
+
+    Lambda_n(alpha,beta)
+      <=Lambda_c(n)-(alpha²+beta²)/8,
+
+with equality at the origin and strict descent at every other point.
+The independent scalar actually proves the larger uniform sufficient
+coefficient16F(1024)/pi²>0.2341208994>1/8. This follows from the
+prereviewed all-real-n monotonicity and general D08 implication; it is
+not merely a statement at one sampled degree or three sampled points.
+
+Root reported the single primary run after publication4f8c1691, direct
+tool chunke2a33b with exit0. The full author receipt was independently
+read and pinned: budget-1024.json SHA256
+`252e48bb9031f013bb54774f7eab18a8452e579be267bcd5f6df0deb540609ad`.
+It reports passed=true, all10 controls true and a named pre-serialization
+CPU checkpoint0.038303. That is the author's execution, not a run claimed
+by this reviewer. Its source/SPEC identities match the prerelease freeze.
+
+Root then explicitly released this reviewer's ONE fresh N1024 scalar
+under10CPU. Own source/SPEC/PREEXEC hashes were communicated before
+execution. The actual frozen author set contains34 scalar intervals;
+the brief's31 count was corrected before execution, and all34 were
+required. Before arithmetic the source checked the exact input hashes,
+N1024, author pass and complete key set, then exclusively wrote its
+identity receipt. It imported no author evaluator.
+
+Six AST-selected definitions from accepted independent D08 source
+37e58bc880259c27cd2282dab48231f11822452d6fd2db876c846d1b9a008485
+supplied directed Decimal70 basics, exact rational Machin70/20 pi and
+90-term positive atanh logarithms with geometric tails after exact dyadic
+reduction. No Decimal ln/sqrt or author D06 code executed. Every formula
+was independently restated. Gg used its expanded expression, E6 its
+combined expression, and F the fully expanded monotonicity expression,
+cross-checking the author's different arithmetic arrangement.
+
+One launcher-only failure preceded the sole scientific execution:
+tool chunk6962cd exited127 because /usr/bin/time is absent. Python and
+the scientific script never started; the identity receipt was still
+absent. This is a documented deviation from the SPEC's proposed timing
+wrapper, not a failed scalar followed by a rescue. It was communicated
+to root before using Bash's built-in timer around the SAME frozen
+command. Source, precision, parameters and receipt paths stayed unchanged.
+The failed wrapper attempt is retained in execution.json.
+
+The actual scientific command was:
+
+    python topics/padua-argmax-bridge-20261105/code/post_audit_D27_review/check.py --run-once
+
+It completed on its FIRST invocation, tool chunkc7f352, observed exit0.
+All34 independent intervals are contained in their respective author
+intervals; the independently reconstructed pi interval is also contained.
+All10 exact/control predicates agree and pass. The independent result is
+ACCEPT_INDEPENDENT_D27_N1024 and proves
+
+    F(1024)>0.1444175412061567,
+    16F(1024)/pi²>0.2341208994>1/8.
+
+The complete34-row directed receipt retains70-digit endpoints, rather
+than only those shortened displayed bounds. Its CPU checkpoint through
+pre-serialization is0.096387seconds. Bash's FINAL whole-process report
+is user0.104/system0.000seconds and elapsed0.104seconds at its displayed
+millisecond resolution; it is distinguished from the internal checkpoint.
+The Python process had soft9/hard10CPU limits including imports, AST
+compilation, arithmetic and finalization, and created no child process.
+No cap, scientific retry, threshold scan, parameter/precision change,
+native/actual-point/phase/board/quadrature/degree job occurred.
+
+| Owned artifact | Bytes | SHA256 |
+|---|---:|---|
+| code/post_audit_D27_review/check.py |7838| `eb9496b89c6382b5e7029de3fe8fbb6eb8fb1bc5ef1bf5bc6e204439703b6a26` |
+| code/post_audit_D27_review/SPEC.md |2565| `af9c976a8b094c56e4c7e626b6a5623b9f43c78d584713c86ed5d55b164ff154` |
+| code/post_audit_D27_review/PREEXEC.json |1070| `4728898f8db2c2fe77d8d7f99c0551b24169a27d146e427c6f117ff818fd6739` |
+| evidence/post_audit_D27_review/identities.json |1661| `17b9d58fc5b3b9f66a0ebc2d8e8b15fd16d1153722407c2c2250dfbf19446ef7` |
+| evidence/post_audit_D27_review/scalars.json |8508| `fca88ecf2cd2891d1a902d4342849f620dd93e5f59b38848d2ebf751a0bddd80` |
+
+The identity and full scalar receipts total10169bytes, below16KiB
+COMBINED. The small execution record additionally preserves the failed
+wrapper and successful process observations; the aggregate essential
+evidence remains below16KiB. There is no output splitting to avoid the
+size limit, no old binary dependency and no claim of hermetic runtime
+closure. The explicit Python integer/Decimal basic-arithmetic contract,
+proved series tails and inherited PD271 Arb constant remain trusted
+dependencies. This is independent directed scalar verification, not a
+native point replay or a new evaluation of the limiting corner constant.
+
+The frozen corner theory's sufficient implication is now fulfilled by
+actual independently checked evidence. Its historical pre-execution OPEN
+wording is superseded by this completed review; root handles the canonical
+developer result/closure and adoption. No author file or shared/Git record
+was changed here. Noncorner/far/global1024, minimum possible onset and
+the full D13 relative remainder are still outside this conclusion.
+Final Claude audit remains separate.
