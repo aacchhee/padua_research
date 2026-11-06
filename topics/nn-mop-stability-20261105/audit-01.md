@@ -287,7 +287,7 @@ None.
   - (c) multi-path step-line redundancy combined under zero curvature;
   - (d) the coupled updater, IDEA-378.
 - Only LOG.md:16 mentions (a)–(c), and candidates-D3-D5.md:61 says "not newly claimed biorthogonal Lanczos or a core updater". They have no provisional IDEA records.
-- D1's alternative mechanisms named in the plan are likewise unrecorded: Vandermonde conditioning and potential-theoretic node density.
+- D1's alternative mechanisms named in `handoffs/01-work.md:58` are likewise unrecorded: Vandermonde conditioning and potential-theoretic node density.
 - AGENTS.md requires every considered candidate to be preserved with a scoped reason.
 - Fix: give each a provisional IDEA record containing:
   - closest entries: LIT-347 IEP_CORE, IDEA-378/379, IDEA-031/090;
