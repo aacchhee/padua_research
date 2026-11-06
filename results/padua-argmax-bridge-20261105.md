@@ -47,7 +47,11 @@ accepted interval moment evaluation and fixed J16 tuning now give
 are point costs, not whole-certifier costs. Direct moving-root whole-box
 enumeration has a proved fixed-width quadratic obstruction; the guarded
 linear-work convexity escape is independently accepted mathematically
-and its implementation is in progress. The new MPFR producer component has passed
+and its C12 native S-upper implementation is independently accepted
+within guarded n<=4096 calls. A tighter coherent-global variant is
+in independent review with mixed measured quality; selected known far
+leaves still fail its strict upper predicates. No full replacement
+certifier is claimed. The new MPFR producer component has passed
 independent review after a geometry guard repair; its complete known-case
 producer run is not yet released.
 
@@ -56,7 +60,7 @@ quarter target and earlier failed mechanisms remain preserved in their
 records. They do not close the finite global gap. No practical Syvert pack
 is ready. Major archive cleanup remains a separate topic.
 
-Eleven fresh coordinated rounds are complete; useful C12/C13/C14 work continues
+Thirteen fresh coordinated rounds are complete; C13/C15 work continues
 within AC's authorized allowance of15. Formal **Claude Opus5.5 xhigh audit
 is PENDING**; independent Astra checks supplement it. PR27 remains draft
 WORK with final shared-registry application pending. See the

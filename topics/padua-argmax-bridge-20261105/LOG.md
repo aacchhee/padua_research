@@ -379,3 +379,17 @@
 - Essentialindex compactedv1→v2columnrows tostaybelow16KiB withoutsplittingevidence. Exactroundtrip preserves all116oldpath/byte/hashtriples; fournewC10/C11receiptsgive120rows,index13458bytes. Noresultcodeconsumesindexschema (rgchecked); allidentitiesverified. This is necessarysmall-indexmaintenance, notmajorarchivecleanup.
 
 - Million-theorem sourcecheckpoint sizeverification: conservative generatedoutput7,866,167bytes<10,000,000;120essentialevidenceentriesverified, each<16KiB, compactindex13458bytes. StagedPythonAST andwhitespacePASS. ActiveC12–C14filesexcluded; frozenproof/reviewhashesunchanged.
+
+### C15 final authorized research round — prospective scope
+
+- Start C15 as the final new round under AC's fresh15-round allowance. Objective: implement and independently validate the C14 coherent eight-vertex whole-box upper method, with bounded quality/cost comparison against C12 and known finite-point references. Source preparation may proceed from frozen written mathematics while its independent review runs; native testing/adoption requires accepted C14 math and accepted/repaired C12 base. Total author diagnostic budget90CPU includes compilers/helpers/supervisor/baselinecalls, with small whole-box cases and a few preregistered known-case comparisons. No full newdegree campaign, no unbounded producer/tree search and no silent model correction. Any further substantive mechanism is deferred rather than starting C16. Independent reviews, fixes within these scopes, publication and final handoff remain authorized completion work.
+
+- Formal-cross-model availability checked read-only: availabletoolmetadata containsnoClaude/Anthropicmodelrunner; `command -v claude` returnsnone (CodexCLIexists). NoformalClaudeauditwasrun orsilentlysubstituted. RequiredOpus5.5xhighauditremainsPENDING underAGENTS/WORKFLOW; thisdoesnotblockauthorizedresearchcheckpointing, but preventsPRreadiness. Thefinalhandoffwillnameexactrequiredreviewandcandidate.
+
+### Accepted C12 native whole-box contract and C14 global coupling
+
+- C12nativewholebox91700bd4... independentlyACCEPTED byrequestedAstraxhigh:391outer/361nativeassertions, original512finitecoscontrols, arbitraryvertices/value-onlyratiok4097 andforcedall-row/late-rowfallbacks;4.858237634CPU. Scopedrationalwholetriangle,n<=4096, Supperonly. Reviewerreceiptoriginal21739B waslosslesslyminified to11664B/hash2542d546...; rootparsedbothoriginal/localandnewJSONandverifiedequality. Datedreport833b9d... preservesoldreport/receiptpinslocally; no math/source/testchange. Authoredreport16939B isprose, notgeneratedevidence.
+- C14 coherentglobal8(A,p,q)vertexmath independentlyaccepted89accabe... atfrozenafd... . Sharedwholeactualrowfallback/maxafterrows andthinfreezeallowanceareproved; totalglobal-coefficientcubeerrorstillhasO(wH_n²)part. No universalfirstordercancellation/speed/nativeclaim. C12/C14roundscomplete, total13/15; C13recordrepairsandC15independentreviewremain.
+- C15authorfirstfrozenboundedcontrols MEASURED97assertions/8.110088CPU, source7f50...; independentreviewrunning. Qualitymixedand~2xC12CPU onselectedn32: modesttighteningonsomeboxes,wideningonothers, bothselectedfaruppersstillaboveLc. No fullcandidate/replacement/newdegreeclaim; noretry/adaptiveorder/C16. C13math supports500000 but MAJORsplitandMINORexplicitbaselinefindingsmustclosebeforepublication/adoption.
+
+- C12/C14 publicationverification:122essentialidentitiesPASS, each<16KiB,index13667B. Conservative stagedgeneratedoutput7,889,966bytes<10MB. StagedPythonAST/whitespacePASS, activeC13/C15filesheldforfocusedreviewclosure.

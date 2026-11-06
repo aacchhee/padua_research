@@ -91,12 +91,16 @@ with detailed timing scopes in the attempts.
 The direct moving-root whole-box interface and its fixed-width quadratic
 enumeration obstruction are now proved; a coefficient-convexity escape
 to guardedO(n) whole-box upper bounds is now independently accepted
-mathematically. Its first implementation is in progress, with tighter
-global coefficient coupling being investigated separately.
+mathematically. Its C12 native whole-box implementation is independently accepted
+for successful guarded calls at n<=4096, S upper only. C14 coherent
+eight-vertex coupling is also mathematically accepted. C15 native
+validation is under independent review: measured quality is mixed,
+roughly twice the C12 cost at n32, and neither row bound certifies the
+two selected known far leaves. A complete cheap replacement remains OPEN.
 
 ## Limits, resources and next work
 
-The fresh campaign has completed eleven coordinated rounds; C12/C13/C14
+The fresh campaign has completed thirteen coordinated rounds; C13/C15
 work continues under AC's allowance of up to15. The [campaign ledger](campaign-20261106.md)
 is authoritative for round outcomes, with historical direction totals in
 [rounds](rounds.md). Next scientific priorities are the practical far

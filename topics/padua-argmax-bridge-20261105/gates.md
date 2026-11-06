@@ -1,49 +1,41 @@
 # Bridge gates — coordinator record
 
-## Fresh campaign checkpoint — 2026-11-06
+## Current campaign checkpoint — 2026-11-06
 
-The independently checked global tail is now **n>=ceil(exp(10^7))**
-([proof](theory/C03-effective-argmax.md),
-[review](independent-checks-C03-effective.md)). The exact finite range
-remains2–40; the intervening gap is OPEN. C06 separately proves strict
-far comparison for log n>=256; C05 proves strict actual-corner comparison
-for log n>=25. Their global assembly is in progress, rather than already
-counted as an accepted global theorem.
-
-More substantially, C05 closes the **actual near NONCORNER comparison
-for every n>=10^6**, with gap869/28000, using the unchanged fixed model
-and the stronger all-class defect. [Finite-h proof](theory/C05-finiteh-model-comparison.md)
-and [independent review](independent-checks-C05-finiteh.md). The model
-bound needed here is1/32. Original tight C1 with1/4096 remains OPEN;
-the limiting residual estimate alone is not a finite-degree proof.
-
-The first cheap whole n32 replay **failed76/364 leaves**, in31.965CPU-s;
-this failure is preserved. The new C03 endpoint-monotonicity refinement
-has passed separate mathematical/source controls, and its mode0 whole
-replay controller has now passed distinct review. One full original-case
-run is pending publication/release; no new degree is claimed. The C02
-MPFR port is experimental and failed one of two saved tightness cases;
-no complete producer ran. The independently checked C06 partial-cotangent
-backend is a useful fixed-work component (76 cases,784 exact moment
-checks in2.69CPU-s), but full point-S and whole-box interfaces remain OPEN.
-
-Formal Claude audit remains PENDING; PR27 stays draft WORK. Historical
-checkpoints below retain earlier outcomes and are superseded by this dated
-checkpoint where thresholds or OPEN obligations have changed.
-
+The actual global theorem now covers every integer **n>=1000000**,
+with exactly the two parity-correct nonnode corners, plus the unchanged
+finite exact range2–40. [Proof](theory/C08-effective-million.md),
+[independent reconstruction](independent-checks-C08-global.md).
+The remaining gap41–999999 and all-degree PD-T099 remain OPEN.
+Older dated gate notes below are historical and superseded here.
 
 Original B0–B6 criteria remain unchanged in [handoff01](handoffs/01-work.md).
-An operational clarification is recorded separately rather than editing them.
+The mathematical result does not silently pass unexecuted performance
+gates or establish a practical meet-in-the-middle compute projection.
 
 | Gate | Current verdict | Evidence / remaining obligation |
 |---|---|---|
-| B0 | PASS | [Fresh replay](independent-checks-b0.md): both n24 certificates accepted/exact; all n32 pilot deterministic counts match; later prose-pin changes traced to frozen originals |
-| B1 | FINITE MAP COMPLETE; CONTINUOUS EXTREMA OPEN | [Margin anatomy](margin-anatomy.md), seven degrees; no pass/kill attached to B1 |
-| B2 | PASS FINITE FLOAT THROUGHPUT/COUNTS; OUTWARD OPEN | Verified-radius variant completes33/64/128 with decreasing counts; n64<600CPU-s. Exact true-sign-radius kill unevaluated; no full outward cover |
-| B3 | OPEN | N1 has explicit degree-dependent row error, but no compact phase/log model or proved onset |
-| B4 | BLOCKED ON INPUTS | No proved explicit analytic n1 or measured new-certifier throughput yet |
-| B5 | UNRESTRICTED EQUIVALENCE; CLASS-ONLY OBSTRUCTION | N4 proves unrestricted iff norm bound and mode-diagonal positivity iff complementary grid; general N4 OPEN, original kill retained |
-| B6 | NO CONFIRMED COUNTEREXAMPLE | A failed sufficient predicate is not a counterexample |
+| B0 | PASS | Frozen fresh exact replays remain accepted |
+| B1 | FINITE MAP COMPLETE; CONTINUOUS EXTREMA NOT COMPUTED | Historical seven-degree measurements remain scoped; new analytic phase inequalities are separate proofs |
+| B2 | ORIGINAL FINITE FLOAT PASS; OUTWARD KNOWN-CASE VALIDATED | Complete immutable n32 checker now46.09totalCPU,3.08x lower subprocess cost; no higher-degree box-count scaling theorem |
+| B3 | ANALYTIC GLOBAL OBJECTIVE CLOSED FROM10^6 | Fixed near/full-phase models plus exact defect/corner comparisons prove actual global tail; original B1 half-margin comparison is not separately recomputed or relabeled |
+| B4 | RESOURCE PROJECTION OPEN | Explicit n1=1000000 now exists, but whole-certifier throughput across41–999999 is unproved/unmeasured; no Syvert pack justified by point timings |
+| B5 | UNRESTRICTED EQUIVALENCE; CLASS-ONLY OBSTRUCTION | N4 specified classes remain stopped, broad route deferred; no unrestricted counterexample |
+| B6 | NO CONFIRMED COUNTEREXAMPLE | Insufficient predicates or capped runs are not counterexamples |
+
+The first cheapC02 whole replay failed76/364 and is preserved. Refined
+C03 mode0 passed all364 unchanged regions with no retry/mode switch.
+C11's independently accepted linear-work point evaluator costs.150CPU
+at n128 and2.456CPU at n2048 in bounded pilots. C09's guarded linear-work
+whole-box upper construction is mathematically accepted; C12's source
+implementation is independently accepted within n<=4096 whole-triangle
+S-upper calls; C15 quality remains experimental. Point-only performance is
+not full certification throughput.
+
+Thirteen fresh rounds complete; C13/C15 active; all fifteen rounds started, no C16 authorized.
+C13's same-model lower-onset audit has no accepted smaller theorem yet.
+C14 explores tighter global coefficient coupling. One near correction
+remains the only one. Formal Claude audit PENDING; draftPR27 WORK.
 
 ## 2026-11-05 operational clarification before B1 execution
 
