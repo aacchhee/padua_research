@@ -20,3 +20,16 @@
 ## Runs needed
 
 - D0–D4 and T1–T6 as in handoff 01.
+
+## 2026-11-06 — Codex, gpt-6-astra high — continuation initialization
+
+- Role: orchestrator/developer, AC's explicit model selection retained.
+- Rules read in full at input head `ccd9e905d19c0c625c196c4a3f3e707058ed042a`:
+  AGENTS.md, agents/WORKFLOW.md, agents/codex/CODEX.md.
+- Fetched main `76ba4214b100c86a44941f5e9a662ce9ce48efb8` and requested topic
+  head. Main is an ancestor; no reconciliation commit is necessary.
+- Read BRIEF and open handoff 01. Its explicit parallel-worker instruction
+  authorizes delegation. Coordinator scope is [plan.md](plan.md), written
+  before research execution; [round ledger](rounds.md), [gates](gates.md).
+- D0 reproduction adds no novel content. New mechanisms remain gated on D0
+  and the full repository predecessor scan. No final ranges needed yet.
