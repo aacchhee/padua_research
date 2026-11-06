@@ -82,3 +82,11 @@ all n2..128 now have a distinct fresh exact verification of that energy
 threshold. No larger-patch phase complement was executed and no global
 range extension is inferred. The existing B2 measurements/17–32 complete
 phase validations are unchanged. All-n energy, B3 and B4 remain OPEN.
+
+## 2026-11-06 completed near-domain compaction
+
+M_near has no degree-growing sum and error<3/14000 on rho<=1/2,
+n>=10^6. This discharges the near-domain model-construction obligation,
+but B3 full maximum/far/corner comparison remains OPEN. The proved
+near-edge criterion reduces that class to M_near<=Lambda_c+1/4096,
+still unverified.10^6 is not an argmax onset. B4 remains blocked.

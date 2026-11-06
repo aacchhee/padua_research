@@ -145,3 +145,29 @@ survives. See [the retained outcome](ideas/N1-round5.md#round-5-outcome--2026-11
 This spends the one correction; it does not pass the complete B3 gate.
 The remaining central/interior sum and final comparison remain OPEN.
 No numerical fit, new source transfer or additional variant was used.
+
+## Round-6 gate — 2026-11-06
+
+Input 88e7023; there is no rules/IDEAS delta since the prior complete
+update. This is the explicitly authorized remaining central/interior
+representation of the same corrected N1 model, not another correction.
+Closest records are the retained IDEA-337/459 baseline and the exact
+N1-02/05/06/09–12 proofs. The distinguishing property is removal of all
+remaining degree-growing computational counts with additional uniform
+error <=1/7000 on rho<=1/2,n>=10^6. A new integral identity alone does
+not establish that property. The exact proposed singular subtractions,
+half-open collision convention, scope and cheapest test are recorded in
+[N1-round6](ideas/N1-round6.md) before derivation or computation.
+
+### Round-6 separation outcome
+
+The exact central coefficient is (q-p)_+; N1-14 proves a uniform BV
+residue through the vanishing-coefficient and root-threshold cases.
+N1-13 supplies uniform regular A/pole variation. N1-15 removes the
+remaining outer and special-row computational counts, with the stated
+additional error below 1/7000. Thus this continuation satisfies its
+specified representation difference, not merely an integral identity
+or another growing-sum rewrite. The full maximum/far-phase target is
+still OPEN. The equivalent central-series option and unused special-row
+deletion option remain recorded in the idea outcome. No new correction,
+numerical fit or source transfer was used.

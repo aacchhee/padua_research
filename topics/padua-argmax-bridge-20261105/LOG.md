@@ -1,7 +1,7 @@
 # Padua argmax bridge 33 ≤ n < N_* (PD-T099): log
 
 - Branch: `codex/padua-argmax-bridge-20261105` · Base: main `9322fba` (PR #25 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-argmax-bridge-20261105.` · Open handoff: [handoffs/03-research.md](handoffs/03-research.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-argmax-bridge-20261105.` · Continuation handoff: [handoffs/04-research.md](handoffs/04-research.md)
 - Reserved final-ID ranges: PD-T392–431, PD-N146–161, IDEA490–529, LIT598–613; first published f708a83. See ALLOCATIONS.md; final IDs not assigned.
 - Current claims: exact global range2–40; finite local patch2–128; reviewed compact endpoint and two-phase defect support; all-degree PD-T099 remains OPEN.
 - Open for AC: none at setup. The sandbox allowance is approved. Syvert is pre-approved under gate B4: syvert1 (16 cores, 256 GB) and syvert2 (32 cores, 128 GB), up to all of both for about a week, and AC launches it from Codex's run package.
@@ -236,3 +236,11 @@
 - Next N3 implementation must use an explicit new maximum-exclusion cover mode and independently reviewed holistic reduction, never silently call the old pointwise local predicate on the larger patch. That is future work, not an executed certificate.
 
 - Bootstrap publication size check: conservative6630792bytes, below temporary10MB;84 essential-evidence files remain individually<16KiB and index11513bytes. No phase implementation/rerun or off-topic cleanup is included.
+
+## 2026-11-06 — N1 round6: fixed-count near model completed
+
+- N1-13/14/15 are frozen and independently accepted at722e4ce...,9a3f4d...,ca3b98... . Regular A/Phi pole products have uniform variation; central I has coefficient d=(q−p)_+ times log|v−pi| with uniformly bounded entropy residue, including q=p and the zero-phase limit. Actual-cell/hole bookkeeping and at most eight exact harmonic pole terms per block remove the remaining degree-growing sums. No mathematical program/fit or bulk output was used.
+- The explicit fixed-count near model now satisfies |S−M_near|<3/14000<1/4096 for rho<=1/2,n>=10^6. This completes the corrected near representation, not a second correction and not a maximum theorem. Certified integral evaluation, model maximum comparison, far phases and actual onset remain OPEN. The finite3/4 bootstrap energy cannot be extrapolated from2..128 to n>=10^6.
+- Coordinator corollary C1 directly combines the reviewed N1 error and N5 edge deficit, with the same periodic primitive normalization/phase evenness. On all corresponding interior vertical-edge classes, lambda<M_near−491/1792000<M_near−1/4096. The condition M_near<=Lambda_c+1/4096 would give strict gap107/3584000. Distinct focused review accepts the algebra and domains; that model condition is an OPEN premise. Exact Fraction arithmetic checks the two rational differences.
+- AC explicitly renewed “I approve the pushes”; continue checked working-branch checkpoints without asking again. No main push/merge/tag or shared-rule edit is authorized.
+- Current bounded research jobs are complete and frozen. [WORK report](report.md) records the exact remaining gap and current gate verdicts. The next session instruction is [handoff04](handoffs/04-research.md), published in the following handoff-only commit.

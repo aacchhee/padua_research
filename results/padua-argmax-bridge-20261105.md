@@ -1,86 +1,57 @@
 # Padua argmax bridge — current research results
 
-The exact global corner-argmax range is **2–40**. Degrees33–40 have small
-complete certificates and separately executed exact C++/GMP acceptance,
-including strict off-corner equality classification.
+The exact global corner-argmax range is **2–40**. Small complete
+certificates33–40 and separate exact C++/GMP checks prove the maximum
+and exact two-nonnode-corner equality set.
 [Finite theorem](../topics/padua-argmax-bridge-20261105/theory/native-finite-range.md).
-All37–40 candidates passed their separate first exact replays. All-degree **PD-T099 remains OPEN**; no effective onset is known.
+All-degree **PD-T099 remains OPEN**; the bridge41<=n<N_* has no effective
+onset. The inherited eventual N_* remains non-effective.
 
-The independently reconstructed **local** corner patch covers every
-n2–128: kappa>=1/16000 and phase-square radius1/128. This gives local
-coverage, not a global maximum theorem for41–128.
-[Local theorem](../topics/padua-argmax-bridge-20261105/theory/N3-corner-batch.md).
+**Finite-dimensional near-phase model.** The degree-growing sums are now
+removed on rho=|alpha|+|beta|<=1/2. For every n>=10^6, the explicit
+fixed-count model satisfies |S_n-M_near|<3/14000<1/4096.
+[Model](../topics/padua-argmax-bridge-20261105/theory/N1-round6-near-model.md),
+[independent review](../topics/padua-argmax-bridge-20261105/independent-checks-n1-round6.md).
+This is an approximation-validity threshold, not an argmax onset. The
+one authorized correction is used; earlier proofs and the obstruction
+to the unchanged reported error bound are preserved.
 
-Analytic supporting results:
+**Actual-lambda deficit.** For n>=64, all interior complementary vertical
+edge centers and inward rho<=1/2, lambda<S_n-1/2048.
+[Two-phase defect](../topics/padua-argmax-bridge-20261105/theory/N5-two-phase-defect.md).
+Combining it with the new model gives lambda<M_near-1/4096 on that
+class for n>=10^6. The model condition M_near<=Lambda_c+1/4096 would
+therefore prove strict corner comparison there; that uniform condition
+is still OPEN.
+[Comparison criterion](../topics/padua-argmax-bridge-20261105/theory/near-edge-model-criterion.md).
 
-- Exact full-phase cotangent rows and sign/collision treatment
-  ([N2](../topics/padua-argmax-bridge-20261105/theory/N2-row-decomposition.md));
-  uniform fourth-order shifted-cotangent truncation
-  ([N5-01](../topics/padua-argmax-bridge-20261105/theory/N5-partial-cotangent.md)).
-- An explicit degree-dependent row-model error, cancellation quadrature
-  and a joint endpoint residual uniform in degree/log-degree
-  ([N1-05](../topics/padua-argmax-bridge-20261105/theory/N1-joint-endpoint-profile.md)).
-- The entire singular endpoint mesh and finite polynomial endpoint rows
-  now reduce to an explicit quadratic in log n, with fixed-size
-  coefficient evaluation and phase-uniform K4(1+log n)/n error
-  ([H4](../topics/padua-argmax-bridge-20261105/theory/N1-round4-endpoint-block.md)).
-  Independent review accepts the corrected double-collision proof.
-- The unchanged reported error certificate nevertheless exceeds0.06 for
-  every admissible R and n<=10^6. It cannot serve half-margin budgets
-  <=0.06; this is not a lower bound on true error
-  ([budget obstruction](../topics/padua-argmax-bridge-20261105/theory/N1-round4-budget.md)).
-- For n>=64, every interior complementary vertical-edge center and
-  inward two-phase radius |alpha|+|beta|<=1/2, actual lambda is below S
-  by1/2048 and below M by255/524288. Independent review accepts the
-  quantified proof
-  ([two-phase defect](../topics/padua-argmax-bridge-20261105/theory/N5-two-phase-defect.md)).
-  This does not prove the model maximum or E-C.
-
-**Practical certifier:** the unchanged complete n17 phase candidate now
-passes its separate Arb path:1288/1288 leaves,0failed/0pending, exit0,
-109.45checkerCPU-s plus1.29build/helperCPU-s. This is an alternative
-verification at a known degree, not a new degree or scaling law. The old
-364-failure baseline replay, failed hybrid and corrected NaN finding are
-preserved. [Verification record](../topics/padua-argmax-bridge-20261105/theory/N3-phase-n17.md).
-Floating33/64/128 covers remain measured at2028/1908/1794visits and
-12.22/47.46/162.65CPU-s; higher-degree outward calibration is next.
-
-N4/N6 provide scoped obstructions to specified transport/trace classes;
-broader routes are deferred, not rejected. No unread external paper is
-used as a transferred theorem or priority claim.
-
-Next: a gated coupled-error correction, remaining central/interior charts,
-and higher-degree outward cost/coverage. No B3/onset or B4/Syvert release.
-The required Claude audit remains pending; supplementary reviews are
-recorded in the topic. AC permits10MB total generated outputs for now
-and directs major cleanup to a separate topic.
-
-Matched outward calibration24/32 now also passes separately:1020/1020
-and992/992 leaves, no failures/pending,202.07/382.57checkerCPU-s, with
-unchanged arithmetic and the accepted common finite patch.
+**Independent outward certifier.** Complete phase covers at known
+degrees17/24/32 pass the separate Arb path, with zero failed/pending
+regions. Matched24/32 use1020/992 leaves and202.07/382.57checkerCPU-s.
 [Calibration](../topics/padua-argmax-bridge-20261105/theory/N3-outward-overlap-r6.md).
-These are known degrees, not an additional range extension.
+This validates the method; it adds no degree or all-n complexity law.
+The earlier failed whole replay and experimental NaN finding are retained.
 
-The larger N5 quarter-defect target remains OPEN. Its specific
-phase-blind full-band certificate is proved insufficient: a central
-subsequence limit is strictly below1/4, although all72 direct
-measurements pass the actual quarter target.
-[Scoped obstruction](../topics/padua-argmax-bridge-20261105/theory/N5-large-budget.md).
+**Corner bootstrap.** A proved maximum-absorption reduction eliminates
+the need for a prior global/corner norm ratio under an explicit energy
+premise. That premise W<=(3/4)n^4Lambda_c is now independently verified
+for every n2–128. It permits a half-phase corner patch in a future
+global cover; complement coverage and the all-n energy premise remain
+OPEN.
+[Reduction](../topics/padua-argmax-bridge-20261105/theory/N3-bootstrap-corner.md),
+[finite energy](../topics/padua-argmax-bridge-20261105/theory/N3-bootstrap-finite.md).
+The earlier pointwise phase-square1/128 local patch remains separate.
 
-The single N1 correction now escapes that old bound floor: exact finite-h
-rows plus periodic jumps and endpoint compaction give known error
-**<1/14000** for rho<=1/2,n>=10^6.
-[Corrected assembly](../topics/padua-argmax-bridge-20261105/theory/N1-round5-assembly.md).
-Independent review accepts all four component proofs. An O(n) central/
-interior outer sum and the far-domain model remain, so this is not an
-effective onset or B3 PASS.
+Other retained results include exact full-phase cotangent rows, uniform
+shifted-cotangent block error and scoped transport/trace obstructions.
+The stronger N5 quarter-defect target stays OPEN; only its preregistered
+phase-blind certificate was disproved by a strict limiting bound.
+[Obstruction](../topics/padua-argmax-bridge-20261105/theory/N5-large-budget.md).
+No unread external theorem or historical priority claim is transferred.
 
-A new [maximum-bootstrap reduction](../topics/padua-argmax-bridge-20261105/theory/N3-bootstrap-corner.md)
-uses the unknown global maximum in the local energy inequality and absorbs
-it at a putative maximizer, avoiding a prior global/corner norm ratio.
-Its energy premise W<=(3/4)n^4Lambda_c is now independently proved for
-all n2–128 by fresh MPFR/GMP threshold sweeps
-([finite energy](../topics/padua-argmax-bridge-20261105/theory/N3-bootstrap-finite.md)).
-This admits a half-phase corner patch for a future global cover; it
-does not supply the missing complement or an all-degree energy bound.
-No new global degree follows from this helper alone.
+Next: validated model evaluation/maximum comparison, far phases and
+remaining center classes/corner coherence; implement and independently
+review the bootstrap cover mode before new calibration. No B3 PASS,
+actual onset or B4/Syvert release. Required Claude audit remains pending.
+AC permits10MB total generated outputs for now and directs major cleanup
+to a separate topic; see the canonical LOG instruction.
