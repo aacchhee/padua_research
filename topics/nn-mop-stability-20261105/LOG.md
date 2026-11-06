@@ -1,9 +1,9 @@
 # NN MOP IEP: conditioning and stable algorithms: log
 
 - Branch: `codex/nn-mop-stability-20261105` · Initial base: main `b4d292e`; reconciled main `5adc3e2` (PR #24 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT (focused response re-audit and full G5 access-attempt audit) · Next: `Claude (Opus 5.5 xhigh): Continue codex/nn-mop-stability-20261105.` · Next handoff: [handoffs/05-reaudit.md](handoffs/05-reaudit.md).
+- Stage: PR (response-01 accepted in audit-02; G5 Claude run and PR preparation pending) · Next handoff: [handoffs/06-g5-run.md](handoffs/06-g5-run.md).
 - Reserved final-ID ranges: T432–471, N=162–177, IDEA530–569, LIT614–629; reservation only, no assignments. See ALLOCATIONS.md.
-- Claims: provisional analytic/exact PROVED and floating MEASURED records in theory/; general solver stability and matching sharp growth remain OPEN. [Claude audit-01](audit-01.md): no BLOCKING; four MAJOR findings answered in [response-01.md](response-01.md); material changes await focused re-audit.
+- Claims: provisional analytic/exact PROVED and floating MEASURED records in theory/; general solver stability and matching sharp growth remain OPEN. [Claude audit-01](audit-01.md): no BLOCKING; four MAJOR findings answered in [response-01.md](response-01.md); [audit-02](audit-02.md) accepted the response, with eight MINOR items for preparation.
 - Open for AC: none (2026-11-06 decisions below). Ask AC before using Syvert.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -116,3 +116,20 @@
 - G5 remains technically BLOCKED in this executor after the authorized retry: enabled-network GitLab Leuven/SIAM/arXiv GETs receive proxy CONNECT403, while Debian control succeeds; bounded public web routes expose no source archive. [Actual attempts](response-01/g5-access.md). No source retrieved, external runtime installed, external algorithm executed, or reproduction claimed. No access-control bypass, storage cleanup or Leuven contact.
 - Stage → AUDIT for focused material-change review and full review of the new G5 access attempt; earlier accepted claims remain as supported by audit01. The conditioning-growth and general stable-solver targets remain OPEN. No readiness/merge request. Only AC merges.
 - Handoff: [handoffs/05-reaudit.md](handoffs/05-reaudit.md), using the next unused number because04 is the current response handoff; its numbering typo is not copied.
+
+## 2026-11-06 — Claude, Opus 5.5 xhigh — audit-02 (focused re-audit and G5 review)
+
+- Rules read at `409e779`; merged main `f654e32` (PR #30; no topic file changed, and the rules are unchanged) at `8a2b65d`. Audited response output `d6760d7d593ea7e14eb9860f92ef2f3b5e0481d6`.
+- Three Claude Opus subagents (R1–R3) audited disjoint scopes. The orchestrator reran the three prescribed checks, plus a `-O` rejection test, and reviewed G5. Scripts: [audit-02/](audit-02/README.md).
+- [audit-02](audit-02.md): response-01 ACCEPTED; no BLOCKING or MAJOR. Stage → PR.
+  - All 12 committed projection witnesses were rebuilt exactly, every stored metric matching with relative difference 0.
+  - The localized lemma was reconstructed and tested exactly.
+  - Checker rejection paths fail as required.
+  - All 55 manifest rows match.
+  - New MINOR R-1 to R-8 go to preparation. They include restoring the D6/D4 gate chronology dropped by the MINOR 9 consolidation, and marking the undated parentheticals that response-01 inserted into the AC-decision entry above as Codex text.
+- G5 access at 09:19 UTC from the `padua_research` environment:
+  - GitLab: the upstream reset the TLS handshake;
+  - SIAM: Cloudflare challenge, not bypassed;
+  - arXiv: the source bundle (`f736e8f0…`) holds the paper's experiment-1 data but no code.
+- AC 10:14 UTC uploaded `IEP-MOP-main.zip` (SHA-256 `cdd0e98d2b411f24cfcecb49d83e16f9d50a7622a0d4f0d3eb17eb334a405145`, MIT licence), which removes the source blocker. It is not committed.
+- Because only this Claude session can reach the upload, the G5 run is assigned as a Claude development step, technical row: Sonnet 5.5 high. Codex audits it, then prepares the PR; Claude performs the readiness check.
