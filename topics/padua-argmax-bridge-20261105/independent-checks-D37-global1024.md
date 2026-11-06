@@ -535,3 +535,184 @@ or perform that run. Later result review must preserve this prerelease
 record, the first invocation/receipt and any first failure without
 retuning. The exact unconditional global1024 claim remains OPEN until
 the five signs and fresh result review are complete.
+
+## Post-primary independent result completion — ACCEPT
+
+2026-11-06, completed at22:22 UTC. Rules7a5cd42; primary publication/input
+head ea078d27790b515e5d2d4043e2e681973d5a1345. The preceding29250 bytes are
+preserved verbatim, SHA256
+`4fadf00da570f6e6ac92cc1c21bea575003ba61dd971e8a4bce9a09fddc7eaeb`.
+The earlier UNCOMPUTED/OPEN language records its historical prerelease
+boundary. This appended result discharges that boundary without editing
+the author's conditional proof or the first candidate.
+
+**Final mathematical/result verdict: ACCEPT the exact global argmax
+theorem for EVERY integer n>=1024**, subject to the previously stated
+accepted analytic and limiting-origin trusted base. There is no unresolved
+substantive mathematical, domain, source or result finding. NOTE W0 remains
+the harmless strict-versus-weak zero-phase display note described above.
+The exact independent result also proves the stated near noncorner gap
+greater than1/200 and closed far gap greater than3/100. This conclusion
+uses the all-n proof reviewed above, not a numerical extrapolation from
+one degree. Root retains responsibility for registry/adoption updates.
+
+### Authorized first primary and own frozen replay
+
+Root reported that the exact published primary command was executed once,
+returning EXIT0 in direct tool chunk2898d0. Its complete receipt was read,
+without executing or importing primary/helper code:
+
+* `local-output/argmax-bridge-20261105/post-audit-D37/budget/budget-1024.json`:
+  8965 bytes, SHA256
+  `b893df4ec4ebb1668600783617200c7a224203bbc7d8071f76c46084f3e1d1fd`.
+* Primary receipt: passed=true, N1024, all59 scalar intervals plus pi,
+  all16 domains and all33 controls; before-receipt CPU0.035545 seconds.
+  Source and FREEZE identities match the prerelease review. Root's direct
+  exit observation is distinguished from this reviewer's receipt reading.
+
+Root then explicitly released ONE independent N1024 run within10 CPU
+seconds, requiring our own source/SPEC freeze before execution and no
+author import, scan, native/phase job, alternate endpoint or retry.
+Ownership expanded only to this report and its own code/evidence. The
+following own source and specification were written, inspected as text,
+hashed and communicated to root before any import, execution, exact
+control or scalar observation from the own source:
+
+| Independent frozen artifact | Bytes | SHA256 |
+| --- | ---: | --- |
+| `code/post_audit_D37_review/verify.py` | 14010 | `633070f0d55a758be8e6605b888e74b25f2c997220b9c4c66b360166c3246a99` |
+| `code/post_audit_D37_review/SPEC.md` | 8437 | `347dfd99eafef3ab0f719664389120001a5ffd6d82100ed067aadd726f9b12f2` |
+| `code/post_audit_D37_review/FREEZE.json` | 1636 | `b683002525b4ac778dcb6b1c3b688dcddcb47b906144e7b12c7a35858b1f3cdf` |
+
+The manifest pins own source/SPEC and the exact primary receipt,
+primary source/FREEZE and helper identities. No author/helper source is
+executed even for AST selection. The independent attempt directory did
+not exist before release, and the prerelease report prefix matched.
+The sole independent command was exactly
+
+    python3 topics/padua-argmax-bridge-20261105/code/post_audit_D37_review/verify.py --run-once
+
+**Direct observed tool chunk28e434: EXIT0, passed=true.** The complete
+independent receipt has UTC2026-11-06T22:22:30Z, Python3.12.14 and
+before-receipt CPU0.034895999999999996 seconds. The cumulative process
+CPU limit was soft9/hard10 and remained in force through exit. This is
+one invocation, with no source/precision/term/parameter/cap changes and
+no retry. No first-failure file exists. Source/FREEZE/data identities
+were checked before arithmetic, after it and before completion, and
+were separately confirmed unchanged afterward by metadata inspection.
+
+### Independent arithmetic and formula audit
+
+The independent engine uses only exact integer and Fraction mathematical
+arithmetic. It contains neither Decimal nor floating logarithm/square-root
+calls, and imports no author or helper module. An interval is an ordered
+pair of integer multiples of10^-65. Addition and negation are exact;
+products and quotients take outward floor/ceiling extrema of all four
+endpoint combinations. Every denominator is checked to avoid zero.
+Integer isqrt supplies outward endpoint radicals. Exact Fraction
+alternating arctangent sums with100 terms at1/5 and32 at1/239, each with
+its first omitted term, give a separate Machin pi enclosure.
+
+Logs use exact range reduction x=2^k*r,1<=r<2 and the90-term positive
+atanh series at z=(r-1)/(r+1)<=1/3. The remainder is enclosed by
+9/[4*181*3^181], rounded upward. Log2 uses z=1/3 in that same series.
+Signed k and input interval endpoints use full interval multiplication
+and log monotonicity. These constructions prove inclusion independently
+of the primary Decimal/libmpdec transcendental contract. The ordinary
+Python exact-integer/Fraction/isqrt implementation remains part of the
+trusted arithmetic base; no hermetic formal-kernel claim is made.
+
+The59 scalar formulas were reconstructed with the exact same domain and
+normalization. Gg was independently collected, E6old combined as
+(193+21L)/n+21600/n^2, the final mesh denominator replaced by the exact
+identity(2n-1)^2, and KN/KW collected in L. These algebraic identities
+preserve every ordinary/outer/mesh/actual-origin charge. In particular:
+
+* Old outer Cnew is retained, with the newly accepted KD35 only where
+  authorized. E0 is the complete actual-origin allowance, not an
+  uncharged reference or a phase-shifted origin.
+* CN,KN and CW,KW retain their different near/wide domains and constants.
+  All six q denominators are independently positive, and all six Psi
+  pairs use the proved nonnegative formula. Only the two box calls add
+  the fixed multiplier1/2 to KW.
+* Ex and Ey remain signed negative quantities. Their independent upper
+  endpoints are respectively less than-0.15538317814637373059 and
+  -0.55691456301365344990. Neither is silently discarded or clipped.
+* The two large-coordinate derivative-tail expressions have independent
+  lower endpoints greater than1.26748693339372768846 and
+  2.55541442132890017973. Every claimed monotone-tail use is in domain.
+
+The complete receipt has all59 intervals plus pi, all16 domain predicates,
+all33 exact controls and all60 enclosure comparisons. Every independent
+interval is contained in its corresponding primary interval, with exact
+Fraction comparisons of the primary decimal strings. The key sets and
+domain/control dictionaries match exactly. Containment is additional
+cross-check evidence; the fresh enclosure proof does not rely on it.
+
+### Directed signs and retained evidence
+
+The following lower bounds are rounded downward from the independent
+receipt; complete65-place interval endpoints remain in the artifact.
+
+| Gate | Rigorous lower bound | Fixed acceptance |
+| --- | ---: | ---: |
+| GN | 0.0061973160891438185256984092978168665138497245385093 | >1/200 |
+| GB | 0.0303996220024871732062353764494774080078455700343046 | >3/100 |
+| GX | 0.12419433430620627068553892891998600552266711872449 | >3/100 |
+| GY | 0.49003809066670233421978409818720060181060892256497 | >3/100 |
+| GO | 0.48274443645453476982180805312101539146560185368082 | >3/100 |
+
+All five basic sign conditions and the independently preregistered
+stronger margin/negative-Ex-Ey conditions pass. The independent pi
+enclosure is
+
+    [3.1415926535897932384626433832795028841971693993751058209749445923,
+     3.14159265358979323846264338327950288419716939937510582097494459231].
+
+The complete compact independent receipt is11336 bytes, strictly below
+16384, with no omitted field, pruning or split scientific output:
+
+* Local first receipt:
+  `local-output/argmax-bridge-20261105/post-audit-D37/independent/independent-1024.json`.
+* Byte-identical retained evidence: `evidence/D37-independent-1024.json`.
+* Both SHA256:
+  `e34ec1b6a0145872763c780ba04555fe4c6f25bdf7372ab097d3b248e5610787`.
+* Exclusive own preregistration:406 bytes, SHA256
+  `e7a6b59ea11092182bcbb7cdcfa4bda1799e3948d839dbfd8eaeb697f9381698`.
+
+The receipt records all output, primary/own identities, no children,
+zero native/phase calls, CPU checkpoint, UTC and the required direct
+exit condition. The only scientific execution by this reviewer in the
+D37 result phase was the single own frozen scalar replay. Other calls
+were text reads, metadata/hash checks and the byte-identical evidence
+copy. No author-source, Arb, case-proof, optimizer, scan or native job ran.
+
+### Exact theorem scope now supported
+
+Together with the accepted all-n monotonicity and complete telescope,
+these signs prove the exact two maximizers for every integer n>=1024:
+
+    n even: {(-1,-1),(1,-1)};
+    n odd:  {(-1,-1),(-1,1)}.
+
+For physical noncorner centers with actualrho<=1/2, the guarded new
+floor and GN give lambda_n<Lambda_c-1/200. On the complete closed far
+domain1/2<=rho<=pi, the inner box/large-coordinate cases and old global
+outer telescope give S_n<Lambda_c-3/100, hence the same strict exclusion
+for lambda_n. Closed seams, ties, node values, edges, axes, endpoint
+multiplicities and finite-polynomial collisions remain covered by the
+paper proof. The exact-origin corner values are preserved; near actual
+corners use accepted D27's inwardpi/4-square loss(A^2+B^2)/8, strict away
+from A=B=0. Thus no uniform positive gap is asserted at points approaching
+the two actual maximizers.
+
+This result retains the accepted D35 ordinary operator and D27 corner
+proofs, plus the stated limiting-origin numerical premise used in the
+outer gap Dc=6211/7260. It does not rerun or replace those dependencies.
+No D31 or D33 endpoint is needed. The result supplies the sufficient
+all-n onset1024; it makes no minimality claim and does not close the
+remaining finite degrees below1024, all-degree PD-T099, full vanishing
+D13 remainder, formal cross-family audit or PR readiness. No literature
+priority or exhaustive source-search claim is added. The reviewed
+mechanisms remain scoped as quantitative continuations and the standard
+constraint-preserving optimization variant described above.

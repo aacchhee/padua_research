@@ -903,3 +903,14 @@ A strongeruniform1/64floorfrom41 wasconsidered as a standardselected-arc variant
 Distinct adversarial review4fadf00d... ACCEPTS allfive frozenpaper scopes plusnewscalar source/SPEC/FREEZE, preservingpaperprefix. OneNOTEW0only: intermediate strict boundsatzerophaseareequalities; completeweaktheoremandzeroidentitiesarevalid. Wideoperator/helper7acfa8f1..., floor5e6b9164..., constant79df534a..., constrainedenvelope84671ee0..., conditionalglobal37338160... remainunchanged. Source2f5fa327.../SPECb2e85c3b.../FREEZE4cf0bf3e... inspectedwithoutimports/controls/arithmeticjobs.
 
 RootreleasesEXACT evaluate--run-once fixedN1024ONLY afterthispublication, whole5CPU/nochildren, all59intervals/pi/16domains/33controls andALLFIVEpositivegates required. No threshold/multiplier/source/precision/parameter/caprescue/retry. Global1024staysOPENuntilprimaryPASS+directEXIT0andfreshindependentscalar/resultreview. Currentadoptedglobalboundary2048. No Syvertpackpreparationduringresearch.
+
+
+### D34 and D37 final adoption: analytic1024 and finite41
+
+- D34 final870bcba9... ACCEPTS frozenfiniteapplicationc1bdf462... andsolefresh67point replay: directEXIT0session45405/chunkb7101a pluspersistedcompleteaccount6.447666CPUcheckpoint. All64S+3actualendpoint/radius/countersmatchprimary, independentexacttree/norm/floor/cornercheckerand8negativecontrols pass. Sourceunchanged92c38e23. Rootadoptsdegree41TRUEmaxLambda_c, oddcornerargmax{(-1,-1),(-1,1)}, model-freefiniteproof. AllrawkeptoffGit/noarchivepromise.
+- D37 final2ad8f232... preserves29250Bprereleaseprefix4fadf00d..., ACCEPTSallfive paper scopesandSINGLEfresh exactinteger-intervalN1024job afterownfreeze(noauthorimports/Decimal/AST). DirectEXIT0chunk28e434,59intervals+pi/16domains/33controls/60containmentspass, CPUcheckpoint.034896. PrimarydirectEXIT0chunk2898d0/.035545checkpoint; GN>.006197316,GB>.030399622,GX>.124194334,GY>.490038091,GO>.482744436. No retries/parameter/multiplier/source/capchanges. Harmlesszero-phaseNOTEW0preserved.
+- Rootadopts exactglobalparity-correctargmaxEVERYintegern>=1024: near1/200,fullfar3/100,actualcorner1/8. Knownfinite2–41and512; residual42–1023excluding512OPEN. D34,D37complete,total36/40(D01–D35andD37). Thisisbestcurrentanalyticboundary, notclaimedminimum. FinalClaude/upstreamcoverageauditremainseparate.
+
+### D36 first source preserved UNRELEASED
+
+FirstgenericFREEZE89bc06b7.../SPECe7348dc8... andallcodearepublishedunchangedbeforefix. Sourceauditor172731fb... hasonlyF1: strict-leafsyntheticfixtureat1023setsL=theta−1/20<0, soitspositive-Lguardraisesbeforeintendedequalitytest. No import/control/native/driver/lock/scientificattemptoccurred. Fullremaininggeneric41..4095/freshverify/floor/corner/resource/sourceinspectionfindsnoadditionalissuewithincoverage. CorrectbothfixtureVandLby+1ONLYafterthispublication; focusednewfreeze/sourceauditbeforefirst1023pilot. No productionmath/case/caprescue.

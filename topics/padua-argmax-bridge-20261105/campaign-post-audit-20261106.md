@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **34/40** (D01–D33 and D35). Active: **D31**; D33 analytic source review, D34 first-source findings, D35 review and D37 final analytic paper block.
+Completed: **36/40** (D01–D35 and D37). Active: **D36** generic source audit; D38 calibration and D39 final freeze remain before contingent end-only packing.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -79,12 +79,18 @@ AC clarification: pack preparation waits until research ends and is necessary on
 | D31 | COMPLETE | Exact-radical near2048 comparison | Fixed2048ONLY; D25outer plusD22exactradicalenvelope, source/proofaudit before <=5CPUprimary. |
 
 | D32 | COMPLETE | Lower-domain generic sufficient contract | Paperadapterfrom41 with actualnear radiusfloors andnorm/corner witnesses, no degree/jobclaim. |
-| D34 | PREPARING | First adaptive cheap n41 prototype | C23cachedS producer plus3actualpoints, fixed120CPU/256S/2047nodes/depth18 only aftermath/sourceaudit androotrelease. |
+| D34 | COMPLETE | First adaptive cheap n41 prototype | C23cachedS producer plus3actualpoints, fixed120CPU/256S/2047nodes/depth18 only aftermath/sourceaudit androotrelease. |
 
 D21/D28 same6912 complete artifact independently accepted: whole469.521049→74.034199CPU, point-sum422.056155→70.122665, scoped finitecomparison only. D23 independent fresh matched2048pair alsoaccepted. D29/D30/D32 paper scopes independentlyaccepted; D31near2048andD33far/global2048 remainOPEN pendingendpoints/replay.
 
 | D33 | COMPLETE | Whole2048 analytic assembly | Fixedtwo-gate2048source frozen, newnear result also required; no endpoint yet. |
 | D35 | COMPLETE | Sharper ordinary-row perturbation | Independentlyaccepted6PH/n ordinarysupport/fixedrow/fullnearallowance; no jobs/onsetclaim. |
-| D37 | ACTIVE | Final1024 analytic feasibility | Coordinatedwide-relative/directional-constant/Lagrange paperblock, fixed1024only ifallcomponentproofsclose; nojobs. |
+| D37 | COMPLETE | Final1024 analytic feasibility | Coordinatedwide-relative/directional-constant/Lagrange paperblock, fixed1024only ifallcomponentproofsclose; nojobs. |
 
 Current adopted boundary: exact two-corner argmax2–40,512 and EVERYn>=2048; residual41–2047 excluding512OPEN. D31 near1/10000 andD33far3/100 both independently accepted; D27corner1/8 from1024 reused. D34correctedsourcefocusedACCEPTED, firstn41trialreleasedafterpublication.
+
+Adopted current boundary: exact parity-correct argmax2–41,512 and EVERYn>=1024;42–1023 excluding512 OPEN. D34 fresh67point replay andD37 independent integer interval run accepted. D36 FIRSTsourceUNRELEASED: one invalid syntheticpositive-L fixture foundstatically; no attempt.
+
+| D36 | REVIEW | Generic production/fresh-verification engine | Supportedn41..4095; fixedfirst1023pilot unexecuted, one syntheticfixturefinding pendingfocusedfix afterfirstpublication. |
+| D38 | PLANNED | Fixed production-branch calibration batch | AfterD36acceptance, fixed42/63/64/159/160/511/512/1024/2047 only; no currentrunorpackprep. |
+| D39 | PLANNED | Freeze best research/cost plan | No newanalyticpath afterfinal1024proof; verifyfinalcertifier/evidence/remainingcoverage, thenpackonlyifgapremains. |

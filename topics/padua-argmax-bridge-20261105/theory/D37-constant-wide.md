@@ -194,3 +194,8 @@ job, scalar/native/phase/board/root/quadrature/degree run or code
 execution occurred. 2026-11-06, Codex gpt-6.1-sol xhigh45min paper
 lead,inputeb9329c28be18d77eeb817f634202d626ee11f92,
 serving metadata unexposed. Distinct review required before adoption.
+
+
+## Current result and root final adoption — 2026-11-06
+
+Current status: **PROVED** at this record's stated support/assembly scope. Final [D37 review](../independent-checks-D37-global1024.md), SHA256 `2ad8f232aa88bc15e360be7b61c1c110dd1f9ff2f667850167c7d456d57bcda5`, accepts the unchanged five paper scopes and sole primary/fresh independent1024 endpoints. All59intervals+pi,16domains,33controls,60containments pass. Root adopts exact two-corner global argmax EVERYintegern>=1024, near noncorner gap1/200 and complete closed far gap3/100, with accepted D27 actual-corner loss1/8. The harmless intermediate zero-phase strict-display NOTE W0 and explicit zero cases remain in the review. Historical conditional/OPEN endpoint wording above is preserved; no scope below1024 or minimal-onset claim follows. Final Claude audit remains separate.

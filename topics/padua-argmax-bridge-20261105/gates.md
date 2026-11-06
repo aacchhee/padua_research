@@ -197,3 +197,6 @@ D21/D23/D28 finitecost/resultreviews ACCEPT(f68b4a19...,fefe368e...): same6912fu
 
 
 D31final5911111a... andD33finala612ec99... ACCEPTED: rootglobalanalyticboundary2048,far3/100,near1/10000,corner1/8. D34focusedsourceF1/F2CLOSEDd21497a0..., correctedFREEZE92c38e23... firstn41releaseinLOG; no resultyet.
+
+
+D34final870bcba9... finite41ACCEPT; D37final2ad8f232... global1024ACCEPT(near1/200/far3/100/corner1/8). D36firstsourceUNRELEASEDwithonepositive-Lsyntheticfixturefinding172731fb..., tobefixedafterfirstpublication. Packingstilldeferreduntilresearchend.

@@ -1,0 +1,7 @@
+38a2cab7b3ea3774f80db21072ac27bee57e906b7d7fdf219c9af4682e4fd402  topics/padua-argmax-bridge-20261105/code/post_audit_D34_result_review/run.py
+8a60aa676f01efaa1f606ea4ab73f6f091e10d373a4fcc8e9d4f226392ed747b  topics/padua-argmax-bridge-20261105/code/post_audit_D34_result_review/verify.py
+d8040118678fd2657dd3c22457ab635ac8cf197dbf8d1208c43afd75a1939125  topics/padua-argmax-bridge-20261105/code/post_audit_D34_result_review/SPEC.md
+92c38e23f539c53ec599a324a6f694520fc131018b01a80a6495364072928928  topics/padua-argmax-bridge-20261105/code/post_audit_D34_adaptive/FREEZE.json
+524c8e6c023196ed5d0aa457addbdecef9fa30c4a76f3ef558ae40da44e11aff  local-output/argmax-bridge-20261105/post-audit-D34/adaptive/essential-receipt.json
+0bdfb18df6843594b157694dd7cee9c7eb7dec43c3569518aae0db58cf699571  local-output/argmax-bridge-20261105/post-audit-D34/adaptive/raw-evidence.json
+a56356e6bbe61258fdba35905fdbfa46bd80d3390fcbbe550e7f87f92eff356b  local-output/argmax-bridge-20261105/post-audit-D34/adaptive/final-accounting.json

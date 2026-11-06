@@ -485,3 +485,8 @@ The independent same6912/41point replay completes in74.034199CPU versus469.52104
 ### Current analytic boundary2048
 
 D31 andD33 final independent reviews now accept near1/10000, far3/100 and exact two-corner global argmax for EVERYn>=2048, using accepted actual-corner descent1024. Remaining41–2047 excluding512 staysOPEN. This is a sufficient boundary, not a minimum. D34sourcepath/wallfinding fixes arefocusedaccepted; the firstnewcheapadaptive41run isreleased, notyet a newdegreeclaim.
+
+
+### Best analytic boundary1024; first cheap finite41 proof
+
+D37 final independent review proves exact two-corner global argmax for EVERYn>=1024, with near1/200/far3/100 gaps andactualcorner1/8descent. A fresh exactinteger-interval implementation verifiesall59components/pi/16domains/33controls. D34 separatelyprovesdegree41 througha model-free64S+3actualcertificate,101nodes/TREE M13; primary6.676496CPU andfreshindependent6.447666CPU. Currentremaininggap42–1023excluding512OPEN. The genericenginefirst1023calibrationawaitsa focused syntheticfixturefix; nopackpreparedyet.
