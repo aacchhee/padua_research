@@ -1,0 +1,473 @@
+{
+  "arithmetic": "exact Python integers; cosine equality via rational +/- fold",
+  "claim_status": "finite diagnostic of a separate hand proof",
+  "dimensions": [
+    {
+      "admissible_binary_codes": [
+        [
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          3,
+          5,
+          6
+        ]
+      ],
+      "all_binary_subspace_count": 16,
+      "cosets": 20304,
+      "count_checks": 20304,
+      "degree_rows": [
+        {
+          "degree": 1,
+          "pair_alias": 12,
+          "short_projection": 297,
+          "surviving_necessary_screens": 32,
+          "target": 4,
+          "target_count_cosets": 341
+        },
+        {
+          "degree": 2,
+          "pair_alias": 12,
+          "short_projection": 468,
+          "surviving_necessary_screens": 0,
+          "target": 10,
+          "target_count_cosets": 480
+        },
+        {
+          "degree": 3,
+          "pair_alias": 12,
+          "short_projection": 696,
+          "surviving_necessary_screens": 0,
+          "target": 20,
+          "target_count_cosets": 708
+        },
+        {
+          "degree": 4,
+          "pair_alias": 1,
+          "short_projection": 171,
+          "surviving_necessary_screens": 0,
+          "target": 35,
+          "target_count_cosets": 172
+        },
+        {
+          "degree": 5,
+          "pair_alias": 0,
+          "short_projection": 162,
+          "surviving_necessary_screens": 0,
+          "target": 56,
+          "target_count_cosets": 162
+        },
+        {
+          "degree": 6,
+          "pair_alias": 3,
+          "short_projection": 315,
+          "surviving_necessary_screens": 0,
+          "target": 84,
+          "target_count_cosets": 318
+        }
+      ],
+      "degrees_checked": [
+        1,
+        6
+      ],
+      "dimension": 3,
+      "first_necessary_screen_survivor_by_degree": {
+        "1": [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            3,
+            4,
+            7
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            2
+          ],
+          4
+        ]
+      },
+      "ordered_cases_sha256": "dc79806c5a9b1b8aa57efdc7a43db071d5aa7fa05a9d3fc162be9f5c2be780c4",
+      "projection_order_cap": 12,
+      "reflection_checks": 14310432,
+      "torus_points_visited": 4770144
+    },
+    {
+      "admissible_binary_codes": [
+        [
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "all_binary_subspace_count": 5,
+      "cosets": 450,
+      "count_checks": 450,
+      "degree_rows": [
+        {
+          "degree": 1,
+          "pair_alias": 0,
+          "short_projection": 24,
+          "surviving_necessary_screens": 4,
+          "target": 3,
+          "target_count_cosets": 28
+        },
+        {
+          "degree": 2,
+          "pair_alias": 0,
+          "short_projection": 42,
+          "surviving_necessary_screens": 4,
+          "target": 6,
+          "target_count_cosets": 46
+        },
+        {
+          "degree": 3,
+          "pair_alias": 0,
+          "short_projection": 32,
+          "surviving_necessary_screens": 4,
+          "target": 10,
+          "target_count_cosets": 36
+        },
+        {
+          "degree": 4,
+          "pair_alias": 0,
+          "short_projection": 32,
+          "surviving_necessary_screens": 4,
+          "target": 15,
+          "target_count_cosets": 36
+        },
+        {
+          "degree": 5,
+          "pair_alias": 0,
+          "short_projection": 0,
+          "surviving_necessary_screens": 0,
+          "target": 21,
+          "target_count_cosets": 0
+        },
+        {
+          "degree": 6,
+          "pair_alias": 0,
+          "short_projection": 0,
+          "surviving_necessary_screens": 0,
+          "target": 28,
+          "target_count_cosets": 0
+        }
+      ],
+      "degrees_checked": [
+        1,
+        6
+      ],
+      "dimension": 2,
+      "first_necessary_screen_survivor_by_degree": {
+        "1": [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            3
+          ],
+          3
+        ],
+        "2": [
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          6
+        ],
+        "3": [
+          [
+            0,
+            3
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            5
+          ],
+          10
+        ],
+        "4": [
+          [
+            0,
+            3
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            5,
+            6
+          ],
+          15
+        ]
+      },
+      "ordered_cases_sha256": "ad66a2693ce1c4d406ad553ebe4876adb1bde2b913a1f95a3f4698fc55dfdd4c",
+      "projection_order_cap": 10,
+      "reflection_checks": 26000,
+      "torus_points_visited": 13000
+    }
+  ],
+  "finite_class": "all canonical reflection-invariant single cosets with each coordinate projection order 1..cap; all binary syndromes and all inactive-coordinate half shifts",
+  "independent_rerun": "PENDING",
+  "padua": [
+    {
+      "degree": 1,
+      "nodes": 3,
+      "nonzero_l1_2n_annihilators": [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "pair_alias_degree": 2,
+      "short_projection": false,
+      "target": 3
+    },
+    {
+      "degree": 2,
+      "nodes": 6,
+      "nonzero_l1_2n_annihilators": [
+        [
+          -4,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "pair_alias_degree": 3,
+      "short_projection": false,
+      "target": 6
+    },
+    {
+      "degree": 3,
+      "nodes": 10,
+      "nonzero_l1_2n_annihilators": [
+        [
+          -6,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "pair_alias_degree": 4,
+      "short_projection": false,
+      "target": 10
+    },
+    {
+      "degree": 4,
+      "nodes": 15,
+      "nonzero_l1_2n_annihilators": [
+        [
+          -8,
+          0
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "pair_alias_degree": 5,
+      "short_projection": false,
+      "target": 15
+    },
+    {
+      "degree": 5,
+      "nodes": 21,
+      "nonzero_l1_2n_annihilators": [
+        [
+          -10,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "pair_alias_degree": 6,
+      "short_projection": false,
+      "target": 21
+    },
+    {
+      "degree": 6,
+      "nodes": 28,
+      "nonzero_l1_2n_annihilators": [
+        [
+          -12,
+          0
+        ],
+        [
+          12,
+          0
+        ]
+      ],
+      "pair_alias_degree": 7,
+      "short_projection": false,
+      "target": 28
+    },
+    {
+      "degree": 7,
+      "nodes": 36,
+      "nonzero_l1_2n_annihilators": [
+        [
+          -14,
+          0
+        ],
+        [
+          14,
+          0
+        ]
+      ],
+      "pair_alias_degree": 8,
+      "short_projection": false,
+      "target": 36
+    },
+    {
+      "degree": 8,
+      "nodes": 45,
+      "nonzero_l1_2n_annihilators": [
+        [
+          -16,
+          0
+        ],
+        [
+          16,
+          0
+        ]
+      ],
+      "pair_alias_degree": 9,
+      "short_projection": false,
+      "target": 45
+    },
+    {
+      "degree": 9,
+      "nodes": 55,
+      "nonzero_l1_2n_annihilators": [
+        [
+          -18,
+          0
+        ],
+        [
+          18,
+          0
+        ]
+      ],
+      "pair_alias_degree": 10,
+      "short_projection": false,
+      "target": 55
+    },
+    {
+      "degree": 10,
+      "nodes": 66,
+      "nonzero_l1_2n_annihilators": [
+        [
+          -20,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ],
+      "pair_alias_degree": 11,
+      "short_projection": false,
+      "target": 66
+    }
+  ],
+  "rules_input_sha": "ccd9e905d19c0c625c196c4a3f3e707058ed042a",
+  "schema": "padua-3d-T1-reflection-D3-v1",
+  "source_sha256": "ac4afe4c15ff4a273091c234fa9e4381538b679f2ad256cd5db94d08b2b31bc2",
+  "theorem_counterexamples": 0,
+  "verdict": "PASS"
+}
