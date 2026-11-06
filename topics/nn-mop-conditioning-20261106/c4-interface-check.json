@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "N": 4,
+      "exact_affine_identity": true,
+      "exact_evaluation_relation": true,
+      "exact_similarity_roundtrip": true,
+      "family": "krawtchouk"
+    },
+    {
+      "N": 6,
+      "exact_affine_identity": true,
+      "exact_evaluation_relation": true,
+      "exact_similarity_roundtrip": true,
+      "family": "krawtchouk"
+    },
+    {
+      "N": 8,
+      "exact_affine_identity": true,
+      "exact_evaluation_relation": true,
+      "exact_similarity_roundtrip": true,
+      "family": "krawtchouk"
+    },
+    {
+      "N": 4,
+      "exact_affine_identity": true,
+      "exact_evaluation_relation": true,
+      "exact_similarity_roundtrip": true,
+      "family": "hahn"
+    },
+    {
+      "N": 6,
+      "exact_affine_identity": true,
+      "exact_evaluation_relation": true,
+      "exact_similarity_roundtrip": true,
+      "family": "hahn"
+    },
+    {
+      "N": 8,
+      "exact_affine_identity": true,
+      "exact_evaluation_relation": true,
+      "exact_similarity_roundtrip": true,
+      "family": "hahn"
+    }
+  ],
+  "gate_scope": "M2/M4 are not evaluated by this local-only checker",
+  "python": "3.12.14",
+  "scope": "local exact coordinate-interface checks only",
+  "sources": {
+    "topics/nn-mop-conditioning-20261106/code/c4_normalization.py": "6ffe45a445860db86a74b6d911d0055fa4773d82b88535be6e136701958a9182",
+    "topics/nn-mop-iep-20261103/audit-01/claude_layer_recursion_check.py": "13d59af82304a712d792c6e2f96c76f42ec732575dcfa3452a92295071c011b3",
+    "topics/nn-mop-iep-20261103/code/c4_float_baseline.py": "9ce76ae88fb798f73127f75819bcdfb6c7bffb0d9cd092d70957164cb9b6a2e8"
+  },
+  "status": "PASS"
+}

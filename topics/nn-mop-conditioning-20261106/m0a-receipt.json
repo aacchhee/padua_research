@@ -1,0 +1,126 @@
+{
+  "gate": "M0a",
+  "original_M0": "UNASSESSABLE: historical full precision absent",
+  "cases": [
+    {
+      "family": "krawtchouk",
+      "N": 4,
+      "target": "NN",
+      "kappa": "165.04",
+      "relative_precision_difference": "6.0591372e-180",
+      "historical_cell": "165.04"
+    },
+    {
+      "family": "krawtchouk",
+      "N": 4,
+      "target": "step_line",
+      "kappa": "218.122222222222222222222222222",
+      "relative_precision_difference": "8.1503744e-180",
+      "historical_cell": "218.1222"
+    },
+    {
+      "family": "krawtchouk",
+      "N": 16,
+      "target": "NN",
+      "kappa": "50783994642995.5550380516550117",
+      "relative_precision_difference": "4.9331289e-168",
+      "historical_cell": "5.078399e+13"
+    },
+    {
+      "family": "krawtchouk",
+      "N": 16,
+      "target": "step_line",
+      "kappa": "19834419158722.8050311965906148",
+      "relative_precision_difference": "2.8014915e-168",
+      "historical_cell": "1.983442e+13"
+    },
+    {
+      "family": "krawtchouk",
+      "N": 32,
+      "target": "NN",
+      "kappa": "261650491243535162968114451238.0",
+      "relative_precision_difference": "7.5797118e-153",
+      "historical_cell": "2.616505e+29"
+    },
+    {
+      "family": "krawtchouk",
+      "N": 32,
+      "target": "step_line",
+      "kappa": "72015061732406178673411125058.6",
+      "relative_precision_difference": "3.6431376e-153",
+      "historical_cell": "7.201506e+28"
+    },
+    {
+      "family": "hahn",
+      "N": 4,
+      "target": "NN",
+      "kappa": "1573.91599653990324544260404319",
+      "relative_precision_difference": "1.3648399e-180",
+      "historical_cell": "1573.916"
+    },
+    {
+      "family": "hahn",
+      "N": 4,
+      "target": "step_line",
+      "kappa": "1582.8023387521569339751157933",
+      "relative_precision_difference": "1.0152461e-177",
+      "historical_cell": "1582.802"
+    },
+    {
+      "family": "hahn",
+      "N": 16,
+      "target": "NN",
+      "kappa": "5580491716924734.39484318658607",
+      "relative_precision_difference": "4.5377369e-163",
+      "historical_cell": "5.580492e+15"
+    },
+    {
+      "family": "hahn",
+      "N": 16,
+      "target": "step_line",
+      "kappa": "1476984881692316.13263575725123",
+      "relative_precision_difference": "5.7233692e-161",
+      "historical_cell": "1.476985e+15"
+    },
+    {
+      "family": "hahn",
+      "N": 32,
+      "target": "NN",
+      "kappa": "5.26191016920382993260031281437e+32",
+      "relative_precision_difference": "2.712377e-141",
+      "historical_cell": "5.26191e+32"
+    },
+    {
+      "family": "hahn",
+      "N": 32,
+      "target": "step_line",
+      "kappa": "1.08704782092181429777690714722e+32",
+      "relative_precision_difference": "3.0266141e-139",
+      "historical_cell": "1.087048e+32"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/tmp/nn-mop-conditioning-20261106/m0-krawtchouk.json",
+      "bytes": 64895,
+      "sha256": "07928f430459788f70a6e7a98c97141e141ba12a7773afe494fde0efbcfc6550"
+    },
+    {
+      "path": "/tmp/nn-mop-conditioning-20261106/m0-krawtchouk260.json",
+      "bytes": 85806,
+      "sha256": "5af559ce227640fd1eb393a170d71052959c06539c772de4d61d172fdb9f3399"
+    },
+    {
+      "path": "/tmp/nn-mop-conditioning-20261106/m0-hahn.json",
+      "bytes": 65218,
+      "sha256": "8c5b51484056c3d9136dde1c9536366dbf0dde4c1ebbb00e7d89c96b6200bb72"
+    },
+    {
+      "path": "/tmp/nn-mop-conditioning-20261106/m0-hahn260.json",
+      "bytes": 87053,
+      "sha256": "c9da9d6ac7914e737b151fb0e41c7b7559da050e34d9abfafed1b9cd3808513e"
+    }
+  ],
+  "verdict": "PASS",
+  "historical_table_sha256": "990acdfc79b5d34fa76f62fab0592b5a116373032fbb3a14c6bd7dddaa741f16"
+}

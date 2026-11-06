@@ -1,0 +1,102 @@
+{
+  "cases": [
+    {
+      "A_M": "25",
+      "M": 2,
+      "N": 3,
+      "integer_b_parity_response_abs": "48/11",
+      "nu": [
+        1,
+        1
+      ]
+    },
+    {
+      "A_M": "184",
+      "M": 3,
+      "N": 4,
+      "integer_b_parity_response_abs": "68400/1183",
+      "nu": [
+        2,
+        1
+      ]
+    },
+    {
+      "A_M": "1877",
+      "M": 4,
+      "N": 5,
+      "integer_b_parity_response_abs": "205058/289",
+      "nu": [
+        2,
+        2
+      ]
+    },
+    {
+      "A_M": "19560",
+      "M": 5,
+      "N": 6,
+      "integer_b_parity_response_abs": "52036824/6137",
+      "nu": [
+        3,
+        2
+      ]
+    },
+    {
+      "A_M": "211989",
+      "M": 6,
+      "N": 7,
+      "integer_b_parity_response_abs": "11075622048/110561",
+      "nu": [
+        3,
+        3
+      ]
+    },
+    {
+      "A_M": "2345936",
+      "M": 7,
+      "N": 8,
+      "integer_b_parity_response_abs": "44034352992/37375",
+      "nu": [
+        4,
+        3
+      ]
+    },
+    {
+      "A_M": "26337609",
+      "M": 8,
+      "N": 9,
+      "integer_b_parity_response_abs": "267631615856/19343",
+      "nu": [
+        4,
+        4
+      ]
+    },
+    {
+      "A_M": "298753200",
+      "M": 9,
+      "N": 10,
+      "integer_b_parity_response_abs": "4528136870202/27869",
+      "nu": [
+        5,
+        4
+      ]
+    },
+    {
+      "A_M": "3415340017",
+      "M": 10,
+      "N": 11,
+      "integer_b_parity_response_abs": "4289324156726960/2246601",
+      "nu": [
+        5,
+        5
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.023928876000127275,
+  "helper_sha256": {
+    "c2_hahn_checks.py": "c0d3328c7e4ca9034fe2c415893c953d5da62ef1c4342c072a97484641ac6c10",
+    "c2_rate_checks.py": "e4394dac64adafe25721384d01dcac9dd13ec6333831119240128782423428a9"
+  },
+  "python": "3.12.14",
+  "source_sha256": "1a4f353e16d36c2b8cfe766f3f3cf117b3f73aee3aa4036486cc86c93d7811ac",
+  "status": "VERIFIED finite exact parity identities; analytic rate proof separate"
+}

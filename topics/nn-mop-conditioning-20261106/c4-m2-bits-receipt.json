@@ -1,0 +1,36 @@
+{
+  "M2": "PASS",
+  "cases": [
+    {
+      "family": "krawtchouk",
+      "paper_N": 5,
+      "passed": true,
+      "reference_relative": 7.184849749441866e-17,
+      "solver_relative": {
+        "CORE": 7.47242929475129e-15,
+        "KRYL": 5.301648865222284e-12,
+        "REORTH": 7.258603595489826e-15
+      },
+      "topic_N": 6
+    },
+    {
+      "family": "hahn",
+      "paper_N": 5,
+      "passed": true,
+      "reference_relative": 3.9093857457937197e-17,
+      "solver_relative": {
+        "CORE": 1.44473755713866e-13,
+        "KRYL": 9.280019963097191e-13,
+        "REORTH": 7.436222618059466e-14
+      },
+      "topic_N": 6
+    }
+  ],
+  "fidelity_rule": "relative spectral error against pinned exact-generator output <=1e-12; solver errors reported separately",
+  "files": {
+    "/tmp/c4-external-grid-bits.json": "efc7fd299093f433d8936ff628b6df2dd4561ca0572ad9dcdc56ff4ccb697e6b",
+    "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c4_fidelity.py": "1038ebff978ba6675878980e590f8c5de8d29b4920b8ce575ca032b1f9dbf2a5",
+    "/workspace/padua_research/topics/nn-mop-iep-20261103/audit-01/claude_layer_recursion_check.py": "13d59af82304a712d792c6e2f96c76f42ec732575dcfa3452a92295071c011b3",
+    "/workspace/padua_research/topics/nn-mop-iep-20261103/code/c4_float_baseline.py": "9ce76ae88fb798f73127f75819bcdfb6c7bffb0d9cd092d70957164cb9b6a2e8"
+  }
+}
