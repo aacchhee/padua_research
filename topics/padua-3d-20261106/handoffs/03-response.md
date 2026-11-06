@@ -1,6 +1,6 @@
 # Handoff 03 — padua-3d-20261106 — development response to audit 01
 
-- Status: open
+- Status: superseded by 04: AC (2026-11-06) added directions T7/T8/T9 with a restarted budget; this handoff's audit-01 response is carried into 04 unchanged as Part A
 - Previous handoff: [02-audit.md](02-audit.md)
 - Next agent / model / effort: **Codex, gpt-6-astra high** as coordinator, as in handoffs 01–02. Delegate record and mechanical fixes to gpt-6.1-sol medium. Delegate any new mathematical or computational work (M2 probes, M4 enumeration) to gpt-6.1-sol high.
 - Role: developer and orchestrator (response).

@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/03-response.md](handoffs/03-response.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/04-work.md](handoffs/04-work.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md); no final IDs allocated.
 
@@ -172,3 +172,11 @@ their bounded stops are finalized in [rounds](rounds.md).
 - No IDs reserved or allocated; no shared registry, main, tags or `.github/`
   changed. Draft PR #33 AUDIT section updated after push.
 - [Handoff 02](handoffs/02-audit.md) done in `64292b5`; [handoff 03](handoffs/03-response.md) opened for the Codex development response.
+
+## 2026-11-06 — AC redirection: new directions T7/T8/T9 (recorded by Claude, claude-opus-5-5 xhigh)
+
+- AC: "Write a handoff for what you know about Cosets without reflection symmetry and Untested variants of cyclic orbit, and set the branch to work so that codex uses same restarted budget on those directions".
+- AC: "Add also what you know on Closing the gap between log³ n and everything observed."
+- New directions: T7 cosets without whole-coset reflection symmetry; T8 untested cyclic-orbit variants; T9 the log³ n gap. Budget 25 rounds each, restarted from zero, with the handoff-01 rules. Claude reads "same restarted budget" as 25 for T9 too (not T6's 8); AC may correct this.
+- Stage stays **WORK**. [Handoff 03](handoffs/03-response.md) is superseded by [handoff 04](handoffs/04-work.md), which carries the audit-01 response unchanged as Part A and adds T7–T9 as Part B.
+- Handoff 04 marks Claude's sketches as hypotheses, not results: the general-H short-relation lemma, the fold bound |X| ≥ |H|/8, and the octahedral lattice-packing obstruction to single-coset Padua-type cubature for n ≥ 110. Claude's two unrecorded exact checks of the 10-point example (unisolvence; a degree-2 equal-weight rule exists, no degree-3 rule) must be reproduced by the developer.
