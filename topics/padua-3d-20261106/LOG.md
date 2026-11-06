@@ -33,3 +33,20 @@
   before research execution; [round ledger](rounds.md), [gates](gates.md).
 - D0 reproduction adds no novel content. New mechanisms remain gated on D0
   and the full repository predecessor scan. No final ranges needed yet.
+
+## 2026-11-06 — replay round 1 and research launch
+
+- Bounded replay developer: Codex, assigned gpt-6.1-sol medium; resolved runtime
+  metadata is not independently exposed. [D0/D1 both PASS](replay-notes.md).
+  Exact counts, normalized symbolic determinant, modular rank controls and
+  all four 2-D corner identities reproduced. Two PD-N037 fibre/baseline rows
+  match all six historical binary floating values exactly. Compact receipt
+  records input hashes, versions and commands; historical artifacts were
+  recovered read-only from a pinned pushed Git commit.
+- After clearance, launched T1–T6 with disjoint files as requested. T2 code
+  developer uses assigned gpt-6.1-sol medium; T1/T3/T4/T5/T6 mathematical
+  developers use assigned gpt-6.1-sol xhigh. The coordinator retains Astra high.
+  Workers do not control Git or shared records. A supplementary distinct-agent
+  reconstruction and Claude's substantive audit remain separate obligations.
+- Opened draft [PR #33](https://github.com/aacchhee/padua_research/pull/33),
+  audit PENDING, with no IDs reserved and no shared-registry edits.
