@@ -114,3 +114,7 @@ Published protocol d03e74dcf94020ba26d9fae84d3ff6c5519db901 was executed unchang
 ## P3 reverse-bound completion, separate from K2
 
 New [analytic P3 proof](theory/P3-reverse-bound.md) meets A1's reverse-bound resume condition and proves the exact pi^4/8 limit. This uses no new CC numerical fit and changes no original gate outcome. Supplementary remainder/assembly checks pass; focused Claude audit remains separate.
+
+## P2 fixed prospective outcome
+
+All four main receipts1600/1601/3000/3001 satisfy numerical validity, mode2 projector weight>0.9 and L-distance<=0.005. The immutable summary gives **PASS_FINITE_TEST**, MEASURED: even/odd branch-difference decrease rates0.03844594388456076/0.03759101681732508 lie within0.038±0.006; Qmin log-m secants-0.09212119390214092/-0.09246210231483683 differ from registered b2 by0.00340861450/0.00306770608<0.006. No prerequisite failure or scoped kill occurs. [Exact summary](evidence/P2-summary.json), [durable finite scope](theory/P2-measurements.md) and [distinct replay](independent-checks-P2.md). All source/threshold/window choices remain fixed. This is no two-term theorem or crossing-degree result and changes no K4 outcome.

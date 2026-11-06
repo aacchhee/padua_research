@@ -6,14 +6,18 @@ Numerical protocol publication:
 Reviewer: distinct Codex supplementary agent, requested `gpt-6-astra` high;
 actual serving-model and effort metadata are unexposed. Date: 2026-11-06.
 
-**Outcome:** P2's mathematical definitions, calibration implementation and
-small dense validation check out at their stated MEASURED scope. One
+**Outcome:** P2's mathematical definitions, calibration implementation,
+small dense validation and final finite-test disposition check out at
+their stated MEASURED scope. One
 summary failure-path finding was returned to the developer and fixed;
 ten independently executed synthetic control-flow cases pass. No
 unresolved implementation finding remains in this reviewed scope.
-The four main cases were not executed or reviewed by this checker at
-this point. Main release still requires the coordinator's separate
-publication of measured b2/K-stability and authorization.
+After measured-b2 publication and coordinator release, all four main
+receipts were reviewed, m1600 was actually independently replayed, and
+the fixed summary was independently replayed and recomputed. The outcome
+is PASS_FINITE_TEST, with no asymptotic or certified-value inference.
+The dated execution sections below distinguish the earlier pre-main
+checks from that final completion.
 
 ## Scope and code identities
 
@@ -136,9 +140,87 @@ This was an actual distinct execution of the inspected validation code.
 Its dense comparison uses separately implemented Chebyshev weights and
 literal scalar-node L assembly, while sharing the inherited basis
 tables. It is not described as a wholly independent new numerical
-implementation. I did not rerun calibration, m400 or any main case.
+implementation. At that pre-main checkpoint I did not rerun calibration,
+m400 or a main case. The later actual m1600 replay is recorded below.
 
-The remaining uncertainty is floating numerical accuracy and the
-unexecuted main test, not a theorem proved by small-case agreement.
-Future main receipts and their final summary need an outcome check.
+At that checkpoint the main test and its outcome check were still pending.
+Floating numerical accuracy remains a limitation, not a theorem proved
+by small-case agreement.
 Focused Claude audit, publication and registry decisions remain separate.
+
+## Actual independent main replay and final outcome (2026-11-06)
+
+Measured b2/K stability was separately published at
+`64f3b76d5f8eb149f52f296cb744d6dd45a1c708` before main release. I waited
+for the producer's explicit release of its m3000 heavy-process slot;
+only producer m3001 remained active when I launched this unchanged run:
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 timeout 21600 python topics/padua-mz-sharp-constants-20261106/code/P2_modes.py run --m 1600 --output topics/padua-mz-sharp-constants-20261106/evidence/check-P2-independent-m1600.json
+```
+
+The actual command redirected stdout/stderr to regenerable `/tmp` logs.
+Exit 0; wall time 197.76647720899928 s, CPU time 197.65640080999998 s.
+Seed, tolerance, ncv, maxiter, precision and thread settings were unchanged.
+All scientific row fields, source/input identities, residuals, iteration
+counts and validity guards are bit-identical to the frozen producer
+m1600 receipt. Only output path, timings and peak RSS differ. Producer
+SHA-256 remains
+`2817536e8f96cd70dcbb2725f9e8e993cdd8ae543288b71d4e57e77622d4bb01`;
+independent receipt SHA-256 is
+`27d1b98e99e23373b1cda5bd66af31601c6569633ff7cf8f70c325cbc05f01b2`.
+This is a distinct execution of the same inspected implementation, not
+an independent algorithm. I did not independently rerun the other three
+main eigensolves, calibration or m400.
+
+After all four frozen producer receipts existed, I executed:
+
+```sh
+python topics/padua-mz-sharp-constants-20261106/code/P2_summary.py --output topics/padua-mz-sharp-constants-20261106/evidence/check-P2-independent-summary.json
+```
+
+Exit 0, PASS_FINITE_TEST, no prerequisite failure or valid-row departure.
+All scientific fields equal the producer summary exactly; the command's
+output destination differs. Independent summary SHA-256 is
+`8b662dc71b7b4a8ab56303384ecb127ea4c02c93a20fcacaeb491f25079d8b69`;
+producer summary SHA-256 is
+`a12aa19c6a757e7ff5392bbe386544fabe592d24e5e75af008a09833e0eee808`.
+These receipts identify every calibration/main input by hash.
+
+I also independently recomputed the guards and criteria directly from
+all four rows, using 50-digit Decimal arithmetic and logarithms of the
+integer m and R values, rather than the stored floating logs or the
+summary implementation. The same pass follows. This recomputation
+checks arithmetic/disposition of floating inputs; it does not certify
+those inputs.
+
+| Scope | Observed value | Registered test |
+|---|---|---|
+| All four mode-2 weights | 0.9589539148 to 0.9680259907 | >0.9 |
+| All four L distances | 0.0028898546 to 0.0036209251 | <=0.005 |
+| Even branch decrease per log R | 0.03844594388456076 | 0.038 +/-0.006 |
+| Odd branch decrease per log R | 0.03759101681732508 | 0.038 +/-0.006 |
+| Even Q-min secant per log m | -0.09212119390214092 | within 0.006 of b2 |
+| Odd Q-min secant per log m | -0.09246210231483683 | within 0.006 of b2 |
+
+All residual, orthogonality, width and gap guards pass. This supports
+only the prospectively specified finite cases m=1600,1601,3000,3001.
+It proves no two-term law, crossing degree, asymptotic regime or exact
+value of b2. Historical K4 and its outcome remain unchanged. No new
+parameter, additional degree, fit window or retry was selected from
+these outcomes.
+
+## Final integrated D-scope check
+
+Read the coordinator's frozen closing-development sections in report.md
+and results/padua-mz-sharp-constants-20261106.md after the main outcome
+was integrated. No material scope mismatch was found: P2's four-case
+finite pass, rate/secant values and actual single-row replay agree with
+the receipts; no asymptotic or crossing law is inferred. P1 retains its
+exact analytic identification and only the coarse certified enclosure;
+P4 retains a lower-only endpoint claim. The P3 wording matches the
+stated theorem for Pi_(N-1), Pi_N and both parities; its proof audit is
+attributed to the separate P3 checkers, not reconstructed again here.
+Original gates, deferred stronger claims, untouched registries and the
+need for focused Claude audit remain explicit. This closes this
+supplementary integration check without a readiness or merge decision.

@@ -1,9 +1,9 @@
 # Sharp MZ constants via limiting operators (PD-T020, PD-T027, PD-T381): log
 
 - Branch: `codex/padua-mz-sharp-constants-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-mz-sharp-constants-20261106.` · Open handoff: [handoffs/03-response-and-work.md](handoffs/03-response-and-work.md)
+- Stage: AUDIT · Next: `Claude (Opus 5.5, xhigh): Continue codex/padua-mz-sharp-constants-20261106.` · Next handoff: [04-focused-audit.md](https://github.com/aacchhee/padua_research/blob/codex/padua-mz-sharp-constants-20261106/topics/padua-mz-sharp-constants-20261106/handoffs/04-focused-audit.md), published immediately after scientific outputs.
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
-- Current claims: CC one-sided sharp-model upper bound; CC uniform upper bound, endpoint limit and computable error; signed Padua compact-operator logarithmic limits and parity agreement. Exact local records/checks are linked in [report.md](report.md); no final IDs assigned.
+- Current claims: exact scaled CC minimum limit pi^4/8; CC uniform upper bound, endpoint limit, computable error and certified lower1.0044369; signed Padua compact-operator logarithmic limits, elliptic kernel, simple positive ground state, coarse enclosure and finite-mode measurements. Exact local records/checks are linked in [report.md](report.md); no final IDs assigned.
 
 ## 2026-11-06 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -203,3 +203,9 @@ registries are untouched in R.
 ## P1 numerical closure and retained limitations
 
 P1 protocol/code published c1e6e59dd9155b87d9847155d3455d602a5f84e9 before execution. The fixed h=1 rectangle instances N8/theta64 and N16/theta256 take0.118 and1.959 CPU seconds; the first meets its prospective second-instance trigger. N16 certifies r in[0.013164946500379018110831,0.477809279990884889210594], hence the reversed negative c_minus interval. Distinct code/scalar inspection and actual N16 rerun reproduce exact integer endpoints; [report](independent-checks-P1-numeric.md). This is a coarse local computer-assisted PROVED enclosure and zero useful decimal digits. The constant trial and uniform boxes leave substantial width; no stronger practical accuracy is inferred. Three-digit values and c_plus-specific Galerkin/residual certification remain deferred, not disproved. Five P1 rounds total; no further grid or trial tuning was authorized or executed in this bounded instance.
+
+## D completed; focused audit next
+
+- P2 fixed four-case test is PASS_FINITE_TEST, MEASURED; weights0.95895–0.96803, branch rates0.03844594/0.03759102 and secants-0.09212119/-0.09246210 meet every registered target. Main2358.200229CPU-s(.65506CPU-h), Step17.489640CPU-s. Distinct m1600 actual replay197.656401CPU-s is scientifically bit-identical; independent summary replay and high-precision Decimal recomputation agree. [Independent record](independent-checks-P2.md). No two-term theorem, asymptotic decimal or crossing-degree claim; K4 unchanged.
+- All assigned R and bounded D work is complete: every A finding answered; A3 remains explicitly for AC; P1/P2 attempted to recorded outcomes; P3 exact target completed; P4 lower certified/practical upper deferred. Five P1 rounds, two P3 rounds and bounded P2/P4 protocols obey limits; no active campaign process remains. New proofs/certificates have supplementary independent checks, with required Claude focused audit still pending. Shared registry statuses remain unchanged, including PD-T020 despite the new local proof; final IDs/A10 preparation remain later.
+- Stage AUDIT. Scientific outputs are published first; the following handoff-only commit closes03 with the output SHA and adds [handoff04](https://github.com/aacchhee/padua_research/blob/codex/padua-mz-sharp-constants-20261106/topics/padua-mz-sharp-constants-20261106/handoffs/04-focused-audit.md). It requests Claude Opus5.5 xhigh audit of material changes only. AC's A3 mapping decision remains reserved after D; no mapping has been selected.
