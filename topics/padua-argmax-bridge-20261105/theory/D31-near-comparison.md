@@ -130,3 +130,8 @@ budget. It does not settle full D13 relative error, global2048 for an
 unbounded degree range, or a minimal near onset. 2026-11-06,
 parent-assigned Codex Sol xhigh25min; rules/input
 09cc533678a22b38f40b70be95426ebbe81faa93; serving metadata unexposed.
+
+
+## Current result and root closure — 2026-11-06
+
+Current allowance and near theorem status: **PROVED**. Final [D31 review](../independent-checks-D31-near.md), SHA256 `5911111afd3d97b6dc6190244fea5c275af7ed1b8390973c9627d0063734be0c`, independently accepts EVERYn>=2048 physical signed odd noncorner chart with rho<=1/2: lambda<Lambda_c−1/10000. Sole primary and fresh independent31interval/pi/17control checks pass; totalnear<.031031918315289<.03115. Only the old C02floor1/32 is needed. Root adopts this exact scope, preserving historical prerelease text; no actual-corner/far/global premise is silently imported. Final Claude audit remains separate.

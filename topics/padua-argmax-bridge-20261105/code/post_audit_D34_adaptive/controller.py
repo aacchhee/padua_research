@@ -3,7 +3,7 @@ import argparse,json,math,os,pathlib,resource,signal,subprocess,sys,time
 import runtime as R
 from fractions import Fraction as F
 HERE=R.HERE
-OUT=R.ROOT/'local-output/argmax-bridge-20261105/post-audit-D34/static'
+OUT=R.ROOT/'local-output/argmax-bridge-20261105/post-audit-D34/adaptive'
 TOTAL=120                         # controls, build, children and final serialization included
 EXECUTION_ROLE='D34 first n41 exact-oracle producer/checker primary after root release; independent fresh retained-point replay remains required'
 
@@ -73,7 +73,7 @@ def worker(stage):
 
 def stage_run(stage,started):
  budget=2 if stage=='controls' else 100
- wall=15 if stage=='controls' else 1000
+ wall=15 if stage=='controls' else 900
  before=R.cpu();stage_start=time.monotonic();stop=None
  with (OUT/(stage+'.stdout')).open('xb') as stdout,(OUT/(stage+'.stderr')).open('xb') as stderr:
   child=subprocess.Popen([sys.executable,str(HERE/'controller.py'),'--worker',stage],stdin=subprocess.DEVNULL,stdout=stdout,stderr=stderr,start_new_session=True)
@@ -82,7 +82,7 @@ def stage_run(stage,started):
     live=R.D09.group_cpu(child.pid)
     if R.cpu()+live>=110:stop='aggregate CPU safety stop'
     elif live>=budget-1:stop='stage CPU safety stop'
-    elif time.monotonic()-stage_start>=wall or time.monotonic()-started>=1100:stop='wall stop'
+    elif time.monotonic()-stage_start>=wall or time.monotonic()-started>=1000:stop='wall stop'
     try:active=R.strict_json(OUT/(stage+'-checkpoint.json')).get('active_call')
     except (OSError,ValueError):active=None
     if active and live-active['cpu_start']>=15:stop='unfinished native call 15CPU stop'

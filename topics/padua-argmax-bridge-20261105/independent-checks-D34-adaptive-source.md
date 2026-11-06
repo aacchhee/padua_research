@@ -285,3 +285,33 @@ Mathematical soundness matching above is scoped source inspection;
 the release verdict remains blocked until focused correction review.
 Final Claude audit and any later independent finite-result replay are
 separate obligations.
+
+
+## Focused correction closure — 2026-11-06
+
+**ACCEPTED: D34-F1 and D34-F2 CLOSED; no remaining finding.** This
+records the focused verdict already issued to root and the author.
+Before this append the original report was verified as exactly16319bytes,
+SHA256 `d743fe404c4405e7a73a2aaeb786c36de04807e5a2623bb1a4f38d6bee949aba`.
+That entire first-review prefix is preserved unchanged, including its
+original blocked verdict and findings.
+
+The completed read-only comparison against published first candidate
+`e5c3e21a58dc81dcdd227e3c688c56e5ac3fd5dc` showed exactly THREE controller
+literal changes: attempt directory static to adaptive; checker wall1000
+to900; whole wall1100 to1000. FREEZE changes only that controller's
+byte-count/hash row. Corrected controller is16328bytes, SHA256
+`00bf8e1ec13d5f56f91f11079191b843ceffadb377892d27febc3574d4eafb40`;
+corrected FREEZE is6231bytes, SHA256
+`92c38e23f539c53ec599a324a6f694520fc131018b01a80a6495364072928928`.
+SPEC remains SHA256
+`88c9006a6f35d6a1417d6b0fe9437cf70476c194c22b3cc7b5cb0aecf8fa97e2`.
+All other code/native/helper dependencies are unchanged. SOURCE and attempt
+only append repair provenance; all four original Git blob references were
+verified. The corrected source now matches the declared path/wall contract.
+
+No imports, tests, controls, compiler/native/scientific/controller job or
+attempt-lock action occurred in the focused review. This append is only
+metadata recording that completed review; no additional review or test
+was performed. Root publication/release remains separate. Source acceptance
+supplies no primary result, fresh replay or new degree claim.

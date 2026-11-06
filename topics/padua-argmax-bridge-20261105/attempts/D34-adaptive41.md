@@ -82,3 +82,39 @@ Runs needed, not executed:
 - One fully accounted primary; preserve first failure without rescue.
 - If successful, distinct fresh retained-point replay and complete result
   review before any degree/argmax adoption.
+
+
+## 2026-11-06 focused prerelease repair — D34-F1/F2 only
+
+Root authorized this correction after publishing the FIRST unreleased source
+and complete finding report at commit
+`e5c3e21a58dc81dcdd227e3c688c56e5ac3fd5dc`. The immutable report is
+`independent-checks-D34-adaptive-source.md`, SHA256 `d743fe404c4405e7a73a2aaeb786c36de04807e5a2623bb1a4f38d6bee949aba`.
+The original report/history is preserved; no finding was erased or rewritten.
+
+The original controller used the wrong `static` attempt directory and enforced
+checker/whole wall1000/1100 although SPEC/FREEZE/preregistration declared
+`adaptive` and900/1000. This source-preparation mistake is corrected by ONLY
+three controller line edits: OUT `static`→`adaptive`; checker wall1000→900;
+whole wall1100→1000. Only the affected controller byte-size/SHA entry changes
+in FREEZE. Mathematical code, SPEC, CPU budgets, inputs, native source/guards,
+producer/cache/selection order and every other choice remain unchanged.
+No control, stage import, native/compiler/scientific job or primary lock was
+consumed. This is a prerelease correction, not a scientific retry or cap raise.
+
+First versions remain retrievable from the published commit above, under
+`topics/padua-argmax-bridge-20261105/`:
+
+| First object | Git blob | Original SHA256 |
+|---|---|---|
+| code/post_audit_D34_adaptive/controller.py | 9abc2d1a5dcff17306dc649fb18fcb361a68e04b | 05d41911cff591714d3c91d28cdb34f03855a22461f665a98975d1a935f80a7b |
+| code/post_audit_D34_adaptive/FREEZE.json | 95b0190d1cf8de90e16e27249529ead38cb8ae63 | 28897ba9df5b3fc30475b8a7ecfda5c43b2a22b19628f67bff998e2fb1c94e6b |
+| code/post_audit_D34_adaptive/SOURCE.md | a977e87529cd4edb97c949f578b6fa473cf4abe4 | 25ad5a1cc1ec63cec18f504ff95969ac97fa15d50eb7ee4135e24ab45c88a6ee |
+| attempts/D34-adaptive41.md | 678f9e0a16110ef95ec4515888adb1878fbfb345 | c84bd1fa029956aef8b899c999161e97427e09f556716c926c0bf153978a815e |
+
+Corrected controller: 16328B,
+SHA256 `00bf8e1ec13d5f56f91f11079191b843ceffadb377892d27febc3574d4eafb40`.
+Corrected FREEZE: 6231B,
+SHA256 `92c38e23f539c53ec599a324a6f694520fc131018b01a80a6495364072928928`.
+Distinct focused review and root publication/release remain required.
+The author does not launch the corrected source.

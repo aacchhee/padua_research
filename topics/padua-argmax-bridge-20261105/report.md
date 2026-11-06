@@ -480,3 +480,8 @@ D26 final independent result review accepts exact two-corner global argmax for E
 ### Accepted full cheap-cover comparison
 
 The independent same6912/41point replay completes in74.034199CPU versus469.521049 for the original static check; nativepoint sums422.056155→70.122665. Both exact geometry/proof predicates pass withfreshownM45. This is a scoped fullpipeline comparison, including arithmetic and supervision changes. Independent matched2048point calls give2.615699→.488831CPU. No uniformCPUlawfollows. D29nowprovespositive/radius-dependentdefectfloorsfrom41; D32suppliesa genericn41sufficientcontract. The firstadaptive41sourceisheldunreleasedfortwopath/wallcontractfixesbeforeanyexecution.
+
+
+### Current analytic boundary2048
+
+D31 andD33 final independent reviews now accept near1/10000, far3/100 and exact two-corner global argmax for EVERYn>=2048, using accepted actual-corner descent1024. Remaining41–2047 excluding512 staysOPEN. This is a sufficient boundary, not a minimum. D34sourcepath/wallfinding fixes arefocusedaccepted; the firstnewcheapadaptive41run isreleased, notyet a newdegreeclaim.

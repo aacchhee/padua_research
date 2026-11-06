@@ -194,3 +194,6 @@ D26 finalACCEPT e40c805f... rootglobalonset4096 (far1/6,near3/2000,corner1/8). D
 
 
 D21/D23/D28 finitecost/resultreviews ACCEPT(f68b4a19...,fefe368e...): same6912fullCPU469.521→74.034, fixed2048matchedpoint5.35xindependentpair, notuniformlaws. D29/D30/D32supportsACCEPT; D31primaryreleaseinLOG. D34firstsourceUNRELEASEDwithtwoexplicitpath/wallfindingstobefixedafterpublication.
+
+
+D31final5911111a... andD33finala612ec99... ACCEPTED: rootglobalanalyticboundary2048,far3/100,near1/10000,corner1/8. D34focusedsourceF1/F2CLOSEDd21497a0..., correctedFREEZE92c38e23... firstn41releaseinLOG; no resultyet.

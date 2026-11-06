@@ -303,3 +303,121 @@ its independent arithmetic/result closure are still pending. Full D13,
 global2048 for every larger degree, far/corner2048 assembly and any
 minimal-onset claim remain outside this report. No author/shared/Git
 file was changed, and final Claude audit remains separate.
+
+## Sole independent endpoint and completed review — appended closure
+
+The original16635-byte prerelease prefix is preserved unchanged,
+SHA25651b572c3ae02adc40efc1acea745848daaa98fcb2583e78ad6e596b1b3ae3ff3.
+The earlier OPEN statements record the pre-execution chronology; this
+section supplies the previously outstanding endpoint and result review.
+
+**FINAL ACCEPTED, no unresolved finding:** for EVERY integer n>=2048
+and EVERY physical signed odd NONCORNER chart satisfying the original
+theta,phi in[0,pi] and rho<=1/2 guards,
+
+    lambda_n(cos theta,cos phi)<Lambda_c(n)-1/10000.
+
+This is the completed all-n NEAR noncorner result. It uses the accepted
+C02 projection floor1/32 from n160, exactly as prereviewed. It has no
+D29 stronger-floor or D27 actual-corner premise and supplies no far
+comparison or global2048 theorem by itself. The full D13 vanishing
+relative remainder remains OPEN. Root adoption and final Claude audit
+are separate from this independent mathematical/arithmetic acceptance.
+
+Root reported the sole primary after publication
+e5c3e21a58dc81dcdd227e3c688c56e5ac3fd5dc, direct tool chunk49286b,
+observed exit0. The complete author receipt was independently read and
+pinned at SHA256
+`73bf39ba6eec2e3cf7a5b66fdf29329408814823fdf61343e2037e59a075c2d8`.
+It reports passed=true, quadratic_domain=true, first_failure=null,
+all17 controls true and pre-serialization CPU checkpoint0.033517.
+Its source/SPEC remained the exact prerelease hashes. This is the
+author's primary execution, not a run attributed to this reviewer.
+
+Root then released ONE fresh independent N2048 directed reconstruction
+under10CPU. Own source/SPEC/PREEXEC were written, hashed and communicated
+to root BEFORE any D31 arithmetic. The command actually executed was
+
+    python topics/padua-argmax-bridge-20261105/code/post_audit_D31_review/check.py --run-once
+
+Bash's reserved-word time wrapped the command as preregistered. There
+was exactly one launch and one scientific execution, tool chunk5c77aa,
+observed exit0. No missing-wrapper attempt, scientific retry, cap,
+fallback, source/precision/parameter change or threshold scan occurred.
+
+Before arithmetic the source verified all frozen input identities,
+author N/pass/domain/first_failure and the literal31-key set, then
+exclusively wrote the identity receipt. It used ONLY six definitions
+AST-selected from accepted independent D08 arithmetic source
+37e58bc880259c27cd2282dab48231f11822452d6fd2db876c846d1b9a008485.
+No author evaluator, D06 main, old cases or phase inputs executed.
+Directed Decimal70 basic operations and90-term positive atanh series
+with analytic geometric tails replaced the author's Decimal logarithms.
+Pi was freshly enclosed by exact rational alternating Machin70/20 sums.
+
+Both radical discriminants were reconstructed independently. For each
+lower/upper Decimal endpoint, exact Fraction conversion and integer
+isqrt at scale10^80 produced a floor root. The code verified
+
+    root²*denominator <= numerator*scale²
+                         <(root+1)²*denominator
+
+for BOTH endpoints of BOTH radicals. The lower floor and upper floor
+plus one then give a rigorous enclosing radical interval after directed
+conversion. The result retains all four successful squared comparisons
+and the two exact integer endpoint brackets. No Decimal sqrt or numerical
+rootfinder was used. The fixed exact quartic maximum remains the proved
+D22 expression, not an experimentally optimized phase value.
+
+Every scalar formula was restated independently. In particular Knear
+used the expanded coefficients112/pi+43/2 and112/pi+292/3;
+qx used(141V-712)/576 and qy used(47V-184)/192. These cross-check
+the author's separate Kstar/Kout and quadratic-subtraction arrangements.
+All31 independent intervals are contained in their author intervals,
+the pi interval is contained, all17 exact controls agree and are true,
+and all directed quadratic-domain signs pass.
+
+The actual independent receipt reports ACCEPT_INDEPENDENT_D31_N2048,
+first_failure=null and all checks true. Its shortened outward consequences
+are
+
+    NearGate(2048)>0.0001180816847116292>0,
+    Cnear(2048)+U_rad(2048)<0.031031918315289
+                              <0.03115=1/32-1/10000.
+
+The full31-row receipt retains70-digit enclosures, all intermediate
+radical terms and integer brackets. It was generated on Python3.12.14
+at2026-11-06T21:53:41Z. Its pre-serialization whole-self CPU checkpoint
+is0.049486seconds. Bash's FINAL report is user0.044/system0.012seconds
+(sum0.056 at displayed millisecond resolution), elapsed0.057seconds.
+These final observations are distinguished from the earlier checkpoint;
+the process soft9/hard10CPU limits include startup/imports, AST compilation,
+metadata, exact controls, arithmetic and finalization. It launched no
+child process and no native/actual-point/phase/board/quadrature/degree job.
+
+| Owned artifact | Bytes | SHA256 |
+|---|---:|---|
+| code/post_audit_D31_review/check.py |9021| `aaebd5d62ec31f31510e51f2b4e624e5194b039ecf5ab4463451dcf0af1c5048` |
+| code/post_audit_D31_review/SPEC.md |3309| `eff6782b7f459d524c3a9e6b7871b47c030f2e1bae02742aeb06c0ba3f3d2dee` |
+| code/post_audit_D31_review/PREEXEC.json |1121| `46a1bcf377e7e4034834d4a5c6dde75e590b2f06fa1fa2c6ee178bb0a3a5cfcd` |
+| evidence/post_audit_D31_review/identities.json |1640| `68a1fd6534bcc251e593f7e38d82e3258675df4c91cf0d3d60614bdcdefc97ba` |
+| evidence/post_audit_D31_review/scalars.json |8951| `1f168e30788b648dc4d158ec0c1f91f5b766f6eb2feacef124163d3462d50bec` |
+
+The identity and full scalar receipts total10591bytes, below16KiB
+COMBINED; the small execution.json additionally records final process
+observations, and aggregate essential evidence still stays below16KiB.
+The data are not split to evade the limit. Source and SPEC remain exactly
+their preregistered bytes. No hermetic runtime claim is made: trusted
+dependencies are Python exact integers/Fractions and directed Decimal
+basic arithmetic, together with the explicit proved series and integer
+square-root brackets. No old native binary is required for this result.
+
+The prereviewed monotonicity now transfers this actual positive endpoint
+to EVERY integer n>=2048. The complete primitive upper and the single
+strict C02 projection floor then yield the stated physical gap1/10000
+at all signed noncorner near charts, including the closed seam, axes,
+boundaries, nodes and both parities. The successful scalar is therefore
+an endpoint premise of a written unbounded-degree proof, not a finite
+phase sample or degree enumeration. No author, old source, shared record
+or Git state was edited. Root handles the canonical developer closure;
+far/corner/global assembly and final Claude remain separate.

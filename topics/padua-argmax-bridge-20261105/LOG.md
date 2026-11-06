@@ -873,3 +873,15 @@ Report600b3956... ACCEPTS both frozen proofs with no unresolved findings. Root a
 - D33prerelease2671d4a4... ACCEPTS unchangedsource54eea390.../FREEZE00af3dca... andconditionalfar/global2048assembly. RootreleasesEXACTfixed2048two-gate evaluate--run-once afterthispublication, <=5CPUwhole/nochildren; BOTHFin/Foutmustpass. Independentfreshpair/resultreviewrequired; globalALSOrequiresD31finalnear. No source/case/precision/parameter/caprescue/retry.
 - D35review781e1077... ACCEPTS allthreefrozenanalytic scopes, nojobs. Rootadoptsordinary6PH_n/n andfullychargedapplications; no newonsetfromsupportalone. D35complete, total32/40(D01–D30,D32,D35). D37wider-domainpaperusesacceptedD35butremainsunadopted.
 - D34firstsource/findingse5c3publishedbeforefocusauthorrepairauthorization. Sourcepath/wall-onlyresponseinprogress, no attempt/native/controlsexecuted; sourceunreleaseduntilfocusedreviewandnewpublication.
+
+
+### D31/D33 accepted: global analytic boundary2048
+
+- D31final5911111a... preserves16635Bprereleaseprefix, ACCEPTS alln2048near noncornergap1/10000 aftersolefresh31interval/pi/17control replay(EXIT0chunk5c77aa,CPUcheckpoint.049486). No strongerD29floor oractualcornerpremiseused.
+- D33finala612ec99... preserves15510Bprereleaseprefix, ACCEPTS alln2048fullfar3/100 andcompleteglobalparityassemblyusingD31/D27. Primarytool7b6968EXIT0Fin>.03098985/Fout>.11457922/CPUcheckpoint.03636; solefresh39interval/pi/25control replaychunk537be7EXIT0/.099271checkpoint. Allsource/data/firstoutcomespreserved,no retries.
+- Rootadopts exactglobaltwo-cornerargmaxEVERYintegern>=2048, plus2–40and512. Remaining41–2047except512OPEN. D31/D33complete,total34/40(D01–D33andD35). D37finalpaper1024targetremainsunadopted.
+
+### Corrected D34 source release
+
+- F1/F2focusedreviewfinald21497a0... preserves exactfirst16319B/d743fe40findingsprefix; verifiesTHREEcontrollerliteralchangesonly, updatedcontroller00bf8e1e.../FREEZE92c38e23..., SPECunchanged88c9006a..., allothercode/data unchanged. Source/attemptdatedprovenancepinfirste5c3Gitblobs; no control/native/import/test/job/lockconsumedinrepair/review.
+- Rootreleases EXACTcorrected D34controller--run-once n41ONLY afterthispublication. Full120CPU/control2/worker100/safety110/native10/15/256uniqueS+3lambda/2047nodes/depth18; wallchecker900/whole1000, outputadaptive. No source/precision/case/seed/caprescue/retry. Complete finalaccountacceptedANDrootdirectEXIT0needed; newdegree41requiresindependentfreshkeptpointreplay. Allfirstfailedsourcefindingsremainhistoricalandclosed, notscientificattempts.

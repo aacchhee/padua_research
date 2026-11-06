@@ -1,0 +1,14 @@
+{
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D33_review/check.py --run-once",
+  "scientific_invocations": 1,
+  "observed_tool_chunk": "537be7",
+  "observed_exit_code": 0,
+  "status": "ACCEPT_INDEPENDENT_D33_N2048",
+  "whole_process_CPU_hard_limit": 10,
+  "cpu_checkpoint_before_serialization": 0.09927099999999998,
+  "exact_final_CPU_measured": false,
+  "children": 0,
+  "native_or_phase_calls": 0,
+  "retry": false,
+  "scalar_receipt_sha256": "962277ae9bb7d3d0a5442b683cdfdf71438786b38f9cc3a231bf1a6bd83a5791"
+}

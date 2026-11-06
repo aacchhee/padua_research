@@ -281,3 +281,178 @@ without importing the author evaluator. No such source or run is
 claimed at this prerelease checkpoint. No global2048 adoption, minimal
 onset, remaining lower-degree closure, native throughput law or full
 D13 result follows from this conditional acceptance.
+
+## Sole independent pair and completed review — 2026-11-06 append
+
+This section preserves the complete original15510-byte prerelease
+prefix, SHA256
+`2671d4a4521c5487f91caa27505d13688f9f7c33dfbf2e1143454d3c6e65f444`.
+The OPEN statements above record the earlier chronology; the following
+actual results fulfill those explicitly pending premises.
+
+**FINAL ACCEPT, no unresolved finding:** for EVERY integer n>=2048,
+throughout the full CLOSED signed far domain1/2<=rho<=pi,
+
+    S_n(alpha,beta)<Lambda_c(n)-3/100.
+
+The complete global comparison is now also accepted for EVERY integer
+n>=2048, with exactly
+
+    max lambda_n=Lambda_c(n)=lambda_n(-1,-1),
+    argmax lambda_n={(-1,-1),(1,-1)} for even n,
+                    {(-1,-1),(-1,1)} for odd n.
+
+This global conclusion uses the separately completed D31 near result
+and previously accepted D27 actual-corner result, identified below.
+It does not rest on a finite-degree certificate or a phase sample.
+Root publication/adoption and final Claude audit remain separate.
+
+### Primary outcome and independent preregistration
+
+Root reports the exact frozen primary command executed ONCE after
+publication7a5cd42a5c67b536af22d07438216f7ebecc58e2, tool chunk7b6968,
+observed EXIT0. I read and pinned its complete7389B budget-2048.json,
+SHA256
+`5e2610b0e6226f055a474bff84936bcdd1e88317e75b1671363ed20c717ba875`.
+It records passed=true, all25 controls true and CPU checkpoint0.03636
+before serialization. Source/SPEC/FREEZE remain the prerelease bytes.
+This is the primary execution reported by root, not a run attributed
+to this reviewer. Its registration SHA256 is
+`a82172b8fabcf955e53f7c17e7636c93909daf22b8b286b1c4824682321a9a6b`.
+
+Root then expressly released my ONE fresh independent N2048 pair
+under10CPU. Own source and SPEC were created, read as text, frozen,
+hashed and communicated to root BEFORE any arithmetic execution.
+The source was adapted as text from this reviewer's accepted D26
+arithmetic driver; all D33 formulas were independently restated.
+A stale textual hash produced while preparing that draft was corrected
+during static reading BEFORE freeze or any execution. No failed scalar,
+control or import preceded the sole run, and the frozen source was
+never changed afterward.
+
+The exact command was
+
+    python3 topics/padua-argmax-bridge-20261105/code/post_audit_D33_review/check.py --run-once
+
+It ran once, tool chunk537be7, and I directly observed EXIT0 and
+ACCEPT_INDEPENDENT_D33_N2048. The exclusive evidence directory was
+fresh and is retained. There was no retry, fallback, case/threshold
+scan, parameter/precision/cap change or source rescue.
+
+### Independent arithmetic and all components
+
+Before numerical operations the driver checked the full primary hash
+and byte count, exact N/pass, literal39-interval and25-control key sets
+and types, source/FREEZE/SPEC and independent helper identities. It
+wrote the actual counts and pins to identities.json before compiling
+or executing any arithmetic definition. Counts are therefore verified
+against the actual artifact, not accepted from the earlier brief.
+
+Only seven named definitions from accepted independent D08 source
+37e58bc880259c27cd2282dab48231f11822452d6fd2db876c846d1b9a008485
+were AST-selected: rounded,Box,maxbox,atanh_log,scalar_log,log,
+atan_recip. No D33 or D06 author evaluator, old main, case loop or
+phase input executed. Decimal70 basic operations are outward directed;
+logs use90 positive atanh terms with an explicit geometric remainder
+after exact dyadic reduction. Pi uses fresh exact Fraction alternating
+Machin70/20 bounds and directed conversion. No Decimal ln or sqrt
+is used by this independent implementation.
+
+For EACH of191/768 and2277/4096, exact integer isqrt at scale10^80
+constructs r and verifies
+
+    q*r²<=p*scale²<q*(r+1)².
+
+The rational interval[r/scale,(r+1)/scale] encloses the exact root
+before Decimal conversion. This fixed constant enclosure is neither
+a phase rootfinder nor a sampled root approximation.
+
+All39 intervals were independently reconstructed. Gg uses its fully
+expanded positive expression; E6old uses its combined coefficient.
+The inner gate uses
+
+    u0*(T-11+A)-Cbase-A-Kinner*s0-E0,
+
+which independently checks the retained A*(1-u0) charge. The outer
+gate subtracts Cbase and the OLD GLOBAL E6old separately. Both retain
+the complete actual-origin E0. Thus interval agreement also checks
+different algebraic arrangements of the substantive costs.
+
+EVERY independent component interval is contained in its corresponding
+primary interval, and the independent pi interval is contained too.
+All25 separately reconstructed exact controls agree and pass. The
+independent directed lower bounds imply
+
+    Fin(2048)>0.0309898528886087876967562120238580585354161746179890,
+    Fout(2048)>0.1145792229983425077198563330874076081514311054914843.
+
+Both exceed3/100, as explicitly required by the independent SPEC
+before its sole run. This stronger consequence does not alter the
+producer's frozen positive-sign gate or introduce a second trial.
+The scalar receipt retains the full70-digit intervals, every root,
+charge and control; these shortened displayed bounds are outward.
+
+The source rechecked every input and its own source/SPEC identities
+after arithmetic. Its CPU checkpoint through pre-serialization is
+0.09927099999999998seconds. This is not claimed as exact final CPU.
+The single process's soft9/hard10CPU limit applied through startup,
+imports, AST compilation, arithmetic, serialization, output and exit;
+it had zero children. A subsequent cap assertion passed and actual
+EXIT0 was observed. No native/build, model/actual-point, phase, board,
+quadrature or degree job occurred.
+
+| Owned artifact | Bytes | SHA256 |
+|---|---:|---|
+| code/post_audit_D33_review/check.py |10105| `625c5dd945c856555c1ff1ef92e0b50f5046dfb1fca7331f2dbcdf5500672448` |
+| code/post_audit_D33_review/SPEC.md |3603| `068d8b84bd16e8de094f397211930bc3f52255147462e8c331137cbcd011f0bb` |
+| evidence/post_audit_D33_review/identities.json |2510| `064e0f304e1b01f7f248c0f792196c71ad103ba8bd193ba1c4c99974d5e9459b` |
+| evidence/post_audit_D33_review/scalars.json |9697| `962277ae9bb7d3d0a5442b683cdfdf71438786b38f9cc3a231bf1a6bd83a5791` |
+
+The two complete receipts total12207B, below16KiB COMBINED. The small
+execution.json preserves the directly observed exit and checkpoint;
+the aggregate essential evidence remains below16KiB. There is no
+component pruning or splitting to avoid the evidence cap. Trusted
+dependencies remain exact Python integers/Fractions, directed Decimal
+basic arithmetic and the proved series/bracket bounds; no hermetic
+runtime or native-library-independent global theorem is claimed.
+
+### Completed near premise and global assembly
+
+The D31 reviewer supplied its completed report, which I read through
+the result append and independently hash-verified at
+
+    independent-checks-D31-near.md,23328B,
+    5911111afd3d97b6dc6190244fea5c275af7ed1b8390973c9627d0063734be0c.
+
+Its original16635B prerelease prefix remains51b572c3...; the new
+append supplies the missing endpoint and independent execution.
+The completed conclusion is precisely: EVERY integer n>=2048,
+EVERY physical signed odd NONCORNER center with0<=J<=n,
+0<=K<=n+1,J+K odd, theta=(J*pi+alpha)/n and
+phi=(K*pi+beta)/(n+1) in[0,pi],rho<=1/2 satisfies
+lambda_n(cos theta,cos phi)<Lambda_c(n)-1/10000.
+It uses ONE applicable accepted C02 projection>1/32; no D29 stronger
+floor or D27 premise enters that near proof. Its own sole N2048
+execution, chunk5c77aa EXIT0, independently checks all31 intervals
+and pi,17 controls, positive quadratic domains and
+NearGate>0.0001180816847116292. Its scalar receipt is
+`1f168e30788b648dc4d158ec0c1f91f5b766f6eb2feacef124163d3462d50bec`.
+No D31 computation was rerun here.
+
+D27's completed corner report830eaf21c0104180f3874531b268253a3958d4e1de52b202b08306e59d4232c3
+already supplies radial loss1/8 on both actual CLOSED pi/4 squares
+for every n>=1024. All domains therefore hold at every n>=2048.
+The prereviewed monotonicity transfers BOTH new far endpoint lower
+bounds to the entire unbounded degree range. The physical cover in
+the unchanged prerelease section then exhausts actual far points,
+noncorner near points and both actual-corner inward near regions,
+including the seams, ties, axes, nodes, boundaries and collisions.
+Only the two parity-correct symbolic corner origins attain Lambda_c.
+
+The previously conditional frozen D33 far/global implications are now
+fulfilled by independently checked evidence. Root owns the dated
+PROVED closure of author files and canonical adoption; this reviewer
+changed neither author prose/source nor shared/Git records. No claim
+of minimum onset, closure of remaining lower degrees, full D13
+vanishing remainder or native performance follows. Final Claude audit
+is still a separate requirement.

@@ -109,3 +109,8 @@ claim follows. Earlier accepted theorems/certificates and all source/
 failure records remain unchanged. 2026-11-06, Codex gpt-6.1-sol
 xhigh20min PREP, inputeb9329c28be18d77eeb817f634202d626ee11f92;
 serving metadata unexposed. Distinct prerelease/result review pending.
+
+
+## Current result and root closure — 2026-11-06
+
+Current status: **PROVED**. Final [D33 review](../independent-checks-D33-global.md), SHA256 `a612ec99964f87a3e74db32a30b71e4e6c637524d71d51bd6b97da5cdd293a37`, accepts strict primitive FAR gap3/100 on the full closed signed1/2<=rho<=pi for EVERYn>=2048, and the exact two parity-correct global argmax sets using completed D31 near gap1/10000 and D27 actual-corner loss1/8. Root adopts those exact scopes. Sole primary Fin>.03098985288860878/Fout>.1145792229983425; independent39intervals/pi/25controls pass on its first execution. No finite-degree interpolation or old higher-floor transfer is used. Historical OPEN prerelease statement is preserved; no claim below2048 follows here. Final Claude audit remains separate.

@@ -1,21 +1,21 @@
 # Padua argmax bridge — current research results
 
-The exact two-corner global argmax is proved for **degrees 2–40, 512,
-2048**, and **every integer n>=4096**. Equality corners are
+The exact two-corner global argmax is proved for **degrees 2–40, 512**, and **every integer n>=2048**. Equality corners are
 {(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n.
-Degrees41–4095 excluding512 and2048, and the all-degree target PD-T099,
+Degrees41–2047 excluding512, and the all-degree target PD-T099,
 remain OPEN. This is a sufficient analytic upper boundary.
 
-[Global theorem](../topics/padua-argmax-bridge-20261105/theory/D26-global-comparison.md),
-[independent review](../topics/padua-argmax-bridge-20261105/independent-checks-D26-onset.md).
-For n>=4096: far S<Lambda_c-1/6; near noncorner
-lambda<Lambda_c-3/2000; actual corners
+[Global theorem](../topics/padua-argmax-bridge-20261105/theory/D33-global-comparison.md),
+[independent review](../topics/padua-argmax-bridge-20261105/independent-checks-D33-global.md).
+For n>=2048: far S<Lambda_c-3/100; near noncorner
+lambda<Lambda_c-1/10000; actual corners
 lambda<=Lambda_c-(alpha²+beta²)/8. The complete closed physical cover,
-both parities, nodes, collisions and equality are proved. Accepted actual-origin
-cancellation, anisotropic near bounds and the sharper far constant25/2
-combine with the fully charged global error telescope. Sole4096 primary
-and independent27component/pi/15control replay pass. PD-T271 remains an
-explicit computer-assisted dependency; final Claude audit remains pending.
+both parities, nodes, collisions and equality are proved. The far proof uses
+a new two-region retained-row telescope; the near proof keeps the exact
+actual-origin charge and anisotropic radical maxima. Primary2048 and fresh
+independent39interval/pi/25control far replay pass, alongside the separate
+31interval/pi/17control near replay. PD-T271 remains an explicit
+computer-assisted dependency; final Claude audit remains pending.
 
 The guarded actual-Lebesgue point evaluator independently reproduced all13
 fixed cases,10 finite-polynomial references and6 invalid controls in
