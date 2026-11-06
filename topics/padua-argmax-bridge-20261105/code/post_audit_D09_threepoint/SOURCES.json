@@ -1,0 +1,67 @@
+{
+  "input_head": "9d5e8c7a1a8fab6017d5dd9406daec0d834b0bbf",
+  "frozen_ancestors": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/point.cpp",
+      "bytes": 9698,
+      "sha256": "03dc79bbbc7563ba9066137c0a52467624c810a758f865f9931511c82985ff6f"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/controls.cpp",
+      "bytes": 2469,
+      "sha256": "5db13088e9fff85a134c95851337750ca03ea62be2f5d3ecf07e1f6e7d49c3fa"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/build.py",
+      "bytes": 5829,
+      "sha256": "13efba942b47be6ccacd4f13f81ce387bb268ff4f7ef77c2e648357a135c9ef8"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/FREEZE.json",
+      "bytes": 2930,
+      "sha256": "c8b8e49e5c5af5ff520f00f8b7bac655a6c31cc132a5cb06cd87397c36fa33fb"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/partial.cpp",
+      "bytes": 7688,
+      "sha256": "bde1ce4850849dd402acc91eb3cee7d40883bbd51d5f7cff13334abc0f4ee23c"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/evidence/d07-fourcopy-point.json",
+      "bytes": 12389,
+      "sha256": "f6e574e8e9ce3523d2dfc257c9597e80b62973dd4b4d9f419a686dfd4b07206b"
+    }
+  ],
+  "norms": {
+    "32": {
+      "upper": "46",
+      "kind": "Cauchy-Schwarz rational upper;46^2>2*32*33"
+    },
+    "512": {
+      "upper": "34",
+      "kind": "root supplied prospective global D05/D06 model upper34; final proof/hash/distinct review pending at preparation"
+    }
+  },
+  "norm_release_note": "No mathematical instance may run before root release after proof/source review.",
+  "control": {
+    "n": 32,
+    "xi_pi": "1/512",
+    "zeta_pi": "1/1056"
+  },
+  "primary": {
+    "a_turn": "1/4",
+    "b_turn": "3/16"
+  },
+  "fallback": {
+    "a_turn": "1/6",
+    "b_turn": "5/31"
+  },
+  "native_n": 512,
+  "pi_upper": "22/7",
+  "pi_lower": "157/50"
+}

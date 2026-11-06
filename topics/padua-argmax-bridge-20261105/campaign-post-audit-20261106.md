@@ -19,7 +19,7 @@ Completed: **8/25**. Active: **D09**; D10 mathematical preparation runs in paral
 | D06 | COMPLETE | Assess the new analytic error; direct four-copy row structure | Frozen allowance fails useful budgets through10000; scalar/analytic check accepted. Cubic/quartic actual-row reduction accepted at pointwise scope; no implementation/runtime claim. |
 | D07 | COMPLETE | Replace coarse outer/retained-row charges; guarded exact-point prototype | All analytic supports accepted after one weak-inequality correction. Source findings closed;13-case point trial PASS12.056CPU, independent fresh replay PASS12.008CPU. Generic n5122.093CPU,3 safe row fallbacks. Point component only. |
 | D08 | COMPLETE | Lower global analytic onset; point-to-box reduction | Global theorem independently accepted for every n>=50000, primary40000 far failure preserved. Three split point-to-box proofs independently accepted with no findings; no patch instances. |
-| D09 | ACTIVE | Three-point actual-corner trial and a useful independent global norm | Bounded new-norm math and technical specification only; no native instance released before math/source gates. |
+| D09 | ACTIVE | Three-point actual-corner trial and a useful independent global norm | Global M512=34 and frozen three-point controller independently accepted. One-shot bounded primary/fixed fallback trial released only after publication; successful premises still pending. |
 
 Current boundary: exact argmax2–40 and every integer n>=50000; gap41–49999 OPEN.
 

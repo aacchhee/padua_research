@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checks": [
+    "exact binary endpoints differ from decimal shorthand",
+    "NaN",
+    "infinity",
+    "reverse",
+    "negative radius",
+    "arity",
+    "strict threshold -1/100",
+    "strict threshold 0",
+    "strict threshold 1/100",
+    "epsilon rational",
+    "three losses required",
+    "retain completed costly vertex",
+    "ledger rejects wrong order",
+    "exact norm selection",
+    "fixed fallback positive sides",
+    "all runtime freeze identities"
+  ],
+  "total_process_cpu_before_output": 0.040184,
+  "controller": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D09_threepoint/controller.py",
+    "bytes": 16019,
+    "sha256": "5642ad6fdf2c28165fc8d17ce8e62330ed695e7b64bb1242c13312d53d47fd73"
+  }
+}
