@@ -82,13 +82,17 @@ gives an exact-real O(n) point representation using bounded cotangent
 blocks, four retained rows and ambiguous endpoint samples. The C06 partial
 backend passed independent LP64 review:76 cases and784 exact moment checks
 in2.69CPU seconds. It is one component; it does not itself implement full
-S or whole-box/gradient/defect/corner predicates. C07 point-S integration
-is under development/review. Moving-root whole-box bounds are a separate
-mathematical task, with complexity and conditioning to be proved.
+S or whole-box/gradient/defect/corner predicates. C07 guarded point-S integration is now independently accepted on LP64.
+It is still expensive: n128 costs11.55CPU in the fixed cost pilot,
+and the n512 attempt reached its cap. Source countO(n) is not yet cheap
+runtime. A faster interval moment recurrence is in development.
+The direct moving-root whole-box interface and its fixed-width quadratic
+enumeration obstruction are now proved; a coefficient-convexity escape
+to guardedO(n) whole-box upper bounds is under independent review.
 
 ## Limits, resources and next work
 
-The fresh campaign has completed five coordinated rounds; C06/C07/C08
+The fresh campaign has completed seven coordinated rounds; C08/C09/C10
 work continues under AC's allowance of up to15. The [campaign ledger](campaign-20261106.md)
 is authoritative for round outcomes, with historical direction totals in
 [rounds](rounds.md). Next scientific priorities are the practical far

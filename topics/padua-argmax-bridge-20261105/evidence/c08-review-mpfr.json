@@ -1,0 +1,68 @@
+{
+  "status": "PASS_WITH_DOMAIN_FINDING",
+  "exit_status": 0,
+  "watchdog_stopped": false,
+  "total_cpu": 4.645847918000001,
+  "peak_group_cpu": 4.597710898000001,
+  "wall": 4.662440388001414,
+  "raw": {
+    "path": "/tmp/c08-independent-review-n9ks1as2/raw.json",
+    "bytes": 42527,
+    "sha256": "f95d15500dd107481fd2bb687c72a01ed465c9a2b39898cc3a1b1df9f93e3b62"
+  },
+  "control": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_c08_review/control.py",
+    "bytes": 11268,
+    "sha256": "1debd24f60b8b01f4cff383bfce47030cf33dc86c24df4aca1257f831b6361fd"
+  },
+  "assertions": 382,
+  "ratio_cases": 38,
+  "jet_cases": 4,
+  "box_cases": 8,
+  "findings": [
+    {
+      "label": "geometry-wide-box-domain",
+      "n": 2,
+      "box": [
+        -25.132741228718345,
+        25.132741228718345,
+        0.0,
+        0.0
+      ],
+      "result": 2,
+      "meaning": "returns local2 outside original phase square; full-box monotonic-domain guard absent"
+    }
+  ],
+  "failure": null,
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/producer.c",
+      "bytes": 6318,
+      "sha256": "bf32c04994abf53cda5aca1cc63ceb2778d6339565a8cbc7c6337d9af22dc87d"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/c08_interval.h",
+      "bytes": 6575,
+      "sha256": "275936b502180f2d92af94eb2138815114ba75afb9c258cadffa44e580be0a03"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/build.py",
+      "bytes": 3463,
+      "sha256": "fff281f0c765025ec182937aff38398e7eedfd11b66bfeb36f105734b730d81f"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_c08_review/control.py",
+      "bytes": 11268,
+      "sha256": "1debd24f60b8b01f4cff383bfce47030cf33dc86c24df4aca1257f831b6361fd"
+    }
+  ],
+  "constants": [
+    3.141592653589793,
+    3.1415926535897936,
+    10.993594541097181,
+    10.993594541103743
+  ],
+  "full_producer_run": false,
+  "full_candidate_check": false,
+  "new_degree": false
+}

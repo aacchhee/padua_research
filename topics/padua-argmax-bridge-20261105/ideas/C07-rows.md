@@ -1,0 +1,7 @@
+# C07 point-S integration gate
+
+Rules/input b6e67b3c78cb668b6d2f9da5a5560537d2960bf3. Assigned implementation variant, no new mathematics, novelty or priority claim. Prospective gate before candidate: reread accepted C02 row decomposition and independent review, C06 implementation/review, N2 full-phase signed rows, N1 normalization and C01 collapsed primitive. Closest mechanisms are exactly those accepted dependencies; no new mechanism is proposed, so historical/literature novelty exploration is outside scope.
+
+Candidate: integrate fixed boundary-root balls into contiguous integer blocks, moving every unresolved boundary grid sample into a bounded direct set, then call frozen C06 and retain four special rows using the finite collapsed sine-ratio polynomial. Strict guards reject unresolved wide root clusters. Phase interface uses exact rational multiples of pi in the closed first-quadrant triangle; this includes axes, both parities, collisions, edges and vertices. No phase-box capability is claimed. Other signs use existing separate evenness externally.
+
+Kill test: a successful result failing to contain a high-precision independent direct finite-board sum, a missed/duplicated grid index, >5 direct ordinary samples, >12 channel blocks, or any production q-length inner-board loop except the four retained rows. Numerical rejection is recorded, not replaced by a reference-board fallback. Fixed degree C06 analytic errors and every direct primitive radius are retained.

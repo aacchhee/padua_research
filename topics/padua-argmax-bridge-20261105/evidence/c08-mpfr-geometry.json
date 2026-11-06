@@ -1,0 +1,338 @@
+{
+  "format": "C08-geometry-correction-v1",
+  "status": "PASS",
+  "failure": null,
+  "assertions": 24,
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/producer.c",
+      "bytes": 6341,
+      "sha256": "270eb7b0f073efcb996c7c832f6e946d37b0e6f780fdac63fc66591332560a5e"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/c08_interval.h",
+      "bytes": 6575,
+      "sha256": "275936b502180f2d92af94eb2138815114ba75afb9c258cadffa44e580be0a03"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/build.py",
+      "bytes": 3463,
+      "sha256": "fff281f0c765025ec182937aff38398e7eedfd11b66bfeb36f105734b730d81f"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/geometry_controls.py",
+      "bytes": 3237,
+      "sha256": "bb788d2ad5b75cc9d681773072b642eb9743fb0c8ac6a4746aca404d76e617db"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/geometry_supervise.py",
+      "bytes": 1261,
+      "sha256": "e946837a7cebb7011657453a1def90ba265819f32d17502cd539b6221ba025dc"
+    }
+  ],
+  "old_source": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C08-mpfr/producer-before-geometry.c",
+    "bytes": 6318,
+    "sha256": "bf32c04994abf53cda5aca1cc63ceb2778d6339565a8cbc7c6337d9af22dc87d"
+  },
+  "records": [
+    {
+      "n": 2,
+      "box": [
+        -25.132741228718345,
+        25.132741228718345,
+        0.0,
+        0.0
+      ],
+      "expected": 3,
+      "actual": 3,
+      "label": "exact reviewer wide counterexample"
+    },
+    {
+      "n": 2,
+      "box": [
+        -3.1415926535897936,
+        3.1415926535897936,
+        -3.1415926535897936,
+        3.1415926535897936
+      ],
+      "expected": 0,
+      "actual": 0,
+      "label": "full original root"
+    },
+    {
+      "n": 2,
+      "box": [
+        -4.0,
+        4.0,
+        0.0,
+        0.0
+      ],
+      "expected": 0,
+      "actual": 0,
+      "label": "exact alpha endpoint4"
+    },
+    {
+      "n": 2,
+      "box": [
+        0.0,
+        0.0,
+        -4.0,
+        4.0
+      ],
+      "expected": 0,
+      "actual": 0,
+      "label": "exact beta endpoint4"
+    },
+    {
+      "n": 2,
+      "box": [
+        -4.000000000000001,
+        4.000000000000001,
+        0.0,
+        0.0
+      ],
+      "expected": 3,
+      "actual": 3,
+      "label": "alpha above4"
+    },
+    {
+      "n": 2,
+      "box": [
+        0.0,
+        0.0,
+        -4.000000000000001,
+        4.000000000000001
+      ],
+      "expected": 3,
+      "actual": 3,
+      "label": "beta above4"
+    },
+    {
+      "n": 2,
+      "box": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "expected": 2,
+      "actual": 2,
+      "label": "zero local point"
+    },
+    {
+      "n": 2,
+      "box": [
+        3.5,
+        3.5,
+        0.0,
+        0.0
+      ],
+      "expected": 1,
+      "actual": 1,
+      "label": "outside point in admitted domain"
+    },
+    {
+      "n": 2,
+      "box": [
+        -3.1415926535897936,
+        0.0,
+        -3.1415926535897936,
+        0.0
+      ],
+      "expected": 0,
+      "actual": 0,
+      "label": "original phase quadrant"
+    },
+    {
+      "n": 2,
+      "box": [
+        -3.1415926535897936,
+        0.0,
+        0.0,
+        3.1415926535897936
+      ],
+      "expected": 0,
+      "actual": 0,
+      "label": "original phase quadrant"
+    },
+    {
+      "n": 2,
+      "box": [
+        0.0,
+        3.1415926535897936,
+        -3.1415926535897936,
+        0.0
+      ],
+      "expected": 0,
+      "actual": 0,
+      "label": "original phase quadrant"
+    },
+    {
+      "n": 2,
+      "box": [
+        0.0,
+        3.1415926535897936,
+        0.0,
+        3.1415926535897936
+      ],
+      "expected": 0,
+      "actual": 0,
+      "label": "original phase quadrant"
+    },
+    {
+      "n": 512,
+      "box": [
+        -3.1415926535897936,
+        0.0,
+        -3.1415926535897936,
+        0.0
+      ],
+      "expected": 0,
+      "actual": 0,
+      "label": "original phase quadrant"
+    },
+    {
+      "n": 512,
+      "box": [
+        -3.1415926535897936,
+        0.0,
+        0.0,
+        3.1415926535897936
+      ],
+      "expected": 0,
+      "actual": 0,
+      "label": "original phase quadrant"
+    },
+    {
+      "n": 512,
+      "box": [
+        0.0,
+        3.1415926535897936,
+        -3.1415926535897936,
+        0.0
+      ],
+      "expected": 0,
+      "actual": 0,
+      "label": "original phase quadrant"
+    },
+    {
+      "n": 512,
+      "box": [
+        0.0,
+        3.1415926535897936,
+        0.0,
+        3.1415926535897936
+      ],
+      "expected": 0,
+      "actual": 0,
+      "label": "original phase quadrant"
+    },
+    {
+      "n": 1,
+      "box": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "expected": 3,
+      "actual": 3,
+      "label": "degree too small"
+    },
+    {
+      "n": 513,
+      "box": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "expected": 3,
+      "actual": 3,
+      "label": "degree too large"
+    },
+    {
+      "n": 2,
+      "box": [
+        "nan",
+        0.0,
+        0.0,
+        0.0
+      ],
+      "expected": 3,
+      "actual": 3,
+      "label": "nan rejected"
+    },
+    {
+      "n": 2,
+      "box": [
+        0.0,
+        "inf",
+        0.0,
+        0.0
+      ],
+      "expected": 3,
+      "actual": 3,
+      "label": "inf rejected"
+    },
+    {
+      "n": 2,
+      "box": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "expected": 3,
+      "actual": 3,
+      "label": "reversed interval rejected"
+    }
+  ],
+  "receipt": {
+    "path": "local-output/argmax-bridge-20261105/cheap-C08-mpfr/geometry-controls.json",
+    "bytes": 23709,
+    "sha256": "92713944cf17b9331b32f7be9d8c30b2079927c8d55fad51fb969a80fb2c0f33"
+  },
+  "supervisor_receipt": {
+    "path": "local-output/argmax-bridge-20261105/cheap-C08-mpfr/geometry-supervisor.json",
+    "bytes": 1088,
+    "sha256": "96f8fd6ed4a0cc3decbea064559077370b54e20466ac258559242a0485e3f6c6"
+  },
+  "supervised_worker_build_cpu": 0.9165949999999999,
+  "supervisor_own_cpu": 0.0016850020000000014,
+  "total_supervised_cpu": 0.9182800019999999,
+  "wall": 0.9166627409977082,
+  "exit_status": 0,
+  "original_review_finding": {
+    "path": "/tmp/c08-independent-review-n9ks1as2/raw.json",
+    "bytes": 42527,
+    "sha256": "f95d15500dd107481fd2bb687c72a01ed465c9a2b39898cc3a1b1df9f93e3b62",
+    "result": "n3_geometry(2,-8*pi,+8*pi,0,0) returned2 before guard"
+  },
+  "original_review_essential": {
+    "path": "topics/padua-argmax-bridge-20261105/evidence/c08-review-mpfr.json",
+    "bytes": 2153,
+    "sha256": "33ea73039d6ad7c3ea44cc2281e734995e0a933875af4b5582e5d8ad33dab275"
+  },
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C08-mpfr/build-s5h69fml/producer.so",
+    "bytes": 46064,
+    "sha256": "e7fe7eabb0e3466733e3f03252d73d24742feec431ccd561e403d5896b7064f3"
+  },
+  "preprocessed": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C08-mpfr/build-s5h69fml/producer.i",
+    "bytes": 136817,
+    "sha256": "1b2c10aae92408cd2c72b0b25c39f369ea4f8118369c9e302c23b27ce192bcc4"
+  },
+  "compiler_version": "x86_64-linux-gnu-gcc-14 (Debian 14.2.0-19) 14.2.0",
+  "closure_counts": {
+    "tools": 4,
+    "tool_runtime_closure": 13,
+    "headers": 42,
+    "linked_runtime_closure": 5,
+    "actual_loaded_mappings": 13
+  },
+  "no_box_or_producer_calls": true,
+  "scope": "Only n3_geometry guards aa<=4 andbb<=4 changed; header and other arithmetic unchanged; independent focused re-review pending."
+}

@@ -41,16 +41,20 @@ cost222.81CPU has not yet been reduced by that checker result.
 The [exact-real row reduction](../topics/padua-argmax-bridge-20261105/theory/C02-row-cotangent.md)
 offers an O(n) point representation. Its partial-cotangent backend passed
 independent LP64 source/control review,76 native cases and784 exact moment
-checks in2.69CPU seconds. Full point-S integration and moving-root whole-box
-bounds are being developed separately; the partial backend alone supplies
-no complete certifier. A new MPFR producer port is also in bounded testing.
+checks in2.69CPU seconds. Guarded full point-S integration has now passed independent review.
+Its current prototype is slow(n128:11.55CPU seconds); faster moment
+evaluation is being tested. Direct moving-root whole-box enumeration
+has a proved fixed-width quadratic obstruction; a convexity escape is
+under separate review. The new MPFR producer component has passed
+independent review after a geometry guard repair; its complete known-case
+producer run is not yet released.
 
 Finite energy2–128 and its analytic tail, N4/N6 scoped failures, N5's OPEN
 quarter target and earlier failed mechanisms remain preserved in their
 records. They do not close the finite global gap. No practical Syvert pack
 is ready. Major archive cleanup remains a separate topic.
 
-Six fresh coordinated rounds are complete; useful C07/C08 work continues
+Seven fresh coordinated rounds are complete; useful C08/C09/C10 work continues
 within AC's authorized allowance of15. Formal **Claude Opus5.5 xhigh audit
 is PENDING**; independent Astra checks supplement it. PR27 remains draft
 WORK with final shared-registry application pending. See the

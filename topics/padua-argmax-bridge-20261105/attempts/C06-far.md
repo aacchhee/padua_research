@@ -26,4 +26,42 @@ for the generic J identity at (u,s,epsilon)=(.1,.2,.3),(.2,.1,.3),
 These controls validate this floating implementation only. The unchanged
 180CPU-s cap includes both controls and model evaluations. Exact command
 will use code/c06_far_profile_diagnostic.py --output with a new /tmp path;
-source and output identities are recorded by the program. No result yet.
+source and output identities are recorded by the program. No result yet
+at this preregistration boundary.
+
+## 2026-11-06 measured diagnostic outcome
+
+The preregistered diagnostic completed with exit0, 35 model cases, no
+integration warnings and .3853274350000001 measured CPU-s, below180CPU-s.
+The four direct-integral controls had maximum discrepancy
+1.8795971445939585e-9, below the preregistered1e-7 kill. The largest
+model-minus-limiting-corner-polynomial value was-2.4822305655170993 at
+alpha=beta=1/4. This is MEASURED only: the corner polynomial includes its
+limiting constant, and no finite-n primitive or all-phase maximum was
+certified by this run. The maximum reported quadrature estimate was
+1.2295798551579583e-8; it is not a rigorous error bound.
+
+Exact command:
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-argmax-bridge-20261105/code/c06_far_profile_diagnostic.py --output /tmp/c06-far-profile-diagnostic-01.json
+
+Frozen source SHA-256:
+14d16dd46e2bfbf9861a65a2ca7f3116fe0e65ae6460a5801eb8e44dd2007b63.
+Small retained receipt: ../evidence/c06-far-profile-diagnostic.json.
+Raw output:/tmp/c06-far-profile-diagnostic-01.json,18,441B, SHA-256
+9a9a13fb6537e295c77ab2cd1b1339649731da7851322b9290b953b21ccf5a59.
+Versions: Python3.12.14, NumPy2.3.5, SciPy1.17.0. Physical archival
+delivery of the temporary raw file is not claimed.
+
+## 2026-11-06 full-phase error proof
+
+The separate new theory/C06-far-compact-error.md proves the developer
+claim |S_n-M_far|<9/25 uniformly on the entire closed phase diamond for
+n>=10^6, using the preregistered fixed R=64,delta=1/100 model. The explicit
+budget is e4<.11, Q<.14, E_n<.032, D_n<1e-9 and interior replacement
+error<.075. This result is analytic and independent of the diagnostic.
+All central-log, regular-variation and special-row estimates are supplied
+on the full domain; the old near statements and all earlier frozen C06
+proofs remain unchanged. Distinct review is requested through the parent.
+The separate model-maximum comparison is assigned C08 work; no global
+n>=10^6 argmax or all-phase model maximum is claimed here.

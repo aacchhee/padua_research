@@ -1,0 +1,511 @@
+{
+  "format": "C08-mpfr-bounded-v1",
+  "status": "MEASURED; all6selected predicates PASS; corrected supplementary edge gate PASS",
+  "rules_head": "e8fad1671fb736247e4c510284f6f935e6345efb",
+  "developer": "Codex; requested gpt-6.1-sol medium; serving metadata unexposed",
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/producer.c",
+      "bytes": 6318,
+      "sha256": "bf32c04994abf53cda5aca1cc63ceb2778d6339565a8cbc7c6337d9af22dc87d"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/c08_interval.h",
+      "bytes": 6575,
+      "sha256": "275936b502180f2d92af94eb2138815114ba75afb9c258cadffa44e580be0a03"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/build.py",
+      "bytes": 3463,
+      "sha256": "fff281f0c765025ec182937aff38398e7eedfd11b66bfeb36f105734b730d81f"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/controls.py",
+      "bytes": 5819,
+      "sha256": "69b8eb85aa93c6da40e4251b443edd01c9f9227f5a23baa145135903c0083719"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/supervise.py",
+      "bytes": 1226,
+      "sha256": "aa17b8e568a8b6d40d20e60f3980a802bb9bc3e773a13824ac37ec450f93b02c"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C03/controls.json",
+      "bytes": 105859,
+      "sha256": "60d47e07c15c84cc35e8757eb6e1751963f73c65f35c9f79e39c8786861ef886"
+    }
+  ],
+  "assertions": 634,
+  "ratio_case_count": 84,
+  "ratio_counts": [
+    132.0,
+    318.0,
+    1200.0,
+    42.0,
+    18.0,
+    0.0,
+    0.0,
+    0.0,
+    84.0,
+    42.0
+  ],
+  "constants": [
+    {
+      "n": 32,
+      "bounds": [
+        3.141592653589793,
+        3.1415926535897936,
+        10.993594541097181,
+        10.993594541103743
+      ],
+      "cpu": 0.2760973200000001,
+      "counts": [
+        9772.0,
+        41188.0,
+        164752.0,
+        4.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        8448.0,
+        664.0
+      ]
+    }
+  ],
+  "boxes": [
+    {
+      "n": 32,
+      "box": [
+        -3.1415926535897936,
+        -2.3561944901923453,
+        -0.7853981633974484,
+        0.0
+      ],
+      "reference": [
+        10.52762339660344,
+        10.52762339660344,
+        0.0,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "far",
+      "selection": "first and largest far failure",
+      "root": 0,
+      "path": "0101",
+      "status": 0,
+      "bounds": [
+        9.802661865102076,
+        9.802661865102076,
+        0.0,
+        0.0,
+        9.802661865102076,
+        9.802661865102076
+      ],
+      "counts": [
+        19348.0,
+        83524.0,
+        334096.0,
+        68.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        16896.0,
+        1260.0
+      ],
+      "cpu": 0.6636439969999999,
+      "lc": 10.993594541097181,
+      "strict_S": true,
+      "strict_S_minus_defect": true,
+      "strict_C": true,
+      "predicate": true
+    },
+    {
+      "n": 32,
+      "box": [
+        -3.1415926535897936,
+        -2.3561944901923453,
+        0.0,
+        0.7853981633974484
+      ],
+      "reference": [
+        10.527623396460257,
+        10.527623396460257,
+        0.0,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "far",
+      "selection": "largest distinct far excess",
+      "root": 1,
+      "path": "0000",
+      "status": 0,
+      "bounds": [
+        9.802661865102195,
+        9.802661865102195,
+        0.0,
+        0.0,
+        9.802661865102195,
+        9.802661865102195
+      ],
+      "counts": [
+        19348.0,
+        83524.0,
+        334096.0,
+        68.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        16896.0,
+        1260.0
+      ],
+      "cpu": 0.47597205600000025,
+      "lc": 10.993594541097181,
+      "strict_S": true,
+      "strict_S_minus_defect": true,
+      "strict_C": true,
+      "predicate": true
+    },
+    {
+      "n": 32,
+      "box": [
+        0.0,
+        0.3926990816987242,
+        -1.1780972450961726,
+        -0.9817477042468106
+      ],
+      "reference": [
+        10.969008269066904,
+        10.969008269066904,
+        0.0,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "corner-orbit-plus-defect",
+      "selection": "largest corner orbit excess",
+      "root": 2,
+      "path": "0100010",
+      "status": 0,
+      "bounds": [
+        10.881649643594846,
+        10.881649643594846,
+        0.0,
+        0.0,
+        11.95282796542479,
+        11.95282796542479
+      ],
+      "counts": [
+        19468.0,
+        84124.0,
+        336496.0,
+        28.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        16896.0,
+        1300.0
+      ],
+      "cpu": 0.4958096729999997,
+      "lc": 10.993594541097181,
+      "strict_S": true,
+      "strict_S_minus_defect": true,
+      "strict_C": true,
+      "predicate": true
+    },
+    {
+      "n": 32,
+      "box": [
+        -0.24543692606170264,
+        -0.1963495408493621,
+        -0.29452431127404316,
+        -0.1963495408493621
+      ],
+      "reference": [
+        10.976228088565339,
+        10.976228088565339,
+        0.0,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "far",
+      "selection": "deepest negative signed failure",
+      "root": 0,
+      "path": "11111100111",
+      "status": 0,
+      "bounds": [
+        10.976403778252617,
+        10.976403778252617,
+        0.0,
+        0.0,
+        11.46090460829979,
+        11.46090460829979
+      ],
+      "counts": [
+        19528.0,
+        84436.0,
+        337744.0,
+        4.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        16896.0,
+        1318.0
+      ],
+      "cpu": 0.46799016500000024,
+      "lc": 10.993594541097181,
+      "strict_S": true,
+      "strict_S_minus_defect": true,
+      "strict_C": true,
+      "predicate": true
+    },
+    {
+      "n": 32,
+      "box": [
+        0.29452431127404316,
+        0.3926990816987242,
+        0.09817477042468105,
+        0.14726215563702158
+      ],
+      "reference": [
+        10.970956569974724,
+        10.970956569974724,
+        0.0,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "far",
+      "selection": "deepest positive signed failure",
+      "root": 3,
+      "path": "00000010110",
+      "status": 0,
+      "bounds": [
+        10.969577726857235,
+        10.969577726857235,
+        0.0,
+        0.0,
+        11.459691403301248,
+        11.459691403301248
+      ],
+      "counts": [
+        19526.0,
+        84422.0,
+        337688.0,
+        6.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        16896.0,
+        1318.0
+      ],
+      "cpu": 0.5079111250000001,
+      "lc": 10.993594541097181,
+      "strict_S": true,
+      "strict_S_minus_defect": true,
+      "strict_C": true,
+      "predicate": true
+    },
+    {
+      "n": 32,
+      "box": [
+        0.0,
+        0.09817477042468105,
+        0.0,
+        0.1963495408493621
+      ],
+      "reference": [
+        11.332100625368787,
+        11.31335558868744,
+        0.40084534366373437,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "maximum-exclusion-plus-defect",
+      "selection": "largest near demand",
+      "root": 3,
+      "path": "000000000",
+      "status": 0,
+      "bounds": [
+        11.320627362850086,
+        11.304011658138164,
+        0.4182930441744107,
+        1.0,
+        12.213460233741587,
+        12.211521823250612
+      ],
+      "counts": [
+        19508.0,
+        84320.0,
+        337280.0,
+        16.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        16896.0,
+        1314.0
+      ],
+      "cpu": 0.5277112979999998,
+      "lc": 10.993594541097181,
+      "strict_S": false,
+      "strict_S_minus_defect": true,
+      "strict_C": false,
+      "predicate": true
+    }
+  ],
+  "edge_gates": [
+    {
+      "status": "FAIL",
+      "failure": "AssertionError('unadmitted rounded endpoint leaves base intact')",
+      "assertions": 178,
+      "source": {
+        "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/edge_controls.py",
+        "bytes": 2926,
+        "sha256": "38f3a78717e228615b4011105e4437e3fd6392547affcd4920291cc9ee2859f1"
+      },
+      "own_cpu": 0.611204651
+    },
+    {
+      "status": "PASS",
+      "failure": null,
+      "assertions": 23,
+      "source": {
+        "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/edge_controls_v2.py",
+        "bytes": 2775,
+        "sha256": "cc11cd464a6bad55fedbaad12e2cae37cc703c6d3038b8f44eea57a0974ab5e0"
+      },
+      "own_cpu": 0.09352686199999999
+    }
+  ],
+  "edge_failure_disposition": "Test expectation corrected only: R3[2,2.1] admits a chart about pi; new R3[1.4,1.5] rejects the actual guards. Kernel unchanged.",
+  "receipts": [
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C08-mpfr/controls.json",
+      "bytes": 45532,
+      "sha256": "c1c5c8c6d6c9b31b7ee73375379f1c669c33395b024c3de7fb016e625a13864f"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C08-mpfr/edge-controls.json",
+      "bytes": 12480,
+      "sha256": "714ddce293d48574f63a78ced255935f2f5a272202ac0ee61bf596a6eca8d662"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C08-mpfr/edge-controls-v2.json",
+      "bytes": 4326,
+      "sha256": "af94d150f203014c31f165dc499b00fa3cf3fa73f3dfbed0caa18193ba7ba1d2"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C08-mpfr/supervisor.json",
+      "bytes": 1051,
+      "sha256": "6d646b4cedf036d49ba86d9cbe24e70a8f9f91b65e4bc97d6476f55132ca2c78"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C08-mpfr/edge-supervisor.json",
+      "bytes": 1072,
+      "sha256": "eadb5ada5a0765ea0c496ec4d3a7379227a3621fb323f804b3a673c17e8aace1"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/cheap-C08-mpfr/edge-supervisor-v2.json",
+      "bytes": 1083,
+      "sha256": "a880d5d284302bf2c6f370776ec061c7af6ff4b60a24a3e59f3ded219dc98c69"
+    }
+  ],
+  "supervised_runs": [
+    {
+      "exit_status": 0,
+      "total_worker_and_build_cpu": 5.6391290000000005,
+      "supervisor_own_cpu": 0.009195843000000002,
+      "wall": 5.681942631999846
+    },
+    {
+      "exit_status": 1,
+      "total_worker_and_build_cpu": 0.6841529999999999,
+      "supervisor_own_cpu": 0.0016935790000000006,
+      "wall": 0.7166747709998162
+    },
+    {
+      "exit_status": 0,
+      "total_worker_and_build_cpu": 0.15356199999999998,
+      "supervisor_own_cpu": 0.0006887539999999998,
+      "wall": 0.1646001349981816
+    }
+  ],
+  "total_supervised_cpu": 6.488422176,
+  "compiler_version": "x86_64-linux-gnu-gcc-14 (Debian 14.2.0-19) 14.2.0",
+  "compile_command": [
+    "/usr/bin/x86_64-linux-gnu-gcc-14",
+    "-O3",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-fmax-errors=5",
+    "-fPIC",
+    "-shared",
+    "-x",
+    "cpp-output",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C08-mpfr/build-z6rl8f7q/producer.i",
+    "-x",
+    "none",
+    "/lib/x86_64-linux-gnu/libmpfr.so.6",
+    "-lm",
+    "-o",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C08-mpfr/build-z6rl8f7q/producer.so"
+  ],
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C08-mpfr/build-z6rl8f7q/producer.so",
+    "bytes": 46064,
+    "sha256": "d632007b962d5e744096e86446beede7e85b4e353f4a7051370ec3da990a87c0"
+  },
+  "preprocessed": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C08-mpfr/build-z6rl8f7q/producer.i",
+    "bytes": 136794,
+    "sha256": "06ea4776a143289adaeeb2cf04a2d763f97773af03d616a6649b7bf12bcedde1"
+  },
+  "closure_counts": {
+    "tools": 4,
+    "tool_runtime_closure": 13,
+    "headers": 42,
+    "linked_runtime_closure": 5,
+    "actual_loaded_mappings": 13
+  },
+  "counter_order": [
+    "base_ratio_pairs",
+    "scalar_trig_calls",
+    "directed_MPFR_endpoint_calls",
+    "base_pole_charts",
+    "base_fallbacks",
+    "lazy_S_skips",
+    "analytic_floor_skips",
+    "projected_scans",
+    "outer_ratio_pairs",
+    "endpoint_refinements"
+  ],
+  "full_producer_run": false,
+  "new_degree_certificate": false,
+  "limitations": [
+    "Only84scalar cases,20first-edge executions and3focused follow-up executions, plus6saved n32boxes; no full candidate or producer tree.",
+    "One supplementary test-expectation failure retained; no kernel source tuning.",
+    "Formal source review and explicit release required before consequential use.",
+    "No unchanged-old-MPFR timing comparator or practical higher-degree throughput claim.",
+    "Only accepted C01 analyticfloor retained; no C02strongerfloor or centered/ODE refinements."
+  ]
+}

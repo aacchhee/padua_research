@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "failure": null,
+  "assertions": 50,
+  "own_cpu": 0.29311960400000003,
+  "child_cpu": 0.5685180000000001,
+  "raw": {
+    "path": "/tmp/c08-geometry-review-mucq1qqy.json",
+    "bytes": 23456,
+    "sha256": "513e23c94b64b25903ef119c82aa7678d90ab51261e1aba738adef02525cbe40"
+  },
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/producer.c",
+    "bytes": 6341,
+    "sha256": "270eb7b0f073efcb996c7c832f6e946d37b0e6f780fdac63fc66591332560a5e"
+  },
+  "header": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/c08_interval.h",
+    "bytes": 6575,
+    "sha256": "275936b502180f2d92af94eb2138815114ba75afb9c258cadffa44e580be0a03"
+  },
+  "control": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_c08_review/geometry.py",
+    "bytes": 5544,
+    "sha256": "f84194075ee8838f297b6ec7b4ae51122ce78f03a9f4d702b8ddd2d5e69de4b6"
+  },
+  "geometry_cases": 25,
+  "ratio_calls": 0,
+  "box_calls": 0,
+  "full_producer_run": false
+}

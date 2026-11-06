@@ -120,3 +120,13 @@ sampled positive comparison destroys only the proposed cheap1/2-margin
 planning route; all-phase agreement proves nothing. Budget180totalCPU-s,
 no degree-sized sums, no fit, and no extra sampled degree. Record source,
 versions, actual CPU, failures, convergence warnings and output hash.
+
+Follow-up outcome,2026-11-06: the preregistered35-case diagnostic passed
+its implementation controls in .385327435CPU-s; its largest sampled
+model-minus-limiting-corner-polynomial value was-2.4822305655. This remains
+MEASURED only; exact identities and limitations are in ../attempts/C06-far.md
+and ../evidence/c06-far-profile-diagnostic.json. The analytic full-phase
+model-error claim is now PROVED by the developer in
+../theory/C06-far-compact-error.md with the stronger error9/25, pending
+distinct review. The all-phase model maximum and primary finite-n far
+comparison remain OPEN here and are separately owned C08 obligations.
