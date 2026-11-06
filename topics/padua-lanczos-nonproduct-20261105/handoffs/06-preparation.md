@@ -1,6 +1,6 @@
 # Handoff 06 — padua-lanczos-nonproduct-20261105 — PR preparation
 
-- Status: open
+- Status: done in 418b8166121d3717c4d1916ae6c4619953cb4573
 - Previous handoff: [05-focused-audit.md](05-focused-audit.md)
 
 - Next agent / model / effort: Codex, gpt-6-astra high, coordinator, per AC's 2026-11-05 allocation in handoff 01. Mechanical registry edits may use gpt-6.1-sol medium.
