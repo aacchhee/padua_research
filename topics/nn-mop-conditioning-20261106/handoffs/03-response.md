@@ -1,6 +1,6 @@
 # Handoff 03 — NN MOP conditioning — Codex response to audit 01
 
-- Status: open
+- Status: done in b3350adf2e7f9270f0bca8558b1ac668c7826291
 - Previous handoff: [02-audit.md](02-audit.md)
 
 - Next agent / model / effort: Codex, `gpt-6.1-sol` high (for the MAJOR-1 classification and MAJOR-3 negative-result records; medium is enough for the MINOR record edits)
