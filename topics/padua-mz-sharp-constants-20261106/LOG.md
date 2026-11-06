@@ -3,7 +3,7 @@
 - Branch: `codex/padua-mz-sharp-constants-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
 - Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-mz-sharp-constants-20261106.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
-- Claims: none yet.
+- Current claims: CC one-sided sharp-model upper bound; CC uniform upper bound, endpoint limit and computable error; signed Padua compact-operator logarithmic limits and parity agreement. Exact local records/checks are linked in [report.md](report.md); no final IDs assigned.
 
 ## 2026-11-06 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -107,3 +107,12 @@
 
 - The GitHub connector creates commits as Andrey Chesnokov with59649991+aacchhee@users.noreply.github.com and exposes no author-email parameter. Inspection of published ec9b518 confirmed this; the handoff's requested aacchhee@gmail.com address had not been applied. Shell Git still cannot connect to the configured proxy. The author-name identity is correct; the email mismatch is disclosed rather than rewriting history.
 - AC explicitly answered “Continue with my GitHub noreply email” to the asynchronous question identifying both addresses and preserving already-published history. This authorizes further branch commits with the connector's noreply identity and supersedes handoff01's email requirement for this continuation. Do not request this approval again. No force-push, history rewrite or main commit is authorized.
+
+## Bounded explanatory S3 family followup
+
+- The original gap question receives a scoped analytic answer: [negative carrier-family ceiling](theory/S3-carrier-family-ceiling.md), [independent check](independent-checks-S3-family.md). For every fixed admissible inherited negative-carrier parameter pair, its normalized logarithmic coefficient is below1/[9(4log2)(16log2−9log3)]<1/24. Thus scalar retuning of that family cannot reach the magnitude of the supplied finite fitted slope0.0915; the finite slope is still not treated as an asymptotic constant. No broader packet or full-spectrum ceiling is claimed. This is a fourth productive bounded S3 record, no new operator or numerical solve.
+
+## Storage allowance and scoped inventory
+
+- The pinned base already contains more than the ordinary5MB default of generated-type outputs. AC's existing global temporary instruction is explicit in the argmax bridge LOG, section “AC directs return to research; temporary10MB allowance”: “Up to 10mb total size is appropriate for now, return to research”. Source content identity b930ba812c390e6f917a0a06683993ae03e22591, read through the connector; [canonical prior decision](https://github.com/aacchhee/padua_research/blob/codex/padua-argmax-bridge-20261105/topics/padua-argmax-bridge-20261105/LOG.md#L176). This supersedes the ordinary aggregate cap for now, while per-file/provenance limits remain. No new approval or off-topic cleanup is needed.
+- Our pinned base's generated-extension subset is6,028,530bytes; all non-source output extensions conservatively count additional logs/text as well. New topic JSON was183,432bytes before the last numerical receipts. Final scoped integrity totals will be regenerated. Each current committed generated file is<16KiB. We do not claim the older base is below5MB or that Git history is purged.

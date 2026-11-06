@@ -30,7 +30,7 @@ Supplementary checks: [uniform/deficit](independent-checks-S2.md), [model/fixed 
 
 ## Signed Padua direction: full grid to a compact corner spectrum
 
-A [strict rational carrier improvement](theory/S3-normalized-carrier-improvement.md) first strengthens the accepted negative one-sided coefficient to about0.029641769, as a known-family quantitative variant.
+A [strict rational carrier improvement](theory/S3-normalized-carrier-improvement.md) first strengthens the accepted negative one-sided coefficient to about0.029641769, as a known-family quantitative variant. A separately checked [global ceiling for this fixed-parameter family](theory/S3-carrier-family-ceiling.md) is less than1/24. Thus scalar retuning within that family cannot reach the magnitude of the supplied finite0.0915 slope. This does not bound broader packets or the full spectrum and does not establish that the finite slope is asymptotic.
 
 The [whole-grid reduction](theory/S3-full-form-log-model.md) proves |Q_m−log(floor(m/2))L_m|<=4096 in continuous quadratic-form norm, ||L_m||<=120 and normalized spectral error4300/logm, both parities. It controls the full signed sum and the exceptional even-m term. This is stronger than a fixed-index weight asymptotic.
 
