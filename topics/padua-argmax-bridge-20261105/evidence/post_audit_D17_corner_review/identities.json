@@ -1,0 +1,54 @@
+{
+  "inputs": {
+    "attempts/D17-analytic-corner.md": {
+      "bytes": 6141,
+      "sha256": "15254497a2fbda519735b9258254ab8a000e7a49ad3a712858e4722606602c76"
+    },
+    "code/post_audit_D17_corner/SPEC.md": {
+      "bytes": 1922,
+      "sha256": "a2fbdfc1e46005e64fc21bdf74dd67a2e399f32d22e9e1f8e7e988f333b1c6bf"
+    },
+    "code/post_audit_D17_corner/budget-4096.json": {
+      "bytes": 5321,
+      "sha256": "c9a9c60168ec435d056d81777389754d4f186bf953a19db02554c4ec0dd0a8e6"
+    },
+    "code/post_audit_D17_corner/evaluate.py": {
+      "bytes": 4140,
+      "sha256": "b40c7aecb19cb83631bbe6ae2945ac7a34f5c163e7867f151c4d8c573177c57a"
+    },
+    "code/post_audit_D17_corner_review/SPEC.md": {
+      "bytes": 2186,
+      "sha256": "f14683eae119b69988213193e83a35f5307a55b20db6c00e56d3a17853a970d0"
+    },
+    "code/post_audit_D17_corner_review/check.py": {
+      "bytes": 6072,
+      "sha256": "3019970655739fc3d8d08bd20294a564663bade0b2ee25bc89577f25974b9842"
+    },
+    "code/post_audit_D17_corner_review/freeze.json": {
+      "bytes": 1065,
+      "sha256": "8fd47db09ab823a910ec2a73bf2ff9d76e4e6c500998f2deff4cde266b485814"
+    },
+    "evidence/post_audit_D17_corner_review/scalars.json": {
+      "bytes": 7456,
+      "sha256": "9bacd60e52b4aee4cb7ea0ffbf0d8127ab09a2e30a38ec6077545dc80220fbf1"
+    },
+    "ideas/D17-analytic-corner.md": {
+      "bytes": 5809,
+      "sha256": "2b1b865a5b7746c21c8bfc083922b070d818bbf8cbfecff3367609b09e424981"
+    },
+    "independent-checks-D17-analytic-corner.md": {
+      "bytes": 12073,
+      "sha256": "28dbf04a53286706475e5264dec2676ea7a9d09c298e691a5157bc10f5c94c2b"
+    },
+    "theory/D17-analytic-corner.md": {
+      "bytes": 7864,
+      "sha256": "6a6462f74bfa57495da0032609f8092ef45f6742685072b5b8c1dcf939347da4"
+    },
+    "theory/D17-global-norm.md": {
+      "bytes": 3229,
+      "sha256": "a49c6a736659a54ed1aaba149cc240c7e6e70cb2804bdfcf555bc811e88a9a18"
+    }
+  },
+  "status": "POST_REVIEW_IDENTITIES_METADATA_ONLY_NO_SCIENTIFIC_RERUN",
+  "utc": "2026-11-06T19:40:15Z"
+}

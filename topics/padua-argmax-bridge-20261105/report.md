@@ -1,11 +1,10 @@
 # Padua argmax bridge — WORK post-audit checkpoint, 2026-11-06
 
-The exact global equality set is proved for **degrees2–40, degree512**, and for
-**every integer n>=10000**. It consists of {(-1,-1),(1,-1)} for even n
-and {(-1,-1),(-1,1)} for odd n. The remaining gaps41–511 and513–9999 and all-degree
-PD-T099 remain OPEN. The fresh campaign has replaced its initial
-astronomical upper boundary with this explicit ten-thousand-degree threshold.
-No mass degree enumeration or energy premise enters the analytic theorem.
+The exact global argmax is proved for **degrees 2–40, 512, 2048**, and
+**every integer n>=10000**. Equality occurs at {(-1,-1),(1,-1)} for even n
+and {(-1,-1),(-1,1)} for odd n. Degrees41–9999 excluding512 and2048 remain
+unresolved, as does the all-degree target PD-T099. The analytic threshold
+is sufficient, with no claim of minimality or mass degree enumeration.
 
 ## Current accepted theorem and new component
 
@@ -425,3 +424,36 @@ D15's generic mathematical contract is accepted. Its source candidate
 remains unreleased for one final aggregate CPU-accounting repair found
 before any native execution. Both synthetic control slots are complete;
 the repair gets focused source inspection, with no control/native retry.
+
+
+## D15 — complete model-free2048 certificate
+
+The first model-free2048 pipeline completed with successful FINALaccounting
+and process exit0: discovery54.263514CPU, fresh certification175.307516CPU,
+total229.616251CPU through its final sample. The147-byte-class geometry is
+142bytes,77nodes/39leaves(5NEAR32FAR2OUTSIDE),51canonicalSpoints plus3fresh
+actual-Lebesgue points. Grid absorption certifies GLOBALMceil42. All strict
+phase and corner comparisons pass. Certified internal row recovery counts
+are0,0,7; these are safe arithmetic paths, not retries or case fallback.
+[Finite theorem](theory/D15-global2048.md),
+[independent fresh replay/application](independent-checks-D15-model-free-result.md).
+
+The independent fresh build and54point replay completed in177.049501CPU,
+all exact endpoint/radius/counter rows matching. Its accepted result also
+requires final-accounting and observed exit0, not the provisional receipt.
+These measurements separate discovery from verification; they establish
+no uniform CPU scaling or matched comparison to the old n32 workload.
+
+D17 independently accepts analytic actual-corner rectangles0<=alpha,beta
+<=pi/6 for EVERYn>=4096, with radial-square loss1/8. This uses analytic
+model point majorants and a global norm, not individual4096 point runs.
+It proves the corner piece only, not global argmax4096.
+[Analytic corner review](independent-checks-D17-analytic-corner.md).
+
+D18's first7000 budget is preserved: nearPASS,farFAIL. Its retained positive
+interior/row/origin charges already exceed its far margin. Near support and
+affine-error/obstruction records are developer-PROVED under distinct review;
+far/global7000 remainOPEN. The failure must precede any changed-estimate
+follow-up. D19 checkpoints a developer smaller same2048 certificate using
+adaptive self-norming and41Spoints; distinct review and any runtime benchmark
+remain separate. No original data or certificate was removed.

@@ -116,3 +116,48 @@ that review. Both pure-control shares are already consumed, so no imports,
 controls, compiler/native/producer/checker or numerical calls were run.
 Root reports D14/genericD15 mathematics accepted; this technical finding
 still blocks execution until distinct focused acceptance and root release.
+
+## Prospective separately metered metadata preservation
+
+Root authorized exactly one2CPU metadata-only postprocessor after observing
+primary controller return0 and successful final-accounting. New helper
+code/post_audit_D15_model_free_cover/receipt_postprocess.py is OUTSIDE the
+scientific FREEZE and does not edit any frozen source/data. Its fixed
+--run-once command registers exclusively before reading retained data,
+checks frozen code/data and source/compiler/headers/preprocessed/binary/
+loaded mapping identities, verifies retained hex/Fraction/grid/corner/tree
+consistency without fresh phase calls, and copies the exact compact raw
+receipt/tree to evidence. A separate small final-accounting receipt links
+root's LOG observation, source command, full whole raw manifest and CPU
+samples; no numerical rows are split to evade limits. The entire raw
+manifest/caches/builds/maps remain whole off Git; archive endpoint pending.
+Prior attempt prefix is retained before its result addendum. Any failure
+is preserved and reported; no scientific retry is authorized. Independent
+fresh native replay/application review remain separate.
+
+## D15 primary metadata preservation — 2026-11-06
+
+Root executed frozen0768cb9 once and explicitly observed exit0 plus successful
+final-accounting; provisional summary is not acceptance. Primary complete only,
+independent fresh native replay/theorem application and root global2048 adoption
+pending. Exact raw11491B receipt and142B tree copied unchanged to evidence.
+Postprocessor outside FREEZE ran once under separate2CPU RLIMIT: identity,
+retained hex/Fraction norm/corner/tree checks only; no native/phase/compiler job.
+Mceil42;77nodes/39leaves(5NEAR,32FAR,2OUTSIDE),51canonicalSpoints+3actuallambda.
+Producer54.263514CPU/checker175.307516CPU, through-summary229.616251CPU;
+final hard self186 after waited-child210.482649CPU, no failure/retry/coststop.
+Exact endpoints/counters, full raw manifest, source/build/mapped closure and
+final-accounting linkage preserved. Cold archive remains pending; no raw splitting
+or unmatched-case speedup comparison. FLOAT producer54CPU remains a potential
+future optimization target, not a changed source in this run.
+
+Metadata preservation actual outcome: PASS,0.300964CPU through final-print
+sample (hard separate2CPU); native_calls0. Completion checkpoint SHA256
+5dc20493a45654d168ba39863f53005977eb882f6f4e8483e95d7cfecd5ebe50.
+Exact evidence: allrow11491B6be2926071f43d2a619784c16b15c980e6952eaa3cfe4bab0703c14dcc6b3481;
+tree142Bbff8e2281d4e98f3d8a90a4a811162cbf9b275a1eda182111daac25e3033c685;
+final-accounting4514Bc826130c4dfe9b5fb737514942cae5806ed9f1057bbd39c9f7b2d0b9c4114750.
+All three total16147B, below16KiB. Depth12. Actual-lambda internal safe
+recovery counts0,0,7 (rootfail0,0,7;signfail0); all full outputs/costs
+retained. Focused source acceptance fd110db6 preceded root's launch;
+independent fresh native replay/application review remains pending here.

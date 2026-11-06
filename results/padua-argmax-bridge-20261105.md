@@ -1,10 +1,10 @@
 # Padua argmax bridge — current research results
 
-The exact two-corner global argmax is proved for **degrees2–40, degree512**, and
-**every integer n>=10000**. Its equality set is {(-1,-1),(1,-1)} for
-even n and {(-1,-1),(-1,1)} for odd n. The remaining gap **41–511 and513–9999**
-and all-degree PD-T099 stay OPEN. This is a sufficient upper boundary,
-not a claim of the minimum onset.
+The exact two-corner global argmax is proved for **degrees 2–40, 512,
+2048**, and **every integer n>=10000**. Equality corners are
+{(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n.
+Degrees41–9999 excluding512 and2048, and the all-degree target PD-T099,
+remain OPEN. This is a sufficient analytic upper boundary.
 
 [Global theorem](../topics/padua-argmax-bridge-20261105/theory/D16-global-comparison.md),
 [independent review](../topics/padua-argmax-bridge-20261105/independent-checks-D16-budget.md).
@@ -132,3 +132,11 @@ A GLOBAL bound<30 follows from13 saved canonical grid points by rigorous
 Peano absorption. The same tree/point data certify512 without completed-model
 D05/D06/PD-T271 norm premises. No new native computation occurred.
 [Review](../topics/padua-argmax-bridge-20261105/independent-checks-D14-grid-norm.md).
+
+The model-free2048 theorem is independently accepted:77nodes,51Svertices
+and3actual point evaluations, GLOBALMceil42. Discovery54.26CPU; primary
+certification175.31CPU; independent fresh54point replay177.05CPU. Exact
+intervals/counters match and final-accounting+exit0 gates pass.
+[Theorem](../topics/padua-argmax-bridge-20261105/theory/D15-global2048.md).
+Analytic corner descent now holds for every n>=4096 on both pi/6 rectangles,
+with loss(alpha²+beta²)/8; global4096 remains OPEN.
