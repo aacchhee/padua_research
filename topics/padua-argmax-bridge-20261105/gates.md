@@ -2,12 +2,13 @@
 
 ## Current campaign checkpoint — 2026-11-06
 
-The actual global theorem now covers every integer **n>=500000**,
-with exactly the two parity-correct nonnode corners, plus the unchanged
-finite exact range2–40. [Proof](theory/C13-onset-budget.md),
-[independent reconstruction](independent-checks-C13-onset.md).
-The remaining gap41–499999 and all-degree PD-T099 remain OPEN.
-Older dated gate notes below are historical and superseded here.
+The actual global theorem covers every integer **n>=1024**, with exactly
+the two parity-correct nonnode corners, and finite degrees2–41,512,1023.
+[D37](theory/D37-assembly-global1024.md),
+[independent analytic review](independent-checks-D37-global1024.md),
+[finite1023](theory/D36-global1023.md).
+Residual42–1022 except512 and all-degree PD-T099 remain OPEN. The onset is
+sufficient, not minimal. Earlier current-state notes below are historical.
 
 Original B0–B6 criteria remain unchanged in [handoff01](handoffs/01-work.md).
 The mathematical result does not silently pass unexecuted performance
@@ -200,3 +201,6 @@ D31final5911111a... andD33finala612ec99... ACCEPTED: rootglobalanalyticboundary2
 
 
 D34final870bcba9... finite41ACCEPT; D37final2ad8f232... global1024ACCEPT(near1/200/far3/100/corner1/8). D36firstsourceUNRELEASEDwithonepositive-Lsyntheticfixturefinding172731fb..., tobefixedafterfirstpublication. Packingstilldeferreduntilresearchend.
+
+
+D36 final03a353bd... ACCEPTS standalonefreshfinite1023, directEXIT0+completeaccount29.746529CPU; originalprimaryouterEXIT0unknownandnotapremise. D38nineprimariesPASS112.588181CPUcheckpoints, separatelyreleasedfreshphasependingfinalreview. Noall-degree/runtimeclaim, noSyvert2packyet.

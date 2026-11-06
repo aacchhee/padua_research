@@ -1,25 +1,34 @@
 # Padua argmax bridge — WORK post-audit checkpoint, 2026-11-06
 
-The exact global argmax is proved for **degrees 2–40, 512, 2048**, and
-**every integer n>=10000**. Equality occurs at {(-1,-1),(1,-1)} for even n
-and {(-1,-1),(-1,1)} for odd n. Degrees41–9999 excluding512 and2048 remain
-unresolved, as does the all-degree target PD-T099. The analytic threshold
-is sufficient, with no claim of minimality or mass degree enumeration.
+The exact parity-correct global argmax is proved for **degrees2–41,512,1023**
+and **every integer n>=1024**. The residual42–1022 excluding512 remains OPEN,
+as does the all-degree target PD-T099. The analytic onset is sufficient;
+no minimality or uncomputed degree success is claimed.
 
-## Current accepted theorem and new component
+## Current accepted theorem and cost result
 
-The [D16 global assembly](theory/D16-global-comparison.md) and
-[independent review](independent-checks-D16-budget.md) prove the current
-threshold **10000**. The closed cover has far gap1/400, near noncorner
-gap11/1000, and actual-corner loss(alpha²+beta²)/4 from10000.
-The primary10000 directed budget passed; no fallback or degree scan ran.
-Its endpoint margins exceed.01186762 near and.00267603 far. A separate
-actual-origin allowance and rho-dependent absolute error avoid taking
-independent worst-case phase maxima. Full finite relative error remainsOPEN.
-All new degree floors and monotonicities are proved at their actual domains.
-This analytic theorem explicitly inherits PD-T271's certified corner
-constant. Final Claude audit and upstream coverage obligations remain.
-The older D11/D08/C13 statements retain their original scopes.
+[D37 global assembly](theory/D37-assembly-global1024.md) and its
+[independent review](independent-checks-D37-global1024.md) prove analytic
+onset1024: fullfar gap3/100, near noncorner gap1/200, actual-corner loss
+(alpha²+beta²)/8. Both parities, closed boundaries, nodes and collisions
+are included. PD-T271 remains an explicit computer-assisted dependency.
+[D34 finite41](theory/D34-global41.md) and
+[D36 finite1023](theory/D36-global1023.md) use model-free finite witnesses;
+finite1023 is established by the wholly fresh independently completed proof,
+not the candidate's missing outer exit observation. Final Claude and upstream
+coverage audit remain separate.
+
+The same n6912/41point witness takes469.521049CPU with the old full pipeline
+and74.034199CPU with the independently executed cheap pipeline, a measured
+6.34fold comparison. Independent matched n2048point costs2.615699→.488831CPU.
+These are finite measurements; geometry, actual-corner branch and build costs
+vary. D38's nine fixed calibration primaries all pass; independent fresh replay
+and application adoption are pending. No Syvert2 benchmark or pack exists yet.
+Pack preparation waits until research ends and a gap remains.
+
+Earlier D16 onset10000 and subsequent dated checkpoints below retain their
+historical scopes; the current theorem above supersedes their current-state
+wording. Complete finite relative-error closure remains OPEN.
 
 The actual-Lebesgue point evaluator now passed an independent fresh build
 and all13 fixed cases, including10 finite-polynomial references, in

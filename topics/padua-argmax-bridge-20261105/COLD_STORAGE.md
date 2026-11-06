@@ -73,3 +73,17 @@ essential proof contains all kept mathematical premises; raw/runtime scope
 remains explicit. No physical archive delivery or durable external retrieval
 is claimed. Preserve these directories in full; do not prune failed/source
 records or rerun to repair historical timing/completion bytes.
+
+
+## D38 pending-local retention —2026-11-06
+
+Every fixed calibration retains the whole original directory under
+local-output/argmax-bridge-20261105/post-audit-D38/primary-n<N>/; the distinct
+fresh directories are verify-n<N>/. Per-case canonical primary observations
+pin complete raw, certificate and account bytes; fresh observations and the
+final independent report provide corresponding fresh identities. Native
+binaries/TUs/dependencies/maps/checkpoints are retained without truncation.
+Compact complete mathematical certificates and accounts are committed;
+bulk raw/build artifacts remain local and physical archive delivery/durable
+external retrieval are pending. Exact commands/source/cases are the frozen
+D38 calibration SPEC/cases and independent review registration.
