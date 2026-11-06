@@ -1587,11 +1587,11 @@ Canonical IDs and retained aliases are in the [final map](topics/nn-mop-stabilit
 | Provisional ID / aliases | Final ID | Canonical source | Status / disposition |
 |---|---|---|---|
 | PD-T?nn-mop-stability-codex-D1-01; NN Jacobian; mixed componentwise-input conditioning; fieldwise coefficient sup metric; monic step-line derivative | PD-T432 | [record](topics/nn-mop-stability-20261105/theory/conditioning-local.md) | PROVED; Retained standard derivative specialization; intrinsic sensitivity, no algorithmic stability theorem |
-| PD-T?nn-mop-stability-codex-D1-02; rational-height NN bound; exponential Chebyshev normality; finite all-N conditioning upper bound | PD-T433 | [record](topics/nn-mop-stability-20261105/theory/conditioning-krawtchouk-bound.md) | PROVED; Retained coarse bound; sharp matching rate remains OPEN |
+| PD-T?nn-mop-stability-codex-D1-02; rational-height NN bound; exponential Chebyshev normality; finite all-N conditioning upper bound | PD-T433 | [record](topics/nn-mop-stability-20261105/theory/conditioning-krawtchouk-bound.md) | PROVED; Retained coarse bound; exact benchmark sharp rate now PD-T509; general-parameter matching rate OPEN |
 | PD-T?nn-mop-stability-codex-D1-03; analytic AD table; D1 rounds 1 and 2 | PD-T434 | [record](topics/nn-mop-stability-20261105/theory/conditioning-measurements.md) | MEASURED; Finite sensitivity table retained; no rounding-error or stability theorem |
 | PD-T?nn-mop-stability-codex-D1-04; scalar exact C4 normality certificate; opposite-corner converse | PD-T435 | [record](topics/nn-mop-stability-20261105/theory/conditioning-normality-certificate.md) | PROVED; Retained sufficient criterion; no all-N Hahn conclusion |
 | PD-T?nn-mop-stability-codex-D1-05; all 61 Hahn triangles; exact interior-divisor certificate | PD-T436 | [record](topics/nn-mop-stability-20261105/theory/conditioning-hahn-normality-finite.md) | PROVED; Finite computer-assisted theorem retained; other N/parameters excluded |
-| PD-T?nn-mop-stability-codex-D1-hard-01; alternating binomial weight witness; terminal Hermite interpolation; explicit Krawtchouk sensitivity growth | PD-T437 | [record](topics/nn-mop-stability-20261105/theory/conditioning-lower-krawtchouk.md) | PROVED; Retained lower bound; matching rate and finite-radius error law OPEN |
+| PD-T?nn-mop-stability-codex-D1-hard-01; alternating binomial weight witness; terminal Hermite interpolation; explicit Krawtchouk sensitivity growth | PD-T437 | [record](topics/nn-mop-stability-20261105/theory/conditioning-lower-krawtchouk.md) | PROVED; Retained lower bound; benchmark matching rate now PD-T509; finite-radius error law OPEN |
 | PD-T?nn-mop-stability-codex-D2-01; stable-marginal comparator; oracle-marginal isolation | PD-T438 | [record](topics/nn-mop-stability-20261105/theory/d2-stage-isolation.md) | MEASURED; Post-marginal computation/representation amplification retained; no universal instability theorem |
 | PD-T?nn-mop-stability-codex-D2-02; fixed-step-line recovery; anchored path diagnostic | PD-T439 | [record](topics/nn-mop-stability-20261105/theory/d2-path-diagnostic.md) | MEASURED; Path diagnostic only; omitted coefficients prevent full-array backward interpretation |
 | PD-T?nn-mop-stability-codex-32; orthobasis whole-triangle bake-off; node-space QR | PD-T440 | [record](topics/nn-mop-stability-20261105/theory/native-measurements.md) | MEASURED; Known equivalent formulations; LU/B gain over2digits at N16 both families, no general stability or novelty claim |
@@ -1602,7 +1602,7 @@ Canonical IDs and retained aliases are in the [final map](topics/nn-mop-stabilit
 | PD-T?nn-mop-stability-codex-D6-graph; ratio graph; mixed-test positive measure | PD-T445 | [record](topics/nn-mop-stability-20261105/theory/dictionary-graph.md) | PROVED; Positive ambient identity retained; full total-degree positivity/NN-to-bivariate transfer does not follow |
 | PD-T?nn-mop-stability-codex-D6-lifts; selectors; Hermite–Padé pair lift; two sheets | PD-T446 | [record](topics/nn-mop-stability-20261105/theory/dictionary-lifts.md) | OPEN; Deferred copy/pair transfer; selector identities are minor routine facts, not solved target parts |
 | PD-T?nn-mop-stability-codex-D6-target; graph/copies/HP/lattice dictionary; positive transfer | PD-T447 | [record](topics/nn-mop-stability-20261105/theory/dictionary-target.md) | OPEN; Positive ambient encodings support the target; scoped literal failures do not reject the general transfer |
-| PD-T?nn-mop-stability-codex-D1-target; D1 sharp growth-law target; useful matching rate | PD-T448 | [record](topics/nn-mop-stability-20261105/theory/conditioning-growth-target.md) | OPEN; Original D1 target retained OPEN; lower/coarse upper and finite measurements are supporting results, not a PARTIAL decomposition |
+| PD-T?nn-mop-stability-codex-D1-target; D1 sharp growth-law target; useful matching rate | PD-T448 | [record](topics/nn-mop-stability-20261105/theory/conditioning-growth-target.md) | PARTIAL; original target preserved; exact benchmark Krawtchouk rate conjunct PROVED under PD-T509; Krawtchouk prefactors/useful constants/radius and full Hahn rate/prefactors/useful constants/radius OPEN; supporting dependencies do not count as solved parts |
 | PD-T?nn-mop-stability-codex-stability-target; original stable-algorithm target; joint backward stability | PD-T449 | [record](topics/nn-mop-stability-20261105/theory/stable-solver-target.md) | OPEN; No general weak/joint backward-stability theorem; finite gains, local geometry and N4 witnesses do not make target PARTIAL |
 | PD-N?nn-mop-stability-codex-D1-hard-01; fixed-N G3 obstruction; normalized alternating binomial direction; higher-order measure-proximity sensitivity | PD-N162 | [record](topics/nn-mop-stability-20261105/theory/conditioning-lower-proximity.md) | PROVED; REJECTED: refuted, only O(1/d_min)/proportionality for this binomial family and declared metric |
 | PD-N?nn-mop-stability-codex-31; binary64 compatibility obstruction; strict backward error infinity witness | PD-N163 | [record](topics/nn-mop-stability-20261105/theory/backward-dyadic-obstruction.md) | PROVED; REJECTED: refuted, literal input-only exact realization of this raw array; corrected representations and stable algorithms remain outside scope |
@@ -1612,11 +1612,11 @@ Canonical IDs and retained aliases are in the [final map](topics/nn-mop-stabilit
 | PD-N?nn-mop-stability-codex-D6-literal; missing graph moment | PD-N167 | [record](topics/nn-mop-stability-20261105/theory/dictionary-obstructions.md) | PROVED; REJECTED: refuted, unchanged degree-two P11 embedding as full total-degree orthogonal polynomial; graph mixed tests retained |
 | PD-N?nn-mop-stability-codex-D6-copy; two-sheet annihilator; original dictionary-obstructions C | PD-N168 | [record](topics/nn-mop-stability-20261105/theory/dictionary-copy-obstruction.md) | PROVED; REJECTED: failed, only no-deflation full-standard-grade scalar mechanism; quotient/vector/other supports excluded |
 | IDEA?nn-mop-stability-codex-D1-01; moment derivative; AD-C4; induced row sum; monic path comparison | IDEA-530 | [record](topics/nn-mop-stability-20261105/novelty-gate-D1.md) | Retained standard variant; PD-T432 PROVED and PD-T434 MEASURED; no stability theorem |
-| IDEA?nn-mop-stability-codex-D1-02; binomial exponential Chebyshev normality; explicit coarse upper bound | IDEA-531 | [record](topics/nn-mop-stability-20261105/novelty-gate-D1.md) | Retained PROVED coarse supporting bound PD-T433; sharp growth parent PD-T448 remains OPEN |
+| IDEA?nn-mop-stability-codex-D1-02; binomial exponential Chebyshev normality; explicit coarse upper bound | IDEA-531 | [record](topics/nn-mop-stability-20261105/novelty-gate-D1.md) | Retained PROVED coarse supporting bound PD-T433; parent PD-T448 now PARTIAL because the separate sharp benchmark rate PD-T509 solves its rate conjunct |
 | IDEA?nn-mop-stability-codex-D1-03; G3 kappa proportional to1/min\|d\|; measure proximity screen | IDEA-532 | [record](topics/nn-mop-stability-20261105/novelty-gate-D1.md) | Consolidated with IDEA-536; REJECTED: refuted in the fixed-N Krawtchouk scope by PD-N162, not a Hahn asymptotic theorem |
-| IDEA?nn-mop-stability-codex-D1-04; explicit rho(p1,p2); digits-lost theorem | IDEA-533 | [record](topics/nn-mop-stability-20261105/novelty-gate-D1.md) | Retained target OPEN as PD-T448; explicit lower result PD-T437 supports it, matching sharp upper/rate unresolved |
+| IDEA?nn-mop-stability-codex-D1-04; explicit rho(p1,p2); digits-lost theorem | IDEA-533 | [record](topics/nn-mop-stability-20261105/novelty-gate-D1.md) | Target PD-T448 PARTIAL; exact benchmark Krawtchouk rate PROVED in PD-T509; general-p matching growth, prefactors and finite-error radius remain OPEN |
 | IDEA?nn-mop-stability-codex-D1-hard-01; high-degree marginal annihilator; one-cross-step sensitivity witness | IDEA-534 | [record](topics/nn-mop-stability-20261105/novelty-gate-D1-hard.md) | Retained simpler weaker PROVED witness in PD-T437; strengthened by IDEA-535, not rejected |
-| IDEA?nn-mop-stability-codex-D1-hard-02; generating polynomial H; Hermite jets at weight-ratio nodes; positive terminal coefficient sum | IDEA-535 | [record](topics/nn-mop-stability-20261105/novelty-gate-D1-hard.md) | Retained PROVED quantitative variant PD-T437; lower base at least5+2sqrt(6), no matching rate or rounding-error theorem |
+| IDEA?nn-mop-stability-codex-D1-hard-02; generating polynomial H; Hermite jets at weight-ratio nodes; positive terminal coefficient sum | IDEA-535 | [record](topics/nn-mop-stability-20261105/novelty-gate-D1-hard.md) | Retained PROVED lower witness PD-T437; benchmark lower base matched by PD-T509; no rounding-error theorem |
 | IDEA?nn-mop-stability-codex-D1-hard-03; G3 fixed-N contradiction; bounded relative signed binomial weights | IDEA-536 | [record](topics/nn-mop-stability-20261105/novelty-gate-D1-hard.md) | Retained PROVED scoped negative PD-N162; single-inverse-divisor description REJECTED: refuted, no Hahn conclusion |
 | IDEA?nn-mop-stability-codex-31; whole triangle direct QR/LU/SVD; modified moments; native direct mixed orthogonality; no layer propagation | IDEA-537 | [record](topics/nn-mop-stability-20261105/candidates-D3-D5.md) | Retained known-formulation implementation; PD-T440 MEASURED gains and losses, stability parent PD-T449 OPEN |
 | IDEA?nn-mop-stability-codex-32; all-lattice constraint reorthogonalization; row-space nullspace intersection; nodeqr | IDEA-538 | [record](topics/nn-mop-stability-20261105/candidates-D3-D5.md) | Equivalent formulation retained with distinct measured factorization PD-T440; no new core updater or stability theorem |
@@ -1641,7 +1641,7 @@ Canonical IDs and retained aliases are in the [final map](topics/nn-mop-stabilit
 | LIT?nn-mop-stability-codex-D4-02; LIT-D4-02 | LIT-568 | [record](topics/nn-mop-stability-20261105/literature-D4.md) | LITERATURE |
 | LIT?nn-mop-stability-codex-D4-03; LIT-D4-03 | LIT-614 | [record](topics/nn-mop-stability-20261105/literature-D4.md) | LITERATURE |
 
-Original-target/support relations: PD-T448 -> PD-T432/433/434/437. PD-T449 -> PD-T440/441/442 and PD-N163; each child retains its own statement and status. PD-T447 -> copy/pair sub-target PD-T446; PD-T445 is a supporting graph identity. These are supporting results rather than solved conjuncts of the OPEN targets.
+Original-target/support relations: PD-T448 -> PD-T432/433/434/437 (supporting). PD-T448 is now PARTIAL: PD-T509 is its solved exact-benchmark Krawtchouk rate conjunct (see the [record](topics/nn-mop-stability-20261105/theory/conditioning-growth-target.md)). PD-T449 -> PD-T440/441/442 and PD-N163; each child retains its own statement and status. PD-T447 -> copy/pair sub-target PD-T446; PD-T445 is a supporting graph identity. Apart from PD-T509 for PD-T448, these are supporting results rather than solved conjuncts of the targets.
 
 Original combined ratio-graph/copy negative alias PD-N?nn-mop-stability-codex-D6-literal is retained by PD-N167 (G). Its C statement was split into PD-N168, whose alias PD-N?nn-mop-stability-codex-D6-copy is separate. Finite Hahn application PD-T436 depends on generic criterion PD-T435 and is not a split-off conjunct of that theorem.
 
@@ -1652,6 +1652,46 @@ D2 retains its unnumbered known reorthogonalized-marginal and high-precision ora
 Unused IDs remain permanent gaps: PD-T450–471, PD-N169–177, IDEA-556–569 and LIT-615–629. LIT-567/568 are reused source identities; only LIT-614 is new.
 
 The handoff01 label `PD-T?nn-mop-stability-codex-NN` is an identifier-template placeholder, not an allocated claim or candidate.
+
+## nn-mop-conditioning-20261106 allocations
+
+[Reservation ledger](topics/nn-mop-conditioning-20261106/ALLOCATIONS.md): PD-T502–521, PD-N181–185, IDEA590–607; no LIT range. Unused headroom remains permanent gaps.
+
+| Provisional ID and aliases | Final ID | Record | Status / disposition |
+| --- | --- | --- | --- |
+| PD-T?nn-mop-cond-codex-C1-01 | PD-T502 | [record](topics/nn-mop-conditioning-20261106/theory/c1-gauge-invariants.md) | PROVED |
+| PD-T?nn-mop-cond-codex-C1-02 | PD-T503 | [record](topics/nn-mop-conditioning-20261106/theory/c1-scalar-derivative.md) | PROVED |
+| PD-T?nn-mop-cond-codex-C1-03 | PD-T504 | [record](topics/nn-mop-conditioning-20261106/theory/c1-matrix-metric.md) | PROVED |
+| PD-T?nn-mop-cond-codex-C1-04 | PD-T505 | [record](topics/nn-mop-conditioning-20261106/theory/c1-measurements.md) | MEASURED |
+| PD-T?nn-mop-cond-codex-C1-05 | PD-T506 | [record](topics/nn-mop-conditioning-20261106/theory/c1-gauge-sharp-rate.md) | PROVED |
+| PD-T?nn-mop-cond-codex-C1-06 | PD-T507 | [record](topics/nn-mop-conditioning-20261106/theory/c1-error-measurements.md) | MEASURED |
+| PD-T?nn-mop-cond-codex-C1-07 | PD-T508 | [record](topics/nn-mop-conditioning-20261106/theory/c1-hahn-gauge-lower.md) | PROVED |
+| PD-T?nn-mop-cond-codex-C2-hard-01 | PD-T509 | [record](topics/nn-mop-conditioning-20261106/theory/c2-sharp-upper.md) | PROVED; Split from PD-T448: solved exact benchmark Krawtchouk rate conjunct |
+| PD-T?nn-mop-cond-codex-C2-01 | PD-T510 | [record](topics/nn-mop-conditioning-20261106/theory/c2-krawtchouk-parameter-lower.md) | PROVED |
+| PD-T?nn-mop-cond-codex-C2-02 | PD-T511 | [record](topics/nn-mop-conditioning-20261106/theory/c2-hahn-normality.md) | PROVED |
+| PD-T?nn-mop-cond-codex-C2-03 | PD-T512 | [record](topics/nn-mop-conditioning-20261106/theory/c2-hahn-lower.md) | PROVED |
+| PD-T?nn-mop-cond-codex-C2-04; C2-03 round 3; historical C2-04 result ledger alias | PD-T513 | [record](topics/nn-mop-conditioning-20261106/theory/c2-hahn-terminal-rate.md) | PROVED |
+| PD-T?nn-mop-cond-codex-31 | PD-T514 | [record](topics/nn-mop-conditioning-20261106/theory/c3-grid-measurements.md) | MEASURED |
+| PD-T?nn-mop-cond-codex-C3-02 | PD-T515 | [record](topics/nn-mop-conditioning-20261106/theory/c3-weak-stability-open.md) | OPEN |
+| PD-T?nn-mop-cond-codex-C4-01 | PD-T516 | [record](topics/nn-mop-conditioning-20261106/theory/c4-measurements.md) | MEASURED |
+| PD-T?nn-mop-cond-codex-response-gauge-01; PD-T?nn-mop-cond-response-gauge | PD-T517 | [record](topics/nn-mop-conditioning-20261106/theory/response-gauge-infimum.md) | PROVED |
+| PD-N?nn-mop-cond-codex-C2-01 | PD-N181 | [record](topics/nn-mop-conditioning-20261106/theory/c2-hahn-upper-envelope.md) | PROVED |
+| PD-N?nn-mop-cond-codex-response-C2-positivity | PD-N182 | [record](topics/nn-mop-conditioning-20261106/theory/response-c2-positivity-failure.md) | PROVED |
+| PD-N?nn-mop-cond-codex-response-C2-node-transfer | PD-N183 | [record](topics/nn-mop-conditioning-20261106/theory/response-c2-node-transfer-failure.md) | PROVED |
+| IDEA?nn-mop-cond-codex-C1-01 | IDEA-590 | [record](topics/nn-mop-conditioning-20261106/novelty-gate-C1.md) | retained |
+| IDEA?nn-mop-cond-codex-C1-02 | IDEA-591 | [record](topics/nn-mop-conditioning-20261106/novelty-gate-C1.md) | retained |
+| IDEA?nn-mop-cond-codex-C1-03 | IDEA-592 | [record](topics/nn-mop-conditioning-20261106/novelty-gate-C1.md) | retained; abandoned interpretation |
+| IDEA?nn-mop-cond-codex-C2-01 | IDEA-593 | [record](topics/nn-mop-conditioning-20261106/novelty-gate-C2.md) | retained |
+| IDEA?nn-mop-cond-codex-C2-02 | IDEA-594 | [record](topics/nn-mop-conditioning-20261106/novelty-gate-C2.md) | retained |
+| IDEA?nn-mop-cond-codex-C2-03; C2-03 round 3 terminal-row subroute | IDEA-595 | [record](topics/nn-mop-conditioning-20261106/novelty-gate-C2.md) | retained |
+| IDEA?nn-mop-cond-codex-C2-03-r4 | IDEA-596 | [record](topics/nn-mop-conditioning-20261106/candidates-response-C2.md) | REJECTED: failed |
+| IDEA?nn-mop-cond-codex-C2-03-r5 | IDEA-597 | [record](topics/nn-mop-conditioning-20261106/candidates-response-C2.md) | REJECTED: failed |
+| IDEA?nn-mop-cond-codex-C2-03-r6 | IDEA-598 | [record](topics/nn-mop-conditioning-20261106/candidates-response-C2.md) | REJECTED: failed |
+| IDEA?nn-mop-cond-codex-C3-01 | IDEA-599 | [record](topics/nn-mop-conditioning-20261106/attempts/C3.md) | deferred |
+| IDEA?nn-mop-cond-codex-C3-02 | IDEA-600 | [record](topics/nn-mop-conditioning-20261106/attempts/C3.md) | equivalent geometry; abandoned inference |
+| IDEA?nn-mop-cond-codex-C3-03 | IDEA-601 | [record](topics/nn-mop-conditioning-20261106/attempts/C3.md) | deferred |
+| IDEA?nn-mop-cond-codex-C3-04 | IDEA-602 | [record](topics/nn-mop-conditioning-20261106/attempts/C3.md) | abandoned |
+| IDEA?nn-mop-cond-codex-response-gauge-01; IDEA?nn-mop-cond-response-gauge | IDEA-603 | [record](topics/nn-mop-conditioning-20261106/response-gauge-candidate.md) | retained; alternatives deferred/abandoned |
 
 Sharp MZ constants reserves PD-T522–553, IDEA-608–615 and LIT-633–635 in its [topic ledger](topics/padua-mz-sharp-constants-20261106/ALLOCATIONS.md), after the full main/open-PR/retired union refresh; no PD-N range. Final assignments are recorded below and in the final map.
 

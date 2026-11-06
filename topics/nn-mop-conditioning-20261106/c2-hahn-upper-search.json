@@ -1,0 +1,31 @@
+{
+  "M_range": [
+    2,
+    6
+  ],
+  "counterexample": {
+    "Delta_U0": -6,
+    "M": 3,
+    "U0": 24,
+    "U1": 18,
+    "nu": [
+      1,
+      0
+    ]
+  },
+  "counts": {
+    "common_node_coordinates": 430,
+    "indices": 75,
+    "polynomial_values": 430,
+    "weight_coordinates": 860
+  },
+  "elapsed_seconds": 0.32685840999965876,
+  "helper_sha256": {
+    "c2_hahn_checks.py": "c0d3328c7e4ca9034fe2c415893c953d5da62ef1c4342c072a97484641ac6c10",
+    "c2_rate_checks.py": "e4394dac64adafe25721384d01dcac9dd13ec6333831119240128782423428a9"
+  },
+  "python": "3.12.14",
+  "rational_base_separation": "beta>12.40758>12.4>12.2>rho_H",
+  "source_sha256": "5b2f7a4576bbe183e2156caa12faee0625b9eb9f3aed4a55a283e27d5b9555f3",
+  "status": "VERIFIED finite exact search identities; no full upper proved"
+}
