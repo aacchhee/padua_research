@@ -1,7 +1,7 @@
 # NN MOP IEP: conditioning and stable algorithms: log
 
 - Branch: `codex/nn-mop-stability-20261105` · Initial base: main `b4d292e`; reconciled main `5adc3e2` (PR #24 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (response-01 accepted in audit-02; G5 Claude run and PR preparation pending) · Next handoff: [handoffs/06-g5-run.md](handoffs/06-g5-run.md).
+- Stage: PR (response-01 accepted in audit-02; Codex audit of the Claude G5 run, then PR preparation) · Next: `Codex (gpt-6-astra, high): Continue codex/nn-mop-stability-20261105.` · Next handoff: [handoffs/06-g5-audit-prep.md](handoffs/06-g5-audit-prep.md).
 - Reserved final-ID ranges: T432–471, N=162–177, IDEA530–569, LIT614–629; reservation only, no assignments. See ALLOCATIONS.md.
 - Claims: provisional analytic/exact PROVED and floating MEASURED records in theory/; general solver stability and matching sharp growth remain OPEN. [Claude audit-01](audit-01.md): no BLOCKING; four MAJOR findings answered in [response-01.md](response-01.md); [audit-02](audit-02.md) accepted the response, with eight MINOR items for preparation.
 - Open for AC: none (2026-11-06 decisions below). Ask AC before using Syvert.
@@ -133,3 +133,10 @@
   - arXiv: the source bundle (`f736e8f0…`) holds the paper's experiment-1 data but no code.
 - AC 10:14 UTC uploaded `IEP-MOP-main.zip` (SHA-256 `cdd0e98d2b411f24cfcecb49d83e16f9d50a7622a0d4f0d3eb17eb334a405145`, MIT licence), which removes the source blocker. It is not committed.
 - Because only this Claude session can reach the upload, the G5 run is assigned as a Claude development step, technical row: Sonnet 5.5 high. Codex audits it, then prepares the PR; Claude performs the readiness check.
+
+## 2026-11-06 — Claude (Sonnet 5.5 high developer, Opus 5.5 xhigh orchestrator) — G5 run
+
+- The source is AC's upload (`cdd0e98d…`), with reference values from the arXiv source bundle (`f736e8f0…`); neither is committed. Octave 8.4.0 installed from the Ubuntu apt mirrors. A headless replica driver of `experiment_Hahn_Kravchuk.m` runs N=5..30 for both families, with no edits to the third-party code.
+- Pre-stated gate: Krawtchouk, paper N=10 (11 nodes in this topic's convention), IEP_CORE, |log10(ours/paper)| ≤ 1. **PASS**: 1.772147e-09 against the paper's 6.851191e-10, +0.41.
+- Full table: 6 of 144 entries at N ≤ 16 exceed one decade, by ≤ 0.62 beyond it. Exceedances are frequent at N ≥ 17, where the paper reports that all digits are lost. The qualitative pattern matches. The orchestrator's re-execution was byte-identical. Receipt: [g5-run/README.md](g5-run/README.md). MEASURED; Codex audit pending.
+- Handoff: [handoffs/06-g5-audit-prep.md](handoffs/06-g5-audit-prep.md).
