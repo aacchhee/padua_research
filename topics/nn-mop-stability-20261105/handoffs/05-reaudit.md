@@ -2,7 +2,7 @@
 
 A new numbered file each time work passes to another agent or session. Earlier instruction bodies are immutable; only their status lines change.
 
-- Status: open
+- Status: done in 3e3a8e99e2ea63fdf2348e34bd53516ef7cd02c3
 - Previous handoff: [04-response.md](04-response.md)
 - Next agent / model / effort: Claude, Opus 5.5 xhigh (localized NN lemma/proof clarification goes beyond M1).
 - Role: independent auditor and topic orchestrator

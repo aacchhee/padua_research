@@ -1,7 +1,7 @@
 # NN MOP IEP: conditioning and stable algorithms: log
 
 - Branch: `codex/nn-mop-stability-20261105` · Initial base: main `b4d292e`; reconciled main `5adc3e2` (PR #24 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (response-01 accepted in audit-02; Codex audit of the Claude G5 run, then PR preparation) · Next: `Codex (gpt-6-astra, high): Continue codex/nn-mop-stability-20261105.` · Next handoff: [handoffs/06-g5-audit-prep.md](handoffs/06-g5-audit-prep.md).
+- Stage: PR (response-01 accepted in audit-02; Codex audit of the Claude G5 run, then PR preparation) · Next: `Codex (gpt-6-astra, medium): Continue codex/nn-mop-stability-20261105.` · Next handoff: [handoffs/06-g5-audit-prep.md](handoffs/06-g5-audit-prep.md).
 - Reserved final-ID ranges: T432–471, N=162–177, IDEA530–569, LIT614–629; reservation only, no assignments. See ALLOCATIONS.md.
 - Claims: provisional analytic/exact PROVED and floating MEASURED records in theory/; general solver stability and matching sharp growth remain OPEN. [Claude audit-01](audit-01.md): no BLOCKING; four MAJOR findings answered in [response-01.md](response-01.md); [audit-02](audit-02.md) accepted the response, with eight MINOR items for preparation.
 - Open for AC: none (2026-11-06 decisions below). Ask AC before using Syvert.
