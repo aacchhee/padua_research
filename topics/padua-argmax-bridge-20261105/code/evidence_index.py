@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check v2/v3 evidence identities or atomically compact one index to v3.
+"""Check v2/v3/v4 evidence identities or atomically compact one index.
 
 No scientific checker is imported or executed. Hashes retain all32 bytes.
 """
@@ -16,9 +16,11 @@ import tempfile
 
 V2='bridge-essential-evidence-index-v2'
 V3='bridge-essential-evidence-index-v3'
+V4='bridge-essential-evidence-index-v4'
 PREFIXES=['','evidence/','code/']
 V2_COLUMNS=['path','bytes','sha256']
 V3_COLUMNS=['prefix_index','suffix','bytes','sha256_base64']
+V4_COLUMNS=list(V3_COLUMNS)
 LIMIT=16384
 DEFAULT_ROOT=Path(__file__).resolve().parent.parent
 
@@ -47,28 +49,41 @@ def relative_path(value):
     return value
 
 def normalize(document):
-    """Return canonical sorted[path,bytes,sha256_hex] rows for either schema."""
-    schema=document.get('schema');require(schema in (V2,V3),'unknown evidence-index schema')
+    """Return canonical sorted[path,bytes,sha256_hex] rows for every supported schema."""
+    schema=document.get('schema');require(schema in (V2,V3,V4),'unknown evidence-index schema')
     require(isinstance(document.get('files'),list),'files must be a list')
     if schema==V2:
         require(document.get('columns',V2_COLUMNS)==V2_COLUMNS,'unexpected v2 columns')
         require('path_prefixes' not in document,'v2 reserved path_prefixes field')
     else:
-        require(document.get('columns')==V3_COLUMNS,'unexpected/missing v3 columns')
-        require(document.get('path_prefixes')==PREFIXES,'unexpected v3 path prefixes')
+        require(document.get('columns')==V3_COLUMNS,'unexpected/missing compact columns')
+        if schema==V3:
+            require(document.get('path_prefixes')==PREFIXES,'unexpected v3 path prefixes')
+        else:
+            prefixes=document.get('path_prefixes')
+            require(isinstance(prefixes,list) and bool(prefixes) and prefixes[0]=='','invalid v4 root prefix')
+            seen_prefixes=set()
+            for prefix in prefixes:
+                require(isinstance(prefix,str),'nonstring v4 prefix')
+                require(prefix not in seen_prefixes,'duplicate v4 prefix')
+                seen_prefixes.add(prefix)
+                if prefix:
+                    relative_path(prefix[:-1] if prefix.endswith('/') else prefix)
+        prefixes=document['path_prefixes']
     rows=[];seen=set()
     for entry in document['files']:
         require(isinstance(entry,list) and len(entry)==(3 if schema==V2 else 4),'malformed evidence row')
         if schema==V2:path,n,digest=entry
         else:
             prefix,suffix,n,encoded=entry
-            require(type(prefix) is int and 0<=prefix<len(PREFIXES),'invalid prefix index')
+            require(type(prefix) is int and 0<=prefix<len(prefixes),'invalid prefix index')
             require(isinstance(suffix,str) and bool(suffix),'invalid suffix')
             require(isinstance(encoded,str),'invalid base64 digest type')
             try:decoded=base64.b64decode(encoded,validate=True)
             except (ValueError,binascii.Error) as exc:raise ValueError('invalid standard base64 digest') from exc
             require(len(decoded)==32 and base64.b64encode(decoded).decode('ascii')==encoded,'noncanonical/incomplete base64 digest')
-            path=PREFIXES[prefix]+suffix;digest=decoded.hex()
+            if schema==V3:relative_path(suffix)
+            path=prefixes[prefix]+suffix;digest=decoded.hex()
         path=relative_path(path)
         require(path not in seen,'duplicate evidence path: '+path);seen.add(path)
         require(type(n) is int and 0<=n<LIMIT,'invalid/oversize evidence byte count: '+path)
@@ -102,10 +117,60 @@ def compact(document):
     require(result['total_bytes']==document['total_bytes'],'total changed')
     return result
 
+def compact_v4(document):
+    """Pure lossless conversion with deterministic useful string prefixes.
+
+    Greedily add the common prefix giving the greatest positive serialized-byte
+    saving, including dictionary overhead and index digit costs. Prefix zero
+    always represents the empty string. Ties use lexical prefix order.
+    Candidates are longest common prefixes of adjacent sorted paths (at most
+    N-1 trie branch candidates); partial filename components are intentional.
+    """
+    before=normalize(document)
+    prefixes=[''];assignments=[0]*len(before)
+    candidates=set()
+    for left,right in zip(before,before[1:]):
+        common=os.path.commonprefix([left[0],right[0]])
+        if common:
+            # A canonical full path can have a noncanonical partial component
+            # (e.g. the common '.' of '.first' and '.second'). Do not encode it.
+            try:relative_path(common[:-1] if common.endswith('/') else common)
+            except ValueError:continue
+            candidates.add(common)
+    # JSON string cost without its quotes; utf-8 and escaped quotes count.
+    def cost(value):
+        return len(json.dumps(value,ensure_ascii=False).encode('utf-8'))-2
+    costs={prefix:cost(prefix) for prefix in candidates|{''}}
+    while candidates:
+        best=None;best_gain=0;new_index=len(prefixes)
+        for prefix in sorted(candidates):
+            affected=[i for i,(path,_,_) in enumerate(before)
+                      if path.startswith(prefix) and len(path)>len(prefix)>len(prefixes[assignments[i]])]
+            if len(affected)<2:continue
+            gain=sum(costs[prefix]-costs[prefixes[assignments[i]]]
+                     +len(str(assignments[i]))-len(str(new_index)) for i in affected)
+            gain-=costs[prefix]+3  # dictionary comma and quoted string
+            if gain>best_gain:best=prefix;best_gain=gain
+        if best is None:break
+        prefixes.append(best);candidates.remove(best)
+        for i,(path,_,_) in enumerate(before):
+            if path.startswith(best) and len(path)>len(best)>len(prefixes[assignments[i]]):
+                assignments[i]=new_index
+    encoded=[[i,path[len(prefixes[i]):],n,base64.b64encode(bytes.fromhex(digest)).decode('ascii')]
+             for i,(path,n,digest) in zip(assignments,before)]
+    result=dict(document)
+    result.update(schema=V4,columns=list(V4_COLUMNS),path_prefixes=prefixes,files=encoded)
+    require(normalize(result)==before,'v4 roundtrip changed normalized rows')
+    ignored={'schema','columns','path_prefixes','files'}
+    require({k:v for k,v in result.items() if k not in ignored}==
+            {k:v for k,v in document.items() if k not in ignored},'metadata changed')
+    return result
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     actions=parser.add_mutually_exclusive_group(required=True)
     actions.add_argument('--check',action='store_true');actions.add_argument('--compact',action='store_true')
+    actions.add_argument('--compact-v4',action='store_true')
     parser.add_argument('--root',type=Path,default=DEFAULT_ROOT,help='evidence path base; default: this topic root')
     parser.add_argument('index',nargs='?',type=Path,help='index path; default: ROOT/evidence-manifest.json')
     args=parser.parse_args();root=args.root.resolve();index=(args.index or root/'evidence-manifest.json').resolve()
@@ -115,7 +180,7 @@ def main():
         require(len(original)<LIMIT,'index reaches/exceeds16KiB')
         print(json.dumps({'status':'PASS','schema':document['schema'],'entries':len(rows),'index_bytes':len(original),'total_bytes':document['total_bytes']}))
         return
-    converted=compact(document)
+    converted=compact_v4(document) if args.compact_v4 else compact(document)
     candidate=(json.dumps(converted,separators=(',',':'),ensure_ascii=False,allow_nan=False)+'\n').encode('utf-8')
     require(normalize(load(candidate))==rows,'serialized roundtrip changed rows')
     require(len(candidate)<LIMIT,'compact index reaches/exceeds16KiB')
@@ -130,7 +195,7 @@ def main():
         temporary.replace(index);temporary=None
     finally:
         if temporary is not None:temporary.unlink(missing_ok=True)
-    print(json.dumps({'status':'COMPACTED','schema':V3,'entries':len(rows),'old_bytes':len(original),'new_bytes':len(candidate),'total_bytes':converted['total_bytes']}))
+    print(json.dumps({'status':'COMPACTED','schema':converted['schema'],'entries':len(rows),'old_bytes':len(original),'new_bytes':len(candidate),'total_bytes':converted['total_bytes']}))
 
 if __name__=='__main__':
     try:main()
