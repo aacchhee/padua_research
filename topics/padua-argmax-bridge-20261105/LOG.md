@@ -1,7 +1,7 @@
 # Padua argmax bridge 33 ≤ n < N_* (PD-T099): log
 
 - Branch: `codex/padua-argmax-bridge-20261105` · Base: main `9322fba` (PR #25 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-argmax-bridge-20261105.` · Continuation handoff: [handoffs/05-research.md](handoffs/05-research.md)
+- Stage: WORK · Next: active fifteen-round research campaign · Campaign instruction: [handoffs/06-campaign.md](handoffs/06-campaign.md)
 - Reserved final-ID ranges: PD-T392–431, PD-N146–161, IDEA490–529, LIT598–613; first published f708a83. See ALLOCATIONS.md; final IDs not assigned.
 - Current claims: exact global range2–40; finite local patch2–128; reviewed compact endpoint and two-phase defect support; all-degree PD-T099 remains OPEN.
 - Open for AC: none at setup. The sandbox allowance is approved. Syvert is pre-approved under gate B4: syvert1 (16 cores, 256 GB) and syvert2 (32 cores, 128 GB), up to all of both for about a week, and AC launches it from Codex's run package.
@@ -306,3 +306,11 @@
 - All current agent blocks have ended. Reviewed theory bytes, Python syntax and93essential evidence size/hash identities pass publication checks. [Handoff05](handoffs/05-research.md) carries the next bounded research tasks and the preserved limitations; it is published in the following handoff-only commit.
 
 - Final staged conservative output inventory6,703,431bytes is below AC temporary10,000,000-byte ceiling;93essentialfiles are each<16KiB and index12,724bytes. No raw/library/third-party or off-topic cleanup artifact is staged.
+
+## 2026-11-06 — AC authorizes a fresh fifteen-round research campaign
+
+- AC: “Okey, continue working, I authorize up to 15 rounds from now. Do not stop and do not wait if there is still work to be done. Use astra ultra if warranted. Just more certified degrees using old tech does not look like and important case before we know the upper border of the gap, but work on developing a very cheap certifier makes sense”.
+- Interpret this as a new budget of up to15 coordinated research rounds from this instruction, with parallel analytic/certifier work inside a round; prior round counts remain historical rather than consuming the new allowance. Keep working through productive tasks without returning for another Continue or waiting on independent work. Failed mechanisms are redirected, not used as a reason to end the authorized campaign. No old-tech degree-extension campaign; priorities are an effective analytic upper boundary and genuinely cheaper certification. Push authorization and temporary10MB allowance persist.
+- Rules AGENTS/WORKFLOW/CODEX read atc1738419e2a709a51cc3afd13330d0475cdcdc0b; Codex orchestrator requested gpt-6-astra high, serving metadata unexposed. Cloud-runtime skill and enforced restricted proxy policy inspected; no VPN configured. Fresh fetch found mainf654e32daff27b6846849311092f6daebbbf235b (PR30); merged without conflicts at4640e01e538435ef06d6003dbd6ba8792d9522b8. Rule files unchanged. New registry entries must be included in prospective gates. Conservative total after main import7,371,107bytes, below10MB; only this topic/results differ from current main.
+- Astra ultra escalation BEFORE allocation: the decisive missing N1 continuous comparison through coalescing central roots. Sol xhigh rounds7/8 proved coefficient gaps and all branch-artifact control but obtained no constants for the remaining1/40000 modulus; possible fractional/entropy terms prevent a routine quadratic argument. This load-bearing uniform bound and its effective onset warrant Astra ultra under AC's explicit instruction and handoff01. Technical development stays Sol medium, auxiliary mathematics Sol xhigh, and a distinct Astra high checks frozen results.
+- [Campaign ledger](campaign-20261106.md) records actual completed rounds, gates, outcomes and the next independent work. Handoff05 is redirected only in its status; [handoff06](handoffs/06-campaign.md) records the new instruction in the following handoff-only commit.
