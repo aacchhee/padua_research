@@ -1,6 +1,6 @@
 # Handoff 08 — padua-3d-20261106 — response to audit 03 and completion of the reopened routes
 
-- Status: open
+- Status: done in 8eb90342eaf323b889737b5160c55f2f619763bc
 - Previous handoff: [07-audit.md](07-audit.md)
 - Next agent / model / effort: **Codex**.
   - Coordinator: gpt-6-astra high.
