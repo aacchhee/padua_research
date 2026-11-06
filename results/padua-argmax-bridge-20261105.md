@@ -99,3 +99,12 @@ relative near comparison and validated implementation remain OPEN.
 Practical constants are being assessed in D06; this is not a new global
 argmax threshold.
 [D05 model-error review](../topics/padua-argmax-bridge-20261105/independent-checks-D05-outer-comparison.md).
+
+D06 is complete,6/25. Exact formula obstructions show the frozen error
+allowance cannot meet its desired small-degree budgets. A separate
+accepted four-copy row identity reduces actual pointwise Lebesgue sums
+to cubic/quartic sign blocks and cotangent partials. This is a new
+structural component, not yet a fast or whole-box certifier. D07 continues
+with sharper budgets and a guarded implementation; global argmax remains
+2–40 and all n>=500000.
+[Row-structure review](../topics/padua-argmax-bridge-20261105/independent-checks-D06-four-copy-rows.md).

@@ -1,0 +1,100 @@
+{
+  "cases": [
+    {
+      "n": 2,
+      "kind": "generic",
+      "xi_pi": "1/32",
+      "zeta_pi": "1/96",
+      "reference": true
+    },
+    {
+      "n": 2,
+      "kind": "node",
+      "xi_pi": "1/2",
+      "zeta_pi": "0",
+      "reference": true
+    },
+    {
+      "n": 2,
+      "kind": "corner",
+      "xi_pi": "0",
+      "zeta_pi": "0",
+      "reference": true
+    },
+    {
+      "n": 17,
+      "kind": "generic",
+      "xi_pi": "1/272",
+      "zeta_pi": "1/576",
+      "reference": true
+    },
+    {
+      "n": 17,
+      "kind": "node",
+      "xi_pi": "1/17",
+      "zeta_pi": "0",
+      "reference": true
+    },
+    {
+      "n": 17,
+      "kind": "corner",
+      "xi_pi": "0",
+      "zeta_pi": "0",
+      "reference": true
+    },
+    {
+      "n": 32,
+      "kind": "generic",
+      "xi_pi": "1/512",
+      "zeta_pi": "1/1056",
+      "reference": true
+    },
+    {
+      "n": 32,
+      "kind": "node",
+      "xi_pi": "1/32",
+      "zeta_pi": "0",
+      "reference": true
+    },
+    {
+      "n": 32,
+      "kind": "corner",
+      "xi_pi": "0",
+      "zeta_pi": "0",
+      "reference": true
+    },
+    {
+      "n": 128,
+      "kind": "generic-reference",
+      "xi_pi": "1/2048",
+      "zeta_pi": "1/4128",
+      "reference": true
+    },
+    {
+      "n": 512,
+      "kind": "generic",
+      "xi_pi": "1/8192",
+      "zeta_pi": "1/16416",
+      "reference": false
+    },
+    {
+      "n": 512,
+      "kind": "axis-zeta-zero",
+      "xi_pi": "1/8192",
+      "zeta_pi": "0",
+      "reference": false
+    },
+    {
+      "n": 512,
+      "kind": "axis-xi-zero",
+      "xi_pi": "0",
+      "zeta_pi": "1/16416",
+      "reference": false
+    }
+  ],
+  "large_S_context": {
+    "n": 512,
+    "af_pi": "1/16",
+    "bf_pi": "1/32"
+  }
+}

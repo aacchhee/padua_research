@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **5/25**. Active: **D06**.
+Completed: **6/25**. Active: **D07**.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -16,7 +16,8 @@ Completed: **5/25**. Active: **D06**.
 | D03 | COMPLETE | Symmetric cancellation perturbation; endpoint-complete corner baseline; cheap near-only feasibility | Difference lemma independently accepted; full reference OPEN. Baseline-only route deferred. Float n512 pilot486.136CPU, both128-visit caps INCOMPLETE,60/82 frontier; source and saved-result checks pass, no degree proof. |
 | D04 | COMPLETE | Endpoint-complete digamma reference; fixed-work component adoption | Three support proofs accepted, floor-free actual-row model valid R2/n16; practical model rate still separate. Native adoption stops on first512box at65CPU,0/4 outputs, quality unevaluated;129.892CPU. |
 | D05 | COMPLETE | Outer residual BV and joint model rate; phase-relative half-line; fixed collision-free special set | All support proofs accepted. Explicit uniform O((1+log n)/n) model error for R2/delta pi8/n>=32; practical constants unassessed. Fixed-special model has six exact rows. No numerical runs. |
-| D06 | ACTIVE | Assess the new analytic error; direct four-copy row structure | Cheap preregistered scalar bounds and independently gated bounded-degree actual-row identity; no native/degree campaign. |
+| D06 | COMPLETE | Assess the new analytic error; direct four-copy row structure | Frozen allowance fails useful budgets through10000; scalar/analytic check accepted. Cubic/quartic actual-row reduction accepted at pointwise scope; no implementation/runtime claim. |
+| D07 | ACTIVE | Replace coarse outer/retained-row charges; guarded exact-point prototype | Global outer/mesh proof accepted; retained-row proof has one routine inequality correction requested. Point source numerical core passes inspection; two controller findings block execution. |
 
 The initial scientific boundary is exact argmax degrees2–40 and alln>=500000,
 with exact two parity-correct corners. Gap41–499999 staysOPEN. Claude's

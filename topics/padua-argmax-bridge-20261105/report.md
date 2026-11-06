@@ -258,3 +258,25 @@ The campaign is5/25 complete. D06 evaluates the actual constants before
 any expensive phase cover and gates direct four-copy row summation as
 another cheap-certifier route. No improved global onset has yet been
 established; exact argmax remains2–40 and n>=500000.
+
+## Post-audit D06 — practical obstruction and direct cubic rows
+
+The new shrinking error is not yet small enough near10000. Its frozen
+positive allowance exceeds1/32 for every n32..10000; at quarter phase
+the interior allowance alone exceeds1/16. This is an exact obstruction
+to spending that formula, not to the true model error. The measured
+phase totals at10000 are.153–.171; conservative uniform upper.277966.
+[Independent budget review](independent-checks-D06-model-budget.md).
+
+Separately, combining the four actual kernel copies before absolute
+value gives a cubic numerator over a monic quartic in the cosine of
+the node angle. At most8 sign blocks use8 cotangent channels, with
+actual direct collision values and at most2 degenerate retained rows.
+[Accepted pointwise structural theorem](independent-checks-D06-four-copy-rows.md).
+Root isolation, validated whole-box evaluation and runtime are separate;
+this theorem alone supplies no new degree or fast executable.
+
+The campaign is6/25 complete. D07 reuses this structure in a guarded
+point prototype and replaces the conservative outer/retained-row budgets.
+Its pre-execution source review has two controller findings; no numerical
+point call is authorized until their focused closure.
