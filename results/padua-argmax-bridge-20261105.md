@@ -46,3 +46,5 @@ Round3 adds a degree/log-degree-independent joint endpoint residual bound ([N1-0
 The first whole outward n17 phase candidate is complete, but independent replay leaves364/1288 predicates unverified. Acceptance=false; this adds no globally certified degree. [Calibration](../topics/padua-argmax-bridge-20261105/theory/N3-phase-n17.md).
 
 The distinct round3 [N1 review](../topics/padua-argmax-bridge-20261105/independent-checks-n1-endpoint.md) and [N5 review](../topics/padua-argmax-bridge-20261105/independent-checks-n5-all-edge.md) found no mathematical blocker at the stated supporting scopes. Full global coverage remains2–36; PD-T099 remains OPEN.
+
+[N1-06](../topics/padua-argmax-bridge-20261105/theory/N1-round4-mesh.md) analytically replaces the unperforated endpoint mesh by an explicit quadratic polynomial in log n, with degree-independent coefficient evaluation and phase-uniform O((1+log n)/n) error. Developer proof; distinct review pending. Finite endpoint rows/collision corrections, central and interior charts and a usable onset remain OPEN.
