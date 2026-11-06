@@ -2,7 +2,7 @@
 
 A new numbered file each time work passes to another agent or session, opened by the orchestrator holding the previous handoff. Never overwrite an earlier handoff or alter its body; only the status line changes. AC starts the step with `<Agent> (<model, effort>): Continue <branch>.`
 
-- Status: open
+- Status: done in d6760d7d593ea7e14eb9860f92ef2f3b5e0481d6
 - Previous handoff: [03-response.md](03-response.md) (superseded by this file after AC's 2026-11-06 decisions)
 
 - Next agent / model / effort: Codex, `gpt-6.1-sol` high (mathematical development row: the response corrects proof text and measured statements). Use `gpt-6.1-sol` medium for purely mechanical record edits.
