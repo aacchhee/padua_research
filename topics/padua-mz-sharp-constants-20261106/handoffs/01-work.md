@@ -1,6 +1,6 @@
 # Handoff 01 — padua-mz-sharp-constants-20261106 — sharp MZ constants via limiting operators (PD-T020, PD-T027, PD-T381)
 
-- Status: open
+- Status: done in 5110954b07fd834982167780daa8cd22bef13ce1
 - Previous handoff: none (new topic)
 
 - Next agent / model / effort: Codex. This follows the allocation AC set on 2026-11-05 and adopted for this topic on 2026-11-06 ("yes, open sharp-constants codex topic under the suggested rules"):
