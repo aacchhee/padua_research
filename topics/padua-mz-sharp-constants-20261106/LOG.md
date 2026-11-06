@@ -36,3 +36,8 @@
 - gpt-6.1-sol medium constructs the exact finite nodal reciprocal mass representation with projected degree-N constraint; Toeplitz/Hankel FFT products require linear storage. Both extrema agree with dense N40–1280 within4.62e-14 relative. Details and initial serialization failure are in [attempt S4](attempts/S4.md); [validation receipt](evidence/S4-structured-validation.json).
 - This is routine finite-coordinate algebra, no new mechanism or limiting model; novelty gate is not needed for this implementation replay. S1–S3's novelty gates remain required before model development.
 - [Scan proposal](S4-scan-proposal.json) accepted before scan, with raw values allowed and final fits held for model registration. S4 round2 progressed; no failed-progress count.
+
+## Supplementary independent K0 replay
+
+- Distinct gpt-6-astra high requested; serving metadata unexposed. [Independent check](independent-checks-k0.md) separately executed CC, finite carrier and Padua replays. Padua used changed seed20261106: m800 relative discrepancy2.22e-16, m1000 1.84e-14. No unresolved finding in the declared numerical replay scope. Same underlying spectral algorithms remain a limitation; no rigorous enclosure is claimed. This supplements, and does not replace, the future Claude audit.
+- [Receipt](evidence/check-k0-replay.json), SHA256145b99de6a7949b3b061de5f4be9910f8c8f10f4ceb067d2a137f5a5a9002432. Gates K1–K5 still PENDING. Raw large CC scan authorized at e2652c3; no final fit authorized.

@@ -1,0 +1,156 @@
+{
+  "status": "MEASURED",
+  "rigorous_enclosures": false,
+  "role": "independent supplementary checker",
+  "requested_model": "gpt-6-astra high; runtime model/effort metadata unexposed",
+  "source_and_rules_pin": "2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "topics/padua-mz-sharp-constants-20261106/code/check_k0_replay.py",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/check-k0-replay.json"
+  ],
+  "started_utc": "2026-11-06T11:34:59.713671+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "mpmath": "1.3.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "checker_sha256": "f386e7f01ab169a78dba2b7e77caa0c710d6610b43dbf826ec9fcbf0d5f3a11c",
+  "input_sha256": {
+    "topics/padua-mz-sharp-constants-20261106/code/S4_k0_replay.py": "707d8d925d34c09846ac454a7482be2efc8563b33dd0e5e9ad2a16842d605285",
+    "topics/mz-constants/sources/padua_mz_inputs/code/cc_mz_large.py": "df392b043fad81395ce6e07258a438bbd5fc609fc83fc51fa03314b885ac5af9",
+    "tracks/mz-constants/code/mz2d_spectra.py": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+    "topics/padua-mz-2d-frontier-20261105/code/g1_spectral.py": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+    "topics/padua-mz-2d-frontier-20261105/evidence/g1-minimum-only.json": "82ada412cd2886c6c569431bbb77bf4d786f96bfc8190554d5fe2e8b95d12b00",
+    "topics/padua-mz-sharp-constants-20261106/evidence/S4-k0-cc.json": "5a2eae3b33636c71e2296d1cf5ccac9e8cb46fef42c044bf3933da7428f7638d",
+    "topics/padua-mz-sharp-constants-20261106/evidence/S4-k0-padua.json": "aa22868fa079ec8b5760a06a35f1ed9657ab9cfd535c69e18bd08774b74bbf9f",
+    "topics/padua-mz-sharp-constants-20261106/evidence/S4-k0-carrier.json": "f925c919725dbbd3fb57097bd3a58c03687e655725d633c71af00b7d4d1e157c"
+  },
+  "independence": "Separately executed; same imported numerical algorithms; changed Padua seed and 90-digit carrier moment evaluation.",
+  "seed": 20261106,
+  "tolerance": 2e-11,
+  "ncv": 40,
+  "maxiter": 20000,
+  "cc": [
+    {
+      "N": 40,
+      "minimum": 0.2598490248754948,
+      "maximum": 1.0044711207220713,
+      "maximum_relative_error": 6.661338147750939e-16,
+      "pass_1e10": true
+    },
+    {
+      "N": 80,
+      "minimum": 0.21615328400902079,
+      "maximum": 1.0044397347292477,
+      "maximum_relative_error": 9.992007221626409e-16,
+      "pass_1e10": true
+    },
+    {
+      "N": 160,
+      "minimum": 0.18249027656594552,
+      "maximum": 1.0044391013880674,
+      "maximum_relative_error": 2.55351295663786e-15,
+      "pass_1e10": true
+    },
+    {
+      "N": 320,
+      "minimum": 0.15601518364212258,
+      "maximum": 1.0044378009577226,
+      "maximum_relative_error": 2.6645352591003757e-15,
+      "pass_1e10": true
+    },
+    {
+      "N": 640,
+      "minimum": 0.1348334881629361,
+      "maximum": 1.00443722157855,
+      "maximum_relative_error": 8.881784197001252e-16,
+      "pass_1e10": true
+    },
+    {
+      "N": 1280,
+      "minimum": 0.11763515599221253,
+      "maximum": 1.0044370350658494,
+      "maximum_relative_error": 3.9968028886505635e-15,
+      "pass_1e10": true
+    }
+  ],
+  "carrier": [
+    {
+      "m": 512,
+      "finite_norm_squared_90digit": "3.7493235737735411559162460301506161992782317543619516652208311465",
+      "gauss_norm_squared": 3.74932357377354,
+      "quadrature_relative_error": 2.5578481952923474e-16,
+      "developer_norm_relative_difference": 3.0577783776163868e-61,
+      "relative_difference_from_limit": -0.0004437864111843278,
+      "int64_preconvolution_bound": 4276737,
+      "pass_1e10": true
+    },
+    {
+      "m": 1024,
+      "finite_norm_squared_90digit": "3.7501839765873131871964750539536582320337279177530932992198145766",
+      "gauss_norm_squared": 3.7501839765873135,
+      "quadrature_relative_error": 8.494240575920418e-17,
+      "developer_norm_relative_difference": 1.2203795419729981e-60,
+      "relative_difference_from_limit": -0.00021440610783815423,
+      "int64_preconvolution_bound": 33883137,
+      "pass_1e10": true
+    },
+    {
+      "m": 2048,
+      "finite_norm_squared_90digit": "3.7505932229879851627526260775369861889990782414334797026616006332",
+      "gauss_norm_squared": 3.750593222987984,
+      "quadrature_relative_error": 3.3101308776823565e-16,
+      "developer_norm_relative_difference": 1.6883372658358246e-61,
+      "relative_difference_from_limit": -0.00010530248564295803,
+      "int64_preconvolution_bound": 269748225,
+      "pass_1e10": true
+    },
+    {
+      "m": 4096,
+      "finite_norm_squared_90digit": "3.7507925032382862421108361403530476019146472974912959358490177638",
+      "gauss_norm_squared": 3.750792503238286,
+      "quadrature_relative_error": 1.0841593793004967e-16,
+      "developer_norm_relative_difference": 5.96181066674266e-61,
+      "relative_difference_from_limit": -5.2175085856147984e-05,
+      "int64_preconvolution_bound": 2152730625,
+      "pass_1e10": true
+    }
+  ],
+  "padua": [
+    {
+      "m": 800,
+      "n": 799,
+      "dimension": 320400,
+      "minimum": 0.040025262151571574,
+      "reference": 0.04002526215157158,
+      "relative_error": 2.220446049250313e-16,
+      "pass_1e10": true,
+      "residual_2_float": 1.3496818610519865e-14,
+      "matvecs": 162,
+      "seconds": 18.261130013999946
+    },
+    {
+      "m": 1000,
+      "n": 999,
+      "dimension": 500500,
+      "minimum": 0.019659472013741963,
+      "reference": 0.019659472013741602,
+      "relative_error": 1.84297022087776e-14,
+      "pass_1e10": true,
+      "residual_2_float": 2.9549267615130785e-13,
+      "matvecs": 142,
+      "seconds": 29.557968103999997
+    }
+  ],
+  "seconds": 48.163046613999995,
+  "peak_rss_kib": 317660,
+  "all_finite_comparisons_pass": true,
+  "inputs_unchanged_at_end": true
+}

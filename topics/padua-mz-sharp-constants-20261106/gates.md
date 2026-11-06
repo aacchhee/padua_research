@@ -21,3 +21,7 @@ K0 original remains above and in handoff01. A finite norm need not equal its lim
 ## 2026-11-06 — S4 CC scan pre-registration
 
 Accept the exact grid, disjoint windows, SVD columns, parity treatment, tolerances, seed and one-extension rule in [S4-scan-proposal.json](S4-scan-proposal.json), before the large scan. Raw extrema may be computed now. K1 fit and disclosure of final-window data to S1 remain held until S1's model prediction is committed (or an explicit documented failure to derive one). K3 upper fit remains held for its separate pre-registration after S2 prediction. Structured solver validation is finite MEASURED evidence, not a computer proof or limit theorem.
+
+## Independent K0 outcome
+
+PASS under the dated clarification above. [Independent check](independent-checks-k0.md) changed the Padua seed and separately reran all cases; maximum relative reference differences4.00e-15 (CC),1.84e-14 (Padua) and3.31e-16 (finite carrier quadrature). No limiting-norm equality or spectral proof follows.

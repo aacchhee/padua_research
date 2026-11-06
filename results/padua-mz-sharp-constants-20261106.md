@@ -1,17 +1,11 @@
-# padua-mz-sharp-constants-20261106 — sharp MZ constants via limiting operators
+# padua-mz-sharp-constants-20261106 — sharp MZ constants
 
-This file is written only by the topic orchestrator. Branch `codex/padua-mz-sharp-constants-20261106`; no PR yet.
+Targets PD-T020, PD-T027 and PD-T381 remain **OPEN**. No new sharp constant or spectral limit has been proved.
 
-## Status (2026-11-06): WORK, topic set up
+- K0 **MEASURED** replay passes: all six CC near-critical references, Padua minima m800/1000, and separately assembled finite carrier norms. The finite-to-limit norm discrepancy is recorded separately, not forced below the replay tolerance. [Gate clarification](../topics/padua-mz-sharp-constants-20261106/gates.md).
+- A distinct Astra checker separately reran K0 with changed Padua seed; all comparisons pass. [Independent check](../topics/padua-mz-sharp-constants-20261106/independent-checks-k0.md).
+- The new structured CC solver matches dense extrema throughN1280 within4.62e-14 relative. The registered larger scan is underway; fits remain held until model prediction registration. [Attempt S4](../topics/padua-mz-sharp-constants-20261106/attempts/S4.md).
 
-Targets, all OPEN on main, are specified in [handoff 01](../topics/padua-mz-sharp-constants-20261106/handoffs/01-work.md):
+S1–S3 are developing after novelty gates. Required Claude audit remains pending in the topic log and draft PR31. No final ID range reserved; shared registries and manuscript unchanged.
 
-- **PD-T020:** lim (log N)² λ_min(CC). Route: a scale-invariant Mellin model in the Widom–Wilf style.
-- **PD-T027:** lim λ_max(CC) (measured near 1.004437) and a uniform B < 2. Route: a microscopic Wiener–Hopf / Toeplitz-plus-Hankel endpoint limit.
-- **PD-T381:** sharp λ±(m, m−1)/log m for the signed Padua rule, per parity. Route: a corner Mellin model. The proved one-sided bounds are c₋ ≈ 0.0296 and c₊ ≈ 0.0128; the measured slope of the minimum is about −0.0915.
-
-No results yet.
-
-## Next step
-
-`Codex (gpt-6-astra high): Continue codex/padua-mz-sharp-constants-20261106.`
+Next: gated operator development, CC scan and preregistered fits, then independent mathematical checks and substantive Claude audit.
