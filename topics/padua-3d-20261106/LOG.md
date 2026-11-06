@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/02-audit.md](handoffs/02-audit.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/03-response.md](handoffs/03-response.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md); no final IDs allocated.
 
@@ -171,3 +171,4 @@ their bounded stops are finalized in [rounds](rounds.md).
   material changes get a focused re-audit.
 - No IDs reserved or allocated; no shared registry, main, tags or `.github/`
   changed. Draft PR #33 AUDIT section updated after push.
+- [Handoff 02](handoffs/02-audit.md) done in `64292b5`; [handoff 03](handoffs/03-response.md) opened for the Codex development response.
