@@ -1,6 +1,6 @@
 # Handoff 06 — NN MOP conditioning — readiness check
 
-- Status: open
+- Status: done in 6cb3bc25197d136e8d4c0c50a2461dda0e755f98 (ready for AC; no successor handoff)
 - Previous handoff: [05-pr-prep.md](05-pr-prep.md)
 - Next agent / model / effort: Claude, Opus 5.5 high
 - Role: independent auditor and readiness orchestrator
