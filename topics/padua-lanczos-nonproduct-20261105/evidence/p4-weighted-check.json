@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "scope": "tiny weighted rational triangle model check only",
+  "input": "L=n+1 triangular lattice; weights proportional to 1+i+2j",
+  "source_code_sha256": "97d6bfaab41e9eb480bf3da116e5341745f0865ddd35e4bd8402bb525c045006",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "rows": [
+    {
+      "degree": 2,
+      "rule": "BJ",
+      "nodes": 10,
+      "columns": 6,
+      "directions": 50,
+      "weighted_normal_derivative": "PASS",
+      "source_and_leverage_scaling": "PASS"
+    },
+    {
+      "degree": 2,
+      "rule": "mirror",
+      "nodes": 10,
+      "columns": 6,
+      "directions": 50,
+      "weighted_normal_derivative": "PASS",
+      "source_and_leverage_scaling": "PASS"
+    },
+    {
+      "degree": 3,
+      "rule": "BJ",
+      "nodes": 15,
+      "columns": 10,
+      "directions": 135,
+      "weighted_normal_derivative": "PASS",
+      "source_and_leverage_scaling": "PASS"
+    },
+    {
+      "degree": 3,
+      "rule": "mirror",
+      "nodes": 15,
+      "columns": 10,
+      "directions": 135,
+      "weighted_normal_derivative": "PASS",
+      "source_and_leverage_scaling": "PASS"
+    }
+  ],
+  "total_source_directions": 370,
+  "cross_family_degree_12_16_gate": "NOT RUN",
+  "independent_rerun": "NOT CLAIMED"
+}

@@ -1,0 +1,123 @@
+{
+  "d65_input": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/pilot8-D65x9/input.txt",
+    "bytes": 5950,
+    "sha256": "94cca6d83b3c918840e13d097faa70a3a64877811b293f120e39b3c2e55fbaa0"
+  },
+  "d65_exact_admission_input_match": true,
+  "status": "PASS 15 malicious basis-export rejection controls",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/check_scans_flint_guards.py"
+  ],
+  "code": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_flint_guards.py",
+    "bytes": 3512,
+    "sha256": "a172e921ad7283ffe957fcbcbbbd276b875475278ff744f1697141b10e46c435"
+  },
+  "checked_code": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/flint_disk_check.py",
+    "bytes": 13351,
+    "sha256": "49a09bc0ddf12a95c1810c47f939a6596657d23e722a72608f60489c75dddf73"
+  },
+  "export_command": [
+    "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D36x9-d8/exporter",
+    "/tmp/padua-lanczos-nonproduct-20261105/scan-review/D36x9/input.txt",
+    "4",
+    "pivot",
+    "D36x9"
+  ],
+  "basis": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-negative-controls-v2/pivot4.json",
+    "bytes": 216327,
+    "sha256": "6f8c9e5fb0f7857d7d8bead403926b845118b444ec03ced1166d017b4c4bd15b"
+  },
+  "input": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/D36x9/input.txt",
+    "bytes": 5734,
+    "sha256": "48977eefea1c662c3ef23c8ed17d49e3cb0310a6d53321add8c51c91866313f6"
+  },
+  "export_binary": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/scan-review/flint-D36x9-d8/exporter",
+    "bytes": 69864,
+    "sha256": "14432bb379fba07129ab94a28f9d8269da11fa64979b8b1da37eac8091503f7e"
+  },
+  "controls": [
+    {
+      "control": "basis value",
+      "rejected": true,
+      "diagnostic": "full weighted Gram identity"
+    },
+    {
+      "control": "pivot norm",
+      "rejected": true,
+      "diagnostic": "full weighted Gram identity"
+    },
+    {
+      "control": "constant start",
+      "rejected": true,
+      "diagnostic": "exact constant start"
+    },
+    {
+      "control": "input coordinate",
+      "rejected": true,
+      "diagnostic": "exported points differ from independently read input"
+    },
+    {
+      "control": "input weight",
+      "rejected": true,
+      "diagnostic": "exported points differ from independently read input"
+    },
+    {
+      "control": "wrong parent",
+      "rejected": true,
+      "diagnostic": "selected parent"
+    },
+    {
+      "control": "inadmissible axis",
+      "rejected": true,
+      "diagnostic": "admissible selected parent axis"
+    },
+    {
+      "control": "alpha coefficient",
+      "rejected": true,
+      "diagnostic": "selected projection coefficients"
+    },
+    {
+      "control": "source scale",
+      "rejected": true,
+      "diagnostic": "selected source scale"
+    },
+    {
+      "control": "wrong grading",
+      "rejected": true,
+      "diagnostic": "grading metadata"
+    },
+    {
+      "control": "wrong prefix",
+      "rejected": true,
+      "diagnostic": "grading metadata"
+    },
+    {
+      "control": "choice metadata",
+      "rejected": true,
+      "diagnostic": "choices/ties metadata"
+    },
+    {
+      "control": "tie metadata",
+      "rejected": true,
+      "diagnostic": "choices/ties metadata"
+    },
+    {
+      "control": "wrong fixed rule",
+      "rejected": true,
+      "diagnostic": "fixed rule selected wrong axis"
+    },
+    {
+      "control": "Gram-preserving column rescale",
+      "rejected": true,
+      "diagnostic": "candidate creator/projection residue identity"
+    }
+  ]
+}

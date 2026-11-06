@@ -1,0 +1,104 @@
+{
+  "archive_delivery": "not performed or asserted",
+  "counts": {
+    "references": 497,
+    "unavailable_or_unstable": 2,
+    "unique_external_paths": 317
+  },
+  "external_read_roots": [
+    "/tmp/padua-lanczos-nonproduct-20261105"
+  ],
+  "files": [
+    {
+      "bytes": 16227,
+      "path": "inventory/external-files-001.json",
+      "records": 33,
+      "sha256": "65e55c5ba0f2adb296066e342b7004935d83184f85eb8746f9a95bd91109d747"
+    },
+    {
+      "bytes": 16080,
+      "path": "inventory/external-files-002.json",
+      "records": 25,
+      "sha256": "3b744a0f91ae06a034a682cccadbdcec97e9666d3c1834479ef2f8d5b3fe22c5"
+    },
+    {
+      "bytes": 15994,
+      "path": "inventory/external-files-003.json",
+      "records": 24,
+      "sha256": "f96a7f5dffe9653a047ea4e121fbdaeb28e6741e96f0fd50c9e0b794f58ea502"
+    },
+    {
+      "bytes": 15900,
+      "path": "inventory/external-files-004.json",
+      "records": 22,
+      "sha256": "bf04c4c9d33eed2f27d7a6f2b99a235f08da7fb7e5e1d4a159a3843213cbf825"
+    },
+    {
+      "bytes": 14857,
+      "path": "inventory/external-files-005.json",
+      "records": 11,
+      "sha256": "92410d05a42f9f5db8224f1620cad00f2984e98a58cb5918206b110a379aa0be"
+    },
+    {
+      "bytes": 16000,
+      "path": "inventory/external-files-006.json",
+      "records": 22,
+      "sha256": "601fa3833f8ed2e6c4f62d9b95c74779d0a7dbec99795586bb767ce5ceb50778"
+    },
+    {
+      "bytes": 15955,
+      "path": "inventory/external-files-007.json",
+      "records": 32,
+      "sha256": "d2af5d9ffe14877ebcb5ff968fc5d6dd9b19470605e8fce878f321f3753f8083"
+    },
+    {
+      "bytes": 15972,
+      "path": "inventory/external-files-008.json",
+      "records": 24,
+      "sha256": "7edf9e6bf08706750b3070d02e9905a06741f81bb83262de04edeba39e80f9f4"
+    },
+    {
+      "bytes": 16115,
+      "path": "inventory/external-files-009.json",
+      "records": 25,
+      "sha256": "d7bc21a38b9da17e252de8d39cad0902d93c5dda45dd16e87cd64ce5b806e9d4"
+    },
+    {
+      "bytes": 14788,
+      "path": "inventory/external-files-010.json",
+      "records": 29,
+      "sha256": "9a5579049c8ed49346ec2efc15bddfac8fc3ed77645cfae21a7f3507e4ebe640"
+    },
+    {
+      "bytes": 15782,
+      "path": "inventory/external-files-011.json",
+      "records": 16,
+      "sha256": "0ee00c3384bbb61099f3f6e3130eb752e33fa9c84ced2753c3e62f12a9a6c631"
+    },
+    {
+      "bytes": 15956,
+      "path": "inventory/external-files-012.json",
+      "records": 29,
+      "sha256": "231c00c0ecc0405d2183fe22aee81b0322929a8f490fdf3bfcbbe137af366737"
+    },
+    {
+      "bytes": 13068,
+      "path": "inventory/external-files-013.json",
+      "records": 25,
+      "sha256": "adbbb98631e52ee2475b63ab56c73350cc4cb67ad6d262fb89741265e097eafd"
+    }
+  ],
+  "input_policy": "git ls-files intersect HEAD; bytes from committed HEAD, not working tree",
+  "regeneration": "Resolve each file reference receipt through evidence-manifest.json receipt index; command_pointers retain exact generating commands. Empty command_pointers means no enclosing command supplied: consult the committed receipt. No command is executed by this inventory.",
+  "retention_retrieval_notes": "Coordinator supplies COLD_STORAGE.md; local paths are not an archive.",
+  "schema": "padua-local-artifact-inventory-v1",
+  "scientific_projection_method": {
+    "description": "Each nonblank native endpoint JSONL row parsed independently; omit only top-level elapsed_seconds and exact_gram_pairs_checked; sorted keys, compact separators, ensure_ascii=False, UTF-8 plus LF; SHA256 concatenation in original row order.",
+    "does_not_establish": "completion, correctness, equality of omitted guards, or archival delivery",
+    "enabled": true,
+    "name": "native-jsonl-v1"
+  },
+  "source_head": "62668c194ea510907f7a2a9d47c33d7c67f7a4dc",
+  "status": "local-working; archival-pending",
+  "topic": "padua-lanczos-nonproduct-20261105"
+}

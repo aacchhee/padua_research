@@ -1,0 +1,102 @@
+{
+  "reviewer": "Codex /root/math_check; assigned gpt-6-astra high",
+  "date": "2026-11-05",
+  "source_checkout_head": "698802430d333d559668d990123a317f33485064",
+  "working_code_pins_in_runs": true,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "sympy": "1.14.0",
+  "runs": [
+    {
+      "command": "python3 topics/padua-lanczos-nonproduct-20261105/code/p5_exact_checks.py --output /tmp/padua-lanczos-nonproduct-20261105/math-review/p5-exact-checks.json",
+      "inputs": "Self-contained deterministic cases in source; no random seed.",
+      "code": {
+        "path": "topics/padua-lanczos-nonproduct-20261105/code/p5_exact_checks.py",
+        "sha256": "640317101fa847e8e63f8680f90918a474fe0ae2b8dcc3d9cef479b1bb2a3e7a"
+      },
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/math-review/p5-exact-checks.json",
+        "sha256": "5c21862b4b7afb2d50c4316ce40b256377cbc6ab6a2f6a651aae475d7dd16d2f",
+        "bytes": 3285
+      },
+      "observed": "PASS; exact output matches developer receipt after removing only ['elapsed_seconds']",
+      "independent_execution": true
+    },
+    {
+      "command": "python3 topics/padua-lanczos-nonproduct-20261105/code/p4_weighted_check.py --output /tmp/padua-lanczos-nonproduct-20261105/math-review/p4-weighted-check.json",
+      "inputs": "Self-contained deterministic cases in source; no random seed.",
+      "code": {
+        "path": "topics/padua-lanczos-nonproduct-20261105/code/p4_weighted_check.py",
+        "sha256": "97d6bfaab41e9eb480bf3da116e5341745f0865ddd35e4bd8402bb525c045006"
+      },
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/math-review/p4-weighted-check.json",
+        "sha256": "a07a4024c017f36c5b8af4e25577e928f22dfc8dfcbc62934f52d58e6b4014dd",
+        "bytes": 1284
+      },
+      "observed": "PASS; exact output matches developer receipt after removing only []",
+      "independent_execution": true
+    },
+    {
+      "command": "python3 topics/padua-lanczos-nonproduct-20261105/code/p4_annulus_check.py > /tmp/padua-lanczos-nonproduct-20261105/math-review/p4-annulus-check.json",
+      "source_checkout_head": "dbe5c811e0b22498382c8b3a6f2b0f2d9eb66bfc",
+      "inputs": "epsilon=1,1/2,1/4,1/8; c=0,1; lambda=2; deterministic exact Fraction moment/Gram cases",
+      "code": {
+        "path": "topics/padua-lanczos-nonproduct-20261105/code/p4_annulus_check.py",
+        "sha256": "89e8724c7eb2fc0eb52e4c61281ea6606fa9de34c5c8859087ccd257620136b2"
+      },
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/math-review/p4-annulus-check.json",
+        "sha256": "98d224133fd6ffec933c76a41f7fc80cd898ee251efc3c1a4c5274789ed1fde9",
+        "bytes": 2994
+      },
+      "observed": "PASS all 8 cases; fresh JSON identical to developer receipt",
+      "independent_execution": true
+    },
+    {
+      "command": "python3 topics/padua-lanczos-nonproduct-20261105/code/p4_terminal_check.py > /tmp/padua-lanczos-nonproduct-20261105/math-review/p4-terminal-check.json",
+      "source_checkout_head": "dbe5c811e0b22498382c8b3a6f2b0f2d9eb66bfc",
+      "working_code_snapshot": true,
+      "inputs": "L=n+1 triangular lattice; weights proportional to 1+i+2j; degrees 2,3, BJ/mirror; terminal coordinate and two multi-source vectors per case",
+      "code": {
+        "path": "topics/padua-lanczos-nonproduct-20261105/code/p4_terminal_check.py",
+        "sha256": "59b692fdf001fcb63af6f6f034f29ebec9dc4a020ca45e1e40470b79883fe539"
+      },
+      "code_dependencies": [
+        {
+          "path": "topics/padua-lanczos-nonproduct-20261105/code/p4_weighted_check.py",
+          "sha256": "97d6bfaab41e9eb480bf3da116e5341745f0865ddd35e4bd8402bb525c045006"
+        }
+      ],
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/math-review/p4-terminal-check.json",
+        "sha256": "252d853dca9847ae5b704f2be0024b79e311e19afd48473801e584be46e4f8c0",
+        "bytes": 1358
+      },
+      "observed": "PASS all 22 source vectors; fresh JSON identical to developer receipt",
+      "independent_execution": true
+    }
+  ],
+  "scope": "Separate executions of inspected developer checkers; analytic theorem corroboration, not a computer-proof reduction or a new independently implemented checker.",
+  "P5_counts": {
+    "cubature_moments": 122,
+    "sharp_cutoff_failures": 4,
+    "gram_entries": 202,
+    "creators": 60,
+    "normal_readout_squares": 20,
+    "full_projection_dual_directions": 124,
+    "symbolic_identities": 44
+  },
+  "P4_counts": {
+    "full_projection_dual_directions": 370
+  },
+  "retention": "Small compact receipt is durable; full regenerable outputs remain local in /tmp, not archived.",
+  "P4_annulus_counts": {
+    "rational_moment_Gram_cases": 8
+  },
+  "P4_terminal_counts": {
+    "exact_source_vectors": 22,
+    "cases": 4,
+    "spectral_maximum_computation": "NOT RUN; attainment checked analytically"
+  }
+}

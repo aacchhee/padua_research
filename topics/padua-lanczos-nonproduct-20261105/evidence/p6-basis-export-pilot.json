@@ -1,0 +1,71 @@
+{
+  "status": "PASS basis-export shape controls only; independent mathematical verification pending",
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+    "bytes": 9144,
+    "sha256": "aa4c74c57e150b748f1d225f3cfad5c2bbbe3d55e61d3c7702fbe8edd3414e44"
+  },
+  "binary": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+    "bytes": 69864,
+    "sha256": "14432bb379fba07129ab94a28f9d8269da11fa64979b8b1da37eac8091503f7e"
+  },
+  "compile_command": [
+    "g++",
+    "-O3",
+    "-std=c++17",
+    "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+    "-lgmpxx",
+    "-lgmp",
+    "-o",
+    "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter"
+  ],
+  "runs": [
+    {
+      "family": "D36x9",
+      "degree": 4,
+      "rule": "alt",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "4",
+        "alt",
+        "D36x9"
+      ],
+      "elapsed_seconds": 0.05427705399961269,
+      "input": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "bytes": 5734,
+        "sha256": "48977eefea1c662c3ef23c8ed17d49e3cb0310a6d53321add8c51c91866313f6"
+      },
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/D36x9-alt-d4.json",
+        "bytes": 216330,
+        "sha256": "ec3742070e38d5dcf7312ea31196dd194d04ef431f7839c7280a175effa003c8"
+      }
+    },
+    {
+      "family": "D65x9",
+      "degree": 4,
+      "rule": "alt",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/pilot8-D65x9/input.txt",
+        "4",
+        "alt",
+        "D65x9"
+      ],
+      "elapsed_seconds": 0.019162721000157035,
+      "input": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/pilot8-D65x9/input.txt",
+        "bytes": 5950,
+        "sha256": "94cca6d83b3c918840e13d097faa70a3a64877811b293f120e39b3c2e55fbaa0"
+      },
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/D65x9-alt-d4.json",
+        "bytes": 141791,
+        "sha256": "34d0d0f272ea85ba0ad2a14119b7afb0c8751de2edee8113a93949b8d2b36152"
+      }
+    }
+  ]
+}

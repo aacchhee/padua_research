@@ -1493,3 +1493,89 @@ Additional original/support edges: PD-T075(U1) → PD-T144 unchanged, with PD-T0
 Inherited abandoned aliases, no new allocation: u=e without a run → IDEA-262; compression/structure-free commuting approximation implies graded sections → IDEA-158/160 (one consolidated route); arbitrary reading-(E) obstruction implies actual-(G) obstruction → IDEA-162. The already disposed zero-admitting every-error positive-drift reading → IDEA-253. No administrative PD-N is created for any equivalent/abandoned route.
 
 No new literature ID is proposed by this mechanical registry response. P3/literature comparison is coverage-limited; no local proof inherits an unread source theorem.
+
+## Non-affine-product Lanczos reservation
+
+[Permanent topic ledger](topics/padua-lanczos-nonproduct-20261105/ALLOCATIONS.md):
+PD-T472–501, PD-N178–180, IDEA570–589, LIT630–632. No assignment by this
+reservation entry. Earlier mappings, reservations and unused gaps survive.
+
+## Non-affine-product Lanczos — canonical mappings
+
+[Permanent reservation](topics/padua-lanczos-nonproduct-20261105/ALLOCATIONS.md),
+first published [6b313567702b0ec465330e2ca4b8186d8be210a4](https://github.com/aacchhee/padua_research/commit/6b313567702b0ec465330e2ca4b8186d8be210a4).
+Source content: `72cbce7816cdd6e02e799c85cb68f79001f831f7`; completed
+[audit01](topics/padua-lanczos-nonproduct-20261105/audit-01.md) and
+[audit02](topics/padua-lanczos-nonproduct-20261105/audit-02.md) identify
+accepted scopes. OPEN targets below transcribe the original unresolved
+questions retained there; their supporting results do not imply PARTIAL.
+No accepted ID is renumbered.
+
+| Full provisional source / alias | Final ID | Canonical record | Content / scope |
+|---|---|---|---|
+| PD-T?lanczos-nonproduct-codex-P1-01 | PD-T472 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p1-triangle-admission.md) | Triangle family admission; PROVED |
+| PD-T?lanczos-nonproduct-codex-P1-02 | PD-T473 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p1-continuous-creator-probe.md) | Finite triangle probe; MEASURED; chain under BJ |
+| PD-T?lanczos-nonproduct-codex-P2-01 | PD-T474 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p2-01-family-admission.md) | Radial disk and D36 admission; PROVED |
+| PD-T?lanczos-nonproduct-codex-P2-02 | PD-T475 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p2-02-rotation-covariance.md) | Whole-algorithm covariance and fixed-order limitation; PROVED |
+| PD-T?lanczos-nonproduct-codex-P2-03 | PD-T476 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p2-03-finite-recurrence-probe.md) | Finite radial-disk probe; MEASURED |
+| PD-T?lanczos-nonproduct-codex-P2-04 | PD-T477 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p2-04-low-denominator-rings.md) | Distinct D65 ring admission; PROVED |
+| PD-T?lanczos-nonproduct-codex-P3-01 | PD-T478 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p3-01-high-mode-weight-admission.md) | Positive high-mode weight admission; PROVED |
+| PD-T?lanczos-nonproduct-codex-P3-02 | PD-T479 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p3-02-exact-moments-creators.md) | Moment cutoff and creators; PROVED |
+| PD-T?lanczos-nonproduct-codex-P3-03 | PD-T480 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p3-03-uniform-capacity-radius.md) | Non-affine-product measures moment-equivalent to SH_n through degree 2n+1, with an n-dependent weight mode; PROVED |
+| PD-T?lanczos-nonproduct-codex-P4-01 | PD-T481 | [record](topics/padua-lanczos-nonproduct-20261105/theory/nonproduct-definition.md) | Definition and admission lemmas; PROVED |
+| PD-T?lanczos-nonproduct-codex-P4-02 | PD-T482 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p4-weighted-normal-quotient.md) | Weighted finite quotient, including terminal-block corollary; PROVED |
+| PD-T?lanczos-nonproduct-codex-P4-03 | PD-T483 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p4-continuous-capacity.md) | Exact atomless capacity; PROVED |
+| PD-T?lanczos-nonproduct-codex-P4-04 | PD-T484 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p4-moment-capacity-transfer.md) | Moment/source capacity transfer; PROVED |
+| PD-T?lanczos-nonproduct-codex-p5-01 | PD-T485 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p5-01-padua-admission.md) | Unsaturated positive Padua admission; PROVED |
+| PD-T?lanczos-nonproduct-codex-p5-02 | PD-T486 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p5-02-padua-polynomial-capacity.md) | Two-sided polynomial BJ/mirror Padua bounds; PROVED |
+| PD-T?lanczos-nonproduct-codex-P6-01 | PD-T487 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p6-finite-scans.md) | Exact finite endpoint bounds; MEASURED |
+| PD-T?lanczos-nonproduct-codex-P6-02 | PD-T488 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p6-n2-screen.md) | Three finite INCONCLUSIVE screens; MEASURED |
+| PD-T?lanczos-nonproduct-codex-P1-03 | PD-T489 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p1-continuous-triangle-rate-target.md) | Original continuous triangle rate target; OPEN |
+| PD-T?lanczos-nonproduct-codex-P2-05 | PD-T490 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p2-continuous-disk-rate-target.md) | Original continuous disk rate target; OPEN |
+| PD-T?lanczos-nonproduct-codex-P4-05 | PD-T491 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p4-structural-criterion-target.md) | Original all-degree structural criterion; OPEN |
+| PD-T?lanczos-nonproduct-codex-p5-03 | PD-T492 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p5-sharp-exponent-target.md) | Sharp Padua polynomial orders; OPEN |
+| PD-T?lanczos-nonproduct-codex-p5-04 | PD-T493 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p5-alternative-rule-upper-target.md) | Alternating/frozen-pivot Padua uppers; OPEN |
+| PD-T?lanczos-nonproduct-codex-P3-04 | PD-T494 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p3-fixed-perturbation-target.md) | n-independent perturbation follow-up; OPEN |
+| PD-N?lanczos-nonproduct-codex-P4-01 | PD-N178 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p4-covariance-capacity-obstruction.md) | Scoped absolute-capacity covariance obstruction; PROVED; refutes IDEA-581 only |
+| LIT?lanczos-nonproduct-codex-P1-01 | LIT-630 | [record](topics/padua-lanczos-nonproduct-20261105/theory/p1-literature-checkpoint.md) | Xu simplex/Hahn source checkpoint; LITERATURE, bounded developer reading |
+| IDEA?lanczos-nonproduct-codex-P1-01 | IDEA-570 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P1.md) | Triangle aggregate continuation |
+| IDEA?lanczos-nonproduct-codex-P1-02 | IDEA-571 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P1.md) | Same-degree creator-chain shortcut under BJ; abandoned as full-capacity shortcut |
+| IDEA?lanczos-nonproduct-codex-P1-03 | IDEA-572 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P1.md) | Swap/S3 symmetry identification; abandoned inference |
+| IDEA?lanczos-nonproduct-codex-P2-01 | IDEA-573 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P2.md) | Continuous radial quotient; retained criterion route |
+| IDEA?lanczos-nonproduct-codex-P2-02 | IDEA-574 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P2.md) | Exact rational concentric grid; retained implementation family |
+| IDEA?lanczos-nonproduct-codex-P2-03 | IDEA-575 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P2.md) | D65 common-denominator rings; deferred |
+| IDEA?lanczos-nonproduct-codex-P3-01 | IDEA-576 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P3.md) | Successful moment-invisible weaker variant; permanent timing qualifier retained |
+| IDEA?lanczos-nonproduct-codex-P3-02 | IDEA-577 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P3.md) | Fixed-density/nonlinear-map perturbation; deferred follow-up |
+| IDEA?lanczos-nonproduct-codex-P4-01 | IDEA-578 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P4.md) | Principal-axis asymptotic classifier; deferred/OPEN |
+| IDEA?lanczos-nonproduct-codex-P4-02 | IDEA-579 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P4.md) | Projection-aware inverse/weighted and atomless models; retained |
+| IDEA?lanczos-nonproduct-codex-P4-03 | IDEA-580 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P4.md) | Leading-coefficient criterion deferred; terminal-block variant equivalent/consolidated into PD-T482 |
+| IDEA?lanczos-nonproduct-codex-P4-04 | IDEA-581 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P4.md) | Covariance-only absolute bound; REJECTED: refuted by PD-N178 |
+| IDEA?lanczos-nonproduct-codex-P5-01 | IDEA-582 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P5.md) | Unsaturated Padua classification; retained proved variant |
+| IDEA?lanczos-nonproduct-codex-P5-02 | IDEA-583 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P5.md) | Saturated square as growth test; abandoned |
+| IDEA?lanczos-nonproduct-codex-P5-03 | IDEA-584 | [candidate](topics/padua-lanczos-nonproduct-20261105/ideas/P5.md) | Alternating/pivot/arbitrary-pattern uppers; deferred |
+
+Namespace disambiguation: PD-T481 is the definition, IDEA-578 the original
+asymptotic classifier and PD-N178 the annulus obstruction; only IDEA-581
+is rejected by that obstruction, while PD-T484 is the transfer theorem.
+PD-T476 is the uniform-disk probe, IDEA-575 the D65 candidate and PD-T477
+its admission; no IDEA P2-04 existed. Lowercase `p5-01/p5-02` theory aliases
+map to PD-T485/486, distinct from uppercase P5 candidate aliases.
+
+Unnumbered considered subroutes remain in their candidate records: P2's
+symmetry/comparability/sparse-recursion shortcuts are abandoned, with unread
+source import deferred; fixed P3 density/node-map alternatives consolidate
+under IDEA-577; terminal-block and reflection reuse consolidate under
+PD-T482 and the P2/P4 model candidates, with no extra theorem or negative ID.
+P6 retains the T24 duplicate/baseline, weighted implementation variant,
+family prerequisites and abandoned rational-Padua substitute as method
+subroutes linked to PD-T487/488, rather than manufacturing new candidates.
+N0 replay is verification evidence only, with no new PD-T. The handoff01
+`PD-T?...-NN` naming-template placeholder is not a candidate or allocation.
+All original aliases and unsuccessful/deferred routes remain in the linked
+records; no equivalent/abandoned route creates an administrative PD-N.
+
+Original-target/support edges: PD-T489 -> PD-T472/473/482/483; PD-T490 ->
+PD-T474/475/476/482/483; PD-T491 -> PD-T481/482/483/484 and PD-N178;
+PD-T492/493 -> PD-T485/486; PD-T494 -> PD-T478/479/480/482/484. These
+are supporting records split from the broader directions, not proved
+conjuncts of the OPEN target statements; no PARTIAL classification follows.

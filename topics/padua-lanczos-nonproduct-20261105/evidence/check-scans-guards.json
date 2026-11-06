@@ -1,0 +1,119 @@
+{
+  "status": "PASS 15 Python rejection controls, 10 native rejections, native primitive self-test",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/check_scans_guards.py"
+  ],
+  "python": "3.12.14",
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_guards.py",
+    "bytes": 3661,
+    "sha256": "92439a4d95050cdf5d4df00afcabb44b2a3e49857ba88b6acdcbc3340a3cafa3"
+  },
+  "code_inputs": [
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_inputs.py",
+      "bytes": 2207,
+      "sha256": "7b9729664cd9c68aa2362c004e256aa29d3326703494536ad5899ab90bda893a"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_rows.py",
+      "bytes": 2202,
+      "sha256": "53728ef0f1db483280371de7726454e301fd386b66072157f99f016fba9f2eaf"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_native.cpp",
+      "bytes": 9914,
+      "sha256": "41c11190b7b15bb5acd5070ccfdb1b66a4bad3739e02d727aba4a506cee2ed6d"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_scalar_check.cpp",
+      "bytes": 5495,
+      "sha256": "58480a866b56e22c61add95d01f90774726b5f90e32186354ef1ab8f87b10b72"
+    }
+  ],
+  "python_rejections": [
+    "input: negative weight",
+    "input: zero weight",
+    "input: duplicate node",
+    "input: bad rational",
+    "input: empty point set",
+    "input: bad family label",
+    "row: restricted sources",
+    "row: omitted source",
+    "row: wrong count",
+    "row: wrong trace",
+    "row: missing Gram coverage",
+    "row: illegal parent",
+    "row: false upper minimum",
+    "row: nonpositive endpoint",
+    "row: nonpivot tie"
+  ],
+  "native_rejections": [
+    {
+      "backend": "producer",
+      "control": "extra token",
+      "returncode": 2,
+      "diagnostic": "extra input tokens"
+    },
+    {
+      "backend": "producer",
+      "control": "truncated input",
+      "returncode": 2,
+      "diagnostic": "invalid input row"
+    },
+    {
+      "backend": "producer",
+      "control": "unnormalized weights",
+      "returncode": 2,
+      "diagnostic": "normalized weights required"
+    },
+    {
+      "backend": "producer",
+      "control": "nonpositive weight",
+      "returncode": 2,
+      "diagnostic": "invalid input row"
+    },
+    {
+      "backend": "producer",
+      "control": "M_not_above_N",
+      "returncode": 2,
+      "diagnostic": "M>N failure"
+    },
+    {
+      "backend": "checker",
+      "control": "extra token",
+      "returncode": 2,
+      "diagnostic": "extra input tokens"
+    },
+    {
+      "backend": "checker",
+      "control": "truncated input",
+      "returncode": 2,
+      "diagnostic": "invalid input row"
+    },
+    {
+      "backend": "checker",
+      "control": "unnormalized weights",
+      "returncode": 2,
+      "diagnostic": "normalized weights required"
+    },
+    {
+      "backend": "checker",
+      "control": "nonpositive weight",
+      "returncode": 2,
+      "diagnostic": "invalid input row"
+    },
+    {
+      "backend": "checker",
+      "control": "M_not_above_N",
+      "returncode": 2,
+      "diagnostic": "M must exceed N"
+    }
+  ],
+  "native_self_test": {
+    "primitive_tests": "PASS exact scalar-GMP cross-check",
+    "malformed_native_controls_rejected": 8
+  }
+}

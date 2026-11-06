@@ -1,0 +1,121 @@
+{
+  "status": "PASS exact FLINT block-inverse finite check",
+  "independent_agent_review": "not established by this developer execution",
+  "family": "D36x9",
+  "rule": "bj",
+  "max_degree": 6,
+  "input": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+    "bytes": 5734,
+    "sha256": "48977eefea1c662c3ef23c8ed17d49e3cb0310a6d53321add8c51c91866313f6"
+  },
+  "basis_export": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/D36x9-bj-d6.json",
+    "bytes": 862708,
+    "sha256": "078bb0675e79d34d68af56089e8b27dab463a4e9595a7fb6f8a3e85f3b0c0d63"
+  },
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/flint_disk_block_check.py",
+    "bytes": 14611,
+    "sha256": "08399cf88fa086a2e948685738de2a98eea45721f5c05ce2f7cd59f03457bb3b"
+  },
+  "exporter_source": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+    "bytes": 9144,
+    "sha256": "aa4c74c57e150b748f1d225f3cfad5c2bbbe3d55e61d3c7702fbe8edd3414e44"
+  },
+  "exporter_binary": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+    "bytes": 69864,
+    "sha256": "14432bb379fba07129ab94a28f9d8269da11fa64979b8b1da37eac8091503f7e"
+  },
+  "output": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/flint-check/D36x9-bj-d6-block.jsonl",
+    "bytes": 18449,
+    "sha256": "41e5c0f4718468012b4cb5b27c16f2b883c3bd177e549aaee02cdc529681ae84"
+  },
+  "checks": {
+    "full_weighted_gram_entries": 784,
+    "candidate_creator_vectors_checked": 27,
+    "candidate_creator_scalar_entries_checked": 8748,
+    "all_exported_points_match_input": true,
+    "positive_pivots_scales": true,
+    "choices_ties": true,
+    "node_inverse_count": 324,
+    "node_inverse_product_checks": 324,
+    "every_source_prefix": true,
+    "normal_diagonal_trace": true,
+    "phase_inverse_seconds": 0.8315345419987352,
+    "phase_inverse_validation_seconds": 1.03046890700125,
+    "phase_energy_accumulation_seconds": 1.1629029459977573
+  },
+  "comparisons": [
+    {
+      "reference": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/producer-bj.jsonl",
+        "bytes": 62415,
+        "sha256": "4d9f141a0583d0d307344f8bda041c173c046a6d1de4f5c3416f848e1d7ffde8"
+      },
+      "status": "PASS all scientific fields",
+      "rows": 5,
+      "reference_max_degree": 8,
+      "comparison_prefix": [
+        2,
+        6
+      ],
+      "omitted_fields": [
+        "elapsed_seconds",
+        "exact_gram_pairs_checked"
+      ]
+    },
+    {
+      "reference": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/checker-bj.jsonl",
+        "bytes": 62410,
+        "sha256": "9164786de7ce91368ab092e9da72fd1818e7dc1c3ccbcfd4494fe0fc11f0b158"
+      },
+      "status": "PASS all scientific fields",
+      "rows": 5,
+      "reference_max_degree": 8,
+      "comparison_prefix": [
+        2,
+        6
+      ],
+      "omitted_fields": [
+        "elapsed_seconds",
+        "exact_gram_pairs_checked"
+      ]
+    }
+  ],
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/flint_disk_block_check.py",
+    "--input",
+    "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+    "--basis",
+    "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/D36x9-bj-d6.json",
+    "--output",
+    "/tmp/padua-lanczos-nonproduct-20261105/flint-check/D36x9-bj-d6-block.jsonl",
+    "--receipt",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/flint-check-D36x9-bj-d6-block.json",
+    "--export-source",
+    "topics/padua-lanczos-nonproduct-20261105/code/p6_basis_export.cpp",
+    "--export-binary",
+    "/tmp/padua-lanczos-nonproduct-20261105/p6/basis-export-p6/exporter",
+    "--reference",
+    "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/producer-bj.jsonl",
+    "--reference",
+    "/tmp/padua-lanczos-nonproduct-20261105/p6/benchmark8-D36x9/checker-bj.jsonl"
+  ],
+  "python_flint": "0.9.0",
+  "FLINT": "3.6.0",
+  "threads": 1,
+  "python": "3.12.14",
+  "source_head": "1753d3215a50ea3b908c592a3494d6df399bafa0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "basis_validation_seconds": 0.23578004099999816,
+  "elapsed_seconds": 3.4599892480000563,
+  "model": "all-source weighted Euclidean aggregate input; spectral normal output; no extra node weight in v",
+  "method": "Full rational Gram/creator verification, per-node recursive unit-triangular block inverse, A*G=I, every original source/node/prefix"
+}
