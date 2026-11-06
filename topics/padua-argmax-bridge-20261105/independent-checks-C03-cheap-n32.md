@@ -146,3 +146,32 @@ facts are transcribed above, and it invokes no acceptance function,
 compiler or native kernel. No additional full job was performed.
 Physical archive transfer remains pending. Sources, old reviews and old
 receipts were not edited by this execution task.
+
+
+## D01 dated record addendum — 2026-11-06 (audit-01 F5–F8)
+
+Execution attribution: the named executing agent was `c01_ratio_review`,
+requested as Codex, `gpt-6-astra`, high. The original host's actual served
+model/effort identity was not captured; it cannot be reconstructed from
+this record. This addendum is record repair by Codex (parent-assigned
+Sol medium role; runtime model/effort metadata unexposed), not a rerun.
+
+The 254 verified closure entries cover the recorded native/build
+identities, toolchain/dependencies, loaded native mappings, project Python
+sources and runtime identities as enumerated in the receipt/full report.
+They do not hash Python's standard library, including `fractions.py`.
+`source_runtime_checks_complete` is the wrapper's field for that recorded
+scope; it is not a complete software closure or a hermeticity claim.
+Audit-01 X6 independently reproduced the known case on another Python stack.
+
+Cost labels are: total group-plus-supervisor CPU 46.08976645 s;
+subprocess CPU 45.228637 s; old-v3 subprocess CPU 139.405409 s.
+The approximately 3.08x ratio compares the two subprocess CPU measures.
+It is one known-case run, with the original host identities unrecorded.
+
+The available C03 postcheck JSON is now copied and read back under
+`local-output/argmax-bridge-20261105/d01-record-preservation/`.
+The preservation identities and the single missing-script limitation are
+recorded once in [response-01, F5](response-01.md#f5--available-artifacts-preserved-missing-script-limit).
+No postcheck or acceptance computation was rerun. Physical delivery and
+durable external retrieval remain pending.

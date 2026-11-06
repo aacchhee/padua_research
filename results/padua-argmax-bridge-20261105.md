@@ -29,7 +29,9 @@ The new fixed-work checker PASSes all364 regions of the unchanged known
 n32 certificate in **46.09totalCPU seconds**(45.23subprocess), versus
 139.41subprocess previously: about3.08times faster. It recovers all76
 preserved first-attempt failures, with no new tree, mode switch, retry,
-producer or certified degree. All254 build/runtime identities were checked.
+producer or certified degree. All254 enumerated native/build, project-Python and recorded runtime
+identities were checked; this excludes standard-library hashing and
+is not a hermeticity claim.
 [Whole-run outcome](../topics/padua-argmax-bridge-20261105/independent-checks-C03-cheap-n32.md).
 
 Separately, guarded linear-work point and whole-box S-upper methods now

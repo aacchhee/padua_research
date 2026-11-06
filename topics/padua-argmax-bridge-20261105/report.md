@@ -69,12 +69,15 @@ algorithms on an immutable already accepted364-leaf candidate.
 | Refined C03 mode0 | PASS,0failed/pending |46.090 total;45.229 subprocess |
 
 The accepted C03 checker is about3.08times faster on comparable subprocess
-accounting. It recovers all76 C02 failures without a new tree, mode switch,
+accounting (45.228637 versus139.405409subprocessCPU; totalnewCPU46.08976645).
+It recovers all76 C02 failures without a new tree, mode switch,
 producer, retry or degree. It makes333 native box calls and verifies all254
-recorded build/runtime identities. [Full independent outcome](independent-checks-C03-cheap-n32.md).
+enumerated native/build, project-Python and recorded runtime identities. [Full independent outcome](independent-checks-C03-cheap-n32.md).
 Bounds are still weaker than the old checker on many leaves; all required
 strict predicates nevertheless pass. The first failure is retained.
-This is a known-case speed result, not a general scaling theorem.
+This is a known-case speed result, not a general scaling theorem. The254-entry
+identity list excludes Python standard-library hashing, including fractions.py;
+it is not a complete software closure or hermeticity claim.
 
 The C03 refinement removes degree-growing harmonic evaluation using
 validated fixed-work ratio charts and sharp endpoint monotonicity. All
@@ -109,11 +112,13 @@ two selected known far leaves. A complete cheap replacement remains OPEN.
 
 ## Limits, resources and next work
 
-All **15/15** fresh coordinated research rounds are complete; the
+The original **15/15** coordinated research rounds are complete; the
 [campaign ledger](campaign-20261106.md) records the outcomes, with older
-direction totals in [rounds](rounds.md). AC now requests Claude audit and
-independent suggestions, then a return to work. No further research round
-is started in this checkpoint. The next reviewer should assess both the
+direction totals in [rounds](rounds.md). Claude interim audit-01 supports the stated lower-domain proof within
+its recorded residual upstream scope, and returns nine MINOR record findings.
+Response-01 answers those without changing mathematical bodies. AC now
+authorizes a separate25-round post-audit campaign, recorded in
+[campaign-post-audit-20261106.md](campaign-post-audit-20261106.md); D01 is active. The next reviewer should assess both the
 half-million theorem and the actual remaining obstacles, rather than
 assume the experimental row upper bounds already constitute a cheap certifier.
 

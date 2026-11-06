@@ -187,3 +187,45 @@ numbers are retained where possible, so those numbers refer to the
 original reviewed sequence. No final ID or shared crosswalk is assigned
 by this worker. Rules read4b728b04216a5490910780bc609a82b853058426;
 parent-assigned auxiliary Sol xhigh role, serving metadata unexposed.
+
+
+## D01 dated record addendum — 2026-11-06 (audit-01 F1/F2)
+
+This addendum preserves every preceding byte and the frozen proof body.
+The historical pending focused-review wording above is superseded by
+[the accepted focused F1/F2 review](../independent-checks-C13-onset.md#focused-f1f2-repair-review--2026-11-06),
+which pins the pre-addendum bytes. That supplementary review is ACCEPTED;
+the formal Claude audit remains a separate obligation. The interim
+[audit-01](../audit-01.md) supports the stated scope with its explicit
+upstream residual limits. No theorem, proof status, constant, parameter,
+threshold or quantifier changes here.
+
+For the routine domain bookkeeping, include c=0 and finite sums and
+products of positive decreasing factors. More explicitly, for a polynomial
+P(L) with nonnegative coefficients of degree at most two, P(log n)/n^j
+is decreasing here (unless identically zero): L P'(L)<=2P(L) and
+jL>2. Factors (1+1/n)^q, q>=0, also decrease. Thus this covers
+(L+2)^2/n, (L+2)/(2n^2), m^2/n^3=(1+1/n)^2/n and the
+m H2/n^j terms actually used (j>=2), writing
+H2=1+log(2m); its logarithmic derivative is at most 1/H2, while
+m/n^j has logarithmic derivative at most 1-j. The pure inverse powers
+and (2/63)(1+1/n) decrease as well. L(delta+h/2)/(6m) is a sum of
+positive multiples of L/m and L/m^2, both decreasing at n>=n0.
+For the stated near G(x), differentiation gives
+G'(x)=x[7/4+log(1/x)/9]>0 on its small positive argument range;
+x=delta+h decreases, so G(delta+h) decreases. Fixed tails stay fixed.
+These are the already-used termwise monotonicity facts reconstructed in
+audit-01, rather than an extension of any upstream theorem domain.
+
+The lower logarithm citation in (6) is unchanged. The upper citation is
+[N1-16, scalar k check](N1-round7-coefficients.md): its positive
+exponential series through degree 10 proves log 10<2303/1000.
+Consequently log n0=6 log 10-log 2<6(2303/1000)<14, since log 2>0.
+The earlier attribution of this upper bound to lower log 10 and upper
+log 2 bounds is superseded by this citation. L<14 is used only at n0.
+
+The C05-model old n>900000 rounding is specifically
+[C05-finiteh-model-comparison (11)](C05-finiteh-model-comparison.md);
+its 15000/n<1/60 step is replaced above by the already recorded 3/100
+allowance. The N1-11 tail step uses m/n<=9/8, which holds here;
+the displayed m/n<=2 alone was a looser description of the other steps.

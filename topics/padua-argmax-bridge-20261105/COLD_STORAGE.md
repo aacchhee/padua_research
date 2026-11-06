@@ -38,3 +38,13 @@ The sandbox is the current custodian. Durable retention, physical delivery and
 cross-session retrieval remain pending. Before accepting a delivery, rehash the
 delivered files against the recorded inventory and record the actual path and
 independent retrieval/verification. Do not infer retention from a past receipt.
+
+## D01 record-preservation addendum —2026-11-06
+
+AuditF5's three available original artifacts are copied/readback-verified
+in `local-output/argmax-bridge-20261105/d01-record-preservation/`. Their
+path/bytes/SHA256 rows are now in `pending_local.files` of cold-storage.json;
+the group links response-01 F5. These remain ephemeral working copies,
+not delivered archives or externally retrievable evidence. The original
+C03postcheck-script limitation is canonical in response-01 F5. No
+mathematical execution or retrospective script reconstruction is claimed.

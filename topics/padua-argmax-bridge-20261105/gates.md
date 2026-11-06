@@ -17,7 +17,7 @@ gates or establish a practical meet-in-the-middle compute projection.
 |---|---|---|
 | B0 | PASS | Frozen fresh exact replays remain accepted |
 | B1 | FINITE MAP COMPLETE; CONTINUOUS EXTREMA NOT COMPUTED | Historical seven-degree measurements remain scoped; new analytic phase inequalities are separate proofs |
-| B2 | ORIGINAL FINITE FLOAT PASS; OUTWARD KNOWN-CASE VALIDATED | Complete immutable n32 checker now46.09totalCPU,3.08x lower subprocess cost; no higher-degree box-count scaling theorem |
+| B2 | ORIGINAL FINITE FLOAT PASS; OUTWARD KNOWN-CASE VALIDATED | Complete immutable n32 checker46.08976645totalCPU including45.228637subprocessCPU; old-v3139.405409subprocessCPU (~3.08x), one known case; no higher-degree box-count scaling theorem |
 | B3 | ANALYTIC GLOBAL OBJECTIVE CLOSED FROM500000 | Fixed near/full-phase models plus exact defect/corner comparisons prove actual global tail; original B1 half-margin comparison is not separately recomputed or relabeled |
 | B4 | RESOURCE PROJECTION OPEN | Explicit n1=500000 now exists, but whole-certifier throughput across41–499999 is unproved/unmeasured; no Syvert pack justified by point timings |
 | B5 | UNRESTRICTED EQUIVALENCE; CLASS-ONLY OBSTRUCTION | N4 specified classes remain stopped, broad route deferred; no unrestricted counterexample |
