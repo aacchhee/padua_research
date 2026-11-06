@@ -1,0 +1,130 @@
+# PD-T435 — noncircular interior-d normality criterion
+
+ID kind: PD-T. Aliases: scalar exact C4 normality certificate; opposite-corner
+converse. Split from: none. Supporting reduction for the separate finite
+Hahn verification; the application is not a split-off conjunct of this theorem.
+Split into: none.
+
+## Statement
+
+For N distinct real nodes and two strictly positive weight vectors, compute
+the two exact marginal Jacobi families. Run the exact C4 layer formulas only
+through coefficient degree N−2. If the computation is defined and every
+d_nu=b2_nu−b1_nu on degrees0,...,N−2 is nonzero, then every multi-index of
+total degree<=N is normal. Consequently the computed coefficients on this
+smaller triangle equal the defining moment coefficients. This gives a finite
+exact normality test, without assuming full normality in its premise.
+
+## Definitions and assumptions
+
+PD-T286 moment matrices, monic polynomials and h/t conventions; PD-T289
+layer formulas; N>=2; exact arithmetic. Marginal positivity is required.
+The algorithm stops before the terminal coefficient layer N−1.
+
+## Status by part
+
+Overall status: PROVED (written analytic implication).
+Finite execution of the Fraction checker is distinct evidence, recorded in
+attempts/D1.md. No all-N Hahn-family theorem is inferred from finite runs.
+Candidate disposition: retained standard determinant/normality converse.
+
+## Depends on
+
+PD-T286 defining systems and bordered h determinants; PD-T288's local
+four-corner argument, including its successor-difference identity under
+the three base/successor normalities (its nonvanishing conclusion used an
+extra normality, not used here); PD-T289's algebra and recursion, localized
+by this file's Localized NN lemma below.
+
+## Proof or evidence
+
+Every marginal moment matrix through degree N is a positive definite Gram
+matrix: a nonzero polynomial of degree<=N−1 cannot vanish at all N nodes.
+Therefore all axis indices are normal. They supply exact marginal data.
+
+Suppose eta, eta+e1 and eta+e2 are normal. The same one-dimensional
+orthogonality-kernel argument as PD-T288 gives
+
+    P_(eta+e1)−P_(eta+e2)=d_eta P_eta,
+
+without assuming normality of the opposite corner. Applying
+L2(x^(eta_2) .) yields
+
+    h_(eta+e1,2)=d_eta h_(eta,2),
+
+because P_(eta+e2) satisfies that additional second-measure constraint.
+The factor h_(eta,2) is nonzero by normality of eta+e2. Thus nonzero
+d_eta implies h_(eta+e1,2)!=0. Border the normal moment matrix at
+eta+e1 by the next second-measure row/column. The Schur complement is
+h_(eta+e1,2), up to the harmless row-order sign. Its nonzero value makes
+the opposite-corner matrix normal.
+
+**Localized NN lemma.** Suppose all indices of degree<=R are normal.
+Then the defining moment polynomials give the NN identities at |nu|<=R-1
+and the compatibility squares at |eta|<=R-2, without assuming any higher
+normality. To see the first assertion, cancel the two highest coefficients
+of xP_nu-P_(nu+e_j) using b=t_nu-t_(nu+e_j). The residual has degree
+<=s-1 for s=|nu| and annihilates the s-2 common lower moment rows when
+nu has two positive coordinates. These rows are independent by normality
+of nu-e1-e2; their kernel on polynomials of degree<=s-1 has dimension2.
+The two predecessor polynomials form a basis: if they coincided, their
+monic common value would satisfy all nu conditions in degree<s,
+contradicting normality at nu. Pairing with each next moment gives the
+h-ratio coefficients. On an axis the same kernel has dimension1 and the
+absent coefficient is zero; at degree0 there is no residual. Successor
+differences follow from the one-dimensional kernel at nu. Comparing the
+two NN expansions around a square based at eta uses polynomials only
+through degree |eta|+2, proving the localized compatibility formulas.
+
+Consequently the layer induction computes true coefficients through R-1:
+producing layer t<=R-1 uses squares based at degree t-1, polynomials
+through t+1<=R, and divisors whose opposite corners have degree<=t+1.
+All nonzero-denominator/independence uses are therefore within the stated
+normal domain. No common-support terminal equality is used in this lemma.
+
+Induct now on target degree k=2,...,N, assuming normality through k-1.
+Apply this lemma with R=k-1 to obtain true coefficients through k-2.
+In particular no normality at degree k has entered the reconstruction.
+
+For each mixed target nu=(n,m) of degree k, let eta=(n−1,m−1). Its degree
+is k−2, so the computed d_eta is the true successor difference under the
+induction assumption. The certificate checks it nonzero. The converse
+above establishes normality at nu. Axis targets are already normal. This
+completes the induction through N, proves the implication and proves that
+no circular assumption is hidden in using the smaller exact C4 triangle.
+
+## Checks and sources
+
+code/conditioning_exact_normality.py evaluates the generic scalar graph
+with fractions.Fraction, all input coordinates rational, only through N−2.
+It checks strict input positivity/distinctness, exact nonzero d values and
+Fraction types, and hashes the complete exact coefficient payload. The
+finite outcomes and independent rerun must be recorded separately before
+any computer-assisted finite theorem is claimed. No external source used.
+
+## Scope
+
+This is a sufficient exact certificate, applicable to any such rational
+input. A failed certificate (including zero d) is not promoted into a
+broader impossibility statement. The generic proof is independent of the
+Hahn family and independent of floating derivative precision convergence.
+
+## Open items
+
+The finite N=4,...,64 Hahn application and separate independent replay are
+complete in [conditioning-hahn-normality-finite.md](conditioning-hahn-normality-finite.md).
+A direct all-N Hahn-family normality
+proof is outside this certificate theorem.
+
+## History
+
+2026-11-05, D1 round2 after checkpoint f75964bd71336aee2a05f4ebb39eb31215be360a;
+Codex gpt-6.1-sol xhigh. The original round1 local/coarse proofs are unchanged.
+
+2026-11-06: audit-01 MINOR11 makes the localized lemma and degree bounds explicit; the certificate statement and finite input/table data are unchanged.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D1-04` → `PD-T435`.

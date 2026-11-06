@@ -1,0 +1,53 @@
+{
+  "source_commit": "414e781567078560b7e233aace3661abb88e37ab",
+  "audited_g5_commit": "3e3a8e99e2ea63fdf2348e34bd53516ef7cd02c3",
+  "archive_sha256": "cdd0e98d2b411f24cfcecb49d83e16f9d50a7622a0d4f0d3eb17eb334a405145",
+  "archive_bytes": 1020330,
+  "archive_regular_files": 27,
+  "archive_entries_including_directories": 33,
+  "execution": {
+    "command": [
+      "/workspace/scratch/g5-apt/root/usr/bin/octave-cli",
+      "--no-init-file",
+      "--no-site-file",
+      "--quiet",
+      "--eval",
+      "driver('/workspace/scratch/leuven-g5-source/IEP-MOP-main/src','/workspace/scratch/g5-audit-output')"
+    ],
+    "exit": 0,
+    "wall_seconds": 15.814378511000541
+  },
+  "runtime": {
+    "os": "Debian GNU/Linux13",
+    "octave": "9.4.0",
+    "blas": "/usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.1",
+    "lapack": "/usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.1",
+    "python": "3.12.14"
+  },
+  "comparison": [
+    {
+      "family": "kravchuk",
+      "bitwise_file_equal": false,
+      "max_log10_ratio": 3.2012806118821686,
+      "sha256": "22d7aecaed024190c18dd7ac2651b02eb0418279bd288936d1d1c9b35c028f3b",
+      "gate_error": 2.691214553706643e-10,
+      "paper_reference_from_receipt": 6.851191e-10,
+      "gate_log10_ratio": -0.40581775238088774,
+      "gate_pass": true
+    },
+    {
+      "family": "hahn",
+      "bitwise_file_equal": false,
+      "max_log10_ratio": 3.887999210516509,
+      "sha256": "0d442bcf246fb245847a3e8705908993afdf1acb45adbe51e076be8e5067eb1e"
+    }
+  ],
+  "reference_limit": "arXiv source bundle unavailable to auditor: enabled-network GET returns CONNECT403/curl22/http000/zero bytes. Paper numeric reference is reviewed from committed receipt; full paper-data comparison not independently rerun.",
+  "source_review": "All nine executed third-party files and the original experiment fully read; source/output pins match; no third-party file modified or committed.",
+  "stderr": "warning: matrix singular to machine precision, rcond = 8.74716e-17\nwarning: called from\n    IEP_CORE at line 151 column 17\n    driver at line 15 column 18\n\nwarning: matrix singular to machine precision, rcond = 8.74716e-17\nwarning: called from\n    IEP_CORE at line 152 column 11\n    driver at line 15 column 18\n\nerror: ignoring const execution_exception& while preparing to exit\n",
+  "files": {
+    "ours_kravchuk.dat": "22d7aecaed024190c18dd7ac2651b02eb0418279bd288936d1d1c9b35c028f3b",
+    "ours_hahn.dat": "0d442bcf246fb245847a3e8705908993afdf1acb45adbe51e076be8e5067eb1e",
+    "source-inventory.json": "e85d489da14dfe012768490a82966c37549fc1ae79dfefd805f54cdb7556f1b0"
+  }
+}
