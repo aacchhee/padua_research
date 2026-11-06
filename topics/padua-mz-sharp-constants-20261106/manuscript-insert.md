@@ -1,6 +1,6 @@
 # Proposed manuscript statements
 
-These are proposed sentences for a later writing step; the manuscript is untouched. Local theory is developed and supplementarily checked as recorded below; the substantive Claude audit is pending in the topic log. Exact constants are distinguished from measured decimal proxies.
+These are proposed sentences for a later writing step; the manuscript is untouched. Local theory is developed and supplementarily checked as recorded below; audit-02 accepted the P1–P4 mathematics at their stated scopes. The new B2 supporting derivation alone awaits a focused Claude recheck. Exact constants are distinguished from measured decimal proxies.
 
 ## CC lower endpoint
 
@@ -8,9 +8,9 @@ These are proposed sentences for a later writing step; the manuscript is untouch
 \[
 \limsup_{N\to\infty}(\log N)^2\lambda_{\min}(G_{N,N-1})\leq\frac{\pi^4}{8}.
 \]
-The bound holds on both parity subsequences. The existence and value of the scaled limit lim (log N)^2 lambda_min remain unresolved.”
+The bound holds on both parity subsequences. Together with the reverse bound, this yields the exact limit lim (log N)^2 lambda_min = pi^4/8, through all integers N. The same limit holds on degree at most N.”
 
-Dependencies: [one-sided theorem](theory/S1-sharp-one-sided.md), [model norm](theory/S1-volterra-model.md), PD-T013/017; [supplementary check](independent-checks-S1-S3.md). This theorem does not turn a continuum norm into an equality for the finite spectra. K2's finite-window rejection of the equality model does not refute this inequality.
+Dependencies: [reverse bound and full limit](theory/P3-reverse-bound.md), [one-sided theorem](theory/S1-sharp-one-sided.md), [model norm](theory/S1-volterra-model.md), PD-T013/017; [supplementary check](independent-checks-S1-S3.md). This theorem does not turn a continuum norm into an equality for the finite spectra. K2's finite-window rejection of the equality model does not refute this inequality.
 
 ## Uniform CC upper bound and norm defect
 

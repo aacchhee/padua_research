@@ -54,3 +54,16 @@ Final output counts and final remote identity comparison are recorded below afte
 After all four P2 main rows, actual independent m1600 and independent summary receipts complete, `evidence_manifest.py --write --checks` verifies90 identities (423930 inventoried bytes), a9988-byte manifest,30 Python ASTs,77 JSON files and356 local links across100 Markdown documents, with zero missing targets. All77 JSON files including audit support and manifest total327453 bytes; SVG15720 bytes; topic generated JSON+SVG total343173 bytes. Largest generated file16342 bytes, strictly below16KiB. This is the topic's generated-output scope, not a whole-repository storage measurement. No bulk artifact is needed for any new claim.
 
 All campaign processes have exited. P1/P4 code inspection and actual exact reruns pass; P2 independent m1600 scientific fields match bit-for-bit and final summary/independent high-precision criterion arithmetic pass. P3 remainder and complete assembly reconstruction pass. These are separate from the forthcoming Claude audit. The only final publication after the scientific outputs changes handoff03's status and adds handoff04; it adds one Markdown document and is link-checked separately.
+
+## Handoff05 response snapshot (2026-11-06)
+
+At rules/input f3c14d7599b4bf25118ca86bc62aeb5e0fcafe29, audit-02 support made the old inventory membership fail. The response intentionally generalizes audit-support exclusion using fnmatchcase on path components matching audit-*-support. Hash scope changes only as documented; the integration pass continues parsing/sizing audit JSON. No audit/support file is changed.
+
+Final response commands actually executed:
+
+    python topics/padua-mz-sharp-constants-20261106/code/evidence_manifest.py --write --checks
+    python topics/padua-mz-sharp-constants-20261106/code/evidence_manifest.py --checks
+
+Exit0:91 identities,10101-byte manifest,30 Python ASTs,103 JSON files and430 local file links across106 Markdown documents, with zero missing targets. Topic JSON including audit support and manifest totals417825 bytes; SVG15720 bytes; combined generated scope433545 bytes. Largest generated file16342 bytes, each below16384. Original90 identities were compared: only the manifest generator changes, with one new resume input receipt added; all original scientific evidence bytes are unchanged. Original P1/P2 numerical protocol text is an unchanged prefix followed by dated correction addenda.
+
+The new B2 proof has a distinct actual algebraic reconstruction PASS, documented in independent-checks-P4-denominator.md. No science code, numerical threshold, certificate input/output or measured receipt changed; no new numerical run was performed. Final handoff-only publication adds one Markdown document and is checked separately. Focused Claude recheck remains required.

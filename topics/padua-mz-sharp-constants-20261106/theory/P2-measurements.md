@@ -158,3 +158,49 @@ Measured b2/K stability was published at
 main cases completed with the unchanged producer; fixed summary then ran
 once. Independent summary replay and scope review are recorded in the
 linked reviewer report. Original K4 remains unchanged.
+
+
+## 2026-11-06 audit-02 B1 scope correction
+
+The Q_min endpoints at m=1400/1401,1800/1801,3000/3001 were already
+committed in [S4-padua-essential.json](../evidence/S4-padua-essential.json)
+at `5110954`, before protocol publication `d03e74d`. Thus the registered
+secant-to-b2 criterion was essentially **postdictive**, although its
+1600/1601 endpoints were newly computed. Only the mode-2 projector weight,
+L-distance and branch-difference-rate criteria were prospective. References
+above to “fresh” tests/slopes must be read with this qualification. This
+addendum preserves the historical protocol, thresholds, receipts and
+**PASS_FINITE_TEST** outcome; it changes no measured result or K4 outcome.
+
+Exact preexisting binary64 Q_min displays from that receipt:
+
+| m | Q_min |
+|---|---|
+| 1400 | -0.011154815368818943 |
+| 1401 | -0.05726871438384513 |
+| 1800 | -0.03424120440335956 |
+| 1801 | -0.08044573869483683 |
+| 3000 | -0.08132259681241012 |
+| 3001 | -0.12767392093832797 |
+
+The audit's [preexisting-data diagnostic](../audit-02-support/P24/P2-preexisting-predictivity.json)
+reports 1400→3000 and 1800→3000 secants -0.09206678123678186 and
+-0.09216724889787156; odd partners give -0.09242447927758063 and
+-0.09249482664931691. Their distances from b2 are already about
+0.0030–0.0035, below the registered 0.006 band. This diagnostic is existing
+MEASURED audit evidence, not a new execution or prospective confirmation.
+
+## 2026-11-06 audit-02 C4 summary prerequisite procedure
+
+`P2_summary.py` reads the calibration and four main receipts; it checks
+calibration validity and the main numerical/pairing guards. It does not
+read or enforce the small-validation or m400-overlap receipts. Those are
+procedural prerequisites: protocol Step 1 requires successful validation
+and overlap before the coordinator releases the main cases. The existing
+[validation](../evidence/P2-validation.json) and
+[overlap](../evidence/P2-overlap400.json) receipts record those checks;
+[LOG](../LOG.md) records the release sequence. A standalone summary PASS
+therefore does not itself establish that the procedural prerequisites
+were satisfied; read it together with those receipts and the release
+record. This documentation-only disposition preserves code and receipts;
+no numerical rerun is needed or claimed.

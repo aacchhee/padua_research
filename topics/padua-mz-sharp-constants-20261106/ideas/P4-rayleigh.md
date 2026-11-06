@@ -6,7 +6,8 @@ Aliases: dyadic interval Gram; certified endpoint lower decimal.
   fixed-J model and J=512. No numerical upper bound is proposed.
 - Mechanism and hypotheses: accepted S2 finite-trial Rayleigh inequality;
   exact binary-rational trial; integer interval scalar evaluation.
-- Closest registry entries: IDEA-058, accepted S2 continuation of IDEA-386;
+- Closest registry entries: IDEA-466 (dyadic outward-enclosure certifier;
+  fixed-point trial-energy witness), IDEA-058, accepted S2 continuation of IDEA-386;
   reading/provenance limits in ../novelty-gate-P4.md.
 - Separation criterion: finite check with rigorous outward rounding rather
   than a high-precision floating Rayleigh value. Missing enclosures erase
@@ -41,3 +42,15 @@ Aliases: dyadic interval Gram; certified endpoint lower decimal.
 - Canonical theory: accepted S2-04/05 dependencies; new decimal claim
   requires a separately reviewed finite reduction and independent rerun.
 - Topic/history: 2026-11-06 after R publication, before evaluation.
+
+## 2026-11-06 audit-02 C3 predecessor clarification
+
+Full IDEA-466 [candidate](../../padua-mz-cleanup-20261105/novelty-gate-math.md#idea-466--dyadic-outward-finite-witness-certifier)
+was read for this correction. It already supplies the exact dyadic
+finite-witness/outward-energy pattern with positive norm and independent
+checking. P4 applies this pattern to the accepted S2 endpoint-model
+quotient and its continuum denominator, rather than the finite Padua
+polynomial's complete signed nodal energy. Only that object/reduction
+separates the implementations; missing endpoint reduction or rigorous
+scalar bounds invalidates this instance. The consolidated technical
+continuation verdict remains unchanged; no new mechanism is claimed.

@@ -1,6 +1,6 @@
 # Sharp MZ constants through explicit endpoint and corner operators
 
-Source/rules read at2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861; base main76ba4214b100c86a44941f5e9a662ce9ce48efb8. Scope and chronology are in [LOG](LOG.md); exact prospective tests in [gates](gates.md). The original S1–S4 batch was accepted mathematically by audit-01. Handoff03 closing development P1–P4 is in progress; new material requires a focused Claude audit. The dated D section below supersedes historical open-item descriptions.
+Source/rules read at2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861; base main76ba4214b100c86a44941f5e9a662ce9ce48efb8. Scope and chronology are in [LOG](LOG.md); exact prospective tests in [gates](gates.md). The original S1–S4 batch was accepted mathematically by audit-01. Closing development P1–P4 is complete and accepted mathematically by audit-02. Handoff05 is a bounded records response; the new durable denominator derivation receives a focused recheck. The dated D section below supersedes historical open-item descriptions.
 
 ## Findings by target
 
@@ -72,7 +72,7 @@ The [bounded literature screen](literature-screen.md) fully reads one applicable
 
 [Proposed manuscript statements](manuscript-insert.md) contain exact conclusions and their dependencies. [Handoff02](handoffs/02-audit.md) requests one substantive Claude Opus5.5 xhigh audit of the completed candidate, including full registry novelty reading, the rejected numerical proxy and appropriate independent reruns. No merge is requested.
 
-Final mechanical scope:23Python files,40JSON files, one small SVG; no excluded partial receipts or missing local links. [Integrity record](integrity-checks.md) and [evidence manifest](evidence-manifest.json).
+The original pre-audit snapshot had23 Python files and40 JSON files. Current scope and final response checks are recorded in the linked integrity record; all audit-*-support directories are excluded from the developer hash inventory. [Integrity record](integrity-checks.md) and [evidence manifest](evidence-manifest.json).
 
 
 ## 2026-11-06 audit-01 K2 interpretation addendum
@@ -122,6 +122,16 @@ also on Pi_N and on each parity. This meets the equality candidate's reverse-bou
 
 **P4, local computer-assisted PROVED:** [endpoint certificate](theory/P4-certified-lower.md) gives Lambda_edge>=1.0044369. Committed exact trial, outward integer arithmetic, proved scalar remainders, grouped checker and [actual distinct rerun](independent-checks-P4.md) support this one-sided statement. The narrow trial-quotient interval is not an upper enclosure of Lambda_edge.
 
-**P2, MEASURED:** [registered calibration and finite tests](theory/P2-measurements.md) use b2=-0.0955298083997758. Calibration/order stability, dense12/13 validation and audit400 overlap pass. The four main cases were released only after measured-b2 publication64f3b76. The fixed summary is PASS_FINITE_TEST: mode2 weights0.95895–0.96803 and L-distances0.00289–0.00362 pass all guards; branch-difference decrease rates0.03844594/0.03759102 (even/odd) lie within0.038±0.006; Qmin log-m secants-0.09212119/-0.09246210 lie within0.006 of b2. The [independent m1600 replay and summary check](independent-checks-P2.md) pass. This supports the finite-mode explanation on these four cases, without proving a two-term law, crossing degree or asymptotic decimal value. Original K4 remains unchanged.
+**P2, MEASURED:** [registered calibration and finite tests](theory/P2-measurements.md) use b2=-0.0955298083997758. Calibration/order stability, dense12/13 validation and audit400 overlap pass. The four P2 executions were released only after measured-b2 publication64f3b76; the scope addendum below separates prospective criteria from the postdictive secant criterion. The fixed summary is PASS_FINITE_TEST: mode2 weights0.95895–0.96803 and L-distances0.00289–0.00362 pass all guards; branch-difference decrease rates0.03844594/0.03759102 (even/odd) lie within0.038±0.006; Qmin log-m secants-0.09212119/-0.09246210 lie within0.006 of b2. The [independent m1600 replay and summary check](independent-checks-P2.md) pass. This supports the finite-mode explanation on these four cases, without proving a two-term law, crossing degree or asymptotic decimal value. Original K4 remains unchanged.
 
-Shared statuses and final IDs remain untouched. These are development results with supplementary checks; the next Claude audit covers the material changes. AC's original-target mapping decision remains reserved.
+Shared statuses and final IDs remain untouched. Audit-02 accepts these results at their stated scopes; the next focused Claude recheck covers only the newly durable denominator derivation, with the other response edits confirmed by diff. AC's original-target mapping decision remains reserved.
+
+## 2026-11-06 audit-02 B1/C2 scope correction
+
+The Q_min values at m=1400/1401,1800/1801 and3000/3001 were already committed in evidence/S4-padua-essential.json at5110954b07fd834982167780daa8cd22bef13ce1, before the P2 protocol. The registered secant-to-b2 criterion was therefore essentially postdictive. [Audit diagnostic](audit-02-support/P24/P2-preexisting-predictivity.json) quantifies this using the pre-existing rows. Only the mode-2 weight, L-distance and branch-difference-rate criteria were prospective. Earlier references to a fresh/prospective four-case test mean the P2 computations and those three criteria; they do not establish independent prospective slope evidence. No threshold, receipt or PASS_FINITE_TEST outcome changes.
+
+Applying the accepted P3 full-limit result to registry PD-T020 waits only for PR preparation and readiness verification. This is separate from A3, which reserves AC's interpretation decision for PD-T027/PD-T381. The full pi^4/8 theorem is accepted locally by audit-02; its unchanged global registry row is no assertion that the local theorem remains mathematically open.
+
+## 2026-11-06 audit-02 B2 supporting denominator record
+
+The [durable PROVED denominator derivation](theory/P4-denominator-closed-form.md) gives all exact entries of the accepted S2/P4 Gram matrix, including the diagonal partial fractions, I(a)=-Cin(2a)/(2a^2), the Si(2a)/(2a) integral and every removable-pole/cutoff boundary. [Distinct supplementary reconstruction](independent-checks-P4-denominator.md) passes. S2 and P4 now cite this dependency. The formula, certificate and accepted P4 lower-bound status are unchanged; only this supporting derivation receives the focused Claude recheck requested by handoff05. [Response-02](response-02.md) answers B1/B2/C1–C4.

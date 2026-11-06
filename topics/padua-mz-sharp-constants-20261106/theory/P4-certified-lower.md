@@ -21,7 +21,9 @@ three-digit two-sided approximation of Lambda_edge is asserted.
 ## Definitions, assumptions and dependencies
 
 Exact unnormalized Lebesgue CC on degree at most N-1, as in S2-03/04/05.
-Use the accepted finite matrices C_J,D_J with J=512. C_J is positive
+Use the accepted finite matrices C_J,D_J with J=512. The exact C entries
+are proved in [P4-denominator-closed-form.md](P4-denominator-closed-form.md).
+C_J is positive
 definite by [S2-fixed-trial-limit.md](S2-fixed-trial-limit.md), and the
 variational definition gives Lambda_edge >= u^T D_J u/(u^T C_J u) for
 every nonzero finite vector u. The exact vector here is the sequence of
@@ -33,6 +35,8 @@ its accuracy, residual and eigenvalue ordering have no proof role.
 ## Finite reduction and proof
 
 For s_j=(-1)^j, a_j=pi*j and d_j=Cin(2*pi*j), use the accepted formulas
+below; the denominator entries are derived for all positive integer
+indices in [P4-denominator-closed-form.md](P4-denominator-closed-form.md).
 
     D=diag(2[s_j+a_j*Si(a_j)])+4ss^T,
     C_jj=2[a_j*Si(2*a_j)+d_j],
@@ -117,6 +121,10 @@ two-sided digits stay OPEN. The original PD-T027 registry interpretation
 is for AC and is unchanged here. No final ID or shared registry was edited.
 
 ## History
+
+2026-11-06, audit-02 response B2, Codex gpt-6.1-sol high: linked the
+durable PROVED denominator identity at its two uses. The lower-bound
+statement, finite reduction, scalar proof, receipts and status are unchanged.
 
 2026-11-06, P4 technical round 1; rules read at
 0205690b9c4e959a28e949083e9a1808735abf4b; R clearance

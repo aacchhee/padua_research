@@ -111,8 +111,8 @@ authorize any third run.
 |---|---|
 | code/P1_rectangle.py | c65b45fc2d4748e21ae7540bb47824dbc033f0d22917e49ac68084b7c1652963 |
 | code/interval_dyadic.py | 8a90618d19ffd8f8efde50bc9002b0b0e26f62d243b4086c674cedcf657945fc |
-| ideas/P1-numeric-protocol.md | 568fc2b9f2de6b328d4d2d69980302aba984cac425b43e8c09fd6c31c49d647f |
-| theory/P1-rectangle-certificate.md | 4cee5449c0b1634e4d868a41c474b0c938a5394bc87e8f45e197219508a911a9 |
+| ideas/P1-numeric-protocol.md — historical (c1e6e59 blob) | 568fc2b9f2de6b328d4d2d69980302aba984cac425b43e8c09fd6c31c49d647f |
+| theory/P1-rectangle-certificate.md — historical (c1e6e59 blob) | 4cee5449c0b1634e4d868a41c474b0c938a5394bc87e8f45e197219508a911a9 |
 
 Receipts [P1-rectangle-N8.json](../evidence/P1-rectangle-N8.json) and
 [P1-rectangle-N16.json](../evidence/P1-rectangle-N16.json) record exact
@@ -151,3 +151,14 @@ remains OPEN and the analytic P1 kernel identification is unaffected.
 publication. Rules read 0205690b9c4e959a28e949083e9a1808735abf4b.
 Requested Codex gpt-6.1-sol medium, serving-model metadata unexposed.
 No Git, accepted S3 theory or shared-registry edits.
+
+## 2026-11-06 audit-02 C4 historical prose-hash labels
+
+`P1_rectangle.py` records the protocol and reduction prose hashes as
+historical provenance of the `c1e6e59` blobs listed above. They are not
+current-prose acceptance conditions: later append-only scope/history edits
+legitimately change the prose hashes. A current rerun's prose-hash mismatch
+with an original receipt therefore does not alter its numerical enclosure.
+Code and result-bearing input identities still require verification.
+Committed receipts and checker code are unchanged; future checkers should
+omit prose pinning or label such fields explicitly as historical.

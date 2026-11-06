@@ -45,8 +45,9 @@ an asymptotic statement; (2) is asserted only when L>=16.
 
 ## Status by part
 
-Overall status: PROVED in analytic development; independent check of
-the complete assembly is required before coordinator acceptance.
+Overall status: PROVED. The complete assembly received supplementary
+checks and was accepted in [audit-02](../audit-02.md); registry application
+to PD-T020 remains deferred to PR preparation.
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
@@ -85,7 +86,8 @@ the sharper bound is 2/(N^2-1)<=3/N^2 for N>=2. In particular,
 
 For arbitrary nodal input u let I_N u be its degree-N interpolant,
 a_k=(-1)^k u_k, and Q(u)=sum w_k|u_k|^2. Exact cardinal interpolation
-on the left physical half, theta=pi t/N with 0<=t<=N/2, gives
+on the left physical half, theta in [0,pi/2], equivalently x in [0,1],
+with theta=pi t/N and 0<=t<=N/2, gives
 
     (I_N u)(cos theta)=H_u(t)+r_u(theta),
     H_u(t)=(2t sin(pi t)/pi)
@@ -98,7 +100,7 @@ To derive it, use
     e(z)=cot(z/2)-2/z.
 
 The function e extends continuously at zero and satisfies |e(z)|<2
-on [-pi,3pi/2]. Indeed it is odd and nonincreasing for z>0, since
+on [-pi,3pi/2]. Indeed it is odd and nonincreasing for 0<z<2pi, since
 e'(z)=2/z^2-(1/2)csc^2(z/2)<=0; its largest magnitude on the
 positive interval is 1+4/(3pi)<2. All arguments theta-phi and
 theta+phi in the left half lie in this interval. The remainder in
@@ -107,7 +109,7 @@ theta+phi in the left half lie in this interval. The remainder in
     |r_u(theta)| <=(2/N) sum_k |u_k|/c_k
                   <=2sqrt(2(L+1)) sqrt(Q(u)).        (6)
 
-The left half has dx mass 1. Apply the reflected calculation on the
+The left physical half theta in [0,pi/2], x in [0,1], has dx mass 1. Apply the reflected calculation on the
 right half as well; reflection sends u_k to u_(N-k), preserves the
 CC energy and only changes harmless alternating signs. The combined
 cotangent remainder has norm <=4sqrt(L+1) sqrt(Q(u)). All nodal
@@ -237,7 +239,9 @@ supported there, exact angular DCT-I orthogonality gives
 
 Indeed the trapezoidal angular norm is the continuous cosine norm
 plus (pi/2)|b_N|^2, where b_N is the interpolant's top Chebyshev
-coefficient. Endpoints vanish for the bulk input. Since
+coefficient. Endpoints vanish for the bulk input. Passing to the physical norm uses
+dx=sin(theta)dtheta<=dtheta in the integral after x=cos(theta)
+and reversal of endpoints. Since
 sin(theta_k)>=2min(k,N-k)/N>2/L, (3) implies
 
     ||I_N u_bulk||^2 <= (pi/N)sum |u_k|^2

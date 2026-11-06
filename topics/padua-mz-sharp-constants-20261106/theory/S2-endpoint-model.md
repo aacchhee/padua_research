@@ -61,6 +61,7 @@ finite-to-limit error is proved in S2-finite-certificate.md.
 
 ## Status by part
 
+Status label: **registered definition/prediction; proved via S2-05/S2-06**.
 This file preserves the registered definition/prediction (P); it makes no
 separate current PROVED claim duplicating its follow-on theorems.
 The convergence theorem is PD-T?mz-sharp-codex-S2-05 in
@@ -125,7 +126,7 @@ scales. This was the open upper-limit obligation at registration. It is
 resolved subsequently by the domain-density, compact remainder and positive
 form argument in S2-qualitative-limit.md; a classical symbol is not needed.
 
-## Closed-form model matrix to check after registration
+## Closed-form model matrix registered for checking after publication
 
 For i,j>=1 let C_ij=integral_0^infinity t f_i(t)f_j(t)dt and
 D_ij=delta_ij*omega_i+4(−1)^(i+j). Write
@@ -133,12 +134,14 @@ D_ij=delta_ij*omega_i+4(−1)^(i+j). Write
     d_j=gamma+log(2*a_j)−Ci(2*a_j),
     Ci(x)=−integral_x^infinity cos(v)/v dv.
 
-The derived evaluation formulas to be checked numerically after publication are
+The registered evaluation formulas, subsequently checked and proved in
+[P4-denominator-closed-form.md](P4-denominator-closed-form.md), are
 
     C_ij=2(−1)^(i+j)(a_i²*d_j−a_j²*d_i)/(a_i²−a_j²),  i!=j,
     C_jj=2[a_j*Si(2*a_j)+d_j].
 
-They follow by partial fractions and translated sin² integrals; the exact
+Their complete supporting derivation uses partial fractions and translated
+sin² integrals, including the diagonal and removable-pole limits; the exact
 integral definition in(P) is canonical. A generalized eigenvalue of(D_J,C_J)
 is a finite model lower bound/measurement, not a proof of the infinite norm
 or of convergence of the actual CC spectrum.
@@ -154,6 +157,11 @@ remain OPEN as future refinements. S2 stopped after five productive rounds
 at coordinator instruction, without any certificate numerical solve.
 
 ## History
+
+2026-11-06, audit-02 response B2/C2, Codex gpt-6.1-sol high: restored
+an explicit registered-definition/prediction status label and linked the
+durable PROVED denominator derivation. The registered formula, follow-on
+theorem statuses and exact integral definition are unchanged.
 
 2026-11-06, S2 Codex mathematical developer; requested gpt-6.1-sol xhigh,
 runtime metadata unexposed. Exact operator prediction sent to coordinator

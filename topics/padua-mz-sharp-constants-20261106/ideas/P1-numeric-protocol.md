@@ -103,3 +103,19 @@ PASS with bit-identical endpoints; see independent-checks-P1-numeric.md
 and the linked committed independent receipt. Required Claude audit is
 separate; the local computer-assisted result claims only this coarse
 interval, not practical digits.
+
+## 2026-11-06 audit-02 C3 predecessor clarification
+
+Closest entries also include IDEA-466, “dyadic outward-enclosure certifier;
+fixed-point trial-energy witness”; its full
+[candidate](../../padua-mz-cleanup-20261105/novelty-gate-math.md#idea-466--dyadic-outward-finite-witness-certifier)
+was read for this correction. It certifies one exact dyadic Padua
+polynomial's full signed nodal energy with exact positive norm. P1 shares
+its outward finite-certificate pattern, but bounds full source rectangles
+of the already proved positive integral kernel, using a Schur upper
+bound and constant-vector Rayleigh lower bound. Those rectangle-integral
+and coverage obligations distinguish the instance; dyadic rounding is
+inherited technique, and missing boundary coverage or elementary
+enclosures erases the distinction. The technical-instance/consolidated
+continuation verdict is unchanged. The frozen numerical protocol above,
+thresholds and receipts are preserved; no new execution is claimed.

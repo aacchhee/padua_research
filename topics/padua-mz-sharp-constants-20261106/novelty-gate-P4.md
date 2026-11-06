@@ -11,7 +11,10 @@ The shared current-source full-registry headings, aliases, summaries and
 obstruction/disposition-table scans are delegated coverage by the P1/P3
 mathematical workers, accepted by the coordinator on 2026-11-06. This worker
 does not claim personal reading of every unrelated table. Before execution,
-their exact gate-file provenance must be linked here by the coordinator.
+the shared scan provenance is [P1 reading/search/shortlist](novelty-gate-P1.md)
+and [P3 preparation/search/predecessors](novelty-gate-P3.md). These files
+record the delegated full-registry reads and bounded searches; they are
+provenance of those workers’ coverage, not a personal full read by P4.
 
 Personally read: IDEA-058 in full; complete MZ obstruction/current
 disposition tables; complete PR23 disposition table; S2 novelty gate and
@@ -23,7 +26,9 @@ from the sparse checkout; the existing S2 gate records its verified blob
 absent file is claimed here. P4 reuses its accepted descendant, without
 extending the mechanism or reopening the registry disposition.
 
-Closest entries: IDEA-058 certification/finite reduction; IDEA-386's
+Closest entries: IDEA-466 (dyadic outward-enclosure certifier; fixed-point
+trial-energy witness), full [source candidate](../padua-mz-cleanup-20261105/novelty-gate-math.md#idea-466--dyadic-outward-finite-witness-certifier)
+read for this 2026-11-06 correction; IDEA-058 certification/finite reduction; IDEA-386's
 accepted endpoint-model continuation; current S2-03/04/05 and the measured
 J512 trial of audit-01. The exact finite obligation now exists, meeting
 IDEA-058's resume condition. PD-N104's sign-erased mass obstruction is
@@ -42,3 +47,17 @@ No new numerical evaluation preceded this record. Existing library import
 introspection found numpy 2.3.5, scipy 1.17.0, mpmath 1.3.0; flint/gmpy2
 absent. Source inspection found mpmath.iv si/ci inherit generic complex
 fallbacks, so merely exposing those names is not treated as certification.
+
+## 2026-11-06 audit-02 C3 predecessor/separation clarification
+
+IDEA-466 already rounds a finite Padua polynomial to exact dyadic
+Legendre coefficients and certifies its complete signed nodal energy,
+with exact positive norm, outward arithmetic and independent checking.
+P4 reuses that finite-witness certification pattern for the accepted S2
+endpoint-model Rayleigh quotient, whose denominator is a continuum
+integral evaluated by closed-form scalar enclosures. The distinction is
+the certified object and reduction, not dyadic arithmetic or a new
+certification mechanism. If the endpoint-model reduction were absent,
+the asserted separation would fail; successful scalar rounding alone
+would supply no endpoint bound. The consolidated technical continuation
+verdict is unchanged; no numerical evaluation accompanied this correction.
