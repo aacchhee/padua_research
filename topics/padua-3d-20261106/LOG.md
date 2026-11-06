@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: Claude Opus5.5 xhigh · Successor at publication: [handoffs/07-audit.md](handoffs/07-audit.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/08-response.md](handoffs/08-response.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md); no final IDs allocated.
 
@@ -478,3 +478,4 @@ their corresponding runs, with publication and execution timing distinguished.
   Pinned prose is corrected by companion note only.
 - LOG correction (not an edit of history): the model-attribution withdrawal cited at the
   2026-11-06 Part A entry ("deviations-02") is in [response-deviations-01.md](response-deviations-01.md), m11.
+- [Handoff 07](handoffs/07-audit.md) done in `a74c1b1` (report `c681ba0`, auditor fixes `a74c1b1`); [handoff 08](handoffs/08-response.md) opened for the Codex response and the reopened T10.1 and T9-complement routes. Counters continue (T7=3, T8=2, T9=2, T10=2 of 25).
