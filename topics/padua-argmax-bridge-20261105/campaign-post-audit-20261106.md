@@ -113,6 +113,7 @@ NEW15coordinatedanalyticroundsauthorized2026-11-06 afterD39. E01ACTIVEpaper-only
 |---|---|---|
 | E01 | COMPLETE | Accepted actual corners from512, rebuilt phase-aware/wide defect floors, exact near-charge refinement; three scoped old512 allocation barriers. Globalonset1024unchanged; PAPER-ONLY. |
 | E02 | ACTIVE | Matched fixed768 paper assembly, global retained-six-row refinement, paired regular-outer operator; no numericaljob/source release. |
-| E03–E15 | UNALLOCATED | Remaining13 slots afteractiveE02; rootmayredirect fromprovedbottlenecks. |
+| E03 | ACTIVE | Joint phase-profile+scalar-log operator and ordinary/retained TRUE-origin cancellation, paper-only; no vanishing remainder assumed. |
+| E04–E15 | UNALLOCATED | Remaining12 slots; redirect from proved bottlenecks. |
 
 Newallowance1/15complete,14remainingincludingactiveE02. PackPAUSED.

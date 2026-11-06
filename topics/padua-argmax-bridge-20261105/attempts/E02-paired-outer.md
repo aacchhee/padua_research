@@ -71,3 +71,19 @@ common logarithm, then control its paired residual across root/cusp crossings.
 Independent proof/source/SPEC review, publication and root release are needed
 before any later scalar use. Root alone registers IDs/status, commits and
 changes shared records. See the theorem for full proof and exact scope.
+
+## Dated notation clarification — 2026-11-06
+
+The phrase "true-origin +uE(0)" at original line60 intended the
+nonnegative allowance +uE0, not a plus sign on the signed residual E(0).
+With E(phi)=S_n(phi)-M_infty(phi,L), u=1-a>=0 and
+delta_a E=E(phi)-aE(0), the inherited conversion is exactly
+
+    E(phi)-E(0)=delta_a E-uE(0)<=delta_a E+uE0,
+    |E(0)|<=E0, E0>=0.
+
+This is solely a closing-prose notation clarification, matching the dated
+theory appendix; no theorem, operator, constant or domain is changed.
+The complete frozen 3922-byte prefix, published at
+a58be81c9f91cf175598968c8ab9b7032946b887, is preserved byte for byte;
+its SHA256 is f5e38e1a628e763fe8652aac11a4ed0433f4f7f19ace42999a2f518ece2c1366.

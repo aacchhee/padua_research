@@ -272,3 +272,36 @@ History: 2026-11-06, Codex mathematical developer, parent-requested
 gpt-6.1-sol xhigh; actual serving metadata unavailable. Rules read at
 017f8ecc45534b4a6dd38b0488020463cb914edb. This is one component of E02;
 root alone controls Git/shared records and any later release.
+
+## Dated notation clarification — 2026-11-06
+
+This appendix clarifies only the closing prose at original line262, which
+reads "full origin conversion +u E(0)". There E(0) was intended to mean
+the nonnegative absolute origin allowance E0, not the signed residual.
+To distinguish them explicitly, put E(phi)=S_n(phi)-M_infty(phi,L),
+u=1-a>=0 and delta_a E=E(phi)-aE(0). The inherited exact conversion is
+
+    E(phi)-E(0)=delta_a E-uE(0)
+               <=delta_a E+uE0,  where |E(0)|<=E0 and E0>=0.
+
+Thus the closing prose refers to the upper-bound charge +uE0; the exact
+identity contains -uE(0). Neither expression is an additional term in the
+paired-outer operator theorem. No statement, operator, constant or domain
+above is changed. The complete frozen 12077-byte prefix, published at
+a58be81c9f91cf175598968c8ab9b7032946b887, is preserved byte for byte;
+its SHA256 is dfe4c1c84d9fc8887d11c2e84117f4e924061965282f59a8121cec02bc3b959f.
+
+
+## Root adoption after distinct focused audit —2026-11-06
+
+The exact near/wide paired regular-outer theorem and stated simplified
+forms are PROVED and adopted for EVERY n>=32 on their respective closed
+rho<=1/2 andrho<=1 domains. Distinct Astra xhigh
+[review](../independent-checks-E02-paired-outer.md), SHA256
+3556b5ff4ce1d7d253256bd0d104f6f13e558191397cb8dad7531df1b6e48773,
+accepts the original12,077-byte theorem prefix dfe4c1c8... and the dated
+notation clarification. P1 MINOR is closed; main math/constants/domains
+unchanged. Exact finite pairing, boundary and derivative-variation charges
+remain. Full D13 and phase-dependent joint profile cancellation remain OPEN.
+No numerical/source/native/pack job occurred; no lower global onset follows.
+The true-origin conversion is exactly minus uE(0), upper bounded by plus uE0.

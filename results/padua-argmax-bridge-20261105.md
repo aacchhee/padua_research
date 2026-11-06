@@ -173,3 +173,9 @@ and [relative refinement](../topics/padua-argmax-bridge-20261105/theory/E01-join
 are independently accepted: wider actual noncorner defect domain, stronger
 lower-domain floor and exact retained-charge improvement. These support
 further analytic narrowing; no new global onset or finite coverage follows.
+
+Further accepted analytic components: [E02 global retained rows](../topics/padua-argmax-bridge-20261105/theory/E02-global-retained-rows.md)
+reduces the full-diamond six-row error for every n>=32, while
+[E02 paired regular outer](../topics/padua-argmax-bridge-20261105/theory/E02-paired-outer.md)
+reduces a shifted-mesh charge to O(beta H/n²) with complete boundary costs.
+These are universal error estimates, not a computed lower global onset.
