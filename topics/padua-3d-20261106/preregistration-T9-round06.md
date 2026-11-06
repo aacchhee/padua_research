@@ -20,4 +20,14 @@ Read explicit R-Leja definition and uniform prefix theorem, constants/index conv
 
 ## Stop
 
+### P follow-up, fixed before its test
+
+After the degree3 cyclic LP returned no escape (187 tested), the explicit invariant-product route is refined by the standard cosine Gram identity: for an unshifted relation supported on all3 coordinates, u_j=T_|k_j|(x_j) obey 1-sum(u_j^2)+2u1u2u3=0. Its integral is -1/2 and its degree is max(||k||1,2max|k_j|), so balanced short relations are already impossible for any exact weights. The remaining named finite test uses degree5 and cyclic q20..80 step4 with g=(1,b,b+3), 1<=b<=q/2-3, up to512 eligible groups. Reject groups already having a <=5 support1/2 relation or a balanced3-support relation. Maximize the strictly positive common mass floor by HiGHS, accept only floor>1e-7 as discovery and certify separately if found. A negative screen rejects only this finite family, not all unbalanced relations. Cost ceiling60 CPU seconds; if exhausted record unrun cases. This follow-up changes no previously frozen quality fits.
+
+## Stop rule (continued)
+
+### P finite-complement follow-through, before new finite-family run
+
+The owner census covers16, not the full109-degree complement. Continue with exact parity-anisotropic **family** data for every n1..109, without a global-minimum claim. The already proved T10 Gram identity I+ee^T gives full Pi_n rank. Count folded nodes by A(n)A(n+1)^2+B(n)B(n+1)^2, A(m)=floor(m/2)+1, B(m)=ceil(m/2), from the two disjoint rectangular cosine grids. Check counts against T10 n1..16. Enumerate exact folded groups and sparse rational boundary ranks at n17/24/32, with15 CPU seconds per probe; if capped retain partial timing and use the explicit count/Gram proof. Report dense evaluation-matrix memory estimates at109 rather than allocate it. Compare exact family counts with minimal N and the imported-density lower bound. This is the named bounded fallback to an infeasible unrestricted all-lattice census, whose absence must remain explicit. Quality fits and other thresholds stay frozen.
+
 Ceiling25 fresh rounds. No early stop until P (source, phase/weight boundaries, finite-complement coordination), B (all-ordering and coset branches), M (benchmarks/frozen fits), and U each have an actual result, preregistered gate kill, or proved whole-class mechanism obstruction; alternatively a theorem closes the direction or AC stops it. Missing inputs and untried routes are not outcomes.

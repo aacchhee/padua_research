@@ -97,3 +97,33 @@ rounding enclosures and do not certify global maxima. Every selected
 refinement terminated successfully on all8 starts in this environment.
 All32 prime-block n2 full-rank groups were mesh-measured separately;
 their raw row identities and summary are in t7-r06-refined-quality.json.
+
+## Completed census-survivor coverage
+
+Every positive representative of the complete n2 all-phase census was
+measured: four order16 representatives each give Lambda21≈7, and the
+32 order19 representatives range from7.05325615906 to8.13406903712.
+The degree2 inherited unscaled QR and lower-set discrete Leja controls
+both give Lambda21=7. The best order16 set's largest8-start refinement
+also returns7. These are measurements, including that apparent tie;
+they are not certified equality or global-max claims. See
+t7-r06-census-quality.json and t7-r06-final-refinements.json.
+
+The bounded n3 mixed-stratum pilot additionally produced13478 exact
+full-rank rational witness phases. All13478 were actually measured,
+covering7965 distinct rational node sets. Lambda21 ranges from
+12.50888586428 to2587225.50612; maximum condition2 is2.34809e6 and
+maximum inverse residual is9.59e-10. The worst values therefore have
+substantially weaker numerical accuracy than the best. This covers
+every positive witness produced by that pilot, without claiming a
+bound uniform over its positive-dimensional phase strata. Receipt:
+t7-r06-n3-pilot-quality.json. The separately frozen256-draw n3 sample
+and its54 full-rank witnesses remain a distinct fallback sample.
+
+The final8-start refinements of the best random-sample and symbolic-
+pilot n3 witnesses give12.31150701225 and12.54192067336, respectively;
+all8 starts terminated successfully for each. Their mesh values remain
+12.29342557261 and12.50888586428. The same inherited degree3 controls
+apply, so both lose to QR; the random-sample mesh value is below Leja.
+None of these finite measurements meets the two-consecutive-degrees
+n>=6 competitive rejection rule. The broad quality target remains OPEN.

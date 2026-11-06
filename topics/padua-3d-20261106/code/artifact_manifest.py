@@ -20,6 +20,15 @@ def artifacts():
                    *TOP.joinpath("evidence").glob("*.json")])
 
 
+def packed(rows):
+    """Losslessly encode fixed .py/.json suffixes without repeating key names."""
+    result = {"code": {}, "evidence": {}}
+    for row in rows:
+        path = Path(row["path"])
+        result[path.parts[0]][path.stem] = [row["bytes"], row["sha256"]]
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--verify", action="store_true")
@@ -30,27 +39,21 @@ def main():
                  for name in ("c3_lebesgue.py", "c3_rank.py")]
     if args.verify:
         saved = json.loads(target.read_text())
-        if saved["artifacts"] != observed or saved.get("inherited_inputs") != inherited:
+        if saved["artifacts"] != packed(observed) or saved.get("inherited_inputs") != inherited:
             raise SystemExit("FAIL: code/data set or identities changed")
         print(json.dumps({"verdict": "PASS", "artifacts": len(observed),
                           "bytes": sum(row["bytes"] for row in observed)}))
         return
-    commands = []
-    for path in sorted(TOP.joinpath("evidence").glob("*.json")):
-        data = json.loads(path.read_text())
-        command = data.get("command")
-        if command is not None:
-            commands.append({"receipt": path.relative_to(TOP).as_posix(),
-                             "command_as_recorded": command})
     output = {
-        "schema": "padua-3d-code-data-manifest-v1",
+        "schema": "padua-3d-code-data-manifest-v2",
         "rules_input_sha": "7afa6a54a4db4652267e38cd48658ba435d20481",
         "historical_rules_input_sha": "ccd9e905d19c0c625c196c4a3f3e707058ed042a",
         "generate": "python topics/padua-3d-20261106/code/artifact_manifest.py",
         "verify": "python topics/padua-3d-20261106/code/artifact_manifest.py --verify",
-        "artifacts": observed,
+        "format": "code/evidence maps filename stems to [bytes, SHA-256 hex]; append .py/.json respectively",
+        "artifacts": packed(observed),
         "inherited_inputs": inherited,
-        "recorded_commands": commands,
+        "commands": "Commands and execution metadata are in the hash-pinned receipts and linked attempts; historical metadata companions preserve missing-field limits.",
         "limits": [
             "Identity verification is separate from mathematical verification.",
             "Prose is identified by audit commit, not acceptance hashes.",

@@ -12,10 +12,10 @@ PartA must dispose C1–C4 and n1–n6 in response-02.md.
 
 | Direction | New completed rounds / ceiling | Required routes | Current state |
 |---|---:|---|---|
-| T10 | 1 /25 | dual-lattice census; projection quality; QR/LU and structured extraction; ratio/projection theory | census/extraction boundary complete; theory route active |
+| T10 | 2 /25 | dual-lattice census; projection quality; QR/LU and structured extraction; ratio/projection theory | all four routes have actual outcomes; stop(a), no literal extraction kill |
 | T8 | 2 /25 | admissible degrees; phase optimization; nearby/odd moduli; special phases; cyclic coset unions | all listed routes have actual outcomes; stop under(a), broader ranks/target remain OPEN |
-| T7 | 2 /25 | all-coset census and listed fallback; survivor quality; phase optimization; noncyclic unions | pruning/prime/unequal-union results; complete n2 finish under independent replay |
-| T9 | 1 /25 | packing source/extensions and finite complement; class lower bounds; refined benchmarks; explicit R-Leja upper theorem | QR/localdet n<=16 boundary complete; source/theory/snapshot routes active |
+| T7 | 3 /25 | all-coset census and listed fallback; survivor quality; phase optimization; noncyclic unions | complete n2 independently verified; prescribed fallback and all Q/Phi/U outcomes; stop(a) |
+| T9 | 2 /25 | packing source/extensions and finite complement; class lower bounds; refined benchmarks; explicit R-Leja upper theorem | all P/B/M/U outcomes incl109-degree family fallback; stop(a), global complement OPEN |
 
 The valid early-stop tests are exactly handoff06(a) every listed route has
 an outcome, (b) a theorem closes the direction, or(c) AC stops it. An untried
@@ -30,6 +30,18 @@ for T7(2/25), T8(2/25) and T9(1/25) are withdrawn. Shortcut refutations,
 fixed-set cubature obstructions and P/E rule kills remain valid; none
 covered every untried direction route. Handoff06 restarts all four counters
 and applies its stricter rule. The historical counts below are preserved.
+
+Final handoff06 stopping record: T7.C delivers complete n2 and the exact
+n3-sample fallback after measured n3 infeasibility, with every discovered
+survivor quality-tested; Q/Phi/U all have outcomes. T8's five routes have
+finite certificates, prospective family kills or exact count outcomes.
+T9.P/B/M/U have source-dependent/local theorems, counterexamples, measured
+benchmarks and the109-degree analytic-family fallback. T10's four routes
+have census, full finite operator/extraction measurements and explicit
+folding/projection theory outcomes. Thus(a) applies in each direction.
+No stop uses an unsupported all-family norm comparison or silently closes
+a broader OPEN target. T10's last two internal deliveries are published
+together as its second counted round, not invented extra rounds.
 
 | Direction | Completed rounds | Current action | Consecutive rounds without progress |
 |---|---:|---|---:|

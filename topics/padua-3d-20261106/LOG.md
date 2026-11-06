@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/06-work.md](handoffs/06-work.md)
+- Stage: AUDIT · Next: Claude Opus5.5 xhigh · Successor at publication: [handoffs/07-audit.md](handoffs/07-audit.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md); no final IDs allocated.
 
@@ -412,3 +412,48 @@ their corresponding runs, with publication and execution timing distinguished.
   a literal all-extracted-set norm kill. A prospective same-rule n8..16
   verification pass continues that route. The old early gate shorthand is
   superseded by this scoped statement; no killed interpolation family is rescued.
+
+## 2026-11-06 — handoff06 final production boundary
+
+- T7 round3: complete all-phase n2 finite classification is computer-assisted
+  PROVED after both an actual full replay and an independently written full
+  census. Four order16 and32 order19 representatives survive, with no free
+  phase loci and no unresolved target ranks. Measured n3 infeasibility and
+  the permitted complete n2/exact n3-sample fallback are delivered. Every
+  n2/random/pilot survivor is quality-measured, not selectively reported.
+  The initial D0 receipt's missing early source snapshot is explicitly
+  retained as a limitation; a new frozen-source D0 was actually executed.
+- T9 round2: the local witness extends the imported density consequence
+  to arbitrary strictly positive full-support unshifted weights. Published
+  R-Leja premises yield an explicit known O(N³) minimal-set upper bound.
+  Class-specific method boundaries, QR/localdet and incoming snapshots,
+  and exact family data through109 with timed probes all have outcomes.
+  Imported source premises and unsearched global optima remain explicit.
+- T10 round2 combines the two final internal deliveries: density-optimal
+  folding ratio73/18, local log⁴ projection theorem, explicitly CONDITIONAL
+  sharp log³ corollary, bounded4941-lattice neighborhood comparison, all
+  projection meshes through16, and both frozen extraction rules through16.
+  The restricted QR subsets have exact rank certificates at all15 degrees.
+  Structured numerical ineligibility is not an exact singularity theorem or
+  a literal all-extracted-set norm kill; the final pass removes that ambiguity.
+- Current counted rounds are T7=3,T8=2,T9=2,T10=2. Each direction satisfies
+  handoff06(a) by its route table and recorded fallback, not a declaration
+  that the broad construction problem is exhausted. No25-round ceiling is
+  used to manufacture repetition. All previous direction-wide stops remain
+  withdrawn, and accepted original mathematics is not reopened.
+- The distinct checker independently reconstructs the full census, exact
+  ranks, local proofs and numerical comparisons. Its code is frozen and
+  every own-code receipt was actually rerun at that hash. Final input/prose
+  pins identify the reviewed scope; no executable pins prose acceptance.
+  Primary source statements, external proof dependencies, local proofs and
+  measurements remain separate. Required Claude audit07 is still due.
+- The global identity manifest now uses a single lossless v2 map of filename
+  stems to byte sizes/full SHA-256, with fixed .py/.json suffixes. Commands
+  stay in the already pinned receipts/attempts rather than being duplicated.
+  This preserves all identities within one compact file, without splitting
+  evidence. Actual mutation controls reject code/data/inherited-input changes.
+- Reports, results, raw inventory and source manifests are synchronized.
+  Fifty-one raw identities were actually checked, with no archival delivery.
+  No final IDs, reservation or shared-registry application is made. Following
+  the output commit, handoff06 closes and handoff07 carries the focused
+  response02 review plus substantive restarted-work audit. Only AC merges.

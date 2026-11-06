@@ -18,6 +18,18 @@ The structured boundary rule selected exactly N points, but its matrices violate
 
 T9-05 would transfer a projection bound to an interpolant only with a uniform bound for the inverse restricted sampling matrix C. These measurements neither establish that bound nor show it impossible. The failed boundary rule cannot be repaired adaptively and then counted as the preregistered rule. Continuous Λ maxima and exact algebraic rank of those rejected boundary subsets remain unresolved. All q41 meshes completed; timings are in the receipt. No feasibility fallback was needed.
 
-Frozen command: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t10_lattices.py quality --raw "$T10_TMP/census.json" --out topics/padua-3d-20261106/evidence/t10-quality.json --first2 --last10` (write option values with spaces: `--first 2 --last 10`). Source code and input hashes, raw regeneration identity and essential rows are in the receipt. Independent replay remains a separate root-checker obligation.
+Frozen command: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t10_lattices.py quality --raw "$T10_TMP/census.json" --out topics/padua-3d-20261106/evidence/t10-quality.json --first 2 --last 10`. Source code and input hashes, raw regeneration identity and essential rows are in the receipt. Independent replay remains a separate root-checker obligation.
 
 History:2026-11-06 initial actual comparisons, Codex Sol xhigh assigned. The theory target log³ remains OPEN in its separate record.
+
+## Prospective high-degree extension, completed after round1
+
+The identical projection/baseline rules completed n11..16 on both meshes, with extraction disabled by `--skip-extraction`; receipt `t10-quality-high.json`. At n16, best anisotropic LS is16.64112, equal-order parity projection14.22039, source-seed LS31.15199, inherited-reference QR161.50265 and Leja275.37391. The best LS/log(n+1)^3 ratio is0.73172 at n16. All meshes completed; slowest mesh evaluation8.37seconds, below120seconds, so no fallback was needed. These are finite lower bounds, not a growth-law fit or continuous supremum certification.
+
+The global QR construction was corrected before the first pushed boundary to call the exact inherited degree-ordered basis; its q21 values match the primary benchmark, including n2=7, n3=8.320670615 and n8=43.88676861. Frozen restricted QR retains its original lexicographic basis ordering. The two orderings can break QR ties differently; this is explicit provenance, not a change of extraction after observing its outcome.
+
+High command is the same producer with `--out topics/padua-3d-20261106/evidence/t10-quality-high.json --first 11 --last 16 --skip-extraction`. The sharp projection theorem now has a separate named-source-dependent conditional corollary; no numerical value changes its proof status.
+
+## Final extraction addendum
+
+`t10-extraction-complete.md` and its separate receipts now complete the unchanged two extraction rules through n16 and provide exact finite-field full-rank witnesses for all restricted-QR subsets n2..16. The slight restricted-QR mesh win at n8 is retained; n9..16 lose. The final route outcome relies on completed finite coverage rather than interpreting structured numerical ineligibility as the handoff's literal norm kill. Earlier n6/7 measurements are unchanged.

@@ -1,0 +1,76 @@
+{
+  "rules_input": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "command": [
+    "topics/padua-3d-20261106/code/independent_r06.py",
+    "--t10-actual",
+    "/tmp/padua-check06-t10/raw.json",
+    "--output",
+    "topics/padua-3d-20261106/evidence/independent-r06-t10-actual.json"
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "sympy": "1.14.0",
+  "code_sha256": "ed352441b145a900f375eb6bf03543e186976c31824ec9baf2b882fb5d64d296",
+  "controls": {},
+  "t10_actual": {
+    "input_sha256": "790761ef37f1fbda490226c770a563a6187b60cb0f4ea332e55addf3d162b11e",
+    "selected": [
+      {
+        "denominator": 38,
+        "prime": 191,
+        "root": 166,
+        "nodes": 20,
+        "degree": 3,
+        "rank_lower": 17,
+        "matrix_sha256": "8c4ef936c06da390acbc57d863542598b730f3b45074ce1e63ef935deb1c2947",
+        "family": "K-table"
+      },
+      {
+        "denominator": 588,
+        "prime": 3529,
+        "root": 2738,
+        "nodes": 112,
+        "degree": 6,
+        "rank_lower": 84,
+        "matrix_sha256": "88674ca65454933c4a6f55486e431d8f1a8a6a3a59e2b0eea81a2a9e43790b84",
+        "family": "parity-aniso",
+        "raw_LS_norm41": [
+          8.067316973099928,
+          8.148949626161151
+        ],
+        "raw_LS_reproduction_residual": [
+          1.0000000000000056,
+          3.040683588185155e-15
+        ]
+      },
+      {
+        "denominator": 896,
+        "prime": 2689,
+        "root": 1481,
+        "nodes": 164,
+        "degree": 7,
+        "rank_lower": 120,
+        "matrix_sha256": "fe30b1d8a1fdf7ae14ee1395120c49e390a16997392a330c52cbf67fc780e1aa",
+        "family": "parity-aniso",
+        "raw_LS_norm41": [
+          9.12583396387678,
+          9.230744678162498
+        ],
+        "raw_LS_reproduction_residual": [
+          1.000000000000003,
+          3.565251602718278e-15
+        ]
+      },
+      {
+        "denominator": 2432,
+        "prime": 7297,
+        "root": 125,
+        "nodes": 1187,
+        "degree": 12,
+        "rank_lower": 449,
+        "matrix_sha256": "e24003f729d427fe7be521a2c482ba6c7df6c49cd3b444a26426f9684fd23e35",
+        "family": "K-table"
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "rules_input": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "command": [
+    "topics/padua-3d-20261106/code/independent_r06.py",
+    "--t10-global",
+    "--output",
+    "topics/padua-3d-20261106/evidence/independent-r06-t10-global.json"
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "sympy": "1.14.0",
+  "code_sha256": "ed352441b145a900f375eb6bf03543e186976c31824ec9baf2b882fb5d64d296",
+  "controls": {},
+  "t10_global": [
+    {
+      "n": 1,
+      "minimum_det": 2,
+      "hnfs_tested": 8,
+      "minimizers": 1
+    },
+    {
+      "n": 2,
+      "minimum_det": 12,
+      "hnfs_tested": 1325,
+      "minimizers": 12
+    },
+    {
+      "n": 3,
+      "minimum_det": 38,
+      "hnfs_tested": 36797,
+      "minimizers": 8
+    }
+  ]
+}

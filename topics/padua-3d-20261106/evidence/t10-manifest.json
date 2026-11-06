@@ -1,0 +1,83 @@
+{
+  "purpose": "T10 code/input/evidence pins; prose intentionally not pinned",
+  "rules_sha": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "round1_source_commit": "26434e73e961bd63fb996e8a7990b4faabefa678",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "files": [
+    {
+      "path": "topics/padua-3d-20261106/code/t10_lattices.py",
+      "bytes": 14377,
+      "sha256": "43d074620c0ea271dbd94a774f472dd5fb0f23c7920204da3262775207f99c1f"
+    },
+    {
+      "path": "topics/padua-3d-20261106/code/t10_search.py",
+      "bytes": 2753,
+      "sha256": "02b6e4c3d7d5d78cf106bfcc544b78993c82fd052d97377d8b3035bdf7eda720"
+    },
+    {
+      "path": "tracks/lattice-unisolvence/code/c3_lebesgue.py",
+      "bytes": 6286,
+      "sha256": "bf9cdb7c057f6ddf1793d99e6d338b1c1cfa37a274e5a6ac9689085f6bb3d66e"
+    },
+    {
+      "path": "tracks/lattice-unisolvence/code/c3_rank.py",
+      "bytes": 7430,
+      "sha256": "a95afbb764838662358dc70d2fd5a7eddf335d3ae48254d29b717fa015143332"
+    },
+    {
+      "path": "topics/padua-3d-20261106/evidence/t10-census.json",
+      "bytes": 6573,
+      "sha256": "62e6b136a28d324cc03bd632cf55c1df84d2b776cd311a0b76e08dd4f7c6ceb9"
+    },
+    {
+      "path": "topics/padua-3d-20261106/evidence/t10-quality.json",
+      "bytes": 6794,
+      "sha256": "6272318924129f4fa3e677a70c1f10d8833165d54b08294e24c066eff8868834"
+    },
+    {
+      "path": "topics/padua-3d-20261106/evidence/t10-quality-high.json",
+      "bytes": 4051,
+      "sha256": "6d3aa1ec234dd331741cc0422aeabe2213a2250aba37e2e18402d377a62ee4d6"
+    },
+    {
+      "path": "topics/padua-3d-20261106/evidence/t10-search.json",
+      "bytes": 5836,
+      "sha256": "539368249d5198362b269bea24ee7df6dc8882cbcd12ec047af98164b9fd3db9"
+    },
+    {
+      "path": "topics/padua-3d-20261106/code/t10_extract.py",
+      "bytes": 3085,
+      "sha256": "fc4ab1e2471ad04a11c7ae5d0042be26cb6796c9c33bc1cd7125d822f579f1f1"
+    },
+    {
+      "path": "topics/padua-3d-20261106/code/t10_subset_rank.py",
+      "bytes": 3441,
+      "sha256": "e0c94f81421614d57cff6b2469090df0595f61599f9c21c40454caa3c4183b96"
+    },
+    {
+      "path": "topics/padua-3d-20261106/evidence/t10-extraction.json",
+      "bytes": 3838,
+      "sha256": "232d1c9057671c0ca6da71c80d293d0d4a170a8d5177a08ba2740a91c3ad3632"
+    },
+    {
+      "path": "topics/padua-3d-20261106/evidence/t10-subset-rank.json",
+      "bytes": 2101,
+      "sha256": "fd9de15918d0b4f855d38186b4e1e84d47b79c6ef82d9e69c62a672767946bd8"
+    }
+  ],
+  "replay": [
+    "Set T10_TMP to a fresh unique writable directory and mkdir it; set OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1.",
+    "python topics/padua-3d-20261106/code/t10_lattices.py census --raw \"$T10_TMP/census.json\" --out \"$T10_TMP/census-receipt.json\"",
+    "python topics/padua-3d-20261106/code/t10_lattices.py quality --raw \"$T10_TMP/census.json\" --out \"$T10_TMP/quality.json\" --first 2 --last 10",
+    "python topics/padua-3d-20261106/code/t10_lattices.py quality --raw \"$T10_TMP/census.json\" --out \"$T10_TMP/quality-high.json\" --first 11 --last 16 --skip-extraction",
+    "python topics/padua-3d-20261106/code/t10_search.py --raw \"$T10_TMP/neighborhood.json\" --out \"$T10_TMP/search.json\"",
+    "python topics/padua-3d-20261106/code/t10_extract.py --census \"$T10_TMP/census.json\" --reference topics/padua-3d-20261106/evidence/t10-quality.json topics/padua-3d-20261106/evidence/t10-quality-high.json --raw \"$T10_TMP/extraction.json\" --out \"$T10_TMP/extraction-receipt.json\"",
+    "python topics/padua-3d-20261106/code/t10_subset_rank.py --census \"$T10_TMP/census.json\" --extraction \"$T10_TMP/extraction.json\" --out \"$T10_TMP/subset-rank.json\""
+  ],
+  "comparison": "Compare exact scientific fields and node hashes; floating norms to1e-8 relative. Runtime/receipt raw hashes identify the actual run and vary with timing. Raw files are regenerate-only and are unnecessary to check the committed essential summaries.",
+  "verification_limit": "Finite computation status MEASURED; separate root checker records actual independent coverage. Mathematical proof files retain their own status/source dependence."
+}

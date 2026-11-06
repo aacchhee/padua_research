@@ -170,5 +170,13 @@
     }
   ],
   "historical_source_commit": "7407e13a0fb7b4ddbeb846d24c765fda0bd4f13c",
-  "aggregation_input_commit": "7afa6a54a4db4652267e38cd48658ba435d20481"
+  "aggregation_input_commit": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "round06_raw_observation": {
+    "checked_files": 51,
+    "checked_bytes": 54836138,
+    "identity_locations": "individual source-linked receipts under evidence/*r06*.json and evidence/t10-*.json; final manifests pin them",
+    "missing_optional_paths": 0,
+    "retention": "regenerate-only; no cold-storage delivery",
+    "verification": "observed existing file SHA-256/byte sizes compared with recorded identities; missing optional paths not claimed observed"
+  }
 }

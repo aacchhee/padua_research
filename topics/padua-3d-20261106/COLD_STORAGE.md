@@ -84,3 +84,18 @@ observed Python/NumPy/SciPy/mpmath versions, source hashes, scientific-field
 equality and all26 raw node-array identities. Those are new replay metadata,
 not invented historical observations. The ledger references their complete
 identity list once; all are regenerate-only, with no archive delivery.
+
+## Handoff06 verification — 2026-11-06
+
+The final round06 manifest pins all local code/data in one lossless compact
+map (full SHA-256 values and byte sizes), with inherited numerical helpers
+separate. Commands remain in hash-pinned receipts, source manifests and
+linked attempts. No output has been split to evade the compact evidence limit.
+
+An actual streaming identity check compared51 existing raw files,54836138
+bytes, against identities in their individual source-linked round06/T10
+receipts. None of those optional paths was missing. The ledger records this
+aggregation without duplicating every receipt row. They remain regeneration-
+only temporary outputs, not archival deliveries or hidden theorem inputs.
+The compact complete n2 positive certificate and all regenerating code and
+independent exact-check evidence are committed.

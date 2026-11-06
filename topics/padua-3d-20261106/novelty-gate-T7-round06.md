@@ -28,3 +28,5 @@ n=2 mod4; it does not exclude generic translations or all unions.
 T7-07 excludes cubature on one20-node set, not interpolation or other
 phases. Rank2 alone does not force a compatible short polynomial.
 No killed T4/T8 family or H39 cover is reopened.
+
+2026-11-06 dated coverage qualification: the stronger full-table pre-run reading assurance above is qualified by the canonical [response-deviations-02 record](response-deviations-02.md#new-t7-round06-reading-coverage-qualification--2026-11-06); later completeness reads do not repair chronology, and this qualification applies to every new T7 registration.

@@ -247,3 +247,14 @@ handoff06 resumes their untried routes. Full provisional IDs use the
 padua-3d-20261106 slug; abbreviated old-slug IDs are historical aliases,
 not separate allocations. C4's scoped negative mappings and the response
 are in response-02.md; no accepted positive reduction is removed.
+
+## Handoff06 completed restart — 2026-11-06
+
+[The restarted report](report-round06.md) is the current consolidated
+account. The required routes have actual outcomes under the stricter stop
+rule: complete all-phase n2 classification, executed n3 fallback/quality,
+phase/union tests, verified source-dependent packing and R-Leja results,
+finite-complement family data, and cubature/extraction/projection theory
+and measurements. The broad matching construction remains OPEN. Earlier
+direction-wide stops remain withdrawn; current stops are tied to the new
+route table, not retrospective approval of old decisions.

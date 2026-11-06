@@ -126,3 +126,88 @@ topics/padua-3d-20261106/code/t7_r06_refine.py --output-dir /tmp/padua-t7-r06-7a
 
 The required full n2 fallback is now running with an additional proved
 group-level projection upper cap. No result of that run is yet claimed.
+
+## Completed boundary3 development (root publishes/counts)
+
+2026-11-06 dated gate qualification: all new T7 registrations retain the canonical [reading-coverage qualification](../response-deviations-02.md#new-t7-round06-reading-coverage-qualification--2026-11-06); later completeness checks do not cure the qualified initial chronology.
+
+The full n2 fallback ACTUALLY completed in173.688seconds, separately
+from both earlier pilots: all344054 labelled HNF subgroups of orders
+10..80,2,705,380 nonprime quotient phase strata,2358 target-count
+strata,2342 fixed-trace kills,12 compatible short-relation kills,
+4 full-rank classes, ZERO unresolved cases. The complete prime block
+adds32 full-rank order19 groups. Every positive nonprime phase stratum
+is zero-dimensional at phase[0,0,0], so no exceptional phase locus
+remains to classify. The complete compact certificate lists all36
+positive representatives. See [exact classification](../theory/t7-r06-n2-census.md),
+t7-r06-census-n2-complete.json and t7-r06-certificate.json.
+
+Distinct check06 actually reran the full producer in179.102seconds:
+all scientific fields and BOTH rejection-catalogue hashes match. Its
+separate implementation independently covered all344054 groups and
+matched every count, with own actual-node monomial rank10 proofs for
+the four order16 sets. Its separately reconstructed integer Fourier
+dictionary census matches all324 nonzero-projection order19 groups
+and32 full-rank cases. Evidence: independent-r06-t7-census.json,
+independent-r06-t7-primes.json, independent-r06-t7-replays.json.
+
+The required n3 feasibility measurement also ACTUALLY ran. Static
+enumeration finds2,723,067 HNF groups of orders20..160, with159400
+passing the necessary projection bounds. The120-second symbolic
+pilot reached3373 groups/726864 quotient strata at order24/HNF62,
+with36100 unresolved rank cases. It is explicitly NOT a full n3
+census. The allowed fallback is now complete exact n2 plus the earlier
+256-draw exact rational-phase n3 sample; no incomplete n2 excuse or
+scope-exhaustion stop is used. Receipt: t7-r06-feasibility.json.
+
+Q measured every one of the36 complete n2 positive representatives,
+every one of the54 full-rank random n3 sample witnesses, and EVERY
+one of the13478 exact-positive rational witness phases from the n3
+pilot (7965 distinct node sets). The latter range from Lambda21
+12.50888586428 to2587225.50612, with maximum inverse residual9.59e-10.
+The four order16 n2 representatives give≈7 and the32 order19 groups
+range7.05325615906..8.13406903712. Primary inherited degree2 QR and
+Leja both measure7. Final8-start best-witness refinements give7
+(n2),12.31150701225 (n3 random sample),12.54192067336 (n3 pilot).
+All floating quality claims remain MEASURED. See the updated
+[quality record](../theory/t7-r06-quality.md) for limitations.
+
+Final route dispositions under handoff06:
+
+| Route | Actual result / class limit | Broader status |
+|---|---|---|
+| D0 | Direct actual-node rank20 certificate and distinct monomial replay pass | Finite validation only |
+| C | Complete exact n2 all-phase classification; actual n3 cost/unresolved pilot;256-draw exact random-phase n3 fallback | Full all-phase n3 OPEN |
+| Q | All36 n2 classes,54 n3 sample positives,13478 n3 pilot positive witnesses and fixed T7-06 measured; controls and selected refinements run | Degree-uniform quality OPEN |
+| Phi | Frozen phase optimization n3/n5 gives exact rationalized full-rank witnesses; n4 rank>=2 class empty; whole no-fold n6 and rank3 n5 obstructed by proved trace theorem | Rank2 n3/n5 not universally killed; no competitive early-kill claim |
+| U | Equal common-H and unequal noncyclic2–4-coset screens actually run n3..6; exact minimal full-rank unequal winners at every degree | Samples do not exclude all unions |
+
+Every listed handoff06 route therefore has its actual finite result,
+permitted fallback, or proved class obstruction. This permits the
+route-completion stop after root's round3 publication under condition(a),
+with the broader Padua-type construction/quality goal OPEN. It does
+not claim a theorem excluding the whole direction or invoke the
+unmet competitive two-consecutive-n>=6 kill condition. Root alone
+records the count and stop in LOG; no fourth round is started here.
+
+2026-11-06 source-pin audit: the original published t7-r06-d0.json
+records an early search-source hash da4c5339… whose exact source snapshot
+was not preserved before other route functions were appended. That
+historical receipt remains unchanged and is not claimed to regenerate
+from the final source hash. The NEW t7-r06-d0-frozen-replay.json actually
+reruns D0 against the committed frozen a3960922… source; count/rank and
+the actual-node certificate agree. Every later route also reran D0 and
+the distinct checker independently verified its monomial matrix. All
+other source pins and every raw hash passed the final receipt audit.
+
+Additional commands actually executed (same single-thread prefix):
+
+```
+topics/padua-3d-20261106/code/t7_r06_search.py d0 --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-d0-frozen-replay.json
+topics/padua-3d-20261106/code/t7_r06_census_finish.py --n 2 --seconds 1200 --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-census-n2-complete.json
+topics/padua-3d-20261106/code/t7_r06_certificate.py --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-certificate.json
+topics/padua-3d-20261106/code/t7_r06_feasibility.py --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-feasibility.json
+topics/padua-3d-20261106/code/t7_r06_census_quality.py --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-census-quality.json
+topics/padua-3d-20261106/code/t7_r06_n3_survivor_quality.py --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-n3-pilot-quality.json
+topics/padua-3d-20261106/code/t7_r06_final_refine.py --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-final-refinements.json
+```
