@@ -1,6 +1,6 @@
 # Handoff 07 — padua-mz-sharp-constants-20261106 — PR preparation
 
-- Status: open
+- Status: done in 7322d4cb279fb91460faa031327509e1666ae1f4
 - Previous handoff: [06-focused-denominator-recheck.md](06-focused-denominator-recheck.md), done in 61c3b3f2b0fe8e6a0c93f0477c5f2b9e4f27445c
 
 - Next agent / model / effort: Codex coordinator, `gpt-6-astra` high. Use `gpt-6.1-sol` medium for mechanical registry and ID edits, and record actual models.
