@@ -1493,3 +1493,9 @@ Additional original/support edges: PD-T075(U1) → PD-T144 unchanged, with PD-T0
 Inherited abandoned aliases, no new allocation: u=e without a run → IDEA-262; compression/structure-free commuting approximation implies graded sections → IDEA-158/160 (one consolidated route); arbitrary reading-(E) obstruction implies actual-(G) obstruction → IDEA-162. The already disposed zero-admitting every-error positive-drift reading → IDEA-253. No administrative PD-N is created for any equivalent/abandoned route.
 
 No new literature ID is proposed by this mechanical registry response. P3/literature comparison is coverage-limited; no local proof inherits an unread source theorem.
+
+## Non-affine-product Lanczos reservation
+
+[Permanent topic ledger](topics/padua-lanczos-nonproduct-20261105/ALLOCATIONS.md):
+PD-T472–501, PD-N178–180, IDEA570–589, LIT630–632. No assignment by this
+reservation entry. Earlier mappings, reservations and unused gaps survive.

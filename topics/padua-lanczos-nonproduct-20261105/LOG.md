@@ -491,3 +491,23 @@ records its fresh reproductions and their scope.
 - Audit 02 reviewed response 01's other changes by diff and found them non-material.
 - One MINOR wording item (B1, `p3-03:208`) is to be fixed at preparation.
 - Stage PR. Handoff 05 is done in `c582791`. Next: [handoff 06](handoffs/06-preparation.md), PR preparation.
+
+## 2026-11-06 — Codex PR preparation and fresh reservation
+
+- Rules/input read at `72cbce7816cdd6e02e799c85cb68f79001f831f7`. Coordinator
+  Codex requested gpt-6-astra high; mechanical inventory worker configured
+  gpt-6.1-sol medium; serving metadata not independently exposed. Refreshed
+  main `be9a8318150204711d5446d2ea26284cf1ed0819` and fast-forwarded the
+  clean topic to remote72cbce7. Main is already an ancestor.
+- Handoff06 governs PR preparation. Audit02 accepted A3, with only MINOR B1
+  left for wording correction. No accepted proof, finite outcome or AC
+  decision is reopened. This is registration of audited content, not new
+  candidate generation; no new novelty gate/scientific run is needed.
+- The complete30-PR all-state listing has open27/28/30 and27 closed-merged,
+  none closed-unmerged. Read62 complete ledger/registry copies at the four
+  heads in [ALLOCATIONS](ALLOCATIONS.md), including13 distinct full ledger
+  versions. Namespace maxima T471/N177/IDEA569/LIT629 include permanent gaps.
+- Reserve fresh T472–501(30), N178–180(3), IDEA570–589(20), LIT630–632(3)
+  before assignment, with no collision or accepted-ID renumbering. The first
+  pushed ledger commit establishes priority and is linked in PR30. No final
+  ID is assigned by this checkpoint. No cleaning action is taken.
