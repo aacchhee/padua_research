@@ -78,8 +78,9 @@ terminal beta sensitivity; gauge-infimum screen.
   `theory/c1-hahn-gauge-lower.md` (from `theory/c2-hahn-terminal-rate.md`).
   The original base-two Hahn bound remains a valid simpler bound;
   no matching full-map Hahn upper or sharp full-map equality is claimed.
-- Disposition: retained; exact gauge infima and sharp Hahn all-N rates
-  remain open. No literature novelty asserted.
+- Disposition: retained. Historical pre-response scope: exact gauge infima
+  and sharp Hahn all-N rates remained open; the dated addendum below
+  updates only the b-dominant benchmark gauge infima. No literature novelty asserted.
 
 ## IDEA?nn-mop-cond-codex-C1-02 — scalar/control and constrained derivatives
 
@@ -192,3 +193,5 @@ present proof supplies the stated fixed-mass support and input-coordinate
 conventions. No novelty or source-priority claim is made for scalar
 coefficient differentiation, the slow finite-grid control, or norm balancing.
 No external polynomial growth bound is imported into these benchmark results.
+
+2026-11-06 audit-02 addendum: [response-gauge-infimum.md](theory/response-gauge-infimum.md) proves finite positive attainment of the exact b-field lower for both b-dominant benchmarks, for all N>=2 in all six stated input models. The generic non-dominant optimizer problem and sharp full-map Hahn rate remain OPEN.

@@ -4,7 +4,8 @@ ID kind: PD-T. Aliases: full-triangle Bernstein–Hermite upper bound;
 two-contour sensitivity estimate; common-node logarithmic forcing.
 Split from: PD-T448, the sharp growth target, restricted here to its exact
 p1=2/5,p2=1/2 Krawtchouk case in the PD-T432 metric.
-Split into: none. The other families and metrics in PD-T448 remain OPEN.
+Split into: none. PD-T448's remaining OPEN conjuncts in its single metric
+are itemized in [classification-proposal.md](../classification-proposal.md).
 
 ## Statement
 

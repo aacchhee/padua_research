@@ -1652,3 +1652,7 @@ D2 retains its unnumbered known reorthogonalized-marginal and high-precision ora
 Unused IDs remain permanent gaps: PD-T450–471, PD-N169–177, IDEA-556–569 and LIT-615–629. LIT-567/568 are reused source identities; only LIT-614 is new.
 
 The handoff01 label `PD-T?nn-mop-stability-codex-NN` is an identifier-template placeholder, not an allocated claim or candidate.
+
+## nn-mop-conditioning-20261106 allocations
+
+[Reservation ledger](topics/nn-mop-conditioning-20261106/ALLOCATIONS.md): PD-T502–521, PD-N181–185, IDEA590–607; no LIT range. Unused headroom remains permanent gaps.

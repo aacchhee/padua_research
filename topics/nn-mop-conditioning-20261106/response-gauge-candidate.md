@@ -1,5 +1,6 @@
 # IDEA?nn-mop-cond-response-gauge — finite positive gauge attainment
 
+Preferred qualified provisional alias: `IDEA?nn-mop-cond-codex-response-gauge-01`; the heading ID is retained as a historical alias pending final allocation.
 Aliases: degree-one anchored taper; b-dominance optimizer; finite gauge
 infimum; fixed/smooth gauge equality; variance dominance benchmark.
 
@@ -14,7 +15,8 @@ infimum; fixed/smooth gauge equality; variance dominance benchmark.
   comparisons: [gate](novelty-gate-response-gauge.md).
 - Separation criterion: explicit finite-t field denominators and row
   supports imply an admissible positive optimizer under dominance,
-  strengthening the prior limiting observation. A missing scale change,
+  making explicit the positive t and all-N benchmark applications of
+  audit01 NOTE1's proposed equality. A missing scale change,
   sensitive degree-one row, or inconsistent gauge exponent falsifies it.
 - Literature baseline and limits: Fischer-type conditioning and
   norm-balancing scaling are background (LIT112/113/348/365/502,
@@ -25,9 +27,9 @@ infimum; fixed/smooth gauge equality; variance dominance benchmark.
 - Cheapest decisive test: derive exact finite-t condition before any
   numerical sweep; verify all higher backward ratios equal t and
   degree-one ratios equal one.
-- Kill criterion before testing: if b dominance is unavailable, do not
-  assert equality of either all-gauge infimum with the b condition;
-  a limit alone never establishes finite attainment.
+- Retrospective kill criterion (recorded at PR preparation): no finite
+  positive t attains K under (3), or some stated benchmark N violates (3).
+  A limit alone never establishes finite attainment.
 - Test discriminability: algebra settles the conditional theorem;
   benchmark finite checks require an analytic tail to cover all N.
 - Actual results/evidence: the finite-t identity proves positive attainment
@@ -37,8 +39,9 @@ infimum; fixed/smooth gauge equality; variance dominance benchmark.
   rational comparison with a direct primal-moment implementation;
   [record](response-independent.md). Theory and compact receipts contain
   the complete finite reduction, code commands and limitations.
-- Disposition: retained bounded theorem development; independent audit
-  and consequential computational rerun are coordinator responsibilities.
+- Disposition: retained bounded theorem development. Completed rerun and
+  audit records are [response-independent.md](response-independent.md)
+  and [audit-02.md](audit-02.md); process state is in [LOG](LOG.md).
 - Canonical theory: `theory/response-gauge-infimum.md` (provisional ID).
 - History: 2026-11-06, handoff03 NOTE1 development; gate timing is qualified
   in [LOG](LOG.md). The audit supplied the taper/observation; no claim of an

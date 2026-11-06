@@ -102,8 +102,10 @@ C2-04 proof and `independent-checks-02.md`: that check independently
 reconstructs the all-M row comparison, both parities, fixed-mass transfer
 and coefficient-root argument, with exact finite checks supporting its
 identities. No numerical rerun is needed for this invariant-field
-inference. The full Hahn map's sharp base, a matching upper, exact finite
-gauge optimizer, finite-error radius and algorithm stability remain open.
+inference. Historical pre-response scope: the full Hahn map's sharp base,
+a matching upper, exact finite gauge optimizer, finite-error radius and
+algorithm stability remained open; the dated addendum below updates only
+the b-dominant benchmark gauge optimizer.
 
 ## History
 
@@ -117,3 +119,5 @@ were finalized, appended the stronger rho_H gauge-infimum lower as a
 direct consequence of the same invariant b2 field. Preserved the earlier
 base-two bound and its provenance; no other C1 file, numerical output,
 shared record or Git state was changed in this continuation.
+
+2026-11-06 audit-02 addendum: [response-gauge-infimum.md](response-gauge-infimum.md) proves finite positive attainment of the exact b-field lower for both b-dominant benchmarks, for all N>=2 in all six stated input models. The generic non-dominant optimizer problem remains OPEN.

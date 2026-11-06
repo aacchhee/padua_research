@@ -1,5 +1,6 @@
 # PD-T?nn-mop-cond-response-gauge — finite positive gauges attain the b-field lower
 
+Preferred qualified provisional alias: `PD-T?nn-mop-cond-codex-response-gauge-01`; the heading ID is retained as a historical alias pending final allocation.
 ID kind: PD-T. Aliases: degree-one anchored taper; finite gauge-infimum
 attainment; b-dominance optimizer; fixed/smooth gauge equality.
 Split from: none. Split into: none.
@@ -99,8 +100,9 @@ Hahn weights are
     w_(i,k)=(alpha_i+1)_k/k! * (2)_(M-k)/(M-k)! / Z_i,
     Z_i=(alpha_i+3)_M/M!,  (alpha_1,alpha_2)=(1,3/2).
 
-Both masses are one. These are exactly the PD-T290 inputs, with
-normality furnished by PD-T437 and C2-02 respectively. The chosen node
+Both masses are one. These are the PD-T290 inputs after per-measure mass
+normalization (C2-02), which leaves kappa, K and r unchanged. Normality
+is furnished by PD-T437 and C2-02 respectively. The chosen node
 scales and tangent constraints are frozen at q.
 
 ## Status by part
@@ -110,13 +112,13 @@ has a written analytic proof. Its benchmark applications have analytic
 tails, a proved finite reduction, committed exact code/essential receipt,
 and an actually executed separate rerun plus a different primal-moment
 implementation. The completed supplementary check is
-[response-independent.md](../response-independent.md); mandatory focused
-Claude audit is separate from this proof status.
+[response-independent.md](../response-independent.md); completed review
+and process records are in [audit-02](../audit-02.md) and [LOG](../LOG.md).
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
 | General formula and attainment under (3) | PROVED | Written finite-dimensional proof below; no computation |
-| All-N Krawtchouk specialization | PROVED | Written M>=2 argument, exact M=1 spacing case and distinct exact rerun |
+| All-N Krawtchouk specialization | PROVED | Written M>=1 argument for non-spacing models, M>=2 for spacing; exact M=1 spacing case and distinct exact rerun |
 | All-N Hahn specialization | PROVED | Written M>=14 tail, exact M=1..13 reduction and distinct exact rerun |
 
 These are one finite-optimization theorem and its benchmark applications,
@@ -330,8 +332,8 @@ the finite-t proof, variance bounds, tail/onset and finite reduction; its
 [receipt](../response-independent.json) pins codes, commands, own outputs
 and exact per-case minimum ratios. Reading the developer receipt alone
 was not counted as a rerun. No computational certification obligation
-remains within this finite reduction; the distinct Claude audit remains
-the coordinator's next review step.
+remains within this finite reduction. Completed review and process
+records are in [audit-02](../audit-02.md) and [LOG](../LOG.md).
 
 ## Sources, scope and limitations
 
@@ -346,7 +348,13 @@ existence of a finite positive optimizer for the specified benchmarks.
 It does not compute the exact maximizing b row for every N, select the
 most numerically useful gauge, or give an algorithm error guarantee.
 Formula (6) can require extremely small t; exact mathematical attainment
-says nothing about representability or rounding quality. Generic inputs
+says nothing about representability or rounding quality. The existing
+LIT-508 record reports exact power-of-2 scaling (p. 628) for its forward
+matrix problem, within its stated primary-page coverage; this supplies
+no such guarantee for (6). LIT-507/508 and their reading limits are in
+the [gate addendum](../novelty-gate-response-gauge.md). The NN six-field
+theorem does not close PD-T432's alternate step-line diagonal-scaling
+question. Generic inputs
 without (3), and metrics combining all fields into one denominator,
 remain outside the equality assertion. A smooth section might improve
 non-b rows by its derivative; (4) follows solely because the b lower is

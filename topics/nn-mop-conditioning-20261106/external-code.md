@@ -33,7 +33,10 @@ The HTML Example1 expression and size notation must not override the inspected-s
 
 The earlier block was resolved by AC supplying `/workspace/attachments/d3b8457a-2c90-4d56-a9a3-f05ea55b5826/IEP-MOP-main.zip`. It matches the required SHA and all27 inventory entries. `code/c4_prepare.py` safely verifies/extracts to `/tmp` and emits exact source-family inputs. All executed third-party files were inspected before running, including all nested functions in the three algorithms. No source edit or third-party commit. Source [receipt](c4-source-receipt.json).
 
-Current status is **M4 PASS; M2 PASS**. Historical blocked records remain above. Unchanged G5 driver completed on isolated Octave9.4, same selected gate result2.691214553706643e-10 as the predecessor9.4 audit. The quoted paper value remains attributed to that receipt, not newly authenticated paper-data bytes. M2 reconstructed exact monic H agrees with pinned exact generators for N6 in both families; [final bit-exact fidelity receipt](c4-m2-bits-receipt.json). Numerical KRYL error beyond1e-12 in this case is distinct from exact-generator normalization fidelity; the exploratory overbroad diagnostic is preserved in c4-m2-receipt.json.
+Current status is **M4 PASS; M2 PASS**. Historical blocked records remain above. Unchanged G5 driver completed on isolated Octave9.4, same selected gate result2.691214553706643e-10 as the predecessor9.4 audit. The quoted paper value remains attributed to that receipt, not newly authenticated paper-data bytes. M2 reconstructed exact monic H agrees with pinned exact generators for N6 in both families; [final bit-exact fidelity receipt](c4-m2-bits-receipt.json). Numerical KRYL error beyond1e-12 in this case is distinct from exact-generator normalization fidelity; the same historical c4-m2-receipt.json records both the valid pre-grid
+normalization gate and a failed exploratory all-solvers-1e-12 diagnostic.
+Only that stronger solver diagnostic was overbroad; the receipt's M2 PASS
+remains the authoritative pre-grid gate.
 
 Source inspection resolves the earlier normalization uncertainty: `IEP_CORE` and `IEP_KRYLREORTH` both finish by copying the diagonal, multiplying the first superdiagonal by the raw subdiagonal, multiplying the second superdiagonal by its two neighboring raw subdiagonals, and setting subdiagonal to1. `IEP_KRYL` already has unit subdiagonal. All returned H matrices therefore use the same monic upper-Hessenberg convention as our first-e1 path after integer-coordinate conversion. The returned V/W from CORE/REORTH retain different basis scaling; they must not be substituted into a monic-H eigenvector identity without adjusting the basis.
 
@@ -69,6 +72,12 @@ committed two-family `c4-m2-bits-receipt.json`. The latter was produced
 **after** the full bit-transport grid, by applying the fidelity checker to
 that full output. Its two selected N6 cases confirm the final transport and
 normalization; it was not the gate used to authorize that same grid.
+The pre-grid values (reference 8.657548935371719e-17, CORE
+7.483383125034624e-15) differ slightly from the post-grid bit-transport
+values (7.184849749441866e-17 and 7.47242929475129e-15). Decimal versus
+bit transport is a likely explanation, but this cause has not been
+proved by a controlled comparison. The difference remains unexplained
+beyond that hypothesis; neither receipt is replaced.
 
 Only after the pre-grid M2 and M4 gates pass:
 
@@ -121,3 +130,35 @@ compares the full healthy scientific payload and every CSV byte, exercises
 native failure rows, runs the byte-exact extracted C2 checker, and refreshes
 `c1-error-comparison.json` against the final comparison receipt. See
 [response-code-checks.md](response-code-checks.md) and its JSON record.
+
+### Audit-02 documented implementation limits (code unchanged)
+
+`c4_compare.py` handles the native producer's fixed schema, including
+breakdown rows. Its malformed-input handling is not a general schema or
+nonfinite-value validator: a list-valued coefficient, string-valued
+measurement entry or integer-valued method source can still raise an
+exception; NaN coefficients can be reported `ok`. These shapes cannot be
+produced by `c3_grid.py`'s fixed schema and `allow_nan=False` output.
+MINOR-6 is addressed by documenting this boundary, without changing code
+or the authenticated healthy payload/tables.
+
+`response_code_checks.py` is a historical regression script without CLI
+arguments. It requires the exact `/tmp` paths EXTERNAL, NATIVE, BASELINE
+and MATRIX declared at its top; the last is
+`/tmp/nn-mop-conditioning-20261106/c1-matrix-all.json`. Its work directory
+is fixed at `/tmp/nn-mop-response-code-checks`. The source/grid/native and
+comparison regeneration commands above describe those producers, but a
+fresh platform run need not reproduce authenticated historical raw bytes;
+the baseline digest assertion requires the preserved authenticated raw.
+The matrix raw pin and diagnostic provenance are recorded in
+[response-code-checks.md](response-code-checks.md). No standalone
+regeneration recipe for that authenticated matrix raw is supplied here.
+
+A successful regression run overwrites the tracked `c1-error-comparison.json`
+and `response-code-checks.json`, including platform strings. Its
+`source_commit` is hard-coded to `3d5b29d7aa8c1274793139d7040695035e1bda22`,
+not a dynamically observed checkout identity. Running it is therefore not
+a read-only verification command. MINOR-7 takes the optional documented-
+limitation disposition; an output-argument refactor is not performed in
+this documentation-only preparation step. The audit-02 failed invocation
+and receipt-only coverage remain recorded in the audit.

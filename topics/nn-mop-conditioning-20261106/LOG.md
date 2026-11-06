@@ -352,3 +352,9 @@ hard-coded /tmp inputs are absent; that part is receipt review only.
 There are nine MINOR findings and five NOTEs; MINOR-6 and MINOR-7 are optional
 code hardening. Stage PR; Codex PR preparation is [handoff 05](handoffs/05-pr-prep.md).
 
+
+## 2026-11-06 — Codex PR preparation checkpoint
+
+Rules read at full head `2f23ee8f554eada30673840318db90b675baba67`; main remains `76ba4214b100c86a44941f5e9a662ce9ce48efb8`. Codex gpt-6.1-sol medium orchestrates documentation and registration; bounded Sol high work prepared the accepted PD-T448 classification. No new mechanism or novelty claim is generated, so a new novelty gate is not applicable. Audit02 MINOR corrections are in response-02.md; optional code changes were declined in favor of documented limitations. Result-bearing code/data are unchanged.
+
+The full union reservation check covers main and all four open draft PRs plus all merged/closed PR statuses. [ALLOCATIONS.md](ALLOCATIONS.md) reserves fresh headroom; [inventory](preparation/inventory.md) records 16 theory results, three scoped negatives and 14 ideas. No new LIT record. Final assignment and readiness remain to follow.

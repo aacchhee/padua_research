@@ -21,8 +21,8 @@ Written analytic proof of the fixed-pair sharp rate, with explicit bound
 
     kappa_N <= 3,000,000 N^13 (5+2sqrt(6))^(N−1), N>=2,
 
-in ../theory/c2-sharp-upper.md. Status PROVED as mathematical development;
-independent checks and Claude audit pending. Every a/b field is included.
+in ../theory/c2-sharp-upper.md. Status PROVED. Every a/b field is included. Review and process records are
+in [audit-02](../audit-02.md) and [LOG](../LOG.md).
 The proof uses Bernstein jets at .4 and .5, two rectangular residue
 contours separated by Re u=sqrt(6)−2, and top-three-coefficient extraction.
 Common node forcing is split into a shared analytic term and constant

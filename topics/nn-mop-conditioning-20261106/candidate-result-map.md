@@ -1,6 +1,6 @@
 # Provisional candidate-to-result map — audit response
 
-All IDs below are namespace-qualified. A candidate suffix and a result
+IDs below are namespace-qualified except the two retained historical gauge aliases documented here. A candidate suffix and a result
 suffix need not match. No accepted final ID is renumbered or allocated
 here. `PD-T?nn-mop-cond-codex-31` is retained as the existing measured
 alias; its ad hoc suffix is not treated as a new global numbering rule.
@@ -23,7 +23,7 @@ Final identifiers and all original-to-final aliases are PR-preparation work.
 | IDEA?nn-mop-cond-codex-C3-03 | Deferred roundoff-source theorem; no proved excess-loss or new PD-N |
 | IDEA?nn-mop-cond-codex-C3-04 | Abandoned exact-evaluator restatement; no implementation or new PD-N |
 | Assigned C4 source/coordinate comparison (not a new mechanism IDEA) | PD-T?nn-mop-cond-codex-C4-01 distinct finite comparison, MEASURED; the local interface check remains a verification record |
-| IDEA?nn-mop-cond-response-gauge | PD-T?nn-mop-cond-response-gauge finite positive optimizing gauges, PROVED |
+| IDEA?nn-mop-cond-codex-response-gauge-01 (historical alias IDEA?nn-mop-cond-response-gauge) | PD-T?nn-mop-cond-codex-response-gauge-01 finite positive optimizing gauges, PROVED (historical alias PD-T?nn-mop-cond-response-gauge) |
 
 The full C2 subform histories and required IDEA fields are in
 [candidates-response-C2.md](candidates-response-C2.md); C1/C3 fields remain

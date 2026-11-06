@@ -56,3 +56,19 @@ Verdict: **variant with difference**, a finite optimization
 consequence of C1's existing taper and the audit's supplied observation.
 Historical novelty is unclaimed. Candidate and rejected/deferred subroutes
 are retained in `response-gauge-candidate.md`.
+
+## 2026-11-06 audit-02 literature-search addendum
+
+Read INDEX rows LIT-507/508 and both linked literature records at PR
+preparation; no new primary-source read or priority claim is implied.
+The records retain their developer-only source-check qualification.
+
+| Indexed shortlist | Existing content and coverage | Distinction |
+|---|---|---|
+| LIT-507, Laudadio–Mastronardi–Van Assche–Van Dooren (2024) | Diagonal balancing of the MOP recurrence matrix for forward eigenvalue conditioning. Record: arXiv v1 pp. 1–4, 16–23 inspected; balancing derivation in §6 and journal version not read. | H to nodes/weights, rather than fieldwise inverse conditioning or b-invariant attainment. |
+| LIT-508, Laudadio–Mastronardi–Van Dooren (2025) | Symmetrizing diagonal similarity; Theorem 1 p. 627 and power-of-2 scaling p. 628. Record: listed primary pages inspected; §5 backward-stability proof not read. | Forward matrix scaling, rather than the NN six-field infimum and explicit b-dominance optimizer. |
+
+These are the closest indexed gauge-selection sources; their recorded
+forward-problem scope does not establish the present inverse-conditioning
+attainment theorem. LIT-508's reported power-of-2 scaling is relevant to
+representability, but supplies no representability guarantee for (6).

@@ -20,7 +20,7 @@ For general fixed distinct binomial parameters, the [parameter lower theorem](th
 
     rho(p1,p2) = (p1+p2-2p1p2+2sqrt(p1p2(1-p1)(1-p2)))/abs(p2-p1).
 
-It is a lower base, not a proved matching general formula. For Hahn, [all-N normality](theory/c2-hahn-normality.md) and a simple [all-N lower bound](theory/c2-hahn-lower.md) with base2 are proved analytically for the exact gamma=1 benchmark. A stronger [balanced-terminal theorem](theory/c2-hahn-terminal-rate.md) proves an exact terminal parity-row rate rho_H=12.1136005841…, the largest root of r^4−14r^3+24r^2−14r+1, and a full-map liminf lower bound of that base. It covers both size parities and fixed masses. This is not equality for the full Hahn condition: a matching full-map upper remains OPEN. Original PD-T448 retains its other unresolved cases and metrics.
+It is a lower base, not a proved matching general formula. For Hahn, [all-N normality](theory/c2-hahn-normality.md) and a simple [all-N lower bound](theory/c2-hahn-lower.md) with base2 are proved analytically for the exact gamma=1 benchmark. A stronger [balanced-terminal theorem](theory/c2-hahn-terminal-rate.md) proves an exact terminal parity-row rate rho_H=12.1136005841…, the largest root of r^4−14r^3+24r^2−14r+1, and a full-map liminf lower bound of that base. It covers both size parities and fixed masses. This is not equality for the full Hahn condition: a matching full-map upper remains OPEN. PD-T448's remaining OPEN conjuncts in its single metric are itemized in [classification-proposal.md](classification-proposal.md).
 
 The finite Hahn fitted ratios below rho_H are consistent with the proved asymptotic lower rate: polynomial factors affect finite ratios, so a finite fit is not a limiting-rate estimate.
 

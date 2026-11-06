@@ -96,8 +96,8 @@ output conditioning, which is infinite on sensitive zero entries.
 
 Overall status: PROVED, by the written proof. No numerical premise.
 Candidate disposition: retained variant of PD-T432/437; historical novelty
-unclaimed. Exact finite-N gauge minimizers and general-family sharp rates
-remain OPEN. The separate `c1-gauge-sharp-rate.md` now combines this
+unclaimed. Historical pre-response scope: exact finite-N gauge minimizers
+and general-family sharp rates remained OPEN. The separate `c1-gauge-sharp-rate.md` now combines this
 lower bound with C2's sharp upper to prove the Krawtchouk NN gauge rate.
 
 ## Depends on
@@ -169,8 +169,9 @@ More strongly, choose s_(0,0)=1 and s_nu=t^(|nu|-1) for |nu|>=1.
 All A entries of degree>=2 shrink by t, while degree-one A entries are
 unchanged; all u derivatives vanish for a fixed gauge. Consequently the
 infimum can discard highly sensitive offdiagonal rows in a field-sup
-metric and need not be attained. This is a feature of the declared
-metric; the invariant B fields still prevent a small Krawtchouk condition.
+metric and need not be attained in general. The dated addendum below
+records the subsequently proved b-dominant benchmark attainment. This is
+a feature of the declared metric; the invariant B fields still prevent a small Krawtchouk condition.
 
 An input-dependent section can normalize one nonzero coefficient to a
 constant via (6), making its derivative zero. This is not equivalent to
@@ -207,3 +208,5 @@ standalone gauge algebra or infer an asymptotic theorem from finite fits.
 2026-11-06, Codex gpt-6.1-sol xhigh, source/rules
 `b4a04981d42c7cd872957facf5e3995e4096ca67`. New explicit gauge definitions
 and quantified consequence of the retained terminal witness.
+
+2026-11-06 audit-02 addendum: [response-gauge-infimum.md](response-gauge-infimum.md) proves finite positive attainment of the exact b-field lower for both b-dominant benchmarks, for all N>=2 in all six stated input models. The generic non-dominant optimizer problem remains OPEN.
