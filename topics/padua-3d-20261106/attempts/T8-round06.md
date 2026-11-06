@@ -20,9 +20,7 @@ two-round scope-exhaustion wording. Underlying E/T4/H39 kills remain intact.
 
 Root linked the prospective protocol in gates.md and signaled execution
 before the initial runs. The protocol existed locally before those runs;
-its publication, together with Part A response02, is root commit
-7f773ebe6ca04dbfdcb743b22e92da6469741748, before this first counted
-research boundary. Root alone writes the pushed LOG/counter entry.
+its publication, together with Part A response02, is root commit 7f773ebe6ca04dbfdcb743b22e92da6469741748, made after these initial runs (its Phi3b append already reports their outcomes) and before this first counted research boundary. Pre-run existence of the initial protocol is developer attestation, not established by publication order. Root alone writes the pushed LOG/counter entry.
 This entry is the actual execution append; the initial prospective entry
 above is preserved as history rather than represented as an executed run.
 
@@ -61,6 +59,7 @@ t8-r06-measurements.md and t8-r06-phase-strata.md (MEASURED runs).
 All computed finite statements retain MEASURED status until independent
 rerun; quality always stays MEASURED. Receipts are1.7–6.8KiB, source/hash/
 command/version pinned, unique scratch summaries regenerate-only.
+2026-11-06 audit-03: independent reruns are recorded in evidence/independent-r06-t8-*.json and independent-checks-round06.md; no status change here.
 
 ## Next separated structural continuation
 
@@ -85,7 +84,7 @@ direct divisor proofs behind all four zero-count stopping rows.
 - s1: cubic M21 positive, z(1,4,6), phases(257,1028,10080)/10794,
   two-prime rank20. Sampled Lambda31.23177 loses to Leja13.17472/QR8.32067.
   n4M36 and n5M57 produced no certified finalist and remain rank OPEN;
-  complete count enumeration at n6M85 is impossible since3 does not divide85.
+  complete count enumeration at n6M85 finds no count-permitted stratum, since3 does not divide85.
 - s2: n3M22 count obstruction, all1260 count strata.
 - s3: n3M23 count obstruction, all1386 strata;7 does not divide23.
 - s4: n3M24 all45 count-permitted strata sampled, no certified finalist,
@@ -102,6 +101,7 @@ the pushed boundary counter. This is no whole-direction theorem and no
 old scope-exhaustion stop. Every rank question outside proved coverage
 remains OPEN. Independent arithmetic reruns are being arranged by root;
 this worker does not claim an independent rerun or publication authority.
+2026-11-06 audit-03: independent reruns are recorded in evidence/independent-r06-t8-*.json and independent-checks-round06.md; no status change here.
 
 ## Reading chronology supplement
 

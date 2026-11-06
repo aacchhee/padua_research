@@ -49,3 +49,9 @@ not justify110. Even then all phase/weight extensions remain OPEN.
 
 2026-11-06 Codex: maintain CONDITIONAL status rather than importing18/19
 from a secondary lead. Threshold arithmetic is separate from source status.
+
+## Audit-03 auditor fix — 2026-11-06 (Claude, claude-opus-5-5 xhigh audit; applied by mechanical subagent)
+
+2026-11-06 audit-03 pointer: the density premise is now imported at primary-statement level in [t9-r06-packing-source.md](t9-r06-packing-source.md) (PD-T?padua-3d-20261106-codex-T9-r06-01; PD-N?…-T9-r06-04, strictly positive full-support weights). This record's own status and text are unchanged.
+
+The handoff06 record [t9-r06-packing-source.md](t9-r06-packing-source.md) proves the n>=110 consequence for strictly positive full-support unshifted weights, with the primary-read Betke–Henk statement as an explicit LITERATURE dependency. This record's statement and CONDITIONAL status are unchanged.

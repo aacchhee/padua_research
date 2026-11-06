@@ -6,6 +6,8 @@ explicit source-dependent theorems, scoped obstructions and measured
 construction tests. It makes no historical novelty or priority claim.
 PartA was published before the counted new research boundaries.
 
+Provenance: T10 and the ranked routes were proposed in Claude's [handoff06](handoffs/06-work.md); the M=N=20 orbit and the Betke–Henk and Chkifa leads come from Claude's [audit-02](audit-02.md) (the latter two from recollection).
+
 ## Audit02 response and scope
 
 [Response02](response-02.md) disposes C1–C4 and n1–n6. The old direction-
@@ -59,7 +61,7 @@ node sets in that last catalogue. Finite samples are **MEASURED**:
 | Best n2 census set |7 | Ties the frozen primary QR/Leja sample |
 | Best256-draw n3 set | about12.3115 after refinement | QR sample is8.3207 |
 | Best n3 phase optimization | about9.7490 after refinement | A finite improvement, no all-degree rule |
-| Unequal noncyclic n6 union | about219.11 after refinement | Escapes the common-subgroup trace obstruction, still poor |
+| Unequal noncyclic n6 union | about219.11 after refinement | Avoids the equal-common-H n6 screen failure (0/128, MEASURED), still poor |
 
 Phase optimization and equal/unequal noncyclic unions are executed at
 n3..6, or their empty/obstructed classes are proved. The primary inherited
@@ -103,8 +105,8 @@ not only Haar pushforward weights. If exactness reaches degree2n-1, then
 The local [positive-weight witness](theory/t9-r06-phase-weight-boundaries.md)
 forces every nonzero dual vector to have l1 length>=2n. For three-coordinate
 relations, a polynomial of degree||k||1 equals u² on the nodes, has integral0,
-and is positive at the identity node. Strict positivity at every node is
-essential. Arbitrary phases and supports with zero-weight omitted nodes
+and is positive at the identity node. Nonnegative weights with positive identity mass suffice
+for the witness; strict positivity on all of X makes the node count |X|. Arbitrary phases and supports with zero-weight omitted nodes
 remain outside the result; tensor Gauss supplies an explicit phase boundary.
 
 The external18/19 theorem is verified at the primary Betke–Henk octahedron

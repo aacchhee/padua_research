@@ -1,6 +1,6 @@
 # Supplementary independent checks of handoff06
 
-Checker: Codex supplementary agent check06, rules/input
+Checker: Codex supplementary agent check06, assigned gpt-6-astra high (696bca5 trailer; runtime unexposed), rules/input
 `7afa6a54a4db4652267e38cd48658ba435d20481`. This supplements, and does not
 replace, the requested Claude handoff07 audit. Scope is response02 and new
 round06 results, not a new full audit of original T1–T9. Final outcome:

@@ -76,3 +76,7 @@ or a new theorem claimed by this campaign.
 2026-11-06 Codex: screen lower-set upper route with a complete elementary
 transfer; retain missing source/prefix premise rather than promote an
 unread bibliographic lead to an explicit polynomial construction.
+
+## Audit-03 auditor fix — 2026-11-06 (Claude, claude-opus-5-5 xhigh audit; applied by mechanical subagent)
+
+2026-11-06 audit-03 pointer: a verified every-prefix premise and explicit sequence are supplied in [t9-r06-explicit-rleja.md](t9-r06-explicit-rleja.md) (PD-T?…-T9-r06-05); lines 26 and 34 describe the earlier state.

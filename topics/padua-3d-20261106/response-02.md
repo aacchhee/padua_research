@@ -19,7 +19,7 @@ Root has applied the excluded-file dated stop corrections, namespaces,
 metadata/inventory companion and retrospective E gate. New aggregation
 metadata preserves historical source identities. The original T9 receipts
 remain intact; the actually executed replay adds missing metadata explicitly
-as a new observation. Manifest refresh accompanies the evolving new batch.
+as a new observation. The manifest v2 at 696bca5 pins these code/data files.
 The findings below have explicit dispositions before any PartB round counts.
 
 ## MAJOR findings
@@ -33,8 +33,8 @@ T9 resumes density verification, class lower bounds, finite complement,
 benchmarking and explicit upper-bound source verification. Handoff06
 restarts every counter at zero, with its stricter whole-route stop rule.
 A failed fixed rule, an unverified source or absent new premise alone does
-not exhaust a direction. Requested original-location text is in the
-integration notes; no retroactive approval of the old stops is asserted.
+not exhaust a direction. The dated withdrawals are in rounds.md,
+attempts/T7–T9.md and report-continuation-04.md; no retroactive approval of the old stops is asserted.
 
 **C2 — fixed as an explicitly retrospective comparison.**
 [The T9 gate](novelty-gate-T9.md) now logs actual repository search terms
@@ -78,7 +78,7 @@ CONDITIONAL PD-N T9-01 satisfies L5 at allocation.
 | Finding | Disposition and durable evidence |
 |---|---|
 | n1 Part A hygiene | Fixed copied candidate fields by marking genuinely unassessed retrospective fields honestly and removing the wrong T5-01 verdict from other candidates. Repaired all 21 stale m5 re-audit sentences with completed audit02 pointers, the T3 short-relation namespace, canonical deviation pointers, completed integration wording and nonexistent integration-note citations in response01. The unsupported AC-high attribution is withdrawn in response-deviations-01; root applies the same LOG correction and repairs garbled report wording. |
-| n2 T7 references/provenance | Full namespaced mapping and per-candidate aliases supplied in integration notes for the route worker. Parameter-choice history cannot be reconstructed: preregistration-T7.md now says so, without asserting absence of trials or an unrecorded symbolic pilot. Timing remains developer attestation. Exact T7-06 existence remains computer-assisted PROVED; root adds that qualifier in results. |
+| n2 T7 references/provenance | The C4 mapping and aliases are in the table above, theory/t7-rank-two.md and theory/t7-one-phase-refutation.md; attempts/T7.md's bare labels are history, decoded by its dated route-map note. Parameter-choice history cannot be reconstructed: preregistration-T7.md now says so, without asserting absence of trials or an unrecorded symbolic pilot. Timing remains developer attestation. Exact T7-06 existence remains computer-assisted PROVED; root adds that qualifier in results. |
 | n3 T8 gate, scope and pin | E's missing prospective gates.md entry is canonically disclosed; root's dated retrospective row does not backdate it. T8 phase theory now points to every-phase M=10 PD-N T8-02 and keeps omitted-degree sequences open. Stale rerun statements are corrected by dated notes. t8_cyclic.py now pins historical U/O/P and E preregistration hashes separately and uses isolated/configurable scratch. New isolated controls and full n2 census reproduce scientific fields and raw hash; historical receipts remain unchanged. |
 | n4 T9 thresholds/source/escapes | T9 square-wave theory records 2420 versus the old bound1 and 4592 versus the operative constant. Conditional packing theory adds unions to escapes, names Minkowski1904 and auditor's Betke–Henk confirmation lead, and removes normalization as an unresolved dependency because density is linear-invariant. No source-status upgrade occurs in this legacy correction. |
 | n5 attribution | T7 finite reduction and T8 cyclic cap credit Claude handoff04 for the fold bound. T9 reduction/literature credit its packing sketch, 2D check, 19n^3/108, threshold110 and escape list. The T1 coordinator sketch remains an additional lead. Attempt/report corrections are supplied for their owners. |
@@ -104,10 +104,7 @@ status upgrade. No new density, Subbotin or prefix-bound theorem is imported.
 
 Material response changes for focused review: C4's scoped PD-N split/mapping,
 C2 comparisons/retention and disposition history, and T8 code metadata/path
-behavior. Accepted mathematics otherwise remains unchanged. Excluded-file
-integration and current manifest verification belong to the root before any
-Part B round counts; independent Claude audit covers material response and
-new work under handoff06's eventual next handoff.
+behavior. Accepted mathematics otherwise remains unchanged. Root integration followed in 7f773eb; the focused Claude review is handoff07 (audit-03).
 
 Final worker validation: `git diff --check` passed after the whitespace fix;
 all local Markdown links in the principal new response/gate/split records

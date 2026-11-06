@@ -179,8 +179,8 @@ Final route dispositions under handoff06:
 | D0 | Direct actual-node rank20 certificate and distinct monomial replay pass | Finite validation only |
 | C | Complete exact n2 all-phase classification; actual n3 cost/unresolved pilot;256-draw exact random-phase n3 fallback | Full all-phase n3 OPEN |
 | Q | All36 n2 classes,54 n3 sample positives,13478 n3 pilot positive witnesses and fixed T7-06 measured; controls and selected refinements run | Degree-uniform quality OPEN |
-| Phi | Frozen phase optimization n3/n5 gives exact rationalized full-rank witnesses; n4 rank>=2 class empty; whole no-fold n6 and rank3 n5 obstructed by proved trace theorem | Rank2 n3/n5 not universally killed; no competitive early-kill claim |
-| U | Equal common-H and unequal noncyclic2–4-coset screens actually run n3..6; exact minimal full-rank unequal winners at every degree | Samples do not exclude all unions |
+| Phi | Frozen phase optimization n3/n5 gives exact rationalized full-rank witnesses; n4 rank>=2 class empty; whole no-fold n6 and rank3 n5 obstructed by proved trace theorem | Rank2 n3/n5 not universally killed; no competitive early-kill claim; no degree-uniform H_n was proposed or prospectively saved (only n3/n5 have nonempty rank>=2 no-fold classes in n3..6) |
+| U | Equal common-H and unequal noncyclic2–4-coset screens actually run n3..6; exact minimal full-rank unequal winners at every degree | Samples do not exclude all unions; only generic no-fold phases were screened — folded special-phase unions and unequal/mixed cyclic unions were not screened by T7 |
 
 Every listed handoff06 route therefore has its actual finite result,
 permitted fallback, or proved class obstruction. This permits the

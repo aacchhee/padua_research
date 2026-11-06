@@ -133,6 +133,8 @@ along. Bibliographic limits are in literature-T7; no external theorem
 is used in the proof. 2026-11-06, Codex, assigned gpt-6.1-sol xhigh,
 rules e5b6445; provisional ID.
 
+2026-11-06 (audit-03 note): the enumeration and symmetry quotients are implemented and the n2 census completed in [t7-r06-n2-census.md](t7-r06-n2-census.md); n3 remains OPEN.
+
 
 ## Dated audit-02 attribution and split — 2026-11-06
 

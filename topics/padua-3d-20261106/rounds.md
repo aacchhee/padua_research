@@ -23,14 +23,6 @@ route is not closed by saying "programme exhausted" or "requires premises".
 If blocked, record measured feasibility/source evidence, try the listed
 fallback and continue to the next route. The old counts below are history.
 
-## Historical handoffs01/04 counts
-
-Audit02 C1 correction — 2026-11-06: the preceding direction-wide stops
-for T7(2/25), T8(2/25) and T9(1/25) are withdrawn. Shortcut refutations,
-fixed-set cubature obstructions and P/E rule kills remain valid; none
-covered every untried direction route. Handoff06 restarts all four counters
-and applies its stricter rule. The historical counts below are preserved.
-
 Final handoff06 stopping record: T7.C delivers complete n2 and the exact
 n3-sample fallback after measured n3 infeasibility, with every discovered
 survivor quality-tested; Q/Phi/U all have outcomes. T8's five routes have
@@ -42,6 +34,14 @@ folding/projection theory outcomes. Thus(a) applies in each direction.
 No stop uses an unsupported all-family norm comparison or silently closes
 a broader OPEN target. T10's last two internal deliveries are published
 together as its second counted round, not invented extra rounds.
+
+## Historical handoffs01/04 counts
+
+Audit02 C1 correction — 2026-11-06: the direction-wide stops recorded below under "Handoff04 final boundaries"
+for T7(2/25), T8(2/25) and T9(1/25) are withdrawn. Shortcut refutations,
+fixed-set cubature obstructions and P/E rule kills remain valid; none
+covered every untried direction route. Handoff06 restarts all four counters
+and applies its stricter rule. The historical counts below are preserved.
 
 | Direction | Completed rounds | Current action | Consecutive rounds without progress |
 |---|---:|---|---:|
@@ -105,6 +105,8 @@ the distinct restarted T7–T9 budgets in handoff04. A new-direction round
 counts only when its completed result and LOG entry have actually been pushed.
 
 ## Handoff04 final boundaries — 2026-11-06
+
+Withdrawn as direction-wide stops under audit-02 C1 (2026-11-06); see "Historical handoffs01/04 counts" above. Preserved as history.
 
 T7/T8 round1 is published in51c031a. T7 round2, T8 round2 and T9 round1
 are published with the final output checkpoint and linked LOG entry. T9's

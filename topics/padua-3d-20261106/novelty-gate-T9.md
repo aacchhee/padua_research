@@ -94,3 +94,7 @@ suggestion, not pursued; no separate mathematical failure or PD-N. The
 previous deferred wording and subsequent change are preserved in the
 canonical deviation record. Full namespaced candidate IDs, aliases and
 resume conditions are in [candidate retention](candidates-T9-response-02.md).
+
+## Audit-03 auditor fix — 2026-11-06 (Claude, claude-opus-5-5 xhigh audit; applied by mechanical subagent)
+
+Attribution (audit-02 n5, recorded 2026-11-06): the T9-HAAR/PACK packing sketch, fold bound, 2-D check, 19n^3/108, threshold 110 and escape list were supplied by Claude's [handoff04](handoffs/04-work.md); the "T1 open-class packing sketch" in the table above is an additional lead. See [T9-HAAR](theory/t9-haar-packing-reduction.md).
