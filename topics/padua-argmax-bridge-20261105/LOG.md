@@ -441,3 +441,11 @@
 
   Retained or rejected candidates are listed with scoped reasons. No PD-N and no final IDs.
 - Stage stays **WORK** per AC's explicit handoff 07 instruction; PR27 stays draft. Codex implements next under handoff 08. The closed 15/15 campaign count is unchanged; resumed work is recorded as a separate step. Final audit, registry application and readiness are pending; only AC merges.
+
+## 2026-11-06 — AC authorizes a fresh25-round post-audit campaign
+
+- AC: “Codex (gpt-6-astra high): Continue codex/padua-argmax-bridge-20261105. I authorize up to 25 new rounds under same rules as before”. This is a NEW allowance, not a reset of the closedC01–C15 campaign. Record post-audit roundsD01–D25; do not stop after a small checkpoint while useful authorized work remains. Existing kill/progress gates and bounded prospective plans apply.
+- RulesAGENTS/WORKFLOW/CODEX read at02beaef2b22f8232286713dab0a1b7c95582ce13 andverifiedbyte-identicalatnewremotehead4cf68980fa0538b53e2aea7174ed6e5782a34908. Fast-forwardedcleanlythroughClaudeinterimoutputs0cef8cb andhandoff08. Main76ba4214b100c86a44941f5e9a662ce9ce48efb8 unchanged. Requestedrootmodelgpt-6-astra high; servingmetadataunexposed. Runtimecloudskillread; currentrunningobservations, restrictedpolicyenforced, noVPN/secretbindings.
+- Claudeinterimaudit supports500000theoremwithnineMINORrecordsfindings; noBLOCKING/MAJOR. Its n-independent upstreamcore coverage limitation remains explicit forlaterfinalaudit. Claude'snewideasrankP4cornerconstantsandP1component/error/phase-localmarginfirst. StageWORK, PR27draft; nofinalreadinesspromotion.
+- D01 parallelboundedwork: answerF1–F9recordonly; P4fullychargedC07corner-majorantmeasurement<=300CPU; P1signedfar-component/T1cdiagnostic<=600CPU. Mathematicalcontracts/geometry precedeexecution. ReuseexistinggatedClaudeP4/P1candidateswithoutclaimingnewmechanism/priority; anymateriallydifferentcandidategetsfreshgate. No source/model/oldquantifierchange, extraoldtechnologydegreecertificate, producerlaunch, majorcleanuporSyvertpack.
+- Currentconservativegeneratedoutput7,923,569bytesafterClaudeoutputs<ACtemporary10,000,000ceiling. Pushauthorizationpersists. Handoff08receivesthe25-roundredirectiononlyinitsstatus; handoff09opensnextafterthisauthoritycheckpoint.
