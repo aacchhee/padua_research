@@ -1,6 +1,6 @@
 # Handoff 05 — NN MOP conditioning — PR preparation
 
-- Status: open
+- Status: done in 446b14d4ceb1e96cb8148e463872e7306f8051bb
 - Previous handoff: [04-reaudit.md](04-reaudit.md)
 
 - Next agent / model / effort: Codex, `gpt-6.1-sol` medium. Use high for the PD-T448 PARTIAL registry wording if needed.
