@@ -65,3 +65,13 @@ midpoint bias, ruling out uniform C(1+log n)/n decay. The old half-million
 result remains intact. Signed diagnostics expose geometry cancellation;
 new joint/bias-aware estimates are the next task, not more precision on
 the failed envelopes. [D01 record](../topics/padua-argmax-bridge-20261105/campaign-post-audit-20261106.md).
+
+D02 is complete,2/25 new rounds. Independently accepted analytic proofs
+give actual-corner descent lambda<=Lambda_c-(alpha²+beta²)/4 on both
+inward rho<=1/2 patches for every n>=10000. This is local; global argmax
+still starts at500000. The far work proves the exact full-phase cutoff
+bias, identifies the uniform true limiting constant and gives an exact
+all-n boundary error formula. Its practical interior rate remains OPEN.
+[Corner review](../topics/padua-argmax-bridge-20261105/independent-checks-D02-corner.md),
+[far review](../topics/padua-argmax-bridge-20261105/independent-checks-D02-far.md).
+D03 continues with joint cancellation and cheap near-only feasibility.

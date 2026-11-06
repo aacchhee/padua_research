@@ -168,3 +168,28 @@ Geometry-corrected signed measurements also expose large mesh/interior
 cancellation at the requested smaller degrees. A joint estimate with an
 explicit bias allowance remains open; no second correction was inserted.
 The campaign continues with a separately gated follow-up.
+
+## Post-audit D02 — stronger local corners and the true far constant
+
+The new rectangular strip allocation halves the previous collision-strip
+charge. Analytic reciprocal-sum bounds give K_new<7.772, and the exact
+finite corner baseline proves lambda<=Lambda_c-(alpha²+beta²)/4 at both
+actual inward rho<=1/2 corner patches for every integer n>=10000.
+This is a local result: the global threshold remains500000.
+[Three proofs and distinct reconstruction](independent-checks-D02-corner.md).
+All44 independent exact scalar comparisons pass; its sole MINOR historical
+status clarification is resolved by a dated addendum.
+
+The far work now identifies the exact signed cutoff bias throughout the
+closed phase diamond and declares the full limiting model M_infty.
+Uniform convergence and a geometry-valid auxiliary-parameter error bound
+are proved, including axes, collisions and a=0. The bound is too large
+to give a useful lower onset. On every a=0 boundary edge the remaining
+error has an exact all-n formula with a uniform O(n^-4) remainder.
+[Distinct review and proof links](independent-checks-D02-far.md).
+The practical full-interior C(1+log n)/n contract remains OPEN.
+
+The new25-round campaign is2/25 complete. D03 addresses cancellation
+before absolute bounding and cheap near-only feasibility. Existing n32
+records have280 far,52 near-labelled and32 outside leaves, but no
+per-class CPU was saved. Counts alone supply no throughput projection.

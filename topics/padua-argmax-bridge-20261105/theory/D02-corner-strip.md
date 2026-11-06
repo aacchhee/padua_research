@@ -184,3 +184,13 @@ allocation is structurally separate from frozen D01. Its later
 MEASURED sanity subtraction, if run, belongs in the D02 attempt.
 2026-11-06; rules/input084a64f6465956f9c75b5538f83752c30318f151;
 Codex parent-assigned Sol xhigh, serving metadata unexposed.
+
+## Dated record clarification — 2026-11-06
+
+In the initial Split-from line, OPEN denotes the parent target's
+preregistration status. The separate D02 sum and comparison proofs now
+establish the uniform bracket and actual-corner descent for n>=10000;
+the [distinct review](../independent-checks-D02-corner.md) accepts their
+mathematics. This resolves MINOR D02-C1 without changing any preceding
+byte, theorem, proof, hypothesis or degree floor. Formal Claude audit
+remains separate.
