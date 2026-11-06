@@ -74,3 +74,30 @@ family optimization. Keep every considered variant and record exact
 parameters before proving a strict bound. No fit is used as evidence.
 Any later corner-model prediction, including parity, must be sent to the
 coordinator for publication before S4 final fits are read or run.
+
+## Round 3 prospective kernel refinement gate
+
+Before defining or numerically constructing a Bessel corner model, ran
+an additional blob-verified pinned-tree search over1618 matching Markdown
+files for Bessel, Hankel transform, Mehler, hard edge, reproducing kernel,
+corner kernel and Legendre/kernel synonyms. It found28 lines in26 files;
+full temporary results: /tmp/S3-kernel-search.json. No Bessel corner
+operator predecessor was found in this bounded local screen. This is not
+historical novelty clearance. The modified-Bessel quadrature literature
+hit has unrelated hypotheses and supplies no inherited theorem.
+
+Closest relevant mathematical/candidate records were read fully:
+PD-N048's continuous Legendre endpoint rank correction, F4's complete
+ideas and attempts, and the previously read D3/PD-T295/377 and supplied
+IDEA-470 route. F4's attempt was verified against the pinned tree before
+copying. Other kernel hits concern known corrected Padua Chebyshev
+cardinals or general positive-cubature saturation, not this continuous
+Legendre corner scaling; no claim from those files is inherited here.
+
+Candidate refinement: use positive CC floors to discard growing-index
+nodes in operator norm, and use the continuous reproducing kernel to
+identify each finite block. This retains the complete signed form and
+does not invoke the rejected negative-corner subtraction in PD-N048.
+It is an implementation of the supplied corner-limit direction; no new
+mechanism or priority claim is asserted. Exact operator and parity
+prediction will be recorded before model eigenvalue computations.

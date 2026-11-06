@@ -1,0 +1,134 @@
+{
+  "status": "MEASURED",
+  "input_sha": "2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861",
+  "prediction_commit": "513f3bd802abf23f9c1470930a68f4e09e2a8c77",
+  "started_utc": "2026-11-06T11:48:53.645979+00:00",
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/S2_model.py",
+    "--sizes",
+    "32",
+    "64",
+    "128",
+    "256",
+    "512",
+    "--quad-periods",
+    "2000",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/check-S2-model-replay.json"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "producer_sha256": "4c2ad09ad14bfe180243d0e57b8987ec2688bc61bd5e379e141d73aa0cb5723a",
+  "finite_N_fit_executed": false,
+  "infinite_model_tail_certified": false,
+  "description": "Finite Galerkin eigenvalues and numerical quadrature checks of the registered exact endpoint form.",
+  "quadrature": [
+    {
+      "value": 13.785815932624372,
+      "quadrature_reported_error": 1.5305330261643806e-13,
+      "analytic_absolute_tail_bound": 1.1111111111111116e-13,
+      "T": 6283.185307179586,
+      "i": 1,
+      "j": 1,
+      "closed_form": 13.785815932624551,
+      "absolute_difference": 1.794120407794253e-13,
+      "within_reported_quad_plus_tail": true
+    },
+    {
+      "value": -4.424171347483943,
+      "quadrature_reported_error": 1.1906250120874337e-13,
+      "analytic_absolute_tail_bound": 4.4444444444444464e-13,
+      "T": 6283.185307179586,
+      "i": 1,
+      "j": 2,
+      "closed_form": -4.424171347484103,
+      "absolute_difference": 1.5987211554602254e-13,
+      "within_reported_quad_plus_tail": true
+    },
+    {
+      "value": 24.97976407907557,
+      "quadrature_reported_error": 2.773310923029403e-13,
+      "analytic_absolute_tail_bound": 1.7777777777777786e-12,
+      "T": 6283.185307179586,
+      "i": 2,
+      "j": 2,
+      "closed_form": 24.97976407907621,
+      "absolute_difference": 6.430411758628907e-13,
+      "within_reported_quad_plus_tail": true
+    },
+    {
+      "value": 4.605601539731034,
+      "quadrature_reported_error": 1.0574216642831381e-13,
+      "analytic_absolute_tail_bound": 1.0000000000000004e-12,
+      "T": 6283.185307179586,
+      "i": 1,
+      "j": 3,
+      "closed_form": 4.605601539731293,
+      "absolute_difference": 2.5845992013273644e-13,
+      "within_reported_quad_plus_tail": true
+    },
+    {
+      "value": -5.5853245778649905,
+      "quadrature_reported_error": 1.9054449802639922e-13,
+      "analytic_absolute_tail_bound": 4.0000000000000015e-12,
+      "T": 6283.185307179586,
+      "i": 2,
+      "j": 3,
+      "closed_form": -5.585324577866122,
+      "absolute_difference": 1.1315393066979595e-12,
+      "within_reported_quad_plus_tail": true
+    },
+    {
+      "value": 35.647214804647795,
+      "quadrature_reported_error": 3.957635863987874e-13,
+      "analytic_absolute_tail_bound": 9.000000000000004e-12,
+      "T": 6283.185307179586,
+      "i": 3,
+      "j": 3,
+      "closed_form": 35.647214804650325,
+      "absolute_difference": 2.5295321393059567e-12,
+      "within_reported_quad_plus_tail": true
+    }
+  ],
+  "galerkin": [
+    {
+      "J": 32,
+      "lambda_max": 1.004420045396333,
+      "relative_generalized_residual": 7.306217895198613e-16,
+      "seconds": 0.0011269179999544576,
+      "change_from_previous": null
+    },
+    {
+      "J": 64,
+      "lambda_max": 1.0044298834885106,
+      "relative_generalized_residual": 1.2987494852488219e-15,
+      "seconds": 0.0006483869999556191,
+      "change_from_previous": 9.838092177583135e-06
+    },
+    {
+      "J": 128,
+      "lambda_max": 1.0044362411630081,
+      "relative_generalized_residual": 1.1809595393363126e-15,
+      "seconds": 0.0024755909998930292,
+      "change_from_previous": 6.357674497525778e-06
+    },
+    {
+      "J": 256,
+      "lambda_max": 1.004436493737461,
+      "relative_generalized_residual": 1.779455239065742e-15,
+      "seconds": 0.009470469999996567,
+      "change_from_previous": 2.525744529080498e-07
+    },
+    {
+      "J": 512,
+      "lambda_max": 1.0044369188646673,
+      "relative_generalized_residual": 1.0506407905416032e-15,
+      "seconds": 0.03398548099994514,
+      "change_from_previous": 4.251272063271472e-07
+    }
+  ],
+  "elapsed_seconds": 0.20521235899991552,
+  "limits": "No certified infinite Galerkin tail and no full actual-CC spectral limit. Floating residuals do not certify eigenvalues."
+}

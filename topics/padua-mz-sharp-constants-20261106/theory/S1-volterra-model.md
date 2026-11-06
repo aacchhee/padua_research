@@ -43,6 +43,10 @@ No literature theorem is imported.
 No numerical computation is needed or claimed. Source/rules2143ad6.
 Developer requested gpt-6.1-sol xhigh; runtime model metadata unexposed.
 The [gate](../novelty-gate-S1.md) records bounded predecessor coverage.
+Supplementary distinct Astra reconstruction accepted the corrected
+absolute-square display at SHA256
+13975d980264e3b89304ebd14f20f8d07207fe3ec066fb019566615038f65f0e;
+see ../independent-checks-S1-S3.md. Required Claude audit remains separate.
 
 ## Proof
 

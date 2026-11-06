@@ -133,3 +133,22 @@ priority claim; handoff literature formulas are not imported.
 Developer requested gpt-6.1-sol xhigh; runtime metadata unexposed.
 The coordinator receives this file before K1 final numbers and must
 commit it before sharing those numbers. The target is still OPEN.
+
+### Dated K2 disposition, appended after registration
+
+The coordinator committed this prediction in977c07a before K1 fits.
+K1 subsequently passed its prescribed two-window stability test on
+each parity, with final-window fitted intercept about13.06114. Its
+7.268% difference from pi⁴/8 exceeds K2's5% threshold. Accordingly
+this **model route is operationally rejected and stopped**. No justified
+revision of the leading coefficient was found; the permitted revision
+is unused. The original criterion has not been changed.
+
+This measured gate is not a mathematical refutation of the continuum
+norm or of the independently completed one-sided theorem
+[S1-sharp-one-sided](S1-sharp-one-sided.md). An uncontrolled finite-fit
+intercept above a proved limsup is compatible with finite-window bias;
+no bound on that bias or claim that the fit calculation is wrong is
+made. A matching lower bound and the original PD-T020 limit are OPEN.
+The earlier numbered transfer obligations describe the stopped route,
+not authorized continuing work after the kill.

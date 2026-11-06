@@ -41,3 +41,11 @@ Register the exact microscopic endpoint variational norm in [S2-endpoint-model.m
 ## 2026-11-06 — K3 numerical protocol before fitting
 
 Use the already registered disjoint raw-grid windows j8–14 and j15–20, parity separate with physicalN. Fit lambda_max−1=c0+a(Nref/N)^2+b(Nref/N)^2 log(N/Nref), Nref the smallest N in each window, by unweighted float64 SVD with columns scaled to unit2norm and rank3 required. Limit display1+c0. Require max absolute residual<=1e-7 inA and<=1e-8 inB, intercept agreement<=1e-6 across windows and final parity agreement<=1e-6; otherwise INCONCLUSIVE, no posthoc alternative fit. Raw residual/constraint guards apply. Original K3 kill is absolute model-norm discrepancy>1e-3 to finalB. Model Galerkin J32/64/128/256/512; one J1024 extension only if final change>1e-5. Galerkin stability is MEASURED; without a tail bound, no certified full norm is claimed.
+
+## 2026-11-06 — K3 measured comparison
+
+Both upper-spectrum fits are USABLE under all preregistered checks. Final-window limits1.0044369722946567 (even),1.0044369722985076 (odd); window drift<=1.15e-9 and parity difference3.85e-12. S2 finiteJ512 proxy1.0044369188646673 differs by<=5.344e-8<1e-3: operational MEASURED PASS. No certified infinite Galerkin tail or finite-spectrum limit is claimed. [Comparison](evidence/S4-k3-comparison.json). K4 and the2-D K5 prediction are still pending.
+
+## 2026-11-06 — S3 exact operator / K5 registration before model computation
+
+Register [S3 corner operator](ideas/S3-corner-operator.md): H=L²({a,b>=0,a+b<=1},ab da db), psi_jk=J0(pi j a)J0(pi k b), B_K=−16 sum_((1+j)(1+k)<=K,j+k even) e_j e_k(−1)^j |psi_jk><psi_jk|. Predicted slopes are inf/sup spectrum of the operator-norm limitB, equal on even and oddm. Two active corners predict identical blocks; other corner leading blocks are zero. This is a prospective model assertion with proof OPEN at registration, not an observed fit or established parity agreement. Its finite-rank norm convergence and kernel transfer must be proved. K4 has no decimal model prediction or slope-window protocol yet; K5's2-D prediction is equality, registered before S3 model computation and any new S4 parity fit.

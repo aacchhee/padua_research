@@ -66,3 +66,19 @@
 ## Upper-model numerical registration
 
 - After publication513f3bd, S2 may evaluate the registered endpoint model with J32/64/128/256/512 and one conditional J1024. [Gates](gates.md) now registers the precise K3 upper-spectrum numerical extrapolation before execution. S4 will use frozen raw rows, guard and scaled SVD checks; no posthoc fit alternative. A numerically stable Galerkin norm is not a proved full-operator norm.
+
+## Decisive S3 corner spectral-limit allocation
+
+- Allocate gpt-6-astra ultra to the decisive corner-kernel convergence step behind S3's uniform finite-rank tail: prove an elementary Bessel reproducing-kernel limit, quantitative fixed-index error and vanishing cross-corner blocks. This is a hard limit/error identification explicitly authorized by handoff01; routine development remains gpt-6.1-sol xhigh. Full sharp-limit status stays OPEN until the complete operator norm transfer is proved and independently checked.
+
+## S2/S3/S4 subsequent checked progress
+
+- [S3 full signed logarithmic reduction](theory/S3-full-form-log-model.md) proves |Q_m−log(R)L_m|<=4096 in continuous quadratic-form norm, ||L_m||<=120 and normalized extremal transfer error4300/logm for everym>=4, both parities. [Distinct Astra check](independent-checks-S3-model.md) accepts full-grid proof and exact diagnostic707264 coefficient cases. No practical asymptotic scan window is certified by the coarse constant. Model convergence/sharp values remain OPEN at this checkpoint.
+- S2's [fixed-trial theorem](theory/S2-fixed-trial-limit.md) supplies explicit fixed-J form convergence and proposed halfline norm liminf; supplementary review is underway. The [finite model solve](evidence/S2-model.json) givesJ512 maximum1.0044369188646673, MEASURED only, no certified infinite tail. MINOR top-DCT display factor1/N corrected without changing cancellation, model prediction or code.
+- K3's prescribed finite-spectrum fits are USABLE and agree with the finite model proxy within5.344e-8; operational MEASURED PASS, no limit proof. [Fit](evidence/S4-k3-fit.json), [comparison](evidence/S4-k3-comparison.json).
+- S4 condenses all42 numerical rows into one7163byte [essential evidence file](evidence/S4-essential-cc.json); fit adapters use it in a fresh repository-only replay and reproduce both original result objects exactly. Original code/receipts retained. [Reproduction record](attempts/S4-essential-replay.md). Distinct adapter check is underway. Full raw receipt is optional provenance off-Git, not required for regenerating the committed fit claims; archival pending.
+- [S1/S3 supplementary check](independent-checks-S1-S3.md) accepts the one-sided CC theorem, corrected model norm and strict carrier improvement. Subsequent review-link addenda do not change their proofs. S1 is stopped under K2; S2/S3 continue only their recorded progressing directions.
+
+## S3 exact corner model preregistration
+
+- After the supplementary-checked uniform finite-family reduction, S3 obtains a prospective120/K corner-tail norm estimate and registers [the exact signed Bessel corner model](ideas/S3-corner-operator.md) before numerical model computation or final slope fits. K5 predicts equal limiting extrema on both parities; proof of model convergence/transfer remains OPEN at this registration. A separate Astra ultra developer owns the decisive elementary Legendre/Bessel kernel error, not independent audit.

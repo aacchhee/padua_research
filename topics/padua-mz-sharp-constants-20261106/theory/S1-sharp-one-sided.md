@@ -62,6 +62,11 @@ The proof below was developed without reading K1 final data.
 Bounded local predecessor screen: ../novelty-gate-S1.md. Requested
 developer model gpt-6.1-sol xhigh; runtime metadata unexposed.
 
+Supplementary distinct Astra review reconstructed the frozen proof at
+SHA256 b560b08db44f25417e36c4ff53f76baf0f14e2ae9130eb7457d1249b11a32eb0
+and returned PASS for its exact one-sided scope; see
+../independent-checks-S1-S3.md. The required later Claude audit is separate.
+
 ## Proof
 
 ### 1. Degree and discrete energy

@@ -1,0 +1,17 @@
+{
+  "status": "local pending AC-designated archival; nonessential full raw provenance",
+  "artifacts": [
+    {
+      "path": "/tmp/sharp-S4/raw-cc-scan.json",
+      "bytes": 55192,
+      "sha256": "7ce16e5c61fb82fe1fc4125bbd9570fdc7579db7aa139cd116b4807322f500f2",
+      "source_commit": "977c07ae193f981b8d151fa766fdcfa3f19ee8ff",
+      "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-mz-sharp-constants-20261106/code/S4_scan.py --output /tmp/sharp-S4/raw-cc-scan.json",
+      "checker_command": "python topics/padua-mz-sharp-constants-20261106/code/S4_essential.py --raw /tmp/sharp-S4/raw-cc-scan.json --output topics/padua-mz-sharp-constants-20261106/evidence/S4-essential-cc.json --check",
+      "summary": "evidence/S4-raw-scan-summary.json",
+      "essential_evidence": "evidence/S4-essential-cc.json",
+      "retention": "retain local until authorized archive available; exact raw bytes include timing and cannot be guaranteed on regeneration",
+      "retrieval": "local path in current environment; optional full raw is not remotely archived. Numerical claims regenerate from committed essential file and source code."
+    }
+  ]
+}

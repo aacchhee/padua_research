@@ -99,7 +99,7 @@ use the exact degree-constrained polynomial
 
     p_(N,j)=ell_(N,j)−2(−1)^j ell_(N,0).
 
-The DCT-I coefficient ofT_N is (2/N)sum c_k(−1)^k p(x_k),
+The DCT-I coefficient ofT_N is (1/N)sum c_k(−1)^k p(x_k),
 where c_0=c_N=1/2 and all other c_k=1. The two nonzero nodal values
 of p_(N,j) cancel this coefficient exactly; p_(N,j) belongs Pi_(N−1).
 This is not the inadmissible full-space trial ofPD-N006.
@@ -157,3 +157,9 @@ Stop after two consecutive rounds without progress, preserving every route.
 2026-11-06, S2 Codex mathematical developer; requested gpt-6.1-sol xhigh,
 runtime metadata unexposed. Exact operator prediction sent to coordinator
 before any new model numerical solve or final S4 fit was read.
+
+
+2026-11-06 supplementary-check correction: the T_N coefficient display
+was corrected from2/N to1/N (the top DCT-I coefficient has the additional
+half factor). The exact cancellation, trial family, model expression,
+matrices and every numerical calculation are unchanged.

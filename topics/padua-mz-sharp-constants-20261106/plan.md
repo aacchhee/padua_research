@@ -9,3 +9,4 @@ Input head: 2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861; current main/base: 76ba421
 5. Push round/gate checkpoints, open a draft PR, and preserve attempts and evidence manifests. Manuscript changes are proposals inside this topic only. Finish with a new numbered handoff identifying actual remaining work or the Claude audit.
 
 No final ID range is needed for initial exploration. No new mechanism or literature priority claim is made by this plan. Large artifacts stay local pending AC-designated cold storage; no Syvert use.
+
