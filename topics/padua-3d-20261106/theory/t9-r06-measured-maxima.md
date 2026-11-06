@@ -1,4 +1,4 @@
-# MEAS?padua-3d-20261106-codex-T9-r06-01 — frozen refinements through degree16
+# Historical measurement record — frozen refinements through degree16
 
 Aliases: T9-R06-M; T9-R06-M05. Provisional measurement record, not a proved asymptotic theory or global ID allocation.
 
@@ -47,3 +47,11 @@ The T8 partial4..9 sample has only6 points (no13..16 holdout): alpha3.330891, po
 ## Evidence and boundaries
 
 Receipts: `t9-r06-qr.json`, `t9-r06-localdet.json`, `t9-r06-snapshots.json`, `t9-r06-t10-owner.json`, and `t9-r06-controls.json`, each <16KiB. Hashes, versions, seed0, sources, exact commands, raw policy, and replay instructions are in the receipts and `t9-r06-run-manifest.json`. Snapshot refinement cost16.799 CPU seconds plus0.652 seconds for owner controls; no missing-data extrapolation or asymptotic gate kill was performed. This completes the registered refinement/fit route with measured outcomes; certified global suprema remain a separate open problem.
+
+## Canonical namespace — 2026-11-06 response03
+
+The old nonstandard MEAS?padua-3d-20261106-codex-T9-r06-01 is a
+historical alias, not a namespace for allocation. The complete canonical
+record is [PD-T?padua-3d-20261106-codex-r08-T9-measurements](r08-t9-measured-maxima.md),
+with unchanged MEASURED scope and all template fields. The body above
+is preserved historical content, not a duplicate current claim home.

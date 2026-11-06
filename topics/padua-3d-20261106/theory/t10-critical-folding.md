@@ -31,3 +31,8 @@ Attempted mechanism: IDEA?padua-3d-20261106-codex-T10-03, replacing an actual si
 Source seed: Cools–Lyness Table3 enhanced degree6; packing optimum: LIT?padua-3d-20261106-codex-T10-03, Betke–Henk §5 p31. Local proof above establishes the stated family facts without relying on the packing theorem. `t10-census.json` supplies finite m1..5 checks, but these measurements are not needed for the written proof. Independent mathematical audit remains required by the workflow.
 
 History:2026-11-06 Codex, Sol xhigh assigned, rules7afa6a54. Original19/18 existence target retained OPEN in `t10-fold-target.md`.
+
+Dated D3/template companion2026-11-06: the precise two-dimensional
+Padua compatibility check is in [response03 records](../response-03-records.md#d3-companion--compatibility-with-two-dimensional-padua).
+This specific3D sign-closure counterexample does not exclude Padua's
+sign-closed2D group or every critical lattice.

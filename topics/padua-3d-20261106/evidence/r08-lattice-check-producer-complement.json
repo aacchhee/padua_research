@@ -51,6 +51,15 @@
       "448",
       "56",
       "/tmp/padua-r08-independent-lattice-9042e1c/producer-complement/complement-n5.jsonl"
+    ],
+    [
+      "/tmp/padua-r08-independent-lattice-9042e1c/producer-enum",
+      "complement",
+      "6",
+      "1",
+      "672",
+      "84",
+      "/tmp/padua-r08-independent-lattice-9042e1c/producer-complement/complement-n6.jsonl"
     ]
   ],
   "rows": [
@@ -345,6 +354,56 @@
       "minimizer_fold_hist": [],
       "minimizer_example": null,
       "exact_rank_cases": 1
+    },
+    {
+      "n": 6,
+      "N": 84,
+      "completed_det_interval": [
+        1,
+        672
+      ],
+      "complete": true,
+      "summary": {
+        "type": "summary",
+        "mode": "complement",
+        "n": 6,
+        "det_lo": 1,
+        "det_hi_requested": 672,
+        "fold_cap": 84,
+        "hnf_total": 200821041,
+        "after_axis_pair_prune": 155216629,
+        "admissible": 12910075,
+        "small_count": 0,
+        "min_det": 0,
+        "min_fold": 91,
+        "min_fold_det": 432,
+        "min_fold_hnf": [
+          6,
+          0,
+          6,
+          6,
+          6,
+          12
+        ],
+        "elapsed_seconds": 125.636
+      },
+      "raw": {
+        "path": "/tmp/padua-r08-independent-lattice-9042e1c/producer-complement/complement-n6.jsonl",
+        "bytes": 83049,
+        "sha256": "d5b1c3b0605b3df142888f1ba6c2fa4ea7db33ccedb9e9283d1f67b0315027d5"
+      },
+      "fold_rank_hist": [],
+      "full_rank_small_count": 0,
+      "full_rank_small_examples": [],
+      "minimizer_count": 0,
+      "minimizer_fold_hist": [],
+      "minimizer_example": null,
+      "exact_rank_cases": 0
     }
-  ]
+  ],
+  "exact_rank_raw": {
+    "path": "/tmp/padua-r08-independent-lattice-9042e1c/producer-complement/complement-exact-ranks.json",
+    "bytes": 19434,
+    "sha256": "7bc6453fc69f480a944b18a7f384a8cbdd3e51f07d7db0b2a8e040a9fb996feb"
+  }
 }

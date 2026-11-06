@@ -39,3 +39,19 @@ Hence this complete explicit parity-anisotropic family cannot itself be a minima
 All probes stayed within the prospective15-second cap. Exact folded payload hashes and all109 rows are in `evidence/t9-r06-complement.json`, under16KiB. Total CPU0.2281 seconds. At109 the family has338855 points and rank227920. A dense float64 evaluation matrix would require617854652800 bytes, and a square inverse415580211200 bytes; neither was allocated. The registered fallback is the exact count/Gram proof plus sparse controls, rather than an infeasible dense solve.
 
 The global finite-complement problem remains different: unrestricted determinant-minimizer enumeration is certified only through n3 by T10, literature/structured candidate data cover through16, and the present additional data cover an explicitly stated family through109. No minimum determinant, minimum folded count, or exhaustive all-lattice census is claimed at17..109. This is concrete bounded work in the complement, with an exact all-degree family obstruction; it does not silently turn seed data into global minima.
+
+## Template/status clarification — 2026-11-06 response03
+
+ID kind: PD-T. Split from: none. Split into: none; the negative
+oversampling consequence has the separate canonical home
+[r08-negative-t9-parity-oversampling.md](r08-negative-t9-parity-oversampling.md)
+as a corollary, not a supporting-task split. Overall **PROVED** for
+the local analytic family count and Gram identities. Status by part:
+local formulas PROVED; evaluations/tabulations and timed probes provide
+finite verification only. Depends on PD-T?padua-3d-20261106-codex-T10-04.
+No external density bound enters that analytic proof. Definitions A,B,F,N
+and full-support/zero-phase assumptions are explicit above. Open: global
+complement outside the searched finite ranges; see round08 unrestricted
+records. The old dense-memory figures never measured a lattice census.
+History: response03 supplies template fields and separates family
+verification from the actual unrestricted E3 census.

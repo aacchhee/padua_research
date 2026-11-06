@@ -23,7 +23,7 @@ All IDs below are qualified provisional aliases; none is a final allocation.
 
 The old T7 table's four “Active” cells describe its pre-run launch state.
 Root can replace each with “Historical launch status; current disposition:
-[candidates-round08](../candidates-round08.md)” and link this file from
+[candidates-round08](candidates-round08.md)” and link this file from
 T10's compressed paragraphs. No currently disposed rule is rescued by the
 historical word. The handoff08 lattice rerun is authorized work, not an
 assertion that its output already exists in this records-only file.

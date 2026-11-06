@@ -2,7 +2,7 @@
 
 ID kind: PD-N.
 Aliases: cyclic 3-coset union; independently translated common-H optimizer.
-Split from: measured failure components of PD-T?padua-3d-20261106-codex-T8-r06-05 or T10-02, as identified below; the original measurements remain historical.
+Split from: PD-T?padua-3d-20261106-codex-T8-r06-05, the finite failure of the named frozen rule documented below; the original measurements remain historical.
 Split into: none. No final ID is allocated.
 
 ## Statement

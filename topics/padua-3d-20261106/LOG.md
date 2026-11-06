@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/08-response.md](handoffs/08-response.md)
+- Stage: AUDIT · Next: `Claude (Opus 5.5, xhigh): Continue codex/padua-3d-20261106.` · Handoff08 closes after the output commit; successor: [handoffs/09-audit.md](handoffs/09-audit.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -526,3 +526,62 @@ their corresponding runs, with publication and execution timing distinguished.
   Eight mutation controls pass; this snapshot's manifest is generated
   against its staged tree, so ongoing worker edits are not misattributed.
 - response03 and records/theory remain in progress. Handoff08 stays open.
+
+## 2026-11-06 — handoff08 completed output — Codex, gpt-6-astra high
+
+- [Report](report-round08.md), [response03](response-03.md), records and
+  technical-hygiene companions dispose E1–E6 and every returned item.
+  Accepted old mathematics is retained; audit/handoff instruction bodies
+  are protected. Missing-home corrections and scoped failures are explicit.
+- T10/T9 now separate determinant, folded count and full-rank count. Exact
+  determinant minima through16 include5772 at16, independently enumerated
+  by a different method; n4..16 use explicit imported packing. Local
+  computer-assisted global folded/full-rank minima through5 and no exact-N
+  positive full-support unshifted rule at n3..7 follow from q/8 and exact
+  ranks. Small positive rules at n3/4/5 can be singular. No all-phase or
+  all-degree theorem is inferred; global larger minima stay OPEN.
+- Actual higher cost is preserved: n7's producer caps after q881 and921,
+  then its final922..960 segment completes88.0856seconds. Every per-q
+  scientific count agrees with the checker's separate complete304.789s
+  replay. This covers584906253HNFs and21354010admissible lattices, zero
+  at-most120-node sets. n8 was not run; no unmeasured infeasibility claim.
+- T8 new3..8 scope completes: every even degree is excluded analytically,
+  exactly8cubic normalized triples survive a complete exact741census, and
+  measured n3/5/7 corrected scores are9.7888/70.3729/136.6904. QR losses
+  exclude promising status; the literal two-Leja-loss trigger is not met.
+  The post-quality exact-tie correction is disclosed, original run retained.
+  Old-nine finite existence is a narrowly split material PROVED proposal.
+- Two distinct Sol xhigh supplementary checkers actually rerun consequential
+  computation. Lattice checks include alternate congruence windows through16,
+  complete low-degree alternate enumerations, independent monomial rational
+  ranks, exact actual-node witnesses and separate full higher replays.
+  T8 checks include all741exact ranks, fresh-prime witnesses and qualities.
+  These do not replace Claude's required focused audit.
+- E4 convention is proposed uniformly: PROVED with explicit LITERATURE
+  dependency when exact primary statement/normalization and application
+  have been checked. AC decides; no external proof is claimed local.
+  T10 log3 relabel, finite status upgrades, q2cardinality repair, tie repair
+  and result-bearing source/evidence changes are material for re-audit.
+- Canonical chronology limits stay in deviations01/02. The new T8 gate
+  reading qualification is canonical in attempts/T8-round08.md. A published
+  pre-run protocol is not retroactive full-table reading compliance.
+- The single v4 recursive code/data manifest stores lossless RFC1924base85
+  SHA-256 identities and covers new C++/nested/other suffixes. Eight actual
+  mutation controls reject changes; current code/data pins pass. Prose pins
+  are removed with dated historical metadata, not fabricated source matches.
+- Validation: all scientific receipts parse and remain below16KiB; current
+  source/data identities and owned links are checked. Protected audit reports
+  retain quoted example-relative links; they are not edited or counted as
+  newly introduced link defects. Raw outputs are local regenerate-only with
+  byte/hash identities, no cold-storage delivery. Final IDs/ranges: none.
+- Counted rounds continue T7=3,T8=3,T9=3,T10=3/25. Each new direction
+  boundary has actual required-route outcomes under handoff06(a); no
+  all-degree exhaustion or budget-target repetition is claimed.
+- Stage AUDIT. After publishing this output, close handoff08 by status only
+  and publish handoff09 for Claude Opus5.5 xhigh focused material re-audit.
+  Main refreshed unchanged f70a260; only AC merges.
+
+- Final executed integration checks: manifest204artifacts,994297code/data
+  bytes,15804-byte single manifest;104existing-path identities in new
+  receipts match exactly, zero owned-link errors, all topic JSON parse/size
+  checks pass, diff whitespace clean, scope/protected-body checks pass.

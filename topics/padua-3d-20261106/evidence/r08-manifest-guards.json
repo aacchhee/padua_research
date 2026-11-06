@@ -2,10 +2,10 @@
   "schema": "padua-r08-manifest-guards-v1",
   "rules_input": "9042e1c42964150f30fdbe8563c12ba6c6a8692a",
   "command": "python topics/padua-3d-20261106/code/r08_manifest_check.py --out topics/padua-3d-20261106/evidence/r08-manifest-guards.json",
-  "source_sha256": "e143499dbd3e04d297f00a0a3bdc237b1bdcbaf8e410a38f0ccfa8a99d37cd30",
-  "manifest_code_sha256": "f9eb90f03915934d2f605a91e033db71d2c558d1350981ec565363b2c76ab504",
+  "source_sha256": "67e51a5d11744b795c87b81f6a179ca0b320e323c99eae21a77ab729078624b3",
+  "manifest_code_sha256": "e186ff2c4ea2311a6837beb6d3578ce509429c7f06ae7eb9e43defc8f251ca14",
   "python": "3.12.14",
-  "scratch": "/tmp/padua-r08-manifest-gwsmsxd_",
+  "scratch": "/tmp/padua-r08-manifest-o35k3wfb",
   "baseline_and_restored_pass": true,
   "cases": [
     {

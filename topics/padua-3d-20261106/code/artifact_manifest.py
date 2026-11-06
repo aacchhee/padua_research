@@ -25,7 +25,7 @@ def artifacts():
 
 
 def packed(rows):
-    """Lossless compact identities: SHA-256 bytes in RFC4648 base64."""
+    """Lossless compact identities: SHA-256 bytes in RFC1924 base85."""
     result = {"code": {}, "evidence": {}, "other": {}}
     for row in rows:
         path = Path(row["path"])
@@ -35,7 +35,7 @@ def packed(rows):
             key = path.relative_to(group).with_suffix("").as_posix()
         else:
             group, key = "other", path.as_posix()
-        result[group][key] = [row["bytes"], base64.b64encode(
+        result[group][key] = [row["bytes"], base64.b85encode(
             bytes.fromhex(row["sha256"])).decode("ascii")]
     return result
 
@@ -56,12 +56,12 @@ def main():
                           "bytes": sum(row["bytes"] for row in observed)}))
         return
     output = {
-        "schema": "padua-3d-code-data-manifest-v3",
+        "schema": "padua-3d-code-data-manifest-v4",
         "rules_input_sha": "9042e1c42964150f30fdbe8563c12ba6c6a8692a",
         "historical_rules_input_sha": "ccd9e905d19c0c625c196c4a3f3e707058ed042a",
         "generate": "python topics/padua-3d-20261106/code/artifact_manifest.py",
         "verify": "python topics/padua-3d-20261106/code/artifact_manifest.py --verify",
-        "format": "code/evidence map relative stems to [bytes, RFC4648 base64 SHA-256]; append .py/.json. other keys are full topic-relative paths. Recursive scope excludes __pycache__ and .pyc only.",
+        "format": "code/evidence map relative stems to [bytes, RFC1924 base85 SHA-256]; append .py/.json. other keys are full topic-relative paths. Recursive scope excludes __pycache__ and .pyc only.",
         "artifacts": packed(observed),
         "inherited_inputs": inherited,
         "commands": "Commands and execution metadata are in the hash-pinned receipts and linked attempts; historical metadata companions preserve missing-field limits.",

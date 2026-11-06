@@ -58,3 +58,7 @@ audit02/T9 (recollection). No underlying proof changes. The historical
 finite-search boundary above is superseded by the round08 lattice record
 when completed; it was not an unrestricted complement classification.
 Open: phases, omitted zero-weight supports, self-contained density proof.
+
+Canonical negative consequence: [PD-N?padua-3d-20261106-codex-T9-r06-04](r08-negative-t9-unshifted-minimal-cubature.md).
+It depends on the determinant/node bound above; it is not a claim that
+task provenance or a supporting lemma is a target partition.

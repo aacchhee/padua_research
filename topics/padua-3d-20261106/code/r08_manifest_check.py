@@ -1,4 +1,4 @@
-"""Exercise manifest v3 on a disposable snapshot; never mutate live evidence."""
+"""Exercise manifest v4 on a disposable snapshot; never mutate live evidence."""
 import argparse
 import hashlib
 import json

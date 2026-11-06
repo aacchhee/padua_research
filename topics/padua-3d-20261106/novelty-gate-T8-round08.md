@@ -29,6 +29,10 @@ No new PDF, external theorem dependency, exhaustive priority claim or new
 historical novelty is introduced. Existing source records have bounded
 primary/abstract coverage, which this rereading does not expand.
 
+Dated coverage qualification: the final check found one truncated unrelated
+MZ current-disposition block; exact reading chronology and its limit are
+recorded once in attempts/T8-round08.md under Gate coverage qualification.
+
 ## Closest-entry and obstruction table
 
 | Predecessor, read | Exact distinction or applicable obstruction |
@@ -114,3 +118,36 @@ Reclassification is not a new construction idea. Any separate finite-existence
 record explicitly lists the old statement, exact finite scope, inherited
 reduction, certificates/checkers, independent execution and material-change
 re-audit requirement. It never upgrades floating quality or a whole mixed file.
+
+## Executed disposition append — after published gate69694f3
+
+The registration-time pending fields above remain history; actual outcomes:
+
+- H's all-degree first-unit exact-half-shift construction is
+  **REJECTED: refuted**: every even n>=2 fails by the hand-proved fixed-node
+  trace obstruction, PD-N?padua-3d-20261106-codex-T8-r08-01. The requested
+  n4/6/8 cases have ceilings34/82/163. Other phases/nonunit classes remain
+  OPEN; a changed hypothesis is required to escape this theorem.
+- Cubic H has exactly8unisolvent generators among741pairs, with exact
+  coefficient-rank classification and equal determinants; computer-assisted
+  PROVED PD-T?padua-3d-20261106-codex-T8-r08-01. The audit lead is reproduced;
+  this is not a newly attributed discovery. All eight qualities are retained.
+- Hdet completes all741/6105/28441pairs at n3/5/7 with exact-positive
+  finalists. The finite sampled competitiveness subclaim is
+  **REJECTED: failed** at n5/7 under the promised QR criterion:
+  PD-N?padua-3d-20261106-codex-T8-r08-02, MEASURED. The literal two-Leja-loss
+  D2 trigger is **not met**, since n7 is the sole eligible degree>=6.
+  Broader odd-degree quality remains OPEN/deferred; resume only with a
+  separated structural/inverse rule and fresh preregistered degrees.
+- The cubic exact tie/lex correction is a disclosed post-run repair, not a
+  prospective selector claim; canonical chronology is attempts/T8-round08.md.
+- The old9finite M=N existence claim meets the explicit computer-proof
+  checklist, with own-prime independent replay. Separate finite PROVED
+  split proposed as PD-T?padua-3d-20261106-codex-T8-r08-02; old floating
+  measurements and unrestricted target are unchanged. This and all new
+  mathematical/tie changes are material for focused Claude re-audit.
+
+No final IDs were allocated and no shared registry was edited. Every tested
+(n,z) tuple inherits H/Hdet, including all pruned/failed rows; negatives are
+scoped above, and raw tuple screens remain uniquely identified regenerate-only
+scratch. See attempts/T8-round08.md for actual commands and stopping scope.

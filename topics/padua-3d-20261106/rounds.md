@@ -12,10 +12,10 @@ PartA must dispose C1–C4 and n1–n6 in response-02.md.
 
 | Direction | New completed rounds / ceiling | Required routes | Current state |
 |---|---:|---|---|
-| T10 | 2 /25 | dual-lattice census; projection quality; QR/LU and structured extraction; ratio/projection theory | audit03 reopens T10.1; extraction kill met n6/7, n8..16 post-kill |
-| T8 | 2 /25 | admissible degrees; phase optimization; nearby/odd moduli; special phases; cyclic coset unions | all listed routes have actual outcomes; stop under(a), broader ranks/target remain OPEN |
+| T10 | 3 /25 | dual-lattice census; projection quality; QR/LU and structured extraction; ratio/projection theory | reopened exact objectives complete to stated finite limits; stop(a), global larger objectives OPEN |
+| T8 | 3 /25 | admissible degrees; phase optimization; nearby/odd moduli; special phases; cyclic coset unions | new half-shift3..8 scope complete; even obstruction, finite cubic classification and measured odd outcomes; stop(a) |
 | T7 | 3 /25 | all-coset census and listed fallback; survivor quality; phase optimization; noncyclic unions | complete n2 independently verified; prescribed fallback and all Q/Phi/U outcomes; stop(a) |
-| T9 | 2 /25 | packing source/extensions and finite complement; class lower bounds; refined benchmarks; explicit R-Leja upper theorem | all P/B/M/U outcomes incl109-degree family fallback; stop(a), global complement OPEN |
+| T9 | 3 /25 | packing source/extensions and finite complement; class lower bounds; refined benchmarks; explicit R-Leja upper theorem | unrestricted complement measured/executed upward, finite exact exclusions and higher cost recorded; stop(a), remaining complement OPEN |
 
 The valid early-stop tests are exactly handoff06(a) every listed route has
 an outcome, (b) a theorem closes the direction, or(c) AC stops it. An untried
@@ -131,3 +131,20 @@ accepted route outcomes stand. E2 corrects the extraction disposition:
 kill met at n6/7; n8..16 post-kill. Starting counters remain
 T7=3,T8=2,T9=2,T10=2; the new completed output boundary increments only
 the directions with actual new work, never the number of internal runs.
+
+## Completed handoff08 boundary — 2026-11-06
+
+T7 stays3/25; T8,T9,T10 each advance once from2to3/25 when this result
+and LOG boundary are pushed. Internal determinant windows, independent
+reruns, rank continuations and tie correction are not separate rounds.
+
+| Direction | Required new work | Valid handoff06(a) outcome |
+|---|---|---|
+| T10 | Reopened determinant/fold/full-rank objectives | Exact minima through16; global folded/full-rank minima through5; measured higher complement/caps, larger objectives explicitly OPEN |
+| T9 | Unrestricted finite complement | Actual q<=8N census upward, positive low-cardinality rules through5, deficient exact ranks, n6 exclusion and higher coverage/cost; no family-matrix substitute |
+| T8 | Half-shift3..8, optional finite-status review | Even-degree hand obstruction, complete cubic census, exact positive witnesses and measured odd-degree D2 outcome; material old-nine finite PROVED proposal |
+
+Stopping rests on actual results and measured resource boundaries, not
+all-degree exhaustion. n8..109 unrestricted complement and broad phased
+Padua-type existence remain OPEN. No25-round ceiling was treated as a
+target or reset. E4/protocol decisions for AC stay in canonical records.

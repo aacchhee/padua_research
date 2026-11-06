@@ -74,3 +74,26 @@ claim had the exceptional q=2 case wrong. The non-unisolvence argument
 above supplies the correct scope; phase-blind short-dual inference is
 still refuted exactly as before. The tabulation wording also applies
 audit03 companion T9-F7. This is disclosed for focused material re-audit.
+
+## Canonical claim homes and template fields — 2026-11-06 response03
+
+ID kind: PD-T. Split from: none. Split into: the independently named
+annihilator, tetrahedron and phase-counterexample subsections now have
+standalone homes below; the positive identity-mass witness keeps this ID.
+Definitions: Pi_D, full cosine support and dual L are defined in the
+statement above. Assumptions: zero phase and nonnegative weights with
+positive identity mass for the witness; other subsections have their own
+stated assumptions. Status by part: the witness is local PROVED, the LP
+controls are MEASURED, and all broader lower-bound/construction targets
+are OPEN. Depends on the elementary cosine identity; the packing theorem
+is a separate explicitly imported consequence, not a proof input here.
+
+Canonical homes: [annihilator](r08-t9-phase-annihilator.md),
+[tetrahedron](r08-t9-tetrahedron-formula.md),
+[phase counterexample](r08-negative-t9-phase-dual.md). Those records
+carry exact statements, proofs, D3 and remaining obligations. This older
+combined text is retained for history and does not allocate duplicate IDs.
+Open: a class-specific all-degree coset Lebesgue lower bound; resume with
+a defined class/cardinal-kernel argument, not a rank-only annihilator.
+History: audit03 accepted the local proofs; response03 adds canonical
+homes and fixes the exceptional q2 cardinality sentence.

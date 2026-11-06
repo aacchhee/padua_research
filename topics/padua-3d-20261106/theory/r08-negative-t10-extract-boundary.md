@@ -2,7 +2,7 @@
 
 ID kind: PD-N.
 Aliases: T10-02; extract-boundary; delete innermost layer first.
-Split from: measured failure components of PD-T?padua-3d-20261106-codex-T8-r06-05 or T10-02, as identified below; the original measurements remain historical.
+Split from: PD-T?padua-3d-20261106-codex-T10-02, the named frozen extraction failure at n2..7, and PD-T?padua-3d-20261106-codex-T10-09, its unchanged post-kill n8..16 checks; the original measurement bodies remain historical.
 Split into: none. No final ID is allocated.
 
 ## Statement

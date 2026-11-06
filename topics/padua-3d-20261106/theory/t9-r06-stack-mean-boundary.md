@@ -20,3 +20,7 @@ log Lambda(pi) >= max(0,(S A_n-log D(pi))/N).
 Under a uniformly random permutation, each pair (h_pi(i),h_pi(j)) is uniformly distributed over the unordered height pairs. The mean logarithmic pair distance is A_n, and sum_(i<j)N_j=S. Therefore the exact permutation mean of log D(pi) is S A_n. At least one permutation pi_max has log D(pi_max)>=S A_n. For that permutation the displayed lower bound is precisely zero.
 
 Consequently this **specific mean-determinant comparison cannot prove a strictly positive lower bound simultaneously for every stack ordering**, in any degree n>=1. Increasing permutation search size cannot repair that algebraic loss. This resolves the all-order mean-comparison mechanism, rather than leaving 'new premises required' as an untested route. It does not imply Lambda(pi_max)=1, does not disprove an exponential class lower bound obtained by another method, and does not promote the previously measured alternating-order rate to a theorem. The existing monotone-order theorem remains a proper subclass result. The phase-uniform annihilator and its limitations for cosets are in `t9-r06-phase-weight-boundaries.md`.
+
+Dated canonical-home pointer2026-11-06: [r08-negative-t9-stack-mean.md](r08-negative-t9-stack-mean.md)
+carries the complete template and D3 for the same PD-N ID. The claim
+above is historical text; no ordering-stability theorem is inferred.
