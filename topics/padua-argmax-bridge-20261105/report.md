@@ -213,3 +213,24 @@ Most native cost occurred without projected-profile computation, so a
 profile-skip optimization alone cannot eliminate the observed cost.
 The campaign is3/25 complete; D04 targets a linear-row analytical reduction
 and reuse of already accepted fixed-work native components.
+
+## Post-audit D04 — a floor-free row reduction
+
+Three new supporting proofs are independently accepted: the half-line
+cotangent/digamma defect, its weighted endpoint matching and the resulting
+full-phase row reduction. For R=2 and every n>=16 it retains at most8
+exact polynomial rows and linearly many H-profile terms, with explicit
+error O((a+P)H_n/n) and no fixed-R floor. This is an intermediate model;
+no implemented linear-time certifier is claimed.
+[Proofs and adversarial reconstruction](independent-checks-D04-row-reduction.md).
+
+The separate stronger-floor adoption of the existing MPFR component
+stopped under its65CPU unfinished-call rule on the first512 box, after
+the corner interval alone took54.47CPU. No box result completed and
+quality is unevaluated. [Cost-stop record](independent-checks-D04-floor-result.md).
+It does not justify a larger run of the same source.
+
+The campaign is4/25 complete. D05 supplies a reviewed phase-relative
+half-line support lemma; its candidate full uniform shrinking-model
+error is under independent review. Practical constants and any improved
+global onset remain separate obligations.

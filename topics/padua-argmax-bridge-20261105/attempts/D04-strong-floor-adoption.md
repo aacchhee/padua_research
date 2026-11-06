@@ -52,3 +52,65 @@ nor builder was invoked. Pending: distinct source/predicate/controller
 review and root authorization before the first build. Exact comparisons
 with a lower directed C08 corner component remain conditional on that
 component's reviewed arithmetic assumptions; no new degree is certified.
+
+## Released one-shot execution — 2026-11-06
+
+Root released the reviewed frozen command at commit41c4c80. It ran once,
+with no source/header change, retry, rescue or old-C08 execution.
+
+Supervisor result: **STOP_OR_FIRST_FAILURE**; stop `unfinished-native-call-CPU-stop`;
+worker returncode-9. All cheap API/guard controls and
+the n32 directed corner/one-point controls completed before the n512 work.
+n512 directed corner interval was[25.26788711586917, 25.267887118027144], costing
+54.471893 CPU-s. This is the reviewed component interval,
+not D03's floating reference or a new-degree certificate.
+Completed n512 box calls:0/4. Pending paths at the retained
+checkpoint:['10110', '10111', '01111', '11']. Active call at checkpoint:
+`{'label': 'box-n512-root0-path10110', 'cpu_start': 56.203675}`. No unavailable box outputs, flags or
+margins are inferred from prior D03 values. The fixed four-box quality
+gate remains unevaluated unless all four outputs exist.
+
+Recorded aggregate run CPU through supervisor serialization:
+129.892082s. The final tiny
+accounting write/print is outside that last sample and bounded by the
+registered parent hard limit; this is not an invented exact process-exit
+CPU. Metadata-only postprocessing is separately metered in
+`evidence/d04-strong-floor.json` and its raw postprocess-accounting record.
+
+Fresh build/source/header/toolchain/linked and actual loaded-before
+closure are retained in authorized local raw output. After-closure is
+not claimed for a killed worker. The existing n<=512, whole-box-half
+radius and physical-noncorner contracts remain unchanged; actual
+corner cu/H3 stays separate. This bounded implementation stop proves
+no negative theorem and supplies no degree, coverage or cost projection.
+
+## Receipt-postprocessor preservation — 2026-11-06
+
+A byte-identical, unexecuted copy of the receipt/prose postprocessor is
+preserved at `../code/post_audit_D04_strong_floor/receipt_postprocess_frozen.py`.
+Original absolute path:
+`/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D04/strong-floor-preparation/postprocess_once.py`.
+SHA256 `fb024608640f6004e5e8bbdc8bea43a66cb647482270753a9dd8f912ee2218b6` (7299 bytes).
+The original numerical receipt remains byte-for-byte unchanged and keeps
+its original postprocessor path/hash. Controller, FREEZE and SOURCES also
+remain unchanged; this preservation copy is outside the executed source
+freeze and must not be treated as another numerical run.
+
+To reconstruct the recorded generator identity, restore this copy exactly
+to that original absolute path before using it. The script hardcodes
+ROOT=`/workspace/padua_research`, the topic path, primary raw destination
+`local-output/argmax-bridge-20261105/post-audit-D04/strong-floor/`, the
+essential evidence destination, and the attempt file. Fresh primary run
+outputs must already exist there with their original recorded absolute
+source/binary/input paths and identities intact. The script reads the
+primary supervisor/final-accounting/checkpoint and CASES/FREEZE records;
+it verifies runtime-enforced code/data identities, preserves the prior
+attempt prose, appends the result note, and creates the small summary.
+It refuses an existing essential receipt; it must never overwrite the
+published first receipt or be used to rescue/repeat the primary run.
+Regeneration therefore requires an isolated restored workspace with no
+existing essential receipt and the pre-addendum attempt bytes restored
+from the raw `attempt-before-result-addendum.md` snapshot. Its own
+postprocessing CPU sample, timing and resulting summary hashes can differ
+on regeneration; byte-identical regenerated evidence is not promised.
+No script or native execution was performed for this preservation fix.

@@ -62,3 +62,14 @@ n4096 native extension is out of scope; new tree/full cover is deferred;
 restoring cubic fallback inside the full-half domain discards the
 existing analytic premise and is not pursued. No run is authorized by
 this record. Root review and distinct source/predicate review come first.
+
+## Dated outcome —2026-11-06
+
+After source acceptance/release41c4c80 the one-shot run stopped on its
+first n512 box at the preregistered65CPU unfinished-call limit. No box
+output completed; the four-box quality gate is NOT EVALUATED. The
+attempt/receipt preserve the129.892082CPU run and completed controls.
+Further testing of this frozen adoption is blocked by its cost gate;
+the mathematical stronger floors remain proved. This is not a universal
+negative claim or a new PD-N. Original sources and failed attempt remain
+frozen; no increased cap, retry or full-degree certificate follows.

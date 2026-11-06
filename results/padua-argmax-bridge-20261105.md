@@ -83,3 +83,11 @@ n512 float pilot cost486.136CPU and reached both128-visit caps with
 new degree or exact-checker throughput claim.
 [D03 result review](../topics/padua-argmax-bridge-20261105/independent-checks-D03-pilot-result.md).
 D04 continues with the endpoint reference and fixed-work component adoption.
+
+D04 is complete,4/25. Its accepted analytic row reduction has no
+fixed-R floor and applies with at most8 special rows from n16.
+The native component test stopped at65CPU on its first512box; no box
+quality result completed. This motivates a different cost structure,
+not a larger run of that source. D05's uniform shrinking-model error
+candidate is under review; the global threshold remains500000.
+[D04 mathematics](../topics/padua-argmax-bridge-20261105/independent-checks-D04-row-reduction.md).

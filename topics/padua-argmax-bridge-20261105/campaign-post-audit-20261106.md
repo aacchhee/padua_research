@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **3/25**. Active: **D04**.
+Completed: **4/25**. Active: **D05**.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -14,7 +14,8 @@ Completed: **3/25**. Active: **D04**.
 
 | D02 | COMPLETE | New pure-coordinate strip allocation; joint/bias-aware far remainder | Independently accepted local corner descent for all n>=10000, K_new<7.772. Exact full-phase bias/completed constant and boundary contract accepted; practical interior rate OPEN. |
 | D03 | COMPLETE | Symmetric cancellation perturbation; endpoint-complete corner baseline; cheap near-only feasibility | Difference lemma independently accepted; full reference OPEN. Baseline-only route deferred. Float n512 pilot486.136CPU, both128-visit caps INCOMPLETE,60/82 frontier; source and saved-result checks pass, no degree proof. |
-| D04 | ACTIVE | Endpoint-complete digamma reference; fixed-work component adoption | Half-line reference/reduction under development, full model rate OPEN. Ratio-derivative math consolidates with accepted C01/C03; stronger-floor C08 adoption prepared for distinct source review, no run yet. |
+| D04 | COMPLETE | Endpoint-complete digamma reference; fixed-work component adoption | Three support proofs accepted, floor-free actual-row model valid R2/n16; practical model rate still separate. Native adoption stops on first512box at65CPU,0/4 outputs, quality unevaluated;129.892CPU. |
+| D05 | ACTIVE | Outer residual BV and joint model rate; phase-relative half-line; fixed collision-free special set | Relative support accepted; full shrinking-model-rate candidate under adversarial review, constants unassessed. Fixed-special continuity candidate gated separately; no native runs. |
 
 The initial scientific boundary is exact argmax degrees2–40 and alln>=500000,
 with exact two parity-correct corners. Gap41–499999 staysOPEN. Claude's
