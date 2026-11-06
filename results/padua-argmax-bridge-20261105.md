@@ -89,5 +89,13 @@ fixed-R floor and applies with at most8 special rows from n16.
 The native component test stopped at65CPU on its first512box; no box
 quality result completed. This motivates a different cost structure,
 not a larger run of that source. D05's uniform shrinking-model error
-candidate is under review; the global threshold remains500000.
+has since passed review; the global threshold remains500000.
 [D04 mathematics](../topics/padua-argmax-bridge-20261105/independent-checks-D04-row-reduction.md).
+
+D05 is complete,5/25: an explicit full closed-phase O((1+log n)/n)
+error bound for the completed far model is independently accepted from
+n32. A fixed-special-set version needs only six exact rows; the full
+relative near comparison and validated implementation remain OPEN.
+Practical constants are being assessed in D06; this is not a new global
+argmax threshold.
+[D05 model-error review](../topics/padua-argmax-bridge-20261105/independent-checks-D05-outer-comparison.md).

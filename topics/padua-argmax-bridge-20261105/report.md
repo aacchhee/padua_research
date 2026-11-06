@@ -231,6 +231,30 @@ quality is unevaluated. [Cost-stop record](independent-checks-D04-floor-result.m
 It does not justify a larger run of the same source.
 
 The campaign is4/25 complete. D05 supplies a reviewed phase-relative
-half-line support lemma; its candidate full uniform shrinking-model
-error is under independent review. Practical constants and any improved
-global onset remain separate obligations.
+half-line support lemma; its full uniform shrinking-model error has now
+passed independent review. Practical constants and any improved global
+onset remain separate obligations.
+
+## Post-audit D05 — uniform shrinking error for the completed model
+
+The combined endpoint residual has a full-phase logarithmic variation
+bound. Keeping its signed sample-minus-integral error removes the old
+fixed-strip floor. Joining it to D04 and the exact endpoint/interior
+constants proves an explicit uniform O((1+log n)/n) bound for S_n-M_infty,
+with R=2,delta=pi/8 and every n>=32. Axes, a=0, collisions, sign switches
+and both parities are included.
+[Strong independent review and the two proofs](independent-checks-D05-outer-comparison.md).
+This repairs the error-side premise for the openly completed model;
+the unchanged fixed-cutoff model still retains its exact bias.
+
+The [relative half-line lemma](independent-checks-D05-relative-halfline.md)
+also reduces one reference allowance near the origin. Separately,
+[continuity through collisions](independent-checks-D05-fixed-special-rows.md)
+permits a fixed special set: R2 needs only six exact polynomial rows,
+with the unchanged conservative D04 error. These are accepted supporting
+results, not a complete implemented certifier or full relative estimate.
+
+The campaign is5/25 complete. D06 evaluates the actual constants before
+any expensive phase cover and gates direct four-copy row summation as
+another cheap-certifier route. No improved global onset has yet been
+established; exact argmax remains2–40 and n>=500000.
