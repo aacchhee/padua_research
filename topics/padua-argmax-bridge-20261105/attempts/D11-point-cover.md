@@ -55,3 +55,18 @@ are frozen for distinct source review and root release before any execution.
 Runs needed: after accepted source review and explicit root release only,
 SPEC exact synthetic command and then primary one-shot command. Later full
 independent fresh native rerun remains necessary before computer-proof status.
+
+2026-11-06 D12 actual primary outcome (metadata postprocess only).
+Frozen release e13a538bda80e6cc785f4835937b2ca338bc1d6f executed once by root;
+producer COMPLETE, checker COMPLETE, no first failure or cap stop, full
+descendant accounting. Exact tree has83nodes/42leaves:8NEAR,31FAR,3OUTSIDE;
+53distinct canonical C11 vertices. Producer4.503105CPU, checker40.079552CPU;
+primary sample44.626053CPU, through-summary sample44.626205CPU, wall41.286455s.
+Every required exact strict margin is positive; finite values and source/build/
+all-loaded-file identities rechecked by separate <=2CPU metadata helper.
+No native repeat or historical-case speedup ratio is asserted. Essential
+evidence/d12-point-cover.json and exact d12-point-cover-tree.json retained;
+raw caches/builds remain local with hash manifest, archival retrieval pending.
+This is a successful primary finite adapter computation, pending distinct
+fresh fixed-certificate native replay and mathematical application review;
+no full global512 adoption is made here. Frozen primary sources unchanged.

@@ -1,0 +1,30 @@
+{
+  "source_commit": "e13a538bda80e6cc785f4835937b2ca338bc1d6f",
+  "files": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D12_result_review/run.py",
+      "bytes": 9609,
+      "sha256": "9e830a0af4699360f62cada5f75254b9e1215749100b7511488120ab20522772"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D12_result_review/verify.py",
+      "bytes": 6397,
+      "sha256": "db2f942f46c8e81c446642e1cc95da4d493cf6a39d97571bff7b09c2d95d3a3f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/d12-point-cover-tree.json",
+      "bytes": 147,
+      "sha256": "62a0f35a51730ab57b0a0931122b9cab7c6ca1d113ea38dc779a059ade3eda2e"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/d09-threepoint.json",
+      "bytes": 11236,
+      "sha256": "34553e6d91dc77285f1bbb277a0f519c5a8a5da5f27a8f43501c7caf13631509"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/FREEZE.json",
+      "bytes": 3539,
+      "sha256": "3c361e44db34babd168cdca0c785fe101abb80c5441cbf9e1c7314e52c73c8c1"
+    }
+  ]
+}

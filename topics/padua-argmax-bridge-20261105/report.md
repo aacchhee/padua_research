@@ -1,8 +1,8 @@
 # Padua argmax bridge — WORK post-audit checkpoint, 2026-11-06
 
-The exact global equality set is proved for **degrees2–40** and for
+The exact global equality set is proved for **degrees2–40, degree512**, and for
 **every integer n>=16000**. It consists of {(-1,-1),(1,-1)} for even n
-and {(-1,-1),(-1,1)} for odd n. The remaining gap41–15999 and all-degree
+and {(-1,-1),(-1,1)} for odd n. The remaining gaps41–511 and513–15999 and all-degree
 PD-T099 remain OPEN. The fresh campaign has replaced its initial
 astronomical upper boundary with this explicit sixteen-thousand-degree threshold.
 No mass degree enumeration or energy premise enters the analytic theorem.
@@ -33,11 +33,18 @@ axis cases cost about2CPU with no numerical fallback. These are component
 measurements, not a complete certifier or a new certified degree.
 [Exact scope and replay](independent-checks-D07-fourcopy-result.md).
 
-The D08 common-Peano/signed-dual reduction proposes obtaining whole-box
-bounds from vertex values and an independent global norm. Its squared-phase
-actual-corner version needs only three certified losses to prove punctured
-origin-box descent. Distinct mathematical review accepts all three proofs;
-successful point premises and source adoption are pending. No successful patch is claimed.
+The common-Peano/signed-dual reduction now yields a COMPLETE exact
+finite certificate at degree512:147-byte tree,83nodes/42leaves and53
+canonical common-S vertices, plus three actual-corner point losses.
+Primary44.626205CPU including floating producer and fresh Arb checker;
+independent fresh replay41.464729CPU. All53 endpoint/radius/counter vectors
+match exactly and both strict phase margins are positive. The exact
+argmax at512 is {(-1,-1),(1,-1)}.
+[Finite theorem](theory/D12-global512.md),
+[independent result/application review](independent-checks-D12-point-cover-result.md).
+This demonstrates the new finite certifier; no degree-by-degree scan or
+uniform runtime theorem follows. The original n32 timing comparison is
+an earlier, different workload and supplies no matched speedup ratio here.
 
 The following C13 discussion records the earlier500000 theorem at its
 original scope; D01–D06 sections below are dated campaign history.
@@ -93,8 +100,8 @@ both findings; proof estimates and the500000 threshold are unchanged.
 
 ## Cheap certification progress
 
-The original exact [finite theorem](theory/native-finite-range.md) remains
-2–40; no new degree is claimed. Known n32 is being used to test new
+The original exact [finite theorem](theory/native-finite-range.md) covers
+2–40. The following C01–C15 comparison is historical; D12 below adds512. Known n32 is being used to test new
 algorithms on an immutable already accepted364-leaf candidate.
 
 | Checker | Outcome on the same364-leaf candidate | CPU seconds |
@@ -359,3 +366,23 @@ constant. The current global theorem is still n>=50000 until the new
 D11 assembly and scalar endpoint receive independent review. D11's first
 conditional16000 scalar budget passes; its actual chronology is retained
 in attempts/D11-onset.md, with no range adoption from the scalar alone.
+
+
+## D12 — complete cheap degree512 certificate
+
+The published fixed producer/exact-checker completed its first attempt,
+without source/precision/cap changes, rescue or retry. The exact complete
+tree has41internalnodes,42leaves(8NEAR,31FAR,3OUTSIDE),depth12, and53
+canonical Arb point evaluations. Three tangent leaves are retained.
+Every strict comparison passes; smallest margin is
+935713367702180327/453712364894045601792. The147-byte compact tree and
+all53 exact native rows in the independent receipt permit cloud replay
+without old local proof caches or binaries. Raw large caches remain whole
+offGit with identity manifests and pending physical archive delivery.
+
+The accepted proof still uses the independently proved global norm34.
+D14 is checking whether a coarse sampling implication supplies norm30
+and removes those asymptotic-model dependencies with the same point data;
+that simplification is not yet adopted. D13's finite phase-relative target
+remainsOPEN, with two supporting analytic results under distinct review.
+D15's conditional generalized certifier design has no native execution.

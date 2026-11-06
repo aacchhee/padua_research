@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **11/25**. Active: **D12**.
+Completed: **12/25**. Active: **D13**; D14/D15 preparation runs in parallel.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -21,7 +21,7 @@ Completed: **11/25**. Active: **D12**.
 | D08 | COMPLETE | Lower global analytic onset; point-to-box reduction | Global theorem independently accepted for every n>=50000, primary40000 far failure preserved. Three split point-to-box proofs independently accepted with no findings; no patch instances. |
 | D09 | COMPLETE | Three-point actual-corner trial and a useful independent global norm | Global M512=34 accepted; primary three-point trial PASS11.265CPU and fresh independent replay PASS11.016CPU. Whole actual-corner rectangles certified with19/5 radial-square loss. Full global512 stillOPEN. |
 
-Current boundary: exact argmax2–40 and every integer n>=16000; gap41–15999 OPEN.
+Current boundary: exact argmax2–40,512 and every integer n>=16000; gaps41–511 and513–15999 OPEN.
 
 The initial scientific boundary is exact argmax degrees2–40 and alln>=500000,
 with exact two parity-correct corners. Gap41–499999 staysOPEN. Claude's
@@ -45,4 +45,8 @@ No main push, merge, force, tags, .github/settings or major cleanup.
 | D10 | COMPLETE | Sharper completed constant and exact full-cover adapter | Full-cover sufficient implication independently accepted, actual complete cover absent. Four split constant/axis scopes independently accepted: global<8/3, far22(1−a), near fractional modulus, scoped origin-quadratic obstruction. |
 | D11 | COMPLETE | Lower analytic onset budget and full point-cover implementation | New global theorem every n>=16000 independently accepted, no20000fallback; first reviewer hash-guard failure and reviewed hash-only recovery preserved. Full-cover source completed and independently inspected; synthetic controls PASS, native trial remains separate. |
 
-| D12 | ACTIVE | First complete new-technology degree512 phase-cover attempt | Frozen D11 producer/exact-checker source accepted; root releases one bounded trial after publication. Global512 remainsOPEN until complete exact cover plus independent fresh replay. |
+| D12 | COMPLETE | First complete new-technology degree512 phase-cover attempt | Complete53vertex/83node cover PASS44.626CPU; independent fresh replay PASS41.465CPU and final application accepted. Exactglobal512 now proved;147B certificate. |
+
+| D13 | ACTIVE | Origin-cancelled finite remainder | Endpoint and singular-mesh support developer-PROVED, under distinct review; complete joint relative remainder remainsOPEN. No numerical jobs. |
+| D14 | PREPARING | Sampling norm and model-free finite proof | Metadata confirms15grid vertices reduce to13 saved keys, norm<30; split proof/review pending. No new numerical evaluations. |
+| D15 | PREPARING | Parameterized model-free certifier | Conditional design for one fixed2048 scaling case; existing guards permit2048. Generic contract, implementation/source review and release required before any run. |

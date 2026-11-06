@@ -1,8 +1,8 @@
 # Padua argmax bridge — current research results
 
-The exact two-corner global argmax is proved for **degrees2–40** and
+The exact two-corner global argmax is proved for **degrees2–40, degree512**, and
 **every integer n>=16000**. Its equality set is {(-1,-1),(1,-1)} for
-even n and {(-1,-1),(-1,1)} for odd n. The remaining gap **41–15999**
+even n and {(-1,-1),(-1,1)} for odd n. The remaining gap **41–511 and513–15999**
 and all-degree PD-T099 stay OPEN. This is a sufficient upper boundary,
 not a claim of the minimum onset.
 
@@ -22,15 +22,25 @@ The guarded actual-Lebesgue point evaluator independently reproduced all13
 fixed cases,10 finite-polynomial references and6 invalid controls in
 12.008287CPU including build. Its n512 generic point takes2.093014CPU,
 full Arb radius<2.584e-16, with3 safe whole-row fallbacks. This is a point
-component; complete whole-box certification and new degrees remain OPEN.
+component; the separate D12 complete finite certificate is described below.
 [Replay](../topics/padua-argmax-bridge-20261105/independent-checks-D07-fourcopy-result.md).
 
 A separate computer-assisted local theorem now certifies both actual
 degree512 corner rectangles with lambda<=Lambda_c-(19/5)(alpha²+beta²),
 using only three point losses and global norm34. Trial11.265079CPU,
 independent fresh replay11.015692CPU. These rectangles cover rho<=1/2;
-full degree512/global complement coverage remains OPEN.
+D12 subsequently closes the full degree512 complement, below.
 [Patch proof](../topics/padua-argmax-bridge-20261105/theory/D09-corner-patch-512.md).
+
+The new complete finite certifier proves exact global argmax at512 with
+**53 certified S vertices and a147-byte tree**:83nodes,42leaves,depth12.
+Primary44.626205CPU; independent fresh native replay41.464729CPU, every
+exact interval/radius/counter vector matches. No retry or rescue occurred.
+[Degree512 theorem](../topics/padua-argmax-bridge-20261105/theory/D12-global512.md),
+[independent review](../topics/padua-argmax-bridge-20261105/independent-checks-D12-point-cover-result.md).
+This is a new-technology finite proof, not a mass degree scan or uniform
+scaling claim. Its raw caches are regenerable; complete small certificate,
+checker sources and all53 exact rows are committed.
 
 The new fixed-work checker PASSes all364 regions of the unchanged known
 n32 certificate in **46.09totalCPU seconds**(45.23subprocess), versus
