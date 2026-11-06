@@ -47,3 +47,29 @@ one-parameter claim; any degree-five moment defect kills the proposed kernel;
 any nonnegative weight vector outside the stated interval kills its sharpness.
 The class is only this 27-point Gaussian grid. The 14-point rule already
 checked has different support and prevents a universal reading.
+
+
+## Audit-response addendum — 2026-11-06 — M1/M2
+
+Full template fields, including aliases, falsifiers, discriminability, actual
+results and reasoned dispositions, are now in
+[candidates-T5-response-01.md](candidates-T5-response-01.md). These replace
+the incomplete table-only fields above without pretending the response was
+prospective. [Deferred-route records](candidates-deferred-response-01.md)
+cover the unexecuted completion probe, Lobatto m4/m5 and symmetric T5-04.
+
+Expanded predecessor shortlist, read as repository records in this response:
+
+| Entry | Relation and difference / limit |
+|---|---|
+| IDEA-044 / Degani Thm2 | Standard commutator-rank/extension-size mechanism. T5-02 is its exact product-Chebyshev specialization; no new lower-bound mechanism. |
+| IDEA-108 / Koiran / Curto–Fialkow | Commuting and flat extensions are established formulations. The unexecuted T5 completion minimization is not supplied by an uncompleted rank census. |
+| IDEA-109 / OBST-11 / LIT-374 | Xu's single-Γ, degree-(2n−2), weight-dependent Gaussian context; the d3 unsuccessful example is not arbitrary-support or all-degree nonexistence. |
+| LIT-327 / Xu 2024 | Known minimal-cubature/common-zero matrix framework; the inspected source record treats two variables and gives no inspected 3D solution. |
+| X7 / LIT-413, Noskov–Schmid and Hirao–Sawa | Closest retained finite-certificate pointers. Repository searches found the named source note, INDEX and CORPUS entries; primary texts/hypotheses remain unread, so no novelty or claim of escaping their results is made. |
+| DMVX / LIT-306/322 | The 16-node same-parity Lobatto D4 control is its known construction, now attributed in the validation record. |
+
+No theorem here depends on a newly imported source claim. Historical novelty
+is unestablished. The finite-support proof classifies exactly its written
+Gaussian grid, while standard cubature certificates/design theory may cover
+more general classes; absence from this bounded screen proves no separation.

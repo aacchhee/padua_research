@@ -42,5 +42,26 @@
       "retention": "regenerate on demand; no proof dependency on raw catalogue",
       "archival_delivery": "NOT PERFORMED"
     }
+  ],
+  "regenerate_only_artifacts": [
+    {
+      "working_path_pattern": "/tmp/padua-3d-20261106/t4-{M,A,L}-n{2..7}-nodes.npy",
+      "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t4_stacks.py --max-degree 12",
+      "generator_sha256": "0cd23793f436cd25328114e21dfda2c8c590cebbe7b88b985f7e478fc8c068b7",
+      "summary": "evidence/t4-mesh-M.json; evidence/t4-mesh-A.json; evidence/t4-mesh-L.json",
+      "identity_observation": "not regenerated or observed in this continuation; no byte size or hash invented",
+      "retention": "optional numeric node arrays; regenerate on demand; no analytic proof depends on them",
+      "archival_delivery": "NOT PERFORMED"
+    },
+    {
+      "working_path": "/tmp/padua-3d-20261106/t4-node-artifacts.json",
+      "generating_command": "same t4_stacks.py command",
+      "retention": "regenerated node-array identities, not an archive delivery",
+      "identity_observation": "not observed in this continuation"
+    },
+    {
+      "working_path_pattern": "D0 pinned historical fixtures restored by code/replay.py",
+      "retention": "Git-restorable or regenerate-only from source commits and blobs in evidence/replay.json; not a separate cold-storage delivery"
+    }
   ]
 }

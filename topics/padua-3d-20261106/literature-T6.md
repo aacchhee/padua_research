@@ -128,3 +128,23 @@ These are search leads, not verified premises or absence evidence.
 2026-11-06 history: survey, explicit local proofs and finite sanity;
 subsequent source-trail refinement identified Subbotin's exact prior
 comparison and general logarithmic lower bound. No registry edits.
+
+
+## Audit-response coverage qualification — 2026-11-06 — m6/m15
+
+Subbotin's Russian original is Mat.Sb.118(160):4(8) (1982),557–566;
+1983 names the English translation Math.USSR-Sb.46(4),561–570. The
+Theorem1/Cor1/Cor3 attribution above rests on the recorded developer primary
+read. Cor3 uses Yudin's bound, whose source was not read. The supplementary
+Astra check did not verify attribution; Claude audit-01 could not retrieve
+Subbotin, and this response did not acquire it anew. The locally written
+proofs were accepted independently and use no source theorem as a premise.
+Do not describe this as independently established primary-source verification.
+Dedicated Subbotin registration and DEKL's consolidation out of aggregate
+LIT-380 are tasks for PR preparation, not ID allocation in this response.
+
+Additional comparator LIT-391 reports Wang–Wang–Wang 2014 cube
+hyperinterpolation norm O(log^d n), with UNVERIFIED secondary coverage in
+INDEX and the programme baseline. It provides matching-order operator
+context, not N-node total-degree interpolation or a locally verified source
+upper bound. No new fulltext read is claimed.

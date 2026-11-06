@@ -82,3 +82,24 @@ unexposed), rules/input ccd9e905d19c0c625c196c4a3f3e707058ed042a.
 within its stated scope, including actual separate execution. Earlier
 pending-check wording records the development state. Required Claude
 substantive audit remains due; this addendum changes no mathematical claim.
+
+
+## Completed-audit process addendum — 2026-11-06 — m5
+
+[Claude audit-01](../audit-01.md) completed the substantive independent audit
+of candidate f1a5b0936d8fb2b033c69af59a6366550f170999, including the recorded
+independent executions, after the supplementary Astra checks. Its accepted
+mathematical scopes supersede earlier “audit/replay/rerun pending” and
+“planned, no run claimed” process descriptions where those refer to that
+completed work. This addendum changes no mathematical statement or status;
+MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
+new response dispositions/ID-kind/evidence changes require focused re-audit,
+not another approval of the unchanged accepted mathematics.
+
+
+## Executed-check correction — 2026-11-06 — m5
+
+The initial planned/no-run description is superseded: the producer compared
+Newton and direct cardinal evaluation through n=4, maximum discrepancy
+7.51e−14 (MEASURED; evidence/t4-mesh-*.json), and audit-01 independently
+checked the construction. The all-n divisibility/Newton proof is analytic.

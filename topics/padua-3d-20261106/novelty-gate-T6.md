@@ -63,8 +63,9 @@ cube projection comparison.
   invariant; averaging is not assumed to preserve projection. The resulting
   diagonal multiplier is calculated and corrected instead. Tensor-subspace
   containment does not transfer a projection lower bound and is unused.
-- Verdict: variant with explicit, deliberately coarse factor `3^d`;
-  retained as a checkable known-mechanism argument, no novelty claim.
+- Verdict (corrected 2026-11-06, audit m6): literature duplicate, retained
+  as local reproof. The same 3^(-d) comparison is attributed to Subbotin
+  under the primary-reading coverage qualifier below; no novelty claim.
 - Cheapest decisive test/prewritten kill: calculate the multiplier on a
   character, including zero coordinates and frequencies outside the total
   degree ball. Any mismatch kills the proposed identity.
@@ -94,7 +95,7 @@ harmonic minimum-coordinate subset.
   subset point kills this certificate.
 - Literature baseline/limits: primary theorem statement and named proof
   coverage in literature-T6; no earlier absence/priority assertion.
-- Applicable obstructions: the coordinate matrix has determinant4 in d3;
+- Applicable obstructions: the coordinate matrix has determinant −4 in d3;
   one must use its surjective torus covering, not an incorrect ordinary
   change of variables with an extra determinant factor. The sawtooth is
   merely bounded measurable, which is sufficient for its integral against
@@ -129,3 +130,26 @@ unresolved: T6-01 is a known-result reproving certificate, and T6-02 is
 an explicit known-mechanism constant certificate. No novel order, transfer
 mechanism, or priority for the displayed constant is asserted. Both are
 retained only for their complete local proof and useful explicit bound.
+
+
+## Audit-response qualification — 2026-11-06 — m5/m6/m8/m14/m15
+
+Audit-01 completed independent mathematical reconstruction and actual reruns;
+initial pending process language is historical. The T6-01 verdict field and
+the signed determinant have been corrected explicitly above. The known
+logarithmic order is not novel. The Subbotin attribution relies on the
+recorded developer primary read, not a second source verification: Theorem1,
+Cor1/Cor3 read; Yudin input unread; Astra did not check the source; Claude
+could not retrieve it. Russian original1982, English translation1983.
+
+The prewritten decisive character test was proved analytically but the
+producer did **not** implement an actual projection/translation-averaging
+check: t6_sanity.py only verifies preset multiplier factors algebraically.
+Its multiplier part is tautological. Audit-01's genuine projection check is
+separate evidence; no new developer run of that check is claimed here.
+
+LIT-391 (Wang–Wang–Wang 2014, reported O(log^d n) cube hyperinterpolation)
+is an additional predecessor/context row. That is a redundant-node cubature
+operator upper, not a matching N-node interpolation construction. The
+inherited LIT row is secondary/UNVERIFIED; no source theorem is imported and
+no primary fulltext read is claimed by this addendum.

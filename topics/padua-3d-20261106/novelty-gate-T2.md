@@ -2,7 +2,7 @@
 
 Rules/input: ccd9e905d19c0c625c196c4a3f3e707058ed042a. Codex developer; assigned model/effort inherited from coordinator. Gate precedes mechanism runs.
 
-Scope: full IDEAS registry heading/alias/summary scan, including obstruction and disposition tables; literature INDEX scan; searches across tracks/theory/topics for rank-1, rank one, Lissajous, Chebyshev lattice, cosine orbit, coset union, boundary correction, aliasing, 3D. Shortlist IDEA-013/029/120/178/181/185/186/187/188; C0 density theorem, C3 rank reduction/observations, deficiencies, Chebyshev observations and candidates. The closest executed screen is PD-N037: fixed modulus≤6 fibres of a three-axis Lobatto product box. Its generic modular witnesses do not certify cosine specialization. PD-T081 assumes a fixed periodic product-grid mask, which these growing cyclic groups escape. No historical priority claim; rank-one cosine lattices and Fourier dictionaries are established mechanisms.
+Scope (qualified 2026-11-06, audit M3): IDEAS registry heading/alias/summary scan and selected obstruction/disposition searches, **not a complete pre-run reading of every obstruction/disposition table**; literature INDEX scan; searches across tracks/theory/topics for rank-1, rank one, Lissajous, Chebyshev lattice, cosine orbit, coset union, boundary correction, aliasing, 3D. Shortlist IDEA-013/029/120/178/181/185/186/187/188; C0 density theorem, C3 rank reduction/observations, deficiencies, Chebyshev observations and candidates. The closest executed screen is PD-N037: fixed modulus≤6 fibres of a three-axis Lobatto product box. Its generic modular witnesses do not certify cosine specialization. PD-T081 assumes a fixed periodic product-grid mask, which these growing cyclic groups escape. No historical priority claim; rank-one cosine lattices and Fourier dictionaries are established mechanisms.
 
 ## IDEA?padua-3d-codex-T2-01 — minimal cyclic cosine orbit
 Aliases: exact-cardinality rank-one lattice; triangular generator; Kronecker generator; octahedral generator.
@@ -35,3 +35,26 @@ Aliases: corrected rank-one lattice; shifted union.
 - Actual tests: none.
 - Disposition: deferred until a specific nullspace supplies a structural reason; no PD-N for deferral.
 - Canonical record: this prerecord; no result claimed.
+
+## Audit-response addendum — 2026-11-06 — M2/M3
+
+The original first paragraph overstated pre-run coverage. The actual scope is
+qualified above; attempts/T2.md already disclosed the timing shortfall. There
+is no workflow exemption called a "relaxed bounded scan". Later reading and
+audit cannot cure the chronology. The canonical disclosure is in response-deviations-01.md, linked from LOG.md, and every eventual T2 IDEA registration must retain the
+permanent timing qualifier in [candidates-response-01.md](candidates-response-01.md),
+following IDEA-576. AC's acceptance belongs in the PR; it is not presumed here.
+
+T2-01's initial "active prerecord / Actual tests: none" is historical. Its
+current disposition is retained finite diagnosis, with K/T/O every-degree
+formulas REJECTED: refuted at n=2 by the three explicit quadratic witnesses;
+the normalized n=3 and full unshifted M39 classes are separately excluded by
+their accepted proofs. The eight n=2,4 survivors remain finite MEASURED points,
+not a competitive all-degree construction. Broader cyclic variants are deferred
+with explicit hypotheses and resume conditions in the linked candidate file.
+
+For T2-02, closest entries additionally include IDEA-182 and PD-N034: an
+unshifted adjacent-mod4 union has a proved infinite singular Chebyshev
+subsequence. A proposed union must escape that precise phase/symmetry scope
+and remove its own inherited nulls; generic-axis success is insufficient.
+T2(a)/(b)/(c), phase, omit-n3 and union dispositions are in the linked file.

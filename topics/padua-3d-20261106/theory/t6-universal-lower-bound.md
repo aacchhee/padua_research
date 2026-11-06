@@ -3,9 +3,11 @@
 ID kind: PD-T.
 Aliases: explicit total-degree projection lower bound; corrected cosine
 averaging; factor27 transfer.
-Split from: T6 universal Lebesgue lower-bound task.
-Split into: PD-T?padua-3d-codex-T6-02, the explicit Fourier L1 estimate in
-[t6-fourier-lower-bound](t6-fourier-lower-bound.md).
+Split from: none. Split into: none (field correction 2026-11-06, audit m9).
+Source task: T6 universal Lebesgue lower bound.
+Supporting dependency: PD-T?padua-3d-codex-T6-02, explicit Fourier estimate
+[t6-fourier-lower-bound](t6-fourier-lower-bound.md); this is not a conjunct
+split from the universal interpolation statement.
 
 ## Statement
 
@@ -61,7 +63,6 @@ Overall status: PROVED (complete developer proof, independent audit pending).
 |---|---|---|
 | Every-projection comparison (1) | PROVED | Explicit corrected averaging below |
 | Universal interpolation inequality (2) | PROVED | (1), split Fourier theorem and norm identity |
-| Sharp coefficient or optimal interpolation upper bound | OPEN | Outside this coarse lower-bound theorem |
 
 Candidate/claim disposition: retained known-mechanism explicit bound.
 Rejection reason: none. No new Padua construction is inferred.
@@ -230,3 +231,47 @@ is retained as a self-contained explicit certificate, with no novelty claim.
 within its stated scope, including actual separate execution. Earlier
 pending-check wording records the development state. Required Claude
 substantive audit remains due; this addendum changes no mathematical claim.
+
+
+## Completed-audit process addendum — 2026-11-06 — m5
+
+[Claude audit-01](../audit-01.md) completed the substantive independent audit
+of candidate f1a5b0936d8fb2b033c69af59a6366550f170999, including the recorded
+independent executions, after the supplementary Astra checks. Its accepted
+mathematical scopes supersede earlier “audit/replay/rerun pending” and
+“planned, no run claimed” process descriptions where those refer to that
+completed work. This addendum changes no mathematical statement or status;
+MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
+new response dispositions/ID-kind/evidence changes require focused re-audit,
+not another approval of the unchanged accepted mathematics.
+
+
+## Audit-response limits and source qualification — 2026-11-06 — m6/m7/m8/m9
+
+Sharp coefficients and matching interpolation upper bounds remain OPEN
+outside this PROVED theorem; the unrelated OPEN row was moved out of its
+status table. Its Fourier estimate is a supporting dependency, not a split
+conjunct of the same target.
+
+The harmonic term exceeds 1 only when H_floor(n/2)>(648π³)^(1/3)≈27.1858,
+at roughly n=7.2×10¹¹ (using H_m≈log m+Euler's constant). At practical degrees
+this explicit boxed inequality gives Λ≥1. Its asymptotic log³ order remains
+valid and very coarse; it is not a useful finite-degree quality separator.
+
+Subbotin's original Russian paper is 1982; 1983 is the English translation.
+The attribution of comparison/order rests on the developer's recorded primary
+read in ../literature-T6.md, not an independently verified source claim here.
+That record read Theorem1, Corollary1 and Corollary3, whose Yudin input was
+unread. Astra did not verify the attribution and Claude could not retrieve
+Subbotin. The local proofs were independently accepted; they do not depend
+on that unresolved source verification. Verdict for T6-01 is **literature
+duplicate, retained as local reproof**. Dedicated source-index consolidation
+is due only at PR preparation.
+
+Producer t6_sanity.py's multiplier arithmetic is tautological: it multiplies
+preset factors 2^(-s) and 2^s and never builds R from an actual projection P.
+Its support/subset/harmonic checks remain diagnostics; no executed decisive
+projection test is claimed for that producer. Audit-01 T5/T6 command6
+independently tested a real interpolation projection and obtained multiplier
+error 3.5e-16. The analytic argument, not either floating sanity run, proves
+this theorem.

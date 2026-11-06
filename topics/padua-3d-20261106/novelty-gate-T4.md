@@ -45,3 +45,17 @@ new-construction or historical-priority claim.
 Registration is in attempts/T4.md and preregistration-T4.md. No T4 numerical
 family run preceded those files. D0/D1 passed in the coordinator's replay;
 that replay is not a T4 novelty experiment.
+
+
+## Audit-response predecessor addendum — 2026-11-06 — m15
+
+Additional closest context: IDEA-047, LIT-302 and LIT-378 retain the
+Morrow–Patterson analogy and its reported O(n²) Lebesgue upper; LIT-382
+retains QR/LU approximate-Fekete/discrete-Leja extraction on weakly
+admissible meshes, the mechanism behind the controls. Their inherited
+source coverage remains qualified/secondary where stated; no new primary
+fulltext read or source theorem dependency is claimed by this response.
+Morrow–Patterson uses a different bivariate node family and supplies no
+polynomial bound for this trivariate stack. QR/LU controls are known
+baseline mechanisms, not newly proposed constructions. This added shortlist
+makes no novelty claim for the stack or the monotone lower theorem.

@@ -1,6 +1,6 @@
-# PD-N?padua-3d-codex-T3-01 — Short compatible relations obstruct injectivity
+# PD-T?padua-3d-codex-T3-02 — Short compatible relations obstruct injectivity
 
-ID kind: PD-N.
+ID kind: PD-T (reclassified 2026-11-06, audit M5).
 Aliases: cosine-addition annihilator; three-coordinate Chebyshev surface;
 short dual-vector degree barrier.
 Split from: none. Split into: none.
@@ -52,10 +52,11 @@ Candidate disposition: the certificate mechanism is retained as a known
 prerequisite. The class satisfying q(u)<=n cannot supply injective Pi_n
 sets; no universal cyclic or growing-generator family is rejected.
 
-## Negative-result scope
+## Scope of the obstruction tool (corrected 2026-11-06, audit M5)
 
-Attempted mechanism: IDEA?padua-3d-codex-T3-02, interpolation on a cosine
-coset despite the displayed short compatible relation.
+This is a retained prerequisite theorem, not a failed-mechanism record.
+IDEA?padua-3d-codex-T3-02 proposed the annihilator tool itself, which succeeded;
+no independently proposed construction is rejected here.
 Parameter range: precisely all integer n,M,z,u and real phi satisfying
 the stated congruence, phase and q(u)<=n conditions. A failed search for
 u does not prove unisolvence or absence of another annihilator.
@@ -139,3 +140,27 @@ confirmed separation from its reflection-invariant subgroup classification.
 within its stated scope, including actual separate execution. Earlier
 pending-check wording records the development state. Required Claude
 substantive audit remains due; this addendum changes no mathematical claim.
+
+
+## ID-kind response addendum — 2026-11-06 — M5
+
+Old provisional ID `PD-N?padua-3d-codex-T3-01` maps to
+**PD-T?padua-3d-codex-T3-02**, the same theorem in this same file.
+The old label is retained only as provenance, not a second result. The
+statement, proof, assumptions and PROVED status are unchanged. The original
+post hoc attempted-mechanism wording was removed above because no genuine
+failed candidate supported a PD-N allocation. This mapping is to be carried
+into ID_CROSSWALK at PR preparation; no final ID is allocated here.
+
+
+## Completed-audit process addendum — 2026-11-06 — m5
+
+[Claude audit-01](../audit-01.md) completed the substantive independent audit
+of candidate f1a5b0936d8fb2b033c69af59a6366550f170999, including the recorded
+independent executions, after the supplementary Astra checks. Its accepted
+mathematical scopes supersede earlier “audit/replay/rerun pending” and
+“planned, no run claimed” process descriptions where those refer to that
+completed work. This addendum changes no mathematical statement or status;
+MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
+new response dispositions/ID-kind/evidence changes require focused re-audit,
+not another approval of the unchanged accepted mathematics.

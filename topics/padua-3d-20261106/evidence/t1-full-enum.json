@@ -1,0 +1,395 @@
+{
+  "arithmetic": "exact numpy int64; n=2..6 only",
+  "bound_reason": "each axis has <=N cosine levels; active m=2q<2N; inactive m<=2N for either half phase",
+  "bounded_control_receipt_sha256": "6340b00ff4660f039bf967588e45cae501ae603c988b9e806e969c08e532a0c7",
+  "bounded_control_target_counts": [
+    480,
+    708,
+    172,
+    162,
+    318
+  ],
+  "claim": "finite full-class necessary-screen census; the analytic theorem and classification remain separate proof premises",
+  "claim_status": "MEASURED finite census; accepted analytic theorem is separate",
+  "command": [
+    "python",
+    "topics/padua-3d-20261106/code/t1_full_enum.py",
+    "--output",
+    "topics/padua-3d-20261106/evidence/t1-full-enum.json"
+  ],
+  "date": "2026-11-06",
+  "helper_sha256": "ac4afe4c15ff4a273091c234fa9e4381538b679f2ad256cd5db94d08b2b31bc2",
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "rows": [
+    {
+      "classes": [
+        {
+          "binary_code": [
+            0
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 396,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 396
+        },
+        {
+          "binary_code": [
+            0,
+            3
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 58,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 58
+        },
+        {
+          "binary_code": [
+            0,
+            5
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 58,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 58
+        },
+        {
+          "binary_code": [
+            0,
+            6
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 58,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 58
+        },
+        {
+          "binary_code": [
+            0,
+            7
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 6,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 6
+        },
+        {
+          "binary_code": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "pair_alias_after_short": 12,
+          "short_projection": 48,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 60
+        }
+      ],
+      "degree": 2,
+      "full_class": true,
+      "pair_alias_after_short": 12,
+      "projection_order_cap": 20,
+      "short_projection": 624,
+      "surviving_necessary_screens": 0,
+      "target": 10,
+      "target_count_cosets": 636
+    },
+    {
+      "classes": [
+        {
+          "binary_code": [
+            0
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 876,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 876
+        },
+        {
+          "binary_code": [
+            0,
+            3
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 130,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 130
+        },
+        {
+          "binary_code": [
+            0,
+            5
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 130,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 130
+        },
+        {
+          "binary_code": [
+            0,
+            6
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 130,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 130
+        },
+        {
+          "binary_code": [
+            0,
+            7
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 18,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 18
+        },
+        {
+          "binary_code": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "pair_alias_after_short": 12,
+          "short_projection": 96,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 108
+        }
+      ],
+      "degree": 3,
+      "full_class": true,
+      "pair_alias_after_short": 12,
+      "projection_order_cap": 40,
+      "short_projection": 1380,
+      "surviving_necessary_screens": 0,
+      "target": 20,
+      "target_count_cosets": 1392
+    },
+    {
+      "classes": [
+        {
+          "binary_code": [
+            0
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 396,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 396
+        },
+        {
+          "binary_code": [
+            0,
+            3
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 86,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 86
+        },
+        {
+          "binary_code": [
+            0,
+            5
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 86,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 86
+        },
+        {
+          "binary_code": [
+            0,
+            6
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 86,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 86
+        },
+        {
+          "binary_code": [
+            0,
+            7
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 12,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 12
+        },
+        {
+          "binary_code": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "pair_alias_after_short": 1,
+          "short_projection": 90,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 91
+        }
+      ],
+      "degree": 4,
+      "full_class": true,
+      "pair_alias_after_short": 1,
+      "projection_order_cap": 70,
+      "short_projection": 756,
+      "surviving_necessary_screens": 0,
+      "target": 35,
+      "target_count_cosets": 757
+    },
+    {
+      "classes": [
+        {
+          "binary_code": [
+            0
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 1548,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 1548
+        },
+        {
+          "binary_code": [
+            0,
+            3
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 242,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 242
+        },
+        {
+          "binary_code": [
+            0,
+            5
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 242,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 242
+        },
+        {
+          "binary_code": [
+            0,
+            6
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 242,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 242
+        },
+        {
+          "binary_code": [
+            0,
+            7
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 36,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 36
+        },
+        {
+          "binary_code": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 210,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 210
+        }
+      ],
+      "degree": 5,
+      "full_class": true,
+      "pair_alias_after_short": 0,
+      "projection_order_cap": 112,
+      "short_projection": 2520,
+      "surviving_necessary_screens": 0,
+      "target": 56,
+      "target_count_cosets": 2520
+    },
+    {
+      "classes": [
+        {
+          "binary_code": [
+            0
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 2892,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 2892
+        },
+        {
+          "binary_code": [
+            0,
+            3
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 479,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 479
+        },
+        {
+          "binary_code": [
+            0,
+            5
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 479,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 479
+        },
+        {
+          "binary_code": [
+            0,
+            6
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 479,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 479
+        },
+        {
+          "binary_code": [
+            0,
+            7
+          ],
+          "pair_alias_after_short": 0,
+          "short_projection": 90,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 90
+        },
+        {
+          "binary_code": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "pair_alias_after_short": 3,
+          "short_projection": 381,
+          "surviving_necessary_screens": 0,
+          "target_count_cosets": 384
+        }
+      ],
+      "degree": 6,
+      "full_class": true,
+      "pair_alias_after_short": 3,
+      "projection_order_cap": 168,
+      "short_projection": 4800,
+      "surviving_necessary_screens": 0,
+      "target": 84,
+      "target_count_cosets": 4803
+    }
+  ],
+  "rules_sha": "e5b64450fce42262dafc88ee357b72e5f203916b",
+  "schema": "padua-3d-T1-full-class-formula-census-v1",
+  "source_sha256": "bb995f1c294da9e9156dad82485a3b065b44a8f0a5d4f7e9dc680ef1264f0aab",
+  "verdict": "PASS"
+}

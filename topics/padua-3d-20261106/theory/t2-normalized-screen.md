@@ -1,6 +1,6 @@
 # PD-N?padua-3d-codex-T2-02 — Finite normalized cyclic rank screen
 
-ID kind: PD-N. Aliases: odd cyclic M39 null cover; normalized z1=1 diagnosis. Split from: none. Split into: finite quality separately in t2-finite-survivors.md.
+ID kind: PD-N. Aliases: odd cyclic M39 null cover; normalized z1=1 diagnosis. Split from: none. Split into: none (field correction 2026-11-06, audit m9). Related measured quality is separately in t2-finite-survivors.md.
 
 ## Statement
 
@@ -77,3 +77,25 @@ Coordinator Codex Astra high upgraded the finite obstruction from MEASURED
 to PROVED only after this distinct-agent replay and separate reconstruction.
 Statement and scope are unchanged; no rank-distribution or all-degree-family
 claim was upgraded. Required Claude audit remains due.
+
+
+## Completed-audit process addendum — 2026-11-06 — m5
+
+[Claude audit-01](../audit-01.md) completed the substantive independent audit
+of candidate f1a5b0936d8fb2b033c69af59a6366550f170999, including the recorded
+independent executions, after the supplementary Astra checks. Its accepted
+mathematical scopes supersede earlier “audit/replay/rerun pending” and
+“planned, no run claimed” process descriptions where those refer to that
+completed work. This addendum changes no mathematical statement or status;
+MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
+new response dispositions/ID-kind/evidence changes require focused re-audit,
+not another approval of the unchanged accepted mathematics.
+
+
+## Scope-wording addendum — 2026-11-06 — m4
+
+The phrase “even-degree subsequences remain OPEN” is superseded by:
+**any degree sequence omitting n=3, including odd n≥5, remains outside the
+cubic obstruction**. This states the existing theorem's boundary and does
+not assert a new surviving all-degree family. The corresponding deferred
+record/resume condition is in ../candidates-response-01.md.

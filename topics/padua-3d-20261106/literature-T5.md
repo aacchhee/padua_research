@@ -39,3 +39,33 @@ The sharp 21-positive/15-signed fixed-grid classification is an elementary
 consequence of tensor polynomial reduction and orthogonality. It is
 retained as a precisely scoped certificate and makes no priority claim.
 The general minimal-cubature question and the source conjecture stay OPEN.
+
+
+## Audit-response predecessor coverage — 2026-11-06 — M1
+
+Read the full relevant registry/baseline entries IDEA-044, IDEA-108,
+IDEA-109, OBST?bivariate-lanczos-claude-11 and the full qualified Xu-1994
+and Xu-2024 source records (LIT-374 and LIT-327). The commutator/extension
+bound is known Degani machinery; Koiran and Curto–Fialkow are commuting/flat
+extension context, not new algorithms supplied here. Xu-1994's d3 example
+has its single-Γ, second-kind-weight and degree-(2n−2) restrictions; no
+all-cube negative statement is inherited. Xu-2024 is a two-variable
+minimal-cubature comparator in its inspected excerpts.
+
+The X7 note at `topics/programme-ideas-20261031/sources/Round 3 open
+problems 2023 2026.md`, §4.2 row X7 (line 88), names Noskov–Schmid and
+Hirao–Sawa. Repository searches for `Noskov`, `Schmid`, `Hirao`, `Sawa`,
+`commuting extension` and `generic multi-Hankel` across state/IDEAS,
+literature and source/baseline records found LIT-413 and the corresponding
+CORPUS source keys. Those statements are UNVERIFIED secondary pointers.
+No new primary fulltext acquisition succeeded in this response; exact source
+hypotheses and any finer comparison remain a coverage limit. They are not
+proof dependencies and their unread state forbids a novelty/priority claim.
+
+DMVX 2009 is now a closest comparator: the existing source record
+`literature/lattice-unisolvence/records/demarchi-vianello-xu-2009.md`
+(LIT-322/306) records arXiv:0805.3529, §3 pp.7–8, eqs.(17)–(19), with
+its partial-primary-reading limits. The all-parities-equal Lobatto rule
+specialized to four 1D levels is the 16-node D4 control, not a newly
+constructed formula. The local exact moment validation is independent.
+See candidates-T5-response-01.md for per-candidate differences/falsifiers.

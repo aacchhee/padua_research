@@ -4,8 +4,9 @@
 [draft PR #33](https://github.com/aacchhee/padua_research/pull/33).
 Coordinator: Codex, assigned gpt-6-astra high. Worker models, input SHAs,
 execution history and limitations are recorded in [LOG](LOG.md).
-All IDs remain provisional. PROVED below denotes a written developer proof;
-Claude's substantive independent audit has not yet accepted this batch.
+All IDs remain provisional. The original development account below is
+historical; the dated audit-response addendum supersedes its audit, gate,
+selection and attribution wording.
 
 ## Main outcomes
 
@@ -172,3 +173,49 @@ publication suitability remain unresolved.
 The next step is the substantive Claude audit of the pinned complete batch,
 including independent reruns and the retained failed/deferred candidates.
 No merge or final-ID allocation is requested at this development boundary.
+
+## Audit-response addendum — 2026-11-06
+
+[Claude audit01](audit-01.md) accepted all original mathematical statuses,
+including both cubic computer-assisted upgrades. It returned five MAJOR
+record/gate findings and fifteen MINOR items. [Response01](response-01.md)
+records their dispositions; PartA material changes require a focused Claude
+re-audit. [Handoff04](handoffs/04-work.md) also assigns new T7–T9 research.
+The PR remains a draft, with no final IDs or shared-registry edits.
+
+- T1's hypothesis is invariance under **each** coordinate reflection.
+  DMVX2009 (LIT-306/322) is the nearest parity-grid/node-excess comparator.
+  The local theorem classifies all admitted codes, orders and half phases
+  without cubature. Historical novelty and suitability for a structural
+  note remain unestablished. T5's 16-node same-parity control is DMVX's rule.
+- D3(b)'s old capped enumeration was only partial coverage. The new
+  [full-class diagnostic](evidence/t1-full-enum.json) covers n2..6 at m_j<=2N:
+  636,1392,757,2520,4803 target-count cases, zero necessary-screen survivors.
+  This is not an unperformed rank computation or the proof of the all-n theorem.
+- Exact [survivor symmetries](evidence/t2-symmetry-check.json) give two node
+  sets per successful degree. At n4, (1,15,19) and (1,21,29) are equivalent,
+  with exactly equal mesh maxima; the tiny numerical gap is rounding.
+  The preregistered lexicographic choice is **(1,15,19)**. The other class
+  is (1,11,15)~(1,25,30); at n2, (1,3,7)~(1,4,6)~(1,5,8).
+  Counts36/171/561 reduce to18/100/301 classes, a finite MEASURED result.
+- The cubic obstruction leaves every degree sequence omitting n3 open,
+  including odd degrees n>=5, as well as other moduli and phases. Missing
+  variant dispositions and concrete resume conditions are preserved in
+  [candidate retention](candidates-response-01.md) and
+  [deferred routes](candidates-deferred-response-01.md).
+- Subbotin's Russian original is1982, English translation1983. Attribution
+  rests on the developer's recorded primary reading; Yudin's prerequisite
+  was unread, and neither supplementary Astra nor Claude independently
+  opened Subbotin. The accepted local analytic proof is separate. T6-01
+  is a literature duplicate retained as a local reproof. The displayed
+  harmonic lower term exceeds1 only near n=7.2e11; at practical degrees
+  it gives only Lambda>=1. The producer multiplier sanity is tautological;
+  audit01's actual-projection check is separate evidence.
+- Short relations now use **PD-T?padua-3d-codex-T3-02**. The old PD-N alias
+  is retained only as provenance; the accepted statement/status is unchanged.
+  Full provisional namespace mappings will be applied at PR preparation.
+
+The original T2 gate-timing deviation, unexecuted T5 completion probe,
+historical model-attribution correction and unused original budgets are
+preserved once in [canonical deviations](response-deviations-01.md).
+AC's acceptance is not presumed. The new gates do not repair old chronology.

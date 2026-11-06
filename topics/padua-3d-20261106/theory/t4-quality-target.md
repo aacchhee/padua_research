@@ -1,10 +1,11 @@
 # PD-T?padua-3d-codex-T4-04 — low-growth Padua-stack quality target
 
 ID kind: PD-T. Aliases: some-ordering polylogarithmic Radon stack.
-Split from: the original 3-D Padua-quality target in BRIEF E1–E2.
-Split into: T4-01 all-n unisolvence, T4-02 exact determinant factor,
-T4-03 explicit upper majorant, PD-N T4-01 monotone exponential lower,
-PD-N T4-02 finite M/A/L measurements. Coordinator owns final crosswalk.
+Split from: none. Split into: none (field correction 2026-11-06, audit m9).
+Source target: BRIEF §1(3) and handoff-01 T4, specialized to Padua-plane stacks.
+Supporting dependencies/related records: T4-01 unisolvence, T4-02 determinant,
+T4-03 majorant, PD-N T4-01 monotone lower and PD-N T4-02 finite screen.
+These are not conjuncts splitting this OPEN quality target.
 
 ## Statement / definitions / assumptions
 
@@ -38,3 +39,26 @@ Sharper exact-greedy growth and an effective monotone lower onset remain
 open mathematical questions, not promises of continued campaign rounds.
 2026-11-06 Codex, assigned gpt-6.1-sol/xhigh, runtime metadata unexposed;
 rules/input ccd9e905d19c0c625c196c4a3f3e707058ed042a. Audit pending.
+
+
+## Completed-audit process addendum — 2026-11-06 — m5
+
+[Claude audit-01](../audit-01.md) completed the substantive independent audit
+of candidate f1a5b0936d8fb2b033c69af59a6366550f170999, including the recorded
+independent executions, after the supplementary Astra checks. Its accepted
+mathematical scopes supersede earlier “audit/replay/rerun pending” and
+“planned, no run claimed” process descriptions where those refer to that
+completed work. This addendum changes no mathematical statement or status;
+MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
+new response dispositions/ID-kind/evidence changes require focused re-audit,
+not another approval of the unchanged accepted mathematics.
+
+
+## Original target locator — 2026-11-06 — m9
+
+BRIEF §1(3) requests “Lebesgue constant Λ(X_n) = O(log³ n)” and then
+“at least a proved polylogarithmic bound, or polynomial growth with a small
+exponent beating the known baselines”. The displayed Statement specializes
+that target to the exact stack family. BRIEF E1/E2 are expectations, with no
+claim-level status to split. Supporting theorems do not make this OPEN
+target PARTIAL.

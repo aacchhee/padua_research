@@ -1,6 +1,8 @@
 # Development plan — 2026-11-06
 
-Coordinator: Codex, gpt-6-astra high, as explicitly requested by AC.
+Coordinator: Codex, gpt-6-astra high, assigned by Claude handoff 01
+(attribution corrected 2026-11-06, audit m11). AC explicitly allowed
+Astra Ultra when necessary; AC did not specify Astra-high coordination.
 Rules and input head: `ccd9e905d19c0c625c196c4a3f3e707058ed042a`.
 Fetched main/base: `76ba4214b100c86a44941f5e9a662ce9ce48efb8`;
 main is already an ancestor of the topic. No base merge is needed.
@@ -35,3 +37,11 @@ Workers own only assigned files under this topic. The coordinator alone owns
 LOG, plan, rounds, gates, manifest, report, results, handoffs and all Git state.
 Generated large output goes to local temporary storage, with archival delivery
 pending when AC's chosen Padua storage is unreachable. No external messages.
+
+
+## Process-history addendum — 2026-11-06
+
+This is the initial development plan, not the current action ledger.
+Audit-01 completed the substantive independent review; response-01.md and
+handoff04 govern the ongoing work. The corrected model attribution above
+changes no allocation or scientific claim.

@@ -60,7 +60,7 @@ concrete mechanism before any resumed screen.
 
 ## D3 executed verdict
 
-**PASS for the bounded reflection-invariant single-coset class.**
+**Historical bounded diagnostic; see the full-class correction below.**
 `t1_reflection_enum.py` checked every canonical case with coordinate
 projection orders <=12 in d=3 (20,304 cases), <=10 in d=2 (450 cases),
 all permitted syndromes and inactive half shifts. Exact target-count d=3
@@ -96,3 +96,17 @@ These references authorize only their written prospective scopes. Neither
 finite rank success nor a generic phase sample counts as D2 promising or
 an exhaustive continuous-phase result. New-direction outcomes are recorded
 below as their actual executions complete.
+
+## Audit-01 M4 correction — 2026-11-06
+
+The original coordinate-order cap12 covered only part of the finite class
+and did not meet D3(b) as written. The new developer
+[full-class census](code/t1_full_enum.py), [receipt](evidence/t1-full-enum.json),
+enumerates every classified code, affine syndrome and inactive half phase
+with m_j<=2N at n=2..6. A target-size node set has at most N cosine levels
+on each axis, which proves this finite order bound. Target-count cases are
+636,1392,757,2520,4803; all fail a necessary short-axis or pair-alias screen.
+**D3(b) PASS at these five full finite classes.** This is an exact formula
+diagnostic of the separately accepted classification and all-n hand theorem;
+it is not a claim to have computed every rank or exhausted arbitrary cosets.
+D3(a)'s all-degree 2-D Padua escape remains the accepted analytic proof.

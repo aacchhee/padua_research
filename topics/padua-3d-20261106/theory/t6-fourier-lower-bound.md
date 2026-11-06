@@ -2,7 +2,8 @@
 
 ID kind: PD-T.
 Aliases: facet-coordinate sawtooth bound; positive-frequency vertex test.
-Split from: T6 universal Lebesgue lower-bound task, supporting Fourier claim.
+Split from: none (field correction 2026-11-06, audit m9).
+Source task: T6; supporting Fourier claim for the separate projection theorem.
 Split into: none.
 
 ## Statement
@@ -175,3 +176,26 @@ The original T6 target was d3 throughout; no 2-D theorem is claimed here.
 within its stated scope, including actual separate execution. Earlier
 pending-check wording records the development state. Required Claude
 substantive audit remains due; this addendum changes no mathematical claim.
+
+
+## Completed-audit process addendum — 2026-11-06 — m5
+
+[Claude audit-01](../audit-01.md) completed the substantive independent audit
+of candidate f1a5b0936d8fb2b033c69af59a6366550f170999, including the recorded
+independent executions, after the supplementary Astra checks. Its accepted
+mathematical scopes supersede earlier “audit/replay/rerun pending” and
+“planned, no run claimed” process descriptions where those refer to that
+completed work. This addendum changes no mathematical statement or status;
+MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
+new response dispositions/ID-kind/evidence changes require focused re-audit,
+not another approval of the unchanged accepted mathematics.
+
+
+## Attribution/priority wording addendum — 2026-11-06 — m14
+
+The early “historical novelty unresolved” language is superseded by the
+Subbotin/DEKL source refinement and the qualified coverage in literature-T6.md.
+The logarithmic order is known; this is a retained explicit local certificate
+with no priority claim for its constant or method. det A=−2^(d−1), hence −4
+at d=3, as used by the accepted proof. Source attribution was not independently
+verified for Subbotin; see t6-universal-lower-bound.md's dated qualification.

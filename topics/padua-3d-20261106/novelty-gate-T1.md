@@ -90,3 +90,41 @@ Aliases: arbitrary coset phases; unions of cosets; near-minimal cubature.
   inferred from the LSX conjecture or from T1-01's narrower result.
 - Disposition: deferred until a separate valid argument is available.
 - Canonical theory: t1-open-class.md.
+
+## Audit-response predecessor addendum — 2026-11-06 — M1
+
+The earlier shortlist missed the nearest published comparator. Read the
+existing full DMVX source record (LIT-322/306), the Xu-1994 record including
+its d=3 addenda (LIT-374), Cools–Poppe record (LIT-381), IDEA-109 and
+OBST?bivariate-lanczos-claude-11. Primary coverage is inherited and bounded,
+as stated in [literature-T1.md](literature-T1.md); no new source fulltext
+reading is claimed by this response.
+
+- **DMVX 2009:** its union of two all-parities-equal Lobatto subgrids is
+  c(H), where H consists of i_j modulo 2m_j with all three parities equal.
+  This is the B=span(110,101) member of T1's reflection classification.
+  The parity condition is closed under addition and each coordinate
+  negation, so the inclusion is direct. DMVX p.7 already says its
+  hyperinterpolation "is not interpolation" because it has too many nodes.
+  T1 treats every classified code/order/allowed translate, rather than
+  just this published grid, and excludes minimal Π_n injectivity without
+  a cubature premise. This scope difference is not a historical novelty claim.
+- **Xu 1994 / IDEA-109 / OBST-11 / LIT-374:** the single-Γ Gaussian
+  construction and degree-(2n−2) criterion concern a particular cubature
+  system; the reported d=3,n=3 unsuccessful Γ search/author expectation
+  is not an all-coset interpolation obstruction. The product second-kind
+  weight there is distinct from T1's optional first-kind product-cubature
+  conjunct. No source nonexistence theorem is imported.
+- **Cools–Poppe / LIT-381:** rank-one Chebyshev/blending lattices and their
+  reported 1.5–2.4× dimension counts are close predecessors, not a universal
+  minimal interpolation lower bound; T1's class hypothesis must still be
+  checked for each construction. Cubature/hyperinterpolation and Π_n
+  interpolation remain distinct targets.
+
+Closest-entry fields for T1-01/02 now include these records. Verdict remains
+variant of known mechanisms with historical novelty unestablished. The
+cheapest separation test is exact class membership and matching the source
+statement's quantifiers, not a new numerical search. A predecessor giving
+the complete same classification/quantifiers would erase the possible scope
+distinction. No structural-note or publishability claim is authorized by
+this comparison. The original broader C_k target remains OPEN.

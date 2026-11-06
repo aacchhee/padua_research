@@ -1,8 +1,9 @@
 # PD-N?padua-3d-codex-T4-01 — exponential growth for monotone-height Padua stacks
 
 ID kind: PD-N. Aliases: monotone Radon stack; weighted logarithmic energy.
-Split from: BRIEF E2's polynomial-growth expectation, restricted to this
-specified height ordering. Split into: none.
+Split from: none. Split into: none.
+Source expectation: restricted BRIEF E2, not a registered parent theorem
+(field correction 2026-11-06, audit m9).
 
 ## Statement
 
@@ -136,3 +137,25 @@ it does not silently replace the original 3-D target.
 within its stated scope, including actual separate execution. Earlier
 pending-check wording records the development state. Required Claude
 substantive audit remains due; this addendum changes no mathematical claim.
+
+
+## Completed-audit process addendum — 2026-11-06 — m5
+
+[Claude audit-01](../audit-01.md) completed the substantive independent audit
+of candidate f1a5b0936d8fb2b033c69af59a6366550f170999, including the recorded
+independent executions, after the supplementary Astra checks. Its accepted
+mathematical scopes supersede earlier “audit/replay/rerun pending” and
+“planned, no run claimed” process descriptions where those refer to that
+completed work. This addendum changes no mathematical statement or status;
+MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
+new response dispositions/ID-kind/evidence changes require focused re-audit,
+not another approval of the unchanged accepted mathematics.
+
+
+## Candidate bookkeeping addendum — 2026-11-06 — m9
+
+The refuted construction/rate target is
+IDEA?padua-3d-codex-T4-monotone-polynomial, recorded in
+../candidates-rejected-response-01.md (the T4-02 monotone subtarget / BRIEF
+expectation). The determinant comparison method T4-04 succeeded and remains
+retained. No disposition attaches a refutation to that successful method.

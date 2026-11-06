@@ -73,3 +73,16 @@ Closest predecessor is IDEA-187/PD-N037; this is a different non-fibre
 node geometry with the identical controls. No historical novelty claim.
 2026-11-06 Codex, assigned gpt-6.1-sol/xhigh, runtime metadata unexposed;
 rules/input ccd9e905d19c0c625c196c4a3f3e707058ed042a. Audit/replay pending.
+
+
+## Completed-audit process addendum — 2026-11-06 — m5
+
+[Claude audit-01](../audit-01.md) completed the substantive independent audit
+of candidate f1a5b0936d8fb2b033c69af59a6366550f170999, including the recorded
+independent executions, after the supplementary Astra checks. Its accepted
+mathematical scopes supersede earlier “audit/replay/rerun pending” and
+“planned, no run claimed” process descriptions where those refer to that
+completed work. This addendum changes no mathematical statement or status;
+MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
+new response dispositions/ID-kind/evidence changes require focused re-audit,
+not another approval of the unchanged accepted mathematics.

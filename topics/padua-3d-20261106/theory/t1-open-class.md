@@ -68,3 +68,48 @@ cosets, and separate Haar weights from arbitrary positive cubature.
 
 2026-11-06, Codex gpt-6.1-sol xhigh (assigned; runtime metadata unexposed).
 Original target preserved, with restricted result split explicitly.
+
+
+## Completed-audit process addendum — 2026-11-06 — m5
+
+[Claude audit-01](../audit-01.md) completed the substantive independent audit
+of candidate f1a5b0936d8fb2b033c69af59a6366550f170999, including the recorded
+independent executions, after the supplementary Astra checks. Its accepted
+mathematical scopes supersede earlier “audit/replay/rerun pending” and
+“planned, no run claimed” process descriptions where those refer to that
+completed work. This addendum changes no mathematical statement or status;
+MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
+new response dispositions/ID-kind/evidence changes require focused re-audit,
+not another approval of the unchanged accepted mathematics.
+
+
+## Original wording and class boundary — 2026-11-06 — m2
+
+Verbatim original handoff-01 T1 target (bullets retained):
+
+> Formalize the class C_k: node sets that are cosine images of cosets of finite subgroups of the torus 𝕋³, with reflection folding, or unions of at most k such cosets.
+> Prove that for |X| = binom(n+3, 3), unisolvence on Π_n combined with any of the following is impossible for all large n:
+> - (i) discrete orthogonality of a total-degree basis;
+> - (ii) positive cubature of degree ≥ 2n−1;
+> - (iii) the full Padua package (P2 + P3 of BRIEF §2).
+
+The displayed Statement above clarified two phrases: “specified” basis in
+(i), and product-Chebyshev measure in (ii). The earlier History claim of
+unchanged wording was inaccurate; this addendum preserves the original and
+records those clarifications. Under an existential interpretation of (i),
+any unisolvent finite set with any positive weights gives a positive-definite
+discrete inner product on Π_n; Gram–Schmidt supplies an orthogonal basis.
+Thus mere existence of some such basis imposes no extra condition. A fixed
+basis/normalization must be specified before the intended obstruction is
+well-posed; that obligation remains OPEN. The cubature measure was fixed to
+the topic's normalized product arcsine target, not a universal measure claim.
+
+Audit-01 T1 NOTE-1 independently verified H={(i,j,i+j)/4:i,j∈Z/4}, a=0:
+its 16 torus elements fold to ten points in {−1,0,1}³ with |det V(Π₂)|=256.
+H is invariant under none of R1,R2,R3. This is audit evidence, not a newly
+executed developer census here. It demonstrates why reflection invariance
+cannot be silently dropped from the narrower theorem. No all-n conclusion
+or disproof of the additional cubature package follows.
+
+The Haar-packing lead is separately retained with a concrete resume condition
+in IDEA?padua-3d-codex-T1-Haar, ../candidates-deferred-response-01.md.

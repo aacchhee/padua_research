@@ -153,3 +153,27 @@ The original broader minimal-cubature target is not narrowed or closed.
 within its stated scope, including actual separate execution. Earlier
 pending-check wording records the development state. Required Claude
 substantive audit remains due; this addendum changes no mathematical claim.
+
+
+## Completed-audit process addendum — 2026-11-06 — m5
+
+[Claude audit-01](../audit-01.md) completed the substantive independent audit
+of candidate f1a5b0936d8fb2b033c69af59a6366550f170999, including the recorded
+independent executions, after the supplementary Astra checks. Its accepted
+mathematical scopes supersede earlier “audit/replay/rerun pending” and
+“planned, no run claimed” process descriptions where those refer to that
+completed work. This addendum changes no mathematical statement or status;
+MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
+new response dispositions/ID-kind/evidence changes require focused re-audit,
+not another approval of the unchanged accepted mathematics.
+
+
+## Attempted-construction field correction — 2026-11-06 — m9/m10
+
+The successful affine-weight classification is IDEA?padua-3d-codex-T5-05,
+not a failed mechanism. The negative construction subtargets are explicitly
+recorded as IDEA?padua-3d-codex-T5-grid-construction in
+../candidates-rejected-response-01.md: ≤20 positive nodes or ≤14 signed
+nodes on this exact Gaussian grid. That supersedes the earlier attempted-
+mechanism field. The theorem/ID/status is unchanged; final crosswalk must
+map IDEA T5-05 to PD-N T5-03 using full namespace-qualified IDs.

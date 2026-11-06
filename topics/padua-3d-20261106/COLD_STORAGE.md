@@ -50,3 +50,15 @@ retention of these optional raw catalogues, use AC's established Padua
 destination `Downloads\\padua\\cold_storage\\padua-3d-20261106\\`, record
 actual delivered identities, and verify the archive before treating it as
 retrievable. This is not a request for archival work now.
+
+## Audit-01 m13 inventory correction — 2026-11-06
+
+The ledger now also lists the optional T4 arrays
+`/tmp/padua-3d-20261106/t4-{M,A,L}-n{2..7}-nodes.npy` and their regenerated
+`t4-node-artifacts.json`. Reproduce them with
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t4_stacks.py --max-degree 12`.
+The registered quality stop occurs at n7, so that command creates no n>=8
+family rows. Their current generating source SHA-256 is recorded. These
+files were not observed or regenerated in this continuation, so no new
+array bytes/hashes or archival delivery are claimed. D0 fixtures remain
+restorable from the pinned Git source identities in evidence/replay.json.

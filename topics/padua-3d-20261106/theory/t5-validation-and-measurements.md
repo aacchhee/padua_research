@@ -130,3 +130,33 @@ cubature and 3D Padua targets remain OPEN.
 2026-11-06, Codex gpt-6.1-sol xhigh, rules at
 `ccd9e905d19c0c625c196c4a3f3e707058ed042a`: actual exact validation and
 census, explicit distinction from the unexecuted completion optimization.
+
+
+## Audit-response attribution and deferral addendum — 2026-11-06
+
+The same-parity four-level Lobatto 16-node D4 control above is the
+De Marchi–Vianello–Xu 2009 construction (LIT-306/322), arXiv:0805.3529,
+§3, eqs.(17)–(19), specialized to this small parameter. Its exact hand
+moment verification is local; the construction is attributed, with the
+source reading limits in ../literature-T5.md. Audit-01 independently reran
+the exact controls and section census; the census remains MEASURED, and
+all earlier process-pending prose is historical.
+
+The handoff-assigned completed-section n<=4 minimization was **not executed**.
+Its separate IDEA?padua-3d-codex-T5-completion record and resume condition
+are in ../candidates-deferred-response-01.md. This is a disclosed scope
+deviation for AC in the canonical LOG response entry, not equivalent work
+completed by the uncompleted-section census. No optimizer result is claimed.
+
+
+## Completed-audit process addendum — 2026-11-06 — m5
+
+[Claude audit-01](../audit-01.md) completed the substantive independent audit
+of candidate f1a5b0936d8fb2b033c69af59a6366550f170999, including the recorded
+independent executions, after the supplementary Astra checks. Its accepted
+mathematical scopes supersede earlier “audit/replay/rerun pending” and
+“planned, no run claimed” process descriptions where those refer to that
+completed work. This addendum changes no mathematical statement or status;
+MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
+new response dispositions/ID-kind/evidence changes require focused re-audit,
+not another approval of the unchanged accepted mathematics.

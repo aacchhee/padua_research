@@ -207,3 +207,28 @@ their bounded stops are finalized in [rounds](rounds.md).
 - New-direction budgets restart at zero, at most 25 rounds each. Gate kills,
   proved obstructions and scoped exhaustion must be recorded; no new family
   is declared promising from ranks alone. No final ranges or IDs are needed.
+- Canonical audit-response disclosures (M3 gate timing, M2 unexecuted T5
+  probe, m11 model attribution and unused old budgets) are in
+  [response deviations](response-deviations-01.md). AC acceptance is not
+  presumed; new gates and later reading do not repair original chronology.
+
+## 2026-11-06 — handoff04 first result boundary
+
+- T7 round1: written general finite-H/all-real-phase character factorization
+  and compatible-relation lemma (PD-T supporting results, no novelty claim).
+  Actual new-tool D0 controls pass: original cyclic distributions/H39,
+  2-D Padua n1..10 and full invariant-class n2/n3 diagnostics. This does
+  not enumerate all continuous phase strata or settle the broad target.
+- T8 round1: full zero-phase cyclic census up to |H|<=8N finds95/300
+  distinct minimal sets at n2/n3 from15733/112314 generator classes.
+  The n2 survivors are the two old M19 classes; n3 has one full-rank
+  class, M38,z=(1,6,17), outside the accepted M39 obstruction. The omitted-
+  degree odd-modulus slice has1/5 full-rank sets at n5/n6. These finite
+  classifications remain MEASURED. All three frozen translated rules fail
+  at n2, with exact ranks8/9/8 and separate written quadratic annihilators.
+  No uniform promising family or quality improvement follows from rank.
+- PartA developer diagnostics reproduce full-class D3 n2..6 counts and
+  exact survivor equivalences. The response disposes the original audit's
+  findings and preserves deviations for AC. Supplementary checks of the
+  new computation and mathematics are running separately. Global manifest
+  refresh and final report/PR integration wait for the completed new batch.

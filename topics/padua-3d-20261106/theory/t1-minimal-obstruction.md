@@ -8,7 +8,7 @@ of the original OPEN target's status.
 ## Statement
 
 Let n>=2, H<=T^3 finite, and a in T^3. Assume the **whole coset**
-A=a+H is invariant under negation of any single torus coordinate. Then
+A=a+H is invariant under each coordinate negation R_1, R_2, R_3. Then
 X=c(A) cannot simultaneously satisfy
 
     |X|=binom(n+3,3),  and evaluation Pi_n(R^3) -> R^X injective. (1)
@@ -182,3 +182,26 @@ from the unchanged original OPEN target, with full reflection assumption.
 within its stated scope, including actual separate execution. Earlier
 pending-check wording records the development state. Required Claude
 substantive audit remains due; this addendum changes no mathematical claim.
+
+
+## Completed-audit process addendum — 2026-11-06 — m5
+
+[Claude audit-01](../audit-01.md) completed the substantive independent audit
+of candidate f1a5b0936d8fb2b033c69af59a6366550f170999, including the recorded
+independent executions, after the supplementary Astra checks. Its accepted
+mathematical scopes supersede earlier “audit/replay/rerun pending” and
+“planned, no run claimed” process descriptions where those refer to that
+completed work. This addendum changes no mathematical statement or status;
+MEASURED observations remain MEASURED and OPEN targets remain OPEN. The
+new response dispositions/ID-kind/evidence changes require focused re-audit,
+not another approval of the unchanged accepted mathematics.
+
+
+## Audit-response scope/candidate addendum — 2026-11-06 — m1/m9
+
+The statement now says “each coordinate negation R_1,R_2,R_3”, clarifying
+the hypothesis used throughout its accepted proof. This corrects the
+ambiguous “any single” wording without changing its intended quantifier.
+The attempted construction is IDEA?padua-3d-codex-T1-construction in
+../candidates-rejected-response-01.md, not successful obstruction-tool
+candidate T1-01. That historical attempted-mechanism field is superseded.
