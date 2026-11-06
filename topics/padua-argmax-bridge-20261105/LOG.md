@@ -945,3 +945,10 @@ Rootreleases MANUAL primaryproduce cases EXACT42,63,64,159,160,511,512,1024,2047
 ### D36 accepted finite1023 by standalone fresh proof
 
 DistinctAstrahigh03a353bd... ACCEPTS frozenapplicationdbdd51c3... andsolefullyfresh47S+3actualverification, own directouterEXIT0session95825/chunkc3f838 pluscomplete/no-failurefinalaccount29.746529CPUcheckpoint. Allnorm/floor/phase/corner/closedcoverpredicatesrecomputed; n1023 oddargmax{(-1,-1),(-1,1)} PROVED model-freefinitecase. CandidateprimaryouterEXIT0remainsunobserved/canonicalcompletionunclaimed; itonlysuppliesgeometry/keys/METHOD. No rerun/rescue. Rootadoptsfinite1023, analyticall-nboundaryREMAINS1024. D36complete,total37/40(D01–D37); D38primariesreleased/pending. Knownfinite2–41,512,1023; residual42–1022excluding512OPEN.
+
+
+### D38 allnine primary completion and fresh-phase release
+
+Rootexecuted each EXACTcommandONCE inregisteredorder afterf5d2870, inspectingpriorcompleteaccount/directEXIT0beforeeachnextlaunch. AllninePASS:42(6.775360CPU),63(7.642085),64(6.926759),159(9.093032),160(8.889192),511(17.611935),512(17.206059),1024(14.101271),2047(24.342488). CheckpointSUM112.588181CPU, distinctfromwholefinalreturnCPU; conservative9×120=1080fits1200. Observedexit0chunks/wholeproof/account/rawidentitiesretainedpercasecanonicalobservations, compactsummaryD38-primary-summary.json. AllTREE M13/14/14/19/19/26/26/30/35,45–60S,3actualfirstseven/0lasttwo; no retries/failures/source/cap/casechanges.
+
+DistinctAstrahigh freezes actualallninefreshinputidentities INPUTS11266Ba53c0ea5.../SPEC1f18b369... , sourceunchangedd7481715, readyprefix02f641d3... preserved. Rootreleases EXACTmanualfreshverifycommands/verify-n<N>outputs inSAMEfixedorder ONLYAFTERthispublication, each120CPU,separatephase1200,ninewholeenvelopes1080. RequireeachpriorobservedEXIT0+completeacceptedaccount+identitiesbeforeproceeding; stopentirephasefirstfailure,no retries/source/precision/case/caprescue. ALLretainednumericalpremisesfresh; values/countersoldcomparisononlydiagnostics. Newfiniteadoptionawaitsfinalapplication/resultACCEPT; packstilldeferred.
