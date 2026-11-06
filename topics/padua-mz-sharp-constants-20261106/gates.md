@@ -110,3 +110,7 @@ P4 is [attempts/P4.md](attempts/P4.md): one J512 exact-binary trial; integer2^-2
 ## P2 measured calibration registration before main release
 
 Published protocol d03e74dcf94020ba26d9fae84d3ff6c5519db901 was executed unchanged. The fixed unrounded binary64 b2 proxy is -0.0955298083997758 (K128, order128); K64→128 absolute change7.78663282741121e-8; order160 repeat change3.0531133177191805e-16. All calibration, m12/13 dense validation and m400 overlap guards pass. [Receipts](theory/P2-measurements.md). This checkpoint registers the measured proxy before releasing the four main cases; no main case has run. All original prospective main criteria remain fixed. This is MEASURED, with no rigorous Gram accuracy or decimal claim.
+
+## P3 reverse-bound completion, separate from K2
+
+New [analytic P3 proof](theory/P3-reverse-bound.md) meets A1's reverse-bound resume condition and proves the exact pi^4/8 limit. This uses no new CC numerical fit and changes no original gate outcome. Supplementary remainder/assembly checks pass; focused Claude audit remains separate.

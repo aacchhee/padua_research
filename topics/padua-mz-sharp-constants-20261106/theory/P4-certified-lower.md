@@ -96,10 +96,11 @@ bytes, reconstructed the finite reduction, closed-form C entries, scalar
 identities, remainder estimates and directed integer arithmetic, and
 actually reran the grouped checker (3.256 seconds). See
 [independent-checks-P4.md](../independent-checks-P4.md) for its PASS and
-independent receipt location/hash. The unchanged receipt is integrated
-by the coordinator into committed evidence before claiming the complete
-computer-proof package is published. Required subsequent Claude audit
-is not replaced by this supplementary check.
+independent receipt location/hash. The coordinator integrated the
+unchanged actual rerun receipt as
+[check-P4-independent.json](../evidence/check-P4-independent.json), with
+the SHA-256 recorded above. Required subsequent Claude audit is not
+replaced by this supplementary check.
 
 Trusted dependencies are the accepted S2 mathematical formulas, reviewed
 scalar proofs and committed scripts, Python 3.12.14 integer/Fraction and

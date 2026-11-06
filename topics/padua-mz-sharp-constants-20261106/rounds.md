@@ -16,3 +16,7 @@ All directions have ended under their recorded scopes: S1 model route stopped by
 ## 2026-11-06 audit response status
 
 Independent K0 replay is complete: evidence/check-k0-replay.json and audit-01.md. Earlier pending lines describe the historical round boundary. S2 convergence and quantitative error are proved in S2-qualitative-limit.md and S2-finite-certificate.md.
+
+## Handoff03 new directions
+
+Historical S rounds above remain unchanged. P1 analytic rounds1–3 are productive and independently reconstructed; two fixed coarse certificate instances complete numerical rounds4–5, with distinct check pending. P2 Step1 calibration/validation completed and main4-case test is running. P3 completed its target in2 productive analytic rounds with both independent reconstructions PASS, no new numerics. P4 completed one fixed exact lower-certificate round with actual independent rerun PASS; practical upper bracket explicitly deferred. No direction exceeds6 rounds; no upper Padua retry.

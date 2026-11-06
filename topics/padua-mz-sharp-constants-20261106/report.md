@@ -1,14 +1,14 @@
 # Sharp MZ constants through explicit endpoint and corner operators
 
-Source/rules read at2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861; base main76ba4214b100c86a44941f5e9a662ce9ce48efb8. Scope and chronology are in [LOG](LOG.md); exact prospective tests in [gates](gates.md). Mathematical development and the bounded numerical campaign are complete under the directions' scopes. Required substantive Claude audit is pending; supplementary reports below are separate checks.
+Source/rules read at2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861; base main76ba4214b100c86a44941f5e9a662ce9ce48efb8. Scope and chronology are in [LOG](LOG.md); exact prospective tests in [gates](gates.md). The original S1–S4 batch was accepted mathematically by audit-01. Handoff03 closing development P1–P4 is in progress; new material requires a focused Claude audit. The dated D section below supersedes historical open-item descriptions.
 
 ## Findings by target
 
 | Target | Exact analytic conclusion | Numerical evidence and remaining scope |
 |---|---|---|
-| PD-T020, sharp CC lower constant | PROVED local limsup(logN)^2 lambda_min<=pi^4/8, through all integers N and each parity; exact Volterra model norm2/pi | Full limit, sharpness and actual minimum parity agreement OPEN. K1 final-window intercepts about13.06114 are fitted measurements, not an exact asymptotic constant. K2 operationally kills the equality-model route; no fitted revision. |
-| PD-T027, sharp CC upper limit/uniform gap | PROVED local all-N lambda_max<=5/3; common-parity limitLambda_edge is the exact registered endpoint norm,1<=Lambda_edge<=3/2; computable finite errorepsilon_N=U_N−L_N->0 brackets both finite and limiting values | FiniteJ512 proxy1.0044369188646673; upper-spectrum fitted limits about1.0044369723. K3 operational measured comparison passes. Certified decimal evaluation and a practical elementary rate OPEN; no finite certificate solve was run. |
-| PD-T381, signed Padua logarithmic constants | PROVED local common even/odd limits equal inf/sup spectrum of one explicit compact Bessel corner operatorB; normtail120/K and explicit finite-m error; constants strictly negative/positive | FiniteK128 proxies about−0.1336,+0.0456 remain heuristic. No certified decimal interval or closed scalar expression. Larger finite spectra/gates below are measurements and do not establish these proofs. |
+| PD-T020, sharp CC lower constant | PROVED local limsup(logN)^2 lambda_min<=pi^4/8, through all integers N and each parity; exact Volterra model norm2/pi | Full limit and parity agreement proved in new P3 development below; shared registry unchanged. K1 final-window intercepts about13.06114 are fitted measurements, not an exact asymptotic constant. K2 operationally kills the equality-model route; no fitted revision. |
+| PD-T027, sharp CC upper limit/uniform gap | PROVED local all-N lambda_max<=5/3; common-parity limitLambda_edge is the exact registered endpoint norm,1<=Lambda_edge<=3/2; computable finite errorepsilon_N=U_N−L_N->0 brackets both finite and limiting values | FiniteJ512 proxy1.0044369188646673; upper-spectrum fitted limits about1.0044369723. K3 operational measured comparison passes. New P4 certifies Lambda_edge>=1.0044369 below. Two-sided decimal evaluation and a practical elementary rate remain OPEN; no finite upper certificate solve was run. |
+| PD-T381, signed Padua logarithmic constants | PROVED local common even/odd limits equal inf/sup spectrum of one explicit compact Bessel corner operatorB; normtail120/K and explicit finite-m error; constants strictly negative/positive | FiniteK128 proxies about−0.1336,+0.0456 remain heuristic. P1 now identifies an exact elliptic kernel and simple positive ground state. A coarse exact enclosure is completed; useful digits and c_plus-specific certification are deferred. Finite spectra/gates are measurements. |
 
 The exact operator characterizations and computable finite approximation errors determine constants independently of the original large finite spectral problems. They are not claims of elementary closed formulas. Shared registry statuses/IDs remain unchanged in this draft; the audit must assess the precise original-target mapping before preparation.
 
@@ -109,3 +109,19 @@ independent checks and limitations. None certifies decimals or upgrades a
 limit theorem. K3's 3.85e-12 parity difference is floating noise, not an
 accuracy claim. Audit A8 practical formula estimates show the S2-06 bracket
 still wider than 0.05 throughout the audited feasible evaluations.
+
+## Handoff03 closing development (2026-11-06)
+
+**P3, local PROVED:** the [signed remainder](theory/P3-signed-remainder.md), [discrete primitive](theory/P3-discrete-primitive.md) and [full reverse bound](theory/P3-reverse-bound.md) give
+
+    lim (log N)^2 lambda_min(CC,Pi_(N-1)) = pi^4/8,
+
+also on Pi_N and on each parity. This meets the equality candidate's reverse-bound resume condition without revising any K2 outcome. Both [remainder](independent-checks-P3-remainder.md) and [assembly](independent-checks-P3-assembly.md) supplementary reconstructions pass. No new CC numerical fit was used.
+
+**P1, local PROVED analytic results:** the [elliptic kernel](theory/P1-elliptic-kernel.md) agrees with the accepted product-truncated B limit; [positive-spectrum consequences](theory/P1-positive-spectrum.md) give c_minus=-norm(B), a simple positive ground state and 0<c_plus<norm(B). [Rectangle reduction](theory/P1-rectangle-certificate.md) supplies a finite exact certificate with every boundary cell accounted for. All three pass [supplementary reconstruction](independent-checks-P1-kernel.md). The separately preregistered [exact numerical instance](theory/P1-numeric-certificate.md) proves the coarse enclosure -0.477809279990884889210594<=c_minus<=-0.013164946500379018110831, with [actual independent rerun](independent-checks-P1-numeric.md) reproducing exact endpoints. It certifies no useful decimal digits. Three-digit values and a c_plus-specific residual/Galerkin certificate remain deferred; they are not refuted by this coarse method.
+
+**P4, local computer-assisted PROVED:** [endpoint certificate](theory/P4-certified-lower.md) gives Lambda_edge>=1.0044369. Committed exact trial, outward integer arithmetic, proved scalar remainders, grouped checker and [actual distinct rerun](independent-checks-P4.md) support this one-sided statement. The narrow trial-quotient interval is not an upper enclosure of Lambda_edge.
+
+**P2, MEASURED:** [registered calibration and finite tests](theory/P2-measurements.md) use b2=-0.0955298083997758. Calibration/order stability, dense12/13 validation and audit400 overlap pass. The four main cases were released only after measured-b2 publication64f3b76; their outcome is not yet asserted here.
+
+Shared statuses and final IDs remain untouched. These are development results with supplementary checks; the next Claude audit covers the material changes. AC's original-target mapping decision remains reserved.

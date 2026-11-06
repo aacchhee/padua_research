@@ -32,9 +32,13 @@ Aliases: constant positive Schur vector; angular Darboux certificate.
   this script is single-threaded and has an internal 300 CPU-second cap.
 - Discriminability: bounds certify only the reported coarse interval;
   they cannot establish practical digits unless the interval itself does.
-- Actual results/evidence: NOT RUN; source/protocol publication required.
-- Disposition: retained coarse instance; sharper digits and c_plus remain
-  deferred pending an independently checked stronger finite reduction.
+- Actual results/evidence: both unchanged planned instances executed after
+  c1e6e59dd9155b87d9847155d3455d602a5f84e9 publication. See the dated
+  completion pointer at the end; original protocol below is preserved.
+- Disposition: retained local PROVED coarse instance after distinct
+  reconstruction and actual rerun PASS; sharper digits and a c_plus-
+  specific residual certificate remain deferred pending an independently
+  checked stronger finite reduction. Neither target is refuted.
 - Canonical result: theory/P1-numeric-certificate.md after execution and
   independent checks. Required Claude audit remains separate.
 
@@ -81,3 +85,21 @@ If and only if the stated round-2 trigger holds, substitute N=16,theta=256
 and output P1-rectangle-N16.json. A distinct reviewer must inspect the
 scalar/Darboux implementation and actually rerun consequential output.
 No result is called a computer-assisted proof before those obligations.
+
+## 2026-11-06 completion pointer
+
+N8,theta64 executed in 0.118 CPU seconds with strict positive lower and
+L<U, so the stated N16,theta256 trigger was met. N16 executed in 1.959
+CPU seconds and returned r in
+[0.013164946500379018110831,0.477809279990884889210594]. No third grid,
+source tuning or c_plus-specific calculation was run. Exact commands,
+historical protocol hash, receipts and independent review are
+in [theory/P1-numeric-certificate.md](../theory/P1-numeric-certificate.md).
+This append-only completion pointer changes the current protocol file
+hash; receipts refer to its original blob at the published commit.
+
+Distinct scalar/code/reduction review and actual N16 rerun subsequently
+PASS with bit-identical endpoints; see independent-checks-P1-numeric.md
+and the linked committed independent receipt. Required Claude audit is
+separate; the local computer-assisted result claims only this coarse
+interval, not practical digits.

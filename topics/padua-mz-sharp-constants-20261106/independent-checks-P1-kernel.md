@@ -216,3 +216,14 @@ The final statement properly requires a future published finite protocol,
 exact inputs, rigorous arithmetic, an actual checked enclosure and an
 explicit rounding-bin test. This reduction by itself proves no practical
 three-digit enclosure or convergence rate for a chosen grid sequence.
+
+## Formatting-only checkpoint
+
+The developer wrapped the parity identity in inline TeX with a thin space
+between its indicator and following factor, preventing Markdown link
+misclassification. Current kernel-file SHA-256:
+`c7786f149135cdf839288a280f5946445c51d01a928e37760b14ea1a1c1b56f2`.
+I verified that reversing exactly that single formatting line recovers
+the original reviewed hash d1c965b1… in full. No mathematical statement,
+quantifier or argument changed. The corresponding indicator in this
+review record is code-formatted for the same reason.
