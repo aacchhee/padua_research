@@ -32,3 +32,5 @@ Reservation first published in commit [dd57b6439d539164cdee7ab01a11b6080a03af10]
 ## Readiness refresh (2026-11-06, Claude readiness-01)
 
 Repeated steps 1–3 at heads main `64409c4` (PR32 merged), PR27 `389dbc1`, PR33 `d0e1bbb`, PR31 `6fdd9df`; no closed-unmerged PRs. Other owners' maxima: PD-T521, PD-N185, IDEA607 (PR32 on main); PD-T501, PD-N180, IDEA589, LIT632 (PR27/PR33). No collision with PD-T522–553, IDEA-608–615, LIT-633–635; priority commit `dd57b6439d539164cdee7ab01a11b6080a03af10` unchanged; permanent gaps PD-T549–553, IDEA-612–615, LIT-634–635 unused. [readiness-01](readiness-01.md). Repeat if any ledger changes before AC's merge.
+
+Pre-ready refresh (2026-11-06, Claude, at AC's request to mark PR31 ready): heads main `64409c4`, PR27 `96882ea`, PR33 `636c90e`, PR31 `aa2c0c9`. PR27's only registry/ledger change since `389dbc1` is its merge of main's PR32 crosswalk/ledger; PR33 changed no ledger or registry. No new reservation and no collision; the result above stands.
