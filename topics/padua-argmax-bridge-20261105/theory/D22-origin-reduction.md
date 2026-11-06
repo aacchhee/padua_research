@@ -209,3 +209,8 @@ necessary. Candidate/attempt are ../ideas/D22-origin-reduction.md and
 ../attempts/D22-origin-reduction.md. 2026-11-06, requested Astra ultra;
 serving metadata unexposed. Original rules/input ca8d52aa, current
 read-only integration head c1e5bef6; no old proof/source was changed.
+
+
+## Root review closure — 2026-11-06
+
+Distinct review [D22](../independent-checks-D22-origin.md), SHA256 `f98523cad972f8b42b500ddb7ea83877f681c779204cd58e8ccb20652098b95b`, accepts this split scope without unresolved mathematical findings. Root adopts the fully charged partial origin cancellation, anisotropic envelope, near noncorner theorem for EVERY n>=4096 with gap3/2000, and scoped unchanged-absolute-budget obstruction. D13 full relative and far/global4096 remain OPEN. No scalar/native/build job was performed. Audited proof prefix is preserved; final Claude audit remains separate.

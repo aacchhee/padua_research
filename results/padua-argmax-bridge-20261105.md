@@ -142,3 +142,5 @@ Analytic corner descent now holds for every n>=4096 on both pi/6 rectangles,
 with loss(alpha²+beta²)/8; global4096 remains OPEN.
 
 D18 independently accepts near noncorner exclusion for every n>=7000 with gap1/400; its original far budget fails and remains a scoped obstruction. D19 independently accepts adaptive self-norming and a smaller certificate for the same2048:61nodes,41S+3actual, own-tree norm35, no new native run/runtime claim. [D18 review](../topics/padua-argmax-bridge-20261105/independent-checks-D18-phase-far.md); [D19 review](../topics/padua-argmax-bridge-20261105/independent-checks-D19-adaptive-norm.md).
+
+Independent D22 paper review accepts near noncorner exclusion EVERYn>=4096 with gap3/2000, using partial actual-origin cancellation and anisotropic bounds. No numerical jobs ran. Together with actual-corner descent4096 this leaves the far estimate binding the analytic global boundary7000. [D22 review](../topics/padua-argmax-bridge-20261105/independent-checks-D22-origin.md).

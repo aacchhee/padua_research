@@ -179,3 +179,6 @@ new mathematical cost reductions; no legacy degree extension.
 
 
 2026-11-06 D20 ACCEPTED report e1284bce...: root analytic global onset7000; far3/40, accepted near1/400 andcorner1/8. Sole independent26interval/11control replayPASS. Original D18far failure remains scoped and unchanged. Fullfinite41–6999 gap except512/2048 remainsOPEN.
+
+
+D22 accepted f98523ca...: actual-origin partial cancellation and anisotropic exact paper bounds give near noncorner gap3/2000 for EVERYn>=4096. No computationalendpoint. D13fullrelative andfar/global4096OPEN; finalClaude separate. D21/D23acceptedsourcefirsttrial releases areinLOG, no resultadoptionyet.

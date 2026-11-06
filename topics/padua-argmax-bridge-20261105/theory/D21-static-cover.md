@@ -307,3 +307,8 @@ removing discovery has produced a measured runtime improvement.
 ca8d52aa2a48c941473846ab884cccb25f1bdb9f. Fresh comparison gate and
 prospective scope are in the D21 idea/attempt. Source ownership,
 independent review, release and any finite result stay separate.
+
+
+## Root contract review closure — 2026-11-06
+
+Report [D21](../independent-checks-D21-static.md), SHA256 `7704a9eb1e866351926278ba1f4e03e41aaa81a78d65604dd4b1358e81717204`, independently accepts this generic sufficient implication and the unchanged first frozen source. Root adopts that implication, not a successful6912 certificate. The fixed primary run is separately released in LOG, with final-accounting/exit0 and fresh replay still required. Reviewed prefix is preserved; final Claude audit remains separate.

@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **20/40** (D01–D20). Active: **D21** certifier development; D22 hard-paper block and D23 cheap arithmetic gate in parallel.
+Completed: **21/40** (D01–D20 and D22). Active: **D21** fixed static benchmark; D23 matched backend trial, D24 far refinement and D25/D26 analytic work in parallel.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -61,8 +61,12 @@ Delivery constraint from AC: use reasoning budget for BOTH cost reduction and an
 
 | D20 | COMPLETE | New global regularized outer/mesh telescope | Independent review accepts exact globalargmax EVERYn>=7000, far gap3/40; all six rows and full global telescope explicit. Sole26interval/11control independentPASS. |
 | D21 | ACTIVE | Static geometry fresh-point verifier | Separate math/SPEC and technical code development; no discovery, one proposed upper-gap6912 case only after audits. |
-| D22 | PREPARING | Actual-origin relative or anisotropic near proof | Prospectively justified bounded Astra ultra paper block, no scalar execution without new gate. |
+| D22 | COMPLETE | Actual-origin relative and anisotropic near proof | Independent paper review accepts fully charged partial cancellation and EVERYn>=4096 near noncorner gap3/2000; no numerical job. Fullrelative/global4096 remainOPEN. |
 
 AC clarification: pack preparation waits until research ends and is necessary only if a gap remains. Reference inventory may be retained; no pack skeleton or run preparation now.
 
-| D23 | PREPARING | Lower-order rigorous partial-cotangent backend | Parameterized tail/roundoff paper gate only; no source change or benchmark before acceptance. |
+| D23 | ACTIVE | Lower-order rigorous partial-cotangent backend | Math and first source accepted; fixed60CPU matched old/new2048 trial released afterD21primary ends, no result yet. |
+
+| D24 | REVIEW | Sharper far completed-constant bound | Developer extensionrho<=3/4 and fullfar coefficient25/2 frozen; independent review pending, no scalar/onsetclaim. |
+| D25 | ACTIVE | Actual-origin relative outer quadrature | Justified Astraultra35min paperblock, movingmesh/cusp/removal terms explicit; no jobs. |
+| D26 | PREPARING | Global4096 analytic assembly | Fixed4096ONLY source/SPEC/math preparation using D24ifaccepted; no scalar before rootrelease. |

@@ -467,3 +467,6 @@ Independent reviews now accept D18 near exclusion for every n>=7000 (gap1/400), 
 ### D20 accepted: analytic global boundary7000
 
 The distinct D20 review accepts all four split scopes with no findings. Root now adopts exact global argmax for every integer n>=7000: far gap3/40, near noncorner gap1/400 and actual-corner loss1/8. The new error assembly explicitly charges all six retained rows, GLOBAL outer profile and exact mesh terms. Independent sole7000 directed replay checked26intervals and11controls, no retries. Remaining finite gap41–6999 except512/2048 stays OPEN. This is a sufficient bound, not a claimed optimum; final Claude audit remains pending.
+
+
+D22 is independently accepted: a fully charged partial ACTUAL-origin subtraction and anisotropic envelope give near noncorner exclusion at every n>=4096 with gap3/2000, entirely by rational paper inequalities. Actual-corner loss1/8 already holds from4096. Far exclusion still binds the global boundary7000. D24 has a new developer far-constant improvement under review; global4096 is not yet proved.

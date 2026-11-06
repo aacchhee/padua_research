@@ -735,3 +735,31 @@ Fetched both heads after d248fed push; currentmain f70a260e5b5f9a01209dc8a05faab
 - D21 generic sufficient contract n>=4096 SHA95d90ce6..., SPEC6f9b4dd3..., first sourceFREEZE c25384c6... saved before any scientific/native/control execution. Fixed6912/S-only uses supplied113Btree and SAME fresh point set for originlower/norm/cover; analytic D17 corners avoid any D07guard change. Independent math/source review active; no primary release yet.
 - D22 hard paper block produced a new partially origin-cancelled telescope, source-free analytic result SHA738835a6..., not the stillOPEN D13 fullrelative theorem. It pays outer quadrature absolutely, cancels endpoint/mesh increments and charges central-reference and all actual six retained rows. Helper anisotropic rational4096 application under development; distinct adversarial review active. No scalar/native job was created or executed.
 - PR27 rewritten to current7000 theorem and20/40campaign, extended authority and contingentend-onlySyvert2delivery; remains draftWORK. CLI GraphQL read returnedForbidden, so supported GitHub connector REST read/update completed. No login/credential changes.
+
+
+### D24/D25 prospective analytic refinement gates
+
+- D24 Solxhigh20min paper block: D10's22u far-constant charge is loose at the near seam. Test a new domain split: global8/3 constant for larger rho and a proved extension/sharpening of the actual near constant on the intervening range. Existing rho<=1/2 quantifiers cannot be widened by sample. First kill is exact complete-numerator/central/H domain reconstruction. No scalar/native/search or retuning D20 recipe.
+- D25 requested Astra ultra is prospectively justified for the remaining coupled analytic bottleneck after D22: regular outer-quadrature ACTUAL-origin subtraction. D22's exact telescope now isolates this operator, so a bounded35min paper block can target it without repeating the old combined D13 remainder. Moving mesh shifts, absolute-value cusps and retained endpoint removals require a new complete difference-variation proof; missing terms must remain OPEN. This is especially hard mathematics, within AC's explicit Astraultra allowance; serving metadata unexposed.
+- D25 scope is a substantive origin-relative OUTER lemma only (or scoped obstruction), not an unearned all-degree theorem. Full IDEA/obstruction gate, exact operator subtraction first, no scalar or native work before new proof/SPEC/root release. D22 frozen support and its independent review remain untouched.
+
+
+### Publication transport recovery without changing file bytes
+
+- Git CLI credential expired after cc15e9a was successfully pushed; gh reports its configured GH_TOKEN invalid. No token values, secret files, login or environment credentials were inspected/changed. Supported GitHub connector remains authorized. Root published the EXACT476208f tree through connector Git objects, verified treeSHA ccef4bac5d7a4f0180335db3ecbde26125b6a24d, and fast-forwarded topic-only cc15e9a→0174900a19087d728f3f947b52f205e5b76b0a41 with expected-head lease and force=false. Original unpublished476208f is retained in local refs/codex-local/unpublished476; published history was not rewritten. Local branch was reconciled only after exact content equality.
+- Connector commits attribute Andrey Chesnokov using his GitHub account noreply address and profile timezone; it does not expose custom author selectors. This transport-specific metadata is disclosed once here; model/agent trailers remain explicit. Exact API commit bytes were reconstructed and SHA verified before importing locally; no tree/content/index/worktree edit from that import. Further source publication can use this supported route with the same checks.
+
+### Consolidated evidence-index capacity exception (routine metadata)
+
+- The complete essential index is now16,086B/194rows. Workflow says essential generated outputs are NORMALLY under16KiB, not an absolute per-file ban. Root chooses ONE consolidated index exception up to32KiB, retaining every individual evidence record's strict16KiB bound and AC's total10MB cap. This avoids splitting the manifest or repeatedly redesigning its encoding merely for record growth. No scientific data, hash bits, schema or claim changes. Separate technical patch/review precedes adoption; helper LIMIT remains16384 for evidence, with a distinct index cap. No major cleanup or extra approval is required for this routine implementation choice.
+
+### D21/D23 source acceptance and fixed primary release
+
+- D21 source/math review7704a9eb... ACCEPTS unchanged FREEZEc25384c6..., generic n>=4096 sufficient contract and initial source. Own independent metadata-only synthetic run.046707CPUcheckpoint/native0. Root releases EXACT frozen controller--run-once n6912 after publishing this record; controls2/checker580/whole600, firstfailureexclusive, allrows freshC11S, analyticcornerD17, no FLOAT/lambda/sourceguardchanges. Acceptance requires successful final-accounting AND directly observedEXIT0; a new degree also needs fresh independent result replay.
+- D23 report874ba7d9... ACCEPTS lower-order analytic bounds and firstsourceFREEZEf8714eba... with no findings, reviewer native/controls/build0. Root releases EXACT fixed60CPU old/new2048matched component trial AFTERD21primary ends, avoiding simultaneous native benchmarks. No source/case/order/precision/cap rescue/retry. Source acceptance alone supplies no measured speedup or finite cover.
+
+
+### D22 accepted: near noncorner boundary4096
+
+- Reportf98523ca... ACCEPTS four split paper scopes without unresolved findings, including complete actual-origin telescope, both-parity central count, weighted poles, all six rows, anisotropic maxima and real-n monotonicity. Root adopts near noncorner exclusion EVERYn>=4096 with gap3/2000. Cstar<.057,Kstar<.097,E0<.05 and directional charges<.004 implyprimitiveexcess<.061<1/16. No scalar/native/build job ran orreceiptcreated. D13fullrelative andfar/global4096remainOPEN. D22complete; total21/40withD21primarypending.
+- D24developer fullfar constant25/2 and domainextensionto3/4 are preservedreviewpending. D25outerrelative isolatedpaperblock andD26fixed4096assemblyprepareseparately. No Syvertpackpreparation.
