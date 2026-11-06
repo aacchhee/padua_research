@@ -1,6 +1,6 @@
 # Handoff 02 — substantive audit of sharp MZ operator limits
 
-- Status: open
+- Status: done in ed5acba02fa30eba7ca6c22b2e41b19c86792ba7
 - Previous handoff: [01-work.md](01-work.md)
 - Next agent / model / effort: Claude, Opus 5.5 xhigh.
 - Role: independent substantive auditor; this is the first Claude audit of this batch.

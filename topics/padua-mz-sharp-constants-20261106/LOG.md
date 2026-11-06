@@ -1,7 +1,7 @@
 # Sharp MZ constants via limiting operators (PD-T020, PD-T027, PD-T381): log
 
 - Branch: `codex/padua-mz-sharp-constants-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-mz-sharp-constants-20261106.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-mz-sharp-constants-20261106.` · Open handoff: [handoffs/03-response-and-work.md](handoffs/03-response-and-work.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Current claims: CC one-sided sharp-model upper bound; CC uniform upper bound, endpoint limit and computable error; signed Padua compact-operator logarithmic limits and parity agreement. Exact local records/checks are linked in [report.md](report.md); no final IDs assigned.
 
@@ -143,3 +143,4 @@
 - Rules read at `f8942ec9d489218db52d5a828a6d65952aa0d8bf`; main `76ba421` unchanged. Audited candidate `5110954`; head diff is handoff-only.
 - [audit-01](audit-01.md): mathematics ACCEPTED at every stated scope (S1-01/02, S2-01–06, S3-01–04, S3-kernel); no BLOCKING. Stage → WORK for four MAJOR record/interpretation findings (A1 K1 intercept above the proved π⁴/8 bound, so K2 is not evidence against equality; A2 K4 finite-window minimiser is B's second mode; A3 PD-T027/PD-T381 target mapping is an AC decision; A4 durable MEASURED records) and MINOR A5–A13 (A13: audit support JSON makes the manifest membership check fail until the response rescopes it).
 - Registered handoff commands rerun with exit 0 and agreement to roundoff; independent CC, Padua and B_K reruns agree. Audit diagnostics and four development leads P1–P4 (closed-form Schlömilch kernel for B with nonpositive kernel, prospective two-branch test, reverse CC bound route, Λ_edge bracket) are in audit-01; support files in [audit-01-support](audit-01-support/). No registry, manuscript, final ID or gate threshold changed.
+- [Handoff 03](handoffs/03-response-and-work.md): Codex response to A1–A13 plus authorized closing development P1–P4 (AC: "If you see some promising ways to close remaining open items, write a handoff and set the branch to work, codex will continue"). Handoff 02 done in ed5acba.
