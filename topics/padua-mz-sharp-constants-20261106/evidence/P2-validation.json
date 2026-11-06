@@ -1,0 +1,70 @@
+{
+  "status": "MEASURED",
+  "rigorous_enclosures": false,
+  "source_head": "0205690b9c4e959a28e949083e9a1808735abf4b",
+  "protocol_commit": "d03e74dcf94020ba26d9fae84d3ff6c5519db901",
+  "identities": {
+    "topics/padua-mz-sharp-constants-20261106/code/P2_modes.py": "8e15fe58b19a1ef1a2ff71da80d18de04349d90081e02a885bcbb38b143d1161",
+    "topics/padua-mz-2d-frontier-20261105/code/g1_spectral.py": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+    "tracks/mz-constants/code/mz2d_spectra.py": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+    "topics/padua-mz-2d-20261101/definitions.md": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+    "topics/padua-mz-sharp-constants-20261106/ideas/P2-protocol.md": "2dc19f83257528f338ce642d6a9f2b63963627d1f816294610a9e075bdb50f39"
+  },
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/P2_modes.py",
+    "validate",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/P2-validation.json"
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "seed": 1,
+  "tol": 1e-09,
+  "ncv": 40,
+  "maxiter": 3000,
+  "results": [
+    {
+      "m": 12,
+      "errors": {
+        "weight": 9.020562075079397e-17,
+        "Q_apply": 1.2574527407185604e-15,
+        "Q_symmetry": 2.0965566717715555e-16,
+        "L_apply": 5.79992484647732e-16,
+        "L_symmetry": 9.71445146547012e-17,
+        "Q_eigenvalue": 7.216449660063518e-16,
+        "L_eigenvalues": 2.498001805406602e-16,
+        "projector": 5.355850311861143e-15,
+        "compression": 7.771561172376096e-16,
+        "L_at_Qmin": 2.903927098785175e-15
+      },
+      "validation_pass": true,
+      "cpu_seconds": 0.017685656999999966,
+      "wall_seconds": 0.017689645999780623
+    },
+    {
+      "m": 13,
+      "errors": {
+        "weight": 9.367506770274758e-17,
+        "Q_apply": 1.7321373480918086e-15,
+        "Q_symmetry": 1.331634162469453e-15,
+        "L_apply": 8.084564912695278e-16,
+        "L_symmetry": 5.551115123125783e-17,
+        "Q_eigenvalue": 1.1102230246251565e-16,
+        "L_eigenvalues": 3.885780586188048e-16,
+        "projector": 1.942890293094024e-15,
+        "compression": 4.218847493575595e-15,
+        "L_at_Qmin": 0.0
+      },
+      "validation_pass": true,
+      "cpu_seconds": 0.009535326999999982,
+      "wall_seconds": 0.009538614000121015
+    }
+  ],
+  "validation_pass": true
+}

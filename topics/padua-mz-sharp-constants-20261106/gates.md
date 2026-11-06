@@ -106,3 +106,7 @@ not a certified crossing law or a PD-N.
 These do not revise K0–K5. After the response-first commit17ca9f, register P2 in [ideas/P2-protocol.md](ideas/P2-protocol.md): fixed B_K calibration/order controls, m12/13 validation, m400 audited overlap, then separately released four-case doublet test; exact projector/rate/secant/kill/validity rules are in the protocol. No calculation precedes this publication.
 
 P4 is [attempts/P4.md](attempts/P4.md): one J512 exact-binary trial; integer2^-256 outward intervals; Machin/Taylor/Laplace/log enclosures with fixed128bit tails and20Laplace terms; positive denominator and lower quotient at least10044369/10000000; grouped-form checker and distinct-agent rerun. Trial preparation floats are not trusted proof arithmetic. This is a new certificate attempt, not a K3 revision. No evaluation precedes publication.
+
+## P2 measured calibration registration before main release
+
+Published protocol d03e74dcf94020ba26d9fae84d3ff6c5519db901 was executed unchanged. The fixed unrounded binary64 b2 proxy is -0.0955298083997758 (K128, order128); K64→128 absolute change7.78663282741121e-8; order160 repeat change3.0531133177191805e-16. All calibration, m12/13 dense validation and m400 overlap guards pass. [Receipts](theory/P2-measurements.md). This checkpoint registers the measured proxy before releasing the four main cases; no main case has run. All original prospective main criteria remain fixed. This is MEASURED, with no rigorous Gram accuracy or decimal claim.
