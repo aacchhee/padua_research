@@ -34,6 +34,41 @@ def finite(*xs):
  if not all(math.isfinite(x) for x in xs):raise RuntimeError('nonfinite result or reference')
 class CostStop(Exception):pass
 
+def enable_subreaper():
+ if not sys.platform.startswith('linux'):raise RuntimeError('Linux subreaper required')
+ libc=ctypes.CDLL(None,use_errno=True);prctl=libc.prctl
+ prctl.argtypes=[ctypes.c_int,ctypes.c_ulong,ctypes.c_ulong,ctypes.c_ulong,ctypes.c_ulong];prctl.restype=ctypes.c_int
+ if prctl(36,1,0,0,0):raise OSError(ctypes.get_errno(),'PR_SET_CHILD_SUBREAPER')
+ flag=ctypes.c_int()
+ if prctl(37,ctypes.addressof(flag),0,0,0) or flag.value!=1:raise RuntimeError('subreaper verification failed')
+ return dict(platform=sys.platform,PR_GET_CHILD_SUBREAPER=flag.value)
+
+def reap_descendants(group,timeout=5.):
+ # The Popen worker has been waited already. Subreaper adoption preserves
+ # orphan compiler/helper accounting; wait4 charges each adopted subtree
+ # to this process RUSAGE_CHILDREN exactly once, alongside the worker.
+ try:os.killpg(group,signal.SIGKILL)
+ except ProcessLookupError:pass
+ deadline=time.monotonic()+timeout;rows=[]
+ while True:
+  try:pid,status,usage=os.wait4(-1,os.WNOHANG)
+  except ChildProcessError:return dict(complete=True,reaped=rows)
+  if pid:
+   rows.append(dict(pid=pid,status=status,user_CPU=usage.ru_utime,system_CPU=usage.ru_stime));continue
+  if time.monotonic()>=deadline:return dict(complete=False,reaped=rows,reason='descendant reap deadline; total is a lower bound')
+  try:os.killpg(group,signal.SIGKILL)
+  except ProcessLookupError:pass
+  time.sleep(.01)
+
+def commit_call(state,rec,case=None):
+ # Publish completion BEFORE any completed-cost stop, atomically with its
+ # pending-case removal. Combined reference APIs expose no earlier point.
+ if case is not None and (not state['pending'] or state['pending'][0]!=case):raise RuntimeError('case ledger mismatch')
+ state['completed_calls'].append(rec);state['active_call']=None
+ if case is not None:
+  result=dict(case=case,**rec,point_output_complete=True,reference_output_complete=bool(case['reference']))
+  state['point_results'].append(result);state['pending']=state['pending'][1:]
+
 def worker():
  resource.setrlimit(resource.RLIMIT_CPU,(174,175));check_freeze()
  with (OUT/'worker-entry.json').open('x') as entry:json.dump(dict(controller=identity(__file__),pid=os.getpid()),entry)
@@ -41,7 +76,7 @@ def worker():
  if registration['controller']!=identity(__file__) or registration['freeze']!=identity(HERE/'FREEZE.json'):raise RuntimeError('registered input mismatch')
  import build
  cases=json.loads((HERE/'CASES.json').read_text());records=[];results=[]
- state=dict(status='BUILDING',completed_calls=records,active_call=None,pending=cases['cases'])
+ state=dict(status='BUILDING',completed_calls=records,point_results=results,active_call=None,pending=cases['cases'])
  def checkpoint():save(OUT/'checkpoint.json',state)
  checkpoint();binary,manifest=build.build();save(OUT/'build-manifest.json',manifest)
  lib=ctypes.CDLL(str(binary));ptr=ctypes.POINTER(ctypes.c_double);iptr=ctypes.POINTER(ctypes.c_long)
@@ -51,18 +86,19 @@ def worker():
  if ctypes.sizeof(ctypes.c_long)!=8 or ctypes.sizeof(ctypes.c_double)!=8:raise RuntimeError('LP64/binary64 host required')
  before=build.loaded_closure(manifest);save(OUT/'runtime-before.json',dict(loaded=before,python=sys.version,long_bytes=8,double_bytes=8));(OUT/'loaded-before.maps').write_text(pathlib.Path('/proc/self/maps').read_text())
  names=['physical_rows','eta_degenerate_rows','numerical_fallback_rows','root_coverage_failures','sign_failures','direct_fourcopy_evaluations_including_discarded','signed_blocks','partial_calls','verified_root_disks','axis_reduced_rows','node_shortcut','corner_S0_shortcut','max_direct_buffer']
- def call(label,fn):
-  state['active_call']=dict(label=label,cpu_start=cpu());checkpoint();start=cpu()
+ def call(label,fn,case=None):
+  state['active_call']=dict(label=label,cpu_start=cpu(),case=case,stage=('combined point+reference; no intermediate point output exposed' if case and case['reference'] else 'single native API'));checkpoint();start=cpu()
   try:value=fn()
   except Exception as error:state['first_exception']=dict(label=label,error=repr(error),cpu_seconds=cpu()-start);checkpoint();raise
-  rec=dict(label=label,result=value,cpu_seconds=cpu()-start);records.append(rec);state['active_call']=None;checkpoint()
+  rec=dict(label=label,result=value,cpu_seconds=cpu()-start);commit_call(state,rec,case);checkpoint()
   if rec['cpu_seconds']>SINGLE_SOFT:state['status']='SINGLE_CALL_COST_STOP';checkpoint();raise CostStop(label)
   return rec
- def point(n,xi,ze,reference=False):
+ def point(n,xi,ze,reference=False,expected_node=False):
   out=(ctypes.c_double*(9 if reference else 3))();counts=(ctypes.c_long*13)();fn=lib.d07_compare if reference else lib.d07_point
   rc=fn(n,xi.encode(),ze.encode(),out,counts);state['last_native_output_repr']=repr(dict(rc=rc,outputs=list(out),counts=list(counts)));checkpoint()
   if rc:raise RuntimeError('point/reference API failure '+str(rc))
   finite(*out)
+  if expected_node and list(out[3:5] if reference else out[:2])!=[1.,1.]:raise RuntimeError('exact nodal control')
   if reference:
    if not out[0]:raise RuntimeError('independent reference disjoint')
    if not out[1] and not (counts[10]==1 and out[2]):raise RuntimeError('complete reference not contained (except exact node shortcut)')
@@ -78,9 +114,7 @@ def worker():
  for item in cases['cases']:
   aggregate=cpu()+parent_cpu();state['aggregate_CPU_at_reserve_check']=aggregate
   if aggregate>=160:state['status']='CPU_RESERVE_STOP';checkpoint();break
-  n=item['n'];reference=item['reference'];rec=call('point-'+str(n)+'-'+item['kind'],lambda item=item:point(item['n'],item['xi_pi'],item['zeta_pi'],item['reference']))
-  result=dict(case=item,**rec);results.append(result);state['pending']=state['pending'][1:];state['point_results']=results;checkpoint()
-  if item['kind']=='node' and rec['result']['enclosure'][:2]!=[1.,1.]:raise RuntimeError('exact nodal control')
+  n=item['n'];reference=item['reference'];rec=call('point-'+str(n)+'-'+item['kind'],lambda item=item:point(item['n'],item['xi_pi'],item['zeta_pi'],item['reference'],item['kind']=='node'),case=item)
  else:state['status']='COMPLETED'
  if state['status']=='COMPLETED':
   context=cases['large_S_context']
@@ -124,10 +158,10 @@ def main():
    check_freeze()
   return
  if not args.run_once:raise RuntimeError('preparation only; explicit reviewed --run-once required')
- resource.setrlimit(resource.RLIMIT_CPU,(179,180));freeze=check_freeze();OUT.mkdir(parents=True,exist_ok=True)
+ resource.setrlimit(resource.RLIMIT_CPU,(179,180));subreaper=enable_subreaper();freeze=check_freeze();OUT.mkdir(parents=True,exist_ok=True)
  # Exclusive creation prevents reuse even after a failed or partial attempt.
  with (OUT/'preregistration.json').open('x') as f:
-  json.dump(dict(controller=identity(__file__),freeze=identity(HERE/'FREEZE.json'),files=freeze['files'],cap_cpu_seconds=CAP,safety_cpu_seconds=SAFETY,single_completed_call_stop=SINGLE_SOFT,single_unfinished_call_hard_stop=SINGLE_HARD,worker_cpu_hard=175,wall_cap_seconds=360),f,indent=2)
+  json.dump(dict(controller=identity(__file__),freeze=identity(HERE/'FREEZE.json'),files=freeze['files'],subreaper=subreaper,cap_cpu_seconds=CAP,safety_cpu_seconds=SAFETY,single_completed_call_stop=SINGLE_SOFT,single_unfinished_call_hard_stop=SINGLE_HARD,worker_cpu_hard=175,wall_cap_seconds=360),f,indent=2)
  started=time.monotonic();stop=None
  with (OUT/'worker.stdout').open('xb') as stdout,(OUT/'worker.stderr').open('xb') as stderr:
   child=subprocess.Popen([sys.executable,str(HERE/'controller.py'),'--worker'],stdin=subprocess.DEVNULL,stdout=stdout,stderr=stderr,start_new_session=True)
@@ -144,14 +178,15 @@ def main():
     break
    time.sleep(.05)
   child.wait()
- summary=dict(status='MEASURED bounded component attempt',returncode=child.returncode,stop_reason=stop,total_inclusive_CPU_seconds_before_final_serialization=cpu(),cap=CAP,wall_seconds=time.monotonic()-started,
+ reaped=reap_descendants(child.pid);save(OUT/'descendant-accounting.json',reaped)
+ summary=dict(status='MEASURED bounded component attempt',returncode=child.returncode,stop_reason=stop,accounting_complete=reaped['complete'],total_CPU_seconds_before_final_serialization=cpu(),CPU_total_scope=('complete waited-descendant accounting' if reaped['complete'] else 'lower bound; unreaped descendants remain'),descendant_accounting=identity(OUT/'descendant-accounting.json'),cap=CAP,wall_seconds=time.monotonic()-started,
   stdout=identity(OUT/'worker.stdout'),stderr=identity(OUT/'worker.stderr'),complete_worker_summary=identity(OUT/'worker-summary.json') if (OUT/'worker-summary.json').exists() else None,
   checkpoint=identity(OUT/'checkpoint.json') if (OUT/'checkpoint.json').exists() else None)
- summary['result']='COMPLETED' if child.returncode==0 and stop is None and cpu()<CAP else 'STOP_OR_FIRST_FAILURE'
+ summary['result']='COMPLETED' if child.returncode==0 and stop is None and reaped['complete'] and cpu()<CAP else 'STOP_OR_FIRST_FAILURE'
  save(OUT/'supervisor.json',summary)
  # Final accounting includes all worker/build descendants and serialization
  # above; this second tiny accounting record still precedes its own write.
- save(OUT/'final-accounting.json',dict(total_cpu_seconds_through_supervisor_serialization=cpu(),remaining_headroom_seconds=CAP-cpu(),hard_parent_limit=CAP,scope='all waited descendants plus supervisor; final tiny accounting write/print bounded by parent CPU limit'))
+ save(OUT/'final-accounting.json',dict(accounting_complete=reaped['complete'],total_cpu_seconds_through_supervisor_serialization=cpu(),total_scope=('complete waited-descendant accounting through this sample' if reaped['complete'] else 'lower bound only'),remaining_headroom_seconds=CAP-cpu(),hard_parent_limit=CAP,scope='all waited descendants plus supervisor; final tiny accounting write/print bounded by parent CPU limit'))
  print(json.dumps(summary),flush=True)
  sys.exit(0 if summary['result']=='COMPLETED' else 1)
 if __name__=='__main__':main()

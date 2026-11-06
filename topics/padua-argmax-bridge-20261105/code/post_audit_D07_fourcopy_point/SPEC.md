@@ -180,7 +180,14 @@ within the stricter completed-call/resource stops. No automatic followup.
 Exclusive registration/worker-entry files refuse overwrite or manual
 worker reuse. Direct immutable child stdout/stderr avoid pipe deadlock.
 Atomic checkpoints retain the current uncomputed call, prior complete
-calls, raw output repr/first exceptions and pending cases. Registered
+calls, raw output repr/first exceptions and pending cases. A completed
+case is committed to both the call ledger and point-result ledger and
+removed from pending BEFORE the completed-call cost stop can raise.
+The reference API combines point evaluation and reference internally;
+while it is active neither intermediate output is exposed to Python.
+The active stage says so explicitly. When it returns, both complete
+outputs and reference verdict survive any subsequent cost stop; a kill
+inside that API must not claim that an intermediate point was captured. Registered
 FREEZE identity and runtime code/data pins are checked at worker start
 and exit; prose hashes are passive provenance only.
 
@@ -190,6 +197,18 @@ compiler/toolchain, linked dependencies and actual loaded native closure
 before/after. All raw output remains under authorized Padua local-output
 `argmax-bridge-20261105/post-audit-D07/point/`. A hard stop retains the
 last checkpoint and loaded-before closure without claiming an after-check.
+
+Before spawning the worker, the Linux supervisor sets and verifies
+PR_SET_CHILD_SUBREAPER. After waiting the worker, it kills any residual
+worker process group, adopts and wait4-reaps orphan compiler/helper
+subtrees. Only after wait4 reports no children does it label descendant
+CPU accounting complete: RUSAGE_CHILDREN then includes the normal worker
+and every adopted subtree exactly once. A five-second reap deadline
+instead records accounting_complete=false and labels the CPU sample a
+lower bound; it cannot yield a completed-run result. Per-adoptee wait4
+records are retained in descendant-accounting.json. Sampling timestamps
+still explicitly precede their own final tiny write/print; no exact
+process-exit CPU is fabricated.
 No source/prep file grants execution authority.
 
 ## Preparation actually performed
@@ -206,3 +225,19 @@ stderr is preserved. No library was linked/loaded and no polynomial,
 root, partial sum, reference board or numerical diagnostic was executed.
 All prospective mathematical/numerical success claims remain OPEN until
 review and the separately authorized bounded run.
+
+## Focused controller fixes before execution
+
+The initial complete source/review candidate is preserved in Git commit
+cbfdb044e184731984e3bf8be487008a86e68c37. Initial controllerfd561ea7...
+and FREEZEdbd9166b... were not executed. The initial source reviewer
+accepted the mathematical core/reference inspection but withheld execution
+clearance for orphan-descendant CPU accounting and the slow-completed-case
+ledger. The fixes above change only controller bookkeeping/resource
+implementation; point.cpp and controls.cpp remain byte-identical.
+Pure Python AST-selected helper tests use fake worker/helper/grandchild
+processes, never the prototype: group kill adopted/reaped both helpers
+and charged .266539CPU-s to the supervisor; slow completed-reference
+ledger checks passed. Test total .337978CPU-s including descendants,
+below the separately allowed10CPU. Focused independent review remains
+required before numerical execution.

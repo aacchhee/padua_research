@@ -58,3 +58,33 @@ No full cover, new degree, whole-box enclosure, C08 speedup, source rescue
 or further experiment is authorized by this preparation. Broad evaluator
 usefulness and certifier bridge remain OPEN. All predecessor code, proofs,
 receipts and D04/D06 records are unchanged.
+
+## Initial frozen review and controller response — 2026-11-06
+
+Initial source, SPEC, controller and findings are preserved in Git commit
+cbfdb044e184731984e3bf8be487008a86e68c37. Initial controller SHA256
+fd561ea714812a70abc4bb2bdc6d3c9fce196be3180e412740c69947483aeb5d
+was not executed. Initial source review found no mathematical core/root/
+reference enclosure defect, but withheld execution clearance for F1/F2.
+
+F1: the supervisor now enables/verifies Linux subreaper adoption before
+spawn and wait4-reaps all orphan helper descendants after worker/group
+termination, before a complete descendant-inclusive CPU label. An
+incomplete cleanup is explicitly a lower bound and cannot be success.
+F2: case results and pending removal are durably committed before a
+completed-call cost stop. The combined native point/reference stage
+explicitly exposes no intermediate result; completed output pairs survive
+a cost stop and no output is invented for an interrupted stage.
+The numerical core, finite reference, frozen cases, precision, mathematical
+contracts, performance threshold and no-retry policy are unchanged.
+
+Pure Python controller_checks.py extracts only current infrastructure
+helpers using AST. A fake worker/middle/CPU-burning grandchild chain was
+group-killed; subreaper wait4 collected both helper subtrees, including
+.266539CPU-s charged to supervisor RUSAGE_CHILDREN. Completion/CostStop
+ledger checks passed. Total measured test CPU .337978s including all
+children, below the10CPU infrastructure allowance. No research library,
+compiler, polynomial, point/reference or numerical diagnostic ran.
+Before-fix local bytes and the test record are retained in authorized
+post-audit-D07/preparation/controller-fixes/. Focused source recheck
+of these controller-only changes remains required before release.

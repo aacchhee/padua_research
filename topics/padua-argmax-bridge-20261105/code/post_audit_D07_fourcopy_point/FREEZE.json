@@ -1,6 +1,6 @@
 {
-  "status": "PREPARATION ONLY; syntax compile allowed/performed, no numerical calls",
-  "input_head": "2e4ac49fa0687a7736bc1df82c12e6483b1c7a94",
+  "status": "PREPARATION ONLY; syntax and pure-Python controller helper tests only; no numerical calls",
+  "input_head": "cbfdb044e184731984e3bf8be487008a86e68c37",
   "files": [
     {
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/CASES.json",
@@ -9,8 +9,8 @@
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/SOURCES.json",
-      "bytes": 1431,
-      "sha256": "e212cb355117205d2869f30bbe9e95aef7c063bb616933cb9623909f5765a214"
+      "bytes": 1753,
+      "sha256": "f81f9d2640d6e7cde012d06201e9b22d719086b84bf3381352fbbe8152fe5c2a"
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/build.py",
@@ -19,8 +19,13 @@
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/controller.py",
-      "bytes": 11202,
-      "sha256": "fd561ea714812a70abc4bb2bdc6d3c9fce196be3180e412740c69947483aeb5d"
+      "bytes": 13786,
+      "sha256": "af8d357badba85786fec088c735cc988f0950587d112e2e63a8d5b39cc14a9a5"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/controller_checks.py",
+      "bytes": 4435,
+      "sha256": "839cfa86dd39035c697d3f68a15b8bb0ff019e482fe21b716cdd6574398a40ea"
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/controls.cpp",
@@ -36,8 +41,8 @@
   "review_provenance_non_enforced": [
     {
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/SPEC.md",
-      "bytes": 11425,
-      "sha256": "5ce1efbde7dd816d6e842cf54b61066b6a3df5df5c616f35bdee097f111fbd22"
+      "bytes": 13591,
+      "sha256": "98dd88fa9a61441c486a54611e6afa59463feb2d91c6aca4584c8f3b96c62c87"
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/ideas/D07-fourcopy-point.md",
@@ -46,8 +51,8 @@
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/attempts/D07-fourcopy-point.md",
-      "bytes": 3661,
-      "sha256": "da4d924e46aea4ea26718839209e5a5def041334b3a12283ebb318eb722fb2ae"
+      "bytes": 5478,
+      "sha256": "096bef265a83813d932d0a5a7969b80b99caba6ea24ff26dd3fd667c702e5a7d"
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/theory/D06-four-copy-rows.md",

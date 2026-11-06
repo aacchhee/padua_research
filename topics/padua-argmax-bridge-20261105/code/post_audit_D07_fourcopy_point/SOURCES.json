@@ -27,5 +27,8 @@
     "bytes": 25994,
     "sha256": "e538d588ccdd57bf7572906f2088a79a8f5d34a39503b8245d8316bf32a703fe"
   },
-  "root_guarantee": "find_roots candidate-only; independent disjoint Rouche disks certify full coefficient-family coverage"
+  "root_guarantee": "find_roots candidate-only; independent disjoint Rouche disks certify full coefficient-family coverage",
+  "initial_D07_freeze_commit": "cbfdb044e184731984e3bf8be487008a86e68c37",
+  "initial_unexecuted_controller_sha256": "fd561ea714812a70abc4bb2bdc6d3c9fce196be3180e412740c69947483aeb5d",
+  "controller_revision": "F1 Linux subreaper/full adopted-helper reap; F2 completion-before-cost-stop ledger; core/reference unchanged"
 }

@@ -5,6 +5,11 @@ at observed source input `2e4ac49fa0687a7736bc1df82c12e6483b1c7a94`.
 Distinct reviewer `/root/d01_far_review`, parent-requested Astra xhigh;
 serving metadata unexposed. Formal Claude audit remains separate.
 
+**Final focused verdict: ACCEPTED for the stated pre-execution source
+contract. F1 and F2 are closed; no unresolved finding.** Final pins and
+the correction check appear at the end. Execution still requires the
+parent's separate release; no numerical/performance result is asserted.
+
 ## Initial verdict and exact scope
 
 **Execution clearance withheld pending the two controller findings below.**
@@ -229,16 +234,61 @@ SHA-256 `68bf789c82967944421e6fc54f8164dbdb91d1096fa10694008261fbd54f9e9d`.
 The new Rouche family-coverage argument was reconstructed here rather
 than inherited from the root-finding API or the structural D06 theorem.
 
-Review tools have only read/searched files, inspected headers, checked
+Initial review tools only read/searched files, inspected headers, checked
 hashes/read-only diffs and written this report. No native build, library
 load, root solve, numerical diagnostic, board/reference evaluation,
 quadrature or replay has run. No scientific CPU or performance result
 is claimed. The optional <=10 CPU-second pure structural-helper allowance
-has not been used. The author's preparation syntax CPU is historical
+was not used in that initial pass. The author's preparation syntax CPU is historical
 reported evidence, not an independently executed test by this reviewer.
 
 ## Focused correction review
 
-PENDING: author/root disposition of F1 and F2, refreshed executable/data
-freeze and independent review of the changed controller paths. Mathematical
-point/reference source remains unchanged unless a new hash is recorded.
+**F1 and F2 CLOSED; final source contract ACCEPTED.** The original
+unexecuted candidate is preserved at
+`cbfdb044e184731984e3bf8be487008a86e68c37`. The complete focused diff
+against it was read. Final SHA-256 pins:
+
+| File | SHA-256 |
+| --- | --- |
+| controller.py | `af8d357badba85786fec088c735cc988f0950587d112e2e63a8d5b39cc14a9a5` |
+| SPEC.md | `98dd88fa9a61441c486a54611e6afa59463feb2d91c6aca4584c8f3b96c62c87` |
+| SOURCES.json | `f81f9d2640d6e7cde012d06201e9b22d719086b84bf3381352fbbe8152fe5c2a` |
+| FREEZE.json | `c8b8e49e5c5af5ff520f00f8b7bac655a6c31cc132a5cb06cd87397c36fa33fb` |
+
+All eleven final executable/data and ancestor identities matched.
+Point.cpp and controls.cpp retain the initial hashes above.
+
+F1: Linux subreaper setup is verified before launching the worker.
+After waiting that worker, the supervisor kills its residual group and
+wait4-reaps adopted subtrees until there are no children. This preserves
+their CPU in RUSAGE_CHILDREN without double counting usage already
+reaped by a descendant. An incomplete cleanup is explicitly labeled a
+lower bound and cannot produce a completed result. Per-adoptee records
+are retained. Final samples still precede their own tiny serialization,
+which is stated honestly.
+
+F2: `commit_call` updates completed_calls, point_results and pending
+together before the atomic checkpoint and completed-call CostStop.
+Node validation occurs before completion. The combined native
+point/reference API is explicitly indivisible in the active-call record;
+no unavailable intermediate point output is claimed after a kill.
+
+Independent command, preregistered before execution:
+
+    python topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_review/negative_controls.py
+
+**PASS**, nine Python-only failure/flow checks, 0.031124 total CPU seconds,
+below the 10-second cap. AST-selected frozen functions were checked with
+stubbed platform/prctl/reaping failures, complete/incomplete reap paths,
+ledger mismatch, the actual nested slow-call branch and failed-reference
+branch. No native library, compiler, subprocess or research computation
+was invoked. The author's separate live fake-grandchild test was read,
+not independently rerun; it reports two adopted helpers in 0.337978 CPU.
+
+Reviewer helper SHA-256:
+`d868850b798e9eda1ba877ac07803a9c842d077e65dd5dd28499b99f8981bb5f`.
+[Independent receipt](evidence/d07-review-source.json), 872 bytes, SHA-256
+`991edaa4bcf697dea176b724bf8772c4a5e7333628b5f562e8c41d9f80783643`.
+Only this report and the disjoint reviewer helper/receipt were written;
+author fixes remain attributable to the author. No Git/shared mutation.

@@ -145,7 +145,7 @@ sum to 4pi-beta. Also beta^2<=sin beta=q for 0<=beta<=1/2, by the
 sine chord and pi<4. Therefore all tau terms in (4)-(5) together cost
 at most
 
-    [q(4pi-beta)+beta^2]/(4m^2)<4P/n^2.             (10)
+    [q(4pi-beta)+beta^2]/(4m^2)<=4P/n^2.            (10)
 
 For K, the sinc estimate gives 1-K<=(u^2+v^2)/12. Hence
 
@@ -176,3 +176,10 @@ Candidate/gate: ../ideas/D07-short-endpoints.md. Rules/input: parent
 checkpoint 2e4ac49fa0687a7736bc1df82c12e6483b1c7a94, unchanged rules/catalog hashes recorded in the
 attempt. 2026-11-06, parent-requested Astra ultra, serving metadata
 unexposed. Paper proof only; independent review remains required.
+
+2026-11-06 review correction: equation (10) now uses <=, since at
+P=0 both sides are zero. This resolves the distinct reviewer's MINOR
+display finding without changing statement (1), its constants or its
+proof bound. The first frozen version, SHA256
+075cf0546af581538543d15ac5e7dd37d920c19b2c44538093d967289b3b7c2c,
+is preserved in root's checkpoint cbfdb04. No numerical run occurred.
