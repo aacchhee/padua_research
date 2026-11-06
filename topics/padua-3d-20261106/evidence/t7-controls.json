@@ -133,8 +133,8 @@
   "command": "python topics/padua-3d-20261106/code/t7_cosets.py --controls-only --output topics/padua-3d-20261106/evidence/t7-controls.json",
   "rules_sha": "e5b64450fce42262dafc88ee357b72e5f203916b",
   "schema": "t7-general-coset-v1",
-  "seconds": 2.761,
-  "source_sha256": "43cc3ffe73626779df6c726f13839b8ee921f5c4fd2afa005eb02404916e124f",
+  "seconds": 2.539,
+  "source_sha256": "87c792762aafb210ce4cbe8417a8a61d43b13b5aadc952d5d2db43d120d617b5",
   "status": "MEASURED finite exact diagnostics; written proofs are separate",
   "versions": {
     "python": "3.12.14",

@@ -110,6 +110,6 @@ any family-quality conclusion. Finite ranks provide no Lebesgue estimate.
 
 ## History
 
-2026-11-06, Codex T8, assigned gpt-6.1-sol xhigh/high, rules e5b64450.
+2026-11-06, Codex T8, assigned gpt-6.1-sol high, rules e5b64450.
 Preregistered after Part A M2 and full original plus main-delta gate read.
 All listed commands actually executed. No Git/shared files changed.

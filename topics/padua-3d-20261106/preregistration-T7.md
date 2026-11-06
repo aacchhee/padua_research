@@ -41,3 +41,23 @@ rounds; stop only on gate kill, a scoped proved obstruction, or recorded
 exhaustion (two consecutive substantive attempts without progress).
 No heavy raw catalogue is committed; code, compact receipts and local
 regenerate-only raw paths/hashes suffice for measured pilot records.
+
+## Round2 fixed pilot, registered after round1 checkpoint and before execution
+
+Root published round1 at51c031a59bcd3a05e142e1c05dd19cbba1933bd7.
+In addition to the supplied H4 example and the phase-stratum diagnostic,
+test exactly the order20 subgroup generated in turns by (7,7,4)/10
+and (5,0,5)/10, at a=(1,2,4)/101. This is an isolated n3 diagnostic,
+not a fitted degree-uniform rule. Verify exact group order and node
+count, and test the phase character matrix via an exact homomorphism
+Z[ζ_101]→F_p with p≡1 mod101; full modular column rank proves a
+nonzero cyclotomic minor. A deficiency has no all-phase implication.
+Kill this isolated pilot on wrong count or rank; do not search alternate
+phases or inspect n4/n5. Record the outcome and independent replay.
+
+After that pilot, test the Padua cubature marker for this fixed survivor
+before accepting it as a quality mechanism. Use the explicit dual vector
+(2,−2,0): attempt an all-weight vanishing-polynomial integral witness
+at degree4, which would also exclude degree5 exactness. This test is
+analytic, uses the frozen group/phase, and requires no higher-degree
+node construction or parameter search.

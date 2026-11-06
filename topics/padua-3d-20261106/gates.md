@@ -110,3 +110,28 @@ on each axis, which proves this finite order bound. Target-count cases are
 diagnostic of the separately accepted classification and all-n hand theorem;
 it is not a claim to have computed every rank or exhausted arbitrary cosets.
 D3(a)'s all-degree 2-D Padua escape remains the accepted analytic proof.
+
+## Handoff04 completed outcomes — 2026-11-06
+
+- New T7/T8 tool D0 controls pass before their mechanism screens. Final
+  T7 diagnostics rerun those controls at its final source identity.
+- T7's general-H reduction retains continuous free phases and symbolic
+  minors. No n2/n3 all-coset exhaustive diagnostic is claimed. Its fixed
+  20-node survivor has separate exact rank and quartic cubature certificates;
+  neither activates an unregistered all-degree quality continuation.
+- T8's zero-phase cyclic finite class is fully enumerated at n2/n3 with
+  the proved order cap8N. Finite classifications remain MEASURED, with
+  actual distinct-agent Laurent/null and actual-node checks. The all-phase
+  M10 obstruction is an analytic theorem, with the 2-D Padua escape explicit.
+- The prospective E selector is **D2 KILL at n9**, after the two consecutive
+  admissible Leja losses at n7/n9. Degree11 was not run. Its four finite
+  quality rows do not support the preregistered growth-model fit or a
+  D2-promising verdict. Generator selection used rank only.
+- T9 refines only the frozen old stack cases, without rescuing or extending
+  a killed family. Its maxima/fits stay MEASURED. The new all-degree lower
+  bounds are analytic; the n110 packing consequence stays CONDITIONAL on
+  the unverified density input. No D2 construction is claimed.
+
+The [continuation report](report-continuation-04.md) links exact scopes,
+receipts, supplementary checks and remaining open targets. Required Claude
+review covers PartA material changes and the new T7–T9 batch.

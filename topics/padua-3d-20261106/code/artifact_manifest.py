@@ -6,11 +6,12 @@ import json
 from pathlib import Path
 
 TOP = Path(__file__).resolve().parents[1]
+ROOT = TOP.parents[1]
 
 
-def identity(path):
+def identity(path, base=TOP):
     raw = path.read_bytes()
-    return {"path": path.relative_to(TOP).as_posix(), "bytes": len(raw),
+    return {"path": path.relative_to(base).as_posix(), "bytes": len(raw),
             "sha256": hashlib.sha256(raw).hexdigest()}
 
 
@@ -25,9 +26,11 @@ def main():
     args = parser.parse_args()
     target = TOP / "evidence-manifest.json"
     observed = [identity(path) for path in artifacts()]
+    inherited = [identity(ROOT / "tracks/lattice-unisolvence/code" / name, ROOT)
+                 for name in ("c3_lebesgue.py", "c3_rank.py")]
     if args.verify:
         saved = json.loads(target.read_text())
-        if saved["artifacts"] != observed:
+        if saved["artifacts"] != observed or saved.get("inherited_inputs") != inherited:
             raise SystemExit("FAIL: code/data set or identities changed")
         print(json.dumps({"verdict": "PASS", "artifacts": len(observed),
                           "bytes": sum(row["bytes"] for row in observed)}))
@@ -45,6 +48,7 @@ def main():
         "generate": "python topics/padua-3d-20261106/code/artifact_manifest.py",
         "verify": "python topics/padua-3d-20261106/code/artifact_manifest.py --verify",
         "artifacts": observed,
+        "inherited_inputs": inherited,
         "recorded_commands": commands,
         "limits": [
             "Identity verification is separate from mathematical verification.",
@@ -55,6 +59,8 @@ def main():
         ]
     }
     raw = json.dumps(output, indent=2) + "\n"
+    if len(raw.encode()) >= 16384:
+        raw = json.dumps(output, separators=(",", ":"), ensure_ascii=False) + "\n"
     if len(raw.encode()) >= 16384:
         raise SystemExit("FAIL: compact manifest limit exceeded")
     target.write_text(raw)

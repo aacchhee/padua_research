@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/04-work.md](handoffs/04-work.md)
+- Stage: AUDIT · Next: Claude Opus5.5 xhigh · Successor at publication: [handoffs/05-audit.md](handoffs/05-audit.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md); no final IDs allocated.
 
@@ -232,3 +232,49 @@ their bounded stops are finalized in [rounds](rounds.md).
   findings and preserves deviations for AC. Supplementary checks of the
   new computation and mathematics are running separately. Global manifest
   refresh and final report/PR integration wait for the completed new batch.
+
+## 2026-11-06 — handoff04 completed development
+
+- T7 round2: general-H symbolic phase reduction, explicit counterexamples
+  to the rank-two/one-phase shortcuts, and the exact shifted C10×C2 cubic
+  survivor. The 20 actual cosine nodes separately have rank20 modulo5051
+  with primitive1010th root32. A hand quartic identity proves no signed
+  weights on this survivor are exact through degree4. Broad all-coset and
+  uniform quality targets stay OPEN; no n4/n5 or alternate-phase search.
+- T8 round2: all-continuous-phase M10 obstruction and even-order trace
+  theorem; prospective odd-degree rank-only selector loses to Leja at
+  n7/n9 and triggers its frozen kill, with n11 unrun. No growth fit or
+  promising-family verdict follows. Finite U/O/E classifications remain
+  MEASURED; analytic obstructions retain their written PROVED scopes.
+- T9 round1: Lambda>=3/4+3/(2pi)>1.2274 at every n>=1 and leading
+  log³ coefficient1/(24pi³), a27-fold explicit local improvement. Haar
+  packing reduction is PROVED; the density-dependent n110 obstruction is
+  CONDITIONAL. All26 refined finite cases execute, with no certified sup
+  or asymptotic fit claim. Upper-route transfer lemmas retain their explicit
+  missing premises. Nine internal route steps are not separate rounds.
+- Stops and resume conditions are in the three attempts and rounds.md.
+  [Continuation report](report-continuation-04.md) and the topic results
+  synchronize the final scopes. The original accepted T1–T6 statements
+  are not reopened; response01 lists every material record/gate fix.
+- Actual T8 worker allocation was Sol high. Its initial prose mistakenly
+  combined the requested xhigh mathematics/high enumeration labels; those
+  labels are corrected. A separate Sol xhigh mathematical developer
+  reconstructs the four new analytic proofs in
+  [mathematical development](mathematical-development-T8.md), without
+  rewriting the initial worker's provenance or replacing Claude review.
+- Distinct Astra high checkers reconstruct all new mathematics and actually
+  rerun consequential computation: [T7/T9 check](independent-checks-new-math.md)
+  and [response/T8 check](independent-checks-response-t8.md). These cover
+  actual-node finite-field certificates, complete earlier selector null
+  prefixes, independent mesh evaluation and separate refined-maxima replay.
+  Their exact files/hashes/limits are retained; they are not Claude acceptance.
+- The final manifest pins local code/data plus both inherited lattice-quality
+  helpers. Its verifier additionally rejects a changed inherited helper.
+  Eight new raw T8 files were observed and hashed in the regenerate-only
+  ledger, with no archival delivery. All new code and essential receipts
+  stay below16KiB per file; prose logs and inherited protected audit/handoff
+  records are not divided to manufacture that evidence limit.
+- Stage AUDIT. No final-ID reservation, shared-registry application or
+  readiness/merge decision is made. Following the output commit, handoff04
+  closes and handoff05 requests focused PartA re-audit plus substantive
+  T7–T9 Claude review. Only AC merges.

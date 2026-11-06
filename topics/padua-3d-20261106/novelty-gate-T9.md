@@ -24,16 +24,21 @@ ideas below were developed while reading; no pre-gate numerical run occurred.
 
 | Candidate / aliases | Closest predecessor and obstruction | Distinction and prospective decisive test | Disposition at gate |
 |---|---|---|---|
-| T9-MAX; refined maxima | T2/T4, inherited c3_lebesgue.py; IDEA-203–205 mesh/Leja controls | Same nodes, nested21→41 angular meshes and bounded local search, not a new family. Abort ill-conditioned inversions; never infer a theorem from fits. | Measurement continuation; freeze preregistration before run. |
+| T9-MAX; refined maxima | T2/T4, inherited c3_lebesgue.py; IDEA-185–189 finite lattice controls, especially IDEA-187 | Same nodes, nested21→41 angular meshes and bounded local search, not a new family. Abort ill-conditioned inversions; never infer a theorem from fits. | Measurement continuation; freeze preregistration before run. |
 | T9-HAAR; dual packing | T1 open-class packing sketch; Cools–Poppe LIT323/381, DMVX LIT322; IDEA-178 density and IDEA-185–189 finite lattice controls | Prove exact unshifted equivalence with integer dual and folding factor; test 2D and phase cancellation. Density18/19 is not inspected, so its corollary stays conditional. | Analytic reduction retained; no universal impossibility claim. |
 | T9-K; retained averaged kernel | T6 universal lower; IDEA-206 Fourier/projection intermediary and its nonsharp ceiling | Keep multiplier2^-s rather than invert it at cost27. A bounded dual witness must give a strictly larger explicit lower bound. | Quantitative continuation; kill claimed improvement if normalization or positivity fails. |
 | T9-SQ; positive-facet square wave | T6 sawtooth/facet argument; IDEA-206, classical Fourier log powers | All shifted frequencies positive, sign(sin) has coherent odd Fourier coefficients. Kill if signs, facet inclusion, or minimum-coordinate covering fails. | Quantitative variant; no sharpness or novelty claim. |
-| T9-LOWERSET; hierarchical upper transfer | Carnicer–Godés LIT310; Chkifa–Cohen–Schwab lead in handoff04; IDEA-203 discrete Leja | Derive norm transfer from declared univariate prefix bounds. Full explicit polynomial family requires a verified prefix theorem, absent locally. | Standard reduction retained; explicit bound deferred with source resume condition. |
+| T9-LOWERSET; hierarchical upper transfer | Carnicer–Godés LIT310; Chkifa–Cohen–Schwab lead in handoff04; IDEA-187 lower-set controls | Derive norm transfer from declared univariate prefix bounds. Full explicit polynomial family requires a verified prefix theorem, absent locally. | Standard reduction retained; explicit bound deferred with source resume condition. |
 | T9-EXTRACT; near-Padua projection | DMVX LIT322, LIT391 O(log³) hyperinterpolation lead, LIT382 extraction | Prove exact interpolation correction and expose inverse submatrix norm. Node count or small projection norm alone is insufficient. | Standard reduction retained; explicit controlled subset deferred. |
 | T9-FEKETE; polynomial existence | Classical maximum determinant; LIT382/383 | No distinction: compactness and Cramer give Λ≤N. | Gate killed as a new result; baseline retained only. |
 | T9-LOCALDET; locally optimized Fekete proxy | LIT321/322/382, T2 QR baseline | Finite determinant ascent, not global Fekete optimality. Use only preregistered small n. | Measurement control, no construction theorem. |
-| T9-LOCALIZED; exact positive-packet dual | Root suggestion after full gate; same retained-kernel duality as T9-K | Finite nonnegative packet with rational phases could strengthen individual-degree bounds. | Screened, deferred: simple analytic all-n witness already suffices; resume only if a sharper finite bound is needed. |
+| T9-LOCALIZED; exact positive-packet dual | Root suggestion after full gate; same retained-kernel duality as T9-K | Finite nonnegative packet with rational phases could strengthen individual-degree bounds. | Equivalent bounded-dual implementation suggestion, not pursued: simple analytic all-n witness already suffices; resume only if a sharper finite bound is needed. |
 
 No prior disposition is overwritten. T4's killed monotone stack is not revived;
 its n4–7 Leja-height variant is measured only within its inherited tested range.
 No fresh code or receipts claim a computational proof without independent rerun.
+
+Gate-record correction: an initial transcription incorrectly labeled the
+mesh/Leja comparison IDEA-203–205, which concern unrelated programme routes.
+The actual comparison is the read C3/IDEA-185–189 record and T2/T4. Corrected
+before final freeze; no experimental choice or result depended on that label.

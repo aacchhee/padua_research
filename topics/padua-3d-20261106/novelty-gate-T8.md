@@ -1,7 +1,6 @@
 # T8 prospective gate and retained candidates
 
-2026-11-06. Codex T8 worker, assigned gpt-6.1-sol xhigh for mathematics
-and high for exact enumeration; runtime identity not independently exposed.
+2026-11-06. Codex T8 worker, assigned gpt-6.1-sol high for this worker; runtime identity not independently exposed.
 Rules read at `e5b64450fce42262dafc88ee357b72e5f203916b`.
 No Git or shared-file authority. This file precedes new mechanism runs.
 
@@ -160,3 +159,63 @@ Aliases: cardinality-valid fibre; Lobatto index selection.
 
 History: all five records were retained before new runs; outcomes are dated
 in the attempt, without overwriting this prospective text.
+
+## IDEA?padua-3d-codex-T8-06 — rank-selected odd-degree even half-grid
+
+Aliases: E; endpoint half-grid; M=2N-2 lex-first full rank; half-period trace.
+
+- Question/scope: a uniform algorithmic odd-degree family suggested by U's
+  sole cubic M38 survivor, with the permitted degree/parity class explained
+  before higher-degree testing.
+- Mechanism/hypotheses: zero phase, first unit coordinate1, even M=2N-2;
+  odd n>=3 only; exactly two odd generator coordinates. Choose the
+  lexicographically first full-rank generator, using rank alone.
+- Closest entries/readings: T8-01/T2 odd slice and T3-01; T1's parity/alias
+  obstructions; IDEA-189's low-degree annihilators. All full gate/source
+  qualifications above apply. This is a known-mechanism variant.
+- Separation/falsifier: two fixed torus endpoints change the even-order
+  orbit count from the odd slice; the half-period eigenspace criterion
+  permits odd n and excludes even n. An even-degree full-rank counterexample
+  under the exact hypotheses would refute the trace gate. Lack of any
+  full-rank generator at an admissible degree kills the selector family.
+- Applicable obstructions/escape: H39 fixes an odd modulus, while E uses
+  even2N-2. T1 requires every coordinate reflection; joint two-axis sign
+  symmetry is weaker. No projection/cardinality obstruction is assumed absent
+  without checking. The degree/parity restriction is proved, not fitted.
+- Literature baseline/limits: no new lattice architecture or priority claim.
+- Cheapest test/kill: rank-only lex selector at the next unseen n5 even
+  modulus110, then frozen quality against controls. D2 unchanged; see
+  round2 preregistration append for admissible-degree interpretation.
+- Discriminability: finite rank permits a measured quality screen; a
+  sampled Leja loss kills the empirical family gate, not an asymptotic
+  theorem for all even-modulus cyclic orbits.
+- Actual tests: none at this round2 record; U's cubic rank is its explicitly
+  disclosed starting evidence. No cubic or higher E quality seen yet.
+- Disposition/reason: active prospective screen after round1 publication;
+  outcome/stop recorded in attempt. Resume after a kill only with a genuinely
+  separated structural rule, not a quality-optimized generator splice.
+- Canonical theory: PD-T?padua-3d-codex-T8-03 trace gate;
+  future finite E measurement record. History:2026-11-06, after51c031.
+
+## Outcome append after round2 (prospective records above retained)
+
+T8-02's every-degree n>=2 translated M=N parent route is REJECTED:
+failed, by the all-continuous-phase order-ten half-period proof in
+theory/t8-phase-order-obstruction.md. The three frozen P examples remain
+independent concrete quadratic failures. Other orders and omitted-degree
+phase sequences retain the original OPEN/resume conditions; no complete
+finite phase enumeration is claimed.
+
+T8-06 E is REJECTED: failed the preregistered empirical D2 quality gate.
+At n=7 and n=9 the rank-only selected sets lose to the same-mesh Leja
+control; n=9 triggers the literal stop and n=11 is unrun. Exact finite
+ranks and floating quality remain MEASURED pending independent rerun.
+Canonical measurement: theory/t8-even-family.md. This kills only the
+specified selector under D2; other even-order cyclic families remain
+OPEN. No quality-selected alternative was tested.
+
+T8-01/T8-03 completed their bounded diagnoses with finite rank survivors
+retained, not promising. T8-04/T8-05 remain deferred with the structural
+resume conditions above. Final attempt stop is recorded scope exhaustion
+after two rounds, below the 25-round ceiling; no separated new rule was
+available after the active gate kills. The broad target remains OPEN.

@@ -85,3 +85,50 @@ gate kills/proved finite obstructions and recorded exhaustion of separated
 uniform rules. The broader cyclic/union/polylog target remains OPEN.
 Large raw data are regenerate-only under /tmp; code and each small receipt
 must remain below 16 KiB. No inherited/shared file is changed by the worker.
+
+## Prospective round2 append — E after the complete U/O/P diagnosis
+
+Round1 is published at51c031a59bcd3a05e142e1c05dd19cbba1933bd7.
+Its receipts bind the original preregistration text at that commit; this
+append does not alter those historical identities. No E higher-degree
+even-modulus rank/quality run preceded this append. U already revealed
+the sole cubic M38,z=(1,6,17) rank success; its quality has not been seen.
+The n5/n6 O runs used odd M111/167, not E's M110/166 etc.
+
+Structural reason: t8-even-parity.md proves the natural even half-grid
+M=2N-2 with first coordinate1 fails in every even degree, and odd degrees
+require precisely two odd coordinates. This explains the permitted degree
+sequence and parity mask before continuation; no generator formula is
+interpolated through the cubic success.
+
+Define E at admissible odd degrees n=3,5,7,9,11,... by M=2N-2 and choose
+the lexicographically first (1,b,c) with1<=b<c<=N-1, b+c odd, whose
+integer dictionary has full column rank. The selector uses rank only;
+there is no search/minimization of Lebesgue values. Each candidate is
+count-checked exactly; duplicated node sets cannot change the selected
+lexicographic representative. Prime1000003 full rank lifts; deficient
+modular cases require exact rational null verification. If the complete
+candidate set has no full rank, the prescribed family fails there.
+
+Run ascending admissible degrees from3. The cubic quality is also a
+finite same-degree diagnostic of the sole U survivor. Each selected member
+gets the fixed21^3 mesh and same-degree Leja/QR controls of P, with no
+mesh/axis tuning. D2 applies literally to the admissible degree sequence:
+two consecutive tested admissible degrees >=6 above Leja kill E. In
+particular n7 then n9 would suffice; n5 is reported but does not count
+toward this kill. A QR loss at any tested n>=4 makes E non-promising,
+even before the Leja kill. No best-of-degree splice is allowed.
+
+Run through n11 at most in this bounded screen, or until the first exact
+rank failure or D2 quality kill. A per-degree900s budget is a resource
+ceiling, not a failure certificate: if enumeration cannot complete, record
+OPEN selector at that degree and recorded resource exhaustion; do not
+claim no survivor. Expensive rank rows are retained in /tmp with hashes.
+Growth fits are INCONCLUSIVE unless the original fit's six-row minimum is
+reached; no promising claim is allowed from three/four quality values.
+
+Stop round2 on its actual gate kill or recorded exhaustion, retaining E
+and every original deferred route. The overall minimal polylog target
+remains OPEN, and positive finite ranks remain MEASURED until independent
+rerun. Any new continuation after E needs a separated structural reason,
+not additional parameter fitting after a quality failure.

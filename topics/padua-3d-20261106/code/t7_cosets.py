@@ -184,6 +184,63 @@ def lattice_counts(cap):
             'formula':'sum_(a*b*c<=cap) b*c^2; labelled embedded subgroups, no symmetry quotient'}
 
 
+def q_degree(u):
+    v = [abs(t) for t in u if t]
+    return (0 if not v else max(v) if len(v) <= 2 else max(2*max(v), sum(v)))
+
+
+def rank2_shortcut():
+    small = [u for u in it.product(range(-3,4), repeat=3)
+             if 0 < q_degree(u) <= 3 and (u[0]+2*u[2]) % 5 == 0
+             and (u[1]+2*u[2]) % 5 == 0]
+    require(not small and q_degree((1,1,2)) == 4, 'rank2 short-vector example mismatch')
+    return {'generators_mod5':[[1,0,2],[0,1,2]], 'H_order':25,
+            'q_at_most3_dual_vectors':small, 'displayed_dual_vector':[1,1,2],
+            'displayed_q':4, 'claim_scope':'no rank-to-short-degree implication; not an interpolation survivor'}
+
+
+def phase_shortcut():
+    result = []
+    for a, expected in [((Q(1,12),Q(1,12)),2), ((Q(1,12),Q(1,4)),3)]:
+        F = fold([tuple((v+Q(k,3)) % 1 for v in a) for k in range(3)])
+        X = [tuple(s.cos(2*s.pi*t) for t in f) for f in F]
+        rank = s.Matrix([[1,*x] for x in X]).rank()
+        require(rank == expected and len(F) == 3 and all((6*v).denominator != 1 for v in a), 'phase-stratum example mismatch')
+        result.append({'phase':[str(v) for v in a], 'nodes':len(F), 'Pi1_rank':rank})
+    return {'H':'C3 diagonal in T2', 'same_stratum':'both coordinates outside (1/6)Z/Z', 'cases':result}
+
+
+def rank2_phase_pilot():
+    """Exactly one preregistered phase; finite-field image of Z[zeta_101]."""
+    g = [(7,7,4),(5,0,5)]
+    a = (1,2,4)
+    H = sorted({tuple(Q(k*x+l*y,10) % 1 for x,y in zip(*g))
+                for k in range(10) for l in range(2)})
+    F = fold([tuple(v+Q(w,101) for v,w in zip(h,a)) for h in H])
+    p = 607
+    require(s.isprime(p) and (p-1) % 101 == 0, 'bad cyclotomic image prime')
+    root = pow(int(s.primitive_root(p)), (p-1)//101, p)
+    require(root != 1 and pow(root,101,p) == 1, 'bad primitive101 root')
+    cols = []
+    for u in modes(3):
+        C = Counter()
+        for eps in it.product((-1,1), repeat=3):
+            w = tuple(e*v for e,v in zip(eps,u))
+            key = tuple(sum(v*h for v,h in zip(w,hg)) % 10 for hg in g)
+            C[key] += pow(root, sum(v*t for v,t in zip(w,a)) % 101, p)
+        cols.append(C)
+    keys = sorted(set().union(*(set(C) for C in cols)))
+    B = [[C[key] % p for C in cols] for key in keys]
+    r = rank_mod(B,p)
+    require(len(H) == len(F) == 20, 'fixed n3 pilot wrong cardinality')
+    return {'generators_mod10':g, 'generator_orders':[10,2], 'phase_numerators_mod101':a,
+            'H_order':len(H), 'node_count':len(F), 'dictionary_rows':len(keys), 'Pi3_columns':20,
+            'prime':p, 'primitive101_root':root, 'rank_mod_prime':r,
+            'matrix_sha256':hashlib.sha256(json.dumps(B,separators=(',',':')).encode()).hexdigest(),
+            'outcome':'full rank at the single preregistered phase' if r == 20 else 'pilot deficient; no other phase searched',
+            'full_census':False, 'n4_n5_tested':False}
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
@@ -201,6 +258,9 @@ def main():
     if not args.controls_only:
         result['rank2_example'] = rank2_example()
         result['finite_reduction_cost'] = [lattice_counts(c) for c in (80,160)]
+        result['rank2_shortcut'] = rank2_shortcut()
+        result['phase_shortcut'] = phase_shortcut()
+        result['rank2_fixed_phase_pilot'] = rank2_phase_pilot()
     result['seconds'] = round(time.time()-start,3)
     args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')

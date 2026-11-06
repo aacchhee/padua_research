@@ -1,6 +1,6 @@
 # T8 source comparison and access limits
 
-2026-11-06. Codex T8, assigned gpt-6.1-sol xhigh/high; rules
+2026-11-06. Codex T8, assigned gpt-6.1-sol high; rules
 `e5b64450fce42262dafc88ee357b72e5f203916b`.
 
 Literature INDEX was inspected before comparing mechanisms. Full existing

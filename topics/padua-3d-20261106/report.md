@@ -219,3 +219,20 @@ The original T2 gate-timing deviation, unexecuted T5 completion probe,
 historical model-attribution correction and unused original budgets are
 preserved once in [canonical deviations](response-deviations-01.md).
 AC's acceptance is not presumed. The new gates do not repair old chronology.
+
+## Handoff04 completed development — 2026-11-06
+
+The [continuation report](report-continuation-04.md) supersedes this report's
+historical next-step language. T7 supplies the general-H/phase reduction,
+an exact shifted rank-two cubic survivor and its all-weight quartic cubature
+obstruction. T8 finds the unique finite cubic M38 class, proves the all-phase
+M10 obstruction and stops a prospectively chosen odd-degree continuation
+after measured quality losses. T9 proves Lambda>=3/4+3/(2pi)>1.2274 at
+every n>=1 and the leading log³ lower coefficient1/(24pi³),27 times the
+earlier local explicit coefficient. The Haar packing threshold remains
+CONDITIONAL; refined numerical maxima and fits remain MEASURED.
+
+The matching minimal-node polylogarithmic construction is OPEN. New results
+and PartA material fixes pass next to Claude; the original accepted T1–T6
+theorems are not reopened. Provisional IDs and source-reading limits remain
+explicit, with no shared-registry application or merge request.

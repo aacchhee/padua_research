@@ -97,5 +97,5 @@ separate obligations.
 
 ## History
 
-2026-11-06, Codex T8, assigned gpt-6.1-sol xhigh/high, rules e5b64450.
+2026-11-06, Codex T8, assigned gpt-6.1-sol high, rules e5b64450.
 Written after the full gate and Part A M2, before mechanism execution.

@@ -94,7 +94,7 @@ No quality run or growth fit was performed after the rank kills.
 
 ## History
 
-2026-11-06, Codex T8, assigned gpt-6.1-sol xhigh/high, rules e5b64450.
+2026-11-06, Codex T8, assigned gpt-6.1-sol high, rules e5b64450.
 The rules were prospectively frozen; exact kernels prompted the displayed
 independent elementary identities. An initial SymPy field-matrix coercion
 error produced no receipt; direct typed matrix construction fixed it.

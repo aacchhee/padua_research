@@ -9,8 +9,7 @@ correction is material record classification. No final IDs are assigned and
 no audit files or earlier handoff instruction bodies are edited.
 
 The coordinator owns the canonical LOG/report/rounds/gates/results/manifest/
-cold-storage/PR integration. Exact requested text is in
-[integration-notes-response-01.md](integration-notes-response-01.md). The coordinator has integrated LOG (linking
+cold-storage/PR integration. The coordinator has integrated LOG (linking
 [canonical deviations](response-deviations-01.md)), report, rounds, gates
 and cold-storage inventory. Results/PR and final manifest integration remain
 with the coordinator until the new-direction outputs are complete. This worker did not perform Git or PR
@@ -133,10 +132,10 @@ must be used to distinguish them. No proof, assumptions or PROVED status changed
 |m7|Fixed: t6-universal-lower-bound.md / attempts/T6 state harmonic term>1 only at roughly n7.2e11; practical explicit inequality is Λ≥1. This is not an effective finite-degree discriminator.|
 |m8|Fixed by honest wording: T6 producer preset multiplier identities are tautological and did not implement the genuine projection test. Audit-01's separate real-projection check is cited as audit evidence; no new developer run claimed. Analytic proofs unchanged.|
 |m9|Fixed: dependency/expectation uses of Split fields corrected with dated provenance in T4/T6 and normalized-T2 records; unrelated OPEN row moved out of T6's PROVED status table into open-items addendum. Dedicated retrospective construction targets distinguish failed/refuted T1/T4/T5 scopes from successful tools; attempted-mechanism fields/addenda point to them. T4-02 gets the monotone-rate refutation; T4-04 stays successful.|
-|m10|Fixed for this stage: full namespace mapping in T5 attempt/theory addenda and integration notes; final crosswalk only at PR preparation. IDEA T4-03≠PD-T T4-03, IDEA T5-04≠PD-T T5-04; IDEA T5-05 supplies PD-N T5-03.|
+|m10|Fixed for this stage: full namespace mapping in T5 attempt/theory addenda and report; final crosswalk only at PR preparation. IDEA T4-03≠PD-T T4-03, IDEA T5-04≠PD-T T5-04; IDEA T5-05 supplies PD-N T5-03.|
 |m11|Fixed in plan.md with dated attribution: Astra-high came from Claude handoff01; AC allowed Ultra when necessary. Canonical LOG correction supplied to coordinator.|
 |m12|Fixed: session tool tokens removed from literature-T1.md; arXiv1511.04564v2 §2.1, equations/proposition/theorem locators retained.|
-|m13|Coordinator inventory request: T4 node arrays `t4-{M,A,L}-n{1..7}-nodes.npy` under topic tmp storage are regenerate-only from the recorded producer command; no archival delivery claimed. COLD_STORAGE update is an integration obligation.|
+|m13|Fixed: COLD_STORAGE.md and cold-storage.json list T4 node arrays `t4-{M,A,L}-n{1..7}-nodes.npy` as regenerate-only from the recorded producer command and source identity; no unobserved array hashes or archival delivery are claimed.|
 |m14|Fixed: T6 gate now says det=−4; dated addenda supersede early novelty-unresolved language, with Subbotin verification limits preserved.|
 |m15|Fixed: IDEA-047/LIT-302/378/382 added to T4 gate/literature; LIT-391 to T6 gate/literature, retaining all inherited source coverage limits.|
 

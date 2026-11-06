@@ -54,7 +54,7 @@ retrievable. This is not a request for archival work now.
 ## Audit-01 m13 inventory correction — 2026-11-06
 
 The ledger now also lists the optional T4 arrays
-`/tmp/padua-3d-20261106/t4-{M,A,L}-n{2..7}-nodes.npy` and their regenerated
+`/tmp/padua-3d-20261106/t4-{M,A,L}-n{1..7}-nodes.npy` and their regenerated
 `t4-node-artifacts.json`. Reproduce them with
 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t4_stacks.py --max-degree 12`.
 The registered quality stop occurs at n7, so that command creates no n>=8
@@ -62,3 +62,14 @@ family rows. Their current generating source SHA-256 is recorded. These
 files were not observed or regenerated in this continuation, so no new
 array bytes/hashes or archival delivery are claimed. D0 fixtures remain
 restorable from the pinned Git source identities in evidence/replay.json.
+
+## T8 continuation outputs — 2026-11-06
+
+The ledger additionally records eight actually observed U/O/E raw JSONL
+catalogues by exact byte size, SHA-256, generating code blob/hash, command
+and compact summary. These are regeneration-only working outputs, with
+no cold-storage delivery or raw-data premise for the analytic theorems.
+The independently executed checks keep their own outputs in separate tmp
+directories; their compact receipts and code are retained in the repository.
+The final code/data manifest also pins the two inherited lattice-quality
+helpers used by the numerical comparisons, along with all local scripts.

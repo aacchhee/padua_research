@@ -50,3 +50,21 @@ Candidate templates and every disposition, including abandoned shortcuts,
 are in [attempts/T7](attempts/T7.md). Expensive runs are controlled by
 [preregistration](preregistration-T7.md). Gate completion precedes new code,
 mathematical mechanisms and T7 rank experiments.
+
+## Subsequent scope checks (do not backdate the prospective gate)
+
+After round1, all remaining INDEX claim/hypothesis fields were screened;
+unrelated citation/coverage columns were not re-audited. Primary source
+reading remains bounded as recorded in literature-T7. Poppe–Cools2012,
+*In search for good Chebyshev lattices*, supplies explicit HNF-search
+prior art, including an offset framework, while reporting its main
+searches as unshifted (§5). This reinforces the no-novelty verdict for
+the reduction/search ingredients.
+
+Round2's one fixed translated C10×C2 pilot was prospectively added to
+preregistration after the published round1 checkpoint and before its
+rank run. It yielded a20-node Π3 example, not a new all-n mechanism.
+Its degree5 cubature-marker test was then explicitly registered and
+proved impossible even for signed weights by a quartic integral
+witness. No all-phase census, n4/n5 extrapolation or novelty assertion
+was inferred. Final dispositions and resume requirements are in T7.

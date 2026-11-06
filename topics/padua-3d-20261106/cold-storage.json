@@ -41,11 +41,107 @@
       "summary": "evidence/t2-generators.json",
       "retention": "regenerate on demand; no proof dependency on raw catalogue",
       "archival_delivery": "NOT PERFORMED"
+    },
+    {
+      "working_path": "/tmp/padua-3d-20261106/t8-even-selector-n3.jsonl",
+      "bytes": 3478,
+      "sha256": "48fec8eebbdf01830e450596ed2d0d789181606f5c4cb9c14217bcdb3bf12fff",
+      "generator_sha256": "820d0a9e641611d57495b192cc4982a77802077f49191fbfa6e738a3210e300a",
+      "generator_blob": "71749b634b799bd0804e6136e23bd2d569dda88e",
+      "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t8_even_family.py",
+      "checker_command": "regenerate and compare scientific fields and raw digest with topics/padua-3d-20261106/evidence/t8-even-family.json",
+      "summary": "evidence/t8-even-family.json",
+      "retention": "regenerate on demand; compact evidence and code are committed; no proof depends on raw file",
+      "archival_delivery": "NOT PERFORMED"
+    },
+    {
+      "working_path": "/tmp/padua-3d-20261106/t8-even-selector-n5.jsonl",
+      "bytes": 39521,
+      "sha256": "099633e33d573cafe74a794b0b64a93a3e85bc53cf72b2958515259122dd9664",
+      "generator_sha256": "820d0a9e641611d57495b192cc4982a77802077f49191fbfa6e738a3210e300a",
+      "generator_blob": "71749b634b799bd0804e6136e23bd2d569dda88e",
+      "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t8_even_family.py",
+      "checker_command": "regenerate and compare scientific fields and raw digest with topics/padua-3d-20261106/evidence/t8-even-family.json",
+      "summary": "evidence/t8-even-family.json",
+      "retention": "regenerate on demand; compact evidence and code are committed; no proof depends on raw file",
+      "archival_delivery": "NOT PERFORMED"
+    },
+    {
+      "working_path": "/tmp/padua-3d-20261106/t8-even-selector-n7.jsonl",
+      "bytes": 278767,
+      "sha256": "3c69603edea992a9a0d4a9a50bae14f2037f0917d8fef14f5b1a97d9d177e87e",
+      "generator_sha256": "820d0a9e641611d57495b192cc4982a77802077f49191fbfa6e738a3210e300a",
+      "generator_blob": "71749b634b799bd0804e6136e23bd2d569dda88e",
+      "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t8_even_family.py",
+      "checker_command": "regenerate and compare scientific fields and raw digest with topics/padua-3d-20261106/evidence/t8-even-family.json",
+      "summary": "evidence/t8-even-family.json",
+      "retention": "regenerate on demand; compact evidence and code are committed; no proof depends on raw file",
+      "archival_delivery": "NOT PERFORMED"
+    },
+    {
+      "working_path": "/tmp/padua-3d-20261106/t8-even-selector-n9.jsonl",
+      "bytes": 686604,
+      "sha256": "21c99b3f9eee34f5df4807b5917a6a19fac3dfacb9e1e5474802dbb3bf1fb96b",
+      "generator_sha256": "820d0a9e641611d57495b192cc4982a77802077f49191fbfa6e738a3210e300a",
+      "generator_blob": "71749b634b799bd0804e6136e23bd2d569dda88e",
+      "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t8_even_family.py",
+      "checker_command": "regenerate and compare scientific fields and raw digest with topics/padua-3d-20261106/evidence/t8-even-family.json",
+      "summary": "evidence/t8-even-family.json",
+      "retention": "regenerate on demand; compact evidence and code are committed; no proof depends on raw file",
+      "archival_delivery": "NOT PERFORMED"
+    },
+    {
+      "working_path": "/tmp/padua-3d-20261106/t8-odd-n5.jsonl",
+      "bytes": 119638,
+      "sha256": "87aab75850a49375dde95ee3f8c3d3724dfe8743b120993e911e173bafe13fbf",
+      "generator_sha256": "5077782209ac9b51a73c60e425a153445e11983f14f4283214877d5ffcaad1ab",
+      "generator_blob": "bdab89d01931b63ebd470a33da99ed4d2db3b92d",
+      "generating_command": "python topics/padua-3d-20261106/code/t8_cyclic.py odd --n 5",
+      "checker_command": "regenerate and compare scientific fields and raw digest with topics/padua-3d-20261106/evidence/t8-odd-n5.json",
+      "summary": "evidence/t8-odd-n5.json",
+      "retention": "regenerate on demand; compact evidence and code are committed; no proof depends on raw file",
+      "archival_delivery": "NOT PERFORMED"
+    },
+    {
+      "working_path": "/tmp/padua-3d-20261106/t8-odd-n6.jsonl",
+      "bytes": 252644,
+      "sha256": "b15a6f471f3dd15c6ea7a3fee70ff980beae5d09878dcfc819670811e58f99bc",
+      "generator_sha256": "5077782209ac9b51a73c60e425a153445e11983f14f4283214877d5ffcaad1ab",
+      "generator_blob": "bdab89d01931b63ebd470a33da99ed4d2db3b92d",
+      "generating_command": "python topics/padua-3d-20261106/code/t8_cyclic.py odd --n 6",
+      "checker_command": "regenerate and compare scientific fields and raw digest with topics/padua-3d-20261106/evidence/t8-odd-n6.json",
+      "summary": "evidence/t8-odd-n6.json",
+      "retention": "regenerate on demand; compact evidence and code are committed; no proof depends on raw file",
+      "archival_delivery": "NOT PERFORMED"
+    },
+    {
+      "working_path": "/tmp/padua-3d-20261106/t8-unshifted-n2.jsonl",
+      "bytes": 962991,
+      "sha256": "0fe9497842b65de8129e0b99df8adc9c57483df7b42513a081d841fbfeacb61f",
+      "generator_sha256": "5077782209ac9b51a73c60e425a153445e11983f14f4283214877d5ffcaad1ab",
+      "generator_blob": "bdab89d01931b63ebd470a33da99ed4d2db3b92d",
+      "generating_command": "python topics/padua-3d-20261106/code/t8_cyclic.py census --n 2",
+      "checker_command": "regenerate and compare scientific fields and raw digest with topics/padua-3d-20261106/evidence/t8-unshifted-n2.json",
+      "summary": "evidence/t8-unshifted-n2.json",
+      "retention": "regenerate on demand; compact evidence and code are committed; no proof depends on raw file",
+      "archival_delivery": "NOT PERFORMED"
+    },
+    {
+      "working_path": "/tmp/padua-3d-20261106/t8-unshifted-n3.jsonl",
+      "bytes": 6999634,
+      "sha256": "ce1343748200be41ce3bdc4b7bad490b8476ae8183072bcb94112ac030b31131",
+      "generator_sha256": "5077782209ac9b51a73c60e425a153445e11983f14f4283214877d5ffcaad1ab",
+      "generator_blob": "bdab89d01931b63ebd470a33da99ed4d2db3b92d",
+      "generating_command": "python topics/padua-3d-20261106/code/t8_cyclic.py census --n 3",
+      "checker_command": "regenerate and compare scientific fields and raw digest with topics/padua-3d-20261106/evidence/t8-unshifted-n3.json",
+      "summary": "evidence/t8-unshifted-n3.json",
+      "retention": "regenerate on demand; compact evidence and code are committed; no proof depends on raw file",
+      "archival_delivery": "NOT PERFORMED"
     }
   ],
   "regenerate_only_artifacts": [
     {
-      "working_path_pattern": "/tmp/padua-3d-20261106/t4-{M,A,L}-n{2..7}-nodes.npy",
+      "working_path_pattern": "/tmp/padua-3d-20261106/t4-{M,A,L}-n{1..7}-nodes.npy",
       "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t4_stacks.py --max-degree 12",
       "generator_sha256": "0cd23793f436cd25328114e21dfda2c8c590cebbe7b88b985f7e478fc8c068b7",
       "summary": "evidence/t4-mesh-M.json; evidence/t4-mesh-A.json; evidence/t4-mesh-L.json",
