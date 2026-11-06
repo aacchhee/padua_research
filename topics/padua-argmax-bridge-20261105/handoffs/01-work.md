@@ -1,6 +1,6 @@
 # Handoff 01 — padua-argmax-bridge-20261105 — close the Padua argmax bridge 33 ≤ n < N_*
 
-- Status: open
+- Status: superseded by 02: AC continued after the explicit cross-topic archival request; scientific campaign and limits retained
 - Previous handoff: none (new topic; predecessors `topics/padua-argmax-effective-20261103/` (PR #19) and `topics/padua-argmax-effective-2-20261105/` (PR #25), both merged)
 
 - Next agent / model / effort: Codex. Allocation per AC, 2026-11-05: "Run the coordinator on Astra High, easier jobs on Sol and raise to Astra Ultra only when things get serious". This replaces the ultra-throughout wording first published here.
