@@ -48,7 +48,7 @@ The [gate](../novelty-gate-S1.md) records bounded predecessor coverage.
 
 Put F=Vf and a=pi/2. For smooth F vanishing at0, complete the square:
 
-    integral_0^1 (F'−a*cot(a*x)*F)² dx
+    integral_0^1 |F'−a*cot(a*x)*F|² dx
       = integral_0^1 |F'|² dx − a² integral_0^1 |F|² dx.
 
 For complex F use real parts in the cross term. The boundary term is

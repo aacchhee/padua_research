@@ -50,3 +50,15 @@
 - S4 gpt-6.1-sol medium scans42 raw CC rows throughN102401, all guards pass; no fits yet. Total55.18s, peak264800KiB. Full local receipt55192bytes is off-Git, SHA2567ce16e5c61fb82fe1fc4125bbd9570fdc7579db7aa139cd116b4807322f500f2; [short summary](evidence/S4-raw-scan-summary.json). Selective75digit N20/40 agreement1.89e-15. Local raw artifact archival is pending AC-designated cold storage; retain generating/checking code and essential short receipts.
 - [Distinct Astra structured-solver check](independent-checks-S4.md) independently reconstructs exact finite algebra and separately runs both parities atN101/1281/8192/8193, with errors<=1.973e-13 to dense and<=3.031e-14 in sparse exact-moment form. No rigorous enclosures or asymptotic proof follows.
 - [Literature screen](literature-screen.md) records fulltext coverage and inaccessible primary sources; use the handoff's fit as an ansatz, not an independently verified Widom–Wilf theorem. Basor–Ehrhardt1999 fulltext read and provisionally recorded; it supplies no model identification or finite-N error here.
+
+## Decisive S1 transfer allocation
+
+- Allocate gpt-6-astra ultra to the decisive finite-to-model error problem in S1: determine whether the exact CC reciprocal interpolation operator admits the sharp Volterra leading norm with an o(logN) operator remainder. This is the specifically authorized hard limit/error step in handoff01, not routine mathematics; require a written proof or a precise unresolved obligation. S1 model prediction is already published977c07a; final fits have not been supplied to the hard-step worker.
+
+## K1/K2 decision and retained S1 one-sided theorem
+
+- Exact pre-registered fit [receipt](evidence/S4-k1-fit.json) passes K1 for both parities (window intercept agreement1.185%). K2 rejects first limiting-model prediction by7.268% versus the5% threshold. S1 declines an unjustified fitted revision and stops; no threshold change or extension. Gate rejection is numerical and operational, not mathematical refutation.
+- S1 had completed [one-sided theorem](theory/S1-sharp-one-sided.md) before receiving K2: limsup log²N lambda_min<=pi^4/8 on allN and each parity. Its exact parity-reflected trials, signed pole remainder and oscillatory Jacobian estimates are now submitted for independent review. It proves neither sharpness nor a limit. The separately proved Volterra lemma received a MINOR absolute-square display correction for its complex statement; no mathematical claim changed.
+- The allocated hard S1 full-transfer worker was interrupted immediately when K2 arrived and remains stopped. No full-transfer proof or execution is claimed. No revised model is launched.
+- [S2 deficit corollary](theory/S2-eta-deficit.md) and [uniform5/3 proof](theory/S2-uniform-upper.md) pass distinct Astra mathematical review in [independent-checks-S2.md](independent-checks-S2.md); required Claude audit remains pending.
+- S2 round2 registers the exact [endpoint operator model](theory/S2-endpoint-model.md), with common-parity norm prediction, before its Galerkin calculation and K3 final extrapolation. Operator transfer remains OPEN.
