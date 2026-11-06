@@ -1,6 +1,6 @@
 # Handoff 01 — nn-mop-conditioning-20261106 — is the exponential NN-MOP conditioning intrinsic? Sharp rates, weak stability, IEP-MOP comparison
 
-- Status: open
+- Status: done in cc1edd20a27f955f2f028e988e525889ddfbc805
 - Previous handoff: none (new topic; predecessor `topics/nn-mop-stability-20261105/`, merged as PR #28)
 
 - Next agent / model / effort: Codex, with the allocation AC set on 2026-11-05:
