@@ -81,22 +81,42 @@ changes only degrees and candidate data, not that tested implementation.
 |---|---|---|---:|---:|---|
 |37|ACCEPTED, exit 0|316 / 2 / 317|897.768536|918.566803|[n37](evidence/independent-n37.json)|
 |38|ACCEPTED, exit 0|320 / 2 / 321|1049.906113|1072.093637|[n38](evidence/independent-n38.json)|
+|39|ACCEPTED, exit 0|330 / 2 / 331|1195.500276|1216.615418|[n39](evidence/independent-n39.json)|
+|40|ACCEPTED, exit 0|350 / 2 / 351|1366.972668|1367.457987|[n40](evidence/independent-n40.json)|
 
 The n37 candidate has 8905 compressed bytes and SHA256
 `425fb779e3d476efe221f6d1bef118cb1752fa9f538a46110b7ea2b44f2cefae`.
 The n38 candidate has 8973 compressed bytes and SHA256
 `fcb900fab6b596b7d258668e0de49a4bf9b76bc9d3f4c879ebb358d7b792f1d2`.
-Both retain producer `accepted=false`. Their separately generated receipts
+The n39 candidate has 9186 compressed bytes and SHA256
+`af0c1dfdf4ea59560c23e83ebd4136b9b7ce783a253d1165f0cdbd1ace01d8f6`.
+The n40 candidate has 9663 compressed bytes and SHA256
+`37cb278ad498d9f531634b2dca470426a86339b5d83cd437bfb2dd093afa374f`.
+All retain producer `accepted=false`. Their separately generated receipts
 record all supplied bounds verified, complete partition and acceptance.
 Actual wrapper commands:
 
 ```sh
 python topics/padua-argmax-bridge-20261105/code/check_native_37_40.py --degree 37
 python topics/padua-argmax-bridge-20261105/code/check_native_37_40.py --degree 38
+python topics/padua-argmax-bridge-20261105/code/check_native_37_40.py --degree 39
+python topics/padua-argmax-bridge-20261105/code/check_native_37_40.py --degree 40
 ```
 
-Pending: complete independent replays at n39–40. No pending degree is
-accepted by this record until its receipt is complete.
+All four wrapper executions returned actual exit status 0. Each receipt
+retains the unmodified driver's verdict fields plus execution provenance;
+the raw original receipt is retained locally and hash-identified. Sources,
+binary and certificate bytes were checked again after every replay. The
+runner SHA256 in every receipt identifies the same unchanged wrapper.
+The parent-retained `evidence/n37.json.gz` through `n40.json.gz` match the
+actual local input bytes by SHA256. Each new receipt, wrapper and report
+is below 16KiB; raw output and binary remain local.
+
+**Final supplementary disposition: ACCEPTED for n37–40.** Every supplied
+bound, both parity-correct corners, metadata and full partition were checked
+exactly in a separate execution of the independent arithmetic path.
+No unresolved finding in this finite block. No replay was restarted and
+no failed or partial result was counted. This block is complete and frozen.
 
 ## Boundary
 

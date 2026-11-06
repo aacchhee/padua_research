@@ -113,3 +113,35 @@ coalescing-limit first test and preserved repair are preregistered in
 [N1-round4](ideas/N1-round4.md). A renamed growing sum or new fit fails
 the separation test. This addon authorizes no theorem claim: substantive
 development awaits the parent's published boundary.
+
+## Round 5 single-correction gate — 2026-11-06
+
+Parent published fc8c288 and authorized one coupled correction of the
+stopped error certificate. No IDEAS/rules delta since the preceding
+complete update was found. The supplemental jump/Bernoulli/finite-h
+search and full N5-04 proof read introduce no new external source.
+Closest records remain IDEA-337/459, the N1 row/cancellation/endpoint
+proofs and the accepted round-4 error obstruction. The corrected N1-08
+double-collision case is preserved unchanged.
+
+Verdict: quantitative repair, not a new mechanism. The exact model,
+finite-h terms, jump signs to test, fixed-count obligations and current
+1/4096 budget are preregistered in [N1-round5](ideas/N1-round5.md).
+Retaining e_rows while adding only a pole jump is already insufficient;
+its scoped failure is retained. The distinguishing test must remove
+both certificate floors with a uniform proved remainder, not merely
+rename the degree-growing sums. This is the original one correction;
+failure does not authorize a further term or a fresh round budget.
+
+### Round-5 separation outcome
+
+The exact preregistered signs and finite row index sets hold on rho<=1/2.
+N1-09 removes the old finite-row error by retaining finite h and proves
+an O(1/R^2) endpoint quadrature loss after the fixed jump correction.
+N1-10/11 remove the degree-growing endpoint-profile and jump sums with
+explicit uniform errors, and N1-12's combined known error is <1/14000
+at R=128,delta=1/1000,n>=10^6. Thus the scoped distinguishing property
+survives. See [the retained outcome](ideas/N1-round5.md#round-5-outcome--2026-11-06).
+This spends the one correction; it does not pass the complete B3 gate.
+The remaining central/interior sum and final comparison remain OPEN.
+No numerical fit, new source transfer or additional variant was used.

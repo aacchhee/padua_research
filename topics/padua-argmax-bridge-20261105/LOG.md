@@ -3,7 +3,7 @@
 - Branch: `codex/padua-argmax-bridge-20261105` · Base: main `9322fba` (PR #25 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
 - Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-argmax-bridge-20261105.` · Open handoff: [handoffs/03-research.md](handoffs/03-research.md)
 - Reserved final-ID ranges: PD-T392–431, PD-N146–161, IDEA490–529, LIT598–613; first published f708a83. See ALLOCATIONS.md; final IDs not assigned.
-- Current claims: exact global range2–38; finite local patch2–128; reviewed compact endpoint and two-phase defect support; all-degree PD-T099 remains OPEN.
+- Current claims: exact global range2–40; finite local patch2–128; reviewed compact endpoint and two-phase defect support; all-degree PD-T099 remains OPEN.
 - Open for AC: none at setup. The sandbox allowance is approved. Syvert is pre-approved under gate B4: syvert1 (16 cores, 256 GB) and syvert2 (32 cores, 128 GB), up to all of both for about a week, and AC launches it from Codex's run package.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -210,3 +210,19 @@
 - Next research steps must be separately gated and published: one coupled N1 error correction, and higher-degree outward overlap/calibration using the already accepted finite local patch. No final effective onset/B3 pass or Syvert run pack exists. Temporary10MB cap remains in force; no external-topic cleanup changes.
 
 - Publication size check for this staged research package: conservative generated-output upper inventory6567606bytes (1400counted paths), below AC's temporary10000000-byte cap. All72 topic essential-evidence files are individually<16KiB; the compact evidence index is about10KB. No raw traces/downloaded libraries or cross-topic cleanup are staged.
+
+## 2026-11-06 — exact2–40 and complete outward17/24/32 ladder
+
+- Native39/40 separately accepted, total checkerCPU1195.500276/1366.972668s, exit0,330/350 bound leaves plus2corners each. All37–40 first executions pass within1800CPU per degree. Canonical theorem now2–40, remaining41<=n<N_*. All-degree PD-T099 remains OPEN.
+- N3 round6 completed known-degree outward24/32 using the unchanged accepted MPFR kernel and reviewed common local patch2..128. Producers2036/1980visits and1020/992leaves, search363.070/619.326638CPU-s; independent Arb full replays check every leaf,0failed/0pending, exit0,202.067842/382.569138checkerCPU-s plus separate build/helperCPU. Essential candidates5070/4989bytes; full command/source/runtime/raw provenance and short acceptance receipts committed. No retries or candidate edits during replay. The matched pair has decreasing counts; no all-n complexity law is inferred, and historical17 used a different radius.
+- New premise guard source437378... validates only fixed published receipt e685... and its four code/data identities,127 exact inputs/counters, degree2..128 and rational phase square; no prose dependencies or arbitrary caller premise. Distinct Astra high focused review accepts it with actual negative/boundary/AST controls. This changes no interval arithmetic or old checker source.
+- N5 round5 direct72 quarter-target measurements survive (minimum full projectedQ .52304857), but the single preregistered phase-blind full-band certificate has a proved central-subsequence limit<487302379/1968469140<1/4. Distinct math review reconstructs the improper lattice limit, entropy integral and exact rational chain. Only that certificate fails; true full-quarter statement remains OPEN. No automatic successor or N1 model correction is inferred.
+- N1 round5 correction is now precisely gated; frozen core/endpoint/jump components are in independent review while the final bounded assembly is written. No new full B3 model or onset is claimed. The next N3 gate prepares a global-maximum bootstrap from PD-T227, with proposed finite b<=3/4 energy predicate. The logical test is promising but no new energy run or bootstrap certificate has executed at this checkpoint.
+
+## 2026-11-06 — one N1 correction escapes the old error floor
+
+- N1 round5's one permitted coupled correction is complete and independently reviewed at frozen hashes:09f749234...,10c694f98...,11cd81ff9...,12b1bec75... . Exact finite-h endpoint rows remove the old row-certificate floor; outer-half periodic jump terms remove the coarse1/R quadrature obstruction. Fixed-count endpoint/jump compaction retains cutoff/cell terms and the next q log z/U1 contributions.
+- The combined known error is analytically<1/14000 for rho<=1/2,n>=10^6,R128,delta1/1000, below1/4096. No fit or mathematical run supplies these constants. The independent review reconstructs signs, parity, derivative variation, finite-h cells, shifted-series tails and final assembly without a finding. This replaces the failed unchanged bound; it does not contradict that scoped negative theorem.
+- K_endpoint still retains an O(n) central/interior outer H sum, and the far domain is not covered by this rho<=1/2 result. Thus no full finite-dimensional B3 model, actual argmax onset or B4 release exists. The one correction is now used; subsequent central/interior work must complete this model, not silently add another correction family.
+
+- This staged research checkpoint size check: conservative6618661bytes of counted outputs, below temporary10MB. All82 essential-evidence files<16KiB; index11236bytes. No cross-topic cleanup or raw binary/archive staging.

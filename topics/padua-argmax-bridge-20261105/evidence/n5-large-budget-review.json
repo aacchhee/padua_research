@@ -1,0 +1,24 @@
+{
+  "inputs_sha256": {
+    "code/n5_large_budget.py": "c7840ec6cfc801cbc353bf9f67d3831b9207b4b8d9d7da93009552b2f4bf8056",
+    "evidence/n5-large-budget.json": "fc7582ff0375c0f55779aeb026f42a81228bb6c9dc479642f3d791fe64342c1e",
+    "theory/N5-large-budget.md": "0e86fe06ccf8845c5fa6e5715e7e35618775573c00bca69a7e9660ee02c76247"
+  },
+  "integrated_polynomial_division": true,
+  "machin_tangent_identity": true,
+  "measurement_replay": false,
+  "producer_imports": false,
+  "python": "3.12.14",
+  "review_source_sha256": "12e67b29fe4712677ae95bac4d1e36bf0850c208494e6979336700b5517d75d2",
+  "scope": "exact rational arithmetic supporting the analytic scoped obstruction; no actual Q counterexample or all-degree quarter-floor proof",
+  "status": "PASS",
+  "values": {
+    "atanh_c_lower_series": "2253160124237/2421931640625",
+    "log2_upper_series": "23581/34020",
+    "negative_coefficient": "-1917599/2495625",
+    "pi_lower_series": "281476/89625",
+    "positive_bracket": "487302379/748687500",
+    "quarter_minus_upper": "2407453/984234570",
+    "strict_limit_upper": "487302379/1968469140"
+  }
+}

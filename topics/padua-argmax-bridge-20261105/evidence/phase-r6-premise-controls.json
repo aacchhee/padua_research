@@ -1,0 +1,210 @@
+{
+  "status": "PASS focused guard controls; independent focused review required before full checks",
+  "rules_input": "fc8c2885f47b08cecc7f65328db0e740cbc205ea",
+  "range_receipt_sha256": "e685674c028bc99e42d547e8b84a2ce5a7e7e67c3cc69f6c29a55ecbcffd23c0",
+  "code_data_pins": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp",
+      "sha256": "3646f4e8b6b16957b9e1114f95ad2f0a7c18eec4687b49d5e6f1947a25eea6e3",
+      "bytes": 5725
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/check_corner_range.py",
+      "sha256": "66fc2d9583260572125bd6c70a943577f94f1dd1ce2755a2c47ad96fffa9a982",
+      "bytes": 7416
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-corner-batch.json",
+      "sha256": "97e20cc877ad5afd0c9dfe96c1e399a42d820b38c18626e2b69bfa54f6acfc88",
+      "bytes": 3601
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/independent-corner-replay.json",
+      "sha256": "573afc5d5ae229b0fa1d47df9b6bf334e47e0e437288a3543826838e5403cb4b",
+      "bytes": 7892
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "changed receipt bytes",
+      "reason": "published range receipt identity mismatch"
+    },
+    {
+      "name": "status",
+      "reason": "range receipt schema/status mismatch"
+    },
+    {
+      "name": "schema",
+      "reason": "range receipt schema/status mismatch"
+    },
+    {
+      "name": "missing degree",
+      "reason": "range receipt degree coverage mismatch"
+    },
+    {
+      "name": "out of order range",
+      "reason": "range receipt degree coverage mismatch"
+    },
+    {
+      "name": "bool degree alias",
+      "reason": "range receipt degree coverage mismatch"
+    },
+    {
+      "name": "float degree alias",
+      "reason": "range receipt degree coverage mismatch"
+    },
+    {
+      "name": "counter requested",
+      "reason": "range counter mismatch: requested"
+    },
+    {
+      "name": "counter attempted",
+      "reason": "range counter mismatch: attempted"
+    },
+    {
+      "name": "counter completed",
+      "reason": "range counter mismatch: completed"
+    },
+    {
+      "name": "counter passed",
+      "reason": "range counter mismatch: passed"
+    },
+    {
+      "name": "counter failed",
+      "reason": "range counter mismatch: failed"
+    },
+    {
+      "name": "counter unrun",
+      "reason": "range counter mismatch: unrun"
+    },
+    {
+      "name": "float counter alias",
+      "reason": "range counter mismatch: passed"
+    },
+    {
+      "name": "all integer inputs flag false",
+      "reason": "range execution/pass premise missing"
+    },
+    {
+      "name": "integer truth alias",
+      "reason": "range execution/pass premise missing"
+    },
+    {
+      "name": "failure present",
+      "reason": "range execution/pass premise missing"
+    },
+    {
+      "name": "kappa",
+      "reason": "range receipt constants mismatch"
+    },
+    {
+      "name": "phase radius",
+      "reason": "range receipt constants mismatch"
+    },
+    {
+      "name": "source declared SHA",
+      "reason": "range code/data identity mismatch: topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp"
+    },
+    {
+      "name": "wrapper path",
+      "reason": "range code/data reference mismatch"
+    },
+    {
+      "name": "source size bool",
+      "reason": "range code/data identity mismatch: topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp"
+    },
+    {
+      "name": "missing data identity",
+      "reason": "range code/data identity coverage mismatch"
+    },
+    {
+      "name": "changed actual source bytes",
+      "reason": "range code/data bytes mismatch: topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp"
+    },
+    {
+      "name": "changed actual data bytes",
+      "reason": "range code/data bytes mismatch: topics/padua-argmax-bridge-20261105/evidence/n3-corner-batch.json"
+    }
+  ],
+  "geometry_controls": [
+    {
+      "n": 2,
+      "exact_square_accepted": true
+    },
+    {
+      "n": 17,
+      "exact_square_accepted": true
+    },
+    {
+      "n": 24,
+      "exact_square_accepted": true
+    },
+    {
+      "n": 32,
+      "exact_square_accepted": true
+    },
+    {
+      "n": 128,
+      "exact_square_accepted": true
+    }
+  ],
+  "degrees_rejected": [
+    1,
+    129,
+    "bool True",
+    "float 24.0"
+  ],
+  "outside_square_endpoints_rejected": true,
+  "no_current_prose_read_or_guard": true,
+  "unchanged_AST_definitions": [
+    "rational",
+    "Kernel",
+    "tree_partition",
+    "box_for",
+    "minabs",
+    "maxabs",
+    "local_inherited",
+    "strict_json"
+  ],
+  "partial_sample": {
+    "candidate_sha256": "c9b48003767936f5b29ef5e941944b57c6a3487b6757542e6281280dd577609a",
+    "checked_leaves": 1,
+    "pending": 27,
+    "accepted": false,
+    "failed_leaves": 0
+  },
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py",
+      "bytes": 12518,
+      "sha256": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/r6_premise_controls.py",
+      "bytes": 7391,
+      "sha256": "ee639a84d49c3b46d0069514a48a428c160d8921f4f38d88bd6eb46987bdc152"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check.py",
+      "bytes": 10145,
+      "sha256": "88dde644a77a286e547679b0547c4d35814a4dda7373575208246882d9a26820"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v2.cpp",
+      "bytes": 10891,
+      "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5609,
+      "sha256": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb"
+    }
+  ],
+  "checker_cpu_seconds": 0.500393247,
+  "full_runs_executed": 0,
+  "full_receipt": {
+    "path": "local-output/argmax-bridge-20261105/phase-checker/round6/premise-controls-full.json",
+    "bytes": 61434,
+    "sha256": "46ea7bd2034c25fbcfbc0a3e2c777438722ba45242459f8afbbafce23dd463f9"
+  }
+}

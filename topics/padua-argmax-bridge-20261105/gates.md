@@ -56,3 +56,21 @@ of the unchanged reported error assembly for gamma<=.12 through1e6; only
 a specified coupled correction or proved larger budget can revive it.
 B4 lacks analytic onset. N5's stronger two-phase defect is supporting
 control, not E-C. B6 still has no confirmed counterexample.
+
+## 2026-11-06 completed known-range outward ladder
+
+Exact global range2–40. Independent outward17/24/32 are complete with
+zero failed predicates; matched24/32 use the same common local patch
+and first-order arithmetic. This is finite validation/measurement, not
+a higher-degree complexity theorem. N1's corrected bounded components
+are under review; no full compact model/onset or B3/B4 pass. N5's full
+quarter target stays OPEN; its phase-blind certificate is specifically
+ruled out. A maximum-bootstrap variant is gated for the next finite
+corner-cover step, with numerical energy check still unrun.
+
+## 2026-11-06 corrected N1 component budget
+
+The one correction improves known primitive/endpoint/jump error below
+1/14000 at rho<=1/2,n>=10^6. The old unchanged-certificate obstruction
+is preserved. An O(n) central/interior sum and far domain remain; this
+is neither a complete model nor an onset and does not pass B3/B4.

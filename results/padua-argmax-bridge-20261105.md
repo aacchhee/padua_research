@@ -1,15 +1,14 @@
 # Padua argmax bridge — current research results
 
-The exact global corner-argmax range is **2–38**. Degrees33–38 have small
+The exact global corner-argmax range is **2–40**. Degrees33–40 have small
 complete certificates and separately executed exact C++/GMP acceptance,
 including strict off-corner equality classification.
 [Finite theorem](../topics/padua-argmax-bridge-20261105/theory/native-finite-range.md).
-The39/40 producer candidates are complete but still under independent
-check. All-degree **PD-T099 remains OPEN**; no effective onset is known.
+All37–40 candidates passed their separate first exact replays. All-degree **PD-T099 remains OPEN**; no effective onset is known.
 
 The independently reconstructed **local** corner patch covers every
 n2–128: kappa>=1/16000 and phase-square radius1/128. This gives local
-coverage, not a global maximum theorem for39–128.
+coverage, not a global maximum theorem for41–128.
 [Local theorem](../topics/padua-argmax-bridge-20261105/theory/N3-corner-batch.md).
 
 Analytic supporting results:
@@ -55,3 +54,23 @@ and higher-degree outward cost/coverage. No B3/onset or B4/Syvert release.
 The required Claude audit remains pending; supplementary reviews are
 recorded in the topic. AC permits10MB total generated outputs for now
 and directs major cleanup to a separate topic.
+
+Matched outward calibration24/32 now also passes separately:1020/1020
+and992/992 leaves, no failures/pending,202.07/382.57checkerCPU-s, with
+unchanged arithmetic and the accepted common finite patch.
+[Calibration](../topics/padua-argmax-bridge-20261105/theory/N3-outward-overlap-r6.md).
+These are known degrees, not an additional range extension.
+
+The larger N5 quarter-defect target remains OPEN. Its specific
+phase-blind full-band certificate is proved insufficient: a central
+subsequence limit is strictly below1/4, although all72 direct
+measurements pass the actual quarter target.
+[Scoped obstruction](../topics/padua-argmax-bridge-20261105/theory/N5-large-budget.md).
+
+The single N1 correction now escapes that old bound floor: exact finite-h
+rows plus periodic jumps and endpoint compaction give known error
+**<1/14000** for rho<=1/2,n>=10^6.
+[Corrected assembly](../topics/padua-argmax-bridge-20261105/theory/N1-round5-assembly.md).
+Independent review accepts all four component proofs. An O(n) central/
+interior outer sum and the far-domain model remain, so this is not an
+effective onset or B3 PASS.

@@ -214,3 +214,47 @@ projection normalization. The N1/N5 error leaves actual-model margin
 255/524288. Developer claim PROVED, distinct review separate. No
 primitive maximum, independently optimized E-C, full-square theorem,
 effective onset or PD-T099 claim. Stop at this checkpoint; no round5.
+
+## Round5 gate and bounded stop — 2026-11-06, input fc8c288
+
+The parent explicitly authorized one bounded round5 after publishing
+round4 and its distinct review. Complete unchanged registry coverage
+from round4 was available prospectively; the canonical chronology,
+search scope, provenance and limitations are in attempts/N5.md,
+Round5. Additional full reads before testing: N5-04 independent review,
+N1-round4-budget and PD-T266. No new mechanism or priority claim.
+
+Preregistered candidate ../ideas/N5-round5-budget.md asks exactly
+full periodic Q_v>=1/4 on N5-04's unchanged n>=64,all interior
+parity-complementary vertical centers and inward half phase diamond.
+Verdict: **quantitative variant with difference**. T222/T366/N5-04
+prove smaller floors; none supplies this quarter budget. PD-T266's
+limiting vertical minimum supplies no finite64/phase rate. N1's3/50
+unchanged-formula budget floor motivates the larger margin without
+being a true-error lower bound. IDEA318/330/459 do not discharge it.
+
+Definition/parity/collision rules, corrected cos(alpha), full periodic
+normalization1/(4nm), folded weight1/N and the1/4 kill threshold
+preceded the new code/run. Direct full projection was computed with
+an own finite corrected polynomial kernel; S-lambda was never the
+test proxy. The72 fixed n64/65 endpoint/middle and axis/mixed-phase
+diagnostics survive, minimum0.5230485747479166311. This is MEASURED,
+not an all-degree/all-phase premise or proof.
+
+Before its evaluation, the sole analytic attempt fixed the global
+phase-blind numerator envelope a0*(11/15+cos v),a0=15/16, summed
+over **all** exact sign bands. This certificate F_n is belowQ_v, but
+its quarter floor is impossible: on admissible central zero-phase
+n=4t+1, its limit is strictly below487302379/1968469140<1/4.
+The exact lattice/tail/integral proof is the **PROVED** scoped
+PD-N?argmax-bridge-codex-N5-01 in theory/N5-large-budget.md.
+Mechanism disposition **REJECTED: failed** applies only to this
+certificate, including its exact full-band sum. No actual full-Q
+counterexample or negation of an actual-lambda quarter margin is claimed.
+
+The original C5 remains **OPEN**, candidate **deferred** with its exact
+domain and margin retained. Its resumption requires separate
+authorization and an additional argument beyond this frozen envelope.
+No smaller constant, second analytic candidate, phase scan or automatic
+successor. Final code/evidence and the preserved first diagnostic run
+are identified in attempts/N5.md. Stop and seek distinct review.

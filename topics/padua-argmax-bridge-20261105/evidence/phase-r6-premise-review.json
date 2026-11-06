@@ -1,0 +1,149 @@
+{
+  "scope": "Independent focused fixed-premise guard review; no arithmetic or full-cover replay",
+  "rules_input": "fc8c2885f47b08cecc7f65328db0e740cbc205ea",
+  "command": "python topics/padua-argmax-bridge-20261105/code/review_phase_r6_premise.py",
+  "script": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/review_phase_r6_premise.py",
+    "bytes": 5228,
+    "sha256": "af170dca4e4f0ebae5f381dc0a3b503a99b77b7641a541193811e6d6e2df7df2"
+  },
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py",
+      "bytes": 12518,
+      "sha256": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check.py",
+      "bytes": 10145,
+      "sha256": "88dde644a77a286e547679b0547c4d35814a4dda7373575208246882d9a26820"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v2.cpp",
+      "bytes": 10891,
+      "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5609,
+      "sha256": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb"
+    }
+  ],
+  "premise_receipt": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/evidence/independent-corner-range.json",
+    "bytes": 6262,
+    "sha256": "e685674c028bc99e42d547e8b84a2ce5a7e7e67c3cc69f6c29a55ecbcffd23c0"
+  },
+  "verified_code_data_pins": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp",
+      "sha256": "3646f4e8b6b16957b9e1114f95ad2f0a7c18eec4687b49d5e6f1947a25eea6e3",
+      "bytes": 5725
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/check_corner_range.py",
+      "sha256": "66fc2d9583260572125bd6c70a943577f94f1dd1ce2755a2c47ad96fffa9a982",
+      "bytes": 7416
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-corner-batch.json",
+      "sha256": "97e20cc877ad5afd0c9dfe96c1e399a42d820b38c18626e2b69bfa54f6acfc88",
+      "bytes": 3601
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/independent-corner-replay.json",
+      "sha256": "573afc5d5ae229b0fa1d47df9b6bf334e47e0e437288a3543826838e5403cb4b",
+      "bytes": 7892
+    }
+  ],
+  "rejection_controls": [
+    {
+      "case": "different receipt bytes",
+      "reason": "published range receipt identity mismatch"
+    },
+    {
+      "case": "missing integer degree24",
+      "reason": "range receipt degree coverage mismatch"
+    },
+    {
+      "case": "boolean zero counter alias",
+      "reason": "range counter mismatch: failed"
+    },
+    {
+      "case": "changed wrapper bytes",
+      "reason": "range code/data bytes mismatch: topics/padua-argmax-bridge-20261105/code/check_corner_range.py"
+    },
+    {
+      "case": "changed evidence data bytes",
+      "reason": "range code/data bytes mismatch: topics/padua-argmax-bridge-20261105/evidence/n3-corner-batch.json"
+    },
+    {
+      "case": "duplicate required source identity",
+      "reason": "range code/data identity mismatch: topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp"
+    },
+    {
+      "case": "candidate degree 1",
+      "reason": "invalid degree outside published range"
+    },
+    {
+      "case": "candidate degree 129",
+      "reason": "invalid degree outside published range"
+    },
+    {
+      "case": "candidate degree True",
+      "reason": "invalid degree outside published range"
+    },
+    {
+      "case": "candidate degree False",
+      "reason": "invalid degree outside published range"
+    },
+    {
+      "case": "candidate degree 24.0",
+      "reason": "invalid degree outside published range"
+    }
+  ],
+  "geometry_controls": [
+    {
+      "n": 2,
+      "bound": "13/294912",
+      "square_boundary_accepted": true,
+      "one_ulp_enlargement_rejected": true
+    },
+    {
+      "n": 24,
+      "bound": "1201/20480000",
+      "square_boundary_accepted": true,
+      "one_ulp_enlargement_rejected": true
+    },
+    {
+      "n": 32,
+      "bound": "2113/35684352",
+      "square_boundary_accepted": true,
+      "one_ulp_enlargement_rejected": true
+    },
+    {
+      "n": 128,
+      "bound": "33025/545292288",
+      "square_boundary_accepted": true,
+      "one_ulp_enlargement_rejected": true
+    }
+  ],
+  "unchanged_AST_definitions": [
+    "rational",
+    "Kernel",
+    "tree_partition",
+    "box_for",
+    "minabs",
+    "maxabs",
+    "local_inherited",
+    "strict_json"
+  ],
+  "no_prose_reads_in_guard": true,
+  "published_premise_resolved": true,
+  "python": "3.12.14",
+  "cpu_seconds": 0.022033837,
+  "passed": true,
+  "full_phase_runs": 0,
+  "corner_range_reruns": 0,
+  "numerical_kernel_builds": 0
+}

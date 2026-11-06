@@ -1,0 +1,112 @@
+{
+  "status": "MEASURED actual complete independent phase replay; gate PASS",
+  "gate_passed": true,
+  "accepted": true,
+  "complete": true,
+  "rules_input": "fc8c2885f47b08cecc7f65328db0e740cbc205ea",
+  "n": 24,
+  "candidate": {
+    "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n24/n24-phase-compact.json",
+    "bytes": 62755,
+    "sha256": "8c984dc87c9170ae07f106a530a7915596bca30f273371bb2de2f89c8443ec92"
+  },
+  "expected_leaves": 1020,
+  "kernel_variant": "round5",
+  "range_receipt_sha256": "e685674c028bc99e42d547e8b84a2ce5a7e7e67c3cc69f6c29a55ecbcffd23c0",
+  "focused_review_report_sha256": "88afcdbcc71755118a17a83277cb1f520b9f50b60f5e06ea3997313739d242e5",
+  "focused_review_receipt_sha256": "649041350b23bb06a68326aa8e577436db1ff9b191068610dd8098396c823272",
+  "launch_argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/round6/full/n24/worker.py"
+  ],
+  "launcher": {
+    "path": "local-output/argmax-bridge-20261105/phase-checker/round6/full/n24/worker.py",
+    "bytes": 1363,
+    "sha256": "3768ad8cf8cb24938a548ff3d90335a6ad0d2bea34bbf7735b14e45392642f4a"
+  },
+  "launcher_source_utf8": "import json,pathlib,resource,runpy,sys,time\nwork=pathlib.Path('/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/round6/full/n24')\nresource.setrlimit(resource.RLIMIT_CPU,(1200,1201))\nsys.argv=['/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py','/workspace/padua_research/local-output/argmax-bridge-20261105/N3/outward-r6/n24/n24-phase-compact.json','--kernel','round5','--output','/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/round6/full/n24/raw-replay.json']\nstarted=time.monotonic();status=0\ntry:\n runpy.run_path(sys.argv[0],run_name='__main__')\nexcept SystemExit as e:\n status=e.code if isinstance(e.code,int) else 1\nexcept BaseException:\n status=2\n raise\nfinally:\n own=resource.getrusage(resource.RUSAGE_SELF);children=resource.getrusage(resource.RUSAGE_CHILDREN)\n stats={'checker_argv':sys.argv,'exit_status':status,'checker_process_cpu_seconds':own.ru_utime+own.ru_stime,'compiler_child_cpu_seconds':children.ru_utime+children.ru_stime,'compiler_cpu_scope':'all waited compiler/build-helper child processes; separately measured from checker process','wall_seconds':time.monotonic()-started,'checker_cpu_limit_seconds':1200,'hard_cpu_limit_seconds':1201}\n (work/'worker-statistics.json').write_text(json.dumps(stats,indent=2)+'\\n')\nraise SystemExit(status)\n",
+  "statistics": {
+    "checker_argv": [
+      "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/N3/outward-r6/n24/n24-phase-compact.json",
+      "--kernel",
+      "round5",
+      "--output",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/round6/full/n24/raw-replay.json"
+    ],
+    "exit_status": 0,
+    "checker_process_cpu_seconds": 202.06784199999998,
+    "compiler_child_cpu_seconds": 1.16496,
+    "compiler_cpu_scope": "all waited compiler/build-helper child processes; separately measured from checker process",
+    "wall_seconds": 203.31867895599953,
+    "checker_cpu_limit_seconds": 1200,
+    "hard_cpu_limit_seconds": 1201
+  },
+  "execution_started_utc": "2026-11-06T06:56:13.331381+00:00",
+  "execution_finished_utc": "2026-11-06T06:59:36.678212+00:00",
+  "process_exit_status": 0,
+  "process_signal": null,
+  "stdout": {
+    "path": "local-output/argmax-bridge-20261105/phase-checker/round6/full/n24/stdout.json",
+    "bytes": 378388,
+    "sha256": "dc5620245ab1187ed71009ab35c2260687b842dcb85472bf918cfa918344f5d6"
+  },
+  "stderr": {
+    "path": "local-output/argmax-bridge-20261105/phase-checker/round6/full/n24/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "reviewed_sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py",
+      "bytes": 12518,
+      "sha256": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v2.cpp",
+      "bytes": 10891,
+      "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5609,
+      "sha256": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb"
+    }
+  ],
+  "one_shot_policy": "no max-leaf cap/tree change/internal rescue/retry; failed case stops degree/block",
+  "raw_receipt": {
+    "path": "local-output/argmax-bridge-20261105/phase-checker/round6/full/n24/raw-replay.json",
+    "bytes": 378388,
+    "sha256": "dc5620245ab1187ed71009ab35c2260687b842dcb85472bf918cfa918344f5d6"
+  },
+  "checked_leaves": 1020,
+  "total_leaves": 1020,
+  "pending": 0,
+  "independent_constants": [
+    9.872512535796146,
+    9.872512535796147,
+    3.141592653589793,
+    3.1415926535897936
+  ],
+  "cpu_seconds": 202.022073057,
+  "failed_leaves": 0,
+  "example_failures": [],
+  "source_snapshot": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-znzv8m1a/hybrid_kernel_v2.cpp",
+    "bytes": 10891,
+    "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+  },
+  "preprocessed_translation_unit": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-znzv8m1a/kernel.ii",
+    "bytes": 1451326,
+    "sha256": "e1cb30e540b88d8e03d49f9432c4339a79a940805f8d25d3a04463201df057db"
+  },
+  "checker_binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-znzv8m1a/libphase_checker.so",
+    "bytes": 60728,
+    "sha256": "24bca565eb8ff476abb298c38528f89c38002994f4b103d10d9da6ea5f9276d5"
+  },
+  "build_closure_note": "full code/compiler/header/dependency/loaded-mapping manifest in pinned raw receipt",
+  "input_snapshot_matches_frozen_candidate": true,
+  "reviewed_sources_unchanged_after_replay": true
+}
