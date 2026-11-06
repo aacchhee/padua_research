@@ -1,6 +1,6 @@
 # Handoff 01 — padua-3d-20261106 — Padua-type points in three dimensions
 
-- Status: open
+- Status: done in f1a5b0936d8fb2b033c69af59a6366550f170999
 - Previous handoff: none (new topic)
 
 - Next agent / model / effort: Codex.
