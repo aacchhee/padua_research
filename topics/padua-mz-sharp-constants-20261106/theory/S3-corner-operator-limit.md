@@ -190,9 +190,10 @@ assumption on the coefficients. If V sends a finite coefficient
 vector to the corresponding representer combination, then V*V=G.
 The nonzero eigenvalues of V C V* are those of G^(1/2) C G^(1/2),
 by the polar decomposition of this finite matrix map (or its singular
-value decomposition). Additional eigenvalues are zero. For all
-sufficiently large m, dim H_m>N_K; zero belongs to the finite-rank
-form's spectrum. The limiting model H is infinite dimensional, so
+value decomposition). Additional eigenvalues are zero. Indeed
+|I_K|<=K^2, so N_K<=2K^2<m(m+1)/2=dim H_m whenever m>=2K.
+Thus zero belongs to the finite-rank form's spectrum throughout the
+claimed range m>=max(4,2K). The limiting model H is infinite dimensional, so
 its finite-rank forms also contain zero in their spectra.
 
 By (10)-(11) and continuity of the positive matrix square root,

@@ -163,3 +163,27 @@ before any new model numerical solve or final S4 fit was read.
 was corrected from2/N to1/N (the top DCT-I coefficient has the additional
 half factor). The exact cancellation, trial family, model expression,
 matrices and every numerical calculation are unchanged.
+
+## Development after the frozen prediction
+
+The coordinator published the exact prediction at513f3bd802abf23f9c1470930a68f4e09e2a8c77
+before the authorized solve. The finiteJ512 measured model eigenvalue is
+1.0044369188646673, with raw receipt evidence/S2-model.json and producer
+code/S2_model.py. The distinct checker reproduced the actual run and
+quadratures and analytically verified the closed-form Gram. This decimal
+is not asserted to be the infinite norm.
+
+S2-fixed-trial-limit.md proves fixed-J form/eigenvalue convergence with
+explicit errors and has supplementary distinct-review PASS. The later
+S2-qualitative-limit.md proves a candidate full common-parity limit, by
+core density and compact-positive-form variational arguments; its proof
+was sent for separate review. S2-finite-certificate.md then gives candidate
+explicit finite L_N,U_N bracketing both the actual finite eigenvalue and
+the model norm, with U_N−L_N->0. That stronger proof is also under separate
+review and is not attributed to the earlier checker approval.
+
+The OPEN table above records the original preregistration boundary. The
+supporting theorem files carry their current part-by-part statuses. The
+certified numerical norm value, a practical elementary convergence rate,
+and any classical Toeplitz-plus-Hankel/Wiener–Hopf symbol identification
+remain OPEN. No final S4 fit has been read by this worker.

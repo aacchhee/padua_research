@@ -57,3 +57,7 @@ Accept [S4-padua-proposal.json](S4-padua-proposal.json) and [cost/fit rationale]
 Upper FIRST: evenm800 pilot,30min or2000matvec cap. Continue upper cases only after a successful residual-guarded pilot and2xcubic forecast<=16CPUh cumulative and<=6h perrow; otherwise retain failed receipt and mark upper numerical gate INCONCLUSIVE, no automatic stalled campaign. Minima may proceed on all16rows, at most2degrees concurrently. Finite validation10/11/20/21 and weight/seed/residual controls are required. No Syvert use.
 
 Registration chronology: S3 exact operator was saved before its model computation, while publication59d02c7 followed that first model-only computation and preceded all new S4 slopefits. The source file/receipt UTC chronology is retained in the S3 attempt. This distinction does not change K5's prospective parity requirement; no final slope data informed the model.
+
+## 2026-11-06 — Padua upper pilot stop
+
+Evenm800 upper FIRSTpilot hits2000matvecs after336.519s, no accepted maximum or residual. By the registered stop rule, upper numerical K4 is INCONCLUSIVE and no larger upper scans/retry run. This is a bounded solver failure, not a mathematical counterexample to the proved operator limit. Minima are still running; no incomplete slope fit or measured parity agreement is claimed.

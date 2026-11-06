@@ -94,3 +94,64 @@ The developer comparison receipts had hashes
 or output paths. These independently executed replays reuse the same
 frozen fitting algorithms and raw measurements. All conclusions here
 are **MEASURED**; required Claude audit remains separate.
+
+## 2026-11-06 — focused repository-input update check
+
+After the executions above, the developer preserved the original scripts
+as S4_k1_fit_original.py and S4_k3_fit_original.py and added a shared
+loader for compact repository evidence. This was treated as a material
+code/input change and checked separately. The historical executions and
+receipts above remain unchanged.
+
+Inspected the complete generator, loader and K3 comparison code, and
+reviewed both fit-script diffs. The fitting arithmetic and thresholds
+are unchanged; the diffs replace input loading and record the additional
+input provenance. The loader accepts only the pinned full or essential
+receipt hash, restores exactly the required columns, and checks all42
+rows' completion, positivity, ordering, residual and constraint guards.
+
+Executed the deterministic generator in `--check` mode against the
+original frozen raw file. It confirmed byte-for-byte equality of the
+7163-byte,42-row essential receipt, hash
+`7e18253a25fb8ab3b78389ef444c8014313b0d4231b6fb0c2467aaa062edacfb`.
+Then separately ran both updated fits using only that repository-local
+input. Both complete numerical result objects exactly equal the earlier
+independent raw-input outputs. This focused update check **PASSES**.
+
+Updated executed code hashes:
+
+| File | SHA-256 |
+|---|---|
+| S4_essential.py | `d2ef9c457c8cf8b958a175d95cc235fe92b02ff0ac070eefdff59abbef61fcca` |
+| S4_fit_inputs.py | `ba263a1e6cc377ab3ebd9a1e8fbc0c662ccb874ea04ce4e80dfdaf9223ea6545` |
+| S4_k1_fit.py | `00d9567a6ac3230c0d06c1a6a32f684d89fc386eb88511c7b62acfcbd5c846d8` |
+| S4_k3_fit.py | `a95c4d9b18a80de86c5e44563d37f6e1f9da3b16c573b6fa84ea8955e3df64ad` |
+| S4_k3_compare.py | `8636ff80576715094c9e0a76b6409883717c5459116e8f1970912a282aac346f` |
+
+Exact commands, again from `/workspace/sharp-work`:
+
+```bash
+python topics/padua-mz-sharp-constants-20261106/code/S4_essential.py --raw /tmp/sharp-S4/raw-cc-scan.json --output topics/padua-mz-sharp-constants-20261106/evidence/S4-essential-cc.json --check
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-mz-sharp-constants-20261106/code/S4_k1_fit.py --raw topics/padua-mz-sharp-constants-20261106/evidence/S4-essential-cc.json --output /tmp/check-fits-k1-essential.json > /tmp/check-fits-k1-essential.stdout
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-mz-sharp-constants-20261106/code/S4_k3_fit.py --raw topics/padua-mz-sharp-constants-20261106/evidence/S4-essential-cc.json --output /tmp/check-fits-k3-essential.json > /tmp/check-fits-k3-essential.stdout
+python topics/padua-mz-sharp-constants-20261106/code/S4_k3_compare.py --model topics/padua-mz-sharp-constants-20261106/evidence/check-S2-model-replay.json --fit /tmp/check-fits-k3-essential.json --output topics/padua-mz-sharp-constants-20261106/evidence/check-fits-k3-comparison.json
+```
+
+All four commands exited0. The same Python/NumPy environment applies.
+The [compact portability receipt](evidence/check-fits-portability.json)
+records exact updated commands, source/input hashes, timestamps,
+environment, temporary output hashes and the successful full-results
+comparisons. It is4057 bytes, SHA-256
+`880a94bdbac91efae9b10f0aaa0205635cffd1b784d0d255bac0a2e7f5eb0943`.
+Duplicated full fit outputs remain local and are regenerable from the
+repository-only input by the commands above.
+
+The separately executed [K3 comparison](evidence/check-fits-k3-comparison.json)
+gives operational **MEASURED PASS**: absolute differences5.3429989322e-8
+and5.3433840241e-8 from the finite J512 model estimate, below1e-3.
+Its receipt is1393 bytes, SHA-256
+`152871f67644a8271fc3d33bd131811597b1416f6a1ec0cba09a841955f984ff`.
+This comparison has no certified infinite-model-tail bound; it does
+not establish that the full model norm differs from either fit by
+less than the threshold. The operational and mathematical statements
+must remain separate.
