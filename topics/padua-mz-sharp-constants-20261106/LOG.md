@@ -30,3 +30,9 @@
 - K0 developer replay PASS under the explicit finite-norm interpretation: six CC cases N40–1280, maximum relative difference3.997e-15; Padua minima m800/1000 bit-identical to pinned PD-T300 values. Carrier finite norm formula agrees with independently assembled composite angular quadrature within3.31e-16 throughm4096; finite-to-limit offsets remain nonzero and decrease. These are MEASURED, not new spectral proofs.
 - Original K0's request for matching a carrier norm limit at1e-10 is ill-posed at a finite degree without an error allowance. We preserve that criterion and record a dated clarification in gates.md: compare exact finite norm to a separate quadrature at1e-10, then measure finite-to-limit discrepancy separately. The first global x-Gauss check lost accuracy at high degree; its code/receipt are retained, its issue explained by endpoint sensitivity, and the composite angular check replaces it. No fit was performed.
 - S1–S3 cleared to develop after K0 and their novelty gates. No new mechanism proposed by coordinator; gate/predecessor reading belongs in each direction's record. No final ID range reserved.
+
+## Round S4-2 — structured CC solver and scan registration
+
+- gpt-6.1-sol medium constructs the exact finite nodal reciprocal mass representation with projected degree-N constraint; Toeplitz/Hankel FFT products require linear storage. Both extrema agree with dense N40–1280 within4.62e-14 relative. Details and initial serialization failure are in [attempt S4](attempts/S4.md); [validation receipt](evidence/S4-structured-validation.json).
+- This is routine finite-coordinate algebra, no new mechanism or limiting model; novelty gate is not needed for this implementation replay. S1–S3's novelty gates remain required before model development.
+- [Scan proposal](S4-scan-proposal.json) accepted before scan, with raw values allowed and final fits held for model registration. S4 round2 progressed; no failed-progress count.

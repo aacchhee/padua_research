@@ -7,5 +7,5 @@ K0 developer replay passed under the dated clarification in gates.md. S1–S3 ma
 | S1 | 0 | 0 | gate/development |
 | S2 | 0 | 0 | gate/development |
 | S3 | 0 | 0 | gate/development |
-| S4 | 1 | 0 | K0 passed; preparing scan pre-registration |
+| S4 | 2 | 0 | K0 and finite structured validation passed; raw scan registered, final fits held |
 

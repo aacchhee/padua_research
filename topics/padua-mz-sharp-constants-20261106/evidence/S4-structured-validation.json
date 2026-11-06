@@ -1,0 +1,200 @@
+{
+  "status": "MEASURED",
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/S4_structured.py",
+    "--validate",
+    "40",
+    "80",
+    "160",
+    "320",
+    "640",
+    "1280",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/S4-structured-validation.json"
+  ],
+  "seed": 20261106,
+  "tol": 2e-12,
+  "ncv": 40,
+  "maxiter": 3000,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "script_sha256": "40e9ffc00edbf8ff9009cfa133646a69815f8423ad8baf4bdd23a69ae604bd8d",
+  "reference_sha256": "df392b043fad81395ce6e07258a438bbd5fc609fc83fc51fa03314b885ac5af9",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "results": [
+    {
+      "N": 40,
+      "n": 39,
+      "seconds": 0.010963660000015807,
+      "results": {
+        "minimum": {
+          "eigenvalue": 0.2598490248754951,
+          "inverse_eigenvalue": 3.8483885035902796,
+          "inverse_residual_2_float": 1.9744224670589946e-15,
+          "constraint_residual_float": 2.6526640868134078e-17,
+          "matvecs": 42
+        },
+        "maximum": {
+          "eigenvalue": 1.0044711207220716,
+          "inverse_eigenvalue": 0.9955487812144788,
+          "inverse_residual_2_float": 1.939446932763086e-15,
+          "constraint_residual_float": 1.5043276136986496e-14,
+          "matvecs": 42
+        }
+      },
+      "dense_reference": [
+        0.2598490248754948,
+        1.0044711207220713
+      ],
+      "maximum_relative_error": 1.1102230246251565e-15,
+      "pass_1e10": true,
+      "symmetry_relative_error": 5.10765786313498e-17
+    },
+    {
+      "N": 80,
+      "n": 79,
+      "seconds": 0.00989367800002583,
+      "results": {
+        "minimum": {
+          "eigenvalue": 0.21615328400901834,
+          "inverse_eigenvalue": 4.62634655117374,
+          "inverse_residual_2_float": 4.1684352278151665e-15,
+          "constraint_residual_float": 5.075053113185854e-17,
+          "matvecs": 42
+        },
+        "maximum": {
+          "eigenvalue": 1.0044397347292413,
+          "inverse_eigenvalue": 0.9955798893893439,
+          "inverse_residual_2_float": 2.33152963537862e-15,
+          "constraint_residual_float": 3.868848551299502e-16,
+          "matvecs": 42
+        }
+      },
+      "dense_reference": [
+        0.21615328400902079,
+        1.0044397347292477
+      ],
+      "maximum_relative_error": 1.1324274851176597e-14,
+      "pass_1e10": true,
+      "symmetry_relative_error": 8.670444030682051e-17
+    },
+    {
+      "N": 160,
+      "n": 159,
+      "seconds": 0.01513661800004229,
+      "results": {
+        "minimum": {
+          "eigenvalue": 0.18249027656594372,
+          "inverse_eigenvalue": 5.479744010572778,
+          "inverse_residual_2_float": 7.429054408922843e-15,
+          "constraint_residual_float": 1.7239871365934567e-16,
+          "matvecs": 42
+        },
+        "maximum": {
+          "eigenvalue": 1.0044391013880607,
+          "inverse_eigenvalue": 0.995580517144418,
+          "inverse_residual_2_float": 5.546846946610764e-15,
+          "constraint_residual_float": 2.0273525639284602e-14,
+          "matvecs": 42
+        }
+      },
+      "dense_reference": [
+        0.18249027656594552,
+        1.0044391013880674
+      ],
+      "maximum_relative_error": 9.880984919163893e-15,
+      "pass_1e10": true,
+      "symmetry_relative_error": 4.796580710286412e-17
+    },
+    {
+      "N": 320,
+      "n": 319,
+      "seconds": 0.029982868000047347,
+      "results": {
+        "minimum": {
+          "eigenvalue": 0.15601518364212044,
+          "inverse_eigenvalue": 6.409632554058819,
+          "inverse_residual_2_float": 9.571708773414426e-15,
+          "constraint_residual_float": 1.085389442754517e-16,
+          "matvecs": 42
+        },
+        "maximum": {
+          "eigenvalue": 1.0044378009577253,
+          "inverse_eigenvalue": 0.9955818061073628,
+          "inverse_residual_2_float": 2.173302640675325e-14,
+          "constraint_residual_float": 5.256580045810584e-14,
+          "matvecs": 42
+        }
+      },
+      "dense_reference": [
+        0.15601518364212258,
+        1.0044378009577226
+      ],
+      "maximum_relative_error": 1.3655743202889425e-14,
+      "pass_1e10": true,
+      "symmetry_relative_error": 2.245737526919372e-16
+    },
+    {
+      "N": 640,
+      "n": 639,
+      "seconds": 0.027638160000037715,
+      "results": {
+        "minimum": {
+          "eigenvalue": 0.1348334881629354,
+          "inverse_eigenvalue": 7.416555142381103,
+          "inverse_residual_2_float": 2.7063698508030153e-14,
+          "constraint_residual_float": 2.7987515288153975e-17,
+          "matvecs": 42
+        },
+        "maximum": {
+          "eigenvalue": 1.004437221578544,
+          "inverse_eigenvalue": 0.995582380378566,
+          "inverse_residual_2_float": 1.182400192317988e-14,
+          "constraint_residual_float": 5.1122607424403055e-15,
+          "matvecs": 42
+        }
+      },
+      "dense_reference": [
+        0.1348334881629361,
+        1.00443722157855
+      ],
+      "maximum_relative_error": 5.995204332975845e-15,
+      "pass_1e10": true,
+      "symmetry_relative_error": 7.288040603335263e-17
+    },
+    {
+      "N": 1280,
+      "n": 1279,
+      "seconds": 0.05859249699994962,
+      "results": {
+        "minimum": {
+          "eigenvalue": 0.11763515599220746,
+          "inverse_eigenvalue": 8.500860066579444,
+          "inverse_residual_2_float": 3.616330370843379e-14,
+          "constraint_residual_float": 2.2716025316408137e-17,
+          "matvecs": 42
+        },
+        "maximum": {
+          "eigenvalue": 1.004437035065803,
+          "inverse_eigenvalue": 0.9955825652470965,
+          "inverse_residual_2_float": 3.166838395735863e-14,
+          "constraint_residual_float": 8.653730901037897e-15,
+          "matvecs": 42
+        }
+      },
+      "dense_reference": [
+        0.11763515599221253,
+        1.0044370350658494
+      ],
+      "maximum_relative_error": 4.618527782440651e-14,
+      "pass_1e10": true,
+      "symmetry_relative_error": 8.4096662219856e-17
+    }
+  ]
+}
