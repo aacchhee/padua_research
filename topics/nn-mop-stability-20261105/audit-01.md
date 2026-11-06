@@ -4,7 +4,7 @@
 - Date: 2026-11-06 (UTC).
 - Rules: AGENTS.md, agents/WORKFLOW.md and agents/claude/CLAUDE_ROLES.md were read at candidate head `680dca3690f5a7ef1fc1ccf1ebad5a463b408d59`. Current main `be9a8318150204711d5446d2ea26284cf1ed0819` (PR #29: proportionate audit and records) was then merged at `67248cec2915a722dc9715a4f091fc919c495375`. That merge changes rules, templates and an unrelated topic, and no file of this topic. Those rules govern this report and the next steps.
 - Audited scientific candidate: `ff783d59587100ab291cb83d690ef27a09f0f154`. Between it and `67248ce`, this topic differs only in handoffs/01-work.md (status line) and handoffs/02-audit.md. Every audited theory, code and evidence file is therefore byte-identical to the candidate.
-- **Verdict (checkpoint, priorities 3–4 pending): FINDINGS. Stage → WORK.**
+- **Verdict: FINDINGS. Stage → WORK.**
   - **BLOCKING:** none. Every claimed PROVED, MEASURED, OPEN and BLOCKED status within the declared scopes is supported.
   - **MAJOR:** four findings (M1–M4) must be fixed before PR.
   - **Material changes:** M1–M4 change proof text, measured values or wording, evidence and candidate records. Under WORKFLOW they are material, so the response returns to a focused re-audit of those changes only.
@@ -113,7 +113,52 @@ Reruns:
 
 ### 3–4. Local derivative, full conditioning table, D2 gates (subagent B)
 
-PENDING — subagent B (full-table rerun, exact Jacobian, C4 gate replays) is still running; this section is filled before the audit is final. This file is a checkpoint, not the final audit.
+**Local derivative and induced norm (conditioning-local.md): accepted as PROVED.** The conditioning table and the D2 gate verdicts are accepted as MEASURED.
+
+The derivative was re-derived:
+- the moment derivative, ċ = −M⁻¹(v̇ + Ṁc), and the h, a and b updates;
+- the induced row-sum norm attained by choosing signs, with an O(ε²) analytic remainder;
+- the terminal b1 = b2 identity.
+
+The implementation was checked for:
+- all 3N columns;
+- both mass-scaling directions, exactly null for the NN and step-line maps;
+- positive field scales;
+- structural zeros (a1 at n=0, a2 at m=0, γ0, δ0, δ1) with zero derivative rows;
+- consistent N versus M;
+- u = 2⁻⁵³ distinguished from ε = 2⁻⁵².
+
+**Step-line extraction.** The formulas β_k, γ_k = a1+a2, and δ_k = −a1·d_η (even k) or +a2·d_η (odd k) were verified exactly, with their derivatives, at N=3..8 in both families. The verification matches xQ_k − Q_(k+1) directly, independent of the D1-01 formulas.
+
+**Independent exact Jacobian** (`exact_jacobian.py`): dual numbers over Fractions, all 3N directions, N=3..8, both families.
+- Exact values include κ = 4126/25 (Krawtchouk N4) and 49126640/31213 (Hahn N4).
+- Against `conditioning.py`, the largest relative difference is 2.80e-112 over 72 norms at 120 dps, and 8.39e-252 at 260 dps for N=4..8.
+
+**Full-table rerun.** The producer was rerun with the timing wrapper for every N=4..64, both families, at 180 and 260 dps. It used 4146.7 CPU-seconds, and all four runs exited 0.
+- `conditioning_compare.py` passes. The worst 180/260 agreements are 1.7632664200e-115 (Krawtchouk) and 1.2841742107e-93 (Hahn), as in attempts/D1.md.
+- The regenerated markdown table is byte-identical to the committed 61-row table: 0 of 244 cells differ.
+- For N=9..64 this is an identical rerun of the developer's formulation, not an independent formulation.
+- The table is correctly labelled MEASURED (precision agreement, not an outward enclosure).
+
+**C4 gates (D2).**
+- **G0:** passes 12/12, bit-identical E with matching input hashes.
+- **Stage-isolation reruns:** both `stage_isolation.py` runs (100 and 160 path dps) reproduce all 48 E and 48 B values bit-identically. They also reproduce:
+  - the input-rounding effects;
+  - the N24/32 complex-node and negative-weight observations;
+  - the exact-path bound 2.4277e-98.
+- **G1** fails exactly where listed:
+  - Krawtchouk N8 17.5638 and N16 17.1456;
+  - Hahn N8 100.6929, N12 63.2900 and N16 113.4901.
+- **G2** applies only at Hahn N8/N16, where the stable-marginal ratios are 182.3905 and 220.6828. G2 fails as recorded.
+- Input rounding is at most 0.136κu.
+- No general stability or instability theorem is claimed.
+
+**Path-plus-anchor traps (independent `trap.py`, exact, N=4/6/8, both families).**
+- **Missing anchor.** The genuine positive input w2' = w2 + w1/3 leaves the alternating-path matrix exactly unchanged. It changes d0 and 17/40, 38/84 and 67/144 NN entries; E between the two genuine arrays is 0.14–16.9.
+- **With the anchor.** The anchor plus the mass gauge recover w2' to about 1e-100, so for compatible arrays the diagnostic determines the input.
+- **Unread entries.** Perturbing every entry `recover()` never reads leaves it bit-identical while E is 3.3–4.5. The unread entries include terminal b2 at ν_(N−2) and b1 at ν_(N−1).
+- Both claimed traps are correct.
+- `independent_check_diagnostics.py` exits 0.
 
 ### 5. Native whole-triangle designs (subagent C)
 
@@ -295,6 +340,9 @@ To fix with the response, unless stated otherwise; confirmed by diff:
     - conditioning_verify_normality.py:14,18–21 and conditioning_exact_normality.py:21,28 use bare `assert`. A demonstrated on a scratch copy with a corrupted N64 payload digest: the run fails normally but prints PASS under `python -O`. Use explicit raises.
     - The verifier also prints code hashes without comparing them to the pins in conditioning-hahn-normality-finite.md:136–138. Compare them.
 13. **Exposition.** backward-local-manifold.md:113–116 uses the continuity-of-G argument that appears only at :140–143. Move or cite it.
+14. **Infinite componentwise output.** conditioning-local.md:45–47, conditioning-measurements.md:24–25 and attempts/D1.md:45–46 name only Krawtchouk as having infinite fully componentwise output. Hahn's is infinite as well: its symmetric w1 gives b1 = 0 at every axis site, with nonzero sensitivity. Krawtchouk also has sensitive interior zeros, for example b1_(1,1) at N4. Name both families.
+15. **G2 margin.** The Hahn N8 ratio that makes G2 applicable is 100.6929, an excess of 2.003 digits against the "more than 2 digits" threshold, a 0.7% margin. With ε = 2⁻⁵² no case would trigger G2. The verdict correctly follows the pre-registered u (plan.md:28). Disclose the margin and its dependence on the convention in gates.md:9, report.md:43 and attempts/D2.md:78.
+16. **Path-diagnostic wording.** d2-path-diagnostic.md:82 says only "discard off-path entries". The diagnostic also never reads terminal b2 at ν_(N−2) or b1 at ν_(N−1); say so. Optionally, cite the genuine positive-input missing-anchor witness above in place of the hand-edited incompatible array.
 
 ### NOTE
 
@@ -309,7 +357,8 @@ To fix with the response, unless stated otherwise; confirmed by diff:
 
 ## Residual uncertainty
 
-- Random-case exact checks are finite: Christoffel N ≤ 6, Toda N ≤ 5, Krawtchouk closed form M ≤ 12, exact κ N ≤ 7. Generality rests on the written proofs, which were reconstructed by hand.
+- Random-case exact checks are finite: Christoffel N ≤ 6, Toda N ≤ 5, Krawtchouk closed form M ≤ 12, exact κ N ≤ 8. Generality rests on the written proofs, which were reconstructed by hand.
+- For N=9..64 the conditioning table is a rerun of the developer's own formulation at two precisions, not an independent formulation.
 - Floating tables are compared across precisions and platforms; none is an outward enclosure.
 - The Q-fit witnesses are local measurements; no global minimality is certified.
 - The primary literature for D4 sources was not re-read (arXiv is blocked here), and journal metadata was not verified.
