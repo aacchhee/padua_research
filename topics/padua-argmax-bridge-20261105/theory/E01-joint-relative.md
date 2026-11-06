@@ -227,3 +227,14 @@ recorded in [idea](../ideas/E01-joint-relative.md) and
 2026-11-06, input/rules63c70b7c1c226be42a159b29d45de81fdeda22e4;
 requested Astra ultra under the prospective E01 LOG justification;
 serving metadata unexposed. Only the three assigned E01 files are written.
+
+
+## Root adoption after distinct focused audit —2026-11-06
+
+Root adopts the exact retained-charge improvement6rho/n+uA_N on the CLOSED near rho<=1/2 domain, EVERY n>=32. The complete TRUE-origin uE0 remains. No unproved monotonicity of V+A_N or full D13 closure is inferred; safe all-n use retains the uncollected positive coefficients. The canonical gate-timing limitation remains linked in the idea record.
+
+Distinct Astra xhigh [frontier audit](../independent-checks-E01-frontier.md),
+SHA256 a0853a1e9675bcb841348edb2aaa8ae5a3c8776e2bced63a5c6326da27665db3,
+accepts the unchanged reviewed prefix 5c88d977b73fe4fe1a163201fe9c445f825ca9c68ca3cfd7807c6307dc9bd489.
+No numerical/source/native/pack job occurred. Global onset remains1024;
+974 finite degrees remain OPEN. Final Claude review is separate.

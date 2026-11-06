@@ -108,3 +108,11 @@ Current39/40researchroundscomplete; D40operationaldeliveryactive. Gapstill974; n
 ## AC analytic extension E01–E15
 
 NEW15coordinatedanalyticroundsauthorized2026-11-06 afterD39. E01ACTIVEpaper-onlybottleneck/noveltyassessment; E02–E15unallocatedpendingresults. Completedoldresearch39rounds; D40packpaused/incomplete. Startinganalyticboundary1024; finiteknown2–42,63–64,159–160,511–512,1023; residual974unchanged. No numericaljob/thresholdscanreleased.
+
+| Extension round | Status | Scope/outcome |
+|---|---|---|
+| E01 | COMPLETE | Accepted actual corners from512, rebuilt phase-aware/wide defect floors, exact near-charge refinement; three scoped old512 allocation barriers. Globalonset1024unchanged; PAPER-ONLY. |
+| E02 | ACTIVE | Matched fixed768 paper assembly, global retained-six-row refinement, paired regular-outer operator; no numericaljob/source release. |
+| E03–E15 | UNALLOCATED | Remaining13 slots afteractiveE02; rootmayredirect fromprovedbottlenecks. |
+
+Newallowance1/15complete,14remainingincludingactiveE02. PackPAUSED.

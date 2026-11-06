@@ -1006,3 +1006,10 @@ Successor E02 is PAPER-ONLY: SolxhighD16tightensoldglobalretained-six-row charge
 ### E01 first adopted analytic improvement: actual corners from512
 
 DistinctAstrahigh E01cornerreviewe9a2d5ca... ACCEPTS b489991b... frozenpaper/idea/attempt withno unresolvedfinding. Rootadopts BOTHclosedpi/4actual-corner squares forEVERYn>=512, radialloss(A²+B²)/16, exactorigin/reflectedparity/Peano/norm/zero/collisiondomains. MixedrelativeAXES/globalDIAGONALcomparison avoidsolduniformaxisbudgetobstruction. RationalpaperFA>149/3500,FD>589/1750 andcombinedmonotonicity; ZEROscalar/native/numericaljob. Allprioracceptedproofbytes/scopesunchanged; D27stronger1/8lossfrom1024retained. Thisisanalyticall-ncomponentprogress, NOTglobal512ornewfinitedegreeenumeration. Globalboundary1024/residual974unchanged. E01floor/frontierauditstillactive; E02paperpathsactive; packPAUSED.
+
+
+### E01 COMPLETE: three analytic component improvements, global1024unchanged
+
+DistinctAstraxhigh finala0853a1e... ACCEPTS frozenE01floorcc8e3284..., helper5c88d977..., scopedold512majorantbarriers andconditionalall-nreduction. Its earlier Fh r-monotonicityfindingwas an incorrectlyattributed prefreeze-draftread, NOT presentincc8e; auditorwithdrawsagainstfrozenpaperandpreserveschronology. Rootadopts exactphase-awarefloors n>=64, uniformwideACTUALnoncorner>1/200from512throughrho<=pi/4, half-radius>3/50from768, andretainednearallowancegain6rho/n+uANfrom32. D13's separatee9a2d5ca... acceptsactualcornerpi/4loss1/16from512. No joint-relativefullclosureorunprovedVplusmonotonicity. Newwholeglobalonsetremains1024, residual974. AllE01work PAPER-ONLY: no numerical/source/endpoint/native/packjob.
+
+E01isONEcompletedcoordinatedround oftheNEW15allowance (1/15); E02activepaperassembly/globalretainedrows/pairedouteroperator, E03–E15unallocated. Totaloldresearch39complete plusnewE01, pausedD40deliverynotcountedcomplete. Remaining-newbudget14rounds; keepworkingwhileproductive. D40packremainsPAUSEDuntilrenewedresearchends/needreassessed.

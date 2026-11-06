@@ -167,3 +167,9 @@ proves both actual-corner closedπ/4 squares for EVERY n>=512 with loss
 [Distinct review](../topics/padua-argmax-bridge-20261105/independent-checks-E01-corner.md)
 accepts the mixed relative-axis/global-diagonal proof. Global onset remains1024;
 974 finite degrees remain open. Further analytic narrowing continues; pack paused.
+
+[E01 floor/reduction](../topics/padua-argmax-bridge-20261105/theory/E01-near-frontier.md)
+and [relative refinement](../topics/padua-argmax-bridge-20261105/theory/E01-joint-relative.md)
+are independently accepted: wider actual noncorner defect domain, stronger
+lower-domain floor and exact retained-charge improvement. These support
+further analytic narrowing; no new global onset or finite coverage follows.
