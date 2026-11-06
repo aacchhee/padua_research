@@ -43,3 +43,7 @@ This interface is useful preparation for M2. It does not return a full NN triang
 ## History
 
 2026-11-06: Codex, assigned gpt-6.1-sol medium; rules/source b4a04981d42c7cd872957facf5e3995e4096ca67. New finite verification record only.
+
+## Supplied-source continuation
+
+The earlier source block was subsequently resolved by AC's exact archive. The interface checker now says explicitly that it does not evaluate M2/M4; those gates are handled by the distinct source/runtime/fidelity receipts. Actual M4 replay and M2 exact-generator agreement pass. Full matched measurements, bit-transport correction, explicit H+d0 lift and remaining scope are recorded in c4-measurements.md. Local finite identities alone still do not satisfy either external gate.

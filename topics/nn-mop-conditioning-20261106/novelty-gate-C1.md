@@ -9,12 +9,10 @@ No Git or shared-record authority. Local IDs below are provisional.
 Scanned the complete 1112-line `state/IDEAS.md` inventory in consecutive
 chunks, including aliases and campaign summary, obstruction and disposition
 tables. Shortlisted index entries are IDEA-031/090/117, 376–379 and
-530–555. The D1/D1-hard candidate records, PD-T432 and PD-T437 were read
-in full before deriving the C1 claims. Full older
-`nn-mop-iep-20261103/candidates.md` and linked PD-T286/289 proof bodies
-were completed after the initial gauge/scalar derivation. This timing
-qualification does not claim prospective completion of those late reads;
-the coordinator was notified for the canonical topic disclosure.
+530–555. Read the D1/D1-hard candidate records, PD-T432/437 and the older
+`nn-mop-iep-20261103/candidates.md` and linked PD-T286/289 proof bodies.
+The reading-timing qualification is recorded once in the [topic LOG](LOG.md);
+this record does not claim full prospective completion of every linked read.
 Searched gauge, diagonal scaling, normalization, fixed mass, log weights,
 spacing, Jacobian, and conditioning across this inventory and predecessor
 candidate/theory records. Read `literature/INDEX.md`'s relevant
@@ -48,7 +46,10 @@ terminal beta sensitivity; gauge-infimum screen.
 - Cheapest test/kill: symbolic coefficient substitution before computation;
   derive the terminal balanced-path bound directly from PD-T437.
 - Actual outcome: written theorem in `theory/c1-gauge-invariants.md`;
-  finite Hahn lower/upper measurements planned through one terminal row.
+  completed finite Hahn lower/upper measurements through one terminal row.
+  Final C2 bounds subsequently yield the sharp Krawtchouk gauge-rate
+  squeeze and weaker all-N Hahn gauge lower, with dependencies explicit
+  in `theory/c1-gauge-sharp-rate.md` and `theory/c1-hahn-gauge-lower.md`.
 - Disposition: retained; exact gauge infima and sharp Hahn all-N rates
   remain open. No literature novelty asserted.
 

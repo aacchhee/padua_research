@@ -1,0 +1,84 @@
+{
+  "M2": "PASS",
+  "M4": "PASS",
+  "case_count": 116,
+  "disposition": "EXPLORATORY; rejected for identical-input comparison after binary64 JSON roundtrip mismatch was discovered",
+  "failure": "Octave jsondecode decimal parsing moved some normalized nodes by one ulp at N12; subsequent hex2num/num2hex wrapper replaces this transport",
+  "failures": [],
+  "input_files": {
+    "/tmp/c4-external-grid.json": "3a9ce8a60bdbb0455f7e1d10a68b14a8a2946c7b94ee68c6e91d8be1a2361c71",
+    "/tmp/nn-mop-c3-grid-raw.json": "3da04b46dcc7d621543544235adf8517b26f316f8b303e4dc77fc5027fb873f6",
+    "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c4_compare.py": "00189847280102e2598dab5a246ddbc79871de9dc07a6c5c1bd0ceb9194ec54d",
+    "/workspace/padua_research/topics/nn-mop-iep-20261103/code/c4_float_baseline.py": "9ce76ae88fb798f73127f75819bcdfb6c7bffb0d9cd092d70957164cb9b6a2e8"
+  },
+  "max_lift_precision_agreement": 4.180733812395795e-106,
+  "platform": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.12.14"
+  },
+  "raw": {
+    "bytes": 317444,
+    "path": "/tmp/c4-comparison-raw.json",
+    "sha256": "2be1c75a85f1d2d75ce533c4ad90d01972c8f6b9bdc48c2ccf681e92a6750426"
+  },
+  "status": "MEASURED",
+  "tables": {
+    "hahn-A-LU.csv": {
+      "bytes": 3605,
+      "sha256": "c8baf9c3847da2c22e7dbb13ae0bb5182d117f5b5f3d7c8413ac466081e555c0"
+    },
+    "hahn-A-QR.csv": {
+      "bytes": 3605,
+      "sha256": "3b5b231a4049d7001f5616a19851df7d9f7a4f04f9f6d5399e0db9b0131f925e"
+    },
+    "hahn-B-nodeqr.csv": {
+      "bytes": 3605,
+      "sha256": "4e41d7fdfcc0be23a06c8a0de1cba51c60992a14fc97b79ff79e4a6c7b6051c0"
+    },
+    "hahn-C4.csv": {
+      "bytes": 3605,
+      "sha256": "f6a89089598e67538ab591c53c52ac3be3fa6d823ab52f69328f707f23129c59"
+    },
+    "hahn-CORE.csv": {
+      "bytes": 8007,
+      "sha256": "240bc389edafc3a3c54e2cd8b01c47fafd04b338c12632f54cf68eacb2a9cc84"
+    },
+    "hahn-KRYL.csv": {
+      "bytes": 8007,
+      "sha256": "9b3d087dbd9c2978f46813fc5a5238cbbb941c54840d4acb3fa72cfcbecd5ed5"
+    },
+    "hahn-REORTH.csv": {
+      "bytes": 8007,
+      "sha256": "25747d652bf581be4bb7de44e18380a121fa20d9e9e2f5c539c180bf2b1dcb18"
+    },
+    "krawtchouk-A-LU.csv": {
+      "bytes": 3605,
+      "sha256": "a553136db903c3acba03166696b2756bd9916ca11dd3bb71745ce875a03ff093"
+    },
+    "krawtchouk-A-QR.csv": {
+      "bytes": 3605,
+      "sha256": "c87fe9a044d76337a7d0b416a632aa1483857eec03ee1b8582c80b1733510238"
+    },
+    "krawtchouk-B-nodeqr.csv": {
+      "bytes": 3605,
+      "sha256": "c5060ce4627527d11043e4d20e8e56cb28e31e381c8ca8f7bb6696b5f1051fff"
+    },
+    "krawtchouk-C4.csv": {
+      "bytes": 3605,
+      "sha256": "ff415dbbe842fa0eae4a99d33bb7e91fbba05a05c8dce63b36b559bd187d0114"
+    },
+    "krawtchouk-CORE.csv": {
+      "bytes": 8007,
+      "sha256": "945eb68f1fe234a1021df032290b93fc885001fe166cb6b961e06f1e1feffe79"
+    },
+    "krawtchouk-KRYL.csv": {
+      "bytes": 8007,
+      "sha256": "a12b7e784243d28d85e1bb062872b0236d3937acbd85438d165e33fb2d948c22"
+    },
+    "krawtchouk-REORTH.csv": {
+      "bytes": 8007,
+      "sha256": "a110504f3d5d08a22812639307e10755c40a64dddb679023aa79372b79994bcb"
+    }
+  }
+}

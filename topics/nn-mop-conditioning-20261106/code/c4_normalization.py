@@ -105,7 +105,7 @@ def check():
             cases.append(dict(family=family,N=N,exact_evaluation_relation=True,
                               exact_similarity_roundtrip=True,exact_affine_identity=True))
     return dict(status='PASS',scope='local exact coordinate-interface checks only',
-                M2='BLOCKED; external source unavailable',M4='BLOCKED; no current source execution',
+                gate_scope='M2/M4 are not evaluated by this local-only checker',
                 python=platform.python_version(),cases=cases,
                 sources={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
                          for p in (Path(__file__),bp,gp)})

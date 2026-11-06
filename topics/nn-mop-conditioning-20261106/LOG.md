@@ -130,3 +130,37 @@ inputs. Early decimal-transport comparison outputs are exploratory only.
 The wrapper now uses IEEE754 hex transport; final comparisons and C1
 error diagnostics will be generated only after bitwise input verification.
 No provisional comparison ratios are promoted here.
+
+## 2026-11-06 — completed source comparison and C2 round2 checkpoint
+
+C4's five productive rounds finish the finite non-Advanpix comparison:
+source/runtime/replay, fidelity/lift, broad grid, rejected decimal
+transport and final exact-bit rerun. All348 external calls and58 bitwise
+shared-input checks pass; all116 final postprocessed records complete.
+External NN errors explicitly add H+d0 high-precision postprocessing.
+Advanpix-only experiments remain unrun. Full commands, source/member
+identities and platform are in external-code.md; tables and receipts pin
+the final result. Earlier BLOCKED and decimal exploratory records remain
+qualified by dated supersession.
+
+C2 round2 proves analytic all-N Hahn normality and a nonsharp fixed-mass
+exponential lower base2. Its exact N2–10 checks cover273 defining systems,
+219 kernel determinants,54 cross expectations and9 terminal derivatives.
+The root noticed the determinant-constant indexing in the draft; it was
+corrected to product_(r=1)^t r! before publication. C2's general Krawtchouk
+lower is separately exact-checked; supplementary review corrected a
+benchmark-specialization prefactor description without changing the
+general lower inequality.
+
+Supplementary Astra high checking completed analytic reconstruction of
+the current gauge, scalar, matrix, sharp Krawtchouk, parameter lower and
+Hahn normality/lower proofs, plus separate exact/numerical runs. Final
+C4 postprocessing replay matches116 records/58 bit identities; the own
+348-row C1 error-diagnostic recomputation matches. See independent-checks-01.md.
+This is not the required Claude audit or readiness.
+
+C2 round3 remains productive on a new balanced-terminal Hahn asymptotic
+route; its candidate rate is not a proved sharp rate and is not included
+in the current report's theorem claims. Current round2 outputs can be
+checkpointed while that disjoint work continues. No final-ID reservation
+or shared registry edits have occurred.

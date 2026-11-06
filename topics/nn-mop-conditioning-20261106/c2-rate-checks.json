@@ -1,0 +1,348 @@
+{
+  "cases": [
+    {
+      "N": 2,
+      "b_field_scale": "1/5",
+      "input_spec_sha256": "64ea376b9455466d535bf1c8c7b66adfb4854cb75fe6c45ac892fbf7bcdb6a94",
+      "p1": "2/5",
+      "p2": "1/2",
+      "signed_integer_b_response": "1/2"
+    },
+    {
+      "N": 3,
+      "b_field_scale": "1/5",
+      "input_spec_sha256": "8685463dc43ca25b02da2e07a01125563bbffcdf432622e5a415704918e01e4b",
+      "p1": "2/5",
+      "p2": "1/2",
+      "signed_integer_b_response": "5/2"
+    },
+    {
+      "N": 4,
+      "b_field_scale": "1/5",
+      "input_spec_sha256": "7ef4b25388e41484d394e325251063445d643f4664e31e8a27948dc404119ecb",
+      "p1": "2/5",
+      "p2": "1/2",
+      "signed_integer_b_response": "49/2"
+    },
+    {
+      "N": 5,
+      "b_field_scale": "1/5",
+      "input_spec_sha256": "55f2c280c919d23c56a6417130dbd62e65185da7adfafb49fb381b1a75cdf39f",
+      "p1": "2/5",
+      "p2": "1/2",
+      "signed_integer_b_response": "485/2"
+    },
+    {
+      "N": 6,
+      "b_field_scale": "1/5",
+      "input_spec_sha256": "1fbdb110644fd53f0f41dd21eae1d70e7ce302b19b652947f70ab1496c47064f",
+      "p1": "2/5",
+      "p2": "1/2",
+      "signed_integer_b_response": "4801/2"
+    },
+    {
+      "N": 7,
+      "b_field_scale": "1/5",
+      "input_spec_sha256": "8ddd2b1fabb80c1c376fb4ecd021fbc2f9297444379538e5843da6030b06f4b7",
+      "p1": "2/5",
+      "p2": "1/2",
+      "signed_integer_b_response": "47525/2"
+    },
+    {
+      "N": 8,
+      "b_field_scale": "1/5",
+      "input_spec_sha256": "4946753d1809f34b0f7315255210f4cee6a5880056e8804b24ec4c73022dda30",
+      "p1": "2/5",
+      "p2": "1/2",
+      "signed_integer_b_response": "470449/2"
+    },
+    {
+      "N": 2,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "313801ad4e5e9aae50d6af5f9d002883c4dcb2a389859da9bc412878c50825f5",
+      "p1": "1/5",
+      "p2": "2/5",
+      "signed_integer_b_response": "12/25"
+    },
+    {
+      "N": 3,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "87e323832837b118560ea23540780862b6baaa30b384235f9677a8382bfc3d02",
+      "p1": "1/5",
+      "p2": "2/5",
+      "signed_integer_b_response": "108/125"
+    },
+    {
+      "N": 4,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "30ce44f94a60c1e814b40cf26311d4bdbe07127cd3c98ec2cfaa2c9ac1c7fc03",
+      "p1": "1/5",
+      "p2": "2/5",
+      "signed_integer_b_response": "2376/625"
+    },
+    {
+      "N": 5,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "70b6d8618aeffaf53f655dc07651aceb7d31b2401de15a5a6651efa5318dc4e4",
+      "p1": "1/5",
+      "p2": "2/5",
+      "signed_integer_b_response": "49128/3125"
+    },
+    {
+      "N": 6,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "d9950b61dc240c6336db7e7f499074fea7554e46b13c6c0cdaaaa9b3d38578ad",
+      "p1": "1/5",
+      "p2": "2/5",
+      "signed_integer_b_response": "1022004/15625"
+    },
+    {
+      "N": 7,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "b62f894341f4a74a68414742eef107d91a44be2c4f03ee8442d69b9397f49eb1",
+      "p1": "1/5",
+      "p2": "2/5",
+      "signed_integer_b_response": "21255156/78125"
+    },
+    {
+      "N": 8,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "61743135c3ca3e11010a256d303f96ed54ff33334f09a320e7575b4cbe3f1907",
+      "p1": "1/5",
+      "p2": "2/5",
+      "signed_integer_b_response": "442064208/390625"
+    },
+    {
+      "N": 2,
+      "b_field_scale": "1/3",
+      "input_spec_sha256": "1624ce54405e9f20ce82a2c34ce356cbca8b0e9c4fbcc718217bfb05e2fba503",
+      "p1": "1/3",
+      "p2": "2/3",
+      "signed_integer_b_response": "4/9"
+    },
+    {
+      "N": 3,
+      "b_field_scale": "1/3",
+      "input_spec_sha256": "fb10459dd11cfa172b7bd62bdd02c8af324954f8b51bb9012fdcb0f0f1d1b373",
+      "p1": "1/3",
+      "p2": "2/3",
+      "signed_integer_b_response": "28/27"
+    },
+    {
+      "N": 4,
+      "b_field_scale": "1/3",
+      "input_spec_sha256": "88c2428499bcd7c46f14d176b44e0060eca23e5649d422d8e3c19413c2e1ebee",
+      "p1": "1/3",
+      "p2": "2/3",
+      "signed_integer_b_response": "8/3"
+    },
+    {
+      "N": 5,
+      "b_field_scale": "1/3",
+      "input_spec_sha256": "f55a0fff53fbfb5da91eb33183503557861bd27a1fcc6cb97ffba9ba89d73409",
+      "p1": "1/3",
+      "p2": "2/3",
+      "signed_integer_b_response": "1864/243"
+    },
+    {
+      "N": 6,
+      "b_field_scale": "1/3",
+      "input_spec_sha256": "afd123092d9b9925cd9f21208d5c2907cd9b534d5ec86db876be4bc1ec083583",
+      "p1": "1/3",
+      "p2": "2/3",
+      "signed_integer_b_response": "16636/729"
+    },
+    {
+      "N": 7,
+      "b_field_scale": "1/3",
+      "input_spec_sha256": "0ec041a9760d6e46ef979088f51516a93489126ecfedad20fd00631c45d22219",
+      "p1": "1/3",
+      "p2": "2/3",
+      "signed_integer_b_response": "16612/243"
+    },
+    {
+      "N": 8,
+      "b_field_scale": "1/3",
+      "input_spec_sha256": "41641d16aad88aa3fb50ffb9f2d1a38aec21221bcb920e29b1157d2bade3bf7e",
+      "p1": "1/3",
+      "p2": "2/3",
+      "signed_integer_b_response": "1345264/6561"
+    },
+    {
+      "N": 2,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "045e83e4c21544f0c471c9c1b58a7e7f0b8658d8dbcdc69fadf4acff0b8a5eb9",
+      "p1": "3/5",
+      "p2": "4/5",
+      "signed_integer_b_response": "8/25"
+    },
+    {
+      "N": 3,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "9fed6270d93625b605f31151acc50ac57ecde545ed84d680a5078b2a057f7f99",
+      "p1": "3/5",
+      "p2": "4/5",
+      "signed_integer_b_response": "136/125"
+    },
+    {
+      "N": 4,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "f9d6df0bf0a19f2d3f484f99062c00f7ecca121b6ea34d391fd83e049c83a906",
+      "p1": "3/5",
+      "p2": "4/5",
+      "signed_integer_b_response": "496/125"
+    },
+    {
+      "N": 5,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "c40702ff52bb1b0776348a69abfd5fc46c871cd4388d6a0efff27bd7fb72c748",
+      "p1": "3/5",
+      "p2": "4/5",
+      "signed_integer_b_response": "49648/3125"
+    },
+    {
+      "N": 6,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "8c0a05d0027c35df4e5b03b8b7369b2926a4d2e0447c45b825f2290423006ea3",
+      "p1": "3/5",
+      "p2": "4/5",
+      "signed_integer_b_response": "1023992/15625"
+    },
+    {
+      "N": 7,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "87b71b2686a02d9c0120837dc92816763a6f31593fcc6a0bb6450a98c86c52cc",
+      "p1": "3/5",
+      "p2": "4/5",
+      "signed_integer_b_response": "21262648/78125"
+    },
+    {
+      "N": 8,
+      "b_field_scale": "3/5",
+      "input_spec_sha256": "86bb3d5e7e3897345d1595865e0714431638111cf0b0461e313affa427e4a935",
+      "p1": "3/5",
+      "p2": "4/5",
+      "signed_integer_b_response": "442090976/390625"
+    },
+    {
+      "N": 2,
+      "b_field_scale": "4/5",
+      "input_spec_sha256": "7d6e4f741cdd39d4bae9d97b075573e5ac0210eac74975b8502ab36bf46806c8",
+      "p1": "1/10",
+      "p2": "9/10",
+      "signed_integer_b_response": "9/50"
+    },
+    {
+      "N": 3,
+      "b_field_scale": "4/5",
+      "input_spec_sha256": "0f07679644956203b848cf278539dee8e666408ff050c164271cb6d3cb2bf92f",
+      "p1": "1/10",
+      "p2": "9/10",
+      "signed_integer_b_response": "189/400"
+    },
+    {
+      "N": 4,
+      "b_field_scale": "4/5",
+      "input_spec_sha256": "60c54f5a354072cb8bf40b9a2ff36724fa40d8367fb2bb402fb385dbf6716a78",
+      "p1": "1/10",
+      "p2": "9/10",
+      "signed_integer_b_response": "33561/40000"
+    },
+    {
+      "N": 5,
+      "b_field_scale": "4/5",
+      "input_spec_sha256": "912060755cf4633c235ab76af3dbbd5c5e7931dfa55cc144771680bc85f85c21",
+      "p1": "1/10",
+      "p2": "9/10",
+      "signed_integer_b_response": "1009521/800000"
+    },
+    {
+      "N": 6,
+      "b_field_scale": "4/5",
+      "input_spec_sha256": "8f23f7a170a2b2c708e548cb80885fac62728d1b032e827a2c41364aa8b07baf",
+      "p1": "1/10",
+      "p2": "9/10",
+      "signed_integer_b_response": "5563701/3200000"
+    },
+    {
+      "N": 7,
+      "b_field_scale": "4/5",
+      "input_spec_sha256": "ab39102e4a5ccf2588d11c83947d78f068aea9d5e9fa1b89f27d162f5d79a560",
+      "p1": "1/10",
+      "p2": "9/10",
+      "signed_integer_b_response": "729082593/320000000"
+    },
+    {
+      "N": 8,
+      "b_field_scale": "4/5",
+      "input_spec_sha256": "a1c321ffd93ecbee383c68ebb085ce1d9e4b6175ff429c9af0c3fcd3533d3526",
+      "p1": "1/10",
+      "p2": "9/10",
+      "signed_integer_b_response": "3711473253/1280000000"
+    },
+    {
+      "N": 2,
+      "b_field_scale": "1/50",
+      "input_spec_sha256": "f982bf0dcd6492154f447479158e3be3f2eaf8b96c73af889699221bb076d6f2",
+      "p1": "49/100",
+      "p2": "51/100",
+      "signed_integer_b_response": "2499/5000"
+    },
+    {
+      "N": 3,
+      "b_field_scale": "1/50",
+      "input_spec_sha256": "bdf537d3f061795c0322a474a248e3d61acd58419690a87d8f2963dbfc18318f",
+      "p1": "49/100",
+      "p2": "51/100",
+      "signed_integer_b_response": "1251999/100000"
+    },
+    {
+      "N": 4,
+      "b_field_scale": "1/50",
+      "input_spec_sha256": "f3a70f5869fb6b1b44110633f6f8d832f3d0b51cf6c35422dc17075cbc74679c",
+      "p1": "49/100",
+      "p2": "51/100",
+      "signed_integer_b_response": "15631267491/25000000"
+    },
+    {
+      "N": 5,
+      "b_field_scale": "1/50",
+      "input_spec_sha256": "702da6aec8985396d8115f357a91963735dc8866b67b13daf47a50664cb6e552",
+      "p1": "49/100",
+      "p2": "51/100",
+      "signed_integer_b_response": "19539065638743/625000000"
+    },
+    {
+      "N": 6,
+      "b_field_scale": "1/50",
+      "input_spec_sha256": "8c612b75d9935febd3108442f49e27de6b30b59586919159eccbd8f9971165ad",
+      "p1": "49/100",
+      "p2": "51/100",
+      "signed_integer_b_response": "4884766406564499/3125000000"
+    },
+    {
+      "N": 7,
+      "b_field_scale": "1/50",
+      "input_spec_sha256": "cfbb2d5458c588e0aad1cbd57ded0e87be77dfc5fc2fbd3551dfbdcae72df02b",
+      "p1": "49/100",
+      "p2": "51/100",
+      "signed_integer_b_response": "244238320328131304973/3125000000000"
+    },
+    {
+      "N": 8,
+      "b_field_scale": "1/50",
+      "input_spec_sha256": "361f7978f0b89d1ec24411df1a1acd88515d046c4e7ab33fbb02950ee0567534",
+      "p1": "49/100",
+      "p2": "51/100",
+      "signed_integer_b_response": "122119160164065626264493/31250000000000"
+    }
+  ],
+  "elapsed_seconds": 0.2132272329999978,
+  "python": "3.12.14",
+  "rules_local_sha": "76ba4214b100c86a44941f5e9a662ce9ce48efb8",
+  "source_sha256": "e4394dac64adafe25721384d01dcac9dd13ec6333831119240128782423428a9",
+  "status": "VERIFIED exact finite identities; analytic theorem separate",
+  "terminal_rows": 168,
+  "topic_input_sha": "b4a04981d42c7cd872957facf5e3995e4096ca67",
+  "transform_checks": 276
+}

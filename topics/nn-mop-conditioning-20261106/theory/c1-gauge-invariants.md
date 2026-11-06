@@ -95,7 +95,9 @@ output conditioning, which is infinite on sensitive zero entries.
 
 Overall status: PROVED, by the written proof. No numerical premise.
 Candidate disposition: retained variant of PD-T432/437; historical novelty
-unclaimed. Exact gauge minimizers and sharp general rates remain OPEN.
+unclaimed. Exact finite-N gauge minimizers and general-family sharp rates
+remain OPEN. The separate `c1-gauge-sharp-rate.md` now combines this
+lower bound with C2's sharp upper to prove the Krawtchouk NN gauge rate.
 
 ## Depends on
 
@@ -191,8 +193,13 @@ The written result is independent of numerical runs. `code/c1_metrics.py`
 checks terminal derivatives through a primal/adjoint moment solve against
 the frozen AD graph at small N; C1 measurements have their own record.
 No LIT-347 normalization equivalence is claimed here; M2 belongs to C4.
-No all-N Hahn normality/rate is inherited. Finite Hahn bounds rely on the
-separate predecessor finite normality theorem and are MEASURED.
+The finite Hahn measurements originally rely on the separate predecessor
+finite normality theorem and remain MEASURED. Later C2 all-N Hahn
+normality and diagonal lower results are inherited through this invariant
+in `c1-hahn-gauge-lower.md`; its lower base2 is not sharp. The finalized
+Krawtchouk sharp-upper dependency gives the separate gauge-rate squeeze
+in `c1-gauge-sharp-rate.md`. These later consequences do not change the
+standalone gauge algebra or infer an asymptotic theorem from finite fits.
 
 ## History
 

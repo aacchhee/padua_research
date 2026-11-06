@@ -7,10 +7,10 @@ publishes these bounded results. No empty round is relabeled progress.
 
 | Direction | Rounds at this checkpoint | Outcome |
 |---|---|---|
-| C1 | in progress | Scalar/terminal metric sweeps and gauge proof |
-| C2 | in progress | Parameter lower and bounded hard upper attempt |
+| C1 | completed core and matrix-error diagnostics | Full61-size screen; all-gauge bounds and sharp NN squeeze |
+| C2 | R1 parameter lower; R2 Hahn normality/lower; hard Kraw upper complete; R3 ongoing | New benchmark sharp upper; sharper Hahn route not yet claimed |
 | C3 | R1 progress; R2/R3 empty proof routes | STOP proof search; target OPEN, full58-case-per-method grid MEASURED |
-| C4 | R1 access review; R2 interface preparation; resumed source round | Source supplied by AC; M4 actualPASS; M2/comparison in progress |
+| C4 | five productive rounds complete | Source verified; M2/M4 PASS; final348calls/58bitchecks complete; Advanpix excluded |
 
 C4 preparation rounds were published together in ffa7199; original
 source block was genuine in that runtime state and superseded by AC's

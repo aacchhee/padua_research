@@ -1,0 +1,97 @@
+{
+  "BLAS": "reference BLAS -lblas",
+  "LAPACK": "reference -llapack",
+  "M4": "PASS",
+  "configuration": "Krawtchouk paperN10=11nodes, IEP_CORE, integer-node monic H spectral error",
+  "exit_code": 0,
+  "exploratory_transport_rejected": true,
+  "files": {
+    "/tmp/c4-external-grid-bits.json": {
+      "bytes": 3463898,
+      "sha256": "efc7fd299093f433d8936ff628b6df2dd4561ca0572ad9dcdc56ff4ccb697e6b"
+    },
+    "/tmp/c4-external-grid-bits.log": {
+      "bytes": 1355,
+      "sha256": "fdaba8c8e7e233e2c2226caf8ab0c31b7293ceccd7cdf7859c05ff4d4e5e3066"
+    },
+    "/tmp/c4-external-grid.json": {
+      "bytes": 791873,
+      "sha256": "3a9ce8a60bdbb0455f7e1d10a68b14a8a2946c7b94ee68c6e91d8be1a2361c71"
+    },
+    "/tmp/c4-external-grid.log": {
+      "bytes": 1355,
+      "sha256": "33b22f90bbd4f1c6f194169d2afd8a0419739ed85ec12c9aa9f41b6a381d3910"
+    },
+    "/tmp/c4-g5-out/ours_hahn.dat": {
+      "bytes": 3505,
+      "sha256": "0d442bcf246fb245847a3e8705908993afdf1acb45adbe51e076be8e5067eb1e"
+    },
+    "/tmp/c4-g5-out/ours_kravchuk.dat": {
+      "bytes": 3505,
+      "sha256": "22d7aecaed024190c18dd7ac2651b02eb0418279bd288936d1d1c9b35c028f3b"
+    },
+    "/tmp/c4-m2-bits.json": {
+      "bytes": 7923,
+      "sha256": "93494d1d7a8e12a32a3dcd42a0f3e9d901ae785b067ea97af5d0884aac6543cc"
+    },
+    "/tmp/c4-m2.json": {
+      "bytes": 3103,
+      "sha256": "dc6b8e20540ffbb1255f4a4838e6ebfb495282d0fda32433454925be1d8c5637"
+    },
+    "/tmp/c4-shared-input.json": {
+      "bytes": 104777,
+      "sha256": "4a1f4ea59021db7f3653c9fcf476faf31e58bf1e7cf7c78aca0204f835aba5b0"
+    }
+  },
+  "final_grid_cases": 116,
+  "final_solver_failures": [],
+  "final_source_grid_exit_code": 0,
+  "final_warnings": {
+    "full_log_sha256": "fdaba8c8e7e233e2c2226caf8ab0c31b7293ceccd7cdf7859c05ff4d4e5e3066",
+    "matrix_singular_to_working_precision_count": 8,
+    "octave_shutdown_message_exit0": true,
+    "warnings_suppressed": false
+  },
+  "local_executed_code_sha256": {
+    "topics/nn-mop-conditioning-20261106/code/c4_compare.py": "b7dd9b2a4ed5a066b081f5cdda0862cab1e3c13ca38a85963b2254e21f7611bf",
+    "topics/nn-mop-conditioning-20261106/code/c4_external.m": "a32f5babd64ae4d07eb9543ae13fa8453c5c3ce66708e64033c106392131fde2",
+    "topics/nn-mop-conditioning-20261106/code/c4_fidelity.py": "1038ebff978ba6675878980e590f8c5de8d29b4920b8ce575ca032b1f9dbf2a5",
+    "topics/nn-mop-conditioning-20261106/code/c4_lift.py": "b195a95d0d82a2a923de259080f3a70317cbd048cfd7f64f4fba6fabe5a27eab",
+    "topics/nn-mop-conditioning-20261106/code/c4_normalization.py": "6ffe45a445860db86a74b6d911d0055fa4773d82b88535be6e136701958a9182",
+    "topics/nn-mop-conditioning-20261106/code/c4_prepare.py": "2ba44724b5af6434a47cb83dc836cd44dfafc846d07af44d8b89a01f96ddd844"
+  },
+  "log10_ratio": -0.40581775238088774,
+  "measured": 2.691214553706643e-10,
+  "octave": "9.4.0",
+  "os": "Debian13 trixie",
+  "package_archives": {
+    "libcxsparse4_1%3a7.10.1+dfsg-1_amd64.deb": "fce916ace35e2ab4a08769e01390ecdbb8d55335e20d709d99035f2cb26fa85d",
+    "libglpk40_5.0-1+b2_amd64.deb": "26176f13cead19e81adc39332c6c23dc6bd68943f65cc618b3409b9ff331cbd4",
+    "libgraphicsmagick++-q16-12t64_1.4+really1.3.45+hg17696-1_amd64.deb": "f75e67793deba6a6ef9a949e51559ab9517063c92393759b69b046d702991b16",
+    "libgraphicsmagick-q16-3t64_1.4+really1.3.45+hg17696-1_amd64.deb": "131af2e5834dda7cea3aec428ace948637298e3f41b56b0ba8f2cc688d69b606",
+    "libportaudio2_19.6.0-1.2+b3_amd64.deb": "e254c833aadd342807898e53f6c587910b68aa0cefea05c3ae8e2d504fa7df6d",
+    "libqrupdate1_1.1.5-1_amd64.deb": "f438585d6feb537094f80be8903a203839e4583d25c3de69e0b218ee0dab3f22",
+    "libqscintilla2-qt6-15_2.14.1+dfsg-1+b4_amd64.deb": "f602a0e6cd815d98ca92f49877e9022511f33e499ab10ce84cf1a604a5ba1d55",
+    "libqscintilla2-qt6-l10n_2.14.1+dfsg-1_all.deb": "d439a779fb210e599b99b609c9ce8980c0791d7529cc85ad3e6a4777e65400b2",
+    "libspqr4_1%3a7.10.1+dfsg-1_amd64.deb": "38aba4010b9a29cd5bcffaa63837e470e531dd1c0d9dd2626c8677f79bc83c27",
+    "libtext-unidecode-perl_1.30-3_all.deb": "33512c229f1af0e7b45f9e206dda36b579ca8c8d2b53c82970e536da82c53de1",
+    "libxml-libxml-perl_2.0207+dfsg+really+2.0134-5+deb13u1_amd64.deb": "349e18fd89f5274d8ca0f23c24457105bfbe6dc30cc20715ee0928e29359acd3",
+    "libxml-namespacesupport-perl_1.12-2_all.deb": "64cf8ddd61df9a36f7475dfca4c826ff342dd614a051c0f2cae175cc22cb2e15",
+    "libxml-sax-base-perl_1.09-3_all.deb": "70315098e411309edff6682aa02a215441080cccf8d6f023ae17cd83945f3705",
+    "libxml-sax-perl_1.02+dfsg-4_all.deb": "61d1e166779cd2f6ac8a03984130551ad09aed31139a213894103bf4b4dac475",
+    "octave-common_9.4.0-1_all.deb": "435d31a9d3dfa436dc3afd75e8aa4b5f7eb95674d1f2a02fe118a59d596a5e1d",
+    "octave_9.4.0-1_amd64.deb": "ace088de791f79e3b6ddd5d81c08434f8511dcc4435f8d3608269e4cb1dbf6c6",
+    "texinfo-lib_7.1.1-1+b1_amd64.deb": "8838fd0aecfa42a8d6468b147250471a0b5d49a84745e0d08219b390ff578f68",
+    "texinfo_7.1.1-1_all.deb": "524bb723e5a77b0bd0d2579ff8f2b787a250849dd3fbe6211304f1206a003493"
+  },
+  "paper_reference_from_predecessor": 6.851191e-10,
+  "paper_table_independently_authenticated": false,
+  "rule": "abs(log10(ours/quotedpaper))<=1",
+  "source_calls": {
+    "bit_m2": 6,
+    "exploratory_numeric_json_grid": 348,
+    "final_bit_transport_grid": 348,
+    "initial_m2": 6,
+    "unchanged_g5_driver": 156
+  }
+}
