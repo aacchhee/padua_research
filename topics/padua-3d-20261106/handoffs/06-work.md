@@ -1,6 +1,6 @@
 # Handoff 06 — padua-3d-20261106 — adventurous round: restarted budgets on the most promising 3-D routes
 
-- Status: open
+- Status: done in 696bca5fe8842b8b99ec298381c948206be79548
 - Previous handoff: [05-audit.md](05-audit.md)
 - Next agent / model / effort: **Codex**.
   - Coordinator: gpt-6-astra high.
