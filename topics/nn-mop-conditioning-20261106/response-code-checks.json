@@ -1,0 +1,253 @@
+{
+  "c1": {
+    "case_summaries": 12,
+    "cases_unchanged": true,
+    "error_rows": 348,
+    "receipt_pin_current": true
+  },
+  "c2_hard": {
+    "N": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "arithmetic": "SymPy exact rationals",
+    "checks": {
+      "a_rows": 1050,
+      "jet_coordinates": 735,
+      "polynomials": 50,
+      "support_coordinates": 330
+    },
+    "python": "3.12.14",
+    "result": "PASS",
+    "sympy": "1.14.0"
+  },
+  "code": [
+    {
+      "bytes": 6011,
+      "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/response_code_checks.py",
+      "sha256": "0ee2e6be7407cd49757aaf8f9006465a517597c3a7a315c7dbc9306a1761146f"
+    },
+    {
+      "bytes": 8799,
+      "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c4_compare.py",
+      "sha256": "fc82d87ccebeed920b062b757253b87e1d4ae06a899fa59f3a0c7ab54de84f13"
+    },
+    {
+      "bytes": 4962,
+      "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c2_hard_check.py",
+      "sha256": "452d72d73b7116068a6b7b2f7fabebdb2eb77e5e51d83ae25507173014fecb66"
+    },
+    {
+      "bytes": 4040,
+      "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c1_error_diagnostic.py",
+      "sha256": "6da4efd5e20e98b2064ef81efad3798e6ed9035a5689ec57a0e464980be8ff28"
+    }
+  ],
+  "commands": [
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c4_compare.py",
+      "--external",
+      "/tmp/c4-external-grid-bits.json",
+      "--native",
+      "/tmp/nn-mop-c3-grid-raw.json",
+      "--raw",
+      "/tmp/nn-mop-response-code-checks/healthy/raw.json",
+      "--evidence",
+      "/tmp/nn-mop-response-code-checks/healthy/tables"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c4_compare.py",
+      "--external",
+      "/tmp/nn-mop-response-code-checks/single-external.json",
+      "--native",
+      "/tmp/nn-mop-response-code-checks/broken-native.json",
+      "--raw",
+      "/tmp/nn-mop-response-code-checks/broken/raw.json",
+      "--evidence",
+      "/tmp/nn-mop-response-code-checks/broken/tables"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c2_hard_check.py"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c1_error_diagnostic.py"
+    ]
+  ],
+  "failure_path": {
+    "csv_metrics_blank": true,
+    "external_payload_unchanged": true,
+    "failures_recorded": [
+      {
+        "N": 4,
+        "family": "krawtchouk",
+        "input_kind": "shared_normalized",
+        "method": "C4",
+        "status": "breakdown"
+      },
+      {
+        "N": 4,
+        "family": "krawtchouk",
+        "input_kind": "shared_normalized",
+        "method": "A-LU",
+        "status": "missing"
+      },
+      {
+        "N": 4,
+        "family": "krawtchouk",
+        "input_kind": "shared_normalized",
+        "method": "A-QR",
+        "status": "missing_coefficients"
+      },
+      {
+        "N": 4,
+        "family": "krawtchouk",
+        "input_kind": "shared_normalized",
+        "method": "B-nodeqr",
+        "status": "invalid_coefficients"
+      }
+    ],
+    "statuses": {
+      "A-LU": "missing",
+      "A-QR": "missing_coefficients",
+      "B-nodeqr": "invalid_coefficients",
+      "C4": "breakdown"
+    }
+  },
+  "healthy": {
+    "binary64_input_matches": 58,
+    "cases": 116,
+    "scientific_payload_unchanged": true,
+    "tables": {
+      "hahn-A-LU.csv": {
+        "bytes": 3605,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/hahn-A-LU.csv",
+        "sha256": "c8baf9c3847da2c22e7dbb13ae0bb5182d117f5b5f3d7c8413ac466081e555c0"
+      },
+      "hahn-A-QR.csv": {
+        "bytes": 3605,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/hahn-A-QR.csv",
+        "sha256": "3b5b231a4049d7001f5616a19851df7d9f7a4f04f9f6d5399e0db9b0131f925e"
+      },
+      "hahn-B-nodeqr.csv": {
+        "bytes": 3605,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/hahn-B-nodeqr.csv",
+        "sha256": "4e41d7fdfcc0be23a06c8a0de1cba51c60992a14fc97b79ff79e4a6c7b6051c0"
+      },
+      "hahn-C4.csv": {
+        "bytes": 3605,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/hahn-C4.csv",
+        "sha256": "f6a89089598e67538ab591c53c52ac3be3fa6d823ab52f69328f707f23129c59"
+      },
+      "hahn-CORE.csv": {
+        "bytes": 8007,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/hahn-CORE.csv",
+        "sha256": "66a03af7c51da2fb6b80c1302d7dbe59e3eae3f3e87fba4dc9d2e5d65af4b6c1"
+      },
+      "hahn-KRYL.csv": {
+        "bytes": 8007,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/hahn-KRYL.csv",
+        "sha256": "448b1ed8450a4050545aebcbbc5dcc880e603c493488224f662ba1ba4a5a3edb"
+      },
+      "hahn-REORTH.csv": {
+        "bytes": 8007,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/hahn-REORTH.csv",
+        "sha256": "7084304efd3b40e90ca3425072090ebd92956dc24edeae93559b4a843ad96d1c"
+      },
+      "krawtchouk-A-LU.csv": {
+        "bytes": 3605,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/krawtchouk-A-LU.csv",
+        "sha256": "a553136db903c3acba03166696b2756bd9916ca11dd3bb71745ce875a03ff093"
+      },
+      "krawtchouk-A-QR.csv": {
+        "bytes": 3605,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/krawtchouk-A-QR.csv",
+        "sha256": "c87fe9a044d76337a7d0b416a632aa1483857eec03ee1b8582c80b1733510238"
+      },
+      "krawtchouk-B-nodeqr.csv": {
+        "bytes": 3605,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/krawtchouk-B-nodeqr.csv",
+        "sha256": "c5060ce4627527d11043e4d20e8e56cb28e31e381c8ca8f7bb6696b5f1051fff"
+      },
+      "krawtchouk-C4.csv": {
+        "bytes": 3605,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/krawtchouk-C4.csv",
+        "sha256": "ff415dbbe842fa0eae4a99d33bb7e91fbba05a05c8dce63b36b559bd187d0114"
+      },
+      "krawtchouk-CORE.csv": {
+        "bytes": 8007,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/krawtchouk-CORE.csv",
+        "sha256": "e3bd8f0aa334b927ee9485cadf471d7b7a82cd32ed570ffdbac6b3bc7e049ed8"
+      },
+      "krawtchouk-KRYL.csv": {
+        "bytes": 8007,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/krawtchouk-KRYL.csv",
+        "sha256": "5d54361e5c60dcc8424fc4537b8a799f96594b02f1034128b72fc3ab5af5d97b"
+      },
+      "krawtchouk-REORTH.csv": {
+        "bytes": 8007,
+        "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-tables/krawtchouk-REORTH.csv",
+        "sha256": "4f90618015c01945593b8ed83147f92364cc05123b9c51f050c879293201a584"
+      }
+    },
+    "tables_byte_identical": 14
+  },
+  "inputs": [
+    {
+      "bytes": 3463898,
+      "path": "/tmp/c4-external-grid-bits.json",
+      "sha256": "efc7fd299093f433d8936ff628b6df2dd4561ca0572ad9dcdc56ff4ccb697e6b"
+    },
+    {
+      "bytes": 5835364,
+      "path": "/tmp/nn-mop-c3-grid-raw.json",
+      "sha256": "3da04b46dcc7d621543544235adf8517b26f316f8b303e4dc77fc5027fb873f6"
+    },
+    {
+      "bytes": 331793,
+      "path": "/tmp/c4-comparison-bits-raw.json",
+      "sha256": "3812562b89012b7cb7a88f246d5c23fc62d675b74c93cef8cff54cfb12fc36d5"
+    },
+    {
+      "bytes": 29090,
+      "path": "/tmp/nn-mop-conditioning-20261106/c1-matrix-all.json",
+      "sha256": "b4e53167089eb2c8f78a2bd492e611ef9540ddc82c1aefbaf014d812af4e0f43"
+    },
+    {
+      "bytes": 3255,
+      "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c4-comparison-receipt.json",
+      "sha256": "92ace13eca4229adbc9cf83c1849ec40a158babcc6c634fe2695ab461e2fb5be"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 331794,
+      "path": "/tmp/nn-mop-response-code-checks/healthy/raw.json",
+      "sha256": "620c8d15d2acc66671a37223e87e09c24f6b61e1f43772679422e5047ee364fc"
+    },
+    {
+      "bytes": 3508,
+      "path": "/tmp/nn-mop-response-code-checks/broken/raw.json",
+      "sha256": "addd9f55098823790c85674b4070ebd79739f5aab522e1d14c052af79482f046"
+    },
+    {
+      "bytes": 13786,
+      "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/c1-error-comparison.json",
+      "sha256": "141a25bfab6cc5fe29dc2a75b1e552dab6bf8feea78b58379e2e1211190bbed2"
+    }
+  ],
+  "platform": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "source_commit": "3d5b29d7aa8c1274793139d7040695035e1bda22",
+  "status": "PASS; finite code regression checks, not a theorem"
+}

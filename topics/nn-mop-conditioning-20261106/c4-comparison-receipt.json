@@ -1,0 +1,85 @@
+{
+  "M2": "PASS",
+  "M4": "PASS",
+  "binary64_input_equality_cases": 58,
+  "case_count": 116,
+  "failures": [],
+  "input_files": {
+    "/tmp/c4-external-grid-bits.json": "efc7fd299093f433d8936ff628b6df2dd4561ca0572ad9dcdc56ff4ccb697e6b",
+    "/tmp/nn-mop-c3-grid-raw.json": "3da04b46dcc7d621543544235adf8517b26f316f8b303e4dc77fc5027fb873f6",
+    "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c4_compare.py": "b7dd9b2a4ed5a066b081f5cdda0862cab1e3c13ca38a85963b2254e21f7611bf",
+    "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c4_lift.py": "b195a95d0d82a2a923de259080f3a70317cbd048cfd7f64f4fba6fabe5a27eab",
+    "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c4_normalization.py": "6ffe45a445860db86a74b6d911d0055fa4773d82b88535be6e136701958a9182",
+    "/workspace/padua_research/topics/nn-mop-iep-20261103/code/c4_float_baseline.py": "9ce76ae88fb798f73127f75819bcdfb6c7bffb0d9cd092d70957164cb9b6a2e8"
+  },
+  "max_lift_precision_agreement": 1.6979364928990855e-107,
+  "platform": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.12.14"
+  },
+  "raw": {
+    "bytes": 331793,
+    "path": "/tmp/c4-comparison-bits-raw.json",
+    "sha256": "3812562b89012b7cb7a88f246d5c23fc62d675b74c93cef8cff54cfb12fc36d5"
+  },
+  "status": "MEASURED",
+  "tables": {
+    "hahn-A-LU.csv": {
+      "bytes": 3605,
+      "sha256": "c8baf9c3847da2c22e7dbb13ae0bb5182d117f5b5f3d7c8413ac466081e555c0"
+    },
+    "hahn-A-QR.csv": {
+      "bytes": 3605,
+      "sha256": "3b5b231a4049d7001f5616a19851df7d9f7a4f04f9f6d5399e0db9b0131f925e"
+    },
+    "hahn-B-nodeqr.csv": {
+      "bytes": 3605,
+      "sha256": "4e41d7fdfcc0be23a06c8a0de1cba51c60992a14fc97b79ff79e4a6c7b6051c0"
+    },
+    "hahn-C4.csv": {
+      "bytes": 3605,
+      "sha256": "f6a89089598e67538ab591c53c52ac3be3fa6d823ab52f69328f707f23129c59"
+    },
+    "hahn-CORE.csv": {
+      "bytes": 8007,
+      "sha256": "66a03af7c51da2fb6b80c1302d7dbe59e3eae3f3e87fba4dc9d2e5d65af4b6c1"
+    },
+    "hahn-KRYL.csv": {
+      "bytes": 8007,
+      "sha256": "448b1ed8450a4050545aebcbbc5dcc880e603c493488224f662ba1ba4a5a3edb"
+    },
+    "hahn-REORTH.csv": {
+      "bytes": 8007,
+      "sha256": "7084304efd3b40e90ca3425072090ebd92956dc24edeae93559b4a843ad96d1c"
+    },
+    "krawtchouk-A-LU.csv": {
+      "bytes": 3605,
+      "sha256": "a553136db903c3acba03166696b2756bd9916ca11dd3bb71745ce875a03ff093"
+    },
+    "krawtchouk-A-QR.csv": {
+      "bytes": 3605,
+      "sha256": "c87fe9a044d76337a7d0b416a632aa1483857eec03ee1b8582c80b1733510238"
+    },
+    "krawtchouk-B-nodeqr.csv": {
+      "bytes": 3605,
+      "sha256": "c5060ce4627527d11043e4d20e8e56cb28e31e381c8ca8f7bb6696b5f1051fff"
+    },
+    "krawtchouk-C4.csv": {
+      "bytes": 3605,
+      "sha256": "ff415dbbe842fa0eae4a99d33bb7e91fbba05a05c8dce63b36b559bd187d0114"
+    },
+    "krawtchouk-CORE.csv": {
+      "bytes": 8007,
+      "sha256": "e3bd8f0aa334b927ee9485cadf471d7b7a82cd32ed570ffdbac6b3bc7e049ed8"
+    },
+    "krawtchouk-KRYL.csv": {
+      "bytes": 8007,
+      "sha256": "5d54361e5c60dcc8424fc4537b8a799f96594b02f1034128b72fc3ab5af5d97b"
+    },
+    "krawtchouk-REORTH.csv": {
+      "bytes": 8007,
+      "sha256": "4f90618015c01945593b8ed83147f92364cc05123b9c51f050c879293201a584"
+    }
+  }
+}

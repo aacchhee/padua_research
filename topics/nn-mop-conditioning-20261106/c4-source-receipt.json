@@ -1,0 +1,10 @@
+{
+  "archive_sha256": "cdd0e98d2b411f24cfcecb49d83e16f9d50a7622a0d4f0d3eb17eb334a405145",
+  "archive_bytes": 1020330,
+  "member_count": 27,
+  "inventory_sha256": "e85d489da14dfe012768490a82966c37549fc1ae79dfefd805f54cdb7556f1b0",
+  "input_sha256": "4a1f4ea59021db7f3653c9fcf476faf31e58bf1e7cf7c78aca0204f835aba5b0",
+  "input_count": 58,
+  "source_revision": "unknown; exact AC archive bytes pinned",
+  "source_edited": false
+}

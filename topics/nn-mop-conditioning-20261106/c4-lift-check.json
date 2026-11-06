@@ -1,0 +1,47 @@
+{
+  "cases": [
+    {
+      "N": 4,
+      "exact_full_NN": true,
+      "exact_normalized_moments": true,
+      "family": "krawtchouk"
+    },
+    {
+      "N": 6,
+      "exact_full_NN": true,
+      "exact_normalized_moments": true,
+      "family": "krawtchouk"
+    },
+    {
+      "N": 8,
+      "exact_full_NN": true,
+      "exact_normalized_moments": true,
+      "family": "krawtchouk"
+    },
+    {
+      "N": 4,
+      "exact_full_NN": true,
+      "exact_normalized_moments": true,
+      "family": "hahn"
+    },
+    {
+      "N": 6,
+      "exact_full_NN": true,
+      "exact_normalized_moments": true,
+      "family": "hahn"
+    },
+    {
+      "N": 8,
+      "exact_full_NN": true,
+      "exact_normalized_moments": true,
+      "family": "hahn"
+    }
+  ],
+  "scope": "six exact H+d0 lift checks, not floating stability",
+  "source_sha256": {
+    "topics/nn-mop-conditioning-20261106/code/c4_lift.py": "b195a95d0d82a2a923de259080f3a70317cbd048cfd7f64f4fba6fabe5a27eab",
+    "topics/nn-mop-iep-20261103/audit-01/claude_layer_recursion_check.py": "13d59af82304a712d792c6e2f96c76f42ec732575dcfa3452a92295071c011b3",
+    "topics/nn-mop-iep-20261103/code/c4_float_baseline.py": "9ce76ae88fb798f73127f75819bcdfb6c7bffb0d9cd092d70957164cb9b6a2e8"
+  },
+  "status": "PASS"
+}
