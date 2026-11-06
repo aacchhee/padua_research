@@ -343,3 +343,15 @@
 - C06 partial backend passes independent LP64 review with76cases/784moment checks; point-S/wholebox still OPEN. Release C07 separately owned point-S integration; frozen source unchanged. C07 hard actual-corner sharpening continues with full registry/PD269–271 gate. Formal Claude audit remains PENDING, draftPR27 WORK.
 
 - Publication verification: staged Python AST checks pass;107 essential evidence identities are each<16KiB, index14596bytes. Conservative staged generated-output total7,448,810bytes<10,000,000. Frozen proof/report hashes retained and git diff --cached --check passes. No active C07 or new far diagnostic source is included.
+
+### C08 hard compact far-phase comparison, before allocation
+
+- Astra ultra is warranted for a separate compact far-model phase comparison while the C06 ultra author proves its uniform finite-degree error. C05 actual near noncorner and new C07 actual-corner proof (independent review pending) both reach n>=10^6; the far triangle is now the decisive remaining analytic obstruction. A sampled margin is not a proof, and b_full<=b_corner is false at the boundary midpoint. Uniform weighted coefficient/finite-part comparison through a=0, collision and endpoint degeneracies requires hard mathematical work. Reuse the former corner ultra worker on a distinct C08 phase-comparison file after an exact model contract is supplied; no second correction to the near model. Root records this justification before activation.
+
+### C06 assembled upper boundary and C03 whole-run acceptance
+
+- Root separately reconstructs frozen C06 global assembly69c748dd... against PD364 and accepted exact premises; independent-checks-C06-effective.md accepts with no finding. Actual global tail nowceil(exp256), exact two parity-correct corners. Finite41..N*-1 remainsOPEN. All new thresholds are explicit, noenergy/implicitlocalization. Three exact Fraction bookkeeping controls pass; no numerical proof premise.
+- Published C03 mode0 sourcee8fad167... was released exactlyonce and PASSed364/364,0failed/0pending,333nativecalls, all254closureidentities stable. Total46.08976645CPU, subprocess45.228637 versusold139.405409 (~3.08times). All76failedC02predicates recovered; allleaf/callordering unchanged. C02failure stayspreserved; norescue/modeswitch/producer/newcandidate/newdegree. Outcome1996b137..., smallreceipte540444c....
+- Rules reread atb6e67b3c78cb668b6d2f9da5a5560537d2960bf3; contents unchanged. Current source checkpoint e8fad1671fb736247e4c510284f6f935e6345efb. Root report now presents current accepted scopes coherently rather than treating superseded OPEN near obligations as present bottlenecks. FormalClaude PENDING and PRdraftWORK persist.
+
+- C07 actual-corner proofs9fa0d3f3.../2b2870f2... now independently accepted by reportd79a9568...: BOTH actual corners lambda<=Lambda-r² for every n>=10^6,rho<=1/2. Supporting finite paired deformation is nonnegative and gives Lambda>=(nLn²+1)/(n+1) for alln>=2. No computation, energy premise or fullglobaln1e6 conclusion. Far remains the decisive phase case at that target. C06 round complete6/15; C07 pointintegration review and C08 hardfar/MPFR/wholeboxdevelopment continue.

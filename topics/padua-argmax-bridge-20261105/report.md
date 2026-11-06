@@ -1,263 +1,112 @@
 # Padua argmax bridge — WORK checkpoint, 2026-11-06
 
-## Fresh campaign checkpoint — 2026-11-06
+The exact global equality set is proved for **degrees2–40** and for
+**every integer n>=ceil(exp(256))**. It consists of {(-1,-1),(1,-1)} for
+even n and {(-1,-1),(-1,1)} for odd n. The intervening finite gap and
+all-degree PD-T099 remain OPEN. This is a much smaller effective upper
+boundary than C01's exp(10^12) and C03's exp(10^7), but still impractical.
+The campaign prioritizes reducing that boundary and developing a cheap
+certifier; it has not run a new old-tech degree-extension campaign.
 
-The independently checked global tail is now **n>=ceil(exp(10^7))**
-([proof](theory/C03-effective-argmax.md),
-[review](independent-checks-C03-effective.md)). The exact finite range
-remains2–40; the intervening gap is OPEN. C06 separately proves strict
-far comparison for log n>=256; C05 proves strict actual-corner comparison
-for log n>=25. Their global assembly is in progress, rather than already
-counted as an accepted global theorem.
+## Analytic progress
 
-More substantially, C05 closes the **actual near NONCORNER comparison
-for every n>=10^6**, with gap869/28000, using the unchanged fixed model
-and the stronger all-class defect. [Finite-h proof](theory/C05-finiteh-model-comparison.md)
-and [independent review](independent-checks-C05-finiteh.md). The model
-bound needed here is1/32. Original tight C1 with1/4096 remains OPEN;
-the limiting residual estimate alone is not a finite-degree proof.
+The [C06 global assembly](theory/C06-effective-argmax.md) and
+[distinct coordinator reconstruction](independent-checks-C06-effective.md)
+combine three independently checked pointwise cases on the complete
+closed physical phase cover, with both parities and exact corner equality.
+No energy premise or assumed global maximum is used.
 
-The first cheap whole n32 replay **failed76/364 leaves**, in31.965CPU-s;
-this failure is preserved. The new C03 endpoint-monotonicity refinement
-has passed separate mathematical/source controls, and its mode0 whole
-replay controller has now passed distinct review. One full original-case
-run is pending publication/release; no new degree is claimed. The C02
-MPFR port is experimental and failed one of two saved tightness cases;
-no complete producer ran. The independently checked C06 partial-cotangent
-backend is a useful fixed-work component (76 cases,784 exact moment
-checks in2.69CPU-s), but full point-S and whole-box interfaces remain OPEN.
+| Case | Proven comparison | Exact scope |
+|---|---|---|
+| Far phases | S<Lambda_c with gap>3592/15 | rho>=1/2, log n>=256; full closed phase diamond |
+| Near noncorner centers | lambda<Lambda_c-869/28000 | rho<=1/2, every integer n>=10^6, all admissible noncorner odd centers |
+| Actual corner patches | lambda<Lambda_c away from the origin | rho<=1/2, log n>=25, direct C05 theorem |
 
-Formal Claude audit remains PENDING; PR27 stays draft WORK. Historical
-checkpoints below retain earlier outcomes and are superseded by this dated
-checkpoint where thresholds or OPEN obligations have changed.
+Sources: [far](theory/C06-far-comparison.md),
+[actual finite-degree near](theory/C05-finiteh-model-comparison.md),
+[all-class defect](theory/C02-defect-dense-band.md),
+[actual corner](theory/C05-corner-quarterangle-bound.md).
+The far result controls a=0, axes, endpoints and polynomial collisions.
+The closed odd-center cover and endpoint-weighted reflection preserve
+the exceptional x mode and exact identity lambda=S-Delta.
 
+The near proof uses the unchanged fixed-count model with
+|S-M_near|<3/14000 and proves M_near<Lambda_c+1/32. Strong projected
+defect>1/16 supplies the actual margin. The **original tighter C1 bound
+with1/4096 remains OPEN at n>=10^6**; it is unnecessary for the sufficient
+weaker comparison just proved. C04's limiting residual inequality is
+separate from the finite-h C05 proof; no limiting statement has been
+silently substituted for the actual degree-dependent model.
 
-The finite exact global range is **2–40**, with exactly the two expected
-nonnode corners. Fresh campaign C01 now proves an **effective analytic
-upper boundary**
+C07's stronger actual-corner result is now independently accepted:
+for every n>=10^6 on both inward half diamonds,
+lambda<=Lambda_c-(alpha²+beta²). Its separate finite positive-deformation
+lemma gives Lambda_c>=(nL_n²+1)/(n+1) for all n>=2.
+[Corner proof](theory/C07-corner-million-onset.md),
+[lower bound](theory/C07-corner-positive-deformation.md),
+[independent review](independent-checks-C07-corner.md).
+Thus the current far target at n>=10^6 is the remaining analytic phase
+case. A compact full-phase model/error proof and a separate all-phase
+comparison are in development. Binary64 diagnostics are measurements only.
 
-    N0=ceil(exp(10^12)).
+## Cheap certification progress
 
-Every n>=N0 has the same exact two-corner argmax. The intervening
-41<=n<N0 and all-degree PD-T099 remain OPEN. N0 is astronomical and
-does not justify a finite campaign or Syvert pack. The next priorities
-are a much smaller analytic boundary and genuinely cheap certification.
+The original exact [finite theorem](theory/native-finite-range.md) remains
+2–40; no new degree is claimed. Known n32 is being used to test new
+algorithms on an immutable already accepted364-leaf candidate.
 
-## What is proved
+| Checker | Outcome on the same364-leaf candidate | CPU seconds |
+|---|---|---:|
+| Previous accepted Arb v3 | PASS,0failed/pending |139.405 subprocess |
+| First fixed-work C02 | FAIL,76failed/0pending |31.965 total |
+| Refined C03 mode0 | PASS,0failed/pending |46.090 total;45.229 subprocess |
 
-[Native finite certification](theory/native-finite-range.md) supplies
-complete small exact certificates33–40, each accepted by the separately
-authored frozen C++/GMP checker, with strict two-corner equality. The
-37–40 block ran once per producer/checker case:
+The accepted C03 checker is about3.08times faster on comparable subprocess
+accounting. It recovers all76 C02 failures without a new tree, mode switch,
+producer, retry or degree. It makes333 native box calls and verifies all254
+recorded build/runtime identities. [Full independent outcome](independent-checks-C03-cheap-n32.md).
+Bounds are still weaker than the old checker on many leaves; all required
+strict predicates nevertheless pass. The first failure is retained.
+This is a known-case speed result, not a general scaling theorem.
 
-| n | Bound/corner leaves | Producer child CPU | Independent checker CPU |
-|---|---:|---:|---:|
-|37|316/2|298.236|897.769|
-|38|320/2|378.753|1049.906|
-|39|330/2|456.747|1195.500|
-|40|350/2|565.354|1366.973|
+The C03 refinement removes degree-growing harmonic evaluation using
+validated fixed-work ratio charts and sharp endpoint monotonicity. All
+three source modes have independent bounded controls; only mode0 was
+released for the full run. The original producer cost222.813CPU seconds
+has not been reduced by this checker result. A fresh MPFR producer port
+is now being developed with bounded controls only; C02's earlier bounded
+port/tightness and compile failures remain preserved.
 
-All exits are0, partitions complete, and supplied bounds verified. The
-unchanged checker also has36 corruption controls from the earlier block.
-Original33–36 commands/costs and actual concurrency-qualified wall times
-are retained in their receipts; wall time is not relabeled CPU time.
+For larger algorithmic gains, [C02 row reduction](theory/C02-row-cotangent.md)
+gives an exact-real O(n) point representation using bounded cotangent
+blocks, four retained rows and ambiguous endpoint samples. The C06 partial
+backend passed independent LP64 review:76 cases and784 exact moment checks
+in2.69CPU seconds. It is one component; it does not itself implement full
+S or whole-box/gradient/defect/corner predicates. C07 point-S integration
+is under development/review. Moving-root whole-box bounds are a separate
+mathematical task, with complexity and conditioning to be proved.
 
-The analytic line now gives an [explicit near-phase model](theory/N1-round6-near-model.md)
-with a fixed number of functions, retained cells and harmonic-block
-terms, independent of degree. For rho<=1/2 and every n>=10^6,
+## Limits, resources and next work
 
-    |S_n-M_near|<3/14000<1/4096.
+The fresh campaign has completed five coordinated rounds; C06/C07/C08
+work continues under AC's allowance of up to15. The [campaign ledger](campaign-20261106.md)
+is authoritative for round outcomes, with historical direction totals in
+[rounds](rounds.md). Next scientific priorities are the practical far
+comparison, reviewed full point-S evaluation, rigorous whole-box root
+handling and a cheaper producer. No second near-model correction is allowed.
 
-The proof includes sinc-compatible finite-h endpoint rows, the single
-periodic-jump correction, exact cutoff handling, regularized pole
-variation, central entropy/logarithm subtraction and fixed-count
-special rows. These are analytic inequalities, not fitted constants.
-All component proofs received distinct mathematical reconstruction.
-The earlier unchanged-error certificate is still specifically ruled
-out for small budgets through10^6; the correction escapes that floor.
-Its one-correction allowance is used.
+Finite bootstrap energy2–128 and its astronomical analytic tail remain
+separate results. They are unnecessary for the new actual-corner/far
+assembly and do not close their intermediate energy range. The N4/N6
+specified families failed, with scoped negative records retained. N5's
+quarter target remains OPEN; its failed particular certificate does not
+refute the target. No practical Syvert pack or completed finite bridge exists.
 
-Round7 extracts both logarithmic coefficients of this unchanged model.
-Writing r2=alpha^2+beta^2, their gaps below the corner coefficients are
-at least47r2/(48pi^2) for log^2 n and r2/(24pi^2) for log n. The
-remaining term is uniformly bounded, with no small numerical bound yet.
-The logarithmic coefficient has no linear phase cusp; a finite-degree
-cusp can remain in the residual. See the [coefficient theorem](theory/N1-round7-coefficients.md)
-and the exact [residual comparison obligation](theory/N1-round7-comparison.md).
-
-Round8's [branch helper](theory/N1-round8-jumps.md) writes that residual
-increment as a continuous bookkeeping increment plus an error<9/(2n).
-It includes every strip seam, special-row approximation, collision mark
-and half-angle cutoff; at n>=10^6 it leaves more than1/40000 for
-the continuous comparison. The [remaining modulus](theory/N1-round8-modulus.md)
-can require fractional/entropy terms as well as the finite-degree cusp.
-No constants closing that modulus or C1 are proved. This is an analytic
-decomposition of the unchanged model, with no additional correction.
-
-
-The [two-phase edge defect](theory/N5-two-phase-defect.md) proves
-lambda<S_n-1/2048 at all interior complementary vertical-edge centers,
-n>=64 and inward rho<=1/2. Thus the new model yields the independently
-reviewed [criterion](theory/near-edge-model-criterion.md):
-
-    M_near<=Lambda_c+1/4096
-    implies lambda<Lambda_c-107/3584000
-
-for those classes at n>=10^6. The uniform model inequality itself is
-unverified. In particular10^6 is a proved model-validity threshold,
-not a proved maximum-theorem threshold.
-
-## Practical finite side
-
-The separate MPFR/Arb phase route now has complete independent
-verification at known degrees17/24/32. Matched24/32 use the same
-proved common local patch and unchanged arithmetic:
-
-| n | Producer visits/leaves | Search CPU | Checker leaves/CPU |
-|---|---:|---:|---:|
-|24|2036/1020|363.070|1020/202.068|
-|32|1980/992|619.327|992/382.569|
-
-Both replays have zero failed or pending predicates. Historical17
-uses1288leaves/109.450checkerCPU-s and a different, smaller local
-patch. These observations do not prove a scaling law. The earlier
-364-failure replay and repaired NaN arithmetic finding remain preserved.
-See [overlap record](theory/N3-outward-overlap-r6.md) and exact source,
-input, build/runtime, raw-output and exit identities in the short receipts.
-
-A new [maximum-bootstrap reduction](theory/N3-bootstrap-corner.md)
-uses the unknown true global maximum in PD-T227 and absorbs it at a
-putative off-corner maximizer. Under W<=(3/4)n^4Lambda_c it permits an
-inward half-phase patch without a prior global/corner norm ratio. Fresh
-MPFR and separate GMP sweeps prove that energy premise for all127
-integers2–128. This is a cover reduction, not pointwise local descent
-before global closure. A strict complement cover requires the explicit
-new mode and independent verification recorded below. No existing acceptance is
-retroactively reinterpreted, and the finite energy is not extrapolated
-to the analytic n>=10^6 range.
-
-The new [analytic energy bound](theory/N3-uniform-energy-r8.md), independently
-reviewed, gives for all n>=32
-
-    W_n <= n^4[(21/32)Lambda_c+1,500,000,000(1+log(n+1))].
-
-It proves the unchanged3/4 premise when log n>=128,000,000,000. This
-explicit energy onset is far beyond a practical finite bridge and is
-not an argmax onset. The intermediate energy range129<=n<ceil(exp(128000000000))
-remains OPEN. The finite certifier is deliberately still restricted to
-its independently verified2–128 premise.
-
-The [explicit bootstrap certificate mode](theory/N3-bootstrap-cover-r8.md)
-now has independent mathematical/source acceptance, including exact
-boundary, malformed-partition, premise and strict-defect controls. Its
-first known-degree n32 producer completes364leaves in222.813childCPU-s,
-versus992leaves/620.093CPU-s in round6. The first independent replay checks all364leaves but rejects20bootstrap
-leaves because its projected-defect lower enclosure is zero. All other
-344leaves pass. TotalcheckerCPU136.175s, no cap or source/input change.
-This is a failed sufficient enclosure, not a counterexample or accepted
-new-mode certificate. No retry or new degree is counted; see the
-[failed replay](independent-checks-bootstrap-r8-n32.md).
-
-Round9's separately reviewed Arb refinement retains each pair's
-nonnegative/opposite-sign defect lower bound before profile aggregation,
-and preserves the old natural bounds. The original candidate then
-passes364/364leaves,0failed/0pending,exit0 on the changed backend, in
-139.405409totalcheckerCPU-s. Sources/input/supervisor and254build/runtime
-identities are unchanged after replay. The first failed receipt remains
-preserved; no producer rerun or tree change occurred.
-[Accepted replay](independent-checks-phase-r9-n32.md).
-
-| Known n32 mode | Leaves | Producer child CPU | Independent checker total CPU | Outcome |
-|---|---:|---:|---:|---|
-|Round6 pointwise patches|992|620.093|383.663|ACCEPTED|
-|Round8 bootstrap, old Arb defect|364|222.813|136.175|20 rejected predicates|
-|Same bootstrap candidate, round9 Arb defect|364|222.813 reused run|139.405|ACCEPTED|
-
-The accepted bootstrap case uses about2.8times less combined CPU and
-63percent fewer leaves than round6 at this single degree. This is a
-known-degree comparison, with no higher-degree complexity assertion.
-
-
-## Gates and remaining work
-
-| Gate | Current disposition |
-|---|---|
-|B0|PASS; exact native replay and deterministic pilot counts reconciled|
-|B1|Finite diagnostic map complete; continuous extrema not certified|
-|B2|Finite floating33/64/128 throughput/count scope passes; independent outward17/24/32 validates the method, not higher-degree scaling|
-|B3|Near-domain model/error constructed; uniform maximum comparison, far phases and full-square closure OPEN|
-|B4|Blocked: explicit N0 exists but its finite bridge is infeasible; no Syvert pack|
-|B5|Unrestricted transport reformulates the target; specified structured classes fail only in their stated scopes|
-|B6|No confirmed noncorner counterexample to PD-T099|
-
-N4/N6 broad routes remain deferred after their specified class
-obstructions. N5's true quarter-defect target is OPEN; its selected
-phase-blind certificate alone is proved insufficient. More samples
-cannot repair that particular limiting obstruction.
-
-Next work is concrete: implement validated evaluation and comparison
-of M_near, cover far phases/remaining classes and true-corner coherence,
-and assess higher-degree cost only under a fresh bounded gate after
-the accepted bootstrap calibration. The all-n energy premise remains separate. No next model
-correction or large compute is inferred from the small near error alone.
-
-## For the paper
-
-The campaign extends exact corner-argmax certification through degree40,
-constructs a uniform fixed-count near-phase primitive model, proves a
-two-phase actual-lambda defect, and validates an independent outward
-phase method at17/24/32. A maximum-bootstrap lemma enlarges the
-permitted corner region under an energy condition verified through128;
-its explicit mode now has a full separate known-degree n32 acceptance.
-Both near-profile logarithmic coefficients favor the corner, and all
-branch artifacts fit a small proved allowance. The continuous residual
-comparison remains unresolved.
-The full all-degree maximum statement remains unresolved because the
-sharp model comparison, practical far-domain/corner thresholds and
-a feasible meet-in-the-middle onset have not been certified.
-
-## Evidence and review
-
-Source code, essential compressed trees and short acceptance records are
-committed; full diagnostics/libraries remain local. The evidence index
-is [evidence-manifest.json](evidence-manifest.json). Dependency setup
-for the Arb checker is pinned in code/phase_checker/setup.py; no
-third-party packages/headers are committed. Bulk physical archival is
-pending and no Windows delivery is claimed. AC's temporary10MB allowance
-and separate-topic cleanup instruction are recorded in LOG.
-
-This is WORK, not merge readiness. Required Claude Opus5.5 xhigh audit
-remains pending; Codex supplements do not replace it. Final IDs/shared
-registry changes wait for audited preparation. Protocol history and
-finding dispositions have canonical records in LOG/linked reviews.
-
-## Fresh campaign C01 — effective tail and cheaper arithmetic
-
-The [effective global lemma](theory/C01-effective-global.md) gives
-S<=aLambda_c+10^6log(n+1) on the full phase diamond. The separately
-[proved tail assembly](theory/C01-effective-argmax.md) uses explicit
-local envelopes, all-center defects and reflection-first corner control
-to obtain N0 above, without an ineffective localization or energy premise.
-[Independent reconstruction](independent-checks-C01-effective.md).
-
-The [allclass defect](theory/C01-allclass-defect.md) now covers every
-noncorner odd center at n>=64,rho<=1/2 with Delta>1/2048; its analytic
-source guard can avoid the degree-growing projected-profile scan.
-[Review](independent-checks-C01-allclass.md).
-
-A new [central integral upper](theory/C01-near-central-upper.md) has
-explicit fractional and entropy constants. The [actual axis limit](theory/C01-near-axis-limit.md)
-proves a nonzero alpha^(3/2) term; the [scoped obstruction](theory/C01-near-quadratic-obstruction.md)
-rules out only the proposed quadratic/log modulus with vanishing linear
-allowances. These support continued sharp Q comparison; C1 remains OPEN.
-
-The [fixed-work ratio charts](theory/C01-ratio-enclosures.md) eliminate
-degree-growing finite harmonic sums. An independently reviewed Arb
-prototype adds strict lazyS and full-box analytic-defect guards. Five
-baseline box timings and new bounded tests show substantial finite
-cost reductions (n128 narrow case24.120 to1.136CPU-s), not a full-cover
-or complexity claim. The full known n32 candidate is the next gated
-validation; no additional old-tech degrees are planned.
-
-The campaign ledger records1/15 completed research rounds and continuing
-C02/C03 work. All formal Claude audit/readiness work remains pending.
+Formal **Claude Opus5.5 xhigh audit remains PENDING**. Supplementary distinct
+Astra mathematical/source checks do not replace it. PR27 remains draft
+WORK; final shared-registry application and merge readiness are pending.
+Only AC merges. Generated evidence remains under the temporary10,000,000-byte
+aggregate ceiling; major archive cleanup is a separate topic. Large raw
+outputs stay local with identities in small receipts; physical archival
+transfer is pending. Historical outcomes and failures remain in LOG,
+attempt records, frozen sources and evidence.
