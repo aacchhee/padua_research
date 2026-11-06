@@ -1,0 +1,500 @@
+{
+  "source_sha": "b4a04981d42c7cd872957facf5e3995e4096ca67",
+  "role": "supplementary independent checker, not final auditor",
+  "python": "3.12.14",
+  "mpmath": "1.3.0",
+  "M0a": {
+    "verdict": "PASS within M0a; original M0 remains UNASSESSABLE",
+    "cases": [
+      {
+        "family": "krawtchouk",
+        "N": 4,
+        "target": "NN",
+        "replay_relative_difference": "6.059137179e-210"
+      },
+      {
+        "family": "krawtchouk",
+        "N": 4,
+        "target": "step_line",
+        "replay_relative_difference": "3.565788803e-210"
+      },
+      {
+        "family": "krawtchouk",
+        "N": 16,
+        "target": "NN",
+        "replay_relative_difference": "1.312495399e-198"
+      },
+      {
+        "family": "krawtchouk",
+        "N": 16,
+        "target": "step_line",
+        "replay_relative_difference": "7.226772146e-199"
+      },
+      {
+        "family": "krawtchouk",
+        "N": 32,
+        "target": "NN",
+        "replay_relative_difference": "1.569044396e-181"
+      },
+      {
+        "family": "krawtchouk",
+        "N": 32,
+        "target": "step_line",
+        "replay_relative_difference": "7.813741778e-182"
+      },
+      {
+        "family": "hahn",
+        "N": 4,
+        "target": "NN",
+        "replay_relative_difference": "2.116651984e-209"
+      },
+      {
+        "family": "hahn",
+        "N": 4,
+        "target": "step_line",
+        "replay_relative_difference": "2.936464619e-207"
+      },
+      {
+        "family": "hahn",
+        "N": 16,
+        "target": "NN",
+        "replay_relative_difference": "5.205926807e-194"
+      },
+      {
+        "family": "hahn",
+        "N": 16,
+        "target": "step_line",
+        "replay_relative_difference": "5.222356397e-192"
+      },
+      {
+        "family": "hahn",
+        "N": 32,
+        "target": "NN",
+        "replay_relative_difference": "2.397324123e-172"
+      },
+      {
+        "family": "hahn",
+        "N": 32,
+        "target": "step_line",
+        "replay_relative_difference": "2.710067787e-170"
+      }
+    ],
+    "inputs": [
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/m0-krawtchouk.json",
+        "bytes": 64895,
+        "sha256": "07928f430459788f70a6e7a98c97141e141ba12a7773afe494fde0efbcfc6550"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/m0-krawtchouk260.json",
+        "bytes": 85806,
+        "sha256": "5af559ce227640fd1eb393a170d71052959c06539c772de4d61d172fdb9f3399"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-m0-krawtchouk.json",
+        "bytes": 73019,
+        "sha256": "60b3cca7ab99bb041b50d155139b390699b7e281a10db6a529421268714ae7d9"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/m0-hahn.json",
+        "bytes": 65218,
+        "sha256": "8c5b51484056c3d9136dde1c9536366dbf0dde4c1ebbb00e7d89c96b6200bb72"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/m0-hahn260.json",
+        "bytes": 87053,
+        "sha256": "c9da9d6ac7914e737b151fb0e41c7b7559da050e34d9abfafed1b9cd3808513e"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-m0-hahn.json",
+        "bytes": 73404,
+        "sha256": "cce52762a725650b9ae9d074e748efb6286ad7d93255b0583515440b03c30508"
+      }
+    ]
+  },
+  "small_moment_derivative": [
+    {
+      "family": "krawtchouk",
+      "N": 4,
+      "max_absolute_value_difference": "1.05223126110054677790855498390634921436918753826288420195040472752696273225511147548781947759376060882651767031806776325191339625732261516115018987711484915842869898027741191322368e-178",
+      "max_absolute_derivative_difference": "4.61509293846662720083824594647584311362283172808463501197389766825819573038151429720742928685062769270457348838456911385730141510134119882784783194336105521295687533968612633335215e-176"
+    },
+    {
+      "family": "hahn",
+      "N": 4,
+      "max_absolute_value_difference": "1.12203609619316750568148939663056873103099686614835996539070176030285321010561697410145101737200686622140023749655452318307561548083480611397513340682410722348363464337640512123736e-177",
+      "max_absolute_derivative_difference": "1.40550382404584366361228927224489061186954498554944465553898023147864894784975000123241711868152920065815363209212071826562364342767973964803978045089359030468285623700308288893825e-175"
+    }
+  ],
+  "C4_interface": {
+    "developer_cases": [
+      {
+        "family": "krawtchouk",
+        "N": 4,
+        "exact_evaluation_relation": true,
+        "exact_similarity_roundtrip": true,
+        "exact_affine_identity": true
+      },
+      {
+        "family": "krawtchouk",
+        "N": 6,
+        "exact_evaluation_relation": true,
+        "exact_similarity_roundtrip": true,
+        "exact_affine_identity": true
+      },
+      {
+        "family": "krawtchouk",
+        "N": 8,
+        "exact_evaluation_relation": true,
+        "exact_similarity_roundtrip": true,
+        "exact_affine_identity": true
+      },
+      {
+        "family": "hahn",
+        "N": 4,
+        "exact_evaluation_relation": true,
+        "exact_similarity_roundtrip": true,
+        "exact_affine_identity": true
+      },
+      {
+        "family": "hahn",
+        "N": 6,
+        "exact_evaluation_relation": true,
+        "exact_similarity_roundtrip": true,
+        "exact_affine_identity": true
+      },
+      {
+        "family": "hahn",
+        "N": 8,
+        "exact_evaluation_relation": true,
+        "exact_similarity_roundtrip": true,
+        "exact_affine_identity": true
+      }
+    ],
+    "additional_cases": [
+      {
+        "family": "krawtchouk",
+        "N": 5,
+        "negative_affine_and_nonuniform_gauge": true
+      },
+      {
+        "family": "hahn",
+        "N": 5,
+        "negative_affine_and_nonuniform_gauge": true
+      }
+    ],
+    "scope": "local exact interface only; no external IEP-MOP fidelity"
+  },
+  "C1": {
+    "exact_weighted_median_cases": 135,
+    "derivative_rows": [
+      {
+        "family": "krawtchouk",
+        "mode": "scalar",
+        "N": 4,
+        "maximum_scaled_derivative_difference": "1.1431177e-200"
+      },
+      {
+        "family": "krawtchouk",
+        "mode": "scalar",
+        "N": 8,
+        "maximum_scaled_derivative_difference": "8.9030116e-200"
+      },
+      {
+        "family": "krawtchouk",
+        "mode": "scalar",
+        "N": 16,
+        "maximum_scaled_derivative_difference": "9.7608414e-197"
+      },
+      {
+        "family": "krawtchouk",
+        "mode": "terminal",
+        "N": 4,
+        "maximum_scaled_derivative_difference": "7.8466862e-199"
+      },
+      {
+        "family": "krawtchouk",
+        "mode": "terminal",
+        "N": 8,
+        "maximum_scaled_derivative_difference": "1.1106711e-193"
+      },
+      {
+        "family": "krawtchouk",
+        "mode": "terminal",
+        "N": 16,
+        "maximum_scaled_derivative_difference": "1.3080764e-184"
+      },
+      {
+        "family": "hahn",
+        "mode": "scalar",
+        "N": 4,
+        "maximum_scaled_derivative_difference": "6.9403572e-201"
+      },
+      {
+        "family": "hahn",
+        "mode": "scalar",
+        "N": 8,
+        "maximum_scaled_derivative_difference": "5.7115057e-199"
+      },
+      {
+        "family": "hahn",
+        "mode": "scalar",
+        "N": 16,
+        "maximum_scaled_derivative_difference": "1.7155918e-194"
+      },
+      {
+        "family": "hahn",
+        "mode": "terminal",
+        "N": 4,
+        "maximum_scaled_derivative_difference": "3.2424916e-197"
+      },
+      {
+        "family": "hahn",
+        "mode": "terminal",
+        "N": 8,
+        "maximum_scaled_derivative_difference": "2.6712471e-191"
+      },
+      {
+        "family": "hahn",
+        "mode": "terminal",
+        "N": 16,
+        "maximum_scaled_derivative_difference": "2.4681795e-180"
+      }
+    ],
+    "artifacts": [
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-c1-scalar-krawtchouk.json",
+        "bytes": 16984,
+        "sha256": "978ba972ac72719d46b724117762cf16c1dbb4eab3c9328ddbccb3c667b2a0d3"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-c1-terminal-krawtchouk.json",
+        "bytes": 11059,
+        "sha256": "40c2752594692add2e80ca02333d28a1b9f2d0c92131c9c10aa70c3c69d84c1d"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-c1-scalar-hahn.json",
+        "bytes": 21107,
+        "sha256": "28a6552d6b79d86ae019b6ab3446c74997c04b02e895e98d7c97fa5d82a70166"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-c1-terminal-hahn.json",
+        "bytes": 12626,
+        "sha256": "5cca81dddc005806150a1e30770f128c638a1e9e1797bc32071ae2c2f7a2349d"
+      }
+    ]
+  },
+  "C3": {
+    "cases": [
+      {
+        "family": "krawtchouk",
+        "N": 7,
+        "A_LU_ratio": 0.050854186,
+        "C4_ratio": 5.68758092
+      },
+      {
+        "family": "krawtchouk",
+        "N": 14,
+        "A_LU_ratio": 0.118650409,
+        "C4_ratio": 6.83867267
+      },
+      {
+        "family": "krawtchouk",
+        "N": 19,
+        "A_LU_ratio": 1.13269396,
+        "C4_ratio": 3.48094679
+      },
+      {
+        "family": "hahn",
+        "N": 7,
+        "A_LU_ratio": 0.469315695,
+        "C4_ratio": 18.0885063
+      },
+      {
+        "family": "hahn",
+        "N": 14,
+        "A_LU_ratio": 0.0763041593,
+        "C4_ratio": 40533.1034
+      },
+      {
+        "family": "hahn",
+        "N": 19,
+        "A_LU_ratio": 0.0633975898,
+        "C4_ratio": 1.22574351
+      }
+    ],
+    "displayed_nine_digit_cells_agree": true,
+    "artifacts": [
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-c3-grid.json",
+        "bytes": 3358,
+        "sha256": "11329d21cef4f54b117f263ef1fc23d052e8b6219d6153e035e2004083480592"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-c3-grid-raw.json",
+        "bytes": 321554,
+        "sha256": "ce0b2bbcf39b080d8d01bfd74c1bd3a65e53f0542970040a43e4dc51415af9d3"
+      }
+    ],
+    "scope": "six selected cases, not the full grid or a stability theorem"
+  },
+  "C2": {
+    "exact_terminal_rows": 140,
+    "exact_summed_generating_coefficients": 35,
+    "sizes": "N2..8",
+    "parameters": [
+      "1/5,7/10",
+      "2/5,1/2",
+      "1/2,3/5",
+      "3/5,4/5",
+      "1/10,1/5"
+    ],
+    "scope": "equations (8),(11), coefficient positivity where p2>=1/2; no all-N computer proof"
+  },
+  "C4_external": {
+    "archive": {
+      "path": "/workspace/attachments/d3b8457a-2c90-4d56-a9a3-f05ea55b5826/IEP-MOP-main.zip",
+      "bytes": 1020330,
+      "sha256": "cdd0e98d2b411f24cfcecb49d83e16f9d50a7622a0d4f0d3eb17eb334a405145"
+    },
+    "archive_members_verified": 27,
+    "extracted_inventory_sha256": "28716143d2c310840e2dbe9dfa3c901f6571d4912d64ee361714d7983ce8bb73",
+    "M2": {
+      "reference_relative": 7.184849749441866e-17,
+      "solver_relative": {
+        "CORE": 7.472429294751293e-15,
+        "KRYL": 5.301648865221258e-12,
+        "REORTH": 7.25860359548983e-15
+      },
+      "scope": "topic N6 Krawtchouk; exact generator and CORE within threshold"
+    },
+    "M4": {
+      "paper_N": 10,
+      "family": "kravchuk",
+      "CORE_relative": 2.691214553706643e-10,
+      "log10_ratio_to_paper": -0.40581775238088774
+    },
+    "outputs": [
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-c4-m2.json",
+        "bytes": 7923,
+        "sha256": "93494d1d7a8e12a32a3dcd42a0f3e9d901ae785b067ea97af5d0884aac6543cc"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-g5/ours_kravchuk.dat",
+        "bytes": 3505,
+        "sha256": "22d7aecaed024190c18dd7ac2651b02eb0418279bd288936d1d1c9b35c028f3b"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-g5/ours_hahn.dat",
+        "bytes": 3505,
+        "sha256": "0d442bcf246fb245847a3e8705908993afdf1acb45adbe51e076be8e5067eb1e"
+      }
+    ]
+  },
+  "C1_fit": {
+    "signed_OLS_intervals": {
+      "krawtchouk_NN": [
+        9.181247189817817,
+        10.370242832672902
+      ],
+      "krawtchouk_step": [
+        9.745754716214437,
+        9.755462082754066
+      ],
+      "hahn_NN": [
+        10.355427565711057,
+        13.261407411021795
+      ],
+      "hahn_step": [
+        11.68572646991394,
+        11.765131365836579
+      ]
+    },
+    "intervals_verified": 16,
+    "scope": "all integer sizes32..64; numerical endpoint evaluations, not outward enclosures"
+  },
+  "C2_sharp_jets": {
+    "exact_polynomials": 77,
+    "exact_differentiated_jets": 252,
+    "sizes": "N2..7",
+    "scope": "all indices through M; simultaneous node/weight jets (6), weighted differentiation (12)"
+  },
+  "final_replays": {
+    "matrix_norms_from_exact_moments": 6,
+    "C4_comparison_cases": 116,
+    "C1_error_diagnostic_rows": 348,
+    "C4_binary64_matches": 58,
+    "Hahn_rerun_counts": {
+      "normality_systems": 273,
+      "kernel_determinants": 219,
+      "cross_expectations": 54,
+      "terminal_derivatives": 9
+    },
+    "H_anchor_lift_exact_cases": 6,
+    "artifacts": [
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-c4-comparison.json",
+        "bytes": 331793,
+        "sha256": "00a26b2e6a382f727ba235f7435c5aef3e5023b1b4fda1993a2e9910774b79de"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-c2-hahn.json",
+        "bytes": 3357,
+        "sha256": "801d0700665e60005465a23ffdeff9ee78b87e9a4ad5117008d8f320b81a090e"
+      },
+      {
+        "path": "/tmp/nn-mop-conditioning-20261106/independent-c4-lift.json",
+        "bytes": 1260,
+        "sha256": "02339959b71d12ff6dbb3b4ba940f35203c97a8cb252b8ebb28533fecb30ea24"
+      }
+    ]
+  },
+  "source_files": [
+    {
+      "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/independent_check.py",
+      "bytes": 23496,
+      "sha256": "7a30297a3b9f6530fa83dc8a3463062a925f4cdecccc1a4034b53c0d379c9ef3"
+    },
+    {
+      "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/replay_gate.py",
+      "bytes": 1674,
+      "sha256": "23d52563f1a444d3465657c5ce1994d19bc5eab2f7735a37d3de895775b8744a"
+    },
+    {
+      "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c4_normalization.py",
+      "bytes": 4494,
+      "sha256": "6ffe45a445860db86a74b6d911d0055fa4773d82b88535be6e136701958a9182"
+    },
+    {
+      "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c1_metrics.py",
+      "bytes": 10683,
+      "sha256": "c6625a4f20e51444bfa14dc5a5ad9a782adfce5ab9d658a229494aae44dbc1e5"
+    },
+    {
+      "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c3_grid.py",
+      "bytes": 10097,
+      "sha256": "c14b7c67418a5350000083169ec47666d2b01a22008be67d73ec509afed92638"
+    },
+    {
+      "path": "/workspace/padua_research/topics/nn-mop-conditioning-20261106/code/c4_external.m",
+      "bytes": 1942,
+      "sha256": "a32f5babd64ae4d07eb9543ae13fa8453c5c3ce66708e64033c106392131fde2"
+    },
+    {
+      "path": "/workspace/padua_research/topics/nn-mop-stability-20261105/code/conditioning.py",
+      "bytes": 10152,
+      "sha256": "11c4b49be8541697e74d383b908db47b42480e11c60f92c35821340eacea929c"
+    },
+    {
+      "path": "/workspace/padua_research/topics/nn-mop-iep-20261103/code/c4_float_baseline.py",
+      "bytes": 7888,
+      "sha256": "9ce76ae88fb798f73127f75819bcdfb6c7bffb0d9cd092d70957164cb9b6a2e8"
+    },
+    {
+      "path": "/workspace/padua_research/topics/nn-mop-iep-20261103/audit-01/claude_layer_recursion_check.py",
+      "bytes": 9860,
+      "sha256": "13d59af82304a712d792c6e2f96c76f42ec732575dcfa3452a92295071c011b3"
+    }
+  ]
+}

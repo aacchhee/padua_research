@@ -1,0 +1,96 @@
+{
+  "cases": [
+    {
+      "N": 2,
+      "attained_relative_response": "9/5",
+      "b1_scale": "1/9",
+      "b2_scale": "1/9",
+      "proved_lower": "2/75",
+      "terminal_integer_b_derivative_abs": "1/10",
+      "weights_sha256": "9803a7ae61062dd7671ee15cf0eb0286855d7db379f1c7a0551f96a9e7eb8d3f"
+    },
+    {
+      "N": 3,
+      "attained_relative_response": "27/10",
+      "b1_scale": "73/495",
+      "b2_scale": "1/9",
+      "proved_lower": "4/1575",
+      "terminal_integer_b_derivative_abs": "3/10",
+      "weights_sha256": "6fd549335a43761fdc79804e6baf67a3480e3a2e8c253f4b9666b1708a49a0f2"
+    },
+    {
+      "N": 4,
+      "attained_relative_response": "297/28",
+      "b1_scale": "79/495",
+      "b2_scale": "1/9",
+      "proved_lower": "4/6615",
+      "terminal_integer_b_derivative_abs": "99/56",
+      "weights_sha256": "b8be4f487e4cfff7a620f2c2c304f7326c8925d0dec72c92f0bb6fd92a689deb"
+    },
+    {
+      "N": 5,
+      "attained_relative_response": "3861/160",
+      "b1_scale": "20/117",
+      "b2_scale": "1/9",
+      "proved_lower": "4/17325",
+      "terminal_integer_b_derivative_abs": "429/80",
+      "weights_sha256": "eea0ee215dae4c0630f8c47e50c939cc7fb60cc289e35b0f347dc4b08513a7dd"
+    },
+    {
+      "N": 6,
+      "attained_relative_response": "3861/80",
+      "b1_scale": "37/195",
+      "b2_scale": "1/9",
+      "proved_lower": "16/135135",
+      "terminal_integer_b_derivative_abs": "429/32",
+      "weights_sha256": "5138e547ea74fcc41615789edc6947fe8923690c3d43563d67b49adef7ef7ec8"
+    },
+    {
+      "N": 7,
+      "attained_relative_response": "722007/7840",
+      "b1_scale": "71/351",
+      "b2_scale": "1/9",
+      "proved_lower": "32/429975",
+      "terminal_integer_b_derivative_abs": "240669/7840",
+      "weights_sha256": "8249489cb5fb26c29169ebafebe34bb5c0d3b2436fe36eb24de2ac9cbbf469cc"
+    },
+    {
+      "N": 8,
+      "attained_relative_response": "5404113/35840",
+      "b1_scale": "173/819",
+      "b2_scale": "8/63",
+      "proved_lower": "16/294525",
+      "terminal_integer_b_derivative_abs": "600457/8960",
+      "weights_sha256": "c42c79d5b99e5d4f6c12a53c5c7445660fc9742e21a400fae375cdcaaf65a149"
+    },
+    {
+      "N": 9,
+      "attained_relative_response": "163761/640",
+      "b1_scale": "17/78",
+      "b2_scale": "5/36",
+      "proved_lower": "64/1438965",
+      "terminal_integer_b_derivative_abs": "54587/384",
+      "weights_sha256": "2a4d70eafcfa243514d383d56cf80da698c3eb1511b12e086d3b4617cae47167"
+    },
+    {
+      "N": 10,
+      "attained_relative_response": "1136637/2560",
+      "b1_scale": "1543/6783",
+      "b2_scale": "4/27",
+      "proved_lower": "512/12837825",
+      "terminal_integer_b_derivative_abs": "378879/1280",
+      "weights_sha256": "32b14c48dd1ab6f206a7d94ea5642f3e1ea35cd4a099560b9398c6f1a0bbe956"
+    }
+  ],
+  "cross_expectations": 54,
+  "elapsed_seconds": 0.283720054000014,
+  "helper_sha256": "e4394dac64adafe25721384d01dcac9dd13ec6333831119240128782423428a9",
+  "kernel_determinants": 219,
+  "normality_systems": 273,
+  "python": "3.12.14",
+  "rules_local_sha": "76ba4214b100c86a44941f5e9a662ce9ce48efb8",
+  "source_sha256": "c0d3328c7e4ca9034fe2c415893c953d5da62ef1c4342c072a97484641ac6c10",
+  "status": "VERIFIED exact finite identities; written all-N proofs separate",
+  "terminal_derivatives": 9,
+  "topic_input_sha": "b4a04981d42c7cd872957facf5e3995e4096ca67"
+}

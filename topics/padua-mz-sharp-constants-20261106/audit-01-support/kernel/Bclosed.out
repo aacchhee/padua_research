@@ -1,0 +1,9 @@
+# OPENBLAS_NUM_THREADS=4 python3 Bclosed.py 40 60 80 120   (Claude auditor, 2026-11-06; MEASURED float, midpoint Nystrom, no enclosure)
+# columns: n (grid 1/n), lambda_min, lambda_max, retained cells
+40 -0.12063208865826468 0.04239189491637033 780
+60 -0.1252208209863168 0.043583584978149355 1772
+80 -0.12694065200783633 0.043979077683585485 3160
+120 -0.12921068413198472 0.04454457253495518 7144
+# 3-point fit c+A/n+B/n^2 (n=60,80,120): lambda_min -> -0.1354, lambda_max -> 0.0462; 4-point least squares: -0.1329, 0.0454
+# schl1d_b.py (adaptive 1D check of S_alt): 0.03851171822 vs series sum_j e_j(-1)^j c_j(u)c_j(v) = 0.03851166446
+# pointwise smoothed-series checks (a,b)=(0.3,0.6),(0.2,0.25),(0.7,0.9),(0.95,0.99): S_all matches 2K(m)/(pi^2(a+b)) to 1e-11 at J=2e5; S_alt=0 (<1e-13) for a+b<1

@@ -1,0 +1,20 @@
+{
+  "family": "krawtchouk",
+  "topic_N": 6,
+  "paper_N": 5,
+  "metric": "relative spectral matrix norm in integer monic coordinates",
+  "reference_relative": 8.657548935371719e-17,
+  "solver_relative": {
+    "CORE": 7.483383125034624e-15,
+    "KRYL": 5.301614745720932e-12,
+    "REORTH": 7.272758880382322e-15
+  },
+  "M2": "PASS",
+  "exploratory_all_solvers_1e-12": "FAIL; stronger than M2; KRYL numerical forward error",
+  "fidelity_rule": "reconstruction vs pinned exact-generator output on one configuration; selected CORE also within threshold",
+  "hahn_confirmation": {
+    "N": 6,
+    "reference_relative": 4.319013687193781e-17,
+    "passed": true
+  }
+}

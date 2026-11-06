@@ -1,0 +1,264 @@
+{
+  "status": "MEASURED",
+  "preregistration_commit": "18992e1e159ff0f8af3b8b235e837e14ca9a6c2f",
+  "fit_model": "lambda_max-1=c0+a(Nref/N)^2+b(Nref/N)^2 log(N/Nref); columns scaled to unit2norm, unweighted SVD",
+  "started_utc": "2026-11-06T11:48:53.225706+00:00",
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/S4_k3_fit.py",
+    "--raw",
+    "/tmp/sharp-S4/raw-cc-scan.json",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/check-fits-k3.json"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "script_sha256": "c360fd5bf6f4494028a47e114f35cdc7b948de434aa55f8522794038722c9825",
+  "proposal_sha256": "26a8dc6f0943fa76abfa9aecbd2d22574bfa94d13bc7453cd6fb9a8c409f9177",
+  "raw_receipt": {
+    "path": "/tmp/sharp-S4/raw-cc-scan.json",
+    "sha256": "7ce16e5c61fb82fe1fc4125bbd9570fdc7579db7aa139cd116b4807322f500f2",
+    "bytes": 55192
+  },
+  "results": {
+    "even": {
+      "windows": {
+        "A_j8_to14": {
+          "Ns": [
+            1600,
+            2262,
+            3200,
+            4526,
+            6400,
+            9050,
+            12800
+          ],
+          "Nref": 1600,
+          "coefficient_names": [
+            "c0",
+            "a",
+            "b"
+          ],
+          "coefficients": [
+            0.004436973437296955,
+            3.175279363264075e-08,
+            -1.8924176062524638e-08
+          ],
+          "fitted_limit": 1.0044369734372969,
+          "column_scales": [
+            2.6457513110645907,
+            1.154804440072278,
+            0.29735870736600073
+          ],
+          "scaled_singular_values": [
+            1.5148119784954623,
+            0.755709122757324,
+            0.3663992243278078
+          ],
+          "scaled_condition_2": 4.134320920778477,
+          "rank": 3,
+          "residual_rms": 2.1528541639949225e-09,
+          "max_absolute_residual": 4.19717166230682e-09,
+          "residual_threshold": 1e-07,
+          "window_usable": true,
+          "observed_lambda_max_minus1": [
+            0.004437005876541944,
+            0.004436982950461799,
+            0.004436982293357206,
+            0.00443697312765412,
+            0.0044369747807346815,
+            0.0044369729515081335,
+            0.004436972803667061
+          ],
+          "fit_residuals": [
+            6.864513566948172e-10,
+            -3.095288667737117e-09,
+            4.19717166230682e-09,
+            -1.8186451199164733e-09,
+            9.985430347164703e-10,
+            -4.533355444508169e-10,
+            -5.148967033991037e-10
+          ]
+        },
+        "B_j15_to20": {
+          "Ns": [
+            18102,
+            25600,
+            36204,
+            51200,
+            72408,
+            102400
+          ],
+          "Nref": 18102,
+          "coefficient_names": [
+            "c0",
+            "a",
+            "b"
+          ],
+          "coefficients": [
+            0.004436972294656659,
+            2.4025287370114695e-10,
+            -1.6665499443820693e-10
+          ],
+          "fitted_limit": 1.0044369722946567,
+          "column_scales": [
+            2.449489742783178,
+            1.1545612691925458,
+            0.29561300384418426
+          ],
+          "scaled_singular_values": [
+            1.5314133659621727,
+            0.7510624792843098,
+            0.301128302827405
+          ],
+          "scaled_condition_2": 5.085584289431337,
+          "rank": 3,
+          "residual_rms": 1.7899031809716297e-11,
+          "max_absolute_residual": 3.2511175175609086e-11,
+          "residual_threshold": 1e-08,
+          "window_usable": true,
+          "observed_lambda_max_minus1": [
+            0.004436972539707096,
+            0.004436972363424552,
+            0.004436972358351943,
+            0.004436972287564123,
+            0.004436972302534148,
+            0.004436972286475216
+          ],
+          "fit_residuals": [
+            4.7975625208640515e-12,
+            -2.2480409027358927e-11,
+            3.2511175175609086e-11,
+            -1.5464951368115987e-11,
+            7.301238606760574e-12,
+            -6.664632387631819e-12
+          ]
+        }
+      },
+      "absolute_intercept_window_difference": 1.1426402046765816e-09,
+      "window_agreement_pass": true
+    },
+    "odd": {
+      "windows": {
+        "A_j8_to14": {
+          "Ns": [
+            1601,
+            2263,
+            3201,
+            4527,
+            6401,
+            9051,
+            12801
+          ],
+          "Nref": 1601,
+          "coefficient_names": [
+            "c0",
+            "a",
+            "b"
+          ],
+          "coefficients": [
+            0.00443697342195852,
+            2.8415063837127092e-09,
+            -1.8699243449228618e-08
+          ],
+          "fitted_limit": 1.0044369734219585,
+          "column_scales": [
+            2.6457513110645907,
+            1.1549327603361175,
+            0.29740900555618766
+          ],
+          "scaled_singular_values": [
+            1.5148787719580343,
+            0.7556282883177395,
+            0.3662897707620601
+          ],
+          "scaled_condition_2": 4.13573867707622,
+          "rank": 3,
+          "residual_rms": 2.1435119098030903e-09,
+          "max_absolute_residual": 4.178728636554385e-09,
+          "residual_threshold": 1e-07,
+          "window_usable": true,
+          "observed_lambda_max_minus1": [
+            0.004436976944007798,
+            0.0044369685335123865,
+            0.004436975070611915,
+            0.004436969516477429,
+            0.004436972976207931,
+            0.004436972049110199,
+            0.004436972351380852
+          ],
+          "fit_residuals": [
+            6.805428946071723e-10,
+            -3.071787377413593e-09,
+            4.178728636554385e-09,
+            -1.8298952457473927e-09,
+            9.976256348798174e-10,
+            -4.482567346822397e-10,
+            -5.069577821772975e-10
+          ]
+        },
+        "B_j15_to20": {
+          "Ns": [
+            18103,
+            25601,
+            36205,
+            51201,
+            72409,
+            102401
+          ],
+          "Nref": 18103,
+          "coefficient_names": [
+            "c0",
+            "a",
+            "b"
+          ],
+          "coefficients": [
+            0.004436972298507682,
+            1.0578507664723736e-11,
+            -1.9073429442128265e-10
+          ],
+          "fitted_limit": 1.0044369722985076,
+          "column_scales": [
+            2.449489742783178,
+            1.1545725905573236,
+            0.29561721782591044
+          ],
+          "scaled_singular_values": [
+            1.5314189796382933,
+            0.7510550059825439,
+            0.3011183933142755
+          ],
+          "scaled_condition_2": 5.085770293812509,
+          "rank": 3,
+          "residual_rms": 1.648182711497541e-11,
+          "max_absolute_residual": 3.0419591325048234e-11,
+          "residual_threshold": 1e-08,
+          "window_usable": true,
+          "observed_lambda_max_minus1": [
+            0.004436972313299314,
+            0.004436972250554838,
+            0.0044369722985198035,
+            0.004436972259757699,
+            0.0044369722878170315,
+            0.004436972284175056
+          ],
+          "fit_residuals": [
+            4.213124640828347e-12,
+            -2.0191154304072256e-11,
+            3.0419591325048234e-11,
+            -1.528258682798045e-11,
+            5.174880489400291e-12,
+            -4.333847516968525e-12
+          ]
+        }
+      },
+      "absolute_intercept_window_difference": 1.1234508878743554e-09,
+      "window_agreement_pass": true
+    }
+  },
+  "final_window_absolute_parity_difference": 3.850919583214818e-12,
+  "parity_agreement_pass": true,
+  "numerical_fit_usability": "USABLE",
+  "K3_model_comparison": "PENDING S2 model norm estimate; no comparison executed",
+  "alternate_fits_executed": false
+}

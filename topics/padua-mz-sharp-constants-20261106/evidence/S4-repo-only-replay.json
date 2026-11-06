@@ -1,0 +1,33 @@
+{
+  "status": "MEASURED",
+  "scope": "fresh directory containing only committed fit scripts, helper, proposal, essential42row data; no full raw copied",
+  "essential_sha256": "7e18253a25fb8ab3b78389ef444c8014313b0d4231b6fb0c2467aaa062edacfb",
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/tmp/S4-repo-only/topics/padua-mz-sharp-constants-20261106/code/S4_k1_fit.py",
+        "--raw",
+        "/tmp/S4-repo-only/topics/padua-mz-sharp-constants-20261106/evidence/S4-essential-cc.json",
+        "--output",
+        "/tmp/S4-repo-only/topics/padua-mz-sharp-constants-20261106/evidence/replayed-k1.json"
+      ],
+      "returncode": 0,
+      "numeric_results_exactly_equal": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/tmp/S4-repo-only/topics/padua-mz-sharp-constants-20261106/code/S4_k3_fit.py",
+        "--raw",
+        "/tmp/S4-repo-only/topics/padua-mz-sharp-constants-20261106/evidence/S4-essential-cc.json",
+        "--output",
+        "/tmp/S4-repo-only/topics/padua-mz-sharp-constants-20261106/evidence/replayed-k3.json"
+      ],
+      "returncode": 0,
+      "numeric_results_exactly_equal": true
+    }
+  ],
+  "workdir": "/tmp/S4-repo-only/topics/padua-mz-sharp-constants-20261106",
+  "limitation": "Same installed Python/NumPy environment, separate file tree; not independent-agent execution."
+}

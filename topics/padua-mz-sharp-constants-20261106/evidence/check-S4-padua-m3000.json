@@ -1,0 +1,102 @@
+{
+  "status": "MEASURED",
+  "source_head": "2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861",
+  "scan_preregistration_commit": "ec52c16569ea959dfe682fcd7985378a2ef1cd42",
+  "command_argv": [
+    "topics/padua-mz-sharp-constants-20261106/code/check_S4_padua.py",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/check-S4-padua-m3000.json"
+  ],
+  "cwd": "/workspace/sharp-work",
+  "started_utc": "2026-11-06T12:11:20.419114+00:00",
+  "pid": 5918,
+  "wrapper_sha256": "25ea2ab9cb046645948c4b905b43a11ab48acc8c1e3448b4bafa0bb512ef78f5",
+  "scan_sha256": "a392135e3a538d90f3d368f8172facabf5c63ab9f941cd0aba2727e5fbe7773b",
+  "operator_sha256": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+  "frozen_code_sha256": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+  "proposal_sha256": "3fc44adc5470e7ab9889fa218fc8b3dd14f6d83895de3638531717213dd6c59c",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "independence": "Separate process and seed 20261107; frozen solver/operator reused. Only matvec progress printing is added.",
+  "residual_guard": "residual <= 1e-8*max(1,abs(value)); finite value and residual required",
+  "limits": {
+    "degrees": [
+      3000
+    ],
+    "extreme": "minimum",
+    "maximum_matvecs": 500,
+    "wall_seconds": 21600,
+    "peak_rss_gib": 6
+  },
+  "results": [
+    {
+      "m": 3000,
+      "n": 2999,
+      "extreme": "minimum",
+      "started_utc": "2026-11-06T12:11:20.421533+00:00",
+      "status": "COMPLETED",
+      "seed": 20261107,
+      "ncv": 40,
+      "tol": 2e-11,
+      "matvec_cap": 500,
+      "wall_cap_seconds": 21600,
+      "dimension": 4501500,
+      "weight_sum": 3.9999999999999996,
+      "negative_weight_count": 6,
+      "negative_weight_mass": 1.1161169679531e-12,
+      "value": -0.08132259681241015,
+      "residual_2_float": 1.2445327705887972e-12,
+      "residual_guard_pass": true,
+      "matvecs": 102,
+      "seconds": 648.4185477430001,
+      "cpu_seconds": 648.1276188730001,
+      "peak_rss_kib": 2145492
+    }
+  ],
+  "completed": true,
+  "finished_utc": "2026-11-06T12:22:08.847069+00:00",
+  "developer_comparison": {
+    "status": "MATCHED; measured changed-seed agreement, not an enclosure",
+    "checked_utc": "2026-11-06T12:46:49.902632+00:00",
+    "source_path": "/tmp/sharp-S4/padua-minima-raw.json",
+    "source_snapshot_sha256": "1119a0e9eadc3aedddaaffba952c468e903203bb6f7d0a5bdf25d239514dc389",
+    "source_snapshot_scope": "15/16 rows complete; m=3001 still running. This hash identifies the actual read snapshot, not the future complete file.",
+    "source_hashes_match": true,
+    "solver_settings_match_except_seed": true,
+    "both_residual_guards_pass": true,
+    "absolute_value_difference": 2.7755575615628914e-17,
+    "relative_value_difference": 3.4130213130864156e-16,
+    "developer_row": {
+      "m": 3000,
+      "n": 2999,
+      "extreme": "minimum",
+      "started_utc": "2026-11-06T12:35:33.960437+00:00",
+      "status": "COMPLETED",
+      "seed": 20261106,
+      "ncv": 40,
+      "tol": 2e-11,
+      "matvec_cap": 500,
+      "wall_cap_seconds": 21600,
+      "dimension": 4501500,
+      "weight_sum": 3.9999999999999996,
+      "negative_weight_count": 6,
+      "negative_weight_mass": 1.1161169679531e-12,
+      "value": -0.08132259681241012,
+      "residual_2_float": 1.4226775045102327e-12,
+      "residual_guard_pass": true,
+      "matvecs": 102,
+      "seconds": 488.8991811270007,
+      "cpu_seconds": 488.6149479129997,
+      "peak_rss_kib": 2180004
+    },
+    "scope": "Only m=3000 minimum comparison; no partial-grid fit or new solve."
+  },
+  "shell_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-mz-sharp-constants-20261106/code/check_S4_padua.py --output topics/padua-mz-sharp-constants-20261106/evidence/check-S4-padua-m3000.json"
+}

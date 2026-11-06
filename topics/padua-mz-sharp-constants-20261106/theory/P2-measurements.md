@@ -1,0 +1,208 @@
+# PD-T543 — finite-m two-mode measurements
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-P2-01` → `PD-T543`; statements, original registrations and historical dispositions are preserved.
+
+ID kind: PD-T.
+Aliases: second-mode projector; compressed signed branch difference;
+B_K second-mode calibration.
+Split from: supporting measured test for PD-T381, not a new target conjunct.
+Split into: none.
+
+## Statement
+
+In the prospectively fixed floating computation described in
+[protocol](../ideas/P2-protocol.md), the one-corner B_K second-eigenvalue
+proxy at K128, triangle Gauss order128, is b2=-0.0955298083997758.
+Its K64→128 change is7.78663282741121e-8, and repeating K128 at order160
+changes it by3.0531133177191805e-16. The prescribed calibration tests pass.
+The independently assembled small dense versus tensor-form comparisons
+at m12/13 and existing audit m400 overlap pass their registered guards.
+At exactly m1600,1601,3000,3001, all registered numerical/pairing guards
+and all fresh P2 prediction tests pass. Mode2 projector weights range
+0.9589539148–0.9680259907; distances of L(qmin) to its second doublet
+range0.0028898546–0.0036209251. The even/odd compressed-branch decrease
+rates are0.03844594388456076/0.03759101681732508 per unit logR, within
+0.038±0.006. Physical-logm Qmin secants are
+-0.09212119390214092/-0.09246210231483683; their distances from b2 are
+0.003408614497634882/0.003067706084938976, both below0.006.
+Outcome: **PASS_FINITE_TEST**, solely in this four-case measured scope.
+
+## Definitions
+
+Q_m is the complete signed Lebesgue Padua rule of mass4 on Pi_(m-1),
+represented in the continuously orthonormal product-Legendre basis.
+L_m is exactly the S3-02 finite form, R=floor(m/2). Mode2 means the
+second ordered L doublet, columns2/3 with zero-based indexing. Its weight
+is the squared norm of the orthogonal doublet projection. A branch value
+means the smaller eigenvalue of Q compressed to one L doublet.
+B_K is precisely S3-03, single corner, H=L²(D,ab da db); its second
+ordered eigenvalue is b2. The two finite active corners duplicate modes.
+
+## Assumptions and status
+
+Overall status: **MEASURED**. Binary64 NumPy/SciPy calculations only;
+quadrature, residuals and solver tolerances are not rigorous enclosures.
+Scope: calibration K16/32/64/128, orders128/160, validation12/13,
+audit overlap400, and four main cases1600/1601/3000/3001. No claim for
+all intermediate integers or larger m is asserted. Candidate disposition:
+retained successful supplied finite test; no negative result or PD-N.
+
+## Depends on
+
+S3-02 exact definitions and S3-03 B_K definition; frozen definitions,
+g1_spectral signed DCT weights and mz2d_spectra independent Chebyshev
+weight construction. Audit-01 A2/P2 supplies the hypothesis and existing
+m400 receipt. No measured proxy is a premise of the exact S3 theorem.
+
+## Evidence and checks
+
+Producer [P2_modes.py](../code/P2_modes.py), code SHA256
+8e15fe58b19a1ef1a2ff71da80d18de04349d90081e02a885bcbb38b143d1161.
+Protocol published d03e74dcf94020ba26d9fae84d3ff6c5519db901 before
+all P2 calculations; its receipt hash is recorded in every output.
+All code/input identities, commands, numerical packages and thread settings
+are in [calibration](../evidence/P2-b2-calibration.json),
+[validation](../evidence/P2-validation.json), and
+[overlap](../evidence/P2-overlap400.json). Run commands from repository root:
+
+    env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-mz-sharp-constants-20261106/code/P2_modes.py model --output /tmp/P2-model-replay.json
+    env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-mz-sharp-constants-20261106/code/P2_modes.py validate --output /tmp/P2-validation-replay.json
+    env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 timeout 21600 python topics/padua-mz-sharp-constants-20261106/code/P2_modes.py overlap --output /tmp/P2-overlap-replay.json
+
+The small comparison uses separately implemented frozen Chebyshev
+weights and explicit nodal Gram matrices; L is assembled by literal
+scalar node loops independently of tensor contraction. m400 is an
+implementation replay of already-read audit data, not a fresh hypothesis
+test. A distinct reviewer independently reran small12/13 validation and main1600.
+The main scientific fields, source hashes, residuals and iteration counts
+were bit-identical (timing/RSS/output path differ). This checks the same
+algorithm independently executed, not an independent arithmetic method.
+[Independent report](../independent-checks-P2.md); receipts
+[small validation](../evidence/check-P2-independent-validation.json),
+[main1600](../evidence/check-P2-independent-m1600.json).
+
+## Main evidence, fresh-test criteria and costs
+
+Main receipts: [1600](../evidence/P2-m1600.json),
+[1601](../evidence/P2-m1601.json), [3000](../evidence/P2-m3000.json),
+[3001](../evidence/P2-m3001.json). Fixed
+[summary](../evidence/P2-summary.json), generated by
+[P2_summary.py](../code/P2_summary.py), records all input identities and
+criterion outcomes. Existing K4 regressions are contextual only; the fresh
+slopes use same-parity1600→3000/1601→3001 secants in physical logm.
+The mode2 L-distance uses the doublet eigenvalue interval. Branch values
+are the minima of Q compressed into each two-dimensional L doublet;
+no arbitrary individual eigenvector labels or symmetry gauge enter.
+
+| m | Qmin | mode2 weight | L-distance | Q(mode1)-Q(mode2) | CPU seconds |
+|---|---|---|---|---|---|
+|1600|-0.023414416590345835|0.9589539148417877|0.003620925062798694|0.2820751335894209|202.883315343|
+|1601|-0.06957839795215898|0.9634703972134077|0.0032651386244369196|0.26186549047479946|185.6758243|
+|3000|-0.08132259679355916|0.964492122993133|0.0031788293520045863|0.2579076803439193|871.284822591|
+|3001|-0.12767392093832886|0.9680259907269178|0.0028898545757079924|0.2382354517869368|1098.356266775|
+
+Across main rows, maximum eigenpair residual1.1690032523e-11,
+orthogonality error4.1078251912e-15, doublet width7.9134954146e-10,
+minimum neighboring-doublet gap0.0380596223. All registered guards pass.
+Each mode2 weight exceeds0.9, and each L-distance is below0.005.
+Rates and secants satisfy their separately registered bands, so no scoped
+kill or INCONCLUSIVE prerequisite fires. No PD-N is warranted.
+
+Producer main2358.200229009CPU-s; Step1 calibration/validation/overlap
+7.489639803CPU-s; combined2365.689868812CPU-s (about0.6572CPU-h).
+Independent main1600 consumed197.65640081CPU-s, accounted separately;
+independent small-validation timing is in its receipt; control/summary
+overhead is unmetered. These are
+function-reported CPU times, excluding startup/metadata and tiny summary
+I/O overhead. No resource cap approached; maximum producer wall time
+1098.740096707s and RSS2468212KiB. At most two global heavy processes;
+first completed large-case slot handed to reviewer, no third launched.
+
+Reproduce any main case with its fixed m/output substitution:
+
+    env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 timeout 21600 python topics/padua-mz-sharp-constants-20261106/code/P2_modes.py run --m 1600 --output /tmp/P2-m1600-replay.json
+    python topics/padua-mz-sharp-constants-20261106/code/P2_summary.py --output /tmp/P2-summary-replay.json
+
+Summary uses the repository evidence directory unless --directory is
+specified. Two progressing scientific rounds (calibration/validation,
+main fixed test) completed within the six-round limit, without two
+consecutive no-progress rounds. A source-preflight failure preceded
+scientific execution and was repaired without changing inputs/criteria.
+
+## Scope and limitations
+
+B_K calibration demonstrates only measured stability of the selected
+low eigenvalue, not full Gram/operator accuracy: K128 Gram minima differ
+materially between orders128/160. The analytic tail120/128=0.9375 cannot
+certify decimal accuracy. Measured finite doublet identification and Q secants prove no two-term
+asymptotic or crossing degree. No result
+changes K4's original criterion, window, threshold, receipt or outcome,
+or PD-T381's registry status. No upper Q eigensolve is performed.
+
+## Open items
+
+The mandatory bounded P2 experiment is complete. The optional two-term
+O(1) corner theorem is explicitly deferred: the fixed finite diagnostic
+supplies no explicit limiting correction operator or o(1) remainder.
+It is unattempted, not rejected; resume only with a separate prospective
+proof/development plan. No further numerical extension or model retuning.
+
+## History
+
+2026-11-06, Codex allocated gpt-6.1-sol medium; runtime metadata not
+independently exposed. Rules0205690b9c4e959a28e949083e9a1808735abf4b;
+R response17ca9f4. Step1 only after prospective protocol publication.
+Source-preflight failure and verified-copy repair are preserved once in
+[attempt](../attempts/P2.md); no scientific input/protocol tuning followed.
+
+Measured b2/K stability was published at
+64f3b76d5f8eb149f52f296cb744d6dd45a1c708 before main release. All four
+main cases completed with the unchanged producer; fixed summary then ran
+once. Independent summary replay and scope review are recorded in the
+linked reviewer report. Original K4 remains unchanged.
+
+
+## 2026-11-06 audit-02 B1 scope correction
+
+The Q_min endpoints at m=1400/1401,1800/1801,3000/3001 were already
+committed in [S4-padua-essential.json](../evidence/S4-padua-essential.json)
+at `5110954`, before protocol publication `d03e74d`. Thus the registered
+secant-to-b2 criterion was essentially **postdictive**, although its
+1600/1601 endpoints were newly computed. Only the mode-2 projector weight,
+L-distance and branch-difference-rate criteria were prospective. References
+above to “fresh” tests/slopes must be read with this qualification. This
+addendum preserves the historical protocol, thresholds, receipts and
+**PASS_FINITE_TEST** outcome; it changes no measured result or K4 outcome.
+
+Exact preexisting binary64 Q_min displays from that receipt:
+
+| m | Q_min |
+|---|---|
+| 1400 | -0.011154815368818943 |
+| 1401 | -0.05726871438384513 |
+| 1800 | -0.03424120440335956 |
+| 1801 | -0.08044573869483683 |
+| 3000 | -0.08132259681241012 |
+| 3001 | -0.12767392093832797 |
+
+The audit's [preexisting-data diagnostic](../audit-02-support/P24/P2-preexisting-predictivity.json)
+reports 1400→3000 and 1800→3000 secants -0.09206678123678186 and
+-0.09216724889787156; odd partners give -0.09242447927758063 and
+-0.09249482664931691. Their distances from b2 are already about
+0.0030–0.0035, below the registered 0.006 band. This diagnostic is existing
+MEASURED audit evidence, not a new execution or prospective confirmation.
+
+## 2026-11-06 audit-02 C4 summary prerequisite procedure
+
+`P2_summary.py` reads the calibration and four main receipts; it checks
+calibration validity and the main numerical/pairing guards. It does not
+read or enforce the small-validation or m400-overlap receipts. Those are
+procedural prerequisites: protocol Step 1 requires successful validation
+and overlap before the coordinator releases the main cases. The existing
+[validation](../evidence/P2-validation.json) and
+[overlap](../evidence/P2-overlap400.json) receipts record those checks;
+[LOG](../LOG.md) records the release sequence. A standalone summary PASS
+therefore does not itself establish that the procedural prerequisites
+were satisfied; read it together with those receipts and the release
+record. This documentation-only disposition preserves code and receipts;
+no numerical rerun is needed or claimed.

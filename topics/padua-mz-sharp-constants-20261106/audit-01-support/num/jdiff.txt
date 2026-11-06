@@ -1,0 +1,87 @@
+######## k0-cc vs S4-k0-cc
+numeric fields compared: 67  identical: 66
+max abs diff 1.393e+04 at /peak_rss_kib
+max rel diff 1.459e-01 at /peak_rss_kib
+timing/env numeric fields ignored: 7
+non-numeric equal: 29
+non-numeric differing (7):
+   /command[4] | new: /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/k0 | committed: topics/padua-mz-sharp-constants-20261106/evidence/S4-k0-cc.json
+   /mpmath | new: 1.4.1 | committed: 1.3.0
+   /numpy | new: 2.5.3 | committed: 2.3.5
+   /platform | new: Linux-6.18.44-fc-v242-x86_64-with-glibc2.39 | committed: Linux-6.18.57-x86_64-with-glibc2.41
+   /python | new: 3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ] | committed: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+   /scipy | new: 1.18.1 | committed: 1.17.0
+   /started_utc | new: 2026-11-06T13:21:37.697332+00:00 | committed: 2026-11-06T11:31:39.886395+00:00
+######## k0-carrier vs S4-k0-carrier
+numeric fields compared: 29  identical: 28
+max abs diff 1.298e+04 at /peak_rss_kib
+max rel diff 1.833e-01 at /peak_rss_kib
+timing/env numeric fields ignored: 5
+non-numeric equal: 36
+non-numeric differing (7):
+   /command[4] | new: /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/k0 | committed: topics/padua-mz-sharp-constants-20261106/evidence/S4-k0-carrier.json
+   /mpmath | new: 1.4.1 | committed: 1.3.0
+   /numpy | new: 2.5.3 | committed: 2.3.5
+   /platform | new: Linux-6.18.44-fc-v242-x86_64-with-glibc2.39 | committed: Linux-6.18.57-x86_64-with-glibc2.41
+   /python | new: 3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ] | committed: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+   /scipy | new: 1.18.1 | committed: 1.17.0
+   /started_utc | new: 2026-11-06T13:21:38.316425+00:00 | committed: 2026-11-06T11:31:25.117734+00:00
+######## k1 vs S4-k1-fit-essential
+numeric fields compared: 127  identical: 75
+max abs diff 1.379e-09 at /results/even/windows/B_j15_to20/design_condition_2
+max rel diff 8.148e-10 at /results/odd/windows/A_j8_to14/fit_residuals[3]
+timing/env numeric fields ignored: 0
+non-numeric equal: 35
+non-numeric differing (5):
+   /command[4] | new: /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/k1 | committed: topics/padua-mz-sharp-constants-20261106/evidence/S4-k1-fit-essential.json
+   /numpy | new: 2.5.3 | committed: 2.3.5
+   /platform | new: Linux-6.18.44-fc-v242-x86_64-with-glibc2.39 | committed: Linux-6.18.57-x86_64-with-glibc2.41
+   /python | new: 3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ] | committed: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+   /started_utc | new: 2026-11-06T13:21:38.606699+00:00 | committed: 2026-11-06T11:49:33.586157+00:00
+######## k3 vs S4-k3-fit-essential
+numeric fields compared: 147  identical: 110
+max abs diff 2.665e-15 at /results/odd/windows/A_j8_to14/scaled_condition_2
+max rel diff 3.904e-07 at /results/even/windows/B_j15_to20/fit_residuals[5]
+timing/env numeric fields ignored: 0
+non-numeric equal: 36
+non-numeric differing (5):
+   /command[4] | new: /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/k3 | committed: topics/padua-mz-sharp-constants-20261106/evidence/S4-k3-fit-essential.json
+   /numpy | new: 2.5.3 | committed: 2.3.5
+   /platform | new: Linux-6.18.44-fc-v242-x86_64-with-glibc2.39 | committed: Linux-6.18.57-x86_64-with-glibc2.41
+   /python | new: 3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ] | committed: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+   /started_utc | new: 2026-11-06T13:21:38.720431+00:00 | committed: 2026-11-06T11:49:33.716377+00:00
+######## upper-model vs S2-model
+numeric fields compared: 67  identical: 67
+max abs diff 0.000e+00 at /galerkin[0]/J
+max rel diff 0.000e+00 at /galerkin[0]/J
+timing/env numeric fields ignored: 6
+non-numeric equal: 16
+non-numeric differing (7):
+   /command[1] | new: --output | committed: --sizes
+   /command[2] | new: /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/up | committed: 32
+   /numpy | new: 2.5.3 | committed: 2.3.5
+   /platform | new: Linux-6.18.44-fc-v242-x86_64-with-glibc2.39 | committed: Linux-6.18.57-x86_64-with-glibc2.41
+   /python | new: 3.13.18 (main, Oct 26 2026, 14:08:19) [Clang 23.1.3 ] | committed: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+   /scipy | new: 1.18.1 | committed: 1.17.0
+   /started_utc | new: 2026-11-06T13:21:39.091111+00:00 | committed: 2026-11-06T11:46:58.452033+00:00
+len [('/command', 3, 11)]
+######## corner-model vs S3-corner-model
+numeric fields compared: 66  identical: 38
+max abs diff 2.220e-16 at /runs[1]/results[2]/lambda_min
+max rel diff 9.850e-15 at /runs[0]/results[3]/gram_min
+timing/env numeric fields ignored: 2
+non-numeric equal: 3
+non-numeric differing (4):
+   /numpy | new: 2.5.3 | committed: 2.3.5
+   /prereg_sha256 | new: 03eff691c661daad7aebd95557e1a39953e96fb6081901029b012aa7205ece63 | committed: c2e8b10ac01c04c514b16b1c239682d16342aef7a55590c99afc22e5611c5263
+   /python | new: 3.13.18 | committed: 3.12.14
+   /scipy | new: 1.18.1 | committed: 1.17.0
+######## padua-fits vs S4-padua-fit
+numeric fields compared: 114  identical: 104
+max abs diff 4.510e-16 at /results/minimum/results/even/relative_window_slope_drift
+max rel diff 7.719e-13 at /results/minimum/results/even/windows/window_A_even_m/fit_residuals[0]
+timing/env numeric fields ignored: 0
+non-numeric equal: 24
+non-numeric differing (2):
+   /command[4] | new: /tmp/claude-0/-home-user-padua-research/8d35f915-ba92-5bfd-81d7-431865a9781c/scratchpad/audit/num/pa | committed: topics/padua-mz-sharp-constants-20261106/evidence/S4-padua-fit.json
+   /numpy | new: 2.5.3 | committed: 2.3.5

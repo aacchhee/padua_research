@@ -1,0 +1,171 @@
+{
+  "status": "MEASURED",
+  "rigorous_enclosures": false,
+  "source_and_rules_pin": "2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861",
+  "scan_preregistration_commit": "e2652c3",
+  "role": "independent supplementary checker",
+  "requested_model": "gpt-6-astra high; actual runtime metadata unexposed",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "topics/padua-mz-sharp-constants-20261106/code/check_S4_structured.py",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/check-S4-structured.json"
+  ],
+  "checker_sha256": "0efc2b3ff7ed78b81e044f7035275170c054d445223ae400018a086e0441fa01",
+  "input_sha256": {
+    "topics/padua-mz-sharp-constants-20261106/code/S4_structured.py": "40e9ffc00edbf8ff9009cfa133646a69815f8423ad8baf4bdd23a69ae604bd8d",
+    "topics/mz-constants/sources/padua_mz_inputs/code/cc_mz_large.py": "df392b043fad81395ce6e07258a438bbd5fc609fc83fc51fa03314b885ac5af9"
+  },
+  "started_utc": "2026-11-06T11:38:32.055596+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "seed": 20261107,
+  "tolerance": 2e-12,
+  "ncv": 40,
+  "maxiter": 3000,
+  "guards": {
+    "dense_relative": 1e-10,
+    "sparse_quadratic_relative": 1e-10,
+    "inverse_residual": 1e-09,
+    "constraint": 1e-09,
+    "symmetry": 1e-10
+  },
+  "results": [
+    {
+      "N": 101,
+      "n": 100,
+      "weight_sum": 2.0000000000000004,
+      "minimum_weight": 9.802960494069249e-05,
+      "results": {
+        "minimum": {
+          "eigenvalue": 0.20386941110031123,
+          "inverse_eigenvalue": 4.905100743671464,
+          "inverse_residual_2_float": 3.3769071597360716e-15,
+          "constraint_residual_float": 2.19801508202438e-17,
+          "matvecs": 42
+        },
+        "maximum": {
+          "eigenvalue": 1.0044381931618709,
+          "inverse_eigenvalue": 0.995581417361381,
+          "inverse_residual_2_float": 2.31424259251242e-15,
+          "constraint_residual_float": 1.9959188788695847e-16,
+          "matvecs": 42
+        }
+      },
+      "symmetry_relative_error": 7.163707156768956e-17,
+      "artificial_unit_eigenvector_residual": 2.8441001681421824e-16,
+      "sparse_polynomial_quadratic_relative_error": 8.881784197001252e-16,
+      "sparse_polynomial_constraint_relative": 7.711264856526109e-16,
+      "sparse_polynomial_modes": 32,
+      "dense_reference": [
+        0.20386941110031348,
+        1.00443819316188
+      ],
+      "dense_maximum_relative_error": 1.099120794378905e-14,
+      "pass": true,
+      "seconds": 0.046709208999914154
+    },
+    {
+      "N": 1281,
+      "n": 1280,
+      "weight_sum": 2.0,
+      "minimum_weight": 6.093990046074932e-07,
+      "results": {
+        "minimum": {
+          "eigenvalue": 0.11761761770840215,
+          "inverse_eigenvalue": 8.502127653012002,
+          "inverse_residual_2_float": 7.975413448658216e-14,
+          "constraint_residual_float": 1.2779746306829526e-16,
+          "matvecs": 42
+        },
+        "maximum": {
+          "eigenvalue": 1.0044369899536527,
+          "inverse_eigenvalue": 0.9955826099615691,
+          "inverse_residual_2_float": 3.271622863900723e-14,
+          "constraint_residual_float": 1.2829392336929466e-14,
+          "matvecs": 42
+        }
+      },
+      "symmetry_relative_error": 8.805479307159732e-17,
+      "artificial_unit_eigenvector_residual": 5.970070437885661e-16,
+      "sparse_polynomial_quadratic_relative_error": 2.4424906541753444e-15,
+      "sparse_polynomial_constraint_relative": 3.292419897226095e-15,
+      "sparse_polynomial_modes": 32,
+      "dense_reference": [
+        0.11761761770842535,
+        1.0044369899537517
+      ],
+      "dense_maximum_relative_error": 1.9728663147589032e-13,
+      "pass": true,
+      "seconds": 0.27395999300006224
+    },
+    {
+      "N": 8192,
+      "n": 8191,
+      "weight_sum": 2.0,
+      "minimum_weight": 1.490116141589226e-08,
+      "results": {
+        "minimum": {
+          "eigenvalue": 0.08483487997906558,
+          "inverse_eigenvalue": 11.78760434678244,
+          "inverse_residual_2_float": 2.2870839749387415e-13,
+          "constraint_residual_float": 4.2085509797309307e-17,
+          "matvecs": 42
+        },
+        "maximum": {
+          "eigenvalue": 1.0044369735014316,
+          "inverse_eigenvalue": 0.9955826262687598,
+          "inverse_residual_2_float": 9.676858007374143e-14,
+          "constraint_residual_float": 1.8945649188325822e-14,
+          "matvecs": 42
+        }
+      },
+      "symmetry_relative_error": 3.6741893368173435e-17,
+      "artificial_unit_eigenvector_residual": 8.893237168531715e-16,
+      "sparse_polynomial_quadratic_relative_error": 2.4868995751603507e-14,
+      "sparse_polynomial_constraint_relative": 3.205565528819898e-14,
+      "sparse_polynomial_modes": 32,
+      "pass": true,
+      "seconds": 0.17148461699991913
+    },
+    {
+      "N": 8193,
+      "n": 8192,
+      "weight_sum": 1.9999999999999991,
+      "minimum_weight": 1.4897523881093074e-08,
+      "results": {
+        "minimum": {
+          "eigenvalue": 0.08483319180788926,
+          "inverse_eigenvalue": 11.787838918811053,
+          "inverse_residual_2_float": 2.297992368476047e-13,
+          "constraint_residual_float": 2.3024773858275273e-17,
+          "matvecs": 42
+        },
+        "maximum": {
+          "eigenvalue": 1.0044369724002449,
+          "inverse_eigenvalue": 0.9955826273602394,
+          "inverse_residual_2_float": 5.903262269083173e-13,
+          "constraint_residual_float": 2.0525154800693232e-15,
+          "matvecs": 42
+        }
+      },
+      "symmetry_relative_error": 2.9882031545816527e-16,
+      "artificial_unit_eigenvector_residual": 0.0,
+      "sparse_polynomial_quadratic_relative_error": 3.0309088572266774e-14,
+      "sparse_polynomial_constraint_relative": 3.3055306219931227e-14,
+      "sparse_polynomial_modes": 32,
+      "pass": true,
+      "seconds": 0.6494084449999491
+    }
+  ],
+  "seconds": 1.145695622000062,
+  "all_pass": true,
+  "inputs_unchanged_at_end": true
+}

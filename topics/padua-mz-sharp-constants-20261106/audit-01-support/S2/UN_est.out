@@ -1,0 +1,4 @@
+N=1e+04 T=Y=2 Q=100 U_N~1.1565 (alpha=0.0, lam(B_Q)=7.126e-02, A/Q=2.33e-02, E=6.19e-02); L_N=1 (no admissible J with lambda_J-r_J>1)
+N=1e+06 T=Y=3 Q=1000 U_N~1.0808 (alpha=0.0, lam(B_Q)=6.430e-02, A/Q=5.50e-03, E=1.10e-02); L_N=1 (no admissible J with lambda_J-r_J>1)
+N=1e+08 T=Y=4 Q=10000 U_N~1.0666 (alpha=0.0, lam(B_Q)=6.366e-02, A/Q=1.17e-03, E=1.80e-03); L_N=1 (no admissible J with lambda_J-r_J>1)
+N=2.68e+08 T=Y=5 Q=16384 U_N~1.0622 (alpha=0.01, lam(B_Q)=4.919e-02, A/Q=1.36e-03, E=1.68e-03); L_N=1 (no admissible J with lambda_J-r_J>1)

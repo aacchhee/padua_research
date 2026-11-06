@@ -1,0 +1,83 @@
+{
+  "status": "PROPOSED; awaiting coordinator gate registration before scan",
+  "grid_rule": "E_j=2*round(50*2^(j/2)), j=0..20; for each E_j run N=E_j and E_j+1, n=N-1",
+  "even_N": [
+    100,
+    142,
+    200,
+    282,
+    400,
+    566,
+    800,
+    1132,
+    1600,
+    2262,
+    3200,
+    4526,
+    6400,
+    9050,
+    12800,
+    18102,
+    25600,
+    36204,
+    51200,
+    72408,
+    102400
+  ],
+  "odd_N": [
+    101,
+    143,
+    201,
+    283,
+    401,
+    567,
+    801,
+    1133,
+    1601,
+    2263,
+    3201,
+    4527,
+    6401,
+    9051,
+    12801,
+    18103,
+    25601,
+    36205,
+    51201,
+    72409,
+    102401
+  ],
+  "K1_windows": {
+    "A_j8_to14": [
+      1600,
+      2262,
+      3200,
+      4526,
+      6400,
+      9050,
+      12800
+    ],
+    "B_j15_to20": [
+      18102,
+      25600,
+      36204,
+      51200,
+      72408,
+      102400
+    ]
+  },
+  "fit": "unweighted least squares via SVD: y=(log N)^2 lambda_min, columns [1,log(log N)/log N,1/log N]",
+  "parities": "N even and N odd fitted separately, physical N in logs",
+  "pass": "abs(c_A-c_B)/max(abs(c_A),abs(c_B)) <= 0.02 for each parity; if c<=0 inconclusive",
+  "model_blinding": "S1 model prediction must be committed before K1 fit or final-window data disclosed to S1",
+  "tolerances": {
+    "eigsh_tol": 2e-12,
+    "max_inverse_residual_norm": 1e-09,
+    "ncv": 40,
+    "maxiter": 3000,
+    "seed": 20261106
+  },
+  "no_fit_until": "coordinator explicitly authorizes K1 after S1 prediction registration",
+  "upper_extreme": "record raw values only; K3 extrapolation rule separately registered after S2 model prediction",
+  "extension_if_inconclusive": "One extension to E_j,j=21..24 (through409600), both parities, if affordable. Windows shifted to j12..18 and j19..24; register extension decision before execution. No second extension."
+}

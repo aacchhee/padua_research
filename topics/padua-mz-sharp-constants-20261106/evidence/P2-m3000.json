@@ -1,0 +1,107 @@
+{
+  "status": "MEASURED",
+  "rigorous_enclosures": false,
+  "source_head": "0205690b9c4e959a28e949083e9a1808735abf4b",
+  "protocol_commit": "d03e74dcf94020ba26d9fae84d3ff6c5519db901",
+  "identities": {
+    "topics/padua-mz-sharp-constants-20261106/code/P2_modes.py": "8e15fe58b19a1ef1a2ff71da80d18de04349d90081e02a885bcbb38b143d1161",
+    "topics/padua-mz-2d-frontier-20261105/code/g1_spectral.py": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+    "tracks/mz-constants/code/mz2d_spectra.py": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+    "topics/padua-mz-2d-20261101/definitions.md": "4ac0e391859a14e4d6f752f1244df0701e99d9b3d8ab8570bd632520f517c7db",
+    "topics/padua-mz-sharp-constants-20261106/ideas/P2-protocol.md": "2dc19f83257528f338ce642d6a9f2b63963627d1f816294610a9e075bdb50f39"
+  },
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/P2_modes.py",
+    "run",
+    "--m",
+    "3000",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/P2-m3000.json"
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "seed": 1,
+  "tol": 1e-09,
+  "ncv": 40,
+  "maxiter": 3000,
+  "row": {
+    "L_at_Qmin": -0.09238282372810012,
+    "L_low6": [
+      -0.13362127553579853,
+      -0.1336212754162478,
+      -0.09556165311029989,
+      -0.09556165308010471,
+      -0.039648483655769326,
+      -0.03964848361275133
+    ],
+    "doublet_weights": [
+      5.089255833954631e-06,
+      0.964492122993133,
+      0.014019372647173638
+    ],
+    "Q_compressed_spectra": [
+      [
+        0.2099963861267947,
+        0.2099963922464259
+      ],
+      [
+        -0.04791129421712464,
+        -0.04791129375104245
+      ],
+      [
+        0.280709233226976,
+        0.2807092349731221
+      ]
+    ],
+    "branch_difference": 0.2579076803439193,
+    "doublet_widths": [
+      1.1955073042635433e-10,
+      3.019517968994023e-11,
+      4.3017998885286346e-11
+    ],
+    "inter_doublet_gaps": [
+      0.03805962230594791,
+      0.055913169424335385
+    ],
+    "orthogonality_error": 1.887379141862766e-15,
+    "mode2_L_distance": 0.0031788293520045863,
+    "pairing_valid": true,
+    "orthogonality_valid": true,
+    "m": 3000,
+    "dimension": 4501500,
+    "logR": 7.313220387090301,
+    "logm": 8.006367567650246,
+    "Q_min": -0.08132259679355916,
+    "Q_checks": {
+      "residuals": [
+        1.169003252285904e-11
+      ],
+      "matvecs": 62,
+      "wall_seconds": 376.38919234700006
+    },
+    "L_checks": {
+      "residuals": [
+        2.5059461550955386e-16,
+        2.835137645943139e-16,
+        2.174158729298432e-16,
+        1.638382945056645e-16,
+        6.257079335589369e-17,
+        8.193512240337144e-17
+      ],
+      "matvecs": 77,
+      "wall_seconds": 456.3335597919995
+    },
+    "residuals_valid": true,
+    "Q_min_norm": 1.0,
+    "wall_seconds": 871.7920208560008,
+    "cpu_seconds": 871.284822591,
+    "peak_rss_kib": 2465996,
+    "numerically_valid": true
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "status": "MEASURED",
+  "preregistration_commit": "ec52c16569ea959dfe682fcd7985378a2ef1cd42",
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/S4_padua_scan.py",
+    "--mode",
+    "maximum-pilot",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/S4-padua-upper-pilot.json"
+  ],
+  "started_utc": "2026-11-06T12:02:43.874245+00:00",
+  "script_sha256": "a392135e3a538d90f3d368f8172facabf5c63ab9f941cd0aba2727e5fbe7773b",
+  "operator_sha256": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+  "frozen_code_sha256": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+  "proposal_sha256": "3fc44adc5470e7ab9889fa218fc8b3dd14f6d83895de3638531717213dd6c59c",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "results": [
+    {
+      "m": 800,
+      "n": 799,
+      "extreme": "maximum",
+      "started_utc": "2026-11-06T12:02:43.877139+00:00",
+      "status": "FAILED",
+      "seed": 20261106,
+      "ncv": 80,
+      "tol": 2e-10,
+      "matvec_cap": 2000,
+      "wall_cap_seconds": 1800,
+      "dimension": 320400,
+      "weight_sum": 4.0,
+      "negative_weight_count": 2,
+      "negative_weight_mass": 1.256022803824702e-10,
+      "error_type": "BudgetLimit",
+      "error": "matvec cap",
+      "matvecs": 2000,
+      "seconds": 336.5191640329999,
+      "cpu_seconds": 336.42063584799996,
+      "peak_rss_kib": 314000
+    }
+  ],
+  "completed": false
+}
