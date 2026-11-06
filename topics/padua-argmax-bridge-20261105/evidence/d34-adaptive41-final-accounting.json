@@ -1,0 +1,18 @@
+{
+  "result": "EXACT_ADAPTIVE41_PRIMARY_ACCEPTED_PENDING_FRESH_REPLAY",
+  "first_failure": null,
+  "total_CPU_through_summary": 6.676496,
+  "complete": true,
+  "final_self_limit": {
+    "waited_child_CPU": 6.457244,
+    "self_CPU_at_tightening": 0.204168,
+    "absolute_self_CPU_hard": 112,
+    "integer_enforcement_reserve_CPU": 1,
+    "additional_reaped": [],
+    "no_live_children": true,
+    "scope": "No subsequent children; waited-child CPU fixed. Absolute self limit bounds final serialization/write/return."
+  },
+  "hard_aggregate_cap": 120,
+  "execution_role": "D34 first n41 exact-oracle producer/checker primary after root release; independent fresh retained-point replay remains required",
+  "scope": "Inclusive sample after persisted provisional summary/output and freeze recheck, before final-account serialization and atomic last write. Final serialization/write/return bounded by tightened absolute self limit; acceptance additionally requires process return0."
+}

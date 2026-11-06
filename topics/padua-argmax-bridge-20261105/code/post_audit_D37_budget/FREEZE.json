@@ -1,0 +1,44 @@
+{
+  "status": "UNEXECUTED first D37 scalar source freeze; paper reductions complete; distinct prerelease source audit/publication/root release required",
+  "rules_input": "eb9329c28be18d77eeb817f634202d626ee11f92",
+  "N": 1024,
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D37_budget/evaluate.py --run-once",
+  "CPU_soft": 4,
+  "CPU_hard": 5,
+  "CPU_scope": "whole process including startup/imports/helper/domains/controls/arithmetic/serialization/output/return; no children",
+  "precision": 50,
+  "pi": "exact Fraction alternating Machin70 terms at1/5 and20 at1/239",
+  "helper_definitions_only": ["directed", "I", "ilog", "atan_bounds"],
+  "required_gates": ["GN", "GB", "GX", "GY", "GO"],
+  "domains": 16,
+  "exact_controls": 33,
+  "component_intervals_including_minimum": 59,
+  "fixed_phase_partition": ["near rho<=1/2", "inner far1/2<=rho<=1", "outer far1<=rho<=pi"],
+  "fixed_inner_split": "x,y<=1/2; x>=1/2; y>=1/2; all closed and all gates mandatory",
+  "fixed_multiplier": "1/2 with subtraction1/4",
+  "near_floor": "new guarded3/50 for n>=1024 ACTUAL near noncorner only",
+  "wide_constant": "A3/5,Cq19/24,hx8/15,hy2/15; no omitted fractional/entropy terms",
+  "near_finite": "CN22/n+162/n^2+40H/(pi*n^2); KN[8H+(39/2)L+286/3]/n+4/n^2",
+  "wide_finite": "CW23/n+204/n^2+40H/(pi*n^2); KW[8H+20L+292/3]/n+4/n^2",
+  "outer": "u1=47/384,Dc6211/7260,OLDglobalCnew,NEWKD35,unchangedACTUALoriginE0",
+  "output_directory": "local-output/argmax-bridge-20261105/post-audit-D37/budget",
+  "exclusive_directory_consumes_attempt_on_any_failure": true,
+  "retry_fallback_preview_scan_source_precision_parameter_cap_rescue": false,
+  "scientific_or_control_executions_performed": 0,
+  "native_phase_board_rootfinder_quadrature_degree_calls": 0,
+  "global1024_status": "OPEN pending all five sole signs and independent fresh result review",
+  "essential_JSON_bytes_strictly_less_than": 16384,
+  "code_data": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D37_budget/evaluate.py",
+      "bytes": 11786,
+      "sha256": "2f5fa327a1c93063e4602a8cad06779601c89c86dcecc1e89cb4e1fba070d1eb"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D06_model_budget/evaluate.py",
+      "bytes": 6126,
+      "sha256": "9ab068b7928d9976db4b5b26cddc902eb063e592f296dcfb143e999869301413"
+    }
+  ],
+  "prose_policy": "Mathematical/SPEC hashes identified by audit records; executable pins code/data only"
+}

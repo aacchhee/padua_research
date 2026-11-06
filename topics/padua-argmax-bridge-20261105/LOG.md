@@ -885,3 +885,21 @@ Report600b3956... ACCEPTS both frozen proofs with no unresolved findings. Root a
 
 - F1/F2focusedreviewfinald21497a0... preserves exactfirst16319B/d743fe40findingsprefix; verifiesTHREEcontrollerliteralchangesonly, updatedcontroller00bf8e1e.../FREEZE92c38e23..., SPECunchanged88c9006a..., allothercode/data unchanged. Source/attemptdatedprovenancepinfirste5c3Gitblobs; no control/native/import/test/job/lockconsumedinrepair/review.
 - Rootreleases EXACTcorrected D34controller--run-once n41ONLY afterthispublication. Full120CPU/control2/worker100/safety110/native10/15/256uniqueS+3lambda/2047nodes/depth18; wallchecker900/whole1000, outputadaptive. No source/precision/case/seed/caprescue/retry. Complete finalaccountacceptedANDrootdirectEXIT0needed; newdegree41requiresindependentfreshkeptpointreplay. Allfirstfailedsourcefindingsremainhistoricalandclosed, notscientificattempts.
+
+
+### D34 first adaptive41 primary passes
+
+RootexecutedEXACTcorrectedD34commandONCE after8be81c3publication, directexecsession65275/chunk2b3659EXIT0. Separatelyreadfinalaccount: EXACT_ADAPTIVE41_PRIMARY_ACCEPTED_PENDING_FRESH_REPLAY, complete=true/no failure, wholeCPUcheckpoint6.676496. Controls.060213CPU/checker6.546583CPU. Deterministicproducerused64uniqueSpoints+3actualpoints,101nodes/51leaves(5NEAR43FAR3OUTSIDE); all64Svaluesretained. FinalTREE norm13beatscoarse15; actualcornercriterionandallradiusfloors/strictphasepredicatespass. Wholeuntruncatedraw178260B0bdfb18d...offGit; minimalcompleteproofcertificate5587B524c8e6c... . No source/cap/precision/case/seedrescue/retry. Degree41adoptionawaitsindependentfresh64S+3actualreplay.
+
+### D36 prospective generic single-degree production certifier
+
+TechnicalSolmediumparameterizationofvalidatedD34algorithmONLY, no Syvertpack/preparation. Genericresearchengine41<=n<=4095, freshper-degreecache/exclusiveoutputandproduce/verify modes; actual3lambdaonlyn<1024withinliteralD07guard, acceptedD27analyticcornerfrom1024otherwise. SameD29tier/radiusfloors/D32genericcontract, normselection/exactcover/caps. A separate fixedresearchdriver targetsONEfirst1023case (largestactual-cornerbranch), afternewsource/SPEC/prereleaseaudit/publication/rootrelease; no unapproveddegree enumeration. Independentfreshkeptpointverifyremainsrequired.
+
+A strongeruniform1/64floorfrom41 wasconsidered as a standardselected-arc variant: forK=floor(M/6), anadjacentparitymesh gives>=2(l−1)open-arc points per physicalrowl, suggesting the exact lower [(7/2)(K−H_K)−15K(K−1)/(2M)]/[8(M+1)]. This remainsUNVERIFIED/DEFERREDhere, not a newlemma: theexistingradiusflooralreadypasses41in6.7CPU, so genericproduction/costvalidation is higherpriority. Anyfuturepursuit needsfreshproof/gate. RetainthiscandidateinD36idea dispositions; no arithmetic/script/native job wasrunforit.
+
+
+### D37 complete paper/source prerelease; fixed1024 release
+
+Distinct adversarial review4fadf00d... ACCEPTS allfive frozenpaper scopes plusnewscalar source/SPEC/FREEZE, preservingpaperprefix. OneNOTEW0only: intermediate strict boundsatzerophaseareequalities; completeweaktheoremandzeroidentitiesarevalid. Wideoperator/helper7acfa8f1..., floor5e6b9164..., constant79df534a..., constrainedenvelope84671ee0..., conditionalglobal37338160... remainunchanged. Source2f5fa327.../SPECb2e85c3b.../FREEZE4cf0bf3e... inspectedwithoutimports/controls/arithmeticjobs.
+
+RootreleasesEXACT evaluate--run-once fixedN1024ONLY afterthispublication, whole5CPU/nochildren, all59intervals/pi/16domains/33controls andALLFIVEpositivegates required. No threshold/multiplier/source/precision/parameter/caprescue/retry. Global1024staysOPENuntilprimaryPASS+directEXIT0andfreshindependentscalar/resultreview. Currentadoptedglobalboundary2048. No Syvertpackpreparationduringresearch.
