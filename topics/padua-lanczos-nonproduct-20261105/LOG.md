@@ -1,7 +1,7 @@
 # Span drift on genuinely non-product families: log
 
 - Branch: `codex/padua-lanczos-nonproduct-20261105` · Base: main `be9a831` (PR #29 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK (audit 01 returned findings) · Next: `Codex (gpt-6-astra, high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/03-response.md](handoffs/03-response.md)
+- Stage: WORK (audit 01 returned findings) · Next: `Codex (gpt-6-astra, high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/04-response.md](handoffs/04-response.md)
 - Reserved final-ID ranges: none. Under the PR #29 rules, reserve when first needed (normally at PR preparation).
 - Claims: P3 all-degree non-affine-product weight separation and uniform sufficient radius; P5 polynomial Padua capacities; P4 model/transfer lemmas and scoped covariance obstruction. Provisional IDs only; see [report](report.md).
 
@@ -381,3 +381,12 @@ recorded by the final inventory.
   - The disclosed P3 gate-timing deviation is accepted with the qualifier proposed in audit-01 A2.
   - The A2 record completion, items (a)–(d), still belongs to the Codex response. The qualifier's AC-decision date is 2026-11-06.
   - Q2 and Q3 remain open; AC asked for Claude's suggestions.
+- **AC decision, 2026-11-06, on Q2 and Q3:** "Yes agree with both suggestions." This accepts Claude's two suggestions as AC's decision.
+  - **Q2.** The P3 result is accepted as the answer to the formal goal, recorded as a weaker variant.
+    - Its title and scope in the registry and paper must say "non-affine-product measures moment-equivalent to SH_n through degree 2n+1, with an n-dependent weight mode".
+    - An n-independent perturbation (one fixed smooth density 1+eta*phi(s,t), or a nonlinear node map) is recorded as an OPEN, deferred target with a resume condition. Its first step is a perturbation bound for the normal-quotient map using the degree-≤2n moments, under the original N4 kill test. It is a follow-up topic, not a precondition for this PR.
+    - Optionally, the report may interpret P3 and P5 together (degree-≤2n moments and the normal space, not productness, as what matters), labelled as interpretation, not theorem.
+  - **Q3.** The P3/P5 proofs without the N2 screen are accepted as a dated deviation, and no new scans are required for this PR.
+    - A P3 scan is not required.
+    - An exact Padua scan (degrees 2–16, four rules) goes under "Runs needed" as optional evidence for the OPEN sharp-exponent question.
+  - These are wording and record additions, so they need no further audit round. Handoff 03 is superseded by [handoff 04](handoffs/04-response.md).

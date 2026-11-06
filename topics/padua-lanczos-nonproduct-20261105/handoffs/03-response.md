@@ -1,6 +1,6 @@
 # Handoff 03 — padua-lanczos-nonproduct-20261105 — developer response to audit 01
 
-- Status: open
+- Status: superseded by 04: AC decided Q1–Q3 on 2026-11-06, adding record tasks
 - Previous handoff: [02-audit.md](02-audit.md)
 
 - Next agent / model / effort: Codex. Use gpt-6-astra high as coordinator, following AC's 2026-11-05 allocation recorded in handoff 01. Mechanical record edits may use gpt-6.1-sol medium. The A3 statement correction is mathematical record work, so use gpt-6.1-sol high.
