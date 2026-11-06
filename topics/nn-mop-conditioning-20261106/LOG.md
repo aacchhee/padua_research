@@ -48,3 +48,32 @@ session carries the work. Commands: predecessor conditioning.py --sizes
 4 16 32 --family {krawtchouk,hahn} --dps {180,260}, followed by this topic's
 code/replay_gate.py /tmp/nn-mop-conditioning-20261106. Receipts pin raw outputs.
 
+
+## 2026-11-06 — canonical publication-author exception
+
+Checkpoint 8666d8e0a4f99f9f4f751c8b0b16f9064b23881d was created by
+the connector as Andrey Chesnokov <59649991+aacchhee@users.noreply.github.com>,
+despite get_profile reporting the prescribed Gmail address. Coordinator
+verified the commit author after publication, disclosed the mismatch to AC,
+and requested continuation under the predecessor's exception. AC explicitly
+answered “Allow the GitHub noreply author.” This author exception now applies
+to continued publication here; do not rewrite the existing checkpoint.
+Draft PR: https://github.com/aacchhee/padua_research/pull/32.
+
+## 2026-11-06 — C4 checkpoint and decisive C2 hard step
+
+C4 completed two useful preparation rounds: source-access/fulltext review,
+then exact local coordinate-interface validation (six cases). Required pinned
+archive bytes remain absent; M2/M4 are BLOCKED, not numerical failures.
+See attempts/C4.md and external-code.md. No external solver ran.
+The two preparation rounds are published together at this checkpoint.
+
+C2 requested the all-triangle Krawtchouk upper-rate hard step after the
+novelty gate. Assigned a bounded distinct Astra ultra worker: matching the
+full node/weight Jacobian upper rate is the decisive hard step explicitly
+authorized in handoff01, beyond the routine terminal-witness algebra.
+C2 retains parameter-dependent lower/Hahn work; upper worker owns only
+theory/c2-sharp-upper.md and attempts/C2-hard.md. No result claimed yet.
+Supplementary distinct Astra high checker independently reruns M0 and C4,
+then checks new gauge/rate mathematics; this supplements, not replaces,
+the eventual Claude audit.
