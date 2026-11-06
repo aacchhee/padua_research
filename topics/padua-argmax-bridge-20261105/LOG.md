@@ -940,3 +940,8 @@ Solmedium prepares ONLY cases.json15395B675b402e... andSPECcc037eb0... forfixedn
 DistinctAstrahigh02f641d3... ACCEPTS finalSPEC9406Bcc037eb0.../cases15395B675b402e..., all14correctedD36pins and18exactcommandarrays, floor/cornerbranches/resources/stoprules. FreshreviewSPEC1f18b369... remainsprospective. No D38numeric/control/producer/native/import/jobhasrun. D36fullyfresh1023hasdirectEXIT0/completeaccount29.746529; finiteapplicationreviewremainsseparate and is not a premise of these independently scoped calibration commands.
 
 Rootreleases MANUAL primaryproduce cases EXACT42,63,64,159,160,511,512,1024,2047 inthatorder ONLYAFTERthispublication. Eachpreviouscase musthave directobservedEXIT0+correctcompleteacceptedaccount+source/config/proofclosure, andnextfull120CPUreservationfitphase1200; ninewholeenvelopes1080. Stopentirephasefirstfailure, no retry/source/precision/order/case/caprescue. UnchangedD36engine/caps; no batchschedulerorpackprepared. Independentallninefreshphase remains UNRELEASED untilactualprimaryinputs/statusesarefrozenandpublished.
+
+
+### D36 accepted finite1023 by standalone fresh proof
+
+DistinctAstrahigh03a353bd... ACCEPTS frozenapplicationdbdd51c3... andsolefullyfresh47S+3actualverification, own directouterEXIT0session95825/chunkc3f838 pluscomplete/no-failurefinalaccount29.746529CPUcheckpoint. Allnorm/floor/phase/corner/closedcoverpredicatesrecomputed; n1023 oddargmax{(-1,-1),(-1,1)} PROVED model-freefinitecase. CandidateprimaryouterEXIT0remainsunobserved/canonicalcompletionunclaimed; itonlysuppliesgeometry/keys/METHOD. No rerun/rescue. Rootadoptsfinite1023, analyticall-nboundaryREMAINS1024. D36complete,total37/40(D01–D37); D38primariesreleased/pending. Knownfinite2–41,512,1023; residual42–1022excluding512OPEN.

@@ -1,8 +1,8 @@
 # Padua argmax bridge — current research results
 
-The exact two-corner global argmax is proved for **degrees 2–41, 512**, and **every integer n>=1024**. Equality corners are
+The exact two-corner global argmax is proved for **degrees 2–41, 512, 1023**, and **every integer n>=1024**. Equality corners are
 {(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n.
-Degrees42–1023 excluding512, and the all-degree target PD-T099,
+Degrees42–1022 excluding512, and the all-degree target PD-T099,
 remain OPEN. This is a sufficient analytic upper boundary.
 
 [Global theorem](../topics/padua-argmax-bridge-20261105/theory/D37-assembly-global1024.md),
@@ -146,3 +146,10 @@ D18 independently accepts near noncorner exclusion for every n>=7000 with gap1/4
 Independent D22 paper review accepts near noncorner exclusion EVERYn>=4096 with gap3/2000, using partial actual-origin cancellation and anisotropic bounds. No numerical jobs ran. Together with actual-corner descent4096 this leaves the far estimate binding the analytic global boundary7000. [D22 review](../topics/padua-argmax-bridge-20261105/independent-checks-D22-origin.md).
 
 New cheapbackend and exactstaticpipeline are independently accepted on the same6912/41point certificate: wholeCPU469.521049→74.034199, freshnorm45/allpredicatespass. The independent matched2048point pair gives2.615699→.488831CPU. These arefinitecomparisons, notuniformspeedlaws. [Fullcovermeasurement](../topics/padua-argmax-bridge-20261105/theory/D28-performance.md); [pointmeasurement](../topics/padua-argmax-bridge-20261105/theory/D23-paired-performance.md).
+
+Finite1023 is now independently proved by a wholly fresh47S+3actual
+verification, TREE M30/71nodes/36leaves,29.746529CPU checkpoint and directly
+observed EXIT0. [Application](../topics/padua-argmax-bridge-20261105/theory/D36-global1023.md)
+and [review](../topics/padua-argmax-bridge-20261105/independent-checks-D36-result.md).
+The candidate primary has a missing outer exit observation and supplies only
+geometry/keys/METHOD; the fresh proof supplies every numerical premise.
