@@ -1,4 +1,8 @@
-# PD-T?lanczos-nonproduct-codex-P2-01 — radial disk and rational ring admission
+<a id="pd-tlanczos-nonproduct-codex-p2-01--radial-disk-and-rational-ring-admission"></a>
+
+# PD-T474 — radial disk and rational ring admission
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P2-01`.
 
 ID kind: PD-T.
 Aliases: disk support obstruction to affine products; D36x9; rational D4 rings.

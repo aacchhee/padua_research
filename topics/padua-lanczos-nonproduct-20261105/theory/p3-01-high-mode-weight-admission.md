@@ -1,8 +1,12 @@
-# PD-T?lanczos-nonproduct-codex-P3-01 — high-mode SH weight admission
+<a id="pd-tlanczos-nonproduct-codex-p3-01--high-mode-sh-weight-admission"></a>
+
+# PD-T478 — high-mode SH weight admission
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P3-01`.
 
 ID kind: PD-T.
 Aliases: sign checkerboard reweighting; full-support rank-two SH measure.
-Split from: IDEA?lanczos-nonproduct-codex-P3-01 combined target; capacity/
+Split from: IDEA-576 combined target; capacity/
 radius is separately proved in P3-03.
 Split into: none.
 

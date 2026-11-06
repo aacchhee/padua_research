@@ -1,4 +1,8 @@
-# PD-T?lanczos-nonproduct-codex-P1-01 — Triangle family admission
+<a id="pd-tlanczos-nonproduct-codex-p1-01--triangle-family-admission"></a>
+
+# PD-T472 — Triangle family admission
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P1-01`.
 
 ID kind: PD-T. Aliases: N1 triangle admission; convex-hull obstruction to
 affine products; T24; positive Hahn-type lattice weights.

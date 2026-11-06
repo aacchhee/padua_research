@@ -1,4 +1,8 @@
-# PD-T?lanczos-nonproduct-codex-P4-01 — affine-product definition and admission lemmas
+<a id="pd-tlanczos-nonproduct-codex-p4-01--affine-product-definition-and-admission-lemmas"></a>
+
+# PD-T481 — affine-product definition and admission lemmas
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P4-01`.
 
 ID kind: PD-T.
 Aliases: genuinely non-product; invertible-affine independence; support-hull

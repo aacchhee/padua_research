@@ -1,4 +1,8 @@
-# PD-T?lanczos-nonproduct-codex-P2-03 — exact finite uniform-disk creator probe
+<a id="pd-tlanczos-nonproduct-codex-p2-03--exact-finite-uniform-disk-creator-probe"></a>
+
+# PD-T476 — exact finite uniform-disk creator probe
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P2-03`.
 
 ID kind: PD-T.
 Aliases: μ0 disk degree8; restricted final-block impulse; no capacity closure inferred.
@@ -43,7 +47,7 @@ The reported first-final-source gain squared is
 
     G_n²=sigma_h² Σ_(k in degree n)t_k²/d_k.              (1)
 
-It is a restricted lower witness for the full capacity in PD-T?lanczos-nonproduct-codex-P4-03's
+It is a restricted lower witness for the full capacity in PD-T483's
 continuous arbitrary-L² model, as explained below. It is not the full
 capacity, a full-capacity upper bound, or a BJ/comparator capacity ratio.
 
@@ -65,7 +69,7 @@ Overall status: MEASURED (one finite exact-arithmetic reconstruction).
 | Reported finite same-degree transfers and G_n² | MEASURED | Exact rational outputs below |
 
 The all-source capacity recursion/rate is the separate OPEN parent target
-in [IDEA?lanczos-nonproduct-codex-P2-01](../ideas/P2.md#idealanczos-nonproduct-codex-p2-01--continuous-radial-disk-quotient),
+in [IDEA-573](../ideas/P2.md#idea-573--continuous-radial-disk-quotient),
 not a mathematical part of this MEASURED probe. It is not computed or
 implied by these quantities.
 
@@ -76,8 +80,8 @@ bounded-order recursion that might later be found.
 
 ## Depends on
 
-PD-T?lanczos-nonproduct-codex-P2-01's exact disk moment formula and positive polynomial form; PD-T?lanczos-nonproduct-codex-P4-02
-and PD-T?lanczos-nonproduct-codex-P4-03 supply the relative raw-product normal-capacity model. PD-T?lanczos-nonproduct-codex-P2-02's
+PD-T474's exact disk moment formula and positive polynomial form; PD-T482
+and PD-T483 supply the relative raw-product normal-capacity model. PD-T475's
 analytic covariance proof is separate and does not depend on this run.
 
 ## Checks
@@ -99,7 +103,7 @@ claimed. Its execution timing is recorded once in attempts/P2.md.
 ## Sources
 
 No unread literature formula is used. The exact moment formula is
-analytically proved in PD-T?lanczos-nonproduct-codex-P2-01; finite Gram–Schmidt is reconstructed from it.
+analytically proved in PD-T474; finite Gram–Schmidt is reconstructed from it.
 
 ## Proof or evidence
 
@@ -130,7 +134,7 @@ e∈Π_n^⊥ and inject f_h=sigma_h e at h=(n,0), with every other source
 zero. Earlier responses vanish. Each creator's parent has degree n-1,
 so no coordinate multiplication of an already perturbed parent occurs
 within the final degree block. The frozen final-block responses are
-therefore sigma_h t_k e. PD-T?lanczos-nonproduct-codex-P4-03's normal quotient retains e, and its output
+therefore sigma_h t_k e. PD-T483's normal quotient retains e, and its output
 matrix has rank one with squared spectral norm (1). Thus a correct value
 of (1) is a lower witness. This elementary interpretation does not certify
 the table independently of the producer. It also explains why the table
@@ -139,7 +143,7 @@ does not involve a finite-node leverage factor.
 The full all-source quotient includes earlier source injections and
 coordinate-dependent transfer polynomials. Norms of individual edges and
 one final-block response omit interactions among those sources. They
-cannot be substituted for max_support||C_s(z)||₂ from PD-T?lanczos-nonproduct-codex-P4-03.
+cannot be substituted for max_support||C_s(z)||₂ from PD-T483.
 
 ## Scope
 

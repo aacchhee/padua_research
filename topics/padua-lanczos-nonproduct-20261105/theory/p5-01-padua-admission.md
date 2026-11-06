@@ -1,9 +1,13 @@
-# PD-T?lanczos-nonproduct-codex-p5-01 — exact unsaturated Padua admission
+<a id="pd-tlanczos-nonproduct-codex-p5-01--exact-unsaturated-padua-admission"></a>
+
+# PD-T485 — exact unsaturated Padua admission
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-p5-01`.
 
 ID kind: PD-T.
 Aliases: positive Chebyshev Padua measure; non-affine-product hexagonal
 support; sharp cubature cutoff; truncated checkerboard admission.
-Split from: P5 aggregate-capacity target (the capacity result is PD-T?lanczos-nonproduct-codex-p5-02).
+Split from: P5 aggregate-capacity target (the capacity result is PD-T486).
 Split into: none.
 
 ## Statement
@@ -64,7 +68,7 @@ by coordinator separately).
 | Non-affine-product status, all m and low-degree hull exceptions | PROVED | Explicit hull and affine-product hull obstruction below |
 | Unsaturated injectivity and product orthonormal creators | PROVED | Exact inner products below |
 
-Candidate disposition: retained variant IDEA?lanczos-nonproduct-codex-P5-01.
+Candidate disposition: retained variant IDEA-582.
 No historical novelty claim; product-type recurrence transfer is an
 explicit predecessor, PD-T039, and is rederived for these exact conventions.
 
@@ -176,7 +180,7 @@ no top-stage s=m capacity claim, and no IEEE rounding statement.
 ## Open items
 
 Independent mathematical check, coordinated separately. Aggregate capacity
-is the separate PD-T?lanczos-nonproduct-codex-p5-02 theorem. Alternating/pivot capacity upper bounds are
+is the separate PD-T486 theorem. Alternating/pivot capacity upper bounds are
 not supplied by this admission lemma.
 
 ## History

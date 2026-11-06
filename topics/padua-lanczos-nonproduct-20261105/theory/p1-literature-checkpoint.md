@@ -2,8 +2,8 @@
 
 Reader: Codex, assigned gpt-6.1-sol xhigh; runtime-resolved model metadata
 is not exposed. Access/reading date: 2026-11-05. This is a source record,
-not a mathematical proof record or a priority claim. Provisional LIT IDs
-below remain subject to the coordinator's final allocation.
+not a mathematical proof record or a priority claim. The source record
+below is assigned LIT-630, with its provisional alias retained.
 
 ## Xu2015 — Yuan Xu, Hahn, Jacobi, and Krawtchouk polynomials of several variables
 
@@ -23,7 +23,11 @@ below remain subject to the coordinator's final allocation.
   derivation or a clean PDF check. PDF screenshot calls failed with the
   tool message “content type is not application/pdf”.
 
-### LIT?lanczos-nonproduct-codex-P1-01 — standard simplex/Hahn basis formulas
+<a id="litlanczos-nonproduct-codex-p1-01--standard-simplexhahn-basis-formulas"></a>
+
+### LIT-630 — standard simplex/Hahn basis formulas
+
+Provisional alias: `LIT?lanczos-nonproduct-codex-P1-01`.
 
 - Statement in faithful paraphrase: The preprint gives mutually orthogonal
   Jacobi bases and their squared norms on a simplex, multivariate Hahn

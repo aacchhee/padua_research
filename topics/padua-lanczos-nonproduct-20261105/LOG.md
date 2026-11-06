@@ -1,8 +1,8 @@
 # Span drift on genuinely non-product families: log
 
 - Branch: `codex/padua-lanczos-nonproduct-20261105` · Base: main `be9a831` (PR #29 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (preparation) · Next: `Codex (gpt-6-astra, high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/06-preparation.md](handoffs/06-preparation.md)
-- Reserved final-ID ranges: none. Under the PR #29 rules, reserve when first needed (normally at PR preparation).
+- Stage: PR (readiness check next) · Next: `Claude (Opus 5.5 high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/07-readiness.md](handoffs/07-readiness.md)
+- Permanent reservation: [ALLOCATIONS](ALLOCATIONS.md), first publication `6b31356`: T472–501, N178–180, IDEA570–589, LIT630–632. Assigned T472–494, N178, IDEA570–584, LIT630; unused gaps remain permanent.
 - Claims: P3 all-degree non-affine-product weight separation and uniform sufficient radius; P5 polynomial Padua capacities; P4 model/transfer lemmas and scoped covariance obstruction. Provisional IDs only; see [report](report.md).
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -503,7 +503,7 @@ records its fresh reproductions and their scope.
   left for wording correction. No accepted proof, finite outcome or AC
   decision is reopened. This is registration of audited content, not new
   candidate generation; no new novelty gate/scientific run is needed.
-- The complete30-PR all-state listing has open27/28/30 and27 closed-merged,
+- The complete29-PR all-state listing has open27/28/30 and26 closed-merged,
   none closed-unmerged. Read62 complete ledger/registry copies at the four
   heads in [ALLOCATIONS](ALLOCATIONS.md), including13 distinct full ledger
   versions. Namespace maxima T471/N177/IDEA569/LIT629 include permanent gaps.
@@ -511,3 +511,51 @@ records its fresh reproductions and their scope.
   before assignment, with no collision or accepted-ID renumbering. The first
   pushed ledger commit establishes priority and is linked in PR30. No final
   ID is assigned by this checkpoint. No cleaning action is taken.
+
+## 2026-11-06 — registry application and preparation output
+
+- Reservation publication `6b313567702b0ec465330e2ca4b8186d8be210a4`
+  was pushed and linked in PR30 before assignment. Main and PR28 are unchanged; the PR27 advance and byte-identity refresh
+  are recorded below. No earlier ID or range was modified.
+- Assigned PD-T472–494 (13 PROVED,4 MEASURED,6 OPEN), PD-N178 (PROVED),
+  IDEA570–584 and LIT630. The full provisional-to-final namespace map and
+  considered subroute aliases are in ID_CROSSWALK. N0 remains verification
+  only, and terminal-block/reflection corollaries receive no new ID.
+- The six new OPEN records are faithful homes for previously audited targets,
+  not newly developed mathematics: triangle/disk rates, structural criterion,
+  sharp Padua order, alternating/pivot uppers and fixed-perturbation robustness.
+  New IDs do not promote supporting lemmas to PARTIAL.
+- Applied additive entries to PROOF_STATUS, IDEAS, literature INDEX, CURRENT,
+  CROSSWALK and this topic's RESULTS section; prior topic content is preserved.
+  Shared registries contain content/status/dispositions and completed audit
+  links, with no pending process stage. Current target records retain the
+  exact aggregate model and all undecided quantifiers.
+- Canonical records carry final IDs and full provisional aliases, preserving
+  old heading anchors. Audit02 B1 wording now explicitly places |eta|=1
+  outside the admitted positive full-support family. No accepted proof,
+  status or evidence beyond the audited content changes; final-ID mapping
+  and registration are the mechanical readiness diff, not a new audit batch.
+- No new scan, checker change, receipt rewrite, storage cleanup or external
+  archive delivery. Prepared PR remains draft pending the single Claude
+  readiness diff/reservation refresh. Only AC merges.
+
+- Immediate registration publication check: peer PR27 advanced to8dc1521
+  while preparation was in progress; all16 ledger/registry copies are
+  byte-identical to fc10953. Namespace maxima remain unchanged. The refreshed
+  all-state API listing and the preserved initial listing both contain29
+  PRs (no PR7),26 merged and open27/28/30, no closed-unmerged. Corrected
+  the initial prose population count of30/27; that counting error changed
+  neither which branch heads/files were scanned nor the safe ID bounds.
+
+- Mechanical verification passes:24 unique theory/negative registry rows,
+  exact23-PD-T status distribution,15 candidate IDs,1 LIT,24 matching durable
+  theory IDs and598 checked local links at this checkpoint. Every prior
+  shared-registry byte is preserved. Reverse mapping of the existing24
+  canonical files leaves only B1 wording, one updated heading link and
+  allocation-state wording; accepted statements/proofs/statuses are unchanged.
+  Frozen code/data/inventories/audits remain byte-unchanged.
+- [Handoff07](handoffs/07-readiness.md) pins the preparation output and exact
+  registry diff against base be9a831. It requests the single Claude Opus5.5
+  high readiness check: registry application, B1 and fresh reservation union.
+  There is no assigned multi-PR merge order or batch integration in this
+  single-topic preparation; no peer approval or merge sequence is inferred.

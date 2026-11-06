@@ -226,3 +226,25 @@ separate decision/coverage items; no priority or delivery claim. Only AC merges.
 ## Literature footing — PR21 audited registration
 
 The [literature report](../topics/padua-literature-20261103/report.md) and [source map](../topics/padua-literature-20261103/preparation/final-id-map.json) register the accepted bounded P1–P4 comparisons and corrections:31 new source-statement IDs482–512 and27 reused aliases. Completed preparation replaces the earlier initialization/download-list task at this scope. Source gaps, search-negative limits and developer-only journal/image/NTNU/Crossref checks remain explicit; no further source campaign or manuscript is assigned here. No mathematical frontier, PD status or accepted PR25/26 result is changed. Only AC merges.
+
+## Non-affine-product Lanczos span drift
+
+PD-T480 proves the all-degree exponential BJ lower/polynomial mirror upper
+on non-affine-product measures moment-equivalent to SH_n through degree
+2n+1, with an n-dependent weight mode. Gram/basis/creators/pivots/source
+scales/frozen response are eta-independent; only the ambient normal projector
+changes. PD-T486 gives uniformly polynomial unsaturated Padua BJ/mirror
+capacities. Both use first-order aggregate arbitrary sources and exact full
+projection. PD-N178 refutes only covariance-only absolute-capacity control,
+not an all-degree BJ/best ratio criterion.
+
+Continuous triangle/disk rates, a structural criterion, sharp Padua exponents
+and alternative-rule uppers remain OPEN (PD-T489–493). The n-independent
+perturbation is OPEN/deferred to a follow-up (PD-T494/IDEA-577), not a
+condition on the proved weaker variant. PD-T487/488 retain finite exact
+Hahn/disk coverage and three INCONCLUSIVE screens; no fitted rate or IEEE
+activation follows. These OPEN targets are unassigned follow-ups, not a
+newly scheduled campaign.
+[Results](../results/padua-lanczos-nonproduct-20261105.md),
+[accepted audit01](../topics/padua-lanczos-nonproduct-20261105/audit-01.md),
+[focused audit02](../topics/padua-lanczos-nonproduct-20261105/audit-02.md).

@@ -1,4 +1,8 @@
-# PD-T?lanczos-nonproduct-codex-P2-04 — a common-denominator rational ring variant
+<a id="pd-tlanczos-nonproduct-codex-p2-04--a-common-denominator-rational-ring-variant"></a>
+
+# PD-T477 — a common-denominator rational ring variant
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P2-04`.
 
 ID kind: PD-T.
 Aliases: D65x9; 36 directions with common hypotenuse65; resource-response ring grid.
@@ -33,7 +37,7 @@ radial disk measure ν_μ.
 ## Definitions
 
 Π_s, N_s=(s+1)(s+2)/2, and affine-product have exactly the definitions in
-[PD-T?lanczos-nonproduct-codex-P2-01](p2-01-family-admission.md). A common denominator means an integer
+[PD-T474](p2-01-family-admission.md). A common denominator means an integer
 q>0 such that q times every coordinate is an integer. Directions are
 (a/65,b/65); the nine radii are k/9. All weights are exactly1/324, not
 radial cubature weights. D65x9 is invariant under the sign/swap D4 group.
@@ -61,7 +65,7 @@ capacity-rate target and any claimed runtime advantage remain OPEN.
 ## Depends on
 
 The elementary support/product and circle-divisibility arguments in
-PD-T?lanczos-nonproduct-codex-P2-01. They are recalled below for this exact measure; no external
+PD-T474. They are recalled below for this exact measure; no external
 theorem or unread published formula is used. Prospective Round3 delta
 gate: [novelty-gate-P2.md](../novelty-gate-P2.md).
 
@@ -185,7 +189,7 @@ is a trigonometric polynomial of degree at most17 with36 distinct zeros.
 Multiplying by exp(17iθ) turns it into an ordinary polynomial of degree
 at most34 in exp(iθ); thus it vanishes on the entire circle. Polynomial
 division in y, with the values at y=±sqrt((k/9)²-x²), shows that
-x²+y²-(k/9)² divides p, exactly as in PD-T?lanczos-nonproduct-codex-P2-01. Repeating across nine
+x²+y²-(k/9)² divides p, exactly as in PD-T474. Repeating across nine
 distinct circles gives nine distinct quadratic factors. A nonzero p
 would have degree at least18, a contradiction. Evaluation onΠ_17 is
 injective. With positive weights this makes every moment Gram matrix

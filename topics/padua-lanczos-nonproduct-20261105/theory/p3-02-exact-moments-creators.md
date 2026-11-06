@@ -1,8 +1,12 @@
-# PD-T?lanczos-nonproduct-codex-P3-02 — exact high-mode moments and creators
+<a id="pd-tlanczos-nonproduct-codex-p3-02--exact-high-mode-moments-and-creators"></a>
+
+# PD-T479 — exact high-mode moments and creators
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P3-02`.
 
 ID kind: PD-T.
 Aliases: invisible checkerboard moments; matched normalized SH creators.
-Split from: IDEA?lanczos-nonproduct-codex-P3-01 combined target.
+Split from: IDEA-576 combined target.
 Split into: none.
 
 ## Statement

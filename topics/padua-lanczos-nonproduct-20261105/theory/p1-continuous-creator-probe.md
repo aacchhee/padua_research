@@ -1,4 +1,8 @@
-# PD-T?lanczos-nonproduct-codex-P1-02 — Exact continuous triangle creator probe
+<a id="pd-tlanczos-nonproduct-codex-p1-02--exact-continuous-triangle-creator-probe"></a>
+
+# PD-T473 — Exact continuous triangle creator probe
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P1-02`.
 
 ID kind: PD-T. Aliases: P1 degree-eight moment probe; final-level Legendre
 chain under BJ; continuous triangle frozen-response matrix.

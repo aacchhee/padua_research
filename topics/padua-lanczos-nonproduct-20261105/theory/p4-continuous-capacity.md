@@ -1,4 +1,8 @@
-# PD-T?lanczos-nonproduct-codex-P4-03 — exact atomless aggregate capacity
+<a id="pd-tlanczos-nonproduct-codex-p4-03--exact-atomless-aggregate-capacity"></a>
+
+# PD-T483 — exact atomless aggregate capacity
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P4-03`.
 
 ID kind: PD-T.
 Aliases: continuous L2 source model; localized-source norm; pointwise row
@@ -81,7 +85,7 @@ Overall status: PROVED (analytic fixed-degree model theorem).
 | Hilbert-space normal derivative | PROVED | Finite projection/graph proof below |
 | Exact atomless formula (1), finite bounds (2) | PROVED | Localization and norm proof below |
 
-Candidate disposition: retained IDEA?lanczos-nonproduct-codex-P4-02 model variant. The structural
+Candidate disposition: retained IDEA-579 model variant. The structural
 all-degree family criterion remains OPEN pending the prescribed tests.
 
 ## Depends on

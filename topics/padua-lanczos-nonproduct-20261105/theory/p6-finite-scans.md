@@ -1,4 +1,8 @@
-# PD-T?lanczos-nonproduct-codex-P6-01 — exact finite-grid capacity endpoints
+<a id="pd-tlanczos-nonproduct-codex-p6-01--exact-finite-grid-capacity-endpoints"></a>
+
+# PD-T487 — exact finite-grid capacity endpoints
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P6-01`.
 
 ID kind: PD-T (provisional). Aliases: P6 weighted endpoint pilots.
 Split from: finite scans; all-degree family targets remain separate.

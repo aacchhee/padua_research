@@ -5,7 +5,8 @@
 Coordinator: Codex, requested gpt-6-astra high; mathematical development:
 gpt-6.1-sol xhigh; exact scan development: gpt-6.1-sol medium. Rules/input
 head `cafb74ab6f7738c8af83d0cd0f518b81af16f253`; base main
-`be9a8318150204711d5446d2ea26284cf1ed0819`. Final IDs are not assigned.
+`be9a8318150204711d5446d2ea26284cf1ed0819`. Final IDs: PD-T472–494, PD-N178, IDEA-570–584 and LIT-630;
+[exact namespace mapping](../../ID_CROSSWALK.md#non-affine-product-lanczos--canonical-mappings).
 
 ## Main result and its limit
 
@@ -236,5 +237,19 @@ in `ideas/` and `attempts/`; actual round budgets are in [rounds](rounds.md).
 The [canonical P3 gate-timing disclosure](LOG.md#canonical-protocol-disclosure--p3-gate-timing)
 records AC's accepted disposition and historical precision limits. The
 [response to audit01](response-01.md) lists each correction; the BJ-only P1
-chain qualifier receives a focused diff re-audit. Final IDs, shared registry
-application and readiness review remain later steps. Only AC merges.
+chain qualifier receives a focused diff re-audit. Final IDs and the audited shared registry entries are applied; the single
+readiness diff/reservation check is next. Only AC merges.
+
+## Registration
+
+The accepted claims and retained OPEN targets have final IDs in the
+[crosswalk](../../ID_CROSSWALK.md#non-affine-product-lanczos--canonical-mappings)
+and [PROOF_STATUS](../../PROOF_STATUS.md). PD-T472–488 are the17 existing
+records (13 PROVED,4 MEASURED); PD-T489–494 preserve six original OPEN
+targets without promoting supporting lemmas to PARTIAL. PD-N178 refutes
+IDEA-581 only. Fifteen named candidate dispositions and their unnumbered
+subroutes remain in IDEAS570–584; the P3 timing qualifier is permanent.
+LIT-630 is source-reading coverage only; N0 is verification, not a new claim.
+Audit02 MINOR B1 is corrected to state that |eta|=1 lies outside the admitted
+positive full-support family. No accepted proof, outcome or frozen receipt
+was changed by registration.

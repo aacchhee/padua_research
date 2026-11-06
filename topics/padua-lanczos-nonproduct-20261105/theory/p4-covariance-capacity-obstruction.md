@@ -1,10 +1,14 @@
-# PD-N?lanczos-nonproduct-codex-P4-01 — covariance does not bound absolute capacity
+<a id="pd-nlanczos-nonproduct-codex-p4-01--covariance-does-not-bound-absolute-capacity"></a>
+
+# PD-N178 — covariance does not bound absolute capacity
+
+Provisional alias: `PD-N?lanczos-nonproduct-codex-P4-01`.
 
 ID kind: PD-N.
 Aliases: thin-annulus fixed-covariance obstruction; distinct fixed principal
 axes; degree2 last-pivot blowup; second-moment capacity limitation.
-Split from: IDEA?lanczos-nonproduct-codex-P4-04's covariance-only finite-degree control candidate.
-Split into: none. Original IDEA?lanczos-nonproduct-codex-P4-01's all-degree BJ/best ratio iff remains OPEN.
+Split from: IDEA-581's covariance-only finite-degree control candidate.
+Split into: none. Original IDEA-578's all-degree BJ/best ratio iff remains OPEN.
 
 ## Statement
 
@@ -39,7 +43,7 @@ the lower (2) holds for every admissible rule and supplies no ratio growth.
 ## Definitions
 
 Graded order is 1,x,y,x^2,xy,y^2 through degree2. The model is exactly
-PD-T?lanczos-nonproduct-codex-P4-03: arbitrary L2 injections immediately before exact full projection,
+PD-T483: arbitrary L2 injections immediately before exact full projection,
 rule's own relative raw-product norm, spectral normal output, exact start.
 For epsilon=1 the annulus fills a disk (its inner radius is zero).
 
@@ -58,8 +62,8 @@ Overall status: PROVED (analytic fixed-degree negative statement).
 |---|---|---|
 | Admission, fixed covariance, unbounded lower (2) | PROVED | Written proof below |
 
-Candidate disposition: IDEA?lanczos-nonproduct-codex-P4-04 REJECTED: refuted for covariance-only finite
-absolute-capacity control. IDEA?lanczos-nonproduct-codex-P4-01's original asymptotic ratio target is
+Candidate disposition: IDEA-581 REJECTED: refuted for covariance-only finite
+absolute-capacity control. IDEA-578's original asymptotic ratio target is
 deferred/OPEN, not rejected by this result.
 
 ## Negative-result scope
@@ -72,7 +76,7 @@ the c=1,lambda=2 subfamily fixes distinct axes at nonzero angles.
 
 ## Depends on
 
-PD-T?lanczos-nonproduct-codex-P4-01 common admission lemmas, PD-T?lanczos-nonproduct-codex-P4-03 continuous model derivative. The lower
+PD-T481 common admission lemmas, PD-T483 continuous model derivative. The lower
 uses just a last-column source normal to Pi_2; it does not need numerical
 maximization of the pointwise response matrix.
 

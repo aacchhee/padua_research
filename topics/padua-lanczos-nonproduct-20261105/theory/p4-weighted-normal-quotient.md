@@ -1,4 +1,8 @@
-# PD-T?lanczos-nonproduct-codex-P4-02 — weighted finite aggregate normal quotient
+<a id="pd-tlanczos-nonproduct-codex-p4-02--weighted-finite-aggregate-normal-quotient"></a>
+
+# PD-T482 — weighted finite aggregate normal quotient
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P4-02`.
 
 ID kind: PD-T.
 Aliases: positive-weight PD-T136/137 extension; weighted source convention;
@@ -159,7 +163,7 @@ length and contributes no additional w_i. This completes the proof.
 This is a PROVED corollary of the displayed normal quotient, consolidated
 with PD-T324's common-normal-source construction. It has no new theorem
 ID or historical-mechanism claim. The same statement holds in the compact
-L2 model of [PD-T?lanczos-nonproduct-codex-P4-03](p4-continuous-capacity.md), without requiring atomlessness,
+L2 model of [PD-T483](p4-continuous-capacity.md), without requiring atomlessness,
 provided the polynomial normal space is nonzero.
 
 Fix s>=1 and let T={N_(s-1),...,N_s-1} be exactly the s+1 final-degree

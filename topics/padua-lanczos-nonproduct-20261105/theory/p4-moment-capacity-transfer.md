@@ -1,4 +1,8 @@
-# PD-T?lanczos-nonproduct-codex-P4-04 — moment-preserving aggregate capacity transfer
+<a id="pd-tlanczos-nonproduct-codex-p4-04--moment-preserving-aggregate-capacity-transfer"></a>
+
+# PD-T484 — moment-preserving aggregate capacity transfer
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P4-04`.
 
 ID kind: PD-T.
 Aliases: atomless same-support moment transfer; bounded-density quotient
@@ -68,7 +72,7 @@ all-degree application remains the owning direction's responsibility.
 
 ## Depends on
 
-PD-T?lanczos-nonproduct-codex-P4-02 and PD-T?lanczos-nonproduct-codex-P4-03. PD-T039 is the earlier
+PD-T482 and PD-T483. PD-T039 is the earlier
 polynomial-moment-matching predecessor; its product recurrence statement
 does not itself transfer arbitrary-source capacities.
 
@@ -90,7 +94,7 @@ the unique monic orthogonal polynomials and their d_k. Each alpha_kl
 uses a raw parent product of degree at most the target degree<=n and
 an earlier b_l of degree<=n, again degree<=2n. Each raw-product squared
 norm sigma_h^2 has degree<=2n. Hence alpha,sigma and the scalar frozen
-g recursion are identical. Formula (1) follows directly from PD-T?lanczos-nonproduct-codex-P4-03's
+g recursion are identical. Formula (1) follows directly from PD-T483's
 atomless identity. No equality of the two Hilbert-space projectors was
 assumed.
 
@@ -110,7 +114,7 @@ mu-source norm between sqrt(a) and sqrt(b); rescaling and taking the
 supremum proves both sides of (2). The argument works for finite atoms
 as well as for continuous measures.
 
-For (3), equality of C is already proved, and the finite bounds in PD-T?lanczos-nonproduct-codex-P4-03
+For (3), equality of C is already proved, and the finite bounds in PD-T483
 give its first two inequalities. The support inclusion and atomless
 identity give the last inequality. If M=N_n, U(n) implies the finite
 polynomial space fills its entire ambient space, so the capacity is

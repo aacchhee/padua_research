@@ -1,8 +1,12 @@
-# PD-T?lanczos-nonproduct-codex-P3-03 — non-affine-product measures moment-equivalent to SH_n through degree 2n+1, with an n-dependent weight mode
+<a id="pd-tlanczos-nonproduct-codex-p3-03--non-affine-product-measures-moment-equivalent-to-sh_n-through-degree-2n1-with-an-n-dependent-weight-mode"></a>
+
+# PD-T480 — non-affine-product measures moment-equivalent to SH_n through degree 2n+1, with an n-dependent weight mode
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P3-03`.
 
 ID kind: PD-T.
 Aliases: unchanged SH constants on rank-two weights; uniform eta certificate.
-Split from: IDEA?lanczos-nonproduct-codex-P3-01 combined target.
+Split from: IDEA-576 combined target.
 Split into: none. Supporting admission and moments/creators were recorded
 separately as P3-01 and P3-02.
 
@@ -205,8 +209,7 @@ lower by the positive mirror upper proves (3).
 None of these estimates loses a factor as eta varies inside 0<|eta|<1.
 Every choice 0<eta_0<1 certifies the closed sufficient range
 0<|eta|<=eta_0 for all n>=2; eta_0(n)=1/2 is one such choice.
-At |eta|=1 some weights vanish, leaving the admitted positive full-support
-family. No endpoint claim is made.
+At |eta|=1 some weights vanish, so |eta|=1 lies outside the admitted positive full-support family. No endpoint claim is made.
 In particular the requested finite table is an analytic certificate:
 
 | n | Certified sufficient eta_0(n) |

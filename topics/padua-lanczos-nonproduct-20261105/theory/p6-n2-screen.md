@@ -1,4 +1,8 @@
-# PD-T?lanczos-nonproduct-codex-P6-02 — finite interval growth screens
+<a id="pd-tlanczos-nonproduct-codex-p6-02--finite-interval-growth-screens"></a>
+
+# PD-T488 — finite interval growth screens
+
+Provisional alias: `PD-T?lanczos-nonproduct-codex-P6-02`.
 
 ID kind: PD-T (provisional). Aliases: new-plan N2 endpoint reanalysis.
 Split from: P6 finite scans; their endpoint evidence is P6-01.

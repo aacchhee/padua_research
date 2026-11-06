@@ -28,8 +28,8 @@ lemmas do not upgrade them to PARTIAL.
 | PR28, codex/nn-mop-stability-20261105 | `4e87fc0a771fc13c6d5791f0f4c2e746e4eb9a71` |
 | PR30, own input | `72cbce7816cdd6e02e799c85cb68f79001f831f7` |
 
-The GitHub connector's complete all-state REST listing returned30 PRs:
-open27/28/30,27 closed and merged, no closed-unmerged PR. Thus no missing
+The GitHub connector's complete all-state REST listing returned29 PRs:
+open27/28/30,26 closed and merged, no closed-unmerged PR. Thus no missing
 closed-unmerged reservation needs recovery. `git fetch` refreshed all four
 heads; immediate `git ls-remote` confirmed them before reservation.
 
@@ -58,3 +58,24 @@ The reservation is linked from [ID_CROSSWALK](../../ID_CROSSWALK.md).
 Shared scientific registry application comes after publication. The single
 Claude readiness check reviews that diff and refreshes this union; no merge
 readiness or peer approval is inferred from this reservation.
+
+## Publication and mechanical assignment — 2026-11-06
+
+First pushed reservation: [6b313567702b0ec465330e2ca4b8186d8be210a4](https://github.com/aacchhee/padua_research/commit/6b313567702b0ec465330e2ca4b8186d8be210a4),
+linked in PR30 before assignment. Ranges above remain unchanged.
+Assigned PD-T472–494 (23:13 PROVED,4 MEASURED,6 OPEN), PD-N178 (1 PROVED),
+IDEA570–584 (15 retained candidate dispositions) and LIT630 (1 LITERATURE).
+[Exact mappings and aliases](../../ID_CROSSWALK.md#non-affine-product-lanczos--canonical-mappings).
+No ID is assigned to N0 verification or routine terminal/reflection corollaries.
+Permanent unused gaps: T495–501(7), N179–180(2), IDEA585–589(5), LIT631–632(2).
+No previous reservation shifts, shrinks or changes owner. The final readiness
+refresh against then-current main and every open PR remains separate.
+
+Prepublication assignment refresh, 2026-11-06: PR27 advanced to
+`8dc1521cf68f7780bd10e02495f6f71a639c03c6`; all16 ledger/four-registry
+files are byte-identical to the checked fc10953 snapshot. Main and PR28
+are unchanged; the complete refreshed population is29 PRs,26 merged,
+open27/28/30 and no closed-unmerged PR. The population number above
+corrects the initial prose count; there is no PR7 in the returned population.
+Union maxima and all reservations/assignments are unchanged. Readiness must
+still refresh then-current heads rather than treating this as its own check.
