@@ -83,7 +83,7 @@ python3 -I cmp.py <arxiv-src>/Experiments/experiment1 <outdir>
 | Hahn | biorth. KRYL | 1.62 | 11, 14, 18, 26 |
 | Hahn | biorth. REORTH | 1.39 | 30 |
 
-- **N ≤ 16** (2 families × 6 columns × 12 values of N = 144 entries): 6 entries exceed one decade, by at most 0.62 beyond it. They are Krawtchouk CORE e_N at N=8, and Hahn KRYL e_N and biorthogonality at N=11 and N=14.
+- **N ≤ 16** (2 families × 6 columns × 12 values of N = 144 entries): 6 entries exceed one decade, by at most 0.62 beyond it. They are Krawtchouk CORE e_N at N=8, Krawtchouk KRYL biorthogonality at N=7, and Hahn KRYL e_N and biorthogonality at N=11 and N=14.
 - **N ≥ 17:** exceedances become frequent, up to 3.8 decades. This is where the paper reports that all digits are lost, around N = 15–20 (main.tex:1268), so these values are dominated by amplified rounding, and they are not expected to reproduce to the decade across MATLAB and Octave or across BLAS libraries. This explanation is an interpretation and was not tested.
 - **Qualitative pattern:** it matches the paper.
   - IEP_KRYL is the least accurate, and its error grows fastest.
@@ -97,3 +97,5 @@ python3 -I cmp.py <arxiv-src>/Experiments/experiment1 <outdir>
 - The paper's `error_cond` (conditioning-error) column was not reproduced, because it needs Advanpix.
 - The exact references `kravchuk_exact`/`hahn_exact` were not independently checked against an exact Fraction step-line computation; the step-line convention was not pinned. Indirect consistency: IEP_CORE and IEP_KRYLREORTH match them to about 1e-15 at N = 5.
 - Comparison with this topic's NN metric, or with C4 and the native designs on the same inputs, is the next G5 task. It is not part of this reproduction.
+
+2026-11-06 Codex audit correction (G5-1): restored the omitted Krawtchouk KRYL biorthogonality N=7 entry in the enumeration above; the count6, tables, thresholds and outputs are unchanged. Independent rerun/limitations: [audit-g5-01.md](../audit-g5-01.md).
