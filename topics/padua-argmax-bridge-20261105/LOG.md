@@ -834,3 +834,34 @@ Report600b3956... ACCEPTS both frozen proofs with no unresolved findings. Root a
 ### D28 independent native release
 
 - Ordinarysource review15b80aa2... ACCEPTS unchanged FREEZE4769e50f... /SPECda0bce3a... /SOURCEd76247be..., ownmetadata11rejectionsPASS. Rootreleases EXACT D28controller--run-once afterthispublicationtoDISTINCTAstrahigh /root/d13_support_review as soleindependentexecutor. Sourceauthor/rootneverexecuteit. Same6912/41points/113Btree, freshC23backend/widerintervals, allfreshnorm/origin/leafchecks andoldnewdiagnosticguards. Fixed200wholeCPU/control2/worker180/safety190/call15/20/poll.25. No rescue/retry; onlyfinalaccountacceptedANDdirectEXIT0qualifies. Ownindependentmetadatareconstructionpreregisteredbeforeexecution. ThisreplaysD21independentlyandbenchmarksfullcheappipeline; no newcaseoruniformspeedlaw.
+
+
+### D33 prospective complete2048 analytic assembly
+
+- D30's new wide-sixrow/innerconstant/two-regionfar reduction is independentlyACCEPTED9ae9c041...; no endpointscomputed. D27actualcorners1024accepted, D31nearnoncorner2048sourceprereleaseaccepted butendpointpending. New D33 Solxhigh20min preparation freezes ONE2048-only pairFin/Fout and completeglobalassembly. EXACTD30Cbase/A/Kinner andOLDglobalCnew inoutercase, ALLordinary/outer/mesh/ACTUALorigincharges retained.
+- <=5CPUdirectedscalar onlyafterfullmath/source/SPECfreeze, distinctprereleaseaudit, publication androotrelease. Bothgatesmustpass; no threshold/phase/source/precision/parameter/caprescue/retry. Global2048dependsalsoonacceptedD31near endpoint/replay andD27corner; a missingpremise keepsglobalOPEN. No nativejob orisolated-degreeaccumulation.
+
+### D35 prospective final hard ordinary-row paper block
+
+- RequestedAstraultra30minpaperonly is prospectivelyjustified: afteracceptedD22/D25origin/outercancellations, the remaining ordinary-row perturbation is still charged by coarse112PH/(pi*n). Its paired finite-grid/pole/root structure and the actual shifting sample points require hard operator reconstruction; merely retuning thresholds cannot removeit. ACexplicitlyallowsAstraultra; servingmetadataunexposed. This is a new isolated support target, not an unboundedrepeat ofD13combinedremainder.
+- Firstkill exact ACTUALrow-pair vs symmetricreferenceincrement, includingallphase shifts/removedsixrows/finitecollisionvalues. Seek a genuinelysmaller fullychargedlinearconstant orscopedproofobstruction; do notassumeevennessalone givesquadraticvariation acrossmovingrootcusps. No numerical/native/scalarjob, newonsetor thresholdsearch. Preserveallconsideredmechanisms. Sourceand2048two-regionrecipeunchanged.
+
+
+### D37 prospective final1024 analytic feasibility block
+
+- New fixedN1024-only PAPER gate beforeanysource/endpoint: D35's proposed6PH/n ordinary support (review pending) may make near1024 fit a NEW C02-derived3/50 defectfloor from1024. The remaining far proof needs a new phase partition, not a changed D33input: outerrho>=1 can use the GLOBAL constantgapDc=6211/7260 andu>=47/384; innerrho[1/2,1] needs a fully proved extension of D22/D25 ACTUAL-origin relative operators and the true directional constant modulus.
+- Solxhigh45min lead and justifiedAstraultra30min operator helper within SAME45min coordinatedblock; no doubledround/reset. Ultra justifiedprospectively because movingroot-free strips, shiftedmesh/cuspvariation and endpointreferencecollisions all change domain together. ACexplicitlyallowsAstraultra; servingmetadataunexposed. Helper owns onlynewwide-relativeproof; oldD25/D35untouched.
+- New inner optimization mechanism keeps anisotropy and rho>=1/2 via FIXED Lagrange multiplier1/2: maximize separated directional quartics with linear coefficientKext+1/2, then subtract1/4. Coordinates<=1/2 use47/192 cosinefactor; eithercoordinate>=1/2 uses11/48 anda provedmonotonic tail. This avoids mixing axis constant maxima with the balanced minimumcosinedeficit. No fitted multiplier, phase/root solver or thresholdscan.
+- First kills are exact domain/weight/row/root/shift matches and feasiblecoefficients. CandidateHboundthrough|x|<=1 may be rebuilt usingf4on|x|<=5/4 andcutoff1/4; noneofoldrho3/4/profilenamequantifiersisborrowed. No forcedconstants oronsetpromise. Ifanycomponentfails retainOPENobligation/noscientificjob. Onlyifcompletepapercloses canone frozenN1024<=5CPUdirected budget be separatelyaudited/released; no parameter/source/precision/caprescue/retry. Thisislastanalyticrefinementpath beforeD39freeze, alongsidecheapcertifiercompletion.
+
+
+### D21/D23/D28 and D29/D30/D32 integrated
+
+- D28 f68b4a19... ACCEPTS soleindependentfresh6912native+ownexactmetadata replay: executorAstrahigh directlyEXIT0/session62809/chunk3be94c, finalaccountacceptedcomplete/nullfailure. Whole74.034199CPU versusD21 469.521049; nativepointsum70.122665 versus422.056155; maximum2.707431 versus16.270191. All41freshrows/counters/overlap/widthguards, ownM45 andfullclosedcover independentlyreconstructed,251uniqueartifacts. Ownmetadata.218542CPUcheckpointunder2. ThisclosesD21andD28; no uniformthroughputlaw.
+- D23 fefe368e... ACCEPTS freshindependent2048pairafterownsource/SPECfreeze, exactly2nativecalls/observedEXIT0/finalaccountaccepted. Coldold2.615699,new.488831CPU (5.35xforpair), whole8.502011CPUcheckpoint. Primary24controls evidence/source-reviewed, explicitlynotallrerun; outputs/counters/rawradiusmatchprimary. D23complete.
+- D29 review84fbde47... andD32review82a4a38e... ACCEPTdefectfloorsfrom41/512 andgenericn41conditionalcovercontract, nojobs. D30review9ae9c041... ACCEPTS newwide-sixrow/inner11u/two-regionfarimplication, no2048endpoints. Allreviewedprefixespreservedbydatedrootclosures. Total31/40complete(D01–D30andD32), currentglobalboundary4096unchanged.
+
+### D31 primary release and D34 first source findings
+
+- D31 prerelease51b572c3... ACCEPTS frozena22506a7.../SPEC76c7ff66... exact-radical2048reduction/source. RootreleasesEXACTevaluate--run-once2048ONLY afterthispublication, <=5CPU/nochildren. No threshold/phase/precision/source/caprescue/retry. Near2048OPENuntilprimaryPASS/observedEXIT0andfreshindependentreplay.
+- D34 firstFREEZE28897ba9... isUNRELEASED. Firstsourceauditor d743fe40... recordsF1wrongattemptpath(staticratherthanadaptive) andF2effectivewalllimits1000/1100versuscontract900/1000. Fullremainingmath/source/resourceinspectionfindsnoadditionalissuewithincoverage. No import/controls/native/producer/job/lockwasexecuted. RootpublishesfirstcandidateANDfindingsbeforeauthorpath/wall-onlyrepair/focusedreview. No sourcepatchduringaudit,noattemptconsumed.

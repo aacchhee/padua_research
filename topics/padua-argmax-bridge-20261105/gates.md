@@ -191,3 +191,6 @@ D25 accepted ff101f70...: regularouterACTUAL-origin increment fullyrelative alln
 
 
 D26 finalACCEPT e40c805f... rootglobalonset4096 (far1/6,near3/2000,corner1/8). D27 finalACCEPT830eaf21... actualcornerpi/4squaresfrom1024loss1/8, no global1024claim. D28independentfullcheapreplayreleaseinLOG; D31andD30remainpending.
+
+
+D21/D23/D28 finitecost/resultreviews ACCEPT(f68b4a19...,fefe368e...): same6912fullCPU469.521→74.034, fixed2048matchedpoint5.35xindependentpair, notuniformlaws. D29/D30/D32supportsACCEPT; D31primaryreleaseinLOG. D34firstsourceUNRELEASEDwithtwoexplicitpath/wallfindingstobefixedafterpublication.

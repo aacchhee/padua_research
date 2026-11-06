@@ -475,3 +475,8 @@ D22 is independently accepted: a fully charged partial ACTUAL-origin subtraction
 ### Current analytic boundary4096; actual corners1024
 
 D26 final independent result review accepts exact two-corner global argmax for EVERYn>=4096, with far1/6 and near noncorner3/2000 gaps. D27 separately accepts actual-corner loss1/8 on the larger pi/4 squares from1024. Full physical/parity/collision coverage and explicit PD271 provenance remain; no global1024 follows. The first matched cheap-backend point trial improves2.453814→.431206CPU; fullcover independent6912 benchmark is separately released, and no uniform speed claim follows.
+
+
+### Accepted full cheap-cover comparison
+
+The independent same6912/41point replay completes in74.034199CPU versus469.521049 for the original static check; nativepoint sums422.056155→70.122665. Both exact geometry/proof predicates pass withfreshownM45. This is a scoped fullpipeline comparison, including arithmetic and supervision changes. Independent matched2048point calls give2.615699→.488831CPU. No uniformCPUlawfollows. D29nowprovespositive/radius-dependentdefectfloorsfrom41; D32suppliesa genericn41sufficientcontract. The firstadaptive41sourceisheldunreleasedfortwopath/wallcontractfixesbeforeanyexecution.

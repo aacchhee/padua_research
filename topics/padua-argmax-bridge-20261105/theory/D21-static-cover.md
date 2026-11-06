@@ -312,3 +312,8 @@ independent review, release and any finite result stay separate.
 ## Root contract review closure — 2026-11-06
 
 Report [D21](../independent-checks-D21-static.md), SHA256 `7704a9eb1e866351926278ba1f4e03e41aaa81a78d65604dd4b1358e81717204`, independently accepts this generic sufficient implication and the unchanged first frozen source. Root adopts that implication, not a successful6912 certificate. The fixed primary run is separately released in LOG, with final-accounting/exit0 and fresh replay still required. Reviewed prefix is preserved; final Claude audit remains separate.
+
+
+## Independent instance closure — 2026-11-06
+
+[D28 result review](../independent-checks-D28-result.md), SHA256 `f68b4a19b05ef1bc5e33341e93f9450fdf9077db74f401e626d8d6de6491d305`, performs the sole independent fresh same6912/41point replay with the separately accepted D23 inclusion backend. Every exact closed-cover predicate, own norm45 and all baseline/new guards pass; accepted final accounting and directly observed exit0 are recorded. Root accepts the complete finite artifact and its cost measurement. This is not a new global-range addition beyond already accepted analytic4096, nor a uniform performance claim. Source/core analytic dependencies are unchanged and explicit.

@@ -1,0 +1,48 @@
+{
+  "before_exact_certificate_arithmetic": true,
+  "frozen_entries": 14,
+  "inputs": [
+    {
+      "bytes": 5927,
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D28_static/FREEZE.json",
+      "sha256": "4769e50fbedcdfc54ce771a60f2870e725db71a04ea8933c9c0d6bd1655cf150"
+    },
+    {
+      "bytes": 10106,
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D28_static/SPEC.md",
+      "sha256": "da0bce3a45248f2ecc825eb564e45c626d8763e3f14c3c24a5944566236e6e84"
+    },
+    {
+      "bytes": 6451,
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D28_static/SOURCE.md",
+      "sha256": "d76247be408a85f7c524f0e80f1eb68f190e77c1bb5665ae6af7096d9108b0be"
+    },
+    {
+      "bytes": 8948,
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/independent-checks-D28-static-source.md",
+      "sha256": "15b80aa2f052b4fc51584a08570dd44d58eb42c42afaddc701d6208bb6643044"
+    },
+    {
+      "bytes": 11307,
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D28/static/essential-receipt.json",
+      "sha256": "56180dd9e9eec6e2aaf2ebc5c8a830ab1d5b1e6f11995bbc08611266c0276acb"
+    },
+    {
+      "bytes": 990,
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D28/static/final-accounting.json",
+      "sha256": "7cc9b64572ef8988b0c55d7b6ee63208000605b915383226f305f204408dd688"
+    }
+  ],
+  "observed_controller_exit_code": 0,
+  "observed_controller_exit_tool_chunk": "3be94c",
+  "own_SPEC": {
+    "bytes": 2624,
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D28_result_review/SPEC.md",
+    "sha256": "020667fe37d0c3e774eba91398a5f8db9075b197f0f058c76117b5fac50a25df"
+  },
+  "own_source": {
+    "bytes": 11515,
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D28_result_review/check.py",
+    "sha256": "8cf8746479fdc92d69ebdb7efae2f3dc94dbd6502a2b4fb2b3347237a9598f75"
+  }
+}

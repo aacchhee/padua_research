@@ -275,3 +275,8 @@ All C11 sources, shared files, native fallbacks and Git state untouched.
 ## Root analytic/source review closure — 2026-11-06
 
 Report [D23](../independent-checks-D23-backend.md), SHA256 `874ba7d9322f2c2cc1df3a90e75e4e755fd0495296c523edc4e0d6d3deb14b48`, accepts this parameterized analytic bound and the unchanged first frozen backend/pilot contract. Root adopts the analytic implication. No measured cost, successful pilot or finite cover follows from this closure. Exact primary release/accounting and independent replay remain separate; reviewed prefix is preserved.
+
+
+## Independent implementation-result closure — 2026-11-06
+
+[D23 result review](../independent-checks-D23-result.md), SHA256 `fefe368e1a9dfe40b8698c6daced0cec5ce764aa8a921677745f775cb4c4b06a`, accepts the fixed fresh old/new2048 pilot and source/evidence inspection of the original controls. It independently rebuilt both libraries and executed exactly two cold-table calls; the24 primary calls were not all rerun. D28 additionally freshly validates41 new-backend points at6912. Root adopts this implementation scope and the finite measured speed comparisons, not an all-degree runtime law. Exact mathematical error/radius hypotheses above are unchanged; final Claude audit remains separate.
