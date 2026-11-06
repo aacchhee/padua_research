@@ -61,3 +61,5 @@ No unresolved part remains in the original target. Practical finite-N rates are 
 2026-10-31, Codex gpt-6.1-sol xhigh (explicit orchestrator assignment), rules/base d36722823441dc40c6e19d69a174459348dd309c. Split to preserve the unanswered meaning of an exact leading constant while keeping proved nonsharp comparisons separate.
 
 2026-11-06: Original Statement preserved verbatim. Its existence and explicit-value obligations are both resolved by [PD-T546](../../../topics/padua-mz-sharp-constants-20261106/theory/P3-reverse-bound.md), [PD-T523](../../../topics/padua-mz-sharp-constants-20261106/theory/S1-sharp-one-sided.md). Overall status OPEN → PROVED; earlier comparison-only limitations describe the prior state. See [canonical decision](../../../topics/padua-mz-sharp-constants-20261106/LOG.md).
+
+2026-11-06 (readiness-01 fix R2): the removed header note read “Review update, 2026-10-31: final ID allocation and scoped independent Astra review are complete; see topics/mz-constants/independent-astra-01.md and ID_CROSSWALK.md.” Its pending-audit wording is superseded by the completed audits linked in PROOF_STATUS.md.

@@ -78,3 +78,5 @@ mapping/preparation-pending sentence above is historical and is now
 satisfied by the [final map](../preparation/final-id-map.json) and
 [registration record](../preparation/record.md). No target statement,
 hypothesis, proof or mathematical status changes.
+
+2026-11-06 (readiness-01 fix R2): the removed “Checks and sources” paragraph read: “Administrative durable-target restoration for Claude audit-01 F11. Rules/head a64ef35; Codex, gpt-6.1-sol xhigh, 2026-11-05. No computation, new literature dependence or historical-priority claim.” It is preserved here as provenance; its preparation-pending sentence is superseded by final registration.
