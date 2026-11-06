@@ -145,3 +145,29 @@ their bounded stops are finalized in [rounds](rounds.md).
   until its following commit), and `git diff --check`. Final successor-link
   verification follows handoff publication. The manifest verifier command is
   `python topics/padua-3d-20261106/code/artifact_manifest.py --verify`.
+
+## 2026-11-06 — Claude, claude-opus-5-5 xhigh — substantive audit 01
+
+- Role: independent auditor of Codex development (handoff 02). Rules read at
+  `d0e1bbb267db9928de97538d9b524fb0068538cd`; audited candidate
+  `f1a5b0936d8fb2b033c69af59a6366550f170999`; main `76ba421` unchanged.
+- [Audit 01](audit-01.md), with five Opus 5.5 xhigh subagent scope reports in
+  [audit-01/](audit-01/), audit code in [audit-01/code/](audit-01/code/) and
+  orchestrator receipts in [audit-01/receipts.txt](audit-01/receipts.txt).
+  Full `state/IDEAS.md` read performed.
+- Actually executed: manifest verify PASS before reruns; all 11 handoff-02
+  producer commands in a detached `f1a5b09` worktree, every scientific field
+  identical to the committed receipts (Python 3.13.18 vs 3.12.14 recorded);
+  an independent third-method exact H39 checker over the 171 witnesses and all
+  59,319 residue triples mod 39; T1 brute force/full-cap enumeration; T4/T5/T6
+  reconstructions. Details in the audit.
+- Outcome: no BLOCKING. All claimed PROVED/MEASURED/OPEN statuses accepted,
+  including the two H39 PROVED upgrades. Five MAJOR record/gate findings
+  (missed predecessors; candidate retention and handoff-01 item dispositions,
+  including the unexecuted T5 commuting-completion probe; the T2 gate-coverage
+  deviation, dispositioned as a disclosed uncurable timing deviation for AC;
+  the D3(b) capped-enumeration verdict; the PD-N kind of short relations),
+  15 MINOR and NOTEs. Stage returns to **WORK** for a Codex response; only
+  material changes get a focused re-audit.
+- No IDs reserved or allocated; no shared registry, main, tags or `.github/`
+  changed. Draft PR #33 AUDIT section updated after push.
