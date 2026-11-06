@@ -1,0 +1,281 @@
+{
+  "format": "independent-phase-r9-n32-v1",
+  "status": "PASS",
+  "accepted": true,
+  "scope": "one round9 replay of unchanged previously failed n32 candidate; no degree extension",
+  "source_commit": "b39eec3f61b90815f465442268630c2b2c6b8522",
+  "candidate": {
+    "path": "local-output/argmax-bridge-20261105/bootstrap-r8/n32/n32-phase-compact.json",
+    "bytes": 21338,
+    "sha256": "97c339181652d37e7e3c34522959f1b7157b8ea26d3f0ab83c0ebc1c3901528e"
+  },
+  "checker_sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r9.py",
+      "bytes": 3345,
+      "sha256": "1161ad5c7d4ced9736bffcbf633df349189c842314b04664ff6b465e50f2c01e"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8.py",
+      "bytes": 10583,
+      "sha256": "3c71ada8e49829cb897ee1c064fcdc70d08c846afcb1fb067c6c84673e205bb9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+      "bytes": 5703,
+      "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v3.cpp",
+      "bytes": 12716,
+      "sha256": "f52d1a9da3c86212663f7ac22e9475b76811d7be4bbc4916779fd32a59d95bf0"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py",
+      "bytes": 12518,
+      "sha256": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5609,
+      "sha256": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v2.cpp",
+      "bytes": 10891,
+      "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+    }
+  ],
+  "supervisor": {
+    "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r9_run.py",
+    "bytes": 8084,
+    "sha256": "10bacbc9ff58a44e54f5a95f8065536f113f67999b646b2acd29bf8e5e904078"
+  },
+  "supervisor_argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r9_run.py",
+    "--run-once",
+    "--source-commit",
+    "b39eec3f61b90815f465442268630c2b2c6b8522"
+  ],
+  "worker_argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r9_run.py",
+    "--worker"
+  ],
+  "checker_execution": "runpy.run_path of unchanged checker with exact CLI sys.argv; accounting only surrounds execution",
+  "execution_started_utc": "2026-11-06T09:42:04Z",
+  "execution_finished_utc": "2026-11-06T09:44:24Z",
+  "process_exit_status": 0,
+  "watchdog_stopped": false,
+  "total_subprocess_cpu_seconds": 139.40540900000002,
+  "elapsed_wall_seconds": 139.4345663189997,
+  "total_cpu_limit_seconds": 1200,
+  "aggregate_watchdog_trigger_cpu_seconds": 1188,
+  "aggregate_observed_peak_seconds": 139.2,
+  "accounting": {
+    "checker_argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r9.py",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/n32/n32-phase-compact.json",
+      "--kernel",
+      "round9",
+      "--output",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-r9/n32/checker-report.json"
+    ],
+    "exit_status": 0,
+    "checker_process_cpu_seconds": 138.193144816,
+    "compiler_build_helper_cpu_seconds": 1.1711399999999998,
+    "process_rlimit_cpu": [
+      1190,
+      1191
+    ]
+  },
+  "source_input_supervisor_unchanged_after": true,
+  "checked_leaves": 364,
+  "total_leaves": 364,
+  "pending": 0,
+  "failed_leaves_count": 0,
+  "complete": true,
+  "kind_counts": {
+    "outside": 32,
+    "far": 280,
+    "corner-orbit-plus-defect": 28,
+    "maximum-exclusion-plus-defect": 24
+  },
+  "checker_report": {
+    "path": "local-output/argmax-bridge-20261105/phase-r9/n32/checker-report.json",
+    "bytes": 166401,
+    "sha256": "05247fa822055bc0dcfd9ceac2932bd9dca97309d7e351be48d6100da61f7df7"
+  },
+  "stdout": {
+    "path": "local-output/argmax-bridge-20261105/phase-r9/n32/stdout.txt",
+    "bytes": 166401,
+    "sha256": "05247fa822055bc0dcfd9ceac2932bd9dca97309d7e351be48d6100da61f7df7"
+  },
+  "stderr": {
+    "path": "local-output/argmax-bridge-20261105/phase-r9/n32/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "worker_accounting": {
+    "path": "local-output/argmax-bridge-20261105/phase-r9/n32/worker-accounting.json",
+    "bytes": 641,
+    "sha256": "cce783edca39e59a2d26ce170d46307cd79f0c0157d6fec0c08dbcd3dea46cce"
+  },
+  "full_build_runtime_closure_in_raw_report": true,
+  "closure_entries_rehashed_after": 254,
+  "closure_unchanged_after": true,
+  "kernel_variant": "round9",
+  "kernel_source": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-r9/check-zj3wfgp6/hybrid_kernel_v3.cpp",
+    "bytes": 12716,
+    "sha256": "f52d1a9da3c86212663f7ac22e9475b76811d7be4bbc4916779fd32a59d95bf0"
+  },
+  "checker_binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-r9/check-zj3wfgp6/libphase_checker.so",
+    "bytes": 65168,
+    "sha256": "6fec304ba14ed9dfd207beee3992073d05c82701510869759bdb4130c85c2bee"
+  },
+  "no_max_leaves": true,
+  "retries": 0,
+  "other_degrees_executed": [],
+  "arithmetic": "FLINT 3.1.3 Arb 160-bit balls; exact rational acceptance/geometry",
+  "saved_output_comparison": {
+    "scope": "read-only comparison of saved complete outputs; no kernel execution",
+    "prior_failed_report": {
+      "path": "local-output/argmax-bridge-20261105/bootstrap-r8/checker-n32/checker-report.json",
+      "bytes": 168068,
+      "sha256": "b7801039c828a200f46aa44787cca370e6fcc09c1e300f196d160b76877107a1"
+    },
+    "matched_original_leaves": 364,
+    "nondefect_output_tuples_bit_identical": 332,
+    "defect_lower_tuples_not_weakened": 332,
+    "prior_failed_leaves_closed": 20,
+    "all_closed_with_strict_positive_gap": true,
+    "minimum_strict_gap": "2994108869083203/18014398509481984",
+    "maximum_strict_gap": "7568544686090273/18014398509481984",
+    "closed_leaves": [
+      {
+        "root": 0,
+        "path": "111111011",
+        "defect_lower": "456574611369893/1125899906842624",
+        "strict_gap": "253349245284715/1125899906842624"
+      },
+      {
+        "root": 0,
+        "path": "111111101",
+        "defect_lower": "6926856354095843/18014398509481984",
+        "strict_gap": "3995978595748419/18014398509481984"
+      },
+      {
+        "root": 0,
+        "path": "111111110",
+        "defect_lower": "3599037637426629/9007199254740992",
+        "strict_gap": "1606384642177429/9007199254740992"
+      },
+      {
+        "root": 0,
+        "path": "111111111",
+        "defect_lower": "1791141708291239/4503599627370496",
+        "strict_gap": "762493341145887/4503599627370496"
+      },
+      {
+        "root": 1,
+        "path": "101010001",
+        "defect_lower": "7247012058769713/18014398509481984",
+        "strict_gap": "3995406215777265/18014398509481984"
+      },
+      {
+        "root": 1,
+        "path": "101010100",
+        "defect_lower": "7142552220877291/18014398509481984",
+        "strict_gap": "3157246227169579/18014398509481984"
+      },
+      {
+        "root": 1,
+        "path": "101010101",
+        "defect_lower": "111073475823939/281474976710656",
+        "strict_gap": "93565905055907/562949953421312"
+      },
+      {
+        "root": 1,
+        "path": "101010111",
+        "defect_lower": "1732228902785531/4503599627370496",
+        "strict_gap": "999509462385947/4503599627370496"
+      },
+      {
+        "root": 2,
+        "path": "010101000",
+        "defect_lower": "6926856353879863/18014398509481984",
+        "strict_gap": "3995978437402615/18014398509481984"
+      },
+      {
+        "root": 2,
+        "path": "010101010",
+        "defect_lower": "7164566832829755/18014398509481984",
+        "strict_gap": "3049973242927547/18014398509481984"
+      },
+      {
+        "root": 2,
+        "path": "010101011",
+        "defect_lower": "7198075274194703/18014398509481984",
+        "strict_gap": "3212768925913583/18014398509481984"
+      },
+      {
+        "root": 2,
+        "path": "010101110",
+        "defect_lower": "3652596890860945/9007199254740992",
+        "strict_gap": "2026793685864049/9007199254740992"
+      },
+      {
+        "root": 3,
+        "path": "000000000",
+        "defect_lower": "7108702452650051/18014398509481984",
+        "strict_gap": "2994108869083203/18014398509481984"
+      },
+      {
+        "root": 3,
+        "path": "000000001",
+        "defect_lower": "3571276110422243/9007199254740992",
+        "strict_gap": "1578622938650723/9007199254740992"
+      },
+      {
+        "root": 3,
+        "path": "000000010",
+        "defect_lower": "6928915611482297/18014398509481984",
+        "strict_gap": "3998037659941337/18014398509481984"
+      },
+      {
+        "root": 3,
+        "path": "000000100",
+        "defect_lower": "905876507512145/2251799813685248",
+        "strict_gap": "499425706867485/2251799813685248"
+      },
+      {
+        "root": 0,
+        "path": "1111111001",
+        "defect_lower": "8056892745016481/18014398509481984",
+        "strict_gap": "7568544686090273/18014398509481984"
+      },
+      {
+        "root": 1,
+        "path": "1010101100",
+        "defect_lower": "8023280433772835/18014398509481984",
+        "strict_gap": "7534932365279363/18014398509481984"
+      },
+      {
+        "root": 2,
+        "path": "0101010011",
+        "defect_lower": "4028446372493617/9007199254740992",
+        "strict_gap": "3784272305500337/9007199254740992"
+      },
+      {
+        "root": 3,
+        "path": "0000000110",
+        "defect_lower": "8023280434211823/18014398509481984",
+        "strict_gap": "7534932301007503/18014398509481984"
+      }
+    ]
+  }
+}

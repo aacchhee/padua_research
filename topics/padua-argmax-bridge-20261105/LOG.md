@@ -1,7 +1,7 @@
 # Padua argmax bridge 33 ≤ n < N_* (PD-T099): log
 
 - Branch: `codex/padua-argmax-bridge-20261105` · Base: main `9322fba` (PR #25 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-argmax-bridge-20261105.` · Continuation handoff: [handoffs/04-research.md](handoffs/04-research.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-argmax-bridge-20261105.` · Continuation handoff: [handoffs/05-research.md](handoffs/05-research.md)
 - Reserved final-ID ranges: PD-T392–431, PD-N146–161, IDEA490–529, LIT598–613; first published f708a83. See ALLOCATIONS.md; final IDs not assigned.
 - Current claims: exact global range2–40; finite local patch2–128; reviewed compact endpoint and two-phase defect support; all-degree PD-T099 remains OPEN.
 - Open for AC: none at setup. The sandbox allowance is approved. Syvert is pre-approved under gate B4: syvert1 (16 cores, 256 GB) and syvert2 (32 cores, 128 GB), up to all of both for about a week, and AC launches it from Codex's run package.
@@ -289,3 +289,20 @@
 
 - Round9 preplay ACCEPTED by distinct Astra high at frozen mathaa160dea... and v3kernel f52d1a9d... . The rectangle formula is existing/reused, independently reconstructed with Arb/ARF lower-only point sums; old natural profile bounds are retained via safe maximum. No copied MPFR arithmetic or new novelty/theorem allocation. Independent237rectangles/1658assertions and3savedfailedboxes pass; all their S/corner/constants remain bit-identical to savedv2 outputs, positive defects restore strictness. Developer1678controls also pass; oldsources/candidateunchanged.
 - New wrapper10bacbc9... pins originalcandidate97c339... and transitive source/oldv2 identities, records a supplied published source SHA and enforces1200totalCPU. One full replay may be released after this source checkpoint is pushed. Selected controls are not full acceptance; firstfailedreceipt remains frozen.
+
+### N1 round8 bounded branch-envelope result
+
+- Sol xhigh freezes N1-18 efa3fa15... and OPEN N1-19 companion77ac0429... . The unchanged exact residual F_n admits a continuous bookkeeping increment Q_n with |F_n−Q_n|<9/(2n). Exact strip/cell singular terms cancel; special-row error is charged once per phase rather than per transition; both noncentral collision marks and the half-angle beta0 step are included. This leaves eta−9/(2n)>1/40000 for n>=10^6. No continuous Q bound or full C1 is inferred.
+- The exact beta0 root band has upper endpoint arccos(1−tan(alpha/2)), with width of order sqrt(alpha). The OPEN contract therefore permits fractional/entropy and finite-cusp terms instead of assuming a quadratic-only modulus. Conditional scalar maximization identities are checked algebraically; no phase coefficients or fitted constants are claimed. Zero computation in round8; four author files total27,645bytes. Distinct Astra high accepts both frozen files with no findings in independent-checks-n1-round8.md.
+- Round9 independently reviewed source checkpoint b39eec3f61b90815f465442268630c2b2c6b8522 is pushed after conservative6,693,079-byte size check. Exactly one full original364-leaf replay on the changed v3 backend is released under1200CPU; it is in progress. No new producer or candidate/tree change.
+
+### N3 round9 full original-candidate acceptance
+
+- Exactly one changed-source replay after published preplay gate b39eec3 checks364/364leaves,0failed/0pending,complete/accepted=true,actualexit0; no watchdog stop. WorkerCPU138.193144816, buildhelpers1.17114,totalchild139.405409,wall139.434566319s. Sources/input/supervisor and254build/runtime entries rehashed unchanged. Raw166401bytes SHA05247fa8...; small acceptance receipt and separate report preserve exact provenance.
+- Originalproducer/candidate unchanged:222.81307childCPU/364leaves. All20previous failed comparisons now pass on independent v3 projected-defect bounds. The first failed v2 receipt remains frozen; no tree refinement, unchanged-source retry, new producer or other degree ran. Combined accepted cost about362.218CPU-s versus1003.756CPU-s round6, with63.3percent fewer leaves. This is a known n32 finite comparison, not an all-n scaling theorem or global degree extension.
+- Current bounded jobs are complete. Next scientific targets are the continuous N1 residual modulus (not another model correction), far/remaining-class/true-corner comparison and a separately gated higher-degree cost assessment. Global exact range2–40 and all-degree PD-T099 OPEN; B4/Syvert still blocked.
+
+- Final read-only verification confirms all364root/path/kinds unchanged, all332numerical leaves retain bit-identical six nondefect outputs, and no defect lower bound weakens. All20old failures have exact positive new margins, approximately.166206430.. .420138629, recorded in receipt5bdab765... . No extra kernel calls followed the single full replay.
+- All current agent blocks have ended. Reviewed theory bytes, Python syntax and93essential evidence size/hash identities pass publication checks. [Handoff05](handoffs/05-research.md) carries the next bounded research tasks and the preserved limitations; it is published in the following handoff-only commit.
+
+- Final staged conservative output inventory6,703,431bytes is below AC temporary10,000,000-byte ceiling;93essentialfiles are each<16KiB and index12,724bytes. No raw/library/third-party or off-topic cleanup artifact is staged.

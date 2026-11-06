@@ -22,6 +22,11 @@ residual still needs a small phase-increment bound; the full comparison
 remains OPEN.
 [Coefficient theorem](../topics/padua-argmax-bridge-20261105/theory/N1-round7-coefficients.md),
 [residual target](../topics/padua-argmax-bridge-20261105/theory/N1-round7-comparison.md).
+Round8 bounds all branch artifacts by9/(2n), leaving a continuous
+phase-increment comparison with more than1/40000 tolerance. The
+continuous modulus, including possible fractional/entropy terms, is OPEN.
+[Branch helper](../topics/padua-argmax-bridge-20261105/theory/N1-round8-jumps.md),
+[remaining target](../topics/padua-argmax-bridge-20261105/theory/N1-round8-modulus.md).
 
 **Actual-lambda deficit.** For n>=64, all interior complementary vertical
 edge centers and inward rho<=1/2, lambda<S_n-1/2048.
@@ -42,9 +47,9 @@ The earlier failed whole replay and experimental NaN finding are retained.
 **Corner bootstrap.** A proved maximum-absorption reduction eliminates
 the need for a prior global/corner norm ratio under an explicit energy
 premise. That premise W<=(3/4)n^4Lambda_c is now independently verified
-for every n2–128. It permits a half-phase corner patch in a future
-global cover; complement coverage and the all-n energy premise remain
-OPEN.
+for every n2–128. It supplies half-phase corner patches for the
+explicit finite cover below. All-degree complement coverage and the
+intermediate energy range remain OPEN.
 [Reduction](../topics/padua-argmax-bridge-20261105/theory/N3-bootstrap-corner.md),
 [finite energy](../topics/padua-argmax-bridge-20261105/theory/N3-bootstrap-finite.md).
 The earlier pointwise phase-square1/128 local patch remains separate.
@@ -57,11 +62,17 @@ does not establish an argmax onset or close the intermediate energy range.
 
 The explicit maximum-bootstrap certificate mode has passed independent
 source/math review and controls. One known n32 producer completes364leaves
-in222.813CPU-s. The full independent replay checks364leaves but rejects
-20bootstrap leaves with insufficient projected-defect enclosures, in
-136.175CPU-s. The new-mode certificate is unaccepted; no retry,
-mathematical counterexample or new global degree is counted.
+in222.813CPU-s. The first full replay on the old Arb backend rejected
+20of364bootstrap predicates with insufficient projected-defect enclosures,
+in136.175CPU-s. That failed receipt is preserved; it was not a
+mathematical counterexample.
 [Cover reduction](../topics/padua-argmax-bridge-20261105/theory/N3-bootstrap-cover-r8.md).
+The separately reviewed round9 Arb pair-defect refinement accepts the
+same364-leaf candidate,0failed/0pending,139.405totalcheckerCPU-s. The
+first failed receipt is preserved; no producer rerun/tree change. This
+accepted known n32 case costs about2.8times less combined CPU than
+round6, without a higher-degree scaling claim.
+[Accepted replay](../topics/padua-argmax-bridge-20261105/independent-checks-phase-r9-n32.md).
 
 Other retained results include exact full-phase cotangent rows, uniform
 shifted-cotangent block error and scoped transport/trace obstructions.
@@ -71,8 +82,8 @@ phase-blind certificate was disproved by a strict limiting bound.
 No unread external theorem or historical priority claim is transferred.
 
 Next: validated model evaluation/maximum comparison, far phases and
-remaining center classes/corner coherence; gate a focused independent
-defect-enclosure improvement after the preserved failed bootstrap replay. No B3 PASS,
+remaining center classes/corner coherence; gate any higher-degree cost
+assessment after the accepted bootstrap calibration. No B3 PASS,
 actual onset or B4/Syvert release. Required Claude audit remains pending.
 AC permits10MB total generated outputs for now and directs major cleanup
 to a separate topic; see the canonical LOG instruction.

@@ -112,3 +112,23 @@ counterexample, source soundness failure or accepted new-mode proof.
 Prior accepted17/24/32 round5/6 validations stand unchanged. New bootstrap
 performance remains a producer-only measurement; no higher-degree scaling
 or B3/B4 pass follows. A source change requires a separate bounded gate.
+
+## 2026-11-06 N1 branch-envelope checkpoint
+
+The unchanged near-model residual admits a continuous bookkeeping
+increment with branch-artifact error<9/(2n), leaving>1/40000 at n>=10^6.
+This controls seams/H8/collision/cutoff artifacts only. Its continuous
+modulus may need fractional, entropy and finite-n cusp terms; no
+qualifying constants or full C1 bound are proved. B3 remains OPEN and
+B4 blocked. No second model correction, actual onset or degree extension.
+
+## 2026-11-06 completed bootstrap calibration
+
+The independently reviewed round9 Arb pair-defect refinement passes
+all364leaves of the ORIGINAL n32 candidate,0failed/0pending,exit0,
+139.405totalcheckerCPU-s. The first failed v2 replay remains frozen.
+Producer222.813CPU-s plus this accepted replay is about2.8times less
+combined CPU than round6 at known n32. This validates the explicit
+bootstrap cover mode at its finite premise, not an all-n cost law or
+new global degree. Higher-degree cost needs a fresh bounded gate.
+B3/continuous model comparison and B4 remain OPEN/blocked.

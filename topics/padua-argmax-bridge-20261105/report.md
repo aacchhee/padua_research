@@ -47,6 +47,16 @@ The logarithmic coefficient has no linear phase cusp; a finite-degree
 cusp can remain in the residual. See the [coefficient theorem](theory/N1-round7-coefficients.md)
 and the exact [residual comparison obligation](theory/N1-round7-comparison.md).
 
+Round8's [branch helper](theory/N1-round8-jumps.md) writes that residual
+increment as a continuous bookkeeping increment plus an error<9/(2n).
+It includes every strip seam, special-row approximation, collision mark
+and half-angle cutoff; at n>=10^6 it leaves more than1/40000 for
+the continuous comparison. The [remaining modulus](theory/N1-round8-modulus.md)
+can require fractional/entropy terms as well as the finite-degree cusp.
+No constants closing that modulus or C1 are proved. This is an analytic
+decomposition of the unchanged model, with no additional correction.
+
+
 The [two-phase edge defect](theory/N5-two-phase-defect.md) proves
 lambda<S_n-1/2048 at all interior complementary vertical-edge centers,
 n>=64 and inward rho<=1/2. Thus the new model yields the independently
@@ -110,6 +120,26 @@ This is a failed sufficient enclosure, not a counterexample or accepted
 new-mode certificate. No retry or new degree is counted; see the
 [failed replay](independent-checks-bootstrap-r8-n32.md).
 
+Round9's separately reviewed Arb refinement retains each pair's
+nonnegative/opposite-sign defect lower bound before profile aggregation,
+and preserves the old natural bounds. The original candidate then
+passes364/364leaves,0failed/0pending,exit0 on the changed backend, in
+139.405409totalcheckerCPU-s. Sources/input/supervisor and254build/runtime
+identities are unchanged after replay. The first failed receipt remains
+preserved; no producer rerun or tree change occurred.
+[Accepted replay](independent-checks-phase-r9-n32.md).
+
+| Known n32 mode | Leaves | Producer child CPU | Independent checker total CPU | Outcome |
+|---|---:|---:|---:|---|
+|Round6 pointwise patches|992|620.093|383.663|ACCEPTED|
+|Round8 bootstrap, old Arb defect|364|222.813|136.175|20 rejected predicates|
+|Same bootstrap candidate, round9 Arb defect|364|222.813 reused run|139.405|ACCEPTED|
+
+The accepted bootstrap case uses about2.8times less combined CPU and
+63percent fewer leaves than round6 at this single degree. This is a
+known-degree comparison, with no higher-degree complexity assertion.
+
+
 ## Gates and remaining work
 
 | Gate | Current disposition |
@@ -129,8 +159,8 @@ cannot repair that particular limiting obstruction.
 
 Next work is concrete: implement validated evaluation and comparison
 of M_near, cover far phases/remaining classes and true-corner coherence,
-and test the new bootstrap cover mode after independent implementation
-review. The all-n energy premise remains separate. No next model
+and assess higher-degree cost only under a fresh bounded gate after
+the accepted bootstrap calibration. The all-n energy premise remains separate. No next model
 correction or large compute is inferred from the small near error alone.
 
 ## For the paper
@@ -139,7 +169,11 @@ The campaign extends exact corner-argmax certification through degree40,
 constructs a uniform fixed-count near-phase primitive model, proves a
 two-phase actual-lambda defect, and validates an independent outward
 phase method at17/24/32. A maximum-bootstrap lemma enlarges the
-permitted corner region under an energy condition verified through128.
+permitted corner region under an energy condition verified through128;
+its explicit mode now has a full separate known-degree n32 acceptance.
+Both near-profile logarithmic coefficients favor the corner, and all
+branch artifacts fit a small proved allowance. The continuous residual
+comparison remains unresolved.
 The full all-degree maximum statement remains unresolved because the
 model comparison, far-domain/corner coverage and effective meet-in-the-
 middle onset have not been certified.
