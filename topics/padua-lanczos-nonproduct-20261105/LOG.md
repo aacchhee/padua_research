@@ -1,7 +1,7 @@
 # Span drift on genuinely non-product families: log
 
 - Branch: `codex/padua-lanczos-nonproduct-20261105` · Base: main `be9a831` (PR #29 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT (focused A3 diff) · Next: `Claude (Opus 5.5 high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/05-focused-audit.md](handoffs/05-focused-audit.md)
+- Stage: PR (preparation) · Next: `Codex (gpt-6-astra, high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/06-preparation.md](handoffs/06-preparation.md)
 - Reserved final-ID ranges: none. Under the PR #29 rules, reserve when first needed (normally at PR preparation).
 - Claims: P3 all-degree non-affine-product weight separation and uniform sufficient radius; P5 polynomial Padua capacities; P4 model/transfer lemmas and scoped covariance obstruction. Provisional IDs only; see [report](report.md).
 
@@ -483,3 +483,11 @@ records its fresh reproductions and their scope.
   review of the A3 diff only, with the mechanical response/readiness inputs.
   Final-ID allocation and shared registry application remain subsequent
   preparation tasks; this branch stays draft.
+
+## 2026-11-06 — Claude focused audit 02
+
+- Claude, configured claude-opus-5-5 high. Rules read at `68bf172`; input `84f3d50`.
+- [Audit 02](audit-02.md) **accepts** the A3 BJ-only correction. A targeted rerun of the committed probe logic for all rules confirms that the chain holds under BJ only; mirror and alternating give 1,0,…,0.
+- Audit 02 reviewed response 01's other changes by diff and found them non-material.
+- One MINOR wording item (B1, `p3-03:208`) is to be fixed at preparation.
+- Stage PR. Handoff 05 is done in `c582791`. Next: [handoff 06](handoffs/06-preparation.md), PR preparation.

@@ -3,7 +3,7 @@
 This file is written only by the topic orchestrator. Branch
 `codex/padua-lanczos-nonproduct-20261105`; [draft PR #30](https://github.com/aacchhee/padua_research/pull/30).
 
-## Status (2026-11-06): AUDIT (focused A3 diff after response01)
+## Status (2026-11-06): PR preparation
 
 PR #24's all-degree drift separation (PD-T324) and closure growth (PD-T328/329) hold on SH_n, an affine image of a product measure. This topic seeks the same on families that are genuinely non-product. Directions are in [handoff 01](../topics/padua-lanczos-nonproduct-20261105/handoffs/01-work.md):
 
@@ -81,8 +81,8 @@ completed Hahn16/disk8 finite evidence and separately launched disk16
 alternating/pivot replay without unresolved findings. Compact endpoint tables
 and N2 screens have distinct independent validation. The
 completed Claude substantive audit accepted every proof in scope. The
-[response](../topics/padua-lanczos-nonproduct-20261105/response-01.md) addresses its findings and AC's Q1–Q3 decisions; the material BJ chain qualifier receives focused diff
-re-audit before preparation. Final scan-review coverage is in the dated records.
+[response](../topics/padua-lanczos-nonproduct-20261105/response-01.md) addresses its findings and AC's Q1–Q3 decisions; the focused [audit 02](../topics/padua-lanczos-nonproduct-20261105/audit-02.md)
+accepts the material BJ chain qualifier. Final scan-review coverage is in the dated records.
 
 ## Next step
 
