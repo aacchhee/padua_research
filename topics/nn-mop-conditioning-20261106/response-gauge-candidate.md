@@ -42,7 +42,7 @@ infimum; fixed/smooth gauge equality; variance dominance benchmark.
 - Disposition: retained bounded theorem development. Completed rerun and
   audit records are [response-independent.md](response-independent.md)
   and [audit-02.md](audit-02.md); process state is in [LOG](LOG.md).
-- Canonical theory: `theory/response-gauge-infimum.md` (provisional ID).
+- Canonical theory: `theory/response-gauge-infimum.md` (PD-T517).
 - History: 2026-11-06, handoff03 NOTE1 development; gate timing is qualified
   in [LOG](LOG.md). The audit supplied the taper/observation; no claim of an
   independently invented mechanism.

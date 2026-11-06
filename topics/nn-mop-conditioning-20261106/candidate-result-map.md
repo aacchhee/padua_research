@@ -35,9 +35,11 @@ separates the solved direct target conjunct from supporting dependencies.
 - `IDEA?nn-mop-cond-codex-C1-02` → `IDEA-591`.
 - `PD-T?nn-mop-cond-codex-C1-02` → `PD-T503`.
 - `PD-T?nn-mop-cond-codex-C1-04` → `PD-T505`.
+- `PD-T?nn-mop-cond-codex-C1-05` → `PD-T506`.
 - `IDEA?nn-mop-cond-codex-C1-03` → `IDEA-592`.
 - `PD-T?nn-mop-cond-codex-C1-03` → `PD-T504`.
 - `PD-T?nn-mop-cond-codex-C1-06` → `PD-T507`.
+- `PD-T?nn-mop-cond-codex-C1-07` → `PD-T508`.
 - `IDEA?nn-mop-cond-codex-C2-01` → `IDEA-593`.
 - `PD-T?nn-mop-cond-codex-C2-hard-01` → `PD-T509`.
 - `IDEA?nn-mop-cond-codex-C2-02` → `IDEA-594`.

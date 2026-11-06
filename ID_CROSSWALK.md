@@ -1641,7 +1641,7 @@ Canonical IDs and retained aliases are in the [final map](topics/nn-mop-stabilit
 | LIT?nn-mop-stability-codex-D4-02; LIT-D4-02 | LIT-568 | [record](topics/nn-mop-stability-20261105/literature-D4.md) | LITERATURE |
 | LIT?nn-mop-stability-codex-D4-03; LIT-D4-03 | LIT-614 | [record](topics/nn-mop-stability-20261105/literature-D4.md) | LITERATURE |
 
-Original-target/support relations: PD-T448 -> PD-T432/433/434/437. PD-T449 -> PD-T440/441/442 and PD-N163; each child retains its own statement and status. PD-T447 -> copy/pair sub-target PD-T446; PD-T445 is a supporting graph identity. These are supporting results rather than solved conjuncts of the OPEN targets.
+Original-target/support relations: PD-T448 -> PD-T432/433/434/437 (supporting). PD-T448 is now PARTIAL: PD-T509 is its solved exact-benchmark Krawtchouk rate conjunct (see the [record](topics/nn-mop-stability-20261105/theory/conditioning-growth-target.md)). PD-T449 -> PD-T440/441/442 and PD-N163; each child retains its own statement and status. PD-T447 -> copy/pair sub-target PD-T446; PD-T445 is a supporting graph identity. Apart from PD-T509 for PD-T448, these are supporting results rather than solved conjuncts of the targets.
 
 Original combined ratio-graph/copy negative alias PD-N?nn-mop-stability-codex-D6-literal is retained by PD-N167 (G). Its C statement was split into PD-N168, whose alias PD-N?nn-mop-stability-codex-D6-copy is separate. Finite Hahn application PD-T436 depends on generic criterion PD-T435 and is not a split-off conjunct of that theorem.
 
