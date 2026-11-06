@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **6/25**. Active: **D07**.
+Completed: **7/25**. Active: **D08**; D09 preparation is gated in parallel.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -17,7 +17,11 @@ Completed: **6/25**. Active: **D07**.
 | D04 | COMPLETE | Endpoint-complete digamma reference; fixed-work component adoption | Three support proofs accepted, floor-free actual-row model valid R2/n16; practical model rate still separate. Native adoption stops on first512box at65CPU,0/4 outputs, quality unevaluated;129.892CPU. |
 | D05 | COMPLETE | Outer residual BV and joint model rate; phase-relative half-line; fixed collision-free special set | All support proofs accepted. Explicit uniform O((1+log n)/n) model error for R2/delta pi8/n>=32; practical constants unassessed. Fixed-special model has six exact rows. No numerical runs. |
 | D06 | COMPLETE | Assess the new analytic error; direct four-copy row structure | Frozen allowance fails useful budgets through10000; scalar/analytic check accepted. Cubic/quartic actual-row reduction accepted at pointwise scope; no implementation/runtime claim. |
-| D07 | ACTIVE | Replace coarse outer/retained-row charges; guarded exact-point prototype | Global outer/mesh proof accepted; retained-row proof has one routine inequality correction requested. Point source numerical core passes inspection; two controller findings block execution. |
+| D07 | COMPLETE | Replace coarse outer/retained-row charges; guarded exact-point prototype | All analytic supports accepted after one weak-inequality correction. Source findings closed;13-case point trial PASS12.056CPU, independent fresh replay PASS12.008CPU. Generic n5122.093CPU,3 safe row fallbacks. Point component only. |
+| D08 | ACTIVE | Lower global analytic onset; point-to-box reduction | Global theorem independently accepted for every n>=50000, primary40000 far failure preserved. Three split point-to-box proofs developer-PROVED; distinct review pending, no patch instances. |
+| D09 | PREPARING | Three-point actual-corner trial and a useful independent global norm | Bounded new-norm math and technical specification only; no native instance released before math/source gates. |
+
+Current boundary: exact argmax2–40 and every integer n>=50000; gap41–49999 OPEN.
 
 The initial scientific boundary is exact argmax degrees2–40 and alln>=500000,
 with exact two parity-correct corners. Gap41–499999 staysOPEN. Claude's

@@ -1,11 +1,42 @@
 # Padua argmax bridge — WORK post-audit checkpoint, 2026-11-06
 
 The exact global equality set is proved for **degrees2–40** and for
-**every integer n>=500000**. It consists of {(-1,-1),(1,-1)} for even n
-and {(-1,-1),(-1,1)} for odd n. The remaining gap41–499999 and all-degree
+**every integer n>=50000**. It consists of {(-1,-1),(1,-1)} for even n
+and {(-1,-1),(-1,1)} for odd n. The remaining gap41–49999 and all-degree
 PD-T099 remain OPEN. The fresh campaign has replaced its initial
-astronomical upper boundary with this explicit half-million-degree threshold.
+astronomical upper boundary with this explicit fifty-thousand-degree threshold.
 No mass degree enumeration or energy premise enters the analytic theorem.
+
+## Current accepted theorem and new component
+
+The [D08 global assembly](theory/D08-global-argmax.md) and
+[independent reconstruction](independent-checks-D08-global.md) prove the
+current threshold **50000**, with no unresolved supplementary-review findings.
+The full closed physical cover has far gap1/100 from50000, near noncorner
+gap1/250 from40000, and actual-corner loss(alpha²+beta²)/4 from10000.
+The primary40000 far budget failed and is preserved. The unchanged
+preregistered50000 fallback has directed far slack>0.03671088.
+This uses the completed limiting model and new explicit errors; it neither
+extends the frozen old models nor changes the near model's one correction.
+PD-T271's certified corner constant remains an explicit computer-assisted
+dependency. Final Claude audit and upstream coverage obligations remain.
+
+The actual-Lebesgue point evaluator now passed an independent fresh build
+and all13 fixed cases, including10 finite-polynomial references, in
+**12.008287 total CPU seconds**. At n512 the generic point costs2.093014CPU,
+with full Arb radius2.584e-16 or less and three safe whole-row fallbacks;
+axis cases cost about2CPU with no numerical fallback. These are component
+measurements, not a complete certifier or a new certified degree.
+[Exact scope and replay](independent-checks-D07-fourcopy-result.md).
+
+The D08 common-Peano/signed-dual reduction proposes obtaining whole-box
+bounds from vertex values and an independent global norm. Its squared-phase
+actual-corner version needs only three certified losses to prove punctured
+origin-box descent. Developer proofs are written; distinct review and
+successful point premises are pending. No successful patch is claimed.
+
+The following C13 discussion records the earlier500000 theorem at its
+original scope; D01–D06 sections below are dated campaign history.
 
 ## Analytic progress
 

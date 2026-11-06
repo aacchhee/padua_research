@@ -88,3 +88,76 @@ compiler, polynomial, point/reference or numerical diagnostic ran.
 Before-fix local bytes and the test record are retained in authorized
 post-audit-D07/preparation/controller-fixes/. Focused source recheck
 of these controller-only changes remains required before release.
+
+## Released bounded numerical attempt — 2026-11-06
+
+Root released the reviewed final source in commit
+d4956aea3bda9d5ff9917a5b410778fc7adf4fb7. The exact SPEC command
+ran once, without retry, source/precision change, rescue or additional cases.
+Supervisor exit0/result COMPLETED; no cost stop or arithmetic failure.
+All six invalid API controls and all13 fixed point cases completed.
+Ten n<=128 cases passed complete512-bit finite-reference containment;
+the exact node1 cases use the explicitly allowed converse containment.
+
+| n / case | call CPU s | full Arb radius | numerical row fallbacks |
+| --- | ---: | ---: | ---: |
+|2 / generic|0.001434|7.63626613e-47|0|
+|2 / node|0.000594|0|0|
+|2 / corner|0.019210|9.6416123e-08|0|
+|17 / generic|0.058328|5.25671492e-10|0|
+|17 / node|0.007594|0|0|
+|17 / corner|0.023455|1.50088457e-10|0|
+|32 / generic|0.115796|5.37436513e-11|0|
+|32 / node|0.021633|0|0|
+|32 / corner|0.047198|1.58265209e-11|0|
+|128 / generic-reference|0.881081|5.86045863e-14|1|
+|512 / generic|2.093200|2.58321508e-16|3|
+|512 / axis-zeta-zero|2.168013|3.07339362e-16|0|
+|512 / axis-xi-zero|2.028607|1.09348787e-15|0|
+
+The n<=128 times combine production point and independent reference;
+n512 times are production point calls. They are not a matched scaling
+benchmark. The n2 corner radius9.64e-8 is the paid C11 S0/J16 enclosure,
+not a failed uniform accuracy promise. No uniform-width promise was made.
+
+The finite generic512 performance gate<=10CPU-s passed at
+2.093200s, with lambda in[25.032197529883806, 25.03219752988381] and
+full radius2.58321507766e-16. Its514 rows include3 numerical
+root-coverage fallbacks,0 sign failures,1012 signed blocks,8096 partial
+calls and3365 direct four-copy evaluations including discarded attempts.
+This is a hybrid measured success, not a guarantee of pure fast-path
+success or universally linear runtime.
+
+The n128 generic/reference used1 root fallback. Both512 axes used0
+numerical fallbacks; zeta0 retained2 mathematically eta-degenerate rows,
+while xi0 had none. Exact axis reductions, all three small nodal shortcuts
+and all three small S0-corner shortcuts were exercised and counted.
+S0 shortcut counters do not expose internal C11 work; no zero-cost claim
+is inferred from those zero D07 row counters.
+
+The separately measured C11 common-S context at512 was
+[25.06801827708105, 25.068018277081052], costing0.596345CPU-s.
+It is not an actual-lambda reference and supplies no C08/old-code speedup
+ratio. Large512 points have no independent full-board reference here.
+
+Complete waited-descendant run CPU through supervisor serialization was
+12.056157s, well below180;
+subreaper cleanup/accounting was complete. The final tiny write/print lies
+after that explicit sample and is bounded by the registered parent limit;
+an exact process-exit time is not fabricated. Metadata-only receipt
+postprocessing is separately metered in its raw accounting record.
+Fresh source/header/compiler/runtime closure and loaded-before/after
+identities agree, and the postprocessor rechecked recorded code/data and
+build closure identities. Full raw records remain in authorized Padua
+post-audit-D07/point/. No archival upload is claimed.
+
+The small receipt is evidence/d07-fourcopy-point.json. Its generator
+is preserved at code/post_audit_D07_fourcopy_point/receipt_postprocess.py,
+outside the executed primary freeze, without changing controller/FREEZE/
+SOURCES. Regeneration needs fresh primary outputs at the configured Padua
+local paths, an isolated workspace without the essential receipt, and the
+pre-addendum attempt bytes retained as attempt-before-result-addendum.md;
+it must never overwrite or repeat the published first attempt. Metadata
+timing and resulting summary hashes can differ. All scientific claims
+remain MEASURED point-component observations: no new degree, whole-box
+bound, complete cover, global argmax proof or throughput projection.

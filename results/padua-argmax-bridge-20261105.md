@@ -1,29 +1,29 @@
 # Padua argmax bridge — current research results
 
 The exact two-corner global argmax is proved for **degrees2–40** and
-**every integer n>=500000**. Its equality set is {(-1,-1),(1,-1)} for
-even n and {(-1,-1),(-1,1)} for odd n. The remaining gap **41–499999**
+**every integer n>=50000**. Its equality set is {(-1,-1),(1,-1)} for
+even n and {(-1,-1),(-1,1)} for odd n. The remaining gap **41–49999**
 and all-degree PD-T099 stay OPEN. This is a sufficient upper boundary,
 not a claim of the minimum onset.
 
-[Global theorem](../topics/padua-argmax-bridge-20261105/theory/C13-onset-budget.md),
-[independent reconstruction and focused repair review](../topics/padua-argmax-bridge-20261105/independent-checks-C13-onset.md).
+[Global theorem](../topics/padua-argmax-bridge-20261105/theory/D08-global-argmax.md),
+[independent reconstruction](../topics/padua-argmax-bridge-20261105/independent-checks-D08-global.md).
 The proof covers the full closed square, both parities, nodes, axes,
-collisions and exact equality; it uses no energy premise or mass degree scan.
+collisions and exact equality, without an energy premise or mass degree scan.
+For n>=50000: far S<Lambda_c-1/100; near noncorner
+lambda<Lambda_c-1/250; actual corners
+lambda<=Lambda_c-(alpha²+beta²)/4. These cases use their separately proved
+lower degree floors. The primary40000 far budget fails; the unchanged
+preregistered50000 fallback passes with slack>0.0367. PD-T271's certified
+corner constant is an explicit dependency. Final Claude audit remains pending.
+The older C13 theorem from500000 and original models retain their scopes.
 
-At every n>=500000 the three cases are:
-
-- Far phases: S<Lambda_c-1/2000.
-- Near noncorner centers: lambda<Lambda_c-1/32.
-- Both inward actual-corner patches: lambda<=Lambda_c-(alpha²+beta²)/6.
-
-The unchanged fixed models are controlled by explicit analytic errors,
-weighted coefficient bounds, finite endpoint/collision estimates and a
-stronger corner lower bound. Lower-domain conditions were rechecked
-rather than inferred from the older n>=10^6 theorems. The single near
-correction remains the only one; original tighter C1 is still OPEN and
-unnecessary for this actual global result. C13's split/baseline review
-findings are resolved. An INTERIM Claude audit-01 found no BLOCKING/MAJOR finding (nine MINOR record findings to answer); the formal final Claude audit remains PENDING.
+The guarded actual-Lebesgue point evaluator independently reproduced all13
+fixed cases,10 finite-polynomial references and6 invalid controls in
+12.008287CPU including build. Its n512 generic point takes2.093014CPU,
+full Arb radius<2.584e-16, with3 safe whole-row fallbacks. This is a point
+component; complete whole-box certification and new degrees remain OPEN.
+[Replay](../topics/padua-argmax-bridge-20261105/independent-checks-D07-fourcopy-result.md).
 
 The new fixed-work checker PASSes all364 regions of the unchanged known
 n32 certificate in **46.09totalCPU seconds**(45.23subprocess), versus
@@ -48,7 +48,9 @@ is enclosure insufficiency, not a mathematical counterexample. No full
 replacement certifier, new degree or end-to-end scaling claim follows.
 [Source review](../topics/padua-argmax-bridge-20261105/independent-checks-C15-global.md).
 
-All **15/15** newly authorized coordinated rounds are complete. AC asks
+The original **15/15** coordinated rounds are complete. The new25-round
+post-audit campaign continues; its ledger is the current count. Historical
+D01–D06 paragraphs below retain the boundary known at each checkpoint. AC asks
 for an INTERIM Claude audit with its own independent ideas, then WORK
 with Codex implementing. A clean interim audit must not promote to PR.
 PR27 remains draft WORK; final shared-registry application and final audit
