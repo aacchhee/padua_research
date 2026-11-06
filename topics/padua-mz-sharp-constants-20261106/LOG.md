@@ -1,7 +1,7 @@
 # Sharp MZ constants via limiting operators (PD-T020, PD-T027, PD-T381): log
 
 - Branch: `codex/padua-mz-sharp-constants-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5, high): Continue codex/padua-mz-sharp-constants-20261106.` · Next handoff: [06-focused-denominator-recheck.md](https://github.com/aacchhee/padua_research/blob/codex/padua-mz-sharp-constants-20261106/topics/padua-mz-sharp-constants-20261106/handoffs/06-focused-denominator-recheck.md), published immediately after response outputs.
+- Stage: PR · Next: `Codex (gpt-6-astra high): Continue codex/padua-mz-sharp-constants-20261106.` · Open handoff: [handoffs/07-pr-preparation.md](handoffs/07-pr-preparation.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Current claims: exact scaled CC minimum limit pi^4/8; CC uniform upper bound, endpoint limit, computable error and certified lower1.0044369; signed Padua compact-operator logarithmic limits, elliptic kernel, simple positive ground state, coarse enclosure and finite-mode measurements. Exact local records/checks are linked in [report.md](report.md); no final IDs assigned.
 
@@ -236,3 +236,4 @@ P1 protocol/code published c1e6e59dd9155b87d9847155d3455d602a5f84e9 before execu
 
 - Rules read at `aed39625b4fbe846b581d70088ff45da865d3e31`; main `76ba421` unchanged; audited input `99fd6c0`.
 - [audit-03](audit-03.md): B2 denominator derivation (P4-02) independently reconstructed by hand and PROVED; mpmath quadrature corroborates six entries within truncation tails. B1 and C1–C4 confirmed by diff; evidence, audits, support and earlier handoff bodies byte-unchanged; manifest `--checks` exit 0. ACCEPTED; stage → PR. Two stale process sentences fixed in place (F1, F2) in a separate commit.
+- AC decision on audit-01 A3 (2026-11-06, asked in the Claude session): **"PARTIAL (Recommended)"** for PD-T027 and PD-T381 — proved conjuncts under split-off IDs, decimal-value conjuncts OPEN. PD-T020 → PROVED via P3-03+S1-02 at preparation. Canonical record of this decision; [handoff 07](handoffs/07-pr-preparation.md) carries it to PR preparation. Handoff 06 done in 61c3b3f.
