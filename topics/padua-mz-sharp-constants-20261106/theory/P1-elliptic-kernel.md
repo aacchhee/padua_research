@@ -258,7 +258,7 @@ convergence. In particular
                                             c_jk(f)c_jk(g).           (12)
 
 The parity identity
-1[j+k even](-1)^j = [(-1)^j+(-1)^k]/2
+\(1[j+k\text{ even}]\,(-1)^j = [(-1)^j+(-1)^k]/2\)
 rewrites the damped version of (12) as the integral form with kernel
 
     -8[S_alt,rho(a,a')S_all,rho(b,b')

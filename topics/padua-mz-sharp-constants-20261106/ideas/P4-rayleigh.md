@@ -26,8 +26,13 @@ Aliases: dyadic interval Gram; certified endpoint lower decimal.
 - Resources: one single-threaded float trial solve, one producer check,
   one distinct-agent rerun/check; at most 6 h/run, cumulative shared 48
   CPU-h, at most 2 heavy processes globally. No Syvert/network install.
-- Actual test results and committed evidence: NOT RUN; awaiting published
-  protocol. See ../attempts/P4.md.
+- Actual test results and committed evidence: one planned round executed
+  after protocol/source publication d03e74dcf94020ba26d9fae84d3ff6c5519db901;
+  producer and grouped form checker pass. q(u) is enclosed near
+  1.00443691886466728045777, strictly above the target. See ../attempts/P4.md
+  and evidence/P4-rayleigh.json. Distinct actual rerun and scalar/code/
+  reduction review PASS: ../independent-checks-P4.md. Required Claude
+  focused audit remains separate; root controls theorem/status integration.
 - Disposition: retained lower certificate; practical upper deferred.
 - Disposition reason: accepted finite-J reduction makes the lower cheap;
   existing upper certificate has a documented prohibitive discretization

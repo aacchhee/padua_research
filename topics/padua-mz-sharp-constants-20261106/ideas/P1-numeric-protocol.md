@@ -1,0 +1,83 @@
+# IDEA?mz-sharp-codex-P1-04 — coarse rectangle norm instance
+
+Aliases: constant positive Schur vector; angular Darboux certificate.
+
+- Question/scope: execute the already derived finite rectangle certificate
+  with h=1. Seek honest coarse bounds on r=||B|| and c_minus=-r; no
+  three-digit assertion and no improved c_plus certificate.
+- Mechanism/hypotheses: exact positive kernel and rectangle integral of
+  theory/P1-rectangle-certificate.md. This is a numerical instance of that
+  gated mechanism, not a new analytic mechanism or historical novelty.
+- Closest entries/read: P1-rectangle-certificate and its antecedents; P4
+  integer interval continuation and IDEA-058. Shared P1 gate covers the
+  underlying full-registry scan; technical worker personally read the
+  complete rectangle reduction and relevant P4/S2 predecessor records.
+- Separation/kill: the distinction from smooth Nyström is literal
+  outward-bounded full-rectangle integrals. Missing triangle boundary
+  source cells, unbounded singularities or missing elementary enclosures
+  erase that distinction and invalidate the instance.
+- Literature/search limitations: inherited local kernel proof only; no
+  external theorem/priority claim. This creates no new upper mechanism.
+- Obstructions: positive full source boundary rectangles are included for
+  Schur upper; only lower numerator may omit them. No pointwise elliptic
+  diagonal evaluation or unproved quadrature error is used.
+- Verdict: technical instance of retained P1 rectangle mechanism.
+- Cheapest test: fixed grid N=8 and angular partition T=64.
+- Preregistered round 2: N=16,T=256 only if round 1 has 0<L<U and finishes
+  under 60 CPU seconds. This is an implementation/progress trigger, not
+  an error estimate. No other numerical grid/candidate is authorized.
+- Kill/stop: retain a failed check with its exact reason. Stop after those
+  two instances or any invalid proof/arithmetic invariant; report broad
+  intervals without tuning. Existing global 6h/run,48CPUh,2heavy caps apply;
+  this script is single-threaded and has an internal 300 CPU-second cap.
+- Discriminability: bounds certify only the reported coarse interval;
+  they cannot establish practical digits unless the interval itself does.
+- Actual results/evidence: NOT RUN; source/protocol publication required.
+- Disposition: retained coarse instance; sharper digits and c_plus remain
+  deferred pending an independently checked stronger finite reduction.
+- Canonical result: theory/P1-numeric-certificate.md after execution and
+  independent checks. Required Claude audit remains separate.
+
+## Frozen numerical protocol
+
+Use exact rational bins W_i=[i/N,(i+1)/N], 0<=i<N. Outer square cells
+R_ij=W_i x W_j satisfy i+j<N; these cover D including every boundary
+cell. Inner cells satisfy i+j<=N-2. Choose h=1 on all D, so its exact
+squared norm is integral_D ab da db=1/24.
+
+For every target bin W_i, source bin W_j and t=0,1, enclose I_t(a;W_j)
+uniformly on a in W_i by the angular Darboux formula (1) of the reduction.
+Partition theta into T intervals [pi*l/T,pi*(l+1)/T]. Enclose cos on each
+interval by monotonicity and endpoint Taylor enclosures. Evaluate
+z=t-a*cos(theta), its exact interval square, and each positive square root.
+The difference lies in [0,sqrt(v²-u²)]; intersect the naive difference
+enclosure with that known interval. Sum interval bounds and multiply by
+kappa_t/(pi*T), which is exactly kappa_t/pi² times angular interval width.
+Take nonnegative lower endpoints throughout. Pi uses P4's already reviewed
+Machin enclosure; sqrt uses exact math.isqrt with outward integer endpoints.
+Cos uses its entire Taylor series and twice-next-term bound once the
+absolute ratio is <=1/2 and the tail is below 2^-128. Arithmetic is the
+unchanged reviewed 256-bit integer interval module.
+
+For upper row Q_ij sum 8[I1(i;sourcea)I0(j;sourceb)+
+I0(i;sourcea)I1(j;sourceb)] over all outer source cells. Let U be the
+largest upper endpoint over all outer target cells. This proves r<=U.
+For each scalar J_t(W_i,W_j), the bound is mass(W_i)*I_t(W_i;W_j),
+where mass(W_i)=((i+1)²-i²)/(2N²) exactly. Sum the positive products from
+equation (11) over all inner source/target cells, and multiply its lower
+endpoint by 24 to obtain L<=r. Record full rational dyadic endpoints,
+outward decimal summaries, hashes, command, precision, timings and the
+number of source/target cells. Assert 0<=L<=U before reporting [-U,-L]
+for c_minus. Inherited c_plus remains 0<c_plus<=r<=U; there is no separate
+improved positive spectral enclosure.
+
+Commands from repository root after publication:
+
+```
+python topics/padua-mz-sharp-constants-20261106/code/P1_rectangle.py --N 8 --theta 64 --output topics/padua-mz-sharp-constants-20261106/evidence/P1-rectangle-N8.json
+```
+
+If and only if the stated round-2 trigger holds, substitute N=16,theta=256
+and output P1-rectangle-N16.json. A distinct reviewer must inspect the
+scalar/Darboux implementation and actually rerun consequential output.
+No result is called a computer-assisted proof before those obligations.

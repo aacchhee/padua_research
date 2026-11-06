@@ -49,13 +49,23 @@ corner kernel; positive-vector spectral certificate.
   two consecutive no-progress rounds. This worker performs no numerical
   calculations or code runs. Any numerical protocol must be separately
   published by the coordinator before execution by its code developer.
-- Actual test results and committed evidence: none at this registration.
+- Actual test results and evidence: rounds 1-2 supplied exact bounded
+  operator identification and the positive simple ground-state/norm
+  consequences in ../theory/P1-elliptic-kernel.md and
+  ../theory/P1-positive-spectrum.md. The distinct supplementary
+  reconstruction in ../independent-checks-P1-kernel.md found no
+  mathematical gap in either frozen proof. No numerical run occurred.
 - Disposition and precise rejected scope, if any: retained supplied route;
-  kernel identification and spectral consequences OPEN at registration.
-- Disposition reason: not rejected. Resume/start after coordinator reports
-  response R published, received as 17ca9f441cece178354e70504a6c739df501a224.
-- Canonical theory / negative-result ID: new P1 theory files to follow;
-  no final ID or PD-N allocated by this worker.
+  analytic statements PROVED as new development with supplementary
+  reconstruction complete, focused Claude audit and registry readiness
+  still pending. Decimal certification remains OPEN.
+- Disposition reason: not rejected. The local derivation controlled
+  regularization mass, dense-test ordering and bounded extension; the
+  common intermediate wedge supplied the exact irreducibility property.
+  Response R publication clearance was
+  17ca9f441cece178354e70504a6c739df501a224 before development began.
+- Canonical theory / negative-result ID: provisional P1-01 and P1-02 in
+  the theory files above; no final ID or PD-N allocated by this worker.
 - Topic / completed audit link / history: 2026-11-06, Codex P1 developer,
   requested gpt-6.1-sol xhigh; runtime serving metadata unexposed. Input
   0205690b9c4e959a28e949083e9a1808735abf4b; this record precedes derivation.

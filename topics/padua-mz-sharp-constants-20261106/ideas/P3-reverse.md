@@ -36,14 +36,21 @@ cotangent interpolation; reverse Volterra transfer.
   incomplete proof defers this route and never rejects PD-T020.
 - Test discriminability: analytic all-vector estimates can establish
   the liminf; numerical agreement cannot. No new experiment is planned.
-- Actual test results and committed evidence: none at registration.
-  Development starts after R publication
-  `17ca9f441cece178354e70504a6c739df501a224`.
-- Disposition and precise rejected scope, if any: active analytic attempt.
-- Disposition reason: authorized resumption of the reverse-bound proof
-  obligation; no equality rejection and no K1/K2 alteration.
-- Canonical theory / negative-result ID: forthcoming P3 theory files;
-  original PD-T020 remains OPEN until a complete proof and review.
+- Actual test results and committed evidence: after R publication
+  `17ca9f441cece178354e70504a6c739df501a224`, two productive analytic
+  rounds give the uniform signed remainder P3-01, sharp discrete primitive
+  P3-02 and complete reverse-transfer theorem P3-03. Supplementary
+  independent reconstruction passed at the frozen theory hashes; see
+  ../independent-checks-P3-remainder.md and
+  ../independent-checks-P3-assembly.md. No new numerical execution.
+- Disposition and precise rejected scope, if any: retained analytic
+  completion at the developer-claimed scope, supplementary check passed;
+  required later Claude audit remains separate.
+- Disposition reason: exact all-input norm estimates satisfy the
+  separation criterion; no equality rejection or K1/K2 alteration.
+- Canonical theory / negative-result ID: PD-T?mz-sharp-codex-P3-01,
+  P3-02 and P3-03 in ../theory/P3-*.md. Original registry PD-T020
+  remains unchanged pending coordinator integration and review.
 - Topic / completed audit link / history: 2026-11-06, Codex developer,
   requested gpt-6.1-sol xhigh; serving metadata unexposed. No Git or
   shared-registry edits. Up to six rounds, stop after two consecutive
