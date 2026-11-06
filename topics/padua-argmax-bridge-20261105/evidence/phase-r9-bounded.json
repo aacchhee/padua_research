@@ -1,0 +1,449 @@
+{
+  "format": "padua-phase-r9-bounded-v1",
+  "status": "PASS",
+  "failed_box_gate": true,
+  "controls": 1678,
+  "full_certificate_replayed": false,
+  "actual_argv": [
+    "python",
+    "topics/padua-argmax-bridge-20261105/code/phase_checker/r9_controls.py"
+  ],
+  "cwd": "/workspace/padua_research",
+  "exit_status": 0,
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v3.cpp",
+      "bytes": 12716,
+      "sha256": "f52d1a9da3c86212663f7ac22e9475b76811d7be4bbc4916779fd32a59d95bf0"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+      "bytes": 5703,
+      "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r9.py",
+      "bytes": 3345,
+      "sha256": "1161ad5c7d4ced9736bffcbf633df349189c842314b04664ff6b465e50f2c01e"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/r9_controls.py",
+      "bytes": 7049,
+      "sha256": "8de427cc768b81cb59d9c3993a5b6c0e7d794f6033339548f11c92a8c8ff2b89"
+    }
+  ],
+  "all_imported_python_sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r9.py",
+      "bytes": 3345,
+      "sha256": "1161ad5c7d4ced9736bffcbf633df349189c842314b04664ff6b465e50f2c01e"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+      "bytes": 5703,
+      "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8.py",
+      "bytes": 10583,
+      "sha256": "3c71ada8e49829cb897ee1c064fcdc70d08c846afcb1fb067c6c84673e205bb9"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py",
+      "bytes": 12518,
+      "sha256": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5609,
+      "sha256": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/r9_controls.py",
+      "bytes": 7049,
+      "sha256": "8de427cc768b81cb59d9c3993a5b6c0e7d794f6033339548f11c92a8c8ff2b89"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v3.cpp",
+      "bytes": 12716,
+      "sha256": "f52d1a9da3c86212663f7ac22e9475b76811d7be4bbc4916779fd32a59d95bf0"
+    }
+  ],
+  "old_frozen_sources_and_evidence_unchanged": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v2.cpp",
+      "bytes": 10891,
+      "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5609,
+      "sha256": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8.py",
+      "bytes": 10583,
+      "sha256": "3c71ada8e49829cb897ee1c064fcdc70d08c846afcb1fb067c6c84673e205bb9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py",
+      "bytes": 12518,
+      "sha256": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/bootstrap-r8-n32.json",
+      "bytes": 5147,
+      "sha256": "5ead6761025c1df1505543c574068ea7620c375416a92adcc4834db8133b291f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/bootstrap-r8-producer.json",
+      "bytes": 11632,
+      "sha256": "5487a89b3f5ded7c00b608256f990b636d92daa85ea19280c4d6cb1af356e87f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-phase-n32-bootstrap-r8.json.gz",
+      "bytes": 3367,
+      "sha256": "a01bc14b968676161afa0690e5ed41005da8cb3f87fb8c6393594bc37ed3986a"
+    }
+  ],
+  "candidate": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/n32/n32-phase-compact.json",
+    "bytes": 21338,
+    "sha256": "97c339181652d37e7e3c34522959f1b7157b8ea26d3f0ab83c0ebc1c3901528e"
+  },
+  "saved_failed_report": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/bootstrap-r8/checker-n32/checker-report.json",
+    "bytes": 168068,
+    "sha256": "b7801039c828a200f46aa44787cca370e6fcc09c1e300f196d160b76877107a1"
+  },
+  "local_report": {
+    "path": "local-output/argmax-bridge-20261105/phase-r9/bounded-report.json",
+    "bytes": 59437,
+    "sha256": "fd2fb12d20460390c5a212120d22d964cafcbe0b19571fab19916649ef6f4f9d"
+  },
+  "own_cpu_seconds": 1.182462366,
+  "total_child_cpu_seconds": 1.1964489999999999,
+  "wall_seconds": 2.3800648220003495,
+  "units": [
+    {
+      "box": [
+        1.0,
+        2.0,
+        -4.0,
+        -3.0
+      ],
+      "bounds": [
+        1.9999999981373549,
+        1.9999999981373549,
+        0.9999999962747097,
+        5.00000000372529,
+        1.9999999981373549
+      ],
+      "exact_inf": "2"
+    },
+    {
+      "box": [
+        -2.0,
+        -1.0,
+        3.0,
+        4.0
+      ],
+      "bounds": [
+        1.9999999981373549,
+        1.9999999981373549,
+        0.9999999962747097,
+        5.00000000372529,
+        1.9999999981373549
+      ],
+      "exact_inf": "2"
+    },
+    {
+      "box": [
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "bounds": [
+        0.0,
+        0.0,
+        -2.0000000037252903,
+        2.0000000037252903,
+        0.0
+      ],
+      "exact_inf": "0"
+    },
+    {
+      "box": [
+        -4.0,
+        -3.0,
+        -2.0,
+        -1.0
+      ],
+      "bounds": [
+        0.0,
+        0.0,
+        -2.0000000037252903,
+        2.0000000037252903,
+        0.0
+      ],
+      "exact_inf": "0"
+    },
+    {
+      "box": [
+        0.0,
+        2.0,
+        -4.0,
+        -3.0
+      ],
+      "bounds": [
+        0.0,
+        0.0,
+        -1.0000000074505806,
+        5.000000007450581,
+        0.0
+      ],
+      "exact_inf": "0"
+    },
+    {
+      "box": [
+        -2.0,
+        0.0,
+        3.0,
+        4.0
+      ],
+      "bounds": [
+        0.0,
+        0.0,
+        -1.0000000074505806,
+        5.000000007450581,
+        0.0
+      ],
+      "exact_inf": "0"
+    },
+    {
+      "box": [
+        -1.0,
+        1.0,
+        -4.0,
+        -3.0
+      ],
+      "bounds": [
+        0.0,
+        0.0,
+        -3.0000000074505806,
+        3.0000000074505806,
+        0.0
+      ],
+      "exact_inf": "0"
+    },
+    {
+      "box": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exact_inf": "0"
+    },
+    {
+      "box": [
+        2.0,
+        2.0,
+        -3.0,
+        -3.0
+      ],
+      "bounds": [
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "exact_inf": "4"
+    },
+    {
+      "box": [
+        3.273390607896142e+150,
+        6.546781215792284e+150,
+        -6.546781215792284e+150,
+        -3.273390607896142e+150
+      ],
+      "bounds": [
+        6.5467812096951186e+150,
+        6.5467812096951186e+150,
+        3.2733905957018116e+150,
+        1.636695305167504e+151,
+        6.5467812096951186e+150
+      ],
+      "exact_inf": "6546781215792283740026379393655198304433284092086129578966582736192267592809349109766540184651808314301773368255120142018434513091770786106657055178752"
+    },
+    {
+      "box": [
+        3.054936363499605e-151,
+        6.10987272699921e-151,
+        -6.10987272699921e-151,
+        -3.054936363499605e-151
+      ],
+      "bounds": [
+        6.109872721308947e-151,
+        6.109872721308947e-151,
+        3.05493635211908e-151,
+        1.5274681828878548e-150,
+        6.109872721308947e-151
+      ],
+      "exact_inf": "1/1636695303948070935006594848413799576108321023021532394741645684048066898202337277441635046162952078575443342063780035504608628272942696526664263794688"
+    }
+  ],
+  "random_rectangles": 200,
+  "random_seed": 20261106,
+  "random_samples_scope": "diagnostic corroboration only; rectangle lemma supplies proof",
+  "selected_failed_leaves": [
+    {
+      "root": 0,
+      "path": "111111011",
+      "box": [
+        -0.29452431127404316,
+        -0.1963495408493621,
+        -0.1963495408493621,
+        0.0
+      ],
+      "old_bounds": [
+        11.174094925592955,
+        11.13400010303907,
+        0.0,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "new_bounds": [
+        11.174094925592955,
+        11.13400010303907,
+        0.4055197168017104,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "strict": true
+    },
+    {
+      "root": 2,
+      "path": "010101010",
+      "box": [
+        0.0,
+        0.09817477042468105,
+        -0.1963495408493621,
+        0.0
+      ],
+      "old_bounds": [
+        11.222000368124668,
+        11.203263246144903,
+        0.0,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "new_bounds": [
+        11.222000368124668,
+        11.203263246144903,
+        0.39771335296366644,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "strict": true
+    }
+  ],
+  "signed_radius_boundaries": [
+    {
+      "box": [
+        -0.25,
+        0.0,
+        -0.25,
+        0.0
+      ],
+      "bounds": [
+        3.1336387200404228,
+        3.133638720195643,
+        0.5702198413592894,
+        2.9999999999999996,
+        3.0000000000000004,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    },
+    {
+      "box": [
+        -0.25,
+        0.0,
+        0.0,
+        0.25
+      ],
+      "bounds": [
+        3.1336387200408398,
+        3.13363872019606,
+        0.5702198412816375,
+        2.9999999999999996,
+        3.0000000000000004,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    },
+    {
+      "box": [
+        0.0,
+        0.25,
+        -0.25,
+        0.0
+      ],
+      "bounds": [
+        3.1336387199625317,
+        3.133638720040142,
+        0.5702198412816372,
+        2.9999999999999996,
+        3.0000000000000004,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    },
+    {
+      "box": [
+        0.0,
+        0.25,
+        0.0,
+        0.25
+      ],
+      "bounds": [
+        3.1336387200409153,
+        3.133638720196136,
+        0.5702198412798072,
+        2.9999999999999996,
+        3.0000000000000004,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    }
+  ],
+  "build_source": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-r9/check-11kma85_/hybrid_kernel_v3.cpp",
+    "bytes": 12716,
+    "sha256": "f52d1a9da3c86212663f7ac22e9475b76811d7be4bbc4916779fd32a59d95bf0"
+  },
+  "checker_binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-r9/check-11kma85_/libphase_checker.so",
+    "bytes": 65168,
+    "sha256": "555481a3664ad50184f97fb46e28a35ee117acc9e935f35886f6224727813ca7"
+  },
+  "review": "PENDING distinct source/math review; no whole-certificate replay authorized yet"
+}
