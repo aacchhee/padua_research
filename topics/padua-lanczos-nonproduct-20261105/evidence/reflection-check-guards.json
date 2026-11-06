@@ -1,0 +1,94 @@
+{
+  "status": "PASS exact reflection guard negative controls",
+  "checker": {
+    "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_reflection_scalar.cpp",
+    "bytes": 11085,
+    "sha256": "09d524f915076105b04fb196ee98c6c6cd4cecbc6b6e49bcfacb541ffc999088"
+  },
+  "original_checker": {
+    "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_scalar_check.cpp",
+    "bytes": 5495,
+    "sha256": "58480a866b56e22c61add95d01f90774726b5f90e32186354ef1ab8f87b10b72"
+  },
+  "binary": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/reflection",
+    "bytes": 84224,
+    "sha256": "a3c9193a82846f97f7c4e23afa4b5eba5b8867e043eabea16716d74816f8e559"
+  },
+  "original_binary": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/original",
+    "bytes": 56712,
+    "sha256": "7dfd011fdafb0c8db94aa933f97407278dd3ea789f7ff0265d61cc4d12a72960"
+  },
+  "compile_commands": [
+    [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "topics/padua-lanczos-nonproduct-20261105/code/p6_reflection_scalar.cpp",
+      "-lgmpxx",
+      "-lgmp",
+      "-o",
+      "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/reflection"
+    ],
+    [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "topics/padua-lanczos-nonproduct-20261105/code/p6_scalar_check.cpp",
+      "-lgmpxx",
+      "-lgmp",
+      "-o",
+      "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/original"
+    ]
+  ],
+  "controls": [
+    {
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/reflection",
+        "--guard-self-test"
+      ],
+      "returncode": 0,
+      "stdout": "{\"status\":\"PASS reflection guard controls\",\"malformed_controls_rejected\":3}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/reflection",
+        "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/nonclosed.txt",
+        "6",
+        "bj",
+        "D36x9"
+      ],
+      "input": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/nonclosed.txt",
+        "bytes": 5744,
+        "sha256": "40d6486044c4bf06effec6b4a4d8a3998f31fdbf78e2493cf6629d6d0521cf61"
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "missing exact reflected node\n",
+      "expected_error": "missing exact reflected node"
+    },
+    {
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/reflection",
+        "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/unequal-weights.txt",
+        "6",
+        "bj",
+        "D36x9"
+      ],
+      "input": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/reflection-check/unequal-weights.txt",
+        "bytes": 5750,
+        "sha256": "f83f56d8fa3c0b70ca0ef5ca41d94944a9ad751cb11fc559cc9f07722700715e"
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "unequal exact reflected weights\n",
+      "expected_error": "unequal exact reflected weights"
+    }
+  ],
+  "proof_method": "p6-reflection-methods.md; distinct mathematical review accepted, coordinator explicitly approved bounded pilots before execution",
+  "python": "3.12.14"
+}

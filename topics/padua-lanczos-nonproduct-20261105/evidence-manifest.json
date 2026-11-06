@@ -1,0 +1,37 @@
+{
+  "archive_delivery": "not performed or asserted",
+  "code": [
+    {
+      "bytes": 8950,
+      "path": "inventory/code-001.json",
+      "records": 40,
+      "sha256": "2b32b63b60606dcf5ab699e544cc235a7a80994a395f4169e7ab40b06a974ae3"
+    }
+  ],
+  "cold_storage_index": "cold-storage.json",
+  "counts": {
+    "code": 40,
+    "receipts": 70
+  },
+  "input_policy": "git ls-files intersect HEAD; bytes from committed HEAD, not working tree",
+  "prose_review_only": [],
+  "receipt_identity_rule": "External reference receipt basenames resolve under topics/<topic>/evidence/ to receipt inventory SHA256/git_blob at source_head. pointer identifies the path field; declared bytes/SHA256 are its dictionary siblings. command_pointers identify exact retained commands in that same committed receipt.",
+  "receipts": [
+    {
+      "bytes": 16240,
+      "path": "inventory/receipts-001.json",
+      "records": 55,
+      "sha256": "a9817c2b2f22c58a23385acaa2f4b5360a515257b4f8470c710419611f1b87ee"
+    },
+    {
+      "bytes": 4902,
+      "path": "inventory/receipts-002.json",
+      "records": 15,
+      "sha256": "ab4e476c8a982a056b95f93e4308eefdfefb89fa52bf8d8dac6d1fde1306d963"
+    }
+  ],
+  "schema": "padua-evidence-manifest-v1",
+  "source_head": "62668c194ea510907f7a2a9d47c33d7c67f7a4dc",
+  "status": "local-working; archival-pending",
+  "topic": "padua-lanczos-nonproduct-20261105"
+}

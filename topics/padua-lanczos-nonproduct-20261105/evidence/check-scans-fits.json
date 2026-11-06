@@ -1,0 +1,86 @@
+{
+  "status": "PASS supplementary fits",
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_review.py",
+    "bytes": 12172,
+    "sha256": "ca9c40ccdf17df450ed6411287b143d08ca33e26b093a7b1a0a0ebcfbd84b289"
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/check_scans_review.py",
+    "--mode",
+    "fits",
+    "--output",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/check-scans-fits.json"
+  ],
+  "head": "dbe5c811e0b22498382c8b3a6f2b0f2d9eb66bfc",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "elapsed_seconds": 6.141248340999937,
+  "results": [
+    {
+      "family": "T24",
+      "source": {
+        "path": "/workspace/padua_research/topics/padua-lanczos-frontier-20261105/evidence/g1-compact-triangle.json",
+        "bytes": 9585,
+        "sha256": "2c99758edf1888f2cdd8a0fcd7563512a1466407bb6659f630d7838abad37f38"
+      },
+      "target": {
+        "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/p6-n2-inherited-T24.json",
+        "bytes": 3221,
+        "sha256": "a48731332957d540d11ece383093f97e2ff2c2f808920bfcca849430ba1144ce"
+      },
+      "N2_verdict": "INCONCLUSIVE",
+      "windows": [
+        [
+          "17171717777039/125000000000000",
+          "180235687785123/100000000000000"
+        ],
+        [
+          "-216477623410181/1000000000000000",
+          "911406685370251/500000000000000"
+        ]
+      ],
+      "provenance": [
+        {
+          "kind": "source_manifest",
+          "available": false,
+          "sha256": "8bd04bb6502762a61d53d5633f6737786315d743b6e408e689d647ac7998c144"
+        },
+        {
+          "kind": "source_report",
+          "available": false,
+          "sha256": "5211917f379060bfa5f477354bbe0cf29066dba76d85d428d43de34a6190176b"
+        },
+        {
+          "kind": "frozen_log_code",
+          "available": true,
+          "sha256": "18eea30277a3d2d58aab8ece2f15b33e83a1178d5b03e96180229b41a247aeac"
+        }
+      ],
+      "scope": "Inherited certified compact logs; source reconstruction only where files available"
+    },
+    {
+      "family": "H24_222",
+      "target": {
+        "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/p6-n2-H24_222.json",
+        "bytes": 5154,
+        "sha256": "f406c7151e257a6b7faca6ce57527081ddd6f77ed330f0b6ffebf7fb459f2f42"
+      },
+      "N2_verdict": "INCONCLUSIVE",
+      "windows": [
+        [
+          "55306901913349/1000000000000000",
+          "769751752792109/500000000000000"
+        ],
+        [
+          "-110101208229127/500000000000000",
+          "1651201929678249/1000000000000000"
+        ]
+      ],
+      "independent_log_bounds_contained": 18,
+      "method": "192-bit mantissa bounds; 96-term exact rational atanh series; all 32 OLS corners/window"
+    }
+  ]
+}

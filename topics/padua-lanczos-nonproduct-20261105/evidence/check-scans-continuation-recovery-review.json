@@ -1,0 +1,88 @@
+{
+  "status": "PASS focused primary recovery adapter and retained-artifact review",
+  "primary_receipt": {
+    "path": "topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk16-recovered-acceptance.json",
+    "bytes": 13568,
+    "sha256": "aefa709edb828fd3157218c974b22cd09525f5909ca6d192cba858e7a0b95877"
+  },
+  "interrupted_receipt": {
+    "path": "topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk16-reflection-acceptance.json",
+    "bytes": 13779,
+    "sha256": "ecfac0b198fc8a2e100e39f86451b7bfcee917482c10fd124766a69a8592717b"
+  },
+  "recovery_code": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_harvest_reflection.py",
+    "bytes": 5808,
+    "sha256": "00ab0de9c7a630773f296cb5a7a1647ab9bfbfa6ca75b0f5fadb29c510922410"
+  },
+  "unchanged_original_cases": 7,
+  "exact_nonelapsed_row_pairs": 60,
+  "source_hashes": {
+    "producer": "41c11190b7b15bb5acd5070ccfdb1b66a4bad3739e02d727aba4a506cee2ed6d",
+    "scalar": "58480a866b56e22c61add95d01f90774726b5f90e32186354ef1ab8f87b10b72",
+    "reflection": "09d524f915076105b04fb196ee98c6c6cd4cecbc6b6e49bcfacb541ffc999088"
+  },
+  "reflection_guards": {
+    "alt": {
+      "reflection_orbits": {
+        "nodes": 324,
+        "representatives": 90,
+        "size1": 0,
+        "size2": 18,
+        "size4": 72
+      },
+      "reflection_guards": {
+        "basis_parity_scalar_checks": 99144,
+        "parent_exponent_checks": 152,
+        "alpha_slots_checked": 11628,
+        "cross_parity_zeros_checked": 8748,
+        "source_positions": 152,
+        "expanded_node_source_snapshots": 307800,
+        "expected_expanded_node_source_snapshots": 307800
+      }
+    },
+    "pivot": {
+      "reflection_orbits": {
+        "nodes": 324,
+        "representatives": 90,
+        "size1": 0,
+        "size2": 18,
+        "size4": 72
+      },
+      "reflection_guards": {
+        "basis_parity_scalar_checks": 99144,
+        "parent_exponent_checks": 272,
+        "alpha_slots_checked": 21488,
+        "cross_parity_zeros_checked": 16200,
+        "source_positions": 152,
+        "expanded_node_source_snapshots": 307800,
+        "expected_expanded_node_source_snapshots": 307800
+      }
+    }
+  },
+  "limitation": "No native execution performed by recovery or this review; missing PIVOT harness wall time and original parent exception remain unknown.",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/check_scans_continuation.py",
+    "--primary",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk16-recovered-acceptance.json",
+    "--mode",
+    "recovery-review"
+  ],
+  "collector": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_continuation.py",
+    "bytes": 9694,
+    "sha256": "ea1ab6185e31496e750193a107e1688bc80b92e65c2878c9a04bde83e279300f"
+  },
+  "earlier_harness": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_reflection_full.py",
+    "bytes": 10232,
+    "sha256": "0f16e38acc4840659c92c61fd5fecc8b724e3bb20c12f77a6d3157f32f954c46"
+  },
+  "independent_arithmetic": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_review.py",
+    "bytes": 12172,
+    "sha256": "ca9c40ccdf17df450ed6411287b143d08ca33e26b093a7b1a0a0ebcfbd84b289"
+  }
+}

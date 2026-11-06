@@ -1,0 +1,57 @@
+{
+  "status": "PASS supplementary compare",
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/check_scans_review.py",
+    "bytes": 12172,
+    "sha256": "ca9c40ccdf17df450ed6411287b143d08ca33e26b093a7b1a0a0ebcfbd84b289"
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/check_scans_review.py",
+    "--mode",
+    "compare",
+    "--output",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/check-scans-comparisons.json"
+  ],
+  "head": "dbe5c811e0b22498382c8b3a6f2b0f2d9eb66bfc",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "elapsed_seconds": 0.013389691999918796,
+  "results": [
+    {
+      "family": "H24_222",
+      "max_degree": 16,
+      "reference": {
+        "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/p6-full16-H24_222.json",
+        "bytes": 10535,
+        "sha256": "94d3d3afd5895735d42598a749e0447c6e6ee6a02733614de38c8765617803ea"
+      },
+      "replay": {
+        "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/check-scans-H24_222.json",
+        "bytes": 10608,
+        "sha256": "673f36be76f16f89cb372ba4da483544634075e6083bc11c93d3e3a1d743c676"
+      },
+      "reference_comparisons": 120,
+      "two_path_comparisons": 60,
+      "status": "PASS all scientific fields"
+    },
+    {
+      "family": "D36x9",
+      "max_degree": 8,
+      "reference": {
+        "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/p6-benchmark8-D36x9.json",
+        "bytes": 10955,
+        "sha256": "5721885238a19fd8bfdaa6a611d6556cb125b60b5ca7e127aa2a1ae0db180eba"
+      },
+      "replay": {
+        "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/evidence/check-scans-D36x9.json",
+        "bytes": 10884,
+        "sha256": "4640525d80470a05d72a6c3afea38bd38803c7b2e2d137d1bdf2514e94397395"
+      },
+      "reference_comparisons": 56,
+      "two_path_comparisons": 28,
+      "status": "PASS all scientific fields"
+    }
+  ]
+}

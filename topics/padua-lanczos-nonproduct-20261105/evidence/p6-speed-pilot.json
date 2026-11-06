@@ -1,0 +1,543 @@
+{
+  "schema": "p6-speed-pilot-v1",
+  "rules_head": "dbe5c811e0b22498382c8b3a6f2b0f2d9eb66bfc",
+  "status": "MEASURED implementation comparison; variant NOT recommended",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+    "arithmetic": "GMP mpq_class canonical per-entry rational arithmetic",
+    "gmp_runtime": "libgmpxx/libgmp dynamic linker defaults; version not queried"
+  },
+  "input": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+    "sha256": "48977eefea1c662c3ef23c8ed17d49e3cb0310a6d53321add8c51c91866313f6",
+    "bytes": 5734
+  },
+  "sources": [
+    {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_scalar_check.cpp",
+      "sha256": "58480a866b56e22c61add95d01f90774726b5f90e32186354ef1ab8f87b10b72",
+      "bytes": 5495
+    },
+    {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_native.cpp",
+      "sha256": "41c11190b7b15bb5acd5070ccfdb1b66a4bad3739e02d727aba4a506cee2ed6d",
+      "bytes": 9914
+    },
+    {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_speed_profile.cpp",
+      "sha256": "00343d58e6435480da81c19db18e1cee3911113baeb75379639d3a54059ae7f6",
+      "bytes": 5930
+    },
+    {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_speed_scalar.cpp",
+      "sha256": "541f0eda7d42c729fa08c3d144df8c783ae07cfe10e562c8a572890bdaef8a4d",
+      "bytes": 6115
+    }
+  ],
+  "compile_commands": [
+    [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "topics/padua-lanczos-nonproduct-20261105/code/p6_speed_profile.cpp",
+      "-lgmpxx",
+      "-lgmp",
+      "-o",
+      "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile"
+    ],
+    [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "topics/padua-lanczos-nonproduct-20261105/code/p6_speed_scalar.cpp",
+      "-lgmpxx",
+      "-lgmp",
+      "-o",
+      "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero"
+    ]
+  ],
+  "timing_method": "Python time.monotonic around subprocess.run(argv, timeout=60, stdout=file, stderr=file); all processes serial, one CPU slot allocated by n0_replay",
+  "runs": [
+    {
+      "binary": "profile",
+      "degree": 6,
+      "rule": "bj",
+      "returncode": 0,
+      "wall_seconds": 1.066740559000209,
+      "argv": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "6",
+        "bj",
+        "D36x9"
+      ],
+      "timeout_seconds": 60,
+      "stdout": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile6-bj.jsonl",
+        "sha256": "3bcdaefc8d7a9146a1ec0d8569ec89a1292c02d318a68fc583576c0a4e400587",
+        "bytes": 18400
+      },
+      "stderr": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile6-bj.log",
+        "sha256": "6e81b60e31d85181e0ce198c37b1dc940682cd212990cad3735368fd3af90cb0",
+        "bytes": 533
+      },
+      "phases_seconds": {
+        "basis": 0.352128,
+        "source": 0.57173,
+        "finish": 0.0934219
+      }
+    },
+    {
+      "binary": "zero",
+      "degree": 6,
+      "rule": "bj",
+      "returncode": 0,
+      "wall_seconds": 1.067306703999975,
+      "argv": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "6",
+        "bj",
+        "D36x9"
+      ],
+      "timeout_seconds": 60,
+      "stdout": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero6-bj.jsonl",
+        "sha256": "a9f7eb9dff877540c76490e5966d290a6588b20985796a0721188710bd274807",
+        "bytes": 18399
+      },
+      "stderr": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero6-bj.log",
+        "sha256": "fc9f17edf1d54b58b32c1a98af713795924877aa1eaa975f3c228b14a4ec3378",
+        "bytes": 533
+      },
+      "phases_seconds": {
+        "basis": 0.359596,
+        "source": 0.558566,
+        "finish": 0.100549
+      }
+    },
+    {
+      "binary": "profile",
+      "degree": 6,
+      "rule": "mirror",
+      "returncode": 0,
+      "wall_seconds": 1.1676722309998695,
+      "argv": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "6",
+        "mirror",
+        "D36x9"
+      ],
+      "timeout_seconds": 60,
+      "stdout": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile6-mirror.jsonl",
+        "sha256": "bd0fc83ab0141d15f915d06634c40dcbd48bd464482fe00d1f610d6bf9fd5473",
+        "bytes": 17621
+      },
+      "stderr": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile6-mirror.log",
+        "sha256": "768b45b5d93ccc154022a2989954dbc40cbd3f040744a18ddef0b7b994838f16",
+        "bytes": 555
+      },
+      "phases_seconds": {
+        "basis": 0.3935,
+        "source": 0.624829,
+        "finish": 0.113878
+      }
+    },
+    {
+      "binary": "zero",
+      "degree": 6,
+      "rule": "mirror",
+      "returncode": 0,
+      "wall_seconds": 1.3192898400000104,
+      "argv": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "6",
+        "mirror",
+        "D36x9"
+      ],
+      "timeout_seconds": 60,
+      "stdout": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero6-mirror.jsonl",
+        "sha256": "7ee9dd0344524bc24a6c29785b044c301025b00a2e4c72fed0e9ed4e582eaedf",
+        "bytes": 17621
+      },
+      "stderr": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero6-mirror.log",
+        "sha256": "c0c28b1bf8f73061631a3a1af1e323ae496994159612a72977ec806ae117848f",
+        "bytes": 557
+      },
+      "phases_seconds": {
+        "basis": 0.359979,
+        "source": 0.820343,
+        "finish": 0.126572
+      }
+    },
+    {
+      "binary": "profile",
+      "degree": 6,
+      "rule": "alt",
+      "returncode": 0,
+      "wall_seconds": 1.4690700860001016,
+      "argv": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "6",
+        "alt",
+        "D36x9"
+      ],
+      "timeout_seconds": 60,
+      "stdout": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile6-alt.jsonl",
+        "sha256": "d06a1fcae630ed3b7ec77122660dfe84bb10272bdb614f3d9485b9fb8b67fefb",
+        "bytes": 19647
+      },
+      "stderr": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile6-alt.log",
+        "sha256": "3c4e6f9f3a4556d1bd61df5d50d82afff32c9f2afe5c30fb2d786b558122effc",
+        "bytes": 539
+      },
+      "phases_seconds": {
+        "basis": 0.366943,
+        "source": 0.930798,
+        "finish": 0.124846
+      }
+    },
+    {
+      "binary": "zero",
+      "degree": 6,
+      "rule": "alt",
+      "returncode": 0,
+      "wall_seconds": 1.3677957560000777,
+      "argv": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "6",
+        "alt",
+        "D36x9"
+      ],
+      "timeout_seconds": 60,
+      "stdout": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero6-alt.jsonl",
+        "sha256": "6ae8eee20d465f5b6eda2b9713b908553060230ebba81ccfaa264342ec399def",
+        "bytes": 19647
+      },
+      "stderr": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero6-alt.log",
+        "sha256": "d184883b75173184ac134c8e6448b3551715e53079c4383bf6e13bd3aa138301",
+        "bytes": 539
+      },
+      "phases_seconds": {
+        "basis": 0.406839,
+        "source": 0.837761,
+        "finish": 0.116322
+      }
+    },
+    {
+      "binary": "profile",
+      "degree": 6,
+      "rule": "pivot",
+      "returncode": 0,
+      "wall_seconds": 1.7192503209998904,
+      "argv": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "6",
+        "pivot",
+        "D36x9"
+      ],
+      "timeout_seconds": 60,
+      "stdout": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile6-pivot.jsonl",
+        "sha256": "0d9c21f043a167be18fc5f93f9fd5fa71cc68965b42c5d99a1b4aa9a67716974",
+        "bytes": 17640
+      },
+      "stderr": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile6-pivot.log",
+        "sha256": "ab65abf4aefeca11ef2874f1eb37e0823462955eb001c573865150e83da9139a",
+        "bytes": 550
+      },
+      "phases_seconds": {
+        "basis": 0.58131,
+        "source": 0.998961,
+        "finish": 0.119659
+      }
+    },
+    {
+      "binary": "zero",
+      "degree": 6,
+      "rule": "pivot",
+      "returncode": 0,
+      "wall_seconds": 1.4684206059998814,
+      "argv": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "6",
+        "pivot",
+        "D36x9"
+      ],
+      "timeout_seconds": 60,
+      "stdout": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero6-pivot.jsonl",
+        "sha256": "4ba410725308a14799b67799b013e66b08a105e4e9c16ba69138b19d06c8a7aa",
+        "bytes": 17641
+      },
+      "stderr": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero6-pivot.log",
+        "sha256": "ce86fc1005de4fbc6c7753911788cba776d0ce56db07b65bf7024faaded24d2a",
+        "bytes": 552
+      },
+      "phases_seconds": {
+        "basis": 0.545253,
+        "source": 0.786141,
+        "finish": 0.0983511
+      }
+    },
+    {
+      "binary": "profile",
+      "degree": 8,
+      "rule": "bj",
+      "returncode": 0,
+      "wall_seconds": 7.338290566000069,
+      "argv": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "8",
+        "bj",
+        "D36x9"
+      ],
+      "timeout_seconds": 60,
+      "stdout": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile8-bj.jsonl",
+        "sha256": "68421a33013bee3a210b66b711970311330a2cfa428a49e7807c8b52d6238be5",
+        "bytes": 62409
+      },
+      "stderr": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile8-bj.log",
+        "sha256": "a24a19ccad302adadf4e427ef1df8a239f93bcc9bc431bf47fce02b80d1299e1",
+        "bytes": 786
+      },
+      "phases_seconds": {
+        "basis": 1.95285,
+        "source": 4.91366,
+        "finish": 0.452253
+      }
+    },
+    {
+      "binary": "zero",
+      "degree": 8,
+      "rule": "bj",
+      "returncode": 0,
+      "wall_seconds": 7.284530262000089,
+      "argv": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "8",
+        "bj",
+        "D36x9"
+      ],
+      "timeout_seconds": 60,
+      "stdout": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero8-bj.jsonl",
+        "sha256": "7fa38eb4c2c24a382917d20b45d36d0c28f0b21d8906a25e33abed65919eb9b0",
+        "bytes": 62410
+      },
+      "stderr": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero8-bj.log",
+        "sha256": "8c1ece14c7bd8eac60b510f547f30492bdd1b060fcd918dcda267975cb6bc419",
+        "bytes": 786
+      },
+      "phases_seconds": {
+        "basis": 1.92803,
+        "source": 4.90516,
+        "finish": 0.444455
+      }
+    },
+    {
+      "binary": "profile",
+      "degree": 8,
+      "rule": "pivot",
+      "returncode": 0,
+      "wall_seconds": 10.092961251999895,
+      "argv": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "8",
+        "pivot",
+        "D36x9"
+      ],
+      "timeout_seconds": 60,
+      "stdout": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile8-pivot.jsonl",
+        "sha256": "20b0fa72222f9db1e274e1ef01fc1174e3120e1fd76a75bddbf62a21195bee61",
+        "bytes": 61577
+      },
+      "stderr": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/profile8-pivot.log",
+        "sha256": "b07e51cde67a7b754b21371097d643855205f8fa5bdfdb9073cf1a3a69299aae",
+        "bytes": 809
+      },
+      "phases_seconds": {
+        "basis": 2.62521,
+        "source": 7.07269,
+        "finish": 0.38273
+      }
+    },
+    {
+      "binary": "zero",
+      "degree": 8,
+      "rule": "pivot",
+      "returncode": 0,
+      "wall_seconds": 12.467253587000187,
+      "argv": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "8",
+        "pivot",
+        "D36x9"
+      ],
+      "timeout_seconds": 60,
+      "stdout": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero8-pivot.jsonl",
+        "sha256": "7e04b7ea226b3acdd83843a4ccd29fb94af7013910402979f720770951595d32",
+        "bytes": 61572
+      },
+      "stderr": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6-speed/zero8-pivot.log",
+        "sha256": "671e0e8a8dd0519b2249c571e5cd1efe1aefc044315217aa4156d7b3b13e0421",
+        "bytes": 809
+      },
+      "phases_seconds": {
+        "basis": 2.8838,
+        "source": 9.06892,
+        "finish": 0.476908
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "max_degree": 6,
+      "rule": "bj",
+      "exact_all_fields_except_elapsed_seconds": "PASS",
+      "rows": 5,
+      "degrees": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_sources": true,
+      "point_count": 324,
+      "pivot_ties": []
+    },
+    {
+      "max_degree": 6,
+      "rule": "mirror",
+      "exact_all_fields_except_elapsed_seconds": "PASS",
+      "rows": 5,
+      "degrees": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_sources": true,
+      "point_count": 324,
+      "pivot_ties": []
+    },
+    {
+      "max_degree": 6,
+      "rule": "alt",
+      "exact_all_fields_except_elapsed_seconds": "PASS",
+      "rows": 5,
+      "degrees": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_sources": true,
+      "point_count": 324,
+      "pivot_ties": []
+    },
+    {
+      "max_degree": 6,
+      "rule": "pivot",
+      "exact_all_fields_except_elapsed_seconds": "PASS",
+      "rows": 5,
+      "degrees": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "all_sources": true,
+      "point_count": 324,
+      "pivot_ties": [
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "max_degree": 8,
+      "rule": "bj",
+      "exact_all_fields_except_elapsed_seconds": "PASS",
+      "rows": 7,
+      "degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "all_sources": true,
+      "point_count": 324,
+      "pivot_ties": []
+    },
+    {
+      "max_degree": 8,
+      "rule": "pivot",
+      "exact_all_fields_except_elapsed_seconds": "PASS",
+      "rows": 7,
+      "degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "all_sources": true,
+      "point_count": 324,
+      "pivot_ties": [
+        [
+          2,
+          1
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Single serial measurement per retained pairing; wall-clock variability, no speedup confidence interval.",
+    "No degree16 speed variant run. No acceptance or distinct-agent approval claimed.",
+    "No symmetry, representation, source or node reduction.",
+    "Preliminary BJ6 profile1.168s artifacts overwritten by paired repeat; failed /usr/bin/time wrapper did not execute checker."
+  ],
+  "decision": "No material speedup observed; use original scalar checker for authorized3600-second full-degree checks. No source override."
+}

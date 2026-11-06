@@ -1,0 +1,173 @@
+{
+  "status": "INCOMPLETE cost benchmark",
+  "family": "D65x9",
+  "rule": "alt",
+  "max_degree": 12,
+  "per_case_seconds": 120,
+  "input": {
+    "family": "D65x9",
+    "admission": "theory/p2-04-low-denominator-rings.md",
+    "point_count": 324,
+    "supplied_weight_sum": "1",
+    "native_weight_sum": "1",
+    "native_input_bytes": 5950,
+    "native_input_sha256": "94cca6d83b3c918840e13d097faa70a3a64877811b293f120e39b3c2e55fbaa0",
+    "parameters": {
+      "common_hypotenuse": 65,
+      "direction_count": 36,
+      "radii": [
+        "1/9",
+        "2/9",
+        "1/3",
+        "4/9",
+        "5/9",
+        "2/3",
+        "7/9",
+        "8/9",
+        "1"
+      ],
+      "common_coordinate_denominator": 585,
+      "weight": "1/324",
+      "integer_pairs": [
+        [
+          16,
+          63
+        ],
+        [
+          25,
+          60
+        ],
+        [
+          33,
+          56
+        ],
+        [
+          39,
+          52
+        ]
+      ],
+      "scope": "Distinct from original D36x9 and continuous radial disk"
+    },
+    "model": "positive finite measure; weighted Euclidean aggregate source norm"
+  },
+  "spec": {
+    "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/D65x9-spec/spec.json",
+    "bytes": 19451,
+    "sha256": "689fc522c6f7db9db26388d944f1053ef67cc2add73fbb7277f3c1995e056267"
+  },
+  "harness": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_cost_case.py",
+    "bytes": 4011,
+    "sha256": "b4f964bda9c24b335e6bdd30d34231d6d21b82adf4f5f970eaa0728a9b82f7f5"
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/p6_cost_case.py",
+    "--spec",
+    "/tmp/padua-lanczos-nonproduct-20261105/p6/D65x9-spec/spec.json",
+    "--rule",
+    "alt",
+    "--degree",
+    "12",
+    "--seconds",
+    "120",
+    "--work-dir",
+    "/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt",
+    "--receipt",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/p6-cost12-D65x9-alt.json"
+  ],
+  "runs": [
+    {
+      "backend": "producer",
+      "source": {
+        "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_native.cpp",
+        "bytes": 9914,
+        "sha256": "41c11190b7b15bb5acd5070ccfdb1b66a4bad3739e02d727aba4a506cee2ed6d"
+      },
+      "compile_command": [
+        "g++",
+        "-O3",
+        "-std=c++17",
+        "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_native.cpp",
+        "-lgmpxx",
+        "-lgmp",
+        "-o",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt/producer"
+      ],
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt/producer",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt/input.txt",
+        "12",
+        "alt",
+        "D65x9"
+      ],
+      "status": "PASS completed native case",
+      "elapsed_seconds": 32.90130961800014,
+      "completed_degrees": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt/producer.jsonl",
+        "bytes": 260376,
+        "sha256": "7a440d2ef2f311fdce43e297697e9f1550e83a06d49bcb8407ca7507b0cbfbf8"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt/producer.log",
+        "bytes": 1380,
+        "sha256": "afabb035b22ba231928cf8c2a149e93fb5614d28dc1f67d79eb158e778007eb8"
+      }
+    },
+    {
+      "backend": "checker",
+      "source": {
+        "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_scalar_check.cpp",
+        "bytes": 5495,
+        "sha256": "58480a866b56e22c61add95d01f90774726b5f90e32186354ef1ab8f87b10b72"
+      },
+      "compile_command": [
+        "g++",
+        "-O3",
+        "-std=c++17",
+        "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_scalar_check.cpp",
+        "-lgmpxx",
+        "-lgmp",
+        "-o",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt/checker"
+      ],
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt/checker",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt/input.txt",
+        "12",
+        "alt",
+        "D65x9"
+      ],
+      "status": "INCOMPLETE_OR_FAILED",
+      "error": "TimeoutExpired(['/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt/checker', '/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt/input.txt', '12', 'alt', 'D65x9'], 119.99997716500002)",
+      "elapsed_seconds": 120.0024980080002,
+      "completed_degrees": [],
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt/checker.jsonl",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/cost12-D65x9-alt/checker.log",
+        "bytes": 496,
+        "sha256": "cffae388c7e4317347ed88a8446bbc3784d04cf4ea07345cb757c9b72eb1b18b"
+      }
+    }
+  ],
+  "scope": "Only one rule, explicit incomplete four-rule coverage; no N2 evaluation",
+  "exact_prefix_rows_compared": 0
+}

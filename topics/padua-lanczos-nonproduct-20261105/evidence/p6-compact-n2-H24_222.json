@@ -1,0 +1,70 @@
+{
+  "status": "PASS standalone integer N2 replay",
+  "family": "H24_222",
+  "N2_verdict": "INCONCLUSIVE",
+  "table": {
+    "path": "topics/padua-lanczos-nonproduct-20261105/evidence/p6-log-endpoints-H24_222.json",
+    "bytes": 10391,
+    "sha256": "634f55266aa61a13ce095526c6b1c842de41e66b557a8b14e46c814bdb49ea57"
+  },
+  "code": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_compact_n2_check.py",
+    "bytes": 4035,
+    "sha256": "815af4aae6584c228b42914c50ab25737e7b86e86acd7580f8e71bdb343ef4a9"
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/p6_compact_n2_check.py",
+    "--table",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/p6-log-endpoints-H24_222.json",
+    "--output",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/p6-compact-n2-H24_222.json",
+    "--compare-n2",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/p6-n2-H24_222.json"
+  ],
+  "comparator_rules": [
+    "bj",
+    "mirror",
+    "alt",
+    "pivot"
+  ],
+  "windows": [
+    {
+      "degrees": [
+        8,
+        12
+      ],
+      "lower_exact": "553069019133491/10000000000000000",
+      "upper_exact": "15395035055842179/10000000000000000",
+      "decimal_display": [
+        0.0553069019133491,
+        1.539503505584218
+      ],
+      "lower_above_0.1": false,
+      "upper_below_0.02": false,
+      "integer_corner_check": "PASS all32 corners"
+    },
+    {
+      "degrees": [
+        12,
+        16
+      ],
+      "lower_exact": "-2202024164582539/10000000000000000",
+      "upper_exact": "2064002412097811/1250000000000000",
+      "decimal_display": [
+        -0.2202024164582539,
+        1.6512019296782487
+      ],
+      "lower_above_0.1": false,
+      "upper_below_0.02": false,
+      "integer_corner_check": "PASS all32 corners"
+    }
+  ],
+  "higher_precision_comparison": {
+    "path": "topics/padua-lanczos-nonproduct-20261105/evidence/p6-n2-H24_222.json",
+    "bytes": 5154,
+    "sha256": "f406c7151e257a6b7faca6ce57527081ddd6f77ed330f0b6ffebf7fb459f2f42"
+  },
+  "scope": "MEASURED finite interval screen only; no exact-capacity or asymptotic growth claim"
+}

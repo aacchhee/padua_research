@@ -1,0 +1,60 @@
+{
+  "scope": "Inspected scientific source code at supplementary scan review; no prose pins",
+  "files": [
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/code/g1_compact_check.py",
+      "bytes": 3827,
+      "sha256": "902f6a30d2a20592d9ebb63911e8c659cb3606ae9fce9054c335ae61dab94b59"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/code/g1_fit.py",
+      "bytes": 22030,
+      "sha256": "18eea30277a3d2d58aab8ece2f15b33e83a1178d5b03e96180229b41a247aeac"
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/code/g1_fit_independent.py",
+      "bytes": 30621,
+      "sha256": "0bbcf38542e077806b8d2f9c36c7b0bdf8ca19105f562b7b4369aefaed70750c"
+    },
+    {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_families.py",
+      "bytes": 2362,
+      "sha256": "6bf4e94219853c5878b8580d9250cf007e2224e10c1785a021098d18e9f0b38c"
+    },
+    {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_inputs.py",
+      "bytes": 2207,
+      "sha256": "7b9729664cd9c68aa2362c004e256aa29d3326703494536ad5899ab90bda893a"
+    },
+    {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_n2_compact.py",
+      "bytes": 4954,
+      "sha256": "7656d6aea59fab3b9c35f2210e549ba82378a7eb59a35e65bc9d9a3cdc904ee9"
+    },
+    {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_n2_exact.py",
+      "bytes": 5409,
+      "sha256": "9442995aecf9963ce9c00c743c8916ba602b35a047cb50c54a1325cda778fb77"
+    },
+    {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_native.cpp",
+      "bytes": 9914,
+      "sha256": "41c11190b7b15bb5acd5070ccfdb1b66a4bad3739e02d727aba4a506cee2ed6d"
+    },
+    {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_rows.py",
+      "bytes": 2202,
+      "sha256": "53728ef0f1db483280371de7726454e301fd386b66072157f99f016fba9f2eaf"
+    },
+    {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_scalar_check.cpp",
+      "bytes": 5495,
+      "sha256": "58480a866b56e22c61add95d01f90774726b5f90e32186354ef1ab8f87b10b72"
+    },
+    {
+      "path": "topics/padua-lanczos-nonproduct-20261105/code/p6_scan.py",
+      "bytes": 6551,
+      "sha256": "cbb3314d917dbfbdff63e92175fa9338840979f6af5dcfb9d42015c09125f912"
+    }
+  ]
+}

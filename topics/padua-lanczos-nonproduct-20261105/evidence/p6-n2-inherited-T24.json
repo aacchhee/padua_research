@@ -1,0 +1,114 @@
+{
+  "status": "PASS exact interval arithmetic and independent integer corner check",
+  "N2_verdict": "INCONCLUSIVE",
+  "family": "T24",
+  "evidence_origin": "reanalysis of inherited accepted PD-T338 scan",
+  "scope": "Finite endpoint-interval screen only, not true capacities or an asymptotic rate",
+  "compact_input": {
+    "path": "topics/padua-lanczos-frontier-20261105/evidence/g1-compact-triangle.json",
+    "bytes": 9585,
+    "sha256": "2c99758edf1888f2cdd8a0fcd7563512a1466407bb6659f630d7838abad37f38"
+  },
+  "source_manifest": {
+    "path": "/tmp/padua-lanczos-frontier-g1-check05/full-fit-input/manifest.json",
+    "bytes": 7308,
+    "sha256": "8bd04bb6502762a61d53d5633f6737786315d743b6e408e689d647ac7998c144"
+  },
+  "source_report": {
+    "path": "/tmp/padua-lanczos-frontier-g1-fit/actual/report.json",
+    "bytes": 1035283,
+    "sha256": "5211917f379060bfa5f477354bbe0cf29066dba76d85d428d43de34a6190176b"
+  },
+  "code_sha256": "7656d6aea59fab3b9c35f2210e549ba82378a7eb59a35e65bc9d9a3cdc904ee9",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/p6_n2_compact.py",
+    "--compact",
+    "topics/padua-lanczos-frontier-20261105/evidence/g1-compact-triangle.json",
+    "--receipt",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/p6-n2-inherited-T24.json"
+  ],
+  "comparator_rules": [
+    "bj",
+    "mirror",
+    "alt",
+    "pivot"
+  ],
+  "logratio_intervals_scaled": {
+    "8": [
+      3730090635807232,
+      5908239836443793
+    ],
+    "9": [
+      4402728263608056,
+      7067264144671112
+    ],
+    "10": [
+      5286426795060281,
+      8194140965360819
+    ],
+    "11": [
+      6203515331525308,
+      9302230728872186
+    ],
+    "12": [
+      7026982954098256,
+      10292123792431316
+    ],
+    "13": [
+      7771646843949277,
+      11085344305823584
+    ],
+    "14": [
+      8588150058260800,
+      11906408783539910
+    ],
+    "15": [
+      9346644342428568,
+      12760249261069481
+    ],
+    "16": [
+      10079085657077921,
+      13646748599240662
+    ]
+  },
+  "scale": 1000000000000000,
+  "windows": [
+    {
+      "degrees": [
+        8,
+        12
+      ],
+      "lower_exact": "686868711081561/5000000000000000",
+      "upper_exact": "9011784389256149/5000000000000000",
+      "decimal_display": [
+        0.1373737422163122,
+        1.8023568778512298
+      ],
+      "integer_corner_checker": "PASS all32 corners",
+      "lower_above_0.1": true,
+      "upper_below_0.02": false
+    },
+    {
+      "degrees": [
+        12,
+        16
+      ],
+      "lower_exact": "-1082388117050903/5000000000000000",
+      "upper_exact": "2278516713425627/1250000000000000",
+      "decimal_display": [
+        -0.2164776234101806,
+        1.8228133707405016
+      ],
+      "integer_corner_checker": "PASS all32 corners",
+      "lower_above_0.1": false,
+      "upper_below_0.02": false
+    }
+  ],
+  "limitations": [
+    "Logarithm enclosures are inherited from accepted compact evidence; no new log calculation.",
+    "Two exact arithmetic algorithms by one worker, distinct-agent rerun/audit separate.",
+    "New plan8\u201312/12\u201316 test differs from historical PD-T338 kill predicate."
+  ]
+}

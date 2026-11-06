@@ -1,0 +1,87 @@
+{
+  "status": "Recorded actual selected-case cancellations; not a scientific failure",
+  "reason": "Coordinator authorized alt/pivot cancellation only after exact reflection proof, pilots and distinct code review accepted; full-node model and source set unchanged",
+  "records": [
+    {
+      "pid": 6613,
+      "rule": "alt",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/disk16-successor/checker",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "16",
+        "alt",
+        "D36x9"
+      ],
+      "observed_wall_seconds": 2096.6099999999997,
+      "observed_cpu_seconds": 1997.63,
+      "status": "CANCELLED_PARTIAL for reviewed method supersession",
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/disk16-successor/checker-alt.jsonl",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/disk16-successor/checker-alt.log",
+        "bytes": 622,
+        "sha256": "850fe990459d36539d0c82074f4057679401060059d57dcca8221d0d5de8c431"
+      },
+      "completed_degrees": [],
+      "last_log_lines": [
+        "source 22/152",
+        "source 23/152",
+        "source 24/152"
+      ]
+    },
+    {
+      "pid": 7933,
+      "rule": "pivot",
+      "command": [
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/disk16-successor/checker",
+        "/tmp/padua-lanczos-nonproduct-20261105/p6/full16-D36x9/input.txt",
+        "16",
+        "pivot",
+        "D36x9"
+      ],
+      "observed_wall_seconds": 1333.3299999999995,
+      "observed_cpu_seconds": 1270.92,
+      "status": "CANCELLED_PARTIAL for reviewed method supersession",
+      "output": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/disk16-successor/checker-pivot.jsonl",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "log": {
+        "path": "/tmp/padua-lanczos-nonproduct-20261105/p6/disk16-successor/checker-pivot.log",
+        "bytes": 654,
+        "sha256": "ca9565d00247e5b348cf603ff28e4be690de148f92150da04ae0cc22d059b244"
+      },
+      "completed_degrees": [],
+      "last_log_lines": [
+        "source 22/152",
+        "source 23/152",
+        "source 24/152"
+      ]
+    }
+  ],
+  "requested_rules": [
+    "alt",
+    "pivot"
+  ],
+  "code": {
+    "path": "/workspace/padua_research/topics/padua-lanczos-nonproduct-20261105/code/p6_cancel_superseded.py",
+    "bytes": 2656,
+    "sha256": "62ed34ba6453e160192d306de9de57d443454f540586bbf545960a12e924cba9"
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-lanczos-nonproduct-20261105/code/p6_cancel_superseded.py",
+    "--work-dir",
+    "/tmp/padua-lanczos-nonproduct-20261105/p6/disk16-successor",
+    "--rules",
+    "alt",
+    "pivot",
+    "--output",
+    "topics/padua-lanczos-nonproduct-20261105/evidence/p6-disk-superseded-scalar.json"
+  ]
+}
