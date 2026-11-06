@@ -1,0 +1,146 @@
+{
+  "CPU_seconds_before_receipt": 0.06084054800000001,
+  "M_bound": "13403908421182349/448600744132608",
+  "Vmax": "3556138968885113/140737488355328",
+  "Vmax_keys": [
+    "0,0"
+  ],
+  "actual_corner": {
+    "epsilon_lower_M30": "1637846019731984959/208608142114684928",
+    "gap_M30": "1637846019731984959/21119419346321408",
+    "q": "816245320523679/8796093022208",
+    "threshold_M30": "73205/4802"
+  },
+  "canonical_vertices": 13,
+  "certificate_vertices": 53,
+  "grid_rows": [
+    {
+      "canonical": "0,0",
+      "grid": "0,0",
+      "upper": "3556138968885113/140737488355328",
+      "upper_hex": "0x1.9449440064ef2p+4"
+    },
+    {
+      "canonical": "0,1/4",
+      "grid": "0,1/4",
+      "upper": "3179855257661957/140737488355328",
+      "upper_hex": "0x1.6981f7e23e40ap+4"
+    },
+    {
+      "canonical": "0,1/2",
+      "grid": "0,1/2",
+      "upper": "4464440156945599/281474976710656",
+      "upper_hex": "0x1.fb8c4f359f97ep+3"
+    },
+    {
+      "canonical": "0,3/4",
+      "grid": "0,3/4",
+      "upper": "2198165344871315/281474976710656",
+      "upper_hex": "0x1.f3ce102278e4cp+2"
+    },
+    {
+      "canonical": "0,1",
+      "grid": "0,1",
+      "upper": "1",
+      "upper_hex": "0x1.0000000000000p+0"
+    },
+    {
+      "canonical": "1/4,0",
+      "grid": "1/4,0",
+      "upper": "6385081309725407/281474976710656",
+      "upper_hex": "0x1.6af32975402dfp+4"
+    },
+    {
+      "canonical": "1/4,1/4",
+      "grid": "1/4,1/4",
+      "upper": "2835894005324681/140737488355328",
+      "upper_hex": "0x1.426760d9db712p+4"
+    },
+    {
+      "canonical": "1/4,1/2",
+      "grid": "1/4,1/2",
+      "upper": "120638663217225/8796093022208",
+      "upper_hex": "0x1.b6e182ab41240p+3"
+    },
+    {
+      "canonical": "1/4,3/4",
+      "grid": "1/4,3/4",
+      "upper": "7442171451573219/1125899906842624",
+      "upper_hex": "0x1.a709d91ba83e3p+2"
+    },
+    {
+      "canonical": "1/2,0",
+      "grid": "1/2,0",
+      "upper": "8958511629738199/562949953421312",
+      "upper_hex": "0x1.fd3b8076820d7p+3"
+    },
+    {
+      "canonical": "1/2,1/4",
+      "grid": "1/2,1/4",
+      "upper": "7730882295438353/562949953421312",
+      "upper_hex": "0x1.b77324d051c11p+3"
+    },
+    {
+      "canonical": "1/2,1/2",
+      "grid": "1/2,1/2",
+      "upper": "5013996298502585/562949953421312",
+      "upper_hex": "0x1.1d033fc4701b9p+3"
+    },
+    {
+      "canonical": "3/4,0",
+      "grid": "3/4,0",
+      "upper": "8777413400638051/1125899906842624",
+      "upper_hex": "0x1.f2f02cfcab263p+2"
+    },
+    {
+      "canonical": "1/4,3/4",
+      "grid": "3/4,1/4",
+      "upper": "7442171451573219/1125899906842624",
+      "upper_hex": "0x1.a709d91ba83e3p+2"
+    },
+    {
+      "canonical": "0,1",
+      "grid": "1,0",
+      "upper": "1",
+      "upper_hex": "0x1.0000000000000p+0"
+    }
+  ],
+  "inputs": {
+    "corner": {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/d09-threepoint.json",
+      "sha256": "34553e6d91dc77285f1bbb277a0f519c5a8a5da5f27a8f43501c7caf13631509"
+    },
+    "primary": {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/d12-point-cover.json",
+      "sha256": "5404f0b9679db125640ece212c85f86dfa7cfac13a41a9956c290e2804fe33c4"
+    },
+    "raw": {
+      "path": "local-output/argmax-bridge-20261105/post-audit-D11/point-cover/checker-checkpoint.json",
+      "sha256": "b1747afae4b6cbd6f53eb4604e214056b8aa128ffbbbf2033a39b714e7658bb8"
+    },
+    "tree": {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/d12-point-cover-tree.json",
+      "sha256": "62a0f35a51730ab57b0a0931122b9cab7c6ca1d113ea38dc779a059ade3eda2e"
+    }
+  },
+  "minimum_margin_M30": {
+    "FAR": "1220840625178958669/151237454964681867264",
+    "NEAR": "15969326879182055749/1209899639717454938112"
+  },
+  "missing_keys": [],
+  "new_native_calls": 0,
+  "raw_vertices": 19,
+  "rectangles": 10,
+  "result": "PASS norm30 and same fixed certificate predicates",
+  "retained_leaf_tags": {
+    "FAR": 31,
+    "NEAR": 8,
+    "OUTSIDE": 3
+  },
+  "scope": "retained metadata only; native enclosures not rerun",
+  "source_rows": 53,
+  "source_sha256": "e79eb19f17d9651a9eb4ef3f29aa8732653dcb611d17c301349b687d65a21350",
+  "strict_30_margin": "703480736346583/8796093022208",
+  "triangle_grid_vertices": 15,
+  "visited": 83
+}

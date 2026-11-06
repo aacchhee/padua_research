@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **12/25**. Active: **D13**; D14/D15 preparation runs in parallel.
+Completed: **13/25**. Active: **D14**; D15/D16 preparation runs in parallel.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -47,6 +47,8 @@ No main push, merge, force, tags, .github/settings or major cleanup.
 
 | D12 | COMPLETE | First complete new-technology degree512 phase-cover attempt | Complete53vertex/83node cover PASS44.626CPU; independent fresh replay PASS41.465CPU and final application accepted. Exactglobal512 now proved;147B certificate. |
 
-| D13 | ACTIVE | Origin-cancelled finite remainder | Endpoint and singular-mesh support developer-PROVED, under distinct review; complete joint relative remainder remainsOPEN. No numerical jobs. |
-| D14 | PREPARING | Sampling norm and model-free finite proof | Metadata confirms15grid vertices reduce to13 saved keys, norm<30; split proof/review pending. No new numerical evaluations. |
+| D13 | COMPLETE | Origin-cancelled finite remainder | Endpoint and singular-mesh support independently accepted; complete joint relative remainder remainsOPEN. One display NOTE only, no numerical jobs. |
+| D14 | ACTIVE | Sampling norm and model-free finite proof | Metadata confirms15grid vertices reduce to13 saved keys, norm<30; split proof/review pending. No new numerical evaluations. |
 | D15 | PREPARING | Parameterized model-free certifier | Conditional design for one fixed2048 scaling case; existing guards permit2048. Generic contract, implementation/source review and release required before any run. |
+
+| D16 | PREPARING | Phase-correlated analytic budget | Separate actual-origin error and rho-dependent absolute allowance; primary10000 scalar only after preregistration/source freeze. No new onset adopted. |

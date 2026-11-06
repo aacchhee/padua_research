@@ -386,3 +386,22 @@ and removes those asymptotic-model dependencies with the same point data;
 that simplification is not yet adopted. D13's finite phase-relative target
 remainsOPEN, with two supporting analytic results under distinct review.
 D15's conditional generalized certifier design has no native execution.
+
+
+## D13 — two vanishing finite-reference pieces
+
+Independent review accepts an endpoint-reference origin-cancelled error
+<=a*rho*(2H_n+10)/n and a singular-mesh relative error
+<=rho*(log n+7/3)/n on their explicit near domains. Both vanish exactly
+at the origin. The full finite relative remainder remainsOPEN: central
+reference/pole, outer quadrature and six-row increments are not supplied
+by these two supports. [Review and exact scopes](independent-checks-D13-relative-support.md).
+No numerical job ran and the16000 analytic onset is unchanged.
+
+D14's coarse samplingnorm proof and same512 dependency simplification are
+checkpointed developer-PROVED pending distinct review. Its metadata-only
+check finds a bound<30 using13 saved canonical grid keys, without fresh
+native evaluations. D15's parameterized certifier implementation remains
+conditional on accepted norm/generic-cover/source contracts. D16 tests
+phase-dependent absolute error allowances with a separate origin charge;
+this is a new scalar budget, not an adopted smaller global range.

@@ -225,3 +225,14 @@ were read-only except the three parent-owned D13 mesh-support files.
 Independent mathematical review has not been performed by this author.
 Gate coverage and its limits are recorded in
 [the candidate](../ideas/D13-mesh-support.md).
+
+
+### Supplementary review closure — 2026-11-06
+
+Distinct Astra high mathematical reconstruction ACCEPTED the two support
+scopes and the full target's OPEN status, no unresolved findings;
+[independent-checks-D13-relative-support.md](../independent-checks-D13-relative-support.md),
+report SHA256de9a18a24b1acc2c78ddfe71ab55f665f4145fb3fc3c5474d82f62dde396eaaf.
+The display NOTE interprets strict intermediate estimates at positive rho;
+at rho=0 the exact subtractions vanish. Final non-strict statements and
+audited proof text are unchanged. No numerical jobs or new onset result.
