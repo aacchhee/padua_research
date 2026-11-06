@@ -1,7 +1,35 @@
-# Local raw provenance and pending archive
+# Optional raw provenance — not retained
 
-The full42-row scan receipt is local, not archived; AC has not supplied a reachable Padua cold-storage destination. Its exact SHA256, size, source commit, commands and retrieval limits are in [cold-storage.json](cold-storage.json). Exact raw byte retrieval after this environment is lost is not established. Timing-dependent regeneration may produce different raw bytes.
+Audit A11 disposition, 2026-11-06: no optional raw receipt is claimed retained as authoritative evidence,
+staged or delivered to archival storage. The historical hashes, sizes,
+commands and original producer paths remain in cold-storage.json as provenance
+only. They are not retrieval locators or a padua-cold-storage-v1 archive.
+The tool format is for actual archived Git blobs; inventing entries for
+unretained timing-bearing /tmp output would misstate storage.
 
-All numerical rows required by the K1/K3 claims are preserved together in [S4-essential-cc.json](evidence/S4-essential-cc.json), with generating code and checked repository-only fit replays. Thus no fit or analytic theorem requires retrieval of the larger raw receipt. This is a single small essential summary, not splitting a large artifact into chunks. No third-party PDFs, arrays or eigenvectors are committed. Physical archival remains pending.
+## Committed checker output
 
-The completed16-row Padua raw receipt is also recorded in cold-storage.json. Its complete essential rows, failed-upper-pilot receipt and registered/independent fit receipts are committed; no future retrieval of timing-bearing raw is required by a numerical or analytic claim.
+The essential CC and Padua rows are evidence/S4-essential-cc.json and
+evidence/S4-padua-essential.json. Their repository-only fit replays and
+independent checks are recorded in attempts/S4-essential-replay.md and
+audit-01.md. No result depends on optional raw retrieval.
+
+## Regeneration and handoff
+
+Producer/checker commands and hashes remain in cold-storage.json. Numerical
+rows regenerate using the committed code and essential records; timing-bearing
+raw byte identity is not promised on regeneration. No delivery receipt exists.
+
+## Retention and retrieval
+
+No custodian, archive destination or retention promise has been established.
+The two original working files currently survive in this environment; they
+are not archived or delivered and do not provide guaranteed cross-session
+retrieval. No authoritative raw-retention promise is made.
+Future archival requires an AC-designated Padua location and actual delivery
+before a tool-format archive manifest can truthfully be written.
+
+Format source inspected: templates/COLD_STORAGE.md and tools/cold_storage.py
+at 0205690b9c4e959a28e949083e9a1808735abf4b via pinned GitHub connector.
+The audit explicitly permits declaring optional raw not retained instead of
+converting fictitious storage entries.

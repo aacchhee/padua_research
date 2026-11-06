@@ -76,3 +76,27 @@ Both windows pass rank, condition, sign, residual and5%stability tests. K4 there
 K5's negative finite-window comparison is **MEASURED agreement**, final slope difference0.3545594%<5%. True limiting equality is proved by the operator theorem independently of the fits. Upper K4/K5 remain INCONCLUSIVE after the failed pilot; no upper fit was attempted. [Final fit](evidence/S4-padua-fit.json), [independent replay](independent-checks-S4-padua.md).
 
 A separately preregistered120CPU-s normalization diagnostic used3.21CPU-s and no full-space eigensolve. It finds no tested corner/Gram factor mismatch, but observes a substantial full-form correction on the chosen normalized trial: at m3000, L_m≈−0.13360254 while Q_m≈0.21004669 and Q_m−log(R)L_m≈1.18711149. This diagnoses that trial only; it does not explain the complete minimum branch, certify an asymptotic window, or undo K4. [Diagnostic](independent-checks-S3-transfer-diagnostic.md).
+
+
+## 2026-11-06 audit-01 K2 interpretation addendum
+
+The K1 final-window intercept 13.0611 exceeds the PROVED bound
+limsup (log N)² lambda_min <= pi⁴/8 = 12.1761. It therefore cannot identify
+the true limit under S1-02. K2 KILL_MODEL remains the registered operational
+outcome and carries no evidential weight against equality; the equality
+route stopped on a misspecified numerical test. The candidate is **deferred**,
+with resume condition: a proof of the reverse bound liminf >= pi⁴/8, or a
+new prospectively registered numerical protocol. No PD-N is created.
+
+## 2026-11-06 audit-01 K4 interpretation addendum
+
+S3-03 (3)/(4) predict limits, and make no prediction about finite-window
+slopes. K4 compared those limits with finite-window slopes and retains its
+unchanged KILL_HEURISTIC_PROXY outcome. The audit diagnostic
+[big.json](audit-01-support/S3/big.json) and
+[mid.json](audit-01-support/S3/mid.json) is MEASURED floating evidence:
+at m=400,800,801 the Q-minimiser has about 94–96% weight on the second
+L_m mode, while L_m's bottom mode already lies near the B proxy −0.1336.
+Mode-dependent O(1) corrections explain the registered slopes near −0.092
+without contradicting the theorem. This is a finite-scope interpretation,
+not a certified crossing law or a PD-N.

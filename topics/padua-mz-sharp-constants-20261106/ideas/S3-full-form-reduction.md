@@ -1,4 +1,4 @@
-# IDEA-S3-02 — uniform logarithmic form before a corner limit
+# IDEA?mz-sharp-codex-S3-02 — uniform logarithmic form before a corner limit
 
 Provisional supporting candidate for PD-T381; known supplied corner-form
 direction. Status: retained, analytic finite-family reduction proved in
@@ -38,3 +38,25 @@ record it as such rather than identifying the full spectrum.
 
 2026-11-06; Codex S3, allocated gpt-6.1-sol xhigh, runtime metadata
 unexposed; input/rules2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861.
+
+
+## 2026-11-06 template completion (audit A10)
+
+Aliases: S3-full-form-reduction; IDEA-470 continuation.
+- Question / scope: the exact candidate and parameter scope preserved above; see linked theory, without expanding its quantifiers.
+- Mechanism and hypotheses: the signed mechanism stated above under the exact Lebesgue normalization; no sign-erased surrogate.
+- Closest registry entries (read in full): IDEA-470 and the full shortlist in novelty-gate-S3.md (prior recorded gate reading, not a new reading claimed in this response).
+- Separation criterion vs closest entry (and observation that falsifies it): a full signed normalized form reduction and compact corner spectral transfer; fixed-index or carrier-only convergence erases the distinction from the deferred continuation.
+- Literature baseline and search limitations: bounded repository gate novelty-gate-S3.md; response literature screen is search/abstract level only; no priority claim.
+- Applicable obstructions and exact hypotheses broken: fixed-index logarithmic weights alone do not control the full signed spectrum; global continuous-mass control is required. Carrier-family restrictions remain explicit.
+- Novelty gate verdict: variant with difference; consolidated continuation of IDEA-470 at PR preparation, not an unrelated fresh mechanism.
+- Cheapest decisive test: the analytic bound/transfer or strict family inequality stated above; see novelty-gate-S3.md for the original gate chronology.
+- Kill criterion written before testing: the original failure obligations above and in novelty-gate-S3.md are preserved; missing signed control, wrong normalization or absent uniform error blocks the proposed conclusion.
+- Test discriminability: the exact analytic obligations distinguish full-spectrum control from trial-only convergence; floating decimal comparisons alone cannot decide the theorem.
+- Actual test results and committed evidence: the linked theory files and audit-01.md give the analytic outcome at its stated scope; existing floating receipts retain MEASURED status.
+- Disposition and precise rejected scope, if any: retained continuation; no family-wide refutation or new PD-N.
+- Disposition reason: no rejection; the completed obligations are recorded in linked theory and audit-01.md.
+- Canonical theory / negative-result ID: the provisional IDs of the linked theory files; no final ID allocated in this response.
+- Topic / completed audit link / history (no pending process stage): padua-mz-sharp-constants-20261106; audit-01.md; 2026-11-06 template completion preserving the original registration prose.
+
+Canonical result pointer (audit A10): PD-T?mz-sharp-codex-S3-02; [theory](../theory/S3-full-form-log-model.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.

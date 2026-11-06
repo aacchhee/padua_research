@@ -317,3 +317,28 @@ original PD-T381 value requirement; no shared registry is edited here.
 runtime metadata unexposed. Rules/input2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861.
 Round3. Kernel-hard supporting developer separately owns S3-kernel;
 development and independent audit are distinct. No Git/shared edits.
+
+
+## 2026-11-06 audit-01 A2 interpretation
+
+Equations (3) and (4) of S3-03 predict limits, and make no prediction about
+finite-window slopes. K4 compared those limits with finite-window slopes;
+its KILL_HEURISTIC_PROXY outcome remains unchanged and is not a PD-N.
+The audit diagnostic audit-01-support/S3/big.json (MEASURED floating point,
+m=400,800,801 with mid.json) places roughly 94–96% of the Q-minimiser on
+L_m's second mode, while the bottom L_m mode is already near −0.1336.
+Mode-dependent O(1) corrections explain the observed slopes near −0.092
+without contradicting the limit theorem. This is finite-scope audit evidence,
+not a proved branch law or certified crossover prediction.
+
+
+Audit A7 clarification to §3: the corner Gram block does not depend on
+corner signs. Thus the two active corner blocks are identical.
+
+
+## 2026-11-06 audit completion pointer
+
+The earlier requests for independent/Claude review describe the development
+boundary. Claude audit-01.md now accepts this analytic proof at its stated
+scope. That completed audit supersedes earlier pending-review metadata; it
+does not certify floating decimal values or approve this response.

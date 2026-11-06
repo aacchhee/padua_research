@@ -55,3 +55,29 @@ The constants agree on the even- and odd-m subsequences.”
 Dependencies: [full signed reduction](theory/S3-full-form-log-model.md), [elementary kernel theorem](theory/S3-corner-kernel-hard.md), [compact operator theorem](theory/S3-corner-operator-limit.md), PD-T379 and [strict carrier improvement](theory/S3-normalized-carrier-improvement.md). Supplementary checks: [full form](independent-checks-S3-model.md), [kernel](independent-checks-S3-kernel.md), [operator](independent-checks-S3-operator.md). Explicit finite-m comparison is stated in the operator theorem; it is coarse and certifies no practical fit window.
 
 The displayed operator extrema define exact constants. The inherited negative carrier family has the independently proved coefficient ceiling 1/[9(4log2)(16log2−9log3)]<1/24; this ceiling applies to that fixed-parameter family only. See [family theorem](theory/S3-carrier-family-ceiling.md) and [check](independent-checks-S3-family.md). Finite-model orientation values approximately −0.1336 and +0.0456 are not certified decimal values. No closed scalar formula, optimal packet parameters or effective sign-change degree follows. The manuscript should not identify the earlier four-point measured slope −0.0915 with the true limiting minimum coefficient.
+
+
+## 2026-11-06 audit-01 K2 interpretation addendum
+
+The K1 final-window intercept 13.0611 exceeds the PROVED bound
+limsup (log N)² lambda_min <= pi⁴/8 = 12.1761. It therefore cannot identify
+the true limit under S1-02. K2 KILL_MODEL remains the registered operational
+outcome and carries no evidential weight against equality; the equality
+route stopped on a misspecified numerical test. The candidate is **deferred**,
+with resume condition: a proof of the reverse bound liminf >= pi⁴/8, or a
+new prospectively registered numerical protocol. No PD-N is created.
+
+## 2026-11-06 audit-01 K4 interpretation addendum
+
+S3-03 (3)/(4) predict limits, and make no prediction about finite-window
+slopes. K4 compared those limits with finite-window slopes and retains its
+unchanged KILL_HEURISTIC_PROXY outcome. The audit diagnostic
+[big.json](audit-01-support/S3/big.json) and
+[mid.json](audit-01-support/S3/mid.json) is MEASURED floating evidence:
+at m=400,800,801 the Q-minimiser has about 94–96% weight on the second
+L_m mode, while L_m's bottom mode already lies near the B proxy −0.1336.
+Mode-dependent O(1) corrections explain the registered slopes near −0.092
+without contradicting the theorem. This is a finite-scope interpretation,
+not a certified crossing law or a PD-N.
+
+Literature context is only search/abstract-screened in literature-screen.md; no priority claim is supported.

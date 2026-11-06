@@ -37,7 +37,7 @@ cos(k*pi/N), natural logarithm. Norms of f,F use (0,1); p_N uses
 
 ## Status by part
 
-Overall status: PROVED (analytic development; independent audit required).
+Overall status: PROVED (analytic development; audit-01 accepted at stated scope).
 
 | Part | Status | Evidence |
 |---|---|---|
@@ -50,8 +50,8 @@ these are supporting bounds, not proved cases of its limit statement.
 ## Depends on
 
 PD-T013: exact cardinal/DCT formula and positivity of weights.
-PD-T017: w_k=(pi/N)sin(k*pi/N)+O(N^−2), uniformly at interior nodes.
-PD-T?mz-sharp-codex-S1-01: exact primitive model norm2/pi.
+PD-T017 proof §1, with PD-T013 (1): w_k=(pi/N)sin(k*pi/N)+O(N^−2), uniformly at interior nodes.
+PD-T?mz-sharp-codex-S1-01: exact primitive model norm 2/pi.
 No external theorem or numerical eigenvalue data.
 
 ## Checks and sources
@@ -65,13 +65,13 @@ developer model gpt-6.1-sol xhigh; runtime metadata unexposed.
 Supplementary distinct Astra review reconstructed the frozen proof at
 SHA256 b560b08db44f25417e36c4ff53f76baf0f14e2ae9130eb7457d1249b11a32eb0
 and returned PASS for its exact one-sided scope; see
-../independent-checks-S1-S3.md. The required later Claude audit is separate.
+../independent-checks-S1-S3.md. Claude audit-01 accepts this proof at the stated scope.
 
 ## Proof
 
 ### 1. Degree and discrete energy
 
-Fix0<a<b<1 containing supp f. Nonzero left amplitudes have
+Fix 0<a<b<1 with supp f ⊂ (a,b). Nonzero left amplitudes have
 N^a<=k<=N^b, so for sufficiently large N they lie below N/2 and the
 reflected supports are disjoint. The top DCT coefficient of the
 degree-N interpolant is N^−1 sum_k a_k/c_k, where c_0=c_N=2 and
@@ -121,10 +121,11 @@ C*||f'||_infinity/L, because
 It remains to bound sin(pi*t) sum_(t/2<k<2t)1/(t−k).
 Write t=j+u, |u|<=1/2. Pair the integers j−r,j+r up to distance
 at most t/2: their sum is2u/(u²−r²), whose absolute sum for r>=1
-is uniformly bounded. The r=0 term, if present, is1/u and
+is uniformly bounded. The r=0 term, if present, is 1/u and
 |sin(pi*u)/u|<=pi. Remaining unpaired terms have distance bounded
 below by c*t and O(t) terms, so their absolute sum is bounded.
-The finitely many small t cases satisfy the same bound. This proves
+The bounded range t <= t₀ satisfies the same bound. Formula (D) is asserted
+for noninteger t; removable nodal values are extended by continuity. This proves
 (D); removable singularities at integral t are interpreted continuously.
 
 It follows that the homogeneous interpolation expression satisfies
@@ -142,7 +143,7 @@ before continuous extension in (E).
 
 ### 3. Exact cardinal formula versus its homogeneous kernel
 
-Fix0<delta<1/2 and put N^delta<=t<=N^(1−delta), theta=pi*t/N.
+Fix 0<delta<1/2 and put N^delta<=t<=N^(1−delta), theta=pi*t/N.
 The exact formula, with endpoint values zero, is
 
     p_N(cos theta)=−sin(theta)*sin(N theta)/N

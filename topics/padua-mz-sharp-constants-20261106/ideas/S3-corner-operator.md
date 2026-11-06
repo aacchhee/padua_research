@@ -110,3 +110,38 @@ constructs B in norm, identifies the entire signed extremal limits and
 both parity blocks, and provides a quantitative finite approximation.
 The heuristic decimals above remain MEASURED; no decimal enclosure or
 closed elementary expression is claimed. Required audit is separate.
+
+
+## 2026-11-06 audit-01 A2 interpretation
+
+Equations (3) and (4) of S3-03 predict limits, and make no prediction about
+finite-window slopes. K4 compared those limits with finite-window slopes;
+its KILL_HEURISTIC_PROXY outcome remains unchanged and is not a PD-N.
+The audit diagnostic audit-01-support/S3/big.json (MEASURED floating point,
+m=400,800,801 with mid.json) places roughly 94–96% of the Q-minimiser on
+L_m's second mode, while the bottom L_m mode is already near −0.1336.
+Mode-dependent O(1) corrections explain the observed slopes near −0.092
+without contradicting the limit theorem. This is finite-scope audit evidence,
+not a proved branch law or certified crossover prediction.
+
+
+## 2026-11-06 template completion (audit A10)
+
+Aliases: S3-corner-operator; IDEA-470 continuation.
+- Question / scope: the exact candidate and parameter scope preserved above; see linked theory, without expanding its quantifiers.
+- Mechanism and hypotheses: the signed mechanism stated above under the exact Lebesgue normalization; no sign-erased surrogate.
+- Closest registry entries (read in full): IDEA-470 and the full shortlist in novelty-gate-S3.md (prior recorded gate reading, not a new reading claimed in this response).
+- Separation criterion vs closest entry (and observation that falsifies it): a full signed normalized form reduction and compact corner spectral transfer; fixed-index or carrier-only convergence erases the distinction from the deferred continuation.
+- Literature baseline and search limitations: bounded repository gate novelty-gate-S3.md; response literature screen is search/abstract level only; no priority claim.
+- Applicable obstructions and exact hypotheses broken: fixed-index logarithmic weights alone do not control the full signed spectrum; global continuous-mass control is required. Carrier-family restrictions remain explicit.
+- Novelty gate verdict: variant with difference; consolidated continuation of IDEA-470 at PR preparation, not an unrelated fresh mechanism.
+- Cheapest decisive test: the analytic bound/transfer or strict family inequality stated above; see novelty-gate-S3.md for the original gate chronology.
+- Kill criterion written before testing: the original failure obligations above and in novelty-gate-S3.md are preserved; missing signed control, wrong normalization or absent uniform error blocks the proposed conclusion.
+- Test discriminability: the exact analytic obligations distinguish full-spectrum control from trial-only convergence; floating decimal comparisons alone cannot decide the theorem.
+- Actual test results and committed evidence: the linked theory files and audit-01.md give the analytic outcome at its stated scope; existing floating receipts retain MEASURED status.
+- Disposition and precise rejected scope, if any: retained continuation; no family-wide refutation or new PD-N.
+- Disposition reason: no rejection; the completed obligations are recorded in linked theory and audit-01.md.
+- Canonical theory / negative-result ID: the provisional IDs of the linked theory files; no final ID allocated in this response.
+- Topic / completed audit link / history (no pending process stage): padua-mz-sharp-constants-20261106; audit-01.md; 2026-11-06 template completion preserving the original registration prose.
+
+Canonical result pointer (audit A10): PD-T?mz-sharp-codex-S3-03; [theory](../theory/S3-corner-operator-limit.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.

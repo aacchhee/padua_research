@@ -257,3 +257,22 @@ Independent mathematical review and required Claude audit remain separate.
 2026-11-06, S2 round5, Codex mathematical developer; requested
 gpt-6.1-sol xhigh, runtime metadata unexposed. Exact finite certificate
 derived after the qualitative proof and before any certificate numerics.
+
+
+## 2026-11-06 practical limitation (audit A8)
+
+MEASURED float estimates of these proved formulas, from
+ audit-01-support/S2/LN_est.out and UN_est.out: L_N stays 1 until about
+4.4·10⁶, is about 1.00356 at 10⁸ and 1.00442 at 10¹⁸. U_N is about
+1.08 at 10⁶ and 1.062 at 2.7·10⁸. Thus the certificate remains wider than
+0.05 throughout the audited feasible evaluations. These are estimates of
+the formula, not rigorous decimal enclosures; the convergence theorem and
+its quantifiers are unchanged.
+
+
+## 2026-11-06 audit completion pointer
+
+The earlier requests for independent/Claude review describe the development
+boundary. Claude audit-01.md now accepts this analytic proof at its stated
+scope. That completed audit supersedes earlier pending-review metadata; it
+does not certify floating decimal values or approve this response.

@@ -27,7 +27,7 @@ def inventory(excluded, provisional):
     rows = []
     for path in sorted(candidates):
         name = path.relative_to(TOPIC).as_posix()
-        if name in excluded or '__pycache__' in path.parts:
+        if name in excluded or '__pycache__' in path.parts or 'audit-01-support' in path.parts:
             continue
         payload = path.read_bytes()
         if path.suffix in {'.json', '.svg'} and len(payload) >= LIMIT:
@@ -42,7 +42,7 @@ def inventory(excluded, provisional):
         'files': rows,
         'dynamic_excluded_paths': sorted(excluded),
         'scope': 'All topic code/**/*.py, topic/**/*.json and figures/*.svg, except this manifest, '
-                 '__pycache__, and explicit dynamic exclusions. Prose is not pinned. '
+                 '__pycache__, audit-01-support/, and explicit dynamic exclusions. Prose is not pinned. '
                  'External source files, large raw artifacts and cold-storage payloads '
                  'are outside this inventory; JSON inventories record their provenance.',
     }

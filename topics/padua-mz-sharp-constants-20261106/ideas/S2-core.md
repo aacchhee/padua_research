@@ -37,3 +37,11 @@ parity-block transition majorant; uniform endpoint five-thirds bound.
 - Canonical theory / negative-result ID: PD-T?mz-sharp-codex-S2-01.
 - Topic / completed audit link / history: 2026-11-06, after K0 clearance;
   independent audit is coordinated externally to this worker.
+
+
+## 2026-11-06 template completion (audit A10)
+
+- Separation criterion vs closest entry (and observation that falsifies it): a quantitative mass-metric remainder or specified endpoint model with full spectral transfer; absence of that control erases the distinction from the deferred continuation.
+- Topic / completed audit link / history (no pending process stage): padua-mz-sharp-constants-20261106; audit-01.md; 2026-11-06 template completion preserving the original registration prose.
+
+Canonical result pointer (audit A10): PD-T?mz-sharp-codex-S2-01; [theory](../theory/S2-uniform-upper.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.

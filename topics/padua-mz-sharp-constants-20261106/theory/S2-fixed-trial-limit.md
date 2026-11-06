@@ -264,3 +264,20 @@ These are precise OPEN obligations, not consequences of pointwise entries.
 runtime metadata unexposed. Derived after publishing the exact operator
 prediction and independently of final S4 upper-fit results. No Git/shared
 registry operation. Independent mathematical check requested separately.
+
+
+## 2026-11-06 current obligation pointers (audit A5)
+
+The preceding open-obligation discussion describes this fixed-J theorem's
+scope. The full upper-limsup obligation is subsequently proved in
+S2-qualitative-limit.md and the quantitative spectral error in
+S2-finite-certificate.md. The certified decimal and A3 registry interpretation
+remain unresolved. Audit-01 accepts the fixed-J proof.
+
+
+## 2026-11-06 audit completion pointer
+
+The earlier requests for independent/Claude review describe the development
+boundary. Claude audit-01.md now accepts this analytic proof at its stated
+scope. That completed audit supersedes earlier pending-review metadata; it
+does not certify floating decimal values or approve this response.

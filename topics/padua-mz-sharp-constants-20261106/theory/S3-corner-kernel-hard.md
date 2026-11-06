@@ -59,7 +59,7 @@ are included in the same estimates.
 
 ## Status by part
 
-Overall status: **PROVED** (analytic development; independent audit pending).
+Overall status: **PROVED** (analytic development; audit-01 accepted at stated scope).
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
@@ -291,3 +291,11 @@ shared-record edits, model norm data, or final S4 fits used. The proposed
 exact-coefficient route was replaced by its elementary integral
 representation to obtain the explicit uniform error (9) without an
 external asymptotic theorem; neither route is a new candidate mechanism.
+
+
+## 2026-11-06 audit completion pointer
+
+The earlier requests for independent/Claude review describe the development
+boundary. Claude audit-01.md now accepts this analytic proof at its stated
+scope. That completed audit supersedes earlier pending-review metadata; it
+does not certify floating decimal values or approve this response.

@@ -82,7 +82,7 @@ we prove
         <=64+4R(tau+sigma).                               (4)
 
 Partition its indices into the first strip 1<=a<=floor(R/2), the
-second strip 1<=b<=floor(R/2), and the middle with a,b>R/2. These
+second strip 1<=b<=floor(R/2), and the middle with a,b>=L+1. These
 three parts are disjoint and exhaustive because a+b>R. In the first
 strip b runs from R-a+1 to R, giving exactly a terms. There b>R/2,
 so b^2-1/4>=3R^2/16, and
@@ -233,3 +233,11 @@ stays OPEN. The constant 4300 is an asymptotic transfer bound only.
 2026-11-06; Codex S3, allocated gpt-6.1-sol xhigh; runtime metadata
 unexposed. Round 2 development after complete prospective gate and K0
 clearance. Full source/rules SHA above. No final S4 fits read.
+
+
+## 2026-11-06 audit completion pointer
+
+The earlier requests for independent/Claude review describe the development
+boundary. Claude audit-01.md now accepts this analytic proof at its stated
+scope. That completed audit supersedes earlier pending-review metadata; it
+does not certify floating decimal values or approve this response.

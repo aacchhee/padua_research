@@ -1,4 +1,4 @@
-# S1 preregistered prediction — reciprocal CC logarithmic model
+# PD-T?mz-sharp-codex-904 — reciprocal CC logarithmic model
 
 Rules/source2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861.
 Prediction written 2026-11-06, before access to final K1 extrapolation.
@@ -140,7 +140,7 @@ The coordinator committed this prediction in977c07a before K1 fits.
 K1 subsequently passed its prescribed two-window stability test on
 each parity, with final-window fitted intercept about13.06114. Its
 7.268% difference from pi⁴/8 exceeds K2's5% threshold. Accordingly
-this **model route is operationally rejected and stopped**. No justified
+this **model route is deferred and stopped**. No justified
 revision of the leading coefficient was found; the permitted revision
 is unused. The original criterion has not been changed.
 
@@ -152,3 +152,16 @@ no bound on that bias or claim that the fit calculation is wrong is
 made. A matching lower bound and the original PD-T020 limit are OPEN.
 The earlier numbered transfer obligations describe the stopped route,
 not authorized continuing work after the kill.
+
+
+## 2026-11-06 audit-01 A1 interpretation
+
+The K1 final-window intercept 13.0611 exceeds the PROVED upper bound
+limsup (log N)² lambda_min <= pi⁴/8 = 12.1761. The fitted intercept therefore
+cannot be the true limit under S1-02. K2 KILL_MODEL remains the unchanged
+registered operational outcome, but carries no evidential weight against
+equality: the equality route stopped on a misspecified numerical test.
+Disposition: **deferred**, not rejected or refuted; no PD-N is created.
+Resume on a proof of the reverse bound liminf (log N)² lambda_min >= pi⁴/8,
+or a new prospectively registered numerical protocol. The one-sided theorem
+and classical model norm remain independent PROVED records.

@@ -25,7 +25,7 @@ not an asymptotic statement about a finite CC Gram matrix.
 
 ## Status by part
 
-Overall status: PROVED (analytic development; independent audit required).
+Overall status: PROVED (analytic development; audit-01 accepted at stated scope).
 
 | Part | Status | Evidence |
 |---|---|---|
@@ -46,7 +46,7 @@ The [gate](../novelty-gate-S1.md) records bounded predecessor coverage.
 Supplementary distinct Astra reconstruction accepted the corrected
 absolute-square display at SHA256
 13975d980264e3b89304ebd14f20f8d07207fe3ec066fb019566615038f65f0e;
-see ../independent-checks-S1-S3.md. Required Claude audit remains separate.
+see ../independent-checks-S1-S3.md. Claude audit-01 accepts this proof at the stated scope.
 
 ## Proof
 
@@ -74,3 +74,11 @@ Those obligations remain in [S1-model](S1-model.md), with PD-T020 OPEN.
 
 2026-11-06: first written model calculation, after the S1 gate. The model
 derivation is local, without a historical novelty claim.
+
+
+## 2026-11-06 literature context (audit A9)
+
+LITERATURE: the Volterra norm 2/pi is classical; the auditor points to
+P. R. Halmos, Hilbert Space Problem Book, Problem 188. This locator has not
+been independently checked in this response. The complete local proof above
+is retained and supplies the result; no classical priority claim is made.

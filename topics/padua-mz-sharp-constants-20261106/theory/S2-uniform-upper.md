@@ -3,7 +3,7 @@
 ID kind: PD-T.
 Aliases: five-thirds endpoint upper bound; IDEA386 normalized remainder;
 positive reflected moment completion.
-Split from: supporting sharpened conclusion for PD-T027; its sharp-limit
+Split from: PD-T027, uniform-gap conjunct; its sharp-limit
 statement remains unchanged and OPEN.
 Split into: none.
 
@@ -137,9 +137,10 @@ neither proves existence of the limit nor identifies its value.
 
 ## Open items
 
-Independent mathematical audit. A microscopic endpoint model, its norm,
-and a quantified finite-to-model spectral error remain unresolved. Pointwise
-entry or fixed-vector convergence would not alone establish norm convergence.
+Audit-01 accepts this proof. The endpoint model and norm convergence are
+proved in S2-qualitative-limit.md; S2-finite-certificate.md proves a
+quantified finite-to-model error. A certified decimal remains unresolved.
+Pointwise entry or fixed-vector convergence alone would not suffice.
 The original PD-T027 is to retain its exact sharp-limit question with a
 link to this uniform-gap conjunct, according to coordinator/auditor disposition.
 

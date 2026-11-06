@@ -34,3 +34,23 @@ Aliases: PD-T379 parameter tuning; rational Fejer norm improvement.
 - Canonical theory: PD-T?mz-sharp-codex-S3-01,
   theory/S3-normalized-carrier-improvement.md.
 - History: 2026-11-06, S3 round1, after prospective gate and K0 clearance.
+
+
+## 2026-11-06 template completion (audit A10)
+
+- Closest registry entries (read in full): IDEA-469 and the full shortlist in novelty-gate-S3.md (prior recorded gate reading, not a new reading claimed in this response).
+- Separation criterion vs closest entry (and observation that falsifies it): a strict improvement of IDEA-469 within its fixed-parameter scalar family; absence of a strict inequality erases the difference.
+- Literature baseline and search limitations: bounded repository gate novelty-gate-S3.md; response literature screen is search/abstract level only; no priority claim.
+- Applicable obstructions and exact hypotheses broken: fixed-index logarithmic weights alone do not control the full signed spectrum; global continuous-mass control is required. Carrier-family restrictions remain explicit.
+- Actual test results and committed evidence: the linked theory files and audit-01.md give the analytic outcome at its stated scope; existing floating receipts retain MEASURED status.
+- Disposition and precise rejected scope, if any: retained continuation; no family-wide refutation or new PD-N.
+- Disposition reason: no rejection; the completed obligations are recorded in linked theory and audit-01.md.
+- Canonical theory / negative-result ID: the provisional IDs of the linked theory files; no final ID allocated in this response.
+- Topic / completed audit link / history (no pending process stage): padua-mz-sharp-constants-20261106; audit-01.md; 2026-11-06 template completion preserving the original registration prose.
+
+
+Audit A10 outcome pointer: S3-04 in theory/S3-carrier-family-ceiling.md
+proves the fixed-parameter scalar-family ceiling U_minus < 1/24. It is a
+positive scoped theorem, not a refutation of arbitrary carriers or PD-T381.
+
+Canonical result pointer (audit A10): PD-T?mz-sharp-codex-S3-01 / S3-04; [theory](../theory/S3-normalized-carrier-improvement.md), [theory](../theory/S3-carrier-family-ceiling.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.

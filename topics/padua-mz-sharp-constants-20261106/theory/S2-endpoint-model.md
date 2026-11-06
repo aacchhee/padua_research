@@ -61,17 +61,12 @@ finite-to-limit error is proved in S2-finite-certificate.md.
 
 ## Status by part
 
-Overall status: **PROVED** via the linked follow-on theorem files.
-
-| Mathematical part | Status | Evidence / remaining gap |
-|---|---|---|
-| Exact norm(P) and its common-parity CC upper spectral limit | PROVED | S2-qualitative-limit.md, supplementary distinct review PASS |
-| Explicit computable finite-to-limit error | PROVED | S2-finite-certificate.md, supplementary distinct review PASS |
-
-The exact registered formula and derivation below are preserved. The
-status reflects subsequent proofs, rather than their open obligations at
-registration. A certified decimal evaluation and an elementary/practical
-rate are future refinements, outside these proved claims.
+This file preserves the registered definition/prediction (P); it makes no
+separate current PROVED claim duplicating its follow-on theorems.
+The convergence theorem is PD-T?mz-sharp-codex-S2-05 in
+S2-qualitative-limit.md, and the finite certificate is
+PD-T?mz-sharp-codex-S2-06 in S2-finite-certificate.md. Their statements and
+proofs are authoritative. The original prediction above is historical.
 
 ## Depends on
 

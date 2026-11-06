@@ -1,8 +1,7 @@
 {
-  "status": "local pending AC-designated archival; nonessential full raw provenance",
+  "status": "optional raw not archived or delivered; not retained as authoritative repository evidence",
   "artifacts": [
     {
-      "path": "/tmp/sharp-S4/raw-cc-scan.json",
       "bytes": 55192,
       "sha256": "7ce16e5c61fb82fe1fc4125bbd9570fdc7579db7aa139cd116b4807322f500f2",
       "source_commit": "977c07ae193f981b8d151fa766fdcfa3f19ee8ff",
@@ -10,11 +9,13 @@
       "checker_command": "python topics/padua-mz-sharp-constants-20261106/code/S4_essential.py --raw /tmp/sharp-S4/raw-cc-scan.json --output topics/padua-mz-sharp-constants-20261106/evidence/S4-essential-cc.json --check",
       "summary": "evidence/S4-raw-scan-summary.json",
       "essential_evidence": "evidence/S4-essential-cc.json",
-      "retention": "retain local until authorized archive available; exact raw bytes include timing and cannot be guaranteed on regeneration",
-      "retrieval": "local path in current environment; optional full raw is not remotely archived. Numerical claims regenerate from committed essential file and source code."
+      "historical_path": "/tmp/sharp-S4/raw-cc-scan.json",
+      "historical_retention": "retain local until authorized archive available; exact raw bytes include timing and cannot be guaranteed on regeneration",
+      "historical_retrieval": "local path in current environment; optional full raw is not remotely archived. Numerical claims regenerate from committed essential file and source code.",
+      "retention": "not archived, delivered or retained as authoritative repository evidence",
+      "retrieval": "No guaranteed retained retrieval locator; historical producer working copies may survive in this environment."
     },
     {
-      "path": "/tmp/sharp-S4/padua-minima-raw.json",
       "bytes": 11949,
       "sha256": "2f32cf77ba5c5a5fc0df61ca93a1bc35c661cfa149980b7cafe58a8e8bc6a4b1",
       "source_code_sha256": "a392135e3a538d90f3d368f8172facabf5c63ab9f941cd0aba2727e5fbe7773b",
@@ -22,9 +23,13 @@
       "checker_command": "python topics/padua-mz-sharp-constants-20261106/code/S4_padua_essential.py --inputs /tmp/sharp-S4/padua-minima-raw.json topics/padua-mz-sharp-constants-20261106/evidence/S4-padua-upper-pilot.json --output /tmp/regenerated-padua-essential.json",
       "summary": "evidence/S4-padua-run-summary.json",
       "essential_evidence": "evidence/S4-padua-essential.json",
-      "retention": "optional timing-bearing raw stays local pending authorized archive; no claim depends on future raw retrieval",
-      "retrieval": "local current environment only; fits reproduce from committed essential evidence",
-      "verification_command": "cmp /tmp/regenerated-padua-essential.json topics/padua-mz-sharp-constants-20261106/evidence/S4-padua-essential.json"
+      "verification_command": "cmp /tmp/regenerated-padua-essential.json topics/padua-mz-sharp-constants-20261106/evidence/S4-padua-essential.json",
+      "historical_path": "/tmp/sharp-S4/padua-minima-raw.json",
+      "historical_retention": "optional timing-bearing raw stays local pending authorized archive; no claim depends on future raw retrieval",
+      "historical_retrieval": "local current environment only; fits reproduce from committed essential evidence",
+      "retention": "not archived, delivered or retained as authoritative repository evidence",
+      "retrieval": "No guaranteed retained retrieval locator; historical producer working copies may survive in this environment."
     }
-  ]
+  ],
+  "retention_note": "Historical provenance only. Surviving local working copies, if present, are outside authoritative evidence and provide no guaranteed cross-session retrieval. No archive or delivery exists; committed essential data supports the claims."
 }

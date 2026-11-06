@@ -144,3 +144,43 @@
 - [audit-01](audit-01.md): mathematics ACCEPTED at every stated scope (S1-01/02, S2-01–06, S3-01–04, S3-kernel); no BLOCKING. Stage → WORK for four MAJOR record/interpretation findings (A1 K1 intercept above the proved π⁴/8 bound, so K2 is not evidence against equality; A2 K4 finite-window minimiser is B's second mode; A3 PD-T027/PD-T381 target mapping is an AC decision; A4 durable MEASURED records) and MINOR A5–A13 (A13: audit support JSON makes the manifest membership check fail until the response rescopes it).
 - Registered handoff commands rerun with exit 0 and agreement to roundoff; independent CC, Padua and B_K reruns agree. Audit diagnostics and four development leads P1–P4 (closed-form Schlömilch kernel for B with nonpositive kernel, prospective two-branch test, reverse CC bound route, Λ_edge bracket) are in audit-01; support files in [audit-01-support](audit-01-support/). No registry, manuscript, final ID or gate threshold changed.
 - [Handoff 03](handoffs/03-response-and-work.md): Codex response to A1–A13 plus authorized closing development P1–P4 (AC: "If you see some promising ways to close remaining open items, write a handoff and set the branch to work, codex will continue"). Handoff 02 done in ed5acba.
+
+
+## 2026-11-06 R: audit response before development
+
+Rules/input head 0205690b9c4e959a28e949083e9a1808735abf4b.
+Codex mechanical worker, requested gpt-6.1-sol medium; actual serving model
+and effort metadata unexposed. Response changes no accepted scientific
+statement/proof/quantifier beyond A5–A7 exact editorial clarifications.
+Original preregistration prose, outcomes and receipts remain historical.
+Novelty gate does not apply to mechanical response: no mechanism is proposed.
+A9 search-level literature coverage is recorded without priority claims.
+A1/A2 dispositions/interpretations and new MEASURED records require focused
+audit; they do not self-approve analytic results. A10 shared registry
+consolidation obligations remain reserved for PR preparation.
+A11 takes the auditor's permitted non-retention alternative: optional raw
+was not archived; historical hashes are not retrieval promises.
+A13 intentionally excludes auditor-owned audit-01-support/ from developer
+inventory and regenerates evidence-manifest.json; no receipt was modified.
+Verification: evidence_manifest.py --write --checks passed, 63 identities,
+23 Python ASTs,57 JSON files,242 local links and zero missing links before
+coordinator-only appends. Re-run after integration. R publication SHA is
+recorded by coordinator; D starts only after the R commit is published.
+
+## 2026-11-06 original-target decision still reserved for AC (audit A3)
+
+No registry mapping is chosen. PD-T020 stays OPEN. For PD-T027 and
+PD-T381, option (a) accepts the explicit computably approximable operator
+characterizations as identifying the values, yielding PROVED mappings;
+option (b) conservatively maps existence/uniform-gap/parity-agreement
+conjuncts to PROVED split records and leaves numerical-value conjuncts OPEN,
+yielding PARTIAL. The exact original target wording must be preserved in
+History. The auditor recommends deciding after P1/P4 development and notes
+that (a) remains defensible if decimal enclosure attempts fail. AC decides;
+registries are untouched in R.
+
+## Codex continuation at0205690
+
+- Rules AGENTS/WORKFLOW/CODEX read at full head0205690b9c4e959a28e949083e9a1808735abf4b; main remains76ba4214b100c86a44941f5e9a662ce9ce48efb8 and is already the base. No merge needed. Cloud-runtime skill/status and enforced network policy inspected; shell Git proxy still unreachable, so pinned connector reads and lease-checked publication continue. AC's noreply-author and temporary10MB approvals persist.
+- R is performed first, using Sol medium records plus distinct Astra high supplementary review. P1/P3 Sol xhigh and P2/interval Sol medium have completed preparation only; no D derivation or computation precedes this R publication. Current added source paths are blob-verified.
+- A11 precision: original /tmp working copies do survive here, but no archive/delivery or authoritative retention exists; wording does not falsely declare them destroyed/unavailable. Only committed essential evidence is required for claims.

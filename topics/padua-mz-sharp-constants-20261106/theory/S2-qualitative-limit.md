@@ -4,8 +4,8 @@ ID kind: PD-T.
 Aliases: compact signed transition remainder; two-endpoint weak profiles;
 CC upper spectral limit as a microscopic sampling norm.
 Split from: the convergence-existence part of the S2 endpoint target.
-Split into: quantitative finite-to-limit error remains OPEN in
-S2-endpoint-model.md; the numerical value remains MEASURED only.
+Split into: the quantitative finite-to-limit error is proved separately in
+S2-finite-certificate.md; the numerical value remains MEASURED only.
 
 ## Statement
 
@@ -18,7 +18,8 @@ where Lambda_edge is exactly the variational norm(P) registered in
 S2-endpoint-model.md. In particular both N parities have the same limit.
 This is a qualitative convergence theorem. It supplies no explicit epsilon(N)
 for the full spectral convergence and no certified numerical evaluation of
-Lambda_edge. Those quantitative obligations remain OPEN.
+Lambda_edge. The quantitative error is supplied separately by
+S2-finite-certificate.md; a certified decimal remains OPEN.
 
 ## Definitions
 
@@ -47,15 +48,15 @@ compactness and integral convergence facts are used explicitly below.
 
 ## Status by part
 
-Overall status: **PROVED** in analytic development, independent check requested.
+Overall status: **PROVED** in analytic development, independently accepted at its stated scope in audit-01.md.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
 | Qualitative convergence and common-parity limit(1) | PROVED | Variational proof below; no quantitative rate |
 
 This result does not satisfy the campaign's stronger request for an explicit
-finite-to-limit spectral error. That part and the certified norm value
-remain OPEN. No PARTIAL label is inferred merely from supporting lemmas.
+finite-to-limit spectral error. That part is proved separately in
+S2-finite-certificate.md; a certified norm value remains OPEN. No PARTIAL label is inferred merely from supporting lemmas.
 
 ## Depends on
 
@@ -253,3 +254,11 @@ quantitative acceptance criterion is therefore not declared complete.
 2026-11-06, S2 Codex mathematical developer; requested gpt-6.1-sol xhigh,
 runtime metadata unexposed. Prospective compactness gate refresh recorded
 before this proof. Sent for independent challenge after fixed-J lemma.
+
+
+## 2026-11-06 audit completion pointer
+
+The earlier requests for independent/Claude review describe the development
+boundary. Claude audit-01.md now accepts this analytic proof at its stated
+scope. That completed audit supersedes earlier pending-review metadata; it
+does not certify floating decimal values or approve this response.

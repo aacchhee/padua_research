@@ -73,3 +73,39 @@ The [bounded literature screen](literature-screen.md) fully reads one applicable
 [Proposed manuscript statements](manuscript-insert.md) contain exact conclusions and their dependencies. [Handoff02](handoffs/02-audit.md) requests one substantive Claude Opus5.5 xhigh audit of the completed candidate, including full registry novelty reading, the rejected numerical proxy and appropriate independent reruns. No merge is requested.
 
 Final mechanical scope:23Python files,40JSON files, one small SVG; no excluded partial receipts or missing local links. [Integrity record](integrity-checks.md) and [evidence manifest](evidence-manifest.json).
+
+
+## 2026-11-06 audit-01 K2 interpretation addendum
+
+The K1 final-window intercept 13.0611 exceeds the PROVED bound
+limsup (log N)² lambda_min <= pi⁴/8 = 12.1761. It therefore cannot identify
+the true limit under S1-02. K2 KILL_MODEL remains the registered operational
+outcome and carries no evidential weight against equality; the equality
+route stopped on a misspecified numerical test. The candidate is **deferred**,
+with resume condition: a proof of the reverse bound liminf >= pi⁴/8, or a
+new prospectively registered numerical protocol. No PD-N is created.
+
+## 2026-11-06 audit-01 K4 interpretation addendum
+
+S3-03 (3)/(4) predict limits, and make no prediction about finite-window
+slopes. K4 compared those limits with finite-window slopes and retains its
+unchanged KILL_HEURISTIC_PROXY outcome. The audit diagnostic
+[big.json](audit-01-support/S3/big.json) and
+[mid.json](audit-01-support/S3/mid.json) is MEASURED floating evidence:
+at m=400,800,801 the Q-minimiser has about 94–96% weight on the second
+L_m mode, while L_m's bottom mode already lies near the B proxy −0.1336.
+Mode-dependent O(1) corrections explain the registered slopes near −0.092
+without contradicting the theorem. This is a finite-scope interpretation,
+not a certified crossing law or a PD-N.
+
+## Durable finite measurements (audit A4)
+
+The reported floating claims now have separate durable MEASURED homes:
+[CC lower fits and normalization](theory/S1-measured.md),
+[CC upper fits and endpoint proxy](theory/S2-measured.md), and
+[Padua minima, corner proxies and transfer](theory/S3-measured.md).
+Each records the exact finite scope, frozen commands/receipts, attributed
+independent checks and limitations. None certifies decimals or upgrades a
+limit theorem. K3's 3.85e-12 parity difference is floating noise, not an
+accuracy claim. Audit A8 practical formula estimates show the S2-06 bracket
+still wider than 0.05 throughout the audited feasible evaluations.
