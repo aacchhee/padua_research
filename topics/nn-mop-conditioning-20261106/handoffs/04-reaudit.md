@@ -1,6 +1,6 @@
 # Handoff 04 — NN MOP conditioning — focused Claude re-audit
 
-- Status: open
+- Status: done in e6c596f678faced08e4b2f9a2f329994128804c6
 - Previous handoff: [03-response.md](03-response.md)
 - Next agent / model / effort: Claude, Opus 5.5 xhigh
 - Role: independent focused auditor and topic orchestrator
