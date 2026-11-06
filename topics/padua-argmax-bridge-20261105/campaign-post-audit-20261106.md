@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **21/40** (D01–D20 and D22). Active: **D21** fixed static benchmark; D23 matched backend trial, D24 far refinement and D25/D26 analytic work in parallel.
+Completed: **22/40** (D01–D20, D22 and D24). Active: **D21** fixed static benchmark; D23 matched backend trial, D24 far refinement and D25/D26 analytic work in parallel.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -67,6 +67,8 @@ AC clarification: pack preparation waits until research ends and is necessary on
 
 | D23 | ACTIVE | Lower-order rigorous partial-cotangent backend | Math and first source accepted; fixed60CPU matched old/new2048 trial released afterD21primary ends, no result yet. |
 
-| D24 | REVIEW | Sharper far completed-constant bound | Developer extensionrho<=3/4 and fullfar coefficient25/2 frozen; independent review pending, no scalar/onsetclaim. |
+| D24 | COMPLETE | Sharper far completed-constant bound | Independent review accepts new rho<=3/4 extension and wholefar coefficient25/2, no scalar/onsetclaim. |
 | D25 | ACTIVE | Actual-origin relative outer quadrature | Justified Astraultra35min paperblock, movingmesh/cusp/removal terms explicit; no jobs. |
 | D26 | PREPARING | Global4096 analytic assembly | Fixed4096ONLY source/SPEC/math preparation using D24ifaccepted; no scalar before rootrelease. |
+
+| D27 | PREPARING | Wider analytic actual-corner bridge | New pi/4 square and D20error/globalnorm; fixed1024ONLY scalar after proof/source/SPEC/rootrelease, no nativejobs. |

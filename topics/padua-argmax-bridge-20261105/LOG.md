@@ -763,3 +763,19 @@ Fetched both heads after d248fed push; currentmain f70a260e5b5f9a01209dc8a05faab
 
 - Reportf98523ca... ACCEPTS four split paper scopes without unresolved findings, including complete actual-origin telescope, both-parity central count, weighted poles, all six rows, anisotropic maxima and real-n monotonicity. Root adopts near noncorner exclusion EVERYn>=4096 with gap3/2000. Cstar<.057,Kstar<.097,E0<.05 and directional charges<.004 implyprimitiveexcess<.061<1/16. No scalar/native/build job ran orreceiptcreated. D13fullrelative andfar/global4096remainOPEN. D22complete; total21/40withD21primarypending.
 - D24developer fullfar constant25/2 and domainextensionto3/4 are preservedreviewpending. D25outerrelative isolatedpaperblock andD26fixed4096assemblyprepareseparately. No Syvertpackpreparation.
+
+
+### D27 prospective wider analytic-corner bridge
+
+- New Solxhigh paper/scalar candidate: D17 chose pi/6 point rectangles and the old UF global error. Test a wider pi/4 square with D20's accepted whole-profile global error instead. At its axis points u_axis=(1−1/sqrt2)/2>=1/7 and P<=5/7; the diagonal has twice the cosine deficit and sine charge. A complete same-degree analytic norm can use D20 Cnew+2KD rather than old UF. Derive the general D08 criterion and all-n monotonicity before computation; no unreviewed D17 quantifier extension.
+- Fixed primaryN1024ONLY, chosen as a prospective wider-patch proof test (not a threshold search). Proposed <=5CPU directed scalar after proof/source/SPEC freeze and root release, no native/actualpoint call, retry, threshold/parameter/precision rescue. If it fails preserve the first criterion result and keep lower-domain corner theoremOPEN. Existing D17/D20 sources and failed recipes unchanged. This develops an analytic bridge, not isolated-degree accumulation.
+
+
+### Evidence index capacity patch adopted (not a research round)
+
+Distinct technical review ACCEPTS candidate d9d4590d59f44cbfc1627a4a0cab0b6bda398f327c0e755eb0c19c48aa063e2f. Root copied BYTEIDENTICALcandidate to canonical helper and ran the supported postadoption check before changing194 manifest rows. All exact schema/API/hash identities and per-evidence16KiB guards retained; only consolidatedindexcap32KiB. Report preserves first developer fixture assertion failure and corrected metadata-only suite; no scientific retry, output deletion, split or new format. Individualresultreceipts stillstrict16KiB, total10MBcap unchanged.
+
+
+### D24 accepted: full far constant25/2
+
+Report600b3956... ACCEPTS both frozen proofs with no unresolved findings. Root adopts new local modulus throughrho3/4 and wholefar25/2 coefficient; endpoint/H/root domains, cusp signs, entropy/fractional terms and exact outerratio independently reconstructed. This preserves explicit limiting-originPD271computer-assisteddependency, not a finiteLambdabound. D24complete,total22/40withD21/D23primariespending. D26source4096preparation maynow useacceptedD24; no global4096adoptionwithoutitssoleendpointanddistinctreview. D25firstrelativeouterproof83148f74...checkpointed underadversarialreview, no numericjobs.

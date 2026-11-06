@@ -240,3 +240,8 @@ computation, scalar/phase sampling, native/quadrature/degree job or
 new numerical premise occurred. 2026-11-06, parent-assigned Codex
 gpt-6.1-sol xhigh20min PAPER block; rules/input
 476208fe080cc79cae5b2578344b2e18f442a1e8, serving metadata unexposed.
+
+
+## Root review closure — 2026-11-06
+
+Distinct review [D24](../independent-checks-D24-far-constant.md), SHA256 `600b395672d6ade4607e6c9980aff7df778a729cf5e17095e182d9ca04ff3500`, accepts both split scopes without unresolved findings. Root adopts the newly proved rho<=3/4 domain and full closed signed FAR coefficient25/2, preserving the limiting-origin Arb dependency and its distinction from finite Lambda_c. No new onset or numerical job is claimed here. Reviewed prefix is preserved; D26 assembly and final Claude audit are separate.

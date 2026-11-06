@@ -22,6 +22,7 @@ V2_COLUMNS=['path','bytes','sha256']
 V3_COLUMNS=['prefix_index','suffix','bytes','sha256_base64']
 V4_COLUMNS=list(V3_COLUMNS)
 LIMIT=16384
+INDEX_LIMIT=32768
 DEFAULT_ROOT=Path(__file__).resolve().parent.parent
 
 def require(ok,message):
@@ -177,13 +178,13 @@ def main():
     require(index.is_relative_to(root) and index.is_file(),'outside/missing index path')
     original=index.read_bytes();document=load(original);rows=normalize(document);verify_files(rows,root,index)
     if args.check:
-        require(len(original)<LIMIT,'index reaches/exceeds16KiB')
+        require(len(original)<INDEX_LIMIT,'index reaches/exceeds32KiB')
         print(json.dumps({'status':'PASS','schema':document['schema'],'entries':len(rows),'index_bytes':len(original),'total_bytes':document['total_bytes']}))
         return
     converted=compact_v4(document) if args.compact_v4 else compact(document)
     candidate=(json.dumps(converted,separators=(',',':'),ensure_ascii=False,allow_nan=False)+'\n').encode('utf-8')
     require(normalize(load(candidate))==rows,'serialized roundtrip changed rows')
-    require(len(candidate)<LIMIT,'compact index reaches/exceeds16KiB')
+    require(len(candidate)<INDEX_LIMIT,'compact index reaches/exceeds32KiB')
     require(len(candidate)<len(original),'refuse compaction without size improvement')
     require(index.read_bytes()==original,'index changed during validation')
     temporary=None

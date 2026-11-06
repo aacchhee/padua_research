@@ -182,3 +182,6 @@ new mathematical cost reductions; no legacy degree extension.
 
 
 D22 accepted f98523ca...: actual-origin partial cancellation and anisotropic exact paper bounds give near noncorner gap3/2000 for EVERYn>=4096. No computationalendpoint. D13fullrelative andfar/global4096OPEN; finalClaude separate. D21/D23acceptedsourcefirsttrial releases areinLOG, no resultadoptionyet.
+
+
+D24 accepted600b3956...: domainextensionrho<=3/4 and wholeFAR trueconstant relativecoefficient25/2. D26fixed4096budgetpreparesnewassembly; no newglobalonsetyet. D25relativeouterfirstproof isreviewpending.
