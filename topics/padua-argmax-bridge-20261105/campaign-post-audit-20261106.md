@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **13/25**. Active: **D14**; D15/D16 preparation runs in parallel.
+Completed: **15/25** (D01–D14 and D16). Active: **D15**.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -21,7 +21,7 @@ Completed: **13/25**. Active: **D14**; D15/D16 preparation runs in parallel.
 | D08 | COMPLETE | Lower global analytic onset; point-to-box reduction | Global theorem independently accepted for every n>=50000, primary40000 far failure preserved. Three split point-to-box proofs independently accepted with no findings; no patch instances. |
 | D09 | COMPLETE | Three-point actual-corner trial and a useful independent global norm | Global M512=34 accepted; primary three-point trial PASS11.265CPU and fresh independent replay PASS11.016CPU. Whole actual-corner rectangles certified with19/5 radial-square loss. Full global512 stillOPEN. |
 
-Current boundary: exact argmax2–40,512 and every integer n>=16000; gaps41–511 and513–15999 OPEN.
+Current boundary: exact argmax2–40,512 and every integer n>=10000; gaps41–511 and513–9999 OPEN.
 
 The initial scientific boundary is exact argmax degrees2–40 and alln>=500000,
 with exact two parity-correct corners. Gap41–499999 staysOPEN. Claude's
@@ -48,7 +48,7 @@ No main push, merge, force, tags, .github/settings or major cleanup.
 | D12 | COMPLETE | First complete new-technology degree512 phase-cover attempt | Complete53vertex/83node cover PASS44.626CPU; independent fresh replay PASS41.465CPU and final application accepted. Exactglobal512 now proved;147B certificate. |
 
 | D13 | COMPLETE | Origin-cancelled finite remainder | Endpoint and singular-mesh support independently accepted; complete joint relative remainder remainsOPEN. One display NOTE only, no numerical jobs. |
-| D14 | ACTIVE | Sampling norm and model-free finite proof | Metadata confirms15grid vertices reduce to13 saved keys, norm<30; split proof/review pending. No new numerical evaluations. |
-| D15 | PREPARING | Parameterized model-free certifier | Conditional design for one fixed2048 scaling case; existing guards permit2048. Generic contract, implementation/source review and release required before any run. |
+| D14 | COMPLETE | Sampling norm and model-free finite proof | Metadata confirms15grid vertices reduce to13 saved keys, norm<30; general norming and model-free512 proof independently accepted. No new numerical evaluations. |
+| D15 | ACTIVE | Parameterized model-free certifier | Conditional design for one fixed2048 scaling case; existing guards permit2048. Generic contract, implementation/source review and release required before any run. |
 
-| D16 | PREPARING | Phase-correlated analytic budget | Separate actual-origin error and rho-dependent absolute allowance; primary10000 scalar only after preregistration/source freeze. No new onset adopted. |
+| D16 | COMPLETE | Phase-correlated analytic budget | Separate actual-origin error and rho-dependent absolute allowance; primary10000 scalar only after preregistration/source freeze. Independently accepted global onset10000, with near11/1000/far1/400 gaps. |

@@ -227,3 +227,57 @@ No fallback means no alternate case/rectangle, precision/source/cap rescue
 or retry. The unchanged D07 certified whole-row finite-polynomial recovery
 remains allowed and mandatory for safe enclosures; its actual counters
 and CPU are retained. Zero internal row recoveries are not a gate.
+
+### D15 bounded implementation preregistration — 2026-11-06
+
+Root assigned a separate25-minute implementation block after preserving
+this original design. New local checker.py, producer.py, runtime.py and
+controller.py implement the single pipeline above. No D11 frozen source
+is edited. D07 safe internal row recovery is allowed with complete counts;
+no zero-recovery condition is imposed. Remaining source/math acceptance
+and root release are mandatory; presence of --run-once is not release.
+
+Synthetic-only controls are now prospectively allowed by root within
+1CPU author plus1CPU independent reviewer (shared reserve2 within400).
+After writing code/data SOURCES.json and FREEZE.json, run exactly once:
+
+    python3 topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/controls.py --run-once
+
+The controls import only checker and standard Python libraries; they
+never import runtime or producer, load a numerical API, compile native
+code or evaluate any phase. They statically parse local Python syntax
+and test rational/degree/tree rejections, quarter-grid19-to15 geometry,
+exact ceiling absorption, synthetic pi-fourth corner strictness, closed
+union/tangencies and bad oracle/cache/alias rejection. Fixed exclusive
+output directory permanently consumes the author slot even on failure.
+No source fix followed by an automatic retry is authorized. A failure
+is retained for root disposition. These controls establish no point
+interval, scientific cover, conditioning or throughput. All numerical
+execution remains UNRELEASED pending accepted D14/D15 mathematics and
+distinct source review; prospective later controller command is:
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/controller.py --run-once
+
+The integrated lossless all-row receipt writes inside the primary398CPU
+process tree after both supervised stages. Tree+receipt combined must be
+strictly below16384bytes, otherwise retain whole raw output and STOP.
+It is not a separate unbudgeted postprocessor. Its raw checkpoints,
+source/build/map identities and every API count remain locally retained.
+
+### Final source checkpoint, still UNRELEASED
+
+The initial author synthetic preflight PASSed at0.061098CPU (native_calls0);
+the author1CPU slot is consumed. The attempt preserves its initial freeze
+and subsequent margin-reporting/final-CPU/freeze-boundary refinements.
+Final source FREEZE SHA256 is
+4e12e141f774ac2bea65f2581c7d2a5a4b35b795ef45f635c31fecc35e31a45e;
+SOURCES c9b232cceab301eae8c500fb9c3984702c21bef89f144b89d087f01a5cf1ab4f.
+Five Python sources and eight unchanged code dependencies are pinned;
+no prose/old numerical witness is enforced. No post-refinement author
+rerun occurred. Distinct reviewer may use the remaining1CPU pure slot
+in a fresh isolated checkout; no numerical source release is implied.
+Original design's implementation/policy blockers are now replaced by
+this source candidate and root's allowed safe-recovery policy. D14 norm
+acceptance, generic D15 contract acceptance, distinct source review and
+root release remain blocking. Independent full native replay and archive
+disposition remain later adoption obligations.

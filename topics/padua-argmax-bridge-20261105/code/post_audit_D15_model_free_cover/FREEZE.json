@@ -1,0 +1,37 @@
+{
+  "status": "UNEXECUTED source candidate; not execution release",
+  "input_head": "e13a538bda80e6cc785f4835937b2ca338bc1d6f",
+  "code_data": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/checker.py",
+      "bytes": 8354,
+      "sha256": "0875476ed85dff8a43eb26006e17836138a95064c3f425d70b453c08721d7b26"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/controller.py",
+      "bytes": 10153,
+      "sha256": "2710c8e5fca417259f11db5913771bcaecd40cb8b8af15fe5ed30bd62228b6a9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/controls.py",
+      "bytes": 4705,
+      "sha256": "ba8ee3613330c80b69d1abae09f11ea3108fc849213246adf5143c6ac0c27dac"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/producer.py",
+      "bytes": 2956,
+      "sha256": "bce11c35ec1d4b2f42599e7aa67527d8677aed9e7ae61787b8f4ab6b5f918445"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/runtime.py",
+      "bytes": 8461,
+      "sha256": "8bb7bb3f3bb44242787c96ce09c5f21372a30c005799e6691884736e4f063bb2"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/SOURCES.json",
+      "bytes": 2902,
+      "sha256": "c9b232cceab301eae8c500fb9c3984702c21bef89f144b89d087f01a5cf1ab4f"
+    }
+  ],
+  "runtime_note": "Only code/data hashes enforced. SPEC/theory/review prose not runtime pinned. No old evidence/model norm imported."
+}

@@ -1,22 +1,21 @@
 # Padua argmax bridge — current research results
 
 The exact two-corner global argmax is proved for **degrees2–40, degree512**, and
-**every integer n>=16000**. Its equality set is {(-1,-1),(1,-1)} for
-even n and {(-1,-1),(-1,1)} for odd n. The remaining gap **41–511 and513–15999**
+**every integer n>=10000**. Its equality set is {(-1,-1),(1,-1)} for
+even n and {(-1,-1),(-1,1)} for odd n. The remaining gap **41–511 and513–9999**
 and all-degree PD-T099 stay OPEN. This is a sufficient upper boundary,
 not a claim of the minimum onset.
 
-[Global theorem](../topics/padua-argmax-bridge-20261105/theory/D11-global-comparison.md),
-[independent reconstruction](../topics/padua-argmax-bridge-20261105/independent-checks-D11-onset.md).
-The proof covers the full closed square, both parities, nodes, axes,
-collisions and exact equality, without an energy premise or mass degree scan.
-For n>=16000: far S<Lambda_c-19/100; near noncorner
-lambda<Lambda_c-7/1000; actual corners
-lambda<=Lambda_c-(alpha²+beta²)/4. New comparison domains and monotonicity
-are proved; the primary16000 budget passed, no20000 fallback ran.
-The new near argument uses the true fractional constant modulus directly.
-PD-T271's certified corner constant is an explicit dependency. Final Claude
-audit remains pending. Older D08/C13 theorems retain their stated scopes.
+[Global theorem](../topics/padua-argmax-bridge-20261105/theory/D16-global-comparison.md),
+[independent review](../topics/padua-argmax-bridge-20261105/independent-checks-D16-budget.md).
+For n>=10000: far S<Lambda_c-1/400; near noncorner
+lambda<Lambda_c-11/1000; actual corners
+lambda<=Lambda_c-(alpha²+beta²)/4. The complete closed physical cover,
+both parities, nodes, collisions and equality are proved. Phase-dependent
+absolute errors and a separate origin bound give the new onset; no finite
+degree enumeration or extra near correction. Primary10000 passes, with
+independent32component directed replay. PD-T271 remains an explicit
+computer-assisted dependency of this analytic theorem; final Claude pending.
 
 The guarded actual-Lebesgue point evaluator independently reproduced all13
 fixed cases,10 finite-polynomial references and6 invalid controls in
@@ -127,3 +126,9 @@ structural component, not yet a fast or whole-box certifier. D07 continues
 with sharper budgets and a guarded implementation; global argmax remains
 2–40 and all n>=500000.
 [Row-structure review](../topics/padua-argmax-bridge-20261105/independent-checks-D06-four-copy-rows.md).
+
+D14 independently accepts an alternative model-free finite512 proof.
+A GLOBAL bound<30 follows from13 saved canonical grid points by rigorous
+Peano absorption. The same tree/point data certify512 without completed-model
+D05/D06/PD-T271 norm premises. No new native computation occurred.
+[Review](../topics/padua-argmax-bridge-20261105/independent-checks-D14-grid-norm.md).

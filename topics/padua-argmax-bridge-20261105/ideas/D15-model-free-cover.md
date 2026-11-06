@@ -44,3 +44,14 @@ generic D15 contract is pending. D14 review is pending at this writing.
 
 Canonical design: [SPEC](../code/post_audit_D15_model_free_cover/SPEC.md).
 No numerical run, speedup, whole-degree theorem or solver guarantee.
+
+### Bounded implementation checkpoint — 2026-11-06
+
+Root subsequently assigned local source implementation. The pipeline is
+now a frozen source candidate with exact norm/witness/cover predicates,
+separate FLOAT producer, fresh dual-API native adapter and unchanged-core
+build, once-only process-tree controller and compact all-row receipt.
+The authorized single synthetic preflight PASSed, native_calls0; the
+attempt records the exact first freeze and later unexecuted refinements.
+D14/generic-D15 mathematical and distinct source acceptance remain
+pending. No numerical pipeline ran and no2048 result is claimed.

@@ -1,29 +1,26 @@
 # Padua argmax bridge — WORK post-audit checkpoint, 2026-11-06
 
 The exact global equality set is proved for **degrees2–40, degree512**, and for
-**every integer n>=16000**. It consists of {(-1,-1),(1,-1)} for even n
-and {(-1,-1),(-1,1)} for odd n. The remaining gaps41–511 and513–15999 and all-degree
+**every integer n>=10000**. It consists of {(-1,-1),(1,-1)} for even n
+and {(-1,-1),(-1,1)} for odd n. The remaining gaps41–511 and513–9999 and all-degree
 PD-T099 remain OPEN. The fresh campaign has replaced its initial
-astronomical upper boundary with this explicit sixteen-thousand-degree threshold.
+astronomical upper boundary with this explicit ten-thousand-degree threshold.
 No mass degree enumeration or energy premise enters the analytic theorem.
 
 ## Current accepted theorem and new component
 
-The [D11 global assembly](theory/D11-global-comparison.md) and
-[independent reconstruction](independent-checks-D11-onset.md) prove the
-current threshold **16000**, with no unresolved supplementary findings.
-The full closed cover has far gap19/100 and near noncorner gap7/1000
-from16000, plus actual-corner loss(alpha²+beta²)/4 from10000.
-The primary16000 directed budget passed; no20000 fallback ran.
-Its exact endpoint margins exceed.00747769 near and.19899350 far.
-The near proof compares the TRUE completed constants directly, using
-the fractional/entropy modulus and a sharp scalar maximum; no eta0
-bridge or additional near correction is charged. All degree floors
-and monotonicities are proved at their actual new domains.
-PD-T271's certified corner constant remains an explicit computer-assisted
-dependency. Final Claude audit and upstream coverage obligations remain.
-The older D08 theorem from50000 and C13 theorem from500000 retain their
-original scopes; this is a new assembly, without mass enumeration.
+The [D16 global assembly](theory/D16-global-comparison.md) and
+[independent review](independent-checks-D16-budget.md) prove the current
+threshold **10000**. The closed cover has far gap1/400, near noncorner
+gap11/1000, and actual-corner loss(alpha²+beta²)/4 from10000.
+The primary10000 directed budget passed; no fallback or degree scan ran.
+Its endpoint margins exceed.01186762 near and.00267603 far. A separate
+actual-origin allowance and rho-dependent absolute error avoid taking
+independent worst-case phase maxima. Full finite relative error remainsOPEN.
+All new degree floors and monotonicities are proved at their actual domains.
+This analytic theorem explicitly inherits PD-T271's certified corner
+constant. Final Claude audit and upstream coverage obligations remain.
+The older D11/D08/C13 statements retain their original scopes.
 
 The actual-Lebesgue point evaluator now passed an independent fresh build
 and all13 fixed cases, including10 finite-polynomial references, in
@@ -405,3 +402,26 @@ native evaluations. D15's parameterized certifier implementation remains
 conditional on accepted norm/generic-cover/source contracts. D16 tests
 phase-dependent absolute error allowances with a separate origin charge;
 this is a new scalar budget, not an adopted smaller global range.
+
+
+## D14/D16 — model-free finite proof and analytic onset10000
+
+The finite512 certificate has an independently accepted alternative proof:
+15 coarse grid vertices reduce to13 of the existing53 canonical points.
+Bernstein/Peano absorption yields a GLOBAL S bound<30, with no sampled
+argmax assumption. The same tree and three actual point losses pass at30.
+This removes the completed-model D05/D06 and PD-T271 norm premises from
+that FINITE proof; it does not rewrite the historical source run at34.
+[Norm and application review](independent-checks-D14-grid-norm.md).
+
+The separately accepted analytic10000 theorem retains the model machinery
+and its numerical constant dependency. It uses a phase-dependent allowance
+C+K*rho and an actual-origin error E0. The true model excess plus the linear
+error is bounded by8J+K²/(2B); every scalar and monotonicity is explicit.
+Independent directed arithmetic checks all32 component intervals. No new
+near-model correction, phase grid or finite degree scan is a premise.
+
+D15's generic mathematical contract is accepted. Its source candidate
+remains unreleased for one final aggregate CPU-accounting repair found
+before any native execution. Both synthetic control slots are complete;
+the repair gets focused source inspection, with no control/native retry.
