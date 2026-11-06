@@ -45,10 +45,7 @@ Overall status: OPEN.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| The rate/criterion/robustness target stated above | OPEN | First bound the actual normal-quotient map using degree-<=2n moments
-and creator control, then examine the original N4 polynomial-radius
-question. A sufficient estimate decaying faster than every polynomial kills
-that estimate, not the robustness target. Refresh the gate in the follow-up. |
+| The rate/criterion/robustness target stated above | OPEN | First bound the actual normal-quotient map using degree-<=2n moments and creator control, then examine the original N4 polynomial-radius question. A sufficient estimate decaying faster than every polynomial kills that estimate, not the robustness target. Refresh the gate in the follow-up. |
 
 Candidate / claim disposition: Deferred; resume only in a follow-up explicitly assigned to the n-independent perturbation; no proof status is attached to the deferred IDEA.
 Supporting results are separate dependencies, not proved parts of this target;

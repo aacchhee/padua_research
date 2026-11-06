@@ -3,7 +3,7 @@
 - Branch: `codex/padua-lanczos-nonproduct-20261105` · Base: main `be9a831` (PR #29 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
 - Stage: PR (readiness check next) · Next: `Claude (Opus 5.5 high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/07-readiness.md](handoffs/07-readiness.md)
 - Permanent reservation: [ALLOCATIONS](ALLOCATIONS.md), first publication `6b31356`: T472–501, N178–180, IDEA570–589, LIT630–632. Assigned T472–494, N178, IDEA570–584, LIT630; unused gaps remain permanent.
-- Claims: P3 all-degree non-affine-product weight separation and uniform sufficient radius; P5 polynomial Padua capacities; P4 model/transfer lemmas and scoped covariance obstruction. Provisional IDs only; see [report](report.md).
+- Claims: P3 all-degree non-affine-product weight separation and uniform sufficient radius; P5 polynomial Padua capacities; P4 model/transfer lemmas and scoped covariance obstruction. Final IDs PD-T472–494, PD-N178, IDEA-570–584 and LIT-630 ([ALLOCATIONS](ALLOCATIONS.md)); see [report](report.md).
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 

@@ -487,8 +487,8 @@ L6: the complete-square quantitative residual theorem and scoped e/u obstruction
   upper follows.
   [Admission](topics/padua-lanczos-nonproduct-20261105/theory/p5-01-padua-admission.md),
   [capacity](topics/padua-lanczos-nonproduct-20261105/theory/p5-02-padua-polynomial-capacity.md).
-- **PROVED, PD-T472/474/477/481:** triangle, continuous radial disk, D36/D65
-  rational ring and high-mode weight admissions/definition at their stated
+- **PROVED, PD-T472/474/477/481:** triangle, continuous radial disk and D36/D65
+  rational ring admissions and the affine-product definition at their stated
   injectivity and positive full-support scopes. D36 and D65 are distinct
   measures with no asserted continuous-disk cubature equivalence.
   [Definition](topics/padua-lanczos-nonproduct-20261105/theory/nonproduct-definition.md),

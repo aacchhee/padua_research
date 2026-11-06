@@ -237,8 +237,8 @@ in `ideas/` and `attempts/`; actual round budgets are in [rounds](rounds.md).
 The [canonical P3 gate-timing disclosure](LOG.md#canonical-protocol-disclosure--p3-gate-timing)
 records AC's accepted disposition and historical precision limits. The
 [response to audit01](response-01.md) lists each correction; the BJ-only P1
-chain qualifier receives a focused diff re-audit. Final IDs and the audited shared registry entries are applied; the single
-readiness diff/reservation check is next. Only AC merges.
+chain qualifier receives a focused diff re-audit. Final IDs and the audited shared registry entries are applied, and the
+single readiness diff/reservation check is recorded in [readiness 01](readiness-01.md). Only AC merges.
 
 ## Registration
 
