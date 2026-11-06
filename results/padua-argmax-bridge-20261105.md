@@ -160,3 +160,10 @@ accept all nine fixed calibration cases after fresh433S+21actual evaluations.
 Six add finite coverage; the others validate existing/floor/corner branches.
 Primary/fresh checkpoint totals112.588181/115.039351CPU, eachphase hardbound1080.
 No universal runtime law or Syvert2 measurement is inferred.
+
+New analytic component: [E01](../topics/padua-argmax-bridge-20261105/theory/E01-corner-frontier.md)
+proves both actual-corner closedπ/4 squares for EVERY n>=512 with loss
+(A²+B²)/16, by rational paper inequalities alone.
+[Distinct review](../topics/padua-argmax-bridge-20261105/independent-checks-E01-corner.md)
+accepts the mixed relative-axis/global-diagonal proof. Global onset remains1024;
+974 finite degrees remain open. Further analytic narrowing continues; pack paused.
