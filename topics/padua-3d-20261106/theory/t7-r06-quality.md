@@ -77,3 +77,23 @@ orthonormal-QR comparator. The primary inherited unscaled-QR values
 above were actually rerun in t7-r06-baselines.json, without changing
 or reoptimizing family nodes. This correction affects comparisons,
 not determinant objectives, which differ by a fixed basis factor.
+
+## Subsequent unequal-union and refined-maxima measurements
+
+The prospective unequal-subgroup extension used640/640/1152/1152
+rational starts at n3/4/5/6, with44/176/64/36 floating full ranks.
+Selected winners have exact rationalized node counts/ranks20/35/56/84.
+Their subgroup-size partitions are(4,4,12), (4,4,27), (4,52), (9,75).
+Measured Lambda21 is13.5537233,69.1404064,41.1293089,216.1669274.
+Thus n6 has successful minimal unions outside the equal-common-H
+sample, although their measured quality is poor. No family kill or
+asymptotic negative theorem follows from this finite screen.
+
+Refining the largest8 mesh starts by bounded angular L-BFGS-B gives
+lower samples1999.1657353 (fixed T7-06),9.7489664 (Phi3),47.6782918
+(Phi5),49.0679023 (equal U5), and13.6025795/69.1404064/41.1293089/
+219.1077684 (unequal U3..6). These finite samples have no rigorous
+rounding enclosures and do not certify global maxima. Every selected
+refinement terminated successfully on all8 starts in this environment.
+All32 prime-block n2 full-rank groups were mesh-measured separately;
+their raw row identities and summary are in t7-r06-refined-quality.json.

@@ -1,0 +1,198 @@
+{
+  "schema": "t7-census-reduced-v1",
+  "source_sha256": "438553553d2e6a413f951feb5af191d79f2cb45c172800e058aedf5f6b152521",
+  "command": "topics/padua-3d-20261106/code/t7_r06_census_reduced.py primes --n 2 --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-primes-n2.json",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0"
+  },
+  "D0": {
+    "inherited_rank": 20,
+    "actual_node": {
+      "rank": 20,
+      "prime": 5051,
+      "root": 32,
+      "root_order": 1010,
+      "matrix_sha256": "4816b86e32ef2074a0fa29c917fc3b68fe0f22899c2de84af6224aa7c961df21"
+    },
+    "outcome": "PASS"
+  },
+  "prime_block": [
+    {
+      "order": 11,
+      "groups": 133,
+      "decisions": {
+        "coordinate-kernel": 33,
+        "wrong-count-for-every-phase": 100
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 13,
+      "groups": 183,
+      "decisions": {
+        "coordinate-kernel": 39,
+        "wrong-count-for-every-phase": 144
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 17,
+      "groups": 307,
+      "decisions": {
+        "coordinate-kernel": 51,
+        "wrong-count-for-every-phase": 256
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 19,
+      "groups": 381,
+      "decisions": {
+        "coordinate-kernel": 57,
+        "3": 4,
+        "5": 24,
+        "6": 72,
+        "7": 24,
+        "8": 48,
+        "9": 120,
+        "10": 32
+      },
+      "full_rank_groups": 32
+    },
+    {
+      "order": 23,
+      "groups": 553,
+      "decisions": {
+        "coordinate-kernel": 69,
+        "wrong-count-for-every-phase": 484
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 29,
+      "groups": 871,
+      "decisions": {
+        "coordinate-kernel": 87,
+        "wrong-count-for-every-phase": 784
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 31,
+      "groups": 993,
+      "decisions": {
+        "coordinate-kernel": 93,
+        "wrong-count-for-every-phase": 900
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 37,
+      "groups": 1407,
+      "decisions": {
+        "coordinate-kernel": 111,
+        "wrong-count-for-every-phase": 1296
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 41,
+      "groups": 1723,
+      "decisions": {
+        "coordinate-kernel": 123,
+        "wrong-count-for-every-phase": 1600
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 43,
+      "groups": 1893,
+      "decisions": {
+        "coordinate-kernel": 129,
+        "wrong-count-for-every-phase": 1764
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 47,
+      "groups": 2257,
+      "decisions": {
+        "coordinate-kernel": 141,
+        "wrong-count-for-every-phase": 2116
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 53,
+      "groups": 2863,
+      "decisions": {
+        "coordinate-kernel": 159,
+        "wrong-count-for-every-phase": 2704
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 59,
+      "groups": 3541,
+      "decisions": {
+        "coordinate-kernel": 177,
+        "wrong-count-for-every-phase": 3364
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 61,
+      "groups": 3783,
+      "decisions": {
+        "coordinate-kernel": 183,
+        "wrong-count-for-every-phase": 3600
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 67,
+      "groups": 4557,
+      "decisions": {
+        "coordinate-kernel": 201,
+        "wrong-count-for-every-phase": 4356
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 71,
+      "groups": 5113,
+      "decisions": {
+        "coordinate-kernel": 213,
+        "wrong-count-for-every-phase": 4900
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 73,
+      "groups": 5403,
+      "decisions": {
+        "coordinate-kernel": 219,
+        "wrong-count-for-every-phase": 5184
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 79,
+      "groups": 6321,
+      "decisions": {
+        "coordinate-kernel": 237,
+        "wrong-count-for-every-phase": 6084
+      },
+      "full_rank_groups": 0
+    }
+  ],
+  "prime_block_complete": true,
+  "seconds": 0.24431167100010498,
+  "raw": {
+    "path": "/tmp/padua-t7-r06-7afa6a54/census-reduced-primes-n2-from10.jsonl",
+    "bytes": 49604,
+    "sha256": "d084030122aa5e92f8ac74977d1391a719993119599232a6a14e22e49931bc77"
+  }
+}

@@ -58,3 +58,14 @@ valid, while the stops are withdrawn by dated addenda. AC's handoff06
 restarts counters at zero and supplies stricter whole-route stop conditions;
 it does not retrospectively approve the earlier stops. The old unused-budget
 and completion-probe decisions remain preserved in response-deviations-01.md.
+
+## New T7 round06 reading-coverage qualification — 2026-11-06
+
+The T7 worker reports that some initial combined IDEAS outputs were
+truncated. Relevant obstruction/shortlisted tables and records were
+supplemented before mechanisms, but an unrelated Lanczos registration
+range641–690 was reread after initial runs as an additional completeness
+check. Therefore the stronger personal full-table pre-run assurance is
+qualified for those initial T7 runs. That later reading and the distinct
+checker's complete registry read cannot repair chronology. All new T7
+registrations retain this qualification; no historical novelty is claimed.

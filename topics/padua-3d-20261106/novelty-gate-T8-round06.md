@@ -18,6 +18,11 @@ special-phase/half-period/parity/union across IDEAS, lattice tracks, this
 topic's theory/logs and INDEX. No novelty or priority claim is made.
 Source coverage is recorded separately in literature-T8-round06.md.
 
+Reading chronology supplement: full linked C0/C3 candidate bodies and T3
+short-relation/rank proofs were additionally read after the initial runs,
+before Phi3b. Their full registry records had been read before the initial
+runs. This is supplementary coverage, not a retrospective pre-run claim.
+
 All five records below inherit the exact rules, cheapest tests, resource
 fallbacks and D2 kills in preregistration-T8-round06.md. Each result and
 failed parameter tuple is retained under its parent candidate, not erased.
@@ -61,6 +66,42 @@ Aliases: phased cyclic Fekete-within-family; determinant optimizer F.
 - Actual results: none when registered. Disposition active; resume after
   failure only with a separated rule and fresh prospective degrees.
 - Canonical theory: t8-r06-measurements.md.
+
+## Execution disposition append — initial and structural boundaries
+
+The registration-time `active`/`none` fields above are preserved history.
+Actual outcomes and canonical records now are:
+
+- Phi1: analytic parity permission exactly n!=2mod4; positive exact
+  specializations at every permitted n<=12, retained as finite witnesses.
+  Parity permission is necessary only; no unbounded sufficiency theorem.
+- Phi2: frozen F loses to Leja at the consecutive eligible tested n7/n8
+  and is REJECTED under D2. Broader phase optimization remains OPEN.
+- Initial Phi3: generic count excess and actual half-grid selector
+  failures at n2/n3; REJECTED as those selectors. The successful 2N-1
+  rows were zero-phase inherited baselines. The all-continuous-phase
+  first-unit 2N-1 rigidity theorem rules out a new phase set at fixed z,
+  while nonunit/different-generator questions remain OPEN.
+- S: complete frozen27-state finite samples at eight (n,M) pairs gave
+  cubic mixed-stratum positives. The sampled positive is retained;
+  unsampled symbolic rank strata remain OPEN. This is no full census.
+- U2/U3/U4: all three frozen det-only rules REJECTED under D2, at eligible
+  n7/n9, n7/n8, n6/n7 respectively. Common even-order no-fold U2/U3 also
+  fail at n6 by the analytic trace theorem. Broader unions remain OPEN.
+- Phi3b: all four separated s1..4 selectors reach complete count
+  obstructions, at n6,n3,n3,n4 respectively. REJECTED in the stated
+  first-unit domain. Cubic M21 is an exact positive with poor measured
+  quality; count-permitted intermediate strata lacking a certified
+  finalist remain rank OPEN. No modular lower bound is used as an
+  exact deficiency proof.
+
+Canonical actual-result records: attempts/T8-round06.md,
+theory/t8-r06-measurements.md, t8-r06-phase-strata.md and
+t8-r06-near-order-measurements.md. Analytic scope is in parity-admissibility,
+unit-coordinate-folds, union-parity and certification. No final IDs or
+global registry entries were allocated. Every handoff06 route has an
+actual scoped outcome; the recommended stop is handoff06(a), root's
+pushed counter authoritative, with the broader open classes named above.
 
 ## IDEA?padua-3d-20261106-codex-T8-r06-Phi3b
 

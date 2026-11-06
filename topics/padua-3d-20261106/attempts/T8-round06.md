@@ -73,9 +73,42 @@ optimizes continuous incompatible coordinates while preserving count;
 it does not revise the failed n2 half-grid selectors. New code
 code/t8_r06_near_orders.py is reserved for the next separate checkpoint.
 
-## Runs needed
+## Restarted boundary 2 prepared — structural Phi3b completed
 
-Execute the already published Phi3b protocol; retain every actual outcome,
-then ask root to record the valid handoff06 stop condition and counter.
-Independent arithmetic reruns are being arranged by root. This worker has
-not performed an independent rerun and has no Git/publication authority.
+After boundary1 was frozen, the already published Phi3b protocol ran with
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1, command
+`python topics/padua-3d-20261106/code/t8_r06_near_orders.py`, exit0.
+Receipt evidence/t8-r06-near-orders.json is3899bytes. New canonical record
+theory/t8-r06-near-order-measurements.md retains every outcome and the
+direct divisor proofs behind all four zero-count stopping rows.
+
+- s1: cubic M21 positive, z(1,4,6), phases(257,1028,10080)/10794,
+  two-prime rank20. Sampled Lambda31.23177 loses to Leja13.17472/QR8.32067.
+  n4M36 and n5M57 produced no certified finalist and remain rank OPEN;
+  complete count enumeration at n6M85 is impossible since3 does not divide85.
+- s2: n3M22 count obstruction, all1260 count strata.
+- s3: n3M23 count obstruction, all1386 strata;7 does not divide23.
+- s4: n3M24 all45 count-permitted strata sampled, no certified finalist,
+  rank OPEN; n4M39 count obstruction,9 does not divide39.
+- Complete count enumeration covers continuous phases in the stated
+  first-unit class. Nonempty J count strata were not replaced by a phase
+  grid. Generic and all-compatible phases cannot attain N here. Quality
+  fit remains INCONCLUSIVE; no promising claim and no budget fallback.
+
+All handoff06 T8 routes now have actual scoped outcomes, including the
+separated continuous phase continuation; no listed route is untried.
+Worker recommends stopping under handoff06(a), with root alone recording
+the pushed boundary counter. This is no whole-direction theorem and no
+old scope-exhaustion stop. Every rank question outside proved coverage
+remains OPEN. Independent arithmetic reruns are being arranged by root;
+this worker does not claim an independent rerun or publication authority.
+
+## Reading chronology supplement
+
+The pre-run reading coverage in the novelty gate is literal: full IDEAS
+registry records, C1/PD-N034 linked proofs, the audit, local T7/T8 proofs
+and relevant literature records preceded initial mechanisms. Full linked
+C0/C3 candidate bodies and T3 short-relation/rank proofs were additionally
+read after the initial route runs and before Phi3b. Their registry records
+were already read before those initial runs. This supplements coverage
+without retrospectively claiming every linked body was read earlier.

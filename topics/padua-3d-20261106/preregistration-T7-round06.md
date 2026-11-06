@@ -72,3 +72,16 @@ and100 iterations; report exact count and modular rank at phases
 rationalized to denominator1009, and Lambda21 of the floating optimum.
 This does not claim to enumerate all unequal-group unions or choose a
 degree-uniform closed formula. Common cyclic unions remain T8's scope.
+
+## Prospective C algorithm continuation after the120-second naive pilot
+
+No complete n2 result was obtained:41980 strata in18 HNF groups with
+40958 unresolved sample deficiencies. Before the next run, prove and
+implement: phase coordinates modulo1/2 (physical sign changes), quotient
+special-coordinate phase grids by translations in H, half-period trace
+matching including fixed cosine nodes, and the prime-order collision
+classification. Use these exact reductions to prune classes before rank.
+Retain all free-coordinate masks. Repeat a120-second n2 pilot, then
+run exact prime-order subcensuses independently as finite completed
+coverage blocks. A remaining symbolic deficiency remains OPEN unless
+an exact short compatible relation or symbolic rank certifies it.

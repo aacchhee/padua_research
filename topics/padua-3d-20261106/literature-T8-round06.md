@@ -26,3 +26,12 @@ No external theorem is a proof dependency of the new parity calculation
 or modular certificate reduction. Shell proxy was not retried; supported
 web tools supplied the bounded primary metadata above. Fulltext theorem
 comparison remains required before any publication novelty statement.
+
+Reading chronology supplement: the complete IDEAS registry scan and the
+full shortlisted registry records preceded initial runs, as did the full
+linked C1 candidate and PD-N034 proof. The full linked C0/C3 candidate
+bodies and T3 rank/short-relation proofs were additionally read after the
+initial runs and before the separate Phi3b continuation. This source gap
+is retained explicitly; the later read is not a pre-run attestation for
+those initial experiments. It yielded no new novelty claim or external
+theorem dependency.

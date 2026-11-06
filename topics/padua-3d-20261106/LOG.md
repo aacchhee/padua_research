@@ -388,3 +388,27 @@ their corresponding runs, with publication and execution timing distinguished.
   sample-quality and global-HNF controls. Its final scope/hashes will be
   recorded after the new mathematical/source files are frozen. The required
   substantive Claude audit is not replaced by supplementary checking.
+
+## 2026-11-06 — handoff06 second T7/T8 boundary
+
+- T7 round2: phase/translation quotient, projection and trace pruning are
+  hand-reduced before the complete census. The reduced120-second n2
+  pilot covers10733 groups/2195749 quotient strata, with zero unresolved
+  tested rank cases; complete prime-order coverage is separate. Unequal
+  noncyclic unions actually yield full-rank examples at n3..6, including
+  a9+75-node n6 union escaping equal-common-subgroup obstruction. Quality
+  remains measured and poor; these are not a degree-uniform theorem.
+  The full n2 finish is a distinct run undergoing independent replay and
+  is not claimed by the partial-pilot checkpoint.
+- T8 round2: the separately prospective mixed-stratum nearby-order family
+  gives an exact cubic M21 witness, sampled Lambda31.2318. The fixed
+  positive-offset prescriptions encounter their written count obstructions;
+  intermediate rank questions stay OPEN. All handoff06 T8 listed routes
+  now have actual outcomes under(a); no theorem closes the broad target.
+- The new T7 reading-coverage qualification is preserved once in
+  response-deviations-02.md. Later rereading is not a retrospective cure.
+- T10 gate clarification: round1's restricted QR comparisons lose at n6/n7,
+  but numerical ineligibility of the structured subsets did not establish
+  a literal all-extracted-set norm kill. A prospective same-rule n8..16
+  verification pass continues that route. The old early gate shorthand is
+  superseded by this scoped statement; no killed interpolation family is rescued.
