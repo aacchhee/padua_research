@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **22/40** (D01–D20, D22 and D24). Active: **D21** fixed static benchmark; D23 matched backend trial, D24 far refinement and D25/D26 analytic work in parallel.
+Completed: **23/40** (D01–D20, D22, D24 and D25). Active: **D21** fixed static benchmark; D23 matched backend trial, D24 far refinement and D25/D26 analytic work in parallel.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -60,7 +60,7 @@ No main push, merge, force, tags, .github/settings or major cleanup.
 Delivery constraint from AC: use reasoning budget for BOTH cost reduction and analytic-bound reduction. ByD39(or earlier exhaustion), freeze the best complete result into an auditable Syvert2 pack matching actual bttb-research A–B–C structure; audit before execution. Finalstage within40-round ceiling reserved for concrete pack integration.
 
 | D20 | COMPLETE | New global regularized outer/mesh telescope | Independent review accepts exact globalargmax EVERYn>=7000, far gap3/40; all six rows and full global telescope explicit. Sole26interval/11control independentPASS. |
-| D21 | ACTIVE | Static geometry fresh-point verifier | Separate math/SPEC and technical code development; no discovery, one proposed upper-gap6912 case only after audits. |
+| D21 | RESULT REVIEW | Static geometry fresh-point verifier | Primary6912 complete469.521CPU/41S, freshM45, no discovery/lambda; D28 freshcheap replay planned before instance adoption. |
 | D22 | COMPLETE | Actual-origin relative and anisotropic near proof | Independent paper review accepts fully charged partial cancellation and EVERYn>=4096 near noncorner gap3/2000; no numerical job. Fullrelative/global4096 remainOPEN. |
 
 AC clarification: pack preparation waits until research ends and is necessary only if a gap remains. Reference inventory may be retained; no pack skeleton or run preparation now.
@@ -68,7 +68,12 @@ AC clarification: pack preparation waits until research ends and is necessary on
 | D23 | ACTIVE | Lower-order rigorous partial-cotangent backend | Math and first source accepted; fixed60CPU matched old/new2048 trial released afterD21primary ends, no result yet. |
 
 | D24 | COMPLETE | Sharper far completed-constant bound | Independent review accepts new rho<=3/4 extension and wholefar coefficient25/2, no scalar/onsetclaim. |
-| D25 | ACTIVE | Actual-origin relative outer quadrature | Justified Astraultra35min paperblock, movingmesh/cusp/removal terms explicit; no jobs. |
+| D25 | COMPLETE | Actual-origin relative outer quadrature | Independent adversarial review accepts outer relative rho[(35/2)logn+75]/n; all movingmesh/cusp/removal terms explicit, no jobs. |
 | D26 | PREPARING | Global4096 analytic assembly | Fixed4096ONLY source/SPEC/math preparation using D24ifaccepted; no scalar before rootrelease. |
 
 | D27 | PREPARING | Wider analytic actual-corner bridge | New pi/4 square and D20error/globalnorm; fixed1024ONLY scalar after proof/source/SPEC/rootrelease, no nativejobs. |
+
+| D28 | PREPARING | Full cheap static pipeline and independent replay | Same6912/41point witness, D23backend and cheaper supervision; firstsource freeze/audit before independent execution. |
+| D29 | ACTIVE | Practical defect floors for generic certification | Paper-only5121/20 and41positive-floor targets with explicit olddomainlimits, no numericaljobs. |
+| D30 | ACTIVE | Two-region far telescope | Paper-onlyrho3/4 split and retained-row extension, no scalarsearch. |
+| D31 | PREPARING | Exact-radical near2048 comparison | Fixed2048ONLY; D25outer plusD22exactradicalenvelope, source/proofaudit before <=5CPUprimary. |

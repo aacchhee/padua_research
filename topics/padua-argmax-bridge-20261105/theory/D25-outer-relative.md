@@ -373,3 +373,8 @@ new model correction was used. Candidate and attempt are the owned
 D25-outer-relative records.2026-11-06; input476208fe080cc79cae5b2578344b2e18f442a1e8;
 requested Astra ultra, serving metadata unexposed. Distinct review is
 required before root adoption; frozen D22 records remain untouched.
+
+
+## Root review closure — 2026-11-06
+
+Distinct adversarial review [D25](../independent-checks-D25-outer.md), SHA256 `ff101f7080245a91858079348d4be8d604d5eceb248a3285ab09636092d2c150`, accepts this exact operator theorem without unresolved findings. Root adopts the closed signed near outer increment for every n>=32, including mesh shifts, all endpoint holes, weighted cusps/atoms and collision limits. This closes only the outer component; full D13 relative and new onset assemblies remain separate. No numerical job ran. Reviewed prefix is preserved; final Claude audit remains separate.

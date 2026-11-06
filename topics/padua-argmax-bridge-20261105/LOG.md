@@ -779,3 +779,27 @@ Distinct technical review ACCEPTS candidate d9d4590d59f44cbfc1627a4a0cab0b6bda39
 ### D24 accepted: full far constant25/2
 
 Report600b3956... ACCEPTS both frozen proofs with no unresolved findings. Root adopts new local modulus throughrho3/4 and wholefar25/2 coefficient; endpoint/H/root domains, cusp signs, entropy/fractional terms and exact outerratio independently reconstructed. This preserves explicit limiting-originPD271computer-assisteddependency, not a finiteLambdabound. D24complete,total22/40withD21/D23primariespending. D26source4096preparation maynow useacceptedD24; no global4096adoptionwithoutitssoleendpointanddistinctreview. D25firstrelativeouterproof83148f74...checkpointed underadversarialreview, no numericjobs.
+
+
+### D21 and D23 primary outcomes observed by root
+
+- Root directly observed D21 execsession80818 EXIT0 (chunkd43808) and separately authenticated final-accounting complete=true/firstfailure=null: EXACT_STATIC_COVER_ACCEPTED_PENDING_INDEPENDENT_REPLAY. Whole469.521049CPU including424.218653waitedchildCPU and45.299692supervisorCPU at tightening. Fresh41S nativepointsum422.056155CPU/max16.270191; same61node/5NEAR24FAR2OUTSIDE tree passes withOWNfreshM45. No FLOAT orlambda calls. This is an upper-gap6912 costmeasurement, not uniformthroughput or an adopted isolateddegree beforefreshreplay. Essentialreceipt00dd3531...9789B, complete rawrun remains offGit.
+- AfterD21ended, root ran EXACT releasedD23controllerONCE. Directsession89423 EXIT0(chunk418539), finalaccount complete=true/no failure: PAIRED_BACKEND_TRIAL_ACCEPTED_PENDING_INDEPENDENT_REVIEW. Whole8.446031CPU; coldmatched oldC11point2.453814CPU versusnew.431206CPU, same2048phase1/12,1/16. This is a measured5.69x POINT improvement underreview, not a wholecertifier speedup. All24 fixednativeinvocations/controls pass; exactcandidateupper−fresholdlower199535/70368744177664 (~2.84e-9), formalArbradiusgatepasses. No rescue/retry. Independentfreshreplay remains required. Essentialreceipt57521cce...6642B.
+- Metadata-only preservation copies complete smallreceipts/finalaccounts androotdirectexit observations; bytes unchanged, no native reruns. D28sourcepreparation will use the cheaperacceptedbackend for a fresh independent SAME6912 fullcover replay/benchmark; author doesnot execute it. Supervisorpoll.25instead.05 proposedto reduce measured45CPUoverhead, retainingfail-closed finalCPUgates.
+
+### D29/D30 prospective mathematical gates
+
+- D29 Solxhigh30min paper gate: derive practical uniform noncorner defect floors for the cheapgenericcertifier. C02 has1/64from64,1/32from160,1/16from4096. Reuse its proved case estimates to seek1/20from512 and a new positive floor from41 by a separately proved band/count/domain refinement. Do not extrapolate its old n64 constants. Missing lowerdomain remainsOPEN; exact rational endpoint proof or one frozen<=2CPUmetadata calculation onlyafternewproof/SPEC/rootrelease.
+- D30 Solxhigh30min paper gate: a new far two-region telescope with seamrho3/4. D20GLOBALsix-row bound remainsforouterrho>=3/4 whereu>=2277/32768, while a NEW proven D07six-row domainextension may sharply reduce inner1/2<=rho<=3/4 retained-row charge. Pair withacceptedD24constant and exactsamefullprofileassembly. First kill finiteendpoint/root/centralweightedrowdomain match; no old literalrho<=1/2 extension by assertion. No scalar/native/thresholdscan; a separately frozen2048-onlybudget may be proposed onlyifpapercloses. PreserveD20/D26failedorunexecutedrecipes.
+
+
+### D31 prospective exact-radical near assembly
+
+- D25's accepted relative outer theorem can replaceG+G0 in D22 by rho[(35/2)logn+75]/n. New Cnear=22/n+162/n²+40H/(pi*n²), Knear=Kstar+[(35/2)L+75]/n, retaining EXACTuE0 and all other charges. D31 Solxhigh paper/scalar target is fixedN2048ONLY, using D22's already proved EXACTradical directional envelope U_rad rather than its deliberately loose fixed rational allocation. Use existing C02floor1/32 from160; no dependence on an unproved stronger floor.
+- Prospective sufficient gate Cnear+Psi(Bx,qx,Knear)+Psi(By,qy,Knear)<1/32−1/10000, with alln monotonicity and closed physical noncorner restriction. <=5CPU directedscalar only AFTERfullproof/source/SPECfreeze, distinctprerelease review androotrelease. No phase/root solver, scan, fallback, threshold/precision/source/caprescue or nativejob. Failure is this exactenvelope/endpoint only. D13fullrelative and actualcorner/far supports remain separate.
+
+
+### D25 accepted; D26 primary release
+
+- D25 adversarial reportff101f70... ACCEPTS exactouteroperatorrelativebound without unresolved findings. Root adopts it for alln>=32/closednear rho<=1/2; no scalar/nativejobs. D25complete,total23/40withotheractiveoutoforderrounds. FullD13relative remainsOPEN. D31usesnewouteronly througha separately frozen assembly.
+- D26 prerelease reportf50f64f3... ACCEPTS unchanged conditional assembly/sourceFREEZE42271abd.../evaluate57d94154...; noendpointjobbyreviewer. Root releases EXACT fixed4096--run-once afterthispublication, whole<=5CPU/nochildren, nofallback/retry. RootmustdirectlyobserveEXIT0andreadcompletepersistedreceipt; independentfresh4096directedreplaythenrequired beforeglobal4096adoption.

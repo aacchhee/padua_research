@@ -185,3 +185,6 @@ D22 accepted f98523ca...: actual-origin partial cancellation and anisotropic exa
 
 
 D24 accepted600b3956...: domainextensionrho<=3/4 and wholeFAR trueconstant relativecoefficient25/2. D26fixed4096budgetpreparesnewassembly; no newglobalonsetyet. D25relativeouterfirstproof isreviewpending.
+
+
+D25 accepted ff101f70...: regularouterACTUAL-origin increment fullyrelative alln32closednear. D26pre-release f50f64f3... accepts original4096source/conditionalassembly; rootfirstendpointrelease inLOG, notyetglobal4096adoption.
