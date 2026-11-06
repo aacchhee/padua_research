@@ -86,12 +86,32 @@ thread settings equal one. Wrapper SHA-256:
 `25ea2ab9cb046645948c4b905b43a11ab48acc8c1e3448b4bafa0bb512ef78f5`.
 Compact result: [check-S4-padua-m3000.json](evidence/check-S4-padua-m3000.json).
 
-Developer comparison is **PENDING**, not passed: at independent
-completion the developer's sequential scan had completed11 rows and
-was running m=2201, so its m=3000 row did not yet exist. The coordinator
-was told the independent process had finished and its degree-process
-slot was free. A later comparison can use the saved independent value,
-seed and source identities without repeating this large solve.
+At independent completion, the developer's sequential scan had
+completed11 rows and was running m=2201, so comparison was initially
+pending. The coordinator was told the independent process had finished
+and its degree-process slot was free.
+
+### Completed developer comparison
+
+On the coordinator's later signal, the checker read the completed
+m=3000 row from `/tmp/sharp-S4/padua-minima-raw.json`. The file then
+contained15 completed rows with m=3001 still running; its snapshot
+SHA-256 was
+`1119a0e9eadc3aedddaaffba952c468e903203bb6f7d0a5bdf25d239514dc389`.
+The numerical source/proposal hashes and solver settings match those
+of the independent run; the starting seeds differ as intended.
+
+The developer's value is -0.08132259681241012 with residual
+1.4226775045102327e-12, seed20261106 and102 matvecs. The absolute
+value difference is2.7755575615628914e-17, about3.41e-16 relative.
+Both independently recomputed residuals pass the registered guard.
+The developer's row is preserved in the comparison portion of the
+independent receipt; all original independent timestamps, timings,
+resource measurements and source identities remain unchanged.
+
+**Outcome: measured changed-seed agreement.** No new solve or fit was
+executed for this comparison. No full-grid acceptance or K4/K5 verdict
+is inferred from the incomplete15-row snapshot.
 
 ## Interpretation limits
 
@@ -101,3 +121,50 @@ of one new large-grid minimum calculation. Floating residuals and
 changed-seed agreement are MEASURED evidence, not an outward enclosure
 or a proof that no lower eigenvalue was missed. It is not a new fit,
 K4/K5 gate decision, or premise of the analytic S3 limit theorem.
+
+## Complete-data registered fit replay
+
+After the separate complete-data signal, the checker verified all16
+minimum rows were completed, had passing residual guards, and used
+developer seed20261106. The essential input SHA-256 is
+`6d7665a71d4afc42b909deb194596a4fd1873bc7208b2c4673f436d7bfd4cdad`.
+The frozen fit producer SHA-256 is
+`529ca7a310341e3a30c50446de1d605baf489e4654436fe5285b1553e309cb13`.
+The exact registered command was executed separately:
+
+```text
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-mz-sharp-constants-20261106/code/S4_padua_fit.py --essential topics/padua-mz-sharp-constants-20261106/evidence/S4-padua-essential.json --output topics/padua-mz-sharp-constants-20261106/evidence/check-S4-padua-fit.json
+```
+
+The script was read in full and checked against the registered window,
+scaling, rank, condition, sign, magnitude, residual, drift and parity
+criteria. The independent receipt's complete result object equals the
+developer's result object exactly. A centered-sum reconstruction of
+the same OLS slopes also agrees to floating precision; this checks the
+same fit and does not introduce an alternative regression model.
+
+| Minimum fit quantity | Even m | Odd m |
+|---|---:|---:|
+| Window A slope | -0.09145256697320353 | -0.09203829367253583 |
+| Window B slope | -0.09216539208358346 | -0.09249333593725202 |
+| Relative window drift | 0.7734194953931048% | 0.4919730271431655% |
+| Discrepancy from registered -0.1336 proxy | 31.013928081150105% | 30.76846112481136% |
+
+Both parities pass the registered stability conditions. Accordingly
+the negative-proxy operational verdict remains **KILL_HEURISTIC_PROXY**;
+the check neither relaxes the10% threshold nor reclassifies the tested
+windows after seeing their outcome. The final-window parity slope
+difference is0.35455943971038355%, giving the registered K5 outcome
+**MEASURED_WINDOW_PARITY_AGREEMENT**. This is finite-window agreement,
+not a proof of equality of limiting constants.
+
+The upper grid is incomplete after its capped failed pilot, so its
+K4 and K5 outcomes remain **INCONCLUSIVE** and no upper fit is attempted.
+These numerical gate outcomes, the finite-K128 proxy, and the exact
+compact-operator theorem are distinct claims. This replay preserves
+the operational rejection without asserting a new asymptotic
+explanation or withdrawing an analytic proof on numerical evidence alone.
+
+Receipt: [check-S4-padua-fit.json](evidence/check-S4-padua-fit.json),
+including actual command, environment, source/input identities,
+unchanged classifications, and independent comparison metadata.

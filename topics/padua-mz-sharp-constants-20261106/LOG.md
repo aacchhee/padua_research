@@ -1,7 +1,7 @@
 # Sharp MZ constants via limiting operators (PD-T020, PD-T027, PD-T381): log
 
 - Branch: `codex/padua-mz-sharp-constants-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-mz-sharp-constants-20261106.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-mz-sharp-constants-20261106.` · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Current claims: CC one-sided sharp-model upper bound; CC uniform upper bound, endpoint limit and computable error; signed Padua compact-operator logarithmic limits and parity agreement. Exact local records/checks are linked in [report.md](report.md); no final IDs assigned.
 
@@ -106,13 +106,34 @@
 ## AC decision — GitHub commit email,2026-11-06
 
 - The GitHub connector creates commits as Andrey Chesnokov with59649991+aacchhee@users.noreply.github.com and exposes no author-email parameter. Inspection of published ec9b518 confirmed this; the handoff's requested aacchhee@gmail.com address had not been applied. Shell Git still cannot connect to the configured proxy. The author-name identity is correct; the email mismatch is disclosed rather than rewriting history.
-- AC explicitly answered “Continue with my GitHub noreply email” to the asynchronous question identifying both addresses and preserving already-published history. This authorizes further branch commits with the connector's noreply identity and supersedes handoff01's email requirement for this continuation. Do not request this approval again. No force-push, history rewrite or main commit is authorized.
+- AC explicitly answered “Continue with my GitHub noreply email” to the asynchronous question identifying both addresses and preserving already-published history. This authorizes further branch commits with the connector's noreply identity and supersedes handoff01's email requirement for branch publication through this connector. Do not request this approval again. No force-push, history rewrite or main commit is authorized.
 
 ## Bounded explanatory S3 family followup
 
-- The original gap question receives a scoped analytic answer: [negative carrier-family ceiling](theory/S3-carrier-family-ceiling.md), [independent check](independent-checks-S3-family.md). For every fixed admissible inherited negative-carrier parameter pair, its normalized logarithmic coefficient is below1/[9(4log2)(16log2−9log3)]<1/24. Thus scalar retuning of that family cannot reach the magnitude of the supplied finite fitted slope0.0915; the finite slope is still not treated as an asymptotic constant. No broader packet or full-spectrum ceiling is claimed. This is a fourth productive bounded S3 record, no new operator or numerical solve.
+- The original gap question receives a scoped analytic answer: [negative carrier-family ceiling](theory/S3-carrier-family-ceiling.md), [independent check](independent-checks-S3-family.md). For every fixed admissible inherited negative-carrier parameter pair, its normalized logarithmic coefficient is below1/[9(4log2)(16log2−9log3)]<1/24. Thus no limiting normalized coefficient in that fixed-parameter family can reach0.0915; this is not a bound on finite-m carrier slopes, and the supplied finite slope is still not treated as an asymptotic constant. No broader packet or full-spectrum ceiling is claimed. This is a fourth productive bounded S3 record, no new operator or numerical solve.
 
 ## Storage allowance and scoped inventory
 
 - The pinned base already contains more than the ordinary5MB default of generated-type outputs. AC's existing global temporary instruction is explicit in the argmax bridge LOG, section “AC directs return to research; temporary10MB allowance”: “Up to 10mb total size is appropriate for now, return to research”. Source content identity b930ba812c390e6f917a0a06683993ae03e22591, read through the connector; [canonical prior decision](https://github.com/aacchhee/padua_research/blob/codex/padua-argmax-bridge-20261105/topics/padua-argmax-bridge-20261105/LOG.md#L176). This supersedes the ordinary aggregate cap for now, while per-file/provenance limits remain. No new approval or off-topic cleanup is needed.
 - Our pinned base's generated-extension subset is6,028,530bytes; all non-source output extensions conservatively count additional logs/text as well. New topic JSON was183,432bytes before the last numerical receipts. Final scoped integrity totals will be regenerated. Each current committed generated file is<16KiB. We do not claim the older base is below5MB or that Git history is purged.
+
+## CC extrapolation figure
+
+- [Small SVG](figures/cc-extrapolation.svg),15720bytes, generated from the42committed CC rows and already registered fit coefficients. It shows measured extrapolations and the separately proved asymptotic limsup bound with an explicit not-pointwise caption. No new fit, eigenproblem or proof premise. [Generator](code/plot_cc_extrapolation.py); larger PNG is a local regenerable preview only. Final manifest includes the SVG.
+
+## Final statement-scope review
+
+- A distinct Astra reviewer compared the coordinator report/manuscript proposal to the accepted theorem scopes. Three MINOR clarifications were applied: asymptotic S1 bound holds “through all integersN”, not a pointwise bound “everyN”; the unresolved minimum limit is explicitly the scaled(logN)^2lambda_min limit (the unscaled minimum already tends0); and the proposed uniform statement explicitly uses real polynomials withp². No theorem statement/proof, status, constant or numerical outcome changed. The future Claude audit remains separate.
+
+## Final S4 campaign and numerical gate dispositions
+
+- All16fresh minima throughm3001 pass guards. The exact pre-registered fits are stable within both parities: even slopes−0.09145256697/−0.09216539208 (0.7734%drift); odd−0.09203829367/−0.09249333594 (0.4920%). K4 operationally KILL_MODEL for the finiteK128−0.1336 heuristic proxy,31.0139%/30.7685%discrepancy. K5 negative finite-window parity agreement has0.35456%gap; upper K4/K5 INCONCLUSIVE, no upper fit. No criteria, windows or constants changed. Exact operator theorem remains a separate analytic claim, with no certified decimal values or finite-window bias bound.
+- [Complete essential Padua evidence](evidence/S4-padua-essential.json),8666bytes,SHA2566d7665a71d4afc42b909deb194596a4fd1873bc7208b2c4673f436d7bfd4cdad; [registered fit](evidence/S4-padua-fit.json),7633bytes; [run summary](evidence/S4-padua-run-summary.json). Main Padua including failedpilot3291.64CPU-s,.914CPU-h; peak2,181,312KiB. Full local raw11949bytes is optional provenance; essential data supports reproduction.
+- [Independent m3000/fit checks](independent-checks-S4-padua.md) compare changed seeds and rerun final fits. Largest even minimum agrees within2.78e-17 absolute,3.41e-16 relative; independent additional648.13CPU-s. The full fit result objects reproduce exactly; an alternate algebraic evaluation of the same OLS slopes differs by<=4.16e-17. No alternative fit was selected.
+- Because of K4 rejection, one bounded independent normalization diagnostic was prospectively specified and executed in3.21CPU-s, with no full-space eigensolve or new spectral-minimum run. [Report](independent-checks-S3-transfer-diagnostic.md) finds tested finite kernels/truncated form consistent withBesselB16; on the normalizedm3000cornertrial, fullL_m≈−0.13360254 but actualQ≈+0.21004669, with additive correction1.18711149. This is not a complete branch explanation or an asymptotic certificate; it does not undo K4. No new model/parameter revision followed the gate.
+- All authorized local mathematical/numerical work is complete; no campaign process remains running. Final source/evidence integrity checks and the following handoff-only publication complete integration. [Handoff02](handoffs/02-audit.md) carries the exact candidate SHA and substantive Claude audit instructions. No merge is requested.
+
+## Final integrity and publication boundary
+
+- Final deterministic manifest has63code/data/SVG identities,7135bytes, no excluded partial receipts. Its inventoried files total317474bytes. Generated JSON+SVG totals229579bytes:40JSON including the index213859bytes, plus15720byte SVG. Largest generated file16342bytes; each<16384. PythonAST23files andJSON40files pass; local-link verification has no missing targets. [Integrity record](integrity-checks.md), [manifest](evidence-manifest.json).
+- Candidate publication includes all scientific outputs, complete numerical outcomes and disclosed limits. The following handoff-only commit changes only handoff01's status and creates handoff02, identifying this output commit as its scientific input. Only one open handoff will remain at the published boundary. Required Claude audit remains PENDING; PR31 remains draft, with no merge request.

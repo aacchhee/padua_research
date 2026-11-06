@@ -12,6 +12,19 @@
       "essential_evidence": "evidence/S4-essential-cc.json",
       "retention": "retain local until authorized archive available; exact raw bytes include timing and cannot be guaranteed on regeneration",
       "retrieval": "local path in current environment; optional full raw is not remotely archived. Numerical claims regenerate from committed essential file and source code."
+    },
+    {
+      "path": "/tmp/sharp-S4/padua-minima-raw.json",
+      "bytes": 11949,
+      "sha256": "2f32cf77ba5c5a5fc0df61ca93a1bc35c661cfa149980b7cafe58a8e8bc6a4b1",
+      "source_code_sha256": "a392135e3a538d90f3d368f8172facabf5c63ab9f941cd0aba2727e5fbe7773b",
+      "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-mz-sharp-constants-20261106/code/S4_padua_scan.py --mode minimum --m 800 801 1000 1001 1200 1201 1400 1401 1800 1801 2200 2201 2600 2601 3000 3001 --output /tmp/sharp-S4/padua-minima-raw.json",
+      "checker_command": "python topics/padua-mz-sharp-constants-20261106/code/S4_padua_essential.py --inputs /tmp/sharp-S4/padua-minima-raw.json topics/padua-mz-sharp-constants-20261106/evidence/S4-padua-upper-pilot.json --output /tmp/regenerated-padua-essential.json",
+      "summary": "evidence/S4-padua-run-summary.json",
+      "essential_evidence": "evidence/S4-padua-essential.json",
+      "retention": "optional timing-bearing raw stays local pending authorized archive; no claim depends on future raw retrieval",
+      "retrieval": "local current environment only; fits reproduce from committed essential evidence",
+      "verification_command": "cmp /tmp/regenerated-padua-essential.json topics/padua-mz-sharp-constants-20261106/evidence/S4-padua-essential.json"
     }
   ]
 }

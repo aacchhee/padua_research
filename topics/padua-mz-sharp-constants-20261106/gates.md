@@ -61,3 +61,18 @@ Registration chronology: S3 exact operator was saved before its model computatio
 ## 2026-11-06 — Padua upper pilot stop
 
 Evenm800 upper FIRSTpilot hits2000matvecs after336.519s, no accepted maximum or residual. By the registered stop rule, upper numerical K4 is INCONCLUSIVE and no larger upper scans/retry run. This is a bounded solver failure, not a mathematical counterexample to the proved operator limit. Minima are still running; no incomplete slope fit or measured parity agreement is claimed.
+
+## Final registered Padua outcomes
+
+All16fresh minima throughm3001 pass the prescribed numerical guards; no alternate fit was run. Negative slopes:
+
+| Parity | WindowA slope | WindowB slope | Relative drift |
+|---|---:|---:|---:|
+| even | −0.09145256697320353 | −0.09216539208358346 |0.7734195% |
+| odd | −0.09203829367253583 | −0.09249333593725202 |0.4919730% |
+
+Both windows pass rank, condition, sign, residual and5%stability tests. K4 therefore operationally **KILL_MODEL** for the finiteK128 heuristic−0.1336 proxy (machine field KILL_HEURISTIC_PROXY), with31.013928%/30.768461% discrepancy, above10%. Preserve this rejection; no posthoc revision, threshold/window change or extension. Exact B spectral constants have no certified decimal evaluation, and fitted windows have no proved asymptotic-bias bound; this gate is not a mathematical refutation of the independently checked exact operator theorem completed before these fits.
+
+K5's negative finite-window comparison is **MEASURED agreement**, final slope difference0.3545594%<5%. True limiting equality is proved by the operator theorem independently of the fits. Upper K4/K5 remain INCONCLUSIVE after the failed pilot; no upper fit was attempted. [Final fit](evidence/S4-padua-fit.json), [independent replay](independent-checks-S4-padua.md).
+
+A separately preregistered120CPU-s normalization diagnostic used3.21CPU-s and no full-space eigensolve. It finds no tested corner/Gram factor mismatch, but observes a substantial full-form correction on the chosen normalized trial: at m3000, L_m≈−0.13360254 while Q_m≈0.21004669 and Q_m−log(R)L_m≈1.18711149. This diagnoses that trial only; it does not explain the complete minimum branch, certify an asymptotic window, or undo K4. [Diagnostic](independent-checks-S3-transfer-diagnostic.md).

@@ -8,13 +8,13 @@ These are proposed sentences for a later writing step; the manuscript is untouch
 \[
 \limsup_{N\to\infty}(\log N)^2\lambda_{\min}(G_{N,N-1})\leq\frac{\pi^4}{8}.
 \]
-The bound holds on both parity subsequences. The existence and value of the minimum-eigenvalue limit remain unresolved.”
+The bound holds on both parity subsequences. The existence and value of the scaled limit lim (log N)^2 lambda_min remain unresolved.”
 
 Dependencies: [one-sided theorem](theory/S1-sharp-one-sided.md), [model norm](theory/S1-volterra-model.md), PD-T013/017; [supplementary check](independent-checks-S1-S3.md). This theorem does not turn a continuum norm into an equality for the finite spectra. K2's finite-window rejection of the equality model does not refute this inequality.
 
 ## Uniform CC upper bound and norm defect
 
-“For every integer N≥2 and every polynomial p of degree at most N−1,
+“For every integer N≥2 and every real polynomial p of degree at most N−1,
 \[
 0<Q_N(p^2)\leq\frac53\int_{-1}^1p^2\,dx\qquad(p\neq0).
 \]

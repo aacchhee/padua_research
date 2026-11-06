@@ -1,0 +1,212 @@
+{
+  "status": "MEASURED",
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/S4_padua_fit.py",
+    "--essential",
+    "topics/padua-mz-sharp-constants-20261106/evidence/S4-padua-essential.json",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/S4-padua-fit.json"
+  ],
+  "script_sha256": "529ca7a310341e3a30c50446de1d605baf489e4654436fe5285b1553e309cb13",
+  "essential_input": {
+    "path": "topics/padua-mz-sharp-constants-20261106/evidence/S4-padua-essential.json",
+    "sha256": "6d7665a71d4afc42b909deb194596a4fd1873bc7208b2c4673f436d7bfd4cdad"
+  },
+  "proposal_sha256": "3fc44adc5470e7ab9889fa218fc8b3dd14f6d83895de3638531717213dd6c59c",
+  "preregistration_commit": "ec52c16569ea959dfe682fcd7985378a2ef1cd42",
+  "numpy": "2.3.5",
+  "results": {
+    "minimum": {
+      "status": "STABLE_REGISTERED_WINDOWS",
+      "results": {
+        "even": {
+          "windows": {
+            "window_A_even_m": {
+              "Ms": [
+                800,
+                1000,
+                1200,
+                1400
+              ],
+              "mref": 800,
+              "intercept": 0.04004324179930971,
+              "slope": -0.09145256697320353,
+              "rank": 2,
+              "column_scales": [
+                2.0,
+                0.7261988904514153
+              ],
+              "scaled_singular_values": [
+                1.3483739360039189,
+                0.426482975868088
+              ],
+              "scaled_condition_2": 3.161612566736951,
+              "unscaled_condition_2": 5.229379024800049,
+              "residual_rms": 1.9134804333553958e-05,
+              "max_absolute_residual": 2.328078563349975e-05,
+              "residual_threshold": 0.000511883003254263,
+              "fit_residuals": [
+                -1.7979647738135263e-05,
+                2.328078563349975e-05,
+                1.4455704807030036e-05,
+                -1.975684270234465e-05
+              ],
+              "observed_extrema": [
+                0.040025262151571574,
+                0.019659472013741963,
+                0.0029768725495576283,
+                -0.011154815368818943
+              ],
+              "endpoint_contrast": -0.05118007752039051,
+              "fitted_endpoint_contrast": -0.05117830032542631,
+              "window_checks_pass": true
+            },
+            "window_B_even_m": {
+              "Ms": [
+                1800,
+                2200,
+                2600,
+                3000
+              ],
+              "mref": 1800,
+              "intercept": -0.03423114077807473,
+              "slope": -0.09216539208358346,
+              "rank": 2,
+              "column_scales": [
+                2.0,
+                0.6606308044826474
+              ],
+              "scaled_singular_values": [
+                1.347891339472622,
+                0.42800576745495034
+              ],
+              "scaled_condition_2": 3.1492363934429783,
+              "unscaled_condition_2": 5.6430263629646475,
+              "residual_rms": 1.0655444606120089e-05,
+              "max_absolute_residual": 1.2719226774399184e-05,
+              "residual_threshold": 0.00047090443900733625,
+              "fit_residuals": [
+                -1.0063625284828515e-05,
+                1.2719226774399184e-05,
+                8.356532112147042e-06,
+                -1.1012133601759344e-05
+              ],
+              "observed_extrema": [
+                -0.03424120440335956,
+                -0.05271331487825487,
+                -0.06811428278506197,
+                -0.08132259681241012
+              ],
+              "endpoint_contrast": -0.047081392409050564,
+              "fitted_endpoint_contrast": -0.047080443900733626,
+              "window_checks_pass": true
+            }
+          },
+          "relative_window_slope_drift": 0.007734194953931048,
+          "stable": true
+        },
+        "odd": {
+          "windows": {
+            "window_A_even_m": {
+              "Ms": [
+                801,
+                1001,
+                1201,
+                1401
+              ],
+              "mref": 801,
+              "intercept": -0.005800975776296645,
+              "slope": -0.09203829367253583,
+              "rank": 2,
+              "column_scales": [
+                2.0,
+                0.7254773380888372
+              ],
+              "scaled_singular_values": [
+                1.3483686919645885,
+                0.42649955513423987
+              ],
+              "scaled_condition_2": 3.1614773702171677,
+              "unscaled_condition_2": 5.233474813301269,
+              "residual_rms": 1.0449010888145074e-05,
+              "max_absolute_residual": 1.2453714096895274e-05,
+              "residual_threshold": 0.0005146682438210513,
+              "fit_residuals": [
+                -9.751030138657746e-06,
+                1.2453714096895274e-05,
+                8.211541485114715e-06,
+                -1.0914225443352243e-05
+              ],
+              "observed_extrema": [
+                -0.005810726806435303,
+                -0.026303290052333308,
+                -0.04307277154486167,
+                -0.05726871438384513
+              ],
+              "endpoint_contrast": -0.051457987577409825,
+              "fitted_endpoint_contrast": -0.05145682438210513,
+              "window_checks_pass": true
+            },
+            "window_B_even_m": {
+              "Ms": [
+                1801,
+                2201,
+                2601,
+                3001
+              ],
+              "mref": 1801,
+              "intercept": -0.08043835536924455,
+              "slope": -0.09249333593725202,
+              "rank": 2,
+              "column_scales": [
+                2.0,
+                0.660333277920935
+              ],
+              "scaled_singular_values": [
+                1.3478891214985063,
+                0.428012752317013
+              ],
+              "scaled_condition_2": 3.1491798181288186,
+              "unscaled_condition_2": 5.645113011369184,
+              "residual_rms": 7.841664824879701e-06,
+              "max_absolute_residual": 9.27455874087657e-06,
+              "residual_threshold": 0.0004723742108069292,
+              "fit_residuals": [
+                -7.3833255922750585e-06,
+                9.27455874087657e-06,
+                6.2532552419364285e-06,
+                -8.14448839048243e-06
+              ],
+              "observed_extrema": [
+                -0.08044573869483683,
+                -0.09898044481361706,
+                -0.11442839033683899,
+                -0.12767392093832797
+              ],
+              "endpoint_contrast": -0.04722818224349114,
+              "fitted_endpoint_contrast": -0.04722742108069292,
+              "window_checks_pass": true
+            }
+          },
+          "relative_window_slope_drift": 0.004919730271431655,
+          "stable": true
+        }
+      },
+      "finite_K128_heuristic_proxy": -0.1336,
+      "relative_proxy_discrepancies": {
+        "even": 0.31013928081150105,
+        "odd": 0.3076846112481136
+      },
+      "K4": "KILL_HEURISTIC_PROXY",
+      "final_window_relative_parity_slope_difference": 0.0035455943971038355,
+      "K5": "MEASURED_WINDOW_PARITY_AGREEMENT"
+    },
+    "maximum": {
+      "status": "INCONCLUSIVE",
+      "reason": "Registered required rows incomplete or failed; no fit attempted.",
+      "K4": "INCONCLUSIVE",
+      "K5": "INCONCLUSIVE"
+    }
+  },
+  "limitation": "Registered finite-window slope stability only. Model proxies are uncertified finiteK128 approximants; no full operator-norm identification, actual spectral limit or true parity equality follows. No alternate fit executed."
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Inventory code/JSON identities and run inexpensive integration checks.
+"""Inventory code/JSON/SVG identities and run inexpensive integration checks.
 
 No numerical producer is imported or executed. Prose is never hash-pinned.
 Paths in the manifest are relative to the topic directory.
@@ -22,6 +22,7 @@ SOURCE_HEAD = '2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861'
 def inventory(excluded, provisional):
     candidates = set((TOPIC / 'code').rglob('*.py'))
     candidates.update(TOPIC.rglob('*.json'))
+    candidates.update((TOPIC / 'figures').glob('*.svg'))
     candidates.discard(TARGET)
     rows = []
     for path in sorted(candidates):
@@ -29,8 +30,8 @@ def inventory(excluded, provisional):
         if name in excluded or '__pycache__' in path.parts:
             continue
         payload = path.read_bytes()
-        if path.suffix == '.json' and len(payload) >= LIMIT:
-            raise ValueError(f'generated JSON must be below 16 KiB: {name}')
+        if path.suffix in {'.json', '.svg'} and len(payload) >= LIMIT:
+            raise ValueError(f'generated evidence must be below 16 KiB: {name}')
         rows.append([name, len(payload), hashlib.sha256(payload).hexdigest()])
     return {
         'format': 'padua-sharp-code-json-inventory-v1',
@@ -40,7 +41,7 @@ def inventory(excluded, provisional):
         'columns': ['path_relative_to_base', 'bytes', 'sha256'],
         'files': rows,
         'dynamic_excluded_paths': sorted(excluded),
-        'scope': 'All topic code/**/*.py and topic/**/*.json, except this manifest, '
+        'scope': 'All topic code/**/*.py, topic/**/*.json and figures/*.svg, except this manifest, '
                  '__pycache__, and explicit dynamic exclusions. Prose is not pinned. '
                  'External source files, large raw artifacts and cold-storage payloads '
                  'are outside this inventory; JSON inventories record their provenance.',
@@ -118,7 +119,11 @@ def integration_checks():
             failures.append(f'{receipt.relative_to(TOPIC)}: {error}')
         if receipt.stat().st_size >= LIMIT:
             failures.append(f'{receipt.relative_to(TOPIC)}: at least 16 KiB')
+    total_json_bytes = sum(path.stat().st_size for path in receipts)
+    largest = max(receipts, key=lambda path: path.stat().st_size)
     print(f'Python AST: {len(scripts)} files; JSON parse/size: {len(receipts)} files')
+    print(f'Topic JSON total: {total_json_bytes} bytes including manifest; largest: '
+          f'{largest.relative_to(TOPIC)} ({largest.stat().st_size} bytes)')
     for issue in failures:
         print('INVALID ' + issue)
     links_ok = check_links()
@@ -149,7 +154,7 @@ def main():
                         recorded['status'] == 'PROVISIONAL')
     if recorded != current:
         raise ValueError('manifest mismatch: file content, scope or membership changed; regenerate intentionally')
-    print(f"Manifest verified: {len(recorded['files'])} code/JSON identities, "
+    print(f"Manifest verified: {len(recorded['files'])} file identities, "
           f"{TARGET.stat().st_size} bytes, status={recorded['status']}")
     if args.checks and not integration_checks():
         raise SystemExit(1)

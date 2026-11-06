@@ -1,0 +1,263 @@
+{
+  "status": "COMPLETED; MEASURED only",
+  "started_utc": "2026-11-06T13:00:21.656950+00:00",
+  "command_argv": [
+    "topics/padua-mz-sharp-constants-20261106/code/check_S3_transfer_diagnostic.py",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/check-S3-transfer-diagnostic.json"
+  ],
+  "cwd": "/workspace/sharp-work",
+  "script_sha256": "9bd601e312b70d7ba66d8e4041940391a7757c4733badede152b2853babbfb5e",
+  "operator_sha256": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+  "frozen_code_sha256": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "seed": "none; deterministic",
+  "K": 16,
+  "corner": [
+    1,
+    1
+  ],
+  "nodes": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      0,
+      12
+    ],
+    [
+      0,
+      14
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      10,
+      0
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      14,
+      0
+    ]
+  ],
+  "bessel_quadrature_order": 192,
+  "CPU_budget_seconds": 120,
+  "extra_memory_budget_bytes": 536870912,
+  "rows": [
+    {
+      "m": 40,
+      "n": 39,
+      "finite_corner": {
+        "minimum": -0.13703478086106638,
+        "maximum": 0.04695167837411213,
+        "gram_minimum": 0.00024359013546366417,
+        "gram_maximum": 0.04971260005391283,
+        "small_matrix_residual": 3.069996375041715e-16,
+        "combination_continuous_norm_squared": 0.9999999999999999
+      },
+      "gram_max_entry_difference_from_Bessel": 0.0021360677083342994,
+      "gram_operator_difference_from_Bessel": 0.002529897704369305,
+      "coefficient_max_difference_from_limit": 2.233288513122891,
+      "minimum_difference_from_B16": -0.0037193818884888874,
+      "origin_diagonal_error": 0.0,
+      "seconds": 0.0014087829995332868,
+      "cpu_seconds": 0.002510906999999951
+    },
+    {
+      "m": 200,
+      "n": 199,
+      "finite_corner": {
+        "minimum": -0.1339981144938375,
+        "maximum": 0.045911621455924825,
+        "gram_minimum": 0.00022580101187460308,
+        "gram_maximum": 0.04774529395465816,
+        "small_matrix_residual": 2.6479360246150083e-16,
+        "combination_continuous_norm_squared": 1.0000000000000007
+      },
+      "gram_max_entry_difference_from_Bessel": 0.000418755208334301,
+      "gram_operator_difference_from_Bessel": 0.000492841527613005,
+      "coefficient_max_difference_from_limit": 0.13470708268518994,
+      "minimum_difference_from_B16": -0.0006827155212600078,
+      "origin_diagonal_error": 0.0,
+      "seconds": 0.0037006969996582484,
+      "cpu_seconds": 0.004015170999999984
+    },
+    {
+      "m": 800,
+      "n": 799,
+      "finite_corner": {
+        "minimum": -0.133483059843248,
+        "maximum": 0.045735718328048014,
+        "gram_minimum": 0.00022379041312161116,
+        "gram_maximum": 0.04738782451267768,
+        "small_matrix_residual": 3.019083040719332e-16,
+        "combination_continuous_norm_squared": 0.9999999999999998
+      },
+      "gram_max_entry_difference_from_Bessel": 0.00010429695638117242,
+      "gram_operator_difference_from_Bessel": 0.00012260943161302422,
+      "coefficient_max_difference_from_limit": 0.022986102071122616,
+      "minimum_difference_from_B16": -0.00016766087067049407,
+      "origin_diagonal_error": 0.0,
+      "trial": {
+        "initial_continuous_norm_squared": 1.0000000000000027,
+        "normalized_continuous_norm_squared": 0.9999999999999998,
+        "Q": 0.38727018118124446,
+        "Q_over_log_m": 0.05793458123802684,
+        "L_full": -0.1337259074125902,
+        "L_corner_K16_from_grid": -0.13348305984322853,
+        "full_minus_corner_L": -0.0002428475693616594,
+        "Q_minus_log_R_L": 1.1884842144736232,
+        "Q_over_log_m_minus_L": 0.19166048865061702,
+        "weight_sum": 4.0,
+        "ordinary_polynomial_array_bytes": 25657632,
+        "peak_rss_kib": 105496,
+        "extra_peak_over_ordinary_array_bytes": 82370272,
+        "truncation_grid_vs_Gram_difference": 1.9456658506555868e-14
+      },
+      "seconds": 0.10048835599991435,
+      "cpu_seconds": 0.10105128200000002
+    },
+    {
+      "m": 3000,
+      "n": 2999,
+      "finite_corner": {
+        "minimum": -0.1333599098702702,
+        "maximum": 0.04569356469235418,
+        "gram_minimum": 0.00022336044272229283,
+        "gram_maximum": 0.047300981708520415,
+        "small_matrix_residual": 3.3371016568807877e-16,
+        "combination_continuous_norm_squared": 1.0000000000000002
+      },
+      "gram_max_entry_difference_from_Bessel": 2.778703858121595e-05,
+      "gram_operator_difference_from_Bessel": 3.265685852276577e-05,
+      "coefficient_max_difference_from_limit": 0.005546278443652852,
+      "minimum_difference_from_B16": -4.451089769269556e-05,
+      "origin_diagonal_error": 0.0,
+      "trial": {
+        "initial_continuous_norm_squared": 1.0000000000000018,
+        "normalized_continuous_norm_squared": 1.0,
+        "Q": 0.21004668642169605,
+        "Q_over_log_m": 0.026234954197005687,
+        "L_full": -0.13360253719029075,
+        "L_corner_K16_from_grid": -0.13335990987005866,
+        "full_minus_corner_L": -0.0002426273202320861,
+        "Q_minus_log_R_L": 1.1871114851687206,
+        "Q_over_log_m_minus_L": 0.15983749138729644,
+        "weight_sum": 3.9999999999999996,
+        "ordinary_polynomial_array_bytes": 360216032,
+        "peak_rss_kib": 619964,
+        "extra_peak_over_ordinary_array_bytes": 274627104,
+        "truncation_grid_vs_Gram_difference": 2.1152524176670795e-13
+      },
+      "seconds": 3.0550575140005094,
+      "cpu_seconds": 3.0380908919999996
+    }
+  ],
+  "limitation": "Floating diagnostics only; no new fit, model or full-space eigensolve. Rigorous B16 tail remains120/16=7.5.",
+  "B16": {
+    "minimum": -0.1333153989725775,
+    "maximum": 0.04567831707822768,
+    "gram_minimum": 0.00022321004893305167,
+    "gram_maximum": 0.04726945480358773,
+    "small_matrix_residual": 2.9168808306101624e-16,
+    "combination_continuous_norm_squared": 1.0000000000000009
+  },
+  "finished_utc": "2026-11-06T13:00:24.888667+00:00",
+  "seconds": 3.231737176000024,
+  "cpu_seconds": 3.2143901699999997,
+  "peak_rss_kib": 619964,
+  "source_head": "2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861",
+  "shell_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-mz-sharp-constants-20261106/code/check_S3_transfer_diagnostic.py --output topics/padua-mz-sharp-constants-20261106/evidence/check-S3-transfer-diagnostic.json",
+  "preregistration_record": "independent-checks-S3-transfer-diagnostic.md, prospective specification saved before this run"
+}
