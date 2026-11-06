@@ -110,7 +110,7 @@ Aliases: finite triangle; zero curvature; covariant shifts; common spectral subs
 ## D7 implementation and source limits
 
 D7's public-code task is authorised, but no external source commit is yet
-available. literature-access.md and external-code.md distinguish primary
+available (2026-11-06: AC later supplied the source archive; see ../g5-run/README.md). literature-access.md and external-code.md distinguish primary
 pages actually read, inherited assessments, failed access and unexecuted runs.
 
 ## Identifier mapping — 2026-11-06

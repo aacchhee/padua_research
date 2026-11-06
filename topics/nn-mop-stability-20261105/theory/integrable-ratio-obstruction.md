@@ -1,6 +1,6 @@
 # PD-N165 — common changes preserve relative spectral data
 
-ID kind: PD-N (provisional allocation).
+ID kind: PD-N (final ID assigned at preparation, 2026-11-06; see title).
 Aliases: pointwise ratio obstruction; common Toda orbit; common Geronimus orbit.
 Split from: D4-C2 universal easy-start solver.
 Split into: none.

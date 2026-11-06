@@ -1,6 +1,6 @@
 # PD-T444 — finite common Toda closure
 
-ID kind: PD-T (provisional allocation).
+ID kind: PD-T (final ID assigned at preparation, 2026-11-06; see title).
 Aliases: finite NN exponential flow; common-time multidimensional Toda.
 Split from: D4-C3, exact supporting invariant of an OPEN numerical-continuation target.
 Split into: none.
@@ -16,11 +16,11 @@ Absent a and its derivative are zero. Set S_eta=0 at |eta|=N; no degree-N b valu
 
 ## Definitions
 
-NN convention and stored indices are D4-01. P_eta=F is independent of t for |eta|=N. The source literature commonly uses exp(-t x); the sign here is reversed.
+NN convention and stored indices are those of PD-T443. P_eta=F is independent of t for |eta|=N. The source literature commonly uses exp(-t x); the sign here is reversed.
 
 ## Assumptions
 
-N>=1, finite fixed support, differentiable exponential weights; mixed normality throughout the stated interval. Positivity alone does not provide this interval (D4-02). The initial NN array is the actual moment-defined array at t0 in that connected normality interval.
+N>=1, finite fixed support, differentiable exponential weights; mixed normality throughout the stated interval. Positivity alone does not provide this interval (PD-N164). The initial NN array is the actual moment-defined array at t0 in that connected normality interval.
 
 ## Status by part
 
@@ -58,7 +58,7 @@ LIT-567 §2.3 equation (2.18), common continuous-time Toda equations with opposi
 
 ## Scope
 
-Known exact common flow with explicit finite support closure and O(N^2) implementation. Ordinary floating RK4 does not exactly preserve compatibility or moment realizability. The proof provides neither a normality certificate nor a global interval, error bound, or stable starting-data construction. Common flow is constrained by D4-03.
+Known exact common flow with explicit finite support closure and O(N^2) implementation. Ordinary floating RK4 does not exactly preserve compatibility or moment realizability. The proof provides neither a normality certificate nor a global interval, error bound, or stable starting-data construction. Common flow is constrained by PD-N165.
 
 ## Open items
 

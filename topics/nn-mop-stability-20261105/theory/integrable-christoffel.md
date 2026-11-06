@@ -1,6 +1,6 @@
 # PD-T443 — finite common Christoffel transport
 
-ID kind: PD-T (provisional allocation).
+ID kind: PD-T (final ID assigned at preparation, 2026-11-06; see title).
 Aliases: common spectral shift; NN Darboux update; Christoffel ratio transport.
 Split from: D4-C1, exact invariant supporting the unresolved stability target.
 Split into: none.
@@ -23,7 +23,7 @@ Absent predecessor terms are zero. The stored array has |nu|<=N-1. For these ind
 
 ## Assumptions
 
-N>=1; old and transformed normality as stated; exact field arithmetic of characteristic zero; c different from every node. Positivity is not required. To retain positive weights, one may take c below all nodes. This does not ensure transformed mixed normality (D4-02).
+N>=1; old and transformed normality as stated; exact field arithmetic of characteristic zero; c different from every node. Positivity is not required. To retain positive weights, one may take c below all nodes. This does not ensure transformed mixed normality (PD-N164).
 
 ## Status by part
 
@@ -81,7 +81,7 @@ An exact finite update of an existing normal triangle. Its arithmetic omits C4's
 
 ## Open items
 
-Input-sensitive forward/backward error bounds; a useful starting array obtainable without an ill-conditioned reconstruction; independently varied weights. D4-C1a's particular predivide-C4-restore proposal failed the benchmark gate (D4-05).
+Input-sensitive forward/backward error bounds; a useful starting array obtainable without an ill-conditioned reconstruction; independently varied weights. D4-C1a's particular predivide-C4-restore proposal failed the benchmark gate (PD-N166).
 
 ## History
 

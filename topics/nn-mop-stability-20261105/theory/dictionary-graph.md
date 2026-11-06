@@ -2,7 +2,7 @@
 
 ID kind: PD-T. Aliases: ratio graph; mixed-test positive measure.
 Split from: none (supporting result for dictionary-target.md).
-Split into: none. Proposed elementary background result; no novelty claim.
+Split into: none. Elementary background result (PD-T445); no novelty claim.
 
 ## Statement
 

@@ -11,7 +11,7 @@ Aliases: common spectral change; Darboux; finite NN ratio update.
 - Closest registry entries (read in full): IDEA-193 common Toda/qd measure modification, IDEA-378 coupled invariant requirement, IDEA-379/PD-T289 NN reconstruction; predecessor candidates C2/C4. LIT-567/568 are closer published transform baselines.
 - Separation criterion vs closest entry: finite terminal formula and a bounded tested transport from supplied coefficients; a claim of a new common-transform algebra is falsified by the literature and is not retained. A stable IEP-solver distinction would require an effective source-data construction and measured gains beyond C4; that distinction is unestablished.
 - Literature baseline and search limitations: common transforms and transformed NN algorithms are known; partial primary coverage listed in literature-D4. No priority claim.
-- Applicable obstructions and exact hypotheses broken: source supplied explicitly avoids pretending equal initial measures are normal. Terminal successor is F, no degree N+1 reconstruction. Positivity alone still fails mixed normality (D4-02).
+- Applicable obstructions and exact hypotheses broken: source supplied explicitly avoids pretending equal initial measures are normal. Terminal successor is F, no degree N+1 reconstruction. Positivity alone still fails mixed normality (PD-N164).
 - Novelty gate verdict: variant with difference only in finite boundary/implementation bookkeeping; exact transformation is duplicate prior algebra.
 - Cheapest decisive test: exact N4 Fraction comparison with moment-reconstructed target and determinant/polynomial identities.
 - Kill criterion written before testing: any exact formula mismatch blocks floating implementation; the supplied-array transform alone cannot earn a full solver claim.
@@ -28,7 +28,7 @@ Aliases: common spectral change; Darboux; finite NN ratio update.
 Aliases: common Geronimus preconditioner; c=-2 source pair.
 
 - Question / scope: improve the pinned benchmark full NN reconstruction using one positive common predivision.
-- Mechanism and hypotheses: exact target weights w, construct w/(x+2), reconstruct source array by binary64 C4, restore with D4-01. No high-precision values are supplied to this candidate algorithm.
+- Mechanism and hypotheses: exact target weights w, construct w/(x+2), reconstruct source array by binary64 C4, restore with PD-T443. No high-precision values are supplied to this candidate algorithm.
 - Closest registry entries (read in full): IDEA-193 and IDEA-379; C1 above; predecessor C4.
 - Separation criterion vs closest entry: preconditioned source C4 must improve overall target error, rather than merely factor the same exact transform. Worsened errors on both N16 families erase that proposed benefit for this design.
 - Literature baseline and search limitations: common division/restoration known, LIT-567 / LIT-614; no literature-derived stability estimate.
@@ -69,11 +69,11 @@ Aliases: common-factor orbit; common Toda solve; no-mass Geronimus reachability.
 Aliases: common exp(tx) flow; finite-triangle Toda RK4.
 
 - Question / scope: continue the actual moment-defined array at t0 under a common positive weight flow on its connected normality interval.
-- Mechanism and hypotheses: D4-04 finite ODE with S_degreeN=0, valid only on a normality interval. RK4 is a numerical pilot, not an exact invariant-preserving integrator.
+- Mechanism and hypotheses: PD-T444 finite ODE with S_degreeN=0, valid only on a normality interval. RK4 is a numerical pilot, not an exact invariant-preserving integrator.
 - Closest registry entries (read in full): IDEA-193 Toda/qd, IDEA-378 invariant, IDEA-379 baseline.
 - Separation criterion vs closest entry: explicit boundary/operation count and bounded endpoint measurements. A claim of a new Toda algebra is killed by LIT-567 and not pursued. A solver distinction requires independent source availability and target reachability, still missing.
 - Literature baseline and search limitations: LIT-567 §2.3 equation2.18 with reversed time sign; full source proof not read. Local finite proof supplied independently.
-- Applicable obstructions and exact hypotheses broken: finite boundary correctly closed; positivity does not ensure normality, with explicit N3 flow crossing in D4-02; common-ratio invariant restricts targets.
+- Applicable obstructions and exact hypotheses broken: finite boundary correctly closed; positivity does not ensure normality, with explicit N3 flow crossing in PD-N164; common-ratio invariant restricts targets.
 - Novelty gate verdict: duplicate algebra, variant with difference in finite closure/implementation scope.
 - Cheapest decisive test: derive closure then exp(0.1x) pilot at N4,8,12,16, 20/40 RK4 steps, against deformed moments.
 - Kill criterion written before testing: a normality crossing blocks that path; a wrong endpoint/closure blocks implementation. Good oracle-initialized endpoint error does not clear a full IEP gate.

@@ -1,6 +1,6 @@
 # PD-N164 — positive common changes can cross normality
 
-ID kind: PD-N (provisional allocation).
+ID kind: PD-N (final ID assigned at preparation, 2026-11-06; see title).
 Aliases: exterior Christoffel normality trap; positive Toda path crossing.
 Split from: D4-C1/C3, unsupported normality-preservation shortcut.
 Split into: none.
@@ -34,7 +34,7 @@ Attempted mechanism: D4-C1/C3 normality safeguard. Parameter range: N=3, nodes 0
 
 ## Depends on
 
-PD-T286 normality definition. D4-01 provides another way to recognize the Christoffel singularity but is not needed for the direct counterexample.
+PD-T286 normality definition. PD-T443 provides another way to recognize the Christoffel singularity but is not needed for the direct counterexample.
 
 ## Proof or evidence
 

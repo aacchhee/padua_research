@@ -47,7 +47,7 @@ a durable home. Added for audit-01 MINOR4 on2026-11-06 by Codex, requested
 gpt-6.1-sol high.
 
 2026-11-06, Codex, audit-02 R-4: the original D1 target from
-[handoff01, lines 52–62](../handoffs/01-work.md) is quoted verbatim below:
+[handoff01, D1 section, lines 54–64](../handoffs/01-work.md) is quoted verbatim below:
 
 > - Define the first-order condition number κ_N of the map (nodes, weights) → (a₁, a₂, b₁, b₂), in normwise and componentwise forms, matching PD-T290's metric. Do this for the NN map and, for comparison, for the step-line map of LIT-347.
 > - Compute κ_N exactly, or in high precision with a certified derivative, for both families, N = 4–64.

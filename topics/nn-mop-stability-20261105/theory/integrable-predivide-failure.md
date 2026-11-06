@@ -1,6 +1,6 @@
 # PD-N166 — predivide-C4-restore fails the round-1 gate
 
-ID kind: PD-N (provisional allocation).
+ID kind: PD-N (final ID assigned at preparation, 2026-11-06; see title).
 Aliases: D4-C1a; one common Geronimus preconditioner; c=-2 restore.
 Split from: D4-C1 numerical solver proposal.
 Split into: none.
@@ -34,7 +34,7 @@ Attempted mechanism: D4-C1a, easier reconstruction of a commonly predivided pair
 
 ## Depends on
 
-PD-T289 and pinned C4 code; D4-01 exact transform identifies the restoration's mathematical target. No conditioning theorem is assumed.
+PD-T289 and pinned C4 code; PD-T443 exact transform identifies the restoration's mathematical target. No conditioning theorem is assumed.
 
 ## Checks
 
