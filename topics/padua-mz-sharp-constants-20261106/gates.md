@@ -100,3 +100,9 @@ L_m mode, while L_m's bottom mode already lies near the B proxy −0.1336.
 Mode-dependent O(1) corrections explain the registered slopes near −0.092
 without contradicting the theorem. This is a finite-scope interpretation,
 not a certified crossing law or a PD-N.
+
+## 2026-11-06 handoff03 new prospective protocols
+
+These do not revise K0–K5. After the response-first commit17ca9f, register P2 in [ideas/P2-protocol.md](ideas/P2-protocol.md): fixed B_K calibration/order controls, m12/13 validation, m400 audited overlap, then separately released four-case doublet test; exact projector/rate/secant/kill/validity rules are in the protocol. No calculation precedes this publication.
+
+P4 is [attempts/P4.md](attempts/P4.md): one J512 exact-binary trial; integer2^-256 outward intervals; Machin/Taylor/Laplace/log enclosures with fixed128bit tails and20Laplace terms; positive denominator and lower quotient at least10044369/10000000; grouped-form checker and distinct-agent rerun. Trial preparation floats are not trusted proof arithmetic. This is a new certificate attempt, not a K3 revision. No evaluation precedes publication.

@@ -4,7 +4,7 @@
 - Branch: `codex/padua-mz-sharp-constants-20261106`.
 - Scope: handoff 03 part R only; no P1–P4 development, registry writes or final IDs.
 - Worker: Codex; requested `gpt-6.1-sol` medium. Runtime serving-model and effort metadata are unexposed.
-- Publication: coordinator supplies the R output commit SHA after publishing; every fixed row below refers to that single R output commit. This working response makes no claim that a commit has already been published.
+- R publication: `17ca9f441cece178354e70504a6c739df501a224`. Every fixed row is included in that response-first output commit. This dated locator is added in the subsequent protocol checkpoint.
 - Independent acceptance: audit-01 accepts the existing analytic proofs at their stated scopes. This response is not an independent audit of its new records or interpretations.
 
 | Finding | Disposition | Concrete response / limit |
