@@ -1,22 +1,22 @@
 # Padua argmax bridge — current research results
 
 The exact two-corner global argmax is proved for **degrees2–40** and
-**every integer n>=50000**. Its equality set is {(-1,-1),(1,-1)} for
-even n and {(-1,-1),(-1,1)} for odd n. The remaining gap **41–49999**
+**every integer n>=16000**. Its equality set is {(-1,-1),(1,-1)} for
+even n and {(-1,-1),(-1,1)} for odd n. The remaining gap **41–15999**
 and all-degree PD-T099 stay OPEN. This is a sufficient upper boundary,
 not a claim of the minimum onset.
 
-[Global theorem](../topics/padua-argmax-bridge-20261105/theory/D08-global-argmax.md),
-[independent reconstruction](../topics/padua-argmax-bridge-20261105/independent-checks-D08-global.md).
+[Global theorem](../topics/padua-argmax-bridge-20261105/theory/D11-global-comparison.md),
+[independent reconstruction](../topics/padua-argmax-bridge-20261105/independent-checks-D11-onset.md).
 The proof covers the full closed square, both parities, nodes, axes,
 collisions and exact equality, without an energy premise or mass degree scan.
-For n>=50000: far S<Lambda_c-1/100; near noncorner
-lambda<Lambda_c-1/250; actual corners
-lambda<=Lambda_c-(alpha²+beta²)/4. These cases use their separately proved
-lower degree floors. The primary40000 far budget fails; the unchanged
-preregistered50000 fallback passes with slack>0.0367. PD-T271's certified
-corner constant is an explicit dependency. Final Claude audit remains pending.
-The older C13 theorem from500000 and original models retain their scopes.
+For n>=16000: far S<Lambda_c-19/100; near noncorner
+lambda<Lambda_c-7/1000; actual corners
+lambda<=Lambda_c-(alpha²+beta²)/4. New comparison domains and monotonicity
+are proved; the primary16000 budget passed, no20000 fallback ran.
+The new near argument uses the true fractional constant modulus directly.
+PD-T271's certified corner constant is an explicit dependency. Final Claude
+audit remains pending. Older D08/C13 theorems retain their stated scopes.
 
 The guarded actual-Lebesgue point evaluator independently reproduced all13
 fixed cases,10 finite-polynomial references and6 invalid controls in

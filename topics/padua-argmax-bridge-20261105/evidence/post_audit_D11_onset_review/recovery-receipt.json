@@ -1,0 +1,14 @@
+{
+  "first_conservative_cpu_charge_seconds": 1,
+  "first_observed_enclosing_tool_wall_seconds": 0.3,
+  "first_process_cpu_seconds": null,
+  "recovery_child_cpu_seconds": 0.112433,
+  "recovery_wall_seconds": 0.11421665400121128,
+  "returncode": 0,
+  "source_sha256": "4816e2ee9109baad796aceb59580c120a5dae8c48a41eb4daf87054750a742d7",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "3b1cf3e6aea16e95355d4e85088bac25fb9e7318e0647c46319285df7fdc2be7",
+  "timeout_seconds": 2,
+  "wrapper_cpu_seconds": 0.016066034,
+  "wrapper_sha256": "b8c14f46aed6117922bb97fb54a9568c42e623938b0599eb9587480e43ebdd50"
+}

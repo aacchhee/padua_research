@@ -1,25 +1,29 @@
 # Padua argmax bridge — WORK post-audit checkpoint, 2026-11-06
 
 The exact global equality set is proved for **degrees2–40** and for
-**every integer n>=50000**. It consists of {(-1,-1),(1,-1)} for even n
-and {(-1,-1),(-1,1)} for odd n. The remaining gap41–49999 and all-degree
+**every integer n>=16000**. It consists of {(-1,-1),(1,-1)} for even n
+and {(-1,-1),(-1,1)} for odd n. The remaining gap41–15999 and all-degree
 PD-T099 remain OPEN. The fresh campaign has replaced its initial
-astronomical upper boundary with this explicit fifty-thousand-degree threshold.
+astronomical upper boundary with this explicit sixteen-thousand-degree threshold.
 No mass degree enumeration or energy premise enters the analytic theorem.
 
 ## Current accepted theorem and new component
 
-The [D08 global assembly](theory/D08-global-argmax.md) and
-[independent reconstruction](independent-checks-D08-global.md) prove the
-current threshold **50000**, with no unresolved supplementary-review findings.
-The full closed physical cover has far gap1/100 from50000, near noncorner
-gap1/250 from40000, and actual-corner loss(alpha²+beta²)/4 from10000.
-The primary40000 far budget failed and is preserved. The unchanged
-preregistered50000 fallback has directed far slack>0.03671088.
-This uses the completed limiting model and new explicit errors; it neither
-extends the frozen old models nor changes the near model's one correction.
+The [D11 global assembly](theory/D11-global-comparison.md) and
+[independent reconstruction](independent-checks-D11-onset.md) prove the
+current threshold **16000**, with no unresolved supplementary findings.
+The full closed cover has far gap19/100 and near noncorner gap7/1000
+from16000, plus actual-corner loss(alpha²+beta²)/4 from10000.
+The primary16000 directed budget passed; no20000 fallback ran.
+Its exact endpoint margins exceed.00747769 near and.19899350 far.
+The near proof compares the TRUE completed constants directly, using
+the fractional/entropy modulus and a sharp scalar maximum; no eta0
+bridge or additional near correction is charged. All degree floors
+and monotonicities are proved at their actual new domains.
 PD-T271's certified corner constant remains an explicit computer-assisted
 dependency. Final Claude audit and upstream coverage obligations remain.
+The older D08 theorem from50000 and C13 theorem from500000 retain their
+original scopes; this is a new assembly, without mass enumeration.
 
 The actual-Lebesgue point evaluator now passed an independent fresh build
 and all13 fixed cases, including10 finite-polynomial references, in

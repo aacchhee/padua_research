@@ -1,6 +1,4 @@
-"""D11 exact predicate/tree skeleton. No native adapter or runnable certificate gate.
-Independent of producer arithmetic. Public CLI always refuses mathematical use.
-"""
+"""D11 exact predicates. Independent of FLOAT producer arithmetic."""
 from fractions import Fraction as F
 
 N=512
@@ -81,13 +79,13 @@ def leaf_predicate(box,U,L):
     far_nonempty=high>=1/(2*PI_HI)
     if (not near_nonempty or bound-F(1,32)<L) and (not far_nonempty or bound<L):
         return 'SPLIT'
-    raise ValueError('unaccepted leaf')
+    raise ValueError('unaccepted leaf; strict exact margin failed')
 
 
-def verify_tree_skeleton(document,L,certified_upper):
+def verify_tree_skeleton(document,L,certified_upper,arithmetic_identity="synthetic-control-only"):
     """Inject fresh C11 Arb oracle only after separately reviewed source integration.
     Never trusts producer values, booleans, keys, point results or bound fields.
-    Return is a predicate diagnostic, NOT the full scientific acceptance gate.
+    Controller separately validates scientific data dependencies, native closure and resources.
     """
     if set(document)!={'format','n','tree'} or document['format']!='D11-tree-v1' or type(document['n']) is not int or document['n']!=N:
         raise ValueError('format/degree')
@@ -97,15 +95,16 @@ def verify_tree_skeleton(document,L,certified_upper):
     counts={}
     def upper(a,b):
         key=(N,*canonical(a,b))
-        if key not in cache:
+        cache_key=(arithmetic_identity,*key)
+        if cache_key not in cache:
             if len(cache)>=MAX_VERTICES:
                 raise ValueError('vertex cap')
             # Adapter must key additionally by frozen source/arithmetic identity.
             value=certified_upper(key)
             if not isinstance(value,F) or value<0:
                 raise ValueError('oracle did not return nonnegative exact upper')
-            cache[key]=value
-        return cache[key]
+            cache[cache_key]=value
+        return cache[cache_key]
     def walk(node,box,depth):
         nonlocal visited
         visited+=1
@@ -135,12 +134,36 @@ def verify_tree_skeleton(document,L,certified_upper):
     if not isinstance(L,F) or L<=0:
         raise ValueError('uncertified corner lower')
     walk(document['tree'],(F(0),F(1),F(0),F(1)),0)
-    return {'diagnostic':'exact tree/leaf predicates only','visited':visited,'vertices':len(cache),'leaf_counts':counts}
+    return {'scope':'exact complete tree and strict leaf predicates','visited':visited,'vertices':len(cache),'leaf_counts':counts}
 
 
-def fresh_c11_upper(*args,**kwargs):
-    raise RuntimeError('BLOCKED: fresh build/API/closure/resource adapter not implemented')
+def decode_certificate(document):
+    if not isinstance(document,dict) or set(document)!={'format','n','preorder'} or document['format']!='D11-midpoint-v1' or type(document['n']) is not int or document['n']!=N:
+        raise ValueError('certificate schema/degree')
+    tokens=document['preorder']
+    if not isinstance(tokens,str) or not 1<=len(tokens)<=MAX_VISITED:
+        raise ValueError('preorder size/type')
+    index=0
+    def take(box,depth):
+        nonlocal index
+        if index>=len(tokens) or depth>64:raise ValueError('missing sibling/depth')
+        token=tokens[index];index+=1
+        if token=='.':return {'leaf':True}
+        al,ah,bl,bh=box
+        if token=='a':
+            t=(al+ah)/2;axis=0;left,right=(al,t,bl,bh),(t,ah,bl,bh)
+        elif token=='b':
+            t=(bl+bh)/2;axis=1;left,right=(al,ah,bl,t),(al,ah,t,bh)
+        else:raise ValueError('unknown preorder token')
+        return {'axis':axis,'at':str(t),'left':take(left,depth+1),'right':take(right,depth+1)}
+    tree=take((F(0),F(1),F(0),F(1)),0)
+    if index!=len(tokens):raise ValueError('extra/duplicated tree suffix')
+    return {'format':'D11-tree-v1','n':N,'tree':tree}
+
+
+def verify_certificate(document,L,certified_upper,arithmetic_identity="synthetic-control-only"):
+    return verify_tree_skeleton(decode_certificate(document),L,certified_upper,arithmetic_identity)
 
 
 if __name__=='__main__':
-    raise SystemExit('PREPARATION ONLY: no certificate acceptance or native execution is implemented')
+    raise SystemExit('Use reviewed controller.py --run-once; checker has no standalone native path')

@@ -1,0 +1,29 @@
+{
+  "result": "PASS synthetic controls only",
+  "cases": [
+    "rational 1/0",
+    "rational 01",
+    "rational 1/2/3",
+    "rational 1.0",
+    "rational nan",
+    "rational 1/9999999999",
+    "strict JSON {\"x\":1,\"x\":2}",
+    "strict JSON {\"x\":NaN}",
+    "strict JSON {\"x\":Infinity}",
+    "strict JSON {\"x\":1e999}",
+    "preorder nTrue",
+    "preorder n511",
+    "preorder preordera.",
+    "preorder preorder..",
+    "preorder preorderx",
+    "preorder preorderaaaaaaaaaaaa",
+    "closed-edge and outside-fold equivalence",
+    "full child union exact traversal",
+    "tangent retained; strictly outside omitted",
+    "false oracle, strict margin, aliases, invalid axis/progress"
+  ],
+  "CPU_before_summary": 0.054209999999999994,
+  "cap": 1,
+  "native_calls": 0,
+  "limitations": "does not establish a point enclosure or mathematical cover"
+}

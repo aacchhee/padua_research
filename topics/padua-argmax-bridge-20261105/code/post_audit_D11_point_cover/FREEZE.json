@@ -1,21 +1,36 @@
 {
-  "status": "PREPARATION FREEZE ONLY; no executable certificate acceptance gate",
-  "input_head": "96882eaa270adbde69ce24e731256eebbbd03adb",
+  "status": "SOURCE RELEASE CANDIDATE UNEXECUTED; distinct source audit and root release required",
+  "input_head": "5ecf97801631192fd10d84089c5a8c79bfb95138",
   "code_data": [
     {
-      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/producer.py",
-      "bytes": 2309,
-      "sha256": "994cc9aa9202e986518fb39a7ed0868129ba5eb1aa070135e027f2277d87ae5b"
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/checker.py",
+      "bytes": 6865,
+      "sha256": "659902969bc64b96def1c55cb7d30b05a592f7e23a637a3de94b7e077a1f6a5a"
     },
     {
-      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/checker.py",
-      "bytes": 5569,
-      "sha256": "f47ff55eadaaedbacf6f37c10385a8daa89268a0908a7dc2f30e1beb8b62a469"
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/controller.py",
+      "bytes": 6557,
+      "sha256": "947c7bf7ae7f446a40d4eb7acf93664ced42068e00b7ce13a9a1dd24d2872007"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/controls.py",
+      "bytes": 3499,
+      "sha256": "8e3bf97f9e430487b5a067c68a2caccf5ce5b50ad6bfa1065d13dbb23f7ff9c1"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/producer.py",
+      "bytes": 2480,
+      "sha256": "b99f6dd854bffc93d69c11380bfac7e5994f49ba455044ba169accbb0d1f5b2f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/runtime.py",
+      "bytes": 9452,
+      "sha256": "3e0e2515ef5b825d9cc07e46d8a7d3c736d441adc996c58464989e97657d7947"
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/SOURCES.json",
-      "bytes": 2719,
-      "sha256": "75e9fb0fe9ba7995e078422a1c6afb08cebc84c01b3ee60bd70b6170483a182f"
+      "bytes": 3145,
+      "sha256": "0c9297f4cc6166d841440392f32f1c5e8a1abe479e2f3ba4a19a8371fcb27c2a"
     }
   ],
   "review_provenance_non_enforced": [
@@ -61,19 +76,9 @@
     },
     {
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/SPEC.md",
-      "bytes": 9994,
-      "sha256": "aa3db45d54b279ae7221026e4fae3d2479fd1732994de7ad55cbd5eca3e508e8"
-    },
-    {
-      "path": "topics/padua-argmax-bridge-20261105/ideas/D11-point-cover.md",
-      "bytes": 2466,
-      "sha256": "5c765473b50159dff54451002282b3b6a70497bbc85d21e00c964f3ac2d3202c"
-    },
-    {
-      "path": "topics/padua-argmax-bridge-20261105/attempts/D11-point-cover.md",
-      "bytes": 1914,
-      "sha256": "e2a56040f11ab327ebaa9b3cb7814799c513483c48e3e1f5b1e9140843223b40"
+      "bytes": 9112,
+      "sha256": "9993904b92226a64936a8affb9189e5c7d61ddb953000fc4f66f9d65a341eb78"
     }
   ],
-  "runtime_note": "Future controller must enforce code/data/input plus registered FREEZE identity start/end; prose provenance is passive. No run command exists in this skeleton."
+  "runtime_note": "Code/data and registered FREEZE equality enforced at start/end. Prose passive provenance only. No execution performed; source audit and root release pending."
 }

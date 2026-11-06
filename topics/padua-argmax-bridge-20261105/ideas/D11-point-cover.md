@@ -34,3 +34,11 @@ Parent-assigned Sol medium technical preparation; runtime metadata unexposed.
   to explicit next task. SPEC lists fail-closed missing components.
 - Canonical theory: accepted D10-cover-contract.md; no new theory/negative
   ID, degree, throughput, global argmax or historical novelty asserted.
+
+2026-11-06 implementation addendum: interrupted preparation is now completed
+as a source release candidate with once-only supervisor, independent fresh
+native adapters, compact exact tree checker, immutable compositional D09
+receipt and clean-cloud package bootstrap. SPEC supersedes the old missing-
+component list. AST source syntax checks only have passed; no scientific or
+pure-control execution occurred. Practical full512 cover remains OPEN;
+distinct source review/root release and independent native replay are pending.

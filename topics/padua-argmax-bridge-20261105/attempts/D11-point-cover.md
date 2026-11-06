@@ -30,3 +30,28 @@ OPEN. Next authorized technical task would finish the listed runner/API/
 provenance blockers before source audit and any numerical release. The
 parent may consolidate/defer if that integration is not worth its cost;
 there is no practical success guarantee from the accepted implication.
+
+2026-11-06 source-integration addendum. Rules read at
+5ecf97801631192fd10d84089c5a8c79bfb95138, requested technical Sol medium;
+actual serving metadata unexposed. Root preserved interrupted sources before
+this bounded completion. Added one-shot controller, fresh FLOAT/C11 adapters,
+compact independent tree decoder, exclusive/atomic ledgers, inclusive Linux
+subreaper accounting, fresh native build and before/after all-mapped-file
+closure. Essential frozen D09 receipt is a compositional premise; old local
+D09 binary/raw outputs are not required or loaded. Network package bootstrap
+is frozen and counts inside checker300CPU if required in a clean clone.
+
+Independent source auditor raised parser exponent overflow and bounded read;
+fixed finite parse_float and read(limit+1), plus explicit checker source cache
+identity and bootstrap/dependency records. Source audit itself is external to
+this developer record. Ordinary Python ast.parse source syntax checks passed
+for all five Python files; this does not import or run their definitions.
+No producer/checker/control instance, native compiler, native library load or
+point evaluation has executed. Author pure-controls spent0; auditor reports
+source-only review/no controls. Optional controls hard1CPU each share2CPU
+reserve, remaining one-shot tree gate398CPU including all builds/helpers.
+No mathematical success, feasibility or throughput is asserted. Sources/SPEC
+are frozen for distinct source review and root release before any execution.
+Runs needed: after accepted source review and explicit root release only,
+SPEC exact synthetic command and then primary one-shot command. Later full
+independent fresh native rerun remains necessary before computer-proof status.

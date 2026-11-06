@@ -1,6 +1,6 @@
 {
-  "input_head": "96882eaa270adbde69ce24e731256eebbbd03adb",
-  "status": "PREPARATION ONLY: native adapters/resource runner/acceptance gate absent",
+  "input_head": "5ecf97801631192fd10d84089c5a8c79bfb95138",
+  "status": "SOURCE RELEASE CANDIDATE UNEXECUTED; distinct source audit and root release required",
   "immutable_code_data_dependencies": [
     {
       "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
@@ -46,6 +46,16 @@
       "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D09_threepoint/SOURCES.json",
       "bytes": 2403,
       "sha256": "f7d2bd992d93ec631000e98a657e119ade3d24f843e4280cb1d27f0a0069794a"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D09_threepoint/controller.py",
+      "bytes": 16019,
+      "sha256": "5642ad6fdf2c28165fc8d17ce8e62330ed695e7b64bb1242c13312d53d47fd73"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/setup.py",
+      "bytes": 1131,
+      "sha256": "ff6babcf65f90c42d35353bd306f89d96ac293c6783508b03bef175ab5a60391"
     }
   ],
   "contract": {

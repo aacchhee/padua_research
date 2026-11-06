@@ -1,169 +1,147 @@
-# D11 prospective degree512 full phase cover — preparation freeze
+# D11 degree512 point-cover source release candidate (UNEXECUTED)
 
-Rules/input96882eaa270adbde69ce24e731256eebbbd03adb. Parent-assigned
-Sol medium technical development; serving metadata unexposed. This is a
-bounded SOURCE SKELETON, not a run-ready certifier. No producer, checker,
-compiler, mathematical instance or pure geometry control was executed.
-No existing arithmetic source changed. Root alone controls Git/publication.
+2026-11-06. Rules read at5ecf97801631192fd10d84089c5a8c79bfb95138;
+requested technical Sol medium, actual serving metadata unexposed. This
+replaces the interrupted preparation specification, preserved by root.
+No native compiler/load/phase point, producer/checker instance or pure
+control has run. Root must receive distinct Astra medium source review
+before releasing any such execution. No new mathematics/novelty claim.
 
-## Gate and scientific scope
+## Scientific contract
 
-Implement accepted D10-cover-contract.md (reviewed SHA777f5815...) as an
-adapter of PD-T364. There is no new mechanism or novelty claim. Only
-n=512,m=513, common primitive S on rational normal-phase turns a,b,
-T={a,b>=0,a+b<=1}, M=34, pi_lo=157/50, pi_hi=22/7, floor1/32.
-D09's successful actual-cardinal corner patch is a separate premise,
-never a primitive S bound or an assumption about an unknown maximizer.
-N3 energy/exclusion is not available at512. S is never interpolated in
-squared phase. There are no derivatives, gradients or maximum-exclusion
-leaf classes. Existing sources and frozen old receipts stay unchanged.
+Specialize accepted D10/PD-T364 to n512,m513, ordinary primitive S over
+T={a,b>=0,a+b<=1}. M34, pi_lo157/50, pi_hi22/7 and noncorner near floor1/32
+are fixed. Accepted actual-cardinal D09 corner patch on both closed
+pi/4 by3pi/16 rectangles supplies actual corners; it is never a primitive
+S estimate or an assumption about the unknown maximizer. Full global512
+and practical feasibility remain OPEN. No derivatives/gradients, squared
+phase interpolation, energy exclusion or alternative degree are used.
 
-Success requires a COMPLETE exact cover, every fresh Arb vertex enclosure,
-all leaf predicates, accepted scientific dependencies, full source/runtime
-closure, and independent fresh replay. Feasibility, throughput, new degree,
-global argmax and termination remain OPEN. One failed/capped tree only
-rejects this frozen practical attempt. It does not refute D10 or argmax.
+For every derived rectangle B=[al,ah]x[bl,bh], empty iff al+bl>1;
+equality retains the tangent singleton. For its nonempty P=B intersect T,
+lo=al+bl, hi=min(ah+bh,1). All four raw rectangle vertices are evaluated
+for S after independent canonicalization, even those outside T. Fold a+b>1
+to(1-a,1-b); enumerate signed even-lattice translations p,q in[-2,2],
+p+q even, retaining nonnegative pairs summing<=1, lexicographic minimum.
+Only S input folds; geometry and rho never fold. Checker cache key includes
+n, canonical exact rational turns and registered FREEZE identity.
 
-## Distinct arithmetic and input contract
+Exact upper U=max(vertex uppers)+(34*pi_hi^2/8)*(width_a^2+
+(512/513)^2*width_b^2). FAR requires U<L. All-actually-near may use
+U-1/32<L only if2*pi_hi*hi<=1. Otherwise near outer proxy nonempty iff
+lo<=1/(2*pi_lo), far outer proxy nonempty iff hi>=1/(2*pi_hi), both closed;
+require U-1/32<L for nonempty near and U<L for nonempty far. These outer
+proxies cover their corresponding actual regions; both tests retain cut
+and edge tangencies. Corner premise supplies the other actual-corner case.
+All comparisons, widths and endpoint conversions in checker are Fraction.
 
-Producer: unchanged effective-2/code/phase_probe.c phase_s ONLY, floating
-point. Call phase_s(512,pi*a,pi*b); its phase_g uses corrected coefficient
-one and finite sine-ratio collision continuation. All FLOAT values,
-pruning guesses and tree selection are heuristic. Never call phase_lambda,
-old box derivatives or native global-exclusion modes. A fresh C11 Arb
-checker does not import producer code, values, upper fields or flags.
+## Arithmetic separation and compositional dependencies
 
-Checker: unchanged cheap_rows_C11/point.cpp c07_point(512,a_str,b_str,
-out[3],counts[6]) with canonical rational turns, not physical inward turns.
-LP64 ABI must be checked. 0<=a,b and a+b<=1 are checked BEFORE the call;
-exact n integer512 is fixed. Bounded canonical rational strings (<=256
-characters) are required. Every nonzero return, nonfinite/reversed output,
-root/sign/partial failure or unsupported input terminates the first run.
-ARF_RND_FLOOR lower and ARF_RND_CEIL upper binary64 are converted with
-Fraction.from_float, NEVER from decimal strings or midpoint/radius.
-The full C11 partial ball including every tail is already inside the point
-result. Counters are recorded honestly. The out[2] radius is diagnostic.
+FLOAT producer uses unchanged effective-2 phase_probe.c phase_s POINTVALUES
+ONLY via new extern-C linkage wrapper. It uses math.pi*float(canonical turn),
+float conservative heuristic inequalities, deterministic longest-side
+midpoint split (ties axis0), depth-first left then right. All FLOAT pruning
+is heuristic; neither FLOAT values nor acceptance flags reach checker.
 
-Raw rectangle vertices are in[0,1]^2. Above a+b=1 fold to(1-a,1-b).
-Then enumerate exact signed even-lattice translations p,q in[-2,2],
-p+q even, retaining nonnegative pairs summing<=1 and choosing the
-lexicographic minimum. D10 proves closed-edge consistency. Cache keys
-contain degree, canonical rationals AND source/arithmetic identity; only S
-inputs fold, never the box, rho, physical center or corner geometry.
-Producer can conservatively use a less efficient rational cache; checker
-independently canonicalizes and counts its actual distinct vertices.
+Fresh checker uses unchanged cheap_rows_C11/point.cpp c07_point only,
+compiled by unchanged D07 build.py with only LOCAL output namespace override.
+Full included D07 point/controls and C11 point/partial source scope is frozen.
+D07 native lambda/reference functions are compiled but never called.
+LP64 and8-byte double are checked. Guard exact input n512 and a,b>=0,
+a+b<=1, bounded canonical rational strings<=256 before C call. Nonzero return,
+nonfinite/reversed endpoints or negative radius stop. Binary64 ARF floor/ceil
+endpoints become Fraction.from_float through unchanged D09 endpoint_record;
+no decimal parsing or midpoint/radius replacement. Complete C11 partial
+balls already include tails. Counts and raw hex outputs retained before
+validation or completed-call cost stop.
 
-## Certificate and exact tree reconstruction
+Immutable essential repository evidence/d09-threepoint.json (SHA
+34553e6d91dc77285f1bbb277a0f519c5a8a5da5f27a8f43501c7caf13631509)
+is an accepted compositional computational premise, with separate accepted
+fresh replay/theorem application reviewed by root. This run does not rerun
+that premise or require old local raw/binary files; it never loads old
+binaries. Verify receipt degree/API/actual physical turns, exact endpoint
+hex identity, M34, primary a*=1/4,b*=3/16, pi_lo*a*,pi_lo*b*>=1/2, and
+recompute u'=1/32,v'=9/512, losses and
+q=min(dx/u',dy/v',dxy/(u'+v')) > (34*pi_hi^4/6)*max(u',(512/513)^4*v').
+Retained L is the certified corner lower. Prose is passive provenance,
+not runtime hash-pinned evidence. SOURCES freezes all imported code/data.
 
-UTF-8 JSON document has EXACT keys format,n,tree with format D11-tree-v1,
-integer n512. A leaf has exactly {"leaf":true}. An internal node has
-EXACT keys axis,at,left,right: integer axis0/1; canonical rational at;
-both children. Root rectangle[0,1]^2. Split is strictly interior in the
-selected coordinate, so each step has positive progress. Checker derives
-the two child rectangles itself and recursively visits both; no submitted
-rectangle, leaf ID, bound or success class is trusted. Tree depth<=64,
-visited nodes<=2048, canonical C11 vertices<=384. Missing/pending/extra
-fields and malformed/duplicate JSON keys reject. The eventual JSON loader
-must reject duplicate object keys, oversized input, aliases and recursion
-exhaustion before traversal. Current traversal has no file loader.
-Complete closed child unions cover root. Clip each derived leaf B to T.
-Empty iff al+bl>1; equality remains a singleton and requires checking.
-This verifies coverage without arrangement sampling or area arithmetic.
+## Strict complete certificate
 
-For nonempty P=B intersect T, min_P(a+b)=al+bl and
-max_P(a+b)=min(ah+bh,1). Thus QN nonempty iff min<=1/(2*pi_lo), and
-QF nonempty iff max>=1/(2*pi_hi). These closed tests retain tangencies.
-Every nonempty leaf requests all four enclosing-rectangle S vertex uppers,
-canonicalized even when a raw vertex lies outside T. Use the conservative
-D10(6) upper
+Certificate JSON EXACT keys format,n,preorder; format D11-midpoint-v1,
+integer n512 (bool rejected). Preorder '.' is leaf, 'a'/'b' is internal
+midpoint split on that axis followed by left/right full subtrees. <=2048
+characters/visited nodes, depth<=64, certificate<=16384 bytes. Decoder
+independently derives root[0,1]^2 and every child rectangle. Missing siblings,
+unknown tokens, trailing suffixes, pending markers, extra fields and depth
+fail. Internal strict-interior midpoint gives positive progress and complete
+closed child union. Internal checker also rejects tree object aliases,
+noncanonical/reversed rational cuts, wrong axis, nonfinite/negative oracle
+values, invalid degree, missing/extra keys. JSON loader rejects duplicate
+keys, NaN/Infinity, invalid UTF-8, recursive-parser exhaustion and oversize.
+No submitted rectangle, leaf mode, upper or cache is trusted. Checker
+independently regenerates every fresh Arb enclosure from source and tree.
 
- U=max(four uppers)+(34*pi_hi^2/8)[width_a^2+(512/513)^2 width_b^2].
+Both stages cap384 distinct canonical vertices,2048 visited nodes, depth64.
+Producer retains raw pending tree and FLOAT cache off Git on first stop;
+only COMPLETE producer produces essential compact certificate. Checker
+runs in a different fresh process and fresh Arb build after supervisor
+verifies producer COMPLETE, zero return, exact accounting, unchanged inputs.
+Compact certificate+short summary normally<16KiB each; raw caches, maps,
+build manifests and checkpoints remain local, never split to evade limits.
+A later independent fresh full native rerun is required for computer-proof
+status; this primary adapter acceptance alone is not a global proof claim.
 
-All checker operations/comparisons use Fraction. FAR accepts U<L.
-Otherwise an all-actually-near leaf may accept U-1/32<L only with
-2*pi_hi*max_P(a+b)<=1 and accepted actual-corner premise. Otherwise
-SPLIT requires U-1/32<L if QN nonempty, and U<L if QF nonempty.
-The outer near proxy never authorizes defect subtraction outside actual
-rho<=1/2. Floor is for EVERY admissible noncorner physical odd center,
-including physical edges; actual corners use D09 only. Shared cut is closed
-and both nonempty proxy tests are enforced. The uniform upper may be too
-coarse to yield a practical certificate under384vertices; no sharper
-quadratic maximizer or precision/degree change is an automatic rescue.
+## Once-only resource and provenance gate
 
-## Independent corner premise and dependency closure
+Prospective command (UNEXECUTED; source review and root release REQUIRED):
 
-Use immutable evidence/d09-threepoint.json as computational input,
-validated by its separately accepted fresh replay and patch application.
-Source integration must pin that data identity and its recorded primary
-raw identities; reviews/theorems remain passive provenance, not runtime
-prose pins. Recompute from exact rationals its L=corner lower and the three
-ACTUAL lambda upper losses. Enforce primary a*=1/4,b*=3/16, u'=1/32,
-v'=9/512, pi_lo*a*,pi_lo*b*>=1/2, and
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/controller.py --run-once
 
- q=min(dx/u',dy/v',dxy/(u'+v'))
-   > (34*pi_hi^4/6)*max(u',(512/513)^4*v').
+Exclusive mkdir of fixed local-output/.../post-audit-D11/point-cover is
+the no-retry lock, including failed preregistration. Preregistration and
+stage entry files use exclusive creation; checkpoints atomically replace
+within that single run; first failure status is retained. Never delete an
+output directory to retry. No precision/source/cap/strategy rescue.
+Producer<=60CPU including build, checker<=300CPU including build/bootstrap,
+whole process tree<=398CPU plus reserved2CPU shared author/auditor pure
+controls (total400). Linux subreaper supervisor verifies activation,
+monitors inclusive live process-group CPU plus waited children, safety390,
+kills entire group and wait4 reaps all descendants after each stage.
+Unreaped descendants or actual stage-budget excess preclude acceptance.
+Worker native pre-call reserve7CPU may stop early. Completed call>20CPU
+stops after full output/checkpoint retention; unfinished25CPU kills.
+Wall producer180s/checker900s/whole1200s. Worker and supervisor RLIMIT_CPU
+backstop process CPU; inclusive monitor enforces aggregate budget and final
+records state exact accounting through the sample; final tiny writes remain
+bounded by parent RLIMIT. All helpers/compiler descendants count. No run
+occurs on import; standalone producer/checker CLIs refuse native execution.
 
-The current pure helper recomputes this inequality only. It does NOT
-validate evidence identities, raw endpoint hex provenance, native point
-contract or accepted review authority, so cannot establish the premise
-alone. Source adapter must explicitly complete all those obligations.
-A fresh C11(0,0) corner lower can replace L for the cover comparisons;
-it cannot weaken the retained successful patch losses by silently changing
-its evidence. Using the retained certified L is allowed once its complete
-accepted computational dependency is resolved. Native closure includes
-accepted C11 point.cpp/partial.cpp, compiler, actual preprocessed TU,
-all headers and linked and ACTUALLY LOADED libraries before/after.
-D07 build.py may be imported unchanged with only LOCAL output redirected;
-it compiles controls.cpp including unchanged C11 and unused D07 APIs.
-That full build scope, including D07 point.cpp, is included prospectively.
-No D07 actual-lambda native call belongs to D11.
+Fresh build records compiler/cc1plus/as/ld and linked closure, every header,
+preprocessed TU, source snapshots and binary. Recheck bytes at exit plus
+all actual mapped file identities before/after native use (including Python
+and native binary), not only ldd predictions. Registered FREEZE equality
+and code/data hashes enforced at worker start/end and supervisor boundary.
+No hermeticity or adversarial concurrent mutation resistance is claimed.
 
-## Frozen deterministic producer and caps
+Clean cloud prerequisite: Linux x86_64 LP64, Python3, c++, binutils, libc,
+GMP and MPFR runtime/development system support. Pinned repository
+code/phase_checker/setup.py downloads official hash-verified Debian FLINT
+and MPFR development packages and extracts without root. If fixed INC/FLINT
+paths are absent, checker invokes this frozen bootstrap once inside its
+300CPU/wall budget; failure is terminal. Runtime/network skill instructions
+must be read before any network-enabled release. No old local proof artifact
+is needed; package hashes and fresh complete build/map closure are recorded.
 
-Producer starts root[0,1]^2, visits depth-first left before right, bisects
-longest rational side at its midpoint (ties axis0), and tries the same
-conservative uniform leaf inequalities in FLOAT against certified L
-converted as a heuristic corner guess. No search over degree, M, floor,
-precision, cut, node caps or strategies. It may use <=384 rational vertex
-keys and <=2048visited nodes, depth64. No retry or alternate tree strategy.
-If caps prevent completion, output immutable failure and retained partial
-tree/cache/pending path; no checker call on an incomplete tree.
+Optional synthetic control command (UNEXECUTED; same source gate):
 
-Prospective one-shot CPU cap400 includes all descendants, compilers,
-helpers, supervisor, pure controls and finalization. Producer<=60CPU
-INCLUDING its compile; exact checker<=300CPU INCLUDING fresh Arb compile.
-The remaining40CPU includes <=2CPU pure geometry controls, metadata and
-supervision; it is NOT available to extend a failed stage. Native first
-completed call>20CPU stops after retaining complete output/ledger;
-unfinished call25CPU kills. All supervisor process groups use Linux
-subreaper and wait/reap descendants before exact inclusive accounting;
-unreaped descendants mean accounting not exact and no PASS. Wall caps
-producer180s/checker900s/whole1200s are prospective. Preserve direct
-stdout/stderr/checkpoints atomically, output exclusive creation, default
-refuse overwrite, first failure immutable, no automatic rerun. The next
-implementation must freeze actual command, timeout policy, compiler/API
-controls, full closure and complete final-accounting machinery before
-root source gate. No numerical execution is authorized by this document.
+    python3 topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/controls.py --run-once
 
-## Preparation blockers and review boundary
-
-producer.py implements only callback-driven FLOAT deterministic tree
-selection. checker.py implements independent rational canonicalization,
-corner-loss recomputation and tree/leaf predicate diagnostics. Public CLIs
-always refuse execution. Native callbacks intentionally raise. There is
-NO mathematical acceptance gate or working run command in this freeze.
-
-Still required before source release: exclusive-output/no-retry runner;
-bounded duplicate-rejecting parser; fresh C/Arb compiler/ABI adapters;
-finite outward conversion; source/runtime identity enforcement and
-registered-FREEZE equality start/end; resolved accepted D09 witness input
-closure; atomic pending/completed ledgers; subreaper resource supervisor;
-exact final evidence; independent source review. The pure callback helper
-must never be advertised as the certificate checker without these.
-
-Preregistered optional pure tests (NOT yet run), <=2CPU aggregate within400:
-malformed rationals/tree/duplicate keys, missing child, wrong axis/n,
-zero-progress split, tangent singleton outside misclassification,
-closed-edge canonical equivalences, far/near cut equality, negative gap,
-pi^2-vs-pi^4 witness mutation, false oracle/nonfinite output, vertex/node
-caps and incomplete-run rejection. Synthetic oracles are diagnostics only.
+Exclusive separate output; hard1CPU per invocation, total shared author and
+auditor reserve2 within400. Fixed output permits one author/primary copy;
+independent clean checkout may use the other1CPU. Tests are synthetic Python
+only: rational/parser/certificate negatives, edge fold, complete tree union,
+tangent retention, invalid oracle, strict margin, alias/axis/progress.
+They establish no enclosure, throughput or mathematical cover. No controls
+have run. Sources are ready for distinct source review, not execution release.
