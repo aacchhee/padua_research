@@ -101,6 +101,10 @@ Current:37/40complete(D01–D37),D38active. Finite2–41,512,1023 andanalyticEVE
 
 Current:38/40complete(D01–D38),D39freezeactive. Exactremaining974degrees43–62,65–158,161–510,513–1022OPEN. Analyticonset1024unchanged, finite1023proved. No packprepared.
 
-| D40 | ACTIVE | Final auditable Syvert2 pack | StartsONLYafterD39researchfreeze; unchangedD36engine, small9known/large974open/all983cases; separateproduction/freshphases, no nativepackrunbeforeClaudeinterimaudit. |
+| D40 | PAUSED | Final auditable Syvert2 pack | Began afterD39 freeze, then AC authorized15moreanalyticrounds; source/reference drafts preserved, no builder/tests/native/remote execution; reassess only after extension ends. |
 
 Current39/40researchroundscomplete; D40operationaldeliveryactive. Gapstill974; noall-degreeclaim.
+
+## AC analytic extension E01–E15
+
+NEW15coordinatedanalyticroundsauthorized2026-11-06 afterD39. E01ACTIVEpaper-onlybottleneck/noveltyassessment; E02–E15unallocatedpendingresults. Completedoldresearch39rounds; D40packpaused/incomplete. Startinganalyticboundary1024; finiteknown2–42,63–64,159–160,511–512,1023; residual974unchanged. No numericaljob/thresholdscanreleased.
