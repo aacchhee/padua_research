@@ -1,7 +1,7 @@
 # Span drift on genuinely non-product families: log
 
 - Branch: `codex/padua-lanczos-nonproduct-20261105` · Base: main `be9a831` (PR #29 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (readiness check next) · Next: `Claude (Opus 5.5 high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/07-readiness.md](handoffs/07-readiness.md)
+- Stage: PR — agent preparation complete; READY for AC's merge decision · Open handoff: none (last handoff [07](handoffs/07-readiness.md) done)
 - Permanent reservation: [ALLOCATIONS](ALLOCATIONS.md), first publication `6b31356`: T472–501, N178–180, IDEA570–589, LIT630–632. Assigned T472–494, N178, IDEA570–584, LIT630; unused gaps remain permanent.
 - Claims: P3 all-degree non-affine-product weight separation and uniform sufficient radius; P5 polynomial Padua capacities; P4 model/transfer lemmas and scoped covariance obstruction. Final IDs PD-T472–494, PD-N178, IDEA-570–584 and LIT-630 ([ALLOCATIONS](ALLOCATIONS.md)); see [report](report.md).
 
@@ -559,3 +559,14 @@ records its fresh reproductions and their scope.
   high readiness check: registry application, B1 and fresh reservation union.
   There is no assigned multi-PR merge order or batch integration in this
   single-topic preparation; no peer approval or merge sequence is inferred.
+
+## 2026-11-06 — Claude readiness 01; agent preparation complete
+
+- Claude, configured claude-opus-5-5 high. Rules read at `54b01f1`; input `418b816`.
+- [Readiness 01](readiness-01.md): **READY**.
+  - The registry diff only adds lines and applies the audited content faithfully.
+  - B1 is fixed.
+  - The fresh reservation union is clean. At main `be9a831`, PR27 `8dc1521`, PR28 `4e87fc0` and PR30 `54b01f1`, the peer maxima are T471, N177, IDEA569 and LIT629. All 29 PRs were listed; none is closed without merging. There are no collisions.
+- Three MINOR auditor fixes (wording, a table and stale process text) are in `0f2d44e`, listed in the readiness record.
+- Handoff 07 is done in `ee280e6`. No assigned agent work remains, so there is no open handoff.
+- Decision requested from AC: squash-merge PR #30. Refresh the reservation union first if main or a peer ledger changes before the merge.

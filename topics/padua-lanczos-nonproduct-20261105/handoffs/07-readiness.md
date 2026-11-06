@@ -1,6 +1,6 @@
 # Handoff07 — registry diff and reservation readiness check
 
-- Status: open
+- Status: done in ee280e6cf548747b87f99c46251abc12f27f5ac3
 - Previous handoff: [06-preparation.md](06-preparation.md)
 - Next agent / model / effort: Claude, Opus 5.5 high
 - Role: readiness auditor and topic orchestrator
