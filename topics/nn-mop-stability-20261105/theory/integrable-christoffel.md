@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-D4-01 — finite common Christoffel transport
+# PD-T443 — finite common Christoffel transport
 
 ID kind: PD-T (provisional allocation).
 Aliases: common spectral shift; NN Darboux update; Christoffel ratio transport.
@@ -86,3 +86,9 @@ Input-sensitive forward/backward error bounds; a useful starting array obtainabl
 ## History
 
 2026-11-05, Codex dispatched gpt-6.1-sol xhigh; source 823cf6a4, before publication round 1. Known formula rederived with finite boundary; no theorem of numerical stability attached.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D4-01` → `PD-T443`.

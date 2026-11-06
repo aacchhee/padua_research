@@ -3,9 +3,9 @@
 2026-11-05, Codex D7 developer, dispatched gpt-6.1-sol medium.
 Current response check: 2026-11-06; see the dated addendum below.
 Rules/source `823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1`.
-Status: **BLOCKED — source bytes unavailable; no external comparison run**.
+Current status (2026-11-06, after supplied-source run and Codex audit): **G5 reproduction gate PASS (one configuration, Octave 8.4, to the decade); large-N variation measured; topic-metric comparison not yet run**. Earlier access/runtime observations below are historical, superseded by the current addendum.
 
-## Exact external source identity
+## Original requested external source identity (historical)
 
 - Requested repository: [Leuven IEP-MOP](https://gitlab.kuleuven.be/numa/public/IEP-MOP).
 - Alternative located through the [publisher's supplementary-material section](https://epubs.siam.org/doi/10.1137/25M1770965): [supp_materials.zip](https://epubs.siam.org/doi/suppl/10.1137/25M1770965/suppl_file/supp_materials.zip).
@@ -47,7 +47,7 @@ application/zip` (400). Searches for IEP_CORE GitHub, IEP_KRYLREORTH
 nodes_weights and experiment_Hahn_Kravchuk.m found no usable mirror.
 That bounded search does not establish that no mirror exists.
 
-## Runtime feasibility
+## Original runtime feasibility (historical)
 
 `command -v octave` and `command -v octave-cli` found neither executable;
 `dpkg-query -W octave octave-common` found no installed packages.
@@ -59,7 +59,7 @@ the coordinator deferred installation. It remains PENDING, not proved
 impossible. Debian mirror connectivity works with the enabled network route;
 a later authorised local package setup may be feasible.
 
-## G5 reproduction ledger
+## Original G5 reproduction ledger (historical)
 
 No source was executed; no paper configuration or accuracy was reproduced.
 G5 is **BLOCKED**, neither PASS nor a numerical mismatch/KILL. Octave support
@@ -76,7 +76,7 @@ paper's accuracy level and consider conversion to the whole NN triangle.
 A lone step-line recurrence must not be said to determine all NN data without
 the extra shifts/boundary data required by PD-T289/FHV.
 
-## Runs needed (not executed)
+## Originally proposed retrieval steps (historical)
 
 Once the same URLs are policy-authorised and reachable, suggested fetch:
 
@@ -89,7 +89,7 @@ unzip -l /tmp/nn-mop-stability-supp_materials.zip
 An exact Octave driver command cannot honestly be fixed until the archive is
 read. Do not invent entry-point arguments or claim a completed compatibility test.
 
-## 2026-11-06 response check — current runtime remains blocked
+## 2026-11-06 response access check — historical source-retrieval block
 
 AC's retrieval and execution authorization is recorded once in
 [LOG.md](LOG.md) (the
@@ -124,3 +124,13 @@ was executed. The original paper-configuration-first gate remains in force.
 Exact commands, observations, receipt hashes and remaining work are in
 [response-01/g5-access.md](response-01/g5-access.md). No third-party source,
 text or PDF is added to Git, and no storage cleanup was performed.
+
+## 2026-11-06 supplied archive, execution and independent audit
+
+**G5 reproduction gate PASS (one configuration, Octave 8.4, to the decade); large-N variation measured; topic-metric comparison not yet run.**
+
+AC supplied IEP-MOP-main.zip:1,020,330 bytes, SHA256`cdd0e98d2b411f24cfcecb49d83e16f9d50a7622a0d4f0d3eb17eb334a405145`, MIT licence. Its Git revision is unknown; the archive hash identifies the exact supplied bytes, not a verified remote branch. It contains27 regular files/33 entries including directories. Complete per-file identity inventory: [audit source inventory](audit-g5-01/source-inventory.json). Executed source pins and the paper-reference source identities are in [development receipt](g5-run/README.md); third-party source/data remain outside Git.
+
+Claude's headless Octave8.4 driver preserves the original experiment formulas, running both families over paperN5..30 (N+1 nodes). The selected Krawtchouk paperN10 IEP_CORE case gives1.772147e-9 against reported6.851191e-10, log10ratio+0.413: PASS under the fixed decade rule. This is a step-line matrix2-norm measurement, distinct from this topic's NN fieldwise metric. No all-size/platform reproduction or stable algorithm is established.
+
+[Independent Codex audit](audit-g5-01.md) inspected every executed source file and reran all52 cases with isolated Octave9.4/reference BLAS on Debian13: gate2.691214553706643e-10, log10ratio-0.4058, PASS; full tables differ by platform. The auditor cannot fetch the arXiv source bundle (CONNECT403), so direct paper-data/hash verification and cmp.py against that bundle remain review only/unresolved. No source-access block is inferred for the supplied archive. No contact/bypass/cleanup. Remaining work: the separately scoped topic-metric comparison with the required path/boundary conversion; MATLAB/Advanpix and exact closed-form-reference checks are not claimed.

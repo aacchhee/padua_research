@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-D1-03 — full-grid NN and monic step-line conditioning
+# PD-T434 — full-grid NN and monic step-line conditioning
 
 ID kind: PD-T. Aliases: analytic AD table; D1 rounds 1 and 2.
 Split from: D1 sharp all-N growth target. Split into: none.
@@ -99,3 +99,9 @@ The eight-point round-1 table was checkpointed at f75964b before authorization
 of the full integer round 2. Main derivative code remained frozen across both.
 
 Parent unresolved target: [conditioning-growth-target.md](conditioning-growth-target.md).
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D1-03` → `PD-T434`.

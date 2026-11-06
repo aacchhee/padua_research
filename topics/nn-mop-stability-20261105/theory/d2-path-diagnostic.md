@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-D2-02 — alternating-path spectral diagnostic
+# PD-T439 — alternating-path spectral diagnostic
 
 ID kind: PD-T. Aliases: fixed-step-line recovery; anchored path diagnostic.
 Split from: none. Split into: none. Overall status: **MEASURED**.
@@ -95,3 +95,9 @@ has not been transferred to cold storage.
 2026-11-05, Codex dispatched gpt-6.1-sol medium; input/rules
 823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1. Added finite diagnostic with explicit
 path/full-array and positivity qualifications.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D2-02` → `PD-T439`.

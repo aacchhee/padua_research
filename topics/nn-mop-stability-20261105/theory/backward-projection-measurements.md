@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-33 — full common-data stationary fits
+# PD-T442 — full common-data stationary fits
 
 ## Binary64 provenance — response dated 2026-11-06
 
@@ -14,7 +14,9 @@ N4 nodeqr eta_c = 30.78u, still <100u. N4 native mixed pairs remain below
 or retuned; historical tables and their receipt identities are preserved.
 
 ID kind: PD-T. Aliases: whole-array Gauss–Newton shadow witness; positive
-common-data fit. Split from: none. Split into: none.
+common-data fit. Split from: [stable-solver-target.md](stable-solver-target.md), as a separate
+supporting, scoped-negative or measured result, not a solved target case.
+Split into: none.
 
 ## Statement and status
 
@@ -56,7 +58,7 @@ also emits sqrt(Q(q)). Minimizing Q is not minimizing eta_c, eta_d or a
 combined mixed objective. The result is a feasible pair even when the
 optimizer does not terminate at its numerical stationarity threshold.
 Strict beta(y;p0)=inf{||p-p0||:F(p)=y} is unchanged. The exact dyadic
-obstruction in PD-N?nn-mop-stability-codex-31 is not repaired by relabeling
+obstruction in PD-N163 is not repaired by relabeling
 eta_d as beta.
 
 ## Algorithm actually executed
@@ -86,14 +88,17 @@ stationarity bound for the rational witness.
 
 ## Results and precision checks
 
-u=2^-53. All12 fits meet the stated numerical stationarity threshold at
+u=2^-53. Historical Nov-5 receipts, whose temporary bytes are now lost,
+reported that all12 fits met the stated numerical stationarity threshold at
 160dps. Their input perturbation, eta_c and sqrt(Q) reported binary64
-values agree exactly between the100/160dps runs. This is a numerical
+values agreed exactly between the100/160dps runs. This was a numerical
 precision check, not an interval enclosure. Three100dps fits stopped on
 line-search precision limits (KrawN8 C4, HahnN8 C4 and nodeqr); those
-failures are retained in their raw histories. The160dps runs took10.19s
+failures were recorded in those raw histories. The160dps runs took10.19s
 and19.29s for Kraw/Hahn in the final concurrent rerun; timing is not a
-cost claim.
+cost claim. These optimizer flags/history and the100dps runs are historical
+receipt claims only: the committed response reference omits them and cannot
+independently establish convergence or100/160dps agreement.
 
 | Family | N | Method | eta_d/u | eta_c/u | sqrt(Q(q)) |
 |---|---:|---|---:|---:|---:|
@@ -110,10 +115,11 @@ cost claim.
 | Hahn | 8 | LU | 3880.88 | 14956.2 | 3.81816e-12 |
 | Hahn | 8 | nodeqr | 8215.55 | 48357.9 | 1.13073e-11 |
 
-The normalized last-iterate stationarity values at160dps range from
+The lost Nov-5 receipts reported normalized last-iterate stationarity
+values at160dps ranging from
 2.63e-64 to7.79e-56. No Hessian positivity, interval solve, global
 minimum, nearest-point certification or rounding-error theorem is claimed.
-The analytic local theorem in PD-T?nn-mop-stability-codex-31 is separate
+The analytic local theorem in PD-T441 is separate
 and supplies no certified radius containing these numerical iterates.
 
 ## Executed checks, provenance and scope
@@ -145,8 +151,12 @@ for the actual rational witness. Across all12 cases the latter ranges
 from6.60e-57 to3.64e-52. These output-stage changes preserve every fitted
 rational input hash and pair metric from the first round2 execution.
 
-Receipt: [independent-checks-02.md](../independent-checks-02.md), section
-"Full-data numerical projection follow-up". Checker
+Historical Nov-5 receipt and command, with source at commit
+`4e87fc0a771fc13c6d5791f0f4c2e746e4eb9a71`:
+[independent-checks-02.md](../independent-checks-02.md), section
+"Full-data numerical projection follow-up". The checker at this reused path
+has since changed; current identities are in
+[evidence-manifest.json](../evidence-manifest.json). Historical checker
 `code/independent_check_followup_projection.py` SHA256
 `3d2ae221d2d641f3f6fcf94cd25362589235bb89e00ecdebd7c89ae53deebc9c`.
 Command from root:
@@ -189,3 +199,11 @@ script implements candidate C's already recorded full-image fit.
 Parent unresolved target: [stable-solver-target.md](stable-solver-target.md); supporting results do not establish its general stability conclusion.
 
 Response M3 reference: [projection-reference.json](../evidence/projection-reference.json) and [reference provenance](../evidence/README.md). This is a new fixed-configuration response run, not recovery of the missing original temporary bytes.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-N?nn-mop-stability-codex-31` → `PD-N163`.
+- `PD-T?nn-mop-stability-codex-31` → `PD-T441`.
+- `PD-T?nn-mop-stability-codex-33` → `PD-T442`.

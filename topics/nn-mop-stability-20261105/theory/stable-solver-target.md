@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-stability-target — general stable NN solver target
+# PD-T449 — general stable NN solver target
 
 ID kind: PD-T. Aliases: original stable-algorithm target; joint backward stability.
 Split from: none; durable home of the original campaign/D3/D5 target.
@@ -50,3 +50,9 @@ previously cited without a durable file. Added for audit-01 MINOR4 on
 is preserved rather than replaced after seeing the counterexample.
 Next unresolved step: a specified native algorithm and a quantified error
 analysis in a declared strict or correction/data model.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-stability-target` → `PD-T449`.

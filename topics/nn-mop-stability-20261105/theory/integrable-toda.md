@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-D4-04 — finite common Toda closure
+# PD-T444 — finite common Toda closure
 
 ID kind: PD-T (provisional allocation).
 Aliases: finite NN exponential flow; common-time multidimensional Toda.
@@ -67,3 +67,9 @@ Error control on the compatible manifold, a useful source state available from t
 ## History
 
 2026-11-05, Codex dispatched gpt-6.1-sol xhigh; source 823cf6a4, round 1. Exact supporting claim split off from the unresolved stable solver.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D4-04` → `PD-T444`.

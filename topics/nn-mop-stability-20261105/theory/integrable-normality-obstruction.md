@@ -1,4 +1,4 @@
-# PD-N?nn-mop-stability-codex-D4-02 — positive common changes can cross normality
+# PD-N164 — positive common changes can cross normality
 
 ID kind: PD-N (provisional allocation).
 Aliases: exterior Christoffel normality trap; positive Toda path crossing.
@@ -71,3 +71,9 @@ Quantitative normality margins or certified monitored paths for useful target fa
 ## History
 
 2026-11-05, Codex dispatched gpt-6.1-sol xhigh; source 823cf6a4, round 1. The shortcut is separated from the still viable local algebra.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-N?nn-mop-stability-codex-D4-02` → `PD-N164`.

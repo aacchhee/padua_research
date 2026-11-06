@@ -1,4 +1,4 @@
-# PD-N?nn-mop-stability-codex-D4-05 — predivide-C4-restore fails the round-1 gate
+# PD-N166 — predivide-C4-restore fails the round-1 gate
 
 ID kind: PD-N (provisional allocation).
 Aliases: D4-C1a; one common Geronimus preconditioner; c=-2 restore.
@@ -64,3 +64,9 @@ Independent replay; a useful non-C4 source-array construction; input-aware shift
 ## History
 
 2026-11-05, Codex dispatched gpt-6.1-sol xhigh, source 823cf6a4, round 1. The candidate was communicated to coordinator/native-backward worker before floating tests; this durable failure record follows the run. Exact algebra remains separately PROVED.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-N?nn-mop-stability-codex-D4-05` → `PD-N166`.

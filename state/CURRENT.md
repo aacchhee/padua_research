@@ -248,3 +248,13 @@ newly scheduled campaign.
 [Results](../results/padua-lanczos-nonproduct-20261105.md),
 [accepted audit01](../topics/padua-lanczos-nonproduct-20261105/audit-01.md),
 [focused audit02](../topics/padua-lanczos-nonproduct-20261105/audit-02.md).
+
+## NN MOP conditioning and stability — scoped records
+
+[Results](../results/nn-mop-stability-20261105.md) and [theory](../topics/nn-mop-stability-20261105/theory/conditioning-growth-target.md) separate intrinsic conditioning from finite algorithm errors. PD-T432/433/435/436/437 prove the local derivative/norm, coarse all-N upper bound, generic exact normality criterion, finite Hahn N4–64 normality and exponential Krawtchouk lower bound (base at least5+2sqrt(6)). PD-N162 refutes the single-inverse-divisor proximity law only in its fixed-N binomial scope. PD-T434 is the measured full-grid condition table; PD-T438/439 isolate finite post-marginal effects and path-only diagnostics.
+
+PD-T440 records finite native LU/nodeqr gains and larger-size losses; PD-T441 proves local actual-image geometry, PD-N163 gives a raw dyadic exact-realization obstruction, and PD-T442 retains feasible correction/data pairs below100u at N4 but above at N8. G4 is never PASS; no implemented algorithm has a general weak/joint backward-stability theorem. PD-T448/449 retain the sharp matching growth and general stable-solver targets OPEN, rather than PARTIAL from supporting results.
+
+Known finite Christoffel/Toda algebra is PROVED in PD-T443/444. PD-N164/165/166 retain the scoped normality safeguard, fixed-orbit reachability and fixed preconditioner failures. PD-T445 is only a positive graph mixed-test encoding; PD-N167/168 retain literal graph/no-deflation two-sheet obstructions. Full bivariate transfer and its copy/pair sub-target remain OPEN in PD-T447/446. IDEA-378 and the five unattempted alternatives remain deferred; IDEA-090’s block-Krylov-angle mechanism remains unimplemented.
+
+G5 reproduction gate PASS for the selected Octave8.4 configuration to one decade, independently corroborated with Octave9.4; large-N variation is measured. Direct paper-table/hash verification by the Codex executor remains unresolved and attributed to Claude’s source receipt; the topic NN metric comparison has not been run. A passing reproduction supplies no stability theorem. Completed [audit01](../topics/nn-mop-stability-20261105/audit-01.md), [audit02](../topics/nn-mop-stability-20261105/audit-02.md) and [G5 audit](../topics/nn-mop-stability-20261105/audit-g5-01.md) preserve the evidence and coverage limits.

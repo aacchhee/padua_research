@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-D1-01 — local derivative and induced condition numbers
+# PD-T432 — local derivative and induced condition numbers
 
 ID kind: PD-T. Aliases: NN Jacobian; mixed componentwise-input conditioning;
 fieldwise coefficient sup metric; monic step-line derivative.
@@ -46,7 +46,7 @@ coefficient with nonzero sensitivity makes it infinite. For the Krawtchouk
 p2=1/2 inputs, b2_(0,0)=0 and its weight derivative is nonzero, so this
 full-output condition is infinite. Hahn also has an infinite fully
 componentwise output condition: its symmetric first weight gives zero b1
-on every marginal-axis site, with nonzero sensitivity already at(0,0).
+on every first-axis site (n,0), with nonzero sensitivity already at(0,0).
 Krawtchouk has sensitive interior zeros too, for example b1_(1,1)=0 atN4.
 Floating values close to zero cannot
 be used as substitutes for an exact zero classification.
@@ -163,3 +163,9 @@ the effect of alternate diagonal scaling of the step-line output.
 2026-11-05: D1 Codex developer, requested gpt-6.1-sol xhigh. Rules and inputs
 823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1; base b4d292eea5eed373002506d5e16a3761bd7ae10e.
 The local theorem is split from the growth-law target, which remains OPEN.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D1-01` → `PD-T432`.

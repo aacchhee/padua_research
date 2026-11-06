@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-D2-01 — finite C4 stage isolation
+# PD-T438 — finite C4 stage isolation
 
 ID kind: PD-T. Aliases: stable-marginal comparator; oracle-marginal isolation.
 Split from: none. Split into: none. Overall status: **MEASURED**.
@@ -97,3 +97,9 @@ transfer pending AC's cold-storage destination.
 823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1. Initial transport added one final LF
 to predecessor inputs; coordinator restored pinned bytes before final runs.
 This changed source hashes but no scientific code or numerical results.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D2-01` → `PD-T438`.

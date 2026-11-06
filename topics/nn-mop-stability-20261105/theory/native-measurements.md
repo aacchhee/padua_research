@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-32 — native direct-solve comparison
+# PD-T440 — native direct-solve comparison
 
 ## Binary64 provenance — response dated 2026-11-06
 
@@ -14,7 +14,9 @@ N4 nodeqr eta_c = 30.78u, still <100u. N4 native mixed pairs remain below
 or retuned; historical tables and their receipt identities are preserved.
 
 ID kind: PD-T. Aliases: orthobasis whole-triangle bake-off; node-space QR.
-Split from: none. Split into: none.
+Split from: [stable-solver-target.md](stable-solver-target.md), as a separate
+supporting, scoped-negative or measured result, not a solved target case.
+Split into: none.
 
 ## Statement and status
 
@@ -98,3 +100,9 @@ Later additions only added warning counts, exact N4 check, input identities
 and the separately pre-registered B factorization.
 
 Parent unresolved target: [stable-solver-target.md](stable-solver-target.md); supporting results do not establish its general stability conclusion.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-32` → `PD-T440`.

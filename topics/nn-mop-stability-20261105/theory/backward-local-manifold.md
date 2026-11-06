@@ -1,8 +1,10 @@
-# PD-T?nn-mop-stability-codex-31 — local joint-data NN backward geometry
+# PD-T441 — local joint-data NN backward geometry
 
 ID kind: PD-T. Aliases: common-support compatible image; mass-gauged NN
 embedding; nearest compatible array; projected joint-data backward error.
-Split from: none. Split into: none.
+Split from: [stable-solver-target.md](stable-solver-target.md), as a separate
+supporting, scoped-negative or measured result, not a solved target case.
+Split into: none.
 
 ## Statement
 
@@ -189,3 +191,9 @@ compatibility. The theorem addresses that geometry; its algorithmic
 stability application remains a distinct target.
 
 Parent unresolved target: [stable-solver-target.md](stable-solver-target.md); supporting results do not establish its general stability conclusion.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-31` → `PD-T441`.

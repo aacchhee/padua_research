@@ -225,7 +225,10 @@ Executed exit-0 command, same environment/versions and scope as above:
 python topics/nn-mop-stability-20261105/code/independent_check_followup_projection.py > /tmp/nn-mop-independent-projection-final.json
 ```
 
-Final SHA-256 identities:
+Historical final SHA-256 identities and the preceding command refer to
+source commit `4e87fc0a771fc13c6d5791f0f4c2e746e4eb9a71`. The checker at the
+reused path has since changed; current identities are in
+[evidence-manifest.json](evidence-manifest.json):
 
 | Item | SHA-256 |
 |---|---|

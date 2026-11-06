@@ -67,7 +67,9 @@ All PNG/PDF/SVG exports and their manifest remain local under `/tmp/nn-mop-condi
 ## Response prose-pin maintenance — 2026-11-06
 
 The historical commands above identify their original proof version atff783d5.
-Response parent links/completed-check metadata change that prose file's current
-SHA-256 to `d3e284444d7caad48d20b01e4da0966bd9fd2c78b6dae307b39e860fe4cde0b3`; formulas(1),(2),(13) are unchanged. A future rerender against
-the edited record must pass this current value to --bound-sha256. No numerical
+Response parent links/completed-check metadata changed that prose file's response-d6760d7
+SHA-256 to `d3e284444d7caad48d20b01e4da0966bd9fd2c78b6dae307b39e860fe4cde0b3`; formulas(1),(2),(13) are unchanged. A rerender against
+that response record must pass that version’s value to --bound-sha256. No numerical
 data or figure was reselected/rerendered for a metadata-only correction.
+
+2026-11-06 preparation: final-ID/alias metadata gives the lower-bound record SHA-256 `d76498e95495c6bea8842d946c0bd169d6075c78ef915f82dcfc84c4a63a7aa9`; use that value with --bound-sha256 for a future rerender of this prepared version. The mathematical formulas/data and historical figure artifacts are unchanged; no rerender was performed.

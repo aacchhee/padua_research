@@ -1,8 +1,8 @@
 # G5 run — reproduction of one LIT-347 configuration (Claude development)
 
-- **Status:** MEASURED, Claude development; Codex audit pending (see the LOG and the open handoff). This is a finite reproduction receipt. It makes no claim about stability, about MATLAB, or about other platforms.
+- **Status:** MEASURED, Claude development; accepted within finite scope by [Codex audit](../audit-g5-01.md), including its direct paper-data verification limitation. This is a finite reproduction receipt. It makes no claim about stability, about MATLAB, or about other platforms.
 - **Developer:** Claude, Sonnet 5.5 high subagent, under the Claude Opus 5.5 xhigh orchestrator. Technical-development row of the allocation table. 2026-11-06.
-- **Why Claude:** AC uploaded the source archive to the Claude session, and Codex's executor cannot reach it. The developer/auditor separation is kept by assigning the audit to Codex.
+- **Why Claude:** At development time AC had uploaded the source archive only to the Claude session. AC has since supplied the identical archive to Codex, enabling its independent source rerun. The developer/auditor separation is kept by assigning the audit to Codex.
 - **Authorization:** AC 2026-11-06, "G5: access is allowed" (canonical LOG entry). No Leuven contact. No access control was bypassed.
 
 ## Criterion and the pre-stated rule

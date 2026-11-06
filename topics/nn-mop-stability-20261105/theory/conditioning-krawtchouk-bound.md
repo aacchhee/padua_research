@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-D1-02 — explicit coarse Krawtchouk conditioning bound
+# PD-T433 — explicit coarse Krawtchouk conditioning bound
 
 ID kind: PD-T. Aliases: rational-height NN bound; exponential Chebyshev
 normality; finite all-N conditioning upper bound.
@@ -138,3 +138,9 @@ classification of that unresolved target.
 
 2026-11-05: D1 Codex mathematical developer, gpt-6.1-sol xhigh as allocated;
 rules/input 823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1. No Git operations.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D1-02` → `PD-T433`.

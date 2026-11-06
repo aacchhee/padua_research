@@ -1,7 +1,8 @@
-# PD-T?nn-mop-stability-codex-D6-target — exact positive bivariate NN transfer
+# PD-T447 — exact positive bivariate NN transfer
 
 ID kind: PD-T. Aliases: graph/copies/HP/lattice dictionary; positive transfer.
-Split from: none. Split into: none (graph identity is a supporting result).
+Split from: none. Split into: [dictionary-lifts.md](dictionary-lifts.md),
+the OPEN copy/pair sub-target (graph identity is a supporting result).
 
 ## Statement
 
@@ -77,3 +78,9 @@ is three rounds, not a promise that two more will be useful.
 
 2026-11-05, Codex, gpt-6.1-sol medium as dispatched; source/rules
 823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1. Original broad target preserved.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D6-target` → `PD-T447`.

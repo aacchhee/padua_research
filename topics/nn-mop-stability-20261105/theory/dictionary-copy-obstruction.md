@@ -1,7 +1,7 @@
-# PD-N?nn-mop-stability-codex-D6-copy — full standard-grade two-sheet obstruction
+# PD-N168 — full standard-grade two-sheet obstruction
 
 ID kind: PD-N. Aliases: two-sheet annihilator; original dictionary-obstructions C.
-Split from: PD-N?nn-mop-stability-codex-D6-literal, exactly its C statement.
+Split from: PD-N167, exactly its C statement.
 Split into: none.
 
 ## Statement
@@ -21,7 +21,7 @@ The representation has exactly two sheets y=0,1 and performs no deflation.
 
 Overall status: PROVED. Candidate disposition: REJECTED: failed, only for
 the no-deflation full-Pi_d two-sheet mechanism, not positive ambient encodings.
-Attempted mechanism: IDEA?nn-mop-stability-codex-D6-copies interpreted as a
+Attempted mechanism: IDEA-548 interpreted as a
 full standard-grade scalar model. Parameter range: all stated finite positive
 two-sheet inputs, d>=2. Other quotient, vector, graded and boundary models
 remain outside this result.
@@ -56,3 +56,11 @@ dictionary-lifts.md. No blanket bivariate no-go or stable-solver claim follows.
 The original C statement and proof appeared in dictionary-obstructions.md
 at4e87fc0a771fc13c6d5791f0f4c2e746e4eb9a71. Split without mathematical
 change for audit-01 MINOR3, 2026-11-06, Codex requested gpt-6.1-sol high.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `IDEA?nn-mop-stability-codex-D6-copies` → `IDEA-548`.
+- `PD-N?nn-mop-stability-codex-D6-copy` → `PD-N168`.
+- `PD-N?nn-mop-stability-codex-D6-literal` → `PD-N167`.

@@ -1,7 +1,7 @@
-# PD-N?nn-mop-stability-codex-D6-literal — ratio-graph standard-grade obstruction
+# PD-N167 — ratio-graph standard-grade obstruction
 
-ID kind: PD-N. Aliases: missing graph moment; two-sheet annihilator.
-Split from: the original combined G/C record under this provisional alias.
+ID kind: PD-N. Aliases: missing graph moment.
+Split from: none; this file retains G from the original combined G/C record.
 Split into: C, now [dictionary-copy-obstruction.md](dictionary-copy-obstruction.md).
 The retained G claim concerns one explicit dictionary, not bivariate transfer in general.
 
@@ -32,7 +32,7 @@ are OPEN/deferred, not REJECTED and not PARTIAL.
 
 ## Negative-result scope
 
-Attempted mechanism: IDEA?nn-mop-stability-codex-D6-graph literal standard
+Attempted mechanism: IDEA-547 literal standard
 polynomial identification.
 Parameter range: the explicit four-node input in statement G. No claim against other graph masses, changed test
 spaces, vector polynomials, extra sheets, boundary operators or stable NN solvers.
@@ -69,8 +69,8 @@ No external source is used for this identity.
 ## Scope and open items
 
 The graph identity is still exact with mixed test spaces. Labelled copies
-still give a positive ambient measure and exact selector moments. Neither
-negative statement rules out a useful new quotient/regraded dictionary.
+still give a positive ambient measure and exact selector moments. This
+negative statement does not rule out a useful new quotient/regraded dictionary.
 See dictionary-target.md. Do not infer a full bivariate no-go theorem.
 
 ## History
@@ -83,4 +83,12 @@ PD-N100 and the original D6 target retained unchanged.
 corrected the w2 moments and right-hand side without changing P or the
 -30/23 conclusion. The original C statement/proof is preserved in
 dictionary-copy-obstruction.md, with its own provisional record. The old
-combined alias is retained for G; neither negative scope was widened.
+combined alias "two-sheet annihilator" is retained here as historical
+provenance for C; neither negative scope was widened.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `IDEA?nn-mop-stability-codex-D6-graph` → `IDEA-547`.
+- `PD-N?nn-mop-stability-codex-D6-literal` → `PD-N167`.

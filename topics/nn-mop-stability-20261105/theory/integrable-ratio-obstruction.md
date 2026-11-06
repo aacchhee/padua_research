@@ -1,4 +1,4 @@
-# PD-N?nn-mop-stability-codex-D4-03 — common changes preserve relative spectral data
+# PD-N165 — common changes preserve relative spectral data
 
 ID kind: PD-N (provisional allocation).
 Aliases: pointwise ratio obstruction; common Toda orbit; common Geronimus orbit.
@@ -52,7 +52,7 @@ Analytic proof; no experimental premise. Actual primary literature coverage and 
 
 ## Sources
 
-No external theorem used. LIT-567 common flow and LIT-D4-03 more general mass-adding transformations supply context only; the latter's added masses are explicitly excluded.
+No external theorem used. LIT-567 common flow and LIT-614 more general mass-adding transformations supply context only; the latter's added masses are explicitly excluded.
 
 ## Scope
 
@@ -65,3 +65,10 @@ Explicit local generators for independent weight changes and their conditioning.
 ## History
 
 2026-11-05, Codex dispatched gpt-6.1-sol xhigh; source 823cf6a4, round 1. Common-transform arbitrary-target claim rejected, independent-weight route deferred.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `LIT-D4-03` → `LIT-614`.
+- `PD-N?nn-mop-stability-codex-D4-03` → `PD-N165`.

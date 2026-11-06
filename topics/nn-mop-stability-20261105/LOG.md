@@ -1,9 +1,9 @@
 # NN MOP IEP: conditioning and stable algorithms: log
 
 - Branch: `codex/nn-mop-stability-20261105` · Initial base: main `b4d292e`; reconciled main `5adc3e2` (PR #24 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (response-01 accepted in audit-02; Codex audit of the Claude G5 run, then PR preparation) · Next: `Codex (gpt-6-astra, medium): Continue codex/nn-mop-stability-20261105.` · Next handoff: [handoffs/06-g5-audit-prep.md](handoffs/06-g5-audit-prep.md).
-- Reserved final-ID ranges: T432–471, N=162–177, IDEA530–569, LIT614–629; reservation only, no assignments. See ALLOCATIONS.md.
-- Claims: provisional analytic/exact PROVED and floating MEASURED records in theory/; general solver stability and matching sharp growth remain OPEN. [Claude audit-01](audit-01.md): no BLOCKING; four MAJOR findings answered in [response-01.md](response-01.md); [audit-02](audit-02.md) accepted the response, with eight MINOR items for preparation.
+- Stage: PR (prepared; distinct Claude readiness check required) · Next: `Claude (Opus 5.5 high): Continue codex/nn-mop-stability-20261105.` · Next handoff: [handoffs/07-readiness.md](handoffs/07-readiness.md).
+- Reserved final-ID ranges: T432–471, N=162–177, IDEA530–569, LIT614–629; assigned T432–449/N162–168/IDEA530–555/new LIT614; remaining headroom stays permanent. See ALLOCATIONS.md.
+- Claims: analytic/exact PROVED and floating MEASURED records in theory/; general solver stability and matching sharp growth remain OPEN. [Claude audit-01](audit-01.md): no BLOCKING; four MAJOR findings answered in [response-01.md](response-01.md); [audit-02](audit-02.md) accepted the response, with eight MINOR items for preparation.
 - Open for AC: none (2026-11-06 decisions below). Ask AC before using Syvert.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -104,8 +104,15 @@
   - Observed at 08:02–08:05 UTC: arxiv.org 200.
   - The SIAM supplement ZIP returned 403 with a Cloudflare bot challenge, a site-side refusal; it was not bypassed.
   - The GitLab tunnel first got CONNECT 403, then opened but closed after about 10 s (`ws_closed_mid_exchange`), so no source was retrieved. G5 is no longer blocked by policy; execution is still pending.
-- **Gate deviations.** AC accepts the D6 gate-timing deviation (final alias/summary coverage completed after the prescribed background probe; novelty-gate-D6-D7.md) and the post-run prospective record of D4-C1a (its prospective record was written after its first run; novelty-gate-D4.md) as disclosed. This is the canonical record for audit-01 MINOR 9. It grants no retrospective prospective clearance or novelty claim.
+- **Gate deviations.** AC accepts the D6 gate-timing deviation (Codex insertion, response-01: final alias/summary coverage completed after the prescribed background probe; novelty-gate-D6-D7.md) and the post-run prospective record of D4-C1a (Codex insertion, response-01: its prospective record was written after its first run; novelty-gate-D4.md) as disclosed. This is the canonical record for audit-01 MINOR 9. It grants no retrospective prospective clearance or novelty claim.
 - Redirection: handoff03 superseded by [handoffs/04-response.md](handoffs/04-response.md), which adds G5 as step 6.
+
+
+## 2026-11-06 — Codex chronology addendum for audit-02 R-1
+
+The two parentheticals marked “Codex insertion, response-01” in the preceding Claude-authored AC-decision entry were inserted by Codex during response-01. Their content is accurate; they were not part of Claude's original entry.
+
+The D6/D7 gate and its prospective tests were written before the diagnostic. The state/IDEAS.md ranges 639–679 and 564–589 were read afterwards, so the initial complete-scan assertion was too strong. The completed coverage is retrospective and supplies no retrospective prospective clearance. D4-C1a was specified before its run; its durable prospective record was written after that run. This restores chronology consolidated out of novelty-gate-D6-D7.md, attempts/D6.md and novelty-gate-D4.md without changing the canonical AC decision above.
 
 ## 2026-11-06 — Codex response to audit-01 — requested gpt-6.1-sol high
 
@@ -147,3 +154,13 @@
 - Read current handoff06 and accepted audit02. [G5 audit](audit-g5-01.md): ACCEPTED within finite scope, one MINOR enumeration omission fixed with dated attribution in a separate commit. Independently read all executed third-party files, checked their hashes and reran the full driver with isolated Octave9.4/reference BLAS on Debian13. Exit0;52 family/size cases,15.81s. Gate Krawtchouk paperN10 error2.691214553706643e-10, log10 ratio-0.4058 against the developer-quoted paper6.851191e-10, hence PASS. Entire tables vary across platforms; no all-case/platform agreement asserted.
 - arXiv reference bundle remains inaccessible to this executor (CONNECT403); direct paper-table/hash verification and re-execution of cmp.py against that bundle are explicitly unresolved. Independent source execution occurred; paper reference-data comparison is review only. [Auditor receipt/outputs](audit-g5-01/receipt.json). No third-party source/data committed, access-control bypass, Leuven contact or storage cleanup.
 - PartB preparation proceeds under handoff06. Bounded Solmedium helpers check reservations/record hygiene; a Solhigh helper prepares statement-bearing registry rows after reservation clearance. Root alone publishes. Existing scientific statements/results/statuses remain as independently accepted; sharp-growth/general stable-solver targets stay OPEN. PR28 stays draft; Claude readiness remains required. The approved connector noreply-author exception persists.
+
+## 2026-11-06 — Codex preparation after accepted audits
+
+- Handoff06 partB executed after G5 audit acceptance at `80086a1af5d232c110f9c7c754d43b47332cbe71` (preceding separate MINOR fix `05d7e9844e8ccc55f78450beccdf90516624a3e0`). Root requested gpt-6-astra medium; Solmedium helpers performed reservation/hygiene work, Solhigh prepared statement-bearing registry rows as handoff06 allocates. Runtime serving identities/effective efforts are not independently exposed. [Complete source list](preparation/source-inputs.json).
+- Full reservation refresh: main`f654e32daff27b6846849311092f6daebbbf235b`, PR27`4b728b04216a5490910780bc609a82b853058426`, ownPR28`80086a1af5d232c110f9c7c754d43b47332cbe71`;27 closed PRs all merged.50 ledger/registry copies,18 distinct blobs. Max assigned T494/N178/IDEA584/LIT630; max reserved/gaps/retired T501/N180/IDEA589/LIT632. Own older permanent reservation is disjoint and previously unused. [Receipt](preparation/reservation-check.json); root's audit checkpoint changed none of the17 relevant blobs. No foreign range/ID modified.
+- Assigned18 PD-T(T432–449),7 PD-N(N162–168),26 IDEA(530–555), one new LIT614; reused LIT567/568. Full provisional/alias mapping and split/parent relations in ID_CROSSWALK and [mapping](preparation/id-map.json). All remaining headroom stays permanently reserved. Scientific statuses/dispositions/thresholds are the audited ones. Registries applied by direct reviewed diff, retaining deferred/failed/equivalent candidates, OPEN parents and IDEA090/378 deferred conditions; no process stage added to shared registries.
+- Audit02 R1–R8 fixed as record hygiene: dated canonical chronology restored with Codex attribution; split directions/relations; verbatim original target and explicit reformulation; localized dependency wording; first-axis wording; historical-only fit/convergence scope; old code identities explicitly tied to4e87fc0 with current manifest pointer. Source producer/checker hashes at4e87fc0 independently fetched/verified. Optional G-record leftovers corrected. All edited existing prose pins refreshed with this preparation output; audit01/02 and scripts remain byte-identical.
+- The final-ID/hygiene finite normality receipt still passes61 sizes/43,676 exact checks and all code pins; its61 data rows remain unchanged. No algorithm, fit, measurement table or exact certificate input changed. G5 status now consistently states the accepted one-configuration reproduction and unrun topic-metric comparison, with the auditor's direct paper-data verification limitation explicit. No stable-solver theorem or G4 PASS.
+- Stage remains PR; PR28 remains draft, no readiness/merge request. Hand off prepared registry diff and hygiene confirmation to Claude Opus5.5high. Only AC merges.
+- Handoff: [handoffs/07-readiness.md](handoffs/07-readiness.md).

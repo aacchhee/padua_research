@@ -1,4 +1,4 @@
-# PD-N?nn-mop-stability-codex-D1-hard-01 — one inverse NN divisor does not govern proportionality
+# PD-N162 — one inverse NN divisor does not govern proportionality
 
 ID kind: PD-N. Aliases: fixed-N G3 obstruction; normalized alternating
 binomial direction; higher-order measure-proximity sensitivity.
@@ -124,3 +124,9 @@ premise. 2026-11-05: coordinator supplied the normalized-parity extension;
 bounded D1-hard developer reconstructed its factors and wrote this proof.
 Rules/source 823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1; requested allocation
 gpt-6-astra ultra under handoff01. No Git or shared-file writes.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-N?nn-mop-stability-codex-D1-hard-01` → `PD-N162`.

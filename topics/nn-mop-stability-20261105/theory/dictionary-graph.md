@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-D6-graph — positive ratio-graph encoding
+# PD-T445 — positive ratio-graph encoding
 
 ID kind: PD-T. Aliases: ratio graph; mixed-test positive measure.
 Split from: none (supporting result for dictionary-target.md).
@@ -74,3 +74,9 @@ standard total-degree identification for P_(1,1).
 
 2026-11-05, Codex, dispatched gpt-6.1-sol medium; rules/source
 823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1. First D6 round; no final ID allocated.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D6-graph` → `PD-T445`.

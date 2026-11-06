@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-D1-hard-01 — exponential NN conditioning lower bound
+# PD-T437 — exponential NN conditioning lower bound
 
 ID kind: PD-T. Aliases: alternating binomial weight witness; terminal Hermite
 interpolation; explicit Krawtchouk sensitivity growth.
@@ -307,3 +307,9 @@ The initial file hash before this addendum was
 409f625a57d6c0e004781f666ef35f71fbcd25b447f0cc5c938da74d77340b0f.
 That proof was reviewed independently and its small-N identities replayed;
 the final hash including this addendum is submitted separately for recheck.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D1-hard-01` → `PD-T437`.

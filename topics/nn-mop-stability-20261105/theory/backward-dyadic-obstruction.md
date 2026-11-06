@@ -1,7 +1,9 @@
-# PD-N?nn-mop-stability-codex-31 — a frozen raw NN array has no joint-data inverse
+# PD-N163 — a frozen raw NN array has no joint-data inverse
 
 ID kind: PD-N. Aliases: binary64 compatibility obstruction; strict backward
-error infinity witness. Split from: none. Split into: none.
+error infinity witness. Split from: [stable-solver-target.md](stable-solver-target.md), as a separate
+supporting, scoped-negative or measured result, not a solved target case.
+Split into: none.
 
 ## Statement
 
@@ -97,3 +99,9 @@ backward criterion is preserved; this certificate explains why a dated
 mixed-metric amendment must be reported separately, never silently applied.
 
 Parent unresolved target: [stable-solver-target.md](stable-solver-target.md); supporting results do not establish its general stability conclusion.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-N?nn-mop-stability-codex-31` → `PD-N163`.

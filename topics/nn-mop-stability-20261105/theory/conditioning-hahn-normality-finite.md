@@ -1,7 +1,9 @@
-# PD-T?nn-mop-stability-codex-D1-05 — finite exact Hahn normality, N=4,...,64
+# PD-T436 — finite exact Hahn normality, N=4,...,64
 
 ID kind: PD-T. Aliases: all 61 Hahn triangles; exact interior-divisor certificate.
-Split from: generic certificate application. Split into: none.
+Split from: none. Split into: none.
+Depends on: [conditioning-normality-certificate.md](conditioning-normality-certificate.md),
+the generic exact certificate applied below.
 
 ## Statement
 
@@ -157,7 +159,11 @@ For N=64, min exact |d| is 524/10614807, and the coefficient digest is the
 last table row. The earlier independent exact moment derivative checks at
 N=3,4,6 separately corroborate the scalar graph on small inputs.
 
-The separate compact-receipt checker was also executed:
+The separate compact-receipt checker was also executed historically, with
+source at commit `4e87fc0a771fc13c6d5791f0f4c2e746e4eb9a71`. The command
+below identifies that historical execution; the verifier at the same path
+has since changed. Current identities are in
+[evidence-manifest.json](../evidence-manifest.json):
 
 ```bash
 python3 topics/nn-mop-stability-20261105/code/conditioning_verify_normality.py > /tmp/conditioning-normality-receipt-check.json
@@ -192,3 +198,9 @@ file with the source/checker and essential receipt at the next boundary.
 2026-11-06, response to audit-01 MINOR1/12: explicit runtime checks replace removable asserts; the verifier now enforces all three code pins. The producer pin is updated here in the same reviewed commit. Statement, 61 exact inputs, counts and coefficient payload fingerprints are unchanged. Completed independent certification: audit-01.md, priority2.
 
 The historical Nov5 raw receipt/timings above used producer SHA7aa4115143a51bd3abcea50abd4ea7b8de9a7507bea711ca7e19ab662a2be24a. The current pin changes only input/type guard checks; all 61 exact payload fingerprints remain unchanged. The response verification uses the new pin and is recorded in response-01.md.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D1-05` → `PD-T436`.

@@ -11,7 +11,7 @@ re-reading, or reopening of D1/D3 is claimed. The existing gate coverage is
 [novelty-gate-D3-D5.md](novelty-gate-D3-D5.md); literature comparisons retain
 the coverage limits of LIT-347 and those gate records.
 
-## IDEA?nn-mop-stability-codex-D3-deferred-core — NN whole-triangle core transformations
+## IDEA-551 — NN whole-triangle core transformations
 
 Aliases: non-unitary NN eliminators; whole-triangle IEP_CORE.
 
@@ -31,7 +31,7 @@ Aliases: non-unitary NN eliminators; whole-triangle IEP_CORE.
 - Canonical theory / negative-result ID: none for this unattempted alternative; no PD-N is warranted by deferral.
 - History: prescribed in [handoffs/01-work.md](handoffs/01-work.md), retained here in response to audit-01 M4. No method is reopened by this bookkeeping record.
 
-## IDEA?nn-mop-stability-codex-D3-deferred-biorthogonal — lattice biorthogonal Lanczos over all paths
+## IDEA-552 — lattice biorthogonal Lanczos over all paths
 
 Aliases: type-II/type-I dual lattice; all-path reorthogonalization.
 
@@ -51,7 +51,7 @@ Aliases: type-II/type-I dual lattice; all-path reorthogonalization.
 - Canonical theory / negative-result ID: none for this unattempted alternative; no PD-N is warranted by deferral.
 - History: prescribed in [handoffs/01-work.md](handoffs/01-work.md), retained here in response to audit-01 M4. No method is reopened by this bookkeeping record.
 
-## IDEA?nn-mop-stability-codex-D3-deferred-multipath — multi-path step-line redundancy under zero curvature
+## IDEA-553 — multi-path step-line redundancy under zero curvature
 
 Aliases: redundancy as stabilization; multi-path least squares; error-correcting compatibility.
 
@@ -71,7 +71,7 @@ Aliases: redundancy as stabilization; multi-path least squares; error-correcting
 - Canonical theory / negative-result ID: none for this unattempted alternative; no PD-N is warranted by deferral.
 - History: prescribed in [handoffs/01-work.md](handoffs/01-work.md), retained here in response to audit-01 M4. No method is reopened by this bookkeeping record.
 
-## IDEA?nn-mop-stability-codex-D1-deferred-vandermonde — discrete-measure Vandermonde conditioning
+## IDEA-554 — discrete-measure Vandermonde conditioning
 
 Aliases: moment matrix conditioning; polynomial evaluation matrix.
 
@@ -91,7 +91,7 @@ Aliases: moment matrix conditioning; polynomial evaluation matrix.
 - Canonical theory / negative-result ID: none for this unattempted alternative; no PD-N is warranted by deferral.
 - History: prescribed in [handoffs/01-work.md](handoffs/01-work.md), retained here in response to audit-01 M4. No method is reopened by this bookkeeping record.
 
-## IDEA?nn-mop-stability-codex-D1-deferred-potential — potential-theoretic node-density explanation
+## IDEA-555 — potential-theoretic node-density explanation
 
 Aliases: node-density asymptotics; logarithmic potential; growth-rate mechanism.
 
@@ -111,3 +111,13 @@ Aliases: node-density asymptotics; logarithmic potential; growth-rate mechanism.
 - Canonical theory / negative-result ID: none for this unattempted alternative; no PD-N is warranted by deferral.
 - History: prescribed in [handoffs/01-work.md](handoffs/01-work.md), retained here in response to audit-01 M4. No method is reopened by this bookkeeping record.
 
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `IDEA?nn-mop-stability-codex-D1-deferred-potential` → `IDEA-555`.
+- `IDEA?nn-mop-stability-codex-D1-deferred-vandermonde` → `IDEA-554`.
+- `IDEA?nn-mop-stability-codex-D3-deferred-biorthogonal` → `IDEA-552`.
+- `IDEA?nn-mop-stability-codex-D3-deferred-core` → `IDEA-551`.
+- `IDEA?nn-mop-stability-codex-D3-deferred-multipath` → `IDEA-553`.

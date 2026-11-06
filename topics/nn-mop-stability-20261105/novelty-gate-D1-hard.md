@@ -8,7 +8,7 @@ Read the complete state/IDEAS.md inventory, headings, aliases and summary rows i
 
 Closest predecessors: IDEA090 already proposes MOP conditioning; IDEA117/379 and PD-T286/289 define the NN map and exact reconstruction; the existing D1 sharp-growth candidate expressly calls for an exact signed Jacobian-row witness. This is a continuation/quantitative variant of that open candidate, not an independent new method. PD-T136/137 concern a different Euclidean span quotient and cannot be substituted for the coefficient output. PD-N100 concerns only a literal dictionary, not conditioning. Finite-support rank limits the normal triangle to degree N, and terminal d=0 is not divided by in the valid C4 domain.
 
-## Candidate IDEA?nn-mop-stability-codex-D1-hard-01
+## Candidate IDEA-534
 
 Aliases: alternating binomial perturbation; high-degree marginal annihilator; one-cross-step sensitivity witness. Question: prove kappa_N grows exponentially for p1=2/5,p2=1/2, unrestricted componentwise-relative weights and the fieldwise E norm. Mechanism proposed after the above gate: retain nodes and measure1, perturb measure2 by epsilon times (-1)^k. The symmetric binomial annihilates all degree<M polynomials under this sign. Apply the exact two-dimensional scalar-orthogonal complement at index (M−1,1) to the b2 coefficient based at (M−1,0), then bound its field scale by an explicit elementary coefficient formula.
 
@@ -18,7 +18,7 @@ Disposition at registration: active bounded proof attempt. Full retained outcome
 
 ## Continuation candidates and final dispositions
 
-### IDEA?nn-mop-stability-codex-D1-hard-02 — terminal binomial jet witness
+### IDEA-535 — terminal binomial jet witness
 
 Aliases: generating polynomial H; Hermite jets at weight-ratio nodes;
 positive terminal coefficient sum. Closest predecessor: hard-01's scalar
@@ -40,7 +40,7 @@ variant, with full proof in theory/conditioning-lower-krawtchouk.md. The
 initial base4sqrt(6) bound and later summed base5+2sqrt(6) bound are both
 preserved. A historical novelty claim is neither attempted nor established.
 
-### IDEA?nn-mop-stability-codex-D1-hard-03 — normalized parity under measure proximity
+### IDEA-536 — normalized parity under measure proximity
 
 Aliases: G3 fixed-N contradiction; bounded relative signed binomial weights.
 Coordinator supplied this continuation after hard-02. Closest: D1's
@@ -69,3 +69,11 @@ subroute was promoted into a broader impossibility claim. The existing
 rational-height upper bound remains a valid separate result. Independent
 finite replays and reviews supplement, but do not replace, mandatory Claude
 audit. Final outcome and artifact identities: attempts/D1-hard.md.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `IDEA?nn-mop-stability-codex-D1-hard-01` → `IDEA-534`.
+- `IDEA?nn-mop-stability-codex-D1-hard-02` → `IDEA-535`.
+- `IDEA?nn-mop-stability-codex-D1-hard-03` → `IDEA-536`.

@@ -16,6 +16,36 @@
   ],
   "files": [
     [
+      "topics/nn-mop-stability-20261105/audit-g5-01/check.py",
+      "3fcd1b0186c2a5e342924a2c2b5b08c1d537aa9035e0fb1c73f6f1bd1c1a17a0",
+      "c0447ce690e62490f4c1d362ed084f39c169fe72",
+      3238
+    ],
+    [
+      "topics/nn-mop-stability-20261105/audit-g5-01/ours_hahn.dat",
+      "0d442bcf246fb245847a3e8705908993afdf1acb45adbe51e076be8e5067eb1e",
+      "2f371f6ac0c6cfdd1d134782c46bd64e00006030",
+      3505
+    ],
+    [
+      "topics/nn-mop-stability-20261105/audit-g5-01/ours_kravchuk.dat",
+      "22d7aecaed024190c18dd7ac2651b02eb0418279bd288936d1d1c9b35c028f3b",
+      "99920300474b7c1ac9653f815b3dbea518ac7057",
+      3505
+    ],
+    [
+      "topics/nn-mop-stability-20261105/audit-g5-01/receipt.json",
+      "be3a2217bbdde3964bae5b8e3636f3993ae5f2cab90a57bcb81cea73da7ad1a8",
+      "4870f7f226269643a65b6aec919f1945f1970e9c",
+      2616
+    ],
+    [
+      "topics/nn-mop-stability-20261105/audit-g5-01/source-inventory.json",
+      "e85d489da14dfe012768490a82966c37549fc1ae79dfefd805f54cdb7556f1b0",
+      "b460e876850ab180c64fc18d948737fe256e45f7",
+      4516
+    ],
+    [
       "topics/nn-mop-stability-20261105/code/backward_dyadic.py",
       "40d02ef16a372cf786b89669a509f67f187d20ffde9710636153446de72967b7",
       "e546e3a9b210539b01bd16b8ff23cab740880d89",
@@ -172,6 +202,36 @@
       113095
     ],
     [
+      "topics/nn-mop-stability-20261105/g5-run/cmp.py",
+      "be32ae6c7b182622805e76eaf6a6aad20618fe977268e7f1f67a38cf8bbed260",
+      "f957061016df603518ccc416a23d97dd477832b3",
+      807
+    ],
+    [
+      "topics/nn-mop-stability-20261105/g5-run/compare.txt",
+      "4b7e182a384244664f228cbb1a4a961f6ef11fb7a63728a620213b1a6c1841ae",
+      "f878bfbb62591666b984bdf1873eced4539e226e",
+      3869
+    ],
+    [
+      "topics/nn-mop-stability-20261105/g5-run/driver.m",
+      "5ea1a2d157ed4d9d2314a064009f68cf72a93e69b194dc5395f681dddb36df12",
+      "a657d6466c213fa853a5f0baa6e32e854b40a31f",
+      1121
+    ],
+    [
+      "topics/nn-mop-stability-20261105/g5-run/ours_hahn.dat",
+      "46b52790e89311982f49a26d2c4e7b4c232c67f183551c1d0e81284c3a428632",
+      "6acdd814aa36409d4b70ae0bcf75fb55e56bf11a",
+      3505
+    ],
+    [
+      "topics/nn-mop-stability-20261105/g5-run/ours_kravchuk.dat",
+      "e582ce82c398c75da06ae200fec7a088ae04a0ea0cda0e386715ef7ff59ec26a",
+      "5b4a7940dcf8e9f462b333ff49d6e58c6fbdcb18",
+      3505
+    ],
+    [
       "topics/nn-mop-stability-20261105/independent-checks-01.md",
       "bbd6d9773c9fd8b03b6d416a34fa4b4fb4dfd6bbaf221841b69c290789b54f09",
       "d7dc3da8da432c525b2cc665e0ef6ea4517e052e",
@@ -179,9 +239,9 @@
     ],
     [
       "topics/nn-mop-stability-20261105/independent-checks-02.md",
-      "895c43a8471cd43652f64725bf402f8b853a193f4dc54ea46a0844f1773cc480",
-      "7b5d5cf37862da57698448ec8d9b112e68feabfe",
-      15718
+      "dfabe6f155317aefad8620465969341fa2e78a7f9f4dc518a934fff69b86b83c",
+      "4a0082649bc7f871cbc4045b558cde16512be28f",
+      15947
     ],
     [
       "topics/nn-mop-stability-20261105/independent-checks-03.md",
@@ -190,157 +250,211 @@
       5515
     ],
     [
+      "topics/nn-mop-stability-20261105/preparation/g5-artifact-check.json",
+      "19302e7247ee46925755bb8495b526d9ce8770327698ea1b1bb18d88ccf6627b",
+      "a14cd937abecfc6e70ff812bca9421356e8a31f2",
+      440
+    ],
+    [
+      "topics/nn-mop-stability-20261105/preparation/id-map.json",
+      "8efd43a6bdcc01bce1a6c960ab2f81980c6d91a9d0400ce3ec4987d77c76e956",
+      "87656fe3df923846cc8ae1397dd8b24bab5cddee",
+      44293
+    ],
+    [
+      "topics/nn-mop-stability-20261105/preparation/normality-check.json",
+      "9f7d97466cbba0ef760f3d06d4c7cc0747fc6e62d269a59ea9762cc1d19cef37",
+      "afe4c856f4398153ce8bb497fccef509eed02a2f",
+      522
+    ],
+    [
+      "topics/nn-mop-stability-20261105/preparation/reservation-check.json",
+      "804c1deb570506511379b86bf5de0662c6dd1c3ff1312232adc1a4771d392302",
+      "230a1d8cae98bca53c7a9d7b95211de3b0c7efdd",
+      16156
+    ],
+    [
+      "topics/nn-mop-stability-20261105/preparation/source-inputs.json",
+      "6e2410416a4bb0128d926daab4cf5f5fdc9fd55bbba7904b11190f2110458960",
+      "012d250d8f466eee22fef516961ec2f00ab299ff",
+      52297
+    ],
+    [
       "topics/nn-mop-stability-20261105/theory/backward-dyadic-obstruction.md",
-      "3d3433e489607f7bb5cabe32b3c45df5b000885aa5dc82d8cb9a0079808c2f76",
-      "ced383593384c87a0944c519ec2f687503c6651b",
-      4632
+      "39411b119f6ba244672245290f91ce0feb7f2b46a996231ce8e680a33223a298",
+      "234ee3bdb6e2309c3333bdfa5b71f5b6a3cb1e24",
+      4927
     ],
     [
       "topics/nn-mop-stability-20261105/theory/backward-local-manifold.md",
-      "09d40a7aee2f9609416f19420751c529ce672d938d961373481b710a6a2d02bc",
-      "cc6c03facc08d130f378fd9649a0b858361648de",
-      9587
+      "944f6c0f68bdbe5ec665a9220e13106666f775512a2d99925638e8817058117e",
+      "23d69c4d6f8b334c320670670dda2773c42f3de7",
+      9882
     ],
     [
       "topics/nn-mop-stability-20261105/theory/backward-projection-measurements.md",
-      "a5753363caddfb45c9e71f93fe4a8c197045825b564e326df0c61e5bf720883d",
-      "0881e0e6c0059fc49bff24401e075c68b4ce5e1f",
-      10444
+      "96a0dd121205303a622de0d724b10a3665bee317787905c5ca38acf5db4c75a1",
+      "6f6befd7ad35c31d13149ca7559eb4ea38a02cb3",
+      11339
     ],
     [
       "topics/nn-mop-stability-20261105/theory/conditioning-growth-target.md",
-      "6c817e3815a14b2d544a33492f5d7ab4c9bd47a686d4a568bf7739ee348080b5",
-      "7d9487cbb7d4d3d5233f0577ee0fdf45441bbf5a",
-      2631
+      "ad95c3e2136504722b107765f78407a7250d6c61875c408fd3f1b4ea34235d9f",
+      "d11a634fe635ca896bbe4ff5b12567fa192df5cb",
+      4436
     ],
     [
       "topics/nn-mop-stability-20261105/theory/conditioning-hahn-normality-finite.md",
-      "85fbc1f043a7150f5966b0fedbe693e50469b9cd2cc6bf09cfc88a03a8d9862e",
-      "a7aab722b0003c2dfde406d416cfeb23d4c71eb6",
-      15905
+      "e8e90fb3ed97b90357d1938fe1969d2d218b9f27746e040cf9598955162a1692",
+      "6dc8167c1ea6911c6ee3e27175a649f82e4735b1",
+      16439
     ],
     [
       "topics/nn-mop-stability-20261105/theory/conditioning-krawtchouk-bound.md",
-      "9b3e9a91d3c9cc407c1746dcc8f1732e312fc83e98b966bd284ad1da2dc30b92",
-      "524d9f2c081e3f1fe70adc47b8989897bd592fa7",
-      5989
+      "b756af694517251bf6a4663fd18a754cda724e964c9c56a78fe6a62d1564b51e",
+      "6b0994031b36d729bb95e73933afc852d48b9e17",
+      6150
     ],
     [
       "topics/nn-mop-stability-20261105/theory/conditioning-local.md",
-      "5dbaf8fa7c75d9dad94c587bf1b42982973c68db6485c5978a61394e4ca67215",
-      "0e162848d2fb70dd7ffde22ede844032352806e2",
-      8018
+      "2c3dc94cffcb243d2ae3f725d08841d6d70c68c77390f09c414eecf3c8895f3b",
+      "1b3d349316f91aae9217b427e42b52ca64046865",
+      8182
     ],
     [
       "topics/nn-mop-stability-20261105/theory/conditioning-lower-krawtchouk.md",
-      "d3e284444d7caad48d20b01e4da0966bd9fd2c78b6dae307b39e860fe4cde0b3",
-      "06ceaff4c0c0f459155bcd3281990cb2cd64c5d8",
-      13054
+      "d76498e95495c6bea8842d946c0bd169d6075c78ef915f82dcfc84c4a63a7aa9",
+      "48a2f69b171c30199aaeb1b26cb249d64cd50f3c",
+      13215
     ],
     [
       "topics/nn-mop-stability-20261105/theory/conditioning-lower-proximity.md",
-      "eb08ca36724294607cf7bf658d0080a032283c6035085c9c52e59581661896b8",
-      "181346598ece1485f0dbc3834d3b2dda6355447d",
-      5633
+      "dbe49d0964529c440bf9b31741737cae147dd0903a695bf0c9c1ed7f730e5ddb",
+      "b54f91dff0cfd6e6e0f8d36b8ee62d1fbde85940",
+      5794
     ],
     [
       "topics/nn-mop-stability-20261105/theory/conditioning-measurements.md",
-      "e5ea909516a02074472fbafac7b2745dc63d7580fe0c2686e53f557fc5394a00",
-      "32270ddaef281bf37accb9719c11c2e6420463e0",
-      5648
+      "cfdd688c4df04e5acbe3a7f8426c1ad1ebcb3bbe047bcbba7dfe2791955c0af0",
+      "2fd0a071f8564dfb4d6cee29b9ac0390a4abfe58",
+      5809
     ],
     [
       "topics/nn-mop-stability-20261105/theory/conditioning-normality-certificate.md",
-      "97ffef472d1b74dec543d7ffb58d40ca0eee359dda14afa0a1fcb4f2757697f7",
-      "d80a0be1143de7d701258f177bed3f3f6d8ac9aa",
-      6099
+      "9e41a8a2ebdea921fdab16adafef8be1519b854e52a6002debb1c48a66449e63",
+      "c2b6cf350898191a443f4a9e9651b539c343a3b5",
+      6344
     ],
     [
       "topics/nn-mop-stability-20261105/theory/d2-path-diagnostic.md",
-      "444ec33616c8190dd982afa76582d852b78f9ea45bb462d70e3b00fa2755efdd",
-      "286687ce1753f973dc98fe8ce2463fcba55d489f",
-      4983
+      "a22ce7b88d161a30f7994aa755d0ce5dddeaa691d8d974ead3227dcca1d89d4d",
+      "358c263e4534908254d9decb4f322bfcb92c9cd0",
+      5144
     ],
     [
       "topics/nn-mop-stability-20261105/theory/d2-stage-isolation.md",
-      "058b87e5f4a35efdba3611b2495a22afe226b8463f9f5a42899d2a255811fea8",
-      "afd4c932d8c8ced0d748672423acc8f727925ace",
-      5151
+      "51337e1d02fda2ee73d3aa2362a0db3fd99e7d3223346b5d67312babfca449ef",
+      "c2811176e6fdfb03796a911e36f4eb7f950df6c0",
+      5312
     ],
     [
       "topics/nn-mop-stability-20261105/theory/dictionary-copy-obstruction.md",
-      "e9ff66e9fa27290d9d465bc9a16284a26eebcdf8c8182f33e6a2471ddcb455e3",
-      "53910cd9ae5b9914d2aafbb8381584e5133fe7ca",
-      2492
+      "82ddaf4da615c7905146acea8a741c12fb3e5e54919d87a13f83adb60305895e",
+      "9619c35c944b01447390304e24e9b179f721b20c",
+      2709
     ],
     [
       "topics/nn-mop-stability-20261105/theory/dictionary-graph.md",
-      "3a3f2b693fb4101328cb6570adda3a542556d3b67af1b36159c876ef088a32df",
-      "9f4b2a48f400c39c41a43d8913af7baa6e08c9ec",
-      3433
+      "03c73ba73e89c5172369b2b85f985201ec70f75bd3da12bf726765f7e33a1f54",
+      "f2e4806e795cdb10006739d27833cff7fa30d81a",
+      3594
     ],
     [
       "topics/nn-mop-stability-20261105/theory/dictionary-lifts.md",
-      "1811b146cf83d7e2aad7b1df58193e92756707177c5678c2051253e35a9a09b7",
-      "8edc26c0a904794b7cc978f7491134a94cd94803",
-      3324
+      "f5076777d8c9e4babf8f82f0e1f72bdb85f797b71f33ce87189dba98677014a9",
+      "008edc6910fdc71f8c399700d5191cc75e174a05",
+      3551
     ],
     [
       "topics/nn-mop-stability-20261105/theory/dictionary-obstructions.md",
-      "8caaab3ba71c4db32223c636b46e5a44cb7209211315bfd4fa8cf201ab14aa2f",
-      "96fad09b97351c23ca50594b913730349e62b456",
-      3896
+      "428cbbf9a12745dae42db10325ec930b579b42a0f617cb71bb827fe568c2163a",
+      "3275ac6a48639c514aadc07d083b6c72a894e2b4",
+      4124
     ],
     [
       "topics/nn-mop-stability-20261105/theory/dictionary-target.md",
-      "f4c470139b5455768052a734da0f700cacaf7f08482efffe5b56c80697b68c04",
-      "f98ef5a4977840d49e53c048ea345d6de4d40a8e",
-      4016
+      "fe46ca11aca4fccb6cb756cfb86a7dd8c4a1f099575255bda6aac89adbd6584a",
+      "7e6e099c8ac8f4a16d0e51efa9dea2aa1b64c572",
+      4246
     ],
     [
       "topics/nn-mop-stability-20261105/theory/integrable-christoffel.md",
-      "b5a5dc3ccb6d232015518dcccee60aca2d261505bf9f6760a83f5507c9c57cd1",
-      "29a4b0bc97bcbe7a9a267d8548cc2e51cce330e3",
-      6169
+      "a4eaaf787aeea0736bbddedb94feec88e71146f4c2225c9efbd8a874c8d15f49",
+      "8524f72c30f81d714623a0b0bd1c63ff2522e1b8",
+      6330
     ],
     [
       "topics/nn-mop-stability-20261105/theory/integrable-normality-obstruction.md",
-      "79e8ed2dccf197d5c1bdd5af1eecf5685829b5fc07c57ba11d6744bde8b1a37f",
-      "0c3561f60b8c37395e09962f9b4e5689e491ff13",
-      4156
+      "0c953187411703508bac5428d31043f2de1b810aa9aa20946b304101875c17e6",
+      "63f7abaeeac625da1872b2f1c94b9c9af46a7d28",
+      4317
     ],
     [
       "topics/nn-mop-stability-20261105/theory/integrable-predivide-failure.md",
-      "871dcc4932d9650792e0109ddf71fc31a0a651a82c18110b13ac78ecff283483",
-      "2c9bd2f2460fa81e53546b55774da4183a2a15bd",
-      3849
+      "78f513f04ee742dd1227d53e3f026e1fc27d010672a00f39daaaf7c09b40732b",
+      "b4eac951ae53fd9135a34d130e1b9de035b8a8cc",
+      4010
     ],
     [
       "topics/nn-mop-stability-20261105/theory/integrable-ratio-obstruction.md",
-      "4c52f5fcc127fee031cf3e9d55e6462b2131fc1a4bd709a9a99b11bd242d6eeb",
-      "976d6e0f44d6aaad385cc93c69e9f2f481f24cd5",
-      3983
+      "1e2fcb85a7929b3bc4dc27ebdb37a65ffc8415869096c691a3af07a2515c12a9",
+      "f309927b6671ff344c7ad514c6d5214074bb8308",
+      4171
     ],
     [
       "topics/nn-mop-stability-20261105/theory/integrable-toda.md",
-      "2bb1eba8684f45def17fc5fcb85549b6e133adfedaa160eba8cf6c979ed99c77",
-      "e310d8879988eeb60bd35e2047747b79961c0258",
-      5036
+      "f4513a973b22f8c6ec3d039121cfb247ba673e5ba06665a5268eb7eb35cf063d",
+      "1e8fe2200d6707fcde89a58b92fa5b88a2371d80",
+      5197
     ],
     [
       "topics/nn-mop-stability-20261105/theory/native-measurements.md",
-      "9ea20c019dc80d73829518407ad56ee901ea2f705bf366d6fb3172d74c1feac3",
-      "a6638432dd045f41c8b09d08bbc3b808e82ef93b",
-      5353
+      "2c0f2a7c2db832f27fea415140025157fab73cb79a2ba8173c63c31dfb04b3d8",
+      "d71b3e30bf7cfa9117b72089b4983a9e9414fa34",
+      5648
     ],
     [
       "topics/nn-mop-stability-20261105/theory/stable-solver-target.md",
-      "6033dc4bfc9c1fa2f6addc0a853c6566415c437befd65927bfbb4bfb78879163",
-      "310f34f87ea57c2d07410cc09b9a1690db53639b",
-      2797
+      "73655a4b984c1a8539e109c6e76ae9ea697e9e43ed4ab4443ca2797486fd1086",
+      "8cafc1cfd16e9989c7c2145cd73bd6a1f736e030",
+      2958
     ]
   ],
   "python": "3.12.14",
-  "scope": "Content identities, not audit approval; raw output commands and observations are in attempts/D1-D7 and independent-checks records.",
-  "archive": "No external cold-storage delivery claimed. Large regenerable outputs remain outside Git."
+  "scope": "Content identities, not audit approval; raw output commands and observations are in attempts/D1-D7 and independent-checks records. Preparation adds the listed G5 driver/comparison code/output and audit/preparation data identities; no new prose checker pins. Original source/base/input fields retain campaign provenance.",
+  "archive": "No external cold-storage delivery claimed. Large regenerable outputs remain outside Git.",
+  "preparation_source_commit": "414e781567078560b7e233aace3661abb88e37ab",
+  "preparation_input_inventory": [
+    "topics/nn-mop-stability-20261105/preparation/source-inputs.json",
+    "6e2410416a4bb0128d926daab4cf5f5fdc9fd55bbba7904b11190f2110458960",
+    "012d250d8f466eee22fef516961ec2f00ab299ff",
+    52297
+  ],
+  "additional_code_and_data": [
+    "topics/nn-mop-stability-20261105/audit-g5-01/check.py",
+    "topics/nn-mop-stability-20261105/audit-g5-01/ours_hahn.dat",
+    "topics/nn-mop-stability-20261105/audit-g5-01/ours_kravchuk.dat",
+    "topics/nn-mop-stability-20261105/audit-g5-01/receipt.json",
+    "topics/nn-mop-stability-20261105/audit-g5-01/source-inventory.json",
+    "topics/nn-mop-stability-20261105/g5-run/cmp.py",
+    "topics/nn-mop-stability-20261105/g5-run/compare.txt",
+    "topics/nn-mop-stability-20261105/g5-run/driver.m",
+    "topics/nn-mop-stability-20261105/g5-run/ours_hahn.dat",
+    "topics/nn-mop-stability-20261105/g5-run/ours_kravchuk.dat",
+    "topics/nn-mop-stability-20261105/preparation/g5-artifact-check.json",
+    "topics/nn-mop-stability-20261105/preparation/id-map.json",
+    "topics/nn-mop-stability-20261105/preparation/normality-check.json",
+    "topics/nn-mop-stability-20261105/preparation/reservation-check.json",
+    "topics/nn-mop-stability-20261105/preparation/source-inputs.json"
+  ]
 }

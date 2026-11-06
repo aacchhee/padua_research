@@ -1,7 +1,8 @@
-# PD-T?nn-mop-stability-codex-D6-lifts — copy/pair transfer target
+# PD-T446 — copy/pair transfer target
 
 ID kind: PD-T. Aliases: selectors; Hermite–Padé pair lift; two sheets.
-Split from: none. Split into: none.
+Split from: [dictionary-target.md](dictionary-target.md), its copy/pair sub-target.
+Split into: none.
 Parent OPEN target: [dictionary-target.md](dictionary-target.md); this is its
 copy/pair sub-target, not an independent solved transfer claim.
 
@@ -73,3 +74,9 @@ no blanket failure verdict is assigned.
 
 2026-11-05 Codex, dispatched gpt-6.1-sol medium; rules/source
 823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1. First D6 round.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D6-lifts` → `PD-T446`.

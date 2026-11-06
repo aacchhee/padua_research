@@ -42,7 +42,7 @@ not a divisor used by C4 on the required triangle.
 
 ## Retained candidate records
 
-### IDEA?nn-mop-stability-codex-D1-01 — explicit coefficient Jacobian
+### IDEA-530 — explicit coefficient Jacobian
 
 Aliases: moment derivative; AD-C4; induced row sum; monic path comparison.
 Question: compute the NN and fixed monic step-line first-order condition
@@ -70,7 +70,7 @@ N4..64 at both precisions; independent Fraction checks match all4416 entries
 at both families N3,4,6 exactly. Disposition: retained measured quantification
 and a standard PROVED local derivative theorem. No stability theorem.
 
-### IDEA?nn-mop-stability-codex-D1-02 — all-N rational-height bound
+### IDEA-531 — all-N rational-height bound
 
 Aliases: binomial exponential Chebyshev normality; explicit coarse upper bound.
 Question: at exact p1=2/5,p2=1/2 give an explicit all-N upper bound on the
@@ -85,7 +85,7 @@ Actual result: written proof in theory/conditioning-krawtchouk-bound.md.
 Disposition: retained PROVED supporting bound.
 It neither proves a sharp rate nor silently closes the original growth target.
 
-### IDEA?nn-mop-stability-codex-D1-03 — a single inverse-divisor mechanism
+### IDEA-532 — a single inverse-divisor mechanism
 
 Aliases: G3 kappa proportional to1/min|d|; measure proximity screen.
 Question/hypotheses: at fixed N8 in the two specified positive families,
@@ -100,12 +100,12 @@ change from8.68e4 to6.86e3 over beta gaps.5 to.025. Disposition: the literal
 constant-product description fails over the sampled gaps; no universal
 negative theorem or asymptotic exponent is inferred. This finite diagnostic is consolidated with D1-hard-03, whose later
 fixed-N proximity theorem in [conditioning-lower-proximity.md](theory/conditioning-lower-proximity.md)
-provides the PROVED scoped negative result PD-N?nn-mop-stability-codex-D1-hard-01.
+provides the PROVED scoped negative result PD-N162.
 The earlier no-PD-N/abandoned disposition applied only to this finite screen
 and is superseded by that analytic refutation; the sampled values remain
 historical measurements, not its proof. Complete sensitivity remains retained.
 
-### IDEA?nn-mop-stability-codex-D1-04 — sharp exponential growth law
+### IDEA-533 — sharp exponential growth law
 
 Aliases: explicit rho(p1,p2); digits-lost theorem.
 Question: prove an informative exponential lower bound and usable upper
@@ -171,3 +171,13 @@ scoped theorem rejects O(1/min|d|) as the second parameter tends to the first;
 the finite G3 screen above was only measurement and is not its proof premise.
 The successful lower-law subtarget and this negative mechanism result do not
 supply a sharp matching upper growth law or an algorithmic stability theorem.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `IDEA?nn-mop-stability-codex-D1-01` → `IDEA-530`.
+- `IDEA?nn-mop-stability-codex-D1-02` → `IDEA-531`.
+- `IDEA?nn-mop-stability-codex-D1-03` → `IDEA-532`.
+- `IDEA?nn-mop-stability-codex-D1-04` → `IDEA-533`.
+- `PD-N?nn-mop-stability-codex-D1-hard-01` → `PD-N162`.

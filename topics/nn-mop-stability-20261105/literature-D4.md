@@ -4,7 +4,7 @@
 
 Search scope: complete registry headings/aliases/summaries and obstruction/disposition tables; mechanism searches Christoffel/Geronimus/Toda/qd/measure modification/MOP; shortlisted IDEA-031/090/117/193/376–379 and predecessor candidate bodies. `literature/INDEX.md` read before source comparisons. Public fulltexts opened through the web connector; no shell network-policy bypass. Partial reading is itemized below; none of these three sources was inaccessible. No exhaustive priority/novelty conclusion.
 
-## LIT-567 (historical local aliases LIT?nn-mop-stability-codex-D4-01, LIT-D4-01)
+## LIT-567 (historical local aliases LIT-567, LIT-567)
 
 Aptekarev, Derevyagin, Miki, Van Assche, *Multidimensional Toda Lattices: Continuous and Discrete Time*, SIGMA 12 (2016), 054. [DOI](https://doi.org/10.3842/SIGMA.2016.054), [primary PDF](https://arxiv.org/pdf/1511.08098v3).
 
@@ -12,7 +12,7 @@ Aptekarev, Derevyagin, Miki, Van Assche, *Multidimensional Toda Lattices: Contin
 - LITERATURE: common Christoffel polynomial transport and common continuous/discrete multiple Toda are established prior constructions. Evaluation nonvanishing is an explicit condition of the Christoffel formula. The source uses exp(-tx); our code uses exp(+tx). Its marginal reduction prevents presenting a transform as a new generic NN reconstruction.
 - Limits: full determinant/Lax proofs were not read; no numerical stability theorem inspected or imported. D4-01/D4-04 contain independent finite-domain derivations. D4-C1/C3 are known mechanisms with a bounded implementation test, not new transformation claims.
 
-## LIT-568 (historical local aliases LIT?nn-mop-stability-codex-D4-02, LIT-D4-02)
+## LIT-568 (historical local aliases LIT-568, LIT-568)
 
 Kozhan, Vaktnäs, *Christoffel Transform and Multiple Orthogonal Polynomials*, J. Comput. Appl. Math. 476 (2026), 117121. [DOI](https://doi.org/10.1016/j.cam.2025.117121), [primary PDF](https://arxiv.org/pdf/2407.13946v2).
 
@@ -20,7 +20,7 @@ Kozhan, Vaktnäs, *Christoffel Transform and Multiple Orthogonal Polynomials*, J
 - LITERATURE: transformed NN coefficients and Christoffel algorithms already receive explicit treatment. This erases novelty from offering another common-transform NN updater without a different computational result.
 - Limits: no whole-paper proof verification or numerical stability comparison. Our formulas are proved locally and are not asserted to be an improvement over this paper's algorithm.
 
-## LIT?nn-mop-stability-codex-D4-03 (alias LIT-D4-03)
+## LIT-614 (alias LIT-614)
 
 Branquinho, Foulquié-Moreno, Mañas, *Multiple orthogonal polynomials: Pearson equations and Christoffel formulas*, Analysis Math. Phys. 12 (2022), 129. [DOI](https://doi.org/10.1007/s13324-022-00734-1), [primary PDF](https://arxiv.org/pdf/2106.12707) (connector served the published 59-page version).
 
@@ -31,3 +31,14 @@ Branquinho, Foulquié-Moreno, Mañas, *Multiple orthogonal polynomials: Pearson 
 ## Conclusions restricted to the search
 
 Common Toda/Christoffel/Geronimus mechanisms duplicate established algebra and IDEA-193's classification. The local work retained here concerns finite boundary formulas, an explicit normality safeguard counterexample, the fixed-orbit input obstruction, and finite binary64 outcomes. These are not an exhaustive novelty claim. Independent-weight transformations are only deferred until an actual generator and source-data construction are supplied.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `LIT-D4-01` → `LIT-567`.
+- `LIT-D4-02` → `LIT-568`.
+- `LIT-D4-03` → `LIT-614`.
+- `LIT?nn-mop-stability-codex-D4-01` → `LIT-567`.
+- `LIT?nn-mop-stability-codex-D4-02` → `LIT-568`.
+- `LIT?nn-mop-stability-codex-D4-03` → `LIT-614`.

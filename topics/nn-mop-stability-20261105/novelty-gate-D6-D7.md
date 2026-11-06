@@ -5,7 +5,7 @@ Rules/source: `823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1`; base/main:
 gpt-6.1-sol medium as dispatched, 2026-11-05. Exact backend effort metadata
 is not exposed. No scientific-priority or exhaustive novelty clearance is claimed.
 
-## Search scope and complete state scan
+## Search scope and retrospectively completed state scan
 
 Scanned all 1,016 lines of state/IDEAS.md: headings, IDs, aliases and summaries;
 read the obstruction/disposition tables, including the original 15 bivariate
@@ -56,7 +56,7 @@ unsuccessful. Round 1 tests exact algebraic separation first with elementary
 written reductions and a small Fraction diagnostic. At most three D6 rounds;
 no second round before the coordinator publishes the first-round boundary.
 
-### IDEA?nn-mop-stability-codex-D6-graph — ratio graph
+### IDEA-547 — ratio graph
 
 Aliases: y=phi(x); Radon–Nikodym graph; positive mixed-test realization.
 
@@ -71,7 +71,7 @@ Aliases: y=phi(x); Radon–Nikodym graph; positive mixed-test realization.
 - Result/disposition: recorded after testing in attempts/D6.md; positive ambient encoding retained, literal standard-grade identification scoped separately.
 - Canonical theory: theory/dictionary-graph.md; broad transfer target in dictionary-target.md.
 
-### IDEA?nn-mop-stability-codex-D6-copies — labelled copies
+### IDEA-548 — labelled copies
 
 Aliases: two coincident copies; two sheets; y=0/1; selector lift.
 
@@ -83,7 +83,7 @@ Aliases: two coincident copies; two sheets; y=0/1; selector lift.
 - Verdict: variant/background positive lift; standard-grade transfer deferred unless a quotient/regrading is supplied.
 - Canonical theory: dictionary-lifts.md. Actual results: attempts/D6.md.
 
-### IDEA?nn-mop-stability-codex-D6-HP — Hermite–Padé pairs
+### IDEA-549 — Hermite–Padé pairs
 
 Aliases: type-I pair; A(x)(1-y)+B(x)y; vector polynomials.
 
@@ -95,7 +95,7 @@ Aliases: type-I pair; A(x)(1-y)+B(x)y; vector polynomials.
 - Verdict/disposition: equivalent encoding at this stage; retained, no PD-N for equivalence. Resume with an explicit graded/boundary map.
 - Canonical record: dictionary-lifts.md; target OPEN.
 
-### IDEA?nn-mop-stability-codex-D6-lattice — lattice boundary realization
+### IDEA-550 — lattice boundary realization
 
 Aliases: finite triangle; zero curvature; covariant shifts; common spectral subspace.
 
@@ -112,3 +112,12 @@ Aliases: finite triangle; zero curvature; covariant shifts; common spectral subs
 D7's public-code task is authorised, but no external source commit is yet
 available. literature-access.md and external-code.md distinguish primary
 pages actually read, inherited assessments, failed access and unexecuted runs.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `IDEA?nn-mop-stability-codex-D6-HP` → `IDEA-549`.
+- `IDEA?nn-mop-stability-codex-D6-copies` → `IDEA-548`.
+- `IDEA?nn-mop-stability-codex-D6-graph` → `IDEA-547`.
+- `IDEA?nn-mop-stability-codex-D6-lattice` → `IDEA-550`.

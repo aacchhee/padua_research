@@ -1,4 +1,4 @@
-# PD-T?nn-mop-stability-codex-D1-04 — noncircular interior-d normality criterion
+# PD-T435 — noncircular interior-d normality criterion
 
 ID kind: PD-T. Aliases: scalar exact C4 normality certificate; opposite-corner
 converse. Split from: none. Supporting reduction for the separate finite
@@ -30,10 +30,11 @@ Candidate disposition: retained standard determinant/normality converse.
 
 ## Depends on
 
-PD-T286 defining systems and bordered h determinants; PD-T288's successor
-difference identity under the three base/successor normalities (its
-nonvanishing conclusion used an extra normality, not used here);
-the localized layer induction in PD-T289.
+PD-T286 defining systems and bordered h determinants; PD-T288's local
+four-corner argument, including its successor-difference identity under
+the three base/successor normalities (its nonvanishing conclusion used an
+extra normality, not used here); PD-T289's algebra and recursion, localized
+by this file's Localized NN lemma below.
 
 ## Proof or evidence
 
@@ -121,3 +122,9 @@ proof is outside this certificate theorem.
 Codex gpt-6.1-sol xhigh. The original round1 local/coarse proofs are unchanged.
 
 2026-11-06: audit-01 MINOR11 makes the localized lemma and degree bounds explicit; the certificate statement and finite input/table data are unchanged.
+
+## Identifier mapping — 2026-11-06
+
+Final identifiers use the permanent topic reservation; the provisional labels remain aliases:
+
+- `PD-T?nn-mop-stability-codex-D1-04` → `PD-T435`.

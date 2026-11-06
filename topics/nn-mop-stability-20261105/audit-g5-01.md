@@ -36,3 +36,7 @@ The arXiv source bundle is **not available to this auditor**: an enabled-network
 - **NOTE.** No independent exact-moment validation of the third-party closed-form references, Advanpix conditioning-error reproduction, MATLAB run, full NN metric comparison, or stable-algorithm theorem is supplied. Those are outside this finite reproduction, remain explicit and cannot be inferred from the passing case.
 
 No BLOCKING/MAJOR finding. PartB preparation may proceed. G4 remains forward threshold met with adverse strict-backward evidence, never PASS. audit01/02 and their scripts are untouched. Current results require no scientific re-audit; registry application and remaining hygiene changes get the distinct Claude readiness check. Only AC merges.
+
+## Reusable artifact verification — 2026-11-06
+
+The auditor added [check.py](audit-g5-01/check.py), which independently parses the committed output tables, verifies recorded artifact identities, recomputes the auditor/developer log ratios and selected-case gate, and optionally verifies every supplied-archive member against its full inventory. Actually executed with `--archive <AC-upload>`: PASS, archive verified, paper_table_verified=false. [Check output](preparation/g5-artifact-check.json). This is verification of the recorded rerun, not a second external execution or an assertion of paper-data authentication. It imports no third-party solver.
