@@ -3,7 +3,7 @@
 This file is written only by the topic orchestrator. Branch
 `codex/padua-lanczos-nonproduct-20261105`; [draft PR #30](https://github.com/aacchhee/padua_research/pull/30).
 
-## Status (2026-11-06): WORK (response to audit 01)
+## Status (2026-11-06): AUDIT (focused A3 diff after response01)
 
 PR #24's all-degree drift separation (PD-T324) and closure growth (PD-T328/329) hold on SH_n, an affine image of a product measure. This topic seeks the same on families that are genuinely non-product. Directions are in [handoff 01](../topics/padua-lanczos-nonproduct-20261105/handoffs/01-work.md):
 

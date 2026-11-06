@@ -67,7 +67,7 @@ Overall status: MEASURED.
 
 | Part | Status | Evidence / limit |
 |---|---|---|
-| Rational basis/creator identities (1)–(3) through eight, with (3) under BJ | MEASURED | Actual exact developer execution; independent rerun absent |
+| Rational basis/creator identities (1)–(3) through eight, with (3) under BJ | MEASURED | Actual exact developer execution; separate reruns recorded in [audit 01](../audit-01.md#independent-reruns-actually-executed) |
 | Seven-point spectral diagnostics | MEASURED, exploratory | Exact C entries plus binary64 SVD; no outward enclosure or global maximization |
 
 Candidate disposition: retained finite structure evidence. N3 full-capacity

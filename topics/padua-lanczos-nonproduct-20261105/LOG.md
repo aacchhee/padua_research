@@ -1,7 +1,7 @@
 # Span drift on genuinely non-product families: log
 
 - Branch: `codex/padua-lanczos-nonproduct-20261105` · Base: main `be9a831` (PR #29 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK (audit 01 returned findings) · Next: `Codex (gpt-6-astra, high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/04-response.md](handoffs/04-response.md)
+- Stage: AUDIT (focused A3 diff) · Next: `Claude (Opus 5.5 high): Continue codex/padua-lanczos-nonproduct-20261105.` · Open handoff: [handoffs/05-focused-audit.md](handoffs/05-focused-audit.md)
 - Reserved final-ID ranges: none. Under the PR #29 rules, reserve when first needed (normally at PR preparation).
 - Claims: P3 all-degree non-affine-product weight separation and uniform sufficient radius; P5 polynomial Padua capacities; P4 model/transfer lemmas and scoped covariance obstruction. Provisional IDs only; see [report](report.md).
 
@@ -21,7 +21,7 @@
 
 ## Runs needed
 
-- Development runs are complete. The next independent substantive audit is specified in handoff02. Unrun algebraic bulk scans and unresolved rates are listed in the [report](report.md); they are not premises of the analytic proofs. External archival delivery remains pending.
+- Development and substantive audit01 are complete. The response's A3 BJ qualifier proceeds to focused diff re-audit in handoff05. Unrun algebraic bulk scans and unresolved rates are listed in the [report](report.md); they are not premises of the analytic proofs. External archival delivery remains pending.
 - Optional, unrun: exact positive-Padua scan at degrees 2–16, all four rules,
   for the OPEN sharp-exponent question. A follow-up must select unsaturated
   Padua orders m>s, use exact algebraic inputs and full-source endpoints,
@@ -462,3 +462,24 @@ is recoverable by its pinned hash/later commit. N0's original harness
 cannot be recovered from Git. Frozen receipts remain byte-unchanged. These
 provenance limits do not alter the scientific comparisons; [audit01](audit-01.md)
 records its fresh reproductions and their scope.
+
+## 2026-11-06 — response01 complete; focused re-audit next
+
+- [response01](response-01.md) answers A1–A3 and MINOR1–18, preserves every
+  NOTE and records AC's decided Q1–Q3 without re-asking. Historical details
+  not preserved for A2 are explicitly unresolved facts, not invented reads.
+- A3 material correction is isolated in `3b0a990dda7a630cf4ea904639c01dad717c2ea9`
+  (parent `1f80951`): the finite central-binomial source chain is explicitly
+  under BJ. No mirror/alternating values or new proof were added.
+- Other corrections are in `04ba07bc10a680dc2a6bc90041f5013ba11482e7` and
+  this response output. MINOR16 is wording only: D4-invariant, not fully
+  rotation-invariant. No additional symmetry proof or material claim was
+  added. P5 checker comments have the same executable AST as before.
+- Frozen evidence/inventory and audit01 remain byte-unchanged. No new scan,
+  receipt rewrite, cleanup, ID reservation or shared-registry edit occurred.
+  No mathematical tests were repeated: the response changes statements and
+  records, and relies on the completed substantive audit's computations.
+- [Handoff05](handoffs/05-focused-audit.md) requests Claude Opus5.5 high
+  review of the A3 diff only, with the mechanical response/readiness inputs.
+  Final-ID allocation and shared registry application remain subsequent
+  preparation tasks; this branch stays draft.
