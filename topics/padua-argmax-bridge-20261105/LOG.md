@@ -674,3 +674,39 @@
 - The untracked directory-only metadata prototype was byte-identically relocated from the accidentally nested topic/local-output to the existing ignored local-output/argmax-bridge-20261105/metadata-index-v4/first-directory-only tree. Original threefileidentities unchanged; no mathematical evidence was removed or archived.
 
 - The frozen D15 independent result report97044e29... has one empty EOF line. Its bytes/hash are preserved; only that prose file is exempt from the EOF-blank style check, with all other whitespace checked normally. No auditor text was edited by root.
+
+
+### D20 prospective changed-estimate gate after published D18 failure
+
+- D18 first failure/source/data are publishedca8d52a; independentreportbeaf8f48... nowacceptsnear7000andtheexactscopedfarobstruction. No D18 source/threshold/parameter is retuned. NewD20 paper gate asks whether D07's already proved GLOBAL regularized outer/mesh identity can be combined with a correctly matched OLD global retained-row bound, removingthe dominantI_n charge at the level of a new proved error telescope. The first kill test is the exact operator/row/weight/continuousC2 match—not a numerical threshold check.
+- If that match closes, a newfullfar allowance may use phase-correlatedPonly inE_D04 anduniformboundsforotherpositivepieces; ratio/u monotonicity thenelementary. Primary7000ONLY under<=5CPUdirectedscalar afterfreshproof/source/SPECfreeze, no fallback/search/native/quad/phase/board/rootjobs. AcceptedD18near7000andD17corners4096maycloseglobal7000ONLYafternewfarproofanddistinctreview. A missingglobalrowmatch keeps the targetOPEN. This is D20preparation, not a completedround orunchanged-source retry.
+
+
+### AC extends campaign by15 rounds; closing the gap is the priority
+
+- Latest AC instruction: “Obviously the number10000 is a bit random here and can be lowered. I authorize up to15 extra rounds, some may be with astra ultra if warranted, to close the gap.” This adds15 to the prior25-round ceiling: D01–D40 total, with D26–D40 the extension. Existing completed counts are not reset or inflated. Same objective/session continues under the existing openhandoff09; this newer explicit authority overrides its original25cap without editing its instruction body.
+- Priority is closing the actual finite/all-degree gap, not optimizing a nominal10000 threshold or accumulating isolated degrees. Current proved boundaries remain global2–40,512,2048 andalln>=10000; near noncorner exclusion7000 andactualcornerdescent4096 are supporting results, not global coverage at those degrees. D20 targets the still-bindingfar allowance after the published D18 failure. Cheap certification/adaptiveproof artifacts support eventual residual finite closure. Astraultra remains allowed with prospective written justification for hard joint obligations; no automatic effort/cap escalation or unrecorded retry.
+
+
+### AC delivery directive: Syvert2 A–B–C pack by round39
+
+- Latest AC: “Use up approved reasoning budget to both reduce certificate cost and lower10000-bound. Whatever is best at round39(or sooner if you do not see possibilities) has to be packed into a syvert pack of the same structure as A-B-C packs(check bttb-research) so that pack can be audited and then run. Choose syvert2.”
+- Continue both research objectives under the40-round ceiling. Freeze the best complete results byD39(or earlier if no productive path remains), with the finalstage reserved for a concrete auditable Syvert2 pack matching the ACTUAL referenced bttb-research A–B–C layout/protocol. Inspect that reference now; do not invent its structure. Pack audit must precede execution. No unaudited Syvert dispatch is authorized by research progress alone. Existing data-size, source/checker separation, exact accounting and push rules remain. No new handoff while this same session continues; directive recorded here and in campaign.
+
+
+### D22 prospective hard mathematics allocation
+
+- AC explicitly permits Astra ultra. Before allocation root records why: the remaining near threshold is limited by cancellation of the ACTUAL origin error, anisotropic fractional modulus, and finite retained-row/outer/quadrature terms. D13 proved two supports but left their joint relative telescope OPEN; merely changing scalar thresholds cannot resolve that obstruction. A bounded Astra ultra paper block will independently seek a fully charged origin-relative error or a sharper anisotropic near comparison, with complete novelty/obstruction gate and no numerical threshold scan. This is especially hard coupled mathematics and adversarial reconstruction, distinct from routine code/scalar work. Requested gpt-6-astra ultra; serving metadata remains unexposed.
+- D22 owns new disjoint candidate/proof records only, no adoption or execution. First kill is exact subtraction of actual-origin/phase operators; missing terms must remain OPEN. At most one preregistered directed scalar at a justified single threshold, <=5CPU, only after formulas/source/SPEC frozen and root release. Paper block bounded to45min; no unbounded restart. Root integrates after distinct review.
+
+
+### D18 and D19 review closure; D20 first result checkpoint
+
+- D18 distinct reportbeaf8f48... ACCEPTS near7000gap1/400, affine majorant and scoped far obstruction, independent41intervals/5controls; CPUcheckpoint.121029, soleexit0/no retry. Root preserves original far/global7000 OPEN under that failed recipe, adopts the split positive scopes.
+- D19 report5b7d66f9... ACCEPTS general adaptive norm and same2048 pruned application. Independent metadata replay.049102CPUcheckpoint, no natives,41S+3actual/61nodes/M35 exact. Eight accepted merges checked; rejected proposals source-reviewed and not proof premises. No runtime speedup claimed. D18/D19 closures preserve audited proof prefixes; total19/40complete.
+- D20 developer new whole-profile GLOBAL regularized telescope is checkpointed before further formula work: all six retained rows charged explicitly, far7000slack>.0762299033025718; sole receipt5a594e00..., source7a006bc3..., CPUcheckpoint.043236, no retry. Four split developer proofs await distinct Astra high review and independently preregistered7000 directed arithmetic. Root boundary remains10000 pending that closure.
+- D21 mathematical/static-source development and D22 hard-paper block are disjoint, no native run or pack launch.
+
+### AC clarification: packing contingent on remaining gap
+
+- AC: “the pack has to be prepared only at the end when we know that it is needed -- maybe you close the gap before”. This refines the delivery directive: no pack preparation during research. Preserve the read-only A/B/C reference inventory already gathered, but build no skeleton/scripts/pack now. At research end, prepare and audit a Syvert2 pack only if the gap still needs computation. Closing the gap analytically would remove that need.

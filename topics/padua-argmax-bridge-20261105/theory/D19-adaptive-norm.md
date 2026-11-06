@@ -147,3 +147,8 @@ those missing verification obligations explicit, not automatic.
 prospective finite test are in the D19 idea/attempt. No numerical,
 native or phase job is part of this analytic proof. Distinct review,
 any finite application and source adoption remain separate.
+
+
+## Root review closure — 2026-11-06
+
+Distinct review [D19](../independent-checks-D19-adaptive-norm.md), SHA256 `5b7d66f9066b5db34a65617f117275bde152e44689c8e8d102347f8dba0155f1`, accepts the adaptive norm and exact n2048 compositional application. Root adopts these scopes: same accepted D15 intervals, new own-tree norm35,61nodes and41S+3actual points. No fresh native computation or runtime speedup is claimed. Original reviewed text above is preserved; final Claude audit remains separate.

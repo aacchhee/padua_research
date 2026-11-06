@@ -173,3 +173,6 @@ upper/axis obstruction and bounded cheap-backend source checks pass their
 stated scopes. No full cheap-backend cover or higher-degree scaling law
 is claimed. C02 gates the full known n32 input on changed source and
 new mathematical cost reductions; no legacy degree extension.
+
+
+2026-11-06 D18/D19 independently accepted: near noncorner exclusion7000 and scoped failed far budget; adaptive own-tree norm/pruned2048 geometry41S+3actual. Reviews in independent-checks-D18-phase-far.md and independent-checks-D19-adaptive-norm.md. D20 newfar7000 firstPASS is review pending. No threshold adoption or runtime speedup from these metadata results. D21/D22 prospective gates are in LOG; packing deferred until research end and only if needed.

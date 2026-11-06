@@ -1,12 +1,12 @@
 # Post-audit research campaign — 2026-11-06
 
-AC authorizes up to **25 NEW coordinated rounds** under the previous rules.
-The closed C01–C15 campaign remains15/15. This campaign uses D01–D25,
+AC first authorized **25 NEW coordinated rounds**, then authorized **15 extra rounds** on2026-11-06: a total ceiling of **40 coordinated rounds** under the same rules.
+The closed C01–C15 campaign remains15/15. This campaign uses D01–D40 (D26–D40 are the extension),
 counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **17/25** (D01–D17). Active: **D18**; D19 preparation in parallel.
+Completed: **19/40** (D01–D19). Active: **D20**; D21 certifier development and D22 hard-paper block in parallel.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -54,5 +54,13 @@ No main push, merge, force, tags, .github/settings or major cleanup.
 | D16 | COMPLETE | Phase-correlated analytic budget | Separate actual-origin error and rho-dependent absolute allowance; primary10000 scalar only after preregistration/source freeze. Independently accepted global onset10000, with near11/1000/far1/400 gaps. |
 
 | D17 | COMPLETE | Analytic three-vertex corner bridge | Independently accepted GLOBALnormn32 and actual-corner rectangles with1/8 loss for every n>=4096. Scalar4096 only; no global4096 theorem. |
-| D18 | ACTIVE | Correlated far allocation and stronger near budget | First7000nearPASS/farFAIL; exact constant-charge obstruction retained. Split proofs and OPENfar/global under review, no retry. |
-| D19 | PREPARING | Adaptive self-norming and certificate pruning | Metadata-only same2048 result reduces77→61nodes and51→41Spoints; final own-corner norm35, pending distinct review, no runtime claim. |
+| D18 | COMPLETE | Correlated far allocation and stronger near budget | First7000nearPASS/farFAIL; exact constant-charge obstruction retained. Independent review accepts near7000gap1/400, majorant and scoped far obstruction; original far/global recipe remainsOPEN, no retry. |
+| D19 | COMPLETE | Adaptive self-norming and certificate pruning | Metadata-only same2048 result reduces77→61nodes and51→41Spoints; final own-corner norm35, independently accepted, no runtime claim. |
+
+Delivery constraint from AC: use reasoning budget for BOTH cost reduction and analytic-bound reduction. ByD39(or earlier exhaustion), freeze the best complete result into an auditable Syvert2 pack matching actual bttb-research A–B–C structure; audit before execution. Finalstage within40-round ceiling reserved for concrete pack integration.
+
+| D20 | ACTIVE | New global regularized outer/mesh telescope | Developer sole7000 scalarPASS, new six-row bound explicitly charges central pair; independent review pending, no adoption yet. |
+| D21 | PREPARING | Static geometry fresh-point verifier | Separate math/SPEC and technical code development; no discovery, one proposed upper-gap6912 case only after audits. |
+| D22 | PREPARING | Actual-origin relative or anisotropic near proof | Prospectively justified bounded Astra ultra paper block, no scalar execution without new gate. |
+
+AC clarification: pack preparation waits until research ends and is necessary only if a gap remains. Reference inventory may be retained; no pack skeleton or run preparation now.

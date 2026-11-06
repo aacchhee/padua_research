@@ -47,3 +47,8 @@ the scoped failure is preserved in D18-budget-obstruction.md. Therefore
 this global target remains **OPEN**. No global7000 adoption, finite degree
 certificate, fallback/threshold search or parameter retuning occurred.
 The existing accepted D16 global onset10000 remains unchanged.
+
+
+## Root review closure — 2026-11-06
+
+Distinct review [D18](../independent-checks-D18-phase-far.md), SHA256 `beaf8f48f7a13f3a1241c00fd882310e5d30f03dc798419b4996d5640525ceaa`, accepts this record at its stated scope. Root adopts near noncorner exclusion for all n>=7000 with gap1/400 and the affine majorant/scoped budget obstruction. D18 far/global7000 remain OPEN under this failed recipe; later independent recipes do not alter this first failure. Original reviewed text above is preserved. Final Claude audit remains separate.
