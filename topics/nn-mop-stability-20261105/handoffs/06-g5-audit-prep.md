@@ -2,7 +2,7 @@
 
 A new numbered file each time work passes to another agent or session, opened by the orchestrator holding the previous handoff. Never overwrite an earlier handoff or alter its body; only the status line changes. AC starts the step with `<Agent> (<model, effort>): Continue <branch>.`
 
-- Status: open
+- Status: done in dd092fb74b3030fe28dd8dd221ef59e0e80b2b72
 - Previous handoff: [05-reaudit.md](05-reaudit.md)
 
 - Next agent / model / effort: Codex.
