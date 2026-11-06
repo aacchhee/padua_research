@@ -20,3 +20,10 @@
 ## Runs needed
 
 - K0–K5 and S1–S4 as in handoff 01.
+
+## 2026-11-06 — Codex continuation setup
+
+- Rules read at full input head `2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861`; current main is `76ba4214b100c86a44941f5e9a662ce9ce48efb8`, already the branch parent. No base merge needed.
+- [Plan](plan.md), [gates](gates.md), and [rounds](rounds.md) registered before runs. K0 assigned to gpt-6.1-sol medium; remaining directions wait for K0. Model allocation and disjoint ownership follow handoff01.
+- Shell Git fetch failed connecting to configured proxy port8080. GitHub connector reads work; frozen source snapshot preserves repository paths in `/workspace/sharp-work`. Input inventory records Git blobs; unchanged source bytes copied from the existing checkout are hash verified. Publication uses Git data API with expected-head lease. The older checkout is untouched.
+- No novelty content added at setup; novelty gates apply before model development. No range reserved. No new result, extrapolation or independent check claimed.
