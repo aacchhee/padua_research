@@ -377,3 +377,7 @@ recorded by the final inventory.
 - Auditor check code is in [audit-01-checks/](audit-01-checks/).
 - Questions Q1–Q3 (P3 gate timing, P3 scope intent, N2 skipped before the P3/P5 proofs) were referred to AC on 2026-11-06.
 - Handoff 02 is done in `ea13ed4`. Next: [handoff 03](handoffs/03-response.md), the Codex response.
+- **AC decision, 2026-11-06, on Q1:** "Q1 is accepted."
+  - The disclosed P3 gate-timing deviation is accepted with the qualifier proposed in audit-01 A2.
+  - The A2 record completion, items (a)–(d), still belongs to the Codex response. The qualifier's AC-decision date is 2026-11-06.
+  - Q2 and Q3 remain open; AC asked for Claude's suggestions.
