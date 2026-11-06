@@ -1,0 +1,892 @@
+{
+  "topic": "nn-mop-stability-20261105",
+  "rules_source": "414e781567078560b7e233aace3661abb88e37ab",
+  "date": "2026-11-06",
+  "reservation_check": "topics/nn-mop-stability-20261105/preparation/reservation-check.json",
+  "allocation_ledger": "topics/nn-mop-stability-20261105/ALLOCATIONS.md",
+  "mappings": {
+    "PD-T?nn-mop-stability-codex-D1-01": "PD-T432",
+    "PD-T?nn-mop-stability-codex-D1-02": "PD-T433",
+    "PD-T?nn-mop-stability-codex-D1-03": "PD-T434",
+    "PD-T?nn-mop-stability-codex-D1-04": "PD-T435",
+    "PD-T?nn-mop-stability-codex-D1-05": "PD-T436",
+    "PD-T?nn-mop-stability-codex-D1-hard-01": "PD-T437",
+    "PD-T?nn-mop-stability-codex-D2-01": "PD-T438",
+    "PD-T?nn-mop-stability-codex-D2-02": "PD-T439",
+    "PD-T?nn-mop-stability-codex-32": "PD-T440",
+    "PD-T?nn-mop-stability-codex-31": "PD-T441",
+    "PD-T?nn-mop-stability-codex-33": "PD-T442",
+    "PD-T?nn-mop-stability-codex-D4-01": "PD-T443",
+    "PD-T?nn-mop-stability-codex-D4-04": "PD-T444",
+    "PD-T?nn-mop-stability-codex-D6-graph": "PD-T445",
+    "PD-T?nn-mop-stability-codex-D6-lifts": "PD-T446",
+    "PD-T?nn-mop-stability-codex-D6-target": "PD-T447",
+    "PD-T?nn-mop-stability-codex-D1-target": "PD-T448",
+    "PD-T?nn-mop-stability-codex-stability-target": "PD-T449",
+    "PD-N?nn-mop-stability-codex-D1-hard-01": "PD-N162",
+    "PD-N?nn-mop-stability-codex-31": "PD-N163",
+    "PD-N?nn-mop-stability-codex-D4-02": "PD-N164",
+    "PD-N?nn-mop-stability-codex-D4-03": "PD-N165",
+    "PD-N?nn-mop-stability-codex-D4-05": "PD-N166",
+    "PD-N?nn-mop-stability-codex-D6-literal": "PD-N167",
+    "PD-N?nn-mop-stability-codex-D6-copy": "PD-N168",
+    "IDEA?nn-mop-stability-codex-D1-01": "IDEA-530",
+    "IDEA?nn-mop-stability-codex-D1-02": "IDEA-531",
+    "IDEA?nn-mop-stability-codex-D1-03": "IDEA-532",
+    "IDEA?nn-mop-stability-codex-D1-04": "IDEA-533",
+    "IDEA?nn-mop-stability-codex-D1-hard-01": "IDEA-534",
+    "IDEA?nn-mop-stability-codex-D1-hard-02": "IDEA-535",
+    "IDEA?nn-mop-stability-codex-D1-hard-03": "IDEA-536",
+    "IDEA?nn-mop-stability-codex-31": "IDEA-537",
+    "IDEA?nn-mop-stability-codex-32": "IDEA-538",
+    "IDEA?nn-mop-stability-codex-33": "IDEA-539",
+    "IDEA?nn-mop-stability-codex-34": "IDEA-540",
+    "IDEA?nn-mop-stability-codex-D4-01": "IDEA-541",
+    "IDEA?nn-mop-stability-codex-D4-02": "IDEA-542",
+    "IDEA?nn-mop-stability-codex-D4-03": "IDEA-543",
+    "IDEA?nn-mop-stability-codex-D4-04": "IDEA-544",
+    "IDEA?nn-mop-stability-codex-D4-05": "IDEA-545",
+    "IDEA?nn-mop-stability-codex-D4-06": "IDEA-546",
+    "IDEA?nn-mop-stability-codex-D6-graph": "IDEA-547",
+    "IDEA?nn-mop-stability-codex-D6-copies": "IDEA-548",
+    "IDEA?nn-mop-stability-codex-D6-HP": "IDEA-549",
+    "IDEA?nn-mop-stability-codex-D6-lattice": "IDEA-550",
+    "IDEA?nn-mop-stability-codex-D3-deferred-core": "IDEA-551",
+    "IDEA?nn-mop-stability-codex-D3-deferred-biorthogonal": "IDEA-552",
+    "IDEA?nn-mop-stability-codex-D3-deferred-multipath": "IDEA-553",
+    "IDEA?nn-mop-stability-codex-D1-deferred-vandermonde": "IDEA-554",
+    "IDEA?nn-mop-stability-codex-D1-deferred-potential": "IDEA-555",
+    "LIT?nn-mop-stability-codex-D4-01": "LIT-567",
+    "LIT-D4-01": "LIT-567",
+    "LIT?nn-mop-stability-codex-D4-02": "LIT-568",
+    "LIT-D4-02": "LIT-568",
+    "LIT?nn-mop-stability-codex-D4-03": "LIT-614",
+    "LIT-D4-03": "LIT-614"
+  },
+  "records": [
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D1-01",
+      "kind": "PD-T",
+      "title": "Local derivative and induced NN/monic-path condition numbers",
+      "aliases": [
+        "NN Jacobian",
+        "mixed componentwise-input conditioning",
+        "fieldwise coefficient sup metric",
+        "monic step-line derivative"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/conditioning-local.md",
+      "final_id": "PD-T432",
+      "scope": "Normal finite common-support triangle; analytic coefficient map and exact weighted row-sum first-order induced norm",
+      "disposition": "Retained standard derivative specialization; intrinsic sensitivity, no algorithmic stability theorem",
+      "dependencies": "PD-T286/288/289",
+      "source_relations": "Split from: [D1 sharp growth target](conditioning-growth-target.md), OPEN. Split into: none."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D1-02",
+      "kind": "PD-T",
+      "title": "Explicit coarse all-N Krawtchouk conditioning upper bound",
+      "aliases": [
+        "rational-height NN bound",
+        "exponential Chebyshev normality",
+        "finite all-N conditioning upper bound"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/conditioning-krawtchouk-bound.md",
+      "final_id": "PD-T433",
+      "scope": "Every N>=2 at p1=2/5,p2=1/2; normality and the explicit rational-height bound in the record",
+      "disposition": "Retained coarse bound; sharp matching rate remains OPEN",
+      "dependencies": "PD-T286; PD-T432",
+      "source_relations": "Split from: [D1 sharp growth target](conditioning-growth-target.md), OPEN. Split into: none."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D1-03",
+      "kind": "PD-T",
+      "title": "Full-grid NN and monic-step-line conditioning",
+      "aliases": [
+        "analytic AD table",
+        "D1 rounds 1 and 2"
+      ],
+      "status": "MEASURED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/conditioning-measurements.md",
+      "final_id": "PD-T434",
+      "scope": "Both exact rational families, every integer N4–64, full 3N-column Jacobian at180/260dps; convergence is not enclosure",
+      "disposition": "Finite sensitivity table retained; no rounding-error or stability theorem",
+      "dependencies": "PD-T286/288/289/290; PD-T432; PD-T436",
+      "source_relations": "Split from: D1 sharp all-N growth target. Split into: none."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D1-04",
+      "kind": "PD-T",
+      "title": "Noncircular interior-d normality criterion",
+      "aliases": [
+        "scalar exact C4 normality certificate",
+        "opposite-corner converse"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/conditioning-normality-certificate.md",
+      "final_id": "PD-T435",
+      "scope": "N>=2; positive marginals, defined exact C4 through N−2 and every interior d nonzero imply all mixed normalities through N",
+      "disposition": "Retained sufficient criterion; no all-N Hahn conclusion",
+      "dependencies": "PD-T286/288/289 as localized in the record",
+      "source_relations": "converse. Split from: none. Supporting reduction for the separate finite Hahn verification; the application is not a split-off conjunct of this theorem. Split into: none."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D1-05",
+      "kind": "PD-T",
+      "title": "Finite exact Hahn normality",
+      "aliases": [
+        "all 61 Hahn triangles",
+        "exact interior-divisor certificate"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/conditioning-hahn-normality-finite.md",
+      "final_id": "PD-T436",
+      "scope": "Exactly every N4–64 for beta1=1,beta2=3/2,gamma=1;61 triangles and43,676 exact interior checks",
+      "disposition": "Finite computer-assisted theorem retained; other N/parameters excluded",
+      "dependencies": "PD-T286; PD-T435",
+      "source_relations": "Split from: none. Split into: none."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D1-hard-01",
+      "kind": "PD-T",
+      "title": "Exponential Krawtchouk NN conditioning lower bound",
+      "aliases": [
+        "alternating binomial weight witness",
+        "terminal Hermite interpolation",
+        "explicit Krawtchouk sensitivity growth"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/conditioning-lower-krawtchouk.md",
+      "final_id": "PD-T437",
+      "scope": "Every N>=2, fixed rational binomial pair and unrestricted mixed-input/field-sup metric; explicit terminal parity witness, liminf kappa_N^(1/N)>=5+2sqrt(6)",
+      "disposition": "Retained lower bound; matching rate and finite-radius error law OPEN",
+      "dependencies": "PD-T286/288/289; PD-T432",
+      "source_relations": "Split from: [D1 sharp growth target](conditioning-growth-target.md), OPEN. Split into: none."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D2-01",
+      "kind": "PD-T",
+      "title": "Finite C4 post-marginal stage isolation",
+      "aliases": [
+        "stable-marginal comparator",
+        "oracle-marginal isolation"
+      ],
+      "status": "MEASURED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/d2-stage-isolation.md",
+      "final_id": "PD-T438",
+      "scope": "Both frozen families at N4/8/12/16/24/32; reorthogonalized and rounded-oracle marginals with unchanged C4 layers",
+      "disposition": "Post-marginal computation/representation amplification retained; no universal instability theorem",
+      "dependencies": "PD-T286/288/289/290",
+      "source_relations": "Split from: none. Split into: none. Overall status: **MEASURED**."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D2-02",
+      "kind": "PD-T",
+      "title": "Anchored alternating-path spectral diagnostic",
+      "aliases": [
+        "fixed-step-line recovery",
+        "anchored path diagnostic"
+      ],
+      "status": "MEASURED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/d2-path-diagnostic.md",
+      "final_id": "PD-T439",
+      "scope": "Fixed alternating path and d0 anchor on the frozen comparison grid; recovered spectra/weights may be nonreal or negative",
+      "disposition": "Path diagnostic only; omitted coefficients prevent full-array backward interpretation",
+      "dependencies": "PD-T289; finite numerical eigensolver/inversion assumptions",
+      "source_relations": "Split from: none. Split into: none. Overall status: **MEASURED**."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-32",
+      "kind": "PD-T",
+      "title": "Native direct orthobasis and node-constraint comparison",
+      "aliases": [
+        "orthobasis whole-triangle bake-off",
+        "node-space QR"
+      ],
+      "status": "MEASURED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/native-measurements.md",
+      "final_id": "PD-T440",
+      "scope": "A with LU/QR/SVD and B nodeqr, both families N4/8/12/16/24/32; finite gains and losses retained",
+      "disposition": "Known equivalent formulations; LU/B gain over2digits at N16 both families, no general stability or novelty claim",
+      "dependencies": "PD-T286/290",
+      "source_relations": "Split from: [stable-solver-target.md](stable-solver-target.md), as a separate supporting, scoped-negative or measured result, not a solved target case. Split into: none."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-31",
+      "kind": "PD-T",
+      "title": "Local actual-image joint-data NN backward geometry",
+      "aliases": [
+        "common-support compatible image",
+        "mass-gauged NN embedding",
+        "nearest compatible array",
+        "projected joint-data backward error"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/backward-local-manifold.md",
+      "final_id": "PD-T441",
+      "scope": "Ordered positive mass-one normal data; analytic injective immersion of dimension3N−2, local SPD nearest projection and first-order formulas",
+      "disposition": "Retained geometry; strict beta differs from a correction/data pair; certified scalable fit OPEN",
+      "dependencies": "PD-T286; elementary finite spectral theory and analytic implicit function theorem",
+      "source_relations": "Split from: [stable-solver-target.md](stable-solver-target.md), as a separate supporting, scoped-negative or measured result, not a solved target case. Split into: none."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-33",
+      "kind": "PD-T",
+      "title": "Full common-data stationary-fit witnesses",
+      "aliases": [
+        "whole-array Gauss–Newton shadow witness",
+        "positive common-data fit"
+      ],
+      "status": "MEASURED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/backward-projection-measurements.md",
+      "final_id": "PD-T442",
+      "scope": "Committed12-case C4/LU/nodeqr reference at N4/8 both families; positive rational common-data witnesses and all348 defining systems exactly nonsingular",
+      "disposition": "N4 native correction/data components below100u; N8 misses100u; feasible pairs, no certified nearest minimizer or general stability",
+      "dependencies": "PD-T432; PD-T441; PD-N163; committed projection reference",
+      "source_relations": "common-data fit. Split from: [stable-solver-target.md](stable-solver-target.md), as a separate supporting, scoped-negative or measured result, not a solved target case. Split into: none."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D4-01",
+      "kind": "PD-T",
+      "title": "Finite common Christoffel transport",
+      "aliases": [
+        "common spectral shift",
+        "NN Darboux update",
+        "Christoffel ratio transport"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/integrable-christoffel.md",
+      "final_id": "PD-T443",
+      "scope": "N>=1; old and transformed normal triangles, c outside nodes; determinant/polynomial ratios and O(N²) finite NN update",
+      "disposition": "Known algebra retained as a supplied-array tool; no source construction or numerical stability theorem",
+      "dependencies": "PD-T286/288; LIT-567/568 attributed context",
+      "source_relations": "Split from: D4-C1, exact invariant supporting the unresolved stability target. Split into: none."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D4-04",
+      "kind": "PD-T",
+      "title": "Finite common Toda closure",
+      "aliases": [
+        "finite NN exponential flow",
+        "common-time multidimensional Toda"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/integrable-toda.md",
+      "final_id": "PD-T444",
+      "scope": "Exact moment-defined initial array and common exp(tx) weights on its connected normality interval; S_degreeN=0 terminal closure and O(N²) RHS",
+      "disposition": "Known exact flow retained; RK4 endpoint pilots do not establish invariant preservation or stable solver",
+      "dependencies": "PD-T286; LIT-567 attributed context",
+      "source_relations": "Split from: D4-C3, exact supporting invariant of an OPEN numerical-continuation target. Split into: none."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D6-graph",
+      "kind": "PD-T",
+      "title": "Positive ratio-graph mixed-test encoding",
+      "aliases": [
+        "ratio graph",
+        "mixed-test positive measure"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/dictionary-graph.md",
+      "final_id": "PD-T445",
+      "scope": "N>=1, common distinct real nodes and positive weights; graph masses w1 at (x,w2/w1) exactly encode both type-II test families",
+      "disposition": "Positive ambient identity retained; full total-degree positivity/NN-to-bivariate transfer does not follow",
+      "dependencies": "PD-T286 defining moment notation; elementary sums",
+      "source_relations": "Split from: none (supporting result for dictionary-target.md). Split into: none. Proposed elementary background result; no novelty claim."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D6-lifts",
+      "kind": "PD-T",
+      "title": "Copy/pair positive graded transfer sub-target",
+      "aliases": [
+        "selectors",
+        "Hermite–Padé pair lift",
+        "two sheets"
+      ],
+      "status": "OPEN",
+      "source_file": "topics/nn-mop-stability-20261105/theory/dictionary-lifts.md",
+      "final_id": "PD-T446",
+      "scope": "Explicit positive quotient/grading, symmetric coordinate sections, finite boundary and stable transport for the whole normal NN triangle",
+      "disposition": "Deferred copy/pair transfer; selector identities are minor routine facts, not solved target parts",
+      "dependencies": "PD-T447; original type-I/type-II moment equations; LIT-347/119 context",
+      "source_relations": "Split from: [dictionary-target.md](dictionary-target.md), its copy/pair sub-target. Split into: none."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D6-target",
+      "kind": "PD-T",
+      "title": "Exact positive bivariate NN transfer target",
+      "aliases": [
+        "graph/copies/HP/lattice dictionary",
+        "positive transfer"
+      ],
+      "status": "OPEN",
+      "source_file": "topics/nn-mop-stability-20261105/theory/dictionary-target.md",
+      "final_id": "PD-T447",
+      "scope": "Specified finite positive scalar model, grading/quotient, coordinate actions, boundary/gauge and whole-array/stability correspondence",
+      "disposition": "Positive ambient encodings support the target; scoped literal failures do not reject the general transfer",
+      "dependencies": "PD-T286/288/289; PD-T057; PD-N100; PD-T445; PD-T446; PD-N167; PD-N168",
+      "source_relations": "Split from: none. Split into: [dictionary-lifts.md](dictionary-lifts.md), the OPEN copy/pair sub-target (graph identity is a supporting result)."
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-D1-target",
+      "kind": "PD-T",
+      "title": "Sharp matching conditioning-growth target",
+      "aliases": [
+        "D1 sharp growth-law target",
+        "useful matching rate"
+      ],
+      "status": "OPEN",
+      "source_file": "topics/nn-mop-stability-20261105/theory/conditioning-growth-target.md",
+      "final_id": "PD-T448",
+      "scope": "Useful matching all-N growth with explicit norms/constants/radius for the exact Krawtchouk/Hahn families",
+      "disposition": "Original D1 target retained OPEN; lower/coarse upper and finite measurements are supporting results, not a PARTIAL decomposition",
+      "dependencies": "PD-T286/288/289/290; PD-T432; PD-T433; PD-T437; PD-T434",
+      "source_relations": "Split from: none; durable home of the original D1 target. Split into: conditioning-local.md, conditioning-krawtchouk-bound.md, conditioning-lower-krawtchouk.md and conditioning-measurements.md are"
+    },
+    {
+      "provisional_id": "PD-T?nn-mop-stability-codex-stability-target",
+      "kind": "PD-T",
+      "title": "General stable native NN solver target",
+      "aliases": [
+        "original stable-algorithm target",
+        "joint backward stability"
+      ],
+      "status": "OPEN",
+      "source_file": "topics/nn-mop-stability-20261105/theory/stable-solver-target.md",
+      "final_id": "PD-T449",
+      "scope": "Normal finite common-support positive inputs; quantified strict or expressly amended correction/data stability model for the whole NN array",
+      "disposition": "No general weak/joint backward-stability theorem; finite gains, local geometry and N4 witnesses do not make target PARTIAL",
+      "dependencies": "PD-T286/288/289/290; PD-T440; PD-T441; PD-N163; PD-T442",
+      "source_relations": "Split from: none; durable home of the original campaign/D3/D5 target. Split into: native-measurements.md, backward-local-manifold.md, backward-dyadic-obstruction.md and backward-projection-measurements.md"
+    },
+    {
+      "provisional_id": "PD-N?nn-mop-stability-codex-D1-hard-01",
+      "kind": "PD-N",
+      "title": "One inverse NN divisor does not govern measure proximity",
+      "aliases": [
+        "fixed-N G3 obstruction",
+        "normalized alternating binomial direction",
+        "higher-order measure-proximity sensitivity"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/conditioning-lower-proximity.md",
+      "final_id": "PD-N162",
+      "scope": "Every fixed N>=4, p1=2/5,p2=2/5+delta,0<delta<=1/10; kappa_N*d_min diverges as delta→0+",
+      "disposition": "REJECTED: refuted, only O(1/d_min)/proportionality for this binomial family and declared metric",
+      "dependencies": "PD-T286/289; PD-T432; PD-T437",
+      "source_relations": "Split from: the D1 G3 single-inverse-divisor candidate. Split into: none."
+    },
+    {
+      "provisional_id": "PD-N?nn-mop-stability-codex-31",
+      "kind": "PD-N",
+      "title": "Frozen raw NN array has no exact joint-data inverse",
+      "aliases": [
+        "binary64 compatibility obstruction",
+        "strict backward error infinity witness"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/backward-dyadic-obstruction.md",
+      "final_id": "PD-N163",
+      "scope": "Exactly the five displayed dyadic N4 Krawtchouk LU fields; necessary B2 residual is nonzero, so strict beta=+infinity",
+      "disposition": "REJECTED: refuted, literal input-only exact realization of this raw array; corrected representations and stable algorithms remain outside scope",
+      "dependencies": "PD-T289 B2; PD-T440 frozen output; PD-N118 predecessor only",
+      "source_relations": "error infinity witness. Split from: [stable-solver-target.md](stable-solver-target.md), as a separate supporting, scoped-negative or measured result, not a solved target case. Split into: none."
+    },
+    {
+      "provisional_id": "PD-N?nn-mop-stability-codex-D4-02",
+      "kind": "PD-N",
+      "title": "Positive common changes can cross mixed normality",
+      "aliases": [
+        "exterior Christoffel normality trap",
+        "positive Toda path crossing"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/integrable-normality-obstruction.md",
+      "final_id": "PD-N164",
+      "scope": "Explicit positive normal N3 pair, exterior c=−1 or common exponential path; transformed (1,1) determinant vanishes",
+      "disposition": "REJECTED: refuted, automatic mixed-normality preservation from positivity/exterior shift or positive flow alone",
+      "dependencies": "PD-T286; PD-T443 context only",
+      "source_relations": "Split from: D4-C1/C3, unsupported normality-preservation shortcut. Split into: none."
+    },
+    {
+      "provisional_id": "PD-N?nn-mop-stability-codex-D4-03",
+      "kind": "PD-N",
+      "title": "Common changes preserve relative spectral data",
+      "aliases": [
+        "pointwise ratio obstruction",
+        "common Toda orbit",
+        "common Geronimus orbit"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/integrable-ratio-obstruction.md",
+      "final_id": "PD-N165",
+      "scope": "Fixed support N>=2; any finite common nonzero multipliers and separate scalar normalizations preserve pointwise cross ratios",
+      "disposition": "REJECTED: refuted, arbitrary-target reachability from one fixed pair by this class; masses/independent weights excluded",
+      "dependencies": "Elementary weight algebra; PD-T286 for proportional-pair nonnormality",
+      "source_relations": "Split from: D4-C2 universal easy-start solver. Split into: none."
+    },
+    {
+      "provisional_id": "PD-N?nn-mop-stability-codex-D4-05",
+      "kind": "PD-N",
+      "title": "Fixed predivide-C4-restore fails the finite comparison",
+      "aliases": [
+        "D4-C1a",
+        "one common Geronimus preconditioner",
+        "c=-2 restore"
+      ],
+      "status": "MEASURED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/integrable-predivide-failure.md",
+      "final_id": "PD-N166",
+      "scope": "Two frozen N16 instances, c=−2, binary64 C4 and restoration; both forward errors exceed direct C4",
+      "disposition": "REJECTED: failed, only this fixed preconditioner/design; not all transforms or shifts",
+      "dependencies": "PD-T289/290; PD-T443; pinned C4 code",
+      "source_relations": "Split from: D4-C1 numerical solver proposal. Split into: none."
+    },
+    {
+      "provisional_id": "PD-N?nn-mop-stability-codex-D6-literal",
+      "kind": "PD-N",
+      "title": "Ratio-graph literal standard-grade obstruction",
+      "aliases": [
+        "missing graph moment"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/dictionary-obstructions.md",
+      "final_id": "PD-N167",
+      "scope": "Displayed four-node input; P11=x²−75x/23+32/23 has graph x moment−30/23",
+      "disposition": "REJECTED: refuted, unchanged degree-two P11 embedding as full total-degree orthogonal polynomial; graph mixed tests retained",
+      "dependencies": "PD-T286 defining equations; PD-T445",
+      "source_relations": "Split from: none; this file retains G from the original combined G/C record. Split into: C, now [dictionary-copy-obstruction.md](dictionary-copy-obstruction.md)."
+    },
+    {
+      "provisional_id": "PD-N?nn-mop-stability-codex-D6-copy",
+      "kind": "PD-N",
+      "title": "Full standard-grade two-sheet obstruction",
+      "aliases": [
+        "two-sheet annihilator",
+        "original dictionary-obstructions C"
+      ],
+      "status": "PROVED",
+      "source_file": "topics/nn-mop-stability-20261105/theory/dictionary-copy-obstruction.md",
+      "final_id": "PD-N168",
+      "scope": "Every finite positive two-sheet input at y=0,1; y²−y gives a null vector on full Pi_d for d>=2 without deflation",
+      "disposition": "REJECTED: failed, only no-deflation full-standard-grade scalar mechanism; quotient/vector/other supports excluded",
+      "dependencies": "Elementary Gram algebra; PD-T057 positivity hypothesis only",
+      "source_relations": "Split from: PD-N167, exactly its C statement. Split into: none."
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D1-01",
+      "title": "explicit coefficient Jacobian",
+      "aliases": [
+        "moment derivative",
+        "AD-C4",
+        "induced row sum",
+        "monic path comparison"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/novelty-gate-D1.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-530",
+      "scope": "Full defining-moment/AD derivative in the declared field-sup metric; exact small-N comparison and precision screen",
+      "disposition": "Retained standard variant; PD-T432 PROVED and PD-T434 MEASURED; no stability theorem"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D1-02",
+      "title": "all-N rational-height bound",
+      "aliases": [
+        "binomial exponential Chebyshev normality",
+        "explicit coarse upper bound"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/novelty-gate-D1.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-531",
+      "scope": "At the exact rational binomial pair, prove normality and explicit all-N constants",
+      "disposition": "Retained PROVED coarse supporting bound PD-T433; sharp growth parent PD-T448 remains OPEN"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D1-03",
+      "title": "single inverse-divisor mechanism",
+      "aliases": [
+        "G3 kappa proportional to1/min|d|",
+        "measure proximity screen"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/novelty-gate-D1.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-532",
+      "scope": "Literal constant-product/proportionality prediction; finite N8 screen is historical measurement",
+      "disposition": "Consolidated with IDEA-536; REJECTED: refuted in the fixed-N Krawtchouk scope by PD-N162, not a Hahn asymptotic theorem"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D1-04",
+      "title": "sharp exponential growth law",
+      "aliases": [
+        "explicit rho(p1,p2)",
+        "digits-lost theorem"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/novelty-gate-D1.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-533",
+      "scope": "Require written all-N inequalities with explicit norms/constants; extrapolation fails the separation test",
+      "disposition": "Retained target OPEN as PD-T448; explicit lower result PD-T437 supports it, matching sharp upper/rate unresolved"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D1-hard-01",
+      "title": "alternating binomial perturbation witness",
+      "aliases": [
+        "high-degree marginal annihilator",
+        "one-cross-step sensitivity witness"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/novelty-gate-D1-hard.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-534",
+      "scope": "Unit relative parity perturbation and exact signed terminal derivative; test normalization and field scale",
+      "disposition": "Retained simpler weaker PROVED witness in PD-T437; strengthened by IDEA-535, not rejected"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D1-hard-02",
+      "title": "terminal binomial jet witness",
+      "aliases": [
+        "generating polynomial H",
+        "Hermite jets at weight-ratio nodes",
+        "positive terminal coefficient sum"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/novelty-gate-D1-hard.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-535",
+      "scope": "Exact terminal jet response and nonnegative coefficient summation must improve the earlier lower base",
+      "disposition": "Retained PROVED quantitative variant PD-T437; lower base at least5+2sqrt(6), no matching rate or rounding-error theorem"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D1-hard-03",
+      "title": "normalized parity under measure proximity",
+      "aliases": [
+        "G3 fixed-N contradiction",
+        "bounded relative signed binomial weights"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/novelty-gate-D1-hard.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-536",
+      "scope": "Admissible unit relative-input perturbation must force kappa*d_min divergence at fixed N",
+      "disposition": "Retained PROVED scoped negative PD-N162; single-inverse-divisor description REJECTED: refuted, no Hahn conclusion"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-31",
+      "title": "A: direct orthobasis mixed solves",
+      "aliases": [
+        "whole triangle direct QR/LU/SVD",
+        "modified moments",
+        "native direct mixed orthogonality",
+        "no layer propagation"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-D3-D5.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-537",
+      "scope": "Known full-triangle defining systems in a common orthobasis; compare finite field errors against C4",
+      "disposition": "Retained known-formulation implementation; PD-T440 MEASURED gains and losses, stability parent PD-T449 OPEN"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-32",
+      "title": "B: node-space constraint QR",
+      "aliases": [
+        "all-lattice constraint reorthogonalization",
+        "row-space nullspace intersection",
+        "nodeqr"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-D3-D5.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-538",
+      "scope": "Complete constraint row space and degree-subspace intersection; exact equivalence to A kills algebraic novelty",
+      "disposition": "Equivalent formulation retained with distinct measured factorization PD-T440; no new core updater or stability theorem"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-33",
+      "title": "C: actual-image compatibility projection",
+      "aliases": [
+        "nearest full NN compatible array",
+        "common-data projection",
+        "manifold constrained correction"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-D3-D5.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-539",
+      "scope": "Use actual positive mass-one common-data image and all fields; a path spectrum or flatness alone fails full-array acceptance",
+      "disposition": "Local geometry PD-T441 PROVED; PD-T442 MEASURED feasible pairs below100u at N4 and above at N8; certified nearest fit/general stability OPEN"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-34",
+      "title": "literal input-only backward interpretation",
+      "aliases": [
+        "uncorrected raw array exactly equals nearby-data F",
+        "strict beta"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-D3-D5.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-540",
+      "scope": "Demand exact realization of unchanged rounded full array; nonzero exact compatibility residual kills it",
+      "disposition": "REJECTED: refuted for displayed N4 raw array by PD-N163; correction/data metric and general native solvers not rejected"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D4-01",
+      "title": "common Christoffel transport",
+      "aliases": [
+        "D4-C1",
+        "common spectral change",
+        "Darboux",
+        "finite NN ratio update"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-D4.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-541",
+      "scope": "Known common-transform algebra; finite terminal formula and supplied-array transport with explicit old/new normality",
+      "disposition": "Equivalent prior algebra retained as PROVED bounded tool PD-T443; stable solver PD-T449 OPEN; no priority claim"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D4-02",
+      "title": "predivide-C4-restore",
+      "aliases": [
+        "D4-C1a",
+        "common Geronimus preconditioner",
+        "c=-2 source pair"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-D4.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-542",
+      "scope": "Fixed predivision w/(x+2), binary64 source C4, then restoration; compare full forward error to direct C4",
+      "disposition": "REJECTED: failed (MEASURED) for fixed N16 two-family design, PD-N166; other transforms/shifts excluded"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D4-03",
+      "title": "universal common-transform easy start",
+      "aliases": [
+        "D4-C2",
+        "common-factor orbit",
+        "common Toda solve",
+        "no-mass Geronimus reachability"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-D4.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-543",
+      "scope": "Fixed source pair, common nonzero factors and separate normalization; invariant cross ratios test arbitrary reachability",
+      "disposition": "REJECTED: refuted by PROVED PD-N165 for this fixed-orbit class; independent weights/added masses excluded"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D4-04",
+      "title": "common Toda finite continuation",
+      "aliases": [
+        "D4-C3",
+        "common exp(tx) flow",
+        "finite-triangle Toda RK4"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-D4.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-544",
+      "scope": "Actual moment-defined initial array and connected normality interval; explicit terminal closure",
+      "disposition": "Known algebra retained PROVED in PD-T444; finite RK4 pilot only, oracle initialization, no stable solver or exact floating invariance"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D4-05",
+      "title": "independent-weight continuation",
+      "aliases": [
+        "D4-C4",
+        "separate Toda times",
+        "weight-specific spectral modification"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-D4.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-545",
+      "scope": "Escape common-orbit obstruction only with actual closed generator/state, normal path and usable initialization",
+      "disposition": "Deferred, not rejected; resume with generator/initialization and declared prospective conditioning comparison; no PD-N"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D4-06",
+      "title": "lattice Schrodinger spectral input",
+      "aliases": [
+        "D4-C5",
+        "NN lattice inverse spectrum",
+        "second spectral coordinate",
+        "integrable spectral reparametrization"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-D4.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-546",
+      "scope": "Require explicit invertible finite coordinates and norm-matched conditioning comparison",
+      "disposition": "Deferred, not rejected; missing finite map/metric; lattice terminology alone supplies no algorithmic distinction"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D6-graph",
+      "title": "ratio graph",
+      "aliases": [
+        "y=phi(x)",
+        "Radon–Nikodym graph",
+        "positive mixed-test realization"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/novelty-gate-D6-D7.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-547",
+      "scope": "Positive graph exactly encodes mixed moments; full total-degree orthogonality requires the missing x moment",
+      "disposition": "Ambient encoding retained PROVED PD-T445; literal P11 identification REJECTED: refuted by PD-N167; broad transfer PD-T447 OPEN"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D6-copies",
+      "title": "labelled copies",
+      "aliases": [
+        "two coincident copies",
+        "two sheets",
+        "y=0/1",
+        "selector lift"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/novelty-gate-D6-D7.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-548",
+      "scope": "Positive selector encoding; y²−y tests full Pi_2 definiteness without quotient/deflation",
+      "disposition": "Ambient encoding retained; no-deflation full-standard-grade mechanism REJECTED: failed by PROVED PD-N168; quotient/regrading PD-T446 OPEN/deferred"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D6-HP",
+      "title": "Hermite–Padé pairs",
+      "aliases": [
+        "type-I pair",
+        "A(x)(1-y)+B(x)y",
+        "vector polynomials"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/novelty-gate-D6-D7.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-549",
+      "scope": "Pair encoding must specify full grading, coordinate actions and boundary to distinguish an NN algorithm",
+      "disposition": "Equivalent/background encoding retained; graded transfer PD-T446 OPEN; resume with explicit map, no PD-N for equivalence"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D6-lattice",
+      "title": "lattice boundary realization",
+      "aliases": [
+        "finite triangle",
+        "zero curvature",
+        "covariant shifts",
+        "common spectral subspace"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/novelty-gate-D6-D7.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-550",
+      "scope": "Both NN actions equal x on consistent MOP eigenstates; extension needs explicit positive state/domain/boundary",
+      "disposition": "Deferred, not rejected; broader transfer PD-T447 OPEN; no new blanket commutation/positivity impossibility"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D3-deferred-core",
+      "title": "NN whole-triangle core transformations",
+      "aliases": [
+        "non-unitary NN eliminators",
+        "whole-triangle IEP_CORE"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-deferred-alternatives.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-551",
+      "scope": "Full-lattice eliminator/invariant and terminal rule must recover both identities, beyond a step-line",
+      "disposition": "Deferred, unattempted; resume with explicit eliminator/invariant/terminal rule and preregistered C4/A/B metric; no PD-N"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D3-deferred-biorthogonal",
+      "title": "lattice biorthogonal Lanczos over all paths",
+      "aliases": [
+        "type-II/type-I dual lattice",
+        "all-path reorthogonalization"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-deferred-alternatives.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-552",
+      "scope": "Specify complete primal/dual state, normalization, breakdown and all mixed constraints",
+      "disposition": "Deferred, unattempted; resume with full closure/invariant and prospective comparison; no PD-N"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D3-deferred-multipath",
+      "title": "multi-path step-line redundancy",
+      "aliases": [
+        "redundancy as stabilization",
+        "multi-path least squares",
+        "error-correcting compatibility"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-deferred-alternatives.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-553",
+      "scope": "Specified path cover/combination must determine every NN field and an actual common-data witness",
+      "disposition": "Deferred, unattempted; actual-image fitting of supplied arrays is separate; resume with reconstruction/realizability/metric; no PD-N"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D1-deferred-vandermonde",
+      "title": "discrete-measure Vandermonde conditioning",
+      "aliases": [
+        "moment matrix conditioning",
+        "polynomial evaluation matrix"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-deferred-alternatives.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-554",
+      "scope": "Declared scaled evaluation matrix needs quantitative transfer to this exact NN Jacobian and norms",
+      "disposition": "Deferred, unattempted; resume with norm-matched transfer inequality and exact small-N test; no PD-N"
+    },
+    {
+      "provisional_id": "IDEA?nn-mop-stability-codex-D1-deferred-potential",
+      "title": "potential-theoretic node-density explanation",
+      "aliases": [
+        "node-density asymptotics",
+        "logarithmic potential",
+        "growth-rate mechanism"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/candidates-deferred-alternatives.md",
+      "kind": "IDEA",
+      "final_id": "IDEA-555",
+      "scope": "Specify limiting family and quantitative potential/node-density transfer to this NN sensitivity",
+      "disposition": "Deferred, unattempted; finite table fit is insufficient; resume with stated regime/theorem; no PD-N"
+    },
+    {
+      "provisional_id": "LIT?nn-mop-stability-codex-D4-01",
+      "final_id": "LIT-567",
+      "kind": "LIT",
+      "aliases": [
+        "LIT-D4-01"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/literature-D4.md",
+      "status": "LITERATURE",
+      "scope": "Reused accepted source; partial primary reading of common Christoffel/Toda formulas",
+      "reused": true
+    },
+    {
+      "provisional_id": "LIT?nn-mop-stability-codex-D4-02",
+      "final_id": "LIT-568",
+      "kind": "LIT",
+      "aliases": [
+        "LIT-D4-02"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/literature-D4.md",
+      "status": "LITERATURE",
+      "scope": "Reused accepted source; partial primary reading of transformed NN algorithm",
+      "reused": true
+    },
+    {
+      "provisional_id": "LIT?nn-mop-stability-codex-D4-03",
+      "final_id": "LIT-614",
+      "kind": "LIT",
+      "aliases": [
+        "LIT-D4-03"
+      ],
+      "source_file": "topics/nn-mop-stability-20261105/literature-D4.md",
+      "status": "LITERATURE",
+      "scope": "Branquinho–Foulquié-Moreno–Mañas2022; partial primary factorization/Christoffel/Geronimus scope reading",
+      "reused": false
+    }
+  ],
+  "counts": {
+    "PD_T": 18,
+    "PD_N": 7,
+    "IDEA": 26,
+    "LIT_new": 1,
+    "LIT_reused": 2
+  },
+  "unused_permanent_gaps": {
+    "PD_T": "PD-T450–471",
+    "PD_N": "PD-N169–177",
+    "IDEA": "IDEA-556–569",
+    "LIT": "LIT-615–629"
+  },
+  "unallocated_placeholders": {
+    "PD-T?nn-mop-stability-codex-NN": "handoff01 identifier-template placeholder; no mathematical record and no final allocation"
+  }
+}

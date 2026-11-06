@@ -115,7 +115,7 @@ pencils. Only AC merges.
 
 | Brief | Scope and supporting results | Remaining gaps | Publication / review limits |
 |---|---|---|---|
-| [NN MOP report](topics/nn-mop-iep-20261103/report.md) | Standard finite moment formulation PD-T286; nonzero interior differences PD-T288; complete marginal reconstruction PD-T289; finite checks PD-T287 and literal dictionary counterexamples PD-N100; bounded C4 pilot PD-T290 | Stable coupled NN updating and error-source decomposition remain OPEN/deferred; no C3 comparator exists; N32 references rely on precision convergence | Known exact algebra; no new updater, priority claim, manuscript or submission. Claude audit-02 accepted science; preparation protocol check follows separately. |
+| [NN MOP report](topics/nn-mop-iep-20261103/report.md) | Standard finite moment formulation PD-T286; nonzero interior differences PD-T288; complete marginal reconstruction PD-T289; finite checks PD-T287 and literal dictionary counterexamples PD-N100; bounded C4 pilot PD-T290 | Stable coupled NN updating and full error-source decomposition remain OPEN/deferred; finite post-marginal evidence and direct-solve comparisons are in the [conditioning/stability continuation](#nn-mop-conditioning-and-stability--scoped-records); no C3 comparator exists; N32 references rely on precision convergence | Known exact algebra; no new updater, priority claim, manuscript or submission. Claude audit-02 accepted science; preparation protocol check follows separately. |
 
 The marginal route uses only marginal Jacobi data; the shifted step-line route
 requires a recursive family of shifts and boundary information. Terminal b1=b2
@@ -135,3 +135,11 @@ replace the completed gate/registration tasks; only AC merges.
 ## Audited literature footing — PR21
 
 The [P1–P4 report](topics/padua-literature-20261103/report.md), [comparisons](topics/padua-literature-20261103/p1-comparison.md) and [final source map](topics/padua-literature-20261103/preparation/final-id-map.json) supply bounded literature attribution for later manuscript revisions. They distinguish historical conjectures, global versus corner estimates, classical signed cubature/Favard machinery and scoped Leuven proposals. Inaccessible source checks remain developer-verified; no exhaustive novelty, local source-theorem proof, manuscript acceptance or submission readiness follows. Mathematical source statuses and newer accepted scientific campaigns remain authoritative and unchanged.
+
+## NN MOP conditioning and stability — scoped records
+
+| Brief | Scope and supporting results | Remaining mathematical gaps / limits | Evidence |
+|---|---|---|---|
+| [Conditioning/stability note outline](topics/nn-mop-stability-20261105/note-outline.md) | PD-T432/433/435–437 local sensitivity, coarse upper, generic/finite normality and exponential lower results; PD-T434/438–440 finite condition/stage/native measurements; PD-T441/442 actual-image geometry and measured feasible fits; PD-T443–445 finite transport/Toda and graph identity; PD-N162–168 scoped obstructions/failure | PD-T448 sharp matching growth and PD-T449 general stable solver OPEN; PD-T446/447 graded positive bivariate transfer OPEN. Finite gains and reproduction imply no general stability; no manuscript, historical priority or submission claim. | [audit01](topics/nn-mop-stability-20261105/audit-01.md), [audit02](topics/nn-mop-stability-20261105/audit-02.md), [G5 audit](topics/nn-mop-stability-20261105/audit-g5-01.md); [results](results/nn-mop-stability-20261105.md) |
+
+The native direct solves are known defining-system reformulations; IDEA-378’s coupled updater remains deferred. G4 is never PASS. G5 passes only the selected one-decade reproduction case on the recorded Octave8.4 and9.4 platforms; paper-data authentication by the Codex executor is unresolved and the full NN topic-metric comparison is unrun. Known Christoffel/Toda transformations and positive ambient encodings do not supply a stable NN-to-Padua algorithm transfer.

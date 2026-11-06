@@ -1,0 +1,1271 @@
+{
+  "source_commit": "414e781567078560b7e233aace3661abb88e37ab",
+  "main_commit": "f654e32daff27b6846849311092f6daebbbf235b",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07cd8c8920fabccc16dce4a63fe853a2f3a26f3d",
+      "size": 3572,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/07cd8c8920fabccc16dce4a63fe853a2f3a26f3d"
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "304c5de28d4dc21e7244d2757ac5dc315449acfe",
+      "size": 376156,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/304c5de28d4dc21e7244d2757ac5dc315449acfe"
+    },
+    {
+      "path": "PAPER_MAP.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06cdc29ccb17ba7ecb256195bee707785af9255e",
+      "size": 15587,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/06cdc29ccb17ba7ecb256195bee707785af9255e"
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c4e41b66b02d6fa7dbd2cf95961bcb4e38c103a",
+      "size": 243351,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/1c4e41b66b02d6fa7dbd2cf95961bcb4e38c103a"
+    },
+    {
+      "path": "RESULTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf876bc5a72eef4edfd960905961e9d72bde0e5f",
+      "size": 52079,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/cf876bc5a72eef4edfd960905961e9d72bde0e5f"
+    },
+    {
+      "path": "agents/WORKFLOW.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2566d9890361d9f935beb4735b1baf93c602034",
+      "size": 32582,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/a2566d9890361d9f935beb4735b1baf93c602034"
+    },
+    {
+      "path": "agents/codex/CODEX.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98f8de78699a18f000e87332ba3c8e0639b492b4",
+      "size": 5097,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/98f8de78699a18f000e87332ba3c8e0639b492b4"
+    },
+    {
+      "path": "literature/INDEX.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f71aa85c77a9c4bbc0dbd327b95e327ae51cde6",
+      "size": 324708,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/7f71aa85c77a9c4bbc0dbd327b95e327ae51cde6"
+    },
+    {
+      "path": "results/nn-mop-stability-20261105.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29c761b867ea2a05f0395dabc77f119a2857e4ae",
+      "size": 3225,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/29c761b867ea2a05f0395dabc77f119a2857e4ae"
+    },
+    {
+      "path": "state/CURRENT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c3fc8bfee62bc3790f1189d374adef4e0bca32b",
+      "size": 32317,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/9c3fc8bfee62bc3790f1189d374adef4e0bca32b"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c472976f5fe44122dbd6c66a093277189c1b177",
+      "size": 277481,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/3c472976f5fe44122dbd6c66a093277189c1b177"
+    },
+    {
+      "path": "templates/HANDOFF.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cf137f1c25b966e2724e8553d30614fa35741ed",
+      "size": 1591,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/3cf137f1c25b966e2724e8553d30614fa35741ed"
+    },
+    {
+      "path": "templates/IDEA.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cad5ca2e043c745294130e7cf97a52dadfadc3b9",
+      "size": 1507,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/cad5ca2e043c745294130e7cf97a52dadfadc3b9"
+    },
+    {
+      "path": "templates/LITERATURE_RECORD.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5b9173d8871fea9cac50eb801c375eaae3a6ed9",
+      "size": 669,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/c5b9173d8871fea9cac50eb801c375eaae3a6ed9"
+    },
+    {
+      "path": "templates/THEORY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "078deb26c229c8f715f6238ba92fa48432f0dd5a",
+      "size": 3655,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/078deb26c229c8f715f6238ba92fa48432f0dd5a"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/ALLOCATIONS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f49a74542dba8b25dadf574b626a6ce4394ef1a7",
+      "size": 2800,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/f49a74542dba8b25dadf574b626a6ce4394ef1a7"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/COLD_STORAGE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f08bd08cbe5c5f317233cf80477fbe79ace2e20d",
+      "size": 2435,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/f08bd08cbe5c5f317233cf80477fbe79ace2e20d"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/LOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5662bc8e741381b9236f6166624737dfbfe594eb",
+      "size": 21328,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/5662bc8e741381b9236f6166624737dfbfe594eb"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/allocation-final-impact.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7494bc0df5d7840b94eba2a539a172a9cfc7defd",
+      "size": 7976,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/7494bc0df5d7840b94eba2a539a172a9cfc7defd"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/allocation-scan.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00c105f1ba098203c313023c179b8266e8cea883",
+      "size": 14042,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/00c105f1ba098203c313023c179b8266e8cea883"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/attempts/D1-hard.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20726b6fba3d6c96cdf04c16759d7be026e867dc",
+      "size": 7378,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/20726b6fba3d6c96cdf04c16759d7be026e867dc"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/attempts/D1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1f836fb1981fafcb809781884ade1f809b93905",
+      "size": 16019,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/e1f836fb1981fafcb809781884ade1f809b93905"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/attempts/D2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8d53374b91af98b76b3726d775e8f53df74f604",
+      "size": 15191,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/a8d53374b91af98b76b3726d775e8f53df74f604"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/attempts/D3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "386f251f06f83d3c4d53c63f241b1919837a8d46",
+      "size": 8583,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/386f251f06f83d3c4d53c63f241b1919837a8d46"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/attempts/D4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48adf0aadce2ad4a9314a3349ab144ee89161c90",
+      "size": 10171,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/48adf0aadce2ad4a9314a3349ab144ee89161c90"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/attempts/D5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d1782150fc047472711ff076311b3fdce865c16",
+      "size": 15395,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/9d1782150fc047472711ff076311b3fdce865c16"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/attempts/D6.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "066bbee7c5d52a2bd482a6748987139479e57981",
+      "size": 4164,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/066bbee7c5d52a2bd482a6748987139479e57981"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/attempts/D7.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "108b8a5209b82b3bcd92351685d7745884c786f0",
+      "size": 3836,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/108b8a5209b82b3bcd92351685d7745884c786f0"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60584e561370a875e78a380c69e471c711d1234e",
+      "size": 31393,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/60584e561370a875e78a380c69e471c711d1234e"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/A/indep_hahn.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cc13eb759d9b012b45616fc26bc52cf15554371",
+      "size": 9727,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/8cc13eb759d9b012b45616fc26bc52cf15554371"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/A/indep_identity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a019d3f1be49e9a9f34b618643c31fb98e33e31f",
+      "size": 2935,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/a019d3f1be49e9a9f34b618643c31fb98e33e31f"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/A/indep_krawtchouk.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f38ec505713471d4434c67550cc5504a8305873",
+      "size": 7697,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/7f38ec505713471d4434c67550cc5504a8305873"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/B/chain.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "284419cf8363b81cc60cc92360dac029016159a0",
+      "size": 646,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/284419cf8363b81cc60cc92360dac029016159a0"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/B/compare_small.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd3637284f8285e4da77aa8cf29ae1e6ca952742",
+      "size": 1379,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/bd3637284f8285e4da77aa8cf29ae1e6ca952742"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/B/compare_table.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b45c3bf30ef649b1dd05a6fd2bbbde577e76e20e",
+      "size": 2315,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/b45c3bf30ef649b1dd05a6fd2bbbde577e76e20e"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/B/d2_compare.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b340925b22d62d423e4dc91445e1ec7b237b9187",
+      "size": 3955,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/b340925b22d62d423e4dc91445e1ec7b237b9187"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/B/exact_jacobian.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59dfcd2f597147d2707f848c0edefb0a7f034e50",
+      "size": 8861,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/59dfcd2f597147d2707f848c0edefb0a7f034e50"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/B/marginal_rel.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "137984aa919a2a9f8cca8d89eb3001e386b84f68",
+      "size": 1318,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/137984aa919a2a9f8cca8d89eb3001e386b84f68"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/B/trap.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bff46bb96bef7a82214be154382635404909bb47",
+      "size": 4640,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/bff46bb96bef7a82214be154382635404909bb47"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/C/dyadic_check.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccbeffbd805432d938a64fda6e1d93a978e02254",
+      "size": 3334,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/ccbeffbd805432d938a64fda6e1d93a978e02254"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/C/native_exact_ref.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea9b8756dbfc0bd15438fbb4c85a11ad3304484c",
+      "size": 5594,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/ea9b8756dbfc0bd15438fbb4c85a11ad3304484c"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/C/rank_check.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd2dd47b3e344e686f0524a9389dcf8c96958340",
+      "size": 4218,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/cd2dd47b3e344e686f0524a9389dcf8c96958340"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/C/witness_spotcheck.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cca333bfade6c537a6a35783590707b6e103ca4",
+      "size": 5400,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/2cca333bfade6c537a6a35783590707b6e103ca4"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/D/check_dictionary.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac5a1359c81867220e9131a40658e61ade27b0df",
+      "size": 3574,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/ac5a1359c81867220e9131a40658e61ade27b0df"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/D/check_integrable.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9814657f9e48d14d9030e86b715d662db6f1c068",
+      "size": 8082,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/9814657f9e48d14d9030e86b715d662db6f1c068"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/D/check_predivide.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6135bf589cfe079cfa8df8f5c4d9a8b8b1651704",
+      "size": 3002,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/6135bf589cfe079cfa8df8f5c4d9a8b8b1651704"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/D/exact_core.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac77413e64b3205f99e1ef18f2a2f127b2527c16",
+      "size": 3918,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/ac77413e64b3205f99e1ef18f2a2f127b2527c16"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/E/verify.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24d9c399048f940b60d00a8d9eca766dc3ed9824",
+      "size": 2232,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/24d9c399048f940b60d00a8d9eca766dc3ed9824"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb2cf7307b3b1aaa57702636a8895bdc0aa97448",
+      "size": 3343,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/cb2cf7307b3b1aaa57702636a8895bdc0aa97448"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/claude/kappa_exact.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2c937b6e1eba4c0df299030a4f908a55f5a12c7",
+      "size": 1862,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/e2c937b6e1eba4c0df299030a4f908a55f5a12c7"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-01/claude/kraw_exact.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21098452ce1d32650298f09c1587a72ef050e3c7",
+      "size": 8315,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/21098452ce1d32650298f09c1587a72ef050e3c7"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-02.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b9202c51c1f65c8ac7d0b4fd2916dbdf40a3929",
+      "size": 20644,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/2b9202c51c1f65c8ac7d0b4fd2916dbdf40a3929"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-02/R1/my_rebuild.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "766b50d159435503d8a2de1ef3c79bbf345bf58d",
+      "size": 10615,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/766b50d159435503d8a2de1ef3c79bbf345bf58d"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-02/R1/my_stationarity_exact.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "088e93b7725bb1783fe7266079a6d5385f7c2b45",
+      "size": 5239,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/088e93b7725bb1783fe7266079a6d5385f7c2b45"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-02/R1/refit_probe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf3518efc7d0ae1c49b39c924414b15cecb51ea4",
+      "size": 1126,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/bf3518efc7d0ae1c49b39c924414b15cecb51ea4"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-02/R1/target_regen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a421ef25285fec34aebe3851151483c90feced20",
+      "size": 1135,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/a421ef25285fec34aebe3851151483c90feced20"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-02/R2/local_lemma.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbae1548da537bae2f8a135e40ac31bcd6954199",
+      "size": 7961,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/bbae1548da537bae2f8a135e40ac31bcd6954199"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-02/R2/run2.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61e6bcfa8887c3606ad94a5ae5e822e6b2119257",
+      "size": 739,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/61e6bcfa8887c3606ad94a5ae5e822e6b2119257"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-02/R2/run3.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c5378ab6e3c7ef9bd168814b642b541c70d2f27",
+      "size": 1232,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/7c5378ab6e3c7ef9bd168814b642b541c70d2f27"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-02/R2/zeros.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0babd540b50ea9a131248d2f623a281815b7371f",
+      "size": 1238,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/0babd540b50ea9a131248d2f623a281815b7371f"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-02/R3/numdiff.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e86080bd0c8e25635e66a9efb7da26e2ef8fa0b",
+      "size": 865,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/9e86080bd0c8e25635e66a9efb7da26e2ef8fa0b"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-02/R3/zeros.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fe050c1a9b20714f4227f876fb1cc6e03aa6afc",
+      "size": 1400,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/6fe050c1a9b20714f4227f876fb1cc6e03aa6afc"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/audit-02/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fcccba7ffb8361e250aec7b09179e394e005dc9",
+      "size": 1489,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/5fcccba7ffb8361e250aec7b09179e394e005dc9"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/candidates-D3-D5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f348ee1b54cf7dfbb7bda6116f346176a8f67b2",
+      "size": 9482,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/6f348ee1b54cf7dfbb7bda6116f346176a8f67b2"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/candidates-D4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f5440bb8a7262b07951d4c8e74b1db12f139229",
+      "size": 15318,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/0f5440bb8a7262b07951d4c8e74b1db12f139229"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/candidates-deferred-alternatives.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff6865d31cdf291a8ac7162b806228b78e8866ce",
+      "size": 15660,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/ff6865d31cdf291a8ac7162b806228b78e8866ce"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/backward_dyadic.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e546e3a9b210539b01bd16b8ff23cab740880d89",
+      "size": 2202,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/e546e3a9b210539b01bd16b8ff23cab740880d89"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/backward_joint.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7966b752de73c9e3bdec628bad7deb7156450a59",
+      "size": 6245,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/7966b752de73c9e3bdec628bad7deb7156450a59"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/backward_projection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23858cb4c329b93323a996b9c160e05a2038862f",
+      "size": 9825,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/23858cb4c329b93323a996b9c160e05a2038862f"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/conditioning.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "791e2b116069ca5d62e4e8530000646f820ae6fc",
+      "size": 10152,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/791e2b116069ca5d62e4e8530000646f820ae6fc"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/conditioning_compare.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41e6d69927a8b32328f74ac8e1adcec4509375ba",
+      "size": 3193,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/41e6d69927a8b32328f74ac8e1adcec4509375ba"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/conditioning_exact_normality.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edd8c1b8ed22da2c518701647a61126e28fba15f",
+      "size": 2898,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/edd8c1b8ed22da2c518701647a61126e28fba15f"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/conditioning_lower_witness.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be0627804453d982be1648eb7341022c1d5df955",
+      "size": 3349,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/be0627804453d982be1648eb7341022c1d5df955"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/conditioning_parity_check.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fa89d6f0b9d00c20168940c3a3ab73bbd9445c7",
+      "size": 1931,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/6fa89d6f0b9d00c20168940c3a3ab73bbd9445c7"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/conditioning_sweep.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40c424d9970ba4b76f4e56430575a1b916dee11f",
+      "size": 1853,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/40c424d9970ba4b76f4e56430575a1b916dee11f"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/conditioning_timed.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a376cc0d110157326b43630e7e7526dd75e2b6f1",
+      "size": 903,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/a376cc0d110157326b43630e7e7526dd75e2b6f1"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/conditioning_verify_normality.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "624e7c8853e73288e9360b35fd00afb6e722d877",
+      "size": 2538,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/624e7c8853e73288e9360b35fd00afb6e722d877"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/dictionary_probe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6aca72dd37c94203e64012b7f020e21f411e3c3",
+      "size": 3332,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/f6aca72dd37c94203e64012b7f020e21f411e3c3"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/evidence_receipts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2e575032bf7c1bb6eca1d61facfe303fac39273",
+      "size": 3490,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/c2e575032bf7c1bb6eca1d61facfe303fac39273"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/independent_check_backward_integrable.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b73c3dcdd8c73a760c61651ccfc6b0f527837a9f",
+      "size": 4194,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/b73c3dcdd8c73a760c61651ccfc6b0f527837a9f"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/independent_check_diagnostics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faf840e81b0816a54d88a327fefb1395b71b0245",
+      "size": 3209,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/faf840e81b0816a54d88a327fefb1395b71b0245"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/independent_check_followup_parity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "436160d18b907c2b54cea45b044eda2ef457dc11",
+      "size": 3083,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/436160d18b907c2b54cea45b044eda2ef457dc11"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/independent_check_followup_projection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1f8ec640222f4f344d4870ea7e19021fc20e3e5",
+      "size": 6027,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/f1f8ec640222f4f344d4870ea7e19021fc20e3e5"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/independent_check_followup_proximity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14c2ced3e73f02f78e98fa1606983a4829a706f2",
+      "size": 2158,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/14c2ced3e73f02f78e98fa1606983a4829a706f2"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/independent_check_moments.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "721d7ac00cc75884834bcfad5eff41cb4b117975",
+      "size": 8931,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/721d7ac00cc75884834bcfad5eff41cb4b117975"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/integrable_transport.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f5f4dbe38e831c0b6d1e1be59246eb3abf73b4b",
+      "size": 10195,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/4f5f4dbe38e831c0b6d1e1be59246eb3abf73b4b"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/native_mixed.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8eed4fa065e0322af47108ce59b90c8bc306e47c",
+      "size": 8041,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/8eed4fa065e0322af47108ce59b90c8bc306e47c"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/path_recovery.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02e6dc05ea553160e78e1ceea594b92237348a4e",
+      "size": 2645,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/02e6dc05ea553160e78e1ceea594b92237348a4e"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/plot_conditioning.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04855b2118935100fb20f13f75258d3447275461",
+      "size": 8114,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/04855b2118935100fb20f13f75258d3447275461"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/projection_reference.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c80988d3344a94428b75d8cc255988893d4a592",
+      "size": 3433,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/6c80988d3344a94428b75d8cc255988893d4a592"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/code/stage_isolation.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f68d3d5eaf8af0d6fa95e3241f86ad04d170b35",
+      "size": 6020,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/5f68d3d5eaf8af0d6fa95e3241f86ad04d170b35"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/cold-storage.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b9d132520c62d237ec6e6e38695aaf10b88682f",
+      "size": 9596,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/0b9d132520c62d237ec6e6e38695aaf10b88682f"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/evidence-manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b0639b4c46595e57c6384aa1225ced3294842b6",
+      "size": 12799,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/2b0639b4c46595e57c6384aa1225ced3294842b6"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/evidence/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70d4d0ff96e29f0f02b2c48d047874463798c1cf",
+      "size": 1620,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/70d4d0ff96e29f0f02b2c48d047874463798c1cf"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/evidence/projection-reference.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7983e6feb0244e74b4c7575fabb8586c49acd780",
+      "size": 113095,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/7983e6feb0244e74b4c7575fabb8586c49acd780"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/external-code.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8be8340d072a1c08293a55edf1c499f94c9b3f3c",
+      "size": 7429,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/8be8340d072a1c08293a55edf1c499f94c9b3f3c"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/g5-run/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e49a43ec16eddb3994c62300c1f41e1672b5327c",
+      "size": 8218,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/e49a43ec16eddb3994c62300c1f41e1672b5327c"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/g5-run/cmp.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f957061016df603518ccc416a23d97dd477832b3",
+      "size": 807,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/f957061016df603518ccc416a23d97dd477832b3"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/g5-run/compare.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f878bfbb62591666b984bdf1873eced4539e226e",
+      "size": 3869,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/f878bfbb62591666b984bdf1873eced4539e226e"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/g5-run/driver.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a657d6466c213fa853a5f0baa6e32e854b40a31f",
+      "size": 1121,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/a657d6466c213fa853a5f0baa6e32e854b40a31f"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/g5-run/ours_hahn.dat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6acdd814aa36409d4b70ae0bcf75fb55e56bf11a",
+      "size": 3505,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/6acdd814aa36409d4b70ae0bcf75fb55e56bf11a"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/g5-run/ours_kravchuk.dat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b4a7940dcf8e9f462b333ff49d6e58c6fbdcb18",
+      "size": 3505,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/5b4a7940dcf8e9f462b333ff49d6e58c6fbdcb18"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/gates.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1af7cb3c44122a2e17410bef479e1d28f5d2fec7",
+      "size": 3483,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/1af7cb3c44122a2e17410bef479e1d28f5d2fec7"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/handoffs/01-work.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "290feff6a9474aa2fbc29bd9bc77cb82af0d92ff",
+      "size": 15970,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/290feff6a9474aa2fbc29bd9bc77cb82af0d92ff"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/handoffs/02-audit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b477ea1cdf3d8cc52c599860bbb7f65c92eb568",
+      "size": 9489,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/9b477ea1cdf3d8cc52c599860bbb7f65c92eb568"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/handoffs/03-response.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11384cb9fc1d961b903ff433934f2a9c36c88c6e",
+      "size": 6316,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/11384cb9fc1d961b903ff433934f2a9c36c88c6e"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/handoffs/04-response.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acca54c2956ef50a036ac1b81b3f436d0317ca46",
+      "size": 9312,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/acca54c2956ef50a036ac1b81b3f436d0317ca46"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/handoffs/05-reaudit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36d252122f67170ad5ece0857e2fe27ece8d20a0",
+      "size": 9141,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/36d252122f67170ad5ece0857e2fe27ece8d20a0"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/handoffs/06-g5-audit-prep.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11b5792102928fdd2c39ee1412cc1b18118914ee",
+      "size": 7066,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/11b5792102928fdd2c39ee1412cc1b18118914ee"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/independent-checks-01.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7dc3da8da432c525b2cc665e0ef6ea4517e052e",
+      "size": 13416,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/d7dc3da8da432c525b2cc665e0ef6ea4517e052e"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/independent-checks-02.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b5d5cf37862da57698448ec8d9b112e68feabfe",
+      "size": 15718,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/7b5d5cf37862da57698448ec8d9b112e68feabfe"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/independent-checks-03.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ab861877def1d8fc0aeb83e58ff48debdc19a4e",
+      "size": 5515,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/6ab861877def1d8fc0aeb83e58ff48debdc19a4e"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/input-snapshot.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da764b23084877d59d7d235d3edd444e1d2580d8",
+      "size": 12741,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/da764b23084877d59d7d235d3edd444e1d2580d8"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/literature-D4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14570699f7914aac1f1b6eb5f668b84544cdf336",
+      "size": 4911,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/14570699f7914aac1f1b6eb5f668b84544cdf336"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/literature-access.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9af36ad3050675161ab71bdd20c5bd1d80ea3dcd",
+      "size": 3193,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/9af36ad3050675161ab71bdd20c5bd1d80ea3dcd"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/note-outline.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82cff789f4a9747f7c4a77dd045ed89a28163f1e",
+      "size": 4284,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/82cff789f4a9747f7c4a77dd045ed89a28163f1e"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/novelty-gate-D1-hard.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "689aa9ef7d16c195dc4abf23d22437cdf69e1e5a",
+      "size": 6259,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/689aa9ef7d16c195dc4abf23d22437cdf69e1e5a"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/novelty-gate-D1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ad9ea36719bd507ac72ad8c0d0716d3192c0235",
+      "size": 10611,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/4ad9ea36719bd507ac72ad8c0d0716d3192c0235"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/novelty-gate-D2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac77d8b5d2d9e75d490c96616372a67e67a1c46f",
+      "size": 3535,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/ac77d8b5d2d9e75d490c96616372a67e67a1c46f"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/novelty-gate-D3-D5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d9b4f5dd122bef2290b0b104f2e57012a884a32",
+      "size": 5665,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/1d9b4f5dd122bef2290b0b104f2e57012a884a32"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/novelty-gate-D4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a48e9e5169d30d6e4fbbb3856bdd092352dba187",
+      "size": 5781,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/a48e9e5169d30d6e4fbbb3856bdd092352dba187"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/novelty-gate-D6-D7.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7645255ba3380c8fa667d5b758dc2f3ee7ea9a60",
+      "size": 9481,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/7645255ba3380c8fa667d5b758dc2f3ee7ea9a60"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/novelty-gate-independent.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a9b12a810da09fb42d8295e7f597372fbc58227",
+      "size": 5441,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/1a9b12a810da09fb42d8295e7f597372fbc58227"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/plan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edd364aae09573faf5f717d079a6119bb5669247",
+      "size": 4689,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/edd364aae09573faf5f717d079a6119bb5669247"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/plot-receipt.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "284c35120871e090c9554966f0281664872e0ca9",
+      "size": 7612,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/284c35120871e090c9554966f0281664872e0ca9"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/proposed-record-changes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "152bf2ad2d311f763c48042dfa0dff31a67c6c98",
+      "size": 822,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/152bf2ad2d311f763c48042dfa0dff31a67c6c98"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f3da9af384650d0eb72fcef03f7e4a53c2a8bb0",
+      "size": 13739,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/9f3da9af384650d0eb72fcef03f7e4a53c2a8bb0"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/response-01.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b852c55bd48f405ca0f4890fe2c9c2e5e213711",
+      "size": 9904,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/2b852c55bd48f405ca0f4890fe2c9c2e5e213711"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/response-01/checks.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e154900e56061b18ef87deaf5dfe5153fd942ae",
+      "size": 2596,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/6e154900e56061b18ef87deaf5dfe5153fd942ae"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/response-01/g5-access.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a5119669f6b196efa4309a4374bd2c2f7d49516",
+      "size": 7989,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/8a5119669f6b196efa4309a4374bd2c2f7d49516"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/response-01/source-inputs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8b6aa6cff8b4423b2b825ff1a560f6c98f4e896",
+      "size": 39360,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/a8b6aa6cff8b4423b2b825ff1a560f6c98f4e896"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/rounds.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f501259dd2797ec3e768e471e4965e54fa02368",
+      "size": 2335,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/3f501259dd2797ec3e768e471e4965e54fa02368"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/backward-dyadic-obstruction.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ced383593384c87a0944c519ec2f687503c6651b",
+      "size": 4632,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/ced383593384c87a0944c519ec2f687503c6651b"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/backward-local-manifold.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc6c03facc08d130f378fd9649a0b858361648de",
+      "size": 9587,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/cc6c03facc08d130f378fd9649a0b858361648de"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/backward-projection-measurements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0881e0e6c0059fc49bff24401e075c68b4ce5e1f",
+      "size": 10444,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/0881e0e6c0059fc49bff24401e075c68b4ce5e1f"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/conditioning-growth-target.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d9487cbb7d4d3d5233f0577ee0fdf45441bbf5a",
+      "size": 2631,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/7d9487cbb7d4d3d5233f0577ee0fdf45441bbf5a"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/conditioning-hahn-normality-finite.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7aab722b0003c2dfde406d416cfeb23d4c71eb6",
+      "size": 15905,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/a7aab722b0003c2dfde406d416cfeb23d4c71eb6"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/conditioning-krawtchouk-bound.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "524d9f2c081e3f1fe70adc47b8989897bd592fa7",
+      "size": 5989,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/524d9f2c081e3f1fe70adc47b8989897bd592fa7"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/conditioning-local.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e162848d2fb70dd7ffde22ede844032352806e2",
+      "size": 8018,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/0e162848d2fb70dd7ffde22ede844032352806e2"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/conditioning-lower-krawtchouk.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06ceaff4c0c0f459155bcd3281990cb2cd64c5d8",
+      "size": 13054,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/06ceaff4c0c0f459155bcd3281990cb2cd64c5d8"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/conditioning-lower-proximity.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "181346598ece1485f0dbc3834d3b2dda6355447d",
+      "size": 5633,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/181346598ece1485f0dbc3834d3b2dda6355447d"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/conditioning-measurements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32270ddaef281bf37accb9719c11c2e6420463e0",
+      "size": 5648,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/32270ddaef281bf37accb9719c11c2e6420463e0"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/conditioning-normality-certificate.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d80a0be1143de7d701258f177bed3f3f6d8ac9aa",
+      "size": 6099,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/d80a0be1143de7d701258f177bed3f3f6d8ac9aa"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/d2-path-diagnostic.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "286687ce1753f973dc98fe8ce2463fcba55d489f",
+      "size": 4983,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/286687ce1753f973dc98fe8ce2463fcba55d489f"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/d2-stage-isolation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afd4c932d8c8ced0d748672423acc8f727925ace",
+      "size": 5151,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/afd4c932d8c8ced0d748672423acc8f727925ace"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/dictionary-copy-obstruction.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53910cd9ae5b9914d2aafbb8381584e5133fe7ca",
+      "size": 2492,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/53910cd9ae5b9914d2aafbb8381584e5133fe7ca"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/dictionary-graph.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f4b2a48f400c39c41a43d8913af7baa6e08c9ec",
+      "size": 3433,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/9f4b2a48f400c39c41a43d8913af7baa6e08c9ec"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/dictionary-lifts.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8edc26c0a904794b7cc978f7491134a94cd94803",
+      "size": 3324,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/8edc26c0a904794b7cc978f7491134a94cd94803"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/dictionary-obstructions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96fad09b97351c23ca50594b913730349e62b456",
+      "size": 3896,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/96fad09b97351c23ca50594b913730349e62b456"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/dictionary-target.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f98ef5a4977840d49e53c048ea345d6de4d40a8e",
+      "size": 4016,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/f98ef5a4977840d49e53c048ea345d6de4d40a8e"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/integrable-christoffel.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29a4b0bc97bcbe7a9a267d8548cc2e51cce330e3",
+      "size": 6169,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/29a4b0bc97bcbe7a9a267d8548cc2e51cce330e3"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/integrable-normality-obstruction.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c3561f60b8c37395e09962f9b4e5689e491ff13",
+      "size": 4156,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/0c3561f60b8c37395e09962f9b4e5689e491ff13"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/integrable-predivide-failure.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c9bd2f2460fa81e53546b55774da4183a2a15bd",
+      "size": 3849,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/2c9bd2f2460fa81e53546b55774da4183a2a15bd"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/integrable-ratio-obstruction.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "976d6e0f44d6aaad385cc93c69e9f2f481f24cd5",
+      "size": 3983,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/976d6e0f44d6aaad385cc93c69e9f2f481f24cd5"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/integrable-toda.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e310d8879988eeb60bd35e2047747b79961c0258",
+      "size": 5036,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/e310d8879988eeb60bd35e2047747b79961c0258"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/native-measurements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6638432dd045f41c8b09d08bbc3b808e82ef93b",
+      "size": 5353,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/a6638432dd045f41c8b09d08bbc3b808e82ef93b"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/theory/stable-solver-target.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310f34f87ea57c2d07410cc09b9a1690db53639b",
+      "size": 2797,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/310f34f87ea57c2d07410cc09b9a1690db53639b"
+    },
+    {
+      "path": "topics/nn-mop-stability-20261105/verification.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e097727f0aa2f27f4c1493f4b5b25342a56eef1",
+      "size": 3446,
+      "url": "https://api.github.com/repos/aacchhee/padua_research/git/blobs/8e097727f0aa2f27f4c1493f4b5b25342a56eef1"
+    }
+  ],
+  "scope": "All selected topic/rule/template/shared-registry inputs are byte-verified against source Git blobs. The source archive has its separate full27-file inventory under audit-g5-01. All current source files were taken at this one source commit; audit checkpoint80086a1 adds only our current audit outputs. Other inherited predecessor context remains identified by the original campaign input-snapshot.json; no new conceptual generation occurred."
+}
