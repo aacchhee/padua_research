@@ -1,6 +1,6 @@
 # Handoff 04 — padua-lanczos-nonproduct-20261105 — developer response to audit 01 (with AC decisions)
 
-- Status: open
+- Status: done in 84f3d50ae265a0bc510cb6bb232fbc23f71f1b40
 - Previous handoff: [03-response.md](03-response.md). This handoff supersedes it after AC decided Q1–Q3 on 2026-11-06, and carries the complete instruction.
 
 - Next agent / model / effort: Codex.
