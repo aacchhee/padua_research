@@ -1,0 +1,86 @@
+{
+  "status": "PROPOSED; no new Padua run or fit before coordinator registration",
+  "model_prediction_commit": "59d02c7",
+  "prediction_scope": "Exact S3 Bessel model, even/odd equal. FiniteK128 heuristic displayed slopes minus=-0.1336, plus=0.0456; unbounded and apparently large truncation tail, not certified full model constants.",
+  "operator": "Unchanged pinned topics/padua-mz-2d-frontier-20261105/code/g1_spectral.py PaduaOperator, degree n=m-1, signed dxdy weights",
+  "grids": {
+    "window_A_even_m": [
+      800,
+      1000,
+      1200,
+      1400
+    ],
+    "window_B_even_m": [
+      1800,
+      2200,
+      2600,
+      3000
+    ],
+    "odd_m": "each corresponding even_m+1"
+  },
+  "replays": "Fresh all16 rows, both extrema where completed; old K0 minima used only as consistency references, not substituted into new window.",
+  "pilot_before_full_grid": {
+    "finite_validation_m": [
+      10,
+      11,
+      20,
+      21
+    ],
+    "validation": "Dense independently assembled product-Legendre Gram vs matrix-free extrema at1e-10 relative; signed DCT weights vs independently solved Chebyshev moment weights at m10/11 within1e-12 absolute; weight sum4 within1e-12.",
+    "cost_probe_m": [
+      800
+    ],
+    "cost_probe": "Upper even800 FIRST, hard1800s wall or2000 matvecs whichever first. No801 or larger upper solve until pilot completed with residual guards and conservative forecast below16CPUh for all upper rows and6h per extreme. On cap, preserve failed receipt and mark upper K4 INCONCLUSIVE; no automatic upper stall campaign.",
+    "upper_forecast_rule": "On successful800 upper solve, forecast=2*pilot_wall_seconds*sum((m/800)^3) across all16 registered physical degrees; require<=16CPUh including upper work already spent. Largest per-row2*pilot_wall*(3001/800)^3 must be<=6h. This is a cost forecast, not a performance theorem; retain hard per-row guards."
+  },
+  "solver": {
+    "seed": 20261106,
+    "minimum": {
+      "which": "SA",
+      "ncv": 40,
+      "tol": 2e-11,
+      "maximum_matvecs": 500
+    },
+    "maximum": {
+      "which": "LA",
+      "ncv": 80,
+      "tol": 2e-10,
+      "maximum_matvecs": 2000,
+      "pilot_maximum_wall_seconds": 1800,
+      "postpilot_maximum_wall_seconds": 21600
+    },
+    "maxiter": 20000,
+    "threads": {
+      "OPENBLAS_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1,
+      "MKL_NUM_THREADS": 1
+    },
+    "residual_guard": "||Av-(v^T Av)v||_2 <= 1e-8 max(1,abs(v^T Av)); vector normalized; finite scalars required.",
+    "weight_guard": "abs(sum(weights)-4)<=1e-11, signed weights retained without clipping, negative weight count/mass recorded.",
+    "limits": "Per-extreme6h wall, no silently accepted partial Ritz pair. Stop via matvec counter and wall guard; preserve unsuccessful row and current counters."
+  },
+  "fit": {
+    "model": "lambda_extreme = intercept + slope*log(m/mref), unweighted float64 SVD, each design column scaled to unit2norm. mref smallest physical m per window. Rank2 required.",
+    "scope": "Fit minima and maxima separately, each m parity separately, exact disjoint4-point windows. No fit when any required row incomplete/failed.",
+    "stability": "For each sign and parity: both fitted slopes have predicted sign (minus<0,plus>0), abs(slope)>=1e-4, abs(slopeA-slopeB)/max(abs(slopeA),abs(slopeB))<=0.05, and each maxabs fit residual <= 0.01*abs(slope)*log(max(m)/min(m))+1e-7. Report raw/scaled condition numbers, all residuals and endpoint contrast.",
+    "K4": "Only for a sign whose BOTH parities satisfy stability, compare each finalB slope with preregistered heuristic model display (minus -0.1336 or plus 0.0456); relative discrepancy>0.10 operationally kills that model sign; no stable window => INCONCLUSIVE and no kill. Clearly mark comparison to uncertified finiteK128 heuristic; does not decide exact Bessel-model full norm.",
+    "K5": "S3 prediction is parity equality. No measured agreement statement unless both parity fits stable and finalB relative slope difference<=0.05 for the sign. A failed equality check is finite-window disagreement only.",
+    "condition_guard": "Scaled SVD design rank2; scaled condition2<=100 and finite coefficients/residuals; otherwise INCONCLUSIVE. Report unscaled condition2 also. No historical fit used to set this threshold."
+  },
+  "cost_forecast": {
+    "basis_dimension": "m(m+1)/2; m3001 dimension4504501",
+    "historical_minimum_seconds": {
+      "m1600": 93.3572,
+      "m2000": 212.702,
+      "m2400": 376.7738,
+      "m3000": 648.3973
+    },
+    "minimum_all16_rows": "About1CPUh at historical122-162 matvec costs; conservative2CPUh with500matvec caps and current variation.",
+    "maximum_all16_rows": "No automatic all16 execution. First even800 hard30min/2000matvec; incomplete pilot stops upper and K4upper INCONCLUSIVE. Only successful pilot with2x-cubic conservative projected total<=16CPUh/perrow<=6h permits remaining upper rows.",
+    "total_requested_cpu_bound": "Reserve<=24CPUh including finite validation and selected independent reruns; within cumulative48CPUh; stop/report before exceeding reservation.",
+    "memory": "At3001,ncv80 Krylov basis~2.88GB; total4\u20135GiB upper. Min ncv40 total2\u20133GiB. Sessioncgroup16GiB. At most2degreeprocesses concurrently; recommended one minima process plus even800 upperpilot initially, and at most2large minima thereafter. No concurrent large upper workers.",
+    "acceleration": "No new Chebyshev/Legendre transform algorithm. Only existing tensor BLAS operator and larger standardARPACK upper subspace. Any acceleration requires separate finite validation and registration before scan use."
+  },
+  "evidence": "One compact essential16-row receipt with minima/maxima/residuals/seeds/sourcehashes/weight diagnostics and failure markers, under16KiB if feasible. No stored vectors or tensor arrays. Full timing/debug log local pending designated archival; no splitting to evade file limits.",
+  "independent_rerun": "After code freeze, distinct checker: signed weights/moment-system m10/11 and dense extrema20/21; changed-seed minima800/801 and3000/3001 or largest affordable; changed-seed max at first/largest completed upper rows with same caps. Fit rerun from committed essential dataset."
+}

@@ -82,3 +82,9 @@
 ## S3 exact corner model preregistration
 
 - After the supplementary-checked uniform finite-family reduction, S3 obtains a prospective120/K corner-tail norm estimate and registers [the exact signed Bessel corner model](ideas/S3-corner-operator.md) before numerical model computation or final slope fits. K5 predicts equal limiting extrema on both parities; proof of model convergence/transfer remains OPEN at this registration. A separate Astra ultra developer owns the decisive elementary Legendre/Bessel kernel error, not independent audit.
+
+## S4 Padua preregistration and cost bounds
+
+- Register exact [Padua grid/caps/criteria](S4-padua-proposal.json) before any newrun/fit. Existing measurements forecast minima about1CPUh total; full upper convergence is uncertain. Evenm800 upperpilot capped30min/2000matvecs controls whether upper continuation is affordable. If it stalls, numerical upper K4 stays INCONCLUSIVE; no automatic expensive upper campaign.
+- Exact B operator/parity prediction was locally saved before first model computation; publication59d02c7 followed that model-only computation and preceded new S4 fits. Preserve this timing detail rather than imply publication preceded computation. S3 finiteK128 proxies−0.1336,+0.0456 are heuristic only; tail120/128 is far too coarse for decimal accuracy.
+- S3 now has a candidate full compact-corner operator/spectral-transfer theorem with an explicit finite comparison, based on the separately developed kernel lemma. Full distinct check underway; no final status/registry change yet.
