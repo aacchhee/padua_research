@@ -40,7 +40,7 @@ def run():
  assert C.corner(n,F(100),[F(0)]*3,F(1))['gap']
  reject(lambda:C.corner(n,F(100),[F(100)-t*u,F(100)-t*v,F(100)-t*(u+v)],F(1)))
  tiny=(F(0),F(1,8),F(0),F(1,8));_,d=C.radius_floor(n,tiny)
- assert C.leaf(n,tiny,F(0),C.theta(n,tiny)-d,F(1))[0] is None
+ assert C.leaf(n,tiny,F(1),F(1)+C.theta(n,tiny)-d,F(1))[0] is None
  reject(lambda:C.parse_essential({'format':'D34-kept-proof-v1'},'x'))
  cases.append('pi-fourth corner equality; strict leaf comparison; version rejection')
  return {'result':'PASS fixed synthetic controls','cases':cases,'native_calls':0,'scope':'schema/domain arithmetic only; no scientific certificate'}

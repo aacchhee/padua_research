@@ -914,3 +914,10 @@ RootreleasesEXACT evaluate--run-once fixedN1024ONLY afterthispublication, whole5
 ### D36 first source preserved UNRELEASED
 
 FirstgenericFREEZE89bc06b7.../SPECe7348dc8... andallcodearepublishedunchangedbeforefix. Sourceauditor172731fb... hasonlyF1: strict-leafsyntheticfixtureat1023setsL=theta−1/20<0, soitspositive-Lguardraisesbeforeintendedequalitytest. No import/control/native/driver/lock/scientificattemptoccurred. Fullremaininggeneric41..4095/freshverify/floor/corner/resource/sourceinspectionfindsnoadditionalissuewithincoverage. CorrectbothfixtureVandLby+1ONLYafterthispublication; focusednewfreeze/sourceauditbeforefirst1023pilot. No productionmath/case/caprescue.
+
+
+### D36 focused fixture closure and first1023 release
+
+Focusedsource review5296e003... preserves16357Bfirstfindingprefix172731fb..., ACCEPTS exactONEfixtureline shift ofbothV/Lby1, positiveL>=19/20andstrictequalitymaintained. Updatedcontrols7063f8cd.../FREEZEd7481715... observed; SPEC/everyothercode/native/helper/math/guard/resourceunchanged. SOURCE/attemptappendprovenancewithfirstcb73Gitblobs. No imports/controls/tests/native/engine/pilot/lockconsumedbeforethisrelease.
+
+RootreleasesEXACTcorrected driver1023.py--run-once AFTERthispublication, fixedfirstN1023ONLY, whole120/control2/worker100/safety110/call10/15,wall900/1000/256S+3actual/2047nodes/depth18. Genericenginecorrectness/sourceguardscopes41..4095remainseparatefromthissinglecalibration. No case/source/precision/order/seed/caprescue/retry. AcceptedfinalaccountANDrootdirectEXIT0thenindependentfreshkeptpointverifyrequired. No Syvertpack/preparationuntilresearchend.

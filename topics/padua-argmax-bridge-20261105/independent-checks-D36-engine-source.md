@@ -295,3 +295,38 @@ controls/freeze and preserved original history before root releases the
 sole fixed1023 pilot. No scientific success, new degree or generic
 existence/cost guarantee follows from this source inspection. Final
 Claude audit remains separate.
+
+
+## Focused fixture correction closure — 2026-11-06
+
+**ACCEPTED: D36-F1 CLOSED; no remaining finding.** Before this append,
+the original report was verified as exactly16357bytes with SHA256
+`172731fb5508ba14bc655609a0093ae4f4f1a8b1b3e08780f256df218c78c375`.
+That entire first-review prefix is preserved unchanged.
+
+Read-only comparison against first publication
+`cb73c95f12b2a1c34c0768b1a1060c428802017d` confirms ONE code-line change:
+controls.py now supplies V=1,L=1+theta-delta instead of V=0,L=theta-delta.
+Geometry,M,n,case count and the equality U-delta=L remain unchanged.
+Since theta>=0 and delta=1/20, L>=19/20>0. FAR cannot pass because
+U=L+delta>L; the closed near-proxy test rejects the intended equality.
+The fixture therefore reaches the production strict predicate with valid
+premises and returns the expected None, by direct source/algebra review.
+No actual control execution is claimed.
+
+Corrected controls.py is2801bytes, SHA256
+`7063f8cd4ce7bfda9a3d10b96d8659402cf7adac62a430c7eafd626fa1406bc4`.
+Corrected FREEZE is7073bytes, SHA256
+`d74817158e9a08de67a89e2c790ea1e39b5729fc17c0df002b5b15564b5b2001`;
+only its controls byte-count/hash row changed. SPEC is unchanged at
+`e7348dc8d470b42da1c6a0cff33d87f7784f7e91542fdf6bae0d9eff91b90c67`.
+All other production/native/helper code, mathematics, guards, inputs,
+resource caps and pilot remain unchanged. SOURCE/attempt only append
+repair provenance; their four original Git blob references were checked.
+
+No imports, metadata/control test, compiler/native/scientific job,
+engine/driver/pilot or lock action occurred in this focused review.
+This is a prerelease fixture repair, not a scientific retry. Root
+publication and explicit fixed1023 release remain separate; acceptance
+of this source supplies no completed pilot, finite degree result or
+all-degree existence/cost claim. Final Claude audit remains separate.

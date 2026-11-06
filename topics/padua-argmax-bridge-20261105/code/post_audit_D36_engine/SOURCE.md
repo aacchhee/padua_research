@@ -132,3 +132,41 @@ This first freeze pins all executable sources including driver and optional
 native branch, never prose. Root separately audits/publishes/releases the
 single1023 pilot. No finite1023 result, universal success/cost or new degree
 claim is asserted here.
+
+
+## 2026-11-06 focused prerelease repair — D36-F1 fixture only
+
+Root authorized this correction after publishing the FIRST unreleased source
+and complete finding report at commit
+`cb73c95f12b2a1c34c0768b1a1060c428802017d`. Original audit:
+`independent-checks-D36-engine-source.md`, SHA256 `172731fb5508ba14bc655609a0093ae4f4f1a8b1b3e08780f256df218c78c375`.
+The original finding/report and published source history remain preserved.
+
+The tiny-box synthetic equality fixture used V=0 and L=theta-delta, which
+violated leaf's positive-L premise at the selected synthetic n1023. It would
+raise before reaching the intended strict-equality rejection. The ONLY code
+change adds1 to BOTH V and L: V=1,L=1+theta-delta. Thus U-delta=L remains
+exactly the same equality and geometry/M are unchanged, while the valid
+positive-L premise now holds. No production mathematical source, case/control
+count, degree, algorithm, guards, inputs, caps or other module changes.
+Only controls.py bytes/SHA are refreshed in FREEZE; SOURCE and this attempt
+receive dated provenance appendices. No module import, author control,
+numeric/compiler/native/engine/pilot job or output lock was consumed.
+This is a prerelease fixture correction, not a scientific retry.
+
+First objects remain retrievable at the published commit above under
+`topics/padua-argmax-bridge-20261105/`:
+
+| Original object | Git blob | Original SHA256 |
+|---|---|---|
+| code/post_audit_D36_engine/controls.py | 9b8683aecb24428e7c490b66c8be7b440d766f1b | 03a19bc5f787561490e858a119d0b7730c1c4f925b2879dbfe144382bcd87330 |
+| code/post_audit_D36_engine/FREEZE.json | cf6b7246317bb505d9ba1ae2efec8c89ae57e58b | 89bc06b73067de13a1ed805d817b467f841844b408dbcf058326314487d6ff07 |
+| code/post_audit_D36_engine/SOURCE.md | 1d38a4674c52f1f7025e1f106740d2d38731d2ea | 0c074314e2df14ef350f12703c88e124711a8ab6bc7d07e072d4abb1cfcabfaf |
+| attempts/D36-generic-engine.md | effa10acdd2b7c7885f45880f96b46935b765aa8 | 6ffd785dfa978dd66a66e845da1a05cd320282a3dd1570ef7eebfac548ba4442 |
+
+Corrected controls.py: 2801B,
+SHA256 `7063f8cd4ce7bfda9a3d10b96d8659402cf7adac62a430c7eafd626fa1406bc4`.
+Corrected FREEZE: 7073B,
+SHA256 `d74817158e9a08de67a89e2c790ea1e39b5729fc17c0df002b5b15564b5b2001`.
+Distinct focused review, root publication and explicit first1023 release
+remain separate. The source author does not launch the corrected candidate.
