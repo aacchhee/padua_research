@@ -1,7 +1,7 @@
 # NN MOP conditioning: intrinsic or metric? Sharp rates, weak stability, IEP-MOP comparison: log
 
 - Branch: `codex/nn-mop-conditioning-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR · Next: `Codex (gpt-6.1-sol, medium): Continue codex/nn-mop-conditioning-20261106.` · [Audit 02](audit-02.md) accepted the response with no BLOCKING or MAJOR findings; PR preparation is [handoff 05](handoffs/05-pr-prep.md).
+- Stage: PR — READY for AC's merge decision ([readiness-01](readiness-01.md)). No agent work remains; only AC merges. Repeat the reservation check if main or any open PR's ledger changes before the merge.
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: accepted within audit-01 scope; response addresses classification, attribution, records and robustness; see response-01.md.
 
@@ -370,3 +370,19 @@ Bounded Sol medium workers prepared inventory, MINOR corrections and frontier/re
 Verification: verify_evidence.py PASS, 89 committed code/data/import/preparation identities; no existing code/input/evidence identity changed. git diff --check passes; relative file links checked. Optional audit02 MINOR6/7 code changes were not made; documented limitations remain in external-code.md. All other MINOR findings have dispositions in response-02.md. PR32 stays draft pending Claude readiness. Large raw-output cold-storage delivery and licensed Advanpix execution remain pending, as previously documented.
 
 Next: handoff06, Claude Opus 5.5 high readiness: reviewed shared-registry diff, MINOR fixes and a fresh reservation union check. No new substantive audit unless application exceeds the accepted scope.
+
+## 2026-11-06 — Claude, Opus 5.5 high — readiness check 01
+
+Rules read at `a16715f`; input `446b14d`; main still `76ba421`, so no merge was
+needed. One Claude worker (Opus 5.5 high) reviewed the shared-registry diff.
+
+All 33 final IDs, statuses, aliases and 187 links check out. The PD-T448 PARTIAL
+application preserves the statement bytes and the earlier OPEN rationale. All
+audit-02 MINOR items are confirmed by diff; optional MINOR-6/7 were handled as
+documented limits, with no code change.
+
+Seven auditor in-place MINOR wording and link fixes are in `5e82abd`, applied as
+the third review pass. The reservation refresh against PR27/31/33 is
+collision-free. `verify_evidence` passes with 89 identities. Decision: READY;
+handoff 06 closed with no successor. Only AC merges.
+
