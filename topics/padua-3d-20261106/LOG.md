@@ -1,9 +1,9 @@
 # Padua-type points in three dimensions: log
 
-- Branch: `codex/padua-3d-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
+- Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
 - Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/08-response.md](handoffs/08-response.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
-- Claims: provisional records in [report.md](report.md); no final IDs allocated.
+- Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
 ## 2026-11-06 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -479,3 +479,29 @@ their corresponding runs, with publication and execution timing distinguished.
 - LOG correction (not an edit of history): the model-attribution withdrawal cited at the
   2026-11-06 Part A entry ("deviations-02") is in [response-deviations-01.md](response-deviations-01.md), m11.
 - [Handoff 07](handoffs/07-audit.md) done in `a74c1b1` (report `c681ba0`, auditor fixes `a74c1b1`); [handoff 08](handoffs/08-response.md) opened for the Codex response and the reopened T10.1 and T9-complement routes. Counters continue (T7=3, T8=2, T9=2, T10=2 of 25).
+
+## 2026-11-06 — Codex, gpt-6-astra high — handoff08 initialization
+
+- Role: developer/orchestrator. Rules read at full input head
+  `9042e1c42964150f30fdbe8563c12ba6c6a8692a`: AGENTS, WORKFLOW, CODEX.
+- Refreshed GitHub main and topic: main remains
+  `f70a260e5b5f9a01209dc8a05faabdcf8db1feeb`; recovered the three
+  audit/handoff commits with their exact original objects and tree.
+  Shell proxy remains unavailable; repository connector performs permitted
+  topic publication without rewriting history. PR33 remains draft, no range.
+- Read handoff08, audit03 and its scope reports/fixes. Accepted mathematics
+  is retained. T10.1 and the unrestricted T9 complement reopen; T8 half-shift
+  M=2N is the new prospectively gated route. Counters continue at
+  T7=3,T8=2,T9=2,T10=2 of25 until actual result checkpoints.
+- Assigned mathematical workers gpt-6.1-sol xhigh to the shared lattice
+  census/complement, T8 half-shifts, records, and two distinct supplementary
+  checks. Code/receipt hygiene uses gpt-6.1-sol high. Root alone holds Git.
+  Model/effort are configured assignments; runtime metadata is unexposed.
+- Existing-route completion and correction add no novelty claim. New T8
+  selectors await a complete registry gate and a published prospective
+  protocol before execution. Worker file ownership is disjoint.
+
+- Prospective T8 gate/protocol are published before dependent execution.
+  The reopened T9/T10 replication protocols were written before their new
+  enumerations, but this checkpoint follows the first executions; that
+  timing remains worker attestation, not a publication-before-run claim.
