@@ -37,3 +37,7 @@ Exact registered K1 fits pass both parities: windowA/windowB intercepts13.217758
 ## 2026-11-06 — S2 operator prediction before Galerkin solve / K3 fit
 
 Register the exact microscopic endpoint variational norm in [S2-endpoint-model.md](theory/S2-endpoint-model.md) as S2's proposed common even/odd limiting value. No numerical norm or upper-spectrum fit has been computed/read by S2 at registration. The record states its unproved finite-to-model obligations. K3 final extrapolation remains held for an exact numerical fit pre-registration; model Galerkin computation may follow publication.
+
+## 2026-11-06 — K3 numerical protocol before fitting
+
+Use the already registered disjoint raw-grid windows j8–14 and j15–20, parity separate with physicalN. Fit lambda_max−1=c0+a(Nref/N)^2+b(Nref/N)^2 log(N/Nref), Nref the smallest N in each window, by unweighted float64 SVD with columns scaled to unit2norm and rank3 required. Limit display1+c0. Require max absolute residual<=1e-7 inA and<=1e-8 inB, intercept agreement<=1e-6 across windows and final parity agreement<=1e-6; otherwise INCONCLUSIVE, no posthoc alternative fit. Raw residual/constraint guards apply. Original K3 kill is absolute model-norm discrepancy>1e-3 to finalB. Model Galerkin J32/64/128/256/512; one J1024 extension only if final change>1e-5. Galerkin stability is MEASURED; without a tail bound, no certified full norm is claimed.

@@ -62,3 +62,7 @@
 - The allocated hard S1 full-transfer worker was interrupted immediately when K2 arrived and remains stopped. No full-transfer proof or execution is claimed. No revised model is launched.
 - [S2 deficit corollary](theory/S2-eta-deficit.md) and [uniform5/3 proof](theory/S2-uniform-upper.md) pass distinct Astra mathematical review in [independent-checks-S2.md](independent-checks-S2.md); required Claude audit remains pending.
 - S2 round2 registers the exact [endpoint operator model](theory/S2-endpoint-model.md), with common-parity norm prediction, before its Galerkin calculation and K3 final extrapolation. Operator transfer remains OPEN.
+
+## Upper-model numerical registration
+
+- After publication513f3bd, S2 may evaluate the registered endpoint model with J32/64/128/256/512 and one conditional J1024. [Gates](gates.md) now registers the precise K3 upper-spectrum numerical extrapolation before execution. S4 will use frozen raw rows, guard and scaled SVD checks; no posthoc fit alternative. A numerically stable Galerkin norm is not a proved full-operator norm.
