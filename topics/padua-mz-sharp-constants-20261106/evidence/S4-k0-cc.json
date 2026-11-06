@@ -1,0 +1,192 @@
+{
+  "status": "MEASURED",
+  "pin": "2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861",
+  "command": [
+    "topics/padua-mz-sharp-constants-20261106/code/S4_k0_replay.py",
+    "--suite",
+    "cc",
+    "--output",
+    "topics/padua-mz-sharp-constants-20261106/evidence/S4-k0-cc.json"
+  ],
+  "started_utc": "2026-11-06T11:31:39.886395+00:00",
+  "model": "gpt-6.1-sol medium",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "mpmath": "1.3.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "script_sha256": "707d8d925d34c09846ac454a7482be2efc8563b33dd0e5e9ad2a16842d605285",
+  "input_hashes": {
+    "topics/mz-constants/sources/padua_mz_inputs/code/cc_mz_large.py": {
+      "sha256": "df392b043fad81395ce6e07258a438bbd5fc609fc83fc51fa03314b885ac5af9",
+      "git_blob": "b5e2b2c9e53c0ed56983732e4f4aee65519ff374"
+    },
+    "tracks/mz-constants/code/mz2d_spectra.py": {
+      "sha256": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76",
+      "git_blob": "7b342216e14053d28ff3f99d5f5685135c2522f1"
+    },
+    "topics/padua-mz-2d-frontier-20261105/code/g1_spectral.py": {
+      "sha256": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+      "git_blob": "c16eaff0f020017d9c8086842bed7ffa07e421b3"
+    },
+    "topics/padua-mz-2d-frontier-20261105/evidence/g1-minimum-only.json": {
+      "sha256": "82ada412cd2886c6c569431bbb77bf4d786f96bfc8190554d5fe2e8b95d12b00",
+      "git_blob": "c6ae25bdc140b1c727ea6832e3511a4920dfeae7"
+    },
+    "tracks/mz-constants/theory/reproduced-spectra.md": {
+      "sha256": "4f5d7452aa65f4f15f8eb0d773ec4469d3a003d1b1e3660f6ac6d8c7eae7a4a4",
+      "git_blob": "1666a74b8d208f30aec7925b73ce61af623c98e3"
+    },
+    "topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md": {
+      "sha256": "8f88baa6870fbc00132622fe5b3e2e461bbdf96ff4fffad41b33f288761ff3e7",
+      "git_blob": "5c7ab7eb32c90559295e3bd008e23fd029b1b8aa"
+    }
+  },
+  "results": [
+    {
+      "N": 40,
+      "n": 39,
+      "minimum": 0.2598490248754948,
+      "maximum": 1.0044711207220713,
+      "parity": [
+        [
+          0.6723448834052622,
+          1.0044711207220713
+        ],
+        [
+          0.2598490248754948,
+          1.0044237571705852
+        ]
+      ],
+      "reference": [
+        0.259849024875495,
+        1.004471120722071
+      ],
+      "maximum_relative_error": 6.661338147750939e-16,
+      "pass_1e10": true,
+      "seconds": 0.0009217100000000755
+    },
+    {
+      "N": 80,
+      "n": 79,
+      "minimum": 0.21615328400902079,
+      "maximum": 1.0044397347292477,
+      "parity": [
+        [
+          0.5952330932457238,
+          1.0044396155961477
+        ],
+        [
+          0.21615328400902079,
+          1.0044397347292477
+        ]
+      ],
+      "reference": [
+        0.216153284009021,
+        1.004439734729248
+      ],
+      "maximum_relative_error": 9.992007221626409e-16,
+      "pass_1e10": true,
+      "seconds": 0.0009618600000180777
+    },
+    {
+      "N": 160,
+      "n": 159,
+      "minimum": 0.18249027656594552,
+      "maximum": 1.0044391013880674,
+      "parity": [
+        [
+          0.5281060356371569,
+          1.004436196418053
+        ],
+        [
+          0.18249027656594552,
+          1.0044391013880674
+        ]
+      ],
+      "reference": [
+        0.182490276565946,
+        1.004439101388067
+      ],
+      "maximum_relative_error": 2.55351295663786e-15,
+      "pass_1e10": true,
+      "seconds": 0.0017692559999886726
+    },
+    {
+      "N": 320,
+      "n": 319,
+      "minimum": 0.15601518364212258,
+      "maximum": 1.0044378009577226,
+      "parity": [
+        [
+          0.47005319388077826,
+          1.0044378009577226
+        ],
+        [
+          0.15601518364212258,
+          1.0044364807947426
+        ]
+      ],
+      "reference": [
+        0.156015183642123,
+        1.004437800957723
+      ],
+      "maximum_relative_error": 2.6645352591003757e-15,
+      "pass_1e10": true,
+      "seconds": 0.006116828000017449
+    },
+    {
+      "N": 640,
+      "n": 639,
+      "minimum": 0.1348334881629361,
+      "maximum": 1.00443722157855,
+      "parity": [
+        [
+          0.4199487915248734,
+          1.0044368071505414
+        ],
+        [
+          0.1348334881629361,
+          1.00443722157855
+        ]
+      ],
+      "reference": [
+        0.134833488162936,
+        1.00443722157855
+      ],
+      "maximum_relative_error": 8.881784197001252e-16,
+      "pass_1e10": true,
+      "seconds": 0.03016569799996205
+    },
+    {
+      "N": 1280,
+      "n": 1279,
+      "minimum": 0.11763515599221253,
+      "maximum": 1.0044370350658494,
+      "parity": [
+        [
+          0.3766739151767238,
+          1.0044370350658494
+        ],
+        [
+          0.11763515599221253,
+          1.004436930528698
+        ]
+      ],
+      "reference": [
+        0.117635155992213,
+        1.004437035065849
+      ],
+      "maximum_relative_error": 3.9968028886505635e-15,
+      "pass_1e10": true,
+      "seconds": 0.18485419900002853
+    }
+  ],
+  "seconds": 0.22905845299999328,
+  "peak_rss_kib": 81544
+}

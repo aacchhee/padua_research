@@ -1,10 +1,11 @@
 # Direction rounds
 
-K0 replay is the initial prerequisite; S1–S3 have not started. No completed research round or passed gate is claimed.
+K0 developer replay passed under the dated clarification in gates.md. S1–S3 may now develop after novelty gates. Independent K0 replay is pending.
 
 | Direction | Completed rounds | Consecutive no-progress rounds | State |
 |---|---:|---:|---|
-| S1 | 0 | 0 | waiting for K0 |
-| S2 | 0 | 0 | waiting for K0 |
-| S3 | 0 | 0 | waiting for K0 |
-| S4 | 0 | 0 | preparing K0 |
+| S1 | 0 | 0 | gate/development |
+| S2 | 0 | 0 | gate/development |
+| S3 | 0 | 0 | gate/development |
+| S4 | 1 | 0 | K0 passed; preparing scan pre-registration |
+

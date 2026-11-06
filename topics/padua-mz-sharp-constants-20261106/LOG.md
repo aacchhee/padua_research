@@ -21,9 +21,12 @@
 
 - K0–K5 and S1–S4 as in handoff 01.
 
-## 2026-11-06 — Codex continuation setup
 
-- Rules read at full input head `2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861`; current main is `76ba4214b100c86a44941f5e9a662ce9ce48efb8`, already the branch parent. No base merge needed.
-- [Plan](plan.md), [gates](gates.md), and [rounds](rounds.md) registered before runs. K0 assigned to gpt-6.1-sol medium; remaining directions wait for K0. Model allocation and disjoint ownership follow handoff01.
-- Shell Git fetch failed connecting to configured proxy port8080. GitHub connector reads work; frozen source snapshot preserves repository paths in `/workspace/sharp-work`. Input inventory records Git blobs; unchanged source bytes copied from the existing checkout are hash verified. Publication uses Git data API with expected-head lease. The older checkout is untouched.
-- No novelty content added at setup; novelty gates apply before model development. No range reserved. No new result, extrapolation or independent check claimed.
+## 2026-11-06 — Codex continuation setup and K0
+
+- Rules read at `2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861`; current main/base `76ba4214b100c86a44941f5e9a662ce9ce48efb8` is already the topic parent. No base merge needed. Setup plan/gates published in6e928d9 before first run. Draft PR31 opened.
+- Shell Git fetch failed connecting to configured proxy8080. Connector reads work. The pinned source corpus `/workspace/sharp-work` preserves paths; [input inventory](input-snapshot.json) verifies79 files by Git blob/SHA256. The older checkout is untouched. Publication uses Git data APIs and expected-head lease.
+- Coordinator requested gpt-6-astra high; serving metadata unexposed. S4 development requested gpt-6.1-sol medium; S1–S3 requested gpt-6.1-sol xhigh, disjoint paths. A distinct gpt-6-astra high checker is rerunning K0. Required Claude audit remains PENDING.
+- K0 developer replay PASS under the explicit finite-norm interpretation: six CC cases N40–1280, maximum relative difference3.997e-15; Padua minima m800/1000 bit-identical to pinned PD-T300 values. Carrier finite norm formula agrees with independently assembled composite angular quadrature within3.31e-16 throughm4096; finite-to-limit offsets remain nonzero and decrease. These are MEASURED, not new spectral proofs.
+- Original K0's request for matching a carrier norm limit at1e-10 is ill-posed at a finite degree without an error allowance. We preserve that criterion and record a dated clarification in gates.md: compare exact finite norm to a separate quadrature at1e-10, then measure finite-to-limit discrepancy separately. The first global x-Gauss check lost accuracy at high degree; its code/receipt are retained, its issue explained by endpoint sensitivity, and the composite angular check replaces it. No fit was performed.
+- S1–S3 cleared to develop after K0 and their novelty gates. No new mechanism proposed by coordinator; gate/predecessor reading belongs in each direction's record. No final ID range reserved.

@@ -1,0 +1,19 @@
+{
+  "pinned_commit": "2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861",
+  "files": [
+    {
+      "path": "topics/mz-constants/sources/padua_mz_inputs/code/cc_mz_large.py",
+      "git_blob": "b5e2b2c9e53c0ed56983732e4f4aee65519ff374",
+      "sha256": "df392b043fad81395ce6e07258a438bbd5fc609fc83fc51fa03314b885ac5af9",
+      "bytes": 2225,
+      "verification": "GitHub fetch_file pinned ref, then matching local blob copy"
+    },
+    {
+      "path": "topics/padua-mz-2d-frontier-20261105/evidence/g1-minimum-only.json",
+      "git_blob": "c6ae25bdc140b1c727ea6832e3511a4920dfeae7",
+      "sha256": "82ada412cd2886c6c569431bbb77bf4d786f96bfc8190554d5fe2e8b95d12b00",
+      "bytes": 2124,
+      "verification": "GitHub fetch_file pinned ref, then matching local blob copy"
+    }
+  ]
+}
