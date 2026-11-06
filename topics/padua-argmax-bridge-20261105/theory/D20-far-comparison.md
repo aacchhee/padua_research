@@ -109,3 +109,8 @@ pre-receipt CPU checkpoint are in ../attempts/D20-global-hybrid.md.
 No second scalar execution, fallback/search/retune or other degree
 evaluation occurred. The accepted D18 failed far allocation stays false
 at7000, while the new proved telescope supplies(4).
+
+
+## Root review closure — 2026-11-06
+
+Distinct review [D20](../independent-checks-D20-global-hybrid.md), SHA256 `e1284bce7f95e332cba284cbafa03c7667772d7518076aea3d3596331cb82398`, accepts all four split scopes, including exact global argmax at every n>=7000. Root adopts the result: far gap3/40, accepted D18 near gap1/400 and D17 actual-corner loss1/8. The complete closed physical cover and both parity equality sets are retained. This dated closure preserves reviewed text and first scalar evidence; final Claude audit remains separate.

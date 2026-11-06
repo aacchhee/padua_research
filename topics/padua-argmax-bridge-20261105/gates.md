@@ -176,3 +176,6 @@ new mathematical cost reductions; no legacy degree extension.
 
 
 2026-11-06 D18/D19 independently accepted: near noncorner exclusion7000 and scoped failed far budget; adaptive own-tree norm/pruned2048 geometry41S+3actual. Reviews in independent-checks-D18-phase-far.md and independent-checks-D19-adaptive-norm.md. D20 newfar7000 firstPASS is review pending. No threshold adoption or runtime speedup from these metadata results. D21/D22 prospective gates are in LOG; packing deferred until research end and only if needed.
+
+
+2026-11-06 D20 ACCEPTED report e1284bce...: root analytic global onset7000; far3/40, accepted near1/400 andcorner1/8. Sole independent26interval/11control replayPASS. Original D18far failure remains scoped and unchanged. Fullfinite41–6999 gap except512/2048 remainsOPEN.

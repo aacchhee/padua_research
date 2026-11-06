@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **19/40** (D01–D19). Active: **D20**; D21 certifier development and D22 hard-paper block in parallel.
+Completed: **20/40** (D01–D20). Active: **D21** certifier development; D22 hard-paper block and D23 cheap arithmetic gate in parallel.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -21,7 +21,7 @@ Completed: **19/40** (D01–D19). Active: **D20**; D21 certifier development and
 | D08 | COMPLETE | Lower global analytic onset; point-to-box reduction | Global theorem independently accepted for every n>=50000, primary40000 far failure preserved. Three split point-to-box proofs independently accepted with no findings; no patch instances. |
 | D09 | COMPLETE | Three-point actual-corner trial and a useful independent global norm | Global M512=34 accepted; primary three-point trial PASS11.265CPU and fresh independent replay PASS11.016CPU. Whole actual-corner rectangles certified with19/5 radial-square loss. Full global512 stillOPEN. |
 
-Current boundary: exact argmax2–40,512,2048 and every integer n>=10000;41–9999 excluding512/2048 OPEN.
+Current boundary: exact argmax2–40,512,2048 and every integer n>=7000;41–6999 excluding512/2048 OPEN.
 
 The initial scientific boundary is exact argmax degrees2–40 and alln>=500000,
 with exact two parity-correct corners. Gap41–499999 staysOPEN. Claude's
@@ -59,8 +59,10 @@ No main push, merge, force, tags, .github/settings or major cleanup.
 
 Delivery constraint from AC: use reasoning budget for BOTH cost reduction and analytic-bound reduction. ByD39(or earlier exhaustion), freeze the best complete result into an auditable Syvert2 pack matching actual bttb-research A–B–C structure; audit before execution. Finalstage within40-round ceiling reserved for concrete pack integration.
 
-| D20 | ACTIVE | New global regularized outer/mesh telescope | Developer sole7000 scalarPASS, new six-row bound explicitly charges central pair; independent review pending, no adoption yet. |
-| D21 | PREPARING | Static geometry fresh-point verifier | Separate math/SPEC and technical code development; no discovery, one proposed upper-gap6912 case only after audits. |
+| D20 | COMPLETE | New global regularized outer/mesh telescope | Independent review accepts exact globalargmax EVERYn>=7000, far gap3/40; all six rows and full global telescope explicit. Sole26interval/11control independentPASS. |
+| D21 | ACTIVE | Static geometry fresh-point verifier | Separate math/SPEC and technical code development; no discovery, one proposed upper-gap6912 case only after audits. |
 | D22 | PREPARING | Actual-origin relative or anisotropic near proof | Prospectively justified bounded Astra ultra paper block, no scalar execution without new gate. |
 
 AC clarification: pack preparation waits until research ends and is necessary only if a gap remains. Reference inventory may be retained; no pack skeleton or run preparation now.
+
+| D23 | PREPARING | Lower-order rigorous partial-cotangent backend | Parameterized tail/roundoff paper gate only; no source change or benchmark before acceptance. |

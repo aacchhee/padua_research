@@ -462,3 +462,8 @@ remain separate. No original data or certificate was removed.
 ### Accepted D18/D19 and pending structural follow-up
 
 Independent reviews now accept D18 near exclusion for every n>=7000 (gap1/400), its majorant and scoped failed far budget, and D19 adaptive self-norming/pruned2048 certificate. The pruned certificate uses61nodes and41S+3actual points with own-tree norm35. Its runtime remains unmeasured. D20 replaces the old far error assembly with a new fully charged global telescope; the first7000 directed scalar passes with far slack>.0762299, but independent review is pending. Root global boundary remains10000 until acceptance. Pack preparation is deferred until research ends and only if a gap remains.
+
+
+### D20 accepted: analytic global boundary7000
+
+The distinct D20 review accepts all four split scopes with no findings. Root now adopts exact global argmax for every integer n>=7000: far gap3/40, near noncorner gap1/400 and actual-corner loss1/8. The new error assembly explicitly charges all six retained rows, GLOBAL outer profile and exact mesh terms. Independent sole7000 directed replay checked26intervals and11controls, no retries. Remaining finite gap41–6999 except512/2048 stays OPEN. This is a sufficient bound, not a claimed optimum; final Claude audit remains pending.

@@ -1,21 +1,21 @@
 # Padua argmax bridge — current research results
 
 The exact two-corner global argmax is proved for **degrees 2–40, 512,
-2048**, and **every integer n>=10000**. Equality corners are
+2048**, and **every integer n>=7000**. Equality corners are
 {(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n.
-Degrees41–9999 excluding512 and2048, and the all-degree target PD-T099,
+Degrees41–6999 excluding512 and2048, and the all-degree target PD-T099,
 remain OPEN. This is a sufficient analytic upper boundary.
 
-[Global theorem](../topics/padua-argmax-bridge-20261105/theory/D16-global-comparison.md),
-[independent review](../topics/padua-argmax-bridge-20261105/independent-checks-D16-budget.md).
-For n>=10000: far S<Lambda_c-1/400; near noncorner
-lambda<Lambda_c-11/1000; actual corners
-lambda<=Lambda_c-(alpha²+beta²)/4. The complete closed physical cover,
-both parities, nodes, collisions and equality are proved. Phase-dependent
-absolute errors and a separate origin bound give the new onset; no finite
-degree enumeration or extra near correction. Primary10000 passes, with
-independent32component directed replay. PD-T271 remains an explicit
-computer-assisted dependency of this analytic theorem; final Claude pending.
+[Global theorem](../topics/padua-argmax-bridge-20261105/theory/D20-global-comparison.md),
+[independent review](../topics/padua-argmax-bridge-20261105/independent-checks-D20-global-hybrid.md).
+For n>=7000: far S<Lambda_c-3/40; near noncorner
+lambda<Lambda_c-1/400; actual corners
+lambda<=Lambda_c-(alpha²+beta²)/8. The complete closed physical cover,
+both parities, nodes, collisions and equality are proved. A new fully charged
+global regularized outer/mesh telescope replaces the old far allowance;
+all six retained rows are explicit. Sole7000 primary and independent
+26-component directed replay pass. PD-T271 remains an explicit
+computer-assisted dependency; final Claude audit remains pending.
 
 The guarded actual-Lebesgue point evaluator independently reproduced all13
 fixed cases,10 finite-polynomial references and6 invalid controls in

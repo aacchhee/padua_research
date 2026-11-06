@@ -81,3 +81,8 @@ all-degree PD-T099, or settle the full D13 phase-relative remainder.
 Known isolated degrees2–40,512,2048 remain separate. The residual
 degrees41–511,513–2047,2049–6999 remain OPEN under this result.
 The first source/receipt and all prior D18 failed records are preserved.
+
+
+## Root review closure — 2026-11-06
+
+Distinct review [D20](../independent-checks-D20-global-hybrid.md), SHA256 `e1284bce7f95e332cba284cbafa03c7667772d7518076aea3d3596331cb82398`, accepts all four split scopes, including exact global argmax at every n>=7000. Root adopts the result: far gap3/40, accepted D18 near gap1/400 and D17 actual-corner loss1/8. The complete closed physical cover and both parity equality sets are retained. This dated closure preserves reviewed text and first scalar evidence; final Claude audit remains separate.

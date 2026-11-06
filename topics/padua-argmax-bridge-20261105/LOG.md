@@ -710,3 +710,21 @@
 ### AC clarification: packing contingent on remaining gap
 
 - AC: “the pack has to be prepared only at the end when we know that it is needed -- maybe you close the gap before”. This refines the delivery directive: no pack preparation during research. Preserve the read-only A/B/C reference inventory already gathered, but build no skeleton/scripts/pack now. At research end, prepare and audit a Syvert2 pack only if the gap still needs computation. Closing the gap analytically would remove that need.
+
+
+### Refreshed base during continued research
+
+Fetched both heads after d248fed push; currentmain f70a260e5b5f9a01209dc8a05faabdcf8db1feeb adds unrelated MZ sharp constants. Merged without conflicts at c1e5bef6ae645dd4e42c82c8fe2c709b76b8a2f4; no branch rewrite. Rules AGENTS/WORKFLOW/CODEX bytes unchanged from02beaef2b22f8232286713dab0a1b7c95582ce13. Whole generated-output inventory after merge9,002,611B plus2,087B explicit machineJSONextension exception =9,004,698B, under AC10MB ceiling. No cleanup or research-output removal. Active developers notified to inspect new IDEA/literature entries where relevant to their gates.
+
+
+### D23 prospective cheap arithmetic backend paper gate
+
+- Fixed C11 spends work on J16/CP640 moments, WD96 smooth derivative and K32/LH16 harmonic remainders to obtain far more point accuracy than the cover margins appear to require. New D23 asks whether the EXISTING parameterized analytic remainder proofs permit a conservatively lower-order backend, without changing the operator, rows, guard, tails or exact enclosure meaning. This is cost development, not a degree accumulation campaign.
+- Sol xhigh paper gate only: reconstruct all lower bounds on J/WD/K/LH/precision from accepted proofs, derive full normalized S error allowance and candidate parameters, and kill any choice that relies on empirical overlap or unchecked cancellation. No source change to C11 and no benchmark until new source/SPEC/independent review. A later matched single-case benchmark must count all retained rows/build/children and compare actual enclosures against independently accepted reference, preserving first failures. No accuracy rescue/retry.
+
+
+### D20 accepted; current analytic global boundary7000
+
+- Distinct Astrahigh report e1284bce7f95e332cba284cbafa03c7667772d7518076aea3d3596331cb82398 ACCEPTS all four split scopes, no unresolved findings. Exact four endpoint-row/C2 match and both central rows, collision continuity, GLOBAL D07 telescope, phase-u ratio, all-n monotonicities and closed physical both-parity cover checked. Sole independent7000 replay26/26interval containment and11/11controls; far slack>.076229903302571>3/40; CPUcheckpoint.089344, process exit0, no retry/nativejob. Receipt9a5155c7...6546B.
+- Root adopts exact two-corner global argmax EVERYn>=7000, alongside known2–40/512/2048. Residual41–6999 excluding512/2048 OPEN. D18near1/400 and D17corner1/8 are reused at their accepted domains; no failed oldrecipe silently retuned. D20complete20/40. Final Claude audit remains separate.
+- D21 frozen static fresh-point source is under math/source review before its first upper-gap6912 run. D22 hard origin-relative/anisotropic work and D23 lower-order rigorous arithmetic paper gate continue. Reference notes are saved; no Syvert pack preparation until researchend iff needed.
