@@ -921,3 +921,10 @@ FirstgenericFREEZE89bc06b7.../SPECe7348dc8... andallcodearepublishedunchangedbef
 Focusedsource review5296e003... preserves16357Bfirstfindingprefix172731fb..., ACCEPTS exactONEfixtureline shift ofbothV/Lby1, positiveL>=19/20andstrictequalitymaintained. Updatedcontrols7063f8cd.../FREEZEd7481715... observed; SPEC/everyothercode/native/helper/math/guard/resourceunchanged. SOURCE/attemptappendprovenancewithfirstcb73Gitblobs. No imports/controls/tests/native/engine/pilot/lockconsumedbeforethisrelease.
 
 RootreleasesEXACTcorrected driver1023.py--run-once AFTERthispublication, fixedfirstN1023ONLY, whole120/control2/worker100/safety110/call10/15,wall900/1000/256S+3actual/2047nodes/depth18. Genericenginecorrectness/sourceguardscopes41..4095remainseparatefromthissinglecalibration. No case/source/precision/order/seed/caprescue/retry. AcceptedfinalaccountANDrootdirectEXIT0thenindependentfreshkeptpointverifyrequired. No Syvertpack/preparationuntilresearchend.
+
+
+### D36 first1023 candidate and explicit observation limitation
+
+Corrected7975a0c source was invoked once by root driver1023--run-once. Persisted complete final account has nullfailure and30.182919CPU throughsummary; checker supervisor independently records returncode0. Outer invocation result/session was lost at compaction, so root does NOT claim observed outer EXIT0 or canonical primary completion. No rerun/rescue. Candidate4958B has47S+3actual,71nodes/36leaves(5NEAR29FAR2OUTSIDE), TREE M30 ratherthan coarse36, floor1/20. Raw remains whole offGit. A distinct fresh verifier may establish finite1023 using ONLY candidate geometry/keys/method, recomputing all enclosures/norm/floor/phase/corner predicates; source auditor confirms no old endpoint/acceptance dependence. Its own observedEXIT0 and completeaccount remain mandatory. No degree1023 adoption yet.
+
+AC reiterates: prepare the Syvert2 pack ONLY when research ends and a gap remains; if research closes the gap no pack is needed. Generic engine/calibration research continues; no pack skeleton or bundling now.

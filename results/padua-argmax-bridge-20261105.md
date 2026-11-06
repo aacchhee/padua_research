@@ -5,7 +5,7 @@ The exact two-corner global argmax is proved for **degrees 2–41, 512**, and **
 Degrees42–1023 excluding512, and the all-degree target PD-T099,
 remain OPEN. This is a sufficient analytic upper boundary.
 
-[Global theorem](../topics/padua-argmax-bridge-20261105/theory/D37-global1024.md),
+[Global theorem](../topics/padua-argmax-bridge-20261105/theory/D37-assembly-global1024.md),
 [independent review](../topics/padua-argmax-bridge-20261105/independent-checks-D37-global1024.md).
 For n>=1024: far S<Lambda_c-3/100; near noncorner
 lambda<Lambda_c-1/200; actual corners
