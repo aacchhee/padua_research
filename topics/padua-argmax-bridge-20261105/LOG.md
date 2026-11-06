@@ -928,3 +928,15 @@ RootreleasesEXACTcorrected driver1023.py--run-once AFTERthispublication, fixedfi
 Corrected7975a0c source was invoked once by root driver1023--run-once. Persisted complete final account has nullfailure and30.182919CPU throughsummary; checker supervisor independently records returncode0. Outer invocation result/session was lost at compaction, so root does NOT claim observed outer EXIT0 or canonical primary completion. No rerun/rescue. Candidate4958B has47S+3actual,71nodes/36leaves(5NEAR29FAR2OUTSIDE), TREE M30 ratherthan coarse36, floor1/20. Raw remains whole offGit. A distinct fresh verifier may establish finite1023 using ONLY candidate geometry/keys/method, recomputing all enclosures/norm/floor/phase/corner predicates; source auditor confirms no old endpoint/acceptance dependence. Its own observedEXIT0 and completeaccount remain mandatory. No degree1023 adoption yet.
 
 AC reiterates: prepare the Syvert2 pack ONLY when research ends and a gap remains; if research closes the gap no pack is needed. Generic engine/calibration research continues; no pack skeleton or bundling now.
+
+
+### D38 fixed research calibration prospective inputs
+
+Solmedium prepares ONLY cases.json15395B675b402e... andSPECcc037eb0... forfixednine42/63/64/159/160/511/512/1024/2047. Unchanged correctedD36d7481715 source, no newcode/scheduler/wrapper/pack. DistinctAstrahigh readiness review beforepublication/explicitrootrelease. Eachphasepercase120CPU, nineenvelopes1080<1200; checkpointtimingdistinctfromhardwhole-returnbound. ManualsequentialcommandsrequirepriorobservedEXIT0+completeacceptedaccount+remainingreservation, stopfirstfailure/no retries/case/cap/source/precisionrescue. Freshindependentallnineverification separatelypreregistered/pinned/releasedafterprimarysuccess/publication. No newdegreeclaim/productionlawfromcalibration.
+
+
+### D38 readiness acceptance and manual primary release
+
+DistinctAstrahigh02f641d3... ACCEPTS finalSPEC9406Bcc037eb0.../cases15395B675b402e..., all14correctedD36pins and18exactcommandarrays, floor/cornerbranches/resources/stoprules. FreshreviewSPEC1f18b369... remainsprospective. No D38numeric/control/producer/native/import/jobhasrun. D36fullyfresh1023hasdirectEXIT0/completeaccount29.746529; finiteapplicationreviewremainsseparate and is not a premise of these independently scoped calibration commands.
+
+Rootreleases MANUAL primaryproduce cases EXACT42,63,64,159,160,511,512,1024,2047 inthatorder ONLYAFTERthispublication. Eachpreviouscase musthave directobservedEXIT0+correctcompleteacceptedaccount+source/config/proofclosure, andnextfull120CPUreservationfitphase1200; ninewholeenvelopes1080. Stopentirephasefirstfailure, no retry/source/precision/order/case/caprescue. UnchangedD36engine/caps; no batchschedulerorpackprepared. Independentallninefreshphase remains UNRELEASED untilactualprimaryinputs/statusesarefrozenandpublished.

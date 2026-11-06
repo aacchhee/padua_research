@@ -60,3 +60,16 @@ and checkpoints. Physical delivery and durable external retrieval remain
 pending; this records local custody only. Regeneration of the scientific
 scope follows the frozen source/spec; historical timing bytes are not
 promised. No exact-degree proof depends on these floating outputs.
+
+
+## D36 pending-local retention —2026-11-06
+
+The fixed1023 candidate and separately fresh verification retain their whole
+raw records, native builds/TUs/dependency files/runtime maps and checkpoints
+under local-output/argmax-bridge-20261105/post-audit-D36/{pilot1023,fresh1023}/.
+Whole raw identities and exact commands are in independent-checks-D36-result.md
+and the compact essential receipts under evidence/post_audit_D36/. The fresh
+essential proof contains all kept mathematical premises; raw/runtime scope
+remains explicit. No physical archive delivery or durable external retrieval
+is claimed. Preserve these directories in full; do not prune failed/source
+records or rerun to repair historical timing/completion bytes.
