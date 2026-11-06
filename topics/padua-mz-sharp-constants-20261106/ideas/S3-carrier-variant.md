@@ -1,4 +1,6 @@
-# IDEA?mz-sharp-codex-S3-01 — optimize the inherited normalized carrier
+# IDEA-469 — optimize the inherited normalized carrier
+
+2026-11-06 ID history: `IDEA?mz-sharp-codex-S3-01` → `IDEA-469` (retained record consolidated under this ID); statements, original registrations and historical dispositions are preserved.
 
 Aliases: PD-T379 parameter tuning; rational Fejer norm improvement.
 
@@ -31,7 +33,7 @@ Aliases: PD-T379 parameter tuning; rational Fejer norm improvement.
 - Disposition: retained useful quantitative variant; no rejection of
   PD-T381 or broader carrier families. Positive scalar tuning deferred
   because it adds no needed limiting-operator control.
-- Canonical theory: PD-T?mz-sharp-codex-S3-01,
+- Canonical theory: PD-T533,
   theory/S3-normalized-carrier-improvement.md.
 - History: 2026-11-06, S3 round1, after prospective gate and K0 clearance.
 
@@ -45,7 +47,7 @@ Aliases: PD-T379 parameter tuning; rational Fejer norm improvement.
 - Actual test results and committed evidence: the linked theory files and audit-01.md give the analytic outcome at its stated scope; existing floating receipts retain MEASURED status.
 - Disposition and precise rejected scope, if any: retained continuation; no family-wide refutation or new PD-N.
 - Disposition reason: no rejection; the completed obligations are recorded in linked theory and audit-01.md.
-- Canonical theory / negative-result ID: the provisional IDs of the linked theory files; no final ID allocated in this response.
+- Canonical theory / negative-result ID: PD-T533 and PD-T537 in the linked theory files; no PD-N.
 - Topic / completed audit link / history (no pending process stage): padua-mz-sharp-constants-20261106; audit-01.md; 2026-11-06 template completion preserving the original registration prose.
 
 
@@ -53,4 +55,4 @@ Audit A10 outcome pointer: S3-04 in theory/S3-carrier-family-ceiling.md
 proves the fixed-parameter scalar-family ceiling U_minus < 1/24. It is a
 positive scoped theorem, not a refutation of arbitrary carriers or PD-T381.
 
-Canonical result pointer (audit A10): PD-T?mz-sharp-codex-S3-01 / S3-04; [theory](../theory/S3-normalized-carrier-improvement.md), [theory](../theory/S3-carrier-family-ceiling.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.
+Canonical result pointer (audit A10): PD-T533 / S3-04; [theory](../theory/S3-normalized-carrier-improvement.md), [theory](../theory/S3-carrier-family-ceiling.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.

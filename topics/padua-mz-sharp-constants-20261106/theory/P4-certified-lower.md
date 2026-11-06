@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-P4-01 — certified endpoint lower decimal
+# PD-T547 — certified endpoint lower decimal
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-P4-01` → `PD-T547`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: exact J512 Rayleigh lower certificate.
@@ -15,7 +17,7 @@ common-parity CC upper spectral limit in S2-05,
 
 Overall status: **PROVED**, computer-assisted local development with
 distinct supplementary reconstruction and actual rerun PASS. Required
-Claude audit remains separate. This is one-sided; no seven-digit or
+Claude audit accepted this scope in [audit-02](../audit-02.md). This is one-sided; no seven-digit or
 three-digit two-sided approximation of Lambda_edge is asserted.
 
 ## Definitions, assumptions and dependencies

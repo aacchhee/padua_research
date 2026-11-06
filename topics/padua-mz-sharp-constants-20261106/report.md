@@ -1,16 +1,18 @@
 # Sharp MZ constants through explicit endpoint and corner operators
 
-Source/rules read at2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861; base main76ba4214b100c86a44941f5e9a662ce9ce48efb8. Scope and chronology are in [LOG](LOG.md); exact prospective tests in [gates](gates.md). The original S1–S4 batch was accepted mathematically by audit-01. Closing development P1–P4 is complete and accepted mathematically by audit-02. Handoff05 is a bounded records response; the new durable denominator derivation receives a focused recheck. The dated D section below supersedes historical open-item descriptions.
+Source/rules read at2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861; base main76ba4214b100c86a44941f5e9a662ce9ce48efb8. Scope and chronology are in [LOG](LOG.md); exact prospective tests in [gates](gates.md). The original S1–S4 batch was accepted mathematically by audit-01. Closing development P1–P4 is complete and accepted mathematically by audit-02. Audit-03 accepted the denominator derivation and all record fixes. This is the PR-preparation snapshot; final identifiers and target decompositions are applied below. The dated D section below supersedes historical open-item descriptions.
 
-## Findings by target
+## Prepared target mapping
 
-| Target | Exact analytic conclusion | Numerical evidence and remaining scope |
+| Original target | Status | Proved parts and remaining scope |
 |---|---|---|
-| PD-T020, sharp CC lower constant | PROVED local limsup(logN)^2 lambda_min<=pi^4/8, through all integers N and each parity; exact Volterra model norm2/pi | Full limit and parity agreement proved in new P3 development below; shared registry unchanged. K1 final-window intercepts about13.06114 are fitted measurements, not an exact asymptotic constant. K2 operationally kills the equality-model route; no fitted revision. |
-| PD-T027, sharp CC upper limit/uniform gap | PROVED local all-N lambda_max<=5/3; common-parity limitLambda_edge is the exact registered endpoint norm,1<=Lambda_edge<=3/2; computable finite errorepsilon_N=U_N−L_N->0 brackets both finite and limiting values | FiniteJ512 proxy1.0044369188646673; upper-spectrum fitted limits about1.0044369723. K3 operational measured comparison passes. New P4 certifies Lambda_edge>=1.0044369 below. Two-sided decimal evaluation and a practical elementary rate remain OPEN; no finite upper certificate solve was run. |
-| PD-T381, signed Padua logarithmic constants | PROVED local common even/odd limits equal inf/sup spectrum of one explicit compact Bessel corner operatorB; normtail120/K and explicit finite-m error; constants strictly negative/positive | FiniteK128 proxies about−0.1336,+0.0456 remain heuristic. P1 now identifies an exact elliptic kernel and simple positive ground state. A coarse exact enclosure is completed; useful digits and c_plus-specific certification are deferred. Finite spectra/gates are measurements. |
+| PD-T020 | PROVED | Full pi^4/8 scaled minimum limit, both polynomial spaces and all parities: PD-T546 with PD-T523 |
+| PD-T027 | PARTIAL | Uniform gap PD-T526 and upper-limit existence/operator characterization PD-T530 proved; decimal-value conjunct OPEN |
+| PD-T381 | PARTIAL | Signed limit existence/agreement/operator characterization PD-T534/535/536 proved; decimal-values conjunct OPEN |
 
-The exact operator characterizations and computable finite approximation errors determine constants independently of the original large finite spectral problems. They are not claims of elementary closed formulas. Shared registry statuses/IDs remain unchanged in this draft; the audit must assess the precise original-target mapping before preparation.
+The original statements remain unchanged in their target files, with explicit History decompositions and split mappings in ID_CROSSWALK.md. The canonical AC decision is in [LOG](LOG.md). PD-T547 is a one-sided endpoint lower certificate; PD-T542 certifies no useful Padua digits. Neither resolves the OPEN decimal conjuncts. The complete scoped outcomes and dependencies are in the [results record](../../results/padua-mz-sharp-constants-20261106.md). All provisional labels remain resolvable through the [final map](final-id-map.json), including the nonnumeric S3-kernel alias.
+
+The following direction/campaign narratives preserve development chronology; the table above and final preparation addendum give the current claim statuses.
 
 ## CC lower direction: valid inequality, stopped equality route
 
@@ -66,7 +68,7 @@ Because this discrepancy is material to interpretation, an independently specifi
 
 ## Coverage, limitations and handoff
 
-All source-corpus paths are pinned at2143ad6 in [fetched-paths.json](fetched-paths.json); [input-snapshot.json](input-snapshot.json) and the S4 source supplement add hashes. Model allocations, prospective registration/publication timing, protocol clarifications, failed numerical attempts and AC's commit-email decision are recorded once in [LOG](LOG.md). No Syvert, third-party PDF, manuscript edit, shared final-ID change, merge, force-push or main write occurred.
+All source-corpus paths are pinned at2143ad6 in [fetched-paths.json](fetched-paths.json); [input-snapshot.json](input-snapshot.json) and the S4 source supplement add hashes. Model allocations, prospective registration/publication timing, protocol clarifications, failed numerical attempts and AC's commit-email decision are recorded once in [LOG](LOG.md). At the original development boundary no shared final-ID application had occurred. Final identifiers are now applied at PR preparation; no Syvert, manuscript proper edit, merge, force-push or main write occurred.
 
 The [bounded literature screen](literature-screen.md) fully reads one applicable operator reference, records inaccessible classical sources, and warns against treating the handoff's fitting ansatz as a verified Widom–Wilf theorem. No historical priority or exhaustive novelty claim is made. Each mechanism has its own prospective novelty gate and retained candidate records.
 
@@ -124,14 +126,20 @@ also on Pi_N and on each parity. This meets the equality candidate's reverse-bou
 
 **P2, MEASURED:** [registered calibration and finite tests](theory/P2-measurements.md) use b2=-0.0955298083997758. Calibration/order stability, dense12/13 validation and audit400 overlap pass. The four P2 executions were released only after measured-b2 publication64f3b76; the scope addendum below separates prospective criteria from the postdictive secant criterion. The fixed summary is PASS_FINITE_TEST: mode2 weights0.95895–0.96803 and L-distances0.00289–0.00362 pass all guards; branch-difference decrease rates0.03844594/0.03759102 (even/odd) lie within0.038±0.006; Qmin log-m secants-0.09212119/-0.09246210 lie within0.006 of b2. The [independent m1600 replay and summary check](independent-checks-P2.md) pass. This supports the finite-mode explanation on these four cases, without proving a two-term law, crossing degree or asymptotic decimal value. Original K4 remains unchanged.
 
-Shared statuses and final IDs remain untouched. Audit-02 accepts these results at their stated scopes; the next focused Claude recheck covers only the newly durable denominator derivation, with the other response edits confirmed by diff. 2026-11-06 (audit-03 F2): [audit-03](audit-03.md) accepted that recheck; the topic is at PR preparation. AC's original-target mapping decision remains reserved.
+Audit-02 accepts these results at their stated scopes, and [audit-03](audit-03.md) accepted the denominator recheck and record fixes. PR preparation now applies the final identifiers and AC's chosen PARTIAL decompositions, as stated above; the canonical decision is in LOG.
 
 ## 2026-11-06 audit-02 B1/C2 scope correction
 
 The Q_min values at m=1400/1401,1800/1801 and3000/3001 were already committed in evidence/S4-padua-essential.json at5110954b07fd834982167780daa8cd22bef13ce1, before the P2 protocol. The registered secant-to-b2 criterion was therefore essentially postdictive. [Audit diagnostic](audit-02-support/P24/P2-preexisting-predictivity.json) quantifies this using the pre-existing rows. Only the mode-2 weight, L-distance and branch-difference-rate criteria were prospective. Earlier references to a fresh/prospective four-case test mean the P2 computations and those three criteria; they do not establish independent prospective slope evidence. No threshold, receipt or PASS_FINITE_TEST outcome changes.
 
-Applying the accepted P3 full-limit result to registry PD-T020 waits only for PR preparation and readiness verification. This is separate from A3, which reserves AC's interpretation decision for PD-T027/PD-T381. The full pi^4/8 theorem is accepted locally by audit-02; its unchanged global registry row is no assertion that the local theorem remains mathematically open.
+At the response boundary, PD-T020 application waited for preparation. This preparation now applies its PROVED status via PD-T546/523, subject to readiness verification. Separately, the recorded AC A3 decision is applied as PARTIAL for PD-T027/381 with decimal conjuncts OPEN.
 
 ## 2026-11-06 audit-02 B2 supporting denominator record
 
-The [durable PROVED denominator derivation](theory/P4-denominator-closed-form.md) gives all exact entries of the accepted S2/P4 Gram matrix, including the diagonal partial fractions, I(a)=-Cin(2a)/(2a^2), the Si(2a)/(2a) integral and every removable-pole/cutoff boundary. [Distinct supplementary reconstruction](independent-checks-P4-denominator.md) passes. S2 and P4 now cite this dependency. The formula, certificate and accepted P4 lower-bound status are unchanged; only this supporting derivation receives the focused Claude recheck requested by handoff05. [Response-02](response-02.md) answers B1/B2/C1–C4.
+The [durable PROVED denominator derivation](theory/P4-denominator-closed-form.md) gives all exact entries of the accepted S2/P4 Gram matrix, including the diagonal partial fractions, I(a)=-Cin(2a)/(2a^2), the Si(2a)/(2a) integral and every removable-pole/cutoff boundary. [Distinct supplementary reconstruction](independent-checks-P4-denominator.md) passes. S2 and P4 now cite this dependency. The formula, certificate and accepted P4 lower-bound status are unchanged; this supporting derivation received the focused Claude recheck requested by handoff05 and was accepted in audit-03. [Response-02](response-02.md) answers B1/B2/C1–C4.
+
+## PR preparation application (2026-11-06)
+
+The accepted results are applied under final IDs PD-T522–548, with the S2 definition/prediction pointer separate from theorems and the historical conditional S1 prediction retained. Every candidate is preserved: S1/P3 continue IDEA-071, S2 continues IDEA-386, S3 carrier and operator routes continue IDEA-469/470; new IDEA-608–611 cover the kernel, rectangle instance family, finite-mode test and endpoint certificate. The full signed2D analogue left in IDEA-386 and decimal-value refinements remain outside its completed CC branch. LIT-633 retains its source-reading limitations.
+
+Shared registry application follows the audited content and AC's chosen target decomposition. Readiness reviews the prepared diff and refreshes reservations; the PR remains draft until that check. No accepted proof, threshold, receipt, original registered outcome or manuscript proper changes. [Allocation ledger](ALLOCATIONS.md), [source refresh](reservation-check.json), and completed audits01–03 supply provenance.

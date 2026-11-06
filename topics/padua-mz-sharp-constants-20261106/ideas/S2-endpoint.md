@@ -1,4 +1,6 @@
-# IDEA?mz-sharp-codex-S2-02 — degree-cancelled microscopic cardinal norm
+# IDEA-386 — degree-cancelled microscopic cardinal norm
+
+2026-11-06 ID history: `IDEA?mz-sharp-codex-S2-02` → `IDEA-386` (retained record consolidated under this ID); statements, original registrations and historical dispositions are preserved.
 
 Aliases: endpoint sine-rational basis; radial-mass cosine sampling;
 fixed-node degree-constrained limit; common-parity edge model.
@@ -32,7 +34,7 @@ fixed-node degree-constrained limit; common-parity edge model.
   registration; exact prediction in ../theory/S2-endpoint-model.md.
 - Disposition and precise rejected scope, if any: retained OPEN model.
 - Disposition reason: incomplete spectral norm/finite-to-limit obligations.
-- Canonical theory / negative-result ID: PD-T?mz-sharp-codex-S2-03.
+- Canonical theory / negative-result ID: PD-T528.
 - Topic / completed audit link / history:2026-11-06, after full gate/K0;
   operator prediction sent before S4 final-fit disclosure.
 
@@ -41,4 +43,4 @@ fixed-node degree-constrained limit; common-parity edge model.
 
 - Topic / completed audit link / history (no pending process stage): padua-mz-sharp-constants-20261106; audit-01.md; 2026-11-06 template completion preserving the original registration prose.
 
-Canonical result pointer (audit A10): PD-T?mz-sharp-codex-S2-03; [theory](../theory/S2-endpoint-model.md), [theory](../theory/S2-fixed-trial-limit.md), [theory](../theory/S2-qualitative-limit.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.
+Canonical result pointer (audit A10): PD-T528; [theory](../theory/S2-endpoint-model.md), [theory](../theory/S2-fixed-trial-limit.md), [theory](../theory/S2-qualitative-limit.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.

@@ -4,8 +4,7 @@ ID kind: PD-T.
 Aliases: sharp signed extremal growth coefficients; existence and values
 of the endpoint logarithmic limits.
 Split from: the original C3 target in handoff 01, preserved here explicitly.
-Split into: [PD-T379](growth-carrier-bounds.md) records
-separate exact packet norm limits and one-sided quantitative bounds.
+Split into: [PD-T534](../../padua-mz-sharp-constants-20261106/theory/S3-full-form-log-model.md), [PD-T535](../../padua-mz-sharp-constants-20261106/theory/S3-corner-kernel-hard.md), [PD-T536](../../padua-mz-sharp-constants-20261106/theory/S3-corner-operator-limit.md) establish existence, parity agreement and exact operator characterization; decimal values remain OPEN. [PD-T379](growth-carrier-bounds.md) records separate supporting packet bounds.
 
 ## Original target and statement
 
@@ -30,43 +29,32 @@ packet normalization is assumed to equal an extremal limit.
 
 ## Status by part
 
-Overall status: **OPEN**. Existence, values and agreement of the two
-parity limits are unresolved. This target is not PARTIAL: the one-sided
-packet bounds are supporting results, not a proved decomposition of the
-target's own convergence and exact-value assertions. No status changes
-for any accepted result.
+Overall status: **PARTIAL**.
+
+| Mathematical part of the original target | Status | Split result / remaining gap |
+|---|---|---|
+| Both even/odd logarithmic limits exist | PROVED | [PD-T536](../../padua-mz-sharp-constants-20261106/theory/S3-corner-operator-limit.md), using [PD-T534](../../padua-mz-sharp-constants-20261106/theory/S3-full-form-log-model.md), [PD-T535](../../padua-mz-sharp-constants-20261106/theory/S3-corner-kernel-hard.md) |
+| Parity limits agree, giving full-integer limits | PROVED | [PD-T536](../../padua-mz-sharp-constants-20261106/theory/S3-corner-operator-limit.md) |
+| Exact characterization as c_minus=inf spectrum(B), c_plus=sup spectrum(B) | PROVED | [PD-T536](../../padua-mz-sharp-constants-20261106/theory/S3-corner-operator-limit.md); explicit kernel and spectral properties in [PD-T539](../../padua-mz-sharp-constants-20261106/theory/P1-elliptic-kernel.md), [PD-T540](../../padua-mz-sharp-constants-20261106/theory/P1-positive-spectrum.md) |
+| Decimal values of c_minus and c_plus | OPEN | [PD-T541](../../padua-mz-sharp-constants-20261106/theory/P1-rectangle-certificate.md), [PD-T542](../../padua-mz-sharp-constants-20261106/theory/P1-numeric-certificate.md) give only a coarse enclosure, with no useful digits |
+
+The one-sided PD-T379 packet bounds remain supporting results, not the conjuncts that justify PARTIAL.
 
 ## Dependencies and existing support
 
-PD-N105/106/107 prove even-m divergence; the separate odd extension
-PD-T378 gives qualitative divergence over all integers.
-PD-T379 proves exact continuous norms of specified
-carriers and explicit normalized one-sided limsup/liminf bounds. These
-do not establish matching opposite bounds or an extremal spectral limit.
-PD-T380 retains finite observations and fits as MEASURED.
+[PD-T534](../../padua-mz-sharp-constants-20261106/theory/S3-full-form-log-model.md), [PD-T535](../../padua-mz-sharp-constants-20261106/theory/S3-corner-kernel-hard.md), [PD-T536](../../padua-mz-sharp-constants-20261106/theory/S3-corner-operator-limit.md) establish the convergence and parity assertions. [PD-T539](../../padua-mz-sharp-constants-20261106/theory/P1-elliptic-kernel.md), [PD-T540](../../padua-mz-sharp-constants-20261106/theory/P1-positive-spectrum.md), [PD-T541](../../padua-mz-sharp-constants-20261106/theory/P1-rectangle-certificate.md), [PD-T542](../../padua-mz-sharp-constants-20261106/theory/P1-numeric-certificate.md) give the explicit kernel, spectral structure and coarse certificate. PD-N105/106/107, PD-T378 and PD-T379 retain their separate divergence and supporting bounds. PD-T380 and [PD-T538](../../padua-mz-sharp-constants-20261106/theory/S3-measured.md), [PD-T543](../../padua-mz-sharp-constants-20261106/theory/P2-measurements.md) remain finite MEASURED observations.
 
 ## Proof or evidence
 
-No proof of the target is supplied. The support is linked above rather
-than duplicated. The raw sampled-energy optima 1/9 and 1/36 cannot be
-identified with spectral constants without continuous normalization and
-a matching extremal argument. The finite fitted slopes prove no limit.
+The full-form reduction [PD-T534](../../padua-mz-sharp-constants-20261106/theory/S3-full-form-log-model.md) and corner kernel estimate [PD-T535](../../padua-mz-sharp-constants-20261106/theory/S3-corner-kernel-hard.md) support [PD-T536](../../padua-mz-sharp-constants-20261106/theory/S3-corner-operator-limit.md)'s operator-norm limit and both extremal limits with parity agreement. The fixed compact operator B has ||B−B_K||<=120/K. Its infimum/supremum give the exact characterization; finite fitted slopes are not proof premises. The linked records contain all substantive proofs.
 
 ## Applicable obstruction, limitations and next step
 
-PD-N048 shows why negative corner mass by itself cannot control the
-complete signed form. The deferred localization route
-IDEA-470 may resume only with a bound for the full signed
-quadratic form on every admissible polynomial in the continuous metric,
-with exact normalization and a matching lower/upper argument. No new
-localization mechanism or computational run is introduced here.
+PD-N048's full-form obstruction remains scoped. IDEA-470's resume condition is met by [PD-T534](../../padua-mz-sharp-constants-20261106/theory/S3-full-form-log-model.md), [PD-T536](../../padua-mz-sharp-constants-20261106/theory/S3-corner-operator-limit.md). Certified useful decimal values of both spectral extrema remain OPEN; the P1 certificate supplies no useful digits. No new localization mechanism or computation is introduced here.
 
 ## Checks and sources
 
-Administrative durable-target restoration for Claude audit-01 F11.
-Rules/head a64ef35; Codex, gpt-6.1-sol xhigh, 2026-11-05. No computation,
-new literature dependence or historical-priority claim. Final ID and
-original-to-split/support crosswalk mapping wait for PR preparation.
+[audit-01](../../padua-mz-sharp-constants-20261106/audit-01.md) and [audit-02](../../padua-mz-sharp-constants-20261106/audit-02.md) accept the linked split results at their stated scopes. No new computation, literature dependence or priority claim is made here.
 
 ## History
 
@@ -79,6 +67,8 @@ narrowing it to packet bounds. During development the separate -04 file
 used “Split from: C3's sharp-growth target” without a durable target ID.
 This response supplies that OPEN home and explicit relationship; it
 adds no claim that a sharp limit exists and changes no accepted formula.
+
+2026-11-06: The Original target and statement section is preserved verbatim. Existence on each parity, agreement and exact operator characterization are PROVED under [PD-T534](../../padua-mz-sharp-constants-20261106/theory/S3-full-form-log-model.md), [PD-T535](../../padua-mz-sharp-constants-20261106/theory/S3-corner-kernel-hard.md), [PD-T536](../../padua-mz-sharp-constants-20261106/theory/S3-corner-operator-limit.md); the decimal-values conjunct stays OPEN. Overall status OPEN → PARTIAL; the dated original OPEN registration above is historical. See [canonical decision](../../padua-mz-sharp-constants-20261106/LOG.md).
 
 ## Final registration
 

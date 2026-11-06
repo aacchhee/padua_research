@@ -1,8 +1,11 @@
-# PD-T?mz-sharp-codex-S3-01 — a strict normalized carrier improvement
+# PD-T533 — a strict normalized carrier improvement
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S3-01` → `PD-T533`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: rational carrier parameter improvement; inherited Fejer norm tuning.
-Split from: supporting development for PD-T381, whose full target remains OPEN.
+Split from: supporting development for PD-T381, now PARTIAL; its decimal
+values conjunct remains OPEN.
 Split into: none.
 
 ## Statement

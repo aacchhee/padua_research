@@ -1,6 +1,6 @@
 # Proposed manuscript statements
 
-These are proposed sentences for a later writing step; the manuscript is untouched. Local theory is developed and supplementarily checked as recorded below; audit-02 accepted the P1–P4 mathematics at their stated scopes. The new B2 supporting derivation alone awaits a focused Claude recheck. Exact constants are distinguished from measured decimal proxies.
+These are proposed sentences for a later writing step; the manuscript is untouched. Local theory is developed and supplementarily checked as recorded below; audit-02 accepted the P1–P4 mathematics at their stated scopes. Audit-03 accepted the B2 supporting derivation and record fixes. Exact constants are distinguished from measured decimal proxies.
 
 ## CC lower endpoint
 
@@ -81,3 +81,9 @@ without contradicting the theorem. This is a finite-scope interpretation,
 not a certified crossing law or a PD-N.
 
 Literature context is only search/abstract-screened in literature-screen.md; no priority claim is supported.
+
+## Prepared registry scope (2026-11-06)
+
+PD-T020 is PROVED through PD-T546 with PD-T523. PD-T027 and PD-T381 are PARTIAL under the recorded original-target decomposition: uniform-gap/limit-existence/parity/operator-characterization parts are PROVED under their split IDs, while decimal-value conjuncts remain OPEN. The one-sided PD-T547 bound Lambda_edge>=1.0044369 and broad PD-T542 Padua enclosure do not supply two-sided decimal values. The manuscript proper remains untouched; this file is a proposal with the exact theorem scopes and limitations retained.
+
+Final IDs and all provisional aliases are in [final-id-map.json](final-id-map.json) and ID_CROSSWALK.md. The S1 candidate's old dated deferred status above records the operational K2 stop; the reverse-bound resume condition is met by PD-T546, so the continuing IDEA-071 route is resolved without revising the original gate outcome.

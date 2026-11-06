@@ -1,8 +1,10 @@
-# IDEA?mz-sharp-codex-S3-02 — uniform logarithmic form before a corner limit
+# IDEA-470 — uniform logarithmic form before a corner limit
+
+2026-11-06 ID history: `IDEA?mz-sharp-codex-S3-02` → `IDEA-470` (retained record consolidated under this ID); statements, original registrations and historical dispositions are preserved.
 
 Provisional supporting candidate for PD-T381; known supplied corner-form
 direction. Status: retained, analytic finite-family reduction proved in
-../theory/S3-full-form-log-model.md; independent check pending.
+../theory/S3-full-form-log-model.md; accepted in [audit-01](../audit-01.md).
 
 ## Mechanism and predecessor distinction
 
@@ -56,7 +58,7 @@ Aliases: S3-full-form-reduction; IDEA-470 continuation.
 - Actual test results and committed evidence: the linked theory files and audit-01.md give the analytic outcome at its stated scope; existing floating receipts retain MEASURED status.
 - Disposition and precise rejected scope, if any: retained continuation; no family-wide refutation or new PD-N.
 - Disposition reason: no rejection; the completed obligations are recorded in linked theory and audit-01.md.
-- Canonical theory / negative-result ID: the provisional IDs of the linked theory files; no final ID allocated in this response.
+- Canonical theory / negative-result ID: PD-T534 in the linked theory files; no PD-N.
 - Topic / completed audit link / history (no pending process stage): padua-mz-sharp-constants-20261106; audit-01.md; 2026-11-06 template completion preserving the original registration prose.
 
-Canonical result pointer (audit A10): PD-T?mz-sharp-codex-S3-02; [theory](../theory/S3-full-form-log-model.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.
+Canonical result pointer (audit A10): PD-T534; [theory](../theory/S3-full-form-log-model.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.

@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-902 — CC upper fits and endpoint Galerkin proxy
+# PD-T532 — CC upper fits and endpoint Galerkin proxy
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-902` → `PD-T532`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: CC upper fits and endpoint Galerkin proxy.

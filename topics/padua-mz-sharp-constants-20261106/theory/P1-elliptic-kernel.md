@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-P1-01 — elliptic kernel of the accepted corner operator
+# PD-T539 — elliptic kernel of the accepted corner operator
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-P1-01` → `PD-T539`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: Schloemilch identification; arcsine convolution; Poisson-regularized
@@ -47,8 +49,8 @@ singular sets, and the resulting bounded integral operator on H.
 
 ## Status by part
 
-Overall status: **PROVED**, analytic development, with the new proof to be
-independently checked. No certified decimal value is asserted.
+Overall status: **PROVED**, analytic development accepted in
+[audit-02](../audit-02.md). No certified decimal value is asserted.
 
 | Mathematical part | Status | Evidence |
 |---|---|---|

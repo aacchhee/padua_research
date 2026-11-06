@@ -1,4 +1,6 @@
-# IDEA?mz-sharp-codex-P4-01 — exact finite-trial Rayleigh lower bound
+# IDEA-611 — exact finite-trial Rayleigh lower bound
+
+2026-11-06 ID history: `IDEA?mz-sharp-codex-P4-01` → `IDEA-611` (retained record consolidated under this ID); statements, original registrations and historical dispositions are preserved.
 
 Aliases: dyadic interval Gram; certified endpoint lower decimal.
 

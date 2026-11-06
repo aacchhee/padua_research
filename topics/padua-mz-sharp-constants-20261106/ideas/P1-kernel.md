@@ -1,4 +1,6 @@
-# IDEA?mz-sharp-codex-P1-01 — identify the accepted B by its elliptic kernel
+# IDEA-608 — identify the accepted B by its elliptic kernel
+
+2026-11-06 ID history: `IDEA?mz-sharp-codex-P1-01` → `IDEA-608` (retained record consolidated under this ID); statements, original registrations and historical dispositions are preserved.
 
 Aliases: Schloemilch kernel; Poisson-regularized Bessel kernel; nonpositive
 corner kernel; positive-vector spectral certificate.
@@ -57,15 +59,15 @@ corner kernel; positive-vector spectral certificate.
   mathematical gap in either frozen proof. No numerical run occurred.
 - Disposition and precise rejected scope, if any: retained supplied route;
   analytic statements PROVED as new development with supplementary
-  reconstruction complete, focused Claude audit and registry readiness
-  still pending. Decimal certification remains OPEN.
+  reconstruction complete and accepted in [audit-02](../audit-02.md).
+  Decimal certification remains OPEN.
 - Disposition reason: not rejected. The local derivation controlled
   regularization mass, dense-test ordering and bounded extension; the
   common intermediate wedge supplied the exact irreducibility property.
   Response R publication clearance was
   17ca9f441cece178354e70504a6c739df501a224 before development began.
-- Canonical theory / negative-result ID: provisional P1-01 and P1-02 in
-  the theory files above; no final ID or PD-N allocated by this worker.
+- Canonical theory / negative-result ID: PD-T539 and PD-T540 in
+  the theory files above; no PD-N.
 - Topic / completed audit link / history: 2026-11-06, Codex P1 developer,
   requested gpt-6.1-sol xhigh; runtime serving metadata unexposed. Input
   0205690b9c4e959a28e949083e9a1808735abf4b; this record precedes derivation.

@@ -1,4 +1,6 @@
-# IDEA?mz-sharp-codex-S2-03 — compact remainder with two weak endpoint profiles
+# IDEA-386 — compact remainder with two weak endpoint profiles
+
+2026-11-06 ID history: `IDEA?mz-sharp-codex-S2-03` → `IDEA-386` (retained record consolidated under this ID); statements, original registrations and historical dispositions are preserved.
 
 Aliases: positive-core upper-limsup; even/odd coefficient-profile compactness;
 cosine-transform form domain; inward-dilation density.
@@ -42,4 +44,4 @@ cosine-transform form domain; inward-dilation density.
 
 - Topic / completed audit link / history (no pending process stage): padua-mz-sharp-constants-20261106; audit-01.md; 2026-11-06 template completion preserving the original registration prose.
 
-Canonical result pointer (audit A10): PD-T?mz-sharp-codex-S2-05; [theory](../theory/S2-qualitative-limit.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.
+Canonical result pointer (audit A10): PD-T530; [theory](../theory/S2-qualitative-limit.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.

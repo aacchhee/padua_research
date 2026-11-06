@@ -1,4 +1,6 @@
-# IDEA?mz-sharp-codex-S2-01 — normalized reflected-core remainder
+# IDEA-386 — normalized reflected-core remainder
+
+2026-11-06 ID history: `IDEA?mz-sharp-codex-S2-01` → `IDEA-386` (retained record consolidated under this ID); statements, original registrations and historical dispositions are preserved.
 
 Aliases: IDEA386 quantitative continuation; signed CC core completion;
 parity-block transition majorant; uniform endpoint five-thirds bound.
@@ -32,9 +34,11 @@ parity-block transition majorant; uniform endpoint five-thirds bound.
 - Actual test results and committed evidence: analytic beta<=2/3 for
   everyN>=2, so B=5/3; full proof in theory/S2-uniform-upper.md.
 - Disposition and precise rejected scope, if any: retained successful
-  analytic continuation; sharp-limit target remains OPEN.
+  analytic continuation; the uniform gap and limit existence are PROVED
+  via PD-T526 and PD-T530. PD-T027 is PARTIAL; its decimal value conjunct
+  remains OPEN.
 - Disposition reason: no rejection.
-- Canonical theory / negative-result ID: PD-T?mz-sharp-codex-S2-01.
+- Canonical theory / negative-result ID: PD-T526.
 - Topic / completed audit link / history: 2026-11-06, after K0 clearance;
   independent audit is coordinated externally to this worker.
 
@@ -44,4 +48,4 @@ parity-block transition majorant; uniform endpoint five-thirds bound.
 - Separation criterion vs closest entry (and observation that falsifies it): a quantitative mass-metric remainder or specified endpoint model with full spectral transfer; absence of that control erases the distinction from the deferred continuation.
 - Topic / completed audit link / history (no pending process stage): padua-mz-sharp-constants-20261106; audit-01.md; 2026-11-06 template completion preserving the original registration prose.
 
-Canonical result pointer (audit A10): PD-T?mz-sharp-codex-S2-01; [theory](../theory/S2-uniform-upper.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.
+Canonical result pointer (audit A10): PD-T526; [theory](../theory/S2-uniform-upper.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.

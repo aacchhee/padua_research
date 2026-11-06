@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-S3-03 — compact corner characterization of the sharp slopes
+# PD-T536 — compact corner characterization of the sharp slopes
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S3-03` → `PD-T536`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: signed Bessel corner spectrum; full logarithmic spectral transfer.
@@ -61,7 +63,7 @@ than an unproved rearrangement of a conditionally convergent series.
 ## Status by part
 
 Overall status: **PROVED** (analytic development; independent check of
-this complete integration pending).
+this complete integration accepted in [audit-01](../audit-01.md)).
 
 | Mathematical part | Status | Evidence |
 |---|---|---|

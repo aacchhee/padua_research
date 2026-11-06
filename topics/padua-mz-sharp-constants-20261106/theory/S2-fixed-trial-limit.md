@@ -1,10 +1,13 @@
-# PD-T?mz-sharp-codex-S2-04 — quantified fixed-trial endpoint form limit
+# PD-T529 — quantified fixed-trial endpoint form limit
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S2-04` → `PD-T529`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: microscopic cardinal form convergence; fixed-J signed endpoint
 sampling; explicit constrained-trial error.
 Split from: supporting local-form statement for S2's endpoint model,
-PD-T?mz-sharp-codex-S2-03. The full sharp-limit target stays OPEN.
+PD-T528. PD-T027 is now PARTIAL: limit existence is PROVED via PD-T530;
+its decimal value conjunct remains OPEN.
 Split into: none.
 
 ## Statement
@@ -70,7 +73,7 @@ problem. PD-T027's sharp-limit/value conclusion remains OPEN.
 ## Depends on
 
 PD-T013 exact cardinal/DCT-I formula, degree coefficient and CC weights.
-PD-T?mz-sharp-codex-S2-01 uniform5/3 bound. Elementary cosine integrals,
+PD-T526 uniform5/3 bound. Elementary cosine integrals,
 Riemann-sum estimates and finite-dimensional quadratic-form comparisons.
 No external published result, computer proof or model-tail estimate.
 

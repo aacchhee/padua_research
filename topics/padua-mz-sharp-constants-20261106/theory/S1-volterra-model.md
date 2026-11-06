@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-S1-01 — the logarithmic primitive model norm
+# PD-T522 — the logarithmic primitive model norm
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S1-01` → `PD-T522`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: reciprocal CC primitive model; half-wave ground state.

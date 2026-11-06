@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-S2-05 — qualitative convergence to the endpoint norm
+# PD-T530 — qualitative convergence to the endpoint norm
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S2-05` → `PD-T530`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: compact signed transition remainder; two-endpoint weak profiles;
@@ -61,8 +63,8 @@ S2-finite-certificate.md; a certified norm value remains OPEN. No PARTIAL label 
 ## Depends on
 
 PD-T013 exact CC moment/cardinal definitions. PD-T015 mass floor.
-PD-T?mz-sharp-codex-S2-01 exact reflected decomposition/uniform bound.
-PD-T?mz-sharp-codex-S2-04 fixed-J form convergence and lower-limsup model.
+PD-T526 exact reflected decomposition/uniform bound.
+PD-T529 fixed-J form convergence and lower-limsup model.
 The candidate and prospective refresh are ideas/S2-compactness.md and
 novelty-gate-S2.md. No historical novelty/priority claim.
 

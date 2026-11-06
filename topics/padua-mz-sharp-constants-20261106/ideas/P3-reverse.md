@@ -1,4 +1,6 @@
-# IDEA?mz-sharp-codex-P3-01 — signed reciprocal interpolation completion
+# IDEA-071 — signed reciprocal interpolation completion
+
+2026-11-06 ID history: `IDEA?mz-sharp-codex-P3-01` → `IDEA-071` (retained record consolidated under this ID); statements, original registrations and historical dispositions are preserved.
 
 Aliases: discrete log-Hardy bound; dyadic signed sinc remainder; global
 cotangent interpolation; reverse Volterra transfer.
@@ -44,13 +46,13 @@ cotangent interpolation; reverse Volterra transfer.
   ../independent-checks-P3-remainder.md and
   ../independent-checks-P3-assembly.md. No new numerical execution.
 - Disposition and precise rejected scope, if any: retained analytic
-  completion at the developer-claimed scope, supplementary check passed;
-  required later Claude audit remains separate.
+  completion at the stated scope, supplementary check passed;
+  [audit-02](../audit-02.md) accepted the completed proof.
 - Disposition reason: exact all-input norm estimates satisfy the
   separation criterion; no equality rejection or K1/K2 alteration.
-- Canonical theory / negative-result ID: PD-T?mz-sharp-codex-P3-01,
+- Canonical theory / negative-result ID: PD-T544,
   P3-02 and P3-03 in ../theory/P3-*.md. Original registry PD-T020
-  remains unchanged pending coordinator integration and review.
+  is PROVED via PD-T546 together with PD-T523.
 - Topic / completed audit link / history: 2026-11-06, Codex developer,
   requested gpt-6.1-sol xhigh; serving metadata unexposed. No Git or
   shared-registry edits. Up to six rounds, stop after two consecutive

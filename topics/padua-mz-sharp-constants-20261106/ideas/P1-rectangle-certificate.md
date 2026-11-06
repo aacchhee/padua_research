@@ -1,4 +1,6 @@
-# IDEA?mz-sharp-codex-P1-02 — integrate scalar kernels before certification
+# IDEA-609 — integrate scalar kernels before certification
+
+2026-11-06 ID history: `IDEA?mz-sharp-codex-P1-02` → `IDEA-609` (retained record consolidated under this ID); statements, original registrations and historical dispositions are preserved.
 
 Aliases: rectangle row integral; semicircle endpoint formula;
 positive-vector Schur certificate.
@@ -54,13 +56,13 @@ positive-vector Schur certificate.
   ../theory/P1-rectangle-certificate.md. No numerical run or concrete
   certificate was executed. The distinct supplementary reconstruction
   in ../independent-checks-P1-kernel.md found no mathematical gap in the
-  frozen file; focused Claude audit and formal readiness remain pending.
+  frozen file; [audit-02](../audit-02.md) accepted the analytic scope.
 - Disposition / reason: retained; the analytic finite certificate format
   is PROVED as development, with supplementary reconstruction complete.
   Certified decimal success remains OPEN and
   its exact output obligation is stated in the theory file.
-- Canonical theory / negative-result ID: provisional P1-03 in
-  P1-rectangle-certificate.md; no final ID or PD-N allocated here.
+- Canonical theory / negative-result ID: PD-T541 in
+  P1-rectangle-certificate.md; no PD-N.
 - Topic / completed audit / history: 2026-11-06, requested gpt-6.1-sol
   xhigh; runtime model and effort metadata unexposed. Rules/input
   0205690b9c4e959a28e949083e9a1808735abf4b. Saved before this extension's

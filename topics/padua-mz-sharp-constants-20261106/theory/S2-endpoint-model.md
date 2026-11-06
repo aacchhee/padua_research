@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-S2-03 — microscopic signed cardinal sampling model
+# PD-T528 — microscopic signed cardinal sampling model
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S2-03` → `PD-T528`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: endpoint cardinal norm; sine-rational edge model; Nyquist cosine
@@ -64,9 +66,9 @@ finite-to-limit error is proved in S2-finite-certificate.md.
 Status label: **registered definition/prediction; proved via S2-05/S2-06**.
 This file preserves the registered definition/prediction (P); it makes no
 separate current PROVED claim duplicating its follow-on theorems.
-The convergence theorem is PD-T?mz-sharp-codex-S2-05 in
+The convergence theorem is PD-T530 in
 S2-qualitative-limit.md, and the finite certificate is
-PD-T?mz-sharp-codex-S2-06 in S2-finite-certificate.md. Their statements and
+PD-T531 in S2-finite-certificate.md. Their statements and
 proofs are authoritative. The original prediction above is historical.
 
 ## Depends on

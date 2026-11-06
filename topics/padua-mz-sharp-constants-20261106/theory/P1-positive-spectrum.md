@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-P1-02 — simple positive ground state and norm identity
+# PD-T540 — simple positive ground state and norm identity
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-P1-02` → `PD-T540`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: two-step positivity; irreducible corner kernel; Perron ground state.
@@ -30,8 +32,8 @@ than that stronger false property, supplies irreducibility.
 
 ## Assumptions and status
 
-Overall status: **PROVED**, analytic development, subject to independent
-reconstruction of these new consequences and their kernel dependency.
+Overall status: **PROVED**, analytic development accepted with its kernel
+dependency in [audit-02](../audit-02.md).
 
 The hypotheses are those of the accepted S3-03 and new
 P1-elliptic-kernel.md, with their exact measure and norm conventions.

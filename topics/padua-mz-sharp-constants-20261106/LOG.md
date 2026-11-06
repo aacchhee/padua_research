@@ -1,9 +1,9 @@
 # Sharp MZ constants via limiting operators (PD-T020, PD-T027, PD-T381): log
 
 - Branch: `codex/padua-mz-sharp-constants-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR · Next: `Codex (gpt-6-astra high): Continue codex/padua-mz-sharp-constants-20261106.` · Open handoff: [handoffs/07-pr-preparation.md](handoffs/07-pr-preparation.md)
-- Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
-- Current claims: exact scaled CC minimum limit pi^4/8; CC uniform upper bound, endpoint limit, computable error and certified lower1.0044369; signed Padua compact-operator logarithmic limits, elliptic kernel, simple positive ground state, coarse enclosure and finite-mode measurements. Exact local records/checks are linked in [report.md](report.md); no final IDs assigned.
+- Stage: PR · Next: `Claude (Opus 5.5, high): Continue codex/padua-mz-sharp-constants-20261106.` · Next handoff: [08-readiness.md](https://github.com/aacchhee/padua_research/blob/codex/padua-mz-sharp-constants-20261106/topics/padua-mz-sharp-constants-20261106/handoffs/08-readiness.md), published after preparation outputs.
+- Reserved final-ID ranges: PD-T522–553; IDEA-608–615; LIT-633–635; no PD-N range. [Ledger](ALLOCATIONS.md), first published dd57b6439d539164cdee7ab01a11b6080a03af10.
+- Current claims: exact scaled CC minimum limit pi^4/8; CC uniform upper bound, endpoint limit, computable error and certified lower1.0044369; signed Padua compact-operator logarithmic limits, elliptic kernel, simple positive ground state, coarse enclosure and finite-mode measurements. Final records/checks are linked in [report.md](report.md); PD-T522–548, IDEA-608–611 plus consolidated aliases, and LIT-633 are assigned.
 
 ## 2026-11-06 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -243,3 +243,13 @@ P1 protocol/code published c1e6e59dd9155b87d9847155d3455d602a5f84e9 before execu
 Rules AGENTS/WORKFLOW/CODEX read at95d0b30697d09ff42fe8445b3922cee4c57d8547; main76ba4214b100c86a44941f5e9a662ce9ce48efb8 unchanged, no merge needed. Pinned source corpus updated with15 exact Git-blob-verified files and three predecessor records. Cloud-runtime skill/policy inspected; connector publication preserves approved noreply author and expected-head leases. Coordinator requested gpt-6-astra high; mechanical inventory/reservation/registry helpers requested gpt-6.1-sol medium, runtime metadata unexposed. No new mechanism or numerical run: this is application of accepted content.
 
 Full refresh covers main and all open PRs27/31/32/33, drafts included, and zero closed-unmerged PRs. PR32 published a reservation during the scan; its updated ledger/crosswalk were read before our ranges were chosen. [Reservation receipt](reservation-check.json) identifies87 copies/20 exact blobs, all15 ledger versions and5 registry versions, with historical reservations/gaps retained. [Our ledger](ALLOCATIONS.md) reserves PD-T522–553, IDEA-608–615, LIT-633–635; no PD-N range. This reservation is published before final IDs are assigned. Fourteen local candidate records consolidate into four existing IDEA IDs and four new ones; every provisional alias remains mapped. AC's PARTIAL decision above is binding and is not asked again. Readiness refresh remains mandatory later.
+
+## Handoff07 completed PR application
+
+[Preparation record](preparation.md) records the applied scope, consolidated candidates and actual preservation/reference checks. All42 provisional records are mapped:27 PD-T522–548, fourteen IDEA records consolidated under071/386/469/470 and608–611, one LIT-633; no new negative claim. S2-03/PD-T528 remains a definition/prediction pointer, not a duplicate PROVED claim; PD-T524 retains its historical CONDITIONAL statement with independent resolution viaPD-T546/523.
+
+Original PD-T020/027/381 statements are exact-byte preserved; statuses are PROVED/PARTIAL/PARTIAL as authorized. Target histories and crosswalk contain explicit split mappings. A10 IDEA and obstruction-memory updates are applied, with predecessor history retained. State frontier has only remaining mathematical work; shared registries contain no process stage. RESULTS changes only this topic, with root-relative links corrected. The local manuscript proposal is updated; manuscript proper unchanged.
+
+20 Proof/Derivation sections preserve their text modulo ID substitution; allscientific receipts and result-bearing code are unchanged. All345 new/changed shared/predecessor/target links resolve; proof-primary-row uniqueness, target-status and own-RESULTS-section checks pass. No new numerical run or theory mechanism. Final manifest counts and remote identity/scope comparison are recorded at publication.
+
+Commit preparation outputs first, then close07 and add [handoff08](https://github.com/aacchhee/padua_research/blob/codex/padua-mz-sharp-constants-20261106/topics/padua-mz-sharp-constants-20261106/handoffs/08-readiness.md) in a separate commit. Claude Opus5.5 high reviews the shared diff, final IDs, the original-target application and a fresh reservation union; this is readiness, not a new audit round unless material divergence is found. PR31 remains draft and no merge is requested.

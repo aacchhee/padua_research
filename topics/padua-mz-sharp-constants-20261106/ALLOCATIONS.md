@@ -26,3 +26,5 @@ Every provisional label is retained in the final map, including fourteen IDEA re
 PR32 published its new allocation while the initial scan was in progress. Its new ledger and crosswalk were refetched and verified before this reservation; PR33's refreshed tree preserved all reservation sources. This topic starts above that updated union. Old four-digit BTTB aliases are not Padua registry IDs. Historical next-free prose never overrides explicit reservations.
 
 Priority is the first pushed commit containing this ledger, linked from PR31; the date alone grants no priority. Only the coordinator publishes this topic's reservation. The readiness check refreshes main, every open PR including drafts, closed-unmerged/retired reservations, ledgers and used IDs again before any ready-for-merge decision. No other branch's ledger or IDs are changed.
+
+Reservation first published in commit [dd57b6439d539164cdee7ab01a11b6080a03af10](https://github.com/aacchhee/padua_research/commit/dd57b6439d539164cdee7ab01a11b6080a03af10), before assignment. [Final map](final-id-map.json) retains every original alias and the distinct eight final IDEA IDs.

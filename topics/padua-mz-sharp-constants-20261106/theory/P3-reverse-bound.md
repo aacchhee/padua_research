@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-P3-03 — the sharp reciprocal CC limit
+# PD-T546 — the sharp reciprocal CC limit
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-P3-03` → `PD-T546`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: reverse Volterra transfer; sharp logarithmic CC minimum.
@@ -46,15 +48,14 @@ an asymptotic statement; (2) is asserted only when L>=16.
 ## Status by part
 
 Overall status: PROVED. The complete assembly received supplementary
-checks and was accepted in [audit-02](../audit-02.md); registry application
-to PD-T020 remains deferred to PR preparation.
+checks and was accepted in [audit-02](../audit-02.md).
 
 | Mathematical part | Status | Evidence |
 |---|---|---|
 | Full-space finite interpolation bound (2) | PROVED | Exact kernel split and all-input estimates below |
 | Reverse liminf and both sharp limits (1) | PROVED | (2), restriction and existing S1-02 limsup |
 
-The shared PD-T020 registry is deliberately unchanged under handoff03.
+PD-T020 is PROVED via this result together with PD-T523.
 Its original wording is preserved; this result claims its full limit,
 not a narrowing to a trial family or a subsequence.
 

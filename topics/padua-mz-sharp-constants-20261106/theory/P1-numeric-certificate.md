@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-P1-04 — coarse rectangle enclosure
+# PD-T542 — coarse rectangle enclosure
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-P1-04` → `PD-T542`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: exact angular Darboux instance; constant-vector Schur certificate.
@@ -26,7 +28,7 @@ Outward decimal display:
 
 Overall status: **PROVED**, computer-assisted local development with
 distinct code/scalar/reduction reconstruction and actual rerun PASS.
-Required Claude audit is separate.
+Accepted at its stated scope in [audit-02](../audit-02.md).
 This interval certifies no practical three-digit value. The inherited
 strict positivity of c_plus gives only 0<c_plus<=r<=U; no c_plus
 Galerkin/residual solve or improved positive spectral approximation is

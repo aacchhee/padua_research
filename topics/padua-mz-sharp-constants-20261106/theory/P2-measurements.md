@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-P2-01 — finite-m two-mode measurements
+# PD-T543 — finite-m two-mode measurements
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-P2-01` → `PD-T543`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: second-mode projector; compressed signed branch difference;

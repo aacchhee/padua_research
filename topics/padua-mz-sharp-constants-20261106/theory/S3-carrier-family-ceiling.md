@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-S3-04 — a global ceiling for the inherited negative packet coefficients
+# PD-T537 — a global ceiling for the inherited negative packet coefficients
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S3-04`, `PD-T?S3-04` → `PD-T537`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: normalized negative Fejer packet ceiling; scalar-family gap bound.
@@ -40,7 +42,7 @@ parameters depending on m; such a use would need an additional proof.
 
 ## Status by part
 
-Overall status: **PROVED** (analytic development; separate check pending).
+Overall status: **PROVED** (analytic development accepted in [audit-01](../audit-01.md)).
 
 | Mathematical part | Status | Evidence |
 |---|---|---|

@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-P4-02 — closed-form endpoint denominator
+# PD-T548 — closed-form endpoint denominator
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-P4-02` → `PD-T548`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: S2 continuous Gram entries; sine-rational endpoint mass matrix;

@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-P3-01 — a uniform signed logarithmic remainder
+# PD-T544 — a uniform signed logarithmic remainder
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-P3-01` → `PD-T544`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: dyadic sinc estimate; reciprocal-cardinal pole remainder.
@@ -36,7 +38,8 @@ Overall status: PROVED in analytic development.
 |---|---|---|
 | Uniform all-input estimate (1) | PROVED | Elementary sinc orthogonality and weighted Schur proof below |
 
-The original PD-T020 target remains OPEN at this supporting checkpoint.
+Historical checkpoint: the original PD-T020 target was OPEN at this
+supporting checkpoint. It is now PROVED via PD-T546 together with PD-T523.
 Candidate disposition: retained continuation of S1's signed-transfer
 obligation; independent review of this new proof remains separate.
 

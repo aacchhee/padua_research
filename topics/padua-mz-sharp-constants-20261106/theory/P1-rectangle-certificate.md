@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-P1-03 — finite rectangle certificates for the norm
+# PD-T541 — finite rectangle certificates for the norm
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-P1-03` → `PD-T541`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: integrated scalar rows; semicircle endpoint integrals;

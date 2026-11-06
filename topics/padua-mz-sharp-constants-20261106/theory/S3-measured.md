@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-903 — Padua finite minima, corner proxies and transfer diagnostic
+# PD-T538 — Padua finite minima, corner proxies and transfer diagnostic
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-903` → `PD-T538`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: Padua finite minima, corner proxies and transfer diagnostic.

@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-S1-02 — a sharp-model one-sided CC bound
+# PD-T523 — a sharp-model one-sided CC bound
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S1-02` → `PD-T523`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: logarithmic half-wave trial; parity-reflected nodal envelope.
@@ -51,7 +53,7 @@ these are supporting bounds, not proved cases of its limit statement.
 
 PD-T013: exact cardinal/DCT formula and positivity of weights.
 PD-T017 proof §1, with PD-T013 (1): w_k=(pi/N)sin(k*pi/N)+O(N^−2), uniformly at interior nodes.
-PD-T?mz-sharp-codex-S1-01: exact primitive model norm 2/pi.
+PD-T522: exact primitive model norm 2/pi.
 No external theorem or numerical eigenvalue data.
 
 ## Checks and sources

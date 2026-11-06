@@ -1,11 +1,13 @@
-# PD-T?mz-sharp-codex-904 — reciprocal CC logarithmic model
+# PD-T524 — reciprocal CC logarithmic model
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-904` → `PD-T524`; statements, original registrations and historical dispositions are preserved.
 
 Rules/source2143ad622fa98faf8fe7d5cb8ed2bb7e0062f861.
 Prediction written 2026-11-06, before access to final K1 extrapolation.
 Coordinator's committing SHA supplies the prospective timestamp.
 
-ID kind: PD-T (original target PD-T020 remains OPEN; no new finite-N
-claim is assigned here). Aliases: logarithmic primitive transfer model.
+ID kind: PD-T (original target PD-T020 was OPEN at registration; no new
+finite-N claim is assigned here). Aliases: logarithmic primitive transfer model.
 Split from: none. Split into: exact model norm S1-volterra-model.md;
 that supporting result is not a proved case of the target.
 
@@ -168,7 +170,7 @@ and classical model norm remain independent PROVED records.
 
 ## 2026-11-06 P3 completes the reverse-bound resume condition
 
-The newly authorized [P3 reverse-bound proof](P3-reverse-bound.md) proves the matching liminf and therefore the exact pi^4/8 limit on Pi_(N-1) and Pi_N, both parities. The historical S1 gate/disposition above records its original stop; P3 is the separately gated analytic continuation that fulfills its stated resume condition. Original K1/K2 criteria, data and operational outcomes are unchanged. New local PROVED development has supplementary reconstruction PASS and requires focused Claude audit. Shared PD-T020 remains unchanged under handoff03.
+The newly authorized [P3 reverse-bound proof](P3-reverse-bound.md) proves the matching liminf and therefore the exact pi^4/8 limit on Pi_(N-1) and Pi_N, both parities. The historical S1 gate/disposition above records its original stop; P3 is the separately gated analytic continuation that fulfills its stated resume condition. Original K1/K2 criteria, data and operational outcomes are unchanged. The proof was accepted in [audit-02](../audit-02.md). Current disposition: **resolved via P3** (PD-T546 together with PD-T523); the deferred route's reverse-bound resume condition is met and PD-T020 is PROVED. The earlier K2 stop and deferred disposition remain historical records, with no PD-N.
 
 ## 2026-11-06 audit-02 C2 wording history
 

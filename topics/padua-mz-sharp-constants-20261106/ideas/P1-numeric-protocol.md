@@ -1,4 +1,6 @@
-# IDEA?mz-sharp-codex-P1-04 — coarse rectangle norm instance
+# IDEA-609 — coarse rectangle norm instance
+
+2026-11-06 ID history: `IDEA?mz-sharp-codex-P1-04` → `IDEA-609` (retained record consolidated under this ID); statements, original registrations and historical dispositions are preserved.
 
 Aliases: constant positive Schur vector; angular Darboux certificate.
 

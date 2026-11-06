@@ -1,4 +1,6 @@
-# IDEA?mz-sharp-codex-S2-04 — finite-window spectral certificates
+# IDEA-386 — finite-window spectral certificates
+
+2026-11-06 ID history: `IDEA?mz-sharp-codex-S2-04` → `IDEA-386` (retained record consolidated under this ID); statements, original registrations and historical dispositions are preserved.
 
 Aliases: truncated positive-form residual; explicit computable limit brackets.
 Status: candidate formalization in round5, no numerical certificate run.
@@ -45,7 +47,7 @@ History:2026-11-06, S2 round5; source/rules2143ad6.
 - Actual test results and committed evidence: the linked theory files and audit-01.md give the analytic outcome at its stated scope; existing floating receipts retain MEASURED status.
 - Disposition and precise rejected scope, if any: retained continuation; no family-wide refutation or new PD-N.
 - Disposition reason: no rejection; the completed obligations are recorded in linked theory and audit-01.md.
-- Canonical theory / negative-result ID: the provisional IDs of the linked theory files; no final ID allocated in this response.
+- Canonical theory / negative-result ID: PD-T531 in the linked theory files; no PD-N.
 - Topic / completed audit link / history (no pending process stage): padua-mz-sharp-constants-20261106; audit-01.md; 2026-11-06 template completion preserving the original registration prose.
 
-Canonical result pointer (audit A10): PD-T?mz-sharp-codex-S2-06; [theory](../theory/S2-finite-certificate.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.
+Canonical result pointer (audit A10): PD-T531; [theory](../theory/S2-finite-certificate.md). Completed [audit-01](../audit-01.md) accepts the linked analytic scope.

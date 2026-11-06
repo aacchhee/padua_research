@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-S2-02 — endpoint MZ deficit has logarithmic-square order
+# PD-T527 — endpoint MZ deficit has logarithmic-square order
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S2-02` → `PD-T527`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: endpoint eta tends one; true MZ deficit; upper-gap assembly.
@@ -46,7 +48,7 @@ gap with existing PD-T017/018, not a separate new mechanism.
 
 PD-T017: lambda_−>=1/K_N.
 PD-T018: lambda_−<=128000/(logN)².
-PD-T?mz-sharp-codex-S2-01: lambda_+<=5/3 for everyN>=2.
+PD-T526: lambda_+<=5/3 for everyN>=2.
 PD-T013: exactness on constants, giving constant-polynomial quotient1.
 All three complete theory files were read in full before this corollary.
 

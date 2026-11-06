@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-S2-01 — uniform CC upper bound by a reflected core
+# PD-T526 — uniform CC upper bound by a reflected core
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S2-01` → `PD-T526`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: five-thirds endpoint upper bound; IDEA386 normalized remainder;

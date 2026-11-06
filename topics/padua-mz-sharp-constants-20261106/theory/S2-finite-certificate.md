@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-S2-06 — explicit finite spectral brackets
+# PD-T531 — explicit finite spectral brackets
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S2-06` → `PD-T531`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: finite-window residual certificate; computable finite-to-limit error.

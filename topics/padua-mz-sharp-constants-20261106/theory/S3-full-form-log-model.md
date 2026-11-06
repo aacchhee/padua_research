@@ -1,8 +1,11 @@
-# PD-T?mz-sharp-codex-S3-02 — a uniform full signed logarithmic reduction
+# PD-T534 — a uniform full signed logarithmic reduction
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S3-02` → `PD-T534`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: thin-strip logarithmic form; finite-family signed reduction.
-Split from: supporting development for PD-T381, whose sharp target stays OPEN.
+Split from: supporting development for PD-T381, now PARTIAL; its decimal
+values conjunct remains OPEN.
 Split into: none.
 
 ## Statement
@@ -48,8 +51,7 @@ Endpoint factors are part of every retained-pair sum.
 
 ## Status by part
 
-Overall status: **PROVED** (analytic development; independent audit
-pending).
+Overall status: **PROVED** (analytic development accepted in [audit-01](../audit-01.md)).
 
 | Mathematical part | Status | Evidence |
 |---|---|---|

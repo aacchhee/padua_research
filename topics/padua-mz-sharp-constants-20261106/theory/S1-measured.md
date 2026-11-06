@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-901 — CC lower fit and normalization diagnostics
+# PD-T525 — CC lower fit and normalization diagnostics
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-901` → `PD-T525`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: CC lower fit and normalization diagnostics.

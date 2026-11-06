@@ -1,4 +1,6 @@
-# PD-T?mz-sharp-codex-S3-kernel — quantitative Legendre corner kernels
+# PD-T535 — quantitative Legendre corner kernels
+
+2026-11-06 ID history: `PD-T?mz-sharp-codex-S3-kernel` → `PD-T535`; statements, original registrations and historical dispositions are preserved.
 
 ID kind: PD-T.
 Aliases: total-degree Bessel corner kernel; reflected-corner decoupling.
@@ -269,8 +271,8 @@ PD-T295, PD-T377, PD-T381, and S3-full-form-log-model.md. The broader
 predecessor screening is recorded in ../novelty-gate-S3.md. It is not
 recast as a new novelty claim. No external fulltext was used.
 
-Independent mathematical check: pending coordinator allocation. The
-required Claude audit is separate from any supplementary Codex check.
+Independent mathematical check: [audit-01](../audit-01.md) accepted this
+record at its stated scope, separately from supplementary Codex checks.
 
 ## Scope and open items
 
