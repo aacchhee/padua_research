@@ -1,7 +1,7 @@
 # NN MOP conditioning: intrinsic or metric? Sharp rates, weak stability, IEP-MOP comparison: log
 
 - Branch: `codex/nn-mop-conditioning-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/nn-mop-conditioning-20261106.` · Work step [01](handoffs/01-work.md) is complete; audit handoff [02](handoffs/02-audit.md) is published after the output commit.
+- Stage: WORK · Next: `Codex (gpt-6.1-sol, high): Continue codex/nn-mop-conditioning-20261106.` · [Audit 01](audit-01.md) found no BLOCKING, 3 MAJOR and 11 MINOR findings; response handoff [03](handoffs/03-response.md).
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: none yet.
 
@@ -229,3 +229,26 @@ line endings. Final publication uses raw UTF8 byte decoding, preserving
 CSV bytes and their receipt/manifest identities; numeric values are
 unchanged. Remote blob identities are checked before closing the work
 handoff. Main was refreshed again and remains76ba421.
+
+## 2026-11-06 — Claude, Opus 5.5 xhigh — substantive audit 01
+
+Rules read at `64a45b3` (identical to `76ba421` for AGENTS/agents/IDEAS).
+Audited candidate `cc1edd2`; main still `76ba421`. Claude orchestrated five
+Claude audit workers (Opus 5.5 xhigh for A/B/C mathematics, high for D/E
+technical and protocol scope); none changed Git or repository files.
+Full IDEAS read (lines 1–1112) and targeted INDEX rows recorded in the audit.
+
+Every PROVED and MEASURED claim is accepted within its scope. That includes
+the Krawtchouk upper and limit, the Hahn normality/lower/terminal rate, the
+envelope PD-N, the gauge/scalar/matrix theorems and the parameter lower.
+Independent exact and high-precision scripts are in audit-01/claude. The C1
+grid rerun is byte-identical; the C3 grid differs in platform-dependent LU
+values, and Krawtchouk N32 A-LU breaks down on the audit stack. The source
+archive and Octave are absent from this runtime, so M2, M4 and the 348
+external calls were reviewed from receipts and code only, not rerun.
+
+Three MAJOR findings: PD-T448 classification and split wording; missing
+LIT-502 and Fischer (LIT-113) attribution; candidate and PD-N records for
+the failed C2 subroutes. There are also eleven MINOR findings and seven NOTEs.
+Stage WORK; the response is [handoff 03](handoffs/03-response.md).
+
