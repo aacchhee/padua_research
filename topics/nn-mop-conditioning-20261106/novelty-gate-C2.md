@@ -141,3 +141,34 @@ and a coefficient-rate theorem; an even-only subsequence would yield
 only that subsequence/limsup. Full Hahn sharp conditioning remains OPEN
 without a matching full-input/full-field upper. Actual outcome is in
 the separate terminal-rate record and C2 attempt ledger.
+
+## C2-03 round 4 subroute — preserve or lose nodewise correlation
+
+Before extending the shared Cauchy-kernel inverse to all indices, test
+the cheapest terminal upper envelope: replace the product P(k)Q2(k)
+by max|P| max|Q2| and sum the positive weights. Closest entries remain
+IDEA-534/535 and the C2-03 terminal dual; this is a bound on that same
+mechanism, not a proposed independent method or novelty claim. The
+decisive kill criterion is an analytic lower base for this envelope
+strictly greater than rho_H. That would reject this decoupling as a
+matching-rate proof, without refuting a correlated estimate or a full
+Hahn upper. Center polynomial and endpoint dual values provide the
+cheapest exact test; finite sizes alone cannot establish failure of an
+all-N exponential bound. The route and any resulting scope limitation
+belong in C2.md and a mathematical negative-route lemma, not a claim
+that the full Hahn target is false.
+
+## C2-03 rounds 5--6 subroutes — arbitrary index and common nodes
+
+The next bounded tests retain the same Cauchy-kernel mechanism, closest
+to IDEA-534/535, without a new core-method or historical novelty claim.
+Round5 asks whether the terminal positive finite-difference comparison
+survives at degree t<M. Derive its exact extra factor first; one exact
+negative difference kills that unchanged positive-coefficient extension,
+not a bound that controls cancellation differently. Round6 asks whether
+ordinary grid-supnorm differentiation transfers the terminal weight bound
+to common-node forcing at polynomial cost. An exponential lower bound
+on that differentiation operator kills the claimed polynomial transfer;
+it does not kill weighted or correlated node estimates. Preserve the
+two actual attempted inequalities, their precise failures and the
+remaining stronger inequalities in the upper-search record and ledger.

@@ -1,0 +1,75 @@
+{
+  "status": "PASS finite exact identities; analytic proof review separate",
+  "source_commit": "b4a04981d42c7cd872957facf5e3995e4096ca67",
+  "role": "supplementary independent checker; not final readiness auditor",
+  "python": "3.12.14",
+  "mpmath": "1.3.0",
+  "defining_moment_cases": 10,
+  "relative_weight_coordinates": 75,
+  "fixed_mass_cases": 10,
+  "coefficient_identities": 19,
+  "coefficient_M_range": [
+    2,
+    20
+  ],
+  "rho": "12.1136005841302404957748402233263025450790694193003340300324",
+  "saddle": "0.228770121581293760864387008978935023271585671773222321786321",
+  "exact_cases": [
+    {
+      "M": 2,
+      "A": "25",
+      "D": "48/11"
+    },
+    {
+      "M": 3,
+      "A": "184",
+      "D": "68400/1183"
+    },
+    {
+      "M": 4,
+      "A": "1877",
+      "D": "205058/289"
+    },
+    {
+      "M": 5,
+      "A": "19560",
+      "D": "52036824/6137"
+    },
+    {
+      "M": 6,
+      "A": "211989",
+      "D": "11075622048/110561"
+    },
+    {
+      "M": 7,
+      "A": "2345936",
+      "D": "44034352992/37375"
+    },
+    {
+      "M": 8,
+      "A": "26337609",
+      "D": "267631615856/19343"
+    },
+    {
+      "M": 9,
+      "A": "298753200",
+      "D": "4528136870202/27869"
+    },
+    {
+      "M": 10,
+      "A": "3415340017",
+      "D": "4289324156726960/2246601"
+    },
+    {
+      "M": 11,
+      "A": "39283457992",
+      "D": "193467904704819888/8615117"
+    }
+  ],
+  "sha256": {
+    "code/independent_hahn_rate.py": "056062a1e6e1ac337f8a56e9503d319e2fac3f8d1f86261be30b1a1054b0dce9",
+    "theory/c2-hahn-terminal-rate.md": "5945fdde195b45f2e5476f2846686137652f88685efff1694881242378e09a63",
+    "theory/c2-hahn-normality.md": "a8c2fc56a4876b92798f88ef7d763c102fee1839885668fb2cdf642337bb1da5"
+  }
+}
+

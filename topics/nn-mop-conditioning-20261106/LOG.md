@@ -1,7 +1,7 @@
 # NN MOP conditioning: intrinsic or metric? Sharp rates, weak stability, IEP-MOP comparison: log
 
 - Branch: `codex/nn-mop-conditioning-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/nn-mop-conditioning-20261106.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/nn-mop-conditioning-20261106.` · Work step [01](handoffs/01-work.md) is complete; audit handoff [02](handoffs/02-audit.md) is published after the output commit.
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: none yet.
 
@@ -164,3 +164,68 @@ route; its candidate rate is not a proved sharp rate and is not included
 in the current report's theorem claims. Current round2 outputs can be
 checkpointed while that disjoint work continues. No final-ID reservation
 or shared registry edits have occurred.
+
+## 2026-11-06 — stronger Hahn terminal rate, independently checked
+
+C2 round3 gives the exact balanced-terminal parity-row rate
+rho_H=12.1136005841302405…, largest root of
+r^4−14r^3+24r^2−14r+1. It proves a full-Hahn-map lower liminf of that
+base, including both size parities and fixed masses, but not a matching
+full-map upper. The positive coefficient representation, elementary
+finite-type entropy lower and saddle upper are written self-contained.
+The main full-map sharp target remains OPEN.
+
+Focused distinct Astra high check02 reconstructs the argument, independently
+verifies every separate second-weight gradient at M2–11, exact positive
+formulas and fixed-mass directions, and generating coefficients through
+M20; the original saddle equation and quartic agree at110dps. No unresolved
+defect was found in that scope. Report/results/note material now cite
+this stronger bound while retaining the simpler base2 record. A failed
+product-of-global-maxima upper route is being preserved separately; it
+does not refute the full Hahn target.
+
+## 2026-11-06 — completed bounded round; AUDIT
+
+C2 stops at6 of an up-to8 direction budget after two consecutive upper
+attempts without a new quantitative bound. The positive-difference
+extension has a small exact counterexample; unweighted grid differentiation
+loses an exponential factor. Those are scoped route failures, not a
+refutation of the full Hahn upper. All considered routes and remaining
+correlated inequalities are retained in attempts/C2.md.
+
+C1 completed3 productive rounds, C2 six bounded direction rounds with
+parallel decisive Krawtchouk support, C3 stopped after two empty proof
+rounds, and C4 completed five productive rounds after AC restored source.
+The original general weak-stability target and full Hahn/general-pair
+uppers remain OPEN. No Advanpix-only execution or cold-storage delivery
+is claimed. Report, note material and results use those exact limits.
+
+Publication granularity: coordinator checkpoints were pushed throughout
+this session, while several rapid worker-labeled subrounds were integrated
+at one checkpoint rather than each having an individual pushed boundary.
+No fabricated per-round push or exhaustive8-round search is claimed.
+
+Supplementary checks01/02 are separate from the required single Claude
+audit. Stage is now AUDIT; no final IDs/ranges or shared registry edits.
+Evidence manifest pins code/data only, with repository-only verification
+by code/verify_evidence.py; the optional raw check does not claim archives
+will exist in another runtime. Final numbered audit handoff02 is published
+in the following commit after scientific outputs, preserving01's body.
+Only AC merges.
+
+Final verification: code/verify_evidence.py --raw passed58 committed
+code/data/import identities and11 temporary raw identities. Focused02
+also reviewed the final gauge transfer and upper-envelope failure, then
+independently reran the last upper-search checker over75 indices,860
+weight coordinates and430 common-node coordinates. Those attempt formulas
+do not claim a new full-map upper. All developer/checker files are now
+frozen for the candidate; required Claude audit remains PENDING.
+
+Next: [handoff02 — substantive Claude audit](handoffs/02-audit.md).
+
+Publication byte check: local generated CSVs use CRLF. The connector
+checkpoint materialization through text-mode reads had normalized those
+line endings. Final publication uses raw UTF8 byte decoding, preserving
+CSV bytes and their receipt/manifest identities; numeric values are
+unchanged. Remote blob identities are checked before closing the work
+handoff. Main was refreshed again and remains76ba421.

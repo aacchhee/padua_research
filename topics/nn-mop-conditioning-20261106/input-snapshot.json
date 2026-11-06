@@ -1,0 +1,25 @@
+{
+  "format": "nn-mop-conditioning-pinned-snapshot-v1",
+  "source_commit": "b4a04981d42c7cd872957facf5e3995e4096ca67",
+  "main_base": "76ba4214b100c86a44941f5e9a662ce9ce48efb8",
+  "main_tree": "00072b7e24b71afde74f3e80b539af0148356248",
+  "working_snapshot": "Unmodified local main clone plus pinned topic setup; connector Git-data publication, no shell topic fetch",
+  "connector_fetched_files": [
+    "AGENTS.md",
+    "agents/WORKFLOW.md",
+    "agents/codex/CODEX.md",
+    "topics/nn-mop-conditioning-20261106/LOG.md",
+    "topics/nn-mop-conditioning-20261106/handoffs/01-work.md",
+    "results/nn-mop-conditioning-20261106.md"
+  ],
+  "rules_blob_identity_verified": true,
+  "third_party_archive": {
+    "sha256": "cdd0e98d2b411f24cfcecb49d83e16f9d50a7622a0d4f0d3eb17eb334a405145",
+    "bytes": 1020330,
+    "source_revision": "unknown; supplied by AC in this session",
+    "member_inventory": "topics/nn-mop-stability-20261105/audit-g5-01/source-inventory.json",
+    "member_count": 27,
+    "third_party_content_committed": false
+  },
+  "prose_pins": "No new checker hashes prose. Source/audit commit identities do not assert future prose equality."
+}
