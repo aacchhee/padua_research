@@ -1,6 +1,6 @@
 # Handoff 05 — continuous near-model comparison and calibrated bootstrap research
 
-- Status: open
+- Status: superseded by 06: AC authorizes a fresh fifteen-round campaign and prioritizes the analytic upper boundary and very cheap certification
 - Previous handoff: 04-research.md
 - Next agent / model / effort: Codex, gpt-6-astra high coordinator; Sol medium technical development, Sol xhigh ordinary mathematics, distinct Astra high supplementary mathematical checks. Handoff01 permits Astra ultra only for a genuinely hard decisive step, with a written justification before allocation.
 - Role: orchestrator and developer
