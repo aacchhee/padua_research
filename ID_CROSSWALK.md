@@ -1652,3 +1652,5 @@ D2 retains its unnumbered known reorthogonalized-marginal and high-precision ora
 Unused IDs remain permanent gaps: PD-T450–471, PD-N169–177, IDEA-556–569 and LIT-615–629. LIT-567/568 are reused source identities; only LIT-614 is new.
 
 The handoff01 label `PD-T?nn-mop-stability-codex-NN` is an identifier-template placeholder, not an allocated claim or candidate.
+
+Sharp MZ constants reserves PD-T522–553, IDEA-608–615 and LIT-633–635 in its [topic ledger](topics/padua-mz-sharp-constants-20261106/ALLOCATIONS.md), after the full main/open-PR/retired union refresh; no PD-N range. Final application follows this reservation.
