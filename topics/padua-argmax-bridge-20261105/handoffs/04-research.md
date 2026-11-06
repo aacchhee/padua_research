@@ -1,6 +1,6 @@
 # Handoff 04 — continue the Padua argmax bridge research
 
-- Status: open
+- Status: done in 2aa097767a508a7d94c6f24c8bccdbf01aa8aefa
 - Previous handoff: 03-research.md
 - Next agent / model / effort: Codex, gpt-6-astra high coordinator; handoff01 model allocation continues (Sol medium technical work, Sol xhigh ordinary mathematics, distinct Astra high supplementary mathematical checks; hard N1 Astra ultra only with the recorded justification).
 - Role: orchestrator and developer
