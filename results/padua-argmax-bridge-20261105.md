@@ -57,3 +57,11 @@ pack is justified by point-only timings. See the
 [report](../topics/padua-argmax-bridge-20261105/report.md) and
 [campaign ledger](../topics/padua-argmax-bridge-20261105/campaign-20261106.md)
 for exact proof dependencies, costs, failures and remaining work.
+
+Post-audit campaign D01/25 is complete. Independent checks establish two
+scoped restrictions: the frozen C07 corner envelope misses its K0<=4
+target, and the unchanged fixed-cutoff far model has a genuine nonzero
+midpoint bias, ruling out uniform C(1+log n)/n decay. The old half-million
+result remains intact. Signed diagnostics expose geometry cancellation;
+new joint/bias-aware estimates are the next task, not more precision on
+the failed envelopes. [D01 record](../topics/padua-argmax-bridge-20261105/campaign-post-audit-20261106.md).

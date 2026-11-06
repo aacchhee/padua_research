@@ -6,11 +6,11 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **0/25**. Active: **D01**.
+Completed: **1/25**. Active: none at this checkpoint; D02 is the next separately gated follow-up.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
-| D01 | ACTIVE | Claude P4 corner constants and P1 exact-component/a=0 diagnostic; resolve audit records in parallel | Corner<=300CPU, far<=600CPU; no execution before exact math contracts; no result yet |
+| D01 | COMPLETE | Claude P4 corner constants and P1 exact-component/a=0 diagnostic; resolve audit records in parallel | Exact frozen-envelope K0(1000)>1289/300>4; measured corner gate/kill fail. Exact fixed-cutoff far bias bδ≈−.00115002 forbids uniform vanishing error; signed geometry-corrected diagnostics expose cancellation. Both independently accepted. |
 
 The initial scientific boundary is exact argmax degrees2–40 and alln>=500000,
 with exact two parity-correct corners. Gap41–499999 staysOPEN. Claude's

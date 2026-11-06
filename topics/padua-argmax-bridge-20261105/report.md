@@ -1,4 +1,4 @@
-# Padua argmax bridge — WORK checkpoint for interim Claude audit, 2026-11-06
+# Padua argmax bridge — WORK post-audit checkpoint, 2026-11-06
 
 The exact global equality set is proved for **degrees2–40** and for
 **every integer n>=500000**. It consists of {(-1,-1),(1,-1)} for even n
@@ -118,9 +118,10 @@ direction totals in [rounds](rounds.md). Claude interim audit-01 supports the st
 its recorded residual upstream scope, and returns nine MINOR record findings.
 Response-01 answers those without changing mathematical bodies. AC now
 authorizes a separate25-round post-audit campaign, recorded in
-[campaign-post-audit-20261106.md](campaign-post-audit-20261106.md); D01 is active. The next reviewer should assess both the
-half-million theorem and the actual remaining obstacles, rather than
-assume the experimental row upper bounds already constitute a cheap certifier.
+[campaign-post-audit-20261106.md](campaign-post-audit-20261106.md); D01 is active. The completed interim audit and its residual coverage are recorded in
+[audit-01](audit-01.md); [response-01](response-01.md) answers its nine
+MINOR records findings. The experimental row bounds remain components,
+not a replacement whole certifier.
 
 The complete known-n32 checker improvement is validated. The experimental
 linear-work whole-box methods are valid guarded S-upper components, but
@@ -136,12 +137,34 @@ quarter target remains OPEN; its failed particular certificate does not
 refute the target. No practical Syvert pack or completed finite bridge exists.
 
 An INTERIM Claude audit ([audit-01](audit-01.md), 2026-11-06) found no BLOCKING/MAJOR finding and returned nine MINOR record findings; Claude's own ranked proposals are in [audit-01-ideas](audit-01-ideas.md). The formal final Claude audit remains PENDING. Supplementary distinct
-Astra mathematical/source checks do not replace it. PR27 remains draft WORK. The next Claude audit is explicitly interim,
-must include its own independent ideas, and must leave WORK for Codex
-to implement next. Final audit/readiness remain pending; final shared-registry application and merge
+Astra mathematical/source checks do not replace it. PR27 remains draft WORK. The requested interim Claude audit and own ideas are complete;
+Codex has resumed WORK under the new25-round allowance.
+Final audit/readiness remain pending; final shared-registry application and merge
 readiness are pending.
 Only AC merges. Generated evidence remains under the temporary10,000,000-byte
 aggregate ceiling; major archive cleanup is a separate topic. Large raw
 outputs stay local with identities in small receipts; physical archival
 transfer is pending. Historical outcomes and failures remain in LOG,
 attempt records, frozen sources and evidence.
+
+## Post-audit D01 — checked route restrictions
+
+The specified fully charged C07 envelope cannot meet its proposed K0<=4
+target at n1000: the exact lower bound is1289/300>4. Measured values
+are about9.06, and the n20000 kill criterion fires. This concerns that
+allocation only, not actual corner dominance or a sharper coupled proof.
+[Scoped proof](theory/D01-corner-budget.md),
+[independent check](independent-checks-D01-corner.md).
+
+The unchanged far model has a nonzero cutoff bias at the exact midpoint
+alpha=beta=pi/2: b_.01=−.00115002219528743975... . Hence uniform vanishing
+error C(1+log n)/n is impossible for that fixed model. This does not
+contradict its earlier constant error bound or the n>=500000 theorem.
+[Exact identity](theory/D01-far-midpoint-identity.md),
+[scoped obstruction](theory/D01-far-contract.md),
+[independent check](independent-checks-D01-far.md).
+
+Geometry-corrected signed measurements also expose large mesh/interior
+cancellation at the requested smaller degrees. A joint estimate with an
+explicit bias allowance remains open; no second correction was inserted.
+The campaign continues with a separately gated follow-up.
