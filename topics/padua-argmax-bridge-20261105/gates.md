@@ -41,3 +41,7 @@ infeasibility or general N4 kill is claimed.
 ## 2026-11-05 round3 update
 
 Global exact range is now2–36 (the earlier2–32 line is historical). B2 finite floating scope still passes; the first complete outward n17 candidate has1288 leaves but independent Arb replay rejects364 insufficient enclosures. Outward B2 remains OPEN. B3 remains OPEN despite a new endpoint residual estimate uniform in both degree and log-degree; the compact model/onset is absent. The independently reconstructed common local corner patch covers every degree2–128; it supplies no global coverage by itself. N5 all-edge-center margin is a developer proof pending distinct review. B4 remains blocked; B6 has no confirmed counterexample.
+
+## 2026-11-06 round4 enclosure gate
+
+The fixed hybrid's bounded gate fails3/5 selected leaves; no whole replay. R4-1 NaN derivative-success finding independently blocks clean source acceptance. B2 outward proof remains OPEN. Exact native n37 producer is complete but unaccepted pending separate replay; it does not yet extend2–36. N1's next compactification gate is preregistered/in progress; B3/B4 remain OPEN/blocked. Temporary aggregate allowance10MB is AC's explicit instruction; cross-topic cleanup is deferred.

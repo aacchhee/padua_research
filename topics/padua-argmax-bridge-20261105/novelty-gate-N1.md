@@ -82,3 +82,34 @@ full-profile obligations are recorded in [N1-endpoint](ideas/N1-endpoint.md)
 before further proof development or computation. The original B3 kill
 and one-correction limit remain unchanged. This supporting tail alone
 cannot pass B3 or establish an argmax onset.
+
+## Round 4 gate preparation — 2026-11-06
+
+Input/rules `0039456f3cf45c3cf4564d57bea30f80156b5483`; changed WORKFLOW and
+CODEX rules since c000899 were read, including proportionate records.
+The previous full registry baseline remains the base scan. The complete
+new registry delta was inspected directly and by the bounded reader
+/root/n1/endpoint_check: amended IDEA-158/160/162/168, 248/250/251/253/255,
+262-267 and new IDEA-414-424 all concern Lanczos work. None adds an N1
+endpoint-sum or exceptional-chart predecessor/obstruction. This is a
+scoped repository comparison, not an external novelty claim.
+
+Supplemental mechanism search across IDEAS, argmax/Lebesgue topics and
+INDEX used `shifted.*(log|harmonic)|logarithmic.*(mesh|sum|tail)|finite.part|endpoint.*(chart|mesh)|exceptional.*chart|Hurwitz|Stieltjes|double.scal|two.scale|sawtooth`.
+The closest entries remain IDEA-337 and IDEA-459, reread in full. Their
+linked proofs were read during the preceding rounds; N2's exact finite
+row/collision conventions and N1-01's normalization were reread here.
+The full accepted independent-checks-n1-endpoint.md was read. No new
+external fulltext or theorem transfer occurred. The existing T269 corner
+limit and T365 boundary formula remain distinct scopes, not substitute
+proofs of the new endpoint block.
+
+Verdict: quantitative continuation. The precise target is the joint
+singular endpoint mesh sum plus its at most 2R+2 exact exceptional rows,
+with a fixed-size logarithmic profile and an explicit phase-uniform
+remainder. This differs from N1-05 only if the remaining degree-dependent
+counts are actually removed. The exact domain, proposed error form,
+coalescing-limit first test and preserved repair are preregistered in
+[N1-round4](ideas/N1-round4.md). A renamed growing sum or new fit fails
+the separation test. This addon authorizes no theorem claim: substantive
+development awaits the parent's published boundary.

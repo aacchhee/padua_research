@@ -33,7 +33,8 @@ def preprocess_deps(cxx,src,include):
 def build():
  LOCAL.mkdir(parents=True,exist_ok=True)
  work=pathlib.Path(tempfile.mkdtemp(prefix='check-',dir=LOCAL))
- src=work/'arb_kernel.cpp';source=(pathlib.Path(__file__).with_name('arb_kernel.cpp')).read_bytes();src.write_bytes(source)
+ source_path=pathlib.Path(__file__).with_name('hybrid_kernel.cpp')
+ src=work/'hybrid_kernel.cpp';source=source_path.read_bytes();src.write_bytes(source)
  cxx=pathlib.Path(shutil.which('c++')).resolve()
  tools=[cxx]
  for flag in ['-print-prog-name=cc1plus','-print-prog-name=as','-print-prog-name=ld']:
@@ -69,7 +70,7 @@ def build():
  if toolids!=[identity(p) for p in tools] or depids!=[identity(p) for p in dependency_paths]:raise RuntimeError('toolchain/dependency changed during build')
  linked=closure(binary)
  linkedids=[identity(p) for p in linked]
- return binary,{'workdir':str(work),'source_snapshot':identity(src),'preprocessed_translation_unit':iiid,
+ return binary,{'workdir':str(work),'source_origin':str(source_path),'source_snapshot':identity(src),'preprocessed_translation_unit':iiid,
   'checker_binary':identity(binary),'flags':FLAGS,'preprocess_command':pre,'compile_command':command,
   'compiler_version':run([cxx,'--version']).splitlines()[0],'toolchain':toolids,'toolchain_dependency_closure':tooldepids,'headers':headerids,
   'dependency_inputs':depids,'linked_dependency_closure':linkedids,
