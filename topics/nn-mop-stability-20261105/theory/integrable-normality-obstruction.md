@@ -54,7 +54,7 @@ It is zero at a=sqrt(13)-2>1, giving the asserted positive finite t. All weights
 
 ## Checks
 
-The Christoffel example was independently derived by exact moment arithmetic, then checked in `code/integrable_transport.py --mode exact`. The exponential determinant identity above is an algebraic proof, not an outcome inferred from numerical integration. Commands/hashes in `attempts/D4.md`; independent agent replay pending.
+The Christoffel example was independently derived by exact moment arithmetic, then checked in `code/integrable_transport.py --mode exact`. The exponential determinant identity above is an algebraic proof, not an outcome inferred from numerical integration. Commands/hashes in `attempts/D4.md`; completed supplementary exact replay and direct determinant checks are recorded in [independent-checks-01.md](../independent-checks-01.md#d4-and-d6).
 
 ## Sources
 

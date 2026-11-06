@@ -16,16 +16,20 @@ import conditioning as cond
 
 
 def case(N,family):
+    if not isinstance(N,int) or N<2:
+        raise ValueError('N must be an integer at least 2')
     start = time.monotonic()
     x,w = cond.base.inputs(N,family)
-    assert len(set(x))==N and all(v>0 for row in w for v in row)
+    if len(x)!=N or len(set(x))!=N or len(w)!=2 or any(len(row)!=N for row in w) or not all(v>0 for row in w for v in row):
+        raise ValueError('certificate requires distinct nodes and two positive weight vectors')
     # Replace the generic graph's scalar constructor in this process only.
     # marginal/layers call Dual solely to construct zero/one, so Fraction
     # propagates throughout and no AD operation or mpmath conversion occurs.
     cond.Dual = Fraction
     c = cond.layers(N-1,*(cond.marginal(x,row) for row in w))
     diffs = [r['b2']-r['b1'] for r in c.values()]
-    assert all(isinstance(v,Fraction) for r in c.values() for v in r.values())
+    if not all(isinstance(v,Fraction) for r in c.values() for v in r.values()):
+        raise TypeError('certificate graph left exact Fraction arithmetic')
     passed = all(v!=0 for v in diffs)
     ident = json.dumps(dict(nodes=list(map(str,x)),weights=[list(map(str,r)) for r in w]),sort_keys=True)
     payload = json.dumps([[*nu,*[str(c[nu][f]) for f in cond.FIELDS]] for nu in sorted(c)],separators=(',',':'))

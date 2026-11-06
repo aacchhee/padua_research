@@ -8,7 +8,7 @@ Aliases: common spectral change; Darboux; finite NN ratio update.
 
 - Question / scope: given the entire source normal NN triangle, transport both measures by x-c with finite-support boundary handled correctly.
 - Mechanism and hypotheses: invariant Dtilde_nu=(-1)^|nu|P_nu(c)D_nu, evaluation-ratio recursion, h-ratio a update and subleading-coefficient b update. Both source and target triangles must be normal; c avoids support.
-- Closest registry entries (read in full): IDEA-193 common Toda/qd measure modification, IDEA-378 coupled invariant requirement, IDEA-379/PD-T289 NN reconstruction; predecessor candidates C2/C4. LIT-D4-01/02 are closer published transform baselines.
+- Closest registry entries (read in full): IDEA-193 common Toda/qd measure modification, IDEA-378 coupled invariant requirement, IDEA-379/PD-T289 NN reconstruction; predecessor candidates C2/C4. LIT-567/568 are closer published transform baselines.
 - Separation criterion vs closest entry: finite terminal formula and a bounded tested transport from supplied coefficients; a claim of a new common-transform algebra is falsified by the literature and is not retained. A stable IEP-solver distinction would require an effective source-data construction and measured gains beyond C4; that distinction is unestablished.
 - Literature baseline and search limitations: common transforms and transformed NN algorithms are known; partial primary coverage listed in literature-D4. No priority claim.
 - Applicable obstructions and exact hypotheses broken: source supplied explicitly avoids pretending equal initial measures are normal. Terminal successor is F, no degree N+1 reconstruction. Positivity alone still fails mixed normality (D4-02).
@@ -31,11 +31,11 @@ Aliases: common Geronimus preconditioner; c=-2 source pair.
 - Mechanism and hypotheses: exact target weights w, construct w/(x+2), reconstruct source array by binary64 C4, restore with D4-01. No high-precision values are supplied to this candidate algorithm.
 - Closest registry entries (read in full): IDEA-193 and IDEA-379; C1 above; predecessor C4.
 - Separation criterion vs closest entry: preconditioned source C4 must improve overall target error, rather than merely factor the same exact transform. Worsened errors on both N16 families erase that proposed benefit for this design.
-- Literature baseline and search limitations: common division/restoration known, LIT-D4-01/03; no literature-derived stability estimate.
+- Literature baseline and search limitations: common division/restoration known, LIT-567 / LIT-D4-03; no literature-derived stability estimate.
 - Applicable obstructions and exact hypotheses broken: common-ratio invariant does not prevent returning to this particular target orbit, but supplies no easier source. Source mixed normality was checked by successful reference reconstruction, not inferred from positivity.
 - Novelty gate verdict: variant with difference, a concrete numerical preconditioner candidate.
 - Cheapest decisive test: compare full binary64 outputs against direct high-precision references on both families at N4,8,12,16.
-- Kill criterion written before testing: campaign G4 both-family N16 improvement gate; candidate communicated to coordinator/native-backward worker before its run, durable detailed record written afterward as acknowledged in gate.
+- Kill criterion written before testing: campaign G4 both-family N16 improvement criterion; timing and AC decision are linked from novelty-gate-D4.md.
 - Test discriminability: same target, precision and metric distinguish source reconstruction plus restoration from direct C4. Isolation from rounded accurate source helps localize the issue but is not a full solver test.
 - Resources / cost ledger: C4 source reconstruction plus O(N^2) restoration; no asymptotic improvement over C4 claimed.
 - Actual test results and committed evidence: N16 E Krawtchouk 0.223309 vs C4 0.0966694; Hahn 79.7731 vs C4 70.3138. No two-digit gain at any tested size. attempts/D4.md and integrable-predivide-failure.md.
@@ -52,7 +52,7 @@ Aliases: common-factor orbit; common Toda solve; no-mass Geronimus reachability.
 - Mechanism and hypotheses: compose common nonzero multipliers, including common Christoffel, division without added masses, and common exponential flow.
 - Closest registry entries (read in full): IDEA-193, IDEA-378/379; predecessor C2; proportional-start obstruction PD-T286.
 - Separation criterion vs closest entry: genuine arbitrary-input reachability; preservation of projective pointwise weight ratio kills it.
-- Literature baseline and search limitations: LIT-D4-01 common deformations; LIT-D4-03 allows more general mass additions, which are outside this candidate.
+- Literature baseline and search limitations: LIT-567 common deformations; LIT-D4-03 allows more general mass additions, which are outside this candidate.
 - Applicable obstructions and exact hypotheses broken: equal/proportional measures are nonnormal and remain so under common factors; arbitrary starts also preserve cross ratios I_(l,r).
 - Novelty gate verdict: duplicate mechanism with a newly explicit local reachability test; no priority claim for the invariant.
 - Cheapest decisive test: cancel common factors in I_(l,r), no computation needed.
@@ -68,18 +68,18 @@ Aliases: common-factor orbit; common Toda solve; no-mass Geronimus reachability.
 
 Aliases: common exp(tx) flow; finite-triangle Toda RK4.
 
-- Question / scope: continue an already supplied compatible finite array under a common positive weight flow.
+- Question / scope: continue the actual moment-defined array at t0 under a common positive weight flow on its connected normality interval.
 - Mechanism and hypotheses: D4-04 finite ODE with S_degreeN=0, valid only on a normality interval. RK4 is a numerical pilot, not an exact invariant-preserving integrator.
 - Closest registry entries (read in full): IDEA-193 Toda/qd, IDEA-378 invariant, IDEA-379 baseline.
-- Separation criterion vs closest entry: explicit boundary/operation count and bounded endpoint measurements. A claim of a new Toda algebra is killed by LIT-D4-01 and not pursued. A solver distinction requires independent source availability and target reachability, still missing.
-- Literature baseline and search limitations: LIT-D4-01 §2.3 equation2.18 with reversed time sign; full source proof not read. Local finite proof supplied independently.
+- Separation criterion vs closest entry: explicit boundary/operation count and bounded endpoint measurements. A claim of a new Toda algebra is killed by LIT-567 and not pursued. A solver distinction requires independent source availability and target reachability, still missing.
+- Literature baseline and search limitations: LIT-567 §2.3 equation2.18 with reversed time sign; full source proof not read. Local finite proof supplied independently.
 - Applicable obstructions and exact hypotheses broken: finite boundary correctly closed; positivity does not ensure normality, with explicit N3 flow crossing in D4-02; common-ratio invariant restricts targets.
 - Novelty gate verdict: duplicate algebra, variant with difference in finite closure/implementation scope.
 - Cheapest decisive test: derive closure then exp(0.1x) pilot at N4,8,12,16, 20/40 RK4 steps, against deformed moments.
 - Kill criterion written before testing: a normality crossing blocks that path; a wrong endpoint/closure blocks implementation. Good oracle-initialized endpoint error does not clear a full IEP gate.
 - Test discriminability: step halving tests truncation behavior at fixed initial data; it says nothing about how accurately an IEP input supplies that array or about unrelated paths.
 - Resources / cost ledger: O(N^2) per RHS; pilot starts from rounded 220-digit coefficients, an explicitly unavailable oracle for a general solver.
-- Actual test results and committed evidence: 40-step E 4.8e-15–7.24e-14 for eight cases. Hahn errors decrease by approximately16 on halving step, while most larger Krawtchouk runs reach the rounding floor. Exact commands and table in attempts/D4.md.
+- Actual test results and committed evidence: 40-step E 4.91e-16–7.23e-14 for eight cases. Hahn errors decrease by approximately16 on halving step, while most larger Krawtchouk runs reach the rounding floor. Exact commands and table in attempts/D4.md.
 - Disposition and precise rejected scope, if any: retained local supplied-array tool; stable full solver OPEN. Positivity-only normality safeguard REJECTED separately.
 - Disposition reason: equivalent known flow; missing independent-weight source generator and normal path motivate deferral of the solver application, not rejection of local equations.
 - Canonical theory / negative-result ID: PD-T?nn-mop-stability-codex-D4-04; safeguard PD-N?nn-mop-stability-codex-D4-02.
@@ -91,7 +91,7 @@ Aliases: separate Toda times; weight-specific spectral modification.
 
 - Question / scope: change the relative node weights, escaping the common-orbit obstruction, with an efficient compatible NN updater.
 - Mechanism and hypotheses: a genuinely weight-dependent local generator/augmented state, with a normal path and available initialization; no such closed generator is claimed here.
-- Closest registry entries (read in full): IDEA-193, IDEA-378/379 and predecessor spectral-data candidates; LIT-D4-02/03 show broad transformations already exist.
+- Closest registry entries (read in full): IDEA-193, IDEA-378/379 and predecessor spectral-data candidates; LIT-568 / LIT-D4-03 show broad transformations already exist.
 - Separation criterion vs closest entry: explicit new state closure plus conditioning comparison; merely writing independent exponentials is not an algorithm. Failure to supply this closure defers round1.
 - Literature baseline and search limitations: three partial primary readings above are not an exhaustive survey of independent-weight deformations. No claim this route is unknown.
 - Applicable obstructions and exact hypotheses broken: common-ratio obstruction is escaped because factors differ; mixed normality and conditioning remain live. Equal starting measures still invalid.
@@ -113,7 +113,7 @@ Aliases: NN lattice inverse spectrum; second spectral coordinate; integrable spe
 - Mechanism and hypotheses: explicit invertible finite spectral coordinates and a numerically preferable map to NN coefficients; neither is supplied here.
 - Closest registry entries (read in full): IDEA-031/090/117, IDEA-193, IDEA-378/379 and predecessor spectral C2/C4 records.
 - Separation criterion vs closest entry: actual finite coordinates and a bounded conditioning comparison. Renaming recurrence variables as a lattice operator or invoking compatibility erases any distinction.
-- Literature baseline and search limitations: multidimensional Toda/Lax context is known (LIT-D4-01); source Lax proof not read or imported. No new spectral datum is inferred from it.
+- Literature baseline and search limitations: multidimensional Toda/Lax context is known (LIT-567); source Lax proof not read or imported. No new spectral datum is inferred from it.
 - Applicable obstructions and exact hypotheses broken: compatibility cannot create a second input spectrum; common factors leave relative data fixed; full finite normality still required.
 - Novelty gate verdict: duplicate framing unless a new finite parametrization is provided.
 - Cheapest decisive test: write the inverse map and compare its Jacobian/rounding sensitivity on the pinned family; prerequisite not met.

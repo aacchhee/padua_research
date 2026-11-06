@@ -22,7 +22,9 @@ SL is the monic alternating first-e1 four-term path with separately scaled
 beta/gamma/delta fields; equivalence to a diagonally scaled literature output
 is not asserted. Raw results also contain componentwise-input and block-normwise
 input conditions. All three use fieldwise normwise output. Fully componentwise
-output is infinite at a Krawtchouk zero with nonzero sensitivity and is excluded.
+output is infinite for both benchmark families and is excluded: Krawtchouk
+has sensitive b2_(0,0)=0 (also b1_(1,1)=0 atN4); symmetric Hahn w1 gives
+sensitive marginal b1 zeros. No floating near-zero division is substituted.
 
 Krawtchouk normality is proved for all N in the
 [coarse-bound theorem](conditioning-krawtchouk-bound.md). For precisely the
@@ -65,7 +67,7 @@ has exact kappa=4126/25 and a signed maximizing-row witness. See
 Hahn receipt and source pins were independently replayed and every essential
 table cell checked: [independent checks 03](../independent-checks-03.md).
 Full larger-N moment Jacobians and outward enclosures have not been rerun
-independently. Mandatory Claude audit remains pending.
+independently. Completed audit scope is recorded in audit-01.md; response/re-audit process is in LOG.md.
 
 The original N8 G3 finite screen, preserved in the D1 receipt, rejects literal
 constant-product proportionality only on its sampled gaps. It alone says
@@ -95,3 +97,5 @@ informative lower-law subtarget; it does not give the sharp exponential base.
 823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1. Python 3.12.14; mpmath 1.3.0.
 The eight-point round-1 table was checkpointed at f75964b before authorization
 of the full integer round 2. Main derivative code remained frozen across both.
+
+Parent unresolved target: [conditioning-growth-target.md](conditioning-growth-target.md).

@@ -30,4 +30,8 @@ All candidates, including failed/deferred ones, will remain in `candidates-D4.md
 
 After deriving the invariant and before the floating runs, the auxiliary full polynomial state was replaced by layer-ordered evaluation ratios R: evaluating the old NN recurrence at c closes these ratios directly. This removes the need to store node values. The exact determinant/polynomial checks were run first and passed. No claim that the original plan already contained this optimization is intended.
 
-D4-C1a was then specified to the coordinator and native-backward worker before its floating experiment: initialize by binary64 C4 on w/(x+2), restore with common c=-2. Its prospective gate was the campaign's G4 two-family N16 improvement criterion; this dated durable paragraph is recorded after execution, rather than presented as a pre-run timestamp. Both N16 errors worsened, so that fixed design is failed. The transform from rounded accurate source data remains a separate isolation result. D4-C2 is analytically refuted within its common-factor scope; D4-C3 passed only its finite ODE sanity test with oracle initialization; D4-C4/C5 are deferred. Full dispositions and precise limits are retained in `candidates-D4.md`.
+D4-C1a initializes by binary64 C4 on w/(x+2), then restores with common c=-2; its comparison criterion is G4's two-family N16 improvement threshold.
+
+Gate-timing disclosure and AC acceptance (without retrospective clearance): [LOG, 2026-11-06 AC decisions](LOG.md#2026-11-06-ac-decisions).
+
+ Both N16 errors worsened, so that fixed design is failed. The transform from rounded accurate source data remains a separate isolation result. D4-C2 is analytically refuted within its common-factor scope; D4-C3 passed only its finite ODE sanity test with oracle initialization; D4-C4/C5 are deferred. Full dispositions and precise limits are retained in `candidates-D4.md`.

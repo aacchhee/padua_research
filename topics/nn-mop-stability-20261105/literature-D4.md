@@ -1,10 +1,10 @@
 # D4 primary reading and attribution
 
-2026-11-05. Reader: Codex, dispatched gpt-6.1-sol xhigh. Source/rules 823cf6a4. Provisional LIT IDs below are local and unallocated. LITERATURE is attribution, not a local proof status. Existing LIT-567/568 and predecessor assessments are treated as attributed reports by their recorded readers; they do not count as this worker's primary reading.
+2026-11-05. Reader: Codex, dispatched gpt-6.1-sol xhigh. Source/rules 823cf6a4. LIT-567/568 are reused accepted IDs; only Branquinho–Foulquié-Moreno–Mañas 2022 (D4-03) needs a new provisional literature record. LITERATURE is attribution, not a local proof status. Existing LIT-567/568 and predecessor assessments are treated as attributed reports by their recorded readers; they do not count as this worker's primary reading.
 
 Search scope: complete registry headings/aliases/summaries and obstruction/disposition tables; mechanism searches Christoffel/Geronimus/Toda/qd/measure modification/MOP; shortlisted IDEA-031/090/117/193/376–379 and predecessor candidate bodies. `literature/INDEX.md` read before source comparisons. Public fulltexts opened through the web connector; no shell network-policy bypass. Partial reading is itemized below; none of these three sources was inaccessible. No exhaustive priority/novelty conclusion.
 
-## LIT?nn-mop-stability-codex-D4-01 (alias LIT-D4-01)
+## LIT-567 (historical local aliases LIT?nn-mop-stability-codex-D4-01, LIT-D4-01)
 
 Aptekarev, Derevyagin, Miki, Van Assche, *Multidimensional Toda Lattices: Continuous and Discrete Time*, SIGMA 12 (2016), 054. [DOI](https://doi.org/10.3842/SIGMA.2016.054), [primary PDF](https://arxiv.org/pdf/1511.08098v3).
 
@@ -12,7 +12,7 @@ Aptekarev, Derevyagin, Miki, Van Assche, *Multidimensional Toda Lattices: Contin
 - LITERATURE: common Christoffel polynomial transport and common continuous/discrete multiple Toda are established prior constructions. Evaluation nonvanishing is an explicit condition of the Christoffel formula. The source uses exp(-tx); our code uses exp(+tx). Its marginal reduction prevents presenting a transform as a new generic NN reconstruction.
 - Limits: full determinant/Lax proofs were not read; no numerical stability theorem inspected or imported. D4-01/D4-04 contain independent finite-domain derivations. D4-C1/C3 are known mechanisms with a bounded implementation test, not new transformation claims.
 
-## LIT?nn-mop-stability-codex-D4-02 (alias LIT-D4-02)
+## LIT-568 (historical local aliases LIT?nn-mop-stability-codex-D4-02, LIT-D4-02)
 
 Kozhan, Vaktnäs, *Christoffel Transform and Multiple Orthogonal Polynomials*, J. Comput. Appl. Math. 476 (2026), 117121. [DOI](https://doi.org/10.1016/j.cam.2025.117121), [primary PDF](https://arxiv.org/pdf/2407.13946v2).
 

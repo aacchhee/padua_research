@@ -3,9 +3,7 @@
 Rules/source: `823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1`; base/main:
 `b4d292eea5eed373002506d5e16a3761bd7ae10e`. Codex D6/D7 developer,
 gpt-6.1-sol medium as dispatched, 2026-11-05. Exact backend effort metadata
-is not exposed. Gate document and prospective tests were written before the dictionary diagnostic.
-Plan exists. Timing qualification below preserves the registry-scan limit.
-No scientific-priority or exhaustive novelty clearance is claimed.
+is not exposed. No scientific-priority or exhaustive novelty clearance is claimed.
 
 ## Search scope and complete state scan
 
@@ -15,14 +13,7 @@ obstructions, MZ memory/current dispositions, lattice, programme, bivariate
 seed/final registration, PR12, signed MZ, drift, argmax and NN PR22 tables.
 Large initial outputs were truncated, so bounded follow-up reads covered the
 registry ranges rather than treating a truncated first read as complete.
-Timing qualification: most bounded reads and all direct NN predecessor/PD-T057
-reads preceded the diagnostic, but remaining registry alias/summary coverage
-was finally cross-checked afterwards (notably lines 639–679 and 564–589).
-The initial complete-scan assertion was too strong. Final coverage is complete;
-this does not retrospectively establish full prospective novelty-gate compliance.
-No priority claim or fresh algorithm was generated from the later rows; the
-four candidates were prescribed by handoff01. The prewritten exact tests and
-written elementary identities remain independently assessable.
+Gate-timing disclosure and AC acceptance (without retrospective clearance): [LOG, 2026-11-06 AC decisions](LOG.md#2026-11-06-ac-decisions).
 Terms searched across state/IDEAS.md, tracks/bivariate-lanczos/theory,
 topics/nn-mop-iep-20261103 and literature/INDEX.md include graph, coincident,
 Hermite–Padé / hermite.?pad, two copies, boundary, spectral coordinate,

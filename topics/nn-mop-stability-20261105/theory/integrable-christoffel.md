@@ -69,11 +69,11 @@ It requires no degree N+1 polynomial. There are N(N+1)/2 stored vertices and a b
 
 ## Checks
 
-`code/integrable_transport.py --mode exact`: N=4 Krawtchouk and Hahn, 80 NN coefficient fields and 30 determinant identities exact over Fraction, and all polynomial identities through the boundary, passed. Frozen commands/hashes are in `attempts/D4.md`. Finite checks support implementation only; the proof above is independent of their enumeration. Independent checker replay is pending coordinator assignment.
+`code/integrable_transport.py --mode exact`: N=4 Krawtchouk and Hahn, 80 NN coefficient fields and 30 determinant identities exact over Fraction, and all polynomial identities through the boundary, passed. Frozen commands/hashes are in `attempts/D4.md`. Finite checks support implementation only; the proof above is independent of their enumeration. Completed supplementary replay and independent moment comparisons are recorded in [independent-checks-01.md](../independent-checks-01.md#d4-and-d6): the replay passes 80 fields/30 identities; independent Christoffel and Toda comparisons at N4/6, both families, each cover 248 fields.
 
 ## Sources
 
-LIT-D4-01, Proposition 3.2 and Theorem 3.4: known common Christoffel/Geronimus polynomial formulas. LIT-D4-02, introduction and Theorem 3.2 statement: existing transformed-NN algorithm. See `literature-D4.md` for actual partial-primary reading. No novelty of the transformation is claimed.
+LIT-567, Proposition 3.2 and Theorem 3.4: known common Christoffel/Geronimus polynomial formulas. LIT-568, introduction and Theorem 3.2 statement: existing transformed-NN algorithm. See `literature-D4.md` for actual partial-primary reading. No novelty of the transformation is claimed.
 
 ## Scope
 

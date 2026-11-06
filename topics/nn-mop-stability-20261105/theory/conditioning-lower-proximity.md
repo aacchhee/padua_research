@@ -32,8 +32,8 @@ that does not repair the disproved fixed-N upper bound.
 
 ## Status, disposition and dependencies
 
-Overall status: PROVED (written proof; supplementary check requested;
-mandatory Claude audit pending). Candidate disposition: REJECTED: failed
+Overall status: PROVED (written proof; completed checks in independent-checks-02.md
+and audit-01.md). Candidate disposition: REJECTED: refuted
 for the single inverse-minimum-divisor growth mechanism in this exact
 parameter range and input/output metric. This is a scoped negative result,
 not a rejection of NN reconstruction, a sharp conditioning theorem, or
@@ -43,6 +43,14 @@ Dependencies: PD-T286/289, conditioning-local.md, and the elementary
 normality/scalar-polynomial/NN-coefficient derivations in
 conditioning-lower-krawtchouk.md. No primary-source theorem or numerical
 fit is used. The original G3 prediction is preserved, not rewritten.
+
+## Negative-result scope
+
+Attempted mechanism: the pre-registered G3 single inverse-minimum-divisor
+upper/proportionality law. Parameter range: every fixed N>=4, p1=2/5,
+p2=2/5+delta with0<delta<=1/10, the normal common-support binomial data
+and mixed-input/field-sup output metric in the statement. No singular
+endpoint or Hahn conclusion is included.
 
 ## Proof
 

@@ -2,6 +2,8 @@
 
 ID kind: PD-T. Aliases: selectors; Hermite–Padé pair lift; two sheets.
 Split from: none. Split into: none.
+Parent OPEN target: [dictionary-target.md](dictionary-target.md); this is its
+copy/pair sub-target, not an independent solved transfer claim.
 
 ## Statement
 
@@ -51,14 +53,14 @@ restriction or claimed to reproduce the whole NN recurrence. For example,
 on D with its induced weights w1+w2, this compression multiplies by
 w2/(w1+w2), a newly specified scalar ratio, not an NN index shift.
 
-The explicit y²-y annihilator is split into dictionary-obstructions.md;
+The explicit y²-y annihilator is split into dictionary-copy-obstruction.md;
 it does not invalidate these positive selector identities.
 
 ## Checks
 
 Finite selector cancellation was actually checked in dictionary_probe.py;
 see ../attempts/D6.md. No new pair algorithm was implemented or run.
-Independent mathematical audit is pending.
+Completed independent reconstruction is recorded in audit-01.md, priority9.
 
 ## Scope and open items
 

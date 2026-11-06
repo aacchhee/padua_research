@@ -1,9 +1,9 @@
 # NN MOP IEP: conditioning and stable algorithms: log
 
 - Branch: `codex/nn-mop-stability-20261105` · Initial base: main `b4d292e`; reconciled main `5adc3e2` (PR #24 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK (audit-01 findings) · Next: `Codex (gpt-6.1-sol, high): Continue codex/nn-mop-stability-20261105.` · Next handoff: [handoffs/04-response.md](handoffs/04-response.md).
+- Stage: AUDIT (focused response re-audit and full G5 access-attempt audit) · Next: `Claude (Opus 5.5 xhigh): Continue codex/nn-mop-stability-20261105.` · Next handoff: [handoffs/05-reaudit.md](handoffs/05-reaudit.md).
 - Reserved final-ID ranges: T432–471, N=162–177, IDEA530–569, LIT614–629; reservation only, no assignments. See ALLOCATIONS.md.
-- Claims: provisional analytic/exact PROVED and floating MEASURED records in theory/; general solver stability and matching sharp growth remain OPEN. [Claude audit-01](audit-01.md): no BLOCKING; four MAJOR findings to answer.
+- Claims: provisional analytic/exact PROVED and floating MEASURED records in theory/; general solver stability and matching sharp growth remain OPEN. [Claude audit-01](audit-01.md): no BLOCKING; four MAJOR findings answered in [response-01.md](response-01.md); material changes await focused re-audit.
 - Open for AC: none (2026-11-06 decisions below). Ask AC before using Syvert.
 
 ## 2026-11-05 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -95,6 +95,8 @@
 - AC 2026-11-06: storage is a separate cleanup topic; take no cleaning action while the material stays under 10 MB. The topic is 0.58 MB committed; recorded as a NOTE only.
 - Handoff: [handoffs/03-response.md](handoffs/03-response.md).
 
+<a id="2026-11-06-ac-decisions"></a>
+
 ## 2026-11-06 — AC decisions (canonical record) — Claude orchestrator
 
 - AC: "G5: access is allowed. Gates are OK."
@@ -102,5 +104,15 @@
   - Observed at 08:02–08:05 UTC: arxiv.org 200.
   - The SIAM supplement ZIP returned 403 with a Cloudflare bot challenge, a site-side refusal; it was not bypassed.
   - The GitLab tunnel first got CONNECT 403, then opened but closed after about 10 s (`ws_closed_mid_exchange`), so no source was retrieved. G5 is no longer blocked by policy; execution is still pending.
-- **Gate deviations.** AC accepts the D6 gate-timing deviation (novelty-gate-D6-D7.md) and the post-run prospective record of D4-C1a (novelty-gate-D4.md) as disclosed. This is the canonical record for audit-01 MINOR 9. It grants no retrospective prospective clearance or novelty claim.
+- **Gate deviations.** AC accepts the D6 gate-timing deviation (final alias/summary coverage completed after the prescribed background probe; novelty-gate-D6-D7.md) and the post-run prospective record of D4-C1a (its prospective record was written after its first run; novelty-gate-D4.md) as disclosed. This is the canonical record for audit-01 MINOR 9. It grants no retrospective prospective clearance or novelty claim.
 - Redirection: handoff03 superseded by [handoffs/04-response.md](handoffs/04-response.md), which adds G5 as step 6.
+
+## 2026-11-06 — Codex response to audit-01 — requested gpt-6.1-sol high
+
+- Rules and inputs read at `4e87fc0a771fc13c6d5791f0f4c2e746e4eb9a71`; current main/base `be9a8318150204711d5446d2ea26284cf1ed0819` is already an ancestor (ahead14/behind0 at session start). Runtime serving identity/effective effort are not independently exposed. Disjoint record and G5 access helpers used requested gpt-6.1-sol medium. [Pinned source inventory](response-01/source-inputs.json). No new mechanism generation: the task corrects audit findings and preserves five already named deferred candidates, so no new conceptual novelty gate is claimed.
+- [Response01](response-01.md) answers M1–M4 and MINOR1–16. Corrected dictionary arithmetic; scoped platform-dependent binary64 claims; split G/C obstruction records; restored OPEN parent targets; retained all deferred alternatives; expanded the localized NN lemma and continuity argument; made the exact verifier enforce source pins with explicit exceptions. No final IDs/shared registries or auditor-owned files changed. Existing edited prose pins are refreshed in the same output commit.
+- M3: original Nov5 temporary witness files are unavailable here. A fixed, untuned160-dps rerun creates a clearly dated new response reference, not recovery of historical bytes. The committed113,095-byte JSON pins all12 complete N4/N8 targets and rational witnesses. The checker reads this committed identity without running the optimizer. [Evidence and limitations](evidence/README.md).
+- Actually executed dictionary probe (determinant46, moments and solution agree); normality verifier (61 sizes/43,676 checks, all source pins); projection export and separate exact checker (12 cases/1,104 coefficient fields/348 normality systems, six N4 gradient checks). Corrupted payload and source pin fail normally and under Python-O; changed projection reference fails under-O. [Check receipt](response-01/checks.json). These response runs are developer verification, not independent actor approval; no conditioning sweep or algorithm retuning was needed.
+- G5 remains technically BLOCKED in this executor after the authorized retry: enabled-network GitLab Leuven/SIAM/arXiv GETs receive proxy CONNECT403, while Debian control succeeds; bounded public web routes expose no source archive. [Actual attempts](response-01/g5-access.md). No source retrieved, external runtime installed, external algorithm executed, or reproduction claimed. No access-control bypass, storage cleanup or Leuven contact.
+- Stage → AUDIT for focused material-change review and full review of the new G5 access attempt; earlier accepted claims remain as supported by audit01. The conditioning-growth and general stable-solver targets remain OPEN. No readiness/merge request. Only AC merges.
+- Handoff: [handoffs/05-reaudit.md](handoffs/05-reaudit.md), using the next unused number because04 is the current response handoff; its numbering typo is not copied.

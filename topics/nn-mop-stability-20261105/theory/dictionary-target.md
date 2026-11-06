@@ -42,7 +42,8 @@ used as local proofs. PD-T069 supplies no universal MOP-lift obstruction.
   elementary identity in dictionary-graph.md. Literal degree-two embedding
   fails at a displayed four-node input (dictionary-obstructions.md).
 - Two sheets: selectors exactly encode both measures; y multiplication
-  leaves the scalar diagonal subspace, and y²-y gives a Pi_2 null vector.
+  leaves the scalar diagonal subspace, and y²-y gives a Pi_2 null vector
+  ([separate C record](dictionary-copy-obstruction.md)).
   Positive quotient/vector interpretations remain available.
 - Hermite–Padé pair: selector encoding is equivalent background at this
   stage; no new graded NN or stable bivariate algorithm follows.
@@ -58,7 +59,9 @@ used as local proofs. PD-T069 supplies no universal MOP-lift obstruction.
 
 Actual first-round Fraction diagnostic and its hashes: ../attempts/D6.md.
 No lattice matrix, new boundary extension or stable bivariate algorithm
-was executed. Independent check and Claude audit pending.
+was executed. Completed independent checks are recorded in
+[independent-checks-01.md](../independent-checks-01.md) and
+[audit-01.md](../audit-01.md), priority9.
 
 ## Scope / open items
 

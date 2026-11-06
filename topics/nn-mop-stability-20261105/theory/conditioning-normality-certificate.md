@@ -1,7 +1,9 @@
 # PD-T?nn-mop-stability-codex-D1-04 — noncircular interior-d normality criterion
 
 ID kind: PD-T. Aliases: scalar exact C4 normality certificate; opposite-corner
-converse. Split from: finite Hahn verification. Split into: none.
+converse. Split from: none. Supporting reduction for the separate finite
+Hahn verification; the application is not a split-off conjunct of this theorem.
+Split into: none.
 
 ## Statement
 
@@ -21,7 +23,7 @@ The algorithm stops before the terminal coefficient layer N−1.
 
 ## Status by part
 
-Overall status: PROVED (written analytic implication; independent audit pending).
+Overall status: PROVED (written analytic implication).
 Finite execution of the Fraction checker is distinct evidence, recorded in
 attempts/D1.md. No all-N Hahn-family theorem is inferred from finite runs.
 Candidate disposition: retained standard determinant/normality converse.
@@ -56,13 +58,32 @@ eta+e1 by the next second-measure row/column. The Schur complement is
 h_(eta+e1,2), up to the harmless row-order sign. Its nonzero value makes
 the opposite-corner matrix normal.
 
-Induct on target degree k=2,...,N. Assume normality through k−1. The
-localized exact reconstruction proof computes true coefficients through
-degree k−2: every polynomial successor required has degree<=k−1;
-producing layer t<=k−2 divides only by d at degree<=t−1, whose opposite
-corners have degree<=t+1<=k−1 and hence are normal. This is precisely the
-induction in PD-T289, with its unused common-support terminal statement
-omitted; no normality at degree k has entered.
+**Localized NN lemma.** Suppose all indices of degree<=R are normal.
+Then the defining moment polynomials give the NN identities at |nu|<=R-1
+and the compatibility squares at |eta|<=R-2, without assuming any higher
+normality. To see the first assertion, cancel the two highest coefficients
+of xP_nu-P_(nu+e_j) using b=t_nu-t_(nu+e_j). The residual has degree
+<=s-1 for s=|nu| and annihilates the s-2 common lower moment rows when
+nu has two positive coordinates. These rows are independent by normality
+of nu-e1-e2; their kernel on polynomials of degree<=s-1 has dimension2.
+The two predecessor polynomials form a basis: if they coincided, their
+monic common value would satisfy all nu conditions in degree<s,
+contradicting normality at nu. Pairing with each next moment gives the
+h-ratio coefficients. On an axis the same kernel has dimension1 and the
+absent coefficient is zero; at degree0 there is no residual. Successor
+differences follow from the one-dimensional kernel at nu. Comparing the
+two NN expansions around a square based at eta uses polynomials only
+through degree |eta|+2, proving the localized compatibility formulas.
+
+Consequently the layer induction computes true coefficients through R-1:
+producing layer t<=R-1 uses squares based at degree t-1, polynomials
+through t+1<=R, and divisors whose opposite corners have degree<=t+1.
+All nonzero-denominator/independence uses are therefore within the stated
+normal domain. No common-support terminal equality is used in this lemma.
+
+Induct now on target degree k=2,...,N, assuming normality through k-1.
+Apply this lemma with R=k-1 to obtain true coefficients through k-2.
+In particular no normality at degree k has entered the reconstruction.
 
 For each mixed target nu=(n,m) of degree k, let eta=(n−1,m−1). Its degree
 is k−2, so the computed d_eta is the true successor difference under the
@@ -91,10 +112,12 @@ Hahn family and independent of floating derivative precision convergence.
 
 The finite N=4,...,64 Hahn application and separate independent replay are
 complete in [conditioning-hahn-normality-finite.md](conditioning-hahn-normality-finite.md).
-Mandatory Claude audit remains pending. A direct all-N Hahn-family normality
+A direct all-N Hahn-family normality
 proof is outside this certificate theorem.
 
 ## History
 
 2026-11-05, D1 round2 after checkpoint f75964bd71336aee2a05f4ebb39eb31215be360a;
 Codex gpt-6.1-sol xhigh. The original round1 local/coarse proofs are unchanged.
+
+2026-11-06: audit-01 MINOR11 makes the localized lemma and degree bounds explicit; the certificate statement and finite input/table data are unchanged.

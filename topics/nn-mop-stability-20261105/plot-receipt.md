@@ -63,3 +63,11 @@ The full-grid PNG was visually inspected: both family titles, NN/monic step-line
 | `/tmp/nn-mop-conditioning-plots-full/conditioning-fullgrid61-manifest.json` | 3384 | `642b4c5606323a7bc72566331f53e273c11ee1d7730222e7bec56f4a1cab147f` |
 
 All PNG/PDF/SVG exports and their manifest remain local under `/tmp/nn-mop-conditioning-plots-full/`, off Git. Existing sampled exports are preserved. No D2 scientific files, shared files or Git state were changed.
+
+## Response prose-pin maintenance — 2026-11-06
+
+The historical commands above identify their original proof version atff783d5.
+Response parent links/completed-check metadata change that prose file's current
+SHA-256 to `d3e284444d7caad48d20b01e4da0966bd9fd2c78b6dae307b39e860fe4cde0b3`; formulas(1),(2),(13) are unchanged. A future rerender against
+the edited record must pass this current value to --bound-sha256. No numerical
+data or figure was reselected/rerendered for a metadata-only correction.

@@ -28,7 +28,8 @@ def main():
     root = topic.parents[1]
     paths = sorted(list((topic / 'code').glob('*.py')) +
                    list((topic / 'theory').glob('*.md')) +
-                   list(topic.glob('independent-checks*.md')))
+                   list(topic.glob('independent-checks*.md')) +
+                   list((topic / 'evidence').glob('*.json')))
     rows = [[str(p.relative_to(root)), *identity(p)] for p in paths]
     source = topic / 'input-snapshot.json'
     record = dict(

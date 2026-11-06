@@ -1,6 +1,6 @@
 # NN MOP conditioning and numerical stability
 
-Stage: AUDIT; bounded development outputs complete, mandatory Claude audit PENDING. This report uses provisional IDs. Source/rules: `823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1`; initial base main: `b4d292eea5eed373002506d5e16a3761bd7ae10e`; reconciled main: `5adc3e2b7226e2c3c5577335058823a8e5cc3629`. [Draft PR28](https://github.com/aacchhee/padua_research/pull/28).
+Stage: AUDIT; [audit-01](audit-01.md) supported the claimed statuses and returned four MAJOR and16 MINOR findings. [Response01](response-01.md) addresses them; material corrections await focused Claude re-audit, with full audit of the new G5 access attempt. Provisional IDs only. Current response rules/source: `4e87fc0a771fc13c6d5791f0f4c2e746e4eb9a71`; main/base `be9a8318150204711d5446d2ea26284cf1ed0819` is already an ancestor. Original campaign inputs remain pinned in input-snapshot.json. [Draft PR28](https://github.com/aacchhee/padua_research/pull/28).
 
 ## What the campaign establishes
 
@@ -16,7 +16,7 @@ There are N common distinct nodes and two positive weights, with the full mixed 
 
 The exact derivative formula is a weighted Jacobian row sum. The implementation evaluates all 3N columns and also extracts the alternating monic four-term step-line map, with its own field scales. This is not automatically the scaled Hessenberg metric used in LIT-347. Fully componentwise output conditioning is infinite when a coefficient is exactly zero with nonzero sensitivity; it is not estimated by dividing by a floating near-zero.
 
-Written analytic proofs are labelled PROVED at developer stage, pending independent Claude audit. Floating tables, optimization results and precision agreement are MEASURED. The analytic derivative algorithm is proved; numerical evaluations are not outward enclosures. Separate exact Fraction checks independently verify small Jacobians, finite identities and normality certificates. No fitted growth rate is promoted to a theorem.
+Written analytic proofs labelled PROVED were supported within audit-01’s declared scope; the localized response proof corrections await focused re-audit. Floating tables, optimization results and precision agreement are MEASURED. The analytic derivative algorithm is proved; numerical evaluations are not outward enclosures. Separate exact Fraction checks independently verify small Jacobians, finite identities and normality certificates. No fitted growth rate is promoted to a theorem.
 
 ## D1: conditioning
 
@@ -48,7 +48,7 @@ An alternating path alone loses information about the second functional; the dia
 
 [D3](attempts/D3.md) implements two designs: mixed solves in an orthogonal coefficient basis, and node-space constraint QR. LU/QR/SVD variants and failed large-N behavior are retained. These are known defining-system reformulations, without a historical novelty claim.
 
-At N=8, the orthogonal-basis LU errors are about 3.096e-12 (Krawtchouk) and 4.238e-10 (Hahn), improving C4 by 2.78 and 2.79 decimal digits in regimes with `kappa u < 1e-4`. This satisfies the forward-accuracy threshold. It does not establish strict joint backward stability. At N=16 both designs avoid the prescribed two-family kill; some larger cases still lose all accuracy.
+At N=8, the orthogonal-basis LU errors are about 3.096e-12 (Krawtchouk) and 4.238e-10 (Hahn), improving C4 by 2.78 and 2.79 decimal digits in regimes with `kappa u < 1e-4`. This satisfies the forward-accuracy threshold. It does not establish strict joint backward stability. At N=16 A-LU and B avoid the prescribed two-family kill; A-QR/SVD are separate variants with gains0.97/1.21 in the cited limiting case, not a blanket two-digit improvement. Some larger cases still lose all accuracy.
 
 [D5](attempts/D5.md) proves that normalized masses and ordered nodes make the actual NN image an analytic embedded manifold of dimension 3N−2. Both complete marginal axes provide a smooth spectral left inverse. A frozen positive-definite coefficient norm has a unique nearest compatible point locally, with the stated pseudoinverse derivative. This concerns the actual common-data image, not an arbitrary flatness variety.
 
@@ -64,9 +64,9 @@ The particular predivide-C4-restore solver is killed by G4 at N=16: E is about .
 
 ## D6 and D7
 
-[D6](attempts/D6.md) proves a positive graph encoding: put `y_l=w2_l/w1_l` and graph mass `w1_l`. The two MOP test families become `x^k` and `y x^k`. This elementary identity does not identify the whole NN triangle with standard total-degree bivariate orthogonal sections. Exact standard-grade and two-sheet obstructions are scoped to those literal dictionaries. A faithful recurrence dictionary and stable transfer to Padua remain OPEN. The worker explicitly discloses that some registry-summary coverage was completed after the prescribed background probe; no retrospective prospective novelty clearance is claimed.
+[D6](attempts/D6.md) proves a positive graph encoding: put `y_l=w2_l/w1_l` and graph mass `w1_l`. The two MOP test families become `x^k` and `y x^k`. This elementary identity does not identify the whole NN triangle with standard total-degree bivariate orthogonal sections. Exact standard-grade and two-sheet obstructions are scoped to those literal dictionaries. A faithful recurrence dictionary and stable transfer to Padua remain OPEN. [Gate chronology and AC decision](LOG.md#2026-11-06-ac-decisions).
 
-[D7](attempts/D7.md) and [external-code.md](external-code.md) identify the public repository and publisher supplement, but retrieval is blocked by CONNECT403 in enabled-network execution; the web connector rejects the ZIP format. Octave is absent and installation was not attempted while source retrieval was blocked. G5 was not run, and no paper configuration or external implementation was reproduced. No contact with Leuven was made. [note-outline.md](note-outline.md) is a preliminary outline for AC, not a message.
+[D7](attempts/D7.md) and [external-code.md](external-code.md) identify the public repository and publisher supplement. The authorized response retry still receives proxy CONNECT403 for GitLab Leuven/SIAM/arXiv in this executor; a Debian control succeeds. Bounded public web routes expose no source archive, and the web connector rejects the ZIP format. [Access receipt](response-01/g5-access.md). No source was retrieved, Octave installed, external algorithm run or paper configuration reproduced. No Leuven contact. [note-outline.md](note-outline.md) remains a preliminary outline for AC.
 
 ## Gates, reproducibility and next step
 
@@ -74,4 +74,11 @@ The particular predivide-C4-restore solver is killed by G4 at N=16: E is about .
 
 The [input inventory](input-snapshot.json) pins fetched repository files. Code and small essential evidence are committed. Regenerable raw data stay in local working storage, with commands/hashes in direction receipts; no cold-storage delivery is claimed. The connector-author exception was explicitly authorized by AC. Source imports were restored byte-for-byte after correcting a materialization-only final newline.
 
-The full grid, figures, code identities and three supplementary check reports are complete. Hand the exact scientific output SHA to Claude Opus 5.5 xhigh under handoff02. Shared registries and final IDs wait for audited preparation. Only AC merges. All unfinished scientific targets and blocked external execution remain explicit rather than being labelled PARTIAL on the strength of supporting results.
+The full grid, figure receipts and three supplementary reports were reviewed by audit-01. Response checks pass the61-size exact normality verifier and12-case committed projection reference (six exact N4 gradients); corrupted identities fail normally/under-O as documented. Original temporary projection witnesses are unavailable; the new113,095-byte fixed-configuration reference is explicitly a response rerun, with platform-dependent measurements and no historical-byte recovery claim. [Evidence](evidence/README.md), [response checks](response-01/checks.json). Hand the response output SHA to Claude Opus 5.5 xhigh under [handoff05](handoffs/05-reaudit.md). Shared registries and final IDs wait for audited preparation. Only AC merges. All unfinished scientific targets and blocked external execution remain explicit rather than being labelled PARTIAL on the strength of supporting results.
+
+## G2 convention and margin (audit-01 MINOR15)
+
+G2's HahnN8 antecedent is narrow: E/(kappa*u)=100.6929, or2.003 excess
+digits, only about0.7% above100. With epsilon=2^-52 instead of the
+pre-registered u=2^-53, no baseline case would trigger that antecedent.
+The convention in plan.md is retained; no run/threshold was re-selected.

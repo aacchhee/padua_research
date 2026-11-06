@@ -113,7 +113,11 @@ DG(y0) A=I, so A is injective and has rank3N-2. The same spectral inverse
 also proves global injectivity of F on D. Choose 3N-2 independent rows of
 A. Their coordinate projection composed with F has nonsingular derivative;
 the analytic inverse function theorem expresses F(D) locally as a graph
-over those coordinates. This proves the embedded manifold statement.
+over those coordinates. The topology assertion uses continuity of the same spectral left inverse:
+if F(p_j) tends to y0 for inputs anywhere in D, then p_j=G(F(p_j)) tends
+to p0. Thus no distant part of the image accumulates at y0. This is also
+the exclusion argument detailed in the nearest-point paragraph below.
+This proves the embedded manifold statement.
 An explicit local compatibility equation is
 
     y = F(G(y)).
@@ -183,3 +187,5 @@ OPEN. Supporting geometry does not label that stability target PARTIAL.
 define/prove local full joint-data well-posedness and separate approximate
 compatibility. The theorem addresses that geometry; its algorithmic
 stability application remains a distinct target.
+
+Parent unresolved target: [stable-solver-target.md](stable-solver-target.md); supporting results do not establish its general stability conclusion.

@@ -51,7 +51,15 @@ Mechanism: differentiate the defining moment equations, h ratios and t
 differences; evaluate the same derivative efficiently through exact C4
 algebra with full 3N-column forward AD. Normality and positive field scales
 are explicit assumptions. Closest predecessors: IDEA090/117/379,
-PD-T286/289 and PD-T136/137. Separation: the precise coefficient-output
+PD-T286/289 and PD-T136/137. Fischer 1998 (LIT-113/365) already
+differentiates univariate recurrence coefficients with respect to nodes and
+weights; Fischer 1996 (LIT-112) is the modified-moment conditioning
+predecessor. These are coverage-qualified literature reports, not fresh
+primary verification. Related registry precedents IDEA-012/087/088 are
+retained as context (IDEA-012 concerns alternative bivariate patterns;
+IDEA-087/088 concern Fischer-type conditioning). IDEA-090's block-Krylov
+angle mechanism remains deferred. These record corrections generate no new
+mechanism. Separation: the precise coefficient-output
 map and input scales differ from the existing span quotient; renaming
 known differentiation is not a new mechanism. Verdict: standard variant.
 Cheapest kill test: independently differentiated moments disagree at N4,
@@ -74,7 +82,7 @@ constants in this exact map/domain, not a new abstract perturbation method.
 Kill test: a missing normality, invalid height denominator, zero field scale
 or incorrect h bound invalidates the proof. Verdict: standard coarse variant.
 Actual result: written proof in theory/conditioning-krawtchouk-bound.md.
-Disposition: retained PROVED supporting bound, pending independent audit.
+Disposition: retained PROVED supporting bound.
 It neither proves a sharp rate nor silently closes the original growth target.
 
 ### IDEA?nn-mop-stability-codex-D1-03 — a single inverse-divisor mechanism
@@ -90,9 +98,12 @@ variation kills this simple finite-screen description. Actual Krawtchouk
 product changes from2.74e4 to8.49e11 over p gaps.1 to.005; Hahn products
 change from8.68e4 to6.86e3 over beta gaps.5 to.025. Disposition: the literal
 constant-product description fails over the sampled gaps; no universal
-negative theorem or asymptotic exponent is inferred. No PD-N is allocated
-for this finite diagnostic. Interpreting all growth as one inverse divisor
-is abandoned; complete sensitivity remains retained.
+negative theorem or asymptotic exponent is inferred. This finite diagnostic is consolidated with D1-hard-03, whose later
+fixed-N proximity theorem in [conditioning-lower-proximity.md](theory/conditioning-lower-proximity.md)
+provides the PROVED scoped negative result PD-N?nn-mop-stability-codex-D1-hard-01.
+The earlier no-PD-N/abandoned disposition applied only to this finite screen
+and is superseded by that analytic refutation; the sampled values remain
+historical measurements, not its proof. Complete sensitivity remains retained.
 
 ### IDEA?nn-mop-stability-codex-D1-04 — sharp exponential growth law
 
@@ -152,7 +163,7 @@ The finite Hahn claim is now its own PROVED finite computer-assisted theorem,
 conditioning-hahn-normality-finite.md. All61 exact input/coefficient hashes,
 43,676 interior checks, source pins and written reduction were independently
 replayed and separately table-parsed in independent-checks-03.md. This closes
-preciselyN4..64, not allN. Mandatory Claude audit remains pending.
+preciselyN4..64, not allN; completed independent coverage is recorded in audit-01.md.
 
 The separately allocated hard-step worker also supplied a written fixed-N
 Krawtchouk proximity obstruction in conditioning-lower-proximity.md. That

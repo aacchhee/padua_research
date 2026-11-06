@@ -1,6 +1,7 @@
 # External-code provenance and G5 access state
 
 2026-11-05, Codex D7 developer, dispatched gpt-6.1-sol medium.
+Current response check: 2026-11-06; see the dated addendum below.
 Rules/source `823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1`.
 Status: **BLOCKED — source bytes unavailable; no external comparison run**.
 
@@ -19,7 +20,7 @@ This is catalogue metadata inspected on the publisher page, not code inspection.
 The ZIP's identity cannot be substituted for a Git commit without recording
 its actual hash and file list after download.
 
-## Actual access checks
+## Historical access checks (2026-11-05)
 
 Default-sandbox curl could not reach inherited proxy:8080 (exit 7).
 Network-enabled execution, preserving proxy and CA, then established the
@@ -87,3 +88,39 @@ unzip -l /tmp/nn-mop-stability-supp_materials.zip
 
 An exact Octave driver command cannot honestly be fixed until the archive is
 read. Do not invent entry-point arguments or claim a completed compatibility test.
+
+## 2026-11-06 response check — current runtime remains blocked
+
+AC's retrieval and execution authorization is recorded once in
+[LOG.md](LOG.md) (the
+2026-11-06 canonical decision entry). Authorization does not change the active
+runtime policy. The current Codex runtime has current observations and an
+**enforced restricted package_managers preset**, with no custom allowed hosts;
+GitLab Leuven, SIAM and arXiv are excluded. It differs from the Claude personal
+environment described in handoff04. The cloud plugin exposes status and
+read-only diagnostics here, with no callable configuration mutation workflow.
+
+At 08:25:51 UTC, fresh enabled-network GET requests to the exact GitLab project,
+SIAM supplement ZIP and arXiv HTML all received proxy CONNECT `403 Forbidden`,
+with curl `--fail` exit **22**, `http_code=000` and zero downloaded bytes.
+The enabled-network Debian control returned HTTP 200 and 6153 bytes. Proxy and
+CA settings were preserved. These are current runtime policy refusals, not an
+observed Cloudflare challenge or an upstream reset. No source was obtained.
+
+The supported web connector read the arXiv HTML and publisher catalogue. GitLab
+returned only a project title/Loading shell; raw README probes (main/master),
+master tree, recursive repository API and a raw IEP_CORE.m probe were
+inaccessible. The publisher's actual ZIP link returned `400 Unsupported
+content-type: application/zip`. Bounded web and GitHub connector searches found
+no usable mirror. The official Momentum software page's “github” label points
+to the same GitLab project. These searches do not prove no mirror exists.
+
+Fresh `command -v matlab`, `command -v octave` and `command -v octave-cli`
+checks found no executable. No installation was attempted with source retrieval
+blocked; Octave installability and toolbox compatibility remain untested.
+**G5 remains BLOCKED by current runtime source retrieval**, not by absent AC
+authorization. No source configuration, solver, paper accuracy or topic metric
+was executed. The original paper-configuration-first gate remains in force.
+Exact commands, observations, receipt hashes and remaining work are in
+[response-01/g5-access.md](response-01/g5-access.md). No third-party source,
+text or PDF is added to Git, and no storage cleanup was performed.

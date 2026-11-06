@@ -30,7 +30,7 @@ the x_l are distinct; no bound on its degree beyond N-1 is asserted.
 
 ## Status by part
 
-Overall status: PROVED, elementary analytic identity (developer; audit pending).
+Overall status: PROVED, elementary analytic identity (developer).
 This supporting encoding does not turn the broader OPEN dictionary/transfer
 target into PARTIAL. Candidate graph encoding retained; literal total-degree
 identification has the separate scoped obstruction below.
@@ -52,7 +52,7 @@ Gram matrices require injectivity of their evaluation map, a separate condition.
 
 ../code/dictionary_probe.py checks one rational four-node instance; its finite
 observations are MEASURED support only, not premises of this written proof.
-Exact command, hashes and limits: ../attempts/D6.md. Independent audit pending.
+Exact command, hashes and limits: ../attempts/D6.md. Completed independent reconstruction: audit-01.md, priority9.
 
 ## Sources and scope
 

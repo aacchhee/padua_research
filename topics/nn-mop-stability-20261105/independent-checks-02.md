@@ -110,8 +110,8 @@ correctly calls its fit a numerical stationary candidate, not a certified
 nearest minimizer. The separate written local geometry theorem does not
 by itself certify this optimization's convergence neighborhood or output.
 
-I independently executed the N4 fits at 160 digits for LU/nodeqr and both
-families. All four returned rational inputs exactly equal the developer's
+I separately executed the developer's N4 fit implementation at160 digits
+for LU/nodeqr and both families; the optimizer was not independently implemented. All four returned rational inputs exactly equal the developer's
 frozen receipts. For each, independent Fraction defining moments solved
 all 14 systems through degree4, reconstructed all 40 coefficient entries
 and their Jacobian, checked order/positivity/unit masses, and formed the
@@ -240,3 +240,12 @@ final revisions; their prior hashes identify the earlier comparison rather
 than current path contents. My initial projection.json and final
 projection-final.json are both retained separately in /tmp. Dependency
 hashes were checked before and after the final run and remain unchanged.
+
+## 2026-11-06 clarification for audit-01 MINOR10
+
+The fit execution above reran the developer's fit implementation in a
+separate execution; it was not an independently implemented optimizer.
+The defining-moment rebuild, objective and gradient were independent
+formulations. Original observations/hashes remain historical. The later
+M3 response pins a new reference dataset because the Nov5 /tmp witnesses
+are absent; it does not retroactively supply their missing identities.

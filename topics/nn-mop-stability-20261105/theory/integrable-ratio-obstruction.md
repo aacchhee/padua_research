@@ -48,11 +48,11 @@ For a concrete restricted-family interpretation, binomial/Krawtchouk weights at 
 
 ## Checks
 
-Analytic proof; no experimental premise. Actual primary literature coverage and computation receipts are in adjacent D4 files. Independent review pending.
+Analytic proof; no experimental premise. Actual primary literature coverage and computation receipts are in adjacent D4 files. Completed supplementary proof review is recorded in [independent-checks-01.md](../independent-checks-01.md#d4-and-d6), including the common-factor restriction; it adds no experimental premise.
 
 ## Sources
 
-No external theorem used. LIT-D4-01 common flow and LIT-D4-03 more general mass-adding transformations supply context only; the latter's added masses are explicitly excluded.
+No external theorem used. LIT-567 common flow and LIT-D4-03 more general mass-adding transformations supply context only; the latter's added masses are explicitly excluded.
 
 ## Scope
 

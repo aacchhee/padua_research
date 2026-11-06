@@ -2,7 +2,7 @@
 
 ID kind: PD-T. Aliases: NN Jacobian; mixed componentwise-input conditioning;
 fieldwise coefficient sup metric; monic step-line derivative.
-Split from: D1 growth-law target (OPEN). Split into: none.
+Split from: [D1 sharp growth target](conditioning-growth-target.md), OPEN. Split into: none.
 
 ## Statement
 
@@ -44,7 +44,11 @@ Fully componentwise *output* conditioning is instead max_j
 sum_i|J_ji|s_i/|F_j|, with 0/0=0 only when the numerator is zero. A zero
 coefficient with nonzero sensitivity makes it infinite. For the Krawtchouk
 p2=1/2 inputs, b2_(0,0)=0 and its weight derivative is nonzero, so this
-full-output condition is infinite. Floating values close to zero cannot
+full-output condition is infinite. Hahn also has an infinite fully
+componentwise output condition: its symmetric first weight gives zero b1
+on every marginal-axis site, with nonzero sensitivity already at(0,0).
+Krawtchouk has sensitive interior zeros too, for example b1_(1,1)=0 atN4.
+Floating values close to zero cannot
 be used as substitutes for an exact zero classification.
 
 ## Assumptions
@@ -56,7 +60,7 @@ mpmath, which gives measured approximations, not certified enclosures.
 
 ## Status by part
 
-Overall status: PROVED (written analytic proof; independent audit pending).
+Overall status: PROVED (written analytic proof).
 The conditioning table and any inferred growth law are separate records.
 Candidate disposition: retained standard derivative specialization; no
 historical novelty or algorithmic stability claim.

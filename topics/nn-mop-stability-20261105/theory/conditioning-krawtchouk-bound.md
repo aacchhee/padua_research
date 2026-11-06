@@ -2,7 +2,7 @@
 
 ID kind: PD-T. Aliases: rational-height NN bound; exponential Chebyshev
 normality; finite all-N conditioning upper bound.
-Split from: D1 sharp growth-law target (OPEN). Split into: none.
+Split from: [D1 sharp growth target](conditioning-growth-target.md), OPEN. Split into: none.
 
 ## Statement
 
@@ -32,7 +32,7 @@ allowed locally. These input perturbations can leave the binomial family.
 
 ## Status by part
 
-Overall status: PROVED (written proof; independent audit pending).
+Overall status: PROVED (written proof).
 Candidate disposition: retained coarse standard rational-height variant;
 no novelty claim. This bound is not offered as a sharp D1 growth theorem.
 

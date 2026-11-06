@@ -2,7 +2,7 @@
 
 ID kind: PD-T. Aliases: alternating binomial weight witness; terminal Hermite
 interpolation; explicit Krawtchouk sensitivity growth.
-Split from: D1 sharp-growth target. Split into: none.
+Split from: [D1 sharp growth target](conditioning-growth-target.md), OPEN. Split into: none.
 
 ## Statement
 
@@ -44,8 +44,8 @@ and for the fixed-mass restriction with the same coordinate bounds.
 
 ## Status and dependencies
 
-Overall status: PROVED (written analytic proof; independent supplementary
-check requested, mandatory Claude audit pending). No computation is a
+Overall status: PROVED (written analytic proof; completed independent checks in
+independent-checks-02.md and audit-01.md, priority1). No computation is a
 premise. Retained quantitative continuation of the existing D1 growth
 candidate; no priority claim. The sharp exponential rate and a matching
 useful upper bound remain OPEN in the original target.

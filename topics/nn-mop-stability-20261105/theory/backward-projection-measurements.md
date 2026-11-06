@@ -1,5 +1,18 @@
 # PD-T?nn-mop-stability-codex-33 — full common-data stationary fits
 
+## Binary64 provenance — response dated 2026-11-06
+
+All binary64 measurements in this record, including displayed errors, gains,
+fit metrics, condition estimates, diagnostics and precision-stall outcomes,
+are platform-dependent. Historical values below are retained from the
+producer platform: Python 3.12.14, NumPy 2.3.5, SciPy 1.17.0, mpmath 1.3.0.
+Runs are deterministic on the recorded platform; this does not promise
+bitwise reproduction on another numerical stack. The audit platform
+(Python 3.13.18, NumPy 2.5.3, SciPy 1.18.1, mpmath 1.4.1) gave Krawtchouk
+N4 nodeqr eta_c = 30.78u, still <100u. N4 native mixed pairs remain below
+100u and N8 native pairs still fail that threshold. No run was reselected
+or retuned; historical tables and their receipt identities are preserved.
+
 ID kind: PD-T. Aliases: whole-array Gauss–Newton shadow witness; positive
 common-data fit. Split from: none. Split into: none.
 
@@ -14,7 +27,7 @@ entire coefficient triangle was rebuilt from each such input.
 
 For N4 native LU, the measured input perturbations are0.98455u (Kraw)
 and1.57883u (Hahn), and whole-array corrections are1.93038u and3.06170u.
-For N4 nodeqr, both components are below30u on both families. The frozen
+For N4 nodeqr, both components are below100u on both families. The frozen
 C4 N4 correction is877.04u/5599.74u under this fit. N8 native corrections
 and input perturbations exceed100u. These are finite feasible mixed pairs,
 not a stability theorem, certified nearest points, or finite strict
@@ -110,16 +123,19 @@ with leading structural zeros gave normal-equation residual5.90e-100;
 a centered finite difference for the first N4 Kraw weight logit, step1e-30,
 agreed with the complete analytic coefficient derivative within2.96e-58.
 These are developer diagnostics, not independent proof or error bounds.
-The separate checker then replayed all four N4 LU/nodeqr160dps fits,
-obtaining exactly the same rational witnesses. Exact defining-moment
-arithmetic rebuilt all40 coefficient fields per case and checked positivity,
+The separate checker then re-executed the developer's own fit code for
+all four N4 LU/nodeqr160dps cases, obtaining the same rational witnesses on
+the recorded platform. Its independent exact defining-moment formulation rebuilt all40 coefficient fields per case and checked positivity,
 ordering, mass1, all14 normality systems, the full residual/SPD objective,
 and the input/field correction metrics. It also checked the rational chart
 stationarity squared<1e-100 exactly; displayed stationarity norms are
 8.34e-54,7.29e-55 (Kraw LU/nodeqr),9.39e-53,3.40e-53 (Hahn). These
 rounded witnesses do not meet the pre-rounding1e-55 optimizer threshold;
 the returned flag must retain its stated unrounded-iterate meaning.
-No independent N8 replay or nearest-minimum certification is claimed.
+The original N8 witness reconstructions are reported in audit-01.md.
+The newly committed response reference has a separate developer-executed
+exact checker; its focused re-audit remains in LOG.md. No global nearest
+minimum is certified.
 
 The final producer uses the explicit fields `optimizer_stationarity_converged`,
 `optimizer_history`, `optimizer_iterations` and `optimizer_stop_reason`
@@ -145,7 +161,8 @@ This final rerun additionally compares the returned180dps stationarity
 with the independent exact rational calculation. All four scientific
 case payloads agree with the first independent execution. The separate
 report preserves that earlier raw identity and the reporting-fix history.
-This is independent execution and exact finite witness reconstruction,
+This is separate execution of the developer fit code and independent exact
+finite witness reconstruction,
 not an independent audit of every analytic theorem.
 
 Commands, input/source hashes, raw byte receipts and environment appear
@@ -168,3 +185,7 @@ nearest fit or a uniform stable algorithm require explicit new work.
 929ef787c74afc2bedcc8327d44dddc2c3409f46; coordinator explicitly authorized
 the round2 full-Jacobian N4/8 fits. Old code was frozen; this separate
 script implements candidate C's already recorded full-image fit.
+
+Parent unresolved target: [stable-solver-target.md](stable-solver-target.md); supporting results do not establish its general stability conclusion.
+
+Response M3 reference: [projection-reference.json](../evidence/projection-reference.json) and [reference provenance](../evidence/README.md). This is a new fixed-configuration response run, not recovery of the missing original temporary bytes.

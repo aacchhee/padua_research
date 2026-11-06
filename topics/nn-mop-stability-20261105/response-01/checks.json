@@ -1,0 +1,78 @@
+{
+  "source_commit": "4e87fc0a771fc13c6d5791f0f4c2e746e4eb9a71",
+  "normality": {
+    "baseline_sha256": "9ce76ae88fb798f73127f75819bcdfb6c7bffb0d9cd092d70957164cb9b6a2e8",
+    "checker_sha256": "485095acbd5712b571ed53e74ef343479dad13700d47797a27573a19d24d2c0c",
+    "code_pins_verified": true,
+    "exact_interior_checks": 43676,
+    "graph_sha256": "11c4b49be8541697e74d383b908db47b42480e11c60f92c35821340eacea929c",
+    "producer_sha256": "795e1c1114587d5aa5066f278cb76e7bf08356402d78a5ce03fe4f8910aa5f3c",
+    "receipt_sha256": "85fbc1f043a7150f5966b0fedbe693e50469b9cd2cc6bf09cfc88a03a8d9862e",
+    "sizes": 61,
+    "status": "PASS"
+  },
+  "projection_reference_sha256": "37c3c060ad42cad679a78f256d9a5bdf5c129ed338cc8dcda9afbae6a5fef23f",
+  "projection_case_count": 12,
+  "projection_exact_fields": 1104,
+  "projection_exact_systems": 348,
+  "projection_N4_gradient_cases": 6,
+  "negative_tests": [
+    {
+      "kind": "payload",
+      "optimized": false,
+      "command": [
+        "python",
+        "topics/nn-mop-stability-20261105/code/conditioning_verify_normality.py",
+        "--receipt",
+        "/tmp/nn-response-corrupt-payload.md"
+      ],
+      "exit": 1,
+      "error": "ValueError: N=64: coefficient payload mismatch"
+    },
+    {
+      "kind": "payload",
+      "optimized": true,
+      "command": [
+        "python",
+        "-O",
+        "topics/nn-mop-stability-20261105/code/conditioning_verify_normality.py",
+        "--receipt",
+        "/tmp/nn-response-corrupt-payload.md"
+      ],
+      "exit": 1,
+      "error": "ValueError: N=64: coefficient payload mismatch"
+    },
+    {
+      "kind": "codepin",
+      "optimized": false,
+      "command": [
+        "python",
+        "topics/nn-mop-stability-20261105/code/conditioning_verify_normality.py",
+        "--receipt",
+        "/tmp/nn-response-corrupt-codepin.md"
+      ],
+      "exit": 1,
+      "error": "ValueError: code identity mismatch: conditioning_exact_normality.py"
+    },
+    {
+      "kind": "codepin",
+      "optimized": true,
+      "command": [
+        "python",
+        "-O",
+        "topics/nn-mop-stability-20261105/code/conditioning_verify_normality.py",
+        "--receipt",
+        "/tmp/nn-response-corrupt-codepin.md"
+      ],
+      "exit": 1,
+      "error": "ValueError: code identity mismatch: conditioning_exact_normality.py"
+    },
+    {
+      "kind": "projection_reference",
+      "optimized": true,
+      "exit": 1,
+      "error": "ValueError: committed reference SHA-256 mismatch"
+    }
+  ],
+  "note": "Developer response executions; mandatory independent Claude re-audit remains separate."
+}

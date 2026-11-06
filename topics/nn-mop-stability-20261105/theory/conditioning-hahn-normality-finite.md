@@ -26,8 +26,8 @@ measures. It makes no claim about other N or other Hahn parameters.
 Overall status: PROVED — finite computer-assisted theorem, with exact
 arithmetic, written reduction, compact essential evidence below, source
 producer/checker code and a separate full independent execution. Developer
-claim is ready for the coordinator's round2 publication; mandatory Claude
-audit remains pending. All source and receipt hashes are fixed below.
+claim is published in the completed round2 output; mandatory Claude
+reconstruction is completed in audit-01.md, priority2. Source and receipt hashes are below.
 Candidate disposition: retained finite application of the standard
 normality converse. The all-N Hahn-family theorem remains outside scope.
 
@@ -133,7 +133,7 @@ and compares all 61 counts/input hashes/payload hashes to this table.
 
 Source hashes:
 
-- `conditioning_exact_normality.py`: `7aa4115143a51bd3abcea50abd4ea7b8de9a7507bea711ca7e19ab662a2be24a`.
+- `conditioning_exact_normality.py`: `795e1c1114587d5aa5066f278cb76e7bf08356402d78a5ce03fe4f8910aa5f3c`.
 - `conditioning.py`: `11c4b49be8541697e74d383b908db47b42480e11c60f92c35821340eacea929c`.
 - `c4_float_baseline.py`: `9ce76ae88fb798f73127f75819bcdfb6c7bffb0d9cd092d70957164cb9b6a2e8`.
 
@@ -179,7 +179,7 @@ rational generating/checker code are the essential finite evidence.
 
 ## Open items
 
-Mandatory Claude audit. An all-N Hahn-family normality proof is not needed
+An all-N Hahn-family normality proof is not needed
 for the stated finite theorem and is not implied by it.
 
 ## History
@@ -188,3 +188,7 @@ for the stated finite theorem and is not implied by it.
 is not independently exposed. Source/rules 823cf6a; development checkpoint
 f75964bd71336aee2a05f4ebb39eb31215be360a. The coordinator publishes this
 file with the source/checker and essential receipt at the next boundary.
+
+2026-11-06, response to audit-01 MINOR1/12: explicit runtime checks replace removable asserts; the verifier now enforces all three code pins. The producer pin is updated here in the same reviewed commit. Statement, 61 exact inputs, counts and coefficient payload fingerprints are unchanged. Completed independent certification: audit-01.md, priority2.
+
+The historical Nov5 raw receipt/timings above used producer SHA7aa4115143a51bd3abcea50abd4ea7b8de9a7507bea711ca7e19ab662a2be24a. The current pin changes only input/type guard checks; all 61 exact payload fingerprints remain unchanged. The response verification uses the new pin and is recorded in response-01.md.

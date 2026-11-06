@@ -21,8 +21,10 @@ truncated; the load-bearing C4 receipt/code/theory and full-precision E table
 were reread separately. Registry searches covered nearest-neighbour,
 step-line, marginal, Lanczos, reorthogonalization, MOP and backward error.
 The complete-row/heading scan output was truncated: no claim of a complete
-independent registry read is made here. Campaign-wide new-mechanism clearance
-must use the coordinator's separate full gate.
+independent registry read is made here. The new-mechanism gate does not apply to this bounded D2 work: it
+implements known comparators and diagnostics and claims no new mechanism.
+This exception supplies no campaign-wide novelty clearance and refers to no
+unwritten coordinator gate.
 
 Closest predecessors are IDEA-031/117 (the same NN IEP), IDEA-379/C4
 (the marginal route), and IDEA-378/C3 (coupled updating deferred).

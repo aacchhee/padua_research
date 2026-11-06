@@ -86,8 +86,8 @@ external theorem is used to certify this experiment.
 
 Only the twelve inputs and stated arithmetic are measured. No general
 stability theorem, induced derivative certification, joint backward bound,
-N64 run or independent agent rerun is claimed. G1/G2 await matched D1
-conditioning; the alternating-path diagnostic has its own limitations in
+N64 forward-error run is claimed. Completed independent agent reruns
+and matched G1/G2 conditioning are in independent-checks-01.md and audit-01.md; the alternating-path diagnostic has its own limitations in
 `d2-path-diagnostic.md`. Raw output is local and regenerable, with archival
 transfer pending AC's cold-storage destination.
 

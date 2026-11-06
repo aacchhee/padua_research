@@ -33,10 +33,9 @@ normality are the prescribed input domain, not arbitrary complex functionals.
 
 Overall status: **PROVED** for the explicitly displayed dyadic array,
 by the exact necessary-identity reduction and arithmetic below.
-Independent checker rerun is required for the separate claim identifying
-the displayed fields with the executed numerical producer; until that is
-recorded, numerical provenance is developer-measured only. Candidate
-disposition: REJECTED: failed for the literal input-only exact backward
+The separate producer-identification rerun is recorded in independent-checks-02.md
+and audit-01.md, priority6. Producer reproduction is platform-dependent;
+the exact displayed certificate is not. Candidate disposition: REJECTED: refuted for the literal input-only exact backward
 interpretation of this raw array. No native accuracy theorem is rejected.
 
 ## Negative-result scope
@@ -45,6 +44,13 @@ Attempted mechanism: interpret the uncorrected rounded array as F(p')
 for a nearby positive common-node input. This is one explicit raw-array
 counterexample, not an impossibility of stable native algorithms with a
 compatibility correction or an enlarged output representation.
+
+Parameter range: exactly the five displayed dyadic fields from the recorded
+N=4 Krawtchouk LU output in its original producer environment, interpreted
+in the monic triangle through degree3 and normal common-support domain.
+Closest predecessor: PD-N118 / IDEA-262, a variant of the same necessary
+exact-consistency obstruction for a different bivariate raw-output model.
+No historical novelty or new general obstruction mechanism is claimed.
 
 ## Depends on and proof
 
@@ -71,8 +77,9 @@ integer Fraction arithmetic and no numerical tolerance.
 checks the stored certificate without numerical libraries.
 `python topics/nn-mop-stability-20261105/code/backward_dyadic.py --reproduce`
 also regenerates the array and checks exact equality of these five fields.
-Developer commands and hashes are in attempts/D5.md. Independent rerun
-record is a required separate receipt, not implied by code inspection.
+Developer commands and hashes are in attempts/D5.md. Completed separate
+replays and exact rebuilds are recorded in independent-checks-02.md and
+audit-01.md, priority6; they are executions, not just code inspection.
 
 ## Sources, scope and open items
 
@@ -88,3 +95,5 @@ bound for an explicitly allowed coefficient-correction metric.
 823cf6a4ef7c01b4ef3d2a6fec3e9f19d4b4f6f1. The original G4 strict
 backward criterion is preserved; this certificate explains why a dated
 mixed-metric amendment must be reported separately, never silently applied.
+
+Parent unresolved target: [stable-solver-target.md](stable-solver-target.md); supporting results do not establish its general stability conclusion.

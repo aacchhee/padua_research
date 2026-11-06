@@ -79,7 +79,10 @@ those algorithms, norms or configurations.
 
 ## Scope and open items
 
-Path data discard off-path entries. Small recovered-input error neither
+Path data discard off-path entries. For the even N>=4 in the recorded
+grid they also never read b2 at nu_(N-2) or b1 at nu_(N-1); the opposite
+parity swaps those two unused b fields. The origin still uses both fields
+for its extra d0 anchor. Small recovered-input error neither
 proves exact compatibility of the full NN array nor bounds the distance to
 its nearest compatible array. Changing the path could change the diagnosis.
 The second-measure anchor and mass gauges must be retained in comparisons.

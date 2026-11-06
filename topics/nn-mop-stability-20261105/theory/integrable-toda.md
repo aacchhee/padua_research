@@ -12,7 +12,7 @@ For two weights on fixed N distinct nodes let w_(s,l)(t)=exp(t x_l)w_(s,l)(0). O
     adot_(nu,j)=a_(nu,j)(b_(nu,j)-b_(nu-e_j,j)),  nu_j>0;
     bdot_(nu,j)=S_(nu+e_j)-S_nu,   S_nu=sum_s a_(nu,s).
 
-Absent a and its derivative are zero. Set S_eta=0 at |eta|=N; no degree-N b values are needed. The exact ODE started at a compatible array equals the moment-defined trajectory until it leaves this normality interval. Each right-hand side evaluation costs O(N^2).
+Absent a and its derivative are zero. Set S_eta=0 at |eta|=N; no degree-N b values are needed. The exact ODE started at the actual moment-defined array at t0 equals that trajectory on the connected normality interval containing t0. Each right-hand side evaluation costs O(N^2).
 
 ## Definitions
 
@@ -20,7 +20,7 @@ NN convention and stored indices are D4-01. P_eta=F is independent of t for |eta
 
 ## Assumptions
 
-N>=1, finite fixed support, differentiable exponential weights; mixed normality throughout the stated interval. Positivity alone does not provide this interval (D4-02). The initial NN array is given.
+N>=1, finite fixed support, differentiable exponential weights; mixed normality throughout the stated interval. Positivity alone does not provide this interval (D4-02). The initial NN array is the actual moment-defined array at t0 in that connected normality interval.
 
 ## Status by part
 
@@ -34,7 +34,7 @@ Candidate / claim disposition: exact algebra retained; no numerical stability di
 
 ## Depends on
 
-PD-T286 normal-triangle NN and h-ratio characterization. Elementary uniqueness for polynomial ODEs. Known infinite-domain Toda context LIT-D4-01 is not needed in the proof.
+PD-T286 normal-triangle NN and h-ratio characterization. Elementary uniqueness for polynomial ODEs. Known infinite-domain Toda context LIT-567 is not needed in the proof.
 
 ## Proof or evidence
 
@@ -54,7 +54,7 @@ Let gamma_nu be the subleading coefficient, gamma_0=0. The polynomial derivative
 
 ## Sources
 
-LIT-D4-01 §2.3 equation (2.18), common continuous-time Toda equations with opposite time sign. Only that local section's actual reading is claimed; the source's full determinant/Lax proofs were not read. This finite-domain proof is local and independent; no novelty of Toda claimed.
+LIT-567 §2.3 equation (2.18), common continuous-time Toda equations with opposite time sign. Only that local section's actual reading is claimed; the source's full determinant/Lax proofs were not read. This finite-domain proof is local and independent; no novelty of Toda claimed.
 
 ## Scope
 

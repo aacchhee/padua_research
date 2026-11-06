@@ -23,7 +23,7 @@ Overall status: MEASURED.
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| This algorithm fails the specified N16 forward-error comparison | MEASURED | Two fixed cases, table below; independent replay pending |
+| This algorithm fails the specified N16 forward-error comparison | MEASURED | Two fixed cases, table below; independent exact replay in audit-01.md, priority8 |
 
 Candidate / claim disposition: REJECTED.
 Rejection reason: failed, only this predivide-C4-restore implementation at the frozen inputs and shift.
