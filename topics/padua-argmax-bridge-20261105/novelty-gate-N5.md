@@ -160,3 +160,57 @@ PROVED status and independent review pending. Fifty-six selected-block
 diagnostics supplement the proof without an ordering claim. Round-1/2
 theory/code/receipts remain frozen. Parent must publish/review this result
 before any N5 round 4.
+
+## Round 4 gate and outcome — 2026-11-06, input 3888dd3
+
+Rules read at 3888dd37c362a0689943f33e6b7e44c1dd1c3050; parent
+authorized one bounded N5 round4 and no round5. Earlier N5 theory,
+code and receipts remain frozen. This worker owns only the four new
+N5-two-phase files and these N5 appendices. No Git/shared-state action.
+
+Scanned the complete 1031-line IDEAS registry's identifiers, aliases,
+headings and summaries in bounded terminal views, and read obstruction
+and disposition tables. Registry SHA256 at this gate:
+0e1813b1f53e6aa4a970f19b86ebb3864dd6546b7f55c0bc2ffc4033320825f7.
+Combined terminal reads sometimes truncated; bounded follow-up views
+were used for the omitted registry regions and relevant proof bodies.
+Search groups under state/topics/tracks/literature were two-phase,
+projected defect, vertical center/centre, phase radius, moving rectangle,
+paired sign and cos(alpha); the broad group matched 83 Markdown files.
+This is a bounded repository comparison, without a historical novelty
+claim or fresh external-source reading.
+
+Full shortlisted candidate reads: IDEA318/330 in FINAL_CANDIDATES and
+their original ideas/gated candidate records; IDEA327/328 and
+IDEA459 in its complete H2/H3 record. Full proof reads relevant to the
+construction: T215, T219, T222, T224, T366, N5-01/02/03 and the
+distinct N5-03 supplement. N1's full two-phase row-model statement and
+exact definitions supply the model-error interface. Further scope-only
+reads/timing are recorded once in attempts/N5.md.
+
+Verdict: quantitative variant with difference. T366 already handles
+two varying phases but only rho<=1/10 with loss 1/8192. N5-03 already
+handles rho<=1/2 on alpha=0 with loss 1/1024. Neither has this
+two-varying-phase half diamond with loss 1/2048 near every interior
+vertical-edge center. IDEA318's cell-ordering umbrella, IDEA330's
+actual-corner Taylor/energy route and IDEA459's full-diamond primitive
+profile do not supply that enlarged-domain actual-function comparison.
+
+The exact candidate, inward physical domain, J+q odd parity, excluded
+corners, exceptional cos(alpha) subtraction and 1/N projection weight
+were preregistered in ideas/N5-two-phase.md before numerical work.
+The original target/kill is retained: n>=64, J=0 or n, interior q,
+|alpha|+|beta|<=1/2, actual lambda<S_n-1/2048. Counterexample,
+duplicate, incorrect corrected kernel, or failed uniform band/count
+ends this candidate without a cosmetic weaker replacement.
+
+Outcome: initial 72 representative cases passed, then a prospectively
+recorded 36-case addition exercised the missing far-small branch and
+two selection transitions. The final 108 high-precision diagnostics pass;
+they are MEASURED. The uniform analytic proof in
+theory/N5-two-phase-defect.md gives case floors 1/1728,
+7/(1536*pi), 7/12288, each strictly above 1/2048 with the correct
+projection normalization. The N1/N5 error leaves actual-model margin
+255/524288. Developer claim PROVED, distinct review separate. No
+primitive maximum, independently optimized E-C, full-square theorem,
+effective onset or PD-T099 claim. Stop at this checkpoint; no round5.

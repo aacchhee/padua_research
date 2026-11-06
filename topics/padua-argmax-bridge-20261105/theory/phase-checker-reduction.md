@@ -216,3 +216,14 @@ broad boxes; no finite degree is proved by this run. See
 `../evidence/phase-checker-full-n17.json` for pinned input/output identities.
 Any stronger formula/refinement is a subsequent implementation change that
 requires its own review; it is not silently inherited from this reduction.
+
+## 2026-11-06 implementation-status addendum
+
+The prototype OPEN status above is historical. The original complete n17
+candidate now passes all1288 predicates on the independently reviewed
+round5 hybrid Arb kernel, with no tree change and actual exit0. See
+[N3 n17 disposition](N3-phase-n17.md) and its committed short acceptance
+receipt. The routine reduction/derivative/equality derivations above are
+unchanged; quotient/global intersections are separately reviewed in
+../independent-checks-phase-round5.md. This validates one known-degree
+instance, not higher-degree throughput or all-n coverage.

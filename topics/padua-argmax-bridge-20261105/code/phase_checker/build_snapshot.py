@@ -8,6 +8,7 @@ LOCAL=ROOT/'local-output/argmax-bridge-20261105/phase-checker'
 INC=LOCAL/'runtime/extracted/usr/include'
 FLINT=LOCAL/'runtime/extracted/usr/lib/x86_64-linux-gnu/libflint.so.19'
 FLAGS=['-std=c++17','-O3','-Wall','-Wextra','-fPIC']
+KERNEL_SOURCES={'baseline':'arb_kernel.cpp','round4':'hybrid_kernel.cpp','round5':'hybrid_kernel_v2.cpp'}
 
 def digest(data):return hashlib.sha256(data).hexdigest()
 def identity(path):
@@ -30,11 +31,12 @@ def preprocess_deps(cxx,src,include):
  text=run([cxx,*FLAGS,*include,'-M',src]).replace('\\\n',' ')
  return sorted(set(pathlib.Path(p).resolve() for p in text.split(':',1)[1].split()))
 
-def build():
+def build(kernel_variant="baseline"):
+ if kernel_variant not in KERNEL_SOURCES:raise ValueError("unknown checker kernel variant")
  LOCAL.mkdir(parents=True,exist_ok=True)
  work=pathlib.Path(tempfile.mkdtemp(prefix='check-',dir=LOCAL))
- source_path=pathlib.Path(__file__).with_name('hybrid_kernel.cpp')
- src=work/'hybrid_kernel.cpp';source=source_path.read_bytes();src.write_bytes(source)
+ source_path=pathlib.Path(__file__).with_name(KERNEL_SOURCES[kernel_variant])
+ src=work/source_path.name;source=source_path.read_bytes();src.write_bytes(source)
  cxx=pathlib.Path(shutil.which('c++')).resolve()
  tools=[cxx]
  for flag in ['-print-prog-name=cc1plus','-print-prog-name=as','-print-prog-name=ld']:
@@ -70,7 +72,7 @@ def build():
  if toolids!=[identity(p) for p in tools] or depids!=[identity(p) for p in dependency_paths]:raise RuntimeError('toolchain/dependency changed during build')
  linked=closure(binary)
  linkedids=[identity(p) for p in linked]
- return binary,{'workdir':str(work),'source_origin':str(source_path),'source_snapshot':identity(src),'preprocessed_translation_unit':iiid,
+ return binary,{'workdir':str(work),'kernel_variant':kernel_variant,'source_origin':str(source_path),'source_snapshot':identity(src),'preprocessed_translation_unit':iiid,
   'checker_binary':identity(binary),'flags':FLAGS,'preprocess_command':pre,'compile_command':command,
   'compiler_version':run([cxx,'--version']).splitlines()[0],'toolchain':toolids,'toolchain_dependency_closure':tooldepids,'headers':headerids,
   'dependency_inputs':depids,'linked_dependency_closure':linkedids,

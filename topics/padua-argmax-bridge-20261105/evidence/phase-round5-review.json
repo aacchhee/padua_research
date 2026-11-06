@@ -1,0 +1,639 @@
+{
+  "scope": "MEASURED focused independent response checks; no complete candidate replay",
+  "rules_sha": "3888dd37c362a0689943f33e6b7e44c1dd1c3050",
+  "command": "python topics/padua-argmax-bridge-20261105/code/review_phase_round5.py",
+  "script": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/review_phase_round5.py",
+    "bytes": 7768,
+    "sha256": "3cc33d5c01b4f40e0942f910de966e827025e4488930b0482c85b0bc4f121892"
+  },
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v2.cpp",
+      "bytes": 10891,
+      "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5609,
+      "sha256": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check.py",
+      "bytes": 10145,
+      "sha256": "88dde644a77a286e547679b0547c4d35814a4dda7373575208246882d9a26820"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel.cpp",
+      "bytes": 9033,
+      "sha256": "9a976e77d861c291468d6bfa4d2104c6c42ace953781ce1c5ff1a43073505d7d"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/arb_kernel.cpp",
+      "bytes": 5635,
+      "sha256": "236116452dc7aae66e39cbf8800fe847cffe931ac0ce8a9682397313de7c43a6"
+    }
+  ],
+  "python": "3.12.14",
+  "mpmath": "1.3.0",
+  "mpmath_digits": 120,
+  "tolerance": "1e-100, point comparisons diagnostic only",
+  "ratio_cases": [
+    {
+      "k": 1,
+      "turn": -2,
+      "offsets": [
+        0.125,
+        0.375
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "k": 1,
+      "turn": -1,
+      "offsets": [
+        -0.375,
+        -0.125
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "k": 1,
+      "turn": 1,
+      "offsets": [
+        -1e-12,
+        1e-12
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "k": 1,
+      "turn": 0,
+      "offsets": [
+        1e-30,
+        2e-30
+      ],
+      "quotient": true,
+      "hybrid_bounds": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "k": 1,
+      "turn": 2,
+      "offsets": [
+        0.2,
+        0.2
+      ],
+      "quotient": true,
+      "hybrid_bounds": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "k": 1,
+      "turn": 0,
+      "offsets": [
+        -4.0,
+        4.0
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "k": 1,
+      "turn": -2,
+      "offsets": [
+        0.0,
+        0.0
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "k": 2,
+      "turn": -2,
+      "offsets": [
+        0.125,
+        0.375
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        1.8610152410094605,
+        1.9843953368238152,
+        -0.7325450626965834,
+        -0.24934946213106046
+      ]
+    },
+    {
+      "k": 2,
+      "turn": -1,
+      "offsets": [
+        -0.375,
+        -0.125
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        -1.9843953368238152,
+        -1.8610152410094605,
+        -0.7325450626965835,
+        -0.24934946213106057
+      ]
+    },
+    {
+      "k": 2,
+      "turn": 1,
+      "offsets": [
+        -1e-12,
+        1e-12
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        -2.000000000000016,
+        -1.9999999999999842,
+        -2.0000000428303712e-12,
+        2.0000000428303712e-12
+      ]
+    },
+    {
+      "k": 2,
+      "turn": 0,
+      "offsets": [
+        1e-30,
+        2e-30
+      ],
+      "quotient": true,
+      "hybrid_bounds": [
+        1.9999999999999998,
+        2.0000000000000004,
+        -4.0000000149260206e-30,
+        -1.99999998507398e-30
+      ]
+    },
+    {
+      "k": 2,
+      "turn": 2,
+      "offsets": [
+        0.2,
+        0.2
+      ],
+      "quotient": true,
+      "hybrid_bounds": [
+        1.9601331556824833,
+        1.9601331556824835,
+        -0.3973386615901225,
+        -0.39733866159012243
+      ]
+    },
+    {
+      "k": 2,
+      "turn": 0,
+      "offsets": [
+        -4.0,
+        4.0
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        -2.0000000074505806,
+        2.0000000074505806,
+        -2.0000000074505806,
+        2.0000000074505806
+      ]
+    },
+    {
+      "k": 3,
+      "turn": -2,
+      "offsets": [
+        0.125,
+        0.375
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        2.463377732346252,
+        2.9378248472050283,
+        -2.7265550531388802,
+        -0.9896158222050948
+      ]
+    },
+    {
+      "k": 3,
+      "turn": -1,
+      "offsets": [
+        -0.375,
+        -0.125
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        2.463377732346252,
+        2.937824847205029,
+        0.989615822205095,
+        2.7265550531388807
+      ]
+    },
+    {
+      "k": 3,
+      "turn": 1,
+      "offsets": [
+        -1e-12,
+        1e-12
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        2.9999999999999685,
+        3.0000000000000315,
+        -8.00000014421643e-12,
+        8.00000014421643e-12
+      ]
+    },
+    {
+      "k": 3,
+      "turn": 0,
+      "offsets": [
+        1e-30,
+        2e-30
+      ],
+      "quotient": true,
+      "hybrid_bounds": [
+        2.9999999999999996,
+        3.0000000000000004,
+        -1.6000000059704082e-29,
+        -7.99999994029592e-30
+      ]
+    },
+    {
+      "k": 3,
+      "turn": 2,
+      "offsets": [
+        0.2,
+        0.2
+      ],
+      "quotient": true,
+      "hybrid_bounds": [
+        2.8421219880057698,
+        2.84212198800577,
+        -1.557673369234602,
+        -1.5576733692346019
+      ]
+    },
+    {
+      "k": 3,
+      "turn": 0,
+      "offsets": [
+        -4.0,
+        4.0
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        -1.000000013038516,
+        3.0000000093132257,
+        -4.000000014901161,
+        4.000000014901161
+      ]
+    },
+    {
+      "k": 17,
+      "turn": -2,
+      "offsets": [
+        0.125,
+        0.375
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        -8.631480221047482,
+        10.95360317419521,
+        -139.3556400092285,
+        79.62934486549688
+      ]
+    },
+    {
+      "k": 17,
+      "turn": -1,
+      "offsets": [
+        -0.375,
+        -0.125
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        -8.63148022104748,
+        10.953603174195212,
+        -79.62934486549689,
+        139.35564000922847
+      ]
+    },
+    {
+      "k": 17,
+      "turn": 1,
+      "offsets": [
+        -1e-12,
+        1e-12
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        16.99999999999887,
+        17.00000000000113,
+        -1.6320000541941715e-09,
+        1.6320000541941715e-09
+      ]
+    },
+    {
+      "k": 17,
+      "turn": 0,
+      "offsets": [
+        1e-30,
+        2e-30
+      ],
+      "quotient": true,
+      "hybrid_bounds": [
+        16.999999999999996,
+        17.000000000000004,
+        -3.2640000131200286e-27,
+        -1.631999986879972e-27
+      ]
+    },
+    {
+      "k": 17,
+      "turn": 2,
+      "offsets": [
+        0.2,
+        0.2
+      ],
+      "quotient": true,
+      "hybrid_bounds": [
+        -1.2862634660527286,
+        -1.2862634660527283,
+        -76.38292926112561,
+        -76.3829292611256
+      ]
+    },
+    {
+      "k": 17,
+      "turn": 0,
+      "offsets": [
+        -4.0,
+        4.0
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        -15.000000163912773,
+        17.000000074505806,
+        -144.00000047683716,
+        144.00000047683716
+      ]
+    },
+    {
+      "k": 18,
+      "turn": -2,
+      "offsets": [
+        0.125,
+        0.375
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        -9.614713249712379,
+        11.906776966542811,
+        -153.64141312628064,
+        97.26303967447011
+      ]
+    },
+    {
+      "k": 18,
+      "turn": -1,
+      "offsets": [
+        -0.375,
+        -0.125
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        -11.906776966542798,
+        9.614713249712391,
+        -153.64141312628092,
+        97.26303967446984
+      ]
+    },
+    {
+      "k": 18,
+      "turn": 1,
+      "offsets": [
+        -1e-12,
+        1e-12
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        -18.000000000001272,
+        -17.999999999998728,
+        -1.938000065981882e-09,
+        1.938000065981882e-09
+      ]
+    },
+    {
+      "k": 18,
+      "turn": 0,
+      "offsets": [
+        1e-30,
+        2e-30
+      ],
+      "quotient": true,
+      "hybrid_bounds": [
+        17.999999999999996,
+        18.000000000000004,
+        -3.876000013605203e-27,
+        -1.937999986394797e-27
+      ]
+    },
+    {
+      "k": 18,
+      "turn": 2,
+      "offsets": [
+        0.2,
+        0.2
+      ],
+      "quotient": true,
+      "hybrid_bounds": [
+        -2.2274220259559727,
+        -2.2274220259559723,
+        -70.26061624995805,
+        -70.26061624995803
+      ]
+    },
+    {
+      "k": 18,
+      "turn": 0,
+      "offsets": [
+        -4.0,
+        4.0
+      ],
+      "quotient": false,
+      "hybrid_bounds": [
+        -18.000000059604645,
+        18.000000059604645,
+        -162.00000047683716,
+        162.00000047683716
+      ]
+    }
+  ],
+  "ratio_point_checks": 93,
+  "primitive_cases": [
+    {
+      "n": 2,
+      "r": 0,
+      "s": 0,
+      "a": 0.0,
+      "b": 0.0
+    },
+    {
+      "n": 2,
+      "r": 2,
+      "s": 3,
+      "a": 0.0,
+      "b": 0.0
+    },
+    {
+      "n": 2,
+      "r": 2,
+      "s": 3,
+      "a": 1e-12,
+      "b": -1e-12
+    },
+    {
+      "n": 2,
+      "r": 1,
+      "s": 2,
+      "a": 0.2,
+      "b": -0.3
+    },
+    {
+      "n": 17,
+      "r": 0,
+      "s": 0,
+      "a": 0.0,
+      "b": 0.0
+    },
+    {
+      "n": 17,
+      "r": 17,
+      "s": 18,
+      "a": 0.0,
+      "b": 0.0
+    },
+    {
+      "n": 17,
+      "r": 17,
+      "s": 18,
+      "a": 1e-12,
+      "b": -1e-12
+    },
+    {
+      "n": 17,
+      "r": 1,
+      "s": 2,
+      "a": 0.2,
+      "b": -0.3
+    },
+    {
+      "n": 32,
+      "r": 0,
+      "s": 0,
+      "a": 0.0,
+      "b": 0.0
+    },
+    {
+      "n": 32,
+      "r": 32,
+      "s": 33,
+      "a": 0.0,
+      "b": 0.0
+    },
+    {
+      "n": 32,
+      "r": 32,
+      "s": 33,
+      "a": 1e-12,
+      "b": -1e-12
+    },
+    {
+      "n": 32,
+      "r": 1,
+      "s": 2,
+      "a": 0.2,
+      "b": -0.3
+    }
+  ],
+  "R4_1_exact_reproducer_closed": true,
+  "nonfinite_candidate_fallbacks": 2,
+  "finite_contradiction_rejections": 2,
+  "invalid_selector_rejections": [
+    "",
+    "../hybrid_kernel_v2.cpp",
+    "arbitrary-source.cpp"
+  ],
+  "invalid_cli_selector_rejected": true,
+  "baseline_default_verified": true,
+  "asymmetric_box": [
+    0.1,
+    0.10000000000000002,
+    0.3,
+    0.30000000000000004
+  ],
+  "baseline_bounds": [
+    3.7411128028029466,
+    3.7373941317767523,
+    0.7708570263092972,
+    3.7761423749153966,
+    3.776142374915397,
+    3.141592653589793,
+    3.1415926535897936
+  ],
+  "round5_bounds": [
+    3.7411128028029466,
+    3.7373941317767523,
+    0.7708570263092972,
+    3.7761423749153966,
+    3.776142374915397,
+    3.141592653589793,
+    3.1415926535897936
+  ],
+  "build_manifest": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-round5-review/build-provenance.json",
+    "bytes": 96787,
+    "sha256": "271a274f198d294bc62be3fd2e561012142d8825d98502accae6e26e348b3b8e"
+  },
+  "passed": true,
+  "full_cover_run": false,
+  "degree_certificate_accepted": false,
+  "process_cpu_seconds": 0.8903527200000001,
+  "child_cpu_seconds": 2.106632
+}

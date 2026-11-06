@@ -87,7 +87,24 @@ where c_e=cos((alpha+beta)/2). The other contribution is
 D cot z>=0. Thus the absolute value of their sum equals the sum of
 their absolute values, including c_e=0.
 
-On the other endpoint, v=2pi-z, there are two possible types.
+On the other endpoint, v=2pi-z, there are two possible types, and they
+can occur simultaneously. Both eta_-=1 and eta_+=0 hold exactly when
+alpha=0 and beta=pi-z. In this case
+
+    c_e=c_d=sin(z/2),       C=D=0.
+
+The two pole samples u=v and u=-v modulo 2pi are distinct because
+0<z<=pi/4. The polynomial-compatible sinc limits give F=n/2 at each
+of these samples; all other samples vanish. Thus R_r=n. Meanwhile
+I=0 and both integer-offset values Phi_L equal 1, so
+
+    H(L,v)=(c_e+c_d)/[2sin(z/2)]=1,
+    R_r/(nm)-H(L,v)/m=0.
+
+This proves the zero-error case of (6) below without replacing either
+finite pole contribution by a zero ordinary norm.
+
+Otherwise the two right-end types occur separately.
 If eta_+=0 then alpha+beta=pi-z, D=0, C=p/2 and u=-v modulo 2pi.
 The vanishing-channel limit is n*c_d/[2sin(z/2)]>=0 and the other
 term is C cot z>=0, so again there is no cancellation at that point.
@@ -110,7 +127,9 @@ remaining collision corrections never require z=0.
 
 ### 2. Comparison with the regularized profile at a collision
 
-Let R_r be a collision row in the endpoint strips but outside P_R. The
+Let R_r be a collision row in the endpoint strips but outside P_R. If
+both offsets are integers, the equality just proved gives zero error.
+Otherwise there is exactly one pole channel on the row mesh. Its
 vanishing coefficient contributes its single finite pole limit just
 computed; its other n-1 samples are zero. The other channel is an
 ordinary absolute cotangent norm with coefficient p/2. The cancellation
@@ -187,3 +206,14 @@ it did not approve this assembly. Distinct review of the frozen files
 is requested. The exact H4 target, error form and kill were recorded in
 ../ideas/N1-round4.md before this round's mathematical development.
 2026-11-06, after parent-pushed bda45a4; Codex requested gpt-6-astra ultra.
+
+2026-11-06, response to F1 in ../independent-checks-n1-round4.md:
+the original proof omitted the simultaneous right-end double collision.
+Its source is preserved at commit
+`7e457c7fc54b32b45b0870d53a5fd4c37cd45fce`, original file SHA-256
+`4a9b0f908f0b5cf12dbf56856bee47da47f860ef1c5f9fd5bf01f00676edc552`.
+The explicit zero-error case above and the restriction of the subsequent
+argument to one pole channel complete that proof case. The statement,
+definitions, coefficient formulas and error bounds are unchanged.
+Focused independent re-review is requested; this is a round-4 proof
+response, not a new round or a correction of the model.

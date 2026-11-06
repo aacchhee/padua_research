@@ -45,3 +45,14 @@ Global exact range is now2–36 (the earlier2–32 line is historical). B2 finit
 ## 2026-11-06 round4 enclosure gate
 
 The fixed hybrid's bounded gate fails3/5 selected leaves; no whole replay. R4-1 NaN derivative-success finding independently blocks clean source acceptance. B2 outward proof remains OPEN. Exact native n37 producer is complete but unaccepted pending separate replay; it does not yet extend2–36. N1's next compactification gate is preregistered/in progress; B3/B4 remain OPEN/blocked. Temporary aggregate allowance10MB is AC's explicit instruction; cross-topic cleanup is deferred.
+
+## 2026-11-06 checked round5/endpoint-block update
+
+Global exact range2–38. B2 finite floating throughput/count scope remains
+PASS; the first full independent outward overlap at n17 now validates
+1288/1288 leaves at109.45checkerCPU-s. Higher-degree outward cost/coverage
+stays OPEN. B3 complete model/onset remains OPEN, with a proved failure
+of the unchanged reported error assembly for gamma<=.12 through1e6; only
+a specified coupled correction or proved larger budget can revive it.
+B4 lacks analytic onset. N5's stronger two-phase defect is supporting
+control, not E-C. B6 still has no confirmed counterexample.

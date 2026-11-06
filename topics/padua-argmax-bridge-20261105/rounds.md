@@ -8,11 +8,11 @@ does not count as completed. Branch pushes establish the public boundaries.
 
 | Direction | Completed rounds | Current work | Progress / stop rationale |
 |---|---:|---|---|
-| N1 | 3 | Distinct endpoint review; endpoint-sum gate next | Degree/log-degree-independent endpoint residual; compact onset OPEN |
+| N1 | 4 | Coupled-error correction gate next | Compact endpoint block proved/reviewed; unchanged budget ruled out through1e6 for gamma<=.12 |
 | N2 | 1 | Supplementary review / next-step gate | Full-phase exact rows; profile coefficients remain OPEN |
-| N3 | 4 | NaN-source response gate; exact37–40 continuation running | Hybrid repairs far leaf but3/5 gate failures and NaN finding; no full acceptance |
+| N3 | 5 | Higher overlap/calibration gate next; native39/40 checks running | Corrected hybrid whole n17 accepted1288/1288; native range2–38 |
 | N4 | 1 | Specified classes stopped; broad route deferred | Unrestricted equivalence and exact diagonal-class obstruction; no viable specified repair |
-| N5 | 3 | Distinct all-edge review | All interior vertical-edge-center margin for n>=64; full-cell comparison OPEN |
+| N5 | 4 | Specific stronger-budget gate if viable | Two-phase rho<=.5 actual-lambda margin proved/reviewed for n>=64; E-C OPEN |
 | N6 | 2 | Specified trace-mixture mechanisms stopped; broad route deferred | Exact same-t reversal and positive full-vector lifting obstruction; global trace bound OPEN |
 
 No direction is rejected by setup or by a title-only literature scan.

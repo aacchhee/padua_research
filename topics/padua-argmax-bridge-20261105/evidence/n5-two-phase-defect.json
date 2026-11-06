@@ -1,0 +1,29 @@
+{
+  "status": "PASS selected and full-function MEASURED diagnostics; no interval/computer proof",
+  "rules_and_input_commit": "3888dd37c362a0689943f33e6b7e44c1dd1c3050",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-argmax-bridge-20261105/code/n5_two_phase_defect.py --output local-output/argmax-bridge-20261105/N5/two-phase-defect-cases.json --receipt topics/padua-argmax-bridge-20261105/evidence/n5-two-phase-defect.json",
+  "source_sha256": "fd1402000f2bd0b06477396270ea797237b70d2f4295d09246d03468ef77dc63",
+  "python": "3.12.14",
+  "mpmath": "1.3.0",
+  "precision_decimal_digits": 80,
+  "cpu_seconds": 13.99360193,
+  "cases": 108,
+  "category_counts": {
+    "near": 60,
+    "small": 20,
+    "middle": 28
+  },
+  "scope": "n=64,65; J=0,n; closest parity-admissible q to 1,m/2,m-1; plus (64,0,q5),(65,0,q11/55),(65,65,q4/6/62); 6 phases per center",
+  "selected_phases": "(0,0),(0,+/-1/2),(inward*1/2,0),(inward*1/4,+/-1/4)",
+  "min_selected_ratio": "11.8382054813763072773165237505",
+  "max_polynomial_quotient_error": "2.11856009867e-77",
+  "min_actual_defect": "0.523048574747916629861543672291",
+  "min_projected_defect": "0.523048574747916629861543672291",
+  "bulk": {
+    "path": "local-output/argmax-bridge-20261105/N5/two-phase-defect-cases.json",
+    "bytes": 76738,
+    "sha256": "f7861904498cdeffef901174b75bf10e5da94609c8858892c17368f071c1c322"
+  },
+  "independent_rerun": "not performed by developer",
+  "limitations": "Finite diagnostics only; all-degree/radius statement rests on analytic proof; no primitive maximum, E-C or PD-T099 claim"
+}

@@ -38,3 +38,21 @@ Runs not yet started at preregistration. Results will be appended without rewrit
 ### n37 complete — observed 2026-11-06T06:05:28.728354+00:00
 
 Actual driver exit0; watchdog stopped=False. Complete=True, producer accepted=False, pending0; 316 bound and 2 corner leaves. Certificate `local-output/argmax-bridge-20261105/native-37-40/n37.json.gz`, 8905bytes, SHA256 `425fb779e3d476efe221f6d1bef118cb1752fa9f538a46110b7ea2b44f2cefae`. Total child CPU 298.235541s; elapsed wall 298.337746s. Exact argv, compiler/GMP/Python versions, source/binary/input/raw identities are in `../evidence/native-37-40-producer.json`. Reported immutable certificate to the orchestrator and separate checker immediately. Independent acceptance remains the checker's responsibility.
+
+### n38 complete — observed 2026-11-06T06:11:13.663025+00:00
+
+Actual driver exit0; watchdog stopped=False. Complete=True, producer accepted=False, pending0; 320 bound and 2 corner leaves. Certificate `local-output/argmax-bridge-20261105/native-37-40/n38.json.gz`, 8973bytes, SHA256 `fcb900fab6b596b7d258668e0de49a4bf9b76bc9d3f4c879ebb358d7b792f1d2`. Total child CPU 378.753386s; elapsed wall 379.071752s. Full provenance is in `../evidence/native-37-40-producer.json`. Reported immutable certificate to orchestrator and separate checker immediately. Independent acceptance remains the checker's responsibility.
+
+### n39 complete — observed 2026-11-06T06:19:04.448227+00:00
+
+Actual driver exit0; watchdog stopped=False. Complete=True, producer accepted=False, pending0; 330 bound and 2 corner leaves. Certificate `local-output/argmax-bridge-20261105/native-37-40/n39.json.gz`, 9186bytes, SHA256 `af0c1dfdf4ea59560c23e83ebd4136b9b7ce783a253d1165f0cdbd1ace01d8f6`. Total child CPU 456.747415s; elapsed wall 456.858193s. Full provenance is in `../evidence/native-37-40-producer.json`. Reported immutable certificate to orchestrator and separate checker immediately. Independent acceptance remains the checker's responsibility.
+
+### n40 complete — observed 2026-11-06T06:28:22.089337+00:00
+
+Actual driver exit0; watchdog stopped=False. Complete=True, producer accepted=False, pending0; 350 bound and 2 corner leaves. Certificate `local-output/argmax-bridge-20261105/native-37-40/n40.json.gz`, 9663bytes, SHA256 `37cb278ad498d9f531634b2dca470426a86339b5d83cd437bfb2dd093afa374f`. Total child CPU 565.353605s; elapsed wall 586.426798s. Full provenance is in `../evidence/native-37-40-producer.json`. Reported immutable certificate to orchestrator and separate checker immediately.
+
+### Block frozen
+
+The launcher exited0 after the fixed37–40 block. All four first runs completed with accepted=false; no adaptive reruns or degree41+ work occurred. Total measured child CPU 1699.089947s, below7200s planned block maximum. All certificates together 36727bytes, each<16KiB; producer inventory 13729bytes. Local run directory including compiled kernels, raw output, inputs and logs totals 419273bytes. No cold-storage destination is assumed.
+
+Executed final validation rehashed every certificate/input/source-snapshot/binary/raw-native artifact against the inventory, rehashed all seven preregistered code identities, parsed all gzip envelopes and confirmed complete=true, pending0, accepted=false, exact degree order37–40, actual exit0, no watchdog stop and each measured CPU<1800s. New launcher Python syntax parsed successfully. This is producer/provenance validation only; it does not replay the mathematical predicates or approve any certificate. The separate checker owns its receipts and acceptance. No historical producer/checker/source/theory/evidence record was modified. Orchestrator owns copying small essential gzip files and all shared/Git integration.

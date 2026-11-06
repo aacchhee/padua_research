@@ -137,3 +137,37 @@ expose serving metadata. Root alone owns Git and shared records.
 No mathematical development, model computation or fit is claimed in this
 gate-preparation record. The first substantive checkpoint must report a
 uniform chart/remainder or a precise obstruction with its one repair.
+
+## Round-4 outcome — after published boundary bda45a4
+
+The primary phase-only target (H4) is **PROVED** at its preregistered
+scope in [N1-08](../theory/N1-round4-endpoint-block.md), with explicit
+e4=e_mesh+e_rows+e_collision and the stronger bound K4(1+log n)/n.
+Its coefficients have no degree-dependent summation count. The separate
+supporting results are [N1-06](../theory/N1-round4-mesh.md), compact mesh
+sums including cutoff rounding and the a->0 boundary layer, and
+[N1-07](../theory/N1-round4-rows.md), finite polynomial rows with uniform
+sinc charts, vertices and collisions. No microscopic-coordinate or parity
+correction was required, and no model correction was spent.
+
+The exact budget test also gives a scoped negative result:
+[PD-N?argmax-bridge-codex-N1-01](../theory/N1-round4-budget.md).
+The unmodified sum E_(n,R)+e4 of the stated upper bounds exceeds 3/50
+at zero phase for every admissible R and n<=10^6. The independent-error
+assembly variant is therefore **REJECTED: failed** for half-margin
+budgets with gamma<=3/25 in that range. H4 and the true profile are not
+rejected; the negative statement concerns this specific upper-bound
+formula. No unproved comparison margin is substituted for gamma.
+
+Verdict: **STOP that unchanged certificate for the stated small-margin
+scope. GO only to a specifically gated correction of its coupled error,
+or to a proved larger class margin, after the parent's next boundary.**
+The retained pole-jump/sawtooth correction is untested and remains the
+one permitted model repair. Central and interior compactification and
+the full comparison remain OPEN. No onset or B3/B4 PASS is claimed.
+
+All conclusions above are analytic. No mathematical computation, phase
+sample, fit or numerical optimization was performed. Distinct review of
+the frozen proof files is requested by root; the parallel child's
+contributions and bounded cross-checks are described in the theorem
+records. No additional round begins before the parent's authorization.

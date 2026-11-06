@@ -17,8 +17,8 @@ def rational(x):
     return F(x)
 
 class Kernel:
-    def __init__(self):
-        binary,self.provenance=build_snapshot.build()
+    def __init__(self,kernel_variant="baseline"):
+        binary,self.provenance=build_snapshot.build(kernel_variant)
         self.lib=ctypes.CDLL(str(binary)); self.fn=self.lib.phase_bounds
         self.provenance['loaded_dependency_closure']=build_snapshot.loaded_closure(self.provenance)
         self.fn.argtypes=[ctypes.c_int]+[ctypes.c_double]*4+[ctypes.POINTER(ctypes.c_double)]
@@ -162,14 +162,16 @@ def strict_json(raw):
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('candidate',type=pathlib.Path);ap.add_argument('--output',type=pathlib.Path)
-    ap.add_argument('--max-leaves',type=int);args=ap.parse_args();t=time.process_time()
+    ap.add_argument('--max-leaves',type=int)
+    ap.add_argument('--kernel',choices=tuple(build_snapshot.KERNEL_SOURCES),default='baseline')
+    args=ap.parse_args();t=time.process_time()
     # One byte snapshot supplies both the checked object and its identity.
     raw=args.candidate.read_bytes();candidate_sha=hashlib.sha256(raw).hexdigest()
     provenance=None
     python_paths=[pathlib.Path(__file__),pathlib.Path(build_snapshot.__file__)]
     python_sources=[build_snapshot.identity(p) for p in python_paths]
     try:
-        data=strict_json(raw);kernel=Kernel();provenance=kernel.provenance
+        data=strict_json(raw);kernel=Kernel(args.kernel);provenance=kernel.provenance
         report=check(data,kernel,args.max_leaves)
         if python_sources!=[build_snapshot.identity(p) for p in python_paths]:raise Invalid('checker Python source changed during replay')
         if build_snapshot.identity(pathlib.Path(provenance['checker_binary']['path']))!=provenance['checker_binary']:raise Invalid('checker binary changed during replay')
