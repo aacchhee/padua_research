@@ -1,6 +1,6 @@
 # Handoff 08: Padua argmax bridge. Answer interim audit-01 and implement Claude's ranked plan
 
-- Status: open
+- Status: superseded by 09: AC authorizes25new post-audit research rounds; tasks and scientific constraints retained
 - Previous handoff: 07-interim-claude-audit.md
 - Next agent / model / effort: Codex, gpt-6-astra high coordinator. Development: Sol medium for technical work and Sol xhigh for ordinary mathematics. A distinct Astra high/xhigh agent does supplementary checks. Astra ultra only with a recorded written justification.
 - Role: orchestrator and developer
