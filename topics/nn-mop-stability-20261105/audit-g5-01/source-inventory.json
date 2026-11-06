@@ -1,0 +1,137 @@
+[
+  {
+    "path": "IEP-MOP-main/LICENSE",
+    "bytes": 1219,
+    "sha256": "cf2b7d575937d93892019e4b12bacc5b137256319832c911f5eefdc9a3615ca7"
+  },
+  {
+    "path": "IEP-MOP-main/README.md",
+    "bytes": 1656,
+    "sha256": "0a7e9553aa851cff9cf0012eab24bdfd349f72fd2913e98a733e74c6d9e2c41c"
+  },
+  {
+    "path": "IEP-MOP-main/figures/experiment-backward_error-nodes.jpg",
+    "bytes": 265794,
+    "sha256": "5f1585ac227d7bf45217e7f5f2ab7e25aab2203c99a66f6f124f953c9936c685"
+  },
+  {
+    "path": "IEP-MOP-main/figures/experiment-backward_error-weights.jpg",
+    "bytes": 258188,
+    "sha256": "e625929303ac6876541c17ed3e28f949aa6b85bfdb857cd8736dbe206a2c6b8e"
+  },
+  {
+    "path": "IEP-MOP-main/figures/experiment_MP-equid.jpg",
+    "bytes": 198774,
+    "sha256": "49e48337c7785907e5cbe328c48f5d7fc727cc6a12b597ae27c258a7c78ddea8"
+  },
+  {
+    "path": "IEP-MOP-main/figures/experiment_forward_error.jpg",
+    "bytes": 246148,
+    "sha256": "cd0107f2fc39e7b529f219b285de4d806a03d89a7aae7789a93e3ba8b74b71f4"
+  },
+  {
+    "path": "IEP-MOP-main/figures/experiment_reorth_strat-equid.jpg",
+    "bytes": 170251,
+    "sha256": "0e7077af3a353a4988193e9537109efebeb619cdf00b0c1668465ad45877f4c9"
+  },
+  {
+    "path": "IEP-MOP-main/src/algorithms/IEP_CORE.m",
+    "bytes": 9120,
+    "sha256": "1c58dcc89f65c8f3885efc174773f7113deeacca47f95d9f7856948d1d852acd"
+  },
+  {
+    "path": "IEP-MOP-main/src/algorithms/IEP_CORE_MP.m",
+    "bytes": 9470,
+    "sha256": "fd499c52a75f8c337db5415ddfc7b81e5bfc415799d6c835e670f9e7d0936e59"
+  },
+  {
+    "path": "IEP-MOP-main/src/algorithms/IEP_KRYL.m",
+    "bytes": 2247,
+    "sha256": "434415e46af42e7443015836424a99c0400a03647d4805f30b8841a51b435384"
+  },
+  {
+    "path": "IEP-MOP-main/src/algorithms/IEP_KRYLREORTH.m",
+    "bytes": 6894,
+    "sha256": "4af870386b7afc920e4fb66cce08076d5d7c9bf7c62fdf1888a2c7ee61449e90"
+  },
+  {
+    "path": "IEP-MOP-main/src/algorithms/IEP_KRYLREORTH_MP.m",
+    "bytes": 3234,
+    "sha256": "aa5e9f8198d575b8d36190b9fa775be106a9946d162765e96a573cbace89446c"
+  },
+  {
+    "path": "IEP-MOP-main/src/algorithms/IEP_KRYL_MP.m",
+    "bytes": 2787,
+    "sha256": "2cfd10a20efca7a8e49b9b420e7623bc182a31663d32722c0b2043160f87c25a"
+  },
+  {
+    "path": "IEP-MOP-main/src/experiments/backward_error.m",
+    "bytes": 5375,
+    "sha256": "a1306064fbbb11b95c92fb32f40322811616fbb43a341043d56539eb58e7a6a3"
+  },
+  {
+    "path": "IEP-MOP-main/src/experiments/experiment_Hahn_Kravchuk.m",
+    "bytes": 3596,
+    "sha256": "59afdb5b5862aced833cc922fee21389f9eafe79a9ec072fea4b9819a949049b"
+  },
+  {
+    "path": "IEP-MOP-main/src/experiments/experiment_MP.m",
+    "bytes": 3409,
+    "sha256": "7444a5309f3d546b32b334b4637c8193bf4058ef52af378a65caeffec6164b6b"
+  },
+  {
+    "path": "IEP-MOP-main/src/experiments/experiment_reorth_strat.m",
+    "bytes": 2463,
+    "sha256": "7ca37090815c10ad2e048c581004e17c98704c4c1dce2f8e50c155b77b87e139"
+  },
+  {
+    "path": "IEP-MOP-main/src/experiments/forward_error.m",
+    "bytes": 2892,
+    "sha256": "4230545ee4bc4bb3e0cdee5575818eeb500ef7ba3ae0236c3a39734967cc7bb5"
+  },
+  {
+    "path": "IEP-MOP-main/src/utils/IEP_initial_data.m",
+    "bytes": 478,
+    "sha256": "29cbe9a8756757cc6573107c5392d31216edbf385960ebcdab8f04d797a93261"
+  },
+  {
+    "path": "IEP-MOP-main/src/utils/LU_nopivot.m",
+    "bytes": 742,
+    "sha256": "cc695426ad242421a7e44b01367df47bc5a08fdbcc82257a366acfe36a5415c4"
+  },
+  {
+    "path": "IEP-MOP-main/src/utils/LU_nopivot_MP.m",
+    "bytes": 640,
+    "sha256": "edc74dfe27399ed3c3d5b72a4701d7f487d30e13a9bb8169693e27b7841831ed"
+  },
+  {
+    "path": "IEP-MOP-main/src/utils/hahn_data.m",
+    "bytes": 792,
+    "sha256": "f22c26e47304e6d4d33fde1cc8661c8335275d87cbee09044db013ea3b4d0fa6"
+  },
+  {
+    "path": "IEP-MOP-main/src/utils/hahn_exact.m",
+    "bytes": 3217,
+    "sha256": "3e7de6c4423b44d2352e14d42b472efac3cef9a9625f4d3dee6a575acd4d4d03"
+  },
+  {
+    "path": "IEP-MOP-main/src/utils/kravchuk_data.m",
+    "bytes": 510,
+    "sha256": "3c53e00e3209068d072ad886d5c3171616fdfb7719286a73c9b9e531c8a7d1d8"
+  },
+  {
+    "path": "IEP-MOP-main/src/utils/kravchuk_exact.m",
+    "bytes": 1477,
+    "sha256": "d776d82f902f7f75de8a1a724495eb236dc27f8320f7faf303b34fb4db0f482f"
+  },
+  {
+    "path": "IEP-MOP-main/src/utils/nodes_weights.m",
+    "bytes": 2665,
+    "sha256": "d57234ffec402be2ac81e6a6d497d9cd254b08fd6c1b8ce7e868a71a5d5a88ab"
+  },
+  {
+    "path": "IEP-MOP-main/src/utils/nodes_weights_MP.m",
+    "bytes": 3009,
+    "sha256": "cb9da4b42f27cc5215d3d215d4616aa3464ce60ab7496c57bcbf2d7eac6ce246"
+  }
+]
