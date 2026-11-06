@@ -1,7 +1,7 @@
 # NN MOP IEP: conditioning and stable algorithms: log
 
 - Branch: `codex/nn-mop-stability-20261105` · Initial base: main `b4d292e`; reconciled main `5adc3e2` (PR #24 merged) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR (prepared; distinct Claude readiness check required) · Next: `Claude (Opus 5.5 high): Continue codex/nn-mop-stability-20261105.` · Next handoff: [handoffs/07-readiness.md](handoffs/07-readiness.md).
+- Stage: PR, readiness accepted ([readiness-01](readiness-01.md)); awaiting AC's merge decision. All assigned agent work is complete; handoff07 is closed and there is no open handoff.
 - Reserved final-ID ranges: T432–471, N=162–177, IDEA530–569, LIT614–629; assigned T432–449/N162–168/IDEA530–555/new LIT614; remaining headroom stays permanent. See ALLOCATIONS.md.
 - Claims: analytic/exact PROVED and floating MEASURED records in theory/; general solver stability and matching sharp growth remain OPEN. [Claude audit-01](audit-01.md): no BLOCKING; four MAJOR findings answered in [response-01.md](response-01.md); [audit-02](audit-02.md) accepted the response, with eight MINOR items for preparation.
 - Open for AC: none (2026-11-06 decisions below). Ask AC before using Syvert.
@@ -164,3 +164,18 @@ The D6/D7 gate and its prospective tests were written before the diagnostic. The
 - The final-ID/hygiene finite normality receipt still passes61 sizes/43,676 exact checks and all code pins; its61 data rows remain unchanged. No algorithm, fit, measurement table or exact certificate input changed. G5 status now consistently states the accepted one-configuration reproduction and unrun topic-metric comparison, with the auditor's direct paper-data verification limitation explicit. No stable-solver theorem or G4 PASS.
 - Stage remains PR; PR28 remains draft, no readiness/merge request. Hand off prepared registry diff and hygiene confirmation to Claude Opus5.5high. Only AC merges.
 - Handoff: [handoffs/07-readiness.md](handoffs/07-readiness.md).
+
+## 2026-11-06 — Claude, Opus 5.5 high — readiness check (handoff07)
+
+- Rules read at `578bb1e` (unchanged since main `f654e32`). Prepared input `dd092fb74b3030fe28dd8dd221ef59e0e80b2b72`. Two Claude Opus subagents checked the registry diff (S1) and R-1 to R-8, invariance, the manifest and the checkers (S2). The orchestrator did the reservation refresh and the G5 paper-data verification.
+- [readiness-01](readiness-01.md): **READY** for AC's merge decision; no BLOCKING or MAJOR.
+  - The registry application matches id-map and the records exhaustively, with 202 links resolved and no foreign ID touched.
+  - R-1 to R-8 are confirmed. No accepted claim or number changed. All 69 manifest rows and both input fields match.
+  - The normality checker passes (61 sizes, 43,676 checks) and the G5 artifact check passes, with the archive verified.
+- Ten MINOR record items were fixed in place under the round-3 rule, in separate commit `7c97833` (listed in readiness-01). One proposal was declined (R-M5: D2 gate options, already handled under audit-01 MINOR 8).
+- G5 paper data: Claude re-downloaded the arXiv bundle, byte-identical (`f736e8f0…`), and authenticated the gate reference value 6.85119133277418e-10. `cmp.py` regenerates compare.txt byte-identically. Codex's Octave 9.4 rerun also passes the gate against the paper (log10 ratio −0.406).
+- Reservation refresh:
+  - Heads checked: main `f654e32`, open PR #27 `4b728b0`, PR #28 `dd092fb`. Every other PR is merged.
+  - Assigned T432–449, N162–168, IDEA530–555 and LIT614 lie inside this topic's own reservation, with no collision.
+  - Rerun the check before merge if any ledger changes.
+- Topic work complete; handoff07 closed in the following commit. Decision requested from AC: squash-merge PR #28, accepting the stated scope and limits. Only AC merges.
