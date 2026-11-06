@@ -81,3 +81,8 @@ alone. The direct outer model remains degree-dependent; no runtime bound
 is asserted. Paper proof only, 2026-11-06 bounded D35 block, rules/input
 eb9329c28be18d77eeb817f634202d626ee11f92, requested Astra ultra with serving
 metadata unexposed. Gate/attempt are the D35 ordinary records.
+
+
+## Root review closure — 2026-11-06
+
+Distinct adversarial [D35 review](../independent-checks-D35-ordinary.md), SHA256 `781e1077eb52c87e4f9f1718a0d658c3f8a342b0db3733c15c8ac1851c31083e`, accepts all three frozen scopes without unresolved findings. Root adopts the6PH_n/n ordinary perturbation, its fixed-row application and complete near allowance at their exact stated domains/exclusions. All pole jumps, roots, actual shifted-grid sampling and unchanged Cnear/uE0 charges were reconstructed. No new onset or numerical job follows from this support alone; D13 full relative remains OPEN. Reviewed prefix is preserved; final Claude audit is separate.

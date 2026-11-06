@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **31/40** (D01–D30 and D32). Active: **D31**; D33 analytic source review, D34 first-source findings, D35 review and D37 final analytic paper block.
+Completed: **32/40** (D01–D30, D32 and D35). Active: **D31**; D33 analytic source review, D34 first-source findings, D35 review and D37 final analytic paper block.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -84,5 +84,5 @@ AC clarification: pack preparation waits until research ends and is necessary on
 D21/D28 same6912 complete artifact independently accepted: whole469.521049→74.034199CPU, point-sum422.056155→70.122665, scoped finitecomparison only. D23 independent fresh matched2048pair alsoaccepted. D29/D30/D32 paper scopes independentlyaccepted; D31near2048andD33far/global2048 remainOPEN pendingendpoints/replay.
 
 | D33 | REVIEW | Whole2048 analytic assembly | Fixedtwo-gate2048source frozen, newnear result also required; no endpoint yet. |
-| D35 | REVIEW | Sharper ordinary-row perturbation | Developer6PH/n support/fullallowance frozen, adversarial reviewpending; no jobs. |
+| D35 | COMPLETE | Sharper ordinary-row perturbation | Independentlyaccepted6PH/n ordinarysupport/fixedrow/fullnearallowance; no jobs/onsetclaim. |
 | D37 | ACTIVE | Final1024 analytic feasibility | Coordinatedwide-relative/directional-constant/Lagrange paperblock, fixed1024only ifallcomponentproofsclose; nojobs. |

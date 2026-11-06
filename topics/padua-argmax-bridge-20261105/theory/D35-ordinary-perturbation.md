@@ -224,3 +224,8 @@ not follow from (3) alone. No scalar/native/root/quadrature/threshold job
 was run. Gate/attempt: ../ideas/D35-ordinary-perturbation.md and
 ../attempts/D35-ordinary-perturbation.md. Written 2026-11-06 in the bounded
 30min parent-assigned Astra-ultra paper block; serving metadata unexposed.
+
+
+## Root review closure — 2026-11-06
+
+Distinct adversarial [D35 review](../independent-checks-D35-ordinary.md), SHA256 `781e1077eb52c87e4f9f1718a0d658c3f8a342b0db3733c15c8ac1851c31083e`, accepts all three frozen scopes without unresolved findings. Root adopts the6PH_n/n ordinary perturbation, its fixed-row application and complete near allowance at their exact stated domains/exclusions. All pole jumps, roots, actual shifted-grid sampling and unchanged Cnear/uE0 charges were reconstructed. No new onset or numerical job follows from this support alone; D13 full relative remains OPEN. Reviewed prefix is preserved; final Claude audit is separate.

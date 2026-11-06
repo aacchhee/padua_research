@@ -865,3 +865,11 @@ Report600b3956... ACCEPTS both frozen proofs with no unresolved findings. Root a
 
 - D31 prerelease51b572c3... ACCEPTS frozena22506a7.../SPEC76c7ff66... exact-radical2048reduction/source. RootreleasesEXACTevaluate--run-once2048ONLY afterthispublication, <=5CPU/nochildren. No threshold/phase/precision/source/caprescue/retry. Near2048OPENuntilprimaryPASS/observedEXIT0andfreshindependentreplay.
 - D34 firstFREEZE28897ba9... isUNRELEASED. Firstsourceauditor d743fe40... recordsF1wrongattemptpath(staticratherthanadaptive) andF2effectivewalllimits1000/1100versuscontract900/1000. Fullremainingmath/source/resourceinspectionfindsnoadditionalissuewithincoverage. No import/controls/native/producer/job/lockwasexecuted. RootpublishesfirstcandidateANDfindingsbeforeauthorpath/wall-onlyrepair/focusedreview. No sourcepatchduringaudit,noattemptconsumed.
+
+
+### D31 first endpoint; D33 release; D35 adopted
+
+- D31first2048primaryexecutedexactfrozencommandonceaftere5c3publication; directtoolchunk49286bEXIT0. Passedtrue/all17controls, totalnear<.031031918315289<.03115; positivegate>.0001180816847116292, CPUcheckpoint.033517. OwnfreshAstraxhighreplaynowreleasedundernewsource/SPEC/cap10; no near2048adoptionuntilfinalACCEPT. PrimaryJSONpreservedunchangedincode/post_audit_D31_near/budget-2048.json.
+- D33prerelease2671d4a4... ACCEPTS unchangedsource54eea390.../FREEZE00af3dca... andconditionalfar/global2048assembly. RootreleasesEXACTfixed2048two-gate evaluate--run-once afterthispublication, <=5CPUwhole/nochildren; BOTHFin/Foutmustpass. Independentfreshpair/resultreviewrequired; globalALSOrequiresD31finalnear. No source/case/precision/parameter/caprescue/retry.
+- D35review781e1077... ACCEPTS allthreefrozenanalytic scopes, nojobs. Rootadoptsordinary6PH_n/n andfullychargedapplications; no newonsetfromsupportalone. D35complete, total32/40(D01–D30,D32,D35). D37wider-domainpaperusesacceptedD35butremainsunadopted.
+- D34firstsource/findingse5c3publishedbeforefocusauthorrepairauthorization. Sourcepath/wall-onlyresponseinprogress, no attempt/native/controlsexecuted; sourceunreleaseduntilfocusedreviewandnewpublication.
