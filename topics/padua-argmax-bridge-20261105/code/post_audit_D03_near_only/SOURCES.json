@@ -1,0 +1,38 @@
+{
+  "status": "pre-execution source inventory only; pilot not run",
+  "rules_input_head": "f1ba23cfbfb557dd491730f9837f5efe413e7c75",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_float_v3.py",
+      "bytes": 10355,
+      "sha256": "5031d423d292ea41c41b12f9385a492e7b2b3b98620e7d46994ed925856dab3a"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_meanvalue.c",
+      "bytes": 3606,
+      "sha256": "4739e36d05d75ce4389118364a2e2a693d2b14d87a8b79e84aa5199d6bb6a86a"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+      "bytes": 1510,
+      "sha256": "692d4afd89d3bbda3bac3daaeef7c56aa4ecdde0f9cdd32b9fefa0e296adc365"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/box_pilot.c",
+      "bytes": 4359,
+      "sha256": "92f111e0c58c59de32490118a30d88b26de356a93e0ec7251928059e1f2f4d0b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D03_near_only/pilot.py",
+      "bytes": 12177,
+      "sha256": "32c6940afc45023b6a9c9082f59586db77634d31f3bad8301e4698269737c1e9"
+    }
+  ],
+  "source_candidate_history": [
+    {
+      "sha256": "70b11d63b0bb2dc666fe6304970acf9cd62e9377813bac9762abc5efae3bedb8",
+      "status": "unexecuted first freeze; superseded after distinct source review",
+      "locator": "local-output/argmax-bridge-20261105/post-audit-D03/near-only-preparation/freeze-01/"
+    }
+  ]
+}
