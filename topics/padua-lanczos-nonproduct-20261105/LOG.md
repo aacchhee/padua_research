@@ -360,3 +360,12 @@ recorded by the final inventory.
 - Development outputs, report and small evidence are complete. Handoff02
   requests the single substantive Claude audit, including canonical protocol
   and storage-budget issues, before final IDs/registration/readiness.
+
+## 2026-11-06 — Claude audit 01
+
+- Claude, configured claude-opus-5-5 xhigh, auditor and topic orchestrator. Rules read at `b5d2d5de5395889e98443fc0aa4776982c41617a`, which matches main `be9a831`. Audited input `38237fe`. Five independent Opus subagents were given disjoint scopes (P3, P5, P4 with P1/P2, P6 reruns, novelty/protocol); only the orchestrator writes to Git.
+- **AC decision, 2026-11-06 (canonical record):** "Do not worry about storage, this will be an own cleanup topic. As long as everything is under 10mb, do not take cleaning actions."
+  - This settles handoff 02 item 7 and the [storage-budget observation](#canonical-storage-budget-observation) for this topic.
+  - Measured totals are 5,489,510 bytes of JSON/compressed data and 5,868,931 bytes of all data-like files, both under 10 MB.
+  - No cleanup action is taken.
+- Audit report: [audit-01.md](audit-01.md).
