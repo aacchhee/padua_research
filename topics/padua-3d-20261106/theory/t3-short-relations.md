@@ -132,3 +132,10 @@ constants. The all-degree total-degree polylog target stays OPEN.
 2026-11-06, Codex T3, assigned model `gpt-6.1-sol` xhigh (resolved runtime metadata not
 exposed), rules ccd9e905. Gate and IDEA record preceded derivation. T1
 confirmed separation from its reflection-invariant subgroup classification.
+
+## Supplementary check addendum — 2026-11-06
+
+[Distinct Astra high check](../independent-checks-computation.md) completed
+within its stated scope, including actual separate execution. Earlier
+pending-check wording records the development state. Required Claude
+substantive audit remains due; this addendum changes no mathematical claim.

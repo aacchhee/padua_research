@@ -12,7 +12,13 @@ Nodes (cos(2πk/M),cos(2πkb/M),cos(2πkc/M)), k=0,...,19. First coordinate dist
 
 ## Status by part
 
-Overall status: MEASURED exact finite screen, computer-proof acceptance pending independent checker execution. Candidate disposition: REJECTED: failed only for an every-degree rule that uses this normalized odd-cyclic slice at n3. Even-degree subsequences and other orders/phases remain OPEN.
+Overall status: **PROVED**, computer-assisted finite obstruction. The written
+reduction, committed 171-case null cover, exact standalone checker and actual
+distinct-agent replay discharge the finite obligation. Candidate disposition:
+REJECTED: failed only for an every-degree rule that uses this normalized
+odd-cyclic slice at n3. Even-degree subsequences and other orders/phases
+remain OPEN. Detailed rank distributions remain MEASURED; the proved
+statement needs only the checked nonzero null polynomials.
 
 ## Negative-result scope
 
@@ -28,6 +34,11 @@ The normalized search space is exactly the171 pairs from combinations({1,...,19}
 
 The full exact-rank screen separately reports max19/20 at n3. More detailed rank distributions are MEASURED and have no universal content.
 
+Trusted computation: Python integer arithmetic and the committed checker's
+finite coverage/exponent expansion. The algebraic reduction is written above;
+no floating rank decision, large scratch file or unread literature theorem
+is trusted. Supplementary independent checking does not replace Claude audit.
+
 ## Checks
 
 Developer executed:
@@ -39,8 +50,30 @@ Evidence receipts: t2-generators.json and t2-cover-check.json. The latter checks
 
 ## Sources / scope / open items
 
-No literature theorem used. Independent execution required before PROVED computer-assisted status. T3 may extend the normalized class by unit reparameterization and short-axis arguments; that is a different record. Higher-degree even subsequences, rational phases and unions remain OPEN. Resume positive work only for a concrete separated correction that both removes displayed nulls and addresses the n4 quality deficit.
+No literature theorem used. Independent execution is now complete; see the
+dated addendum below. T3 extends the normalized class by unit
+reparameterization and short-axis arguments in a different record.
+Higher-degree even subsequences, rational phases and unions remain OPEN.
+Resume positive work only for a concrete separated correction that both
+removes displayed nulls and addresses the n4 quality deficit.
 
 ## History
 
 2026-11-06; all pair domains/rank methods preregistered after fixed-formula kills and before exhaustive screen. Actual developer model gpt-6.1-sol medium. Rules ccd9e905d19c0c625c196c4a3f3e707058ed042a. Canonical dictionary consolidated with T3-01, no duplicate PD-T.
+
+### Independent replay addendum — 2026-11-06
+
+A distinct Astra high checker executed the standalone checker and the complete
+generator census in an isolated checkout at
+`a1cce96d6c936d36d2f0e302585a94e5fd735f48`, and separately reconstructed
+all witness Laurent expansions using Fraction convolution. All passed.
+Input SHA-256 `ab78e752e646a880d305fc76c711808b7f8ac31e37546a25c5c05f623300eb2a`;
+checker SHA-256 `3b52ba33640a3f46971d4e86ab345d68af653fcf011fc25600ac631d4eb2a59f`.
+See [independent check](../independent-checks-computation.md) and its separate
+receipt for exact commands, hashes and scope. The original same-agent-run
+description above is retained as execution history.
+
+Coordinator Codex Astra high upgraded the finite obstruction from MEASURED
+to PROVED only after this distinct-agent replay and separate reconstruction.
+Statement and scope are unchanged; no rank-distribution or all-degree-family
+claim was upgraded. Required Claude audit remains due.

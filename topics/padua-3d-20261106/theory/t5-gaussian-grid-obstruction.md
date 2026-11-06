@@ -146,3 +146,10 @@ General support minimization and the universal 3D problem remain OPEN.
 `ccd9e905d19c0c625c196c4a3f3e707058ed042a`: candidate registered after
 D4 and before the support execution; exact check and hand proof written.
 The original broader minimal-cubature target is not narrowed or closed.
+
+## Supplementary check addendum — 2026-11-06
+
+[Distinct Astra high check](../independent-checks-computation.md) completed
+within its stated scope, including actual separate execution. Earlier
+pending-check wording records the development state. Required Claude
+substantive audit remains due; this addendum changes no mathematical claim.

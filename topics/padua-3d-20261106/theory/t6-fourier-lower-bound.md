@@ -168,3 +168,10 @@ literature first, then wrote this explicit known-mechanism proof. During
 writeup the general-d inverse-coordinate coefficient was corrected from
 d-2 to d-3, and an unneeded d2 extension was removed before acceptance.
 The original T6 target was d3 throughout; no 2-D theorem is claimed here.
+
+## Supplementary check addendum — 2026-11-06
+
+[Distinct Astra high check](../independent-checks-math.md) completed
+within its stated scope, including actual separate execution. Earlier
+pending-check wording records the development state. Required Claude
+substantive audit remains due; this addendum changes no mathematical claim.

@@ -171,3 +171,10 @@ Independent mathematical audit and finite rerun. Broader class target:
 
 2026-11-06, Codex, assigned gpt-6.1-sol xhigh, rules/input SHA above.
 Proof written after the recorded T1 gate. No source novelty is asserted.
+
+## Supplementary check addendum — 2026-11-06
+
+[Distinct Astra high check](../independent-checks-math.md) completed
+within its stated scope, including actual separate execution. Earlier
+pending-check wording records the development state. Required Claude
+substantive audit remains due; this addendum changes no mathematical claim.

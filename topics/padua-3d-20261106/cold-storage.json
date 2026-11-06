@@ -1,0 +1,46 @@
+{
+  "schema": "padua-cold-storage-v1",
+  "slug": "padua-3d-20261106",
+  "source_commit": "7407e13a0fb7b4ddbeb846d24c765fda0bd4f13c",
+  "entries": [],
+  "total_bytes": 0,
+  "note": "No archived payload. The pending_local_working_outputs below are regenerable scratch, not retrievable cold-storage deliveries. Essential H39 null cover is committed.",
+  "pending_local_working_outputs": [
+    {
+      "working_path": "/tmp/padua-3d-20261106/t2-generators-n2.json",
+      "bytes": 3910,
+      "sha256": "fb03bcc64a3033fc182a06e0ad36149537642859abc718303ec38603e130b04e",
+      "code_source_commit": "7407e13a0fb7b4ddbeb846d24c765fda0bd4f13c",
+      "generator_blob": "6e84908f9a6aca93fa44f36b1077a34bb1c4d086",
+      "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t2_generators.py",
+      "checker_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t2_generators.py",
+      "summary": "evidence/t2-generators.json",
+      "retention": "regenerate on demand; no proof dependency on raw catalogue",
+      "archival_delivery": "NOT PERFORMED"
+    },
+    {
+      "working_path": "/tmp/padua-3d-20261106/t2-generators-n3.json",
+      "bytes": 20603,
+      "sha256": "22ea8cecb76a012709adf339a8302a2873d4511477804f27b33cc1b70123afc4",
+      "code_source_commit": "7407e13a0fb7b4ddbeb846d24c765fda0bd4f13c",
+      "generator_blob": "6e84908f9a6aca93fa44f36b1077a34bb1c4d086",
+      "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t2_generators.py",
+      "checker_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t2_generators.py",
+      "summary": "evidence/t2-generators.json",
+      "retention": "regenerate on demand; no proof dependency on raw catalogue",
+      "archival_delivery": "NOT PERFORMED"
+    },
+    {
+      "working_path": "/tmp/padua-3d-20261106/t2-generators-n4.json",
+      "bytes": 71010,
+      "sha256": "e7a66ff9bf1329598503d3d5cc27a08023f6b7bc8b3cf4743fc775e25e34ffa6",
+      "code_source_commit": "7407e13a0fb7b4ddbeb846d24c765fda0bd4f13c",
+      "generator_blob": "6e84908f9a6aca93fa44f36b1077a34bb1c4d086",
+      "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t2_generators.py",
+      "checker_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t2_generators.py",
+      "summary": "evidence/t2-generators.json",
+      "retention": "regenerate on demand; no proof dependency on raw catalogue",
+      "archival_delivery": "NOT PERFORMED"
+    }
+  ]
+}

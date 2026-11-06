@@ -188,3 +188,10 @@ row-selection map must be analyzed separately.
 exposed), pinned rules ccd9e905. Gate and candidate records preceded this
 derivation; T2 supplied its explicit unshifted cyclic definition. No
 shared-file changes or Git mutations.
+
+## Supplementary check addendum — 2026-11-06
+
+[Distinct Astra high check](../independent-checks-computation.md) completed
+within its stated scope, including actual separate execution. Earlier
+pending-check wording records the development state. Required Claude
+substantive audit remains due; this addendum changes no mathematical claim.

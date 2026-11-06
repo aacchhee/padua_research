@@ -10,8 +10,9 @@ Let z be any integer triple and
 
     X(z)={(cos(2*pi*k*z_j/39))_(j=1)^3:0<=k<39}.
 
-Under the finite-cover obligation H39 below, evaluation of Pi_3(R^3) on
-X(z) is never injective. In particular no such unshifted image with 20
+Evaluation of Pi_3(R^3) on X(z) is never injective. The finite-cover
+obligation H39 below has been discharged by committed exact witnesses and
+distinct-agent execution. In particular no such unshifted image with 20
 nodes is unisolvent for Pi_3. This is degree 3 and parameter modulus 39
 only; it is not an all-degree cyclic-family exclusion.
 
@@ -29,13 +30,13 @@ obligation, not a literature assertion or an inherited proof.
 
 ## Status by part
 
-Overall status: **CONDITIONAL** on H39's accepted exact certificates and
-independent replay. The analytic reduction from arbitrary z to H39 is
-proved below; this minor reduction does not upgrade the original target
-or the incomplete computer-assisted conclusion.
+Overall status: **PROVED**, computer-assisted finite statement, using the
+hand reduction below and the now-discharged H39 finite cover. The original
+all-degree construction target is not upgraded. Computation trust and
+independent-replay identities are explicit in the normalized-cover record.
 
 Candidate disposition: retained scoped negative extension of the T2
-screen, conditional as stated; not a surviving-family result.
+screen; not a surviving-family result.
 
 ## Negative-result scope
 
@@ -56,12 +57,13 @@ whose exact command is:
 
 Input SHA-256: `ab78e752e646a880d305fc76c711808b7f8ac31e37546a25c5c05f623300eb2a`.
 Checker SHA-256: `3b52ba33640a3f46971d4e86ab345d68af653fcf011fc25600ac631d4eb2a59f`.
-T2's same-agent run passed; T3 did not execute that checker. Its canonical
-normalized claim is `PD-N?padua-3d-codex-T2-02`,
-[normalized screen](t2-normalized-screen.md), MEASURED pending independent
-replay. T2 reported all 171
-normalized rows deficient, maximum rank 19; this report is not substituted
-for an independent replay.
+T2's original same-agent run passed; T3 did not execute that checker.
+The subsequent distinct-agent execution and separate reconstruction have
+discharged the obligation. Its canonical normalized claim is
+`PD-N?padua-3d-codex-T2-02`,
+[normalized screen](t2-normalized-screen.md). The proof uses the checked
+nonzero null polynomials, not the maximum-rank report. See the separate
+[independent check](../independent-checks-computation.md).
 
 ## Proof of reduction
 
@@ -93,16 +95,16 @@ T3-01. In every case evaluation fails to be injective. ∎
 
 This reduction is hand-proved and requires no extra generator search.
 No new external source is invoked; no historical novelty is claimed.
-The extension must not be marked a completed computer-assisted PROVED
-result until the H39 code/evidence identities and actual separate replay
-are recorded. The all-degree total-degree polylog target remains OPEN.
+H39 code/evidence identities and actual separate replay are recorded in
+the linked independent check and in `t2-normalized-screen.md`. The
+all-degree total-degree polylog target remains OPEN. Required Claude
+audit remains separate from these supplementary checks.
 
 ## Open items
 
-Coordinator: attach the exact T2 checker command and its independent
-replay receipt; then review whether the finite obligation is discharged
-and whether the claim status may be upgraded. No extension from M=39 to
-all odd moduli is justified by this reduction.
+The finite obligation is discharged. No extension from M=39 to all odd
+moduli is justified by this reduction; arbitrary phases and unions also
+remain outside its scope. Required Claude audit remains due.
 
 ## History
 
@@ -110,3 +112,9 @@ all odd moduli is justified by this reduction.
 exposed. Parent and T2 independently suggested the nonunit split; this
 file supplies the complete normalization and boundary cases without
 claiming an independent rerun of T2's certificates.
+
+2026-11-06, coordinator Codex Astra high: changed CONDITIONAL to PROVED
+after the distinct Astra checker actually executed H39 and separately
+reconstructed all 171 witnesses. The statement's n=3/M=39/zero-phase scope
+and the analytic reduction are unchanged. This does not upgrade an
+infinite-degree target.

@@ -29,4 +29,17 @@ actual reading coverage. Third-party papers/extracts stay out of Git.
 
 ## Direction reading records
 
-Pending integration of workers' actual readings. No new final LIT IDs assigned.
+- [T1](literature-T1.md): reflection-class comparison; partial primary
+  Dencker–Erb coverage, no historical priority claim for the obstruction.
+- [T2](literature-T2.md) and [T3](literature-T3.md): known cyclic character
+  mechanism and explicit source coverage limits.
+- [T4](literature-T4.md): standard stacking/determinant background; no new
+  fulltext novelty comparison for the monotone-growth theorem.
+- [T5](literature-T5.md): known commuting-extension context, with partial
+  readings distinguished from self-contained exact reconstruction.
+- [T6](literature-T6.md): primary Subbotin1983 source match for the universal
+  comparison and logarithmic order, and precise DEKL2017 Fourier coverage.
+
+No final LIT IDs are assigned. Existing-source aliases must be consolidated
+at PR preparation; Subbotin is a newly located provisional source. The
+local mathematical proofs do not depend on an unread source theorem.

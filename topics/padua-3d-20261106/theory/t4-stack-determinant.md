@@ -82,3 +82,10 @@ Independent mathematical audit pending. For the asymptotic evaluation of
 (2) in the monotone ordering see T4-03; no such evaluation is assumed here.
 2026-11-06 Codex, assigned gpt-6.1-sol/xhigh, runtime metadata unexposed;
 rules/input ccd9e905d19c0c625c196c4a3f3e707058ed042a.
+
+## Supplementary check addendum — 2026-11-06
+
+[Distinct Astra high check](../independent-checks-computation.md) completed
+within its stated scope, including actual separate execution. Earlier
+pending-check wording records the development state. Required Claude
+substantive audit remains due; this addendum changes no mathematical claim.

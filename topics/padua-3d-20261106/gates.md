@@ -34,3 +34,49 @@ are recorded. These development checks do not replace the independent audit.
 T1–T6 were launched only after the replay worker reported this verdict.
 Family-specific D2 preregistrations will be linked here before interpreting
 their outcomes; T2/T4 workers own those separate records.
+
+## Completed family-screen boundaries
+
+[T2 preregistration](preregistration-T2.md) freezes the three formulas and
+each later bounded census/quality step before its execution.
+
+- K/T/O: **D2 KILL at n=2**, exact written quadratic annihilators;
+  [negative record](theory/t2-cyclic-screen.md).
+- Exhaustive normalized cyclic census n=2,3,4: 4,0,4 full-rank cases.
+  All eight finite n=2/n=4 survivors have measured mesh maxima worse than
+  the same-degree controls. **No D2-promising family.** The finite census
+  is not an all-degree family and does not justify an asymptotic fit.
+  [Finite record](theory/t2-finite-survivors.md).
+- [T4 preregistration](preregistration-T4.md): monotone M, alternating A
+  and Leja-height L stacks all **D2 KILL at n=7**, after measured losses
+  against the Leja lower-set reference at both n=6 and n=7. All-n analytic
+  unisolvence remains true; the kill concerns competitive quality. No
+  n>=8 screen or growth-model fit was run after the registered stop.
+  [Measured record](theory/t4-mesh-observations.md).
+
+Neither stopping rule rejects arbitrary unions/corrections, skipped-degree
+subsequences or all plane orderings. Those require a separately gated,
+concrete mechanism before any resumed screen.
+
+## D3 executed verdict
+
+**PASS for the bounded reflection-invariant single-coset class.**
+`t1_reflection_enum.py` checked every canonical case with coordinate
+projection orders <=12 in d=3 (20,304 cases), <=10 in d=2 (450 cases),
+all permitted syndromes and inactive half shifts. Exact target-count d=3
+cases at n=2..6 all fail a necessary short-projection or pair-alias check.
+The [hand theorem](theory/t1-minimal-obstruction.md) proves the unlimited
+order/n statement and explicitly admits 2-D Padua points for every n;
+the code also checks Padua through n=10. Finite enumeration does not
+replace either proof or broaden the coset class.
+
+## D4 executed verdict
+
+**PASS before any T5 support-obstruction run.** `t5_exact.py` verified
+positive degree-five product-Gauss rules in d=2,3, a positive 14-node cube
+rule, and the 16-node same-parity Lobatto cube rule, with exact zero
+residuals on every required monomial. The subsequent sharp 21-positive /
+15-signed node bound applies only to the fixed 27-point Gaussian grid.
+
+Separate actual reruns and their precise acceptance scope are recorded in
+the independent-check files. Required Claude audit remains separate.

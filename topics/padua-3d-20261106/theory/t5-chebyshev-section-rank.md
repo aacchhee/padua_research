@@ -133,3 +133,10 @@ is claimed. General minimal cube cubature remains OPEN.
 2026-11-06: Codex, gpt-6.1-sol xhigh, rules at
 `ccd9e905d19c0c625c196c4a3f3e707058ed042a`; exact reproduction and hand
 specialization. The known mechanism is explicitly preserved as predecessor.
+
+## Supplementary check addendum — 2026-11-06
+
+[Distinct Astra high check](../independent-checks-computation.md) completed
+within its stated scope, including actual separate execution. Earlier
+pending-check wording records the development state. Required Claude
+substantive audit remains due; this addendum changes no mathematical claim.

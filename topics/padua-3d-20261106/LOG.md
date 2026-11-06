@@ -1,9 +1,9 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `76ba421` · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra high): Continue codex/padua-3d-20261106.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
+- Stage: AUDIT · Next: `Claude (Opus 5.5 xhigh): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/02-audit.md](handoffs/02-audit.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
-- Claims: none yet.
+- Claims: provisional records in [report.md](report.md); no final IDs allocated.
 
 ## 2026-11-06 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -86,3 +86,62 @@ is not independently exposed. No Astra-ultra escalation has been needed.
   not included as a completed result in this checkpoint.
 - This is an honestly unfinished development checkpoint. Claude audit is
   PENDING; no shared scientific registry, final allocation or readiness change.
+
+## 2026-11-06 — completed development and supplementary checks
+
+Coordinator Codex, assigned gpt-6-astra high. T1/T3/T4/T5/T6 developers
+were assigned gpt-6.1-sol xhigh, T2/replay gpt-6.1-sol medium; actual runtime
+metadata is unexposed. No ultra escalation was used. Direction rounds and
+their bounded stops are finalized in [rounds](rounds.md).
+
+- T1: D3 passed for 20,304 canonical 3-D cosets and 450 2-D cases.
+  The classification and all-n>=2 obstruction are hand-proved. All-degree
+  Padua admission is explicit, with finite sanity through n10. The original
+  unrestricted class and arbitrary-weight cubature questions stay OPEN.
+- T4: added an explicit Newton recursive upper majorant and an
+  exp(O(n log n)) upper bound for exact-greedy heights. All three registered
+  numerical orders triggered D2 KILL at n7 after consecutive n6/n7 Leja
+  losses. No n8..20 screen or asymptotic fit was run after that stop.
+- T5: D4 passed before obstruction testing. The fixed Gaussian-grid
+  degree-five support theorem is hand-proved (21 positive / 15 signed),
+  and the known all-q commutator-rank formulas are reconstructed locally.
+  Nonlinear completion minimization was explicitly not executed; that
+  distinct route and universal cubature remain OPEN/deferred.
+- T6: universal comparison and explicit Fourier bound are hand-proved;
+  the primary-source trail identified Subbotin1983's already-known general
+  comparison and logarithmic order. [Actual source coverage](literature-T6.md).
+  No historical novelty is claimed for these facts.
+- A distinct Astra high supplementary mathematical checker reconstructed
+  T1/T6 and actually reran their scripts in an isolated pinned checkout;
+  it also enumerated tiny subgroups/translations independently. No
+  BLOCKING/MAJOR finding; its MINOR T1 scope wording fix was made and
+  reviewed. [Canonical check](independent-checks-math.md).
+- A second distinct Astra high supplementary checker reconstructed T3/T4/T5
+  and actually reran the replay, cyclic census/quality/cover, stack and
+  cubature code in another pinned checkout. It separately reconstructed
+  H39's 171 Laurent witnesses. [Canonical check](independent-checks-computation.md).
+  Its exact finite-cover execution discharged H39: only the normalized
+  cubic obstruction and full unshifted M39 extension were upgraded from
+  MEASURED/CONDITIONAL to PROVED. Statements/scopes, rank distributions,
+  quality observations and infinite-degree targets were not upgraded.
+- Reading-coverage caveat: the canonical T2 disclosure is in
+  [its attempt](attempts/T2.md); the substantive auditor must disposition it.
+  Remaining source-comparison and novelty limits stay in their own records.
+- Code/data identities are in [evidence manifest](evidence-manifest.json).
+  Optional raw catalogues remain regenerable local working output;
+  [storage boundary](COLD_STORAGE.md). Essential finite witnesses/code
+  and small receipts are committed; no archival delivery is claimed.
+- Final report and [topic results](../../results/padua-3d-20261106.md) are
+  synchronized. No final ranges needed: **no range**. No shared registries,
+  main, tags, workflows or repository settings were changed.
+- Stage AUDIT: draft PR33 preserves the work. Required Claude Opus5.5 xhigh
+  substantive audit is PENDING and is not replaced by either Astra check.
+  [Handoff 01](handoffs/01-work.md) closes in the following handoff commit;
+  [handoff 02](handoffs/02-audit.md) carries the exact audit scope/source pin.
+  No readiness or merge decision is requested from AC at this boundary.
+- Integration verification actually passed: code/data manifest (31 artifacts,
+  177,823 bytes), eight producer-code/receipt identities, all topic JSON,
+  every topic file below 16KiB, Markdown links (except the successor handoff
+  until its following commit), and `git diff --check`. Final successor-link
+  verification follows handoff publication. The manifest verifier command is
+  `python topics/padua-3d-20261106/code/artifact_manifest.py --verify`.

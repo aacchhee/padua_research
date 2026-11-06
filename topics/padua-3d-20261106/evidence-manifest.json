@@ -1,0 +1,228 @@
+{
+  "schema": "padua-3d-code-data-manifest-v1",
+  "rules_input_sha": "ccd9e905d19c0c625c196c4a3f3e707058ed042a",
+  "generate": "python topics/padua-3d-20261106/code/artifact_manifest.py",
+  "verify": "python topics/padua-3d-20261106/code/artifact_manifest.py --verify",
+  "artifacts": [
+    {
+      "path": "code/artifact_manifest.py",
+      "bytes": 2639,
+      "sha256": "8987d77b8a556715f5eae2b1959512f7eff6e569b0fce4eafac3d2d45031fe21"
+    },
+    {
+      "path": "code/independent_computation.py",
+      "bytes": 12914,
+      "sha256": "a90e09b8bd97b088df4fb4409e66a4e719856b505791fe48139283a1425bc5d6"
+    },
+    {
+      "path": "code/independent_math.py",
+      "bytes": 8310,
+      "sha256": "63c29ae0eb1bced4bde6b350c6f0810d2a7a5195f9c8925f13c10fdf9bc9d124"
+    },
+    {
+      "path": "code/replay.py",
+      "bytes": 9967,
+      "sha256": "71c244c262ddcf1ff51653a7c3488e813778e45cf2a84a90077eb136673f048d"
+    },
+    {
+      "path": "code/t1_reflection_enum.py",
+      "bytes": 10288,
+      "sha256": "ac4afe4c15ff4a273091c234fa9e4381538b679f2ad256cd5db94d08b2b31bc2"
+    },
+    {
+      "path": "code/t2_check_cover.py",
+      "bytes": 1970,
+      "sha256": "3b52ba33640a3f46971d4e86ab345d68af653fcf011fc25600ac631d4eb2a59f"
+    },
+    {
+      "path": "code/t2_generators.py",
+      "bytes": 2535,
+      "sha256": "b294b99ac8a79c744c57e071975c39d0e8434ab58a4c4d8e197d21878e5816a5"
+    },
+    {
+      "path": "code/t2_quality.py",
+      "bytes": 1409,
+      "sha256": "1f34bf36a79d491a49d80e713224e69cadc8111a43563357fb34c3337673f346"
+    },
+    {
+      "path": "code/t2_screen.py",
+      "bytes": 5197,
+      "sha256": "4a5ea7e2ebde36243ce6213fcbde25a6ae63c959aa808bdafe24a00b98723fa4"
+    },
+    {
+      "path": "code/t3_checks.py",
+      "bytes": 4950,
+      "sha256": "f850ca5c71ec7f8252d71516261c7c68935e11163d10bafc80dd18a1b879efa7"
+    },
+    {
+      "path": "code/t4_stacks.py",
+      "bytes": 9491,
+      "sha256": "0cd23793f436cd25328114e21dfda2c8c590cebbe7b88b985f7e478fc8c068b7"
+    },
+    {
+      "path": "code/t5_exact.py",
+      "bytes": 5788,
+      "sha256": "9c0283e3f1967f2ea50c4d97b95797bdb65f0232df3b2bd0edb1248c27ccafb5"
+    },
+    {
+      "path": "code/t5_support.py",
+      "bytes": 3236,
+      "sha256": "e164fe4458a0fd48c890bf589cceb509cb3eb24eada1d6c38968c7cabb23ccf3"
+    },
+    {
+      "path": "code/t6_sanity.py",
+      "bytes": 6068,
+      "sha256": "432701699bdc8a1fd329b64982a299d8bd6d5d4cd8926a74ad48e4646a481d5f"
+    },
+    {
+      "path": "evidence/independent-computation.json",
+      "bytes": 7702,
+      "sha256": "de89fb9b6507757d959074e5801950213a4f842e0b290be21d7c9f095b1b94ec"
+    },
+    {
+      "path": "evidence/independent-math.json",
+      "bytes": 12827,
+      "sha256": "98f6e957493e51cf0a2694e7ce84bff566d9c3ad6ea60fb1e0f96aafe65d9b19"
+    },
+    {
+      "path": "evidence/replay.json",
+      "bytes": 8714,
+      "sha256": "ee818cc4f44a6999b09962ea0274eddf3c24b0f2b46dd0293dee245a6ffca176"
+    },
+    {
+      "path": "evidence/t1-reflection-enum.json",
+      "bytes": 8920,
+      "sha256": "6340b00ff4660f039bf967588e45cae501ae603c988b9e806e969c08e532a0c7"
+    },
+    {
+      "path": "evidence/t2-cover-check.json",
+      "bytes": 581,
+      "sha256": "ceb9bfa7dabb757d6dc0f615056b9ea76262bbbd6fe08788d47af186203758c9"
+    },
+    {
+      "path": "evidence/t2-cyclic-screen.json",
+      "bytes": 4211,
+      "sha256": "a379b7ca85c4baa70a8f614e55bcd9e72032bc1507d518f7f854e392628cfa5c"
+    },
+    {
+      "path": "evidence/t2-generators.json",
+      "bytes": 1683,
+      "sha256": "eec1bf41b736363ce951c26ed6d24c7f33d455f63fd65654b14e819807a1d953"
+    },
+    {
+      "path": "evidence/t2-n3-null-cover.json",
+      "bytes": 8054,
+      "sha256": "ab78e752e646a880d305fc76c711808b7f8ac31e37546a25c5c05f623300eb2a"
+    },
+    {
+      "path": "evidence/t2-quality.json",
+      "bytes": 4615,
+      "sha256": "526d2a644ae317f93760cc36b1a823b7d4230ada971ceac0a698cd88c30008e4"
+    },
+    {
+      "path": "evidence/t3-checks.json",
+      "bytes": 1229,
+      "sha256": "38189c10aee9962921ceca15970dab3026ccca9c6cb3a96277742cc3c8efc754"
+    },
+    {
+      "path": "evidence/t4-baselines.json",
+      "bytes": 6416,
+      "sha256": "1ea04d9bbcfd5b7afa63011177190df6207df56a0ece2a7df1e6cb7bbad57d11"
+    },
+    {
+      "path": "evidence/t4-mesh-A.json",
+      "bytes": 4678,
+      "sha256": "a8887282a6248a99e44e1af4ef8dadad84fb09f5de0866d50544790096241753"
+    },
+    {
+      "path": "evidence/t4-mesh-L.json",
+      "bytes": 4679,
+      "sha256": "5630a5941989cd0e90b99fcb19b546aedb7eed8412bc1e15417df759683e81bd"
+    },
+    {
+      "path": "evidence/t4-mesh-M.json",
+      "bytes": 4701,
+      "sha256": "a90d308035d774a8423bdac78174d8f2a688a23f5a70f04879899f8723577a25"
+    },
+    {
+      "path": "evidence/t5-exact.json",
+      "bytes": 6591,
+      "sha256": "00c395a035460cd975a00682b1e816f1972e11194a02eb4685ccc3a623e9bc02"
+    },
+    {
+      "path": "evidence/t5-support.json",
+      "bytes": 1648,
+      "sha256": "86a00a88b98afe8b856884744bd19e6cd5a101e25905be89e3f765462f7537de"
+    },
+    {
+      "path": "evidence/t6-sanity.json",
+      "bytes": 5812,
+      "sha256": "c2796be3a36ee04855d997c2dc0aae5c8f95ee28aea8418c084292bb0afdba38"
+    }
+  ],
+  "recorded_commands": [
+    {
+      "receipt": "evidence/replay.json",
+      "command_as_recorded": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/replay.py"
+    },
+    {
+      "receipt": "evidence/t2-cover-check.json",
+      "command_as_recorded": "python topics/padua-3d-20261106/code/t2_check_cover.py"
+    },
+    {
+      "receipt": "evidence/t2-cyclic-screen.json",
+      "command_as_recorded": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t2_screen.py"
+    },
+    {
+      "receipt": "evidence/t2-generators.json",
+      "command_as_recorded": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t2_generators.py"
+    },
+    {
+      "receipt": "evidence/t2-quality.json",
+      "command_as_recorded": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/t2_quality.py"
+    },
+    {
+      "receipt": "evidence/t4-baselines.json",
+      "command_as_recorded": [
+        "topics/padua-3d-20261106/code/t4_stacks.py",
+        "--max-degree",
+        "12"
+      ]
+    },
+    {
+      "receipt": "evidence/t4-mesh-A.json",
+      "command_as_recorded": [
+        "topics/padua-3d-20261106/code/t4_stacks.py",
+        "--max-degree",
+        "12"
+      ]
+    },
+    {
+      "receipt": "evidence/t4-mesh-L.json",
+      "command_as_recorded": [
+        "topics/padua-3d-20261106/code/t4_stacks.py",
+        "--max-degree",
+        "12"
+      ]
+    },
+    {
+      "receipt": "evidence/t4-mesh-M.json",
+      "command_as_recorded": [
+        "topics/padua-3d-20261106/code/t4_stacks.py",
+        "--max-degree",
+        "12"
+      ]
+    },
+    {
+      "receipt": "evidence/t6-sanity.json",
+      "command_as_recorded": "python topics/padua-3d-20261106/code/t6_sanity.py"
+    }
+  ],
+  "limits": [
+    "Identity verification is separate from mathematical verification.",
+    "Prose is identified by audit commit, not acceptance hashes.",
+    "Each receipt and attempt states its own executed scope and source inputs.",
+    "Transient large catalogues are regeneration-only working outputs; see COLD_STORAGE.md.",
+    "No archival delivery or independent Claude audit is implied."
+  ]
+}

@@ -223,3 +223,10 @@ operations by this worker.
 Later source refinement: DEKL equation (3.15) led to Subbotin's exact
 prior `3^-d` comparison and universal logarithmic bound. The local proof
 is retained as a self-contained explicit certificate, with no novelty claim.
+
+## Supplementary check addendum — 2026-11-06
+
+[Distinct Astra high check](../independent-checks-math.md) completed
+within its stated scope, including actual separate execution. Earlier
+pending-check wording records the development state. Required Claude
+substantive audit remains due; this addendum changes no mathematical claim.

@@ -175,3 +175,10 @@ Independent audit/rerun; original C_k remains in t1-open-class.md.
 2026-11-06, Codex, assigned gpt-6.1-sol xhigh, rules/input
 ccd9e905d19c0c625c196c4a3f3e707058ed042a. Restricted-class theorem split
 from the unchanged original OPEN target, with full reflection assumption.
+
+## Supplementary check addendum — 2026-11-06
+
+[Distinct Astra high check](../independent-checks-math.md) completed
+within its stated scope, including actual separate execution. Earlier
+pending-check wording records the development state. Required Claude
+substantive audit remains due; this addendum changes no mathematical claim.

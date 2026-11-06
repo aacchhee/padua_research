@@ -129,3 +129,10 @@ O(log^3 n) construction target remains OPEN.
 unexposed; rules/input ccd9e905d19c0c625c196c4a3f3e707058ed042a.
 The restricted negative conclusion is split from the supplied expectation;
 it does not silently replace the original 3-D target.
+
+## Supplementary check addendum — 2026-11-06
+
+[Distinct Astra high check](../independent-checks-computation.md) completed
+within its stated scope, including actual separate execution. Earlier
+pending-check wording records the development state. Required Claude
+substantive audit remains due; this addendum changes no mathematical claim.
