@@ -1,7 +1,7 @@
 # PD-T?lanczos-nonproduct-codex-P1-02 — Exact continuous triangle creator probe
 
 ID kind: PD-T. Aliases: P1 degree-eight moment probe; final-level Legendre
-chain; continuous triangle frozen-response matrix.
+chain under BJ; continuous triangle frozen-response matrix.
 Split from: P1 all-degree separation target (OPEN). Split into: none.
 
 ## Statement
@@ -30,14 +30,16 @@ only nonzero earlier *same-degree* monic projection coefficients are
     alpha_(j,j-2)=(j-1)^2/[4(4(j-1)^2-1)]  (j>=2).           (2)
 
 Every X creator through degree eight has no earlier same-degree coefficient.
-For a source injected at `(8,0)` and zero responses before total degree eight,
-the scalar final-degree response is independent of the evaluation point and
-equals
+Under BJ, for a source injected at `(8,0)` and zero responses before total
+degree eight, the scalar final-degree response is independent of the
+evaluation point and equals
 
     g_j=1/binom(2j,j), j=0,...,8,                            (3)
 
-as exactly verified by the frozen recurrence. Equations (1)–(3) are reported
-only within the executed finite range.
+as exactly verified by the BJ frozen recurrence. The chain check in
+`p1_moment_probe.py` uses only `records["BJ"]`; (3) is not a three-rule
+identity. Equations (1)–(3) are reported only within the executed finite
+range.
 
 ## Definitions and assumptions
 
@@ -65,7 +67,7 @@ Overall status: MEASURED.
 
 | Part | Status | Evidence / limit |
 |---|---|---|
-| Rational basis/creator identities (1)–(3) through eight | MEASURED | Actual exact developer execution; independent rerun absent |
+| Rational basis/creator identities (1)–(3) through eight, with (3) under BJ | MEASURED | Actual exact developer execution; independent rerun absent |
 | Seven-point spectral diagnostics | MEASURED, exploratory | Exact C entries plus binary64 SVD; no outward enclosure or global maximization |
 
 Candidate disposition: retained finite structure evidence. N3 full-capacity
@@ -102,15 +104,16 @@ Raw regenerable output: 33,434 bytes, SHA256
 `080c84ee3518ed8407de599f48114d1bec711342d8cc4f9dfcb70de79a1a890f`,
 kept at the local temporary output path. The 5,814-byte
 [compact evidence](../evidence/p1-moment-probe.json) retains counts,
-final-level norms/chain, versions, identities and sampled diagnostics.
+final-level norms, the chain under BJ, versions, identities and sampled
+diagnostics.
 The raw output is not a required hidden certificate; the source regenerates
 every exact row and no computer-proof status depends on temporary retention.
 
 ## Sources
 
 No external orthogonal-polynomial theorem is imported. The reference to a
-Legendre-type chain is descriptive of the finite rational pattern only.
-Suggested primary literature remains a separate reading task.
+Legendre-type chain under BJ is descriptive of the finite rational pattern
+only. Suggested primary literature remains a separate reading task.
 
 ## Evidence and explanation
 
@@ -128,15 +131,16 @@ physical integration checks the constructed moments exactly:
 
 Every creator residual is checked coefficient by coefficient against the
 independently constructed monic column, retaining all earlier-degree terms.
-For the special final-degree source, all lower-degree responses vanish, so
-only same-degree coefficients from (2) enter. The actual checked chain is
+Under BJ, for the special final-degree source, all lower-degree responses
+vanish, so only same-degree coefficients from (2) enter. The actual checked
+chain under BJ is
 
     1, 1/2, 1/6, 1/20, 1/70, 1/252, 1/924, 1/3432, 1/12870.
 
-This chain is explicitly restricted: general sources propagate through all
-lower-degree coefficients, and capacity additionally involves all source
-scales and the largest singular value of the complete matrix C. Thus (3)
-does not supply a bounded-order capacity recurrence.
+This chain under BJ is explicitly restricted: general sources propagate
+through all lower-degree coefficients, and capacity additionally involves
+all source scales and the largest singular value of the complete matrix C.
+Thus (3), under BJ, does not supply a bounded-order capacity recurrence.
 
 For orientation only, the maxima over seven specified points of the
 *numerically computed* singular values are:
@@ -164,9 +168,9 @@ values do not certify capacity ratios or N2.
 At the end of the degree-eight structure probe no bounded-order recursion
 for the **full capacity** was identified. N3's prescribed outcome is
 **REDIRECT TO P4**, not PASS and not a theorem excluding every possible
-recursion. The symbolic creator and restricted-chain recurrences survive as
-useful exact finite data. P6's separate T24 N2 scan is awaited. There is no
-all-degree separation claim and no all-degree proof was attempted.
+recursion. The symbolic creator recurrences and the restricted chain under
+BJ survive as useful exact finite data. P6's separate T24 N2 scan is awaited.
+There is no all-degree separation claim and no all-degree proof was attempted.
 
 ## Open items
 
@@ -181,3 +185,9 @@ when the fixed within-degree Gram–Schmidt order is retained.
 after the coordinator reported round 1 pushed at `3d49d32`. Preregistered
 the probe before creating/executing its code. All computation above is the
 developer's own execution; no self-audit or independent rerun is asserted.
+
+2026-11-06: In response to audit-01 A3, corrected the previously unqualified
+statement of (3) and its downstream uses to say **under BJ**. The existing
+code checks this chain only under BJ. This is a material statement correction;
+the degree-eight scope and MEASURED status are unchanged. No new experiment,
+proof or candidate was developed, so no new novelty gate applies.
