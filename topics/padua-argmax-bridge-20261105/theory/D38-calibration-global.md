@@ -479,3 +479,103 @@ Codex Sol xhigh bounded application task; rules/read continuity7975a0c,
 initial integrationf5d2870d6aab1f55cbb88bccae299e96ce40d04d and later
 publication258d44af, rules unchanged; serving metadata unexposed.
 This record is not a release and does not perform numerical verification.
+
+## Dated accepted closure — 2026-11-06
+
+**PROVED, all nine fixed calibration applications accepted.** This dated
+closure supersedes the historical OPEN/pending status above. The entire
+reviewed26396B prefix is preserved byte-for-byte, SHA256
+9791f6d29e02dea90773d486e1df26f3a3739e59f1cf5b164af5f634e24050ba.
+It records the honest preparation state rather than retroactively
+claiming fresh execution at the earlier freeze.
+
+Distinct supplementary review independent-checks-D38-calibration.md,
+29247B, SHA256
+279fe165de903548b0cb291de19adbad50cc87087e9028cc8ddcbd0e732fe127,
+FINAL ACCEPTS the complete fixed-nine fresh results AND this exact
+frozen application, with no unresolved finding. Its original14361B
+readiness prefix is also preserved. Root expressly authorized this
+dated closure and adopts the nine accepted applications. Final Claude
+audit remains separate from this accepted supplementary review.
+
+After the separately preregistered inputs and root release at
+258d44afab363d8abac6eae69446954791596e22, the distinct reviewer executed
+EACH frozen verify command manually, once, in the exact fixed order.
+ALL nine own outer invocations returned directly observed EXIT0; after
+each return the reviewer separately read the atomic complete=true,
+first_failure=null final account and exact accepted fresh result before
+starting the next. No failure, retry, skip, concurrent case, changed
+source/precision/parameters/order/cap or alternate-method rescue occurred.
+
+The fresh proofs are canonical evidence/post_audit_D38/fresh-<n>.json,
+with their fresh-<n>-account.json companions. Direct observations remain
+code/post_audit_D38_review/verify-<n>-observation.json. The fresh proof
+identities and directly observed final tool chunks are:
+
+| n | Bytes | Fresh proof SHA256 | Direct outer EXIT0 chunk |
+|---:|---:|---|---|
+|42|5536|84cacd1417ecbbf3c0374d26f6cdd1acd605e4d3b5fdf90b69b57c34da096275|f7ceb0|
+|63|5108|075a8629c50f3c9ea47a99f681e849cc1f4d176544c2227ea44889dc4db74eaf|698c27|
+|64|5107|5016f43fefdde35b172d5bb885bfd53cc09eccb0608f7f6386c00b1c7a417b9d|394061|
+|159|4956|4ca1b16aeda19edb23308332f27cd2b7bc167abf65fc8db8b7a07f732690c3c1|bb9a61|
+|160|4952|c3179ebb4f379fc074af2b0493e2f2984e8c1a61481961bd846db38b667b3aec|c06173|
+|511|4961|135dd6b9a38480a928a0fe86725d9ccc6eae77917a5e6732a98efa3946d22143|98c730|
+|512|4932|c94eec99c62c84e7f0cfba336b0aa56900b28d0e06d86fb45f17eded0090dd28|53d80e|
+|1024|5114|9ffb5a75f28048071e6a75395695c44850e279b262a86207964e1d7bed17b474|eed773|
+|2047|5105|5e449a8be396f3ad1a22cfbffaab0c05bb4efd55b27b5f49cf5f898ee144d32e|2e581f|
+
+The complete result ledger code/post_audit_D38_review/RESULTS.json,
+15725B, SHA256
+f27f4b981415c469d9afdfe041ea276857e5dd7b308627fbb0fdf749b08fdec4,
+pins all nine proof/account/raw/direct-observation identities, source/
+runtime closure, numerical witnesses and cost scopes. The whole raw
+records remain at the manifested off-Git verify-n<N> paths; no permanent
+archive retrieval or new archival storage is claimed by this paper.
+
+The independent phase recomputed ALL433 S and21 actual premises with
+fresh same-degree builds/caches and the frozen validated native sources.
+Each exact D36 checker recomputed origin lower L, chosen TREE norm M,
+closed tree coverage, phase radius/floor/strict predicates and selected
+corner criterion from the NEW endpoints, then reconstructed the emitted
+fresh proof before serialization. The reviewer independently audited
+the result/source/runtime identities and complete mathematical assembly.
+The fresh L,R_tree,M,floor/margin/corner values agree with the historical
+primary tables; this equality is diagnostic only. The NEW enclosures
+and their own exact predicates supply the proof, not old bits or pass
+flags. All quoted inclusion, trusted-runtime and closed physical-chart
+limits in the reviewed prefix remain in force.
+
+All nine frozen sufficient-contract hypotheses are therefore fulfilled.
+For EACH n in(42,63,64,159,160,511,512,1024,2047),
+
+    max_[-1,1]^2 lambda_n=Lambda_c(n)=lambda_n(-1,-1),
+    argmax lambda_n={(-1,-1),(1,-1)} if n is even,
+                    {(-1,-1),(-1,1)} if n is odd.
+
+These are the TRUE symbolic equality values and the exact FULL closed
+physical equality sets, including all node, boundary, chart-tie, zero
+and collision cases. Seven ACTUAL-three-point finite branches remain
+model-free. The1024/2047 analytic-corner branches and hence the whole
+batch retain the explicit D27/model/PD-T271/D02 dependencies above.
+
+Exactly six previously open finite gap degrees are newly closed:
+42,63,64,159,160,511. Degree512 was already proved;1024/2047 were
+already covered analytically. Combined accepted finite coverage is
+2..42,63..64,159..160,511..512,1023, alongside the unchanged analytic
+theorem for EVERY n>=1024. The remaining974 finite degrees lie in
+43..62,65..158,161..510,513..1022 and remain OPEN. No intervening degree,
+lower analytic onset, universal runtime law or new mechanism follows.
+
+The review records fresh total_CPU_through_summary115.039351seconds
+and primary112.588181seconds, both inclusive PRE-return checkpoints,
+not exact final-return CPU. All nine complete ECHILD/fixed-child/
+tightened-parent controls bound the remaining finalization. The nine
+120CPU hard envelopes total1080 within each separate1200CPU phase cap;
+point/build measurements are subscopes, not additional charges. These
+finite measurements do not imply uniform performance or termination.
+
+This root-authorized closure used only reads, identity/byte checks and
+this append to the ONE owned theory file. No scientific/control/native/
+scalar/degree job, source/data/shared/Git edit or pack preparation was
+performed. All prior failed observations and historical status remain
+preserved; no fresh rerun was needed for this closure.

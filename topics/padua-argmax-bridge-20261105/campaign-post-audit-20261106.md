@@ -92,9 +92,15 @@ Current adopted boundary: exact two-corner argmax2–40,512 and EVERYn>=2048; re
 Adopted current boundary: exact parity-correct argmax2–41,512 and EVERYn>=1024;42–1023 excluding512 OPEN. D34 fresh67point replay andD37 independent integer interval run accepted. D36 FIRSTsourceUNRELEASED: one invalid syntheticpositive-L fixture foundstatically; no attempt.
 
 | D36 | COMPLETE | Generic production/fresh-verification engine | Final03a353bd accepts standalonefresh1023proof29.746529CPU+directEXIT0, model-freefinite1023adopted; primaryouterEXIT0unobservedandnotused. |
-| D38 | RELEASED | Fixed production-branch calibration batch | Readiness02f641d3 accepted; rootmanualprimaries afterpublication, exactninecases, unchangedsource/caps; freshphaseUNRELEASED. No pack. |
-| D39 | PLANNED | Freeze best research/cost plan | No newanalyticpath afterfinal1024proof; verifyfinalcertifier/evidence/remainingcoverage, thenpackonlyifgapremains. |
+| D38 | COMPLETE | Fixed production-branch calibration batch | Final279fe165 acceptsall9freshcases/closedcoverapplications, sixnewfinitegapdegrees; primary112.588181/fresh115.039351CPUcheckpoints, nobulkcostlaw. |
+| D39 | COMPLETE | Freeze best research/cost plan | Finalff494a37 accepts4b53ce1a cost/coveragepaper, exact974gap; researchendedandconditionalSyvert2packneeded. |
 
 Current operative state:36/40complete(D01–D35andD37), D36active. Bestanalyticboundary1024; finite2–41and512. Earlier current-state paragraphs are dated checkpoints, superseded by this line and subsequent adoption entries. Pack preparation remains deferred until research ends and only if a gap remains.
 
 Current:37/40complete(D01–D37),D38active. Finite2–41,512,1023 andanalyticEVERYn>=1024 accepted;42–1022excluding512OPEN. D39freezeandconditionalfinalpackremainfuture.
+
+Current:38/40complete(D01–D38),D39freezeactive. Exactremaining974degrees43–62,65–158,161–510,513–1022OPEN. Analyticonset1024unchanged, finite1023proved. No packprepared.
+
+| D40 | ACTIVE | Final auditable Syvert2 pack | StartsONLYafterD39researchfreeze; unchangedD36engine, small9known/large974open/all983cases; separateproduction/freshphases, no nativepackrunbeforeClaudeinterimaudit. |
+
+Current39/40researchroundscomplete; D40operationaldeliveryactive. Gapstill974; noall-degreeclaim.

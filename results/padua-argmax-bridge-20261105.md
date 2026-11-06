@@ -1,9 +1,9 @@
 # Padua argmax bridge — current research results
 
-The exact two-corner global argmax is proved for **degrees 2–41, 512, 1023**, and **every integer n>=1024**. Equality corners are
+The exact two-corner global argmax is proved for **degrees 2–42, 63–64, 159–160, 511–512, 1023**, and **every integer n>=1024**. Equality corners are
 {(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n.
-Degrees42–1022 excluding512, and the all-degree target PD-T099,
-remain OPEN. This is a sufficient analytic upper boundary.
+The remaining **974 degrees:43–62,65–158,161–510,513–1022**, and the
+all-degree target PD-T099, remain OPEN. This is a sufficient analytic upper boundary.
 
 [Global theorem](../topics/padua-argmax-bridge-20261105/theory/D37-assembly-global1024.md),
 [independent review](../topics/padua-argmax-bridge-20261105/independent-checks-D37-global1024.md).
@@ -153,3 +153,10 @@ observed EXIT0. [Application](../topics/padua-argmax-bridge-20261105/theory/D36-
 and [review](../topics/padua-argmax-bridge-20261105/independent-checks-D36-result.md).
 The candidate primary has a missing outer exit observation and supplies only
 geometry/keys/METHOD; the fresh proof supplies every numerical premise.
+
+[D38](../topics/padua-argmax-bridge-20261105/theory/D38-calibration-global.md)
+and [final independent review](../topics/padua-argmax-bridge-20261105/independent-checks-D38-calibration.md)
+accept all nine fixed calibration cases after fresh433S+21actual evaluations.
+Six add finite coverage; the others validate existing/floor/corner branches.
+Primary/fresh checkpoint totals112.588181/115.039351CPU, eachphase hardbound1080.
+No universal runtime law or Syvert2 measurement is inferred.

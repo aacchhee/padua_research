@@ -3,11 +3,11 @@
 ## Current campaign checkpoint — 2026-11-06
 
 The actual global theorem covers every integer **n>=1024**, with exactly
-the two parity-correct nonnode corners, and finite degrees2–41,512,1023.
+the two parity-correct nonnode corners, and finite degrees2–42,63–64,159–160,511–512,1023.
 [D37](theory/D37-assembly-global1024.md),
 [independent analytic review](independent-checks-D37-global1024.md),
 [finite1023](theory/D36-global1023.md).
-Residual42–1022 except512 and all-degree PD-T099 remain OPEN. The onset is
+Residual43–62,65–158,161–510,513–1022(974degrees) and all-degree PD-T099 remain OPEN. The onset is
 sufficient, not minimal. Earlier current-state notes below are historical.
 
 Original B0–B6 criteria remain unchanged in [handoff01](handoffs/01-work.md).
@@ -204,3 +204,6 @@ D34final870bcba9... finite41ACCEPT; D37final2ad8f232... global1024ACCEPT(near1/2
 
 
 D36 final03a353bd... ACCEPTS standalonefreshfinite1023, directEXIT0+completeaccount29.746529CPU; originalprimaryouterEXIT0unknownandnotapremise. D38nineprimariesPASS112.588181CPUcheckpoints, separatelyreleasedfreshphasependingfinalreview. Noall-degree/runtimeclaim, noSyvert2packyet.
+
+
+D38final279fe165... ACCEPTSall9freshclosedcoverapplications, sixnewfinitecases. Remaining974degreesOPEN; D39bestresearchfreezeunderway; packnotpreparedyet.

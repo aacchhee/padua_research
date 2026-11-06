@@ -1,7 +1,7 @@
 # Padua argmax bridge — WORK post-audit checkpoint, 2026-11-06
 
-The exact parity-correct global argmax is proved for **degrees2–41,512,1023**
-and **every integer n>=1024**. The residual42–1022 excluding512 remains OPEN,
+The exact parity-correct global argmax is proved for **degrees2–42,63–64,159–160,511–512,1023**
+and **every integer n>=1024**. The residual43–62,65–158,161–510,513–1022(974degrees) remains OPEN,
 as does the all-degree target PD-T099. The analytic onset is sufficient;
 no minimality or uncomputed degree success is claimed.
 
@@ -22,8 +22,8 @@ The same n6912/41point witness takes469.521049CPU with the old full pipeline
 and74.034199CPU with the independently executed cheap pipeline, a measured
 6.34fold comparison. Independent matched n2048point costs2.615699→.488831CPU.
 These are finite measurements; geometry, actual-corner branch and build costs
-vary. D38's nine fixed calibration primaries all pass; independent fresh replay
-and application adoption are pending. No Syvert2 benchmark or pack exists yet.
+vary. D38's nine fixed calibration primaries and all independent fresh replays
+are accepted, adding six finite degrees and validating every selected branch. No Syvert2 benchmark or pack exists yet.
 Pack preparation waits until research ends and a gap remains.
 
 Earlier D16 onset10000 and subsequent dated checkpoints below retain their
