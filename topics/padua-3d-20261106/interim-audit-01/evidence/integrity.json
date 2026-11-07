@@ -1,0 +1,63 @@
+{
+  "audited_input": "5440555cf326afdbd66b75bed195802013901c2d",
+  "command": [
+    "topics/padua-3d-20261106/interim-audit-01/code/ia_integrity.py",
+    "--output",
+    "topics/padua-3d-20261106/interim-audit-01/evidence/integrity.json"
+  ],
+  "python": "3.12.14",
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/interim-audit-01/code/ia_integrity.py",
+    "bytes": 5112,
+    "sha256": "d07baf67931241cdf1882fd8612a64009cfc66858efd1477639405c14b890e49"
+  },
+  "manifest_input": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/evidence-manifest.json",
+    "bytes": 16259,
+    "sha256": "ec763c5efcf8300d7329819485cef4eafae10bb218795b871f9c567b0f6358d8"
+  },
+  "scope": "Frozen developer code/evidence and inherited helpers. Interim audit artifacts are a separate scope.",
+  "decoded_identity_count": 261,
+  "decoded_bytes": 1408182,
+  "literal_set_and_all_digests_match": true,
+  "mutations": [
+    {
+      "mutation": "same-size-byte",
+      "path": "code/u1_usable.py",
+      "rejected": true
+    },
+    {
+      "mutation": "delete",
+      "path": "evidence/u2-degree12-nodes.json",
+      "rejected": true
+    },
+    {
+      "mutation": "add",
+      "path": "code/novel.txt",
+      "rejected": true
+    },
+    {
+      "mutation": "add",
+      "path": "code/nested/novel.cpp",
+      "rejected": true
+    },
+    {
+      "mutation": "add",
+      "path": "evidence/nested/novel.json",
+      "rejected": true
+    },
+    {
+      "mutation": "drop-essential-entry",
+      "path": "evidence-manifest.json",
+      "rejected": true
+    },
+    {
+      "mutation": "malformed-payload",
+      "path": "evidence-manifest.json",
+      "rejected": true
+    }
+  ],
+  "all_restored_checks_pass": true,
+  "scratch": "/tmp/padua-interim-integrity-01m3nj4q",
+  "limits": "Identity/coverage checks do not establish mathematical correctness or authenticate an unreviewed regenerated manifest."
+}

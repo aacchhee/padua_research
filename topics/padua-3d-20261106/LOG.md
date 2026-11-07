@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT (interim) · Next: Codex adversarial audit and direction decisions · Open handoff: [handoffs/12-interim-audit.md](handoffs/12-interim-audit.md)
+- Stage: WORK · Next: Codex API response and prioritized registered continuation · Handoff12 closes after output; successor: [handoffs/13-interim-response.md](handoffs/13-interim-response.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -758,3 +758,44 @@ their corresponding runs, with publication and execution timing distinguished.
 - New stress/counterexample checks are audit probes, consume no research
   rounds and do not authorize a new unregistered construction search.
   Current counters stayU1=2/10,U2=3/10,U3=4/20, remaining8/7/16.
+
+## 2026-11-07 — completed adversarial interim audit — Codex, Astra high
+
+- [Interim audit01](interim-audit-01.md) integrates five cold-context
+  Astraxhigh reviews and actual independent stress/exact checks at
+  science5440555. No proof-level BLOCKING finding in covered scope;
+  oneMAJORoperationalinput-shape bug returned to development. Minor
+  stale-tense/support-count wording fixed separately in55f103b and
+  [fix list](interim-audit-01-fixes.md). Science/code/data unchanged.
+- U1proofs and valid-input data pass. Wrong-leading-dimension values
+  silentlybroadcast; requiredfix before unqualified API recommendation.
+  Strong feasible-budget noise controls still favor Haar/OLS, while
+  higher-degree feasible QR wins fresh deterministic cases and non-iid
+  noise can reverse OLS's small advantage. No universal winner.
+- U2stored455-point proof/check passes again. Fresh114700queries and
+  140physical-starts/family find unchanged maximum26.0073. Comparable
+  extra-cost localdet reaches48.5833after six total sweeps; U2gain
+  survives while noise advantage shrinks3.29percent. Step200remains
+  nonstationary, with nontrivial last20-step progress; correctly disclosed.
+- U3all6976Fparameters/2750exact-Nranks and all35287support predicates
+  pass without original pruning. Outside unique matching, n7has28full-
+  rank cases; their blocks23–34/inverse sums3297–5253are not gentle
+  control or norm lower bounds. Selected mixed failures do not reject
+  broad families. Preserve structural resumes; stop identical selectors.
+- Prior covered lattice/phase assertions pass fresh checks, including
+  alln7det1..960 and n16window5772/24minimizers. Uncovered8..15window
+  reruns, old floating reruns and new primary reading remain explicit;
+  E4and other AC decisions/formal Claude audit still pending.
+- Rootfreshintegrity checks all261developer identities and seven
+  mutations/restored baselines. Each reviewer records frozen code/data,
+  commands/versions/seeds and compact evidence; raw regeneration-only.
+  Full current IDEAS/table strategic read completed personally before
+  judgments, with relevant closest proof/source scope recorded.
+- Decision: fixU1API first; U1keepoperational/no generic new round;
+  atmostone U2unchanged-rule higher-degree/cost round next, then atmost
+  one U3retainedstructural diagnostic with positive gate before another.
+  Initial future release≤2researchrounds, not consumed now. Counters
+  unchanged2/10,3/10,4/20,unused8/7/16; no audit/fix rounds.
+- Stage WORK for explicit developer response. This is an interim Codex
+  assessment, not formal Claude audit04/readiness. No final IDs/ranges
+  or shared registry application. Handoff13 gives precise next work.
