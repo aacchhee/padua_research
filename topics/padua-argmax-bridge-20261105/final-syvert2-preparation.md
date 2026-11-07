@@ -275,3 +275,35 @@ All mathematical/hybrid/native sources, caps, trusted assets and degree groups
 are unchanged. Source-only text/hash/static AST inspection; no import, test,
 builder, extraction or science. Reviewer owns a separately frozen03regression
 fixture/release after focused source re-audit. Prior failures remain visible.
+
+## FOPS-09 preflight cleanup response — 2026-11-07, SOURCE ONLY
+
+Causal candidate897f771 was preserved at d92524ad8a8fdf973db642e809d4c6fd779d054c;
+focused report8d9984a7 was published at dd8b8fcb89bb079ad4fb62a6fa5ba8cac673781e.
+Its FOPS-08 causal state gate was accepted; FOPS-09 correctly held cleanup of
+preflight exceptions/signals outside the scheduler try/finally. Root authorized
+only this focused post-invalidation cleanup and strict resume-provenance repair.
+
+All post-false work now enters the existing stop/exception/finalization discipline:
+subreaper setup precedes the first preflight child, inspect and Access capture,
+provenance writes and case scheduling share one try/finally. A signal during
+preflight raises into that cleanup immediately; dispatch retains admission-stop
+semantics. First failure remains recorded. If subreaper setup fails before any
+child, summary remains false/ECHILD=false. Otherwise even an intermediate wait or
+status-write failure reaches owned cleanup; true is written only after actual
+ECHILD. Cleanup failure records refusal, never true. Restoring handlers cannot
+launch a child after true. No additional supervisor or global proc scan exists.
+
+Resume requires a nonmissing dictionary original provenance and a unique integer
+selected-core list of exactly the unchanged worker count before invalidation or
+preflight. After current preflight, selected cores must equal the original list
+before capture, provenance writes or any case admission. Missing/None/corrupt
+original provenance or changed selected cores refuses new workers; prior started
+records continue to bind the original run provenance. Failed quiescent attempts
+remain collectible but substantive resume rules are unchanged.
+
+Static source/text/hash/AST inspection only; no imports, tests, builder, dependency
+extraction or numerical work. Mathematical/hybrid/native code, assets, groups and
+caps are untouched. Reviewer03 controls must cover preflight orphan/exception/
+signal cleanup, failed subreaper/cleanup refusal and absent/changed original
+resume provenance. Prior01/02 failures and corpora remain preserved and unrepeated.

@@ -54,6 +54,13 @@ def run(group, workers, resume):
         if bool(previous) != resume: raise ValueError('fresh/resume output mismatch')
         if previous and (previous['identity'] != expected or previous['package_root'] != str(HERE)):
             raise ValueError('resume identity/package-instance path mismatch')
+        if previous:
+            original = previous.get('provenance')
+            if not isinstance(original, dict) or not isinstance(original.get('selected_cores'), list):
+                raise ValueError('resume lacks original selected-core provenance')
+            cores = original['selected_cores']
+            if len(cores) != workers or len(set(cores)) != workers or any(type(c) is not int or c < 0 for c in cores):
+                raise ValueError('resume original selected-core provenance corrupt')
         pending = []
         for n in p['degrees']:
             directory = output / 'jobs' / str(n)
@@ -70,21 +77,25 @@ def run(group, workers, resume):
         # kill from here until final owned ECHILD leaves nonquiescent refusal.
         binding = state_binding(m, p, workers, domain)
         save(output / 'summary.json', dict(binding, quiescent=False, ECHILD=False, phase='preflight'))
-        subreaper()
-        provenance, env = inspect(workers, m)
-        env['PADUA_PACK_WRITER'] = domain['token']
-        Access(HERE, str(HERE), capture=True).closure(provenance)
-        if previous:
-            exclusive(output / ('resume-' + str(time.time_ns()) + '.json'), provenance)
-        else:
-            record = read(output / 'run.json'); record['provenance'] = provenance; save(output / 'run.json', record)
-        active = {}; stopped = False; first_failure = None
+        active = {}; stopped = False; first_failure = None; reaper_ready = False; phase = 'preflight'
         old = {sig: signal.getsignal(sig) for sig in (signal.SIGINT, signal.SIGTERM)}
         def stop(signum, frame):
             nonlocal stopped, first_failure
             stopped = True; first_failure = first_failure or 'supervisor signal ' + str(signum)
+            if phase == 'preflight': raise InterruptedError(first_failure)
         for sig in old: signal.signal(sig, stop)
         try:
+            subreaper(); reaper_ready = True
+            provenance, env = inspect(workers, m)
+            if previous and provenance['selected_cores'] != previous['provenance']['selected_cores']:
+                raise ValueError('resume selected cores differ from original run')
+            env['PADUA_PACK_WRITER'] = domain['token']
+            Access(HERE, str(HERE), capture=True).closure(provenance)
+            if previous:
+                exclusive(output / ('resume-' + str(time.time_ns()) + '.json'), provenance)
+            else:
+                record = read(output / 'run.json'); record['provenance'] = provenance; save(output / 'run.json', record)
+            phase = 'dispatch'
             while pending or active:
                 # Observe all completions before any next admission.
                 for proc, row in list(active.items()):
@@ -125,20 +136,35 @@ def run(group, workers, resume):
         except BaseException as error:
             first_failure = first_failure or repr(error); stopped = True
         finally:
-            for proc in active: proc.terminate()
-            for proc, row in active.items():
-                try: rc = proc.wait(timeout=15)
-                except subprocess.TimeoutExpired: proc.kill(); rc = proc.wait()
-                row['stdout'].close(); row['stderr'].close()
-                exclusive(row['directory'] / 'wrapper-exit.json', {'observed_returncode': rc, 'supervisor_cleanup': True})
-            killed = cleanup()
-            for sig, handler in old.items(): signal.signal(sig, handler)
-            if killed: first_failure = first_failure or 'supervisor adopted/killed leftover descendants'
-            save(output / 'summary.json', dict(binding, first_failure=first_failure,
-                 never_started=pending, cleanup_killed=killed, ECHILD=True,
-                 supervisor_self_cpu_seconds= resource.getrusage(resource.RUSAGE_SELF).ru_utime + resource.getrusage(resource.RUSAGE_SELF).ru_stime,
-                 waited_descendant_cpu_seconds=resource.getrusage(resource.RUSAGE_CHILDREN).ru_utime + resource.getrusage(resource.RUSAGE_CHILDREN).ru_stime,
-                 scope='terminal attempts are not certified degrees', quiescent=True))
+            phase = 'cleanup'
+            try:
+                if not reaper_ready:
+                    save(output / 'summary.json', dict(binding, first_failure=first_failure,
+                         quiescent=False, ECHILD=False, phase='subreaper_setup_failed'))
+                else:
+                    try:
+                        # Even a status-write/wait error must reach owned cleanup.
+                        try:
+                            for proc in active: proc.terminate()
+                            for proc, row in active.items():
+                                try: rc = proc.wait(timeout=15)
+                                except subprocess.TimeoutExpired: proc.kill(); rc = proc.wait()
+                                row['stdout'].close(); row['stderr'].close()
+                                exclusive(row['directory'] / 'wrapper-exit.json', {'observed_returncode': rc, 'supervisor_cleanup': True})
+                        finally:
+                            killed = cleanup()
+                        if killed: first_failure = first_failure or 'supervisor adopted/killed leftover descendants'
+                        save(output / 'summary.json', dict(binding, first_failure=first_failure,
+                             never_started=pending, cleanup_killed=killed, ECHILD=True,
+                             supervisor_self_cpu_seconds=resource.getrusage(resource.RUSAGE_SELF).ru_utime + resource.getrusage(resource.RUSAGE_SELF).ru_stime,
+                             waited_descendant_cpu_seconds=resource.getrusage(resource.RUSAGE_CHILDREN).ru_utime + resource.getrusage(resource.RUSAGE_CHILDREN).ru_stime,
+                             scope='terminal attempts are not certified degrees', quiescent=True))
+                    except BaseException as error:
+                        first_failure = first_failure or repr(error)
+                        save(output / 'summary.json', dict(binding, first_failure=first_failure,
+                             cleanup_error=repr(error), quiescent=False, ECHILD=False, phase='cleanup_failed'))
+            finally:
+                for sig, handler in old.items(): signal.signal(sig, handler)
         if first_failure: raise RuntimeError(first_failure)
 
 def collect(destination):

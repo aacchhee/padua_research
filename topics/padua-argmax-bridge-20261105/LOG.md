@@ -1533,3 +1533,8 @@ Sol medium custody897f771a...1240B and dated preparationb2c06173...18758B preser
 
 
 Distinct source report8d9984a7... accepts the causal FOPS08 contract but identifies FOPS09 MAJOR: post-invalidation preflight/provenance steps precede the existing scheduler cleanup try/finally. False state correctly refuses collection, yet owned preflight descendants are not guaranteed cleaned on exception/signal. Root preserves this finding before author repair and authorizes only moving all post-invalidation work into the existing subreaper/stop/cleanup discipline, keeping false if subreaper setup itself fails before any child. No new supervisor, math change or test execution. Separate03regression must include preflight error/child-orphan cleanup.
+
+
+### Focused preflight cleanup source repair frozen
+
+Sol medium custodyb77b3c1d...1240B, server4133bc2a...13855B, preparation3b71f93a...20901B. Three owned files changed: all postfalse preflight/provenance work is now in the existing signal/stop/owned-cleanup discipline; subreaper precedes any child; exception/signal/status-write failures reach cleanup; only actual ECHILD permits true. Failed subreaper/cleanup retains false state. Strict resume rejects absent original provenance and changed selected-core set BEFORE admitting any worker. No new supervisor or changed math/native/worker caps/worklist. Static AST/hash/text only. Distinct FOPS09 re-audit and separate03/genuine-data preregistrations remain pending; no new test/builder/native job is released by this candidate publication.
