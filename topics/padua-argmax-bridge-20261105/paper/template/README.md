@@ -33,6 +33,9 @@ The class header states LPPL 1.3c-or-later terms; the downloaded files should
 retain their notices when supplied for typesetting. This note does not replace
 the upstream licence terms.
 
-The math/physics numbered BST implements sorting; the draft's bibliography
-must also be checked against the journal's alphabetical requirement. A manual
-`thebibliography` list is acceptable when kept numerical and alphabetical.
+The math/physics numbered BST defaults to citation order (`unsort`), despite
+containing optional sorting routines. The draft must establish alphabetical
+order explicitly before its first textual citation, using an ordered
+`\nocite{...}` list of the works actually cited. Check the generated `.bbl`
+against the author surnames after changing references. A manual
+`thebibliography` list is also acceptable when kept numerical and alphabetical.

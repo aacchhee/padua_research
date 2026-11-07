@@ -1,0 +1,851 @@
+\section{The scalar finite part and the regular model}
+\label{scalar:appendix}\label{app:scalar-estimates}
+
+The scalar finite part controls the contribution left after the central
+root integral has been separated from the completed model.  We give its
+periodic maximum argument first, including the derivative jump at the
+end of a period.  We then retain the correlations between the endpoint
+weights when applying that maximum.  All scalar assertions up to
+Proposition~\ref{scalar:origin-bounds} are analytic.  The explicit
+enclosure used in that proposition is a separate computer-assisted
+input.
+
+\subsection{The periodic profile and its derivative measure}
+
+For $0<t<1$ put
+\begin{equation}\label{scalar:C-definition}
+ C(t)=2\gamma+\frac1t+\frac1{1-t}
+ +\sum_{k=1}^{\infty}
+ \left\{\frac1{k+t}+\frac1{k+1-t}-\frac2k\right\},
+ \qquad C_0=C(1/2)=2\gamma+4\log2.
+\end{equation}
+The series converges absolutely and is symmetric under $t\mapsto1-t$.
+Define the continuous periodic function
+\begin{equation}\label{scalar:f-definition}
+ \begin{gathered}
+ \Phi(t)=\frac{\sin(\pi t)}\pi\{C(t)-2\log\pi\}
+ \quad(0<t<1),\qquad \Phi(0)=\Phi(1)=1,\\
+ f(x)=\Phi\left(\frac12+\frac{x}{2\pi}\right).
+ \end{gathered}
+\end{equation}
+Here $\Phi$ is extended with period one before $f$ is evaluated.  Thus
+$f$ is even and has period $2\pi$.  On the principal interval, the
+symmetry of the reciprocal pairs gives
+\begin{equation}\label{scalar:f-series}
+ f(x)=\frac{\cos(x/2)}\pi
+ \left\{k_0+4x^2\sum_{\substack{\ell\geq1\\\ell\ {\rm odd}}}
+       \frac1{\ell(\ell^2\pi^2-x^2)}\right\},
+ \qquad k_0=C_0-2\log\pi,\qquad |x|<\pi.
+\end{equation}
+These equalities also fix the normalization of $f$; in particular
+$f(0)=k_0/\pi$.
+
+\begin{lemma}[A global one-sided curvature bound]
+\label{scalar:curvature}
+The function $f$ is Lipschitz and its derivative has bounded variation
+on the circle.  If $g=f''$ denotes its ordinary second derivative on
+$(-\pi,\pi)$, then its distributional second derivative is
+\begin{equation}\label{scalar:derivative-measure}
+ df'=g(x)\,dx-J\delta_{\pi},\qquad
+ J=\frac{2(\log\pi-\gamma)}\pi>\frac1\pi,
+ \qquad df'\leq\frac3{\pi^2}\,dx.
+\end{equation}
+The atom is counted once on the circle.  In particular, for every real
+$x,v$,
+\begin{equation}\label{scalar:second-difference}
+ f(x+v)+f(x-v)-2f(x)\leq\frac{3v^2}{\pi^2}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+For $0<t\leq1/2$, rearrangement of
+\eqref{scalar:C-definition} gives
+\[
+ C(t)=\frac1t+2\gamma+R(t),\qquad
+ R(t)=2t^2\sum_{k\geq1}\frac1{k(k^2-t^2)}
+     =2\sum_{j\geq1}\zeta(2j+1)t^{2j}.
+\]
+All differentiated series below converge uniformly on this half
+interval.  The elementary estimate $\zeta(2j+1)\leq\zeta(3)<5/4$
+follows by bounding the tail after $k=2$ by its integral.  Consequently
+\[
+ R'(t)\leq\frac{5t}{(1-t^2)^2},\qquad
+ R''(t)\leq R''(1/2)=28\zeta(3)-16<19.
+\]
+The last identity also follows by differentiating the reciprocal
+pairs and separating even and odd denominators.  Write
+$k_{\rm end}=2\gamma-2\log\pi$.  Then
+\[
+ \Phi(t)=\frac{\sin(\pi t)}{\pi t}
+       +k_{\rm end}\frac{\sin(\pi t)}\pi
+       +R(t)\frac{\sin(\pi t)}\pi.
+\]
+The integral representation of the first term gives
+\[
+ \left(\frac{\sin(\pi t)}{\pi t}\right)''
+ =-\pi^2\int_0^1u^2\cos(\pi tu)\,du
+ \leq-\pi^2\left(\frac13-\frac{\pi^2}{40}\right)
+ \leq-\frac{\pi^2}{12}.
+\]
+We use the elementary bounds
+$23/40<\gamma<3/5$, $\log\pi<6/5$, and $\pi^2<10$.
+They imply $-k_{\rm end}<5/4$.  Moreover,
+$\cos(\pi t)\leq\pi(1/2-t)$ and
+\[
+ \frac{t(1/2-t)}{(1-t^2)^2}\leq\frac3{40}.
+\]
+Indeed, after multiplication by the positive denominator, the last
+inequality is
+$3+34t^2+3t^4-20t\geq0$; already the quadratic part has minimum
+$3-100/34>0$.  Differentiating the three terms of $\Phi$, and dropping
+only the nonpositive term $-\pi R(t)\sin(\pi t)$, now yields
+\[
+ \Phi''(t)\leq-\frac{\pi^2}{12}+2\pi+\frac{19}\pi<12.
+\]
+For the final comparison, $31/10<\pi<22/7$ suffices.
+Reflection gives the same bound on the other half of an open period.
+The derivative matches at the half integer by symmetry.  At an integer
+its jump is $2k_{\rm end}<0$, because the displayed expansion is
+$\Phi(t)=1+k_{\rm end}t+O(t^2)$ as $t\downarrow0$.
+Thus $d\Phi'\leq12\,dt$, including every negative integer atom.
+Scaling by $t=1/2+x/(2\pi)$ proves the measure bound and the value of
+$J$ in \eqref{scalar:derivative-measure}.  The strict lower bound on
+$J$ uses $\log\pi>11/10$ and $\gamma<3/5$.
+
+The same expansions and the uniformly convergent derivatives show
+that the ordinary derivatives have finite one-sided limits.  Hence
+$f$ is globally Lipschitz and $f'$ has bounded variation.  Integrating
+the measure bound against the nonnegative triangular kernel
+$(|v|-|t|)_+$ proves \eqref{scalar:second-difference}.
+\end{proof}
+
+\begin{lemma}[Range, smooth bounds, and periodic variation]
+\label{scalar:global-profile-bounds}
+The periodic profile satisfies
+\begin{equation}\label{scalar:profile-bounds}
+ \frac12<f(x)\leq1,\qquad \operatorname{Lip}(f)<2,\qquad
+ |f''(x)|<1\quad(-\pi<x<\pi),\qquad
+ \operatorname{Var}_{\rm per}(f')<4.
+\end{equation}
+The variation includes the derivative jump at the periodic endpoint.
+\end{lemma}
+
+\begin{proof}
+In the half-period representation in Lemma~\ref{scalar:curvature},
+$0\leq R(t)\leq4t^2\leq1$.  Since
+$2\gamma-2\log\pi+R(t)<6/5-22/10+1=0$, that representation gives
+$\Phi(t)\leq\sin(\pi t)/(\pi t)\leq1$.  Reflection and continuous
+periodicity give the upper bound everywhere.
+
+For the lower bound write $0\leq s<1$, $c_s=\cos(\pi s/2)$ in
+\eqref{scalar:f-series}.  Keeping its first reciprocal pair gives
+\[
+ \pi f(\pi s)\geq c_sk_0+\frac{4c_ss^2}{1-s^2}.
+\]
+The inequality $c_s\geq(3/4)(1-s^2)$ follows by putting $r=1-s$:
+the function $\sin(\pi r/2)-(3/4)r(2-r)$ vanishes at zero,
+has positive derivative there, and its second derivative decreases
+through zero once; its first derivative consequently increases and
+then decreases to zero at $r=1$.  Also
+$1-c_s\leq\pi^2s^2/8$, $k_0<2$, and $\pi^2<10$.  Thus
+$4c_ss^2/(1-s^2)\geq3s^2\geq k_0(1-c_s)$, proving
+$f(\pi s)\geq f(0)$.  The elementary bounds
+$\gamma>23/40$, $\log2>69/100$, $\log\pi<23/20$ give
+$k_0>161/100>\pi/2$; hence $f(0)>1/2$.  Endpoint continuity completes
+the range bound.
+
+For the derivative estimates, the reciprocal series and integral
+comparison give on $0<t\leq1/2$
+\[
+ R\leq1,\qquad R'\leq\frac{32}{3}t,\qquad
+ R''\leq\frac{608}{27}.
+\]
+For example, differentiate
+$R=2t^2\sum_{k\geq1}[k(k^2-t^2)]^{-1}$, use
+$k^2-t^2\geq3k^2/4$, and bound the reciprocal cubes and fifth powers
+by $3/2$ and $5/4$.  The derivative of the sinc term is bounded by
+$\pi^2t/3<2$, the next term by $5$, and the derivative of the last
+term by $R+tR'\leq11/3<4$.  Thus $|\Phi'|<12$, so
+$\operatorname{Lip}(f)<6/\pi<2$.  The five second-derivative
+contributions, in their displayed order and using $3<\pi<10/3$,
+are bounded in absolute value by
+\[
+ \frac{10}{3},\quad10,\quad\frac{608}{81},\quad
+ \frac{32}{3},\quad\frac{10}{3}.
+\]
+Their sum is $2822/81<35$.  Reflection proves this on each open
+period, and scaling gives $|f''|<35/(4\pi^2)<1$.
+Finally the measure $\mu=df'$ has total mass zero.  By
+\eqref{scalar:derivative-measure}, its positive mass is at most
+$6/\pi$, and its negative mass is equal to its positive mass.
+Therefore $|\mu|(\mathbb R/(2\pi\mathbb Z))\leq12/\pi<4$.
+\end{proof}
+
+\subsection{An endpoint-cancelled integral and the scalar maximum}
+
+Define the scalar finite part by
+\begin{equation}\label{scalar:H-definition}
+ H(x)=\frac1\pi\lim_{\delta\downarrow0}
+ \left\{\int_{\delta}^{2\pi-\delta}
+       \frac{f(x+v)}{2\sin(v/2)}\,dv
+              +2f(x)\log\frac\delta\pi\right\}.
+\end{equation}
+Pairing the two endpoints and using
+$\int_\delta^{2\pi-\delta}(2\sin(v/2))^{-1}dv
+=2\log\cot(\delta/4)$ gives the absolutely convergent expression
+\begin{equation}\label{scalar:H-paired}
+ H(x)=\lambda_0f(x)+\frac1\pi\int_0^\pi
+   \frac{f(x+v)+f(x-v)-2f(x)}{2\sin(v/2)}\,dv,
+ \qquad \lambda_0=\frac2\pi\log\frac4\pi.
+\end{equation}
+Absolute convergence follows from the Lipschitz bound: the numerator
+is $O(v)$.  Also
+\begin{equation}\label{scalar:lambda-bound}
+ 0<\lambda_0<\frac1{2\pi}.
+\end{equation}
+For the upper bound use $\pi>25/8$ and
+$\exp(1/4)>32/25$, the latter already following from the first four
+positive terms of its exponential series.
+
+\begin{lemma}[Strict decrease of the smooth second derivative]
+\label{scalar:third-derivative}
+On $0<x<\pi$,
+\begin{equation}\label{scalar:f-third}
+ f'''(x)<-\frac{311}{71680}\sin(x/2)<0.
+\end{equation}
+In particular the ordinary second derivative $g$ in
+\eqref{scalar:derivative-measure} is even and decreases on $[0,\pi]$,
+using its finite one-sided values at the endpoints.
+\end{lemma}
+
+\begin{proof}
+Put $f_0=f(0)$.  We first remove the apparent endpoint singularity in
+\eqref{scalar:f-series}.  For $\ell=2j+1$, product-to-sum integration
+gives
+\[
+ I_\ell(x)=\int_0^{1/2}
+  \{\cos(xt)-\cos(x/2)\}\cos(\ell\pi t)\,dt
+ =\frac{(-1)^j\cos(x/2)x^2}
+        {\ell\pi(\ell^2\pi^2-x^2)}.
+\]
+Thus the part of \eqref{scalar:f-series} beyond $f_0\cos(x/2)$ is
+$4\sum_{j\geq0}(-1)^jI_{2j+1}(x)$, an absolutely convergent series
+for $|x|<\pi$.  To exchange summation and integration, first insert
+$0<r<1$.  The resulting kernel is
+\[
+ K_r(t)=\sum_{j\geq0}(-1)^jr^{2j+1}\cos((2j+1)\pi t)
+ =\frac{r(1+r^2)\cos(\pi t)}
+ {(1-r^2)^2+4r^2\cos^2(\pi t)}.
+\]
+For $1/2\leq r<1$ and $0\leq t<1/2$,
+\[
+ 0\leq K_r(t)\leq\frac5{8\cos(\pi t)},\qquad
+ K_r(t)\longrightarrow\frac1{2\cos(\pi t)}.
+\]
+The bound follows by discarding $(1-r^2)^2$ in the denominator and
+using $(r+r^{-1})/4\leq5/8$.  On $|x|\leq\pi$,
+\[
+ |\cos(xt)-\cos(x/2)|\leq |x|(1/2-t),\qquad
+ \cos(\pi t)\geq2(1/2-t).
+\]
+Dominated convergence, and then absolute convergence of the series of
+$I_\ell$, give the exact endpoint-cancelled formula
+\begin{equation}\label{scalar:f-integral}
+ f(x)=f_0\cos(x/2)+2\int_0^{1/2}
+          \frac{\cos(xt)-\cos(x/2)}{\cos(\pi t)}\,dt,
+ \qquad |x|\leq\pi.
+\end{equation}
+At $x=\pi$ the integral is $1$, the prescribed continuous endpoint
+value.  Evenness gives the other endpoint.
+
+For each of the first three $x$ derivatives, the differentiated
+numerator still vanishes at $t=1/2$.  Its $t$ derivative is uniformly
+bounded on the compact rectangle under consideration.  The same bound
+by a constant times $1/2-t$ therefore justifies differentiation under
+the integral, including finite one-sided limits at $x=\pm\pi$.
+In particular
+\begin{equation}\label{scalar:f-third-integral}
+ f'''(x)=\frac{f_0}{8}\sin(x/2)
+ +2\int_0^{1/2}
+  \frac{t^3\sin(tx)-(1/8)\sin(x/2)}{\cos(\pi t)}\,dt.
+\end{equation}
+For $0<t<1/2$, the quotient
+$\sin(tx)/\sin(x/2)$ increases for $0<x\leq\pi$.
+Indeed $z\cot z$ strictly decreases on $(0,\pi/2]$, since
+its derivative is $(\sin z\cos z-z)/\sin^2z<0$.
+Consequently
+\[
+ \frac{\sin(tx)}{\sin(x/2)}\leq\sin(\pi t).
+\]
+Divide \eqref{scalar:f-third-integral} by $\sin(x/2)>0$.  We obtain
+\[
+ \frac{f'''(x)}{\sin(x/2)}\leq
+ B_3:=\frac{f_0}{8}
+ +2\int_0^{1/2}\frac{t^3\sin(\pi t)-1/8}{\cos(\pi t)}\,dt.
+\]
+The numerator still vanishes at the upper endpoint.  Elementary
+constants give
+$f_0=(C_0-2\log\pi)/\pi<(9/5)/(25/8)<3/5$.
+For $t<1/2$, the integrand numerator is negative, so division by
+$\cos(\pi t)\leq1$ can only decrease it.  On $[0,1/4]$ use
+$\sin(\pi t)\leq(22/7)t$, on $[1/4,3/8]$ use
+$t^3\sin(\pi t)\leq27/512$, and discard the negative last interval.
+It follows that
+\[
+ B_3<\frac3{40}
+   +\left(\frac{44}{35\cdot1024}-\frac1{16}\right)
+   -\frac{37}{2048}
+   =-\frac{311}{71680}.
+\]
+This proves \eqref{scalar:f-third}.  The symmetry of $g$ follows from
+the evenness of $f$.  This proof concerns the ordinary derivatives on
+the principal interval; it does not remove the atom in
+\eqref{scalar:derivative-measure}.
+\end{proof}
+
+\begin{corollary}[A smooth third-derivative bound]
+\label{scalar:third-absolute}
+On the whole open principal interval, $|f'''(x)|<13/20$.
+\end{corollary}
+
+\begin{proof}
+In \eqref{scalar:f-third-integral}, the numerator
+$N(t)=t^3\sin(tx)-\sin(x/2)/8$ vanishes at $t=1/2$, and
+$|N'(t)|\leq3/4+\pi/8<23/20$ for $|x|\leq\pi$.
+The chord bound $\cos(\pi t)\geq2(1/2-t)$ bounds
+$|N(t)/\cos(\pi t)|$ by $23/40$.  After integration, the factor
+two cancels the interval length $1/2$.  The exterior term is at most
+$f(0)/8<3/40$, giving $23/40+3/40=13/20$.
+\end{proof}
+
+\begin{proposition}[The scalar finite part has its maximum at zero]
+\label{scalar:H-maximum}
+For $|x|\leq\pi$,
+\begin{equation}\label{scalar:H-drop}
+ H(x)-H(0)\leq-\frac{\pi-3}{4\pi^3}x^2.
+\end{equation}
+Thus $H(x)\leq H(0)$ for every real $x$, with equality exactly when
+$x\in2\pi\mathbb Z$.
+\end{proposition}
+
+\begin{proof}
+On the circle define the even kernel
+\[
+ W(t)=\int_{|t|}^{\pi}\log\cot(s/4)\,ds,
+ \qquad |t|\leq\pi.
+\]
+It is bounded, nonnegative, and radially decreasing, with $W(\pi)=0$.
+The triangular-measure formula for second differences, followed by
+integration against $(2\sin(v/2))^{-1}$, changes
+\eqref{scalar:H-paired} into
+\begin{equation}\label{scalar:H-convolution}
+ H(x)=\lambda_0f(x)+\frac1\pi\int_{-\pi}^{\pi}W(t)g(x+t)\,dt
+                 -\frac J\pi W(\pi-|x|),\qquad |x|\leq\pi.
+\end{equation}
+To check the kernel, interchange the two integrals in
+$\int_{|t|}^{\pi}(v-|t|)/(2\sin(v/2))\,dv$; the inner integral is
+$\log\cot(s/4)$, giving $W(t)$.  Boundedness of $W$ justifies Fubini
+against the total variation of $df'$.  The negative point mass in
+\eqref{scalar:derivative-measure} supplies the last term in
+\eqref{scalar:H-convolution}; $W(\pi)=0$ prevents double counting at
+an endpoint representative.
+
+By Lemma~\ref{scalar:third-derivative}, $g$ is even and radially
+decreasing.  Subtract its finite minimum $g(\pi)$ to make it
+nonnegative.  The convolution of the resulting function with $W$
+is largest at zero: their layer-cake representations reduce this to
+the intersection of two centered circular arcs and a translate of
+one of them.  Every intersection has length at most that of the
+smaller arc, and concentric arcs attain that length.  Adding the
+constant $g(\pi)$ back does not affect the maximizing point.
+Subtracting \eqref{scalar:H-convolution} at zero therefore gives
+\[
+ H(x)-H(0)\leq\lambda_0\{f(x)-f(0)\}
+                    -\frac J\pi W(\pi-|x|).
+\]
+The measure bound and $f'(0)=0$ imply
+$f(x)-f(0)\leq3x^2/(2\pi^2)$.  For $0\leq x\leq\pi$,
+\[
+ W(\pi-x)=\int_0^x\log\cot((\pi-s)/4)\,ds\geq\frac{x^2}{4},
+\]
+because the integrand vanishes at zero and its derivative is
+$1/(2\cos(s/2))\geq1/2$.  Now
+\eqref{scalar:lambda-bound} and $J>1/\pi$ give
+\[
+ H(x)-H(0)\leq
+ \left(\frac3{4\pi^3}-\frac1{4\pi^2}\right)x^2.
+\]
+This is \eqref{scalar:H-drop}.  Its right side is negative away from
+zero since $\pi>3$; periodicity completes the equality classification.
+The closed endpoints are included by the displayed continuous formulas.
+\end{proof}
+
+\subsection{The endpoint weights and the full-diamond bound}
+
+For nonnegative phases $x,y$ with $x+y\leq\pi$, put
+\begin{equation}\label{scalar:phase-definitions}
+ \begin{gathered}
+ e=x+y,\quad d=x-y,\quad c_e=\cos(e/2),\quad c_d=\cos(d/2),\\
+ a=c_ec_d=\frac{\cos x+\cos y}{2},\quad u=1-a,\quad
+ z=(1-c_e)(1-c_d),\quad p=\sin x,\\
+ b_0=C_0-\frac72,\quad B=\frac{C_0^2}{\pi^2},\quad
+ d_0=\frac{C_0b_0}{\pi^2},\quad v_0=\frac{7b_0}{2\pi^2},\\
+ g_0=\frac4{\pi^2}(\log^2\pi-\log^22),\quad
+ c_{\rm b}=\frac13+g_0,\quad t_0=\frac{2\log2}{\pi}.
+ \end{gathered}
+\end{equation}
+In particular $2-c_e-c_d=u+z$.  All weights in these formulas are
+nonnegative.  Signed phases use $x=|\alpha|,y=|\beta|$ through the
+separate phase comparison; no interchange of the $n$ and $n+1$ meshes
+is made.
+
+\begin{lemma}[A weighted reciprocal-pair bound]
+\label{scalar:weighted-C}
+With continuous endpoint products,
+\begin{equation}\label{scalar:weighted-C-bound}
+ \cos(\theta/2)C\left(\frac12+\frac\theta{2\pi}\right)
+ \leq C_0-b_0\{1-\cos(\theta/2)\},\qquad |\theta|\leq\pi.
+\end{equation}
+For the endpoint contribution
+$E_\infty=a/3+aC(1/2+d/(2\pi))C(1/2+e/(2\pi))/\pi^2$,
+this implies the correlated estimate
+\begin{equation}\label{scalar:endpoint-loss}
+ E_\infty\leq\frac a3+B-d_0u-v_0z.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Let $0\leq s<1$ and $c_s=\cos(\pi s/2)$.  The tangent partial
+fraction identity
+\[
+ \frac\pi2\tan\frac{\pi s}{2}
+ =\sum_{\substack{\ell\geq1\\\ell\ {\rm odd}}}
+       \frac{2s}{\ell^2-s^2}
+\]
+follows by subtracting twice the cotangent partial fraction at $\pi s$
+from the one at $\pi s/2$.  The resulting series converges absolutely
+on compact subintervals of $[0,1)$.  Its derivative at zero gives
+$\sum_{\ell\ {\rm odd}>0}\ell^{-2}=\pi^2/8$.
+For $Q(s)=(1-s^2)/c_s$,
+\[
+ \frac{Q'(s)}{Q(s)}=
+ \sum_{\substack{\ell\geq3\\\ell\ {\rm odd}}}
+       \frac{2s}{\ell^2-s^2}
+ \geq2s\left(\frac{\pi^2}{8}-1\right).
+\]
+Since $Q(0)=1$, integration and $\exp t\geq1+t$ imply
+\[
+ \frac{c_ss^2}{(1-c_s)(1-s^2)}\leq\frac8{\pi^2},
+ \qquad 0<s<1.
+\]
+The reciprocal-pair series gives
+\[
+ C(1/2+s/2)-C_0
+ =4s^2\sum_{\ell\ {\rm odd}>0}\frac1{\ell(\ell^2-s^2)},
+ \qquad
+ \sum_{\ell\ {\rm odd}\geq3}\frac1{\ell(\ell^2-1)}
+ =\frac34-\log2.
+\]
+For the second identity, use
+$1/(\ell(\ell^2-1))=(1/2)(1/(\ell-1)+1/(\ell+1))-1/\ell$
+and take symmetric harmonic partial sums.  Hence
+\[
+ \frac{c_s\{C(1/2+s/2)-C_0\}}{1-c_s}
+ \leq\frac{32}{\pi^2}\left(\frac74-\log2\right)<\frac72.
+\]
+The strict comparison follows from $\log2>69/100$ and
+$\pi^2>197/20$.  Symmetry handles negative $s$, and at $s=0$ the
+increment vanishes.  At $s\uparrow1$ the weighted increment tends
+to $\pi<7/2$, as its $\ell=1$ term shows.  This proves
+\eqref{scalar:weighted-C-bound} on the closed interval.
+
+The two factors bounded in \eqref{scalar:weighted-C-bound} are
+positive, including their endpoint limits.  Multiplying their upper
+bounds gives exactly
+\[
+ [C_0-b_0(1-c_e)][C_0-b_0(1-c_d)]
+ =C_0^2-C_0b_0u-\frac72b_0z.
+\]
+Division by $\pi^2$ and addition of $a/3$ proves
+\eqref{scalar:endpoint-loss}.
+\end{proof}
+
+The completed model used in the finite-row comparisons is now specified
+in full.  In the notation of Appendix~\ref{app:row-estimates}, write
+$\mathcal B(v)=B(v)$ for the constant part of the row profile, to
+distinguish it from the constant $B=C_0^2/\pi^2$ above.  Put
+\begin{equation}\label{scalar:finitepart-normalization}
+ \begin{gathered}
+ U_0=c_ef(d)+c_df(e),\qquad
+ D_0=\frac{U_0}{\pi}+\frac{4a}{\pi^2}\log\pi,\\
+ K_\delta=\frac{4a}{\pi^2}\log^2\frac\delta\pi
+       +2D_0\log\frac\delta\pi
+       +\frac1\pi\int_\delta^{2\pi-\delta}\mathcal B(v)\,dv,\\
+ E_\infty=\frac a3+
+  \frac{a}{\pi^2}C\left(\frac12+\frac d{2\pi}\right)
+                       C\left(\frac12+\frac e{2\pi}\right),\\
+ C_\infty=E_\infty+\lim_{\delta\downarrow0}K_\delta.
+ \end{gathered}
+\end{equation}
+Every product at an endpoint uses its continuous weighted value.  The
+finite-part limit exists uniformly in the closed phase diamond.  Indeed,
+with $v_L(t)=t$, $v_R(t)=2\pi-t$ and
+\[
+ Z_s(t)=\mathcal B(v_s(t))-
+                 \frac{U_0+(4a/\pi)\log t}{t},
+\]
+the combined endpoint residual bound in the finite-row estimates is
+\[
+ |Z_s(t)|\leq7+\frac{p+q}{\pi}
+                       \left(3+2\log\frac{4\pi}{t}\right).
+\]
+Subtracting two finite renormalizations gives exactly
+\[
+ K_\varepsilon-K_\delta=
+       \frac1\pi\int_\varepsilon^\delta(Z_L+Z_R)(t)\,dt.
+\]
+The displayed integrable envelope, uniform for $p+q\leq2$, makes this
+a uniformly Cauchy family.  The central logarithm has an integrable
+envelope as in Lemma~\ref{lem:generic-cancellation}; hence the finite
+integrals are continuous in phase, and their uniform limit is
+continuous as well.
+
+For every real $L$, define
+\begin{equation}\label{scalar:completed-model}
+ \begin{gathered}
+ M_\infty(x,y,L)=\frac{4a}{\pi^2}L^2+b_{\rm full}(x,y)L
+                         +C_\infty(x,y),\\
+ b_{\rm full}=\frac{2U_0}{\pi}
+  +\frac{8a\log2+4a\log a+2(x\sin x+y\sin y)}{\pi^2},
+ \qquad 0\log0=0.
+ \end{gathered}
+\end{equation}
+This fixes all coefficients in the error $S_n-M_\infty$.
+To check the logarithmic coefficient against the row normalization,
+put $f_s(t)=A(v_s(t))-4a/(\pi t)$.  Joining the endpoint and
+interior coefficient integrals in the exact telescope gives
+\[
+ b_{\rm full}=2D_0+\frac1\pi\int_0^\pi(f_L+f_R)(t)\,dt.
+\]
+Here is its elementary evaluation.  Set $X=\max(x,y)$,
+$Y=\min(x,y)$, so $\sin X\geq\sin Y$.  If $a>0$, the exact max
+formulas for $A$ give, with $T_t=2a\cot(t/2)$,
+\[
+ \pi(A(v_L(t))+A(v_R(t)))=
+ \begin{cases}
+ 2T_t,&0<t<\pi-X-Y,\\
+ T_t+p+q,&\pi-X-Y<t<\pi-X+Y,\\
+ 2\sin X,&\pi-X+Y<t<\pi.
+ \end{cases}
+\]
+Indeed $T_{\pi-X-Y}=p+q$ and
+$T_{\pi-X+Y}=|p-q|$.  Integrate the three pieces, using
+$\int T_t\,dt=4a\log\sin(t/2)$ and
+$\cos((X+Y)/2)\cos((X-Y)/2)=a$, and subtract $8a/t$ at the
+lower endpoint.  The result is
+\[
+ \int_0^\pi(f_L+f_R)(t)\,dt
+ =\frac{8a\log(2/\pi)+4a\log a+2(xp+yq)}\pi.
+\]
+This is precisely \eqref{scalar:completed-model}.  For continuity at
+$a=0$, the same max formulas give
+\begin{align*}
+ \pi f_L&=\max(q,p-T_t)+w(t),\\
+ \pi f_R&=\max(-q,p-T_t,q-2T_t)+w(t),\\
+ w(t)&=T_t-4a/t\in[-4a/\pi,0].
+\end{align*}
+They bound $|f_s|<1$ uniformly.  Dominated convergence and
+$a\log a\to0$ extend the evaluation to that boundary, including the
+two vertices.
+
+\begin{lemma}[Loss in the logarithmic coefficients]
+\label{scalar:coefficient-loss}
+Let $k_s=\gamma+\log(8/\pi)$, $b_c=8k_s/\pi^2$, and
+$C_*=C_\infty(0,0)$.
+On the closed phase diamond,
+\begin{equation}\label{scalar:b-loss}
+ b_{\rm full}-b_c\leq\frac{3u}{\pi^2},\qquad
+ \frac{4a}{\pi^2}\leq\frac4{\pi^2},\qquad
+ b_{\rm full}<\frac{79}{5\pi^2}.
+\end{equation}
+For $L\geq0$, if $T=(4L^2-3L)/\pi^2$, then
+\begin{equation}\label{scalar:model-loss}
+ M_\infty(0,0,L)-M_\infty(x,y,L)
+ \geq uT-\{C_\infty(x,y)-C_*\}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+In the open phase triangle put
+$D=C(1/2+e/(2\pi))+C(1/2+d/(2\pi))-2C_0$.
+Lemma~\ref{scalar:weighted-C} gives
+\[
+ aD\leq\frac72\{c_d(1-c_e)+c_e(1-c_d)\}
+ \leq\frac72u,
+\]
+where the last step uses $c_e+c_d\leq1+a$.
+Substituting $U_0=a(2C_0+D-4\log\pi)/\pi$ in
+\eqref{scalar:completed-model} gives the exact identity
+\[
+ b_{\rm full}-b_c=\frac2{\pi^2}
+ \{aD+2a\log a+x\sin x+y\sin y-4k_su\}.
+\]
+For $0\leq t\leq\pi$, the inequality $\tan(t/2)\geq t/2$
+gives $t\sin t\leq2(1-\cos t)$, so the two sine terms sum to at
+most $4u$.  Also $a\log a\leq0$ and $k_s>3/2$.  For the last
+bound one can use $\gamma>23/40$, $8/\pi>28/11$, and
+\[
+ \log\frac{28}{11}
+ >2\left(\frac{17}{39}+\frac13\left(\frac{17}{39}\right)^3\right)
+ >\frac{37}{40}.
+\]
+Thus $b_{\rm full}-b_c\leq(2/\pi^2)(7/2+4-6)u=3u/\pi^2$.
+All weighted terms extend continuously to the boundary.  Finally,
+$k_s<8/5$ follows from $\gamma<3/5$, $\pi>3$, and
+$\exp(1)>8/3$.  Hence $b_{\rm full}\leq b_c+3/\pi^2
+<(64/5+3)/\pi^2$.  Subtracting the two quadratic polynomials in
+\eqref{scalar:completed-model} proves \eqref{scalar:model-loss}.
+\end{proof}
+
+\begin{lemma}[The global cancellation contribution]
+\label{scalar:global-cancellation}
+For the completed constant, the pole contribution is
+$c_eH(d)+c_dH(e)$, and the remaining cancellation contribution
+$K_{I,0}$ satisfies
+\begin{equation}\label{scalar:global-KI}
+ C_\infty=E_\infty+c_eH(d)+c_dH(e)+K_{I,0},\qquad
+ K_{I,0}\leq-c_{\rm b}a+t_0p.
+\end{equation}
+These formulas hold on the entire closed phase diamond.
+\end{lemma}
+
+\begin{proof}
+We keep the two endpoint counterterms together.  For $\varepsilon>0$
+the cancellation part of the completed finite part is
+\[
+ K_{I,\varepsilon}=
+ \frac{4a}{\pi^2}(\log^2\varepsilon-\log^2\pi)
+       +\frac1{\pi^2}\int_\varepsilon^\pi
+                        \{I_L(t)+I_R(t)\}\,dt.
+\]
+The other part is exactly
+$c_eH_\varepsilon(d)+c_dH_\varepsilon(e)$, where $H_\varepsilon$
+is the expression inside the limit in \eqref{scalar:H-definition}.
+It therefore tends to the stated pole contribution.
+
+For $0<t<\pi$ let $T=2a\cot(t/2)$ and
+$\epsilon=\min(t,\pi-t)$.  The exact cancellation formulas of
+Lemma~\ref{lem:generic-cancellation} give the two parameters
+\[
+ I_L=J(p/2,(q+T)/2,\epsilon),\quad
+ I_R=J(p/2,|q-T|/2,\epsilon),\qquad q=\sin y.
+\]
+In those formulas
+$J(v,s,\epsilon)=2(s-v)_+\log\sin\epsilon+R(v,s,\epsilon)$,
+and $R\leq0$.  For $s\leq v$ this follows from its entropy formula;
+for $s>v$, its nonnegative separation derivative and
+$R(v,s,\pi/2)=0$ give the same conclusion.  Thus
+\[
+ I_L+I_R\leq\{(q+T-p)_++(|q-T|-p)_+\}\log\sin t.
+\]
+The coefficient in braces is at least $2\max(q,T)-2p\geq2T-2p$.
+Since $\log\sin t\leq0$, multiplication reverses that inequality:
+\begin{equation}\label{scalar:paired-I-upper}
+ I_L(t)+I_R(t)\leq4a\cot(t/2)\log\sin t
+                          +2p|\log\sin t|.
+\end{equation}
+There is no near-origin restriction here, and zero parameters use
+the continuous values in the complete cancellation formulas.
+
+The identity
+$\int_0^\pi|\log\sin t|\,dt=\pi\log2$ follows by reflection,
+the double-angle formula, and the substitution $t=2s$.
+An antiderivative of the first term on the right of
+\eqref{scalar:paired-I-upper} is
+\[
+ \begin{gathered}
+ 4a\log^2(2\sin(t/2))-4a\log^22
+                    -2a\operatorname{Li}_2(\sin^2(t/2)),\\
+ \operatorname{Li}_2(w)=\sum_{k\geq1}\frac{w^k}{k^2}.
+ \end{gathered}
+\]
+Its value at $t=\pi$ is $-a\pi^2/3$, since
+$\operatorname{Li}_2(1)=\pi^2/6$.
+At the lower endpoint, the displayed logarithmic counterterm leaves
+exactly $-c_{\rm b}a$ as $\varepsilon\downarrow0$:
+$\log(2\sin(\varepsilon/2)/\varepsilon)=O(\varepsilon^2)$,
+its product with $\log\varepsilon$ tends to zero, and the dilogarithm
+tends to zero.  The second term contributes $t_0p$.  This proves
+\eqref{scalar:global-KI}.  The original weighted finite-part integrals
+and their subtracted endpoint envelopes are continuous; taking their
+limits proves the statement also on the axes and at $a=0$.
+\end{proof}
+
+\subsection{The origin constant and its explicit arithmetic input}
+
+Set $H_0=H(0)$, $j=H_0+d_0-g_0$, and $C_*=C_\infty(0,0)$.
+At the origin the central root correction vanishes, and the exact
+central decomposition \eqref{eq:exact-central-decomposition} gives
+\begin{equation}\label{scalar:origin-identity}
+ \begin{gathered}
+ C_*=B-g_0+2H_0
+ =\frac4{\pi^2}\left(\gamma+\log\frac8\pi\right)^2+\kappa,\\
+ H_0=\frac\kappa2+\frac{2k_0}{\pi^2}\log\frac2\pi.
+ \end{gathered}
+\end{equation}
+Here is the identification with the actual corner, including its
+normalization.  At zero, $a=1$, $U_0=2k_0/\pi$, and
+\eqref{scalar:completed-model} gives $b_{\rm full}=b_c$.
+Lemma~\ref{lem:phase-row-global} has a right side tending to zero as
+$n\to\infty$; at this phase $S_n(0,0)=\Lambda_c(n)$.  Consequently
+\[
+ C_*=\lim_{n\to\infty}
+ \left\{\Lambda_c(n)-\frac4{\pi^2}\log^2n-b_c\log n\right\}.
+\]
+Theorem~\ref{thm:corner-expansion} evaluates this limit as the second
+expression in \eqref{scalar:origin-identity}, since changing
+$\log(n+1/2)$ to $\log n$ changes no constant in the limit.  Inserting
+$2k_s=C_0+2\log2-2\log\pi$ in the first equality then gives the
+stated formula for $H_0$.  These are identities of limiting constants;
+they do not assert a finite lower bound obtained by truncating the
+corner asymptotic expansion.
+
+\begin{proposition}[The numerical input and its rational consequences]
+\label{scalar:origin-bounds}
+The scalar consequences used below require the following inherited
+computer-assisted enclosure of the constants in the corner expansion:
+\begin{align}
+ 0.919710118388492535099518225790
+ &<\kappa<0.919710118388492535099518225791,
+                                                     \label{scalar:kappa-enclosure}\\
+ 1.846160310423926079759838737947
+ &<C_*<1.846160310423926079759838737948.
+                                                     \label{scalar:Cstar-enclosure}
+\end{align}
+With this input,
+\begin{equation}\label{scalar:rational-bounds}
+ \begin{gathered}
+ \frac7{25}<H_0<\frac{1633}{5125}<\frac8{25},\qquad
+ d_0>\frac{39}{250},\quad g_0<\frac{43}{125},\\
+ j>\frac{23}{250},\quad 0<t_0<\frac{221}{500}.
+ \end{gathered}
+\end{equation}
+The enclosures \eqref{scalar:kappa-enclosure}--\eqref{scalar:Cstar-enclosure}
+are the explicit computational premise, historically recorded as
+PD-T271.  Their trusted base consists of outward Arb arithmetic, the
+analytic tail bound, and the independent verification recorded with
+that enclosure.  They are not consequences of the analytic scalar
+maximum proposition.
+\end{proposition}
+
+\begin{proof}
+We spell out the rational reductions so that the precision required
+from the enclosure is visible.  The elementary constants are
+\begin{gather*}
+ \frac{161}{100}<k_0<\frac95,\qquad
+ \frac{11}{10}<\log\pi<\frac{23}{20},\\
+ \frac{69}{100}<\log2<\frac{6932}{10000},\qquad
+ \frac{157}{50}<\pi<\frac{22}{7},\qquad
+ \frac{197}{20}<\pi^2<10.
+\end{gather*}
+For example, $\log2>69/100$ follows from the first three terms of
+$2\operatorname{atanh}(1/3)$, and its positive geometric remainder
+gives the stated upper bound.  The exponential series through degree
+five at $23/20$ exceeds $22/7$, proving the upper bound on
+$\log\pi$.  Together with $23/40<\gamma<3/5$ these bounds give
+the stated bounds on $k_0$ and $391/100<C_0<4$.
+
+Since $\log(\pi/2)<23/50$, the first identity in
+\eqref{scalar:origin-identity} and \eqref{scalar:kappa-enclosure} give
+\[
+ H_0>\frac9{20}-\frac{828}{4925}
+       =\frac{5553}{19700}>\frac7{25}.
+\]
+Conversely, $\log s>2(s-1)/(s+1)$ for $s>1$ gives
+$\log(\pi/2)>\log(25/16)>18/41$.  Hence
+\[
+ H_0<\frac{23}{50}-\frac{161}{500}\frac{18}{41}
+       =\frac{1633}{5125}<\frac8{25}.
+\]
+Also $C_0>39/10$, $b_0>2/5$, and $\pi^2<10$ give
+$d_0>39/250$, while
+\[
+ g_0<\frac{80}{197}
+ \left\{\left(\frac{23}{20}\right)^2-
+               \left(\frac{69}{100}\right)^2\right\}
+ =\frac{677120}{1970000}<\frac{43}{125}.
+\]
+Therefore $j>7/25+39/250-43/125=23/250$.
+Finally,
+$t_0<6932/15700<221/500$.  These reductions use only exact rational
+comparisons once the two strict enclosures have been supplied.
+\end{proof}
+
+\begin{proposition}[Correlated global master bound]
+\label{scalar:master}
+On the entire closed phase diamond,
+\begin{align}
+ C_\infty(x,y)-C_*
+ &\leq-ju+t_0p-(H_0+v_0)z
+ \leq-ju+t_0p,                                      \label{scalar:global-master}\\
+ C_\infty(x,y)&<\frac94.                             \label{scalar:global-nine-fourths}
+\end{align}
+For $L\geq0$ the completed model therefore obeys
+\begin{equation}\label{scalar:outer-master}
+ M_\infty(0,0,L)-M_\infty(x,y,L)
+ \geq u(T+j)-t_0p,\qquad T=\frac{4L^2-3L}{\pi^2}.
+\end{equation}
+On the closed central domain $x+y\leq\pi/2$, write
+$\operatorname{Reg}=C_\infty-E_c$ with $E_c$ as in
+\eqref{eq:Ec-definition}.  Then
+\begin{equation}\label{scalar:regular-loss}
+ \operatorname{Reg}(x,y)-\operatorname{Reg}(0,0)
+ \leq-ju-(H_0+v_0)z\leq0.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Apply $H\leq H_0$ in \eqref{scalar:global-KI} and add
+\eqref{scalar:endpoint-loss}.  This gives
+\[
+ C_\infty\leq B-d_0+(d_0-g_0)a-v_0z
+                      +H_0(c_e+c_d)+t_0p.
+\]
+Subtract $C_*=B-g_0+2H_0$ and use
+$2-c_e-c_d=u+z$.  This is exactly
+\eqref{scalar:global-master}, including the mixed loss.  Its last
+inequality uses $H_0+v_0>0$.
+Combining it with \eqref{scalar:model-loss} proves
+\eqref{scalar:outer-master}.
+
+For completeness we verify the uniform $9/4$ bound with a rational
+margin.  More generally, if $H\leq H_0+\epsilon$ for
+$\epsilon\geq0$, the same computation and
+$a\leq(1+\cos x)/2$ give
+\[
+ C_\infty\leq C_*+2\epsilon-
+ \frac{j+\epsilon}{2}
+       +\sqrt{\frac{(j+\epsilon)^2}{4}+t_0^2}.
+\]
+Put $\delta=9/4-C_*$.  This upper bound is below $9/4$ whenever
+\[
+ \delta-2\epsilon>0,\qquad
+ (\delta-2\epsilon)^2+(\delta-2\epsilon)(j+\epsilon)>t_0^2.
+\]
+These conditions follow by moving the square root and squaring only
+after the other side is positive.  The already proved maximum permits
+the weaker bound with $\epsilon=1/400$.  By
+\eqref{scalar:Cstar-enclosure}, $\delta>403/1000$; thus
+$\delta-2\epsilon>199/500$ and $j+\epsilon>189/2000$.
+The left side of the last test is greater than
+$196015/1000000$, whereas $t_0^2<195364/1000000$.
+The strict rational margin is $651/1000000$.
+
+On the central domain the exact decomposition
+\eqref{eq:exact-central-decomposition} replaces the inequality for
+$K_{I,0}$ by $-c_{\rm b}a+E_c$.  Subtracting its origin value in
+the same way gives \eqref{scalar:regular-loss}; the global $t_0p$
+allowance is absent there because the complete central correction is
+retained explicitly.  All formulas use continuous weighted values,
+so their stated closed boundaries are included.
+\end{proof}

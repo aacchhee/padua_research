@@ -43,8 +43,9 @@ concerns the whole closed square, not the interpolation nodes alone.
   an independent development reconstruction. The exact analytic κ
   definition is used; its decimal enclosure is not a corner-proof premise.
 - `sections/argmax.tex`, `argmax-details.tex`, `row-estimates.tex`,
-  `model-estimates.tex`, `scalar-estimates.tex`: G01 and E14 analytic
-  assembly, closed physical cover, quantitative row/model/defect support.
+  `model-estimates.tex`, `scalar-estimates.tex`, `pole-estimates.tex`: G01 and E14 analytic
+  assembly, closed physical cover, quantitative row/model/defect support,
+  weighted pole estimates and full endpoint reference matching.
 - `sections/certificates.tex`: `../compact-return.md`, G01,
   `../theory/native-finite-range.md`, frozen final hybrid-engine
   specifications, mathematical reduction and selective-retention boundary.

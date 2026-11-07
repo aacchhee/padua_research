@@ -22,8 +22,7 @@ Padua points occur in the literature.  Throughout this section,
 Let $L_{jk}\in\Pi_n$ be its cardinal polynomials, where $\Pi_n$ denotes
 the bivariate polynomials of total degree at most $n$, and put
 \[
- \lambda_n(z)=\sum_{j+k\ {
-m even}}|L_{jk}(z)|,
+ \lambda_n(z)=\sum_{j+k\ \text{even}}|L_{jk}(z)|,
  \qquad \Lambda_c(n)=\lambda_n(-1,-1).
 \]
 
@@ -71,8 +70,7 @@ The angular coordinates of a physical point are written
 \begin{equation}
  \theta=\frac{J\pi+\alpha}{n},\qquad
  \phi=\frac{K\pi+\beta}{m},\qquad
- J+K\ {
-m odd},\qquad \rho=|\alpha|+|\beta|\leq\pi,
+ J+K\ \text{odd},\qquad \rho=|\alpha|+|\beta|\leq\pi,
                                                         \label{eq:argmax-chart}
 \end{equation}
 with $0\leq\theta,\phi\leq\pi$, $0\leq J\leq n$, and $0\leq K\leq m$.
@@ -118,6 +116,16 @@ envelope can increase initially in one phase direction.  The defect
 excludes this increase at a noncorner center.  At a corner we use a
 direct local descent estimate instead of assigning a nonexistent
 positive defect there.
+
+The delicate contribution comes from two channels of nearly coincident
+kernel poles.  Moving the phases changes which of two opposing terms is
+smaller, so taking separate upper bounds too early loses useful
+cancellation.  We first integrate the complete paired contribution and
+then bound it.  In the first phase direction the surviving upper term
+has order $x^{3/2}$, rather than quadratic order, and can dominate a
+quadratic envelope loss close to zero.  The reflection defect pays for
+this increase at noncorner centers.  At an actual corner we instead
+prove descent directly for the physical cardinal sum.
 
 \subsection{Four overlapping regions suffice}
 

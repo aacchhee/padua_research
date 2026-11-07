@@ -1,0 +1,1023 @@
+\section{Quantitative details for the corner maximum}
+\label{app:argmax-details}
+
+This appendix records the quantitative comparisons underlying
+Lemma~\ref{lem:argmax-four-regions}.  The constants are sufficient
+constants; no minimal analytic onset is asserted.  All logarithms are
+natural.  Statements about real $n$ below concern explicit scalar
+allowances, whereas interpolation objects always have integer degree.
+
+\subsection{Exact reflection identities}
+
+Write $a_j=j\pi/n$, $b_k=k\pi/m$, and let $e_j,f_k$ be one in the
+interior of their respective index intervals and $1/2$ at either
+endpoint.  The cardinal weights are $w_{jk}=2e_jf_k/\mathsf N$.  Product to sum
+in the corrected cardinal formula gives
+\[
+ L_{jk}(\cos\theta,\cos\phi)
+ =\frac{w_{jk}}4\sum_{\sigma,\eta=\pm1}
+       G_n(\theta+\sigma a_j,\phi+\eta b_k).
+\]
+For $g_{\sigma\eta}=G_n(\theta+\sigma a_j,\phi+\eta b_k)$ set
+\begin{align*}
+ M(\theta,\phi)&=\sum_{j+k\ \text{even}}
+                     \frac{w_{jk}}4\sum_{\sigma,\eta}|g_{\sigma\eta}|,\\
+ \Delta(\theta,\phi)&=\sum_{j+k\ \text{even}}\frac{w_{jk}}4
+       \left(\sum_{\sigma,\eta}|g_{\sigma\eta}|
+                       -\left|\sum_{\sigma,\eta}g_{\sigma\eta}\right|\right).
+\end{align*}
+Then $\lambda_n=M-\Delta$ exactly.  For every residue $r$ modulo $2n$,
+\[
+ \sum_{\substack{0\leq j\leq n,\ \sigma=\pm1\\
+                   \sigma j\equiv r\ (2n)}}e_j=1.
+\]
+The same identity holds for the $m$ mesh.  Consequently
+\[
+ M(\theta,\phi)=\frac1{2\mathsf N}
+ \sum_{\substack{0\leq r<2n,\ 0\leq s<2m\\r+s\ \text{even}}}
+       |G_n(\theta+r\pi/n,\phi+s\pi/m)|.
+\]
+Translation by an odd center $(J,K)$ turns this even board into the odd
+board in \eqref{eq:argmax-primitive}.  This proves the exact identity
+\eqref{eq:argmax-defect}, without an endpoint correction.
+
+For completeness, put $d(v,w)=|v|+|w|-|v+w|$,
+$\Gamma^-=\{(r,s):0\leq r<2n,\ 0\leq s<2m,\ r+s\text{ odd}\}$, and
+\[
+ H_{rs}=G_n\left(\frac{r\pi+\alpha}{n},
+                    \frac{s\pi+\beta}{m}\right),\qquad (r,s)\in\Gamma^-.
+\]
+With periodic indices,
+\begin{equation}
+ Q_v(K)=\frac1{4\mathsf N}\sum_{\Gamma^-}d(H_{rs},H_{r,2K-s}),\qquad
+ Q_h(J)=\frac1{4\mathsf N}\sum_{\Gamma^-}d(H_{rs},H_{2J-r,s}).
+                                                        \label{eq:argmax-projections}
+\end{equation}
+The phases are unchanged in the reflected partners.  Applying the
+triangle inequality first within either pair gives
+$\Delta\geq Q_v$ and $\Delta\geq Q_h$.  These are separate projections;
+their sum is not a lower bound used here.
+
+All formulas are finite-polynomial identities.  For evaluation one may
+use $P_n=T_{n+1}+T_n$ and
+\[
+ G_n(u,v)=\frac{P_n(\cos u)-P_n(\cos v)}{\cos u-\cos v}-\cos(nu)
+\]
+away from a zero denominator, and replace the quotient by
+$P_n'(\cos u)$ at equality.  No collision term is discarded.  In
+particular $G_n(0,0)=2\mathsf N$, $G_n(\pi,\pi)=2n(-1)^n$, and
+$G_n(0,\pi)=0$.
+
+\subsection{The paired central contribution}
+
+The completed model and its cancellation functional are developed in
+the supporting model estimates.  We give the joint argument responsible
+for the useful sign of the second phase.  Put
+\begin{gather*}
+ x=|\alpha|,\quad y=|\beta|,\quad
+ a=\frac{\cos x+\cos y}{2},\quad u=1-a,\\
+ p=\sin x,\quad q=\sin y,\quad v=p/2,\quad\delta=q/2.
+\end{gather*}
+Let $J(v,s,e)$ be the generic cancellation integral in
+Lemma~\ref{lem:generic-cancellation}, and define
+\begin{align}
+ s_0(e)&=a\tan(e/2),\qquad
+ s_L(e)=s_0(e)+\delta,\qquad s_R(e)=|s_0(e)-\delta|,\nonumber\\
+ E_c(x,y)&=\frac1{\pi^2}\int_0^{\pi/2}
+ \{J(v,s_L(e),e)+J(v,s_R(e),e)-4s_0(e)\log\sin e\}\,de.
+                                                        \label{eq:argmax-central-integral}
+\end{align}
+Write $E(v,s,e)=J(v,s,e)-2s\log\sin e$ and
+\[
+ Z(v,s,e)=2\int_e^{\pi/2}
+           \frac{\sqrt{(v^2-s^2\sin^2t)_+}}{\sin t}\,dt.
+\]
+The generic cancellation bound is $E\leq Z$.  Since
+$s_L+s_R-2s_0=2(\delta-s_0)_+$, an exact rearrangement gives
+\begin{align}
+ E_c&=\frac1{\pi^2}\int_0^{\pi/2}
+              \{E(v,s_L(e),e)+E(v,s_R(e),e)\}\,de-B_\beta,\nonumber\\
+ B_\beta&=\frac4{\pi^2}\int_0^b
+        \{q/2-a\tan(e/2)\}[-\log\sin e]\,de,\qquad
+ b=2\arctan\frac q{2a}.                             \label{eq:argmax-beta-baseline}
+\end{align}
+Here $b=B_\beta=0$ if $q=0$.  On $x+y\leq1$, $a>0$ and
+$0\leq b\leq x+y<\pi/2$, so $B_\beta\geq0$.
+
+\begin{lemma}[Paired root bound]
+\label{lem:argmax-central-pair}
+Let $I_4=\int_0^1\sqrt{1-t^4}\,dt$ and $\kappa_4=4I_4/\pi^2$.
+On $x,y\geq0$, $x+y\leq1$,
+\begin{equation}
+ E_c(x,y)\leq\kappa_4\frac{p^{3/2}}{\sqrt a}-B_\beta,
+ \qquad
+ E_c\leq
+ \begin{cases}
+ 3x^{3/2}/8-B_\beta,&x+y\leq1/2,\\
+ 5x^{3/2}/12-B_\beta,&x+y\leq1.
+ \end{cases}                                         \label{eq:argmax-central-pair}
+\end{equation}
+The exact boundary identity is $E_c(0,y)=-B_\beta$.
+\end{lemma}
+
+\begin{proof}
+After applying $E\leq Z$, it suffices to bound
+\[
+ \mathcal R=\int_0^{\pi/2}
+       \{Z(v,a\tan(e/2)+\delta,e)+Z(v,|a\tan(e/2)-\delta|,e)\}\,de.
+\]
+For fixed $0<t\leq\pi/2$ define on the real line
+\[
+ W_t(w)=\frac{2a}{a^2+w^2}{\bf1}_{|w|\leq a\tan(t/2)},
+ \qquad R_t(w)=\sqrt{(v^2-w^2\sin^2t)_+}.
+\]
+Tonelli's theorem and $w=a\tan(e/2)$ give exactly
+\[
+ \mathcal R=2\int_0^{\pi/2}\frac1{\sin t}
+              \int_{\mathbb R}W_t(w)R_t(w-\delta)\,dw\,dt.
+\]
+Both functions in the inner convolution are nonnegative, even, and
+nonincreasing with $|w|$.  The convolution is largest at zero: by
+layer cake, its value is the integral of intersection lengths of two
+intervals, one translated by $\delta$; each intersection has length at
+most that of the smaller interval, attained when both are centered.
+Thus
+\[
+ \mathcal R\leq2\int_0^{\pi/2}Z(v,a\tan(e/2),e)\,de.
+\]
+There is no signed interchange here, and
+$Z(v,s,e)\leq2v\log(2/e)$ ensures finiteness.  The root integral bound
+of Lemma~\ref{lem:root-majorant} is
+\[
+ \int_0^{\pi/2}Z(v,a\tan(e/2),e)\,de
+       \leq4\sqrt2 I_4\frac{v^{3/2}}{\sqrt a},\qquad 0\leq v\leq a.
+\]
+On the stated domain, $a\geq49/64$ and $v/a\leq32/49<1$.
+Substitution of $v=p/2$ proves the first inequality, including its
+normalization.  The elementary conversions in the root-majorant lemma,
+using $I_4<319/360$, give the two rational constants.  At $v=0$ the
+generic cancellation identity is exact with $E=0$, proving the boundary
+identity.
+\end{proof}
+
+On the smaller diamond the negative baseline is quantitatively useful.
+Indeed $2a\leq1+\cos y$ gives $b\geq y$, while $b\leq x+y\leq1/2$.
+Convexity of tangent yields
+$a\tan(e/2)\leq qe/(2b)$ for $0\leq e\leq b$.  Since $\sin e\leq e$,
+\begin{equation}
+ B_\beta\geq\frac{qb}{\pi^2}\left(\log\frac1b+\frac32\right)
+       \geq\frac{1679}{8000}y^2.                   \label{eq:argmax-beta-quadratic}
+\end{equation}
+For the last comparison use $q\geq23y/24$, $b\geq y$, $\pi^2<10$,
+and $\log2>69/100$.  This also holds at $y=0$ by continuity.
+
+\subsection{Scalar allowances and their roles}
+
+Set $L=\log n$, $H=1+L$, $b_0=4/\pi^2$, and
+$h_r=\log(5/2)+1/18$.  The explicit allowances used below are
+\begin{align}
+ T&=\frac{4L^2-3L}{\pi^2},\nonumber\\
+ D&=\frac{(52/\pi^2)H+7}{n}+\frac{10}{n^2}
+                                      +\frac{20H}{\pi n^2},\nonumber\\
+ \mathcal M&=\frac{b_0(2L+2h_r)}n
+ +\frac{4+b_0(L+1/n)}{4n^2-1}+\frac{b_0}{(2n-1)^2}\nonumber\\
+ &\hspace{12mm}+\frac{5+b_0(\log(n+1/2)+2)}{4(n-1/2)^2},\nonumber\\
+ \bar e&=D+\mathcal M+1/n,\qquad
+ K_D=\frac{[6+16/(3\pi)]H+2/\pi}{n},\nonumber\\
+ A_4&=4/n+40H/(\pi n^2),\qquad C_4=A_4+20/n^2,\nonumber\\
+ d_\beta&=(17L+27)/n^2,\nonumber\\
+ J_N&=\frac{(3/2)H+16/5}{n}+\frac{78}{n^2},\nonumber\\
+ J_W&=\frac{(3/2)H+6}{n}+\frac{148}{n^2},\nonumber\\
+ k_{Nx}&=\frac{(19/2)H+(23/3)L+677/10}{n}+\frac{82}{n^2},
+ \quad k_{Ny}=k_{Nx}+d_\beta,\nonumber\\
+ k_{Wx}&=\frac{(19/2)H+(23/3)L+155/2}{n}+\frac{152}{n^2},
+ \quad k_{Wy}=k_{Wx}+d_\beta,\nonumber\\
+ U_N&=T-\bar e+A_4+\rho J_N+j,\nonumber\\
+ U_W&=T-\bar e+A_4+\rho J_W+j.                    \label{eq:argmax-coefficients}
+\end{align}
+The letter $\mathcal M$ here denotes a scalar mesh remainder, not a
+global norm.  The regular-model estimates in
+Proposition~\ref{scalar:origin-bounds} and
+\eqref{scalar:global-nine-fourths} supply
+\begin{equation}
+ j>23/250,\qquad t_0=2\log2/\pi<221/500,
+ \qquad C_\infty(\alpha,\beta)<9/4.                 \label{eq:argmax-regular-constants}
+\end{equation}
+The origin lemma gives only $E_n(0)>-\bar e$ from $n=160$;
+it is not a global absolute bound.  The exact relative conversion is
+\[
+ E_n(\alpha,\beta)-E_n(0)
+ =\{E_n(\alpha,\beta)-aE_n(0)\}-uE_n(0).
+\]
+The complete row estimates therefore give
+\begin{equation}
+ S_n-\Lambda_c\leq
+ \begin{cases}
+ E_c-uU_N+C_4+k_{Nx}x+k_{Ny}y,&\rho\leq1/2,\\
+ E_c-uU_W+C_4+k_{Wx}x+k_{Wy}y,&\rho\leq1.
+ \end{cases}                                         \label{eq:argmax-relative-comparison}
+\end{equation}
+The second line uses the wide signed outer bound, not an extension of
+the sharper half-diamond bound.  The separate mesh charge is
+$\rho/(2n)$; the scalar logarithmic term is already inside the signed
+outer estimate.  Lemma~\ref{lem:relative-telescope} gives the complete
+component matching.
+
+For the corner argument we also require the full absolute allowance.
+Define
+\begin{align*}
+ g&=1+\log(2+8m/(3\pi)),\qquad M_A=1/\pi+4/\pi^2,\\
+ G_g&=\frac1m\left\{7M_A L+\frac{111}2+
+ \frac{63+\log2+4\log\pi+7\log m+16\log(2m)+(3/2)g}{\pi}\right\},\\
+ W&=\frac{3\log m+\log2+2\log\pi+2}{\pi m},\\
+ \overline C_E&=D+G_g+(64+16L)/n+318/n^2+\mathcal M+W.
+\end{align*}
+The full-phase theorem, Lemma~\ref{lem:phase-row-global}, gives
+\begin{equation}
+ |S_n-M_\infty|\leq\overline C_E+K_D P,
+ \qquad P=\sin x+\sin y\leq2,\qquad \rho\leq\pi.
+                                                        \label{eq:argmax-global-error-norm}
+\end{equation}
+Combining it with the global model coefficients and
+\eqref{eq:argmax-regular-constants} yields the genuine global norm
+\begin{equation}
+ M(n)=\frac{4L^2+(79/5)L}{\pi^2}+\frac94+\overline C_E+2K_D.
+                                                        \label{eq:argmax-analytic-norm}
+\end{equation}
+Even-lattice phase translations and separate phase reflections reduce
+all real phases to $\rho\leq\pi$.  Thus \eqref{eq:argmax-analytic-norm}
+bounds every complete signed board sum.  By the exact reflection
+identity it also bounds every complete signed cardinal sum after the
+inward corner substitution, globally in its real phase variables.
+
+The quantitative trust in \eqref{eq:argmax-regular-constants} must be
+retained.  With $k_s=\gamma+\log(8/\pi)$, its origin normalization uses
+\[
+ C_* =4k_s^2/\pi^2+\kappa_c,
+\]
+\begin{gather*}
+ 0.919710118388492535099518225790<\kappa_c,\\
+ \kappa_c<0.919710118388492535099518225791,\\
+ 1.846160310423926079759838737947<C_*,\\
+ C_*<1.846160310423926079759838737948.
+\end{gather*}
+These are the inherited PD-T271 outward enclosures, obtained from a
+coefficient series through index $64$ at $320$-bit Arb precision and
+the analytic tail radius $8/(3\cdot66\cdot4^{65})$.  They concern a
+limiting constant.  No finite lower bound for $\Lambda_c(n)$ is inferred
+from these decimal endpoints alone.  The analytic scalar maximum
+argument does not remove this numerical dependency.
+
+\subsection{The half-near comparison from degree 320}
+\label{app:argmax-half-near}
+
+The elementary identity
+$\log z=2\sum_{r\geq0}((z-1)/(z+1))^{2r+1}/(2r+1)$, with a
+geometric bound on its positive tail, gives at $n=320=2^8(5/4)$
+\[
+ \frac{57679}{10000}<L<\frac{5769}{1000},\qquad H<\frac{6769}{1000}.
+\]
+For explicit rational brackets, $\log2$ lies between
+$842/1215+2/15309$ and that sum plus $1/78732$; $\log(5/4)$ lies
+between $488/2187$ and that sum plus $1/145800$.
+Together with $157/50<\pi<22/7$, $\pi^2>197/20$, and $h_r<1$,
+substitution into \eqref{eq:argmax-coefficients} yields
+\begin{equation}
+ \begin{gathered}
+ T>293/25,\quad D<27/200,\quad\mathcal M<7/400,
+ \quad\bar e<249/1600,\quad C_4<677/50000,\\
+ k_{Nx}<11031/20000,\qquad k_{Ny}<11056/20000,
+ \qquad J_N>2171/51200>21/500,\\
+ U_N>23337/2000+(21/500)\rho.
+ \end{gathered}                                      \label{eq:argmax-base320}
+\end{equation}
+For example the lower numerator for $T$ is
+$567277810036/48400000000>293/25$.  For $D$ a valid upper bound is
+\[
+ \frac{(1040/197)(6769/1000)+7}{320}
+       +\frac{10+6769/157}{320^2}<\frac{27}{200}.
+\]
+The leading mesh term is at most
+$(41/100)(2(5769/1000)+2)/320$; the other three positive terms total
+less than $14/320^2$, proving the displayed mesh bound.  The exact
+upper numerator for $k_{Nx}$ is $705963/1280000$; addition of the
+entire $d_\beta$ gives $56602113/102400000$ for $k_{Ny}$.
+
+These bounds persist with the needed directions for all real $n\geq320$.
+$\bar e,C_4,k_{Nx},k_{Ny}$ decrease.  For the whole mixed coefficient
+$U_N$, use $H\leq n/4$ on $n\geq32$, $L>5$, and $\pi^2<10$:
+\[
+ T'>3/n,\quad A_4'>-32/(3n^2),\quad
+ J_N'>-3/(8n)-16/(5n^2)-156/n^3.
+\]
+For $0\leq\rho\leq1/2$ this implies
+\[
+ (T+A_4+\rho J_N)'
+ >\frac{45}{16n}-\frac{184}{15n^2}-\frac{78}{n^3}>0.
+\]
+The decreasing $\bar e$ improves the direction.  This checks the
+complete coefficient, rather than assuming a favorable direction for
+a difference of positive terms.
+
+The projected-floor formulas in Lemma~\ref{lem:projected-floors} give,
+for each eligible interior-index projection,
+\begin{equation}
+ \Delta_{JK}>L_h(\rho):=
+ \frac{5123}{50000}-\frac{4447}{50000}\rho
+                         -\frac{1281}{50000}\rho^2,
+ \qquad 0\leq\rho\leq\frac12.                      \label{eq:argmax-half-floor}
+\end{equation}
+Here is the base calculation, including every center class.  Write
+$a_\rho=1-\rho^2/4$.  In the middle class the formula is
+$F_h=A_h a_\rho-B_h\rho$, with the exact $n=320$ coefficients
+\begin{align*}
+ A_h&=\frac{1241317}{9680000}-\frac{679}{251200}
+                    -\frac{77392}{3768000}-\frac{97}{38400},\\
+ B_h&=\frac{253869}{2420000}-\frac{35}{25120}
+                    -\frac{2000}{150720}-\frac1{768}.
+\end{align*}
+Direct positive-denominator comparisons give
+$5123/50000<A_h<1281/12500$ and $0<B_h<4447/50000$.
+For the nearest and small-angle classes, respectively, the same floor
+formulas give
+\begin{gather*}
+ F_n>\frac{27}{200}\left(\frac{959}{1000}a_\rho-\frac\rho2\right)
+       >\frac{11}{100}(a_\rho-\rho/2),\\
+ F_s=\frac{35}{286}\left(\frac{157}{160}\right)^2(a_\rho-\rho/2)
+       >\frac{11}{100}(a_\rho-\rho/2).
+\end{gather*}
+The first comparison uses
+$2[n/(n+1)](1/4-1/n)=158/321$ and
+$\pi+\rho\leq51/14$.  The second-step difference for $F_n$ is
+$3893a_\rho/200000-\rho/80>0$.  The common lower bound for these
+two classes exceeds $L_h$ by
+\[
+ \frac{377}{50000}+\frac{1697}{50000}\rho
+                                    -\frac{94}{50000}\rho^2>0.
+\]
+The three classes exhaust each eligible projection, and the original
+floor formulas improve with $n$ at the same fixed radius.  Every
+noncorner odd center has at least one eligible interior index; only
+that projection is required.
+
+Combine \eqref{eq:argmax-central-pair} and
+\eqref{eq:argmax-beta-quadratic} with
+$u\geq47(x^2+y^2)/192$.  The fixed tangent
+$\sqrt x\leq(5/4)x+1/5$ follows from
+$(\sqrt x-2/5)^2\geq0$.  On $1/8\leq\rho\leq1/2$,
+\eqref{eq:argmax-base320} gives $(47/192)U_N>1143/400$.
+Consequently
+\begin{equation}
+ \begin{gathered}
+ S_n-\Lambda_c<C_4+\ell_1x+\ell_2y-d_1x^2-d_2y^2,
+ \\
+ \ell_1=\frac{12531}{20000},\quad\ell_2=\frac{11056}{20000},
+ \quad d_1=\frac{1911}{800},\quad d_2=\frac{24539}{8000}.
+ \end{gathered}
+                                                        \label{eq:argmax-half-quadratic}
+\end{equation}
+For positive $d_1,d_2$, the maximum of the quadratic part on the entire
+line $x+y=\rho$ is $-e\rho^2+f\rho+g$, where
+\begin{equation}
+ e=\frac{d_1d_2}{d_1+d_2},\qquad
+ f=\frac{d_2\ell_1+d_1\ell_2}{d_1+d_2},\qquad
+ g=\frac{(\ell_1-\ell_2)^2}{4(d_1+d_2)}.
+                                                        \label{eq:argmax-radial-maximum}
+\end{equation}
+Enlarging the nonnegative segment to this line is a valid upper bound.
+Here
+\[
+ e>13429/10000,\quad f<29714/50000,\quad g<1/4000,
+\]
+so
+\[
+ S_n-\Lambda_c<\frac{1379}{100000}
+                  +\frac{29714}{50000}\rho-\frac{13429}{10000}\rho^2.
+\]
+Subtracting this from \eqref{eq:argmax-half-floor}, the resulting
+quadratic exceeds $1/20000$ for every real $\rho$:
+\[
+ \frac{8867}{100000}-\frac{34161}{50000}\rho
+                         +\frac{8233}{6250}\rho^2>\frac1{20000}.
+\]
+Completing the square reduces this assertion to
+$34161^2=1166973921<1167373536=32\cdot8233\cdot4431$.
+
+For $0\leq\rho\leq1/8$, drop the nonnegative radius term in $U_N$.
+Both curvatures exceed two, whence
+\[
+ S_n-\Lambda_c<677/50000+(627/1000)\rho-\rho^2<77/1000.
+\]
+On the same interval $L_h(\rho)\geq L_h(1/8)>9/100$.
+This proves \eqref{eq:argmax-half-near} on the whole closed half
+diamond, including its axes and origin.
+
+\subsection{The matched annulus and the wide primitive}
+
+The new wide coefficients in \eqref{eq:argmax-coefficients} obey at
+$n=320$
+\[
+ k_{Wx}<373019/640000<583/1000,\qquad
+ k_{Wy}<59808113/102400000<117/200.
+\]
+Their inverse-square charges $152/n^2$ and $d_\beta$ are included.
+Also $T-\bar e+j>2331/200$ and
+$(11/48)(T-\bar e+j)>8/3$.  For $\rho\leq1$,
+$u\geq11(x^2+y^2)/48$ and
+$E_c\leq5x^{3/2}/12$ by Lemma~\ref{lem:argmax-central-pair}.
+Using the fixed tangent $\sqrt x\leq x+1/4$ gives on the entire
+nonnegative radius-one segment
+\[
+ S_n-\Lambda_c<C_4+\frac{11}{16}x+\frac{47}{80}y
+                         -\frac94x^2-\frac83y^2.
+\]
+Formula~\eqref{eq:argmax-radial-maximum} now has
+\[
+ e=72/59>61/50,\quad f=3029/4720<257/400,\quad g=3/5900,
+\]
+and hence
+\begin{equation}
+ S_n-\Lambda_c<P(\rho):=
+ \frac{141}{10000}+\frac{257}{400}\rho-\frac{61}{50}\rho^2.
+                                                        \label{eq:argmax-wide-polynomial}
+\end{equation}
+$P$ decreases for $\rho\geq1/2$, and
+$P(1/2)=607/20000$, $P(3/5)=-99/2500$.  This proves
+\eqref{eq:argmax-wide}.
+
+Only $1/2\leq\rho\leq3/5$ needs a defect.  The nearest and small-angle
+classes give
+\[
+ F_n>\frac3{25}\left(\frac{19}{20}a_\rho-\frac\rho2\right)
+       >\frac9{100}(a_\rho-\rho/2),\qquad
+ F_s>\frac{11}{100}(a_\rho-\rho/2),
+\]
+whose common lower bound is at least $549/10000>17/500$.
+For the middle class apply its actual extended guard
+$\rho\leq21/40$, obtaining directly
+\[
+ F_h>\frac{5123}{50000}\left(1-\frac{(21/40)^2}{4}\right)
+             -\frac{4447}{50000}\frac{21}{40}>\frac{17}{500}.
+\]
+For $21/40\leq\rho\leq3/5<\pi/4$, use the separately valid wide
+floor $F_w=A_w a_\rho-B_w\rho$ with
+\begin{align*}
+ A_w&=\frac{2893891}{29040000}-\frac{679}{251200}
+                    -\frac{75242}{3768000}-\frac{97}{38400},\\
+ B_w&=\frac{3977281}{58080000}-\frac{35}{25120}
+                    -\frac{15}{1256}-\frac1{768}.
+\end{align*}
+Here $37/500<A_w<3/40$ and $0<B_w<27/500$, so
+\[
+ F_w>\frac{37}{500}-\frac{27}{500}\rho-\frac3{160}\rho^2
+       \geq\frac{697}{20000}>\frac{17}{500}.
+\]
+Every eligible projection is covered by these classes.  Subtracting
+the defect from \eqref{eq:argmax-wide-polynomial} leaves a gap at least
+$17/500-607/20000=73/20000>3/1000$, proving
+\eqref{eq:argmax-annulus}.  This is a fresh use of the guarded floor
+formulas; the half-diamond conclusion was not extended by assertion.
+For all real $n\geq320$, $T-\bar e+j$ increases while the new
+$k_{Wx},k_{Wy},C_4$ decrease, and the same-radius floor formulas improve.
+Thus both annular conclusions hold throughout the stated integer tail.
+
+\subsection{The full outer diamond}
+
+For $1\leq\rho\leq\pi$ put
+\[
+ c_e=\cos(\rho/2),\quad c_d=\cos((x-y)/2),\quad a=c_ec_d,
+ \quad u_1=47/384,\quad v=u-u_1,
+\]
+and fix
+\[
+ a_0=337/384,\quad w_0=721/384,\quad
+ p_0=12/25,\quad P_0=24/25,\quad\eta=3/2.
+\]
+The following actual-phase bounds preserve the correlation between
+phase radius and model loss:
+\begin{equation}
+ \begin{gathered}
+ v\geq0,\quad a\leq a_0,\quad c_e+c_d\leq w_0,\qquad
+ \max(p,q)\leq p_0+\eta\sqrt v,\\
+ (q-p)_+\leq|p-q|\leq3\sqrt v,\qquad
+ P=p+q\leq P_0+4v.
+ \end{gathered}                                      \label{eq:argmax-outer-geometry}
+\end{equation}
+To verify them, write $c=\cos(1/2)<337/384$ and
+$u_{\min}=1-c$.  Then $c_e\leq c$, $c_d\leq1$ and
+$c_e+c_d\leq1+a$.  If $x\leq1/2$, then $p\leq\sin(1/2)<12/25$.
+If $1/2\leq x\leq1$, write $h=x-1/2$ and use $y\geq1-x$ to obtain
+\[
+ u-u_{\min}\geq c(1-\cos h)\geq47ch^2/96,\qquad
+ \sin x\leq\sin(1/2)+ch.
+\]
+Since $96c/47<9/4$, this proves the sine bound.  If $x\geq1$, then
+$u\geq11/48$.  When $u\leq1/4$, $p\leq\sqrt3/2<9/10$ while
+$p_0+\eta\sqrt v>93/100$; when $u\geq1/4$ the latter exceeds one.
+The same trigonometric argument applies to $q$ without interchanging
+the unequal finite meshes.  Further,
+$|p-q|=2\sqrt{c_e^2-a^2}\leq2\sqrt{2v}$.
+Finally $P\leq2\sqrt{2u-u^2}$ by Cauchy.  This last function is
+concave; its value at $u_1$ is $\sqrt{33887}/192<24/25$ and its
+derivative is $674/\sqrt{33887}<4$, proving its stated tangent bound.
+
+We make the absolute-error envelope explicit.  Set
+\[
+ \epsilon=3\pi/(2m),\quad\ell=-\log\sin\epsilon,\quad
+ D_a=D-10/n^2,\quad C=1+8a_0m/(3\pi),
+\]
+and define
+\begin{align*}
+ \Gamma_b&=p_0[1+\log(1+C/p_0)],\\
+ \gamma_b&=1+\log(1+C/p_0)-C/(p_0+C),\\
+ M_{A,b}&=p_0/\pi+4a_0/\pi^2,\\
+ C_{B,b}&=6+(4+4a_0/\mathrm e)/\pi,\\
+ V_{B,b}&=23+[3\Gamma_b+(2p_0+6P_0)\ell+26a_0+20]/\pi,\\
+ G_b^{\rm env}&=7LM_{A,b}/m+V_{B,b}/(2m)\\
+ &\hspace{8mm}+(4/m)[7+(P_0/\pi)(5+2\log(2m))]+2C_{B,b}/m,\\
+ D^{\rm env}&=a_0D_a+10/n^2,\\
+ R_6^{\rm env}&=\frac{21+21a_0+2L+[(1+48p_0)H+24p_0]/\pi}{n}
+                                    +\frac{317+5/12}{n^2},\\
+ D_m&=4w_0/\pi+a_0b_0\log\pi,\qquad Z_m=D_m+a_0b_0/n,\\
+ \mathcal M^{\rm env}&=\frac{a_0b_0(2L+2h_r)}n
+  +\frac{D_m+a_0b_0(L+1/n)}{4n^2-1}+\frac{a_0b_0}{(2n-1)^2}\\
+ &\hspace{8mm}+\frac{Z_m+a_0b_0(\log(n+1/2)+2)}{4(n-1/2)^2},\\
+ C_b&=D^{\rm env}+G_b^{\rm env}+R_6^{\rm env}+\mathcal M^{\rm env},\\
+ C_s&=\eta\left\{\frac{7L}{\pi m}
+      +\frac{3\gamma_b+2\ell}{2\pi m}+\frac{48H+24}{\pi n}\right\}
+                    +3\left\{\frac{\log2+4\log\pi}{\pi m}+W\right\},\\
+ C_l&=\frac{12\ell+16(5+2\log(2m))}{\pi m}.
+\end{align*}
+Applied first at an actual phase, the full absolute row theorem and
+\eqref{eq:argmax-outer-geometry} give
+\begin{equation}
+ |S_n-M_\infty|\leq C_b+P_0K_D+C_s\sqrt v+(C_l+4K_D)v.
+                                                        \label{eq:argmax-outer-error}
+\end{equation}
+For example the only nonlinear positive allowance is
+$\Gamma(p,a)=p[1+\log(1+(1+8am/(3\pi))/p)]$, with zero limit at
+$p=0$.  It increases in $a$ and is concave in $p$; its tangent at
+$(p_0,a_0)$ is $\Gamma_b+\gamma_b(p-p_0)$.
+This explains the $\gamma_b\sqrt v$ term.  All other terms follow by
+positive majorization of the full ordinary, six retained, outer,
+mesh, and scalar-log allowances.  Thus no fictitious tuple of envelope
+parameters is substituted into a physical theorem.
+
+Let $j_*=23/250$, $t_*=221/500$.  The global model master and the
+whole one-sided origin cost yield
+\[
+ \Lambda_c-S_n\geq G+Kv-A\sqrt v,
+\]
+where
+\begin{align}
+ G&=u_1(T+j_*)-t_*p_0-C_b-P_0K_D-\bar e,\nonumber\\
+ K&=T+j_*-C_l-4K_D,\qquad A=\eta t_*+C_s.
+                                                        \label{eq:argmax-outer-gate}
+\end{align}
+At $n=320$, the rational logarithm bounds above give
+\begin{gather*}
+ K_D<1/6,\quad W<3/125,\quad\ell<13/3,\\
+ \Gamma_b<18/5,\quad\gamma_b<15/2,
+ \quad M_{A,b}<13/25,\quad C_{B,b}<8.
+\end{gather*}
+For $\ell$, use $\epsilon<1/7$ and $\sin\epsilon>23/(5m)$.
+The inequality $\log(5m/23)<13/3$ follows from
+\[
+ \exp(13/3)>(8/3)^4(1+1/3+1/18)=51200/729>1605/23.
+\]
+The complete positive envelopes then obey
+\[
+ D^{\rm env}<3/25,\quad G_b^{\rm env}<9/25,
+ \quad R_6^{\rm env}<17/50,\quad\mathcal M^{\rm env}<2/125,
+ \quad C_b<209/250.
+\]
+An inspectable bound for the retained-row numerator is
+\begin{align*}
+ R_6^{\rm env}&<\frac{21+21(22/25)+2(577/100)}{320}\\
+ &\quad+\frac{(601/25)(677/100)+288/25}{(31/10)320}
+       +\frac{318}{320^2}<\frac{17}{50}.
+\end{align*}
+For $C_s$, the three terms in its $\eta$ bracket are bounded,
+in order, by $41/1000,2/125,353/1000$; its remaining bracket is
+less than $3/500+3/125$.  Therefore
+$C_s<141/200<71/100$.  Also $C_l<7/20$.
+With $\bar e<5/32$, these estimates give
+\[
+ G>\frac{195191}{2400000}>\frac3{40},\qquad K>10,
+ \qquad A<\frac75.
+\]
+In particular $K$ is positive before division.  Completing the square
+in $\sqrt v$ now yields
+\[
+ \Lambda_c-S_n\geq G-\frac{A^2}{4K}
+       >\frac3{40}-\frac{(7/5)^2}{40}=\frac{13}{500},
+\]
+which is \eqref{eq:argmax-outer}.
+
+The transfer to all real $n\geq320$ can be checked term by term.
+$T$ increases, while $K_D,\bar e,C_b,C_s,C_l$ decrease.  In the
+entropy terms, writing $C=1+cm$ gives
+$m\Gamma_b'<p_0\leq\Gamma_b$ and
+$m\gamma_b'<1<\gamma_b$, so their quotients by $m$ decrease.
+Also $m\ell'=\epsilon\cot\epsilon\leq1<\ell$, hence $\ell/m$
+decreases.  The mesh quotients have positive linear-log numerators and
+quadratic denominators; their derivatives are negative on $n\geq32$.
+It follows that $G,K$ increase and $A$ decreases, preserving the whole
+square-completion gate.  No monotonicity of the actual $S_n$ is used.
+
+\subsection{A strict patch at each actual corner}
+
+We first state the interpolation fact that also supports the numerical
+corner branch.  Suppose $M$ bounds every complete signed cardinal sum
+globally, and put $k=n/m$.  If the three actual losses at
+$(A,B)=(\sqrt{2U},0),(0,\sqrt{2V}),(\sqrt{2U},\sqrt{2V})$ are at least
+$cU,cV,c(U+V)$, respectively, then
+\begin{equation}
+ \lambda_n(-\cos(A/n),-\cos(B/m))
+ \leq\Lambda_c-\left[c-\frac M6\max(U,k^4V)\right]\frac{A^2+B^2}{2}
+                                                        \label{eq:argmax-squared-peano}
+\end{equation}
+on the whole rectangle, provided the bracket is positive.
+Indeed apply the common nonnegative interpolation kernels to the
+smooth signed cardinal vector in $s=A^2/2,t=B^2/2$.  Its second
+derivative bound is $M/3$ in $s$, $k^4M/3$ in $t$.  The Peano mass
+therefore gives
+\[
+ H(s,t)\leq I H(s,t)+\frac M6\{s(U-s)+k^4t(V-t)\}.
+\]
+The vertex losses and positive bilinear weights give
+$I H\leq\Lambda_c-c(s+t)$ exactly; the remainder is at most
+$(M/6)\max(U,k^4V)(s+t)$.  This proves
+\eqref{eq:argmax-squared-peano}, including both closed axes and the
+origin.  The signed-cardinal second derivative bound follows by the
+fourth-derivative Bernstein inequality and the integral identity
+\[
+ \frac{d^2}{ds^2}f(\sqrt{2s})
+ =\int_0^1\int_0^1 t^2 f^{(4)}(rt\sqrt{2s})\,dr\,dt
+\]
+for an even smooth function $f$; its kernel has mass $1/3$.
+
+For the analytic patch put $h=\pi/4$, $q_0=7/48$, and take
+$U=V=h^2/2=\pi^2/32$.  The exact axis deficit
+$(1-\cos h)/2>q_0$.  The old complete wide finite allowance, legal at
+$\rho=h$, uses
+\[
+ k_{Wy}^{\rm old}
+ =\frac{(19/2)H+15L+265/3}{n}+\frac{179+17L}{n^2}.
+\]
+It gives a lower bound for both actual axis losses,
+\[
+ \delta_A=q_0(T-\bar e+j)-\frac14-C_4-hk_{Wy}^{\rm old}.
+\]
+Here $E_c(h,0)<1/4$ follows from $\kappa_4<9/25$,
+$a>17/20$ and $p^{3/2}<3/5$; $E_c(0,h)=-B_\beta\leq0$.
+At the diagonal $(h,h)$ the completed-model theorem has its separately
+proved closed $\rho\leq\pi/2$ domain.  Use only the full absolute
+finite error there, not a relative radius-one estimate.  Since
+$a=p=q=1/\sqrt2$, $P<3/2$, and $E_c<4/15$, the actual diagonal
+loss exceeds
+\[
+ \delta_D=2q_0(T+j)-\frac4{15}-\overline C_E-\frac32K_D-\bar e.
+\]
+
+At the single base $256=2^8$, the positive atanh series gives
+$277/50<L<111/20$ and $H<131/20$.  Direct substitution of all
+positive terms gives
+\[
+ \begin{gathered}
+ T>107/10,\quad D<1/6,\quad G_g<5/8,\quad
+ (64+16L)/256+318/256^2<61/100,\\
+ \mathcal M<11/500,\quad W<7/250,\quad
+ \overline C_E<3/2,\quad\bar e<1/5,\quad K_D<1/5,\\
+ C_4<9/500,\quad k_{Wy}^{\rm old}<93/100,\quad M(256)<26.
+ \end{gathered}
+\]
+The norm bound is used only at the base; $M(n)$ grows with $n$.
+For an explicit check on the largest collected error, at this base
+$g<7$, $\log m<139/25$, $\log(2m)<63/10$, so
+\[
+ G_g<\frac{2331/80+111/2+2190/31}{257}<5/8.
+\]
+The complete mesh has its same three tails below $14/n^2$, and the
+leading term is below $5371/256000$, proving its displayed bound.
+The norm follows from
+$M(256)<4218/197+9/4+3/2+2/5<26$.
+
+Choose $r_U=2/125>\pi^4/6144$ and consider the combined gates
+$F_A=\delta_A-r_UM(n)$, $F_D=\delta_D-2r_UM(n)$.
+The base bounds imply
+\[
+ \delta_A>2293/4200,\quad F_A>2729/21000>1/8,
+ \qquad \delta_D>881/1000,\quad F_D>49/1000.
+\]
+Both gates increase for all real $n\geq256$.  To see this without
+treating the base norm as uniform, expand their leading polynomial:
+for $F_A$ it is
+\[
+ \frac{4(q_0-r_U)L^2-[3q_0+(79/5)r_U]L}{\pi^2},
+\]
+and for $F_D$ twice that expression.  Its derivative in $L$ is
+positive for $L\geq1$, because $8(q_0-r_U)=779/750$ and
+$3q_0+(79/5)r_U=6903/10000$.  All remaining nonconstant costs are
+positive decreasing combinations of
+$\bar e,C_4,k_{Wy}^{\rm old},\overline C_E,K_D$.
+
+With $\delta=\min(\delta_A,\delta_D/2)$ it follows that
+\[
+ \delta-M(n)\pi^4/6144>49/2000.
+\]
+In \eqref{eq:argmax-squared-peano}, take $c=32\delta/\pi^2$ and
+use $k\leq1$ only in the nonnegative remainder.  The coefficient of
+$A^2+B^2$ is greater than
+$(16/\pi^2)(49/2000)>49/1250>1/30$.
+This proves \eqref{eq:argmax-corner-loss} for every $n\geq256$.
+The node-preserving parity reflection carries the same proof to the
+other actual corner, without exchanging $n,m$.
+
+\subsection{Exact phase-certificate predicates}
+\label{app:argmax-certificate-predicates}
+
+We spell out the finite implication used in
+Proposition~\ref{prop:certificate-phase-soundness}.  Let $p_-\leq\pi\leq p_+$
+be positive rationals, let $L_c\leq\Lambda_c(n)$, and put $k=n/m$.
+The cover is a complete binary midpoint tree rooted at $[0,1]^2$.
+Both children are closed, and every split has positive rational width.
+For a leaf $B=[a_l,a_h]\times[b_l,b_h]$, discard it only when
+$a_l+b_l>1$.  Equality is a retained tangent intersection with
+$\mathcal T$.  Complete tree syntax, both subtrees, and complete token
+consumption prove the closed cover by induction.
+
+For vertex upper endpoints $W_z\geq S_n^t(z)$ and a genuine global
+norm $M$, put
+\begin{align}
+ \theta_B&=\frac{p_+^2}{8}
+                   [(a_h-a_l)^2+k^2(b_h-b_l)^2],\nonumber\\
+ q_B(a,b)&=I_BW(a,b)+\frac{Mp_+^2}{2}
+  \{(a-a_l)(a_h-a)+k^2(b-b_l)(b_h-b)\},\nonumber\\
+ V_B&=\max_{z\ {\rm vertex\ of}\ B}W_z,\qquad U_B=V_B+\theta_BM.
+                                                        \label{eq:argmax-certificate-peano}
+\end{align}
+Then $S_n^t\leq q_B\leq U_B$ on the entire rectangle.  The
+$\pi^2$ factor is essential: the frequencies are at most $1,k$ in
+$\alpha,\beta$, hence at most $\pi,\pi k$ in $a,b$.
+This is the common signed-vector Peano argument, not differentiation
+of the nonsmooth absolute sum.
+
+Let $P_B=B\cap\mathcal T$, $\ell_B=a_l+b_l$, and
+$h_B=\min(a_h+b_h,1)$.  These are the exact extrema of $a+b$ on
+$P_B$.  The actual near and far parts are contained, respectively, in
+the rational proxies
+\[
+ Q_N=P_B\cap\{a+b\leq1/(2p_-)\},\qquad
+ Q_F=P_B\cap\{a+b\geq1/(2p_+)\}.
+\]
+The proxies may overlap and retain tangencies.  A noncorner floor
+$\delta_B>0$ is proved on the signed radius
+\[
+ r_B=\min\{1/2,p_+(a_h+b_h)\}.
+\]
+It is applied only at an actual near point: there
+$\rho=\pi(a+b)\leq1/2$ and $\rho\leq p_+(a_h+b_h)$.
+Membership in a near proxy alone is not a defect-domain premise.
+
+Each numerical leaf must pass one of the following exact rules.
+\begin{enumerate}
+ \item A far leaf has a validated upper $V\geq\max_{P_B}q_B$ with
+ $V<L_c$.
+ \item A near leaf has $2p_+h_B\leq1$ and an upper
+ $V\geq\max_{P_B}q_B$ with $V-\delta_B<L_c$.
+ \item A split leaf has validated uppers $V_N,V_F$ on the two
+ nonempty proxies and satisfies $V_N-\delta_B<L_c$ and $V_F<L_c$
+ for each nonempty corresponding proxy.
+\end{enumerate}
+An empty proxy makes only its actual branch vacuous.  Taking all
+uppers equal to $U_B$ is a valid conservative choice.  The near rule
+and near half of the split rule concern noncorner centers; at an
+actual corner the direct punctured-corner witness is used instead.
+Every comparison is strict.  An analytic far leaf is allowed only
+under its entire closed-box guard, as proved below.
+
+The global norm has its own finite witness.  For a wholly numerical
+tree, let $M_* =\max_{\mathcal T}S_n^t$, which is finite by continuity.
+The even-lattice period and separate phase sign symmetries imply that
+this is the global real-phase norm.  Applying the Peano bound with
+the true $M_*$ to a retained leaf containing a maximizer gives, if
+every $\theta_B<1$,
+\begin{equation}
+ M_*\leq\max_B\frac{V_B}{1-\theta_B}.
+                                                        \label{eq:argmax-tree-norm}
+\end{equation}
+This absorption uses every final nonempty numerical leaf, including
+tangencies.  It does not assert equality between a sampled and a
+continuous maximum.
+
+Alternatively retain the quarter-grid points
+$E=\{(i/4,j/4):i,j\geq0,\ i+j\leq4\}$ and their upper maximum $V_E$.
+The ten closed quarter squares with lower-left indices $i+j\leq3$
+cover $\mathcal T$.  Their outside vertices fold into $E$ by
+$(a,b)\mapsto(1-a,1-b)$, an even-lattice/sign symmetry.  The Peano
+remainder is at most $\pi^2(1+k^2)M_*/128\leq\pi^2M_*/64$.
+Therefore
+\begin{equation}
+ M_*\leq\frac{V_E}{1-\pi^2/64}<\frac{784}{663}V_E.
+                                                        \label{eq:argmax-grid-norm}
+\end{equation}
+The $15$ triangular grid points have $13$ canonical keys, since only
+on the hypotenuse may the symmetry $(a,b)\leftrightarrow(b,a)$ be used.
+Interior coordinate exchange is not a symmetry used by this argument.
+All $13$ grid bounds are retained when this norm is used.
+
+A tree containing an analytic far leaf must use the grid norm.
+Such a leaf has no numerical upper for the global norm absorption in
+\eqref{eq:argmax-tree-norm}; the remaining numerical leaves need not
+contain a maximizer.  For a wholly numerical tree the final norm may
+be the smaller valid rounded grid or tree bound.  On any change of
+norm, all final Peano, leaf, and norm-dependent corner predicates are
+recomputed.  No discarded sample or discovery-stage norm remains a
+hidden premise.
+
+The numerical actual-corner witness uses the three points
+$(\pi/4,0),(0,3\pi/16),(\pi/4,3\pi/16)$ in inward phase coordinates.
+With their actual upper endpoints $W_x,W_y,W_{xy}$, put
+\[
+ u'=1/32,\quad v'=9/512,\quad
+ q=\min\left\{\frac{L_c-W_x}{u'},\frac{L_c-W_y}{v'},
+                         \frac{L_c-W_{xy}}{u'+v'}\right\}.
+\]
+The exact strict predicate is
+\begin{equation}
+ q>\frac{Mp_+^4}{6}\max\{u',k^4v'\}.             \label{eq:argmax-finite-corner-test}
+\end{equation}
+In \eqref{eq:argmax-squared-peano}, take
+$U=\pi^2u'$, $V=\pi^2v'$, and $c=q/\pi^2$.
+The resulting radial loss is at least
+\[
+ \frac{q-(Mp_+^4/6)\max(u',k^4v')}{2p_+^2}(A^2+B^2)>0
+\]
+off the origin.  The true $\Lambda_c$ is the origin interpolation
+entry; the numerical lower $L_c$ is used only in the three losses.
+Both phase endpoints exceed $1/2$, so the rectangle covers the whole
+inward half diamond.  Its physical angle-turn inputs are
+$(1/(4n),0),(0,3/(16m)),(1/(4n),3/(16m))$.
+They are not unscaled phase turns.
+
+\subsection{The analytic far-leaf guard}
+
+For completeness, the hybrid certificates use the following separate
+regional consequence of the absolute row bound:
+\begin{equation}
+ S_n<\Lambda_c(n)-79/2000<\Lambda_c(n)-3/100,
+ \qquad n\geq192,\quad \pi/2\leq\rho\leq\pi.
+                                                        \label{eq:argmax-far192}
+\end{equation}
+Here is its quantitative reduction.  For $0<u\leq1$ set
+\[
+ A_u=1-u,\quad C_u=2-u,\quad
+ F_u=\begin{cases}2\sqrt{u(1-u)},&u\leq1/2,\\1,&u\geq1/2,\end{cases}
+ \qquad Q_u=\min(2,\sqrt{8u}).
+\]
+Actual phases satisfy $a=A_u$, $c_e+c_d\leq C_u$,
+$p,q,(q-p)_+\leq F_u$, and $P\leq Q_u$.
+Let $\widehat C_E(n,u)$ denote the explicit positive phase allowance
+of Lemma~\ref{lem:phase-row-global} after replacing these quantities
+by their displayed upper bounds.  This is a majorization of the
+allowance at an actual phase, not an application of its physical
+theorem to independent artificial parameters.  The quotient
+$\widehat C_E(n,u)/u$ decreases: all nonentropy terms are positive
+combinations of $1/u,A_u/u,C_u/u,F_u/u,Q_u/u$ with decreasing factors.
+For entropy, the increasing homogeneous function
+$\Psi(r,s)=r[1+\log(1+s/r)]$ gives
+\[
+ \widehat\Gamma/u
+ =\Psi\left(F_u/u,[1+8A_um/(3\pi)]/u\right),
+\]
+whose two arguments decrease.  The zero limits and the two branches
+at $u=1/2$ are continuous.
+
+On $\rho\geq\pi/2$, $a\leq\cos(\pi/4)<17/24$, so $u>u_0=7/24$.
+At that fixed anchor,
+$A_u=17/24$, $C_u=41/24$, $F_u=\sqrt{119}/12<11/12$,
+and $Q_u=\sqrt{7/3}<31/20$.  At $n=192=3\cdot2^6$, the atanh
+series brackets $\log3$ between $7379/6720$ and that sum plus
+$1/1728$.  Together with the preceding $\log2$ bracket this gives
+$21/4<L<421/80$, $H<63/10$, $\log m<53/10$, $\log(2m)<6$.
+Substitution into every term of the positive allowance gives
+\[
+ \begin{gathered}
+ T>19/2,\quad D<43/200,\quad\mathcal M<7/250,
+ \quad\bar e<1/4,\quad K_D<13/50,\\
+ \widehat D<4/25,\quad\widehat G<7/10,
+ \quad\widehat C_6<31/40,\quad\widehat{\mathcal M}<1/50,
+ \quad F_uW<1/30,
+ \end{gathered}
+\]
+and hence $\widehat C_E(192,u_0)<1013/600<17/10$.
+These bounds retain all ordinary, six-row, mesh, outer, and scalar-log
+terms.  For example $\ell<4$, $\widehat\Gamma<13/2$,
+$\widehat M_A<3/5$, $\widehat V_B<57$, and $\widehat C_B<8$;
+the five numerator bounds for $\widehat G$ are
+$23,29,62,2,16$, summing to less than $132$ before division by $193$.
+The retained-row numerator is below $146$, with remainder
+$318/192^2$; all three weighted mesh tails total less than $14/192^2$.
+
+The global model master now gives, at the anchor,
+\begin{align*}
+ \Lambda_c-S_n&>
+ u_0(19/2+23/250)-(221/500)(11/12)
+                   -17/10-(13/50)(31/20)-1/4\\
+ &=79/2000.
+\end{align*}
+The quotient of this lower bound as a function of $u$ increases,
+by the quotient property just proved and the decrease of $F_u/u,Q_u/u$.
+Thus it stays positive for every $u\geq u_0$.  At each fixed actual
+phase the original absolute allowance, $K_D$, and $\bar e$ decrease
+with real $n$, while $T$ increases.  This transfers the comparison to
+every integer $n\geq192$ and proves \eqref{eq:argmax-far192}.
+
+An explicit analytic leaf must have $n\geq192$ and its raw rational
+box must satisfy $0\leq a_l<a_h\leq1$, $0\leq b_l<b_h\leq1$,
+and $1/2\leq a_l+b_l\leq1$.  Its entire intersection with
+$\mathcal T$ then has $\pi/2\leq\rho\leq\pi$, including closed seams.
+It is compared with the true symbolic $\Lambda_c$, and supplies no
+numerical norm-support point.  These guards explain both the strict
+analytic far exclusion and the compulsory grid norm in a hybrid tree.
+
+\subsection{Extent of the finite verification}
+\label{app:argmax-verification-record}
+
+The inherited finite range is $2,\ldots,40$.  Degrees $33$--$40$ use
+the corrected-cardinal Bernstein constructor, a separately authored
+C++/GMP checker, complete prefix partitions, and two strict punctured
+corner leaves.  The essential certificates contain, respectively,
+$284,288,298,306,316,320,330,350$ bound leaves and two corner leaves.
+Earlier exact polynomial cases cover $2$--$7$, and complete exact or
+outward Bernstein covers cover $8$--$32$.
+
+The subsequent returned phase worklist is exactly $41,\ldots,319$
+together with the control degree $511$.  Its $280$ primary/fresh pairs
+include all $273$ residual degrees
+\[
+ \{43,\ldots,62\}\cup\{65,\ldots,158\}\cup\{161,\ldots,319\}
+\]
+and the seven controls $41,42,63,64,159,160,511$.  Both retained
+certificates in every pair were reconstructed locally, for a total of
+$560$ exact rational proof reconstructions.  Every degree identity,
+whole cover, final norm, floor, corner or far guard, strict inequality,
+source link, final account, and recorded zero exit was checked.
+This is a setwise degree verification, not merely a count of receipts.
+
+The final hybrid scientific freeze has SHA-256
+\begin{center}\ttfamily\footnotesize
+ 0d9ce0a5dbb7fb37cf1a05f07040b72d\\
+ 046b61b8d36b6a5a8bf137eb7d9914eb.
+\end{center}
+The production source commit is
+\texttt{996fedcad4ba79a28e45a3fe3678adc12f1e5358}; the runtime manifest
+and all transitive source pins are in the machine-readable evidence.
+All rational predicates use lossless conversion of canonical finite
+binary64 hexadecimal endpoints.  The native inclusion uses the frozen
+corrected finite row evaluator and its Arb/FLINT/MPFR/GMP outward
+arithmetic, including polynomial collision values.  Exact cover checking
+does not independently prove the native arithmetic or compiler correct.
+
+On the production machine, primary and retained-witness fresh passes
+ran separately for all pairs, and the released collector validated
+their full histories.  The compact return retains all essential proofs
+and their source/account/exit links.  Local independent checking of
+the unsampled cases reconstructs the rational implications and checks
+these links, with the outward endpoints as native witnesses; it does
+not inspect full unsent native histories.
+
+The persisted draw seed is
+\begin{center}\ttfamily\footnotesize
+ 7c79b8e401d9a32f8233f8371c441cd2\\
+ 8d82dedd60e46e7c73d211ab099d01d2.
+\end{center}
+Sampling two degrees from the sorted $273$-degree residual population
+with the recorded Python random routine gives the ordered pair
+$199,238$.  Both original full closures were inspected locally.
+Exactly two new native verify-mode executions then used their retained
+primary witnesses and fresh exclusive output paths, with no replacement
+sample or retry.  Both exited zero with complete final accounts; each
+used $45$ common-primitive calls and three actual-corner calls.  A
+distinct reviewer validated the fresh results and their source/runtime
+closures.  Both samples are below $256$; previous degree-$511$ checks
+and the mathematical and source reviews support the analytic-corner
+branch.  Fresh execution reuses the same arithmetic algorithm and is
+not an independent arithmetic implementation.
+
+The actual compact archive has $36{,}045{,}486$ bytes and SHA-256
+\begin{center}\ttfamily\footnotesize
+ b00fd57f85ce6d96a6c1fa01e2307abd\\
+ 815088bb8fcb28b1587657ef142b109a.
+\end{center}
+All essential unsampled proofs remain in that compact return; the two
+sampled complete histories and small verification records are also
+retained locally.  Full unsampled histories remain on the production
+machine under the explicitly accepted selective-retention policy.
+External durable retrieval of the new compact return has not been
+verified.  Source pins, compatible-runtime identities, degree lists,
+and commands permit regeneration of valid witnesses; they do not
+guarantee recovery of every historical timing, path, or original byte.
+These limits are part of the evidence description, not an inference
+that the two random checks prove unsampled numerical premises.

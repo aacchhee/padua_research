@@ -32,7 +32,7 @@ Padua families. All statements below refer to \eqref{eq:nodes}.
 \begin{figure}[t]
 \centering
 \begin{tikzpicture}[x=1.45cm,y=1.45cm]
-\foreach \nn/\mm/\dx in {6/7/0,7/8/3} {
+\foreach \nn/\mm/\dx in {6/7/0,7/8/4} {
  \begin{scope}[xshift=\dx cm]
   \draw[gray] (-1,-1) rectangle (1,1);
   \foreach \jj in {0,...,\nn} {
@@ -190,9 +190,9 @@ to determine an equality set, rather than an approximation to the norm
 alone. We do not claim that rigorous mesh bounds originate here.
 
 For the related Morrow--Patterson points, Beberok, Bia{\l}as-Cie{\.{z}}
-and De Marchi \cite{MorrowPatterson2026} prove quadratic growth of the
-Lebesgue constant. The two node families have different stability
-behavior, and their extremum questions are separate.
+and De Marchi \cite{MorrowPatterson2026} prove an $O(n^2)$ upper bound for the
+Lebesgue constant. The two node families and their extremum questions
+are distinct.
 
 We first establish the exact cardinal normalization and the corner
 representation. We then derive the sharp expansion, explain the geometric

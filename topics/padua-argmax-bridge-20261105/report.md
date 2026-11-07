@@ -1,5 +1,7 @@
 # Current result — complete finite bridge,2026-11-07
 
+The [Constructive Approximation manuscript draft](paper/README.md) develops the two results with a conceptual main narrative and supporting technical appendices; source map and reproducible build accompany it.
+
 The original sharp corner expansion, including **-1/N** and the full
 **O(logN/N²)** remainder, is now proved analytically for both parities.
 [Theorem](theory/H-sharp-corner-expansion.md), [completed Hcampaign](campaign-H-summary.md).

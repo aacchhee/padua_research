@@ -14,6 +14,9 @@
 \theoremstyle{thmstyletwo}
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{definition}[theorem]{Definition}
+\hypersetup{bookmarksdepth=2,
+ pdftitle={Sharp asymptotics and exact maximizers of the Padua Lebesgue constant},
+ pdfauthor={Development manuscript; authors to be supplied}}
 \raggedbottom
 \begin{document}
 \title[Padua Lebesgue constants]{Sharp asymptotics and exact maximizers of the Padua Lebesgue constant}
@@ -39,10 +42,13 @@ analytic asymptotic argument.}
 \noindent\textbf{Development draft, 7 November 2026.}
 Authorship and declarations remain to be completed. This manuscript presents
 established repository results; final cross-agent audit and a complete
-standalone exposition check remain pending. Explicit supporting-proof
-placeholders are editorial obligations, not additional proved statements.
-Intermediate development identifiers are retained where they aid checking.
+standalone exposition check remain pending. Detailed supporting estimates are collected in appendices for comparison
+with the proof records. Intermediate development identifiers are retained
+where they aid checking.
 
+% CA requires numerical references in alphabetical author order.
+% The publisher's sn-mathphys-num style defaults to citation order.
+\nocite{MorrowPatterson2026,BialasCiezDeMarchiSuder2026,Mesh2024,BosCaliariDeMarchiVianelloXu2006,BosDeMarchiVianelloXu2007,CaliariDeMarchiSommarivaVianello2008poster,CaliariDeMarchiVianello2005,Computational2008,DeMarchi2022,KolomoitsevLomako2021}
 \input{sections/introduction}
 \input{sections/preliminaries}
 \input{sections/corner-formula}
@@ -60,8 +66,9 @@ required disclosure before submission.
 \noindent\textbf{Funding and competing interests.} To be supplied by the authors.\\
 \textbf{Data and code availability.} The development sources and evidence
 records are maintained in the research repository described in
-Section~\ref{sec:certificates}. All essential finite certificates and two
-selected complete verification histories are included in the compact return;
+Section~\ref{sec:certificates}. For degrees $41$--$319$, all essential
+returned proof certificates and two selected complete verification
+histories are included in the compact return;
 the other full histories were checked on the execution server and are not
 all archived with the manuscript. A durable public release and persistent
 identifier must be arranged before submission.\\
@@ -70,6 +77,7 @@ identifier must be arranged before submission.\\
 \appendix
 \input{sections/asymptotics-details}
 \input{sections/row-estimates}
+\input{sections/pole-estimates}
 \input{sections/model-estimates}
 \input{sections/scalar-estimates}
 \input{sections/argmax-details}

@@ -1,5 +1,7 @@
 # Padua argmax bridge — current research results
 
+The [Constructive Approximation manuscript draft](../topics/padua-argmax-bridge-20261105/paper/README.md) develops the two results with a conceptual main narrative and supporting technical appendices; source map and reproducible build accompany it.
+
 The sharper corner expansion is now **PROVED analytically** for both parities:
 `Lambda_c=4/pi² log²N+b logN+c-1/N+O(logN/N²)`, with `N=n+1/2` and the original exact constants. [Canonical theorem](../topics/padua-argmax-bridge-20261105/theory/H-sharp-corner-expansion.md), [six-round summary](../topics/padua-argmax-bridge-20261105/campaign-H-summary.md). Distinct mathematical main/support/integration checks accept the full proof. No new numerical computation or fitted premise. The bigO constant is uniform but not numerically specified. Combining with G01 gives the global Lebesgue-constant expansion at G01's trusted scope.
 
