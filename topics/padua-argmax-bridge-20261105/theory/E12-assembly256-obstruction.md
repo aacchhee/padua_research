@@ -142,3 +142,18 @@ after root's separate release. No scientific job or numerical call ran.
 ## Root adoption at reviewed scope —2026-11-07
 
 Root adopts only the stated selected relative/floor-formula allocation failure at256, retainingexactu andsubtractedBbeta, after distinct [E12 corner/frontier ACCEPT](../independent-checks-E12-corner-frontier.md), report21214Bb7436e8f4c5f2d6c1e7c2fc0d7313c1f136648a489cdfd0cee3e8ef71e97df2a. The frozen5627B proof prefixc82eed5a185155cf69177ac21d6b6a016fa9a59a67dfe453a39841fa375b0247 is preserved. No global256 theorem or failure of the new absolute/relative minimum/actual argmax is inferred. All-real-n norm/corner and gate-before-development chronology were checked. Upstream findings remain unwaived; no new finding or numerical/source job occurred. Final Claude audit is separate.
+
+
+## Audit-02 explicit inherited constant dependency — 2026-11-07
+
+The bound j<1/4 used in the written witness is an inherited consequence
+of the [E06 definitions and origin map, §1](E06-H-consequences.md).
+In particular its H0<8/25 input uses the strict outward constant
+enclosure of [PD-T271, Statement (2)](../../padua-lebesgue-followups-20261103/theory/t4-03-corner-constant.md),
+through E06 (1)–(3); d0<40/197 and g0>36/125 are the elementary inputs
+already displayed in this obstruction. Thus PD-T271, with its stated
+Arb outward-arithmetic and analytic-tail trusted base, is an explicit
+dependency of this scoped negative statement as well. Its finite-n
+remainder is unused. This only names the existing dependency: the
+witness, bound, tested formula, negative scope and status are unchanged.
+P1–P4 remain unwaived; final Claude audit remains separate.

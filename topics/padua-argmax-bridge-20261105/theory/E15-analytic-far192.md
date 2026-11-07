@@ -328,3 +328,14 @@ audit/root adoption are required before use; final Claude is separate.
 ## Root adoption —2026-11-07
 
 Root adopts the exact13855B frozen regional proof above (SHA256b420adbd063a1055b1fd64f02155dd3e4d400f18cb0b7fe0760617cc0f032ec5) after distinct [E15 ACCEPT](../independent-checks-E15-analytic-far192.md), report15775B94718e23d96f875478ec9c4b7cd4713898e752756c182ecb647f7d49995b32e3. For EVERYintegern>=192 on the ENTIRE CLOSED rho>=pi/2 phase region, S_n<Lambda_c−79/2000<Lambda_c−3/100. Original prefix remains unchanged. This is an analytic pruning component, not global192, a new finite certificate, or a measured runtime claim. Future literal whole-cell/common-S checker adaptation needs its own source audit. No E13/E14 premise, new finding or numerical/source job occurred; upstream dependencies and final Claude audit remain explicit.
+
+
+## Audit-02 dated current-state pointer — 2026-11-07
+
+The header's pending-adoption wording is historical. The preceding root
+adoption, following [distinct E15 ACCEPT](../independent-checks-E15-analytic-far192.md),
+is the current mathematical scope: every integern>=192, closed
+pi/2<=rho<=pi, exactly (1). Current global onset320 and273 residual
+OPEN degrees43–62,65–158,161–319 are in [current report](../report.md)
+and [E14 adoption](E14-assembly320.md). E14 remains context, not a premise
+of this E15 proof. P1–P4 remain unwaived; the branch remains WORK.

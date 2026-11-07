@@ -291,3 +291,47 @@ code rows; AUDIT.sha256 identifies corrected source and contract bytes.
 Static text/hash/AST inspection only; zero imports, controls/tests, startup
 probes, compiler/native/scalar/degree jobs or attempt paths consumed.
 Distinct focused acceptance, publication and root release remain required.
+
+
+## Audit-02 prose clarifications of frozen descriptors — 2026-11-07
+
+This addendum answers A-4 and A-9 in [audit-02](../../audit-02-interim.md).
+The frozen checker descriptors identify human review scope; their short
+dependency strings are not complete dependency inventories or prose-hash
+scientific acceptance gates. Executable source, FREEZE and AUDIT.sha256
+remain unchanged. The historical AUDIT.sha256 SPEC entry identifies the
+pre-addendum byte prefix; append-only preservation and current full-file
+metadata are recorded in [record response](../../audit-02-record-response.md).
+
+For the E12 analytic corner descriptor, the full dependency chain also
+includes the complete wide finite relative allowance at its two axis
+points: [E04-assembly640 (4)](../../theory/E04-assembly640.md), with
+[D37 ordinary/mesh bounds](../../theory/D37-relative-wide.md),
+[E04 wide retained rows](../../theory/E04-wide-retained-origin.md) and
+[E02 paired outer](../../theory/E02-paired-outer.md). Their n>=32,
+closedrho<=1 guards include256 andrho=pi/4; the exact individual proof
+and review citations are in [E12's dated addendum](../../theory/E12-corner256.md).
+The global signed-family norm uses the [D27 adapter](../../theory/D27-global-norm.md),
+and the corner transfer uses [D08 squared Peano](../../theory/D08-point-box-corner.md).
+The diagonal retains the absolute error and closedpi/2 model bound.
+For E15, the descriptor also inherits
+[C08's full weighted log-coefficient comparison (2)](../../theory/C08-far-weighted-coefficient.md),
+which supplies the model loss -uT used in [E15 (4)](../../theory/E15-analytic-far192.md).
+
+A receipt contains the E15 descriptor even when no analytic far leaf is
+used. A descriptor's presence does not itself make E15 or PD-T271 a
+premise of a model-free case. The frozen guards determine use:
+
+| Degree | Corner premise | Analytic far premise |
+|---|---|---|
+| 41–191 | Three fresh actual points and D08 | No E15 leaf permitted |
+| 192–255 | Three fresh actual points and D08 | E15 only for f leaves satisfying the whole-cell guard |
+| 256–4095 | E12 analytic corner, including its PD-T271 chain | E15 only for f leaves satisfying the whole-cell guard |
+
+For example, the accepted41 receipt is model-free. From192 an f leaf
+requires GRID norm; the n>=256 analytic corner applies regardless of
+whether any f leaf occurs. The `ANALYTIC_FAR: 3/100` field listed among
+strict margins is E15's theorem gap against the true symbolic Lambda_c,
+not a numerical margin against the fresh rounded origin lower L.
+These clarifications change no predicate, threshold, proof status,
+certificate or runtime behavior. They authorize no execution.

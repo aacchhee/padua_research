@@ -223,3 +223,32 @@ are separate. Prior unwaived findings/final Claude obligations remain.
 ## Root adoption after final independent mathematical acceptance —2026-11-07
 
 The exact original 11628-byte proof above (b348ec55ee8be86abc9b025be2f9f134bc6d3ba29692c8dee441ea539b3a15e6) is preserved. Root adopts its mathematical scope after the full distinct Astra high report, independent-checks-E14-global320.md, 36528 bytes, SHA256 25529c8a5ad54111a679680d916c4d6ae76ad976edb528c042b06366dc50d3f2. The full global conclusion holds for EVERY integer n>=320, with exactly the two parity-correct actual corner maximizers. PD-T271 remains an explicit inherited dependency; no new numerical job is a premise. This is a sufficient onset, not minimality or all-degree closure. Canonical procedural finding P4 remains unwaived in that report; mathematical adoption supplies no readiness decision.
+
+
+## Audit-02 current-state and source clarifications — 2026-11-07
+
+The initial OPEN header and pending-review wording preserve earlier
+snapshots. Current mathematical adoption is the preceding n>=320
+theorem after the final distinct [E14 review](../independent-checks-E14-global320.md).
+There remain273 OPEN degrees43–62,65–158,161–319; see [current report](../report.md).
+The branch remains WORK and P1–P4 remain unwaived.
+
+In the named inputs, `Hmax461214a5` abbreviates the SHA-256 prefix of
+the **review** [independent-checks-E07-H.md](../independent-checks-E07-H.md);
+`consequence mapb6a9db93` abbreviates the **review**
+[independent-checks-E06-H.md](../independent-checks-E06-H.md).
+These are review identities, not theory-file hashes.
+
+The node paragraph's positive limiting-origin constant is sourced by
+[D08-far-comparison §1, (2)–(3)](D08-far-comparison.md): its explicit
+PD-T271 limiting transfer gives C_infty(0)>4383/2420. The same section
+defines B_c=4/pi², k_shift=gamma+log(8/pi), b_c=8k_shift/pi², so the
+origin model used there is M_infty(0,L)=(4/pi²)L²+b_c*L+C_infty(0).
+The inherited strict outward constant enclosure is
+[PD-T271, Statement (2)](../../padua-lebesgue-followups-20261103/theory/t4-03-corner-constant.md).
+This names the origin-lower dependency already used in that paragraph;
+it imports no finite remainder or finite Lambda_c lower from PD-T271.
+As [audit-02 M1 §1 and F1](../audit-02/m1-global320.md) records, the
+separate node paragraph is redundant: nodes occur at rho=pi in these
+charts, already covered by the accepted outer bound. No proof or
+constant is changed by this source clarification.

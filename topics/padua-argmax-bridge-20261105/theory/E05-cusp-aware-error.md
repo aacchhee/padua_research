@@ -361,3 +361,12 @@ unchanged by this theorem; it supplies no new finite-degree enumeration.
 ## Root adoption —2026-11-07
 
 Root adopts the exact frozen 16277-byte proof (SHA256 b5a8ed47593039b272f082027aa1c701d4223dc423a47b9ef35ebe54b14a5356) after the distinct independent ACCEPT in [independent-checks-E05-cusp-aware-error.md](../independent-checks-E05-cusp-aware-error.md). Original proof bytes above are preserved. The opening pending-adoption wording is historical. Final Claude audit remains separate; no new numerical or source job was run.
+
+## Audit-02 dated current-state pointer — 2026-11-07
+
+The global768/residual719 text in the original proof records its earlier
+context. Current adopted global onset320 and273 residual OPEN degrees
+43–62,65–158,161–319 are in [current report](../report.md) and
+[E14 adoption](E14-assembly320.md). E05 retains its accepted n>=32,
+closedrho<=1/(n+1)² scope; this pointer changes no theorem or status.
+Full D13 remains OPEN; P1–P4 remain unwaived and the branch remains WORK.

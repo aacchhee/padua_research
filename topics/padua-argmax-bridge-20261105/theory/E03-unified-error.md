@@ -330,3 +330,12 @@ Distinct [review](../independent-checks-E03-unified-error.md), SHA256
 490fbd489c373565e66cf6c7d44b0aa7d86378fd7ab04e1041a981fcf5c74cee.
 Full D13 remains OPEN. No numerical/source/native/pack job occurred.
 Current global onset768 and residual719 are unchanged; final Claude is separate.
+
+## Audit-02 dated current-state pointer — 2026-11-07
+
+The onset768/residual719 line above records the state at this component's
+adoption. Current adopted global onset320 and273 residual OPEN degrees
+43–62,65–158,161–319 are recorded in [current report](../report.md) and
+[E14's mathematical adoption](E14-assembly320.md). This pointer leaves
+the scoped obstruction and its original accepted proof/status unchanged.
+Full D13 remains OPEN; P1–P4 remain unwaived and the branch remains WORK.

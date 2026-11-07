@@ -180,3 +180,14 @@ a2b15344905afb4b42489fbec8e66b706df3e7b9436c7c2540de82ff53e91fef, accepts the un
 501efd8e0056f64b1d7a6320d0ef12a63bcf60553101fce9110a7ed128aa3377.
 No scalar/source/native/finite-degree/pack job occurred. Global onset
 remains768, residual719; fullD13 and matched640 remain OPEN here.
+
+## Audit-02 dated current-state pointer — 2026-11-07
+
+The onset768/residual719 and pending matched640 text above is historical
+to the support-only adoption. The subsequent final assembly ACCEPT in
+[E04 review](../independent-checks-E04-assembly640.md#final-assembly-and-restricted-constant-verdict-2026-11-07)
+accepts the original assembly640 proof; this support keeps its own exact
+both-corner closed side1 square, n>=512, radial loss(A²+B²)/3 scope.
+Current adopted global onset320 and273 residual OPEN degrees43–62,
+65–158,161–319 are in [current report](../report.md) and [E14 adoption](E14-assembly320.md).
+Full D13 remains OPEN; P1–P4 remain unwaived and the branch remains WORK.

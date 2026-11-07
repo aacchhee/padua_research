@@ -242,3 +242,42 @@ compile/control/pack/shared/Git job or numerical point call occurred.
 ## Root adoption at reviewed scope —2026-11-07
 
 Root adopts BOTH closedpi/4actual-corner squares, EVERYintegern>=256, radialloss(A²+B²)/30, after distinct [E12 corner/frontier ACCEPT](../independent-checks-E12-corner-frontier.md), report21214Bb7436e8f4c5f2d6c1e7c2fc0d7313c1f136648a489cdfd0cee3e8ef71e97df2a. The frozen9921B proof prefix586c4e07bf683b3a3cb7913666a51f3541b9c0c6fa484dd12a45890b56b3639d is preserved. No global256 theorem or failure of the new absolute/relative minimum/actual argmax is inferred. All-real-n norm/corner and gate-before-development chronology were checked. Upstream findings remain unwaived; no new finding or numerical/source job occurred. Final Claude audit is separate.
+
+
+## Audit-02 citation and current-state clarifications — 2026-11-07
+
+The header's pending-adoption wording is historical; the preceding root
+adoption records the accepted n>=256 corner support at exactly (1), after
+the distinct [E12 review](../independent-checks-E12-corner-frontier.md).
+The current global theorem is [E14 from320](E14-assembly320.md), leaving
+273 OPEN degrees43–62,65–158,161–319; see [current report](../report.md).
+No global256 conclusion follows from this pointer.
+
+In §1, `461214a5` identifies the SHA-256 prefix of the **review file**
+[independent-checks-E07-H.md](../independent-checks-E07-H.md), and
+`b6a9db93` identifies the **review file**
+[independent-checks-E06-H.md](../independent-checks-E06-H.md). They are
+not hashes of the E07 or E06 theory files.
+
+For the §3 axis allowance (5), the citation to
+[E04-assembly640 (4)](E04-assembly640.md) refers to its component
+collection, not its n>=640 global theorem or its n>=640 derivative
+estimates. The individual accepted bounds used in that collection are:
+
+| Charge | Exact source and individual review | Applicable guard |
+|---|---|---|
+| Ordinary Erow | [D37-relative-wide (3), §3](D37-relative-wide.md), [D37 review, Endpoint reference and ordinary rows](../independent-checks-D37-global1024.md) | n>=32, closed signedrho<=1 |
+| Retained rows | [E04-wide-retained-origin (3), §§1–5](E04-wide-retained-origin.md), [individual E04 review](../independent-checks-E04-wide-retained-origin.md) | n>=32, closed signedrho<=1 |
+| Scalar mesh plus log | [D37-relative-wide (5), §5](D37-relative-wide.md), [D37 review, Wide operator](../independent-checks-D37-global1024.md) | n>=32, closed signedrho<=1 |
+| Paired regular outer | [E02-paired-outer (1W), §§1–3](E02-paired-outer.md), [individual E02 review](../independent-checks-E02-paired-outer.md) | n>=32, closed signedrho<=1 |
+
+Each guard includes n=256 and the two axis phasesrho=pi/4<1.
+E04-assembly640's review section “Finite allowance and all-real-n
+monotonicity” reconstructs precisely these charges; its global640
+conclusion is separate. The signed origin conversion is the exact
+identity already displayed here; the separately accepted
+[E08-origin-lower](E08-origin-lower.md) supplies its one-sided allowance
+only for n>=160. That guard includes256. The diagonal retains only the
+full absolute finite error and closedpi/2 MODEL bound, as originally
+written. This citation clarification adds no estimate or enlarged guard.
+P1–P4 remain unwaived; final Claude audit remains separate.
