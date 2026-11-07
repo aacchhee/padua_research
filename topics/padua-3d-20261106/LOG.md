@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: Codex API response and prioritized registered continuation · Handoff12 closes after output; successor: [handoffs/13-interim-response.md](handoffs/13-interim-response.md)
+- Stage: WORK · Next: API response and up to seven further rounds per direction · Active: [handoffs/14-seven-round-continuation.md](handoffs/14-seven-round-continuation.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -799,3 +799,10 @@ their corresponding runs, with publication and execution timing distinguished.
 - Stage WORK for explicit developer response. This is an interim Codex
   assessment, not formal Claude audit04/readiness. No final IDs/ranges
   or shared registry application. Handoff13 gives precise next work.
+
+## 2026-11-07 — AC authorizes further usable-construction work
+
+- Rules read at97c323bfae15cf3c76f40802c3ebabedceeb0c60 (AGENTS, WORKFLOW, CODEX). Main/topic refreshed unchanged f70a260/97c323b. Runtime skill/status refreshed, attached executor connected/running, policy enforced.
+- AC: “continue, up to 7 rounds in each of the three directions”. [Handoff13](handoffs/13-interim-response.md) is superseded by status into [handoff14](handoffs/14-seven-round-continuation.md). Interpret as seven further rounds EACH, with audit stop criteria retained, not mandatory spending. Starts at2/3/4 cumulative; this campaign ceilings9/10/11 stay inside original10/10/20.
+- Root Astrahigh coordinates Solhigh U1/U2, Solxhigh U3 and Solmedium lossless manifest maintenance. Scope owners have disjoint files; root alone Git/shared summaries/manifest generation. Actual configuration disclosed; provider metadata unexposed. U1 API repair and independent checks use0rounds. Full novelty gate before new mechanisms; no novelty claim from old-rule transfer.
+- Formal Claude combined handoff11/09 remains pending; interim and new supplementary reviews do not replace it. No IDs/ranges, shared registry updates, readiness or merge.

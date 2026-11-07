@@ -1,6 +1,6 @@
 # Handoff13 — API response and prioritized construction work
 
-- Status: open
+- Status: superseded by 14: AC authorizes up to seven further rounds in each direction
 - Previous: [12-interim-audit.md](12-interim-audit.md).
 - Next agent/model/effort: Codex, gpt-6-astra high coordinator; development follows current model allocation (gpt-6.1-sol medium technical; high/xhigh mathematics); distinct Astra reviewer for material response.
 - Branch: codex/padua-3d-20261106.
