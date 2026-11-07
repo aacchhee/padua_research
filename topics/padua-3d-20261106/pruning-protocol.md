@@ -390,3 +390,97 @@ precedes this prospective publication.
 Planned command:
 
 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/pdpr_run.py --round frontier --protocol-commit <published-P3-sha> --reference topics/padua-3d-20261106/evidence/pdpr-pilot.json --scratch <new-unique-dir> --output topics/padua-3d-20261106/evidence/pdpr-frontier12.json`
+
+### 2026-11-07 precision correction to the P3 calibration paragraph
+
+The historical P3paragraph prints n8A198integer risk0.905549. The exact
+pinned P1/P3raw value is0.9055518679715243. This small transcription error
+does not change any choice, threshold, gate or executed outcome. Historical
+prospective wording remains visible above; this dated correction is not a
+new calibration or a silent retroactive protocol edit.
+
+## P4 prospective appendix — fixed-rule degree16 transfer
+
+P3complete output and independent review were published at
+562309744165cd601a489510ddc8026d933b1b27. Actual completed pruning rounds
+are3/15; this appendix allocates **P4only**. P3passed its changed finite
+tradeoff goal while P1/P2remain failed. No new rule/threshold/count choice
+is made from n16pruning results, which have not been generated or assessed.
+
+P4transfers the identical calibrated A rule to **n16**, N969/start M1377,
+primary M=ceil(1.20N)=1163. Diagnostic M=ceil(1.10N)=1066 and N969stay
+fixed, plus full start. Use P3's exact physical OLS score/ties/QR/durable
+checkpoint/refinement/guard/cost procedures. Construct all checkpoint maps
+and completely validate/save them before starting any held-out assessment.
+The selected primary is fixed by count, never by target/noise/norm results.
+The old strict connected-prefix diagnostic remains separate and failed
+if its original thresholds are exceeded.
+
+Fresh held-out Chebyshev/uniform seeds are **2026112420+n/2026112430+n**,
+2048queries per measure; angular local-start seed2026112440+n. Keep the
+21³/41³meshes and28angular searches, all12targets, all original unit-noise/
+M*trace/integer-repeat/calibrated-sigma tables, all regressions, and actual
+setup/application/cost reporting exactly as P3. Physical budget is **B1377**
+for every map, at least one repeat per retained site, with its map held
+fixed. The assumptions remain hypothetical iid/equal-observation-cost/
+product-Chebyshev examples rather than facts about AC's data.
+
+Controls are full OLS/Haar; same-count restrictedQR at every stated count;
+freshly constructed globalQR969and one-sweep localdet969; and the **modern
+969-node U2direct candidate**, fixed from C3and reused unchanged in C4.
+Also include C4's finer-row determinant969control as an additional strong
+minimum-count comparator. This avoids comparing only against an old weak
+one-sweep baseline. Every comparator gets the same fresh queries/searches/
+function/noise reports. Higher primary count is always displayed explicitly.
+
+Before science, verify C3's ten original code-source pins, its raw inventory,
+and its actual `joint_norm.npy` identity
+8fd4a96a610d73ca104517a2b960b278fe91f40fe6017053bfe3b09c0b3f2428;
+verify C4's input pin identifies that same candidate. Verify C4's original
+code/source/inventory pins and selected-row coordinate checkpoint before
+loading its fine determinant control. Existing raw files have passed the
+read-only developer identity preflight. Recheck identities in P4and retain
+all consumed input hashes. Report current loading/map/assessment costs
+separately from C3's historical124.202551CPU total construction and C4's
+historical control cost. These saved inputs are local regeneration-only,
+not an archival promise or an automatic exact-node theorem.
+
+If either mandatory modern input is unavailable or fails its identity,
+stop P4before candidate execution, retaining the precise retrieval failure;
+root may regenerate the documented unchanged C3/C4procedures in new raw
+directories, verify resulting identities/guards, then release a new timed
+window. Do not silently replace a strong baseline or relabel another source
+hash. The modern procedural controls retain their finite numerical proof
+status; the old455-node exact witness is unchanged.
+
+P4's fixed practical gate is P3's gate at the new degree: primary numerical
+checks pass; >=10%site saving from1377; complete primary construction
+<=120CPU; both integer-budget risk and searched amplification <=.95times
+same-count restrictedQR1163; and no tested N969control dominates both
+noise and amplification, accounting for its194fewer sites. Minimum-count
+controls are globalQR, one-sweep localdet, modern U2and C4fine determinant.
+Equality tolerance1e-10 is unchanged. All diagnostic/target/function losses
+are retained and do not become hidden selection criteria. No universal
+error/cost/measure dominance or certified continuum maximum is claimed.
+
+Total P4budget900process CPU including diagnostic construction, all controls
+and assessment, operation-boundary checks/retained completed overshoots,
+explicit unrun work, actual UTC/source/input/version/thread metadata and one
+complete compact logical receipt (<16KiB), with full precision raw data.
+Root publishes this appendix and grants an exclusive timed window after
+focused code/preflight review. No P4science occurs before that release.
+
+If P4passes and a distinct consequential reviewer supports it, deliver
+compact canonical-ID representations of the useful n12M546/n16M1163sets,
+using integer orders/retained IDs/canonical ordering and a physical OLS
+recipe. Exact-cosine determining rank requires its separately frozen
+cyclotomic splitting-prime/nonzero-minor proof/checker; no new point set is
+claimed PROVED from floating conditioning. The prospective exact check is
+technical verification, not another candidate/rule search. Rounded-coordinate
+measured quality and exact-cosine rank are different statements. Root owns
+that proof review/publication. If P4fails, retain P3's finite546-site endpoint
+without automatically escalating degrees or spending the remaining ceiling.
+
+Planned command:
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/pdpr_run.py --round transfer16 --protocol-commit <published-P4-sha> --reference topics/padua-3d-20261106/evidence/pdpr-pilot.json --scratch <new-unique-dir> --output topics/padua-3d-20261106/evidence/pdpr-transfer16.json`
