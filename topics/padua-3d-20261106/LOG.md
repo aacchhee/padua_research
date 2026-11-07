@@ -665,3 +665,26 @@ their corresponding runs, with publication and execution timing distinguished.
   route records and exact-F completion are ready.
 - [Progress report](usable-report.md) and results synchronize the genuine
   gains, failures and tradeoffs. No final IDs/ranges or merge.
+
+## 2026-11-07 — shifted/folded/mixed checkpoint — Codex, Astra high
+
+- U3S/F/M/Rall have actual outcomes and count4/20when pushed here.
+  The exact cubic inverse has norm-infinity4, entrysum52and bound103;
+  inverse amplification splits old determinant ties52versus78. Sparse
+  unique-support counts8/8/0at3/5/7, complete35287matrix census.
+- F's coherent rephased integer matrix decides every460QQcase in the
+  6976parameter universe. Only2quintic tuples are full rank, but exact
+  folded lists and a pointwise sign proof show1physical56-node set.
+  Both M/Rorientations give exact N-node witnesses at all3..8.
+- All four frozen selectors fail their precise finite quality gates;
+  M/Rn8is post-kill validation after Lejalossn6/7. No general class or
+  asymptotic rejection, cubature assertion or extra-budget repetition.
+  Four route records include all tested candidates and resume conditions.
+- Independent U3code actually checks every support matching predicate,
+  all460exact ranks and fresh actual-node ranks, plus all15selected
+  quantities on21/41meshes/controls. Differences<=3.92e−11/4.3e−14.
+  M/Rcompleteoptimizer schedules were inspected, not independently rerun.
+  The scoped distinction is explicit; these checks do not replace Claude.
+- Current counted results U1=2/10,U2=1/10,U3=4/20. Revised U2pilot has
+  passed; registered unchanged n10/12holdout and its proof/data artifact
+  checks continue before that route is counted. No ceiling is reset.

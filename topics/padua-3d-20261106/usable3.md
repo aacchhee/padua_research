@@ -293,3 +293,97 @@ Computer-assisted finite PROVED waits for that execution and independent
 rerun. If rational elimination exceeds120seconds per degree, finish every
 remaining case by the same cached exact dictionary algorithm with an actual
 time/cursor record; do not convert a timeout into a universal negative.
+
+## Completed U3 output boundary — four actual route outcomes
+
+Initial protocol publication3b5cb29f5d68306fa61d3079627247110911b552
+preceded every dependent S/F/M/Rexecution. Fexact append publication
+995062b42aa73648bd591a21c9ea240feffc3c6f preceded its separate exact
+completion. Original code stayed frozen at
+8c230e3a6bd857c8b3f8c63cd49a2c818d1449b60d9cb131c8662158ff8bc79b;
+new exact helper stayed at
+73619ff1c4f46c95f4e9fc2cf93f3c91d8a1a9bce42f949a4ca533f51572c823.
+Neither source was edited after these actual runs. The independent checker
+uses its own code, inputs, source snapshots and executed receipts.
+
+| Round / route | Actual outcome | Disposition and exact resume condition |
+|---|---|---|
+|1 / S|Complete35287support matrices across3/5/7; unique counts8/8/0. Cubic inverse amplification splits old determinant ties into4tuples at52and4at78. Quintic eight all434; selected(1,17,30),Lambda21/41=55.9151.|Finite cubic/quintic explanations retained. Through-7unique-support mechanism REJECTED:failed, PROVED scoped n7boundary. Finite promising claim MEASURED failed n5. Resume with an explicit cyclic-block/inverse mechanism, not more unique-support samples.|
+|2 / F|All6976parameters exact-counted;460compatible cases given exact rational ranks. Exactly2positive n5zero-phase C6×C18labelled tuples at order108,r/s1/14or5/4, giving1physical node set (third torus coordinate negates). No unresolved cases; selectedLambda21/41=51.7630.|Finite classification retained, computer-assisted PROVED after independent460case run. Uniform3..8class REJECTED:failed by n4squarefree-order empty class, PROVED. Selected finite quality MEASURED failed. Resume with changed order/count/embedding/phase hypothesis. No cubature claim.|
+|3 / M|512starts plus3bounded refinements at every3..8; all6selected exact N-node full-rank mixed witnesses. Exactfold/disjointness proof and independent actual-node certificates.|Finite existence retained, PROVED. Frozen competitive selector REJECTED:failed, MEASURED QRlossn4and Lejakilln6/7; n8post-kill validation. Broader mixed target deferred; resume with a specified alias-repair/inverse or changed partition, prospectively.|
+|4 / R|Same complete finite seeded schedule at3..8 with reversed folding; all6selected exact positive witnesses and independently rebuilt base/intersection counts.|Finite existence retained, PROVED. Frozen competitive selector REJECTED:failed, MEASURED QRlossn4and Lejakilln6/7; n8post-kill validation. Same explicit structural/new-partition resume condition.|
+
+These are four completed technical round outcomes, proposed to root for
+the pushed LOG/count checkpoint. Initial0/20above is the registration-time
+counter, not the current outcome count. After root publication the new U3
+count is4/20, with16unused; the broad construction target remains OPEN.
+No degree above8was run, since the prospective extension condition failed.
+Every initially registered route now has an actual outcome; this completes
+the present bounded development batch without claiming direction exhaustion.
+
+### Durable mathematical homes
+
+- [Cubic triangular inverse](theory/u3-cubic-triangular.md),
+  PD-T?padua-3d-20261106-codex-U3-01, PROVED hand identities/cardinal formula;
+- [Coherent integer reduction](theory/u3-coherent-integer-reduction.md),
+  PD-T?padua-3d-20261106-codex-U3-02, PROVED hand reduction;
+- [Sparse classification](theory/u3-sparse-classification.md),
+  PD-T?padua-3d-20261106-codex-U3-03, computer-assisted PROVED finite class;
+- [Folded classification](theory/u3-folded-classification.md),
+  PD-T?padua-3d-20261106-codex-U3-04, computer-assisted PROVED finite class;
+- [Mixed witnesses](theory/u3-mixed-witnesses.md),
+  PD-T?padua-3d-20261106-codex-U3-05, computer-assisted PROVED finite existence;
+- [Sparse boundary](theory/u3-sparse-boundary.md),
+  PD-N?padua-3d-20261106-codex-U3-01, PROVED scoped finite mechanism failure;
+- [Folded boundary](theory/u3-folded-boundary.md),
+  PD-N?padua-3d-20261106-codex-U3-02, PROVED hand scope obstruction;
+- [Quality failures](theory/u3-quality-failures.md),
+  PD-N?padua-3d-20261106-codex-U3-03, MEASURED named finite selector failures.
+
+### Actually executed commands and compact evidence
+
+All commands ran from repository root with
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python`:
+
+```
+topics/padua-3d-20261106/code/u3_constructions.py S --receipt topics/padua-3d-20261106/evidence/u3-s.json
+topics/padua-3d-20261106/code/u3_constructions.py F --receipt topics/padua-3d-20261106/evidence/u3-f.json
+topics/padua-3d-20261106/code/u3_constructions.py M --receipt topics/padua-3d-20261106/evidence/u3-m.json
+topics/padua-3d-20261106/code/u3_constructions.py R --receipt topics/padua-3d-20261106/evidence/u3-r.json
+topics/padua-3d-20261106/code/u3_folded_exact.py --receipt topics/padua-3d-20261106/evidence/u3-f-exact.json
+```
+
+| Receipt | Actual elapsed seconds | Committed bytes | Raw bytes |
+|---|---:|---:|---:|
+|u3-s.json|34.4094|5522|2364548|
+|u3-f.json|5.3263|3227|936701|
+|u3-m.json|16.1794|12464|966856|
+|u3-r.json|15.2562|12725|988543|
+|u3-f-exact.json|6.2544|2950|704135|
+
+Each receipt records Python/NumPy/SciPy/SymPy versions as used, full frozen
+source/command, exact input identity, selected components/certificates,
+every applicable control/quality and raw unique path/full SHA256. Raw
+outputs are regenerate-only local evidence, with no archival delivery.
+Receipts are all below16KiB; no split evades a large artifact limit.
+All considered starts/refinements and every finite parameter remain in
+the regenerable raw catalogues, with parent candidate inheritance above.
+
+[Independent U3 record](usable-check3.md) and
+[comparison](evidence/uc3-comparison.json) actually reconstruct all35287S
+support predicates, all6976Fcount/pass predicates, all460Fexact ranks,
+both actual-node prime ranks for every Fcompatible case and all15selected
+positive witnesses/qualities. Maximum selected/control mesh differences
+are3.92e−11/4.3e−14. M/Roptimizer schedules were inspected, not independently
+rerun in full; the independent positive/quality claims concern their selected
+immutable outputs. The full support perfect/nonperfect split receives its
+own independent augmenting-path check. Required Claude audit stays separate.
+
+### Remaining work outside this developer scope
+
+Root integrates four actual outcomes and the independent receipts, refreshes
+the code/data manifest and arranges combined Claude audit. No shared records,
+Git, audit reports, prior science or handoffs were edited by this worker.
+No further scientific run is needed for this bounded4-round batch; new
+mechanism work needs its own structural/prospective scope under the remaining
+budget. No final ID/range was allocated.

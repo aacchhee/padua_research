@@ -5,8 +5,9 @@ ACauthorized U1/U2up to10rounds each andU3up to20.
 [Campaign](usable-campaign.md), [gate](usable-gate.md).
 No final IDs, ranges, shared-registry changes or merge.
 
-Completed development at this checkpoint: U1two routes, U2one pilot.
-U3and further direct-update work remain active. Required Claude audit
+Completed development at this checkpoint: U1two routes, U2one pilot,
+and all four registered U3routes. The revised U2update and conditional
+higher-degree check remain active. Required Claude audit
 still includes the preserved handoff09 scope; no audit is fabricated.
 
 ## Extra-point reconstruction: a usable known recipe
@@ -49,11 +50,42 @@ projected-gradient/Neumann-guard update is next, using the same known
 pilot assessment and an explicitly still-unseen higher-degree holdout.
 The failed source/receipts and exact diagnosed traces are preserved.
 
+## Shifted/folded/mixed construction: exact structure and finite limits
+
+[U3](usable3.md) completes four routes. The cubic example has a sparse
+triangular cosine coefficient matrix with inverse infinity norm4, absolute
+entry sum52and a rigorous but coarse Lebesgue bound103. Its measured
+21/41samples are9.7888/9.8071. The inverse criterion separates the
+previously equal determinants:4cubic tuples have sum52and4have78.
+
+The complete sparse-support census examines35287matrices at degrees
+3/5/7; unique-support counts are8/8/0. The fixed rank-two folded universe
+has6976parameters, with460exact rational ranks after count/trace/axis
+checks. Exactly2degree-five tuples give1physical56-node full-rank set;
+its sampled amplification51.763loses to QR14.031. No positive cubature
+claim is made for this interpolant. These are scoped computer-assisted
+PROVED finite classifications with actual independently written reruns.
+
+Two mixed folded/unfolded constructions each give N-node unisolvent
+sets at every degree3..8, with exact count/disjointness proofs and fresh
+prime certificates. Their determinant-selected sets perform poorly:
+by degree8samples are1081.46and489.43versusQR45.54. Both hit their
+registered n6/7Leja-loss gate; n8is explicitly post-kill validation.
+All four named selectors fail finite promising-status conditions. This
+is MEASURED, not a universal obstruction or a stability-growth theorem.
+
+[Independent U3 checks](usable-check3.md) reproduce every support
+predicate, all460QQranks, all15selected actual-node certificates and
+both quality meshes. The full M/Roptimizer schedules were inspected,
+not independently rerun; no such replay is claimed. There are no remaining
+undecided cases in the stated F/Sfinite universes. Larger classes remain
+OPEN with specific resume conditions, and16U3rounds remain unused.
+
 ## Remaining work at this checkpoint
 
-U3's structural, coherent folded and mixed-union routes are executing
-under their published protocol; no round is counted prematurely.
-Independent checkers report actual U1/U2replays without discrepancy;
-their final fresh-assessment/source-frozen receipts are still being
-integrated and do not replace the required Claude audit. Raw output is
-unique/tmp regeneration-only with identities, not claimed archived.
+The revised direct optimizer has passed its pilot and is being applied
+unchanged to its registered unseen degrees10/12. Independent U1/U2
+receipts and the finished output are still being integrated. Raw output
+is unique/tmp regeneration-only with identities, not claimed archived.
+Required combined Claude audit remains separate.
+

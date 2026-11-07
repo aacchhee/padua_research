@@ -94,3 +94,16 @@ The rational-function maximum-error regressions at n12/16 are retained.
 OLS improves noise risk only2.47–8.03percent with higher setup cost.
 U2n4sampled refined amplification falls11.1401to5.43472, but one
 nonsmooth target's RMS worsens. No universal approximation dominance.
+
+## Shifted/folded/mixed result boundary — 2026-11-07
+
+U3completes4/20registered routes;16rounds remain unused. The cubic
+coefficient inverse now has an exact triangular explanation and bound103;
+its exact inverse-amplification criterion splits the old determinant tie
+into4tuples at52and4at78. Complete support counts at odd3/5/7are8/8/0.
+The folded rank-two finite universe has6976parameters,460exact rational
+rank cases, and only2quintic labelled hits, representing1physical56-node
+set. Both mixed orientations have exact N-node interpolants at every
+tested degree3..8, but all four selectors fail their quality screens.
+These results close the four registered routes, not the broader direction;
+resumption conditions and retained failed/deferred candidates are explicit.
