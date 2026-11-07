@@ -4,6 +4,7 @@ import argparse
 import base64
 import hashlib
 import json
+import zlib
 from pathlib import Path
 
 TOP = Path(__file__).resolve().parents[1]
@@ -43,26 +44,35 @@ def packed(rows):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--verify", action="store_true")
+    parser.add_argument("--list", action="store_true", help="Print the losslessly decoded identity map")
     args = parser.parse_args()
     target = TOP / "evidence-manifest.json"
     observed = [identity(path) for path in artifacts()]
     inherited = [identity(ROOT / "tracks/lattice-unisolvence/code" / name, ROOT)
                  for name in ("c3_lebesgue.py", "c3_rank.py")]
-    if args.verify:
+    if args.verify or args.list:
         saved = json.loads(target.read_text())
-        if saved["artifacts"] != packed(observed) or saved.get("inherited_inputs") != inherited:
+        decoded = (json.loads(zlib.decompress(base64.b85decode(saved["artifacts_payload"])))
+                   if saved["schema"] == "padua-3d-code-data-manifest-v5"
+                   else saved["artifacts"])
+        if args.list:
+            print(json.dumps(decoded, indent=2))
+            return
+        if decoded != packed(observed) or saved.get("inherited_inputs") != inherited:
             raise SystemExit("FAIL: code/data set or identities changed")
         print(json.dumps({"verdict": "PASS", "artifacts": len(observed),
                           "bytes": sum(row["bytes"] for row in observed)}))
         return
     output = {
-        "schema": "padua-3d-code-data-manifest-v4",
-        "rules_input_sha": "9042e1c42964150f30fdbe8563c12ba6c6a8692a",
+        "schema": "padua-3d-code-data-manifest-v5",
+        "rules_input_sha": "38227202bc6908d5a5a874950145761a8ca4312f",
         "historical_rules_input_sha": "ccd9e905d19c0c625c196c4a3f3e707058ed042a",
         "generate": "python topics/padua-3d-20261106/code/artifact_manifest.py",
         "verify": "python topics/padua-3d-20261106/code/artifact_manifest.py --verify",
         "format": "code/evidence map relative stems to [bytes, RFC1924 base85 SHA-256]; append .py/.json. other keys are full topic-relative paths. Recursive scope excludes __pycache__ and .pyc only.",
-        "artifacts": packed(observed),
+        "artifacts_codec": "RFC1924 base85(zlib(level9, UTF8 compact JSON v4 identity map)); --list decodes",
+        "artifacts_payload": base64.b85encode(zlib.compress(
+            json.dumps(packed(observed), separators=(",", ":")).encode(), 9)).decode(),
         "inherited_inputs": inherited,
         "commands": "Commands and execution metadata are in the hash-pinned receipts and linked attempts; historical metadata companions preserve missing-field limits.",
         "limits": [

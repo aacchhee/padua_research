@@ -614,3 +614,14 @@ their corresponding runs, with publication and execution timing distinguished.
   are recorded. Root verified its8inherited code/data identities. This
   published gate releases registration only; experiments await separately
   published protocols. No old chronology qualification is erased.
+
+- U1's two-route operational/solver protocol, U2's fixed direct-norm
+  pilot/conditional holdout, and the separate U1/U2 fresh-check protocol
+  are published before dependent execution. U3 registration is still
+  being written and remains unreleased. No research round counted yet.
+- Evidence manifest v5 preserves the complete v4 identity map losslessly
+  inside one zlib/base85 JSON payload, with --list for inspection. This
+  leaves room for new campaign artifacts under16KiB without splitting
+  or dropping old identities. The decoded map and eight mutation controls
+  actually pass; current generator code pin is updated transparently.
+  Coverage is unchanged: recursive code/data, inherited helpers, no prose.
