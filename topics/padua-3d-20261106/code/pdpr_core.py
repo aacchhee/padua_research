@@ -429,3 +429,140 @@ def constrained_curve(nodes, n, raw, cap):
             'costs_cpu': {'complete_construction': time.process_time()-began,
                           'selection': selection_cpu, 'validation': validation_cpu, 'checkpoint_io': io_cpu},
             'costs_wall': {'complete_construction': time.perf_counter()-wall}}, snapshots
+
+
+def reflection_pairs(recipe, n):
+    keys = [tuple(v) for v in recipe['indices']]
+    lookup = {v: i for i, v in enumerate(keys)}
+    pairs, fixed = [], []
+    for i, key in enumerate(keys):
+        j = lookup[(n-key[0], key[1], key[2])]
+        if i == j:
+            fixed.append(i)
+        elif i < j:
+            pairs.append((i, j))
+    return pairs, fixed
+
+
+def predicted_block(C, hat, pair):
+    J = np.asarray(pair, dtype=int)
+    keep = np.ones(C.shape[1], dtype=bool)
+    keep[J] = False
+    D = np.eye(len(J))-hat[np.ix_(J, J)]
+    correction = la.solve(D, hat[J][:, keep], assume_a='sym', check_finite=False)
+    return C[:, keep]+C[:, J]@correction, correction, keep
+
+
+def pair_candidates(C, Q, E, pairs, budget, amp_limit, risk_limit, cap):
+    hat, cards = Q@Q.T, E@C
+    rows = []
+    for pair in pairs:
+        if time.process_time() >= cap:
+            return rows, False
+        J = np.asarray(pair, dtype=int)
+        eig = la.eigvalsh(np.eye(2)-hat[np.ix_(J, J)], check_finite=False)
+        row = {'pair': list(pair), 'block_eigen_min': float(eig[0]), 'feasible': False}
+        if eig[0] <= 1e-10:
+            row['reason'] = 'block_rank_eigenvalue'
+        else:
+            candidate, correction, keep = predicted_block(C, hat, pair)
+            L = cards[:, keep]+cards[:, J]@correction
+            amp = float(np.max(np.sum(abs(L), axis=1)))
+            risk, _ = integer_risk(candidate, budget)
+            finite = bool(np.isfinite(candidate).all() and np.isfinite(amp) and np.isfinite(risk))
+            row.update(train_amp=amp, integer_risk=risk, trace=float(np.sum(candidate*candidate)),
+                       feasible=bool(finite and amp <= amp_limit and risk <= risk_limit))
+            row['reason'] = ('feasible' if row['feasible'] else 'nonfinite' if not finite else
+                'amp_and_noise' if amp > amp_limit and risk > risk_limit else
+                'amp' if amp > amp_limit else 'noise')
+        rows.append(row)
+    return rows, True
+
+
+def choose_pair(candidates, excluded=(), feasible_only=True):
+    eligible = [r for r in candidates if 'train_amp' in r and np.isfinite(r['train_amp'])
+                and all(np.isfinite(r[k]) for k in ('integer_risk', 'trace') if k in r)
+                and tuple(r['pair']) not in excluded
+                and (r['feasible'] or not feasible_only)]
+    if not eligible:
+        return None
+    best = min(r['train_amp'] for r in eligible)
+    tied = [r for r in eligible if r['train_amp'] <= best+1e-12*max(1., abs(best))]
+    return min(tied, key=lambda r: tuple(r['pair']))
+
+
+def screen_pair(nodes, n, recipe, raw, cap):
+    began, wall = time.process_time(), time.perf_counter()
+    A = u.basis(nodes, n)
+    E = u.basis(dense_training(n), n)
+    Q, R, C = qr_map(A)
+    M, N = A.shape
+    initial = validate(A, Q, R, C)
+    pairs, fixed = reflection_pairs(recipe, n)
+    require(len(pairs) == (48 if n == 6 else 100) and len(fixed) == (16 if n == 6 else 25),
+            'reflection pair/fixed-plane count mismatch')
+    amp0 = float(np.max(np.sum(abs(E@C), axis=1)))
+    risk0 = float(np.sum(C*C))
+    amp_limit, risk_limit = 1.25*amp0, 1.10*risk0
+    candidates, complete = pair_candidates(C, Q, E, pairs, M, amp_limit, risk_limit, cap)
+    excluded, rejected, failures = set(), [], []
+    selected, next_ids, fresh = None, None, None
+    operational = False
+    if not initial['eligible']:
+        failures.append({'failure': 'initial numerical guards', **initial})
+    elif not complete:
+        failures.append({'failure': 'CPU cap within pair enumeration'})
+    else:
+        while True:
+            selected = choose_pair(candidates, excluded)
+            if selected is None:
+                break
+            if time.process_time() >= cap:
+                failures.append({'failure': 'CPU cap before feasible pair QR'})
+                break
+            ids = np.delete(np.arange(M), selected['pair'])
+            q, r, c = qr_map(A[ids])
+            guard = validate(A[ids], q, r, c)
+            predicted, _, _ = predicted_block(C, Q@Q.T, selected['pair'])
+            delta = float(la.norm(c-predicted)/max(1e-300, la.norm(c)))
+            amp = float(np.max(np.sum(abs(E@c), axis=1)))
+            risk, _ = integer_risk(c, M)
+            fresh = {'pair': selected['pair'], 'map_relative_error': delta, 'train_amp': amp,
+                     'integer_risk': risk, 'trace': float(np.sum(c*c)), 'validation': guard}
+            if time.process_time() >= cap:
+                rejected.append({**fresh, 'reason': 'cpu_cap_after_fresh_pair'})
+                failures.append({'failure': 'CPU cap after feasible pair QR'})
+                break
+            if guard['eligible'] and delta <= 1e-7 and amp <= amp_limit and risk <= risk_limit:
+                next_ids = ids
+                operational = True
+                break
+            rejected.append({**fresh, 'reason': 'fresh_guard_or_constraint'})
+            excluded.add(tuple(selected['pair']))
+    # A failed strict gate still receives a labeled best-rank-admissible diagnostic.
+    if not operational and complete and time.process_time() < cap:
+        selected = choose_pair(candidates, feasible_only=False)
+        if selected is not None:
+            next_ids = np.delete(np.arange(M), selected['pair'])
+            q, r, c = qr_map(A[next_ids])
+            guard = validate(A[next_ids], q, r, c)
+            predicted, _, _ = predicted_block(C, Q@Q.T, selected['pair'])
+            fresh = {'pair': selected['pair'], 'map_relative_error': float(la.norm(c-predicted)/la.norm(c)),
+                'train_amp': float(np.max(np.sum(abs(E@c), axis=1))),
+                'integer_risk': integer_risk(c, M)[0], 'trace': float(np.sum(c*c)), 'validation': guard}
+    if next_ids is not None:
+        with (raw/f'n{n}-pair-checkpoint.npz').open('wb') as handle:
+            np.savez(handle, ids=next_ids, nodes=nodes[next_ids])
+            handle.flush()
+            os.fsync(handle.fileno())
+    row = {'rule': 'pair', 'n': n, 'M_start': M, 'N': N, 'selected_M': M-2 if next_ids is not None else M,
+        'operational_M': M-2 if operational else M, 'operational_pair': operational,
+        'initial_validation': initial, 'full_trace': risk0, 'full_train_amp': amp0,
+        'amp_limit': amp_limit, 'risk_limit': risk_limit, 'fixed_plane_count': len(fixed),
+        'allowed_pair_count': len(pairs), 'pair_feasible_count': sum(r['feasible'] for r in candidates),
+        'candidate_tables': candidates, 'candidate_enumeration_complete': complete,
+        'numerically_rejected': rejected, 'rejected_candidate_count': len(rejected),
+        'selected_pair': None if selected is None else selected['pair'], 'selected_fresh': fresh,
+        'failures': failures, 'costs_cpu': {'complete_construction': time.process_time()-began},
+        'costs_wall': {'complete_construction': time.perf_counter()-wall}}
+    return row, next_ids, pairs

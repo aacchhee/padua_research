@@ -319,10 +319,99 @@ controls/functions/variance reports completed in152.343048CPU/
 9741bytes adds read-only modernC3/C4provenance/shape/array-hash validation
 to all prior synthetic/numerical/cap/checkpoint preflights (0research rounds).
 
-[Durable P4claim](theory/pruning-p4-transfer.md) is MEASURED; distinct
-consequential P4review is pending. A compact canonical-ID artifact and
-separate exact-cosine determining-rank proof are now justified delivery
-work if that review supports the result. Their exact statement must remain
+[Durable P4claim](theory/pruning-p4-transfer.md) is MEASURED. Distinct
+[consequential P4review](pruning-review.md) passed: all13maps/noise/targets/
+recorded searches,16selected score stages and408support transitions were
+checked;168independent critical-map refinements preserve the primary ratios.
+Compact canonical-ID delivery and a separate exact-cosine determining-rank
+proof are coordinated in [pruning-artifacts.md](pruning-artifacts.md).
+Their exact statement must remain
 separate from rounded-coordinate norm/noise measurements. Eleven remaining
 research slots are a ceiling; no automatic new degree/rule/seed search follows.
 The original stored455-node U2payload remains unchanged.
+
+## P5 — exhaustive first reflection-pair screen: negative
+
+P5 completed the registered atomic-block question under the unchanged P2
+constraints. Every allowed initial x1-reflection pair was examined: 48 at
+n6 and 100 at n8, retaining all 16/25 fixed-plane nodes. **Neither degree
+has a feasible pair.** No paired trajectory is licensed by the prospective
+both-degree gate; this tested route is parked. The positive A546/A1163
+matched-count tradeoffs from P3/P4 remain separate results, and none of
+P1/P2's earlier failed strict goals changes status.
+
+| Degree | Allowed / rank-admissible pairs | Training-feasible | Noise-feasible | Jointly feasible | Best risk-feasible training norm / full | Diagnostic held-out norm / full |
+|---|---:|---:|---:|---:|---:|---:|
+| 6 | 48 / 48 | 0 | 45 | 0 | 1.405160 | 1.456458 |
+| 8 | 100 / 100 | 0 | 100 | 0 | 1.438422 | 1.532051 |
+
+Training feasibility requires at most 1.25 times the full-start norm on
+P2's unchanged 985-query construction set. Noise feasibility requires at
+most 1.10 times the full-start physical OLS risk at the same integer
+observation budget B=112/225. Amplification blocks every pair even when
+noise is considered separately. Minimum block eigenvalues across each
+complete census exceed 0.104, and there are no numerical rejections.
+The minimum noise risk among training-feasible pairs is undefined because
+that set is empty; it is not reported as a finite optimum.
+
+The best rank-admissible diagnostic pairs are original IDs (37,69) and
+(57,157), leaving 110/223 sites. They are explicitly **infeasible
+assessments**, not operational removals; the operational supports retain
+112/225 sites. Their freshly fitted map errors relative to the exact
+block-update prediction are 1.01e-15/1.13e-15. Unit-noise trace increases
+5.29%/2.44%; feasible integer repetition at B=112/225 reduces the resulting
+risk increases to 3.86%/1.74%. Their training norms are respectively 9.18%
+worse and 0.414% better than the best risk-feasible P2 singleton, so the
+n8 improvement is a finite interaction that does not cross the fixed
+feasibility bound. Both associated singleton intermediates freshly
+reproduce P2's infeasible classifications.
+
+| Same-count diagnostic / control | n6 fixed-B risk | n6 sampled/searched norm | n8 fixed-B risk | n8 sampled/searched norm |
+|---|---:|---:|---:|---:|
+| Best reflection pair, infeasible | 0.750688 | 9.725262 | 0.722320 | 12.106412 |
+| P1 A after two singleton removals | 0.739376 | 9.981002 | 0.718499 | 13.061437 |
+| P1 D after two singleton removals | 0.750688 | 9.725262 | 0.721002 | 12.206329 |
+| Seeded random reflection pair | 0.757191 | 10.365523 | 0.736334 | 23.268618 |
+| Restricted QR with two rows removed | 0.766123 | 13.528710 | 0.726588 | 16.352465 |
+
+The pair diagnostics beat the random/restricted norms at the same count,
+but this does not meet the registered strict full-start preservation goal.
+Their held-out/searched amplification ratios also exceed the separate 1.30
+continuation limit. Relative to full OLS, sampled RMS errors worsen for
+three uniform targets at n6, four at n8, and four Chebyshev targets at
+each degree, with worst increases
+12.12%/9.36% and 6.78%/9.91%. Sampled maximum-error regressions remain
+visible too, including a 75.99% uniform-query maximum increase at n8.
+All 12 targets, both measures, noise levels and pointwise variance tables
+remain in the full-precision pinned raw results.
+
+The [P5 receipt](evidence/pdpr-pair-screen.json), 9233 bytes, records the
+published protocol, original executed sources/inputs, exact command,
+UTC/version/thread/seed metadata, all logical results, decisions and raw
+inventory. The regeneration-only directory is
+`/tmp/pdpr-pair-screen-20261107a`. All 18 planned aliases completed as
+17 distinct fits: n6 D's two-removal support equals the pair diagnostic
+and shares its assessment. Every distinct map received the same original
+meshes, fresh 2048-point queries per measure and 28 angular searches.
+There are no missing assessments or caps. Total cost is 3.946726 CPU /
+3.948788 wall seconds of the registered 120 CPU seconds. Complete pair
+construction costs, including node/pair-list generation and durable IDs,
+are 0.038943/0.117543 CPU seconds at n6/n8; comparator construction and
+wall phases remain in raw results.
+
+The [P5 engineering receipt](evidence/pdpr-p5-engineering.json), 10172 bytes,
+records zero-round verification of 109 generic fresh-QR block/cardinal/
+noise classifications, 21 rank-inadmissible cases, six feasible-ordering/
+nonfinite branches and five per-degree completion/cap branches, alongside
+all prior checks. Maximum block-check relative error is below 4.22e-13.
+Independent preflight checked a further 114 generic block cases and cap/
+selection branches. [Consequential P5 review](pruning-review.md) passed:
+all 148 pair states were refitted by fresh SVD, both frozen screens were
+rerun, and all 17 fits/18 aliases, 49 raw files, 952 stored search-point
+values and 280 fresh refinements were checked. Its fresh n8 diagnostic
+norm ratio 1.532947 slightly exceeds the producer's 1.532051 and preserves
+the negative decision. [Durable P5 boundary](theory/pruning-p5-pair-boundary.md)
+is MEASURED. Five of the authorized
+maximum 15 new pruning rounds are now executed; the remaining ceiling
+creates no obligation to extend this negative route. Arbitrary pairs,
+other reflections, supports and multistep blocks remain open questions.

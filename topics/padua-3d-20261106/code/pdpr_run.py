@@ -58,6 +58,12 @@ def retained_rule(gates):
     return 'A' if abs(a-d) <= 1e-8 or a < d else 'D'
 
 
+def pair_numerical_gate(path, assessed, unrun, n):
+    return bool(not path['failures'] and path['candidate_enumeration_complete']
+                and all(r['eligible'] and not r.get('assessment_incomplete') for r in assessed)
+                and not any(r.get('n') == n for r in unrun))
+
+
 def engineering(raw):
     rng = np.random.default_rng(2026110901)
     checks = []
@@ -226,6 +232,73 @@ def engineering(raw):
             err = abs(numerical-analytic[axis])/max(1., abs(numerical))
             core.require(err <= 1e-7, 'rectangular angular norm gradient mismatch')
             gradient_checks.append([axis, float(err)])
+    block_checks = []
+    rank_rejects = 0
+    rng = np.random.default_rng(2026112701)
+    for m, n in ((9, 3), (10, 6), (8, 6), (7, 6)):
+        A = rng.normal(size=(m, n))
+        E = rng.normal(size=(17, n))
+        Q, R, C = core.qr_map(A)
+        hat = Q@Q.T
+        pairs = list(itertools.combinations(range(m), 2))
+        amp_limit = 1.25*float(np.max(np.sum(abs(E@C), axis=1)))
+        risk_limit = 1.10*float(np.sum(C*C))
+        rows, complete = core.pair_candidates(C, Q, E, pairs, m, amp_limit, risk_limit,
+                                             time.process_time()+30)
+        core.require(complete and len(rows) == len(pairs), 'synthetic block census incomplete')
+        for pair, row in zip(pairs, rows):
+            if m-2 < n:
+                core.require(row['block_eigen_min'] <= 1e-10 and not row['feasible'],
+                             'rank-inadmissible synthetic block accepted')
+                rank_rejects += 1
+                continue
+            predicted, correction, keep = core.predicted_block(C, hat, pair)
+            q, r, fresh = core.qr_map(A[keep])
+            cards = E@C
+            predicted_cards = cards[:, keep]+cards[:, pair]@correction
+            relative = float(la.norm(predicted-fresh)/la.norm(fresh))
+            cardinal_error = float(la.norm(predicted_cards-E@fresh)/max(1., la.norm(E@fresh)))
+            amp = float(np.max(np.sum(abs(E@fresh), axis=1)))
+            risk = core.integer_risk(fresh, m)[0]
+            trace = float(np.sum(fresh*fresh))
+            errors = [relative, cardinal_error, abs(amp-row['train_amp'])/max(1., amp),
+                      abs(risk-row['integer_risk'])/max(1., risk),
+                      abs(trace-row['trace'])/max(1., trace)]
+            core.require(max(errors) <= 1e-9 and core.validate(A[keep], q, r, fresh)['eligible'],
+                         'synthetic block map/cardinal/noise mismatch')
+            core.require(row['feasible'] == (amp <= amp_limit and risk <= risk_limit),
+                         'synthetic pair feasibility mismatch')
+            block_checks.append({'shape': [m, n], 'pair': list(pair), 'errors': errors,
+                                 'feasible': row['feasible']})
+    dump(raw/'synthetic-block-checks.json', block_checks)
+    pair_selection_branches = [
+        ([{'pair': [0, 1], 'train_amp': 1., 'feasible': False},
+          {'pair': [0, 2], 'train_amp': 2., 'feasible': True}], True, [0, 2]),
+        ([{'pair': [1, 2], 'train_amp': 2., 'feasible': True},
+          {'pair': [0, 3], 'train_amp': 2.+1e-13, 'feasible': True}], True, [0, 3]),
+        ([{'pair': [0, 1], 'train_amp': 1., 'feasible': False}], True, None),
+        ([{'pair': [0, 1], 'train_amp': float('nan'), 'feasible': False},
+          {'pair': [1, 2], 'train_amp': 2., 'feasible': False}], False, [1, 2]),
+        ([{'pair': [0, 1], 'train_amp': float('inf'), 'feasible': False}], False, None),
+        ([{'pair': [0, 1], 'train_amp': 1., 'integer_risk': float('inf'), 'feasible': False}], False, None)]
+    for rows, feasible_only, expected in pair_selection_branches:
+        chosen = core.choose_pair(rows, feasible_only=feasible_only)
+        core.require((None if chosen is None else chosen['pair']) == expected,
+                     'pair feasible-first/near-tie/nonfinite branch mismatch')
+    block_summary = {'full_checks': core.identity(raw/'synthetic-block-checks.json'),
+                     'fresh_QR_pair_checks': len(block_checks), 'rank_rejects': rank_rejects,
+                     'maximum_errors': np.max([r['errors'] for r in block_checks], axis=0).tolist(),
+                     'selection_branch_checks': len(pair_selection_branches)}
+    pair_gate_branches = [([{'eligible': True}], [], True),
+                          ([{'eligible': True, 'assessment_incomplete': 'cap'}], [], False),
+                          ([{'eligible': True}], [{'n': 6, 'stage': 'cap'}], False),
+                          ([{'eligible': True}], [{'n': 8, 'stage': 'cap'}], True),
+                          ([{'eligible': False}], [], False)]
+    for assessed, unrun, expected in pair_gate_branches:
+        core.require(pair_numerical_gate({'failures': [], 'candidate_enumeration_complete': True},
+                                        assessed, unrun, 6) == expected,
+                     'per-degree pair completion gate mismatch')
+    block_summary['per_degree_completion_gate_checks'] = len(pair_gate_branches)
     modern = load_modern16()
     modern_preflight = {'input_identities': modern['inputs'],
         'loaded_shapes': {k: list(x.shape) for k, x in modern['nodes'].items()},
@@ -235,7 +308,8 @@ def engineering(raw):
             'all_degree_gate_cases': numerical_cases, 'cardinal_candidate_checks': cardinal_cases,
             'feasibility_selection_branches': selection_branches, 'mocked_cap_cases': cap_cases,
             'durable_checkpoint_checks': checkpoint_checks, 'rectangular_gradient_checks': gradient_checks,
-            'modern_input_readonly_preflight': modern_preflight, 'passes': True}
+            'modern_input_readonly_preflight': modern_preflight, 'block_checks': block_summary,
+            'passes': True}
 
 
 def run_pilot(a):
@@ -415,14 +489,20 @@ def run_pilot(a):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--round', choices=('pilot', 'engineering', 'constrained', 'frontier', 'transfer16'), required=True)
+    p.add_argument('--round', choices=('pilot', 'engineering', 'constrained', 'frontier', 'transfer16', 'pair_screen'), required=True)
     p.add_argument('--protocol-commit')
     p.add_argument('--reference', type=Path)
+    p.add_argument('--pair-reference', type=Path)
     p.add_argument('--scratch', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
     a = p.parse_args()
     a.scratch.mkdir(parents=True, exist_ok=False)
     started = datetime.now(timezone.utc).isoformat()
+    if a.round == 'pair_screen':
+        core.require(bool(a.protocol_commit) and a.reference is not None and a.pair_reference is not None,
+                     'P5requires protocol/P1/P2references')
+        run_pair_screen(a)
+        return
     if a.round in ('frontier', 'transfer16'):
         core.require(bool(a.protocol_commit) and a.reference is not None, 'P3requires protocol/P1reference')
         run_frontier(a)
@@ -923,6 +1003,159 @@ def load_modern16():
     for value in costs.values():
         value['provenance_validation_and_loading_cpu'] = time.process_time()-began
     return {'nodes': nodes, 'costs': costs, 'inputs': list({r['path']: r for r in inputs}.values())}
+
+
+
+
+
+def run_pair_screen(a):
+    import pdpr_collect as collector
+    from scipy.stats import qmc
+    from types import SimpleNamespace
+    began, wall = time.process_time(), time.perf_counter()
+    cap = began+120
+    metadata = {'started_utc': datetime.now(timezone.utc).isoformat(), 'command': sys.argv,
+        'seeds': {'training': '2026111010+n (unchanged P2)', 'random_pair': '2026112800+n',
+                  'chebyshev': '2026112820+n', 'uniform': '2026112830+n', 'angular_search': '2026112840+n'},
+        'threads': {k: os.getenv(k) for k in ('OPENBLAS_NUM_THREADS', 'OMP_NUM_THREADS', 'MKL_NUM_THREADS')}}
+    dump(a.scratch/'run-metadata.json', metadata)
+    sources = [Path(__file__), Path(core.__file__), Path(collector.__file__), Path(core.u.__file__),
+        Path(core.old_budget.__file__), Path(old_det.__file__), Path(old_det.prev.__file__),
+        Path(old_det.prev.old.__file__), TOP/'code/t4_stacks.py',
+        TOP.parents[1]/'tracks/lattice-unisolvence/code/c3_rank.py']
+    pins = [core.identity(p) for p in sources]
+    for p in sources:
+        (a.scratch/('source-'+p.name)).write_bytes(p.read_bytes())
+    p1, p2 = (json.loads(p.read_text()) for p in (a.reference, a.pair_reference))
+    inputpins = [core.identity(a.reference), core.identity(a.pair_reference)]
+    for receipt in (p1, p2):
+        for key in ('raw_details', 'raw_inventory'):
+            core.require(core.identity(receipt[key]['path']) == receipt[key], 'P5reference pin mismatch')
+            inputpins.append(receipt[key])
+    prior = json.loads(Path(p2['raw_details']['path']).read_text())
+    refraw = Path(p1['raw_details']['path']).parent
+    refinv = {r['path']: r for r in json.loads(Path(p1['raw_inventory']['path']).read_text())}
+    details = {'paths': [], 'assessments': [], 'degrees': [], 'unrun': [], 'inputs': inputpins}
+    for n in (6, 8):
+        if time.process_time() >= cap:
+            details['unrun'].append({'n': n, 'stage': 'degree'})
+            continue
+        generated_cpu, generated_wall = time.process_time(), time.perf_counter()
+        nodes, _, recipe = core.u.parity_nodes(n)
+        pairs, _ = core.reflection_pairs(recipe, n)
+        random_pair = pairs[int(np.random.default_rng(2026112800+n).integers(len(pairs)))]
+        generated_cpu = time.process_time()-generated_cpu
+        generated_wall = time.perf_counter()-generated_wall
+        path, pair_ids, _ = core.screen_pair(nodes, n, recipe, a.scratch, cap)
+        path['costs_cpu']['node_generation_and_pair_list'] = generated_cpu
+        path['costs_cpu']['complete_construction'] += generated_cpu
+        path['costs_wall']['node_generation_and_pair_list'] = generated_wall
+        path['costs_wall']['complete_construction'] += generated_wall
+        p2path = next(p for p in prior['paths'] if p['n'] == n)
+        require_same = (abs(path['full_train_amp']-p2path['full_train_amp']) <= 1e-10*path['full_train_amp']
+                        and abs(path['full_trace']-p2path['full_trace']) <= 1e-10*path['full_trace'])
+        if not require_same:
+            path['failures'].append({'failure': 'P2full baseline numerical mismatch'})
+        singleton_rows = p2path['candidate_tables'][0]['candidates']
+        risk_feasible = [r for r in singleton_rows if r.get('integer_risk', 1e100) <= p2path['risk_limit']]
+        best_singleton = min(r['train_amp'] for r in risk_feasible)
+        path['best_P2_singleton_training_amp'] = best_singleton
+        path['gain_over_best_singleton_training_amp'] = (1-path['selected_fresh']['train_amp']/best_singleton
+            if path['selected_fresh'] is not None else None)
+        path['random_pair'] = list(random_pair)
+        details['paths'].append(path)
+        print(json.dumps({'stage': 'pair_path', 'n': n, 'feasible_pairs': path['pair_feasible_count'],
+            'operational': path['operational_pair'], 'pair': path['selected_pair'],
+            'fresh': path['selected_fresh'], 'gain_vs_best_singleton': path['gain_over_best_singleton_training_amp']}), flush=True)
+        if time.process_time() >= cap:
+            details['unrun'].append({'n': n, 'stage': 'all assessments'})
+            continue
+        sets = core.heldout(n)
+        sets['chebyshev'] = np.cos(np.pi*qmc.Sobol(3, scramble=True, seed=2026112820+n).random_base2(11))
+        sets['uniform'] = 2*qmc.Sobol(3, scramble=True, seed=2026112830+n).random_base2(11)-1
+        assessed, aliases = {}, {}
+        def assess(name, x, haar=False):
+            key = (core.array_sha(x), haar)
+            if key in assessed:
+                aliases[name] = assessed[key]['name']
+                return assessed[key]
+            if time.process_time() >= cap:
+                details['unrun'].append({'n': n, 'stage': 'assessment', 'name': name})
+                return None
+            row = frontier_assess(x, n, len(nodes), sets, name, a.scratch, cap, haar, 2026112840)
+            assessed[key] = row
+            aliases[name] = name
+            details['assessments'].append(row)
+            if row.get('assessment_incomplete'):
+                details['unrun'].append({'n': n, 'stage': row['assessment_incomplete'], 'name': name})
+            return row
+        full = assess('OLS-full', nodes)
+        assess('Haar-full', nodes, True)
+        pair = assess('pair' if path['operational_pair'] else 'pair-infeasible-diagnostic', nodes[pair_ids]) if pair_ids is not None else None
+        singleton_checks = []
+        for original in (path['selected_pair'] or []):
+            row = assess(f'singleton-{original}', np.delete(nodes, original, axis=0))
+            check = {'original_index': original, 'available': row is not None and row['eligible']}
+            if row is not None and row['eligible']:
+                canonical = aliases[f'singleton-{original}']
+                with np.load(a.scratch/f'n{n}-{canonical}-map.npz', allow_pickle=False) as data:
+                    C = data['operator']
+                amp = float(np.max(np.sum(abs(core.u.basis(core.dense_training(n), n)@C), axis=1)))
+                check.update(train_amp=amp, integer_risk=row['integer_risk'],
+                    feasible=bool(amp <= path['amp_limit'] and row['integer_risk'] <= path['risk_limit']))
+                expected = next(r for r in singleton_rows if r['original_index'] == original)
+                check['P2_training_relative_error'] = abs(amp-expected['train_amp'])/max(1., amp)
+            singleton_checks.append(check)
+        for rule in ('A', 'D'):
+            source = refraw/f'n{n}-{rule}-path.npz'
+            expected = refinv[str(source)]
+            core.require(core.identity(source) == expected, 'P5matched two-singleton path identity')
+            details['inputs'].append(expected)
+            with np.load(source, allow_pickle=False) as data:
+                assess(f'{rule}-two-singletons', nodes[data[f'm{len(nodes)-2}']])
+        assess('random-reflection-pair', np.delete(nodes, random_pair, axis=0))
+        if time.process_time() < cap:
+            control_cpu, control_wall = time.process_time(), time.perf_counter()
+            piv = la.qr(old_det.prev.old.basis(nodes, n).T, pivoting=True,
+                        mode='economic', check_finite=False)[2]
+            construction = {'cpu': time.process_time()-control_cpu,
+                            'wall': time.perf_counter()-control_wall}
+            restricted = assess('restrictedQR-two-rows', nodes[piv[:len(nodes)-2]])
+            if restricted is not None:
+                restricted['construction_cost'] = construction
+        else:
+            details['unrun'].append({'n': n, 'stage': 'restrictedQR'})
+        target_regressions(assessed.values(), full)
+        decision = {'operational_pair': path['operational_pair'], 'feasible_pair_count': path['pair_feasible_count'],
+            'pair': path['selected_pair'], 'singleton_checks': singleton_checks,
+            'gain_over_best_singleton_training_amp': path['gain_over_best_singleton_training_amp']}
+        if pair and full and pair['eligible'] and full['eligible']:
+            intermediate_barrier = (len(singleton_checks) == 2 and all(r.get('available')
+                and not r.get('feasible', True) and r.get('P2_training_relative_error', 1.) <= 1e-7
+                for r in singleton_checks))
+            decision.update(guards=pair_numerical_gate(path, assessed.values(), details['unrun'], n),
+                intermediate_barrier=intermediate_barrier,
+                heldout_amp_ratio=pair['amp_union']/full['amp_union'],
+                integer_risk_ratio=pair['integer_risk']/full['integer_risk'])
+            decision['passes'] = bool(path['operational_pair'] and decision['guards']
+                and intermediate_barrier and decision['heldout_amp_ratio'] <= 1.30)
+        details['degrees'].append({'n': n, 'M_start': len(nodes), 'aliases': aliases,
+                                  'decisions': {'pair': decision}})
+        print(json.dumps({'stage': 'pair_degree', 'n': n, 'decision': decision}), flush=True)
+        dump(a.scratch/'partial-details.json', details)
+    ds = [d['decisions']['pair'] for d in details['degrees']]
+    passed = (len(ds) == 2 and all(d.get('passes', False) for d in ds) and not details['unrun']
+              and time.process_time()-began <= 120)
+    details['gate'] = {'rules': {'pair': {'passes': bool(passed)}},
+                       'selected_rule': 'pair' if passed else None, 'passes': bool(passed)}
+    details['timing'] = {'actual_cpu': time.process_time()-began, 'wall': time.perf_counter()-wall, 'allowance_cpu': 120}
+    core.require(pins == [core.identity(p) for p in sources], 'P5source changed during execution')
+    metadata['ended_utc'] = datetime.now(timezone.utc).isoformat()
+    dump(a.scratch/'run-metadata.json', metadata)
+    dump(a.scratch/'details.json', details)
+    dump(a.scratch/'inventory.json', [core.identity(p) for p in sorted(a.scratch.rglob('*')) if p.is_file()])
+    collector.collect(SimpleNamespace(scratch=a.scratch, protocol_commit=a.protocol_commit,
+        output=a.output, original_command=None, round='P5'))
 
 
 if __name__ == '__main__':

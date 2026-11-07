@@ -21,7 +21,9 @@ import numpy as np
 
 TOP = Path(__file__).resolve().parents[1]
 SCHEMA = 'pdpr-canonical-parity-v1'
-SOURCE_COMMIT = '46d1e2b9356e0e5cc385615906c500684cd9ad77'
+SOURCE_COMMITS = {12: '562309744165cd601a489510ddc8026d933b1b27',
+                  16: 'e761a12bcc7acfbf47dc6db77592854211931df5'}
+LEGACY_SOURCE12 = '46d1e2b9356e0e5cc385615906c500684cd9ad77'
 LIMIT = 16384
 
 def require(test, message):
@@ -83,8 +85,8 @@ def prime(p):
     return type(p) is int and p >= 2 and all(p % q for q in range(2, math.isqrt(p)+1))
 
 def field(p, rho, L):
+    require(type(p) is int and 2 < p < 2**30 and (p-1)**2+(p-1) <= np.iinfo(np.int64).max, 'int64 intermediate overflow bound')
     require(prime(p) and p % 2 == 1 and (p-1) % L == 0, 'invalid prime field')
-    require(p < 2**30 and (p-1)**2+(p-1) <= np.iinfo(np.int64).max, 'int64 intermediate overflow bound')
     require(type(rho) is int and 1 <= rho < p and pow(rho,L,p) == 1
             and all(pow(rho,L//q,p) != 1 for q in factors(L)), 'rho not exact order L')
 
@@ -158,8 +160,11 @@ def verify(record):
         pin = record['provenance']['receipt']
         rp = TOP/'evidence'/Path(pin['path']).name
         require(rp.stat().st_size == pin['bytes'] and sha(rp.read_bytes()) == pin['sha256'], 'scientific receipt pin differs')
-        require(record['provenance']['scientific_source_commit'] == SOURCE_COMMIT, 'scientific source commit differs')
+        expected = {SOURCE_COMMITS.get(n)} | ({LEGACY_SOURCE12} if n == 12 else set())
+        require(record['provenance']['scientific_source_commit'] in expected, 'scientific source commit differs')
+        require(record['provenance']['published_result_commit'] == SOURCE_COMMITS.get(n), 'published result commit differs')
     require(c['L'] == math.lcm(*(2*m for m in orders)), 'L mismatch')
+    require(type(c['L']) is int and type(c['det_mod_p']) is int, 'noninteger certificate metadata')
     rows = c['minor_row_ids']
     require(len(rows) == record['N'] and len(set(rows)) == len(rows)
             and all(type(i) is int and i in ids for i in rows), 'minor IDs mismatch')
@@ -185,6 +190,8 @@ def verify(record):
             'scope': 'exact cos-grid determining set/unique positive-weight LS; no continuous norm, numerical conditioning or N-site interpolation claim'}
 
 def build(receipt_path, n, publication):
+    require(n in SOURCE_COMMITS and publication == SOURCE_COMMITS[n], 'unsupported degree/publication pin')
+    source_commit = SOURCE_COMMITS[n]
     receipt_path = Path(receipt_path)
     receipt = json.loads(receipt_path.read_text())
     def pinned(pin):
@@ -194,12 +201,12 @@ def build(receipt_path, n, publication):
     inventory = json.loads(pinned(receipt['raw_inventory']).read_text())
     for pin in inventory:
         pinned(pin)
-    source_files = subprocess.check_output(['git','ls-tree','-r','--name-only',SOURCE_COMMIT], cwd=TOP.parents[1], text=True).splitlines()
+    source_files = subprocess.check_output(['git','ls-tree','-r','--name-only',source_commit], cwd=TOP.parents[1], text=True).splitlines()
     for pin in receipt['executed_source_snapshots']:
         pinned(pin)
         basename = Path(pin['path']).name.removeprefix('source-')
         matches = [f for f in source_files if Path(f).name == basename]
-        originals = [subprocess.check_output(['git','show',SOURCE_COMMIT+':'+f],cwd=TOP.parents[1]) for f in matches]
+        originals = [subprocess.check_output(['git','show',source_commit+':'+f],cwd=TOP.parents[1]) for f in matches]
         require(any(len(v) == pin['bytes'] and sha(v) == pin['sha256'] for v in originals), 'official source commit differs: '+basename)
     path = next(x for x in details['paths'] if x['n'] == n and x['rule'] == 'A')
     M, N = path['primary_M'], path['N']
@@ -225,7 +232,7 @@ def build(receipt_path, n, publication):
         'binary64_link': {'sha256': sha(np.asarray(nodes,dtype='<f8').tobytes()),
             'dtype': 'little-endian float64 M-by-3 C order', 'recipe': 'np.cos(np.pi*indices/np.array(orders))',
             'numpy': np.__version__, 'status': 'MEASURED physical-coordinate identity, distinct from exact cos geometry'},
-        'provenance': {'scientific_source_commit': SOURCE_COMMIT, 'published_result_commit': publication,
+        'provenance': {'scientific_source_commit': source_commit, 'published_result_commit': publication,
             'receipt': identity(receipt_path), 'raw_details': receipt['raw_details'],
             'raw_inventory': receipt['raw_inventory'], 'checkpoint': checkpoint,
             'path': pathpin, 'recipe': recipepin, 'assessment_map': map_pin,

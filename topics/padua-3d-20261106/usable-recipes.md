@@ -128,6 +128,33 @@ The new coordinates are procedural regeneration output, with numerical
 validation; they do not inherit the committed455-point artifact's exact
 unisolvence proof or an all-degree guarantee.
 
+## Pruned grids with fewer sites than the full parity recipe
+
+Two exported subsets are available:546sites at degree12and1163at degree16.
+They remove14–16percent of the full grid and improve the measured noise/
+amplification tradeoff against same-size restrictedQR. Minimal-site examples
+use fewer observations; full grids retain better quality. See the
+[comparison](pruning-summary.md) before choosing a size.
+
+```python
+from pdpr_certify import load
+from scipy.linalg import lstsq
+
+n = 16
+points = load("topics/padua-3d-20261106/evidence/pdpr-pruned16-nodes.json")
+values = 2 + points[:, 0] - points[:, 1] * points[:, 2]
+coefficients, _, rank, _ = lstsq(basis(points, n), values, lapack_driver="gelsy")
+prediction = basis(query, n) @ coefficients
+```
+
+Use the initial example's imports and code-directory path; replace the
+example values with observations in the returned order. For degree12set
+n=12and load pdpr-pruned12-nodes.json. The displayed physical OLS example
+was executed for both files, returning ranks455/969and maximum errors below
+8e−15on64fresh queries. This numerical check is separate from the exact
+rank certificates. The [artifact guide](pruning-artifacts.md) gives repository-
+only verification commands; no temporary optimization files are needed.
+
 ## Scope and review
 
 U1 offers a known explicit recipe with a directly proved Gram/noise

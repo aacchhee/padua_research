@@ -161,8 +161,9 @@ def main():
         modern[name] = np.load(pin['path'], allow_pickle=False)
         assert modern[name].shape == (969, 3)
     fresh_rows, checked, search_values_count, fresh_searches_count = [], {}, 0, 0
+    gradient_stencils = []
     for row in details['assessments']:
-        assert time.process_time()-start < 180, 'review CPU window exhausted'
+        assert time.process_time()-start < 90, 'review CPU window exhausted'
         assert row['eligible'] and not row.get('assessment_incomplete')
         n, name = row['n'], row['name']
         data = np.load(raw/f'n{n}-{name}-map.npz')
@@ -244,17 +245,30 @@ def main():
             objective = angular_objective(C, n)
             theta = np.array((.71, 1.13, 2.21))
             _, gradient = objective(theta)
+            # The l1 objective is smooth only while every cardinal sign is fixed.
+            # An earlier h=1e-6 oracle crossed a modernU2 cardinal zero.
+            middle_sign = np.sign(basis(np.cos(theta)[None, :], n)@C)
             for j in range(3):
-                plus, minus = theta.copy(), theta.copy()
-                plus[j] += 1e-6
-                minus[j] -= 1e-6
-                numerical = (objective(plus)[0]-objective(minus)[0])/2e-6
-                errors['fresh_gradient'] = max(errors['fresh_gradient'], abs(numerical-gradient[j])/max(1., abs(numerical)))
+                for h in (1e-6, 1e-7, 1e-8, 1e-9):
+                    plus, minus = theta.copy(), theta.copy()
+                    plus[j] += h
+                    minus[j] -= h
+                    plus_sign = np.sign(basis(np.cos(plus)[None, :], n)@C)
+                    minus_sign = np.sign(basis(np.cos(minus)[None, :], n)@C)
+                    crossings = int(np.count_nonzero(plus_sign != middle_sign)+np.count_nonzero(minus_sign != middle_sign))
+                    numerical = (objective(plus)[0]-objective(minus)[0])/(2*h)
+                    error = abs(numerical-gradient[j])/max(1., abs(numerical))
+                    gradient_stencils.append({'map': name, 'coordinate': j, 'h': h, 'sign_changes': crossings, 'relative_error': float(error)})
+                    if crossings == 0:
+                        errors['fresh_gradient'] = max(errors['fresh_gradient'], float(error))
+                        break
+                else:
+                    raise AssertionError(('no sign-stable derivative stencil', name, j))
             starts = list(fresh_top)+list(itertools.product((0., np.pi), repeat=3))
             starts += list(np.pi*np.random.default_rng(2026112640+n).random((16, 3)))
             results = []
             for theta in starts:
-                assert time.process_time()-start < 180, 'review CPU window exhausted'
+                assert time.process_time()-start < 90, 'review CPU window exhausted'
                 initial = -objective(theta)[0]
                 fit = minimize(objective, theta, jac=True, bounds=[(0, np.pi)]*3, method='L-BFGS-B',
                     options={'maxiter': 200, 'maxfun': 5000, 'ftol': 1e-12, 'gtol': 1e-8})
@@ -298,7 +312,7 @@ def main():
         'inventory_files_checked': len(inventory), 'inputs': details['inputs'], 'decoded_logical_object_exact': True,
         'paths': path_reports, 'map_count': len(checked), 'original_search_values_checked': search_values_count,
         'fresh_searches': fresh_searches_count, 'fresh_seeds': ['2026112620+n angular', '2026112630+n uniform', '2026112640+n refinement'],
-        'maximum_errors': errors, 'gate_reconstruction': gates, 'fresh_metrics': identity(raw_output),
+        'maximum_errors': errors, 'gradient_stencils': gradient_stencils, 'prior_checker_failure': {'source_sha256': 'a466a46a58d1e6cc06fcc795b9efc25064c795c49fb90a146221cca4fd3cffd8', 'fixed_h': 1e-6, 'maximum_gradient_error': 0.006151109066968322, 'reason': 'ModernU2 cardinal sign crossing inside central-difference stencil; smaller sign-stable stencil agrees. Other reported-value comparisons passed below3.44e-13; failed run emitted no success receipt.', 'captured_log': identity('/tmp/padua-pruning-review-p4b.log'), 'earlier_session': 'Pre-compaction terminal outcome unavailable; unclaimed. Retry in existing scratch stopped at mkdir before numerical work.'}, 'gate_reconstruction': gates, 'fresh_metrics': identity(raw_output),
         'limits': 'Source/clock-placement and durable prefix contents checked; hardware timings not independently replicated. n16 score stages sampled as listed; no claim of all408 n16 deletions independently rerun. Full original search values are checked, with additional independently implemented searches on consequential maps. Own raw artifacts regeneration-only.'}
     encoded = json.dumps(result, indent=2)+'\n'
     assert len(encoded.encode()) < 16384, len(encoded)

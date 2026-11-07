@@ -66,7 +66,10 @@ measurement/solver/site-count comparisons preserve their stated budgets.
 Developer engineering confirms unchanged checkpoint arithmetic, valid saved
 maps/timers, scaled rectangular angular derivatives, feasible integer
 allocation and cap semantics; all modern input/source pins pass. Distinct
-consequential P4review is pending. The full run uses152.343048CPU, and the
+[consequential P4review](../pruning-review.md) passed all13maps/noise/targets/
+recorded searches,16selected score stages and408support transitions;
+168independent critical-map refinements preserve the primary ratios.
+The full run uses152.343048CPU, and the
 25.301732CPUfull diagnostic construction is separate from primary cost.
 Historical modern optimizer costs and current loading costs are explicit.
 Single-machine timings are not hardware-independent guarantees.
@@ -79,8 +82,9 @@ all-degree bound or certified continuous amplification is asserted.
 
 ## Open items and history
 
-Finish distinct review and conditional compact canonical-ID delivery with
-separate exact-cosine rank certificate/checker. Further research requires
+Distinct review passed. Compact canonical-ID delivery with a separate
+exact-cosine rank certificate/checker is coordinated in
+[pruning-artifacts.md](../pruning-artifacts.md). Further research requires
 its own prospective question; unused rounds are not a quota. 2026-11-07,
 Codex gpt-6.1-sol high developer, rules/input6d894d50; root owns publication,
 counters, proof coordination and the formal independent handoff.

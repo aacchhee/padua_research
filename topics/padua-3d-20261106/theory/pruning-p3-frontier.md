@@ -66,8 +66,10 @@ Against full637-node OLS it loses both noise and norm. Denser diagnostic
 
 Developer preflights check durable checkpointing preserves synthetic
 paths and produces valid saved maps/complete-prefix timers; rectangular
-angular scaling and derivatives pass finite differences. Consequential
-independent P3review is pending. All floats remain MEASURED; exact-rank
+angular scaling and derivatives pass finite differences. The [consequential independent P3review](../pruning-review.md) passes all23
+maps/target-noise tables, all1288stored search values, nine original-mesh
+replays and252new independent searches, preserving the gate ratios.
+Formal Claude review remains separate. All floats remain MEASURED; exact-rank
 artifact delivery is a separate future check, not an inherited proof.
 The full-run38.445654CPU timing is one-machine/single-thread, without a
 hardware-independent bound or repeat confidence interval.
