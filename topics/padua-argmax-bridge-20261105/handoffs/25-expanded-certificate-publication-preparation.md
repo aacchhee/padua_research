@@ -1,6 +1,6 @@
 # Handoff 25 — Expanded certificate chapter and publication preparation
 
-- Status: open
+- Status: superseded by 26: AC requests a separate explanatory companion while preserving the research paper
 - Previous handoff: 24-section5-explanation.md
 - Next agent / model / effort: Codex coordinator, gpt-6.1-sol medium for publication preparation; Sol high for mathematical exposition; distinct Sol max for a necessary focused mathematical review per AC's preference
 - Role: orchestrator / publication preparation

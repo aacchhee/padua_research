@@ -2532,3 +2532,35 @@ AC's requested expansion. Handoff 25 carries the remaining publication
 preparation from handoff 23, with the 48-page draft and this focused
 review as the current baseline. Outputs are committed first; handoff 24
 is closed and 25 opened in the following handoff-only commit.
+
+## 2026-11-07 — Separate explanatory companion for university analysis readers
+
+AC requests a new companion up to five times the current 48-page length,
+with exactly the same section structure, theorems and theorem numbers,
+and preferably the same formula numbers. Explain specialist vocabulary
+and intermediate arguments throughout; the examples include unisolvence,
+cardinal kernels, checkerboard scalar products, geometric sums, Gram
+matrices and angular kernels. The current paper must remain intact.
+
+Rules read at `c6e195fa5211d4504fd2638f3c7686368e28daee`; base remains
+`f70a260e5b5f9a01209dc8a05faabdcf8db1feeb`. Stage: WORK. Handoff 25
+redirects to 26. Original paper directory tree is
+`ccb6e4568ec69bd3afbff3408f7659ac888ab14b`; all 20 tracked files in
+that directory and its existing PDF are protected from edits. The new
+companion has separate sources and a separate output/template directory.
+
+Five bounded Sol high developers own disjoint companion section files:
+introduction/preliminaries, corner expansion, completed comparison,
+localization geometry, and finite certificates. A distinct user-preferred
+Sol max reviewer owns only companion-paper/review.md. Root owns main,
+build/check utilities, documentation and Git. Requested models/efforts
+are recorded; serving-model metadata is not independently exposed.
+
+The expansion retains the exact original section/subsection commands,
+all 13 numbered statement environments, 90 numbered display environments
+and 113 source labels. Added teaching uses unnumbered prose, examples and
+derivations. The initial correspondence check passes. Actual compiled
+label numbers and the 240-page ceiling will also be checked. Existing
+claim assumptions and evidence scope are preserved. This is an exposition
+task, with no new mechanism, novelty/priority assertion, degree result or
+native campaign; the ideas novelty gate is inapplicable.
