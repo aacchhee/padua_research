@@ -2367,3 +2367,32 @@ size changed; suppliedZIP and template members/PDF stayoffGit. Current
 requested author/template work is complete. Next handoff21 preserves
 completedSolmaxmathaudit and records remaininghuman/publication/release
 work plus single-TeX bundle guidance. No blockedPRmetadata retry.
+
+## 2026-11-07 — Application-context citation advice
+
+AC asks whether the originalpaper can be cited naturally with a few
+Padua applications. Rules AGENTS/CODEX read at
+7a1bf868afac0fca6394d334bd3895f89c276c12; WORKFLOW byte-identical to the
+previous complete9e0b06eread, revalidatedbygitdiff. Main/topic refreshed;
+base unchanged f70a260e5b5f9a01209dc8a05faabdcf8db1feeb. This is editorial
+advice/sourcechecking, no newidea/mechanism/noveltygate, manuscriptedit
+or numericaljob. Originalpaper identified from localfulltextrecord as
+VanBarel–Chesnokov2010. Freshprimary metadata/abstract plus existing
+§5fullreading support its Padua orthogonal-basis/least-squares context.
+
+Actual websearch finds two useful applied companions: Laguardia–Russo2022
+FredholmNyström/collocation, primaryPDFpp.39–40 read; Landon-Cardinal–
+Govia–Clerk2018 quantumtomography, primaryacceptedmanuscriptabstract/
+intro/reconstruction/Eq5 read. Eq5alreadyinvokesLebesgueconstant, making
+an explicit stabilitybridge. Claims limited to inspectedpassages; no
+fullproofreview/numericalreplication/exhaustivenoveltyclaim.
+
+Saved concrete proposedparagraph and source/scope notes in
+paper/application-context.md. Recommend oneparagraph, three specificuses,
+then existinginterpolation-noise interpretation. Do not imply the current
+Lebesgue theorem analyzes rounding in the2010Givensalgorithm or truncated
+least-squares projector. CurrentmainTex/bibliography/PDF and their completed
+Solmaxaudit remainunchanged; no extraapplicationsection/citationpadding.
+Currentquestionansweredwithproposal; adoption/citationlist refresh can
+followuserdirection. Newhandoff22carries remainingpublicationwork and
+this recommendation; outputsfirst, old21done/new22separately.
