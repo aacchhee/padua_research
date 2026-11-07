@@ -1,3 +1,15 @@
+# Current result — complete finite bridge,2026-11-07
+
+[G01](theory/G01-all-degrees.md) proves the exact parity-correct two-corner
+argmax for every integer n>=2, with explicit computer-assisted dependencies.
+The [actual return](compact-return.md) passed all280pairs and both random
+199/238full histories and fresh native rechecks. No degree gap remains.
+Final Claude audit/readiness is separate; original records below preserve
+their historical scopes. [Paper positioning](paper-positioning.md) treats
+the earlier asymptotic theory and new all-degree result as two contributions.
+
+---
+
 # Padua argmax bridge — WORK: completed F campaign and compact Syvert receipts,2026-11-07
 
 The exact parity-correct two-corner global argmax is proved for **EVERY integer n>=320** and finite degrees **2–42,63–64,159–160**. Exactly **273 degrees remain OPEN:43–62,65–158,161–319**. PD-T099 remains OPEN; the analytic onset is sufficient, not minimal. Earlier finite511–512/1023 proofs remain valid inside the analytic range.

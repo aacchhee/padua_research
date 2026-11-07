@@ -1868,3 +1868,20 @@ hash discrepancy was reported. Other validation results above stand.
 Outputs989b8ed plus this record are the completedWORKbatch. Next
 [13-audit-complete-gap.md](handoffs/13-audit-complete-gap.md) requests the
 substantive Claude review; a followinghandoff-onlycommitcloses12/opens13.
+
+### AC paper-positioning clarification after output publication
+
+AC asks how a paper should use the earlier research, which Codex/Claude
+already judged substantial without the bridge. Corrected the initially
+too-narrow bridge-centered editorial outline: asymptotic structure and
+all-degree argmax are two main strands. PD-T271 plus eventual PD-T229
+already transfers corner asymptotics to the global constant for sufficiently
+large n; the finite bridge was never necessary for that asymptotic
+conclusion. G01 additionally makes the inherited explicit remainder valid
+for the globalconstant at every n>=32. Distinct Astrahigh mathreviewer
+confirmed the direct substitution/noncircularity and that original sharper
+-1/N+O(logN/N²) remains unproved; no new native/analytic round or finalID.
+Paper-positioning.md records this editorial plan and inspected literature
+locators/coverage; report.md now has an actual-current header rather than
+a stale OPEN summary. Handoff13 remains the unchanged finalaudit task;
+these late presentation docs are included in its current-head input.
