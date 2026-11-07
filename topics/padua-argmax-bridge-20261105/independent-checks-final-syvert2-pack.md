@@ -656,3 +656,57 @@ clean it and retain the preflight failure, or leave false on cleanup failure.
 This is separate from fake case-worker failures, which happen after entering
 the existing scheduler try/finally. No source imports/tests were performed;
 03 fixture preparation can continue but release awaits the focused source fix.
+
+## FOPS-09 repair accepted in source; two separate prospective checks
+
+**Focused source verdict: FOPS-08/FOPS-09 addressed in the exact final source;
+execution checks remain pending.** Custody SHA256
+`b77b3c1da2eacb148ec49b4df369f203a4049dd3b8784115b2c9a5766d80360f`;
+all sixteen entries verified. Server SHA256
+`4133bc2afac45f89b95d45119ba830e1b5102c5568c9dfcfe611f9aa11f3c968`.
+Read the full revised post-invalidation preflight/dispatch/cleanup path and
+shared run-state bindings; no source imports/tests executed.
+
+Handlers and the existing `try/finally` now encompass subreaper setup, preflight,
+provenance capture and dispatch. A preflight signal raises into cleanup rather
+than proceeding to workers. `reaper_ready` distinguishes setup failure before
+any child (false retained) from an established subreaper. Even a worker wait or
+exit-record write failure reaches owned cleanup through an inner finally.
+Cleanup or finalization failure retains false; true is published only after
+actual ECHILD. Handlers restore afterward and no later child launches. A signal
+during cleanup may add a failure but cannot bypass the ECHILD prerequisite.
+Resume refuses missing/corrupt original selected-core provenance before
+preflight and rejects a changed current selection before admitting any case.
+The shared all-group guard and permanent refusal of interrupted false state
+remain intact. This is source acceptance, not observed cleanup success.
+
+Original 01/02 files remain unchanged. Separate `review_controls_03.py` is
+SHA256 `587905c8560a184bb61a3a7e76fb5aed3272a0e3588c6c948064d70ec21f2e33`;
+`PREREGISTRATION-03.md` is
+`cf9a1424c6d1981a70ad76781f90c17f4d32334f7180cae363c74f55c6b0124e`.
+It adapts bound summaries, directly exercises disjoint-group/state guards,
+preflight exception/SIGTERM with an owned orphan, cleanup-failure false state,
+resume provenance/core refusal, and existing scheduler/provenance/collection
+controls. An audit hook fails any global `/proc/*/environ` open; old scanner
+permission tests are historical, not claimed as current executed coverage.
+The original resource caps and root aggregate-output monitor remain mandatory.
+
+The separate genuine saved-pass check is also frozen prospectively:
+`genuine_data_check.py` SHA256
+`7d829d66021bb6df336244dd3a587333fea129ca482ea23aef8185699d32a46b`;
+`genuine_data_pins.json`
+`410943d2ad1c288a7c536762a5e3eee1ec8884e0b24513d3b538586ff2d8e776`;
+`PREREGISTRATION-GENUINE-DATA-01.md`
+`58fc00d3f92393f489a72f40af438e2de1c218ffd7f25d9fa262aa1acc8b3186`.
+It uses the real rational checker and actual four saved 41/511 primary/fresh
+outputs through read-only historical paths, capturing required external bytes
+only into its fresh box. Scope is DATA_ONLY_NO_NATIVE: no new numerical run,
+degree, compiler, network, child process or scientific oracle. Fixed code/data
+pins match the final imported modules; the source repair changed only server.
+Caps are 20 self CPU, 60-second alarm, 1 GiB AS and a 256 MiB staging reservation
+with explicit post-check rather than an asserted hard disk quota.
+
+Both commands are fully specified in their separate registrations and await
+root publication/release. Only fixture/helper AST parsing and input hashing
+occurred. Root execution and reviewer inspection will be attributed separately;
+no independent rerun, operational PASS or scientific acceptance is claimed now.
