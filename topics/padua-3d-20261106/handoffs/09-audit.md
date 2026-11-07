@@ -1,6 +1,6 @@
 # Handoff09 — padua-3d-20261106 — focused material re-audit
 
-- Status: open
+- Status: superseded by 10: AC authorizes the usable-point-set campaign; focused audit04 scope preserved for the next combined audit.
 - Previous handoff: [08-response.md](08-response.md)
 - Next agent / model / effort: **Claude, Opus5.5 (claude-opus-5-5), xhigh**.
 - Role: independent auditor of Codex development; orchestrator controls Git.

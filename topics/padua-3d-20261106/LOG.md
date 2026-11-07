@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5, xhigh): Continue codex/padua-3d-20261106.` · Handoff08 closes after the output commit; successor: [handoffs/09-audit.md](handoffs/09-audit.md)
+- Stage: WORK · Next: Codex usable-point-set campaign · Open handoff: [handoffs/10-usable-work.md](handoffs/10-usable-work.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -585,3 +585,24 @@ their corresponding runs, with publication and execution timing distinguished.
   bytes,15804-byte single manifest;104existing-path identities in new
   receipts match exactly, zero owned-link errors, all topic JSON parse/size
   checks pass, diff whitespace clean, scope/protected-body checks pass.
+
+## 2026-11-07 — AC authorizes usable point-set campaign — Codex, Astra high
+
+- Rules read at fullinput38227202bc6908d5a5a874950145761a8ca4312f:
+  AGENTS,WORKFLOW,CODEX. Runtime skill refreshed; attached environment
+  matches the executor and policy is enforced. Main/topic refreshed:
+  f70a260/3822720 unchanged, clean local branch.
+- AC: write the three discussed ideas and work on them, up to10rounds
+  each for extra-point least squares and direct optimization, up to20
+  for shifted/folded/mixed constructions. [Campaign](usable-campaign.md)
+  records exact scope, starting0/10,0/10,0/20, evidence and stop discipline.
+  Previous T7/T8/T9/T10counts stay3/25. No new research round consumed.
+- New instruction redirects pending [handoff09](handoffs/09-audit.md)
+  into [handoff10](handoffs/10-usable-work.md). Its independent Claude
+  audit04 scope remains pending and will accompany new material audit.
+- Solxhigh shared gate reader and disjoint U1/U2/U3 developers prepare
+  existing-source readings; two separate Solxhigh checkers cover U1/U2
+  and U3. Root alone controls Git. No mechanism generation/research
+  execution is released until the shared gate is complete and published.
+  Dependent protocols are then separately published before experiments.
+  Configured model/effort recorded; runtime metadata is unexposed.
