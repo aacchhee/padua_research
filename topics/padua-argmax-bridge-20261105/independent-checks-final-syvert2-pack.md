@@ -494,3 +494,119 @@ Only AST parsing of the new fixture occurred. Root must publish and release
 these exact bytes before running once; reviewer will attribute root execution
 and will not invent an independent rerun. This source acceptance does not erase
 the first failure, establish controls PASS or permit builder/native/bulk work.
+
+## Controls 02 first outcome and narrower quiescence recommendation
+
+**Run 02 stopped at first failure; NOT PASS.** Root executed the separate
+registered command once at source
+`7cce03f186c2d325b1764fe3efa790b8f50b6639`, session `8528`, initial tool chunk
+`a9db3b`, completion chunk `063443`, observed exit **1**. Reviewer read and
+hashed the preserved files, without executing any control:
+
+- `final-ops-controls-02/receipt.json`, 1,423 bytes, SHA256
+  `dbfb82548d15ddd7a75b332c46887e05d0c03d4253a0000d38bc9a4873efa060`.
+- `final-ops-controls-02/root-observation.json`, SHA256
+  `4d9bc5b1f5239c59b800f5180715c6fa2013bc7b7e022f6559321f196cb27033`.
+
+Paths are below `local-output/argmax-bridge-20261105/`. Recorded self CPU is
+7.6840720000000005 seconds, waited-child CPU 0.008459 seconds, wall
+7.6596474060061155 seconds. Root observed 34,314,457 bytes before its observation
+file, below the 64 MiB threshold. No rerun or cap change occurred.
+
+Twenty-five recorded events completed, including every registered synthetic
+FOPS-07 floor/permission/corruption/PID-reuse control and the earlier provenance,
+ZIP, lock and changed-worker refusals. The actual resume then failed reading
+`/proc/206164/environ`: root identifies a newly born unrelated same-UID process
+whose environment was inaccessible. This is the scanner's intended conservative
+behavior, but it still blocks legitimate operation. No fake scheduler worker
+had launched; actual scheduler/timeout/orphan/signal/collection and later
+preflight/startup controls remain unexecuted. There was no scientific/native/
+compiler/builder/network execution. Earlier source acceptance was not evidence
+that these unexecuted controls would pass.
+
+### FOPS-08 — MAJOR availability finding; proposed causal state contract
+
+The older-process exclusion closes its stated branch but cannot make a global
+environment walk reliable when unrelated newer processes are nondumpable.
+Do not weaken the scanner by ignoring their `PermissionError`. Instead, the
+following smaller contract can remove the global environment walk altogether,
+provided a focused source change establishes every obligation:
+
+1. **One global campaign lock and one shared state guard.** Every supported
+   admission path (fresh full, fresh subset, resume) and collection holds the
+   same lock. Before preflight or any new worker admission, inspect **all**
+   existing run groups, not just the requested group or overlapping degrees.
+   Require recognized group structure, valid run/source/domain/plan identity,
+   summary bound to that run identity, and literal `quiescent is True` plus
+   `ECHILD is True`. A missing, false, malformed, identity-mismatched or orphaned
+   group state refuses. A valid current resume must not exempt another failed
+   or interrupted group's missing/false quiescence state.
+2. **Invalidate before admitting writers.** Atomically replace the requested
+   group's old summary with a bound `quiescent=False` state before the first
+   worker or other child capable of modifying package/output evidence starts.
+   New runs must persist run identity and invalid state before admission.
+   Failure before a complete invalidation must launch no writer. Retain the
+   lock until finalization or process death.
+3. **True only after complete owned cleanup.** Wait direct children, clean and
+   reap all owned descendants with the active subreaper, and establish ECHILD
+   before atomically publishing `quiescent=True, ECHILD=True`. Cleanup failure
+   must leave false/missing state. No child writer may be launched afterward.
+   A terminal failed run may truthfully be quiescent; preserve its failed
+   evidence and permit its collection. Resume still independently refuses
+   failed/corrupt/started cases; quiescence never means scientific success.
+4. **No recovery by declaring an interrupted run quiescent.** A killed
+   supervisor's false/missing state is permanently refused for both collection
+   and further admission in that package. Do not infer safety from elapsed
+   time, a failed process probe or manual absence of a PID. No reset/retry or
+   new-group bypass is part of this repair.
+
+The crash-window argument is direct. Before invalidation, the previously true
+state corresponds to no live writer, and the new supervisor has not admitted
+one. Between invalidation and complete cleanup, any crash leaves false/missing
+state, so every later admission/collection refuses even if orphan writers
+survive. After true is published, ECHILD and the prohibition on later child
+launch mean no admitted writer remains. The global lock serializes concurrent
+callers; the all-group guard prevents an interrupted small run from being
+bypassed through a fresh large run or full run. An interrupted write/rename
+must yield either the previous safe state before writers existed or the new
+false state, never a path that launches workers after failed invalidation.
+
+The current source already places its worker `Popen` after summary invalidation
+and true publication after `cleanup()`. It does **not yet** implement the
+required all-group quiescence admission guard; removing the environment scan
+alone is therefore not accepted. Factor the same substantive guard into run
+and collect, so their interpretations cannot drift. Keep immutable domain
+metadata for identity/custody if useful, without pretending it discovers
+writers. Source-owned `/proc/stat` traversal for descendant cleanup is distinct
+from the unnecessary global environment scan and remains required.
+
+Pre-invalidation work also needs a narrow source accounting: current preflight
+`ldd` is a read-only loader inspection, synchronously awaited, with stdout/stderr
+pipes; provenance copying is synchronous parent work. A parent crash during
+those steps must leave no surviving process capable of writing package output.
+Do not move asynchronous build/capture tasks before invalidation. Parent-only
+partial files may remain after a crash and must be preserved/refused as
+appropriate; they are not live writers. The existing boot/domain refusal
+prevents treating a previous boot's interrupted persistence as current proof
+of quiescence. Process-kill safety is not a new power-loss durability claim.
+
+This contract governs the frozen supported launch paths and their descendants.
+It does not discover arbitrary out-of-protocol programs or users manually
+editing the package tree. The direct worker/helper scripts must remain internal
+entry points, with no supported alternate launch that bypasses scheduler
+invalidation. A claim covering hostile out-of-band writers would need a
+different enforced write-ownership mechanism; it is not implied here.
+
+Required focused controls after exact source/preregistration: all-group guard
+rejects false/missing/corrupt/identity-mismatched state for collection, same-group
+resume and disjoint-group admission; stale true becomes false before any worker
+entry; SIGKILL with a surviving setsid/orphan leaves permanently refused state;
+SIGTERM plus complete owned cleanup can produce true state and a complete
+quiescent archive; failure in cleanup never publishes true; no path launches a
+writer after true. Retain first-failure admission and partial-evidence checks.
+Synthetic unreadable unrelated process metadata must be irrelevant because
+there is no global environment read, not because a permission error is ignored.
+
+Recommendation only: no operational source or fixture was edited, and no tests
+or reruns occurred in this outcome assessment. Preserve both failed runs and
+publish this finding before a focused repair; readiness remains unclaimed.
