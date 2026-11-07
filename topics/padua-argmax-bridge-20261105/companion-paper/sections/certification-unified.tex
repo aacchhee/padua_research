@@ -1,0 +1,1213 @@
+\section{Finite completion by positive interpolation}
+\label{sec:certificates}
+The remaining degrees require a bound on the whole square, including a
+strict comparison arbitrarily close to each maximizing corner.
+A finite certificate is a finite collection of data whose verified
+inequalities imply that continuous statement. Here its geometric data
+are rectangles and their subdivision relations. A terminal rectangle in
+the subdivision is called a \emph{leaf}. Its numerical data are outward
+enclosures of coefficients or function values: an enclosure $[l,u]$
+asserts $l\leq z\leq u$ for the exact quantity $z$, with rounding chosen
+to preserve these two inequalities. Its final tests
+are strict comparisons with a validated lower bound for the proposed
+maximum. The mathematical work in this section explains why passing
+these finitely many tests proves an assertion at every point of the
+square.
+
+It helps to separate the roles of the objects involved. The target is the
+Lebesgue function $\lambda_n$, a sum of absolute values of the cardinal
+polynomials. The corner value $\Lambda_c(n)$ is an exact real number,
+identified earlier by the cardinal formula. A rational lower endpoint
+$L_c\leq\Lambda_c(n)$ is an arithmetic tool for making strict tests.
+An upper enclosure on a rectangle describes all points of that rectangle
+at once. If that enclosure is strictly below $L_c$, the desired strict
+comparison with $\Lambda_c(n)$ follows throughout the rectangle. At a
+maximizing corner the proof also retains the exact identity for the
+value, so that equality can be classified.
+
+For orientation, consider a continuous function $h$ on a closed
+interval. Finitely many observed values leave open what happens between
+them. A bound on the interpolation error adds the information that
+connects those observations to every intermediate point. For example,
+if $|h''|\leq K$ on an interval of width $d$, linear interpolation of
+the endpoint values has an error of magnitude at most $Kd^2/8$.
+Two endpoint upper bounds and the number $K$ therefore give an upper
+bound on the whole interval. The rectangle argument below applies the
+same idea in each coordinate. The polynomial argument replaces the
+remainder estimate by an exact positive-basis expansion.
+
+The finite degree ranges have distinct convenient representations of
+this common principle. For $2\leq n\leq40$, the certificate works directly
+with the cardinal polynomials on the physical square. For
+$41\leq n\leq319$, it works with the phase envelope and the reflection
+defect from Section~\ref{sec:argmax}. The analytic argument already
+covers every $n\geq320$. Within the phase range, the analytic far estimate
+is available from degree 192, and the analytic corner descent from
+degree 256. These thresholds determine which existing comparison is
+used on a given region; the final conclusion remains the same strict
+maximum and the same two equality points.
+
+Both finite
+methods use the same principle: interpolate a smooth signed sum with positive
+weights, bound its interpolation error, and only then maximize over signs.
+For any finite real vector $(h_\ell)$ the identity
+\[
+ \sum_\ell|h_\ell|=\max_{\varepsilon_\ell\in\{-1,1\}}
+                         \sum_\ell\varepsilon_\ell h_\ell
+\]
+provides the signed sums. Each is smooth whenever the individual
+kernels or cardinals are smooth. The signs realizing the maximum may
+change inside a leaf; a bound valid for every complete signed sum
+continues to hold across all such changes.
+
+The scalar reason for the displayed identity is that
+$\varepsilon_\ell h_\ell\leq|h_\ell|$ for each index, while equality
+is achieved by choosing $\varepsilon_\ell$ to be the sign of $h_\ell$.
+When $h_\ell=0$, either sign achieves equality. Summing proves both
+inequalities needed for the identity. There are finitely many possible
+sign vectors, so the maximum is attained. The cardinal values at a
+fixed physical point, or the primitive-kernel values at a fixed phase
+point, form precisely such a finite vector.
+
+A useful example is $F(x)=|x|$ on $[-1,1]$. Its signed family consists
+of the two smooth functions $x$ and $-x$, and $F$ is their maximum.
+At the origin the two functions meet and their maximizing roles change.
+The graph has a cusp there, although each member of the family is a
+polynomial. More complicated sums of absolute values can have many
+such changes. A single estimate valid for every member survives the
+maximum, including all crossing points. This is the reason the
+interpolation lemma is stated for a finite maximum of smooth functions.
+
+The full sign vector is fixed while differentiating and interpolating.
+At the end it may be chosen separately at every evaluation point.
+For instance, if $|f_\sigma|\leq M$ and a frequency estimate gives
+$|(f_\sigma)_{aa}|\leq K$ for every fixed $\sigma$, the same $K$
+can be used before taking the maximum. Its size is governed by the
+whole signed sum. This will keep the derivative allowance independent
+of the number of cardinal functions or board points. A separate
+estimate for each component would often lose this useful feature.
+
+There are two kinds of positivity in the next lemma. Bilinear
+interpolation takes a weighted average of four vertex values, with
+nonnegative weights. The tensor Bernstein expansion takes a weighted
+average of coefficient values, again with nonnegative weights. Both
+families of weights sum to one. Consequently upper bounds can replace
+the interpolated values or coefficients without reversing the
+inequality. This order-preserving property is what makes outward
+arithmetic compatible with the continuous proof.
+
+The Bernstein basis mentioned in the lemma consists of the polynomials
+$B_i^n(s)=\binom ni s^i(1-s)^{n-i}$ for $0\leq i\leq n$ and
+$0\leq s\leq1$. A tensor basis in two variables consists of their
+products $B_i^n(s)B_j^n(t)$. The normalized coordinates $s,t$ are the
+affine coordinates carrying the rectangle to $[0,1]^2$. The phrase
+``tensor Bernstein coefficients'' means the coefficients of a polynomial
+in this product basis. The parameters $\omega_a,\omega_b$ in the
+smooth interpolation estimate record the scale of the second derivative
+in each coordinate; for the phase application they will be $\pi$ and
+$\pi k$.
+
+\begin{lemma}[Positive interpolation bounds]\label{cert:positive}
+Let $F(z)=\max_{\sigma}f_\sigma(z)$, where the maximum is finite.
+On a rectangle $R=[a_0,a_1]\times[b_0,b_1]$, suppose
+$|(f_\sigma)_{aa}|\leq M\omega_a^2$ and
+$|(f_\sigma)_{bb}|\leq M\omega_b^2$ for every $\sigma$.
+If $W_z\geq F(z)$ at its vertices, then throughout $R$,
+\begin{equation}\label{cert:peano}
+ F(a,b)\leq I_RW(a,b)+\frac M2\{
+ \omega_a^2(a-a_0)(a_1-a)+\omega_b^2(b-b_0)(b_1-b)\}.
+\end{equation}
+Here $I_R$ is bilinear interpolation. For polynomial cardinals with tensor
+Bernstein coefficients $c_{\ell,ij}$ on $R$, the analogous bound is
+\begin{equation}\label{cert:bernstein}
+ \sum_\ell|L_\ell(z)|\leq
+ \sum_{i,j}\left(\sum_\ell|c_{\ell,ij}|\right)B_i^n(s)B_j^n(t),
+ \qquad (s,t)\in[0,1]^2.
+\end{equation}
+\end{lemma}
+\begin{proof}
+The one-dimensional linear interpolation remainder is an integral against
+a Peano kernel of one sign, whose mass is $(a-a_0)(a_1-a)/2$.
+Let $I_a,I_b$ denote the two linear interpolation operators. The identity
+\[
+ f_\sigma-I_aI_bf_\sigma
+   =(f_\sigma-I_af_\sigma)+I_a(f_\sigma-I_bf_\sigma)
+\]
+separates the two errors. The first is bounded by
+$M\omega_a^2(a-a_0)(a_1-a)/2$; positivity of $I_a$ bounds the second
+by $M\omega_b^2(b-b_0)(b_1-b)/2$. At the four vertices,
+$f_\sigma\leq F\leq W$, so positivity also gives
+$I_aI_bf_\sigma\leq I_RW$. This proves \eqref{cert:peano} for
+every signed sum, with an error independent of $\sigma$, and taking
+their maximum proves the assertion.
+Equation~\eqref{cert:bernstein} follows from the same positivity and
+partition of unity of the Bernstein basis, after the triangle inequality.
+\end{proof}
+
+The one-variable remainder used in the proof can be derived directly
+from the fundamental theorem of calculus. Let $u<v$, $x\in[u,v]$,
+and let $h$ have a continuous second derivative. Write
+\[
+ (Ih)(x)=\frac{v-x}{v-u}h(u)+\frac{x-u}{v-u}h(v).
+\]
+Twice integrating $h''$ from $u$ gives
+\[
+ \begin{aligned}
+ h(x)&=h(u)+(x-u)h'(u)+\int_u^x(x-t)h''(t)\,dt,\\
+ h(v)&=h(u)+(v-u)h'(u)+\int_u^v(v-t)h''(t)\,dt.
+ \end{aligned}
+\]
+Substitute the second identity into $Ih$ and subtract. The constant and
+linear parts cancel. Splitting the integral at $x$ leaves
+\[
+ h(x)-(Ih)(x)=-\int_u^v K_x(t)h''(t)\,dt,
+ \qquad
+ K_x(t)=
+ \begin{cases}
+ \dfrac{(v-x)(t-u)}{v-u},&u\leq t\leq x,\\[4pt]
+ \dfrac{(x-u)(v-t)}{v-u},&x\leq t\leq v.
+ \end{cases}
+\]
+Every factor defining $K_x$ is nonnegative. Its graph consists of two
+line segments meeting at $x$, and the areas of the resulting two
+triangles add to
+\[
+ \int_u^vK_x(t)\,dt=\frac{(x-u)(v-x)}2.
+\]
+Thus $|h''|\leq K$ implies
+$h(x)\leq(Ih)(x)+K(x-u)(v-x)/2$. A convex function has
+$h''\geq0$, in which case the signed remainder itself is nonpositive,
+as expected from the secant-line picture. The upper error estimate
+uses the absolute bound and remains valid for either curvature sign.
+At an endpoint the kernel vanishes and interpolation is exact.
+
+For a concrete check take $h(t)=t^2$ on $[0,1]$. The interpolant is
+$x$, and the error is $x^2-x=-x(1-x)$. The second derivative is two,
+so the integral formula gives exactly that error. For $h(t)=-t^2$
+the sign changes and the upper error allowance is attained. This
+example verifies the sign and the factor $1/2$ in the kernel mass.
+Those same factors enter the two-dimensional certificate.
+
+To see the weights in two dimensions, put
+$s=(a-a_0)/(a_1-a_0)$ and $t=(b-b_0)/(b_1-b_0)$ for a rectangle
+of positive widths. The bilinear interpolant of vertex data is
+\[
+ \begin{aligned}
+ I_RW={}&(1-s)(1-t)W_{00}+s(1-t)W_{10}\\
+        &+(1-s)tW_{01}+stW_{11}.
+ \end{aligned}
+\]
+The four weights are nonnegative, and their sum is
+$((1-s)+s)((1-t)+t)=1$. Hence $I_RW$ lies between the smallest
+and largest vertex datum. Increasing any datum increases or preserves
+the interpolant. The operators $I_a$ and $I_b$ act on separate
+coordinates, and either order gives this same formula.
+
+The error decomposition in the proof has a practical advantage. Its
+first term uses only a second derivative in $a$; its second uses only
+a second derivative in $b$. The positivity of $I_a$ transfers the
+second error estimate from the two $a$ endpoints to every interior
+$a$. In particular the second-coordinate factor
+$(b-b_0)(b_1-b)$ is constant as $I_a$ acts. This produces exactly
+the sum in \eqref{cert:peano}. No mixed derivative estimate is
+required for this argument. Each bound is applied to the smooth
+function $f_\sigma$; the resulting common allowance can then pass
+through the finite maximum defining $F$.
+
+Upper vertex data can have different amounts of slack. Suppose the
+exact vertex values of $F$ are $F_{ij}$ and the certified upper data
+are $W_{ij}=F_{ij}+e_{ij}$, with $e_{ij}\geq0$. Their extra contribution
+to the bilinear interpolant is the weighted average
+\[
+ (1-s)(1-t)e_{00}+s(1-t)e_{10}+(1-s)te_{01}+ste_{11}.
+\]
+It is nonnegative and at most the largest $e_{ij}$. Thus outward
+rounding has a visible and controlled effect on the bound. Subdivision
+can reduce the curvature allowance because its coordinate products
+scale quadratically with the widths. Refining the numerical enclosures
+can reduce the data slack. The successful leaf inequalities certify
+that the final available slack suffices for the desired strict test.
+
+For the polynomial half of the lemma, define the degree-$n$ Bernstein
+basis on $[0,1]$ by
+\[
+ B_i^n(s)=\binom ni s^i(1-s)^{n-i},\qquad 0\leq i\leq n.
+\]
+The endpoint conventions follow from polynomial evaluation, so
+$B_0^n(0)=B_n^n(1)=1$ and all other weights at the corresponding
+endpoint are zero. The binomial theorem proves
+$\sum_iB_i^n(s)=(s+(1-s))^n=1$. Taking products gives the same
+properties on the unit square. If
+$L_\ell=\sum_{i,j}c_{\ell,ij}B_i^n(s)B_j^n(t)$, the triangle
+inequality gives
+\[
+ |L_\ell|\leq\sum_{i,j}|c_{\ell,ij}|B_i^n(s)B_j^n(t).
+\]
+Sum over $\ell$ and interchange finite sums to obtain
+\eqref{cert:bernstein}. Each coefficient absolute sum is an upper
+control value, and the basis supplies the convex weights. The
+coefficients are coordinates in a polynomial basis. Except at a
+vertex, they need not equal values of the polynomial at grid points.
+
+For example, $p(s)=s(1-s)$ has degree-two Bernstein coefficients
+$0,1/2,0$, since $B_1^2(s)=2s(1-s)$. Positivity bounds $p$ by
+$1/2$ on the interval; its actual maximum is $1/4$. The gap simply
+measures how conservative this coefficient bound can be. On smaller
+intervals the converted coefficients give new local bounds. Exact
+subdivision computes those local coefficients while preserving the
+polynomial identity. The certificate uses whichever local bounds
+actually pass its strict comparisons.
+
+\subsection{One polynomial certificate for the small degrees}
+For $2\leq n\leq40$ the direct certificate uses the corrected cardinal
+kernel of Lemma~\ref{lem:cardinal-kernel}. Outward rational enclosures of
+its coefficients are converted to tensor Bernstein form on the square.
+Binary midpoint subdivision uses exact de Casteljau averages. On each leaf
+all coefficient absolute sums in \eqref{cert:bernstein} must be strictly
+less than a validated lower endpoint $L_c\leq\Lambda_c(n)$.
+A leaf containing a designated corner exempts only its vertex coefficient:
+that coefficient is exactly the polynomial value there, with absolute sum
+$\Lambda_c(n)$; every other coefficient sum must be less than $L_c$.
+
+The affine coordinates on a leaf are the $s,t$ used above, each ranging
+from zero to one. Although the Padua interpolation space has a total
+degree restriction, every cardinal also has degree at most $n$ in each
+coordinate. It therefore has a representation in the tensor degree
+$(n,n)$ basis. Some high-degree information is redundant for this
+purpose, which is harmless: the identity being bounded is still the
+exact corrected cardinal polynomial. The tensor basis is convenient
+because positivity and subdivision both act one coordinate at a time.
+
+The lower endpoint $L_c$ deserves careful attention. To prove that an
+ordinary leaf lies strictly below the exact corner value, an upper
+coefficient sum $U_{ij}$ is checked by the rational inequality
+$U_{ij}<L_c$. Since the exact coefficient sum is at most $U_{ij}$ and
+$L_c\leq\Lambda_c(n)$, transitivity gives the desired comparison.
+There is a positive rational margin $L_c-U_{ij}$. A checker can verify
+its sign using integer arithmetic on the numerator after putting the
+two rational numbers over a common positive denominator.
+
+A designated corner leaf uses one additional exact fact: evaluating a
+polynomial at a vertex selects precisely its vertex Bernstein
+coefficient. For the lower-left vertex, for example, $s=t=0$, so all
+tensor basis terms vanish except $B_0^n(0)B_0^n(0)=1$. Thus the true
+coefficient $c_{\ell,00}$ equals $L_\ell$ at that corner. Its absolute
+sum equals the exact number $C=\Lambda_c(n)$. This equality is retained
+symbolically. Outward intervals used for the remaining coefficients
+supply their upper bounds. The equality at the exceptional vertex and
+the strict bounds at all the others have different roles in the same
+positive weighted sum.
+Write $C=\Lambda_c(n)$, let $w_*$ be the exceptional
+vertex weight, and let $D_R$ be the largest validated coefficient sum
+among the other indices. The corner predicate gives $D_R<L_c\leq C$,
+so the upper bound on this leaf is
+\[
+ Cw_*+D_R(1-w_*)=C-(C-D_R)(1-w_*).
+\]
+Here $w_*$ is a product of endpoint Bernstein weights, and $w_*<1$
+at every point other than the designated vertex. This proves the
+required strict comparison however close the point is to that vertex.
+At the vertex itself the cardinal formula supplies the exact value $C$.
+
+For clarity, if the designated vertex is the lower-left one then
+$w_*=(1-s)^n(1-t)^n$. For $n\geq1$, both factors lie in $[0,1]$.
+Their product is one exactly when $s=t=0$. For any other point at
+least one factor is strictly smaller than one, so $1-w_*>0$. At
+another vertex, the factors are replaced by the appropriate choices
+$s^n,(1-s)^n,t^n,(1-t)^n$, with the identical conclusion. This
+argument includes every point on an edge of the rectangle.
+
+A toy coefficient pattern illustrates the strictness. Suppose a
+positive-basis upper sum has exceptional value $C=2$ at the lower-left
+vertex and every other coefficient sum is at most $D_R=3/2$. The bound
+is $2-(1-w_*)/2$. At each point other than the lower-left vertex it
+is strictly below two, even when that point is extremely close to the
+vertex. The margin tends continuously to zero as the point approaches
+the vertex. The actual certificate supplies its own degree-dependent
+values $C,D_R$; the logical use of the margin is exactly the same.
+
+This explains how a finite inequality can establish strictness on a
+punctured neighborhood. One finite positive coefficient gap
+$C-D_R$ is multiplied by the explicit positive function $1-w_*$.
+A single uniform positive gap on the punctured leaf is unnecessary.
+The weight records the precise way in which the upper bound can meet
+the corner value. It thereby resolves the equality set as well as
+proving a maximum bound.
+On an ordinary leaf the largest validated coefficient sum is already
+strictly less than $L_c$, giving the comparison everywhere on the leaf.
+
+The partition is specified by a rooted binary tree: every internal node
+splits its closed rectangle at the midpoint of one coordinate, and both
+children must be present. Starting with $[-1,1]^2$, this reconstructs a
+cover of the entire square. Shared edges belong to both adjacent leaves;
+the same inequalities hold there. The designated corner vertices are
+exactly the two nonnode corners in Theorem~\ref{thm:main-location}.
+Their node-preserving reflection gives their common value $C$.
+Thus the leaf predicates prove both the maximum and its exact equality
+set on the full square.
+
+The coverage statement can be checked by induction on the finite tree.
+A node represents a closed rectangle $[u,v]\times[w,z]$. Splitting
+its first coordinate at $m=(u+v)/2$ replaces it by
+$[u,m]\times[w,z]$ and $[m,v]\times[w,z]$. Their union is the
+parent, and they meet on the common vertical segment. A split in the
+second coordinate has the analogous property. At a terminal node the
+union of descendant leaves is just that node. Working upward through
+the tree shows that the union of all leaves is the root square.
+Every step is an exact equality of closed sets.
+
+The checker therefore needs the tree structure together with the local
+inequalities. Each internal node has both children, and the paths to
+leaves form a complete collection with no pending region. Omitting a
+child would invalidate the inductive union statement. For a complete
+tree the number and shape of the leaves may vary substantially across
+degrees while the coverage proof stays identical. A search can choose
+where more subdivision is useful; the checker reconstructs the
+specified final tree and verifies each resulting leaf.
+
+Now fix an arbitrary physical point $z$. Coverage provides at least
+one leaf containing $z$. An ordinary leaf gives
+$\lambda_n(z)<C$. A corner leaf gives the same inequality unless
+$z$ is its designated vertex. If $z$ is a designated vertex, the
+cardinal formula supplies $\lambda_n(z)=C$. Shared boundaries cause
+no difficulty: every applicable leaf bound is valid at the common
+point, and any one strict bound suffices. Since the designated
+vertices are the two nonnode corners, this argument proves precisely
+the equality classification in Theorem~\ref{thm:main-location}.
+
+All coefficient enclosures are reconstructed by the checker. The identities
+\[
+ T_{r+1}(x)=2xT_r(x)-T_{r-1}(x),\qquad
+ s^r=\sum_{i=r}^n\frac{\binom{i}{r}}{\binom nr}B_i^n(s)
+\]
+reduce construction and basis conversion to exact integer and rational
+operations once the cosine arguments are bracketed.
+The power-to-Bernstein identity can also be checked without solving a
+linear system. For $i\geq r$ the elementary binomial identity
+$\binom ni\binom ir=\binom nr\binom{n-r}{i-r}$ gives
+\[
+ \begin{aligned}
+ \sum_{i=r}^n\frac{\binom ir}{\binom nr}B_i^n(s)
+ &=s^r\sum_{i=r}^n\binom{n-r}{i-r}
+                      s^{i-r}(1-s)^{n-i}\\
+ &=s^r\bigl(s+(1-s)\bigr)^{n-r}=s^r.
+ \end{aligned}
+\]
+The change from a physical coordinate $x$ to $x=u+(v-u)s$ is an
+ordinary binomial expansion with rational coefficients whenever the
+leaf endpoints are rational. Each power $s^r$ is then converted by
+this identity. Applying the conversion in both coordinates constructs
+the tensor coefficients. All conversion weights are exact rational
+numbers, so interval input coefficients can be propagated outwards.
+
+Here is the midpoint subdivision behind the reference to de Casteljau.
+For a one-variable degree-$n$ polynomial with Bernstein coefficients
+$d_0,\ldots,d_n$, define a triangular array by
+\[
+ d_i^{(0)}=d_i,\qquad
+ d_i^{(r)}=\frac{d_i^{(r-1)}+d_{i+1}^{(r-1)}}2,
+ \quad 1\leq r\leq n,\quad 0\leq i\leq n-r.
+\]
+The left half of the original interval has Bernstein coefficients
+$d_0^{(0)},d_0^{(1)},\ldots,d_0^{(n)}$; the right half has
+$d_0^{(n)},d_1^{(n-1)},\ldots,d_n^{(0)}$. The two lists share the
+value at the midpoint. This follows by repeatedly combining adjacent
+terms in the Bernstein expansion using the binomial recurrence.
+For instance the left coefficient in position $j$ is
+\[
+ d_0^{(j)}=2^{-j}\sum_{i=0}^j\binom ji d_i.
+\]
+Precisely, $p(s/2)=\sum_{j=0}^n d_0^{(j)}B_j^n(s)$ on
+$0\leq s\leq1$; expanding the right-hand side verifies the identity.
+The right list
+follows by the same calculation after reversing the coordinate.
+Thus the averaging array is an exact change of representation on the
+two child intervals.
+
+For degree two, the left coefficients are
+$d_0,(d_0+d_1)/2,(d_0+2d_1+d_2)/4$, and the right coefficients are
+$(d_0+2d_1+d_2)/4,(d_1+d_2)/2,d_2$. Every operation is an average.
+Tensor subdivision applies these arrays to coefficient rows or columns,
+according to the coordinate being split. A two-dimensional midpoint
+tree is therefore handled by repeated one-dimensional exact identities.
+The cardinal polynomial remains the same on the union of the children.
+
+If exact coefficients are represented by intervals on an integer scale
+$D$, an average of $[a/D,b/D]$ and $[c/D,e/D]$ is enclosed by
+\[
+ \left[\frac{\lfloor(a+c)/2\rfloor}{D},
+       \frac{\lceil(b+e)/2\rceil}{D}\right].
+\]
+The lower endpoint rounds down and the upper endpoint rounds up. The
+integer scale may stay fixed, while the interval continues to contain
+the exact rational average. Induction over the averaging array and
+then over tree depth proves enclosure of every child coefficient.
+The identity is exact at the level of real polynomials; the stored
+interval representation preserves it by containment.
+ Alternating arctangent
+series in Machin's identity bracket $\pi$; alternating cosine series and
+the Chebyshev recurrence bracket the grid values. Integer operations round
+outwards at every interval step. The checker reconstructs the whole
+partition and its coefficients. Successful certificates are finite witnesses.
+The accompanying execution record identifies which degrees were newly rerun
+through the common implementation.
+
+The transcendental constants enter only through enclosures of the
+specified exact coefficients. For example, the alternating expansion
+of $\arctan x$ at $x=1/5$ or $x=1/239$ brackets the value between
+successive appropriate partial sums, with the first omitted term
+controlling the error. Machin's identity combines these rational
+brackets into a rational bracket for $\pi$. Alternating cosine
+expansions then bracket the required basic cosines, and the Chebyshev
+recurrence propagates the grid values. The exact endpoint values
+$1,-1$, and applicable zero values can be retained as identities.
+The corrected cardinal formula expresses the polynomial coefficients
+using finite sums and products of these quantities.
+
+For an interval $[a,b]$, an absolute-value upper enclosure is
+$\max(|a|,|b|)$. A lower enclosure is zero when the interval contains
+zero, and otherwise $\min(|a|,|b|)$. These elementary rules justify the
+coefficient absolute sums and a lower enclosure of the common corner
+value, even when some cardinal signs are unresolved. Interval products
+use the minimum and maximum of the four endpoint products, and each
+subsequent rounding preserves containment. Because every cardinal and
+every basis transform uses finitely many operations, induction over
+those operations proves the required coefficient enclosures.
+
+This gives two finite inductions behind the small-degree proof. The
+arithmetic induction establishes that the stored intervals contain the
+exact polynomial coefficients on each leaf. The geometric induction
+establishes that the leaves cover the square. Positive-basis inequalities
+then turn these finite facts into the continuous conclusion. The
+execution inventory records the actual successful degree instances of
+this common scheme. In particular, the fresh independent checks at
+$2\leq n\leq16$ and the reused accepted instances at
+$17\leq n\leq40$ have their stated individual provenance in that
+inventory.
+
+The degree-one case is explicit. Its nodes
+are $(1,1),(1,-1),(-1,0)$, with cardinals
+$(1+x+2y)/4$, $(1+x-2y)/4$, and $(1-x)/2$. Hence
+\[
+ \lambda_1(x,y)=\max\{1,|y|+(1-x)/2\},
+\]
+whose maximum is two, attained only at $(-1,\pm1)$.
+
+Indeed the first two cardinals have sum $(1+x)/2$ and difference $y$.
+For real numbers $a,b$, $|a+b|+|a-b|=2\max(|a|,|b|)$, so their
+absolute sum is $\max((1+x)/2,|y|)$. The third cardinal is
+nonnegative on the square. Adding it gives the displayed expression.
+Here $|y|\leq1$ and $(1-x)/2\leq1$. Their sum can reach two
+exactly when both inequalities are equalities, namely $x=-1$ and
+$|y|=1$. This verifies the separate degree-one case by a direct affine
+computation.
+
+\subsection{The phase certificate}
+For $41\leq n\leq319$ the common envelope is enclosed on
+$\mathcal T=\{(a,b):a,b\geq0,\ a+b\leq1\}$, with phases
+$(\alpha,\beta)=(\pi a,\pi b)$ and $k=n/(n+1)$.
+
+The variables $a,b$ are dimensionless phase coordinates. Thus an
+increment $\Delta a$ means an increment $\pi\Delta a$ in the radian
+phase $\alpha$, and the analogous convention holds for $b,\beta$.
+They are distinct from the physical coordinates $x,y$ of the square.
+The closed triangle $\mathcal T$ is a fundamental region for the
+phase envelope under its folding symmetries. The earlier closed odd
+charts connect every physical point to one of these phase points and
+a physical chart center. At a noncorner center the reflection defect
+will improve the envelope comparison. At an actual nonnode corner a
+separate descent witness will supply strictness near its origin.
+
+The envelope $S_n$ is a finite absolute sum of primitive kernels.
+Its definition retains every corrected kernel term and endpoint
+weight. In particular a coincidence of phase arguments is evaluated
+through the finite kernel itself. This makes the envelope continuous
+on the entire closed triangle, including axes and chart seams. The
+rectangle interpolation bound is applied to its smooth signed family,
+which is now written explicitly.
+In the notation of \eqref{ul:primitive}, put
+\[
+ f_\varepsilon(a,b)=\frac1{2\mathsf N}
+       \sum_{\Gamma^-}\varepsilon_{rs}H_{rs}(\pi a,\pi b).
+\]
+Then $S_n(\pi a,\pi b)=\max_\varepsilon f_\varepsilon(a,b)$,
+and $|f_\varepsilon|\leq S_n$. Every signed board sum has frequencies
+at most $\pi,\pi k$ in these coordinates. A global norm $M$
+and upper bounds at the vertices therefore give
+\begin{align}\label{cert:phase-bound}
+ S_n(\pi a,\pi b)&\leq q_R(a,b),\\
+ q_R&=I_RW+\frac{M\pi^2}{2}
+ \{(a-a_0)(a_1-a)+k^2(b-b_0)(b_1-b)\},\notag\\
+ \max_Rq_R&\leq V_R+\theta_RM,
+ \quad V_R=\max_zW_z,\quad
+ \theta_R=\frac{\pi^2}{8}\{(a_1-a_0)^2+k^2(b_1-b_0)^2\}.\notag
+\end{align}
+
+Here a frequency bound describes how fast an oscillating term can
+vary. The largest absolute frequency in one coordinate is called the
+bandwidth in that coordinate. A term $e^{i\xi a}$ has first derivative $i\xi e^{i\xi a}$
+and second derivative $-\xi^2e^{i\xi a}$. A uniform frequency bound
+can therefore turn a global uniform norm into a derivative norm.
+For the present finite trigonometric polynomials this is the
+trigonometric Bernstein inequality. The word Bernstein here refers
+to the derivative inequality; the positive polynomial basis used in
+\eqref{cert:bernstein} is a separate object with the same historical
+name. Both ingredients have elementary finite formulations.
+
+One can see the frequency scaling directly from a typical factor in
+the kernel. The term
+$\cos(r(j\pi+\alpha)/n)$ has $\alpha$ frequencies $\pm r/n$.
+Since $r\leq n$, these have magnitude at most one. Replacing
+$\alpha$ by $\pi a$ multiplies the bound by $\pi$. In the other
+coordinate a factor with index $s\leq n$ has $\beta$ frequencies
+$\pm s/(n+1)$, of magnitude at most $k$. Replacing $\beta$ by
+$\pi b$ gives the bound $\pi k$. Finite sums, shifts by board
+indices, and fixed signs all preserve these frequency limits.
+
+For completeness, the norm form of the derivative inequality can be
+obtained from a finite differentiation identity. Let $T$ be a
+trigonometric polynomial of integer degree at most $d\geq1$, meaning
+a finite sum $T(x)=\sum_{p=-d}^d a_p e^{ipx}$. Write
+$\|T\|_\infty=\sup_{x\in\mathbb R}|T(x)|$ for its global uniform
+norm, and set
+\[
+ \tau_j=\frac{(2j-1)\pi}{2d},\qquad
+ c_j=\frac{(-1)^{j-1}}{4d\sin^2(\tau_j/2)},
+ \qquad 1\leq j\leq2d.
+\]
+The identity and its coefficient sum are
+\[
+ T'(x)=\sum_{j=1}^{2d}c_jT(x+\tau_j),\qquad
+ \sum_{j=1}^{2d}|c_j|=d.
+\]
+These statements concern finite sums. To verify the first, test each
+basis function $e^{ipx}$, $-d\leq p\leq d$. Finite Fourier
+orthogonality on the $2d$ half-shifted roots gives the multiplier
+$ip$ for $-d+1\leq p\leq d$ from
+\[
+ c_j=\frac1{2d}\sum_{\ell=-d+1}^d
+                  i\ell e^{-i\ell\tau_j}.
+\]
+The orthogonality here is the elementary finite geometric-sum identity
+\[
+ \frac1{2d}\sum_{j=1}^{2d}e^{i(p-\ell)\tau_j}
+   =\begin{cases}1,&p=\ell,\\0,&p\ne\ell,\end{cases}
+ \qquad -d+1\leq p,\ell\leq d.
+\]
+For unequal indices their difference has magnitude less than $2d$,
+and the geometric sum has ratio different from one but numerator
+zero. For equal indices every summand is one. Substituting the
+formula for $c_j$ in $\sum_j c_j e^{ip\tau_j}$ therefore gives
+$ip$ throughout the stated range.
+Differentiating the finite geometric sum before substituting
+$e^{-2di\tau_j}=-1$ gives, for $z=e^{-i\tau_j}$,
+\[
+ \sum_{\ell=-d+1}^d\ell z^\ell
+           =\frac{2z^{1-d}}{(1-z)^2},\qquad z^{2d}=-1.
+\]
+Substitution in the preceding formula for $c_j$, together with
+$e^{id\tau_j}=i(-1)^{j-1}$, evaluates it as the displayed real
+coefficient $c_j$. The remaining endpoint frequency $p=-d$ follows
+from $e^{-id\tau_j}=-e^{id\tau_j}$, so it has multiplier $-id$.
+This checks every basis frequency and hence every $T$ by linearity.
+
+For the absolute coefficient sum, the finite product for the equally
+spaced sine zeros yields, after logarithmic differentiation twice,
+\[
+ \sum_{j=0}^{p-1}\csc^2\left(x+\frac{j\pi}{p}\right)
+       =p^2\csc^2(px).
+\]
+Indeed the product of these $p$ sine factors is a nonzero constant
+multiple of $\sin(px)$; the two logarithmic derivatives remove the
+constant. With $p=2d$ and $x=\pi/(4d)$, the sum is $4d^2$.
+Dividing by $4d$ gives $\sum_j|c_j|=d$ as asserted. Taking
+absolute values in the differentiation identity proves
+$\|T'\|_\infty\leq d\|T\|_\infty$. Apply it again to $T'$
+to obtain $\|T''\|_\infty\leq d^2\|T\|_\infty$.
+If the argument is rescaled so the highest frequency is $\omega$,
+the same chain rule gives $\omega^2$ in the second derivative bound.
+All norms in this calculation extend over the full real argument.
+
+Apply this one-variable calculation with the other coordinate held
+fixed. Each complete signed board sum obeys
+$|f_\varepsilon|\leq S_n\leq M$ on all real phases once a global
+norm $M$ is supplied. Its frequency limits therefore give the two
+second-derivative bounds used in Lemma~\ref{cert:positive}. The
+constant $M$ bounds a whole signed sum at once. Since the conclusion
+is uniform in the sign vector, taking the maximum gives the envelope
+bound in \eqref{cert:phase-bound}.
+
+Trigonometric Bernstein inequalities supply
+$|(f_\varepsilon)_{aa}|\leq\pi^2M$ and
+$|(f_\varepsilon)_{bb}|\leq\pi^2k^2M$ from the global norm.
+The final line of \eqref{cert:phase-bound} uses positivity of the
+bilinear weights and the elementary bound
+$(a-a_0)(a_1-a)\leq(a_1-a_0)^2/4$, and similarly for $b$.
+Thus $V_R+\theta_RM$ is a simple certified upper for the whole leaf.
+
+The function $q_R$ in that display is a concrete quadratic polynomial
+in $a,b$. It keeps the four interpolated vertex upper bounds and adds
+two nonnegative curvature allowances. Each allowance vanishes on the
+two corresponding sides of the rectangle and is largest halfway
+between them. Taking $V_R$ and the maximum of each coordinate product
+produces the simpler constant upper bound on the final line. This
+constant can be conservative, but it applies throughout the full
+rectangle and consequently throughout any closed portion of the
+rectangle lying in $\mathcal T$.
+
+The geometry of a leaf and the validity of interpolation are distinct
+points. A rectangle can cross the hypotenuse $a+b=1$. Its four
+vertices are still legitimate phase evaluation points, because the
+signed functions and their global norm are defined on the whole
+real phase plane. Interpolating on the entire rectangle is therefore
+valid before restricting the result to its triangle intersection.
+The established symmetries can fold an outside vertex to a canonical
+phase point for evaluation. The widths in $\theta_R$ remain the
+widths of the original rectangle.
+The complete midpoint tree covers the triangle; a rectangle
+is discarded only if its lower-left coordinate sum exceeds one.
+Tangencies and shared boundaries remain in the cover.
+
+For a rectangle $R=[a_0,a_1]\times[b_0,b_1]$ inside $[0,1]^2$,
+the minimum of $a+b$ is $a_0+b_0$. Its triangle intersection is
+empty precisely when $a_0+b_0>1$. If equality holds, the lower-left
+vertex lies on the hypotenuse and must be retained. The root square
+contains $\mathcal T$, and every midpoint split preserves the closed
+union of its two children. Intersecting these union identities with
+$\mathcal T$ proves that all retained leaves cover the entire closed
+triangle. This is the same finite geometric induction as for the
+physical-square certificate.
+
+The word \emph{global} in the norm premise is essential to the
+preceding derivative argument. A bound at the four vertices of one
+leaf controls the interpolation data on that leaf. The derivative
+estimate also involves translated arguments in its finite
+differentiation identity, so it uses a bound valid at all real
+phases. The next absorption argument obtains such a norm from finite
+data. Its starting point is the existence of the true continuous
+supremum, a fact that precedes any numerical estimate.
+
+The norm premise is itself certified. Let $M_*$ be the global real-phase
+supremum of $S_n$. The folding symmetries established in
+Section~\ref{sec:argmax} reduce this supremum to $\mathcal T$.
+Compactness supplies a maximizing point, and every signed sum has
+absolute value at most $M_*$.
+The finiteness follows from elementary continuity and compactness:
+$S_n$ is a finite sum of absolute values of trigonometric polynomials,
+so it is continuous, and its folding symmetries move every real phase
+pair into the compact triangle. Its supremum is therefore the maximum
+of a continuous function on that triangle. This establishes a finite
+number $M_*$, even while its value is unknown. The inequality
+$|f_\varepsilon|\leq S_n\leq M_*$ follows directly from the signed
+sum definition and holds before any leaf test is performed.
+Consequently the derivative argument is
+valid initially with this true, possibly unknown, norm. If all leaves
+are numerical and $\theta_R<1$, a leaf containing that point gives
+$M_*\leq V_R+\theta_RM_*$. Absorbing its last term and then taking
+the largest possible leaf ratio yields
+\begin{equation}\label{cert:tree-norm}
+ M_*\leq\max_R\frac{V_R}{1-\theta_R}.
+\end{equation}
+
+The logic can be unpacked at a single maximizing point $z_*$. Choose
+a leaf $R_*$ containing it. The interpolation estimate, applied with
+the mathematically existing norm $M_*$, gives
+\[
+ M_*=S_n(z_*)\leq V_{R_*}+\theta_{R_*}M_*.
+\]
+When $\theta_{R_*}<1$, subtracting the last term and dividing by the
+positive number $1-\theta_{R_*}$ gives
+$M_*\leq V_{R_*}/(1-\theta_{R_*})$. Since the location of $z_*$
+is unknown, the certificate takes the largest of these ratios over
+all triangle-meeting leaves. All the ratios use finite vertex data
+and known widths. Their maximum is consequently a numerical upper
+bound for the true global norm.
+
+For an illustrative absorption inequality, suppose a leaf containing
+a maximizer gave $V_R=7$ and $\theta_R=1/8$. Then
+$M_*\leq7+M_*/8$ implies $M_*\leq8$. The same algebra works for
+arbitrary validated vertex values with $\theta_R<1$. This example
+only illustrates the rearrangement; the retained certificates have
+their own recorded inputs. A numerical upper $M$ can be rounded
+upward from the largest leaf ratio and then used as an already
+established constant in subsequent local tests.
+
+The maximum over leaves also explains why all triangle-meeting leaves
+must provide their numerical vertex premises in this construction.
+Any one of them might contain $z_*$. A missing local premise would
+leave open the corresponding possibility for the maximizing point.
+An analytic comparison on a far region has a different form and a
+different dependency, so the retained hybrid construction uses the
+independent grid norm when such a region is represented analytically.
+Alternatively the quarter-grid points
+$E=\{(i/4,j/4):i,j\geq0,\ i+j\leq4\}$ and their upper maximum $V_E$
+give
+\begin{equation}\label{cert:grid-norm}
+ M_*\leq\frac{V_E}{1-\pi^2/64}<\frac{784}{663}V_E.
+\end{equation}
+Indeed the ten quarter-squares cover $\mathcal T$; outside vertices fold
+back to $E$ by $(a,b)\mapsto(1-a,1-b)$, a phase symmetry.
+Each square has side $1/4$, so its Peano error is at most
+$\pi^2(1+k^2)M_*/128\leq\pi^2M_*/64$. Hence
+$M_*\leq V_E+\pi^2M_*/64$, proving \eqref{cert:grid-norm}; the
+rational factor follows from $\pi<22/7$.
+The quarter-grid construction can be visualized as four rows of
+squares: four in the bottom row, then three, then two, then one.
+In formulas the ten rectangles are
+\[
+ \left[\frac i4,\frac{i+1}4\right]
+ \times\left[\frac j4,\frac{j+1}4\right],
+ \qquad i,j\geq0,\quad i+j\leq3.
+\]
+Their closed intersections with $\mathcal T$ cover it. For a point
+$(a,b)\in\mathcal T$, choose the interval immediately below a grid
+endpoint whenever a coordinate is an endpoint, with the first interval
+used for zero. The resulting indices are between zero and three and
+have sum at most three. Thus the point belongs to one of the listed
+rectangles, including on the hypotenuse and at grid vertices.
+
+Every vertex inside the triangle belongs to $E$. An outside vertex
+of one of these rectangles has coordinate sum $5/4$. The map
+$(a,b)\mapsto(1-a,1-b)$ sends it to a quarter-grid point of sum
+$3/4$, hence to $E$, and preserves the envelope by the established
+phase symmetry. Thus the same finite upper maximum $V_E$ bounds all
+four vertices of every quarter-square, including the outside ones.
+There are fifteen points in the geometric set $E$; exact phase
+symmetries can identify equivalent evaluation arguments in the
+retained arithmetic representation.
+
+With a side width $1/4$, the coordinate product bound is $1/64$.
+Multiplying by $M_*\pi^2/2$ and adding the $k^2$ contribution
+produces $M_*\pi^2(1+k^2)/128$. Since $0<k<1$, this is at most
+$M_*\pi^2/64$. At a maximizing point the resulting inequality is
+\[
+ \left(1-\frac{\pi^2}{64}\right)M_*\leq V_E.
+\]
+The coefficient on the left is positive. Finally
+$\pi^2/64<(22/7)^2/64=121/784$, so its reciprocal is smaller
+than $784/663$. This proves the safe rational norm factor used in
+\eqref{cert:grid-norm}. The finite grid provides the vertex data;
+the interpolation allowance provides the continuum control between
+those vertices.
+Either construction gives a
+validated $M\geq M_*$ to insert in every subsequent leaf test.
+For \eqref{cert:tree-norm}, every leaf meeting the triangle must
+supply its numerical vertex bounds. A tree using an analytic far leaf
+uses the independent grid norm \eqref{cert:grid-norm}.
+
+The two norm constructions thus have explicit sufficient hypotheses.
+The tree construction uses a complete numerical cover with
+$\theta_R<1$ on every triangle-meeting leaf. The grid construction
+uses the fixed quarter-grid values and their proved folding
+identities. Both start from the same existing true supremum, and
+both yield a global upper suitable for the derivative inequalities.
+The checker can select an allowed construction and reconstruct its
+bound. Its later leaf tests then use that certified $M$ and the
+validated corner lower endpoint $L_c$ as separate premises.
+
+On a leaf the certified upper for $q_R$ must be below $L_c$ on its far
+part. On its actual near part $\rho\leq1/2$, at a noncorner center,
+the required inequality is $q_R-\delta_R<L_c$, with the appropriate
+proved reflection floor $\delta_R$. The floor's radius is
+$\min\{1/2,\pi(a_1+b_1)\}$; it is used only where its physical guard
+holds. To make the guard explicit, write $p_-\leq\pi\leq p_+$ for the
+positive rational bracket. Since $\rho=\pi(a+b)$ on $\mathcal T$,
+closed rational proxies for the two parts are
+\[
+ R\cap\mathcal T\cap\{a+b\leq1/(2p_-)\},\qquad
+ R\cap\mathcal T\cap\{a+b\geq1/(2p_+)\}.
+\]
+The first contains every actual near point, and the second every actual
+far point.
+Here ``proxy'' means a rationally described enclosing set on which a
+sufficient comparison is checked. The exact physical division is
+$\pi(a+b)\leq1/2$ versus $\pi(a+b)\geq1/2$. If an actual point
+is near, then $p_-(a+b)\leq\pi(a+b)\leq1/2$, proving membership
+in the first proxy. If it is far, then
+$p_+(a+b)\geq\pi(a+b)\geq1/2$, proving membership in the second.
+The containments follow because $a+b\geq0$ and the rational bracket
+is positive. These two elementary multiplications determine the
+direction of each proxy inequality.
+
+Since $p_-\leq p_+$, one has
+$1/(2p_+)\leq1/(2p_-)$. The two proxies therefore overlap in a
+closed strip containing the actual seam. A point in this strip may
+cause both sufficient comparisons to be required. The width of the
+strip expresses the uncertainty in the bracket for $\pi$. Its
+inclusion makes the arithmetic classification valid throughout the
+closed domains, including every boundary point.
+Their overlap retains the seam $\rho=1/2$. Requiring the
+appropriate strict comparison on each nonempty proxy is sufficient;
+the defect floor is invoked in the physical implication only at actual
+near points. Its certified radius can be evaluated outwards as
+$r_R=\min\{1/2,p_+(a_1+b_1)\}$ and substituted in
+\eqref{ul:finite-floors}.
+To verify this radius choice, take an actual near point in $R$.
+Its physical radius obeys both $\rho\leq1/2$ and
+$\rho=\pi(a+b)\leq p_+(a_1+b_1)$. It is therefore at most their
+minimum $r_R$. The proved reflection-floor formula at that radius
+bounds the defect for every eligible noncorner center and every
+actual point with radius at most $r_R$. The floor has a physical
+domain hypothesis, so its use in the final implication is tied to
+the actual near case. The enclosing near proxy provides an
+arithmetically convenient sufficient test for that case.
+
+The separation between these sets is useful when reading the
+certificate. The checker may establish an upper bound for $q_R$ on
+the whole rectangle and use that stronger bound on its near and far
+proxies. This is the simple constant $V_R+\theta_RM$ already proved
+in \eqref{cert:phase-bound}. A rectangle is wholly near if an outward
+upper on its phase radius is at most $1/2$; this too is a rational
+inequality using $p_+$. Whichever admissible predicate is recorded,
+the logical application at a physical point follows its actual
+radius and its actual center.
+
+The strict comparisons use rational enclosures throughout. For
+example, $\pi^2$ in $\theta_R$ can be replaced by $p_+^2$,
+increasing the curvature allowance. The factor $k=n/(n+1)$ and all
+midpoint widths are rational. If $V_R,M,L_c$ are rational enclosures,
+then the resulting upper bound and its difference from $L_c$ are
+rational. The two proxy thresholds are rational as well. Thus deciding
+which closed tests are required and checking their positive margins
+can be done with integer numerators and positive denominators.
+Every noncorner odd center has an eligible
+projection, so \eqref{ul:defect} gives there
+\[
+ \lambda_n=S_n-\Delta_{JK}\leq q_R-\delta_n(r_R)<L_c
+                                                   \leq\Lambda_c(n).
+\]
+On the actual far part $\lambda_n\leq S_n\leq q_R<L_c$.
+Actual corners are covered by a direct descent witness.
+
+The eligible projection used here is the one supplied by the earlier
+reflection argument for a noncorner odd center. Its existence ensures
+that the defect floor is available for every noncorner center in the
+near case. The envelope bound, the projection floor and the identity
+$\lambda_n=S_n-\Delta_{JK}$ then form the displayed chain of
+inequalities. At far points the envelope upper bound by itself gives
+the strict comparison. Both comparisons end below $L_c$, which is at
+most the exact corner value. The direct corner descent addresses the
+remaining near points whose chart center is an actual maximizing
+corner.
+
+The corner witness has a different geometric aim from a leaf with a
+uniform strict margin. At an actual corner the function equals the
+proposed maximum, and nearby values approach it. A useful witness
+therefore proves that the loss is bounded below by a positive multiple
+of $A^2+B^2$ in inward radian phases $A,B$. That function vanishes
+exactly at the origin. Three actual function values, together with
+the exact value at the origin and the derivative allowance, suffice
+for this conclusion through squared-variable interpolation.
+
+Here is the reason for the squared coordinates. For a complete signed
+cardinal sum put
+\[
+ p_\varepsilon(A,B)=\sum_\ell\varepsilon_\ell
+ L_\ell\bigl(-\cos(A/n),-\cos(B/(n+1))\bigr).
+\]
+Each such function is even separately in $A$ and $B$, because both
+physical coordinates are cosine functions. In particular its first
+and third derivatives in either inward phase vanish at zero. It is
+also a finite trigonometric polynomial of bandwidth at most $1$ in
+$A$ and $k$ in $B$. All real inward phases give physical coordinates
+in the square, so
+\[
+ |p_\varepsilon(A,B)|\leq
+ \lambda_n\bigl(-\cos(A/n),-\cos(B/(n+1))\bigr)\leq M
+\]
+holds globally. The last bound follows from the already certified
+envelope norm and the chart inequality $\lambda_n\leq S_n$.
+The trigonometric derivative estimate therefore applies through
+fourth order to every fixed signed sum.
+
+Set $u=A^2/2$, $v=B^2/2$, and write
+$h_\varepsilon(u,v)=p_\varepsilon(\sqrt{2u},\sqrt{2v})$.
+The even power series in each phase gives a smooth function of
+$u,v$ up to the closed axes. For $A>0$, differentiation gives
+\[
+ (h_\varepsilon)_{uu}
+       =\frac{A(p_\varepsilon)_{AA}-(p_\varepsilon)_A}{A^3}.
+\]
+To bound this expression at small $A$, integrate the numerator rather
+than estimating its two terms separately. If
+$N(A)=A(p_\varepsilon)_{AA}-(p_\varepsilon)_A$, then
+$N'(A)=A(p_\varepsilon)_{AAA}$ and $N(0)=0$.
+Evenness also gives $(p_\varepsilon)_{AAA}(0,B)=0$, so
+\[
+ \begin{aligned}
+ (h_\varepsilon)_{uu}(u,v)
+ &=\frac1{A^3}\int_0^A t\int_0^t
+                    (p_\varepsilon)_{AAAA}(s,B)\,ds\,dt\\
+ &=\int_0^1\!\int_0^1 t^2
+          (p_\varepsilon)_{AAAA}(rtA,B)\,dr\,dt.
+ \end{aligned}
+\]
+The last kernel is nonnegative and has total mass $1/3$. The fourth
+derivative bound is $M$ in $A$ and $k^4M$ in $B$. Consequently
+\[
+ |(h_\varepsilon)_{uu}|\leq M/3,\qquad
+ |(h_\varepsilon)_{vv}|\leq k^4M/3.
+\]
+The integral expression has a continuous value at $A=0$, namely
+$(p_\varepsilon)_{AAAA}(0,B)/3$, so the first estimate includes
+the axis. The second includes its axis by the same reasoning. This
+explicit extension explains why squared interpolation is valid at
+the origin as well as in the interior.
+
+Apply Lemma~\ref{cert:positive} to these signed functions on a squared
+rectangle $[0,U]\times[0,V]$. Its curvature allowance is
+\[
+ \frac M6\{u(U-u)+k^4v(V-v)\}.
+\]
+Suppose the vertex upper data have losses at least $cU,cV,c(U+V)$
+from the exact corner value $C$ at the other three vertices. Their
+bilinear interpolant is at most $C-c(u+v)$, because this affine
+function has exactly those four comparison values. Since
+$u(U-u)\leq Uu$ and $v(V-v)\leq Vv$ on the closed rectangle,
+\[
+ \frac M6\{u(U-u)+k^4v(V-v)\}
+ \leq\frac M6\max\{U,k^4V\}(u+v).
+\]
+Combining these inequalities and using $u+v=(A^2+B^2)/2$ gives
+\eqref{ul:squared-peano}. The common estimates hold for every
+$p_\varepsilon$, and taking their finite maximum gives the actual
+Lebesgue function. This derives the corner comparison from positive
+interpolation while keeping all cardinal sign changes included.
+
+The local descent uses \eqref{ul:squared-peano}. Take
+$U=\pi^2/32$, $V=9\pi^2/512$, and outward actual-function values
+$W_x,W_y,W_{xy}$ at $(\sqrt{2U},0),(0,\sqrt{2V}),
+(\sqrt{2U},\sqrt{2V})$. With $u'=U/\pi^2$, $v'=V/\pi^2$, set
+\[
+ q=\min\left\{\frac{L_c-W_x}{u'},\frac{L_c-W_y}{v'},
+                         \frac{L_c-W_{xy}}{u'+v'}\right\}.
+\]
+For the other three vertices the losses relative to the exact corner
+value are at least $L_c-W_x$, $L_c-W_y$, and $L_c-W_{xy}$.
+They are therefore at least $(q/\pi^2)U$, $(q/\pi^2)V$, and
+$(q/\pi^2)(U+V)$, respectively. At the origin the value is exactly
+$\Lambda_c(n)$. Apply \eqref{ul:squared-peano} with $c=q/\pi^2$
+to obtain
+\[
+ \begin{gathered}
+ \lambda_n(-\cos(A/n),-\cos(B/(n+1)))
+ \leq\Lambda_c(n)-\frac{g}{2\pi^2}(A^2+B^2),\\
+ g=q-\frac{M\pi^4}{6}\max\{u',k^4v'\}.
+ \end{gathered}
+\]
+Thus the strict test $g>0$ proves positive quadratic loss off the
+origin.
+The normalization in this calculation can be checked one factor at a
+time. The chosen dimensionless squared widths are
+$u'=1/32$ and $v'=9/512$. The squared radian-phase widths are
+$U=\pi^2u'$ and $V=\pi^2v'$, so the lower vertex loss
+$q u'$ equals $(q/\pi^2)U$. Similarly $qv'=(q/\pi^2)V$, and
+the diagonal loss is at least $(q/\pi^2)(U+V)$. Hence the affine
+loss coefficient in squared radian coordinates is $c=q/\pi^2$.
+The curvature cost in that coefficient is
+$(M/6)\max(U,k^4V)=(M\pi^2/6)\max(u',k^4v')$.
+Factoring out $1/\pi^2$ leaves precisely
+\[
+ c-\frac M6\max(U,k^4V)
+   =\frac1{\pi^2}
+       \left(q-\frac{M\pi^4}{6}\max(u',k^4v')\right)
+   =\frac g{\pi^2}.
+\]
+The further factor $1/2$ comes from $u+v=(A^2+B^2)/2$.
+This accounts for both powers of $\pi$ and the coefficient in the
+displayed corner inequality.
+
+Only upper actual values and a lower corner value are needed for
+the three losses. For example, if $W_x$ bounds the actual value at
+the $A$-axis test point, then
+$C-\lambda_n(-\cos(\sqrt{2U}/n),-1)$ is at least
+$C-W_x\geq L_c-W_x$. The analogous inequalities hold at the
+other two points. Defining $q$ by the minimum makes all three
+normalized losses hold at once. A positive accepted $g$ then implies
+a positive $q$ and a strict decrease away from the origin. Every
+arithmetic operation in this test can be made rational by replacing
+$\pi^4$ in its cost by $p_+^4$. If the resulting rational lower
+gap is positive, the true gap $g$ is positive as well.
+
+The three actual test points use the physical inward angles
+$\pi/(4n)$ and $3\pi/(16(n+1))$, with a zero angle in the other
+coordinate for the axis tests. Equivalently these angles are the
+rational multiples $1/(4n)$ and $3/(16(n+1))$ of $\pi$.
+Indeed $\sqrt{2U}=\pi/4$ and $\sqrt{2V}=3\pi/16$ are radian
+phases, and the physical cosine arguments divide those phases by
+$n$ and $n+1$. Keeping the radian phases, normalized phases and
+physical inward angles distinct explains the scaling used by the
+point evaluations and by the interpolation rectangle.
+The rectangle is $0\leq A\leq\pi/4$,
+$0\leq B\leq3\pi/16$, which contains the inward half diamond
+$A+B\leq1/2$. Complete signed cardinal sums are even in each inward
+variable and have frequencies at most $1,k$; their absolute values are
+bounded by the same global $M$, since $\lambda_n\leq S_n$ in every
+chart. These are precisely the premises of the squared-variable
+interpolation argument. The parity reflection transfers the witness to
+the other actual corner.
+
+The containment of the required near diamond is also explicit.
+For nonnegative $A,B$ with $A+B\leq1/2$, both coordinates are at
+most $1/2$. The endpoints $\pi/4$ and $3\pi/16$ both exceed
+$1/2$; for the second it is enough that $\pi>8/3$.
+Thus every inward near point belongs to the rectangle where the
+quadratic loss holds. At $A=B=0$ the exact value is $C$.
+For every other point of that rectangle the sum $A^2+B^2$ is
+positive, giving the desired strictness. The parity-preserving
+reflection permutes the cardinal polynomials and carries this
+comparison to the other nonnode corner while keeping each coordinate
+mesh in its original role.
+
+From degree 256 the analytic estimate \eqref{ul:corner256} supplies
+the same strict descent on the required diamond. An analytic far leaf
+is permitted from degree 192 only when its entire triangle intersection
+satisfies $\rho\geq\pi/2$. Equation~\eqref{ul:far192} then gives
+$S_n<\Lambda_c(n)-3/100$ throughout that closed intersection.
+
+These analytic substitutions preserve their full domain hypotheses.
+The corner estimate from degree 256 applies on the inward square
+specified in \eqref{ul:corner256}, and its positive quadratic loss
+covers the required near diamond. The far estimate from degree 192
+uses the radian guard $\rho\geq\pi/2$, equivalent on
+$\mathcal T$ to $a+b\geq1/2$. This guard differs from the
+near/far division at $\rho=1/2$ used in the numerical predicates.
+The analytic far estimate can therefore replace a numerical far
+leaf only when its entire relevant closed domain satisfies the
+stronger half-$\pi$ guard. In the retained rectangle predicate, a
+lower-left sum at least $1/2$ ensures that condition on the whole
+rectangle and hence on its triangle intersection.
+
+A rectangle that straddles this analytic guard continues to need the
+allowed numerical comparison on the part left uncovered by an
+analytic estimate. The closed guard includes its equality line.
+Together with the closed tree coverage, this ensures that applying
+the analytic far comparison creates no omitted boundary strip.
+The available analytic estimates change the kind of witness stored
+for eligible regions and degrees, while their proved implications
+supply exactly the strict comparisons required by the global
+argument.
+
+To complete the implication, choose an odd chart for any point of the
+physical square and fold its absolute phases into $\mathcal T$.
+The tree gives a leaf containing those phases. Its far comparison,
+noncorner near comparison, or actual-corner descent excludes the point
+strictly, except when it is the origin of an actual corner chart.
+Those origins are the two nonnode corners already identified by parity.
+Their exact common value and the closed chart cover prove the asserted
+maximum and equality set, including every chart tie and subdivision
+boundary.
+
+One can follow the conclusion at a fixed arbitrary point as follows.
+First the closed odd-chart cover supplies a center and signed phases.
+The folding identities supply a point of $\mathcal T$ with the
+same envelope value. A complete tree supplies a leaf containing that
+phase point. If an allowed full-leaf strict envelope bound applies,
+then $\lambda_n\leq S_n<\Lambda_c(n)$ there for every center.
+Otherwise the near and far predicates are applied according to the
+actual radius of the chosen chart. The near noncorner case subtracts
+the proved defect. The near actual-corner case uses the local
+quadratic descent. At the seam either valid comparison retains its
+closed boundary. These possibilities cover all points in the chart.
+
+The only surviving equality possibility is zero inward phase in an
+actual nonnode-corner chart. The two such physical corners have
+value $\Lambda_c(n)$ by the exact cardinal identity and the
+node-preserving reflection. A physical corner that is a Padua node
+has Lebesgue value one by cardinal interpolation, and the closed
+chart argument covers it with the other points. Chart ties merely
+provide multiple valid ways to reach a comparison. All local bounds
+include their closed edges, so every physical point receives the
+same final strict exclusion or the identified exact corner value.
+
+This completes the finite-to-continuous implication for the phase
+certificates. The physical Bernstein certificates prove the identical
+conclusion on $2\leq n\leq40$. The phase certificates handle
+$41\leq n\leq319$, and the earlier analytic proof starts at
+$n=320$. Thus the degree ranges meet consecutively, and the exact
+equality classification is consistent across the finite and analytic
+parts of Theorem~\ref{thm:main-location}.
+
+\subsection{Evidence and arithmetic}
+The retained proof inventory covers every integer $2\leq n\leq319$;
+Section~\ref{sec:argmax} covers the rest. For the phase range all 280
+primary/fresh pairs, including the control degree 511, were checked by
+exact rational reconstruction of 560 essential proofs. Native outward
+endpoints come from the frozen Arb/FLINT/MPFR/GMP implementation;
+finite binary64 endpoints are converted losslessly to rationals for the
+cover predicates. The arithmetic implementation, compiler and native
+interfaces are trusted components of this computer-assisted proof.
+
+There are several linked levels in this evidence statement. The
+mathematical reduction specifies the meaning of a valid coefficient,
+vertex enclosure, complete tree and strict leaf predicate. A concrete
+witness specifies finite data for a particular degree. The checker
+reconstructs its topology and rational consequences against the
+specified formulas. The execution record connects those data to the
+frozen arithmetic source and to the actual native evaluations. Each
+level is needed to connect the theorem to its retained finite
+instances.
+
+The count for the phase range is transparent. There are
+$319-41+1=279$ consecutive degrees from 41 through 319. The control
+degree 511 supplies one additional degree, for 280 primary/fresh
+pairs. Two retained essential proofs in each pair give 560 essential
+proof reconstructions. The control is included in the checking
+inventory; the all-degree coverage itself uses the consecutive finite
+range and the analytic tail as described above. The small-degree
+execution inventory has its separate fresh and reused provenance
+within the common Bernstein scheme.
+
+A finite binary64 number has the exact form $m2^e$ for integers
+$m,e$. Once a native outward endpoint has been recorded in that
+format, converting it to a rational preserves its exact represented
+value. A negative exponent gives a power-of-two denominator. The
+rational checker can then compute norms, proxy guards, fourth-power
+corner costs and strict margins with exact arithmetic. This conversion
+preserves the native enclosure endpoints. The correctness of the
+outward endpoint computation itself is supplied by the frozen
+arithmetic implementation and its trusted native dependencies.
+
+For the reader, this explains which part of a comparison is a real
+analysis statement and which part is an arithmetic check. Positive
+interpolation proves that valid endpoints and derivative norms imply
+a whole-region bound. Exact rational operations prove the strict
+inequality between the recorded bounds. The native interval stage
+supplies the endpoint containment assertions at its stated trust
+boundary. The source identity and witness hashes connect those
+assertions to the implementation and execution records being used.
+The compiler and interfaces are included explicitly because they
+participate in carrying that implementation to its recorded outputs.
+
+The primary and fresh passes ran separately on the production machine.
+Locally all essential proof/account/source links were checked. Complete
+histories for two randomly selected degrees, 199 and 238, were inspected,
+and fresh native verification was run at both degrees with distinct
+review. These sample replays supplement
+the checks of all essential proofs and links. Full unsampled
+histories remain on the production machine under the selective-retention
+policy. Source pins, witness identities, checker commands and the exact
+new small-degree run inventory are in the companion reproducibility notes.
+They permit regeneration; a durable public release remains to be arranged.
+This evidence boundary is part of the theorem's computational scope.
+
+The distinction between essential proofs and complete histories also
+has a concrete purpose. An essential proof retains the finite inputs
+and conclusions needed to reconstruct the certificate implication,
+with its source and account links. A complete history records the
+broader production execution around that witness. All essential
+proofs in the stated inventory were checked. The detailed history
+inspection and fresh native verification described here concern
+the selected degrees 199 and 238, with their separate review. The
+selective-retention policy specifies where the remaining complete
+histories reside and how the retained links identify them.
+
+These records make the computational premises inspectable at their
+stated scope. The reproducibility notes identify the exact source
+pins, witness identities and commands needed for regeneration, and
+record which small-degree instances were newly checked. The public
+release of a durable complete package remains an archival task.
+The mathematical reading of the theorem keeps these evidence and
+trust premises attached to the finite computations that support it.
+The analytical corner expansion in the earlier theorem keeps its
+own stated proof and dependencies.

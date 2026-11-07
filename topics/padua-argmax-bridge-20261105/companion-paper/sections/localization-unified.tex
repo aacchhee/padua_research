@@ -1,0 +1,1407 @@
+\section{Reflection cancellation and global localization}
+\label{sec:argmax}
+
+The previous section computed a value at a particular corner.  The
+question here is global: how can that value be compared with the sum of
+absolute cardinal polynomials at every point of the square?  The
+absolute values make a direct maximization difficult, because the signs
+of individual cardinal polynomials change from cell to cell.  Our first
+step replaces the cell-dependent expression by a periodic sum whose
+dependence on position is described by two small phase variables.  The
+price of this replacement is measurable.  Keeping track of that price
+will supply the strict inequality away from the two maximizing corners.
+
+Here is the organization of the argument.  First we express every
+cardinal polynomial as a sum of four reflected kernel values.  Taking
+the four absolute values separately produces the periodic majorant
+$S_n$.  The difference between this majorant and the Lebesgue function
+is a nonnegative cancellation loss $\Delta_{JK}$.  Next we estimate the
+possible excess of $S_n$ over the corner value using the comparison
+model developed below.  Near a mesh vertex in the interior of at least
+one coordinate, selected pairs of reflected terms give a positive lower
+bound for $\Delta_{JK}$.  This lower bound absorbs the possible excess
+of $S_n$.  Farther from the vertex, the majorant itself falls below the
+corner value.  Finally we treat actual corners by a local interpolation
+argument in the squares of the inward angular displacements.
+
+Two kinds of coordinates occur throughout.  The physical point is
+$(\cos\theta,\cos\phi)$, with $0\leq\theta,\phi\leq\pi$.
+The local phase variables are mesh-scaled angular displacements.  A
+phase of size $\pi$ is one mesh step; a phase of size one corresponds
+to an angle of size $1/n$ or $1/m$ in the respective coordinate.
+A region of fixed phase
+size shrinks in the physical square as the degree grows.  Uniform
+estimates in these phase coordinates are what allow a single argument
+to cover all sufficiently large degrees.
+
+The proof of Theorem~\ref{thm:main-location} compares every point with
+the exact corner value $\Lambda_c(n)=\lambda_n(-1,-1)$.  A periodic
+majorant provides one common comparison for all mesh cells.  Its
+triangle-inequality loss distinguishes an interior mesh vertex from an
+actual corner.  We retain this loss until it has paid for the possible
+increase of the majorant near the origin.
+
+Put $m=n+1$ and $\mathsf N=nm$, and recall the finite angular kernel
+$G_n$ from \eqref{eq:angular-kernel}, whose highest first-coordinate
+coefficient is one.  Write
+$a_j=j\pi/n$, $b_k=k\pi/m$, and let $e_j,f_k$ equal one at interior
+indices and $1/2$ at endpoints.  Product to sum in the cardinal formula gives
+\begin{equation}\label{ul:cardinal-reflection}
+ L_{jk}(\cos\theta,\cos\phi)=\frac{w_{jk}}4
+   \sum_{\sigma,\eta=\pm1}G_n(\theta+\sigma a_j,\phi+\eta b_k),
+ \qquad w_{jk}=\frac{2e_jf_k}{\mathsf N}.
+\end{equation}
+The four terms correspond to the independent choices of sign in the
+two angular coordinates.  They arise from the elementary identity
+$2\cos u\cos v=\cos(u+v)+\cos(u-v)$, applied in each coordinate
+of the cardinal formula.  This is useful because the same kernel
+$G_n$ now appears at every node.  The geometry of the node enters only
+through its reflected angular shifts and its weight.
+
+The factors $e_j$ and $f_k$ keep the endpoints correctly weighted.
+An interior angle has two distinct reflected representatives on the
+circle, whereas zero and the angle $\pi$ identify their two reflected
+representatives.  A factor $1/2$ at an endpoint compensates for this
+identification.  For example, the two choices $+0$ and $-0$ coincide,
+and their two half weights add to one.  This simple observation is also
+responsible for the exact normalization of the periodic sum below.
+
+For evaluation, with $P_n=T_{n+1}+T_n$, one may equivalently use
+$G_n(u,v)=[P_n(\cos u)-P_n(\cos v)]/(\cos u-\cos v)-\cos(nu)$.
+At a collision this means the polynomial divided difference, including
+$P_n'(\cos u)$ at equality.  Every formula below includes these values.
+
+The word ``collision'' refers to $\cos u=\cos v$.  The quotient in
+the evaluation formula may look singular there, but it is a divided
+difference of a polynomial.  For a polynomial $P$, the difference
+$P(X)-P(Y)$ is divisible by $X-Y$; the quotient is therefore a
+polynomial in $X,Y$ and has a well-defined value on the diagonal.
+Its diagonal value is $P'(X)$.  Consequently $G_n$ remains a finite,
+continuous function at every collision.  This fact permits us to work
+on closed regions, including their boundary curves, throughout the
+argument.
+
+The centers of the local charts are the angular mesh vertices with
+odd index sum.  Calling a vertex odd refers only to this index parity.
+It distinguishes the complementary mesh vertices from the even
+vertices used by the interpolation nodes.  A chart consists of all
+physical points whose sum of scaled distances from its center is at
+most $\pi$:
+
+Use odd mesh charts
+\begin{equation}\label{ul:charts}
+ \theta=(J\pi+\alpha)/n,\quad \phi=(K\pi+\beta)/m,
+ \quad J+K\text{ odd},\quad |\alpha|+|\beta|\leq\pi,
+ \quad (\theta,\phi)\in[0,\pi]^2,
+\end{equation}
+where $0\leq J\leq n$, $0\leq K\leq m$.  These cover the closed
+square: in each angular mesh rectangle, the scaled distances to its
+two odd vertices sum to two, so one is at most one.  All ties are retained.
+To see the covering assertion explicitly, take a mesh rectangle and
+write the position inside it in fractional coordinates $t,v\in[0,1]$.
+The two odd vertices are opposite vertices of this rectangle.  If they
+are $(0,0)$ and $(1,1)$ in these fractional coordinates, their sums of
+coordinate distances are $t+v$ and $2-t-v$.  If they are $(1,0)$ and
+$(0,1)$, those sums are $1-t+v$ and $1+t-v$.  In both cases the two
+sums add to two, so at least one is at most one.  Multiplication by
+$\pi$ turns this statement into the phase inequality in
+\eqref{ul:charts}.
+
+The boundary of a chart has the shape of a diamond in the
+$(\alpha,\beta)$ plane.  A point on the line of equal distances can
+belong to both neighboring charts.  Keeping both choices makes the
+cover closed and avoids any need to assign such a point to a preferred
+cell.  At an edge of the physical square, the additional condition
+$(\theta,\phi)\in[0,\pi]^2$ simply removes the part of the diamond
+that points out of the square.  In particular, the phases at a corner
+point inward.
+
+The indices in the next sum are periodic: $r$ is read modulo $2n$
+and $s$ modulo $2m$.  The set $\Gamma^-$ selects one of the two
+parity classes in this periodic rectangle.  The superscript records
+that odd parity class.  These indices describe kernel arguments, so
+they can run round a full angular circle even though the physical
+angles stay in $[0,\pi]$.
+
+Set $\Gamma^-=\{(r,s):0\leq r<2n,\ 0\leq s<2m,\ r+s\text{ odd}\}$ and
+\begin{equation}\label{ul:primitive}
+ H_{rs}=G_n((r\pi+\alpha)/n,(s\pi+\beta)/m),\qquad
+ S_n(\alpha,\beta)=\frac1{2\mathsf N}\sum_{\Gamma^-}|H_{rs}|.
+\end{equation}
+The usefulness of $S_n$ is that its expression depends on the phases
+and degree alone.  Changing the chart center merely relabels the
+periodic indices.  Indeed a reflected term from a physical node has
+indices $r=J+\sigma j$ and $s=K+\eta k$.  Since $j+k$ is even
+and $J+K$ is odd, their sum is odd.  Thus all four reflected values
+land in the parity class $\Gamma^-$.  Conversely, the reflected
+physical indices, with their endpoint weights, account for the entire
+periodic class with precisely the multiplicity used in
+\eqref{ul:primitive}.
+
+The endpoint identity
+$\sum_{0\leq j\leq n,\,\sigma j\equiv r\ (2n)}e_j=1$
+and its $m$ counterpart show that summing the four absolute reflected
+terms in \eqref{ul:cardinal-reflection} gives exactly $S_n$.
+Consequently, with $g_{\sigma\eta}=G_n(\theta+\sigma a_j,\phi+\eta b_k)$,
+\begin{equation}\label{ul:defect}
+ \lambda_n=S_n-\Delta_{JK},\qquad
+ \Delta_{JK}=\sum_{j+k\,\mathrm{even}}\frac{w_{jk}}4
+ \left(\sum_{\sigma,\eta}|g_{\sigma\eta}|
+             -\left|\sum_{\sigma,\eta}g_{\sigma\eta}\right|\right)\geq0.
+\end{equation}
+This identity isolates the effect of signs.  For four real numbers
+$g_1,\ldots,g_4$, their sum of absolute values can exceed the absolute
+value of their sum only because positive and negative contributions
+cancel.  If $P$ is the sum of the positive contributions and $N$ is
+the sum of the magnitudes of the negative contributions, the excess is
+
+\[
+ P+N-|P-N|=2\min(P,N).
+\]
+
+For example, the terms $3,-2,1,-1$ have sum of magnitudes seven and
+absolute sum one, giving loss six.  If all four terms have the same
+sign, the loss is zero.  The weighted sum in \eqref{ul:defect}
+measures this excess separately at every physical node.  Since all
+weights are nonnegative, losses from different nodes add without any
+further cancellation.
+
+It is helpful to keep the comparison we ultimately need in the form
+
+\[
+ \Lambda_c-\lambda_n
+   =\bigl(\Lambda_c-S_n\bigr)+\Delta_{JK}.
+\]
+
+The first term can be slightly negative near a chart center.  A
+strictly positive second term can still make the total positive.
+This is why a good approximation to $S_n$ becomes useful for locating
+the maximum only when it is coupled to a lower bound for the loss.
+At actual nonnode corners the second term vanishes, which explains
+the separate local argument at the end of this section.
+
+The two projections retain only part of the cancellation, by pairing
+reflections in one coordinate at a time.  The elementary pair defect
+$\mathfrak d$ has a particularly transparent form: it is zero for
+numbers of the same sign and equals twice the smaller magnitude for
+numbers of opposite signs.  Its definition also makes sense when
+either number is zero.
+
+For $\mathfrak d(z,w)=|z|+|w|-|z+w|$, periodic indices give the two projections
+\begin{equation}\label{ul:projections}
+ Q_v(K)=\frac1{4\mathsf N}\sum_{\Gamma^-}\mathfrak d(H_{rs},H_{r,2K-s}),
+ \qquad
+ Q_h(J)=\frac1{4\mathsf N}\sum_{\Gamma^-}\mathfrak d(H_{rs},H_{2J-r,s}).
+\end{equation}
+Pairing first in either coordinate proves
+$\Delta_{JK}\geq\max(Q_h,Q_v)$.
+Here is the inequality behind this reduction.  For four real numbers
+$a,b,c,d$, insert and subtract $|a+b|+|c+d|$ in their total defect.
+The result is
+
+\[
+ \begin{split}
+ |a|+|b|+|c|+|d|-|a+b+c+d|
+ ={}&\mathfrak d(a,b)+\mathfrak d(c,d)\\
+ &+\mathfrak d(a+b,c+d).
+ \end{split}
+\]
+
+Every term on the right is nonnegative.  Dropping the last one gives
+a lower bound from one pairing, and pairing the four values in the
+other coordinate gives the second lower bound.  The reflected indices
+$2K-s$ and $2J-r$ in \eqref{ul:projections} implement exactly these
+two pairings after the physical indices have been unfolded to the
+periodic grid.  Their parity stays odd because reflection changes an
+index by an even integer.
+
+We use the larger of the two projection bounds.  Each bound comes
+from a lower estimate for the same total defect, and the two pairings
+can share contributions.  Taking their maximum uses each inequality
+in its stated direction.  In applications it is enough to choose a coordinate whose
+center is an interior physical mesh index.  This choice will provide
+the geometric room needed to put a periodic cosine between two
+reflected physical cosines.
+
+At an actual nonnode corner all four reflected values coincide, so
+$\Delta=0$ and $S_n(0,0)=\Lambda_c(n)$.
+Separate phase reflections and translations by the even lattice preserve
+$S_n$.  Reducing each phase modulo $2\pi$ and, if necessary, using
+$(x,y)\mapsto(\pi-x,\pi-y)$ reduces its global real-phase norm to
+$x,y\geq0$, $x+y\leq\pi$.  Each mesh retains its coordinate.
+
+The vanishing loss at a corner follows directly from reflection.
+When a physical evaluation angle is an endpoint, the two angular reflections
+in that coordinate differ by a period or by an even reflection of
+$G_n$.  At a physical corner both coordinate pairs therefore coincide.
+Their four equal values have zero triangle-inequality loss.  At the
+nonnode corner with zero phases the periodic sum consequently agrees
+with the exact corner value.
+
+The symmetries used to simplify $S_n$ concern its periodic phase
+arguments.  In particular, they allow the model calculation to take
+$x=|\alpha|$, $y=|\beta|$ in the closed triangle $x+y\leq\pi$.
+The two coordinate mesh sizes remain $n$ and $n+1$.  This distinction
+matters when the selected-pair construction below is turned from a
+vertical construction into a horizontal one, and when a derivative
+bound near a corner introduces the ratio $n/m$.
+
+We now develop the comparison model for this common periodic sum.
+Once that model is available, the rest of the section combines its
+upper bounds with explicit lower bounds for the cancellation loss.
+The model estimates depend only on phases; the loss estimates also
+remember which odd chart center was chosen.
+
+\input{sections/comparison-unified}
+
+\subsection{One selected-pair argument for the reflection loss}
+
+We return to the geometric part of the proof.  In the notation just
+introduced, $\rho=|\alpha|+|\beta|$ is the phase radius.  A floor
+for the loss means a lower bound that holds for every point in a
+specified closed phase diamond.  The parameter $r$ in the lemma is
+the radius of that entire diamond, whereas $\rho$ is the radius of
+the particular point under consideration.  Taking $r=\rho$ later
+allows the lower bound to follow the point as it moves away from the
+center.
+
+The construction uses a physical mesh row together with a periodic
+index in the other coordinate.  ``Physical'' means that the row
+index lies in $0,\ldots,m$ or $0,\ldots,n$, with the endpoint
+weights of the original square.  A periodic index lies on the
+unfolded circle from \eqref{ul:primitive}.  These two roles explain
+the two mesh letters $M,L$ in the proof: $M$ is the physical mesh
+size and $L$ is the periodic one.  They are adjacent integers, but
+which of them is $n+1$ depends on the projection.
+
+The following lemma supplies both the analytic tail and the finite
+certificate floors.  An eligible projection means $Q_h$ with $0<J<n$
+or $Q_v$ with $0<K<m$.  Every noncorner odd center has one.
+The finite completion uses degrees $41$--$319$; its degree-$511$
+control uses the same third floor tier.
+
+An eligible projection has a center coordinate strictly between its
+two physical endpoints.  For instance, $Q_v$ is eligible when
+$0<K<m$.  The reflected physical targets in this direction then
+have a nonempty cosine interval between them for the selected rows.
+At an endpoint center with zero phase that interval collapses.
+The uniform positive floor uses an interior center index.  Every noncorner
+center has an interior coordinate, so at least one of $Q_h,Q_v$ is
+eligible.  This includes centers on an edge of the physical square:
+the coordinate along the edge supplies the eligible projection.
+
+The several expressions in the lemma serve different ranges with
+the same underlying selection argument.  The constants $1/512$,
+$1/64$, and $1/32$ are convenient degree-independent floors for
+finite certification.  The expression $B_n(r)$ retains some radius
+dependence and can strengthen those floors.  The tail formulas keep
+more of the geometric information, so that they can be compared with
+the model excess on a range of radii.  Their minimum reflects the
+three possible positions of the center relative to the nearest
+physical endpoint.  Their legal radius guards will be used explicitly
+when we combine them.
+
+\begin{lemma}[Selected-pair floors]\label{ul:selected-pairs}
+Let \eqref{ul:charts} hold with $\rho\leq r$.  Put $a_r=1-r^2/4$ and
+\begin{gather*}
+ U_r=347a_r/1000-157r/500,\quad V_r=17a_r/20-r/2,
+ \quad W_r=779a_r/750-5r/6,\\
+ B_n(r)=11711U_r/48400-120V_r/(157n)
+                   -250W_r/(157n)-100V_r/(3n^2).
+\end{gather*}
+For $41\leq n<512$ and $r\leq1/2$, every eligible projection is at least
+$\delta_n(r)$, where
+\begin{equation}\label{ul:finite-floors}
+ \delta_n(r)=
+ \begin{cases}
+ \max\{1/512,\min(1/32,B_n(r))\},&41\leq n<64,\\
+ \max\{1/64,\min(1/20,B_n(r))\},&64\leq n<160,\\
+ \max\{1/32,\min(1/20,B_n(r))\},&160\leq n<512.
+ \end{cases}
+\end{equation}
+For the sharper tail bounds, let $n\geq64$, $p_\pi=22/7$, and define
+\begin{align*}
+ \eta_r&=a_r[1-(4p_\pi+r)/n]-r/2,&
+ F_{\rm near}&=\frac{2\eta_r}{p_\pi+r}\frac n{n+1}(1/4-1/n),\\
+ F_{\rm small}&=\frac{35}{286}(1-6/n)^2(a_r-r/2),&
+ A_r&=97a_r/100-r/2,\\
+ I_h&=2303a_r/5000-471r/1250,&R_h&=4837a_r/1875-5r/3,\\
+ I_w&=5369a_r/15000-7379r/30000,&R_w&=37621a_r/15000-3r/2,\\
+ F_h&=\frac{539I_h}{1936}-\frac{140A_r+400R_h}{157n}
+                                      -\frac{800A_r}{3n^2},\\
+ F_w&=\frac{539I_w}{1936}-\frac{140A_r+400R_w}{157n}
+                                      -\frac{800A_r}{3n^2}.
+\end{align*}
+Each eligible projection is at least
+\begin{equation}\label{ul:tail-floors}
+ \min(F_{\rm near},F_{\rm small},F_h)\quad(r\leq21/40),\qquad
+ \min(F_{\rm near},F_{\rm small},F_w)\quad(r\leq\pi/4).
+\end{equation}
+At fixed legal radius all these tail floors increase with $n$.
+\end{lemma}
+
+\begin{proof}
+We first explain the folding step and then the sign selection.  A
+periodic reflection of a physical row usually has two representatives
+on the circle.  Folding these representatives back to the interval
+$[0,\pi]$ combines their coefficients.  Interior rows acquire the
+full coefficient $1/\mathsf N$, while endpoint rows retain the
+factor $f_k$ or $e_j$.  The formula below records this bookkeeping
+for the vertical direction.  Multiplication of both entries of a
+pair by a common sign leaves its defect unchanged; the factor $1/2$
+in $V_\pm$ is accounted for by the homogeneity of $\mathfrak d$.
+
+Folding the reflected physical index in \eqref{ul:projections} leaves
+coefficient $1/\mathsf N$ on an interior physical row.  For example
+\[
+ Q_v=\frac1{\mathsf N}\sum_{k=0}^mf_k
+  \sum_{r+k\equiv J\ (2)}\mathfrak d(V_+,V_-),\qquad
+ V_\pm=(-1)^rG_n((r\pi+\alpha)/n,\phi\pm k\pi/m)/2.
+\]
+The horizontal formula has physical index $j$, periodic index $s$,
+parity $s+j\equiv K\pmod2$, and common sign $(-1)^{J+j}$.
+At regular denominators each half is $A(u,v)/(\cos u-\cos v)$, where
+\[
+ A(u,v)=a(1+\cos v)-(\sin\alpha/2)\sin u+(\sin\beta/2)\sin v.
+\]
+The sign of a regular half-kernel can now be controlled using its
+denominator.  The phase restrictions give a common positive lower
+bound for the numerators on the selected rows.  If a periodic cosine
+lies strictly between the two physical target cosines, its
+differences from those targets have opposite signs.  Thus the two
+half-kernels have opposite signs and contribute a positive pair
+defect.  This turns a statement about the order of three real cosine
+values into a quantitative cancellation estimate.
+
+In the horizontal projection the baseline stays $1+\cos v$ at its
+fixed actual second coordinate.  A selected periodic cosine between
+two physical cosine targets gives opposite denominator signs.  If both
+numerators exceed $A_*>0$ and the full cosine span is $W$, then
+$\mathfrak d\geq2A_*/W$.  Omitted terms, including collisions, are nonnegative.
+
+For completeness, if the two positive denominator magnitudes are
+$d_1,d_2$, then $d_1+d_2=W$.  Each magnitude of the paired terms
+is at least $A_*/d_i$, and hence at least $A_*/W$.  Their defect,
+being twice the smaller magnitude, is at least $2A_*/W$.
+The selected terms have strict denominator signs; the proof may leave
+all remaining terms in the sum untouched because every pair defect
+is nonnegative.  In particular, the continuous values at collisions
+need no auxiliary denominator estimate for this lower bound.
+
+The actual second coordinate in the horizontal formula deserves
+attention.  The numerator $A(u,v)$ is tied to the original order of
+the two coordinates in $G_n$.  Changing the direction in which we
+pair reflections changes which indices are summed, while the factor
+$1+\cos v$ remains attached to its second-coordinate argument.
+This is the reason the proof tracks a physical and a periodic mesh
+separately, retaining the original kernel coordinates in each case.
+
+Use adjacent physical and periodic meshes $(M,L)=(m,n)$ vertically,
+$(n,m)$ horizontally, and let $\gamma$ be the center angle's distance
+from its nearest endpoint.  Physical row $b=l\pi/M$ uses index $l$
+at the lower endpoint and $M-l$ at the upper one; its targets are
+$\cos(\gamma-b),\cos(\gamma+b)$ in either orientation.  A parity grid
+on the circle has spacing $2\pi/L$; every open arc of length $\ell$
+contains at least $L\ell/(2\pi)-1$ points.  A physical interval contains
+at least $M\ell/\pi-1$ rows.  These real lower bounds hold for either parity.
+
+Here $\gamma$ is an ordinary angle, measured from whichever endpoint
+is nearer the center angle.  Describing the center from that endpoint
+makes both endpoint orientations use the same two targets.  The
+cosine addition formulas show that their midpoint and half-span are
+
+\[
+ \cos\gamma\cos b,\qquad \sin\gamma\sin b.
+\]
+
+The index $s$ used below measures distance in mesh indices from that
+endpoint.  The small phases perturb its angular distance, so the
+proof compares $\gamma$ with multiples of $1/M$ rather than
+replacing it by $s\pi/M$ exactly.
+
+The counting bounds are elementary lattice bounds.  On a line with
+spacing $h$, an open interval of length $\ell$ contains at least
+$\ell/h-1$ lattice points, regardless of the offset of the lattice.
+One can see this by deleting the two incomplete pieces at the ends
+and counting the full spacings between points.  A fixed parity
+class of the periodic index has angular spacing $2\pi/L$, and the
+physical rows have spacing $\pi/M$.  The lower bounds may be real
+numbers; the actual integer count being at least such a number is
+all that is required in a lower estimate.  Using open arcs ensures
+that every selected periodic cosine lies strictly between its
+targets.
+
+The proof now splits centers into three classes.  Centers within
+four mesh indices of an endpoint require an explicit list of
+periodic points, because the angular interval to be populated is
+short.  The next class has a larger endpoint distance but still a
+small angle $\gamma$.  There, counting the length of two arcs is
+enough.  The final class has $\gamma\geq\pi/6$; in this class a
+whole band of physical rows supplies a lower bound that is usefully
+estimated by an integral.
+
+There are three exhaustive center classes.  If the endpoint index
+distance is $1\leq s\leq4$, select $M/4\leq l\leq M/2$, offsets
+$q=-(s-1),-(s-3),\ldots,s-1$, and both periodic indices
+$l+q,2L-(l+q)$.  For $n\geq41$, $r\leq1/2$ the effective angle $w$ obeys
+\[
+ |M(w-b)|\leq(s-1)\pi+24\pi/41+(42/41)|\text{periodic phase}|
+       <s\pi-|\text{physical phase}|\leq M\gamma.
+\]
+The strict slack is at least $(17\pi-21)/41>0$.
+The displayed inequality says $|w-b|<\gamma$.  Thus the effective
+periodic angle lies inside the interval whose endpoint cosines are
+the targets $\cos(\gamma-b)$ and $\cos(\gamma+b)$, after the
+reflection appropriate to the branch.  Its strict slack persists
+through the allowed phase perturbations.  This is the geometric
+content of the offset list $q$.  There are exactly $s$ offsets,
+spaced by two, which is the spacing required to preserve the parity
+class.  The reflected periodic indices double their number to $2s$.
+
+Also $l+q\geq8$, $l+q\leq M/2+3<L$, and
+$\gamma\leq(4\pi+1/2)/M<1/3$, so all selected branches are distinct
+and regular.  Their parity is $q\equiv1-s$ at the lower endpoint
+and $M+q\equiv1-M+s$ at the upper endpoint, the required complementary
+center parity in both projections.
+The estimates on $l+q$ keep the two reflected branches apart and
+away from periodic endpoints.  The parity check addresses a separate
+requirement: an index between the targets contributes to the desired
+projection only when it belongs to its actual parity grid.  At the
+lower endpoint this condition is $q\equiv1-s\pmod2$.  At the upper
+endpoint the physical row is indexed by $M-l$, so the same check
+contains the additional $M$.  The displayed upper-endpoint parity
+accounts for precisely this change.  Thus the chosen points are
+both geometrically useful and present in the physical projection.
+
+The target cosines exceed $-1/3$,
+so $A_*>3/8$.  Counting $2s$ points in at least $M/4-1$ rows gives
+\[
+ Q>\frac{3s}{4(s\pi+1/2)}\frac ML(1/4-1/M)
+ \geq\frac{37}{224(\pi+1/2)}>\frac1{32}.
+\]
+For $n\geq64$ the stronger $\gamma<7/30$ gives $A_*\geq15/32$ and
+$Q>225/[1040(\pi+1/2)]>1/20$.  Keeping $r$ and the numerator
+$\eta_r$ instead yields $F_{\rm near}$ through $r=\pi/4$; its
+straddling slack is $57\pi/128-65r/64>0$.
+
+The count and the denominator span pull in opposite directions as
+$s$ grows: there are more selected periodic points, but the targets
+also separate farther.  The quotient displayed above controls these
+effects together.  The resulting positive constant is uniform in
+the four allowed index distances.  Keeping the phase radius in the
+numerator and span produces $F_{\rm near}$.  The word ``near'' in
+this subscript describes the center's proximity to a physical
+endpoint; it is distinct from the near phase diamond considered in
+the next subsection.
+
+For the remaining indices, $s\geq5$ implies $\gamma>4\pi/L$ already
+at $n=41$.  If $\gamma<\pi/6$, select $b\in[\pi/6,\pi/3]$ and the
+two open arcs $(b-\gamma,b+\gamma)$ and its reflection.  Their count
+is at least $2L\gamma/\pi-2>3L\gamma/(2\pi)$, and each numerator is
+at least $11/16$.  Thus
+\[
+ Q\geq\frac{33}{16\pi\sqrt3}(1/6-1/M)>35/656>1/20.
+\]
+For the radius-dependent tail estimate keep the correlated numerator
+$A_g=a_r[1+\cos(\pi/3+g)]-r/2$.  The function
+$A_g(1-\pi/(Lg))$ is concave on $[4\pi/L,\pi/6]$ and its lower
+endpoint value exceeds its upper endpoint value: their difference is
+at least $[1/8+(6-3\pi)/L]a_r+[1/8-3/L]r>0$.
+Consequently the same count gives $F_{\rm small}$ for $n\geq64$.
+
+The second class gains a useful factor from the width of its arcs.
+As $\gamma$ increases, the number of available periodic points is
+proportional to $\gamma$.  The cosine span also has a factor
+$\sin\gamma$, which is at most $\gamma$.  Thus the ratio of count
+to span remains bounded below even at the small-angle end of the
+class.  The restriction $\gamma>4\pi/L$ makes the loss of two
+points in the open-arc count a controlled fraction of the main
+count.  This explains why the class begins after the few endpoint
+indices treated explicitly above.
+
+For the radius-dependent version, the numerator and the arc count
+both depend on the angle $g$.  Retaining their product in the
+concavity calculation preserves this relationship.  A concave
+function on a closed interval is at least the smaller of its two
+endpoint values: write any interior point as a convex combination
+of the endpoints and use the defining concavity inequality.  The
+endpoint comparison in the proof therefore supplies a lower bound
+throughout the angle interval.  This is the step that produces the
+single expression $F_{\rm small}$ for the entire second class.
+
+It remains to treat $\gamma\geq\pi/6$.  A simple full-arc count using
+$b\in[\pi/12,\pi/6]$ gives numerator at least $7/32$ and span at most
+one.  The two open arcs have lengths $2b\geq\pi/6$ and are disjoint,
+including when an endpoint is zero.  Hence for $n\geq41$
+\begin{equation}\label{ul:full-arc-floor}
+ Q\geq\frac78(1/12-1/M)(1/12-1/L)
+ \geq\frac78(29/492)^2>1/512.
+\end{equation}
+This first estimate for the third class already gives a floor at
+the earliest degree $41$.  One count concerns the physical rows
+and the other concerns the periodic angles.  Their two endpoint
+losses yield the two factors in \eqref{ul:full-arc-floor}.
+The chosen arcs stay disjoint, so their counts can be added.  The
+same statement includes a center at the endpoint of the angle
+range, because an arc endpoint is excluded by the use of open arcs.
+
+The sharper estimate below assigns different weights to periodic
+points according to their position between the target cosines.
+Write $z$ for a periodic cosine.  The targets are $z_0-D_b$ and
+$z_0+D_b$.  Near their midpoint both denominator magnitudes are
+moderate, and the pair defect has a stronger lower bound than it
+does close to a target.  The function $f_b$ is a convenient lower
+profile for that defect, truncated at height $cA(b)/D_b$ so that
+its maximum is easy to control.
+
+For sharper bounds write $z_0=\cos\gamma\cos b$,
+$D_b=\sin\gamma\sin b$ and $A(b)=a_r(1-\sin b)-r/2>0$ on a chosen
+band $[a_0,b_0]$.  In the open cosine band $|z-z_0|<D_b$, retain
+\[
+ f_b(z)=\frac{A(b)}{D_b}
+       \min\left(c,\frac2{1+|z-z_0|/D_b}\right),\qquad 1<c\leq2.
+\]
+It lies below the actual pair defect, has maximum $cA(b)/D_b$, and
+its cosine integral is $\mathcal T_cA(b)$, where
+$\mathcal T_c=4-2c+4\log c$.  Layer cake on the two parity arcs and
+$1/\sqrt{1-z^2}\geq1$ give row sum at least
+$L\mathcal T_cA(b)/\pi-2cA(b)/D_b$.
+The term ``layer cake'' here is an integration identity for a
+nonnegative function: its value is the integral of the indicator
+functions of its superlevel sets.  In symbols,
+
+\[
+ f_b(z)=\int_0^{\max f_b}\mathbf 1_{\{f_b(z)>t\}}\,dt.
+\]
+
+For each height $t$, the superlevel set of this symmetric profile
+is an interval in the cosine variable.  Its inverse cosine images
+are two arcs.  Apply the parity-grid counting estimate on those
+arcs and integrate in $t$.  The main term is their continuous
+integral times the grid density.  The loss of at most one point on
+each arc integrates to at most twice the maximum height.  This
+explains the subtractive term $2cA(b)/D_b$ in the row estimate.
+Changing from angles to cosine contributes the Jacobian
+$1/\sqrt{1-z^2}$, whose lower bound one gives the stated main term.
+
+The remaining sum is over physical row angles $b$.  For a positive
+decreasing function on a uniform mesh, the left and right rectangle
+rules bracket its integral.  Their difference is at most one mesh
+width times the initial value.  After multiplication by the mesh
+density this becomes a loss of at most the initial value.  Applying
+this elementary integral comparison once to the positive main
+profile and once to its error profile gives the next formula.
+
+For positive decreasing $f$ the physical mesh sum differs from
+$(M/\pi)\int f$ by at most $f(a_0)$.  Applying the lower version to
+$A$ and the upper version to $A/\sin b$ therefore gives
+\begin{equation}\label{ul:band-formula}
+ Q\geq\frac{\mathcal T_c I}{\pi^2}
+       -\frac{\mathcal T_c A_0}{\pi n}
+       -\frac{4cR}{\pi n}-\frac{4cA_0}{n^2\sin a_0},
+\end{equation}
+where $C=a_r-r/2$, $A_0=C-a_r\sin a_0$,
+$I=C(b_0-a_0)+a_r(\cos b_0-\cos a_0)$ and
+$R=C\log[\tan(b_0/2)/\tan(a_0/2)]-a_r(b_0-a_0)$.
+This argument applies for $M,L\geq41$.
+
+In \eqref{ul:band-formula}, $I$ is the integral of $A(b)$ over the
+chosen row band, and $R$ is the integral of $A(b)/\sin b$ there.
+These integrals explain the appearances of cosine and
+$\log\tan(b/2)$ in their formulas.  The constant $A_0$ controls the
+endpoint rectangle-rule errors.  The leading term of the bound is
+independent of degree; all three remaining terms are finite-mesh
+costs that decay with degree.  The adjacent sizes $M,L$ are bounded
+using $n$, producing one expression valid for both projections.
+
+Take $c=5/4$, $[a_0,b_0]=[\pi/20,\pi/4]$, $r\leq1/2$.
+The elementary bounds
+$239/100<\mathcal T_c<12/5$, $\sin a_0>3/20$,
+$\cos a_0<247/250$, $\cos b_0>707/1000$ and the logarithmic ratio
+$<5/3$ give $I>U_r$, $A_0<V_r$, $R<W_r$.  With
+$157/50<\pi<22/7$, \eqref{ul:band-formula} is precisely $Q\geq B_n(r)$.
+At $r=1/2$ one can also use $I>21/125$, $A_0<11/20$, $R<14/25$.
+The resulting lower bound is
+$E_n=245931/6050000-206/(157n)-55/(3n^2)$.  Its exact margins are
+$E_{64}-1/64=34466881/729484800000$ and
+$E_{160}-1/32=88079689/182371200000$, and $E_n$ increases with $n$.
+Together with \eqref{ul:full-arc-floor} and the first two center
+classes, this proves \eqref{ul:finite-floors}.
+
+There are two ways to use these estimates for the finite floors.
+The simple counting bound gives $1/512$ in the third class, while
+the sharper band bound improves as the degree increases.  At $64$
+and $160$ its exact rational margins pass $1/64$ and $1/32$,
+respectively.  The first two classes already have their stronger
+constant floors.  Taking a minimum over center classes and then
+the maximum with the universal floor gives exactly the piecewise
+expression in \eqref{ul:finite-floors}.  Thus every operation in that
+expression corresponds to combining lower bounds with specified
+coverage.
+
+Finally take $c=2$, $a_0=\pi/100$ and $b_0=\pi/4$ or $\pi/6$.
+For the former band $A>0$ through $r=21/40$; for the latter through
+$r=\pi/4$.  The bounds $11/4<4\log2<14/5$,
+$\sin a_0>3/100$, $A_0<A_r$, $I>I_h,I_w$ and $R<R_h,R_w$ give
+exactly \eqref{ul:tail-floors}.  The endpoint estimates use
+$\sin(\pi/4)<71/100$, $\cos(\pi/4)>707/1000$,
+$\cos(\pi/6)>433/500$ and logarithmic ratios $<10/3,<3$.
+All follow from the sine and cosine Taylor bounds and the positive
+series for $\log z$ stated below.  The displayed formulas increase
+with $n$ at fixed legal $r$: their positive nearest factors increase
+and their positive reciprocal losses decrease.  The three classes
+exhaust every eligible projection, both endpoint orientations and parities.
+The two tail bands have distinct radius guards because their
+numerator $A(b)$ must stay positive over the entire band.  A wider
+band can give a better integral at small radius, while the shorter
+band stays positive farther from the phase origin.  This is why
+$F_h$ is used through $21/40$ and $F_w$ is available through
+$\pi/4$.  At a common legal radius either band estimate can be
+combined with the other two center classes by taking their minimum.
+For fixed radius, increasing $n$ improves the positive nearest-point
+factors and reduces the finite-mesh costs.  This monotonicity will
+allow us to verify the tail estimates once at their starting degree.
+\end{proof}
+
+\subsection{Exclusion near an odd vertex}
+
+We now combine the two estimates that have been developed
+separately: an upper bound for the excess $S_n-\Lambda_c$ and a
+lower bound for $\Delta_{JK}$.  The subtraction in
+\eqref{ul:defect} gives strict exclusion whenever the second bound
+is larger than the first.  Whenever we use a reflection floor, the center is
+a noncorner odd vertex, so an eligible projection exists.  The
+point itself may lie on an axis, on a chart seam, or on the edge of
+the physical square.
+
+The estimates are organized by radius.  On $0\leq\rho\leq1/2$
+the narrow relative comparison gives the most useful coefficients.
+On $1/2\leq\rho\leq3/5$ a wider relative comparison is paired
+with the selected-pair floors.  From $3/5$ through one the wider
+comparison makes the majorant smaller than $\Lambda_c$ by itself.
+All these radius intervals are closed.  We will check the endpoints
+with the same inequalities used in their interiors, so that the
+pieces can be joined directly.
+
+The numerical constants that follow are rational bounds for explicit
+analytic expressions.  Their direction matters: a positive error
+cost is bounded above, and a favorable loss coefficient is bounded
+below.  This makes each substitution preserve the desired direction
+of the final comparison.  The logarithmic series provides a
+particularly convenient way to obtain these bounds using rational
+arithmetic.
+
+All remaining comparisons are scalar consequences of the common
+estimates.  Their base evaluations use
+\begin{equation}\label{ul:log-series}
+ \log z=2\sum_{j\geq0}\frac{[(z-1)/(z+1)]^{2j+1}}{2j+1},
+ \qquad z>1,
+\end{equation}
+with its geometric positive tail.
+The ratio $(z-1)/(z+1)$ lies between zero and one for $z>1$.
+Consequently all terms are positive, and truncation gives a lower
+bound.  If this ratio is $t$ and terms through index $N$ are retained,
+the omitted tail is at most
+
+\[
+ \frac{2t^{2N+3}}{(2N+3)(1-t^2)}.
+\]
+
+Indeed all remaining denominators are at least $2N+3$, and the
+remaining powers form a geometric series.  Adding this bound to
+the partial sum supplies an upper bound.  The same procedure, with
+the elementary sine and cosine bounds already used above, yields
+the displayed rational enclosures.  In particular at $n=320$,
+$57679/10000<L<5769/1000$, $H<6769/1000$.  Substitution into
+\eqref{uc:constants}, with $\pi^2>197/20$, gives
+\begin{equation}\label{ul:near-base}
+ \begin{gathered}
+ T>293/25,\quad D<27/200,\quad\mathcal M<7/400,
+ \quad\bar e<249/1600,\quad C_4<677/50000,\\
+ k_{Nx}<11031/20000,\quad k_{Ny}<11056/20000,\quad
+ U_N>23337/2000+(21/500)\rho,\\
+ k_{Wx}<583/1000,\quad k_{Wy}<117/200,\quad T-\bar e+j>2331/200.
+ \end{gathered}
+\end{equation}
+For example $k_{Nx}<705963/1280000$ before rounding; the entire
+$d_\beta$ charge gives $k_{Ny}<56602113/102400000$.
+The costs decrease with real $n\geq320$.  For the mixed coefficient
+$U_N$, direct differentiation gives
+$(T+A_4+\rho J_N)'>45/(16n)-184/(15n^2)-78/n^3>0$
+on $\rho\leq1/2$; the decreasing $\bar e$ improves this direction.
+Also $T-\bar e+j$ increases.  Thus \eqref{ul:near-base} persists
+throughout the tail.
+
+The monotonicity check turns a single-degree calculation into a
+uniform tail statement.  It treats $n$ temporarily as a real
+variable at least $320$, so positivity of a derivative proves the
+comparison for all later integers as well.  Most terms are positive
+costs involving a logarithm divided by a power of $n$; they decrease.
+The mixed coefficient $U_N$ contains favorable and unfavorable
+pieces together, so the derivative displayed above checks their
+combined direction explicitly.  This preserves its dependence on
+the allowed radius throughout the near diamond.
+
+At $n=320$, Lemma~\ref{ul:selected-pairs} gives, for $\rho\leq1/2$,
+\begin{equation}\label{ul:near-floor}
+ \Delta_{JK}>L_h(\rho):=5123/50000-(4447/50000)\rho
+                                      -(1281/50000)\rho^2
+\end{equation}
+at every noncorner center.  Here the middle-class coefficients in
+$F_h=A_ha_\rho-B_h\rho$ are
+\begin{align*}
+ A_h&=1241317/9680000-679/251200-77392/3768000-97/38400,\\
+ B_h&=253869/2420000-35/25120-2000/150720-1/768,
+\end{align*}
+so $5123/50000<A_h<1281/12500$ and $0<B_h<4447/50000$.
+The other two classes exceed $(11/100)(a_\rho-\rho/2)$;
+their difference from $L_h$ exceeds
+$377/50000+(1697/50000)\rho-(94/50000)\rho^2>0$.
+All same-radius floors improve thereafter.
+
+In applying the lemma here we choose its radius parameter to be the
+actual radius, $r=\rho$.  The minimum over the three center classes
+is then bounded below by the single quadratic $L_h(\rho)$.
+The middle class gives its coefficients through $F_h$; the other
+classes are checked against the same quadratic by their displayed
+positive difference.  Since the eligible projection is bounded
+above by $\Delta_{JK}$, this common lower bound applies to every
+noncorner center.  The strict signs in the rational coefficient
+comparisons retain a strict floor even at the phase origin.
+
+The relative estimate for $S_n$ contains a central-pair contribution
+with a square-root factor.  The elementary bound on $\sqrt{x}$
+below replaces that contribution by terms that can be collected into
+a quadratic.  Such a bound follows from the square of a real
+number; for example
+
+\[
+ \frac54x+\frac15-\sqrt{x}
+       =\left(\frac{\sqrt5}{2}\sqrt{x}-\frac1{\sqrt5}\right)^2
+       \geq0.
+\]
+
+The lower bound for $u=1-a$ supplies the negative quadratic terms.
+Thus a two-variable comparison has been reduced to a concave
+quadratic with positive linear allowances.
+
+Use $u\geq47(x^2+y^2)/192$, the central bound
+\eqref{uc:central-pair-bounds}, and $\sqrt x\leq5x/4+1/5$.
+For $1/8\leq\rho\leq1/2$, \eqref{uc:relative-comparison} gives
+\begin{gather*}
+ S_n-\Lambda_c<C_4+\ell_1x+\ell_2y-d_1x^2-d_2y^2,
+ \\
+ (\ell_1,\ell_2,d_1,d_2)
+ =(12531/20000,11056/20000,1911/800,24539/8000).
+\end{gather*}
+On the entire line $x+y=\rho$, the quadratic part has maximum
+\begin{equation}\label{ul:radial-quadratic}
+ -e\rho^2+f\rho+g,\quad
+ e=\frac{d_1d_2}{d_1+d_2},\quad
+ f=\frac{d_2\ell_1+d_1\ell_2}{d_1+d_2},\quad
+ g=\frac{(\ell_1-\ell_2)^2}{4(d_1+d_2)}.
+\end{equation}
+This maximization can be checked by substituting $y=\rho-x$ and
+completing the square in $x$.  The coefficient of $x^2$ is
+$-(d_1+d_2)$, so the maximum over the entire real line exists.
+The physical segment $0\leq x\leq\rho$ lies on that line, making
+the unrestricted maximum a valid upper bound for the segment too.
+In this way we avoid having to decide whether the maximizing point
+of the quadratic lies on an axis or in the interior of the segment.
+The formula's constant $g$ accounts for the unequal linear
+coefficients in the two coordinate directions.
+
+Here $e>13429/10000$, $f<29714/50000$, $g<1/4000$.
+Subtracting this upper bound from \eqref{ul:near-floor} leaves
+\[
+ 8867/100000-(34161/50000)\rho+(8233/6250)\rho^2>1/20000;
+\]
+completion of the square is the integer inequality
+$34161^2=1166973921<1167373536=32\cdot8233\cdot4431$.
+The last integer comparison is a positivity test for the minimum of
+a one-variable quadratic.  After subtracting $1/20000$ from the
+displayed lower bound, its positive leading coefficient allows us
+to complete the square.  The remaining constant is positive
+precisely by the stated integer inequality.  Thus the comparison
+holds throughout the entire radius interval at once; no sampling
+of radii is involved.
+
+For $\rho\leq1/8$, the same estimates with both curvatures reduced
+to two give $S_n-\Lambda_c<77/1000$, whereas $L_h(\rho)>9/100$.
+Thus on the whole closed near diamond
+\begin{equation}\label{ul:near-exclusion}
+ \lambda_n<\Lambda_c-1/20000
+ \qquad(n\geq320,\ \rho\leq1/2,\ (J,K)\text{ noncorner}).
+\end{equation}
+The separate calculation for $\rho\leq1/8$ uses the substantial
+positive floor available at the center, where the rough upper bound
+for the majorant's excess is already enough.  The two calculations
+overlap at $1/8$ and cover the closed diamond through $1/2$.
+Their conclusion is a uniform gap $1/20000$, independent of the
+chosen eligible coordinate.  This is stronger than the strict
+inequality needed for the maximizer classification, but its fixed
+margin makes the later assembly transparent.
+
+
+On $\rho\leq1$, use instead $u\geq11(x^2+y^2)/48$ and
+$\sqrt x\leq x+1/4$.  The wide line of \eqref{uc:relative-comparison}
+gives
+$S_n-\Lambda_c<C_4+(11/16)x+(47/80)y-(9/4)x^2-(8/3)y^2$.
+Formula~\eqref{ul:radial-quadratic}, now with
+$e=72/59>61/50$, $f=3029/4720<257/400$, $g=3/5900$, yields
+\begin{equation}\label{ul:wide-polynomial}
+ S_n-\Lambda_c<P(\rho)=141/10000+(257/400)\rho-(61/50)\rho^2.
+\end{equation}
+For the wider estimate, the same optimization is applied with new
+linear and quadratic coefficients.  We may check its monotonicity
+directly: $P'(\rho)=257/400-(61/25)\rho$, which is negative
+for $\rho\geq1/2$.  The two endpoint evaluations then have
+distinct uses.  At $1/2$ the excess may still be positive and needs
+to be paid for by cancellation.  At $3/5$ it is negative, so
+monotonicity gives a majorant bound on the rest of the interval
+through one.
+
+This polynomial decreases on $[1/2,1]$ and satisfies
+$P(1/2)=607/20000$, $P(3/5)=-99/2500$.
+On $1/2\leq\rho\leq3/5$ the nearest and small-angle floors exceed
+$549/10000$.  The middle floor uses $F_h$ through $\rho=21/40$,
+where it exceeds $17/500$; after that use $F_w=A_wa_\rho-B_w\rho$,
+where
+\begin{align*}
+ A_w&=2893891/29040000-679/251200-75242/3768000-97/38400,\\
+ B_w&=3977281/58080000-35/25120-15/1256-1/768.
+\end{align*}
+Since $37/500<A_w<3/40$, $0<B_w<27/500$, this floor is at least
+$697/20000>17/500$.
+The switch between $F_h$ and $F_w$ occurs at $21/40$, inside the
+annulus under consideration.  This is a change in the legal band
+estimate used for the same geometric center class.  Up to that
+radius, $F_h$ has its stated positivity guard; beyond it, $F_w$
+continues to provide the needed lower bound.  The available bounds
+at the switch are closed, so its points are included.  The least
+floor used for this class exceeds $17/500$, whereas the largest
+majorant excess on the annulus is $607/20000$.  Their difference
+exceeds $3/1000$.  The other center classes have larger floors.
+Consequently, including both seams,
+\begin{align}
+ \lambda_n&<\Lambda_c-3/1000,
+ &&1/2\leq\rho\leq3/5,\quad (J,K)\text{ noncorner},\label{ul:annulus}\\
+ S_n&<\Lambda_c-99/2500,&&3/5\leq\rho\leq1.
+ \label{ul:wide-exclusion}
+\end{align}
+This uses the middle floor on its two stated guards, and the wide
+relative estimate on its own domain, throughout $n\geq320$.
+
+The distinction between the two conclusions in
+\eqref{ul:annulus}--\eqref{ul:wide-exclusion} will matter at the
+end.  The annular conclusion requires a noncorner center because
+it uses a positive reflection loss.  The conclusion from $3/5$
+through one is a bound on $S_n$ itself, and therefore applies with
+every center.  Since $\lambda_n\leq S_n$, it automatically excludes
+the Lebesgue function there as well.
+
+\subsection{The outer diamond and the finite far guard}
+
+The remaining radii for the analytic tail are $1\leq\rho\leq\pi$.
+At these distances the model's decrease is large enough to absorb
+the full absolute comparison error.  It is useful to express this
+decrease in terms of $u=1-a$, because the model loss has a leading
+term proportional to $uT$.  The geometric inequalities below
+relate all the other phase quantities to the same variable $u$.
+They keep the relationships imposed by an actual pair of phases
+throughout the estimate.
+
+The reference value $u_1$ is a lower bound for $u$ on this outer
+diamond.  Writing $v=u-u_1$ separates a fixed amount of model loss
+from any additional loss as the phases move farther away.  Some
+error terms grow at most as $\sqrt v$ and others at most linearly
+in $v$.  Collecting them in this form leads to a scalar quadratic
+in $\sqrt v$.
+
+For $1\leq\rho\leq\pi$ set $u_1=47/384$, $v=u-u_1$ and fix
+$a_0=337/384$, $w_0=721/384$, $p_0=12/25$, $P_0=24/25$,
+$\eta=3/2$.  Actual phases satisfy
+\begin{equation}\label{ul:outer-geometry}
+ v\geq0,\quad a\leq a_0,\quad c_e+c_d\leq w_0,\quad
+ \max(p,q)\leq p_0+\eta\sqrt v,\quad d_+\leq3\sqrt v,
+ \quad P\leq P_0+4v.
+\end{equation}
+Indeed $c=\cos(1/2)<a_0$ and $c_e+c_d\leq1+a$.
+For $1/2\leq x\leq1$, put $h=x-1/2$ and use $y\geq1-x$:
+$u-(1-c)\geq47ch^2/96$ and $\sin x\leq\sin(1/2)+ch$.
+The cases $x\leq1/2$ and $x\geq1$ follow from
+$\sin(1/2)<p_0$ and $u\geq11/48$, respectively; the same applies to
+$q$.  Also $|p-q|\leq2\sqrt{2v}$.
+Finally $P\leq2\sqrt{2u-u^2}$, whose tangent at $u_1$ has value
+$\sqrt{33887}/192<P_0$ and slope $674/\sqrt{33887}<4$.
+
+The tangent estimate is an application of concavity.  For a
+differentiable concave function, the tangent line at a reference
+point lies above the graph.  Its value and slope can be rounded
+upward, which gives the last bound in \eqref{ul:outer-geometry}.
+The square-root estimates for $p,q$ and their difference serve
+the same purpose for the terms whose growth is less naturally
+linear in $u$.  Here $p=\sin x$, $q=\sin y$, and
+$d_+=(q-p)_+$, so controlling $|p-q|$ also controls $d_+$.
+
+Each inequality is used in a term with a known favorable sign in
+the full allowance.  Thus replacing $a$, the sine quantities, or
+the cosine sums by their respective upper bounds enlarges that
+allowance.  This sign discipline is especially helpful in a long
+formula: it separates the geometric estimate from the subsequent
+rational evaluation.
+
+Here are explicit majorants of the full phase allowance
+\eqref{uc:phase-allowance}; $b_0=4/\pi^2$ and $r_0=\log(5/2)+1/18$
+have the meanings in \eqref{uc:constants}.  Put
+$\varepsilon=3\pi/(2m)$, $\ell=-\log\sin\varepsilon$,
+$D_a=D-10/n^2$, $C=1+8a_0m/(3\pi)$, and
+\begin{align*}
+ \Gamma_b&=p_0[1+\log(1+C/p_0)],\\
+ \gamma_b&=1+\log(1+C/p_0)-C/(p_0+C),\\
+ M_b&=p_0/\pi+4a_0/\pi^2,\qquad C_{B,b}=6+(4+4a_0/\mathrm e)/\pi,\\
+ V_b&=23+[3\Gamma_b+(2p_0+6P_0)\ell+26a_0+20]/\pi,\\
+ G_b&=7LM_b/m+V_b/(2m)+2C_{B,b}/m\\
+ &\quad +(4/m)[7+(P_0/\pi)(5+2\log(2m))],\\
+ R_b&=\frac{21+21a_0+2L+[(1+48p_0)H+24p_0]/\pi}{n}
+                                      +\frac{317+5/12}{n^2},\\
+ D_b&=4w_0/\pi+a_0b_0\log\pi,\qquad Z_b=D_b+a_0b_0/n,\\
+ \mathcal M_b&=\frac{a_0b_0(2L+2r_0)}n
+ +\frac{D_b+a_0b_0(L+1/n)}{4n^2-1}+\frac{a_0b_0}{(2n-1)^2}\\
+ &\quad+\frac{Z_b+a_0b_0(\log(n+1/2)+2)}{4(n-1/2)^2},\\
+ C_b&=a_0D_a+10/n^2+G_b+R_b+\mathcal M_b,\\
+ C_s&=\eta\left[\frac{7L}{\pi m}
+     +\frac{3\gamma_b+2\ell}{2\pi m}+\frac{48H+24}{\pi n}\right]\\
+ &\quad +3\left[\frac{\log2+4\log\pi}{\pi m}+W_n\right],\\
+ C_l&=[12\ell+16(5+2\log(2m))]/(\pi m).
+\end{align*}
+The subscripted quantities in this collection are bookkeeping for
+the constant, square-root, and linear contributions.  The final
+three coefficients $C_b,C_s,C_l$ respectively multiply $1$,
+$\sqrt v$, and $v$ after the phase majorizations.  They are built
+from the error terms of the common comparison model, retaining
+their dependence on degree.  Several symbols here are local to
+this calculation: in particular, the constants $a_0,b_0$ in this
+outer-diamond calculation have their displayed meanings, while
+the endpoints of the row band in the selected-pair proof were
+integration limits used there.
+
+The entropy $\Gamma(p,a)=p[1+\log(1+(1+8am/(3\pi))/p)]$
+increases in $a$ and is concave in $p$; its tangent is
+$\Gamma_b+\gamma_b(p-p_0)$.
+The logarithmic expression called entropy here is simply the
+displayed scalar function $\Gamma(p,a)$.  Its concavity in $p$
+allows the upper tangent at $p_0$ to control it even when $p$ moves
+on either side of $p_0$.  Its increase in $a$ first permits the
+substitution $a\leq a_0$.  The tangent slope is $\gamma_b$, which
+explains why the latter enters $C_s$ after the bound for
+$p-p_0$.  Combining these substitutions with all the remaining
+positive allowance terms gives
+\[
+ |S_n-M_\infty|\leq C_b+P_0K_D+C_s\sqrt v+(C_l+4K_D)v.
+\]
+With $j_*=23/250$, $t_*=221/500$, \eqref{uc:model-loss} and
+\eqref{uc:origin-lower} imply
+\begin{equation}\label{ul:outer-gate}
+ \begin{gathered}
+ \Lambda_c-S_n\geq G+Kv-A\sqrt v,\\
+ G=u_1(T+j_*)-t_*p_0-C_b-P_0K_D-\bar e,\\
+ K=T+j_*-C_l-4K_D,\quad A=\eta t_*+C_s.
+ \end{gathered}
+\end{equation}
+The coefficient $G$ is the net gap at the reference value $v=0$.
+The coefficient $K$ is the favorable slope left after paying for
+the linear errors, and $A$ measures the square-root cost.  Once
+$K>0$, all possible $v\geq0$ can be handled by one completion of
+the square:
+
+\[
+ G+Kv-A\sqrt v
+   =K\left(\sqrt v-\frac{A}{2K}\right)^2
+      +G-\frac{A^2}{4K}.
+\]
+
+The task is therefore to bound $G$ below, $K$ below, and $A$ above.
+The rational substitutions at the starting degree provide these
+three bounds with a positive margin.
+
+At $n=320$, \eqref{ul:log-series} gives the sufficient bounds
+\[
+ \begin{gathered}
+ K_D<1/6,\quad W_n<3/125,\quad\ell<13/3,\quad
+ \Gamma_b<18/5,\quad\gamma_b<15/2,\\
+ M_b<13/25,\quad C_{B,b}<8,\quad
+ a_0D_a+10/n^2<3/25,\\ G_b<9/25,\quad R_b<17/50,
+ \quad\mathcal M_b<2/125,\quad C_b<209/250,\\
+ C_s<141/200<71/100,\quad C_l<7/20,\\
+ G>195191/2400000>3/40,\quad K>10,\quad A<7/5.
+ \end{gathered}
+\]
+For instance $\sin\varepsilon>23/(5m)$ proves the stated $\ell$ bound;
+the three terms in the $\eta$ bracket of $C_s$ are below
+$41/1000,2/125,353/1000$.  Every cost decreases for real $n\geq320$:
+$m\ell'\leq1<\ell$, $m\Gamma_b'<p_0\leq\Gamma_b$,
+$m\gamma_b'<1<\gamma_b$, and the remaining positive linear-log
+numerators have decreasing reciprocal quotients.  Thus $G,K$ increase
+and $A$ decreases.  Completing the square in $\sqrt v$ proves
+\begin{equation}\label{ul:outer-exclusion}
+ S_n<\Lambda_c-13/500\qquad(n\geq320,\ 1\leq\rho\leq\pi).
+\end{equation}
+Indeed the sufficient bounds $G>3/40$, $K>10$, $A<7/5$ give
+$G-A^2/(4K)>3/40-49/1000=13/500$.  Their strictness gives the
+strict final inequality, including the two radial endpoints.
+Monotonicity in degree carries the same margin forward from $320$.
+Together with \eqref{ul:wide-exclusion}, this now excludes the
+majorant on every closed radius interval from $3/5$ to $\pi$.
+
+
+The same comparison gives a useful earlier onset on the far half.
+The analytic tail needs the preceding estimate only from degree
+$320$ onward.  Finite certificates can benefit from a regional
+estimate that begins earlier, because they then need to examine a
+smaller part of each phase diamond.  The following calculation
+provides exactly such a closed far-region guard from degree $192$.
+It uses the same model and error allowance, organized as a quotient
+by $u$.
+
+For $0<u\leq1$ define $A_u=1-u$, $C_u=2-u$,
+$F_u=2\sqrt{u(1-u)}$ for $u\leq1/2$ and $F_u=1$ thereafter,
+and $Q_u=\min(2,\sqrt{8u})$.  In \eqref{uc:phase-allowance}
+majorize $a,c_e+c_d,p,q,d_+,P$ by $A_u,C_u,F_u,F_u,F_u,Q_u$,
+and call the resulting positive allowance $\widehat C_E(n,u)$.
+Its quotient by $u$ decreases: this is immediate for the nonentropy
+terms, while the entropy quotient is
+$\Psi(F_u/u,[1+8A_um/(3\pi)]/u)$ with
+$\Psi(r,s)=r[1+\log(1+s/r)]$ increasing in each argument.
+The quotient is useful because the favorable leading model term is
+linear in $u$.  Dividing the whole comparison by $u>0$ leaves a
+constant favorable term and error quotients that decrease with
+$u$.  For the entropy term its two normalized inputs decrease,
+and the increase of $\Psi$ in each input preserves this conclusion.
+Thus an evaluation at one lower endpoint of the $u$ range controls
+the entire far region.  The definition of $F_u$ uses its maximum
+value one after $u=1/2$, providing a continuous bound across that
+change of formula.
+
+For $\rho\geq\pi/2$, $u>u_0=7/24$.  At $n=192$, $u=u_0$,
+\eqref{ul:log-series} gives $21/4<L<421/80$, $H<63/10$ and
+\[
+ \begin{gathered}
+ T>19/2,\quad\bar e<1/4,\quad K_D<13/50,\quad
+ \widehat D<4/25,\quad\widehat G<7/10,\\
+ \widehat C_6<31/40,\quad\widehat{\mathcal M}<1/50,\quad F_uW_n<1/30.
+ \end{gathered}
+\]
+Hence $\widehat C_E<1013/600<17/10$; also $F_u<11/12$, $Q_u<31/20$.
+The anchor comparison is exactly
+\[
+ u_0(19/2+23/250)-(221/500)(11/12)
+             -17/10-(13/50)(31/20)-1/4=79/2000.
+\]
+Its quotient by $u$ increases, so this gap persists for $u\geq u_0$;
+fixed-phase costs decrease with $n$ and $T$ increases.  We have proved
+the closed regional implication needed by hybrid certificates:
+\begin{equation}\label{ul:far192}
+ S_n<\Lambda_c-79/2000<\Lambda_c-3/100
+ \qquad(n\geq192,\ \pi/2\leq\rho\leq\pi).
+\end{equation}
+The radius boundary $\rho=\pi/2$ is included in this implication.
+Its geometric lower bound is already strictly above $u_0$, and
+the comparison has a positive rational margin at $u_0$ itself.
+The guard can therefore be used on the closed outer half of a
+phase diamond by the finite verification.  It supplies a regional
+exclusion, while the smaller radii at those degrees remain the
+responsibility of the certificate construction described in the
+next section.
+
+
+\subsection{Actual corners and completion of the global argument}
+
+The loss estimates have now excluded points near every noncorner
+center, and the majorant has excluded all larger radii for every
+center.  A neighborhood of an actual corner remains.  There the
+reflected values coincide at the center, so the geometric mechanism
+that supplied a positive floor is absent.  Instead we show that
+the Lebesgue function decreases by at least a positive multiple of
+the squared inward displacement.
+
+Write $A,B\geq0$ for inward angular phases at the corner $(-1,-1)$.
+The physical point is $(-\cos(A/n),-\cos(B/m))$.  Dependence on
+$A$ and $B$ is even: reversing one phase leaves that physical
+coordinate unchanged.  An even smooth function has zero first
+derivative at the origin, so its first nonconstant local behavior
+is naturally expressed in the squared variables $s=A^2/2$ and
+$t=B^2/2$.  A rectangle in these variables corresponds to
+$0\leq A\leq\sqrt{2U}$, $0\leq B\leq\sqrt{2V}$ in inward
+phases.
+
+The absolute values in the Lebesgue function require a little care
+before we use derivatives.  For any finite real vector
+$(v_i)$, its sum of absolute values is the largest signed sum:
+
+\[
+ \sum_i|v_i|=\max_{\varepsilon_i\in\{-1,1\}}
+                   \sum_i\varepsilon_iv_i.
+\]
+
+Choose the signs of nonzero entries to agree with those entries;
+the zero entries allow either choice.  Conversely each signed sum
+is at most the sum of absolute values.  Applied to the cardinal
+polynomials, this represents $\lambda_n$ as the maximum of a
+finite family of smooth functions.  We estimate every member of
+that family by the same interpolation bound and only then take
+the maximum.  Its global absolute bound is available because
+the magnitude of every signed sum is at most $\lambda_n$.
+
+At an actual corner the reflection loss vanishes, so a direct descent
+estimate is needed.  We use the signed-vector interpolation principle
+of Lemma~\ref{cert:positive} in squared inward variables
+$s=A^2/2$, $t=B^2/2$.  If $M$ bounds every complete signed cardinal
+sum globally, fourth-derivative Bernstein and evenness give second
+derivative bounds $M/3$, $k^4M/3$ in these variables, where $k=n/m$.
+Indeed for even smooth $f$,
+\[
+ \frac{d^2}{ds^2}f(\sqrt{2s})
+   =\int_0^1\!\int_0^1t^2f^{(4)}(rt\sqrt{2s})\,dr\,dt.
+\]
+This identity also explains the apparent singularity at $s=0$.
+Differentiating $f(\sqrt{2s})$ twice directly produces negative
+powers of $\sqrt{s}$, but evenness cancels them.  An integral
+form makes the cancellation explicit.  Evenness gives $f'(0)=0$,
+and the fundamental theorem of calculus gives
+
+\[
+ \frac{f'(A)}A=\int_0^1f''(tA)\,dt.
+\]
+
+Differentiate with respect to $s=A^2/2$ and use $f'''(0)=0$ to
+write the resulting $f'''(tA)$ as an integral of $f^{(4)}$.
+The displayed double integral results.  It extends continuously to
+$A=0$.  Its nonnegative weight has integral $1/3$, which gives the
+factor $M/3$ from a fourth-derivative bound $M$.
+
+The cardinal functions composed with these angular coordinates
+are trigonometric polynomials.  Bernstein's derivative bound
+controls a derivative by the corresponding power of its angular
+frequency times a global bound for the function.  In the $A$
+coordinate the scaling by $n$ gives frequency at most one.  In
+the $B$ coordinate the scaling by $m$ gives frequency at most
+$k=n/m$.  Four differentiations therefore produce the factors
+one and $k^4$.  The preceding integral identity turns these
+fourth-derivative bounds into the second-derivative bounds needed
+for interpolation in $s,t$.
+
+We recall the elementary shape of that interpolation estimate.
+On a rectangle, bilinear interpolation forms a weighted average
+of the four vertex values, with nonnegative weights.  If a smooth
+function has an upper bound $M_s$ for the magnitude of its second
+derivative in $s$, its one-dimensional interpolation error is at
+most $M_s s(U-s)/2$.  The corresponding error in the other
+variable is at most $M_t t(V-t)/2$.  The Peano kernel is the
+nonnegative integration weight that yields this error formula
+from the second derivative.  Applying the one-dimensional
+formula successively in the two coordinates gives the required
+bound with no mixed derivative estimate.
+
+The nonnegative Peano kernels therefore imply that vertex losses
+$cU,cV,c(U+V)$ at $(\sqrt{2U},0),(0,\sqrt{2V}),
+(\sqrt{2U},\sqrt{2V})$ yield throughout the closed rectangle
+\begin{equation}\label{ul:squared-peano}
+ \lambda_n(-\cos(A/n),-\cos(B/m))
+ \leq\Lambda_c-
+ \left[c-\frac M6\max(U,k^4V)\right]\frac{A^2+B^2}{2}.
+\end{equation}
+The interpolation is applied to smooth signed cardinal sums before
+maximizing over signs.
+
+To see the coefficient in \eqref{ul:squared-peano}, subtract
+$\Lambda_c$ from a signed sum.  Its value at the origin is at
+most zero, and the three other vertex values are at most
+$-cU,-cV,-c(U+V)$.  The bilinear interpolant of these four upper
+values is exactly $-c(s+t)$.  The possible positive interpolation
+error is bounded by
+
+\[
+ \frac M6\{s(U-s)+k^4t(V-t)\}
+ \leq\frac M6\max(U,k^4V)(s+t).
+\]
+
+Combining these two bounds gives the displayed estimate for each
+signed sum and hence for their maximum.  The origin is included:
+the right-hand loss is zero there.  At every other point of the
+rectangle a positive coefficient yields strict descent.  All
+axes are included as well, because the same interpolation
+weights and error bounds apply when $s$ or $t$ is zero.
+
+It remains to establish sufficiently large losses at the three
+nonzero vertices.  This is an efficient use of the comparison
+model: instead of differentiating the absolute-valued Lebesgue
+function locally, we evaluate robust bounds at three fixed inward
+phases and use the global norm to control interpolation between
+them.  The next calculation chooses the square with phase side
+$h=\pi/4$.
+
+Take $h=\pi/4$, $q_0=7/48$, $U=V=\pi^2/32$, and $M=M(n)$ from
+\eqref{uc:analytic-norm}.  Since $(1-\cos h)/2>q_0$, the two axis
+losses exceed $\delta_A$ and the diagonal loss exceeds $\delta_D$, where
+\begin{align*}
+ \delta_A&=q_0(T-\bar e+j)-1/4-C_4-hk_{Wy},\\
+ \delta_D&=2q_0(T+j)-4/15-\overline C_E-(3/2)K_D-\bar e.
+\end{align*}
+For the axes use the same radius-one relative bound, since $h<1$.
+The central estimate gives
+$E_c(h,0)<1/4$ and $E_c(0,h)\leq0$.
+For the diagonal use the completed model on its closed
+$\rho\leq\pi/2$ domain and the full absolute error.
+Here $a=p=q=1/\sqrt2$, $P<3/2$; the root convolution argument only
+needs $p/2\leq a$, so gives
+$E_c\leq(4I_4/\pi^2)p^{3/2}/\sqrt a< (9/25)/\sqrt2<4/15$.
+
+For the two axis vertices, one phase is $h$ and the other is zero,
+so their radii are $h<1$.  They fall within the wide relative
+comparison.  The quantity $q_0$ is a rational lower bound for the
+axis value of $u$, and the upper bound $1/4$ pays for the central
+contribution at the less favorable axis vertex.  Using the same
+$\delta_A$ for both vertices allows one later interpolation
+constant to control the entire square.
+
+At the diagonal vertex both phases equal $h$, and its radius is
+$2h=\pi/2$.  This is exactly the closed endpoint of the completed
+model's stated domain.  The values $a=p=q=1/\sqrt2$ simplify the
+central-pair bound, while the full absolute allowance controls the
+remaining discrepancy.  The resulting loss is $\delta_D$.  This
+diagonal calculation and the axis calculation use the same model
+with the error form appropriate to their respective phase
+positions.
+
+At $n=256$, \eqref{ul:log-series} gives $277/50<L<111/20$,
+$H<131/20$.  Positive substitution gives
+\begin{gather*}
+ T>107/10,\quad\bar e<1/5,\quad K_D<1/5,\quad
+ \overline C_E<3/2,\\ C_4<9/500,\quad
+ k_{Wy}<93/100,\quad M(256)<26.
+\end{gather*}
+For $r_U=2/125>\pi^4/6144$ the combined gates satisfy
+$\delta_A-r_UM>2729/21000>1/8$ and
+$\delta_D-2r_UM>49/1000$.
+Both gates increase for real $n\geq256$: their leading polynomial
+in $L$ is, respectively,
+\[
+ \frac{4(q_0-r_U)L^2-[3q_0+(79/5)r_U]L}{\pi^2}
+ \quad\text{and twice this expression},
+\]
+whose derivative is positive for $L\geq1$; every remaining
+nonconstant cost is a positive decreasing allowance.  This uses the
+degree-dependent bound $M(n)$ inside the gate.
+The norm bound grows with degree, so its contribution must stay
+inside the monotonicity calculation.  The displayed polynomial in
+$L=\log n$ combines that growth with the favorable model term.
+Its positive derivative controls the leading competition, and the
+remaining degree-dependent costs decrease.  Thus checking the
+combined gates at $256$ proves their positivity for the full
+corner tail.  The rational number $r_U$ is an upper bound for the
+factor involving $\pi^4$, which makes the gate evaluation use
+only the stated rational bounds.
+
+For $\delta=\min(\delta_A,\delta_D/2)$ we obtain
+$\delta-M(n)\pi^4/6144>49/2000$.
+Set $c=32\delta/\pi^2$ in \eqref{ul:squared-peano}; since $k\leq1$,
+the descent coefficient exceeds
+$(16/\pi^2)(49/2000)>49/1250>1/30$.  Thus
+\begin{equation}\label{ul:corner256}
+ \lambda_n(-\cos(A/n),-\cos(B/m))
+ \leq\Lambda_c-(A^2+B^2)/30,
+ \quad n\geq256,\quad 0\leq A,B\leq\pi/4.
+\end{equation}
+The node-preserving parity reflection gives the same bound at the other
+nonnode corner, with each mesh in its original coordinate.
+
+The choice $\delta=\min(\delta_A,\delta_D/2)$ ensures that the
+two axis losses are at least $\delta$ and the diagonal loss is at
+least $2\delta$.  Because $U=V=\pi^2/32$, taking
+$c=32\delta/\pi^2$ gives exactly the three vertex losses
+required in \eqref{ul:squared-peano}.  The resulting descent
+coefficient is positive uniformly over the closed phase square.
+For every $(A,B)\ne(0,0)$ in this square, $A^2+B^2>0$ makes
+\eqref{ul:corner256} a strict comparison with the corner value.
+At the origin equality is the defining corner value itself.
+
+We can now assemble the proof by keeping track of two separate
+thresholds.  The corner descent begins at $256$, and the complete
+analytic localization begins at $320$.  Thus the corner estimate
+is already available at every degree where the global analytic
+argument uses it.  The earlier far-region guard at $192$ is useful
+inside finite certification; it does not by itself cover the
+smaller radii at those degrees.  The finite-degree proof in the
+next section supplies precisely the remaining degrees below
+$320$.  These roles allow each estimate to be used on its full
+stated domain while retaining one simple starting degree for the
+global analytic argument.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main-location}]
+For $n\geq320$, fix a point of the physical square and choose any odd chart from
+the closed cover.  We divide the possibilities according to its
+center and its phase radius.  If the center is a noncorner, the
+loss estimates handle radii through $3/5$.  If the radius is at
+least $3/5$, the majorant estimates apply regardless of the center.
+The only remaining possibility is an actual corner center at
+radius at most $3/5$.  Its two inward phases then both lie in
+$[0,3/5]\subset[0,\pi/4]$, where the corner square estimate
+applies.  This describes the full case division before we use the
+individual inequalities.
+
+For $n\geq320$, choose a closed odd chart \eqref{ul:charts}.
+A noncorner center is excluded through $\rho=3/5$ by
+\eqref{ul:near-exclusion} and \eqref{ul:annulus}; every center is
+excluded for $\rho\geq3/5$ by \eqref{ul:wide-exclusion},
+\eqref{ul:outer-exclusion} and $\lambda_n\leq S_n$.
+At an actual corner with $\rho\leq3/5<\pi/4$, admissible phases
+are inward, and \eqref{ul:corner256} is strict except at its origin.
+The odd endpoint pairs are $(n,m),(0,m)$ for even $n$ and
+$(n,m),(n,0)$ for odd $n$, exactly the two corners in the theorem.
+Reflection in the first coordinate for even $n$, and in the second
+for odd $n$, permutes nodes and cardinal polynomials, so their values
+agree.  Compactness supplies the maximum.  Every seam, axis, node and
+endpoint lies in the same closed cover.
+
+The overlap at radius $3/5$ creates no exception: the annular
+inequality and the majorant inequality both include it.  The same
+is true at radius one between the wide and outer comparisons.
+Points with a zero phase are handled by the inequalities on the
+axes, and the corner descent treats its zero phases through
+nonnegative squared variables.  Since all possible chart choices
+are subject to the relevant closed estimates, chart ties also
+retain the strict conclusion.
+
+The parity calculation identifies the equality candidates among
+the physical corners.  At $(n,m)$ the sum $n+m=2n+1$ is always
+odd.  If $n$ is even, $m$ is odd and $(0,m)$ is the other odd
+endpoint pair.  If $n$ is odd, $(n,0)$ is the other one.  Translating
+these angular endpoint pairs back through the cosine coordinates
+gives the two corners in the theorem.  The stated coordinate
+reflection preserves the interpolation set, so it permutes the
+cardinal polynomials and leaves their sum of absolute values
+unchanged.  The two candidate corner values therefore agree.
+
+Finally, $\lambda_n$ is continuous as a finite sum of absolute
+values of polynomials, and the square is compact.  A maximum
+exists.  The strict exclusions just proved force every maximizing
+point to be one of the two candidates, and their common value is
+$\Lambda_c$.  The same equality classification for smaller
+degrees is the content supplied by the finite completion.
+
+Section~\ref{sec:certificates} supplies the finite degrees below $320$
+with the identical strict equality classification.  Its degree ranges
+and the analytic tail cover every integer $n\geq2$.  The limiting-constant
+enclosure used in the scalar comparison remains a trusted computational input to the global
+location proof; the corner expansion of Theorem~\ref{thm:main-expansion}
+has its separate analytic proof.
+The last distinction records the scope of the argument.  The
+global comparison uses the stated enclosure for the limiting
+constant as an input when fixing its scalar bounds.  The finite
+certificates have the arithmetic dependencies and verification
+scope described in the next section.  The analytic corner
+expansion was proved by its own summation argument in the previous
+section.  Combining these ingredients establishes the location
+theorem with those dependencies explicitly retained.
+\end{proof}

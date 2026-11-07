@@ -5,6 +5,7 @@ Run after building with --artifacts to compare actual TeX label numbers.
 """
 from pathlib import Path
 import argparse
+import hashlib
 import re
 import subprocess
 
@@ -71,7 +72,8 @@ def main():
     claims = displays = 0
     for original in sorted((ORIGINAL / 'sections').glob('*.tex')):
         before = frozen(original).decode()
-        after = (HERE / 'sections' / original.name).read_text()
+        after = (HERE / 'sections' / original.name).read_bytes().decode()
+        assert not any(ord(c) < 32 and c not in '\n\t' for c in after), original.name + ': control character'
         heading = r'\\(?:section|subsection|subsubsection)\*?\{[^\n]*'
         assert re.findall(heading, before) == re.findall(heading, after), original.name + ': headings'
         for names, kind in [(CLAIMS, 'statements'), (DISPLAYS, 'numbered formulas')]:
@@ -100,6 +102,10 @@ def main():
 
     if args.artifacts:
         output = REPO / 'local-output/padua-argmax-bridge-20261105'
+        original_pdf = (output / 'paper/main.pdf').read_bytes()
+        assert len(original_pdf) == 640116, 'Original PDF size changed'
+        assert hashlib.sha256(original_pdf).hexdigest() == (
+            '07db86350e74f66a46269965ace65300750f5405ddcd9d30f8daeb59411ca0f0'), 'Original PDF changed'
         left = aux_numbers(output / 'paper/main.aux')
         right = aux_numbers(output / 'companion-paper/main.aux')
         for key in all_labels:
@@ -109,7 +115,7 @@ def main():
             ['pdfinfo', str(output / 'companion-paper/main.pdf')], text=True)
         pages = int(re.search(r'^Pages:\s+(\d+)', info, re.M)[1])
         assert pages <= 240, f'Companion exceeds 5 x 48 pages: {pages}'
-        print(f'PASS: all {len(all_labels)} built label numbers match; '
+        print(f'PASS: original PDF unchanged; all {len(all_labels)} built label numbers match; '
               f'companion {pages} pages <= 240.')
 
 

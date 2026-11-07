@@ -1,0 +1,535 @@
+\section{The interpolation operator and its normalization}\label{sec:preliminaries}
+Put $Q=[-1,1]^2$ and let $\Pi_n$ be the real polynomials of total degree
+at most $n$.
+
+\noindent\textbf{Existence and uniqueness as a linear algebra question.}
+A finite set of points is called \emph{unisolvent for $\Pi_n$} when
+every assignment of one real value to each point is realized by exactly
+one polynomial in $\Pi_n$. Equivalently, the evaluation map
+\[
+ \mathcal E:\Pi_n\longrightarrow\mathbb R^{\mathcal P_n},
+ \qquad \mathcal E(p)=(p(B))_{B\in\mathcal P_n},
+\]
+is a bijection. The notation on the right means a real vector whose
+coordinates are indexed by the nodes. Here the domain and target have
+the same finite dimension. Consequently it suffices to prove that a
+polynomial vanishing at every node must be the zero polynomial. Indeed,
+that condition makes the linear map injective; a square injective
+linear map is also surjective.
+
+The cardinal polynomials are the inverse images of the standard unit
+vectors under this map. Thus existence of all the cardinal polynomials,
+uniqueness of interpolation and invertibility of the evaluation matrix
+are equivalent descriptions of the same fact. Lemma~\ref{lem:cardinal-kernel}
+will establish that fact by computing a weighted sum of products of
+basis values. The weights are positive, which will turn a vanishing
+vector of values into a vanishing vector of coefficients.
+
+The cardinal polynomials satisfy $L_B(A)=\delta_{AB}$ for
+$A,B\in\mathcal P_n$, and
+\[
+ I_nf(z)=\sum_{B\in\mathcal P_n} f(B)L_B(z).
+\]
+The triangle inequality gives $\|I_n\|\leq\max_Q\lambda_n$; equality
+follows by prescribing at the nodes the signs of the cardinal values
+at a maximizing point and extending these finitely many values
+continuously to $Q$. This proves the operator-norm interpretation used
+in \eqref{eq:lebesgue-inequality}.
+
+Here $\delta_{AB}$ is the Kronecker delta: it is one if $A=B$ and zero
+otherwise. To give the norm argument in full, fix $z\in Q$. Then
+\[
+ |I_nf(z)|\leq\sum_B|f(B)|\,|L_B(z)|
+       \leq\|f\|_\infty\lambda_n(z).
+\]
+Taking the maximum in $z$ gives the upper bound. For the reverse bound,
+choose a point $z_*$ maximizing $\lambda_n$ and prescribe
+$s_B=\operatorname{sgn}L_B(z_*)$, with $s_B=0$ if that cardinal value
+vanishes. The finite collection of distinct nodes has a positive minimum
+separation. Choose $\rho>0$ so small that the closed balls of radius
+$\rho$ around distinct nodes are disjoint, and put
+\[
+ \psi_B(z)=\max\{0,1-|z-B|/\rho\},\qquad
+ f_*(z)=\sum_B s_B\psi_B(z),\qquad z\in Q.
+\]
+The norm $|z-B|$ here is Euclidean distance. Each $\psi_B$ is continuous,
+equals one at its own node and vanishes at the others. At any location
+at most one summand is nonzero, so $|f_*(z)|\leq1$. Thus $f_*\in C(Q)$,
+$f_*(B)=s_B$, and
+\[
+ I_nf_*(z_*)=\sum_B\operatorname{sgn}L_B(z_*)L_B(z_*)
+              =\lambda_n(z_*).
+\]
+This constructs an admissible input attaining the bound. It also shows
+why allowing continuous inputs supplies every bounded vector of nodal
+values needed in the operator-norm argument.
+
+\noindent\textbf{Why cosine polynomials are a convenient basis.}
+The Chebyshev identity below specifies an ordinary algebraic polynomial
+in $x=\cos t$. The first examples are
+\[
+ T_0(x)=1,\quad T_1(x)=x,\quad T_2(x)=2x^2-1,
+ \quad T_3(x)=4x^3-3x.
+\]
+The cosine addition formula yields
+$T_{r+1}(x)=2xT_r(x)-T_{r-1}(x)$, starting with $T_0,T_1$.
+It follows inductively that $T_r$ has degree $r$ with nonzero leading
+coefficient. Hence $T_0,\ldots,T_n$ form a basis for one-variable
+polynomials of degree at most $n$. In two variables the products
+$T_p(x)T_q(y)$ with $p+q\leq n$ form a basis for $\Pi_n$:
+their leading monomials are nonzero multiples of $x^py^q$, and the
+remaining terms have lower total degree. Successive elimination by
+degree therefore changes between this basis and the monomial basis.
+We call $(p,q)$ a \emph{mode index}; it records the two cosine
+frequencies after the change to angular variables.
+
+We use the Chebyshev polynomials $T_r(\cos t)=\cos(rt)$. Write
+$\theta_j=j\pi/n$, $\phi_k=k\pi/(n+1)$ and
+\[
+ \epsilon_j=\begin{cases}1/2,&j=0,n,\\1,&\text{otherwise},\end{cases}
+ \qquad
+ \eta_k=\begin{cases}1/2,&k=0,n+1,\\1,&\text{otherwise},\end{cases}
+ \qquad w_{jk}=\frac{2\epsilon_j\eta_k}{n(n+1)}.
+\]
+The endpoint factors are the half weights familiar from the trapezoidal
+rule. Here they give an exact finite identity. A point interior to both angular grids has
+weight $2/[n(n+1)]$; a point on one side has half that weight; a retained
+corner has one quarter of that interior weight. All these numbers are
+strictly positive.
+
+The factor two compensates for retaining one color of the array. More
+precisely, the \emph{checkerboard scalar product} is the weighted sum
+\[
+ \langle f,g\rangle_{\mathcal P_n}
+   :=\sum_{\substack{0\leq j\leq n,\ 0\leq k\leq n+1\\j+k\ \mathrm{even}}}
+        w_{jk}f(\cos\theta_j,\cos\phi_k)
+               g(\cos\theta_j,\cos\phi_k).
+\]
+It is initially a positive semidefinite bilinear form on polynomials:
+$\langle p,p\rangle_{\mathcal P_n}$ is a sum of nonnegative terms,
+and it vanishes exactly when $p$ vanishes at every node. The lemma will
+show that this form is positive definite on $\Pi_n$, meaning that it is
+strictly positive for every nonzero element of that space. This is the
+promised route to unisolvence. For arbitrary functions on the node set,
+it is already the usual weighted Euclidean scalar product of their
+vectors of values.
+
+For the kernel formula below, set $\nu_0=1$ and $\nu_r=2$ for $r>0$;
+these are the mode multiplicities. Define
+\[
+ K_n(z,B)=\sum_{p+q\leq n}\nu_p\nu_q
+ T_p(z_1)T_p(B_1)T_q(z_2)T_q(B_2).
+\]
+
+The word \emph{kernel} here refers to a function of two points, formed
+by summing products of matching basis functions. It is a finite
+polynomial sum in $z$ and $B$. A \emph{reproducing kernel} for a scalar
+product has the additional property that its scalar product with a
+polynomial returns that polynomial's value at the other point. We
+derive that property explicitly in the proof. The displayed $K_n$ has
+the familiar coefficients $1$ for a zero frequency and $2$ for a
+positive frequency in each coordinate. The grid gives one endpoint
+mode a different squared norm, requiring the correction in the lemma.
+
+One can anticipate the usual coefficients from the elementary integral
+\[
+ \frac1\pi\int_0^\pi\cos(pt)\cos(rt)\,dt
+  =\begin{cases}1,&p=r=0,\\1/2,&p=r>0,\\0,&p\ne r.\end{cases}
+\]
+The factors $\nu_r$ are the reciprocals of these continuous squared
+norms. Sampling on an angular grid preserves this orthogonality for
+the required indices but changes the highest available frequency in
+the first coordinate. Since the two grids have sizes $n$ and $n+1$,
+that change occurs asymmetrically. The proof computes it using finite
+sums, so it also verifies exactly which continuous normalization survives
+in the sampled setting.
+
+The phrase \emph{cardinal kernel} in the lemma means that the corrected
+kernel, with the weight of its second node attached, produces the
+cardinal polynomial for that node. More explicitly, write temporarily
+\[
+ R_n(z,B):=K_n(z,B)-T_n(z_1)T_n(B_1).
+\]
+The proof will show both that $R_n$ reproduces $\Pi_n$ in the
+checkerboard scalar product and that $w_B R_n(A,B)=\delta_{AB}$ at
+nodes. The weight belongs to the sampled variable $B$, just as a
+quadrature weight belongs to the variable being summed. Later we
+express this same $R_n$ using angle sums and differences. The angular
+kernel $G_n$ introduced after the proof is the two-angle trigonometric
+sum from which those reflected copies of $R_n$ are assembled. Thus
+cardinal values, reproduction and the angular formula are linked by
+explicit finite identities.
+
+\begin{lemma}[Cardinal kernel]\label{lem:cardinal-kernel}
+The set $\mathcal P_n$ is unisolvent for $\Pi_n$, and for
+$B=(\cos\theta_j,\cos\phi_k)\in\mathcal P_n$,
+\begin{equation}\label{eq:cardinal-kernel}
+ L_B(z)=w_{jk}\bigl[K_n(z,B)-T_n(z_1)T_n(B_1)\bigr].
+\end{equation}
+In particular the coefficient of the highest first-coordinate mode is
+one.
+\end{lemma}
+\begin{proof}
+We first compute a one-dimensional weighted cosine sum. We then use
+the parity condition to transfer that computation to the two-dimensional
+node set. Finally we translate orthogonality into the inverse of the
+interpolation system. All sums in this proof are finite.
+
+\noindent\textbf{The endpoint-weighted geometric sum.}
+For $M\geq1$ let
+\[
+ Q_M(g)=\frac1M\sum_{j=0}^M{}'g(j\pi/M),
+\]
+where the prime gives weight $1/2$ to each endpoint. The symbol $g$
+denotes a function of the angle $t$. Thus $Q_M(\cos rt)$ means that
+$g(t)=\cos(rt)$. The total of the weights before division by $M$ is
+$M$, so $Q_M(1)=1$.
+
+Recall the finite geometric-series identity
+\[
+ \sum_{j=0}^M z^j=\frac{1-z^{M+1}}{1-z}\quad(z\ne1).
+\]
+It follows by multiplying the sum by $1-z$: all middle powers cancel.
+To evaluate the cosine sum, let $r$ be an integer with
+$1\leq r\leq2M-1$, set $z=e^{ir\pi/M}$, and write
+$\sigma=z^M=(-1)^r$. In this range $z\ne1$. Half weighting the two
+endpoints subtracts $(1+z^M)/2$ from the full geometric sum. Thus
+\[
+ \sum_{j=0}^M{}'z^j
+ =\frac{1-\sigma z}{1-z}-\frac{1+\sigma}2
+ =\frac{(1-\sigma)(1+z)}{2(1-z)}.
+\]
+For even $r$, $\sigma=1$ and this expression is zero. For odd $r$,
+the quotient $(1+z)/(1-z)$ is purely imaginary. Writing
+$z=e^{i\alpha}$ gives
+\[
+ \frac{1+e^{i\alpha}}{1-e^{i\alpha}}
+   =i\cot\frac\alpha2.
+\]
+Taking real parts gives zero in both cases. Since
+$\operatorname{Re}z^j=\cos(rj\pi/M)$, the weighted cosine average
+vanishes. For $r=2M$ every cosine value is one, so its average is one.
+This explains why the upper frequency $2M$ has to be kept separate
+from the preceding vanishing range. We have proved
+$Q_M(\cos rt)=0$ for $1\leq r\leq2M-1$ and
+$Q_M(1)=Q_M(\cos2Mt)=1$.
+
+Using $\cos(-t)=\cos t$, the same values apply to negative integer
+frequencies. For $0\leq p,r\leq M$ the product identity
+\[
+ \cos(pt)\cos(rt)=\tfrac12\cos((p-r)t)
+                         +\tfrac12\cos((p+r)t)
+\]
+now computes the scalar products. If $p\ne r$, both frequencies have
+absolute value between $1$ and $2M-1$, so both averages vanish. If
+$p=r$ with $0<p<M$, the constant frequency contributes $1/2$ and
+the frequency $2p$ contributes zero. At $p=r=0$ both contributions
+are constant, and at $p=r=M$ the frequencies are $0$ and $2M$;
+the answer is one in both endpoint cases. Consequently
+\[
+ Q_M(\cos pt\cos rt)=\delta_{pr}h_p^{(M)},\qquad
+ h_p^{(M)}=\begin{cases}1,&p=0,M,\\1/2,&0<p<M.\end{cases}
+\]
+Thus $h_p^{(M)}$ is the squared length of the $p$th cosine mode in this
+discrete scalar product. At the highest mode, the sampled values are
+$\cos(Mj\pi/M)=(-1)^j$, whose square is one at every grid point.
+This gives a direct explanation of $h_M^{(M)}=1$.
+
+\noindent\textbf{What selecting the checkerboard does.}
+Put $e_{pq}(x,y)=T_p(x)T_q(y)$, where $p+q\leq n$.
+The \emph{Gram matrix} is the matrix whose entry indexed by $(p,q)$
+and $(r,s)$ is $\langle e_{pq},e_{rs}\rangle_{\mathcal P_n}$.
+A Gram matrix records all pairwise scalar products of a chosen basis.
+Its diagonal entries are the squared lengths of the basis vectors, and
+an off-diagonal zero expresses orthogonality. We compute each entry
+with the parity restriction included.
+
+The indicator of an even index sum satisfies
+\[
+ 2\mathbf1_{j+k\,\mathrm{even}}=1+(-1)^j(-1)^k.
+\]
+An indicator is one when its subscripted condition holds and zero
+otherwise. Inserting this identity into the weighted sum extends it to
+the full rectangular array and splits it into two products of
+one-dimensional sums. Explicitly, the entry is
+\begin{align*}
+ &Q_n(\cos(pt)\cos(rt))\,
+       Q_{n+1}(\cos(qt)\cos(st))\\
+ &\quad+
+ \left(\frac1n\sum_{j=0}^n{}'(-1)^j
+                    \cos(p\theta_j)\cos(r\theta_j)\right)
+ \left(\frac1{n+1}\sum_{k=0}^{n+1}{}'(-1)^k
+                    \cos(q\phi_k)\cos(s\phi_k)\right).
+\end{align*}
+The first line is the tensor product part: ``tensor product'' here
+means the product of an independent sum in each coordinate. The
+second line is the alternating part caused by the choice of color.
+
+At the grid angles $t_j=j\pi/M$, the identity
+\[
+ \cos((M-p)t_j)
+ =\cos(Mt_j)\cos(pt_j)+\sin(Mt_j)\sin(pt_j)
+ =(-1)^j\cos(pt_j)
+\]
+holds because $\sin(j\pi)=0$. Thus multiplication by $(-1)^j$
+sends mode $p$ to mode $M-p$ on the grid. The first alternating factor
+is $Q_n(\cos((n-p)t)\cos(rt))$, which can be nonzero only if
+$r=n-p$. The second factor can be nonzero only if $s=n+1-q$.
+All these indices lie in the one-dimensional orthogonality ranges
+already proved. In particular $q,s\leq n<n+1$.
+
+For the product to survive, both necessary equalities must hold at once.
+They would imply
+\[
+ p+r=n,\qquad q+s=n+1,\qquad p+r+q+s=2n+1.
+\]
+But the two mode indices are admissible, so
+$(p+q)+(r+s)\leq2n$. This contradiction makes the alternating part
+zero. It is exactly here that the triangular mode constraint and the
+two consecutive grid sizes work together. The tensor product part is
+computed by the one-dimensional identity. Therefore
+\[
+ \langle e_{pq},e_{rs}\rangle_{\mathcal P_n}
+ =\delta_{pr}\delta_{qs}h_p^{(n)}h_q^{(n+1)}.
+\]
+The Gram matrix is diagonal and positive, with diagonal
+$h_p^{(n)}h_q^{(n+1)}$. In particular the $(0,0)$ entry equals one,
+so the nodal weights sum to one.
+
+\noindent\textbf{Positive Gram matrix and interpolation.}
+Expand a polynomial as $P=\sum_{p+q\leq n}c_{pq}e_{pq}$.
+The orthogonality identity gives
+\[
+ \langle P,P\rangle_{\mathcal P_n}
+  =\sum_{p+q\leq n}c_{pq}^2h_p^{(n)}h_q^{(n+1)}.
+\]
+Each factor on the right is positive. If $P$ vanishes at every node,
+the left side is zero. Each coefficient must therefore vanish, proving
+injectivity of the evaluation map. There are $(n+1)(n+2)/2$
+checkerboard points, the same number as the modes, so the evaluation
+map is also surjective. This proves unisolvence.
+
+In matrix notation, choose any fixed ordering of the nodes and mode
+indices, and let
+\[
+ E_{B,(p,q)}=e_{pq}(B),\qquad
+ W=\operatorname{diag}(w_B),\qquad
+ D=\operatorname{diag}(h_p^{(n)}h_q^{(n+1)}).
+\]
+Here $\operatorname{diag}$ denotes the matrix with the listed entries
+on its diagonal and zeros elsewhere; $w_B$ is $w_{jk}$ at node $B$.
+Our calculation says $E^{\mathsf T}WE=D$, where the superscript denotes
+transpose. Since $D$ is positive diagonal, the columns of $E$ are
+independent. Since $E$ is square, it is invertible. This matrix
+expression also tracks the kernel normalization.
+
+For $q\leq n$, the inverse of $h_q^{(n+1)}$ is $\nu_q$. In the
+first coordinate the inverse of $h_p^{(n)}$ is $\nu_p$ for $p<n$,
+while the inverse at $p=n$ is one. The only admissible mode with $p=n$
+has $q=0$. Thus the inverse Gram coefficients are $\nu_p\nu_q$ except
+at $(p,q)=(n,0)$, where the coefficient is one. Precisely one product
+coefficient differs from the continuous normalization described above.
+
+\noindent\textbf{Why a reproducing kernel yields the cardinal values.}
+Define the kernel with these inverse coefficients by
+\[
+ R_n(z,B)=\sum_{p+q\leq n}
+   \frac{e_{pq}(z)e_{pq}(B)}{h_p^{(n)}h_q^{(n+1)}}
+        =K_n(z,B)-T_n(z_1)T_n(B_1).
+\]
+For a fixed $z$, take its scalar product in the $B$ variable with
+$P(B)=\sum c_{pq}e_{pq}(B)$. Orthogonality cancels the denominator
+mode by mode and yields
+\[
+ \sum_{B\in\mathcal P_n}w_B R_n(z,B)P(B)
+      =\sum_{p+q\leq n}c_{pq}e_{pq}(z)=P(z).
+\]
+This is the reproducing property: the weighted scalar product with
+$R_n(z,\cdot)$ returns evaluation at $z$ for every $P\in\Pi_n$.
+
+To see the nodal delta values directly, let $F$ be the matrix with
+entries $F_{A,B}=w_B R_n(A,B)$. Its formula is
+\[
+ F=ED^{-1}E^{\mathsf T}W,
+ \qquad FE=ED^{-1}(E^{\mathsf T}WE)=E.
+\]
+Multiplying $FE=E$ on the right by $E^{-1}$ gives $F$ equal to the
+identity matrix. Hence $w_B R_n(A,B)=\delta_{AB}$. For fixed $B$,
+the function $w_B R_n(z,B)$ lies in $\Pi_n$ and has precisely the
+prescribed cardinal values. Uniqueness identifies it with $L_B$ and
+proves \eqref{eq:cardinal-kernel}. The exceptional coefficient in $K_n$
+was $\nu_n\nu_0=2$; subtracting one copy of its product leaves
+coefficient one, as claimed.
+\end{proof}
+
+\noindent\textbf{A complete small example of the normalization.}
+The case $n=1$ provides a short illustration of the kernel construction.
+Although the main location theorem is stated from degree two onward,
+the interpolation identities in this section already apply at degree
+one. The nodes are
+\[
+ B_1=(1,1),\qquad B_2=(1,-1),\qquad B_3=(-1,0),
+\]
+with respective weights $1/4,1/4,1/2$. In the basis $1,x,y$, the
+weighted Gram matrix is diagonal with entries $1,1,1/2$. For instance,
+\[
+ \langle1,x\rangle_{\mathcal P_1}
+       =\tfrac14+\tfrac14-\tfrac12=0,
+ \qquad
+ \langle x,x\rangle_{\mathcal P_1}=1,
+ \qquad
+ \langle y,y\rangle_{\mathcal P_1}=\tfrac12.
+\]
+The distinction between the last two squared norms reflects the two
+unequal grids.
+
+For $z=(x,y)$ and $B=(\xi,\eta)$, the uncorrected sum and the
+corrected sum are
+\[
+ K_1(z,B)=1+2x\xi+2y\eta,\qquad
+ R_1(z,B)=1+x\xi+2y\eta.
+\]
+Multiplying the corrected expression by each nodal weight gives
+\[
+ L_{B_1}(x,y)=\frac{1+x+2y}{4},\qquad
+ L_{B_2}(x,y)=\frac{1+x-2y}{4},\qquad
+ L_{B_3}(x,y)=\frac{1-x}{2}.
+\]
+Substituting the three node coordinates verifies all nine cardinal
+values directly. Summing the formulas gives one. The exceptional
+$x\xi$ coefficient is visibly one: replacing it by two would alter
+the nodal values and the interpolating polynomial. This example shows
+how a single normalization coefficient affects the entire construction.
+
+It also illustrates the absolute values in the Lebesgue function.
+The elementary identity $|a+b|+|a-b|=2\max(|a|,|b|)$ gives, on $Q$,
+\[
+ \lambda_1(x,y)
+ =\max\left(\frac{1+x}{2},|y|\right)+\frac{1-x}{2}
+ =\max\left(1,|y|+\frac{1-x}{2}\right).
+\]
+Its largest value is two, attained at $(-1,1)$ and $(-1,-1)$.
+All of this follows from the displayed affine polynomials. For larger
+$n$ there are many more changing signs; the kernel representation
+organizes those signs in a way suited to the later proofs.
+
+\noindent\textbf{Passing from physical coordinates to angles.}
+Every $z=(x,y)\in Q$ can be written uniquely as
+$z=(\cos\theta,\cos\phi)$ with $\theta,\phi\in[0,\pi]$.
+In these variables every $T_p(x)T_q(y)$ becomes
+$\cos(p\theta)\cos(q\phi)$. A polynomial kernel of two physical
+points therefore becomes a trigonometric expression involving four
+angles. The \emph{angular kernel} is the finite sum in two free angle
+variables $u,v$ that lets us express the four-angle kernel as an average
+of reflected copies. Its definition below includes the same exceptional
+mode correction already determined by the scalar product.
+
+The same correction appears in the angular kernel
+\begin{equation}\label{eq:angular-kernel}
+ G_n(u,v)=\sum_{p+q\leq n}\nu_p\nu_q\cos(pu)\cos(qv)-\cos(nu).
+\end{equation}
+At a corner it gives the exact signed row sums; in the interior its
+reflections give the cancellation comparison. Thus the two arguments
+start from one normalized kernel.
+
+To spell out the relation, write $B=(\cos\alpha,\cos\beta)$ and
+$z=(\cos\theta,\cos\phi)$. The product-to-sum identity gives
+\[
+ \cos(p\theta)\cos(p\alpha)
+    =\tfrac12\{\cos(p(\theta-\alpha))+
+                         \cos(p(\theta+\alpha))\}.
+\]
+Applying it in both coordinates, including the corrected term, yields
+\[
+ R_n(z,B)=\frac14\sum_{\sigma\in\{-1,1\}}
+                    \sum_{\tau\in\{-1,1\}}
+         G_n(\theta+\sigma\alpha,\phi+\tau\beta).
+\]
+The correction $-\cos(nu)$ in $G_n$ contributes
+$-\cos(n\theta)\cos(n\alpha)$ to this average, because the sum in
+$\tau$ simply supplies two equal copies. Thus it reproduces exactly
+the correction in $R_n$. Substituting node angles $\alpha=\theta_j$
+and $\beta=\phi_k$ and multiplying by $w_{jk}$ recovers $L_B(z)$.
+
+The function $G_n$ is a trigonometric polynomial: a finite linear
+combination of products of sine or cosine functions, here consisting
+only of cosine products. It is even in each angle and $2\pi$-periodic
+in each angle. These properties justify reducing angle expressions
+modulo $2\pi$ and reflecting them when convenient. Such reductions
+apply to the angle arguments of $G_n$; the two different grid mesh
+widths remain fixed throughout.
+
+This representation explains why both angle sums and angle differences
+appear in later formulas. They arise from multiplying a mode evaluated
+at $z$ by the same mode evaluated at $B$. At a corner, $\theta$ and
+$\phi$ are each either zero or $\pi$, so cosine values simplify to
+signs and the two reflected contributions in a coordinate are closely
+related. At an interior point their relative signs carry additional
+information. For real numbers $a_1,\ldots,a_m$ the nonnegative quantity
+\[
+ \sum_{r=1}^m|a_r|-\left|\sum_{r=1}^m a_r\right|
+\]
+measures the cancellation lost if the absolute value is moved inside
+the sum. Applying the triangle inequality to the four reflected copies
+of $G_n$ produces precisely this kind of loss. Later comparisons retain
+and estimate that loss, because its size helps distinguish a corner
+from a competing point.
+
+\noindent\textbf{Why the surviving reflections preserve interpolation.}
+
+
+
+The two nonnode corners in Theorem~\ref{thm:main-location} have equal
+Lebesgue values by symmetry. For even $n$, reflection in the first
+coordinate sends $j$ to $n-j$ and preserves the checkerboard. For odd
+$n$, reflection in the second coordinate sends $k$ to $n+1-k$ and
+preserves it. Uniqueness of interpolation carries these symmetries to
+the cardinal polynomials and hence to $\lambda_n$.
+
+Here is the uniqueness argument explicitly. Let $S$ denote the relevant
+coordinate reflection, so $S$ permutes $\mathcal P_n$ and $S^2$ is the
+identity map. Composition with $S$ preserves total degree. At any node
+$A$,
+\[
+ L_{SB}(SA)=\delta_{SA,SB}=\delta_{A,B}.
+\]
+Thus the polynomial $z\mapsto L_{SB}(Sz)$ has the same cardinal data
+as $L_B(z)$ and belongs to the same space. Unisolvence gives
+$L_{SB}(Sz)=L_B(z)$ for every $z\in Q$. Reindexing the sum of absolute
+values by the node permutation $B\mapsto SB$ proves
+\[
+ \lambda_n(Sz)=\sum_{B\in\mathcal P_n}|L_{SB}(Sz)|
+              =\sum_{B\in\mathcal P_n}|L_B(z)|=\lambda_n(z).
+\]
+For even $n$, the map $(j,k)\mapsto(n-j,k)$ changes $j+k$ by an even
+integer and corresponds to $(x,y)\mapsto(-x,y)$. For odd $n$, the map
+$(j,k)\mapsto(j,n+1-k)$ has the same parity property and corresponds
+to $(x,y)\mapsto(x,-y)$. These maps exchange the two nonnode corners
+listed in Theorem~\ref{thm:main-location}. This proves their equality
+of value before the later strict global comparison is undertaken.
+
+\noindent\textbf{Continuous values at quotient formulas.}
+Finite cosine sums are continuous at every real angle. When a geometric
+sum is written as a trigonometric quotient, its denominator can vanish
+at some angles even though the original finite sum is perfectly
+well-defined. A simple example is
+\[
+ \sum_{r=0}^{M-1}e^{irt}
+    =e^{i(M-1)t/2}\frac{\sin(Mt/2)}{\sin(t/2)}
+      \quad(t\notin2\pi\mathbb Z).
+\]
+At $t=0$ the left side equals $M$, and the quotient on the right has
+that same limit. The polynomial or finite trigonometric expression
+specifies the value at the exceptional angle. This convention applies
+in particular when an evaluation angle meets a node angle, or when a
+sum or difference of angles reaches an endpoint. Such events are called
+\emph{collisions} below. They are included in every closed domain on
+which a bound is asserted.
+
+
+\begin{remark}
+All formulas involving trigonometric quotients are interpreted by their
+continuous polynomial limits at removable singularities. The maximization
+and certificate domains include all nodes, edges and collisions of angular
+coordinates.
+\end{remark}
