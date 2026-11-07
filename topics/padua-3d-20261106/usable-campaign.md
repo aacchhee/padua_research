@@ -77,3 +77,20 @@ AC's new request redirects open handoff09 into handoff10WORK. The exact
 pending handoff09/audit04 scope is preserved and will be combined with
 the new material batch in the next Claude audit handoff. No prior audit
 is fabricated or treated as completed. Only AC merges.
+
+## First checked result boundary — 2026-11-07
+
+U1completed2/10rounds: known explicit parity recipe with matched actual
+accuracy/noise/cost, then same-node OLS tradeoff. U2completed1/10: the
+frozen direct-norm pilot fails at n6/8 but gives a substantial isolated
+n4improvement. Its collision diagnosis motivates a separately registered
+admissible update, not revival of the failed rule. U3fourroutes remain
+in progress and uncounted here; exact F completion/checks are underway.
+Independent checking/audit is separate from these development counts.
+
+At n16 the simple aniso recipe uses1377versus969points; equal-total-budget
+iid-noise risk coefficient972.594versusQR6001.249, a6.170fold reduction.
+The rational-function maximum-error regressions at n12/16 are retained.
+OLS improves noise risk only2.47–8.03percent with higher setup cost.
+U2n4sampled refined amplification falls11.1401to5.43472, but one
+nonsmooth target's RMS worsens. No universal approximation dominance.

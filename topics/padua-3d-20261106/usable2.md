@@ -91,7 +91,13 @@ Aliases: U2-SN; smooth cardinal-row maximum; all-node L-BFGS-B.
 - Disposition: prospective; no result yet. Canonical measured/negative
   homes will be written after actual outcomes. No PD-N for abandonment.
 
-## Prospective finite protocol — awaiting root publication
+## Prospective finite protocol — published before execution
+
+Root published this protocol at
+`fe23e002f25912b2ca2a09b225e385f596f824fe` before implementation or
+scientific execution. The prepublication supplementary review clarified
+numerical reproduction wording, separate assessment measures and total
+construction cost; those changes are included above and below.
 
 Round 1 is one fixed pilot over n=2,4,6,8; it includes the analytic
 gradient check, historical control calibration, full matched controls,
@@ -180,10 +186,151 @@ If and only if the pilot gate passes:
 
 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2_optimize.py --degrees 10 12 --scratch <unique-raw-dir> --output topics/padua-3d-20261106/evidence/u2-holdout.json`
 
+## Round 1 — completed pilot, fixed U2-SN rule fails its extension gate
+
+The first execution stopped at the receipt-size guard after13/16
+assessments. Its16689-byte partial output and exact source snapshots are
+preserved and hash-identified in [diagnosis](evidence/u2-diagnosis.json).
+Only serialization changed: row arrays with a declared schema and nine
+significant display digits; raw output retains full precision. The whole
+unchanged mathematical pilot was rerun in a fresh directory. This repair
+is not a new research round.
+
+Completed command:
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2_optimize.py --degrees 2 4 6 8 --scratch /tmp/padua-u2-pilot-20261107-a2 --output topics/padua-3d-20261106/evidence/u2-pilot.json`
+
+The [15050-byte receipt](evidence/u2-pilot.json) pins actual source/data,
+raw inventory and environment. Gradient-check maximum normalized error
+is5.838e-10. All three historical overlap controls reproduce node hashes,
+mesh41 and historical refined values exactly. All16 assessed sets have
+the required N distinct nodes, valid numerical guards and full dyadic
+rank modulo1000003. This is not a complete committed computer proof:
+large raw trials/nodes are local regenerate-only and the independent
+execution is separate.
+
+| n | localdet fresh refined | joint-norm fresh refined | ratio | extra descent CPU seconds |
+|---:|---:|---:|---:|---:|
+|2|4.153630836|4.153630836|1.000000|0.00494|
+|4|11.140116090|5.434721017|0.487851|0.87645|
+|6|17.669649678|17.669649678|1.000000|0.04493|
+|8|24.124150806|24.124150806|1.000000|0.11678|
+
+The n4 determinant falls45.5801→44.8092 while unscaled condition2 falls
+9.07936→4.25938, establishing observable objective/update separation.
+Its candidate total construction cost is1.02663 CPU seconds including
+QR/localdet. Its Gauss noise maximum falls5.827e-6→3.409e-6, but the
+absolute-value function's Gauss RMS worsens0.0566234→0.0601125; the
+set is not uniformly better for every function. All errors/noise appear
+in the receipt, without selecting by them.
+
+The n6/8 five-percent requirements fail, so **U2-SN is REJECTED: failed
+within this finite operational gate**. Its n10/12 holdout was not run.
+The n4 isolated gain survives as a measured finite result, not a claim
+of a degree-uniform quality improvement. See the scoped
+[negative home](theory/u2-negative-unrestricted-step.md) and
+[measured home](theory/u2-sampled-norm.md).
+
+The [executed diagnosis](evidence/u2-diagnosis.json) explains why the
+reported optimizer success is uninformative at n2/6/8. Its initial
+projected gradient infinity norms are1,2,2, respectively. The next trial
+has exact node collisions (unique counts9/10,68/84,129/165), producing
+`Singular matrix`; the penalty has zero gradient. The third evaluation
+returns to the initial point, and SciPy terminates by relative function
+reduction after one iteration. This is a failure of the specified
+unrestricted-step/penalty combination, not evidence of stationarity.
+
+## IDEA?padua-3d-20261106-codex-U2-02 — admissible projected backtracking
+
+Aliases: U2-AB; separation-scaled projected gradient; Neumann-safe trial.
+
+- Question / scope: does an explicit bounded projected-gradient update
+  avoid the observed first-trial collision failure while improving the
+  same frozen sampled-norm objective?
+- Mechanism and hypotheses: identical localdet start, smooth objective,
+  training/assessment data and quality/cost gates; change the update to
+  projected-gradient steps with a geometric cap, explicit invertibility
+  guard and Armijo backtracking. This is an established optimization
+  variant, with no historical novelty claim.
+- Closest entries read: U2-01 and its preserved trace, IDEA027 and
+  LIT336 direct Lebesgue optimization; all other gate comparisons apply.
+- Separation criterion: every attempted physical step has coordinate
+  displacement at most r/(8*sqrt(3)), where r is the current minimum
+  Euclidean node separation, and a trial is inverted only after
+  rho=||(V_trial-V_current)*V_current^-1||_infinity<=1/2. U2-01 has
+  neither invariant; its initial n6/8 displacements were2 and collided.
+  A replay that reproduces an unguarded collision erases the claimed
+  implementation distinction. This update is not a renamed localdet
+  determinant exchange or a repeat of the failed unrestricted rule.
+- Applicable obstructions: the old quality failure remains valid.
+  Distinct nodes alone do not prove unisolvence; the Neumann condition
+  provides an exact-arithmetic sufficient condition, while its floating
+  implementation is a safeguard and not an interval certificate.
+- Cheapest decisive test: frozen pilot n2/4/6/8, first checking the step
+  displacement, separation and Neumann inequalities in its actual trace.
+- Kill criterion before tests: same five-percent fresh refined improvement
+  over localdet at both n6/8 and120 CPU-second per-degree cap; failure
+  stops this candidate without tuning. Any violation of the declared
+  update invariants blocks quality interpretation until corrected.
+- Discriminability: the new rule is motivated by training-trace collision,
+  not by adjusting against assessment values. Changed update acceptance
+  and invariant traces distinguish it even if it later fails quality.
+- Disposition: prospective; root publication required before execution.
+  No PD-N is allocated before a measured failure.
+
+## Round 2 prospective protocol — awaiting root publication
+
+Run U2-AB at n=2,4,6,8. If its unchanged five-percent/cost/guard gate
+passes, run round3 n=10,12 unchanged; otherwise stop it with a scoped
+negative home. This is the sole additional candidate contemplated by
+the original protocol. No other objective, start, parameter or quality
+measure is selected from pilot assessment results.
+
+The n2/4/6/8 assessment clouds and their R1 results are already known and
+are deliberately reused for this second pilot. They are independent of
+the training mesh, but are **not an unseen R2 assessment holdout**.
+The changed update is motivated by the preserved training-trial collision
+diagnosis, with the original quality criteria unchanged. Degrees10/12
+remain unseen and conditionally reserved for the unchanged R2 rule.
+For that conditional degree holdout, a successful finite transfer means
+the same >=5% fresh refined gain over localdet at both n10/12, with the
+same guards and per-degree120 CPU-second cap. Failure retains the actual
+values and a scoped failed-transfer statement; it does not trigger tuning.
+
+At each accepted iterate x, compute F,g from the existing frozen smooth
+objective. Set d=clip(x-g,-1,1)-x. Stop if ||d||_infinity<1e-7. Let r
+be the minimum pairwise Euclidean node distance and
+delta=r/(8*sqrt(3)); replace d by d*min(1,delta/||d||_infinity).
+Try x+alpha*d for alpha=1,1/2,...,2^-24. Reject without inversion if
+rho=||(V_trial-V_current)*V_current^-1||_infinity>1/2 or nonfinite.
+Otherwise evaluate F_trial and its gradient and accept only if
+F_trial<=F+1e-4*alpha*(g dot d). Stop after25 failed backtracks,
+200 accepted steps,120 process CPU seconds, or relative accepted
+function decrease<=1e-10. Keep the accepted iterate with the lowest
+unsmoothed training maximum, including the initial set. Apply the original
+1e-4 relative improvement and final numerical guard fallback. No restart.
+
+The geometric cap implies a single trial moves each node by at most r/8
+in Euclidean distance, so every pair remains separated by at least3r/4.
+In exact arithmetic the Neumann guard makes the trial Vandermonde
+invertible. These are elementary sufficient safeguards, not claims that
+the floating implementation encloses an inverse. Record actual observed
+displacement, minimum separation, rho, Armijo values, every rejected
+trial and stopping reason, with raw coordinate arrays and hashes.
+
+All initial-stage costs, modular checks, separate Gauss/Sobol assessment,
+functions, noise, seeds, local starts, source/data pinning, unique raw
+policy and independent-check requirements remain those of round1.
+The new driver `u2_admissible_run.py` preserves the old runner/source
+unchanged and explicitly records its update choice. Planned pilot command:
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2_admissible_run.py --degrees 2 4 6 8 --scratch <unique-raw-dir> --output topics/padua-3d-20261106/evidence/u2-admissible.json`
+
 ## Round ledger / Runs needed
 
-No rounds counted and no mechanism run executed. Root must publish this
-protocol before dependent execution. Implement/freeze the runner, execute
-the pilot, preserve each failure, and send the source/node hashes and
-exact command to the supplementary checker. A later code correction must
-preserve the failed execution and its old source snapshot separately.
+R1: one completed fixed pilot; quality gate fails, no n10/12 extension.
+R2: U2-AB protocol only, no execution. R3 conditional unchanged holdout
+only if R2 passes. At most ten rounds are authorized; unused rounds
+remain unused. Root must publish the new update protocol before its
+dependent execution. The separate supplementary checker is rerunning
+R1 from its frozen source and actual node arrays.

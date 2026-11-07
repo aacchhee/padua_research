@@ -640,3 +640,28 @@ their corresponding runs, with publication and execution timing distinguished.
   integer dictionary of the actual real rank. This closes the previously
   unresolved modular defects without inferring real deficiency from them.
   It completes the existing F round, not an artificial extra round.
+
+## 2026-11-07 — first usable result checkpoint — Codex, Astra high
+
+- U1two registered routes are complete and count2/10on this push:
+  explicit operational recipe/all24cases and same-node OLS comparison.
+  Currentsource50da9061 remains unchanged. All76raw/sourceidentities and
+  local links pass; direct API/RHS-shape check maximum9.33e−15. Known
+  analytic covariance/reproduction proofs are separate from measurements.
+- U2first pilot counts1/10: all16sets have nonzero dyadic modular minors,
+  gradient check5.84e−10, all overlap controls repeat. n4quality improves
+  11.1401to5.43472; nonsmooth RMS loss retained. n6/8fallback fails gate,
+  no holdout executed. Source/receipt serialization failure is disclosed;
+  unchanged mathematics actually reran with compact valid evidence.
+- The exact training trace diagnoses singular first trials and return to
+  initial points. New U2admissible-step protocol is published before its
+  run, with geometric separation and exact-model Neumann sufficient guard.
+  Pilot assessments are reused/known, not relabelled unseen; conditional
+  n10/12remains unseen. Old frozen source is now in this pushed checkpoint.
+- Supplementary checker has actually replayed all24U1and16U2cases with
+  matching scientific arrays/traces and fresh exact dyadic ranks; final
+  independently assessed receipts are still being frozen/integrated.
+  This is not Claude audit. U3continues uncounted until its four actual
+  route records and exact-F completion are ready.
+- [Progress report](usable-report.md) and results synchronize the genuine
+  gains, failures and tradeoffs. No final IDs/ranges or merge.

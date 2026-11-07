@@ -209,13 +209,58 @@ when actual results are pushed to LOG.
 
 ## Round ledger
 
-Both rounds are prospectively registered; neither has run or been counted.
+Protocol published by root in
+`fe23e002f25912b2ca2a09b225e385f596f824fe` before either run. Both routes
+executed2026-11-07 using unchanged source SHA256
+`50da9061b5ec4a5a0735664450d62e7e8e2f19675eed66aca0eb463ff193b0d4`.
+These are two distinct actual outcomes; only root's pushed LOG checkpoint
+counts them. Independent replays are checks, not additional rounds.
+
+| Prospective round | Actual outcome | Interpretation / endpoint |
+|---|---|---|
+|1 — explicit known parity recipe | All16cases eligible at n4/8/12/16; budget-normalized noise risk improves over QR by1.664/2.879/4.715/6.170; all prescribed function/cost outcomes retained | Usable known oversampled recipe, with a concrete rational-function maximum-error loss at n12/16; no universal error claim |
+|2 — same-node solver comparison | All8 OLS cases eligible; exact-model risk drops2.47–8.03percent, covariance identity checked; setup cost and mixed deterministic-error changes retained | Known iid-noise solver option, not an automatic practical replacement or new point set |
+
+Canonical analytic results are separate:
+[recipe](theory/u1-parity-recipe.md),
+[noise bound](theory/u1-noise-bound.md),
+[ordinary-LS covariance](theory/u1-ordinary-ls-blue.md).
+The [MEASURED comparison](theory/u1-operational-comparison.md) records
+all actual commands, raw paths/identities, environment, timing and limits.
+Both registered routes have actual outcomes. No source/rule was adapted
+after observing quality, no cap/failure occurred and no fallback was used.
+Neither10-round ceiling nor whole-direction exhaustion is a stop rationale.
+
+The anisotropic recipe uses45/225/637/1377 observations at n4/8/12/16
+versus N35/165/455/969. Its node/weight rule and diagonal moment formula
+are explicit for all n, while practical comparisons remain finite.
+Public use after adding this topic's `code` directory to Python's path:
+
+```python
+from u1_usable import parity_nodes, parity_fit, basis
+nodes, weights, exact_recipe = parity_nodes(16)
+values = f(nodes)                 # one value per canonical node
+coefficients = parity_fit(16, values)
+predicted = basis(query_points, 16) @ coefficients
+```
+
+`parity_fit` also accepts an M by K data matrix. This implementation uses
+dense basis storage/application; no FFT or streaming implementation is
+silently credited. The existing N-node extraction failures remain intact.
+
+Developer API verification (not an additional round or independent audit)
+executed `code/u1_api_check.py` with receipt
+[`evidence/u1-api.json`](evidence/u1-api.json). At n4/16 on both parity
+families, inputs of shapes M, Mx2 and Mx1 returned N, Nx2 and Nx1
+coefficients and reproduced two explicit quadratic/linear polynomials at
+64 independently seeded cube points with maximum error9.33e−15.
+The producer source remained unchanged. Exact command, helper source
+hash and retained raw helper snapshot are in the receipt.
 
 ## Runs needed
 
-Await root's publication of this protocol, then implement
-`code/u1_usable.py` and execute `round1`/`round2` with receipt destinations
-`evidence/u1-round1.json` and `evidence/u1-round2.json`. Exact invocations,
-source identities and raw paths will be recorded from actual execution.
-The supplementary checker independently rebuilds construction/operators
-and replays actual approximation/noise cases; its own outcomes are separate.
+Producer runs are complete. Await the independently executed supplementary
+checker, including the public one/multiple-RHS helper, and dispose its
+findings before final integration. The required substantive independent
+Claude audit remains root's subsequent combined handoff; this worker does
+not approve its own work or allocate final IDs.
