@@ -98,3 +98,17 @@ closures; label it a fixture, not a residual sample or new finite result.
 Measure inode uniqueness/physical bytes before and after, validate all
 original proof bytes, export, verify returned sample closure and report
 actual tar.gz bytes. No new native call is needed for this fixture.
+
+## AC requirement for the next pack — 2026-11-07
+
+Future implementation requirement, not a description of the released996fedc
+pack: complete rechecking in parallel during the campaign, before reporting
+it finished. Reuse the full pass validation already performed by workers;
+perform any remaining pair-level checks in the bounded worker pipeline.
+Persist completed validation receipts bound to immutable evidence hashes.
+
+`collect_data` should only read those small receipts, check source/coverage
+and completion metadata, draw or reuse the sample, and assemble the archive.
+It must not serially repeat the full raw-history validation over every degree.
+The current release's collect-time full recheck is superseded as a design
+choice for future packs; no runtime code or existing archive changes here.

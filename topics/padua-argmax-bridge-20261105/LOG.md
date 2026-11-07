@@ -1752,3 +1752,16 @@ Final publication check: essentialindex358entries/29473B (withinreviewed32KiBexc
 PR27metadataupdateSUCCEEDEDviaGitHubconnectorafterearlierreadfailures: open/DRAFT/WORK/mergedfalse, titleandWORK/AUDIT/PRrewrittenforglobal320/F01–F10/compactSyvertreceipts, no ready/merge. Source/artifactheadsareindividuallypinned. Globalregistry/finalIDs/reservationreadinessremaindeferred. ACnowreportsfreshcompactrun.logcases92–100exit0andprogress; stillnotanadoptedfinitecertificateorcompletedcampaign. NoextraForensics/analyticroundrequested.
 
 AtthisgenuinesessionboundaryoutputsarecommittedFIRST. Next[12-work-compact-return.md](handoffs/12-work-compact-return.md) keepsCodexWORKonactualcompactreturnandEXACTtworandomnativechecks, thenClaudeaudit; thisloglineprecedesfollowinghandoff-only11status/new12commit. User'sfreshpacketisalreadydeliveredandrunning; no repeatedpermissionneeded.
+
+## 2026-11-07 — Future collection should package already checked results
+
+AC: “for the future: the recheck should have happened in parallel,
+collect_data should only build zip or do some minor work.” Recorded in
+compact_pack/SPEC.md as a next-pack requirement: complete full verification
+in parallel within the bounded run pipeline, reuse worker checks, and persist
+hash-bound completed validation receipts. Collection performs only small
+source/coverage/completion checks, sample selection and archive assembly;
+it must not repeat a serial all-degree raw-history scan. This is a prose
+requirement only: no code, scientific claim, test, released ZIP or manifest
+has changed. Novelty gate is inapplicable. Rules4a5de20 revalidated unchanged
+through input280ff36; handoff12 remains open for actual compact-return work.
