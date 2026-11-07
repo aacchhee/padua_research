@@ -1,0 +1,46 @@
+{
+  "scope": "independent identity codec check; producer verifier tested on mutated in-memory copies; no master manifest write",
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/code/artifact_manifest.py",
+    "bytes": 8313,
+    "sha256": "11dcb5d0239a7cc5ea6b583a00027c0ae50822fa2800e36dc8a723766d2fc23a"
+  },
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/continuation-review/code/check_manifest.py",
+    "bytes": 4604,
+    "sha256": "1e0553630ef7b2718643d37f44dd4bb9a4a9613434695c8938e1a7d8c3dffcd4"
+  },
+  "base": "97c323bfae15cf3c76f40802c3ebabedceeb0c60",
+  "base_manifest_sha256": "ec763c5efcf8300d7329819485cef4eafae10bb218795b871f9c567b0f6358d8",
+  "identity_rows": 261,
+  "checks": [
+    "independent_v5_to_v6_identity_equality",
+    "utf8_prefix_and_varint_sizes",
+    "digest_bit_flip",
+    "missing_digest_byte",
+    "extra_digest_byte",
+    "bad_path_utf8",
+    "noncanonical_count",
+    "oversized_count",
+    "cache_path",
+    "concatenated_zlib",
+    "inherited_hash"
+  ],
+  "metadata_not_authenticated": [
+    "rules_input_sha",
+    "generate",
+    "verify",
+    "format",
+    "artifacts_codec",
+    "limits"
+  ],
+  "envelope_removed_fields": [
+    "commands"
+  ],
+  "envelope_changed_fields": [
+    "artifacts_codec",
+    "format",
+    "limits",
+    "schema"
+  ]
+}

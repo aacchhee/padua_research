@@ -35,7 +35,7 @@ why literal prospective operation/checkpoint adherence is not claimed.
 Overall status: **MEASURED**.
 Candidate disposition: **REJECTED: failed**, solely the fixed200-step/
 120-extraCPU degree14 extension under the recorded actual implementation.
-Neither the previously successful n2..12 rule nor the general objective,
+Neither the U2-AB pilot gates at degrees6/8 and holdout gates10/12 nor the general objective,
 all direct optimization, shortened schedules, or all-degree target is
 rejected. All-degree stable minimal interpolation remains OPEN.
 
@@ -76,14 +76,20 @@ unused fractions and noninterleaved timing limit that comparison.
 All raw trajectories/nodes/searches have a byte/hash inventory in the
 unique local regenerate-only scratch directory named by the receipt.
 They are not archived or sufficient for a computer-assisted exact proof.
-No independent numerical rerun of this new result is claimed here;
-root's separate review and formal Claude audit remain pending.
+The distinct reviewer's [executed check](../continuation-review/evidence/u2.json)
+actually verifies source/raw identities, all881 events and accepted-prefix
+selection, guard/Armijo trace data and strict cost failure, and independently
+reconstructs maps and fresh22540-query/physical-search lower samples for
+U2 and repeated localdet. It recovers U2's35.544330716 peak. This is an
+independent numerical/trace check, not a new construction-timing benchmark.
+Formal Claude audit remains pending.
 
 ## Open items
 
 The fixed120-second/200-step extension is parked. The strong finite
-benefit permits a separate training-only cost calibration and a newly
-registered shorter-schedule degree holdout; it does not erase this
+benefit permitted the separately completed training-only cost calibration and
+shorter-schedule degree16 holdout, recorded in
+[u2c-shortened-transfer](u2c-shortened-transfer.md); those do not erase this
 failure. General convergence, certified norms, all-degree stability and
 broad error/noise dominance remain unresolved.
 

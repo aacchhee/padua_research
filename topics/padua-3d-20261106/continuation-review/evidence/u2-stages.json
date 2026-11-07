@@ -1,0 +1,149 @@
+{
+  "scope": "independent deterministic clock stage pre/post caps, active-trial raw retention and cap-path fallback; zero research rounds",
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/code/u2c_guarded.py",
+    "bytes": 8684,
+    "sha256": "17d86805ae063e59e87d7d662bb404fb8267f781697a2b148b75e4fc6cca508d"
+  },
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/continuation-review/code/check_u2_stages.py",
+    "bytes": 3808,
+    "sha256": "f1be4033d64b098ca533a8f37b0f70fd8760dda8f3a7fc5738aefe9641df0afb"
+  },
+  "cases": [
+    {
+      "case": "normal",
+      "termination": "iteration_cap",
+      "accepted": 1,
+      "fallback": false,
+      "mock_cpu": 0.12999999999999998,
+      "events_retained": 2,
+      "last_stage": {
+        "name": "final_output_checkpoint",
+        "before": 0.10999999999999999,
+        "after": 0.12999999999999998,
+        "executed": true,
+        "cap": null
+      }
+    },
+    {
+      "case": "training_pre",
+      "termination": "cpu_cap",
+      "accepted": 0,
+      "fallback": true,
+      "mock_cpu": 2.0199999999999996,
+      "events_retained": 0,
+      "last_stage": {
+        "name": "training_preparation",
+        "before": 2.0,
+        "executed": false,
+        "cap": "pre"
+      }
+    },
+    {
+      "case": "training_post",
+      "termination": "cpu_cap",
+      "accepted": 0,
+      "fallback": true,
+      "mock_cpu": 2.0199999999999996,
+      "events_retained": 0,
+      "last_stage": {
+        "name": "training_preparation",
+        "before": 0.0,
+        "after": 2.0,
+        "executed": true,
+        "cap": "post"
+      }
+    },
+    {
+      "case": "guard_post",
+      "termination": "cpu_cap",
+      "accepted": 0,
+      "fallback": true,
+      "mock_cpu": 2.039999999999999,
+      "events_retained": 2,
+      "last_stage": {
+        "name": "trial_guard",
+        "before": 0.060000000000000005,
+        "after": 2.0,
+        "executed": true,
+        "cap": "post"
+      }
+    },
+    {
+      "case": "objective_post",
+      "termination": "cpu_cap",
+      "accepted": 0,
+      "fallback": true,
+      "mock_cpu": 2.039999999999999,
+      "events_retained": 2,
+      "last_stage": {
+        "name": "trial_objective_gradient",
+        "before": 0.07,
+        "after": 2.0,
+        "executed": true,
+        "cap": "post"
+      }
+    },
+    {
+      "case": "initial_checkpoint_post",
+      "termination": "cpu_cap",
+      "accepted": 0,
+      "fallback": true,
+      "mock_cpu": 2.0299999999999994,
+      "events_retained": 1,
+      "last_stage": {
+        "name": "initial_checkpoint",
+        "before": 0.03,
+        "after": 2.01,
+        "executed": true,
+        "cap": "post"
+      }
+    },
+    {
+      "case": "trial_checkpoint_post",
+      "termination": "cpu_cap",
+      "accepted": 0,
+      "fallback": true,
+      "mock_cpu": 2.0299999999999994,
+      "events_retained": 2,
+      "last_stage": {
+        "name": "trial_checkpoint",
+        "before": 0.08,
+        "after": 2.01,
+        "executed": true,
+        "cap": "post"
+      }
+    },
+    {
+      "case": "final_guard_post",
+      "termination": "cpu_cap",
+      "accepted": 1,
+      "fallback": false,
+      "mock_cpu": 2.0199999999999996,
+      "events_retained": 2,
+      "last_stage": {
+        "name": "final_numerical_guards",
+        "before": 0.09999999999999999,
+        "after": 2.0,
+        "executed": true,
+        "cap": "post"
+      }
+    },
+    {
+      "case": "cap_fallback",
+      "termination": "cpu_cap",
+      "accepted": 1,
+      "fallback": true,
+      "mock_cpu": 2.0199999999999996,
+      "events_retained": 2,
+      "last_stage": {
+        "name": "iteration_preparation",
+        "before": 0.09999999999999999,
+        "after": 2.0,
+        "executed": true,
+        "cap": "post"
+      }
+    }
+  ]
+}

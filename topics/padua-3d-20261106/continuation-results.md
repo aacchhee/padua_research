@@ -7,6 +7,19 @@ Actual configured metadata disclosed, provider runtime metadata unexposed.
 AC authorizes up to seven additional rounds per direction. Gates decide
 whether more work is justified; ceilings are not spending requirements.
 
+## Final decisions
+
+|Direction|Completed additional rounds|Decision|
+|---|---:|---|
+|U1 extra-point fitting|2/7|Keep the explicit practical baseline under its stated measure/noise assumptions. Observation-shape API defect is fixed and separately checked. Degree/noise calibration is useful for known test targets; fixed-allocation GLS refinement misses the5percent total-error gate and stops.|
+|U2 minimum-count direct optimization|4/7|Keep a finite degree16/N969,40-step procedure for the strict-site-count/amplification objective. Its10.50percent norm gain survives a control using99.94percent of the same extra allowance. Noise risk and most tested function RMS comparisons worsen, so it is not a general error winner. Stop at this finite endpoint.|
+|U3 structural half-shifts|1/7|Stop the complete tested28-case degree7route: every case loses QR competitiveness. Broader phase/partition families remain OPEN.|
+
+Unused slots in the current seven-per-direction authorization are5/3/6.
+Cumulative completed counts are4/7/5 against the original10/10/20ceilings.
+No useful registered next question justifies spending the remaining slots
+now. Repairs and verification consume zero construction rounds.
+
 ## First completed round in each direction
 
 |Direction|Measured outcome|Decision|
@@ -85,10 +98,41 @@ allow the identical determinant method to stop after individual rows and
 use nearly the full allowance. C3's pass is retained; no stronger-control
 outcome is claimed before execution. [Receipt](evidence/u2c-heldout16.json).
 
+## Fourth U2 round: the advantage survives a nearly full-cost control
+
+The identical determinant method reran from the same initial set and
+continued into the next sweep, retaining the last complete row within the
+fixed65.78345extra-CPU allowance. It selected344rows beyond its first
+extra sweep at65.74608CPU; only0.03737seconds remained unused. The next
+row overshot and was retained/excluded. Cost, not quality, selected the
+prefix. Independent degree2/3bitwise tests confirm the kernel retains the
+original full-sweep arithmetic and order.
+
+Fresh searched amplification is71.70775for U2 versus80.12012for the
+finer-row control, ratio0.89500. This passes the unchanged5percent gate.
+The finer control's determinant increases while its norm worsens relative
+to79.26742at the cheaper whole-sweep prefix; that unfavorable outcome is
+retained. A separate actual-data and fresh-query/search check reproduces
+the comparison, budget selection and row updates. Neither search certifies
+a continuous maximum or proves global optimality.
+
+The practical limitation is substantial: U2's iid coefficient-risk trace
+is2.358026versus2.225993for this stronger control,5.93percent worse;
+pooled noise RMS is worse on both measures, and12of16non-floor target/
+measure RMS comparisons worsen. Lower amplification does not imply lower
+error for these particular targets/noise. Retain the969-site procedure
+for its specified norm objective, not universal approximation superiority.
+See [C4 receipt](evidence/u2c-prefix-control.json) and
+[complete independent review](continuation-review.md).
+
 ## Round ledger and pending work
 
-At this checkpoint the campaign has completed U1=2/7,U2=3/7,U3=1/7; prior
-counts2/3/4 become4/6/5 cumulative. Unused current slots are5/4/6.
-U1fixed-allocation refitting and U3all28quality are parked. The stronger finer-row U2control test is prospective, not already consumed. Formal Claude combined audit handoff11/09
-remains pending; supplementary continuation review is in progress.
-No final IDs/ranges, shared registry application, readiness or merge.
+The campaign has completed U1=2/7,U2=4/7,U3=1/7, cumulative4/7/5.
+All allocated experiments have actual outcomes and distinct consequential
+checks. Current unused slots5/3/6are retained, not pre-consumed. U1fixed-
+allocation refitting and U3all28quality stop; U2retains a finite endpoint.
+The [API response](response-interim-01.md), [focused API review](api-response-review.md)
+and [continuation review](continuation-review.md) are complete supplementary
+records. Formal Claude combined audit handoff11/09remains pending, now
+including this response and continuation. No final IDs/ranges, shared
+registry application, readiness approval or merge. Only AC merges.

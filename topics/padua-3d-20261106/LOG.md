@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: API response and up to seven further rounds per direction · Active: [handoffs/14-seven-round-continuation.md](handoffs/14-seven-round-continuation.md)
+- Stage: AUDIT · Next: combined formal Claude audit04 when capacity returns · Successor: [handoffs/15-combined-audit.md](handoffs/15-combined-audit.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -832,3 +832,11 @@ their corresponding runs, with publication and execution timing distinguished.
 - Full-sweep control spends49.91419of65.78345extra allowance,24.12percent unused. Because9.54percent normmargin is modest, preregister one stronger per-row-prefix comparison before recommending a full-cost advantage. That follow-up is not yet executed/count-consumed.
 - Actualnewcounters2/3/1, cumulative4/6/5, currentunused5/4/6. U1/U3specificroutes parked; no blanket family failure. OriginalU2C1strictcostfailure remains distinct from C3newstage/checkpoint implementation.
 - Manifest envelope metadata wording condensed only; exactv6codec/payload/decodedidentitymap and requiredmetadata are unchanged. Dated followup in manifest-v6.md; originaltestreceipt stays historically pinned.
+
+### Completed continuation endpoint and stronger-control review
+
+- U2C4fine-row control uses65.74608of65.78345extraCPU (99.94percent). U2searchednorm71.70775versus80.12012, ratio0.89500: stronger5percent gatepasses. Independent actual-row/clock-budget/hash/update/freshquery checks reproduce the result; no independenthardwaretimingrerun claimed. The3nanosecond receipt-rounding difference selects the identical prefix under both precise budgets.
+- Retain adverse outcomes: U2iidrisk5.93percentworse and12of16non-floor target/measure RMS cases worse than fine control. This is a finite strict969-site/amplification endpoint, not general error/noise dominance or certified supremum. No more automatic degree/cost/seed escalation.
+- Final newroundcounts2/4/1of7each, cumulative4/7/5within original10/10/20. Current unused5/3/6retained; old overallroom6/3/15is not silently added to this campaign. U1refit/U3specified route stop at failed gates; U2finite endpoint retained. All allocated experiments actually finished.
+- [Complete continuation record](continuation-results.md), [independent supplement](continuation-review.md) and [usable recipes](usable-recipes.md) cover outcomes/limits. APIresponse is narrowly fixed/independentlyPASS; degree-domainhardening staysNOTE. Formal combinedClaude audit04remainsPENDING, preserving handoff11/09scope and old explicit uncovered/source/E4obligations.
+- Stage AUDIT. No IDs/ranges, shared scientificregistry application, ready/merge or archivaldelivery. Publish all outputs before status-only closing14 and opening15 for the formal audit when available. Only AC merges.

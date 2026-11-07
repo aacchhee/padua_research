@@ -102,6 +102,32 @@ all geometric/Neumann/Armijo safeguards. Construction is an offline cost;
 all 200-step stops are recorded as caps, not convergence. The stored
 artifact avoids that cost when using this particular degree-twelve set.
 
+## Minimum count: the degree-sixteen procedural example
+
+The new40-step procedure produces969points for Pi_16. On the recorded
+machine it used65.78extra CPU seconds after QR/initial exchange,
+124.20seconds total construction. Its searched amplification was71.71
+versus80.12for a determinant control using nearly the same extra budget.
+Its noise risk and most tested function RMS comparisons were worse;
+choose this example only when its strict distinct-site count and
+amplification objective fit the task. Optimization stopped at a step cap.
+
+Reproduce the construction and its recorded benchmark with a new scratch
+directory and output filename:
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2c_heldout.py --scratch /tmp/UNIQUE-padua16 --output /tmp/UNIQUE-padua16-receipt.json
+```
+
+The generated coordinates are `/tmp/UNIQUE-padua16/joint_norm.npy`.
+Load them with `np.load` and use the square solve above at n=16. This full
+benchmark also times controls and assesses errors, so its end-to-end cost
+exceeds candidate construction alone. Commands, versions, safeguards,
+regressions and independent checks are in [continuation results](continuation-results.md).
+The new coordinates are procedural regeneration output, with numerical
+validation; they do not inherit the committed455-point artifact's exact
+unisolvence proof or an all-degree guarantee.
+
 ## Scope and review
 
 U1 offers a known explicit recipe with a directly proved Gram/noise
