@@ -107,3 +107,53 @@ Planned command:
 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2c_transfer.py --scratch <new-unique-dir> --output topics/padua-3d-20261106/evidence/u2c-transfer14.json`
 
 Other six further-round slots remain unallocated until C1 is assessed.
+
+## C2 prospective append — training-only shorter-budget calibration
+
+2026-11-07, after C1's actual degree14 outcome. C1's full120-second
+recipe fails its strict cost gate and remains failed; its implementation
+deviation is canonical in u2-continuation.md. Its searched norm benefit
+is strong, which motivates this distinct allocation question: can a
+shorter fixed accepted-step cap be selected using **training/cost only**
+for a new higher-degree test? This does not change the objective/update
+mechanism or claim historical novelty. It is a known stopping-schedule
+variant, closest to the existing U2-AB. It is not an unseen-data claim:
+C1's whole result is known, and before this registration the developer
+inspected training/cost prefixes50/80/100/150 (including80 at57.1465CPU).
+No new prefix quality is inspected or used in this calibration.
+
+Count C2 as one adaptive research/calibration round only when this
+registered analysis actually executes. It constructs no new optimizer
+trajectory, proves no runtime bound and does not convert any recorded
+prefix cost into a complete construction-cost pass.
+
+Freeze candidate caps K={40,60,80}, target degree16 N969. For each K,
+read only C1's source-pinned raw trace and select the accepted iterate
+with the smallest **training** maximum among iterations0..K, preserving
+the original fallback. Verify prefix geometric/accepted-Neumann/Armijo
+invariants and the selected nodes' numerical condition/residual guards.
+No fresh norm query, function error, or noise statistic enters this rule.
+
+Let t_K be the recorded CPU at completion of accepted step K, which
+includes all prior training preparation and trial work but not the later
+complete trajectory flush. Compute the deliberately conservative heuristic
+forecast T_K=(t_K+2)*(969/680)^3. The added2seconds is a reserve for
+final recording/guards; cubic dimension scaling is a planning heuristic,
+not a proved cost bound. A schedule is eligible iff its training maximum
+is <=0.8 times C1's initial training maximum, numerical/invariant guards
+pass, and T_K<=100 CPU seconds. Choose the largest eligible K, with no
+quality-based choice. Preserve all candidates and their failures. If no
+K qualifies, park the shorter-schedule route; do not add another K.
+
+If and only if C2 passes, prospectively register C3 before execution:
+apply the selected **fixed K** from scratch at new degree16, unchanged
+U2-AB objective/update/start and all controls, new assessment seeds/clouds,
+full costs, matched-cost repeated localdet and original5%/120-second
+quality/guard/cost gate. C3's real cost gate, not this heuristic forecast,
+decides feasibility. No automatic further round follows a C3 failure.
+The changed schedule is explicitly calibrated, not an unchanged200-step
+transfer or unseen stopping-parameter choice.
+
+C2 command as planned:
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2c_calibrate.py --receipt topics/padua-3d-20261106/evidence/u2c-transfer14.json --output topics/padua-3d-20261106/evidence/u2c-calibration.json`
