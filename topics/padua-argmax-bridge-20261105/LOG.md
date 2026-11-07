@@ -2058,3 +2058,29 @@ recordedinpaper-positioning.md: CAfirstambitiousspecialisttarget, JAT
 naturalalternative forcombinedtheorems, conditionalonfinalaudit and
 qualifiedprioritycomparison. Not anacceptanceforecast, submission or
 editorcontact. This adviceadds nopriorityor mathematicalclaim.
+
+## 2026-11-07 — Constructive Approximation manuscript requested
+
+AC chooses Constructive Approximation and requests a paper draft using
+the journal templates; intermediate IDs are explicitly permitted until
+PR preparation. Rules AGENTS/WORKFLOW/CODEX read at full input head
+5d50bbe700b1fc7cdb9a799756bb6cff65bd7df6. Both origin main and topic
+fetched; main/base remains f70a260e5b5f9a01209dc8a05faabdcf8db1feeb,
+working topic matches its pushed head. This request redirects pending
+Claude audit16 to manuscript WORK17; no audit is claimed completed.
+
+Scope: faithful exposition of established H sharp corner expansion and
+G01 exact argmax, literature attribution, mathematical certificate
+semantics, reproducibility and compilation in the current official
+Springer/CA template. No new mechanism, numerical campaign, final-ID
+allocation or claim of historical priority; the novelty gate is not
+reopened because this is exposition of the already gated results.
+
+Root orchestrates; bounded template/build development delegated to
+gpt-6.1-sol medium, asymptotic and argmax exposition to separate
+gpt-6.1-sol xhigh developers with disjoint section ownership. Model
+names/efforts are requested identities; runtime serving metadata is
+unexposed. A distinct Astra mathematical consistency review will supplement
+the stillpending substantive Claude audit. No submission/editor contact.
+Source and authored prose are tracked; template downloads, build logs and
+PDF stay off Git under local-output, preserving AC's 10MB generated cap.
