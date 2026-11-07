@@ -107,3 +107,12 @@ outside numerical/runtime acceptance identity. Every Python generation disables
 site processing and bytecode writes: operations use `-I -S -B`; sibling engine
 launches use `-E -S -B`. Equivalent package copies share a conservative manifest
 writer domain: any tagged live writer in that domain causes collection refusal.
+
+The pinned GMP6.3 runtime has an actual ELF requirement for **glibc>=2.38**.
+Root's read-only `readelf --version-info` inspection found GLIBC_2.38 in
+libgmp.so.10.5.0; pinned FLINT requires up to GLIBC_2.34 and MPFR less. Therefore
+this offline package requires glibc>=2.38 on Syvert2. Syvert2's actual OS/glibc
+remains unverified: this is a binary prerequisite, not an observed target failure.
+The existing ldd preflight must reject an unresolved/version-incompatible loader
+closure before any engine launch. Pins are unchanged; no compatibility experiment
+or alternate dependency selection is implied.

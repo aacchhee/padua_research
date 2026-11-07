@@ -87,3 +87,8 @@ Compact complete mathematical certificates and accounts are committed;
 bulk raw/build artifacts remain local and physical archive delivery/durable
 external retrieval are pending. Exact commands/source/cases are the frozen
 D38 calibration SPEC/cases and independent review registration.
+
+
+## Final hybrid validation retention —2026-11-07
+
+The two known-case primaries and independently executed fresh41/511 retain complete outputs in local-output/argmax-bridge-20261105/final-hybrid-validation/{primary-n41,primary-n511,verify-n41,verify-n511}/. Their fresh native source snapshots/TUs/binaries/arithmetic dependencies remain at the exact build-manifest workdirs under local-output/argmax-bridge-20261105/final-hybrid/engine/. Do not copy only the four small result directories and omit these linked build trees. Exact whole-raw identities, direct tool observations, full mathematical certificates and complete accounts are committed under evidence/final-hybrid-validation/ and checked in independent-checks-final-hybrid-engine.md. Preserve every original file; physical archive delivery and durable external retrieval remain pending. Public dependency packages and the first failed proxy attempt remain under final-assets-public-retrieval{,-network}; pins and official retrieval URLs are in syvert2_pack/assets.py. No historical timing/completion regeneration is promised.

@@ -131,3 +131,66 @@ payloads and archives remain off Git. No bulk/remote execution or new AC approva
 flow is implied: source review, bounded operational registration/release, separate
 INTERIM Claude audit and applicable internal root execution release remain within
 AC's existing audit-then-run authorization. Branch remains WORK.
+
+## Actual binary portability prerequisite — 2026-11-07
+
+Root inspected the pinned ELF files read-only using readelf. The actual GMP6.3
+libgmp.so.10.5.0 requires GLIBC_2.38; FLINT's maximum observed requirement was
+GLIBC_2.34 and MPFR's was lower. Thus the frozen offline payload requires
+**glibc>=2.38**. Syvert2's OS/glibc remains unverified; no target failure has been
+measured. Existing ldd preflight must refuse incompatible/version-unresolved
+libraries before engine admission. Package pins, code and resource caps remain
+unchanged. This prose-only clarification followed accepted focused source review;
+it does not supply a compiler/native compatibility result or permission to run.
+
+## Prospective real archive-builder registration — UNEXECUTED
+
+This registration is for one real producer/archive job only, after operational
+fixture checks and explicit internal root release. It adds no scientific case.
+Root will choose the full published source SHA after final source updates and
+record it with the final command; the literal PUBLISHED_FULL_SHA placeholder
+below is deliberately not executable authority. The job must use a fresh output
+and preserve first failure without overwrite, retry, pruning or cap increase.
+
+Exact proposed command shape, run from /workspace/padua_research:
+
+```sh
+/usr/bin/time -v -o local-output/argmax-bridge-20261105/final-builder-PUBLISHED_FULL_SHA.time \
+  timeout --signal=TERM --kill-after=10s 300s \
+  bash -c 'ulimit -v 4194304; ulimit -t 120; ulimit -f 1048576; exec python3 -E -S -B topics/padua-argmax-bridge-20261105/syvert2_pack/build_pack.py --source-sha "$1" --destination "local-output/argmax-bridge-20261105/final-syvert2-$1"' \
+  padua-final-builder PUBLISHED_FULL_SHA \
+  >local-output/argmax-bridge-20261105/final-builder-PUBLISHED_FULL_SHA.stdout \
+  2>local-output/argmax-bridge-20261105/final-builder-PUBLISHED_FULL_SHA.stderr
+```
+
+Prospective caps: one builder process tree, no engine/native/compiler job; at most
+one sequential dpkg-deb/ldd child at a time,120CPU seconds per process hard limit,
+300s outer wall plus10s TERM/KILL grace,4GiB virtual address space per process,
+1GiB per-file output limit and2GiB total fresh directory+ZIP/log output budget.
+The CPU limit is per process, not an inclusive tree CPU claim; time's whole-job
+report and directly observed EXIT status must be preserved. Root release must
+confirm these exact caps and whole-output monitor/ownership cleanup before launch;
+the command alone does not enforce the2GiB aggregate output budget. No network
+or scientific numerical work is permitted. Producer dpkg-deb payload reading,
+ldd and readelf metadata operations are the only dependency inspection stages.
+
+Authenticated inputs: all CODE/DATA and operational source at the selected
+published SHA, hybrid FREEZE plus its13-file code/data closure, plans.py exact
+7/273/280 partition, and assets.py's six trusted official Debian archives:
+FLINT-dev/runtime3.1.3-2, MPFR-dev/runtime4.2.2-1 and GMP-dev/runtime
+2:6.3.0+dfsg-3, all amd64. Their full SHA256 pins and reproduction URLs are in
+assets.py. Original three pinned .debs remain under phase-checker/runtime;
+root-provisioned GMP-dev/runtime and MPFR-runtime are under
+final-assets-public-retrieval-network. The builder must authenticate archive
+payloads and copied header/library bytes, including actual system multiarch
+gmp.h and selected loader closure, and refuse any mismatch. Supplied source SHA
+must belong to a fetched published origin branch; dirty copied CODE/DATA fails.
+
+Expected artifacts are one fresh off-Git package tree, deterministic source ZIP,
+runtime/asset manifests, custody-only prose attribution and complete builder
+stdout/stderr/time/observed-exit evidence. Record exact ZIP byte length/SHA256 and
+manifest SHA256 after direct EXIT0; no source import, engine or scientific result
+is implied. Package runs offline without .git. Root will retain the full raw ZIP
+and custody records in existing Padua local-output, never Git. Builder execution
+requires its final published SHA/inputs and reviewed enforcement wrapper first;
+this registration itself performs no builder, extraction or dependency experiment.

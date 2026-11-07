@@ -672,3 +672,205 @@ hashes are now bound; exact commands and2*120CPU fresh envelope remain
 as preregistered. The reviewer will not launch until root explicitly
 releases the fresh sequence. A successful primary is still pending the
 distinct fresh result and subsequent scope review.
+
+## Independent fresh results — FINAL ACCEPT, 2026-11-07
+
+**ACCEPT the completed local hybrid validation at EXACTLY41 and511.**
+Both prospectively registered fresh executions completed ONCE, in order,
+with directly observed outer EXIT0 and accepted complete final accounts.
+No retry, failed scientific attempt, source/precision/case/cap alteration,
+method fallback, topology replacement or additional scientific run occurred.
+The preceding39977-byte prerelease/input-binding prefix is preserved at
+SHA-256 d179a4c15e6cf3070c6af861048214f065442cfa3a3ef3bcf8227e2c090e3e7b.
+Root's explicit release followed its publication at
+42221bc0ccb5b0263cf1c77090bd97c2680fa29a. All source/input pins were
+rechecked before launch; the two EXACT prewritten isolated commands above
+were used without a wrapper or standalone preview.
+
+The cloud-environment runtime skill was read before execution and its
+current-environment status inspected. The attached managed environment
+reported current observations, running state and enforced restricted
+network policy, with no configured secrets/runtime variables/outbound
+identities. Existing pinned include/FLINT prerequisites were present;
+no package setup, network access, Docker or remote machine action was
+needed. This is a local fresh-build validation, not a Syvert2 run.
+
+### Direct execution observations and accepted final accounts
+
+| Fresh case | Tool session | Initial chunk | Completion chunk | Actual exit | CPU through summary |
+|---|---:|---|---|---:|---:|
+|41|73378|ca9e79|e36d37|0|6.287665|
+|511|14855|d37acb|224b30|0|7.531237|
+
+For41, I inspected final-accounting.json AFTER direct completion and
+BEFORE launching511: complete=true, first_failure=null, result exactly
+FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW. Its original
+input identity, degree, mode and output matched the registration. The
+same checks then passed for511. Both accounts record no live children,
+fixed waited-child CPU and final absolute parent self limit:112 at41,
+111 at511. Both controls and checker stages returned0, no stop/failure,
+complete accounting. Receipt/summary flags alone were never used to
+authorize the second run or conclude success.
+
+Immediately after each completion and account check, BEFORE continuing
+to another scientific action, a compact reviewer-observation.json was
+written in that run's output directory. It records the actual tool
+session/chunks/exit, result/account identities and no-retry scope. These
+are this reviewer's own observations, distinct from the root primary
+observations in the earlier section.
+
+The cost numbers are inclusive CPU-through-summary CHECKPOINTS, not
+exact exit CPU. The original tightened absolute hard limits bound the
+remaining final serialization/write/return. Fresh checkpoint total is
+13.818902CPU under the2*120CPU fresh envelope. Root primary checkpoint
+total was14.241113CPU; all four local checkpoints total28.060015CPU
+under the prospective4*120CPU envelope. These two fixed-case observations
+do not establish a uniform cost, throughput or runtime-saving law.
+
+### Exact fresh identities and preserved outputs
+
+Paths below are under
+local-output/argmax-bridge-20261105/final-hybrid-validation:
+
+| Fresh output | Bytes | SHA-256 |
+|---|---:|---|
+| verify-n41/essential-receipt.json |6492|a2af589a86427a27060e6ad5a90a3c1f8777b21d717d63d2f4211088ecb21b50|
+| verify-n41/final-accounting.json |1527|b758cdacfe9af89fc4baad61d27e0c4fb226e99684ad8b0807d914c13024a978|
+| verify-n41/reviewer-observation.json |965|6b8ef8b89e87399c1e2ca4c8d0c1f31601cbd9b1e0a1e18c7039ba1a7032770c|
+| verify-n41/raw-evidence.json |166112|9cb7b351619630df11460bed7c9b461fd0ab2979c2999fff9c58829bab9336af|
+| verify-n511/essential-receipt.json |5994|0c00807f5c25136af9aa4ebb85f8a114e6962dc3a460c18af9c0bd41d1ff5141|
+| verify-n511/final-accounting.json |1510|724ea281d8d1752d73ba17f1e14e7f3669bdffb1b9babab567979a3d6c639a3b|
+| verify-n511/reviewer-observation.json |933|947176516090f5426ae142d1ff3d595254688328df75299c56f1a6f3a0812529|
+| verify-n511/raw-evidence.json |105991|99ef3bafaf5454e10a56276b25d2e988688c25c060f11f0a37a096f3e2ba5719|
+
+Each preserved original-certificate.json hashes exactly to its registered
+primary input: faca3065... at41 and c5369110... at511, with the full
+identities in the prior binding table. Source FREEZE remains
+0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb;
+all nine source/contract audit entries match after both runs. The raw
+files, complete native records, stage outputs, builds, TUs, binaries and
+runtime/maps remain at their original exclusive paths without truncation,
+splitting or replacement. No cold-storage retrieval or remote copy is
+claimed by this local review; root owns subsequent evidence integration.
+
+### Fresh proof reconstruction and exact scope
+
+The fresh source reconstructed the same registered METHOD and topology
+from ALL newly computed retained premises. The outcomes are:
+
+| Case | Fresh METHOD / M | Fresh S / actual | Nodes / leaves | Closed leaf branches |
+|---|---|---|---|---|
+|41|TREE /13|64 /3|101 /51|5 NEAR,43 FAR,3 OUTSIDE|
+|511|GRID /30|45 /0|51 /26|6 NEAR,17 FAR,3 ANALYTIC_FAR|
+
+At41 all final numeric leaves, including tangencies, provide complete
+D19 norm inputs; no analytic leaf occurs. The thirteen grid keys remain
+explicit retained fresh data even though TREE is the preserved METHOD.
+The fresh global norm13 and true-origin lower
+3381571554168777/281474976710656 support the complete closed cover.
+Its minimum reported strict numeric margins are positive EXACT fractions:
+
+    NEAR =227275782874007484172251803/151745991585839089031577600000,
+    FAR  =2696645921418835/6082392771740565504.
+
+The actual three-point keys remain(1/164,0),(0,1/224),(1/164,1/224).
+The freshly reconstructed pi-fourth corner excess is
+78684125233892449/2474931954647040>0. Its radial coefficient includes
+the correct factor1/2. The used floor minimum is1/512. No E12/E15
+analytic branch supplies a mathematical premise at41; the presence of
+the generic future-capability descriptor does not activate it.
+
+At511 the mandatory fresh13-grid norm is30; there is no TREE inference
+from an incomplete sampled cover. Its fresh lower is
+7108823230870693/281474976710656. The positive exact numeric margins are
+
+    NEAR =339656542857811/68961369294110720,
+    FAR  =119262731471225/13792273858822144.
+
+The radius-aware actual-noncorner floor minimum is
+172803289927833/4535328582400000, within the unchanged C02 tier used
+by this degree. E12 supplies the BOTH-corner closed pi/4 squares with
+loss1/30, independent of this numerical M; zero D07 builds or actual
+calls are present at511.
+
+I also matched the three f positions in the exact frozen tree with their
+raw dyadic rectangles (coordinates in phase turns):
+
+    id48: [1/4,1/2] x [1/4,1/2],
+    id49: [0,1/2]   x [1/2,1],
+    id50: [1/2,1]   x [0,1].
+
+These are respectively the upper-right quarter of the root's lower-left
+half square, its left upper half, and its right half. Every minimum sum
+is EXACTLY1/2, not merely a passing sample or center. All clipped patches
+are nonempty and their sum is<=1 on T. Thus E15's CLOSED guard and its
+3/100 gap apply on all three patches, including their seams. The gap is
+against the symbolic true Lambda_c, not the displayed lower L. Source
+verification recomputed these boxes from the tree and preserved f/dot
+classification. No numerical point or vertex needed by either final
+norm was silently removed.
+
+The unchanged D32 physical cover, original weights/finite collisions,
+strict numeric predicates and accepted actual-corner patches therefore
+give the exact two-corner argmax for each of these fixed cases under
+the named trusted dependencies. Both degrees are odd, hence the equality
+set is(-1,-1),(-1,1). This does not constitute a new even-degree execution.
+Both degrees were already known controls: these successful replays add
+no newly closed residual degree and do not alter global320 or residual273.
+At511 the E12/E15 model/PD-T271 premises remain explicit. The finite
+41 route uses the model-free numeric norm/actual-corner construction.
+
+All fresh upper bits and actual upper bits happened to equal the primary
+values. This is diagnostic only, as registered: the new process performed
+new builds and new native calls, and acceptance used the recomputed exact
+inequalities, not equality to any old bit, norm or margin. The source
+self-reconstruction of each fresh essential receipt also passed before
+serialization. No extra mathematical checker or same-case replay ran.
+
+### Native, runtime, controls and accounting review
+
+Fresh41 recorded64 unique S calls plus3 actual calls; fresh511 recorded45
+unique S calls and0 actual calls. Every native returncode is0. Ordinary
+S counter closures are4n=164 and2(n+1)-4=80 at41, and2044/1020 at511,
+with the explicit endpoint zero-counter exception. Actual calls retain
+the original43-row closure and full thirteen-counter diagnostics. All
+source direct/block/root/fallback limits remained satisfied. There is
+no cross-run cache seeding or uncharged discarded native call.
+
+Both controls stages actually completed the fixed six groups and made
+zero native calls. These are the only control executions by this reviewer,
+each included inside its registered invocation; no standalone synthetic
+test or startup probe was added. Stage accounting, final self limits,
+source/config/input checks and postserialization gates passed. First
+failures remain absent in the complete final accounts and raw states.
+
+Three NEW builds were performed in distinct fresh output directories:
+S and actual at41, S only at511. Their source snapshots match the frozen
+D23/D07 sources, and they have separate fresh preprocessed TUs and binary
+identities. After execution I independently rehashed every listed source,
+TU, binary, toolchain, toolchain dependency, header, linked dependency and
+dependency-input artifact in all three build manifests; all match. Fresh
+before/after loaded libraries and all file mappings match exactly for
+each invocation. The native sources and the accepted final Python source
+freeze are unchanged. System/compiler/Arb runtime trust is retained,
+rather than promoted to a formal or hermetic proof claim.
+
+### Final disposition
+
+FINAL ACCEPT of the repaired hybrid source/reduction and BOTH completed
+fixed local primary-plus-distinct-fresh validation cases. FH-1 remains
+closed with its first finding preserved; no new finding arose. All
+upstream unwaived chronology findings and separate Claude obligations
+remain unchanged. No general success/termination/point-count/cost law,
+new source guard, new global onset or authorization for bulk remote work
+is inferred. Pack operational review, interim Claude audit and any later
+user-authorized delivery remain separate.
+
+This reviewer executed exactly TWO released fresh engine invocations,
+sequentially41 then511, with no retry or concurrent scientific job, and
+wrote their two compact observations immediately. Additional actions
+were skill/status and read-only metadata/provenance inspection plus this
+owned append. Author code, original inputs, raw evidence, shared records
+and mutable Git were not edited. All earlier prerelease statements of
+zero execution are historical; this dated section records the complete
+newly authorized execution and its exact limits.

@@ -1,0 +1,26 @@
+{
+  "n": 511,
+  "mode": "verify",
+  "reviewer": "/root/d13_support_review",
+  "requested_model_effort": "Astra high; serving metadata unexposed",
+  "release_commit": "42221bc0ccb5b0263cf1c77090bd97c2680fa29a",
+  "tool_session": 14855,
+  "initial_chunk": "d37acb",
+  "completion_chunk": "224b30",
+  "observed_exit_code": 0,
+  "direct_exit_observed": true,
+  "final_accounting": {
+    "bytes": 1510,
+    "sha256": "724ea281d8d1752d73ba17f1e14e7f3669bdffb1b9babab567979a3d6c639a3b",
+    "complete": true,
+    "first_failure": null,
+    "result": "FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW"
+  },
+  "receipt": {
+    "bytes": 5994,
+    "sha256": "0c00807f5c25136af9aa4ebb85f8a114e6962dc3a460c18af9c0bd41d1ff5141"
+  },
+  "CPU_through_summary": 7.531237,
+  "no_retry": true,
+  "scope": "Sole preregistered fresh511 run, after fresh41 accepted account and direct EXIT0. CPU is an inclusive checkpoint, not exact exit CPU."
+}

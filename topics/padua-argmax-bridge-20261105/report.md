@@ -6,7 +6,7 @@ All **15/15 additional analytic rounds E01–E15 are complete**. The independent
 
 The scalar theorem [E07](theory/E07-f-monotonicity.md) proves H(x)−H(0)<=−(pi−3)x²/(4pi³) on the full closed principal period by an endpoint-cancelled integral and a strict third-derivative sign. The [paired-root bound](theory/E11-central-pair.md) removes artificial positive entropy charges and preserves the exact negative beta baseline on the model's [closed rho<=pi/2 domain](theory/E11-model-radius-halfpi.md). Model-domain extension and finite-error guards remain separate. Global comparisons retain the explicit PD-T271 dependency.
 
-Two accepted analytic components are being integrated into a NEW hybrid finite checker: [both corner squares from256](theory/E12-corner256.md), with radial loss1/30, and [far phases from192](theory/E15-analytic-far192.md), with primitive gap3/100 on CLOSED rho>=pi/2. The frozen D36/native sources stay intact. No new runtime saving is measured yet.
+Two accepted analytic components are now integrated into a NEW hybrid finite checker: [both corner squares from256](theory/E12-corner256.md), with radial loss1/30, and [far phases from192](theory/E15-analytic-far192.md), with primitive gap3/100 on CLOSED rho>=pi/2. The frozen D36/native sources stay intact. Independent local41/511 primary and fresh validation passed in28.060015CPU checkpoints total. At511 the primary uses45S/zero actual calls/three analytic far leaves in7.353713CPU; this is a known-case measurement, not a Syvert2 runtime law. [Source/result review](independent-checks-final-hybrid-engine.md).
 
 ## Current accepted theorem and final delivery
 
