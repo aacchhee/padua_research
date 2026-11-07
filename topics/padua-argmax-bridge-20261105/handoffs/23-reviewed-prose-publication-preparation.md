@@ -1,6 +1,6 @@
 # Handoff 23 — Reviewed affirmative prose and publication preparation
 
-- Status: open
+- Status: superseded by 24: AC requests approximately two more pages of detail in Section 5
 - Previous handoff: 22-affirmative-prose-and-applications.md
 - Next agent / model / effort: Codex coordinator; gpt-6.1-sol medium for publication preparation; Sol max for a necessary focused review of a material mathematical change, per AC's preference
 - Role: orchestrator / publication preparation

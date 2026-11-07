@@ -2463,3 +2463,27 @@ this affirmative style and fresh timestamped download filenames. Commit
 outputs first, then close 22 and open 23 in a handoff-only commit; push the
 working branch before replying. The earlier PR-metadata approval issue
 remains recorded in its canonical entry; branch pushes are authorized.
+
+## 2026-11-07 — Restore explanatory detail in Section 5
+
+AC requests more detail in Section 5 and permits approximately two extra
+pages. Rules read at `2245e6d9317b53a38976d6f9d6a304ea8fd15c0d`;
+main/topic refreshed, base remains
+`f70a260e5b5f9a01209dc8a05faabdcf8db1feeb`. Stage: WORK, within the
+continuing publication edit. Handoff 23 redirects to 24 for this request.
+
+Bounded Sol high developer owns only sections/certification-unified.tex.
+Restore useful derivations from the established certificate mathematics:
+positive interpolation of signed sums, strict Bernstein corner leaves,
+phase norm certification and the closed near/far/corner cover. Aim for
+about 48 total pages with the current class, layout and direct prose.
+The mathematical results, constants, code, witnesses and computational
+scope remain fixed. This exposition task adds no candidate mechanism or
+novelty claim, so the ideas novelty gate is inapplicable.
+
+A distinct user-preferred Sol max reviewer owns
+paper/section5-expansion-review.md and will review the frozen Section 5
+diff and its dependencies. Root coordinates Git, build integration and
+documentation. Requested model/effort identities are recorded; actual
+serving metadata is not independently exposed. Existing full proof audits
+remain the baseline. Native campaigns are outside this exposition task.
