@@ -247,3 +247,161 @@ def assess(nodes, n, budget, sets, name, raw, haar=False):
     row['assessment_cpu'] = time.process_time()-began
     row['assessment_wall'] = time.perf_counter()-wall_began
     return row
+
+
+def predicted_deletion(C, hat, i):
+    keep = np.arange(C.shape[1]) != i
+    return (C+np.outer(C[:, i], hat[i]/(1-hat[i, i])))[:, keep]
+
+
+def choose_feasible(candidates, excluded=()):
+    available = [r for r in candidates if r['feasible'] and r['original_index'] not in excluded]
+    if not available:
+        return None
+    best = min(r['train_amp'] for r in available)
+    tied = [r for r in available if r['train_amp'] <= best+1e-12*max(1., abs(best))]
+    return min(tied, key=lambda r: r['original_index'])
+
+
+def deletion_candidates(C, Q, E, ids, budget, amp_limit, risk_limit, cap):
+    hat = Q@Q.T
+    cards = E@C
+    rows = []
+    for i in range(len(ids)):
+        if time.process_time() >= cap:
+            return rows, False
+        den = float(1-hat[i, i])
+        row = {'local_index': i, 'original_index': int(ids[i]), 'denominator': den,
+               'feasible': False}
+        if den <= 1e-10:
+            row['reason'] = 'rank_denominator'
+        else:
+            candidate = predicted_deletion(C, hat, i)
+            keep = np.arange(len(ids)) != i
+            L = (cards+np.outer(cards[:, i], hat[i]/den))[:, keep]
+            amp = float(np.max(np.sum(abs(L), axis=1)))
+            risk, _ = integer_risk(candidate, budget)
+            finite = bool(np.isfinite(candidate).all() and np.isfinite(amp) and np.isfinite(risk))
+            row.update(train_amp=amp, integer_risk=risk, trace=float(np.sum(candidate*candidate)),
+                       feasible=bool(finite and amp <= amp_limit and risk <= risk_limit))
+            row['reason'] = ('feasible' if row['feasible'] else
+                             'nonfinite' if not finite else
+                             'amp_and_noise' if amp > amp_limit and risk > risk_limit else
+                             'amp' if amp > amp_limit else 'noise')
+        rows.append(row)
+    return rows, True
+
+
+def dense_training(n):
+    axis = np.cos(np.pi*np.linspace(0, 1, 9))
+    mesh = np.array(list(itertools.product(axis, repeat=3)))
+    extra = np.cos(np.pi*qmc.Sobol(3, scramble=True, seed=2026111010+n).random_base2(8))
+    return np.vstack((mesh, extra))
+
+
+def constrained_curve(nodes, n, raw, cap):
+    began, wall = time.process_time(), time.perf_counter()
+    A = u.basis(nodes, n)
+    E = u.basis(dense_training(n), n)
+    M, N = A.shape
+    ids = np.arange(M)
+    Q, R, C = qr_map(A)
+    full_trace = float(np.sum(C*C))
+    full_amp = float(np.max(np.sum(abs(E@C), axis=1)))
+    amp_limit, risk_limit = 1.25*full_amp, 1.10*full_trace
+    events, scores, rejected, snapshots = [], [], [], {}
+    failures = []
+    stop = None
+    selection_cpu, validation_cpu = 0., 0.
+    while True:
+        if time.process_time() >= cap:
+            failures.append({'M': len(ids), 'failure': 'total CPU cap before state'})
+            stop = 'cpu_cap'
+            break
+        t = time.process_time()
+        check = validate(A[ids], Q, R, C)
+        validation_cpu += time.process_time()-t
+        if not check['eligible']:
+            failures.append({'M': len(ids), 'failure': 'accepted-state numerical guards', **check})
+            stop = 'numerical_failure'
+            break
+        risk, reps = integer_risk(C, M)
+        amp = float(np.max(np.sum(abs(E@C), axis=1)))
+        if not events or events[-1]['M'] != len(ids):
+            events.append({'M': len(ids), 'trace': float(np.sum(C*C)), 'B_integer_risk': risk,
+                           'train_amp': amp, 'validation': check, 'cpu': time.process_time()-began})
+        snapshots[len(ids)] = ids.copy()
+        if len(ids) == N:
+            stop = 'reached_N'
+            break
+        t = time.process_time()
+        candidates, complete = deletion_candidates(C, Q, E, ids, M, amp_limit, risk_limit, cap)
+        selection_cpu += time.process_time()-t
+        state = {'M': len(ids), 'complete': complete, 'candidates': candidates,
+                 'feasible_count': sum(r['feasible'] for r in candidates)}
+        scores.append(state)
+        if not complete:
+            failures.append({'M': len(ids), 'failure': 'CPU cap within candidate enumeration'})
+            stop = 'cpu_cap'
+            break
+        excluded = set()
+        accepted = False
+        while True:
+            choice = choose_feasible(candidates, excluded)
+            if choice is None:
+                stop = 'no_predicted_feasible_deletion' if not excluded else 'all_predicted_feasible_numerically_rejected'
+                break
+            if time.process_time() >= cap:
+                failures.append({'M': len(ids), 'failure': 'CPU cap before selected QR'})
+                stop = 'cpu_cap'
+                break
+            i = choice['local_index']
+            next_ids = np.delete(ids, i)
+            t = time.process_time()
+            q, r, c = qr_map(A[next_ids])
+            guard = validate(A[next_ids], q, r, c)
+            predicted = predicted_deletion(C, Q@Q.T, i)
+            delta = float(la.norm(c-predicted)/max(1e-300, la.norm(c)))
+            fresh_amp = float(np.max(np.sum(abs(E@c), axis=1)))
+            fresh_risk, _ = integer_risk(c, M)
+            fresh = {'M_after': len(next_ids), 'original_index': choice['original_index'],
+                     'map_relative_error': delta, 'train_amp': fresh_amp,
+                     'integer_risk': fresh_risk, 'validation': guard}
+            validation_cpu += time.process_time()-t
+            if time.process_time() >= cap:
+                fresh['reason'] = 'cpu_cap_after_fresh_trial'
+                rejected.append(fresh)
+                failures.append({'M': len(ids), 'failure': 'CPU cap after selected QR'})
+                stop = 'cpu_cap'
+                break
+            passed = (guard['eligible'] and delta <= 1e-7 and fresh_amp <= amp_limit
+                      and fresh_risk <= risk_limit)
+            if passed:
+                state['selected_original_index'] = choice['original_index']
+                state['selected_fresh'] = fresh
+                events[-1]['deleted_original_index'] = choice['original_index']
+                ids, Q, R, C = next_ids, q, r, c
+                snapshots[len(ids)] = ids.copy()
+                events.append({'M': len(ids), 'trace': float(np.sum(C*C)),
+                    'B_integer_risk': fresh_risk, 'train_amp': fresh_amp,
+                    'validation': guard, 'cpu': time.process_time()-began})
+                accepted = True
+                break
+            fresh['reason'] = 'selected_fresh_guard_or_constraint_or_cap'
+            rejected.append(fresh)
+            excluded.add(choice['original_index'])
+        if not accepted:
+            break
+    t = time.process_time()
+    np.savez(raw/f'n{n}-L-path.npz', **{f'm{k}': v for k, v in snapshots.items()})
+    io_cpu = time.process_time()-t
+    return {'rule': 'L', 'n': n, 'M_start': M, 'N': N, 'selected_M': len(ids),
+            'full_trace': full_trace, 'full_train_amp': full_amp,
+            'amp_limit': amp_limit, 'risk_limit': risk_limit,
+            'curve': events, 'candidate_tables': scores, 'numerically_rejected': rejected,
+            'candidate_states': len(scores), 'candidate_evaluations': sum(len(s['candidates']) for s in scores),
+            'rejected_candidate_count': len(rejected),
+            'failures': failures, 'stop': stop,
+            'costs_cpu': {'complete_construction': time.process_time()-began,
+                          'selection': selection_cpu, 'validation': validation_cpu, 'checkpoint_io': io_cpu},
+            'costs_wall': {'complete_construction': time.perf_counter()-wall}}, snapshots

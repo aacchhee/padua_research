@@ -71,7 +71,9 @@ actual17.097765CPU run ledger are in the receipt and
 already completed unchanged science; the canonical serialization/timestamp
 limitation is in that results record. No source theorem is imported as a
 new local proof. Developer engineering checks are separate, and distinct
-consequential independent review/rerun is pending.
+[consequential P1review](../pruning-review.md) passes its
+declared actual scope, including404count states,103eligible maps and fresh
+query confirmation. The formal Claude obligation remains separate.
 
 ## Open items and history
 

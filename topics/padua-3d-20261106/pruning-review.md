@@ -7,8 +7,9 @@ provider runtime metadata is unexposed. Root alone controls Git and shared
 records. This review owns only this file and `pruning-review/`.
 
 **Current disposition:** no unresolved material finding within the completed
-manifest, routine algebra and P1 numerical scope below. P1's A/D useful gates
-fail; independent execution corroborates the recorded finite failure.
+manifest, routine algebra and P1/P2 numerical scope below. P1's A/D and P2's
+strict useful gates fail; independent execution corroborates those finite
+outcomes.
 This supplement is not the pending formal Claude audit04, readiness or merge
 approval. Future round implementations and results require their own focused
 checks. Reviewer reruns consume zero research rounds.
@@ -157,9 +158,64 @@ lost exact launch/exit UTC limitation is recorded in
 misrepresented as exact process times. Full raw data and this review's scratch
 copies are regeneration-only, not delivered archival storage.
 
-All three compact reviewer receipts remain outside the producer master in
+All compact reviewer receipts remain outside the producer master in
 the assigned auditor namespace, with their own code/input pins. No shared
 registry, final ID, producer source/data, historical455-node payload or Git
 state was changed by this reviewer. No in-place MINOR producer fixes.
-P2 and later prospective changes remain unreviewed until explicitly added
-below. Formal combined Claude review remains pending.
+Later prospective changes remain unreviewed until explicitly added below.
+Formal combined Claude review remains pending.
+
+## P2 focused review and actual replay
+
+P2 protocol, corrected before science, is published at `143b5d0`.
+The originally suggested assessment seeds collided with the already reported
+P1 reviewer clouds. I returned this issue before execution; producer seeds
+were changed prospectively to `2026111520+n` / `2026111530+n`. Reviewer P2
+fresh clouds use reserved `2026111720+n` / `2026111730+n`.
+
+The all-candidate raw-cardinal update, physical hat matrix, noise allocation,
+feasibility-before-objective choice, tie handling, fresh selected-map QR and
+matched-count control logic passed inspection. Two cap bookkeeping edges
+were returned and fixed before execution: an accepted terminal support is
+now saved immediately, and a cap reached during the final trial is labeled
+`cpu_cap`, rather than numerical candidate exhaustion. Focused reinspection
+confirmed both fixes and the developer's explicit36 mocked-cap branches.
+The actual scientific sources are core `69c81447...`, driver `3911ee2a...`,
+collector `4d86a43b...`; full hashes are in the independent receipt.
+
+[P2 checker](pruning-review/check_constrained.py) and
+[P2 receipt](pruning-review/constrained.json) record a3.59CPU-second
+independent run. It verified27 raw inventory files, all reference input pins,
+the exact declared XZ/six-digit logical object, UTC metadata and ten source
+snapshots. It independently replayed every one of the337 candidate scores,
+reasons and feasibility decisions from fresh SVD maps with Chebyshev
+recurrence. Every337 terminal one-row deletion was additionally factored
+from scratch with SVD, without either cardinal-update shortcut. Actual
+frozen producer reruns at both degrees reproduce the identical initial
+support and stop reason.
+
+All ten distinct eligible assessment maps were independently checked,
+including weighted Haar. Every original21/41 mesh and both Sobol families,
+all12 target error tables, integer repeats and calibrated MSE tables were
+recomputed. Each map also received2048 new angular and2048 new uniform
+queries. Worst candidate amplification relative discrepancy is1.61e-14;
+map discrepancies are below2.58e-15. No numerical rejection or guard failure
+caused either stop.
+
+The original candidate table, corroborated by the independent fresh fits,
+gives the following first-step barrier. Ratios use each degree's initial
+dense-training amplification and initial full-budget risk.
+
+| Degree | Candidates | Noise-feasible | Amplification-feasible | Minimum amplification ratio among noise-feasible candidates | Corresponding risk ratio / original row |
+| ---: | ---: | ---: | ---: | ---: | --- |
+| 6 | 112 | 112 | 0 | 1.286955794542 | 1.016871257476 / 69 |
+| 8 | 225 | 225 | 0 | 1.444398676589 | 1.008680911798 / 61 |
+
+Thus all candidates satisfy the1.10 noise threshold, but none satisfies the
+1.25 training norm threshold. A minimum noise risk over amplification-feasible
+candidates is undefined because that set is empty. Both P2 paths terminate
+without accepting a deletion, save0sites, and fail the registered transfer
+goal. This is an exhaustive floating first-step result for the stated
+training sets and thresholds. It says nothing universal about multirow or
+nonnested subsets, different thresholds, continuous norms or all degrees.
+The existence of a useful broader pruning tradeoff remains unresolved.

@@ -110,9 +110,77 @@ def engineering(raw):
         deg = [{'n': n, 'decisions': {'A': {'guards': flag}}} for n, flag in zip((4, 6, 8), flags)]
         core.require(numerical_gate(deg, 'A') == expected, 'all-degree numerical gate mismatch')
         numerical_cases.append([flags, expected])
+    cardinal_cases = []
+    rng = np.random.default_rng(2026111001)
+    for m, n in ((9, 3), (10, 6), (7, 6)):
+        A = rng.normal(size=(m, n))
+        E = rng.normal(size=(13, n))
+        Q, R, C = core.qr_map(A)
+        hat = Q@Q.T
+        amp_limit = 1.25*float(np.max(np.sum(abs(E@C), axis=1)))
+        risk_limit = 1.10*float(np.sum(C*C))
+        candidates, completed = core.deletion_candidates(C, Q, E, np.arange(m), m,
+            amp_limit, risk_limit, time.process_time()+30)
+        core.require(completed and len(candidates) == m, 'synthetic candidate census incomplete')
+        for i, row in enumerate(candidates):
+            q, r, fresh = core.qr_map(np.delete(A, i, axis=0))
+            predicted = core.predicted_deletion(C, hat, i)
+            relative = float(la.norm(fresh-predicted)/la.norm(fresh))
+            amp = float(np.max(np.sum(abs(E@fresh), axis=1)))
+            risk, reps = core.integer_risk(fresh, m)
+            core.require(relative <= 1e-10 and abs(amp-row['train_amp']) <= 1e-10*max(1., amp)
+                         and abs(risk-row['integer_risk']) <= 1e-10*max(1., risk),
+                         'raw cardinal candidate formula mismatch')
+            core.require(row['feasible'] == (amp <= amp_limit and risk <= risk_limit),
+                         'exhaustive feasible classification mismatch')
+            cardinal_cases.append([m, n, i, relative, row['feasible']])
+    # Lowest amp violates noise; a different row remains feasible and must win.
+    selection_branches = [([{'original_index': 0, 'train_amp': 1., 'feasible': False},
+                            {'original_index': 1, 'train_amp': 2., 'feasible': True}], 1),
+                          ([{'original_index': 4, 'train_amp': 2., 'feasible': True},
+                            {'original_index': 2, 'train_amp': 2.+1e-13, 'feasible': True}], 2),
+                          ([{'original_index': 0, 'train_amp': 1., 'feasible': False}], None)]
+    for rows, expected in selection_branches:
+        choice = core.choose_feasible(rows)
+        core.require((None if choice is None else choice['original_index']) == expected,
+                     'feasibility-before-objective selection mismatch')
+    # Synthetic duplicate-row design, mocked CPU clock; no polynomial grid.
+    cap_cases = []
+    saved_basis, saved_training, saved_clock = core.u.basis, core.dense_training, core.time.process_time
+    nodes = np.column_stack((np.arange(6), np.zeros((6, 2))))
+    design = np.array([[1., 0.]]*3+[[0., 1.]]*3)
+    query = np.column_stack((1000+np.arange(2), np.zeros((2, 2))))
+    def synthetic_basis(points, n):
+        ids = np.asarray(points)[:, 0].astype(int)
+        return np.eye(2)[ids-1000] if np.all(ids >= 1000) else design[ids]
+    try:
+        core.u.basis = synthetic_basis
+        core.dense_training = lambda n: query
+        for limit in range(5, 181, 5):
+            tick = [0]
+            def mocked_cpu():
+                tick[0] += 1
+                return float(tick[0])
+            core.time.process_time = mocked_cpu
+            directory = raw/f'mocked-cap-{limit}'
+            directory.mkdir()
+            path, states = core.constrained_curve(nodes, 0, directory, float(limit))
+            if states:
+                core.require(path['selected_M'] in states, 'cap returned unrecorded accepted support')
+                core.require(any(e['M'] == path['selected_M'] for e in path['curve']),
+                             'cap terminal missing fresh verified curve state')
+            cap_rejections = [r for r in path['numerically_rejected'] if r.get('reason') == 'cpu_cap_after_fresh_trial']
+            if cap_rejections:
+                core.require(path['stop'] == 'cpu_cap', 'post-trial cap mislabeled numerical exhaustion')
+            cap_cases.append([limit, path['selected_M'], sorted(states), path['stop'], len(cap_rejections)])
+    finally:
+        core.u.basis, core.dense_training, core.time.process_time = saved_basis, saved_training, saved_clock
+    core.require(any(len(r[2]) > 1 and r[3] == 'cpu_cap' for r in cap_cases), 'accepted-then-cap branch unexercised')
+    core.require(any(r[4] for r in cap_cases), 'post-trial-cap branch unexercised')
     return {'synthetic_deletions': checks, 'integer_allocations': allocation_checks,
             'control_gate_branch_cases': branch_cases, 'tie_branch_cases': tie_cases,
-            'all_degree_gate_cases': numerical_cases, 'passes': True}
+            'all_degree_gate_cases': numerical_cases, 'cardinal_candidate_checks': cardinal_cases,
+            'feasibility_selection_branches': selection_branches, 'mocked_cap_cases': cap_cases, 'passes': True}
 
 
 def run_pilot(a):
@@ -292,13 +360,18 @@ def run_pilot(a):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--round', choices=('pilot', 'engineering'), required=True)
+    p.add_argument('--round', choices=('pilot', 'engineering', 'constrained'), required=True)
     p.add_argument('--protocol-commit')
+    p.add_argument('--reference', type=Path)
     p.add_argument('--scratch', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
     a = p.parse_args()
     a.scratch.mkdir(parents=True, exist_ok=False)
     started = datetime.now(timezone.utc).isoformat()
+    if a.round == 'constrained':
+        core.require(bool(a.protocol_commit) and a.reference is not None, 'P2requires published protocol and P1reference')
+        run_constrained(a)
+        return
     if a.round == 'engineering':
         result = engineering(a.scratch)
         receipt = {'status': 'Engineering verification only; zero research rounds',
@@ -337,6 +410,172 @@ def main():
     a.output.write_text(text)
     print(json.dumps({'stage': 'complete', 'bytes': len(text.encode()),
                       'output': str(a.output), 'gate': receipt.get('gate')}), flush=True)
+
+
+
+
+
+def run_constrained(a):
+    import pdpr_collect as collector
+    from types import SimpleNamespace
+    began, wall = time.process_time(), time.perf_counter()
+    metadata = {'started_utc': datetime.now(timezone.utc).isoformat(),
+                'command': sys.argv, 'seeds': {'training': '2026111010+n',
+                    'chebyshev': '2026111520+n', 'uniform': '2026111530+n'},
+                'threads': {k: os.getenv(k) for k in ('OPENBLAS_NUM_THREADS', 'OMP_NUM_THREADS', 'MKL_NUM_THREADS')}}
+    dump(a.scratch/'run-metadata.json', metadata)
+    cap = began+600
+    sources = [Path(__file__), Path(core.__file__), Path(collector.__file__), Path(core.u.__file__),
+               Path(core.old_budget.__file__), Path(old_det.__file__), Path(old_det.prev.__file__),
+               Path(old_det.prev.old.__file__), TOP/'code/t4_stacks.py',
+               TOP.parents[1]/'tracks/lattice-unisolvence/code/c3_rank.py']
+    sourcepins = [core.identity(p) for p in sources]
+    for p in sources:
+        (a.scratch/('source-'+p.name)).write_bytes(p.read_bytes())
+    reference = json.loads(a.reference.read_text())
+    for key in ('raw_details', 'raw_inventory'):
+        core.require(core.identity(reference[key]['path']) == reference[key], 'P1reference identity mismatch')
+    ref_inventory = json.loads(Path(reference['raw_inventory']['path']).read_text())
+    for item in ref_inventory:
+        core.require(core.identity(item['path']) == item, 'P1raw input identity mismatch')
+    prior = json.loads(Path(reference['raw_details']['path']).read_text())
+    refraw = Path(reference['raw_details']['path']).parent
+    details = {'paths': [], 'assessments': [], 'degrees': [], 'unrun': [],
+               'inputs': [core.identity(a.reference), reference['raw_details'], reference['raw_inventory']]}
+    for n in (6, 8):
+        if time.process_time() >= cap:
+            details['unrun'].append({'n': n, 'stage': 'degree'})
+            continue
+        t, w = time.process_time(), time.perf_counter()
+        nodes, _, recipe = core.u.parity_nodes(n)
+        generation = {'cpu': time.process_time()-t, 'wall': time.perf_counter()-w}
+        dump(a.scratch/f'n{n}-recipe.json', recipe)
+        path, snaps = core.constrained_curve(nodes, n, a.scratch, cap)
+        path['costs_cpu']['node_generation'] = generation['cpu']
+        path['costs_cpu']['complete_construction'] += generation['cpu']
+        path['costs_wall']['node_generation'] = generation['wall']
+        path['costs_wall']['complete_construction'] += generation['wall']
+        details['paths'].append(path)
+        print(json.dumps({'stage': 'constrained_path', 'n': n, 'M': path['selected_M'],
+                          'stop': path['stop'], 'cpu': path['costs_cpu']['complete_construction'],
+                          'failures': path['failures']}), flush=True)
+        if time.process_time() >= cap:
+            details['unrun'].append({'n': n, 'stage': 'assessment'})
+            continue
+        # Standard nested meshes; new independent query seeds at same sizes.
+        sets = core.heldout(n)
+        from scipy.stats import qmc
+        sets['chebyshev'] = np.cos(np.pi*qmc.Sobol(3, scramble=True, seed=2026111520+n).random_base2(11))
+        sets['uniform'] = 2*qmc.Sobol(3, scramble=True, seed=2026111530+n).random_base2(11)-1
+        assessed, aliases = {}, {}
+        def assess(name, x, haar=False):
+            key = (core.array_sha(x), haar)
+            if key in assessed:
+                aliases[name] = assessed[key]['name']
+                return assessed[key]
+            if time.process_time() >= cap:
+                details['unrun'].append({'n': n, 'stage': 'assessment', 'name': name})
+                return None
+            row = core.assess(x, n, len(nodes), sets, name, a.scratch, haar=haar)
+            assessed[key] = row
+            aliases[name] = name
+            details['assessments'].append(row)
+            return row
+        full = assess('OLS-full', nodes)
+        assess('Haar-full', nodes, haar=True)
+        m = path['selected_M']
+        counts = {k for k in core.checkpoints(n, len(nodes)) if k in snaps} | {m}
+        for count in sorted(counts, reverse=True):
+            if count in snaps:
+                assess(f'L-m{count}', nodes[snaps[count]])
+        for rule in core.RULES:
+            source = refraw/f'n{n}-{rule}-path.npz'
+            details['inputs'].append(core.identity(source))
+            with np.load(source, allow_pickle=False) as data:
+                if f'm{m}' in data:
+                    row = assess(f'{rule}-m{m}', nodes[data[f'm{m}']])
+                    if row is not None:
+                        oldpath = next(p for p in prior['paths'] if p['n'] == n and p['rule'] == rule)
+                        row['historical_P1_path_construction_cpu'] = oldpath['costs_cpu']['complete_construction']
+                else:
+                    details['unrun'].append({'n': n, 'stage': 'missing mandatory control count', 'rule': rule, 'M': m})
+        costs = {}
+        if time.process_time() < cap:
+            t, w = time.process_time(), time.perf_counter()
+            piv = la.qr(old_det.prev.old.basis(nodes, n).T, pivoting=True,
+                        mode='economic', check_finite=False)[2]
+            costs['restrictedQR'] = {'cpu': time.process_time()-t+generation['cpu'],
+                                      'wall': time.perf_counter()-w+generation['wall']}
+            for count in sorted(counts, reverse=True):
+                assess(f'restrictedQR-m{count}', nodes[piv[:count]])
+        else:
+            details['unrun'].append({'n': n, 'stage': 'restrictedQR'})
+        if time.process_time() < cap:
+            t, w = time.process_time(), time.perf_counter()
+            qrpoints = old_det.prev.qrpoints(n)
+            costs['globalQR'] = {'cpu': time.process_time()-t, 'wall': time.perf_counter()-w}
+            assess('globalQR', qrpoints)
+            if time.process_time() < cap:
+                t, w = time.process_time(), time.perf_counter()
+                local, trace = old_det.exchange(qrpoints.copy(), n)
+                costs['localdet'] = {'cpu': time.process_time()-t+costs['globalQR']['cpu'],
+                                    'wall': time.perf_counter()-w+costs['globalQR']['wall'],
+                                    'trace': trace}
+                assess('localdet', local)
+            else:
+                details['unrun'].append({'n': n, 'stage': 'localdet'})
+        else:
+            details['unrun'].append({'n': n, 'stage': 'globalQR/localdet'})
+        byname = {r['name']: r for r in assessed.values()}
+        def lookup(name):
+            return byname.get(aliases.get(name))
+        if full and full['eligible']:
+            for row in assessed.values():
+                if row['eligible']:
+                    row['target_regressions_to_full'] = {}
+                    for measure in ('uniform', 'chebyshev'):
+                        report = {}
+                        for metric in ('rms', 'maximum'):
+                            vals = np.array(row['function_errors'][measure][metric])
+                            ref = np.array(full['function_errors'][measure][metric])
+                            report[metric] = {'worse_count': int(np.sum(vals > 1.01*ref+1e-14)),
+                                'worst_ratio_above_floor': float(np.max(vals/np.maximum(ref, 1e-14)))}
+                        row['target_regressions_to_full'][measure] = report
+        terminal = lookup(f'L-m{m}')
+        decision = {'complete': terminal is not None and full is not None,
+                    'stop': path['stop'], 'M': m, 'saving': 1-m/len(nodes)}
+        if terminal and full and terminal['eligible'] and full['eligible']:
+            retained = [lookup(name) for name in aliases if name.startswith('L-m')]
+            decision.update(guards=bool(not path['failures'] and retained
+                and all(row is not None and row['eligible'] for row in retained)),
+                amp_ratio=terminal['amp_union']/full['amp_union'],
+                risk_ratio=terminal['integer_risk']/full['integer_risk'], controls={})
+            for control in ('random', 'lex'):
+                row = lookup(f'{control}-m{m}')
+                decision['controls'][control] = ({'risk_ratio': terminal['integer_risk']/row['integer_risk'],
+                    'amp_ratio': terminal['amp_union']/row['amp_union']} if row and row['eligible'] else {'unavailable': True})
+            decision['control_gain'] = control_gate(decision['controls'])
+            decision['quality'] = bool(decision['guards'] and decision['saving'] >= .10
+                and decision['amp_ratio'] <= 1.30 and decision['risk_ratio'] <= 1.10)
+        details['degrees'].append({'n': n, 'M_start': len(nodes), 'aliases': aliases,
+                                  'decisions': {'L': decision}, 'comparator_costs': costs})
+        print(json.dumps({'stage': 'constrained_degree', 'n': n, 'decision': decision}), flush=True)
+        dump(a.scratch/'partial-details.json', details)
+    d = [x['decisions']['L'] for x in details['degrees']]
+    passes = (len(d) == 2 and all(x.get('quality', False) for x in d)
+              and any(x.get('control_gain', False) for x in d) and not details['unrun']
+              and time.process_time()-began <= 600)
+    details['gate'] = {'rules': {'L': {'passes': bool(passes)}},
+                       'selected_rule': 'L' if passes else None, 'passes': bool(passes)}
+    details['timing'] = {'actual_cpu': time.process_time()-began, 'wall': time.perf_counter()-wall,
+                         'allowance_cpu': 600}
+    core.require(sourcepins == [core.identity(p) for p in sources], 'P2executed source changed')
+    metadata['ended_utc'] = datetime.now(timezone.utc).isoformat()
+    dump(a.scratch/'run-metadata.json', metadata)
+    dump(a.scratch/'details.json', details)
+    dump(a.scratch/'inventory.json', [core.identity(p) for p in sorted(a.scratch.rglob('*')) if p.is_file()])
+    collector.collect(SimpleNamespace(scratch=a.scratch, protocol_commit=a.protocol_commit,
+        output=a.output, original_command=None, round='P2'))
 
 
 if __name__ == '__main__':

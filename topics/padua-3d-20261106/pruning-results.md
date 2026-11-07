@@ -7,7 +7,8 @@ old U1/U2/U3 counts and all prior results remain separate.
 
 ## P1 completed: noise/design deletion does not preserve amplification
 
-Completed new research rounds: **1/15** (root publishes count boundaries).
+P1consumes **1research round** (root publishes count boundaries); current
+campaign count after P2below is2/15.
 P1's A and D rules both fail the frozen useful-transfer gate. They preserve
 numerical rank/reproduction through N, and their coefficient-noise scores
 beat poor deletions, but their operational prefixes save at most two/three
@@ -111,9 +112,69 @@ quality. Source files stayed unchanged during the complete P1execution.
 
 ## Pending work
 
-Root's distinct consequential review/rerun is pending; developer engineering
-checks and the completed novelty gate do not replace it. The scoped finite
+The distinct [P1review](pruning-review.md) passes its declared
+scope:404count states with fresh SVD/recurrence, degree4all-rule node
+reproductions,103eligible maps/all target-noise tables,19selected maps on
+original meshes plus fresh clouds, and129raw identities. Fresh n8angular
+ratios1.67372/1.61881 confirm both failed gates. This is a supplementary
+Codex review; formal Claude audit remains pending. The scoped finite
 negative statement is [P1boundary](theory/pruning-p1-boundary.md), MEASURED.
 Next research requires prospective publication of P2, not an automatic
 larger-degree rerun of the failed P1rules. Fourteen slots remain a ceiling.
 The455-node stored artifact and old construction sources/data remain intact.
+
+## P2 completed: every singleton is excluded by the norm constraint
+
+P2was prospectively published at
+143b5d0e17688d835b1e0c5f61e1ed95a5e05dbe before its exclusive timed run.
+Completed new research rounds are now **2/15**, thirteen unused; neither
+P1norP2passes the strict transfer gate. The new PRUNE-L rule exhaustively
+scores every current row using the actual raw-cardinal update and full
+integer-repeat covariance, filtering **both** constraints before choosing.
+It stops immediately at112/225sites at n6/8 because no initial deletion
+is feasible. Numerical guards pass and there are no rejected QR trials,
+cap hits, missing comparisons or source changes during execution.
+
+|n|rank-admissible singleton rows|10%risk-feasible rows|25%training-norm-feasible rows|joint feasible|minimum training norm / start among risk-feasible|
+|---:|---:|---:|---:|---:|---:|
+|6|112|112|0|0|1.28695579|
+|8|225|225|0|0|1.44439868|
+
+The minimum integer-risk ratio among norm-feasible rows is **not defined**
+at both degrees because that feasible set is empty. The best-norm row's
+integer-risk ratios are1.01687126/1.00868091, so the norm constraint,
+not the10%noise allowance, causes this first-step obstruction. Conversely,
+the best-risk rows have integer-risk ratios1.01087069/1.00588785 and
+training-norm ratios1.42388232/1.68771366. Dense training has985queries:
+9³angular mesh plus256fresh angular Sobol points, explicitly changed
+from P1's sparse training after its under-resolution was observed.
+No threshold was retroactively relaxed and no frozen P1failure erased.
+
+The returned maps equal full OLS, so their held-out norm/noise/target
+ratios are1. Fresh globalQR/localdet/restrictedQR and all same-count
+P1A/D/random/lex controls were assessed on the newly frozen1520+n/1530+n
+query seeds. Every individual target/sigma table and candidate score is
+retained in the raw record, including all337zero-feasibility decisions.
+A zero-step stop is an actual exhaustive finite single-deletion result,
+not an unexecuted proposal and not a theorem about arbitrary subsets.
+
+Actual P2command, full start/end UTC, original executed-source snapshots,
+versions/threads/seeds, and the single6489byte logical receipt are in
+[P2receipt](evidence/pdpr-constrained.json). Raw directory
+`/tmp/pdpr-constrained-20261107a` is local regeneration-only. Full run used
+4.149492873CPU/4.150582085wall seconds of600CPU, with source hashes
+69c81447(core),3911ee2a(driver),4d86a43b(collector). Unlike P1, metadata
+was persisted before/after science and collection completed normally.
+[P2engineering](evidence/pdpr-p2-engineering.json) passed26raw-cardinal/
+full-feasible-set comparisons against fresh QR, three feasibility-before-
+objective branches, and36mocked CPU-cap cases covering both accepted-state
+recording and post-trial-cap labeling, plus inherited QR/allocation/gate
+checks. Those preflights consume0research rounds.
+
+The [P2singleton boundary](theory/pruning-p2-singleton-boundary.md) is
+MEASURED. Independent consequential P2replay is pending; formal Claude
+review remains separate. This stops only the exact strict-constraint
+singleton rule on these two initial supports. A separately registered
+starting-support, matched-count/Pareto, or symmetry-block question may
+escape its hypotheses. No P3science is executed or automatically licensed
+by this result; the remaining thirteen slots are a ceiling, not a quota.
