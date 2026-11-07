@@ -1,22 +1,21 @@
 # Padua argmax bridge — WORK post-audit checkpoint, 2026-11-06
 
-The exact parity-correct global argmax is proved for **degrees2–42,63–64,159–160,511–512,1023**
-and **every integer n>=1024**. The residual43–62,65–158,161–510,513–1022(974degrees) remains OPEN,
-as does the all-degree target PD-T099. The analytic onset is sufficient;
-no minimality or uncomputed degree success is claimed.
+The exact parity-correct two-corner global argmax is proved for **EVERY integer n>=768**
+and finite degrees2–42,63–64,159–160,511–512. Exactly719 degrees remain OPEN:
+43–62,65–158,161–510,513–767. PD-T099 remains OPEN; the onset is sufficient,
+not minimal. The independently model-free finite1023 proof remains valid.
 
 ## Current accepted theorem and cost result
 
-[D37 global assembly](theory/D37-assembly-global1024.md) and its
-[independent review](independent-checks-D37-global1024.md) prove analytic
-onset1024: fullfar gap3/100, near noncorner gap1/200, actual-corner loss
-(alpha²+beta²)/8. Both parities, closed boundaries, nodes and collisions
-are included. PD-T271 remains an explicit computer-assisted dependency.
-[D34 finite41](theory/D34-global41.md) and
-[D36 finite1023](theory/D36-global1023.md) use model-free finite witnesses;
-finite1023 is established by the wholly fresh independently completed proof,
-not the candidate's missing outer exit observation. Final Claude and upstream
-coverage audit remain separate.
+[E02 global768](theory/E02-assembly768.md) and its
+[independent review](independent-checks-E02-assembly768.md) prove the full
+physical/parity-correct argmax using RATIONAL PAPER inequalities only.
+No scalar/endpoint/native/finite-degree job ran. Phase-aware ACTUAL
+noncorner floors are matched on near and annular charts; the new whole
+wide-FAR primitive comparison starts at rho=pi/4. Both actual-corner
+closedpi/4 squares have radial loss1/16 from512. Old D37's stronger1024
+gaps and rho>=1/2 primitive-FAR scope are preserved only at that onset.
+PD-T271 remains explicit; final Claude/upstream coverage audit is separate.
 
 The same n6912/41point witness takes469.521049CPU with the old full pipeline
 and74.034199CPU with the independently executed cheap pipeline, a measured
@@ -499,3 +498,11 @@ D31 andD33 final independent reviews now accept near1/10000, far3/100 and exact 
 ### Best analytic boundary1024; first cheap finite41 proof
 
 D37 final independent review proves exact two-corner global argmax for EVERYn>=1024, with near1/200/far3/100 gaps andactualcorner1/8descent. A fresh exactinteger-interval implementation verifiesall59components/pi/16domains/33controls. D34 separatelyprovesdegree41 througha model-free64S+3actualcertificate,101nodes/TREE M13; primary6.676496CPU andfreshindependent6.447666CPU. Currentremaininggap42–1023excluding512OPEN. The genericenginefirst1023calibrationawaitsa focused syntheticfixturefix; nopackpreparedyet.
+
+
+### E02 adopted global768; renewed research continues
+
+Global768 is accepted by rational paper proof; residual719. E01/E02 complete
+of15 additional analytic rounds, E03 joint signed-error work active. D40
+pack preparation remains PAUSED until the extension ends and need is
+reassessed; no pack source/builder/native execution exists.

@@ -1,21 +1,24 @@
 # Padua argmax bridge — current research results
 
-The exact two-corner global argmax is proved for **degrees 2–42, 63–64, 159–160, 511–512, 1023**, and **every integer n>=1024**. Equality corners are
+The exact parity-correct two-corner global argmax is proved for **every integer n>=768**,
+and finite degrees **2–42,63–64,159–160,511–512**. Equality corners are
 {(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n.
-The remaining **974 degrees:43–62,65–158,161–510,513–1022**, and the
-all-degree target PD-T099, remain OPEN. This is a sufficient analytic upper boundary.
+The remaining **719 degrees:43–62,65–158,161–510,513–767**, and the
+all-degree target PD-T099, remain OPEN. The analytic onset is sufficient, not minimal.
 
-[Global theorem](../topics/padua-argmax-bridge-20261105/theory/D37-assembly-global1024.md),
-[independent review](../topics/padua-argmax-bridge-20261105/independent-checks-D37-global1024.md).
-For n>=1024: far S<Lambda_c-3/100; near noncorner
-lambda<Lambda_c-1/200; actual corners
-lambda<=Lambda_c-(alpha²+beta²)/8. The complete closed physical cover,
-both parities, nodes, collisions and equality are proved. Sharper ordinary
-perturbation, a fully charged wider actual-origin telescope and constrained
-anisotropic maxima give the new boundary. The sole1024 primary and fresh
-independent exact-integer interval replay check all59components/pi,
-16domains,33controls and strengthened margins. PD-T271 remains an explicit
-computer-assisted dependency; final Claude audit remains pending.
+[Global768 theorem](../topics/padua-argmax-bridge-20261105/theory/E02-assembly768.md),
+[independent review](../topics/padua-argmax-bridge-20261105/independent-checks-E02-assembly768.md).
+The entire new proof uses rational PAPER inequalities: no scalar endpoint,
+native evaluation or finite-degree enumeration. It matches phase-aware
+noncorner floors, relative errors, the full global telescope and actual
+corner descent. Near/annular physical noncorners are strict; the complete
+wide-FAR primitive comparison starts at rho=pi/4. Both actual-corner
+closedpi/4 squares have loss(A²+B²)/16 from512. Do not transfer the older
+rho>=1/2 primitive-FAR statement to768. PD-T271 remains an explicit
+computer-assisted dependency; final Claude audit remains separate.
+The older [D37 global1024](../topics/padua-argmax-bridge-20261105/theory/D37-assembly-global1024.md)
+and its stronger stated gaps retain their exact scopes. The model-free
+finite1023 result is independently valid within the new analytic range.
 
 The guarded actual-Lebesgue point evaluator independently reproduced all13
 fixed cases,10 finite-polynomial references and6 invalid controls in
