@@ -1857,3 +1857,14 @@ phase-minus-cancellation decomposition, overlapping corner/noncorner/far
 regions and monotone transfer; finite proof trees bound entire boxes with
 outward native premises/exact predicates and strict local corner patches.
 No new mathematical claim or experimental allowance was inferred.
+
+Publication-check clarification: the final staged whitespace check reports
+one extra blank line at the end of evidence/compact-return/verification.json,
+which is the unchanged actual verifierstdout. The earlier blanket
+whitespace-PASS wording is too broad; exact evidence-byte preservation
+takes precedence over trimming that raw output. No code/proof defect or
+hash discrepancy was reported. Other validation results above stand.
+
+Outputs989b8ed plus this record are the completedWORKbatch. Next
+[13-audit-complete-gap.md](handoffs/13-audit-complete-gap.md) requests the
+substantive Claude review; a followinghandoff-onlycommitcloses12/opens13.
