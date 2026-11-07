@@ -1501,3 +1501,8 @@ Distinct reviewer confirms the failure is failclosed but blocks an ordinary mana
 
 
 Distinct operational report2ddcc15b... preserves the full prior review and records the actual01 outcome as new FOPS07 MAJOR. Root agrees with its precise birth-floor exclusion proof and preserves all remaining controls as unexecuted. The developer is authorized for that narrow technical fix; no scientific source or numerical result is changed. Any new02execution must have its own frozen source/input/review/release, unchanged caps and preserved01failure.
+
+
+### Narrow FOPS07 source candidate frozen before any02execution
+
+Sol medium custody6d32521c...1240B, preparationf5c9cd7b...16028B, seven owned operational files changed. New immutable package-instance/manifest/boot/earliest-supervisor-birth domain is created under lock before admission, included in run identity and return linkage, and preserved across resume/collection. Strictly older stable process births exclude unrelated inaccessible init processes before environ; possible-writer access failures remain fatal. No scientific/hybrid/native/degree/cap/source-certificate changes. Source-only AST/hash/text checks; no imports/tests/builder/extraction. Distinct focused review and a separate02fixture freeze/release are pending. First01failed source and corpus are preserved at4e1d13f0/837222ab and their off-Git locations;01will not be rerun.

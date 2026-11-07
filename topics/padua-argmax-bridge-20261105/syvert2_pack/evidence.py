@@ -6,8 +6,9 @@ import importlib.util
 import fcntl
 import os
 from pathlib import Path, PurePosixPath
-from common import digest, strict
-from plans import ENGINE
+from common import digest, strict, encoded
+from plans import ENGINE, plan
+from ownership import validate_domain
 LABELS = {'produce': 'EXACT_SINGLE_DEGREE_PRIMARY_ACCEPTED_PENDING_FRESH_VERIFY',
           'verify': 'FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW'}
 
@@ -154,6 +155,12 @@ def validate_pass(a, prefix, n, mode, manifest):
     return receipt_bytes
 
 def validate_attempt(a, group, n, run):
+    domain = a.json('outputs/writer-domain.json')
+    validate_domain(domain, run['package_root'], digest(a.data('runtime_manifest.json')))
+    require(run.get('writer_domain') == domain and run['plan'] == plan(group), 'immutable writer domain/run plan binding')
+    expected_identity = digest(encoded({'manifest': run['manifest'], 'plan': run['plan'],
+                                       'workers': run['workers'], 'writer_domain': domain}))
+    require(run['identity'] == expected_identity, 'writer-domain run identity')
     require(run['plan']['group'] == group and n in run['plan']['degrees'] and 1 <= run['workers'] <= 40, 'attempt frozen scope/profile')
     selected = run['provenance']['selected_cores']
     require(len(selected) == run['workers'] and len(set(selected)) == len(selected) and

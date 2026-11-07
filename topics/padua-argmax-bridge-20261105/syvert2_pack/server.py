@@ -11,37 +11,38 @@ import time
 import zipfile
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import HERE, digest, encoded, exclusive, files, lock, manifest, read, save
-from ownership import subreaper, cleanup, assert_no_writers
+from ownership import subreaper, cleanup, assert_no_writers, writer_domain
 from plans import PROFILE, plan
 from preflight import inspect
 from evidence import Access, validate_attempt
 
-def identity(m, p, workers):
-    return digest(encoded({'manifest': m, 'plan': p, 'workers': workers}))
+def identity(m, p, workers, domain):
+    return digest(encoded({'manifest': m, 'plan': p, 'workers': workers, 'writer_domain': domain}))
 
 def run(group, workers, resume):
     m = manifest(); p = plan(group)
     if read(HERE / 'plan.json')[group] != p: raise ValueError('frozen plan mismatch')
     output = HERE / 'outputs' / group
     with lock(HERE / 'outputs'):
+        domain = writer_domain(HERE, digest((HERE / 'runtime_manifest.json').read_bytes()), create=True)
         for other in (HERE / 'outputs').iterdir():
             if other.is_dir() and other != output and (other / 'run.json').exists():
                 if set(read(other / 'run.json')['plan']['degrees']) & set(p['degrees']):
                     raise ValueError('overlapping full/subset run already exists')
         previous = read(output / 'run.json') if (output / 'run.json').exists() else None
-        expected = identity(m, p, workers)
+        expected = identity(m, p, workers, domain)
         if bool(previous) != resume: raise ValueError('fresh/resume output mismatch')
         if previous and (previous['identity'] != expected or previous['package_root'] != str(HERE)):
             raise ValueError('resume identity/package-instance path mismatch')
         if output.exists() and not previous: raise ValueError('unregistered existing output refuses reuse')
-        assert_no_writers(digest((HERE / 'runtime_manifest.json').read_bytes()))
+        assert_no_writers(domain)
         provenance, env = inspect(workers, m); subreaper()
-        env['PADUA_PACK_WRITER'] = digest((HERE / 'runtime_manifest.json').read_bytes())
+        env['PADUA_PACK_WRITER'] = domain['token']
         Access(HERE, str(HERE), capture=True).closure(provenance)
         output.mkdir(parents=True, exist_ok=True)
         if not previous:
             exclusive(output / 'run.json', {'identity': expected, 'manifest': m, 'plan': p,
-                      'workers': workers, 'package_root': str(HERE), 'provenance': provenance, 'started_utc': datetime.now(timezone.utc).isoformat()})
+                      'workers': workers, 'writer_domain': domain, 'package_root': str(HERE), 'provenance': provenance, 'started_utc': datetime.now(timezone.utc).isoformat()})
         else:
             exclusive(output / ('resume-' + str(time.time_ns()) + '.json'), provenance)
         save(output / 'summary.json', {'identity': expected, 'quiescent': False, 'phase': 'admission'})
@@ -120,7 +121,8 @@ def collect(destination):
     if HERE / 'outputs' == destination or HERE / 'outputs' in destination.parents:
         raise ValueError('archive destination cannot be inside outputs')
     with lock(HERE / 'outputs'):
-        assert_no_writers(digest((HERE / 'runtime_manifest.json').read_bytes()))
+        domain = writer_domain(HERE, digest((HERE / 'runtime_manifest.json').read_bytes()))
+        assert_no_writers(domain)
         runs = []
         for p in sorted((HERE / 'outputs').glob('*/run.json')):
             run_record = read(p)
@@ -146,7 +148,7 @@ def collect(destination):
                 inventory[name] = {'bytes': len(data), 'sha256': digest(data)}; z.writestr(name, data)
             z.writestr('COLLECTION.json', encoded({'schema': 'padua-quiescent-return-v1', 'runs': runs,
                        'hostname': socket.gethostname(), 'utc': datetime.now(timezone.utc).isoformat(),
-                       'manifest_sha256': digest((HERE / 'runtime_manifest.json').read_bytes()),
+                       'manifest_sha256': digest((HERE / 'runtime_manifest.json').read_bytes()), 'writer_domain': domain,
                        'files': inventory, 'quiescent': True}))
         return archive
 

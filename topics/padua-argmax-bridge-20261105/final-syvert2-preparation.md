@@ -194,3 +194,42 @@ is implied. Package runs offline without .git. Root will retain the full raw ZIP
 and custody records in existing Padua local-output, never Git. Builder execution
 requires its final published SHA/inputs and reviewed enforcement wrapper first;
 this registration itself performs no builder, extraction or dependency experiment.
+
+## Focused FOPS-07 response — 2026-11-07, SOURCE ONLY
+
+First operational registration01 ran once, failed on unrelated old same-UID
+/proc/1/environ PermissionError before scheduler worker admission, and remains
+preserved at published4e1d13f08cb6a2d171fcb1a8a44efab47aae0d74. Thirteen negative
+controls passed before that first failure; remaining controls were unexecuted.
+This source repair does not rerun that registration or upgrade its outcome.
+
+Root authorized a narrow boot/age/instance ownership repair. Under the campaign
+lock, ownership.writer_domain now exclusively persists the canonical package
+instance, immutable manifest SHA256, Linux boot_id, initiating supervisor PID and
+/proc/self/stat birth tick before any worker. The token hashes those complete
+fields. The original earliest floor is never replaced across groups, resume or
+collection. Every run stores the same domain and includes it in run identity;
+started records bind that identity. Local reuse and the shared per-attempt/return
+validator reject missing, corrupt, inconsistent or modified domain/run fields.
+Live run/collection additionally refuse boot mismatch rather than compare ticks
+from different boots. Return data validation checks archived original-domain
+consistency without comparing an unrelated review host's boot.
+
+The writer scan reads stable same-UID birth metadata first. Only a birth tick
+strictly older than the immutable same-boot floor may be excluded before reading
+environment. Equal ticks remain candidates because tick resolution is coarse.
+A second birth read checks PID stability; disappearance is distinct from access
+denial. Unreadable possible-writer stat/environment remains fatal; no blanket
+PermissionError skip was added. All admitted legitimate descendants are born no
+earlier than their initiating supervisor; setsid, fork and reparenting preserve
+birth ticks. Existing exclusive locks, pre-admission summary invalidation,
+ownership-scoped cleanup and ECHILD remain; proc scanning alone is not a global
+atomic quiescence proof. Instance-bound tokens remove the earlier conservative
+cross-copy marker collision without granting cross-instance kill authority.
+
+No mathematical/hybrid/native code, cap, package pin or degree group changed.
+Only source text/hash/static AST inspection is authorized/performed here. Exact
+repaired source awaits focused source review; reviewer owns revised fixtures and
+new registration02 with separate internal root release. No imports, operational
+rerun, builder, extraction, compiler or scientific execution occurred in this
+repair. WORK remains pending source review and released controls.

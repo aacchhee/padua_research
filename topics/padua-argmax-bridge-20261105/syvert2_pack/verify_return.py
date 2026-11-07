@@ -37,13 +37,14 @@ def verify(archive, package, expected_manifest_sha):
             group = record['group']; prefix = 'outputs/' + group + '/'
             run = strict(z.read(prefix + 'run.json')); summary = strict(z.read(prefix + 'summary.json')); p = plan(group)
             require(run['plan'] == p and run['manifest'] == m, 'run plan/source mismatch')
-            expected = digest(encoded({'manifest': m, 'plan': p, 'workers': run['workers']}))
+            expected = digest(encoded({'manifest': m, 'plan': p, 'workers': run['workers'], 'writer_domain': run['writer_domain']}))
             require(run['identity'] == expected == record['identity'] == summary['identity'], 'run identity mismatch')
             require(summary.get('first_failure') is None and summary.get('never_started') == [] and
                     summary.get('quiescent') is True and summary.get('ECHILD') is True and summary.get('cleanup_killed') == [], 'run incomplete/failed')
             actual = {int(name[len(prefix + 'jobs/'):].split('/')[0]) for name in names if name.startswith(prefix + 'jobs/')}
             require(actual == set(p['degrees']), 'exact case coverage')
             access = Access(package, run['package_root'], z.read)
+            require(collection['writer_domain'] == run['writer_domain'] == access.json('outputs/writer-domain.json'), 'collection original writer domain')
             for n in p['degrees']:
                 require(n not in seen, 'duplicate degree'); seen.add(n)
                 validate_attempt(access, group, n, run)

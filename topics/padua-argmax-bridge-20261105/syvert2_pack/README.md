@@ -105,8 +105,16 @@ partial campaigns are supported. Collection includes all captured objects.
 README and published-commit attribution remain in separate SOURCE_CUSTODY.json,
 outside numerical/runtime acceptance identity. Every Python generation disables
 site processing and bytecode writes: operations use `-I -S -B`; sibling engine
-launches use `-E -S -B`. Equivalent package copies share a conservative manifest
-writer domain: any tagged live writer in that domain causes collection refusal.
+launches use `-E -S -B`. Writer tokens bind the canonical package-instance path, manifest and boot-scoped
+earliest supervisor birth tick. The original domain is persisted under the
+campaign lock before any worker, retained across full/small/large/resume/collection,
+and bound into run/started identities. Strictly older same-boot processes with
+stable readable birth metadata are excluded before environment inspection; equal
+or newer possible writers remain fail-closed on unreadable metadata/environment.
+A missing/corrupt/domain-inconsistent floor or changed boot refuses existing
+output reuse. Separate package copies have distinct instance tokens. Locking,
+summary invalidation, ownership cleanup and ECHILD still guard collection; a
+/proc walk alone is not an atomic quiescence proof.
 
 The pinned GMP6.3 runtime has an actual ELF requirement for **glibc>=2.38**.
 Root's read-only `readelf --version-info` inspection found GLIBC_2.38 in
