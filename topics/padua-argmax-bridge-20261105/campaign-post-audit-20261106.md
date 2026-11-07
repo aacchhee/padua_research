@@ -122,8 +122,10 @@ NEW15coordinatedanalyticroundsauthorized2026-11-06 afterD39. E01ACTIVEpaper-only
 | E09 | COMPLETE | Bounded20minAstraultra signed outer-plus-log upper, explicit full-error cusp retained outside this block. |
 | E10 | COMPLETE | Whole central root integral, remove artificial alpha²log majorant; no changed model or cusp deletion. |
 | E11 | COMPLETE | Gate-first joint central-pair bound with exactnegativebeta penalty; frozen main/five-fourths proof under audit, naturalhalfpi extension being checked. |
-| E12 | GATE | Prospectivefixed256 continuation; gate-only before mathematicalrelease. |
-| E13–E15 | UNALLOCATED | Remaining3 slots; redirect from proved bottlenecks. |
+| E12 | COMPLETE | Accepted corner256/scopednearrecipefailure, correctedfixedphaseTcoefficient anduniformbetaaxis40beta/n; global256OPEN. |
+| E13 | COMPLETE | Generaljoint-radius/u outergeometry andexplicitfiniteerror square-root envelope; no endpointchosen. |
+| E14 | ACTIVE | Gate-first complete320comparison usingacceptedjointgeometry/entropy-free model, no numericaljob. |
+| E15 | ACTIVE | Gate-first analyticfar192/rho>=pi/2 cheapcertifierpruningcomponent, notnewfinite-degrees. |
 
 Newallowance1/15complete,14remainingincludingactiveE02. PackPAUSED.
 
@@ -145,3 +147,7 @@ CurrentNEW9/15COMPLETE(E01–E08,E10); E09global384active,E11gatephase; sixround
 CurrentNEW E01–E10 COMPLETE10/15; E11pairedroot/domainauditactive,E12gate-onlyprospective256,E13–E15unallocated3. GLOBAL384adopted, residual337:43–62,65–158,161–383. Five roundsremainincludingE11/E12. AllnewEworkPAPERONLY; protocolfindingsunwaived,branchWORK; packPAUSED.
 
 CurrentNEW E01–E11 COMPLETE11/15; E12gate-firstlower256/signedoperatoractive,E13–E15unallocated3. FourroundsremainincludingE12. Entropy-freepairedroot/modelCLOSEDpi/2accepted; nofiniteerrordomaintransfer. Global384/residual337; packPAUSED.
+
+CurrentNEW E01–E12 COMPLETE12/15; E13generalgeometry/E14gate-only320active,E15unallocated1. Three roundsremainincludingE13/E14. Global384/residual337. Beta-axisT/corner256componentsaccepted, nointerior/error-domaintransfer; packPAUSED.
+
+CurrentNEW E01–E13COMPLETE13/15; E14complete320andE15analyticfar192mathematicalphasesreleasedAFTERexplicitfullgates. Twofinalresearchroundsremain, allallocated. Global384/residual337; packstillPAUSEDuntiltheiroutcomes/auditsfinish.
