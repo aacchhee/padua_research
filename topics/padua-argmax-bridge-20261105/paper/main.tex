@@ -1,0 +1,86 @@
+% Constructive Approximation development manuscript.
+% Publisher template provenance and build: BUILD.md. Draft status: README.md.
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{url}
+\theoremstyle{thmstyleone}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{thmstyletwo}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{definition}[theorem]{Definition}
+\hypersetup{bookmarksdepth=2,
+ pdftitle={Sharp asymptotics and exact maximizers of the Padua Lebesgue constant},
+ pdfauthor={Development manuscript; authors to be supplied}}
+\raggedbottom
+\begin{document}
+\title[Padua Lebesgue constants]{Sharp asymptotics and exact maximizers of the Padua Lebesgue constant}
+\author{\fnm{Author details} \sur{to be supplied}}
+\affil{\orgname{Affiliation to be supplied}}
+\abstract{The Lebesgue constant controls the stability of polynomial interpolation.
+For the Padua points of total degree $n$ on the square, we determine its
+maximizers and obtain a sharp asymptotic expansion. The maximum is attained
+exactly at the two corners outside the interpolation set, for every $n\geq2$.
+Writing $N=n+1/2$ and $d=\gamma+\log(8/\pi)$, the expansion is
+$\Lambda_n=(4/\pi^2)(\log N+d)^2+\kappa-1/N+O(\log N/N^2)$,
+where $\kappa$ is given by a convergent integral. The corner expansion
+is analytic: two harmonic sums give the leading square, while a coupled
+correction accounts for the constant and the reciprocal term. The global
+maximizer proof retains the cancellation lost by a periodic majorant.
+It combines quantitative localization for $n\geq320$ with rigorous finite
+certificates below that threshold. We describe the certificate implications,
+arithmetic dependencies and reproducibility boundary separately from the
+analytic asymptotic argument.}
+\keywords{Padua points, Lebesgue constant, bivariate interpolation, asymptotic expansion, computer-assisted proof}
+\pacs[MSC Classification]{41A05, 41A63, 41A60, 65D05}
+\maketitle
+\noindent\textbf{Development draft, 7 November 2026.}
+Authorship and declarations remain to be completed. This manuscript presents
+established repository results; final cross-agent audit and a complete
+standalone exposition check remain pending. Detailed supporting estimates are collected in appendices for comparison
+with the proof records. Intermediate development identifiers are retained
+where they aid checking.
+
+% CA requires numerical references in alphabetical author order.
+% The publisher's sn-mathphys-num style defaults to citation order.
+\nocite{MorrowPatterson2026,BialasCiezDeMarchiSuder2026,Mesh2024,BosCaliariDeMarchiVianelloXu2006,BosDeMarchiVianelloXu2007,CaliariDeMarchiSommarivaVianello2008poster,CaliariDeMarchiVianello2005,Computational2008,DeMarchi2022,KolomoitsevLomako2021}
+\input{sections/introduction}
+\input{sections/preliminaries}
+\input{sections/corner-formula}
+\input{sections/asymptotics}
+\input{sections/argmax}
+\input{sections/certificates}
+\input{sections/discussion}
+\backmatter
+\bmhead{Acknowledgements}
+To be completed by the authors. Assistance from language models in the
+research and manuscript preparation is documented in the repository work
+log; the authors must verify the final text and complete the publisher's
+required disclosure before submission.
+\section*{Declarations}
+\noindent\textbf{Funding and competing interests.} To be supplied by the authors.\\
+\textbf{Data and code availability.} The development sources and evidence
+records are maintained in the research repository described in
+Section~\ref{sec:certificates}. For degrees $41$--$319$, all essential
+returned proof certificates and two selected complete verification
+histories are included in the compact return;
+the other full histories were checked on the execution server and are not
+all archived with the manuscript. A durable public release and persistent
+identifier must be arranged before submission.\\
+\textbf{Author contributions.} To be supplied by the authors.
+
+\appendix
+\input{sections/asymptotics-details}
+\input{sections/row-estimates}
+\input{sections/pole-estimates}
+\input{sections/model-estimates}
+\input{sections/scalar-estimates}
+\input{sections/argmax-details}
+\input{sections/traceability}
+\bibliography{references}
+\end{document}

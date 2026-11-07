@@ -1,0 +1,12 @@
+{
+  "observer": "Distinct root-assigned Codex independent result reviewer, requested Astra high; serving metadata unexposed",
+  "observation": "Direct tools.write_stdin returned exit_code0; final-accounting separately read accepted, complete=true, first_failure=null, no_live_children=true",
+  "session_id": 30737,
+  "tool_chunk": "47163f",
+  "observed_exit_code": 0,
+  "artifacts": [
+    {"path": "topics/padua-argmax-bridge-20261105/evidence/post_audit_D23_result_review/paired-2048.json", "bytes": 4057, "sha256": "2b346331fe8a592aecf766b959ed592c5b54a0bce48eb522fa5a11843cd96481"},
+    {"path": "topics/padua-argmax-bridge-20261105/evidence/post_audit_D23_result_review/final-accounting.json", "bytes": 677, "sha256": "8ea858456a7d45382d7966669c54d68f88493cf93632c50964944a519852c8a6"}
+  ],
+  "scope": "One independently executed fresh cold old/new n2048 pair only; primary24 controls source/evidence-reviewed, not repeated"
+}

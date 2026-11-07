@@ -1,0 +1,265 @@
+{
+  "status": "MEASURED accounting of saved successful replay records; no checker rerun",
+  "rules_input_head": "084a64f6465956f9c75b5538f83752c30318f151",
+  "agent": "Codex",
+  "requested_model_effort": "gpt-6.1-sol medium; serving metadata unexposed",
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D03_class_accounting/account.py",
+  "source": {
+    "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D03_class_accounting/account.py",
+    "bytes": 5204,
+    "sha256": "685e1074407b2be632d4c44347f84883deb1bb5c909caebbfa33cea57648dbeb"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "near_subtotal_definition": "corner-orbit-plus-defect + maximum-exclusion-plus-defect + local-corner-plus-defect; no assertion these kinds coincide with a fixed geometric phase radius",
+  "rows": [
+    {
+      "n": 17,
+      "receipt": {
+        "path": "topics/padua-argmax-bridge-20261105/evidence/phase-checker-full-n17-round5.json",
+        "bytes": 6264,
+        "sha256": "49060e7633068f6ffb531e63614855a5d88c466c10e6d4d1b07a8c21043e6423"
+      },
+      "raw_report": {
+        "path": "local-output/argmax-bridge-20261105/phase-checker/round5/full-n17/raw-replay.json",
+        "bytes": 465506,
+        "sha256": "dd09354bdbb2f6a7196f486c64a4c971ca56b1fa9e0b127a4b46ea4fcc5c6b08"
+      },
+      "candidate": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-phase-compact.json",
+        "bytes": 81585,
+        "sha256": "64f7befd86658c8d9f29b05c1cb5a0162e611b726b161e737610547bed218c4b"
+      },
+      "original_success_scope": "MEASURED actual complete independent replay; gate PASS",
+      "kind_counts": {
+        "far": 524,
+        "corner-orbit-plus-defect": 704,
+        "maximum-exclusion-plus-defect": 0,
+        "local-corner-plus-defect": 28,
+        "outside": 32
+      },
+      "total_leaves": 1288,
+      "near_subtotal": 732,
+      "whole_checker_process_cpu_seconds": 109.449514,
+      "raw_checker_timed_region_cpu_seconds": 109.380850969,
+      "compiler_build_helper_cpu_seconds": 1.287483,
+      "total_subprocess_cpu_seconds": null,
+      "per_class_cpu_seconds": null,
+      "per_class_cpu_reason": "Unavailable: saved replay records contain only root/path/kind/valid/bounds; checker sources time the whole replay, not individual classes.",
+      "verified_checker_sources": [
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v2.cpp",
+          "bytes": 10891,
+          "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+          "bytes": 5609,
+          "sha256": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb"
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check.py",
+          "bytes": 10145,
+          "sha256": "88dde644a77a286e547679b0547c4d35814a4dda7373575208246882d9a26820"
+        }
+      ]
+    },
+    {
+      "n": 24,
+      "receipt": {
+        "path": "topics/padua-argmax-bridge-20261105/evidence/phase-r6-n24.json",
+        "bytes": 6243,
+        "sha256": "4392ef9c09da02b10c2379619a840782f8f339be88b67a1183f803f74ead9fdd"
+      },
+      "raw_report": {
+        "path": "local-output/argmax-bridge-20261105/phase-checker/round6/full/n24/raw-replay.json",
+        "bytes": 378388,
+        "sha256": "dc5620245ab1187ed71009ab35c2260687b842dcb85472bf918cfa918344f5d6"
+      },
+      "candidate": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n24/n24-phase-compact.json",
+        "bytes": 62755,
+        "sha256": "8c984dc87c9170ae07f106a530a7915596bca30f273371bb2de2f89c8443ec92"
+      },
+      "original_success_scope": "MEASURED actual complete independent phase replay; gate PASS",
+      "kind_counts": {
+        "far": 512,
+        "corner-orbit-plus-defect": 456,
+        "maximum-exclusion-plus-defect": 0,
+        "local-corner-plus-defect": 20,
+        "outside": 32
+      },
+      "total_leaves": 1020,
+      "near_subtotal": 476,
+      "whole_checker_process_cpu_seconds": 202.06784199999998,
+      "raw_checker_timed_region_cpu_seconds": 202.022073057,
+      "compiler_build_helper_cpu_seconds": 1.16496,
+      "total_subprocess_cpu_seconds": null,
+      "per_class_cpu_seconds": null,
+      "per_class_cpu_reason": "Unavailable: saved replay records contain only root/path/kind/valid/bounds; checker sources time the whole replay, not individual classes.",
+      "verified_checker_sources": [
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py",
+          "bytes": 12518,
+          "sha256": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc"
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v2.cpp",
+          "bytes": 10891,
+          "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+          "bytes": 5609,
+          "sha256": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb"
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "receipt": {
+        "path": "topics/padua-argmax-bridge-20261105/evidence/phase-r9-n32.json",
+        "bytes": 10224,
+        "sha256": "5bdab76556a37552121afabe172d641e57a60026d1b07b36c4f6e5e5069977ae"
+      },
+      "raw_report": {
+        "path": "local-output/argmax-bridge-20261105/phase-r9/n32/checker-report.json",
+        "bytes": 166401,
+        "sha256": "05247fa822055bc0dcfd9ceac2932bd9dca97309d7e351be48d6100da61f7df7"
+      },
+      "candidate": {
+        "path": "local-output/argmax-bridge-20261105/bootstrap-r8/n32/n32-phase-compact.json",
+        "bytes": 21338,
+        "sha256": "97c339181652d37e7e3c34522959f1b7157b8ea26d3f0ab83c0ebc1c3901528e"
+      },
+      "original_success_scope": "one round9 replay of unchanged previously failed n32 candidate; no degree extension",
+      "kind_counts": {
+        "far": 280,
+        "corner-orbit-plus-defect": 28,
+        "maximum-exclusion-plus-defect": 24,
+        "local-corner-plus-defect": 0,
+        "outside": 32
+      },
+      "total_leaves": 364,
+      "near_subtotal": 52,
+      "whole_checker_process_cpu_seconds": 138.193144816,
+      "raw_checker_timed_region_cpu_seconds": 138.175126666,
+      "compiler_build_helper_cpu_seconds": 1.1711399999999998,
+      "total_subprocess_cpu_seconds": 139.40540900000002,
+      "per_class_cpu_seconds": null,
+      "per_class_cpu_reason": "Unavailable: saved replay records contain only root/path/kind/valid/bounds; checker sources time the whole replay, not individual classes.",
+      "verified_checker_sources": [
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r9.py",
+          "bytes": 3345,
+          "sha256": "1161ad5c7d4ced9736bffcbf633df349189c842314b04664ff6b465e50f2c01e"
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8.py",
+          "bytes": 10583,
+          "sha256": "3c71ada8e49829cb897ee1c064fcdc70d08c846afcb1fb067c6c84673e205bb9"
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+          "bytes": 5703,
+          "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v3.cpp",
+          "bytes": 12716,
+          "sha256": "f52d1a9da3c86212663f7ac22e9475b76811d7be4bbc4916779fd32a59d95bf0"
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py",
+          "bytes": 12518,
+          "sha256": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc"
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+          "bytes": 5609,
+          "sha256": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb"
+        },
+        {
+          "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v2.cpp",
+          "bytes": 10891,
+          "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+        }
+      ]
+    }
+  ],
+  "timing_source_inspection": [
+    {
+      "identity": {
+        "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check.py",
+        "bytes": 10145,
+        "sha256": "88dde644a77a286e547679b0547c4d35814a4dda7373575208246882d9a26820"
+      },
+      "timing_source_lines": [
+        {
+          "line": 167,
+          "text": "args=ap.parse_args();t=time.process_time()"
+        },
+        {
+          "line": 182,
+          "text": "report['cpu_seconds']=time.process_time()-t"
+        }
+      ]
+    },
+    {
+      "identity": {
+        "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py",
+        "bytes": 12518,
+        "sha256": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc"
+      },
+      "timing_source_lines": [
+        {
+          "line": 193,
+          "text": "args=ap.parse_args();t=time.process_time()"
+        },
+        {
+          "line": 208,
+          "text": "report['cpu_seconds']=time.process_time()-t"
+        }
+      ]
+    },
+    {
+      "identity": {
+        "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8.py",
+        "bytes": 10583,
+        "sha256": "3c71ada8e49829cb897ee1c064fcdc70d08c846afcb1fb067c6c84673e205bb9"
+      },
+      "timing_source_lines": [
+        {
+          "line": 133,
+          "text": "args=ap.parse_args();t=time.process_time()"
+        },
+        {
+          "line": 148,
+          "text": "report['cpu_seconds']=time.process_time()-t"
+        }
+      ]
+    },
+    {
+      "identity": {
+        "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r9.py",
+        "bytes": 3345,
+        "sha256": "1161ad5c7d4ced9736bffcbf633df349189c842314b04664ff6b465e50f2c01e"
+      },
+      "timing_source_lines": [
+        {
+          "line": 42,
+          "text": "started=time.process_time();raw=args.candidate.read_bytes();sources=python_sources()"
+        },
+        {
+          "line": 59,
+          "text": "native_source=native,cpu_seconds=time.process_time()-started,"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Historical original success records only; no current checker validation.",
+    "No per-class CPU or near-only throughput can be inferred from leaf fractions.",
+    "Different degrees used different candidates and checker versions, so leaf counts are not a controlled scaling experiment."
+  ],
+  "accounting_cpu_seconds": 0.050429
+}

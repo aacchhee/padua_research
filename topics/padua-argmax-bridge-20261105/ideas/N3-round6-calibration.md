@@ -1,0 +1,11 @@
+# N3 round6 — higher known-degree outward calibration
+
+Rules/input: `fc8c2885f47b08cecc7f65328db0e740cbc205ea`. Delegated Codex producer; requested Sol medium, serving model/effort metadata unexposed.
+
+Scope: fixed n24 then32 complete outward MPFR phase candidates, independently checked later with the unchanged accepted round5 Arb arithmetic and a separately reviewed common finite-range corner guard. Both degrees are already in the accepted global finite range: this is overlap calibration, not a new degree theorem.
+
+Gate/registry delta read: topic `gates.md` and `rounds.md` round5 disposition; registry IDEA-330/454/457 and full IDEA-454 H1 record; `N3-corner-batch.md`, `N3-phase-n17.md` and phase-checker reduction. Prior n17 whole phase cover passed1288/1288 leaves; higher outward cost/coverage remains OPEN. Closest predecessor is exactly IDEA-454's unchanged S−defect/three-region reduction with the already proved common corner patch from IDEA-330/457. No new mechanism, priority or novelty claim; no candidate-generation gate or new ID is appropriate. This quantitative variant retains the old obstruction/kill criteria. Two additional timings alone cannot establish a growth law or B2 throughput gate.
+
+Fixed difference: use the published common finite patch (all n2..128, kappa>=1/16000, phase square1/128) in place of only the much smaller inherited geometric radius. A fixed receipt SHA/status/full coverage and code/data identities must validate before use. No caller field supplies the premise; no new prose hash pins. Only corner-Cu strictness can be bypassed; actual S-upper minus actual defect-lower remains strictly below Lc. Outside geometry and all-center arithmetic remain unchanged.
+
+Cheapest decisive test is this fixed overlap block: n24 then32, search<=1500CPU-s and total degree process group<1600CPU-s,100000visits. Stop on first failed/incomplete/capped degree; no adaptive parameters, repeats, n64/n128, new enclosures or degree extrapolation. Complete producer output always accepted=false and requires exact-byte independent replay before any mathematical promotion. See `../attempts/N3-round6.md` for preregistered commands, identities, retention and executed outcomes.

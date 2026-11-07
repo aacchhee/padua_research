@@ -1,0 +1,686 @@
+\section{Pole norms and endpoint reference matching}
+\label{app:pole-estimates}
+
+This appendix supplies the scalar pole estimates used in
+Appendix~\ref{app:row-estimates}.  We keep its notation for the actual
+rows, their coefficients $C(v),D(v)$, their offsets $\eta_\pm(v)$,
+and their finite polynomial values.  In particular
+$m=n+1$, $a=(\cos\alpha+\cos\beta)/2$, and
+$P=\sin\alpha+\sin\beta$.  The phase triangle is
+$\alpha,\beta\geq0$, $\alpha+\beta\leq\pi$.
+
+\subsection{A weighted single-pole estimate}
+
+To distinguish a scalar reciprocal pair from the row coefficient
+$C(v)$, write
+\begin{equation}\label{eq:pole-reciprocal-pair}
+ \mathcal C(t)=-\psi(t)-\psi(1-t),\qquad 0<t<1.
+\end{equation}
+Its harmonic series is precisely the series inside the braces in
+\eqref{eq:Phi-series}, before the subtraction of $2\log\pi$.
+Thus $\mathcal C$ denotes the same scalar function written $C(t)$
+in the scalar estimates.  Put
+\[
+ B_n(t)=\sum_{k=0}^{n-1}\left|\cot\frac{\pi(k+t)}n\right|,
+ \qquad F_n(t)=\frac{\sin(\pi t)}nB_n(t),\quad 0<t<1.
+\]
+
+\begin{lemma}[Weighted single-pole estimate]
+\label{lem:weighted-single-pole}
+For every integer $n\geq2$ and $0<t<1$,
+\begin{equation}\label{eq:pole-norm-error}
+ \left|\frac{B_n(t)}n-
+ \frac{2\log n+\mathcal C(t)-2\log\pi}{\pi}\right|
+       \leq\frac5{n^2}.
+\end{equation}
+The functions $F_n$ and $\Phi_{\log n}$ extend periodically and
+continuously to the real line, with value $1$ at the integers, and
+\begin{equation}\label{eq:pole-weighted-error}
+ |F_n(t)-\Phi_{\log n}(t)|
+       \leq\frac{5|\sin(\pi t)|}{n^2}.
+\end{equation}
+Also $\|\Phi_0\|_\infty\leq4$ and
+$\operatorname{Lip}(\Phi_0)\leq12$ on the real line.
+For every ordinary physical row, replacing its two weighted pole norms
+by the corresponding terms of $\mathcal H(\log n,v_r)$ has error
+at most
+\begin{equation}\label{eq:pole-row-error}
+ |\epsilon_r|\leq\frac{5(|C(v_r)|+|D(v_r)|)}{n^2}.
+\end{equation}
+After the outer normalization $1/m$, the sum of these errors over any
+subset of nonendpoint rows is at most
+\begin{equation}\label{eq:pole-total-error}
+ \frac{10}{n^2}+\frac{20aH_n}{\pi n^2}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Both endpoint singularities of $|\cot y|$ can be removed explicitly.
+On $0<y<\pi$ set
+\[
+ b(y)=|\cot y|-\frac1y-\frac1{\pi-y},\qquad A=\pi/2.
+\]
+Then $b(0)=b(\pi)=-1/\pi$ by continuity,
+$b(\pi-y)=b(y)$, and direct integration gives
+$\int_0^\pi b=-2\log\pi$.  For $y<A$ its second derivative
+is that of $(\cot y-1/y)-1/(\pi-y)$.  The bound
+$|(\cot y-1/y)''|<1$ proved in the proof of
+Lemma~\ref{lem:corner-one-dimensional}, and reflection, show
+$|b''|<2$ away from $A$.  Its one-sided derivatives at $A$ are
+$-1$ and $1$.  Hence $\widetilde b(y)=b(y)-|y-A|$ has a
+Lipschitz continuous first derivative and $|\widetilde b''|\leq2$
+almost everywhere, including cells which cross $A$.
+
+Let $h=\pi/n$.  On each cell $[kh,(k+1)h]$ the average of the
+two samples at relative positions $t,1-t$ and the cell average
+have the same constant and linear Taylor terms about the midpoint.
+For a second derivative bounded by $M$, their difference is at most
+$Mh^2/8+Mh^2/24=Mh^2/6$.  Apply this to $\widetilde b$.
+For the subtracted cusp $|y-A|$, the paired error is zero on every
+cell when $n$ is even.  When $n$ is odd only the central cell contributes;
+its paired sample average minus its cell average is
+$h(|t-1/2|-1/4)$, of magnitude at most $h/4$.
+The two global shifted sums of $b$ agree by reflection.  It follows that
+\begin{equation}\label{eq:pole-cusp-quadrature}
+ \left|\frac1n\sum_{k=0}^{n-1}b(h(k+t))
+                 -\frac1\pi\int_0^\pi b(y)\,dy\right|
+       \leq\frac{\pi^2/3+\pi/4}{n^2}.
+\end{equation}
+
+If $H_n(t)=\sum_{k=0}^{n-1}(k+t)^{-1}$, its exact harmonic
+tail identity is
+\begin{align*}
+ &H_n(t)+H_n(1-t)-2\log n-\mathcal C(t)\\
+ &\qquad=\sum_{k=n}^\infty
+       \left\{2\log(1+1/k)-\frac1{k+t}-\frac1{k+1-t}\right\}.
+\end{align*}
+The magnitude of the $k$th summand is at most $1/(3k^3)$.
+Indeed, for the convex function $f(u)=1/(k+u)$, its symmetric sample
+average lies between its midpoint value and its endpoint average.
+The trapezoid and midpoint integral errors, with $f''\leq2/k^3$,
+bound twice its discrepancy from its integral by $1/(3k^3)$.
+Integral comparison bounds the full tail by
+$1/(6n^2)+1/(3n^3)\leq1/(2n^2)$.
+The two reciprocal terms removed from $b$ contribute exactly
+$\{H_n(t)+H_n(1-t)\}/\pi$ to $B_n(t)/n$.
+Adding this tail estimate and \eqref{eq:pole-cusp-quadrature} proves
+\eqref{eq:pole-norm-error}, since
+$\pi^2/3+\pi/4+1/(2\pi)<5$.
+
+Multiplication by $\sin(\pi t)$ gives
+\eqref{eq:pole-weighted-error} in the open unit interval.
+At either endpoint the nearest cotangent term alone gives $F_n\to1$.
+The series for $\mathcal C$ gives
+$\sin(\pi t)\mathcal C(t)/\pi\to1$ there as well.
+Thus the asserted continuous periodic extension has zero error at
+the integers.
+
+Here are bounds for that extension which also control a change of
+offset through an integer.  By symmetry it suffices to take
+$0<t\leq1/2$.  Rearranging the absolutely convergent series gives
+\[
+ \mathcal C(t)=\frac1t+2\gamma+Q(t),\qquad
+ Q(t)=2t^2\sum_{k\geq1}\frac1{k(k^2-t^2)}.
+\]
+Integral comparison and termwise differentiation give
+$0\leq Q(t)\leq4t^2$ and $0\leq Q'(t)\leq(32/3)t$.
+Now
+\[
+ \Phi_0(t)=\frac{\sin(\pi t)}{\pi t}
+  +(2\gamma-2\log\pi)\frac{\sin(\pi t)}\pi
+  +Q(t)\frac{\sin(\pi t)}\pi.
+\]
+Using $0\leq\gamma\leq1$ and $\log\pi<3/2$, the absolute
+values of its three terms are bounded by $1,5/\pi,1/\pi$.
+For the first derivative use the representation
+$\sin(\pi t)/(\pi t)=\int_0^1\cos(\pi tu)\,du$:
+its derivative has magnitude at most $\pi^2t/3<2$.
+The derivative of the second term has magnitude below $5$.
+The first derivative of the last term has magnitude at most
+$Q(t)+tQ'(t)\leq(44/3)t^2<4$.
+Thus $|\Phi_0'|<12$ between its reflection points.
+Reflection and the continuous periodic endpoint matching prove the
+global bounds.
+
+For the physical rows, the exact half-angle identities are
+\[
+ C(v)=-\frac{c_e\sin(\pi\eta_-(v))}{2\sin(v/2)},\qquad
+ D(v)= \frac{c_d\sin(\pi\eta_+(v))}{2\sin(v/2)}.
+\]
+Applying \eqref{eq:pole-weighted-error} before cancelling these
+sine factors proves \eqref{eq:pole-row-error}.  At an actual collision
+this calculation defines a profile only; the actual polynomial row is
+retained among the exceptional rows.
+Finally $|C(v_r)|+|D(v_r)|\leq1+a|\cot(v_r/2)|$ and the
+mesh distances to $0,2\pi$ give
+\[
+ \sum_{r=1}^{2m-2}(|C(v_r)|+|D(v_r)|)
+       \leq2m+\frac{4am}{\pi}H_n.
+\]
+To see the last bound directly, the distance of $v_r$ from the endpoints
+is at least $\pi\min(r,2m-r-1)/m$; each positive distance index
+occurs twice, and $|\cot(v_r/2)|\leq2/\operatorname{dist}
+(v_r,\{0,2\pi\})$.  Sum \eqref{eq:pole-row-error} and divide
+by $m$ to obtain \eqref{eq:pole-total-error}.
+\end{proof}
+
+\subsection{A matched half-line defect}
+
+The symmetric cancellation reference in a row has coefficients
+$(-w,w)$, with $w\geq0$.  Its endpoint defect is most conveniently
+computed on two half lines.  The following estimate keeps their
+displaced offsets exactly.
+
+\begin{lemma}[Half-line cotangent defect]\label{lem:half-line-defect}
+For $h>0$, $0<v<\pi/2$, $0\leq t\leq1$, put $d=v/h$ and
+\[
+ Q(h,v,t)=\sum_{\substack{k\geq0\\v+h(k+t)<\pi/2}}
+           \cot(v+h(k+t))+\frac1h\log\sin v.
+\]
+Then
+\begin{equation}\label{eq:pole-half-line-bound}
+ \left|Q(h,v,t)-\frac{\log d-\psi(d+t)}h\right|\leq\frac4\pi.
+\end{equation}
+An equality sample at $\pi/2$ may be included with value zero.
+For the symmetric reference
+\[
+ g_0(X)=|-w\cot X+w\cot(X+v)|
+               -w|\cot X|-w|\cot(X+v)|
+\]
+on an $n$-point mesh $X_k=X_0+k\pi/n$ avoiding both poles, set
+$t_- =\operatorname{frac}(X_0/h)$,
+$t_+=\operatorname{frac}((X_0+v)/h)$, $h=\pi/n$.
+Its quadrature defect $T_0$ satisfies
+\begin{align}
+ \Theta&=-\frac{2w}h
+       \{2\log(v/h)-\psi(v/h+t_-)-\psi(v/h+1-t_+)\},
+       \label{eq:pole-half-line-Theta}\\
+ |T_0-\Theta|&\leq\frac{16w}\pi.
+       \label{eq:pole-half-line-reference-bound}
+\end{align}
+\end{lemma}
+
+\begin{proof}
+For $x\geq0$ let $f_v(x)=\cot(v+x)$ when $v+x<\pi/2$,
+and $f_v(x)=0$ otherwise.  The continuous residual
+$r_v(x)=f_v(x)-1/(v+x)$ decreases to $-2/\pi$ and then
+increases to zero.  Thus
+\[
+ \operatorname{Var}_{[0,\infty)}r_v
+       =4/\pi+\cot v-1/v\leq4/\pi.
+\]
+Comparison of a sample with the average on its own cell gives, for
+every finite $K$,
+\[
+ \left|\sum_{k=0}^{K-1}r_v(h(k+t))
+           -\frac1h\int_0^{Kh}r_v(x)\,dx\right|\leq4/\pi.
+\]
+The separate infinite sum and integral of $r_v$ diverge; only this
+matched difference is used.  The reciprocal part of that difference is
+exactly
+\[
+ \frac1h\{\psi(d+t+K)-\psi(d+t)-\log(d+K)+\log d\},
+\]
+which tends to $h^{-1}(\log d-\psi(d+t))$.
+Both the sum and the integral of $f_v$ stabilize, and
+$\int_0^\infty f_v=-\log\sin v$.
+Taking the limit of the finite matched identity proves
+\eqref{eq:pole-half-line-bound}.
+
+The only nonzero pieces of $g_0$ on $[0,\pi)$ are
+$-2w\cot(X+v)$ for $0<X<\pi/2-v$ and
+$2w\cot X$ for $\pi/2<X<\pi-v$.
+Reflect the second interval about $\pi-v$; its positive distance
+offset is $1-t_+$, and the first has offset $t_-$.
+Consequently
+$T_0=-2w\{Q(h,v,t_-)+Q(h,v,1-t_+)\}$.
+Applying \eqref{eq:pole-half-line-bound} twice proves the result.
+\end{proof}
+
+\subsection{The symmetric reference and its endpoint constant}
+
+For the fixed cutoff $R\geq2$, let $\mathcal A_R$ consist of
+rows $0,\ldots,R-1$, rows $2m-R,\ldots,2m-1$, rows $m-1,m$,
+and every row containing an actual polynomial collision.  Its complement
+is denoted $\mathcal O_R$.  There are at most two collision rows, so
+$|\mathcal A_R|\leq2R+4$.  For $r\in\mathcal O_R$ define
+\[
+ w_r=\frac a2\cot(v_r/2),\qquad
+ X_{rk}=(u_{rk}-v_r)/2,
+\]
+and let $T_{0,r}$ be the quadrature defect of the reference with
+coefficients $(-w_r,w_r)$, as in
+Lemma~\ref{lem:half-line-defect}.  Its definition depends only on
+the absolute reference and thus also allows $w_r<0$.
+
+\begin{lemma}[Symmetric reference matching]
+\label{lem:symmetric-reference-match}
+Let $n\geq8R$ and $R\geq2$.  Set $x=\alpha/\pi$, $t=\beta/\pi$.
+For $j\geq2$, $|s|\leq1$, $x+|s|\leq1$, define
+\begin{align*}
+ q_\pm&=(1+s\pm x)/2,\qquad \nu=j+s,\\
+ B_j(s)&=\psi(j+q_+)+\psi(j+q_-)-2\log(j+s),\\
+ \Xi_j(s)&=\frac{2a}{\pi^2}\frac{B_j(s)}{j+s},\qquad
+ \Delta_R=\sum_{j=R}^{\infty}\{\Xi_j(t)+\Xi_{j+1}(-t)\}.
+\end{align*}
+This series converges absolutely and equals $E_\infty-E_R$, with
+the unchanged finite endpoint constant
+\begin{align*}
+ E_R={}&C_R+D_0\{h_R(t)+h_R(1-t)\}
+                  +B_0\{g_R(t)+g_R(1-t)\},\\
+ C_R={}&\ell_0(\beta)+\sum_{j=1}^{R-1}\ell_j(\alpha,\beta)
+                         +\sum_{j=1}^{R}\ell_j(\alpha,-\beta),\\
+ E_\infty={}&\frac a3+
+       \frac a{\pi^2}\mathcal C((1+x-t)/2)\mathcal C((1+x+t)/2).
+\end{align*}
+Weighted endpoint products use their continuous values.  Uniformly on
+the closed phase triangle,
+\begin{equation}\label{eq:pole-symmetric-match}
+ \left|\frac1{nm}\sum_{r\in\mathcal O_R}T_{0,r}-\Delta_R\right|
+ \leq\frac{[52a/\pi^2+16P/(3\pi)]H_n+7a+2P/\pi}{n}.
+\end{equation}
+In particular this supplies the reference allowance with
+$\Delta_2=E_\infty-E_2$ used in Appendix~\ref{app:row-estimates}.
+\end{lemma}
+
+\begin{proof}
+We first identify the constant, and then estimate the finite rows.
+The elementary real-shift harmonic estimate is
+\begin{equation}\label{eq:pole-real-psi-bound}
+ 0\leq\log u-\frac1{2u}-\psi(u)\leq\frac1{8u^2},\qquad u>0.
+\end{equation}
+It follows by the same unit-cell trapezoid argument as
+\eqref{eq:asym-details-harmonic-estimate}, starting at $u$.
+Since $j+q_\pm\in[\nu,\nu+1]$ and $\nu\geq1$, monotonicity
+and \eqref{eq:pole-real-psi-bound} show
+\begin{equation}\label{eq:pole-Xi-bound}
+ |\psi(j+q_\pm)-\log\nu|\leq1/\nu,
+ \quad |B_j(s)|\leq2/\nu,
+ \quad |\Xi_j(s)|\leq\frac{4a}{\pi^2\nu^2}.
+\end{equation}
+Thus the series for $\Delta_R$ converges uniformly on the closed
+triangle.
+
+Here is the exact finite-row calculation which fixes its normalization.
+Write $H_j(q)=\psi(j+q)-\psi(q)$ initially in the open triangle.
+Partial fractions in the finite reference defining $\ell_j$ give
+\begin{align}
+ \ell_j(\alpha,b)
+ &=\frac{\sin b}{\pi(j+s)}+
+       \frac{2a}{\pi^2}\frac{H_j(q_-)+H_j(q_+)}{j+s}
+       \notag\\
+ &=\frac{D_0+(2a/\pi^2)
+             \{\psi(j+q_-)+\psi(j+q_+)\}}{j+s},
+ \qquad s=b/\pi.
+ \label{eq:pole-endpoint-row-digamma}
+\end{align}
+For the second equality, the recurrence series and the cotangent
+partial fraction imply
+$\psi(1-q)-\psi(q)=\pi\cot(\pi q)$.
+Put $t_d=(1+x-t)/2$, $t_e=(1+x+t)/2$.  The definitions of
+$U_0,D_0$ in Appendix~\ref{app:row-estimates} give
+\[
+ D_0=\frac a{\pi^2}\{\mathcal C(t_d)+\mathcal C(t_e)\}.
+\]
+For $b=\beta$ the small arguments are $1-t_d,t_e$; their
+reflection difference from this expression is
+$\sin\beta/\pi+(a/\pi)\{\cot(\pi t_e)-\cot(\pi t_d)\}=0$.
+The case $b=-\beta$ is identical with the opposite sine sign.
+This verifies \eqref{eq:pole-endpoint-row-digamma}, including its
+constant term.  Its large arguments are positive for $j\geq2$,
+so it extends to the closed triangle with the prescribed sinc values.
+
+The convergent series \eqref{eq:hg-definitions} give exactly
+\[
+ h_R(u)-h_{R+1}(u)=\frac1{R+u},\qquad
+ g_R(u)-g_{R+1}(u)=\frac{\log(R+u)}{R+u}.
+\]
+Combining these with \eqref{eq:pole-endpoint-row-digamma} proves
+\begin{equation}\label{eq:pole-endpoint-increment}
+ E_{R+1}-E_R=\Xi_R(t)+\Xi_{R+1}(-t),\qquad R\geq2.
+\end{equation}
+To identify its limit without an unspecified constant, for $p,q>0$
+consider the finite triangular convolution
+\[
+ T_M(p,q)=\sum_{\substack{k,l\geq0\\k+l\leq M-1}}
+                   \frac1{(k+p)(l+q)}.
+\]
+The square sum $H_M(p)H_M(q)$ has expansion
+$\log^2M-(\psi(p)+\psi(q))\log M+\psi(p)\psi(q)+o(1)$.
+Its difference from $T_M$ tends to
+\[
+ \int_{\substack{0<u,v<1\\u+v>1}}\frac{du\,dv}{uv}
+       =\int_0^1\frac{-\log(1-u)}u\,du=\frac{\pi^2}{6}.
+\]
+For a direct endpoint justification, first restrict $u,v\geq\eta$,
+where ordinary Riemann sums apply.  On the omitted side $k\leq\eta M$
+there are at most $k+2$ admissible $l$ values and
+$l\geq M(1-\eta)-2$.  Its limiting contribution is bounded by
+a constant times $\limsup M^{-1}\sum_{k\leq\eta M}(k+2)/(k+p)
+=O(\eta)$; the other side is the same.  Let $\eta\downarrow0$.
+Termwise integration of the nonnegative logarithmic series gives the
+last equality using \eqref{eq:asym-details-square-sums}.
+
+The identity
+\[
+ \frac{H_j(q_-)+H_j(q_+)}{j+s}
+       =\sum_{k+l=j-1}\frac1{(k+q_-)(l+q_+)}
+\]
+now sums the two orientations of $C_R$.  The signed sine terms tend,
+including $\ell_0$, to
+\[
+ \frac{\sin\beta}{\beta}+
+ \frac{\sin\beta}{\pi}\sum_{j\geq1}
+       \left(\frac1{j+t}-\frac1{j-t}\right)=\cos\beta.
+\]
+Also the series for $h_R,g_R$ give
+$h_R(u)=-\log R+o(1)$,
+$g_R(u)=-\tfrac12\log^2R+o(1)$.
+For the latter the centered-cell remainder tail is
+$O(\log R/R^2)$ by \eqref{eq:asym-details-trapezoid-kernel}.
+Consequently
+\begin{align*}
+ \lim_{R\to\infty}E_R
+ =\cos\beta+\frac{2a}{\pi^2}
+ \bigl\{\psi(1-t_d)\psi(t_e)+\psi(1-t_e)\psi(t_d)-\pi^2/3\bigr\}.
+\end{align*}
+Replace each complementary psi pair by its sum and cotangent
+difference.  The product in braces before $-\pi^2/3$ becomes
+$\{\mathcal C(t_d)\mathcal C(t_e)
+-\pi^2\cot(\pi t_d)\cot(\pi t_e)\}/2$.
+Finally
+$a\cot(\pi t_d)\cot(\pi t_e)=(\cos\beta-\cos\alpha)/2$.
+This gives exactly the displayed $E_\infty$.
+The uniform tail bound \eqref{eq:pole-Xi-bound} in
+\eqref{eq:pole-endpoint-increment} extends this identity to every
+boundary phase: finite $E_R$ are continuous in their linked sinc
+charts, and the products
+$\cos(\theta/2)\mathcal C(1/2+\theta/(2\pi))$
+have continuous limits $\pi$ at $\theta=\pm\pi$.
+Summing \eqref{eq:pole-endpoint-increment} proves
+$\Delta_R=E_\infty-E_R$.
+
+We turn to the finite mesh estimate.  For a left endpoint row write
+$j=r$, $s=t$, $z=v_r$; on the right write
+$j=2m-r$, $s=-t$, $z=2\pi-v_r$ and reflect the row.
+The endpoint region is $z<\pi/2$.  Its indices start at $R$ on
+the left and $R+1$ on the right.  Put
+\begin{align*}
+ \nu&=j+s,\quad z=\pi\nu/m,\quad d=n\nu/m,
+       \quad\delta=\nu/(2m)<1/4,\\
+ \theta_\pm&=(1-s\pm x)/2+\delta,\quad
+       k_\pm=\lfloor\theta_\pm\rfloor,\quad
+       y_\pm=j+q_\pm-\delta.
+\end{align*}
+The two positive distances from the poles have offsets
+$\operatorname{frac}\theta_\pm$, and
+$d+\operatorname{frac}\theta_\pm=y_\pm-k_\pm$ exactly.
+On ordinary rows these offsets are nonzero.  Since
+$0<\theta_\pm<5/4$, the integers $k_\pm$ are $0$ or $1$.
+Lemma~\ref{lem:half-line-defect} gives
+\begin{align}
+ \Theta_{j,s}&=\frac{an}{\pi}\cot(z/2)
+       \{\psi(y_+-k_+)+\psi(y_--k_-)-2\log d\},
+       \notag\\
+ |T_{0,r}-\Theta_{j,s}|&\leq16w/\pi,
+       \qquad w=a\cot(z/2)/2.
+       \label{eq:pole-displaced-Theta}
+\end{align}
+At a collision the displayed psi expression is a bookkeeping value
+only; its error bound is used only on ordinary rows.
+
+For $u\geq j-1/4$, the positive derivative series gives
+$\psi'(u)\leq1/u+1/u^2\leq2/j$.  Therefore the two displacements
+by $\delta$, together with $|\log(n/m)|\leq1/n$, give
+\[
+ |\psi(y_+)+\psi(y_-)-2\log d-B_j(s)|\leq5/n.
+\]
+The normalized prefactor is
+\[
+ A_j=\frac{a\cot(z/2)}{\pi m}
+       =\frac{2a}{\pi^2\nu}\tau(z/2),\qquad \tau(u)=u\cot u.
+\]
+On $[0,\pi/4]$, $0\leq1-\tau(u)\leq u^2$.
+For example $\sin u-u\cos u\leq u^3/3$ and
+$\sin u\geq2u/\pi$ prove this inequality.
+Thus replacing $A_j$ by $2a/(\pi^2\nu)$ costs at most $a/m^2$
+when it multiplies $B_j(s)$; the displacement just bounded costs
+$10a/(\pi^2n\nu)$.
+
+A wrap $k=1$ contributes exactly $-1/(y-1)$ by the psi recurrence.
+It requires one of $\pm\alpha-\pi s\geq\pi-z$, hence
+$e=\alpha+\beta\geq\pi-z$.  Since
+$a=(P/2)\cot(e/2)$, it follows that
+$a\leq(P/2)\tan(z/2)\leq Pz/2$.
+Also $y-1\geq j-5/4\geq3(j-1)/4$ and
+$A_j\leq P/(\pi m)$.  Both possible wraps together therefore cost
+at most $8P/(3\pi m(j-1))$ in a row.  We have proved
+\begin{equation}\label{eq:pole-finite-Xi-comparison}
+ \left|\frac{\Theta_{j,s}}{nm}-\Xi_j(s)\right|
+ \leq\frac{10a}{\pi^2n\nu}+\frac a{m^2}
+                            +\frac{8P}{3\pi m(j-1)}.
+\end{equation}
+
+Over the two endpoint sets the sums of $1/\nu$ and of $1/(j-1)$
+are each at most $2H_n$, and there are fewer than $2m$ rows.
+Thus \eqref{eq:pole-finite-Xi-comparison} sums to at most
+$[20a/\pi^2+16P/(3\pi)]H_n/n+2a/n$.
+The infinite tails missing from this endpoint region start at
+$\nu\geq m/2$; by \eqref{eq:pole-Xi-bound} their combined sum is
+at most $16a/(\pi^2m)+32a/(\pi^2m^2)<2a/n$, since $m\geq17$.
+An omitted collision has $\theta=1$, so the wrap argument above
+bounds its $\Xi$ magnitude by $P/(\pi m)$.
+At most two such rows contribute, at cost $2P/(\pi n)$.
+
+The error in \eqref{eq:pole-displaced-Theta} sums to at most
+$32aH_n/(\pi^2n)$, because $w\leq am/(\pi\nu)$.
+Finally the symmetric reference itself has
+$\operatorname{Var}_{\rm per}(g_0)=8|w\cot v|$.
+Indeed, after periodic reflection to $0<v\leq\pi/2$, its two
+nonzero pieces are the monotone cotangent pieces displayed in the proof
+of Lemma~\ref{lem:half-line-defect}; each pole jump is included in
+this variation.  Centering a cell at each sample bounds a shifted
+quadrature defect by half the periodic variation (integrate the
+one-sided differences on the two half cells).  Thus on the central
+region $\pi/2\leq v_r\leq3\pi/2$,
+\[
+ |T_{0,r}|\leq4|w_r|/|\sin v_r|
+       =a/\sin^2(v_r/2)\leq2a.
+\]
+The rows at the central collision are special and absent.  There are
+at most $m+1$ remaining central rows, costing less than $3a/n$
+after normalization.  Adding all charges proves
+\eqref{eq:pole-symmetric-match}.
+\end{proof}
+
+\subsection{The closest actual row on the whole phase triangle}
+
+\begin{lemma}[Closest-row global estimate]\label{lem:closest-row-global}
+For $n\geq16$, $v=\beta/m$, and the actual closest row $R_0$,
+\begin{equation}\label{eq:pole-closest-row-global}
+ \left|\frac{R_0}{nm}-\operatorname{sinc}\beta\right|
+       \leq\frac{2+H_n/\pi}{m}+\frac{\pi^2}{24m^2},
+ \qquad \operatorname{sinc}0=1.
+\end{equation}
+This includes $\beta=0$ and both phase vertices with their finite
+polynomial values.
+\end{lemma}
+
+\begin{proof}
+Use centered representatives $-\pi\leq u<\pi$ of the odd first
+mesh.  At every regular sample $|u|>v$, hence $\cos u<\cos v$.
+The exact numerator is
+\[
+ F(u,v)=\frac{2a(1+\cos v)-p\sin u+q\sin v}
+                         {2(\cos u-\cos v)},
+ \qquad p=\sin\alpha,\ q=\sin\beta.
+\]
+Because $a,q\sin v\geq0$, a positive sample requires
+$\sin u>0$, and its positive part satisfies
+\[
+ F_+(u,v)\leq\frac{p\sin u}{2(\cos v-\cos u)}
+       \leq\frac p{u-v}.
+\]
+For the last step use cotangent addition on the two half-angle
+factors and $\cot z\leq1/z$.
+The relevant positive samples are
+$u=((2k+1)\pi+\alpha)/n$, $k\geq0$.
+Since $\beta\leq\pi-\alpha$,
+$u-v\geq(2k\pi+2\alpha)/n$.
+For $k=0$, $p\leq\alpha$ gives the bound $n/2$; the other
+samples sum to at most $nH_n/(2\pi)$.
+Consequently
+\[
+ \frac2{nm}\sum F_+\leq\frac{1+H_n/\pi}{m}.
+\]
+The exact signed row identity gives
+\[
+ -\frac1{nm}\sum F
+       =\frac{q}{2m}\cot\frac{\beta}{2m}-\frac am.
+\]
+Using $0\leq1/z-\cot z\leq\pi z/6$ and
+$\beta\sin\beta\leq\pi$ bounds its difference from
+$\sin\beta/\beta$ by $1/m+\pi^2/(24m^2)$.
+Finally $R_0=-\sum F+2\sum F_+$ proves
+\eqref{eq:pole-closest-row-global} in the collision-free region.
+Continuity of the complete corrected polynomial row proves the same
+inequality at $\beta=0$ and the phase vertices.  No individual pole
+channel is assigned a polynomial collision value.
+\end{proof}
+
+\subsection{A phase increment for the actual half-line offsets}
+
+The near-phase comparison needs an increment of the half-line error,
+rather than two copies of its absolute bound.  We give the exact
+fixed-row estimate used for that purpose.
+
+\begin{lemma}[Relative half-line estimate]\label{lem:relative-half-line}
+Let $n\geq16$, $n\geq8R$, $R\geq2$, and
+$\rho=\alpha+\beta\leq\pi/2$.  Use the fixed endpoint sets
+\[
+ J_L=\{R,\ldots,\lfloor(m-1)/2\rfloor\},\qquad
+ J_R=\{R+1,\ldots,\lfloor(m-1)/2\rfloor\}.
+\]
+On the left put $s=\beta/\pi$, and on the right $s=-\beta/\pi$.
+Let $D_j(\alpha,s)=T_{0,j}-\Theta_{j,s}$ with the actual finite
+offsets and displaced psi arguments of
+\eqref{eq:pole-displaced-Theta}.  Then
+\begin{equation}\label{eq:pole-relative-half-line}
+ \frac1{nm}\sum_{j\in J_L,J_R}
+       |D_j(\alpha,s)-aD_j(0,0)|
+       \leq\frac{2a\rho H_n}{n}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Put $A=\pi/2$ and define a continuous residual on the half line by
+\[
+ r(0)=0,\qquad
+ r(y)=\begin{cases}\cot y-1/y,&0<y<A,\\-1/y,&y\geq A.\end{cases}
+\]
+The differentiated cotangent partial fraction shows $r''<0$ on
+$(0,A)$.  Also $r'(0)=-1/3$, $r'(A-)=-1+4/\pi^2$,
+and $r'(A+)=4/\pi^2$; afterwards $r'=1/y^2$ decreases to zero.
+Thus the two exact variation budgets are
+\begin{equation}\label{eq:pole-residual-budgets}
+ \operatorname{Var}(r')=5/3,\qquad
+ \int_0^\infty|r'(y)|\,dy=4/\pi.
+\end{equation}
+Only matched cell differences are used below:
+\[
+ \mathcal E(h,v,t)=\sum_{k\geq0}
+  \left\{r(v+h(k+t))-
+       \frac1h\int_{v+kh}^{v+(k+1)h}r(y)\,dy\right\}.
+\]
+This series converges absolutely by the integrability of $|r'|$.
+Its separate sum and integral need not converge.
+
+For $0\leq u\leq1$ let $K_t(u)=u$ for $u\leq t$ and
+$K_t(u)=u-1$ for $u>t$.  Its mean is $\mu=t-1/2$.
+The zero-mean primitive
+$B_t(u)=u^2/2-\mu u-(u-t)_+$ vanishes at $0,1$ and satisfies
+$|B_t|\leq1/8$; the latter follows by checking its quadratic
+extrema on the two pieces.
+The fundamental theorem on each cell and integration by parts against
+the bounded variation derivative $r'$ consequently give
+\begin{equation}\label{eq:pole-residual-first-cell}
+ |\mathcal E(h,v,t)-(1/2-t)r(v)|\leq5h/24.
+\end{equation}
+More explicitly, the cell defect is $\int K_t r'$; its mean part
+telescopes to $-\mu r(v)$, and its zero-mean part costs at most
+$h\operatorname{Var}(r')/8$ by \eqref{eq:pole-residual-budgets}.
+The integral identity
+$\sin y-y\cos y=\int_0^y u\sin u\,du$ and the sine chord give
+$|r(v)|\leq\pi v/6$ for $0\leq v\leq A$.
+In particular
+\begin{equation}\label{eq:pole-residual-small-v}
+ |\mathcal E(h,v,t)|\leq\pi v/12+5h/24.
+\end{equation}
+
+For a finite matched sum, differentiation in $v$ almost everywhere
+gives the quadrature defect of $r'$, bounded by
+$\operatorname{Var}(r')=5/3$.  Its offset derivative is
+$h\sum r'(v+h(k+t))$, whose magnitude is bounded by
+$\int|r'|+h\operatorname{Var}(|r'|)\leq4/\pi+5h/3$.
+Finite sums are therefore Lipschitz with these bounds.  Passing to their
+pointwise limits proves, for all nonnegative $v,v_0$ and all
+$t,t_0\in[0,1]$,
+\begin{equation}\label{eq:pole-residual-increments}
+ |\mathcal E(h,v,t)-\mathcal E(h,v_0,t_0)|
+ \leq\frac53|v-v_0|+(4/\pi+5h/3)|t-t_0|.
+\end{equation}
+These are unwrapped offsets: the functional itself is not periodic in
+$t$, and no periodic identification is used.
+
+For the fixed physical sets in the lemma put
+\begin{align*}
+ h&=\pi/n,\quad z=\pi(j+s)/m,\quad z_0=\pi j/m,\quad x=\alpha/\pi,\\
+ \theta_\pm&=(1-s\pm x)/2+(j+s)/(2m),\qquad
+ \theta_0=1/2+j/(2m).
+\end{align*}
+Here $j\geq2$, $|s|\leq1/2$, $j<m/2$, and
+$3z_0/4\leq z\leq A$.  Both offsets lie strictly in $(0,1)$.
+Indeed their possible upper equality would require simultaneously
+$x-s=1/2$ and $z=A$, which is incompatible with the displayed
+fixed sets; the lower inequalities are immediate from the phase triangle.
+There is no floor wrap and no sampled pole.
+The matched subtraction in Lemma~\ref{lem:half-line-defect} is exactly
+\[
+ D_j(\alpha,s)=-a\cot(z/2)U(\alpha,s),\qquad
+ U(\alpha,s)=\mathcal E(h,z,\theta_+)+\mathcal E(h,z,\theta_-).
+\]
+The actual displacements obey
+\[
+ |z-z_0|=\beta/m,\qquad
+ \sum_\pm|\theta_\pm-\theta_0|
+       =\max(x,n|s|/m)\leq\rho/\pi.
+\]
+Since $h\leq\pi/16$, the offset coefficient in
+\eqref{eq:pole-residual-increments} is less than $2$.
+Equations \eqref{eq:pole-residual-small-v} and
+\eqref{eq:pole-residual-increments} imply
+\begin{align*}
+ |U(\alpha,s)-U(0,0)|&\leq10\beta/(3m)+2\rho/\pi,\\
+ |U(0,0)|&\leq\pi z_0/6+5h/12.
+\end{align*}
+The chord bound on the segment between $z,z_0$ gives
+\[
+ |\cot(z/2)-\cot(z_0/2)|\leq\frac{8\pi^2\beta}{9mz_0^2},
+ \qquad \cot(z/2)\leq\frac8{3z_0}.
+\]
+Combining these inequalities with $z_0=\pi j/m$ gives the
+explicit single-row bound
+\begin{align*}
+ |D_j(\alpha,s)-aD_j(0,0)|
+ \leq a\biggl\{&\frac{16\rho m}{3\pi^2j}
+       +\left(\frac{4\pi^2}{27}+\frac{80}{9\pi}\right)\frac\beta j
+       +\frac{10\pi m}{27n}\frac\beta{j^2}\biggr\}.
+\end{align*}
+Each harmonic sum on the two fixed sets is at most $H_n$, and their
+combined square reciprocal sum is at most $3/2$.
+Use $\beta\leq\rho$, $m\geq17$, $m/n\leq17/16$,
+$H_n\geq1$ and $3<\pi<4$.  After division by $nm$ the coefficient
+of $a\rho H_n/n$ is less than
+$32/27+32/51+85/612<2$.  This proves
+\eqref{eq:pole-relative-half-line} with the actual finite displacements.
+\end{proof}

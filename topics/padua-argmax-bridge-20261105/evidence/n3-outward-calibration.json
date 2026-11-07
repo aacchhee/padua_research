@@ -1,0 +1,79 @@
+{
+  "status": "MEASURED one-box draft calibration; no cover, independent replay or acceptance",
+  "command": "python topics/padua-argmax-bridge-20261105/code/n3_outward_calibration.py",
+  "compile_command": [
+    "cc",
+    "-O3",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-I/workspace/padua_research/local-output/argmax-bridge-20261105/N3/runtime/extracted/usr/include",
+    "-shared",
+    "-fPIC",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_outward.c",
+    "/lib/x86_64-linux-gnu/libmpfr.so.6",
+    "-lm",
+    "-o",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/N3/n3_outward.so"
+  ],
+  "python": "3.12.14",
+  "mpfr": "4.2.2",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward.c",
+      "bytes": 4830,
+      "sha256": "cfeae9fe2b61e9c7ec2c4d943762ac988e64fa02652ccfe4342430c4ee5f22dd"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_interval.h",
+      "bytes": 4215,
+      "sha256": "6dca513ddbd94264d454872c9f5e753e355d15b49152dc4b19d51cff7635131b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_calibration.py",
+      "bytes": 2619,
+      "sha256": "d56c0f8d88fdd1574a586f129eb7679ef9057a97b0327401545c79c53e179bce"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/n3_outward.so",
+      "bytes": 37208,
+      "sha256": "13d0060f45c7ca9fb58f52be5cc36da8796763b741857316fcbe4ed824d7c9b8"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/runtime/extracted/usr/include/mpfr.h",
+      "bytes": 57588,
+      "sha256": "588c2bd606cba060afb49cd024f9119e996089a341a99d1dc7e0367622335a13"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/runtime/libmpfr-dev.deb",
+      "bytes": 268136,
+      "sha256": "43cbe73a48cce65232ad5d4219a67dfdd0974f45aa88d381ae051d64052b996a"
+    }
+  ],
+  "n": 33,
+  "pi_interval": [
+    3.141592653589793,
+    3.1415926535897936
+  ],
+  "corner_interval": [
+    11.117523283572012,
+    11.11752328358024
+  ],
+  "constant_cpu_seconds": 0.14308884300000002,
+  "box": [
+    0.01,
+    0.02,
+    0.01,
+    0.02
+  ],
+  "S_upper": 11.120054125009505,
+  "corner_upper": 11.119670759622535,
+  "defect_lower": 0.0,
+  "box_cpu_seconds": 0.440494088,
+  "producer_accepted": false,
+  "limits": [
+    "One arbitrary box; no measured complete-cover cost or throughput law.",
+    "Candidate arithmetic and nonsmooth specification await separate audit/checker."
+  ]
+}

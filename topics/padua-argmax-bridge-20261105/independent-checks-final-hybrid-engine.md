@@ -1,0 +1,876 @@
+# Independent final hybrid engine review
+
+2026-11-07. Distinct focused mathematical-reduction/source reviewer,
+requested Codex `gpt-6-astra` high; serving metadata unexposed. Root owns
+Git, shared records, publication and execution release. This reviewer
+owns ONLY this report. Rules read at c1e5bef6ae645dd4e42c82c8fe2c709b76b8a2f4,
+with their unchanged identities verified during the continuing session.
+This supplements the separate final Claude audit.
+
+## Read-only preparation — candidate verdict pending
+
+The newly authorized final delivery implements accepted mathematical
+results; it introduces no new research mechanism, negative result,
+priority claim or strengthened theorem. The fresh novelty-generation
+gate is therefore inapplicable to this implementation audit. The
+previous complete registry/obstruction baseline remains available; the
+focused obligation is literal theorem/source/domain correspondence.
+The fifteen analytic rounds have ended. This review is not another
+research round, scientific execution, or permission to widen a source.
+
+Completed preparation reads:
+
+- Complete accepted E12 actual-corner256 proof and complete independent
+  corner/frontier report b7436e8f4c5f2d6c1e7c2fc0d7313c1f136648a489cdfd0cee3e8ef71e97df2a.
+- E15 analytic far192 proof and this reviewer's complete accepted report
+  94718e23d96f875478ec9c4b7cd4713898e752756c182ecb647f7d49995b32e3.
+- Complete D32 generic finite closed-cover implication, D14 grid norm
+  and D19 adaptive-tree norm proofs, including their acceptance notes.
+- Complete corrected D36 source audit, including preservation of its
+  first fixture failure and the focused correction acceptance; full
+  D36 SPEC and SOURCE; complete checker, engine, producer, runtime and
+  build Python sources, read as text only.
+- E14 current global320 statement and final independent scope/protocol
+  disposition. E14 is background for the remaining delivery scope; it
+  does not enlarge either hybrid leaf theorem.
+
+The corner input is precisely BOTH parity-correct actual nonnode-corner
+CLOSED squares0<=A,B<=pi/4, every integer n>=256, with
+
+    lambda_n(-cos(A/n),-cos(B/(n+1)))
+       <=Lambda_c-(A^2+B^2)/30.
+
+Separate x reflection for even n and y reflection for odd n supplies
+the other corner without exchanging meshes. Each square contains the
+inward radius-half diamond, with strict descent except at its origin.
+Its own global signed-family norm and model/PD-T271 dependencies remain;
+the certificate's numerical Peano norm need not reprove that theorem.
+
+The analytic common-S input is precisely EVERY integer n>=192 and
+ENTIRE CLOSED pi/2<=|alpha|+|beta|<=pi, with
+
+    S_n<Lambda_c-79/2000<Lambda_c-3/100.
+
+For a raw normalized rectangle clipped to T, the exact sufficient
+whole-patch guard is al+bl>=1/2, with the patch nonempty. The common
+primitive theorem uses the true symbolic Lambda_c, not the fresh
+numerical lower L. Physical lambda<=the SAME S supplies exclusion.
+The statement does not cover a cell merely because its center or some
+sample lies beyond the half-pi seam; nor does it require/establish
+S<L-3/100. Every closed seam and tangency must remain represented.
+
+D14's13 canonical quarter-grid values independently give a global norm
+ceil(784*max_upper/663). D19's TREE inference instead requires valid
+upper values at ALL retained nonempty leaf vertices and theta<1 on
+EVERY such leaf. Skipping analytic-leaf samples invalidates that ordinary
+TREE inference. Developer's stated plan is GRID-only, with all13 grid
+premises mandatory and retained, independent of analytic leaf pruning.
+This is a valid design direction, pending inspection of frozen source.
+
+The source audit will check the changed n256 corner boundary throughout
+checker, runtime/build selection, actual key/call counts and serialized
+dependency descriptor; n192 analytic eligibility and exact raw-box guard;
+complete closed topology with explicit numeric versus analytic leaves;
+all numeric-leaf and grid premises; original strict Peano/floor predicates;
+and fresh verification of input/source/METHOD/topology with every numerical
+premise recomputed. Numeric leaves must not silently become analytic in
+fresh verification. Old data, margins or norm values remain diagnostic.
+
+Status at this preparation checkpoint: **PENDING exact candidate freeze
+and source verdict.** No candidate is accepted by this preliminary text.
+No engine/source import, control/test, compiler/build, native/phase/scalar,
+scientific, pack execution, author edit, shared edit or mutable Git action
+has been performed by this reviewer. Only read/search and this owned
+report write occurred. Execution release remains separate.
+
+## First frozen candidate — final prerelease source/reduction verdict
+
+2026-11-07. **ACCEPT for the stated source and mathematical-reduction
+scope. No unresolved finding.** This does not certify a completed control,
+build, numerical point, finite degree or performance result. Root's exact
+execution release and subsequent independent fresh result verification
+remain separate. The preceding4657-byte preparation snapshot is preserved
+unchanged, SHA-256
+7058238df5a23777f0b0928465b21ab4acec813df71439480ee883c3799fa8ce.
+
+Root revised the initial GRID-only plan BEFORE the first source freeze:
+the frozen source permits D36's original minimum valid TREE/GRID norm when
+there is NO analytic leaf, and forces GRID whenever an analytic leaf
+occurs. All13 grid premises are retained in BOTH methods. This supersedes
+only the earlier preparation plan, not any published source finding or
+executed result. No numerical preview or method rescue occurred here.
+
+The final review observed read-only head
+448fbd702d36922d362428e415f474e7e6c9322c. All nine entries in the supplied
+AUDIT.sha256 matched from repository root, and all sizes matched. These
+are the accepted first candidate identities, under code/final_hybrid_engine:
+
+| Artifact | Bytes | SHA-256 |
+|---|---:|---|
+| FREEZE.json |4153|4bedcb1c7aac415c9bbe7b159fb1cb3086422ae7c51270aff46ba8e9bd8804ae|
+| SPEC.md |15227|998b44d9b1ad3fe4b0c6d142b98c0eb3af3e9619a6ba42e05ebc4151b787bae9|
+| SOURCE.md |2740|3657bf98f5972ce0a1bb07dd50458bae7b4d493528b5186f6eed436cceef7bdf|
+| build.py |5686|f9da3c5dd31628e0b5f6c22100543aa4cf607df3b2f2bc4b4ae8fd6b615946ac|
+| checker.py |15551|55f4a4b8dab6c679c6979380a9e8a8cf1e469f10d449c5ba6c3a19c4a087b670|
+| controls.py |5260|cde1324ff7ff63f6e95bb28a27fc11772f6f0b68a17b9c44245cc9f7bfa96a0c|
+| engine.py |19222|e27ab4924eb8efcd548fd4a8ecdde3fea7e09066a13d8829d3c5cbfaee98bf24|
+| producer.py |1780|fa49ad294685c596871557a1ce6f793e9edd8d75c777ed801eb60a6e13d6b64f|
+| runtime.py |6576|78a4390787f59a8e178890b2dc53ef5f635ee27b458452fc1f3e8ca02e77d3a5|
+
+All six Python files were inspected through full baseline reads and exact
+complete diffs, with the new controls read in full. The whole new SPEC,
+SOURCE and FREEZE were read. The unchanged numerical/helper closure has
+seven pinned files; all seven SHA-256 identities AND byte counts were
+independently matched against the current files and accepted D36 closure.
+The corrected D36 FREEZE still hashes
+d74817158e9a08de67a89e2c790ea1e39b5729fc17c0df002b5b15564b5b2001.
+There are13 executable/data rows in the new freeze: six new Python files
+plus these seven unchanged files. The old fixed1023 driver is not part of
+the new CLI, and no hidden old driver execution is assumed.
+
+### 1. Exact analytic-leaf reduction and complete topology
+
+`analytic_far` requires a strict integer degree accepted by the unchanged
+41..4095 degree validator, a tuple of four exact Fractions, positive unit
+rectangle widths, n>=192, and1/2<=al+bl<=1. The lower sum is the minimum
+over the raw closed rectangle. The upper test al+bl<=1 establishes a
+nonempty clipped patch; equality retains a tangent point. On that patch
+a+b<=1, so every point lies in the E15 closed radian domain
+pi/2<=pi(a+b)<=pi. This uses an exact normalized guard and no approximate
+pi conversion. Outside portions of a raw rectangle need no E15 upper:
+only its intersection with T supplies physical phases in this cover.
+
+The analytic comparison is with the TRUE Lambda_c. No inequality against
+the smaller numerical L is inferred. The fixed3/100 entry in
+`minimum_strict_margins` is an inherited analytic gap, explicitly labeled
+ANALYTIC_FAR and distinguished in SPEC from numeric L-relative margins.
+Since PD364 gives lambda<=the same S in every legitimate physical chart,
+the analytic leaf excludes all its physical points without a defect floor.
+No actual-corner exception or projected-defect claim is needed on it.
+
+The decoder reconstructs boxes from the entire new preorder string. Its
+leaf identity is the token's actual index, so `doc['preorder'][ident]`
+unambiguously retains `f` versus dot. Every `f` is checked during decode
+and again during proof verification. Malformed, missing, pending, trailing
+or depth-exceeding trees fail. Both closed midpoint children are visited.
+Dots outside T remain discardable only under the original strict
+al+bl>1 condition. A tangent `f` remains retained and checked. No leaf
+can be declared analytic merely by modifying an untrusted summary count.
+
+The producer tests OUTSIDE first, then the analytic predicate BEFORE
+requesting vertex data. For numeric leaves it preserves the original
+weighted-width split, exact midpoint, tie direction, lower-child-first
+DFS and sorted canonical vertex requests. The analytic predicate does
+not mutate boxes or their folded evaluation keys. Separate sign symmetry
+and boundary-only canonical exchange remain exactly D32's unequal-mesh
+identities, not an interior alpha/beta exchange.
+
+Fresh verification retains the input string verbatim. A dot is processed
+with the numeric leaf procedure even if it now lies in an eligible E15
+region; it is never silently repruned. An `f` never triggers numerical
+discovery or a fallback. Its eligibility is independently reconstructed
+from n and its exact box. There is no empty all-analytic cover of the
+origin: the origin lies in a nonempty dot leaf because its lower sum is0.
+Consequently the verifier's `floors` collection is nonempty, and the
+minimum-floor bookkeeping cannot encounter an all-analytic empty minimum
+on any valid complete tree.
+
+### 2. Norm integrity, mandatory points and method preservation
+
+The producer still starts with ALL13 canonical quarter-grid evaluations
+and computes the accepted global coarse norm from their fresh uppers.
+It uses that valid norm during discovery. In either final method the
+retained point set is EXACTLY
+
+    grid13 UNION canonical vertices of every nonempty numeric dot leaf.
+
+This includes grid points lying inside analytic leaves. Analytic-leaf
+vertices are omitted only when not otherwise required by that union.
+Unused parent/discovery points stay in whole raw evidence rather than
+becoming hidden final premises. The origin is among the mandatory grid
+keys and its fresh lower is independently retained.
+
+`tree_norm` explicitly rejects ANY `f` before attempting D19 absorption.
+Both `verify` and `parse_essential` separately reject TREE plus `f`.
+`select_norm` verifies its coarse input against the complete fresh grid
+and selects GRID if an `f` occurs. Thus no numerical subcover is mistaken
+for a cover of an unknown global maximizer, and no analytic gap is treated
+as a sampled upper needed by the D19 formula.
+
+With no `f`, all retained nonempty leaves are numeric and have all vertices
+present; the original theta<1 requirement and R=max V/(1-theta) remain.
+All tangent leaves participate. The predeclared minimum valid TREE/GRID
+selection, TREE winning ties, is the accepted D36 selection. Mandatory
+extra grid data in a TREE certificate do not invalidate the norm: the
+tree formula uses its complete leaf-corner subset and the grid is an
+explicit additional retained set. Every final phase and norm-dependent
+actual-corner check is recomputed once with the selected norm.
+
+Fresh mode does NOT repeat minimum selection. It authenticates the
+input METHOD, freshly evaluates every retained key including all13 grid
+keys, and reconstructs exactly that method's M. A TREE theta failure
+or any later inequality failure ends the attempt. There is no GRID
+fallback, changed tree, altered precision or old norm reuse. Different
+fresh bits or a different fresh M are allowed only if the fresh proof
+with that same METHOD passes all requirements.
+
+### 3. Corner256 substitution and unchanged numeric predicates
+
+Every executable corner boundary changed consistently from1024 to256:
+actual key access, `corner_identity`, corner verification, actual row
+parsing and metadata, runtime construction/build/load/binding, actual
+call guard, engine key loop, expected call count and preregistered count.
+At256 and above, zero actual rows are permitted, and the runtime creates,
+loads and binds ONLY the S library. Below256, exactly the three original
+physical keys1/(4n),3/(16(n+1)) are queried with unchanged D07/C11 code.
+Their n<=255 branch is safely inside D07's literal2..2048 source domain.
+No native source guard or tail is widened.
+
+The new authenticated descriptor correctly names E12, BOTH closed pi/4
+squares, every integer n>=256, and radial loss1/30. It includes the global
+signed-cardinal norm/Peano, E08 absolute and one-sided-origin, E11 closed
+model, E07/E06, PD-T271 and physical/parity dependencies. The certificate's
+phase norm is not substituted for the independently proved corner norm.
+This gives D32's required closed inward half-diamond with strict descent
+off each actual origin. The original actual corner values and two-point
+equality set, with x reflection for even n and y for odd n, are unchanged.
+
+Below256 the exact three-loss formula and pi-fourth threshold are unchanged.
+The threshold remains M*pi_hi^4*max(u',kappa^4*v')/6, with u'=1/32,
+v'=9/512, and the final radial coefficient has its required factor1/2.
+The true origin is symbolic; only nonorigin losses use the fresh lower L.
+Preliminary coarse-M diagnostics are not final proof or a rescue branch.
+
+The ordinary numeric leaf procedure, Peano coefficient n/(n+1), scalar
+floor expression and degree tiers41/64/160/512 are unchanged. Floors still
+apply only after identifying an ACTUAL noncorner near point, with
+rho<=r_B<=1/2; overlapping rational proxies do not establish that domain.
+FAR/NEAR/SPLIT comparisons remain strict, both closed proxies are tested
+when nonempty, and projected floors are never added. E14's global320
+result supplies no automatic-pass branch. The finite implication remains
+conditional on successfully supplied fresh enclosures and a complete
+passing certificate, rather than universal engine success.
+
+### 4. Strict receipt and fresh numerical authentication
+
+The variant uses new FINAL-HYBRID tree, kept-proof and raw formats. The
+strict parser rejects old D36 certificates and requires exact top-level
+schema, degree/pi, source SHA/bytes, point argument units, unique canonical
+rational keys, canonical finite outward binary64 values, floor/corner/far
+identities and geometry counts. Source hash syntax validation is stronger
+than the baseline. Stored theorem descriptions must match the current
+accepted source descriptor; they are not independently supplied proof
+claims. Prose hashes are not machine scientific gates.
+
+The parser demands the exact mandatory-grid/numeric-leaf point union,
+even for TREE, and the correct three-or-zero actual rows at256. Source
+identity and input bytes are checked before and after stages and during
+finalization. Original bytes are copied exactly into a new exclusive
+output. Fresh mode queries every parsed S key using the new invocation's
+source/degree-scoped cache, obtains the fresh origin LOWER and applicable
+actual UPPERS, and uses only these in reconstructed proof inequalities.
+
+Old values, old M/L, stored passing tags and bit-equality comparisons are
+diagnostic. Parser acceptance of a structurally valid but scientifically
+false old diagnostic record cannot create a fresh proof: the worker must
+recompute all numerical premises and the final checker must pass anew.
+Before output, `verify_essential` reconstructs the freshly emitted proof
+and requires exact agreement with the worker's complete verification.
+The whole certificate must fit the unchanged strict16KiB limit; failure
+does not authorize point removal, truncation or splitting.
+
+### 5. Synthetic controls checked statically
+
+All new control expressions were checked by source reading and hand
+algebra, NOT executed. No D36-F1-style negative-origin premise remains.
+
+- Degree rejection distinguishes bool/Fraction/float from int and checks
+  the exact41..4095 domain; accepted controls include191/192 and255/256.
+  Grid and canonicalization controls retain the13-key result and reject
+  an interior-coordinate swap.
+- `actual_keys(255)` is exactly1/1020 and3/4096. The analytic witness is
+  rejected below256 and numerical actual rows are rejected from256.
+- `a.f` decodes to a numeric left half and an analytic right half, whose
+  lower sum is exactly1/2. It passes the geometric guard at192, fails
+  at191, and `af.` fails because its left leaf has lower sum0. Malformed
+  degree, incomplete, trailing, unknown and excessive-depth controls all
+  reach appropriate rejection paths.
+- TREE with `f` rejects. On the all-numeric `ab..b..` control, all four
+  half-width boxes have theta<pi_hi^2/16<1 and all their canonical corners
+  are quarter-grid keys. Thus its D19 check has complete premises and is
+  not relying on missing synthetic data. The analytic selection fixture
+  legitimately returns GRID with coarse norm2.
+- For the actual-corner equality fixture, u'>v'>kappa^4*v', so its t is
+  the exact threshold at M=1. All three supplied losses yield q=t; the
+  strict test rejects. The positive synthetic actual case has ample loss.
+- In the tiny numeric-leaf fixture, delta<=1/20 and theta>=0 give
+  L=1+theta-delta>=19/20>0. Therefore it reaches the intended strict leaf
+  comparisons, rather than failing the positive-L precondition. U-delta=L
+  is exact and the applicable strict comparisons reject.
+- The new parser fixture deliberately has all13 grid values equal1 and
+  coarse M2. Its numeric half-box corners are already among those keys,
+  so its point set and geometry counts are consistent. It is explicitly
+  a parser fixture, not a passing scientific proof. Source hash, malformed
+  hash, TREE-with-f, below-half topology, corner/far identity, missing-grid
+  and legacy-version corruptions each fail the corresponding checks.
+
+These observations support release of the planned control stage; they
+do not claim that controls ran or establish a measured CPU bound.
+
+### 6. Immutable arithmetic, accounting and evidence scope
+
+The build diff changes only its default output base; actual builds still
+override it with the exclusive invocation output. All native source and
+helper pins match D36. D23's full returned enclosures, tails and roundoff
+remain valid under their original guards; its160+ small-error corollary
+is not applied below160. D07 retains ORIGINAL C11 constants. Full outward
+endpoint export, exact Fraction conversion, counter closures and raw
+recording BEFORE postchecks are unchanged. There is no new native
+algorithm, precision, runtime cache or recovery policy.
+
+Fresh compiler/source/header/TU/library/loaded-map/Python recording and
+rechecks are inherited unchanged. Linux/LP64/compiler/Arb/FLINT/GMP/MPFR
+and system runtime remain explicit trusted dependencies, not a hermetic
+execution assertion. Any needed provisioning remains inside the declared
+budget and needs the applicable runtime procedure at actual release.
+
+The source diff leaves whole120CPU, controls2, checker100, safety110,
+completed10/unfinished15, polling0.25, walls15/900/1000,256S calls,
+2047nodes/depth18, and all finalization/accounting machinery unchanged.
+The reduced actual call branch is consistently3 below256 and0 thereafter.
+Full imports/builds/children/calls/verification/serialization/output/return
+are in the invocation's envelope. Kill/reap/ECHILD fixes waited-child CPU
+before tightening the absolute parent limit, and no later child launches.
+Raw results and first failures remain preserved, and provisional output
+does not override incomplete finalization or nonzero exit.
+
+Acceptance of a future run requires BOTH directly observed actual EXIT0
+and atomic final-accounting complete=true, first_failure=null with the
+appropriate produce/verify result string. A produce receipt additionally
+needs a genuinely distinct fresh executor and result review. Source
+inspection, a named verify mode, or synthetic controls alone supplies none
+of those execution facts. Local41/511 primary/fresh runs are the stated
+prospective validation plan, not executed or accepted by this report.
+Bulk pack operation and its operational audit remain outside this scope.
+
+### Final disposition and activity record
+
+First frozen candidate ACCEPTED at the exact source/reduction scope.
+No author repair or further mathematical development is needed for this
+review. No new BLOCKING, MAJOR, MINOR or NOTE finding. Upstream unwaived
+protocol findings and final Claude obligations remain unchanged; source
+acceptance is not PR readiness or permission for bulk remote execution.
+
+Reviewer actions were read/search/diff/hash/byte checks, read-only Git
+provenance, hand reasoning and this report append. One metadata-only
+`sha256sum -c` was first invoked from the candidate subdirectory although
+the manifest paths are repository-relative; it opened none of its targets.
+The corrected invocation from repository root checked all nine entries
+successfully. This was not a source/control/scientific execution or retry.
+No source imports, AST execution, tests/controls, scalar/endpoint preview,
+native/compiler/build, package setup, phase/degree/quadrature/root/board,
+pack/builder/fake-worker/remote job, author/shared edit or mutable Git
+action occurred. Scientific execution count is zero; ordinary tool CPU
+was not measured. Only this assigned report was created and appended.
+
+## First-freeze startup finding — prerelease HOLD supersedes acceptance
+
+2026-11-07, before any execution release. **Current overall verdict:
+HOLD FOR FOCUSED REPAIR, one MAJOR finding FH-1.** The mathematical
+reduction, exact source logic and synthetic-control reasoning above
+remain accepted. The preceding22012-byte source-review snapshot is
+preserved exactly at SHA-256
+5c1fe5eb0ddf5f5e48829a849428f5a790a3ff806464bb30868c51762a54e67b.
+Its earlier overall acceptance is superseded by this first-candidate
+startup finding; no executable source or scientific result has changed.
+
+Root forwarded the parallel operational audit's Python startup concern.
+I independently confirmed the following reachable launches in the frozen
+candidate, by static inspection:
+
+- SPEC.md:44-45 documents plain `python3 engine.py ...` for the outer
+  produce and verify invocations.
+- engine.py:101-111 constructs each controls/checker worker command as
+  `[sys.executable, engine.py, --worker, ...]`, without startup isolation.
+- runtime.py:66 launches optional provisioning with
+  `[sys.executable, phase_checker/setup.py]`, likewise unisolated.
+
+Without `-S`, Python may process site directories and execute `.pth`,
+`sitecustomize` or `usercustomize` code before the trusted script begins.
+Removing PYTHONPATH or changing HOME alone does not eliminate system-site
+startup. Without `-E`, Python environment configuration can also affect
+startup/import resolution. Such code runs before the source registration,
+freeze checks and stage logic assumed by this portable proof chain.
+Recording Python executable bytes or later native mapped libraries does
+not authenticate that earlier Python startup code. This is a genuine
+source/provenance gap in the promised invocation contract, even though
+no malicious startup or actual incorrect run was observed.
+
+**Required narrow repair:** use `-E -S -B` for the documented outer
+hybrid CLI, both engine worker launches, and optional Python setup launch.
+The flags must precede the script argument. `-E -S` disables environment
+Python path configuration and site startup while preserving the explicit
+script's sibling directory needed by `import runtime`, `checker` and
+`producer`. Bare `-I` would remove that sibling import directory, so it
+must not be substituted blindly in these entry points. `-B` additionally
+prevents writing bytecode artifacts; it does NOT prevent reading existing
+bytecode and must not be described as doing so. Pack-owned launchers and
+job-worker subprocesses need matching isolation under their separate
+operational review.
+
+The imported immutable D09 helper contains its own old controller worker
+launcher, but the hybrid invokes its helper functions, not that standalone
+controller's main/run path. It is therefore not an additional reachable
+Python worker launch in this engine and needs no immutable-source edit.
+The optional setup uses standard-library modules then invokes `dpkg-deb`;
+its displayed code contains no further Python child. Native/compiler/
+dependency identity handling, mathematical code, constants, source guards,
+case choices, budgets and first-failure policy need no change for FH-1.
+
+Preserve/publish this first source and report before developer repair.
+Then freeze the changed code/data manifest and corrected contract and
+request a focused re-audit of precisely the startup diff. This finding
+does not require a source import, control execution, malicious-startup
+probe, compiler/native job, different case or numerical retry. No such
+execution occurred during its discovery or confirmation. The prospective
+local41/511 primary/fresh validation remains UNRELEASED.
+
+Disposition: FH-1 MAJOR, OPEN at this first-freeze report. No other new
+finding. The earlier no-unresolved-finding statement is historical and
+limited by this dated continuation. Mathematical acceptance and unchanged
+upstream obligations remain; overall source release must wait for the
+narrow repair and focused acceptance. Root retains all publication and
+execution authority. Only this owned report was appended.
+
+## FH-1 focused repair closure — 2026-11-07
+
+**ACCEPTED: FH-1 CLOSED. No remaining source/reduction finding.** The
+complete first report's26075-byte prefix remains exactly
+f0d9703a76f9662b453c4de1fac94b84a3d4674f37f1b8e08eb1c5b89a0eaa0d.
+Root published that report and first source before repair at
+523009ea8ead3812a2bcd661c7fb5519b7c30db5. The earlier finding and HOLD
+are preserved as the first-candidate history, not erased or recast as
+an executed failure. No scientific/control execution preceded repair.
+
+Exact focused diff against that publication shows only TWO executable
+line changes: engine.py's shared `child_command` inserts `-E,-S,-B`
+before engine.py, and runtime.py's optional setup command inserts the
+same flags before setup.py. Both controls and checker stages call that
+one `child_command`, including produce and verify mode, so no stage
+route retains an unisolated Python invocation. The setup path's flags
+precede its explicit script argument and are passed through BUILD.run
+unchanged as separate subprocess arguments.
+
+SPEC's two outer CLI commands now use `python3 -E -S -B`. Its dated
+response correctly explains the effects and preserves first publication
+provenance. SOURCE adds the corresponding response. The four documented
+entry paths—outer produce, outer verify, worker stages, optional setup—
+therefore have one consistent policy. `-E -S` leaves the explicit
+script's sibling directory available, so the existing sibling imports
+need no code relocation or unsafe path injection. `-B` prevents writes
+only; the repaired prose makes no stronger cache-reading claim.
+
+FREEZE changes exactly engine/runtime byte/hash rows; its other11 rows
+are byte-identical to the reviewed first candidate. Checker, producer,
+controls, build, all seven immutable native/helper sources, mathematical
+constants, degree cutoffs, topology/norm policy, limits and first-failure
+behavior are unchanged. All nine updated AUDIT.sha256 entries and the
+five changed artifact sizes were independently checked by metadata-only
+commands. Accepted corrected identities:
+
+| Artifact | Bytes | SHA-256 |
+|---|---:|---|
+| FREEZE.json |4153|0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb|
+| engine.py |19237|1dfda35bdce1d7292d30c413968ce16c4dbc65f79b2a86a6e5dfdaaa61f09bd7|
+| runtime.py |6591|f31da3ebdfbb93de47906c5b3a37bc7bca0907ae032c9c553d16004d12410f22|
+| SPEC.md |17083|a0f2a0f14ae2c9e30e302176e6a6968a553090edcb33f8364eb2782f72e9b433|
+| SOURCE.md |3915|3b7465a9645821c40c3edc567bd077db464bc594c98ab530279b4a993ecb0d62|
+
+This closes the sole first-candidate finding for the engine, while the
+separate pack audit must still establish its own launcher chain. It does
+not assert every arbitrary invocation is safe: actual execution must
+use the reviewed isolated CLI. No source import, startup probe, synthetic
+control/test, compiler/native/build, numerical or scientific job was run
+for this focused re-audit. No bytecode artifact was created by importing
+the candidate. Only read-only text/diff/hash/byte commands and this report
+append occurred. Root publication and exact execution release remain
+separate; source acceptance provides no completed41/511 validation.
+
+## Prospective independent fresh41/511 validation registration
+
+2026-11-07, BEFORE either reviewer execution. Root confirmed these exact
+paths and fixed order after corrected source publication
+136a43ebcd5a74ace1d3896642dc7ac6a9251ed4. This is a prospective plan,
+not a run or permission to bypass root's separate explicit release.
+Root's primaries are41 then511, stopping on the first failure. Only after
+their actual results/input identities are supplied and published, and
+root separately releases this reviewer, will the distinct fresh phase
+execute41 then511. A primary failure leaves the dependent fresh phase
+unexecuted; a fresh41 failure stops fresh511. No alternate degree, retry,
+source/case/precision/cap/METHOD/topology rescue is registered.
+
+Frozen execution source is corrected FREEZE4153 bytes,
+0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb,
+with all13 code/data rows as reviewed above and SPEC
+a0f2a0f14ae2c9e30e302176e6a6968a553090edcb33f8364eb2782f72e9b433.
+Run directly from `/workspace/padua_research`, without a new scheduler,
+wrapper, pre-import, standalone control stage or old numerical cache:
+
+```sh
+python3 -E -S -B topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py --mode verify --n 41 --certificate local-output/argmax-bridge-20261105/final-hybrid-validation/primary-n41/essential-receipt.json --output local-output/argmax-bridge-20261105/final-hybrid-validation/verify-n41 --run-once
+```
+
+Only after directly observing the first command's actual EXIT0 and
+accepted complete final account, execute the second command ONCE:
+
+```sh
+python3 -E -S -B topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py --mode verify --n 511 --certificate local-output/argmax-bridge-20261105/final-hybrid-validation/primary-n511/essential-receipt.json --output local-output/argmax-bridge-20261105/final-hybrid-validation/verify-n511 --run-once
+```
+
+The two input essential-certificate byte counts/SHA-256 values are
+**PENDING actual root primaries**, not invented here. Before executing,
+append the actual primary certificate identities, account identities and
+root's direct-exit observations, then recheck them and the source freeze.
+This is binding the registered paths to newly created inputs, not a
+post-result choice of different cases or parameters. The engine additionally
+snapshots each original certificate and authenticates its exact bytes
+through stages/finalization. Each fresh output path is exclusive; an
+existing path or any other failure stops the attempt without deletion.
+
+Each invocation has the SAME fixed120CPU whole-process-tree envelope:
+controls2, checker100, aggregate safety110, completed-call10 and
+unfinished-call15, poll0.25, controls/checker/whole walls15/900/1000,
+256 unique S calls,2047nodes/depth18, whole essential proof<16384 bytes.
+The two reviewer calls are bounded by2*120=240CPU; together with the two
+root primaries the prospective entire local validation is4*120=480CPU.
+These are hard protocol envelopes, not predicted or observed costs.
+All provisioning, imports, fresh builds, controls, descendants/native
+calls, proof reconstruction, serialization/output/finalization/return
+remain included. No separate uncharged numeric/control job is planned.
+Ordinary read-only audit metadata overhead is not scientific CPU evidence.
+
+At41 the fresh run must build both unchanged S and actual sources,
+evaluate every retained S key and all THREE registered actual physical
+points, preserve the input norm METHOD and complete numeric topology,
+and reconstruct every numeric leaf/floor/corner condition. E15 and E12
+analytic branches are unavailable at that degree. At511 it must preserve
+the exact input f/dot topology, reauthenticate every whole-cell E15 guard,
+build S ONLY, make ZERO actual calls, and authenticate E12's both-corner
+loss1/30. Any input containing f must use GRID. The same mandatory13
+grid keys are freshly evaluated at either degree and under either method.
+
+Old point bits, widths, numeric M/L and margins are diagnostic only.
+Fresh success is determined by valid source-inclusive enclosures and
+all freshly reconstructed proof inequalities, not bit equality or an
+improvement over old bounds. Neither execution may discover a replacement
+tree, switch norm method or seed native inputs with old intervals.
+
+Acceptance for EACH call requires a directly observed actual process
+EXIT0, plus `final-accounting.json` with complete=true,
+first_failure=null and result exactly
+`FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW`. A receipt
+or summary alone is provisional. Inspect source/config/input identity,
+stage accounting, no-live-child/final-limit evidence, retained key sets,
+actual-call branch counts, fresh L/M/corner/leaf reconstruction and full
+raw/build/runtime closure. Record tool completion/exit and output
+identities promptly in the result continuation; preserve all raw outputs
+and any first failure. Poll an ongoing call and communicate progress at
+intervals no greater than60 seconds. No other scientific job may run
+concurrently with this fixed fresh sequence.
+
+Current status: preregistration frozen, actual input pins and root release
+PENDING, reviewer execution count ZERO. Operational pack tests, bulk
+remote execution, storage delivery and interim/final Claude review are
+separate obligations and are not released by this registration.
+
+## Actual primary-input binding — BEFORE fresh execution
+
+2026-11-07. Root reports both prospectively fixed primaries completed ONCE
+at source publication a916e550f324dc7548f472575bedd302feecaa9d, with no
+retry. This reviewer has independently inspected their receipts, accounts,
+source/configuration, controls, stage/checkpoint, raw and build/runtime
+provenance. Primary direct-exit observations are ROOT observations, not
+direct observations by this reviewer; their durable records and parent
+handoff agree. Reviewer fresh execution count is still ZERO.
+
+The source remains the accepted corrected FREEZE4153 bytes,
+0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb.
+All nine AUDIT.sha256 entries were rechecked successfully. The frozen
+prospective commands, cases, output paths, ordering and budgets above
+remain unchanged. These are the actual bound input files, under
+local-output/argmax-bridge-20261105/final-hybrid-validation:
+
+| Degree / file | Bytes | SHA-256 |
+|---|---:|---|
+| primary-n41/essential-receipt.json |6494|faca30653a59e0c4416ff61ddb53c8ccda17c3b6a098163666c47e3cd3bb0697|
+| primary-n41/final-accounting.json |1154|c74aeba3bdcf65766dc5d9593c7d4d4c727d5221f44a50e29761ba0f04e00e8d|
+| primary-n41/root-observation.json |512|0157ea9a403b446d6e20b116e214a334eacdaa7bac5de98dda94d4a04f2c6e3e|
+| primary-n511/essential-receipt.json |5996|c53691109f203e3e925eea1d5c8efeba6d4b5104f53e21c2651e1a92a8b99d37|
+| primary-n511/final-accounting.json |1175|1a9a0fdf7ef9b17f1c08072712f43c2f17fd30bfd24ea39d0c68c47adeeb8574|
+| primary-n511/root-observation.json |513|2e8961d74f21b774b759daa39462ec4668e006748ee2d8c2ee33d221ce97c1aa|
+
+Root's primary41 session10976 completed in tool chunk8b3ee2 with observed
+EXIT0; primary511 session11808 completed in251ce1 with observed EXIT0.
+Both final accounts have complete=true, first_failure=null, the exact
+`EXACT_SINGLE_DEGREE_PRIMARY_ACCEPTED_PENDING_FRESH_VERIFY` result,
+the correct produce degree/output with no old certificate, no live
+children, and the unchanged120CPU hard aggregate cap. Their recorded
+CPU-through-summary checkpoints are6.887400 and7.353713, respectively;
+these are sampled inclusive checkpoints, not exact exit-CPU measurements.
+The recorded final absolute self limits112 and111 plus fixed waited-child
+CPU leave the original whole-cap enforcement intact. Both controls and
+checker stage records show return0, no stop/failure and complete accounting.
+
+The inspected input proof summaries are:
+
+| Degree | Input METHOD / M | Retained S / actual | Nodes / leaves | Leaf branches |
+|---|---|---|---|---|
+|41|TREE /13, coarse15|64 /3|101 /51|5 NEAR,43 FAR,3 OUTSIDE|
+|511|GRID /30|45 /0|51 /26|6 NEAR,17 FAR,3 ANALYTIC_FAR|
+
+At41 the three physical actual keys are1/164 and1/224 in the registered
+combinations; no f token occurs. At511 the frozen string has the explicit
+three f leaves, analytic E12 corner descriptor and zero actual rows. All13
+grid keys are retained in each receipt. The complete receipts were read;
+their fresh re-evaluation remains the next scientific obligation. The
+primary verification fields and positive fractions are not accepted as
+substitutes for that distinct fresh execution.
+
+Both six-group synthetic-control records say PASS with zero native calls;
+the actual checker recorded67 total native calls at41 and45 at511, all
+returncodes0, no active call remaining and COMPLETE status. These are
+observations of primary evidence, not reviewer control/native runs.
+The fresh source will again authenticate and reconstruct all premises.
+
+Whole raw records were hash/size matched to the receipt identities:
+
+- primary-n41/raw-evidence.json,180345 bytes,
+  2cf0e7945013eceae108469ceee106751047a21eead8db1a4ca978fbcfb641f5.
+- primary-n511/raw-evidence.json,111972 bytes,
+  99a0cfd84c4331ca713ef5725f21c75f70f56c6d89045bb352634aad078a39b0.
+
+Both controls/checker checkpoint hashes match their supervisor and receipt
+identities. All three primary build manifests were inspected:41 has fresh
+D23 S and original D07 actual builds;511 has only fresh D23 S. Source
+snapshots match the reviewed native source bytes. Using metadata-only
+hash checks, EVERY listed source snapshot, preprocessed translation unit,
+binary, toolchain, toolchain dependency, header, linked dependency and
+dependency-input artifact in those three manifests still matches its
+recorded SHA-256. Before/after loaded-library and all-file-mapping records
+are identical for each invocation. This checks recorded build/runtime
+provenance; it does not purport to formally verify the compiler or system.
+
+Only read-only file reads, JSON field inspection, byte/hash comparisons
+and this owned append occurred during binding. No engine/checker import,
+scientific arithmetic reconstruction script, control/test, build/native,
+phase/degree or other scientific job was executed by this reviewer.
+No input/output/source was altered. No problem was found in the input
+binding or the inspected prerequisites for fresh verification.
+
+**READY FOR ROOT PUBLICATION AND SEPARATE FRESH RELEASE.** The input
+hashes are now bound; exact commands and2*120CPU fresh envelope remain
+as preregistered. The reviewer will not launch until root explicitly
+releases the fresh sequence. A successful primary is still pending the
+distinct fresh result and subsequent scope review.
+
+## Independent fresh results — FINAL ACCEPT, 2026-11-07
+
+**ACCEPT the completed local hybrid validation at EXACTLY41 and511.**
+Both prospectively registered fresh executions completed ONCE, in order,
+with directly observed outer EXIT0 and accepted complete final accounts.
+No retry, failed scientific attempt, source/precision/case/cap alteration,
+method fallback, topology replacement or additional scientific run occurred.
+The preceding39977-byte prerelease/input-binding prefix is preserved at
+SHA-256 d179a4c15e6cf3070c6af861048214f065442cfa3a3ef3bcf8227e2c090e3e7b.
+Root's explicit release followed its publication at
+42221bc0ccb5b0263cf1c77090bd97c2680fa29a. All source/input pins were
+rechecked before launch; the two EXACT prewritten isolated commands above
+were used without a wrapper or standalone preview.
+
+The cloud-environment runtime skill was read before execution and its
+current-environment status inspected. The attached managed environment
+reported current observations, running state and enforced restricted
+network policy, with no configured secrets/runtime variables/outbound
+identities. Existing pinned include/FLINT prerequisites were present;
+no package setup, network access, Docker or remote machine action was
+needed. This is a local fresh-build validation, not a Syvert2 run.
+
+### Direct execution observations and accepted final accounts
+
+| Fresh case | Tool session | Initial chunk | Completion chunk | Actual exit | CPU through summary |
+|---|---:|---|---|---:|---:|
+|41|73378|ca9e79|e36d37|0|6.287665|
+|511|14855|d37acb|224b30|0|7.531237|
+
+For41, I inspected final-accounting.json AFTER direct completion and
+BEFORE launching511: complete=true, first_failure=null, result exactly
+FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW. Its original
+input identity, degree, mode and output matched the registration. The
+same checks then passed for511. Both accounts record no live children,
+fixed waited-child CPU and final absolute parent self limit:112 at41,
+111 at511. Both controls and checker stages returned0, no stop/failure,
+complete accounting. Receipt/summary flags alone were never used to
+authorize the second run or conclude success.
+
+Immediately after each completion and account check, BEFORE continuing
+to another scientific action, a compact reviewer-observation.json was
+written in that run's output directory. It records the actual tool
+session/chunks/exit, result/account identities and no-retry scope. These
+are this reviewer's own observations, distinct from the root primary
+observations in the earlier section.
+
+The cost numbers are inclusive CPU-through-summary CHECKPOINTS, not
+exact exit CPU. The original tightened absolute hard limits bound the
+remaining final serialization/write/return. Fresh checkpoint total is
+13.818902CPU under the2*120CPU fresh envelope. Root primary checkpoint
+total was14.241113CPU; all four local checkpoints total28.060015CPU
+under the prospective4*120CPU envelope. These two fixed-case observations
+do not establish a uniform cost, throughput or runtime-saving law.
+
+### Exact fresh identities and preserved outputs
+
+Paths below are under
+local-output/argmax-bridge-20261105/final-hybrid-validation:
+
+| Fresh output | Bytes | SHA-256 |
+|---|---:|---|
+| verify-n41/essential-receipt.json |6492|a2af589a86427a27060e6ad5a90a3c1f8777b21d717d63d2f4211088ecb21b50|
+| verify-n41/final-accounting.json |1527|b758cdacfe9af89fc4baad61d27e0c4fb226e99684ad8b0807d914c13024a978|
+| verify-n41/reviewer-observation.json |965|6b8ef8b89e87399c1e2ca4c8d0c1f31601cbd9b1e0a1e18c7039ba1a7032770c|
+| verify-n41/raw-evidence.json |166112|9cb7b351619630df11460bed7c9b461fd0ab2979c2999fff9c58829bab9336af|
+| verify-n511/essential-receipt.json |5994|0c00807f5c25136af9aa4ebb85f8a114e6962dc3a460c18af9c0bd41d1ff5141|
+| verify-n511/final-accounting.json |1510|724ea281d8d1752d73ba17f1e14e7f3669bdffb1b9babab567979a3d6c639a3b|
+| verify-n511/reviewer-observation.json |933|947176516090f5426ae142d1ff3d595254688328df75299c56f1a6f3a0812529|
+| verify-n511/raw-evidence.json |105991|99ef3bafaf5454e10a56276b25d2e988688c25c060f11f0a37a096f3e2ba5719|
+
+Each preserved original-certificate.json hashes exactly to its registered
+primary input: faca3065... at41 and c5369110... at511, with the full
+identities in the prior binding table. Source FREEZE remains
+0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb;
+all nine source/contract audit entries match after both runs. The raw
+files, complete native records, stage outputs, builds, TUs, binaries and
+runtime/maps remain at their original exclusive paths without truncation,
+splitting or replacement. No cold-storage retrieval or remote copy is
+claimed by this local review; root owns subsequent evidence integration.
+
+### Fresh proof reconstruction and exact scope
+
+The fresh source reconstructed the same registered METHOD and topology
+from ALL newly computed retained premises. The outcomes are:
+
+| Case | Fresh METHOD / M | Fresh S / actual | Nodes / leaves | Closed leaf branches |
+|---|---|---|---|---|
+|41|TREE /13|64 /3|101 /51|5 NEAR,43 FAR,3 OUTSIDE|
+|511|GRID /30|45 /0|51 /26|6 NEAR,17 FAR,3 ANALYTIC_FAR|
+
+At41 all final numeric leaves, including tangencies, provide complete
+D19 norm inputs; no analytic leaf occurs. The thirteen grid keys remain
+explicit retained fresh data even though TREE is the preserved METHOD.
+The fresh global norm13 and true-origin lower
+3381571554168777/281474976710656 support the complete closed cover.
+Its minimum reported strict numeric margins are positive EXACT fractions:
+
+    NEAR =227275782874007484172251803/151745991585839089031577600000,
+    FAR  =2696645921418835/6082392771740565504.
+
+The actual three-point keys remain(1/164,0),(0,1/224),(1/164,1/224).
+The freshly reconstructed pi-fourth corner excess is
+78684125233892449/2474931954647040>0. Its radial coefficient includes
+the correct factor1/2. The used floor minimum is1/512. No E12/E15
+analytic branch supplies a mathematical premise at41; the presence of
+the generic future-capability descriptor does not activate it.
+
+At511 the mandatory fresh13-grid norm is30; there is no TREE inference
+from an incomplete sampled cover. Its fresh lower is
+7108823230870693/281474976710656. The positive exact numeric margins are
+
+    NEAR =339656542857811/68961369294110720,
+    FAR  =119262731471225/13792273858822144.
+
+The radius-aware actual-noncorner floor minimum is
+172803289927833/4535328582400000, within the unchanged C02 tier used
+by this degree. E12 supplies the BOTH-corner closed pi/4 squares with
+loss1/30, independent of this numerical M; zero D07 builds or actual
+calls are present at511.
+
+I also matched the three f positions in the exact frozen tree with their
+raw dyadic rectangles (coordinates in phase turns):
+
+    id48: [1/4,1/2] x [1/4,1/2],
+    id49: [0,1/2]   x [1/2,1],
+    id50: [1/2,1]   x [0,1].
+
+These are respectively the upper-right quarter of the root's lower-left
+half square, its left upper half, and its right half. Every minimum sum
+is EXACTLY1/2, not merely a passing sample or center. All clipped patches
+are nonempty and their sum is<=1 on T. Thus E15's CLOSED guard and its
+3/100 gap apply on all three patches, including their seams. The gap is
+against the symbolic true Lambda_c, not the displayed lower L. Source
+verification recomputed these boxes from the tree and preserved f/dot
+classification. No numerical point or vertex needed by either final
+norm was silently removed.
+
+The unchanged D32 physical cover, original weights/finite collisions,
+strict numeric predicates and accepted actual-corner patches therefore
+give the exact two-corner argmax for each of these fixed cases under
+the named trusted dependencies. Both degrees are odd, hence the equality
+set is(-1,-1),(-1,1). This does not constitute a new even-degree execution.
+Both degrees were already known controls: these successful replays add
+no newly closed residual degree and do not alter global320 or residual273.
+At511 the E12/E15 model/PD-T271 premises remain explicit. The finite
+41 route uses the model-free numeric norm/actual-corner construction.
+
+All fresh upper bits and actual upper bits happened to equal the primary
+values. This is diagnostic only, as registered: the new process performed
+new builds and new native calls, and acceptance used the recomputed exact
+inequalities, not equality to any old bit, norm or margin. The source
+self-reconstruction of each fresh essential receipt also passed before
+serialization. No extra mathematical checker or same-case replay ran.
+
+### Native, runtime, controls and accounting review
+
+Fresh41 recorded64 unique S calls plus3 actual calls; fresh511 recorded45
+unique S calls and0 actual calls. Every native returncode is0. Ordinary
+S counter closures are4n=164 and2(n+1)-4=80 at41, and2044/1020 at511,
+with the explicit endpoint zero-counter exception. Actual calls retain
+the original43-row closure and full thirteen-counter diagnostics. All
+source direct/block/root/fallback limits remained satisfied. There is
+no cross-run cache seeding or uncharged discarded native call.
+
+Both controls stages actually completed the fixed six groups and made
+zero native calls. These are the only control executions by this reviewer,
+each included inside its registered invocation; no standalone synthetic
+test or startup probe was added. Stage accounting, final self limits,
+source/config/input checks and postserialization gates passed. First
+failures remain absent in the complete final accounts and raw states.
+
+Three NEW builds were performed in distinct fresh output directories:
+S and actual at41, S only at511. Their source snapshots match the frozen
+D23/D07 sources, and they have separate fresh preprocessed TUs and binary
+identities. After execution I independently rehashed every listed source,
+TU, binary, toolchain, toolchain dependency, header, linked dependency and
+dependency-input artifact in all three build manifests; all match. Fresh
+before/after loaded libraries and all file mappings match exactly for
+each invocation. The native sources and the accepted final Python source
+freeze are unchanged. System/compiler/Arb runtime trust is retained,
+rather than promoted to a formal or hermetic proof claim.
+
+### Final disposition
+
+FINAL ACCEPT of the repaired hybrid source/reduction and BOTH completed
+fixed local primary-plus-distinct-fresh validation cases. FH-1 remains
+closed with its first finding preserved; no new finding arose. All
+upstream unwaived chronology findings and separate Claude obligations
+remain unchanged. No general success/termination/point-count/cost law,
+new source guard, new global onset or authorization for bulk remote work
+is inferred. Pack operational review, interim Claude audit and any later
+user-authorized delivery remain separate.
+
+This reviewer executed exactly TWO released fresh engine invocations,
+sequentially41 then511, with no retry or concurrent scientific job, and
+wrote their two compact observations immediately. Additional actions
+were skill/status and read-only metadata/provenance inspection plus this
+owned append. Author code, original inputs, raw evidence, shared records
+and mutable Git were not edited. All earlier prerelease statements of
+zero execution are historical; this dated section records the complete
+newly authorized execution and its exact limits.

@@ -1,0 +1,170 @@
+{
+  "kind": "Independent supplementary rerun receipt, not Claude audit",
+  "rules_sha": "0bca52bc1b8edf2e91d3749b710d2df285dc3e6b",
+  "reviewer": "Distinct Codex worker /root/check_rows; assigned gpt-6-astra high; serving metadata not independently exposed",
+  "python": "3.12.14",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N1-row-model.md",
+      "bytes": 8673,
+      "sha256": "d087ad8374c9e8274c5d228a47a7f796a8c64d412255a7362c0ea68863c14250"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N2-row-decomposition.md",
+      "bytes": 11447,
+      "sha256": "40201cc3abe826e0c43d4b93f47511fc3b81bdb3a5e8b96d01ce4bc84bfa2604"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N4-unrestricted-transport.md",
+      "bytes": 4005,
+      "sha256": "e7835c5fef239c72e3758caef6d7ec640487c29444df7583f0a72a013e5eec89"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N4-variance-rigidity.md",
+      "bytes": 4062,
+      "sha256": "f32de9ecd18c8d39ad04bdd1758cd0edc1839936fc331fe0d1800e63a2c3ff68"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N4-diagonal-translation-obstruction.md",
+      "bytes": 6908,
+      "sha256": "3fe6e396e37c523166d6da98ce46974cfb0e3b5a031c461466cf25c979b167e8"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N5-partial-cotangent.md",
+      "bytes": 9963,
+      "sha256": "9b2e332d771be405aaed38849fa18618831313a9414b8131cd0e4cd7084eadb0"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n1_rows.py",
+      "bytes": 7039,
+      "sha256": "c8461f7f3c61e54a20844c624a1d7f094d7a8375fc798caa2fb924e328b85e46"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n2_rows.py",
+      "bytes": 8629,
+      "sha256": "3e634c0e8eda2f8c089e8311c094bd823b567cdf9eee0a0dd484c1fc52801085"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n4_exact_invariants.py",
+      "bytes": 7560,
+      "sha256": "9418fcb52b6020fecc771e38fddd1bb8aba6b6272d2d4fc116edf76b218cd56b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n5_partial_cotangent.py",
+      "bytes": 4559,
+      "sha256": "290d0417fe62e631e885cdeba3a4ee5a45be20c0144cb1865c38bcf7b9a5caf2"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n1-rows.json",
+      "bytes": 3954,
+      "sha256": "b4f825397bfc7b37cf6162af65be3d08baf9c068ea75b3c796a8681c7c333b2c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n2-rows.json",
+      "bytes": 2298,
+      "sha256": "66ed7868a52c28d98d8da4b3b5e963317e29b0ef8d4b8f8c559479432941999e"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n4-exact-invariants.json",
+      "bytes": 4680,
+      "sha256": "030b58f486c7d07cfba257a3a1dc48fa9bfb519dcb254926ab26e06639fe4bd3"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n5-partial-cotangent.json",
+      "bytes": 1512,
+      "sha256": "b25e3ae7ebf69c37573fed7d95b1fbca1844bf76c1c6112c9014f497664d538d"
+    }
+  ],
+  "runs": [
+    {
+      "route": "N1",
+      "cases": 125,
+      "max_error_ratio": 0.005277861793469796,
+      "source_sha256": "c8461f7f3c61e54a20844c624a1d7f094d7a8375fc798caa2fb924e328b85e46",
+      "raw": {
+        "path": "local-output/argmax-bridge-20261105/check-rows/n1-rerun.json",
+        "bytes": 106274,
+        "sha256": "1ec09341de533f4fc79b83f6997a164b0db1fd795be5104ecb67156cc299946d"
+      },
+      "log": {
+        "path": "local-output/argmax-bridge-20261105/check-rows/n1-rerun.log",
+        "bytes": 509,
+        "sha256": "df9264fc18d1af0fa01789a1636f7fdd772f1f36531922a79304ce1923c0ab37"
+      }
+    },
+    {
+      "route": "N2",
+      "counts": {
+        "boundary_cases": 84,
+        "cases": 195,
+        "collision_entries": 42,
+        "generic_cases": 97,
+        "regular_entries": 16578,
+        "sign_disagreements": 0,
+        "vertex_cases": 28
+      },
+      "max_absolute_errors": {
+        "absolute_rows": 8.468781231840694e-13,
+        "boundary": 1.6076029396572267e-13,
+        "collision": 3.161915174132446e-13,
+        "cotangent": 2.2282620193436742e-10,
+        "crt": 4.495177563512698e-10,
+        "global_signed": 1.8096635301390052e-14,
+        "row": 1.3073986337985843e-11,
+        "vertex": 3.530509218307998e-14
+      },
+      "raw": {
+        "path": "local-output/argmax-bridge-20261105/check-rows/n2-rerun-absolute.json",
+        "bytes": 32191,
+        "sha256": "21189eb301e4eae39b6e97ff8956a5e4f0a7d883378b7669fdf382cfca44bce9"
+      },
+      "receipt": {
+        "path": "local-output/argmax-bridge-20261105/check-rows/n2-rerun-absolute-receipt.json",
+        "bytes": 2319,
+        "sha256": "23fd97d1110b01c3999b836d624d2298edc09309368d96e6b7c06ea916ad7cb3"
+      }
+    },
+    {
+      "route": "N4",
+      "degrees": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "columns": 4871,
+      "raw": {
+        "path": "local-output/argmax-bridge-20261105/check-rows/n4-rerun.json",
+        "bytes": 70298,
+        "sha256": "125b40d81ea8ea707fff01135fe1db03c065c6e2efebba65229c45bd1784d36c"
+      },
+      "receipt": {
+        "path": "local-output/argmax-bridge-20261105/check-rows/n4-rerun-receipt.json",
+        "bytes": 4826,
+        "sha256": "063469ad568892e188ecccc98c5f56b6afc4df2e04ff9810db2eae3ab876e0a1"
+      }
+    },
+    {
+      "route": "N5",
+      "cases": 130,
+      "max_error_ratio": "0.110377096982369112775091660465",
+      "raw": {
+        "path": "local-output/argmax-bridge-20261105/check-rows/n5-rerun.json",
+        "bytes": 38019,
+        "sha256": "b8ea43ad726db47ef6e471cc8f7cc4dce42e34151f3adf77aaa25e1c34acd5c4"
+      },
+      "receipt": {
+        "path": "local-output/argmax-bridge-20261105/check-rows/n5-rerun-receipt.json",
+        "bytes": 1498,
+        "sha256": "8b28a0315e54be83a8e2756417041ae7032696d9a27491fb47602f2886e17717"
+      }
+    }
+  ],
+  "findings": [
+    "Minor R1: N2 relative --output fails only while recording relative_to(ROOT); successful absolute-output rerun; developer code unchanged."
+  ],
+  "mathematical_disposition": "No substantive mathematical finding in six pinned theorem files; original global bridge remains OPEN",
+  "limitations": "Analytic proofs independently reconstructed; numerical reruns are not universal certificates. No B3 pass, compact-degree certificate, unrestricted N4 kill, registry approval, external novelty, or Claude-audit substitution. Off-Git raw archival pending."
+}

@@ -1,0 +1,45 @@
+{
+  "status": "MEASURED_PASS",
+  "mathematical_status": "OPEN: finite floating samples do not prove or universally refute C5",
+  "rules_and_input_commit": "fc8c2885f47b08cecc7f65328db0e740cbc205ea",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-argmax-bridge-20261105/code/n5_large_budget.py --output local-output/argmax-bridge-20261105/N5/large-budget-cases.json --receipt topics/padua-argmax-bridge-20261105/evidence/n5-large-budget.json",
+  "source_sha256": "c7840ec6cfc801cbc353bf9f67d3831b9207b4b8d9d7da93009552b2f4bf8056",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "mpmath": "1.3.0",
+  "arithmetic": "numpy.longdouble finite triangular cosine polynomial; binary64 control; separate 80dps scalar polynomial recurrence",
+  "longdouble_significand_bits": 64,
+  "scope": "n64/65, both endpoints J, closest parity-valid q to1/mid/m-1; phases(0,0),(0,+/-1/2),(inward*1/2,0),(inward*1/4,+/-1/4)",
+  "target": "Direct complete Q_v=(4nm)^-1 sum_odd d(G_rs,G_r,2q-s)>=1/4; unchanged beta in partner; no actual-defect proxy",
+  "cases": 72,
+  "minimum": {
+    "n": 65,
+    "J": 65,
+    "q": 32,
+    "alpha": "0",
+    "beta": "-0.5",
+    "full_projected_defect": "0.5230485747479166311",
+    "gap_above_quarter": "0.27304857474791663108",
+    "binary64_difference": "3.1893433206919841183e-15"
+  },
+  "maximum_extended_binary64_difference": "3.0459142152938767367e-14",
+  "maximum_selected_kernel_reference_difference": "1.4066602703279568564e-13",
+  "envelope_obstruction": {
+    "status": "EXACT_RATIONAL_ARITHMETIC_PASS",
+    "log_two_upper": "23581/34020",
+    "atanh_c_lower": "2253160124237/2421931640625",
+    "machin_pi_lower": "281476/89625",
+    "negative_coefficient": "-1917599/2495625",
+    "envelope_limit_upper_bound": "487302379/1968469140",
+    "gap_below_quarter": "2407453/984234570",
+    "scope": "Arithmetic checks only; analytic limit and inequalities are proved in theory/N5-large-budget.md; C5 remains OPEN"
+  },
+  "cpu_seconds": 0.44889737900000004,
+  "bulk": {
+    "path": "local-output/argmax-bridge-20261105/N5/large-budget-cases.json",
+    "bytes": 19112,
+    "sha256": "e39079e01199684be9b768bf34961a9bbc82c809fa284ec9e4fb74d7778c5a93"
+  },
+  "independent_rerun": "not performed by developer",
+  "limitations": "No outward interval errors; scalar precision controls are diagnostics; uniform all-degree/all-phase floor remains unproved"
+}

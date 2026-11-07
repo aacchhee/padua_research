@@ -1,0 +1,98 @@
+{
+  "all_mathematical_fields_equal": true,
+  "analytic_review": [
+    "unimodular torus inverse and 4/2/1 multiplicities",
+    "node/nonnode corner phases and fixed-trace visits",
+    "exceptional corrected x mode and finite frequency bounds",
+    "exact n2 signs and strict counterexample"
+  ],
+  "checker_sha256": "a48c4081f54c57a54cd05ec3b2edb64e29d9146ed8fd8d9bb8ffde98411002c1",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "topics/padua-argmax-bridge-20261105/code/check_initial.py"
+  ],
+  "cwd": "/workspace/padua_research",
+  "format": "padua-bridge-independent-math-initial-v1",
+  "fresh_raw_receipt": "local-output/argmax-bridge-20261105/check-initial/n6-two-trace.json",
+  "fresh_raw_receipt_bytes": 4455,
+  "fresh_raw_receipt_sha256": "9f5e4ed6e6b85d734a3777dfc96054d92ef76cdf3213d8052da343d23b503eaf",
+  "frozen_developer_script_reexecuted": true,
+  "frozen_input_commit": "0bca52bc1b8edf2e91d3749b710d2df285dc3e6b",
+  "independent_sympy_reconstruction": {
+    "cardinals": [
+      "x**2/6 + x*y/3 + x/6 + y**2/3 + y/6 - 1/6",
+      "x**2/3 - x*y/3 + x/3 - y**2/3 - y/6 + 1/6",
+      "-2*x**2/3 - 2*y**2/3 + y/3 + 1",
+      "-x**2/3 + 2*y**2/3 - y/3",
+      "x**2/6 - x*y/3 - x/6 + y**2/3 + y/6 - 1/6",
+      "x**2/3 + x*y/3 - x/3 - y**2/3 - y/6 + 1/6"
+    ],
+    "gap": "-7/6 + 5*sqrt(2)/6",
+    "norms": [
+      "sqrt(2)/6 + 3/2",
+      "sqrt(2)/6 + 3/2",
+      "1/3 + sqrt(2)"
+    ],
+    "positive_gap_reason": "sqrt(50)>sqrt(49), hence 5*sqrt(2)>7",
+    "values": [
+      [
+        "-sqrt(2)/12 - 1/12",
+        "1/3 - sqrt(2)/6",
+        "2/3",
+        "-1/6",
+        "-1/12 + sqrt(2)/12",
+        "sqrt(2)/6 + 1/3"
+      ],
+      [
+        "-1/12 + sqrt(2)/12",
+        "sqrt(2)/6 + 1/3",
+        "2/3",
+        "-1/6",
+        "-sqrt(2)/12 - 1/12",
+        "1/3 - sqrt(2)/6"
+      ],
+      [
+        "sqrt(2)/12",
+        "-sqrt(2)/12",
+        "-sqrt(2)/6",
+        "sqrt(2)/6",
+        "1/3 - sqrt(2)/4",
+        "sqrt(2)/4 + 2/3"
+      ]
+    ],
+    "vandermonde_determinant": "-27/2"
+  },
+  "input_sha256": {
+    "code/n6_two_trace_exact.py": "2911fba1a49dbbdd88cd1065ac0b924cc418481f4ffb5c0deff81f0015dd165c",
+    "evidence/n6-two-trace.json": "ca1bf2b1829301988dd7e3d6143bfac55c43cc1a3162f674a3c0c925c5804f98",
+    "ideas/N6-two-trace.md": "ea4e802a55c40755ce18ef6eebb896db7c0345d3a309db6e5a4137489bd614ec",
+    "novelty-gate-N6.md": "25e9db8368fdbfdc4cb86360885c4882f9dc3213e20582f27846cea2bdf4f4cf",
+    "theory/N6-parallel-family-verification.md": "1f84fd71f29ffb6a57b3a4ba733e47792920f08031a6864483c9d8538413f900",
+    "theory/N6-two-trace-obstruction.md": "5aba89fdfc98ae01e662de9ab12f7ad03ac439552cc952bfc6321503f6ae0ad8"
+  },
+  "mathematical_receipt_fields_compared": [
+    "degree",
+    "t",
+    "witness_s",
+    "comparison_s",
+    "monomial_order",
+    "node_indices",
+    "rational_cardinal_coefficients",
+    "rational_inversion_matches_corrected_kernel",
+    "rows",
+    "gap",
+    "gap_positive_exactly",
+    "status"
+  ],
+  "python": "3.12.14",
+  "raw_independent_execution_false_field": "hard-coded by unchanged developer script; actual separate execution recorded here",
+  "registry_sha256": "948c30b35cdb3ffacefe398acfb35439fc7e69f8be33fd94bc605b052b8d03c6",
+  "requested_model_effort": "gpt-6-astra high",
+  "role": "distinct supplementary checker; required Claude audit remains pending",
+  "rules_head": "95366c19562e88c11138f88aab0a6617d6b15305",
+  "runtime_model_effort": "not independently exposed",
+  "scope": "fixed-t two-trace comparison only; broad N6 and PD-T099 unaffected",
+  "seed": null,
+  "status": "PASS",
+  "sympy": "1.14.0"
+}

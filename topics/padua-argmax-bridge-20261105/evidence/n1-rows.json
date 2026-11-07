@@ -1,0 +1,86 @@
+{
+  "status": "MEASURED developer diagnostics; analytic theorem has no numerical premise",
+  "rules_input_sha": "98d6c00d8a474cf97602c9cfdea631a837191ac0",
+  "command": "python topics/padua-argmax-bridge-20261105/code/n1_rows.py --degrees 2,3,4,5,8,17,33,48 --dps 70 --output local-output/argmax-bridge-20261105/N1/rows.json",
+  "environment": {
+    "python": "3.12.14",
+    "mpmath": "1.3.0",
+    "dps": 70
+  },
+  "seed": null,
+  "source_code_sha256_at_run": "c8461f7f3c61e54a20844c624a1d7f094d7a8375fc798caa2fb924e328b85e46",
+  "source_hashes_after_dependency_status_update": {
+    "code/n1_rows.py": "c8461f7f3c61e54a20844c624a1d7f094d7a8375fc798caa2fb924e328b85e46",
+    "theory/N1-row-model.md": "748b0cf37c9a2903171bc123d055637bb8fd3a7cd0cc4a01cd268f8adc394a09",
+    "theory/N5-partial-cotangent.md": "4b8438e820a5255b9c40d7a4530fa7143bd3a22218024291b6e3533bcbc00c6c",
+    "theory/N2-row-decomposition.md": "650a2b87c38842e5a5c26ffa572d4b4e751c1839cd5fe19aceefed96b8e7cfbe"
+  },
+  "scope": {
+    "degrees": [
+      2,
+      3,
+      4,
+      5,
+      8,
+      17,
+      33,
+      48
+    ],
+    "phase_units": "exact rational multiples of pi",
+    "cases": 125,
+    "direct_finite_polynomial_cases": 62,
+    "collision_indices": 69,
+    "selected_sign_zero_tolerance": "1e-60 for numerator; diagnostics only, not proof"
+  },
+  "results": {
+    "max_model_error_over_analytic_bound": 0.005277861793469796,
+    "max_signed_identity_error": 3.2035790633108e-51,
+    "max_cotangent_identity_error": 3.2035790633180124e-51,
+    "sign_mismatches": 0,
+    "elapsed_seconds": 88.99569177627563
+  },
+  "worst_ratio_case": {
+    "n": 17,
+    "alpha_pi": "1/100",
+    "beta_pi": "0",
+    "direct_polynomial": false,
+    "exact": "8.61790432216851434804976281611993042561365909349572343384365335397244",
+    "model": "8.617904245813872967371099339289156785169548420623475455358275316215171",
+    "error": "0.00000007635464138067866347683077364044411067287224797848537803775726947269267",
+    "bound": "0.00001446696491278928379195960360770581897120504955977484467550636216618342",
+    "ratio": "0.00527786179346979622418276994122271550949850537075454707624468391661459",
+    "max_signed_error": "5.574444215541306169602005602016677892718580732775781107569404411303112e-65",
+    "max_cotangent_error": "5.57473399727182862439776589383398630205556257377412155999147105497959e-65",
+    "collision_count": 0,
+    "blocks": 68,
+    "sign_mismatch": 0
+  },
+  "analytic_bound_float_values": {
+    "33": "0.00000115089236519258969024767178617982452737642248569654562872086",
+    "48": "0.000000273922832205114308818526316537986518191841894882574647864339",
+    "64": "0.000000090768905211105539525711257592386138377980565785750045908272",
+    "96": "0.0000000190735589819717417310560863283031835908795009526087076284848",
+    "128": "0.00000000629227795783891236674593375661142549164980336405334929165795",
+    "192": "0.000000001314642334416839835271243911848277487357067076489243683199",
+    "256": "0.000000000432077733033543736522621489969644021692143306160782019451056"
+  },
+  "raw": {
+    "path": "local-output/argmax-bridge-20261105/N1/rows.json",
+    "sha256": "45aa30ce9fccebc12f5d7e8f9db726d3feb9d75628a43440619fef2b8ae3039d",
+    "bytes": 106300
+  },
+  "independent_rerun": "pending",
+  "limits": [
+    "No outward roundoff enclosure",
+    "No fit",
+    "No compact-in-degree model or all-degree maximum comparison",
+    "No B3 pass",
+    "Cold-storage archival pending; raw output is local and reproducible"
+  ],
+  "source_hashes_at_round1_freeze": {
+    "code/n1_rows.py": "c8461f7f3c61e54a20844c624a1d7f094d7a8375fc798caa2fb924e328b85e46",
+    "theory/N1-row-model.md": "d087ad8374c9e8274c5d228a47a7f796a8c64d412255a7362c0ea68863c14250",
+    "theory/N5-partial-cotangent.md": "4b8438e820a5255b9c40d7a4530fa7143bd3a22218024291b6e3533bcbc00c6c",
+    "theory/N2-row-decomposition.md": "650a2b87c38842e5a5c26ffa572d4b4e751c1839cd5fe19aceefed96b8e7cfbe"
+  }
+}

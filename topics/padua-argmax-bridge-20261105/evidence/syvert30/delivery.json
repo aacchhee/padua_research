@@ -1,0 +1,36 @@
+{
+  "source_commit": "7cf34bcee4be9bdd5b4a871426083333a89b7c15",
+  "candidate_sha256": "d67a11930d74cf62f631adcdb3bb8c4a4e0d21b6fc63737c43730947da9f6a6f",
+  "builder": {
+    "invocations": 1,
+    "exit": 0,
+    "tool_session": 62862,
+    "completion": "9caad3",
+    "stdout": "local-output/argmax-bridge-20261105/syvert30-build.stdout",
+    "stderr": "local-output/argmax-bridge-20261105/syvert30-build.stderr"
+  },
+  "artifact": {
+    "path": "local-output/argmax-bridge-20261105/syvert30-7cf34bcee4be9bdd5b4a871426083333a89b7c15/padua30.zip",
+    "bytes": 25095407,
+    "sha256": "e51b442ba541ebcf9a94c3571a624692ee385c3178195d2a2ced071bd960d35f"
+  },
+  "runtime_manifest": {
+    "bytes": 52884,
+    "sha256": "78b40151280ada98ada945ac2e562b9ffa817279ed08b1dba219c78a94fddd55"
+  },
+  "tree_plus_zip_bytes": 74863015,
+  "profile": {
+    "host": "syvert2",
+    "workers": 30,
+    "aggregate_memory_max_bytes": 128000000000,
+    "planning_memory_floor_bytes": 85899345920,
+    "worker_rlimit_as_bytes": 2147483648,
+    "engine_cpu_per_pass": 120,
+    "primary_fresh_pairs": 280,
+    "known": 7,
+    "residual": 273
+  },
+  "independent_review": "independent-checks-syvert30.md",
+  "actual_target_run": "UNEXECUTED",
+  "external_cold_storage": "pending"
+}

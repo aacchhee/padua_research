@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "requested_model": "gpt-6-astra high",
+  "serving_metadata": "unexposed",
+  "rules_head": "084a64f6465956f9c75b5538f83752c30318f151",
+  "scope": "Exact scalar comparisons supporting an independent analytic review; no board/phase/kernel runs",
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D02_corner_review/check.py",
+    "bytes": 6773,
+    "sha256": "f8d18cfa765acbdeb1592eaf3a182045f232277432704fe916a18926b631874a"
+  },
+  "reviewed_prose": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/theory/D02-corner-strip.md",
+      "bytes": 7157,
+      "sha256": "156b3a824bfd060ab17908423dd964f7869866ca1a39ffa97ad322b9bccafe5c"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/theory/D02-corner-sums.md",
+      "bytes": 8040,
+      "sha256": "565673f330832668ac2b85880b3b37b8d4b245e9d9a584cf97cf7c0070f4c018"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/theory/D02-corner-comparison.md",
+      "bytes": 8985,
+      "sha256": "0c5cc2dd59d75272f9f3ff2f798c40054b86929090e3cb3f9dbb4a0aba516d6b"
+    }
+  ],
+  "checks": {
+    "secant": true,
+    "secant_prime": true,
+    "secant_second": true,
+    "V_first_floor": true,
+    "V_second_floor": true,
+    "D_second_budget": true,
+    "corrected_F_floor": true,
+    "baseline_small_T": true,
+    "baseline_sine_loss": true,
+    "baseline_F0_factor": true,
+    "regular_phase_error": true,
+    "regular_upper_T": true,
+    "regular_T_over_Z": true,
+    "sine_chord": true,
+    "Q3": true,
+    "Q4": true,
+    "R3": true,
+    "R4": true,
+    "offset_harmonic_row": true,
+    "log_95_lower": true,
+    "log_Y_upper": true,
+    "A1_constant": true,
+    "P31": true,
+    "V31": true,
+    "A31_rounded_budget": true,
+    "P22": true,
+    "V22": true,
+    "A22_rounded_budget": true,
+    "pi_lower": true,
+    "pi_square": true,
+    "exp10": true,
+    "sine_budget": true,
+    "remainder_budget": true,
+    "negative_log_slope": true,
+    "uniform_K": true,
+    "target_K": true,
+    "log10_lower": true,
+    "log10_upper": true,
+    "gamma_lower": true,
+    "log8pi_lower": true,
+    "p_increasing": true,
+    "E_first_decreasing": true,
+    "E_second_decreasing": true,
+    "strict_loss": true
+  },
+  "checks_count": 44,
+  "values_presentation_only": {
+    "Q3": 0.06130942151010087,
+    "Q4": 0.018330399586285656,
+    "R3": 0.19242177492055024,
+    "R4": 0.09485303540032686,
+    "A31_unrounded_budget": 4.379379395201811,
+    "A22_unrounded_budget": 5.102948516890186,
+    "A1_constant": 6.616079161147975,
+    "sine": 1.6940793984033402,
+    "remainder": 0.00030574314466089516,
+    "K_upper": 7.771035546065068,
+    "strict_loss_lower": 0.3402545044439202
+  },
+  "exact_final_values": {
+    "K": "56765760016261679563/7304787075000000000",
+    "strict_loss": "32667698869859/96009600000000"
+  },
+  "cpu_seconds_through_checks": 0.028294999999999997
+}

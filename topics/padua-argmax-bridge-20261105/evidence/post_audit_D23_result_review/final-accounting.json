@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "final_self_limit": {
+    "absolute_self_CPU_hard": 51,
+    "additional_reaped": [],
+    "integer_enforcement_reserve_CPU": 1,
+    "no_live_children": true,
+    "scope": "No subsequent children; waited-child CPU fixed. Absolute self limit bounds final serialization/write/return.",
+    "self_CPU_at_tightening": 0.941894,
+    "waited_child_CPU": 7.556455
+  },
+  "first_failure": null,
+  "hard_aggregate_cap": 60,
+  "result": "INDEPENDENT_D23_PAIR_ACCEPTED_PENDING_OBSERVED_EXIT0",
+  "scope": "No children after ECHILD; absolute parent limit includes final serialization/write/return; observed EXIT0 required.",
+  "total_CPU_through_summary": 8.502011
+}

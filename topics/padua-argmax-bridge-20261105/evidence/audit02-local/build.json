@@ -1,0 +1,39 @@
+{
+  "source_commit": "ffe4d42ba176d56db2e77c228bce28eda0872298",
+  "candidate_sha256": "836dcbf098ecb391b740fa884e594e260b74705e88d26339dcc5cba9bbbf673f",
+  "attempts": [
+    {
+      "output_prefix": "/workspace/p02-build",
+      "exit": 1,
+      "tool_completion": "9bd83b",
+      "scope": "published-source tracking gate refusal; no destination created"
+    },
+    {
+      "output_prefix": "/workspace/p02-build02",
+      "exit": 0,
+      "tool_session": 48842,
+      "tool_completion": "8ef481"
+    }
+  ],
+  "artifact": {
+    "path": "/workspace/p02.zip",
+    "bytes": 25085718,
+    "sha256": "b41794138898198a391caa17a2b0a114e456ed690b994b41df8a5fbedc5bd2ba"
+  },
+  "manifest": {
+    "path": "/workspace/p02/runtime_manifest.json",
+    "bytes": 52438,
+    "sha256": "583435701282d0f22aa8d2d9429e735ed8c125b9cf285c3f6ac57983157c2eb4"
+  },
+  "tree_plus_zip_bytes": 74835863,
+  "checks": {
+    "manifest_rows": 240,
+    "source_paths": 33,
+    "zip_entries": 247,
+    "source_manifest_zip_mismatches": 0,
+    "active_nonarithmetic_libraries": 0
+  },
+  "scientific_executions": 0,
+  "independent_review": "independent-checks-audit02-observer.md",
+  "external_cold_storage": "pending"
+}

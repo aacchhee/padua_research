@@ -1,0 +1,137 @@
+{
+  "format": "C02-cheap-known-n32-v1",
+  "status": "FAIL",
+  "accepted": false,
+  "source_commit": "b6e67b3c78cb668b6d2f9da5a5560537d2960bf3",
+  "supervisor": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C02/replay.py",
+    "bytes": 21346,
+    "sha256": "d3fc74dbf4f211fc3fce0f24b7fc6b90a1250a2ef6ee5b8112c58712582f98fa"
+  },
+  "prototype": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C01/prototype.cpp",
+    "bytes": 14311,
+    "sha256": "178bbe5a969a018d91454dc877572a691c9831a4b8793971f5aa303343465dab"
+  },
+  "candidate": {
+    "sha256": "97c339181652d37e7e3c34522959f1b7157b8ea26d3f0ab83c0ebc1c3901528e",
+    "bytes": 21338
+  },
+  "supervisor_argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C02/replay.py",
+    "--run-once",
+    "--source-commit",
+    "b6e67b3c78cb668b6d2f9da5a5560537d2960bf3"
+  ],
+  "process_exit_status": 1,
+  "watchdog_stopped": false,
+  "errors": [],
+  "total_cpu_seconds": 31.965007579999998,
+  "total_subprocess_cpu_seconds": 31.414464,
+  "supervisor_cpu_seconds": 0.5505435799999999,
+  "wall_seconds": 31.61698161699678,
+  "total_cpu_limit_seconds": 180,
+  "watchdog_trigger_seconds": 176,
+  "observed_group_plus_supervisor_peak_seconds": 31.790004853,
+  "worker_rlimit_cpu": [
+    178,
+    179
+  ],
+  "checked_leaves": 364,
+  "total_leaves": 364,
+  "pending": 0,
+  "complete": true,
+  "failed_leaves_count": 76,
+  "first_failed_leaf": {
+    "root": 0,
+    "path": "0101",
+    "kind": "far",
+    "valid": false,
+    "bounds": [
+      11.467798411235936,
+      10.920225581178373,
+      0.0,
+      10.993594541100443,
+      10.993594541100444,
+      3.141592653589793,
+      3.1415926535897936
+    ]
+  },
+  "native_calls": 333,
+  "native_cpu_seconds": 29.221249905999997,
+  "native_counts": [
+    8439552.0,
+    18980740.0,
+    17900.0,
+    0.0,
+    232.0,
+    0.0,
+    101.0,
+    999.0
+  ],
+  "counter_order": [
+    "ratio",
+    "sin_cos",
+    "pole",
+    "global_fallback",
+    "lazy_S",
+    "analytic_floor",
+    "profiles",
+    "boards"
+  ],
+  "source_runtime_checks_complete": true,
+  "closure_entries_rehashed_after": 254,
+  "baseline_comparison": {
+    "old_accepted": true,
+    "old_checked_leaves": 364,
+    "old_total_cpu_seconds": 139.40540900000002,
+    "scope": "same frozen candidate; changed kernel; no new degree",
+    "raw_comparison_available": true,
+    "same_complete_leaf_order": true,
+    "weakened_bound_counts_by_output_index": {
+      "0": 332,
+      "1": 332,
+      "2": 270
+    },
+    "old_valid_now_failed": 76
+  },
+  "no_max_leaves": true,
+  "retries": 0,
+  "producer_run": false,
+  "tree_refinement": false,
+  "new_candidate": false,
+  "new_degree_certified": false,
+  "full_record": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C02/n32/checker-report.json",
+    "bytes": 189283,
+    "sha256": "fe8436d5d7e6232d9e235052abf7bd69a2833883a394c16a602ddb1fdd664157"
+  },
+  "launch_record": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C02/n32/launch.json",
+    "bytes": 3854,
+    "sha256": "d6069aa4168091b466d96286e3131f3bf3ce3488bd54274c2e1f93f2e97a1444"
+  },
+  "stdout": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C02/n32/stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C02/n32/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "worker_accounting": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C02/n32/worker-accounting.json",
+    "bytes": 152,
+    "sha256": "46c724a10715cd0d10dfbc95876ab9491df5bb689f8e31b4811a4d4816d3fd6e"
+  },
+  "native_trace": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C02/n32/native-calls.jsonl",
+    "bytes": 120105,
+    "sha256": "7ed5e356b08d996800c48777351989c5875972afe83374bb8117d0c0281032d2"
+  },
+  "scope": "one complete replay of original known n32 candidate; weakened predicates retained; no rescue",
+  "actual_loaded_closure_location": "full_record.build_provenance.loaded_dependency_closure"
+}

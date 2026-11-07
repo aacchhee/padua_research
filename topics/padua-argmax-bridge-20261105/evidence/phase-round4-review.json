@@ -1,0 +1,88 @@
+{
+  "scope": "MEASURED independent bounded failure; stopped at first finding",
+  "rules_sha": "bda45a4c1392bea87de0841b6b23e5c35b2a694b",
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel.cpp",
+      "bytes": 9033,
+      "sha256": "9a976e77d861c291468d6bfa4d2104c6c42ace953781ce1c5ff1a43073505d7d"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/arb_kernel.cpp",
+      "bytes": 5635,
+      "sha256": "236116452dc7aae66e39cbf8800fe847cffe931ac0ce8a9682397313de7c43a6"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check.py",
+      "bytes": 9994,
+      "sha256": "8713026a1b5a872f0e8dd33c311eafef2cf310f42ae2eebb4055ad224b8acfae"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5346,
+      "sha256": "406368f07354f7d0d861eb92aa0bd2fc720ca9fccc86f8ed650d7da0872e8c18"
+    }
+  ],
+  "script": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/review_phase_round4.py",
+    "bytes": 8382,
+    "sha256": "9fccf44268ac910978f7dccb0cde3068c24a3c2a3c6bfa0f82bad569496a1c3a"
+  },
+  "command": "python topics/padua-argmax-bridge-20261105/code/review_phase_round4.py --source-sha 9a976e77d861c291468d6bfa4d2104c6c42ace953781ce1c5ff1a43073505d7d",
+  "compile_command": [
+    "c++",
+    "-std=c++17",
+    "-O3",
+    "-Wall",
+    "-Wextra",
+    "-fPIC",
+    "-shared",
+    "-I/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/runtime/extracted/usr/include",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-round4-review/hybrid_kernel.cpp",
+    "-L/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/runtime/extracted/usr/lib/x86_64-linux-gnu",
+    "-Wl,-rpath,/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/runtime/extracted/usr/lib/x86_64-linux-gnu",
+    "-l:libflint.so.19",
+    "-lgmp",
+    "-o",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-round4-review/libindependent_round4.so"
+  ],
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-round4-review/libindependent_round4.so",
+    "bytes": 56152,
+    "sha256": "3a9844500809c99f42a9a69ec8d0b16f416c1c8483f5ed245a3e6050cce1da96"
+  },
+  "python": "3.12.14",
+  "mpmath": "1.3.0",
+  "mpmath_digits": 120,
+  "tolerance": "1e-100, numerical diagnostics only",
+  "passed": false,
+  "accepted": false,
+  "finding": "phase_ratio returns success with NaN hybrid derivative bounds",
+  "case": {
+    "k": 1,
+    "turn": -2,
+    "lo": 0.125,
+    "hi": 0.375,
+    "sample_index": 0,
+    "quotient_used": true,
+    "output": [
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      "nan",
+      "nan"
+    ],
+    "reference_value": "1.0",
+    "reference_derivative": "0.0"
+  },
+  "completed_ratio_cases": 4,
+  "completed_ratio_points": 20,
+  "jet_cases": 0,
+  "full_cover_run": false,
+  "compiler_child_cpu_seconds": 0.8784959999999999,
+  "diagnostic_process_cpu_seconds": 0.008194387000000004,
+  "source_stable": true
+}

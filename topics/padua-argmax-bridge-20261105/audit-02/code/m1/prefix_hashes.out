@@ -1,0 +1,12 @@
+MATCH theory/E14-assembly320.md prefix=2439 size=12425 got=d9be2ce468d35f13 want=d9be2ce468d35f13
+MATCH theory/E14-assembly320.md prefix=11628 size=12425 got=b348ec55ee8be86a want=b348ec55ee8be86a
+MATCH theory/E14-halfnear320.md prefix=8865 size=9548 got=b77c5f661f51a94c want=b77c5f661f51a94c
+MATCH theory/E14-outer320.md prefix=5565 size=6241 got=17baa09b52687f0f want=17baa09b52687f0f
+MATCH theory/E14-wide-signed-outer.md prefix=14318 size=15112 got=c7aeba3d6080f16c want=c7aeba3d6080f16c
+MATCH theory/E14-annular320.md prefix=8402 size=9198 got=1ddf2e7cdbf688ae want=1ddf2e7cdbf688ae
+MATCH theory/E12-corner256.md prefix=9921 size=10631 got=586c4e07bf683b3a want=586c4e07bf683b3a
+MATCH theory/E13-joint-radius-outer.md prefix=15350 size=16074 got=d78a57c047853c1b want=d78a57c047853c1b
+MATCH independent-checks-E14-global320.md prefix=full size=36528 got=25529c8a5ad54111 want=25529c8a5ad54111
+MATCH independent-checks-E14-global320.md prefix=19661 size=36528 got=2f390ef7c5f75f16 want=2f390ef7c5f75f16
+MATCH independent-checks-E14-wide-signed.md prefix=full size=19156 got=d0c3699f97e34c43 want=d0c3699f97e34c43
+MATCH independent-checks-E12-corner-frontier.md prefix=full size=21214 got=b7436e8f4c5f2d6c want=b7436e8f4c5f2d6c

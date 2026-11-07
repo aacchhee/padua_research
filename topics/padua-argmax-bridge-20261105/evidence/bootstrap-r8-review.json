@@ -1,0 +1,297 @@
+{
+  "format": "bootstrap-r8-independent-controls-v1",
+  "status": "PASS",
+  "full_cover_executed": false,
+  "synthetic_scope": "parser, partition and semantic branch only; no mathematical acceptance",
+  "checks": 105,
+  "check_labels": [
+    "premise read restricted to fixed code",
+    "premise read restricted to fixed code",
+    "receipt accepted False",
+    "receipt accepted 1",
+    "receipt accepted None",
+    "receipt independent_execution False",
+    "receipt independent_execution 1",
+    "receipt independent_execution None",
+    "receipt every_integer_degree_checked False",
+    "receipt every_integer_degree_checked 1",
+    "receipt every_integer_degree_checked None",
+    "receipt all_native_exit_statuses_zero False",
+    "receipt all_native_exit_statuses_zero 1",
+    "receipt all_native_exit_statuses_zero None",
+    "receipt all_new_predicates_passed False",
+    "receipt all_new_predicates_passed 1",
+    "receipt all_new_predicates_passed None",
+    "receipt all_masks_cardinal_counts_and_positive_denominators_verified False",
+    "receipt all_masks_cardinal_counts_and_positive_denominators_verified 1",
+    "receipt all_masks_cardinal_counts_and_positive_denominators_verified None",
+    "receipt degree_first",
+    "receipt degree_last",
+    "receipt degree_count",
+    "receipt source_sha256",
+    "premise read restricted to fixed code",
+    "premise read restricted to fixed code",
+    "receipt raw_execution_manifest_bytes",
+    "premise read restricted to fixed code",
+    "premise read restricted to fixed code",
+    "receipt worst_normalized_energy_upper",
+    "premise read restricted to fixed code",
+    "premise read restricted to fixed code",
+    "receipt worst_normalized_energy_degree",
+    "receipt normalized_threshold",
+    "fixed receipt bytes",
+    "fixed code bytes",
+    "closed signed diamond (2, -1, -1)",
+    "closed signed diamond (2, -1, 1)",
+    "closed signed diamond (2, 1, -1)",
+    "closed signed diamond (2, 1, 1)",
+    "closed signed diamond (3, -1, -1)",
+    "closed signed diamond (3, -1, 1)",
+    "closed signed diamond (3, 1, -1)",
+    "closed signed diamond (3, 1, 1)",
+    "closed signed diamond (32, -1, -1)",
+    "closed signed diamond (32, -1, 1)",
+    "closed signed diamond (32, 1, -1)",
+    "closed signed diamond (32, 1, 1)",
+    "closed signed diamond (127, -1, -1)",
+    "closed signed diamond (127, -1, 1)",
+    "closed signed diamond (127, 1, -1)",
+    "closed signed diamond (127, 1, 1)",
+    "closed signed diamond (128, -1, -1)",
+    "closed signed diamond (128, -1, 1)",
+    "closed signed diamond (128, 1, -1)",
+    "closed signed diamond (128, 1, 1)",
+    "axis boundary 0.5",
+    "axis boundary 0.49999999999999994",
+    "outside/malformed diamond [0.0, 0.5000000000000001, 0.0, 0.0]",
+    "outside/malformed diamond [0.0, 0.25, 0.0, 0.25000000000000006]",
+    "outside/malformed diamond [0.0, 0.3, 0.0, 0.3]",
+    "outside/malformed diamond [1.0, 0.0, 0.0, 0.0]",
+    "outside/malformed diamond [0.0, 0.0, False, 0.0]",
+    "outside/malformed diamond [0.0, nan, 0.0, 0.0]",
+    "degree True",
+    "degree False",
+    "degree 1",
+    "degree 129",
+    "degree 32.0",
+    "degree '32'",
+    "parser b'{\"a\":1,\"a\":2}'",
+    "parser b'{\"a\":NaN}'",
+    "parser b'{\"a\":Infinity}'",
+    "parser b'{\"a\":1e999}'",
+    "parser b'[]'",
+    "synthetic complete bootstrap branch",
+    "strict noncorner equality rejected",
+    "exact subtraction above equality rejected",
+    "old local predicate not enlarged",
+    "certificate gap",
+    "certificate overlap",
+    "certificate duplicate",
+    "certificate missing-root",
+    "certificate unknown-kind",
+    "certificate wrong-mode",
+    "certificate old-schema",
+    "certificate caller-premise",
+    "certificate false-complete",
+    "certificate bool-root",
+    "certificate bad-path",
+    "pending forbids acceptance",
+    "bounded replay forbids acceptance",
+    "bad leaf cap -1",
+    "bad leaf cap True",
+    "bad leaf cap 1.5",
+    "native finite [0.0, 0.0, 0.0, 0.0]",
+    "native finite [0.0, 0.25, 0.0, 0.25]",
+    "native finite [-0.25, 0.0, -0.25, 0.0]",
+    "native finite [-0.25, 0.0, 0.0, 0.25]",
+    "native finite [0.0, 0.25, -0.25, 0.0]",
+    "native finite [0.5, 0.5, 0.0, 0.0]",
+    "n2 origin noncorner strict while corner equality",
+    "real mixed-sign bootstrap box outside old local",
+    "MPFR request preserves S and corner bounds",
+    "MPFR request computes defect without local premise"
+  ],
+  "native_n2": [
+    {
+      "box": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        3.000000000000001,
+        3.000000000000001,
+        0.6666666666666666,
+        2.9999999999999996,
+        3.0000000000000004,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    },
+    {
+      "box": [
+        0.0,
+        0.25,
+        0.0,
+        0.25
+      ],
+      "bounds": [
+        3.1336387200409153,
+        3.133638720196136,
+        0.0,
+        2.9999999999999996,
+        3.0000000000000004,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    },
+    {
+      "box": [
+        -0.25,
+        0.0,
+        -0.25,
+        0.0
+      ],
+      "bounds": [
+        3.1336387200404228,
+        3.133638720195643,
+        0.0,
+        2.9999999999999996,
+        3.0000000000000004,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    },
+    {
+      "box": [
+        -0.25,
+        0.0,
+        0.0,
+        0.25
+      ],
+      "bounds": [
+        3.1336387200408398,
+        3.13363872019606,
+        0.0,
+        2.9999999999999996,
+        3.0000000000000004,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    },
+    {
+      "box": [
+        0.0,
+        0.25,
+        -0.25,
+        0.0
+      ],
+      "bounds": [
+        3.1336387199625317,
+        3.133638720040142,
+        0.0,
+        2.9999999999999996,
+        3.0000000000000004,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    },
+    {
+      "box": [
+        0.5,
+        0.5,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        2.927784463166137,
+        2.927784463166137,
+        0.6760627552392215,
+        2.9999999999999996,
+        3.0000000000000004,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    }
+  ],
+  "producer_calculation_control": {
+    "n": 32,
+    "box": [
+      -0.25,
+      0.0,
+      0.0,
+      0.25
+    ],
+    "off": [
+      12.01904528050516,
+      11.967214606614945,
+      0.0,
+      0.0,
+      13.38980695888861,
+      13.380651263848126
+    ],
+    "on": [
+      12.01904528050516,
+      11.967214606614945,
+      0.31109586590547306,
+      1.0,
+      13.38980695888861,
+      13.380651263848126
+    ],
+    "compile_argv": [
+      "cc",
+      "-O3",
+      "-std=c11",
+      "-shared",
+      "-fPIC",
+      "-I/tmp/r8-independent-mpfr-wi46sfom",
+      "/tmp/r8-independent-mpfr-wi46sfom/n3_outward.c",
+      "/lib/x86_64-linux-gnu/libmpfr.so.6",
+      "-lm",
+      "-o",
+      "/tmp/r8-independent-mpfr-wi46sfom/bounds.so"
+    ],
+    "binary": {
+      "path": "/tmp/r8-independent-mpfr-wi46sfom/bounds.so",
+      "bytes": 37208,
+      "sha256": "13d0060f45c7ca9fb58f52be5cc36da8796763b741857316fcbe4ed824d7c9b8"
+    },
+    "sources": [
+      {
+        "path": "topics/padua-argmax-bridge-20261105/code/n3_outward.c",
+        "bytes": 4830,
+        "sha256": "cfeae9fe2b61e9c7ec2c4d943762ac988e64fa02652ccfe4342430c4ee5f22dd"
+      },
+      {
+        "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_interval.h",
+        "bytes": 4215,
+        "sha256": "6dca513ddbd94264d454872c9f5e753e355d15b49152dc4b19d51cff7635131b"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/N3/runtime/extracted/usr/include/mpfr.h",
+        "bytes": 57588,
+        "sha256": "588c2bd606cba060afb49cd024f9119e996089a341a99d1dc7e0367622335a13"
+      }
+    ]
+  },
+  "source_sha256": {
+    "topics/padua-argmax-bridge-20261105/code/n3_bootstrap_r8.py": "9058deac09eec2ddd7cfae4815fdf79d702e52099de13820e44af4f82db0a12c",
+    "topics/padua-argmax-bridge-20261105/code/phase_checker/r8_independent_controls.py": "397a1fbe740d2bccaf9626f89832cd95e59bf0a8dc3ab0dfc40674920a64763a",
+    "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8.py": "427c93ad6f95ad6b12475db0a810b1ed3a13ee9ca40cf5211d5c9295d3a7d27c",
+    "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc",
+    "topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb",
+    "topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v2.cpp": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+  },
+  "own_cpu_seconds": 0.9737627349999999,
+  "children_cpu_seconds": 1.565174,
+  "kernel_source_sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2",
+  "focused_n2_type_response": {
+    "status": "PASS",
+    "checks": 7,
+    "own_cpu_seconds": 0.0008142220000000033,
+    "checker_sha256": "3c71ada8e49829cb897ee1c064fcdc70d08c846afcb1fb067c6c84673e205bb9",
+    "controls_sha256": "13cdf5da05e1ce31416dc5685b0be1c8c3565feb2e3606675607be7c1fc56944",
+    "scope": "Six exact-type rejection cases plus fixed published premise; unchanged arithmetic not rerun"
+  }
+}

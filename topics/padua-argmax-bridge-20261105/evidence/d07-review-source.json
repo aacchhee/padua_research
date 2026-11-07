@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "controller_sha256": "af8d357badba85786fec088c735cc988f0950587d112e2e63a8d5b39cc14a9a5",
+  "helper_sha256": "d868850b798e9eda1ba877ac07803a9c842d077e65dd5dd28499b99f8981bb5f",
+  "checks": [
+    "unsupported platform rejected before loading libc",
+    "subreaper set failure rejected",
+    "subreaper verification failure rejected",
+    "reap scenario complete=True count=0",
+    "reap scenario complete=True count=1",
+    "reap scenario complete=False count=0",
+    "case ledger mismatch rejected without mutation",
+    "actual call branch durably commits both outputs before completed-cost stop",
+    "failed combined call remains uncomputed with first exception"
+  ],
+  "total_self_and_children_CPU_seconds": 0.031124,
+  "scope": "Pure Python negative/controller-flow checks; stubs only, no native/library/build/subprocess/numerical execution"
+}

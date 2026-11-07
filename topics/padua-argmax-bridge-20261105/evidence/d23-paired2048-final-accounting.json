@@ -1,0 +1,17 @@
+{
+  "result": "PAIRED_BACKEND_TRIAL_ACCEPTED_PENDING_INDEPENDENT_REVIEW",
+  "first_failure": null,
+  "total_CPU_through_summary": 8.446031,
+  "complete": true,
+  "final_self_limit": {
+    "waited_child_CPU": 7.553552,
+    "self_CPU_at_tightening": 0.8901839999999999,
+    "absolute_self_CPU_hard": 51,
+    "integer_enforcement_reserve_CPU": 1,
+    "additional_reaped": [],
+    "no_live_children": true,
+    "scope": "No subsequent children; waited-child CPU fixed. Absolute self limit bounds final serialization/write/return."
+  },
+  "hard_aggregate_cap": 60,
+  "scope": "Inclusive sample after persisted provisional summary/output and freeze recheck, before final-account serialization and atomic last write. Final serialization/write/return bounded by tightened absolute self limit; acceptance additionally requires process return0."
+}

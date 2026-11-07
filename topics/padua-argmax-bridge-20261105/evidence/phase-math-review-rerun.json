@@ -1,0 +1,135 @@
+{
+  "scope": "MEASURED independent bounded rerun; no complete cover or degree claim",
+  "reviewer": "distinct Codex Astra high assignment; runtime metadata not independently exposed",
+  "rules_input": "3dda890275a7599caa707b0fb8c0b6e6f6a80643",
+  "command": "python topics/padua-argmax-bridge-20261105/code/review_phase_math.py",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward.c",
+      "bytes": 4830,
+      "sha256": "cfeae9fe2b61e9c7ec2c4d943762ac988e64fa02652ccfe4342430c4ee5f22dd"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_interval.h",
+      "bytes": 4215,
+      "sha256": "6dca513ddbd94264d454872c9f5e753e355d15b49152dc4b19d51cff7635131b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_run.py",
+      "bytes": 4919,
+      "sha256": "9110c663e749afb86240250a3cc77f7b824df556804c11481ac65c1239370e87"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/arb_kernel.cpp",
+      "bytes": 5635,
+      "sha256": "236116452dc7aae66e39cbf8800fe847cffe931ac0ce8a9682397313de7c43a6"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/check.py",
+      "bytes": 6089,
+      "sha256": "d38f268e817518dd02ff00a102f9c0c2a0afa05598a4abb586d5ea602aa85bac"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/controls.py",
+      "bytes": 5452,
+      "sha256": "564ab1cacd0606d3fd3e7f71eec2621c8f1eb7c6a78b003acbc4676de89568ff"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/build.sh",
+      "bytes": 475,
+      "sha256": "d406128df4c836f49ca65531fb43ab17f8f575e22abfd3c3a11d88e3349fd7b4"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/setup.py",
+      "bytes": 1131,
+      "sha256": "ff6babcf65f90c42d35353bd306f89d96ac293c6783508b03bef175ab5a60391"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/phase-checker-reduction.md",
+      "bytes": 8691,
+      "sha256": "7ab015f642f6ae60112c093ce479a9101ec9a947763db65c0c24bcdde4c2a877"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N3-enclosure-spec.md",
+      "bytes": 2982,
+      "sha256": "afa3fedbeea8e7dc1994280c9b13be0391e2ad18613dbddd3a9cf0cd3b5c932f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n5_central_edge_defect.py",
+      "bytes": 7697,
+      "sha256": "c0c6280c88a15c265bd8a20d0bf78d9048203ae37f385abf3ca0b558c6ead6ac"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N5-central-edge-defect.md",
+      "bytes": 10097,
+      "sha256": "51ed4849ea1ff68bdd607596f8de1f893613b3bf644380dde4e00024591a4870"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N1-row-model.md",
+      "bytes": 8673,
+      "sha256": "d087ad8374c9e8274c5d228a47a7f796a8c64d412255a7362c0ea68863c14250"
+    }
+  ],
+  "review_script": {
+    "path": "topics/padua-argmax-bridge-20261105/code/review_phase_math.py",
+    "bytes": 10029,
+    "sha256": "257d7e1adf4432c31e13181de4685d02bc7fd2156bf23e6d5191791d2755e3cd"
+  },
+  "binaries": [
+    {
+      "path": "local-output/argmax-bridge-20261105/phase-math-review/libphase_checker.so",
+      "bytes": 38224,
+      "sha256": "931caa0cfdffdb17b459b542be18b939f7b7a41213d4fb1d4207b7e7254fa8d6"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/phase-math-review/n3_outward.so",
+      "bytes": 37208,
+      "sha256": "13d0060f45c7ca9fb58f52be5cc36da8796763b741857316fcbe4ed824d7c9b8"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "local-output/argmax-bridge-20261105/phase-checker/runtime/extracted/usr/lib/x86_64-linux-gnu/libflint.so.19.0.0",
+      "bytes": 11130872,
+      "sha256": "755316507aa3e311d42b8ed441fc4b0e3321a135692962980e2504b22fe3aaa6"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libmpfr.so.6.2.2",
+      "bytes": 794992,
+      "sha256": "4e3ccf5b442fc91054b0153140fe62939009f98ca1367f45de62376d5b18d28c"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0",
+      "bytes": 566080,
+      "sha256": "d15e1585c6c267296459570c8ac217ca9123044bcd4e896d2f686b32333445d2"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/runtime/extracted/usr/include/mpfr.h",
+      "bytes": 57588,
+      "sha256": "588c2bd606cba060afb49cd024f9119e996089a341a99d1dc7e0367622335a13"
+    }
+  ],
+  "compiler": "c++ (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14",
+  "mpmath": "1.3.0",
+  "mpmath_digits": 90,
+  "bulk": {
+    "path": "local-output/argmax-bridge-20261105/phase-math-review/independent-rerun.json",
+    "bytes": 16321,
+    "sha256": "e4534d0d3475f15d383dbf63afad5e20a8c64636c5f4f233f3ad4cd490b97415"
+  },
+  "real_samples_passed": 3,
+  "corruption_controls_rejected": 10,
+  "synthetic_logic_controls": 3,
+  "producer_jet_point_checks": 54,
+  "n5_rerun_cases": 6,
+  "all_pending_guarded": true,
+  "full_cover_run": false,
+  "observed_arithmetic_environment": {
+    "fegetround": 0,
+    "binary64_mantissa_bits": 53,
+    "radix": 2,
+    "sizeof_double": 8,
+    "note": "separate read-only environment probe; no process rounding-mode modification"
+  }
+}

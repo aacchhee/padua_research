@@ -1,0 +1,86 @@
+{
+  "status": "MATCH_FINAL_AUTHOR_FREEZE_AND_UNCHANGED_SCALAR_INPUTS",
+  "rules_sha": "dca0be979944bb0ad5eec818078906b59c796c2a",
+  "files": [
+    {
+      "path": "theory/D16-phase-allowance.md",
+      "bytes": 3649,
+      "sha256": "35ab6e0b75be12eda7ba129225f7f04a5f9ece78e46fd009877d3139ceaa91b6"
+    },
+    {
+      "path": "theory/D16-near-comparison.md",
+      "bytes": 5077,
+      "sha256": "54470d1390ae54aacc742fec79fb09b3c2148d8f0f30e72f758659998d805ca2"
+    },
+    {
+      "path": "theory/D16-far-comparison.md",
+      "bytes": 5405,
+      "sha256": "d070f80925ceec5a5de31438bf869902670ff708d1fe9fff342cf13a4682ab36"
+    },
+    {
+      "path": "theory/D16-global-comparison.md",
+      "bytes": 4137,
+      "sha256": "8969b8ab8623bb6c17be8633f38ee59751498870dcd5976354f2d8f8820fa306"
+    },
+    {
+      "path": "ideas/D16-phase-budget.md",
+      "bytes": 4354,
+      "sha256": "6e9e027435f2ba3c01ff4f937864cd8d16d1fc3378dddfd2d47181c085dd2803"
+    },
+    {
+      "path": "attempts/D16-phase-budget.md",
+      "bytes": 4868,
+      "sha256": "95504fe567be11cf5384c75b596395657b1d6598c80bf43e78c689a1d59cf0a0"
+    },
+    {
+      "path": "code/post_audit_D16_budget_review/check.py",
+      "bytes": 5587,
+      "sha256": "523d9402dabf986ebcb2af4f3e98358c6dae79e7168457ccc56f7767dbb4ec5a"
+    },
+    {
+      "path": "code/post_audit_D16_budget_review/SPEC.md",
+      "bytes": 2006,
+      "sha256": "4e91417c563a56e1b88dfb9619e6a95fd591ae6584d47562f0f59cd7f8b3af05"
+    },
+    {
+      "path": "code/post_audit_D08_review/check.py",
+      "bytes": 8577,
+      "sha256": "37e58bc880259c27cd2282dab48231f11822452d6fd2db876c846d1b9a008485"
+    },
+    {
+      "path": "code/post_audit_D16_budget/evaluate.py",
+      "bytes": 3634,
+      "sha256": "777cf1d66b40393dc043a72e5ec886e9b557072a298f1e5f27a89c46d210348b"
+    },
+    {
+      "path": "code/post_audit_D16_budget/SPEC.md",
+      "bytes": 1723,
+      "sha256": "1a68fdc28cf1acf130aaff335da0bb7c4ce4ea40db5a8d74e52673e16d8fe903"
+    },
+    {
+      "path": "code/post_audit_D16_budget/budget-10000.json",
+      "bytes": 5293,
+      "sha256": "84c64165a325d8df8f4b413a388717feb4a5316730d038aade2ac1696b9915bc"
+    },
+    {
+      "path": "code/post_audit_D06_model_budget/evaluate.py",
+      "bytes": 6126,
+      "sha256": "9ab068b7928d9976db4b5b26cddc902eb063e592f296dcfb143e999869301413"
+    },
+    {
+      "path": "evidence/post_audit_D16_budget_review/scalars.json",
+      "bytes": 7553,
+      "sha256": "082823fc5d2656c4397c752b96bb78046b65fd75655107b9fd504a5f87e6d142"
+    },
+    {
+      "path": "code/post_audit_D16_budget_review/freeze.json",
+      "bytes": 1148,
+      "sha256": "756f52f7bf7830652f13ceb785408df95569771ad462d35b9b22ef28f238f0d4"
+    },
+    {
+      "path": "../../state/IDEAS.md",
+      "bytes": 300469,
+      "sha256": "08e6886269a7bb76eaeb60b57f37935f5a390f37ae1df5d0167cdaac2ed7093a"
+    }
+  ]
+}

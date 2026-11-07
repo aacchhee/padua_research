@@ -1,0 +1,117 @@
+{
+  "status": "UNEXECUTED first source freeze; distinct source audit, publication and root release pending",
+  "preparation_input_head": "09cc533678a22b38f40b70be95426ebbe81faa93",
+  "requested_developer": "Codex gpt-6.1-sol medium; actual serving metadata independently unexposed",
+  "execution_role": "Distinct root-assigned Codex gpt-6-astra high result reviewer launches ONCE as independent fresh D21 same6912 replay using D23 tails; no new root primary or third identical replay",
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D28_static/controller.py --run-once",
+  "code_data": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D28_static/baseline.py",
+      "bytes": 4122,
+      "sha256": "10d08c99f1e7353b9022de71a93ccf9f635a4f16ebfc91b2c90808dd24013e06"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D28_static/build.py",
+      "bytes": 5566,
+      "sha256": "4fc2a2e53268548ef6dde620f43e0be2ef923d731ca0d279e23cf0511be9e5ea"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D28_static/checker.py",
+      "bytes": 3784,
+      "sha256": "03bb514ca4abd90d2f4af91e70e6f353e90366d6437901aae5a55eecd9e5a3f4"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D28_static/controller.py",
+      "bytes": 14107,
+      "sha256": "1a47ff85555d8a6210374007f51dc20bd1a9d9201f174b9c657e12f98d2bd6b4"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D28_static/controls.py",
+      "bytes": 2782,
+      "sha256": "cb8ac5ae6a39591b2962a002de86e1827d6ed720c196552087e0c5f53dc9234b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D28_static/runtime.py",
+      "bytes": 5571,
+      "sha256": "ea5eaffa298cf75b88f827487d6bee84f6e7eae2f9f703d06718ad97d3404d77"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/partial.cpp",
+      "bytes": 7685,
+      "sha256": "eacfe084dac836560489244f7a3d579b476973790ac9d61962e565acf1c87461"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D09_threepoint/controller.py",
+      "bytes": 16019,
+      "sha256": "5642ad6fdf2c28165fc8d17ce8e62330ed695e7b64bb1242c13312d53d47fd73"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/setup.py",
+      "bytes": 1131,
+      "sha256": "ff6babcf65f90c42d35353bd306f89d96ac293c6783508b03bef175ab5a60391"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/d19-pruned-tree.json",
+      "bytes": 113,
+      "sha256": "5ff335b5e8c3a813b934f38b0938cf80bf29f546749651cd749e5ffc41c753d1"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/d21-static6912.json",
+      "bytes": 9789,
+      "sha256": "00dd353190c31f5df9687cdfd3b2769b9d7fd79cbfd22ccc2ce15dfa488c6411"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/d21-static6912-final-accounting.json",
+      "bytes": 833,
+      "sha256": "1168837b34a8ff4449e1a4bf6adc6c85bb03bb94491c8e66a7b9096ae79643ae"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/d21-static6912-primary-observation.json",
+      "bytes": 710,
+      "sha256": "57a8bb899f3c4c9bd2c0714f74fb5d610d43dc2c04661803895167356d7cdd31"
+    }
+  ],
+  "contract": {
+    "degree": 6912,
+    "tree": "unchanged113B D19 supplied midpoint geometry; old n2048 field is provenance only",
+    "native": "original c07_point from immutable accepted D23 point/partial, J2 K8 LH4 WD16 P160 CP640 MP640; fullS only",
+    "fresh_S_calls": 41,
+    "old_values_enter_new_norm_origin_or_leaf_proof": false,
+    "norm": "own fresh ceil(max_B V_B/(1-theta_B)) using ALL required fresh corners",
+    "physical_leaf_predicates": "unchanged accepted D21 conservative exact FAR/NEAR/SPLIT; actual-near defect1/16; analytic D17corner1/8 for n>=4096",
+    "baseline": "pinned D21 all41 rows plus accepted finalaccount and honest root direct actual EXIT0 observation",
+    "additional_finite_guards": "each old/new exact overlap and identical6counters; new outward endpoint width<=1/50000; newupper-D21lower<=1/50000; no uniform tightness inference",
+    "diagnostic_radius": "mag_get_d retained raw; no nearest-radius acceptance predicate",
+    "actual_lambda_calls": 0,
+    "FLOAT_calls": 0,
+    "pure_controls_CPU": 2,
+    "checker_CPU": 180,
+    "whole_inclusive_CPU": 200,
+    "aggregate_safety_CPU": 190,
+    "completed_call_stop_CPU": 15,
+    "unfinished_call_stop_CPU": 20,
+    "supervisor_poll_seconds": 0.25,
+    "controls_wall_seconds": 15,
+    "checker_wall_seconds": 1800,
+    "whole_wall_seconds": 1900,
+    "final_absolute_limit": "after ECHILD fixes waited-child CPU c, no more children; selfHard<=floor(200-c)-1 giving c+selfHard<=199",
+    "retry_or_source_precision_tail_order_phase_case_tree_degree_cap_rescue": false,
+    "acceptance": "all41 fresh rows/all exact leaf predicates/comparisons AND final-account accepted complete/no-failure AND observed actual independent invocation EXIT0; result reviewer records execution identity",
+    "accepted_final_account_result": "INDEPENDENT_CHEAP_STATIC_REPLAY_ACCEPTED_PENDING_RESULT_REVIEW",
+    "essential_receipt_bytes_strictly_less_than": 16384,
+    "raw_outputs": "off Git; AC-selected cold archive pending"
+  },
+  "preparation_checks": [
+    "Python AST syntax only",
+    "checker byteidentical to D21 except title",
+    "D23point byteidentical C11 and D23partial sole declaration reduction",
+    "builder diff inspected: only output/source/include selector and label",
+    "metadata-only prior receipt/schema/identity inspection"
+  ],
+  "control_native_compiler_or_scientific_execution": false
+}

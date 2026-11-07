@@ -1,0 +1,30 @@
+# C03 independent Arb tightness prototype
+
+Rules4b728b0. Developer Codex requested gpt-6.1-sol medium; serving metadata unexposed. Parent authorizes new `code/cheap_C03/` backend plus bounded controls<=120CPU including build; oldC01/C02 files remain unchanged. C03 math source8634fc469f18a9555032c140b9969a56a74c53dea388cadd54c29ed2b3e83a01 is a prospective author proof; distinct review is still an adoption requirement. No new model, harmonic fallback, candidate tree, full replay or degree certificate.
+
+Three prospective variants in one frozen source:0monotone endpoint range plus one-sided derivative signs;1adds global-C2 centered Taylor;2adds optionally smaller ODE curvature on sine-separated intervals. They all retain C01 quotient/global/pole bounds and intersect optional candidates even when quotient succeeds. Point evaluation is nonrecursive and calls preserved base arithmetic only. Actual extracted folded dyadic endpoints are checked against1.5 and k*u<=4; guard failure leaves previous valid bounds. Exact midpoint is taken from the Arb midpoint ARF; outward T=Z-c and H bound charge center/radius correctly. ODE curvature uses J=Z because the exact midpoint is in its ball. Nonfinite optional candidates ignored jointly; finite contradictions error. k1 validates then returns1,0. New stronger C02 defect floors are not adopted.
+
+Per ratio: at most one base interval jet, two base endpoint point jets, one base midpoint jet and one curvature sin/cos call: at most9 sin/cos calls. Each base fixed J32 chart is degree independent. Per full box six n(n+1) primitives with four ratio calls+one correction gives at most222n(n+1) sin/cos calls in variant2; variants0/1 are no larger. Endpoint/Taylor refinements have fixed polynomial/algebra costs; no whole-cover bit-time or leaf-count claim.
+
+Preregister selected six saved n32 boxes from actual cheap-C02 full FAIL receipt, not just earlier near pilots: firstfar root0/path0101; largest distinct exact far excess; largest exact corner-orbit excess; deepest negative root0 failure; deepest positive root3 failure; greatest exact near S−defect demand from full replay. Deduplicate identities then choose the largest distinct far failure to fill six when the first far is also largest. Pin C02 full receipt, old accepted v3 receipt and candidate. Actual acceptance comparisons use Fraction and unchanged per-kind requirements on only these six already saved inputs; no full checking function or tree traversal.
+
+Units exercise k1 invalid/nonfinite, exact/crossed poles, both signs/turn parity, numerator zero and negative lobe, k512/513, literal guard rejection and optional staging, sampled independent high-precision finite-harmonic values/derivatives, and old/new interval widths. Then evaluate all three variants on the same six boxes, freeze first variant0/1/2 failures and compare with old v3 and C02full outputs. Maximum18box calls plus units, worker cap100CPU and stop before another box at80CPU; build and actual closure capture count within120CPU. Full source/header/compiler/runtime/loaded/source hashes rechecked. MEASURED status only for performance/recovery; distinct source/math review and explicit parent release precede any whole replay.
+
+## Frozen bounded outcome — MEASURED
+
+Source `9e357b25efde553211563bb69147644c67b7752bc703bf05ac502141c82e0861`, control `1162967389e3313e947750e3f3769c8d1a32c4a9da867a9bda9aa19e60d97cd9`, builder `acd2d0c812c2008fa65edce2035867acc4799c625e71888280f0c3c363108a38` frozen before execution. Command `python topics/padua-argmax-bridge-20261105/code/cheap_C03/controls.py` finishes statusMEASURED/exit0,581assertions,76ratio cases and18box calls, own4.651358+child1.440603CPU, wall6.097732. All three variants pass all six selected per-kind strict comparisons. First outcome preserved; no source tuning or failed run occurred.
+
+| saved root/path | kind | C02 S upper | endpoint-only S | globalTaylor S | ODETaylor S |
+|---|---|---:|---:|---:|---:|
+|0/0101|far|11.4677984112|10.5276233966|10.4854246886|10.4531023857|
+|1/0000|far|11.4677983954|10.5276233965|10.4854246885|10.4531023279|
+|2/0100010|corner-orbit|11.3177231833|10.9690082691|10.6033254837|10.5293441641|
+|0/11111100111|far|11.0075500517|10.9762280886|10.9385215810|10.9321222780|
+|3/00000010110|far|11.0143250229|10.9709565700|10.9225140674|10.9159955149|
+|3/000000000|maximum exclusion|11.3734551380|11.3321006254|11.2413577000|11.2226584677|
+
+Lc lower10.993594541100443 in every case. The first five endpoint-only cases already have S<Lc, so lazy collection returns C_upper=S_upper and zero defect; their corresponding far/orbit comparisons pass. The near case needs its defect: endpoint-only defect.4008453437, globalTaylor.4028279764, ODETaylor.4060881452 all give strict S−defect<Lc. True-corner premise/geometry remains external and unchanged. No full checker acceptance is inferred.
+
+Endpoint-only box CPU ranged.091849–.135823, versus ODETaylor.215819–.279845 on the same six inputs. These are selected-box timings, not whole-cover speedups. Endpoint-only is sufficient and faster on these cases; all remaining leaves remain untested and may require a stronger variant. Mode2 has smaller valid ODE curvature caps at roughly24618–25138 of25344 outer ratio calls per box; observed base calls and sin/cos counts obey the prospective fixed-operation caps. All source/input/header/toolchain/runtime and actual loaded mappings pass post-run identity checks; preprocessed TU and binary were additionally rechecked while collecting essential evidence.
+
+`evidence/c03-tight-bounded.json` holds a single compact essential summary under16KiB, with all six input identities/old/new variant bounds, counts, actual CPU, closure counts and full-local-receipt hash. Full ratio records, complete source/build/runtime closure and snapshots remain ignored local undercheap-C03. Archive transfer pending. OldC01/C02 sources/receipts unchanged. Distinct mathematical/source review and parent release remain necessary before any complete364-leaf replay.

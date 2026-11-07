@@ -1,0 +1,170 @@
+{
+  "schema": "argmax-bridge-allocation-scan-v1",
+  "date": "2026-11-05",
+  "snapshots": {
+    "main": {
+      "sha": "b4d292eea5eed373002506d5e16a3761bd7ae10e",
+      "files": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "PR24": {
+      "sha": "05bbe0669c76575934d19d868b7e9839fc307cf7",
+      "files": [
+        0,
+        1,
+        2,
+        4,
+        14,
+        15,
+        6,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19
+      ]
+    }
+  },
+  "blobs": [
+    {
+      "path": "topics/charter-unisolvence-20261031/ALLOCATIONS.md",
+      "sha256": "9187ebf53048120dda3cfb2a67c65500540cf2b828ac9d306e2b4e652776617c",
+      "bytes": 2271
+    },
+    {
+      "path": "topics/nn-mop-iep-20261103/ALLOCATIONS.md",
+      "sha256": "899ff280fe38cf4e4cdb1a8c53905cddf2d09f3b95462286392389db71a60d33",
+      "bytes": 3072
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/ALLOCATIONS.md",
+      "sha256": "8395a86ac4260c5e3c6052244eb0ef3188ae2060199abc936bb703e33346fa76",
+      "bytes": 4177
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/ALLOCATIONS.md",
+      "sha256": "8d07b47ba17ee6152e0f85f8b658478c24cb6e804d3e229d3489947dfcbf4fb2",
+      "bytes": 3955
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/ALLOCATIONS.md",
+      "sha256": "25a84c861561cf383453aa784c57fda97e9f53139398fe4d5b8552005e5ccc8c",
+      "bytes": 3246
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha256": "1bd4b4c73f72825869a09380f6218440ea7d39dec899a0ea25218e3304f40b2d",
+      "bytes": 40577
+    },
+    {
+      "path": "topics/padua-lebesgue-followups-20261103/ALLOCATIONS.md",
+      "sha256": "6467929d5b06a9ef0663e16594d8ea4fe297e64f21fa34b9b128d3412f384759",
+      "bytes": 2906
+    },
+    {
+      "path": "topics/padua-literature-20261103/ALLOCATIONS.md",
+      "sha256": "6b87960264c0c3adf350547236e52ba4ddc31babfd949719b4cc46ff1c0fdeb8",
+      "bytes": 2051
+    },
+    {
+      "path": "topics/padua-mz-2d-frontier-20261105/ALLOCATIONS.md",
+      "sha256": "6bab02444f5371fe1e7771aa1f951c6ba6646e9bf438dd3ecb7083c282eaf215",
+      "bytes": 2755
+    },
+    {
+      "path": "topics/padua-mz-cleanup-20261105/ALLOCATIONS.md",
+      "sha256": "1ee2a3a28d33d113ab84e37fb5e1db04b02db40347ab94e6553bf089c107cbd3",
+      "bytes": 2452
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "sha256": "a1536bc32f5609340fdccdda5e3d8893abe34d24d9bff6832156aadddb134bb5",
+      "bytes": 215745
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "948c30b35cdb3ffacefe398acfb35439fc7e69f8be33fd94bc605b052b8d03c6",
+      "bytes": 240693
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha256": "fc9d8dbc9a334979ed1e9d7ae26c85a0af330e718cead76a8597374304d0a924",
+      "bytes": 321934
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "sha256": "f447d05a7f9895169c59a028efe387918d1a90258b34e3bc7e661dab1ff826d9",
+      "bytes": 350084
+    },
+    {
+      "path": "topics/padua-batch-20261031/ALLOCATIONS.md",
+      "sha256": "21605fd15ddbf73b2f3e846a1bb331ff35f09764db7066fc12cd882274252435",
+      "bytes": 38015
+    },
+    {
+      "path": "topics/padua-lanczos-frontier-20261105/ALLOCATIONS.md",
+      "sha256": "964821f8d27a680512320a1798ae77ae37d8dd8dc684f3eab7f7f49e0cf7a85a",
+      "bytes": 1951
+    },
+    {
+      "path": "PROOF_STATUS.md",
+      "sha256": "6fce0bd7872234e94bd1e5c6052bf536f86d128923b17e00d94573dc02418cf5",
+      "bytes": 207082
+    },
+    {
+      "path": "state/IDEAS.md",
+      "sha256": "4c11973629ad246aa89d24beec2cc25af64dcbfe542c899fd90673266449af36",
+      "bytes": 233261
+    },
+    {
+      "path": "literature/INDEX.md",
+      "sha256": "81ddad033717177f2703368dc553b6a89027123802051ff9edf90b747159277c",
+      "bytes": 279755
+    },
+    {
+      "path": "ID_CROSSWALK.md",
+      "sha256": "5617e5a93d393dc4b5a39d87d324fb704a364215ea28fcaa5cce8ec90973cf5b",
+      "bytes": 340895
+    }
+  ],
+  "registry_mentions_max": {
+    "PD-T": 381,
+    "PD-N": 133,
+    "IDEA": 471,
+    "LIT": 568
+  },
+  "reviewed_reservation_max": {
+    "PD-T": 391,
+    "PD-N": 145,
+    "IDEA": 489,
+    "LIT": 597
+  },
+  "pr_population": {
+    "open": [
+      24
+    ],
+    "closed_merged": 24,
+    "closed_unmerged": []
+  },
+  "qualifications": [
+    "Complete ledger and four-registry byte inventory, including permanent unused gaps.",
+    "Foreign BTTB literature aliases excluded with inherited context-reviewed list.",
+    "Ledger endpoint review: main includes PR25 T375/N137/IDEA465/LIT597 and PR26 T391/N145/IDEA489; PR24 T363/N131/IDEA453/LIT593.",
+    "No scientific final ID is assigned."
+  ]
+}

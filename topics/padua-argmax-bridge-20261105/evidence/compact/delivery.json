@@ -1,0 +1,44 @@
+{
+  "source_commit": "996fedcad4ba79a28e45a3fe3678adc12f1e5358",
+  "code_candidate_sha256": "aea62883f826df05504a62ba084e0d7becb7bc5df35e4ceeef5f1eaf130c1ee6",
+  "artifact": {
+    "path": "local-output/argmax-bridge-20261105/compact-release-aea62883/padua30.zip",
+    "bytes": 25111335,
+    "sha256": "aac08e5f25bd27b2710de22039efd229b4ee67d8c1e3ffef9456af200e1f74d2"
+  },
+  "manifest": {
+    "bytes": 54003,
+    "sha256": "5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16"
+  },
+  "builder": {
+    "invocations": 1,
+    "exit": 0,
+    "session": 54269,
+    "completion": "7bcff1",
+    "tree_plus_zip_bytes": 74922313
+  },
+  "independent_actual_archive_review": {
+    "exit": 0,
+    "completion": "da53cd",
+    "manifest_entries": 250,
+    "source_paths": 38,
+    "ops_pins": 24,
+    "scientific_rows": 13,
+    "official_packages": 6,
+    "active_arithmetic_aliases": 9,
+    "zip_entries": 257
+  },
+  "fixture": "evidence/compact/fixture-summary.json",
+  "profile": {
+    "workers": 30,
+    "RAM_bytes": 128000000000,
+    "degree_pairs": 280,
+    "known": 7,
+    "residual": 273,
+    "sample_size": 2,
+    "sample_scope": "completed residual degrees selected after server validation; persisted seed/population"
+  },
+  "retention": "unsampled histories server-local; AC permits not all certificates in cold storage; exact generation documented",
+  "actual_new_remote_run": "UNEXECUTED here",
+  "report": "independent-checks-compact-pack.md"
+}

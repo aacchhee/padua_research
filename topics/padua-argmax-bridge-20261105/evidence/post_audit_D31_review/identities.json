@@ -1,0 +1,66 @@
+{
+  "N": 2048,
+  "checked_before_scalar_arithmetic": true,
+  "cpu_cap_seconds": 10,
+  "inputs": {
+    "code/post_audit_D08_review/check.py": {
+      "bytes": 8577,
+      "sha256": "37e58bc880259c27cd2282dab48231f11822452d6fd2db876c846d1b9a008485"
+    },
+    "code/post_audit_D31_near/SPEC.md": {
+      "bytes": 2702,
+      "sha256": "76c7ff663364aaf1c0e224b130ff3a90809cf2035d39dff31fb29a4bd56705ed"
+    },
+    "code/post_audit_D31_near/budget-2048.json": {
+      "bytes": 5518,
+      "sha256": "73bf39ba6eec2e3cf7a5b66fdf29329408814823fdf61343e2037e59a075c2d8"
+    },
+    "code/post_audit_D31_near/evaluate.py": {
+      "bytes": 5151,
+      "sha256": "a22506a7b1c4fc389aa8eb228432fdf06cdd3d2614d96d6a51786c8a626f3f23"
+    },
+    "code/post_audit_D31_review/SPEC.md": {
+      "bytes": 3309,
+      "sha256": "eff6782b7f459d524c3a9e6b7871b47c030f2e1bae02742aeb06c0ba3f3d2dee"
+    },
+    "code/post_audit_D31_review/check.py": {
+      "bytes": 9021,
+      "sha256": "aaebd5d62ec31f31510e51f2b4e624e5194b039ecf5ab4463451dcf0af1c5048"
+    }
+  },
+  "interval_count": 31,
+  "interval_keys": [
+    "Bx",
+    "By",
+    "Cnear",
+    "D04",
+    "E0",
+    "G0",
+    "H",
+    "Knear",
+    "Kout",
+    "Kstar",
+    "L",
+    "T",
+    "V",
+    "alpha_Psi",
+    "alpha_discriminant",
+    "alpha_fractional",
+    "alpha_linear",
+    "alpha_z",
+    "b",
+    "beta_Psi",
+    "beta_discriminant",
+    "beta_fractional",
+    "beta_linear",
+    "beta_z",
+    "hr",
+    "mesh",
+    "near_gate",
+    "qx",
+    "qy",
+    "target_budget",
+    "total_near_charge"
+  ],
+  "prerelease_report_sha256": "51b572c3ae02adc40efc1acea745848daaa98fcb2583e78ad6e596b1b3ae3ff3"
+}

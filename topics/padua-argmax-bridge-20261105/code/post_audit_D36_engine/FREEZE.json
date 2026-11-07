@@ -1,0 +1,139 @@
+{
+  "status": "UNEXECUTED first D36 source freeze; distinct source/domain review, publication and root release pending",
+  "preparation_input_head": "8be81c3f0d065698889fa4bf821da72b3fe7e7b3",
+  "requested_developer": "Codex gpt-6.1-sol medium; actual serving metadata independently unexposed",
+  "only_proposed_first_numeric_command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D36_engine/driver1023.py --run-once",
+  "fixed_pilot": {
+    "n": 1023,
+    "mode": "produce",
+    "output": "local-output/argmax-bridge-20261105/post-audit-D36/pilot1023",
+    "rationale": "largest actual-corner branch, selected before observation; one case only, no scan/retry"
+  },
+  "code_data": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D36_engine/build.py",
+      "bytes": 5688,
+      "sha256": "8d6262377a0bb162510b55e324a6e653bcc2061e94a91c3644b3aef99c0805d6"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D36_engine/checker.py",
+      "bytes": 13561,
+      "sha256": "4cac8ee8f5e4924d2b9ea48fbfd07baf4e3ea0bf8809112c93623150cc4af7e3"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D36_engine/controls.py",
+      "bytes": 2801,
+      "sha256": "7063f8cd4ce7bfda9a3d10b96d8659402cf7adac62a430c7eafd626fa1406bc4"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D36_engine/driver1023.py",
+      "bytes": 389,
+      "sha256": "74db4ea8d87c35e1178dcd16bf66eb60ad498b8a5287649d26eac4756b7db32c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D36_engine/engine.py",
+      "bytes": 19042,
+      "sha256": "2ff22f13a6b16d2a8ea15cb5ce70f3e2cc48ec145c0ca3affcb2aebc3cc0cf53"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D36_engine/producer.py",
+      "bytes": 1626,
+      "sha256": "d65f25c7ba3234d28d92b3d8dc4dd16cf0aa964d8075f0634b59e3529ced6344"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D36_engine/runtime.py",
+      "bytes": 6561,
+      "sha256": "3a468fb1f8b2cbed26c41cd79281ed7dce2efae04c5c71f7d7a50beb7e598072"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/partial.cpp",
+      "bytes": 7685,
+      "sha256": "eacfe084dac836560489244f7a3d579b476973790ac9d61962e565acf1c87461"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/point.cpp",
+      "bytes": 9698,
+      "sha256": "03dc79bbbc7563ba9066137c0a52467624c810a758f865f9931511c82985ff6f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/partial.cpp",
+      "bytes": 7688,
+      "sha256": "bde1ce4850849dd402acc91eb3cee7d40883bbd51d5f7cff13334abc0f4ee23c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D09_threepoint/controller.py",
+      "bytes": 16019,
+      "sha256": "5642ad6fdf2c28165fc8d17ce8e62330ed695e7b64bb1242c13312d53d47fd73"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/setup.py",
+      "bytes": 1131,
+      "sha256": "ff6babcf65f90c42d35353bd306f89d96ac293c6783508b03bef175ab5a60391"
+    }
+  ],
+  "generic_contract": {
+    "supported_integer_domain": [
+      41,
+      4095
+    ],
+    "generic_engine_not_blanket_execution_permission": true,
+    "modes": [
+      "produce",
+      "verify"
+    ],
+    "output": "one explicit CLI path created exclusively; per-degree fresh cache; no overwrite/reuse",
+    "certificate_version": "strict D36-kept-proof-v1 only; same frozen source SHA/bytes; no legacy D34 compatibility",
+    "verify": "preserve original bytes; fresh ALL retained S/origin/actual premises; derive fresh M from fixed input METHOD, all geometry/r_B/floors/phase/corner predicates; old numeric values and bit equality diagnostic only",
+    "native_S": "unchanged accepted D23 point/partial J2 K8 LH4 WD16 P160 CP640 MP640; complete returned ball",
+    "actual_corner_below1024": "three unchanged D07 actual calls, original C11 tails; physical keys1/(4n),3/(16(n+1)); literal<=2048guard unchanged",
+    "analytic_corner_from1024": "accepted D27 closed pi/4 squares loss1/8; retain analytic norm/model/full-error/origin/PD-T271/D02 dependencies; build/load/bind S ONLY, no D07 call",
+    "floor_tiers": {
+      "41..63": "max(1/512,min(1/32,B_n(r_B))) acceptedD29",
+      "64..159": "max(1/64,min(1/20,B_n(r_B))) acceptedC02",
+      "160..511": "max(1/32,min(1/20,B_n(r_B))) acceptedC02",
+      "512..4095": "1/20 acceptedD29"
+    },
+    "r_B": "min(1/2,p_hi*(ah+bh)); floor only actual noncorner signed near subset",
+    "produce": "D34 corrected algorithm, exact13grid global norm, weighted midpoint lower-child-first DFS; predeclared min valid coarse/tree ceiling norm with TREE ties, all final tests recomputed once",
+    "norm_premises": "TREE final-corner union; GRID also ALL13grid uppers; no hidden discarded samples",
+    "max_unique_S": 256,
+    "max_actual_lambda": 3,
+    "max_nodes": 2047,
+    "max_depth": 18,
+    "whole_inclusive_CPU": 120,
+    "controls_CPU": 2,
+    "worker_CPU": 100,
+    "aggregate_safety_CPU": 110,
+    "completed_call_stop_CPU": 10,
+    "unfinished_call_stop_CPU": 15,
+    "supervisor_poll_seconds": 0.25,
+    "controls_wall_seconds": 15,
+    "checker_wall_seconds": 900,
+    "whole_wall_seconds": 1000,
+    "final_hard_bound": "after ECHILD fixes waited-child c and prohibits children, selfHard<=floor(120-c)-1, so c+selfHard<=119; final-account plus observed EXIT0 required",
+    "produce_final_result": "EXACT_SINGLE_DEGREE_PRIMARY_ACCEPTED_PENDING_FRESH_VERIFY",
+    "verify_final_result": "FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW",
+    "whole_essential_certificate_bytes_strictly_less_than": 16384,
+    "raw": "one whole untruncated off-Git raw evidence, all diagnostics/cache/trace/build/runtime/maps/original; original+fresh proof retained separately",
+    "FLOAT_or_polygon_or_pruning_or_queue_or_pack_or_launcher_bundle": false,
+    "rescue_retry_source_precision_order_cap_case_degree_output_lock_change": false,
+    "new_degree_claim": "requires distinct fresh retained-point verification/result review; generic supported domain is not successful-instance claim"
+  },
+  "deferred_arc_floor": "UNVERIFIED standard selected-arc uniform1/64-from41 candidate; recorded in idea only, no job/code use",
+  "preparation_checks": [
+    "static AST syntax7files only",
+    "explicit degree/floor/corner guard and source/include/CLI/path/wall review",
+    "read-only source lineage comparison; D34 immutable"
+  ],
+  "stage_import_control_numeric_compiler_native_scientific_execution": false
+}

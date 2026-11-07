@@ -1,0 +1,65 @@
+{
+  "scope": "C02 partial-cotangent backend only; no point S / arcs / boxes",
+  "precision": 160,
+  "reference_precision": 512,
+  "coefficient_precision": 640,
+  "J": 48,
+  "K": 32,
+  "Lh": 16,
+  "wp_degree": 96,
+  "cases": 56,
+  "overlaps": 56,
+  "contains_reference": 56,
+  "max_radius": 892121558024192.0,
+  "regular_max_radius": 1.1590152589422934e-24,
+  "max_analytic_budgets": [
+    1.1590152553522824e-24,
+    1.3169120385328504e-38,
+    2.4499249644762597e-58
+  ],
+  "mpmath_enclosed": 56,
+  "cpu_seconds": 2.544674,
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C06/partial.cpp",
+    "bytes": 6804,
+    "sha256": "f381738049d793e81a93626bef11eeb1d2a0ff49d0027b6518dd3fec8ff0bcf0"
+  },
+  "driver": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C06/control.py",
+    "bytes": 4009,
+    "sha256": "8a7d48848510915508528a3849fef11f5b01341319ce2103466bdaba608064aa"
+  },
+  "builder": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+    "bytes": 5703,
+    "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+  },
+  "api_header": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C06/partial.h",
+    "bytes": 649,
+    "sha256": "b053eafcf79a77ab4d8fd921c8bb1c25a5e4b15312ecdeee0518855579b3771d"
+  },
+  "raw_manifest": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c06-rows/check-g_flhoz0/controls.json",
+    "bytes": 60405,
+    "sha256": "822287a8f5ab7cdb4084177b396f4a05883e0ded476a0190cf9961faac5f5a4c"
+  },
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c06-rows/check-g_flhoz0/libphase_checker.so",
+    "bytes": 64336,
+    "sha256": "998045c7dd14709051132b802a7f44b6a7044307453c32baa5cd6815bfd9f86a"
+  },
+  "closure_entries": {
+    "headers": 179,
+    "toolchain": 4,
+    "toolchain_dependency_closure": 13,
+    "linked_dependency_closure": 8,
+    "actual_loaded_closure": 8
+  },
+  "invalid_rejections": [
+    1,
+    1,
+    1
+  ],
+  "analytic_errors": "C02 smooth bound plus both harmonic EM radii; wprime series derivative geometric tail; all arithmetic outward Arb"
+}

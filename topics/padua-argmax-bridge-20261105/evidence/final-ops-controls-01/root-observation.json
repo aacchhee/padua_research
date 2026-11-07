@@ -1,0 +1,16 @@
+{
+  "source_commit": "edcc80a5d45d53fd1fcda4db41e882bce0d2558b",
+  "tool_session": 43273,
+  "initial_chunk": "247fbb",
+  "completion_chunk": "dace21",
+  "observed_exit_code": 1,
+  "first_failure": "PermissionError reading /proc/1/environ in assert_no_writers during resume control",
+  "aggregate_monitor_bytes": 34297290,
+  "final_bytes_before_observation": 34297290,
+  "threshold_bytes": 67108864,
+  "no_rerun": true,
+  "receipt": {
+    "bytes": 746,
+    "sha256": "9b3bfc0817557b89633fb6ac3f51bdaf04c1a68aeb703991ef8d720db2298c14"
+  }
+}

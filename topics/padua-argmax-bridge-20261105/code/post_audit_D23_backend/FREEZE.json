@@ -1,0 +1,105 @@
+{
+  "status": "UNEXECUTED first source freeze; distinct mathematical/source audit and root release pending",
+  "rules_input_head": "c1e5bef6ae645dd4e42c82c8fe2c709b76b8a2f4",
+  "requested_developer": "Codex gpt-6.1-sol medium; actual serving metadata independently unexposed",
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/controller.py --run-once",
+  "code_data": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/build.py",
+      "bytes": 5691,
+      "sha256": "64f490d388921b5a980c839955c32bef2547606ad6d527a9f2d5c44f5ecb134b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/controller.py",
+      "bytes": 10877,
+      "sha256": "bb5635d9e4a5770e3b75ca93e83f1dbcd79044ceab82a7d5e4e775f21e07eeee"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/runtime.py",
+      "bytes": 6106,
+      "sha256": "f05c2852b24c87815f824edeb203f2aee30b80aa6ee9866b5db3cce17d7ad469"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/suite.py",
+      "bytes": 4425,
+      "sha256": "71b788616cf541229564636f8dd32debbba42973e9a5cb339157b3095e06697f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/partial.cpp",
+      "bytes": 7685,
+      "sha256": "eacfe084dac836560489244f7a3d579b476973790ac9d61962e565acf1c87461"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/pilot.cpp",
+      "bytes": 3450,
+      "sha256": "8642470f8c0674a0a465cfc05903aa1b18a26d5a933fed84e7b0487da3e9c359"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/partial.cpp",
+      "bytes": 7688,
+      "sha256": "bde1ce4850849dd402acc91eb3cee7d40883bbd51d5f7cff13334abc0f4ee23c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D09_threepoint/controller.py",
+      "bytes": 16019,
+      "sha256": "5642ad6fdf2c28165fc8d17ce8e62330ed695e7b64bb1242c13312d53d47fd73"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/setup.py",
+      "bytes": 1131,
+      "sha256": "ff6babcf65f90c42d35353bd306f89d96ac293c6783508b03bef175ab5a60391"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/c11-row-order.json",
+      "bytes": 5986,
+      "sha256": "4eef1af7d3250af391bed60ab2a243d1510393fa838c28f491b211ea775c310d"
+    }
+  ],
+  "contract": {
+    "only_candidate_change": "J=2,K=8,LH=4,WD=16; P160/CP640/MP640 unchanged",
+    "matched_pair": {
+      "n": 2048,
+      "phase_pi": [
+        "1/12",
+        "1/16"
+      ],
+      "old_fresh_calls": 1,
+      "new_fresh_calls": 1,
+      "both_coefficient_tables_cold": true,
+      "execution_order": "10 invalid guards; old point; new point;7 partial controls;18 moments in one call;4 complete cosine reference calls",
+      "total_native_invocations": 24
+    },
+    "formal_full_Arb_radius_limit": "1/100000 exact dyadic-vs-rational inclusion predicate",
+    "binary64_projection_gate": "new outward upper minus EACH fresh/historical old lower<=1/50000 via exact Fractions",
+    "tails": "already in full Arb ball; no double addition",
+    "actual_lambda_calls": 0,
+    "FLOAT_calls": 0,
+    "worker_CPU": 50,
+    "whole_inclusive_CPU": 60,
+    "aggregate_safety_CPU": 54,
+    "completed_call_stop_CPU": 5,
+    "unfinished_call_stop_CPU": 8,
+    "worker_wall_seconds": 300,
+    "whole_wall_seconds": 360,
+    "retry_or_precision_order_source_degree_phase_cap_rescue": false,
+    "acceptance": "final-accounting complete and accepted, no first failure, actual primary EXIT0; independent result review pending",
+    "essential_receipt_bytes_strictly_less_than": 16384,
+    "raw": "off Git; AC-selected cold archive pending"
+  },
+  "preparation_checks": [
+    "static Python AST syntax",
+    "byte-identical point source",
+    "partial source differs only in exact constant declaration"
+  ],
+  "native_or_scientific_execution": false
+}

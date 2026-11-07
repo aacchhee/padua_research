@@ -1,0 +1,132 @@
+\section{Finite certificates and the verification boundary}
+\label{sec:certificates}
+
+The analytic argument leaves a finite interval of degrees.  Its
+completion requires a cover of a continuum for each degree, together
+with a local argument at the intended equality points.  Comparing a
+grid maximum with a corner value would not supply either requirement.
+The certificates used here have two forms, both based on nonnegative
+interpolation weights.
+
+\subsection{Polynomial and phase covers}
+
+For the smaller degrees, the cardinals are enclosed in tensor Bernstein
+form on a finite binary subdivision of the physical square.  If
+$c_{\ell,ij}$ are their coefficients on a leaf, positivity and partition
+of unity give
+\[
+ \sum_\ell |L_\ell(z)|
+ \leq\sum_{i,j}\left(\sum_\ell|c_{\ell,ij}|\right)
+                 B_i^d(s)B_j^d(t).
+\]
+A bound leaf has every coefficient sum strictly below a validated lower
+bound for $\Lambda_c(n)$.  A corner leaf permits equality only in the
+coefficient at its designated corner and has a strict inequality at
+every other coefficient.  The corresponding corner Bernstein weight
+equals one only at that vertex.  Thus this second predicate proves
+strict inequality throughout the punctured corner leaf.  Reconstructing
+the complete closed subdivision proves the global assertion, including
+its equality set.  Exact rational coefficient conversion, outward
+trigonometric enclosures, and midpoint de Casteljau subdivision preserve
+these implications.
+
+For $41\leq n\leq319$ we use the common phase triangle
+\[
+ \mathcal T=\{(a,b):a,b\geq0,\ a+b\leq1\},
+ \qquad S_n^t(a,b)=S_n(\pi a,\pi b).
+\]
+The following proposition explains what the retained proof must certify.
+Its proof does not assume that the certificate producer succeeds.
+
+\begin{proposition}[Soundness of a phase certificate]
+\label{prop:certificate-phase-soundness}
+Fix $n\geq41$.  Suppose a finite family of closed rational rectangles
+covers $\mathcal T$ after intersection with $\mathcal T$.  Suppose also
+that it supplies validated same-degree point enclosures, a global norm
+bound for the smooth signed kernel sums, and a positive lower bound
+$L_c\leq\Lambda_c(n)$.  On the actual far part $\rho\geq1/2$ of every
+retained rectangle, require a strict upper comparison $S_n^t<L_c$.
+On its actual near part $\rho\leq1/2$, require either $S_n^t<L_c$ or
+$S_n^t-\delta<L_c$ with a proved defect floor $\Delta_{JK}\geq\delta>0$
+for every admissible noncorner center.  For the actual corner centers
+on the near part, instead require strict descent off the origin on the
+closed inward diamond $A+B\leq1/2$.  An independently proved analytic
+far comparison against $\Lambda_c(n)$ may replace the numerical far
+comparison on its entire guarded leaf.  Then
+\eqref{eq:argmax-exact-set} holds at degree $n$.
+\end{proposition}
+
+\begin{proof}
+The signed kernel sums are smooth trigonometric polynomials with
+coordinate frequencies at most $1,n/(n+1)$ in $\alpha,\beta$, hence
+$\pi,\pi n/(n+1)$ in $a,b$.  Apply a nonnegative Peano
+kernel and the trigonometric Bernstein inequality to each complete
+signed sum before taking its maximum over signs.  This bounds $S_n^t$
+on a rectangle by its vertex bounds plus a quadratic remainder.  The
+result is valid even when $S_n$ has a cusp.  Lemma~\ref{lem:argmax-physical-cover}
+then transfers a strict primitive comparison to every physical center.
+On an actual near point at a noncorner center, the applicable projected
+defect supplies the stipulated improvement.  A corner receives the
+separate direct descent estimate.  These closed alternatives cover all
+points; the reflection argument in Theorem~\ref{thm:argmax-analytic-tail}
+identifies and equates the two remaining origins.  Explicit rational
+leaf predicates and norm witnesses are in
+Appendix~\ref{app:argmax-details}.
+\end{proof}
+
+The corner witness below degree $256$ uses three outward evaluations of
+the actual Lebesgue function and an interpolation bound in $A^2,B^2$.
+It gives a positive multiple of $A^2+B^2$ as the loss, so equality is
+allowed at the origin and excluded arbitrarily close to it.  From
+degree $256$, \eqref{eq:argmax-corner-loss} supplies this witness.
+Some certificates also use an analytic far leaf, valid from degree
+$192$, when its entire closed phase rectangle lies in
+$\pi/2\leq\rho\leq\pi$.  Such a leaf proves
+$S_n<\Lambda_c(n)-3/100$ against the exact corner value.
+
+\subsection{Coverage, arithmetic, and independent checks}
+
+The finite degree inventory is exhaustive:
+\begin{center}
+\begin{tabular}{ll}
+\hline
+Degrees & Proof route\\
+\hline
+$2$--$7$ & exact polynomial cases and their strict equality checks\\
+$8$--$32$ & complete exact or outward Bernstein covers\\
+$33$--$40$ & reconstructed Bernstein covers, with two corner leaves\\
+$41$--$319$ & complete common-phase certificates\\
+\hline
+\end{tabular}
+\end{center}
+The checkers reconstruct complete partitions and strict predicates;
+they do not accept a producer flag.  Every retained phase proof was
+reconstructed locally with exact rational arithmetic, including its
+norm witness, defect guards, corner predicate, and source and degree
+identities.  Native point evaluation supplies outward endpoints through
+the frozen Arb/FLINT/MPFR/GMP implementation.  The trust boundary
+includes this implementation, the cardinal normalization and collision
+formulas, and the compiler and native runtime.  The analytic tail also
+retains the quantitative constant enclosure identified as PD-T271.
+
+All returned degrees underwent separate primary and fresh verification
+on the production machine.  Locally, every retained proof was checked;
+the full histories and new independent native replays were checked for
+the two prescribed sampled degrees $199$ and $238$.  This supplies no
+independent local native replay of every residual degree.  The theorem
+uses the complete collection of covers under the stated arithmetic and
+execution trust, rather than a statistical inference from those samples.
+Essential proofs are retained, while full unsampled histories remain on
+the production machine under the authorized selective-retention policy.
+External retrieval of every original historical byte has not been
+verified; pinned source and commands permit regeneration.  The exact
+coverage, sample scope, source identities, and retention record are in
+Appendix~\ref{app:argmax-verification-record} and the companion
+reproducibility notes.
+
+Generic polynomial meshes provide useful norming and validation tools
+in related settings; see \cite{Mesh2024}.  Here the global norm follows
+from an explicit Peano absorption argument, and the equality
+classification requires the additional defect and punctured-corner
+predicates.  None of these predicates is replaced by an observed
+maximum on a mesh.

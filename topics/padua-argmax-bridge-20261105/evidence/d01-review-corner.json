@@ -1,0 +1,336 @@
+{
+  "status": "PASS",
+  "scope": "Supplementary measured review; exact analytic obstruction reconstructed separately",
+  "rules_head": "e6549177fe48c7fea8436cece8a04b411dc544e1",
+  "requested_model": "gpt-6-astra high",
+  "serving_metadata": "unexposed",
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D01_corner_review/check.py",
+      "bytes": 7694,
+      "sha256": "76b6d63828ab005dae71b393d7c71c3d9c03dea9f3c8cedfed6da7a7fa91931b"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D01_corner/measure.cpp",
+      "bytes": 2639,
+      "sha256": "ab5b8154dac29336caf50ab822bbcc8b27659a4ef32102920125d669679c8891"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D01_corner/run.py",
+      "bytes": 7402,
+      "sha256": "6b25fc4735f0c5f9299e6e6b13da3140ca323213baf4706d3c715296e9e3b454"
+    }
+  ],
+  "compiler": {
+    "path": "/usr/bin/x86_64-linux-gnu-g++-14",
+    "bytes": 1166360,
+    "sha256": "6b3696e4dcb85e1c949c732a02befa50e3983ecf94ce7e8e58d9d503b954b79d"
+  },
+  "compiler_version": "x86_64-linux-gnu-g++-14 (Debian 14.2.0-19) 14.2.0",
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/measure-fresh",
+    "bytes": 18416,
+    "sha256": "0217acf11a0540a2594c7ebfb60a679724b8a4a6b2c77aa8f9fd538e57b4db2d"
+  },
+  "original_receipt": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/evidence/d01-corner.json",
+    "bytes": 10225,
+    "sha256": "f38e4160b4b7e1c9e592d6c2fa2b70abc0b4942d68fdbbc84dd7b0dddcd785bb"
+  },
+  "controls": [
+    {
+      "n": 17,
+      "exact": true,
+      "board": 162,
+      "max_relative_difference": 0.0
+    },
+    {
+      "n": 1000,
+      "exact": false,
+      "board": 501000,
+      "max_relative_difference": 2.045583121523089e-16
+    },
+    {
+      "n": 1001,
+      "exact": false,
+      "board": 502002,
+      "max_relative_difference": 4.0911638005358016e-16
+    }
+  ],
+  "measurements": [
+    {
+      "n": 1000,
+      "K_low": 9.060120982745708,
+      "K_upper": 9.062836218852432,
+      "board": 501000
+    },
+    {
+      "n": 1001,
+      "K_low": 9.062020668397757,
+      "K_upper": 9.064737064911427,
+      "board": 502002
+    },
+    {
+      "n": 10000,
+      "K_low": 8.956214482845258,
+      "K_upper": 8.960356017728555,
+      "board": 50010000
+    },
+    {
+      "n": 10001,
+      "K_low": 8.956405437248646,
+      "K_upper": 8.960546996951647,
+      "board": 50020002
+    },
+    {
+      "n": 20000,
+      "K_low": 8.927956689916323,
+      "K_upper": 8.932231475509306,
+      "board": 200020000
+    },
+    {
+      "n": 20001,
+      "K_low": 8.92805219781633,
+      "K_upper": 8.932326990655131,
+      "board": 200040002
+    }
+  ],
+  "kill_threshold_n20000": 6.506826419211469,
+  "exact_scalar_checks": {
+    "exp7_partial_sum": "2959911103/2851200",
+    "strip": "2001/715",
+    "lower_bound": "1289/300"
+  },
+  "original_provenance_files_verified": 369,
+  "original_build_dependencies": 253,
+  "cpu_seconds_through_checks": 2.057207,
+  "cpu_cap": 20,
+  "limitations": [
+    "No directed rounding; no actual-Hessian or optimal-constant assertion",
+    "Original 100000/100001 rows inspected, not rerun",
+    "Shell-observed original 2.644 CPU seconds is recorded history, not reproduced"
+  ],
+  "commands": [
+    {
+      "args": [
+        "/usr/bin/x86_64-linux-gnu-g++-14",
+        "--version"
+      ],
+      "exit": 0,
+      "cpu_seconds": 0.0030639999999999973,
+      "stdout": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/compiler-version.stdout",
+        "bytes": 252,
+        "sha256": "ece3d10c7579d96ed5a8ed4f79adbc2779e2ac8eba03ab9e62720b8291a7cde3"
+      },
+      "stderr": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/compiler-version.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "args": [
+        "/usr/bin/x86_64-linux-gnu-g++-14",
+        "-O2",
+        "-std=c++17",
+        "-fno-fast-math",
+        "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D01_corner/measure.cpp",
+        "-o",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/measure-fresh"
+      ],
+      "exit": 0,
+      "cpu_seconds": 0.537066,
+      "stdout": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/build.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/build.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "args": [
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/measure-fresh",
+        "17",
+        "127",
+        "1"
+      ],
+      "exit": 0,
+      "cpu_seconds": 0.003330999999999973,
+      "stdout": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n17-mode1.stdout",
+        "bytes": 274,
+        "sha256": "898789cc94fee8ff4c2895a0c84099b20842a1c1f01f6168d64a8a4eafc27a1e"
+      },
+      "stderr": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n17-mode1.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "args": [
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/measure-fresh",
+        "1000",
+        "127",
+        "1"
+      ],
+      "exit": 0,
+      "cpu_seconds": 0.019113999999999964,
+      "stdout": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n1000-mode1.stdout",
+        "bytes": 281,
+        "sha256": "5ee8f71b4b9012f45f876931ff51ab2dc31a8aa7ad9af35994882a5d3ff2eabe"
+      },
+      "stderr": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n1000-mode1.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "args": [
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/measure-fresh",
+        "1001",
+        "127",
+        "1"
+      ],
+      "exit": 0,
+      "cpu_seconds": 0.017889000000000044,
+      "stdout": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n1001-mode1.stdout",
+        "bytes": 282,
+        "sha256": "9d8f7022e232fca1d6f76168ab060f0933757912ed39d5cfd13eee1a536ddf1a"
+      },
+      "stderr": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n1001-mode1.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "args": [
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/measure-fresh",
+        "1000",
+        "127",
+        "0"
+      ],
+      "exit": 0,
+      "cpu_seconds": 0.006404999999999994,
+      "stdout": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n1000-mode0.stdout",
+        "bytes": 395,
+        "sha256": "165488ee58342c84a61631d29ba6e5bfa95361c62edf8033079505a7e4ecb43c"
+      },
+      "stderr": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n1000-mode0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "args": [
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/measure-fresh",
+        "1001",
+        "127",
+        "0"
+      ],
+      "exit": 0,
+      "cpu_seconds": 0.006076000000000081,
+      "stdout": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n1001-mode0.stdout",
+        "bytes": 394,
+        "sha256": "e8430a5e2af43a8efa8671f42bd7263369ee02a5b9fe6e743ecc239201b557ca"
+      },
+      "stderr": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n1001-mode0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "args": [
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/measure-fresh",
+        "10000",
+        "127",
+        "0"
+      ],
+      "exit": 0,
+      "cpu_seconds": 0.04254800000000003,
+      "stdout": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n10000-mode0.stdout",
+        "bytes": 401,
+        "sha256": "82520b13746a8bf7936ac3a09d24509be5e7b1158cbcd0e5e2a46ec75d8550fe"
+      },
+      "stderr": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n10000-mode0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "args": [
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/measure-fresh",
+        "10001",
+        "127",
+        "0"
+      ],
+      "exit": 0,
+      "cpu_seconds": 0.041331999999999924,
+      "stdout": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n10001-mode0.stdout",
+        "bytes": 402,
+        "sha256": "d2ace9d65ebd6738c5b187aad86d3e19039b7d8bb24b1caedec787e9642f001d"
+      },
+      "stderr": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n10001-mode0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "args": [
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/measure-fresh",
+        "20000",
+        "127",
+        "0"
+      ],
+      "exit": 0,
+      "cpu_seconds": 0.083565,
+      "stdout": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n20000-mode0.stdout",
+        "bytes": 404,
+        "sha256": "6fbc62c1772b1d0db8e08f9c313229e5132ff2b6b742ecf2bce9f0e167cae015"
+      },
+      "stderr": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n20000-mode0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "args": [
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/measure-fresh",
+        "20001",
+        "127",
+        "0"
+      ],
+      "exit": 0,
+      "cpu_seconds": 0.07880200000000004,
+      "stdout": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n20001-mode0.stdout",
+        "bytes": 403,
+        "sha256": "1e101aae44f4d83e972f72fb753ad7dc99dbbd7e9e8def303f3e524034eb37a3"
+      },
+      "stderr": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/corner-review/n20001-mode0.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ]
+}

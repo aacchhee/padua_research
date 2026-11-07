@@ -1,0 +1,36 @@
+{
+  "utc": "2026-11-06T19:17:12Z",
+  "status": "FROZEN_BEFORE_SOLE_SCALAR_EXECUTION",
+  "files": [
+    {
+      "path": "code/post_audit_D16_budget_review/check.py",
+      "bytes": 5587,
+      "sha256": "523d9402dabf986ebcb2af4f3e98358c6dae79e7168457ccc56f7767dbb4ec5a"
+    },
+    {
+      "path": "code/post_audit_D16_budget_review/SPEC.md",
+      "bytes": 2006,
+      "sha256": "4e91417c563a56e1b88dfb9619e6a95fd591ae6584d47562f0f59cd7f8b3af05"
+    },
+    {
+      "path": "code/post_audit_D08_review/check.py",
+      "bytes": 8577,
+      "sha256": "37e58bc880259c27cd2282dab48231f11822452d6fd2db876c846d1b9a008485"
+    },
+    {
+      "path": "code/post_audit_D16_budget/evaluate.py",
+      "bytes": 3634,
+      "sha256": "777cf1d66b40393dc043a72e5ec886e9b557072a298f1e5f27a89c46d210348b"
+    },
+    {
+      "path": "code/post_audit_D16_budget/SPEC.md",
+      "bytes": 1723,
+      "sha256": "1a68fdc28cf1acf130aaff335da0bb7c4ce4ea40db5a8d74e52673e16d8fe903"
+    },
+    {
+      "path": "code/post_audit_D16_budget/budget-10000.json",
+      "bytes": 5293,
+      "sha256": "84c64165a325d8df8f4b413a388717feb4a5316730d038aade2ac1696b9915bc"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "status": "MEASURED",
+  "role": "distinct supplementary review; formal Claude audit separate",
+  "rules_input_head": "e6549177fe48c7fea8436cece8a04b411dc544e1",
+  "requested_model_effort": "gpt-6-astra xhigh; serving model/effort metadata not independently exposed",
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D01_far_review/check.py",
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D01_far_review/check.py",
+    "bytes": 13107,
+    "sha256": "653661c3a064a53ff1b3e9f2993c22c1bab7b38e614b0fc49b72aacefc276c42"
+  },
+  "author_receipt": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/evidence/d01-far.json",
+    "bytes": 14945,
+    "sha256": "10b8b2800b6ac910ce50eb43f50005b409388f664a3d8dc5ea2d62ab59323c1d"
+  },
+  "native_binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/far/check-d6csm0uf/libphase_checker.so",
+    "bytes": 115872,
+    "sha256": "d02d738b5ecacff33d2482c9afc8105b786d201041ab85fd49f0e0b14e1f3789"
+  },
+  "source_controls": {
+    "assignment_only_instrumentation_matches": true,
+    "source_snapshot_and_preprocessed_TU_hashes_verified": true,
+    "native_loaded_closure": [
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+        "bytes": 225672,
+        "sha256": "c8438e4fde1934e61c88311633f00949ff645d5c04cdb8671fa3d78164d2f307"
+      },
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+        "bytes": 1995216,
+        "sha256": "9792e3cbb541c8f44c7acf5f14f4022ea62998ecc787d326bed4d8b6547dfd92"
+      },
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+        "bytes": 182856,
+        "sha256": "30c61ab012a4241bed033725a09b61f5fdd3bb7df95ee852d0b096520524c7af"
+      },
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/libm.so.6",
+        "bytes": 977112,
+        "sha256": "6d567d53e895273ca14a1f9dc164fc6c8d39aed2f60aa46a733c2784228915f3"
+      },
+      {
+        "path": "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33",
+        "bytes": 2497768,
+        "sha256": "972bb2a18b71140dab0240f8a1f68ab3fb1d56bcd4c4f824a91b70888faf5a00"
+      },
+      {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/far/check-d6csm0uf/deps/libflint.so.19.0.0",
+        "bytes": 11130872,
+        "sha256": "755316507aa3e311d42b8ed441fc4b0e3321a135692962980e2504b22fe3aaa6"
+      },
+      {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/far/check-d6csm0uf/deps/libgmp.so.10.5.0",
+        "bytes": 566080,
+        "sha256": "d15e1585c6c267296459570c8ac217ca9123044bcd4e896d2f686b32333445d2"
+      },
+      {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/far/check-d6csm0uf/deps/libmpfr.so.6.2.2",
+        "bytes": 794992,
+        "sha256": "4e3ccf5b442fc91054b0153140fe62939009f98ca1367f45de62376d5b18d28c"
+      }
+    ],
+    "independently_rebuilt": false
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0",
+    "longdouble_epsilon": "1.084202172485504434e-19"
+  },
+  "results": [
+    {
+      "n": 512,
+      "phase": 2,
+      "alpha_pi": "8314533651872855/18014398509481984",
+      "beta_pi": "8314533651872855/18014398509481984",
+      "S_native": [
+        10.391643954561843,
+        10.391643954561845
+      ],
+      "S_direct": 10.391643954561843,
+      "direct_vs_native_total": -5.516420653606247e-16,
+      "max_direct_vs_native_row": 2.371692252312041e-17,
+      "max_direct_vs_native_pole": 1.4840017235895342e-18,
+      "native_row_radius_max": 5.551115123125783e-17,
+      "native_pole_radius_max": 1.734723475976807e-18,
+      "matched_unchanged_point_total": true,
+      "exact_rational_classification_matches": true,
+      "class_counts": {
+        "0": 896,
+        "1": 128,
+        "2": 0,
+        "3": 2
+      },
+      "endpoint_ordinary_rows": 0,
+      "n1_strip_admissible": false,
+      "tighter_model": 10.390634232530774,
+      "model_constant": 1.0341642964799815,
+      "quadrature_warnings": [],
+      "components_direct": {
+        "endpoint_actual_minus_sinc": 0.06608406166725533,
+        "mesh": 3.61984973838722,
+        "collision": 0.0,
+        "central": 0.008709278519161685,
+        "ordinary_interior_quadrature": -3.6923146652769825,
+        "E": -0.0013188840688739822,
+        "D": 1.9280328622528486e-07,
+        "Q": 0.0
+      },
+      "max_component_difference_from_author": 5.027089855502709e-13,
+      "telescope_closure": -2.5136143166903935e-15,
+      "S_minus_M": 0.0010097220310694155,
+      "cpu_seconds": 4.663937503
+    },
+    {
+      "n": 512,
+      "phase": 3,
+      "alpha_pi": "1/2",
+      "beta_pi": "1/2",
+      "S_native": [
+        8.906646617572605,
+        8.906646617572607
+      ],
+      "S_direct": 8.906646617572607,
+      "direct_vs_native_total": 1.6740081543176188e-16,
+      "max_direct_vs_native_row": 4.130810277169772e-17,
+      "max_direct_vs_native_pole": 7.911287727355165e-19,
+      "native_row_radius_max": 5.551115123125783e-17,
+      "native_pole_radius_max": 8.673617379884035e-19,
+      "matched_unchanged_point_total": true,
+      "exact_rational_classification_matches": true,
+      "class_counts": {
+        "0": 896,
+        "1": 128,
+        "2": 0,
+        "3": 2
+      },
+      "endpoint_ordinary_rows": 0,
+      "n1_strip_admissible": false,
+      "tighter_model": 8.906554454451472,
+      "model_constant": 0.9636728489560147,
+      "quadrature_warnings": [],
+      "components_direct": {
+        "endpoint_actual_minus_sinc": 0.4505130194687603,
+        "mesh": 2.3240514610090934,
+        "collision": 0.0,
+        "central": 0.008757688824893502,
+        "ordinary_interior_quadrature": -2.783230141212581,
+        "E": 1.497850712277142e-17,
+        "D": 1.350309677405903e-07,
+        "Q": 0.0
+      },
+      "max_component_difference_from_author": 1.497850712277142e-17,
+      "telescope_closure": -6.216679731760322e-16,
+      "S_minus_M": 9.216312113480285e-05,
+      "cpu_seconds": 4.475938588999999
+    }
+  ],
+  "midpoint": {
+    "bias": "-0.00115002219528743975458759468819656229538366380857042373519405",
+    "R_cancel_residual": "0.0",
+    "integral_constant": "0.963672848956000447552719663051370246062625200231856995165784",
+    "high_precision_series_difference": "2.12700717505019491943400626838187840254549634673086767244667e-61",
+    "n": 512,
+    "N": 262656,
+    "finite_cotangent_sum": "8.90664661757260574",
+    "finite_error": "0.00000000000063247281234473856108115610746300013745871742188118638222405",
+    "finite_remainder_bound": "0.00000000000362380947758379596381032720419198309831325118080017023281618",
+    "author_asymptotic_oracle_discrepancy": 6.15793006863985e-13
+  },
+  "g_R": [
+    {
+      "t": "8314533651872855/18014398509481984",
+      "high_precision_EM_error": "-3.83688782347131406933870533655458525337688633592772363689927e-27",
+      "remainder_bound": "9.31436405752574906902778306695268714127924664641474989269473e-21",
+      "binary64_error": "0.00000000000000208153232827913789513127124187719199678078207945889205862621",
+      "binary64_bound": 9.314364057525756e-21
+    },
+    {
+      "t": "9699864857609129/18014398509481984",
+      "high_precision_EM_error": "-3.7779470738295002328335247148920850065275102109161635927046e-27",
+      "remainder_bound": "9.18353904923893162381153300556633255406045610658874674681763e-21",
+      "binary64_error": "0.00000000000000227306622878509782002402131651926492962991470210151683681946",
+      "binary64_bound": 9.183539049238922e-21
+    }
+  ],
+  "raw": [
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/far-review-01/n512-p2.npz",
+      "bytes": 71042,
+      "sha256": "0b7f70a5c2b0ddf70ff1685bbc6f3abbaadc54c795b0aee0fcc7da5ba55b56e1"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D01/far-review-01/n512-p3.npz",
+      "bytes": 71042,
+      "sha256": "5514ff144a0c53022b4228cfe622a0bcd111ee59102b13b8afb1fc5eec77dc01"
+    }
+  ],
+  "cpu_seconds": 10.716353482,
+  "wall_seconds": 10.016260731001239,
+  "cpu_scope": "Current Python process from before imports; no build or child process. 38 CPU-second process limit; review authorization 40 CPU seconds.",
+  "limitation": "Native artifact reused after hash and loaded-closure checks. Long-double finite sums and mpmath/Scipy calculations are diagnostics, not enclosures. Two even n512 cases only; no new odd-degree or collision execution; full Python package trees not pinned."
+}

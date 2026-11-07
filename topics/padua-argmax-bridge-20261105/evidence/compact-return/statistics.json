@@ -1,0 +1,54 @@
+{
+  "produce": {
+    "passes": 280,
+    "cpu_sum": 4758.151296,
+    "cpu_min": 10.441089,
+    "cpu_max": [
+      23.217470000000002,
+      254
+    ],
+    "cpu_median": 16.979006499999997,
+    "pass_wall_sum": 5639.456141158938,
+    "pass_wall_max": 26.153327672742307,
+    "nodes_min": 51,
+    "nodes_max": 101,
+    "S_premises_min": 43,
+    "S_premises_max": 64
+  },
+  "verify": {
+    "passes": 280,
+    "cpu_sum": 4536.896717,
+    "cpu_min": 10.097595,
+    "cpu_max": [
+      22.497275,
+      252
+    ],
+    "cpu_median": 16.0150165,
+    "pass_wall_sum": 5131.999788408168,
+    "pass_wall_max": 24.753368793986738,
+    "nodes_min": 51,
+    "nodes_max": 101,
+    "S_premises_min": 43,
+    "S_premises_max": 64
+  },
+  "supervisor_summary": {
+    "ECHILD": true,
+    "cleanup_killed": [],
+    "first_failure": null,
+    "identity": "02878bbcfd6ce96aaed54d23596bf54eead8f57680be6c016fd55efce5e1103b",
+    "never_started": [],
+    "plan_sha256": "e70ac2a6c15591f694ea12a3bba7450f2e03d13f55a90de415afe6b1205c6075",
+    "quiescent": true,
+    "scope": "terminal attempts are not certified degrees",
+    "source_manifest_sha256": "5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16",
+    "supervisor_self_cpu_seconds": 12.181273000000001,
+    "waited_descendant_cpu_seconds": 10496.346196,
+    "writer_domain_token": "817286526366021a3c31cc6262749d95f2a4d4ae15a5907e7ce3ea0c4a1e6244"
+  },
+  "seed": "7c79b8e401d9a32f8233f8371c441cd28d82dedd60e46e7c73d211ab099d01d2",
+  "never_started": {
+    "all": []
+  },
+  "unfinished": [],
+  "memory_keys": []
+}

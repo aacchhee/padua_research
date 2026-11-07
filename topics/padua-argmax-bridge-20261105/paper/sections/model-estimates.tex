@@ -1,0 +1,221 @@
+\section{The cancellation integral and the central model}
+\label{app:model-estimates}
+
+This appendix records the integral identities behind the central correction.
+All logarithms are natural. Products of a vanishing coefficient with its
+logarithm have their continuous values. Integrals below concern complete
+cancellation expressions; the separate cotangent integrals generally diverge.
+
+For real $C,D$ and $0<e<\pi$, put
+\begin{align}\label{eq:generic-I}
+ I(C,D,e)&=\int_0^\pi\bigl\{|C\cot z+D\cot(z+e)|
+                  -|C\cot z|-|D\cot(z+e)|\bigr\}\,dz,
+ \\
+ J(v,s,e)&=I((v-s)/2,(v+s)/2,e).\notag
+\end{align}
+The integrand has finite one-sided limits at its two pole positions; their
+point values do not affect the integral. Changes of variable on the
+cotangent circle show invariance under exchanging the two channels,
+reversing both coefficient signs, or replacing $e$ by $-e$.
+
+\begin{lemma}[Complete cancellation formulas]\label{lem:generic-cancellation}
+Let $v,s\geq0$ and $0<e\leq\pi/2$. If $s\leq v$, set
+$c=(v-s)/2$, $b=(v+s)/2$. Then
+\begin{equation}\label{eq:J-same-sign}
+ J(v,s,e)=2\{c\log(c/v)+b\log(b/v)\}.
+\end{equation}
+The value is zero when $v=s=0$. If $s>v$, set
+$c=(s-v)/2$, $b=(s+v)/2$. When $s\sin e\geq v$,
+\begin{equation}\label{eq:J-no-root}
+ J(v,s,e)=2s\log(\sin e).
+\end{equation}
+Otherwise, with $\vartheta=\arcsin(s\sin e/v)$ and
+$z_1=(\vartheta-e)/2$,
+\begin{equation}\label{eq:J-root}
+ J(v,s,e)=2s\log(\sin e)+2\left\{
+ b\log\frac{\cos z_1}{\sin(z_1+e)}
+ -c\log\frac{\cos(z_1+e)}{\sin z_1}\right\}.
+\end{equation}
+These formulas join continuously at all their thresholds and zero
+coefficients. Writing
+\begin{equation}\label{eq:J-R}
+ J(v,s,e)=2(s-v)_+\log(\sin e)+R(v,s,e),
+\end{equation}
+one has
+\begin{align}\label{eq:J-R-bounds}
+ |R|&\leq\max(2v,s+v)\log2,&
+ |R_s|&\leq\log\frac{v+s}{|v-s|},\\
+ R_e&=\frac{2\{v\cos e-\sqrt{(v^2-s^2\sin^2e)_+}\}}{\sin e}
+       \geq0 &&(s>v),\notag
+ \qquad R_e&=0 &&(s\leq v).\notag
+\end{align}
+The parameter derivative bound is used under integration at $s=v$.
+Finally, for
+\begin{equation}\label{eq:root-Z}
+ E(v,s,e)=J(v,s,e)-2s\log(\sin e),\qquad
+ Z(v,s,e)=2\int_e^{\pi/2}
+          \frac{\sqrt{(v^2-s^2\sin^2t)_+}}{\sin t}\,dt,
+\end{equation}
+one has $E\leq Z$ everywhere and $E=Z$ when $s\geq v$.
+\end{lemma}
+
+\begin{proof}
+On each sign interval the cancellation integrand in
+\eqref{eq:generic-I} is $-2$ times the smaller absolute channel. Its
+primitive is therefore a linear combination of $\log|\sin z|$ and
+$\log|\sin(z+e)|$. For $s\leq v$ the two opposite-sign intervals give
+\eqref{eq:J-same-sign}. For $s>v$ the possible additional equality
+roots satisfy
+$\sin(2z+e)=s\sin e/v$. There are no such roots if
+$s\sin e\geq v$; integrating the resulting intervals gives
+\eqref{eq:J-no-root}. In the remaining case their first endpoint is
+$z_1$ as above. Splitting there and at its reflected endpoint gives
+\eqref{eq:J-root}. Thus the formulas retain the complete intervals,
+including the shorter same-sign portion. The finite limits in these
+displayed expressions give their claimed continuity.
+
+Differentiating the complete expressions gives \eqref{eq:J-R-bounds};
+the endpoint contributions cancel because the two channels agree at a
+moving equality root. At $e=\pi/2$, $R=0$ for $s>v$, whereas its limit
+at $e=0$ is $2(c\log c+v\log v-b\log b)$. These two endpoint formulas,
+the sign of $R_e$, and the entropy formula for $s\leq v$ give the
+displayed bound for $R$. The same differentiation gives the logarithmic
+bound for $R_s$, whose singularity at $s=v$ is locally integrable.
+
+For $s>v$, subtract $2s\log\sin e$ and integrate the resulting
+separation derivative from the no-root threshold. It is
+$-2\sqrt{(v^2-s^2\sin^2e)_+}/\sin e$, so the result is exactly $Z$.
+Continuity includes $s=v$. If $s<v$, \eqref{eq:J-same-sign} gives
+$J\leq0$, while
+$\sqrt{v^2-s^2\sin^2t}\geq s\cos t$. Hence
+$Z\geq-2s\log\sin e\geq E$. For $v=0$,
+$J(0,s,e)=2s\log\sin e$ and $E=Z=0$ directly.
+\end{proof}
+
+\begin{lemma}[The unsplit root integral]\label{lem:root-majorant}
+Let $a>0$, $0\leq v\leq a$, and
+$I_4=\int_0^1\sqrt{1-t^4}\,dt$. Then
+\begin{equation}\label{eq:F-root-bound}
+ F(v,a):=\int_0^{\pi/2}Z(v,a\tan(e/2),e)\,de
+       \leq\frac{4\sqrt2 I_4v^{3/2}}{\sqrt a},
+ \qquad I_4<\frac{319}{360}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+The case $v=0$ is immediate. Put $\tau=v/a\in(0,1]$. Tonelli's theorem
+applies to the nonnegative integrand in \eqref{eq:root-Z} and retains
+the triangular constraint $0<e<t<\pi/2$. At fixed $t$, substitute
+$z=\tan(e/2)\sin t/\tau$. Since
+$\tan(t/2)\sin t=1-\cos t$, this gives exactly
+\[
+ F=4v\tau\int_0^{\pi/2}
+    \int_0^{\min(1,(1-\cos t)/\tau)}
+       \frac{\sqrt{1-z^2}}{\sin^2t+\tau^2z^2}\,dz\,dt
+   =4v\tau\int_0^1\sqrt{1-z^2}\,K(\tau z)\,dz,
+\]
+where, for $0<k\leq1$,
+\[
+ K(k)=\int_{\arccos(1-k)}^{\pi/2}\frac{dt}{\sin^2t+k^2}
+ =\int_0^{(1-k)/\sqrt{k(2-k)}}\frac{dw}{1+k^2+k^2w^2}
+ \leq\frac1{\sqrt{2k}}.
+\]
+The substitution in the second equality is $w=\cot t$. The last
+inequality follows from $1+k^2\geq1$ and
+$2(1-k)^2\leq2-k$. It also includes the collapsed interval at $k=1$.
+The endpoint $k=0$ remains improper. Since
+$\int_0^1\sqrt{1-z^2}\,z^{-1/2}dz=2I_4$, substitution proves the first
+bound and simultaneously proves finiteness. Finally, for $0\leq u\leq1$,
+$P(u)=1-u/2-u^2/8>0$ and
+$P(u)^2-(1-u)=u^3/8+u^4/64\geq0$. Therefore
+$I_4<1-1/10-1/72=319/360$.
+\end{proof}
+
+\begin{corollary}\label{cor:root-rational-constants}
+For the actual phases $x,y\geq0$, $\rho=x+y\leq1$, let
+$a=(\cos x+\cos y)/2$, $p=\sin x$, and $\kappa=4I_4/\pi^2$.
+Then
+\[
+ \frac{\kappa p^{3/2}}{\sqrt a}\leq
+ \begin{cases}(3/8)x^{3/2},&\rho\leq1/2,\\
+               (5/12)x^{3/2},&\rho\leq1.
+ \end{cases}
+\]
+\end{corollary}
+\begin{proof}
+On $\rho\leq1/2$, $a\geq1-\rho^2/4\geq15/16>(29/30)^2$.
+With $\pi^2>197/20$ and Lemma~\ref{lem:root-majorant},
+\[
+ \frac\kappa{\sqrt a}<\frac{319}{87\pi^2}
+               <\frac{6380}{17139}<\frac38,
+\]
+the final comparison being $51040<51417$. On $\rho\leq1$,
+$c_e,c_d\geq7/8$, so $a\geq49/64$ and
+\[
+ \frac\kappa{\sqrt a}<\frac{1276}{315\pi^2}
+               <\frac{25520}{62055}<\frac5{12},
+\]
+where $306240<310275$. Finally $0\leq p\leq x$.
+\end{proof}
+
+\begin{lemma}[The closed half-pi central decomposition]\label{lem:central-model}
+Let $x,y\geq0$, $\rho=x+y\leq\pi/2$, and put
+\begin{gather*}
+ c_e=\cos(\rho/2),\quad c_d=\cos((x-y)/2),\quad
+ a=c_ec_d,\\ p=\sin x,\quad q=\sin y,\quad
+ v=p/2,\quad \delta=q/2.
+\end{gather*}
+For the endpoint finite part $E_\infty$ and scalar finite part $H$ of
+the completed model in \eqref{scalar:completed-model}, its constant term
+has the exact decomposition
+\begin{equation}\label{eq:exact-central-decomposition}
+ C_\infty=E_\infty+c_eH(x-y)+c_dH(x+y)-c\,a+E_c,
+ \qquad c=\frac13+\frac4{\pi^2}(\log^2\pi-\log^22),
+\end{equation}
+where
+\begin{equation}\label{eq:Ec-definition}
+ E_c=\frac1{\pi^2}\int_0^{\pi/2}
+ \left\{J(v,a\tan(t/2)+\delta,t)
+       +J(v,|a\tan(t/2)-\delta|,t)
+       -4a\tan(t/2)\log(\sin t)\right\}\,dt.
+\end{equation}
+The integral is continuous on the whole closed phase set. On that set
+$a\geq1/2$, $v/a\leq1$, and
+$b=2\arctan(q/(2a))\leq\rho\leq\pi/2$.
+\end{lemma}
+\begin{proof}
+The phase identities give
+\[
+ 2a-(p+q)=2c_d\{\cos(\rho/2)-\sin(\rho/2)\}\geq0,
+ \qquad c_e,c_d\geq2^{-1/2}.
+\]
+The first inequality is strict in the interior $\rho<\pi/2$. In the
+endpoint half of the defining completed finite-part integral, put
+$T=2a\cot(t/2)$, $0<t\leq\pi/2$. Then $T>p+q$ and
+\[
+ (T-q)\sin t=2a(1+\cos t)-q\sin t\geq2a-q>p.
+\]
+Both generic channels are consequently in the no-root regime of
+\eqref{eq:J-no-root}. Their sum is exactly
+$4a\cot(t/2)\log\sin t$. In the central half, reflection
+$t=\pi-z$ gives the two terms retained in \eqref{eq:Ec-definition}.
+Subtracting this endpoint baseline before integration, the scalar pole
+and finite-part terms are respectively
+$c_eH(x-y)+c_dH(x+y)$ and $-ca$; the endpoint contribution is
+$E_\infty$. This proves \eqref{eq:exact-central-decomposition} in the
+strict interior, with the original finite-part normalization.
+
+To justify the boundary, $0\leq v\leq1/2$,
+$0\leq a\tan(t/2)\leq1$, and both channel parameters are at most
+$3/2$. Lemma~\ref{lem:generic-cancellation} bounds the complete numerator
+in \eqref{eq:Ec-definition} by
+$10|\log\sin t|+4\log2$. This is integrable on $(0,\pi/2)$.
+Dominated convergence proves continuity through every moving root,
+zero coefficient, axis and boundary phase. The complete defining
+finite-part integral for $C_\infty$ has the same integrable subtracted
+endpoint envelopes; $E_\infty$ and $H$ are continuous for the same
+reason. Scaling any boundary phase toward the origin and passing to
+the limit proves the exact equality on the closed boundary. At its
+possible degeneracy $T=p+q$ one has $t=\pi/2$, where $\log\sin t=0$;
+the generic formulas have their common finite value. Finally,
+$(\cos x+\cos y)\tan(\rho/2)=p+q\geq q$ proves $b\leq\rho$.
+\end{proof}

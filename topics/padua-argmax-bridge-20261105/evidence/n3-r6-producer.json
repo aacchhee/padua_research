@@ -1,0 +1,233 @@
+{
+  "status": "Producer-only known-degree calibration; independent acceptance separate",
+  "rules_input": "fc8c2885f47b08cecc7f65328db0e740cbc205ea",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_r6.py",
+      "bytes": 12216,
+      "sha256": "789f119b4ed5778ff4d031563d9f3b0b831ae71dc27f7bf7b3589296a0c9cd54"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward.c",
+      "bytes": 4830,
+      "sha256": "cfeae9fe2b61e9c7ec2c4d943762ac988e64fa02652ccfe4342430c4ee5f22dd"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_interval.h",
+      "bytes": 4215,
+      "sha256": "6dca513ddbd94264d454872c9f5e753e355d15b49152dc4b19d51cff7635131b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_full.py",
+      "bytes": 8417,
+      "sha256": "9c6460f4407498d08bd26f36fe8f7b56290a5fb33eb06e49fa6d5735a84b7b29"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_compact_candidate.py",
+      "bytes": 2605,
+      "sha256": "2e90bbb1d130ba1560a00b1712bad187b6303288cdb3c28fdcfae6bec200e3ad"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_native_receipt.py",
+      "bytes": 2979,
+      "sha256": "44990cb6b9e65ee8fe788663be91e7bde71ee6ce77dec7b228d56825f7209577"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp",
+      "bytes": 5725,
+      "sha256": "3646f4e8b6b16957b9e1114f95ad2f0a7c18eec4687b49d5e6f1947a25eea6e3"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/check_corner_range.py",
+      "bytes": 7416,
+      "sha256": "66fc2d9583260572125bd6c70a943577f94f1dd1ce2755a2c47ad96fffa9a982"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/independent-corner-range.json",
+      "bytes": 6262,
+      "sha256": "e685674c028bc99e42d547e8b84a2ce5a7e7e67c3cc69f6c29a55ecbcffd23c0"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-corner-batch.json",
+      "bytes": 3601,
+      "sha256": "97e20cc877ad5afd0c9dfe96c1e399a42d820b38c18626e2b69bfa54f6acfc88"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/independent-corner-replay.json",
+      "bytes": 7892,
+      "sha256": "573afc5d5ae229b0fa1d47df9b6bf334e47e0e437288a3543826838e5403cb4b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/phase-checker-full-n17-round5.json",
+      "bytes": 6264,
+      "sha256": "49060e7633068f6ffb531e63614855a5d88c466c10e6d4d1b07a8c21043e6423"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-phase-n17.json.gz",
+      "bytes": 5266,
+      "sha256": "80dcb2db069332e018653931bdb94e3995ceca5c9d96741fd1b87110474267a6"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/runtime/extracted/usr/include/mpfr.h",
+      "bytes": 57588,
+      "sha256": "588c2bd606cba060afb49cd024f9119e996089a341a99d1dc7e0367622335a13"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/check-corner-range/own-n2-128.jsonl",
+      "bytes": 363463,
+      "sha256": "47f3d233b5fd7bc46dca8c45a0de2ecc09be4d36988ab83b16f87c44a843bd20"
+    }
+  ],
+  "degrees": [
+    {
+      "n": 24,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_outward_r6.py",
+        "--worker",
+        "24"
+      ],
+      "exit_status": 0,
+      "watchdog_stopped": false,
+      "subprocess_cpu_seconds": 363.81237400000003,
+      "elapsed_wall_seconds": 364.0427339990001,
+      "execution_started_utc": "2026-11-06T06:48:05Z",
+      "execution_finished_utc": "2026-11-06T06:54:09Z",
+      "stdout": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n24-stdout.txt",
+        "bytes": 4166,
+        "sha256": "67fdd594510241d04e645799c03fab3903225d904d057f0d201b44ddc184b23b"
+      },
+      "stderr": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n24-stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "complete": true,
+      "accepted": false,
+      "pending": 0,
+      "statistics": {
+        "visited": 2036,
+        "splits": 1016,
+        "counts": {
+          "split": 1016,
+          "outside": 32,
+          "far": 512,
+          "corner-orbit-plus-defect": 456,
+          "local-corner-plus-defect": 20
+        },
+        "cpu_seconds": 363.07038027699997
+      },
+      "raw_candidate": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n24/n24-phase.json",
+        "bytes": 147959,
+        "sha256": "ad353f8d1bbba5af01756bb8cec3d33096e352db19c7bebde5e60ad9eaf18806"
+      },
+      "build_manifest": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n24/build/build-manifest.json",
+        "bytes": 12959,
+        "sha256": "5bd710d56194c31eaaf7ec9d8341fe811fd2e1f7bd7440da8cef2dfa50af16b8"
+      },
+      "compiler_child_cpu_seconds": 0.434822,
+      "build_own_cpu_seconds": 0.10323461,
+      "constants_setup_cpu_seconds": 0.05279903999999999,
+      "candidate": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n24/n24-phase-compact.json",
+        "bytes": 62755,
+        "sha256": "8c984dc87c9170ae07f106a530a7915596bca30f273371bb2de2f89c8443ec92"
+      },
+      "gzip": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n24/n24-phase-compact.json.gz",
+        "bytes": 5070,
+        "sha256": "77bbdcf13363835fbca25d96b69eb277e2e5778e0e001c621f7eab0fc05ad51d"
+      },
+      "projection_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_compact_candidate.py",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/N3/outward-r6/n24/n24-phase.json",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/N3/outward-r6/n24/n24-phase-compact.json"
+      ],
+      "projection_child_cpu_seconds": 0.043960000000000055,
+      "own_cpu_seconds": 363.280277762,
+      "total_child_cpu_seconds": 0.488178,
+      "wall_seconds": 363.8126190580001,
+      "closure_unchanged_after": true
+    },
+    {
+      "n": 32,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_outward_r6.py",
+        "--worker",
+        "32"
+      ],
+      "exit_status": 0,
+      "watchdog_stopped": false,
+      "subprocess_cpu_seconds": 620.093411,
+      "elapsed_wall_seconds": 620.2355745989998,
+      "execution_started_utc": "2026-11-06T06:54:09Z",
+      "execution_finished_utc": "2026-11-06T07:04:29Z",
+      "stdout": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n32-stdout.txt",
+        "bytes": 4126,
+        "sha256": "a2ae75ce882ddcdc8a0663832ce8f4de65ff8eebe4cdb58dc8bb8fcfe14b1342"
+      },
+      "stderr": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n32-stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "complete": true,
+      "accepted": false,
+      "pending": 0,
+      "statistics": {
+        "visited": 1980,
+        "splits": 988,
+        "counts": {
+          "split": 988,
+          "outside": 32,
+          "far": 512,
+          "corner-orbit-plus-defect": 428,
+          "local-corner-plus-defect": 20
+        },
+        "cpu_seconds": 619.326637711
+      },
+      "raw_candidate": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n32/n32-phase.json",
+        "bytes": 145181,
+        "sha256": "69424081d9cf8b31e136fdf45471472a16abb06eda1665f5210c518b55e205f9"
+      },
+      "build_manifest": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n32/build/build-manifest.json",
+        "bytes": 12959,
+        "sha256": "4cee288d505b19d5c4243c49f52b53437250d5b1b9f199d4f12a05f91584b191"
+      },
+      "compiler_child_cpu_seconds": 0.43945399999999996,
+      "build_own_cpu_seconds": 0.05579113299999999,
+      "constants_setup_cpu_seconds": 0.09999876500000002,
+      "candidate": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n32/n32-phase-compact.json",
+        "bytes": 60925,
+        "sha256": "1cedd123ca9bfb69c200036161c521b5cbe1fca8e7197c4dd5ec557b640fa234"
+      },
+      "gzip": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-r6/n32/n32-phase-compact.json.gz",
+        "bytes": 4989,
+        "sha256": "2107db169168455ba770fcce7f5fd60d0fb4454575a83077aaffc9a4e4d024e3"
+      },
+      "projection_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_compact_candidate.py",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/N3/outward-r6/n32/n32-phase.json",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/N3/outward-r6/n32/n32-phase-compact.json"
+      ],
+      "projection_child_cpu_seconds": 0.045940999999999954,
+      "own_cpu_seconds": 619.548359135,
+      "total_child_cpu_seconds": 0.49430999999999997,
+      "wall_seconds": 620.1019927670004,
+      "closure_unchanged_after": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "N": 2048,
+  "cpu_cap_seconds": 10,
+  "input_head": "e5c3e21a58dc81dcdd227e3c688c56e5ac3fd5dc",
+  "inputs": {
+    "code/post_audit_D31_review/check.py": "aaebd5d62ec31f31510e51f2b4e624e5194b039ecf5ab4463451dcf0af1c5048",
+    "code/post_audit_D31_review/SPEC.md": "eff6782b7f459d524c3a9e6b7871b47c030f2e1bae02742aeb06c0ba3f3d2dee",
+    "code/post_audit_D31_near/evaluate.py": "a22506a7b1c4fc389aa8eb228432fdf06cdd3d2614d96d6a51786c8a626f3f23",
+    "code/post_audit_D31_near/SPEC.md": "76c7ff663364aaf1c0e224b130ff3a90809cf2035d39dff31fb29a4bd56705ed",
+    "code/post_audit_D31_near/budget-2048.json": "73bf39ba6eec2e3cf7a5b66fdf29329408814823fdf61343e2037e59a075c2d8",
+    "code/post_audit_D08_review/check.py": "37e58bc880259c27cd2282dab48231f11822452d6fd2db876c846d1b9a008485"
+  },
+  "reviewed_theory_hashes": {
+    "D31-relative-allowance.md": "3db80ef22857c428915c5d69cc8c71288a96ef5820d0e950de371d60f2bfc1fc",
+    "D31-near-comparison.md": "93f2a6371f0b2e1e42979d0d5761b8e51dbed7ab1bb45607c41cb638aeabeb7f"
+  },
+  "no_scientific_execution_before_this_freeze": true,
+  "timing_method": "Bash reserved-word time"
+}

@@ -1,0 +1,88 @@
+{
+  "scope": "Independent R1 source/evidence inspection plus focused parser/premise controls; no new full replay",
+  "reviewer": "distinct Codex Astra high assignment; serving metadata not independently exposed",
+  "command": "python topics/padua-argmax-bridge-20261105/code/review_phase_r1.py",
+  "source_pins": {
+    "check.py": "8713026a1b5a872f0e8dd33c311eafef2cf310f42ae2eebb4055ad224b8acfae",
+    "build_snapshot.py": "a8a805ba27e880a3a5cf1db7d0707dab4a982d7a988b493c822015518ee2e2c2",
+    "arb_kernel.cpp": "236116452dc7aae66e39cbf8800fe847cffe931ac0ce8a9682397313de7c43a6",
+    "provenance_controls.py": "983a63abddbcb2f83f22116070be9af956d89a9fc4b8df445787da57293ca810"
+  },
+  "script_sha256": "ad357aa9300cb3cd728abaa6dc01e51c6b53ba80e34e680cde38c57339ba7e3c",
+  "provenance_receipt_sha256": "d9dc80c45423f4a37ca1c5a0882b9a757e85cbb2fa3c32c464339f9b592ad6b2",
+  "parser_controls_rejected": 5,
+  "fixed_corner_guards": {
+    "17": false,
+    "24": false,
+    "32": false,
+    "33": true,
+    "64": true,
+    "128": true,
+    "129": false
+  },
+  "outside_phase_guard_rejected": true,
+  "corner_premise": {
+    "receipt_sha256": "573afc5d5ae229b0fa1d47df9b6bf334e47e0e437288a3543826838e5403cb4b",
+    "degrees": [
+      33,
+      64,
+      128
+    ],
+    "kappa": "1/12500",
+    "phase_square": "1/128",
+    "source_pins": [
+      {
+        "path": "topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp",
+        "sha256": "3646f4e8b6b16957b9e1114f95ad2f0a7c18eec4687b49d5e6f1947a25eea6e3",
+        "bytes": 5725,
+        "snapshot": "working source snapshot"
+      },
+      {
+        "path": "topics/padua-argmax-bridge-20261105/code/check_corner_receipt.py",
+        "sha256": "59e6aeec23433c877b99ec86aee71eaa03b514697dcd0ba1df711dc0f643dfe4",
+        "bytes": 7683,
+        "snapshot": "working source snapshot"
+      },
+      {
+        "path": "topics/padua-argmax-bridge-20261105/theory/N3-corner-radius-reduction.md",
+        "sha256": "8cf89c491a4d82df81a69bd1024139d1224bd1f43fd91b1d1fe58a1dd519aee4",
+        "bytes": 3683,
+        "snapshot": "working source snapshot"
+      },
+      {
+        "path": "topics/padua-argmax-bridge-20261105/theory/N3-corner-bounds.md",
+        "sha256": "7241cd4221643473cf34c9a36e502d1095a916a0b2f67075d2fb4093d2142fe6",
+        "bytes": 6319,
+        "snapshot": "c000899f3fb10d6ba0f1725341a045fe11ec943a"
+      },
+      {
+        "path": "topics/padua-argmax-bridge-20261105/evidence/n3-corner-bounds.json",
+        "sha256": "fe843711ff66e4a89f7856fc952441537a69d2907a5c78a6a844d61fec3e9c46",
+        "bytes": 10114,
+        "snapshot": "working source snapshot"
+      },
+      {
+        "path": "topics/padua-argmax-bridge-20261105/code/n3_corner_bounds.c",
+        "sha256": "a0497ca1219850e28f2bf51e72cb4fc8f78cde238b81fd678262d646511402bd",
+        "bytes": 9519,
+        "snapshot": "working source snapshot"
+      }
+    ],
+    "dependency_scope": "published finite-instance theorem; no arbitrary caller assertion"
+  },
+  "manifest_rows": [
+    {
+      "path": "local-output/argmax-bridge-20261105/phase-checker/r1-isolated-replay-0.json",
+      "sha256": "45b0379203d57346918f30dcd20f15817a03aa2ee93eccab9817e38b61e083ae",
+      "verified_identity_entries": 225
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/phase-checker/r1-isolated-replay-1.json",
+      "sha256": "3b729a279f2e39896e88ac790160946f86093fbb74f427d2e017ae06e028dfc4",
+      "verified_identity_entries": 225
+    }
+  ],
+  "verified_identity_entries": 450,
+  "R1_disposition": "CLOSED at listed hashes; normal trusted compiler/runtime assumptions remain",
+  "full_n17_replay": "Performed separately by phase_checker; not claimed as this reviewer execution"
+}

@@ -1,0 +1,183 @@
+# PD-T?argmax-bridge-C13-corner-comparison — Actual-corner comparison at500000
+
+ID kind: PD-T.
+Aliases: half-diamond actual descent;r2-over-six loss.
+Split from: the original combined PD-T?argmax-bridge-C13-onset proof.
+Split into: none; this file owns only the stated substantive comparison.
+
+## Statement and definitions
+
+For every integer n>=500000 and inward A,B>=0,A+B<=1/2, put
+r2=A^2+B^2,a=(cos A+cos B)/2. At either parity-correct actual
+nonnode corner,
+
+    lambda_n<=a Lambda_c+[log(n+1)/3+16]r2,                   (20)
+    lambda_n<=Lambda_c-r2/6.                                  (5)
+
+At(-1,-1) the physical point is(-cos(A/n),-cos(B/(n+1))).
+For even n the second patch is its x reflection; for odd n it is
+its y reflection. The origin is included, with equality there. Every
+positive inward phase is strictly below the corner value. All corrected
+polynomial, endpoint and initially zero-cardinal conventions are those
+of C02/C07. This is a direct actual-function result without energy or
+a global-norm equality assumption.
+
+## Status and record boundary
+
+Overall status: **PROVED**, by the written analytic proof. The distinct
+[original mathematical reconstruction](../independent-checks-C13-onset.md)
+supports the frozen mathematics at n>=500000. Its F1/F2 record repairs
+are being submitted for a focused check; that check is **pending**.
+This author does not independently approve the repaired batch. Formal
+Claude audit remains separate.
+
+All old n>=10^6 theorem statements keep their original quantifiers.
+The proof below rechecks the lower-domain component estimates, rather
+than applying those old statements below their degree floors. No model,
+constant, threshold, correction, scientific computation or assumption
+has changed in this split. Exact real arithmetic; natural logarithms.
+The exceptional x mode and all finite-polynomial collision, endpoint
+and initially zero-cardinal conventions remain unchanged.
+
+## Depends on
+
+[C13-corner-value-lower](C13-corner-value-lower.md), including its
+routine baseline(19). C02's exact four-copy cardinal normalization;
+C05's quarter-angle identities and regular series; and C07's enlarged
+collision strip, exact Fourier moments and finite-polynomial bounds.
+The degree-sensitive constants are rechecked below, with the original
+phase split, thresholds and parity convention retained.
+
+## Routine degree-domain lemma
+
+Put n0=500000. The elementary bounds log10>23/10 and log2<7/10,
+proved in N1-16/C08 by positive log/exponential series, give
+
+    log n0=6log10-log2>131/10, log n0<14.                     (6)
+
+Every function `(c log n+d)/n^j` used below, with c,d>0 and j>=1,
+decreases on n>=n0: its derivative has the sign of
+`c-j(c log n+d)<0`. Bounds by a value at n0 therefore use L<14 only
+at n0; no assertion L<14 at every larger n is made.
+
+## 5. Recheck the actual-corner patch
+
+The corner-value theorem's routine baseline(19) gives
+Lambda_c>=A_n^2-epsilon(n), with
+epsilon(n)=(L+2)^2/n+(L+2)/(2n^2)<1/1000. Its stronger retained
+deformation is not needed for this comparison.
+
+The C07 actual-corner derivative argument also retains its constants
+below1e6. Here are every numerical floor checks used in that argument:
+
+* tau=m/n<=1001/1000, tau^3<101/100;
+* `1/3-1/n>=(999/1000)/3` in the regular negative-one strip;
+* its j<=100 comparisons follow from
+  `(1-120/n)^(-2)<101/100` at n>=n0;
+* the C05 harmless normalized f terms, bounded by its displayed
+  rational expression, are <1/100 at n0 even with H2=1+log(2m)<16;
+  the sine P-part is at most108tau*16/(25n)<1/100;
+* `3n/2+7/4<=(151/100)n` and
+  `3n^2/2+7n/2+23/8<=(151/100)n^2` bound the finite V derivatives;
+* its polynomial F Hessian `(71/80)n+1/2<=(9/10)n` and final
+  enlarged-strip count `14/5+28/(5n)<3` hold on this domain.
+
+The decreasing logarithmic ratios in the harmless terms are checked
+at n0; all other inequalities improve with n. The exact Fourier
+moments, quarter-angle identity, baseline F0<=n, reflected-copy
+normalization, regular discrete series and collision-strip geometry
+are unchanged algebraic statements. Thus their same complete budget
+is newly established for n>=n0:
+
+    lambda_n<=a Lambda_c+[log m/3+16](A^2+B^2).                (20)
+
+No sign of a perturbed cardinal is assumed. Initially zero cardinals,
+the finite endpoint and every moved strip index stay in the orbit sum.
+
+Using1-a>=47(A^2+B^2)/192, (19), pi^2<10 and log m<=L+1,
+the strict coefficient left by (20) is at least
+
+    p(L)=(47/192)[(2/5)(L+3/2)^2-1/1000]-(L+1)/3-16.
+
+This polynomial increases for L>=131/10, and
+
+    p(131/10)=10987/64000>1/6.
+
+This proves (5), at both parity-correct actual corners. In particular
+arbitrarily small positive phases remain strictly below Lambda_c.
+
+
+## Checks, scope and split history
+
+The one original exact Fraction control and its 0.000206207process CPU
+seconds are recorded in [the attempt](../attempts/C13-onset.md). No new
+mathematical computation was run for this repair. No phase/kernel/degree
+scan, numerical quadrature, fitted estimate, energy premise or executable
+certifier claim is introduced.
+
+This result applies only to the two actual inward corner patches.
+Near noncorner and far phase comparisons remain separately owned
+results; no global localization is assumed in this proof.
+
+2026-11-06, author response to F1/F2. This file splits its stated scope
+from the original combined PD-T?argmax-bridge-C13-onset record, freeze
+`6cc04de4d3cc8303c3660043bf15b92e50c527ffd21e10747cdc49de3ec3f070` (483 lines,22065bytes).
+The exact local snapshot, source mapping and current file identities
+are recorded in the attempt. Original proof paragraphs and equation
+numbers are retained where possible, so those numbers refer to the
+original reviewed sequence. No final ID or shared crosswalk is assigned
+by this worker. Rules read4b728b04216a5490910780bc609a82b853058426;
+parent-assigned auxiliary Sol xhigh role, serving metadata unexposed.
+
+
+## D01 dated record addendum — 2026-11-06 (audit-01 F1/F2)
+
+This addendum preserves every preceding byte and the frozen proof body.
+The historical pending focused-review wording above is superseded by
+[the accepted focused F1/F2 review](../independent-checks-C13-onset.md#focused-f1f2-repair-review--2026-11-06),
+which pins the pre-addendum bytes. That supplementary review is ACCEPTED;
+the formal Claude audit remains a separate obligation. The interim
+[audit-01](../audit-01.md) supports the stated scope with its explicit
+upstream residual limits. No theorem, proof status, constant, parameter,
+threshold or quantifier changes here.
+
+For the routine domain bookkeeping, include c=0 and finite sums and
+products of positive decreasing factors. More explicitly, for a polynomial
+P(L) with nonnegative coefficients of degree at most two, P(log n)/n^j
+is decreasing here (unless identically zero): L P'(L)<=2P(L) and
+jL>2. Factors (1+1/n)^q, q>=0, also decrease. Thus this covers
+(L+2)^2/n, (L+2)/(2n^2), m^2/n^3=(1+1/n)^2/n and the
+m H2/n^j terms actually used (j>=2), writing
+H2=1+log(2m); its logarithmic derivative is at most 1/H2, while
+m/n^j has logarithmic derivative at most 1-j. The pure inverse powers
+and (2/63)(1+1/n) decrease as well. L(delta+h/2)/(6m) is a sum of
+positive multiples of L/m and L/m^2, both decreasing at n>=n0.
+For the stated near G(x), differentiation gives
+G'(x)=x[7/4+log(1/x)/9]>0 on its small positive argument range;
+x=delta+h decreases, so G(delta+h) decreases. Fixed tails stay fixed.
+These are the already-used termwise monotonicity facts reconstructed in
+audit-01, rather than an extension of any upstream theorem domain.
+
+The lower logarithm citation in (6) is unchanged. The upper citation is
+[N1-16, scalar k check](N1-round7-coefficients.md): its positive
+exponential series through degree 10 proves log 10<2303/1000.
+Consequently log n0=6 log 10-log 2<6(2303/1000)<14, since log 2>0.
+The earlier attribution of this upper bound to lower log 10 and upper
+log 2 bounds is superseded by this citation. L<14 is used only at n0.
+
+For completeness the numerical floor list in section 5 also includes
+these already-used checks, all at n>=500000:
+
+- tau^2<101/100 (C07-million, after (15));
+- (151/100)tau+(151/100)tau^2+(1/2)tau^3+88/25<71/10
+  in [C07-million (21)](C07-corner-million-onset.md), using tau<=1001/1000;
+- |X|,|T_B|<=pi/2+1/(4n)<8/5 (C07-million finite-polynomial patch);
+- sin T0>=(99/100)T0, since 0<T0<=pi/(4m) and
+  sin t>=t-t^3/6 (C07-million baseline (23));
+- m/(2pi n)<1/6 and |T|<=3Z/2 in
+  [C05-quarterangle section 1](C05-corner-quarterangle-bound.md).
+
+These complete the floor bookkeeping identified in audit-01 F3;
+no new floor is asserted. The use of Lambda_c>=A_n^2-epsilon
+also uses Delta_corner>=0, from C07's n>=2 unordered-pair argument,
+in addition to the separate corner-value baseline (19).

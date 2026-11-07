@@ -1,0 +1,19 @@
+{
+  "N": 2048,
+  "scientific_executions": 1,
+  "launch_attempts": 1,
+  "tool_chunk": "5c77aa",
+  "exit_code": 0,
+  "status": "ACCEPT_INDEPENDENT_D31_N2048",
+  "timing_method": "Bash reserved-word time",
+  "final_user_seconds_as_reported": "0.044",
+  "final_system_seconds_as_reported": "0.012",
+  "final_elapsed_seconds_as_reported": "0.057",
+  "cpu_seconds_through_pre_serialization": 0.049486,
+  "soft_cpu_seconds": 9,
+  "hard_cpu_seconds": 10,
+  "native_jobs": 0,
+  "scientific_retries": 0,
+  "source_or_precision_changes_after_freeze": false,
+  "scalars_sha256": "1f168e30788b648dc4d158ec0c1f91f5b766f6eb2feacef124163d3462d50bec"
+}

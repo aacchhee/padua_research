@@ -1,0 +1,103 @@
+{
+  "format": "FINAL-HYBRID-source-freeze-v1",
+  "status": "UNEXECUTED FIRST CANDIDATE; source/reduction audit, publication and explicit root release required",
+  "preparation_input_head": "32c4f1c6cedac8af0ca43c361833e0f500474393",
+  "code_data": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/build.py",
+      "bytes": 5686,
+      "sha256": "f9da3c5dd31628e0b5f6c22100543aa4cf607df3b2f2bc4b4ae8fd6b615946ac"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/checker.py",
+      "bytes": 15551,
+      "sha256": "55f4a4b8dab6c679c6979380a9e8a8cf1e469f10d449c5ba6c3a19c4a087b670"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/controls.py",
+      "bytes": 5260,
+      "sha256": "cde1324ff7ff63f6e95bb28a27fc11772f6f0b68a17b9c44245cc9f7bfa96a0c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py",
+      "bytes": 19237,
+      "sha256": "1dfda35bdce1d7292d30c413968ce16c4dbc65f79b2a86a6e5dfdaaa61f09bd7"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/producer.py",
+      "bytes": 1780,
+      "sha256": "fa49ad294685c596871557a1ce6f793e9edd8d75c777ed801eb60a6e13d6b64f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/runtime.py",
+      "bytes": 6591,
+      "sha256": "f31da3ebdfbb93de47906c5b3a37bc7bca0907ae032c9c553d16004d12410f22"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/partial.cpp",
+      "bytes": 7685,
+      "sha256": "eacfe084dac836560489244f7a3d579b476973790ac9d61962e565acf1c87461"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/point.cpp",
+      "bytes": 9698,
+      "sha256": "03dc79bbbc7563ba9066137c0a52467624c810a758f865f9931511c82985ff6f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/partial.cpp",
+      "bytes": 7688,
+      "sha256": "bde1ce4850849dd402acc91eb3cee7d40883bbd51d5f7cff13334abc0f4ee23c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D09_threepoint/controller.py",
+      "bytes": 16019,
+      "sha256": "5642ad6fdf2c28165fc8d17ce8e62330ed695e7b64bb1242c13312d53d47fd73"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/setup.py",
+      "bytes": 1131,
+      "sha256": "ff6babcf65f90c42d35353bd306f89d96ac293c6783508b03bef175ab5a60391"
+    }
+  ],
+  "norm_policy": "Any f: GRID only. No f: minimum valid complete TREE or GRID, TREE ties. All13 grid samples retained in BOTH methods. Fresh replay preserves input METHOD/topology.",
+  "analytic_corner": "E12 both closed pi/4 squares; every integer n>=256; radial loss1/30; zero actual calls/builds from256",
+  "analytic_far": "E15 every integer n>=192; explicit f requires full raw closed box minimum normalized phase sum>=1/2 and nonempty triangle; true symbolic corner gap3/100",
+  "prose_is_not_machine_scientific_gate": true,
+  "preparation_checks": "text/hash/AST only; zero imports,controls,compiler,native,scalar,degree jobs",
+  "modes": [
+    "produce",
+    "verify"
+  ],
+  "certificate_schema": "FINAL-HYBRID-kept-proof-v1",
+  "tree_schema": "FINAL-HYBRID-midpoint-v1",
+  "limits": {
+    "whole_CPU": 120,
+    "control_CPU": 2,
+    "worker_CPU": 100,
+    "safety_CPU": 110,
+    "completed_call_CPU": 10,
+    "unfinished_call_CPU": 15,
+    "wall_seconds": [
+      15,
+      900,
+      1000
+    ],
+    "S_calls": 256,
+    "actual_calls_below256": 3,
+    "actual_calls_from256": 0,
+    "nodes": 2047,
+    "depth": 18,
+    "whole_essential_bytes_strictly_less_than": 16384
+  },
+  "retry_or_rescue": false
+}

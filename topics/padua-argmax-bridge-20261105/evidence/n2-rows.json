@@ -1,0 +1,70 @@
+{
+  "command": "python topics/padua-argmax-bridge-20261105/code/n2_rows.py",
+  "counts": {
+    "boundary_cases": 84,
+    "cases": 195,
+    "collision_entries": 42,
+    "generic_cases": 97,
+    "regular_entries": 16578,
+    "sign_disagreements": 0,
+    "vertex_cases": 28
+  },
+  "degrees": [
+    2,
+    3,
+    4,
+    5,
+    8,
+    13,
+    16
+  ],
+  "fit": "NONE",
+  "independent_rerun": "PENDING",
+  "input_head": "0bca52bc1b8edf2e91d3749b710d2df285dc3e6b",
+  "limits": "Binary64 checks only; no rigorous rounding bound, continuum claim, profile fit, B3 pass or proof dependency. Cold-storage archival pending.",
+  "max_absolute_errors": {
+    "absolute_rows": 8.468781231840694e-13,
+    "boundary": 1.6076029396572267e-13,
+    "collision": 3.161915174132446e-13,
+    "cotangent": 2.2282620193436742e-10,
+    "crt": 4.495177563512698e-10,
+    "global_signed": 1.8096635301390052e-14,
+    "row": 1.3073986337985843e-11,
+    "vertex": 3.530509218307998e-14
+  },
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "raw": {
+    "bytes": 32191,
+    "path": "local-output/argmax-bridge-20261105/N2/rows.json",
+    "sha256": "21189eb301e4eae39b6e97ff8956a5e4f0a7d883378b7669fdf382cfca44bce9"
+  },
+  "sources": [
+    {
+      "bytes": 8629,
+      "path": "topics/padua-argmax-bridge-20261105/code/n2_rows.py",
+      "sha256": "3e634c0e8eda2f8c089e8311c094bd823b567cdf9eee0a0dd484c1fc52801085"
+    },
+    {
+      "bytes": 11117,
+      "path": "topics/padua-argmax-bridge-20261105/theory/N2-row-decomposition.md",
+      "sha256": "650a2b87c38842e5a5c26ffa572d4b4e751c1839cd5fe19aceefed96b8e7cfbe"
+    },
+    {
+      "bytes": 10052,
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-02-two-phase-global-bound.md",
+      "sha256": "81ef1d533c92cd5d60138c64c191e4a634cbbe6e439d8ef4b6b2fcdc81292673"
+    },
+    {
+      "bytes": 10280,
+      "path": "topics/padua-argmax-alln-20261101/theory/gated-codex-12-row-primitive-identity.md",
+      "sha256": "2692c28af71b4f5eeb129f3a2f32a24a5a3e7e8929279063e0c63f3edbaf3d92"
+    },
+    {
+      "bytes": 9962,
+      "path": "topics/padua-argmax-effective-2-20261105/theory/profile-boundary-cotangent.md",
+      "sha256": "045ffa224dbaef9a37db4f30f6773419f804dc55b553fd0efc37f660e9992f42"
+    }
+  ],
+  "status": "MEASURED supplementary developer sanity check"
+}

@@ -1,0 +1,45 @@
+{
+  "source_commit": "61cf9ab5d143cea993ce2cde6d88302a6c10b7bc",
+  "candidate_sha256": "529ee8be60750352d0e317e905ef43775a3ceae62f6a052b5ba2f56508de9558",
+  "build": {
+    "invocations": 1,
+    "exit": 0,
+    "tool_session": 63210,
+    "completion": "1af3c4",
+    "command_record": "LOG.md lean removal-only rebuild"
+  },
+  "full_zip": {
+    "path": "local-output/argmax-bridge-20261105/syvert30-lean-529ee8be/padua30.zip",
+    "bytes": 25094674,
+    "sha256": "29f707a9256dfe08bf7d2c0051a1f56de457dfe4d99992c90ad74cbfc9c85528"
+  },
+  "update_zip": {
+    "path": "local-output/argmax-bridge-20261105/syvert30-lean-529ee8be/padua30-update.zip",
+    "bytes": 36756,
+    "sha256": "436331e8f3cb6932f30a90e57c21de8369f86e1f6db8de80ba8d99d97aef8835",
+    "changed_members": 13
+  },
+  "manifest": {
+    "bytes": 52884,
+    "sha256": "c8a2ed7e508df8f781668c186ca53bea472c2a7a1c336c03f14f1cdb069273fc"
+  },
+  "independent_patch_reconstruction": {
+    "exit": 0,
+    "completion": "d6f1e4",
+    "old_plus_patch_equals_new_bytes_and_modes": true
+  },
+  "science": "unchanged; no new native test or residual execution",
+  "profile": {
+    "workers": 30,
+    "aggregate_RAM_limit": 128000000000,
+    "removed": [
+      "path length limit",
+      "80GiB/host RAM floor",
+      "zero swap requirement",
+      "fixed scratch/archive reserve"
+    ],
+    "fresh_rerun": "authorized by AC; stopped outputs preserved separately"
+  },
+  "review": "independent-checks-syvert30.md",
+  "retention": "offGit; external physical transfer pending"
+}

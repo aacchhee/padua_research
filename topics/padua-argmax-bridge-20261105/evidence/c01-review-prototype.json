@@ -1,0 +1,356 @@
+{
+  "schema": "C01-prototype-independent-review-v1",
+  "status": "PASS",
+  "assertions": 651,
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C01/prototype.cpp",
+    "bytes": 14311,
+    "sha256": "178bbe5a969a018d91454dc877572a691c9831a4b8793971f5aa303343465dab"
+  },
+  "review_source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_c01_ratio_review/prototype_review.py",
+    "bytes": 9945,
+    "sha256": "d91fff975d2738b3981a5d26ba5a6b7699d8c6a08f8dadbc62c4f6e4b541dc50"
+  },
+  "transitive_build_sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C01/build_prototype.py",
+      "bytes": 891,
+      "sha256": "d46f0dcb6e4d9687c9d985a5d5dd65bd6b9d72b69001c174f5380b88c6b27f75"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+      "bytes": 5703,
+      "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+    }
+  ],
+  "developer_evidence": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/evidence/c01-prototype-bounded.json",
+    "bytes": 10134,
+    "sha256": "52284adf5e48979be132fe49de47884a657a96691e3f42fd1905bde7e301216a"
+  },
+  "raw_manifest": {
+    "path": "/tmp/c01-prototype-review-eyojv9yk.json",
+    "bytes": 86901,
+    "sha256": "1211faf98cbbb34cef69203f9ce9d191b17387fd888ff59050beaf05c6c95c3a"
+  },
+  "ratio_cases": 54,
+  "ratio_chart_counts": {
+    "0": 2,
+    "1": 11,
+    "2": 41
+  },
+  "boxes": [
+    {
+      "n": 32,
+      "box": [
+        -0.29452431127404316,
+        -0.1963495408493621,
+        -0.1963495408493621,
+        0.0
+      ],
+      "kind": "saved32",
+      "status": 0,
+      "bounds": [
+        11.335010140105657,
+        11.294486232059041,
+        0.4011634787898494,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        25344.0,
+        57008.0,
+        36.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        3.0
+      ],
+      "S_strict": false,
+      "defect_strict": true,
+      "cpu": 0.10799024800000001
+    },
+    {
+      "n": 32,
+      "box": [
+        0.0,
+        0.09817477042468105,
+        -0.1963495408493621,
+        0.0
+      ],
+      "kind": "saved32",
+      "status": 0,
+      "bounds": [
+        11.373455138185156,
+        11.354600386105604,
+        0.3951040267742795,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        25344.0,
+        57004.0,
+        36.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        3.0
+      ],
+      "S_strict": false,
+      "defect_strict": true,
+      "cpu": 0.11200368400000005
+    },
+    {
+      "n": 63,
+      "box": [
+        0.0,
+        0.25,
+        0.0,
+        0.25
+      ],
+      "kind": "degree_below",
+      "status": 0,
+      "bounds": [
+        15.119407802435104,
+        15.037849404003243,
+        0.2637122401994217,
+        13.901142360706519,
+        13.90114236070652,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        96768.0,
+        217680.0,
+        104.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        3.0
+      ],
+      "S_strict": false,
+      "defect_strict": false,
+      "cpu": 0.49999395299999994
+    },
+    {
+      "n": 64,
+      "box": [
+        0.0,
+        0.25,
+        0.0,
+        0.25
+      ],
+      "kind": "radius_equal",
+      "status": 0,
+      "bounds": [
+        15.198199261090373,
+        15.116064812039864,
+        0.00048828125,
+        13.973207805351173,
+        13.973207805351175,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        99840.0,
+        224592.0,
+        104.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        3.0
+      ],
+      "S_strict": false,
+      "defect_strict": false,
+      "cpu": 0.26796470000000006
+    },
+    {
+      "n": 64,
+      "box": [
+        0.0,
+        0.25000000000000006,
+        0.0,
+        0.25
+      ],
+      "kind": "radius_above",
+      "status": 0,
+      "bounds": [
+        15.198199263839854,
+        15.116064807452709,
+        0.2639736378601107,
+        13.973207805351173,
+        13.973207805351175,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        99840.0,
+        224592.0,
+        104.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        3.0
+      ],
+      "S_strict": false,
+      "defect_strict": false,
+      "cpu": 0.4759924560000002
+    },
+    {
+      "n": 64,
+      "box": [
+        -0.25,
+        0.0,
+        0.0,
+        0.25
+      ],
+      "kind": "negative_boundary",
+      "status": 0,
+      "bounds": [
+        15.198199193225744,
+        15.116064816617387,
+        0.00048828125,
+        13.973207805351173,
+        13.973207805351175,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        99840.0,
+        224592.0,
+        104.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        3.0
+      ],
+      "S_strict": false,
+      "defect_strict": false,
+      "cpu": 0.2799986379999999
+    },
+    {
+      "n": 64,
+      "box": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kind": "true_corner",
+      "status": 0,
+      "bounds": [
+        13.973207805351175,
+        13.973207805351175,
+        0.00048828125,
+        13.973207805351173,
+        13.973207805351175,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        99840.0,
+        224628.0,
+        12.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        3.0
+      ],
+      "S_strict": false,
+      "defect_strict": true,
+      "cpu": 0.323992359
+    },
+    {
+      "n": 64,
+      "box": [
+        0.125,
+        0.1328125,
+        0.25,
+        0.2578125
+      ],
+      "kind": "lazy_S",
+      "status": 0,
+      "bounds": [
+        13.809211282867782,
+        13.809211282867782,
+        0.0,
+        13.973207805351173,
+        13.973207805351175,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        99840.0,
+        224634.0,
+        6.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        3.0
+      ],
+      "S_strict": true,
+      "defect_strict": true,
+      "cpu": 0.2599946009999998
+    },
+    {
+      "n": 2,
+      "box": [
+        -1.7976931348623157e+308,
+        1.7976931348623157e+308,
+        0.0,
+        0.0
+      ],
+      "kind": "huge_finite",
+      "status": 0,
+      "bounds": [
+        14.000000139077505,
+        14.000000139077505,
+        0.0,
+        2.9999999999999996,
+        3.0000000000000004,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "counts": [
+        144.0,
+        268.0,
+        8.0,
+        48.0,
+        0.0,
+        0.0,
+        1.0,
+        3.0
+      ],
+      "S_strict": false,
+      "defect_strict": false,
+      "cpu": 0.0
+    }
+  ],
+  "closure_counts": {
+    "toolchain": 4,
+    "toolchain_dependency_closure": 13,
+    "headers": 212,
+    "dependency_inputs": 6,
+    "linked_dependency_closure": 8,
+    "loaded_dependency_closure": 8
+  },
+  "own_cpu": 3.16068192,
+  "child_cpu": 1.204038,
+  "wall": 4.364311275003274,
+  "command": "python topics/padua-argmax-bridge-20261105/code/cheap_c01_ratio_review/prototype_review.py",
+  "whole_candidate_replayed": false,
+  "new_degree_certified": false
+}

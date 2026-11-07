@@ -1,0 +1,29 @@
+{
+  "result": "FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW",
+  "first_failure": null,
+  "total_CPU_through_summary": 13.536983,
+  "complete": true,
+  "engine_config": {
+    "n": 1024,
+    "mode": "verify",
+    "output": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D38/verify-n1024",
+    "certificate": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D38/primary-n1024/essential-receipt.json",
+    "certificate_identity": {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D38/primary-n1024/essential-receipt.json",
+      "bytes": 5124,
+      "sha256": "66c8e18c8f312c79ef199403252cd7375b931bc43a9be7a20c078bc51eb29c23"
+    }
+  },
+  "final_self_limit": {
+    "waited_child_CPU": 13.163058,
+    "self_CPU_at_tightening": 0.361724,
+    "absolute_self_CPU_hard": 105,
+    "integer_enforcement_reserve_CPU": 1,
+    "additional_reaped": [],
+    "no_live_children": true,
+    "scope": "No subsequent children; waited-child CPU fixed. Absolute self limit bounds final serialization/write/return."
+  },
+  "hard_aggregate_cap": 120,
+  "execution_role": "D36 single-degree produce or independent fresh retained-point verification; execution agent records actual identity separately",
+  "scope": "After persisted provisional evidence/summary and freeze checks; final serialization/write/return bounded by tightened absolute self hard limit. Observed EXIT0 additionally required."
+}

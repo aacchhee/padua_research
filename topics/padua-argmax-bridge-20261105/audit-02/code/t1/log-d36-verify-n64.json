@@ -1,0 +1,25 @@
+{
+ "cmd": [
+  "python3",
+  "-E",
+  "-S",
+  "-B",
+  "topics/padua-argmax-bridge-20261105/code/post_audit_D36_engine/engine.py",
+  "--mode",
+  "verify",
+  "--n",
+  "64",
+  "--certificate",
+  "topics/padua-argmax-bridge-20261105/evidence/post_audit_D38/primary-64.json",
+  "--output",
+  "/tmp/claude-0/-home-user-padua-research/8833296e-cd9e-51d7-9205-e1ddfbc5960f/scratchpad/audit2/t1-run/out/d36-verify-n64",
+  "--run-once"
+ ],
+ "start_utc": "2026-11-07T05:55:38Z",
+ "wall_s": 5.577099622999981,
+ "exit_code": 0,
+ "children_user_s": 4.763684,
+ "children_sys_s": 0.369683,
+ "children_cpu_s": 5.133367,
+ "maxrss_kB": 169284
+}

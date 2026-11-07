@@ -1,0 +1,21 @@
+{
+  "retrieved_utc": "2026-11-07",
+  "official_template_version": "3.1, December 2024",
+  "official_archive": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12",
+  "mirror_commit": "dfeb5372e9211ef50b8d46023e64221f4a8c8de8",
+  "verification_limit": "Official archive returned HTTP 403; mirror bytes pinned, not byte-compared with the official archive. Mirror example identifies v3.1 December 2024.",
+  "files": [
+    {
+      "name": "sn-jnl.cls",
+      "bytes": 55857,
+      "sha256": "36d0c3273a59d48dc6a9c7b080dfa1ec50dc10229d8751568d1f2e490ffa5ecc",
+      "url": "https://raw.githubusercontent.com/iftaken/anor-template/dfeb5372e9211ef50b8d46023e64221f4a8c8de8/sn-jnl.cls"
+    },
+    {
+      "name": "sn-mathphys-num.bst",
+      "bytes": 64164,
+      "sha256": "b3a7c7fbcc1e7f9619de634fcea2f5bb7a245818a5942bc576e40ea001633332",
+      "url": "https://raw.githubusercontent.com/iftaken/anor-template/dfeb5372e9211ef50b8d46023e64221f4a8c8de8/sn-mathphys-num.bst"
+    }
+  ]
+}

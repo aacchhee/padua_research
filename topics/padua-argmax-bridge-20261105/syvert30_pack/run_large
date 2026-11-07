@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+if ! command -v beregning >/dev/null 2>&1; then
+  if type module >/dev/null 2>&1; then module load beregning; fi
+fi
+command -v beregning >/dev/null 2>&1 || { echo 'beregning is required' >&2; exit 1; }
+if [[ $(type -t beregning) == function ]]; then
+  beregning python3 -I -S -B memory_guard.py run_large "$@"
+else
+  exec beregning python3 -I -S -B memory_guard.py run_large "$@"
+fi

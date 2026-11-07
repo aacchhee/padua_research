@@ -1,0 +1,494 @@
+{
+  "format": "padua-cold-storage-v1",
+  "slug": "padua-argmax-bridge-20261105",
+  "entries": [],
+  "pending_local": {
+    "status": "local working outputs only; no archive delivery or durable retention claimed",
+    "authorized_destination": "Downloads\\padua\\cold_storage\\padua-argmax-bridge-20261105\\",
+    "source_commit": "95366c19562e88c11138f88aab0a6617d6b15305",
+    "verified_utc": "2026-11-05T20:43:34.513065+00:00",
+    "groups": {
+      "b0": {
+        "command_record": "independent-checks-b0.md",
+        "receipt": "evidence/b0-replay.json",
+        "result": "n24 both independently accepted; n32 deterministic counts match incomplete pilot"
+      },
+      "b1": {
+        "command": "OPENBLAS_NUM_THREADS=1 B0_PASS=1 python topics/padua-argmax-bridge-20261105/code/margin_b1.py",
+        "receipt": "evidence/b1-margins.json",
+        "result": "MEASURED finite map; source/raw hashes and counts verified"
+      },
+      "d01-record-preservation": {
+        "command_record": "response-01.md#f5--available-artifacts-preserved-missing-script-limit",
+        "result": "Three originals copied/read back and hashed; preservation only, no scientific rerun",
+        "retention": "ephemeral local working copies; physical delivery and durable external retrieval pending"
+      },
+      "post-audit-D03-near-only": {
+        "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 topics/padua-argmax-bridge-20261105/code/post_audit_D03_near_only/pilot.py --run-once",
+        "source_commit": "5264178be22cc80f61952ff4cc534e2866073d44",
+        "receipt": "evidence/d03-near-only.json",
+        "checker": "python topics/padua-argmax-bridge-20261105/code/post_audit_D03_result_check/check.py",
+        "check_result": "PASS139 enumerated identities and both saved partitions; no native numerical rerun",
+        "retention": "local ephemeral output; external delivery/retrieval pending"
+      },
+      "audit02-local": {
+        "source_commit": "ffe4d42ba176d56db2e77c228bce28eda0872298",
+        "command_record": "LOG.md (audit02 build/rehearsal/collect commands); code/audit02_observer/PREREGISTRATION.md",
+        "raw_root": "/workspace/p02",
+        "observer_raw": "local-output/argmax-bridge-20261105/audit02-known-observation",
+        "preserved_failures": [
+          "/workspace/p02c",
+          "/workspace/p02-build.stdout",
+          "/workspace/p02-build.stderr"
+        ],
+        "artifacts": [
+          {
+            "path": "/workspace/p02.zip",
+            "bytes": 25085718,
+            "sha256": "b41794138898198a391caa17a2b0a114e456ed690b994b41df8a5fbedc5bd2ba"
+          },
+          {
+            "path": "/workspace/d278941b28f0-padua-local-20261107T071625.609373Z.zip",
+            "bytes": 93599070,
+            "sha256": "ebc4e6a0efa8905f7b04d3b4dd51bcef251d4ef50362cc0a73bd96c4db34857e"
+          }
+        ],
+        "checker": "published code/audit02_execution/verify_return.py RETURN --package /workspace/p02 --manifest-sha583435701282d0f22aa8d2d9429e735ed8c125b9cf285c3f6ac57983157c2eb4 --partial",
+        "summary": "evidence/audit02-local/; independent-checks-audit02-known-integration.md",
+        "result": "completed41/511 full proof/raw/build/maps closure accepted, complete280false; no residual run",
+        "retention": "ephemeral local originals retained; physical transfer and durable external retrieval pending"
+      },
+      "syvert30": {
+        "source_commit": "7cf34bcee4be9bdd5b4a871426083333a89b7c15",
+        "artifacts": [
+          {
+            "path": "local-output/argmax-bridge-20261105/syvert30-7cf34bcee4be9bdd5b4a871426083333a89b7c15/padua30.zip",
+            "bytes": 25095407,
+            "sha256": "e51b442ba541ebcf9a94c3571a624692ee385c3178195d2a2ced071bd960d35f"
+          }
+        ],
+        "generating_command": "LOG.md (Syvert30 controls accepted; exact final offline build release)",
+        "checker": "independent-checks-syvert30.md actual data inspection",
+        "summary": "syvert30-delivery.md; evidence/syvert30/delivery.json",
+        "retention": "whole source tree/ZIP/manifest/controls/build logs retained locally; external physical transfer and durable retrieval pending"
+      },
+      "syvert30-lean": {
+        "source_commit": "61cf9ab5d143cea993ce2cde6d88302a6c10b7bc",
+        "artifacts": [
+          {
+            "path": "local-output/argmax-bridge-20261105/syvert30-lean-529ee8be/padua30.zip",
+            "bytes": 25094674,
+            "sha256": "29f707a9256dfe08bf7d2c0051a1f56de457dfe4d99992c90ad74cbfc9c85528"
+          },
+          {
+            "path": "local-output/argmax-bridge-20261105/syvert30-lean-529ee8be/padua30-update.zip",
+            "bytes": 36756,
+            "sha256": "436331e8f3cb6932f30a90e57c21de8369f86e1f6db8de80ba8d99d97aef8835",
+            "changed_members": 13
+          }
+        ],
+        "generating_command": "LOG.md lean source publication/rebuild; changed-member patch from exact old/newZIPs",
+        "checker": "independent-checks-syvert30.md lean focused/byte review",
+        "summary": "syvert30-delivery.md; evidence/syvert30/lean-delivery.json",
+        "retention": "full original/new trees,ZIPs,patch,checksums and build logs retained; external transfer pending"
+      },
+      "compact-release": {
+        "source_commit": "996fedcad4ba79a28e45a3fe3678adc12f1e5358",
+        "artifacts": [
+          {
+            "path": "local-output/argmax-bridge-20261105/compact-release-aea62883/padua30.zip",
+            "bytes": 25111335,
+            "sha256": "aac08e5f25bd27b2710de22039efd229b4ee67d8c1e3ffef9456af200e1f74d2"
+          }
+        ],
+        "generating_command": "LOG.md exact compact offline build at996fedc; compact_pack/README.md runtime generation",
+        "checker": "independent-checks-compact-pack.md; evidence/compact/fixture-summary.json",
+        "summary": "compact-delivery.md; evidence/compact/delivery.json",
+        "retention": "local complete inputZIP/source/tree and fixture01/02 retained; AC permits server-local unsampled certificates without complete cold transfer; exact production documented"
+      },
+      "compact-actual-return": {
+        "source_commit": "996fedcad4ba79a28e45a3fe3678adc12f1e5358",
+        "artifacts": [
+          {
+            "path": "local-output/argmax-bridge-20261105/actual-return-20261107/return.tar.gz",
+            "bytes": 36045486,
+            "sha256": "b00fd57f85ce6d96a6c1fa01e2307abd815088bb8fcb28b1587657ef142b109a"
+          },
+          {
+            "path": "local-output/argmax-bridge-20261105/actual-return-20261107/verify-n199/raw-evidence.json",
+            "bytes": 158392,
+            "sha256": "0ea31da950c58e36de667e39df248efdeabdb8f1b462af782f93a7ca3af4dc38"
+          },
+          {
+            "path": "local-output/argmax-bridge-20261105/actual-return-20261107/verify-n238/raw-evidence.json",
+            "bytes": 158460,
+            "sha256": "63416714d9b7dac4859bc501872c277d5ad5dc000b5fd66f1f16495546ad4dde"
+          },
+          {
+            "path": "local-output/argmax-bridge-20261105/actual-return-20261107/RESULTS.json",
+            "bytes": 12847,
+            "sha256": "57d1b95deed600fd869fc54d2ee8a01676fa59230e0ee27dab32e4dc82cd4ee7"
+          }
+        ],
+        "commands": "compact-return.md; compact_pack/README.md; evidence/compact-return/preregistration.json",
+        "checker": "compact_pack/verify_compact.py with manifest5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16; independent released validate_pass for sampled replays",
+        "result": "All280pairs/560rational proofs PASS; both sampled full histories199/238 PASS; exactly2fresh native checks EXIT0 independently accepted",
+        "short_summary": "evidence/compact-return/summary.json",
+        "retention": "Actual compact return uploaded by AC in two chat attachments; ephemeral sandbox copies and new raw replay histories, external cold delivery/retrieval unverified. Unsampled full histories remain Syvert-local as AC authorizes; regeneration source/pins/commands documented."
+      }
+    },
+    "files": [
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/frozen-7d394fd/current-docs.diff",
+        "bytes": 25886,
+        "sha256": "0bd8b2111a0d04836bb35592aece65b19f41ccc363f21f9665d602d06c16948a"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/frozen-7d394fd/topics/padua-argmax-effective-2-20261105/attempts/H1.md",
+        "bytes": 6967,
+        "sha256": "624d65e861c0f2d0afbcae7cd867d247d68bce54ef9b2d372292640a6c50a1aa"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/frozen-7d394fd/topics/padua-argmax-effective-2-20261105/theory/corner-n2-local-radius.md",
+        "bytes": 3893,
+        "sha256": "280cfe73bc4ca82485a5f8df58ebbb864fd471a91403ac1b7849cdb4065bb5ad"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/frozen-7d394fd/topics/padua-argmax-effective-2-20261105/theory/defect-radius-extension.md",
+        "bytes": 9311,
+        "sha256": "a56fedfb1897c7bdbd1d761d7016e2bd0a016ccc7264440d05aa35a0d5d60a0d"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/frozen-7d394fd/topics/padua-argmax-effective-2-20261105/theory/phase-structure.md",
+        "bytes": 14394,
+        "sha256": "130820b34725a58e3dfd78602917d4eb77eb45d9476cae62532aa2579c42cbe4"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/build-checker.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/build-checker.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/build-n24/n24-input.txt",
+        "bytes": 11811,
+        "sha256": "554b93326f26939c173a0d12431d8cbaab8b6384f9845d70cd31796dbdb455c6"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/build-n24/n24-native.txt",
+        "bytes": 11706,
+        "sha256": "7084654c66b9e83771d4924fa966d57f4cbd3b28b45101f08cf1f881969c88ce"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/build-n24/native-producer",
+        "bytes": 31112,
+        "sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/build-n24/producer-build.c",
+        "bytes": 9360,
+        "sha256": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/check-n24-committed.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/check-n24-committed.stdout",
+        "bytes": 571,
+        "sha256": "adb7b563ceb7fcaec16bd3c192b4405816698d0d65e648e383ab48c6dd20fdb8"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/check-n24-regenerated.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/check-n24-regenerated.stdout",
+        "bytes": 566,
+        "sha256": "2c4e11edabbc82282f13b51b5d0c1b819273ae3ea2e01caabd813d70cd1fe904"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/checker",
+        "bytes": 67496,
+        "sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/n24-committed-check.json",
+        "bytes": 611,
+        "sha256": "e6361ed919ff517461a385ee18bbc2e2b553d1358dfb41075cb237f978ac137e"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/n24-regenerated-check.json",
+        "bytes": 606,
+        "sha256": "fb909d8c35de7fc6715fee9b792bacbf79fe6b285d4d524dc5ba0a959d55339c"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/n24.json.gz",
+        "bytes": 5093,
+        "sha256": "769829898cd2a101a91252da072095858fbc68d998101f463a068b29ff08b1fb"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/pilot-n32.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/pilot-n32.stdout",
+        "bytes": 517,
+        "sha256": "eb5494d7ddf28ea864ed4e9ebd310883a1258a8295b42036f8afc34fabe3d2d9"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/pilot/box-frontiers.json",
+        "bytes": 74279,
+        "sha256": "7e3c9b50d9eed480ed50341a72630e6c34c170993b321e3292844ce7f2cb4f80"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/pilot/box-pilot.json",
+        "bytes": 4431,
+        "sha256": "7cc2ba079954f83fab45fba01bd9917b899f9dc0db3f9c45f7a3fd5ab0767950"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/pilot/box-trace.jsonl",
+        "bytes": 457873,
+        "sha256": "4d318801d1694e832ac7ec14872ff43cb67a072bc395fe6db1b85ca4109c98be"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/pilot/box-validation.json",
+        "bytes": 69331,
+        "sha256": "14e6f43a4595239c6cdd96b73065f107c5a32f14f4a5feb9c36ed36049593dc9"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/pilot/box_pilot.so",
+        "bytes": 24312,
+        "sha256": "7548dda88316fe62aa617ffbb4e3e835a8aca2951f43b529f63581c0dcf4f7d2"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/pilot_n32.py",
+        "bytes": 8689,
+        "sha256": "81fb9097f568f6763d07ca61b5c28febd925f8c6bce5b2d71a7e0ce804dbbe83"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/produce-n24.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b0/replay-20261105/produce-n24.stdout",
+        "bytes": 240,
+        "sha256": "6838fe48ec6ef5a1d4b08357e9f34687acaa2bca853c33d87229e8fdc80e43ce"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b1/b1.so",
+        "bytes": 15776,
+        "sha256": "58855673ba6e64eb18af0c1199489c0fd45c3905cb33221ae3fd76930c67a92d"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b1/details.json",
+        "bytes": 51114,
+        "sha256": "77ca24c5387f3986ac6cdb2ea0af801cb55303efff985ca7c7a13482aea43d08"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b1/samples.jsonl",
+        "bytes": 3530581,
+        "sha256": "fd131abb02bdb8d09010b856c84830894e31216ca60b4cc0faec251afd4ddcd6"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/b1/validation.json",
+        "bytes": 266089,
+        "sha256": "d494f9d63e1b8daa04a6ee536c3e2485d0c6100ad0a681fc7f4dbabd968b0da3"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/d01-record-preservation/c03-full-postcheck.json",
+        "bytes": 1813,
+        "sha256": "be2edc4ecdb5faf9f47cb60b4f3675dbd2e5df057aff37e3a4d7475fef11f983"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/d01-record-preservation/c13_split_records.py",
+        "bytes": 21654,
+        "sha256": "fa803c55cd5d883df001be82aec4915716b3b7742365821a1cc813cda22d0612"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/d01-record-preservation/padua-C13-onset-budget-6cc04de4d3cc8303c3660043bf15b92e50c527ffd21e10747cdc49de3ec3f070.md",
+        "bytes": 22065,
+        "sha256": "6cc04de4d3cc8303c3660043bf15b92e50c527ffd21e10747cdc49de3ec3f070"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/artifact-manifest.json",
+        "bytes": 6906,
+        "sha256": "3f9a9288cd4a19f7893468f377701fceba8d18fa0f34c782da57f71b2c65632d"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/build-inputs.json",
+        "bytes": 5865,
+        "sha256": "9b5fc7e91de6cffd59d0cd0fac0eabecbd94497d78b7c4b973eab968526b9f39"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/build.d",
+        "bytes": 1632,
+        "sha256": "41f6fb1fa6bf490b5449cfa590a60e6d640bd68edb29736ae587e6ac8d6957f3"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/build.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/build.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/commands.json",
+        "bytes": 5347,
+        "sha256": "22ac1fce49fdf2a79eed48733dea47ce859224ed685e0713505cc1a5f4f797d5"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/compiler-float-macros.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/compiler-float-macros.stdout",
+        "bytes": 16506,
+        "sha256": "6b1c3617b3f8d626d7fef33a94ab0df9a65fadfafe407abdbe464a667f6072bd"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/compiler-version.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/compiler-version.stdout",
+        "bytes": 231,
+        "sha256": "78fc11ae2c3ff7c235eb18ed90989d18f6cc864fb27027f839368cd0888deebc"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/controls-loaded.maps",
+        "bytes": 6842,
+        "sha256": "13f0ab2f484bcce15dc3a68e3333e08064b90ad2994b3c9b75a0990db3efad64"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/controls-runtime.json",
+        "bytes": 16436,
+        "sha256": "5a86fb7b8d2ca5c19106ade2d79bf3e2e7d70d831ef97bfa141e4bd4e86402d0"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/controls.json",
+        "bytes": 1294,
+        "sha256": "45d200a7763e4c1e3554d35f5dba404ad33a990464c3d3d5ce7d73525f47d6f5"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/controls.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/controls.stdout",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/eighth-loaded.maps",
+        "bytes": 6842,
+        "sha256": "c3535f8eee56871a089dd87b95622dfcebd70874a971d521f6a24ffbadbc66aa"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/eighth-runtime.json",
+        "bytes": 16436,
+        "sha256": "5a86fb7b8d2ca5c19106ade2d79bf3e2e7d70d831ef97bfa141e4bd4e86402d0"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/eighth.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/eighth.stdout",
+        "bytes": 621,
+        "sha256": "35b4b55220c3fcf9f2f149401ffb754e1a478a3a80cd8efc4fc3db29ba8d0b6c"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/float-format.json",
+        "bytes": 268,
+        "sha256": "56917b788af1e0bf569e047ac3f3a6ab000c6ab3fe17649b3335961c115e517d"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/half-loaded.maps",
+        "bytes": 6842,
+        "sha256": "42ce12a5fbc6d8c32b0f7a994493381e9461e26cf03d9c0d5dc4a5b065cc5fb0"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/half-runtime.json",
+        "bytes": 16436,
+        "sha256": "5a86fb7b8d2ca5c19106ade2d79bf3e2e7d70d831ef97bfa141e4bd4e86402d0"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/half.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/half.stdout",
+        "bytes": 611,
+        "sha256": "e7fac83b5c81acbb2189469c5f29b9de2fa4a910472013c4fb9d4ee751dbdbcf"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/pilot.so",
+        "bytes": 32664,
+        "sha256": "37beb0015107311dd140c34df6548b4b5c6fd29b2dd3ed2acb67fd34d89ca2b9"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/preregistration.json",
+        "bytes": 1184,
+        "sha256": "50bbc9ea9ca63228ed7906bfc94c6df2b8318407d0ec49bee3b8475e2356c444"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/receipt-initial.json",
+        "bytes": 6708,
+        "sha256": "2b9eafd178f4a041becb8cfadd73fa512bb1c52d8a6e773e4e93cdac5f108631"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/rho-1-2-checkpoint.json",
+        "bytes": 89502,
+        "sha256": "a29e90f0c8d2d88d113f8e3a0a5d8a46083b277e0f0655a933915e49063ef4c8"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/rho-1-2-partition.json",
+        "bytes": 90288,
+        "sha256": "72db1d896bfb16d19dcb8eb29e4655625445324eac8156b58c98ca9def30573e"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/rho-1-2-summary.json",
+        "bytes": 671,
+        "sha256": "162ae125cc3a8f5e167ad3101758f2952e29608136a934a9bb2e954ce3f422ef"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/rho-1-8-checkpoint.json",
+        "bytes": 88220,
+        "sha256": "cb8593171a4647d4c1b85e30b7098f4f72ee617836d4f780b497bb6f509ed3db"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/rho-1-8-partition.json",
+        "bytes": 89265,
+        "sha256": "e59d1f5823a94a34602bc0d28c369a3b58cf57ea8c4361384df677302322dda5"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/rho-1-8-summary.json",
+        "bytes": 681,
+        "sha256": "d6687ac0c0e8aade7b0c1b5407e403565cfe67ea4b124e15325e915991f03784"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/post-audit-D03/near-only/run-summary.json",
+        "bytes": 6062,
+        "sha256": "e0e8d438849a5e6018e43f13999f97ea45a40a5f1c16d08ccb97799337c48904"
+      }
+    ],
+    "retention": "ephemeral sandbox; transfer/retrieval pending; regenerate from pinned code, historical timing bytes not guaranteed"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "status": "Candidate outward narrow leaves; independent checker pending; every cover incomplete",
+  "command": "python topics/padua-argmax-bridge-20261105/code/n3_phase_samples.py",
+  "samples": [
+    {
+      "label": "far",
+      "kind": "far",
+      "box": [
+        0.3996019952442096,
+        0.40036898563815243,
+        0.29989324403164297,
+        0.30066023442558576
+      ],
+      "values": [
+        8.350333799835687,
+        8.29118015636083,
+        0.0,
+        0.0,
+        8.368104645156592,
+        8.308861543611307
+      ],
+      "output": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-calibration-v1/n17-sample-far.json",
+        "bytes": 3146,
+        "sha256": "c9b48003767936f5b29ef5e941944b57c6a3487b6757542e6281280dd577609a"
+      }
+    },
+    {
+      "label": "corner-orbit",
+      "kind": "far",
+      "box": [
+        0.04985437560628335,
+        0.050046123204769054,
+        0.04985437560628335,
+        0.050046123204769054
+      ],
+      "values": [
+        8.61398560103102,
+        8.611388329102956,
+        0.0,
+        0.0,
+        8.677263369328303,
+        8.67465741458988
+      ],
+      "output": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-calibration-v1/n17-sample-corner-orbit.json",
+        "bytes": 3343,
+        "sha256": "67fbb4a607adf6f79e245d1835df842b7120fc3a2eb6d1b0e5d9795411aa0ecc"
+      }
+    },
+    {
+      "label": "nonlocal-defect",
+      "kind": "corner-orbit-plus-defect",
+      "box": [
+        0.00499742178553369,
+        0.005009406010439047,
+        9.587379924285259e-05,
+        0.00010785802414820916
+      ],
+      "values": [
+        8.618115453830674,
+        8.617914810996137,
+        0.5907416047870462,
+        1.0,
+        8.622631068287259,
+        8.62243050645938
+      ],
+      "output": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-calibration-v1/n17-sample-nonlocal-defect.json",
+        "bytes": 3820,
+        "sha256": "c0ffd540ea58144e362e6867bcc03fb064aad1d3150e0e17778fe3865857aa83"
+      }
+    },
+    {
+      "label": "local",
+      "kind": "local-corner-plus-defect",
+      "box": [
+        0.00029960562263391436,
+        0.0003115898475392709,
+        0.00029960562263391436,
+        0.0003115898475392709
+      ],
+      "values": [
+        8.617960082194347,
+        8.617947595366669,
+        0.584021775994555,
+        1.0,
+        9.005840483955824,
+        9.0058282277828
+      ],
+      "output": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-calibration-v1/n17-sample-local.json",
+        "bytes": 3823,
+        "sha256": "4bb3143427b11e4e81205395ccdf3745e4eaf78f4daa4351eb4aba3c7b45fe15"
+      }
+    }
+  ]
+}

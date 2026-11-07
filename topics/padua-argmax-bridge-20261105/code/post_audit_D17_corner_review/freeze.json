@@ -1,0 +1,30 @@
+{
+  "inputs": {
+    "code/post_audit_D08_review/check.py": {
+      "bytes": 8577,
+      "sha256": "37e58bc880259c27cd2282dab48231f11822452d6fd2db876c846d1b9a008485"
+    },
+    "code/post_audit_D17_corner/SPEC.md": {
+      "bytes": 1922,
+      "sha256": "a2fbdfc1e46005e64fc21bdf74dd67a2e399f32d22e9e1f8e7e988f333b1c6bf"
+    },
+    "code/post_audit_D17_corner/budget-4096.json": {
+      "bytes": 5321,
+      "sha256": "c9a9c60168ec435d056d81777389754d4f186bf953a19db02554c4ec0dd0a8e6"
+    },
+    "code/post_audit_D17_corner/evaluate.py": {
+      "bytes": 4140,
+      "sha256": "b40c7aecb19cb83631bbe6ae2945ac7a34f5c163e7867f151c4d8c573177c57a"
+    },
+    "code/post_audit_D17_corner_review/SPEC.md": {
+      "bytes": 2186,
+      "sha256": "f14683eae119b69988213193e83a35f5307a55b20db6c00e56d3a17853a970d0"
+    },
+    "code/post_audit_D17_corner_review/check.py": {
+      "bytes": 6072,
+      "sha256": "3019970655739fc3d8d08bd20294a564663bade0b2ee25bc89577f25974b9842"
+    }
+  },
+  "status": "FROZEN_BEFORE_SINGLE_N4096_EXECUTION",
+  "utc": "2026-11-06T19:37:46Z"
+}

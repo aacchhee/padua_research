@@ -1,0 +1,48 @@
+{
+  "candidate": "836dcbf098ecb391b740fa884e594e260b74705e88d26339dcc5cba9bbbf673f",
+  "cases": [
+    {
+      "case": "parentdeath",
+      "exit": 0,
+      "wall": 0.22437788799288683,
+      "observer_cleanup": []
+    },
+    {
+      "case": "reboot",
+      "exit": 0,
+      "wall": 0.6226662739936728,
+      "observer_cleanup": []
+    },
+    {
+      "case": "preflight",
+      "exit": 0,
+      "wall": 0.2226873479958158,
+      "observer_cleanup": []
+    },
+    {
+      "case": "deleted",
+      "exit": 0,
+      "wall": 0.2208387699938612,
+      "observer_cleanup": []
+    },
+    {
+      "case": "partial",
+      "exit": 0,
+      "wall": 0.621015893004369,
+      "observer_cleanup": []
+    },
+    {
+      "case": "zipbounds",
+      "exit": 0,
+      "wall": 0.06938613200327381,
+      "observer_cleanup": []
+    },
+    {
+      "case": "pin",
+      "exit": 0,
+      "wall": 0.12101075099781156,
+      "observer_cleanup": []
+    }
+  ],
+  "scientific_executions": 0
+}

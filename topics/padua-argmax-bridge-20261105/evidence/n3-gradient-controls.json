@@ -1,0 +1,56 @@
+{
+  "status": "MEASURED developer cross-formula controls only",
+  "python": "3.12.14",
+  "command": "python topics/padua-argmax-bridge-20261105/code/n3_gradient_controls.py",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_gradient_controls.py",
+      "bytes": 2925,
+      "sha256": "dcab8806bfd472fb2bb12e5977af728c5e737117dfeb7029fb48b681e20c0b0c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_meanvalue.c",
+      "bytes": 3606,
+      "sha256": "4739e36d05d75ce4389118364a2e2a693d2b14d87a8b79e84aa5199d6bb6a86a"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward.c",
+      "bytes": 4830,
+      "sha256": "cfeae9fe2b61e9c7ec2c4d943762ac988e64fa02652ccfe4342430c4ee5f22dd"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_interval.h",
+      "bytes": 4215,
+      "sha256": "6dca513ddbd94264d454872c9f5e753e355d15b49152dc4b19d51cff7635131b"
+    }
+  ],
+  "controls": [
+    {
+      "binary": {
+        "path": "local-output/argmax-bridge-20261105/N3/float-v1/box_pilot.so",
+        "bytes": 32664,
+        "sha256": "37beb0015107311dd140c34df6548b4b5c6fd29b2dd3ed2acb67fd34d89ca2b9"
+      },
+      "scalar_comparisons": 1296,
+      "maximum_absolute_violation": 1.3642420526593924e-12,
+      "maximum_scaled_violation": 2.372782105477431e-13,
+      "within_diagnostic_tolerance": true
+    },
+    {
+      "binary": {
+        "path": "local-output/argmax-bridge-20261105/N3/n3_outward.so",
+        "bytes": 37208,
+        "sha256": "13d0060f45c7ca9fb58f52be5cc36da8796763b741857316fcbe4ed824d7c9b8"
+      },
+      "scalar_comparisons": 1296,
+      "maximum_absolute_violation": 3.974598428158014e-14,
+      "maximum_scaled_violation": 3.974598428157682e-14,
+      "within_diagnostic_tolerance": true
+    }
+  ],
+  "limits": [
+    "Direct comparison uses binary64/libm and tolerance1e-10*(1+abs(reference)).",
+    "No exact numerical error bound or different-agent acceptance is supplied.",
+    "Point/corner samples do not validate all interval boxes."
+  ]
+}

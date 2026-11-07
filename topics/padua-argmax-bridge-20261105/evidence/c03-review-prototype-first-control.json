@@ -1,0 +1,27 @@
+{
+  "status": "CONTROL_ASSERTION_FAILED; not a containment failure",
+  "exit_status": 1,
+  "source_snapshot": {
+    "path": "/tmp/c03-review-first-0b_q79i4/control.py",
+    "bytes": 10681,
+    "sha256": "98cae2339c78fbaab309db70658fabb364ce48f82f950f1a3a356865a7adac7e"
+  },
+  "case": {
+    "mode": 0,
+    "k": 8,
+    "turn": 0,
+    "lo": 0.0,
+    "hi": 0.5
+  },
+  "assertion": "chart includes numerator zero and negative lobe",
+  "diagnosis": "Ideal endpoint k*r=4 is inflated by Arb hull construction; actual literal chart guard conservatively rejects. Valid global caps returned. Diagnostic must permit rejection on actual expanded endpoints.",
+  "observed_diagnostic_bounds": [
+    -8.000000014901161,
+    8.000000014901161,
+    -32.000000059604645,
+    32.000000059604645
+  ],
+  "observed_endpoint_refinements": 0,
+  "observed_base_fallbacks": 1,
+  "timing_limitation": "Early assertion preceded final timing receipt; exact failed-process CPU unavailable. No source correction or full replay occurred."
+}

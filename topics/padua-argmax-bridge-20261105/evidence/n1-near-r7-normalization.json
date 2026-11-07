@@ -1,0 +1,54 @@
+{
+  "cases": [
+    {
+      "absolute_discrepancy": "1.61798397224389684385745665398283230255346556386750345460629e-59",
+      "corner": "8.61794782499360127361610952101988388165975890104862444190828",
+      "n": 17,
+      "periodic_polynomial_collisions": 1,
+      "primitive": "8.61794782499360127361610952101988388165975890104862444190829"
+    },
+    {
+      "absolute_discrepancy": "4.97841222228891336571525124302409939247220173497693370648089e-60",
+      "corner": "9.87251253579614620774146048819393408232438488976387233630059",
+      "n": 24,
+      "periodic_polynomial_collisions": 1,
+      "primitive": "9.8725125357961462077414604881939340823243848897638723363006"
+    },
+    {
+      "absolute_discrepancy": "2.48920611114445668285762562151204969623610086748846685324045e-60",
+      "corner": "10.9935945411004434443301080985276022098079268255714317032044",
+      "n": 32,
+      "periodic_polynomial_collisions": 1,
+      "primitive": "10.9935945411004434443301080985276022098079268255714317032044"
+    }
+  ],
+  "command": "python topics/padua-argmax-bridge-20261105/code/n1_near_r7_normalization.py",
+  "cpu_cap_seconds": 300,
+  "cpu_seconds": 0.31307493,
+  "decimal_precision": 60,
+  "degrees": [
+    17,
+    24,
+    32
+  ],
+  "dependency_sha256": {
+    "code/n1_rows.py": "c8461f7f3c61e54a20844c624a1d7f094d7a8375fc798caa2fb924e328b85e46"
+  },
+  "input_head": "8dc1521cf68f7780bd10e02495f6f71a639c03c6",
+  "limits": "Floating arithmetic; no rigorous roundoff enclosure, no fit, no M_near validity inference below 1e6.",
+  "mpmath": "1.3.0",
+  "phase_alpha_beta": [
+    0,
+    0
+  ],
+  "python": "3.12.14",
+  "rational_controls": {
+    "H10_minus2303_over1000_minus1over20_gt23over40": true,
+    "coefficient_rational_upper": "-1/48",
+    "exp_2303_over_1000_partial_order10_gt10": true,
+    "log28over11_artanh_order3_gt37over40": true,
+    "pi_lower31over10_squared_gt48over5": true
+  },
+  "source_sha256": "4e78df28472e1c9464dda5e0739b333b927d19d5addcde3688c309cb150d3e5e",
+  "status": "MEASURED_ONLY; normalization, not M_near evaluation or a proof"
+}

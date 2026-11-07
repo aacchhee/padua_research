@@ -1,0 +1,76 @@
+{
+  "status": "PREPARED_FOR_INTERIM_CLAUDE_AUDIT_BRANCH_WORK",
+  "source_commit": "498f4f4c896d9b4a3ac1b5603b27e5fa21b58aeb",
+  "archive": {
+    "path": "local-output/argmax-bridge-20261105/final-syvert2-498f4f4c896d9b4a3ac1b5603b27e5fa21b58aeb.zip",
+    "bytes": 25104521,
+    "sha256": "8274249ffd5fbefc4723e360c68c51d6349a3729c8c577e902ed89ee5921e38b"
+  },
+  "runtime_manifest": {
+    "path": "local-output/argmax-bridge-20261105/final-syvert2-498f4f4c896d9b4a3ac1b5603b27e5fa21b58aeb/runtime_manifest.json",
+    "bytes": 50509,
+    "sha256": "33c9b490b65e79d22f08ddfdca7643383bdabb00d3bd31a66793a17fa9e142dd"
+  },
+  "archive_review": {
+    "path": "topics/padua-argmax-bridge-20261105/independent-checks-final-syvert2-pack.md",
+    "sha256": "9267aa77a893511cd04b691bea11cd94eec79fa923bdb1422b52cf484aafe323",
+    "scope": "independent read-only actual239entries/232manifest/29Git-source/13FREEZE/6packages/5modes/worklist/activearith inspection",
+    "verdict": "ACCEPT"
+  },
+  "plan": {
+    "target": "syvert2",
+    "known_small": [
+      41,
+      42,
+      63,
+      64,
+      159,
+      160,
+      511
+    ],
+    "residual_large_ranges": [
+      [
+        43,
+        62
+      ],
+      [
+        65,
+        158
+      ],
+      [
+        161,
+        319
+      ]
+    ],
+    "large_count": 273,
+    "total_count": 280,
+    "passes_per_case": 2,
+    "max_workers": 40
+  },
+  "validated_scope": {
+    "hybrid_known_primary_and_distinct_fresh": [
+      41,
+      511
+    ],
+    "known_native_invocations": 4,
+    "CPU_checkpoints_sum": 28.060015,
+    "synthetic_ops03_control_events": 67,
+    "genuine_saved_data_passes": 4,
+    "prior_ops01_02_failures_preserved": true
+  },
+  "unexecuted": [
+    "residual-degree campaign",
+    "numerical pack job",
+    "Syvert2/remote run",
+    "target compatibility/capacity preflight",
+    "INTERIM Claude audit",
+    "physical cold-storage transfer"
+  ],
+  "target_requirement": "Linux x86_64 LP64/CPython>=3.10; GMP glibc>=2.38 necessary, not universal compatibility; target system runtime is used",
+  "retention": {
+    "status": "ephemeral Padua local working artifact; external transfer/retrieval PENDING",
+    "authorized_destination": "Downloads\\padua\\cold_storage\\padua-argmax-bridge-20261105\\",
+    "regeneration": "published source plus six exact public Debian packages; no historical timing reproduction claim"
+  },
+  "readiness": "WORK; research P1-P4 unwaived; no merge or bulk execution release"
+}

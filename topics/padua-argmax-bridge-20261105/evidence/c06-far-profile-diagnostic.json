@@ -1,0 +1,142 @@
+{
+  "status": "MEASURED",
+  "scope": "35 fixed-count continuous model cases, no finite-n primitive evaluation",
+  "input_head": "b6e67b3c78cb668b6d2f9da5a5560537d2960bf3",
+  "source_sha256": "14d16dd46e2bfbf9861a65a2ca7f3116fe0e65ae6460a5801eb8e44dd2007b63",
+  "R": 64,
+  "delta": 0.01,
+  "g_R_last_index": 4096,
+  "L": 13.815510557964274,
+  "corner_polynomial": 96.13339544071485,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "cpu_seconds": 0.3853274350000001,
+  "limitation": "Binary64 quadrature estimates are not rigorous errors. The all-phase model approximation and maximum remain unproved.",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-argmax-bridge-20261105/code/c06_far_profile_diagnostic.py --output /tmp/c06-far-profile-diagnostic-01.json",
+  "exit_code": 0,
+  "raw_path": "/tmp/c06-far-profile-diagnostic-01.json",
+  "raw_sha256": "9a9a13fb6537e295c77ab2cd1b1339649731da7851322b9290b953b21ccf5a59",
+  "raw_bytes": 18441,
+  "controls": [
+    {
+      "u": 0.1,
+      "s": 0.2,
+      "epsilon": 0.3,
+      "direct": -0.4205126189994265,
+      "formula": -0.42051261909435095,
+      "discrepancy": 9.49244571835095e-11
+    },
+    {
+      "u": 0.2,
+      "s": 0.1,
+      "epsilon": 0.3,
+      "direct": -0.22493405784961068,
+      "formula": -0.2249340578475233,
+      "discrepancy": 2.087385819748988e-12
+    },
+    {
+      "u": 0.3,
+      "s": 0.5,
+      "epsilon": 1.1,
+      "direct": -0.11517815124645626,
+      "formula": -0.11517815124645624,
+      "discrepancy": 2.7755575615628914e-17
+    },
+    {
+      "u": 0.2,
+      "s": 0.25,
+      "epsilon": 0.1,
+      "direct": -0.3868358338870471,
+      "formula": -0.38683583576664426,
+      "discrepancy": 1.8795971445939585e-09
+    }
+  ],
+  "cases": 35,
+  "warnings": 0,
+  "worst": {
+    "rho": 0.5,
+    "fraction": 0.5,
+    "alpha": 0.25,
+    "beta": 0.25,
+    "model_minus_corner": -2.4822305655170993,
+    "constant": 1.8238541299255076,
+    "b": 1.221532912486496,
+    "integration_error_estimate": 4.2710489900574484e-09
+  },
+  "max_quadrature_estimate": 1.2295798551579583e-08,
+  "rho_maxima": [
+    {
+      "rho": 0.5,
+      "fraction": 0.5,
+      "alpha": 0.25,
+      "beta": 0.25,
+      "model_minus_corner": -2.4822305655170993,
+      "constant": 1.8238541299255076,
+      "b": 1.221532912486496,
+      "integration_error_estimate": 4.2710489900574484e-09
+    },
+    {
+      "rho": 0.75,
+      "fraction": 0.5,
+      "alpha": 0.375,
+      "beta": 0.375,
+      "model_minus_corner": -5.5560731838246085,
+      "constant": 1.7878337326358995,
+      "b": 1.216684759323226,
+      "integration_error_estimate": 4.200367011331921e-09
+    },
+    {
+      "rho": 1.0,
+      "fraction": 0.5,
+      "alpha": 0.5,
+      "beta": 0.5,
+      "model_minus_corner": -9.791976654125463,
+      "constant": 1.7360001194801877,
+      "b": 1.2101705021511684,
+      "integration_error_estimate": 3.876185174571848e-09
+    },
+    {
+      "rho": 1.5,
+      "fraction": 0.5,
+      "alpha": 0.75,
+      "beta": 0.75,
+      "model_minus_corner": -21.453481705535395,
+      "constant": 1.590099470251376,
+      "b": 1.1935334924598764,
+      "integration_error_estimate": 9.850774165663414e-10
+    },
+    {
+      "rho": 2.0,
+      "fraction": 0.5,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "model_minus_corner": -36.68503165491199,
+      "constant": 1.4005918323580784,
+      "b": 1.1763687794257502,
+      "integration_error_estimate": 7.770752179056326e-09
+    },
+    {
+      "rho": 2.5,
+      "fraction": 0.5,
+      "alpha": 1.25,
+      "beta": 1.25,
+      "model_minus_corner": -54.387237532030035,
+      "constant": 1.1911626454565203,
+      "b": 1.169910574440315,
+      "integration_error_estimate": 4.6403906080787076e-09
+    },
+    {
+      "rho": 3.141592653589793,
+      "fraction": 0.5,
+      "alpha": 1.5707963267948966,
+      "beta": 1.5707963267948966,
+      "model_minus_corner": -77.57926821865257,
+      "constant": 0.9636728489560178,
+      "b": 1.2732395447351619,
+      "integration_error_estimate": 1.4293946467179457e-12
+    }
+  ]
+}

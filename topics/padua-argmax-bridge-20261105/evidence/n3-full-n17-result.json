@@ -1,0 +1,87 @@
+{
+  "status": "MEASURED independent replay enclosure gap; phase proof OPEN",
+  "rules_input": "c000899f3fb10d6ba0f1725341a045fe11ec943a",
+  "collector_source": {
+    "path": "topics/padua-argmax-bridge-20261105/code/n3_full_result.py",
+    "bytes": 3605,
+    "sha256": "e420733b9e9048177e54938add6a2a3be6bc3f0ac926fa491c6982f9d7be2071"
+  },
+  "identity_helper": {
+    "path": "topics/padua-argmax-bridge-20261105/code/n3_native_receipt.py",
+    "bytes": 2979,
+    "sha256": "44990cb6b9e65ee8fe788663be91e7bde71ee6ce77dec7b228d56825f7209577"
+  },
+  "collector_command": "python topics/padua-argmax-bridge-20261105/code/n3_full_result.py",
+  "independent_checker_command": "python topics/padua-argmax-bridge-20261105/code/phase_checker/check.py local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-phase-compact.json --output local-output/argmax-bridge-20261105/phase-checker/n17-full-r3-replay.json",
+  "independent_report": {
+    "path": "local-output/argmax-bridge-20261105/phase-checker/n17-full-r3-replay.json",
+    "bytes": 570121,
+    "sha256": "021ded297f360245fb30a884efe7a3670321e4a736c22873abaa6079cc0257d7"
+  },
+  "candidate": {
+    "path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-phase-compact.json",
+    "bytes": 81585,
+    "sha256": "64f7befd86658c8d9f29b05c1cb5a0162e611b726b161e737610547bed218c4b"
+  },
+  "essential_gzip_local": {
+    "path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-phase-compact.json.gz",
+    "bytes": 5266,
+    "sha256": "80dcb2db069332e018653931bdb94e3995ceca5c9d96741fd1b87110474267a6"
+  },
+  "producer_summary": {
+    "path": "topics/padua-argmax-bridge-20261105/evidence/n3-full-n17-producer.json",
+    "bytes": 4388,
+    "sha256": "46ba9c02c71a34f891e1ef2781fa6fec3803a9b45952ab9b7d4fd694f378d30c"
+  },
+  "build_manifest": {
+    "path": "topics/padua-argmax-bridge-20261105/evidence/n3-full-n17-build.json",
+    "bytes": 9946,
+    "sha256": "8a6f84304f545ef39ed82f12bb00b83e2934a1f710444f615cfaf4011bcf6791"
+  },
+  "independent_checker_binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-r6twy06j/libphase_checker.so",
+    "bytes": 38224,
+    "sha256": "e44379b090a1889cf43f2fc37defebd2c8e1327522b6153b477faddf876e3f32"
+  },
+  "independent_checker_python_sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check.py",
+      "bytes": 9994,
+      "sha256": "8713026a1b5a872f0e8dd33c311eafef2cf310f42ae2eebb4055ad224b8acfae"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5284,
+      "sha256": "a8a805ba27e880a3a5cf1db7d0707dab4a982d7a988b493c822015518ee2e2c2"
+    }
+  ],
+  "complete": true,
+  "accepted": false,
+  "checked_leaves": 1288,
+  "pending": 0,
+  "passing_leaves": 924,
+  "failed_leaves": 364,
+  "failure_counts": {
+    "far": 184,
+    "corner-orbit-plus-defect": 180
+  },
+  "independent_cpu_seconds": 60.60368947,
+  "first_failure": {
+    "root": 0,
+    "path": "01010",
+    "kind": "far",
+    "valid": false,
+    "bounds": [
+      12.86916394136224,
+      11.398460326270724,
+      0.0,
+      8.6179478249936,
+      8.617947824993601,
+      3.141592653589793,
+      3.1415926535897936
+    ]
+  },
+  "interpretation": "The distinct finite-cosine interval kernel did not establish sufficient inequalities on 364 broad leaves. This is not a witnessed function counterexample or a proof that the producer arithmetic is unsound. All 28 inherited-local and 32 outside leaves passed. No mathematical proof promotion or finite-range extension follows.",
+  "next_unexecuted": "After stage publication and authorization, strengthen the independent quotient kernel or refine geometry and independently replay a newly frozen candidate. No refinement was run at this boundary.",
+  "retention": "Large original trace and independent full report remain local; cold-storage archival pending. Essential compact gzip fits the evidence limit and its decompressed exact bytes are pinned above."
+}

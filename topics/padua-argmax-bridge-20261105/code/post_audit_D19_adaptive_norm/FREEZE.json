@@ -1,0 +1,18 @@
+{
+  "status": "UNEXECUTED metadata source freeze; no native execution",
+  "input_head": "0768cb93c4f829faf5f38d47cdd7e33faad8bf64",
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D19_adaptive_norm/check.py",
+  "whole_process_CPU_hard_limit": 2,
+  "native_calls": 0,
+  "code": {
+    "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D19_adaptive_norm/check.py",
+    "bytes": 9656,
+    "sha256": "b1721007323b03de815942c8d7db954a231ed733899a2540c1ca347b6973fce3"
+  },
+  "inputs": {
+    "d15-model-free-cover.json": "6be2926071f43d2a619784c16b15c980e6952eaa3cfe4bab0703c14dcc6b3481",
+    "d15-model-free-cover-tree.json": "bff8e2281d4e98f3d8a90a4a811162cbf9b275a1eda182111daac25e3033c685",
+    "d15-review-model-free-cover.json": "7bf8fab38379a97e8e7c9bf57fca0f90510fba609ee46014d86df134b70b87a7",
+    "d15-model-free-cover-final-accounting.json": "c826130c4dfe9b5fb737514942cae5806ed9f1057bbd39c9f7b2d0b9c4114750"
+  }
+}

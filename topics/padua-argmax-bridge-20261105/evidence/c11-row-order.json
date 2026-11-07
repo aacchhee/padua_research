@@ -1,0 +1,224 @@
+{
+  "scope": "MEASURED C11 J16 backend validation and fixed point-cost pilot only",
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/partial.cpp",
+      "bytes": 7688,
+      "sha256": "bde1ce4850849dd402acc91eb3cee7d40883bbd51d5f7cff13334abc0f4ee23c"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/controls.cpp",
+      "bytes": 1640,
+      "sha256": "844e053a70bda2daa6a9ab969d395052eff4f366c438d14fe19226c776d50f56"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/control.py",
+      "bytes": 4475,
+      "sha256": "5bd4544d26562281d74f46ec58ae5be4cfb3d1523f03274ea5acfafbc171e252"
+    }
+  ],
+  "frozen_old_sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C07/point.cpp",
+      "bytes": 6568,
+      "sha256": "8913a96d79f7d687c201f5e38efa5cceec5a18bdc88ed0ada8f578056e7e575e"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C06/partial.cpp",
+      "bytes": 6804,
+      "sha256": "f381738049d793e81a93626bef11eeb1d2a0ff49d0027b6518dd3fec8ff0bcf0"
+    }
+  ],
+  "builder": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+    "bytes": 5703,
+    "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+  },
+  "raw_manifest": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c11-row-order/check-a4xotnid/controls.json",
+    "bytes": 52788,
+    "sha256": "4912bc984060d6ee032a3ed19f84a68e53b1ee75d42d42a935d6f65667e839f1"
+  },
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c11-row-order/check-a4xotnid/libphase_checker.so",
+    "bytes": 145816,
+    "sha256": "3651ac513455e685d9c05ccb5c6ef56cb9afb24b9f8244a2061664ff7467a6e3"
+  },
+  "partial_cases": [
+    {
+      "n": 2,
+      "q": 2,
+      "y": "0.5",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 3.339952381331557e-07,
+      "old_radius": 1.1590152589422934e-24
+    },
+    {
+      "n": 3,
+      "q": 2,
+      "y": "1",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 6.597436807975754e-08,
+      "old_radius": 2.2894128598329766e-25
+    },
+    {
+      "n": 7,
+      "q": 6,
+      "y": "1e-30",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 6.677122646459033e-09,
+      "old_radius": 2.55420518252668e-17
+    },
+    {
+      "n": 7,
+      "q": 1,
+      "y": "6.999999999999999999999999999999",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 12196974444544.0,
+      "old_radius": 12196974444544.0
+    },
+    {
+      "n": 33,
+      "q": 31,
+      "y": "0.5",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 6.984514073875292e-11,
+      "old_radius": 2.423734671716399e-28
+    },
+    {
+      "n": 33,
+      "q": 32,
+      "y": "0.25",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 7.209820978085202e-11,
+      "old_radius": 2.5019196597918505e-28
+    },
+    {
+      "n": 64,
+      "q": 33,
+      "y": "0.5",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 5.255624230357959e-12,
+      "old_radius": 1.8237830893664587e-29
+    },
+    {
+      "n": 64,
+      "q": 8,
+      "y": "[0.5 +/- 0.01]",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 0.9959157165139914,
+      "old_radius": 0.9959157165139914
+    }
+  ],
+  "exact_moment_checks": 272,
+  "points": [
+    {
+      "n": 32,
+      "alpha_pi": "1/12",
+      "beta_pi": "1/16",
+      "rc": 0,
+      "cpu_seconds": 0.02763099999999996,
+      "wall_seconds": 0.02763861200219253,
+      "lower": 10.837661142236565,
+      "upper": 10.83766114226722,
+      "radius": 1.5326689082380968e-11,
+      "counts": [
+        128,
+        0,
+        140,
+        0,
+        4,
+        62
+      ]
+    },
+    {
+      "n": 128,
+      "alpha_pi": "1/12",
+      "beta_pi": "1/16",
+      "rc": 0,
+      "cpu_seconds": 0.14985599999999977,
+      "wall_seconds": 0.1498767039993254,
+      "lower": 17.06089684102251,
+      "upper": 17.060896841022704,
+      "radius": 9.331751561395376e-14,
+      "counts": [
+        512,
+        0,
+        588,
+        0,
+        6,
+        254
+      ]
+    },
+    {
+      "n": 512,
+      "alpha_pi": "1/12",
+      "beta_pi": "1/16",
+      "rc": 0,
+      "cpu_seconds": 0.5845579999999999,
+      "wall_seconds": 0.5846303190010076,
+      "lower": 24.81212469792172,
+      "upper": 24.812124697921725,
+      "radius": 4.974002020998141e-16,
+      "counts": [
+        2048,
+        0,
+        2432,
+        0,
+        6,
+        1022
+      ]
+    },
+    {
+      "n": 2048,
+      "alpha_pi": "1/12",
+      "beta_pi": "1/16",
+      "rc": 0,
+      "cpu_seconds": 2.4559990000000003,
+      "wall_seconds": 2.4567385770023975,
+      "lower": 34.08475059276562,
+      "upper": 34.08475059276563,
+      "radius": 2.4641722629481684e-18,
+      "counts": [
+        8192,
+        0,
+        9804,
+        0,
+        6,
+        4094
+      ]
+    }
+  ],
+  "total_cpu_seconds": 5.928865000000001,
+  "total_wall_seconds": 5.932496073997754,
+  "closure_entries": {
+    "headers": 203,
+    "toolchain": 4,
+    "toolchain_dependency_closure": 13,
+    "linked_dependency_closure": 8,
+    "actual_loaded_before": 8,
+    "actual_loaded_after": 8
+  },
+  "result": "PASS"
+}

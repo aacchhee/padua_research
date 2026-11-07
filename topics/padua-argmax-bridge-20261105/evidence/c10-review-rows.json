@@ -1,0 +1,51 @@
+{
+  "scope": "C10 Arb640 moment replacement only; unchanged C07 point integration",
+  "source_hashes": {
+    "partial.cpp": "209fa24300219884b97ce267e898b085593534d97ecc31640909c4c772061ac5",
+    "point.cpp": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9",
+    "controls.cpp": "72a66e861a0c7bb2dbc7b9573f70e8c8b3a7e9eacfa55eec41959cfecb65c8c8",
+    "control.py": "ab3fdfbefba57c135ed4f9e11eb2dc4713b4733be42a61793d542d0d60dac127"
+  },
+  "review_source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C10_review/review.cpp",
+    "bytes": 1889,
+    "sha256": "5e778a05999d1a364db0e7785269d069d70f19b640990d175e892fbbf63b0ead"
+  },
+  "driver": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C10_review/control.py",
+    "bytes": 3891,
+    "sha256": "813c71242e32e258d8f2b7ee26c2a502585469e81b8c632d04099a80b4cc8d79"
+  },
+  "builder": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+    "bytes": 5703,
+    "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+  },
+  "raw_manifest": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c10-review-rows/check-3dfq5ha3/review.json",
+    "bytes": 49750,
+    "sha256": "4f6c172cc1d1712b033d309fe4a0963f89514111105bb6f50e633814ac977c8d"
+  },
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c10-review-rows/check-3dfq5ha3/libphase_checker.so",
+    "bytes": 107880,
+    "sha256": "229b9a8ed414b477c6c6f44fb92e74d3f5da64801541cc5d9d2bb820367ac25f"
+  },
+  "compiler": "x86_64-linux-gnu-g++-14 (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14",
+  "cases": 18,
+  "endpoint_image_containments": 11,
+  "invalid_rejections": 6,
+  "empty_cases": 1,
+  "exact_interval_moment_checks": 1218,
+  "high_precision_input_bits": 1024,
+  "cpu_seconds": 2.084498,
+  "closure_entries": {
+    "headers": 196,
+    "toolchain": 4,
+    "toolchain_dependency_closure": 13,
+    "linked_dependency_closure": 8,
+    "actual_loaded_closure": 8
+  },
+  "result": "PASS"
+}

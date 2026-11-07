@@ -1,0 +1,7 @@
+al=0.250 be=0.250 K_delta=-0.05515 (bound 0.98) cpu=7.2
+al=0.500 be=0.000 K_delta=-0.05055 (bound 0.98) cpu=14.6
+al=1.000 be=0.700 K_delta=-0.18170 (bound 0.98) cpu=22.1
+al=1.500 be=1.500 K_delta=-0.30542 (bound 0.98) cpu=29.5
+al=0.100 be=2.900 K_delta=-0.11176 (bound 0.98) cpu=36.6
+al=1.571 be=1.571 K_delta=-0.28634 (bound 0.98) cpu=43.9
+al=2.000 be=0.300 K_delta=-0.31367 (bound 0.98) cpu=51.3

@@ -1,0 +1,99 @@
+{
+  "status": "MEASURED complete primary; independent fresh native replay and global2048 adoption pending",
+  "release_commit": "0768cb93c4f829faf5f38d47cdd7e33faad8bf64",
+  "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/controller.py --run-once",
+  "metadata_command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/receipt_postprocess.py --run-once",
+  "metadata_helper": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/receipt_postprocess.py",
+    "bytes": 11921,
+    "sha256": "bcccb97c2d06321449f80fc09f8d0fc2d2114eb00ae6e85631d1802502e692a4"
+  },
+  "primary_process_exit": {
+    "returncode": 0,
+    "attribution": "Root directly observed process EXIT0 in exec session97483 and separately read successful final accounting; helper did not infer exit from provisional summary.",
+    "canonical_root_record": "topics/padua-argmax-bridge-20261105/LOG.md#d15-primary2048-execution-observed-by-root"
+  },
+  "final_accounting": {
+    "result": "EXACT_COVER_ACCEPTED_PENDING_INDEPENDENT_REPLAY",
+    "first_failure": null,
+    "total_CPU_through_summary": 229.61625099999998,
+    "reserved_pure_CPU": 2,
+    "complete": true,
+    "final_self_limit": {
+      "waited_child_CPU": 210.48264899999998,
+      "self_CPU_at_tightening": 19.131102,
+      "absolute_self_CPU_hard": 186,
+      "integer_enforcement_reserve_CPU": 1,
+      "additional_reaped": [],
+      "no_live_children": true,
+      "scope": "No subsequent children; waited-child CPU fixed. Absolute self limit bounds final serialization/write/return."
+    },
+    "hard_aggregate_cap": 398,
+    "scope": "Inclusive sample after persisted provisional summary/output and freeze recheck, before final-account serialization and atomic last write. Final serialization/write/return bounded by tightened absolute self limit; acceptance additionally requires process return0."
+  },
+  "raw_final_accounting": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover/final-accounting.json",
+    "bytes": 868,
+    "sha256": "a62661d8578080d3d28584188752bd173ba7145c4bdc794eff55a6caade4ae95"
+  },
+  "essential_receipt": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/evidence/d15-model-free-cover.json",
+    "bytes": 11491,
+    "sha256": "6be2926071f43d2a619784c16b15c980e6952eaa3cfe4bab0703c14dcc6b3481"
+  },
+  "essential_tree": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/evidence/d15-model-free-cover-tree.json",
+    "bytes": 142,
+    "sha256": "bff8e2281d4e98f3d8a90a4a811162cbf9b275a1eda182111daac25e3033c685"
+  },
+  "raw_manifest": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover/preservation-raw-manifest.json",
+    "bytes": 12619,
+    "sha256": "7afdabbdc0eccbe0ee78be91b7cc87ee8430e72627a54dd2f4be81c4f8aab6e8"
+  },
+  "raw_location": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover",
+  "recheck": {
+    "distinct_identity_records": 285,
+    "compiler_headers_preprocessed_binary_loaded_mappings": "PASS metadata identity recheck",
+    "retained_hex_fraction_norm_corner_tree": "PASS; retained data only, no fresh enclosure",
+    "max_depth": 12,
+    "S_points": 51,
+    "actual_lambda_points": 3,
+    "counts_sum": {
+      "S": [
+        409600,
+        20488,
+        531436,
+        28,
+        256,
+        204700
+      ],
+      "lambda": [
+        6150,
+        2,
+        7,
+        7,
+        0,
+        42036,
+        12275,
+        98200,
+        10227,
+        4098,
+        0,
+        0,
+        33
+      ]
+    }
+  },
+  "pure_preflight_CPU": {
+    "author_sample": 0.061098,
+    "independent_whole_process": 0.084,
+    "shared_reserved": 2
+  },
+  "separate_metadata_CPU": {
+    "hard_cap": 2,
+    "before_final_receipt_serialization": 0.30052399999999996
+  },
+  "retention": "Full raw manifest/caches/builds/maps remain whole off Git; cold archive endpoint/retrieval pending root. Clean fresh native replay uses repository sources and essential exact rows/tree; no old binary prerequisite.",
+  "limitations": "Receipt status remains provisional internally; successful final accounting AND root-observed return0 establish primary completion only. No independent native rerun here, no speedup ratio or general solver guarantee."
+}

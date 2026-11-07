@@ -1,0 +1,56 @@
+{
+  "rules_sha": "9847ee1ce5433f1f58718ec66095015c2d93f328",
+  "status": "PREREGISTERED_BEFORE_EITHER_NATIVE_CALL",
+  "requested_model_effort": "gpt-6.1-sol medium; serving metadata unexposed",
+  "archive_sha256": "b00fd57f85ce6d96a6c1fa01e2307abd815088bb8fcb28b1587657ef142b109a",
+  "manifest_sha256": "5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16",
+  "freeze_sha256": "0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb",
+  "sample_seed": "7c79b8e401d9a32f8233f8371c441cd28d82dedd60e46e7c73d211ab099d01d2",
+  "calls": [
+    {
+      "n": 199,
+      "input_bytes": 5680,
+      "input_sha256": "4e58080f60980a94c485e0d8a25558ed2997f38d35ccdb7718533c66ca9becfd",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-E",
+        "-S",
+        "-B",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/compact-release-aea62883/padua30/topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py",
+        "--mode",
+        "verify",
+        "--n",
+        "199",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/verify-n199",
+        "--run-once",
+        "--certificate",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/primary-n199.json"
+      ]
+    },
+    {
+      "n": 238,
+      "input_bytes": 5681,
+      "input_sha256": "52f26a6ff367112122acb5acfd0f0e00b5f061c8a1849cc69383bbf4b2e53043",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-E",
+        "-S",
+        "-B",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/compact-release-aea62883/padua30/topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py",
+        "--mode",
+        "verify",
+        "--n",
+        "238",
+        "--output",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/verify-n238",
+        "--run-once",
+        "--certificate",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/primary-n238.json"
+      ]
+    }
+  ],
+  "LD_LIBRARY_PATH": "/workspace/padua_research/local-output/argmax-bridge-20261105/compact-release-aea62883/padua30/local-output/argmax-bridge-20261105/phase-checker/runtime/extracted/usr/lib/x86_64-linux-gnu",
+  "caps": "unchanged120CPU/pass; engine100checker/2controls, aggregate safety110, original native10/15,1050wall wrapper; no retry, rescue, substitute or primary calls",
+  "runner_sha256": "c281852c1dc91268af384d164034bfba71cec8bc3d09158430cf00248252287e"
+}

@@ -1,0 +1,132 @@
+{
+  "scope": "MEASURED point evaluator cost only; no degree certification",
+  "frozen_sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C07/point.cpp",
+      "bytes": 6568,
+      "sha256": "8913a96d79f7d687c201f5e38efa5cceec5a18bdc88ed0ada8f578056e7e575e"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C06/partial.cpp",
+      "bytes": 6804,
+      "sha256": "f381738049d793e81a93626bef11eeb1d2a0ff49d0027b6518dd3fec8ff0bcf0"
+    }
+  ],
+  "driver": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C09_cost/control.py",
+    "bytes": 5336,
+    "sha256": "33c54b272d157248a550303597a03b750b34d6ef5a04752739ce53fc9643ad30"
+  },
+  "builder": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+    "bytes": 5703,
+    "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+  },
+  "raw_manifest": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c09-row-cost/check-mo1pjlmo/cost.json",
+    "bytes": 57240,
+    "sha256": "70e4e8c8204dfd71858457229d4761e334d6f883b1ee3ce9796b1e0332653072"
+  },
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c09-row-cost/check-mo1pjlmo/libphase_checker.so",
+    "bytes": 95152,
+    "sha256": "8dbbefc964db11d98dbb085b521ebb66650dd192af802ad9b43f7c0368c912d5"
+  },
+  "fixed_inputs": {
+    "degrees": [
+      32,
+      128,
+      512,
+      2048
+    ],
+    "alpha_pi": "1/12",
+    "beta_pi": "1/16"
+  },
+  "cases": [
+    {
+      "n": 32,
+      "phase_alpha_pi": "1/12",
+      "phase_beta_pi": "1/16",
+      "status": "success",
+      "native_return_code": 0,
+      "lower": 10.837661142251891,
+      "upper": 10.837661142251893,
+      "full_arb_radius": 5.318598735445192e-29,
+      "counts": {
+        "retained_evaluations": 128,
+        "ordinary_direct_evaluations": 0,
+        "C06_block_calls": 140,
+        "max_direct_per_row": 0,
+        "max_combined_blocks_per_row": 4,
+        "ordinary_rows": 62
+      },
+      "cpu_seconds": 2.776525,
+      "wall_seconds": 2.776743489001092,
+      "process_exit": 0,
+      "process_cpu_including_startup": 2.8255869999999996,
+      "process_wall_seconds": 2.8259288919980463,
+      "process_cpu_limit": 27
+    },
+    {
+      "n": 128,
+      "phase_alpha_pi": "1/12",
+      "phase_beta_pi": "1/16",
+      "status": "success",
+      "native_return_code": 0,
+      "lower": 17.060896841022608,
+      "upper": 17.06089684102261,
+      "full_arb_radius": 3.238262516276731e-31,
+      "counts": {
+        "retained_evaluations": 512,
+        "ordinary_direct_evaluations": 0,
+        "C06_block_calls": 588,
+        "max_direct_per_row": 0,
+        "max_combined_blocks_per_row": 6,
+        "ordinary_rows": 254
+      },
+      "cpu_seconds": 11.546109,
+      "wall_seconds": 11.546917671999836,
+      "process_exit": 0,
+      "process_cpu_including_startup": 11.588461,
+      "process_wall_seconds": 11.589402485999017,
+      "process_cpu_limit": 24
+    },
+    {
+      "n": 512,
+      "phase_alpha_pi": "1/12",
+      "phase_beta_pi": "1/16",
+      "status": "cpu_cap",
+      "process_exit": -9,
+      "process_cpu_including_startup": 12.671579000000001,
+      "process_wall_seconds": 12.674194331000763,
+      "process_cpu_limit": 12,
+      "native_counts_available": false
+    }
+  ],
+  "stop_reason": "cpu_cap",
+  "total_cpu_seconds": 29.034327,
+  "total_wall_seconds": 29.033460803999333,
+  "closure_entries": {
+    "headers": 195,
+    "toolchain": 4,
+    "toolchain_dependency_closure": 13,
+    "linked_dependency_closure": 8
+  },
+  "actual_loaded_entries": [
+    {
+      "n": 32,
+      "before": 8,
+      "after": 8
+    },
+    {
+      "n": 128,
+      "before": 8,
+      "after": 8
+    },
+    {
+      "n": 512,
+      "before": 8,
+      "after": 0
+    }
+  ]
+}
