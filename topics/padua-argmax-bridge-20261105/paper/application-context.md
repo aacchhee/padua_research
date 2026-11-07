@@ -1,9 +1,11 @@
-# Proposed application context for the introduction
+# Application context for the introduction
 
-Editorial recommendation, 7 November 2026. AC asks whether the original
+Adopted in the introduction on 7 November 2026, source commit
+4050f6861a44a88ec5d7941787703fbbe9d9ce4a. The following records the
+proposal and its source checks. AC asks whether the original
 Van Barel–Chesnokov paper can be cited naturally, alongside a few Padua
-applications. This is a proposed paragraph, not a new theorem, novelty
-claim or an inserted manuscript revision. The compiled article is unchanged.
+applications. The approved paragraph supplies application context for the existing
+interpolation results. Its three citations are included in the bibliography.
 
 Place one short paragraph after the opening discussion of stability and
 the general Padua construction, before the main theorems. Group concrete

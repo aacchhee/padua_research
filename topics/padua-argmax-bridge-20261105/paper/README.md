@@ -97,3 +97,20 @@ and all seven mathematical/bibliography source hashes from the accepted
 Solmax review, and compiled the46-page update. No mathematical re-audit
 or new scientific numerical execution was needed. The original audited
 46-page PDF is preserved under local-output/.../paper/audited-46-pages/.
+
+## Affirmative prose and applications — 7 November 2026
+
+The introduction now includes the approved application paragraph: discrete
+orthogonal-polynomial/least-squares computations, Fredholm integral-equation
+methods and continuous-variable quantum tomography. Thirteen references
+appear in alphabetical numerical order. Source scope is recorded in
+[application-context.md](application-context.md).
+
+The prose throughout now states the results and the requirements of each
+argument directly. Redundant defensive contrasts have been removed. The
+focused Sol max [meaning/style review](affirmative-style-review.md) accepts
+the edits as preserving the mathematical and computational scope. All 204
+displayed math blocks and both main theorem statements are unchanged.
+The compiled draft remains 46 pages. BUILD.md records the current timestamped
+download copy; the previous full Solmax correctness audit remains the
+mathematical baseline.

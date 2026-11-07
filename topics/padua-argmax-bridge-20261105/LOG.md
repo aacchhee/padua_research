@@ -2419,3 +2419,47 @@ Currentpublication-preparation21 is redirected to22WORK for this explicit
 wholepaperstyle/application edit. Timestampeduser-facing PDF links remain
 required after the previouslyobserved cachedmain.pdf link. No extraapproval
 request or deniedPRmetadata retry is made.
+
+### Whole-paper prose edit and focused Sol max review complete
+
+The source frozen at `4050f6861a44a88ec5d7941787703fbbe9d9ce4a` adopts
+the approved application paragraph and edits all seven active TeX files
+toward direct descriptions of results and proof requirements. The three
+application references are included in the 13-entry alphabetical
+bibliography. Paper/application-context.md records the adopted paragraph
+and the inspected source passages.
+
+The distinct Sol max reviewer accepts the frozen diff against `c4d6928`,
+with no unresolved finding; see paper/affirmative-style-review.md. All 204
+displayed math blocks and both main theorem statements are byte-identical.
+The reviewer inspected every changed passage in context, including actual
+near/far guards, strictness, grid-norm requirements, trusted arithmetic
+and selective-retention scope. Root's clarification distinguishes complete
+history inspection at degrees 199/238 from fresh native verification at
+those degrees. The actual record remains explicit. Requested developer
+Sol medium and reviewer Sol max identities are recorded; serving-model
+metadata is not independently exposed.
+
+Root read the complete report, verified all eight frozen source identities,
+checked the timestamped PDF byte-for-byte against main.pdf, and inspected
+the build diagnostics. The compiled PDF is 46 pages, 632068 bytes, SHA-256
+`919058546f5d3ac09a64a05f24511da6cd0b91022fe28a459a2d23e8781cefd9`.
+Fresh download copy:
+`local-output/padua-argmax-bridge-20261105/paper/padua-manuscript-20261107-204352-Oslo.pdf`.
+The error, warning, undefined-reference/citation and overfull-box checks
+pass; underfull-box diagnostics remain. The previous full Sol max
+mathematical audit remains the baseline for this focused editorial check.
+
+Essential-evidence index check passes: 396 entries, 32414 index bytes.
+The size script reports 9771914 bytes; adding the inherited 2087-byte
+FREEZE charge gives the unchanged conservative bound 9774001 bytes, below
+AC's 10000000-byte cap. This step adds authored prose only. PDF/template
+dependencies remain outside Git. No native campaign, claim/status upgrade,
+new final ID or shared registry change belongs to this editorial step.
+
+This completes AC's whole-paper style and applications request. Handoff 23
+continues the remaining publication preparation from handoff 21, retaining
+this affirmative style and fresh timestamped download filenames. Commit
+outputs first, then close 22 and open 23 in a handoff-only commit; push the
+working branch before replying. The earlier PR-metadata approval issue
+remains recorded in its canonical entry; branch pushes are authorized.

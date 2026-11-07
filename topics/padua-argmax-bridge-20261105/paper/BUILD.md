@@ -116,3 +116,21 @@ correspondence/affiliation/ORCID/disclosures. There are no TeX errors,
 undefined references/citations, overfull boxes or warnings. The previously
 audited46-page PDF remains under `paper/audited-46-pages/main.pdf` in
 local-output; all PDFs and the supplied901814-byte ZIP remain offGit.
+
+## Affirmative prose and application context — 7 November 2026
+
+Source commit `4050f6861a44a88ec5d7941787703fbbe9d9ce4a` edits the prose
+throughout and adopts the three-source application paragraph. The explicit
+alphabetical bibliography now has 13 entries. All 204 displayed math blocks
+and both main theorem statements match the preceding source exactly.
+
+`bash topics/padua-argmax-bridge-20261105/paper/build.sh` passes at 46 pages.
+The log contains underfull-box diagnostics; the error, warning, undefined
+reference/citation and overfull-box checks pass. Current PDF is 632068 bytes, SHA-256
+`919058546f5d3ac09a64a05f24511da6cd0b91022fe28a459a2d23e8781cefd9`.
+A timestamped copy for download is
+`local-output/padua-argmax-bridge-20261105/paper/padua-manuscript-20261107-204352-Oslo.pdf`.
+Its bytes match main.pdf. User-facing links use fresh Europe/Oslo timestamped
+filenames to avoid the previously observed stale download. Both copies
+remain outside Git. The focused Sol max meaning/style review in
+affirmative-style-review.md accepts this source with no unresolved findings.
