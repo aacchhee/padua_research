@@ -582,3 +582,93 @@ Current status: preregistration frozen, actual input pins and root release
 PENDING, reviewer execution count ZERO. Operational pack tests, bulk
 remote execution, storage delivery and interim/final Claude review are
 separate obligations and are not released by this registration.
+
+## Actual primary-input binding — BEFORE fresh execution
+
+2026-11-07. Root reports both prospectively fixed primaries completed ONCE
+at source publication a916e550f324dc7548f472575bedd302feecaa9d, with no
+retry. This reviewer has independently inspected their receipts, accounts,
+source/configuration, controls, stage/checkpoint, raw and build/runtime
+provenance. Primary direct-exit observations are ROOT observations, not
+direct observations by this reviewer; their durable records and parent
+handoff agree. Reviewer fresh execution count is still ZERO.
+
+The source remains the accepted corrected FREEZE4153 bytes,
+0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb.
+All nine AUDIT.sha256 entries were rechecked successfully. The frozen
+prospective commands, cases, output paths, ordering and budgets above
+remain unchanged. These are the actual bound input files, under
+local-output/argmax-bridge-20261105/final-hybrid-validation:
+
+| Degree / file | Bytes | SHA-256 |
+|---|---:|---|
+| primary-n41/essential-receipt.json |6494|faca30653a59e0c4416ff61ddb53c8ccda17c3b6a098163666c47e3cd3bb0697|
+| primary-n41/final-accounting.json |1154|c74aeba3bdcf65766dc5d9593c7d4d4c727d5221f44a50e29761ba0f04e00e8d|
+| primary-n41/root-observation.json |512|0157ea9a403b446d6e20b116e214a334eacdaa7bac5de98dda94d4a04f2c6e3e|
+| primary-n511/essential-receipt.json |5996|c53691109f203e3e925eea1d5c8efeba6d4b5104f53e21c2651e1a92a8b99d37|
+| primary-n511/final-accounting.json |1175|1a9a0fdf7ef9b17f1c08072712f43c2f17fd30bfd24ea39d0c68c47adeeb8574|
+| primary-n511/root-observation.json |513|2e8961d74f21b774b759daa39462ec4668e006748ee2d8c2ee33d221ce97c1aa|
+
+Root's primary41 session10976 completed in tool chunk8b3ee2 with observed
+EXIT0; primary511 session11808 completed in251ce1 with observed EXIT0.
+Both final accounts have complete=true, first_failure=null, the exact
+`EXACT_SINGLE_DEGREE_PRIMARY_ACCEPTED_PENDING_FRESH_VERIFY` result,
+the correct produce degree/output with no old certificate, no live
+children, and the unchanged120CPU hard aggregate cap. Their recorded
+CPU-through-summary checkpoints are6.887400 and7.353713, respectively;
+these are sampled inclusive checkpoints, not exact exit-CPU measurements.
+The recorded final absolute self limits112 and111 plus fixed waited-child
+CPU leave the original whole-cap enforcement intact. Both controls and
+checker stage records show return0, no stop/failure and complete accounting.
+
+The inspected input proof summaries are:
+
+| Degree | Input METHOD / M | Retained S / actual | Nodes / leaves | Leaf branches |
+|---|---|---|---|---|
+|41|TREE /13, coarse15|64 /3|101 /51|5 NEAR,43 FAR,3 OUTSIDE|
+|511|GRID /30|45 /0|51 /26|6 NEAR,17 FAR,3 ANALYTIC_FAR|
+
+At41 the three physical actual keys are1/164 and1/224 in the registered
+combinations; no f token occurs. At511 the frozen string has the explicit
+three f leaves, analytic E12 corner descriptor and zero actual rows. All13
+grid keys are retained in each receipt. The complete receipts were read;
+their fresh re-evaluation remains the next scientific obligation. The
+primary verification fields and positive fractions are not accepted as
+substitutes for that distinct fresh execution.
+
+Both six-group synthetic-control records say PASS with zero native calls;
+the actual checker recorded67 total native calls at41 and45 at511, all
+returncodes0, no active call remaining and COMPLETE status. These are
+observations of primary evidence, not reviewer control/native runs.
+The fresh source will again authenticate and reconstruct all premises.
+
+Whole raw records were hash/size matched to the receipt identities:
+
+- primary-n41/raw-evidence.json,180345 bytes,
+  2cf0e7945013eceae108469ceee106751047a21eead8db1a4ca978fbcfb641f5.
+- primary-n511/raw-evidence.json,111972 bytes,
+  99a0cfd84c4331ca713ef5725f21c75f70f56c6d89045bb352634aad078a39b0.
+
+Both controls/checker checkpoint hashes match their supervisor and receipt
+identities. All three primary build manifests were inspected:41 has fresh
+D23 S and original D07 actual builds;511 has only fresh D23 S. Source
+snapshots match the reviewed native source bytes. Using metadata-only
+hash checks, EVERY listed source snapshot, preprocessed translation unit,
+binary, toolchain, toolchain dependency, header, linked dependency and
+dependency-input artifact in those three manifests still matches its
+recorded SHA-256. Before/after loaded-library and all-file-mapping records
+are identical for each invocation. This checks recorded build/runtime
+provenance; it does not purport to formally verify the compiler or system.
+
+Only read-only file reads, JSON field inspection, byte/hash comparisons
+and this owned append occurred during binding. No engine/checker import,
+scientific arithmetic reconstruction script, control/test, build/native,
+phase/degree or other scientific job was executed by this reviewer.
+No input/output/source was altered. No problem was found in the input
+binding or the inspected prerequisites for fresh verification.
+
+**READY FOR ROOT PUBLICATION AND SEPARATE FRESH RELEASE.** The input
+hashes are now bound; exact commands and2*120CPU fresh envelope remain
+as preregistered. The reviewer will not launch until root explicitly
+releases the fresh sequence. A successful primary is still pending the
+distinct fresh result and subsequent scope review.

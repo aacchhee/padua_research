@@ -1468,3 +1468,10 @@ After source/publication releasea916e550, root executed EXACT41 then511 commands
 ### Focused operations repair candidate preserved for re-audit
 
 Sol medium freezes16-entry custodyb2314087... and per-finding responseea4a3d51... after FOPS01–06. New common provenance validator links full evidence and preserved payloads, resume uses the same substantive validator, timeout stops admission immediately, all Python generations use reviewed isolation, prose custody is separated, and all six arithmetic packages have inspectable exact byte provenance. These are DEVELOPER REPAIRS pending distinct focused re-audit, not passed checks. No ops import/test/builder/extraction/native/archive job has run.
+
+
+### Exact fresh41/511 release after actual input binding
+
+Distinct Astra high reportd179a4c1...39977B binds both actual primary receipt/account/direct-observation hashes at the prewritten paths and independently checks complete raw/checkpoint/build/TU/binary/compiler/header/dependency/input hashes and loaded before/after mappings. Frozen source0d9ce0a5 and all audit identities remain unchanged. Reviewer execution is stillZERO before this publication.
+
+After THIS publication, root NOW releases the EXACT two independently executed verify commands already written in that report,41 then511, eachONCE, separate exclusive verify-n41/verify-n511 outputs, unchanged120CPU each/240CPU fresh phase. Reauthenticate actual source/input bytes; inspect first directEXIT0+accepted complete/no-failure account before second launch. No concurrent scientific job, no retry/rescue/degree/source/precision/cap/METHOD/topology change, no old numeric premise reuse. Actual input certificate pins remainfaca3065...6494B andc5369110...5996B. All raw/build/runtime/observations retained; reviewer owns only its report and fresh observations under registered outputs. This release is within the already authorized known-case local source validation, not a residual/bulk/Syvert2 pack run.
