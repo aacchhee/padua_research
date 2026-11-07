@@ -1,6 +1,6 @@
 # Handoff13 — Final substantive audit of complete Padua argmax proof
 
-- Status: open
+- Status: superseded by 14: AC authorizes up to20new sharp-correction rounds
 - Previous handoff:12-work-compact-return.md
 - Next agent/model/effort: Claude, Opus5.5 high; increase audit depth if justified and record actual identity/effort.
 - Role: independent auditor of Codex development
