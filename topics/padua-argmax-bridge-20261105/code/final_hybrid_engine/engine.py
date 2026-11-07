@@ -99,7 +99,7 @@ def worker(stage):
 
 
 def child_command(stage):
- command=[sys.executable,str(HERE/'engine.py'),'--worker',stage,'--mode',CONFIG['mode'],'--n',str(CONFIG['n']),'--output',str(OUT)]
+ command=[sys.executable,'-E','-S','-B',str(HERE/'engine.py'),'--worker',stage,'--mode',CONFIG['mode'],'--n',str(CONFIG['n']),'--output',str(OUT)]
  if CONFIG['certificate'] is not None:command+=['--certificate',CONFIG['certificate']]
  return command
 

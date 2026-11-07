@@ -42,3 +42,23 @@ and focused text edits, AST syntax inspection and manifest generation only.
 No source imports, controls/test runs, native/compiler/scalar/degree/phase/
 quadrature job, package setup, scientific lock or mutable Git action.
 Distinct source/reduction audit and root release remain required.
+
+## 2026-11-07 FH-1 focused prerelease repair
+
+Root publication523009ea8ead3812a2bcd661c7fb5519b7c30db5 preserves first
+FREEZE4153B4bedcb1c7aac415c9bbe7b159fb1cb3086422ae7c51270aff46ba8e9bd8804ae
+and complete independent report26075B
+f0d9703a76f9662b453c4de1fac94b84a3d4674f37f1b8e08eb1c5b89a0eaa0d.
+Read the full report before root-authorized FH-1 repair. Only engine
+child_command and runtime optional setup Python argument lists gain
+-E,-S,-B before the script; SPEC's two outer commands gain identical flags.
+-E ignores Python environment configuration and -S disables site startup.
+-B prevents bytecode writes only, not reads. Sibling imports are preserved;
+separate ops scripts use -I -S -B with their engine child -E -S -B.
+
+All accepted mathematics/native/controls/norm/topology/caps remain unchanged.
+FREEZE refreshes exactly the engine/runtime byte/hash rows; audit-only
+manifest refreshes corrected source/contract identities. Static hash/text
+and six-file AST syntax inspection only; no module import, test/control,
+startup probe, compiler/native/scalar/degree job, lock or mutable Git action.
+Focused distinct re-audit and explicit root release remain separate.

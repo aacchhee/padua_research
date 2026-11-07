@@ -41,8 +41,8 @@ proof or raw data. This directory contains source and contract only.
 From the repository root, one explicit operation per invocation:
 
 ```
-python3 topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py --mode produce --n N --output OUT --run-once
-python3 topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py --mode verify --n N --certificate CERT --output NEW_OUT --run-once
+python3 -E -S -B topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py --mode produce --n N --output OUT --run-once
+python3 -E -S -B topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py --mode verify --n N --certificate CERT --output NEW_OUT --run-once
 ```
 
 N is a strict integer41..4095, never bool. Relative paths resolve against
@@ -260,3 +260,34 @@ Runs needed: distinct source/reduction audit at this freeze, publication,
 then root's separate exact local41/511 primary/fresh release. Bulk execution
 and interim Claude approval are separate pack-level obligations. No local
 or remote computation is authorized by this document alone.
+
+## 2026-11-07 FH-1 focused startup repair response
+
+First candidate and complete finding were published before this repair at
+523009ea8ead3812a2bcd661c7fb5519b7c30db5. Original FREEZE4153B SHA256
+4bedcb1c7aac415c9bbe7b159fb1cb3086422ae7c51270aff46ba8e9bd8804ae;
+full independent report26075B SHA256
+f0d9703a76f9662b453c4de1fac94b84a3d4674f37f1b8e08eb1c5b89a0eaa0d
+is independent-checks-final-hybrid-engine.md. Its mathematics/source
+reduction acceptance is preserved; FH-1 is the sole prerelease startup
+finding and its focused re-audit remains separate.
+
+Root authorized only this narrow launch-policy repair. The documented
+outer produce/verify CLI now uses python3 -E -S -B. Both engine worker
+stages and optional Python setup launch use sys.executable,-E,-S,-B
+BEFORE their script argument. -E ignores Python environment configuration;
+-S disables site startup, including .pth/sitecustomize/usercustomize.
+The explicit script sibling directory remains available for imports.
+-B prevents bytecode WRITES; it does not prevent reading existing bytecode.
+The separately owned ops scripts use -I -S -B, while their sibling-engine
+child uses this -E -S -B policy. No immutable D09 helper controller launch
+is reached; none of its frozen bytes changes.
+
+Only the two reachable Python child-command expressions, these documented
+CLI flags and this response changed. Mathematical code, numeric/native
+sources, guards, cutoff/norm/topology, controls, budgets, source identity
+and failure semantics are unchanged. FREEZE refreshes only engine/runtime
+code rows; AUDIT.sha256 identifies corrected source and contract bytes.
+Static text/hash/AST inspection only; zero imports, controls/tests, startup
+probes, compiler/native/scalar/degree jobs or attempt paths consumed.
+Distinct focused acceptance, publication and root release remain required.

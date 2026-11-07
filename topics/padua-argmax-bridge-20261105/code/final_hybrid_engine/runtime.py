@@ -63,7 +63,7 @@ class Native:
   self.out,self.state,self.checkpoint=out,state,checkpoint
   self.seen_S=set();self.seen_lambda=set()
   if ctypes.sizeof(ctypes.c_long)!=8 or ctypes.sizeof(ctypes.c_double)!=8:raise RuntimeError('LP64 binary64 required')
-  if not BUILD.INC.is_dir() or not BUILD.FLINT.exists():BUILD.run([sys.executable,HERE.parent/'phase_checker/setup.py'])
+  if not BUILD.INC.is_dir() or not BUILD.FLINT.exists():BUILD.run([sys.executable,'-E','-S','-B',HERE.parent/'phase_checker/setup.py'])
   BUILD.LOCAL=out;self.libs={};self.manifests={}
   for api in (('S','lambda') if n<256 else ('S',)):
    before=cpu();binary,manifest=BUILD.build(api);manifest['inclusive_build_CPU']=cpu()-before
