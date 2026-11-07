@@ -1165,3 +1165,28 @@ E07Hmax qualitatively improves the model, while E08near/outer lower-degree suffi
 Allocate ONE Astraultra block atmost20minutes to E09-signed-outer-upper theory/idea/attempt: first fullfreshgate/unchangedownbaseline+newpredecessors; then seek a uniform upper onCLOSEDrho<=1/2,n>=32 (or exactdeclaredsubdomain) of T_n<=C*rho/n+K*(1+logn)*rho²/n, preferably retaining beta-onlyfirstorder9beta/n. Hardness justification: actual two moving grids, coalescing numerator roots, exact log subtraction and signed missing cells must be coupled uniformly; neither fixed-phase asymptotics nor separate limits settle it. Cheapest directional/moving-phase/collision kill FIRST, preserve scoped failure or exact positive partial rather than forceconstants. E03 real full-error ell_nalpha cusp is NOT discarded: T_n is onlytheliteralouter-plus-log block, notcompleteerror.
 
 Block starts/cutoff must be recorded by helper, and noextension beyond20minwithoutnewjustification. No scripts/source/scalar/native/endpoint/pack/Git/shared actions. E09 is ONEcoordinatedround; E01–E07complete, E08/E09active,E10–E15unallocated6; eight roundsremainincludingE08/E09. PackPAUSED.
+
+
+E09boundedAstraultrablockstart2026-11-07 01:14:17UTC, hardcutoff01:34:17UTC; noautomaticextension. Fullfreshgate/verifiedunchangedownbaselineandlatestpredecessors precede derivation.
+
+E08firstfrozencandidates UNADOPTED: phase-global15281B8886d44e... exactphaseCE/fullcloseddiamond plusuniformCEold−3H/n; distinctD30auditactive. Actualcorner3848719Bed2ecf9a... BOTHclosedpi/4squaresradial1/50; distinctD29auditactive. Main384OPEN; no pendingphase/originpremiseadoptedbyprogressmessage. Originhelperseparatecandidatelowerallowancee0<D+Mesh+1/n from160stillbeingwritten andnotadopted.
+
+
+### E08 two analytic supports independently ACCEPTED and adopted
+
+Distinct Astraxhigh bf146792...16895B ACCEPTS frozenphase-global8886d44e...15281B; rootadopts exactCEphi onfullclosedsigneddiamond ALLn32, uniformCEbar=CEold−3H/n positive/decreasing andfixedphaserealnmonotonicity. No standaloneE6saving/signedcancellation/quotientmonotonicity claimed. Distinct Astrahigh db2d97ed...11992B ACCEPTS ed2ecf9a...8719B BOTHclosedpi/4actual-cornersquaresALLn384radialloss1/50. No pendingphase/originpremiseusedincornerproof. Bothfirstcandidatepasses, nofinding/repair/jobs.
+
+Global384 remainsOPEN: unchangednearcomparisonfailsatx=y=1/6 evenoriginallowance0; a cheaperfinite near error orcentralmodelmajorant is needed. Currentacceptedglobal512/residual464unchanged. E08originlowerproof andscopedallocationobstructionstillforthcoming; E09boundedone-sidedouter/logworkactive. PackPAUSED.
+
+
+### E10 prospective exact central-model improvement —paper only
+
+E08proves a fixednear sufficient-envelope failure at384 evenwithoriginallowance0. Alongside E09signedfiniteerror, allocate ONEcoordinatedE10 Solxhigh mathematical round to materially sharpen the TRUE central positive-excess model onrho<=1/2 orrho<=1, beginning with COMPLETE freshnoveltygate and ALLfullclosestidea/theory/obstruction reads BEFOREcandidate generation. Target an exact joint-phase/root-profile inequality improving the presently separatefractional/log majorants, without asserting the false quadraticmodulus or changingcompletedmodel. No candidate/mechanism is prescribed beforethatgate. Distinguish a new structural bound frommereendpointarithmetic; reject/consolidate duplicates withretainedrecords. Cheapestexactroot/sign/domain killfirst, no forced384theorem.
+
+OwnE10-central-model theory/idea/attempt only, nojobs/script/source/scalar/endpoint/native/pack/Git/shared. All upstreamHmaxaccepted; centralfractionalrootobstruction andrealfiniteell_nalpha cusp remain. E01–E07complete,E08/E09/E10active,E11–E15unallocated5. Eight roundsremainincludingthoseactive; packPAUSED.
+
+
+Rootread-onlyGitHubrefrefresh2026-11-07 01:21:05UTC: mainunchangedf70a260e5b5f9a01209dc8a05faabdcf8db1feeb (alreadyintegrated); topicmatchespublished102abde583927c82680e5a94fea77b5e97540641. No newrules/base/remoteheadchange.
+
+
+E08origin firstcandidatefrozen15142B bba01a431ce3d7f4bfc4345eb693eb605fc3e82883cb7466a5ec597e1456d979, idea9238B59fa9848..., attempt6351Bf5d4cd47...; distinctD13mathreviewactive, UNADOPTED. The precise narrow predecessor-read timing failure is canonical in [origin idea](ideas/E08-origin-lower.md); it is disclosed, notwaived andnotretrospectivelycured. No source/scalar/nativejoboccurred.
