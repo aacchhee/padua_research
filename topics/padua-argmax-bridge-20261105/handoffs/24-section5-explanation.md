@@ -1,6 +1,6 @@
 # Handoff 24 — Restore explanatory detail in Section 5
 
-- Status: open
+- Status: done in 972025c8c919bf5f0081432ffc04fdd41033477f
 - Previous handoff: 23-reviewed-prose-publication-preparation.md
 - Next agent / model / effort: Codex coordinator; Sol high for mathematical exposition, distinct Sol max focused review per AC's preference
 - Role: developer / orchestrator
