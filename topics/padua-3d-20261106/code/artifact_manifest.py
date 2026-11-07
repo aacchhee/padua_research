@@ -42,13 +42,15 @@ def packed(rows):
 
 
 
-SCHEMA = "padua-3d-code-data-manifest-v6"
-MAGIC = b"P3M6\x00"
+SCHEMA = "padua-3d-code-data-manifest-v7"
+MAGIC = b"P3M7\x00"
+V6_MAGIC = b"P3M6\x00"
+MAX_RAW = 16 * 1024 * 1024
 
 
 def varint(value):
     """Canonical unsigned base-128 integer."""
-    if type(value) is not int or value < 0:
+    if type(value) is not int or not 0 <= value < (1 << 63):
         raise ValueError("invalid unsigned integer")
     out = bytearray()
     while value >= 128:
@@ -58,12 +60,12 @@ def varint(value):
     return bytes(out)
 
 
-def encode_rows(rows):
+def encode_v6_rows(rows):
     """P3M6 NUL, count; sorted path prefix/suffix lengths, suffix, size;
     then concatenated raw32 digests in matching order. Integers are varints.
     Paths are UTF-8; compression is zlib9 followed by RFC1924 base85.
     """
-    out = bytearray(MAGIC + varint(len(rows)))
+    out = bytearray(V6_MAGIC + varint(len(rows)))
     digests = bytearray()
     previous = b""
     for row in sorted(rows, key=lambda row: row["path"].encode("utf-8")):
@@ -93,10 +95,10 @@ def validate_path(path):
         raise ValueError("invalid artifact path")
 
 
-def decode_rows(raw):
-    if not raw.startswith(MAGIC):
+def decode_v6_rows(raw):
+    if not raw.startswith(V6_MAGIC):
         raise ValueError("invalid v6 magic/version")
-    offset = len(MAGIC)
+    offset = len(V6_MAGIC)
 
     def integer():
         nonlocal offset
@@ -138,18 +140,98 @@ def decode_rows(raw):
     return rows
 
 
+def inflate(compressed):
+    """Accept exactly one bounded zlib stream, with no trailing bytes."""
+    inflater = zlib.decompressobj()
+    raw = inflater.decompress(compressed, MAX_RAW + 1)
+    if len(raw) > MAX_RAW or not inflater.eof or inflater.unused_data or inflater.unconsumed_tail:
+        raise ValueError("oversized, truncated or trailing compressed payload")
+    return raw
+
+
+def read_integer(raw, offset):
+    start, value, shift = offset, 0, 0
+    while offset < len(raw) and shift <= 63:
+        byte = raw[offset]
+        offset += 1
+        value |= (byte & 127) << shift
+        if not byte & 128:
+            if value > (1 << 63) - 1 or raw[start:offset] != varint(value):
+                raise ValueError("oversized or noncanonical varint")
+            return value, offset
+        shift += 7
+    raise ValueError("truncated or oversized varint")
+
+
+def encode_rows(rows):
+    """One P3M7 frame: count, path/size compressed lengths, zlib paths,
+    zlib sizes, then count raw32 digests. All lengths/counts are varints.
+    """
+    ordered = sorted(rows, key=lambda row: row["path"].encode("utf-8"))
+    paths, sizes, digests, previous = bytearray(), bytearray(), bytearray(), b""
+    for row in ordered:
+        name = row["path"].encode("utf-8")
+        validate_path(row["path"])
+        if name <= previous:
+            raise ValueError("duplicate or unordered path")
+        digest = bytes.fromhex(row["sha256"])
+        if len(digest) != 32:
+            raise ValueError("invalid SHA-256 length")
+        paths.extend(name + b"\x00")
+        sizes.extend(varint(row["bytes"]))
+        digests.extend(digest)
+        previous = name
+    paths, sizes = zlib.compress(paths, 9), zlib.compress(sizes, 9)
+    return (MAGIC + varint(len(rows)) + varint(len(paths)) + varint(len(sizes))
+            + paths + sizes + digests)
+
+
+def decode_rows(raw):
+    if not raw.startswith(MAGIC):
+        raise ValueError("invalid v7 magic/version")
+    count, offset = read_integer(raw, len(MAGIC))
+    path_length, offset = read_integer(raw, offset)
+    size_length, offset = read_integer(raw, offset)
+    if count > MAX_RAW // 35 or not path_length or not size_length:
+        raise ValueError("invalid count or metadata length")
+    end_paths, end_sizes = offset + path_length, offset + path_length + size_length
+    if end_sizes > len(raw) or len(raw) - end_sizes != 32 * count:
+        raise ValueError("truncated or trailing frame data")
+    paths = inflate(raw[offset:end_paths])
+    sizes = inflate(raw[end_paths:end_sizes])
+    names = paths.split(b"\x00")
+    if names[-1] != b"" or len(names) != count + 1:
+        raise ValueError("invalid path count or terminator")
+    rows, previous, size_offset = [], b"", 0
+    for i, path in enumerate(names[:-1]):
+        if path <= previous:
+            raise ValueError("duplicate or unordered path")
+        name = path.decode("utf-8")
+        validate_path(name)
+        size, size_offset = read_integer(sizes, size_offset)
+        rows.append({"path": name, "bytes": size,
+                     "sha256": raw[end_sizes + 32*i:end_sizes + 32*(i+1)].hex()})
+        previous = path
+    if size_offset != len(sizes):
+        raise ValueError("trailing size data")
+    return rows
+
+
 def decode_manifest(saved):
     schema = saved.get("schema")
     if schema == "padua-3d-code-data-manifest-v4":
         return saved["artifacts"]
-    if schema not in ("padua-3d-code-data-manifest-v5", SCHEMA):
+    if schema not in ("padua-3d-code-data-manifest-v5",
+                       "padua-3d-code-data-manifest-v6", SCHEMA):
         raise ValueError("unsupported manifest schema")
-    compressed = base64.b85decode(saved["artifacts_payload"])
-    inflater = zlib.decompressobj()
-    raw = inflater.decompress(compressed) + inflater.flush()
-    if not inflater.eof or inflater.unused_data or inflater.unconsumed_tail:
-        raise ValueError("truncated or trailing compressed payload")
-    return (packed(decode_rows(raw)) if schema == SCHEMA else json.loads(raw))
+    payload = saved["artifacts_payload"]
+    raw = base64.b85decode(payload)
+    if base64.b85encode(raw).decode() != payload:
+        raise ValueError("noncanonical base85")
+    if schema == SCHEMA:
+        return packed(decode_rows(raw))
+    raw = inflate(raw)
+    return (packed(decode_v6_rows(raw)) if schema.endswith("-v6") else json.loads(raw))
 
 
 def verify_manifest(saved, observed, inherited):
@@ -174,11 +256,10 @@ def make_manifest(observed, inherited):
         "generate": "python topics/padua-3d-20261106/code/artifact_manifest.py",
         "verify": "python topics/padua-3d-20261106/code/artifact_manifest.py --verify",
         "format": "--list: v4 map.",
-        "artifacts_codec": "P3M6+zlib9+base85",
-        "artifacts_payload": base64.b85encode(zlib.compress(
-            encode_rows(observed), 9)).decode(),
+        "artifacts_codec": "P3M7+zlib9(paths,sizes)+raw32+base85",
+        "artifacts_payload": base64.b85encode(encode_rows(observed)).decode(),
         "inherited_inputs": inherited,
-        "limits": "Identities only; no proof, archival delivery or independent audit. See manifest-v6.md."
+        "limits": "Identities only; no proof, archival delivery or independent audit. See pruning-manifest.md."
     }
 
 
