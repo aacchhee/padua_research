@@ -1071,3 +1071,17 @@ AllE05workpaper-onlywithno source/script/scalar/endpoint/native/packjob. ItisONE
 ### E04 three supports ACCEPTED; main640stillOPEN
 
 DistinctAstrahigh ea0297b3... ACCEPTSc561f1f1... WIDE retained-origin boundEVERYn32,CLOSEDrho1, exacta/Pprimarycoefficients andallmasks/collisions/origin. DistinctAstrahigh firstsupportreporta2b15344... ACCEPTSf6d0cbea... rebuiltthree-classnoncornerdefectfloors n64/rho1 anduniform>1/200from640; accepts501efd8e... BOTHclosedactualcornerside1squaresALLn512, radialloss1/3. Rootadopts these3supportsonly, preservingallreviewedprefixes. Global640andcompleteD13remainOPEN; currentacceptedglobal768/residual719unchanged. E04mainproofunderdevelopment, E05cusp-awarepaperhelpersactive, packPAUSED. ALLnewworkpaper-only, no numerical/source/native/packjobs.
+
+
+### E06 prospective axis-boundary and scalar-H continuation —2026-11-07
+
+WhileE04paper640andE05auditsfinish, allocateE06 PAPER-ONLY: Solxhighaxishelper continues EXACTsignedbackground+inner-positive-part+theta-boundarycoupling, noindependentabsoluteendpointovercharge; ONEboundedAstraultra15minblocktestsC08's explicitlyDEFERRED scalarHshape/maximizationquestion. Exceptionaljustification: sharperGLOBALweightedH orH(x)<=H(0) couldsimultaneouslytightencompletedconstantandnearcurvature, addressingtheouter/nearbarrierswithoutforcingthefalse no-log-linearmixederrorfamily; proving/refutingitrequiresnonlocalperiodicPhi/cuspoperatoranalysis beyondroutineconstants. Cheapestpapertestfirst, noforcedHshape/9/4bound. H(x)<=cos(x/2)H0 isstrongerthan needed; testweakerH<=H0 separately. VerifyownunchangedcompletegatebaselineandfreshH/scalarpredecessorsearch/readbeforecandidates; no source/literaturepriorityclaim.
+
+Astraultrablockatmost15min, no scripts/numeric/source/native/packjobs; fullscopeandpartial/deferoutcomesrecorded. E06isONEcoordinatedroundacrosshelpers. CurrentNEW3/15complete,E04/E05/E06active,E07–E15unallocated9slots; global768/residual719unchangeduntil640audit.
+
+
+### E05 frozen paper candidates before independent audits
+
+BoundedUltraE05blockfinished10m42s, prospectiveclock00:26:21–00:46:21UTC respected. Frozenb5a8ed47...16277B provesatdeveloperlevel COMPLETE E−E0<=ell_n|alpha|+2rho/n EVERYn32 onCLOSEDrho<=1/(n+1)^2 ONLY; directionalcuspalphaonly. FullnearD13stillOPEN. Solxhighaxisfrozen27c706d5...12863B givesexactbackground/excess/collisiontransport, centralremainder<=alpha²/(3m) andouterstripfirst-coordinatequadrature<=16alpha/(5n), n>=2,beta0,alpha<=2/5; signedbackground/innerstrip/thetaboundaryremainingOPEN. BothUNADOPTEDpendingdistinctAstraxhigh/Astrahighpaperreviews; no newonset/jobs. Candidateprefixespublishedbeforeanymaterialrepair.
+
+E06UltrascalarHblockclock00:43:05–00:58:05UTC; completedunchangedfullbaselineandnewpredecessorreadsbeforecandidates required. E06axishelperseparatelycontinuesremainingexactboundaryoperator. E04main640paperstillunadopted; allnumeric/source/native/packworkUNRELEASED.
