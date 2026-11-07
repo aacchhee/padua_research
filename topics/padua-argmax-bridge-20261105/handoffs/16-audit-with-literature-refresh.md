@@ -1,6 +1,6 @@
 # Handoff16 — Final Claude audit with fresh external literature comparison
 
-- Status: open
+- Status: superseded by 17: AC requests Constructive Approximation manuscript before audit
 - Previous handoff:15-audit-sharp-correction.md
 - Nextagent/model/effort: Claude, recommendedOpus5.5xhigh; recordactual
   model/effort andchooseappropriatedepth.
