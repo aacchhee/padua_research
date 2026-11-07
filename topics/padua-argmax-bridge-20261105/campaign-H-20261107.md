@@ -48,7 +48,10 @@ distinctAstrahigh/xhigh reviews. H02 uses Solultra because the first
 correction is hidden by log²n/n cancellation and a singular endpoint
 layer with mesh separationO(n^-2); the current proof cannot be sharpened
 by cutoff retuning alone. This is a specific hard-mathematics justification,
-not blanket ultra use. AC's10,000,000B generatedGitcap stays in force;
+not blanket ultra use. H06ultra is separately justified by the global
+harmonic/endpoint cancellation needed to close the complete sharp
+remainder after the local reductions; it must check exact coefficients
+and uniform sums, not merely repeat formal expansion. AC's10,000,000B generatedGitcap stays in force;
 currentbound9,706,816B leaves293184B. Proof prose/source stay source, bulk
 outputs remain offGit. No unrelated cleanup or remoteSyvertjob.
 
@@ -70,8 +73,11 @@ idea/attempt/theory files. No worker silently starts another round.
 |H01|Exact finite corner/Cauchy resummation|Solxhigh|Released PAPERONLY after full gate|
 |H02|Uniform signed endpoint/odd-offset correction|Solultra|Released PAPERONLY after full gate|
 |H03|Consecutive-mesh cotangent reciprocity|Solxhigh|Released PAPERONLY after full gate|
+|H04|Uniform quadrature for the smooth triangular residual|Solxhigh|Released PAPERONLY; own candidate registered|
+|H05|Uniform integer/half-integer digamma centering|Solxhigh|Released PAPERONLY; own candidate registered|
+|H06|Aggregate singular/harmonic correction and coefficient|Solultra|Released PAPERONLY; registration before proof required|
 
-RoundsH04–H20 are unallocated, not completed or preregistered experiments.
+RoundsH07–H20 are unallocated, not completed or preregistered experiments.
 Choose them adaptively from actual obstructions/proof obligations. Every
 round records candidate/separation/killtest before work, actual outcome,
 proof status and precise next obligation. Mathematical support does not

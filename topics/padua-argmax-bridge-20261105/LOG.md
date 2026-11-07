@@ -1914,3 +1914,16 @@ priorityclaim. Rootprospectively releases H01/H02/H03 candidate records
 thenPAPERONLYproofdevelopment afterthisactualgate. Eachworker must
 retain allendpoint/parity/n+1normalization terms and separate uniform
 proof from formalcoefficients. No science/numeric/nativejob was run.
+
+### Additional bounded H04–H06 allocations
+
+H04Solxhigh owns smoothBtriangularquadrature through1/n; H05Solxhigh
+owns uniforminteger/half-integerdigammacentering andweightederror;
+H06Solultra owns globalharmonicaggregate/cancellation. AllPAPERONLY,
+exactcandidate/separation/killtestfirst, nojobs/newroundswithoutroot.
+H06ultra justified by the global cancellation atlog²/n andlog/n with
+endpointuniformity, distinctfromH02'slocalboundarylayer. Root's
+centering/algebraproposalsareunprovedquestionsuntildeveloperproof/review.
+Six roundsallocated, zero acceptedcompletedHtheorems atthischeckpoint;
+remainingH07–H20unallocated. Preliminarycoefficientcalculationsor
+repeatedknownscopedrowobstructions are notfulltargetacceptance.
