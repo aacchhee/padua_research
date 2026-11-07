@@ -8,7 +8,7 @@ old U1/U2/U3 counts and all prior results remain separate.
 ## P1 completed: noise/design deletion does not preserve amplification
 
 P1consumes **1research round** (root publishes count boundaries); current
-campaign count after P3below is3/15.
+campaign count after P4below is4/15.
 P1's A and D rules both fail the frozen useful-transfer gate. They preserve
 numerical rank/reproduction through N, and their coefficient-noise scores
 beat poor deletions, but their operational prefixes save at most two/three
@@ -248,8 +248,81 @@ checkpoint-on/off bitwise-path/map/prefix-cost checks and nine finite-
 difference checks of the scaled rectangular angular norm gradient to the
 previous preflights (all0research rounds).
 
-The [durable P3claim](theory/pruning-p3-frontier.md) is MEASURED; independent
-consequential P3review is in progress. Next is a separately published
+The [durable P3claim](theory/pruning-p3-frontier.md) is MEASURED. The
+[independent P3review](pruning-review.md) passes all23maps/target-noise
+tables, all1288stored search values, nine consequential original-mesh
+replays and252additional independent searches; the registered ratios
+remain unchanged. Formal Claude review remains a separate obligation. Next is a separately published
 same-rule degree16transfer, including the modern969-node direct-optimization
 control, if authorized by root. No P4science is executed at this boundary.
 The original455-node payload remains byte-for-byte unchanged.
+
+## P4 completed: degree16fixed-count transfer passes
+
+P4was prospectively published at55a6a11d before its exclusive timed run.
+Actual completed pruning research is now **4/15**, eleven slots unused.
+The same A rule at primary1163of1377sites (N969) passes the unchanged
+P3tradeoff gate:15.54%site saving; full validated/durable prefix cost
+14.231638CPU/14.242147wall seconds; and both risk/norm improve by at least
+5%against same-count restrictedQR. Numerical/update/reproduction checks
+pass throughout the complete diagnostic path to N, with no missing/capped
+work or source changes. This is a finite higher-degree tradeoff, not an
+all-degree theorem or the old strict full-grid-preservation success.
+
+|degree16method|sites|unit-noise trace|integer-budget B1377risk|sampled/searched norm|
+|---|---:|---:|---:|---:|
+|full OLS|1377|0.688839|0.688839|12.74056|
+|A primary|1163|1.086437|0.948004|40.88506|
+|same-count restrictedQR|1163|1.358398|1.185845|61.04459|
+|globalQR|969|6.193240|4.105347|168.33996|
+|one-sweep localdet|969|2.519920|1.780536|93.63848|
+|modern U2direct C3/C4candidate|969|2.358026|1.674587|71.70775|
+|C4fine-row determinant|969|2.225993|1.585151|80.12014|
+
+The primary has20.06%lower fixed-budget risk and33.02%lower searched norm
+than restrictedQR1163. Against modern U2it improves risk43.39%and norm
+42.98%, **using194additional sites**. Against fineC4these improvements
+are40.19%/48.97%, again at the larger count. No969-site control dominates
+its risk/norm; no global Pareto optimality or count-equivalent victory is
+claimed. The full1377-site grid has materially better noise/norm: primary
+risk is37.62%higher and amplification3.209times as large. Old P1/P2gates
+remain failed, and preserving all full-grid quality is not claimed.
+
+All12sampled RMS errors are lower than modern U2at both query measures
+(with small values near numerical floors explicitly retained). However,
+the oscillatory target cos(4x−3y+2z)has **25.70%worse Chebyshev-query
+maximum error** versus modern U2(2.97898e-4versus2.36989e-4), and20.45%
+worse versus fineC4. Versus fullOLS, six material RMS regressions occur
+on each measure, worst51.22%Chebyshev/37.12%uniform. Against same-count
+restrictedQR, several sampled target maxima worsen despite better global
+sampled amplification/noise. Every individual target/measure/max/RMS/noise/
+sigma result remains in the raw tables; there is no universal error winner.
+
+Diagnostic A1066has searched norm88.51708/risk1.258704; at N969it has
+326.69193/4.401260, losing the modern minimum-count controls decisively.
+These failures remain visible; primary1163was fixed before unseen n16data.
+Actual full-to-Ndiagnostic Aconstruction is25.301732CPU, separate from the
+14.231638complete primary prefix. Fresh globalQR/one-sweep localdet cost
+11.045392/58.711676CPU. Modern U2and fineC4loaded in0.000274/0.000098CPU,
+with mandatory original source/inventory/coordinate pins verified before
+any candidate computation. Their historical124.202551CPU(C3)and
+65.746077extra+58.419101commonCPU(C4)construction costs are clearly
+historical, not contemporaneous equal-time comparisons.
+
+The [P4receipt](evidence/pdpr-transfer16.json)10883bytes contains all
+original executed-source/input identities, command, UTC/version/seed/thread
+metadata, complete logical results and raw inventory. Raw directory
+`/tmp/pdpr-transfer16-20261107a` is regeneration-only. All13distinct maps,
+28angular searches per map, all original held-out meshes/fresh measures,
+controls/functions/variance reports completed in152.343048CPU/
+152.433746wall seconds of900. The [P4engineering receipt](evidence/pdpr-p4-engineering.json)
+9741bytes adds read-only modernC3/C4provenance/shape/array-hash validation
+to all prior synthetic/numerical/cap/checkpoint preflights (0research rounds).
+
+[Durable P4claim](theory/pruning-p4-transfer.md) is MEASURED; distinct
+consequential P4review is pending. A compact canonical-ID artifact and
+separate exact-cosine determining-rank proof are now justified delivery
+work if that review supports the result. Their exact statement must remain
+separate from rounded-coordinate norm/noise measurements. Eleven remaining
+research slots are a ceiling; no automatic new degree/rule/seed search follows.
+The original stored455-node U2payload remains unchanged.

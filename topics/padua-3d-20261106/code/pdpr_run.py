@@ -226,11 +226,16 @@ def engineering(raw):
             err = abs(numerical-analytic[axis])/max(1., abs(numerical))
             core.require(err <= 1e-7, 'rectangular angular norm gradient mismatch')
             gradient_checks.append([axis, float(err)])
+    modern = load_modern16()
+    modern_preflight = {'input_identities': modern['inputs'],
+        'loaded_shapes': {k: list(x.shape) for k, x in modern['nodes'].items()},
+        'array_sha256': {k: core.array_sha(x) for k, x in modern['nodes'].items()}}
     return {'synthetic_deletions': checks, 'integer_allocations': allocation_checks,
             'control_gate_branch_cases': branch_cases, 'tie_branch_cases': tie_cases,
             'all_degree_gate_cases': numerical_cases, 'cardinal_candidate_checks': cardinal_cases,
             'feasibility_selection_branches': selection_branches, 'mocked_cap_cases': cap_cases,
-            'durable_checkpoint_checks': checkpoint_checks, 'rectangular_gradient_checks': gradient_checks, 'passes': True}
+            'durable_checkpoint_checks': checkpoint_checks, 'rectangular_gradient_checks': gradient_checks,
+            'modern_input_readonly_preflight': modern_preflight, 'passes': True}
 
 
 def run_pilot(a):
@@ -410,7 +415,7 @@ def run_pilot(a):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--round', choices=('pilot', 'engineering', 'constrained', 'frontier'), required=True)
+    p.add_argument('--round', choices=('pilot', 'engineering', 'constrained', 'frontier', 'transfer16'), required=True)
     p.add_argument('--protocol-commit')
     p.add_argument('--reference', type=Path)
     p.add_argument('--scratch', type=Path, required=True)
@@ -418,7 +423,7 @@ def main():
     a = p.parse_args()
     a.scratch.mkdir(parents=True, exist_ok=False)
     started = datetime.now(timezone.utc).isoformat()
-    if a.round == 'frontier':
+    if a.round in ('frontier', 'transfer16'):
         core.require(bool(a.protocol_commit) and a.reference is not None, 'P3requires protocol/P1reference')
         run_frontier(a)
         return
@@ -635,7 +640,7 @@ def run_constrained(a):
 
 
 
-def frontier_assess(nodes, n, budget, sets, name, raw, cap, haar=False):
+def frontier_assess(nodes, n, budget, sets, name, raw, cap, haar=False, refine_seed=2026111940):
     began, wall = time.process_time(), time.perf_counter()
     row = core.assess(nodes, n, budget, sets, name, raw, haar=haar)
     if not row['eligible']:
@@ -648,7 +653,7 @@ def frontier_assess(nodes, n, budget, sets, name, raw, cap, haar=False):
     scale = np.array([2.**(sum(v > 0 for v in alpha)/2) for alpha in core.u.exponents(n)])
     starts = [np.arccos(np.clip(x, -1, 1)) for x in row['mesh41_largest_points']]
     starts.extend(np.array(list(__import__('itertools').product((0., np.pi), repeat=3))))
-    starts.extend(np.pi*np.random.default_rng(2026111940+n).random((16, 3)))
+    starts.extend(np.pi*np.random.default_rng(refine_seed+n).random((16, 3)))
     t = time.process_time()
     (value, where), searches = old_det.refine(scale[:, None]*C, n, starts)
     row['amp']['local_search'] = float(value)
@@ -693,9 +698,12 @@ def run_frontier(a):
     from types import SimpleNamespace
     began, wall = time.process_time(), time.perf_counter()
     cap = began+900
+    transfer16 = a.round == 'transfer16'
+    cheb_seed, uniform_seed, refine_seed = ((2026112420, 2026112430, 2026112440)
+                                          if transfer16 else (2026111920, 2026111930, 2026111940))
     metadata = {'started_utc': datetime.now(timezone.utc).isoformat(), 'command': sys.argv,
-                'seeds': {'chebyshev': '2026111920+n', 'uniform': '2026111930+n',
-                          'refinement_angular_starts': '2026111940+n'},
+                'seeds': {'chebyshev': str(cheb_seed)+'+n', 'uniform': str(uniform_seed)+'+n',
+                          'refinement_angular_starts': str(refine_seed)+'+n'},
                 'threads': {k: os.getenv(k) for k in ('OPENBLAS_NUM_THREADS', 'OMP_NUM_THREADS', 'MKL_NUM_THREADS')}}
     dump(a.scratch/'run-metadata.json', metadata)
     sources = [Path(__file__), Path(core.__file__), Path(collector.__file__), Path(core.u.__file__),
@@ -716,8 +724,13 @@ def run_frontier(a):
     stored = TOP/'evidence/u2-degree12-nodes.json'
     details = {'paths': [], 'assessments': [], 'degrees': [], 'unrun': [],
         'inputs': [core.identity(a.reference), ref['raw_details'], ref['raw_inventory'],
-                   core.identity(path8), core.identity(stored)]}
-    for n in (8, 12):
+                   core.identity(path8)]+([] if transfer16 else [core.identity(stored)])}
+    modern = None
+    if transfer16:
+        modern = load_modern16()
+        details['inputs'].extend(modern['inputs'])
+        details['inputs'] = list({row['path']: row for row in details['inputs']}.values())
+    for n in ((16,) if transfer16 else (8, 12)):
         if time.process_time() >= cap:
             details['unrun'].append({'n': n, 'stage': 'degree'})
             continue
@@ -751,8 +764,8 @@ def run_frontier(a):
             'prefix': path.get('primary_prefix'), 'reproduction': reproduction,
             'failures': path['failures'], 'full_diagnostic_cpu': path['costs_cpu']['complete_construction']}), flush=True)
         sets = core.heldout(n)
-        sets['chebyshev'] = np.cos(np.pi*qmc.Sobol(3, scramble=True, seed=2026111920+n).random_base2(11))
-        sets['uniform'] = 2*qmc.Sobol(3, scramble=True, seed=2026111930+n).random_base2(11)-1
+        sets['chebyshev'] = np.cos(np.pi*qmc.Sobol(3, scramble=True, seed=cheb_seed+n).random_base2(11))
+        sets['uniform'] = 2*qmc.Sobol(3, scramble=True, seed=uniform_seed+n).random_base2(11)-1
         assessed, aliases = {}, {}
         def assess(name, x, haar=False):
             key = (core.array_sha(x), haar)
@@ -762,7 +775,7 @@ def run_frontier(a):
             if time.process_time() >= cap:
                 details['unrun'].append({'n': n, 'stage': 'assessment', 'name': name})
                 return None
-            row = frontier_assess(x, n, len(nodes), sets, name, a.scratch, cap, haar)
+            row = frontier_assess(x, n, len(nodes), sets, name, a.scratch, cap, haar, refine_seed)
             assessed[key] = row
             aliases[name] = name
             details['assessments'].append(row)
@@ -817,6 +830,13 @@ def run_frontier(a):
             assess('storedU2', storednodes)
         elif n == 12:
             details['unrun'].append({'n': n, 'stage': 'storedU2'})
+        if transfer16 and modern is not None:
+            for label in ('modernU2', 'fineDetC4'):
+                if time.process_time() < cap:
+                    assess(label, modern['nodes'][label])
+                    costs[label+'_saved_input'] = modern['costs'][label]
+                else:
+                    details['unrun'].append({'n': n, 'stage': label})
         target_regressions(assessed.values(), full)
         byname = {r['name']: r for r in assessed.values()}
         def lookup(name):
@@ -826,7 +846,8 @@ def run_frontier(a):
                     'reproduction': reproduction['passes'], 'complete': candidate is not None and restricted is not None,
                     'prefix_cpu': path.get('primary_prefix', {}).get('cpu')}
         if candidate and restricted and candidate['eligible'] and restricted['eligible']:
-            required_names = ['globalQR', 'localdet']+(['storedU2'] if n == 12 else [])
+            required_names = (['globalQR', 'localdet', 'modernU2', 'fineDetC4'] if transfer16
+                              else ['globalQR', 'localdet']+(['storedU2'] if n == 12 else []))
             controls = {k: lookup(k) for k in required_names}
             valid_controls = all(r is not None and r['eligible'] for r in controls.values())
             dominance = {name: bool(row['integer_risk'] <= candidate['integer_risk']*(1+1e-10)
@@ -848,7 +869,7 @@ def run_frontier(a):
         print(json.dumps({'stage': 'frontier_degree', 'n': n, 'decision': decision}), flush=True)
         dump(a.scratch/'partial-details.json', details)
     ds = [r['decisions']['A'] for r in details['degrees']]
-    passes = len(ds) == 2 and all(r.get('passes', False) for r in ds) and not details['unrun'] and time.process_time()-began <= 900
+    passes = len(ds) == (1 if transfer16 else 2) and all(r.get('passes', False) for r in ds) and not details['unrun'] and time.process_time()-began <= 900
     details['gate'] = {'rules': {'A': {'passes': bool(passes)}},
                        'selected_rule': 'A' if passes else None, 'passes': bool(passes)}
     details['timing'] = {'actual_cpu': time.process_time()-began, 'wall': time.perf_counter()-wall, 'allowance_cpu': 900}
@@ -858,7 +879,50 @@ def run_frontier(a):
     dump(a.scratch/'details.json', details)
     dump(a.scratch/'inventory.json', [core.identity(p) for p in sorted(a.scratch.rglob('*')) if p.is_file()])
     collector.collect(SimpleNamespace(scratch=a.scratch, protocol_commit=a.protocol_commit,
-        output=a.output, original_command=None, round='P3'))
+        output=a.output, original_command=None, round='P4' if transfer16 else 'P3'))
+
+
+
+
+
+def load_modern16():
+    """Validate historical scientific provenance before any P4candidate work."""
+    began = time.process_time()
+    c3_path, c4_path = TOP/'evidence/u2c-heldout16.json', TOP/'evidence/u2c-prefix-control.json'
+    c3, c4 = (json.loads(p.read_text()) for p in (c3_path, c4_path))
+    inputs = [core.identity(c3_path), core.identity(c4_path)]
+    for receipt in (c3, c4):
+        for row in receipt['sources']:
+            core.require(core.identity(row['path']) == row, 'modern n16 original source pin mismatch')
+            inputs.append(row)
+        inventory = receipt['raw_inventory']
+        core.require(core.identity(inventory['path']) == inventory, 'modern n16 inventory pin mismatch')
+        inputs.append(inventory)
+    records = json.loads(Path(c3['raw_inventory']['path']).read_text())
+    candidate = next(r for r in records if Path(r['path']).name == 'joint_norm.npy')
+    c4_candidate = next(r for r in c4['inputs'] if Path(r['path']).name == 'joint_norm.npy')
+    core.require(candidate == c4_candidate and core.identity(candidate['path']) == candidate,
+                 'C3/C4 modern direct candidate disagreement')
+    fine = c4['construction']['selected_node_checkpoint']
+    c4_records = json.loads(Path(c4['raw_inventory']['path']).read_text())
+    core.require(fine in c4_records and core.identity(fine['path']) == fine,
+                 'C4 fine determinant selected checkpoint pin mismatch')
+    inputs.extend((candidate, fine))
+    nodes, costs = {}, {}
+    for name, row in (('modernU2', candidate), ('fineDetC4', fine)):
+        t, w = time.process_time(), time.perf_counter()
+        x = np.load(row['path'], allow_pickle=False)
+        core.require(x.shape == (969, 3) and np.isfinite(x).all() and np.max(abs(x)) <= 1.,
+                     'modern n16 input shape/cube failure')
+        nodes[name] = x
+        costs[name] = {'current_load_cpu': time.process_time()-t, 'current_load_wall': time.perf_counter()-w,
+            'construction_timing': 'Historical same-machine receipt; not contemporaneous P4construction or an equal-time claim'}
+    costs['modernU2']['historical_total_cpu'] = c3['construction']['joint_total_cpu']
+    costs['fineDetC4']['historical_selected_extra_cpu'] = c4['construction']['selected_cpu']
+    costs['fineDetC4']['historical_common_QR_one_sweep_cpu'] = c3['construction']['qr_cpu']+c3['construction']['one_sweep_extra_cpu']
+    for value in costs.values():
+        value['provenance_validation_and_loading_cpu'] = time.process_time()-began
+    return {'nodes': nodes, 'costs': costs, 'inputs': list({r['path']: r for r in inputs}.values())}
 
 
 if __name__ == '__main__':
