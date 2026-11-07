@@ -16,12 +16,15 @@
 \newtheorem{definition}[theorem]{Definition}
 \hypersetup{bookmarksdepth=2,
  pdftitle={Sharp asymptotics and exact maximizers of the Padua Lebesgue constant},
- pdfauthor={Development manuscript; authors to be supplied}}
+ pdfauthor={Andrey Chesnokov}}
 \raggedbottom
 \begin{document}
 \title[Padua Lebesgue constants]{Sharp asymptotics and exact maximizers of the Padua Lebesgue constant}
-\author{\fnm{Author details} \sur{to be supplied}}
-\affil{\orgname{Affiliation to be supplied}}
+\author*{\fnm{Andrey} \sur{Chesnokov}}
+\email{andrey.chesnokov@ntnu.no}
+\affil{\orgdiv{Department of Mathematical Sciences},
+ \orgname{Norwegian University of Science and Technology},
+ \orgaddress{\postcode{7491} \city{Trondheim}, \country{Norway}}}
 \abstract{The Lebesgue constant controls the stability of polynomial interpolation.
 For the Padua points of total degree $n$ on the square, we determine its
 maximizers and obtain a sharp asymptotic expansion. The maximum is attained
@@ -40,9 +43,8 @@ analytic asymptotic argument.}
 \pacs[MSC Classification]{41A05, 41A63, 41A60, 65D05}
 \maketitle
 \noindent\textbf{Development draft, 7 November 2026.}
-Authorship, declarations and a permanent code/data release remain to be
-completed. The mathematical exposition has been consolidated around the
-corner calculation and the global cancellation comparison.
+Final human review, publication preparation and a permanent code/data
+release remain to be completed.
 
 % CA requires numerical references in alphabetical author order.
 % The publisher's sn-mathphys-num style defaults to citation order.
@@ -53,13 +55,42 @@ corner calculation and the global cancellation comparison.
 \input{sections/localization-unified}
 \input{sections/certification-unified}
 \backmatter
-\bmhead{Acknowledgements}
-Authorship and the final disclosure of language-model assistance are to be
-completed by the human authors.
 \section*{Declarations}
-Funding, competing interests and author contributions are to be supplied.
-Data, code and retention scope are described in Section~\ref{sec:certificates};
-a durable public release and persistent identifier remain to be arranged.
+\bmhead{Funding}
+This research received no specific grant from funding agencies in the
+public, commercial, or not-for-profit sectors.
+
+\bmhead{Competing interests}
+The author declares that he has no known competing financial interests or
+personal relationships that could have appeared to influence the work
+reported in this paper.
+
+\bmhead{Author contributions}
+Andrey Chesnokov: Conceptualization, Methodology, Software, Validation,
+Formal analysis, Writing -- original draft, Writing -- review \& editing.
+ORCID: \url{https://orcid.org/0009-0004-4687-1810}.
+
+\bmhead{Declaration of generative AI and AI-assisted technologies}
+Anthropic Claude Opus 5.5 and OpenAI GPT-6 Astra and GPT-6.1 Sol were used
+within an
+author-designed AI-assisted knowledge base and research workflow, with
+extensive use of GPT-6.1 Sol in the Padua project. Their assistance covered
+mathematical argument development and checking, literature searches,
+code writing and review, manuscript drafting and editing, and structured
+audits. The author is responsible for reviewing and verifying the
+mathematical arguments, literature attributions, code, computational
+evidence and final manuscript content. Final human review and publication
+preparation remain to be completed. No AI model is credited as an author.
+
+\bmhead{Data and code availability}
+Section~\ref{sec:certificates} describes the code, certificates and
+retention scope. The current repository contains the manuscript source,
+pinned checker code and essential certificate records. For the returned phase certificates, complete histories for degrees 199
+and 238 were inspected locally and fresh native verification was executed.
+Full unsampled phase histories remain on the production machine under the
+selective-retention policy. The pinned code and reproducibility notes
+support regeneration. A durable public release and persistent identifier
+remain to be arranged.
 
 \bibliography{references}
 \end{document}
