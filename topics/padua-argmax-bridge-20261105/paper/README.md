@@ -1,6 +1,6 @@
 # Unified Constructive Approximation draft
 
-[main.tex](main.tex) builds the current **46-page** manuscript, reduced from
+[main.tex](main.tex) builds the current **48-page** manuscript, reduced from
 88 pages with the same Springer class, fonts and layout. The proof is
 integrated into the article; the old appendices have not been relocated
 to an uncounted supplement. [CONSOLIDATION.md](CONSOLIDATION.md) explains
@@ -114,3 +114,17 @@ displayed math blocks and both main theorem statements are unchanged.
 The compiled draft remains 46 pages. BUILD.md records the current timestamped
 download copy; the previous full Solmax correctness audit remains the
 mathematical baseline.
+
+## Expanded finite completion — 7 November 2026
+
+At AC's request, Section 5 now occupies pages 42–46, two more pages than
+the preceding draft. It derives the signed interpolation bound, the
+strict Bernstein corner inequality, both phase norm estimates, the closed
+near/far guards and the quadratic corner descent. These additions explain
+how the finite cover gives the exact equality set. The other mathematical
+sections and the certificate algorithms are unchanged.
+
+The resulting draft has 48 pages with the same journal class and layout.
+[section5-expansion-review.md](section5-expansion-review.md) records the
+accepted focused Sol max review; BUILD.md records the current artifact and fresh
+timestamped download copy.

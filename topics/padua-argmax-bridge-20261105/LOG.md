@@ -2487,3 +2487,48 @@ diff and its dependencies. Root coordinates Git, build integration and
 documentation. Requested model/effort identities are recorded; actual
 serving metadata is not independently exposed. Existing full proof audits
 remain the baseline. Native campaigns are outside this exposition task.
+
+### Expanded Section 5 built and frozen for focused review
+
+The exposition source was committed at `b22d98b`, then root corrected
+spacing and simplified the phrase introducing the global norm. The final
+source freeze is `177be83bcb03204ae30c74355ad387ac52f42cb5`:
+certification-unified.tex is 13274 bytes, SHA-256
+`80c4e3e764e559d596d38ae5ee40702fd3ce9ba54ea1dbe43eb5c234d6ee6eea`.
+
+Section 5 now occupies pages 42–46, expanded from three to five pages.
+The additions derive the Peano interpolation decomposition, the strict
+Bernstein corner loss, both phase norm absorptions, closed rational
+near/far proxies and the explicit quadratic corner descent. The final
+paragraph assembles these inequalities into the full equality
+classification. Existing constants and algorithms are preserved.
+
+Root read the full diff and verified that all eight original displayed
+math blocks remain verbatim, the other seven TeX/bibliography sources
+are unchanged, and the evidence subsection differs only in whitespace.
+The developer build and actual root rebuild after spacing polish pass at
+48 pages. Root inspected rendered pages 43/46 and final page 45; the
+corner formula fits. Error, warning, undefined-reference/citation and
+overfull-box scans pass; underfull-box diagnostics remain.
+
+Final PDF: 640116 bytes, SHA-256
+`07db86350e74f66a46269965ace65300750f5405ddcd9d30f8daeb59411ca0f0`.
+Fresh download copy, verified byte-for-byte against main.pdf:
+`local-output/padua-argmax-bridge-20261105/paper/padua-manuscript-20261107-212439-Oslo.pdf`.
+The final log is 40188 bytes, SHA-256
+`d6f6368c95dae73bd3f605dd3a2e78da3320b71605b66cd63e75cefc3494d0a8`.
+PDFs, template dependencies, logs and rendered previews stay outside Git.
+
+Essential-evidence index check passes: 396 entries / 32414 index bytes.
+The size script reports 9771914 bytes; the inherited 2087-byte charge
+gives the unchanged conservative bound 9774001 bytes, below AC's
+10000000-byte cap. This step adds authored exposition and records only.
+
+The distinct Sol max reviewer accepts the final freeze with no unresolved
+finding; see paper/section5-expansion-review.md. It independently
+reconstructs the added derivations and verifies the final source/PDF/log
+identities and page counts. Root read the complete report. This completes
+AC's requested expansion. Handoff 25 carries the remaining publication
+preparation from handoff 23, with the 48-page draft and this focused
+review as the current baseline. Outputs are committed first; handoff 24
+is closed and 25 opened in the following handoff-only commit.

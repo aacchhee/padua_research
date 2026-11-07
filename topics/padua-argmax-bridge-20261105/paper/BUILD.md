@@ -134,3 +134,27 @@ Its bytes match main.pdf. User-facing links use fresh Europe/Oslo timestamped
 filenames to avoid the previously observed stale download. Both copies
 remain outside Git. The focused Sol max meaning/style review in
 affirmative-style-review.md accepts this source with no unresolved findings.
+
+## Expanded Section 5 — 7 November 2026
+
+The final source at `177be83bcb03204ae30c74355ad387ac52f42cb5`
+expands Section 5 from three to five pages, as requested by AC. The whole
+paper now has **48 pages**; Section 5 occupies pages 42–46 and the
+bibliography begins on page 47. The class, fonts and layout are unchanged.
+
+The developer's build and root's rebuild after final wording/spacing
+polish pass. The final log contains underfull-box diagnostics; the error,
+warning, undefined-reference/citation and overfull-box checks pass. Root
+inspected rendered pages 43 and 46 and the final corner calculation on
+page 45. All other TeX sources and the bibliography match the preceding
+reviewed draft.
+
+Section 5 source: 13274 bytes, SHA-256
+`80c4e3e764e559d596d38ae5ee40702fd3ce9ba54ea1dbe43eb5c234d6ee6eea`.
+Current PDF: 640116 bytes, SHA-256
+`07db86350e74f66a46269965ace65300750f5405ddcd9d30f8daeb59411ca0f0`.
+Fresh timestamped copy:
+`local-output/padua-argmax-bridge-20261105/paper/padua-manuscript-20261107-212439-Oslo.pdf`.
+Its bytes match main.pdf. Both PDFs and all build logs stay outside Git.
+The focused Sol max review in section5-expansion-review.md accepts the
+expanded derivations at this source freeze, with no unresolved findings.

@@ -45,3 +45,10 @@ in BUILD.md and consolidation-audit.md. Several routine
 estimates are deliberately concise, but a compressed step must remain
 checkable; size reduction is not a reason to replace a proof by an
 internal identifier.
+
+At AC's subsequent request, Section 5 was expanded from three to five
+pages with the intermediate interpolation, norm, guard and corner-descent
+derivations. The current complete draft is 48 pages. This restores useful
+proof detail within the unified certificate presentation; the rest of the
+mathematical source and the journal layout are unchanged. The focused
+review is recorded in section5-expansion-review.md.
