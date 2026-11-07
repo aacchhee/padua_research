@@ -1,0 +1,1392 @@
+\subsection{A completed comparison model}
+\label{uc:model}
+
+Throughout the comparison argument $m=n+1$, $L=\log n$, $H=1+L$,
+$H_n=\sum_{j=1}^n j^{-1}$, and
+\[
+ \begin{gathered}
+ x=|\alpha|,\quad y=|\beta|,\quad \rho=x+y\leq\pi,\quad
+ c_e=\cos(\rho/2),\quad c_d=\cos((x-y)/2),\\
+ a=c_ec_d,\quad u=1-a,\quad z=(1-c_e)(1-c_d).
+ \end{gathered}
+\]
+Also put $p=\sin x$, $q=\sin y$, $P=p+q$, and $d_+=(q-p)_+$.
+Thus $a=(\cos x+\cos y)/2\geq0$ and $2-c_e-c_d=u+z$.
+The two mesh directions retain their original roles throughout.
+For real $C,D$ and $0<e<\pi$, define the complete cancellation
+\begin{align}\label{uc:cancellation}
+ I(C,D,e)&=\int_0^\pi
+ \{|C\cot t+D\cot(t+e)|-|C\cot t|-|D\cot(t+e)|\}\,dt,\notag\\
+ J(v,s,e)&=I((v-s)/2,(v+s)/2,e).
+\end{align}
+Write $g(C,D;t)$ for this integrand, with the separation understood.
+Only the combined integrand is integrated; its pole limits are finite.
+It is invariant under simultaneous coefficient reversal, exchange of
+channels, and reflection of the separation.
+
+\begin{lemma}[Cancellation and root formulas]\label{uc:cancellation-lemma}
+For $v,s\geq0$, $0<e\leq\pi/2$, write
+\[
+ J(v,s,e)=2(s-v)_+\log\sin e+R(v,s,e).
+\]
+Then $R\leq0$,
+\begin{align}\label{uc:R-bounds}
+ |R|&\leq\max(2v,s+v)\log2,
+ &|R_s|&\leq\log\frac{v+s}{|v-s|},\\
+ R_e&=\frac{2\{v\cos e-\sqrt{(v^2-s^2\sin^2e)_+}\}}{\sin e}
+ &&(s>v),\qquad R_e=0\quad(s\leq v).\notag
+\end{align}
+The derivative in $s$ is used as a locally integrable bound at $s=v$.
+If
+\begin{equation}\label{uc:root-Z}
+ E(v,s,e)=J(v,s,e)-2s\log\sin e,\qquad
+ Z(v,s,e)=2\int_e^{\pi/2}
+       \frac{\sqrt{(v^2-s^2\sin^2t)_+}}{\sin t}\,dt,
+\end{equation}
+then $E\leq Z$, with equality for $s\geq v$.
+All complete formulas extend continuously through zero coefficients
+and moving equality roots.
+\end{lemma}
+\begin{proof}
+On a sign interval the integrand is $-2$ times the smaller absolute
+channel, and its primitive is a linear combination of logarithms of
+sines. For $s\leq v$, with $c=(v-s)/2$, $b=(v+s)/2$, this gives
+$J=2\{c\log(c/v)+b\log(b/v)\}$. For $s>v$, put
+$c=(s-v)/2$, $b=(s+v)/2$. If $s\sin e\geq v$, integration gives
+$J=2s\log\sin e$. Otherwise the equality roots satisfy
+$\sin(2t+e)=s\sin e/v$. With
+$t_1=(\arcsin(s\sin e/v)-e)/2$, the result is
+\[
+ J=2s\log\sin e+2\left\{
+ b\log\frac{\cos t_1}{\sin(t_1+e)}
+ -c\log\frac{\cos(t_1+e)}{\sin t_1}\right\}.
+\]
+These expressions have matching limits at every threshold, using
+$0\log0=0$. Differentiation gives \eqref{uc:R-bounds}; the moving
+endpoint terms cancel because the channel magnitudes agree there.
+For $s>v$, $R$ increases from
+$2(c\log c+v\log v-b\log b)$ at $e=0$ to zero at $e=\pi/2$.
+These endpoints, and the entropy expression for $s\leq v$, give its
+sign and size bounds. Subtracting $2s\log\sin e$ gives derivative
+$-2\sqrt{(v^2-s^2\sin^2e)_+}/\sin e$ in the root regime and zero
+beyond its threshold. Integration from that threshold proves $E=Z$
+for $s\geq v$. For $s<v$, $J\leq0$ and
+$\sqrt{v^2-s^2\sin^2t}\geq s\cos t$, whence
+$Z\geq-2s\log\sin e\geq E$. The case $v=0$ is direct.
+\end{proof}
+
+The scalar reciprocal pair and its continuous periodic profile are
+\begin{align}\label{uc:scalar-definitions}
+ \mathcal C(t)&=2\gamma+\frac1t+\frac1{1-t}
+ +\sum_{k\geq1}\left\{\frac1{k+t}+\frac1{k+1-t}-\frac2k\right\},
+ \notag\\
+ C_0&=\mathcal C(1/2)=2\gamma+4\log2,\notag\\
+ \Phi(t)&=\frac{\sin\pi t}{\pi}\{\mathcal C(t)-2\log\pi\},
+ \quad\Phi(0)=\Phi(1)=1,\notag\\
+ f(w)=\Phi(1/2+w/(2\pi)).
+\end{align}
+Extend $\Phi$ with period one. Then $f$ is even with period $2\pi$.
+We use $\psi(t)=-\gamma+\sum_{k\geq0}\{(k+1)^{-1}-(k+t)^{-1}\}$,
+so $\mathcal C(t)=-\psi(t)-\psi(1-t)$.
+
+\begin{lemma}[The scalar maximum, including its cusp]\label{uc:scalar-maximum}
+The function $f$ is Lipschitz, $f'$ has bounded variation on the circle,
+and, for its ordinary second derivative $g$ on $(-\pi,\pi)$,
+\begin{equation}\label{uc:scalar-bounds}
+ \begin{gathered}
+ \frac12<f\leq1,\quad \operatorname{Lip}(f)<2,\quad
+ |g|<1,\quad |f'''|<13/20,\quad
+ \operatorname{Var}_{\rm per}f'<4,\\
+ df'=g(w)\,dw-J_0\delta_\pi\leq\frac3{\pi^2}\,dw,
+ \quad J_0=\frac{2(\log\pi-\gamma)}\pi>\frac1\pi.
+ \end{gathered}
+\end{equation}
+The endpoint atom is counted once. The finite part
+\begin{equation}\label{uc:H}
+ H(w)=\frac1\pi\lim_{\epsilon\downarrow0}
+ \left\{\int_\epsilon^{2\pi-\epsilon}
+ \frac{f(w+t)}{2\sin(t/2)}\,dt+2f(w)\log\frac\epsilon\pi\right\}
+\end{equation}
+satisfies $H(w)\leq H_0:=H(0)$ for all real $w$.
+\end{lemma}
+\begin{proof}
+On $0<t\leq1/2$ the defining series becomes
+\[
+ \mathcal C(t)=t^{-1}+2\gamma+Q(t),\qquad
+ Q(t)=2\sum_{j\geq1}\zeta(2j+1)t^{2j}.
+\]
+Integral comparison gives $\zeta(3)<5/4$, hence
+$Q\leq4t^2$, $Q'\leq5t/(1-t^2)^2\leq(32/3)t$, and
+$Q''\leq Q''(1/2)=28\zeta(3)-16<19$
+(the weaker absolute bound $608/27$ is also convenient).
+With $k=2\gamma-2\log\pi$,
+\[
+ \Phi(t)=\frac{\sin\pi t}{\pi t}
+             +k\frac{\sin\pi t}\pi+Q(t)\frac{\sin\pi t}\pi.
+\]
+Since $k+Q<0$, this is at most one. For the lower bound, put
+$k_0=C_0-2\log\pi$ and $c_s=\cos(\pi s/2)$. Reciprocal pairing gives
+\begin{equation}\label{uc:f-series}
+ f(w)=\frac{\cos(w/2)}\pi
+ \left\{k_0+4w^2\sum_{\ell\geq1,\ \ell\ {\rm odd}}
+       \frac1{\ell(\ell^2\pi^2-w^2)}\right\},\quad |w|<\pi.
+\end{equation}
+The inequality $c_s\geq(3/4)(1-s^2)$ follows by differentiating
+$\sin(\pi r/2)-(3/4)r(2-r)$, $r=1-s$: its second derivative
+changes sign once, and its first derivative ends at zero. Keeping
+$\ell=1$ in \eqref{uc:f-series}, and using
+$1-c_s\leq\pi^2s^2/8$, $k_0<2$, $\pi^2<10$, gives
+$\pi f(\pi s)\geq c_sk_0+4c_ss^2/(1-s^2)\geq k_0$.
+The elementary bounds $\gamma>23/40$, $\log2>69/100$,
+$\log\pi<23/20$ give $k_0>161/100>\pi/2$.
+
+Differentiating the three terms of $\Phi$ bounds their first
+ derivatives by $2,5,4$, respectively. Their five second-derivative
+contributions have absolute bounds
+$10/3,10,608/81,32/3,10/3$, whose sum is less than $35$.
+Thus $\operatorname{Lip}(f)<6/\pi<2$ and $|g|<35/(4\pi^2)<1$.
+For the one-sided bound use
+\[
+ \left(\frac{\sin\pi t}{\pi t}\right)''
+ \leq-\pi^2(1/3-\pi^2/40)\leq-\pi^2/12,
+ \quad \frac{t(1/2-t)}{(1-t^2)^2}\leq\frac3{40}.
+\]
+The latter follows from $3+34t^2+3t^4-20t>0$.
+Since $-k<5/4$, differentiation gives
+$\Phi''\leq-\pi^2/12+2\pi+19/\pi<12$.
+At an integer $\Phi'$ has jump $2k<0$; reflection matches its
+ordinary derivative at the half integer. Scaling proves the measure
+bound in \eqref{uc:scalar-bounds}, including the stated atom.
+The positive mass of $df'$ is at most $6/\pi$, its total mass is
+zero, and therefore its variation is at most $12/\pi<4$.
+
+For the remaining derivative facts an endpoint-cancelled formula is
+useful:
+\begin{equation}\label{uc:f-integral}
+ f(w)=f(0)\cos(w/2)+2\int_0^{1/2}
+       \frac{\cos(wt)-\cos(w/2)}{\cos\pi t}\,dt,\qquad |w|\leq\pi.
+\end{equation}
+To derive it, integrate the numerator against $\cos((2j+1)\pi t)$;
+the result is
+$(-1)^j\cos(w/2)w^2/[(2j+1)\pi((2j+1)^2\pi^2-w^2)]$.
+The Abel sum of the kernels is
+\[
+ \sum_{j\geq0}(-1)^jr^{2j+1}\cos((2j+1)\pi t)
+ =\frac{r(1+r^2)\cos\pi t}{(1-r^2)^2+4r^2\cos^2\pi t}
+ \longrightarrow\frac1{2\cos\pi t}.
+\]
+For $r\geq1/2$ it is bounded by $5/(8\cos\pi t)$, while the
+numerator is $O(1/2-t)$ and $\cos\pi t\geq2(1/2-t)$.
+Dominated convergence proves \eqref{uc:f-integral}, including its
+endpoints, and permits three derivatives because each differentiated
+numerator also vanishes at $t=1/2$. In particular
+\[
+ f'''(w)=\frac{f(0)}8\sin(w/2)
+ +2\int_0^{1/2}\frac{t^3\sin(tw)-\sin(w/2)/8}{\cos\pi t}\,dt.
+\]
+The numerator's $t$ derivative has magnitude at most
+$3/4+\pi/8<23/20$, giving $|f'''|<23/40+3/40=13/20$.
+For $0<w\leq\pi$, monotonicity of $r\cot r$ gives
+$\sin(tw)/\sin(w/2)\leq\sin\pi t$. Since $f(0)<3/5$, split
+$[0,1/2]$ at $1/4,3/8$, use respectively $\sin\pi t\leq(22/7)t$
+and $t^3\sin\pi t\leq27/512$, and discard the negative last part.
+This yields
+\[
+ \frac{f'''(w)}{\sin(w/2)}
+ <\frac3{40}+\frac{44}{35\cdot1024}-\frac1{16}-\frac{37}{2048}
+ =-\frac{311}{71680}<0.
+\]
+Consequently $g$ is even and decreases radially.
+
+Pairing endpoints in \eqref{uc:H} gives the absolutely convergent
+formula
+\[
+ H(w)=\lambda_0f(w)+\frac1\pi\int_0^\pi
+ \frac{f(w+t)+f(w-t)-2f(w)}{2\sin(t/2)}\,dt,
+ \qquad \lambda_0=\frac2\pi\log\frac4\pi<\frac1{2\pi}.
+\]
+The bound follows from $\pi>25/8$ and $e^{1/4}>32/25$.
+Set $W(t)=\int_{|t|}^\pi\log\cot(s/4)\,ds$ on the circle.
+It is bounded, nonnegative and radially decreasing. Integrating the
+triangular-kernel representation of the second difference against
+$df'$ gives
+\[
+ H(w)=\lambda_0f(w)+\frac1\pi\int_{-\pi}^{\pi}W(t)g(w+t)\,dt
+                  -\frac{J_0}\pi W(\pi-|w|),\quad |w|\leq\pi.
+\]
+Fubini is valid against the finite variation measure; $W(\pi)=0$
+counts the atom only once. Subtract the minimum of $g$ to make it
+nonnegative. Layer cake reduces its convolution with $W$ to lengths
+of intersections of two centered circular arcs; a translate cannot
+increase such a length. The convolution is therefore largest at zero.
+The measure bound implies $f(w)-f(0)\leq3w^2/(2\pi^2)$, and
+$W(\pi-|w|)\geq w^2/4$, since the derivative of
+$\log\cot((\pi-s)/4)$ is $1/(2\cos(s/2))\geq1/2$.
+Thus $H(w)-H_0\leq-(\pi-3)w^2/(4\pi^3)\leq0$.
+Continuity and periodicity include the closed endpoints.
+\end{proof}
+
+For $0<v<2\pi$ define the row coefficients and profile
+\begin{align}\label{uc:row-profile}
+ C(v)&=(p-q-2a\cot(v/2))/4,\quad D(v)=(p+q+2a\cot(v/2))/4,\notag\\
+ \eta_-(v)&=\tfrac12+(x-y+v)/(2\pi),\quad
+ \eta_+(v)=\tfrac12+(x+y-v)/(2\pi),\notag\\
+ A(v)&=2(|C(v)|+|D(v)|)/\pi,\notag\\
+ \mathcal B(v)&=\frac{c_e\Phi(\eta_-(v))+c_d\Phi(\eta_+(v))}
+                         {2\sin(v/2)}+\frac{I(C(v),D(v),v)}\pi.
+\end{align}
+Write $\mathcal H(L,v)=A(v)L+\mathcal B(v)$ and
+$U_0=c_ef(x-y)+c_df(x+y)$, $B_0=4a/\pi^2$,
+$D_0=U_0/\pi+B_0\log\pi$. The completed model is
+\begin{equation}\label{uc:completed-model}
+ \begin{gathered}
+ M_\infty(x,y,L)=\frac{4a}{\pi^2}L^2+b_{\rm full}L+C_\infty,\quad
+ b_{\rm full}=\frac{2U_0}\pi+
+ \frac{8a\log2+4a\log a+2(xp+yq)}{\pi^2},\\
+ E_\infty=\frac a3+
+ \frac{a}{\pi^2}\mathcal C(1/2+(x-y)/(2\pi))
+                         \mathcal C(1/2+(x+y)/(2\pi)),\\
+ C_\infty=E_\infty+\lim_{\epsilon\downarrow0}
+ \left\{B_0\log^2\frac\epsilon\pi+2D_0\log\frac\epsilon\pi
+            +\frac1\pi\int_\epsilon^{2\pi-\epsilon}\mathcal B(v)\,dv\right\}.
+ \end{gathered}
+\end{equation}
+Weighted endpoint products and $a\log a$ have their continuous values.
+Here and below the scalar profile $f$ is distinct from any finite row.
+
+The limit exists uniformly on the closed phase triangle. We give an
+explicit envelope, also needed for the finite mesh. For either folded
+side $v_L(t)=t$, $v_R(t)=2\pi-t$, $0<t\leq\pi/4$,
+\begin{equation}\label{uc:endpoint-envelope}
+ \left|\mathcal B(v_s(t))-
+       \frac{U_0+(4a/\pi)\log t}{t}\right|
+ \leq7+\frac P\pi\left(3+2\log\frac{4\pi}{t}\right).
+\end{equation}
+To prove this, compare $I(C,D,t)$ with $I(-w,w,t)$, where
+$w=a\cot(t/2)/2$ and each coefficient displacement is at most $P/4$.
+For general displacements at most $\varepsilon$, remove pole arcs of
+radius $t/8$. If $w\geq4\varepsilon$, the own channel dominates there
+and the two cancellations differ by at most $8\varepsilon/7$ in
+integral. If $w<4\varepsilon$, both complete cancellations are bounded
+by twice the other channel, costing at most $72\varepsilon/7$.
+On the complement their difference is at most
+$2\varepsilon(|\cot z|+|\cot(z+t)|)$, whose integral is at most
+$8\varepsilon\log(4\pi/t)$. Thus
+\[
+ |I(C,D,t)-I(-w,w,t)|\leq\varepsilon[11+8\log(4\pi/t)],
+ \qquad I(-w,w,t)=4w\log\sin t.
+\]
+For the pole numerator $N_s$, $|N_s(t)-U_0|\leq12t/\pi$,
+$|N_s|\leq8$. The sine chord gives a pole remainder at most
+$6+\pi t/6$. Finally
+$|2a\cot(t/2)\log\sin t-(4a/t)\log t|
+\leq at(1+|\log t|)$. These estimates give \eqref{uc:endpoint-envelope}.
+Its integrable right side makes the finite parts uniformly Cauchy.
+The cancellation lemma bounds all central root transitions by an
+integrable multiple of $1+|\log\sin t|$; hence their limits are
+continuous in phase, including the axes and vertices.
+
+For clarity the logarithmic coefficient can be checked independently.
+Put $X=\max(x,y)$, $Y=\min(x,y)$ and $T_t=2a\cot(t/2)$. Then
+$\pi(A(t)+A(2\pi-t))$ is respectively
+$2T_t$, $T_t+p+q$, $2\sin X$ on the intervals cut by
+$\pi-X-Y$ and $\pi-X+Y$. Integrating with
+$\int T_t\,dt=4a\log\sin(t/2)$ gives
+\[
+ \int_0^\pi\{A(t)+A(2\pi-t)-8a/(\pi t)\}\,dt
+ =\{8a\log(2/\pi)+4a\log a+2(xp+yq)\}/\pi.
+\]
+This proves the coefficient in \eqref{uc:completed-model}.
+The max formulas bound each subtracted integrand by one, so dominated
+convergence includes $a=0$.
+
+\begin{lemma}[Correlated model bounds]\label{uc:master}
+Put
+\[
+ \begin{gathered}
+ b_*=C_0-7/2,\quad B=C_0^2/\pi^2,\quad d_0=C_0b_*/\pi^2,
+ \quad v_0=7b_*/(2\pi^2),\\
+ g_0=4(\log^2\pi-\log^22)/\pi^2,\quad
+ j=H_0+d_0-g_0,\quad t_0=2\log2/\pi.
+ \end{gathered}
+\]
+With $C_*=C_\infty(0,0)$ and $b_c=8(\gamma+\log(8/\pi))/\pi^2$,
+\begin{align}\label{uc:model-loss}
+ b_{\rm full}-b_c&\leq3u/\pi^2,& b_{\rm full}&<79/(5\pi^2),\notag\\
+ C_\infty-C_*&\leq-ju+t_0p-(H_0+v_0)z\leq-ju+t_0p,
+ &C_\infty&<9/4.
+\end{align}
+On $\rho\leq\pi/2$ there is the exact decomposition
+\begin{equation}\label{uc:central-decomposition}
+ C_\infty=E_\infty+c_eH(x-y)+c_dH(x+y)-(1/3+g_0)a+E_c,
+\end{equation}
+where
+\begin{equation}\label{uc:Ec}
+ \begin{aligned}
+ E_c=\frac1{\pi^2}\int_0^{\pi/2}
+ \bigl\{&J(p/2,a\tan(t/2)+q/2,t)\\
+ &+J(p/2,|a\tan(t/2)-q/2|,t)-4a\tan(t/2)\log\sin t\bigr\}\,dt.
+ \end{aligned}
+\end{equation}
+Consequently
+\begin{equation}\label{uc:regular-loss}
+ (C_\infty-E_c)-C_*\leq-ju-(H_0+v_0)z\leq0.
+\end{equation}
+\end{lemma}
+\begin{proof}
+First the reciprocal-pair series implies, for $|\theta|\leq\pi$,
+\begin{equation}\label{uc:weighted-C}
+ \cos(\theta/2)\mathcal C(1/2+\theta/(2\pi))
+       \leq C_0-b_*\{1-\cos(\theta/2)\}.
+\end{equation}
+Here is a direct verification with its endpoint normalization.
+For $0<s<1$, $c=\cos(\pi s/2)$, the tangent partial fraction gives
+\[
+ \frac{d}{ds}\log\frac{1-s^2}{c}
+ =\sum_{\ell\geq3,\ \ell\ {\rm odd}}\frac{2s}{\ell^2-s^2}
+ \geq2s(\pi^2/8-1).
+\]
+Integration yields $cs^2/[(1-c)(1-s^2)]\leq8/\pi^2$.
+Also $\sum_{\ell\geq3,\ \ell\ {\rm odd}}1/[\ell(\ell^2-1)]
+=3/4-\log2$, by partial fractions. Therefore
+\[
+ \frac{c\{\mathcal C(1/2+s/2)-C_0\}}{1-c}
+ \leq\frac{32}{\pi^2}(7/4-\log2)<7/2.
+\]
+The endpoint weighted increment tends to $\pi<7/2$; symmetry and
+continuity prove \eqref{uc:weighted-C} on the closed interval.
+Multiplication of its positive factors gives
+\begin{equation}\label{uc:endpoint-loss}
+ E_\infty\leq a/3+B-d_0u-v_0z.
+\end{equation}
+If $D=\mathcal C(1/2+(x+y)/(2\pi))+
+\mathcal C(1/2+(x-y)/(2\pi))-2C_0$, then $aD\leq(7/2)u$.
+Substitution in $b_{\rm full}$ gives exactly
+\[
+ b_{\rm full}-b_c=\frac2{\pi^2}
+ \{aD+2a\log a+xp+yq-4(\gamma+\log(8/\pi))u\}.
+\]
+Use $xp+yq\leq4u$, $a\log a\leq0$, and
+$3/2<\gamma+\log(8/\pi)<8/5$. For the lower bound the first two
+terms of $2\operatorname{atanh}(17/39)$ give
+$\log(28/11)>37/40$; the remaining constants follow from
+$23/40<\gamma<3/5$, $3<\pi<22/7$. This proves both coefficient bounds.
+
+Split the completed finite part into its scalar pole term
+$c_eH(x-y)+c_dH(x+y)$ and cancellation term. The cancellation
+parameters at $0<t<\pi$ are
+$J(p/2,(q+T_t)/2,\epsilon)$ and
+$J(p/2,|q-T_t|/2,\epsilon)$, $\epsilon=\min(t,\pi-t)$.
+Since $R\leq0$, their sum is at most
+\[
+ 4a\cot(t/2)\log\sin t+2p|\log\sin t|.
+\]
+Indeed their logarithmic coefficient is
+$(q+T_t-p)_++(|q-T_t|-p)_+\geq2T_t-2p$.
+The integral of $|\log\sin t|$ is $\pi\log2$. A primitive of the
+first term is
+$4a\log^2(2\sin(t/2))-4a\log^22-2a\operatorname{Li}_2(\sin^2(t/2))$.
+Since $\operatorname{Li}_2(1)=\sum k^{-2}=\pi^2/6$, its endpoint
+counterterm leaves $-(1/3+g_0)a$.
+On $\rho\leq\pi/2$, $2a\geq p+q$, and the endpoint half is
+root-free: $(2a\cot(t/2)-q)\sin t\geq2a-q\geq p$ for
+$0<t\leq\pi/2$. Reflecting the central half gives exactly
+\eqref{uc:central-decomposition}. The cancellation lemma bounds its
+integrand by $10|\log\sin t|+4\log2$, including equality at the
+closed boundary. Dominated convergence justifies all boundary limits.
+Apply $H\leq H_0$ and \eqref{uc:endpoint-loss}, then use
+$2-c_e-c_d=u+z$. At zero this gives
+$C_*=B-g_0+2H_0$ and proves both correlated losses.
+
+The corner expansion identifies the same constant as
+$C_*=4(\gamma+\log(8/\pi))^2/\pi^2+\kappa$:
+at zero $S_n=\Lambda_c(n)$ and the finite error proved below tends
+to zero. Hence
+\begin{equation}\label{uc:origin-identity}
+ H_0=\kappa/2+(2k_0/\pi^2)\log(2/\pi).
+\end{equation}
+Only the coarse certified input
+\begin{equation}\label{uc:coarse-input}
+ 9/10<\kappa<23/25,\qquad C_*<1847/1000
+\end{equation}
+is needed here. We specify its finite reduction. Define
+\begin{align*}
+ \mathfrak a_0&=1,\qquad
+ \mathfrak a_p=1-2\sum_{r=1}^p\frac{\zeta(2r)}{4^r}\quad(p\geq1),\\
+ \mathfrak b_0&=7\zeta(3)/8,\\
+ \mathfrak b_q&=(1-2^{-2q-3})\zeta(2q+3)
+              -(1-2^{-2q-1})\zeta(2q+1)\quad(q\geq1),\\
+ c_k&=\sum_{p+q=k}\mathfrak a_p\mathfrak b_q.
+\end{align*}
+Cancel the endpoint pole before multiplying the two power series:
+\begin{equation}\label{uc:kappa-series}
+ \begin{gathered}
+ \frac{t^2\cot(\pi t/2)}{1-t^2}
+       =\frac{2t}\pi\sum_{p\geq0}\mathfrak a_pt^{2p},\qquad
+ (1-t^2)\sum_{\ell\geq1,\ \ell\text{ odd}}
+       \frac1{\ell(\ell^2-t^2)}=\sum_{q\geq0}\mathfrak b_qt^{2q},\\
+ \kappa=\frac8{\pi^2}\sum_{k\geq0}\frac{c_k}{k+1},\qquad
+ \left|\kappa-\frac8{\pi^2}\sum_{k=0}^K\frac{c_k}{k+1}\right|
+       \leq\frac8{3(K+2)4^{K+1}}.
+ \end{gathered}
+\end{equation}
+Indeed the cotangent partial fraction
+$\cot(\pi t/2)=2/(\pi t)-(4t/\pi)\sum_{j\geq1}(4j^2-t^2)^{-1}$
+and $\sum_{j\geq1}(4j^2-1)^{-1}=1/2$ give the first series and
+$0<\mathfrak a_p\leq4^{-p}$. Reciprocal expansion gives the second;
+its $\ell=1$ pole cancels, $\mathfrak b_0<10/9$, and for $q\geq1$,
+$|\mathfrak b_q|\leq9^{-(q-1)}(1/27+\int_3^\infty s^{-3}ds)<9^{-q}$.
+Consequently $|c_k|\leq4^{-k}(10/9+\sum_{q\geq1}(4/9)^q)
+<2\cdot4^{-k}$. These bounds give uniform absolute convergence on
+$[0,1]$, so substitution into \eqref{eq:main-kappa} and termwise
+integration prove \eqref{uc:kappa-series}; its tail follows by summing
+the geometric majorant, using $8/\pi^2<1$.
+The inherited certificate evaluates this explicit finite sum through
+$K=64$ by outward Arb arithmetic at $320$ bits and adds the exact tail
+radius $8/(3\cdot66\cdot4^{65})$. It also evaluates
+$C_*=4(\gamma+\log(8/\pi))^2/\pi^2+\kappa$ outwardly. Its recorded
+enclosures and independent verification imply \eqref{uc:coarse-input};
+the reproducibility record describes the arithmetic receipt. This input
+concerns limiting constants and is separate from the analytic proof.
+Using $161/100<k_0<9/5$, $\log(\pi/2)<23/50$ and
+$\log(\pi/2)>\log(25/16)>18/41$ gives
+\begin{equation}\label{uc:scalar-constants}
+ \begin{gathered}
+ 7/25<H_0<1633/5125<8/25,\quad d_0>39/250,\\
+ g_0<43/125,\quad j>23/250,\quad 0<t_0<221/500.
+ \end{gathered}
+\end{equation}
+For example $H_0>9/20-828/4925>7/25$;
+$C_0>39/10$, $b_*>2/5$, $\pi^2<10$ give the $d_0$ bound;
+and $g_0<(80/197)((23/20)^2-(69/100)^2)<43/125$.
+For the last constant use $\log2<6932/10000$, $\pi>157/50$.
+Finally $u\geq(1-\cos x)/2$ gives
+$C_\infty\leq C_*-j/2+\sqrt{j^2/4+t_0^2}$.
+With $\delta=9/4-C_*>403/1000$, one has
+$\delta^2+\delta j>(403/1000)^2+(403/1000)(23/250)
+>(221/500)^2$. Squaring after adding $j/2>0$ proves $C_\infty<9/4$.
+\end{proof}
+
+\begin{lemma}[The paired central roots]\label{uc:central-pair}
+On $x,y\geq0$, $\rho\leq\pi/2$, put
+\[
+ b=2\arctan(q/(2a)),\qquad
+ B_\beta=\frac4{\pi^2}\int_0^b
+       (q/2-a\tan(t/2))[-\log\sin t]\,dt.
+\]
+Then $0\leq b\leq\rho$, $B_\beta\geq0$, $E_c(0,y)=-B_\beta$, and
+\begin{equation}\label{uc:central-pair-general}
+ E_c\leq\frac{4I_4}{\pi^2}\frac{p^{3/2}}{\sqrt a}-B_\beta,
+ \qquad I_4=\int_0^1\sqrt{1-t^4}\,dt<319/360.
+\end{equation}
+In particular
+\begin{equation}\label{uc:central-pair-bounds}
+ E_c\leq\begin{cases}3x^{3/2}/8-B_\beta,&\rho\leq1/2,\\
+                       5x^{3/2}/12-B_\beta,&\rho\leq1.
+       \end{cases}
+ \qquad B_\beta\geq1679y^2/8000\quad(\rho\leq1/2).
+\end{equation}
+\end{lemma}
+\begin{proof}
+The phase identity $(\cos x+\cos y)\tan(\rho/2)=p+q$ gives
+$b\leq\rho$. Using \eqref{uc:root-Z}, the exact integrand rearranges
+as two $E$ terms minus $B_\beta$. Put $v=p/2$, $\delta=q/2$.
+Tonelli and $w=a\tan(e/2)$ give for the sum of their $Z$ majorants
+\[
+ 2\int_0^{\pi/2}\frac1{\sin t}\int_{\mathbb R}
+ \frac{2a\,\mathbf1_{|w|\leq a\tan(t/2)}}{a^2+w^2}
+        \sqrt{(v^2-(w-\delta)^2\sin^2t)_+}\,dw\,dt.
+\]
+Both inner factors are even and radially decreasing. Layer cake for
+interval intersections shows that translation by $\delta$ cannot
+increase the integral. It is therefore at most
+$2F(v,a)$, where $F(v,a)=\int_0^{\pi/2}Z(v,a\tan(e/2),e)\,de$.
+For $\tau=v/a\leq1$, a second Tonelli interchange, preserving
+$e<t$, gives
+\[
+ F=4v\tau\int_0^1\sqrt{1-r^2}\,K(\tau r)\,dr,
+ \quad K(k)=\int_{\arccos(1-k)}^{\pi/2}\frac{dt}{\sin^2t+k^2}
+ \leq\frac1{\sqrt{2k}}.
+\]
+Indeed $w=\cot t$ bounds $K(k)$ by
+$(1-k)/\sqrt{k(2-k)}\leq1/\sqrt{2k}$, using
+$2(1-k)^2\leq2-k$. Thus
+$F\leq4\sqrt2 I_4v^{3/2}/\sqrt a$,
+$I_4=\int_0^1\sqrt{1-r^4}\,dr<319/360$; the latter follows by
+squaring $1-u/2-u^2/8\geq\sqrt{1-u}$ and integrating $u=r^4$.
+The resulting bound for $E_c+B_\beta$ is
+$4I_4p^{3/2}/(\pi^2\sqrt a)$.
+For $\rho\leq1/2$, $a\geq15/16>(29/30)^2$; for $\rho\leq1$,
+$a\geq49/64$. Together with $\pi^2>197/20$ these give $3/8$
+and $5/12$, respectively, and $p\leq x$. Finiteness also follows
+from $Z\leq2v\log(2/e)$, so zero parameters are included.
+At $v=0$, $E=Z=0$ and the asserted boundary identity is exact.
+Finally $2a\leq1+\cos y$ gives $b\geq y$.
+Convexity of tangent implies $a\tan(t/2)\leq qt/(2b)$ on $[0,b]$.
+For $b\leq1/2$,
+$B_\beta\geq qb(\log(1/b)+3/2)/\pi^2
+\geq(23/24)y^2(69/100+3/2)/10=1679y^2/8000$.
+\end{proof}
+
+\subsection{One finite-row telescope}
+\label{uc:finite-comparison}
+
+Hereafter $n\geq32$. All allowances are explicit scalar functions of
+real $n$; the interpolation degree remains integral. Define once
+\begin{align}\label{uc:constants}
+ T&=(4L^2-3L)/\pi^2,\quad b_0=4/\pi^2,\quad r_0=\log(5/2)+1/18,\notag\\
+ D&=\frac{(52/\pi^2)H+7}{n}+\frac{10}{n^2}+\frac{20H}{\pi n^2},\notag\\
+ \mathcal M&=\frac{b_0(2L+2r_0)}n
+ +\frac{4+b_0(L+1/n)}{4n^2-1}+\frac{b_0}{(2n-1)^2}\notag\\
+ &\qquad+\frac{5+b_0(\log(n+1/2)+2)}{4(n-1/2)^2},\notag\\
+ \bar e&=D+\mathcal M+1/n,
+ \quad K_D=\frac{[6+16/(3\pi)]H+2/\pi}{n},\notag\\
+ A_4&=4/n+40H/(\pi n^2),\quad C_4=A_4+20/n^2,
+ \quad d_\beta=(17L+27)/n^2,\notag\\
+ J_N&=((3/2)H+16/5)/n+78/n^2,
+ \quad J_W=((3/2)H+6)/n+148/n^2,\notag\\
+ k_{Nx}&=((19/2)H+(23/3)L+677/10)/n+82/n^2,
+ \quad k_{Ny}=k_{Nx}+d_\beta,\notag\\
+ k_{Wx}&=((19/2)H+(23/3)L+155/2)/n+152/n^2,
+ \quad k_{Wy}=k_{Wx}+d_\beta,\notag\\
+ U_N&=T-\bar e+A_4+\rho J_N+j,
+ \quad U_W=T-\bar e+A_4+\rho J_W+j.
+\end{align}
+The mesh allowance $\mathcal M$ is distinct from the global norm below.
+For the phase-dependent absolute allowance put
+\begin{align}\label{uc:phase-allowance}
+ D_a&=((52/\pi^2)H+7)/n+20H/(\pi n^2),\quad
+ D_\phi=aD_a+10/n^2,\notag\\
+ \epsilon&=3\pi/(2m),\quad \ell=-\log\sin\epsilon,\quad
+ \overline s=1/2+2a/\epsilon,\quad
+ \Gamma_\phi=p[1+\log(1+2\overline s/p)],\notag\\
+ M_A^\phi&=\max(p,q)/\pi+4a/\pi^2,\quad V_A^\phi=2M_A^\phi,
+ \quad C_B^\phi=6+(4+4a/\mathrm e)/\pi,\notag\\
+ V_B^\phi&=23+\{3\Gamma_\phi+(2p+6P)\ell+26a+20+2d_+\log2\}/\pi,
+ \notag\\
+ G_\phi&=\frac{LV_A^\phi+V_B^\phi}{2m}+\frac{6LM_A^\phi}{m}
+ +\frac4m\left\{7+\frac P\pi(5+2\log(2m))\right\}
+ +\frac{4d_+\log\pi}{\pi m}+\frac{2C_B^\phi}{m},\notag\\
+ C_{6,\phi}&=\frac{21+21a+2L+\{(1+48p)H+24q\}/\pi}{n}
+                         +\frac{317+5/12}{n^2},\notag\\
+ \overline D_\phi&=4(c_e+c_d)/\pi+ab_0\log\pi,\quad
+ \overline Z_\phi=\overline D_\phi+ab_0/n,\notag\\
+ \mathcal M_\phi&=\frac{ab_0(2L+2r_0)}n
+ +\frac{\overline D_\phi+ab_0(L+1/n)}{4n^2-1}
+ +\frac{ab_0}{(2n-1)^2}\notag\\
+ &\qquad+\frac{\overline Z_\phi+ab_0(\log(n+1/2)+2)}{4(n-1/2)^2},\notag\\
+ W_n&=(3\log m+\log2+2\log\pi+2)/(\pi m),\notag\\
+ C_{E,\phi}&=D_\phi+G_\phi+C_{6,\phi}+\mathcal M_\phi+d_+W_n.
+\end{align}
+Set $\Gamma_\phi=0$ at $p=0$. For its uniform version define
+\begin{equation}\label{uc:uniform-allowance}
+ \begin{gathered}
+ g_n=1+\log(2+8m/(3\pi)),\qquad M_A=1/\pi+4/\pi^2,\\
+ G_g=\frac1m\left\{7M_A L+\frac{111}2+
+ \frac{63+\log2+4\log\pi+7\log m+16\log(2m)+(3/2)g_n}\pi\right\},\\
+ \overline C_E=D+G_g+(64+16L)/n+318/n^2+\mathcal M+W_n.
+ \end{gathered}
+\end{equation}
+
+\begin{proposition}[Finite comparison bounds]\label{uc:finite-bounds}
+On the closed phase triangle,
+\begin{equation}\label{uc:global-error}
+ |S_n-M_\infty|\leq C_{E,\phi}+K_DP,
+ \qquad C_{E,\phi}<\overline C_E.
+\end{equation}
+The quantities $D_\phi,G_\phi,C_{6,\phi},\mathcal M_\phi,W_n$
+and $C_{E,\phi}$ decrease at a fixed phase for real $n\geq32$.
+On the closed signed phase diamond the same bounds
+hold with separate absolute phases. Every complete signed board sum,
+and hence every complete signed cardinal sum, is bounded by
+\begin{equation}\label{uc:analytic-norm}
+ M(n)=\frac{4L^2+(79/5)L}{\pi^2}+\frac94+\overline C_E+2K_D.
+\end{equation}
+For the actual finite origin, writing $E_n=S_n-M_\infty$,
+\begin{equation}\label{uc:origin-lower}
+ E_n(0)>-\bar e\qquad(n\geq160).
+\end{equation}
+Finally, for $n\geq160$,
+\begin{equation}\label{uc:relative-comparison}
+ S_n-\Lambda_c\leq
+ \begin{cases}
+ E_c-uU_N+C_4+k_{Nx}x+k_{Ny}y,&\rho\leq1/2,\\
+ E_c-uU_W+C_4+k_{Wx}x+k_{Wy}y,&\rho\leq1.
+ \end{cases}
+\end{equation}
+\end{proposition}
+
+We prove these statements with one exact identity. The actual rows are
+\[
+ \begin{gathered}
+ \delta_r=(1-r)\bmod2,\quad
+ u_{rk}=(\delta_r\pi+x+2k\pi)/n,\quad v_r=(r\pi+y)/m,\\
+ R_r=\sum_{k=0}^{n-1}|G_n(u_{rk},v_r)/2|,
+ \qquad S_n=(nm)^{-1}\sum_{r=0}^{2m-1}R_r.
+ \end{gathered}
+\]
+At regular samples the exact polynomial identity is
+\[
+ (-1)^{\delta_r}G_n(u,v_r)/2
+ =C(v_r)\cot((u-v_r)/2)+D(v_r)\cot((u+v_r)/2).
+\]
+At collisions only the complete polynomial continuation is used.
+Retain
+$A_6=\{0,1,2m-2,2m-1,m-1,m\}$, with
+$J_6=(nm)^{-1}\sum_{r\in A_6}R_r=J_{\rm end}+J_{\rm cen}$.
+For $t=y/\pi$, $h=\pi/m$, set
+\begin{align}\label{uc:mesh-series}
+ h_j(t)&=-\log(j+t-1/2)+\sum_{k=j}^\infty
+ \left\{\frac1{k+t}-\log\frac{k+t+1/2}{k+t-1/2}\right\},\notag\\
+ g_j(t)&=-\tfrac12\log^2(j+t-1/2)\notag\\
+ &\quad+\sum_{k=j}^\infty
+ \left\{\frac{\log(k+t)}{k+t}
+       -\frac{\log^2(k+t+1/2)-\log^2(k+t-1/2)}2\right\}.
+\end{align}
+Both series converge absolutely. The four-row endpoint reference is
+\[
+ \begin{gathered}
+ C_2=\operatorname{sinc}y+\ell_1(x,y)+\ell_1(x,-y)+\ell_2(x,-y),
+ \\ \ell_r(x,b)=\frac{\sin b}{w}
+   +8a\sum_{j=-r+1,-r+3,\ldots,r-1}\frac1{w^2-(j\pi+x)^2},
+ \quad w=r\pi+b.
+ \end{gathered}
+\]
+Its linked sinc continuation is specified below. Set
+$\mathcal H_j=h_j(t)+h_j(1-t)$, $\mathcal Q_j=g_j(t)+g_j(1-t)$,
+$E_2=C_2+D_0\mathcal H_2+B_0\mathcal Q_2$,
+$\Delta_2=E_\infty-E_2$, $\epsilon_n=\log(m/n)$,
+$Z_n=D_0-B_0\epsilon_n$, and
+\begin{align*}
+ F_s(L,z)&=\mathcal H(L,v_s(z))-
+ \frac{U_0+(4a/\pi)(L+\log z)}z-\frac{d_+}\pi\log(\pi-z),\\
+ Q_\tau[F]&=\frac1m\sum_{k=2}^{m-2}F(h(k+\tau))
+                      -\frac1\pi\int_0^\pi F(z)\,dz,\\
+  E_{\rm row}&=S_n-J_6-\frac1m\sum_{r\notin A_6}\mathcal H(L,v_r)-\Delta_2,\\
+  E_{\rm out}&=Q_t[F_L]+Q_{1-t}[F_R],\quad E_{\rm ret}=J_6-C_2,\\
+ R_{\rm mesh}&=-B_0\epsilon_n\mathcal H_2-Z_n\mathcal H_n
+               -B_0\mathcal Q_n-B_0L^2-2D_0L,\\
+ R_{\log}&=\frac1m\sum_{k=2}^{m-2}
+ \{\log(\pi-h(k+t))+\log(\pi-h(k+1-t))\}-2(\log\pi-1).
+\end{align*}
+All subtracted integrals concern their complete expressions. Direct
+subtraction of the series at indices $2$ and $n=m-1$ gives
+\begin{equation}\label{uc:telescope}
+ E_n=E_{\rm row}+E_{\rm out}+E_{\rm ret}+R_{\rm mesh}
+                       +(d_+/\pi)R_{\log}.
+\end{equation}
+Indeed the singular sample is exactly
+$Z_n/(k+t)+B_0\log(k+t)/(k+t)$; its cell primitives telescope.
+The central logarithm is kept as its finite sum. The completed
+finite part then cancels $\Delta_2$ and the two lower mesh constants.
+This derivation preserves $m=n+1$ and all finite origin values.
+The same identity holds after applying
+$\delta_aX=X(x,y)-aX(0,0)$.
+
+\paragraph{Pole norms and the matched endpoint reference.}
+For $B_n(t)=\sum_{k=0}^{n-1}|\cot(\pi(k+t)/n)|$, $0<t<1$,
+\begin{equation}\label{uc:pole-error}
+ \left|\frac{B_n(t)}n-
+ \frac{2L+\mathcal C(t)-2\log\pi}{\pi}\right|\leq\frac5{n^2}.
+\end{equation}
+Here is a proof uniform in the offset. Subtract $1/w+1/(\pi-w)$
+from $|\cot w|$ on $(0,\pi)$. The residual $b$ has integral
+$-2\log\pi$, is symmetric, and $b-|w-\pi/2|$ has Lipschitz
+first derivative with second derivative bounded by two.
+This follows directly by twice differentiating the cotangent partial
+fraction: $|(\cot w-1/w)''|<1$ on $[0,\pi/2]$.
+On each cell, pairing offsets $t,1-t$ cancels the linear term;
+its error is at most $h^2/3$, $h=\pi/n$. The cusp contributes zero
+for even $n$ and at most $h/(4n)$ for odd $n$. Thus the residual
+average error is at most $(\pi^2/3+\pi/4)/n^2$.
+The remaining harmonic-tail error is at most $1/(2\pi n^2)$:
+its $k$th paired summand is bounded by $1/(3k^3)$ using the
+midpoint and trapezoid errors for $(k+t)^{-1}$, and integral comparison
+sums the tail. Their total is less than $5/n^2$.
+Multiplication by $\sin\pi t$ gives a continuous periodic bound,
+with value one and zero error at integer offsets. Since
+\[
+ C(v)=-\frac{c_e\sin\pi\eta_-(v)}{2\sin(v/2)},\qquad
+ D(v)= \frac{c_d\sin\pi\eta_+(v)}{2\sin(v/2)},
+\]
+the two weighted row errors, summed and normalized, are at most
+$10/n^2+20aH_n/(\pi n^2)$. Indeed
+$|C|+|D|\leq1+a|\cot(v/2)|$ and the two endpoint distance
+indices give $\sum|\cot(v_r/2)|\leq4mH_n/\pi$.
+At a collision this calculation supplies the profile; the complete
+polynomial row supplies the actual value.
+
+For the cancellation reference $(-w,w)$ the half-line defect is
+particularly simple. If $h_*=\pi/n$, $d=v/h_*$ and $0<v<\pi/2$,
+\[
+ \left|\sum_{v+h_*(k+t)<\pi/2}\cot(v+h_*(k+t))
+       +\frac{\log\sin v}{h_*}
+       -\frac{\log d-\psi(d+t)}{h_*}\right|\leq4/\pi.
+\]
+To prove it, extend $\cot(v+w)$ by zero beyond $\pi/2$ and subtract
+$(v+w)^{-1}$. The residual decreases to $-2/\pi$ and increases to
+zero, so its variation is at most $4/\pi$. Compare each sample with
+its own cell average, first in a finite matched sum. The reciprocal
+part tends to $h_*^{-1}(\log d-\psi(d+t))$ by the defining series.
+No separate divergent residual sum is used. Applying this to the two
+nonzero reference intervals gives a defect $T_0$ and
+\begin{equation}\label{uc:halfline}
+ \Theta=\frac{2w}{h_*}
+ \{\psi(d+t_-)+\psi(d+1-t_+)-2\log d\},
+ \qquad |T_0-\Theta|\leq16|w|/\pi,
+\end{equation}
+where $t_-,t_+$ are the actual fractional pole offsets.
+In row $r$ take $w_r=a\cot(v_r/2)/2$ and
+$X_{rk}=(u_{rk}-v_r)/2$. The notation $T_{0,r}$ means
+$\sum_k g(-w_r,w_r;X_{rk})-(n/\pi)\int_0^\pi
+g(-w_r,w_r;X)\,dX$, with separation $v_r$;
+reflection also allows negative $w_r$.
+
+We record how this reference gives precisely $\Delta_2$, rather than
+an unspecified endpoint constant. For $j\geq2$, $|s|+x/\pi\leq1$,
+put $q_\pm=(1+s\pm x/\pi)/2$, $\nu=j+s$ and
+\[
+ B_j(s)=\psi(j+q_+)+\psi(j+q_-)-2\log\nu,\qquad
+ \Xi_j(s)=\frac{2a}{\pi^2\nu}B_j(s).
+\]
+The elementary harmonic estimate
+$0\leq\log w-(2w)^{-1}-\psi(w)\leq(8w^2)^{-1}$ follows by
+unit-cell trapezoid integration of $1/w$. It implies
+$|B_j(s)|\leq2/\nu$, $|\Xi_j(s)|\leq4a/(\pi^2\nu^2)$.
+Partial fractions in the finite reference give
+\[
+ \ell_j(x,b)=\frac{D_0+(2a/\pi^2)
+                \{\psi(j+q_-)+\psi(j+q_+)\}}{j+s},\qquad s=b/\pi.
+\]
+The constant follows from
+$\psi(1-t)-\psi(t)=\pi\cot\pi t$, itself the cotangent partial
+fraction. The $h_j,g_j$ recurrences therefore show that increasing
+the temporary cutoff $j$ adds $\Xi_j(t)+\Xi_{j+1}(-t)$.
+To identify its limit, sum
+\[
+ \frac{H_j(q_-)+H_j(q_+)}{j+s}
+ =\sum_{k+l=j-1}\frac1{(k+q_-)(l+q_+)},\qquad
+ H_j(q)=\psi(j+q)-\psi(q).
+\]
+The triangular convolution differs from the square harmonic product by
+$\pi^2/6+o(1)$: after scaling, the missing triangle has integral
+$\int_0^1-\log(1-w)\,dw/w=\pi^2/6$. Restricting first to both
+indices at least $\eta j$ justifies ordinary Riemann sums; the omitted
+sides are $O(\eta)$, since a side index $k$ has only $k+2$ partners.
+Also $h_j=-\log j+o(1)$, $g_j=-\tfrac12\log^2j+o(1)$ by their
+cell tails, and the signed sine sum including $\ell_0$ tends to
+$\cos y$. If $t_d=1/2+(x-y)/(2\pi)$,
+$t_e=1/2+(x+y)/(2\pi)$, the resulting limit is
+\[
+ \cos y+\frac{2a}{\pi^2}
+ \{\psi(1-t_d)\psi(t_e)+\psi(1-t_e)\psi(t_d)-\pi^2/3\}.
+\]
+Reflection replaces the two products in braces by
+$\{\mathcal C(t_d)\mathcal C(t_e)-\pi^2\cot(\pi t_d)
+\cot(\pi t_e)\}/2$ before the last subtraction.
+Since $a\cot(\pi t_d)\cot(\pi t_e)=(\cos y-\cos x)/2$,
+this is exactly $E_\infty$.
+The uniform $\Xi_j$ tail includes the closed boundary, since its
+weighted endpoint products tend to $\pi$. Thus
+\begin{equation}\label{uc:reference-match}
+ \begin{gathered}
+ \Delta_2=\sum_{j=2}^\infty\{\Xi_j(t)+\Xi_{j+1}(-t)\},\\
+ \left|\frac1{nm}\sum_{r\notin A_6}T_{0,r}-\Delta_2\right|
+ \leq\frac{[52a/\pi^2+16P/(3\pi)]H_n+7a+2P/\pi}{n}.
+ \end{gathered}
+\end{equation}
+For completeness, the finite charges in the second assertion are as
+follows. On either endpoint side $v=\pi\nu/m<\pi/2$, the actual
+arguments in \eqref{uc:halfline} are
+$j+q_\pm-\nu/(2m)-k_\pm$, with $k_\pm\in\{0,1\}$.
+Before a wrap, $\psi'\leq2/j$ bounds the displacement and
+$|\log(n/m)|\leq1/n$, giving $5/n$ in the braces.
+The normalized prefactor is
+$2a\tau(v/2)/(\pi^2\nu)$, $\tau(w)=w\cot w$;
+$0\leq1-\tau(w)\leq w^2$ costs $a/m^2$ per row.
+A wrap requires $\rho\geq\pi-v$, hence
+$a=(P/2)\cot(\rho/2)\leq Pv/2$; its recurrence cost is at most
+$8P/(3\pi m(j-1))$ per row. The two endpoint sums consequently
+cost $[20a/\pi^2+16P/(3\pi)]H_n/n+2a/n$.
+Their missing infinite tails cost $2a/n$, omitted collisions cost
+$2P/(\pi n)$, and the residual in \eqref{uc:halfline} costs
+$32aH_n/(\pi^2n)$. Centrally the reference variation is
+$8|w\cot v|$, so centered-cell quadrature gives
+$|T_0|\leq4|w|/|\sin v|=a/\sin^2(v/2)\leq2a$;
+its normalized sum costs $3a/n$. These are all the terms in
+\eqref{uc:reference-match}.
+
+The ordinary perturbation has the sharp coefficient needed here.
+For $g(C,D;t)$ the integrand of \eqref{uc:cancellation}, assigning
+value zero at the poles,
+\[
+ \operatorname{Var}_{\rm per}g(C,D)\leq
+       8\max(|C|,|D|)/\sin e.
+\]
+For equal coefficient signs, the two supports have unimodal minima
+with heights at most $M\tan(e/2)$ and $M\cot(e/2)$;
+$g=-2\min$ has variation at most four times these heights.
+For opposite signs the two minima are monotone, with endpoint heights
+$|D|\cot e,C\cot e$, giving the same bound including the pole jumps.
+For $f=g(-w+c,w+d)-g(-w,w)$, $|c|,|d|\leq\varepsilon$, this implies
+\begin{equation}\label{uc:ordinary-variation}
+ \operatorname{Var}f\leq24\varepsilon/\sin e,
+ \qquad |\hbox{shifted quadrature defect of }f|
+                  \leq12\varepsilon/\sin e.
+\end{equation}
+If $|w|\leq\varepsilon$, apply the preceding bound twice.
+Otherwise signs are preserved, $|f|\leq2\varepsilon\cot e$ on
+its two supports. The equality numerator is a constant plus a sine,
+with at most two zeros, and on each nonagreeing branch the derivative
+has at most one zero because $\sin(t+e)/\sin t$ is monotone.
+There are at most four interior cuts in total. Counting their changes
+and the two pole jumps gives $12(2\varepsilon\cot e)$.
+The quadrature kernel on centered cells has modulus at most $1/2$,
+proving the second assertion. For physical rows take
+$\varepsilon=P/4$ and sum $|\sin v_r|^{-1}\leq2mH_n$;
+this gives exactly $6PH_n/n$. Together with the pole error and
+\eqref{uc:reference-match}, it proves
+$|E_{\rm row}|\leq D_\phi+K_DP$.
+
+\paragraph{Absolute charges in the same telescope.}
+The remaining estimates in \eqref{uc:telescope} are
+\begin{equation}\label{uc:absolute-components}
+ |E_{\rm out}|\leq G_\phi,\qquad |E_{\rm ret}|\leq C_{6,\phi},
+ \qquad |R_{\rm mesh}|\leq\mathcal M_\phi,
+ \qquad |R_{\log}|/\pi\leq W_n.
+\end{equation}
+We supply their finite-row and quadrature details. The two centered
+cell unions are
+$[h(3/2+t),\pi-h(3/2-t)]$ and
+$[h(5/2-t),\pi-h(1/2+t)]$; their initial holes total $4h$ and
+central holes total $2h$. The subtracted $L$ coefficient has supremum
+$M_A^\phi$ and combined variation $V_A^\phi$.
+For the constant term, the following components give its combined
+variation $V_B^\phi$:
+\[
+\begin{array}{c|c}
+\text{pole regular part}&23\\
+\text{at most three monotone parameter pieces}&3\Gamma_\phi/\pi\\
+\text{separation motion}&2p\ell/\pi\\
+\text{logarithmic coefficient products}&6P\ell/\pi\\
+\text{remaining regular terms}&(26a+20+2d_+\log2)/\pi.
+\end{array}
+\]
+Here are derivations of these entries. For the pole numerator $N_s$,
+$|N_s|\leq8$, $\operatorname{Var}N_s\leq12$ and
+$\operatorname{Var}N_s'\leq47/(2\pi)$ follow from
+\eqref{uc:scalar-bounds}, including its derivative jump. Writing
+$P_s^0=(N_s-U_0)/z+N_s([2\sin(z/2)]^{-1}-z^{-1})$ bounds each
+variation by $47/(2\pi)+20(1/2-1/\pi)$ and its supremum by six;
+the sum of variations is $20+7/\pi<23$.
+Integrating the $R_s$ bound in \eqref{uc:R-bounds} uses
+\[
+ \int_0^S\log\frac{v+s}{|v-s|}\,ds
+ \leq2v\left(1+\log\frac{S+v}{v}\right),
+\]
+obtained by splitting at $s=v$. The three monotone pieces and the
+separation derivative give the next two entries. On the initial half,
+put $w=a\cot(z/2)$. The logarithmic coefficients after subtracting
+$2w\log\sin z$ are $\max(q-p,-2w)$ and
+$\max(-P,q-p-4w,-2w)$; their combined variation and supremum are
+at most $4P$ and $2P$. The product rule gives $6P\ell$.
+Replacing $2w\log\sin z$ by $4a\log z/z$ costs $10a$ per side:
+the two terms
+$(2a\cot(z/2)-4a/z)\log\sin z$ and
+$4a\log(\sin z/z)/z$ have variations at most $3a,7a$.
+Centrally put $e=\pi-z$, $s_L=q/2+a\tan(e/2)$,
+$s_R=|q/2-a\tan(e/2)|$. Their $R$ terms have total variation
+less than $21/2$: parameter motion costs at most
+$3(1+\log4)<15/2$, separation at most three.
+For $k_s=2(s_s-p/2)_+$, $k_s(0)=d_+$,
+$|k_s'|\leq2a$, $|k_s-d_+|\leq2a\tan(e/2)$.
+The variation of $(k_s-d_+)\log\sin e+d_+\log(\sin e/e)$ is
+less than $9/2$ per side, since
+$\int_0^{\pi/2}-\log\sin e\,de=(\pi/2)\log2$ and
+$\tan(e/2)\cot e\leq1/2$. Thus the central cancellation variation
+is less than twenty and its supremum less than four.
+The central subtraction of $4a\log z/z$ costs $3a$ per side;
+subtracting $d_+\log(\pi-z)$ initially costs $d_+\log2$ per side.
+This proves the table. Centered-cell BV quadrature costs half the
+variation divided by $m$. On the initial holes integrate
+\eqref{uc:endpoint-envelope}; concavity of
+$c[7+(P/\pi)(5+2\log(4\pi/c))]$ bounds the two holes by the
+$4/m$ term of $G_\phi$. The initial central-log term costs
+$4d_+\log\pi/(\pi m)$, the central constant supremum is $C_B^\phi$,
+and the coefficient holes cost $6LM_A^\phi/m$. This proves the
+outer estimate.
+
+For the three retained endpoint charts $(r,b)=(1,y),(1,-y),(2,-y)$,
+put $w=r\pi+b$, $z=j\pi+x$, $\mu=n/m$, $v=w/m$, $u_j=z/n$.
+The $n$ actual indices have parity $1-r$ and $-\pi\leq u_j<\pi$.
+With $\sigma_-=(-1)^{(r-j-1)/2}$, $\sigma_+=(-1)^{(j+r-1)/2}$,
+\begin{equation}\label{uc:sinc-row}
+ \begin{aligned}
+ \frac{F_j}{nm}=
+ \frac{c_e\sigma_-\operatorname{sinc}((z-\mu w)/2)\tau((u_j-v)/2)
+       +c_d\sigma_+\operatorname{sinc}((z+\mu w)/2)\tau((u_j+v)/2)}
+ {2m\sin(w/(2m))},\\
+ f_j=\frac{c_e\sigma_-\operatorname{sinc}((z-w)/2)
+                  +c_d\sigma_+\operatorname{sinc}((z+w)/2)}w.
+ \end{aligned}
+\end{equation}
+Here the cosine weights use $(x,b)$; their product is still $a$.
+Partial fractions show $\sum_{j\in\mathbb Z}|f_j|=\ell_r$;
+the sinc formula supplies all linked removable values, including
+$f_0=1$, $f_j=0$ otherwise at $(r,b,x)=(1,-\pi,0)$.
+For $|j|\leq4$, use $(c_e+c_d)/w\leq1$,
+$0\leq[2m\sin(w/(2m))]^{-1}-1/w\leq w/(20m^2)$,
+$|\operatorname{sinc}'|\leq1/2$, and $1-\tau(t)\leq2t^2/5$
+for $|t|<1$. The even five-index sets have
+$\sum z^2\leq45\pi^2$, $\sum|z|\leq13\pi$; the odd four-index
+set has bounds $24\pi^2,8\pi$. Subtracting prefactor, sinc displacement,
+and tau in that order costs in total $7/n+317/n^2$.
+For the remaining indices $|z|\geq4\pi\geq2w$, put
+$D_h=\mu^2w^2-z^2$, $D'=w^2-z^2$,
+$K=\operatorname{sinc}((|u_j|+v)/2)\operatorname{sinc}((|u_j|-v)/2)$,
+$H_h=(1+\cos v)/(2K)$. Sine chords give $K>1/6$,
+$|H_h-1|\leq u_j^2$, and
+\[
+ \frac\mu{D_h}-\frac1{D'}
+ =\frac{z^2+\mu w^2}{m(z^2-\mu^2w^2)(z^2-w^2)}
+ \leq\frac{20}{9mz^2}.
+\]
+The complete numerator is
+$2a(1+\cos v)-p\sin u_j+\sin b\sin v$ over
+$2(\cos u_j-\cos v)$. Using
+$\sum|z|^{-1}\leq2H_n/\pi$, $\sum z^{-2}\leq3/(8\pi^2)$,
+$w\sum z^{-2}<1/\pi$, the three far parts cost
+$18a/n+(48pH_n+24q)/(\pi n)$; their omitted reference tails cost
+$3a/n$ by $|f_j|\leq81a/(20z^2)$.
+For the closest row, positive samples require $\sin u>0$, and their
+positive part is at most $p/(u-y/m)$. The first positive denominator
+is at least $2x/n$, the others at least $2k\pi/n$, so twice their
+normalized sum is at most $(1+H_n/\pi)/m$.
+The exact signed row is $q\cot(y/(2m))/(2m)-a/m$ after sign reversal.
+Thus its difference from $\operatorname{sinc}y$ is at most
+$(2+H_n/\pi)/m+\pi^2/(24m^2)$.
+These bounds yield
+\[
+ |J_{\rm end}-C_2|\leq
+ \frac{9+21a+\{(1+48p)H_n+24q\}/\pi}{n}
+                  +\frac{317+5/12}{n^2}.
+\]
+The two central rows have $|v-\pi|\leq\pi/m$,
+$\sin(v/2)>99/100$, $|\cot(v/2)|\leq\pi/m$.
+The weighted pole bound applied before taking linked limits, with
+$|C|+|D|\leq P/2+a\pi/m$, gives
+$0\leq J_{\rm cen}\leq(12+2L)/n$. This proves the retained estimate.
+
+The reciprocal and logarithmic-reciprocal centered-cell tails in
+\eqref{uc:mesh-series} are at most $1/(8w^2)$ and
+$(\log w+2)/(8w^2)$; integrate the second-derivative remainder to
+obtain them. At the paired upper endpoints $n\pm c$, $|c|\leq1/2$,
+keep their logarithms paired before taking absolute values:
+$|\log(1-c^2/n^2)|\leq(4n^2-1)^{-1}$ and
+$|\log(1\pm c/n)|\leq(2n-1)^{-1}$.
+Since $|\mathcal H_2|\leq2r_0$, $|D_0|\leq\overline D_\phi$,
+$|Z_n|\leq\overline Z_\phi$, these are exactly $\mathcal M_\phi$.
+Finally BV quadrature of $\log(\pi-z)$ costs $\log(2m)/m$;
+its initial holes cost $4\log\pi/m$, central holes at most
+$2(1+\log(m/\pi))/m$. This proves the last bound in
+\eqref{uc:absolute-components}, and hence the first part of
+\eqref{uc:global-error}.
+
+To obtain its uniform constant, use $\Gamma_\phi\leq g_n$,
+$\ell\leq\log m$, $C_B^\phi<8$ and
+$\overline D_\phi<49/15<4$, $\overline Z_\phi<5$.
+Termwise maximization gives the old sum
+$C_{E,{\rm old}}=\overline C_E+3H/n$. Retain the correlations:
+\[
+ C_{E,{\rm old}}-C_{E,\phi}>
+ \left(\frac{52H}{\pi^2n}+\frac{28L}{\pi^2m}\right)(1-a)
+                +\frac{48H}{\pi n}(1-p).
+\]
+Using $L>3$, $n/m\geq32/33$, $L/H>3/4$, its ratio to $H/n$
+is at least $A(1-\cos x)+B(1-\sin x)$, where
+$A=398/(11\pi^2)>18/5$, $B=48/\pi>15$.
+The minimum is $A+B-\sqrt{A^2+B^2}>3$, since
+$2(A-3)(B-3)>9$. This proves precisely the saving $3H/n$.
+Each rational logarithmic term decreases for $n\geq32$;
+$m\Gamma_\phi'<p\leq\Gamma_\phi$ and
+$m\ell'=\epsilon\cot\epsilon\leq1<\ell$ prove the two less
+immediate cases. Splitting the mesh terms into constants and logarithms
+over their positive quadratic denominators proves their decrease.
+The model bounds, $P\leq2$, and phase folding now give
+\eqref{uc:analytic-norm}, including complete signed cardinal sums by
+the finite reflection formula.
+
+\paragraph{The actual origin.}
+At zero, $|E_{\rm row}|\leq D$, $|R_{\rm mesh}|\leq\mathcal M$.
+The four positive endpoint samples, with multiplicity, are
+$(w,z)=(\pi,0),(\pi,0),(2\pi,\pi),(2\pi,-\pi)$.
+The two central rows have exact total $J_{\rm cen}(0)=2/m$.
+Their linked cyclic vectors below have respectively one sample $n$
+and nonnegative cotangent differences. The identity
+$\sum_k\cot((k\pi+\theta)/n)=n\cot\theta$ gives signed sum $n$
+for the latter row as well.
+Consequently
+\[
+ E_{\rm ret}(0)=-2/m+8\sum(\mu/D_h-1/D')
+                         +8\mu\sum(H_h-1)/D_h.
+\]
+The exact identity
+\[
+ \frac\mu{D_h}-\frac1{D'}=\frac1{2m}
+ \left\{\frac1{(\mu w-z)(w-z)}+
+              \frac1{(\mu w+z)(w+z)}\right\}
+\]
+has bracket sum at least $56/(9\pi^2)$, by evaluating its decreasing
+function of $\mu$ at one. For these four samples
+$K\geq49/50$, $|H_h-1|\leq19/n^2$, $\sum D_h^{-1}\leq25/54$;
+hence the geometric error is at most $71/n^2$ and
+$E_{\rm ret}(0)>22/(45m)-71/n^2$.
+For the signed outer term define
+\[
+ \begin{gathered}
+ b(z)=2\cot(z/2)-4/z,\quad d(z)=[2\sin(z/2)]^{-1}-1/z,
+ \\ P_0(z)=2(f(z)-f(0))/z+2f(z)d(z),\quad
+ Q_0(z)=2\cot(z/2)\log\sin z-4\log z/z,\\
+ F_0=(L/\pi)b+P_0+Q_0/\pi.
+ \end{gathered}
+\]
+On $[h/2,\pi-h/2]$,
+\begin{equation}\label{uc:origin-variation}
+ \operatorname{Var}F_0'\leq L/2+(25/2)\log(2m)+37/3=:V.
+\end{equation}
+Here are component estimates proving this bound. The cotangent
+residual has $|(\cot z-1/z)''|<1$ on $[0,\pi/2]$;
+$0\leq d\leq1/5$, $0\leq d'\leq1/3$, $|d''|\leq5/32$.
+Thus $\operatorname{Var}(b'/\pi)\leq1/2$.
+From $f'(0)=0$, $|f'|<2$, $|f''|<1$ one obtains
+$|(2(f-f(0))/z)''|\leq8/z$ and
+$\int_0^\pi|(2fd)''|<9$. Hence
+$\operatorname{Var}P_0'\leq8\log(2m)+9$.
+Initially write $Q_0=b\log\sin z+4\int_0^1(\cot(tz)-(tz)^{-1})dt$.
+The second derivatives of the first and last regular factors cost one
+and three; the other product terms cost $(9/2)\int dz/z$.
+Centrally, $2\tan(e/2)\log\sin e$, $e=\pi-z$, costs
+$4+9\int de/e$, while $-4\log z/z$ costs two.
+Their derivatives match at $\pi/2$, giving
+$\operatorname{Var}Q_0'\leq(27/2)\log(2m)+10$ and
+\eqref{uc:origin-variation} after division by $\pi>3$.
+Centered-cell quadrature for a BV derivative has kernel at most
+$h^2/8$; the two cell families therefore cost at most
+$\pi V/(4m^2)$ downwards. On initial holes $z\leq5h/2$,
+$d(z)<z/16$, $P_0<7z/6$, and
+$F_0(z)\leq7z/6+(z/\pi)\log_+(\pi/(2nz))$.
+Their total upper integral costs
+$119\pi/(24m^2)+1/(8n^2)$, using
+$\int_0^c z\log_+(A/z)dz\leq A^2/4$.
+The central holes have favorable sign: there $z\geq21\pi/22$,
+$b/\pi<-7/20$, $P_0<101/100$, $Q_0\leq0$, so $F_0<-1/25$.
+Thus
+\[
+ E_{\rm out}(0)\geq-B_{\rm out},\quad
+ B_{\rm out}=\frac{\pi[L+25\log(2m)+193/3]}{8m^2}+\frac1{8n^2}.
+\]
+Together these prove
+$E_n(0)\geq-D-\mathcal M-B_{\rm out}-[71/n^2-22/(45m)]_+$.
+The bracket vanishes for $n\geq148$. Moreover $nB_{\rm out}$ decreases:
+for $K=L+25\log(2m)+193/3$ its derivative is
+$\pi[(1-n)K+m+25n]/(8m^3)-1/(8n^2)<0$, since $K>64$.
+At $160$, $\log160,\log322<6$ gives $160B_{\rm out}<1$.
+This proves \eqref{uc:origin-lower}; it does not assert $E_n(0)\geq0$.
+
+\paragraph{Relative charges and their two radii.}
+The same telescope, with its origin subtracted before estimation,
+gives the following table. Every entry is valid for $n\geq32$;
+the two columns retain their distinct finite-row denominators.
+\begin{equation}\label{uc:relative-components}
+\begin{array}{c|c|c}
+ &\rho\leq1/2&\rho\leq1\\ \hline
+\delta_aE_{\rm row}&\multicolumn{2}{c}{aA_4+20/n^2+\rho(8H+10)/n}\\
+|\delta_aE_{\rm ret}|&a\rho J_N+P(7/n+4/n^2)
+                         &a\rho J_W+P(11/n+4/n^2)\\
+|\delta_aR_{\rm mesh}|&\multicolumn{2}{c}{\rho/(2n)}\\
+\delta_aE_{\rm out}+(d_+/\pi)R_{\log}
+ &\rho((23/3)L+47)/n+yd_\beta
+ &\rho((23/3)L+50)/n+yd_\beta
+\end{array}
+\end{equation}
+We derive these entries, in particular the signed last one.
+On the wide domain $c_e,c_d\geq7/8$, $a\geq49/64$ and
+$2a-P\geq17/32$. For the endpoint reference use fixed label sets
+$j=2,\ldots,\lfloor n/2\rfloor$ on the left and
+$j=3,\ldots,\lfloor n/2\rfloor$ on the right. Put
+$\xi=x/\pi$, $s=\pm y/\pi$, $\nu=j+s$, $q_\pm=(1+s\pm\xi)/2$.
+The normalized endpoint comparison in \eqref{uc:reference-match} is
+$a e_j$, where
+\[
+ \begin{gathered}
+ e_j=\frac2{\pi^2}\left\{\frac{\tau_j-1}{\nu}B_j
+                              +\frac{\tau_j}{\nu}U_j\right\},
+ \quad\tau_j=\frac{\pi\nu}{2m}\cot\frac{\pi\nu}{2m},\\
+ U_j=\sum_\pm[\psi(j+q_\pm-\nu/(2m))-\psi(j+q_\pm)]
+                                      -2\log(n/m).
+ \end{gathered}
+\]
+Along the straight phase path, $5j/6\leq\nu\leq7j/6$,
+$j+q_\pm\geq j+1/3$, and the displaced arguments are at least $j$.
+The positive psi derivative series gives
+$\psi'\leq3/(2j)$, $|\psi''|\leq2/j^2$; hence, with
+$b=\xi+|s|$, $|\dot B_j|\leq4b/j$, $|\dot U_j|\leq3b/(mj)$,
+$|B_j|\leq2/\nu$, $|U_j|\leq5/n$.
+The four prefactor bounds are
+$|({\tau_j-1})/\nu|\leq4\nu/m^2$,
+$|[({\tau_j-1})/\nu]'|\leq12/m^2$,
+$|\tau_j/\nu|\leq1/\nu$, $|(\tau_j/\nu)'|\leq3/\nu^2$.
+They yield
+\[
+ |\dot e_j|\leq\frac{2b}{\pi^2}
+ \{29/(m^2j)+19/m^2+22/(nj^2)+4/(mj^2)\}.
+\]
+Using harmonic sum at most $2H_n$, square sum at most $3/2$, and
+$H_n\leq n/4$, its sum is at most $145\rho/(27n)<8\rho/n$.
+The infinite tails cost $2a\rho/n$, by differentiating $\Xi_j$.
+
+The half-line residual must also be incremented, rather than bounded
+twice absolutely. Define $r(0)=0$,
+$r(w)=\cot w-1/w$ for $0<w<\pi/2$, and $r(w)=-1/w$ afterwards.
+Direct differentiation gives
+$\operatorname{Var}r'=5/3$, $\int|r'|=4/\pi$.
+For its matched-cell defect $\mathcal E(h_*,v,t)$,
+defined by the absolutely convergent series
+\[
+ \sum_{k\geq0}\left\{r(v+h_*(k+t))
+       -h_*^{-1}\int_{v+kh_*}^{v+(k+1)h_*}r(w)\,dw\right\},
+\]
+\[
+ \begin{gathered}
+ |\mathcal E-(1/2-t)r(v)|\leq5h_*/24,\\
+ |\mathcal E(v,t)-\mathcal E(v_0,t_0)|
+ \leq(5/3)|v-v_0|+(4/\pi+5h_*/3)|t-t_0|.
+ \end{gathered}
+\]
+Indeed the cell kernel $K_t(w)=w-\mathbf1_{w>t}$ has mean
+$t-1/2$ and a zero-mean primitive of modulus at most $1/8$;
+integration against $dr'$ proves the first bound. Differentiation of
+finite matched sums gives the second, and absolute convergence permits
+the limit. Here the unwrapped actual offsets are
+$\theta_\pm=(1-s\pm\xi)/2+(j+s)/(2m)$, strictly in $(0,1)$.
+They satisfy $|v-v_0|=y/m$ and
+$\sum|\theta_\pm-\theta_0|\leq\rho/\pi$, $v_0=\pi j/m$.
+Since $|r(v)|\leq\pi v/6$,
+$\cot(v/2)\leq8/(3v_0)$, and
+$|\cot(v/2)-\cot(v_0/2)|\leq8\pi^2y/(9mv_0^2)$,
+the single-row residual increment is at most
+\[
+ a\left\{\frac{16\rho m}{3\pi^2j}
+ +\left(\frac{4\pi^2}{27}+\frac{80}{9\pi}\right)\frac yj
+ +\frac{10\pi m}{27n}\frac y{j^2}\right\}.
+\]
+Normalized summation bounds it by $2a\rho H_n/n$
+(the coefficient is below $32/27+32/51+85/612<2$).
+The complementary central references cost $4a/n$, the ordinary
+perturbation $6PH_n/n$, and the two pole errors
+$20/n^2+40aH/(\pi n^2)$. These give the first table row.
+
+The positive endpoint sample sets on $\rho\leq1$ are exactly
+$\{0\},\{0\},\{-1,1\}$ in \eqref{uc:sinc-row}; their full
+numerators are positive because $2a-P\geq17/32$. On the wide domain
+$w\pm z\geq(17/8)k$, $\mu w\pm z\geq(19/10)k$,
+$k=r\pm j\in\{1,3\}$; the near bounds are $(21/8)k,(12/5)k$.
+The first excluded index has $|z|>w>\mu w$, proving completeness.
+In the exact row error, the four terms $-a/m$ cancel upon subtracting
+the actual origin. The remaining displacement, geometric, sine and
+tau charges are respectively
+\[
+\begin{array}{c|cccc}
+ &\text{displacement}&\text{geometric}&\text{sine}&\text{tau}\\ \hline
+\rho\leq1/2&16a\rho/(5n)&78a\rho/n^2&7P/n&4P/n^2\\
+\rho\leq1&6a\rho/n&148a\rho/n^2&11P/n&4P/n^2.
+\end{array}
+\]
+For explicit checks, a reciprocal-product derivative is at most
+$(25760/104329)\rho/k^3$ on the wide domain. The eight $k$ values
+are six ones and two threes, giving displacement-sum increments
+$3\rho/2$ wide and $4\rho/5$ near. Also
+$K\geq49/50$, $|H_h-1|\leq19/n^2$, $|\dot H_h|\leq5\rho/n^2$,
+$|\dot D_h^{-1}|\leq(20/19)\rho/D_h$, and
+$\sum D_h^{-1}\leq800/1083$ wide, $25/54$ near.
+Differentiating $H_h/D_h$ gives exactly the geometric column.
+The sine column follows by inserting the same denominators into the
+last numerator in \eqref{uc:sinc-row}; the tau column uses
+$\sin y\geq5y/6$, $y^2\leq6q/5$.
+For the two actual central rows use the linked cyclic vector
+\[
+ L_{n,k}(\theta)=\sin\theta\cot((k\pi+\theta)/n),\qquad
+ L_{n,0}(0)=n,\quad L_{n,k}(0)=0\ (k\not\equiv0\pmod n).
+\]
+It is polynomial because $\sin(nt)\cot t=\cos t\,U_{n-1}(\cos t)$.
+The exact vectors are
+\[
+ \begin{gathered}
+ \frac{c_eL_{n,k}((x-\mu y)/2)+c_dL_{n,k}((x+\mu y)/2)}
+                {2\cos(y/(2m))},\\
+ \frac{c_eL_{n,k}((x-\mu y-\pi/m)/2)
+             +c_dL_{n,k-1}((x+\mu y+\pi/m)/2)}
+                {2\cos((\pi-y)/(2m))}.
+ \end{gathered}
+\]
+All residues are included. For $|\theta|\leq11/20$, the centered
+nonzero residues satisfy
+$|L'_{n,k}|\leq2n/(5|k|)+11n/(50k^2)$; the zero residue costs
+at most $n/5$. Hence $\|L_n'\|_1\leq(9/8)nH_n$, using
+$H_n\geq7/2$. The row $m-1$ origin shifts are $\pm\pi/(2m)$,
+with norms below $25n/16$. Since
+$(c_e+c_d)/(2c)\leq8a/(7c)$ and $c>99/100$, each row's vector
+motion costs at most $(2/3)a\rho nH_n$.
+The remaining coefficient errors are $a\rho^2/6$ for row $m$ and
+$a\rho^2/13+ay/m^2$ for row $m-1$. With the origin norms these
+give at most $(3/4)a\rho H_n/n$ per normalized row.
+Thus $|\delta_aJ_{\rm cen}|\leq(3/2)a\rho H_n/n$, proving the
+retained entries, with both meshes and their finite collisions intact.
+
+For the mesh row, cancel its leading terms first:
+\[
+ \begin{aligned}
+ \delta_aR_{\rm mesh}=-B_0\epsilon_n\delta\mathcal H_2
+ &-aZ_n(0)\delta\mathcal H_n-B_0\delta\mathcal Q_n\\
+ &-(D_0-aD_0(0))(\mathcal H_n+2L),
+ \end{aligned}
+\]
+where $\delta\mathcal H_j=\mathcal H_j(t)-\mathcal H_j(0)$.
+Differentiating \eqref{uc:mesh-series} gives bounds
+$|\mathcal H_2'|\leq2$, $|\mathcal H_n'|\leq(n-1)^{-2}$,
+$|\mathcal Q_n'|\leq(L-1)/(n-1)^2$, $|\mathcal H_n+2L|<n^{-2}$.
+With $B_0\leq1/2$, $|Z_n(0)|<5$,
+$|D_0-aD_0(0)|\leq5\rho/3$, $t\leq\rho/3$, this is at most
+$\rho\{1/(3n)+(L+9)/(6(n-1)^2)+5/(3n^2)\}<\rho/(2n)$.
+
+It remains to prove the last row with its scalar logarithm included
+once. Put $e=\rho$, $\delta=x-y$, and on either folded side set
+\[
+ \begin{gathered}
+ N_L=c_ef(z+\delta)+c_df(z-e),\quad
+ N_R=c_ef(z-\delta)+c_df(z+e),\\
+ V_s=N_s-2af(z),\quad V_0=V_s(0),
+ \quad P_s=(V_s-V_0)/z+V_sd(z).
+ \end{gathered}
+\]
+With $Z=2a\cot(z/2)$, define
+$\pi g_L=\max(q,p-Z)$, $\pi g_R=\max(-q,p-Z,q-2Z)$ and
+$\mathcal C_s=I_s(\phi,z)-aI_s(0,z)-d_+\log(\pi-z)$.
+The exact outer increment is
+\begin{align}\label{uc:signed-outer}
+ T_{\rm out}={}&L\{Q_t[g_L]+Q_{1-t}[g_R]\}
+ +Q_t[P_L]+Q_{1-t}[P_R]
+ +\{Q_t[\mathcal C_L]+Q_{1-t}[\mathcal C_R]\}/\pi\notag\\
+ &+\mathrm{Shift}+(d_+/\pi)R_{\log},\notag\\
+ \mathrm{Shift}={}&\frac am\sum_{k=2}^{m-2}
+ \{F_0(h(k+t))+F_0(h(k+1-t))-F_0(hk)-F_0(h(k+1))\}.
+\end{align}
+The functions $g_L-q/\pi=(p-q-Z)_+/\pi$ and
+$g_R+q/\pi=\max(0,p+q-Z,2q-2Z)/\pi$ are nonnegative and
+nondecreasing. Their disjoint right rectangles lie in $[0,\pi]$,
+so each $Q_\tau$ is nonpositive. Since $Q_\tau[1]=-3/m$,
+the opposite constants cancel. Thus the whole $L$ term is favorable.
+
+Here are the pole-regular bounds for each side, each entry multiplied
+by $\rho$; the columns give variation and supremum on the initial
+and central half intervals:
+\[
+\begin{array}{c|cc|cc}
+ &\operatorname{Var}P_s&\sup|P_s|&\operatorname{Var}P_s&\sup|P_s|\\ \hline
+\rho\leq1/2&537/200&123/40&731/96&337/96\\
+\rho\leq1&289/100&67/20&395/48&193/48.
+\end{array}
+\]
+To verify the wide row use $r=c_e+c_d-2a\leq\rho^2/4$ and
+\eqref{uc:scalar-bounds}: initially
+$|V_s|\leq17\rho/4$, $|V_0|\leq5\rho/4$,
+$|V_s'|\leq5\rho/2$, $|V_s''|\leq31\rho/20$.
+The identity $((V_s-V_0)/z)'=z^{-2}\int_0^z wV_s''(w)dw$
+gives variation $31\rho/25$, while $V_sd$ costs $33\rho/20$.
+Centrally the measure translation bound
+$\operatorname{Var}[f(\cdot+b)-f]\leq4|b|$ gives
+$\operatorname{Var}V_s\leq9\rho$. In
+$P_s=V_s/[2\sin(z/2)]-V_0/z$, the two weights have
+supremum/variation $(3/4,1/4)$ and $(2/3,1/3)$, proving the row.
+Near the origin retain $r\leq\rho/8$; the corresponding four
+initial bounds are $33\rho/8,5\rho/8,9\rho/4,57\rho/40$ and the
+central variation is $17\rho/2$. This proves the sharper row.
+BV midpoint quadrature and holes of total $4h,2h$ now give
+$|Q_t[P_L]+Q_{1-t}[P_R]|\leq30\rho/m$ near and $33\rho/m$ wide;
+for example the wide sum is $39073\rho/(1200m)<33\rho/m$.
+
+For the complete cancellation, the initial half is root-free because
+$(a\cot(z/2)-q/2)\sin z\geq a-q/2\geq p/2+17/64$.
+Its exact increments are $\pm q\log\sin z$.
+Centrally put $e=\pi-z$, $s_0=a\tan(e/2)$,
+$s_L=s_0+q/2$, $s_R=|s_0-q/2|$. Then
+\[
+ \begin{gathered}
+ \mathcal C_s=R(p/2,s_s,e)+b_s(e)\log\sin e
+                                  +d_+\log(\sin e/e),\\
+ b_L=\max(q-p,-2s_0)-d_+,
+ \quad b_R=\max(-p-q,q-p-4s_0,-2s_0)-d_+.
+ \end{gathered}
+\]
+The $b_s$ decrease from zero, with combined supremum and variation
+at most $3\rho$. The $s_s$ have at most three monotone pieces and
+are at most $3/2$. For $\epsilon=h/2$, $\ell=-\log\sin\epsilon$,
+if $\rho\leq\epsilon^2/8$ then on every cell
+$(a\tan(e/2)-q/2)\sin e\geq7e^2/80\geq\rho/2\geq p/2$,
+so there are no central roots. Otherwise the parameter integral in
+\eqref{uc:R-bounds} is at most
+$p[1+\log(4/p)]\leq\rho(11/2+2\ell)$, using
+$p\log(\rho/p)\leq\rho/\mathrm e$.
+In either case the full two-side variation is at most
+$\rho(39/2+16\ell)$. Initial and central hole envelopes are
+$\rho[\log(\pi/(2z))+\log\pi]$ and
+$\rho[7+4(-\log\sin e)]$, respectively. Integrating them and
+using midpoint BV error yields, respectively,
+\[
+ \frac\rho{\pi m}(39/4+8\log m),\quad
+ \frac{4\rho}{\pi m}(3+\log m),\quad
+ \frac\rho{\pi m}(22+8\log m).
+\]
+Thus the full cancellation costs
+$\rho(175/4+20\log m)/(\pi m)$, including every root switch.
+The logarithm contributes $d_+W_n$, already proved above.
+Finally first differences in the shift sum telescope to two boundary
+terms and disjoint interior second differences. On $[2h,\pi-h]$,
+the differentiation used in \eqref{uc:origin-variation} gives
+\[
+ \sup|F_0'|\leq(4/3)L+(2/3)\log m+20/3,\quad
+ \operatorname{Var}F_0'\leq L/2+(25/2)\log m+37/3.
+\]
+Their sum $2\sup|F_0'|+\operatorname{Var}F_0'$ is less than
+$17L+27$, using $\log m\leq L+1/32$. Hence
+$|\mathrm{Shift}|\leq y(17L+27)/m^2$.
+Adding the last four estimates gives
+\[
+ \begin{gathered}
+ T_{\rm out}\leq\frac\rho m
+ \left\{c_P+\frac{23\log m+175/4+\log2+2\log\pi+2}\pi\right\}
+                  +\frac{y(17L+27)}{m^2},\\ c_P=30\text{ or }33.
+ \end{gathered}
+\]
+The elementary bounds $\pi>3$, $\log2<7/10$,
+$\log\pi<23/20$, $\log m\leq L+1/32$ give the constants $47,50$
+in \eqref{uc:relative-components}. All exact increments vanish at
+zero. The arguments use integrable complete cancellations and linked
+finite rows; a dense collision-free sequence therefore proves the
+same estimates on all stated closed domains.
+
+Summing \eqref{uc:relative-components}, using $P\leq\rho$ and
+$a=1-u$, gives
+\[
+ E_n(\phi)-E_n(0)\leq C_4+k_{\sigma x}x+k_{\sigma y}y
+              +u(\bar e-A_4-\rho J_\sigma),\qquad \sigma=N,W,
+\]
+where we used $E_n(\phi)-E_n(0)=\delta_aE_n-uE_n(0)$ and
+\eqref{uc:origin-lower}. The constants match term by term:
+near $16/5+10+7+47+1/2=677/10$, wide
+$6+10+11+50+1/2=155/2$; the square-denominator terms are
+$78+4=82$, $148+4=152$, and both harmonic coefficients are
+$8+3/2=19/2$. Finally \eqref{uc:model-loss} and
+\eqref{uc:regular-loss} give the model drop at least $u(T+j)-E_c$.
+Since $S_n(0)=\Lambda_c(n)$, this proves
+\eqref{uc:relative-comparison} and completes the finite comparison proof.
