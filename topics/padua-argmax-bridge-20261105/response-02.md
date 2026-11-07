@@ -38,3 +38,7 @@ F01's seven exact mathematical statements/interfaces are independently accepted 
 ## Ten-round completion and AC's compact-receipt direction
 
 AlltenFrounds nowhave exactscoped mathematical acceptance; [summary](campaign-F-summary.md). Global320/273OPEN unchanged. Latest userauthorizesdiscardingtheoldquota-failedremoteattempt and requestsonefreshcompactpack, all server-side degree validations, two random full histories for sandbox rechecks, and production documentation instead of cold-storing every certificate. A stopped status/absent globalshutdown record does not negate completed per-pass proofs, but no newdegree is adopted from status text alone. New technical design addresses actual duplicated-library disk use; no redundant speculative-recovery framework or further analytic round is opened.
+
+## Completed compact delivery
+
+AC's fresh compact archive is built and independently accepted: [delivery](compact-delivery.md). The unchanged scientific source/30workers/128GB setting is retained. Byte-preserving post-pass hardlinks address repeated libraries; all full validation runs on Syvert; only all essential receipts and two seeded random residual full histories are returned. The successful copied-data fixture checks every original byte and both full sample closures; its return is40.2MB. Source, measurements, earlier failed fixture and actual ZIP inspection are recorded. AllFrounds are complete. Actual new residual results and two native sandbox rechecks remain future work; no cold-storage or finite-degree adoption is inferred.

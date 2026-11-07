@@ -114,3 +114,23 @@ Preserve the complete new local-output/argmax-bridge-20261105/syvert30-7cf34bcee
 ## Lean Syvert30 update —2026-11-07
 
 Retain local-output/argmax-bridge-20261105/syvert30-lean-529ee8be/ whole tree, bothZIPs/checksums and syvert30-lean-build stdout/stderr. FullZIP25094674B SHA25629f707a9256dfe08bf7d2c0051a1f56de457dfe4d99992c90ad74cbfc9c85528;13memberupdate36756B SHA256436331e8f3cb6932f30a90e57c21de8369f86e1f6db8de80ba8d99d97aef8835. Source61cf9ab5d143cea993ce2cde6d88302a6c10b7bc; exactbuild/patchcommands inLOG/toolrecords, independentchecking inindependent-checks-syvert30.md. OldZIPsremainunchanged; userfailedpreflightrecords arepreservedonsyvertbeforeapplyingupdate. Compactsummary inevidence/syvert30/lean-delivery.json andsyvert30-delivery.md. Externalphysicaltransfer/durableretrievalpending.
+
+## Compact receipt release and AC retention direction — 2026-11-07
+
+Input ZIP local-output/argmax-bridge-20261105/compact-release-aea62883/padua30.zip:
+25,111,335 B, SHA256 aac08e5f25bd27b2710de22039efd229b4ee67d8c1e3ffef9456af200e1f74d2.
+Source996fedcad4ba79a28e45a3fe3678adc12f1e5358; exact build in LOG, independent
+checking in independent-checks-compact-pack.md. Whole input tree, manifest,
+checksum, build logs and fixtures01/02 remain off Git. Successful02 receipt:
+62,857 B, SHA25607a7804ba9d3f26a9d576a6aa91c4b17061c7d2cc41638f3ead8b827aa0040ce.
+The two-case return is40,184,709 B; summary in evidence/compact/fixture-summary.json.
+Failed01 remains failed, direct exit137.
+
+AC explicitly accepts that not all certificates enter cold storage. Validate
+all full histories on Syvert; return compact certificates and two random full
+histories for independent sandbox checking. Exact source, pins, commands,
+sampling and validation are documented. Unsampled full data is server-local;
+no complete independent sandbox inspection or cold archival is claimed.
+Prior accepted local known-case artifacts remain preserved. The old failed
+remote attempt may be discarded under AC's explicit instruction. External
+physical transfer of retained local artifacts remains unclaimed.

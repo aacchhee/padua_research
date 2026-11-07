@@ -1,6 +1,7 @@
 # Independent focused review: compact production pack
 
-Status: PENDING exact candidate freeze and focused validation. Requested/
+Status: FINAL SCOPED DELIVERY ACCEPT for the exact compact artifact below.
+Earlier preparation/failure notes are retained as history. Requested/
 API-accepted reviewer Codex gpt-6-astra medium; serving metadata unexposed.
 Rules originally read at4a5de2012bad94601c713b2ff5517f2e3fb80af2; current
 scope began at61cf9ab5d143cea993ce2cde6d88302a6c10b7bc. No new mathematical or
@@ -168,3 +169,41 @@ artifact build.** Actual new offline ZIP/source/manifest/modes inspection is
 the remaining delivery check. No new degree or native rerun occurred here;
 future independent native replays apply only after actual residual samples
 are produced and separately released.
+
+## Final complete offline artifact — DELIVERY ACCEPT
+
+Root built once from published source
+`996fedcad4ba79a28e45a3fe3678adc12f1e5358`. I independently checked actual
+unpacked and ZIP bytes in one bounded standard-library data-only batch;
+direct tool chunkda53cd returned exit0 with all assertions passing. No
+candidate import, new fixture, compiler, native or target job executed.
+
+Artifact:
+`local-output/argmax-bridge-20261105/compact-release-aea62883/padua30.zip`.
+
+- ZIP25,111,335B; SHA256
+  `aac08e5f25bd27b2710de22039efd229b4ee67d8c1e3ffef9456af200e1f74d2`.
+- Runtime manifest54,003B; SHA256
+  `5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16`.
+- All250 manifest payloads matched size/hash and were regular files; all38
+  source paths equaled published996fedc bytes; all24 active operation/launcher
+  copies matched accepted candidateaea62883….
+- Unchanged scientific FREEZE0d9ce0a5… and all13 code/data rows matched;
+  all six offline Debian package pins and arithmetic asset rows matched;
+  active library directory contains only9 FLINT/GMP/MPFR aliases.
+- All257 archive paths are unique and safe under `padua30/`; every archived
+  payload equals its unpacked file. Six top-level launchers have100755 modes,
+  all other members100644. Source custody and README identities match.
+- Exact7/273/280 worklists,30 workers,128000000000B RAM cap,2GiB worker AS,
+  120CPU/pass and absent lean-policy floors were checked in emitted plans.
+  Default collection imports the accepted compact collector; accepted random
+  min(2,eligible) selection and post-validation worker dedup are present.
+  No outputs directory exists; this artifact has never started a case.
+
+**FINAL SCOPED ACCEPT for delivery of this fresh complete offline ZIP.**
+It is a new production artifact, not a patch or migration of the failed old
+run. The40MB known-data compact return and physical storage reduction are
+actual fixture measurements, not full target guarantees. Full histories
+remain server-side except the recorded two completed-residual samples;
+unsampled independent full-history review is not claimed. Target residual
+execution and later independent native sample replays remain future work.

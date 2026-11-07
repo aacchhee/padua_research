@@ -91,6 +91,20 @@
         "checker": "independent-checks-syvert30.md lean focused/byte review",
         "summary": "syvert30-delivery.md; evidence/syvert30/lean-delivery.json",
         "retention": "full original/new trees,ZIPs,patch,checksums and build logs retained; external transfer pending"
+      },
+      "compact-release": {
+        "source_commit": "996fedcad4ba79a28e45a3fe3678adc12f1e5358",
+        "artifacts": [
+          {
+            "path": "local-output/argmax-bridge-20261105/compact-release-aea62883/padua30.zip",
+            "bytes": 25111335,
+            "sha256": "aac08e5f25bd27b2710de22039efd229b4ee67d8c1e3ffef9456af200e1f74d2"
+          }
+        ],
+        "generating_command": "LOG.md exact compact offline build at996fedc; compact_pack/README.md runtime generation",
+        "checker": "independent-checks-compact-pack.md; evidence/compact/fixture-summary.json",
+        "summary": "compact-delivery.md; evidence/compact/delivery.json",
+        "retention": "local complete inputZIP/source/tree and fixture01/02 retained; AC permits server-local unsampled certificates without complete cold transfer; exact production documented"
       }
     },
     "files": [
