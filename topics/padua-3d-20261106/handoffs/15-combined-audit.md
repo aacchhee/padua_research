@@ -1,6 +1,6 @@
 # Handoff15 — combined formal audit04 of usable constructions and continuation
 
-- Status: open
+- Status: superseded by 16: AC authorizes up to fifteen pruning rounds; formal scope preserved
 - Previous: [14-seven-round-continuation.md](14-seven-round-continuation.md).
 - Next agent/model/effort: Claude, Opus5.5 xhigh, formal mathematical/adversarial auditor when capacity returns.
 - Branch: codex/padua-3d-20261106.

@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: combined formal Claude audit04 when capacity returns · Successor: [handoffs/15-combined-audit.md](handoffs/15-combined-audit.md)
+- Stage: WORK · Next: adaptive point-removal campaign, up to fifteen rounds · Active: [handoffs/16-pruning-campaign.md](handoffs/16-pruning-campaign.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -840,3 +840,10 @@ their corresponding runs, with publication and execution timing distinguished.
 - Final newroundcounts2/4/1of7each, cumulative4/7/5within original10/10/20. Current unused5/3/6retained; old overallroom6/3/15is not silently added to this campaign. U1refit/U3specified route stop at failed gates; U2finite endpoint retained. All allocated experiments actually finished.
 - [Complete continuation record](continuation-results.md), [independent supplement](continuation-review.md) and [usable recipes](usable-recipes.md) cover outcomes/limits. APIresponse is narrowly fixed/independentlyPASS; degree-domainhardening staysNOTE. Formal combinedClaude audit04remainsPENDING, preserving handoff11/09scope and old explicit uncovered/source/E4obligations.
 - Stage AUDIT. No IDs/ranges, shared scientificregistry application, ready/merge or archivaldelivery. Publish all outputs before status-only closing14 and opening15 for the formal audit when available. Only AC merges.
+
+## 2026-11-07 — AC authorizes adaptive point-removal campaign
+
+- Rules read at6d894d50efd8167c5b10f3d5b0da4d8cf214b681 (AGENTS, completeWORKFLOW, CODEX); main/topic refreshed unchangedf70a260/6d894d5. Runtime skill/status refreshed, executor connected/running, currentobservations/policyenforced.
+- AC proposes starting with a larger set and removing points while possible, then authorizes up to15total researchrounds on this approach. [Brief](pruning-brief.md) and [handoff16](handoffs/16-pruning-campaign.md) record authority. Handoff15is superseded by status only; exact formalClaude scope remains pending. Old U1/U2/U3completed4/7/5 and stops unchanged. Newpruning0/15, not15perrule or15deletions.
+- RootAstrahigh coordinates Solxhigh fullpredecessor/theory gate, Solhigh pruningdeveloper, Solmedium manifestcodec headroom, distinct supplementary review. OnlyrootGit/sharedfiles. Configuredmodelmetadata disclosed; provider metadata unexposed. Newgate reads completecurrentIDEASandalltables, closestdowndate/extraction records; no historicalnoveltyclaim.
+- Every construction question awaits publishedprospective protocol. Physicaliidnoise OLS, actualweightedcovariance, realintegerreplication and idealbalancedcoefficients staydistinct. Numericalrank alone is notquality; retainfullcount/noise/amplification/target/costfrontier. Exact455payload/oldscience preserved. FormalClaudepending, no IDs/ranges/registryapplication/readiness/merge.
