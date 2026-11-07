@@ -254,3 +254,10 @@ No unconditional C_infty<9/4 or improvement of D10's near increment is
 claimed. Those consequences require a further scalar hypothesis and
 are developed separately. Complete D13 and whole-diamond E05 finite
 error targets are unaffected and remain OPEN.
+
+
+## Root adoption and successor closure —2026-11-07
+
+Root adopts this exact10786B frozen proof (SHA256 64808c06bb6550f16512ca6b54b59537647a7f4b083f107543a4be8eafa6f1f8) after distinct [E06 H ACCEPT](../independent-checks-E06-H.md), report19012B b6a9db930286bc9acef2f35598dca83f08d34c7e88692920d3d944e636ca1658. The original prefix and its historical conditional dispositions are preserved. NOTE N1 only clarifies the strict intermediate relaxation at u=0; the claimed strict bound holds there directly.
+
+The missing smooth monotonicity/Hmax premise is now supplied by independently accepted [E07 scalar theorem](E07-f-monotonicity.md) and [review](../independent-checks-E07-H.md). Thus the reviewed sufficient implications now give C_infty<9/4 globally and a nonpositive regular increment onrho<=1. The origin normalization and these constant consequences retain PD-T271 as an explicit dependency; E07 scalar monotonicity itself does not require that enclosure. No lower global onset follows without its complete matched assembly. Strong cosine shape and fullD13 remain OPEN. Final Claude audit is separate.
