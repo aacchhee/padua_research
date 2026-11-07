@@ -291,3 +291,8 @@ scalar/endpoint/phase/degree/native/compile/quadrature/numerical-integral
 evaluation or scientific job ran. No Git/shared/old-proof mutation.
 Scientific CPU0; ordinary text-tool overhead unmeasured. Distinct review
 and root adoption remain required; the developer does not self-approve.
+
+
+## Root disposition after distinct mathematical review —2026-11-07
+
+Root adopts only the exact-reference nonuniform-loss obstruction; the fifth-floor and capped/hybrid alternatives remain OPEN. The original frozen proof prefix is preserved and identified in [independent mathematical review](../independent-checks-F02-F03.md). Novelty/priority, disclosed chronology and final Claude/readiness judgments remain separate and unwaived.

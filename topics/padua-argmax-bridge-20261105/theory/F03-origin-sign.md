@@ -215,3 +215,8 @@ The newly narrowed full-row screen triggered an additional full read
 of IDEA329's original/final records, PD-T226 and its round6 record
 BEFORE further pursuit of that exact predecessor. No alternative new
 mechanism, signed h-expansion, finite test or second round was launched.
+
+
+## Root disposition after distinct mathematical review —2026-11-07
+
+Root accepts the routine identity/normalization and OPEN/deferred disposition; no improved finite origin bound or O(n) evaluator is adopted. The original frozen proof prefix is preserved and identified in [independent mathematical review](../independent-checks-F02-F03.md). Novelty/priority, disclosed chronology and final Claude/readiness judgments remain separate and unwaived.

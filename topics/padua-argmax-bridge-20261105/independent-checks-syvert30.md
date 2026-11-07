@@ -1,7 +1,7 @@
 # Independent focused review: Syvert30 delivery variant
 
-2026-11-07. **STATIC SOURCE ACCEPT; new enforcement controls and actual ZIP
-inspection pending.** Requested/API-accepted Codex gpt-6-astra medium;
+2026-11-07. **FINAL SCOPED DELIVERY ACCEPT:** source, focused controls and
+actual ZIP inspection completed, as recorded below. Requested/API-accepted Codex gpt-6-astra medium;
 actual serving metadata unexposed. Rules read at4a5de2012bad94601c713b2ff5517f2e3fb80af2;
 no mathematical/novelty content, so full IDEAS read is not required. Root
 alone controls Git/publication/build. No target job or residual degree runs.
@@ -96,3 +96,44 @@ unchanged-source/known-case evidence is not represented as a30-worker test.
 
 **Source plus focused synthetic controls ACCEPT. Actual built ZIP inspection
 remains pending; no target or residual execution has occurred.**
+
+## Actual built artifact — FINAL DELIVERY ACCEPT
+
+Root built the package once from published source
+`7cf34bcee4be9bdd5b4a871426083333a89b7c15`. I independently inspected actual
+unpacked/ZIP bytes using Python standard-library JSON/SHA256/ZIP and read-only
+`git show`; direct tool chunk4c4ecd returned exit0 with every assertion passing.
+No candidate module, systemd, loader, compiler, native oracle or job executed.
+
+Artifact path:
+`local-output/argmax-bridge-20261105/syvert30-7cf34bcee4be9bdd5b4a871426083333a89b7c15/padua30.zip`.
+
+- ZIP25,095,407B, SHA256
+  `e51b442ba541ebcf9a94c3571a624692ee385c3178195d2a2ced071bd960d35f`.
+- Runtime manifest52,884B, SHA256
+  `78b40151280ada98ada945ac2e562b9ffa817279ed08b1dba219c78a94fddd55`.
+- All244 manifest file entries match exact size/hash and are not symlinks.
+  All35 source paths equal published7cf34bce bytes; all21 active operation/
+  launcher copies match the reviewed candidate pins.
+- Frozen scientific FREEZE identity remains0d9ce0a5…914eb, and all13 code/data
+  rows match. All six bundled Debian package pins match. All arithmetic asset
+  provenance rows match the manifest, with9 active FLINT/GMP/MPFR aliases and
+  no active producer libc/loader.
+- All251 ZIP names are unique safe paths under top directory `padua30/`;
+  each ZIP payload equals its unpacked counterpart. Six top-level launchers
+  are mode100755; other entries100644. Source custody and both README copies
+  have their recorded byte identities.
+- Parsed plans have exact7/273/280 sets and known rehearsal[41,511]; all
+  profiles specify30 workers, aggregate cap128000000000B,80GiB planning floor,
+ 2GiB per-worker AS and120CPU/pass. Allocation launchers contain the reviewed
+  beregning-to-memory_guard path. No outputs directory exists: no target
+  numerical attempt occurred in this artifact preparation.
+
+**Final scoped verdict: ACCEPT delivery of this exact new Syvert30 artifact.**
+The source and23 focused synthetic checks plus actual archive inspection are
+complete. Accepted prior local known-case evidence applies to unchanged
+worker/engine mechanisms, not30-way Syvert2 performance. Target prerequisites
+remain README requirements; systemd delegation, beregning behavior and actual
+host execution are untested. Nothing here certifies a residual degree, predicts
+campaign success/duration, waives retained audit findings, or substitutes this
+artifact for the immutable original ZIP.

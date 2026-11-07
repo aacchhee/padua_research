@@ -9,11 +9,12 @@ Starting accepted theorem: exact parity-correct two-corner argmax for every inte
 | F01 | COMPLETE | Independently accepted wider finite/error/reanchor supports, exact mesh first-order theorem and scoped entropy-BV obstruction; exact implementation OPEN. No smaller onset. |
 | F02 | COMPLETE | Accepted scoped obstruction to unmodified full-band reference uniform loss; requested floor OPEN. |
 | F03 | COMPLETE | Endpoint-complete origin reduction deferred; targets OPEN, no improved lower bound. |
-| F04 | RELEASED PAPER | Literal cancellation-block boundary-corrected entropy-cell remainder, exact target below. |
+| F04 | COMPLETE | Accepted uniform entropy-cell remainder with conservative K120000; feasibility only. |
 | F05 | RELEASED PAPER | Complete beta-axis first inner transported-row crossover, c in[1/2,3/2], n>=32. |
-| F06 | RELEASED PAPER | Joint signed distance-two discrete endpoint floor; exact scope below. |
+| F06 | COMPLETE, review pending | Stronger distance-two projected floor proved by developer, all signed phases and orientations. |
 | F07 | RELEASED PAPER | ONE fixed256 five-fourths outer pruning gate, full e0, no scan. |
-| F08–F10 | UNALLOCATED | Three later coordinated rounds; no mathematical release. |
+| F08 | RELEASED PAPER | Sharper exact entropy-kernel remainder K<=100 on balanced box; exact scope below. |
+| F09–F10 | UNALLOCATED | Two later coordinated rounds; no mathematical release. |
 
 F01 principal Sol xhigh has completed a full fresh gate for I07. The disjoint I06 helper remains GATE ONLY and may not consume unfrozen I07 work. F01's prospective target is a standalone COMPLETE finite relative allowance on the CLOSED signed rho<=5/4 domain, all integer n>=32 or an explicitly justified stricter floor, with named exact masks, continuous collision values, actual origin normalization and every ordinary/retained/mesh/outer-log charge. Re-prove all domain-dependent guards; the existing E11 model extension alone supplies no finite-error guard. Derive explicit rational coefficient functions rather than assuming the old47/50 constants extend. A separately stated generic E13 outer implication may be reanchored at the same radius; no base degree is selected or evaluated.
 
@@ -68,3 +69,9 @@ Applicable full gate COMPLETE. Quantitative application of accepted F01, not a n
 FIRST PAPER test K*(256)>0 then F*(256)=G*−A*²/(4K*)>0, with literal complete coefficient bounds written and every charge retained. If positive, accepted all-real-n transfer gives EVERYinteger n>=256 and CLOSEDsigned5/4<=rho<=pi strictprimitivegap at leastF*(256). If this ONE sufficient gate does not close, record/defer, no replacementdegree/geometry/originsign/droppedcharge. Author registers localidea+attempt BEFOREderivation. No scripts/imports/scalarcalculator/phase/degree/endpointnative/quadrature jobs; hand rational comparisons only at the preregisteredbase.
 
 Future checker integration is outside this PAPER release: preserve mandatory13-grid/fullGRID norm with analytic leaves, exact symbolicLambda_c and true whole-cellguard, separate auditedsource and executionrelease. No runtime/vertex reduction is promised. OldSyvert30scientificfreeze proceeds independently; this support alone certifies no newdegree or smallerglobalonset.
+
+## F08 prospective release — sharp entropy moments on balanced box
+
+Adaptive full gate COMPLETE. PAPER target EVERYn>=32, m=n+1, (|alpha|,|beta|)in CLOSED[1/10,1/4]^2: same F04 boundary-corrected exactsumQBs remainder <=100(1+logm)/m² inabsolutevalue; preferK<=50ifproved. BOTH parities, original unequaloffsets/fourholes; p=qcoalescence remainsincluded, axesexcluded. This is a usefulconstanttest, notnewglobalonset.
+
+FIRST derive actualTWO-SIDEDentropy-singular coefficient fromtheliteralN1branches beforeassuming a smooth xlogx prototype. Then sharplyboundcentered-cell/actualhole moments uniformlyinfeatureposition/exactsample/approachtocentralendpoint asp-q->0. Complete explicitresidualbudgetmustfollow; anypairingrequiresprovenreindexing+boundaryterms. ReplacingF04rootcounts alonecannotsharpen its6000bad-cell/1125hole costs, and isnottheseparation. Alternativesregistered: exactentropy subtractionwithresidualkernel, oractualmixed-phasecurvature/monotonicity (E06axisdoesnotproveit). Stop selectedallocationifitneedsexcludedfeatureseparation, alteredoperator/holes, globallyfiniteVar(B'), oronlygenericcountretuning. A boundabove100 leavesgoalOPEN, notrefuted. Localidea+attempt MUSTBEWRITTEN beforeANYalgebra. Separate rootrelease permitsPAPERonly, no scripts/imports/numerics/scalar/degreeendpoint/native/quadrature.

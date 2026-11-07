@@ -57,6 +57,20 @@
         "summary": "evidence/audit02-local/; independent-checks-audit02-known-integration.md",
         "result": "completed41/511 full proof/raw/build/maps closure accepted, complete280false; no residual run",
         "retention": "ephemeral local originals retained; physical transfer and durable external retrieval pending"
+      },
+      "syvert30": {
+        "source_commit": "7cf34bcee4be9bdd5b4a871426083333a89b7c15",
+        "artifacts": [
+          {
+            "path": "local-output/argmax-bridge-20261105/syvert30-7cf34bcee4be9bdd5b4a871426083333a89b7c15/padua30.zip",
+            "bytes": 25095407,
+            "sha256": "e51b442ba541ebcf9a94c3571a624692ee385c3178195d2a2ced071bd960d35f"
+          }
+        ],
+        "generating_command": "LOG.md (Syvert30 controls accepted; exact final offline build release)",
+        "checker": "independent-checks-syvert30.md actual data inspection",
+        "summary": "syvert30-delivery.md; evidence/syvert30/delivery.json",
+        "retention": "whole source tree/ZIP/manifest/controls/build logs retained locally; external physical transfer and durable retrieval pending"
       }
     },
     "files": [
