@@ -48,11 +48,30 @@ New bulk output remains uniquely identified local regeneration material,
 not cold archive delivery. New point coordinates are not elevated to the
 stored degree12exact unisolvence theorem.
 
+## Second rounds: refitting stops, shorter schedule earns a transfer test
+
+U1 assessed24covariance-aware GLS refits alongside all38original designs
+on two new clouds. Every covariance/reproduction check passed, but the
+best total-MSE gain was only1.6453percent for the primary target and
+0.7585percent for the Gaussian, below the registered5percent gate.
+Noise covariance improved while some deterministic errors worsened.
+Stop this fixed-allocation refit route; keep the first round's calibrated
+comparison. These degree choices use known noiseless test targets to
+estimate bias; they are not a data-only selector for an unknown field.
+See [GLS receipt](evidence/u1c-gls.json).
+
+U2's training-only calibration compared caps40/60/80 without using fresh
+quality/function/noise outcomes. Cap40passed the training/guard gate and
+had a heuristic degree16CPU forecast89.1653seconds; the other caps failed
+the forecast ceiling. This is not a runtime bound or a construction-cost
+pass. A prospective fresh degree16test of the fixed40-step schedule is
+next. See [calibration receipt](evidence/u2c-calibration.json).
+
 ## Round ledger and pending work
 
-At this checkpoint this campaign has completed1/7in each direction; prior
-counts2/3/4 become3/4/5 cumulative. Six further slots per direction remain
-within this campaign, subject to gates. U1/U2next questions are prospective,
-not already consumed; U3is parked. Formal Claude combined audit handoff11/09
+At this checkpoint the campaign has completed U1=2/7,U2=2/7,U3=1/7; prior
+counts2/3/4 become4/5/5 cumulative. Unused current slots are5/5/6.
+U1fixed-allocation refitting and U3all28quality are parked. The U2degree16
+fixed40-step transfer is prospective, not already consumed. Formal Claude combined audit handoff11/09
 remains pending; supplementary continuation review is in progress.
 No final IDs/ranges, shared registry application, readiness or merge.

@@ -37,7 +37,50 @@ or exact unisolvence theorem is claimed for the new degree14 candidate.
 
 ## Outcome
 
-Execution in progress. No further round is allocated before this outcome.
+C1 completed. The [11875-byte receipt](evidence/u2c-transfer14.json)
+pins Python3.12.14, NumPy2.3.5, SciPy1.17.0, nine source identities,
+all seeds, all five candidates and a raw hash inventory. All five sets
+have680 distinct cube nodes and pass numerical guards. Each receives
+114700 fresh interior/face/edge points and140 physical maximization
+starts; all failed statuses remain in raw. Search values are lower samples.
+
+| Degree14 set | Searched norm lower sample | Orthonormal condition2 | iid coefficient-risk trace |
+|---|---:|---:|---:|
+| QR |115.5669933|68.52823|4.687760|
+| Leja |317.5347089|140.06220|34.155901|
+| One-sweep localdet |64.2069063|25.29934|2.140566|
+| Comparable-cost repeated localdet |62.1533652|21.50890|1.806543|
+| U2-AB selected within-budget prefix |35.5443307|12.60651|1.745112|
+
+The finite norm benefit is44.64% against one sweep and42.81% against
+comparable cost. U2's iid-risk advantage over the stronger control is
+only3.40%. All16 non-machine-floor function/measure RMS combinations
+improve against that control; both measures' nearly machine-floor
+exponential case worsen, and every max/RMS/noise result remains in the
+receipt. This is finite behavior, not universal approximation superiority.
+
+QR costs3.762892511CPU seconds and the first localdet sweep25.119975511.
+U2 reaches176 accepted steps at the120-second CPU cap: best training
+maximum62.12431894→32.31033668,881 trials,703 Neumann rejections,
+no Armijo rejection, no numerical fallback. Its complete extra cost is
+120.717693505 and total149.600561527CPU seconds. Therefore guards and
+quality pass but **strict cost fails; the C1 combined gate fails**.
+This is unfinished, not convergence or a claim of intrinsic limitation.
+
+Matched-control selection is cost-only: four additional whole localdet
+sweeps fit at97.413190031CPU seconds, yielding five total sweeps and
+126.296058053 totalCPU. The fifth additional sweep ends121.658369592,
+exceeds the fixed120 budget, and is retained/excluded. No quality selected
+the prefix; coarse whole-sweep accounting leaves22.59 seconds unused.
+Same-machine process timing is not a hardware-independent comparison.
+The [durable scoped result](theory/u2c-budgeted-transfer.md) retains this
+failed fixed-budget extension and its strong finite quality evidence.
+
+The strong benefit motivates the separately prospectively registered
+C2 training-only shorter-schedule calibration. C1's failed120-second
+recipe and its implementation deviation remain unchanged. C2/C3 are
+not reruns to erase that failure; a changed schedule is explicitly
+calibrated and any higher-degree test requires fresh evidence.
 
 ## Canonical implementation deviation
 

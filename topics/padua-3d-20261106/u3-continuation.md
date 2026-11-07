@@ -126,12 +126,18 @@ is inferred. Source compilation and owned prose links/whitespace pass.
 
 This is **1/7 further U3 rounds**, aggregate **5**; **six** of the current
 additional allowance remain unused. Root publishes/counts the checkpoint.
-Independent reconstruction and the formal Claude review are separate;
-this developer run does not supply self-approval or a new computer proof.
+The distinct [independent receipt](continuation-review/evidence/u3.json)
+actually reconstructs all28 full240-parameter cosets and folding/counts,
+two-prime actual-node ranks, independently coded basis/QR/Leja and both
+complete meshes without importing producer scientific routines. It
+reproduces zero passes and the same minimum q; the maximum candidate mesh
+difference is2.28e−13. That independent computation supplements the formal
+Claude review; it supplies neither self-approval nor a new computer proof.
 
 ## Runs needed
 
-Distinct independent reconstruction/rerun of all 28 cases and both controls
-is being coordinated by root. No further developer research run is needed
-for this failed finite gate. Formal Claude handoff11/09 scope remains
-separate; no readiness, final-ID allocation or broad family rejection follows.
+The distinct review report is being finalized by root's reviewer; its
+all28 scientific execution is complete as linked above. No further developer
+research run is needed for this failed finite gate. Formal Claude handoff11/09
+scope remains separate; no readiness, final-ID allocation or broad family
+rejection follows.

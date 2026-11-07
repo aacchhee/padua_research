@@ -11,6 +11,11 @@ The [prospective protocol](u1-continuation-protocol.md) fixes an explicitly
 assumed product-Chebyshev sensor-field example, B637equal-cost independent
 observations and known per-observation variance, with at least one sample
 at each used site. These are research assumptions, not facts supplied by AC.
+The decision tables use each explicit noiseless test function to estimate
+bias: they are oracle benchmark/calibration tables. Known noise sigma
+alone does not make them implementable on an unknown field. Real use would
+require an independently justified prior calibration or validation data;
+no data-only automatic degree selector is implemented or evaluated.
 All construction/solver mechanisms are inherited known routes. Depend on
 the separate U1 recipe/noise/OLS records and exact stored U2 payload; no
 source-dependent log³ theorem enters the finite comparisons.
@@ -44,15 +49,73 @@ A distinct reviewer identified the assessment-cap/inventory requirements
 before execution; the implementation now checks both construction and
 assessment and inventories every raw artifact by bytes/hash.
 
+## Continuation round1/global U1round3 — MEASURED useful decision
+
+Protocol publishedcb014092e71d16b77c7c2651363440d7b078eab6; source frozen
+atd826a0f before execution. [Compact receipt](evidence/u1c-budget.json)
+retains all38designs' two-cloud squared biases for all12targets, exact-
+model risk coefficients, both-cloud choices, source/input identities and
+full raw inventory. Every design passes the count/reproduction gate;
+maximum reproduction infinity residual2.38457e−12. All21integer-allocation
+brute-force prechecks pass. No cap, invalid design or unrun case.
+
+For the explicit primary calibration function exp(10(x−1)), the oracle
+best feasible choices among
+the frozen38designs are:
+
+| Per-observation noise sd | Choice | Distinct sites | Total expected RMS estimate | MSE gain vs fixed Haar12 |
+|---|---|---:|---:|---:|
+|0|QR13|560|0.0000618475|63.31percent|
+|0.00001|QR13|560|0.0000647325|60.08percent|
+|0.0001|OLS12|637|0.000131853|1.26percent|
+|0.001|OLS11|510|0.000820209|7.69percent|
+|0.01|OLS9|305|0.00617031|47.01percent|
+|0.1|OLS6|112|0.0429647|74.30percent|
+|1|OLS3|26|0.226300|92.87percent|
+
+Here RMS is sqrt(empirical squared Chebyshev bias plus exact-model noise
+risk), from the second fresh32768-point cloud. Noise scales and all choices
+were frozen prospectively. The practical gate passes: calibrated degree
+selection materially changes the choice and MSE. Every one of the12x7
+minimizing designs agrees across the two independent clouds, so first-cloud
+choices have zero second-cloud regret within this finite candidate set.
+This is an empirical stability check, not a bound on integration error or
+an unknown real field. A known one-dimensional physical model would allow
+a different, smaller model class; this comparison fixes three-dimensional
+Pi_n and does not optimize that model assumption.
+
+The off-centre Gaussian selects Haar11at0..0.001, OLS11at0.01 and QR1at
+0.1/1. Thus higher degree is not automatically better even without noise
+for this sampled design/target combination. All other targets, including
+the four original functions and omitted T13mode, remain in the receipt;
+no losses are omitted. No universally best family is inferred.
+
+Construction consumed4.66995process-CPU seconds and complete run6.19196CPU
+seconds,6.2003wall seconds. Other workers were authorized concurrent untimed
+assessments; these are descriptive costs, not matched-cost comparisons.
+Single-thread Python3.12.14/NumPy2.3.5/SciPy1.17.0. Dense coefficient maps
+and integer repetitions are retained in the pinned unique/tmp raw inventory.
+Raw delivery is regeneration-only, not archival. Actual command:
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/u1c_budget.py --raw /tmp/padua-u1c-budget-20261107a --out topics/padua-3d-20261106/evidence/u1c-budget.json --protocol-commit cb014092e71d16b77c7c2651363440d7b078eab6
+```
+
+CandidateU1c01 retained as a useful known operational extension, not a
+new construction theorem. Its fixed maps need not be BLUE after unequal
+replication; the next registered round tests that specific unresolved
+practical improvement, rather than repeating a benchmark.
+
 ## Research-round ledger
 
-No new research outcome executed yet. Global U1 count remains2; seven
-further authorized rounds are available until actually completed/published.
-Continuation round1/global U1round3 protocol was prospectively published
-in `cb014092e71d16b77c7c2651363440d7b078eab6`.
+API/checks0. Continuation round1/global U1round3 completed and published
+in98cf83c8416778b6a57002cd98e85d27a954f092. New outcomes1/7, global U1=3.
+The new GLS protocol is published in that same commit before execution.
+Root's pushed LOG controls counters; no unused round is pre-consumed.
 
 ## Runs needed
 
-Run the registered38design fixed-budget experiment after root releases the
-single-thread CPU window. Independent review of the new science remains
-separate from developer execution and from the pending formal Claude audit.
+Execute continuation round2/global U1round4, known GLS refit after fixed
+replication, under its prospective five-percent total-MSE gate. Independent
+review/rerun of new science remains separate from developer execution and
+from the pending formal Claude audit.

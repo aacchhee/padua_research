@@ -819,3 +819,9 @@ their corresponding runs, with publication and execution timing distinguished.
 - U1all38feasible designs pass; primary optimal degree falls with assumed noise, all12x7recommendations agree on both fresh clouds. Practical gate passes; preregistered known GLS-refit follow-up is next.
 - U2degree14searched norm35.5443versus64.2069one-sweep/62.1534five-sweep localdet, quality/guards pass but120.7177extraCPU at176steps fails the strict cost gate. The canonical timing/checkpoint deviation is in u2-continuation.md; no literal protocol pass or convergence claimed. Consider a separately registered cheaper stopping question only with positive training evidence.
 - U3all28exact/numerical checks pass,0competitive, bestboth-mesh ratio5.07481. Stop only this complete finite degree7route; six further current slots unused, broader families stayOPEN.
+
+### Second U1/U2 continuation rounds
+
+- U1GLSrefit round2passes covariance/reproduction checks but fails useful-total-MSE gate: bestprimary1.6453percent/secondary0.7585percent below5percent. Retain deterministic regressions and all62freshassessments; stopfixed-allocationrefit. Degree choices use known-target bias calibration, not data-only selection of unknown field.
+- U2training-only calibration round2selects fixed40steps (20percenttraining gain/guards/cubicforecast gate). Forecast89.1653CPUatdegree16is heuristic, not proof or actualcostpass. Caps60/80fail; no freshassessment used to choose. Prospective degree16transfer next.
+- Actual newroundcounters2/2/1, cumulative4/5/5; currentunused5/5/6. No extra U1/U3run merely to spend ceiling.

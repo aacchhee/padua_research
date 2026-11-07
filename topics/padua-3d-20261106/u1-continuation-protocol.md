@@ -162,3 +162,12 @@ positive degree/noise decision. No round2 execution is implied here.
   stress rather than assume independent repeats apply to physical sensors.
   If gain fails, stop this refit route and retain round1's useful decision
   endpoint; the broad weighted-design question remains OPEN.
+
+
+2026-11-07 interpretation clarification before C2 execution: every bias
+entry uses the known noiseless test function, so the resulting degree/noise
+choices are oracle calibration benchmarks. Known sigma alone does not
+identify bias for an unknown field. Real deployment needs justified prior
+calibration or held-out measurements; no data-only automatic selector or
+unseen-target model-selection guarantee is proposed. Agreement of two
+query clouds tests numerical integration stability on the same functions.
