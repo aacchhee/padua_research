@@ -82,3 +82,33 @@ byte preservation, physical allocation reduction, stable sample selection,
 standard-tar sample closure and return size remain to be measured by the
 separately authored, frozen and root-released fixture. Prior large operational
 fixture suites and native computations are not repeated.
+
+## Fixture01 failure and focused sequential-reader review
+
+Root reports published fixture01 ran once and stopped with direct exit137
+(session15454, completion3aca70), before a final receipt. The first ordinary
+compact tar.gz exists at40,184,824B. This is a failed/incomplete fixture, not
+an accepted full result. Its source/artifacts remain preserved. Repeated
+random gzip extraction was the concrete performance issue identified; no
+scientific engine ran and no cap increase is authorized by this correction.
+
+Focused revised candidate:
+`aea62883f826df05504a62ba084e0d7becb7bc5df35e4ceeef5f1eaf130c1ee6`.
+All24 rows rehash. The sole execution-code change is verify_compact.py,
+SHA256 `7c2dad53519aff616bdadd3f925ec8943963cb4bf521b410355f827b7a1899bf`.
+Read its exact diff: gzip is traversed once, regular payload bytes cached
+once, and backward hardlink names alias the same cached bytes. The collector
+already emits backward aliases. Member-name/type/count/size, inventory,
+hashes, trusted source, proof and sample checks remain. No archive format,
+scientific mechanism or budget changes. **Focused reader STATIC ACCEPT.**
+
+Read the complete original copy fixture and focused fixture02 diff. The new
+fixture changes only fresh output/candidate pin and its own tar inspection to
+one forward pass with independently checked alias payload hashes/inventory.
+Original-byte/inode separation, historical schema/profile adapter, four copied
+dedup passes, two exports, stable sample test and all caps remain. **Fixture02
+source design ACCEPT** once the placeholder is replaced by the exact revised
+candidate pin and root publishes/releases that identity. No reviewer import
+or execution occurred in these focused source checks. A40MB sample return is
+compatible with AC's no-gigabyte-transfer objective;25MB remains a preference,
+not a new format requirement or reason for another redesign.

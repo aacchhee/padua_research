@@ -53,18 +53,28 @@ def verify(archive, package, expected_manifest_sha):
     package = Path(package).resolve(); m = manifest(package)
     frozen = (package / 'runtime_manifest.json').read_bytes()
     require(digest(frozen) == expected_manifest_sha, 'trusted source manifest')
-    with tarfile.open(archive, 'r:gz') as tar:
-        members = tar.getmembers(); names = [r.name for r in members]
-        require(len(names) == len(set(names)) and len(names) < 200000, 'unique bounded tar members')
-        for row in members:
+    with tarfile.open(archive, 'r|gz') as tar:
+        payloads = {}
+        for row in tar:
             safe(row.name)
+            require(row.name not in payloads and len(payloads) + 1 < 200000, 'unique bounded tar members')
             require(row.isfile() or row.islnk(), 'regular/hardlink members only')
             require(0 <= row.size <= 512 * 1024**2, 'tar member bound')
-            if row.islnk(): require(safe(row.linkname) in names, 'hardlink target included')
-        require(tar.getmember('COMPACT.json').size < 16 * 1024**2, 'compact metadata bound')
+            if row.name == 'COMPACT.json': require(row.size < 16 * 1024**2, 'compact metadata bound')
+            if row.islnk():
+                require(safe(row.linkname) in payloads, 'hardlink target must precede alias')
+                payloads[row.name] = payloads[row.linkname]
+            else:
+                stream = tar.extractfile(row)
+                require(stream is not None, 'missing tar payload')
+                payloads[row.name] = stream.read()
+                require(len(payloads[row.name]) == row.size, 'truncated tar payload')
+        names = set(payloads)
+        require('COMPACT.json' in payloads and len(payloads['COMPACT.json']) < 16 * 1024**2, 'compact metadata bound')
         def read_tar(name):
-            stream = tar.extractfile(safe(name))
-            require(stream is not None, 'missing tar payload'); return stream.read()
+            safe(name)
+            require(name in payloads, 'missing tar payload')
+            return payloads[name]
         receipt = strict(read_tar('COMPACT.json'))
         require(receipt['schema'] == 'padua-compact-return-v1' and receipt['manifest_sha256'] == expected_manifest_sha, 'compact source binding')
         require(set(names) == set(receipt['files']) | {'COMPACT.json'}, 'exact compact inventory')
