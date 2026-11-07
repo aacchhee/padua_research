@@ -2206,11 +2206,13 @@ $r(w)=\cot w-1/w$ for $0<w<\pi/2$, and $r(w)=-1/w$ afterwards.
 Direct differentiation gives
 $\operatorname{Var}r'=5/3$, $\int|r'|=4/\pi$.
 The piecewise definition of $r$ is continuous at $\pi/2$ because
-$\cot(\pi/2)=0$. It has an integrable tail and a derivative with
-finite total variation, including the finite derivative change at that
-point. The matched-cell defect subtracts an integral from the sample
-in each cell before summing to infinity. This avoids separate divergent
-tails and permits both a small-cell estimate and a phase-shift estimate.
+$\cot(\pi/2)=0$. For $w\geq\pi/2$, its tail is $r(w)=-1/w$
+and its derivative is $r'(w)=1/w^2$. Thus the derivative has an
+integrable tail and finite total variation, including the finite
+derivative change at the joining point. The matched-cell defect
+subtracts an integral from the sample in each cell before summing to
+infinity. The integrability of $r'$ makes the resulting series converge;
+its variation also controls how the defect changes with phase.
 The two estimates have different uses: one gives the correction at a
 fixed offset, while the other controls its increment as the row and
 the fractional offset move.

@@ -2564,3 +2564,27 @@ label numbers and the 240-page ceiling will also be checked. Existing
 claim assumptions and evidence scope are preserved. This is an exposition
 task, with no new mechanism, novelty/priority assertion, degree result or
 native campaign; the ideas novelty gate is inapplicable.
+
+### Complete companion first build and whole-document depth check
+
+All section groups are developed in the separate companion tree. The
+initial integrated source is committed at `c390cf6`; a review correction
+then clarifies that the relative residual has tail `-1/w`, while its
+derivative has the integrable tail `1/w^2`. The matched cell differences
+converge through the latter. This correction affects added teaching only.
+
+The first full build had 119 pages; rebuilding after the correction gives
+120. The correspondence check with --artifacts passes: all original 20
+tracked paper files and the original 640116-byte PDF are intact; all 113
+built label numbers match; original statements and numbered display blocks
+are preserved. The build has no error, warning, overfull box or undefined
+reference/citation. The companion uses its own output/template directory.
+
+AC clarifies that the screenshot is an example and the requested depth
+applies throughout the document. This is the existing scope, now used
+explicitly for a final whole-document accessibility sweep. Section
+developers are identifying any remaining unexplained transitions; the
+distinct Sol max reviewer is checking the same global standard. Concrete
+remaining teaching additions will be made before the final freeze and
+review verdict. Current full-build artifacts are interim, and the focused
+review remains in progress. No original paper edit or native job occurs.
