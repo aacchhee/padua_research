@@ -1,6 +1,7 @@
 # Independent supplemental review: audit-02 execution response
 
-Status: **STATIC SOURCE ACCEPT; EXECUTION PENDING** for candidate v3 below.
+Status: **SOURCE AND SYNTHETIC CONTROLS ACCEPT; REAL INTEGRATION PENDING**
+for candidate v3 below.
 The initial notes preserve their preliminary scope. This supplements and does
 not replace the Claude audit.
 
@@ -161,3 +162,24 @@ selects only parentdeath plus the six unreached cases. The parentdeath fixture
 alone lowers its copied wrapper CPU profile to10; actual source and scientific
 caps stay unchanged. Further execution is pending publication/root release.
 Static-source acceptance remains unchanged; operational acceptance is pending.
+
+## Controls02 result — 2026-11-07
+
+The focused published command executed once atffe4d42 and returned directly
+observed exit0. All seven selected scenarios passed: parentdeath, simulated
+quiescent reboot/false-state refusal, preflight-only recovery, admitted-job
+deletion refusal, partial-return routing/error propagation, ZIP bounds and
+pre-loader arithmetic pin refusal. Every observer cleanup list and stderr
+was empty. Exact receipt SHA256 is
+`ad4c6564e0e5750b237ef2b2acd925694cdbe9108820697b92218dbbc27cc592`;
+see `code/audit02_execution_review/RESULT-02.md` and retained `/workspace/p02c2`.
+
+Together with the first five controls01 passes, all12 planned synthetic
+scenarios have now executed successfully at their stated fixture scopes.
+The initial parentdeath fixture failure remains preserved. **Static source
+and bounded synthetic operational review: ACCEPT. Actual worker-to-real-engine
+integration remains PENDING.** In particular, the sentinel partial test does
+not validate genuine proof closure, and the parentdeath fixture intentionally
+uses wrapperCPU10. Actual41/511, compiler loading, concurrent capture and
+complete raw evidence remain separately released future work; no numerical
+or native execution has occurred in this review.
