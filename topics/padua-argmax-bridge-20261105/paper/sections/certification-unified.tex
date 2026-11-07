@@ -1,0 +1,156 @@
+\section{Finite completion by positive interpolation}
+\label{sec:certificates}
+The remaining degrees require a bound on the whole square, including a
+strict comparison arbitrarily close to each maximizing corner. Both finite
+methods use the same principle: interpolate a smooth signed sum with positive
+weights, bound its interpolation error, and only then maximize over signs.
+Absolute values need not be differentiated.
+
+\begin{lemma}[Positive interpolation bounds]\label{cert:positive}
+Let $F(z)=\max_{\sigma}f_\sigma(z)$, where the maximum is finite.
+On a rectangle $R=[a_0,a_1]\times[b_0,b_1]$, suppose
+$|(f_\sigma)_{aa}|\leq M\omega_a^2$ and
+$|(f_\sigma)_{bb}|\leq M\omega_b^2$ for every $\sigma$.
+If $W_z\geq F(z)$ at its vertices, then throughout $R$,
+\begin{equation}\label{cert:peano}
+ F(a,b)\leq I_RW(a,b)+\frac M2\{
+ \omega_a^2(a-a_0)(a_1-a)+\omega_b^2(b-b_0)(b_1-b)\}.
+\end{equation}
+Here $I_R$ is bilinear interpolation. For polynomial cardinals with tensor
+Bernstein coefficients $c_{\ell,ij}$ on $R$, the analogous bound is
+\begin{equation}\label{cert:bernstein}
+ \sum_\ell|L_\ell(z)|\leq
+ \sum_{i,j}\left(\sum_\ell|c_{\ell,ij}|\right)B_i^n(s)B_j^n(t),
+ \qquad (s,t)\in[0,1]^2.
+\end{equation}
+\end{lemma}
+\begin{proof}
+The one-dimensional linear interpolation remainder is an integral against
+a Peano kernel of one sign, whose mass is $(a-a_0)(a_1-a)/2$.
+Apply it in each coordinate; the interpolation weights in the other
+coordinate are nonnegative and sum to one. This proves
+\eqref{cert:peano} for each signed sum and hence for their maximum.
+Equation~\eqref{cert:bernstein} follows from the same positivity and
+partition of unity of the Bernstein basis, after the triangle inequality.
+\end{proof}
+
+\subsection{One polynomial certificate for the small degrees}
+For $2\leq n\leq40$ the direct certificate uses the corrected cardinal
+kernel of Lemma~\ref{lem:cardinal-kernel}. Outward rational enclosures of
+its coefficients are converted to tensor Bernstein form on the square.
+Binary midpoint subdivision uses exact de Casteljau averages. On each leaf
+all coefficient absolute sums in \eqref{cert:bernstein} must be strictly
+less than a validated lower endpoint $L_c\leq\Lambda_c(n)$.
+A leaf containing a designated corner exempts only its vertex coefficient:
+that coefficient is exactly the polynomial value there, with absolute sum
+$\Lambda_c(n)$; every other coefficient sum must be less than $L_c$.
+The exceptional Bernstein weight equals one only at that vertex.
+Thus the same predicate proves a strict inequality on the punctured leaf.
+A complete closed binary partition proves both the maximum and its exact
+equality set, including every split boundary.
+
+All coefficient enclosures are reconstructed by the checker. The identities
+\[
+ T_{r+1}(x)=2xT_r(x)-T_{r-1}(x),\qquad
+ s^r=\sum_{i=r}^n\frac{\binom{i}{r}}{\binom nr}B_i^n(s)
+\]
+reduce construction and basis conversion to exact integer and rational
+operations once the cosine arguments are bracketed. Alternating arctangent
+series in Machin's identity bracket $\pi$; alternating cosine series and
+the Chebyshev recurrence bracket the grid values. Integer operations round
+outwards at every interval step. The checker reconstructs the whole
+partition and its coefficients rather than accepting a producer flag.
+Successful certificates are finite witnesses; no search-termination theorem
+is assumed. The accompanying execution record identifies which degrees
+were newly rerun through the common implementation.
+
+The degree-one case is explicit and needs no separate certifier. Its nodes
+are $(1,1),(1,-1),(-1,0)$, with cardinals
+$(1+x+2y)/4$, $(1+x-2y)/4$, and $(1-x)/2$. Hence
+\[
+ \lambda_1(x,y)=\max\{1,|y|+(1-x)/2\},
+\]
+whose maximum is two, attained only at $(-1,\pm1)$.
+
+\subsection{The phase certificate}
+For $41\leq n\leq319$ the common envelope is enclosed on
+$\mathcal T=\{(a,b):a,b\geq0,\ a+b\leq1\}$, with phases
+$(\alpha,\beta)=(\pi a,\pi b)$ and $k=n/(n+1)$.
+Every signed board sum has frequencies at most $\pi,\pi k$ in these
+coordinates. A genuine global norm $M$ and vertex uppers therefore give
+\begin{align}\label{cert:phase-bound}
+ S_n(\pi a,\pi b)&\leq q_R(a,b),\\
+ q_R&=I_RW+\frac{M\pi^2}{2}
+ \{(a-a_0)(a_1-a)+k^2(b-b_0)(b_1-b)\},\notag\\
+ \max_Rq_R&\leq V_R+\theta_RM,
+ \quad V_R=\max_zW_z,\quad
+ \theta_R=\frac{\pi^2}{8}\{(a_1-a_0)^2+k^2(b_1-b_0)^2\}.\notag
+\end{align}
+Trigonometric Bernstein inequalities supply the required signed derivative
+bounds from $M$. The complete midpoint tree covers the triangle; a rectangle
+is discarded only if its lower-left coordinate sum exceeds one.
+Tangencies and shared boundaries remain in the cover.
+
+The norm premise is itself certified. If all leaves are numerical and
+$\theta_R<1$, apply \eqref{cert:phase-bound} with the true supremum $M_*$
+on a leaf containing a maximizer, obtaining
+\begin{equation}\label{cert:tree-norm}
+ M_*\leq\max_R\frac{V_R}{1-\theta_R}.
+\end{equation}
+Alternatively the quarter-grid points
+$E=\{(i/4,j/4):i,j\geq0,\ i+j\leq4\}$ and their upper maximum $V_E$
+give
+\begin{equation}\label{cert:grid-norm}
+ M_*\leq\frac{V_E}{1-\pi^2/64}<\frac{784}{663}V_E.
+\end{equation}
+Indeed the ten quarter-squares cover $\mathcal T$; outside vertices fold
+back to $E$ by $(a,b)\mapsto(1-a,1-b)$, a phase symmetry.
+Their Peano error is at most $\pi^2M_*/64$, which can be absorbed.
+A tree using an analytic far leaf must use this grid norm: its remaining
+numerical leaves need not contain a maximizer.
+
+On a leaf the certified upper for $q_R$ must be below $L_c$ on its far
+part. On its actual near part $\rho\leq1/2$, at a noncorner center,
+the inequality is instead $q_R-\delta_R<L_c$, with the appropriate
+proved reflection floor $\delta_R$. The floor's radius is
+$\min\{1/2,\pi(a_1+b_1)\}$; it is used only where its physical guard
+holds. A rational enclosure of $\pi$ supplies overlapping closed proxies
+for near and far, so a floating-point decision cannot delete a seam.
+Actual corners are covered by a direct descent witness, not by this defect.
+
+The local descent uses \eqref{ul:squared-peano}. Take
+$U=\pi^2/32$, $V=9\pi^2/512$, and outward actual-function values
+$W_x,W_y,W_{xy}$ at $(\sqrt{2U},0),(0,\sqrt{2V}),
+(\sqrt{2U},\sqrt{2V})$. With $u'=U/\pi^2$, $v'=V/\pi^2$, set
+\[
+ q=\min\left\{\frac{L_c-W_x}{u'},\frac{L_c-W_y}{v'},
+                         \frac{L_c-W_{xy}}{u'+v'}\right\}.
+\]
+The strict test
+$q>(M\pi^4/6)\max\{u',k^4v'\}$ proves positive quadratic loss off
+the origin, on a rectangle containing the inward half diamond.
+From degree256 the analytic corner estimate supplies the same implication.
+An analytic far leaf is permitted from degree192 only when its entire
+triangle intersection satisfies $\rho\geq\pi/2$; its bound is the
+far-region consequence proved in Section~\ref{sec:argmax}.
+
+\subsection{Evidence and arithmetic}
+The retained proof inventory covers every integer $2\leq n\leq319$;
+Section~\ref{sec:argmax} covers the rest. For the phase range all280
+primary/fresh pairs, including the control degree511, were checked by
+exact rational reconstruction of560 essential proofs. Native outward
+endpoints come from the frozen Arb/FLINT/MPFR/GMP implementation;
+finite binary64 endpoints are converted losslessly to rationals for the
+cover predicates. The arithmetic implementation, compiler and native
+interfaces are trusted components of this computer-assisted proof.
+
+The primary and fresh passes ran separately on the production machine.
+Locally all essential proof/account/source links were checked, and the
+complete histories for two randomly selected degrees,199 and238, received
+fresh native replay and distinct review. Those samples are additional
+checks, not a statistical premise for the unsampled cases. Full unsampled
+histories remain on the production machine under the selective-retention
+policy. Source pins, witness identities, checker commands and the exact
+new small-degree run inventory are in the companion reproducibility notes.
+They permit regeneration; a durable public release remains to be arranged.
+This evidence boundary is part of the theorem's computational scope.

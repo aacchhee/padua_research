@@ -130,73 +130,35 @@ uses Theorem~\ref{thm:main-location}, with the computer-assisted dependencies
 just described. No numerical fit is used to determine $b$, $c$ or the
 coefficient $-1$.
 
-\subsection{What the expansion says}
-The dominant term was established by Kolomoitsev and Lomako
-\cite{KolomoitsevLomako2021}:
-\[
- \Lambda_n=\frac4{\pi^2}\log^2n+O(\log n).
-\]
-Our expansion resolves the terms hidden in that error, down to an error
-smaller than $1/n$. Its leading part can be written more suggestively as
-\[
- \left[\frac2\pi\left(\log N+\gamma+\log\frac8\pi\right)\right]^2
-       +\kappa-\frac1N.
-\]
-The square comes from two one-dimensional harmonic sums. The constant
-$\kappa$ measures the defect in replacing the coupled two-dimensional
-corner formula by their product. The term $-1/N$ records the first
-interaction between the boundary corrections and the displacement of the
-two meshes. Centering at $N=n+1/2$ makes that interaction visible: a
-logarithmic first correction present in the coordinate $n+1$ cancels
-against the change of variable. Section~\ref{sec:asym} explains this
-cancellation before turning to its estimates.
+The leading growth
+$\Lambda_n=(4/\pi^2)\log^2n+O(\log n)$ is due to
+Kolomoitsev and Lomako~\cite{KolomoitsevLomako2021}. The new expansion
+resolves the lower terms through an error smaller than $1/n$. Its square
+comes from two harmonic sums; $\kappa$ measures their coupling, and the
+half-integer scale exposes the reciprocal correction. The corner calculation
+is independent of the global maximizer argument.
 
-\subsection{The idea behind the maximizer proof}
-A direct comparison of all the absolute cardinal terms hides useful
-cancellation. Instead, we express the physical Lebesgue function as a
-periodic envelope minus a nonnegative defect. The envelope is easier
-to estimate. The defect measures the cancellation that is lost when one
-passes to that envelope. Near a competing corner the envelope alone is
-not enough: retaining the defect is what gives a strict comparison with
-$\Lambda_c(n)$.
+Both proofs begin with the same corrected interpolation kernel. At the
+corner its signs give an exact positive sum. Away from the corner, reflection
+writes the Lebesgue function as a periodic envelope minus the cancellation
+lost in taking absolute values. A single comparison with a completed model
+then controls that envelope and the competing reflection defects. Near an
+actual maximizing corner, a positive interpolation argument proves strict
+quadratic descent. The finite certificates use that same interpolation
+principle. This organization separates the two ideas that matter: computing
+the corner value and showing why no other point can exceed it.
 
-There are two different geometric tasks. Away from the two maximizing
-corners, one needs a uniform positive gap. Near either maximizing corner,
-no such gap can exist, because the function is continuous and equals
-$\Lambda_c(n)$ at the corner itself. There we prove a strict quadratic
-loss in angular coordinates. Together these arguments explain both the
-maximum value and its entire equality set. The finite certificates follow
-the same distinction: region bounds away from the corners, and a local
-strictness argument at the corners.
+The Padua construction and its generating-curve and ideal descriptions
+are classical~\cite{BosCaliariDeMarchiVianelloXu2006,BosDeMarchiVianelloXu2007}.
+The corner question appears in~\cite{CaliariDeMarchiSommarivaVianello2008poster,DeMarchi2022};
+related numerical geometry of local maxima is studied in
+\cite{BialasCiezDeMarchiSuder2026}. Rigorous norm approximation by polynomial
+meshes, including Padua examples, was developed in~\cite{Mesh2024}; our
+finite proof also needs strict exclusion and equality classification.
+For the distinct Morrow--Patterson family,
+\cite{MorrowPatterson2026} proves an $O(n^2)$ upper bound.
 
-\subsection{Related work and organization}
-The Padua construction and its relation to generating curves and polynomial
-ideals are developed in
-\cite{BosCaliariDeMarchiVianelloXu2006,BosDeMarchiVianelloXu2007}.
-The survey \cite{DeMarchi2022} records the corner-location question, and
-\cite{BialasCiezDeMarchiSuder2026} studies geometric features of Lebesgue
-functions, including numerical information about local maxima.
-These questions should be distinguished from the exact global equality
-set in Theorem~\ref{thm:main-location}.
-
-Rigorous evaluation by polynomial meshes has an important earlier
-foundation. Bia{\l}as-Cie{\.{z}}, Kenne, Sommariva and Vianello
-\cite{Mesh2024} give certified mathematical discretization bounds for
-Lebesgue constants on several domains and include Padua examples.
-Such bounds control the discretization error; interval evaluation must
-also control arithmetic error when they are used as numerical certificates.
-Our finite completion uses strict exclusion and local corner estimates
-to determine an equality set, rather than an approximation to the norm
-alone. We do not claim that rigorous mesh bounds originate here.
-
-For the related Morrow--Patterson points, Beberok, Bia{\l}as-Cie{\.{z}}
-and De Marchi \cite{MorrowPatterson2026} prove an $O(n^2)$ upper bound for the
-Lebesgue constant. The two node families and their extremum questions
-are distinct.
-
-We first establish the exact cardinal normalization and the corner
-representation. We then derive the sharp expansion, explain the geometric
-comparison giving the maximizers, and describe the finite certificates.
-Detailed quadrature, row and localization estimates are collected in
-appendices so that the main argument can be read without following every
-constant calculation.
+We derive the corner expansion in Section~\ref{sec:corner}, then establish
+one comparison theorem and apply it to the global location in
+Section~\ref{sec:argmax}. Section~\ref{sec:certificates} completes the finite
+range and states the arithmetic and evidence dependencies.

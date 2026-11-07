@@ -2215,3 +2215,13 @@ novelty gate is inapplicable to faithful editorial consolidation.
 Pending AUDIT18 is redirected to WORK19; the entire original pending
 audit remains preserved for after the rewrite. PR-metadata publication
 approval remains pending; do not retry or bypass the rejected update.
+
+AC additionally asks whether n1–40 need different certifiers or can use one
+scheme. Readonly source inspection confirms the unchanged generic exact
+Bernstein constructor/checker already covers17–40 and is valid for2<=n<=100;
+phaseengine's n>=41 guard cannot simply be removed. Solxhigh worker
+prospectively prepares fixed fresh2–16 production after pilots2/8, with
+a separate Solmax checker pass; no redundant n40 rerun. n1 is elementary
+and remains outside the guarded native driver. CanonicalG01 n>=2 scope
+is not silently changed. This is proof-route unification of existing
+degrees, not an additional high-degree research campaign.
