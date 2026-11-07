@@ -625,3 +625,11 @@ their corresponding runs, with publication and execution timing distinguished.
   or dropping old identities. The decoded map and eight mutation controls
   actually pass; current generator code pin is updated transparently.
   Coverage is unchanged: recursive code/data, inherited helpers, no prose.
+
+- U3's four full candidate/protocol records are published before dependent
+  execution: exact sparse DCT/support-triangular structure; explicit
+  coherent rank-two folded cosets; folded-cyclic plus generic noncyclic
+  correction; reversed folded-noncyclic plus cyclic correction. Each has
+  exact count/action checks, finite parameter scope, frozen selection and
+  validation rules and actual-outcome requirements. Separate U3 check
+  protocol is published with it. All stream research counts still start0.
