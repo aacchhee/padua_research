@@ -1,0 +1,32 @@
+{
+  "rules_source_head": "0cd099fd2e3944ac8436a890b7ee707a298255b3",
+  "purpose": "Initial x-seed metadata correction only; no arithmetic or strict predicate change",
+  "variant_native_executions_at_freeze": 0,
+  "sources": [
+    {
+      "path": "topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+      "bytes": 6428,
+      "sha256": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/code/native_checker/kernel.cpp",
+      "bytes": 6752,
+      "sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/metadata_kernel.cpp",
+      "bytes": 6842,
+      "sha256": "9b07d16a691261772e3057323dd3fb7e4934adf5bd2d6cb150f0f825db173667"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/check.py",
+      "bytes": 2107,
+      "sha256": "dfb3d3621fa2888e96033d8121f6486e9957fcdc54b40da219eb977bd6dd37b4"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/metadata-patch.json",
+      "bytes": 771,
+      "sha256": "92f2353736cbde53dfb635031a4749a55bda8535c21608b6815287c8fa3ceab8"
+    }
+  ]
+}

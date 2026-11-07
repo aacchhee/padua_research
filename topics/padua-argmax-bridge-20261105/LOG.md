@@ -2225,3 +2225,21 @@ a separate Solmax checker pass; no redundant n40 rerun. n1 is elementary
 and remains outside the guarded native driver. CanonicalG01 n>=2 scope
 is not silently changed. This is proof-route unification of existing
 degrees, not an additional high-degree research campaign.
+
+### Common small-degree verification completed
+
+The new fixed2–16 Bernstein witnesses now pass separate Solmax native
+checking, with the same mathematical predicate used by accepted17–40.
+The detailed originaln2metadata failure, two-literal source correction,
+pre-execution source review, actual fresh compile/pilot/rest results and
+n>=3output-equivalence argument are canonically recorded in
+paper/small-degree-unification.md and
+code/small_degree_unification/N2-METADATA-COMPATIBILITY.md. Frozen older
+engines and certificates remain unchanged. No mathematical arithmetic,
+strict predicate or certificate was weakened/rewritten. This unifies
+the paper's proof route, not G01's already proved degree coverage.
+
+All new essential small witnesses/receipts/source inputs are added to the
+existing v4 evidence index with every previous normalized identity retained.
+The index remains below its reviewed32KiB limit; no file splitting or new
+format/size exception. Raw histories/binaries stay offGit.
