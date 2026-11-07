@@ -1,6 +1,6 @@
 # Handoff16 — adaptive pruning campaign, up to fifteen rounds
 
-- Status: open
+- Status: done in e7c9900ec7dc232d2e117cc72dd47b79c7a0fe26
 - Previous: [15-combined-audit.md](15-combined-audit.md), formal scope preserved.
 - Agent/model: Codex gpt-6-astra high coordinator; Solhigh technical/mathematical developer, Solxhigh predecessor/theory worker, Solmedium manifest engineering, distinct Astra review.
 - Branch: codex/padua-3d-20261106.
