@@ -173,18 +173,12 @@ def make_manifest(observed, inherited):
         "historical_rules_input_sha": "ccd9e905d19c0c625c196c4a3f3e707058ed042a",
         "generate": "python topics/padua-3d-20261106/code/artifact_manifest.py",
         "verify": "python topics/padua-3d-20261106/code/artifact_manifest.py --verify",
-        "format": "--list: v4 map; scope: recursive code/evidence excluding __pycache__ and .pyc.",
-        "artifacts_codec": "P3M6-prefix-varint-sha256-columns+zlib9+RFC1924-base85; see code",
+        "format": "--list: v4 map.",
+        "artifacts_codec": "P3M6+zlib9+base85",
         "artifacts_payload": base64.b85encode(zlib.compress(
             encode_rows(observed), 9)).decode(),
         "inherited_inputs": inherited,
-        "limits": [
-            "Identities only; no mathematical verification.",
-            "Prose: audit commit only.",
-            "Scope/inputs: receipts and attempts.",
-            "Large catalogues: regeneration only; COLD_STORAGE.md.",
-            "No archival delivery or independent Claude audit implied."
-        ]
+        "limits": "Identities only; no proof, archival delivery or independent audit. See manifest-v6.md."
     }
 
 

@@ -67,11 +67,28 @@ the forecast ceiling. This is not a runtime bound or a construction-cost
 pass. A prospective fresh degree16test of the fixed40-step schedule is
 next. See [calibration receipt](evidence/u2c-calibration.json).
 
+## Third U2 round: fixed40-step degree16 transfer
+
+The calibrated schedule completes40accepted steps at969sites, with
+65.78345extra CPU seconds and124.20255total including common QR/initial
+exchange. All numerical guards pass; the step cap remains unfinished
+optimization, not convergence. Fresh searched amplification is71.70775,
+versus93.63848one-sweep and79.26742whole-sweep-prefix control. The
+registered5percent/120-second transfer gate passes. A distinct actual-data
+check reproduces the selected points, training value, noise trace and fresh
+searched values; full formal review remains pending.
+
+The whole-sweep control used49.91419of65.78345extra CPU allowance, leaving
+24.12percent unused because the next full sweep overshot. Its9.54percent
+norm margin is therefore worth a stronger, separately registered test:
+allow the identical determinant method to stop after individual rows and
+use nearly the full allowance. C3's pass is retained; no stronger-control
+outcome is claimed before execution. [Receipt](evidence/u2c-heldout16.json).
+
 ## Round ledger and pending work
 
-At this checkpoint the campaign has completed U1=2/7,U2=2/7,U3=1/7; prior
-counts2/3/4 become4/5/5 cumulative. Unused current slots are5/5/6.
-U1fixed-allocation refitting and U3all28quality are parked. The U2degree16
-fixed40-step transfer is prospective, not already consumed. Formal Claude combined audit handoff11/09
+At this checkpoint the campaign has completed U1=2/7,U2=3/7,U3=1/7; prior
+counts2/3/4 become4/6/5 cumulative. Unused current slots are5/4/6.
+U1fixed-allocation refitting and U3all28quality are parked. The stronger finer-row U2control test is prospective, not already consumed. Formal Claude combined audit handoff11/09
 remains pending; supplementary continuation review is in progress.
 No final IDs/ranges, shared registry application, readiness or merge.

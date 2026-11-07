@@ -171,3 +171,16 @@ identify bias for an unknown field. Real deployment needs justified prior
 calibration or held-out measurements; no data-only automatic selector or
 unseen-target model-selection guarantee is proposed. Agreement of two
 query clouds tests numerical integration stability on the same functions.
+
+
+## Executed continuation outcome ledger — 2026-11-07
+
+U1c01/global U1round3: all38eligible, practical gatePASS, two fresh clouds;
+see [results](u1-continuation.md) and [receipt](evidence/u1c-budget.json).
+U1c02/global U1round4: all24GLSvariants eligible/all62freshly assessed,
+practical gateFAIL, max primary/secondary MSE improvements1.64528/.758489
+percent (<5). Stop this fixed-allocation refit route as preregistered;
+[receipt](evidence/u1c-gls.json). No repeated seed/degrees or changed noise
+model were run. New completed outcomes2/7, five unused; API/checks0.
+Root publishes actual counters. No further U1 scientific run is planned
+without a new stated quantitative need; the broad direction remains OPEN.

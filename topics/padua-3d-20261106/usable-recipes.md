@@ -29,7 +29,9 @@ prediction = basis(query, n) @ coefficients
 ```
 
 For several data channels, supply an M-by-k value array; the coefficient
-array is N-by-k. `basis` uses the continuous orthonormal product-Chebyshev
+array is N-by-k. Scalars, wrong observation counts and arrays with more
+than two dimensions now raise `ValueError`; see the [focused check](api-response-review.md).
+`basis` uses the continuous orthonormal product-Chebyshev
 basis in total-degree order. `parity_fit` includes the required factor1/2
 on the(n,0,0)coefficient. Store the integer recipe when exporting a grid.
 
@@ -111,6 +113,29 @@ The broad minimal-node polylogarithmic construction remains OPEN.
 Independent supplementary checks are complete or recorded in their
 reports; required Claude audit is a separate next step. No priority claim,
 archival delivery or hardware-independent timing guarantee is made.
+
+## Choosing a method after the continuation tests
+
+Extra-point least squares remains the simple explicit default under the
+stated measure/noise assumptions. At a fixed observation allowance, a
+lower degree can be more useful when noise is large; spending the entire
+budget on the highest degree is not universally best. The new
+[degree/noise study](u1-continuation.md) compares38feasible designs and
+integer repeat allocations. Its choices use known noiseless test functions
+to estimate bias, so they are calibration examples rather than an automatic
+data-only degree selector for an unknown function. GLS refitting after
+those allocations improved covariance but missed the registered total-error
+gate; its extra complexity is not recommended by that experiment.
+
+The stored455-point degree12example remains the fully committed exact
+witness above. New higher-degree optimization measurements are documented
+in [continuation results](continuation-results.md); they are distinct from
+that stored-set proof. A finite searched norm gain alone is not a guarantee
+of smaller target error, completed convergence or an economical runtime.
+
+The complete28-case degree7structural diagnostic found no QR-competitive
+case. Keep those finite results as [scoped negative evidence](theory/u3c-nonunique-quality-boundary.md),
+without treating them as an impossibility theorem for wider families.
 
 ## Executed release check
 

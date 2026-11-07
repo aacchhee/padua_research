@@ -71,3 +71,35 @@ regeneration/verification belongs to the orchestrator after concurrent workers
 freeze. The JSON receipt is a completed snapshot check; changing or adding
 receipt files later necessarily changes the manifest generated for the final
 tree. No code pins prose, and no old receipt or historical identity is rewritten.
+
+## 2026-11-07 informational-envelope followup
+
+At the orchestrator's request, only the informational `format`, `artifacts_codec`
+and `limits` values were shortened. Full codec/scope details remain above and
+in the code; the envelope still states identities only, no proof, no archival
+delivery and no independent audit. The schema, codec implementation, decoded
+map, identity bytes/digests, inherited inputs, rules SHAs and generate/verify
+commands are unchanged. The original JSON receipt remains a historical check
+of the original code pin and was not modified.
+
+Executed `python /tmp/padua-manifest-envelope-check.py` using Python 3.12.14 and
+zlib 1.3.2. The temporary checker loaded the old saved code and current code,
+copied every current artifact/inherited input once to a disposable topic/root,
+and compared their manifests on the identical frozen rows. Only those three
+informational fields differed; binary encodings, payloads, remaining metadata
+and decoded maps were exactly equal. CLI generation, verification and listing
+all passed on the copy. For 286 artifacts/1,594,810 bytes, compact manifest size
+fell from 16,305 to 16,050 bytes, saving 255 bytes. Normal generated formatting
+used 16,162 bytes. Five additional deterministic independently hashed synthetic
+entries roundtripped with 291 entries in 16,317 bytes, below 16 KiB. These are
+snapshot measurements, subject to subsequent concurrent artifact changes.
+
+Old code SHA-256:
+`11dcb5d0239a7cc5ea6b583a00027c0ae50822fa2800e36dc8a723766d2fc23a`.
+New code SHA-256:
+`40332bb4bf5e306cf9eb49a8e24ca867e0ae7809203b65f3fc60041155ff6a92`.
+Frozen decoded map SHA-256 (sorted-key compact JSON):
+`0a86b874ad5be3c7485cae7a15a572b86f08a7add558841d9acaab7603260c7d`.
+The orchestrator's reviewer records the independent new-code pin/check in its
+audit namespace. No new code/data file, old receipt edit, master manifest write
+or Git operation was performed for this followup.

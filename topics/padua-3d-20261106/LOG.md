@@ -825,3 +825,10 @@ their corresponding runs, with publication and execution timing distinguished.
 - U1GLSrefit round2passes covariance/reproduction checks but fails useful-total-MSE gate: bestprimary1.6453percent/secondary0.7585percent below5percent. Retain deterministic regressions and all62freshassessments; stopfixed-allocationrefit. Degree choices use known-target bias calibration, not data-only selection of unknown field.
 - U2training-only calibration round2selects fixed40steps (20percenttraining gain/guards/cubicforecast gate). Forecast89.1653CPUatdegree16is heuristic, not proof or actualcostpass. Caps60/80fail; no freshassessment used to choose. Prospective degree16transfer next.
 - Actual newroundcounters2/2/1, cumulative4/5/5; currentunused5/5/6. No extra U1/U3run merely to spend ceiling.
+
+### U2 third continuation round — finite degree16 gate passes
+
+- Fixed40accepted-step schedule completes at969sites: extra65.78345CPU (<120), total124.20255includingQR/firstsweep, numericalguards pass, unfinished optimization explicitly retained. Searched norm71.70775versus93.63848one-sweep/79.26742whole-sweep-prefix control; registered5percent gain gate passes. Distinct reviewer actual-data/selection/training/risk/freshnorm checks corroborate.
+- Full-sweep control spends49.91419of65.78345extra allowance,24.12percent unused. Because9.54percent normmargin is modest, preregister one stronger per-row-prefix comparison before recommending a full-cost advantage. That follow-up is not yet executed/count-consumed.
+- Actualnewcounters2/3/1, cumulative4/6/5, currentunused5/4/6. U1/U3specificroutes parked; no blanket family failure. OriginalU2C1strictcostfailure remains distinct from C3newstage/checkpoint implementation.
+- Manifest envelope metadata wording condensed only; exactv6codec/payload/decodedidentitymap and requiredmetadata are unchanged. Dated followup in manifest-v6.md; originaltestreceipt stays historically pinned.

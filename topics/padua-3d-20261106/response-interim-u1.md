@@ -43,8 +43,14 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/uc12_replay_u1.py --scratch /tmp/padua-u1c-replay-20261107a --output topics/padua-3d-20261106/evidence/u1c-science-replay.json
 ```
 
-This repair and its checks consume zero research rounds. Root will record
-the distinct review of the patch; no self-approval is asserted here.
+This repair and its checks consume zero research rounds. The distinct
+[focused API review](api-response-review.md) reports PASS:140valid cases
+match the baseline byte-for-byte and110malformed cases reject, with an
+independent cosine-basis odd/top-degree check. Its report distinguishes
+independent API execution from inspection of this developer science replay.
+Inherited degree-domain hardening was not implemented; the patch addresses
+observation dimensions within the documented integer n>=1domain. No
+self-approval or formal Claude acceptance is asserted here.
 
 ## U1-N1/N2/N3 — accepted scope and continuation response
 
@@ -56,3 +62,9 @@ is claimed. New [continuation protocol](u1-continuation-protocol.md) fixes
 an expressly assumed application scenario and evaluates total expected
 squared error, with feasible degree choices and every retained target.
 The assumptions are illustrative research choices, not facts about AC.
+Both registered continuations are now executed: the oracle degree/noise
+calibration passes its practical gate; fixed-allocation GLS refitting fails
+its5percent MSE gate and is parked. The tables use known noiseless test
+functions to estimate bias and are not an implemented data-only selector
+for unknown fields. [Results/counters](u1-continuation.md) retain every
+regression and the five unused newly authorized rounds.
