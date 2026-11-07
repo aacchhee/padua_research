@@ -2,21 +2,21 @@
 
 A new analytic scalar theorem proves H(x)−H(0)<=−(pi−3)x²/(4pi³) on the full closed principal period, so its unique maximum is at0. It follows from an exact endpoint-cancelled integral and strict f-third-derivative sign, with no new numerical enclosure. [Proof](../topics/padua-argmax-bridge-20261105/theory/E07-f-monotonicity.md), [independent acceptance](../topics/padua-argmax-bridge-20261105/independent-checks-E07-H.md). Its application to a lower finite-n onset is separate.
 
-The exact parity-correct two-corner global argmax is proved for **every integer n>=640**,
+The exact parity-correct two-corner global argmax is proved for **every integer n>=512**,
 and finite degrees **2–42,63–64,159–160,511–512**. Equality corners are
 {(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n.
-The remaining **591 degrees:43–62,65–158,161–510,513–639**, and the
+The remaining **464 degrees:43–62,65–158,161–510**, and the
 all-degree target PD-T099, remain OPEN. The analytic onset is sufficient, not minimal.
 
-[Global640 theorem](../topics/padua-argmax-bridge-20261105/theory/E04-assembly640.md),
-[independent review](../topics/padua-argmax-bridge-20261105/independent-checks-E04-assembly640.md).
+[Global512 theorem](../topics/padua-argmax-bridge-20261105/theory/E07-global-assembly.md),
+[independent review](../topics/padua-argmax-bridge-20261105/independent-checks-E07-global512.md).
 The entire new proof uses rational PAPER inequalities: no scalar endpoint,
 native evaluation or finite-degree enumeration. It matches phase-aware
 noncorner floors, relative errors, the full global telescope and actual
 corner descent. Near/annular physical noncorners are strict; the complete
-wide-FAR primitive comparison starts at rho=7/8. Both actual-corner
+wide-FAR primitive comparison starts at rho=3/4. Both actual-corner
 closed side1 squares have loss(A²+B²)/3 from512. Do not transfer the older
-rho>=1/2 primitive-FAR statement to640. PD-T271 remains an explicit
+rho>=1/2 primitive-FAR statement to512. PD-T271 remains an explicit
 computer-assisted dependency; final Claude audit remains separate.
 The older [D37 global1024](../topics/padua-argmax-bridge-20261105/theory/D37-assembly-global1024.md)
 and its stronger stated gaps retain their exact scopes. The model-free

@@ -418,3 +418,8 @@ The independent review and root adoption of THIS global assembly remain
 required and are not inferred from those scalar acceptances. The PD271
 outward constant dependency remains explicit. No scalar/native/source/
 degree/pack job accompanied this closure, and no claim below512 follows.
+
+
+## Root adoption —2026-11-07
+
+Root adopts the complete exact global argmax theorem for EVERY integern>=512 after distinct [E07 assembly ACCEPT](../independent-checks-E07-global512.md), report19985B0b2732ed9ac2090a51c2f0c1e6269b11b39388c06615d6841373791d61c8e909. The exact frozen19080B prefix932b1bbc0018166ba029ad34d3cc7e4b3e0fc0d6f45c3a9ae5cfc693f6cc513b, including first conditional proof and dated HM closure, is preserved. NOTE N1 short-annulus endpoint strictness is resolved by its exact direct rational comparison; no repair is required. Full physical/parity/equality and all-real-n scopes are accepted. PD-T271 dependency and separate final Claude audit remain explicit. No scientific/source job occurred.

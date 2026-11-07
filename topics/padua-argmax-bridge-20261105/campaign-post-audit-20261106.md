@@ -117,7 +117,7 @@ NEW15coordinatedanalyticroundsauthorized2026-11-06 afterD39. E01ACTIVEpaper-only
 | E04 | COMPLETE | Paper-only matched640 candidate with larger near domain, rebuilt corner/defect supports and wider retained-origin increment; no source/job. |
 | E05 | COMPLETE | Cusp-aware complete upper/axis central-excess representation after exact E03 cusp obstruction, paper-only; no forced bound or job. |
 | E06 | COMPLETE | Paper-only exact axis-boundary completion and scalar-H shape/max frontier; no forced bound or computation. |
-| E07 | ACTIVE | Exact scalar f monotonicity and improved global assembly, paper only. |
+| E07 | COMPLETE | Analytic scalar H maximum and full GLOBALargmaxEVERYn>=512 independently accepted; no new scientific jobs. |
 | E08 | ACTIVE | Paper-only phase-correlated full-global error and lower-domain continuation. |
 | E09–E15 | UNALLOCATED | Remaining7 slots; redirect from proved bottlenecks. |
 
@@ -131,3 +131,5 @@ CurrentNEW3/15complete,E04active,12remainingincludingE04. Analytic768,residual71
 Current2026-11-07: NEW5/15COMPLETE(E01–E05); E06independentreviews/E07paperactive; tenroundsremainincludingthose. Acceptedglobal640, residual591:43–62,65–158,161–510,513–639. E04fullassembly/localconstants and bothE05scopedpapers adopted; D13/fullnear stillOPEN. PackPAUSED. No E01–E07scientificjob.
 
 CurrentNEW6/15COMPLETE; E07scalarHmaxaccepted (assemblyreviewseparate), E08phaseglobalpaperactive; nine roundsremainincludingE07/E08. E06allcomponentsaccepted; C_infty<9/4 and regularnonpositive follow reviewedmap+acceptedE07. Global640/residual591untilassemblyacceptance.
+
+CurrentNEW7/15COMPLETE; E08analytic384corner/phase-global/origin workactive. Eight roundsremainincludingE08. GLOBAL512adopted, residual464:43–62,65–158,161–510. AllnewEworkPAPERONLY; packPAUSED.

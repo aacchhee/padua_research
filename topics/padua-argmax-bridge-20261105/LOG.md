@@ -1149,3 +1149,19 @@ A separate Solxhigh helper will test the one-sided ACTUAL-origin lower error: up
 
 
 E07 global512 finalcandidatefrozen: theory19080B932b1bbc0018166ba029ad34d3cc7e4b3e0fc0d6f45c3a9ae5cfc693f6cc513b, idea4458B9925be47..., attempt3912B8cd17ef7... . Original17312Bconditionalproofa12ae2e0... and firstunconditionalallocationfailurepreserved; datedclosureusesacceptedHmaxandE06consequences. DeveloperPROVEDalln>=512, UNADOPTEDpendingD29distinctassemblyreview. E08fixed384/actualcornerworkbeginsonlyafterthisfreeze.
+
+
+### E07 COMPLETE: analytic global512 independently ACCEPTED and adopted
+
+Distinct Astrahigh finalreport19985B0b2732ed... ACCEPTS exact932b1bbc...19080B assembly and originalconditionalprefix, idea9925be47/attempt8cd17ef7. AcceptedHmax461214a5 andE06mapb6a9db93 dischargeHM. Rootadopts exactparity-correct two-corner GLOBALargmax EVERYintegern>=512, allrationalPAPER. Margins halfnear>1/500, shortBOXannulus>9/1000 thenprimitive37/1000, LARGE X9/160,Y3/8, entirewideFARrho3/4..1 gap571/8000, outer881/16000; actualcornerclosedside1loss1/3from512. No oldprimitiveFARrhohalfclaimtransferred. Originalunconditionaloutergatefailure preserved, NOTanargmaxcounterexample. NOTE N1strictendpointresolvedbydirectrationalcomparison, nofinding/repair. PD271/acceptedupstreamdependencies explicit, Claude finalseparate.
+
+Knownfinite2–42,63–64,159–160,511–512 andanalyticEVERYn>=512; residual464:43–62(20),65–158(94),161–510(350). PD-T099OPEN, onsetsufficientnotminimal. AllnewEworkPAPERONLY, no scientific/source/finitejobs. NEW7/15COMPLETE; E08phaseglobal/origin/corner384active; E09–E15unallocated7. E08corner384developerpartialnotglobalonset. Eight roundsremainincludingE08. PackPAUSEDuntilresearchends/needreassessed.
+
+
+### E09 prospective signed outer-plus-log upper — bounded exceptional paper block
+
+E07Hmax qualitatively improves the model, while E08near/outer lower-degree sufficient budgets still appear limited by conservative finite errors. The exact E03 outer/log operator T_n has favorable fixed-positive-alpha leading term−2sin(alpha)logn/(pi*n), zero alpha firstvariation and beta firstvariation bounded9beta/n; its ABSOLUTE mixed estimate was refuted, but a ONE-SIDED signed upper is explicitlyOPEN. This is a distinct surviving mechanism, not a retry of the rejected absolute or complete no-log-linear family.
+
+Allocate ONE Astraultra block atmost20minutes to E09-signed-outer-upper theory/idea/attempt: first fullfreshgate/unchangedownbaseline+newpredecessors; then seek a uniform upper onCLOSEDrho<=1/2,n>=32 (or exactdeclaredsubdomain) of T_n<=C*rho/n+K*(1+logn)*rho²/n, preferably retaining beta-onlyfirstorder9beta/n. Hardness justification: actual two moving grids, coalescing numerator roots, exact log subtraction and signed missing cells must be coupled uniformly; neither fixed-phase asymptotics nor separate limits settle it. Cheapest directional/moving-phase/collision kill FIRST, preserve scoped failure or exact positive partial rather than forceconstants. E03 real full-error ell_nalpha cusp is NOT discarded: T_n is onlytheliteralouter-plus-log block, notcompleteerror.
+
+Block starts/cutoff must be recorded by helper, and noextension beyond20minwithoutnewjustification. No scripts/source/scalar/native/endpoint/pack/Git/shared actions. E09 is ONEcoordinatedround; E01–E07complete, E08/E09active,E10–E15unallocated6; eight roundsremainincludingE08/E09. PackPAUSED.
