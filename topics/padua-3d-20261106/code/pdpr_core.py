@@ -4,6 +4,7 @@ from __future__ import annotations
 import hashlib
 import itertools
 import math
+import os
 import time
 from pathlib import Path
 import numpy as np
@@ -69,7 +70,7 @@ def checkpoints(n, M):
                            if math.ceil(t*N) <= M)}, reverse=True)
 
 
-def curve(nodes, n, rule, raw, cap):
+def curve(nodes, n, rule, raw, cap, checkpoint_maps=False):
     """No Gram inverse: stable QR maps supply scores and actual risks each step."""
     started = time.process_time()
     wall_started = time.perf_counter()
@@ -137,6 +138,18 @@ def curve(nodes, n, rule, raw, cap):
             if not diagnostics['eligible']:
                 failures.append({'M': m, 'failure': 'checkpoint numerical guards', **diagnostics})
                 break
+            if checkpoint_maps:
+                t, w = time.process_time(), time.perf_counter()
+                checkpoint = raw/f'n{n}-{rule}-m{m}-checkpoint.npz'
+                with checkpoint.open('wb') as handle:
+                    np.savez(handle, ids=ids, nodes=nodes[ids], operator=C)
+                    handle.flush()
+                    os.fsync(handle.fileno())
+                costs['checkpoint_io'] += time.process_time()-t
+                wall_costs['checkpoint_io'] += time.perf_counter()-w
+                event['prefix_checkpoint'] = str(checkpoint)
+                event['prefix_complete_cpu'] = time.process_time()-started
+                event['prefix_complete_wall'] = time.perf_counter()-wall_started
         if m == N:
             break
         if time.process_time() >= cap:
@@ -221,6 +234,7 @@ def assess(nodes, n, budget, sets, name, raw, haar=False):
     row['replicate_sum'] = int(reps.sum())
     coef = C@old_budget.targets(nodes)
     row['amp'], row['variance_max'], row['function_errors'] = {}, {}, {}
+    best41_points, best41_values = np.empty((0, 3)), np.empty(0)
     for key, x in sets.items():
         amp, variance = 0., 0.
         maxerr, square = np.zeros(12), np.zeros(12)
@@ -228,7 +242,14 @@ def assess(nodes, n, budget, sets, name, raw, haar=False):
             p = x[offset:offset+512]
             E = u.basis(p, n)
             cards = E@C
-            amp = max(amp, float(np.sum(abs(cards), axis=1).max()))
+            norm_values = np.sum(abs(cards), axis=1)
+            amp = max(amp, float(norm_values.max()))
+            if key == 'mesh41':
+                loc = np.argsort(norm_values)[-4:]
+                combined_points = np.vstack((best41_points, p[loc]))
+                combined_values = np.concatenate((best41_values, norm_values[loc]))
+                take = np.argsort(combined_values)[-4:]
+                best41_points, best41_values = combined_points[take], combined_values[take]
             variance = max(variance, float(np.sum(cards*cards, axis=1).max()))
             if key in ('uniform', 'chebyshev'):
                 error = E@coef-old_budget.targets(p)
@@ -240,6 +261,9 @@ def assess(nodes, n, budget, sets, name, raw, haar=False):
             row['function_errors'][key] = {'maximum': maxerr.tolist(),
                                            'rms': np.sqrt(square/len(x)).tolist()}
     row['amp_union'] = max(row['amp'].values())
+    row['mesh41_largest_points'] = best41_points.tolist()
+    row['dense_operator_bytes'] = C.nbytes
+    row['application_multiply_add_flops'] = 2*C.shape[0]*C.shape[1]
     sigmas = np.array([0., 1e-4, .01, .1, 1.])
     row['calibrated_MSE'] = (np.array(row['function_errors']['chebyshev']['rms'])[:, None]**2
                              +row['integer_risk']*sigmas[None, :]**2).tolist()

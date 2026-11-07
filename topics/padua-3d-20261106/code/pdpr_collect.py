@@ -83,6 +83,7 @@ def collect(a):
         'logical_results_uncompressed_bytes': len(payload),
         'summary_precision': 'six significant digits; all gate decisions use original full-precision raw values; M_trace and amp_union derived as documented',
         'raw_details': identity(a.scratch/'details.json'),
+        'inputs': details.get('inputs', []),
         'raw_inventory': identity(a.scratch/'inventory.json'),
         'raw_policy': 'unique local regeneration-only; all full-precision curves/functions/maps/recipes/CPU+wall phases retained; no archive delivery',
         'serialization_note': 'Summary-only packing; fullprecision raw unchanged. P1serialization deviation documented in pruning-results.md. No executed-source relabel.',

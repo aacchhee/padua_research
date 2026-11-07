@@ -177,10 +177,60 @@ def engineering(raw):
         core.u.basis, core.dense_training, core.time.process_time = saved_basis, saved_training, saved_clock
     core.require(any(len(r[2]) > 1 and r[3] == 'cpu_cap' for r in cap_cases), 'accepted-then-cap branch unexercised')
     core.require(any(r[4] for r in cap_cases), 'post-trial-cap branch unexercised')
+    checkpoint_checks = []
+    saved_basis, saved_training = core.u.basis, core.training
+    synthetic_nodes = np.column_stack((np.linspace(-1, 1, 6), np.zeros((6, 2))))
+    def checkpoint_basis(points, n):
+        x = np.asarray(points)[:, 0]
+        return np.eye(2)[x.astype(int)-1000] if np.all(x >= 1000) else design[np.rint((x+1)*2.5).astype(int)]
+    try:
+        core.u.basis = checkpoint_basis
+        core.training = lambda n: query
+        dirs = [raw/'checkpoint-on', raw/'checkpoint-off']
+        for directory in dirs:
+            directory.mkdir()
+        on, on_states = core.curve(synthetic_nodes, 0, 'A', dirs[0], time.process_time()+30, checkpoint_maps=True)
+        off, off_states = core.curve(synthetic_nodes, 0, 'A', dirs[1], time.process_time()+30)
+        core.require(not on['failures'] and not off['failures'], 'checkpoint synthetic path guard failure')
+        core.require(on_states.keys() == off_states.keys() and
+                     all(np.array_equal(on_states[m], off_states[m]) for m in on_states),
+                     'durable checkpoint changed deletion arithmetic')
+        for event in on['curve']:
+            if 'prefix_checkpoint' in event:
+                with np.load(event['prefix_checkpoint'], allow_pickle=False) as data:
+                    core.require(np.array_equal(data['ids'], on_states[event['M']]), 'checkpoint IDs mismatch')
+                    error = float(la.norm(data['operator']@design[data['ids']]-np.eye(2), np.inf))
+                core.require(error <= 1e-10 and event['prefix_complete_cpu'] <= on['costs_cpu']['complete_construction'],
+                             'checkpoint map/prefix cost mismatch')
+                checkpoint_checks.append([event['M'], error, event['prefix_complete_cpu']])
+    finally:
+        core.u.basis, core.training = saved_basis, saved_training
+    gradient_checks = []
+    random = np.random.default_rng(2026111901)
+    n = 2
+    scale = np.array([2.**(sum(v > 0 for v in aa)/2) for aa in core.u.exponents(n)])
+    rectangular = random.normal(size=(len(scale), 13))
+    for theta in random.uniform(.2, 2.9, size=(3, 3)):
+        value, gradient = old_det.prev.basis_angle(theta, n, True)
+        cards = (value*scale)@rectangular
+        direct = core.u.basis(np.cos(theta)[None, :], n)[0]@rectangular
+        core.require(np.max(abs(cards-direct)) < 1e-12, 'rectangular physical/angular basis scaling mismatch')
+        analytic = (gradient*scale)@rectangular@np.sign(cards)
+        for axis in range(3):
+            plus, minus = theta.copy(), theta.copy()
+            plus[axis] += 1e-6
+            minus[axis] -= 1e-6
+            fp = np.sum(abs((old_det.prev.basis_angle(plus, n)*scale)@rectangular))
+            fm = np.sum(abs((old_det.prev.basis_angle(minus, n)*scale)@rectangular))
+            numerical = float((fp-fm)/2e-6)
+            err = abs(numerical-analytic[axis])/max(1., abs(numerical))
+            core.require(err <= 1e-7, 'rectangular angular norm gradient mismatch')
+            gradient_checks.append([axis, float(err)])
     return {'synthetic_deletions': checks, 'integer_allocations': allocation_checks,
             'control_gate_branch_cases': branch_cases, 'tie_branch_cases': tie_cases,
             'all_degree_gate_cases': numerical_cases, 'cardinal_candidate_checks': cardinal_cases,
-            'feasibility_selection_branches': selection_branches, 'mocked_cap_cases': cap_cases, 'passes': True}
+            'feasibility_selection_branches': selection_branches, 'mocked_cap_cases': cap_cases,
+            'durable_checkpoint_checks': checkpoint_checks, 'rectangular_gradient_checks': gradient_checks, 'passes': True}
 
 
 def run_pilot(a):
@@ -360,7 +410,7 @@ def run_pilot(a):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--round', choices=('pilot', 'engineering', 'constrained'), required=True)
+    p.add_argument('--round', choices=('pilot', 'engineering', 'constrained', 'frontier'), required=True)
     p.add_argument('--protocol-commit')
     p.add_argument('--reference', type=Path)
     p.add_argument('--scratch', type=Path, required=True)
@@ -368,6 +418,10 @@ def main():
     a = p.parse_args()
     a.scratch.mkdir(parents=True, exist_ok=False)
     started = datetime.now(timezone.utc).isoformat()
+    if a.round == 'frontier':
+        core.require(bool(a.protocol_commit) and a.reference is not None, 'P3requires protocol/P1reference')
+        run_frontier(a)
+        return
     if a.round == 'constrained':
         core.require(bool(a.protocol_commit) and a.reference is not None, 'P2requires published protocol and P1reference')
         run_constrained(a)
@@ -576,6 +630,235 @@ def run_constrained(a):
     dump(a.scratch/'inventory.json', [core.identity(p) for p in sorted(a.scratch.rglob('*')) if p.is_file()])
     collector.collect(SimpleNamespace(scratch=a.scratch, protocol_commit=a.protocol_commit,
         output=a.output, original_command=None, round='P2'))
+
+
+
+
+
+def frontier_assess(nodes, n, budget, sets, name, raw, cap, haar=False):
+    began, wall = time.process_time(), time.perf_counter()
+    row = core.assess(nodes, n, budget, sets, name, raw, haar=haar)
+    if not row['eligible']:
+        return row
+    if time.process_time() >= cap:
+        row['assessment_incomplete'] = 'cap_before_refinement'
+        return row
+    with np.load(raw/f'n{n}-{name}-map.npz', allow_pickle=False) as data:
+        C = data['operator']
+    scale = np.array([2.**(sum(v > 0 for v in alpha)/2) for alpha in core.u.exponents(n)])
+    starts = [np.arccos(np.clip(x, -1, 1)) for x in row['mesh41_largest_points']]
+    starts.extend(np.array(list(__import__('itertools').product((0., np.pi), repeat=3))))
+    starts.extend(np.pi*np.random.default_rng(2026111940+n).random((16, 3)))
+    t = time.process_time()
+    (value, where), searches = old_det.refine(scale[:, None]*C, n, starts)
+    row['amp']['local_search'] = float(value)
+    row['amp_union'] = max(row['amp'].values())
+    row['refinement'] = {'starts': len(searches), 'successes': sum(s['success'] for s in searches),
+                         'cpu': time.process_time()-t, 'angular_arg': np.asarray(where).tolist()}
+    dump(raw/f'n{n}-{name}-searches.json', searches)
+    # Direct application cost is separate from factorization/validation/search.
+    Y = core.old_budget.targets(nodes)
+    samples = []
+    for _ in range(5):
+        t = time.process_time()
+        C@Y
+        samples.append(time.process_time()-t)
+    row['application_12_rhs_median_cpu'] = float(np.median(samples))
+    row['assessment_cpu'] = time.process_time()-began
+    row['assessment_wall'] = time.perf_counter()-wall
+    return row
+
+
+def target_regressions(rows, full):
+    if not full or not full['eligible']:
+        return
+    for row in rows:
+        if row['eligible']:
+            row['target_regressions_to_full'] = {}
+            for measure in ('uniform', 'chebyshev'):
+                report = {}
+                for metric in ('rms', 'maximum'):
+                    vals = np.array(row['function_errors'][measure][metric])
+                    ref = np.array(full['function_errors'][measure][metric])
+                    report[metric] = {'worse_count': int(np.sum(vals > 1.01*ref+1e-14)),
+                        'worst_ratio_above_floor': float(np.max(vals/np.maximum(ref, 1e-14)))}
+                row['target_regressions_to_full'][measure] = report
+
+
+def run_frontier(a):
+    import math
+    import itertools
+    import pdpr_collect as collector
+    from scipy.stats import qmc
+    from types import SimpleNamespace
+    began, wall = time.process_time(), time.perf_counter()
+    cap = began+900
+    metadata = {'started_utc': datetime.now(timezone.utc).isoformat(), 'command': sys.argv,
+                'seeds': {'chebyshev': '2026111920+n', 'uniform': '2026111930+n',
+                          'refinement_angular_starts': '2026111940+n'},
+                'threads': {k: os.getenv(k) for k in ('OPENBLAS_NUM_THREADS', 'OMP_NUM_THREADS', 'MKL_NUM_THREADS')}}
+    dump(a.scratch/'run-metadata.json', metadata)
+    sources = [Path(__file__), Path(core.__file__), Path(collector.__file__), Path(core.u.__file__),
+        Path(core.old_budget.__file__), Path(old_det.__file__), Path(old_det.prev.__file__),
+        Path(old_det.prev.old.__file__), TOP/'code/t4_stacks.py',
+        TOP.parents[1]/'tracks/lattice-unisolvence/code/c3_rank.py']
+    pins = [core.identity(p) for p in sources]
+    for p in sources:
+        (a.scratch/('source-'+p.name)).write_bytes(p.read_bytes())
+    ref = json.loads(a.reference.read_text())
+    for key in ('raw_details', 'raw_inventory'):
+        core.require(core.identity(ref[key]['path']) == ref[key], 'P1reference changed')
+    refraw = Path(ref['raw_details']['path']).parent
+    path8 = refraw/'n8-A-path.npz'
+    inv = json.loads(Path(ref['raw_inventory']['path']).read_text())
+    expected8 = next(r for r in inv if r['path'] == str(path8))
+    core.require(core.identity(path8) == expected8, 'P1n8path input changed')
+    stored = TOP/'evidence/u2-degree12-nodes.json'
+    details = {'paths': [], 'assessments': [], 'degrees': [], 'unrun': [],
+        'inputs': [core.identity(a.reference), ref['raw_details'], ref['raw_inventory'],
+                   core.identity(path8), core.identity(stored)]}
+    for n in (8, 12):
+        if time.process_time() >= cap:
+            details['unrun'].append({'n': n, 'stage': 'degree'})
+            continue
+        t, w = time.process_time(), time.perf_counter()
+        nodes, _, recipe = core.u.parity_nodes(n)
+        generation = {'cpu': time.process_time()-t, 'wall': time.perf_counter()-w}
+        dump(a.scratch/f'n{n}-recipe.json', recipe)
+        N, primary = math.comb(n+3, 3), math.ceil(1.20*math.comb(n+3, 3))
+        path, snapshots = core.curve(nodes, n, 'A', a.scratch, cap, checkpoint_maps=True)
+        path['old_strict_prefix_M'] = path['selected_M']
+        path['primary_M'] = primary
+        path['costs_cpu']['node_generation'] = generation['cpu']
+        path['costs_cpu']['complete_construction'] += generation['cpu']
+        path['costs_wall']['node_generation'] = generation['wall']
+        path['costs_wall']['complete_construction'] += generation['wall']
+        event = next((e for e in path['curve'] if e['M'] == primary), None)
+        if event and 'prefix_complete_cpu' in event:
+            path['primary_prefix'] = {'M': primary, 'cpu': event['prefix_complete_cpu']+generation['cpu'],
+                'wall': event['prefix_complete_wall']+generation['wall'],
+                'checkpoint': core.identity(event['prefix_checkpoint'])}
+        reproduction = {'required': n == 8, 'passes': n != 8}
+        if n == 8:
+            with np.load(path8, allow_pickle=False) as old:
+                mismatch = [m for m, ids in snapshots.items() if f'm{m}' not in old
+                            or not np.array_equal(ids, old[f'm{m}'])]
+                reproduction.update(passes=not mismatch and len(snapshots) == len(old.files),
+                                    compared_counts=len(snapshots), mismatched_counts=mismatch)
+        path['P1_reproduction'] = reproduction
+        details['paths'].append(path)
+        print(json.dumps({'stage': 'frontier_path', 'n': n, 'primary_M': primary,
+            'prefix': path.get('primary_prefix'), 'reproduction': reproduction,
+            'failures': path['failures'], 'full_diagnostic_cpu': path['costs_cpu']['complete_construction']}), flush=True)
+        sets = core.heldout(n)
+        sets['chebyshev'] = np.cos(np.pi*qmc.Sobol(3, scramble=True, seed=2026111920+n).random_base2(11))
+        sets['uniform'] = 2*qmc.Sobol(3, scramble=True, seed=2026111930+n).random_base2(11)-1
+        assessed, aliases = {}, {}
+        def assess(name, x, haar=False):
+            key = (core.array_sha(x), haar)
+            if key in assessed:
+                aliases[name] = assessed[key]['name']
+                return assessed[key]
+            if time.process_time() >= cap:
+                details['unrun'].append({'n': n, 'stage': 'assessment', 'name': name})
+                return None
+            row = frontier_assess(x, n, len(nodes), sets, name, a.scratch, cap, haar)
+            assessed[key] = row
+            aliases[name] = name
+            details['assessments'].append(row)
+            if row.get('assessment_incomplete'):
+                details['unrun'].append({'n': n, 'stage': row['assessment_incomplete'], 'name': name})
+            print(json.dumps({'stage': 'frontier_assessment', 'n': n, 'name': name,
+                              'M': row['M'], 'norm': row.get('amp_union'), 'risk': row.get('integer_risk')}), flush=True)
+            return row
+        full = assess('OLS-full', nodes)
+        assess('Haar-full', nodes, True)
+        counts = {len(nodes), primary, math.ceil(1.10*N), N}
+        for m in sorted(counts, reverse=True):
+            if m in snapshots:
+                assess(f'A-m{m}', nodes[snapshots[m]])
+            else:
+                details['unrun'].append({'n': n, 'stage': 'missing path checkpoint', 'M': m})
+        costs = {}
+        if time.process_time() < cap:
+            t, w = time.process_time(), time.perf_counter()
+            piv = la.qr(old_det.prev.old.basis(nodes, n).T, pivoting=True,
+                        mode='economic', check_finite=False)[2]
+            costs['restrictedQR'] = {'cpu': time.process_time()-t+generation['cpu'],
+                                    'wall': time.perf_counter()-w+generation['wall']}
+            for m in sorted(counts, reverse=True):
+                assess(f'restrictedQR-m{m}', nodes[piv[:m]])
+        else:
+            details['unrun'].append({'n': n, 'stage': 'restrictedQR construction'})
+        if time.process_time() < cap:
+            t, w = time.process_time(), time.perf_counter()
+            qrnodes = old_det.prev.qrpoints(n)
+            costs['globalQR'] = {'cpu': time.process_time()-t, 'wall': time.perf_counter()-w}
+            assess('globalQR', qrnodes)
+            if time.process_time() < cap:
+                t, w = time.process_time(), time.perf_counter()
+                local, trace = old_det.exchange(qrnodes.copy(), n)
+                costs['localdet'] = {'cpu': time.process_time()-t+costs['globalQR']['cpu'],
+                                    'wall': time.perf_counter()-w+costs['globalQR']['wall'], 'trace': trace}
+                assess('localdet', local)
+            else:
+                details['unrun'].append({'n': n, 'stage': 'localdet construction'})
+        else:
+            details['unrun'].append({'n': n, 'stage': 'globalQR/localdet construction'})
+        if n == 12 and time.process_time() < cap:
+            t, w = time.process_time(), time.perf_counter()
+            record = json.loads(stored.read_text())
+            raw = base64.b85decode(record['coordinates_base85'])
+            core.require(core.hashlib.sha256(raw).hexdigest() == record['coordinates_sha256'], 'storedU2coordinate hash')
+            storednodes = np.frombuffer(raw, dtype='<f8').reshape(record['N'], 3).copy()
+            core.require(record['n'] == n and record['N'] == N, 'storedU2degree/count')
+            costs['storedU2_load'] = {'cpu': time.process_time()-t, 'wall': time.perf_counter()-w,
+                'offline_construction': 'Existing stored455artifact; original optimizer cost in usable2.md, not rerun'}
+            assess('storedU2', storednodes)
+        elif n == 12:
+            details['unrun'].append({'n': n, 'stage': 'storedU2'})
+        target_regressions(assessed.values(), full)
+        byname = {r['name']: r for r in assessed.values()}
+        def lookup(name):
+            return byname.get(aliases.get(name))
+        candidate, restricted = lookup(f'A-m{primary}'), lookup(f'restrictedQR-m{primary}')
+        decision = {'M': primary, 'site_saving': 1-primary/len(nodes),
+                    'reproduction': reproduction['passes'], 'complete': candidate is not None and restricted is not None,
+                    'prefix_cpu': path.get('primary_prefix', {}).get('cpu')}
+        if candidate and restricted and candidate['eligible'] and restricted['eligible']:
+            required_names = ['globalQR', 'localdet']+(['storedU2'] if n == 12 else [])
+            controls = {k: lookup(k) for k in required_names}
+            valid_controls = all(r is not None and r['eligible'] for r in controls.values())
+            dominance = {name: bool(row['integer_risk'] <= candidate['integer_risk']*(1+1e-10)
+                and row['amp_union'] <= candidate['amp_union']*(1+1e-10))
+                for name, row in controls.items() if row is not None and row['eligible']}
+            ratios = {'risk': candidate['integer_risk']/restricted['integer_risk'],
+                      'amp': candidate['amp_union']/restricted['amp_union']}
+            decision.update(guards=bool(not path['failures'] and all(r['eligible'] for r in assessed.values())),
+                restricted_ratios=ratios, minimum_count_dominates=dominance,
+                nondominated=valid_controls and not any(dominance.values()),
+                old_full_grid_ratios={'risk': candidate['integer_risk']/full['integer_risk'],
+                                      'amp': candidate['amp_union']/full['amp_union']})
+            decision['passes'] = bool(decision['guards'] and decision['reproduction']
+                and decision['site_saving'] >= .10 and decision['prefix_cpu'] is not None
+                and decision['prefix_cpu'] <= 120 and ratios['risk'] <= .95 and ratios['amp'] <= .95
+                and decision['nondominated'])
+        details['degrees'].append({'n': n, 'M_start': len(nodes), 'aliases': aliases,
+                                   'decisions': {'A': decision}, 'comparator_costs': costs})
+        print(json.dumps({'stage': 'frontier_degree', 'n': n, 'decision': decision}), flush=True)
+        dump(a.scratch/'partial-details.json', details)
+    ds = [r['decisions']['A'] for r in details['degrees']]
+    passes = len(ds) == 2 and all(r.get('passes', False) for r in ds) and not details['unrun'] and time.process_time()-began <= 900
+    details['gate'] = {'rules': {'A': {'passes': bool(passes)}},
+                       'selected_rule': 'A' if passes else None, 'passes': bool(passes)}
+    details['timing'] = {'actual_cpu': time.process_time()-began, 'wall': time.perf_counter()-wall, 'allowance_cpu': 900}
+    core.require(pins == [core.identity(p) for p in sources], 'P3executed sources changed')
+    metadata['ended_utc'] = datetime.now(timezone.utc).isoformat()
+    dump(a.scratch/'run-metadata.json', metadata)
+    dump(a.scratch/'details.json', details)
+    dump(a.scratch/'inventory.json', [core.identity(p) for p in sorted(a.scratch.rglob('*')) if p.is_file()])
+    collector.collect(SimpleNamespace(scratch=a.scratch, protocol_commit=a.protocol_commit,
+        output=a.output, original_command=None, round='P3'))
 
 
 if __name__ == '__main__':
