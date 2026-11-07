@@ -76,11 +76,17 @@ def parity_fit(n, values, equal=False):
     exponents(n), in the orthonormal basis.  No generic factorization occurs.
     """
     points, weights, _ = parity_nodes(n, equal)
-    coefficients = basis(points, n).T @ (weights[:, None]*np.atleast_2d(values).T
-                    if np.asarray(values).ndim == 1 else weights[:, None]*values)
+    values = np.asarray(values)
+    if values.ndim not in (1, 2):
+        raise ValueError("values must have shape (M,) or (M, K)")
+    if values.shape[0] != len(points):
+        raise ValueError(f"values must contain {len(points)} observations "
+                         "in canonical node order along axis 0")
+    columns = values[:, None] if values.ndim == 1 else values
+    coefficients = basis(points, n).T @ (weights[:, None]*columns)
     if not equal:
         coefficients[exponents(n).index((n, 0, 0))] *= 0.5
-    return coefficients[:, 0] if np.asarray(values).ndim == 1 else coefficients
+    return coefficients[:, 0] if values.ndim == 1 else coefficients
 
 
 def targets(points):
