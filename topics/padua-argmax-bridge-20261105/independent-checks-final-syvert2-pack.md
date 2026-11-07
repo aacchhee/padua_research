@@ -236,3 +236,111 @@ First failures must be retained. Real builder/native compatibility and the
 limited local 41/511 primary/fresh validation require their separate precise
 registrations and applicable audit/release; no bulk or remote launch follows
 from this report. P1–P4 remain unwaived and readiness is not claimed.
+
+## Focused repaired-source review — 2026-11-07
+
+**Source verdict: FOPS-01–06 closed by static inspection for the exact repaired
+candidate; operational verification remains unexecuted.** This is acceptance
+of the focused operational source scope, not test success, delivery readiness,
+scientific acceptance or permission for bulk/remote execution. The first
+14,642-byte report above is preserved verbatim.
+
+Repaired custody `syvert2_pack/CANDIDATE.sha256` is SHA256
+`b231408769469a5928ee8998036ef2421f4c3af6dd647126b33cc06487985965`.
+Read all sixteen entries (ten Python modules, five launchers and README),
+and verified every entry with `sha256sum -c`. Read the focused preparation
+response identified by root as SHA256
+`ea4a3d51c4ecacde93861c7f468a4d55d97c5ed30ef2402227d96c65900c4d9c`.
+Compared new validator assumptions with the hybrid engine's actual accounting,
+stage/checkpoint/build/runtime and endpoint-record schemas using static text.
+Only `cat`, `sed`, `rg` and `sha256sum` ran; no import, extraction, builder,
+compiler, control, fake worker or scientific call ran in this review.
+
+- **FOPS-01:** `evidence.py` now binds compact receipt to summary/raw identities,
+  raw to actual checkpoints, configuration, stages and native endpoints, and
+  requires source/TU/binary plus nonempty compiler/header/dependency provenance.
+  Recursive identity traversal requires actual retained bytes. Internal paths
+  map beneath the registered absolute package root; external identities require
+  SHA-addressed preserved payloads. The wrapper captures those verified bytes,
+  and the return checker consumes archive bytes without archive code execution.
+  Missing-TU/binary/captured-object and changed-linkage refusal still requires
+  negative controls. This validates consistency of recorded provenance; it is
+  not a new mathematical justification of native arithmetic.
+- **FOPS-02:** resume and return now share `validate_attempt`, including started
+  degree/run/core identity, direct wrapper/pass EXIT0, no timeout or cleanup,
+  full pass validation, primary-to-fresh linkage and pass-record consistency.
+  Resume checks existing attempts before admitting absent directories and
+  rejects a moved package path. Partial-campaign validation is supported.
+- **FOPS-03:** the first observed wall timeout now sets the failure and stop
+  flag before the admission loop. The bounded TERM/KILL path remains.
+- **FOPS-04:** the operational launchers and job-worker command now carry
+  `-I -S -B`; numerical sibling invocation carries `-E -S -B`. The separately
+  repaired hybrid child/setup launch policy is coordinated with D13. Actual
+  import compatibility and hostile ambient startup suppression remain tests.
+- **FOPS-05:** README and commit attribution now enter `SOURCE_CUSTODY.json`
+  after construction of the code/data runtime inventory. Launch identity and
+  numerical acceptance do not depend on README byte identity. Collection
+  still hashes all returned bytes for custody, including prose; that is proper.
+- **FOPS-06:** `assets.py` pins six official Debian package SHA256 values and
+  exact package/version/architecture metadata, reads their tar payloads, resolves
+  bounded aliases, and selects matching arithmetic headers/libraries. The
+  builder compares existing extracted and selected system arithmetic bytes
+  against those payloads. It packages the original archives and per-file
+  provenance. Package database assertions are no longer substituted for byte
+  authentication. No retrieval or installation occurs in this code. Root's
+  separately recorded retrieval is not a reviewer execution; the producer's
+  extraction/closure/compatibility path is still untested.
+
+The manifest-wide writer marker's conservative refusal across identical pack
+copies is now explicit; it never expands process-killing ownership. The prior
+resource-floor limitations and fresh-execution versus distinct-agent-review
+distinction stand. Full external provenance capture consumes operational CPU
+and storage outside the numerical 120-CPU envelope, with existing wrapper caps;
+no timing or capacity bound is inferred.
+
+Next work is reviewer-owned fake fixture source and exact prospective commands,
+inputs and caps, followed by root's internal release before execution. Such
+fixtures must exercise operations without importing or invoking the scientific
+engine/checker, compiler or network. Any mocked compatibility/proof-checker
+component must be explicitly excluded from the resulting verification claim.
+Actual builder/native compatibility and final result review remain separate.
+
+### Prospective controls and portability addendum
+
+Root's read-only ELF inspection reports the pinned GMP library needs
+`GLIBC_2.38` (FLINT up to `GLIBC_2.34`); Syvert2's actual loader remains unknown.
+The developer added this limitation to README/preparation only. Repaired
+operational code/pins/caps are unchanged; updated custody is
+`a9e30423e3d33670817753cdc979fcf1a9c5c287b635c8197b37d6faf2803cfd`.
+This clarification does not change the focused source verdict. It is not an
+observed Syvert2 failure, and mock-loader controls cannot verify compatibility.
+
+Reviewer fixture source is frozen under `code/final_pack_ops_review/` with
+exact hashes/command/caps in `PREREGISTRATION.md`, SHA256
+`465802a6ce8ea78acafa782c98c5a16dbc483ca26563ff0477f3fafed8fa5021`.
+Four fixture Python files were AST-parsed without imports. All controls remain
+unexecuted and require root release. The registration explicitly describes
+fake arithmetic checking, synthetic provenance, mocked loader incompatibility,
+partial coverage and absence of scientific engine/compiler/network execution.
+Root must monitor the aggregate 64 MiB output cap; per-file limits are not an
+aggregate quota. First failure is retained without automatic rerun.
+
+For the separate prospective real archive builder, standard `timeout` plus
+`prlimit` is proportionate: proposed 300-second wall plus 10-second kill grace,
+120 CPU seconds per process, 4 GiB address space and 1 GiB per-file size. A
+2 GiB staging reservation followed by a recorded aggregate size check is an
+honest prospective alternative to a hard aggregate disk cap; it must not be
+described as hard enforcement. No builder has executed under either policy.
+Release still needs exact published source/candidate, six archive inputs,
+fresh destination, source-publication authentication and direct EXIT/output
+capture. This source/metadata/archive operation invokes neither scientific
+code nor compiler; it does not by itself verify native or Syvert2 compatibility.
+
+Before release, reviewer self-inspection strengthened the timeout fixture:
+the second fake worker sleeps 0.25 seconds and must exit without its own
+timeout, ensuring the admission check observes a newly freed slot. The prior
+0.4-second sleep could time out both workers and weaken that test. Neither
+version ran. Current prospective registration supersedes the earlier hash:
+`948a20993de9578ed6e57b971a64167b670891f1adf31cf3d012df287ee0f76f`.
+Its table records the replacement worker and harness identities; all other
+scope/caps and no-automatic-rerun constraints remain.
