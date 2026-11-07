@@ -1,6 +1,6 @@
 # Handoff19 — Unified half-length manuscript
 
-- Status: open
+- Status: done in f9738d286267b64eb1b1c3f76694ecfb05210ecf
 - Previous handoff:18-audit-manuscript-and-results.md
 - Next agent / model / effort: Codex coordinator; distinct gpt-6.1-sol max auditor explicitly requested by AC; Sol xhigh mathematical exposition developers
 - Role: developer/orchestrator with separate audit
