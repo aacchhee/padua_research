@@ -1,0 +1,10 @@
+H(0) GL = 0.310002264407314185103212
+H(pi) GL = -0.2874864790465093273062626  (2/pi)log(2/pi) = -0.2874864790465093273062626
+max sampled [H(x)-H(0)+(pi-3)x^2/(4pi^3)] over 134 pts: -6.7686541e-10 at 0.0001 (<0 expected)
+H strictly decreasing on the 128-pt grid (pi k/128): True
+(H(x)-H0)/x^2 at x=1e-4, 1e-3: -0.0688281862 -0.06882818449
+H(pi-eps)-H(pi) eps= 1e-2 0.0077727594
+H(pi-eps)-H(pi) eps= 1e-3 0.0010411598
+exit=0
+0m0.000s 0m0.002s
+0m4.571s 0m0.012s

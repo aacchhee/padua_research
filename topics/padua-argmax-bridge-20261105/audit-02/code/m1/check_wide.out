@@ -1,0 +1,11 @@
+PASS 31*pi/80<31/25 with pi<16/5
+PASS Var initial: (17/4)(1/5)+(1/5)(5/2)(pi/2) <= value at pi=16/5 = 33/20 (strict since pi<16/5) [run1 used < at pi=16/5: auditor script bug]
+PASS Var P_s initial 31/25+33/20=289/100
+PASS sup P_s initial 5/2+17/20=67/20
+PASS central Var 27/4+17/16+5/12=395/48
+PASS   27/4 = 9*(3/4); 17/16=(17/4)(1/4); 5/12=(5/4)(1/3)
+PASS central sup (17/4)(3/4)+(5/4)(2/3)=193/48
+PASS (14) total = 39073/1200 < 33
+PASS constant = 33+65/4+23/96 = 4751/96 < 50
+PASS log coefficient 23/3 (20+3 over pi>3)
+OVERALL PASS
