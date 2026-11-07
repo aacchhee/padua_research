@@ -1,0 +1,16 @@
+{
+  "source_commit": "7cce03f186c2d325b1764fe3efa790b8f50b6639",
+  "tool_session": 8528,
+  "initial_chunk": "a9db3b",
+  "completion_chunk": "063443",
+  "observed_exit_code": 1,
+  "first_failure": "PermissionError reading /proc/206164/environ; recent unrelated same-UID process remains a possible writer to global environment scan",
+  "aggregate_monitor_bytes": 34314457,
+  "final_bytes_before_observation": 34314457,
+  "threshold_bytes": 67108864,
+  "no_rerun": true,
+  "receipt": {
+    "bytes": 1423,
+    "sha256": "dbfb82548d15ddd7a75b332c46887e05d0c03d4253a0000d38bc9a4873efa060"
+  }
+}
