@@ -182,3 +182,9 @@ reduces the full-diamond six-row error for every n>=32, while
 [E02 paired regular outer](../topics/padua-argmax-bridge-20261105/theory/E02-paired-outer.md)
 reduces a shifted-mesh charge to O(beta H/n²) with complete boundary costs.
 These are universal error estimates, not a computed lower global onset.
+
+[E03 retained-origin estimate](../topics/padua-argmax-bridge-20261105/theory/E03-joint-row-origin.md)
+is independently accepted, removing the old phase-independent retained-row
+charge. [Complete-error cusp](../topics/padua-argmax-bridge-20261105/theory/E03-unified-error.md)
+shows a logarithmic linear term is necessary in a uniform near-error bound;
+the original logarithmic-linear target remains open. No onset change follows.

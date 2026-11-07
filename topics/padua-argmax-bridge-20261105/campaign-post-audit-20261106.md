@@ -113,9 +113,12 @@ NEW15coordinatedanalyticroundsauthorized2026-11-06 afterD39. E01ACTIVEpaper-only
 |---|---|---|
 | E01 | COMPLETE | Accepted actual corners from512, rebuilt phase-aware/wide defect floors, exact near-charge refinement; three scoped old512 allocation barriers. Globalonset1024unchanged; PAPER-ONLY. |
 | E02 | COMPLETE | Accepted analytic GLOBALargmaxEVERYn>=768 by rationalpaperproof; newglobalrows+pairedouter accepted; NOsource/endpoint/nativejob. |
-| E03 | ACTIVE | Joint phase-profile+scalar-log operator and ordinary/retained TRUE-origin cancellation, paper-only; no vanishing remainder assumed. |
-| E04–E15 | UNALLOCATED | Remaining12 slots; redirect from proved bottlenecks. |
+| E03 | COMPLETE | Accepted retained-origin cancellation and scoped ABS/one-sided no-log-linear cusp constraints; fullD13/log-linear target remainsOPEN, no numericaljob. |
+| E04 | ACTIVE | Paper-only matched640 candidate with larger near domain, rebuilt corner/defect supports and wider retained-origin increment; no source/job. |
+| E05–E15 | UNALLOCATED | Remaining11 slots; redirect from proved bottlenecks. |
 
 Newallowance1/15complete,14remainingincludingactiveE02. PackPAUSED.
 
 Current2026-11-07: NEW2/15complete,E03active,13remainingincludingE03. Analyticboundary768, residual719degrees43–62,65–158,161–510,513–767. D40packPAUSED.
+
+CurrentNEW3/15complete,E04active,12remainingincludingE04. Analytic768,residual719; packPAUSED.

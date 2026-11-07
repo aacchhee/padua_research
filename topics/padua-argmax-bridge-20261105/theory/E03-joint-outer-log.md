@@ -250,3 +250,74 @@ would be required before any later scalar use of a successful successor.
 actual serving metadata unavailable. Rules/input
 017f8ecc45534b4a6dd38b0488020463cb914edb. This is one component of E03,
 not an extra round per identity. Root controls shared registration and Git.
+
+## Cross-component coupling boundary — 2026-11-07
+
+The initial11806-byte theorem prefix above is frozen at SHA256
+ce83f8272092521f27c4d3894e16e3453a91d5baff2fcc4bb9d2567232b92396.
+Root requests coordination with D16's separately owned row-origin paper.
+This appendix identifies the match and the remaining obligation; it does
+not infer a full signed remainder bound from(3) or(6).
+
+Let B=(1/m)sum_O6 H, P=(1/m)sum_O6 Tref, where Tref is D07's
+endpoint reference, and Gint=(1/pi)integral(F_L+F_R). D07 gives
+Eout=B-P-(d/pi)(Cmesh/m)-Gint. Therefore(4) gives exactly
+
+    T_n=delta_a B-delta_a P-delta_a Gint
+                            -(2d/pi)(log pi-1).
+
+D16/root's joint-row identity is Erow+Eret=S_n-B-Delta2-C2. Adding its
+delta_a increment cancels the SAME ordinary H sum BEFORE any bound:
+
+    delta_a(Erow+Eret)+T_n
+       =delta_a[S_n-P-Gint-Delta2-C2]
+                            -(2d/pi)(log pi-1).          (13)
+
+This is exact algebra on the unchanged mask. It is not a bound on S_n
+or the whole remainder; the full true-origin conversion and the remaining
+scalar Rmesh also retain their own terms.
+
+For beta=0 the central labels m-1,m have angles pi-h,pi. Their continuous
+log-coefficient PROFILE values are max(p,2a tan(h/2))/pi and p/pi.
+For EACH FIXED alpha>0 they eventually both equal p/pi, giving the
+coefficient allocation +2p L/(pi*m). D07-central proves an actual-row
+UPPER using these coefficients; that inequality alone is not equality
+for the actual rows and does not insert a regularized H at a collision.
+
+D16 additionally supplies the ACTUAL linked finite vectors on this axis:
+put c=cos(alpha/2) and L_k(theta)=sin(theta)cot((k*pi+theta)/n), with
+the complete finite linked value L_0(0)=n and periodic index k. For the
+original first-coordinate labels j=n+2k and j=n-1+2k respectively,
+
+    F_(m,k)=c L_k(alpha/2),
+    F_(m-1,k)=[c/(2cos(h/2))]
+       [L_k((alpha-h)/2)+L_(k-1)((alpha+h)/2)].
+
+These are reported from D16's separately developed row-origin paper;
+their verification/adoption is separate and they are NOT premises of the
+negative theorem above. D16 derives Jcen(0)=2/m and, for FIXED alpha>0,
+
+    Jcen(alpha,0)=+2p L/(pi*m)+O_alpha(1/m).
+
+That signed coefficient matches the omitted-cell charge in(11) at the
+SAME order of limits. No central-log obstruction is asserted for their
+sum. A uniform ACTUAL-row/outer coupling, including p comparable to h,
+parity, finite numerator and top mode ONE, remains OPEN. Neither the
+fixed-n alpha cusp nor either fixed-alpha asymptotic proves that missing
+uniform statement. The negative result(2) remains restricted to the
+ABSOLUTE outer/log component and does not reject the full one-sided goal.
+
+Closed-direction convention for the minor diagnostic(7): its last strict
+comparison applies when B>0; when B=0 the derivative is exactly zero and
+the bound is non-strict. This does not affect(2), (3) or their proof.
+
+
+## Root adoption after distinct focused audit —2026-11-07
+
+Root adopts the exact joint outer/log identity and the scoped ABSOLUTE mixed-bound obstruction for THAT block. Its fixed-alpha negative leading logarithmic charge is favorable for an upper comparison. No one-sided/fullD13/full-joint-row obstruction follows; attributed separate row observations are not premises.
+
+Distinct [review](../independent-checks-E03-joint-outer-log.md), SHA256
+6c2c619d44d471bf072cb100e550d94dcda91bf640530baee7df9260bacac654, accepts the unchanged reviewed prefix
+642176ed25cdeff819ca5ff65074c0e0a7f2582bee835751802225f182c693a6.
+Full D13 remains OPEN. No numerical/source/native/pack job occurred.
+Current global onset768 and residual719 are unchanged; final Claude is separate.

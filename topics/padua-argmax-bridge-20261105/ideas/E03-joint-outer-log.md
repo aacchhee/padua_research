@@ -93,3 +93,18 @@ Root alone owns shared records, registration, Git and any later release.
 Canonical negative theorem: [E03-joint-outer-log](../theory/E03-joint-outer-log.md).
 2026-11-06, Codex mathematical developer; parent-requested Sol xhigh,
 actual serving metadata unavailable. E02 files remain frozen.
+
+## Coupling clarification — 2026-11-07
+
+Preserve the initial5933-byte idea prefix at SHA256
+b01b7e77d55b92ff42c39e762696aca6cdf5c5a6eee92dcc1cc40a9bca0f4c9c.
+Root requested exchange with D16 before interpreting the negative component
+charge. The ordinary H sum cancels EXACTLY when the two joint components
+are added; theory(13) records that algebra. D16 separately supplies actual
+finite linked central vectors, Jcen(0)=2/m and the FIXED-alpha coefficient
++2sin(alpha)L/(pi*m), matching the negative outer-hole term. His result is
+separately owned/reviewed and is not a premise of this scoped negative
+theorem. No uniform p~h comparison follows from those fixed-alpha limits
+or the fixed-n cusp. P2 remains only an ABSOLUTE component obstruction;
+P3/full signed coupling remains OPEN and can benefit from the matching
+favorable sign. D16 owns the actual-row proof, not this file.

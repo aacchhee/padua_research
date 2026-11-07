@@ -69,3 +69,18 @@ read-only git-show/diff comparisons, and apply_patch on these three files.
 No scientific import, numerical/scalar/endpoint/threshold/phase/native/
 degree/compile/source/pack action or extra artifact. Root alone publishes,
 registers, audits/releases any successor and controls Git/shared records.
+
+## Coordination boundary — 2026-11-07
+
+The initial3765-byte attempt prefix is frozen at SHA256
+691a211dd03a32a7363300763584f02f69e7b97f8107112fb2828b52c18ea274.
+Root/D16 received the exact outer coefficient and hole lengths before any
+all-component inference. Adding D16's row identity cancels the ordinary
+H sum algebraically, as recorded in the theory appendix. D16 subsequently
+supplied ACTUAL linked central vectors and their fixed-alpha coefficient
++2sin(alpha)L/(pi*m), matching the signed negative outer-hole term at the
+same order of limits. This separate row paper is not a premise of the
+outer/log negative theorem. Uniform actual-row/outer coupling for p~h,
+parity, finite numerator and exceptional topmode remains OPEN. The scoped
+absolute obstruction is not an obstruction to the full one-sided goal.
+No new job or source action accompanies this coordination.
