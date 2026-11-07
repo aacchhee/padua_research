@@ -245,7 +245,7 @@ quality success or an exact 'none exists' conclusion.
 Assess full support, every reached standard P1count checkpoint, and the
 terminal support. Fresh held-out sets keep P1's21^3/41^3nested angular
 meshes and2048query sample sizes, but use new Chebyshev/uniform seeds
-2026111020+n and2026111030+n. They do not select deletions/stops. Reassess
+2026111520+n and2026111530+n. They do not select deletions/stops. Reassess
 P1A/D/random/lex trajectories at P2's terminal count using P1's pinned
 path-index arrays, keeping their original canonical order and all prior
 failures. Full OLS/Haar, same-count restricted QR, and freshly constructed
