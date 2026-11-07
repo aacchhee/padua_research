@@ -194,8 +194,6 @@ def collect(destination):
         if not runs: raise ValueError('no persisted runs')
         destination.mkdir(parents=True, exist_ok=True)
         import shutil
-        if shutil.disk_usage(destination).free < PROFILE['archive_free_floor_bytes']:
-            raise ValueError('prospective archive free-space floor not met')
         host = ''.join(c if c.isalnum() or c in '_.-' else '_' for c in socket.gethostname())
         archive = destination / (host + '-padua-syvert30-' + datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S.%fZ') + '.zip')
         # Complete source, output, native/TU/build/runtime tree. ZIP is outside
@@ -220,7 +218,7 @@ def collect(destination):
         # Exact compressed payload prepass plus conservative ZIP headers/collection
         # reserve. Includes peak duplicate archive allocation on the target volume.
         prospective_bytes = compressed_bytes + len(collection) + sum(1024 + 4 * len(n.encode()) for n, _ in paths) + 65536
-        if shutil.disk_usage(destination).free < prospective_bytes + PROFILE['archive_free_floor_bytes']:
+        if shutil.disk_usage(destination).free < prospective_bytes:
             raise ValueError('measured archive peak exceeds available bytes; retain raw, use approved other volume')
         with zipfile.ZipFile(archive, 'x', zipfile.ZIP_DEFLATED) as z:
             for name, path in paths:

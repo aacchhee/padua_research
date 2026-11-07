@@ -22,15 +22,9 @@ def inspect(workers, m):
     inherited_sigchld = normalize_startup()
     if socket.gethostname().split('.')[0] != 'syvert2':
         raise ValueError('this package targets Syvert2 only')
-    if len(str(HERE)) > 32:
-        raise ValueError('extract a fresh package to a resolved path at most32 characters before execution')
     cgroup = snapshot(); memory = cgroup['effective_memory_max']
-    if memory is None or not PROFILE['planning_memory_floor_bytes'] <= memory <= PROFILE['aggregate_memory_budget_bytes']:
-        raise ValueError('aggregate cgroup memory cap must be80GiB..128000000000B; launch through memory_guard after beregning')
-    if cgroup['host_MemTotal_bytes'] < PROFILE['planning_memory_floor_bytes']:
-        raise ValueError('host physical RAM below80GiB planning floor')
-    if cgroup['swap_controller_visible'] and cgroup['effective_swap_max'] != 0:
-        raise ValueError('visible swap controller must enforce MemorySwapMax=0')
+    if memory is None or memory > PROFILE['aggregate_memory_budget_bytes']:
+        raise ValueError('aggregate cgroup memory cap must be<=128000000000B; launch through memory_guard after beregning')
     if any(quota < workers * period for quota, period in cgroup['finite_cpu_quotas']):
         raise ValueError('visible CPU quota below requested30 workers')
     cores = sorted(os.sched_getaffinity(0))
@@ -41,8 +35,6 @@ def inspect(workers, m):
         found = shutil.which(name)
         if found is None: raise ValueError('required tool missing: ' + name)
         p = Path(found).resolve(); tools[name] = {'path': str(p), 'sha256': digest(p.read_bytes()), 'bytes': p.stat().st_size}
-    if shutil.disk_usage(HERE).free < PROFILE['scratch_free_floor_bytes']:
-        raise ValueError('prospective scratch+collection free-space floor not met')
     asset = HERE / ASSET
     for name in ('include/gmp.h', 'include/mpfr.h', 'include/flint/flint.h', 'lib/x86_64-linux-gnu/libflint.so.19'):
         rel = ASSET + '/' + name
@@ -74,7 +66,7 @@ def inspect(workers, m):
     if hard != resource.RLIM_INFINITY and hard < cap:
         raise ValueError('supervisor hard address-space limit below reference soft cap')
     resource.setrlimit(resource.RLIMIT_AS, (cap, hard))
-    return {'inherited_SIGCHLD': inherited_sigchld, 'cgroup': cgroup, 'aggregate_memory_cap_enforced_by': 'kernel cgroup-v2 memory.max', 'MemorySwapMax_policy': 'zero' if cgroup['swap_controller_visible'] else 'controller unavailable; recorded', 'hostname': socket.gethostname(), 'python': sys.version, 'platform': platform.platform(),
+    return {'inherited_SIGCHLD': inherited_sigchld, 'cgroup': cgroup, 'aggregate_memory_cap_enforced_by': 'kernel cgroup-v2 memory.max', 'MemorySwapMax_policy': 'recorded only; no swap restriction', 'hostname': socket.gethostname(), 'python': sys.version, 'platform': platform.platform(),
             'inherited_affinity': cores, 'selected_cores': cores[:workers], 'tools': tools,
             'loader_stdout': result.stdout, 'loader_stderr': result.stderr,
             'resolved': resolved, 'LD_LIBRARY_PATH': env['LD_LIBRARY_PATH'],

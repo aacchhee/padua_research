@@ -10,11 +10,12 @@ Starting accepted theorem: exact parity-correct two-corner argmax for every inte
 | F02 | COMPLETE | Accepted scoped obstruction to unmodified full-band reference uniform loss; requested floor OPEN. |
 | F03 | COMPLETE | Endpoint-complete origin reduction deferred; targets OPEN, no improved lower bound. |
 | F04 | COMPLETE | Accepted uniform entropy-cell remainder with conservative K120000; feasibility only. |
-| F05 | RELEASED PAPER | Complete beta-axis first inner transported-row crossover, c in[1/2,3/2], n>=32. |
+| F05 | RELEASED PAPER | Complete alpha-axis (beta=0) first inner transported-row crossover, c in[1/2,3/2], n>=32. |
 | F06 | COMPLETE, review pending | Stronger distance-two projected floor proved by developer, all signed phases and orientations. |
 | F07 | RELEASED PAPER | ONE fixed256 five-fourths outer pruning gate, full e0, no scan. |
 | F08 | RELEASED PAPER | Sharper exact entropy-kernel remainder K<=100 on balanced box; exact scope below. |
-| F09–F10 | UNALLOCATED | Two later coordinated rounds; no mathematical release. |
+| F09 | RELEASED PAPER | Literal full signed outer first-order coefficient and uniform EM2 remainder. |
+| F10 | GATE COMPLETE, release pending | Conditional query domination for a five-fourths pre-query prune. |
 
 F01 principal Sol xhigh has completed a full fresh gate for I07. The disjoint I06 helper remains GATE ONLY and may not consume unfrozen I07 work. F01's prospective target is a standalone COMPLETE finite relative allowance on the CLOSED signed rho<=5/4 domain, all integer n>=32 or an explicitly justified stricter floor, with named exact masks, continuous collision values, actual origin normalization and every ordinary/retained/mesh/outer-log charge. Re-prove all domain-dependent guards; the existing E11 model extension alone supplies no finite-error guard. Derive explicit rational coefficient functions rather than assuming the old47/50 constants extend. A separately stated generic E13 outer implication may be reanchored at the same radius; no base degree is selected or evaluated.
 
@@ -75,3 +76,11 @@ Future checker integration is outside this PAPER release: preserve mandatory13-g
 Adaptive full gate COMPLETE. PAPER target EVERYn>=32, m=n+1, (|alpha|,|beta|)in CLOSED[1/10,1/4]^2: same F04 boundary-corrected exactsumQBs remainder <=100(1+logm)/m² inabsolutevalue; preferK<=50ifproved. BOTH parities, original unequaloffsets/fourholes; p=qcoalescence remainsincluded, axesexcluded. This is a usefulconstanttest, notnewglobalonset.
 
 FIRST derive actualTWO-SIDEDentropy-singular coefficient fromtheliteralN1branches beforeassuming a smooth xlogx prototype. Then sharplyboundcentered-cell/actualhole moments uniformlyinfeatureposition/exactsample/approachtocentralendpoint asp-q->0. Complete explicitresidualbudgetmustfollow; anypairingrequiresprovenreindexing+boundaryterms. ReplacingF04rootcounts alonecannotsharpen its6000bad-cell/1125hole costs, and isnottheseparation. Alternativesregistered: exactentropy subtractionwithresidualkernel, oractualmixed-phasecurvature/monotonicity (E06axisdoesnotproveit). Stop selectedallocationifitneedsexcludedfeatureseparation, alteredoperator/holes, globallyfiniteVar(B'), oronlygenericcountretuning. A boundabove100 leavesgoalOPEN, notrefuted. Localidea+attempt MUSTBEWRITTEN beforeANYalgebra. Separate rootrelease permitsPAPERonly, no scripts/imports/numerics/scalar/degreeendpoint/native/quadrature.
+
+## F09 prospective release — uniform signed outer first-order expansion
+
+Adaptive full gate COMPLETE. PAPER target EVERYn>=32,CLOSEDsignedrho<=1, m=n+1,p=sin|alpha|:
+
+    |T_n−[−(2p/pi)logn+Gamma_T(phi)]/m|<=K(1+logm)/m².
+
+Require explicit finite phase-only Gamma_T from endpoint/Gamma values and explicit degree-independent K. FIRST complete literalTfirst-orderledger: actualtwooffsets/fourholes/six-rowmask; endpoints ofg_s,P_s,B_s includingperiodicpolederivativeatom; finitepositiveGamma-productuniformremainders; fixed-originShift asE02secondorder. Verifycompleteleadinglogcoefficientseparatelyp>=q,p<q,axes,p=q,zero, notfixed-phaseE12inference. ExplicitlyrecheckandproveF04entropyestimateextension0<=rho<1/32,p0/coalescence/exactsample; noassumedquantifiertransfer. Rmesh,retained/ordinaryandactualoriginremainseparate. Stopselectedcertificateifcoefficientdiffers/missingendpoint/excludedpositivefeatureseparation; oversizedboundleavesusefulgoalOPENnotrefuted. WriteLOCALidea+attemptBEFOREalgebra. Paperonly; no scripts/imports/numerics/degreeendpoint/scalar/native/quadrature.

@@ -137,3 +137,40 @@ remain README requirements; systemd delegation, beregning behavior and actual
 host execution are untested. Nothing here certifies a residual degree, predicts
 campaign success/duration, waives retained audit findings, or substitutes this
 artifact for the immutable original ZIP.
+
+## User-directed lean revision — focused source ACCEPT
+
+2026-11-07. AC explicitly rejected conservative gates after the actual target
+path-length refusal, requested their removal, and authorized inexpensive
+fresh-cohort reruns. This instruction supersedes the prior operational
+floor/reserve/no-rerun policies; it changes no mathematical condition.
+
+Reviewed the complete diff against7cf34bcee4be9bdd5b4a871426083333a89b7c15.
+New candidate manifest SHA256:
+`529ee8be60750352d0e317e905ef43775a3ceae62f6a052b5ba2f56508de9558`.
+All21 pinned source/launcher rows independently rehash. Exactly four execution
+files change: preflight.py, memory_guard.py, plans.py and server.py.
+
+Removed: artificial32-character root gate,80GiB minimum/host-memory gate,
+zero-swap requirement, fixed scratch floor and extra archive reserve. Kept:
+the requested128000000000B actual cgroup RAM ceiling,30-worker/affinity/quota
+requirements, pinned arithmetic identity, strict wait statuses, locks and
+quiescence, full raw validation, engine's actual <16384-byte receipt cap,
+and measured compressed archive-peak check. No removed PROFILE key has a
+remaining executable reference. Unchanged builder regenerates plan and
+manifest identities from the new profile. Scientific/native source and all
+per-engine/per-worker limits remain unchanged.
+
+README/SPEC correctly authorize manual fresh-cohort reruns after every prior
+writer stops and outputs are preserved outside the package. Existing
+within-cohort ledger/resume rules still apply; no new retry framework is
+introduced. For the reported preflight-only failure, no scientific attempt
+had started. Source/manifest changes require a new artifact or coherent
+changed-file patch; old outputs must be moved before installing that patch.
+The original ZIP remains historical and is not relabeled.
+
+**Focused source ACCEPT.** No new fixture, candidate import, systemd action,
+compiler, native or scientific run was performed or requested. Earlier
+controls whose purpose was enforcing the now-removed policies are historical;
+they are not claimed to test the new policy. Actual lean ZIP/patch byte
+inspection follows root's published build in one batch.

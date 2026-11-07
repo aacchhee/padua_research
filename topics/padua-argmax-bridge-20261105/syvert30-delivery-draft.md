@@ -25,26 +25,29 @@ stops admissions on failure.
 
 Thirty times the observed individual maximum is4912128000B (~4.91GB), but
 this omits concurrent parent/engine/compiler contributions and unrun-degree
-variation; it is NOT an aggregate memory forecast.80GiB planning floor gives
-substantial allowance; kernel memory.max, not extrapolation, enforces the
-strict decimal128000000000B cap for the full workload tree. Swap is zero
-when the visible controller supports it. Host physical RAM and actual
+variation; it is NOT an aggregate memory forecast. Kernel memory.max, not
+extrapolation, enforces the
+strict decimal128000000000B cap for the full workload tree. No minimum-RAM or zero-swap gate is imposed. Host physical RAM and actual
 cgroup/affinity are verified on Syvert2 rather than inherited from an old
 hardware description.
 
 Raw storage interpolation spans roughly8–16.1GB if every pair resembled511
 or41, plus the fixed source/shared store. The two-anchor average is about12GB.
-These are estimates, not uniform raw bounds or compression ratios. Require
-32GiB scratch initially; collector measures actual compressed archive peak
-and reserves1GiB before writing. Preserve all raw data and failures if space
+These are estimates, not uniform raw bounds or compression ratios. The collector measures actual compressed archive peak
+against available space without a fixed scratch floor or extra reserve. Preserve all raw data and failures if space
 is insufficient; use an adequate approved archive volume. No deletion or
 cold-storage transfer is claimed.
 
 Launch needs beregning allocating>=30cores and an aggregate cgroup cap:
 use an existing bounded scheduler cgroup or working systemd user memory
 scope. There is no sudo or silent uncapped fallback. Extract the new ZIP
-fresh at a resolved short path such as `/scratch/padua30`, then `./run`.
+fresh at your chosen path, then `./run`; no path-length gate applies.
+The unchanged engine enforces the actual essential-receipt size limit.
 The returned archive is data-validated with this separately trusted new
 package; a partial result reports its exact subset without claiming closure
 of all273 residual degrees. Root fills source SHA, review disposition, ZIP
 hash/bytes, manifest hash and concrete download location before delivery.
+
+Reruns are authorized: after all writers stop, move old outputs to a
+timestamped sibling directory and rerun the chosen full/small/large cohort
+fresh. Previous results remain retained; no retry framework is added.

@@ -15,12 +15,12 @@ No native, checker, mathematical, engine budget or scientific source changes.
 Original Syvert2 ZIP is not rebuilt, edited or relabeled.
 
 Differences from local v3: target syvert2; exactly30 workers/default30;
-128000000000B aggregate budget and80GiB planning floor; real cgroup-v2
+128000000000B aggregate RAM cap; real cgroup-v2
 ancestry checks; allocator-first A/B/C launchers and optional systemd user
-memory scope;32GiB scratch floor; new runtime manifest schema/target and
+memory scope; measured archive space check; new runtime manifest schema/target and
 Syvert30 return filename; producer again builds only under existing Padua
-local-output with a short delivered top-directory name. Full280 worklist,
-stop-first-failure, no retry, source identity, strict observed wait status,
+local-output with its delivered top-directory name. Full280 worklist,
+stop-first-failure, source identity, strict observed wait status,
 signal cleanup, historical domain recovery, append-only histories and
 partial-return verification remain unchanged.
 
@@ -35,29 +35,29 @@ membership or missing unified memory control refuses launch. Host MemTotal
 and MemAvailable are recorded, along with affinity and selected30 cores.
 
 memory_guard runs after beregning. It execs server directly only if the
-visible effective aggregate RAM cap is <=128000000000B and visible swap
-control is zero. Otherwise it execs systemd-run --user --scope with that
-MemoryMax and MemorySwapMax=0 when a swap controller is visible. User-manager
+visible effective aggregate RAM cap is <=128000000000B. Otherwise it execs systemd-run --user --scope with that
+MemoryMax. User-manager
 failure is fatal; there is no uncapped fallback. Server independently
-rechecks the actual resulting cgroup and80GiB floor before ldd, compilation
+rechecks the actual resulting cgroup RAM cap before ldd, compilation
 or engine admission. All supported workload descendants inherit this scope.
 Controller/platform launcher overhead outside the scope is not counted as
 scientific workload RAM. Memory limits do not reserve physical RAM or
 guarantee availability under competing host workloads.
 
-128GB means decimal128000000000B.80GiB=85899345920B is an explicit planning
-floor, not a theorem derived from per-process AS caps. Thirty workers each
+128GB means decimal128000000000B. There is no minimum-RAM or zero-swap
+gate. Thirty workers each
 have2GiB virtual-address limits, but child processes also inherit those
 limits individually; summing30*2GiB is NOT an aggregate-RSS proof. Actual
-aggregate enforcement is exclusively the kernel cgroup cap. If visible swap
-control is absent, this is recorded; physical memory.max still bounds RAM.
+aggregate enforcement is exclusively the kernel cgroup RAM cap. Swap
+settings are recorded without imposing a restriction.
 
 ## Target and portability
 
 Exact first hostname label syvert2; at least30 inherited cores and every
 finite visible ancestor quota>=30CPU. Unlimited quota is accepted only on
-the target. The delivered resolved root must be<=32characters; receipts
-and raw proofs are never truncated. No package bytes are moved after an
+the target. There is no artificial path-length gate. The engine's actual
+essential-receipt limit remains strictly below16384bytes; receipts and raw
+proofs are never truncated. No package bytes are moved after an
 attempt starts. Six pinned Debian arithmetic packages remain offline and
 gated at preflight and actual mapped-library validation. Public snapshot
 locators are retrieval metadata, not an alternative runtime allowance.
@@ -66,7 +66,11 @@ The A/B/C interface was checked against the pinned repository report
 syvert-reference.md (bttb-research5ed62a8d6be1dd98f462bbd97c8428ea2fcc6f54).
 Only its delivery/allocator convention is reused, not its numerical worker
 algorithms or retry semantics. This candidate has stricter quiescent
-collection, no retries and independent data-only return validation.
+collection and independent data-only return validation. User-authorized
+reruns use a fresh cohort after preserving old outputs outside the package,
+with every previous writer stopped. No retry framework is added. There is
+no fixed scratch-space floor or extra archive reserve; the actual measured
+compressed archive peak is still checked against available space.
 
 ## Review and execution boundary
 
