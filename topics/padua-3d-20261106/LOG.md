@@ -633,3 +633,10 @@ their corresponding runs, with publication and execution timing distinguished.
   exact count/action checks, finite parameter scope, frozen selection and
   validation rules and actual-outcome requirements. Separate U3 check
   protocol is published with it. All stream research counts still start0.
+
+- U3 F exact-completion append is published after the initial modular
+  screen and before exact completion. For coherent half-cosets, equal
+  character classes have phase ratio±1; stripping row phases leaves an
+  integer dictionary of the actual real rank. This closes the previously
+  unresolved modular defects without inferring real deficiency from them.
+  It completes the existing F round, not an artificial extra round.

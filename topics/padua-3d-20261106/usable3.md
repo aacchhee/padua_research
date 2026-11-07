@@ -259,3 +259,37 @@ Raw rows retain all starts and optimizer finals, unique/tmp paths and
 code/data-only hashes; receipts<16KiB. Full finite universes are regenerable
 from committed code. Four anticipated rounds correspond to S,F,M,R actual
 outcomes; proof substeps, meshes and checker reruns are not extra rounds.
+
+## Prospective F exact-completion append
+
+Written after the four initial frozen executions and before this new exact
+completion. The initial source/receipts remain unchanged. F has modular
+deficiencies that its first protocol correctly left unresolved; the following
+new exact reduction decides them rather than treating reductions as upper
+bounds. This completes F's rank question and does not add a fifth round.
+
+For beta=epsilon*alpha write f1=beta_x+r beta_z and
+f2=beta_x+beta_y+s beta_z. A character row is its class(j,k)=(f1 mod a,
+f2 mod b). Choose the first contributing raw pair(f10,f20) as a row reference.
+For phase(e1 h1+e2 h2)/2, e1,e2 in{0,1}, its Fourier coefficient factors as
+exp(pi i(e1 f10/a+e2 f20/b)) times an INTEGER coefficient: each signed
+frequency contributes(-1)^[e1(f1−f10)/a+e2(f2−f20)/b]. Divisibility follows
+from equality of character classes. Removing the nonzero row phases leaves
+an integer matrix with exactly the real evaluation rank, by the already read
+general-H Fourier factorization. This is a new hand reduction, no external
+theorem or numerical premise. Zero-phase is its all-positive special case.
+
+After root publication, enumerate the exact same F finite universe. Count,
+projection and trace kills retain their analytic certificates; every remaining
+count=N case gets exact QQ rank of this integer dictionary, with canonical
+duplicate/proportional rows and cached identical dictionaries to reduce cost.
+Retain every parameter/rank outcome. Compute an exact-positive minimum witness
+determinant/rank where present, compare with the original modular positives,
+and have the separate checker independently reconstruct all exact ranks.
+No quality or selection changes, no extra candidate search, no deficient
+modular rank inference. New code is separate `u3_folded_exact.py`; source
+hash/command/version/raw identities are recorded in `evidence/u3-f-exact.json`.
+Computer-assisted finite PROVED waits for that execution and independent
+rerun. If rational elimination exceeds120seconds per degree, finish every
+remaining case by the same cached exact dictionary algorithm with an actual
+time/cursor record; do not convert a timeout into a universal negative.
