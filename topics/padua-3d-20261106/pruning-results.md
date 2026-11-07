@@ -8,7 +8,7 @@ old U1/U2/U3 counts and all prior results remain separate.
 ## P1 completed: noise/design deletion does not preserve amplification
 
 P1consumes **1research round** (root publishes count boundaries); current
-campaign count after P2below is2/15.
+campaign count after P3below is3/15.
 P1's A and D rules both fail the frozen useful-transfer gate. They preserve
 numerical rank/reproduction through N, and their coefficient-noise scores
 beat poor deletions, but their operational prefixes save at most two/three
@@ -172,9 +172,84 @@ recording and post-trial-cap labeling, plus inherited QR/allocation/gate
 checks. Those preflights consume0research rounds.
 
 The [P2singleton boundary](theory/pruning-p2-singleton-boundary.md) is
-MEASURED. Independent consequential P2replay is pending; formal Claude
-review remains separate. This stops only the exact strict-constraint
+MEASURED. The [independent P2review](pruning-review.md) passes its actual337candidate
+fresh-QR feasibility reconstruction and complete map/target/noise scope;
+formal Claude review remains separate. This stops only the exact strict-constraint
 singleton rule on these two initial supports. A separately registered
 starting-support, matched-count/Pareto, or symmetry-block question may
 escape its hypotheses. No P3science is executed or automatically licensed
 by this result; the remaining thirteen slots are a ceiling, not a quota.
+
+## P3 completed: a near-minimal count/noise/amplification tradeoff transfers
+
+P3passed its **new fixed-count tradeoff gate**, not P1/P2's full-grid
+preservation goal. It consumes one new round, bringing actual completed
+research to **3/15** (root publishes the count boundary). Protocol650b49dc
+preceded execution; final source checkpoint46d1e2b preserved source hashes.
+The A rule is unchanged and was calibrated from known n8data to target
+ceil(1.20N), without a new rule/count choice from unseen n12outcomes.
+All61n8retained-index states reproduce the P1path exactly.
+
+|degree|full sites|primary sites|saving|complete primary construction CPU|A risk / same-count QR risk|A searched norm / same-count QR norm|
+|---:|---:|---:|---:|---:|---:|---:|
+|8|225|198|12.00%|0.068833s|0.878583|0.806103|
+|12|637|546|14.29%|1.195763s|0.801238|0.856607|
+
+Both degrees pass numerical/cost/site-saving gates and improve **both**
+fixed-total-observation-budget risk and sampled/searched amplification by
+at least5%over restrictedQR at the same count. No tested N-site control
+dominates the primary candidate in both noise and amplification. This is
+finite nondominance among declared controls, not global Pareto optimality.
+
+At n12the important modern control is the unchanged stored455-node U2set:
+
+|method|sites|unit-noise trace|integer-budget B637risk|sampled/searched norm|
+|---|---:|---:|---:|---:|
+|full OLS|637|0.696104|0.696104|10.59258|
+|A prefix|546|1.059507|0.931100|35.46077|
+|same-count restrictedQR|546|1.330361|1.162076|41.39678|
+|one-sweep localdet|455|2.097675|1.503942|55.67788|
+|stored U2|455|1.617087|1.172706|26.00732|
+
+The primary uses91more sites than storedU2and has36.35%worse searched
+amplification, while its B637integer-repeat noise risk is20.60%lower.
+StoredU2also loads quickly (0.001251CPU here) and needs no new optimizer
+run; its historical offline construction cost remains in usable2.md.
+Primary construction is1.195763CPU including setup, every prior operation,
+fresh numerical validation and a flushed/fsynced map checkpoint. Actual
+full-to-Ndiagnostic Aconstruction is2.212316CPU, reported separately.
+Contemporaneous globalQR/one-sweep localdet construction costs are
+1.189616/13.807300CPU. Neither point count, solver cost, noise nor norm
+alone is silently substituted for the other objectives.
+
+Against full637-node OLS, primary noise risk rises33.76%and searched norm
+rises234.77%. Both old strict full-grid-preservation objectives remain
+failed. Six of12targets have >1%Chebyshev-RMS regressions versus fullOLS;
+worst material RMS ratio is1.75042. Compared with storedU2, all12sampled
+Chebyshev-RMS values improve, but uniform-query Gaussian RMS worsens10.54%.
+All target/measure/max/RMS/sigma tables and floor effects remain retained;
+this is not a generic deterministic-error/noise winner.
+
+The denser endpoints remain diagnostics: n12at501sites has searched norm
+56.82292/risk1.234293; at N455it has128.02964/3.275852 and loses the stored
+455-node set decisively. A near-minimal useful point does not turn the
+minimum-count deletion endpoint into a success.
+
+Actual command/source/input hashes, UTC, versions/threads/seeds and full
+logical results are in [P3receipt](evidence/pdpr-frontier12.json),9223bytes.
+Raw `/tmp/pdpr-frontier12-20261107a` is regeneration-only. All23distinct
+map assessments,28angular searches per map, all controls/functions and
+per-deletion curves completed in38.445654CPU/38.455939wall seconds of900,
+with no missing/capped work and unchanged source during execution.
+New queries used1920+n/1930+n and1940+n for angular search starts; neither
+known P1data nor the old strict-prefix count selected n12's primary.
+[Engineering](evidence/pdpr-p3-engineering.json)6556bytes adds synthetic
+checkpoint-on/off bitwise-path/map/prefix-cost checks and nine finite-
+difference checks of the scaled rectangular angular norm gradient to the
+previous preflights (all0research rounds).
+
+The [durable P3claim](theory/pruning-p3-frontier.md) is MEASURED; independent
+consequential P3review is in progress. Next is a separately published
+same-rule degree16transfer, including the modern969-node direct-optimization
+control, if authorized by root. No P4science is executed at this boundary.
+The original455-node payload remains byte-for-byte unchanged.

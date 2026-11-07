@@ -68,7 +68,9 @@ Developer engineering independently compares26generic-matrix candidate
 maps/norm/noise/feasibility values against fresh QR, checks the case where
 the best raw objective is noise-infeasible but another row is feasible,
 and exercises36mocked caps. These are technical checks,0research rounds,
-not a separate consequential P2rerun. Such independent review is pending.
+not a separate consequential P2rerun. The [independent P2review](../pruning-review.md) passes its actual337candidate
+fresh-QR feasibility reconstruction and complete declared map/target/noise
+scope; formal Claude remains separate.
 The [results](../pruning-results.md) record the actual complete scope and
 retain the formal Claude review obligation separately.
 

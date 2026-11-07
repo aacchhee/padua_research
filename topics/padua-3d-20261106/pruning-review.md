@@ -7,9 +7,9 @@ provider runtime metadata is unexposed. Root alone controls Git and shared
 records. This review owns only this file and `pruning-review/`.
 
 **Current disposition:** no unresolved material finding within the completed
-manifest, routine algebra and P1/P2 numerical scope below. P1's A/D and P2's
+manifest, routine algebra and P1/P2/P3 numerical scope below. P1's A/D and P2's
 strict useful gates fail; independent execution corroborates those finite
-outcomes.
+outcomes. P3 passes its separately registered fixed-count tradeoff gate.
 This supplement is not the pending formal Claude audit04, readiness or merge
 approval. Future round implementations and results require their own focused
 checks. Reviewer reruns consume zero research rounds.
@@ -219,3 +219,66 @@ goal. This is an exhaustive floating first-step result for the stated
 training sets and thresholds. It says nothing universal about multirow or
 nonnested subsets, different thresholds, continuous norms or all degrees.
 The existence of a useful broader pruning tradeoff remains unresolved.
+
+## P3 focused review and actual transfer checks
+
+P3 prospectively changes the objective to a fixed `ceil(1.20N)` count, retaining
+the old strict failures. Read protocol650b49dc and inspected frozen core
+`6e112ccc...`, driver `a94d55e4...`, collector `31170450...` before execution.
+The complete-prefix timer follows fresh map validation and saved node IDs,
+coordinates and physical map, with flush/fsync. Assessment follows construction.
+The inherited angular basis is correctly scaled for the rectangular physical
+map, and all initial/final refinement values contribute to the reported lower
+maximum. Matched-count two-metric and minimum-count dominance predicates match
+the protocol. The455-node payload's complete bytes match the6d894d5 baseline,
+SHA-256 `ade51c2e459b2d3161eddab564e1ada2233d2f841b5dd64bf808b2e607f7140f`.
+
+[P3 checker](pruning-review/check_frontier.py) and
+[P3 receipt](pruning-review/frontier12.json) record an11.49CPU-second actual
+independent run, with75 raw-file identities, every input/source pin and the
+declared compact object checked. All n8support states match P1 and an actual
+frozen producer rerun with durable checkpoints. Independent recurrence/SVD
+checks cover all61 n8states,16 listed n12score states around refactors and
+primary/diagnostic boundaries, all support transitions, and all12 saved
+checkpoint maps. Prefix clock arithmetic and placement were checked; the
+recorded n12primary1.195763CPU cost was not independently reproduced as a
+hardware timing experiment.
+
+All23 assessed maps, their physical iid and integer-repeat risks, both original
+Sobol-family norm/variance values, all12 target tables and calibrated MSEs were
+independently reconstructed. Original21/41 meshes were additionally repeated
+on the nine primary/restricted/minimum-count maps. Every1288 stored initial
+and final search value was evaluated independently, and the28-start schedule
+per map was checked against its declared top-grid/corner/random construction.
+The unchanged stored455-node coordinates were decoded and compared exactly.
+
+All maps received new2048 angular and2048 uniform queries with seeds
+`2026112120+n` / `2026112130+n`. Nine consequential maps received252 additional
+searches using independently written rectangular angular values/derivatives:
+four largest fresh angular-cloud points, eight corners and16 new starts seeded
+`2026112140+n`. Initial values are retained alongside finals. Gradient finite
+differences agree to2.11e-9 relative; mapped numerical quantities agree within
+1.34e-13 relative, apart from the deliberately separately scaled target check.
+
+The registered gate reconstruction passes at both degrees, and the extra
+searches leave its ratios unchanged:
+
+| Degree / primary sites | Integer risk / same-count QR | Searched norm / same-count QR | Recorded complete prefix CPU |
+| --- | ---: | ---: | ---: |
+| 8 / 198 | 0.878582672 | 0.806102928 | 0.068833 |
+| 12 / 546 | 0.801238030 | 0.856606819 | 1.195763 |
+
+At n12, A546has fixed-budget risk0.931099789 and searched norm35.4607677.
+Stored U2at455sites has risk1.172706357 and searched norm26.0073232. Thus the
+stored minimal set has fewer sites and lower amplification, while A546has
+lower physical noise risk: neither dominates in the registered site/risk/norm
+comparison. The tested globalQR/localdet minimal controls do not dominate
+the primary point either. This establishes only the stated finite tradeoff.
+The full-grid OLS amplification remains much smaller, and diagnostic N/1.10N
+outcomes and all function regressions remain visible.
+
+MINOR prose discrepancy returned to the developer: the P3calibration paragraph
+printed n8A198risk0.905549; both original P1 and P3full-precision records give
+0.9055518679715243. It affects no selected count, threshold or gate decision.
+No producer text was changed by the reviewer. P4and later transfer/artifact
+claims remain outside this completed scope until a focused addendum is made.
