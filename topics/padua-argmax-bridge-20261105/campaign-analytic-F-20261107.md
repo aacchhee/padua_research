@@ -7,11 +7,13 @@ Starting accepted theorem: exact parity-correct two-corner argmax for every inte
 | Round | State | Prospective scope / outcome |
 |---|---|---|
 | F01 | COMPLETE | Independently accepted wider finite/error/reanchor supports, exact mesh first-order theorem and scoped entropy-BV obstruction; exact implementation OPEN. No smaller onset. |
-| F02 | RELEASED PAPER | Phase-aware full-band floor; first test uniform finite mesh loss and endpoint-distance classes. |
-| F03 | RELEASED PAPER | Endpoint-complete actual-origin signed compensation, exact scope below. |
+| F02 | COMPLETE | Accepted scoped obstruction to unmodified full-band reference uniform loss; requested floor OPEN. |
+| F03 | COMPLETE | Endpoint-complete origin reduction deferred; targets OPEN, no improved lower bound. |
 | F04 | RELEASED PAPER | Literal cancellation-block boundary-corrected entropy-cell remainder, exact target below. |
 | F05 | RELEASED PAPER | Complete beta-axis first inner transported-row crossover, c in[1/2,3/2], n>=32. |
-| F06–F10 | UNALLOCATED | Five later coordinated rounds; no mathematical release. |
+| F06 | RELEASED PAPER | Joint signed distance-two discrete endpoint floor; exact scope below. |
+| F07 | GATE ONLY | Fixed256 five-fourths outer pruning for cheap certifier; no endpoint evaluation. |
+| F08–F10 | UNALLOCATED | Three later coordinated rounds; no mathematical release. |
 
 F01 principal Sol xhigh has completed a full fresh gate for I07. The disjoint I06 helper remains GATE ONLY and may not consume unfrozen I07 work. F01's prospective target is a standalone COMPLETE finite relative allowance on the CLOSED signed rho<=5/4 domain, all integer n>=32 or an explicitly justified stricter floor, with named exact masks, continuous collision values, actual origin normalization and every ordinary/retained/mesh/outer-log charge. Re-prove all domain-dependent guards; the existing E11 model extension alone supplies no finite-error guard. Derive explicit rational coefficient functions rather than assuming the old47/50 constants extend. A separately stated generic E13 outer implication may be reanchored at the same radius; no base degree is selected or evaluated.
 
@@ -49,3 +51,9 @@ Adaptive full gate complete; E03 exactjoint identity and E05 transported-axis id
 with explicit finite universal C if possible. The genuine finite cusp ell_n remains. Wider two-dimensional mixed target remains OPEN. FIRST cheapest decisive PAPER test: combine complete same-origin background/model subtraction, all inner transported rows, signed E_c integral, outer centered-cell boundary and central remainder BEFORE absolute values. Start at c=1 linked collision, then require uniform full-interval control; determine signed coefficient of(logn)/m² with uniform remainder, no fitted/candidate sign presumed. A strictly positive coefficient at any fixed admissible c kills this C*alpha/n family (also its +K*H*alpha²/n refinement), not actual argmax. A nonpositive coefficient alone proves nothing finite. Missing background/model/collision term or unbounded positive uniform remainder stops/defer this allocation. No c/radius/n scan or rescue endpoint.
 
 E06's alpha<=h/2 scope is not transferred; N2 mixed collisions need not be positive and are outside beta0; old Mfar compensation is irrelevant. All exactweights/n,m/source/PD271 roles persist. Author registers idea+attempt BEFORE derivation; PAPER ONLY, no imports/scripts/scalar/degree/endpoint/native/quadrature/build/pack. No new onset/finite degree.
+
+## F06 prospective release — distance-two discrete floor
+
+Adaptive full gate COMPLETE, F02 exact-reference obstruction is retained. PAPER subtarget: EACH applicable one-direction projection at endpoint distance s=2 in either orientation, EVERY integer n>=128 and actual signed |alpha|+|beta|<=r<=pi/4, prove Q>=1/5-3r/20-3/n. This is a discrete endpoint support only; no complete fifth-floor/global/onset claim. Preserve each branch's ACTUAL signed numerator, both physical orientations/projections, original normalizations, n,m, weights and linked collisions; never double unlike branches or add projections. FIRST derive complete exact straddling-index ranges through moving branch crossings, including sample equality/collision, before estimating the floor. If no uniform usable finite bound follows, retain OPEN at that exact test rather than weaken by fitting/scan.
+
+The larger three-region hybrid remains OPEN: distances1..4 discrete, shrinking-angle s>=5 separate, compactgamma>=pi/6 with genuinely fixed-height capped reference. This round does not assume a cap height, integrate a new limit, or silently bridge those regions. The existing C02 cA/D cap is not fixed height and does not escape F02. Localidea+attempt must be written BEFORE derivation; separate root release permits PAPER ONLY, no scripts/imports/numericalquadrature/scalar/phase/degree/endpoint/nativejobs.
