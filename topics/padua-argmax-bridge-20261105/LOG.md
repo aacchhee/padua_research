@@ -1390,3 +1390,11 @@ D37relativewideALREADYprovesseparate|delta_aRmesh|<rho/(2n) throughrho1; TINCLUD
 
 
 E14firstpublishedsnapshotbeforechangedannularinput: halfnear8865Bb77c5f66... andouter5565B17baa09b... frozenPROVEDdeveloper supports (D29focusedreviewactive); main2439Bd9be2ce4... isOPEN, idea6730B2c7cc448.../attempt2978Bbbafcd3c... . No exactoldannularallocationfailurehasbeenproved/claimed; onlyunclosedbudgetrecorded. Wideninghelperhascleanfullgate→parentregisteredroute→postreleasechecks; thelaterlocalinventorychronologyisdisclosedexactlywithoutclaimingearliertimeorautomaticwaiver/violation. Main384/residual337stillcurrent; no pack/sourcejob.
+
+
+### E14 wide signed-outer support independently accepted and adopted
+
+Distinct Astra xhigh report d0c3699f97e34c43725b3276bb5585d4a9ccf477cb56413058bb8fd2ff55a266 (19156 bytes) ACCEPTS frozen c7aeba3d... (14318 bytes), idea9fbd51e8/attemptd0afce3a unchanged; first4895-byte prefix verified. Root adopts literal T<=rho[(23/3)L+50]/n+beta(17L+27)/n² for EVERY integer n>=32 on CLOSED signed rho<=1. All wider principal/atom/mask/hole/cancellation/Shift/log guards were rebuilt; pole39073/1200<33. Separate Rmesh remains outside T. No new mathematical/protocol finding or scientific/source job. Main global320 remains OPEN until the annular proof and final assembly receive their own review. This is a support inside the SAME final E14 research round, not a sixteenth round.
+
+
+E14 half-near and full outer supports are now separately adopted after the scoped D29 report prefix 19661B2f390ef7...; their original b77c5f66/17baa09b proof prefixes remain unchanged. Main320 is still OPEN pending the annular and full-assembly continuation. The new wide T50 is accepted by d0c3699f... and root-adopted. D14 read all final new records/report before resuming; its narrower local appended-inventory timing is preserved exactly for independent judgment, not claimed prospectively compliant or waived. No source/pack/scientific job has begun.

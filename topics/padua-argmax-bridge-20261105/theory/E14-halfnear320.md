@@ -218,3 +218,8 @@ No beta-axis interpolation, actual smoothness of S, unknown maximizer,
 asymptotic finite lower or E(0)>=0 premise was used. The old E12
 fixed256 failure remains valid with its exact old recipe. Global320
 and all other regions remain separate obligations. No scientific job.
+
+
+## Root scoped adoption —2026-11-07
+
+Root adopts the full physical noncorner CLOSED half-near comparison for every integer n>=320, gap>1/20000, after distinct [E14 scoped ACCEPT](../independent-checks-E14-global320.md), original report prefix 19661 bytes, SHA256 2f390ef7c5f75f16c60bf72444d5b06a22af9b367b8cde7cb5a30d085a46b918. The original 8865-byte proof prefix b77c5f661f51a94c8d809dd853e4fb64304178ccd8c90d3fca3e6e1bed119364 remains unchanged. This support does not by itself prove global320; the annular/complete assembly still needs its named final review. No new finding, scientific/source job or runtime claim. Prior findings and the final Claude audit remain separate.

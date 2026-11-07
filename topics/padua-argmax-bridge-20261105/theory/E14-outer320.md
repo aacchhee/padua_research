@@ -138,3 +138,8 @@ relative domain is extended, and one-sided origin never enters a
 global norm. Near/annulus/corners/full physical classification remain
 separate. Earlier scoped failures and unwaived chronology findings
 remain unchanged. This independently written application needs review.
+
+
+## Root scoped adoption —2026-11-07
+
+Root adopts the full signed primitive CLOSED outer comparison for every integer n>=320, gap>13/500, after distinct [E14 scoped ACCEPT](../independent-checks-E14-global320.md), original report prefix 19661 bytes, SHA256 2f390ef7c5f75f16c60bf72444d5b06a22af9b367b8cde7cb5a30d085a46b918. The original 5565-byte proof prefix 17baa09b52687f0fe2ac5b1ecdf2a42094b445a2013d32278c268da490b809fc remains unchanged. This support does not by itself prove global320; the annular/complete assembly still needs its named final review. No new finding, scientific/source job or runtime claim. Prior findings and the final Claude audit remain separate.

@@ -10,6 +10,8 @@ A new analytic scalar theorem proves H(x)−H(0)<=−(pi−3)x²/(4pi³) on the 
 
 An independently accepted paired-root theorem now gives Ec<=kappa*p^(3/2)/sqrt(a)−Bbeta, with Bbeta>=0, on the model's CLOSED rho<=pi/2 domain. It removes both artificial positive entropy charges, retains the exact negative beta baseline and the real fractional alpha cusp. [Pair proof](../topics/padua-argmax-bridge-20261105/theory/E11-central-pair.md), [closed-domain proof](../topics/padua-argmax-bridge-20261105/theory/E11-model-radius-halfpi.md), [independent acceptance](../topics/padua-argmax-bridge-20261105/independent-checks-E11-central-pair.md). Finite-error guards and any lower onset remain separate.
 
+Two accepted analytic components can support a cheaper finite checker: [both corner squares from256](../topics/padua-argmax-bridge-20261105/theory/E12-corner256.md), with loss1/30, and [far phases from192](../topics/padua-argmax-bridge-20261105/theory/E15-analytic-far192.md), with strict primitive gap3/100 beyondrho=pi/2. A focused source update and fresh validation are still required before they change the runtime; the existing engine is unchanged.
+
 [Global384 theorem](../topics/padua-argmax-bridge-20261105/theory/E09-assembly384.md),
 [independent review](../topics/padua-argmax-bridge-20261105/independent-checks-E09-global384.md).
 The entire new proof uses rational PAPER inequalities: no scalar endpoint,
