@@ -343,3 +343,10 @@ The exact gate and dispositions are in the owned idea/attempt. No source,
 script/import, numerical/scalar/endpoint/native/pack job, Git operation,
 shared mutation or extra agent. Only the three E09 prose files were changed.
 Independent review and root adoption are separate; no onset is asserted.
+
+
+## Root mathematical adoption in WORK —2026-11-07
+
+Root adopts the exact14274B frozen mathematical proof above (SHA256850a7d4020a68e9c7d9cc5da3b1a7987bbc36fce7600469b415761109ca28183) after distinct [E09 mathematical ACCEPT](../independent-checks-E09-signed-outer.md), report18402B2c2efa0fb443c632b8f8c892d63c11e82b646d742e6d3f99e67d6c16246c6e41. Full half-diamond47/48 constants, exact nonpositive coefficient/pole bound and restricted-axis32alpha/n are adopted. Original prefix remains unchanged. The exact T operator includes the scalar-log term; it does not bound those components separately or remove any ordinary/retained/origin cost.
+
+The report separately preserves unwaived MAJOR protocolP1, canonically disclosed in the [attempt](../attempts/E09-signed-outer-upper.md). Mathematical adoption in WORK is neither a waiver nor PR readiness. The stronger fixed-near mixed upper and fullD13 remain OPEN. No numerical/source job or onset follows without a complete matched assembly and distinct review.

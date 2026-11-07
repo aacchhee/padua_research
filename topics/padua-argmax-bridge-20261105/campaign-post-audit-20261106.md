@@ -120,8 +120,9 @@ NEW15coordinatedanalyticroundsauthorized2026-11-06 afterD39. E01ACTIVEpaper-only
 | E07 | COMPLETE | Analytic scalar H maximum and full GLOBALargmaxEVERYn>=512 independently accepted; no new scientific jobs. |
 | E08 | COMPLETE | Phase-aware global allowance, actual-corner384 support and one-sided origin error; main384OPEN pending new errors. |
 | E09 | ACTIVE | Bounded20minAstraultra signed outer-plus-log upper, explicit full-error cusp retained outside this block. |
-| E10 | ACTIVE | Whole central root integral, remove artificial alpha²log majorant; no changed model or cusp deletion. |
-| E11–E15 | UNALLOCATED | Remaining5 slots; redirect from proved bottlenecks. |
+| E10 | COMPLETE | Whole central root integral, remove artificial alpha²log majorant; no changed model or cusp deletion. |
+| E11 | GATE | Joint two-channel central improvement; gate-only phase before candidate generation. |
+| E12–E15 | UNALLOCATED | Remaining4 slots; redirect from proved bottlenecks. |
 
 Newallowance1/15complete,14remainingincludingactiveE02. PackPAUSED.
 
@@ -137,3 +138,5 @@ CurrentNEW6/15COMPLETE; E07scalarHmaxaccepted (assemblyreviewseparate), E08phase
 CurrentNEW7/15COMPLETE; E08analytic384corner/phase-global/origin workactive. Eight roundsremainincludingE08. GLOBAL512adopted, residual464:43–62,65–158,161–510. AllnewEworkPAPERONLY; packPAUSED.
 
 CurrentNEW8/15COMPLETE; E09signedouter/matched384 andE10centralmodelactive; sevenroundsremainincludingthose. Global512/residual464; E08allmathcomponentsacceptedatnamedscopes, originprotocolP1unwaivedandbranchWORK. PackPAUSED.
+
+CurrentNEW9/15COMPLETE(E01–E08,E10); E09global384active,E11gatephase; sixroundsremainincludingE09/E11. E10exactfull-rootboundadopted; betaentropyremainsthenexttarget. Global512/residual464untilnewassemblyacceptance.

@@ -322,3 +322,8 @@ mathematical/scalar/script/import/source/native/endpoint/phase/root/
 quadrature/finite-degree/threshold/board/compile/control job occurred.
 No integral or endpoint value was numerically evaluated or previewed.
 Distinct mathematical audit is required before assembly use/adoption.
+
+
+## Root adoption —2026-11-07
+
+Root adopts the exact13972B frozen proof above (SHA25628ff45c1316e36d07125431e5bd64fa308ba71439d3a82e73ca6ad3502d3e38d) after distinct [E10 central ACCEPT](../independent-checks-E10-central.md), report15080B5e18efd10e22d3a700722a47bbe905d61c2f8bb6ccc16a2edde8e7270e25d094. The full closedradius1 bound, half3/8/wide5/12 simplifications and exact axisleading sharpness are adopted. Original proof prefix is preserved. Beta translation remains charged, finite error and any lower onset remain separate. No numerical/source job occurred; final Claude audit remains separate.
