@@ -1,0 +1,44 @@
+{
+  "candidate": "836dcbf098ecb391b740fa884e594e260b74705e88d26339dcc5cba9bbbf673f",
+  "cases": [
+    {
+      "case": "status7",
+      "exit": 0,
+      "wall": 0.12292812000669073,
+      "observer_cleanup": []
+    },
+    {
+      "case": "ignored",
+      "exit": 0,
+      "wall": 0.07032168499426916,
+      "observer_cleanup": []
+    },
+    {
+      "case": "echild",
+      "exit": 0,
+      "wall": 0.06936454199603759,
+      "observer_cleanup": []
+    },
+    {
+      "case": "hup",
+      "exit": 0,
+      "wall": 0.4216500409966102,
+      "observer_cleanup": []
+    },
+    {
+      "case": "quit",
+      "exit": 0,
+      "wall": 0.4222550830018008,
+      "observer_cleanup": []
+    },
+    {
+      "case": "parentdeath",
+      "exit": 1,
+      "wall": 12.177710443007527,
+      "observer_cleanup": [
+        214901
+      ]
+    }
+  ],
+  "scientific_executions": 0
+}
