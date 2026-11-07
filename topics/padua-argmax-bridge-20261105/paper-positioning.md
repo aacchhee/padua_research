@@ -10,7 +10,7 @@ planning, not a novelty/priority verdict or a new research campaign.
 
 1. **Asymptotic structure.** Exact finite corner identities, the explicit
    logarithmic coefficient, the parity-independent constant and proved
-   vanishing remainder provide a substantial standalone result. PD-T271
+   vanishing remainder provided a substantial standalone result. PD-T271
    is the accepted corner expansion; PD-T229's eventual argmax already
    suffices to transfer it asymptotically to the global Lebesgue constant.
    A known numerical onset or certification of every small degree is NOT
@@ -36,8 +36,10 @@ n>=32 by G01. The earlier eventual theorem had already justified the same
 asymptotic expansion for sufficiently large n. The finite bridge therefore
 does not newly create the asymptotic corollary. This direct substitution
 is independently checked in the mathematical review's follow-up message;
-it requires no new computation. The sharper conjectured -1/N and
-O(logN/N^2) refinement of original PD-T098 is NOT proved by these results.
+it requires no new computation. At this pre-H paper-planning checkpoint, the sharper -1/N and
+O(logN/N^2) refinement of original PD-T098 was not proved. It is now
+proved by the separate [six-round Hcampaign](campaign-H-summary.md),
+with its complete [analytic theorem](theory/H-sharp-corner-expansion.md).
 
 ## Recommended combined narrative
 
@@ -45,7 +47,8 @@ O(logN/N^2) refinement of original PD-T098 is NOT proved by these results.
   theorem side by side, explaining which advances were already independent.
 - Definitions and exact representations: fix the Padua convention, corner
   formula, phase function and cancellation identity.
-- Asymptotic analysis: derive coefficients, constant and rigorous remainder,
+- Asymptotic analysis: derive coefficients, constant, the now-proved -1/N
+  correction and O(logN/N²) remainder,
   retaining its named computer-assisted constant dependency.
 - Global localization and effective analytic comparison: eventual mechanism,
   then sufficient n>=320 with complete closed-region/equality proof.

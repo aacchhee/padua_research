@@ -70,12 +70,12 @@ idea/attempt/theory files. No worker silently starts another round.
 
 |Round|Scope|Model/effort|State|
 |---|---|---|---|
-|H01|Exact finite corner/Cauchy resummation|Solxhigh|Released PAPERONLY after full gate|
-|H02|Uniform signed endpoint/odd-offset correction|Solultra|Released PAPERONLY after full gate|
-|H03|Consecutive-mesh cotangent reciprocity|Solxhigh|Released PAPERONLY after full gate|
-|H04|Uniform quadrature for the smooth triangular residual|Solxhigh|Released PAPERONLY; own candidate registered|
-|H05|Uniform integer/half-integer digamma centering|Solxhigh|Released PAPERONLY; own candidate registered|
-|H06|Aggregate singular/harmonic correction and coefficient|Solultra|Released PAPERONLY; registration before proof required|
+|H01|Exact finite corner/Cauchy resummation|Solxhigh|Complete harmonic proof/full assembly; distinct main review ACCEPT|
+|H02|Uniform signed endpoint/odd-offset correction|Solultra|Endpoint lemmas accepted; its all-offset route DEFERRED|
+|H03|Consecutive-mesh cotangent reciprocity|Solxhigh|Exact identities accepted; signed collapse fails known mass test, route DEFERRED|
+|H04|Uniform quadrature for the smooth triangular residual|Solxhigh|Complete; distinct support review ACCEPT|
+|H05|Uniform integer/half-integer digamma centering|Solxhigh|Complete; distinct support review ACCEPT|
+|H06|Aggregate singular/harmonic correction and coefficient|Solultra|Complete independent reconstruction; consolidated into H01|
 
 RoundsH07–H20 are unallocated, not completed or preregistered experiments.
 Choose them adaptively from actual obstructions/proof obligations. Every
@@ -92,3 +92,26 @@ numbered handoff14 records the redirection. At completion, return the whole
 new mathematical batch plus priorF/compact/G01 to substantiveClaudeaudit.
 Supplemental independent checks are not that cross-agent audit. KeepPR27
 draft, no merge/main/force/tags/.github/settings or sharedstatus application.
+
+## Completed mathematical campaign —2026-11-07
+
+All six allocated rounds are complete. H01/H04/H05 supply the full
+original sharp expansion; distinct main and support mathematical reviews
+ACCEPT the exact scope. [Canonical theorem](theory/H-sharp-corner-expansion.md).
+H06 independently reconstructs the aggregate and consolidates, not a new
+result ID; H02/H03 retain their accepted support and precise deferred
+routes. Their frozen development snapshots may still describe the parent
+target as then-OPEN; the present disposition and canonical theorem give
+the current mathematical status without rewriting their audited hashes.
+
+The target is PROVED under its named analytic dependencies, bothparities,
+with the original -1/N and O(logN/N²) error. No scientific computation or
+new arithmetic enclosure is a premise. Exact κ is inherited analytically;
+its optional certified decimal enclosure is separate. No explicit numeric
+constant for the bigO remainder is claimed or required by the target.
+
+Stop early on success: H07–H20 were never allocated or executed. Fourteen
+authorized rounds remain unused; no new objective is inferred from that
+headroom. FinalClaudeaudit of H plus the previously deferred F/compact/G01
+batch remains required before readiness. No chronology waiver or global
+registry/finalID application follows from supplemental mathematical checks.

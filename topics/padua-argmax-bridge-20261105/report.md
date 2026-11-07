@@ -1,5 +1,12 @@
 # Current result — complete finite bridge,2026-11-07
 
+The original sharp corner expansion, including **-1/N** and the full
+**O(logN/N²)** remainder, is now proved analytically for both parities.
+[Theorem](theory/H-sharp-corner-expansion.md), [completed Hcampaign](campaign-H-summary.md).
+Six rounds sufficed; fourteen were never allocated. Distinct mathematical
+main/support/integration checks accept the proof; finalClaudeaudit remains
+separate. No numeric fit, experiment or new arithmetic enclosure is used.
+
 [G01](theory/G01-all-degrees.md) proves the exact parity-correct two-corner
 argmax for every integer n>=2, with explicit computer-assisted dependencies.
 The [actual return](compact-return.md) passed all280pairs and both random
