@@ -1,6 +1,6 @@
 # Handoff12 — Codex adversarial interim audit and direction decisions
 
-- Status: open
+- Status: done in 3fb68c85fa89ce9e1f5207fb20d04aa9f0f47e11
 - Previous handoff: [11-usable-audit.md](11-usable-audit.md), preserved formal audit scope.
 - Next agent/model/effort: Codex, configured gpt-6-astra high coordinator; distinct cold-context gpt-6-astra xhigh adversarial auditors.
 - Role: interim audit orchestrator and strategic decision maker, not formal Claude approver.
