@@ -78,5 +78,3 @@ Access failures (2026-11-07): ScienceDirect article direct open 403; UMJ record 
 “The documented refresh found KL2021's global leading asymptotic and older periodic rhombic pointwise asymptotics, but no matching Padua second logarithmic coefficient or finer expansion in the accessible passages and listed searches. This does not establish exhaustive absence; published-version, citation-index and inaccessible-body gaps remain.”
 
 No source proof was independently audited, and no local theorem status or priority claim is changed by this note.
-
-
