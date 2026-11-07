@@ -119,8 +119,19 @@ Multiplying their one-dimensional sums gives the two products of
 sines in the formula for $D_n$. This derivation also explains why
 the apparent singularities are removable: each sine quotient was
 obtained from a finite sum of exponentials. Quotients at zero denominators have their
-continuous polynomial values. Reflection of node indices about either
-nonnode corner turns the checkerboard odd and leaves its weights unchanged.
+continuous polynomial values. The index reflections are explicit.
+For $(-1,-1)$ replace $(j,k)$ by $(n-j,m-k)$; their sum changes
+parity because $n+m=2n+1$ is odd. If $n$ is even, the other
+nonnode corner is $(1,-1)$; reflecting $k$ to $m-k$ changes
+parity because $m$ is odd. If $n$ is odd, the other nonnode
+corner is $(-1,1)$; reflecting $j$ to $n-j$ changes parity
+because $n$ is odd. Under these maps cosine changes sign in
+exactly the coordinates of the selected corner, and the identity
+$T_p(-x)=(-1)^pT_p(x)$ accounts for its signs in the kernel.
+Each map exchanges endpoints with endpoints and interiors with
+interiors, so it preserves $\varepsilon_j\eta_k$. Reflection
+of node indices about either nonnode corner therefore turns the
+checkerboard odd and leaves its weights unchanged.
 The corresponding Lebesgue sum is therefore
 $\sum_{j+k\text{ odd}}2\varepsilon_j\eta_k
  |D_n(\theta_j,\phi_k)-(-1)^j|/(nm)$.
@@ -203,7 +214,22 @@ interval. The function $w$ has only the left endpoint pole:
  w(1-y)=\frac{\pi y}{2}+O(y^3)\quad(y\downarrow0).
 \]
 Its zero at the right endpoint will compensate for several large
-row terms there. For $1\leq r<m$ put
+row terms there.
+
+We will use two bounds on the entire interval, not just limiting
+expansions. Since $\tan y=\int_0^y\sec^2t\,dt\geq y$ for
+$0\leq y<\pi/2$,
+\[
+ 0<w(x)=\frac1{\tan(\pi x/2)}\leq\frac{a}{x}
+                                      \qquad(0<x<1).
+\]
+If $1/2\leq x\leq1$, put $y=\pi(1-x)/2\leq\pi/4$.
+On this smaller interval $\sec^2t\leq2$, so
+\[
+ w(x)=\tan y=\int_0^y\sec^2t\,dt
+                   \leq2y=\pi(1-x).
+\]
+These fixed constants will control the first and last rows uniformly. For $1\leq r<m$ put
 $x=r/m$, $s=m-r$, $\alpha=(1-x)/2$ and
 \[
  T_{n,r}=\sum_{\ell=0}^{r-1}\cot\frac{\pi(\ell+\alpha)}n,
@@ -228,6 +254,18 @@ We claim the exact identities
  \Lambda_c(n)=1-\frac{2n}{m}+\frac4{nm}\sum_{r=1}^{m-1}w(r/m)T_{n,r}
        =-1+\frac2m+\mathcal H_m+\frac{4V_n}{nm}.
 \end{equation}
+For $1\leq r<m$ let $v=r\pi/m$. The signed row function and
+its complete periodic sum are
+\[
+ F_r(u):=\frac{1+\cos v}{\cos u-\cos v}
+   =\frac{w(r/m)}2\left(\cot\frac{v-u}{2}+\cot\frac{v+u}{2}\right),
+ \qquad \sum_jF_r(j\pi/n)=n.
+\]
+Here the sum is over the $n$ indices $j\equiv1-r\pmod2$
+modulo $2n$. The trigonometric expression follows by putting the
+two cotangents over a common denominator. We prove the asserted
+signed sum next.
+
 The complete cotangent sum used in this bookkeeping has an elementary
 product proof. Up to a nonzero constant independent of $z$,
 \[
@@ -266,14 +304,8 @@ by $w(r/m)/2$ leaves the signed row sum $n$ because
 $w(r/m)\tan(v/2)=1$.
 
 Here is the endpoint bookkeeping behind them. Extend a row periodically
-and sample its $n$ indices $j\equiv1-r\pmod2$ modulo $2n$. For
-$v=r\pi/m$ its signed entries satisfy
-\[
- F_r(u):=\frac{1+\cos v}{\cos u-\cos v}
-   =\frac{w(r/m)}2\left(\cot\frac{v-u}{2}+\cot\frac{v+u}{2}\right),
- \qquad \sum_jF_r(j\pi/n)=n.
-\]
-The last equality follows from
+and sample its $n$ indices $j\equiv1-r\pmod2$ modulo $2n$.
+The signed sum follows from
 $\sum_{\ell=0}^{n-1}\cot(z+\ell\pi/n)=n\cot(nz)$, the logarithmic
 derivative of the finite sine product; its right hand cotangent here is
 $\tan(v/2)$. The positive samples have representatives
@@ -432,6 +464,31 @@ $2$ after the prefactor $4/n^2=1$. Thus the square is $L_2^2=2$.
 The example illustrates the endpoint weights in a setting where
 every term can be inspected directly.
 
+The exact coefficients can also be checked for arbitrary $n$.
+Let $e$ equal one when $n$ is odd and zero when $n$ is even.
+After averaging the reflected numerator, the unnormalized reference
+sum is
+\[
+ \begin{aligned}
+ &\sum_{\substack{0\leq j,k\leq n\\j+k\text{ odd}}}
+       \frac{\varepsilon_j\varepsilon_k}
+            {|\cos\theta_j-\cos\theta_k|}\\
+ &\quad=\sum_{\substack{1\leq s<n\\s\text{ odd}}}
+    c_s\left(c_s+2\sum_{\substack{s<r<n\\r\text{ odd}}}c_r+ec_n\right)
+       +\frac e4c_n^2\\
+ &\quad=\left(\sum_{\substack{1\leq r<n\\r\text{ odd}}}c_r
+                                      +\frac e2c_n\right)^2.
+ \end{aligned}
+\]
+For $s<n$, the boundary values $r=s$ and $r=2n-s$ correspond
+respectively to $k=0$ and $j=n$. Each has weight $1/2$; their
+reflected cosecants are both $c_s$, making the diagonal coefficient
+one. Other reflected pairs give coefficient two. If $r=n$ is
+allowed, it occurs once and gives $ec_sc_n$, the cross term with
+the half-weight final index. The final pair $s=n$, when present,
+has both endpoint weights and gives $ec_n^2/4$. Multiplication
+by $4/n^2$ now gives \eqref{cu:square} exactly.
+
 Pairing the midpoints $y_r=(2r-1)\pi/(4n)$ gives, by
 $\cot y+\tan y=2\csc(2y)$,
 \[
@@ -507,12 +564,60 @@ uniform comparison, with $\ell=|j-k|$ odd, is
 This bound follows from an exact difference. The cases $k=0$ or $j=n$ have zero
 difference. Otherwise put $u=\theta_j$, $v_0=\theta_k$, $v_1=\phi_k$,
 $\delta=v_0-v_1$, $V=(v_0+v_1)/2$, $S_i=(u+v_i)/2$ and
-$Q_i=|u-v_i|/2$. The order of $u,v_i$ is unchanged. Exact subtraction gives
+$Q_i=|u-v_i|/2$. The order of $u,v_i$ is unchanged. For $k<j$ both $v_i<u$.
+For $k>j$ and $j<n$,
+$nk-mj=n(k-j-1)+(n-j)>0$, so both $v_i>u$.
+Thus $\cos u-\cos v_0$ and $\cos u-\cos v_1$ have the
+same sign. Put $c=\cos u$ and $c_i=\cos v_i$.
+Writing the two fractions over a common denominator gives
+\[
+ \frac{1+c_1}{c-c_1}-\frac{1+c_0}{c-c_0}
+ =\frac{(1+c_1)(c-c_0)-(1+c_0)(c-c_1)}
+         {(c-c_1)(c-c_0)}
+ =\frac{(1+c)(c_1-c_0)}{(c-c_1)(c-c_0)}.
+\]
+The common denominator sign means that taking the absolute value
+of this signed difference gives the difference of the two absolute
+fractions in absolute value. Now
+\[
+ 1+c=2\cos^2(u/2),\qquad
+ c_1-c_0=2\sin V\sin(\delta/2),\qquad
+ |c-c_i|=2\sin S_i\sin Q_i.
+\]
+Substituting these factors gives the exact difference below.
 \[
  |f(u,v_1)-f(u,v_0)|=
  \frac{\cos^2(u/2)\sin V\sin(\delta/2)}
       {\sin S_0\sin S_1\sin Q_0\sin Q_1}.
 \]
+We next bound the factors without losing uniformity at the endpoints.
+The angle-addition formula gives
+\[
+ \sin S_i=\sin(u/2)\cos(v_i/2)+\cos(u/2)\sin(v_i/2)
+            \geq\cos(u/2)\sin(v_i/2).
+\]
+Consequently
+\[
+ \frac{\cos^2(u/2)\sin V}{\sin S_0\sin S_1}
+ \leq\frac{\sin((v_0+v_1)/2)}{\sin(v_0/2)\sin(v_1/2)}
+ =\cot(v_0/2)+\cot(v_1/2).
+\]
+The elementary estimates used here can be obtained from the concavity
+of sine and the bound $\sin y\leq y$: the chord of sine on
+$[0,\pi/2]$ gives $\sin z\geq2z/\pi$, and
+$\cos z=\sin(\pi/2-z)\leq\pi/2-z$. Hence, for $k>0$,
+\[
+ \begin{aligned}
+ \cot(v_0/2)&\leq\frac{\pi(n-k)}{2k},&
+ \cot(v_1/2)&\leq\frac{\pi(m-k)}{2k},\\
+ \cot(v_0/2)+\cot(v_1/2)&\leq\frac{\pi(m-k)}k,&
+ \sin(\delta/2)&\leq\frac{\delta}{2}=\frac{\pi k}{2nm}.
+ \end{aligned}
+\]
+Also $\sin Q_i\geq |u-v_i|/\pi$, because
+$0\leq Q_i\leq\pi/2$. These facts explain each factor in the
+following bound.
+
 Since $\sin S_i\geq\cos(u/2)\sin(v_i/2)$, the quotient preceding
 $\sin(\delta/2)$ and the $Q_i$ factors is at most
 $\cot(v_0/2)+\cot(v_1/2)\leq\pi(m-k)/k$.
@@ -608,7 +713,43 @@ orientation contributes
 \]
 The endpoint weights alter only finitely many entries for this fixed
 offset, and their normalized contributions vanish. The two
-orientations are both present for every positive odd offset. Bound
+orientations are both present for every positive odd offset.
+More precisely, define on the valid index set
+$J_{n,\sigma,\ell}=\{j:0\leq j\leq n,\ 0\leq j+\sigma\ell\leq n\}$
+the normalized entry
+\[
+ a_{n,j}^{\sigma,\ell}
+  =\frac{f(\theta_j,\phi_{j+\sigma\ell})
+                    -f(\theta_j,\theta_{j+\sigma\ell})}{n}.
+\]
+The unweighted contribution is exactly
+\[
+ \frac4{nm}\sum_{j\in J_{n,\sigma,\ell}}n a_{n,j}^{\sigma,\ell}
+ =\frac{4n}{m}\frac1n
+                \sum_{j\in J_{n,\sigma,\ell}}a_{n,j}^{\sigma,\ell}.
+\]
+Thus it is a Riemann sum with mesh $1/n$, multiplied by
+$4n/m\to4$. Uniform convergence on an interior interval means
+that replacing $a_{n,j}^{\sigma,\ell}$ by
+$h_{\sigma,\ell}(j/n)$ changes this average by at most a fixed
+multiple of their supremum difference there. The latter tends to
+zero by the Taylor calculation. The limiting $h$ is continuous
+on that interior interval, so its Riemann sums converge to its
+integral.
+
+There are at most $2\delta n+2$ grid points outside
+$[\delta,1-\delta]$. By \eqref{cu:deform}, each
+$|a_{n,j}^{\sigma,\ell}|\leq C/\ell^2$. Their contribution
+is therefore at most $C(\delta+1/n)/\ell^2$.
+At most four entries in a fixed offset have a nontrivial endpoint
+weight; replacing those weights by one changes its normalized
+contribution by at most $C/(n\ell^2)$. Missing valid indices are
+within $\ell/n$ of an endpoint. For fixed $\ell$ they all lie
+outside the chosen interior interval once $n>\ell/\delta$.
+The limiting bound $|h_{\sigma,\ell}(t)|\leq C/\ell^2$
+follows by taking the local limit of the same entry bound.
+Its integrals over the two omitted strips cost at most
+$C\delta/\ell^2$. These bounds account for all endpoint terms. Bound
 \eqref{cu:deform} controls each normalized summand by $C/\ell^2$.
 For fixed $\ell$, the rows with $t$ outside $[\delta,1-\delta]$ therefore
 contribute at most $C(\delta+1/n)/\ell^2$; the same bound controls the
@@ -635,8 +776,30 @@ multiple of $\delta+1/n$ for each such offset. We may therefore
 let $n$ tend to infinity and then let $\delta$ tend to zero.
 Finally the same estimate bounds the offset tail, before and after
 the limit, by $C\sum_{\ell>M}\ell^{-2}$, which tends to zero.
-This three-step procedure proves convergence of the entire sequence;
-it does not rely on separate even and odd subsequences.
+To state an explicit error choice, let
+$K_M=4\sum_{\ell\leq M,\ \ell\text{ odd}}
+\sum_{\sigma=\pm1}\int_0^1h_{\sigma,\ell}(t)\,dt$.
+Summing the previous estimates gives
+\[
+ |\Delta_n-K_M|
+ \leq C\sum_{\ell>M}\ell^{-2}
+       +C\delta+\frac Cn+E_{n,M,\delta},
+ \qquad E_{n,M,\delta}\longrightarrow0\quad(n\to\infty).
+\]
+Here $E_{n,M,\delta}$ is the sum of the finitely many interior
+Riemann-sum errors and local Taylor errors; its convergence is for
+fixed $M,\delta$, with $n>M/\delta$. The bound on $h$ also proves absolute convergence of
+$K=4\sum_{\ell\text{ odd}}\sum_{\sigma=\pm1}\int_0^1h_{\sigma,\ell}$.
+Consequently $|K-K_M|\leq C\sum_{\ell>M}\ell^{-2}$.
+The triangle inequality now bounds $|\Delta_n-K|$ by the two
+tails, the endpoint-strip error, and the interior error above. Given a target
+error $\epsilon>0$, first choose $M$ so that the two tail bounds
+together are less than $\epsilon/3$. Next choose $\delta>0$
+with $C\delta<\epsilon/3$. Finally choose $n$ large enough
+that $n>M/\delta$ and $C/n+E_{n,M,\delta}<\epsilon/3$.
+This proves convergence of the complete sum using constants
+independent of $n$. In particular it proves convergence of the
+entire integer sequence, without a parity restriction.
 
 Pairing orientations is an algebraic cancellation with a useful
 interpretation. Each orientation has a displacement of opposite sign,
@@ -650,8 +813,8 @@ coefficient in $\kappa$. Thus $\kappa$ measures the surviving
 coupled effect of the two meshes. It is not an arbitrary additive
 constant fitted after the leading square is found.
 
-The endpoint cancellation can be checked numerically in scale,
-without evaluating the integral. For $\ell=1$, as $t\uparrow1$,
+The endpoint cancellation can be checked directly, without evaluating
+the integral. For $\ell=1$, as $t\uparrow1$,
 \[
  \frac{t^2w(t)}{1-t^2}
    =\frac{t^2\tan(\pi(1-t)/2)}{(1-t)(1+t)}
@@ -665,6 +828,33 @@ integrand tends to zero. The terms are nonnegative in the open
 interval; in particular the mesh defect is a positive constant.
 These facts establish finiteness and continuity without requiring
 a numerical value of $\kappa$.
+
+We can justify explicitly the series under this integral. All offset
+sums in this paragraph are over positive odd integers.
+The function $t^2w(t)$ has continuous endpoint extensions by the
+expansions above; let $C_w$ bound its absolute value on $[0,1]$.
+For $\ell\geq3$ and $0\leq t\leq1$,
+\[
+ \ell^2-t^2\geq\ell^2-1\geq\frac89\ell^2,\qquad
+ \left|\frac{t^2w(t)}{\ell(\ell^2-t^2)}\right|
+                  \leq\frac{9C_w}{8\ell^3}.
+\]
+The tail is bounded by $C\sum_{\ell>M}\ell^{-3}$ uniformly
+in $t$, and tends to zero. Thus the partial sums converge uniformly:
+for a prescribed error one cutoff makes the tail smaller than that
+error at every point of the interval. In particular
+\[
+ \left|\int_0^1\sum_{\ell>M}
+           \frac{t^2w(t)}{\ell(\ell^2-t^2)}\,dt\right|
+       \leq C\sum_{\ell>M}\ell^{-3}\longrightarrow0.
+\]
+This inequality permits passage from the integrals of finite sums
+to the integral of the infinite sum. Each term with $\ell\geq3$
+is continuous and has value zero at both endpoints, and a uniform
+limit of continuous functions is continuous. The $\ell=1$ term
+has the separately computed continuous extension. Together these
+facts prove the continuity, endpoint values, and finiteness of the
+complete kappa integrand.
 
 \subsection{Uniform summation and the first correction}\label{sec:asym}
 To obtain the first correction, we return to \eqref{cu:exact}, keeping
@@ -719,6 +909,29 @@ and $\int_h^{1-h}|g''|=O(\log m)$. For bounded second derivative,
 the local error is at most $h^3\|g''\|_\infty/12$. Taylor's formula
 at the midpoint gives the corresponding bound $h^3\|g''\|_\infty/24$.
 \end{proof}
+
+Here is the midpoint calculation used in the smooth case.
+Let $c=u+h/2$ be the cell center and suppose $|g''|\leq M_2$
+on the cell. Taylor's formula with its integral remainder gives,
+for $|t|\leq h/2$,
+\[
+ g(c+t)=g(c)+t g'(c)+\rho(t),\qquad
+ |\rho(t)|\leq\frac{M_2t^2}{2}.
+\]
+For negative $t$ the integral remainder is taken with its usual
+oriented integration limits; the same absolute bound holds.
+Integrating from $-h/2$ to $h/2$ cancels the odd function
+$t g'(c)$. Therefore
+\[
+ \left|\int_u^{u+h}g(x)\,dx-hg(c)\right|
+ \leq\frac{M_2}{2}\int_{-h/2}^{h/2}t^2\,dt
+ =\frac{M_2h^3}{24}.
+\]
+There are $m$ cells of width $h=1/m$, so their errors add to at
+most $M_2/(24m^2)$. For an interval of any fixed length the
+same argument gives its length times $M_2h^2/24$.
+This is the midpoint rule used earlier for $\cot y-1/y$
+on $[0,\pi/2]$, as well as later for the smooth function $B$.
 
 The endpoint-cell estimate does not require evaluating $g'$ or
 $g''$ at an endpoint. On the first cell, subtract the constant
@@ -779,37 +992,48 @@ and the trapezoid error is bounded by $\tfrac18\int_0^\infty
 2(z+t)^{-3}dt$. This also proves the harmonic estimate used above.
 The same series gives
 $\psi(1/2)=-\gamma-2\log2$, $\psi'(1/2)=\pi^2/2$.
-For the latter value, the classical paired partial fraction
-$\pi\cot(\pi z)=z^{-1}+\sum_{k\geq1}((z-k)^{-1}+(z+k)^{-1})$
-gives $\sum k^{-2}=\pi^2/6$ by its linear term at zero; removing even
-indices gives $4\sum_{k\text{ odd}}k^{-2}=\pi^2/2$.
-One short derivation of the partial fraction is the cosine series of
-$\cos(zs)$ on $[0,\pi]$: its constant coefficient is
-$2\sin(\pi z)/(\pi z)$ and its $k$th coefficient is
-$2(-1)^kz\sin(\pi z)/(\pi(z^2-k^2))$. The coefficients are absolutely
-summable; evaluating at $s=\pi$ gives the identity. All differentiated
-series used here converge locally uniformly away from their poles.
-
-For completeness, a cosine-series coefficient of a function $h$
-on $[0,\pi]$ means
-$a_k=(2/\pi)\int_0^\pi h(s)\cos(ks)\,ds$, with constant
-term $a_0/2$. For $h(s)=\cos(zs)$, product to sum and integration
-give precisely the coefficients above. For noninteger $z$ their
-absolute values are $O(k^{-2})$. The series therefore converges
-absolutely and uniformly; the Fourier convergence theorem for a
-continuous piecewise smooth even periodic function identifies it
-with $h$, also at the endpoints. Evaluating at $s=\pi$ gives
+The reciprocal-square value needed here follows directly from
+the finite cosecant-square identity already proved. Taking its
+half-step argument and dividing by $M^2$ gives, for every positive
+integer $M$,
 \[
- \pi\cot(\pi z)=\frac1z+
-             2z\sum_{k=1}^{\infty}\frac1{z^2-k^2}.
+ 1=\frac1{M^2}\sum_{j=0}^{M-1}
+          \csc^2\frac{\pi(j+1/2)}M.
 \]
-Near zero the right side is
-$1/z-2z\sum_{k\geq1}k^{-2}+O(z^3)$; the uniform bound for
-$|z|\leq1/2$ justifies taking this coefficient term by term.
-The elementary sine and cosine expansions give
-$\pi\cot(\pi z)=1/z-\pi^2z/3+O(z^3)$ on the left.
-Equating coefficients yields $\sum k^{-2}=\pi^2/6$.
-This supplies the one reciprocal-square value used in the proof.
+The summands for $j$ and $M-1-j$ are equal. For fixed $j$,
+$\sin u/u\to1$ as $u\to0$ gives
+\[
+ \frac1{M^2}\csc^2\frac{\pi(j+1/2)}M
+             \longrightarrow\frac1{\pi^2(j+1/2)^2}.
+\]
+We must control the indices that grow with $M$ before taking the
+limit of the sum. For $0\leq y\leq1$,
+$\sin(\pi y)\geq2\min(y,1-y)$ by the same sine chord bound
+on the two half intervals. Hence
+\[
+ \frac1{M^2}\csc^2\frac{\pi(j+1/2)}M
+ \leq\frac1{4\min(j+1/2,M-j-1/2)^2}.
+\]
+Fix $J\geq1$ and $M>2J$. The indices remaining after removing
+the first $J$ and last $J$ terms have total at most
+\[
+ \frac12\sum_{j=J}^{\infty}\frac1{(j+1/2)^2},
+\]
+which tends to zero as $J\to\infty$, independently of $M$.
+For fixed $J$ the two end blocks have the limit
+$(2/\pi^2)\sum_{j=0}^{J-1}(j+1/2)^{-2}$.
+Taking $M\to\infty$ and then $J\to\infty$ therefore gives
+\[
+ 1=\frac2{\pi^2}\sum_{j=0}^{\infty}(j+1/2)^{-2},\qquad
+ \psi'(1/2)=\sum_{j=0}^{\infty}(j+1/2)^{-2}=\frac{\pi^2}{2}.
+\]
+This argument needs only the finite sine product, an elementary
+sine bound, and a convergent reciprocal-square tail.
+It also gives the customary full reciprocal-square value if desired.
+Let $S=\sum_{k\geq1}k^{-2}$, which converges by integral
+comparison, and let $S_o$ be its odd-index part. The formula just
+proved gives $S_o=\psi'(1/2)/4=\pi^2/8$. The even-index
+part is $S/4$, so $S=S_o+S/4$ and $S=\pi^2/6$.
 
 The large-$z$ expansion can also be viewed directly through
 quadrature. The series defining $\psi$ is equivalent to
@@ -842,9 +1066,9 @@ $\psi(1/2)=-\gamma-2\log2$. Also
  =4\left(1-\frac14\right)\sum_{k=1}^\infty\frac1{k^2}
  =\frac{\pi^2}{2}.
 \]
-The partial-fraction argument above supplies the reciprocal-square
-sum, so both half-integer values follow from the series and elementary
-Fourier coefficients. No table of special-function values is needed.
+The finite cosecant-square argument above supplies the reciprocal-square
+sum. Thus both half-integer values follow from the defining reciprocal
+series and the finite sine product.
 
 Define the finite, endpoint-regular integrals
 \[
@@ -924,6 +1148,19 @@ this sign is necessary for the later constant cancellation.
 Since $w(r/m)\leq am/r$, its weighted normalized error is
 $O(\log m/m^2)$.
 
+For clarity, if the error in row $r$ has magnitude at most
+$C/m^2$, then its normalized weighted sum is bounded by
+\[
+ \frac1m\sum_{r=1}^{m-1}w(r/m)\frac{C}{m^2}
+ \leq\frac{Ca}{m^2}\sum_{r=1}^{m-1}\frac1r
+ \leq\frac{Ca(1+\log m)}{m^2}.
+\]
+The last inequality follows by comparing
+$\sum_{r=2}^{m-1}1/r$ with $\int_1^{m-1}dt/t$.
+Since $m\geq3$, this is $O(\log m/m^2)$ with a constant
+independent of every row index. It proves the asserted aggregate
+bound for the centered Taylor remainders.
+
 Two summable endpoint sequences must still be retained. Put
 $e_r=\psi(r+1/2)-\log r$, $u_r=r\psi'(r+1/2)-1$.
 The midpoint rule for $t^{-2}$ on $[r,\infty)$ gives
@@ -931,6 +1168,26 @@ $\psi'(r+1/2)=1/r+O(r^{-3})$: the local errors sum as
 $O(\sum_{k\geq0}(r+k)^{-4})$. Integration from infinity, using
 \eqref{cu:psi-est}, then gives $e_r=O(r^{-2})$ as well as
 $u_r=O(r^{-2})$. Thus $S_e=\sum e_r/r$ and $S_u=\sum u_r/r$ converge.
+
+To check the infinite-interval midpoint estimate, apply the cell
+bound just proved to $f(t)=t^{-2}$ on
+$[r+k,r+k+1]$. Its second derivative is $6t^{-4}$, so
+\[
+ \left|\frac1{(r+k+1/2)^2}
+           -\int_{r+k}^{r+k+1}\frac{dt}{t^2}\right|
+           \leq\frac1{4(r+k)^4}.
+\]
+For every real $r\geq1$, integral comparison yields
+\[
+ \sum_{k=0}^{\infty}(r+k)^{-4}
+ \leq r^{-4}+\int_0^\infty(r+t)^{-4}\,dt
+ =r^{-4}+\frac1{3r^3}\leq\frac4{3r^3}.
+\]
+Thus the sum of all cell errors is at most $1/(3r^3)$.
+The midpoint sum is $\psi'(r+1/2)$, and the integral over
+$[r,\infty)$ is $1/r$, proving the stated estimate with one
+constant for all $r\geq1$. This also justifies using a real
+variable $r$ in the integration argument below.
 
 Here the improved $O(r^{-2})$ errors are stronger than the generic
 large-argument estimates in \eqref{cu:psi-est}. They come from
@@ -1136,8 +1393,59 @@ $ad_0$, so
  R(1-y)=\pi-ad_0+O(y(1+|\log y|)),\qquad
  |R''(1-y)|\leq C/y.
 \]
-On any closed interior interval the derivatives are bounded.
-Combining the three regions gives precisely the hypotheses of
+The derivative bounds just used follow from factorizations of
+smooth functions, rather than from differentiating the displayed
+$O$ estimates. Near zero write
+\[
+ J(x)=d_0+q_0x+x^2J_2(x),\qquad v(x)=xv_1(x).
+\]
+The functions $J_2$ and $v_1$ and their first two derivatives
+are bounded on a fixed small interval containing zero. For $v$
+this follows from its analytic extension; for $J$ it follows
+from that of $\psi$ at $1/2$. The latter can be checked directly
+by expanding each $1/(k+z_0+h)$ in its convergent geometric
+series for $|h|<z_0/2$ in \eqref{cu:psi}. The reciprocal-series
+bounds justify summing these local power series, at any $z_0>0$.
+The expression for $R$ becomes
+\[
+ R(x)=aq_0+xA_0(x)+xv_1(x)\log x,\qquad
+ A_0(x)=aJ_2(x)+v_1(x)J(x).
+\]
+The function $A_0$ has bounded first two derivatives, and
+\[
+ \frac{d^2}{dx^2}\{xv_1(x)\log x\}
+ =\frac{v_1(x)}x+2v_1'(x)(\log x+1)
+                              +xv_1''(x)\log x.
+\]
+This is bounded by $C/x$ near zero because
+$x|\log x|$ and $x^2|\log x|$ remain bounded there.
+The other term has second derivative $2A_0'(x)+xA_0''(x)$,
+which is bounded. The same factorization directly bounds
+$|R(x)-aq_0|$ by $Cx(1+|\log x|)$.
+
+At the other end, write $w(1-y)=yb(y)$, where $b$ is analytic
+and $b(0)=\pi/2$. Set
+\[
+ L(y)=\log(1-y)-\psi(1+y/2),\qquad
+ P_1(y)=a\frac{\log(1-y)+d_0}{1-y}.
+\]
+Both are analytic at zero. The exact formula for $F$ gives
+\[
+ \begin{aligned}
+ R(1-y)&=A_1(y)+yb(y)\log y,\\
+ A_1(y)&=2b(y)+yb(y)L(y)-P_1(y),\qquad
+ A_1(0)=\pi-ad_0.
+ \end{aligned}
+\]
+All derivatives through order two of $A_1,b$ are bounded on a
+fixed interval. Differentiating $yb(y)\log y$ uses the same
+formula as at zero and gives a bound $C/y$; differentiating
+with respect to $x=1-y$ twice gives the same second derivative.
+Also $A_1(y)-A_1(0)=O(y)$ by its bounded first derivative,
+so the endpoint modulus is $Cy(1+|\log y|)$.
+On a closed interval away from both endpoints the derivatives
+are bounded by continuity. Combining these three regions gives
+precisely the hypotheses of
 Lemma~\ref{cu:quadrature} on all of $(0,1)$. Its correction is
 therefore $-(aq_0+\pi-ad_0)/(2m)$.
 
@@ -1175,8 +1483,38 @@ Finally, unit-cell trapezoids for $\log t/t$ give a real constant $C_K$ with
  \sum_{r<m}\frac{\log r}{r}=\tfrac12\log^2m+C_K
                    -\frac{\log m}{2m}+O(\log m/m^2).
 \]
-For the second formula the local errors have a convergent sum because
-$(\log t/t)''=(2\log t-3)/t^3$; the tail is $O(\log m/m^2)$.
+Here is the cell calculation giving the second formula and its
+constant. Let $f(t)=\log t/t$ on $[1,\infty)$ and define
+\[
+ E_j=\frac{f(j)+f(j+1)}2-\int_j^{j+1}f(t)\,dt
+                                      \qquad(j\geq1).
+\]
+The unit-cell trapezoid bound gives
+\[
+ |E_j|\leq\frac1{12}\sup_{j\leq t\leq j+1}|f''(t)|
+ \leq C\frac{1+\log j}{j^3},\qquad
+ f''(t)=\frac{2\log t-3}{t^3}.
+\]
+The comparison series converges, and its tail is bounded by
+$C(1+\log m)/m^2$, as follows by integrating
+$(1+\log t)/t^3$ and treating its first term separately.
+Thus $C_K=\sum_{j=1}^{\infty}E_j$ is a finite real number,
+and
+$\sum_{j<m}E_j=C_K+O(\log m/m^2)$ for $m\geq3$.
+Summing the defining cell identity on $[1,m]$ counts each
+interior grid value once and the outer values with half weight:
+\[
+ \begin{aligned}
+ \sum_{r=1}^{m-1}f(r)
+ &=\int_1^m f(t)\,dt+\sum_{j=1}^{m-1}E_j
+                                  +\frac{f(1)-f(m)}2\\
+ &=\frac12\log^2m+\sum_{j=1}^{m-1}E_j
+                                  -\frac{\log m}{2m}.
+ \end{aligned}
+\]
+Here $f(1)=0$. This proves the formula, including the sign of
+the outer correction. The first harmonic formula follows directly
+from $\psi(m)=H_{m-1}-\gamma$ and \eqref{cu:psi-est}.
 Express $M_m$ as $\log m$ times \eqref{cu:w-sum}, plus
 $a\sum_{r<m}(\log r)/r+a(d_0-\log m)H_{m-1}$, plus $m^{-1}\sum R$.
 For an explicit check of the reciprocal-term cancellation, abbreviate
@@ -1350,6 +1688,33 @@ Their sum is $a^2-1+a^2\log(\pi/2)$, proving
 \eqref{cu:cancel} while retaining the endpoint boundary value.
 
 Replacing $\beta_B/n$ by $\beta_B/m$ costs $O(m^{-2})$.
+
+This denominator replacement keeps the required precision because
+\[
+ \frac1n-\frac1m=\frac1{nm},\qquad
+ \left|\frac{\beta_B}{n}-\frac{\beta_B}{m}\right|
+ =\frac{|\beta_B|}{nm}\leq\frac{3|\beta_B|}{2m^2}
+                                      \qquad(n\geq2).
+\]
+The number $\beta_B$ is degree independent, and $m/n\leq3/2$.
+For the coefficients themselves, write $d_0=\gamma+2\log2$
+and substitute the formulas proved above:
+\[
+ \begin{aligned}
+ 2+\beta_H+\beta_B
+ &=2+\{-2-a^2d_0-aI_1-aI_2\}
+                   +\{-a^2+2I_B+aI_2\}\\
+ &=-a^2-a^2d_0+2I_B-aI_1\\
+ &=-a^2-a^2d_0+\{a^2-1+a^2\log(\pi/2)\}\\
+ &=-1-a^2\{d_0-\log(\pi/2)\}=-1-a^2d.
+ \end{aligned}
+\]
+The first line cancels the scalar $2$ against $-2$ and the
+two $I_2$ terms against each other. The next step is
+\eqref{cu:cancel}. Finally
+$d_0-\log(\pi/2)=\gamma+\log(8/\pi)=d$.
+The logarithmic correction $-a^2\log m/m$ from the harmonic
+part remains in place throughout this constant-coefficient ledger.
 The scalar $2/m$ in \eqref{cu:exact} now combines with the two
 corrections as
 \[

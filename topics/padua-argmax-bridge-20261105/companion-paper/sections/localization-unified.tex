@@ -230,6 +230,22 @@ $S_n$.  Reducing each phase modulo $2\pi$ and, if necessary, using
 $(x,y)\mapsto(\pi-x,\pi-y)$ reduces its global real-phase norm to
 $x,y\geq0$, $x+y\leq\pi$.  Each mesh retains its coordinate.
 
+These symmetries can be checked directly on the summation indices.
+Because $G_n$ is even in each angular argument, replacing $\alpha$
+by $-\alpha$ uses $r\mapsto-r$ modulo $2n$; replacing $\beta$
+by $-\beta$ uses $s\mapsto-s$ modulo $2m$.  Both preserve odd
+total parity.  Adding $2\pi$ to a phase shifts its index by two,
+again preserving parity.  Thus each phase can first be represented
+in $[-\pi,\pi]$ and then reflected into $[0,\pi]$.  If their
+sum exceeds $\pi$, use the simultaneous transformation
+$(x,y)\mapsto(\pi-x,\pi-y)$.  In the first coordinate its index
+change is $r\mapsto-r-1$, and in the second it is
+$s\mapsto-s-1$, after using evenness.  Each individual parity
+changes, so their sum stays odd.  The transformed sum of phases
+is $2\pi-x-y<\pi$.  Every transformation is a bijective
+relabeling of the finite periodic sum, which proves the norm
+reduction including its boundary cases.
+
 The vanishing loss at a corner follows directly from reflection.
 When a physical evaluation angle is an endpoint, the two angular reflections
 in that coordinate differ by a period or by an even reflection of
@@ -351,6 +367,14 @@ for the vertical direction.  Multiplication of both entries of a
 pair by a common sign leaves its defect unchanged; the factor $1/2$
 in $V_\pm$ is accounted for by the homogeneity of $\mathfrak d$.
 
+Here homogeneity means the identity
+\[
+ \mathfrak d(cz,cw)=|c|\mathfrak d(z,w).
+\]
+It follows by factoring $|c|$ out of each of the three absolute
+values.  In particular a common sign has no effect, while a common
+factor $1/2$ divides the defect by two.
+
 Folding the reflected physical index in \eqref{ul:projections} leaves
 coefficient $1/\mathsf N$ on an interior physical row.  For example
 \[
@@ -364,6 +388,35 @@ At regular denominators each half is $A(u,v)/(\cos u-\cos v)$, where
 \[
  A(u,v)=a(1+\cos v)-(\sin\alpha/2)\sin u+(\sin\beta/2)\sin v.
 \]
+We can obtain this numerator using only angle addition formulas.
+In the vertical formula let $u=(r\pi+\alpha)/n$ and
+$v=((K\pm k)\pi+\beta)/m$.  The parity restriction in that
+formula and $J+K$ odd give
+$(-1)^{K\pm k}=-(-1)^r$.  Consequently
+\[
+ \begin{aligned}
+ (-1)^rP_n(\cos u)
+    &=\cos\alpha(1+\cos u)-\sin\alpha\sin u,\\
+ (-1)^rP_n(\cos v)
+    &=-\cos\beta(1+\cos v)-\sin\beta\sin v.
+ \end{aligned}
+\]
+For the first identity use $(n+1)u=nu+u$; for the second use
+$nv=mv-v$.  Substituting into the divided-difference formula for
+$G_n$, and moving the term $\cos(nu)$ over the same denominator,
+cancels the part $\cos\alpha(\cos u-\cos v)$ of the numerator.
+The remaining numerator, including the factor $1/2$ in $V_\pm$,
+is
+\[
+ \frac{\cos\alpha+\cos\beta}{2}(1+\cos v)
+       -\frac{\sin\alpha}{2}\sin u
+       +\frac{\sin\beta}{2}\sin v=A(u,v).
+\]
+The same substitution with the horizontal parity restriction
+produces the stated common sign and the same actual-coordinate
+numerator.  A regular denominator means simply
+$\cos u\ne\cos v$, so that the quotient can be evaluated directly.
+
 The sign of a regular half-kernel can now be controlled using its
 denominator.  The phase restrictions give a common positive lower
 bound for the numerators on the selected rows.  If a periodic cosine
@@ -449,6 +502,37 @@ $l+q,2L-(l+q)$.  For $n\geq41$, $r\leq1/2$ the effective angle $w$ obeys
        <s\pi-|\text{physical phase}|\leq M\gamma.
 \]
 The strict slack is at least $(17\pi-21)/41>0$.
+Here is the mesh calculation behind the two constants in that
+inequality.  Put $\xi$ for the periodic phase and $\zeta$ for
+the physical phase.  After reflecting the selected branch to the
+angle near $b$, its effective angle has the form
+\[
+ w=\frac{(l+q)\pi\pm\xi}{L},\qquad
+ M(w-b)=q\pi+\frac{M-L}{L}(l+q)\pi
+                      \pm\frac ML\xi.
+\]
+The signs allow for the two reflected periodic indices.  Since
+$M,L$ are adjacent integers and both are at least $41$,
+$M/L\leq42/41$.  Also $|q|\leq s-1\leq3$ and
+$l\leq M/2$, so
+\[
+ \frac{|M-L|}{L}|l+q|
+ \leq\frac{M}{2L}+\frac3L
+ \leq\frac{21}{41}+\frac3{41}=\frac{24}{41}.
+\]
+The angle measured from the nearer physical endpoint has
+$M\gamma\geq s\pi-|\zeta|$.  Subtracting the upper bound for
+$|M(w-b)|$ from this gives a slack of at least
+\[
+ \pi-\frac{24\pi}{41}-\frac{42}{41}|\xi|-|\zeta|
+ \geq\frac{17\pi}{41}
+              -\frac{42}{41}(|\xi|+|\zeta|)
+ \geq\frac{17\pi-21}{41}>0.
+\]
+The last inequality uses the phase guard $r\leq1/2$.  Thus the
+short periodic interval contains each chosen branch with strict
+room remaining at its endpoints.
+
 The displayed inequality says $|w-b|<\gamma$.  Thus the effective
 periodic angle lies inside the interval whose endpoint cosines are
 the targets $\cos(\gamma-b)$ and $\cos(\gamma+b)$, after the
@@ -484,6 +568,55 @@ $Q>225/[1040(\pi+1/2)]>1/20$.  Keeping $r$ and the numerator
 $\eta_r$ instead yields $F_{\rm near}$ through $r=\pi/4$; its
 straddling slack is $57\pi/128-65r/64>0$.
 
+We spell out the numerator bounds used here and in the next two
+classes.  Since $1-\cos t\leq t^2/2$ and
+$\alpha^2+\beta^2\leq(|\alpha|+|\beta|)^2$, the phase condition
+gives
+\[
+ a=\frac{\cos\alpha+\cos\beta}{2}\geq1-r^2/4=a_r.
+\]
+Furthermore $|\sin t|\leq|t|$ gives
+\[
+ \left| -\frac{\sin\alpha}{2}\sin u
+              +\frac{\sin\beta}{2}\sin v\right|\leq r/2.
+\]
+For $r\leq1/2$ we have $a_r\geq15/16$.  In the first class
+$b\leq\pi/2$ and $\gamma<1/3$, so both target cosines exceed
+$-\sin\gamma>-1/3$.  Hence
+\[
+ A(u,v)>\frac{15}{16}\frac23-\frac14=\frac38.
+\]
+At $n\geq64$ the stronger $\gamma<7/30$ gives target cosines
+greater than $-7/30$, and therefore
+\[
+ A(u,v)>\frac{15}{16}\frac{23}{30}-\frac14=\frac{15}{32}.
+\]
+For a varying legal radius the same argument retains $a_r$ and
+$r/2$ in place of their endpoint values.  This is the source of
+the radius-dependent numerator $\eta_r$.
+More explicitly, $\gamma\leq(4\pi+r)/M\leq(4p_\pi+r)/n$
+and each target cosine is at least $-\sin\gamma\geq-\gamma$.
+Substitution into $a_r(1+\cos v)-r/2$ gives exactly $\eta_r$.
+The full target span is at most $2\gamma\leq2(s\pi+r)/M$.
+Thus the same count of $2s$ pairs in $M/4-1$ rows gives
+\[
+ Q\geq\frac{2s\eta_r}{s\pi+r}\frac ML
+                         \left(\frac14-\frac1M\right)
+ \geq\frac{2\eta_r}{p_\pi+r}\frac n{n+1}
+                         \left(\frac14-\frac1n\right).
+\]
+For the second inequality use $s\geq1$, $M/L\geq n/(n+1)$,
+and $M\geq n$.  At $n\geq64$ the mesh discrepancy used above
+improves to $M/(2L)+3/L\leq71/128$, and $M/L\leq65/64$.
+The straddling slack is consequently at least
+\[
+ \pi-71\pi/128-(65/64)r=57\pi/128-65r/64.
+\]
+At the largest stated radius $r=\pi/4$ this equals
+$49\pi/256>0$, and it is larger at smaller radii.  This proves
+that the selected pairs remain regular throughout that larger
+radius guard.
+
 The count and the denominator span pull in opposite directions as
 $s$ grows: there are more selected periodic points, but the targets
 also separate farther.  The quotient displayed above controls these
@@ -509,6 +642,17 @@ endpoint value exceeds its upper endpoint value: their difference is
 at least $[1/8+(6-3\pi)/L]a_r+[1/8-3/L]r>0$.
 Consequently the same count gives $F_{\rm small}$ for $n\geq64$.
 
+In this second class $b\in[\pi/6,\pi/3]$ and
+$\gamma<\pi/6$, so $0<b-\gamma<b+\gamma<\pi/2$.  Both target
+cosines are nonnegative.  The preceding numerator estimate becomes
+$A\geq15/16-1/4=11/16$.  Their full span is
+$2\sin\gamma\sin b\leq\sqrt3\gamma$.  Combining this span
+with the count $3L\gamma/(2\pi)$ and the pair bound
+$2(11/16)/(\sqrt3\gamma)$ gives $33L/(16\pi\sqrt3)$ per row.
+There are at least $M/6-1$ rows, and division by $ML$ gives the
+displayed floor.  This calculation also shows explicitly how the
+factor $\gamma$ cancels.
+
 The second class gains a useful factor from the width of its arcs.
 As $\gamma$ increases, the number of available periodic points is
 proportional to $\gamma$.  The cosine span also has a factor
@@ -529,6 +673,32 @@ endpoint comparison in the proof therefore supplies a lower bound
 throughout the angle interval.  This is the step that produces the
 single expression $F_{\rm small}$ for the entire second class.
 
+The concavity can be verified by two differentiations.  Write
+$d=\pi/L$ and $H(g)=A_g(1-d/g)$.  On
+$[4\pi/L,\pi/6]$, $A_g$ is positive, its first derivative is
+$-a_r\sin(\pi/3+g)\leq0$, and its second derivative is
+$-a_r\cos(\pi/3+g)\leq0$.  Also $1-d/g\geq0$.  Thus
+\[
+ H''(g)=A_g''(1-d/g)+\frac{2d}{g^2}A_g'
+                           -\frac{2d}{g^3}A_g\leq0.
+\]
+Each summand has the required sign on the full interval, which
+justifies applying the endpoint comparison to its interior.
+At the upper endpoint $g=\pi/6$, the correlated expression is
+$(a_r-r/2)(1-6/L)$.  The lower endpoint exceeds it by the
+positive difference stated above, so this is a lower bound for
+the whole class.  Using the unrounded open-arc count and the span
+$\sqrt3g$ gives
+\[
+ Q\geq\frac{2}{3\pi\sqrt3}
+       \left(1-\frac6M\right)
+       A_g\left(1-\frac{\pi}{Lg}\right)
+ \geq\frac{35}{286}\left(1-\frac6n\right)^2(a_r-r/2).
+\]
+Here $\pi<22/7$ and $\sqrt3<26/15$ imply
+$2/(3\pi\sqrt3)>35/286$, and $M,L\geq n$ handle the two
+mesh factors.  This yields precisely $F_{\rm small}$.
+
 It remains to treat $\gamma\geq\pi/6$.  A simple full-arc count using
 $b\in[\pi/12,\pi/6]$ gives numerator at least $7/32$ and span at most
 one.  The two open arcs have lengths $2b\geq\pi/6$ and are disjoint,
@@ -537,6 +707,24 @@ including when an endpoint is zero.  Hence for $n\geq41$
  Q\geq\frac78(1/12-1/M)(1/12-1/L)
  \geq\frac78(29/492)^2>1/512.
 \end{equation}
+For this class the nearer-endpoint convention gives
+$\gamma\leq\pi/2$.  With $b\leq\pi/6$, the smaller target
+cosine is at least $\cos(\pi/2+\pi/6)=-1/2$.  Hence the
+numerator is at least $(15/16)(1/2)-1/4=7/32$, and the span
+$2\sin\gamma\sin b$ is at most one.  Each selected pair then
+contributes at least $7/16$.  The total arc length is $4b$, so
+the two open-arc counts give at least
+$2Lb/\pi-2\geq L/6-2$ periodic points.  Together with
+$M/12-1$ physical rows, division by $ML$ gives
+\[
+ \frac{7}{16}\left(\frac1{12}-\frac1M\right)
+                  \left(\frac16-\frac2L\right)
+ =\frac78\left(\frac1{12}-\frac1M\right)
+                  \left(\frac1{12}-\frac1L\right).
+\]
+This explains both factors and the prefactor in
+\eqref{ul:full-arc-floor}.
+
 This first estimate for the third class already gives a floor at
 the earliest degree $41$.  One count concerns the physical rows
 and the other concerns the periodic angles.  Their two endpoint
@@ -566,6 +754,31 @@ its cosine integral is $\mathcal T_cA(b)$, where
 $\mathcal T_c=4-2c+4\log c$.  Layer cake on the two parity arcs and
 $1/\sqrt{1-z^2}\geq1$ give row sum at least
 $L\mathcal T_cA(b)/\pi-2cA(b)/D_b$.
+To verify the profile bound, write $z=z_0+\delta$ with
+$|\delta|<D_b$.  The two denominator magnitudes are
+$D_b-\delta$ and $D_b+\delta$.  Their numerator lower bounds
+are both $A(b)$, so their pair defect is at least
+\[
+ 2\min\left(\frac{A(b)}{D_b-\delta},
+             \frac{A(b)}{D_b+\delta}\right)
+       =\frac{2A(b)}{D_b+|\delta|}.
+\]
+Truncating this lower bound at height $cA(b)/D_b$ produces exactly
+$f_b$.  Its integral in the cosine variable follows by putting
+$t=|\delta|/D_b$:
+\[
+ \begin{aligned}
+ \int_{z_0-D_b}^{z_0+D_b}f_b(z)\,dz
+ &=2A(b)\int_0^1\min\left(c,\frac2{1+t}\right)\,dt\\
+ &=2A(b)\left\{c(2/c-1)
+                     +2\log\frac{2}{2/c}\right\}\\
+ &=A(b)(4-2c+4\log c).
+ \end{aligned}
+\]
+The splitting point is $2/c-1\in[0,1)$; below it the truncated
+height is $c$, and above it the reciprocal expression is smaller.
+This derives the constant $\mathcal T_c$.
+
 The term ``layer cake'' here is an integration identity for a
 nonnegative function: its value is the integral of the indicator
 functions of its superlevel sets.  In symbols,
@@ -614,12 +827,70 @@ independent of degree; all three remaining terms are finite-mesh
 costs that decay with degree.  The adjacent sizes $M,L$ are bounded
 using $n$, producing one expression valid for both projections.
 
+We can also retain $M,L$ for one more line to see each error term.
+Since $\gamma\geq\pi/6$, $D_b\geq\sin b/2$, and the periodic
+row estimate is at least
+$L\mathcal T_cA(b)/\pi-4cA(b)/\sin b$.  Both physical profiles
+are decreasing on the band: $A(b)=C-a_r\sin b$ decreases, and
+\[
+ \frac{A(b)}{\sin b}=C\csc b-a_r
+\]
+decreases because $C>0$ and $0<a_0\leq b\leq b_0<\pi/2$.
+Thus their physical sums satisfy
+\[
+ \sum_b A(b)\geq\frac M\pi I-A_0,
+ \qquad
+ \sum_b\frac{A(b)}{\sin b}
+                 \leq\frac M\pi R+\frac{A_0}{\sin a_0}.
+\]
+Multiply the first inequality by $L\mathcal T_c/\pi$, the
+second by $-4c$, add, and divide by $ML$.  The result is
+\[
+ Q\geq\frac{\mathcal T_c I}{\pi^2}
+       -\frac{\mathcal T_c A_0}{\pi M}
+       -\frac{4cR}{\pi L}
+       -\frac{4cA_0}{ML\sin a_0}.
+\]
+All three subtracted quantities are nonnegative.  Replacing
+$M,L$ by their common lower bound $n$ enlarges those costs and
+gives \eqref{ul:band-formula}.  Finally, direct integration of
+$C-a_r\sin b$ gives $I$, and integration of
+$C\csc b-a_r$ gives $R$, using
+$(\log\tan(b/2))'=\csc b$.  Thus the integral and mesh
+contributions in that formula are accounted for individually.
+
 Take $c=5/4$, $[a_0,b_0]=[\pi/20,\pi/4]$, $r\leq1/2$.
 The elementary bounds
 $239/100<\mathcal T_c<12/5$, $\sin a_0>3/20$,
 $\cos a_0<247/250$, $\cos b_0>707/1000$ and the logarithmic ratio
 $<5/3$ give $I>U_r$, $A_0<V_r$, $R<W_r$.  With
 $157/50<\pi<22/7$, \eqref{ul:band-formula} is precisely $Q\geq B_n(r)$.
+For clarity, the coefficient substitutions can be written out.
+The favorable leading coefficient uses lower bounds for both
+$\mathcal T_c$ and $1/\pi^2$:
+\[
+ \frac{239/100}{(22/7)^2}=\frac{11711}{48400}.
+\]
+The negative terms use upper bounds for their numerators and
+reciprocals.  Since $4c=5$, these coefficients are
+\[
+ \frac{12/5}{157/50}=\frac{120}{157},\qquad
+ \frac5{157/50}=\frac{250}{157},\qquad
+ \frac5{3/20}=\frac{100}{3}.
+\]
+Inserting $I>U_r$, $A_0<V_r$, and $R<W_r$ therefore gives the
+four terms of $B_n(r)$ with their stated directions.  The same
+rule explains the later tail coefficients: for $c=2$,
+$\mathcal T_c=4\log2$, and
+\[
+ \frac{11/4}{(22/7)^2}=\frac{539}{1936},\quad
+ \frac{14/5}{157/50}=\frac{140}{157},\quad
+ \frac8{157/50}=\frac{400}{157},\quad
+ \frac8{3/100}=\frac{800}{3}.
+\]
+These are exactly the coefficients multiplying $I_h$ or $I_w$,
+$A_r$, and $R_h$ or $R_w$ in the two tail floors.
+
 At $r=1/2$ one can also use $I>21/125$, $A_0<11/20$, $R<14/25$.
 The resulting lower bound is
 $E_n=245931/6050000-206/(157n)-55/(3n^2)$.  Its exact margins are
@@ -732,6 +1003,29 @@ on $\rho\leq1/2$; the decreasing $\bar e$ improves this direction.
 Also $T-\bar e+j$ increases.  Thus \eqref{ul:near-base} persists
 throughout the tail.
 
+The derivative tests use a simple recurring calculation.  If
+$A,B\geq0$, $p>0$, and $n+c>0$, then
+\[
+ \frac{d}{dn}\frac{A+B\log(n+c)}{(n+c)^p}
+  =\frac{B-p\{A+B\log(n+c)\}}{(n+c)^{p+1}}.
+\]
+Thus this quotient decreases wherever
+$p\{A+B\log(n+c)\}>B$.  Positive sums and products of positive
+decreasing factors also decrease.  These two observations handle
+the logarithmic reciprocal costs in the displayed constants.
+The lower derivative estimate for the mixed favorable coefficient
+can be checked without approximating a derivative numerically:
+for $n\geq320$,
+\[
+ \frac{45}{16n}-\frac{184}{15n^2}-\frac{78}{n^3}
+ =\frac1n\left\{\frac{45}{16}-\frac{184}{15n}
+                                    -\frac{78}{n^2}\right\}>0,
+\]
+because the two subtracted terms in braces sum to at most
+$184/4800+78/102400<1/20<45/16$.  Increasing the favorable
+coefficient and decreasing its error costs both improve the
+comparison.
+
 The monotonicity check turns a single-degree calculation into a
 uniform tail statement.  It treats $n$ temporarily as a real
 variable at least $320$, so positivity of a derivative proves the
@@ -828,6 +1122,27 @@ of radii is involved.
 
 For $\rho\leq1/8$, the same estimates with both curvatures reduced
 to two give $S_n-\Lambda_c<77/1000$, whereas $L_h(\rho)>9/100$.
+Here is that short-radius calculation.  Reducing both negative
+quadratic coefficients to two only enlarges the upper bound.
+Since $\ell_1\geq\ell_2$, $x+y=\rho$, and
+$x^2+y^2\geq\rho^2/2$, it is at most
+\[
+ \frac{677}{50000}+\frac{12531}{20000}\rho-\rho^2.
+\]
+Its derivative $12531/20000-2\rho$ is positive through $1/8$,
+so its largest value on this interval is
+\[
+ \frac{677}{50000}+\frac{12531}{160000}-\frac1{64}
+      =\frac{60987}{800000}<\frac{77}{1000}.
+\]
+The floor $L_h$ decreases because both its linear and quadratic
+coefficients are negative.  Its smallest value here is
+\[
+ L_h(1/8)=\frac{58203}{640000}>\frac9{100}.
+\]
+These two endpoint computations prove the required comparison
+throughout the closed short-radius interval.
+
 Thus on the whole closed near diamond
 \begin{equation}\label{ul:near-exclusion}
  \lambda_n<\Lambda_c-1/20000
@@ -926,6 +1241,19 @@ $\eta=3/2$.  Actual phases satisfy
  \max(p,q)\leq p_0+\eta\sqrt v,\quad d_+\leq3\sqrt v,
  \quad P\leq P_0+4v.
 \end{equation}
+The nonnegativity of $v$ follows from the same elementary phase
+geometry as the other bounds.  Because $\rho\geq1$,
+$c_e=\cos(\rho/2)\leq\cos(1/2)$, while $0\leq c_d\leq1$.
+Thus $a=c_ec_d\leq\cos(1/2)$.  Taylor's cosine bound gives
+\[
+ \cos(1/2)<1-\frac{(1/2)^2}{2}
+                      +\frac{(1/2)^4}{24}
+             =\frac{337}{384}.
+\]
+It follows that $u=1-a>47/384=u_1$ and hence $v\geq0$.
+The weaker non-strict version in \eqref{ul:outer-geometry} is
+convenient for the ensuing square completion.
+
 Indeed $c=\cos(1/2)<a_0$ and $c_e+c_d\leq1+a$.
 For $1/2\leq x\leq1$, put $h=x-1/2$ and use $y\geq1-x$:
 $u-(1-c)\geq47ch^2/96$ and $\sin x\leq\sin(1/2)+ch$.
@@ -1054,6 +1382,39 @@ Monotonicity in degree carries the same margin forward from $320$.
 Together with \eqref{ul:wide-exclusion}, this now excludes the
 majorant on every closed radius interval from $3/5$ to $\pi$.
 
+For the non-polynomial costs, the derivative comparisons above
+can also be seen directly.  Since $\varepsilon=3\pi/(2m)$ and
+$dm/dn=1$,
+\[
+ m\ell'=\varepsilon\cot\varepsilon\leq1.
+\]
+Indeed $\tan t\geq t$ on $[0,\pi/2)$: its difference from $t$
+has derivative $\tan^2t\geq0$ and starts at zero.  At the degrees
+under consideration $\ell>1$, so
+$(\ell/m)'=(m\ell'-\ell)/m^2<0$.
+
+Write $C=1+\kappa m$ with $\kappa=8a_0/(3\pi)>0$.
+Then $mC'=C-1$, and differentiation gives
+\[
+ m\Gamma_b'=\frac{p_0(C-1)}{p_0+C}<p_0,\qquad
+ m\gamma_b'=\frac{C(C-1)}{(p_0+C)^2}<1.
+\]
+The first cost satisfies $\Gamma_b\geq p_0$.  For the second,
+put $t=C/p_0>0$; then
+\[
+ \gamma_b=1+\log(1+t)-\frac{t}{1+t}>1,
+\]
+because the expression after one is zero at $t=0$ and has
+derivative $t/(1+t)^2>0$.  Therefore $\Gamma_b/m$ and
+$\gamma_b/m$ decrease by the same quotient rule as $\ell/m$.
+Additional positive reciprocal factors preserve their direction.
+The remaining logarithmic reciprocal terms obey the derivative
+template given in the near-region calculation.  This accounts for
+the costs that enter $C_b,C_s,C_l$; meanwhile the favorable $T$
+increases.  In the gate formula these directions make $G,K$
+increase and $A$ decrease, as required to propagate the starting
+degree's margin.
+
 
 The same comparison gives a useful earlier onset on the far half.
 The analytic tail needs the preceding estimate only from degree
@@ -1083,6 +1444,37 @@ the entire far region.  The definition of $F_u$ uses its maximum
 value one after $u=1/2$, providing a continuous bound across that
 change of formula.
 
+We can verify the decreasing normalized inputs explicitly:
+\[
+ \frac{F_u}{u}=
+ \begin{cases}2\sqrt{(1-u)/u},&0<u\leq1/2,\\
+               1/u,&1/2\leq u\leq1,
+ \end{cases}
+ \qquad
+ \frac{Q_u}{u}=\min\left(\frac2u,\sqrt{\frac8u}\right).
+\]
+Both branches in each expression decrease, and the two formulas
+for $F_u/u$ agree at $1/2$.  Also
+$A_u/u=1/u-1$ and $C_u/u=2/u-1$ decrease.  With
+$c=8m/(3\pi)$ fixed at the chosen degree, the second entropy
+input is
+\[
+ \frac{1+c(1-u)}u=\frac{1+c}{u}-c,
+\]
+which decreases too.  For positive inputs direct differentiation
+of $\Psi$ gives
+\[
+ \Psi_s(r,s)=\frac r{r+s}>0,\qquad
+ \Psi_r(r,s)=1+\log(1+s/r)-\frac{s}{r+s}>0.
+\]
+The last sign follows from the same positive function
+$\log(1+t)-t/(1+t)$ just used above.  Consequently decreasing
+either normalized input can only decrease the entropy quotient.
+All the positive nonentropy terms are sums of these decreasing
+quotients and positive reciprocal factors, so their directions
+are also preserved.  Vanishing inputs at a boundary are handled
+by the continuous limits of the original positive allowance.
+
 For $\rho\geq\pi/2$, $u>u_0=7/24$.  At $n=192$, $u=u_0$,
 \eqref{ul:log-series} gives $21/4<L<421/80$, $H<63/10$ and
 \[
@@ -1093,6 +1485,14 @@ For $\rho\geq\pi/2$, $u>u_0=7/24$.  At $n=192$, $u=u_0$,
  \end{gathered}
 \]
 Hence $\widehat C_E<1013/600<17/10$; also $F_u<11/12$, $Q_u<31/20$.
+The lower bound for $u$ is purely geometric.  On this far region,
+$c_e=\cos(\rho/2)\leq1/\sqrt2$ and $c_d\leq1$, so
+\[
+ a\leq1/\sqrt2<17/24,\qquad u=1-a>7/24.
+\]
+The rational inequality follows by squaring the two positive
+numbers: $1/2=288/576<289/576=(17/24)^2$.
+
 The anchor comparison is exactly
 \[
  u_0(19/2+23/250)-(221/500)(11/12)
@@ -1105,6 +1505,15 @@ the closed regional implication needed by hybrid certificates:
  S_n<\Lambda_c-79/2000<\Lambda_c-3/100
  \qquad(n\geq192,\ \pi/2\leq\rho\leq\pi).
 \end{equation}
+In more detail, divide the lower bound for $\Lambda_c-S_n$ by
+$u$.  The favorable contribution $T+j_*$ then stays constant in
+$u$, while all subtracted normalized sine and error allowances
+decrease by the preceding calculations.  Thus at $u\geq u_0$
+the normalized gap is at least $(79/2000)/u_0$.  Multiplying by
+$u\geq u_0>0$ gives a gap at least $79/2000$ throughout that
+region.  The strict starting comparisons retain the strict
+inequality in \eqref{ul:far192}.
+
 The radius boundary $\rho=\pi/2$ is included in this implication.
 Its geometric lower bound is already strictly above $u_0$, and
 the comparison has a positive rational margin at $u_0$ itself.
@@ -1190,6 +1599,24 @@ $k=n/m$.  Four differentiations therefore produce the factors
 one and $k^4$.  The preceding integral identity turns these
 fourth-derivative bounds into the second-derivative bounds needed
 for interpolation in $s,t$.
+
+The precise inequality used is the trigonometric Bernstein
+inequality: for a real trigonometric polynomial $T$ of degree at
+most $d$,
+\[
+ \|T^{(j)}\|_\infty\leq d^j\|T\|_\infty,
+ \qquad j=1,2,\ldots.
+\]
+Its proof is given in Section~\ref{sec:certificates}.  The norm is
+the supremum over a complete angular period.  Iterating the
+first-derivative inequality gives the displayed higher-derivative
+form.  For a signed cardinal sum, fix the other coordinate and
+first regard the function as a trigonometric polynomial in its
+unscaled angle, with degree at most $n$ and norm at most $M$.
+The chain rule for $A/n$ supplies $n^{-4}$, canceling $n^4$ in
+the fourth-derivative bound.  For $B/m$, it supplies $m^{-4}$,
+leaving $(n/m)^4=k^4$.  This verifies both curvature constants
+from the same global signed-sum norm.
 
 We recall the elementary shape of that interpolation estimate.
 On a rectangle, bilinear interpolation forms a weighted average
@@ -1302,6 +1729,23 @@ combined gates at $256$ proves their positivity for the full
 corner tail.  The rational number $r_U$ is an upper bound for the
 factor involving $\pi^4$, which makes the gate evaluation use
 only the stated rational bounds.
+
+To check the polynomial's monotonicity numerically with exact
+rationals, differentiate its numerator with respect to $L$:
+\[
+ 8(q_0-r_U)L-\{3q_0+(79/5)r_U\}.
+\]
+Since $q_0=7/48>r_U=2/125$ and $L\geq1$, this is at least
+\[
+ 5q_0-\frac{119}{5}r_U
+   =\frac{35}{48}-\frac{238}{625}
+   =\frac{10451}{30000}>0.
+\]
+Division by the positive $\pi^2$ preserves its sign.  Also
+$dL/dn=1/n>0$, so an increase in $L$ is an increase in $n$.
+The doubled polynomial for the diagonal gate has the same sign
+of derivative.  Together with the decreasing remaining costs,
+this proves the stated increase of both combined gates.
 
 For $\delta=\min(\delta_A,\delta_D/2)$ we obtain
 $\delta-M(n)\pi^4/6144>49/2000$.

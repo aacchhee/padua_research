@@ -17,8 +17,10 @@ polynomial vanishing at every node must be the zero polynomial. Indeed,
 that condition makes the linear map injective; a square injective
 linear map is also surjective.
 
-The cardinal polynomials are the inverse images of the standard unit
-vectors under this map. Thus existence of all the cardinal polynomials,
+The standard unit vector associated with a node $B$ has entry one at
+$B$ and entry zero at every other node. The cardinal polynomial $L_B$
+is its inverse image under the evaluation map. Thus existence of all
+the cardinal polynomials,
 uniqueness of interpolation and invertibility of the evaluation matrix
 are equivalent descriptions of the same fact. Lemma~\ref{lem:cardinal-kernel}
 will establish that fact by computing a weighted sum of products of
@@ -44,8 +46,9 @@ otherwise. To give the norm argument in full, fix $z\in Q$. Then
 \]
 Taking the maximum in $z$ gives the upper bound. For the reverse bound,
 choose a point $z_*$ maximizing $\lambda_n$ and prescribe
-$s_B=\operatorname{sgn}L_B(z_*)$, with $s_B=0$ if that cardinal value
-vanishes. The finite collection of distinct nodes has a positive minimum
+$s_B=\operatorname{sgn}L_B(z_*)$. Recall that the sign of a positive
+number is one, the sign of a negative number is minus one, and the sign
+of zero is zero. The finite collection of distinct nodes has a positive minimum
 separation. Choose $\rho>0$ so small that the closed balls of radius
 $\rho$ around distinct nodes are disjoint, and put
 \[
@@ -105,7 +108,16 @@ precisely, the \emph{checkerboard scalar product} is the weighted sum
         w_{jk}f(\cos\theta_j,\cos\phi_k)
                g(\cos\theta_j,\cos\phi_k).
 \]
-It is initially a positive semidefinite bilinear form on polynomials:
+The expression is bilinear: holding one input fixed, it is linear in
+the other input. For example,
+\[
+ \langle af_1+bf_2,g\rangle_{\mathcal P_n}
+ =a\langle f_1,g\rangle_{\mathcal P_n}
+   +b\langle f_2,g\rangle_{\mathcal P_n}
+\]
+for all real $a,b$. It is symmetric because exchanging $f$ and $g$
+leaves every summand unchanged. It is initially positive semidefinite
+on polynomials:
 $\langle p,p\rangle_{\mathcal P_n}$ is a sum of nonnegative terms,
 and it vanishes exactly when $p$ vanishes at every node. The lemma will
 show that this form is positive definite on $\Pi_n$, meaning that it is
@@ -115,7 +127,11 @@ it is already the usual weighted Euclidean scalar product of their
 vectors of values.
 
 For the kernel formula below, set $\nu_0=1$ and $\nu_r=2$ for $r>0$;
-these are the mode multiplicities. Define
+these are the mode multiplicities. Write $z=(z_1,z_2)$ and
+$B=(B_1,B_2)$ for physical points. In a sum with condition $p+q\leq n$,
+both indices are nonnegative integers. If
+$B=(\cos\theta_j,\cos\phi_k)$ is a node, the abbreviated notation
+$w_B$ means $w_{jk}$. Define
 \[
  K_n(z,B)=\sum_{p+q\leq n}\nu_p\nu_q
  T_p(z_1)T_p(B_1)T_q(z_2)T_q(B_2).
@@ -136,8 +152,21 @@ One can anticipate the usual coefficients from the elementary integral
  \frac1\pi\int_0^\pi\cos(pt)\cos(rt)\,dt
   =\begin{cases}1,&p=r=0,\\1/2,&p=r>0,\\0,&p\ne r.\end{cases}
 \]
-The factors $\nu_r$ are the reciprocals of these continuous squared
-norms. Sampling on an angular grid preserves this orthogonality for
+For a nonzero integer $k$, an antiderivative gives
+\[
+ \int_0^\pi\cos(kt)\,dt
+   =\frac{\sin(k\pi)-\sin0}{k}=0.
+\]
+To obtain the displayed scalar products, use
+\[
+ \cos(pt)\cos(rt)
+   =\tfrac12\cos((p-r)t)+\tfrac12\cos((p+r)t).
+\]
+When $p\ne r$, both cosine frequencies are nonzero and both integrals
+vanish. When $p=r>0$, the first cosine is the constant one and the
+second has nonzero frequency, giving $1/2$ after division by $\pi$.
+When $p=r=0$, the integrand itself is one. The factors $\nu_r$ are
+the reciprocals of these continuous squared norms. Sampling on an angular grid preserves this orthogonality for
 the required indices but changes the highest available frequency in
 the first coordinate. Since the two grids have sizes $n$ and $n+1$,
 that change occurs asymmetrically. The proof computes it using finite
@@ -190,6 +219,15 @@ Recall the finite geometric-series identity
  \sum_{j=0}^M z^j=\frac{1-z^{M+1}}{1-z}\quad(z\ne1).
 \]
 It follows by multiplying the sum by $1-z$: all middle powers cancel.
+We use elementary complex-number notation to evaluate this sum.
+A complex number is written $a+ib$, where $a,b$ are real and $i^2=-1$;
+its real part is $\operatorname{Re}(a+ib)=a$. We use
+$e^{i\alpha}=\cos\alpha+i\sin\alpha$ for real $\alpha$. The angle
+addition formulas give $e^{i\alpha}e^{i\beta}=e^{i(\alpha+\beta)}$,
+so $(e^{i\alpha})^j=e^{ij\alpha}$ and its real part is
+$\cos(j\alpha)$. Only these finite algebraic identities are required
+here.
+
 To evaluate the cosine sum, let $r$ be an integer with
 $1\leq r\leq2M-1$, set $z=e^{ir\pi/M}$, and write
 $\sigma=z^M=(-1)^r$. In this range $z\ne1$. Half weighting the two
@@ -206,7 +244,17 @@ $z=e^{i\alpha}$ gives
  \frac{1+e^{i\alpha}}{1-e^{i\alpha}}
    =i\cot\frac\alpha2.
 \]
-Taking real parts gives zero in both cases. Since
+Indeed, factoring $e^{i\alpha/2}$ out of numerator and denominator
+gives
+\[
+ \frac{2e^{i\alpha/2}\cos(\alpha/2)}
+      {-2ie^{i\alpha/2}\sin(\alpha/2)}
+ =i\frac{\cos(\alpha/2)}{\sin(\alpha/2)}.
+\]
+Here $1/i=-i$ follows from $i^2=-1$, and the denominator is nonzero
+because $e^{i\alpha}\ne1$. The cotangent is real for these real
+angles, so the expression has real part zero. Taking real parts in
+the weighted geometric sum gives zero in both parity cases. Since
 $\operatorname{Re}z^j=\cos(rj\pi/M)$, the weighted cosine average
 vanishes. For $r=2M$ every cosine value is one, so its average is one.
 This explains why the upper frequency $2M$ has to be kept separate
@@ -318,9 +366,27 @@ indices, and let
 \]
 Here $\operatorname{diag}$ denotes the matrix with the listed entries
 on its diagonal and zeros elsewhere; $w_B$ is $w_{jk}$ at node $B$.
-Our calculation says $E^{\mathsf T}WE=D$, where the superscript denotes
-transpose. Since $D$ is positive diagonal, the columns of $E$ are
-independent. Since $E$ is square, it is invertible. This matrix
+The transpose $E^{\mathsf T}$ exchanges row and column indices.
+Matrix multiplication sums products over the shared index. Since $W$
+is diagonal, the entry of the product indexed by the two modes is
+\begin{align*}
+ (E^{\mathsf T}WE)_{(p,q),(r,s)}
+ &=\sum_{B\in\mathcal P_n}
+       E_{B,(p,q)}w_BE_{B,(r,s)}\\
+ &=\sum_{B\in\mathcal P_n}w_B e_{pq}(B)e_{rs}(B)
+   =\langle e_{pq},e_{rs}\rangle_{\mathcal P_n}.
+\end{align*}
+Our orthogonality calculation makes this entry zero for distinct modes
+and $h_p^{(n)}h_q^{(n+1)}$ for identical modes. These are exactly the
+entries of $D$, proving $E^{\mathsf T}WE=D$. To see explicitly why
+this implies independent columns, suppose a coefficient vector $c$
+satisfies $Ec=0$. Then
+\[
+ c^{\mathsf T}Dc=(Ec)^{\mathsf T}W(Ec)=0.
+\]
+The left side is a sum of strictly positive diagonal factors times the
+squares of the entries of $c$. Consequently all those entries vanish,
+which is precisely column independence. Since $E$ is square, it is invertible. This matrix
 expression also tracks the kernel normalization.
 
 For $q\leq n$, the inverse of $h_q^{(n+1)}$ is $\nu_q$. In the
@@ -338,8 +404,21 @@ Define the kernel with these inverse coefficients by
         =K_n(z,B)-T_n(z_1)T_n(B_1).
 \]
 For a fixed $z$, take its scalar product in the $B$ variable with
-$P(B)=\sum c_{pq}e_{pq}(B)$. Orthogonality cancels the denominator
-mode by mode and yields
+$P(B)=\sum_{r+s\leq n}c_{rs}e_{rs}(B)$. Substituting both finite
+expansions and interchanging finite sums gives
+\begin{align*}
+ &\sum_{B\in\mathcal P_n}w_B R_n(z,B)P(B)\\
+ &\quad=\sum_{p+q\leq n}\sum_{r+s\leq n}
+    \frac{e_{pq}(z)c_{rs}}{h_p^{(n)}h_q^{(n+1)}}
+       \sum_{B\in\mathcal P_n}w_Be_{pq}(B)e_{rs}(B)\\
+ &\quad=\sum_{p+q\leq n}\sum_{r+s\leq n}
+    \frac{e_{pq}(z)c_{rs}}{h_p^{(n)}h_q^{(n+1)}}
+          \langle e_{pq},e_{rs}\rangle_{\mathcal P_n}.
+\end{align*}
+The inner scalar product is zero unless $r=p$ and $s=q$. For those
+surviving indices its value is $h_p^{(n)}h_q^{(n+1)}$, exactly
+canceling the denominator. Hence the double sum reduces to the single
+basis expansion and yields
 \[
  \sum_{B\in\mathcal P_n}w_B R_n(z,B)P(B)
       =\sum_{p+q\leq n}c_{pq}e_{pq}(z)=P(z).
@@ -348,7 +427,16 @@ This is the reproducing property: the weighted scalar product with
 $R_n(z,\cdot)$ returns evaluation at $z$ for every $P\in\Pi_n$.
 
 To see the nodal delta values directly, let $F$ be the matrix with
-entries $F_{A,B}=w_B R_n(A,B)$. Its formula is
+entries $F_{A,B}=w_B R_n(A,B)$. To obtain its matrix formula, compute
+one entry of the proposed product:
+\begin{align*}
+ (ED^{-1}E^{\mathsf T}W)_{A,B}
+ &=w_B\sum_{p+q\leq n}
+       \frac{e_{pq}(A)e_{pq}(B)}{h_p^{(n)}h_q^{(n+1)}}\\
+ &=w_BR_n(A,B)=F_{A,B}.
+\end{align*}
+The equality of all entries proves the formula for $F$. Associating
+matrix factors and then using $E^{\mathsf T}WE=D$ gives
 \[
  F=ED^{-1}E^{\mathsf T}W,
  \qquad FE=ED^{-1}(E^{\mathsf T}WE)=E.
@@ -402,13 +490,31 @@ the nodal values and the interpolating polynomial. This example shows
 how a single normalization coefficient affects the entire construction.
 
 It also illustrates the absolute values in the Lebesgue function.
-The elementary identity $|a+b|+|a-b|=2\max(|a|,|b|)$ gives, on $Q$,
+For real $a,b$,
+\[
+ |a+b|+|a-b|=2\max(|a|,|b|).
+\]
+To prove this, first suppose $|a|\geq|b|$. If $a\geq0$, then both
+$a+b$ and $a-b$ are nonnegative and their absolute values sum to
+$2a=2|a|$. If $a<0$, both are nonpositive and the sum is $-2a=2|a|$.
+In the other case, $|b|\geq|a|$, exchange $a$ and $b$ in that
+argument; the left side is unchanged because $|b-a|=|a-b|$, and the
+answer is $2|b|$. This includes equality and zero cases.
+
+For the first two cardinal polynomials, apply the identity with
+$a=1+x$ and $b=2y$ and divide by four. On $Q$, $1+x$ and $1-x$ are
+nonnegative, so the third cardinal polynomial already has nonnegative
+value. Therefore
 \[
  \lambda_1(x,y)
  =\max\left(\frac{1+x}{2},|y|\right)+\frac{1-x}{2}
  =\max\left(1,|y|+\frac{1-x}{2}\right).
 \]
-Its largest value is two, attained at $(-1,1)$ and $(-1,-1)$.
+For every $(x,y)\in Q$, both $|y|\leq1$ and $(1-x)/2\leq1$,
+so the second entry in this maximum is at most two. It equals two
+precisely when both bounds are equalities: $|y|=1$ and $x=-1$.
+The first entry is one and cannot reach two. Thus the largest value
+is two, attained exactly at $(-1,1)$ and $(-1,-1)$.
 All of this follows from the displayed affine polynomials. For larger
 $n$ there are many more changing signs; the kernel representation
 organizes those signs in a way suited to the later proofs.

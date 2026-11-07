@@ -5,7 +5,8 @@ values at a prescribed collection of points in the square $Q=[-1,1]^2$.
 We seek a polynomial that agrees with these values and can then be
 evaluated elsewhere. Throughout this paper $\Pi_n$ denotes the vector
 space of real polynomials in two variables whose total degree is at most
-$n$. Thus a monomial $x^py^q$ belongs to this space when $p,q$ are
+$n$. Here $n$ is a positive integer; the main theorems concern $n\geq2$.
+Thus a monomial $x^py^q$ belongs to this space when $p,q$ are
 nonnegative integers with $p+q\leq n$. For example,
 \[
  \Pi_2=\operatorname{span}\{1,x,y,x^2,xy,y^2\}.
@@ -208,8 +209,10 @@ give $\lambda_n(z)\geq1$ everywhere. At a node only one cardinal term
 is nonzero, so there the lower bound is attained. This makes the values
 between nodes especially relevant for stability.
 
-At a fixed location $z$, prescribe the data $e_B=\operatorname{sgn}L_B(z)$,
-choosing any value of size at most one when a cardinal value is zero.
+For a real number $u$, the sign $\operatorname{sgn}u$ is $1$ when
+$u>0$, $-1$ when $u<0$, and $0$ when $u=0$. At a fixed location
+$z$, prescribe the data $e_B=\operatorname{sgn}L_B(z)$, choosing any
+value of size at most one when a cardinal value is zero.
 The corresponding interpolated value at $z$ is then exactly
 $\sum_B|L_B(z)|$. Thus the absolute-value sum is the actual worst case
 for bounded nodal data at that point. The sign choice can depend on $z$;
@@ -264,6 +267,11 @@ bound the function on regions covering the square. The analytic argument
 also uses a separately certified constant enclosure in its quantitative estimates.
 These dependencies are described in Sections~\ref{sec:argmax}
 and~\ref{sec:certificates}.
+An \emph{enclosure} of a constant $c_*$ is a pair of proved bounds
+$c_-\leq c_*\leq c_+$. A certified enclosure comes with specified
+arithmetic checks establishing those inequalities. The comparison
+arguments use these bounds in whichever direction preserves the
+inequality being proved.
 
 The threshold $320$ divides the proof into a tail of degrees and a
 finite initial range. A finite certificate is a collection of exact
@@ -273,7 +281,7 @@ inequalities into a statement about every point. The later certificate
 section derives the relevant implications, including the treatment of
 regions that touch a maximizing corner. The role of a certificate here
 is analogous to a long finite arithmetic step in a proof, with its
-input, predicates and arithmetic specified explicitly.
+input, checked inequalities and arithmetic specified explicitly.
 
 The analytic proof for large degrees still contains quantitative
 constants. One of their enclosures is separately certified, as stated
@@ -316,9 +324,21 @@ the additional constant $\kappa$.
 
 The sum in \eqref{eq:main-kappa} runs over the positive odd integers
 $1,3,5,\ldots$. The $\ell=1$ term deserves separate attention near
-$t=1$. For $0\leq t<1$ the remaining terms have denominator bounded
-away from zero, and their tail is bounded by a constant times
-$\sum_{\ell\geq3}\ell^{-3}$. Near the other endpoint,
+$t=1$. For every $0\leq t\leq1$ and integer $\ell\geq3$,
+\[
+ \ell^2-t^2\geq\ell^2-1\geq\frac89\ell^2,
+ \qquad
+ 0\leq\frac1{\ell(\ell^2-t^2)}\leq\frac9{8\ell^3}.
+\]
+The last bound has a convergent sum: for example,
+$\sum_{\ell=L}^{\infty}\ell^{-3}$ is at most
+$L^{-3}+\int_L^{\infty}x^{-3}\,dx=L^{-3}+1/(2L^2)$.
+It follows that the tail of the series over odd $\ell\geq3$ is
+bounded by a quantity tending to zero independently of $t$. This is
+uniform convergence on $[0,1]$. Each summand is continuous there, so
+this part of the sum is a bounded continuous function, including both
+endpoints. The remaining term, $\ell=1$, is handled separately.
+Near the other endpoint,
 $\cot(\pi t/2)$ is of size $1/t$, so the factor $t^2$ makes the
 complete integrand of size $t$. Near $t=1$ the potentially singular
 term contains
@@ -400,6 +420,28 @@ actual maximizing corner, a positive interpolation argument proves strict
 quadratic descent. The finite certificates use that same interpolation
 principle. This organization separates the two ideas that matter: computing
 the corner value and showing why no other point can exceed it.
+
+Here the \emph{envelope} is an explicit upper-bound function obtained
+by taking absolute values of reflected kernel terms before combining
+them. It is periodic in angular coordinates. A \emph{reflection defect}
+is the amount by which that upper bound exceeds the value after the
+signed terms have been combined; it measures the cancellation lost in
+the triangle inequality. The \emph{completed model} is an auxiliary
+comparison expression, defined in the global argument, that allows us
+to estimate the finite envelope by isolating its common large-degree
+behavior and controlling the remaining error.
+
+A \emph{positive interpolation argument} uses nonnegative interpolation
+weights to carry bounds on finitely many values over an entire region,
+with a proved remainder bound when the interpolation is approximate.
+For example, a convex combination of four vertex values cannot exceed
+their largest value. This positivity belongs to the interpolation
+weights in the comparison argument; the Padua cardinal polynomials
+introduced above can have either sign. Finally, \emph{quadratic descent}
+means that sufficiently near a maximizing corner the loss from the
+corner value is bounded below by a positive constant times squared
+angular displacement. Such a bound is strictly positive at every
+nearby point with nonzero displacement and vanishes at the corner.
 
 The Padua construction and its generating-curve and ideal descriptions
 are classical~\cite{BosCaliariDeMarchiVianelloXu2006,BosDeMarchiVianelloXu2007}.
