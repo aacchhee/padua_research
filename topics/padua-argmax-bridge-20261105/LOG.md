@@ -1264,3 +1264,26 @@ Distinct Astraxhigh8756f68d...16964B ACCEPTS d7b91d1d...8814B newCEhat/u outerpr
 SeparateMAJORchronologyP1/P2/P3remainunwaived percanonicalrecords andcompletedreports; scienceadoptiondoesNOTwaivethemorassignreadiness. PD271/acceptedupstreampremisesandfinalClaudeauditexplicit. AllnewEworkpaper-only,no numerical/source/endpoint/native/finite-degreejob. Knownfinite2–42,63–64,159–160 andanalyticEVERYn>=384; residual337:43–62(20),65–158(94),161–383(223). Finite511/512/1023remainvalidwithinthetail. PD-T099OPEN, onsetsufficientnotminimal.
 
 NEW E01–E10 COMPLETE10/15; E11pairedroot/domainauditactive,E12gate-onlylower256continuation; E13–E15unallocated3. Five roundsremainincludingE11/E12. PackPAUSEDuntilanalyticextensionendsandgapremains.
+
+
+### E12 exceptional signed finite-operator continuation —two explicit phases
+
+Allocate ONE NEW boundedAstraultra block atmost20minutes to the stillOPEN E09ONE-SIDED fixed-near mixedT target, withinSAMEcoordinatedE12asprospective256. Exceptionaljustification: E09completeuppermakes384possiblebutstillpayspositive logarithmiclinear profilevariation afterdroppingafavorableexactLcoefficient; E11nowisolatestruepairedrootgeometry andnegativebeta baseline. Uniformlycouplingfiniteprofile/cell/rootterms atmovingphase scales isthestalledhardmechanism, notnewendpointarithmetic. Fullfiniteell_nalpha cusp remainsoutsideT andisnotdeleted.
+
+PHASE0isGATEONLY: verifyowncompleteunchangedbaseline, readALLfullnewE10/E11theory/idea/attempt/history/reportsplusE09fullrecords/E08originlimits BEFOREcandidate/proof/diagnostic; returnexplicitcompletionandWAITrootmathematicalrelease. PHASE1maystartonlyafterthatrelease, withtheORIGINAL20mincutoffunchanged; noautorenewal. Target literalT onCLOSEDrhohalf ALLn32, useful C*rho/n+K H rho²/n orsharperexplicitdomain/anisotropy, cheapestcounterexample/sign/movinglimitfirst. Any candidate andconstantsmustbewrittenbeforeitsdecisivework. CurrentweakerT47/48remainsvalid; strongerfailuredoesnotrefuteactualargmax.
+
+OwnNEW E12-signed-outer-coupling theory/idea/attempt ONLY, no scripts/source/scalar/native/endpoint/pack/Git/shared/extraagentactions. Recordexactstart/cutoff. Mathematicalacceptanceandprotocolcompliancebothneedindependentcheck. E12countsONEroundacrosshelpers; E13–E15remainunallocated3, packPAUSED.
+
+
+### E11 COMPLETE: entropy-free central pair and closedpi/2 model ACCEPTED
+
+Distinct Astrahigh3407c50d...22172B ACCEPTS dea44db8...10942B pairproof, ee98de67...9450B first5/4model and695800c1...10157B naturalCLOSEDpi/2model, finalideaa76c24a3/attempt0eeb84be. Rootadopts TRUEEc<=kappa*p^1.5/sqrt(a)−Bbeta withEXACTnegativeBbeta andEc(0,y)=−Bbeta, noartificialpositivealpha/betaentropycharges. Real-linepairedrootrearrangement/Tonellifactors/negativebaseline accepted. Closedrho<=pi/2completeddecomposition/Regmap justifiedbyexact2a−Psign anddominatedboundarycontinuity,tau1/bpi2included. Noactualbeta-monotonicity orfiniteerror-domain transfer; optionalkernelmomentDEFERRED. Entiregate-only8110Bprefix/separatemathrelease/firstfreezeidea14425/attempt5527prefixesverified; nofinding orjob.
+
+NEW E01–E11 COMPLETE11/15; E12lower256andboundedTgatephaseactive, E13–E15unallocated3. FourroundsremainincludingE12. Global384/residual337unchangeduntilnewcompleteassembly. E12Ultrablockclock01:48:16UTC–02:08:16UTC includesgate+development; PHASE1awaitsexplicitgatecompletion/rootrelease. PackPAUSED.
+
+
+### E12 Sol mathematical release after completed gate
+
+D14returns explicitcompletegate AFTERallfivefinalE11records/full3407c50dreport andallnewE09proofs/fullreviews pluslowerdomainpredecessors; no256candidate/diagnostic/job. RootNOW releases mathematicalE12atONEfixedbase256. Firsttesttheunchangednewrelativehalfnearrecipe atone analyticallychosenbalancedphase, retainingexactu andE11negativeBbeta; a failureisONLYthatselectedsufficientrecipe, notactualargmaxorallnewmin/phasecorrelatedsystems. Candidate inventories/exactstatements/test beforework. No fallbackdegree/thresholdscan.
+
+IndependentlyattemptBOTHactualcornerclosedpi/4squaresfrom256 withacceptedE11root/model (includingdiagonalrho=pi/2), signedglobalnorm andlegalrelativeaxesrho=pi/4<1. E11doesNOTextendfinitewideerrorspast1, Tpast1/2 oranyfloor/cornerquantifier. Currentone-sidedoriginlowercanonlybeusedforuppercomparisons, notnorm. Anycompletecorner256supportisusefulevenifglobal256recipefails; splititsPROVEDrecordfromOPENmainandscopedobstruction. No numerical/source/endpoint/native/packaction. SameE12asboundedTcouplinghelper.

@@ -1,12 +1,14 @@
 # Padua argmax bridge — current research results
 
-A new analytic scalar theorem proves H(x)−H(0)<=−(pi−3)x²/(4pi³) on the full closed principal period, so its unique maximum is at0. It follows from an exact endpoint-cancelled integral and strict f-third-derivative sign, with no new numerical enclosure. [Proof](../topics/padua-argmax-bridge-20261105/theory/E07-f-monotonicity.md), [independent acceptance](../topics/padua-argmax-bridge-20261105/independent-checks-E07-H.md). Its application to a lower finite-n onset is separate.
-
 The exact parity-correct two-corner global argmax is proved for **every integer n>=384**,
 and finite degrees **2–42,63–64,159–160,511–512**. Equality corners are
 {(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n.
 The remaining **337 degrees:43–62,65–158,161–383**, and the
 all-degree target PD-T099, remain OPEN. The analytic onset is sufficient, not minimal.
+
+A new analytic scalar theorem proves H(x)−H(0)<=−(pi−3)x²/(4pi³) on the full closed principal period, so its unique maximum is at0. It follows from an exact endpoint-cancelled integral and strict f-third-derivative sign, with no new numerical enclosure. [Proof](../topics/padua-argmax-bridge-20261105/theory/E07-f-monotonicity.md), [independent acceptance](../topics/padua-argmax-bridge-20261105/independent-checks-E07-H.md). Together with the complete finite comparison, it supports the accepted384 theorem.
+
+An independently accepted paired-root theorem now gives Ec<=kappa*p^(3/2)/sqrt(a)−Bbeta, with Bbeta>=0, on the model's CLOSED rho<=pi/2 domain. It removes both artificial positive entropy charges, retains the exact negative beta baseline and the real fractional alpha cusp. [Pair proof](../topics/padua-argmax-bridge-20261105/theory/E11-central-pair.md), [closed-domain proof](../topics/padua-argmax-bridge-20261105/theory/E11-model-radius-halfpi.md), [independent acceptance](../topics/padua-argmax-bridge-20261105/independent-checks-E11-central-pair.md). Finite-error guards and any lower onset remain separate.
 
 [Global384 theorem](../topics/padua-argmax-bridge-20261105/theory/E09-assembly384.md),
 [independent review](../topics/padua-argmax-bridge-20261105/independent-checks-E09-global384.md).
