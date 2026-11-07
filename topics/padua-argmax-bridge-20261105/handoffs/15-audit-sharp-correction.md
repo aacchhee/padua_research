@@ -1,6 +1,6 @@
 # Handoff15 — Substantive Claude audit: sharp asymptotics and exact argmax
 
-- Status: open
+- Status: superseded by 16: AC requests fresh external literature search before audit
 - Previous handoff:14-work-sharp-correction.md
 - Next agent/model/effort: Claude, recommendedOpus5.5xhigh for the combined
   mathematical audit; record actual requested/serving identity honestly.
