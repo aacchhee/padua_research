@@ -71,3 +71,63 @@ Next Claude audit must be explicitly INTERIM, assess candidate code and bounded
 operational tests, and provide its own independent gap-closing ideas without
 reopening a research round. Codex implements findings. Independent final source/
 resource and later result review remain separate. Branch remains WORK.
+
+## Focused FOPS response — 2026-11-07, SOURCE ONLY
+
+First operations source remains preserved at
+4e3b9006f361f084bf0f6c00a593c5892cf3470c and first report at
+523009ea8ead3812a2bcd661c7fb5519b7c30db5. Its original custody SHA256 was
+0aecb19167e00b6d1a6c020f6d06227e4b74c4af3065b28ecce9cbc6a7988e35.
+Root explicitly authorized focused FOPS-01–06 repair after publication.
+No claim of audit acceptance or executed operational controls is made.
+
+- FOPS-01: new shared evidence.py reconstructs rational receipts and cross-links
+  preregistration, summary, final whole accounting, raw, checkpoints, stage exits,
+  native endpoint rows and runtime/maps/build records. Each build must retain
+  source snapshot, TU, native binary, compiler/header/dependency and mapped-file
+  identities. Every internal identity maps strictly beneath the registered
+  absolute package root; every external identity requires actual preserved bytes,
+  deduplicated by SHA256 under preserved-sha256/. External bytes are verified
+  against their recorded identity before atomic capture. Removing a TU/binary or
+  captured compiler/library while rewriting COLLECTION cannot evade the mandatory
+  semantic traversal. No archive-supplied code is imported; only the released
+  local exact data checker is loaded. Static implementation only; negative
+  controls remain unexecuted.
+- FOPS-02: resume and return now invoke the same substantive per-attempt validator.
+  It requires started degree/run/core identity, direct wrapper and both pass
+  EXIT0, no cleanup/timeout/failure, source/configuration closure, exact primary
+  linkage to fresh original bytes and the full provenance traversal. It operates
+  on an individual attempt within a partial campaign. Resume refuses moved
+  package-instance paths and validates all prior attempts before admission.
+- FOPS-03: observing a wall timeout now sets stopped and first_failure immediately,
+  before any new admission, while one-shot TERM and bounded KILL cleanup remain.
+- FOPS-04: all five operational launchers and wrapper startup use -I -S -B.
+  Sibling engine invocation uses -E -S -B; the engine owner separately repaired
+  its worker/setup startup and refreshed its mathematical source freeze without
+  changing numerical rules. All generations exclude site processing/bytecode.
+- FOPS-05: README and published-source commit attribution moved to a separate
+  SOURCE_CUSTODY.json outside runtime_manifest.files and runtime identity.
+  CODE/DATA, plan and runtime bytes still authenticate at the explicit published
+  source SHA. Prose remains preserved and collection-hashed; changing prose alone
+  does not change the numerical/runtime manifest. No prose enters the exact
+  checker acceptance gate.
+- FOPS-06: assets.py pins all six official Debian archive SHA256 values, URLs,
+  package names, versions and amd64 architecture. Producer checks package bytes,
+  metadata and tar-member byte equality before selecting paired FLINT3.1.3-2,
+  GMP6.3.0+dfsg-3 and MPFR4.2.2-1 headers/libraries. Existing extracted assets,
+  selected multiarch GMP header and resolved system arithmetic libraries must
+  equal those pinned payloads; version/owner database entries alone are never
+  trusted. Six original .debs and per-file arithmetic provenance accompany the
+  offline pack. Root separately registered/provisioned the missing GMP-dev,
+  GMP-runtime and MPFR-runtime archives; this developer performed no retrieval,
+  extraction or builder execution. Compiler/native compatibility remains
+  unverified pending its own precise registration and internal root release.
+
+The writer marker conservatively spans identical-manifest package copies; a live
+writer in that domain refuses collection. This is a conservative refusal, never
+an expanded ownership license. External provenance capture is operations outside
+the120CPU engine envelope, under existing wrapper guard/resource policy. Captured
+payloads and archives remain off Git. No bulk/remote execution or new AC approval
+flow is implied: source review, bounded operational registration/release, separate
+INTERIM Claude audit and applicable internal root execution release remain within
+AC's existing audit-then-run authorization. Branch remains WORK.

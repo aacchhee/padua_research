@@ -14,6 +14,7 @@ from common import HERE, digest, encoded, exclusive, files, lock, manifest, read
 from ownership import subreaper, cleanup, assert_no_writers
 from plans import PROFILE, plan
 from preflight import inspect
+from evidence import Access, validate_attempt
 
 def identity(m, p, workers):
     return digest(encoded({'manifest': m, 'plan': p, 'workers': workers}))
@@ -30,15 +31,17 @@ def run(group, workers, resume):
         previous = read(output / 'run.json') if (output / 'run.json').exists() else None
         expected = identity(m, p, workers)
         if bool(previous) != resume: raise ValueError('fresh/resume output mismatch')
-        if previous and previous['identity'] != expected: raise ValueError('resume identity mismatch')
+        if previous and (previous['identity'] != expected or previous['package_root'] != str(HERE)):
+            raise ValueError('resume identity/package-instance path mismatch')
         if output.exists() and not previous: raise ValueError('unregistered existing output refuses reuse')
         assert_no_writers(digest((HERE / 'runtime_manifest.json').read_bytes()))
         provenance, env = inspect(workers, m); subreaper()
         env['PADUA_PACK_WRITER'] = digest((HERE / 'runtime_manifest.json').read_bytes())
+        Access(HERE, str(HERE), capture=True).closure(provenance)
         output.mkdir(parents=True, exist_ok=True)
         if not previous:
             exclusive(output / 'run.json', {'identity': expected, 'manifest': m, 'plan': p,
-                      'workers': workers, 'provenance': provenance, 'started_utc': datetime.now(timezone.utc).isoformat()})
+                      'workers': workers, 'package_root': str(HERE), 'provenance': provenance, 'started_utc': datetime.now(timezone.utc).isoformat()})
         else:
             exclusive(output / ('resume-' + str(time.time_ns()) + '.json'), provenance)
         save(output / 'summary.json', {'identity': expected, 'quiescent': False, 'phase': 'admission'})
@@ -47,15 +50,7 @@ def run(group, workers, resume):
             directory = output / 'jobs' / str(n)
             if directory.exists():
                 if not resume: raise ValueError('existing case')
-                attempt = read(directory / 'attempt.json')
-                if attempt.get('status') != 'awaits_independent_result_review' or attempt.get('failure') is not None:
-                    raise ValueError('started/failed/interrupted case cannot resume')
-                # Validate preserved completed attempts rather than trusting status.
-                from job_worker import check_pass
-                for mode in ('produce', 'verify'):
-                    if read(directory / (mode + '-exit.json'))['observed_returncode'] != 0:
-                        raise ValueError('preserved pass lacks observed EXIT0')
-                    check_pass(directory / mode, mode, n)
+                validate_attempt(Access(HERE, previous['package_root']), group, n, previous)
             else: pending.append(n)
         active = {}; stopped = False; first_failure = None
         old = {sig: signal.getsignal(sig) for sig in (signal.SIGINT, signal.SIGTERM)}
@@ -71,6 +66,7 @@ def run(group, workers, resume):
                     if rc is None and time.monotonic() - row['start'] > PROFILE['case_wall_seconds']:
                         if not row.get('terminate_at'):
                             proc.terminate(); row['timeout'] = True; row['terminate_at'] = time.monotonic()
+                            stopped = True; first_failure = first_failure or 'case ' + str(row['n']) + ' wall timeout'
                     if rc is None and row.get('terminate_at') and time.monotonic() - row['terminate_at'] > 10:
                         proc.kill()
                     if rc is None: continue
@@ -90,7 +86,7 @@ def run(group, workers, resume):
                     exclusive(directory / 'started.json', {'n': n, 'identity': expected, 'core': core,
                               'utc': datetime.now(timezone.utc).isoformat()})
                     out = (directory / 'wrapper.stdout').open('xb'); err = (directory / 'wrapper.stderr').open('xb')
-                    command = [sys.executable, '-I', str(HERE / 'job_worker.py'), '--n', str(n),
+                    command = [sys.executable, '-I', '-S', '-B', str(HERE / 'job_worker.py'), '--n', str(n),
                                '--directory', str(directory), '--core', str(core)]
                     try: proc = subprocess.Popen(command, cwd=HERE, env=env, stdout=out, stderr=err, start_new_session=True)
                     except BaseException:
@@ -145,7 +141,7 @@ def collect(destination):
         inventory = {}
         with zipfile.ZipFile(archive, 'x', zipfile.ZIP_DEFLATED) as z:
             for p in files(HERE, allow_links=True):
-                if p == archive or p.suffix == '.zip' or p.name == '.run.lock': continue
+                if p == archive or p.suffix == '.zip' or p.name in ('.run.lock', '.preserve.lock'): continue
                 name = p.relative_to(HERE).as_posix(); data = p.read_bytes()
                 inventory[name] = {'bytes': len(data), 'sha256': digest(data)}; z.writestr(name, data)
             z.writestr('COLLECTION.json', encoded({'schema': 'padua-quiescent-return-v1', 'runs': runs,

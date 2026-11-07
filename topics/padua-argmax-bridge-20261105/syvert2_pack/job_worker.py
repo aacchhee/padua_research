@@ -11,28 +11,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import HERE, digest, exclusive, manifest, read
 from ownership import subreaper, cleanup
 from plans import ENGINE, PROFILE
-LABELS = {'produce': 'EXACT_SINGLE_DEGREE_PRIMARY_ACCEPTED_PENDING_FRESH_VERIFY',
-          'verify': 'FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW'}
+from evidence import Access, validate_pass
 
 def check_pass(directory, mode, n):
-    account = read(directory / 'final-accounting.json')
-    summary = read(directory / 'summary.json')
-    if account.get('result') != LABELS[mode] or account.get('complete') is not True or account.get('first_failure') is not None:
-        raise ValueError('whole final accounting refused')
-    if account.get('hard_aggregate_cap') != 120 or not 0 <= account['total_CPU_through_summary'] < 120:
-        raise ValueError('whole accounting cap')
-    if account['engine_config']['n'] != n or account['engine_config']['mode'] != mode:
-        raise ValueError('accounting case mismatch')
-    if summary.get('result') != 'PROVISIONAL_PROOF_PENDING_FINAL_ACCOUNTING' or summary.get('first_failure') is not None:
-        raise ValueError('provisional evidence missing')
-    receipt = directory / 'essential-receipt.json'
-    if not receipt.is_file() or receipt.stat().st_size >= 16384:
-        raise ValueError('whole essential receipt absent/oversize')
-    raw = summary['whole_raw_evidence']
-    raw_path = directory / Path(raw['path']).name
-    if digest(raw_path.read_bytes()) != raw['sha256']:
-        raise ValueError('whole raw evidence mismatch')
-    return receipt
+    prefix = directory.relative_to(HERE).as_posix()
+    validate_pass(Access(HERE, str(HERE), capture=True), prefix, n, mode, manifest())
+    return directory / 'essential-receipt.json'
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--n', type=int, required=True)
@@ -48,7 +32,7 @@ def main():
         manifest(); certificate = None
         for mode in ('produce', 'verify'):
             target = directory / mode
-            command = [sys.executable, str(HERE / ENGINE / 'engine.py'), '--mode', mode,
+            command = [sys.executable, '-E', '-S', '-B', str(HERE / ENGINE / 'engine.py'), '--mode', mode,
                        '--n', str(a.n), '--output', str(target), '--run-once']
             if certificate is not None: command += ['--certificate', str(certificate)]
             started = time.monotonic()

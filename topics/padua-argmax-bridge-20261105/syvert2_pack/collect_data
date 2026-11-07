@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")"
-exec python3 -I server.py collect_data "$@"
+exec python3 -I -S -B server.py collect_data "$@"

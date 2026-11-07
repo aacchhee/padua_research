@@ -25,7 +25,7 @@ def inspect(workers, m):
     for name in ('c++', 'readelf', 'ldd'):
         found = shutil.which(name)
         if found is None: raise ValueError('required tool missing: ' + name)
-        p = Path(found).resolve(); tools[name] = {'path': str(p), 'sha256': digest(p.read_bytes())}
+        p = Path(found).resolve(); tools[name] = {'path': str(p), 'sha256': digest(p.read_bytes()), 'bytes': p.stat().st_size}
     if shutil.disk_usage(HERE).free < PROFILE['scratch_free_floor_bytes']:
         raise ValueError('prospective scratch+collection free-space floor not met')
     asset = HERE / ASSET

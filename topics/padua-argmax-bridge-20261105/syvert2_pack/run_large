@@ -6,7 +6,7 @@ if ! command -v beregning >/dev/null 2>&1; then
 fi
 command -v beregning >/dev/null 2>&1 || { echo 'beregning is required' >&2; exit 1; }
 if [[ $(type -t beregning) == function ]]; then
-  beregning python3 -I server.py run_large "$@"
+  beregning python3 -I -S -B server.py run_large "$@"
 else
-  exec beregning python3 -I server.py run_large "$@"
+  exec beregning python3 -I -S -B server.py run_large "$@"
 fi

@@ -17,18 +17,20 @@ is possible here. Host hardware/allocation facts remain unverified.
 
 The producer takes an explicit published full source SHA. It checks each copied
 CODE/DATA byte against that commit, checks the hybrid FREEZE, and writes a fresh
-ZIP under existing Padua local-output. No .git is needed on Syvert2. The runtime
-manifest freezes every source, input, operation, header and library byte. Prose
+ZIP under existing Padua local-output. No .git is needed on Syvert2. The producer additionally requires dpkg-deb for
+reading the six trusted package archives, which are copied into the offline pack. The runtime
+manifest freezes every CODE/DATA input, operation, header and library byte. Prose
 hashes provide custody only and never decide scientific acceptance. The producer
-uses actual phase-checker/extracted assets, not a wheel. Matching multiarch GMP
-header/library source versions and installed ownership are checked before copying.
-The full target loader closure is included; target preflight refuses incompatibility
+uses actual phase-checker/extracted assets, not a wheel. All FLINT/GMP/MPFR header and library payloads are checked byte-for-byte against
+six SHA256-pinned official Debian packages; matching version/architecture metadata
+is additional attribution, never a substitute for byte verification.
+The pinned packages, full target loader closure, and asset provenance are included; target preflight refuses incompatibility
 and missing assets before the frozen setup.py network fallback can be reached.
 
 After audit/release and source publication, root may run (unexecuted example):
 
 ```sh
-python3 topics/padua-argmax-bridge-20261105/syvert2_pack/build_pack.py \
+python3 -E -S -B topics/padua-argmax-bridge-20261105/syvert2_pack/build_pack.py \
   --source-sha PUBLISHED_FULL_SHA \
   --destination local-output/argmax-bridge-20261105/final-syvert2-PUBLISHED_FULL_SHA
 ```
@@ -81,14 +83,27 @@ actual hostname and UTC. Send the full ZIP; keep the original frozen package.
 Data-only checking (after release, not run here):
 
 ```sh
-python3 -I verify_return.py RETURN.zip --package TRUSTED_RELEASED_PACKAGE \
+python3 -I -S -B verify_return.py RETURN.zip --package TRUSTED_RELEASED_PACKAGE \
   --manifest-sha RELEASED_MANIFEST_SHA256
 ```
 
-The checker authenticates exact whole group coverage, primary+fresh evidence,
+The shared per-attempt validator authenticates exact whole group coverage, primary+fresh evidence,
 directly captured EXIT0, whole accounting, replay linkage, raw records and the
 exact rational proof checker from the trusted local package. It executes no
 archive-supplied code, native oracle, compiler or producer. Successful attempts
 still await a distinct independent final scientific reviewer; status alone never
 certifies a degree. Preserve complete return archives off Git; small authored
 custody summaries are the only intended tracked delivery evidence.
+
+The revised validator cross-links receipt, raw/checkpoint/native endpoints, build,
+stage, preregistration, summary and final accounting. Internal artifact absolute
+paths map strictly under the registered package root. External compiler, headers,
+Python, loader and mapped-file bytes are captured once per SHA256 under
+`preserved-sha256/`; no external identity is merely attributed and omitted. Resume
+uses this same substantive validator on each existing attempt before admission;
+partial campaigns are supported. Collection includes all captured objects.
+README and published-commit attribution remain in separate SOURCE_CUSTODY.json,
+outside numerical/runtime acceptance identity. Every Python generation disables
+site processing and bytecode writes: operations use `-I -S -B`; sibling engine
+launches use `-E -S -B`. Equivalent package copies share a conservative manifest
+writer domain: any tagged live writer in that domain causes collection refusal.

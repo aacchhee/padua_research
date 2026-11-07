@@ -1,0 +1,19 @@
+{
+  "n": 41,
+  "mode": "produce",
+  "source_commit": "a916e550f324dc7548f472575bedd302feecaa9d",
+  "tool_session": 10976,
+  "initial_chunk": "3f8cee",
+  "completion_chunk": "8b3ee2",
+  "observed_exit_code": 0,
+  "direct_exit_observed": true,
+  "final_accounting": {
+    "bytes": 1154,
+    "sha256": "c74aeba3bdcf65766dc5d9593c7d4d4c727d5221f44a50e29761ba0f04e00e8d"
+  },
+  "receipt": {
+    "bytes": 6494,
+    "sha256": "faca30653a59e0c4416ff61ddb53c8ccda17c3b6a098163666c47e3cd3bb0697"
+  },
+  "no_retry": true
+}
