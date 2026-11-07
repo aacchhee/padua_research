@@ -200,3 +200,10 @@ Distinct math/protocol review is required; the canonical timing record
 is linked above and is not retrospectively cured. No scientific job,
 scalar/phase/source/threshold/degree/native call or pack work ran;
 scientificCPU0, ordinary tool overhead unmeasured. Root owns adoption.
+
+
+## Root mathematical adoption in WORK —2026-11-07
+
+Root adopts the full signed primitive outerrho>=1, EVERY integern>=384, strictgap>7/50, after distinct [independent-checks-E09-correlated-outer.md](../independent-checks-E09-correlated-outer.md), SHA2568756f68ddc145af309983dee9804c8436fccf29092eb815b5f332c5eccabc437. The exact frozen8814B proof prefixd7b91d1d55ed228acff25ac605095c639a94061c2393743b81c7badb5c0d0270 remains unchanged. All named mathematical premises and physical/all-real-n scopes were checked. NOTE N1 only clarifies a legal interior-index projection already required by the main proof.
+
+The reports separately preserve unwaived MAJOR chronology findings; their canonical disclosures remain in the named idea/attempt records. Mathematical adoption in WORK does not waive those findings or confer PR readiness. PD-T271 and accepted upstream premises remain explicit; the final Claude audit is separate. No scientific/source job was run and no minimal onset is asserted.

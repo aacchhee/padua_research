@@ -2,20 +2,20 @@
 
 A new analytic scalar theorem proves H(x)−H(0)<=−(pi−3)x²/(4pi³) on the full closed principal period, so its unique maximum is at0. It follows from an exact endpoint-cancelled integral and strict f-third-derivative sign, with no new numerical enclosure. [Proof](theory/E07-f-monotonicity.md), [independent acceptance](independent-checks-E07-H.md). Its application to a lower finite-n onset is separate.
 
-The exact parity-correct two-corner global argmax is proved for **EVERY integer n>=512**
-and finite degrees2–42,63–64,159–160,511–512. Exactly464 degrees remain OPEN:
-43–62,65–158,161–510. PD-T099 remains OPEN; the onset is sufficient,
+The exact parity-correct two-corner global argmax is proved for **EVERY integer n>=384**
+and finite degrees2–42,63–64,159–160,511–512. Exactly337 degrees remain OPEN:
+43–62,65–158,161–383. PD-T099 remains OPEN; the onset is sufficient,
 not minimal. The independently model-free finite1023 proof remains valid.
 
 ## Current accepted theorem and cost result
 
-[E07 global512](theory/E07-global-assembly.md) and its
-[independent review](independent-checks-E07-global512.md) prove the full
+[E09 global384](theory/E09-assembly384.md) and its
+[independent review](independent-checks-E09-global384.md) prove the full
 physical/parity-correct argmax using RATIONAL PAPER inequalities only.
 No scalar/endpoint/native/finite-degree job ran. Phase-aware ACTUAL
 noncorner floors are matched on near and annular charts; the new whole
 wide-FAR primitive comparison starts at rho=3/4. Both actual-corner
-closed side1 squares have radial loss1/3 from512. Old D37's stronger1024
+closedpi/4 squares have radial loss1/50 from384. Old D37's stronger1024
 gaps and rho>=1/2 primitive-FAR scope are preserved only at that onset.
 PD-T271 remains explicit; final Claude/upstream coverage audit is separate.
 

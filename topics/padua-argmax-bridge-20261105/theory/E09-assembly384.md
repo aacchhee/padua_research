@@ -326,3 +326,10 @@ upstream mathematical adoption does not waive chronology findings or
 establish readiness. No source, scalar/native/endpoint/phase/threshold/
 degree job or pack preparation occurred. ScientificCPU0; ordinary tool
 overhead unmeasured. Root alone owns Git/shared/adoption.
+
+
+## Root mathematical adoption in WORK —2026-11-07
+
+Root adopts the complete exact parity-correct two-corner global argmax for EVERY integern>=384, after distinct [independent-checks-E09-global384.md](../independent-checks-E09-global384.md), SHA256867344efc5438ea030223d9ddf8d8cb0c0ada49a508957c6e51f87e7cdbc4979. The exact frozen15410B proof prefixd74778d1ba707d596fa9f45d4bf991672caa202bc8dd0d2078e20e74127c4907 remains unchanged. All named mathematical premises and physical/all-real-n scopes were checked. NOTE N1 only clarifies a legal interior-index projection already required by the main proof.
+
+The reports separately preserve unwaived MAJOR chronology findings; their canonical disclosures remain in the named idea/attempt records. Mathematical adoption in WORK does not waive those findings or confer PR readiness. PD-T271 and accepted upstream premises remain explicit; the final Claude audit is separate. No scientific/source job was run and no minimal onset is asserted.

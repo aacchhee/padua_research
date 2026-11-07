@@ -119,10 +119,11 @@ NEW15coordinatedanalyticroundsauthorized2026-11-06 afterD39. E01ACTIVEpaper-only
 | E06 | COMPLETE | Paper-only exact axis-boundary completion and scalar-H shape/max frontier; no forced bound or computation. |
 | E07 | COMPLETE | Analytic scalar H maximum and full GLOBALargmaxEVERYn>=512 independently accepted; no new scientific jobs. |
 | E08 | COMPLETE | Phase-aware global allowance, actual-corner384 support and one-sided origin error; main384OPEN pending new errors. |
-| E09 | ACTIVE | Bounded20minAstraultra signed outer-plus-log upper, explicit full-error cusp retained outside this block. |
+| E09 | COMPLETE | Bounded20minAstraultra signed outer-plus-log upper, explicit full-error cusp retained outside this block. |
 | E10 | COMPLETE | Whole central root integral, remove artificial alpha²log majorant; no changed model or cusp deletion. |
-| E11 | GATE | Joint two-channel central improvement; gate-only phase before candidate generation. |
-| E12–E15 | UNALLOCATED | Remaining4 slots; redirect from proved bottlenecks. |
+| E11 | ACTIVE | Gate-first joint central-pair bound with exactnegativebeta penalty; frozen main/five-fourths proof under audit, naturalhalfpi extension being checked. |
+| E12 | GATE | Prospectivefixed256 continuation; gate-only before mathematicalrelease. |
+| E13–E15 | UNALLOCATED | Remaining3 slots; redirect from proved bottlenecks. |
 
 Newallowance1/15complete,14remainingincludingactiveE02. PackPAUSED.
 
@@ -140,3 +141,5 @@ CurrentNEW7/15COMPLETE; E08analytic384corner/phase-global/origin workactive. Eig
 CurrentNEW8/15COMPLETE; E09signedouter/matched384 andE10centralmodelactive; sevenroundsremainincludingthose. Global512/residual464; E08allmathcomponentsacceptedatnamedscopes, originprotocolP1unwaivedandbranchWORK. PackPAUSED.
 
 CurrentNEW9/15COMPLETE(E01–E08,E10); E09global384active,E11gatephase; sixroundsremainincludingE09/E11. E10exactfull-rootboundadopted; betaentropyremainsthenexttarget. Global512/residual464untilnewassemblyacceptance.
+
+CurrentNEW E01–E10 COMPLETE10/15; E11pairedroot/domainauditactive,E12gate-onlyprospective256,E13–E15unallocated3. GLOBAL384adopted, residual337:43–62,65–158,161–383. Five roundsremainincludingE11/E12. AllnewEworkPAPERONLY; protocolfindingsunwaived,branchWORK; packPAUSED.
