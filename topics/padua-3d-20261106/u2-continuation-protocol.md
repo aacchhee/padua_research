@@ -157,3 +157,68 @@ transfer or unseen stopping-parameter choice.
 C2 command as planned:
 
 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2c_calibrate.py --receipt topics/padua-3d-20261106/evidence/u2c-transfer14.json --output topics/padua-3d-20261106/evidence/u2c-calibration.json`
+
+## C3 prospective append — fresh degree16 with calibrated cap40
+
+C2 actually selected K40: training ratio0.74936, recorded prefix CPU28.8142,
+cubic forecast89.1653. Both longer caps fail the fixed100-second forecast.
+The forecast is a conservative planning heuristic, **not a guarantee**.
+This C3 tests a changed, explicitly calibrated stopping schedule; it is
+not an unchanged200-step transfer. All objective, start, direction,
+Neumann, Armijo, fallback and tolerances remain inherited U2-AB. Its
+scientific question is whether40 accepted steps at previously untested
+candidate degree16/N969 preserve at least5% searched-norm improvement
+against both one-sweep and comparable-extra-cost repeated localdet,
+within120 complete extra CPU seconds and numerical guards.
+
+Freeze degree16, exactly40 accepted steps maximum, one start from the
+inherited full one-sweep localdet/QR Lobatto33^3 rule; Leja and controls
+unchanged. Fix new assessment seeds2026110821 through2026110825;
+all C1 assessment sample counts, physical-start rules, nine functions,
+two measures and16-noise-trial reporting remain unchanged. New degree16
+outputs/queries are fresh; historical baseline data and function design
+are known. No assessment result selects the stopping schedule or nodes.
+
+C3 repairs C1's operational mismatch in **new source files only**.
+Define the expensive operation stages explicitly: training-grid/basis
+preparation; initial training maximum; initial objective/gradient; initial
+checkpoint; current-iteration preparation
+(separation/direction/current basis+inverse); trial geometric/Neumann
+guard; trial objective/gradient; durable trial checkpoint; final numerical
+guards; final output checkpoint. Check process time immediately before
+and after **each named stage**. Scalar bookkeeping between stages is
+included in elapsed cost. A completed stage beyond120 is retained but
+its trial is excluded from acceptance/selection; a pre-stage cap stops
+without executing that stage. If a cap interrupts an active trial before
+its normal checkpoint, write its coordinates and metadata administratively
+after the cap, charge that cost, and mark it excluded. Apply the original
+1e-4 fallback on every exit path, including CPU-cap exceptions. Persist each trial's coordinates and
+objective/guard metadata with flush+fsync **before** acceptance; include
+this I/O in its eligibility time. Buffer the acceptance ledger, then
+persist it and the selected nodes in the final output checkpoint, with
+its cost included. Completed stage overshoot is observed/reported, never
+called a hard physical wall-time limit. If cap prevents final numerical
+validation, do not count numerical eligibility as passed.
+
+Keep the accepted, fully checkpointed within-budget iterate of lowest
+training maximum, including the initial fallback. Complete extra CPU
+includes training basis, trial checkpointing, final numerical guards and
+selected-node output. Full extra cost<120 and no cap hit are required
+for the cost gate. Hitting cap40 without convergence may pass the finite
+cost gate but remains unfinished optimization. The final output timing
+ledger is reporting overhead outside the construction clock; all
+candidate coordinate/event checkpoints and numerical checks are inside.
+
+The repeated identical localdet control uses min(120, actual U2 complete
+extraCPU), with each full sweep and its node checkpoint counted. Choose
+the last fully completed within-budget sweep regardless of quality,
+retain/exclude first overshoot. Include common QR+first-sweep cost in
+both totals. Root must grant an isolated construction/control CPU window
+before execution. Every set receives full fresh assessment even if a
+construction gate fails. Stop this cap40 degree16 schedule if any gate
+fails; no degree/seed/step-cap repeat is automatic. More research requires
+another distinct prospectively registered question and actual promise.
+
+C3 planned command:
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2c_heldout.py --scratch <unique-new-dir> --output topics/padua-3d-20261106/evidence/u2c-heldout16.json`
