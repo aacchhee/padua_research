@@ -283,3 +283,110 @@ at ccab7af1and their recorded hashes.
 Planned command after publication/review/CPU release:
 
 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/pdpr_run.py --round constrained --protocol-commit <published-P2-sha> --reference topics/padua-3d-20261106/evidence/pdpr-pilot.json --scratch <new-unique-dir> --output topics/padua-3d-20261106/evidence/pdpr-constrained.json`
+
+## P3 prospective appendix — calibrated near-minimal tradeoff transfer
+
+2026-11-07, after P2complete output was published at
+d57b2b17a04418bb90f554b61a4ed61a6f444a0b. P1andP2consume2/15 and both
+retain their failed strict full-grid-preservation gates. The10%noise and
+1.30norm ratios were research tolerances, not user-supplied requirements.
+P3explicitly asks a different matched-count tradeoff question; it does not
+relax those old gates into a pass.
+
+Existing n8P1data calibrate this test: at M198=ceil(1.20N), A has sampled
+amplification20.39185/fixed-B225risk0.905549, against same-count restrictedQR
+25.23022/1.030698; localdet at N165 has23.97261/1.167425 and full OLS225
+has7.87067/0.709997. Thus a near-minimal support may offer lower noise and
+amplification than tested minimum-count controls at the cost of33additional
+sites. Individual function regressions and the much better full-grid
+amplification remain explicit. No mathematical Pareto optimality is claimed.
+
+Candidate IDEA?padua-3d-20261106-prune-Pareto: the known A deletion rule
+at a **prespecified absolute count**, under a changed operational objective.
+The gate/next-questions note clears this as finite matched-count research,
+not a new method. Choose A by its already known lower noise at198sites;
+D's alternative remains recorded, not retested on unseen n12then selected.
+The falsifier is failure of the new fixed-count gate against strong controls,
+especially the stored modern455-node U2set, not a favorable target/charge
+chosen after seeing n12results.
+
+P3is one round comprising an n8known-path reproduction and an unseen
+**degree12transfer**, N455/start M637. Use the identical canonical grid,
+physical unweighted OLS, A score/ties/rank guards/QR downdates/refactors
+from P1. A deletes to N for diagnostic count/risk curves if numerical
+checks permit. The primary operational support is **ceil(1.20N)** (198/546).
+Also assess ceil(1.10N) (182/501), N (165/455), and full start; no held-out
+choice changes the primary count. The old strict-prefix stopping point
+is recorded only as the failed P1-style diagnostic, not P3selection.
+No temporary training-norm constraint enters this fixed-count A path.
+
+At every assessed count, save the actual node IDs, coordinates and fresh
+validated physical map before proceeding, charging flush/checkpoint costs.
+Record complete prefix construction CPU/wall immediately after this final
+validation/checkpoint. Also record the actual full-to-N diagnostic cost;
+do not charge all later diagnostic work to the usable prefix or report an
+uncheckpointed early timer as complete construction cost. The prefix must
+include starting-node/basis/QR preparation and all previous operations.
+At n8the complete retained-index trajectory must equal P1's pinned path;
+any disagreement fails reproduction, without reseeding/repair.
+
+New held-out Chebyshev/uniform seeds are2026111920+n/2026111930+n,
+2048queries per measure. Keep nested21^3/41^3angular meshes. To challenge
+coarse-mesh rankings, every map additionally gets the **same** angular
+L-BFGS-B row-l1 refinement rule: four largest41^3sample points, eight
+corners, and16new angular-uniform starts (seed2026111940+n),28starts total.
+Use inherited analytic angular derivatives and original maxiter200/maxfun5000/
+ftol1e-12/gtol1e-8; retain each initial/final value and solver status. Return
+the maximum of all held-out samples and every initial/final search value.
+This is a sampled/searched **lower value**, not a certified supremum.
+Queries/searches never select deletions, rules or counts.
+
+All maps get the same queries/functions/noise/cost definitions as P1/P2:
+12known targets on both measures, pointwise unit-noise variance by query
+family, unit-noise trace, M*trace, feasible actual integer repeats at
+B=M_start (225/637), every sigma/target calibration table and every
+regression. Every same-count restrictedQR prefix uses the identical
+canonical pool and unscaled QR pivot basis. Include newly constructed
+full-grid OLS/Haar, globalQR at N and one-sweep localdet at N. At n12,
+**decode and verify the unchanged committed455-node U2payload**, assess its
+actual physical map on the same fresh queries/searches, and retain its
+complete original source/payload identity. Its existing exact unisolvence
+proof is separate from the fresh measured norm/error results. Report its
+load/map cost and link original offline construction cost rather than
+pretending the saved artifact requires optimization again.
+
+P3's practical transfer gate, evaluated at primary M=ceil(1.20N), requires:
+
+1. Successful n8whole-path reproduction and all retained numerical guards.
+2. At both degrees, >=10%site saving from the full starting support; primary
+   complete prefix cost<=120process CPU seconds and no missing/capped work.
+3. At both degrees, **both** integer-budget risk and sampled/searched
+   amplification <=0.95times same-count restrictedQR.
+4. At neither degree may a tested minimum-count control dominate the primary
+   point: a control at N has fewer sites already, so domination means its
+   integer-budget risk and sampled/searched amplification are both <=the
+   candidate (relative equality tolerance1e-10). Compare globalQR/localdet
+   at both degrees and storedU2at n12. Cost is shown separately, including
+   saved-artifact advantages; no universal setup/application/error winner.
+
+Retain each failed component, all function/noise regressions, and the
+old full-grid-preservation ratios. This gate supports only a finite
+site/noise/amplification tradeoff, not a data-only unknown-target selector
+or a global Pareto theorem. Diagnostic1.10N/Nfailures cannot be hidden by
+the primary1.20Nsuccess, or vice versa. A failure stops this calibrated
+near-minimal transfer variant; no degree/seed/count sweep is automatic.
+A success permits a separately published degree16transfer and then a
+compact canonical-ID artifact/exact-rank check if independently supported.
+Reflection-pair/support experiments remain separate unallocated questions.
+
+P3budget900process CPU seconds for both degrees, diagnostic construction,
+controls and assessment. Root grants an exclusive window after publication/
+focused code review. Retain completed operation overshoots, explicit unrun
+work, UTC start/end/source/input/version/thread identities and one complete
+compact receipt (<16KiB) with full precision hashed raw tables, as in P2.
+The exact n12stored455payload remains unchanged. No scientific execution
+precedes this prospective publication.
+
+Planned command:
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/pdpr_run.py --round frontier --protocol-commit <published-P3-sha> --reference topics/padua-3d-20261106/evidence/pdpr-pilot.json --scratch <new-unique-dir> --output topics/padua-3d-20261106/evidence/pdpr-frontier12.json`
