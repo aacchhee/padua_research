@@ -1,6 +1,6 @@
 # Handoff20 — Audited unified manuscript and remaining preparation
 
-- Status: open
+- Status: done in 5b7ed455a103e01599bec23ea2d4cf0e8f0d773e
 - Previous handoff:19-unified-half-length-manuscript.md
 - Next agent / model / effort: Codex coordinator; gpt-6.1-sol medium for technical preparation; gpt-6.1-sol max for any necessary new mathematical manuscript audit as AC requests
 - Role: orchestrator / publication preparation
