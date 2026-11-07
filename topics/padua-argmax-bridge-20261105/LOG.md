@@ -2189,3 +2189,29 @@ external publication without destination-specific approval. PR remains
 draft with its previous description. No fallback or indirect bypass is
 used. A concise explicit approval question for adding manuscript/build
 links is pending; this does not block the completed pushed paper sources.
+
+## 2026-11-07 — AC requests unification and roughly half-length paper
+
+Rules AGENTS/WORKFLOW/CODEX reread at
+971959024c038870c504322b485cc1dcf958e189. Fetch of main/topic completed;
+base remains f70a260e5b5f9a01209dc8a05faabdcf8db1feeb and topic matches
+remote. AC finds88pages excessively heavy and explicitly requests Solmax
+audit, a reduction by about a factor2, and a unified argument rather than
+an atlas. This overrides the repository's usual Astra allocation for
+this requested audit; requested gpt-6.1-sol max is available and assigned
+to a distinct structural/fidelity auditor. Actual serving metadata is
+unexposed. This does not waive the pending substantive Claude batch audit.
+
+Aim:40–45pages total in the same Springer template, with standard font/
+layout and preserved theorem scope. Unify shared definitions, row and
+error arguments, eliminate historical/general variants and duplicate
+statements/proofs, and keep the conceptual narrative continuous. Do not
+merely relocate the same bulk into a supplement or shrink the font.
+No new research mechanism/novelty claim, numerical campaign, final-ID
+allocation, source/evidence deletion or canonical theorem change. The
+existing full manuscript is preserved by pushed commit a948b24. The
+novelty gate is inapplicable to faithful editorial consolidation.
+
+Pending AUDIT18 is redirected to WORK19; the entire original pending
+audit remains preserved for after the rewrite. PR-metadata publication
+approval remains pending; do not retry or bypass the rejected update.
