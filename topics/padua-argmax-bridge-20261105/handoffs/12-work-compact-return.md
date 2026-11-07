@@ -1,6 +1,6 @@
 # Handoff 12 — Padua argmax bridge — validate compact return and sampled native replays
 
-- Status: open
+- Status: done in 26f0e84363fd114edb9c0729995aea61da34c7e6
 - Previous handoff: 11-work.md
 - Next agent / model / effort: Codex, gpt-6-astra high coordinator; Sol medium technical execution, distinct Astra checks as appropriate. Serving metadata is unexposed; record requested/API-accepted identities honestly.
 - Role: orchestrator/developer
