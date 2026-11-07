@@ -2588,3 +2588,65 @@ distinct Sol max reviewer is checking the same global standard. Concrete
 remaining teaching additions will be made before the final freeze and
 review verdict. Current full-build artifacts are interim, and the focused
 review remains in progress. No original paper edit or native job occurs.
+
+### Whole-document elementary derivations complete
+
+The second depth pass fills all identified gaps throughout the companion:
+ten foundation groups, ten corner groups, twelve comparison groups,
+fourteen localization groups and the remaining certificate tools and
+arithmetic vocabulary. These include matrix entries and reproducing
+double sums; explicit endpoint/cutoff errors and asymptotic cancellation;
+the complete finite-row coefficient/variation/shift ledgers; selected-pair
+constants and degree/radius monotonicity; de Casteljau, Machin bounds,
+finite trigonometric differentiation, exact proxy predicates and a phase
+diagram. The canonical proof sources supply the existing constants;
+no new mechanism, theorem or computational campaign is introduced.
+
+The distinct Sol max reviewer checks the new derivations as well as the
+first-use definitions. Findings on added prose are addressed, including
+the sampled Cauchy expression's domain, phase/radian scaling, explicit
+degree/center scope, the residual's integrable derivative, the cotangent
+series dependency, and the BV sample-value inequality. Root finishes an
+affirmative wording pass and splits four new overwide displays. The
+formal statements, original numbered blocks and source/citation labels
+remain unchanged.
+
+Final source freeze `ac945041ce73b74c2c4ec29c42ebeb8773e7a9b8` builds
+at 162 pages, below the 240-page ceiling. The --artifacts correspondence
+check passes: all 20 original paper files and the original PDF are intact,
+with the original 13 statement environments, 90 numbered display
+environments and all 113 compiled label numbers preserved. Final build
+diagnostics have no error/warning/undefined/overfull issue; underfull-box
+diagnostics remain. Root inspects final pages 14, 100, 144 and 145.
+
+PDF: 1153227 bytes, SHA-256
+`2ec6b0723ccea6eef1368dfa0c974c4ec679a3279ef84d6ccb696c4a42c7d2f7`.
+Timestamped copy, verified identical:
+`local-output/padua-argmax-bridge-20261105/companion-paper/padua-companion-20261107-222747-Oslo.pdf`.
+Build details are in companion-paper/BUILD.md. PDFs, template files, logs
+and images remain off Git. The original paper's files, 48-page artifact
+and completed reviews retain their prior identities.
+
+The final diagram-label layout fix is checked by a new render. Root
+verifies all eight active source files against the final freeze and the
+fresh timestamped PDF against main.pdf. Essential-evidence index check
+passes at 396 entries / 32414 index bytes. The size script reports
+9771914 bytes; adding the inherited 2087-byte charge leaves the unchanged
+conservative generated bound 9774001 bytes, below AC's 10000000 cap.
+All new tracked material is authored source, explanation or review.
+
+The distinct Sol max review is **ACCEPT** at the final source freeze,
+with no unresolved finding; see companion-paper/review.md. It checks
+the complete new explanations and calculations, all 211 retained original
+display blocks and the final rendered diagram, and independently compares
+the 113 built reference numbers. It inspected root's build and ran exact
+elementary arithmetic checks; it performed no independent build or native
+campaign. Root reads the complete report and verifies its eight frozen
+source hashes. The existing mathematical/computational premises and
+publication tasks remain unchanged.
+
+This completes AC's separate-companion request and whole-document depth
+clarification. Commit the outputs, then close handoff 26 and open 27 in a
+separate handoff-only commit, and push the authorized working branch.
+Handoff 27 carries the preserved original paper, the accepted 162-page
+companion, and the remaining feedback/publication scope.

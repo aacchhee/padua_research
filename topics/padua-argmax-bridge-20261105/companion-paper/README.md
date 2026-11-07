@@ -18,6 +18,14 @@ Build from the repository root:
 
 ```bash
 bash topics/padua-argmax-bridge-20261105/companion-paper/build.sh
+python3 topics/padua-argmax-bridge-20261105/companion-paper/check_correspondence.py
+```
+
+When the preserved baseline PDF and its TeX auxiliary file are available
+in the original local-output directory, also compare the built numbers
+and check that the original PDF is intact:
+
+```bash
 python3 topics/padua-argmax-bridge-20261105/companion-paper/check_correspondence.py --artifacts
 ```
 
@@ -35,3 +43,28 @@ The theorem assumptions and computational evidence scope remain those of
 the research article. The development and audit history are recorded in
 the topic log. Permanent public code/evidence release and final human
 review remain publication tasks.
+
+## Current expanded version
+
+The complete companion is **162 pages**, about 3.4 times the original
+48 pages and within the 240-page ceiling. Source freeze:
+`ac945041ce73b74c2c4ec29c42ebeb8773e7a9b8`. All five sections and
+their subsections are retained, together with the same 13 formal
+statements and 90 numbered display environments. All 113 compiled label
+numbers match. The original paper directory and PDF are unchanged.
+
+Explanations run throughout: definitions and linear algebra in Section 2;
+row sums, quadrature and limit interchanges in Section 3; reflection
+geometry, scalar models, coefficient ledgers and monotonicity in Section 4;
+finite certificates, positive interpolation and arithmetic in Section 5.
+The review includes a second whole-document depth pass after AC clarified
+that the screenshot was an example of the standard for every section.
+
+Current timestamped PDF:
+`local-output/padua-argmax-bridge-20261105/companion-paper/padua-companion-20261107-222747-Oslo.pdf`.
+It is 1153227 bytes, SHA-256
+`2ec6b0723ccea6eef1368dfa0c974c4ec679a3279ef84d6ccb696c4a42c7d2f7`.
+[BUILD.md](BUILD.md) records build and inspection details;
+[review.md](review.md) records the distinct Sol max review and its scope.
+That review accepts the complete companion at the final source freeze,
+with no unresolved findings.
