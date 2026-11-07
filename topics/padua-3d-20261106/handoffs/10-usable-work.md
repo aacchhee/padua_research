@@ -1,6 +1,6 @@
 # Handoff10 — usable point-set campaign
 
-- Status: open
+- Status: done in a3dd7c8bcb8a9e4620b608fe29ae37d79bdb0599
 - Previous handoff: [09-audit.md](09-audit.md), superseded only by AC's new campaign authorization; its pending focused-audit scope is preserved.
 - Next agent/model/effort: Codex, gpt-6-astra high coordinator; gpt-6.1-sol xhigh mathematical developers and separate supplementary checkers.
 - Role: developer/orchestrator.
