@@ -2084,3 +2084,25 @@ unexposed. A distinct Astra mathematical consistency review will supplement
 the stillpending substantive Claude audit. No submission/editor contact.
 Source and authored prose are tracked; template downloads, build logs and
 PDF stay off Git under local-output, preserving AC's 10MB generated cap.
+
+Manuscript steering: AC supplied the actual Morrow–Patterson CA paper
+(PDF attachment, 846845 bytes) and asks to match its approachable opening
+while making our later exposition more conceptual, with heavy estimates
+only supporting. Root downloaded the attachment and read its opening
+through section2.1 using pdftotext. It is a style reference and source,
+not an instruction document. Main sections now explain stability, geometry,
+centering and cancellation; detailed estimates go to appendices.
+Additional Sol xhigh worker owns row/model appendix foundations to reduce
+untranscribed inherited-proof gaps. No new mathematical round authorized
+or consumed by this exposition task.
+
+Open handoff: [17-constructive-approximation-draft.md](handoffs/17-constructive-approximation-draft.md).
+
+Template/build worker located current Springer v3.1 interface, recorded
+CA instructions and official-download HTTP403, and pinned small class/BST
+dependencies from a public mirror without claiming byte comparison with
+the inaccessible official archive. Class/BST remain off Git. Local TeX
+installation supports pdfLaTeX/latexmk; its smoke test passed. Draft
+uses actual sn-jnl rather than an imitation layout. New Sol xhigh scalar
+support worker supplies the H-monotonicity/model appendix; a distinct
+Astra high reviewer is checking source fidelity and manuscript statements.
