@@ -144,3 +144,20 @@ Independent synthetic controls and their exact command, substitutions,
 bounds and harness hash are preregistered in
 `code/audit02_execution_review/PREREGISTRATION.md`. They have NOT executed.
 No scientific/native/compiler execution has occurred in this review.
+
+## Controls01 result and focused continuation
+
+The published preregistered command ran once at4787aea and returned directly
+observed exit1. The first five controls passed: actual exit7, ignored SIGCHLD
+refusal/record, ECHILD refusal, HUP cleanup and QUIT cleanup. Parentdeath failed
+before launching the fake engine because the harness's inherited hardCPU12
+conflicted with the actual worker's requested260. This is my fixture defect;
+it does not establish a source defect. The observer cleaned one fake sleeping
+supervisor. The remaining six cases did not execute. See
+`code/audit02_execution_review/RESULT-01.md` for exact raw identity and record.
+
+A focused corrected harness/preregistration02 retains the failed run and
+selects only parentdeath plus the six unreached cases. The parentdeath fixture
+alone lowers its copied wrapper CPU profile to10; actual source and scientific
+caps stay unchanged. Further execution is pending publication/root release.
+Static-source acceptance remains unchanged; operational acceptance is pending.
