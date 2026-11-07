@@ -2324,3 +2324,46 @@ claim of a submittedsupplement. No mathematical input/claim/proof changes.
 No new broadSolmaxaudit is necessary for this metadata-only diff; root
 will independently inspect source fidelity/diff and actualcompile.
 Audited46page PDF preserved offGit in paper/audited-46-pages/.
+
+### Supplied latest Springer package resolves mirror provenance
+
+While author metadata work continues, AC supplies December2024 templateZIP
+file_00000000562c81f4a3154b17086f3802,901814B,
+SHA812e76dcaa9c28dc1bff1fb6065d51729b67d4ea140552a05088317414a3ecae.
+Root inspects ZIP member inventory and sampleversionheader; both used
+class/BST hashes and sizes exactlymatch existingpins. Only those two
+members are read into the offGit template directory, no bulk extraction
+or copiedsamplecontent. Buildscript/paperlayout/math unchanged.
+The earlier no-bytecomparison limitation is resolved against this supplied
+package; provenanceJSON/templateREADME updated. Embedded samplecomments
+are formatreference, not userinstructions. One-TeX submissionbundling
+remains eventualpublication packaging, not a new request to submit.
+
+### Metadata and exact supplied-template verification complete
+
+Solmedium metadata edit compiled cleanly. Root independently read the
+source diff/PDFfrontmatter, fixed CRediT spacing/provider names, and
+clarified availability:199/238complete histories were inspected and fresh
+nativeverify executed; no fullproducer-history rerun or unsampled-local
+history is claimed. Source fcf6132c6ba53c112c990946d067799d7a1a8567.
+Input graph and all seven mathematical/bibliography identities from the
+Solmaxacceptance remain byte-identical. No proof re-audit/native job.
+
+Initial optionalorcidlink experiment clashed with the class's orcidlogo;
+final document uses a readable linked ORCID URL without class overrides.
+Both exact uploaded template members replace localdependencies and match
+all pinned hashes. Ordinary build is uptodate on identicalbytes; root
+then forces actual latexmk-g recompilation with existing engine/options/
+paths/timestamp. Full46pagePDF631614B
+SHAcb78f3710fdd7cecd10c542053c5595390c189d41862308af0df7d1dd7df5d9a
+retains clean diagnostics. NewZIP/fullthirdpartycontents stayoffGit.
+README/BUILD/templateprovenance reflect authorcompletion and the now
+resolved mirror-comparison limitation. Permanentrelease/finalhumanreview/
+one-TeX submissionbundling remain publicationpreparation.
+
+Final staged-tree sizecheck:9430928base+340986positive deltas+2087
+inheritedFREEZE charge=9774001B<10000000B. Only the small provenanceJSON
+size changed; suppliedZIP and template members/PDF stayoffGit. Current
+requested author/template work is complete. Next handoff21 preserves
+completedSolmaxmathaudit and records remaininghuman/publication/release
+work plus single-TeX bundle guidance. No blockedPRmetadata retry.

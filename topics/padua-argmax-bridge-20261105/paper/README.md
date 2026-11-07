@@ -72,8 +72,28 @@ indexed. The essential evidence index has396 entries/32414 bytes, below
 its reviewed32KiB limit. No raw histories, PDFs, template dependencies or
 build logs belong in Git; tracked generated outputs remain below10MB.
 
-Authorship, affiliations, human declarations, final AI-assistance wording,
-a durable public code/evidence release and final-ID cleanup at reviewed PR
-preparation remain. No submission or editor contact has taken place. The
-publisher-template provenance and official-download access limitation are
-recorded in [template/README.md](template/README.md).
+Author information, ORCID, funding, conflicts and contributions are now
+supplied from Paper F under AC's explicit authorization; the AI disclosure
+is adapted to the actual Padua work. Final human review, permanent public
+code/evidence release and final-ID cleanup at reviewed PR preparation remain. No submission or editor contact has taken place. The
+publisher-template provenance is recorded in
+[template/README.md](template/README.md): both used files now match the
+user-supplied December2024 package byte for byte, resolving the initial
+mirror comparison limitation.
+
+## Author and template update — 7 November 2026
+
+The author is Andrey Chesnokov, Department of Mathematical Sciences,
+Norwegian University of Science and Technology,7491Trondheim,Norway;
+correspondence and ORCID appear in the manuscript. Source: PaperF main.tex
+at bttb-research commit5ed62a8d6be1dd98f462bbd97c8428ea2fcc6f54, read
+under explicit permission to reuse these fields. F's science text and
+its submitted-archive claim were not copied. No unperformed final human
+checks are asserted; the Padua data-retention scope remains explicit.
+
+Only main.tex front/back matter and PDF author metadata changed. Root
+reviewed the diff against the source, verified the unchanged input graph
+and all seven mathematical/bibliography source hashes from the accepted
+Solmax review, and compiled the46-page update. No mathematical re-audit
+or new scientific numerical execution was needed. The original audited
+46-page PDF is preserved under local-output/.../paper/audited-46-pages/.

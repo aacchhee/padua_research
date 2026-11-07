@@ -92,3 +92,27 @@ CONSOLIDATION.md. Sol max audits the final mathematical correctness and
 redundancy in consolidation-audit.md. The new common small-degree replays
 are scientific checks recorded separately in small-degree-unification.md;
 they are not inferred from successful TeX compilation.
+
+## Author metadata and supplied-template build — 7 November 2026
+
+Author/front/back matter source commit
+`fcf6132c6ba53c112c990946d067799d7a1a8567` supplies the authorized author
+information and adapted disclosures. All seven mathematical/bibliography
+identities and the input graph from the accepted Solmax review remain
+unchanged; main.tex changes are metadata only.
+
+The December2024 package supplied by AC is now verified: its class and
+numbered math/physics BST exactly match the pinned dependency bytes.
+Those local files were replaced from the ZIP. The ordinary build reported
+up to date because the bytes are identical; a forced `latexmk -g` using
+the same options/template paths/stable timestamp then actually recompiled
+successfully. It uses the same SOURCE_DATE_EPOCH1794009600 and
+FORCE_SOURCE_DATE=1 as build.sh. No class/style patch was needed.
+
+Current PDF:46pages,631614 bytes, SHA-256
+`cb78f3710fdd7cecd10c542053c5595390c189d41862308af0df7d1dd7df5d9a`.
+It has Andrey Chesnokov in its PDF metadata and correctly rendered
+correspondence/affiliation/ORCID/disclosures. There are no TeX errors,
+undefined references/citations, overfull boxes or warnings. The previously
+audited46-page PDF remains under `paper/audited-46-pages/main.pdf` in
+local-output; all PDFs and the supplied901814-byte ZIP remain offGit.

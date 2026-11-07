@@ -3,7 +3,6 @@
   "official_template_version": "3.1, December 2024",
   "official_archive": "https://cms-resources.apps.public.k8s.springernature.io/springer-cms/rest/v1/content/18782940/data/v12",
   "mirror_commit": "dfeb5372e9211ef50b8d46023e64221f4a8c8de8",
-  "verification_limit": "Official archive returned HTTP 403; mirror bytes pinned, not byte-compared with the official archive. Mirror example identifies v3.1 December 2024.",
   "files": [
     {
       "name": "sn-jnl.cls",
@@ -17,5 +16,12 @@
       "sha256": "b3a7c7fbcc1e7f9619de634fcea2f5bb7a245818a5942bc576e40ea001633332",
       "url": "https://raw.githubusercontent.com/iftaken/anor-template/dfeb5372e9211ef50b8d46023e64221f4a8c8de8/sn-mathphys-num.bst"
     }
-  ]
+  ],
+  "verified_package": {
+    "source": "User-supplied Springer Nature journal template package, version3.1 December2024",
+    "file_id": "file_00000000562c81f4a3154b17086f3802",
+    "bytes": 901814,
+    "sha256": "812e76dcaa9c28dc1bff1fb6065d51729b67d4ea140552a05088317414a3ecae",
+    "verification": "Both used class/BST members match the pinned mirror bytes exactly; sample header confirmsVersion3.1 December2024. Local build dependencies replaced from uploaded members."
+  }
 }
