@@ -77,3 +77,22 @@ or success forecast. The conditional full raw+archive proxy near20.1GB is
 likewise not a storage bound;32GiB initial scratch and measured archive-peak
 checks provide operational policy, not a theorem about arbitrary future raw
 outputs. No residual degree is certified by this delivery review.
+
+## Released focused controls — PASS
+
+Root published source/harness at
+`7cf34bcee4be9bdd5b4a871426083333a89b7c15` and released the exact command in
+`code/syvert30_review/PREREGISTRATION.md`. I executed it once; direct tool
+chunk075e49 returned exit0. All23 named checks passed, failure=null.
+Measured selfCPU0.007756184s and wall0.008918542s. Subprocesses0, systemd
+executions0, native executions0. No retry or source mutation.
+
+Retained raw receipt:
+`local-output/argmax-bridge-20261105/syvert30-controls.json`, SHA256
+`1da990b545de1a3ffdc3f6d2220cd82d5d9b321349f59485d12ee0635aadbb5a`.
+The exercised resolver/guard/preflight gates match their stated synthetic
+scope. Actual Syvert2/systemd/beregning operation remains untested; original
+unchanged-source/known-case evidence is not represented as a30-worker test.
+
+**Source plus focused synthetic controls ACCEPT. Actual built ZIP inspection
+remains pending; no target or residual execution has occurred.**

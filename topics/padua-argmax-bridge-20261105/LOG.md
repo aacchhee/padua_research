@@ -1672,3 +1672,15 @@ Allocation justification: request distinct Astra ultra adversarial mathematical 
 ### Syvert30 exact source and focused controls release
 
 Distinct Astra medium static ACCEPTS new21rowcandidate CANDIDATE.sha256d67a11930d74cf62f631adcdb3bb8c4a4e0d21b6fc63737c43730947da9f6a6f. Root read actualcgroups/memoryguard/preflight/README/builddelta andfullindependentfixture/prereg: controls.py750c7bef9919d891fc3a1143c49212e47e5a437744b368103b6688fa980b342f,23fixedassertiongroups, all exec intercepted, ZEROsubprocess/systemd/native/compiler/science. CPU10/15self, expected<30wall, fresh exclusive local-output/argmax-bridge-20261105/syvert30-controls.json, firstfailurepreserved/no retry. AFTER THIS sourcepublication rootreleases exactly code/syvert30_review/PREREGISTRATION.md command ONCE. Actualtargetsystemd/beregning/30workerbehavior remainsunexecuted; nohostclaimfromfixtures. OriginalscientificFREEZE andoldZIPunchanged. Builderreleasefollowsactualcontrolresultwithselectedpublishedsourceexplicitlyrecorded.
+
+F07fullgateCOMPLETE, ONEfixed256completefive-fourthsouterpruninggate prospectivelyregisteredincampaignF BEFOREseparatepaperrelease. Wholee0, consistentj*/t*, positivityKbeforedivision, no endpointscan/retune. This is cost-reductiontheorem support, not moredegreesbyoldcertifier. F08–F10 three rounds remainunallocated. Syvert30usesunchangedsciencependingnewproof/sourcevalidation, no packdelayassumed.
+
+### Syvert30 controls accepted; exact final offline build release
+
+Focused23controls ran once atpublished7cf34bcee4be9bdd5b4a871426083333a89b7c15; directEXIT0 completion075e49, receipt1da990b545de1a3ffdc3f6d2220cd82d5d9b321349f59485d12ee0635aadbb5a. SelfCPU.007756184/wall.008918542, subprocess/systemd/nativeZERO. Source+syntheticreview ACCEPT; targetavailability remainsunmeasured.
+
+Root explicitly fetched topictracking to7cf34bc (remote fetchconfig ismainonly), avoidingpriorstale-sourcegate. Select exactpublished7cf34bcee4be9bdd5b4a871426083333a89b7c15, candidate d67a119..., 6unchangedlocalpublicpackagepins, originalscienceFREEZE. AFTER THIS publication, release exactlyONE builder command fromrepositoryroot:
+
+    prlimit --cpu=120:120 --as=4294967296:4294967296 --fsize=1073741824:1073741824 -- timeout --signal=TERM --kill-after=10 300 python3 -I -S -B topics/padua-argmax-bridge-20261105/syvert30_pack/build_pack.py --destination local-output/argmax-bridge-20261105/syvert30-7cf34bcee4be9bdd5b4a871426083333a89b7c15/padua30 --source-sha 7cf34bcee4be9bdd5b4a871426083333a89b7c15
+
+Freshstdout/stderr local-output/argmax-bridge-20261105/syvert30-build.stdout/.stderr.2GiBartifact+ZIPreservation; actualfreespace>26GiB, capperprocessnotwhole-treeclaim. No compiler/scientific/nativecase, no remote job. Preservefirstfailure/directtoolEXIT/no retry. DistinctactualZIP/source/manifest/modes/arithonly/worklist/memorypolicyinspectionfollowsbeforeACdelivery. This build createsNEWpadua30.zip; oldSyvert2ZIPimmutable. No packbuilderrunoccurredatpublication.

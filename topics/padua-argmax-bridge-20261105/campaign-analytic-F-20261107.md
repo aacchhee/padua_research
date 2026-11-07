@@ -12,7 +12,7 @@ Starting accepted theorem: exact parity-correct two-corner argmax for every inte
 | F04 | RELEASED PAPER | Literal cancellation-block boundary-corrected entropy-cell remainder, exact target below. |
 | F05 | RELEASED PAPER | Complete beta-axis first inner transported-row crossover, c in[1/2,3/2], n>=32. |
 | F06 | RELEASED PAPER | Joint signed distance-two discrete endpoint floor; exact scope below. |
-| F07 | GATE ONLY | Fixed256 five-fourths outer pruning for cheap certifier; no endpoint evaluation. |
+| F07 | RELEASED PAPER | ONE fixed256 five-fourths outer pruning gate, full e0, no scan. |
 | F08–F10 | UNALLOCATED | Three later coordinated rounds; no mathematical release. |
 
 F01 principal Sol xhigh has completed a full fresh gate for I07. The disjoint I06 helper remains GATE ONLY and may not consume unfrozen I07 work. F01's prospective target is a standalone COMPLETE finite relative allowance on the CLOSED signed rho<=5/4 domain, all integer n>=32 or an explicitly justified stricter floor, with named exact masks, continuous collision values, actual origin normalization and every ordinary/retained/mesh/outer-log charge. Re-prove all domain-dependent guards; the existing E11 model extension alone supplies no finite-error guard. Derive explicit rational coefficient functions rather than assuming the old47/50 constants extend. A separately stated generic E13 outer implication may be reanchored at the same radius; no base degree is selected or evaluated.
@@ -57,3 +57,14 @@ E06's alpha<=h/2 scope is not transferred; N2 mixed collisions need not be posit
 Adaptive full gate COMPLETE, F02 exact-reference obstruction is retained. PAPER subtarget: EACH applicable one-direction projection at endpoint distance s=2 in either orientation, EVERY integer n>=128 and actual signed |alpha|+|beta|<=r<=pi/4, prove Q>=1/5-3r/20-3/n. This is a discrete endpoint support only; no complete fifth-floor/global/onset claim. Preserve each branch's ACTUAL signed numerator, both physical orientations/projections, original normalizations, n,m, weights and linked collisions; never double unlike branches or add projections. FIRST derive complete exact straddling-index ranges through moving branch crossings, including sample equality/collision, before estimating the floor. If no uniform usable finite bound follows, retain OPEN at that exact test rather than weaken by fitting/scan.
 
 The larger three-region hybrid remains OPEN: distances1..4 discrete, shrinking-angle s>=5 separate, compactgamma>=pi/6 with genuinely fixed-height capped reference. This round does not assume a cap height, integrate a new limit, or silently bridge those regions. The existing C02 cA/D cap is not fixed height and does not escape F02. Localidea+attempt must be written BEFORE derivation; separate root release permits PAPER ONLY, no scripts/imports/numericalquadrature/scalar/phase/degree/endpoint/nativejobs.
+
+## F07 prospective release — fixed256 five-fourths pruning
+
+Applicable full gate COMPLETE. Quantitative application of accepted F01, not a new common-S pruning mechanism. Fix ONLY N=256 and ALL F01-reanchor coefficients/whole complete e0. Consistent j*=23/250,t*=221/500,
+
+    G*=(3/16)(T+j*)-(3/5)t*-Cb-(6/5)KD-e0,
+    K*=T+j*-Cl-3KD, A*=(3/2)t*+Cs.
+
+FIRST PAPER test K*(256)>0 then F*(256)=G*−A*²/(4K*)>0, with literal complete coefficient bounds written and every charge retained. If positive, accepted all-real-n transfer gives EVERYinteger n>=256 and CLOSEDsigned5/4<=rho<=pi strictprimitivegap at leastF*(256). If this ONE sufficient gate does not close, record/defer, no replacementdegree/geometry/originsign/droppedcharge. Author registers localidea+attempt BEFOREderivation. No scripts/imports/scalarcalculator/phase/degree/endpointnative/quadrature jobs; hand rational comparisons only at the preregisteredbase.
+
+Future checker integration is outside this PAPER release: preserve mandatory13-grid/fullGRID norm with analytic leaves, exact symbolicLambda_c and true whole-cellguard, separate auditedsource and executionrelease. No runtime/vertex reduction is promised. OldSyvert30scientificfreeze proceeds independently; this support alone certifies no newdegree or smallerglobalonset.
