@@ -180,7 +180,7 @@ regenerate-only, not claimed archived. Consequential results need the
 separate planned supplementary execution; no self-approval or complete
 computer-assisted proof is claimed from missing committed raw evidence.
 
-Planned runner commands (not yet executed):
+Runner commands as planned at registration (actual executions below):
 
 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2_optimize.py --degrees 2 4 6 8 --scratch <unique-raw-dir> --output topics/padua-3d-20261106/evidence/u2-pilot.json`
 

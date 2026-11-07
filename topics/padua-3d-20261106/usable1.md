@@ -86,7 +86,7 @@ three-dimensional parity least squares; corrected hyperinterpolation.
   one/four-right-hand-side application and assessment time, M/N, stored
   array bytes and sample counts. Selection/setup cost is never omitted.
 - Actual tests: none at registration; receipt/code paths follow below.
-- Disposition: active prescribed operational continuation. Old restricted
+- Disposition: retained known operational recipe; registered round complete. Old restricted
   QR and boundary extractions stay failed; no extraction is attempted.
 - Canonical theory: `theory/u1-noise-bound.md` for analytic consequences;
   `theory/u1-operational-comparison.md` for finite observations.
@@ -125,7 +125,8 @@ Gauss–Markov covariance comparison; uniform observation noise.
   resolve whether the known optimality helps on these actual grids.
 - Cost ledger: same C1 counters, with O(MN²) dense QR setup made explicit.
 - Actual tests: none at registration.
-- Disposition: active; resume further solver design only with a new
+- Disposition: retained same-node OLS tradeoff; registered round complete.
+  Resume further solver design only with a new
   prospective objective and evidence that this comparison leaves a need.
 - Canonical theory: the same separated analytic/MEASURED homes as C1.
 - Topic/history: this record, 2026-11-07; no completed audit yet.
@@ -259,8 +260,12 @@ hash and retained raw helper snapshot are in the receipt.
 
 ## Runs needed
 
-Producer runs are complete. Await the independently executed supplementary
-checker, including the public one/multiple-RHS helper, and dispose its
-findings before final integration. The required substantive independent
-Claude audit remains root's subsequent combined handoff; this worker does
-not approve its own work or allocate final IDs.
+Producer runs and independent supplementary checks are complete;
+[the checker record](usable-check12.md) reports actual replays and fresh
+checks with no unresolved discrepancy in its declared scope. The required
+Claude audit remains the subsequent combined handoff. No self-approval
+or final-ID allocation is implied.
+
+2026-11-07 integration clarification: initial launch dispositions now
+show their already documented completed outcomes; no candidate, test or
+scientific conclusion changes.

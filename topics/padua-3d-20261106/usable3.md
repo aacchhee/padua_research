@@ -111,7 +111,7 @@ and fresh primes, and receives every selected rational component.
   has no directed cycle; triangular inversion gives rational certificates.
   S is an algebraic amplification surrogate, not a norm-growth theorem.
 - Actual results / evidence: none at registration.
-- Disposition / resume: registered; if no higher-degree class member, defer
+- Initial disposition / resume (registration-time): registered; if no higher-degree class member, defer
   broader sparse inverse work until a specified cyclic-block mechanism.
 - Canonical theory: planned `theory/u3-cubic-triangular.md` and a separately
   scoped negative/measurement record if warranted.
@@ -148,7 +148,7 @@ and fresh primes, and receives every selected rational component.
   full-rank candidates use largest orthonormal logdet with relative score tie
   tolerance1e−9, tied parameters lexicographic; report all tied candidate IDs.
 - Actual results: none at registration.
-- Disposition / resume: registered; broader phases/orders/embeddings remain
+- Initial disposition / resume (registration-time): registered; broader phases/orders/embeddings remain
   deferred. Resume after finite outcome with a specific count/trace escape,
   rather than repeating sampled special phases.
 - Canonical theory: planned `theory/u3-folded-screen.md`, with scoped PD-N only
@@ -192,7 +192,7 @@ and fresh primes, and receives every selected rational component.
   absent witnesses after this complete fixed seeded schedule are a bounded
   search failure, not a continuous-family obstruction.
 - Actual results: none at registration.
-- Disposition / resume: registered; if finite quality loses, preserve the rule
+- Initial disposition / resume (registration-time): registered; if finite quality loses, preserve the rule
   and resume only with a structural alias-repair/inverse mechanism or a different
   explicitly registered partition. No silent reoptimization after quality.
 - Canonical theory: planned `theory/u3-mixed-screen.md`, scoped measured failure
@@ -227,7 +227,7 @@ and fresh primes, and receives every selected rational component.
 - Test discriminability: finite positive ranks establish the specified union;
   negative samples do not classify all embeddings/phases.
 - Actual results: none at registration.
-- Disposition / resume: registered; resume outside the fixed schedule only
+- Initial disposition / resume (registration-time): registered; resume outside the fixed schedule only
   after a specific structural change and new prospective registration.
 - Canonical theory: same planned mixed screen, separate per-route claims.
 - Topic / history: usable campaign; after shared gate, before all new runs.
@@ -387,3 +387,5 @@ Git, audit reports, prior science or handoffs were edited by this worker.
 No further scientific run is needed for this bounded4-round batch; new
 mechanism work needs its own structural/prospective scope under the remaining
 budget. No final ID/range was allocated.
+
+2026-11-07 integration clarification: registration-time disposition fields above preserve their prospective state; the completed four-route outcome table records current retained/failed/deferred dispositions and resume conditions.

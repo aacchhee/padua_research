@@ -735,3 +735,8 @@ their corresponding runs, with publication and execution timing distinguished.
   all topic JSON parse/size, protected audit/handoff instruction bodies
   and whitespace. Supplementary checker separately verified265identities.
   Main/topic refreshed f70a260/93c605c before final publication.
+
+- Final prose integration clarifies registration-time versus current
+  candidate dispositions and replaces U1's stale awaiting-checker note
+  with its actually completed independent scope. No source/data or
+  scientific claim changes; completed scientific output remains53d11b9.
