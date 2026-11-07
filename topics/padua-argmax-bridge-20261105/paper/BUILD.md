@@ -68,3 +68,27 @@ cold-storage release. Its source is committed; its bytes, dependency
 downloads, auxiliary files, previews and logs remain outside Git. The
 recorded build command and template pins reproduce the document, subject
 to the already documented TeX/package version dependence of PDF bytes.
+
+## Superseding unified build — 2026-11-07
+
+The integrated source at commit
+`eddf2276ad33937b69c4374b56510686c978e23a` supersedes the88-page build above.
+The same command, class, fonts and layout now produce **46 pages**:42pages
+removed, about48% shorter. There is no uncounted proof supplement.
+
+Current artifact: `local-output/padua-argmax-bridge-20261105/paper/main.pdf`,
+628901 bytes, SHA-256
+`7beea935ea68b0e7aaaf5b6bb0fad4d597eb256cdb27c8c0dc9a840901f78d2c`.
+The root integrated build has no undefined references/citations,
+multiply-defined labels, TeX errors or overfull boxes. Worker-only wrapper
+counts were45pages;46 is the measured complete root build including its
+actual front/back matter and bibliography. The46-page count is authoritative.
+A rendered middle proof page was inspected for readable ordinary type and
+unclipped formulas. The earlier88-page PDF is preserved offGit at
+`local-output/padua-argmax-bridge-20261105/paper/original-88-pages/main.pdf`.
+
+The current source layout is described in README.md and the proof cuts in
+CONSOLIDATION.md. Sol max audits the final mathematical correctness and
+redundancy in consolidation-audit.md. The new common small-degree replays
+are scientific checks recorded separately in small-degree-unification.md;
+they are not inferred from successful TeX compilation.

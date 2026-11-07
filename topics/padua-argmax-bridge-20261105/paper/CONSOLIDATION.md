@@ -39,8 +39,9 @@ input. The corner expansion is still analytic and independent of the
 global maximizer argument. No theorem scope is narrowed to save space,
 and no new high-degree numerical campaign is used.
 
-The final build length and separate Sol max verdict are recorded in
-BUILD.md and consolidation-audit.md after integration. Several routine
+The complete root build is46pages, down from88:42pages removed, about48%
+shorter. The measured artifact and separate Sol max verdict are recorded
+in BUILD.md and consolidation-audit.md. Several routine
 estimates are deliberately concise, but a compressed step must remain
 checkable; size reduction is not a reason to replace a proof by an
 internal identifier.

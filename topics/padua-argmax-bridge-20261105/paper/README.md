@@ -1,106 +1,79 @@
-# Constructive Approximation manuscript draft
+# Unified Constructive Approximation draft
 
-[main.tex](main.tex) is the manuscript source. Build it using
-[BUILD.md](BUILD.md); the compiled PDF stays outside Git at
+[main.tex](main.tex) builds the current **46-page** manuscript, reduced from
+88 pages with the same Springer class, fonts and layout. The proof is
+integrated into the article; the old appendices have not been relocated
+to an uncounted supplement. [CONSOLIDATION.md](CONSOLIDATION.md) explains
+the reorganization and what was removed.
+
+Build using [BUILD.md](BUILD.md). The current PDF stays outside Git:
 `local-output/padua-argmax-bridge-20261105/paper/main.pdf`.
+The original full draft is preserved by commit
+`a948b24c3faeba1e475ce64f4c7fc9d4123d42a5` and its local archived PDF.
 
-The user selected Constructive Approximation, permitted intermediate IDs,
-and supplied the Morrow–Patterson paper as a style reference. The opening
-therefore starts from interpolation and stability, gives the two main
-results early, and explains the proof mechanisms before estimates.
-Technical support is collected in appendices rather than interleaved
-through the main narrative. The attached paper is not copied or committed.
+## One proof chain
 
-## Mathematical scope
+- `sections/introduction.tex` states the two main theorems once.
+- `sections/preliminaries.tex` fixes the corrected cardinal and angular
+  kernel, endpoint weights and exceptional mode.
+- `sections/corner-unified.tex` derives the corner expansion in one
+  argument, including the exact rows, κ and uniform first correction.
+- `sections/localization-unified.tex` gives the exact reflection geometry,
+  includes `comparison-unified.tex`, then applies one comparison to the
+  selected-pair floors and all needed closed regions.
+- `sections/comparison-unified.tex` supplies the common completed model,
+  paired cancellation estimate and single finite-row error telescope.
+- `sections/certification-unified.tex` uses one positive-interpolation
+  principle for the finite completion and states the evidence boundary.
 
-The two results are the sharp corner expansion H and exact all-degree
-maximizer theorem G01. The corner expansion is analytic and independent
-of the maximizer theorem. Its global transfer uses G01. The all-degree
-maximizer result has explicit computer-assisted dependencies, including
-a constant enclosure in the quantitative tail and finite certificates.
-An eventual maximizer theorem already suffices for asymptotic transfer;
-the finite bridge adds the all-degree equality classification.
+The analytic corner theorem is independent of argmax and numerical
+constant enclosures. The global maximizer theorem retains the explicitly
+computer-assisted finite cases and quantitative constant input. Its
+finite41–63 defect derivation is now included explicitly. Unused generic
+cutoffs, the unused512-plus finite tier, repeated theorem statements,
+historical result families, discussion and long operational inventories
+have been removed from the compiled article.
 
-The sharp expansion keeps the canonical constants:
+## Audit and small degrees
 
-- `N=n+1/2`, `a=2/pi`, `d=gamma+log(8/pi)`;
-- `c1=a*d`, `b=2*a*c1`, `c=c1^2+kappa`;
-- `Lambda_c = 4/pi^2 log^2 N + b log N + c - 1/N + O(log N/N^2)`.
+[consolidation-audit.md](consolidation-audit.md) is the distinct **Sol max**
+correctness and redundancy audit requested by AC. It records the complete
+compressed-proof review, findings, dispositions, source identities and
+actual independent native small-degree checks. It is distinct from the
+older [review.md](review.md), which describes the superseded88-page draft.
+The broader historical research-batch audit and PR readiness remain
+separate from this requested manuscript audit.
 
-The nodes are the even checkerboard at `(cos(j*pi/n),cos(k*pi/(n+1)))`.
-The coefficient of the highest first-coordinate cardinal mode is one.
-The exact two nonnode-corner maximizers depend on parity. The theorem
-concerns the whole closed square, not the interpolation nodes alone.
+For degrees2–40, the paper now uses one corrected-cardinal Bernstein
+certificate scheme. Fresh2–16 witnesses passed independent exact native
+checking; accepted17–40 witnesses are reused. A two-literal metadata-only
+repair reports the initial degree-2 cosine seed correctly, without changing
+arithmetic, certificate data, strict predicates or the older frozen files.
+The exact failure, repair, invariance argument and checks are in
+[small-degree-unification.md](small-degree-unification.md) and its code/data
+links. Degree1 has a direct affine formula; the executable still begins
+at2 and the main theorem's n>=2 scope is unchanged.
 
-## Source map
+## Reproducibility and publication scope
 
-- `sections/preliminaries.tex`: PD-T101 normalization reconstructed by
-  finite cosine orthogonality; classical published antecedents cited.
-- `sections/corner-formula.tex`: PD-T159 positive Cauchy formula, F03
-  exact partial rows, PD-T269/270 reference square and defect constant.
-- `sections/asymptotics.tex` and `asymptotics-details.tex`: canonical
-  `../theory/H-sharp-corner-expansion.md`, H01/H04/H05, with H06 as
-  an independent development reconstruction. The exact analytic κ
-  definition is used; its decimal enclosure is not a corner-proof premise.
-- `sections/argmax.tex`, `argmax-details.tex`, `row-estimates.tex`,
-  `model-estimates.tex`, `scalar-estimates.tex`, `pole-estimates.tex`: G01 and E14 analytic
-  assembly, closed physical cover, quantitative row/model/defect support,
-  weighted pole estimates and full endpoint reference matching.
-- `sections/certificates.tex`: `../compact-return.md`, G01,
-  `../theory/native-finite-range.md`, frozen final hybrid-engine
-  specifications, mathematical reduction and selective-retention boundary.
-- `references.bib`: published node construction, leading asymptotics,
-  corner observations, related geometry and generic mesh antecedents.
-  Attribution is based on the bounded search in
-  `../literature-refresh-20261107.md`; exhaustive priority is not claimed.
+The source mathematical dependencies are the same canonical H/G01/E14,
+PD-T101/159/269/270/271 and D29/C02 records used by the earlier draft;
+[CONSOLIDATION.md](CONSOLIDATION.md) maps their reorganized roles. The
+numerical κ input is now specified by its coefficient series and analytic
+tail in the article, not only by an internal identifier. The bounded
+literature comparison remains in `../literature-refresh-20261107.md`;
+no exhaustive priority clearance is claimed.
 
-Earlier source locations for the corner formula and constants:
-`topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md`,
-`topics/padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-04-corner-product-comparison.md`,
-`topics/padua-lebesgue-followups-20261103/theory/t4-01-corner-defect-limit.md`,
-and `t4-02-one-dimensional-remainder.md` in that last directory.
+All essential phase proofs are retained, but complete local histories and
+fresh native replays cover only the two selected degrees199/238. Other
+full histories remain server-local under AC's selective-retention policy.
+The new small-degree certificates and short receipts are committed and
+indexed. The essential evidence index has396 entries/32414 bytes, below
+its reviewed32KiB limit. No raw histories, PDFs, template dependencies or
+build logs belong in Git; tracked generated outputs remain below10MB.
 
-## Before submission
-
-This is a research manuscript draft, not a submission-ready or independently
-Claude-audited paper. Author names, affiliations, funding, contributions,
-conflict disclosures and final AI-assistance wording must be completed by
-the human authors. Source identifiers remain provisional where authorized;
-normalization of IDs is deferred to PR preparation.
-
-A complete standalone proof check and the pending substantive Claude audit
-must assess the manuscript alongside its canonical theory and computational
-records. The article must eventually include every needed supporting proof
-or cite a suitable permanent, complete companion; an internal result ID
-alone cannot fill that role. Any remaining explicit exposition obligations
-are to be tracked below rather than silently treated as journal-ready.
-A durable public code/evidence release and persistent locator also remain
-to be arranged. Selective retention is intentional: all essential proofs
-are returned, but only two sampled complete histories are retained locally.
-
-The current Springer class and bibliography interface are used with pinned
-mirror dependencies because official package downloads were blocked. See
-[template provenance](template/README.md) for the exact access/version limit.
-The official package should be compared or refreshed before submission.
-
-## Build and review record
-
-The full Springer-class build succeeds: 88 pages, with the first appendix
-beginning on page18. The main narrative occupies pages1–17 including the
-title page; the detailed estimates are supporting appendices. There are
-no unresolved references/citations or overfull boxes. See [BUILD.md](BUILD.md)
-for the pinned TeX source commit, artifact identity and exact command.
-
-The supplemental [manuscript consistency review](review.md) compares the
-exposition with the canonical proof/source records. It is distinct from
-the pending substantive Claude audit and gives no submission-readiness
-judgment. The complete core corner proof and the previously untranscribed
-pole/reference, model and row support are now written in the appendices;
-there are no intentional proof placeholders. Routine derivative/mesh
-calculations are sometimes compressed and require the final whole-paper
-check. No new scientific numerical jobs were run for the manuscript.
-
-The essential evidence index remains unchanged at372 entries/30593 bytes
-and passes its checker. The conservative tracked-generated bound is
-9707846 bytes, below the user-approved10000000-byte cap; the manuscript
-PDF and publisher dependency downloads are not tracked.
+Authorship, affiliations, human declarations, final AI-assistance wording,
+a durable public code/evidence release and final-ID cleanup at reviewed PR
+preparation remain. No submission or editor contact has taken place. The
+publisher-template provenance and official-download access limitation are
+recorded in [template/README.md](template/README.md).

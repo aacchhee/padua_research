@@ -2243,3 +2243,53 @@ All new essential small witnesses/receipts/source inputs are added to the
 existing v4 evidence index with every previous normalized identity retained.
 The index remains below its reviewed32KiB limit; no file splitting or new
 format/size exception. Raw histories/binaries stay offGit.
+
+### Unified manuscript complete; requested Solmax audit ACCEPT
+
+The final activeTeX/bibliography source commit is
+eddf2276ad33937b69c4374b56510686c978e23a. Root actual full build is46pages
+including references, versus88:42pages removed,47.7%shorter,sizefactor1.91.
+Same Springer class/fonts/geometry; no hidden analytic supplement. Root
+log has zero overfull/undefined/citation/multiplydefined/error diagnostics.
+The measured PDF is628901B SHA256
+7beea935ea68b0e7aaaf5b6bb0fad4d597eb256cdb27c8c0dc9a840901f78d2c,
+kept offGit; original88page artifact remains in original-88-pages/.
+
+Distinct requested Solmax auditor reads all seven activeTeX files and
+bibliography, reconstructs the complete compressed proof against its
+canonical records, checks closeddegree/phase ranges and numerical trust,
+and ACCEPTS mathematical correctness/consolidation under the displayed
+computational premises. No unresolved substantive finding remains. Root
+reads the complete31846B authored report and verifies its eight final
+source sizes/SHA256. See paper/consolidation-audit.md for scope, exact
+source/artifact identities and actual independent small-degree reruns.
+
+Audit-driven changes: supply actual row definitions/cotangent identity,
+transfer finite41–63 defect justification, cover the diagonal's closed
+halfpi root domain, specify the κ coefficient series/tail behind the
+finite outward input, and clarify the p=0 constant entropy case. The
+auditor separately checks each resolution. Unused512plus finite tier,
+standalone discussion, historical cutoff families, repeated main statements
+and excessive auxiliary precision are removed. Apparently secondary192/256
+branches and both norm arguments remain because actual certificates use
+them. Further substantial cuts would need a different proof/scope; no font
+squeeze is used to force45. Measured full46pages, not workerwrapper45, is
+the authoritative count.
+
+Old uncompiled manuscript sections are removed only AFTER the finalreview;
+all active audited bytes remain unchanged and the original full source is
+preserved at a948b24. Canonical theory/evidence/old frozen engines are not
+deleted or rewritten. CurrentREADME/BUILD/CONSOLIDATION document the new
+sourcegraph and oldproofpreservation. EssentialindexPASS396entries/32414B,
+every prior normalized372identity retained. Conservative tracked-generated
+bound9773698B<10000000B (base9430928+340683positive deltas+2087inherited
+FREEZE charge); no PDF/class/BST/raw logs committed.
+
+This finishes AC's rewrite and AFTER-restructuring Solmax correctness/
+redundancy audit request. The original broader researchbatch Claudeaudit,
+permanent publicationrelease/authordisclosures, prioritylimits and reviewed
+PRpreparation are separate and are not relabeled by manuscript ACCEPT.
+No repeatmanuscript audit is requested without a material newchange.
+Pending PRdescription approval is unchanged; no rejected update is retried.
+Next handoff20 records the completed requested step and remaining
+publication/readiness work. Outputsfirst, then19done/new20only separately.

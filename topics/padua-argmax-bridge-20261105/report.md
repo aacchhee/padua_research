@@ -1,6 +1,6 @@
 # Current result — complete finite bridge,2026-11-07
 
-The [Constructive Approximation manuscript draft](paper/README.md) develops the two results with a conceptual main narrative and supporting technical appendices; source map and reproducible build accompany it.
+The [Constructive Approximation manuscript draft](paper/README.md) now presents the two results as one integrated 46-page article (down from88), with a single comparison argument and one small-degree Bernstein scheme. The distinct user-requested Solmax correctness/redundancy audit accepts the rewritten proof under its stated computational premises; sources, build and audit records accompany it.
 
 The original sharp corner expansion, including **-1/N** and the full
 **O(logN/N²)** remainder, is now proved analytically for both parities.
