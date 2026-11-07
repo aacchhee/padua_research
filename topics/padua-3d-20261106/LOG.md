@@ -606,3 +606,11 @@ their corresponding runs, with publication and execution timing distinguished.
   execution is released until the shared gate is complete and published.
   Dependent protocols are then separately published before experiments.
   Configured model/effort recorded; runtime metadata is unexposed.
+
+- The shared [usable gate](usable-gate.md) completes all1154current
+  IDEAS lines and34table runs before clearance; literal bounded outputs
+  repaired every initial truncation before new mechanism generation.
+  Relevant full closest proofs/source records and precise reading limits
+  are recorded. Root verified its8inherited code/data identities. This
+  published gate releases registration only; experiments await separately
+  published protocols. No old chronology qualification is erased.
