@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: Claude Opus5.5 xhigh combined material audit · Handoff10 closes after output; successor: [handoffs/11-usable-audit.md](handoffs/11-usable-audit.md)
+- Stage: AUDIT (interim) · Next: Codex adversarial audit and direction decisions · Open handoff: [handoffs/12-interim-audit.md](handoffs/12-interim-audit.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -740,3 +740,21 @@ their corresponding runs, with publication and execution timing distinguished.
   candidate dispositions and replaces U1's stale awaiting-checker note
   with its actually completed independent scope. No source/data or
   scientific claim changes; completed scientific output remains53d11b9.
+
+## 2026-11-07 — AC requests adversarial interim audit — Codex, Astra high
+
+- Rules read at5440555cf326afdbd66b75bed195802013901c2d: AGENTS,
+  WORKFLOW, CODEX. Clean pinned branch/main refreshed unchanged. Runtime
+  skill/status refreshed; attached executor matches and policy is enforced.
+- AC says Claude is unavailable and explicitly requests our adversarial
+  interim audit and a decision on further directions. [Handoff11](handoffs/11-usable-audit.md)
+  is superseded only by status into [handoff12](handoffs/12-interim-audit.md);
+  the exact formal combined audit scope remains pending. No formal
+  Claude approval/readiness or changed source status is asserted.
+- Root coordinates five distinct cold-context Astraxhigh auditors: U1,
+  U2, U3, prior pending material and strategic/novelty assessment. Runtime
+  model/effort are configured; provider metadata is unexposed. They own
+  disjoint interim-audit-01reports/code/evidence; no producer edits/Git.
+- New stress/counterexample checks are audit probes, consume no research
+  rounds and do not authorize a new unregistered construction search.
+  Current counters stayU1=2/10,U2=3/10,U3=4/20, remaining8/7/16.

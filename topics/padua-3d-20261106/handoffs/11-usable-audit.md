@@ -1,6 +1,6 @@
 # Handoff11 — combined focused material audit of usable constructions
 
-- Status: open
+- Status: superseded by 12: AC requests a Codex adversarial interim audit while Claude is unavailable; the formal combined audit scope remains pending.
 - Previous handoff: [10-usable-work.md](10-usable-work.md).
 - Next agent/model/effort: **Claude, Opus5.5 (claude-opus-5-5), xhigh**.
 - Role: independent auditor of Codex development.
