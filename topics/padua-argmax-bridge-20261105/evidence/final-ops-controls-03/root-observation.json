@@ -1,0 +1,18 @@
+{
+  "source_commit": "1e62afbeca25ae85a94c508905b9bdfd67fac49d",
+  "tool_session": 15824,
+  "initial_chunk": "f20bcf",
+  "completion_chunk": "b5eeeb",
+  "observed_exit_code": 0,
+  "aggregate_monitor_bytes": [
+    34886851,
+    34959225
+  ],
+  "final_bytes_before_observation": 35067654,
+  "threshold_bytes": 67108864,
+  "no_rerun": true,
+  "receipt": {
+    "bytes": 3636,
+    "sha256": "0369e9847d5ccf02b0cb5a01ecdef8d663eea93f1814e2173c7b19a0ee65b107"
+  }
+}
