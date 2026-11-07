@@ -115,7 +115,8 @@ NEW15coordinatedanalyticroundsauthorized2026-11-06 afterD39. E01ACTIVEpaper-only
 | E02 | COMPLETE | Accepted analytic GLOBALargmaxEVERYn>=768 by rationalpaperproof; newglobalrows+pairedouter accepted; NOsource/endpoint/nativejob. |
 | E03 | COMPLETE | Accepted retained-origin cancellation and scoped ABS/one-sided no-log-linear cusp constraints; fullD13/log-linear target remainsOPEN, no numericaljob. |
 | E04 | ACTIVE | Paper-only matched640 candidate with larger near domain, rebuilt corner/defect supports and wider retained-origin increment; no source/job. |
-| E05–E15 | UNALLOCATED | Remaining11 slots; redirect from proved bottlenecks. |
+| E05 | ACTIVE | Cusp-aware complete upper/axis central-excess representation after exact E03 cusp obstruction, paper-only; no forced bound or job. |
+| E06–E15 | UNALLOCATED | Remaining10 slots; redirect from proved bottlenecks. |
 
 Newallowance1/15complete,14remainingincludingactiveE02. PackPAUSED.
 
