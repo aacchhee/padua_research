@@ -484,3 +484,98 @@ without automatically escalating degrees or spending the remaining ceiling.
 Planned command:
 
 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/pdpr_run.py --round transfer16 --protocol-commit <published-P4-sha> --reference topics/padua-3d-20261106/evidence/pdpr-pilot.json --scratch <new-unique-dir> --output topics/padua-3d-20261106/evidence/pdpr-transfer16.json`
+
+## P5 prospective appendix — one reflection-pair step
+
+P4complete output was published at
+e761a12bcc7acfbf47dc6db77592854211931df5. Four new pruning rounds are
+completed; this allocates **P5only**, one cheap initial-block discriminator.
+The useful A1163/A546tradeoffs and all earlier failed strict goals remain
+unchanged. No full paired trajectory, broader orbit search or altered
+threshold follows automatically. This is a distinct atomic operation,
+not a renamed singleton rule or a retroactive P2success.
+
+Candidate IDEA?padua-3d-20261106-prune-pair: known symmetry-preserving
+block deletion. The complete predecessor gate and standard plus-sign
+Woodbury formula are in pruning-next-questions.md. The question is whether
+a feasible **two-row final state** can escape P2's measured first-step
+singleton barrier without relaxing its noise/training constraints.
+
+Use the original anisotropic n6/8supports, N84/165 and M112/225, physical
+unweighted OLS and P2's dense985query training set (9³angular mesh plus
+256angular Sobol, seed2026111010+n). Reflection x1→−x1maps integer index
+(i1,i2,i3) to(n−i1,i2,i3) for these even degrees. Enumerate every complete
+nonfixed reflection pair in canonical original-ID order: **48at n6,
+100at n8**. Retain all fixed-plane x1=0nodes (16/25). This respects the
+known necessary reflection-dimension counts at the eventual Ntarget;
+it does not prove any later subset's rank or quality.
+
+For J={i,j}, Kits complement, form H=QQ^T from the full starting QR and
+D=I2−H_JJ. Require min eigenvalue(D)>1e-10. Use
+
+`C^-_K = C_K + C_J D^-1 H_JK`,
+
+`L^-_K = L_K + L_J D^-1 H_JK`, L=E C.
+
+For **all** rank-admissible pairs compute actual predicted raw training
+row-l1 maximum, unit-noise trace and full optimal integer-repeat risk
+at fixed B=M_start. Feasible means training norm<=1.25full-start norm
+and integer risk<=1.10full-start unit-noise/full-budget risk, exactly P2's
+constraints. Choose min training norm **among feasible pairs**, near-ties
+within1e-12*max(1,abs(best)) to lexicographically smallest original-ID pair.
+Recompute the chosen map with fresh QR and all original physical/condition/
+reproduction/orthogonality/rank guards; predicted/fresh relative-map error
+must be<=1e-7 and both constraints must pass freshly. A failed trial is
+retained and the next frozen-score feasible pair is tried. Exhaustion
+stops only this finite tested pair set, not arbitrary batches/subsets.
+
+If no pair is feasible, retain that negative outcome and assess the
+rank-admissible pair with smallest training norm as an explicitly
+**infeasible diagnostic**, not an operational selection. Record every
+pair score/reason and all numerical rejects. Also independently refit
+the two singleton intermediates associated with the chosen/diagnostic
+pair and verify their constraint classifications against the known P2barrier.
+No claim is made that a singleton path through those intermediate states
+satisfies P2's constraints; final-state pair feasibility is a new atomic model.
+
+Fresh assessment uses the original21³/41³meshes and2048Chebyshev/uniform
+queries, seeds2026112820+n/2026112830+n; the same28angular local searches
+use2026112840+n. Assess full OLS/Haar, the chosen or diagnostic pair,
+both singleton intermediates, P1's fixed A/Dsupports at M_start−2,
+same-count restrictedQR, and one seeded random reflection-pair control
+(seed2026112800+n, chosen from the full canonical pair list before quality).
+Retain an ineligible random control without repair/replacement. A/Dinput
+indices must match their pinned P1raw inventory. All fits receive the same
+queries/search rule, all12targets, fixed-Bnoise/pointwise variance/calibrated
+sigma reports and regressions, source/input/UTC/thread/version metadata.
+These are initial-step controls, not a new N-site construction claim.
+
+The scientific **atomic-feasibility discriminator**, per degree, requires
+at least one freshly verified feasible pair, both associated singletons
+infeasible under P2's same training/noise constraints, and fresh pair
+sampled/searched amplification<=1.30full OLS. Report its normalized norm
+gain versus the best P2singleton even if below5%; a real feasibility escape
+must not be discarded by an unrelated5%threshold. Report matched-two-row
+A/D/random/restricted comparisons without imposing a post hoc winner test.
+
+Only if **both degrees** pass may root consider a separately registered
+full paired path. If neither passes, park this tested symmetry-pair route.
+A one-degree pass is retained as a finite separation but does not satisfy
+this planned both-degree continuation gate or automatically license a full
+trajectory. There is **no10%site-saving claim** from a single two-site block.
+All thresholds are research assumptions, not claims about AC's requirements.
+Other blocks/reflections/degrees and all-subset feasibility remain OPEN.
+
+P5total allowance120CPU seconds including both degree screens, controls and
+assessment. Root publishes this appendix, focused preflights verify the
+block formula and feasible-pair ordering on synthetic matrices, then grants
+an exclusive window after the P4review releases CPU. Persist full candidate
+lists/precision/commands/source/input/time/seed identities and one unsplit
+compact receipt<16KiB with full-precision hashed raw output. Any cap or
+missing required assessment fails continuation and is retained explicitly.
+No P5science precedes root publication/release. Further research ceilings
+are not a quota; a negative screen closes this cheap route.
+
+Planned command:
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/pdpr_run.py --round pair_screen --protocol-commit <published-P5-sha> --reference topics/padua-3d-20261106/evidence/pdpr-pilot.json --pair-reference topics/padua-3d-20261106/evidence/pdpr-constrained.json --scratch <new-unique-dir> --output topics/padua-3d-20261106/evidence/pdpr-pair-screen.json`
