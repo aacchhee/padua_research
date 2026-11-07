@@ -112,3 +112,59 @@ candidate pin and root publishes/releases that identity. No reviewer import
 or execution occurred in these focused source checks. A40MB sample return is
 compatible with AC's no-gigabyte-transfer objective;25MB remains a preference,
 not a new format requirement or reason for another redesign.
+
+## Fixture02 actual data review — ACCEPT
+
+Root ran the published61aa6ba fixture02 once and directly observed exit0
+(session56768, completionc6eebc). Receipt62,857B SHA256
+`07a7804ba9d3f26a9d576a6aa91c4b17061c7d2cc41638f3ead8b827aa0040ce`
+is retained under `local-output/argmax-bridge-20261105/compact-fixture-02/`.
+It pins the reviewed fixture2134b6d… and candidateaea62883…, reports no failure,
+40.471014673 selfCPU-s and40.460193768 wall-s within unchanged caps, and
+unchanged original/scientific bytes. Fixture01 exit137 remains preserved.
+
+I independently checked the receipt/source identities, then performed a small
+stdlib-only data review (direct exit0, completionb87698,1.099137241CPU-s):
+rehashed all645 inventoried original files in BOTH `/workspace/p02` and the
+fixture copy; all sizes/hashes matched the original inventory. Both returned
+bundle hashes/sizes matched. Independently traversed the first standard tar.gz
+sequentially:404 unique safe members,58 backward ordinary hardlinks, and every
+COMPACT inventory byte-size/hash passed. The retained seed reproduced the
+explicit forced-known fixture sample[511,41]. No candidate code or native
+oracle was invoked by this independent readback, and the40-second fixture
+was not rerun.
+
+The exact reviewed fixture's two full validator results each report completed
+[41,511], two rationally checked pairs and complete sampled-history closure
+for[511,41]. Repeated selection is identical. This is a known-data adapter
+exercise retaining the old local manifest/profile, not a claim of actual
+production residual selection or30-worker target execution.
+
+| Measurement | Before | After |
+|---|---:|---:|
+|Unique-inode allocated file bytes|222,720,000|160,194,560|
+|Logical file bytes|221,218,570|242,747,815|
+|Unique file inodes|645|630|
+
+Physical allocation drops62,525,440B while logical bytes increase because
+canonical names reference existing hardlinked payloads. Every original path
+and byte remains unchanged; logical pathname sums must not be mistaken for
+physical disk use. New immutable files remain regenerated freshly by future
+engine invocations; no cached native result is substituted.
+
+Both ordinary compact returns are40,184,709B:
+
+- First SHA256 `a94c95c704992764decffb0a4dd0f9e0960048c4b3ecc56248d429770b7b77dd`.
+- Second SHA256 `42997b22fcd42f37f6246373c46da2d5fdb9c1ec1fcb279c100623887bd18e76`.
+
+The archive names/timestamps differ, while sample selection is stable. This
+measured40MB result satisfies the requested non-gigabyte transfer objective;
+no size truncation, custom format or additional compression mechanism is
+needed. Full-campaign physical use and a two-residual production return size
+remain observations to make on the target, not guaranteed extrapolations.
+
+**Source plus focused copy-fixture/data review ACCEPT for bounded complete
+artifact build.** Actual new offline ZIP/source/manifest/modes inspection is
+the remaining delivery check. No new degree or native rerun occurred here;
+future independent native replays apply only after actual residual samples
+are produced and separately released.

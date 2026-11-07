@@ -10,7 +10,7 @@ After installing this NEW release in a fresh directory on Syvert2:
 
 ```
 chmod +x run run_small run_large finished_cases collect_data
-./run >run.log 2>&1
+nohup setsid ./run >run.log 2>&1 < /dev/null &
 ```
 
 The parent now prints completed cases into run.log. `./finished_cases` also
@@ -46,8 +46,9 @@ rational proofs, checks the two full histories and separately reruns those
 two degrees with the native engine in the sandbox. Unsampled raw histories
 are explicitly server-validated, not claimed independently read in sandbox.
 
-Target return size is roughly25MB; collection prints measured bytes and
-warns if larger. Nothing is truncated. A full raw ZIP remains optional via
+A completed two-case copied-history check returned40.2MB and preserved every
+original proof byte. Collection prints actual bytes; full-worklist metadata
+and different sampled histories can change the size. Nothing is truncated. A full raw ZIP remains optional via
 `python3 -I -S -B server.py collect_full --archive-directory ..` and is NOT
 the default file to send.
 
@@ -60,3 +61,28 @@ can likewise be rerun rather than adding a recovery framework.
 `run_small` and `run_large` retain the disjoint7/273 groups. Choose the full
 run OR the split groups. Keep source/manifest identity with the compact
 return so regeneration is possible; do not overwrite active writers.
+
+## Production and retention record
+
+SOURCE_CUSTODY.json identifies the exact published source commit; runtime_manifest.json
+identifies every operational/scientific/header/library input by bytes andSHA256.
+The engine FREEZE is unchanged, and asset_provenance.json pins the six official
+Debian packages. plans.py gives the exact7+273degree set. Every degree is run
+in a separate producer process, then a freshly built retained-proof verifier,
+with recorded n, arguments, output paths, compiler/TU/library identities, direct
+exit status and complete accounting. The exact commands and input identities
+are retained per case, with the complete program in this offline release.
+
+Before export, Syvert validates every completed full history again. The compact
+return records each primary/fresh certificate hash and raw-history hash, exact
+completed/missing coverage and server verification. Its persisted randomseed,
+eligible residual list and selected two degrees document how the sample was
+drawn; rerunning collection preserves the draw. All returned rational proofs
+can be independently checked, while only the two sampled raw histories are
+independently inspected and natively rerun in the sandbox.
+
+AC explicitly accepts that unsampled certificates need not be in cold storage.
+Their exact production is documented and reproducible from the released source
+and pinned inputs; no claim of complete cold archival or sandbox inspection
+of every unsampled raw history is made. Historical timing/paths need not be
+bit-identical on regeneration.
