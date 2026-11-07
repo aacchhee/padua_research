@@ -1,6 +1,6 @@
 # Handoff17 — Constructive Approximation manuscript draft
 
-- Status: open
+- Status: done in 9cfddd2b36dffccd391daf2a3744945d328127ae
 - Previous handoff: 16-audit-with-literature-refresh.md
 - Next agent / model / effort: Codex orchestrator; Sol medium template/build, Sol xhigh mathematical exposition; distinct Astra high supplementary review
 - Role: developer / orchestrator
