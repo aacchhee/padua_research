@@ -355,3 +355,10 @@ this theorem. Next step is distinct reconstruction of (9)--(18).
 serving model/effort metadata unexposed. Rules/source input
 8f1211b6162b0e49e042f293665b3a4a7e95f667. Paper-only development.
 The gate timing limitation is stated explicitly in the attempt.
+
+
+## Root mathematical adoption in WORK —2026-11-07
+
+Root adopts the exact15142B frozen mathematical proof above (SHA256 bba01a431ce3d7f4bfc4345eb693eb605fc3e82883cb7466a5ec597e1456d979), after distinct [origin mathematical ACCEPT](../independent-checks-E08-origin.md), report15746B92775b0dce5f79cb3d06ef2cee998b63ce1f026013666bf714709e787a1f8625. Original prefix remains unchanged. Thus the one-sided actual-origin bound and its exact all-real-n simplifications may be used in continuing WORK; it is not an absolute error bound or a proof E_n(0)>=0.
+
+The report separately records unwaived MAJOR protocol findingP1, whose canonical timing disclosure is in the [idea record](../ideas/E08-origin-lower.md). Mathematical adoption does not waive that finding or establish PR readiness; final Claude audit and disposition remain separate. No new numerical/source job or onset claim occurs.

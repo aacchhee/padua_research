@@ -1190,3 +1190,25 @@ Rootread-onlyGitHubrefrefresh2026-11-07 01:21:05UTC: mainunchangedf70a260e5b5f9a
 
 
 E08origin firstcandidatefrozen15142B bba01a431ce3d7f4bfc4345eb693eb605fc3e82883cb7466a5ec597e1456d979, idea9238B59fa9848..., attempt6351Bf5d4cd47...; distinctD13mathreviewactive, UNADOPTED. The precise narrow predecessor-read timing failure is canonical in [origin idea](ideas/E08-origin-lower.md); it is disclosed, notwaived andnotretrospectivelycured. No source/scalar/nativejoboccurred.
+
+
+### E08 frontier frozen before E09 changed384 comparison
+
+E08OPENfrontier9737B52a68b7a... and scopedPROVEDallocationfailure6353Bcbaa95e1..., idea4831Bd53467ae..., attempt3594B777535f8... freeze01:23UTC. Nearoldcomparison>25/256 versusselectedfloorformulas<9/100 atx=y1/6 evenoriginallowance0; oldoutergate<−12137/48000. These areonlyunchanged-envelopefailures, notactualargmaxcounterexamples. DistinctD29reviewactive. E08corneralreadyaccepted; phaseCEalreadyaccepted; originreviewactive.
+
+Nowallocate E09assemblycompanion toSolxhighD14, ownNEW E09-assembly384 theory/idea/attempt afterfreshimmediategate. SAMEprospectivebase384, changingtheexplicitnearouter/log allowance via literalT plus independentlyproved |delta_aRmesh|<=rho/(2n), withmatchedE08phaseCE and one-sidedoriginONLYwhentheirproofsaccepted. InitialassemblymustremainCONDITIONALonpendingE09T/originifdevelopedbeforethoseacceptances. PreservefrozenE08failure, no newdegree/endpoint/source/scriptjob, fullnear/annulus/far/outer/corner/physical/all-real-nobligations. E09isONEcoordinatedroundwithboundedUltraoperatorhelper, notnewroundperapplication. E10rootimprovementseparatependingtheorem, notinheritedbyprogressmessage.
+
+
+### E08 one-sided origin MATHEMATICS accepted and adopted in WORK
+
+Distinct Astrahigh92775b0d...15746B mathematicallyACCEPTS bba01a43...15142B exactoriginlowerproof. Rootadopts E_n(0)>=−e0 ALLintegern32, exactpositive/decreasing e0<E0 ALLrealn32, Rplusvanishes148, and E_n(0)>−D−Mesh−1/n ALLintegern160. All4hole signs, retainedmultiplicities/gain22/45 andcentral2/m checked. E_n0>=0stillOPEN. Useonlyone-sidedlowererrorforuppercomparisons, neverabsoluteorigin/norm. ProtocolfindingP1 separatelyremainsMAJOR/unwaived percanonical[idea](ideas/E08-origin-lower.md); mathadoptioninWORK neitherwaivesitnorassignsreadiness. E08frontierreviewstillactive; global512/residual464unchanged.
+
+
+### E08 COMPLETE at exact support/frontier scopes
+
+Distinct Astrahigh501e2836...15023B ACCEPTS frozenmain52a68b7a...OPENfrontier andcbaa95e1...scopedoldallocationfailure. Rootadopts onlyOLDrelativeP384failure, selectedbandformula ceilings andolduniformouterfailure; NOTE N1 explicitlydoesNOTrejectnewmin(Uabs,relative)systemoractualdefects/argmax. Main384remainsOPEN. TogetherwithacceptedphaseCE, corner384andone-sidedoriginmaththisclosesONEcoordinatedE08round. ProtocolP1unwaivedunchanged, branchWORK.
+
+NEW8/15COMPLETE; E09signedouter+matched384assembly andE10exactcentralmodelactive; E11–E15unallocated5. SevenroundsremainincludingE09/E10. Global512/residual464current; packPAUSED. E09Ultrablockfroze01:26:16UTC after11m59s, before01:34:17cutoff, exacttheory14274B850a7d40...; strongerfixed-nearmixedtargetOPEN. Its preliminarydiagnostic chronology iscanonicallydisclosedin[attempt](attempts/E09-signed-outer-upper.md), notwaivedorretrospectivelycured. DistinctD30auditactive.
+
+
+E10firstcandidatefrozen13972B28ff45c1316e36d07125431e5bd64fa308ba71439d3a82e73ca6ad3502d3e38d, idea7750B68323cdd..., attempt4921B2ba466d9..., distinctD13auditactive. DeveloperTRUEEc closedrho1 upper retainsfractionalp^1.5/sqrt(a) withexactcoefficient4I4/pi² andsamebetatranslation, eliminatesartificialalpha²log charge. Half3/8/wide5/12simplifications andactualC01axisasymptoticsharpnessprovedatdeveloperlevel; UNADOPTEDpendingaudit. No degreepreview/newmodel/job.

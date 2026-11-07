@@ -118,9 +118,10 @@ NEW15coordinatedanalyticroundsauthorized2026-11-06 afterD39. E01ACTIVEpaper-only
 | E05 | COMPLETE | Cusp-aware complete upper/axis central-excess representation after exact E03 cusp obstruction, paper-only; no forced bound or job. |
 | E06 | COMPLETE | Paper-only exact axis-boundary completion and scalar-H shape/max frontier; no forced bound or computation. |
 | E07 | COMPLETE | Analytic scalar H maximum and full GLOBALargmaxEVERYn>=512 independently accepted; no new scientific jobs. |
-| E08 | ACTIVE | Phase-aware global allowance, actual-corner384 support and one-sided origin error; main384OPEN pending new errors. |
+| E08 | COMPLETE | Phase-aware global allowance, actual-corner384 support and one-sided origin error; main384OPEN pending new errors. |
 | E09 | ACTIVE | Bounded20minAstraultra signed outer-plus-log upper, explicit full-error cusp retained outside this block. |
-| E10–E15 | UNALLOCATED | Remaining6 slots; redirect from proved bottlenecks. |
+| E10 | ACTIVE | Whole central root integral, remove artificial alpha²log majorant; no changed model or cusp deletion. |
+| E11–E15 | UNALLOCATED | Remaining5 slots; redirect from proved bottlenecks. |
 
 Newallowance1/15complete,14remainingincludingactiveE02. PackPAUSED.
 
@@ -134,3 +135,5 @@ Current2026-11-07: NEW5/15COMPLETE(E01–E05); E06independentreviews/E07paperact
 CurrentNEW6/15COMPLETE; E07scalarHmaxaccepted (assemblyreviewseparate), E08phaseglobalpaperactive; nine roundsremainincludingE07/E08. E06allcomponentsaccepted; C_infty<9/4 and regularnonpositive follow reviewedmap+acceptedE07. Global640/residual591untilassemblyacceptance.
 
 CurrentNEW7/15COMPLETE; E08analytic384corner/phase-global/origin workactive. Eight roundsremainincludingE08. GLOBAL512adopted, residual464:43–62,65–158,161–510. AllnewEworkPAPERONLY; packPAUSED.
+
+CurrentNEW8/15COMPLETE; E09signedouter/matched384 andE10centralmodelactive; sevenroundsremainincludingthose. Global512/residual464; E08allmathcomponentsacceptedatnamedscopes, originprotocolP1unwaivedandbranchWORK. PackPAUSED.
