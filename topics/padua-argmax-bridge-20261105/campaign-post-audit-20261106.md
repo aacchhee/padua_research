@@ -125,7 +125,7 @@ NEW15coordinatedanalyticroundsauthorized2026-11-06 afterD39. E01ACTIVEpaper-only
 | E12 | COMPLETE | Accepted corner256/scopednearrecipefailure, correctedfixedphaseTcoefficient anduniformbetaaxis40beta/n; global256OPEN. |
 | E13 | COMPLETE | Generaljoint-radius/u outergeometry andexplicitfiniteerror square-root envelope; no endpointchosen. |
 | E14 | ACTIVE | Gate-first complete320comparison usingacceptedjointgeometry/entropy-free model, no numericaljob. |
-| E15 | ACTIVE | Gate-first analyticfar192/rho>=pi/2 cheapcertifierpruningcomponent, notnewfinite-degrees. |
+| E15 | COMPLETE | Gate-first analyticfar192/rho>=pi/2 cheapcertifierpruningcomponent, notnewfinite-degrees. |
 
 Newallowance1/15complete,14remainingincludingactiveE02. PackPAUSED.
 
@@ -151,3 +151,5 @@ CurrentNEW E01–E11 COMPLETE11/15; E12gate-firstlower256/signedoperatoractive,E
 CurrentNEW E01–E12 COMPLETE12/15; E13generalgeometry/E14gate-only320active,E15unallocated1. Three roundsremainincludingE13/E14. Global384/residual337. Beta-axisT/corner256componentsaccepted, nointerior/error-domaintransfer; packPAUSED.
 
 CurrentNEW E01–E13COMPLETE13/15; E14complete320andE15analyticfar192mathematicalphasesreleasedAFTERexplicitfullgates. Twofinalresearchroundsremain, allallocated. Global384/residual337; packstillPAUSEDuntiltheiroutcomes/auditsfinish.
+
+CurrentNEW14/15COMPLETE(E01–E13,E15); E14same320annulus/completeassemblyactivewithdisjointgate-firstwideTsupport. Far192pruningaccepted; global384/residual337untilfinalassembly. No16thresearchround; packSTILLPAUSEDuntilE14outcome/audit.
