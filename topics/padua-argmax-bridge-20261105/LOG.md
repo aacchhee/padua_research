@@ -1885,3 +1885,21 @@ Paper-positioning.md records this editorial plan and inspected literature
 locators/coverage; report.md now has an actual-current header rather than
 a stale OPEN summary. Handoff13 remains the unchanged finalaudit task;
 these late presentation docs are included in its current-head input.
+
+## 2026-11-07 — AC authorizes20new sharp-correction rounds
+
+AC: “I'd authorize an adventurous campaign with up to20rounds, some with
+ultra if warranted, aimed at complete proof at the end.” NewcampaignH
+continues this branch; finalClaudeaudit13 is deferred by this explicit
+WORKredirection, never waived. Exacttarget/prospectiveacceptance/model
+allocation/resources/roundledger are in campaign-H-20261107.md. Rulesread
+at2c69ba538473b8fdd9147635256289f74e75ccbb; freshmain/topicunchanged.
+
+InitialH01/H02/H03 readoldformulas only before sharedgatecompletion; no
+newcandidate/proof/job yet. GateworkerSolmedium owns campaign-H-gate.md.
+H01Solxhigh exactsum, H02Solultra matchedendpoint, H03Solxhigh reciprocity
+own separate idea/attempt/theory files. H02ultra justification is the
+singularO(n^-2)endpoint layer and cancellation of log²n/n terms, not extra
+benchmarking. Existing prelimiffDelta target retains exactdenominatorn+1;
+a first roughassistantdeveloper /n simplification was corrected before any
+newproof or experiment. No new analytic result is claimed at this point.
