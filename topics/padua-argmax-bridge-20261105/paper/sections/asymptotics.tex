@@ -1,0 +1,184 @@
+\section{The first correction at the corner}\label{sec:asym}
+
+The reference square determines the leading terms and the constant,
+but it does not determine the first correction.  For that we return to
+the exact row decomposition \eqref{eq:corner-exact-decomposition}.
+There are three contributions to track: the scalar $-1+2/m$, the
+harmonic triangle $\mathcal H_m$, and the smooth residual $4V_n/(nm)$.
+Each has a first correction.  Their combination is simpler than any
+one of them.
+
+Write
+\begin{equation}\label{eq:asym-normalization}
+ \begin{gathered}
+ m=n+1,\qquad N=n+\tfrac12=m-\tfrac12,\\
+ a=\frac2\pi,\qquad d=\gamma+\log\frac8\pi,\qquad
+ A(z)=a(\log z+d).
+ \end{gathered}
+\end{equation}
+The constants used in the expanded form of the answer are
+\begin{equation}\label{eq:asym-coefficients}
+ c_1=ad,\qquad b=2ac_1=\frac{8d}{\pi^2},\qquad
+ c=c_1^2+\kappa.
+\end{equation}
+
+\begin{theorem}[Sharp corner expansion]\label{thm:corner-expansion}
+For every integer $n\geq2$,
+\begin{align}
+ \Lambda_c(n)&=A(N)^2+\kappa-\frac1N
+                  +O\!\left(\frac{\log N}{N^2}\right)
+                  \label{eq:asym-sharp-square}\\
+ &=\frac4{\pi^2}\log^2N+b\log N+c-\frac1N
+                  +O\!\left(\frac{\log N}{N^2}\right).
+                  \label{eq:asym-sharp-expanded}
+\end{align}
+The implied constant is independent of $n$.  In particular the same
+formula holds for both parities, and
+\begin{equation}\label{eq:asym-reciprocal-limit}
+ N\bigl(\Lambda_c(n)-A(N)^2-\kappa\bigr)\longrightarrow-1.
+\end{equation}
+\end{theorem}
+
+This theorem concerns the actual corner value.  Its proof uses no
+assertion about the location of the global maximum.
+
+\subsection{Why a uniform row expansion is needed}
+
+For $r+s=m$ and $x=r/m$, the harmonic row in
+\eqref{eq:corner-harmonic-row} contains arguments close to both ends
+of the interval.  Expanding it with $x$ fixed would miss rows with
+$r$ or $s$ small.  Those rows cannot simply be discarded: the weight
+$w(r/m)$ is comparable to $m/r$ at the left endpoint.
+
+The remedy is to center at the exact integers and half integers first.
+The uniform centering estimate proved in
+Appendix~\ref{sec:asym-details-centering} reads
+\begin{align}
+ D_{m,r}={}&\psi(r+\tfrac12)+\psi(s)-\psi((1-x)/2)-\psi(m)
+      \notag\\[-2pt]
+ &-\frac{r\psi'(r+\tfrac12)+s\psi'(s)-s\psi'(m)}{2m}
+      +E_{m,r},
+ \qquad |E_{m,r}|\leq\frac{5}{4m^2}.
+ \label{eq:asym-uniform-centering}
+\end{align}
+Since $\sum_{r<m}w(r/m)=O(m\log m)$, the error after weighting
+and normalization is $O(\log m/m^2)$, at the scale required by the
+theorem.  This treats $r=1$ and $s=1$ with the same bound.
+
+One small-index term survives this procedure.  If
+$u_r=r\psi'(r+1/2)-1$, then $u_r=O(r^{-2})$, but its contribution
+to the coefficient of $1/m$ is nonzero:
+\begin{equation}\label{eq:asym-small-index-sum}
+ \sum_{r=1}^\infty\frac{u_r}{r}
+       =1+2\log2-\frac{\pi^2}{4}.
+\end{equation}
+Keeping this convergent endpoint sum is as important as controlling
+the large indices.
+
+\subsection{The two contributions through first order}
+
+All the integral quantities in the next proposition have removable
+endpoint singularities.  With $w$ and $B$ from
+\eqref{eq:corner-w-B}, put
+\begin{equation}\label{eq:asym-integrals}
+ I_1=\int_0^1\left(\frac{w(x)}{1-x}-\frac ax\right)dx,
+ \qquad I_2=\int_0^1xw(x)\,dx,
+ \qquad I_B=\int_0^1xw(x)B(x)\,dx.
+\end{equation}
+
+\begin{proposition}[Harmonic and smooth expansions]
+\label{prop:asym-two-expansions}
+There are real constants $C_H,C_B$, independent of the degree, such
+that, for $m=n+1\geq3$,
+\begin{align}
+ \mathcal H_m
+   &=A(m)^2+C_H+\frac{-a^2\log m+\beta_H}{m}
+                    +O\!\left(\frac{\log m}{m^2}\right),
+                    \label{eq:asym-harmonic-expansion}\\
+ \beta_H&=-2-a^2(\gamma+2\log2)-a(I_1+I_2),
+                    \label{eq:asym-beta-H}\\
+ \frac{4V_n}{nm}
+   &=C_B+\frac{\beta_B}{n}+R_{B,n},\qquad
+          |R_{B,n}|\leq\frac{17}{n^2},
+                    \label{eq:asym-smooth-expansion}\\
+ C_B&=4\int_0^1w(t)\int_0^tB(x)\,dx\,dt,
+ \qquad \beta_B=-a^2+2I_B+aI_2.
+                    \label{eq:asym-beta-B}
+\end{align}
+In fact $-a^2<\beta_B<0$.
+\end{proposition}
+
+The proof is in Appendices~\ref{sec:asym-details-harmonic} and
+\ref{sec:asym-details-smooth}.  Two features explain its structure.
+For the harmonic part, subtracting the elementary singularity
+$a(\log x+\gamma+2\log2)/x$ leaves a function whose second
+derivative is bounded by a constant times
+$x^{-1}+(1-x)^{-1}$.  Estimating its two endpoint cells directly
+then gives the logarithmic quadrature error in
+\eqref{eq:asym-harmonic-expansion}.  For the smooth part, the samples
+in row $r$ are the midpoints of cells whose union is exactly
+\[
+ \left[-\frac{t}{2n},\ t+\frac{t}{2n}\right],\qquad t=\frac rm.
+\]
+The two short extensions of $[0,t]$ produce a first-order term.
+Thus smoothness of $B$ does not make its $1/n$ correction vanish.
+
+\subsection{The cancellation and the half-integer scale}
+
+\begin{proof}[Proof of Theorem~\ref{thm:corner-expansion}]
+The decisive identity among the remaining integrals is
+\begin{equation}\label{eq:asym-integral-cancellation}
+ 2I_B-aI_1=a^2-1+a^2\log(\pi/2).
+\end{equation}
+It is useful to verify this before evaluating any integrals separately.
+The double-angle identity
+$\cot(\pi x)=(w(x)-w(x)^{-1})/2$ shows that the combined
+integrand on the left is
+\[
+ x(w(x)^2-1)-2aw(x)+\frac{a^2}{x}.
+\]
+Since $w'=-(1+w^2)/a$, its integral over $[\epsilon,1]$ equals
+\[
+ a\epsilon w(\epsilon)-1+\epsilon^2
+       +a^2\log\frac{\sin(\pi\epsilon/2)}{\epsilon}.
+\]
+Letting $\epsilon\downarrow0$ proves
+\eqref{eq:asym-integral-cancellation}, including the endpoint term
+$a^2-1$.
+
+The coefficient $\beta_B$ is a constant, so replacing $\beta_B/n$
+by $\beta_B/m$ in \eqref{eq:asym-smooth-expansion} costs only
+$O(m^{-2})$.  Insert both expansions into the exact identity
+\eqref{eq:corner-exact-decomposition}.  Its $2/m$ must be retained.
+The coefficient of $1/m$, apart from $-a^2\log m/m$, becomes
+\begin{align*}
+ 2+\beta_H+\beta_B
+ &=-a^2-a^2(\gamma+2\log2)+2I_B-aI_1\\
+ &=-1-a^2d.
+\end{align*}
+Consequently, for a real constant $C=-1+C_H+C_B$,
+\begin{equation}\label{eq:asym-m-expansion}
+ \Lambda_c(n)=A(m)^2+C
+       -\frac{a^2\log m+1+a^2d}{m}
+       +O\!\left(\frac{\log m}{m^2}\right).
+\end{equation}
+Lemmas~\ref{lem:corner-one-dimensional} and
+\ref{lem:corner-defect-limit} identify $C=\kappa$: indeed
+$L_n^2-A(n)^2=O(\log n/n^2)$ and
+$A(m)^2-A(n)^2\to0$.
+
+Finally the half step $N=m-1/2$ absorbs the logarithmic part of the
+first correction.  Taylor's formula, with a uniform bound on the second
+derivative of $A(z)^2$, gives
+\[
+ A(N)^2=A(m)^2-\frac{a^2\log m+a^2d}{m}
+                       +O\!\left(\frac{\log m}{m^2}\right),
+ \qquad \frac1N=\frac1m+O(m^{-2}).
+\]
+Substitution into \eqref{eq:asym-m-expansion} proves
+\eqref{eq:asym-sharp-square}.  Expanding the square gives
+\eqref{eq:asym-sharp-expanded}, with the constants
+\eqref{eq:asym-coefficients}, and multiplication by $N$ gives
+\eqref{eq:asym-reciprocal-limit}.  All estimates used above hold
+on the full integer sequence with constants independent of the degree.
+\end{proof}

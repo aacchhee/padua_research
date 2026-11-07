@@ -1,0 +1,234 @@
+\section{What the corner sees}\label{sec:corner}
+
+At a corner, the two dimensional interpolation kernel simplifies in a
+useful way: its absolute values become a positive Cauchy sum.  There are
+still two adjacent meshes, of sizes $n$ and $n+1$.  Keeping that small
+difference, and the endpoint weights, will be essential for the first
+asymptotic correction.
+
+Throughout this section let $n\geq2$, $m=n+1$, and write
+\[
+ \theta_j=\frac{j\pi}{n},\qquad \phi_k=\frac{k\pi}{m},\qquad
+ \varepsilon_j=\begin{cases}\tfrac12,&j=0,n,\\1,&0<j<n,\end{cases}
+ \quad
+ \eta_k=\begin{cases}\tfrac12,&k=0,m,\\1,&0<k<m.\end{cases}
+\]
+The node set uses $j+k$ even.  We denote the common value at the two
+corners outside this set by $\Lambda_c(n)$; the argument below also
+verifies that the two values agree.  In particular $(-1,-1)$ is such a
+corner for every $n$.
+
+\begin{proposition}[Positive corner formula]\label{prop:corner-formula}
+Put
+\[
+ f(u,v)=\frac{1+\cos v}{|\cos u-\cos v|},\qquad u\ne v.
+\]
+Then
+\begin{equation}\label{eq:corner-positive-sum}
+ \Lambda_c(n)=\frac4{nm}
+ \sum_{\substack{0\leq j,k\leq n\\j+k\ \mathrm{odd}}}
+ \varepsilon_j\eta_k f(\theta_j,\phi_k)+\frac1m.
+\end{equation}
+Every denominator in this sum is nonzero.  The other two corner values
+are $1$.
+\end{proposition}
+
+\begin{proof}
+We first sum the corner kernel in \eqref{eq:cardinal-kernel}.  Define
+\[
+ D_n(u,v)=\sum_{|p|+|q|\leq n}e^{i(pu+qv)}.
+\]
+Grouping the four sign choices shows that this is the product
+Chebyshev sum occurring at a corner in that formula.  Set
+$S=(u+v)/2$, $T=(v-u)/2$.  The substitution
+$(p,q)\mapsto(p+q,q-p)$ transforms the diamond into the two squares
+with equal coordinate parity.  Finite geometric sums therefore give
+\begin{equation}\label{eq:corner-rhombus-product}
+ D_n(u,v)=
+ \frac{\sin((n+1)S)\sin((n+1)T)+\sin(nS)\sin(nT)}
+ {\sin S\sin T}.
+\end{equation}
+Each quotient here is its continuous trigonometric polynomial at a
+vanishing denominator.
+
+Reflect the node indices about a corner which is not a node.  The
+reflected indices form the odd checkerboard, the endpoint weights are
+unchanged, and \eqref{eq:cardinal-kernel} becomes
+\[
+ \sum_{j+k\ \mathrm{odd}}\frac{2\varepsilon_j\eta_k}{nm}
+       |D_n(\theta_j,\phi_k)-(-1)^j|.
+\]
+For $j+k$ odd and $u=\theta_j$, $v=\phi_k$ with $u\ne v$,
+product to sum in \eqref{eq:corner-rhombus-product} yields
+\[
+ D_n(u,v)=(-1)^j\frac{2+\cos u+\cos v}{\cos u-\cos v},
+ \qquad |D_n(u,v)-(-1)^j|=2f(u,v).
+\]
+The meshes can coincide only at $(j,k)=(0,0)$ or $(n,m)$, since
+$n$ and $m$ are coprime.  The odd checkerboard excludes the first.
+At the second the continuous value is
+$D_n(\pi,\pi)=(-1)^n(2n+1)$, so its corrected absolute value is
+$2n$.  Its weight is $1/(2nm)$, giving the separate $1/m$ in
+\eqref{eq:corner-positive-sum}.  For $k=m$ and $j\ne n$ the numerator
+of $f$ is zero.  This proves the formula and its independence of the
+chosen nonnode corner.  Cardinality gives value $1$ at a node corner.
+\end{proof}
+
+\subsection{The part of each row that matters}
+
+An absolute row can be understood by finding where its sign changes.
+This is particularly simple here, and gives a useful alternative to
+the double sum.  For $0<x<1$ put
+\begin{equation}\label{eq:corner-w-B}
+ w(x)=\cot\frac{\pi x}{2},\qquad
+ B(x)=\cot(\pi x)-\frac1{\pi x}+\frac1{\pi(1-x)}.
+\end{equation}
+Both endpoint poles have been removed from $B$: it is analytic on a
+neighborhood of $[0,1]$, with $B(0)=1/\pi$ and $B(1)=-1/\pi$.
+For $x_r=r/m$ and $\alpha_r=(1-x_r)/2$ define
+\begin{align}
+ T_{n,r}&=\sum_{\ell=0}^{r-1}
+             \cot\frac{\pi(\ell+\alpha_r)}n,
+ &V_n&=\sum_{r=1}^n w(x_r)
+             \sum_{\ell=0}^{r-1}B\!\left(\frac{\ell+\alpha_r}{n}\right).
+ \label{eq:corner-partial-rows}
+\end{align}
+The upper limit is $r-1$, rather than $n-1$: these are precisely the
+positive samples of the row.
+
+We use the harmonic series definition
+\begin{equation}\label{eq:corner-psi-definition}
+ \psi(z)=-\gamma+\sum_{k=0}^{\infty}
+       \left(\frac1{k+1}-\frac1{k+z}\right),\qquad z>0,
+\end{equation}
+where $\gamma=\lim_{k\to\infty}(\sum_{j=1}^k j^{-1}-\log k)$.
+Set, for $s=m-r$,
+\begin{align}
+ D_{m,r}={}&\psi(r+\alpha_r)+\psi(s-\alpha_r)
+                  -\psi(m-\alpha_r)-\psi(\alpha_r),
+ \label{eq:corner-harmonic-row}\\
+ \mathcal H_m={}&\frac4{\pi m}\sum_{r=1}^{m-1}w(r/m)D_{m,r}.
+ \label{eq:corner-harmonic-triangle}
+\end{align}
+
+\begin{proposition}[Exact row decomposition]
+\label{prop:corner-harmonic-decomposition}
+For every $n\geq2$,
+\begin{align}
+ \Lambda_c(n)&=1-\frac{2n}{m}
+             +\frac4{nm}\sum_{r=1}^n w(r/m)T_{n,r},
+             \label{eq:corner-cotangent-decomposition}\\
+ &= -1+\frac2m+\mathcal H_m+\frac{4V_n}{nm}.
+             \label{eq:corner-exact-decomposition}
+\end{align}
+These identities retain all rows, including $r=n$, and both endpoint
+contributions.
+\end{proposition}
+
+\begin{proof}
+Fix $1\leq r\leq n$, put $v=r\pi/m$, and extend the first mesh
+periodically.  Its $n$ samples have $u_j=j\pi/n$, with
+$j\equiv1-r\pmod2$ modulo $2n$.  Write
+\[
+ F_r(u)=\frac{1+\cos v}{\cos u-\cos v},\qquad
+ R_r=\sum_j|F_r(u_j)|.
+\]
+There is no collision.  The identity
+\[
+ F_r(u)=\frac{\cot(v/2)}2
+       \left(\cot\frac{v-u}{2}+\cot\frac{v+u}{2}\right)
+\]
+and the finite cotangent sum
+$\sum_{\ell=0}^{n-1}\cot(z+\ell\pi/n)=n\cot(nz)$ give
+$\sum_jF_r(u_j)=n$.  The cotangent sum follows by taking the
+logarithmic derivative of the sine product over the $n$ equally
+spaced zeros; alternatively it follows from a finite geometric sum.
+In the present substitution its right hand cotangent is $\tan(v/2)$,
+which cancels $\cot(v/2)$.
+
+The positive samples have centered representatives $|j|<nr/m$.
+Since $r-1<nr/m<r$, they are exactly
+\[
+ j=-r+1,-r+3,\ldots,r-1.
+\]
+If their sum is $P_r$, the signed row identity gives $R_r=2P_r-n$.
+Their symmetry in $u$ and the displayed identity for $F_r$ give
+$P_r=w(r/m)T_{n,r}$, by writing $j=r-1-2\ell$.
+
+Folding this periodic row back to $0\leq j\leq n$ gives half of
+$R_r$, with exactly the weights $\varepsilon_j$.  The row $r=0$
+has $R_0=n^2$, from
+$\sum_{\ell=0}^{n-1}\csc^2((\ell+1/2)\pi/n)=n^2$ (differentiate
+the finite cotangent identity).  Its second-coordinate weight is
+$1/2$.  Together with the exceptional $1/m$ in
+\eqref{eq:corner-positive-sum}, this gives
+\[
+ \Lambda_c(n)=\frac1m+\frac nm+\frac2{nm}\sum_{r=1}^n(2P_r-n),
+\]
+which is \eqref{eq:corner-cotangent-decomposition}.
+
+Finally subtract the two poles of each cotangent in $T_{n,r}$.
+The recurrence from \eqref{eq:corner-psi-definition} gives exactly
+\[
+ T_{n,r}=\frac n\pi D_{m,r}
+       +\sum_{\ell=0}^{r-1}B\!\left(\frac{\ell+\alpha_r}{n}\right).
+\]
+The scalar term $1-2n/m$ equals $-1+2/m$, proving
+\eqref{eq:corner-exact-decomposition}.
+\end{proof}
+
+\subsection{A one dimensional reference and the limiting defect}
+
+If the two meshes in \eqref{eq:corner-positive-sum} were identical,
+the answer would be a square.  Define
+\begin{equation}\label{eq:corner-L-definition}
+ L_n=\frac2n\sum_{\substack{1\leq r\leq n\\r\ \mathrm{odd}}}
+       d_r\csc\frac{r\pi}{2n},\qquad
+ d_r=\begin{cases}\tfrac12,&r=n,\\1,&r<n.\end{cases}
+\end{equation}
+The half weight matters when $n$ is odd.  The following facts identify
+the constant which remains after the leading square is removed.  Their
+proofs, including the endpoint estimates, are given in
+Appendix~\ref{sec:asym-details-reference}.
+
+\begin{lemma}[The reference square]\label{lem:corner-reference-square}
+For every $n\geq2$,
+\[
+ \frac4{n^2}\sum_{\substack{0\leq j,k\leq n\\j+k\ \mathrm{odd}}}
+      \varepsilon_j\varepsilon_k f(\theta_j,\theta_k)=L_n^2.
+\]
+\end{lemma}
+
+\begin{lemma}[Size of the reference]\label{lem:corner-one-dimensional}
+Let $a=2/\pi$ and $d=\gamma+\log(8/\pi)$.  On the full integer
+sequence $n\geq1$,
+\begin{equation}\label{eq:corner-L-estimate}
+ \left|L_n-a(\log n+d)\right|\leq\frac1{4n^2}.
+\end{equation}
+\end{lemma}
+
+\begin{lemma}[The defect constant]\label{lem:corner-defect-limit}
+As $n\to\infty$ through all integers,
+\begin{equation}\label{eq:corner-kappa-limit}
+ \Lambda_c(n)-L_n^2\longrightarrow\kappa,
+ \qquad
+ \kappa=\frac8\pi\int_0^1 t^2\cot\frac{\pi t}{2}
+       \sum_{\substack{\ell\geq1\\\ell\ \mathrm{odd}}}
+              \frac1{\ell(\ell^2-t^2)}\,dt.
+\end{equation}
+The integrand has continuous limits at $0$ and $1$.
+\end{lemma}
+
+The mechanism behind \eqref{eq:corner-kappa-limit} is easy to see
+before making the estimates.  Fix the odd distance $\ell=|j-k|$
+from the diagonal and put $t=j/n$.  The change of mesh moves the
+two neighboring denominators from $\ell$ to $\ell-t$ and
+$\ell+t$.  Pairing the two directions leaves
+\[
+ \frac1{\ell-t}+\frac1{\ell+t}-\frac2\ell
+       =\frac{2t^2}{\ell(\ell^2-t^2)}.
+\]
+This is precisely the positive defect in the integral.  Its apparent
+pole at $\ell=t=1$ is canceled by the zero of
+$\cot(\pi t/2)$.  Thus the limiting constant comes from the
+adjacent meshes, while the leading logarithms come from the square.

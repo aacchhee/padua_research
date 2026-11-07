@@ -2106,3 +2106,19 @@ installation supports pdfLaTeX/latexmk; its smoke test passed. Draft
 uses actual sn-jnl rather than an imitation layout. New Sol xhigh scalar
 support worker supplies the H-monotonicity/model appendix; a distinct
 Astra high reviewer is checking source fidelity and manuscript statements.
+
+Integrated manuscript checkpoint: actual Springer-class build succeeds.
+Core corner/asymptotic main text and detailed appendix were independently
+read against H01/H04/H05/PD269/270 with no coefficient/sign/remainder
+mismatch. Reviewer findings corrected during assembly: precise MP O(n²)
+upper-bound attribution, corner-containing certificate-leaf alternatives,
+normalized phase pi² factors, and full completed-model coefficients.
+No canonical theorem/engine/evidence changed.
+
+The user-requested conceptual organization gives about16 pages of main
+argument (excluding title page) before appendices. The large support
+appendices are being completed rather than hidden behind internal IDs;
+the full compiled first draft currently grows beyond70pages. All PDFs
+and downloaded template files remain off Git. Equations are being split
+to fit the journal text width. A final integrated build and frozen
+supplementary review are still pending at this checkpoint.

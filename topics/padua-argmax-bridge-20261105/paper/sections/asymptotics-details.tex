@@ -1,0 +1,732 @@
+\section{Details for the corner expansion}\label{sec:asym-details}
+
+This appendix proves the estimates used in Sections~\ref{sec:corner}
+and \ref{sec:asym}.  All constants in an $O$ term are independent
+of the degree and of the row indices in their displayed ranges.
+
+\subsection{Elementary series and quadrature facts}
+\label{sec:asym-details-elementary}
+
+We record the elementary cotangent expansion in the normalization used
+here:
+\begin{equation}\label{eq:asym-details-cot-fraction}
+ \cot(\pi x)=\frac1\pi\left\{\frac1x+
+       \sum_{k=1}^{\infty}\left(\frac1{x-k}+\frac1{x+k}\right)\right\}.
+\end{equation}
+The opposite poles are paired in this formula.  One direct proof is to
+expand $\cos(xs)$ in its cosine series on $0\leq s\leq\pi$.
+Integration gives its constant coefficient
+$2\sin(\pi x)/(\pi x)$ and its $k$th coefficient
+$2(-1)^kx\sin(\pi x)/(\pi(x^2-k^2))$.  These coefficients are
+absolutely summable.  Evaluation of the uniformly convergent series
+at $s=\pi$ gives \eqref{eq:asym-details-cot-fraction} for
+nonintegral $x$.  The paired series and all its differentiated series
+converge uniformly on compact sets away from the poles.  Comparing the
+linear term at zero with the sine and cosine expansions gives
+\begin{equation}\label{eq:asym-details-square-sums}
+ \sum_{k\geq1}k^{-2}=\frac{\pi^2}{6},\qquad
+ \sum_{\substack{k\geq1\\k\ \mathrm{odd}}}k^{-2}=\frac{\pi^2}{8}.
+\end{equation}
+
+We will repeatedly use the cellwise trapezoid identity
+\begin{equation}\label{eq:asym-details-trapezoid-kernel}
+ \frac{h}{2}\{g(u)+g(u+h)\}-\int_u^{u+h}g(t)\,dt
+   =\frac12\int_u^{u+h}(t-u)(u+h-t)g''(t)\,dt.
+\end{equation}
+It follows by two integrations by parts.  For bounded $g''$ its
+absolute value is at most $h^3\|g''\|_\infty/12$; it is also at
+most $(h^2/8)\int_u^{u+h}|g''|$.  The corresponding midpoint error
+is at most $h^3\|g''\|_\infty/24$, by integrating Taylor's formula
+about the midpoint.
+
+For $H_k=\sum_{j=1}^k j^{-1}$, applying
+\eqref{eq:asym-details-trapezoid-kernel} to $1/t$ on the unit cells
+from $k$ to infinity gives
+\begin{equation}\label{eq:asym-details-harmonic-estimate}
+ H_k=\log k+\gamma+\frac1{2k}+r_k,
+ \qquad -\frac1{8k^2}\leq r_k\leq0.
+\end{equation}
+Indeed the sum of the nonnegative trapezoid errors in that tail is
+$\log k+\gamma-H_k+1/(2k)$, and is bounded by
+$\frac18\int_k^\infty 2t^{-3}\,dt=1/(8k^2)$.
+
+The series \eqref{eq:corner-psi-definition} converges uniformly on
+each compact subset of $(0,\infty)$: its $k$th summand is bounded
+there by $C/k^2$.  Its derivative series have the same local uniform
+convergence, and therefore
+\begin{align}
+ \psi(z+1)-\psi(z)&=\frac1z,
+ &\psi'(z)&=\sum_{k=0}^{\infty}(z+k)^{-2},
+ &\psi''(z)&=-2\sum_{k=0}^{\infty}(z+k)^{-3}.
+ \label{eq:asym-details-psi-series}
+\end{align}
+These differentiations can also be justified by integrating the finite
+derivative sums over a compact interval and passing to the uniform
+limit.  In particular $\psi''<0$ is strictly increasing, and
+\begin{equation}\label{eq:asym-details-psi-second-bound}
+ |\psi''(z)|\leq z^{-2}+2z^{-3},\qquad z>0,
+\end{equation}
+by integral comparison of its positive series.
+
+The same series gives
+$\psi(z)=\lim_{K\to\infty}\{\log K-\sum_{k=0}^{K-1}(z+k)^{-1}\}$.
+Apply \eqref{eq:asym-details-trapezoid-kernel} to
+$(z+t)^{-1}$ on $[0,K]$ and then let $K\to\infty$; the bound
+by the integral of its second derivative gives, uniformly for $z\geq1$,
+\begin{equation}\label{eq:asym-details-psi-asymptotic}
+ \psi(z)=\log z-\frac1{2z}+O(z^{-2}),\qquad
+ \psi'(z)=\frac1z+O(z^{-2}).
+\end{equation}
+The second assertion also follows directly by integral comparison.
+At the half integer the finite harmonic sums in the definition give
+\begin{equation}\label{eq:asym-details-half-integer}
+ \psi(\tfrac12)=-\gamma-2\log2,
+ \qquad \psi'(\tfrac12)=4\sum_{k\ \mathrm{odd}}k^{-2}
+                           =\frac{\pi^2}{2}.
+\end{equation}
+For example the finite sum for the first value is
+$-\gamma+2H_K-2H_{2K}$, which has the indicated limit.
+
+\subsection{The reference square and its defect}
+\label{sec:asym-details-reference}
+
+\begin{proof}[Proof of Lemma~\ref{lem:corner-reference-square}]
+Simultaneous reflection $j\mapsto n-j$, $k\mapsto n-k$
+preserves the denominator and the weights of the equal-mesh sum, and
+replaces $1+\cos\theta_k$ by $1-\cos\theta_k$.  Averaging
+therefore replaces its numerator by $1$.  There is no diagonal,
+since $j+k$ is odd.  Put $h=\pi/(2n)$, $c_r=\csc(rh)$.
+For $j>k$, set $s=j-k$, $r=j+k$.  Both are positive odd integers,
+and
+\[
+ |\cos\theta_j-\cos\theta_k|=2\sin(rh)\sin(sh),
+ \qquad s\leq r\leq2n-s.
+\]
+The two orders of $j,k$ cancel this factor $2$.  For fixed $s<n$,
+the extreme values $r=s,2n-s$ have half weight, and the other
+values have weight $1$.  Using $c_{2n-r}=c_r$, their sum is
+\[
+ c_s+2\sum_{\substack{s<r<n\\r\ \mathrm{odd}}}c_r
+      +\boldsymbol1_{\{n\ \mathrm{odd}\}}c_n.
+\]
+When $s=n$ occurs, its sole pair $(j,k)=(n,0)$ has weight $1/4$.
+Multiplying by $c_s$ and summing over $s$ is exactly the expansion
+of $(\sum_{r\leq n,\ r\ \mathrm{odd}}d_rc_r)^2$.  Restoring
+the factor $4/n^2$ proves the identity, including the odd endpoint.
+\end{proof}
+
+\begin{proof}[Proof of Lemma~\ref{lem:corner-one-dimensional}]
+Set $y_r=(2r-1)\pi/(4n)$, $1\leq r\leq n$.  Pairing $r$ with
+$n+1-r$ and using $\cot y+\tan y=2\csc(2y)$ gives
+\begin{equation}\label{eq:asym-details-L-midpoints}
+ L_n=\frac1n\sum_{r=1}^n\cot y_r.
+\end{equation}
+For odd $n$, the central midpoint is $\pi/4$ and contributes $1$,
+which is precisely the half-weight endpoint in
+\eqref{eq:corner-L-definition}.
+
+Put $v_0(y)=\cot y-1/y$, $v_0(0)=0$, on $[0,\pi/2]$.
+Then $\int_0^{\pi/2}v_0=\log(2/\pi)$.  The partial fraction
+\eqref{eq:asym-details-cot-fraction}, rescaled to the variable $y$,
+gives
+\[
+ |v_0''(y)|=4y\sum_{k\geq1}
+       \frac{3\pi^2k^2+y^2}{(\pi^2k^2-y^2)^3}
+ \leq\frac{416}{27\pi^3}\sum_{k\geq1}k^{-4}<1.
+\]
+For the last inequality use $\pi>3$ and
+$\sum k^{-4}\leq1+\int_1^\infty t^{-4}dt=4/3$.
+The composite midpoint estimate on these $n$ cells consequently gives
+\[
+ \left|\frac1n\sum_{r=1}^n v_0(y_r)
+       -\frac2\pi\log(2/\pi)\right|
+       \leq\frac{\pi^2}{96n^2}<\frac1{8n^2}.
+\]
+The singular part of \eqref{eq:asym-details-L-midpoints} is exactly
+$a(2H_{2n}-H_n)$.  Formula
+\eqref{eq:asym-details-harmonic-estimate} gives
+\[
+ |2H_{2n}-H_n-(\log n+\gamma+2\log2)|
+       \leq\frac3{16n^2}.
+\]
+Its contribution after multiplication by $a=2/\pi$ is less than
+$1/(8n^2)$.  Adding the two errors proves
+\eqref{eq:corner-L-estimate}.
+\end{proof}
+
+To control the mesh deformation, we need a bound which is uniform up
+to both ends of every diagonal.
+
+\begin{lemma}[A uniform deformation bound]
+\label{lem:asym-details-deformation}
+For $0\leq j,k\leq n$, $j+k$ odd and $\ell=|j-k|$,
+\begin{equation}\label{eq:asym-details-deformation-bound}
+ |f(\theta_j,\phi_k)-f(\theta_j,\theta_k)|
+       \leq\frac{\pi^2n}{2\ell^2}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+There is no diagonal.  The cases $k=0$ and $j=n$ have zero
+deformation, so suppose $k>0$, $j<n$.  Put
+$u=\theta_j$, $v_0=\theta_k$, $v_1=\phi_k$,
+$\delta=v_0-v_1=\pi k/(nm)$, $V=(v_0+v_1)/2$,
+$S_i=(u+v_i)/2$, and $Q_i=|u-v_i|/2$.  The order of $u,v_i$
+is the same for $i=0,1$.  Exact subtraction gives
+\[
+ E:=|f(u,v_1)-f(u,v_0)|
+ =\frac{\cos^2(u/2)\sin V\sin(\delta/2)}
+        {\sin S_0\sin S_1\sin Q_0\sin Q_1}.
+\]
+Since $\sin S_i\geq\cos(u/2)\sin(v_i/2)$,
+\[
+ \frac{\cos^2(u/2)\sin V}{\sin S_0\sin S_1}
+ \leq\cot(v_0/2)+\cot(v_1/2)
+ \leq2\cot(v_1/2)\leq\pi\frac{m-k}{k}.
+\]
+The last inequality uses $\sin z\geq2z/\pi$ and
+$\cos z\leq\pi/2-z$ for $0\leq z\leq\pi/2$.
+Multiplication by $\sin(\delta/2)\leq\pi k/(2nm)$ bounds
+the numerator after this comparison by $\pi^2(m-k)/(2nm)$.
+
+If $k<j$, both $\sin Q_i\geq\ell/n$, giving the result.
+If $k>j$, write $r=n-j$.  The same chord inequality gives
+\[
+ \sin Q_0\geq\ell/n,\qquad
+ \sin Q_1\geq\frac{n(\ell-1)+r}{nm},\qquad m-k\leq r.
+\]
+Thus
+\[
+ E\leq\frac{\pi^2nr}{2\ell\{n(\ell-1)+r\}}
+       \leq\frac{\pi^2n}{2\ell^2},
+\]
+where the last step uses $r\leq n$.  This also covers
+$\ell=1$ and $k=n$.
+\end{proof}
+
+\begin{proof}[Proof of Lemma~\ref{lem:corner-defect-limit}]
+Using the actual weights in \eqref{eq:corner-positive-sum} and
+Lemma~\ref{lem:corner-reference-square}, set
+\[
+ \Delta_n=\frac4{nm}
+ \sum_{\substack{0\leq j,k\leq n\\j+k\ \mathrm{odd}}}
+ \varepsilon_j\eta_k
+      \{f(\theta_j,\phi_k)-f(\theta_j,\theta_k)\}.
+\]
+The $k=n$ reference row is zero, so its weight may be changed from
+$\eta_n=1$ to $\varepsilon_n=1/2$ without changing its value.
+Consequently the exact normalization is
+\begin{equation}\label{eq:asym-details-exact-defect}
+ \Lambda_c(n)-L_n^2=\Delta_n+\frac{1-L_n^2}{m}.
+\end{equation}
+The elementary bound $\sin(r\pi/(2n))\geq r/n$ shows
+$L_n\leq2\sum_{r\leq n,\ r\ \mathrm{odd}}1/r\leq2+\log n$;
+the second term in \eqref{eq:asym-details-exact-defect} therefore
+tends to zero.
+
+Fix an odd $\ell\geq1$ and an orientation $\sigma=\pm1$, and
+write $k=j+\sigma\ell$, $t=j/n$.  On every compact subinterval
+of $0<t<1$, expansion of the sine factors in the cosine difference
+gives, uniformly as $n\to\infty$,
+\begin{equation}\label{eq:asym-details-diagonal-limit}
+ \frac{f(\theta_j,\phi_k)-f(\theta_j,\theta_k)}{n}
+ \longrightarrow h_{\sigma,\ell}(t)
+ =\frac{\cot(\pi t/2)}\pi
+       \left(\frac1{|\sigma\ell-t|}-\frac1\ell\right).
+\end{equation}
+Indeed $\phi_k-\theta_j=\pi(\sigma\ell-t)/m$ and
+$\theta_k-\theta_j=\pi\sigma\ell/n$; the other sine factor
+tends to $\sin(\pi t)$, and
+$(1+\cos(\pi t))/\sin(\pi t)=\cot(\pi t/2)$.
+Taking the limit in
+\eqref{eq:asym-details-deformation-bound} gives
+$|h_{\sigma,\ell}|\leq\pi^2/(2\ell^2)$ in the open interval.
+The explicit expression has finite endpoint limits.
+
+For completeness, this convergence suffices for the full sums, rather
+than only for interior rows.  For each fixed $\ell$, restrict first
+to $\delta\leq j/n\leq1-\delta$.  Uniform convergence in
+\eqref{eq:asym-details-diagonal-limit} and the usual Riemann sum
+limit apply there; all weights are one for sufficiently large $n$.
+The at most $2\delta n+O(1)$ remaining rows have total normalized
+absolute contribution at most $C(\delta+1/n)/\ell^2$, by
+\eqref{eq:asym-details-deformation-bound}.  The same bound controls
+the omitted endpoint intervals of the limiting integral.  Let
+$n\to\infty$, and then $\delta\downarrow0$.  This proves the
+limit for every fixed offset, with the factor $4n/m\to4$.
+Finally the combined finite and limiting tails for $\ell>M$ are
+bounded by $C\sum_{\ell>M}\ell^{-2}\to0$, uniformly in $n$.
+This justifies both limit exchanges without a parity restriction or
+an unestimated endpoint strip.
+
+Pairing orientations in the limit gives
+\[
+ 4(h_{+,\ell}+h_{-,\ell})
+ =\frac8\pi\cot\frac{\pi t}{2}
+       \frac{t^2}{\ell(\ell^2-t^2)}.
+\]
+Summing proves \eqref{eq:corner-kappa-limit}.  The terms with
+$\ell\geq3$ converge uniformly with all endpoint values, and the
+single $\ell=1$ term has its pole canceled by the cotangent zero
+at $t=1$.  At zero the factor $t^2\cot(\pi t/2)$ tends to zero.
+Thus the claimed continuous endpoint values also follow.
+\end{proof}
+
+\subsection{Uniform centering of the harmonic rows}
+\label{sec:asym-details-centering}
+
+\begin{lemma}[Uniform centering, including the end rows]
+\label{lem:asym-details-centering}
+Let $m\geq2$, $1\leq s\leq m-1$, $r=m-s$, and $q=s/(2m)$.
+Then the row $D_{m,r}$ of \eqref{eq:corner-harmonic-row} satisfies
+\begin{align}
+ D_{m,r}={}&\psi(r+\tfrac12)+\psi(s)-\psi(q)-\psi(m)
+                       -\frac{J_{m,r}}{2m}-\rho_{m,r},
+ \label{eq:asym-details-centering-exact}\\
+ J_{m,r}={}&r\psi'(r+\tfrac12)+s\psi'(s)-s\psi'(m),
+ &0<\rho_{m,r}\leq\frac{257}{216m^2}<\frac5{4m^2}.
+ \label{eq:asym-details-centering-error}
+\end{align}
+In particular the actual weighted remainder is
+$O(\log m/m^2)$ after multiplication by $4/(\pi m)$ and
+summation with the weights $w(r/m)$.
+\end{lemma}
+
+\begin{proof}
+For $z>h>0$ Taylor's formula in integral form is
+\[
+ \psi(z-h)=\psi(z)-h\psi'(z)+\mathcal R(z,h),\qquad
+ \mathcal R(z,h)=\int_0^h(h-t)\psi''(z-t)\,dt<0.
+\]
+By \eqref{eq:asym-details-psi-second-bound},
+\begin{equation}\label{eq:asym-details-Taylor-bound}
+ 0<-\mathcal R(z,h)
+       \leq\frac{h^2}{2}\{(z-h)^{-2}+2(z-h)^{-3}\}.
+\end{equation}
+The three shifted arguments in $D_{m,r}$ are exactly
+\[
+ r+q=r+\tfrac12-\frac r{2m},\qquad
+ s-q=s-\frac s{2m},\qquad m-q=m-\frac s{2m}.
+\]
+Apply this Taylor identity at
+$(z,h)=(r+1/2,r/(2m)),(s,q),(m,q)$, keeping $-\psi(q)$
+unchanged.  This gives \eqref{eq:asym-details-centering-exact},
+with
+\[
+ -\rho_{m,r}=\mathcal R(r+\tfrac12,r/(2m))
+                         +\mathcal R(s,q)-\mathcal R(m,q).
+\]
+Since $\psi''$ is strictly increasing and the last two remainders
+have the same shift, $\mathcal R(s,q)-\mathcal R(m,q)<0$.
+Thus $\rho_{m,r}>0$, and
+\[
+ \rho_{m,r}\leq-\mathcal R(r+\tfrac12,r/(2m))-\mathcal R(s,q).
+\]
+The lower arguments are $r+q\geq r$ and
+$s-q\geq3s/4$, respectively.  Formula
+\eqref{eq:asym-details-Taylor-bound} therefore gives
+\[
+ -\mathcal R(r+\tfrac12,r/(2m))\leq\frac3{8m^2},\qquad
+ -\mathcal R(s,q)\leq\frac{22}{27m^2}.
+\]
+Their sum is $257/(216m^2)$, proving the asserted uniform bound.
+
+Finally $0<w(r/m)<am/r$ follows from $\tan z>z$ on
+$(0,\pi/2)$.  Hence $\sum_{r<m}w(r/m)<amH_{m-1}$.
+More precisely the weighted difference between the centered expression
+and $\mathcal H_m$ is positive and at most
+\[
+ \frac4{\pi m}\frac{257}{216m^2}\,amH_{m-1}
+       =\frac{257H_{m-1}}{27\pi^2m^2}.
+\]
+Since $H_{m-1}\leq1+\log(m-1)$, this proves the final assertion.
+\end{proof}
+
+\subsection{Aggregation of the harmonic triangle}
+\label{sec:asym-details-harmonic}
+
+We now prove \eqref{eq:asym-harmonic-expansion}.  Set
+\[
+ d_0=\gamma+2\log2,\qquad q_0=\frac{\pi^2}{4}-1,
+ \qquad
+ F(x)=\log x+\log(1-x)-\psi((1-x)/2).
+\]
+The auxiliary constants $d_0,q_0$ here are distinct from the final
+coefficients $c_1,b,c$ in \eqref{eq:asym-coefficients}.
+
+\paragraph{The summable endpoint corrections.}
+For real $t\geq1$ define
+\[
+ e(t)=\psi(t+\tfrac12)-\log t,\qquad
+ u(t)=t\psi'(t+\tfrac12)-1.
+\]
+The midpoint estimate for $y^{-2}$ on the unit intervals covering
+$[t,\infty)$ gives
+$\psi'(t+1/2)=1/t+O(t^{-3})$ uniformly for $t\geq1$:
+the individual errors are bounded by a constant times $(t+k)^{-4}$,
+whose sum is $O(t^{-3})$.  Consequently $u(t)=O(t^{-2})$.
+Formula \eqref{eq:asym-details-psi-asymptotic} implies
+$e(t)\to0$; integrating $e'(t)=O(t^{-3})$ from infinity gives
+$e(t)=O(t^{-2})$.  Thus
+\begin{equation}\label{eq:asym-details-endpoint-sums}
+ S_e=\sum_{r=1}^{\infty}\frac{e(r)}r,
+ \qquad S_u=\sum_{r=1}^{\infty}\frac{u(r)}r
+\end{equation}
+are absolutely convergent.
+
+Only the second must be evaluated.  Finite recurrence summation gives
+the exact identity
+\begin{equation}\label{eq:asym-details-trigamma-finite-sum}
+ \sum_{r=1}^R\psi'(r+\tfrac12)
+  =(R+\tfrac12)\psi'(R+\tfrac12)+\psi(R+\tfrac12)
+                         -\psi(\tfrac12)-\tfrac12\psi'(\tfrac12).
+\end{equation}
+To verify it, write
+$\psi'(r+1/2)=\psi'(1/2)-\sum_{k=0}^{r-1}(k+1/2)^{-2}$,
+sum this finite triangle, and use
+$k=(k+1/2)-1/2$ in the coefficient of each summand.
+Subtract $H_R$ in \eqref{eq:asym-details-trigamma-finite-sum}
+and let $R\to\infty$.  The first term on the right tends to $1$,
+and $\psi(R+1/2)-H_R\to-\gamma$.  In conjunction with
+\eqref{eq:asym-details-half-integer}, this yields
+\begin{equation}\label{eq:asym-details-Su-value}
+ S_u=1+2\log2-\frac{\pi^2}{4},\qquad q_0+S_u=2\log2.
+\end{equation}
+
+\paragraph{An expansion that can be summed uniformly.}
+Put $s=m-r$, $x=r/m$.  Substitute
+\eqref{eq:asym-details-psi-asymptotic} into the centering lemma,
+but retain $e(r)$ and $u(r)$ exactly.  The result is
+\begin{align}
+ D_{m,r}={}&\log m+F(x)+e(r)
+       -\frac1{2m(1-x)}-\frac{x}{2m}-\frac{u(r)}{2m}
+       +Q_{m,r},\label{eq:asym-details-row-expanded}\\
+ |Q_{m,r}|\leq{}& C\left(s^{-2}+(ms)^{-1}+m^{-2}\right).
+ \label{eq:asym-details-row-remainder}
+\end{align}
+Here the integer difference $\psi(s)-\psi(m)$ contributes
+$\log(s/m)-1/(2s)+1/(2m)+O(s^{-2}+m^{-2})$.
+The derivative bracket in \eqref{eq:asym-details-centering-exact}
+is $1+x+u(r)+O(1/s+1/m)$; this cancels the scalar $1/(2m)$
+and explains the term $-x/(2m)$ in
+\eqref{eq:asym-details-row-expanded}.
+
+For summation we have both endpoint bounds
+\begin{equation}\label{eq:asym-details-weight-bounds}
+ 0<w(r/m)\leq\frac{am}{r},\qquad
+ w(r/m)\leq C\frac{s}{m}\quad(r\geq m/2).
+\end{equation}
+The second follows from $w(r/m)=\tan(\pi s/(2m))$ on
+$0\leq s/m\leq1/2$.  Split the sum at $r=m/2$.  On its first
+half, $s\geq m/2$ and
+$(1/m)w|Q|\leq C/(m^2r)$.  On the second half the $s^{-2}$
+part is bounded by $C/(m^2s)$ after weighting and normalization;
+the other two parts are no larger in total.  Hence
+\begin{equation}\label{eq:asym-details-weighted-row-error}
+ \frac1m\sum_{r=1}^{m-1}w(r/m)|Q_{m,r}|
+          =O(\log m/m^2).
+\end{equation}
+
+Let $v(x)=w(x)-a/x$, with $v(0)=0$.  This is smooth on $[0,1]$
+and $|v(x)|\leq Cx$.  The decay of $e,u$ and their series tails
+in \eqref{eq:asym-details-endpoint-sums} give
+\begin{align}
+ \frac1m\sum_{r<m}w(r/m)e(r)&=aS_e+O(\log m/m^2),
+ \label{eq:asym-details-e-weighted}\\
+ \frac1m\sum_{r<m}w(r/m)u(r)&=aS_u+O(\log m/m^2).
+ \label{eq:asym-details-u-weighted}
+\end{align}
+Indeed the tails of $\sum e(r)/r$, $\sum u(r)/r$ are
+$O(m^{-2})$, and each $v$ contribution is bounded by
+$Cm^{-2}\sum_{r<m}r^{-1}$.  In particular the $e$ term contributes
+a constant but no $1/m$ term.
+
+The functions $w(x)/(1-x)-a/x$ and $xw(x)$ are smooth through
+both endpoints.  An ordinary trapezoid estimate and
+\eqref{eq:asym-details-harmonic-estimate} therefore give
+\begin{align}
+ \frac1m\sum_{r<m}\frac{w(r/m)}{1-r/m}
+       &=a\log m+a\gamma+I_1+O(1/m),
+ \label{eq:asym-details-I1-sum}\\
+ \frac1m\sum_{r<m}\frac rm w(r/m)&=I_2+O(1/m).
+ \label{eq:asym-details-I2-sum}
+\end{align}
+If
+\[
+ M_m=\frac1m\sum_{r<m}w(r/m)\{\log m+F(r/m)\},
+\]
+the preceding formulas applied to
+\eqref{eq:asym-details-row-expanded} now yield
+\begin{equation}\label{eq:asym-details-H-to-M}
+ \mathcal H_m=\frac4\pi\left\{
+ M_m+aS_e-\frac{a\log m+a\gamma+I_1+I_2+aS_u}{2m}
+                         \right\}+O(\log m/m^2).
+\end{equation}
+
+\paragraph{The logarithmic quadrature.}
+Subtract the explicit singularity by setting
+\begin{equation}\label{eq:asym-details-R-definition}
+ R(x)=w(x)F(x)-a\frac{\log x+d_0}{x}.
+\end{equation}
+Near zero put $J(x)=\log(1-x)-\psi((1-x)/2)$.
+It is analytic there with $J(0)=d_0$ and $J'(0)=q_0$, by
+\eqref{eq:asym-details-half-integer}.  Hence
+\[
+ R(x)=a\frac{J(x)-d_0}{x}+v(x)\{\log x+J(x)\}.
+\]
+The first summand is analytic and $v(x)=O(x)$.  Near the other
+endpoint put $y=1-x$.  The recurrence gives
+$\psi(y/2)=-2/y+\psi(1+y/2)$, with its second term analytic,
+whereas $w(1-y)=\tan(\pi y/2)$.  These actual analytic
+factorizations, followed by compactness on an interior interval, prove
+\begin{align}
+ R(0)&=aq_0,&R(1)&=\pi-ad_0,
+ \label{eq:asym-details-R-endpoints}\\
+ |R''(x)|&\leq C\{x^{-1}+(1-x)^{-1}\},&&0<x<1,
+ \label{eq:asym-details-R-second}\\
+ |R(x)-R(0)|&\leq Cx(1+|\log x|),&&0<x\leq\tfrac12,
+ \notag\\
+ |R(1-y)-R(1)|&\leq Cy(1+|\log y|),&&0<y\leq\tfrac12.
+ \label{eq:asym-details-R-endpoint-moduli}
+\end{align}
+In particular no differentiation of an unspecified $O$ term is needed
+to obtain \eqref{eq:asym-details-R-second}.
+
+Let $h=1/m$.  On each endpoint cell,
+\eqref{eq:asym-details-R-endpoint-moduli} bounds the trapezoid error
+by $O(h^2(1+|\log h|))$.  On the interior cells use the integral
+bound in \eqref{eq:asym-details-trapezoid-kernel} and integrate
+\eqref{eq:asym-details-R-second} over $[h,1-h]$.  This also costs
+$O(h^2\log m)$.  Thus the actual endpoint-excluded formula is
+\begin{equation}\label{eq:asym-details-R-quadrature}
+ \frac1m\sum_{r<m}R(r/m)=\int_0^1R(x)\,dx
+       -\frac{R(0)+R(1)}{2m}+O(\log m/m^2).
+\end{equation}
+
+Two harmonic sums finish the calculation:
+\begin{align}
+ H_{m-1}&=\log m+\gamma-\frac1{2m}+O(m^{-2}),
+ \label{eq:asym-details-Hm1}\\
+ \sum_{r<m}\frac{\log r}{r}
+   &=\frac12\log^2m+C_K-\frac{\log m}{2m}
+                                     +O(\log m/m^2).
+ \label{eq:asym-details-log-harmonic}
+\end{align}
+The first follows from \eqref{eq:asym-details-harmonic-estimate}.
+For the second apply the unit-cell trapezoid identity to
+$g(t)=\log t/t$ on $[1,m]$.  The sum of its local errors converges,
+since $g''(t)=(2\log t-3)/t^3$ is integrable at infinity, and its
+tail is $O(\log m/m^2)$.  This proves the formula with a real
+constant $C_K$.
+
+Finally $v(0)=0$, $v(1)=-a$, and
+$\int_0^1v(x)\,dx=a\log(2/\pi)$.  The ordinary trapezoid
+formula combined with \eqref{eq:asym-details-Hm1} shows
+\begin{equation}\label{eq:asym-details-w-sum}
+ \frac1m\sum_{r<m}w(r/m)
+       =a(\log m+\gamma)+a\log(2/\pi)+O(m^{-2}).
+\end{equation}
+Its $1/m$ terms cancel: $aH_{m-1}$ contributes $-a/(2m)$,
+and the endpoint correction for $v$ contributes $+a/(2m)$.
+
+Use \eqref{eq:asym-details-R-definition} to write $M_m$ exactly
+as the sum of $\log m$ times the left side of
+\eqref{eq:asym-details-w-sum}, the singular sum
+\[
+ a\sum_{r<m}\frac{\log r}{r}+a(d_0-\log m)H_{m-1},
+\]
+and $(1/m)\sum R(r/m)$.  Inserting
+\eqref{eq:asym-details-R-quadrature}--\eqref{eq:asym-details-w-sum}
+gives a real constant $C_M$ with
+\begin{equation}\label{eq:asym-details-M-expansion}
+ M_m=\frac a2\log^2m+ad\log m+C_M
+       -\frac{\pi+aq_0}{2m}+O(\log m/m^2).
+\end{equation}
+Here $d=d_0+\log(2/\pi)$.  To see the first-order cancellation
+explicitly, the $-a\log m/(2m)$ from
+\eqref{eq:asym-details-log-harmonic} cancels the
+$+a\log m/(2m)$ from $-a\log m H_{m-1}$.
+The remaining coefficient is
+$-(ad_0+R(0)+R(1))/2=-(\pi+aq_0)/2$.
+
+Substitute \eqref{eq:asym-details-M-expansion} and
+\eqref{eq:asym-details-Su-value} into
+\eqref{eq:asym-details-H-to-M}.  Since $4/\pi=2a$ and
+$q_0+S_u=2\log2$, the logarithmic first correction is
+$-a^2\log m/m$, and its constant companion is
+\[
+ -a\{\pi+aq_0+a\gamma+I_1+I_2+aS_u\}
+       =-2-a^2(\gamma+2\log2)-a(I_1+I_2)=\beta_H.
+\]
+All terms independent of $m$ can be collected in $C_H$ after
+subtracting the constant term in $A(m)^2$.  This proves
+\eqref{eq:asym-harmonic-expansion} with its stated uniform error.
+
+\subsection{Quadrature for the smooth residual}
+\label{sec:asym-details-smooth}
+
+We finish the proof of Proposition~\ref{prop:asym-two-expansions}
+by proving \eqref{eq:asym-smooth-expansion}, including its explicit
+error and the nonvanishing first coefficient.
+
+\paragraph{Uniform smoothness after removing both poles.}
+Removing the poles $0$ and $1$ in
+\eqref{eq:asym-details-cot-fraction} gives
+\begin{equation}\label{eq:asym-details-B-series}
+ B(x)=\frac1\pi\left\{\frac1{x+1}
+       +\sum_{k\geq2}\left(\frac1{x-k}+\frac1{x+k}\right)\right\}.
+\end{equation}
+It is analytic on $[-1/4,5/4]$.  The remaining negative poles are
+$-h$ and the positive ones $h+1$, $h\geq1$, both at distance
+at least $3h/4$ from that interval.  Thus, for $j=1,2$,
+\[
+ |B^{(j)}(x)|\leq\frac{2j!}{\pi}(4/3)^{j+1}
+                    \sum_{h\geq1}h^{-j-1}.
+\]
+Using $\sum h^{-2}\leq2$, $\sum h^{-3}\leq3/2$, and
+$\pi>3$, we obtain the convenient bounds
+\begin{equation}\label{eq:asym-details-B-bounds}
+ |B'|\leq3,\qquad |B''|\leq5,\qquad |B|<5
+                   \quad\hbox{on }[-1/4,5/4].
+\end{equation}
+The last bound follows from $B(0)=1/\pi$ and the first derivative
+bound.  Also $B(1-x)=-B(x)$.  Consequently, if
+\[
+ I(t)=\int_0^t B(x)\,dx,
+\]
+then $I(0)=I(1)=0$, and direct integration gives
+\begin{equation}\label{eq:asym-details-I-log}
+ I(t)=\frac1\pi\log\frac{\sin(\pi t)}{\pi t(1-t)},
+                      \qquad 0<t<1.
+\end{equation}
+The integral definition supplies its smooth endpoint values.
+
+Put $W(t)=tw(t)$, $W(0)=a$.  We have $0\leq W\leq a<1$.
+Substituting $x=t/2$ into
+\eqref{eq:asym-details-cot-fraction} yields
+\[
+ W(t)=\frac2\pi-\frac{4t^2}{\pi}
+                     \sum_{k\geq1}\frac1{4k^2-t^2}.
+\]
+Differentiating the uniformly convergent series on $[0,1]$, and using
+$4k^2-t^2\geq3k^2$, gives
+\begin{align*}
+ |W'|&\leq\frac{32}{9\pi}\sum_{k\geq1}k^{-2}<3,\\
+ |W''|&\leq\frac8\pi\left\{\frac49\sum_{k\geq1}k^{-2}
+                       +\frac{16}{27}\sum_{k\geq1}k^{-4}\right\}<5.
+\end{align*}
+The elementary integral comparisons for these sums suffice for both
+strict bounds.
+
+\paragraph{The exact cell union in a row.}
+Fix $t=r/m$ and $\alpha=(1-t)/2$.  The $r$ points
+$(\ell+\alpha)/n$, $0\leq\ell<r$, are the midpoints of the
+cells with endpoints $(\ell+\alpha\pm1/2)/n$.  Their union is
+exactly
+\begin{equation}\label{eq:asym-details-row-cell-union}
+ [-t/(2n),\ t+t/(2n)].
+\end{equation}
+For $n\geq2$ this lies in $[-1/4,5/4]$, including the case
+$r=n$.  The midpoint bound and \eqref{eq:asym-details-B-bounds}
+give an error at most $5r/(24n^2)\leq5t/(16n)$ when comparing
+the sum of $B$ values with $n$ times its integral on this union.
+Put $\delta=t/(2n)$.  Each of the two extensions of $[0,t]$
+satisfies
+\[
+ \left|n\int_{-\delta}^{0}B(x)\,dx-\frac t2B(0)\right|
+       \leq\frac{3t^2}{8n},\qquad
+ \left|n\int_t^{t+\delta}B(x)\,dx-\frac t2B(t)\right|
+       \leq\frac{3t^2}{8n}.
+\]
+It follows that, for every row,
+\begin{equation}\label{eq:asym-details-smooth-row}
+ \sum_{\ell=0}^{r-1}B((\ell+\alpha)/n)
+     =nI(t)+\frac t2\{B(t)+B(0)\}+e_{n,r},
+ \qquad |e_{n,r}|\leq\frac{17t}{16n}.
+\end{equation}
+
+\paragraph{The outer quadrature and its normalization.}
+Define smooth functions on $[0,1]$ by
+\[
+ \begin{aligned}
+ J_B(t)&=\int_0^1B(st)\,ds,\\
+ F_B(t)&=W(t)J_B(t)=w(t)I(t),\\
+ G_B(t)&=W(t)\{B(t)+1/\pi\}.
+ \end{aligned}
+\]
+The integral expression removes the apparent pole in $w(t)I(t)$.
+From the preceding bounds,
+$|J_B|\leq5$, $|J_B'|\leq3/2$, $|J_B''|\leq5/3$, so
+\begin{equation}\label{eq:asym-details-FG-bounds}
+ \|F_B''\|_\infty<36,\qquad\|G_B''\|_\infty<50.
+\end{equation}
+Their endpoint values are
+\[
+ F_B(0)=2/\pi^2,\quad F_B(1)=0,\qquad
+ G_B(0)=4/\pi^2,\quad G_B(1)=0.
+\]
+Multiply \eqref{eq:asym-details-smooth-row} by its exact weight
+$4w(t)/(nm)$ and sum.  Since $tw(t)\leq1$, this gives
+\begin{equation}\label{eq:asym-details-smooth-outer}
+ \frac{4V_n}{nm}=\frac4m\sum_{r=1}^{m-1}F_B(r/m)
+          +\frac2{nm}\sum_{r=1}^{m-1}G_B(r/m)+E_n,
+ \qquad |E_n|\leq\frac{17}{4nm}.
+\end{equation}
+The composite trapezoid formula and
+\eqref{eq:asym-details-FG-bounds} give
+\begin{align*}
+ \frac4m\sum_{r=1}^{m-1}F_B(r/m)
+   &=4\int_0^1F_B-\frac4{\pi^2m}+R_F,
+       &|R_F|&\leq\frac{12}{m^2},\\
+ \frac2{nm}\sum_{r=1}^{m-1}G_B(r/m)
+   &=\frac2n\int_0^1G_B-\frac4{\pi^2nm}+R_G,
+       &|R_G|&\leq\frac{25}{3nm^2}.
+\end{align*}
+The two endpoint corrections combine exactly:
+\[
+ -\frac4{\pi^2m}-\frac4{\pi^2nm}=-\frac4{\pi^2n}.
+\]
+This proves the asserted values of $C_B$ and $\beta_B$, because
+$\int_0^1G_B=I_B+I_2/\pi$ and $a=2/\pi$.
+The remaining error is bounded by
+\[
+ \frac{12}{m^2}+\frac{25}{3nm^2}+\frac{17}{4nm}<\frac{17}{n^2}.
+\]
+For the last inequality put $y=n/m<1$.  After multiplication by
+$n^2$ the left side is
+$(11/3)y^2+(151/12)y<65/4<17$.
+
+\paragraph{The smooth first correction has a strict sign.}
+Termwise differentiation of \eqref{eq:asym-details-B-series} gives
+$B'(t)<0$.  Thus $0<B(t)+1/\pi<2/\pi$ for $0<t<1$.
+Isolating the first pole in
+\eqref{eq:asym-details-cot-fraction} gives
+\[
+ B(t)=\frac1{\pi(1+t)}-\frac{2t}{\pi}
+                         \sum_{k\geq2}\frac1{k^2-t^2}.
+\]
+The last sum is greater than
+$\sum_{k\geq2}k^{-2}>\int_2^\infty x^{-2}dx=1/2$, whence
+\begin{equation}\label{eq:asym-details-B-sign-bound}
+ B(t)+1/\pi<\frac{2-t^2}{\pi(1+t)}.
+\end{equation}
+The telescoping sum $\sum_{k\geq1}(4k^2-1)^{-1}=1/2$ and the
+same cotangent expansion show
+\[
+ \frac{W(t)}{1-t^2}=\frac2\pi+\frac{4t^2}{\pi}
+    \sum_{k\geq1}\frac1{(4k^2-1)(4k^2-t^2)}.
+\]
+Bound $(4k^2-t^2)^{-1}$ by $(4-t^2)^{-1}$ to obtain
+\[
+ W(t)\leq\frac2\pi\frac{1-t^2}{1-t^2/4}.
+\]
+Together with \eqref{eq:asym-details-B-sign-bound}, this yields
+\[
+ 0<G_B(t)<\frac2{\pi^2}
+       \frac{(1-t)(2-t^2)}{1-t^2/4}
+       <\frac4{\pi^2}(1-t),\qquad 0<t<1.
+\]
+Thus $0<\int_0^1G_B<2/\pi^2$, and
+$\beta_B=-4/\pi^2+2\int_0^1G_B$ lies strictly between
+$-a^2$ and $0$.  This completes the proof of
+Proposition~\ref{prop:asym-two-expansions}.
