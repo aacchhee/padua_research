@@ -222,3 +222,65 @@ another distinct prospectively registered question and actual promise.
 C3 planned command:
 
 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2c_heldout.py --scratch <unique-new-dir> --output topics/padua-3d-20261106/evidence/u2c-heldout16.json`
+
+## C4 prospective append — finer completed-row cost control
+
+C3 actually passes: searched norm71.70775 versus one-sweep93.63848 and
+whole-sweep comparable-budget79.26742; extra65.783450517CPU seconds.
+The last complete comparable sweep costs49.914188378, leaving24.12%
+of that extra budget unused. Its9.54% U2 norm margin is modest enough
+that the cost granularity is a decisive remaining question. This is a
+stronger **existing-method control**, not a new optimizer or a claim to
+change the U2 mechanism. Closest predecessor is the registered repeated
+unchanged localdet audit and C3 completed-sweep control. The5% improvement
+criterion is preserved; neither C1 failure nor C3 outcome is replaced.
+
+Freeze the degree16 U2 candidate and the **actual C3 extra allowance
+65.783450517**. Reconstruct the control from the exact same C3 one-sweep
+localdet input, in a new exclusive timed window; do not splice an old
+49.914-second prefix cost into a new run. Start timing before loading
+that input. Execute one complete inherited unchanged full exchange
+sweep, with its node checkpoint cost included. If it exceeds the budget,
+retain/exclude it and select the original one-sweep initial prefix. If
+it fits, start the next sweep from those nodes, recomputing its basis,
+inverse and cards just as the inherited exchange does. Keep the exact
+node order, four angular-mesh cardinal starts plus current node,
+continuous optimizer, gain>1+1e-10 and Sherman–Morrison updates unchanged.
+
+The new row-boundary kernel must first match the inherited complete
+sweep **bitwise** on a small degree2 case before scientific execution.
+It adds only cost checkpoints. After each complete node-row operation,
+write its coordinates and metadata with flush/fsync, including that I/O
+in elapsed process cost. Choose the last completed checkpoint within the
+fixed budget, regardless of quality. Save the first over-budget completed
+row but exclude it. Check before starting each next row. If setup alone
+consumes the remaining allowance, keep the last prior completed prefix.
+If a whole second extra sweep fits, continue the same process through
+further complete sweeps until the first row overshoot or zero exchanges.
+Report actual full-sweep costs, selected full-sweep/row counts, selected
+CPU, unused allowance and every excluded row. Timer/selection metadata
+are reporting overhead; all candidate node checkpoints and numerical
+construction work are charged. Same-machine process measurements are
+not hardware-independent and a rerun's first-sweep time can differ.
+
+Only after this cost-only selection, assess U2, the rerun's last complete
+whole-sweep prefix, and the selected finer-row prefix with a fresh
+assessment seed set2026110861..2026110865. The same114700-point
+interior/face/edge cloud,140 physical local starts, nine functions,
+two measures and16-noise-trial design remain frozen. Retain all
+conditioning, function/noise and map-setup outcomes, including losses.
+C3's old assessment is known; these are new queries, not new functions.
+
+C4's strengthened gate requires valid nodes/maps, selected control
+cost<=65.783450517, original C3 cost<120, and U2 searched norm at most
+.95 times the **finer-row** control's searched norm. Keep the whole-sweep
+comparison separately. If the strengthened gate fails, stop the present
+cap40 practical norm-superiority recommendation against that stronger
+control; do not reject all U2/direct optimization or erase C3's narrower
+pass. If it passes, retain a finite degree16 endpoint rather than spending
+remaining rounds without a new application/scientific question. No new
+mechanism or historical-novelty gate is invoked by cost granularity.
+
+C4 planned command:
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2c_prefix_control.py --protocol-commit <published-C4-sha> --receipt topics/padua-3d-20261106/evidence/u2c-heldout16.json --scratch <unique-new-dir> --output topics/padua-3d-20261106/evidence/u2c-prefix-control.json`
