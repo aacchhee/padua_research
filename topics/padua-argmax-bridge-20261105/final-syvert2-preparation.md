@@ -1,4 +1,4 @@
-# Final Syvert2 preparation — WORK / UNEXECUTED
+# Prepared Syvert2 INTERIM-audit pack — WORK / bulk NOT RELEASED
 
 Codex technical developer; requested gpt-6.1-sol medium; actual serving metadata
 unexposed. Rules read at32c4f1c6cedac8af0ca43c361833e0f500474393. Root owns Git,
@@ -307,3 +307,27 @@ extraction or numerical work. Mathematical/hybrid/native code, assets, groups an
 caps are untouched. Reviewer03 controls must cover preflight orphan/exception/
 signal cleanup, failed subreaper/cleanup refusal and absent/changed original
 resume provenance. Prior01/02 failures and corpora remain preserved and unrepeated.
+
+## Delivery-preparation status — 2026-11-07, prose-only update
+
+Independent final operations report
+bf78ddb3a086b6d86d2847d122402eafedc1f588553b2920b553ea44e60c6e4e accepts
+the repaired source, registration03 synthetic operational controls (67 events),
+and data-only validation of four genuine saved passes. Historical registrations
+01/02 failed once each and remain preserved; their source fixes are accepted.
+The operational code remains the accepted b77 candidate. No numerical pack case,
+residual-degree attempt or Syvert2 run has occurred.
+
+Four local known-case hybrid executions,41/511 primary plus separately executed
+distinct fresh replay, were accepted. Their CPU checkpoints total28.060015,
+excluding final serialization/return; they are neither exact exit CPU nor a
+Syvert2 runtime/scaling forecast. Full raw/build/runtime evidence remains off Git.
+
+The prepared archive is for the requested INTERIM Claude audit, which must bring
+its OWN independent gap-closing ideas. Branch remains WORK; Codex implements the
+findings. Bulk execution is NOT RELEASED. Existing AC audit-then-run authority
+covers applicable internal root release; no additional AC permission request is
+introduced. Root will choose the published source pin after this prose-only
+update and owns real builder/release/delivery records. This developer executed
+no import, test, builder or asset job in making the update. Runtime plan, code,
+package pins, caps, GLIBC>=2.38 prerequisite and five interfaces are unchanged.

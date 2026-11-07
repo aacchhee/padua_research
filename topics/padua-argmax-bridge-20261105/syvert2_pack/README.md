@@ -1,15 +1,25 @@
-# Final Padua Syvert2 pack — source candidate, NOT RELEASED
+# Prepared Padua Syvert2 INTERIM-audit pack — bulk NOT RELEASED
 
 This follows the actual pinned bttb-research A/B/C delivery interface inspected
 through the GitHub connector, not its numerical algorithms. Research extension
 has ended. The accepted global tail covers all integer n>=320. Prospective
 small portability group: 41,42,63,64,159,160,511. Prospective large group:
 43..62,65..158,161..319 (273). Their disjoint union is exactly280 cases.
-No case in this source candidate has run. No new mathematical idea is proposed.
+No numerical pack case has run. No new mathematical idea is proposed.
 
-Source publication, independent source audit, release of bounded operational
-tests, and a separate final Claude audit/release precede numerical pack launch.
-The branch remains WORK. An interim audit is not bulk-run permission. There
+The operational source, registration03 synthetic controls (67 events), and
+data-only checks of four genuine saved passes are accepted in independent report
+bf78ddb3a086b6d86d2847d122402eafedc1f588553b2920b553ea44e60c6e4e.
+Historical failed registrations01/02 and their accepted source repairs remain
+preserved. Four local known-case hybrid executions (41/511 primary plus distinct
+fresh replay) were accepted, with28.060015 total CPU checkpoints; those checkpoints
+exclude final serialization/return and provide no runtime forecast. No residual
+degree or Syvert2 case has run.
+
+The next review is the requested **INTERIM Claude audit**, including its OWN
+independent gap-closing ideas; Codex implements its findings. The branch remains
+WORK and bulk execution is NOT RELEASED. Applicable internal root release stays
+within AC's existing audit-then-run authority, with no new AC permission request. There
 are no Syvert2 credentials or configured VPN in this session; no remote launch
 is possible here. Host hardware/allocation facts remain unverified.
 
@@ -81,7 +91,7 @@ missing, corrupt or nonquiescent groups refuse both operations. It includes comp
 native/build provenance. It never takes a live snapshot. Return ZIP filenames use
 actual hostname and UTC. Send the full ZIP; keep the original frozen package.
 
-Data-only checking (after release, not run here):
+Data-only checking (four saved genuine passes checked; a complete return remains prospective):
 
 ```sh
 python3 -I -S -B verify_return.py RETURN.zip --package TRUSTED_RELEASED_PACKAGE \

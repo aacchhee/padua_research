@@ -710,3 +710,138 @@ Both commands are fully specified in their separate registrations and await
 root publication/release. Only fixture/helper AST parsing and input hashing
 occurred. Root execution and reviewer inspection will be attributed separately;
 no independent rerun, operational PASS or scientific acceptance is claimed now.
+
+## Completed controls 03 and genuine saved-pass check — attributed final verdict
+
+**Accepted within the registered operational and data-only scopes.** Root
+executed both commands once at published source
+`1e62afbeca25ae85a94c508905b9bdfd67fac49d`. This reviewer did not execute or rerun
+them; reviewer independently read the resulting records, inspected selected
+failure/cleanup states and rehashed original inputs and captured objects.
+Failures 01/02 and their full histories above remain preserved. Branch WORK,
+unwaived P1–P4, separate Claude audit and final scientific-review obligations
+are not changed by this scoped acceptance.
+
+### Operational controls 03
+
+Root session `15824`, initial chunk `f20bcf`, completion chunk `b5eeeb`, directly
+observed **EXIT 0**. Off-Git `final-ops-controls-03/receipt.json` is 3,636 bytes,
+SHA256 `0369e9847d5ccf02b0cb5a01ecdef8d663eea93f1814e2173c7b19a0ee65b107`;
+root observation SHA256
+`50165e00e9995be0036f6a1e340c0d02f03efdf4b5565b5cba851301f3ef6d8c`.
+Receipt has no failure and 67 event records (including the final scope record).
+Self CPU 8.643807 seconds, waited-child CPU 0.364067 seconds, wall
+29.898180496995337 seconds. Root's aggregate observations 34,886,851 and
+34,959,225 bytes, with final 35,067,654 bytes before its observation file, are
+below the registered 67,108,864-byte threshold. These are fixture measurements,
+not production forecasts or evidence of hard aggregate filesystem enforcement.
+
+All enumerated assertions completed: all-group causal-state/identity refusals;
+preflight exception and SIGTERM orphan cleanup; cleanup failure leaves false;
+resume provenance/core refusal; exact synthetic 280-pair return validation and
+provenance/ZIP mutations; first-failure/timeout admission; owned fork cleanup;
+supervisor signals and quiescent collection; mocked preflight refusal and
+startup isolation. The process-environment audit hook observed no prohibited
+global scan. Removed scanner controls remain historical, not current coverage.
+
+Reviewer additionally read persisted states: fake preflight exception/SIGTERM
+retain their first failures, have nonempty cleanup records and true/ECHILD;
+mocked cleanup failure remains false/ECHILD-false; SIGKILL remains false while
+SIGTERM completes true/ECHILD. The second timeout worker's direct receipt is
+EXIT0 with `timeout:false`, so the no-further-admission assertion covered a
+freed slot rather than merely two timed-out workers. These observations support
+the causal contract under the frozen supported launch paths. Arithmetic was
+stubbed; actual production worker/loader/compiler/native portability was not
+tested by this suite.
+
+### Genuine saved-pass DATA_ONLY_NO_NATIVE check
+
+Root session `85887`, initial chunk `d9d450`, completion chunk `dbfb3f`, directly
+observed **EXIT 0**. Off-Git `final-ops-genuine-data-01/receipt.json` is 4,770 bytes,
+SHA256 `280a988d54f15e4c0185c486c1458b85334ed581afd913a4024ed2c4a593add9`;
+root observation SHA256
+`64e7ece159dd2f51a28acfb3e68ad603fad8b811f7ebcb178672ffce7de8b38e`.
+No failure; exactly primary41, fresh41, primary511, fresh511 completed through
+the real shared `validate_pass` and exact rational checker. Self CPU 1.416788
+seconds, wall 1.5423094299912918 seconds. Captured box before receipt was
+86,741,999 bytes, below the explicit 256 MiB staging reservation.
+
+Reviewer independently rehashed all **22** pinned imported-code/input files
+and all **234** captured SHA-addressed objects; every identity matched. Captured
+objects total 86,726,448 bytes; the additional box bytes include the copied
+checker. The four returned receipt identities equal the original pinned
+receipts. Thus actual saved schema, provenance linkage and external capture
+compatibility were exercised without mutating the original four outputs,
+recomputing intervals, spawning a compiler, or adding a native call/degree.
+This is data-only reconstruction and custody validation, not another fresh
+arithmetic replay or an independent execution of root's check by this reviewer.
+
+Reviewer commands were `cat`, `sha256sum` and a standard-library-only hash/JSON
+inspection script; it never imported operational/scientific source or invoked
+the validators again. One relative custody check was initially issued from the
+repository root and failed to locate its relative files; correcting the cwd
+made all sixteen hashes match. That read-only path correction was not a control
+rerun. Frozen helper and preregistration hashes also match the registered bytes.
+
+### Next permitted scope and remaining limits
+
+No concrete blocker remains in this reviewed scope to root's separately
+registered one-shot, source-pinned **archive builder**, with exact published
+source/remote-ref authentication, six pinned package inputs, fresh off-Git
+destination and direct exit/provenance capture. Standard timeout/prlimit and
+the honestly described staging reservation remain appropriate. This is not a
+release of numerical workers, remote runs or a readiness claim.
+
+After the builder completes, review the actual ZIP as data: complete code/data
+and six package byte identities, source manifest/custody, executable launcher
+modes, exact 7/273/280 worklists, absent Git metadata and fresh closure. The
+actual archive does not yet exist at this report boundary. Syvert2's glibc,
+compiler/loader and available capacity remain unverified; pinned GMP requires
+glibc>=2.38. Complete return retention and later independent scientific result
+review remain mandatory. No native/build/compiler/network action was performed
+by this reviewer during these result inspections.
+
+## New pre-builder portability finding — FOPS-10
+
+**MAJOR, builder release held pending a focused fix.** After the completed
+operational/genuine checks, root identified an additional static portability
+problem before any real archive build. Reviewer inspected
+`build_pack.py:56–70`, the preflight loader environment and related README text.
+The earlier no-known-blocker conclusion above is superseded for this newly
+identified builder scope; it does not invalidate the completed controls or
+saved-pass checks, which did not run the builder.
+
+For every non-arithmetic dependency resolved by producer-side `ldd`, the builder
+currently writes its bytes into `ASSET/lib/x86_64-linux-gnu`, alongside the pinned
+FLINT/GMP/MPFR libraries. Preflight and all case descendants use that directory
+as `LD_LIBRARY_PATH`. Producer libc/libm can therefore override the target's
+system runtime. Root reports producer glibc 2.41; mixing it with the target ELF
+interpreter can introduce an unadvertised newer requirement or a loader/libc
+incompatibility. This is a concrete source path, not an observed target failure.
+Copying a loader file there does not replace the interpreter named by the
+target Python/tool executable, so it is not a coherent portable glibc bundle.
+
+Recommended focused fix:
+
+- Restrict the active arithmetic library directory to the exact pinned
+  FLINT/GMP/MPFR package payloads and aliases. Reject any non-arithmetic library
+  accidentally added to that directory.
+- Keep producer non-arithmetic closure bytes/identities, if retained, under a
+  separate clearly labeled producer-custody location outside all runtime
+  `LD_LIBRARY_PATH`/rpath search paths. Alternatively retain the producer
+  observation alone; it is not evidence of the target runtime.
+- Preserve target-system runtime resolution. The unchanged fresh per-case
+  build/loaded-map provenance and `Access` capture must record and retain the
+  actual target Python, compiler and system library bytes. Preflight must still
+  require pinned arithmetic resolution and fail on target incompatibility.
+- Describe delivery accurately as offline pinned arithmetic closure **plus the
+  target system runtime**, rather than a producer-provided full target loader
+  closure. GMP's glibc>=2.38 requirement remains a necessary known constraint,
+  not a guarantee of all target/compiler compatibility.
+
+No native source, scientific reduction, cap, worklist or completed-result bytes
+need change. A focused source diff review and subsequent actual ZIP inspection
+should verify the separation; the already completed scheduler and genuine-data
+checks need not be repeated merely for this builder-only repair. The actual
+builder remains unexecuted/unreleased. Reviewer performed only static reads;
+no library experiment, import, compiler or native call was launched.
