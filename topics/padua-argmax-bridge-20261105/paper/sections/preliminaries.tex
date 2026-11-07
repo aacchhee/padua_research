@@ -19,9 +19,8 @@ $\theta_j=j\pi/n$, $\phi_k=k\pi/(n+1)$ and
  \eta_k=\begin{cases}1/2,&k=0,n+1,\\1,&\text{otherwise},\end{cases}
  \qquad w_{jk}=\frac{2\epsilon_j\eta_k}{n(n+1)}.
 \]
-Set $\nu_0=1$ and $\nu_r=2$ for $r>0$, only in the kernel formula below;
-these $\nu_r$ are mode multiplicities, not the expansion constants in
-\eqref{eq:main-constants}. Define
+For the kernel formula below, set $\nu_0=1$ and $\nu_r=2$ for $r>0$;
+these are the mode multiplicities. Define
 \[
  K_n(z,B)=\sum_{p+q\leq n}\nu_p\nu_q
  T_p(z_1)T_p(B_1)T_q(z_2)T_q(B_2).
@@ -34,7 +33,7 @@ $B=(\cos\theta_j,\cos\phi_k)\in\mathcal P_n$,
  L_B(z)=w_{jk}\bigl[K_n(z,B)-T_n(z_1)T_n(B_1)\bigr].
 \end{equation}
 In particular the coefficient of the highest first-coordinate mode is
-one, rather than two.
+one.
 \end{lemma}
 \begin{proof}
 For $M\geq1$ let
@@ -85,7 +84,7 @@ the cardinal polynomials and hence to $\lambda_n$.
 
 \begin{remark}
 All formulas involving trigonometric quotients are interpreted by their
-continuous polynomial limits at removable singularities. In particular,
-no node, edge or collision of angular coordinates is deleted from a
-maximization or a certificate domain.
+continuous polynomial limits at removable singularities. The maximization
+and certificate domains include all nodes, edges and collisions of angular
+coordinates.
 \end{remark}

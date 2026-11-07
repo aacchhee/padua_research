@@ -55,13 +55,13 @@ For $\mathfrak d(z,w)=|z|+|w|-|z+w|$, periodic indices give the two projections
  Q_h(J)=\frac1{4\mathsf N}\sum_{\Gamma^-}\mathfrak d(H_{rs},H_{2J-r,s}).
 \end{equation}
 Pairing first in either coordinate proves
-$\Delta_{JK}\geq\max(Q_h,Q_v)$; their sum is not used as a lower bound.
+$\Delta_{JK}\geq\max(Q_h,Q_v)$.
 At an actual nonnode corner all four reflected values coincide, so
 $\Delta=0$ and $S_n(0,0)=\Lambda_c(n)$.
 Separate phase reflections and translations by the even lattice preserve
 $S_n$.  Reducing each phase modulo $2\pi$ and, if necessary, using
 $(x,y)\mapsto(\pi-x,\pi-y)$ reduces its global real-phase norm to
-$x,y\geq0$, $x+y\leq\pi$.  The unequal meshes are never exchanged.
+$x,y\geq0$, $x+y\leq\pi$.  Each mesh retains its coordinate.
 
 \input{sections/comparison-unified}
 
@@ -211,7 +211,7 @@ $A$ and the upper version to $A/\sin b$ therefore gives
 where $C=a_r-r/2$, $A_0=C-a_r\sin a_0$,
 $I=C(b_0-a_0)+a_r(\cos b_0-\cos a_0)$ and
 $R=C\log[\tan(b_0/2)/\tan(a_0/2)]-a_r(b_0-a_0)$.
-This argument only needs $M,L\geq41$; it has no hidden degree-$64$ premise.
+This argument applies for $M,L\geq41$.
 
 Take $c=5/4$, $[a_0,b_0]=[\pi/20,\pi/4]$, $r\leq1/2$.
 The elementary bounds
@@ -268,7 +268,7 @@ $U_N$, direct differentiation gives
 $(T+A_4+\rho J_N)'>45/(16n)-184/(15n^2)-78/n^3>0$
 on $\rho\leq1/2$; the decreasing $\bar e$ improves this direction.
 Also $T-\bar e+j$ increases.  Thus \eqref{ul:near-base} persists
-throughout the tail without a monotonicity assertion about $S_n$ itself.
+throughout the tail.
 
 At $n=320$, Lemma~\ref{ul:selected-pairs} gives, for $\rho\leq1/2$,
 \begin{equation}\label{ul:near-floor}
@@ -485,7 +485,7 @@ $cU,cV,c(U+V)$ at $(\sqrt{2U},0),(0,\sqrt{2V}),
  \left[c-\frac M6\max(U,k^4V)\right]\frac{A^2+B^2}{2}.
 \end{equation}
 The interpolation is applied to smooth signed cardinal sums before
-maximizing over signs; no differentiability of the absolute sum is assumed.
+maximizing over signs.
 
 Take $h=\pi/4$, $q_0=7/48$, $U=V=\pi^2/32$, and $M=M(n)$ from
 \eqref{uc:analytic-norm}.  Since $(1-\cos h)/2>q_0$, the two axis
@@ -521,7 +521,7 @@ in $L$ is, respectively,
 \]
 whose derivative is positive for $L\geq1$; every remaining
 nonconstant cost is a positive decreasing allowance.  This uses the
-growing $M(n)$ inside the gate, rather than treating $M(256)$ as uniform.
+degree-dependent bound $M(n)$ inside the gate.
 For $\delta=\min(\delta_A,\delta_D/2)$ we obtain
 $\delta-M(n)\pi^4/6144>49/2000$.
 Set $c=32\delta/\pi^2$ in \eqref{ul:squared-peano}; since $k\leq1$,
@@ -533,7 +533,7 @@ $(16/\pi^2)(49/2000)>49/1250>1/30$.  Thus
  \quad n\geq256,\quad 0\leq A,B\leq\pi/4.
 \end{equation}
 The node-preserving parity reflection gives the same bound at the other
-nonnode corner, without exchanging the two meshes.
+nonnode corner, with each mesh in its original coordinate.
 
 \begin{proof}[Proof of Theorem~\ref{thm:main-location}]
 For $n\geq320$, choose a closed odd chart \eqref{ul:charts}.
@@ -552,9 +552,8 @@ endpoint lies in the same closed cover.
 
 Section~\ref{sec:certificates} supplies the finite degrees below $320$
 with the identical strict equality classification.  Its degree ranges
-and the analytic tail are consecutive, so there is no unproved degree
-between the two parts.  The limiting-constant enclosure used in the
-scalar comparison remains a trusted computational input to the global
+and the analytic tail cover every integer $n\geq2$.  The limiting-constant
+enclosure used in the scalar comparison remains a trusted computational input to the global
 location proof; the corner expansion of Theorem~\ref{thm:main-expansion}
 has its separate analytic proof.
 \end{proof}

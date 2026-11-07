@@ -4,7 +4,6 @@ The remaining degrees require a bound on the whole square, including a
 strict comparison arbitrarily close to each maximizing corner. Both finite
 methods use the same principle: interpolate a smooth signed sum with positive
 weights, bound its interpolation error, and only then maximize over signs.
-Absolute values need not be differentiated.
 
 \begin{lemma}[Positive interpolation bounds]\label{cert:positive}
 Let $F(z)=\max_{\sigma}f_\sigma(z)$, where the maximum is finite.
@@ -59,12 +58,11 @@ operations once the cosine arguments are bracketed. Alternating arctangent
 series in Machin's identity bracket $\pi$; alternating cosine series and
 the Chebyshev recurrence bracket the grid values. Integer operations round
 outwards at every interval step. The checker reconstructs the whole
-partition and its coefficients rather than accepting a producer flag.
-Successful certificates are finite witnesses; no search-termination theorem
-is assumed. The accompanying execution record identifies which degrees
-were newly rerun through the common implementation.
+partition and its coefficients. Successful certificates are finite witnesses.
+The accompanying execution record identifies which degrees were newly rerun
+through the common implementation.
 
-The degree-one case is explicit and needs no separate certifier. Its nodes
+The degree-one case is explicit. Its nodes
 are $(1,1),(1,-1),(-1,0)$, with cardinals
 $(1+x+2y)/4$, $(1+x-2y)/4$, and $(1-x)/2$. Hence
 \[
@@ -106,17 +104,16 @@ give
 Indeed the ten quarter-squares cover $\mathcal T$; outside vertices fold
 back to $E$ by $(a,b)\mapsto(1-a,1-b)$, a phase symmetry.
 Their Peano error is at most $\pi^2M_*/64$, which can be absorbed.
-A tree using an analytic far leaf must use this grid norm: its remaining
-numerical leaves need not contain a maximizer.
+A tree using an analytic far leaf must use this grid norm.
 
 On a leaf the certified upper for $q_R$ must be below $L_c$ on its far
 part. On its actual near part $\rho\leq1/2$, at a noncorner center,
-the inequality is instead $q_R-\delta_R<L_c$, with the appropriate
+the required inequality is $q_R-\delta_R<L_c$, with the appropriate
 proved reflection floor $\delta_R$. The floor's radius is
 $\min\{1/2,\pi(a_1+b_1)\}$; it is used only where its physical guard
 holds. A rational enclosure of $\pi$ supplies overlapping closed proxies
-for near and far, so a floating-point decision cannot delete a seam.
-Actual corners are covered by a direct descent witness, not by this defect.
+for near and far that retain every seam.
+Actual corners are covered by a direct descent witness.
 
 The local descent uses \eqref{ul:squared-peano}. Take
 $U=\pi^2/32$, $V=9\pi^2/512$, and outward actual-function values
@@ -145,10 +142,11 @@ cover predicates. The arithmetic implementation, compiler and native
 interfaces are trusted components of this computer-assisted proof.
 
 The primary and fresh passes ran separately on the production machine.
-Locally all essential proof/account/source links were checked, and the
-complete histories for two randomly selected degrees,199 and238, received
-fresh native replay and distinct review. Those samples are additional
-checks, not a statistical premise for the unsampled cases. Full unsampled
+Locally all essential proof/account/source links were checked. Complete
+histories for two randomly selected degrees,199 and238, were inspected,
+and fresh native verification was run at both degrees with distinct
+review. These sample replays supplement
+the checks of all essential proofs and links. Full unsampled
 histories remain on the production machine under the selective-retention
 policy. Source pins, witness identities, checker commands and the exact
 new small-degree run inventory are in the companion reproducibility notes.

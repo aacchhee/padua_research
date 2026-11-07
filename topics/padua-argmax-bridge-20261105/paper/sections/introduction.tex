@@ -19,6 +19,15 @@ only like the square of a logarithm. Their construction, interpolation
 formulas and computational properties have been studied extensively;
 see \cite{CaliariDeMarchiVianello2005,BosCaliariDeMarchiVianelloXu2006,
 BosDeMarchiVianelloXu2007,Computational2008,DeMarchi2022}.
+
+Padua sampling has also been used in computations of discrete bivariate
+orthogonal polynomials and least-squares approximations
+\cite{VanBarelChesnokov2010}, in Nystr\"om and collocation methods for
+two-dimensional Fredholm integral equations \cite{LaguardiaRusso2022}, and in
+continuous-variable quantum tomography \cite{LandonCardinalGoviaClerk2018}.
+These applications motivate a precise understanding of the associated
+interpolation operator and its sensitivity to errors in the sampled data.
+
 We consider the following orientation of the points:
 \begin{equation}\label{eq:nodes}
  \mathcal P_n=\left\{\left(\cos\frac{j\pi}{n},
@@ -91,9 +100,8 @@ $\Lambda_c(n):=\lambda_n(-1,-1)$.
 
 The proof combines an analytic argument, valid for $n\geq320$, with
 rigorous finite certificates for the remaining degrees. The certificates
-bound the function on regions of the square; they do not infer the maximum
-from a collection of sampled values. The analytic argument also uses a
-separately certified constant enclosure in its quantitative estimates.
+bound the function on regions covering the square. The analytic argument
+also uses a separately certified constant enclosure in its quantitative estimates.
 These dependencies are described in Sections~\ref{sec:argmax}
 and~\ref{sec:certificates}.
 
@@ -127,8 +135,7 @@ Consequently \eqref{eq:main-expansion} also holds for $\Lambda_n$.
 
 The corner expansion is proved entirely analytically. Its global version
 uses Theorem~\ref{thm:main-location}, with the computer-assisted dependencies
-just described. No numerical fit is used to determine $b$, $c$ or the
-coefficient $-1$.
+just described.
 
 The leading growth
 $\Lambda_n=(4/\pi^2)\log^2n+O(\log n)$ is due to
@@ -163,5 +170,4 @@ one comparison theorem and apply it to the global location in
 Section~\ref{sec:argmax}. Section~\ref{sec:certificates} completes the finite
 range and states the arithmetic and evidence dependencies.
 
-The onset $320$ is sufficient; neither its optimality nor a next asymptotic
-coefficient is asserted.
+The onset $320$ is sufficient for the global location argument.

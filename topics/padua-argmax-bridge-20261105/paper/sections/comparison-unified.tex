@@ -20,7 +20,7 @@ For real $C,D$ and $0<e<\pi$, define the complete cancellation
  J(v,s,e)&=I((v-s)/2,(v+s)/2,e).
 \end{align}
 Write $g(C,D;t)$ for this integrand, with the separation understood.
-Only the combined integrand is integrated; its pole limits are finite.
+We integrate the combined integrand, whose pole limits are finite.
 It is invariant under simultaneous coefficient reversal, exchange of
 channels, and reflection of the separation.
 
@@ -252,7 +252,6 @@ $D_0=U_0/\pi+B_0\log\pi$. The completed model is
  \end{gathered}
 \end{equation}
 Weighted endpoint products and $a\log a$ have their continuous values.
-Here and below the scalar profile $f$ is distinct from any finite row.
 
 The limit exists uniformly on the closed phase triangle. We give an
 explicit envelope, also needed for the finite mesh. For either folded
@@ -405,7 +404,7 @@ to zero. Hence
 \begin{equation}\label{uc:origin-identity}
  H_0=\kappa/2+(2k_0/\pi^2)\log(2/\pi).
 \end{equation}
-Only the coarse certified input
+The coarse certified input
 \begin{equation}\label{uc:coarse-input}
  9/10<\kappa<23/25,\qquad C_*<1847/1000
 \end{equation}
@@ -447,7 +446,7 @@ radius $8/(3\cdot66\cdot4^{65})$. It also evaluates
 $C_*=4(\gamma+\log(8/\pi))^2/\pi^2+\kappa$ outwardly. Its recorded
 enclosures and independent verification imply \eqref{uc:coarse-input};
 the reproducibility record describes the arithmetic receipt. This input
-concerns limiting constants and is separate from the analytic proof.
+encloses the limiting constants used in the global comparison.
 Using $161/100<k_0<9/5$, $\log(\pi/2)<23/50$ and
 $\log(\pi/2)>\log(25/16)>18/41$ gives
 \begin{equation}\label{uc:scalar-constants}
@@ -552,7 +551,6 @@ real $n$; the interpolation degree remains integral. Define once
  U_N&=T-\bar e+A_4+\rho J_N+j,
  \quad U_W=T-\bar e+A_4+\rho J_W+j.
 \end{align}
-The mesh allowance $\mathcal M$ is distinct from the global norm below.
 For the phase-dependent absolute allowance put
 \begin{align}\label{uc:phase-allowance}
  D_a&=((52/\pi^2)H+7)/n+20H/(\pi n^2),\quad
@@ -630,7 +628,7 @@ At regular samples the exact polynomial identity is
  (-1)^{\delta_r}G_n(u,v_r)/2
  =C(v_r)\cot((u-v_r)/2)+D(v_r)\cot((u+v_r)/2).
 \]
-At collisions only the complete polynomial continuation is used.
+At collisions we use the complete polynomial continuation.
 Retain
 $A_6=\{0,1,2m-2,2m-1,m-1,m\}$, with
 $J_6=(nm)^{-1}\sum_{r\in A_6}R_r=J_{\rm end}+J_{\rm cen}$.
@@ -728,7 +726,7 @@ $(v+w)^{-1}$. The residual decreases to $-2/\pi$ and increases to
 zero, so its variation is at most $4/\pi$. Compare each sample with
 its own cell average, first in a finite matched sum. The reciprocal
 part tends to $h_*^{-1}(\log d-\psi(d+t))$ by the defining series.
-No separate divergent residual sum is used. Applying this to the two
+Applying this matched-sum limit to the two
 nonzero reference intervals gives a defect $T_0$ and
 \begin{equation}\label{uc:halfline}
  \Theta=\frac{2w}{h_*}
@@ -742,8 +740,7 @@ $\sum_k g(-w_r,w_r;X_{rk})-(n/\pi)\int_0^\pi
 g(-w_r,w_r;X)\,dX$, with separation $v_r$;
 reflection also allows negative $w_r$.
 
-We record how this reference gives precisely $\Delta_2$, rather than
-an unspecified endpoint constant. For $j\geq2$, $|s|+x/\pi\leq1$,
+We now identify the endpoint reference as $\Delta_2$. For $j\geq2$, $|s|+x/\pi\leq1$,
 put $q_\pm=(1+s\pm x/\pi)/2$, $\nu=j+s$ and
 \[
  B_j(s)=\psi(j+q_+)+\psi(j+q_-)-2\log\nu,\qquad
@@ -1092,7 +1089,7 @@ The bracket vanishes for $n\geq148$. Moreover $nB_{\rm out}$ decreases:
 for $K=L+25\log(2m)+193/3$ its derivative is
 $\pi[(1-n)K+m+25n]/(8m^3)-1/(8n^2)<0$, since $K>64$.
 At $160$, $\log160,\log322<6$ gives $160B_{\rm out}<1$.
-This proves \eqref{uc:origin-lower}; it does not assert $E_n(0)\geq0$.
+This proves \eqref{uc:origin-lower}.
 
 \paragraph{Relative charges and their two radii.}
 The same telescope, with its origin subtracted before estimation,
@@ -1146,8 +1143,7 @@ Using harmonic sum at most $2H_n$, square sum at most $3/2$, and
 $H_n\leq n/4$, its sum is at most $145\rho/(27n)<8\rho/n$.
 The infinite tails cost $2a\rho/n$, by differentiating $\Xi_j$.
 
-The half-line residual must also be incremented, rather than bounded
-twice absolutely. Define $r(0)=0$,
+We also estimate the increment of the half-line residual. Define $r(0)=0$,
 $r(w)=\cot w-1/w$ for $0<w<\pi/2$, and $r(w)=-1/w$ afterwards.
 Direct differentiation gives
 $\operatorname{Var}r'=5/3$, $\int|r'|=4/\pi$.

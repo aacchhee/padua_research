@@ -2,9 +2,9 @@
 \label{sec:corner}
 
 At a corner the absolute cardinal kernel becomes a positive Cauchy sum.
-Its two meshes have sizes $n$ and $n+1$: replacing them by the same mesh
-explains the leading square, but loses the constant defect and the first
-correction. We retain that displacement throughout the proof.
+Its two meshes have sizes $n$ and $n+1$. The equal-mesh reference gives
+the leading square; the mesh displacement supplies the constant defect
+and the first correction. We retain that displacement throughout the proof.
 Put $m=n+1$ and, for the rest of this section, write
 \[
  \theta_j=j\pi/n,\quad \phi_k=k\pi/m,\qquad
@@ -149,8 +149,7 @@ uniform comparison, with $\ell=|j-k|$ odd, is
  |f(\theta_j,\phi_k)-f(\theta_j,\theta_k)|
                     \leq\frac{\pi^2n}{2\ell^2}.
 \end{equation}
-For clarity, this bound follows from an exact difference rather than a
-Taylor expansion near the diagonal. The cases $k=0$ or $j=n$ have zero
+This bound follows from an exact difference. The cases $k=0$ or $j=n$ have zero
 difference. Otherwise put $u=\theta_j$, $v_0=\theta_k$, $v_1=\phi_k$,
 $\delta=v_0-v_1$, $V=(v_0+v_1)/2$, $S_i=(u+v_i)/2$ and
 $Q_i=|u-v_i|/2$. The order of $u,v_i$ is unchanged. Exact subtraction gives
@@ -205,8 +204,8 @@ one cancels the pole. At zero $t^2w(t)\to0$. This also proves the claimed
 continuous extension of the integrand.
 
 \subsection{Uniform summation and the first correction}\label{sec:asym}
-The limit just proved does not resolve the first correction. For that we
-return to \eqref{cu:exact}, keeping the harmonic and smooth parts together.
+To obtain the first correction, we return to \eqref{cu:exact}, keeping
+the harmonic and smooth parts together.
 One elementary quadrature rule will control all remainders.
 
 \begin{lemma}[Quadrature with endpoint logarithms]\label{cu:quadrature}
