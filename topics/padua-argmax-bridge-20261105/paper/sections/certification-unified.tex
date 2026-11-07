@@ -118,8 +118,8 @@ In the notation of \eqref{ul:primitive}, put
 \]
 Then $S_n(\pi a,\pi b)=\max_\varepsilon f_\varepsilon(a,b)$,
 and $|f_\varepsilon|\leq S_n$. Every signed board sum has frequencies
-at most $\pi,\pi k$ in these coordinates. A genuine global norm $M$
-and vertex uppers therefore give
+at most $\pi,\pi k$ in these coordinates. A global norm $M$
+and upper bounds at the vertices therefore give
 \begin{align}\label{cert:phase-bound}
  S_n(\pi a,\pi b)&\leq q_R(a,b),\\
  q_R&=I_RW+\frac{M\pi^2}{2}
@@ -226,9 +226,9 @@ chart. These are precisely the premises of the squared-variable
 interpolation argument. The parity reflection transfers the witness to
 the other actual corner.
 
-From degree256 the analytic estimate \eqref{ul:corner256} supplies
+From degree 256 the analytic estimate \eqref{ul:corner256} supplies
 the same strict descent on the required diamond. An analytic far leaf
-is permitted from degree192 only when its entire triangle intersection
+is permitted from degree 192 only when its entire triangle intersection
 satisfies $\rho\geq\pi/2$. Equation~\eqref{ul:far192} then gives
 $S_n<\Lambda_c(n)-3/100$ throughout that closed intersection.
 
@@ -244,9 +244,9 @@ boundary.
 
 \subsection{Evidence and arithmetic}
 The retained proof inventory covers every integer $2\leq n\leq319$;
-Section~\ref{sec:argmax} covers the rest. For the phase range all280
-primary/fresh pairs, including the control degree511, were checked by
-exact rational reconstruction of560 essential proofs. Native outward
+Section~\ref{sec:argmax} covers the rest. For the phase range all 280
+primary/fresh pairs, including the control degree 511, were checked by
+exact rational reconstruction of 560 essential proofs. Native outward
 endpoints come from the frozen Arb/FLINT/MPFR/GMP implementation;
 finite binary64 endpoints are converted losslessly to rationals for the
 cover predicates. The arithmetic implementation, compiler and native
@@ -254,7 +254,7 @@ interfaces are trusted components of this computer-assisted proof.
 
 The primary and fresh passes ran separately on the production machine.
 Locally all essential proof/account/source links were checked. Complete
-histories for two randomly selected degrees,199 and238, were inspected,
+histories for two randomly selected degrees, 199 and 238, were inspected,
 and fresh native verification was run at both degrees with distinct
 review. These sample replays supplement
 the checks of all essential proofs and links. Full unsampled
