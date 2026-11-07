@@ -1,6 +1,6 @@
 # Handoff21 — Author-complete draft with verified supplied template
 
-- Status: open
+- Status: superseded by 22: AC requests affirmative prose throughout and approves application context
 - Previous handoff:20-audited-manuscript-publication-preparation.md
 - Next agent / model / effort: Codex coordinator; gpt-6.1-sol medium for publication preparation; Solmax only for necessary material mathematical re-audit as AC requests
 - Role: orchestrator / publication preparation
