@@ -30,6 +30,33 @@
         "checker": "python topics/padua-argmax-bridge-20261105/code/post_audit_D03_result_check/check.py",
         "check_result": "PASS139 enumerated identities and both saved partitions; no native numerical rerun",
         "retention": "local ephemeral output; external delivery/retrieval pending"
+      },
+      "audit02-local": {
+        "source_commit": "ffe4d42ba176d56db2e77c228bce28eda0872298",
+        "command_record": "LOG.md (audit02 build/rehearsal/collect commands); code/audit02_observer/PREREGISTRATION.md",
+        "raw_root": "/workspace/p02",
+        "observer_raw": "local-output/argmax-bridge-20261105/audit02-known-observation",
+        "preserved_failures": [
+          "/workspace/p02c",
+          "/workspace/p02-build.stdout",
+          "/workspace/p02-build.stderr"
+        ],
+        "artifacts": [
+          {
+            "path": "/workspace/p02.zip",
+            "bytes": 25085718,
+            "sha256": "b41794138898198a391caa17a2b0a114e456ed690b994b41df8a5fbedc5bd2ba"
+          },
+          {
+            "path": "/workspace/d278941b28f0-padua-local-20261107T071625.609373Z.zip",
+            "bytes": 93599070,
+            "sha256": "ebc4e6a0efa8905f7b04d3b4dd51bcef251d4ef50362cc0a73bd96c4db34857e"
+          }
+        ],
+        "checker": "published code/audit02_execution/verify_return.py RETURN --package /workspace/p02 --manifest-sha583435701282d0f22aa8d2d9429e735ed8c125b9cf285c3f6ac57983157c2eb4 --partial",
+        "summary": "evidence/audit02-local/; independent-checks-audit02-known-integration.md",
+        "result": "completed41/511 full proof/raw/build/maps closure accepted, complete280false; no residual run",
+        "retention": "ephemeral local originals retained; physical transfer and durable external retrieval pending"
       }
     },
     "files": [

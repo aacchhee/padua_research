@@ -101,3 +101,14 @@ Native correctness, target Syvert2 behavior, four-worker scale, physical reboot,
 full residual success/runtime/disk and cold-storage transfer remain outside
 this acceptance. The previous12 synthetic-control passes and preserved initial
 fixture failure remain in independent-checks-audit02-execution.md.
+
+## Actual integration follow-up
+
+The separately released fixed known41/511 integration subsequently completed
+with directly observed observer exit0, complete root wait status0/ECHILD and
+no failure. Independent data-only reviews of unpacked full evidence and the
+actual returned ZIP both passed, including all four proof records and exact
+completed subset[41,511]. Accepted scope, actual measurements, source/output
+hashes, commands, resource limitations and conditional storage arithmetic are
+recorded in `independent-checks-audit02-known-integration.md`. No further native
+run, residual degree, or full campaign was performed by this reviewer.

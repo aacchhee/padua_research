@@ -207,3 +207,8 @@ claims and distinct review. Half-near320 remains unchanged.
 4a5de2012bad94601c713b2ff5517f2e3fb80af2. Full gate, separate root release,
 prospective exact caps before final proofs and all failed/deferred alternatives
 are in ideas/attempts F01-seam-domain.md. Only owned new prose changed.
+
+
+## Root disposition after distinct review —2026-11-07
+
+Root adopts the written mathematical statement at its exact quantifiers and named dependencies. The original frozen proof/interface prefix is preserved and identified in [F01 independent mathematical review](../independent-checks-F01-seam.md), final13512B SHA25639dcb7fbf90e619f07a99ecb75b5f533722e9c3deec62d0b2ca0d5eb6a960313. This supplies no smaller onset, new finite degree, novelty/priority verdict, protocol waiver or readiness. Final Claude review remains separate.

@@ -6,10 +6,11 @@ Starting accepted theorem: exact parity-correct two-corner argmax for every inte
 
 | Round | State | Prospective scope / outcome |
 |---|---|---|
-| F01 | ACTIVE | Full-gate I07 wider finite-operator domain feasibility/proof and disjoint I06 exact component-contract screen. No degree endpoint or scalar/native job released. |
+| F01 | COMPLETE | Independently accepted wider finite/error/reanchor supports, exact mesh first-order theorem and scoped entropy-BV obstruction; exact implementation OPEN. No smaller onset. |
 | F02 | RELEASED PAPER | Phase-aware full-band floor; first test uniform finite mesh loss and endpoint-distance classes. |
 | F03 | RELEASED PAPER | Endpoint-complete actual-origin signed compensation, exact scope below. |
-| F04–F05 | GATE ONLY | Entropy-cell remainder and complete joint-error alternatives; no derivation released. |
+| F04 | RELEASED PAPER | Literal cancellation-block boundary-corrected entropy-cell remainder, exact target below. |
+| F05 | RELEASED PAPER | Complete beta-axis first inner transported-row crossover, c in[1/2,3/2], n>=32. |
 | F06–F10 | UNALLOCATED | Five later coordinated rounds; no mathematical release. |
 
 F01 principal Sol xhigh has completed a full fresh gate for I07. The disjoint I06 helper remains GATE ONLY and may not consume unfrozen I07 work. F01's prospective target is a standalone COMPLETE finite relative allowance on the CLOSED signed rho<=5/4 domain, all integer n>=32 or an explicitly justified stricter floor, with named exact masks, continuous collision values, actual origin normalization and every ordinary/retained/mesh/outer-log charge. Re-prove all domain-dependent guards; the existing E11 model extension alone supplies no finite-error guard. Derive explicit rational coefficient functions rather than assuming the old47/50 constants extend. A separately stated generic E13 outer implication may be reanchored at the same radius; no base degree is selected or evaluated.
@@ -29,3 +30,22 @@ Cheapest decisive PAPER test FIRST: derive a genuinely endpoint-complete one-dim
 Complete fresh gate is finished; this is a quantitative continuation, not a renamed E01 phase-aware bound. PAPER target for EVERY integer n>=128 and actual |alpha|+|beta|<=r<=pi/4, separately for EACH applicable interior-index projection: Q>=B(r)-3/n, B(r)>=1/5-3r/20. Radius one is outside this round. Retain the full periodic1/(4nm) / folded-interior1/(nm) normalization, BOTH periodic branches, unchanged partner phases, exceptional subtraction cos(alpha), polynomial collisions, unequal meshes and both parities. Retain the actual signed numerator jointly, not the separate sine relaxation already in E01. Projections are never added.
 
 Cheapest decisive PAPER test FIRST: is a one-sided C/n finite lattice loss uniform over every eligible interior index and signed phase attainable for this certificate? Treat fixed endpoint-distance sequences separately from macroscopic centre angle; compact limiting-integral convergence with harmonic tails does not prove it. Only after that feasibility check attempt the target above. A missing class/normalization, a certified limit below3/20 at r=1/4, or an unavoidable finite loss above8/n stops that specific certificate under the audit triage. A loose upper estimate/unresolved remainder is not a theorem refutation. N5's fixed phase-blind quarter-level failure is retained at its exact scope. No quadrature/limit-integral measurement, source/import/script/scalar/phase/degree/endpoint/native job. Write local idea+attempt BEFORE derivation, then paper work released separately by root. No onset assertion from floors alone.
+
+## F04 prospective release — logarithmic singular-cell remainder
+
+Completed adaptive full gate builds on authenticated F01 registry/rules/INDEX and full entropy/variation/axis/cell predecessors. PAPER target: on every closed box intersecting1/32<=|alpha|+|beta|<=1, every integer n>=32, preserve literal B_L=C_L-q logz, B_R=C_R+q logz, m=n+1, tau_L=t,tau_R=1-t and Q_tau. Seek explicit finite degree-free K_box with
+
+    |sum_s Q_tau_s[B_s]+(1/m)sum_s[(3/2+tau_s)B_s(0)+(3/2-tau_s)B_s(pi)]|
+        <=K_box(1+logm)/m².
+
+Both endpoint limits and all four holes/cell normalizations must be proved. Other logs, pole, signed-L coefficient, fixed-origin Shift, retained/ordinary/origin costs remain separate. FIRST cheapest PAPER test: actual J feature ledger, then entropy-crossing cell with arbitrary root location (including sample equality), p->0, axes, merged features and approach to holes, using exact zero branch. Only after that test sum ordinary-cell errors and integrate actual holes. No assumed positive p/separation/mesh-distance, no unchanged-profile finite Var(B') premise, averaged-translation-to-fixed-sample leap, altered mask or five-fourths extension. If a needed uniform condition fails, stop that selected certificate with exact scope. FullI06 stays OPEN. Author writes idea+attempt BEFORE derivation; no source/scripts/imports/measurement/scalar/degree/endpoint/native/quadrature jobs.
+
+## F05 prospective release — complete first inner transport crossover
+
+Adaptive full gate complete; E03 exactjoint identity and E05 transported-axis identity are PRIOR, not new. PAPER subtarget for EVERY integer n>=32, h=pi/(n+1), alpha=c*h,beta=0,c in CLOSED[1/2,3/2], BOTH parities including c=1's polynomial collision:
+
+    D_n(c)=E_n(c*h,0)-E_n(0)-ell_n*sin(c*h)<=C*(c*h)/n
+
+with explicit finite universal C if possible. The genuine finite cusp ell_n remains. Wider two-dimensional mixed target remains OPEN. FIRST cheapest decisive PAPER test: combine complete same-origin background/model subtraction, all inner transported rows, signed E_c integral, outer centered-cell boundary and central remainder BEFORE absolute values. Start at c=1 linked collision, then require uniform full-interval control; determine signed coefficient of(logn)/m² with uniform remainder, no fitted/candidate sign presumed. A strictly positive coefficient at any fixed admissible c kills this C*alpha/n family (also its +K*H*alpha²/n refinement), not actual argmax. A nonpositive coefficient alone proves nothing finite. Missing background/model/collision term or unbounded positive uniform remainder stops/defer this allocation. No c/radius/n scan or rescue endpoint.
+
+E06's alpha<=h/2 scope is not transferred; N2 mixed collisions need not be positive and are outside beta0; old Mfar compensation is irrelevant. All exactweights/n,m/source/PD271 roles persist. Author registers idea+attempt BEFORE derivation; PAPER ONLY, no imports/scripts/scalar/degree/endpoint/native/quadrature/build/pack. No new onset/finite degree.

@@ -2,6 +2,10 @@
 
 The exact parity-correct two-corner global argmax is proved for **every integer n>=320**, plus finite degrees **2–42,63–64,159–160**. Equality corners are {(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n. Exactly **273 degrees:43–62,65–158,161–319**, and all-degree target PD-T099, remain OPEN. The onset is sufficient, not minimal.
 
+Newly accepted [F01 supports](../topics/padua-argmax-bridge-20261105/independent-checks-F01-seam.md) extend the complete finite-error domain to closedrho5/4 and extract a uniform mesh first-order/remainder term; the unchanged entropy residue has no finite derivative-variation certificate. FullEM2 and smaller onset remainOPEN. The [new ten-round campaign](../topics/padua-argmax-bridge-20261105/campaign-analytic-F-20261107.md) continues.
+
+The actual repaired local worker/engine/capture/archive path passed at known41/511, with all four proofs and full return independently validated in16.306wall/29.675waitedCPU seconds. [Review](../topics/padua-argmax-bridge-20261105/independent-checks-audit02-known-integration.md). No residual degree or remote run. The updated Syvert2 pack requested by AC is being prepared for30workers and128GB total memory.
+
 All **15/15 additional analytic rounds are complete**. [Global320 theorem](../topics/padua-argmax-bridge-20261105/theory/E14-assembly320.md), [full independent acceptance](../topics/padua-argmax-bridge-20261105/independent-checks-E14-global320.md). New radius-one signed error bounds and fresh legal annular defects close the last comparison. All E01–E15 work was PAPER ONLY: no new scalar/source/native/finite-degree jobs. The global comparison retains PD-T271 as an explicit computer-assisted dependency; the scalar H maximum itself has an analytic proof.
 
 The [scalar H theorem](../topics/padua-argmax-bridge-20261105/theory/E07-f-monotonicity.md) gives a unique period maximum at0. The [paired-root theorem](../topics/padua-argmax-bridge-20261105/theory/E11-central-pair.md) removes artificial positive entropy charges while retaining the exact negative beta baseline and genuine fractional alpha cusp. Its closed model domain is not a finite-error guard extension.

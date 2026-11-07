@@ -1,0 +1,25 @@
+{
+  "result": "EXACT_SINGLE_DEGREE_PRIMARY_ACCEPTED_PENDING_FRESH_VERIFY",
+  "first_failure": null,
+  "total_CPU_through_summary": 6.571662,
+  "complete": true,
+  "engine_config": {
+    "n": 41,
+    "mode": "produce",
+    "output": "/workspace/p02/outputs/rehearsal/jobs/41/produce",
+    "certificate": null,
+    "certificate_identity": null
+  },
+  "final_self_limit": {
+    "waited_child_CPU": 6.34868,
+    "self_CPU_at_tightening": 0.20954599999999998,
+    "absolute_self_CPU_hard": 112,
+    "integer_enforcement_reserve_CPU": 1,
+    "additional_reaped": [],
+    "no_live_children": true,
+    "scope": "No subsequent children; waited-child CPU fixed. Absolute self limit bounds final serialization/write/return."
+  },
+  "hard_aggregate_cap": 120,
+  "execution_role": "FINAL HYBRID single-degree produce or independent fresh retained-point verification; execution agent records actual identity separately",
+  "scope": "After persisted provisional evidence/summary and freeze checks; final serialization/write/return bounded by tightened absolute self hard limit. Observed EXIT0 additionally required."
+}

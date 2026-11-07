@@ -1,7 +1,7 @@
 # Independent supplemental review: audit-02 execution response
 
-Status: **SOURCE AND SYNTHETIC CONTROLS ACCEPT; REAL INTEGRATION PENDING**
-for candidate v3 below.
+Status: **SOURCE, SYNTHETIC CONTROLS AND LOCAL KNOWN-CASE INTEGRATION ACCEPT**
+for candidate v3, with the exact scopes and separate integration record below.
 The initial notes preserve their preliminary scope. This supplements and does
 not replace the Claude audit.
 
@@ -183,3 +183,13 @@ not validate genuine proof closure, and the parentdeath fixture intentionally
 uses wrapperCPU10. Actual41/511, compiler loading, concurrent capture and
 complete raw evidence remain separately released future work; no numerical
 or native execution has occurred in this review.
+
+## Actual integration closure
+
+The separate accepted observer and actual local known41/511 execution have
+now completed. Independent full data reviews of both unpacked evidence and
+returned ZIP pass, without any reviewer native rerun. See
+`independent-checks-audit02-known-integration.md` for exact identities, commands,
+measurements and limitations. PA4 is addressed for this two-worker local
+variant and these known cases; original Syvert2 release and the273 residual
+degrees remain outside this acceptance. No further campaign is authorized.
