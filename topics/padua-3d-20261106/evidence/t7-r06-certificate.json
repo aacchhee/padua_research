@@ -1,0 +1,353 @@
+{
+  "schema": "t7-n2-compact-certificate-v1",
+  "source_sha256": "7f936f8975487d92584173ecb9d2e2e1d1ba81ccac14483d4f77349f2e452d72",
+  "command": "topics/padua-3d-20261106/code/t7_r06_certificate.py --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-certificate.json",
+  "completed_census_receipt_sha256": "54608636322611a33681dd65ac70a60d6691708cdc0e1b020bb85d1e3f974f5d",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0"
+  },
+  "group_HNF_convention": "(a,b,c,r,s,t) represents rows(a,r,s),(0,b,t),(0,0,c)",
+  "nonprime_survivors": [
+    {
+      "hnf": [
+        1,
+        4,
+        4,
+        1,
+        1,
+        0
+      ],
+      "phase_stratum": [
+        0,
+        0,
+        0
+      ],
+      "rank": 10
+    },
+    {
+      "hnf": [
+        1,
+        4,
+        4,
+        1,
+        3,
+        0
+      ],
+      "phase_stratum": [
+        0,
+        0,
+        0
+      ],
+      "rank": 10
+    },
+    {
+      "hnf": [
+        1,
+        4,
+        4,
+        3,
+        1,
+        0
+      ],
+      "phase_stratum": [
+        0,
+        0,
+        0
+      ],
+      "rank": 10
+    },
+    {
+      "hnf": [
+        1,
+        4,
+        4,
+        3,
+        3,
+        0
+      ],
+      "phase_stratum": [
+        0,
+        0,
+        0
+      ],
+      "rank": 10
+    }
+  ],
+  "prime_survivors_HNF": [
+    [
+      1,
+      1,
+      19,
+      0,
+      3,
+      7
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      3,
+      12
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      4,
+      6
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      4,
+      13
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      5,
+      8
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      5,
+      11
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      6,
+      4
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      6,
+      15
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      7,
+      3
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      7,
+      8
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      7,
+      11
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      7,
+      16
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      8,
+      5
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      8,
+      7
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      8,
+      12
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      8,
+      14
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      11,
+      5
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      11,
+      7
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      11,
+      12
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      11,
+      14
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      12,
+      3
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      12,
+      8
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      12,
+      11
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      12,
+      16
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      13,
+      4
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      13,
+      15
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      14,
+      8
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      14,
+      11
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      15,
+      6
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      15,
+      13
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      16,
+      7
+    ],
+    [
+      1,
+      1,
+      19,
+      0,
+      16,
+      12
+    ]
+  ],
+  "prime_phase_class": "all target-count phases sign-equivalent to zero",
+  "prime_positive_rank_prime": 1000003,
+  "number_prime_survivors": 32,
+  "number_nonprime_survivor_classes": 4,
+  "coverage": {
+    "HNF_groups": 344054,
+    "quotient_strata": 2705380,
+    "unresolved": 0
+  },
+  "seconds": 0.01164436100043531,
+  "checker_code_sha256": {
+    "t7_r06_search.py": "a3960922d55067549417c5b0a72cdb462c405326ca57f0d1c7931bc0043b6748",
+    "t7_r06_census.py": "02194c29286049338584d1ed8f84f63366d446001febe5c7602f0b006ca412aa",
+    "t7_r06_census_reduced.py": "438553553d2e6a413f951feb5af191d79f2cb45c172800e058aedf5f6b152521",
+    "t7_r06_census_finish.py": "18b5e0c982b4dfac8f9b69f8070c0222672c577591057c20f99b6259acdd50a2",
+    "t7_cosets.py": "87c792762aafb210ce4cbe8417a8a61d43b13b5aadc952d5d2db43d120d617b5"
+  }
+}

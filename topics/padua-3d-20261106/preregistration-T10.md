@@ -1,0 +1,31 @@
+# T10 preregistration — frozen before runs, 2026-11-06
+
+Inputs: handoff06, gate above, literature Table3 transcriptions and inherited controls. All code/evidence uses prefix `t10_`/`t10-`; temporary output is configurable and unique. No adaptive change to these rules without a dated addendum identifying the degrees already seen.
+
+1. **Census.** n=1..16. Compare Cools–Lyness Table3 K-optimal seeds through n15, n16's scaled n8 seed, scaled Minkowski n3 seeds, and Godzina-type parity grids with orders (n,n,n), (n,n+1,n+1), (n+1,n+1,n+1). Record determinants, exact shortest dual norm, folded multiplicities, half-period shifts, and rational Fourier-alias rank. Search all upper row HNFs up to the best determinant for n1..3, with a 120-second per-degree feasibility cap; if capped, retain the complete tested prefix and time, use the listed source seed fallback, and label global optimum unresolved. Further n use bounded search and source K-optimal labels, never global minima. Padua n1..12 count controls and n3's 20-node/rank17 control must pass first.
+2. **Projection.** At each degree n2..10 use the smallest folded full-rank candidate, plus determinant-optimal seed even if rank deficient, and the equal-order (n+1) parity grid as a projection control. Measure raw hyperinterpolation and weighted least-squares norm on angular Lobatto 21³/41³ meshes, normalized by log(n+1)^3, alongside tensor-mesh QR and discrete-Leja interpolation. A rank-deficient Gram suppresses LS, but raw hyperinterpolation is still measured and explicitly is not called a projection. q41 is attempted; if cost exceeds 120 seconds per operator, report timing and q21 fallback, with unrun q41 identified.
+3. **Extraction.** Pivoted QR on the selected full-rank cubature set; structured rule retains exactly N nodes sorted by boundary-coordinate count descending, then folded integer lexicographic order (delete the innermost layer first). This rule is frozen and has no rank-repair fallback. Singular sets are failures. Compare norms to the same global QR/Leja controls; stop extraction only once QR strictly beats every nonsingular extracted set at two consecutive n>=6, or the alternative handoff count kill is established. If no kill through n10, continue degree by degree to16 subject to the measured timing/fallback above.
+4. **Theory.** Attempt the proposed 19/18 asymptotic by computing sign-reflection stabilizers of scaled Minkowski lattices, not by identifying |X| with |H|/8. Attempt a log³ bound via the total-degree Fourier kernel and identify the precise discrete L1 estimate and Gram control still needed. A refuted premise does not imply a whole-class impossibility theorem. Preserve OPEN targets and split substantive proved corrections.
+
+All mesh norms are lower bounds on continuous operator norms, not certified maxima. Floating condition>=1e12 or reproduction residual>1e-7 suppresses a claimed interpolation/projection value. Exact rank uses integer Laurent-frequency incidence modulo the dual lattice; nonzero modular pivots alone would certify only a lower bound, so rational elimination is required for deficient ranks. Controls and code hashes accompany receipts under16KiB.
+
+## Prospective addendum, after n2..10 quality results, before n11..16
+
+Extend projection/raw-operator and baseline comparisons to n11..16 with the identical candidate-selection,21/41 meshes, and120-second operator cap. Extraction has reached the numerical gate at6/7 and is not revived. This addendum does not alter the original degrees or kill thresholds. The numerical boundary-rule failures do not assert exact singularity; an exact vanishing certificate or independently controlled norm lower bound is still needed to interpret them as a mathematical obstruction.
+
+## Prospective bounded-search addendum, before n4..16 neighborhood search
+
+The seed census alone does not search beyond literature families. Add a separate exact HNF neighborhood search: retain the source seed diagonal entries a,d; vary b over source b±1 modulo d, and c,e independently over source values±4 modulo f. Vary f from ceil(38n³/(27ad)) through the source f. This lower endpoint is the named packing determinant bound; the computation's completeness is restricted to this explicit box. Run n4..16 with a120-second per-degree cap; report actual tested count/time, any incomplete prefix and source-seed fallback. Screen every l1 vector of norm<=2n−1 exactly; for survivors compute actual shortest norm, fold counts and rational rank. Freeze the source helper hash; do not replace source-table values adaptively. Results will be separate and will not redefine the first census's best-node snapshots or extraction input sets. Any improved lattice is a bounded search finding, not an unrestricted optimum or a novelty claim.
+
+## Same-rule extraction verification addendum, before final n8..16 pass
+
+The n6/7 eligible restricted-QR losses and structured numerical ineligibility do not establish the handoff's literal every-extracted-set continuous-norm kill. Therefore complete the unchanged frozen extraction rules at n8..16, comparing both meshes to the already frozen primary inherited QR baselines. No input, tie-break, rank repair, threshold, or quality objective changes. Retain invalid matrices as numerical failures, without exact singularity claims. The final stop basis will be complete finite route outcomes, not an unsupported kill. This supersedes only the earlier operational decision to cease extraction after7. The earlier interrupted high-degree invocation is disclosed in attempts/T10; this is a verification pass of preregistered rules, not a claim that no extraction setup ever ran at those degrees.
+
+## Dated response03 correction — 2026-11-06
+
+The preregistered extraction kill was met at n6/7, as the frozen quality
+receipt records. The final n8..16 pass is post-kill verification of the
+unchanged rules. The earlier same-rule addendum's denial of a literal kill
+is withdrawn; numerical structured ineligibility is not exact singularity.
+The n8 sample win depends on mesh and QR ordering: like-for-like globalQR
+gives35.816 against restricted45.458 (audit03). No killed family is revived.

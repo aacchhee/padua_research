@@ -1,0 +1,128 @@
+{
+  "schema": "t7-round06-v1",
+  "rules_sha": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "source_sha256": "b250b4ae462d86c60f9bdeeead2ba516b586d78c6896b73297c7b5184413d2c9",
+  "command": "topics/padua-3d-20261106/code/t7_r06_refine.py --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-refined-quality.json",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "status": "MEASURED finite scope unless separate written theorem",
+  "selected_refinements": [
+    {
+      "label": "T7-06",
+      "n": 3,
+      "lambda21": 1998.95021415685,
+      "refined_lower_sample": 1999.165735327575,
+      "angular_maximizer": [
+        1.560422819828045,
+        3.141592653589793,
+        3.141592653589793
+      ],
+      "successful_starts": 8,
+      "starts": 8
+    },
+    {
+      "label": "phi",
+      "n": 3,
+      "lambda21": 9.742407380566695,
+      "refined_lower_sample": 9.74896643668883,
+      "angular_maximizer": [
+        0.0,
+        2.473553349041099,
+        3.141592653589793
+      ],
+      "successful_starts": 8,
+      "starts": 8
+    },
+    {
+      "label": "phi",
+      "n": 5,
+      "lambda21": 47.633561824733164,
+      "refined_lower_sample": 47.67829175024397,
+      "angular_maximizer": [
+        0.0,
+        2.3350398003914283,
+        0.0
+      ],
+      "successful_starts": 8,
+      "starts": 8
+    },
+    {
+      "label": "unions",
+      "n": 5,
+      "lambda21": 49.01637726965382,
+      "refined_lower_sample": 49.067902310723504,
+      "angular_maximizer": [
+        0.0,
+        0.0,
+        2.483840396748205
+      ],
+      "successful_starts": 8,
+      "starts": 8
+    },
+    {
+      "label": "unequal_unions",
+      "n": 3,
+      "lambda21": 13.553723300335873,
+      "refined_lower_sample": 13.602579496647378,
+      "angular_maximizer": [
+        1.6668633445922099,
+        0.0,
+        0.0
+      ],
+      "successful_starts": 8,
+      "starts": 8
+    },
+    {
+      "label": "unequal_unions",
+      "n": 4,
+      "lambda21": 69.1404064423587,
+      "refined_lower_sample": 69.1404064423587,
+      "angular_maximizer": [
+        0.0,
+        3.141592653589793,
+        0.0
+      ],
+      "successful_starts": 8,
+      "starts": 8
+    },
+    {
+      "label": "unequal_unions",
+      "n": 5,
+      "lambda21": 41.12930892082961,
+      "refined_lower_sample": 41.12930892082961,
+      "angular_maximizer": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "successful_starts": 8,
+      "starts": 8
+    },
+    {
+      "label": "unequal_unions",
+      "n": 6,
+      "lambda21": 216.16692743258028,
+      "refined_lower_sample": 219.10776839647255,
+      "angular_maximizer": [
+        3.141592653589793,
+        2.1322416730458973,
+        1.0159165898652405
+      ],
+      "successful_starts": 8,
+      "starts": 8
+    }
+  ],
+  "prime_n2_survivors_measured": 32,
+  "prime_n2_best_lambda21": 7.053256159060332,
+  "prime_n2_worst_lambda21": 8.134069037119593,
+  "raw": {
+    "path": "/tmp/padua-t7-r06-7afa6a54/t7-r06-prime-survivor-quality.json",
+    "bytes": 6408,
+    "sha256": "667664caf17e2eb9f5df432dc2237cd483b73a522f3e2310221f30294f53dadc"
+  },
+  "seconds": 0.2908061070002077
+}

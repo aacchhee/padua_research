@@ -1,0 +1,653 @@
+{
+  "schema": "padua3d-supplementary-math-v1",
+  "source_commit": "ab2f33674cea44fa1cc10c69ed2031b43e488ffc",
+  "assigned_model": "gpt-6-astra high; actual runtime metadata not exposed",
+  "status": "finite diagnostics plus separately recorded analytic reconstruction; not Claude audit",
+  "source_worktree": "/tmp/padua-3d-independent",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "random_seed": null,
+  "checker_sha256": "63c29ae0eb1bced4bde6b350c6f0810d2a7a5195f9c8925f13c10fdf9bc9d124",
+  "producer_code_sha256": {
+    "code/t1_reflection_enum.py": "ac4afe4c15ff4a273091c234fa9e4381538b679f2ad256cd5db94d08b2b31bc2",
+    "code/t6_sanity.py": "432701699bdc8a1fd329b64982a299d8bd6d5d4cd8926a74ad48e4646a481d5f"
+  },
+  "commands": [
+    "python topics/padua-3d-20261106/code/t1_reflection_enum.py --cap3 12 --cap2 10 --nmax 6 --padua-max 10 --output /tmp/padua-3d-independent-t1.json",
+    "python topics/padua-3d-20261106/code/t6_sanity.py --output /tmp/padua-3d-independent-t6.json",
+    "python /workspace/padua_research/topics/padua-3d-20261106/code/independent_math.py --source-root /tmp/padua-3d-independent --t1-replay /tmp/padua-3d-independent-t1.json --t6-replay /tmp/padua-3d-independent-t6.json --output /workspace/padua_research/topics/padua-3d-20261106/evidence/independent-math.json"
+  ],
+  "replay_output_sha256": {
+    "/tmp/padua-3d-independent-t1.json": "6340b00ff4660f039bf967588e45cae501ae603c988b9e806e969c08e532a0c7",
+    "/tmp/padua-3d-independent-t6.json": "c2796be3a36ee04855d997c2dc0aae5c8f95ee28aea8418c084292bb0afdba38"
+  },
+  "producer_replays": {
+    "t1_dimensions": [
+      {
+        "dimension": 3,
+        "projection_order_cap": 12,
+        "cosets": 20304,
+        "ordered_cases_sha256": "dc79806c5a9b1b8aa57efdc7a43db071d5aa7fa05a9d3fc162be9f5c2be780c4",
+        "degree_rows": [
+          {
+            "degree": 1,
+            "pair_alias": 12,
+            "short_projection": 297,
+            "surviving_necessary_screens": 32,
+            "target": 4,
+            "target_count_cosets": 341
+          },
+          {
+            "degree": 2,
+            "pair_alias": 12,
+            "short_projection": 468,
+            "surviving_necessary_screens": 0,
+            "target": 10,
+            "target_count_cosets": 480
+          },
+          {
+            "degree": 3,
+            "pair_alias": 12,
+            "short_projection": 696,
+            "surviving_necessary_screens": 0,
+            "target": 20,
+            "target_count_cosets": 708
+          },
+          {
+            "degree": 4,
+            "pair_alias": 1,
+            "short_projection": 171,
+            "surviving_necessary_screens": 0,
+            "target": 35,
+            "target_count_cosets": 172
+          },
+          {
+            "degree": 5,
+            "pair_alias": 0,
+            "short_projection": 162,
+            "surviving_necessary_screens": 0,
+            "target": 56,
+            "target_count_cosets": 162
+          },
+          {
+            "degree": 6,
+            "pair_alias": 3,
+            "short_projection": 315,
+            "surviving_necessary_screens": 0,
+            "target": 84,
+            "target_count_cosets": 318
+          }
+        ]
+      },
+      {
+        "dimension": 2,
+        "projection_order_cap": 10,
+        "cosets": 450,
+        "ordered_cases_sha256": "ad66a2693ce1c4d406ad553ebe4876adb1bde2b913a1f95a3f4698fc55dfdd4c",
+        "degree_rows": [
+          {
+            "degree": 1,
+            "pair_alias": 0,
+            "short_projection": 24,
+            "surviving_necessary_screens": 4,
+            "target": 3,
+            "target_count_cosets": 28
+          },
+          {
+            "degree": 2,
+            "pair_alias": 0,
+            "short_projection": 42,
+            "surviving_necessary_screens": 4,
+            "target": 6,
+            "target_count_cosets": 46
+          },
+          {
+            "degree": 3,
+            "pair_alias": 0,
+            "short_projection": 32,
+            "surviving_necessary_screens": 4,
+            "target": 10,
+            "target_count_cosets": 36
+          },
+          {
+            "degree": 4,
+            "pair_alias": 0,
+            "short_projection": 32,
+            "surviving_necessary_screens": 4,
+            "target": 15,
+            "target_count_cosets": 36
+          },
+          {
+            "degree": 5,
+            "pair_alias": 0,
+            "short_projection": 0,
+            "surviving_necessary_screens": 0,
+            "target": 21,
+            "target_count_cosets": 0
+          },
+          {
+            "degree": 6,
+            "pair_alias": 0,
+            "short_projection": 0,
+            "surviving_necessary_screens": 0,
+            "target": 28,
+            "target_count_cosets": 0
+          }
+        ]
+      }
+    ],
+    "padua_degrees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "t6_support_n": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "t6_general": [
+      {
+        "d": 3,
+        "n": 6,
+        "retained_checked": 14
+      },
+      {
+        "d": 4,
+        "n": 6,
+        "retained_checked": 9
+      },
+      {
+        "d": 5,
+        "n": 8,
+        "retained_checked": 17
+      }
+    ],
+    "t6_measured_fft": [
+      {
+        "n": 2,
+        "grid_axis_count": 64,
+        "status": "MEASURED",
+        "Fourier_L1_grid_average": 3.379808113783315,
+        "averaged_cosine_kernel_L1_grid_average": 1.5107066775805904,
+        "proven_Fourier_lower_evaluated_float": 0.0013438139347166456,
+        "proven_Lebesgue_lower_evaluated_float": 4.977088647098687e-05,
+        "max_imaginary_grid_error": 2.301261632515523e-15
+      },
+      {
+        "n": 4,
+        "grid_axis_count": 64,
+        "status": "MEASURED",
+        "Fourier_L1_grid_average": 5.615729939670734,
+        "averaged_cosine_kernel_L1_grid_average": 1.9045043450121621,
+        "proven_Fourier_lower_evaluated_float": 0.004535372029668679,
+        "proven_Lebesgue_lower_evaluated_float": 0.0001679767418395807,
+        "max_imaginary_grid_error": 1.3582256998725871e-14
+      },
+      {
+        "n": 8,
+        "grid_axis_count": 128,
+        "status": "MEASURED",
+        "Fourier_L1_grid_average": 9.16159601910223,
+        "averaged_cosine_kernel_L1_grid_average": 2.516391789548061,
+        "proven_Fourier_lower_evaluated_float": 0.012151095329830781,
+        "proven_Lebesgue_lower_evaluated_float": 0.00045004056777151044,
+        "max_imaginary_grid_error": 1.1247417929627631e-13
+      },
+      {
+        "n": 16,
+        "grid_axis_count": 128,
+        "status": "MEASURED",
+        "Fourier_L1_grid_average": 14.258240139475348,
+        "averaged_cosine_kernel_L1_grid_average": 3.397005104714853,
+        "proven_Fourier_lower_evaluated_float": 0.026978575611873015,
+        "proven_Lebesgue_lower_evaluated_float": 0.000999206504143445,
+        "max_imaginary_grid_error": 5.473742987471939e-13
+      },
+      {
+        "n": 32,
+        "grid_axis_count": 256,
+        "status": "MEASURED",
+        "Fourier_L1_grid_average": 21.118027356142665,
+        "averaged_cosine_kernel_L1_grid_average": 4.580780207858343,
+        "proven_Fourier_lower_evaluated_float": 0.05192424789535301,
+        "proven_Lebesgue_lower_evaluated_float": 0.0019231202924204817,
+        "max_imaginary_grid_error": 4.305888978706207e-12
+      }
+    ]
+  },
+  "own_direct_group_checks": [
+    {
+      "moduli": [
+        1,
+        3,
+        4
+      ],
+      "all_subgroups": 6,
+      "full_projection_reflection_subgroups": 1,
+      "shift_representatives_checked": 96,
+      "stable_shift_representatives": 96
+    },
+    {
+      "moduli": [
+        2,
+        2,
+        2
+      ],
+      "all_subgroups": 16,
+      "full_projection_reflection_subgroups": 6,
+      "shift_representatives_checked": 384,
+      "stable_shift_representatives": 128
+    },
+    {
+      "moduli": [
+        2,
+        3,
+        4
+      ],
+      "all_subgroups": 16,
+      "full_projection_reflection_subgroups": 2,
+      "shift_representatives_checked": 384,
+      "stable_shift_representatives": 240
+    },
+    {
+      "moduli": [
+        3,
+        3,
+        3
+      ],
+      "all_subgroups": 28,
+      "full_projection_reflection_subgroups": 1,
+      "shift_representatives_checked": 216,
+      "stable_shift_representatives": 216
+    },
+    {
+      "moduli": [
+        4,
+        4,
+        4
+      ],
+      "all_subgroups": 129,
+      "full_projection_reflection_subgroups": 6,
+      "shift_representatives_checked": 3072,
+      "stable_shift_representatives": 1024
+    }
+  ],
+  "own_minima_boundary": {
+    "two_relation_minima_n2_to_30": [
+      [
+        2,
+        12,
+        10
+      ],
+      [
+        3,
+        24,
+        20
+      ],
+      [
+        4,
+        45,
+        35
+      ],
+      [
+        5,
+        72,
+        56
+      ],
+      [
+        6,
+        112,
+        84
+      ],
+      [
+        7,
+        160,
+        120
+      ],
+      [
+        8,
+        225,
+        165
+      ],
+      [
+        9,
+        300,
+        220
+      ],
+      [
+        10,
+        396,
+        286
+      ],
+      [
+        11,
+        504,
+        364
+      ],
+      [
+        12,
+        637,
+        455
+      ],
+      [
+        13,
+        784,
+        560
+      ],
+      [
+        14,
+        960,
+        680
+      ],
+      [
+        15,
+        1152,
+        816
+      ],
+      [
+        16,
+        1377,
+        969
+      ],
+      [
+        17,
+        1620,
+        1140
+      ],
+      [
+        18,
+        1900,
+        1330
+      ],
+      [
+        19,
+        2200,
+        1540
+      ],
+      [
+        20,
+        2541,
+        1771
+      ],
+      [
+        21,
+        2904,
+        2024
+      ],
+      [
+        22,
+        3312,
+        2300
+      ],
+      [
+        23,
+        3744,
+        2600
+      ],
+      [
+        24,
+        4225,
+        2925
+      ],
+      [
+        25,
+        4732,
+        3276
+      ],
+      [
+        26,
+        5292,
+        3654
+      ],
+      [
+        27,
+        5880,
+        4060
+      ],
+      [
+        28,
+        6525,
+        4495
+      ],
+      [
+        29,
+        7200,
+        4960
+      ],
+      [
+        30,
+        7936,
+        5456
+      ]
+    ],
+    "n1_exact_affine_determinant": 8
+  },
+  "own_fourier": {
+    "exact_general_dimension_subset_rows": [
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        3,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        3,
+        5,
+        5
+      ],
+      [
+        3,
+        6,
+        14
+      ],
+      [
+        3,
+        7,
+        14
+      ],
+      [
+        3,
+        8,
+        30
+      ],
+      [
+        3,
+        9,
+        30
+      ],
+      [
+        3,
+        10,
+        55
+      ],
+      [
+        3,
+        11,
+        55
+      ],
+      [
+        3,
+        12,
+        91
+      ],
+      [
+        4,
+        3,
+        1
+      ],
+      [
+        4,
+        4,
+        1
+      ],
+      [
+        4,
+        5,
+        1
+      ],
+      [
+        4,
+        6,
+        9
+      ],
+      [
+        4,
+        7,
+        9
+      ],
+      [
+        4,
+        8,
+        9
+      ],
+      [
+        4,
+        9,
+        36
+      ],
+      [
+        4,
+        10,
+        36
+      ],
+      [
+        4,
+        11,
+        36
+      ],
+      [
+        4,
+        12,
+        100
+      ],
+      [
+        5,
+        4,
+        1
+      ],
+      [
+        5,
+        5,
+        1
+      ],
+      [
+        5,
+        6,
+        1
+      ],
+      [
+        5,
+        7,
+        1
+      ],
+      [
+        5,
+        8,
+        17
+      ],
+      [
+        5,
+        9,
+        17
+      ],
+      [
+        5,
+        10,
+        17
+      ],
+      [
+        5,
+        11,
+        17
+      ],
+      [
+        5,
+        12,
+        98
+      ],
+      [
+        6,
+        5,
+        1
+      ],
+      [
+        6,
+        6,
+        1
+      ],
+      [
+        6,
+        7,
+        1
+      ],
+      [
+        6,
+        8,
+        1
+      ],
+      [
+        6,
+        9,
+        1
+      ],
+      [
+        6,
+        10,
+        33
+      ],
+      [
+        6,
+        11,
+        33
+      ],
+      [
+        6,
+        12,
+        33
+      ]
+    ],
+    "sawtooth_midpoint_mesh": 8192,
+    "sawtooth_coefficients": [
+      -3,
+      -2,
+      -1,
+      1,
+      2,
+      3
+    ],
+    "sawtooth_max_error": 7.353429337664252e-08,
+    "integration_status": "MEASURED sign sanity, no quadrature enclosure"
+  },
+  "limits": "Finite subgroup/shift samples and floating sign check are diagnostics. All-order theorem acceptance rests on written analytic reconstruction. No novelty claim; no Claude audit approval."
+}

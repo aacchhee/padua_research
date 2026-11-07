@@ -1,0 +1,423 @@
+{
+  "schema": "padua-r08-lattice-v1",
+  "input_sha": "9042e1c42964150f30fdbe8563c12ba6c6a8692a",
+  "kind": "complement",
+  "python": "3.12.14",
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-3d-20261106/code/r08_lattice.py",
+      "bytes": 6359,
+      "sha256": "0d03590f8587f799ad5213ba2b41def2b23e80472ff7327076b4b4f19cbfbfe0"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-3d-20261106/code/r08_lattice_enum.cpp",
+      "bytes": 4430,
+      "sha256": "e07ad9e51d5b883e7c6d813d396ef32ea0ac24eda253a73f6137f8b8f86feaa4"
+    }
+  ],
+  "commands": [
+    [
+      "/tmp/r08-lattice-enum",
+      "complement",
+      "1",
+      "1",
+      "32",
+      "4",
+      "/tmp/padua-r08-lattice-20261106-9042-complement-final/complement-n1.jsonl"
+    ],
+    [
+      "/tmp/r08-lattice-enum",
+      "complement",
+      "2",
+      "1",
+      "80",
+      "10",
+      "/tmp/padua-r08-lattice-20261106-9042-complement-final/complement-n2.jsonl"
+    ],
+    [
+      "/tmp/r08-lattice-enum",
+      "complement",
+      "3",
+      "1",
+      "160",
+      "20",
+      "/tmp/padua-r08-lattice-20261106-9042-complement-final/complement-n3.jsonl"
+    ],
+    [
+      "/tmp/r08-lattice-enum",
+      "complement",
+      "4",
+      "1",
+      "280",
+      "35",
+      "/tmp/padua-r08-lattice-20261106-9042-complement-final/complement-n4.jsonl"
+    ]
+  ],
+  "rows": [
+    {
+      "n": 1,
+      "N": 4,
+      "completed_det_interval": [
+        1,
+        32
+      ],
+      "complete": true,
+      "summary": {
+        "type": "summary",
+        "mode": "complement",
+        "n": 1,
+        "det_lo": 1,
+        "det_hi_requested": 32,
+        "fold_cap": 4,
+        "hnf_total": 22528,
+        "after_axis_pair_prune": 20846,
+        "admissible": 20052,
+        "small_count": 138,
+        "min_det": 0,
+        "min_fold": 2,
+        "min_fold_det": 2,
+        "min_fold_hnf": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "elapsed_seconds": 0.00714574
+      },
+      "raw": {
+        "path": "/tmp/padua-r08-lattice-20261106-9042-complement-final/complement-n1.jsonl",
+        "bytes": 11283,
+        "sha256": "521607d05bf94e5d979b12869c8c6aebda2228c2274acbe4fba66e9985394873"
+      },
+      "fold_rank_hist": [
+        [
+          2,
+          2,
+          5
+        ],
+        [
+          3,
+          2,
+          8
+        ],
+        [
+          3,
+          3,
+          21
+        ],
+        [
+          4,
+          2,
+          8
+        ],
+        [
+          4,
+          3,
+          75
+        ],
+        [
+          4,
+          4,
+          21
+        ]
+      ],
+      "full_rank_small_count": 21,
+      "full_rank_small_examples": [
+        {
+          "type": "small",
+          "q": 4,
+          "fold": 4,
+          "hnf": [
+            1,
+            1,
+            1,
+            2,
+            0,
+            2
+          ],
+          "rank": 4
+        },
+        {
+          "type": "small",
+          "q": 6,
+          "fold": 4,
+          "hnf": [
+            1,
+            0,
+            3,
+            1,
+            2,
+            6
+          ],
+          "rank": 4
+        },
+        {
+          "type": "small",
+          "q": 6,
+          "fold": 4,
+          "hnf": [
+            1,
+            0,
+            2,
+            1,
+            3,
+            6
+          ],
+          "rank": 4
+        }
+      ],
+      "minimizer_count": 0,
+      "minimizer_fold_hist": [],
+      "minimizer_example": null,
+      "exact_rank_cases": 138
+    },
+    {
+      "n": 2,
+      "N": 10,
+      "completed_det_interval": [
+        1,
+        80
+      ],
+      "complete": true,
+      "summary": {
+        "type": "summary",
+        "mode": "complement",
+        "n": 2,
+        "det_lo": 1,
+        "det_hi_requested": 80,
+        "fold_cap": 10,
+        "hnf_total": 344574,
+        "after_axis_pair_prune": 284334,
+        "admissible": 205858,
+        "small_count": 252,
+        "min_det": 0,
+        "min_fold": 7,
+        "min_fold_det": 12,
+        "min_fold_hnf": [
+          1,
+          0,
+          5,
+          1,
+          3,
+          12
+        ],
+        "elapsed_seconds": 0.236674
+      },
+      "raw": {
+        "path": "/tmp/padua-r08-lattice-20261106-9042-complement-final/complement-n2.jsonl",
+        "bytes": 23704,
+        "sha256": "0b4d60b35d2c32ba758254d3698985b6c0cbb0611ecac00f77e4993bc8eff212"
+      },
+      "fold_rank_hist": [
+        [
+          7,
+          7,
+          12
+        ],
+        [
+          8,
+          7,
+          14
+        ],
+        [
+          8,
+          8,
+          12
+        ],
+        [
+          9,
+          8,
+          67
+        ],
+        [
+          9,
+          9,
+          30
+        ],
+        [
+          10,
+          8,
+          36
+        ],
+        [
+          10,
+          9,
+          57
+        ],
+        [
+          10,
+          10,
+          24
+        ]
+      ],
+      "full_rank_small_count": 24,
+      "full_rank_small_examples": [
+        {
+          "type": "small",
+          "q": 19,
+          "fold": 10,
+          "hnf": [
+            1,
+            0,
+            7,
+            1,
+            3,
+            19
+          ],
+          "rank": 10
+        },
+        {
+          "type": "small",
+          "q": 19,
+          "fold": 10,
+          "hnf": [
+            1,
+            0,
+            12,
+            1,
+            3,
+            19
+          ],
+          "rank": 10
+        },
+        {
+          "type": "small",
+          "q": 19,
+          "fold": 10,
+          "hnf": [
+            1,
+            0,
+            6,
+            1,
+            4,
+            19
+          ],
+          "rank": 10
+        }
+      ],
+      "minimizer_count": 0,
+      "minimizer_fold_hist": [],
+      "minimizer_example": null,
+      "exact_rank_cases": 252
+    },
+    {
+      "n": 3,
+      "N": 20,
+      "completed_det_interval": [
+        1,
+        160
+      ],
+      "complete": true,
+      "summary": {
+        "type": "summary",
+        "mode": "complement",
+        "n": 3,
+        "det_lo": 1,
+        "det_hi_requested": 160,
+        "fold_cap": 20,
+        "hnf_total": 2727626,
+        "after_axis_pair_prune": 2134087,
+        "admissible": 964755,
+        "small_count": 24,
+        "min_det": 0,
+        "min_fold": 16,
+        "min_fold_det": 54,
+        "min_fold_hnf": [
+          3,
+          0,
+          3,
+          3,
+          3,
+          6
+        ],
+        "elapsed_seconds": 1.78095
+      },
+      "raw": {
+        "path": "/tmp/padua-r08-lattice-20261106-9042-complement-final/complement-n3.jsonl",
+        "bytes": 21070,
+        "sha256": "acfdaa3ec5b01479b6eb88b046721f4f88b2257cf12114f1460c0f549577f6cb"
+      },
+      "fold_rank_hist": [
+        [
+          16,
+          15,
+          1
+        ],
+        [
+          20,
+          17,
+          20
+        ],
+        [
+          20,
+          18,
+          3
+        ]
+      ],
+      "full_rank_small_count": 0,
+      "full_rank_small_examples": [],
+      "minimizer_count": 0,
+      "minimizer_fold_hist": [],
+      "minimizer_example": null,
+      "exact_rank_cases": 24
+    },
+    {
+      "n": 4,
+      "N": 35,
+      "completed_det_interval": [
+        1,
+        280
+      ],
+      "complete": true,
+      "summary": {
+        "type": "summary",
+        "mode": "complement",
+        "n": 4,
+        "det_lo": 1,
+        "det_hi_requested": 280,
+        "fold_cap": 35,
+        "hnf_total": 14580438,
+        "after_axis_pair_prune": 11215851,
+        "admissible": 2943865,
+        "small_count": 1,
+        "min_det": 0,
+        "min_fold": 35,
+        "min_fold_det": 128,
+        "min_fold_hnf": [
+          4,
+          0,
+          4,
+          4,
+          4,
+          8
+        ],
+        "elapsed_seconds": 11.0256
+      },
+      "raw": {
+        "path": "/tmp/padua-r08-lattice-20261106-9042-complement-final/complement-n4.jsonl",
+        "bytes": 34589,
+        "sha256": "9781622b2dd37d58a41173bebcd7ca29f3ae43e1337ab5a373518089eefd1dc1"
+      },
+      "fold_rank_hist": [
+        [
+          35,
+          30,
+          1
+        ]
+      ],
+      "full_rank_small_count": 0,
+      "full_rank_small_examples": [],
+      "minimizer_count": 0,
+      "minimizer_fold_hist": [],
+      "minimizer_example": null,
+      "exact_rank_cases": 1
+    }
+  ],
+  "exact_rank_raw": {
+    "path": "/tmp/padua-r08-lattice-20261106-9042-complement-final/complement-exact-ranks.json",
+    "bytes": 28608,
+    "sha256": "77a1a08091a92379deb31da23e1e5abb04a7dcafa237fb0d878c605bbe2b501b"
+  }
+}

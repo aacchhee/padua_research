@@ -1,0 +1,15 @@
+{
+  "kind": "producer replay on corrected inherited QR implementation",
+  "producer_code_sha256": "43d074620c0ea271dbd94a774f472dd5fb0f23c7920204da3262775207f99c1f",
+  "reference_sha256": "6272318924129f4fa3e677a70c1f10d8833165d54b08294e24c066eff8868834",
+  "rows_matched": 84,
+  "incomplete_meshes": [],
+  "kill": {
+    "degrees": [
+      6,
+      7
+    ],
+    "criterion": "QR beats every nonsingular extracted set on41 mesh; singular structured sets fail",
+    "status": "MEASURED mesh comparison"
+  }
+}

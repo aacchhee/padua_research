@@ -1,0 +1,345 @@
+{
+  "schema": "t7-census-complete-v1",
+  "source_sha256": "18b5e0c982b4dfac8f9b69f8070c0222672c577591057c20f99b6259acdd50a2",
+  "command": "topics/padua-3d-20261106/code/t7_r06_census_finish.py --n 2 --seconds 1200 --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-census-n2-complete.json",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0"
+  },
+  "D0": {
+    "inherited_rank": 20,
+    "actual_node": {
+      "rank": 20,
+      "prime": 5051,
+      "root": 32,
+      "root_order": 1010,
+      "matrix_sha256": "4816b86e32ef2074a0fa29c917fc3b68fe0f22899c2de84af6224aa7c961df21"
+    },
+    "outcome": "PASS"
+  },
+  "prime_block": [
+    {
+      "order": 11,
+      "groups": 133,
+      "decisions": {
+        "coordinate-kernel": 33,
+        "wrong-count-for-every-phase": 100
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 13,
+      "groups": 183,
+      "decisions": {
+        "coordinate-kernel": 39,
+        "wrong-count-for-every-phase": 144
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 17,
+      "groups": 307,
+      "decisions": {
+        "coordinate-kernel": 51,
+        "wrong-count-for-every-phase": 256
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 19,
+      "groups": 381,
+      "decisions": {
+        "coordinate-kernel": 57,
+        "3": 4,
+        "5": 24,
+        "6": 72,
+        "7": 24,
+        "8": 48,
+        "9": 120,
+        "10": 32
+      },
+      "full_rank_groups": 32
+    },
+    {
+      "order": 23,
+      "groups": 553,
+      "decisions": {
+        "coordinate-kernel": 69,
+        "wrong-count-for-every-phase": 484
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 29,
+      "groups": 871,
+      "decisions": {
+        "coordinate-kernel": 87,
+        "wrong-count-for-every-phase": 784
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 31,
+      "groups": 993,
+      "decisions": {
+        "coordinate-kernel": 93,
+        "wrong-count-for-every-phase": 900
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 37,
+      "groups": 1407,
+      "decisions": {
+        "coordinate-kernel": 111,
+        "wrong-count-for-every-phase": 1296
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 41,
+      "groups": 1723,
+      "decisions": {
+        "coordinate-kernel": 123,
+        "wrong-count-for-every-phase": 1600
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 43,
+      "groups": 1893,
+      "decisions": {
+        "coordinate-kernel": 129,
+        "wrong-count-for-every-phase": 1764
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 47,
+      "groups": 2257,
+      "decisions": {
+        "coordinate-kernel": 141,
+        "wrong-count-for-every-phase": 2116
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 53,
+      "groups": 2863,
+      "decisions": {
+        "coordinate-kernel": 159,
+        "wrong-count-for-every-phase": 2704
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 59,
+      "groups": 3541,
+      "decisions": {
+        "coordinate-kernel": 177,
+        "wrong-count-for-every-phase": 3364
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 61,
+      "groups": 3783,
+      "decisions": {
+        "coordinate-kernel": 183,
+        "wrong-count-for-every-phase": 3600
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 67,
+      "groups": 4557,
+      "decisions": {
+        "coordinate-kernel": 201,
+        "wrong-count-for-every-phase": 4356
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 71,
+      "groups": 5113,
+      "decisions": {
+        "coordinate-kernel": 213,
+        "wrong-count-for-every-phase": 4900
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 73,
+      "groups": 5403,
+      "decisions": {
+        "coordinate-kernel": 219,
+        "wrong-count-for-every-phase": 5184
+      },
+      "full_rank_groups": 0
+    },
+    {
+      "order": 79,
+      "groups": 6321,
+      "decisions": {
+        "coordinate-kernel": 237,
+        "wrong-count-for-every-phase": 6084
+      },
+      "full_rank_groups": 0
+    }
+  ],
+  "n": 2,
+  "N": 10,
+  "counts": {
+    "groups_seen": 344054,
+    "groups_killed_low_projection": 30582,
+    "groups_killed_no_fold_trace": 112,
+    "groups_covered_prime_block": 824,
+    "quotient_strata_seen": 2705380,
+    "strata_wrong_count": 2510229,
+    "strata_killed_projection": 192793,
+    "target_count_strata": 2358,
+    "strata_killed_fixed_trace": 2342,
+    "strata_full_rank_witness": 4,
+    "groups_killed_high_projection": 294204,
+    "strata_killed_short_relation": 12
+  },
+  "expected_hnf_groups": 344054,
+  "cursor": null,
+  "full_census": true,
+  "all_phases": true,
+  "quotient_strata": true,
+  "survivor_classes": [
+    {
+      "order": 16,
+      "hnf": [
+        1,
+        4,
+        4,
+        1,
+        1,
+        0
+      ],
+      "orders": [
+        4,
+        4,
+        4
+      ],
+      "phase_stratum": [
+        0,
+        0,
+        0
+      ],
+      "count": 10,
+      "rank": 10,
+      "prime": 64577,
+      "root": 81,
+      "root_order": 16144,
+      "matrix_sha256": "531760c53c6b8716c145f46f89129c332a4346164acd68a49d50dfede9c927c3",
+      "decision": "exact full-rank specialization"
+    },
+    {
+      "order": 16,
+      "hnf": [
+        1,
+        4,
+        4,
+        1,
+        3,
+        0
+      ],
+      "orders": [
+        4,
+        4,
+        4
+      ],
+      "phase_stratum": [
+        0,
+        0,
+        0
+      ],
+      "count": 10,
+      "rank": 10,
+      "prime": 64577,
+      "root": 81,
+      "root_order": 16144,
+      "matrix_sha256": "f52ff3f27cf31845d1cb9b05d117e5369ff4a662e0f7559821d7081420281c41",
+      "decision": "exact full-rank specialization"
+    },
+    {
+      "order": 16,
+      "hnf": [
+        1,
+        4,
+        4,
+        3,
+        1,
+        0
+      ],
+      "orders": [
+        4,
+        4,
+        4
+      ],
+      "phase_stratum": [
+        0,
+        0,
+        0
+      ],
+      "count": 10,
+      "rank": 10,
+      "prime": 64577,
+      "root": 81,
+      "root_order": 16144,
+      "matrix_sha256": "f52ff3f27cf31845d1cb9b05d117e5369ff4a662e0f7559821d7081420281c41",
+      "decision": "exact full-rank specialization"
+    },
+    {
+      "order": 16,
+      "hnf": [
+        1,
+        4,
+        4,
+        3,
+        3,
+        0
+      ],
+      "orders": [
+        4,
+        4,
+        4
+      ],
+      "phase_stratum": [
+        0,
+        0,
+        0
+      ],
+      "count": 10,
+      "rank": 10,
+      "prime": 64577,
+      "root": 81,
+      "root_order": 16144,
+      "matrix_sha256": "531760c53c6b8716c145f46f89129c332a4346164acd68a49d50dfede9c927c3",
+      "decision": "exact full-rank specialization"
+    }
+  ],
+  "prime_full_rank_groups": 32,
+  "seconds": 173.68799995999962,
+  "raw": [
+    {
+      "path": "/tmp/padua-t7-r06-7afa6a54/census-complete-n2.jsonl",
+      "bytes": 552991,
+      "sha256": "aeab60ed67e642fded4bc8ac703b9b6493e1a32258aa9863250e97aefcf76534"
+    },
+    {
+      "path": "/tmp/padua-t7-r06-7afa6a54/census-complete-primes-n2.jsonl",
+      "bytes": 49604,
+      "sha256": "d084030122aa5e92f8ac74977d1391a719993119599232a6a14e22e49931bc77"
+    }
+  ],
+  "detail": {
+    "path": "/tmp/padua-t7-r06-7afa6a54/census-complete-n2-detail.json",
+    "bytes": 22287,
+    "sha256": "e98218db307837ab9f169c9dea69aa05f6c0ec538399321968ee1cb78472ca57"
+  }
+}

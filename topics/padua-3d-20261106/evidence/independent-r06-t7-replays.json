@@ -1,0 +1,52 @@
+{
+  "kind": "independent executions of frozen producer code",
+  "comparisons": [
+    {
+      "family": "phi",
+      "all_scientific_rows_identical": true,
+      "raw_sha256_match": true,
+      "reference_sha256": "9f19835f31a4013734e195be3f623454639409fd88f7089d6a555c161d73e2f6",
+      "producer_sha256": "a3960922d55067549417c5b0a72cdb462c405326ca57f0d1c7931bc0043b6748",
+      "rows": 4
+    },
+    {
+      "family": "unions",
+      "all_scientific_rows_identical": true,
+      "raw_sha256_match": true,
+      "reference_sha256": "b2032dbeee6c8bb5d599ef4013d19d9e510c4ac865082863f894b96146008600",
+      "producer_sha256": "a3960922d55067549417c5b0a72cdb462c405326ca57f0d1c7931bc0043b6748",
+      "rows": 4
+    },
+    {
+      "family": "unions-unequal",
+      "all_scientific_rows_identical": true,
+      "raw_sha256_match": true,
+      "reference_sha256": "84be2e30bbf3ab3effa9b8bad736408b1a1d010446929655660bfd77e31e1b17",
+      "producer_sha256": "28bf69e598e2e604847520356345f037550daac15ea5a2b0158a80996d0ab34d",
+      "rows": 4
+    }
+  ],
+  "complete_census": {
+    "all_scientific_fields_identical": true,
+    "counts": {
+      "groups_seen": 344054,
+      "groups_killed_low_projection": 30582,
+      "groups_killed_no_fold_trace": 112,
+      "groups_covered_prime_block": 824,
+      "quotient_strata_seen": 2705380,
+      "strata_wrong_count": 2510229,
+      "strata_killed_projection": 192793,
+      "target_count_strata": 2358,
+      "strata_killed_fixed_trace": 2342,
+      "strata_full_rank_witness": 4,
+      "groups_killed_high_projection": 294204,
+      "strata_killed_short_relation": 12
+    },
+    "producer_sha256": "18b5e0c982b4dfac8f9b69f8070c0222672c577591057c20f99b6259acdd50a2",
+    "reference_sha256": "54608636322611a33681dd65ac70a60d6691708cdc0e1b020bb85d1e3f974f5d",
+    "raw_sha256_match": [
+      true,
+      true
+    ]
+  }
+}

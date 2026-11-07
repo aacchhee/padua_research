@@ -1,0 +1,317 @@
+{
+  "D0": "PASS",
+  "Padua_n1_to_n10": [
+    [
+      1,
+      3,
+      3
+    ],
+    [
+      2,
+      6,
+      6
+    ],
+    [
+      3,
+      10,
+      10
+    ],
+    [
+      4,
+      15,
+      15
+    ],
+    [
+      5,
+      21,
+      21
+    ],
+    [
+      6,
+      28,
+      28
+    ],
+    [
+      7,
+      36,
+      36
+    ],
+    [
+      8,
+      45,
+      45
+    ],
+    [
+      9,
+      55,
+      55
+    ],
+    [
+      10,
+      66,
+      66
+    ]
+  ],
+  "T1_full_invariant": [
+    {
+      "n": 2,
+      "projection_order_cap": 20,
+      "screen_survivors": 0,
+      "target_count_cosets": 636
+    },
+    {
+      "n": 3,
+      "projection_order_cap": 40,
+      "screen_survivors": 0,
+      "target_count_cosets": 1392
+    }
+  ],
+  "T2": {
+    "H39_exact_witnesses": 171,
+    "degrees": [
+      {
+        "cases": 36,
+        "n": 2,
+        "ranks": {
+          "5": 2,
+          "6": 6,
+          "7": 3,
+          "8": 6,
+          "9": 15,
+          "10": 4
+        }
+      },
+      {
+        "cases": 171,
+        "n": 3,
+        "ranks": {
+          "7": 3,
+          "9": 4,
+          "10": 13,
+          "11": 3,
+          "12": 7,
+          "13": 2,
+          "14": 8,
+          "15": 31,
+          "16": 30,
+          "17": 24,
+          "18": 29,
+          "19": 17
+        }
+      },
+      {
+        "cases": 561,
+        "n": 4,
+        "ranks": {
+          "9": 3,
+          "12": 4,
+          "13": 2,
+          "14": 6,
+          "15": 23,
+          "16": 7,
+          "17": 2,
+          "19": 8,
+          "20": 2,
+          "21": 29,
+          "23": 16,
+          "24": 33,
+          "25": 53,
+          "26": 18,
+          "27": 29,
+          "28": 30,
+          "29": 49,
+          "30": 65,
+          "31": 61,
+          "32": 31,
+          "33": 51,
+          "34": 35,
+          "35": 4
+        }
+      }
+    ]
+  },
+  "command": "python topics/padua-3d-20261106/code/t7_cosets.py --output topics/padua-3d-20261106/evidence/t7-diagnostics.json",
+  "finite_reduction_cost": [
+    {
+      "all_subgroups": 344574,
+      "cap": 80,
+      "formula": "sum_(a*b*c<=cap) b*c^2; labelled embedded subgroups, no symmetry quotient",
+      "order_target_count": 217
+    },
+    {
+      "all_subgroups": 2727626,
+      "cap": 160,
+      "formula": "sum_(a*b*c<=cap) b*c^2; labelled embedded subgroups, no symmetry quotient",
+      "order_target_count": 1085
+    }
+  ],
+  "phase_shortcut": {
+    "H": "C3 diagonal in T2",
+    "cases": [
+      {
+        "Pi1_rank": 2,
+        "nodes": 3,
+        "phase": [
+          "1/12",
+          "1/12"
+        ]
+      },
+      {
+        "Pi1_rank": 3,
+        "nodes": 3,
+        "phase": [
+          "1/12",
+          "1/4"
+        ]
+      }
+    ],
+    "same_stratum": "both coordinates outside (1/6)Z/Z"
+  },
+  "rank2_example": {
+    "H_order": 16,
+    "Haar_weights": [
+      "1/16",
+      "1/8",
+      "1/16",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/16",
+      "1/8",
+      "1/16"
+    ],
+    "any_degree3_weights": "impossible by cubic",
+    "coordinate_reflections": [
+      false,
+      false,
+      false
+    ],
+    "degree3_defects": {
+      "(1, 1, 1)": [
+        "1/4",
+        "0"
+      ]
+    },
+    "integral_vanishing_cubic": "1/2",
+    "monomial_det": -256,
+    "nodes": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ]
+  },
+  "rank2_fixed_phase_pilot": {
+    "H_order": 20,
+    "Pi3_columns": 20,
+    "dictionary_rows": 20,
+    "full_census": false,
+    "generator_orders": [
+      10,
+      2
+    ],
+    "generators_mod10": [
+      [
+        7,
+        7,
+        4
+      ],
+      [
+        5,
+        0,
+        5
+      ]
+    ],
+    "matrix_sha256": "ff3506554d7ebabbfb62584801c2cc5f9903dbd626d2ec398ebe207d2c63e150",
+    "n4_n5_tested": false,
+    "node_count": 20,
+    "outcome": "full rank at the single preregistered phase",
+    "phase_numerators_mod101": [
+      1,
+      2,
+      4
+    ],
+    "prime": 607,
+    "primitive101_root": 122,
+    "rank_mod_prime": 20
+  },
+  "rank2_shortcut": {
+    "H_order": 25,
+    "claim_scope": "no rank-to-short-degree implication; not an interpolation survivor",
+    "displayed_dual_vector": [
+      1,
+      1,
+      2
+    ],
+    "displayed_q": 4,
+    "generators_mod5": [
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "q_at_most3_dual_vectors": []
+  },
+  "rules_sha": "e5b64450fce42262dafc88ee357b72e5f203916b",
+  "schema": "t7-general-coset-v1",
+  "seconds": 2.812,
+  "source_sha256": "87c792762aafb210ce4cbe8417a8a61d43b13b5aadc952d5d2db43d120d617b5",
+  "status": "MEASURED finite exact diagnostics; written proofs are separate",
+  "versions": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  }
+}

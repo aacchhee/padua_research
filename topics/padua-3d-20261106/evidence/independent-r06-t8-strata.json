@@ -1,0 +1,140 @@
+{
+  "rules_input": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "command": [
+    "topics/padua-3d-20261106/code/independent_r06.py",
+    "--t8",
+    "topics/padua-3d-20261106/evidence/t8-r06-strata.json",
+    "--output",
+    "topics/padua-3d-20261106/evidence/independent-r06-t8-strata.json"
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "sympy": "1.14.0",
+  "code_sha256": "ed352441b145a900f375eb6bf03543e186976c31824ec9baf2b882fb5d64d296",
+  "controls": {},
+  "t8": {
+    "input_sha256": "17940dc9eaaf560bc9b6cbe1c3b10635e003951a4d5df2f24db3a8c649129dee",
+    "checked": [
+      {
+        "denominator": 9766,
+        "prime": 9767,
+        "root": 5,
+        "nodes": 10,
+        "degree": 2,
+        "rank_lower": 10,
+        "matrix_sha256": "f5e965c48d613be5fda61af367d76add158e474ce0495289ebc29acd76f586be",
+        "generator": [
+          1,
+          3,
+          7
+        ],
+        "quality": {
+          "mesh_side": 21,
+          "sampled_lambda": 8.134069037119591,
+          "inverse_residual": 4.769877172071144e-16
+        },
+        "sample_difference": 0.0
+      },
+      {
+        "denominator": 9766,
+        "prime": 9767,
+        "root": 5,
+        "nodes": 10,
+        "degree": 2,
+        "rank_lower": 10,
+        "matrix_sha256": "f5e965c48d613be5fda61af367d76add158e474ce0495289ebc29acd76f586be",
+        "generator": [
+          1,
+          3,
+          12
+        ],
+        "quality": {
+          "mesh_side": 21,
+          "sampled_lambda": 8.134069037119591,
+          "inverse_residual": 4.769877172071144e-16
+        },
+        "sample_difference": 0.0
+      },
+      {
+        "denominator": 10280,
+        "prime": 30841,
+        "root": 343,
+        "nodes": 20,
+        "degree": 3,
+        "rank_lower": 20,
+        "matrix_sha256": "5288fe3be47e51823b2d9737b81c1111e4acceddb90c637748ab369083982997",
+        "generator": [
+          1,
+          2,
+          5
+        ],
+        "quality": {
+          "mesh_side": 21,
+          "sampled_lambda": 73.05544044593879,
+          "inverse_residual": 1.7763568394002505e-15
+        },
+        "sample_difference": 1.4210854715202004e-14
+      },
+      {
+        "denominator": 10280,
+        "prime": 30841,
+        "root": 343,
+        "nodes": 20,
+        "degree": 3,
+        "rank_lower": 20,
+        "matrix_sha256": "89ea1d4e8b9e7f0725184f44a5757f3ec0e15dd825b93f3cceef94b3e0d108bc",
+        "generator": [
+          1,
+          2,
+          5
+        ],
+        "quality": {
+          "mesh_side": 21,
+          "sampled_lambda": 84.97885782471052,
+          "inverse_residual": 2.874043258139802e-15
+        },
+        "sample_difference": 1.4210854715202004e-14
+      },
+      {
+        "denominator": 10794,
+        "prime": 21589,
+        "root": 4,
+        "nodes": 20,
+        "degree": 3,
+        "rank_lower": 20,
+        "matrix_sha256": "50a1c0e2f68dcbfcbc09bbefc083b8c08f0cee8c98cc09b80de40981f3b8c0b8",
+        "generator": [
+          1,
+          4,
+          6
+        ],
+        "quality": {
+          "mesh_side": 21,
+          "sampled_lambda": 130.48668095855385,
+          "inverse_residual": 2.952418398190718e-15
+        },
+        "sample_difference": 5.684341886080802e-14
+      },
+      {
+        "denominator": 10794,
+        "prime": 21589,
+        "root": 4,
+        "nodes": 20,
+        "degree": 3,
+        "rank_lower": 20,
+        "matrix_sha256": "205ba703d3f553e54b6d9497d47e991d90a512aca124c5dc9d35ba3ce4937cdb",
+        "generator": [
+          1,
+          4,
+          6
+        ],
+        "quality": {
+          "mesh_side": 21,
+          "sampled_lambda": 792.4757639254801,
+          "inverse_residual": 2.767407116271482e-14
+        },
+        "sample_difference": 1.77351466845721e-11
+      }
+    ]
+  }
+}

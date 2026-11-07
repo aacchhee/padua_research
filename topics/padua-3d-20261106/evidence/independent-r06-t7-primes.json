@@ -1,0 +1,48 @@
+{
+  "rules_input": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "command": [
+    "topics/padua-3d-20261106/code/independent_r06.py",
+    "--t7-primes",
+    "--output",
+    "topics/padua-3d-20261106/evidence/independent-r06-t7-primes.json"
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "sympy": "1.14.0",
+  "code_sha256": "ed352441b145a900f375eb6bf03543e186976c31824ec9baf2b882fb5d64d296",
+  "controls": {},
+  "t7_primes": {
+    "all_prime_orders": [
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43,
+      47,
+      53,
+      59,
+      61,
+      67,
+      71,
+      73,
+      79
+    ],
+    "total_groups": 42282,
+    "p19_groups": 381,
+    "p19_coordinate_kernel": 57,
+    "p19_nonzero_projection_rank_distribution": {
+      "3": 4,
+      "5": 24,
+      "6": 72,
+      "7": 24,
+      "8": 48,
+      "9": 120,
+      "10": 32
+    }
+  }
+}
