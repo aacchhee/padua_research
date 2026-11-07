@@ -1,6 +1,6 @@
 # Handoff18 — Claude audit of manuscript and completed results
 
-- Status: open
+- Status: superseded by 19: AC requests Sol max audit and a unified half-length rewrite
 - Previous handoff: 17-constructive-approximation-draft.md
 - Next agent / model / effort: Claude, recommended Opus5.5 xhigh; record actual model/effort and choose appropriate audit depth
 - Role: independent auditor
