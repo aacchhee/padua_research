@@ -11,13 +11,33 @@ import time
 import zipfile
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import HERE, digest, encoded, exclusive, files, lock, manifest, read, save
-from ownership import subreaper, cleanup, assert_no_writers, writer_domain
+from ownership import subreaper, cleanup, writer_domain
 from plans import PROFILE, plan
 from preflight import inspect
-from evidence import Access, validate_attempt
+from evidence import Access, validate_attempt, validate_run_state
 
 def identity(m, p, workers, domain):
     return digest(encoded({'manifest': m, 'plan': p, 'workers': workers, 'writer_domain': domain}))
+
+
+def quiescent_runs(m, domain):
+    """Campaign lock must be held; every group gates admission AND collection.
+    No global process/environment sweep. Only supported launchers may write.
+    """
+    runs = []
+    for directory in sorted((HERE / 'outputs').iterdir()):
+        if directory.name in ['.run.lock', 'writer-domain.json'] and directory.is_file() and not directory.is_symlink(): continue
+        if not directory.is_dir() or directory.is_symlink() or directory.name not in ['all', 'small', 'large']:
+            raise ValueError('unknown/unregistered output group')
+        run_record = read(directory / 'run.json'); summary = read(directory / 'summary.json')
+        validate_run_state(run_record, summary, directory.name, m, domain, str(HERE))
+        runs.append({'group': directory.name, 'identity': run_record['identity']})
+    return runs
+
+def state_binding(m, p, workers, domain):
+    return {'identity': identity(m, p, workers, domain),
+            'source_manifest_sha256': domain['manifest_sha256'],
+            'plan_sha256': digest(encoded(p)), 'writer_domain_token': domain['token']}
 
 def run(group, workers, resume):
     m = manifest(); p = plan(group)
@@ -25,27 +45,15 @@ def run(group, workers, resume):
     output = HERE / 'outputs' / group
     with lock(HERE / 'outputs'):
         domain = writer_domain(HERE, digest((HERE / 'runtime_manifest.json').read_bytes()), create=True)
-        for other in (HERE / 'outputs').iterdir():
-            if other.is_dir() and other != output and (other / 'run.json').exists():
-                if set(read(other / 'run.json')['plan']['degrees']) & set(p['degrees']):
-                    raise ValueError('overlapping full/subset run already exists')
+        existing = quiescent_runs(m, domain)
+        for row in existing:
+            if row['group'] != group and set(plan(row['group'])['degrees']) & set(p['degrees']):
+                raise ValueError('overlapping full/subset run already exists')
         previous = read(output / 'run.json') if (output / 'run.json').exists() else None
         expected = identity(m, p, workers, domain)
         if bool(previous) != resume: raise ValueError('fresh/resume output mismatch')
         if previous and (previous['identity'] != expected or previous['package_root'] != str(HERE)):
             raise ValueError('resume identity/package-instance path mismatch')
-        if output.exists() and not previous: raise ValueError('unregistered existing output refuses reuse')
-        assert_no_writers(domain)
-        provenance, env = inspect(workers, m); subreaper()
-        env['PADUA_PACK_WRITER'] = domain['token']
-        Access(HERE, str(HERE), capture=True).closure(provenance)
-        output.mkdir(parents=True, exist_ok=True)
-        if not previous:
-            exclusive(output / 'run.json', {'identity': expected, 'manifest': m, 'plan': p,
-                      'workers': workers, 'writer_domain': domain, 'package_root': str(HERE), 'provenance': provenance, 'started_utc': datetime.now(timezone.utc).isoformat()})
-        else:
-            exclusive(output / ('resume-' + str(time.time_ns()) + '.json'), provenance)
-        save(output / 'summary.json', {'identity': expected, 'quiescent': False, 'phase': 'admission'})
         pending = []
         for n in p['degrees']:
             directory = output / 'jobs' / str(n)
@@ -53,6 +61,23 @@ def run(group, workers, resume):
                 if not resume: raise ValueError('existing case')
                 validate_attempt(Access(HERE, previous['package_root']), group, n, previous)
             else: pending.append(n)
+        output.mkdir(parents=True, exist_ok=True)
+        if not previous:
+            exclusive(output / 'run.json', {'identity': expected, 'manifest': m, 'plan': p,
+                      'workers': workers, 'writer_domain': domain, 'package_root': str(HERE),
+                      'provenance': None, 'started_utc': datetime.now(timezone.utc).isoformat()})
+        # Invalidate BEFORE preflight: it can itself spawn an ldd child. A hard
+        # kill from here until final owned ECHILD leaves nonquiescent refusal.
+        binding = state_binding(m, p, workers, domain)
+        save(output / 'summary.json', dict(binding, quiescent=False, ECHILD=False, phase='preflight'))
+        subreaper()
+        provenance, env = inspect(workers, m)
+        env['PADUA_PACK_WRITER'] = domain['token']
+        Access(HERE, str(HERE), capture=True).closure(provenance)
+        if previous:
+            exclusive(output / ('resume-' + str(time.time_ns()) + '.json'), provenance)
+        else:
+            record = read(output / 'run.json'); record['provenance'] = provenance; save(output / 'run.json', record)
         active = {}; stopped = False; first_failure = None
         old = {sig: signal.getsignal(sig) for sig in (signal.SIGINT, signal.SIGTERM)}
         def stop(signum, frame):
@@ -109,11 +134,11 @@ def run(group, workers, resume):
             killed = cleanup()
             for sig, handler in old.items(): signal.signal(sig, handler)
             if killed: first_failure = first_failure or 'supervisor adopted/killed leftover descendants'
-            save(output / 'summary.json', {'identity': expected, 'first_failure': first_failure,
-                 'never_started': pending, 'cleanup_killed': killed, 'ECHILD': True,
-                 'supervisor_self_cpu_seconds': resource.getrusage(resource.RUSAGE_SELF).ru_utime + resource.getrusage(resource.RUSAGE_SELF).ru_stime,
-                 'waited_descendant_cpu_seconds': resource.getrusage(resource.RUSAGE_CHILDREN).ru_utime + resource.getrusage(resource.RUSAGE_CHILDREN).ru_stime,
-                 'scope': 'terminal attempts are not certified degrees', 'quiescent': True})
+            save(output / 'summary.json', dict(binding, first_failure=first_failure,
+                 never_started=pending, cleanup_killed=killed, ECHILD=True,
+                 supervisor_self_cpu_seconds= resource.getrusage(resource.RUSAGE_SELF).ru_utime + resource.getrusage(resource.RUSAGE_SELF).ru_stime,
+                 waited_descendant_cpu_seconds=resource.getrusage(resource.RUSAGE_CHILDREN).ru_utime + resource.getrusage(resource.RUSAGE_CHILDREN).ru_stime,
+                 scope='terminal attempts are not certified degrees', quiescent=True))
         if first_failure: raise RuntimeError(first_failure)
 
 def collect(destination):
@@ -122,15 +147,7 @@ def collect(destination):
         raise ValueError('archive destination cannot be inside outputs')
     with lock(HERE / 'outputs'):
         domain = writer_domain(HERE, digest((HERE / 'runtime_manifest.json').read_bytes()))
-        assert_no_writers(domain)
-        runs = []
-        for p in sorted((HERE / 'outputs').glob('*/run.json')):
-            run_record = read(p)
-            if run_record['manifest'] != m: raise ValueError('collect source mismatch')
-            summary = read(p.parent / 'summary.json')
-            if summary.get('quiescent') is not True or summary.get('ECHILD') is not True:
-                raise ValueError('quiescence not established')
-            runs.append({'group': p.parent.name, 'identity': run_record['identity']})
+        runs = quiescent_runs(m, domain)
         if not runs: raise ValueError('no persisted runs')
         destination.mkdir(parents=True, exist_ok=True)
         import shutil

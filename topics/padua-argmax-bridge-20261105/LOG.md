@@ -1525,3 +1525,8 @@ Root will permit only this focused technical repair after failure publication, t
 
 
 Canonical FOPS08 is now recorded in distinct report eab97852..., preserving both actual failed executions and all earlier source verdicts. Root authorizes the stated shared all-group causal-state guard repair only; removing the environment scan WITHOUT that global admission/collection guard is explicitly insufficient. This is a technical supported-launch contract; owned subreaper cleanup, strict existing source/input identity, first-failure policy and all scientific code/caps remain intact.
+
+
+### Causal all-group state candidate frozen for focused review
+
+Sol medium custody897f771a...1240B and dated preparationb2c06173...18758B preserve the proposed smaller protocol. Six owned files changed; global environ scanning is removed, shared quiescent_runs guards every registered group before admission/preflight and collection, state binds source/plan/domain/run, false precedes preflightchild and true follows owned ECHILD. Failed quiescent output stays collectible; failed/corrupt resume remains refused. Mathematical/hybrid/native/groups/caps are unchanged. Static AST/hash/text only, no imports/test/builder. Distinct focused review is active, including post-invalidation preflight exception/cleanup paths. This is a candidate, not a passed runtime check; separate03fixture/release and actual saved-proof provenance validation still pending.

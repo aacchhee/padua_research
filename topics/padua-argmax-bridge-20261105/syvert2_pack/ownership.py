@@ -105,28 +105,3 @@ def writer_domain(package_root, manifest_sha256, create=False):
         if read(run_path).get('writer_domain') != domain:
             raise ValueError('persisted run writer-domain mismatch')
     return domain
-
-def assert_no_writers(domain):
-    if domain['boot_id'] != boot_id(): raise ValueError('writer scan boot mismatch')
-    marker = ('PADUA_PACK_WRITER=' + domain['token']).encode()
-    floor = domain['earliest_supervisor_birth_tick']
-    for p in Path('/proc').iterdir():
-        if not p.name.isdigit() or int(p.name) == os.getpid(): continue
-        try:
-            if p.stat().st_uid != os.getuid(): continue
-            before = birth_tick(p)
-            # Strictly older processes cannot descend from any registered pack
-            # supervisor. Exclude before reading an unrelated old environment.
-            if before < floor:
-                if birth_tick(p) != before:
-                    raise RuntimeError('PID reused while excluding older process: ' + p.name)
-                continue
-            environment = (p / 'environ').read_bytes().split(b'\0')
-            after = birth_tick(p)
-            if before != after:
-                raise RuntimeError('possible writer PID reused during ownership scan: ' + p.name)
-            if marker in environment:
-                raise RuntimeError('owned package writer still exists: ' + p.name)
-        except (FileNotFoundError, ProcessLookupError):
-            continue
-    # PermissionError for any possible writer's stat/environment remains fatal.

@@ -75,8 +75,9 @@ that never existed, under an identical manifest/plan/worker identity. Every exis
 attempt must already have primary and fresh EXIT0 plus complete whole accounting.
 A failed, interrupted or corrupt directory prevents resume; it is never retried.
 
-Collection requires the campaign lock, no tagged live package writer and persisted
-quiescence/ECHILD. It includes complete source, inputs, runtime assets, outputs and
+Admission and collection share one campaign lock and require every existing group
+to have valid source/plan/domain/run-bound strict quiescence/ECHILD. Unknown,
+missing, corrupt or nonquiescent groups refuse both operations. It includes complete source, inputs, runtime assets, outputs and
 native/build provenance. It never takes a live snapshot. Return ZIP filenames use
 actual hostname and UTC. Send the full ZIP; keep the original frozen package.
 
@@ -105,16 +106,20 @@ partial campaigns are supported. Collection includes all captured objects.
 README and published-commit attribution remain in separate SOURCE_CUSTODY.json,
 outside numerical/runtime acceptance identity. Every Python generation disables
 site processing and bytecode writes: operations use `-I -S -B`; sibling engine
-launches use `-E -S -B`. Writer tokens bind the canonical package-instance path, manifest and boot-scoped
-earliest supervisor birth tick. The original domain is persisted under the
-campaign lock before any worker, retained across full/small/large/resume/collection,
-and bound into run/started identities. Strictly older same-boot processes with
-stable readable birth metadata are excluded before environment inspection; equal
-or newer possible writers remain fail-closed on unreadable metadata/environment.
-A missing/corrupt/domain-inconsistent floor or changed boot refuses existing
-output reuse. Separate package copies have distinct instance tokens. Locking,
-summary invalidation, ownership cleanup and ECHILD still guard collection; a
-/proc walk alone is not an atomic quiescence proof.
+launches use `-E -S -B`. The instance/manifest/boot/initial-birth domain remains immutable custody bound
+into run identities. Supported launch paths perform no global environment scan.
+Under the campaign lock all existing groups must first have strict valid
+quiescent=True/ECHILD=True. Before preflight or any child writer, the current
+summary is atomically made nonquiescent; it becomes true only after all direct
+waits and owned subreaper cleanup establish ECHILD, with no subsequent children.
+Thus a hard kill after invalidation leaves a missing/false state that refuses
+admission and collection across every group. Failed terminal attempts whose
+cleanup completed remain collectible; substantive resume still rejects them.
+Hard-killed nonquiescent runs need separately authorized manual recovery, with
+no automatic retry or collection. The contract covers only these supported
+launch paths: manual engine launches or external file mutation are excluded.
+The existing /proc owned-descendant cleanup remains; no PermissionError skip
+is substituted for the removed global environment scan.
 
 The pinned GMP6.3 runtime has an actual ELF requirement for **glibc>=2.38**.
 Root's read-only `readelf --version-info` inspection found GLIBC_2.38 in

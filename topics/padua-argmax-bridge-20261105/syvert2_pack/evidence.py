@@ -154,10 +154,25 @@ def validate_pass(a, prefix, n, mode, manifest):
         require(a.identity(config['certificate_identity']) == original, 'registered original certificate identity')
     return receipt_bytes
 
+
+def validate_run_state(run, summary, group, manifest, domain, package_root):
+    """Strict source-bound terminal state; shared live guard and return checks."""
+    require(group in ['all', 'small', 'large'] and run['plan'] == plan(group), 'registered exact group plan')
+    require(run['manifest'] == manifest and run['writer_domain'] == domain and run['package_root'] == package_root,
+            'run source/instance/domain binding')
+    require(type(run['workers']) is int and 1 <= run['workers'] <= 40, 'run worker bound')
+    expected = digest(encoded({'manifest': manifest, 'plan': run['plan'], 'workers': run['workers'], 'writer_domain': domain}))
+    require(run['identity'] == expected and summary['identity'] == expected, 'run/summary identity binding')
+    require(summary.get('source_manifest_sha256') == domain['manifest_sha256'] and
+            summary.get('plan_sha256') == digest(encoded(run['plan'])) and
+            summary.get('writer_domain_token') == domain['token'], 'summary source/plan/domain binding')
+    require(summary.get('quiescent') is True and summary.get('ECHILD') is True, 'strict quiescent ECHILD state required')
+    return expected
+
 def validate_attempt(a, group, n, run):
     domain = a.json('outputs/writer-domain.json')
     validate_domain(domain, run['package_root'], digest(a.data('runtime_manifest.json')))
-    require(run.get('writer_domain') == domain and run['plan'] == plan(group), 'immutable writer domain/run plan binding')
+    validate_run_state(run, a.json('outputs/' + group + '/summary.json'), group, run['manifest'], domain, run['package_root'])
     expected_identity = digest(encoded({'manifest': run['manifest'], 'plan': run['plan'],
                                        'workers': run['workers'], 'writer_domain': domain}))
     require(run['identity'] == expected_identity, 'writer-domain run identity')

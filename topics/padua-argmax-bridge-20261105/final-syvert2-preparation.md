@@ -233,3 +233,45 @@ repaired source awaits focused source review; reviewer owns revised fixtures and
 new registration02 with separate internal root release. No imports, operational
 rerun, builder, extraction, compiler or scientific execution occurred in this
 repair. WORK remains pending source review and released controls.
+
+## FOPS-07 causal-state continuation — 2026-11-07, SOURCE ONLY
+
+Operational registration02 ran once and failed on an unrelated newer same-UID
+unreadable environment after25 controls, before scheduler fakeworker admission.
+Its source/corpus/receipt and protocol decision were published at
+9bcc097bae1747e5d68b7b77243ceb270446fa1a. Registrations01/02 remain failed and
+preserved; neither is rerun by this repair. Their birth-floor exclusion argument
+was sound but did not make unavailable global environment access usable here.
+
+Root authorized the smaller causal-state protocol. Supported run/collection paths
+no longer perform any global /proc/environ scan. The unused scanner was removed,
+not weakened with blanket PermissionError handling. Existing immutable instance/
+manifest/boot/initial-birth domain remains custody and run identity. Owned-process
+/proc discovery/cleanup, PID safety, subreaper waits and ECHILD are unchanged.
+
+A single quiescent_runs guard is now shared by admission and collection under the
+same campaign lock. It examines EVERY existing output group, including a requested
+resume: unknown/symlink/missing/corrupt groups refuse; exact group plan, source,
+instance/domain/run identity and summary source/plan/domain fields must match;
+quiescent and ECHILD must each be literal True. This guard runs before preflight
+or admission, and cannot be bypassed by selecting another full/small/large group.
+Detailed resume validation still rejects failed/corrupt attempts. Failed terminal
+runs with completed cleanup remain collectible because quiescence is distinct
+from scientific success. Shared return/per-attempt validation checks the same
+strict state binding.
+
+After guard/resume checks, current summary is atomically invalidated BEFORE any
+preflight child such as ldd. True is persisted only after all direct waits and
+owned subreaper ECHILD, with no later child launch. SIGKILL before invalidation
+leaves no newly admitted writer; after invalidation leaves missing/false state;
+after true implies all owned writers are gone. Hard-killed nonquiescent outputs
+refuse all admission/collection and require separate manual recovery, never an
+automatic retry. This closed source protocol does not guarantee against manual
+out-of-protocol engine launches or external file mutation. Campaign locks and
+summary invalidation remain necessary; no proc sweep is asserted as an atomic
+quiescence proof.
+
+All mathematical/hybrid/native sources, caps, trusted assets and degree groups
+are unchanged. Source-only text/hash/static AST inspection; no import, test,
+builder, extraction or science. Reviewer owns a separately frozen03regression
+fixture/release after focused source re-audit. Prior failures remain visible.
