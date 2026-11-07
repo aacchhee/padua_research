@@ -2181,3 +2181,11 @@ sharedregistry application took place. Next handoff18 supersedes the
 unfinished audit request16 via completed manuscript WORK17 and restores
 the entire pending Claude H/F/compact/G01/literature audit plus manuscript
 review. Step outputs commit first;17done/new18only follow separately.
+
+Post-publication metadata limitation: branch push throughfb508a9 succeeds
+and remote identity is verified. The connector rejects updating draftPR27
+metadata via automatic approval review, treating the detailed summary as
+external publication without destination-specific approval. PR remains
+draft with its previous description. No fallback or indirect bypass is
+used. A concise explicit approval question for adding manuscript/build
+links is pending; this does not block the completed pushed paper sources.
