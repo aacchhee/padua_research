@@ -83,3 +83,70 @@ allocated disjoint wide signed-operator helper is SAME E14 and has
 its own gate/release; it is NOT a premise until frozen and accepted.
 The new main remains OPEN pending that complete legal bridge or a
 separate justified annular proof. No automatic degree fallback/job.
+
+## Dated annular continuation after COMPLETE new-record/audit reads
+
+The preceding6730-byte first published idea prefix is preserved at
+2c7cc4484cec8dd3043ed590b2ed16e0d12e2b41b501c4c03a4f45f009e0d773.
+The first2439-byte OPEN main and2978-byte attempt prefixes are also
+preserved. Frozen half-near/outer proofs remain byte-identical.
+
+AFTER its final freeze, FULL new wide theory14318B
+c7aeba3d6080f16cc8016e83949f27d6f9de6d36793d9a03cc4c5d171528e8a8,
+whole idea7254B9fbd51e86d46aa86b2db81b8787598b2b34c4b461dae74a06f20f7ffd4f92c47,
+whole attempt6505Bd0afce3a944b261566e28912d5fab01c72051e6594950f6f6d2367f953a74502,
+and ENTIRE405-line19156B final audit
+d0c3699f97e34c43725b3276bb5585d4a9ccf477cb56413058bb8fd2ff55a266
+were read. The ENTIRE402-line first scoped E14 audit19661B2f390ef7...
+was also read. Only AFTER these complete reads and root's explicit
+adoption/consume confirmation did annular coefficient/sign work begin.
+The exact wide theorem is T<=r[(23/3)L+50]/n+y*db on CLOSED r<=1,
+n>=32; Rmesh<=r/(2n) is separate. No finite beta-axis interpolation.
+
+**Exact narrower local-record order:** root had already prospectively
+written the collection155/2 and the E14-A family existed in the original
+inventory. After the full reads/adoption, however, I first collected
+that coefficient and developed the simple radial allocation in reasoning
+BEFORE appending this newly requested local annular inventory. Therefore
+this appendix does NOT claim to precede those coefficient/sign checks.
+This misses the literal narrower task instruction about this appendix's
+order. It was reported immediately, before further written proof; root
+authorized mathematical completion while preserving the disclosed order
+for D29's separate judgment. No retrospective cure/waiver is inferred,
+and no mathematical success is a protocol verdict.
+
+The SAME E14-A continuation now records its precise surviving allocation:
+match the complete new Tout with SEPARATE r/(2n), ordinary a*A4 and
+wide retained a*r*JW+P(11/n+4/n²). Restore a=1-u exactly. Use E11's
+valid wide Ec<=(5/12)x^(3/2) after dropping only favorable Bbeta;
+use the existing fixed tangent sqrt(x)<=x+1/4 and uniform cosine
+11/48 on the ENTIRE r<=1 domain. Bound the exact concave quadratic
+on x+y=r by its whole-line maximum, with no omitted LARGE branch.
+Fresh legal annular Fn/Fs/Fh/Fw at320 must cover r in[1/2,3/5];
+primitive negativity must cover [3/5,1]. No half-domain floor polynomial
+is transferred beyond its guard. Kinds/zeros/collisions/parities and
+all-n directions remain explicit. No extra degree or alternative family.
+
+The complete proof follows in the NEW split E14-annular320 record and
+dated final assembly. This appendix registers the written proof plan
+after the disclosed first checks, not at a false earlier time. No
+scientific/source/scalar/native/endpoint/phase/degree job occurred.
+
+## First COMPLETE same320 mathematical outcome, pending final review
+
+The newly accepted wide T resolves A in the SAME released family.
+The split E14-annular320 proof derives the exact155/2 collection with
+SEPARATE Rmesh and all original ordinary/retained/true-origin charges.
+It gives a uniform whole-coordinate radial upper; fresh LEGAL annular
+floors cover[1/2,3/5], and primitive negativity covers[3/5,1]. No
+failed exact annular witness was proved/erased; the former open budget
+was escaped by an explicitly changed independently accepted operator.
+
+The dated main closure now proves the exact parity-correct two-corner
+global argmax for EVERY integern>=320 as a developer PAPER theorem,
+under named accepted inputs. Full distinct assembly review/root
+adoption remain required. The first OPEN main2439B, idea6730B and
+attempt2978B prefixes remain intact, as do both first support files.
+The exact later-local-inventory order above is preserved for separate
+protocol judgment; no clean-order/waiver inference is supplied by the
+successful mathematics. No new degree, source, numerical or pack job.
