@@ -174,3 +174,112 @@ Planned after root publication and CPU-window release:
 Engineering synthetic-matrix update/QR checks precede science and count0.
 Their separate receipt records actual commands and does not claim a
 consequential independent rerun. Root coordinates independent review.
+
+## P2 prospective appendix — exhaustive constraint-aware raw amplification
+
+2026-11-07, after P1published at
+ccab7af1ac38a6e8ec83b5d254a9260f0d57ea64. P1consumes1/15 and fails its
+strict useful-transfer gate, including exact-N comparisons against the
+stronger inherited controls. There is no operational-quality re-entry in
+its existing full curves. Noise alone permits A only5.36%/4.89%site saving
+at n6/8 under the10%fixed-B risk allowance. These observations motivate a
+distinct, cheap constraint-aware deletion question, not a threshold change.
+
+Candidate IDEA?padua-3d-20261106-prune-L: known backward deletion choosing
+raw-value amplification among **all currently feasible one-row deletions**.
+The closest P1A/D rules optimize noise/determinant alone; the separation is
+the actual raw-cardinal objective and feasibility search. The existing
+pruning gate clears this as a known variant with no priority/new-algorithm
+claim. Kill test: exhaustive finite search stops with no feasible deletion,
+or the useful gate below fails; do not call that a theorem about all subsets.
+
+P2is **one** research round at n6/8, canonical identical starting grids,
+physical unweighted OLS, same iid/measure/repeat assumptions and numerical
+thresholds as P1. Training changes explicitly to angular Lobatto9^3
+(including all faces/edges/corners) plus256angular-Sobol points, seed
+2026111010+n. This declared dense training is calibrated after observing
+P1's training undersampling; no unseen-parameter selection is claimed.
+The quality-preserving noise/amplification thresholds remain1.10/1.25
+relative to each new training full-OLS baseline; useful held-out and
+site-saving thresholds remain1.30 and10% respectively.
+
+At each state with map C, Q and training cardinal matrix L=EC, form the
+physical hat matrix H=QQ^T. For every current row i with d_i=1-H_ii>1e-10,
+compute **all retained columns** by the exact raw-cardinal deletion formula
+
+`C^-_j = C_j + C_i H_ij/d_i`, j!=i,
+
+`L^-_j = L_j + L_i H_ij/d_i`, j!=i.
+
+For each candidate compute max training row-l1 and actual integer-repeat
+risk at fixed B=M_start from its full C^- columns. Feasible means both
+<=1.25*initial training maximum and <=1.10*initial unit-noise/full-budget
+risk, with finite arrays. First filter **every** rank-admissible candidate
+by both constraints, then choose the smallest training maximum; near-ties
+within1e-12*max(1,abs(best)) choose the smallest original canonical index.
+Do not choose an infeasible best-amplification row and stop while another
+candidate satisfies both constraints. Record all candidate scores, feasible
+counts, chosen IDs and rejection reasons at every step.
+
+Before accepting the chosen deletion, recompute its map by fresh
+Householder QR, check the original distinct-cube/rank/condition/reproduction/
+QR guards, compare its map with the predicted C^- (relative Frobenius
+<=1e-7), and recompute both constraints using that fresh map. If a trial
+fails these checks, retain it as numerically rejected and try the next
+candidate in the frozen score order; no parameter/seed repair. If the
+predicted feasible list is empty, or every entry is numerically rejected,
+stop and retain that exact scope/reason. This is a finite floating-rule
+stopping claim, not exact infeasibility of any subset. If rank N is
+reached, stop there. There is no diagnostic continuation after a constrained
+stop in P2. Consequently N need not be reached or recommended.
+
+Fresh QR supplies each accepted state's map, risk, integer repeats,
+training norm and guards. The exact deletion identity is checked using
+synthetic rational/real matrices before P2science (0rounds). The aggregate
+selection rule receives branch checks including the case where the lowest
+amplification candidate violates noise but another row is feasible.
+The stored raw candidate table permits a distinct independent finite
+feasible-set replay. Fresh guard disagreement is never hidden as a
+quality success or an exact 'none exists' conclusion.
+
+Assess full support, every reached standard P1count checkpoint, and the
+terminal support. Fresh held-out sets keep P1's21^3/41^3nested angular
+meshes and2048query sample sizes, but use new Chebyshev/uniform seeds
+2026111020+n and2026111030+n. They do not select deletions/stops. Reassess
+P1A/D/random/lex trajectories at P2's terminal count using P1's pinned
+path-index arrays, keeping their original canonical order and all prior
+failures. Full OLS/Haar, same-count restricted QR, and freshly constructed
+globalQR/one-sweep localdetN controls are included. Every map gets the
+same fresh queries and all12frozen targets, every noise/sigma report,
+raw regression retention and actual setup/assessment cost split as in P1.
+A/D path costs are labeled historical P1costs; globalQR/localdet and
+PRUNE-L construction costs are contemporaneous fresh measurements.
+No equal-time advantage is inferred from historical cost numbers.
+
+P2passes its **unchanged strict quality/count goal** iff both n6/8terminal
+maps pass guards, save>=10%starting sites, have held-out union norm<=1.30
+full OLS, and integer-budget risk<=1.10full OLS. Additionally, at either
+degree a **common metric** improves>=5%over both random and lex at the
+same terminal count, and the other metric is <=1.10both. A/D and restrictedQR
+comparisons are reported even when unfavorable. A cap or missing mandatory
+comparison fails transfer eligibility. Failure stops this strict-goal
+variant; it does not erase a finite constrained frontier or prove no
+other subset can meet the goal. A distinct later matched-count/Pareto
+question needs a new prospective justification/gate/publication.
+No degree12/16run follows automatically from P2. A success permits a
+separately registered transfer with the same retained rule and thresholds.
+
+P2allowance600process CPU seconds including construction, controls and
+assessment, operation-boundary checks with completed overshoots retained.
+Root grants the exclusive timed window after publishing this appendix.
+Persist actual started/ended UTC in raw before compact collection. Use
+one complete compact logical receipt (<16KiB) via the corrected XZ/six-
+significant-digit summary collector, with every full precision individual
+result/raw/source identity retained; the P1serialization note stays canonical
+in pruning-results.md. No split receipts to evade the limit and no source
+identity relabeling. Original P1scientific/collector versions stay available
+at ccab7af1and their recorded hashes.
+
+Planned command after publication/review/CPU release:
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/pdpr_run.py --round constrained --protocol-commit <published-P2-sha> --reference topics/padua-3d-20261106/evidence/pdpr-pilot.json --scratch <new-unique-dir> --output topics/padua-3d-20261106/evidence/pdpr-constrained.json`
