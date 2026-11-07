@@ -441,3 +441,144 @@ limited by this dated continuation. Mathematical acceptance and unchanged
 upstream obligations remain; overall source release must wait for the
 narrow repair and focused acceptance. Root retains all publication and
 execution authority. Only this owned report was appended.
+
+## FH-1 focused repair closure — 2026-11-07
+
+**ACCEPTED: FH-1 CLOSED. No remaining source/reduction finding.** The
+complete first report's26075-byte prefix remains exactly
+f0d9703a76f9662b453c4de1fac94b84a3d4674f37f1b8e08eb1c5b89a0eaa0d.
+Root published that report and first source before repair at
+523009ea8ead3812a2bcd661c7fb5519b7c30db5. The earlier finding and HOLD
+are preserved as the first-candidate history, not erased or recast as
+an executed failure. No scientific/control execution preceded repair.
+
+Exact focused diff against that publication shows only TWO executable
+line changes: engine.py's shared `child_command` inserts `-E,-S,-B`
+before engine.py, and runtime.py's optional setup command inserts the
+same flags before setup.py. Both controls and checker stages call that
+one `child_command`, including produce and verify mode, so no stage
+route retains an unisolated Python invocation. The setup path's flags
+precede its explicit script argument and are passed through BUILD.run
+unchanged as separate subprocess arguments.
+
+SPEC's two outer CLI commands now use `python3 -E -S -B`. Its dated
+response correctly explains the effects and preserves first publication
+provenance. SOURCE adds the corresponding response. The four documented
+entry paths—outer produce, outer verify, worker stages, optional setup—
+therefore have one consistent policy. `-E -S` leaves the explicit
+script's sibling directory available, so the existing sibling imports
+need no code relocation or unsafe path injection. `-B` prevents writes
+only; the repaired prose makes no stronger cache-reading claim.
+
+FREEZE changes exactly engine/runtime byte/hash rows; its other11 rows
+are byte-identical to the reviewed first candidate. Checker, producer,
+controls, build, all seven immutable native/helper sources, mathematical
+constants, degree cutoffs, topology/norm policy, limits and first-failure
+behavior are unchanged. All nine updated AUDIT.sha256 entries and the
+five changed artifact sizes were independently checked by metadata-only
+commands. Accepted corrected identities:
+
+| Artifact | Bytes | SHA-256 |
+|---|---:|---|
+| FREEZE.json |4153|0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb|
+| engine.py |19237|1dfda35bdce1d7292d30c413968ce16c4dbc65f79b2a86a6e5dfdaaa61f09bd7|
+| runtime.py |6591|f31da3ebdfbb93de47906c5b3a37bc7bca0907ae032c9c553d16004d12410f22|
+| SPEC.md |17083|a0f2a0f14ae2c9e30e302176e6a6968a553090edcb33f8364eb2782f72e9b433|
+| SOURCE.md |3915|3b7465a9645821c40c3edc567bd077db464bc594c98ab530279b4a993ecb0d62|
+
+This closes the sole first-candidate finding for the engine, while the
+separate pack audit must still establish its own launcher chain. It does
+not assert every arbitrary invocation is safe: actual execution must
+use the reviewed isolated CLI. No source import, startup probe, synthetic
+control/test, compiler/native/build, numerical or scientific job was run
+for this focused re-audit. No bytecode artifact was created by importing
+the candidate. Only read-only text/diff/hash/byte commands and this report
+append occurred. Root publication and exact execution release remain
+separate; source acceptance provides no completed41/511 validation.
+
+## Prospective independent fresh41/511 validation registration
+
+2026-11-07, BEFORE either reviewer execution. Root confirmed these exact
+paths and fixed order after corrected source publication
+136a43ebcd5a74ace1d3896642dc7ac6a9251ed4. This is a prospective plan,
+not a run or permission to bypass root's separate explicit release.
+Root's primaries are41 then511, stopping on the first failure. Only after
+their actual results/input identities are supplied and published, and
+root separately releases this reviewer, will the distinct fresh phase
+execute41 then511. A primary failure leaves the dependent fresh phase
+unexecuted; a fresh41 failure stops fresh511. No alternate degree, retry,
+source/case/precision/cap/METHOD/topology rescue is registered.
+
+Frozen execution source is corrected FREEZE4153 bytes,
+0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb,
+with all13 code/data rows as reviewed above and SPEC
+a0f2a0f14ae2c9e30e302176e6a6968a553090edcb33f8364eb2782f72e9b433.
+Run directly from `/workspace/padua_research`, without a new scheduler,
+wrapper, pre-import, standalone control stage or old numerical cache:
+
+```sh
+python3 -E -S -B topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py --mode verify --n 41 --certificate local-output/argmax-bridge-20261105/final-hybrid-validation/primary-n41/essential-receipt.json --output local-output/argmax-bridge-20261105/final-hybrid-validation/verify-n41 --run-once
+```
+
+Only after directly observing the first command's actual EXIT0 and
+accepted complete final account, execute the second command ONCE:
+
+```sh
+python3 -E -S -B topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py --mode verify --n 511 --certificate local-output/argmax-bridge-20261105/final-hybrid-validation/primary-n511/essential-receipt.json --output local-output/argmax-bridge-20261105/final-hybrid-validation/verify-n511 --run-once
+```
+
+The two input essential-certificate byte counts/SHA-256 values are
+**PENDING actual root primaries**, not invented here. Before executing,
+append the actual primary certificate identities, account identities and
+root's direct-exit observations, then recheck them and the source freeze.
+This is binding the registered paths to newly created inputs, not a
+post-result choice of different cases or parameters. The engine additionally
+snapshots each original certificate and authenticates its exact bytes
+through stages/finalization. Each fresh output path is exclusive; an
+existing path or any other failure stops the attempt without deletion.
+
+Each invocation has the SAME fixed120CPU whole-process-tree envelope:
+controls2, checker100, aggregate safety110, completed-call10 and
+unfinished-call15, poll0.25, controls/checker/whole walls15/900/1000,
+256 unique S calls,2047nodes/depth18, whole essential proof<16384 bytes.
+The two reviewer calls are bounded by2*120=240CPU; together with the two
+root primaries the prospective entire local validation is4*120=480CPU.
+These are hard protocol envelopes, not predicted or observed costs.
+All provisioning, imports, fresh builds, controls, descendants/native
+calls, proof reconstruction, serialization/output/finalization/return
+remain included. No separate uncharged numeric/control job is planned.
+Ordinary read-only audit metadata overhead is not scientific CPU evidence.
+
+At41 the fresh run must build both unchanged S and actual sources,
+evaluate every retained S key and all THREE registered actual physical
+points, preserve the input norm METHOD and complete numeric topology,
+and reconstruct every numeric leaf/floor/corner condition. E15 and E12
+analytic branches are unavailable at that degree. At511 it must preserve
+the exact input f/dot topology, reauthenticate every whole-cell E15 guard,
+build S ONLY, make ZERO actual calls, and authenticate E12's both-corner
+loss1/30. Any input containing f must use GRID. The same mandatory13
+grid keys are freshly evaluated at either degree and under either method.
+
+Old point bits, widths, numeric M/L and margins are diagnostic only.
+Fresh success is determined by valid source-inclusive enclosures and
+all freshly reconstructed proof inequalities, not bit equality or an
+improvement over old bounds. Neither execution may discover a replacement
+tree, switch norm method or seed native inputs with old intervals.
+
+Acceptance for EACH call requires a directly observed actual process
+EXIT0, plus `final-accounting.json` with complete=true,
+first_failure=null and result exactly
+`FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW`. A receipt
+or summary alone is provisional. Inspect source/config/input identity,
+stage accounting, no-live-child/final-limit evidence, retained key sets,
+actual-call branch counts, fresh L/M/corner/leaf reconstruction and full
+raw/build/runtime closure. Record tool completion/exit and output
+identities promptly in the result continuation; preserve all raw outputs
+and any first failure. Poll an ongoing call and communicate progress at
+intervals no greater than60 seconds. No other scientific job may run
+concurrently with this fixed fresh sequence.
+
+Current status: preregistration frozen, actual input pins and root release
+PENDING, reviewer execution count ZERO. Operational pack tests, bulk
+remote execution, storage delivery and interim/final Claude review are
+separate obligations and are not released by this registration.
