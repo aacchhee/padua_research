@@ -1903,3 +1903,14 @@ singularO(n^-2)endpoint layer and cancellation of log²n/n terms, not extra
 benchmarking. Existing prelimiffDelta target retains exactdenominatorn+1;
 a first roughassistantdeveloper /n simplification was corrected before any
 newproof or experiment. No new analytic result is claimed at this point.
+
+### H gate completed and first three paper rounds released
+
+Rootread final campaign-H-gate.md; full1154lineIDEAS inventory/summaries
+and obstruction/dispositiontables, complete relevantpredecessors and
+F03/PD226/IDEA329partial/fullrowobstruction are covered. OriginalPD098
+sharpening is existingIDEA287/288/358continuation, not anewtarget or
+priorityclaim. Rootprospectively releases H01/H02/H03 candidate records
+thenPAPERONLYproofdevelopment afterthisactualgate. Eachworker must
+retain allendpoint/parity/n+1normalization terms and separate uniform
+proof from formalcoefficients. No science/numeric/nativejob was run.

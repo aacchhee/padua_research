@@ -67,9 +67,9 @@ idea/attempt/theory files. No worker silently starts another round.
 
 |Round|Scope|Model/effort|State|
 |---|---|---|---|
-|H01|Exact finite corner/Cauchy resummation|Solxhigh|Allocated, pre-gate reading only|
-|H02|Uniform signed endpoint/odd-offset correction|Solultra|Allocated, pre-gate reading only|
-|H03|Consecutive-mesh cotangent reciprocity|Solxhigh|Allocated, pre-gate reading only|
+|H01|Exact finite corner/Cauchy resummation|Solxhigh|Released PAPERONLY after full gate|
+|H02|Uniform signed endpoint/odd-offset correction|Solultra|Released PAPERONLY after full gate|
+|H03|Consecutive-mesh cotangent reciprocity|Solxhigh|Released PAPERONLY after full gate|
 
 RoundsH04–H20 are unallocated, not completed or preregistered experiments.
 Choose them adaptively from actual obstructions/proof obligations. Every
