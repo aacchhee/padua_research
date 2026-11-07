@@ -44,3 +44,27 @@ SHA-256 hashes, and `bash -n build.sh` passed. An untracked one-page smoke
 document using the pinned class, `amsmath`, `amssymb`, a section-numbered
 theorem and a proof compiled successfully with pdfLaTeX. This checks template
 and installed package compatibility; it does not check the research claims.
+
+## Integrated manuscript build — 2026-11-07
+
+The complete manuscript compiled successfully with the command above at
+TeX/bibliography source commit
+`a948b24c3faeba1e475ce64f4c7fc9d4123d42a5`. The final converged log has
+no undefined references/citations, multiply defined labels, overfull boxes
+or TeX errors. Ten numerical bibliography entries are ordered
+alphabetically by the explicit ordered `nocite` list before the first
+textual citation, preserving the unmodified publisher BST.
+
+Artifact: `local-output/padua-argmax-bridge-20261105/paper/main.pdf`
+(837560 bytes; SHA-256
+`668a96ad2d314099180537925b7a398230d58c450de26ae2f1c51de6c47cbc10`).
+There are 88 PDF pages; the first appendix begins on page18. The main text
+occupies pages1–17 including the title/abstract page. First-two-page
+rendering was inspected and is legible. The remaining pages contain the
+supporting proof appendices, temporary traceability appendix and references.
+
+The PDF is a regenerable local working artifact, not a verified durable
+cold-storage release. Its source is committed; its bytes, dependency
+downloads, auxiliary files, previews and logs remain outside Git. The
+recorded build command and template pins reproduce the document, subject
+to the already documented TeX/package version dependence of PDF bytes.

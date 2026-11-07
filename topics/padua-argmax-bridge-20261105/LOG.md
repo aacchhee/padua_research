@@ -2122,3 +2122,62 @@ the full compiled first draft currently grows beyond70pages. All PDFs
 and downloaded template files remain off Git. Equations are being split
 to fit the journal text width. A final integrated build and frozen
 supplementary review are still pending at this checkpoint.
+
+### Manuscript source assembly and final integrated build
+
+All exposition workers release their owned files. The pole appendix
+closes weighted single-pole, symmetric-reference/finite-convolution,
+closest-row and actual-offset half-line interfaces; row/model/scalar
+appendices supply their supporting estimates, including endpoint envelopes,
+completed-model coefficients, scalar maximum, coefficient loss and defect
+floors. This is faithful transfer of existing accepted proof records,
+not a new research campaign or final-ID allocation. No intentional proof
+placeholder remains; routine calculations can still be compressed and
+whole-paper audit remains necessary.
+
+Root final build at TeX source commit
+a948b24c3faeba1e475ce64f4c7fc9d4123d42a5 passes:88pages, first appendix
+on18, no undefined/citation/multiply-defined-label warnings or overfull
+boxes. Main narrative is16pages plus titlepage; heavy support follows.
+PDF837560B SHA668a96ad2d314099180537925b7a398230d58c450de26ae2f1c51de6c47cbc10
+stays offGit at local-output/padua-argmax-bridge-20261105/paper/main.pdf.
+BUILD.md records source/command/template/runtime/retention. Ten references
+are alphabetically numbered through ordered nocite and unmodified BST.
+Firsttwo renderedpages are legible.
+
+The independent review caught and development fixed corrupted TeX rm
+escapes/parity text and coordinate scale/proof-scope wording as well as
+the source-attribution corrections. These affected only the new manuscript;
+canonical theory, engine, science freeze and native evidence are unchanged.
+Root corrected the declarations to scope compact-return claims to41–319
+rather than imply it also contains inherited2–40 certificates.
+
+Actual essentialindex checker PASS372entries/30593B. Size tool at
+a948b24 reports base9430928+274831positive deltas, plus inherited2087B
+FREEZE charge gives conservative9707846B<AC10000000Bcap. Onlynew counted
+output is the small template dependency manifest; source/prose remain
+authored content. PDF/class/BST/buildlogs/previews stay outsideGit.
+
+### Supplemental manuscript review complete; return to AUDIT
+
+Distinct Astrahigh final manuscript consistency review accepts fidelity
+at a948b24c3faeba1e475ce64f4c7fc9d4123d42a5, with exact16source identities
+in paper/review.md. Root reads the complete report and independently
+verifies all16file hashes/byte sizes. No unresolved material consistency
+finding remains in its scope. It reads all included supporting appendices
+and matches the canonical theorem/normalization/constant/evidence chains,
+but does not claim an exhaustive fresh audit of every upstream inequality,
+a native replay, priority clearance or readiness. Final Claude audit
+remains pending, now including the new manuscript.
+
+Manuscript request is fulfilled: actual current Springer template interface,
+conceptual opening/main argument in AC's requested style, complete proof
+transfers into supporting appendices, bibliography/source map, compiled
+PDF, reproducible build and explicit draft limitations. Authorship and
+human declarations, durable publication release, complete standalone
+whole-paper checking and final IDs at reviewedPR preparation remain.
+No extra researchround, numerical job, submission/editorcontact or
+sharedregistry application took place. Next handoff18 supersedes the
+unfinished audit request16 via completed manuscript WORK17 and restores
+the entire pending Claude H/F/compact/G01/literature audit plus manuscript
+review. Step outputs commit first;17done/new18only follow separately.

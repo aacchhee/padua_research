@@ -85,4 +85,22 @@ The official package should be compared or refreshed before submission.
 
 ## Build and review record
 
-To be completed after the integrated build and supplemental manuscript check.
+The full Springer-class build succeeds: 88 pages, with the first appendix
+beginning on page18. The main narrative occupies pages1–17 including the
+title page; the detailed estimates are supporting appendices. There are
+no unresolved references/citations or overfull boxes. See [BUILD.md](BUILD.md)
+for the pinned TeX source commit, artifact identity and exact command.
+
+The supplemental [manuscript consistency review](review.md) compares the
+exposition with the canonical proof/source records. It is distinct from
+the pending substantive Claude audit and gives no submission-readiness
+judgment. The complete core corner proof and the previously untranscribed
+pole/reference, model and row support are now written in the appendices;
+there are no intentional proof placeholders. Routine derivative/mesh
+calculations are sometimes compressed and require the final whole-paper
+check. No new scientific numerical jobs were run for the manuscript.
+
+The essential evidence index remains unchanged at372 entries/30593 bytes
+and passes its checker. The conservative tracked-generated bound is
+9707846 bytes, below the user-approved10000000-byte cap; the manuscript
+PDF and publisher dependency downloads are not tracked.
