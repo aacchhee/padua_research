@@ -4,6 +4,15 @@ The remaining degrees require a bound on the whole square, including a
 strict comparison arbitrarily close to each maximizing corner. Both finite
 methods use the same principle: interpolate a smooth signed sum with positive
 weights, bound its interpolation error, and only then maximize over signs.
+For any finite real vector $(h_\ell)$ the identity
+\[
+ \sum_\ell|h_\ell|=\max_{\varepsilon_\ell\in\{-1,1\}}
+                         \sum_\ell\varepsilon_\ell h_\ell
+\]
+provides the signed sums. Each is smooth whenever the individual
+kernels or cardinals are smooth. The signs realizing the maximum may
+change inside a leaf; a bound valid for every complete signed sum
+continues to hold across all such changes.
 
 \begin{lemma}[Positive interpolation bounds]\label{cert:positive}
 Let $F(z)=\max_{\sigma}f_\sigma(z)$, where the maximum is finite.
@@ -26,9 +35,18 @@ Bernstein coefficients $c_{\ell,ij}$ on $R$, the analogous bound is
 \begin{proof}
 The one-dimensional linear interpolation remainder is an integral against
 a Peano kernel of one sign, whose mass is $(a-a_0)(a_1-a)/2$.
-Apply it in each coordinate; the interpolation weights in the other
-coordinate are nonnegative and sum to one. This proves
-\eqref{cert:peano} for each signed sum and hence for their maximum.
+Let $I_a,I_b$ denote the two linear interpolation operators. The identity
+\[
+ f_\sigma-I_aI_bf_\sigma
+   =(f_\sigma-I_af_\sigma)+I_a(f_\sigma-I_bf_\sigma)
+\]
+separates the two errors. The first is bounded by
+$M\omega_a^2(a-a_0)(a_1-a)/2$; positivity of $I_a$ bounds the second
+by $M\omega_b^2(b-b_0)(b_1-b)/2$. At the four vertices,
+$f_\sigma\leq F\leq W$, so positivity also gives
+$I_aI_bf_\sigma\leq I_RW$. This proves \eqref{cert:peano} for
+every signed sum, with an error independent of $\sigma$, and taking
+their maximum proves the assertion.
 Equation~\eqref{cert:bernstein} follows from the same positivity and
 partition of unity of the Bernstein basis, after the triangle inequality.
 \end{proof}
@@ -43,10 +61,29 @@ less than a validated lower endpoint $L_c\leq\Lambda_c(n)$.
 A leaf containing a designated corner exempts only its vertex coefficient:
 that coefficient is exactly the polynomial value there, with absolute sum
 $\Lambda_c(n)$; every other coefficient sum must be less than $L_c$.
-The exceptional Bernstein weight equals one only at that vertex.
-Thus the same predicate proves a strict inequality on the punctured leaf.
-A complete closed binary partition proves both the maximum and its exact
-equality set, including every split boundary.
+Write $C=\Lambda_c(n)$, let $w_*$ be the exceptional
+vertex weight, and let $D_R$ be the largest validated coefficient sum
+among the other indices. The corner predicate gives $D_R<L_c\leq C$,
+so the upper bound on this leaf is
+\[
+ Cw_*+D_R(1-w_*)=C-(C-D_R)(1-w_*).
+\]
+Here $w_*$ is a product of endpoint Bernstein weights, and $w_*<1$
+at every point other than the designated vertex. This proves the
+required strict comparison however close the point is to that vertex.
+At the vertex itself the cardinal formula supplies the exact value $C$.
+On an ordinary leaf the largest validated coefficient sum is already
+strictly less than $L_c$, giving the comparison everywhere on the leaf.
+
+The partition is specified by a rooted binary tree: every internal node
+splits its closed rectangle at the midpoint of one coordinate, and both
+children must be present. Starting with $[-1,1]^2$, this reconstructs a
+cover of the entire square. Shared edges belong to both adjacent leaves;
+the same inequalities hold there. The designated corner vertices are
+exactly the two nonnode corners in Theorem~\ref{thm:main-location}.
+Their node-preserving reflection gives their common value $C$.
+Thus the leaf predicates prove both the maximum and its exact equality
+set on the full square.
 
 All coefficient enclosures are reconstructed by the checker. The identities
 \[
@@ -74,8 +111,15 @@ whose maximum is two, attained only at $(-1,\pm1)$.
 For $41\leq n\leq319$ the common envelope is enclosed on
 $\mathcal T=\{(a,b):a,b\geq0,\ a+b\leq1\}$, with phases
 $(\alpha,\beta)=(\pi a,\pi b)$ and $k=n/(n+1)$.
-Every signed board sum has frequencies at most $\pi,\pi k$ in these
-coordinates. A genuine global norm $M$ and vertex uppers therefore give
+In the notation of \eqref{ul:primitive}, put
+\[
+ f_\varepsilon(a,b)=\frac1{2\mathsf N}
+       \sum_{\Gamma^-}\varepsilon_{rs}H_{rs}(\pi a,\pi b).
+\]
+Then $S_n(\pi a,\pi b)=\max_\varepsilon f_\varepsilon(a,b)$,
+and $|f_\varepsilon|\leq S_n$. Every signed board sum has frequencies
+at most $\pi,\pi k$ in these coordinates. A genuine global norm $M$
+and vertex uppers therefore give
 \begin{align}\label{cert:phase-bound}
  S_n(\pi a,\pi b)&\leq q_R(a,b),\\
  q_R&=I_RW+\frac{M\pi^2}{2}
@@ -84,14 +128,26 @@ coordinates. A genuine global norm $M$ and vertex uppers therefore give
  \quad V_R=\max_zW_z,\quad
  \theta_R=\frac{\pi^2}{8}\{(a_1-a_0)^2+k^2(b_1-b_0)^2\}.\notag
 \end{align}
-Trigonometric Bernstein inequalities supply the required signed derivative
-bounds from $M$. The complete midpoint tree covers the triangle; a rectangle
+Trigonometric Bernstein inequalities supply
+$|(f_\varepsilon)_{aa}|\leq\pi^2M$ and
+$|(f_\varepsilon)_{bb}|\leq\pi^2k^2M$ from the global norm.
+The final line of \eqref{cert:phase-bound} uses positivity of the
+bilinear weights and the elementary bound
+$(a-a_0)(a_1-a)\leq(a_1-a_0)^2/4$, and similarly for $b$.
+Thus $V_R+\theta_RM$ is a simple certified upper for the whole leaf.
+The complete midpoint tree covers the triangle; a rectangle
 is discarded only if its lower-left coordinate sum exceeds one.
 Tangencies and shared boundaries remain in the cover.
 
-The norm premise is itself certified. If all leaves are numerical and
-$\theta_R<1$, apply \eqref{cert:phase-bound} with the true supremum $M_*$
-on a leaf containing a maximizer, obtaining
+The norm premise is itself certified. Let $M_*$ be the global real-phase
+supremum of $S_n$. The folding symmetries established in
+Section~\ref{sec:argmax} reduce this supremum to $\mathcal T$.
+Compactness supplies a maximizing point, and every signed sum has
+absolute value at most $M_*$. Consequently the derivative argument is
+valid initially with this true, possibly unknown, norm. If all leaves
+are numerical and $\theta_R<1$, a leaf containing that point gives
+$M_*\leq V_R+\theta_RM_*$. Absorbing its last term and then taking
+the largest possible leaf ratio yields
 \begin{equation}\label{cert:tree-norm}
  M_*\leq\max_R\frac{V_R}{1-\theta_R}.
 \end{equation}
@@ -103,16 +159,40 @@ give
 \end{equation}
 Indeed the ten quarter-squares cover $\mathcal T$; outside vertices fold
 back to $E$ by $(a,b)\mapsto(1-a,1-b)$, a phase symmetry.
-Their Peano error is at most $\pi^2M_*/64$, which can be absorbed.
-A tree using an analytic far leaf must use this grid norm.
+Each square has side $1/4$, so its Peano error is at most
+$\pi^2(1+k^2)M_*/128\leq\pi^2M_*/64$. Hence
+$M_*\leq V_E+\pi^2M_*/64$, proving \eqref{cert:grid-norm}; the
+rational factor follows from $\pi<22/7$. Either construction gives a
+validated $M\geq M_*$ to insert in every subsequent leaf test.
+For \eqref{cert:tree-norm}, every leaf meeting the triangle must
+supply its numerical vertex bounds. A tree using an analytic far leaf
+uses the independent grid norm \eqref{cert:grid-norm}.
 
 On a leaf the certified upper for $q_R$ must be below $L_c$ on its far
 part. On its actual near part $\rho\leq1/2$, at a noncorner center,
 the required inequality is $q_R-\delta_R<L_c$, with the appropriate
 proved reflection floor $\delta_R$. The floor's radius is
 $\min\{1/2,\pi(a_1+b_1)\}$; it is used only where its physical guard
-holds. A rational enclosure of $\pi$ supplies overlapping closed proxies
-for near and far that retain every seam.
+holds. To make the guard explicit, write $p_-\leq\pi\leq p_+$ for the
+positive rational bracket. Since $\rho=\pi(a+b)$ on $\mathcal T$,
+closed rational proxies for the two parts are
+\[
+ R\cap\mathcal T\cap\{a+b\leq1/(2p_-)\},\qquad
+ R\cap\mathcal T\cap\{a+b\geq1/(2p_+)\}.
+\]
+The first contains every actual near point, and the second every actual
+far point. Their overlap retains the seam $\rho=1/2$. Requiring the
+appropriate strict comparison on each nonempty proxy is sufficient;
+the defect floor is invoked in the physical implication only at actual
+near points. Its certified radius can be evaluated outwards as
+$r_R=\min\{1/2,p_+(a_1+b_1)\}$ and substituted in
+\eqref{ul:finite-floors}. Every noncorner odd center has an eligible
+projection, so \eqref{ul:defect} gives there
+\[
+ \lambda_n=S_n-\Delta_{JK}\leq q_R-\delta_n(r_R)<L_c
+                                                   \leq\Lambda_c(n).
+\]
+On the actual far part $\lambda_n\leq S_n\leq q_R<L_c$.
 Actual corners are covered by a direct descent witness.
 
 The local descent uses \eqref{ul:squared-peano}. Take
@@ -123,13 +203,44 @@ $W_x,W_y,W_{xy}$ at $(\sqrt{2U},0),(0,\sqrt{2V}),
  q=\min\left\{\frac{L_c-W_x}{u'},\frac{L_c-W_y}{v'},
                          \frac{L_c-W_{xy}}{u'+v'}\right\}.
 \]
-The strict test
-$q>(M\pi^4/6)\max\{u',k^4v'\}$ proves positive quadratic loss off
-the origin, on a rectangle containing the inward half diamond.
-From degree256 the analytic corner estimate supplies the same implication.
-An analytic far leaf is permitted from degree192 only when its entire
-triangle intersection satisfies $\rho\geq\pi/2$; its bound is the
-far-region consequence proved in Section~\ref{sec:argmax}.
+For the other three vertices the losses relative to the exact corner
+value are at least $L_c-W_x$, $L_c-W_y$, and $L_c-W_{xy}$.
+They are therefore at least $(q/\pi^2)U$, $(q/\pi^2)V$, and
+$(q/\pi^2)(U+V)$, respectively. At the origin the value is exactly
+$\Lambda_c(n)$. Apply \eqref{ul:squared-peano} with $c=q/\pi^2$
+to obtain
+\[
+ \begin{gathered}
+ \lambda_n(-\cos(A/n),-\cos(B/(n+1)))
+ \leq\Lambda_c(n)-\frac{g}{2\pi^2}(A^2+B^2),\\
+ g=q-\frac{M\pi^4}{6}\max\{u',k^4v'\}.
+ \end{gathered}
+\]
+Thus the strict test $g>0$ proves positive quadratic loss off the
+origin. The rectangle is $0\leq A\leq\pi/4$,
+$0\leq B\leq3\pi/16$, which contains the inward half diamond
+$A+B\leq1/2$. Complete signed cardinal sums are even in each inward
+variable and have frequencies at most $1,k$; their absolute values are
+bounded by the same global $M$, since $\lambda_n\leq S_n$ in every
+chart. These are precisely the premises of the squared-variable
+interpolation argument. The parity reflection transfers the witness to
+the other actual corner.
+
+From degree256 the analytic estimate \eqref{ul:corner256} supplies
+the same strict descent on the required diamond. An analytic far leaf
+is permitted from degree192 only when its entire triangle intersection
+satisfies $\rho\geq\pi/2$. Equation~\eqref{ul:far192} then gives
+$S_n<\Lambda_c(n)-3/100$ throughout that closed intersection.
+
+To complete the implication, choose an odd chart for any point of the
+physical square and fold its absolute phases into $\mathcal T$.
+The tree gives a leaf containing those phases. Its far comparison,
+noncorner near comparison, or actual-corner descent excludes the point
+strictly, except when it is the origin of an actual corner chart.
+Those origins are the two nonnode corners already identified by parity.
+Their exact common value and the closed chart cover prove the asserted
+maximum and equality set, including every chart tie and subdivision
+boundary.
 
 \subsection{Evidence and arithmetic}
 The retained proof inventory covers every integer $2\leq n\leq319$;
