@@ -1,5 +1,7 @@
 # Padua argmax bridge — WORK post-audit checkpoint, 2026-11-06
 
+A new analytic scalar theorem proves H(x)−H(0)<=−(pi−3)x²/(4pi³) on the full closed principal period, so its unique maximum is at0. It follows from an exact endpoint-cancelled integral and strict f-third-derivative sign, with no new numerical enclosure. [Proof](theory/E07-f-monotonicity.md), [independent acceptance](independent-checks-E07-H.md). Its application to a lower finite-n onset is separate.
+
 The exact parity-correct two-corner global argmax is proved for **EVERY integer n>=640**
 and finite degrees2–42,63–64,159–160,511–512. Exactly591 degrees remain OPEN:
 43–62,65–158,161–510,513–639. PD-T099 remains OPEN; the onset is sufficient,
