@@ -610,3 +610,49 @@ there is no global environment read, not because a permission error is ignored.
 Recommendation only: no operational source or fixture was edited, and no tests
 or reruns occurred in this outcome assessment. Preserve both failed runs and
 publish this finding before a focused repair; readiness remains unclaimed.
+
+## Causal-state candidate review — FOPS-08 addressed, FOPS-09 remaining
+
+Reviewed candidate custody
+`897f771aeecc838b5fbe897abe39b7b243ffb02941276af5519f03d4bc882920`;
+all sixteen entries match their listed hashes. Full server/shared validator/
+return source was read statically. **Source verdict: causal-state gate addresses
+FOPS-08, but one MAJOR cleanup finding remains; no execution release.**
+
+The new shared `quiescent_runs` guard examines every output group under the
+global lock for both admission and collection. It rejects unknown/symlinked
+groups and missing/false/corrupt source/plan/domain-bound summaries. Existing
+attempt validation occurs before invalidation and performs data-only reads.
+New summary false is now persisted before even the preflight loader child.
+True publication follows direct worker waits and owned `cleanup()`/ECHILD,
+with no later child launch. The global environment scanner is removed rather
+than made permissive. These changes implement the requested causal contract;
+a crash during invalidation/preflight leaves false or missing state, which is
+conservatively refused across all groups. Failed-but-quiescent collection
+remains distinct from successful degree acceptance and failed-case resume.
+
+### FOPS-09 — MAJOR: preflight is outside owned final cleanup
+
+After false publication, `server.run` calls `subreaper()`, `inspect()` and
+provenance capture **before** installing its stop handlers and entering the
+scheduler's `try/finally`. Therefore a preflight exception, loader timeout or
+signal cannot reach that owned-descendant cleanup path. `subprocess.run` can
+kill/wait its direct loader process on its managed error paths, but this does
+not prove cleanup of descendants adopted by the already active subreaper.
+The persisted false state correctly prevents an incorrect collection success;
+it does not satisfy the separate owned-process cleanup requirement.
+
+Narrow repair: use the existing exception/signal/cleanup discipline around all
+post-invalidation work, with subreaper established before the first preflight
+child. Retain the first preflight exception, stop admissions, wait/clean owned
+children and only publish true if ECHILD is actually established. If subreaper
+setup fails before any child can start, preserve false/refusal rather than
+pretend cleanup capability was established. Do not add another supervisor or
+relax the all-group gate. A failed cleanup must never overwrite false with true.
+
+Required focused control: a fake preflight starts an owned child (including an
+orphan variant) and then fails or is signaled; the existing finalization must
+clean it and retain the preflight failure, or leave false on cleanup failure.
+This is separate from fake case-worker failures, which happen after entering
+the existing scheduler try/finally. No source imports/tests were performed;
+03 fixture preparation can continue but release awaits the focused source fix.
