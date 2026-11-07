@@ -34,7 +34,12 @@ hashes provide custody only and never decide scientific acceptance. The producer
 uses actual phase-checker/extracted assets, not a wheel. All FLINT/GMP/MPFR header and library payloads are checked byte-for-byte against
 six SHA256-pinned official Debian packages; matching version/architecture metadata
 is additional attribution, never a substitute for byte verification.
-The pinned packages, full target loader closure, and asset provenance are included; target preflight refuses incompatibility
+The pinned packages, offline arithmetic closure and asset provenance are included;
+execution uses the target system runtime. Producer non-arithmetic libraries are
+retained only under producer-runtime-custody/, outside every LD_LIBRARY_PATH/rpath
+search and outside runtime/scientific acceptance identity; they are not target
+runtime premises. Fresh per-case builds, loaded maps and Access capture preserve
+the actual target Python/compiler/system-library bytes; target preflight refuses incompatibility
 and missing assets before the frozen setup.py network fallback can be reached.
 
 After audit/release and source publication, root may run (unexecuted example):
@@ -134,7 +139,8 @@ is substituted for the removed global environment scan.
 The pinned GMP6.3 runtime has an actual ELF requirement for **glibc>=2.38**.
 Root's read-only `readelf --version-info` inspection found GLIBC_2.38 in
 libgmp.so.10.5.0; pinned FLINT requires up to GLIBC_2.34 and MPFR less. Therefore
-this offline package requires glibc>=2.38 on Syvert2. Syvert2's actual OS/glibc
+this offline package requires glibc>=2.38 on Syvert2. This is a necessary known
+constraint, not a guarantee of target loader/compiler compatibility. Syvert2's actual OS/glibc
 remains unverified: this is a binary prerequisite, not an observed target failure.
 The existing ldd preflight must reject an unresolved/version-incompatible loader
 closure before any engine launch. Pins are unchanged; no compatibility experiment

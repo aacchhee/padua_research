@@ -331,3 +331,28 @@ introduced. Root will choose the published source pin after this prose-only
 update and owns real builder/release/delivery records. This developer executed
 no import, test, builder or asset job in making the update. Runtime plan, code,
 package pins, caps, GLIBC>=2.38 prerequisite and five interfaces are unchanged.
+
+## FOPS-10 producer-runtime custody separation — 2026-11-07, SOURCE ONLY
+
+Root published the pre-builder finding at9e9edf377ebefa75bca235b5da2468a17843a4c1
+before any real builder. Producer ldd's non-arithmetic libc/libm/loader bytes
+previously entered the active arithmetic LD directory, which could inject the
+producer glibc2.41 into Syvert2. No target failure or actual archive was observed.
+
+The focused builder-only fix retains only the six pinned packages' FLINT/GMP/MPFR
+shared payloads/aliases in the active ASSET/lib directory and explicitly rejects
+other library names there. Producer non-arithmetic ldd payloads move under
+producer-runtime-custody/<SHA256>/<basename>, outside all LD_LIBRARY_PATH/rpath
+searches. Their origin/bytes/hash and non-target scope are preserved in separate
+SOURCE_CUSTODY metadata, excluded from the runtime/scientific acceptance manifest.
+The archive retains their bytes for custody. Fresh per-case build/loaded-map/
+Access provenance continues unchanged to capture the actual target Python,
+compiler and system runtime. Offline delivery is pinned arithmetic closure plus
+target system runtime; GMP's actual glibc>=2.38 requirement is necessary, not
+sufficient for universal target/compiler compatibility.
+
+No scientific/native/preflight code, workload, caps, trusted pins or completed
+control/result evidence changed. Source-only text/hash/static AST inspection;
+no import, test, builder, asset read/extraction or native job. Focused source/ZIP
+review follows;03 synthetic and genuine/native validations need no repetition
+for this builder-only repair. Root retains final delivery ownership.

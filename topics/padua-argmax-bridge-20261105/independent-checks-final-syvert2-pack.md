@@ -845,3 +845,28 @@ should verify the separation; the already completed scheduler and genuine-data
 checks need not be repeated merely for this builder-only repair. The actual
 builder remains unexecuted/unreleased. Reviewer performed only static reads;
 no library experiment, import, compiler or native call was launched.
+
+### FOPS-10 focused source disposition
+
+**Accepted for the builder-only source repair.** Reviewed the exact diff from
+preserved first finding/source and all sixteen custody entries at SHA256
+`a6a0f1f90040dc8516257aa783cd6e3dba1651695ba32663549b46683b3bb7d7`.
+Builder SHA256 is
+`c017fb1091574fccbdbee74f4eedafd628243248edc1d651b6324c917a109adc`.
+
+The active assets are now exclusively the arithmetic files selected from the
+six pinned packages; a guard rejects non-arithmetic library names under the
+active `ASSET/lib/` tree. Producer `ldd` non-arithmetic results are written under
+`producer-runtime-custody/<sha256>/<basename>` only **after** the runtime inventory
+and manifest are finalized. They are recorded explicitly in `SOURCE_CUSTODY`,
+not in runtime/scientific acceptance identity, and neither preflight
+`LD_LIBRARY_PATH` nor native build rpath points to that custody tree. No alias
+copies producer libc/libm/loader bytes back into the active arithmetic path.
+
+README now distinguishes pinned offline arithmetic from target system runtime
+and describes glibc>=2.38 as a necessary known constraint, not universal target
+compatibility. Per-case target runtime recording/capture is unchanged. The
+builder-only diff does not change the completed 03/genuine checks' imported
+code or scientific source; they were not rerun. Actual ZIP verification remains
+pending the separately registered root build. No source import, builder,
+library experiment or numerical execution occurred in this focused review.
