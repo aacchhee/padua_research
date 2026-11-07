@@ -1,19 +1,19 @@
 # Padua argmax bridge — WORK post-audit checkpoint, 2026-11-06
 
-The exact parity-correct two-corner global argmax is proved for **EVERY integer n>=768**
-and finite degrees2–42,63–64,159–160,511–512. Exactly719 degrees remain OPEN:
-43–62,65–158,161–510,513–767. PD-T099 remains OPEN; the onset is sufficient,
+The exact parity-correct two-corner global argmax is proved for **EVERY integer n>=640**
+and finite degrees2–42,63–64,159–160,511–512. Exactly591 degrees remain OPEN:
+43–62,65–158,161–510,513–639. PD-T099 remains OPEN; the onset is sufficient,
 not minimal. The independently model-free finite1023 proof remains valid.
 
 ## Current accepted theorem and cost result
 
-[E02 global768](theory/E02-assembly768.md) and its
-[independent review](independent-checks-E02-assembly768.md) prove the full
+[E04 global640](theory/E04-assembly640.md) and its
+[independent review](independent-checks-E04-assembly640.md) prove the full
 physical/parity-correct argmax using RATIONAL PAPER inequalities only.
 No scalar/endpoint/native/finite-degree job ran. Phase-aware ACTUAL
 noncorner floors are matched on near and annular charts; the new whole
-wide-FAR primitive comparison starts at rho=pi/4. Both actual-corner
-closedpi/4 squares have radial loss1/16 from512. Old D37's stronger1024
+wide-FAR primitive comparison starts at rho=7/8. Both actual-corner
+closed side1 squares have radial loss1/3 from512. Old D37's stronger1024
 gaps and rho>=1/2 primitive-FAR scope are preserved only at that onset.
 PD-T271 remains explicit; final Claude/upstream coverage audit is separate.
 

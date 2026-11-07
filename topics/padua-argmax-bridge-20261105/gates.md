@@ -2,11 +2,11 @@
 
 ## Current campaign checkpoint — 2026-11-06
 
-The actual global theorem covers EVERY integer **n>=768**, with exactly
+The actual global theorem covers EVERY integer **n>=640**, with exactly
 the two parity-correct nonnode corners, and finite degrees2–42,63–64,
-159–160,511–512. [E02 proof](theory/E02-assembly768.md),
-[independent paper review](independent-checks-E02-assembly768.md).
-Residual43–62,65–158,161–510,513–767(719degrees) and PD-T099 remain OPEN.
+159–160,511–512. [E04 proof](theory/E04-assembly640.md),
+[independent paper review](independent-checks-E04-assembly640.md).
+Residual43–62,65–158,161–510,513–639(591degrees) and PD-T099 remain OPEN.
 This is a sufficient onset, not minimal. The new annular comparison uses
 ACTUAL defects; no old primitive rho>=1/2 far-gap transfer is implied.
 Earlier dated current-state notes below are historical. Pack is PAUSED.

@@ -114,13 +114,17 @@ NEW15coordinatedanalyticroundsauthorized2026-11-06 afterD39. E01ACTIVEpaper-only
 | E01 | COMPLETE | Accepted actual corners from512, rebuilt phase-aware/wide defect floors, exact near-charge refinement; three scoped old512 allocation barriers. Globalonset1024unchanged; PAPER-ONLY. |
 | E02 | COMPLETE | Accepted analytic GLOBALargmaxEVERYn>=768 by rationalpaperproof; newglobalrows+pairedouter accepted; NOsource/endpoint/nativejob. |
 | E03 | COMPLETE | Accepted retained-origin cancellation and scoped ABS/one-sided no-log-linear cusp constraints; fullD13/log-linear target remainsOPEN, no numericaljob. |
-| E04 | ACTIVE | Paper-only matched640 candidate with larger near domain, rebuilt corner/defect supports and wider retained-origin increment; no source/job. |
-| E05 | ACTIVE | Cusp-aware complete upper/axis central-excess representation after exact E03 cusp obstruction, paper-only; no forced bound or job. |
+| E04 | COMPLETE | Paper-only matched640 candidate with larger near domain, rebuilt corner/defect supports and wider retained-origin increment; no source/job. |
+| E05 | COMPLETE | Cusp-aware complete upper/axis central-excess representation after exact E03 cusp obstruction, paper-only; no forced bound or job. |
 | E06 | ACTIVE | Paper-only exact axis-boundary completion and scalar-H shape/max frontier; no forced bound or computation. |
-| E07–E15 | UNALLOCATED | Remaining9 slots; redirect from proved bottlenecks. |
+| E07 | ACTIVE | Exact scalar f monotonicity and improved global assembly, paper only. |
+| E08–E15 | UNALLOCATED | Remaining8 slots; redirect from proved bottlenecks. |
 
 Newallowance1/15complete,14remainingincludingactiveE02. PackPAUSED.
 
 Current2026-11-07: NEW2/15complete,E03active,13remainingincludingE03. Analyticboundary768, residual719degrees43–62,65–158,161–510,513–767. D40packPAUSED.
 
 CurrentNEW3/15complete,E04active,12remainingincludingE04. Analytic768,residual719; packPAUSED.
+
+
+Current2026-11-07: NEW5/15COMPLETE(E01–E05); E06independentreviews/E07paperactive; tenroundsremainincludingthose. Acceptedglobal640, residual591:43–62,65–158,161–510,513–639. E04fullassembly/localconstants and bothE05scopedpapers adopted; D13/fullnear stillOPEN. PackPAUSED. No E01–E07scientificjob.

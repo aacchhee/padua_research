@@ -276,3 +276,8 @@ audit and root adoption are required; no global onset/coverage change.
 actual serving metadata unavailable. Rules baseline017f8ec, unchanged
 complete registry authenticated as in the idea record. One E05 component,
 not a new round per identity. Root owns shared registration and release.
+
+
+## Root adoption —2026-11-07
+
+Root adopts the exact frozen 12863-byte proof (SHA256 27c706d57536f2410922629a52ed6d3988aa8a84f8d0b6be6a785e6eea1bf6bc) after the distinct independent ACCEPT in [independent-checks-E05-axis-central-excess.md](../independent-checks-E05-axis-central-excess.md). Original proof bytes above are preserved. The opening pending-adoption wording is historical. Final Claude audit remains separate; no new numerical or source job was run.

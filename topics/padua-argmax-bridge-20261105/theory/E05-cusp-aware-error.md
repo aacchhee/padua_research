@@ -356,3 +356,8 @@ Astra ultra, serving metadata unexposed. This is a bounded PAPER result
 within00:26:21–00:46:21 UTC, pending root's distinct audit. E03 files and
 their adopted scopes remain frozen. Accepted global768/residual719 are
 unchanged by this theorem; it supplies no new finite-degree enumeration.
+
+
+## Root adoption —2026-11-07
+
+Root adopts the exact frozen 16277-byte proof (SHA256 b5a8ed47593039b272f082027aa1c701d4223dc423a47b9ef35ebe54b14a5356) after the distinct independent ACCEPT in [independent-checks-E05-cusp-aware-error.md](../independent-checks-E05-cusp-aware-error.md). Original proof bytes above are preserved. The opening pending-adoption wording is historical. Final Claude audit remains separate; no new numerical or source job was run.
