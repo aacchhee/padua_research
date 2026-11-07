@@ -40,8 +40,8 @@ quadratic polynomial in $\log z$. The notation $O(E_n)$ means that
 the absolute value of the omitted quantity is at most $CE_n$ for
 some fixed finite constant $C$. A statement uniform in a row index
 means that the same $C$ works for every row in the stated range.
-This distinction will matter: an estimate proved with $r$ fixed as
-$n$ grows does not automatically control the sum over $1\leq r\leq n$.
+For sums over $1\leq r\leq n$, we derive bounds that hold throughout
+the growing range of row indices.
 
 The weights $\varepsilon_j$ and $\eta_k$ are endpoint weights.
 They implement the trapezoidal convention on the two angular grids:
@@ -933,8 +933,8 @@ same argument gives its length times $M_2h^2/24$.
 This is the midpoint rule used earlier for $\cot y-1/y$
 on $[0,\pi/2]$, as well as later for the smooth function $B$.
 
-The endpoint-cell estimate does not require evaluating $g'$ or
-$g''$ at an endpoint. On the first cell, subtract the constant
+The endpoint cells are estimated using continuity of $g$ and the
+interior bounds. On the first cell, subtract the constant
 $g(0)$. Both its integral and its trapezoidal sum cancel exactly.
 The remaining absolute values are bounded by
 \[
@@ -1277,8 +1277,7 @@ The error bound is deliberately allowed to be large when $s$ is
 small. It includes $s^{-2}$, which is order one in the last row.
 This is acceptable because $w(r/m)$ vanishes at that end.
 A uniform aggregate estimate uses the product of the row error and
-its actual weight, rather than demanding that the row error alone
-be small everywhere.
+its actual weight.
 To sum the remainder, use $w(r/m)\leq am/r$ on the first half and
 $w(r/m)\leq Cs/m$ on $r\geq m/2$. They give respectively bounds
 $C/(m^2r)$ and $C/(m^2s)$ after normalization by $1/m$.
@@ -1393,9 +1392,8 @@ $ad_0$, so
  R(1-y)=\pi-ad_0+O(y(1+|\log y|)),\qquad
  |R''(1-y)|\leq C/y.
 \]
-The derivative bounds just used follow from factorizations of
-smooth functions, rather than from differentiating the displayed
-$O$ estimates. Near zero write
+Writing the endpoint terms explicitly lets us differentiate them with
+controlled remainders. Near zero write
 \[
  J(x)=d_0+q_0x+x^2J_2(x),\qquad v(x)=xv_1(x).
 \]
@@ -1739,9 +1737,7 @@ computed it. Subtract $A(n)^2$ from its result. Since
 and the remaining reciprocal terms tend to zero, that difference
 tends to $C$. The earlier independent mesh comparison proves that
 the same difference tends to $\kappa$. Uniqueness of a real limit
-therefore gives $C=\kappa$. This identification uses no numerical
-approximation to the constant and does not assume the final
-expansion.
+therefore gives $C=\kappa$.
 The half-step variable $N=n+1/2$ is now forced by the logarithmic
 reciprocal term. If $P(z)=A(z)^2$, then
 \[

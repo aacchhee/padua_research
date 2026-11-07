@@ -14,6 +14,16 @@ maximum. The mathematical work in this section explains why passing
 these finitely many tests proves an assertion at every point of the
 square.
 
+A \emph{checker} is a program that reconstructs the finite geometric
+and arithmetic assertions from the supplied data and verifies the
+required inequalities. A \emph{predicate} is one such precisely
+specified condition, such as completeness of a subdivision or
+positivity of a rational margin. A candidate certificate passes when
+all its required predicates hold. The search that finds useful
+rectangles can make different choices on different degrees; the
+mathematical meaning of a successful final certificate is given by
+the fixed predicates and their proof below.
+
 It helps to separate the roles of the objects involved. The target is the
 Lebesgue function $\lambda_n$, a sum of absolute values of the cardinal
 polynomials. The corner value $\Lambda_c(n)$ is an exact real number,
@@ -424,6 +434,34 @@ follows by the same calculation after reversing the coordinate.
 Thus the averaging array is an exact change of representation on the
 two child intervals.
 
+Here is the binomial calculation establishing the general left-half
+identity. Use $\binom nj\binom ji=\binom ni\binom{n-i}{j-i}$
+and exchange the two finite sums to obtain
+\[
+ \begin{aligned}
+ \sum_{j=0}^n d_0^{(j)}B_j^n(s)
+ &=\sum_{j=0}^n\sum_{i=0}^j
+     d_i\binom nj\binom ji(s/2)^j(1-s)^{n-j}\\
+ &=\sum_{i=0}^n d_i\binom ni(s/2)^i
+       \sum_{j=i}^n\binom{n-i}{j-i}
+                 (s/2)^{j-i}(1-s)^{n-j}\\
+ &=\sum_{i=0}^n d_i\binom ni(s/2)^i
+                         (1-s/2)^{n-i}=p(s/2).
+ \end{aligned}
+\]
+The inner sum in the second line is the binomial expansion of
+$((s/2)+(1-s))^{n-i}$. Thus the child coordinate $s\in[0,1]$
+parametrizes the original interval's left half by $s/2$. For the
+right half apply this identity to the reversed polynomial
+$\widetilde p(s)=p(1-s)$, whose Bernstein coefficients are
+$d_n,d_{n-1},\ldots,d_0$. Since $B_j^n(1-s)=B_{n-j}^n(s)$,
+reversing back gives explicitly
+\[
+ p((1+s)/2)=\sum_{j=0}^n d_j^{(n-j)}B_j^n(s).
+\]
+This is the stated right-hand coefficient list. The left child's last
+coefficient and the right child's first coefficient both equal $p(1/2)$.
+
 For degree two, the left coefficients are
 $d_0,(d_0+d_1)/2,(d_0+2d_1+d_2)/4$, and the right coefficients are
 $(d_0+2d_1+d_2)/4,(d_1+d_2)/2,d_2$. Every operation is an average.
@@ -438,6 +476,8 @@ $D$, an average of $[a/D,b/D]$ and $[c/D,e/D]$ is enclosed by
  \left[\frac{\lfloor(a+c)/2\rfloor}{D},
        \frac{\lceil(b+e)/2\rceil}{D}\right].
 \]
+The notation $\lfloor x\rfloor$ means the greatest integer at most
+$x$, and $\lceil x\rceil$ the least integer at least $x$.
 The lower endpoint rounds down and the upper endpoint rounds up. The
 integer scale may stay fixed, while the interval continues to contain
 the exact rational average. Induction over the averaging array and
@@ -463,6 +503,104 @@ recurrence propagates the grid values. The exact endpoint values
 $1,-1$, and applicable zero values can be retained as identities.
 The corrected cardinal formula expresses the polynomial coefficients
 using finite sums and products of these quantities.
+
+The signed error in the arctangent expansion follows by integrating
+a finite geometric identity. For $0<x<1$ put
+\[
+ A_N(x)=\sum_{r=0}^N\frac{(-1)^r x^{2r+1}}{2r+1}.
+\]
+Since
+\[
+ \frac1{1+t^2}=\sum_{r=0}^N(-1)^r t^{2r}
+                  +\frac{(-1)^{N+1}t^{2N+2}}{1+t^2},
+\]
+integration from zero to $x$ gives
+\[
+ \arctan x-A_N(x)=(-1)^{N+1}
+                  \int_0^x\frac{t^{2N+2}}{1+t^2}\,dt,
+ \qquad
+ |\arctan x-A_N(x)|\leq\frac{x^{2N+3}}{2N+3}.
+\]
+The remainder has the displayed sign because the integrand is
+nonnegative. Hence an even partial sum is an upper bound and an
+odd partial sum is a lower bound. All terms are rational at
+$x=1/5$ and $x=1/239$, so these enclosing endpoints can be formed
+by exact rational arithmetic. Increasing $N$ makes the remainder
+smaller by the stated explicit estimate.
+
+Machin's identity, as used here, is
+\[
+ \pi=16\arctan(1/5)-4\arctan(1/239).
+\]
+To check it, let $\theta=\arctan(1/5)$ and
+$\phi=\arctan(1/239)$. The tangent addition formula gives
+\[
+ \tan(2\theta)=\frac5{12},\qquad
+ \tan(4\theta)=\frac{120}{119},\qquad
+ \tan(4\theta-\phi)
+ =\frac{120/119-1/239}{1+(120/119)(1/239)}=1.
+\]
+The angle $4\theta-\phi$ is positive because $0<\phi<\theta$.
+Also $4\theta-\phi<4\theta<4/5<\pi/2$, using
+$\arctan x<x$ for $x>0$. The angle therefore equals the unique
+angle $\pi/4$ in that interval whose tangent is one. Multiplying
+by four proves the identity. If $l_5,u_5$ bracket $\theta$ and
+$l_{239},u_{239}$ bracket $\phi$, its rational consequence is
+\[
+ 16l_5-4u_{239}\leq\pi\leq16u_5-4l_{239}.
+\]
+The negative coefficient reverses which endpoint is used for the
+second term. This is an example of outward interval evaluation of a
+linear combination with coefficients of both signs.
+
+For a cosine argument $z\in[0,2]$, write
+\[
+ C_N(z)=\sum_{r=0}^N\frac{(-1)^r z^{2r}}{(2r)!}.
+\]
+
+Repeated integration of the derivatives of cosine gives the integral
+Taylor remainder
+\[
+ \cos z-C_N(z)=\frac{(-1)^{N+1}}{(2N+1)!}
+                  \int_0^z(z-t)^{2N+1}\cos t\,dt.
+\]
+Its absolute value is at most $z^{2N+2}/(2N+2)!$, which tends to
+zero. This first establishes that the infinite series represents
+cosine. The alternating terms then give the more useful signed
+remainder information for enclosures.
+From $r=1$ onward, the ratio between successive absolute terms is
+\[
+ \frac{z^2}{(2r+1)(2r+2)}\leq\frac13.
+\]
+Thus the tail alternates with decreasing magnitudes. For $N\geq1$
+the remainder has the first omitted term's sign and magnitude at
+most $z^{2N+2}/(2N+2)!$. One direct justification of the sign is
+to group the tail in adjacent pairs: each pair has the sign of its
+first term because that term is at least as large in magnitude.
+The other grouping gives the opposite bound at the first omitted
+term. Convergence follows from the ratio bound. This proves the
+two-sided enclosure by neighboring partial sums, with rational
+endpoints whenever $z$ is rational.
+
+If the exact argument lies in a rational interval $[u,v]\subset[0,2]$,
+monotonicity of cosine on $[0,\pi]$ gives
+$\cos v\leq\cos z\leq\cos u$. A lower series bound at $v$
+and an upper series bound at $u$ therefore enclose $\cos z$.
+In particular the bracket for $\pi$ supplies one for $\pi/M$,
+with $M\geq2$, and these basic arguments lie in $[0,2]$.
+The other grid cosines follow from
+\[
+ T_0(x)=1,\quad T_1(x)=x,\qquad
+ T_r(\cos\vartheta)=\cos(r\vartheta).
+\]
+The last identity follows inductively from
+$2\cos\vartheta\cos(r\vartheta)-\cos((r-1)\vartheta)
+=\cos((r+1)\vartheta)$ and the Chebyshev recurrence. An interval
+enclosing $\cos(\pi/M)$ can consequently be propagated through
+that finite recurrence to enclose all required grid values. Addition,
+subtraction and multiplication of enclosing intervals keep the exact
+value inside them when each endpoint is rounded in the stated outward
+direction.
 
 For an interval $[a,b]$, an absolute-value upper enclosure is
 $\max(|a|,|b|)$. A lower enclosure is zero when the interval contains
@@ -517,6 +655,43 @@ charts connect every physical point to one of these phase points and
 a physical chart center. At a noncorner center the reflection defect
 will improve the envelope comparison. At an actual nonnode corner a
 separate descent witness will supply strictness near its origin.
+
+The phase geometry is illustrated below. The full triangle represents
+$\mathcal T$. Its small shaded triangle is the actual near region
+$\rho\leq1/2$, and the other shaded region is where the analytic
+far estimate is eligible by its radius guard when $n\geq192$.
+\begin{center}
+\begin{tikzpicture}[x=5.5cm,y=5.5cm]
+ \pgfmathsetmacro{\certNearCut}{1/(2*pi)}
+ \fill[gray!20] (0,0.5)--(0.5,0)--(1,0)--(0,1)--cycle;
+ \fill[blue!18] (0,0)--(\certNearCut,0)--(0,\certNearCut)--cycle;
+ \draw[thick] (0,0)--(1,0)--(0,1)--cycle;
+ \draw[thick] (0,0.5)--(0.5,0);
+ \draw[blue!70!black,thick] (0,\certNearCut)--(\certNearCut,0);
+ \draw[->] (0,0)--(1.10,0) node[right] {$a$};
+ \draw[->] (0,0)--(0,1.10) node[above] {$b$};
+ \draw (0.5,0.012)--(0.5,-0.012) node[below] {$1/2$};
+ \draw (0.012,0.5)--(-0.012,0.5) node[left] {$1/2$};
+ \node[below left] at (0,0) {$0$};
+ \node[below] at (1,0) {$1$};
+ \node[left] at (0,1) {$1$};
+ \node[rotate=-45,above] at (0.72,0.28) {$a+b=1$};
+ \node[rotate=-45,above] at (0.27,0.23) {$a+b=1/2$};
+ \node at (0.36,0.45) {analytic far};
+ \node at (0.40,0.12) {$\rho=\pi(a+b)$};
+ \node[anchor=east,align=right] (certNearText) at (-0.12,0.17)
+       {actual near\\$a+b\leq1/(2\pi)$};
+ \draw[->] (certNearText.east)--({\certNearCut/3},{\certNearCut/3});
+\end{tikzpicture}
+\end{center}
+The labels specify the exact cuts: $a+b=1/(2\pi)$ means
+$\rho=1/2$, whereas $a+b=1/2$ means $\rho=\pi/2$.
+All boundary lines belong to the stated closed regions. The
+unshaded region is handled by the appropriate numerical predicates.
+The rational proxies used by the checker are introduced below;
+their overlapping strip encloses the actual near/far seam. It is
+different from the larger analytic far guard shown here. The diagram
+illustrates these domains, while the formulas specify them exactly.
 
 The envelope $S_n$ is a finite absolute sum of primitive kernels.
 Its definition retains every corrected kernel term and endpoint
@@ -611,6 +786,42 @@ coefficient $c_j$. The remaining endpoint frequency $p=-d$ follows
 from $e^{-id\tau_j}=-e^{id\tau_j}$, so it has multiplier $-id$.
 This checks every basis frequency and hence every $T$ by linearity.
 
+For the differentiation step just used, start with the finite sum of
+positive and negative integer powers
+\[
+ G(z)=\sum_{\ell=-d+1}^d z^\ell
+       =z^{1-d}\frac{1-z^{2d}}{1-z},\qquad z\ne0,1.
+\]
+Multiplying its derivative by $z$ gives
+$zG'(z)=\sum_\ell\ell z^\ell$. At a point with $z^{2d}=-1$,
+the product and quotient rules yield
+\[
+ \begin{aligned}
+ zG'(z)
+ &=\frac{2(1-d)z^{1-d}}{1-z}
+    +\frac{2d z^{1-d}}{1-z}
+    +\frac{2z^{2-d}}{(1-z)^2}\\
+ &=\frac{2z^{1-d}}{(1-z)^2}.
+ \end{aligned}
+\]
+The derivative is taken while $z$ is variable, and its value is then
+evaluated at the specified root. Finally, for $z=e^{-i\tau_j}$,
+\[
+ (1-z)^2=-4z\sin^2(\tau_j/2),\qquad
+ c_j=\frac{i z^{1-d}}{d(1-z)^2}
+     =\frac{-i e^{id\tau_j}}{4d\sin^2(\tau_j/2)}
+     =\frac{(-1)^{j-1}}{4d\sin^2(\tau_j/2)}.
+\]
+This gives the real coefficients in the differentiation identity
+through explicit algebra. At the offsets $\tau_j$, the relation
+$e^{-2id\tau_j}=-1$ gives the exact endpoint multiplier identity
+\[
+ \sum_j c_j e^{-id\tau_j}
+       =-\sum_j c_j e^{id\tau_j}=-id.
+\]
+Multiplying by $e^{-idx}$ gives $-id e^{-idx}$, the derivative of
+the negative endpoint mode at an arbitrary base point $x$.
+
 For the absolute coefficient sum, the finite product for the equally
 spaced sine zeros yields, after logarithmic differentiation twice,
 \[
@@ -627,6 +838,48 @@ to obtain $\|T''\|_\infty\leq d^2\|T\|_\infty$.
 If the argument is rescaled so the highest frequency is $\omega$,
 the same chain rule gives $\omega^2$ in the second derivative bound.
 All norms in this calculation extend over the full real argument.
+
+The sine product and its differentiation can be made equally
+explicit. For an integer $p\geq1$, let
+$\zeta=e^{2\pi i/p}$. The numbers $1,\zeta,\ldots,\zeta^{p-1}$
+are precisely the distinct roots of $w^p-1$. Both $w^p-1$ and
+the product of the factors $w-\zeta^j$ have leading coefficient one
+(they are monic), and they have the same degree and roots. Hence
+\[
+ \prod_{j=0}^{p-1}(w-\zeta^j)=w^p-1.
+\]
+Writing each sine as a difference of two exponentials and putting
+$w=e^{2ix}$ in this identity gives
+\[
+ \prod_{j=0}^{p-1}\sin\left(x+\frac{j\pi}{p}\right)
+       =2^{1-p}\sin(px).
+\]
+For example, the exponential factor in the product of the numerators
+$e^{2ix}\zeta^j-1$ is
+$\prod_j\zeta^j=(-1)^{p-1}$; after the factors
+$e^{-i(x+j\pi/p)}/(2i)$ from the sine formula are included, the
+constant is exactly $2^{1-p}$. Thus this is a finite polynomial
+factorization identity, valid for every real $x$.
+
+On an interval where no factor is zero, differentiate the logarithm
+of the absolute value of each side. The derivative of
+$\log|\sin t|$ is $\cot t=\cos t/\sin t$. The first derivative
+therefore gives
+\[
+ \sum_{j=0}^{p-1}\cot\left(x+\frac{j\pi}{p}\right)
+       =p\cot(px).
+\]
+Differentiating once more, using $(\cot t)'=-\csc^2t$ and the
+chain rule on the right, gives
+\[
+ -\sum_{j=0}^{p-1}\csc^2\left(x+\frac{j\pi}{p}\right)
+       =-p^2\csc^2(px).
+\]
+Here $\csc t$ means $1/\sin t$. For the required choice
+$p=2d$, $x=\pi/(4d)$, every sine in the finite sum is nonzero
+and $px=\pi/2$. Hence the sum equals $4d^2$, exactly as used
+in the coefficient norm calculation. The logarithmic derivatives
+have been applied on a domain where each expression is defined.
 
 Apply this one-variable calculation with the other coordinate held
 fixed. Each complete signed board sum obeys
@@ -700,6 +953,37 @@ of a continuous function on that triangle. This establishes a finite
 number $M_*$, even while its value is unknown. The inequality
 $|f_\varepsilon|\leq S_n\leq M_*$ follows directly from the signed
 sum definition and holds before any leaf test is performed.
+
+For completeness, the reduction of the global phase plane to the
+triangle can be followed by explicit symmetries. Reindexing the
+periodic board gives, for integers $p,q$ with $p+q$ even,
+\[
+ S_n(\alpha+p\pi,\beta+q\pi)=S_n(\alpha,\beta).
+\]
+Indeed the new arguments are obtained by replacing the periodic
+indices $r,s$ by $r+p,s+q$. Their odd parity is preserved because
+$p+q$ is even, so this is a permutation of the same finite board.
+The separate evenness of the cosine kernel also gives
+\[
+ S_n(-\alpha,\beta)=S_n(\alpha,\beta),\qquad
+ S_n(\alpha,-\beta)=S_n(\alpha,\beta),
+\]
+by the replacements $r\mapsto-r$ or $s\mapsto-s$ on that board.
+The phrase ``even lattice'' refers to the translation vectors
+$(p\pi,q\pi)$ in the first identity.
+
+Start from any real pair $(\alpha,\beta)$. Translations by $2\pi$
+in each coordinate first put the two coordinates in $[-\pi,\pi]$.
+Taking absolute values by the separate evenness then gives a pair
+$(x,y)\in[0,\pi]^2$ with the same envelope value. If $x+y\leq\pi$,
+that pair already lies in $\pi\mathcal T$. If $x+y>\pi$, translate
+by $(-\pi,-\pi)$ and reflect both signs. This gives
+$(\pi-x,\pi-y)$, whose nonnegative coordinate sum is
+$2\pi-x-y<\pi$. Thus every real pair has the envelope value of a
+point of the closed triangle. Conversely that triangle is part of
+the real plane. Its maximum and the global supremum are therefore
+the same number. This is the compactness reduction needed before
+using the unknown true norm in the interpolation argument.
 Consequently the derivative argument is
 valid initially with this true, possibly unknown, norm. If all leaves
 are numerical and $\theta_R<1$, a leaf containing that point gives
@@ -775,6 +1059,20 @@ four vertices of every quarter-square, including the outside ones.
 There are fifteen points in the geometric set $E$; exact phase
 symmetries can identify equivalent evaluation arguments in the
 retained arithmetic representation.
+
+The reduction from fifteen geometric points to thirteen retained
+arguments can be seen explicitly on the hypotenuse. The folding
+symmetry there reads
+\[
+ (a,b)\longmapsto(1-a,1-b)=(b,a),\qquad a+b=1.
+\]
+It pairs $(0,1)$ with $(1,0)$ and $(1/4,3/4)$ with
+$(3/4,1/4)$, while fixing $(1/2,1/2)$. These are all five
+quarter-grid points on that edge. The other ten points of $E$
+have coordinate sum less than one and are retained. Thus there
+are $10+3=13$ representative arguments for the same grid upper
+maximum. This edge pairing follows from the translation and sign
+symmetries already proved; each kernel mesh retains its own degree.
 
 With a side width $1/4$, the coordinate product bound is $1/64$.
 Multiplying by $M_*\pi^2/2$ and adding the $k^2$ contribution
@@ -870,6 +1168,72 @@ then the resulting upper bound and its difference from $L_c$ are
 rational. The two proxy thresholds are rational as well. Thus deciding
 which closed tests are required and checking their positive margins
 can be done with integer numerators and positive denominators.
+
+In particular the nonemptiness tests for the two proxies can be
+written explicitly. For a rectangle meeting $\mathcal T$, put
+\[
+ \ell_R=a_0+b_0,\qquad h_R=\min\{a_1+b_1,1\}.
+\]
+The range of $a+b$ on $R\cap\mathcal T$ is the closed interval
+$[\ell_R,h_R]$. The lower endpoint is attained at the lower-left
+vertex, which belongs to the triangle because $\ell_R\leq1$.
+For the upper endpoint, if $a_1+b_1\leq1$ the upper-right vertex
+is admissible. If $a_1+b_1>1$, the diagonal segment joining these
+two vertices attains the sum one by continuity; all its earlier
+points with sums at most one are also in the triangle. The same
+segment attains every intermediate sum. This proves the claimed
+range, including a rectangle that meets the triangle in a single
+boundary point.
+
+Consequently the closed proxy tests are exactly
+\[
+ \begin{aligned}
+ R\cap\mathcal T\cap\{a+b\leq1/(2p_-)\}\ne\varnothing
+       &\quad\Longleftrightarrow\quad \ell_R\leq1/(2p_-),\\
+ R\cap\mathcal T\cap\{a+b\geq1/(2p_+)\}\ne\varnothing
+       &\quad\Longleftrightarrow\quad h_R\geq1/(2p_+).
+ \end{aligned}
+\]
+Equality retains a boundary point, so the comparisons are weak in
+these domain tests. A sufficient whole-near guard is
+$2p_+h_R\leq1$, since every phase in the clipped rectangle then
+has $\rho=\pi(a+b)\leq p_+h_R\leq1/2$. The whole analytic-far
+guard $\ell_R\geq1/2$ similarly implies
+$\rho\geq\pi/2$ throughout the clipped rectangle, with its
+separate degree requirement $n\geq192$. These guards and proxy
+tests involve only the stored rational endpoints and rational
+bracket for $\pi$.
+
+The corresponding value tests are also concrete. An outward rational
+upper for the constant leaf bound is
+\[
+ \widehat Q_R=V_R+\frac{Mp_+^2}{8}
+       \{(a_1-a_0)^2+k^2(b_1-b_0)^2\}.
+\]
+It bounds $q_R$ on the whole rectangle. Set
+$\delta_R=\delta_n(r_R)$ using the proved finite floor.
+The degree selects the applicable line of \eqref{ul:finite-floors};
+all the operations in that line, including each minimum and maximum,
+are rational when $r_R$ is rational. The required strict comparisons
+can then use $\widehat Q_R<L_c$ for a far proxy and
+$\widehat Q_R-\delta_R<L_c$ for a near proxy, together with the
+actual-corner descent premise. Each nonempty proxy carries its
+required comparison. The domain tests retain equality, whereas the
+value tests demand a positive margin.
+
+For an illustrative wholly near leaf, suppose
+$\widehat Q_R=L_c+1/1024$ and the proved floor is at least
+$1/512$. Its noncorner comparison then has margin
+\[
+ L_c-(\widehat Q_R-\delta_R)
+          =\delta_R-1/1024\geq1/1024>0.
+\]
+This example shows how an explicit defect floor pays for a small
+excess of the envelope upper. The certificate's own stored values
+supply the actual margins at each degree. To verify any rational
+comparison $a/b<c/d$ with $b,d>0$, the checker can equivalently
+check the integer inequality $bc-ad>0$. Thus the strictness needed
+by the continuous proof has an exact finite arithmetic test.
 Every noncorner odd center has an eligible
 projection, so \eqref{ul:defect} gives there
 \[
@@ -954,6 +1318,30 @@ the axis. The second includes its axis by the same reasoning. This
 explicit extension explains why squared interpolation is valid at
 the origin as well as in the interior.
 
+The smoothness assertion at the closed axes can also be seen directly
+from the cosine series. In the squared variable it becomes
+\[
+ \cos(\sqrt{2u}/n)
+      =\sum_{r=0}^\infty
+           \frac{(-1)^r(2u)^r}{n^{2r}(2r)!}.
+\]
+This is a power series in $u$ with infinite radius of convergence.
+On each bounded $u$ interval the factorial denominator gives
+uniform convergence of it and each fixed-order derivative series.
+The corresponding series holds for the other coordinate. A cardinal
+is a finite polynomial in these cosines, so its composition and any
+fixed signed sum have continuous derivatives in $u,v$ up to both
+axes. For example, with $B$ fixed, the even Taylor expansion reads
+\[
+ h_\varepsilon(u,v)=p_\varepsilon(0,B)
+  +(p_\varepsilon)_{AA}(0,B)u
+  +\frac{(p_\varepsilon)_{AAAA}(0,B)}6u^2+O(u^3).
+\]
+Its second $u$ derivative at zero is precisely
+$(p_\varepsilon)_{AAAA}(0,B)/3$. This confirms the origin value
+of the integral expression and explains how a coordinate change
+involving a square root still gives a smooth function here.
+
 Apply Lemma~\ref{cert:positive} to these signed functions on a squared
 rectangle $[0,U]\times[0,V]$. Its curvature allowance is
 \[
@@ -982,6 +1370,22 @@ $W_x,W_y,W_{xy}$ at $(\sqrt{2U},0),(0,\sqrt{2V}),
  q=\min\left\{\frac{L_c-W_x}{u'},\frac{L_c-W_y}{v'},
                          \frac{L_c-W_{xy}}{u'+v'}\right\}.
 \]
+
+The three upper data refer to actual physical Lebesgue values.
+Written in the original physical coordinates, their meanings are
+\[
+ \begin{aligned}
+ W_x&\geq\lambda_n\bigl(-\cos(\pi/(4n)),-1\bigr),\\
+ W_y&\geq\lambda_n\bigl(-1,-\cos(3\pi/(16(n+1)))\bigr),\\
+ W_{xy}&\geq\lambda_n\bigl(-\cos(\pi/(4n)),
+                            -\cos(3\pi/(16(n+1)))\bigr).
+ \end{aligned}
+\]
+The pairs $(\sqrt{2U},0)$, $(0,\sqrt{2V})$ and
+$(\sqrt{2U},\sqrt{2V})$ above are their radian phase coordinates.
+The cosine substitution converts those phase pairs to the displayed
+physical points. The origin of the phase rectangle corresponds to
+$(-1,-1)$, whose value is the exact $C=\Lambda_c(n)$.
 For the other three vertices the losses relative to the exact corner
 value are at least $L_c-W_x$, $L_c-W_y$, and $L_c-W_{xy}$.
 They are therefore at least $(q/\pi^2)U$, $(q/\pi^2)V$, and
@@ -1137,6 +1541,30 @@ endpoints come from the frozen Arb/FLINT/MPFR/GMP implementation;
 finite binary64 endpoints are converted losslessly to rationals for the
 cover predicates. The arithmetic implementation, compiler and native
 interfaces are trusted components of this computer-assisted proof.
+
+The implementation terms in this statement describe how the numerical
+premises are produced. An arithmetic library is a collection of reusable functions supplying
+exact or outward interval operations. The named libraries implement the
+operations used by the frozen program. Here
+\emph{native} refers to compiled library routines called during the
+numerical evaluation. A compiler translates the written program into
+executable instructions, and an interface passes inputs and outputs
+between the calling program and those routines. Their correctness
+therefore participates in the assertion that the recorded endpoints
+enclose the exact quantities. The word \emph{frozen} means that the
+particular implementation version is fixed and identified in the
+records.
+
+The format called \emph{binary64} is the standard floating-point
+representation with 64 binary digits (bits) used for the stored finite endpoints.
+Its finite numbers have the exact binary form described below.
+A \emph{source pin} identifies the exact code revision used for an
+evaluation. A \emph{hash} is a fixed-length string computed from the bytes of a
+file and recorded as its content identifier. Comparing the recorded
+identifiers links the stated checker, source and witness files to
+the particular objects in the execution inventory. The interval
+containment premise comes from the arithmetic calculation with those
+identified objects; the content identifiers retain that provenance.
 
 There are several linked levels in this evidence statement. The
 mathematical reduction specifies the meaning of a valid coefficient,

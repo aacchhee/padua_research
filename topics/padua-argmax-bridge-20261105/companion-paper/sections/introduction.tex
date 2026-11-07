@@ -485,9 +485,9 @@ closed regions yield global strict inequalities. Closed regions may
 overlap along their boundaries; including those boundaries makes the
 cover complete. Regions containing a maximizing corner require an
 equality-aware argument, since the upper bound is attained there.
-This division of tasks also explains why an accurate corner expansion
-by itself does not settle the location theorem: evaluating a candidate
-maximum and excluding all competitors are separate proof obligations.
+The proof has two obligations: evaluate the corner value and exclude
+every competing point. The corner expansion and the global comparison
+address these two obligations.
 
 The explanations below develop each construction when it is first
 needed. The numbered statements and formulas retain the same roles

@@ -468,9 +468,8 @@ cosine addition formulas show that their midpoint and half-span are
 \]
 
 The index $s$ used below measures distance in mesh indices from that
-endpoint.  The small phases perturb its angular distance, so the
-proof compares $\gamma$ with multiples of $1/M$ rather than
-replacing it by $s\pi/M$ exactly.
+endpoint.  The small phases perturb its angular distance. The proof
+retains this perturbation in its upper and lower bounds for $M\gamma$.
 
 The counting bounds are elementary lattice bounds.  On a line with
 spacing $h$, an open interval of length $\ell$ contains at least
@@ -687,7 +686,33 @@ justifies applying the endpoint comparison to its interior.
 At the upper endpoint $g=\pi/6$, the correlated expression is
 $(a_r-r/2)(1-6/L)$.  The lower endpoint exceeds it by the
 positive difference stated above, so this is a lower bound for
-the whole class.  Using the unrounded open-arc count and the span
+the whole class.  To show the subtraction explicitly, the bound
+$|\cos' t|=|\sin t|\leq1$ and the fundamental theorem of
+calculus give
+\[
+ \cos(\pi/3+4\pi/L)\geq\cos(\pi/3)-4\pi/L
+                            =\frac12-\frac{4\pi}{L}.
+\]
+At $g=4\pi/L$ the factor $1-\pi/(Lg)$ is $3/4$.
+Consequently
+\[
+ \begin{aligned}
+ H(4\pi/L)-H(\pi/6)
+ &\geq\frac34\left\{a_r\left(\frac32-\frac{4\pi}{L}\right)
+                         -\frac r2\right\}
+                   -(a_r-r/2)(1-6/L)\\
+ &=a_r\left\{\frac98-\frac{3\pi}{L}-1+\frac6L\right\}
+            +r\left\{-\frac38+\frac12-\frac3L\right\}\\
+ &=a_r\left\{\frac18+\frac{6-3\pi}{L}\right\}
+            +r\left\{\frac18-\frac3L\right\}>0.
+ \end{aligned}
+\]
+For the last sign, $L\geq64$ and $\pi<22/7$ imply that the
+first brace is at least $1/8-24/(7\cdot64)=1/14>0$.
+The second brace is at least $1/8-3/64=5/64>0$.
+Since $a_r>0$ and $r\geq0$ on the legal radius range, their
+displayed combination is strictly positive.  Using the unrounded
+open-arc count and the span
 $\sqrt3g$ gives
 \[
  Q\geq\frac{2}{3\pi\sqrt3}
@@ -1661,10 +1686,8 @@ axes are included as well, because the same interpolation
 weights and error bounds apply when $s$ or $t$ is zero.
 
 It remains to establish sufficiently large losses at the three
-nonzero vertices.  This is an efficient use of the comparison
-model: instead of differentiating the absolute-valued Lebesgue
-function locally, we evaluate robust bounds at three fixed inward
-phases and use the global norm to control interpolation between
+nonzero vertices. We evaluate the comparison model at three fixed
+inward phases and use the global norm to control interpolation between
 them.  The next calculation chooses the square with phase side
 $h=\pi/4$.
 
@@ -1775,8 +1798,7 @@ thresholds.  The corner descent begins at $256$, and the complete
 analytic localization begins at $320$.  Thus the corner estimate
 is already available at every degree where the global analytic
 argument uses it.  The earlier far-region guard at $192$ is useful
-inside finite certification; it does not by itself cover the
-smaller radii at those degrees.  The finite-degree proof in the
+inside finite certification. The finite-degree proof in the
 next section supplies precisely the remaining degrees below
 $320$.  These roles allow each estimate to be used on its full
 stated domain while retaining one simple starting degree for the
