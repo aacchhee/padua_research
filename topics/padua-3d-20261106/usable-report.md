@@ -46,9 +46,9 @@ but no generic continuous maximum or all-degree quality theorem follows.
 At n2/6/8 the first projected optimizer trial collides and gets a singular
 zero-gradient penalty, then returns to the start. Apparent convergence
 is not stationarity. The frozen rule fails its n6/8five-percent gate;
-its n10/12holdout is unrun. A separate prospectively registered bounded
-projected-gradient/Neumann-guard update is next, using the same known
-pilot assessment and an explicitly still-unseen higher-degree holdout.
+its n10/12holdout is unrun. A separately registered bounded projected-
+gradient/Neumann-guard update was subsequently tested on the known
+pilot assessment and its reserved higher-degree cases, as reported below.
 The failed source/receipts and exact diagnosed traces are preserved.
 
 The registered replacement uses separation-capped projected steps, a
