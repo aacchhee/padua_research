@@ -1,0 +1,25 @@
+{
+  "n": 199,
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-E",
+    "-S",
+    "-B",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/compact-release-aea62883/padua30/topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py",
+    "--mode",
+    "verify",
+    "--n",
+    "199",
+    "--output",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/verify-n199",
+    "--run-once",
+    "--certificate",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/primary-n199.json"
+  ],
+  "observed_returncode": 0,
+  "SIGCHLD": "SIG_DFL",
+  "ECHILD": true,
+  "cleanup_killed": [],
+  "wall_seconds": 10.16306461399654,
+  "first_failure": null
+}

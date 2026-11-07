@@ -105,6 +105,36 @@
         "checker": "independent-checks-compact-pack.md; evidence/compact/fixture-summary.json",
         "summary": "compact-delivery.md; evidence/compact/delivery.json",
         "retention": "local complete inputZIP/source/tree and fixture01/02 retained; AC permits server-local unsampled certificates without complete cold transfer; exact production documented"
+      },
+      "compact-actual-return": {
+        "source_commit": "996fedcad4ba79a28e45a3fe3678adc12f1e5358",
+        "artifacts": [
+          {
+            "path": "local-output/argmax-bridge-20261105/actual-return-20261107/return.tar.gz",
+            "bytes": 36045486,
+            "sha256": "b00fd57f85ce6d96a6c1fa01e2307abd815088bb8fcb28b1587657ef142b109a"
+          },
+          {
+            "path": "local-output/argmax-bridge-20261105/actual-return-20261107/verify-n199/raw-evidence.json",
+            "bytes": 158392,
+            "sha256": "0ea31da950c58e36de667e39df248efdeabdb8f1b462af782f93a7ca3af4dc38"
+          },
+          {
+            "path": "local-output/argmax-bridge-20261105/actual-return-20261107/verify-n238/raw-evidence.json",
+            "bytes": 158460,
+            "sha256": "63416714d9b7dac4859bc501872c277d5ad5dc000b5fd66f1f16495546ad4dde"
+          },
+          {
+            "path": "local-output/argmax-bridge-20261105/actual-return-20261107/RESULTS.json",
+            "bytes": 12847,
+            "sha256": "57d1b95deed600fd869fc54d2ee8a01676fa59230e0ee27dab32e4dc82cd4ee7"
+          }
+        ],
+        "commands": "compact-return.md; compact_pack/README.md; evidence/compact-return/preregistration.json",
+        "checker": "compact_pack/verify_compact.py with manifest5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16; independent released validate_pass for sampled replays",
+        "result": "All280pairs/560rational proofs PASS; both sampled full histories199/238 PASS; exactly2fresh native checks EXIT0 independently accepted",
+        "short_summary": "evidence/compact-return/summary.json",
+        "retention": "Actual compact return uploaded by AC in two chat attachments; ephemeral sandbox copies and new raw replay histories, external cold delivery/retrieval unverified. Unsampled full histories remain Syvert-local as AC authorizes; regeneration source/pins/commands documented."
       }
     },
     "files": [

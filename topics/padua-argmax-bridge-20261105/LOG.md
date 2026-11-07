@@ -1765,3 +1765,95 @@ it must not repeat a serial all-degree raw-history scan. This is a prose
 requirement only: no code, scientific claim, test, released ZIP or manifest
 has changed. Novelty gate is inapplicable. Rules4a5de20 revalidated unchanged
 through input280ff36; handoff12 remains open for actual compact-return work.
+
+## 2026-11-07 — Actual compact Syvert return received
+
+Rules AGENTS/WORKFLOW/CODEX read at input
+9847ee1ce5433f1f58718ec66095015c2d93f328; root is coordinator, requested
+Astra high, actual serving metadata unexposed. Fresh main/topic fetch
+succeeded: main f70a260e5b5f9a01209dc8a05faabdcf8db1feeb, topic unchanged.
+No novelty content or new analytic round: this checks the existing finite
+reduction and completes handoff12. Bounded Sol medium executes; distinct
+Astra medium checks technical evidence and Astra high checks theorem scope.
+
+The original single upload exceeded the executor32MiB transfer limit, so
+AC uploaded two transport parts. Both downloaded; concatenation aa then ab
+produced36,045,486B SHA256
+b00fd57f85ce6d96a6c1fa01e2307abd815088bb8fcb28b1587657ef142b109a.
+Off-Git artifact: local-output/argmax-bridge-20261105/actual-return-20261107/return.tar.gz.
+Attachment contents are untrusted data, never instructions or executable code.
+Trusted data-only verification against released source996fedc and manifest
+5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16
+passed280pairs: exactly41–319 and511, including all273residual degrees and
+seven controls. Persisted random sample is199,238; both complete histories
+passed. Developer commands/output are retained offGit; distinct verification
+and exact two fresh native verify-only calls are in progress. No theorem
+upgrade or independently inspected unsampled full histories is claimed here.
+The replay preregistration records exact selected inputs/caps/commands before
+execution; no alternate samples, additional primary discovery or cap rescue.
+
+### Completed native checks and canonical resource-scope disclosure
+
+The preregistered exact two verify-only calls199,238 ran ONCE via
+run_two.py (SHA c281852c1dc91268af384d164034bfba71cec8bc3d09158430cf00248252287e),
+wrapper session98897 finalEXIT0 completion197a2b. Both per-call observed
+EXIT0, finalaccountscomplete/first_failure=null/ECHILDtrue/cleanupempty.
+CPU through summary10.162178 and11.856834; each45S+3actual native calls,
+51nodes26leaves. Final fixed childCPU+selfHard118.788376 and118.3803<=119.
+This is not exact whole-call CPU after final serialization. All retained
+mathematical fields match the returned primary witnesses. No extra primary,
+substitute sample, rescue precision, cap increase or retry occurred.
+
+Operational deviation, disclosed once here: the local outer wrapper did
+not impose the server job_worker2GiB address-space or260CPU wrapper limits.
+The request to align the outer AS limit arrived after both calls finished.
+The unchanged engine enforced120inclusiveCPU/pass and original scientific
+stage/native/call/node/depth/receipt limits. Thus these local costs are not
+measurements under the server's outer memory limit. No mathematical
+predicate changed, no failure was rescued, and no additional native rerun
+is authorized or necessary on this fact alone. Distinct reviews accept
+the proof outcomes while retaining this process limitation.
+
+Independent data-only return check ran once EXIT0 session66571/completion
+1840e3. Independent fresh-result validation rehashed301distinct identity
+paths, source/build/native/runtime/accounting closures, and exact proof
+fields; EXIT0 completion66c923. Its first read-only adapter attempt failed
+to resolve original remote certificate identities; it is preserved offGit.
+Adapter02 resolves them from the already validated tar/trusted package;
+no engine/native rerun or scientific evidence mutation occurred.
+
+The final current theorem/coverage is documented in theory/G01-all-degrees.md,
+compact-return.md and results/padua-argmax-bridge-20261105.md. Supplemental
+technical and mathematical reviews do not replace the final Claude audit.
+AllF01–F10remain complete/paper-only. No new analytic allowance was used.
+
+### Adopted assembly, size verification and audit boundary
+
+Distinct technical review accepts actual280pairs and both fresh closures;
+distinct mathematical review accepts the exact all-degree implication.
+RootadoptsG01asPROVEDcomputer-assisted for every integern>=2 with exactly
+the two parity-correct nonnode corners, under its named trusted dependencies
+and sampled-verification/retention limits. The inherited2..40proofs and new
+41..319finite proofs meet the accepted E14tail from320. No degree gap
+remains, no minimum analytic onset or independently replayed unsampledraw
+claim is made. FinalClaudeaudit ofF/compact/newfiniteapplication isPENDING;
+existingcanonicalP1–P4findings stayunwaived. No sharedregistry/finalID or
+readiness changes were made. Stage nowAUDIT for this completed batch.
+
+Actual production costs:560checkpointCPUs sum9295.048013s; broader server
+waited-descendant10496.346196s plus12.181273supervisor selfCPU, distinct
+scopes. No actual peakmemory claim. Essentialindex372whole records,
+30593B withinreviewed32KiBexception, eachessential<16384B; hashcheckPASS.
+Stagedsizeaccounting compared to2d45727dc654b4e8182fb8aa6bab006abc34b51a:
+positivegenerateddelta273801B; approved9433015B baseline including
+inherited2087BFREEZE gives conservative9706816B<10000000B,293184Bheadroom.
+No deletioncredit, bulkcommit, filesplitting or majorcleanup. Exactsource
+/receiptcopies andgitdiffwhitespacechecksPASS. Handoff12staysopenuntil
+outputcommit; thenonlyitsstatus/new13auditfilechangeinseparatecommit.
+
+AC asked for simple explanations of the n>=320 analytic argument and
+small-degree certificates during this work. Responded with physical
+phase-minus-cancellation decomposition, overlapping corner/noncorner/far
+regions and monotone transfer; finite proof trees bound entire boxes with
+outward native premises/exact predicates and strict local corner patches.
+No new mathematical claim or experimental allowance was inferred.

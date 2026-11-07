@@ -1,6 +1,9 @@
 # Fresh complete compact Syvert pack
 
-**Ready for AC's run.** Replace the old installation with this fresh offline ZIP:
+**Actual run completed and validated.** All280pairs passed; random199/238
+also passed independent fresh native verification. See [actual return](compact-return.md)
+and [all-degree theorem](theory/G01-all-degrees.md). The following records
+the released input artifact and original launch instructions:
 
 `local-output/argmax-bridge-20261105/compact-release-aea62883/padua30.zip`
 

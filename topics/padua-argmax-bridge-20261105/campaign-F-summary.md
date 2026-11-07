@@ -1,9 +1,11 @@
 # F01–F10: completed analytic campaign
 
 AC authorized ten new rounds. All ten are complete, PAPER ONLY, with distinct
-mathematical acceptance at the precise stated scopes. The accepted global
-onset remains320 and273degrees remain OPEN pending finite certificates;
-PD-T099 is not promoted from source ideas or user-reported job status.
+mathematical acceptance at the precise stated scopes. The accepted analytic
+onset remains320. At campaign completion273degrees remained OPEN pending
+finite certificates. The subsequently validated [actual return](compact-return.md)
+closes those degrees; [G01](theory/G01-all-degrees.md) assembles every n>=2.
+No status follows merely from source ideas or user-reported job status.
 
 The main advance is uniform signed error structure. F04 proves a complete
 entropy crossing-cell remainder despite the failure of finite derivative

@@ -134,3 +134,20 @@ no complete independent sandbox inspection or cold archival is claimed.
 Prior accepted local known-case artifacts remain preserved. The old failed
 remote attempt may be discarded under AC's explicit instruction. External
 physical transfer of retained local artifacts remains unclaimed.
+
+## Actual compact Syvert return —2026-11-07
+
+The new36,045,486B return SHA256
+`b00fd57f85ce6d96a6c1fa01e2307abd815088bb8fcb28b1587657ef142b109a`
+was received in two user-uploaded transport parts and reassembled locally.
+[cold-storage.json](cold-storage.json), groupcompact-actual-return, records
+actual paths/bytes/hashes, released source, commands and checks. All280pairs
+and sampled199/238full histories passed; both new native replays passed
+distinct result review. [Return record](compact-return.md) gives provenance.
+
+All essential certificates are retained in the compact return; sampled
+primary/fresh certificates and small accounts/exits are committed. Full
+unsampled histories stay on Syvert under AC's explicit selective-retention
+direction. Neither all-history cold retention nor external durable retrieval
+of the compact return/new replay raw artifacts is claimed. Chat attachment
+and sandbox custody do not establish delivery to the Windows destination.
