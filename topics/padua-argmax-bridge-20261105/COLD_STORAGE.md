@@ -109,3 +109,8 @@ Preserve /workspace/p02 in full, including outputs, shared preserved-sha256/, na
 ## Syvert30 released offline artifact —2026-11-07
 
 Preserve the complete new local-output/argmax-bridge-20261105/syvert30-7cf34bcee4be9bdd5b4a871426083333a89b7c15/ tree and adjacent build stdout/stderr, plus syvert30-controls.json. padua30.zip is25095407B SHA256e51b442ba541ebcf9a94c3571a624692ee385c3178195d2a2ced071bd960d35f; source7cf34bcee4be9bdd5b4a871426083333a89b7c15, exact generating command/limits inLOG. Entire244row runtime manifest52884B SHA25678b40151280ada98ada945ac2e562b9ffa817279ed08b1dba219c78a94fddd55 stays offGit with the whole offlinepackage. Independent checker/inspection is independent-checks-syvert30.md; compact summary/evidence in syvert30-delivery.md and evidence/syvert30/. OriginalZIP unchanged, no numericaltargetoutputs exist here. ApprovedPadua externalcold-storage transfer and durable retrieval remain pending; an ephemeral local file link is not a completed physical transfer.
+
+
+## Lean Syvert30 update —2026-11-07
+
+Retain local-output/argmax-bridge-20261105/syvert30-lean-529ee8be/ whole tree, bothZIPs/checksums and syvert30-lean-build stdout/stderr. FullZIP25094674B SHA25629f707a9256dfe08bf7d2c0051a1f56de457dfe4d99992c90ad74cbfc9c85528;13memberupdate36756B SHA256436331e8f3cb6932f30a90e57c21de8369f86e1f6db8de80ba8d99d97aef8835. Source61cf9ab5d143cea993ce2cde6d88302a6c10b7bc; exactbuild/patchcommands inLOG/toolrecords, independentchecking inindependent-checks-syvert30.md. OldZIPsremainunchanged; userfailedpreflightrecords arepreservedonsyvertbeforeapplyingupdate. Compactsummary inevidence/syvert30/lean-delivery.json andsyvert30-delivery.md. Externalphysicaltransfer/durableretrievalpending.

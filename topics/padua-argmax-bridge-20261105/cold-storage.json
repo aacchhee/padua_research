@@ -71,6 +71,26 @@
         "checker": "independent-checks-syvert30.md actual data inspection",
         "summary": "syvert30-delivery.md; evidence/syvert30/delivery.json",
         "retention": "whole source tree/ZIP/manifest/controls/build logs retained locally; external physical transfer and durable retrieval pending"
+      },
+      "syvert30-lean": {
+        "source_commit": "61cf9ab5d143cea993ce2cde6d88302a6c10b7bc",
+        "artifacts": [
+          {
+            "path": "local-output/argmax-bridge-20261105/syvert30-lean-529ee8be/padua30.zip",
+            "bytes": 25094674,
+            "sha256": "29f707a9256dfe08bf7d2c0051a1f56de457dfe4d99992c90ad74cbfc9c85528"
+          },
+          {
+            "path": "local-output/argmax-bridge-20261105/syvert30-lean-529ee8be/padua30-update.zip",
+            "bytes": 36756,
+            "sha256": "436331e8f3cb6932f30a90e57c21de8369f86e1f6db8de80ba8d99d97aef8835",
+            "changed_members": 13
+          }
+        ],
+        "generating_command": "LOG.md lean source publication/rebuild; changed-member patch from exact old/newZIPs",
+        "checker": "independent-checks-syvert30.md lean focused/byte review",
+        "summary": "syvert30-delivery.md; evidence/syvert30/lean-delivery.json",
+        "retention": "full original/new trees,ZIPs,patch,checksums and build logs retained; external transfer pending"
       }
     },
     "files": [

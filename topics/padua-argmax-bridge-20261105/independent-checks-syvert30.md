@@ -174,3 +174,40 @@ compiler, native or scientific run was performed or requested. Earlier
 controls whose purpose was enforcing the now-removed policies are historical;
 they are not claimed to test the new policy. Actual lean ZIP/patch byte
 inspection follows root's published build in one batch.
+
+## Lean full ZIP and tiny update — FINAL ACCEPT
+
+Published lean source: `61cf9ab5d143cea993ce2cde6d88302a6c10b7bc`.
+Root built once; I independently checked the actual artifacts in one bounded
+stdlib data-only batch, direct exit0 (tool chunkd6f1e4). No candidate import,
+fixture, target job, compiler, native oracle or scientific rerun occurred.
+
+Paths under `local-output/argmax-bridge-20261105/syvert30-lean-529ee8be/`:
+
+| Artifact | Bytes | SHA256 |
+|---|---:|---|
+|padua30-update.zip|36,756|`436331e8f3cb6932f30a90e57c21de8369f86e1f6db8de80ba8d99d97aef8835`|
+|padua30.zip|25,094,674|`29f707a9256dfe08bf7d2c0051a1f56de457dfe4d99992c90ad74cbfc9c85528`|
+|padua30/runtime_manifest.json|52,884|`c8a2ed7e508df8f781668c186ca53bea472c2a7a1c336c03f14f1cdb069273fc`|
+
+The tiny patch contains exactly13 changed files: four changed operations
+at top level and their four source-tree copies, two README copies, plan.json,
+SOURCE_CUSTODY.json and runtime_manifest.json. Its member set equals exactly
+the old/new ZIP difference. **Overlaying its entries on the previously
+accepted old ZIP reproduces every new full-ZIP byte and mode exactly.**
+All251 new full-ZIP names are unique and safe under `padua30/`.
+
+All244 manifest payloads rehash; all35 source paths equal published61cf9ab
+bytes; all21 active candidate pins match529ee8be…; unchanged scientific FREEZE
+and all13 code/data rows match. Source custody names the new source. Profile
+retains30 workers,128000000000B RAM cap and280 cases, with the three removed
+floor/reserve keys absent. No outputs directory exists in the new artifact.
+Unchanged archive entries include all arithmetic packages and scientific
+inputs, already verified in the preceding actual-artifact review.
+
+**ACCEPT delivery of the36,756-byte update for the previously accepted
+Syvert30 package, or the new full ZIP.** Stop previous writers and preserve
+old outputs outside the package before patching, as documented for this
+user-authorized fresh-cohort restart. The reported prior failure was preflight
+only. This delivery acceptance does not claim an additional target test or
+any new mathematical result.

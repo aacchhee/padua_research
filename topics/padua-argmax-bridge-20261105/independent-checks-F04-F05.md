@@ -150,3 +150,128 @@ bound and its four endpoint corrections. It supplies no useful onset,
 five-fourths extension, full I06/D13 estimate, implementation or numerical
 certificate. F04 chronology, novelty/priority and final Claude audit remain
 outside this mathematical verdict. F05 is still awaiting its exact freeze.
+
+## F05 final freeze, resolved finding and reconstruction
+
+Root confirmed the final five-file F05 freeze after author clarification.
+Independent byte counts/hashes match the following; all three theories were
+reread together after root confirmation and hashes rechecked:
+
+| File under this topic | Bytes | SHA-256 |
+| --- | ---: | --- |
+| theory/F05-joint-error-background.md | 8945 | `fd23e025300a2855fcc6223727a6b722254a1b848bbc8457e45289e37c662c60` |
+| theory/F05-joint-error-central.md | 8961 | `6f81cba073a0c4336251927315846b46c36d800b1281861f169908446e32972d` |
+| theory/F05-joint-error-crossover.md | 5335 | `a879e964b911e1847f357faf255f5bada994ec4119c7a17c245b8c847132fa1f` |
+| ideas/F05-joint-error-crossover.md | 10644 | `fc7ab94c71da51e851dbdaf513448c2b828de1d87d4b6b35b84a1fbd71d9678a` |
+| attempts/F05-joint-error-crossover.md | 7775 | `785e5243aa3372bc828e125083d8aa16a22c8b6dca974891c85fb59f986aa487` |
+
+**MINOR, resolved:** central section1 originally wrote the bare cotangent
+reference as an unqualified sum over k, although the actual linked vector
+runs over all n residues and the bare reference is undefined at k=0.
+The author, after root direction, specified k=1,...,n-1 for that reference.
+The actual linked vector keeps every residue. The original8951-byte central
+hash was `dcf7c2542c1c315ddda2eb45d507a9926016736a813869c65385fe0d909f82b6`.
+The changed display and preserved attempt chronology were inspected; this
+correction supplies no artificial cotangent value and changes no bound.
+
+A bounded supplementary reader, `f05_collision_check`, inherited the
+requested audit model/effort (serving metadata unexposed), independently
+checked the first-row masks, linked peaks, harmonic coefficient and stated
+finite constants. It edited no files and ran no scientific computation.
+Its check supplements this auditor's complete reconstruction and verdict.
+The E08 full phase-global error and D16 phase-allowance records were read
+in full; E02(24) and D27's global norm/period adapter were checked at the
+relevant passages. Thus the background norm has its n>=32 support and
+does not borrow C06's n>=10^6 conclusion below that degree floor.
+
+For the background, the exact negative mask is
+`j=r+1,r+3,...,2n-r-1`. Its cotangent reflection gives the displayed T_r
+identity with q=n-r; the mask is empty at r=n. Direct differentiation gives
+`B_r''(0)=-B_r(0)/2+cot(v_r/2)T_r''(0)-T_r'(0)`, which reconstructs
+the full curvature formula including the constant1 in B_n. No transported
+positive peak is inserted into this fixed mask.
+
+The differentiated partial fractions have factors n/(2pi^3) and n/(2pi^2)
+as stated. Missing positive tails, the nearest negative image and the two
+distant image tails give the uniform S3/S2 bounds, including q=0. Splitting
+r at m/2 correctly handles both ends of the cotangent weight. Replacing
+Z3(nu_r) by Z3(1/2)=7zeta(3), then cot by its reciprocal and H_n by L,
+produces A3=28zeta(3)/pi^4 with error below10 after the square contribution.
+The accepted actual-origin allowance yields the coarse E0<10 directly,
+without an origin-sign assertion. The model derivative is
+`b''(0)=-b_c/2+A3+2/pi^2`; the alpha*sin(alpha) term is essential to
+the final2/pi^2. Its cancellation with the actual background leaves
+`-alpha^2 L/pi^2` after the Taylor factor1/2.
+
+The global norm and endpoint polynomial functional justify the uniform
+background Taylor estimate. The reciprocal-series and elementary model
+remainders are within the stated coefficients. In particular
+`H^2 h^2<1/4` follows from pi^2<10 and H/n<5/32, so
+`29alpha^2+1002H^2 alpha^4<600alpha^2<=1350h^2` stays below2000h^2.
+These are all-degree inequalities, not endpoint evaluations or asymptotic
+constants depending on c.
+
+For the first transported row r=n, the original negative mask is empty for
+both parities, so Y_n is exactly its actual negative-part sum. Only this
+row can cross a denominator on the c interval. The two linked peaks remain
+positive. At c=1 the first has actual value `(n-cos h)/2`, including the
+n/2 contribution that would be lost by using the off-grid rational limit.
+Outside the peaks, the coefficient equality is exactly
+`w(sin theta_-+sin theta_+)=sin(alpha)/2`. The two cotangent shift errors
+are bounded by h^2*n/12 and5pi*h*n/4, totaling below14; the harmonic
+replacement costs below3. The stated30 remainder therefore covers both
+parities and every moving sample zero. The corrected reference sum includes
+the even-n zero midpoint harmlessly through its negative-part definition.
+
+The local signed model estimate on x in[0,5/2] keeps E(0)=-p log2.
+Its entropy and positive-root branches give
+`E(hx)/h=L min(x,c)+O(1)` with the explicit uniform50 bound. The small-h
+and large-h estimates cover their common boundary; the positive-root
+integral differs from log(1/X) by at most1/2 even as lambda approaches1.
+This retains the inner negative entropy interval and requires no gap from
+the crossing x=c.
+
+The matched centered-cell functional of min(x,c) gives exactly
+`c(c-1)/2` for c<=1 and `(c-1)(c-2)/2` for c>=1. Subtracting it does
+not evaluate two divergent infinite quantities: every constant tail cell
+has zero matched error. The first two cells and missing half-cell spend
+at most225; convexity of the actual outer E beyond5h/2 bounds the remaining
+derivative variation by4 and its unit midpoint error by1. This proves
+the stated250h^2 signed grid remainder, including c=1/2,1,3/2.
+
+All remaining actual rows have e_s>=2h>alpha, within the accepted outer
+first-coordinate estimate. The first-row replacement adds precisely
+`(2/pi^2)[c-min(1,c)]h^2 L` and less than28h^2. Consequently the central
+coefficient is c(c-1)/pi^2 and its full error is below
+`[28+500/pi^2+2]h^2<100h^2`, safely within200h^2. Neither a signed
+boundary piece nor a first-coordinate cell is omitted.
+
+Adding the background coefficient -c^2/pi^2, central coefficient
+c(c-1)/pi^2 and the exact Rcen<h^2 gives the complete coefficient
+-c/pi^2 with total remainder at most2201h^2<10000h^2. The finite ell_n
+cusp remains explicitly subtracted throughout. Finally nh/c<=2pi<7 gives
+the claimed C70000 corollary from the nonpositive logarithm. This establishes
+uniformity by finite estimates before taking the limit.
+
+**F05 ACCEPT:** all three frozen mathematical statements, including the
+two2000/200 supports, complete10000h^2 remainder, uniform signed coefficient
+and C70000 upper, hold at their stated n>=32, beta=0, closed c in[1/2,3/2]
+scope with both parities and the polynomial collision. The sole MINOR
+finding is resolved; no unresolved mathematical finding remains. The full
+two-dimensional cusp-aware target, subsequent transported rows, useful onset
+constants and all finite-degree/global argmax consequences remain outside
+this verdict. No F04 result is a premise of F05.
+
+## Final scope and verification boundary
+
+**Final mathematical ACCEPT for F04 and F05 at the exact freezes above.**
+No novelty/priority verdict, chronology waiver, final-ID application or
+readiness approval is supplied. Root adoption and final Claude audit remain
+separate. The preliminary pending text above records the actual review order
+and is superseded only by these freeze-specific final verdicts.
+
+Commands used: read-only pwd, rg, cat, sed/tail, git rev-parse, git diff,
+wc and sha256sum, plus administrative runtime/skill reads and owned audit
+prose edits. No developer file edit, scientific execution or Git mutation
+occurred. Accepted predecessors retain their original proof/trust scope;
+their full histories and computer enclosures are not recursively recertified.

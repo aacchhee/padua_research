@@ -10,12 +10,12 @@ Starting accepted theorem: exact parity-correct two-corner argmax for every inte
 | F02 | COMPLETE | Accepted scoped obstruction to unmodified full-band reference uniform loss; requested floor OPEN. |
 | F03 | COMPLETE | Endpoint-complete origin reduction deferred; targets OPEN, no improved lower bound. |
 | F04 | COMPLETE | Accepted uniform entropy-cell remainder with conservative K120000; feasibility only. |
-| F05 | RELEASED PAPER | Complete alpha-axis (beta=0) first inner transported-row crossover, c in[1/2,3/2], n>=32. |
-| F06 | COMPLETE, review pending | Stronger distance-two projected floor proved by developer, all signed phases and orientations. |
-| F07 | RELEASED PAPER | ONE fixed256 five-fourths outer pruning gate, full e0, no scan. |
-| F08 | RELEASED PAPER | Sharper exact entropy-kernel remainder K<=100 on balanced box; exact scope below. |
-| F09 | RELEASED PAPER | Literal full signed outer first-order coefficient and uniform EM2 remainder. |
-| F10 | GATE COMPLETE, release pending | Conditional query domination for a five-fourths pre-query prune. |
+| F05 | COMPLETE | Accepted complete first alpha-axis transport crossover; explicit negative logarithmic coefficient and coarse uniform remainder. |
+| F06 | COMPLETE | Accepted stronger distance-two projected floor, all signed phases/orientations. |
+| F07 | COMPLETE | Accepted closed five-fourths outer pruning from256, gap>9/100. |
+| F08 | COMPLETE | Local entropy coefficients/kernel supports accepted; useful whole-block K100 remains OPEN. |
+| F09 | COMPLETE | Accepted uniform full signed outer first-order expansion, K41000 feasibility. |
+| F10 | COMPLETE | Accepted conditional old-f/GRID query-set domination; no data replay/implementation. |
 
 F01 principal Sol xhigh has completed a full fresh gate for I07. The disjoint I06 helper remains GATE ONLY and may not consume unfrozen I07 work. F01's prospective target is a standalone COMPLETE finite relative allowance on the CLOSED signed rho<=5/4 domain, all integer n>=32 or an explicitly justified stricter floor, with named exact masks, continuous collision values, actual origin normalization and every ordinary/retained/mesh/outer-log charge. Re-prove all domain-dependent guards; the existing E11 model extension alone supplies no finite-error guard. Derive explicit rational coefficient functions rather than assuming the old47/50 constants extend. A separately stated generic E13 outer implication may be reanchored at the same radius; no base degree is selected or evaluated.
 
@@ -84,3 +84,15 @@ Adaptive full gate COMPLETE. PAPER target EVERYn>=32,CLOSEDsignedrho<=1, m=n+1,p
     |T_n−[−(2p/pi)logn+Gamma_T(phi)]/m|<=K(1+logm)/m².
 
 Require explicit finite phase-only Gamma_T from endpoint/Gamma values and explicit degree-independent K. FIRST complete literalTfirst-orderledger: actualtwooffsets/fourholes/six-rowmask; endpoints ofg_s,P_s,B_s includingperiodicpolederivativeatom; finitepositiveGamma-productuniformremainders; fixed-originShift asE02secondorder. Verifycompleteleadinglogcoefficientseparatelyp>=q,p<q,axes,p=q,zero, notfixed-phaseE12inference. ExplicitlyrecheckandproveF04entropyestimateextension0<=rho<1/32,p0/coalescence/exactsample; noassumedquantifiertransfer. Rmesh,retained/ordinaryandactualoriginremainseparate. Stopselectedcertificateifcoefficientdiffers/missingendpoint/excludedpositivefeatureseparation; oversizedboundleavesusefulgoalOPENnotrefuted. WriteLOCALidea+attemptBEFOREalgebra. Paperonly; no scripts/imports/numerics/degreeendpoint/scalar/native/quadrature.
+
+## F10 prospective release — conditional query-set domination
+
+Applicable full gate COMPLETE. PAPER ONLY, conditional on acceptedF07: n>=256 rawclosedboxes,2/5<=a_l+b_l<=1 impliesrho>=5/4by pi>25/8; preserveE15guardbelow256. Compare deterministic producers withIDENTICALdegree,fixedextensionalenclosuretable,thirteenGRIDpremises,Mcoarse,originL,numericpredicates,canonicalizationandsplitrule. RestrictcertificatepreservationtoacceptedOLDcompletedtreewithanalyticf leaves/henceGRID. ProveenlargedVALIDpre-querypruning onlyreplacesoldsubtrees,introducesnonewvisitednumericnode/canonicalquerykey. Separateinclusionsfordiscovery/internal-requestkeysandretained/fresh-verificationkeys. No callorder/CPU/bytes/native-successorunconditionalTREEcaseclaim.
+
+FIRST cheapest PAPER test: exactproducer/normcoupling+rawguardinduction. Kill/deferifchangednorm/Mcoarse,fixedpremisegap,foldedonlyguard,incompletetopology,newneededkey. IDEA320/454commonSdiscardandD19metadata pruningarePRIOR; newquantitativeapplicationonly. FUTUREdata-only511structuralreplayisNOTreleasedhere: rootmustseparatelyfreezeitsSPEC/code/inputhashes. Zero savedkeysisvalid,no retune. No scripts/imports/datareplay/scalar/native/degreeendpoint/quadrature. AuthorMUSTwriteidea+attemptBEFOREANYderivation. LeavealreadydeliveredSyvert30scientificsourceunchanged.
+
+## Campaign completion
+
+AllTENauthorizedrounds F01–F10 are complete and independently mathematically checked. No eleventh analytic round is released. Results:15scoped supporting PROVED statements,2scoped mechanism obstructions,3OPEN target/interface records. Global320/residual273/PD-T099 remain unchanged by these paper rounds. All activity was PAPER ONLY; no scalar/phase/degree/native/quadrature job was a premise. The promising improvement is uniform signed second-order structure; its constants still need quantitative sharpening before a smaller onset follows. F07 supplies a directly useful stronger pruning region; F10 proves conditional query domination without claiming strict saved calls. See campaign-F-summary.md.
+
+AC subsequently directs a NEW compact server-validated Syvertpack after a home-quota failure: physical dedup, all compact receipts and onlytwo random full histories returned; unsampled certificates need not be in cold storage. That authorized technical delivery and later returned-result checking are separate from the exhausted analytic allowance.
