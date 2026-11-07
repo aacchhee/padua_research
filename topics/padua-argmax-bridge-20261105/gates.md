@@ -2,14 +2,9 @@
 
 ## Current campaign checkpoint — 2026-11-06
 
-The actual global theorem covers EVERY integer **n>=384**, with exactly
-the two parity-correct nonnode corners, and finite degrees2–42,63–64,
-159–160,511–512. [E09 proof](theory/E09-assembly384.md),
-[independent paper review](independent-checks-E09-global384.md).
-Residual43–62,65–158,161–383(337degrees) and PD-T099 remain OPEN.
-This is a sufficient onset, not minimal. The new annular comparison uses
-ACTUAL defects; no old primitive rho>=1/2 far-gap transfer is implied.
-Earlier dated current-state notes below are historical. Pack is PAUSED.
+The actual global theorem covers EVERY integer **n>=320**, with exactly the two parity-correct nonnode corners, plus finite degrees2–42,63–64,159–160. [E14 proof](theory/E14-assembly320.md), [full independent review](independent-checks-E14-global320.md). Residual43–62,65–158,161–319 (**273 degrees**) and PD-T099 remain OPEN. The onset is sufficient, not minimal; closed regional gaps retain their exact guards.
+
+All15 extra analytic rounds are complete, PAPER ONLY. The gap remains, so end-only Syvert2 pack preparation is now active. No remote/native pack campaign or runtime projection is inferred. Earlier dated checkpoints below remain historical. Canonical unwaived procedural findings, including E14 P4, stay in their reports; branch WORK.
 
 Original B0–B6 criteria remain unchanged in [handoff01](handoffs/01-work.md).
 The mathematical result does not silently pass unexecuted performance

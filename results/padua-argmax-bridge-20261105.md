@@ -1,30 +1,16 @@
 # Padua argmax bridge — current research results
 
-The exact parity-correct two-corner global argmax is proved for **every integer n>=384**,
-and finite degrees **2–42,63–64,159–160,511–512**. Equality corners are
-{(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n.
-The remaining **337 degrees:43–62,65–158,161–383**, and the
-all-degree target PD-T099, remain OPEN. The analytic onset is sufficient, not minimal.
+The exact parity-correct two-corner global argmax is proved for **every integer n>=320**, plus finite degrees **2–42,63–64,159–160**. Equality corners are {(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n. Exactly **273 degrees:43–62,65–158,161–319**, and all-degree target PD-T099, remain OPEN. The onset is sufficient, not minimal.
 
-A new analytic scalar theorem proves H(x)−H(0)<=−(pi−3)x²/(4pi³) on the full closed principal period, so its unique maximum is at0. It follows from an exact endpoint-cancelled integral and strict f-third-derivative sign, with no new numerical enclosure. [Proof](../topics/padua-argmax-bridge-20261105/theory/E07-f-monotonicity.md), [independent acceptance](../topics/padua-argmax-bridge-20261105/independent-checks-E07-H.md). Together with the complete finite comparison, it supports the accepted384 theorem.
+All **15/15 additional analytic rounds are complete**. [Global320 theorem](../topics/padua-argmax-bridge-20261105/theory/E14-assembly320.md), [full independent acceptance](../topics/padua-argmax-bridge-20261105/independent-checks-E14-global320.md). New radius-one signed error bounds and fresh legal annular defects close the last comparison. All E01–E15 work was PAPER ONLY: no new scalar/source/native/finite-degree jobs. The global comparison retains PD-T271 as an explicit computer-assisted dependency; the scalar H maximum itself has an analytic proof.
 
-An independently accepted paired-root theorem now gives Ec<=kappa*p^(3/2)/sqrt(a)−Bbeta, with Bbeta>=0, on the model's CLOSED rho<=pi/2 domain. It removes both artificial positive entropy charges, retains the exact negative beta baseline and the real fractional alpha cusp. [Pair proof](../topics/padua-argmax-bridge-20261105/theory/E11-central-pair.md), [closed-domain proof](../topics/padua-argmax-bridge-20261105/theory/E11-model-radius-halfpi.md), [independent acceptance](../topics/padua-argmax-bridge-20261105/independent-checks-E11-central-pair.md). Finite-error guards and any lower onset remain separate.
+The [scalar H theorem](../topics/padua-argmax-bridge-20261105/theory/E07-f-monotonicity.md) gives a unique period maximum at0. The [paired-root theorem](../topics/padua-argmax-bridge-20261105/theory/E11-central-pair.md) removes artificial positive entropy charges while retaining the exact negative beta baseline and genuine fractional alpha cusp. Its closed model domain is not a finite-error guard extension.
 
-Two accepted analytic components can support a cheaper finite checker: [both corner squares from256](../topics/padua-argmax-bridge-20261105/theory/E12-corner256.md), with loss1/30, and [far phases from192](../topics/padua-argmax-bridge-20261105/theory/E15-analytic-far192.md), with strict primitive gap3/100 beyondrho=pi/2. A focused source update and fresh validation are still required before they change the runtime; the existing engine is unchanged.
+Accepted cost components: [both closed pi/4 corner squares from256](../topics/padua-argmax-bridge-20261105/theory/E12-corner256.md), loss1/30; [closed far primitive region from192](../topics/padua-argmax-bridge-20261105/theory/E15-analytic-far192.md), gap3/100 at rho>=pi/2. A separate new hybrid checker is being prepared; frozen native/D36 sources remain intact and no new runtime gain has been measured.
 
-[Global384 theorem](../topics/padua-argmax-bridge-20261105/theory/E09-assembly384.md),
-[independent review](../topics/padua-argmax-bridge-20261105/independent-checks-E09-global384.md).
-The entire new proof uses rational PAPER inequalities: no scalar endpoint,
-native evaluation or finite-degree enumeration. It matches phase-aware
-noncorner floors, relative errors, the full global telescope and actual
-corner descent. Near/annular physical noncorners are strict; the complete
-wide-FAR primitive comparison starts at rho=3/4. Both actual-corner
-closedpi/4 squares have loss(A²+B²)/50 from384. Do not transfer the older
-rho>=1/2 primitive-FAR statement to384. PD-T271 remains an explicit
-computer-assisted dependency; final Claude audit remains separate.
-The older [D37 global1024](../topics/padua-argmax-bridge-20261105/theory/D37-assembly-global1024.md)
-and its stronger stated gaps retain their exact scopes. The model-free
-finite1023 result is independently valid within the new analytic range.
+Research has ended with the finite gap, so final Syvert2 pack preparation is now active under AC's end-only instruction. Prospective groups:7 known portability degrees [41,42,63,64,159,160,511], plus the273 unresolved degrees. No archive or remote run exists yet. Source checks and bounded local validation precede the requested INTERIM Claude audit, which must include independent gap-closing ideas and leave branch WORK. Canonical unwaived procedural findings are linked in the topic log.
+
+Older [global1024](../topics/padua-argmax-bridge-20261105/theory/D37-assembly-global1024.md) and [global384](../topics/padua-argmax-bridge-20261105/theory/E09-assembly384.md) proofs retain their exact stronger-gap scopes. Finite511–512/1023 proofs remain independently valid inside the new analytic tail.
 
 The guarded actual-Lebesgue point evaluator independently reproduced all13
 fixed cases,10 finite-polynomial references and6 invalid controls in

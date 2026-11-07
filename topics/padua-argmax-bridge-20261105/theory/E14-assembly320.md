@@ -218,3 +218,8 @@ quadrature/degree/threshold/compile/control/pack/shared/Git job or new
 agent. The full new assembly requires distinct review/root adoption;
 mathematical status and the narrower disclosed local task-order issue
 are separate. Prior unwaived findings/final Claude obligations remain.
+
+
+## Root adoption after final independent mathematical acceptance —2026-11-07
+
+The exact original 11628-byte proof above (b348ec55ee8be86abc9b025be2f9f134bc6d3ba29692c8dee441ea539b3a15e6) is preserved. Root adopts its mathematical scope after the full distinct Astra high report, independent-checks-E14-global320.md, 36528 bytes, SHA256 25529c8a5ad54111a679680d916c4d6ae76ad976edb528c042b06366dc50d3f2. The full global conclusion holds for EVERY integer n>=320, with exactly the two parity-correct actual corner maximizers. PD-T271 remains an explicit inherited dependency; no new numerical job is a premise. This is a sufficient onset, not minimality or all-degree closure. Canonical procedural finding P4 remains unwaived in that report; mathematical adoption supplies no readiness decision.

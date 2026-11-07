@@ -193,3 +193,8 @@ node/equality assembly is in the main dated closure. Full D13/stronger
 mixed-error targets remain OPEN. Old failures and unwaived chronology
 findings remain untouched. This support needs its own distinct review;
 the named wide-operator acceptance alone is not an assembly acceptance.
+
+
+## Root adoption after final independent mathematical acceptance —2026-11-07
+
+The exact original 8402-byte proof above (1ddf2e7cdbf688ae74a3e9ebe2afba133d7bcfc55a1c0e5ce0664680028e363e) is preserved. Root adopts its mathematical scope after the full distinct Astra high report, independent-checks-E14-global320.md, 36528 bytes, SHA256 25529c8a5ad54111a679680d916c4d6ae76ad976edb528c042b06366dc50d3f2. The full global conclusion holds for EVERY integer n>=320, with exactly the two parity-correct actual corner maximizers. PD-T271 remains an explicit inherited dependency; no new numerical job is a premise. This is a sufficient onset, not minimality or all-degree closure. Canonical procedural finding P4 remains unwaived in that report; mathematical adoption supplies no readiness decision.

@@ -1,35 +1,25 @@
 # Padua argmax bridge — WORK post-audit checkpoint, 2026-11-06
 
-The exact parity-correct two-corner global argmax is proved for **EVERY integer n>=384**
-and finite degrees2–42,63–64,159–160,511–512. Exactly337 degrees remain OPEN:
-43–62,65–158,161–383. PD-T099 remains OPEN; the onset is sufficient,
-not minimal. The independently model-free finite1023 proof remains valid.
+The exact parity-correct two-corner global argmax is proved for **EVERY integer n>=320** and finite degrees **2–42,63–64,159–160**. Exactly **273 degrees remain OPEN:43–62,65–158,161–319**. PD-T099 remains OPEN; the analytic onset is sufficient, not minimal. Earlier finite511–512/1023 proofs remain valid inside the analytic range.
 
-A new analytic scalar theorem proves H(x)−H(0)<=−(pi−3)x²/(4pi³) on the full closed principal period, so its unique maximum is at0. It follows from an exact endpoint-cancelled integral and strict f-third-derivative sign, with no new numerical enclosure. [Proof](theory/E07-f-monotonicity.md), [independent acceptance](independent-checks-E07-H.md). Together with the complete finite comparison, it supports the accepted384 theorem.
+All **15/15 additional analytic rounds E01–E15 are complete**. The independently accepted [global320 proof](theory/E14-assembly320.md) combines a new radius-one signed error estimate, exact negative beta baseline, fresh legal annular defects and both actual-corner squares. [Full independent review](independent-checks-E14-global320.md) accepts every closed seam, physical class, parity, equality set and all-real-n transfer. The proof is PAPER ONLY; no new scalar/native/finite-degree computation ran during the extension.
 
-An independently accepted paired-root theorem now gives Ec<=kappa*p^(3/2)/sqrt(a)−Bbeta, with Bbeta>=0, on the model's CLOSED rho<=pi/2 domain. It removes both artificial positive entropy charges, retains the exact negative beta baseline and the real fractional alpha cusp. [Pair proof](theory/E11-central-pair.md), [closed-domain proof](theory/E11-model-radius-halfpi.md), [independent acceptance](independent-checks-E11-central-pair.md). Finite-error guards and any lower onset remain separate.
+The scalar theorem [E07](theory/E07-f-monotonicity.md) proves H(x)−H(0)<=−(pi−3)x²/(4pi³) on the full closed principal period by an endpoint-cancelled integral and a strict third-derivative sign. The [paired-root bound](theory/E11-central-pair.md) removes artificial positive entropy charges and preserves the exact negative beta baseline on the model's [closed rho<=pi/2 domain](theory/E11-model-radius-halfpi.md). Model-domain extension and finite-error guards remain separate. Global comparisons retain the explicit PD-T271 dependency.
 
-Two accepted analytic components can support a cheaper finite checker: [both corner squares from256](theory/E12-corner256.md), with loss1/30, and [far phases from192](theory/E15-analytic-far192.md), with strict primitive gap3/100 beyondrho=pi/2. A focused source update and fresh validation are still required before they change the runtime; the existing engine is unchanged.
+Two accepted analytic components are being integrated into a NEW hybrid finite checker: [both corner squares from256](theory/E12-corner256.md), with radial loss1/30, and [far phases from192](theory/E15-analytic-far192.md), with primitive gap3/100 on CLOSED rho>=pi/2. The frozen D36/native sources stay intact. No new runtime saving is measured yet.
 
-## Current accepted theorem and cost result
+## Current accepted theorem and final delivery
 
-[E09 global384](theory/E09-assembly384.md) and its
-[independent review](independent-checks-E09-global384.md) prove the full
-physical/parity-correct argmax using RATIONAL PAPER inequalities only.
-No scalar/endpoint/native/finite-degree job ran. Phase-aware ACTUAL
-noncorner floors are matched on near and annular charts; the new whole
-wide-FAR primitive comparison starts at rho=3/4. Both actual-corner
-closedpi/4 squares have radial loss1/50 from384. Old D37's stronger1024
-gaps and rho>=1/2 primitive-FAR scope are preserved only at that onset.
-PD-T271 remains explicit; final Claude/upstream coverage audit is separate.
+The complete comparison has strict noncorner gap1/20000 for rho<=1/2, gap3/1000 on [1/2,3/5], primitive gap99/2500 on [3/5,1] and primitive gap13/500 on [1,pi]. Actual-corner squares have radial loss1/30 from256. Every guard is closed, with the original corrected cardinals and actual symbolic corner value. Older stronger gaps retain their original onsets.
+
+Research has ended with a finite gap, so AC's end-only instruction now activates the final **Syvert2 pack**. Preparation is in progress; no archive or remote run is claimed yet. The prospective small portability group is [41,42,63,64,159,160,511] and the large group is exactly the273 unresolved degrees, disjoint total280. Source/reduction/operational checks precede bounded local validation; the pack goes to Claude for an INTERIM audit and independent gap-closing ideas before a remote campaign. Branch remains WORK. Canonical unwaived chronology findings, including P4, remain in their independent reports.
 
 The same n6912/41point witness takes469.521049CPU with the old full pipeline
 and74.034199CPU with the independently executed cheap pipeline, a measured
 6.34fold comparison. Independent matched n2048point costs2.615699→.488831CPU.
 These are finite measurements; geometry, actual-corner branch and build costs
 vary. D38's nine fixed calibration primaries and all independent fresh replays
-are accepted, adding six finite degrees and validating every selected branch. No Syvert2 benchmark or pack exists yet.
-Pack preparation waits until research ends and a gap remains.
+are accepted, adding six finite degrees and validating every selected branch. No Syvert2 benchmark exists. The final pack is now being prepared after research completion.
 
 Earlier D16 onset10000 and subsequent dated checkpoints below retain their
 historical scopes; the current theorem above supersedes their current-state

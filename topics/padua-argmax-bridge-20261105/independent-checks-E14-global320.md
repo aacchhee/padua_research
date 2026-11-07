@@ -400,3 +400,312 @@ ONLY this report. No scientific/source/scalar/native/endpoint/phase/
 degree/pack job or author/shared/Git mutation occurred. Older findings
 remain unwaived; root adoption and final Claude/readiness obligations
 remain separate. This prefix ends with scoped ACCEPT and global HOLD.
+
+## Dated final continuation: complete frozen global320 —2026-11-07
+
+The EXACT first19661 bytes above have been verified, BEFORE appending,
+as SHA2562f390ef7c5f75f16c60bf72444d5b06a22af9b367b8cde7cb5a30d085a46b918.
+They remain untouched. Their then-correct global HOLD is historical;
+this continuation supplies the separately requested final verdict only
+after receiving the new full freeze and accepted wide-operator report.
+Same distinct reviewer and requested Astra high; serving metadata remain
+unexposed. No further scientific or source execution was authorized or
+performed. Root retains adoption, publication and shared-file authority.
+
+**FINAL MATHEMATICAL VERDICT: ACCEPT.** For EVERY integer n>=320,
+the ORIGINAL corrected Padua Lebesgue function has maximum Lambda_c(n),
+attained EXACTLY at {(-1,-1),(1,-1)} for even n and
+{(-1,-1),(-1,1)} for odd n. The new annular support, all-real-n transfer
+and complete physical assembly are proved under their explicit accepted
+premises. No mathematical repair or unresolved mathematical finding is
+identified. This is a sufficient analytic onset, not a minimality claim.
+
+**SEPARATE PROTOCOL VERDICT: new MAJOR finding P4 below remains
+unwaived.** The specifically requested local annular inventory followed
+the first coefficient/radial-sign reasoning. This neither falsifies the
+mathematical proof nor becomes compliant because the proof succeeds.
+No PR/readiness verdict, final Claude acceptance or job release follows.
+
+### F1. Final identities, complete reading and authenticated history
+
+| Final frozen artifact | Bytes | SHA256 |
+|---|---:|---|
+| theory/E14-annular320.md | 8402 | 1ddf2e7cdbf688ae74a3e9ebe2afba133d7bcfc55a1c0e5ce0664680028e363e |
+| theory/E14-assembly320.md | 11628 | b348ec55ee8be86abc9b025be2f9f134bc6d3ba29692c8dee441ea539b3a15e6 |
+| ideas/E14-assembly320.md | 10692 | f03d0f6e3c3ef640378c4a8e85317227663b81ea7c94fe4880e117509c128bbb |
+| attempts/E14-assembly320.md | 6263 | ccd74b69c75bb77d136920826c638463a0d18efd8f4c2061f8900e2ad2cccfd5 |
+| theory/E14-wide-signed-outer.md, original proof prefix | 14318 | c7aeba3d6080f16cc8016e83949f27d6f9de6d36793d9a03cc4c5d171528e8a8 |
+| ideas/E14-wide-signed-outer.md | 7254 | 9fbd51e86d46aa86b2db81b8787598b2b34c4b461dae74a06f20f7ffd4f92c47 |
+| attempts/E14-wide-signed-outer.md | 6505 | d0afce3a944b261566e28912d5fab01c72051e6594950f6f6d2367f953a74502 |
+| independent-checks-E14-wide-signed.md | 19156 | d0c3699f97e34c43725b3276bb5585d4a9ccf477cb56413058bb8fd2ff55a266 |
+
+All new theory, whole idea and whole attempt records, and the ENTIRE
+named wide audit, were read. Initial combined tool displays were capped;
+the full relevant files and final LOG allocation/adoption/chronology
+tail were read in subsequent bounded displays. A capped discovery
+display is not counted as a full-record read. The wide proof's appended
+root adoption was also read; its original14318-byte prefix was checked.
+
+The original main2439, idea6730 and attempt2978-byte prefixes separately
+rehash to d9be2ce4...,2c7cc448... andbbafcd3c... exactly as recorded in
+the first table. The halfnear8865 and outer5565-byte proof prefixes
+rehash to b77c5f66... and17baa09b... respectively. Their current complete
+files contain root's dated scoped-adoption appendices: “unchanged” here
+means the authenticated original mathematical prefixes, not an assertion
+that those appended files retain their old whole-file lengths or hashes.
+No author proof was edited during this review.
+
+The complete earlier gate and accepted dependency reading in section1
+remain the baseline. Rules, complete IDEAS, CURRENT and the declared
+INDEX coverage were reauthenticated at the SAME full hashes recorded
+there. Fresh scoped discovery and source-text refresh covered the actual
+E01/E02 Fn/Fs/Fh/Fw radius/n guards, E02's21/40 band extension and its
+independent review, E04's ordinary/retained interface, D37's separate
+wide Rmesh proof, and E12's exact inward corner coordinates and norm
+transfer. No new external literature or priority claim is introduced.
+This is a quantitative continuation of the same recorded E14-A family;
+E12's old fixed256 recipe failure remains a failure only of that recipe.
+
+### F2. Named wide input and complete finite telescope
+
+The accepted wide report is consumed at its EXACT scope: every integer
+n>=32, entire CLOSED signed rho<=1, literal
+
+    Tout=delta_a Eout+(d/pi)Rlog
+        <=rho[(23/3)L+50]/n+|beta|(17L+27)/n^2.
+
+It supplies no global320 theorem. Its proof uses the actual two offset
+meshes, m-3 samples per side, six fixed omissions and Q_tau[1]=-3/m.
+Opposite constants cancel; the remaining nonnegative increasing max
+profiles have nonpositive quadrature error by valid right rectangles.
+The ordinary midpoint geometry for the other terms is unchanged.
+The widened pole proof retains quotient cancellation initially and the
+full periodic derivative measure, including its negative atom, centrally.
+Both side variations and ALL4h/2h holes give39073/1200<33. Its complete
+wide cancellation, actual paired Shift and scalar log give4751/96<50.
+These are fresh wide guards, not an extension of E09's half-radius47.
+The full audit and proof explicitly preserve zero/root/cusp/collision
+values, endpoint weights, unequal n,m and corrected top coefficient ONE.
+
+The independently accepted D37 wide estimate
+|delta_a Rmesh|<=rho/(2n) remains SEPARATE. I refreshed its exact paired
+remainder identity and rho<=1 endpoint bound; it was not inferred from
+the new T theorem. The assembly does not add the old combined mesh/log
+allowance, which would charge Rlog again. Neither E12's beta-axis T nor
+its fixed-phase asymptotic is an interior premise.
+
+The actual ordinary bound is a*A4+20/n^2+rho(8H+10)/n. The E04 retained
+bound is a*rho*JW+P(11/n+4/n^2), with JW=[(3/2)H+6]/n+148/n^2 and
+P<=rho. Adding these, SEPARATE Rmesh and the wide Tout, then restoring
+a=1-u and the true-origin identity delta E=delta_a E-uE(0), gives
+
+    S-Lambda_c<=Ec-u(T-ebar+A4+rho*JW+j)
+                         +C4+kWx*x+kWy*y,
+    kWx=[(19/2)H+(23/3)L+155/2]/n+152/n^2,
+    kWy=kWx+(17L+27)/n^2.
+
+The constants are6+10+11+50+1/2=155/2 and148+4=152. The harmonic
+coefficient is8+3/2=19/2. All reference, retained, ordinary, cusp and
+log/mesh terms remain. The one-sided origin estimate E(0)>-ebar is
+legal at n>=320 because its own guard is n>=160. It is never used as
+an absolute error or global signed norm. Only AFTER that complete
+collection are the favorable positive A4+rho*JW in the curvature
+dropped. The inherited actual finite cusp is not deleted by doing so.
+
+### F3. Fresh annular radial comparison, all coordinate classes
+
+Using the independently checked SAME320 log table, I reconstruct
+kWx<373019/640000<583/1000 and
+kWy<59808113/102400000<117/200. The first leading numerator is
+372069/2000 before division by320;152/n^2 supplies950/640000.
+The second fraction includes the complete beta inverse-square charge.
+T-ebar+j>2331/200, and its product with11/48 exceeds8/3 by41/9600.
+
+For nonnegative x,y with x+y<=1,
+u=[1-cos x+1-cos y]/2>=11(x^2+y^2)/48 follows directly from
+1-cos t>=t^2/2-t^4/24 and t<=1. E11's completed MODEL bound is
+valid here and gives Ec<=(5/12)x^(3/2)-Bbeta, with Bbeta>=0.
+Dropping this favorable negative term in an UPPER bound is legal.
+No enlarged model domain is used to enlarge a finite-error domain.
+
+The fixed identity (sqrt(x)-1/2)^2>=0 gives sqrt(x)<=x+1/4.
+Thus the alpha curvature is at least8/3-5/12=9/4 and its linear
+coefficient is less than583/1000+5/48<11/16. The beta coefficient
+is less than117/200<47/80. With d1=9/4,d2=8/3,l1=11/16,l2=47/80,
+the exact quadratic maximum over the whole line x+y=r is
+
+    -e*r^2+f*r+g,
+    e=72/59>61/50,
+    f=3029/4720<257/400,
+    g=3/5900.
+
+Enlarging the maximization domain to that line is valid only after
+the pointwise inequalities have been established on x,y>=0; that is
+the actual order here. It includes both axis endpoints and every
+interior/large-coordinate class without a missing BOX/LARGE branch.
+C4+g<141/10000, so the complete primitive upper is strictly below
+
+    P(r)=141/10000+257r/400-61r^2/50.
+
+Its derivative257/400-61r/25 is negative for every r>=1/2.
+Direct rational substitution gives P(1/2)=607/20000 and
+P(3/5)=-99/2500. Consequently ALL signed primitive points with
+3/5<=rho<=1 have gap STRICTLY greater than99/2500. These are
+paper polynomial identities, not sampled phase/degree values.
+
+### F4. New annular floors with their actual guards
+
+Only the closed interval1/2<=rho<=3/5 needs a projected floor.
+E01 supplies min(Fn,Fs,Fw) at n>=64 and actualrho<=r<=pi/4;
+E02's independently proved positive-band extension supplies
+min(Fn,Fs,Fh) through rB=21/40 at the SAME n>=64. That extension
+uses the exact positive margin4811/640000 on its original band,
+including both branches, horizontal fixed baseline, counts and weights.
+It is not a uniform768 floor, nor a transfer of E14's half-near theorem.
+
+At320 the nearest prefactor is158/321. For r<=3/5,
+p_pi+r<4 and1-(4p_pi+3/5)/320=10739/11200>19/20. Therefore
+Fn>(3/25)[(19/20)a_r-r/2]>(9/100)(a_r-r/2).
+The last difference is3a_r/125-3r/200>0. The independent small-angle
+prefactor exceeds11/100. Their common lower at r=3/5 is549/10000,
+well above17/500; each relevant factor remains positive.
+
+For Fh on[1/2,21/40], the SAME exact Ah,Bh fractions previously
+checked are evaluated in their legitimate band domain, using
+Ah>5123/50000 and0<Bh<4447/50000. At rB their direct lower is
+
+    [5123*5959-4447*21*160]/320000000
+        =15586037/320000000>17/500.
+
+For Fw on[21/40,3/5], I rederive the fresh coefficients from E01:
+
+    Aw=2893891/29040000-679/251200-75242/3768000-97/38400,
+    Bw=3977281/58080000-35/25120-15/1256-1/768.
+
+The displayed positive-denominator integer table checks:
+74451<10^6 Aw<74455 and53839<10^6 Bw<53843. Hence
+37/500<Aw<3/40 and0<Bw<27/500. The direct decreasing radial
+lower37/500-27r/500-3r^2/160 is697/20000 at3/5, still strictly
+above17/500. The Aw upper is used only for its negative quadratic
+piece; all substitution directions are correct.
+
+These functions are floors for their exhaustive respective center
+classes, not independently valid floors at every center. Taking their
+minimum proves the applicable projection exceeds17/500. Every
+noncorner odd center has at least one interior-index direction; the
+full defect dominates that direction, or the MAX of two applicable
+directions, never their sum. Actual corners receive no such floor.
+The full physical gap on the closed short annulus is therefore
+greater than17/500-607/20000=73/20000>3/1000.
+
+### F5. All-real-n transfer and complete physical equality proof
+
+At fixed actual phase, T increases and ebar decreases on their
+accepted scalar domains. Thus the weakened annular curvature grows.
+C4,kWx,kWy decrease as positive linear-log/inverse-power functions.
+For the floor formulas, the positive nearest/small factors improve
+with n, while positive A0,Rh,Rw finite losses decrease. Positivity
+holds on the stated actual radius intervals. This proves the SAME
+annular comparisons for every integer n>=320 without assuming
+monotonicity of actual S, moving maximizers or a growing signed norm.
+The previously checked half-near mixed-curvature derivative, E13
+consistent whole-system outer transfer and E12 combined corner
+loss-minus-norm transfer remain the separate appropriate arguments.
+
+The original PD101/364 CLOSED cover has odd centers0<=J<=n,
+0<=K<=m,J+K odd and actual signed rho<=pi. Its identity
+lambda=S-Delta and Delta>=0 holds with the original endpoint weights,
+unequal meshes, corrected top coefficient ONE and full polynomial
+collision values. Separate phase reflections/periods do not swap n,m.
+Every noncorner center has an interior eligible index. The only odd
+centers with both indices endpoints are(n,m), and(0,m) for even n
+or(n,0) for odd n. These are precisely the stated two actual corners.
+
+The closed coverage is exhaustive:
+
+| Actual chart class | Valid exclusion |
+|---|---|
+| Noncorner,0<=rho<=1/2 | Accepted half-near gap>1/20000 |
+| Noncorner,1/2<=rho<=3/5 | New annular gap>3/1000 |
+| Corner chart,0<rho<=3/5 | Accepted inward square radial loss(A^2+B^2)/30 |
+| Every chart,3/5<=rho<=1 | New primitive gap>99/2500 and Delta>=0 |
+| Every chart,1<=rho<=pi | Accepted outer primitive gap>13/500 and Delta>=0 |
+
+The corner theorem's literal coordinates are
+lambda(-cos(A/n),-cos(B/m)), with0<=A,B<=pi/4. At a corner chart
+rho<=3/5 both inward scaled offsets are at most3/5<pi/4, so the
+square hypothesis is satisfied with its actual n,m frequencies.
+The other square is transported by the node-preserving reflection,
+not a mesh interchange. The corner theorem is valid from256 and its
+GLOBAL signed norm uses absolute premises, never the one-sided origin.
+
+Every seam1/2,21/40,3/5,1,pi, axis, clipped edge, chart tie and
+collision lies in a CLOSED valid predicate. Physical nodes have
+lambda=1, while the exact positive origin model constants and legal
+actual-origin lower give Lambda_c>4(log n)^2/pi^2-ebar>1 here.
+This is not a finite lower inferred solely from a limiting constant.
+Only the two actual corner origins survive. Original x-reflection
+for even n or y-reflection for odd n equates their values by permuting
+the cardinals. Continuity and compactness give the maximum; every
+other point has already been strictly excluded. This proves exactly
+the final parity-sensitive argmax statement for ALL integers n>=320.
+
+### P4. MAJOR procedural finding —annular local inventory order
+
+Canonical locations are ideas/E14-assembly320.md, “Dated annular
+continuation” paragraph beginning “Exact narrower local-record order”,
+and attempts/E14-assembly320.md, “Dated annular completion”. Both final
+records explicitly acknowledge that the newly requested local annular
+inventory appendix was written AFTER the first coefficient collection
+and radial coefficient/sign reasoning. The main closure and root's
+review allocation preserve that disclosure. I identify this as a
+MAJOR failure of the explicit narrower task ordering, independently
+of the mathematical verdict.
+
+The scope is precise. The complete initial gate and original E14-A
+family inventory existed earlier. Root's155/2 collection proposal was
+also prospective. Full final wide theory/idea/attempt/audit reads and
+explicit adoption preceded the new annular mathematics. No evidence
+here establishes pre-gate, pre-release or pre-adoption mathematics,
+an unaccepted helper premise, a different degree, a source job or a
+retrospectively invented successful numerical test. The failure is
+the expressly requested NEW local inventory-before-calculation order,
+not all of those stronger allegations.
+
+This differs from D30's accepted chronology for the disjoint wide
+operator support: that review applied the actual workflow registration
+requirement to root's fully recorded exact candidate before checks.
+I do not overturn that named scoped verdict. The final assembly records
+themselves say the more specific local-annulus ordering instruction was
+missed. Prior family/parent registration does not satisfy that additional
+instruction retroactively. Root's permission to complete the written
+proof after disclosure is permission to continue, not a waiver or a
+claim that the earlier order was compliant.
+
+Disposition: preserve the canonical factual sequence and this finding,
+do not backdate/replace the initial records, and keep any later explicit
+procedural disposition for AC separate from mathematical adoption. No
+rerun, proof rewrite or successful bound can repair elapsed chronology.
+P4 remains UNWAIVED; the older E08/E09 MAJOR findings also remain
+unwaived. This report does not grant PR readiness or substitute for the
+separately required final Claude audit.
+
+### Final result and limits
+
+ACCEPT the exact frozen new annular support and COMPLETE global320
+mathematics under the named accepted dependency chain. In particular,
+the full global H/regular-model composition retains its stated PD271
+outward-constant trust premise; the new wide-T theorem alone does not
+erase upstream numerical premises. No new numerical evidence was used.
+E12's scoped256 failure, full D13 and stronger mixed finite-error targets
+keep their existing dispositions. This proof supplies no smaller onset,
+new finite-degree certificate, source change, runtime promise or pack
+authorization. Mathematical acceptance and P4's procedural status are
+separate, and root alone decides adoption/publication.
+
+Actual final-review actions were bounded text/search, byte/hash/prefix
+inspection, collaboration, hand analytic reconstruction and appending
+ONLY this owned report. No script/arithmetic program, source import,
+scalar/phase/root/quadrature/endpoint/degree/threshold/native/build/
+control/pack/remote job, author/shared edit, subagent or Git operation
+occurred. Scientific CPU0; ordinary tool overhead was not measured.
