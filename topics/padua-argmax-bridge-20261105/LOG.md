@@ -2293,3 +2293,34 @@ No repeatmanuscript audit is requested without a material newchange.
 Pending PRdescription approval is unchanged; no rejected update is retried.
 Next handoff20 records the completed requested step and remaining
 publication/readiness work. Outputsfirst, then19done/new20only separately.
+
+## 2026-11-07 — Author details and disclosures from Paper F
+
+AC asks whether actualjournalstyle was used and explicitly authorizes
+reusing authorinfo/disclosures from bttb-research PaperF. Rulesread at
+9e0b06e5ddc09320a3d1ef69f5aee3e8cea5f8ab; main/topic refreshed, base
+remains f70a260e5b5f9a01209dc8a05faabdcf8db1feeb. Task is continuation
+of open publication-preparation20, not new mathematics or a new audit
+campaign. No noveltygate/ID/registry change applies.
+
+Actual source read through GitHubconnector: aacchhee/bttb-research main
+5ed62a8d6be1dd98f462bbd97c8428ea2fcc6f54,
+tracks/exact/paper_F_JSC/main.tex, blob5403bd9e7a27f7544d12995d606863f933217de2.
+ReadREADME/PAPER_MAP only for navigation; no F researchbody copied. This
+specific later userpermission authorizes the selected author/declaration
+reuse despite older general no-private-repo-text-copy limitation. Only
+these requested fields are reused; privateF science is not imported.
+
+Confirmed actual sn-jnl with pdflatex,sn-mathphys-num; CA lists no dedicated
+class. Publisher download403/pinnedv3.1mirror scope is already documented
+in paper/template/README.md. No claim of official-mirror bytecomparison.
+Solmedium developer owns main.tex author/front/backmatter only. Sole
+author/correspondence, ORCID, affiliation/email, funding/conflicts/CRediT
+come from pinnedF. AI disclosure is adapted to actual Padua three-model
+use, including mathematical development; F's pasttense authorchecks are
+not asserted as alreadyperformed on this paper. Padua code/data availability
+retains selective-retention/publicrelease scope and does not copy F's
+claim of a submittedsupplement. No mathematical input/claim/proof changes.
+No new broadSolmaxaudit is necessary for this metadata-only diff; root
+will independently inspect source fidelity/diff and actualcompile.
+Audited46page PDF preserved offGit in paper/audited-46-pages/.
