@@ -1,13 +1,14 @@
-# Usable construction campaign — progress checkpoint
+# Usable construction campaign — completed development batch
 
 2026-11-07; rules/input38227202bc6908d5a5a874950145761a8ca4312f.
 ACauthorized U1/U2up to10rounds each andU3up to20.
 [Campaign](usable-campaign.md), [gate](usable-gate.md).
 No final IDs, ranges, shared-registry changes or merge.
 
-Completed development at this checkpoint: U1two routes, U2one pilot,
-and all four registered U3routes. The revised U2update and conditional
-higher-degree check remain active. Required Claude audit
+Completed development: U1two rounds, U2three rounds and U3four rounds.
+Remaining authorized budgets are8/7/16rounds respectively. All initially
+registered routes now have actual outcomes; this is not a declaration
+that the broader mathematical directions are exhausted. Required Claude audit
 still includes the preserved handoff09 scope; no audit is fabricated.
 
 ## Extra-point reconstruction: a usable known recipe
@@ -50,6 +51,43 @@ projected-gradient/Neumann-guard update is next, using the same known
 pilot assessment and an explicitly still-unseen higher-degree holdout.
 The failed source/receipts and exact diagnosed traces are preserved.
 
+The registered replacement uses separation-capped projected steps, a
+Neumann invertibility safeguard and Armijo backtracking. It passes the
+n6/8pilot and the unchanged previously unseen n10/12degree checks:
+
+| Degree | Npoints | prior localdet refined sample | bounded-update refined sample | extra construction CPU seconds |
+|---|---:|---:|---:|---:|
+|2|10|4.1536|3.1559|1.46|
+|4|35|11.1401|5.5440|1.26|
+|6|84|17.6696|8.2229|3.62|
+|8|165|24.1242|12.2996|10.71|
+|10|286|34.8704|17.2653|26.60|
+|12|455|55.6779|26.0073|60.48|
+
+All runs stop at the registered200accepted-step cap and are explicitly
+not called converged. At degree12 total construction is73.17CPU seconds
+including QR/localdet. Pilot assessment clouds are reused after the
+first rule's failure; only new degree10/12candidate outcomes were reserved
+unseen. Localdet's historical baseline values were already known.
+No assessment values select the returned nodes; the training objective
+selects the best visited set.
+
+[U2 measured record](theory/u2-admissible-norm.md) preserves all function
+and noise regressions: at degree12 the nonsmooth target's Sobol RMS is
+2.15percent worse. Lower sampled amplification does not imply lower
+error for every target. The broad all-degree polylogarithmic question
+remains OPEN, with no certified continuum norm or optimizer optimality.
+
+The actual highest-degree [455-point payload](evidence/u2-degree12-nodes.json)
+is committed losslessly in14853bytes. The separate
+[finite theorem](theory/u2-degree12-unisolvence.md) is computer-assisted
+PROVED for these stored dyadic coordinates alone: exact cube/distinctness
+checks and an independently written standard-library integer checker
+give determinant318086modulo the verified prime1000037. It does not
+promote the quality record to PROVED. Independent byte checks also
+link this payload exactly to the measured degree12output.
+
+
 ## Shifted/folded/mixed construction: exact structure and finite limits
 
 [U3](usable3.md) completes four routes. The cubic example has a sparse
@@ -81,11 +119,32 @@ not independently rerun; no such replay is claimed. There are no remaining
 undecided cases in the stated F/Sfinite universes. Larger classes remain
 OPEN with specific resume conditions, and16U3rounds remain unused.
 
-## Remaining work at this checkpoint
+## Usable outputs, verification and next step
 
-The revised direct optimizer has passed its pilot and is being applied
-unchanged to its registered unseen degrees10/12. Independent U1/U2
-receipts and the finished output are still being integrated. Raw output
-is unique/tmp regeneration-only with identities, not claimed archived.
-Required combined Claude audit remains separate.
+[Using the point sets](usable-recipes.md) gives runnable examples for
+Haar moments, optional same-node OLS and the stored minimum-count example.
+A separate actual check of those public examples used64seeded query
+points: polynomial errors3.55e−15/2.66e−15/1.33e−15 for Haar/OLS/stored455.
+The source-level API check additionally covers vector and multiple RHS
+shapes. No raw temporary data are needed to load the455-point example.
 
+[Independent U1/U2 checks](usable-check12.md) replay all64scientific
+cases (24U1,16first-U2,24bounded-U2), reproduce all optimization traces,
+and add separate basis/SVD, function/noise and exact-node checks.
+The degree12essential determinant uses no NumPy/SciPy or producer code.
+Fresh assessment confirms both gains and mixed approximation outcomes.
+The separate U3scope is described above, with its full-seed-replay limit.
+
+Code/data identities use the single lossless compressed manifest v5;
+all small receipts remain below16KiB. Larger raw arrays, optimizer traces
+and finite catalogues are unique/tmp regeneration-only with byte/hash
+identities; no cold-storage delivery is claimed. Technical serialization
+failures and final frozen-source reruns are canonical in the relevant
+stream/check records. Previous chronology and E4/AC decisions remain
+unchanged in their named records. No new historical novelty claim.
+
+The development batch is complete at U1=2/10,U2=3/10,U3=4/20; unused
+budgets carry forward with explicit resume conditions. Old T7/T8/T9/T10
+counters remain3/25. Required Claude audit04 combines this material
+batch with the preserved handoff09scope. No final IDs/ranges, shared
+registry application, readiness or merge; only AC merges.

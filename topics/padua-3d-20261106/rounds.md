@@ -3,6 +3,23 @@
 A round ends with a pushed LOG entry, not with an internal reasoning pass.
 Budgets are ceilings, not targets. Handoff 01 defines progress and kill rules.
 
+## AC usable campaign — 2026-11-07 completed development batch
+
+| Stream | Completed / ceiling | Actual registered outcomes |
+|---|---:|---|
+|U1|2/10|operational parity construction and same-node OLS comparison|
+|U2|3/10|initial direct-norm pilot/diagnosis; bounded-step pilot; unchanged degree10/12transfer|
+|U3|4/20|sparse structural route; exact folded rank-two universe; both mixed orientations|
+
+Each count is backed by actual result+LOGpublication. The final output
+push advances U2from1to3; technical fixes, payload/API checks, proof
+substeps and independent replays consume no extra rounds.
+Every registered route has an actual scoped result/gate outcome and
+required fallback; no ceiling is a target and no whole-direction
+exhaustion is inferred. Remaining8/7/16rounds persist under
+[the campaign](usable-campaign.md); current outcomes/resumes are in
+[the report](usable-report.md) and three stream records.
+
 ## Active handoff06 restart
 
 Each counter below restarted at zero at AC's instruction. A round is counted

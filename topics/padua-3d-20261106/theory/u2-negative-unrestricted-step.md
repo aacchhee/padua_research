@@ -71,7 +71,9 @@ The first execution also hit the receipt size guard; its sources and
 partial output are preserved. A serialization-only repair followed by a
 whole fresh rerun reproduced the same scientific outcomes. The diagnosis
 receipt records both raw identities and the exact executable command.
-Independent supplementary execution remains separate.
+The [separate supplementary replay](../evidence/uc12-u2-replay.json)
+actually reproduced all16 rows and all4 traces, including these fallbacks.
+That execution supplements the required Claude audit.
 
 ## Scope / open items
 

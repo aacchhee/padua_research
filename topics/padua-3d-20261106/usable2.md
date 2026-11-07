@@ -88,8 +88,10 @@ Aliases: U2-SN; smooth cardinal-row maximum; all-node L-BFGS-B.
 - Discriminability: a fresh assessment cloud and local searches from its
   best points test whether training descent transfers within this finite
   scope. This is not a certified supremum or all-degree statement.
-- Disposition: prospective; no result yet. Canonical measured/negative
-  homes will be written after actual outcomes. No PD-N for abandonment.
+- Initial disposition: prospective; actual R1 disposition is
+  **REJECTED: failed** within the finite extension gate, with the
+  isolated n4 improvement retained. Canonical homes are the measured
+  and negative records linked in R1 below. No PD-N for abandonment.
 
 ## Prospective finite protocol — published before execution
 
@@ -191,6 +193,10 @@ If and only if the pilot gate passes:
 The first execution stopped at the receipt-size guard after13/16
 assessments. Its16689-byte partial output and exact source snapshots are
 preserved and hash-identified in [diagnosis](evidence/u2-diagnosis.json).
+The failed runner's exact original bytes are also retained in
+[u2_failed_size_source.py](code/u2_failed_size_source.py), SHA256
+`64151b0c6647fb3cdfe164f4a60fa9bcac075fb86d8313c65e93bb3e4420c3d1`,
+so its source does not depend on keeping temporary storage.
 Only serialization changed: row arrays with a declared schema and nine
 significant display digits; raw output retains full precision. The whole
 unchanged mathematical pilot was rerun in a fresh directory. This repair
@@ -275,10 +281,15 @@ Aliases: U2-AB; separation-scaled projected gradient; Neumann-safe trial.
 - Discriminability: the new rule is motivated by training-trace collision,
   not by adjusting against assessment values. Changed update acceptance
   and invariant traces distinguish it even if it later fails quality.
-- Disposition: prospective; root publication required before execution.
-  No PD-N is allocated before a measured failure.
+- Initial disposition: prospective; actual R2/R3 results below retain
+  this known variant as a useful finite improvement. No measured failure
+  of its registered quality gates occurred; no new PD-N is created.
 
-## Round 2 prospective protocol — awaiting root publication
+## Round 2 prospective protocol — published before execution
+
+Root published this complete update protocol, including the reused-pilot
+disclosure, separate new driver and conditional n10/12 transfer criterion,
+at `86b9e26920272bcb6a9a55b3eaf2d41bd63d2d58` before dependent work.
 
 Run U2-AB at n=2,4,6,8. If its unchanged five-percent/cost/guard gate
 passes, run round3 n=10,12 unchanged; otherwise stop it with a scoped
@@ -326,11 +337,113 @@ unchanged and explicitly records its update choice. Planned pilot command:
 
 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2_admissible_run.py --degrees 2 4 6 8 --scratch <unique-raw-dir> --output topics/padua-3d-20261106/evidence/u2-admissible.json`
 
+## Round 2 and round 3 — completed admissible pilot and unseen-degree holdout
+
+Actual commands, both with unchanged frozen new modules:
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2_admissible_run.py --degrees 2 4 6 8 --scratch /tmp/padua-u2-admissible-20261107-a1 --output topics/padua-3d-20261106/evidence/u2-admissible.json`
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2_admissible_run.py --degrees 10 12 --scratch /tmp/padua-u2-admissible-holdout-20261107-a1 --output topics/padua-3d-20261106/evidence/u2-admissible-holdout.json`
+
+The pilot gate was actually checked before the holdout execution. The
+unchanged rule then passed both unseen degree requirements. The new
+[summary checker](code/u2_summarize.py) explicitly distinguishes the
+n6/8 pilot gate from the n10/12 transfer gate, which the driver itself
+does not interpret. It reads actual full-precision raw results and every
+trial trace; the [5705-byte receipt](evidence/u2-admissible-gates.json)
+reports both gates true and all geometric, accepted Neumann and Armijo
+checks passing. No assessment-based tuning occurred.
+
+Terminology clarification: “unseen degree holdout” refers to the new
+U2-AB outputs and their quality at n10/12. Historical QR/localdet values
+through16 were already known, and the assessment design was already
+specified. It does not mean every baseline datum or assessment design
+was new at those degrees.
+
+| n | N | localdet fresh refined | U2-AB fresh refined | ratio | extra / total construction CPU seconds |
+|---:|---:|---:|---:|---:|---:|
+|2|10|4.153631|3.155869|0.759786|1.46 / 1.50|
+|4|35|11.140116|5.544014|0.497662|1.26 / 1.41|
+|6|84|17.669650|8.222854|0.465366|3.62 / 4.19|
+|8|165|24.124151|12.299585|0.509845|10.71 / 12.41|
+|10|286|34.870367|17.265295|0.495128|26.60 / 31.01|
+|12|455|55.677884|26.007323|0.467103|60.48 / 73.17|
+
+Every run reaches the registered200 accepted-step cap and reports
+success=false, so this is a bounded algorithm rather than a convergence
+claim. All outputs have the expected N distinct nodes, pass the numerical
+guards and have full dyadic rank modulo1000003. At n12, unscaled/ortho
+conditions fall33.8341/24.9675→11.0750/8.24010; log determinant falls
+1019.588→998.211, again separating norm improvement from determinant
+ascent. Pilot+holdout total CPU including all assessments/calibrations
+is22.5913+113.5608 seconds. Dense per-objective work is O(MN^2+N^3),
+M=21^3, with O(MN+N^2) working storage, plus retained raw trial arrays;
+this is not proposed as a cheap all-degree construction.
+
+Function/noise comparisons remain mixed. At n10 all four frozen
+function RMS values improve on both assessment measures. At n12 the
+absolute-value function's Sobol RMS worsens by2.15%, while the other
+seven measure/function combinations improve. Pilot n2 has worse
+exponential RMS and some worse noise outcomes; n8 absolute-value RMS
+also worsens. The n12 Gauss noise max/RMS fall8.056e-6/1.444e-6 to
+6.203e-6/1.255e-6. All outcomes remain in the two receipts. A sampled
+norm gain does not promise improvement for every function/noise draw.
+
+Concrete representative: [u2-degree12-nodes.json](evidence/u2-degree12-nodes.json)
+contains the actual455-node highest registered degree set, losslessly
+encoded as10920 little-endian binary64 bytes in a14853-byte JSON file.
+It avoids requiring optimizer replay to use that set and was selected
+by degree, not by assessment quality. Coordinates are interpreted as
+exact dyadic rationals; no rounding or node movement is introduced.
+
+Executed export and developer check:
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2_node_payload.py --receipt topics/padua-3d-20261106/evidence/u2-admissible-holdout.json --n 12 --output topics/padua-3d-20261106/evidence/u2-degree12-nodes.json`
+
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2_node_payload.py --check topics/padua-3d-20261106/evidence/u2-degree12-nodes.json`
+
+The developer check reconstructs the payload hash/shape/cube, distinct
+coordinates and rank455 modulo1000003. The independent
+[standard-library-only checker](code/uc12_payload_check.py) actually
+decodes the IEEE754 integer bits, checks455 distinct exact dyadic points
+in the cube and returns determinant residue318086 at freshly checked
+prime1000037. Its [exact receipt](evidence/uc12-u2-payload.json) pins the
+essential payload and checker source. The separately split
+[PD-T?U2-03 finite theorem](theory/u2-degree12-unisolvence.md) supplies
+the written Z[1/2] modular reduction and claims **computer-assisted
+PROVED unisolvence for this one stored455-point degree12 set**.
+All quality and algorithm-wide observations remain **MEASURED** in
+[U2-02](theory/u2-admissible-norm.md).
+The independent [byte-link check](evidence/uc12-u2-payload-link.json)
+also establishes that this essential payload is byte-identical to the
+actual n12 coordinate array used in the measured holdout, with NPY
+header/type/order and all source hashes checked without NumPy.
+
+The [independent U2-AB replay](evidence/uc12-u2-ab-replay.json) actually
+reproduces24/24 scientific rows and6/6 optimization traces, checks all
+trial safeguards with maximum reconstructed rho delta2.31e-14, and
+checks the returned dyadic ranks in an alternate monomial basis.
+The [separate assessment](evidence/uc12-u2-ab-fresh.json) preserves
+finite quality gains and mixed function/noise outcomes. This supplements
+the required Claude audit, without claiming that audit has occurred.
+
 ## Round ledger / Runs needed
 
-R1: one completed fixed pilot; quality gate fails, no n10/12 extension.
-R2: U2-AB protocol only, no execution. R3 conditional unchanged holdout
-only if R2 passes. At most ten rounds are authorized; unused rounds
-remain unused. Root must publish the new update protocol before its
-dependent execution. The separate supplementary checker is rerunning
-R1 from its frozen source and actual node arrays.
+R1 completed: unrestricted U2-SN fails its finite extension gate, with
+n4 isolated gain retained; its n10/12 holdout was not run.
+R2 completed: U2-AB pilot passes at n6/8, with reused assessment disclosed.
+R3 completed: unchanged U2-AB unseen-degree transfer passes at n10/12.
+Three of at most ten rounds used. No additional candidate, tuning or
+degree extension is proposed merely to spend the ceiling.
+
+U2 development and supplementary checks are complete. Required Claude
+audit remains root's separate handoff. The broad target
+of a stable minimal-node polylogarithmic family remains OPEN.
+
+Final executed validation: all six owned JSON receipts parse and remain
+below16KiB; every owned Python source parses and remains below16KiB;
+36 actual source/input pins,117 raw-inventory entries and45 owned local
+links pass. A focused stale-wording search found no remaining pending
+independent-execution claim. R1 source bytes remain unchanged; the exact
+pre-serialization-fix runner is additionally retained as noted above.
+No Git, shared registry, audit or old handoff file was edited by this worker.

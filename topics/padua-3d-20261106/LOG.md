@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: Codex usable-point-set campaign · Open handoff: [handoffs/10-usable-work.md](handoffs/10-usable-work.md)
+- Stage: AUDIT · Next: Claude Opus5.5 xhigh combined material audit · Handoff10 closes after output; successor: [handoffs/11-usable-audit.md](handoffs/11-usable-audit.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -688,3 +688,50 @@ their corresponding runs, with publication and execution timing distinguished.
 - Current counted results U1=2/10,U2=1/10,U3=4/20. Revised U2pilot has
   passed; registered unchanged n10/12holdout and its proof/data artifact
   checks continue before that route is counted. No ceiling is reset.
+
+## 2026-11-07 — completed usable batch — Codex, gpt-6-astra high
+
+- U2R2pilot and unchanged reserved n10/12transfer both pass registered
+  quality/cost/guard criteria. At n12 refined lower sample55.6779to
+  26.0073, extra60.48/total73.17CPU seconds. Allsix runs stop at200steps,
+  not convergence. Sampling/function/noise regressions are retained;
+  pilot clouds are reused and only candidate higher-degree outputs were
+  unseen. Initial failed-rule sources/diagnoses stay immutable.
+- U2counts3/10on this final result+LOGpush, with R1alreadycounted.
+  U1stays2/10,U3stays4/20. Total9actual research rounds; no count for
+  API/packing/format fixes, analytic substeps or supplementary reruns.
+  All registered routes have actual outcomes, with8/7/16unused budgets.
+- Essential degree12payload14853bytes stores every actual coordinate
+  losslessly; exact independent integer-bit cube/distinctness checks and
+  determinant318086at verified prime1000037 establish this455-node
+  dyadic set's finite unisolvence. The actual byte bridge matches the
+  measured .npyarray. No optimization replay/raw retrieval is needed
+  for that theorem. Floating quality/all-degree claims remain separate.
+- Distinct Solxhigh U1/U2checker replays64actual scientific cases and
+  allcandidate traces, plus fresh basis/SVD, function/noise, API,
+  Neumann/geometry and monomial checks. U3checker independently covers
+  all support/count/rational-rank cases, selected witnesses and meshes.
+  No mathematical discrepancy remains within these bounded supplements;
+  full M/Roptimizer schedules inspected, not independently replayed.
+- [Usage guide](usable-recipes.md) includes direct Haar/OLS/stored-set
+  examples. Root actually executed their complete paired API path on
+  64query points, RNG20261107, polynomial2+x−yz: errors3.55e−15,
+  2.66e−15,1.33e−15. Stored payload hashade51c2e459b2d3161eddab564e1ada2233d2f841b5dd64bf808b2e607f7140f.
+  These are usability checks, not extra research rounds or a proof premise.
+- [Final report](usable-report.md), campaign, ledger, results and all
+  candidate dispositions/resumes are synchronized. Source-freeze and
+  serialization/reading limitations stay canonical in stream/check
+  records and previous deviations. Current new gate completed before
+  generation; all protocols/addenda were pushed before dependent runs.
+- Stage AUDIT. Preserve pending handoff09scope and combine it with this
+  new material batch in handoff11 for Claude Opus5.5xhigh. No final IDs,
+  reservations/shared registry application, readiness or merge. E4and
+  earlier AC decisions stay pending. Only AC merges.
+
+- Final integration checks executed: v5single manifest261artifacts,
+  1408182code/data bytes,16259manifest bytes; all31legacycurrentcode
+  pins match. Root directly verified139existing-path identities in new
+  receipts (zero mismatch/missing temporary identity), all owned links,
+  all topic JSON parse/size, protected audit/handoff instruction bodies
+  and whitespace. Supplementary checker separately verified265identities.
+  Main/topic refreshed f70a260/93c605c before final publication.

@@ -107,3 +107,19 @@ set. Both mixed orientations have exact N-node interpolants at every
 tested degree3..8, but all four selectors fail their quality screens.
 These results close the four registered routes, not the broader direction;
 resumption conditions and retained failed/deferred candidates are explicit.
+
+## Current completed development boundary — 2026-11-07
+
+| Stream | Completed rounds | Remaining authorized | Present-scope outcome |
+|---|---:|---:|---|
+|U1|2/10|8|explicit known usable parity recipe and same-node solver tradeoff; all registered routes complete|
+|U2|3/10|7|failed initial update preserved; collision-safe update passes pilot and unchanged unseen10/12; exact essential455-node example|
+|U3|4/20|16|all four structural/folded/mixed routes have exact finite outcomes and separately measured quality failures|
+
+[Final report](usable-report.md) and [usage guide](usable-recipes.md).
+The registered batch completes9actual research rounds, without counting
+serialization fixes, API checks, payload packing, proof substeps or
+independent reruns as rounds. Remaining budgets persist; no broader
+direction is called exhausted. A new mathematical route needs its
+separation/protocol; extending the successful optimizer beyond12 needs
+new prospectively withheld degrees and cost criteria. Audit is next.

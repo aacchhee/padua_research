@@ -67,8 +67,14 @@ residual<=1e-7; every exact dyadic check has rank N modulo1000003.
 Historical QR n4/n8 and localdet n2 reproduce node NPY hashes, mesh41
 and the original refined values exactly. The numerical objective gradient
 check has maximum normalized central-difference error5.838e-10.
-The supplementary checker receives the actual nodes and frozen source;
-its executed result is not presumed here.
+The supplementary checker independently reran all16 scientific rows and
+all4 optimization traces with agreement. Its alternate monomial matrix,
+Python integer elimination and fresh checked prime1000037 give full rank
+on all16 rows (13 distinct node arrays):
+[replay receipt](../evidence/uc12-u2-replay.json). Its separate SVD/fresh
+assessment confirms the n4 gain and the mixed function-error outcome:
+[fresh receipt](../evidence/uc12-u2-fresh.json). This supplements the
+required Claude audit; it does not certify global suprema or archive raw.
 
 ## Sources
 
@@ -121,7 +127,7 @@ interpretation; numerical full rank alone proves no exact claim.
 
 ## Open items
 
-Supplementary independent reconstruction and replay. The first-trial
+Required independent Claude audit. The first-trial
 collision diagnosis motivates a separately preregistered update, U2-AB;
 its future outcomes cannot change U2-SN's recorded failure. Any claim of
 certified global maxima or degree-uniform small norms remains unresolved.

@@ -110,3 +110,15 @@ are not full raw-byte identities. No cold-storage archival delivery is
 claimed for these transient regeneration-only files. Round08 raw identities
 are in the new receipt families and their attempts; those are also
 regenerate-only, not verified cold-storage locators.
+
+## Usable campaign — 2026-11-07
+
+U1/U2/U3raw arrays, full optimizer schedules and finite catalogues remain
+local regeneration-only, with no cold-storage delivery. Every producer
+and supplementary receipt records actual commands, frozen code/input
+hashes and each raw identity; `usable1.md`–`usable3.md` and the two
+`usable-check*.md` reports are the command inventories. This is not an
+assertion that temporary paths will persist. No duplicate bulk catalogue
+is committed. The small essential455-node payload is committed in
+`evidence/u2-degree12-nodes.json`; its exact theorem needs no raw retrieval
+or optimization replay. [Usage](usable-recipes.md), [report](usable-report.md).

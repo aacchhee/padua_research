@@ -179,5 +179,17 @@
     "retention": "regenerate-only; no cold-storage delivery",
     "verification": "observed existing file SHA-256/byte sizes compared with recorded identities; missing optional paths not claimed observed",
     "correction": "2026-11-06 response03: 26 legacy-T9 arrays plus25 T7/T8 raw identities, excluding T10 and node-only T9-r06 hashes. See response-03-hygiene.md and evidence/r08-hygiene-raw-inventory.json for actual stream command/list."
+  },
+  "usable_campaign": {
+    "date": "2026-11-07",
+    "source_input_sha": "38227202bc6908d5a5a874950145761a8ca4312f",
+    "retention": "regenerate-only local raw; no archival delivery or persistent locator",
+    "identity_source": "Full actual raw paths/bytes/SHA256 and code/data identities are in u1/u2/u3 and uc12/uc3 evidence receipts; command inventories in usable1/2/3.md and usable-check12/3.md.",
+    "essential_committed_payload": {
+      "path": "evidence/u2-degree12-nodes.json",
+      "bytes": 14853,
+      "sha256": "ade51c2e459b2d3161eddab564e1ada2233d2f841b5dd64bf808b2e607f7140f"
+    },
+    "check": "Exact payload independently decoded/certified by code/uc12_payload_check.py; other raw regenerated with frozen receipt commands in a fresh directory."
   }
 }
