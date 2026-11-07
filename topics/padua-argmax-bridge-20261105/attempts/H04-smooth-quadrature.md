@@ -44,8 +44,39 @@ code, import, external theorem/PDF, Git or shared-file mutation.
 
 ## Work record
 
-Pending after the prospective registration above. The parent's suggested
-cell-center algebra is an unchecked question, not an accepted premise.
+The parent's suggested cell-center algebra was treated as an unchecked
+question and independently verified after registration. The r sample
+cells have exact union [-t/(2n),t+t/(2n)] and exact center t/2. Their
+endpoint displacement produces the first term in
+
+    inner=n I(t)+(t/2)(B(t)+1/pi)+e_(n,r),
+    |e_(n,r)|<=17t/(16n).
+
+The locally proved bounds |B|<=5,|B'|<=3,|B''|<=5 on [-1/4,5/4]
+and W=t*cot(pi*t/2)<=1,|W'|<=3,|W''|<=5 on [0,1] make this uniform.
+For F=cot(pi*t/2)I(t) and G=W(B+1/pi), the outer removable endpoints
+are F(0)=2/pi^2,F(1)=0,G(0)=4/pi^2,G(1)=0; F''<=36,G''<=50 in
+absolute value. Composite trapezoid estimates give exactly
+
+    4V_n/(nm)=C_B+beta_B/n+R_n, |R_n|<=17/n^2,
+    C_B=4 integral_0^1 cot(pi*t/2)I(t)dt,
+    beta_B=-4/pi^2+2 integral_0^1 G(t)dt.
+
+The exact endpoint charges combine as
+-4/(pi^2*m)-4/(pi^2*n*m)=-4/(pi^2*n); no uncontrolled n versus m
+substitution occurs. The proof covers all n>=2 and both parities.
+
+The optional zero-coefficient subguess fails: elementary cotangent
+inequalities give 0<G(t)<(4/pi^2)(1-t), hence -4/pi^2<beta_B<0.
+This is an analytic strict inequality, not an evaluated fit.
+
+The complete proof is ../theory/H04-smooth-quadrature.md. The support
+target is PROVED in development, with distinct review still separate.
+The harmonic part of F03 (7) and the full corner target remain outside
+this lane. Formulas were sent early to the root, H01/H02/H03 and H06.
+No unsuccessful alternate route or new H round was launched. The
+nonvanishing first coefficient is retained rather than removed by a
+centering assumption. No scientific computation, code or Git action.
 
 ## Runs needed
 

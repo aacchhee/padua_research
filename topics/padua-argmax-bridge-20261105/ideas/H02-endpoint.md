@@ -47,8 +47,17 @@ Aliases: H02; odd-offset endpoint matching; adjacent upper-endpoint layer.
   only for bulk j/n cannot pass the first test. The second test checks
   precisely the unjustified interchange between a fixed-offset
   expansion and the full finite sum.
-- Actual tests and disposition: pending at registration; PAPER ONLY,
-  zero executable/scalar/numerical/native/quadrature jobs.
+- Actual tests: the upper adjacent-gap screen passed analytically with
+  a complete O(log n/n^2) SUMMED remainder for j>=ceil(n/2). A second
+  fixed-index lower endpoint profile and exact rational extraction
+  identify the additional harmonic layer. The ALL-offset uniform
+  residual estimate was not obtained. Full details and the precise
+  unresolved objects are in the owned attempt/theory.
+- Disposition: complete sharp-deformation target OPEN; H02 candidate
+  DEFERRED at the all-offset uniformity test. Retain the PROVED upper
+  adjacent-slice/fixed-index supporting lemma at its exact scope.
+  This is not a refutation of PD-T098 or a new administrative PD-N.
+  PAPER ONLY, zero executable/scalar/numerical/native/quadrature jobs.
 - Canonical record: ../attempts/H02-endpoint.md; a substantive proved
   result, if obtained, will be split into ../theory/H02-endpoint.md.
 - History: 2026-11-07; requested/API Codex Sol ultra, serving metadata

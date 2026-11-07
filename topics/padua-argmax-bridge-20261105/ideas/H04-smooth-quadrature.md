@@ -38,8 +38,14 @@ Aliases: H04; F03 two-pole smooth residual; centered partial-row quadrature.
 - Test discriminability: exact sample algebra determines the endpoint
   displacement; a finite derivative bound and quadrature remainder
   determine uniformity without numerical evidence.
-- Actual results: preregistration only; no proof or computation yet.
-- Disposition: active bounded PAPERONLY support round, root-released H04.
+- Actual results: after preregistration, exact cell algebra and uniform
+  quadrature proved 4V_n/[n(n+1)]=C_B+beta_B/n+R_n with |R_n|<=17/n^2
+  for every n>=2. Explicit endpoint-removed integrals define C_B,beta_B
+  in the theory. Also -4/pi^2<beta_B<0, so the zero-coefficient subguess
+  is disproved. Both parities and every row endpoint are included.
+- Disposition: support target PROVED by written PAPERONLY analysis;
+  distinct review/adoption remains the root's responsibility. No full
+  corner target, harmonic aggregate or exact evaluator is claimed.
 - Canonical records: ../attempts/H04-smooth-quadrature.md and
   ../theory/H04-smooth-quadrature.md if the result is established.
 - History: 2026-11-07; parent-assigned Codex mathematical developer,

@@ -49,8 +49,18 @@ resummation; H01 exact-sum lane.
 - Test discriminability: an algebraic domain/boundary identity either
   displays the omitted partial-row mass exactly or exposes the surviving
   two-index term; numerical agreement is unnecessary and unauthorized.
-- Actual results / disposition: preregistration, before new derivation;
-  target OPEN. Results will be appended in the owned attempt/theory.
+- Actual results / disposition: the attempted exact finite collapse was
+  not obtained; partial-row mass is retained. Uniform digamma reanchoring
+  (H05), singular trapezoid analysis and summable endpoint sequences
+  instead yield a complete candidate harmonic aggregate expansion. Its
+  first correction includes BOTH -a^2*log(m)/m and beta_H/m. Together
+  with H04, the written integral cancellation and actual -1+2/m base
+  yield the requested full target as a candidate proof. Status OPEN,
+  pending distinct review; no accepted theorem upgrade or new PD-N.
+- Test outcome / scope: the exact O(n) collapse prerequisite did not
+  pass; no such evaluator is claimed. The explicitly allowed controlled
+  sharp-boundary alternative was pursued, with degree-uniform remainder
+  O(log(m)/m^2) written in the theory. No finite numerical test occurred.
 - Canonical record: `../theory/H01-exact-sum.md` if a durable result or
   exact reduction is obtained; work history `../attempts/H01-exact-sum.md`.
 - History: 2026-11-07; rules/input

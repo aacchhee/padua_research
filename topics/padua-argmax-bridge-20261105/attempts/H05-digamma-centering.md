@@ -27,4 +27,30 @@ is inferred. No executable scientific computation is authorized or run.
 
 ## Results
 
-Not yet derived at the time of this preregistration.
+At preregistration no result had been derived. Subsequently the exact
+endpoint test PASSED on paper. The harmonic definition gives locally
+`psi''(u)=-2*sum_(k>=0)(u+k)^-3`, bounded in absolute value by
+`u^-2+2u^-3`. The two small-center remainders cost respectively
+`3/(8m^2)` and `22/(27m^2)`; the third separately costs
+`14/(27m^2)`. This gives the initially shared triangle bound 2/m^2.
+
+The two terms centered at s and m have the SAME shift q. Monotonicity
+of psi'' proves that their difference is negative, so the whole epsilon
+is negative and its magnitude is at most `257/(216m^2)<5/(4m^2)`.
+The actual positive tangent weights satisfy
+`sum w_s<2m*H_(m-1)/pi`. The normalized weighted centering error is
+therefore negative and has magnitude at most
+`257*H_(m-1)/(27*pi^2*m^2)<10*H_(m-1)/(pi^2*m^2)`.
+
+The exact first-order aggregate summand simplifies to
+`J_s=r*psi'(r+1/2)+s*sum_(k=s)^(m-1)1/k^2`, hence 0<J_s<3.
+The optional local midpoint defect obeys
+`0<1-r*psi'(r+1/2)<=1/(4r^2)`; it must still be retained/controlled
+under the singular outer weights. None of these estimates is a proof
+of the full corner expansion. Complete developer proof, all endpoints,
+parities and constants: `../theory/H05-digamma-centering.md`.
+
+Early formulas/bounds were sent to root, H01 and H06; H06 separately
+owns its required logarithmic/trapezoid asymptotics. H05 does not supply
+or import an unread general digamma expansion. No scientific executable
+action, extra round, independent audit, Git or shared-state mutation.

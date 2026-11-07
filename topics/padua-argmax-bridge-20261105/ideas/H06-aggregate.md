@@ -44,6 +44,16 @@ Such failure defers this route and does not refute PD-T098.
 
 ## Status and verification
 
-OPEN at registration. PAPERONLY: no jobs, code, native execution,
-literature imports, new rounds or subagents. Independent mathematical
-review remains required before adoption.
+OPEN at registration. The eventual independent derivation is recorded in
+`../theory/H06-aggregate.md` and the attempt. The candidate is
+**equivalent/consolidated into H01**: the same weighted singular
+subtraction emerged there concurrently. H06 supplies an independent
+reconstruction of the coefficient and uniform summed remainder, not a
+separate novelty claim or new result ID. Full-target adoption and required
+distinct audit belong to root.
+
+PAPERONLY throughout: no jobs, code, native execution, literature imports,
+new rounds or subagents. Both endpoint and parity kill tests pass in the
+written proof. The crucial u_r endpoint sequence was retained, and the
+missing logarithmic first correction in H01's initial theorem display was
+reported for correction. No numerical result is claimed.

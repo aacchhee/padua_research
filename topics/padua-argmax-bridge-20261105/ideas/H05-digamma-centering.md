@@ -48,8 +48,17 @@ endpoint-uniform trigamma correction.
 - Test discriminability: the actual second derivative series and shifted
   intervals can establish or disprove index-uniform control on paper;
   fixed-index expansions and finite comparisons cannot do so.
-- Actual test results: prospective registration BEFORE new derivation.
-- Disposition: ACTIVE at registration; main centering claim OPEN.
+- Actual test results: prospective registration preceded all derivation.
+  The endpoint kill test PASSED: the local derivative series gives
+  `D_s=M_s-J_s/(2m)-rho_s`, with
+  `0<rho_s<=257/(216m^2)<5/(4m^2)` for every s,r>=1. The actual
+  normalized weighted error is one-sided and at most
+  `257*H_(m-1)/(27*pi^2*m^2)`. Exact J_s is positive and has a finite
+  reciprocal-square tail form. Written proof is in the theory record;
+  no scientific execution supplied or required.
+- Disposition: RETAINED, registered centering support PROVED by the
+  developer. The full corner target remains OPEN and no independent
+  acceptance, novelty or whole-assembly claim is supplied.
 - Canonical theory: `../theory/H05-digamma-centering.md`; work history
   `../attempts/H05-digamma-centering.md`. No global ID assigned.
 - History: 2026-11-07; rules/input
