@@ -1,0 +1,82 @@
+# Bounded external refresh: sharp Padua asymptotics, 2026-11-07
+
+Author: Codex literature subagent (runtime identifies GPT-6; exact model/effort metadata not exposed). Rules/input head: `f937bf2339ebcd7e81d6992d31b9c169cae9e22e`. Assigned scope: external discovery and source comparison only. No new mathematics, numeric/native job, Git mutation, registry assignment, or shared-log edit. The full mechanism novelty gate does not apply because no mechanism or mathematical candidate is generated. This note supplements, and does not replace or upgrade, the existing source records and [P1 comparison](../padua-literature-20261103/p1-comparison.md).
+
+## Outcome and limits
+
+**LITERATURE; bounded no-match.** No matching published two-dimensional Padua/corner expansion was found in the queries and accessible primary passages below for the requested second coefficient `b=(8/pi^2)(gamma+log(8/pi))`, parity-independent constant `c≈1.8461603104`, correction `-1/(n+1/2)`, or remainder `O(log n/n^2)`. These are search targets supplied by the assignment, not independently re-proved here. This is neither an exhaustive absence claim nor a first-proof claim. A theorem for the global Lebesgue constant and an expansion for its value at a corner must remain distinct unless a cited theorem identifies the maximum.
+
+The useful close matches remain KL2021's global leading term, the older periodic pointwise rhombic results, and one-dimensional asymptotic expansions. Citation discovery was incomplete: official OpenAlex/Semantic Scholar requests failed, publisher access was restricted, and MathSciNet/zbMATH full-text searches were not available. Search ranking, transliteration and formula indexing can miss relevant papers. The separate recent-literature worker owns broader 2022–2026 coverage.
+
+## Primary passages freshly inspected
+
+**KL2021 / existing LIT-379.** [arXiv abstract/version history](https://arxiv.org/abs/2009.07114) freshly lists only v1, 15 September 2020. [v1 PDF](https://arxiv.org/pdf/2009.07114), pp. 1–5 and 11–12, was inspected as extracted text. Theorem 2.1 and its Padua consequence (p. 4) give the global constant `(4/pi^2)log^2 n+O(log n)`; p. 2 identifies `LC_(n,n+1)=Pad_n`, with `n` the total degree. Lemma 3.6, p. 11, equations (3.25)–(3.30), retains `O(log m)` at the squared-log scale; its proof on p. 12 credits Kuznetsova 1977 and 1995. This supports attribution and the published leading coefficient, but does not isolate the requested Padua second logarithmic coefficient or finer constant. Verdict: **IMPLIES PART** for global leading growth; **bounded no matching finer result in these passages**. The p. 1 univariate Chebyshev formula has coefficient `2/pi`, not Padua's squared-log growth. [Existing journal comparison record](../../literature/records/kolomoitsev-lomako-2021.md) reports unchanged Theorem 2.1/Padua error terms in the published AMC article; that journal PDF was not freshly read here.
+
+The [publisher page](https://www.sciencedirect.com/science/article/abs/pii/S0096300321002824) search-returned numerical section compares degree ranges `1<=m<=50` with an empirical function whose correction is `1.2 log(m+1)+1.5`. It is not a proved second-term identification. Direct publisher open returned HTTP 403. Treat this as search-returned journal text only. Fresh direct-URL inspection of the arXiv ending confirms that section 4 is the main-results proofs (pp. 14–15), followed by references (pp. 15–16); its extracted text has no match for `numerical`. Thus that journal numerical section was not verified from v1. The freshly inspected (4.8), p. 15, uses angular `(pi/m,0)` for the lower bound, consistent with the existing P1 warning about a non-corner evaluation.
+
+**Kuznetsova 1995 / existing LIT-482,483.** The [Springer primary record](https://link.springer.com/article/10.1007/BF01056716) was freshly inspected: English pages 259–266, translated from Russian pp. 220–226; abstract concerns rhombic Fourier sums. References explicitly list Pimenova 1979 and Kuznetsova's 1983 Saratov announcement. The body is subscription-only here; the [Russian archive record](https://umj.imath.kiev.ua/index.php/umj/article/view/5406) could not be fetched. Thus the detailed theorem comparison is inherited, explicitly qualified, from the [existing primary-reading record](../../literature/records/kuznetsova-1995.md), not a new body verification: Thm. 1, (1), p. 259 is a periodic discrete-rhombic pointwise formula with `O(log n)`. KL's own freshly inspected citation confirms the imported equations. Verdict: **RELATED, DIFFERENT SETTING**, and no matching sharp Padua expansion found in the accessible material. Do not infer a Padua corner lower bound merely from periodic pointwise formulas.
+
+**Pimenova 1979 / existing LIT-484.** The [Math-Net primary record](https://www.mathnet.ru/eng/dan43113) and its linked [3-page scan](https://www.mathnet.ru/php/getFT.phtml?jrnid=dan&option_lang=eng&paperid=43113&what=fullt) were opened. Fresh coverage: OCR pp. 52–53, Thm. 1 (2) and square-frequency comparison (3). Both display squared-log leading terms with `O(log n)`; they concern periodic trigonometric grids, not Padua interpolation. OCR mangles arguments and coefficients, so the precise transcription remains that of the [existing page-image reading](../../literature/records/pimenova-1979.md); no fresh correction is proposed. Screenshot requests failed with a PDF/content-type resolution error; a subsequent URL open also failed. Verdict: **RELATED, DIFFERENT SETTING**, no sharper matching result in the inspected statements.
+
+**Kolomoitsev–Liflyand, simplex asymptotics.** [arXiv 2004.12236v1 PDF](https://arxiv.org/pdf/2004.12236), pp. 1–2 and reference-list p. 15, freshly inspected. The setting is continuous Fourier partial-sum norms on a dilated simplex in the torus; p. 2 explicitly recalls one-dimensional `4/pi^2 log n+O(1)`. Verdict: **RELATED, DIFFERENT SETTING**. The existing P1 MathSciNet addendum records the published simplex paper as a KL2021 citing paper. This fresh v1 predates KL2021 and does not contain that citation: it cannot independently confirm the published citation link or a complete citing-paper list. No body theorem is transferred.
+
+**One-dimensional false-positive controls.**
+
+- [Frenzen–Wong, Pacific J. Math. 122 (1986), 391–417](https://msp.org/pjm/1986/122-2/pjm-v122-n2-p09-s.pdf): freshly inspected PDF pp. 2–6 (printed 391–395), introduction and setting. Its objects are one-variable Fourier/Jacobi series Lebesgue constants. The Fourier introduction discusses full expansions going back to Gronwall/Watson/Hardy. This does not establish a two-variable Padua expansion. OCR is insufficient for a new precise transcription of its coefficients. Verdict: **RELATED, DIFFERENT SETTING**.
+- [Shakirov 2017 primary Math-Net record](https://www.mathnet.ru/eng/mzm11651), abstract freshly inspected: trigonometric Lagrange interpolation on an even number of nodes. It is one-dimensional context, not a Padua theorem. Full text was not inspected. Verdict: **RELATED, DIFFERENT SETTING (abstract-level)**.
+- [“On Lebesgue Constants”, Axioms 13 (2024), 505](https://www.mdpi.com/2075-1680/13/8/505), and [2015 bounds/expansions article](https://www.sciencedirect.com/science/article/pii/S0096300314009229) were discovery hits for Fourier-series constants. The latter search-returned publisher definition is the one-variable Dirichlet-kernel integral; direct MDPI fetch returned HTTP 429. Neither was accepted as a matching theorem. Full-text gap retained.
+
+## Search ledger
+
+Date throughout: **2026-11-07 UTC**. Engine: discovered `mcp__codex_apps__search_service_web_run`, public `system2_search_query` commands, normally batched up to four queries. The links below encode the exact submitted text for reproducibility; they are query locators, not supporting citations. Only accessible primary material above supports source conclusions. No login, CAPTCHA bypass, author contact, or unpublished-paper upload was attempted.
+
+1. ['2009.07114' Lebesgue](https://www.google.com/search?q=%222009.07114%22%20Lebesgue)
+2. ['Padua' 'Lebesgue' '1.846'](https://www.google.com/search?q=%22Padua%22%20%22Lebesgue%22%20%221.846%22)
+3. ['Kuznetsova' 'Lebesgue' 1995 asymptotic](https://www.google.com/search?q=%22Kuznetsova%22%20%22Lebesgue%22%201995%20asymptotic)
+4. ['Pimenova' '1979' Lebesgue](https://www.google.com/search?q=%22Pimenova%22%20%221979%22%20Lebesgue)
+5. ['Padua' 'Lebesgue' 'asymptotic expansion'](https://www.google.com/search?q=%22Padua%22%20%22Lebesgue%22%20%22asymptotic%20expansion%22)
+6. ['Padua' 'Lebesgue' 'gamma' constant](https://www.google.com/search?q=%22Padua%22%20%22Lebesgue%22%20%22gamma%22%20constant)
+7. ['Lebesgue' '1.8461603104'](https://www.google.com/search?q=%22Lebesgue%22%20%221.8461603104%22)
+8. ['Lissajous' 'Lebesgue' 'second' asymptotic](https://www.google.com/search?q=%22Lissajous%22%20%22Lebesgue%22%20%22second%22%20asymptotic)
+9. ['Padua' '1.846160'](https://www.google.com/search?q=%22Padua%22%20%221.846160%22)
+10. ['Padua' 'gamma' 'log' 'Lebesgue' asymptotic](https://www.google.com/search?q=%22Padua%22%20%22gamma%22%20%22log%22%20%22Lebesgue%22%20asymptotic)
+11. ['Padua' 'Lebesgue' 'second term'](https://www.google.com/search?q=%22Padua%22%20%22Lebesgue%22%20%22second%20term%22)
+12. ['Падуя' 'Лебега' асимптотика](https://www.google.com/search?q=%22%D0%9F%D0%B0%D0%B4%D1%83%D1%8F%22%20%22%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0%22%20%D0%B0%D1%81%D0%B8%D0%BC%D0%BF%D1%82%D0%BE%D1%82%D0%B8%D0%BA%D0%B0)
+13. ['Padua' 'Lebesgue' '8' 'gamma' asymptotics](https://www.google.com/search?q=%22Padua%22%20%22Lebesgue%22%20%228%22%20%22gamma%22%20asymptotics)
+14. ['Padua' 'Lebesgue' 'n+1/2'](https://www.google.com/search?q=%22Padua%22%20%22Lebesgue%22%20%22n%2B1%2F2%22)
+15. ['Asymptotics of the Lebesgue constants for bivariate approximation processes' citations](https://www.google.com/search?q=%22Asymptotics%20of%20the%20Lebesgue%20constants%20for%20bivariate%20approximation%20processes%22%20citations)
+16. ['Kuznetsova' 'Asymptotic behavior of Lebesgue functions' pdf](https://www.google.com/search?q=%22Kuznetsova%22%20%22Asymptotic%20behavior%20of%20Lebesgue%20functions%22%20pdf)
+17. ['Pimenova' 'Lebesgue' asymptotic](https://www.google.com/search?q=%22Pimenova%22%20%22Lebesgue%22%20asymptotic)
+18. ['2009.07114' -'Asymptotics of the Lebesgue constants for bivariate approximation processes'](https://www.google.com/search?q=%222009.07114%22%20-%22Asymptotics%20of%20the%20Lebesgue%20constants%20for%20bivariate%20approximation%20processes%22)
+19. ['Padovan' 'Lebesgue' asymptotic](https://www.google.com/search?q=%22Padovan%22%20%22Lebesgue%22%20asymptotic)
+20. ['Padua' 'Lebesgue' 'parity' constant](https://www.google.com/search?q=%22Padua%22%20%22Lebesgue%22%20%22parity%22%20constant)
+21. ['Padua' 'Lebesgue' 'log' 'second term' asymptotic](https://www.google.com/search?q=%22Padua%22%20%22Lebesgue%22%20%22log%22%20%22second%20term%22%20asymptotic)
+22. ['Lebesgue' 'log' '1.8461603104'](https://www.google.com/search?q=%22Lebesgue%22%20%22log%22%20%221.8461603104%22)
+23. ['Asymptotic formulas for Lebesgue functions corresponding to the family of Lagrange interpolation polynomials'](https://www.google.com/search?q=%22Asymptotic%20formulas%20for%20Lebesgue%20functions%20corresponding%20to%20the%20family%20of%20Lagrange%20interpolation%20polynomials%22)
+24. ['A General Theorem on Lebesgue Constants' 2022](https://www.google.com/search?q=%22A%20General%20Theorem%20on%20Lebesgue%20Constants%22%202022)
+25. ['126192' 'Lebesgue' -'Asymptotics of the Lebesgue constants for bivariate approximation processes' -researchgate -sciencedirect](https://www.google.com/search?q=%22126192%22%20%22Lebesgue%22%20-%22Asymptotics%20of%20the%20Lebesgue%20constants%20for%20bivariate%20approximation%20processes%22%20-researchgate%20-sciencedirect)
+26. ['Padua' 'Lebesgue' '-1' asymptotic](https://www.google.com/search?q=%22Padua%22%20%22Lebesgue%22%20%22-1%22%20asymptotic)
+27. [Lebesgue constants Fourier asymptotic expansion '4' 'gamma' Wong](https://www.google.com/search?q=Lebesgue%20constants%20Fourier%20asymptotic%20expansion%20%224%22%20%22gamma%22%20Wong)
+28. ['Asymptotic expansion' 'Lebesgue constants' Fourier](https://www.google.com/search?q=%22Asymptotic%20expansion%22%20%22Lebesgue%20constants%22%20Fourier)
+29. ['Padua' 'Lebesgue' 'log(n+1)' constant asymptotic](https://www.google.com/search?q=%22Padua%22%20%22Lebesgue%22%20%22log(n%2B1)%22%20constant%20asymptotic)
+30. ['Lissajous-Chebyshev' 'asymptotic expansion'](https://www.google.com/search?q=%22Lissajous-Chebyshev%22%20%22asymptotic%20expansion%22)
+31. ['Kolomoitsev' 'Liflyand' 'Asymptotics' 'simplex'](https://www.google.com/search?q=%22Kolomoitsev%22%20%22Liflyand%22%20%22Asymptotics%22%20%22simplex%22)
+32. ['2009.07114' '2023'](https://www.google.com/search?q=%222009.07114%22%20%222023%22)
+33. ['126192' '2024' Lebesgue](https://www.google.com/search?q=%22126192%22%20%222024%22%20Lebesgue)
+34. ['126192' '2025' Lebesgue](https://www.google.com/search?q=%22126192%22%20%222025%22%20Lebesgue)
+35. ['Кузнецова' 'Асимптотическое поведение функций Лебега' 1995](https://www.google.com/search?q=%22%D0%9A%D1%83%D0%B7%D0%BD%D0%B5%D1%86%D0%BE%D0%B2%D0%B0%22%20%22%D0%90%D1%81%D0%B8%D0%BC%D0%BF%D1%82%D0%BE%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0%22%201995)
+36. ['Пименова' 'Лебега' 1979](https://www.google.com/search?q=%22%D0%9F%D0%B8%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%22%20%22%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0%22%201979)
+37. ['Padua' 'Lebesgue' 'log n/n' asymptotic](https://www.google.com/search?q=%22Padua%22%20%22Lebesgue%22%20%22log%20n%2Fn%22%20asymptotic)
+38. ['Lissajous' 'Lebesgue' 'second-order'](https://www.google.com/search?q=%22Lissajous%22%20%22Lebesgue%22%20%22second-order%22)
+
+Coverage of ledger: queries 1–22 and 26,29–30,37–38 sought exact coefficients, constants, alternative degree conventions and names; returns were familiar Padua papers, unrelated uses of Padovan, or no target match. Queries 3–4,16–17,35–36 sought older primary sources and led to the records above. Queries 15,18,25,31–34 sought citation/author-title expansion; numeric article-number queries also returned unrelated records. Queries 23–24,27–28 found the one-dimensional/general Fourier false positives above. Repeated queries (including the shorter decimal `1.846`) were intentionally used, but duplicate text is listed once. These are returned-hit descriptions, not assertions about all results in an index.
+
+Access failures (2026-11-07): ScienceDirect article direct open 403; UMJ record inaccessible (a guessed subordinate path also failed and supplies no evidence); MDPI 429; Math-Net screenshot content-type failure and later intermittent URL failure; official OpenAlex DOI lookup and filtered lookup inaccessible; Semantic Scholar arXiv redirect and Graph API DOI request inaccessible. API attempts used `https://api.openalex.org/works/https://doi.org/10.1016/j.amc.2021.126192`, `https://api.openalex.org/works?filter=doi:https://doi.org/10.1016/j.amc.2021.126192`, and `https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.amc.2021.126192?fields=title,year,citations.title,citations.year,citations.url`. No citation-count claim is made from those failed calls. Turn-reference clicks were inconsistent; critical KL passages were reopened by direct URL and the returned URL/title were checked. A failed click to a Springer related-item link supplied no content and supports no verdict.
+
+## Bounded wording usable by the orchestrator
+
+“The documented refresh found KL2021's global leading asymptotic and older periodic rhombic pointwise asymptotics, but no matching Padua second logarithmic coefficient or finer expansion in the accessible passages and listed searches. This does not establish exhaustive absence; published-version, citation-index and inaccessible-body gaps remain.”
+
+No source proof was independently audited, and no local theorem status or priority claim is changed by this note.
+
+

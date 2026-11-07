@@ -74,3 +74,20 @@ literature/records/kolomoitsev-lomako-2021.md and
 literature/lattice-unisolvence/records/demarchi-2022.md for actual reading
 coverage. No exhaustive literature/priority claim follows. Final Claude
 audit should assess proof, contribution and presentation before readiness.
+
+## Fresh literature refresh —2026-11-07
+
+[Documented internet search and source comparisons](literature-refresh-20261107.md)
+yielded no matching sharp Padua expansion or exact all-degree cornerproof
+in its declared readscope. This is not certainty of historicalpriority.
+The leadingterm is published; cornerlocation was conjectured/observed;
+older numerical lower-orderfits must be distinguished from exactproof.
+
+An important explicitmethodantecedent is Bialas-Ciez–Kenne–Sommariva–
+Vianello, ETNA60(2024),428–445, DOI10.1553/etna_vol60s428: rigorous
+Chebyshevmesh bounds on Lebesgueconstants, including Padua examples.
+Credit that work; any certifiercontribution must identify its specific
+strictargmax/cancellation/cheap-arithmetic advance beyond generic mesh
+evaluation. Primarysourcecomparison and access/versionlimits are in the
+refreshnote and its independent boundedreview. No publicationready or
+firstproofverdict follows.
