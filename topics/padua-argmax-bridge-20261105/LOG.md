@@ -2051,3 +2051,10 @@ and essentialindex372/30593B remainunchanged/PASS. Next
 [16-audit-with-literature-refresh.md](handoffs/16-audit-with-literature-refresh.md)
 adds the fresh boundedsourcecomparison to the stillpendingClaudeaudit;
 onlyold15status/new16filechange in the followinghandoff-onlycommit.
+
+ACasksforanicematchingvenue. RootcheckedofficialcurrentCA/JATscopes
+and the actualCA2026MPpaper asadjacentprecedent. Editorialrecommendation
+recordedinpaper-positioning.md: CAfirstambitiousspecialisttarget, JAT
+naturalalternative forcombinedtheorems, conditionalonfinalaudit and
+qualifiedprioritycomparison. Not anacceptanceforecast, submission or
+editorcontact. This adviceadds nopriorityor mathematicalclaim.

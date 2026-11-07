@@ -91,3 +91,27 @@ strictargmax/cancellation/cheap-arithmetic advance beyond generic mesh
 evaluation. Primarysourcecomparison and access/versionlimits are in the
 refreshnote and its independent boundedreview. No publicationready or
 firstproofverdict follows.
+
+## Venue discussion —2026-11-07
+
+Editorial recommendation, conditional on finalproofaudit/qualifiedpriority
+comparison: aim first at **Constructive Approximation**, with **Journal
+of Approximation Theory** as the natural alternative for the combined
+sharpasymptotic/exactargmaxpaper. These are fit judgments, not acceptance
+predictions. Keep the two mathematical contributions central and put
+reproducible finitecompletion in a compact dedicatedsection/supplement.
+
+Primarypages checked on2026-11-07:
+
+- [Constructive Approximation aims/scope](https://link.springer.com/journal/365/aims-and-scope)
+  explicitly covers approximations/expansions and related computation/
+  numericalanalysis. The adjacent [MPconstantpaper](https://doi.org/10.1007/s00365-025-09710-x),
+  online2025/issue2026, is a concrete same-topicvenueprecedent, not
+  evidence that the Padua theorem has been published.
+- [Elsevier's official JATdescription](https://shop.elsevier.com/journals/journal-of-approximation-theory/0021-9045)
+  includes interpolation, multivariateapproximation andorthogonal
+  polynomials, making it a directaudiencefit. Its ScienceDirectscope
+  endpoint returned403; the officialpublishershopdescription wasread.
+
+No submission, editorcontact, acceptance-rate claim, timing estimate or
+fee commitment was made. Bibliometric rankings were not the basis.
