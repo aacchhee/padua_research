@@ -1,6 +1,6 @@
 # Handoff 26 — Separate explanatory companion
 
-- Status: open
+- Status: done in 1036619b8df6041dac37793f20067f73d767ea50
 - Previous handoff: 25-expanded-certificate-publication-preparation.md
 - Next agent / model / effort: Codex coordinator; Sol high section developers; distinct Sol max mathematical/accessibility review per AC's preference
 - Role: developer / orchestrator
