@@ -14,6 +14,8 @@ The complete comparison has strict noncorner gap1/20000 for rho<=1/2, gap3/1000 
 
 Research has ended with a finite gap, and the final **Syvert2 pack is prepared and independently inspected**:25,104,521-byte offline ZIP, source498f4f4c..., exact7known+273open worklist. [Artifact identity, checks and limits](syvert2-delivery.md). Source,67 recorded synthetic control events, four genuine saved-proof data checks and the actual239-entry archive are accepted at their scopes. Prior operational failures are preserved. No numerical pack case or remote run has occurred. Next is the requested INTERIM Claude audit with independent gap-closing ideas; branch WORK. Canonical unwaived research chronology findings remain separate.
 
+INTERIM Claude audit-02 (2026-11-07): [audit-02-interim.md](audit-02-interim.md) found no BLOCKING/MAJOR mathematical finding in the n>=320 theorem or the hybrid checker, four MAJOR pack findings (PA1–PA4) to resolve before any Syvert2 release, and twelve MINOR record findings; the actual ZIP was not available to inspect. Claude's own ranked ideas are in [audit-02-ideas.md](audit-02-ideas.md). P1–P4 stay unwaived. Branch WORK; Codex implements next.
+
 The same n6912/41point witness takes469.521049CPU with the old full pipeline
 and74.034199CPU with the independently executed cheap pipeline, a measured
 6.34fold comparison. Independent matched n2048point costs2.615699→.488831CPU.

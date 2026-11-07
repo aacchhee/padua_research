@@ -1,0 +1,9 @@
+{
+ "S0 current recipes": 320,
+ "S1 ideal radial optimisation only": 312,
+ "S2 S1 + floors x2": 307,
+ "S3 S2 + outer seam 1.25 (rel-wide ext c=1.25)": 254,
+ "S4 S3 with floors x4": 248,
+ "S5 recipes, all finite-error charges x0.5": 195,
+ "S6 recipes, errors x0.25, floors x2": 120
+}
