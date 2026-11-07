@@ -1,10 +1,10 @@
 # Bridge gates — coordinator record
 
-## Current campaign checkpoint — 2026-11-06
+## Current campaign checkpoint — 2026-11-07
 
 The actual global theorem covers EVERY integer **n>=320**, with exactly the two parity-correct nonnode corners, plus finite degrees2–42,63–64,159–160. [E14 proof](theory/E14-assembly320.md), [full independent review](independent-checks-E14-global320.md). Residual43–62,65–158,161–319 (**273 degrees**) and PD-T099 remain OPEN. The onset is sufficient, not minimal; closed regional gaps retain their exact guards.
 
-All15 extra analytic rounds are complete, PAPER ONLY. The gap remains, so end-only Syvert2 pack preparation is now active. No remote/native pack campaign or runtime projection is inferred. Earlier dated checkpoints below remain historical. Canonical unwaived procedural findings, including E14 P4, stay in their reports; branch WORK.
+All15 extra analytic rounds are complete, PAPER ONLY. The gap remains, so the end-only [Syvert2 pack](syvert2-delivery.md) is now prepared and independently inspected; interim Claude audit is next. No remote/native pack campaign or runtime projection is inferred. Earlier dated checkpoints below remain historical. Canonical unwaived procedural findings, including E14 P4, stay in their reports; branch WORK.
 
 Original B0–B6 criteria remain unchanged in [handoff01](handoffs/01-work.md).
 The mathematical result does not silently pass unexecuted performance
@@ -15,8 +15,8 @@ gates or establish a practical meet-in-the-middle compute projection.
 | B0 | PASS | Frozen fresh exact replays remain accepted |
 | B1 | FINITE MAP COMPLETE; CONTINUOUS EXTREMA NOT COMPUTED | Historical seven-degree measurements remain scoped; new analytic phase inequalities are separate proofs |
 | B2 | ORIGINAL FINITE FLOAT PASS; OUTWARD KNOWN-CASE VALIDATED | Complete immutable n32 checker46.08976645totalCPU including45.228637subprocessCPU; old-v3139.405409subprocessCPU (~3.08x), one known case; no higher-degree box-count scaling theorem |
-| B3 | ANALYTIC GLOBAL OBJECTIVE CLOSED FROM500000 | Fixed near/full-phase models plus exact defect/corner comparisons prove actual global tail; original B1 half-margin comparison is not separately recomputed or relabeled |
-| B4 | RESOURCE PROJECTION OPEN | Explicit n1=500000 now exists, but whole-certifier throughput across41–499999 is unproved/unmeasured; no Syvert pack justified by point timings |
+| B3 | ANALYTIC GLOBAL OBJECTIVE CLOSED FROM320 | Accepted E14 complete closed physical/parity argmax theorem; sufficient onset, explicit dependencies; original B1 sampling comparison not relabeled |
+| B4 | PACK PREPARED; FULL CAMPAIGN UNEXECUTED | Exact273 residual plus7known; known41/511 implementation/replay accepted,67,200CPU engine-envelope ceiling excludes operations and predicts no success/runtime; host compatibility/capacity and full scientific result review remain |
 | B5 | UNRESTRICTED EQUIVALENCE; CLASS-ONLY OBSTRUCTION | N4 specified classes remain stopped, broad route deferred; no unrestricted counterexample |
 | B6 | NO CONFIRMED COUNTEREXAMPLE | Insufficient predicates or capped runs are not counterexamples |
 

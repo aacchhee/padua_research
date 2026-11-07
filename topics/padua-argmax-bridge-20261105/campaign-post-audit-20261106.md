@@ -6,7 +6,7 @@ counts scientific rounds rather than individual lemmas or concurrent jobs,
 and does not stop at a small checkpoint while productive authorized work remains.
 Authority, source/rule identity and resource observations are in LOG.
 
-Completed: **36/40** (D01–D35 and D37). Active: **D36** generic source audit; D38 calibration and D39 final freeze remain before contingent end-only packing.
+Current: original D01–D39 research complete; additional E01–E15 analytic extension complete15/15. D40 final Syvert2 artifact is PREPARED for the requested interim Claude audit. Earlier current-state paragraphs below are historical checkpoints; no numerical pack/remote run has occurred.
 
 | Round | State | Primary target | Prospective gate / actual outcome |
 |---|---|---|---|
@@ -101,7 +101,7 @@ Current:37/40complete(D01–D37),D38active. Finite2–41,512,1023 andanalyticEVE
 
 Current:38/40complete(D01–D38),D39freezeactive. Exactremaining974degrees43–62,65–158,161–510,513–1022OPEN. Analyticonset1024unchanged, finite1023proved. No packprepared.
 
-| D40 | PAUSED | Final auditable Syvert2 pack | Began afterD39 freeze, then AC authorized15moreanalyticrounds; source/reference drafts preserved, no builder/tests/native/remote execution; reassess only after extension ends. |
+| D40 | PREPARED | Final auditable Syvert2 pack | End-only25.1MB artifact for exact7known+273open, source/controls/genuine-data/actualZIP checks accepted; requestedINTERIMClaudeaudit next, branchWORK; no remote/numericalpackrun. |
 
 Current39/40researchroundscomplete; D40operationaldeliveryactive. Gapstill974; noall-degreeclaim.
 
@@ -160,3 +160,8 @@ CurrentNEW14/15COMPLETE(E01–E13,E15); E14same320annulus/completeassemblyactive
 NEW E01–E15 COMPLETE15/15. Root adopts E14 full global theorem for EVERY integer n>=320 after final independent report25529c8a (36528B). Residual273:43–62,65–158,161–319. All extension work PAPER ONLY, scientific CPU0. Explicit PD-T271 dependency persists in the model/global comparisons. Canonical P4 and prior procedural findings remain unwaived; no readiness implied. No16th research round is allocated.
 
 The finite gap remains at the END of authorized research; therefore AC's earlier conditional instruction now resumes D40 operational delivery, a final Syvert2 pack matching the actual A/B/C structure. Prospective groups are7 known portability degrees [41,42,63,64,159,160,511] and the exact273-degree residual, disjoint total280; these supersede the old983-case plan. New focused hybrid implementation can use accepted corner256/far192 supports after source/reduction checks. Frozen D36/native sources remain unchanged. No new scientific jobs, archive or remote execution yet; source/freeze/review and bounded explicit validation precede the requested interim Claude pack audit.
+
+
+### Final concrete delivery checkpoint —2026-11-07
+
+All E01–E15 COMPLETE; accepted global320/residual273 unchanged. D40 pack is PREPARED at source498f4f4c896d9b4a3ac1b5603b27e5fa21b58aeb, ZIP25,104,521B SHA8274249ffd5fbefc4723e360c68c51d6349a3729c8c577e902ed89ee5921e38b. Full source, known-case primary/fresh,67control-events,fourgenuine-data-passes and actual239entry archive checks accepted within scopes. Both failed operational first runs remain preserved. See syvert2-delivery.md. No new research round/native residualcase/remote run. INTERIMClaudeaudit must bring OWN gap-closing ideas and leaveWORK; Codeximplements.

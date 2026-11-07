@@ -12,14 +12,14 @@ Two accepted analytic components are now integrated into a NEW hybrid finite che
 
 The complete comparison has strict noncorner gap1/20000 for rho<=1/2, gap3/1000 on [1/2,3/5], primitive gap99/2500 on [3/5,1] and primitive gap13/500 on [1,pi]. Actual-corner squares have radial loss1/30 from256. Every guard is closed, with the original corrected cardinals and actual symbolic corner value. Older stronger gaps retain their original onsets.
 
-Research has ended with a finite gap, so AC's end-only instruction now activates the final **Syvert2 pack**. Preparation is in progress; no archive or remote run is claimed yet. The prospective small portability group is [41,42,63,64,159,160,511] and the large group is exactly the273 unresolved degrees, disjoint total280. Source/reduction/operational checks precede bounded local validation; the pack goes to Claude for an INTERIM audit and independent gap-closing ideas before a remote campaign. Branch remains WORK. Canonical unwaived chronology findings, including P4, remain in their independent reports.
+Research has ended with a finite gap, and the final **Syvert2 pack is prepared and independently inspected**:25,104,521-byte offline ZIP, source498f4f4c..., exact7known+273open worklist. [Artifact identity, checks and limits](syvert2-delivery.md). Source,67 recorded synthetic control events, four genuine saved-proof data checks and the actual239-entry archive are accepted at their scopes. Prior operational failures are preserved. No numerical pack case or remote run has occurred. Next is the requested INTERIM Claude audit with independent gap-closing ideas; branch WORK. Canonical unwaived research chronology findings remain separate.
 
 The same n6912/41point witness takes469.521049CPU with the old full pipeline
 and74.034199CPU with the independently executed cheap pipeline, a measured
 6.34fold comparison. Independent matched n2048point costs2.615699→.488831CPU.
 These are finite measurements; geometry, actual-corner branch and build costs
 vary. D38's nine fixed calibration primaries and all independent fresh replays
-are accepted, adding six finite degrees and validating every selected branch. No Syvert2 benchmark exists. The final pack is now being prepared after research completion.
+are accepted, adding six finite degrees and validating every selected branch. No Syvert2 benchmark exists. The final pack is prepared for the requested interim audit.
 
 Earlier D16 onset10000 and subsequent dated checkpoints below retain their
 historical scopes; the current theorem above supersedes their current-state

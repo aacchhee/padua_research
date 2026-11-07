@@ -870,3 +870,76 @@ builder-only diff does not change the completed 03/genuine checks' imported
 code or scientific source; they were not rerun. Actual ZIP verification remains
 pending the separately registered root build. No source import, builder,
 library experiment or numerical execution occurred in this focused review.
+
+## Actual final archive — independent read-only artifact acceptance
+
+**ACCEPTED as the reviewed offline source/arithmetic delivery artifact.** This
+does not authorize numerical or remote launch or establish scientific readiness.
+Root built once under published release
+`ff9f919b1354dce879136f65ee482abf2742caab`, selecting source
+`498f4f4c896d9b4a3ac1b5603b27e5fa21b58aeb`; session `81338`, initial chunk
+`7e7549`, completion `6c9d86`, directly observed EXIT0. Builder CPU/exact wall
+were not separately collected; no performance claim is inferred from guards.
+Root's builder observation SHA256 is
+`b6ae50b96ed053b40ebbe1990e15d08f27a13aa5a0d68e8437488c80deb94358`.
+
+Actual artifact, outside Git:
+`local-output/argmax-bridge-20261105/final-syvert2-498f4f4c896d9b4a3ac1b5603b27e5fa21b58aeb.zip`.
+Size **25,104,521 bytes**; SHA256
+`8274249ffd5fbefc4723e360c68c51d6349a3729c8c577e902ed89ee5921e38b`.
+Unpacked sibling payload is 49,731,698 bytes; tree plus ZIP is 74,836,219 bytes,
+below the prospectively declared 2 GiB staging reservation (not a hard quota).
+
+Reviewer executed only read-only standard-library ZIP/JSON/AST/hash inspection,
+`git show` blob reads and `sha256sum`; no packaged source import, builder rerun,
+archive extraction, compiler, native oracle or target process. The inspection
+commands completed EXIT0 (tool chunks `a61ec7`, `5b23c6`). Findings:
+
+- **239 unique, safe regular ZIP entries**, all beneath the expected single
+  fresh root, no absolute/traversal/directory entries or duplicate names.
+  Every ZIP payload equals the corresponding unpacked-tree file, with exactly
+  matching file sets and no tree symlinks. No `.git` or campaign outputs occur.
+- All **232 runtime-manifest entries** match actual byte sizes/SHA256 values.
+  Manifest is 50,509 bytes, SHA256
+  `33c9b490b65e79d22f08ddfdca7643383bdabb00d3bd31a66793a17fa9e142dd`.
+  Source custody is 1,655 bytes, SHA256
+  `e4d18c9f444f381f1e5d5d4ce7fbc9d05b816f5c5923b252e61ed342f932f358`.
+- All **29 authenticated source paths** equal their Git blobs at the explicit
+  selected source commit, including each root operational alias. All **13
+  frozen scientific code/data rows** have the required source-path membership,
+  size and SHA256. No current working-tree assertion substitutes for that
+  selected-commit comparison.
+- The **six included Debian archives** exactly match the filenames and SHA256
+  pins read as AST data from the authenticated `assets.py`; all declared
+  arithmetic asset provenance hashes match the ZIP bytes. No package source
+  was imported or executed during this inspection.
+- Active loader directory contains exactly nine FLINT/GMP/MPFR library names
+  and aliases, including `libflint.so.19`, `libgmp.so.10`, `libmpfr.so.6`.
+  Required FLINT/GMP/MPFR headers are present. Producer `libm.so.6`, `libc.so.6`
+  and `ld-linux-x86-64.so.2` are the three separately hashed custody objects,
+  outside the runtime manifest and active library directory. The FOPS-10
+  producer-glibc injection path is absent from the actual artifact.
+- Exactly the five root commands have executable mode 0755; all other ZIP
+  entries have mode 0644. The five commands have LF Bash headers, no CR bytes,
+  and the reviewed isolated Python flags. Prose and producer custody identities
+  match their separate records; every additional ZIP entry is accounted for by
+  those custody records plus the manifest/custody documents themselves.
+- `plan.json` hash matches its manifest pin. Small degrees are exactly
+  `[41,42,63,64,159,160,511]`; large is exactly `43..62,65..158,161..319` (273),
+  disjoint union 280. Each plan retains produce/fresh-verify passes, syvert2,
+  40-worker ceiling, 2 GiB worker, 8 GiB supervisor soft address space and
+  120-CPU engine envelope. These are declared policies, not execution results.
+
+No concrete artifact blocker remains within this review. The artifact and full
+local evidence are presently in Padua off-Git working storage; external cold
+storage transfer/retention and retrieval remain to be completed and recorded.
+An artifact hash is not evidence that external retention already occurred.
+
+The branch remains WORK with P1–P4 unwaived. Required separate INTERIM Claude
+audit and its scoped recommendations remain pending; this technical review is
+not that handoff. Syvert2 OS/glibc/compiler/loader, actual inherited allocation,
+scratch/archive capacity and execution remain unverified; GMP requires
+glibc>=2.38 and that lower bound alone is not universal compatibility. No
+residual-degree campaign or remote/native job has been run by packaging or
+this archive inspection. Later complete raw-return preservation, data checks
+and distinct scientific result review remain necessary before degree adoption.
