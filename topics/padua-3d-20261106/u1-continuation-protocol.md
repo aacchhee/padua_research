@@ -99,5 +99,66 @@ selection; calibrated Chebyshev sensor-field example.
 
 ## Round ledger and runs needed
 
-U1 continuation round1 (global U1 round3) is preregistered above, unrun.
-No outcome or counter increment is implied by protocol publication.
+U1 continuation round1 (global U1 round3) executed after publication in
+cb014092e71d16b77c7c2651363440d7b078eab6. Its practical gate passed;
+all38designs eligible, all12x7decisions agree between the two clouds.
+Root's pushed output checkpoint, not this prose, controls the counter.
+
+
+## IDEA?padua-3d-20261106-U1c-02 — re-fit GLS after feasible replication
+
+Prospective continuation round2/global U1round4, drafted only after round1's
+positive degree/noise decision. No round2 execution is implied here.
+
+- Aliases/question: noise-aware refitting; GLS of replicate averages;
+  does applying the known correct covariance model improve the already
+  calibrated degree/noise decision enough to justify a different map?
+- Mechanism/hypotheses: same B637, nodes, measure, twelve targets, seven
+  noise scales and equal iid single-observation variance. For each of the
+  24Haar/OLS degree1..12cases, freeze its exact stage1 integer allocation
+  r_j; fit weighted QR on sqrt(r_j)V, giving
+  C_star=(V^T R V)^−1 V^T R. This is known GLS, not new design theory.
+  Reusing both allocation schedules retains possible duplicates honestly.
+- Closest full records/gate: same known-route gate and U1c01, plus the
+  existing right-inverse covariance proof. The change is refitting after
+  unequal replication, which U1c01 explicitly excluded. For a square
+  interpolant refitting cannot change the map; all14QR/stored controls
+  remain. No new physical node or untested asymptotic claim.
+- Cheapest decisive test before quality: verify all24reproduction
+  residuals<=1e−9 and weighted covariance identities. Put S=diag(1/r),
+  D=C−C_star. Reproduction gives DV=0 and S C_star^T=V(V^T R V)^−1,
+  hence C S C^T−C_star S C_star^T=D S D^T. Check its infinity residual
+  <=1e−9 and risk_star<=risk_old+1e−10; invalid cases retained without
+  quality/repair. This is the elementary existing BLUE argument in its
+  stated covariance; no new substantive theorem/priority claim is proposed.
+- Assessment: freeze all24maps before evaluating. Evaluate every original
+  38map plus every eligible refit (62total) on two fresh32768-point Sobol
+  angle clouds with seeds2026110713/2026110714. All source arrays and the
+  first-round receipt are hash-pinned. Stage1clouds are not used for
+  assessment or fitting; all targets/regressions remain in the pinned raw
+  output, with compact receipt coverage described below.
+- Practical gate/kill: compare the best total-MSE choice among the24refits
+  plus38originals against the strongest old38at each sigma. Require at
+  least5percent total-MSE gain for the primary boundary layer or secondary
+  Gaussian at one noise setting, and <=5percent second-cloud regret for
+  first-cloud primary/secondary recommendations. If this fails, park this
+  fixed-allocation refit route; no repeated seeds or extra degrees merely
+  to obtain a win. Covariance improvement alone is insufficient.
+- Costs/evidence:120CPU-second per-map operation-boundary cap and600CPU
+  whole-run operation-boundary cap, checked through final assessment block;
+  honest partial output on cap. Record complete construction/assessment
+  process-CPU time, descriptive wall time with possible concurrent untimed
+  workers, environment/hashes/commands, full raw inventory and compact
+  <16KiBreceipt. Save all24new rows of bias/noise, original38construction
+  metadata by source receipt reference, and both fresh complete baseline
+  lower envelopes (all12targets/sevennoise values), with every original
+  fresh individual bias retained in hash-pinned raw arrays. All62maps are
+  freshly assessed; compactness does not impute original-cloud bias to new
+  points. No splitting
+  to evade size limits. Stage1raw is regenerate-only and can be regenerated
+  by its pinned driver; missing raw is not an archival promise.
+- Resume after outcome: if material total-error gain survives, consider a
+  separately registered site-level variance-floor/correlation calibration
+  stress rather than assume independent repeats apply to physical sensors.
+  If gain fails, stop this refit route and retain round1's useful decision
+  endpoint; the broad weighted-design question remains OPEN.
