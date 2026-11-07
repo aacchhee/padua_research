@@ -433,3 +433,64 @@ SIGKILL still refuses collection. Keep the already registered operational
 controls, preserve this first failure, and register exact repaired source and
 fixture identities before any second run. No source edits or rerun were made
 by this reviewer in interpreting the outcome.
+
+## FOPS-07 focused source disposition and separate controls 02
+
+**FOPS-07 source repair accepted by static review; runtime regression pending.**
+Reviewed the complete domain/scan/run/collection/shared-validator changes at
+candidate custody SHA256
+`6d32521c6856a615ff49a52d6f0184d4ea6dabf041108f25233cf00c1d5fbe7a`;
+all sixteen listed entries passed `sha256sum -c`. Read the changes against the
+preserved first-failure source using read-only `git diff`, plus full ownership
+and server source. No operational/scientific source was imported or executed.
+
+`writer_domain` creates its record under the campaign lock only for an otherwise
+empty output tree, before worker admission. It stores canonical instance path,
+manifest identity, boot ID, initiating PID and earliest supervisor birth tick;
+the token binds the full record. Existing records are never replaced. Boot
+mismatch, a floor newer than the current supervisor, or inconsistency with an
+existing run refuses. Run identity now includes the original domain, and
+started-case identity therefore binds it transitively. Resume and data-return
+validation check the persisted domain and exact plan; collection binds both
+its metadata and archived domain to run records. A transferred return is
+checked for internal original-domain consistency, without incorrectly requiring
+the review machine to have the execution host's boot ID.
+
+The scanner excludes only strictly older same-boot processes after two equal
+birth-tick reads. Equal/later candidates retain environment inspection; denied
+candidate stat/environment reads propagate, while a disappearing process is
+handled separately. Birth-tick changes across reads refuse PID reuse. This
+implements the causal exclusion argument above; the lock, stale-summary
+invalidation and ECHILD safeguards remain necessary and intact. It does not
+turn `/proc` scanning into an atomic snapshot or authorize foreign-process
+termination. No change to degree scope, arithmetic, CPU/memory policy or
+scientific interpretation is part of this repair.
+
+The original fixture/hashes and failed `final-ops-controls-01` tree remain
+unchanged. A separate harness `review_controls_02.py` and prospective
+`PREREGISTRATION-02.md` adapt the new domain APIs and add focused regressions.
+The harness uses the real scanner with an explicitly synthetic `/proc` view
+for old/equal/newer unreadable branches and PID reuse, plus actual persisted
+domain mutations, actual partial resume, owned orphan/signal paths and actual
+quiescent collection. The signal fixture establishes its original domain in
+the parent before forking a supervisor, so later parent collection validly
+retains an earlier original floor. It specifically checks that a live orphan
+after SIGKILL is detected by the writer marker, rather than accepting an
+unrelated earlier validation error as sufficient evidence.
+
+Exact new harness SHA256:
+`c7942287c3684fa49dd8cfe31b7109babf7020a1481a709822bf030140f93c45`.
+Exact new preregistration SHA256:
+`c8b954e3d9b13c6dc2b5f6ef56c13242f88bc6094c2008c59a6a9a6abec10bd8`.
+The three reused helper identities remain unchanged and are listed there.
+The only planned command uses `review_controls_02.py` with fresh off-Git
+`local-output/argmax-bridge-20261105/final-ops-controls-02`. Original caps remain:
+120-second alarm, 60 self CPU, 1 GiB harness, 128 MiB/10 CPU fake workers,
+at most two fake case workers, 16 MiB per file and root-monitored 64 MiB aggregate.
+The collector's production free-space floor is overridden only in the synthetic
+fixture process to test its behavior; no real capacity claim follows.
+
+Only AST parsing of the new fixture occurred. Root must publish and release
+these exact bytes before running once; reviewer will attribute root execution
+and will not invent an independent rerun. This source acceptance does not erase
+the first failure, establish controls PASS or permit builder/native/bulk work.
