@@ -1632,3 +1632,9 @@ Root selects already published source ffe4d42ba176d56db2e77c228bce28eda0872298 f
     prlimit --cpu=120:120 --as=4294967296:4294967296 --fsize=1073741824:1073741824 -- timeout --signal=TERM --kill-after=10 300 python3 -I -S -B topics/padua-argmax-bridge-20261105/code/audit02_execution/build_pack.py --destination /workspace/p02 --source-sha ffe4d42ba176d56db2e77c228bce28eda0872298
 
 stdout/stderr fresh /workspace/p02-build.stdout and .stderr, preserve direct tool EXIT and first failure, no retry. No import/build yet at publication. Standard CPU/AS/fsize limits are PERPROCESS, not whole-tree promises; child tools are fixed Git/dpkg-deb/ldd, no compiler or native oracle or mathematical case. External real-integration observer source is separately being developed, no rehearsal/remainder campaign follows this build release automatically.
+
+### Local builder provenance refusal; metadata corrected before focused second invocation
+
+First exact released build returned direct tool EXIT1 (chunk9bd83b), no artifact/destination created, stdout/stderr retained at /workspace/p02-build.*. Its published-source gate refused because local origin/topic trackingref was still498f4f4c although pushes succeeded: remote.origin.fetch contains only main, so ordinary pushes did not refresh that ref. This is a valid provenance refusal, not a scientific execution or source defect. Root explicitly fetched the topic ref read-only; direct EXIT0 now points to published2a3a2e6 (contains selectedffe4d42). No file/source/cap/package/path change.
+
+After THIS publication, root releases ONE focused second invocation of the IDENTICAL previous builder command and selectedsourceffe4d42, fresh stdout/stderr /workspace/p02-build02.stdout/.stderr, destination still absent. Preserve original failed logs; no retry of a mathematical attempt occurred. Artifact reservation2GiB and limits unchanged. Exact actual build result remains pending.
