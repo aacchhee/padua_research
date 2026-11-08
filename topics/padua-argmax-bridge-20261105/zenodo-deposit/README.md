@@ -10,7 +10,7 @@ development, serving model/effort metadata unexposed. This adds no research or
 novelty claim and requires no novelty search.
 
 [MANIFEST.json.in](MANIFEST.json.in) is valid JSON with explicit null/PENDING
-fields for the final reviewed repository source snapshot and DOI. Completed I25
+fields for AC's DOI. The reviewed source snapshot is prepared below. Completed I25
 source/runtime/evidence identities and known original/new
 return identities are filled. It must be completed and saved as the final MANIFEST.json after the
 missing files, source freeze and reviews exist. A placeholder filename has no
@@ -27,11 +27,11 @@ Zenodo retrieval.
 | runtime_manifest.json, asset_provenance.json, SOURCE_CUSTODY.json, FREEZE.json | Exact original package/frozen-science metadata, separately listed for inspection. The runtime manifest and asset provenance are bulk deposit files, not new Git evidence. Their copies must match the original package, not newly reconstructed prose. |
 | onset512-preregistration.json | Existing 49,782-byte machine preregistration, source/runtime pins and 191-degree population. Locally rehashed; included alongside the authored preregistration. |
 | onset512-return-20261108.zip | Canonical local provenance return, 81,602,992 B: all 191 pairs / 382 certificates for 320..510, small histories and sampled full native closures (475, 458). Locally rehashed; distinct finite-result/archive review accepted at the recorded native-evaluator scope. |
-| onset512-certificates-20261108.zip | AC-requested 945,235-byte derivative: exactly 382 immutable certificates, inventory and brief README. Locally rehashed; it does not replace the canonical 81.6 MB provenance return. |
+| onset512-certificates-20261108.zip | 945,235-byte derivative: exactly 382 immutable certificates, inventory and brief README. Locally rehashed; complete provenance is in the canonical 81.6 MB return. |
 | onset512-essential-inventory.json | 75,479-byte mirror inventory, included off Git/deposit only; hash/bytes recorded here and in the small custody index. No bulk inventory copy added to Git. |
 | padua-manuscript-20261108-131012-Oslo.pdf | Final51-page accepted journal PDF,733598 B; exact identity below. |
 | padua-companion-20261108-131012-Oslo.pdf | Final147-page accepted companion PDF,1171187 B; exact identity below. |
-| PENDING-reviewed-source.zip | Final reviewed repository snapshot at an exact commit, including all checker/adapter source, mathematical reductions and cited verification records. Include the required paths below; record its eventual bytes/hash and source commit. This is distinct from the immutable original production package. |
+| padua-research-source-a433c7d-20261108.zip | Complete tracked repository snapshot at a433c7d:22,105,198bytes, all6,900 file names/sizes and ZIP CRCs checked. It includes final manuscript source24a98db, checker/proof sources and reviews; the original runtime package is separately retained. |
 | i25-evidence-20261108T112304Z.zip | 2,843,611-byte completed I25 evidence: all 942 proof inputs, executed full/pilot sources, runtime identities, preregistrations/amendments, logs, receipts and controls, including failed v1 and independent six-certificate replay. Locally rehashed. |
 | onset512-independent-review-20261108.zip | Separate 51,749-byte supplementary review evidence package. Locally rehashed; not the canonical native return or the I25 full evidence ZIP. |
 | README.md, MANIFEST.json | Completed deposit instructions and exact final file list, with AC's DOI and retrieval date once real. |
@@ -262,3 +262,29 @@ and exposition; report SHA-256
 `fe935ea03a245dd6301370cc02b4ac826cacec55d036b8c99942a4d00d44dff9`.
 Its acceptance does not supply the still-unpackaged final reviewed SOURCE ZIP,
 its unknown identity, AC’s DOI/publication or completed external custody.
+
+
+## Prepared source snapshot — 2026-11-08
+
+The complete tracked repository source is now prepared at commit
+`a433c7dfc61d1ed61799a7d919beb8334a2593b6`, including the final TeX/Bib
+freeze24a98db, adopted correspondence checker, reviews and reproduction code.
+File: `local-output/argmax-bridge-20261105/padua-research-source-a433c7d-20261108.zip`.
+Bytes: **22,105,198**. SHA-256:
+`66acbadb34ba51a5a2c99bd34a681deef6de433da193202830d00c0aa0f4cc03`.
+
+Generating command, executed once with observed exit0:
+
+```sh
+git archive --format=zip --prefix=padua_research-a433c7d/ --output=local-output/argmax-bridge-20261105/padua-research-source-a433c7d-20261108.zip a433c7dfc61d1ed61799a7d919beb8334a2593b6
+```
+
+Readback passed every ZIP member CRC, the exact6,900-file Git-tree name/size
+inventory and direct Git-byte comparisons of six critical checker, manuscript,
+proof and scientific-freeze files. The local `.receipt.json` gives the check
+scope. The snapshot contains the tracked source tree; Git history, PDFs,
+I25/native data returns and runtime package are separately listed inputs.
+Use the adjacent current deposit inventory for this ZIP's identity: the
+inventory inside its older source tree necessarily precedes packaging itself.
+All15 listed deposit payloads now exist locally. DOI/publication and durable
+external retrieval remain AC's tasks.

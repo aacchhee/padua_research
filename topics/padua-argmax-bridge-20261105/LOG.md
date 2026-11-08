@@ -2850,3 +2850,36 @@ scientific or certificate run was performed for these exposition changes.
 The next required substantive audit remains Claude's focused check of the
 new mathematics/evidence and both manuscripts. Final IDs, shared registry
 application, PR readiness, DOI/publication and merge remain separate.
+
+
+### Packaging and audit handoff checkpoint
+
+The reproduction source snapshot at a433c7dfc61d1ed61799a7d919beb8334a2593b6
+is22,105,198bytes, SHA-256
+66acbadb34ba51a5a2c99bd34a681deef6de433da193202830d00c0aa0f4cc03.
+The single git-archive command exited0. Every ZIP CRC, the exact6,900-file
+Git name/size inventory and six critical Git-byte comparisons pass. An initial
+readback was attempted while git-archive was still writing and raised
+BadZipFile; after observing that same command complete, final readback passed.
+No archive generation or scientific job was repeated. All15 payloads in the
+deposit inventory were individually rehashed. Local working custody is
+verified; AC's DOI/publication and durable external retrieval remain pending.
+
+Final conservative generated-output bound is9,897,953bytes against AC's
+10,000,000-byte cap, leaving102,047bytes. This applies the inherited
+b45e29f bound9,873,956 plus the exact current-tree delta under its source/prose
+classification. No new counted file exceeds16KiB; the existing32,414-byte
+essential index retains its reviewed exception and passes all396 identities.
+Bulk certificates, source ZIPs, PDFs and execution histories stay off Git.
+No new final IDs/ranges or shared-registry application occurred.
+
+Development is complete for this material response; stage moves to **AUDIT**.
+The next focused Claude audit covers J01/J02, the independent arithmetic and
+new finite evidence, operational verifier repairs and both manuscripts under
+AC's explicit clarity/named-result criterion. The local proposed PR update
+is prepared; the earlier automatic approval block on remote metadata edits
+is preserved, with no new retry. PR27 stays draft. Outputs are committed
+before closing handoff29 and opening the new audit handoff in a following
+handoff-only commit. Only AC merges or publishes.
+
+Next: [handoff30 — focused Claude audit of onset512 and both manuscripts](handoffs/30-claude-audit-onset512-and-manuscripts.md).

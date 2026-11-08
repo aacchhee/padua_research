@@ -46,7 +46,7 @@ AC treats page count as secondary to needed explanation. No step should appear
 without its reasoning; named tools should be stated with hypotheses or cited.
 Both use the unchanged verified publisher class/BST. All PDFs/build outputs
 remain outside Git. AI declaration, ORCID and contributions are reserved to AC;
-funding is confirmed. Source ZIP finalization, AC's Zenodo DOI/publication,
+funding is confirmed. The reproduction source snapshot is prepared at a433c7d; AC's Zenodo DOI/publication,
 independent durable retrieval and registry/PR preparation remain separate.
 
 ## Current build and correspondence

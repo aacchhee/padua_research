@@ -1,7 +1,7 @@
 {
   "format": "padua-cold-storage-v1",
   "slug": "padua-argmax-bridge-20261105",
-  "source_commit": "dcb27db7d159ca0eac66e5fb48623589035a31ef",
+  "source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6",
   "entries": [],
   "total_bytes": 0,
   "index_scope": "Pending-local custody index prepared against source_commit; not an archive-delivery receipt or a claim that this commit generated every listed artifact.",
@@ -59,6 +59,14 @@
         "bytes": 51749,
         "sha256": "96f84b294b724b74bc33c112a2633bde14fed5c9220cb11196c60dae5c12ab28",
         "record": "independent-checks-onset512-response.md"
+      },
+      {
+        "role": "complete_repository_source_snapshot",
+        "path": "local-output/argmax-bridge-20261105/padua-research-source-a433c7d-20261108.zip",
+        "bytes": 22105198,
+        "sha256": "66acbadb34ba51a5a2c99bd34a681deef6de433da193202830d00c0aa0f4cc03",
+        "source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6",
+        "record": "zenodo-deposit/README.md"
       }
     ],
     "generation_and_verification_records": [

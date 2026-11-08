@@ -13,16 +13,21 @@ dependency or defect. No audit execution or acceptance is claimed by this brief.
 |---|---|
 | Final integrated manuscript source commit | `24a98db4c3c4c4d0eede2e3929532956df87911b`; later material revisions require a new reviewed freeze |
 | Final paired TeX/Bib source-freeze commit | `24a98db4c3c4c4d0eede2e3929532956df87911b` |
-| `check_correspondence.py` final source baseline | `24a98db4c3c4c4d0eede2e3929532956df87911b` working static baseline advanced after source commit; root final artifact check PASS19/85/116 |
+| `check_correspondence.py` final source baseline | `24a98db4c3c4c4d0eede2e3929532956df87911b`, adopted in source/reproduction snapshot a433c7d; root final artifact check PASS19/85/116 |
 | Revised paper PDF | `local-output/padua-argmax-bridge-20261105/onset512-paper-20261108/main.pdf`;51 pages;733598 B; SHA-256 `1346fc2891e2cdd5deb6db4b1a5928a2a7bac05c1838999b1a1dee1fc0db1d2c` |
 | Revised companion PDF | `local-output/padua-argmax-bridge-20261105/onset512-companion-20261108/main.pdf`;147 pages;1171187 B; SHA-256 `83ca42c8052ccd760c3929ff0c30cd1667971476ae111736fe371b30e4581af2` |
 | I25 full result and independent rerun | Complete: 942 certificates / 471 degrees; six-certificate independent replay passed; see J03 and RESULTS.json |
 | Supplemental Sol max frozen-candidate review | ACCEPT correctness/exposition at 24a and these PDFs; report SHA-256 `fe935ea03a245dd6301370cc02b4ac826cacec55d036b8c99942a4d00d44dff9` |
+| Complete reproduction source snapshot | `a433c7dfc61d1ed61799a7d919beb8334a2593b6`; ZIP22,105,198bytes, SHA-256 `66acbadb34ba51a5a2c99bd34a681deef6de433da193202830d00c0aa0f4cc03`; see deposit inventory |
 
 The source freeze and helper adoption are two ordered commits in one reviewed
 batch: commit final paired TeX/Bib sources, then install that existing SHA in
 the checker. See [revision boundary](companion-paper/CORRESPONDENCE-REVISION.md).
 Do not substitute the historical 48/162-page artifacts for the revised PDFs.
+The [small-bundle recipe](zenodo-deposit/RECHECK-SMALL-BUNDLE.md) can recheck
+JSON witnesses directly from the2.84MB I25 bundle using separately trusted
+source. It is an alternative future-audit input recipe, not an additional
+reported execution. The completed runs retain their original preregistrations.
 
 ## Assignment and authority
 

@@ -5,7 +5,7 @@
   "topic": "padua-argmax-bridge-20261105",
   "doi": "PENDING_AC_RESERVATION",
   "zenodo_record_url": null,
-  "final_source_commit": null,
+  "final_source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6",
   "input_rules_commit": "b45e29fa1fe3dbfa2517ff8043e5d9c440870530",
   "original_production_source_commit": "996fedcad4ba79a28e45a3fe3678adc12f1e5358",
   "custody": "Local readback only. No Zenodo upload, Windows delivery or independent external retrieval claimed.",
@@ -102,12 +102,13 @@
     },
     {
       "role": "final_reviewed_repository_source_snapshot",
-      "deposit_filename": "PENDING-reviewed-source.zip",
-      "local_path": null,
-      "bytes": null,
-      "sha256": null,
-      "identity_status": "PENDING_FINAL_ARTIFACT_AND_REVIEW",
-      "deposit_status": "PENDING_AC_UPLOAD"
+      "deposit_filename": "padua-research-source-a433c7d-20261108.zip",
+      "local_path": "local-output/argmax-bridge-20261105/padua-research-source-a433c7d-20261108.zip",
+      "bytes": 22105198,
+      "sha256": "66acbadb34ba51a5a2c99bd34a681deef6de433da193202830d00c0aa0f4cc03",
+      "identity_status": "git_archive_EXIT0; all ZIP CRCs and exact6900-file Git tree name/size inventory pass; six critical source/freeze files match Git bytes",
+      "deposit_status": "PENDING_AC_UPLOAD",
+      "source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6"
     },
     {
       "role": "independent_I25_sources_runtime_inputs_and_completed_evidence",
@@ -241,5 +242,8 @@
     "paired_numbered_environments": 85,
     "paired_labels": 116,
     "original_48_162_page_PDF_hashes_preserved": true
-  }
+  },
+  "manuscript_source_freeze": "24a98db4c3c4c4d0eede2e3929532956df87911b",
+  "local_package_status": "PREPARED_AND_READBACK_VERIFIED; AC DOI/publication pending",
+  "small_bundle_recheck_recipe": "RECHECK-SMALL-BUNDLE.md"
 }

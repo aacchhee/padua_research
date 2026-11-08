@@ -192,3 +192,11 @@ complete replays. Both local files were rehashed and added to the small pending
 index; neither is a claim of external delivery. The [I25 summary](code/independent_phase_checker/independent-phase-summary.md)
 gives exact identities and commands. The current preparation source is dcb27db;
 original scientific source/runtime identities remain separately recorded.
+
+
+The complete tracked source snapshot at a433c7dfc61d1ed61799a7d919beb8334a2593b6
+is22,105,198bytes, SHA-256
+`66acbadb34ba51a5a2c99bd34a681deef6de433da193202830d00c0aa0f4cc03`.
+Its ZIP CRCs, exact6,900-file Git inventory and six critical source/freeze
+byte comparisons pass. The [deposit record](zenodo-deposit/README.md) gives
+its local path and commands; delivered entries remain empty.
