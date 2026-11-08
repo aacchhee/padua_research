@@ -1,6 +1,6 @@
 # Handoff 30: focused Claude audit of onset512, independent arithmetic and both manuscripts
 
-- Status: open
+- Status: done in 674876435cd75eed281dc22c726eb36c6bb58f4f
 - Previous handoff: 29-onset512-and-manuscript-revision.md
 - Next agent / model / effort: Claude, Opus 5.5 xhigh for substantive mathematical audit; record the actual serving model and effort.
 - Role: independent auditor and topic orchestrator for this step
