@@ -1,6 +1,6 @@
 # Handoff 18 — padua-3d-20261106 — audit-04 response and the final narrowed deep-structure round set
 
-- Status: open
+- Status: superseded by 19: AC approved the pending decisions (frontier plan, E4 convention, storage allowance, deviations, lattice boundary) on 2026-11-08
 - Previous handoff: [17-pruning-audit.md](17-pruning-audit.md)
 - Next agent / model / effort: **Codex.**
   - Coordinator: gpt-6-astra high.

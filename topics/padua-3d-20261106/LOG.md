@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/18-final-narrowed.md](handoffs/18-final-narrowed.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/19-final-narrowed-approved.md](handoffs/19-final-narrowed-approved.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -937,3 +937,17 @@ their corresponding runs, with publication and execution timing distinguished.
   Gunzburger–Teckentrup benchmark; Wang–Wang–Wang; Lev–Matolcsi; Golomb–Welch and Lee-tiling results;
   Krieg–Pozharska–Ullrich–Ullrich; Dolbeault–Chkifa; Białas-Cież et al.
 - [Handoff 17](handoffs/17-pruning-audit.md) done in `286e310` (audit report `1cb3841`, auditor fixes `bbf4b42`, frontier assessment `286e310`); [handoff 18](handoffs/18-final-narrowed.md) opened: audit-04 response plus the final narrowed deep-structure set, then freeze. Earlier handoff links: [15](handoffs/15-combined-audit.md), [16](handoffs/16-pruning-campaign.md).
+
+## 2026-11-08 — AC decisions (recorded by Claude, claude-opus-5-5 xhigh)
+
+- AC (verbatim): "so far I approve current solutions for everything you asked".
+- Recorded as approval of:
+  1. the frontier plan: NARROW then FREEZE, with D1–D5 at their ceilings;
+  2. the E4 label convention as proposed: "PROVED with explicit LITERATURE dependency" when the exact
+     primary statement, normalization and application are checked; CONDITIONAL otherwise; never bare PROVED;
+  3. the storage allowance as interpreted: storage only, up to 32 KiB per file and manifest and
+     10 MB repository-wide, provisional, discussed at PR;
+  4. the earlier canonical deviations (deviations-01/02), accepted as disclosed;
+  5. the lattice stop(a) boundary, accepted as recorded.
+- [Handoff 18](handoffs/18-final-narrowed.md) is superseded by
+  [handoff 19](handoffs/19-final-narrowed-approved.md): same instruction, with these decisions settled.
