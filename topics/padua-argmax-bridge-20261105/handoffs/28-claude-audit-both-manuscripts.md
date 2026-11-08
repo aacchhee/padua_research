@@ -1,6 +1,6 @@
 # Handoff 28 — Claude audit of mathematics and both manuscripts
 
-- Status: open
+- Status: done in 863e6d645cdca620fc91eb5d0f35997e06bd1b78
 - Previous handoff: 27-reviewed-companion-and-publication-preparation.md
 - Next agent / model / effort: Claude, recommended Opus 5.5 xhigh for the combined mathematical/manuscript audit; choose and disclose actual model/effort under the role rules
 - Role: independent auditor / audit coordinator
