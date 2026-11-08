@@ -271,12 +271,14 @@ and their arithmetic assumptions.
 
 Knowing the location reduces the Lebesgue constant to a single corner
 value. Our second result describes that value much more precisely than
-its leading growth rate. Write
+its leading growth rate. Here Euler's constant is
+$\gamma=\lim_{R\to\infty}(H_R-\log R)$, where
+$H_R=\sum_{r=1}^R r^{-1}$. Write
 \begin{equation}\label{eq:main-constants}
  a=\frac2\pi,\qquad d=\gamma+\log\frac8\pi,\qquad
  c_1=ad,\qquad b=2ac_1,\qquad c=c_1^2+\kappa,
 \end{equation}
-where $\gamma$ is Euler's constant and
+with
 \begin{equation}\label{eq:main-kappa}
  \kappa=\frac8\pi\int_0^1 t^2\cot\frac{\pi t}{2}
        \sum_{\substack{\ell\geq1\\\ell\text{ odd}}}
@@ -286,8 +288,6 @@ The apparent singularity at $t=1$ is canceled by the cotangent factor;
 we justify convergence below.
 
 \noindent\textbf{Reading the constants and the integral.}
-Euler's constant is
-$\gamma=\lim_{m\to\infty}(\sum_{r=1}^m r^{-1}-\log m)$.
 The logarithms in this paper are natural logarithms. With $N=n+1/2$,
 the letters in \eqref{eq:main-constants} package the coefficients of a square:
 \[

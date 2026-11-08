@@ -21,7 +21,20 @@ $\theta_j=j\pi/n$, $\phi_k=k\pi/(n+1)$ and
  \qquad w_{jk}=\frac{2\varepsilon_j\eta_k}{n(n+1)}.
 \]
 For the kernel formula below, set $\nu_0=1$ and $\nu_r=2$ for $r>0$;
-these are the mode multiplicities. Define
+these are the mode multiplicities. For $x_j=\cos\theta_j$ and
+$y_k=\cos\phi_k$, the checkerboard scalar product is
+\[
+ \langle F,G\rangle_n=
+ \sum_{\substack{0\leq j\leq n,\ 0\leq k\leq n+1\\j+k\ \mathrm{even}}}
+ w_{jk}F(x_j,y_k)G(x_j,y_k).
+\]
+The Gram matrix of the basis $e_{pq}(x,y)=T_p(x)T_q(y)$,
+$p,q\geq0$, $p+q\leq n$, has entries
+$\langle e_{pq},e_{rs}\rangle_n$.
+A node set is \emph{unisolvent for $\Pi_n$} if every assignment of
+nodal values has exactly one interpolating polynomial in $\Pi_n$.
+A kernel here is a function of two points formed from products of basis
+values. Write $z=(z_1,z_2)$ and $B=(B_1,B_2)$, and define
 \[
  K_n(z,B)=\sum_{p+q\leq n}\nu_p\nu_q
  T_p(z_1)T_p(B_1)T_q(z_2)T_q(B_2).
@@ -66,6 +79,10 @@ by $w_{jk}$, therefore has the cardinal values and gives
 \eqref{eq:cardinal-kernel}.
 \end{proof}
 
+In angular coordinates $z=(\cos\theta,\cos\phi)$, products of
+Chebyshev modes become products of cosines. The angular kernel is the
+finite trigonometric sum in two free angles $u,v$, whose reflected
+copies express the corrected polynomial kernel by product-to-sum.
 The same correction appears in the angular kernel
 \begin{equation}\label{eq:angular-kernel}
  G_n(u,v)=\sum_{p+q\leq n}\nu_p\nu_q\cos(pu)\cos(qv)-\cos(nu).

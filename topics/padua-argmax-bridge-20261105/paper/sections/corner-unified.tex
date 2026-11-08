@@ -136,8 +136,7 @@ $x=r/m$, $s=m-r$, $\alpha_r=(1-x)/2$ and
  \qquad V_n=\sum_{r=1}^{m-1}w(r/m)
                     \sum_{\ell=0}^{r-1}B((\ell+\alpha_r)/n).
 \]
-We use the digamma function $\psi=\Gamma'/\Gamma$, characterized here
-by its convergent harmonic series,
+We define the digamma function $\psi$ by its convergent harmonic series:
 \begin{equation}\label{cu:psi}
  \psi(z)=-\gamma+\sum_{k=0}^\infty
           \left(\frac1{k+1}-\frac1{k+z}\right),\qquad z>0,
@@ -174,11 +173,13 @@ $v=r\pi/m$ its signed entries satisfy
 \]
 The cotangent form uses
 \[
- \cot A+\cot B=\frac{\sin(A+B)}{\sin A\sin B},\quad
- 2\sin\frac{v-u}{2}\sin\frac{v+u}{2}=\cos u-\cos v,
- \quad \cot(v/2)\sin v=1+\cos v.
+ \begin{aligned}
+ \cot A+\cot B&=\frac{\sin(A+B)}{\sin A\sin B},\\
+ 2\sin\frac{v-u}{2}\sin\frac{v+u}{2}&=\cos u-\cos v,\\
+ \cot(v/2)\sin v&=1+\cos v.
+ \end{aligned}
 \]
-The last equality follows from
+The periodic row sum follows from
 $\sum_{\ell=0}^{n-1}\cot(z+\ell\pi/n)=n\cot(nz)$, the logarithmic
 derivative of the finite sine product; its right hand cotangent here is
 $\tan(v/2)$. The positive samples have representatives

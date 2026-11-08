@@ -10,6 +10,7 @@ $H_n=\sum_{j=1}^n j^{-1}$, and
  \mathsf{a}=c_ec_d,\quad u=1-\mathsf{a},\quad z=(1-c_e)(1-c_d).
  \end{gathered}
 \]
+For a real number $t$, write $t_+=\max(t,0)$.
 Also put $p=\sin x$, $q=\sin y$, $P=p+q$, and $d_+=(q-p)_+$.
 Thus $\mathsf{a}=(\cos x+\cos y)/2\geq0$ and $2-c_e-c_d=u+z$.
 Throughout, $x$ refers to the $n$-mesh and $y$ to the $m$-mesh.
@@ -92,6 +93,24 @@ Extend $\Phi$ with period one. Then $f$ is even with period $2\pi$.
 We use $\psi(t)=-\gamma+\sum_{k\geq0}\{(k+1)^{-1}-(k+t)^{-1}\}$,
 so $\mathcal C(t)=-\psi(t)-\psi(1-t)$.
 
+We write $\zeta(s)=\sum_{k\geq1}k^{-s}$ for $s>1$.
+The Lipschitz constant $\operatorname{Lip}(f)$ is the least $K$ such
+that $|f(w)-f(v)|\leq K|w-v|$.
+For a periodic function $h$, $\operatorname{Var}_{\rm per}h$ is the
+supremum of the sums of absolute changes along partitions of one
+period, counting the joined endpoint once. Such a function is of
+bounded variation (BV) when this supremum is finite. Its derivative
+measure $dh$ records its changes, including jumps; its
+total-variation measure $|dh|$ records their absolute sizes.
+In particular $df'$ below includes both the ordinary second derivative
+and the cusp jump. The unit point mass $\delta_\pi$ satisfies
+$\int\varphi\,d\delta_\pi=\varphi(\pi)$ for periodic continuous
+$\varphi$. An inequality $\nu\leq c\,dw$ between measures means
+$\int\varphi\,d\nu\leq c\int\varphi\,dw$ for every nonnegative
+continuous periodic $\varphi$.
+The finite part below means the cutoff limit after its
+displayed logarithmic counterterm is added.
+
 \begin{lemma}[The scalar maximum, including its cusp]\label{uc:scalar-maximum}
 The function $f$ is Lipschitz, $f'$ has bounded variation on the circle,
 and, for its ordinary second derivative $f''$ on $(-\pi,\pi)$,
@@ -172,7 +191,8 @@ useful:
 To derive it, integrate the numerator against $\cos((2j+1)\pi t)$;
 the result is
 $(-1)^j\cos(w/2)w^2/[(2j+1)\pi((2j+1)^2\pi^2-w^2)]$.
-The Abel sum of the kernels is
+For $0<r<1$, insert the convergence factors $r^{2j+1}$ in the
+kernel sum (Abel regularization):
 \[
  \begin{aligned}
  &\sum_{j\geq0}(-1)^jr^{2j+1}\cos((2j+1)\pi t)\\
@@ -182,9 +202,14 @@ The Abel sum of the kernels is
 \]
 For $r\geq1/2$ it is bounded by $5/(8\cos\pi t)$, while the
 numerator is $O(1/2-t)$ and $\cos\pi t\geq2(1/2-t)$.
-Dominated convergence proves \eqref{uc:f-integral}, including its
-endpoints, and permits three derivatives because each differentiated
-numerator also vanishes at $t=1/2$. In particular
+The dominated-convergence theorem permits passage of a pointwise
+limit through an integral when the integrands have a common integrable
+absolute bound. Here the displayed kernel bound and the vanishing
+numerator supply that bound. The same mean-value estimate applies to
+the first three differentiated numerators, uniformly for $|w|\leq\pi$,
+since their $t$ derivatives are bounded on this compact rectangle.
+Thus it proves \eqref{uc:f-integral}, including its endpoints, and
+permits three derivatives. In particular
 \[
  f'''(w)=\frac{f(0)}8\sin(w/2)
  +2\int_0^{1/2}\frac{t^3\sin(tw)-\sin(w/2)/8}{\cos\pi t}\,dt.
@@ -219,9 +244,14 @@ $df'$ gives
  H(w)=\lambda_0f(w)+\frac1\pi\int_{-\pi}^{\pi}\mathcal{W}(t)f''(w+t)\,dt
                   -\frac{J_0}\pi \mathcal{W}(\pi-|w|),\quad |w|\leq\pi.
 \]
-Fubini is valid against the finite variation measure; $\mathcal{W}(\pi)=0$
-counts the atom only once. Subtract the minimum of $f''$ to make it
-nonnegative. Layer cake reduces its convolution with $\mathcal{W}$ to lengths
+Fubini's theorem allows the order of integration to be exchanged when
+the absolute integral is finite. Here the integrated triangular weight
+is the bounded function $\mathcal W$, so the absolute integral against
+$|df'|$ is at most $\|\mathcal W\|_\infty\operatorname{Var}_{\rm per}f'<\infty$.
+The value $\mathcal W(\pi)=0$ counts the atom only once. Subtract the
+minimum of $f''$ to make it nonnegative. The layer-cake identity
+$h(t)=\int_0^\infty\mathbf1_{\{h(t)>r\}}\,dr$ for $h\geq0$
+reduces its convolution with $\mathcal{W}$ to lengths
 of intersections of two centered circular arcs; a translate cannot
 increase such a length. The convolution is therefore largest at zero.
 The measure bound implies $f(w)-f(0)\leq3w^2/(2\pi^2)$, and
@@ -435,9 +465,8 @@ The needed constant inequalities have an elementary finite reduction:
 \end{equation}
 Define
 \begin{align*}
- \mathfrak a_0&=1,\qquad
- \mathfrak a_p=1-2\sum_{r=1}^p\frac{\zeta(2r)}{4^r}\quad(p\geq1),\\
- \mathfrak b_0&=7\zeta(3)/8,\\
+ \mathfrak a_p&=1-2\sum_{r=1}^p\frac{\zeta(2r)}{4^r}\quad(p\geq0),
+ \qquad\mathfrak b_0=7\zeta(3)/8,\\
  \mathfrak b_q&=(1-2^{-2q-3})\zeta(2q+3)
               -(1-2^{-2q-1})\zeta(2q+1)\quad(q\geq1),\\
  c_k&=\sum_{p+q=k}\mathfrak a_p\mathfrak b_q.
@@ -454,52 +483,49 @@ Cancelling the endpoint pole before multiplication gives
        \leq\frac8{3(K+2)4^{K+1}}.
  \end{gathered}
 \end{equation}
-Indeed the cotangent partial fraction and
-$2\sum_{r\geq1}(4r^2-1)^{-1}=1$ give
-$\mathfrak a_p=2\sum_{r\geq1}(4r^2)^{-p}/(4r^2-1)$, so
-$0<\mathfrak a_p\leq4^{-p}$. The reciprocal expansion gives the
-second series. Its first coefficient is $<10/9$; for $q\geq1$,
-\[
- |\mathfrak b_q|<9^{-(q-1)}
-       \left(\frac1{27}+\int_3^\infty s^{-3}ds\right)<9^{-q}.
-\]
-Thus $|c_k|<2\cdot4^{-k}$. Uniform absolute convergence on $[0,1]$
-justifies multiplication and integration in \eqref{eq:main-kappa};
-the geometric tail, with $8/\pi^2<1$, gives the stated remainder.
+The cotangent partial fraction gives
+$\mathfrak a_p=2\sum_{r\geq1}(4r^2)^{-p}/(4r^2-1)\leq4^{-p}$;
+reciprocal expansion gives the second series, with $\mathfrak b_0<10/9$
+and $|\mathfrak b_q|<9^{-(q-1)}(1/27+\int_3^\infty s^{-3}ds)<9^{-q}$
+for $q\geq1$. Hence $|c_k|<2\cdot4^{-k}$: uniform convergence
+permits integration, and the geometric majorant with $8/\pi^2<1$
+gives the tail.
 
-Here are explicit rational rules for the short calculation $K=3$.
-For $z>1$, put $w=(z-1)/(z+1)$. The positive logarithm series gives
+Use $K=3$, whose tail is $1/480$. For logarithms, with
+$w=(z-1)/(z+1)$ and $z>1$,
 \begin{equation}\label{ul:log-series}
  0\leq\log z-2\sum_{j=0}^{J-1}\frac{w^{2j+1}}{2j+1}
  \leq\frac{2w^{2J+1}}{(2J+1)(1-w^2)}.
 \end{equation}
-Reduce its argument to $[1,2]$ by powers of two and take $J=48$.
-Consecutive partial sums of the alternating arctangent series through
-$40$ terms, in $\pi=16\arctan(1/5)-4\arctan(1/239)$, bracket $\pi$.
-For $Z_s=\sum_{k=1}^{10}k^{-s}$, convexity of $t^{-s}$ gives
+Reduce $z$ to $[1,2]$ by powers of two and use $J=48$. Write
+$A_N(q)=\sum_{r=0}^{N-1}(-1)^r/((2r+1)q^{2r+1})$ and
+$Z_s=\sum_{k=1}^{10}k^{-s}$. The alternating arctangent series gives
+$A_{40}(q)<\arctan(1/q)<A_{39}(q)$ for $q>1$.
+Machin's identity is $\pi=16\arctan(1/5)-4\arctan(1/239)$.
+Together with convexity these give the rational constructions
 \[
+ \begin{gathered}
+ 16A_{40}(5)-4A_{39}(239)<\pi
+                <16A_{39}(5)-4A_{40}(239),\\
  Z_s+\frac1{(s-1)10^{s-1}}-\frac1{2\cdot10^s}
- \leq\zeta(s)\leq Z_s+\frac{2^{s-1}}{(s-1)21^{s-1}}.
-\]
-The lower bound is the trapezoid comparison on $[10,\infty)$;
-the upper bound integrates the cells centered at $11,12,\ldots$.
-Finally, with $H_{256}=\sum_{k=1}^{256}1/k$,
-\[
+ \leq\zeta(s)\leq Z_s+\frac{2^{s-1}}{(s-1)21^{s-1}},\\
  H_{256}-\log257<\gamma<H_{256}-\log(513/2).
+ \end{gathered}
 \]
-The sequences $H_M-\log(M+1)$ and $H_M-\log(M+1/2)$ increase and
-decrease to $\gamma$: their differences have the required signs by
-$\log(1+t)<t$ and $2\operatorname{atanh}t>2t$, respectively.
-Substitution for $s=2,3,4,5,6,7,9$ and the tail $1/480$ gives
+The zeta bounds are the trapezoid and midpoint comparisons for $t^{-s}$;
+the gamma bounds follow from the monotone sequences $H_M-\log(M+1)$
+and $H_M-\log(M+1/2)$. Substituting $s=2,3,4,5,6,7,9$ and adding the kappa tail
+gives the following endpoints, with $C_*=4(\gamma+\log(8/\pi))^2/\pi^2+\kappa$:
 \[
- \frac{917166}{10^6}<\kappa<\frac{921489}{10^6},\qquad
- C_*<\frac{1847940}{10^6}<\frac{4629}{2500}.
+ \begin{array}{ll}
+ \text{inputs}&23/40<\gamma<3/5,\quad197/20<\pi^2<10\\
+ &69/100<\log2<6932/10000,\quad161/100<\mathfrak k_0<9/5\\
+ &\log\pi<23/20,\quad\log(\pi/2)<23/50\\[2pt]
+ \text{outputs}&917166/10^6<\kappa<921489/10^6\\
+ &C_*<1847940/10^6<4629/2500.
+ \end{array}
 \]
-These are finite rational comparisons; all remainder bounds are
-displayed above. The same brackets imply
-$161/100<\mathfrak k_0<9/5$, $\log(\pi/2)<23/50$,
-$23/40<\gamma<3/5$, $69/100<\log2<6932/10000$,
-$\log\pi<23/20$, and $197/20<\pi^2<10$. Consequently
+All endpoints follow by finite rational comparisons. In particular,
 \begin{equation}\label{uc:scalar-constants}
  H_0>7/25,\qquad d_*>39/250,\qquad
  g_0<43/125,\qquad \mathfrak j>23/250,\qquad
@@ -542,7 +568,10 @@ In particular,
 The phase identity $(\cos x+\cos y)\tan(\rho/2)=p+q$ gives
 $b\leq\rho$. Using \eqref{uc:root-Z}, the exact integrand rearranges
 as two $E$ terms minus $B_\beta$. Put $v=p/2$, $\delta=q/2$.
-Tonelli and $w=\mathsf{a}\tan(e/2)$ give for the sum of their $Z$ majorants
+Tonelli's theorem permits the order of integration to be exchanged
+for a nonnegative measurable integrand, even before finiteness has
+been proved. The $Z$ integrands are nonnegative, so it applies here;
+the substitution $w=\mathsf{a}\tan(e/2)$ gives for their sum
 \[
  2\int_0^{\pi/2}\frac1{\sin t}\int_{\mathbb R}
  \frac{2\mathsf{a}\,\mathbf1_{|w|\leq\mathsf a\tan(t/2)}}{\mathsf{a}^2+w^2}
@@ -880,7 +909,6 @@ this gives exactly $6PH_n/n$. Together with the pole error and
 $|E_{\rm row}|\leq D_\phi+K_DP$.
 
 \paragraph{Absolute charges in the same telescope.}
-The remaining estimates in \eqref{uc:telescope} are
 The following phase-dependent quantities are proof intermediates.
 \begin{align}\label{uc:phase-allowance}
  D_a&=((52/\pi^2)\bar{L}+7)/n+20\bar{L}/(\pi n^2),\quad

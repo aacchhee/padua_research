@@ -53,3 +53,17 @@ Remaining root work: whole paired-source freeze, integrated builds and focused
 review; possible trust-boundary revision only after full I25 acceptance; final
 data/DOI wording through the front-matter owner. No AI, funding, authorship,
 ORCID, other manuscript section, frozen engine or old witness was edited here.
+
+
+## Accepted independent arithmetic and first-use follow-up
+
+The final route uses own direct-sum bounds for all942 trees across471 degrees;
+accelerated native evaluators are historical production provenance. The
+companion now derives the degree25 Horner/Taylor enclosure and128epsilon*t
+allowance, including normal-operation guards,38 rounding factors, exact
+argument reduction/collisions, widened pairwise sums and rational predicates.
+Full elementary first-use proofs remain where duplicate later explanations
+are replaced by cross-references. Both degree-two examples are retained under
+AC's clarity priority. The journal defines the Bernstein basis and rectangle
+coordinates before its lemma, and states the outward midpoint averaging
+recurrence at first use. No executed checker/data or numerical bound changes.

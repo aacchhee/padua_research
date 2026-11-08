@@ -57,3 +57,29 @@ Primary-reading limits: source metadata/locators for Kuznetsova/Pimenova are inh
 - `paper/sections/preliminaries.tex`: `fddaab6f90ec4f36976bff5c9038c3bfe1b82155b6150869f3684308d404be0b`
 
 Owned-source aggregate SHA256: `cee7e2b8b999518fafd6878057e378b0a7762be016800c51a142cf5fd3aa2d4d`.
+
+
+## First-use follow-up under AC's clarity criterion
+
+Rules dcb27db (full rule-read revision dcb27db7d159ca0eac66e5fb48623589035a31ef).
+Bounded first-use exposition pass; six section files owned, now released.
+
+95ad6bd5e2cf4f9f61f6b705b0d3fb31b0b6584feac640bc909d728890430a55  topics/padua-argmax-bridge-20261105/paper/sections/introduction.tex
+0256e494bfb3d03dd314d272881f44fca5cfdb303e6d10040226580459d0c98f  topics/padua-argmax-bridge-20261105/paper/sections/preliminaries.tex
+f8a2a11586cb444a027c21cbcd77dab8d1b2bc63d06c3441c9c337bc38ee0465  topics/padua-argmax-bridge-20261105/paper/sections/corner-unified.tex
+67b74457f09b1461d96c1cb18ccb66c52b5cace3847dc9042fe44c954321c2ea  topics/padua-argmax-bridge-20261105/companion-paper/sections/introduction.tex
+56db9231406f37763098de9cb370403f2d7eb566589ec50e25249dd0f374870e  topics/padua-argmax-bridge-20261105/companion-paper/sections/preliminaries.tex
+4c88580bfd2db5e6e3f8b37918dea33fa89d0f8418d655b9923862bcbf85ba1b  topics/padua-argmax-bridge-20261105/companion-paper/sections/corner-unified.tex
+
+Aggregate (absolute pathname + NUL + UTF-8 source, original snapshot order): fc1774ada234f2b13a702039bdebc88be8a0ba5d0adbd8d67254a44c4cdd7e13
+
+Checks PASS: each owned numbered display, theorem/lemma/proposition/corollary, label and heading byte-identical to immediate input; main.tex and references.bib byte-identical in both trees. Scoped git diff --check PASS. notation_scan.py current paired scan PASS: 19 statements, 85 numbered display blocks (/tmp/firstuse-final-scan). No builds, Git mutations or old-output writes.
+
+Dispositions:
+- Journal introduction: Q, C(Q), supremum norm, interpolation domain/codomain and induced norm defined before first inequality; cardinal-polynomial nodal values explained at first use.
+- Both introductions: gamma=lim_R(H_R-log R), H_R=sum_{r=1}^R 1/r before first coefficient use. Companion later duplicate gamma definition removed.
+- Journal preliminaries: checkerboard weighted scalar product explicitly defined with original weights 2 epsilon_j eta_k/[n(n+1)]; Gram entries explicitly basis inner products; unisolvent explicitly means unique polynomial for arbitrary nodal data before lemma.
+- Companion preliminaries: existing scalar product (subscript P_n), Gram entries, unisolvence, cardinal kernel and angular kernel definitions checked and retained; no duplicate inserted or cosmetic subscript rename.
+- Journal preliminaries: kernel two-point meaning, physical coordinate notation, and angular-kernel reflected-copy context supplied. Original highest-mode coefficient one unchanged.
+- Both corner sections: unused Gamma-prime/Gamma alias removed; original numbered cu:psi series untouched and sole definition of psi. Companion introductory sentence shortened to avoid duplicate defining sentences.
+- Root three-row trig layout and periodic-row-sum antecedent preserved byte-for-byte; main/bib untouched.

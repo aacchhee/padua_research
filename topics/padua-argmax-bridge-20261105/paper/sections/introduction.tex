@@ -2,8 +2,13 @@
 Polynomial interpolation replaces data at finitely many points by a polynomial.
 Its usefulness depends on two questions: how well can polynomials approximate
 the function, and how much can interpolation magnify errors in the data?
-The Lebesgue constant measures the second effect. Let $\Pi_n$ be the real polynomials of total degree at most $n$.
-If $I_n$ denotes interpolation into $\Pi_n$ and $\Lambda_n=\|I_n\|$, then
+The Lebesgue constant measures the second effect. Put $Q=[-1,1]^2$
+and let $C(Q)$ denote the continuous real functions on $Q$, with
+$\|f\|_\infty=\max_{z\in Q}|f(z)|$. Let $\Pi_n$ be the real
+polynomials of total degree at most $n$. For the interpolation operator
+$I_n:C(Q)\to\Pi_n$, its induced norm is
+$\|I_n\|=\sup_{\|f\|_\infty\leq1}\|I_nf\|_\infty$.
+Writing $\Lambda_n=\|I_n\|$, we have
 \begin{equation}\label{eq:lebesgue-inequality}
  \|f-I_nf\|_\infty\leq (1+\Lambda_n)
        \inf_{p\in\Pi_n}\|f-p\|_\infty.
@@ -73,7 +78,8 @@ its maximum. The change of orientation depends only on parity.}
 \label{fig:padua-nodes}
 \end{figure}
 
-Let $L_B$ be the cardinal polynomial associated with $B\in\mathcal P_n$.
+Let $L_B\in\Pi_n$ be the cardinal polynomial associated with
+$B\in\mathcal P_n$: it is one at $B$ and zero at every other node.
 The Lebesgue function and its maximum are
 \[
  \lambda_n(z)=\sum_{B\in\mathcal P_n}|L_B(z)|,
@@ -108,12 +114,14 @@ and their arithmetic assumptions.
 
 Knowing the location reduces the Lebesgue constant to a single corner
 value. Our second result describes that value much more precisely than
-its leading growth rate. Write
+its leading growth rate. Here Euler's constant is
+$\gamma=\lim_{R\to\infty}(H_R-\log R)$, where
+$H_R=\sum_{r=1}^R r^{-1}$. Write
 \begin{equation}\label{eq:main-constants}
  a=\frac2\pi,\qquad d=\gamma+\log\frac8\pi,\qquad
  c_1=ad,\qquad b=2ac_1,\qquad c=c_1^2+\kappa,
 \end{equation}
-where $\gamma$ is Euler's constant and
+with
 \begin{equation}\label{eq:main-kappa}
  \kappa=\frac8\pi\int_0^1 t^2\cot\frac{\pi t}{2}
        \sum_{\substack{\ell\geq1\\\ell\text{ odd}}}

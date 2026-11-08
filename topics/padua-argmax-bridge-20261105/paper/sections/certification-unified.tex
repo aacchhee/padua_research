@@ -14,6 +14,18 @@ kernels or cardinals are smooth. The signs realizing the maximum may
 change inside a leaf; a bound valid for every complete signed sum
 continues to hold across all such changes.
 
+For a rectangle $R=[a_0,a_1]\times[b_0,b_1]$ with positive side lengths,
+the normalized coordinates of $(a,b)\in R$ and the degree-$n$
+Bernstein basis are
+\[
+ s=\frac{a-a_0}{a_1-a_0},\qquad
+ t=\frac{b-b_0}{b_1-b_0},\qquad
+ B_i^n(s)=\binom ni s^i(1-s)^{n-i},\quad 0\leq i\leq n.
+\]
+The basis functions are nonnegative and sum to one on $[0,1]$.
+Tensor Bernstein coefficients are the coefficients in the product
+basis $B_i^n(s)B_j^n(t)$.
+
 \begin{lemma}[Positive interpolation bounds]\label{cert:positive}
 Let $F(z)=\max_{\sigma}f_\sigma(z)$, where the maximum is finite.
 On a rectangle $R=[a_0,a_1]\times[b_0,b_1]$, suppose
@@ -56,7 +68,18 @@ partition of unity of the Bernstein basis, after the triangle inequality
 For $2\leq n\leq40$ the direct certificate uses the corrected cardinal
 kernel of Lemma~\ref{lem:cardinal-kernel}. Outward rational enclosures of
 its coefficients are converted to tensor Bernstein form on the square.
-Binary midpoint subdivision uses de Casteljau averages rounded outwards. On each leaf
+Binary midpoint subdivision uses de Casteljau averaging: starting from
+one-variable Bernstein coefficients $d_i^{(0)}=d_i$, $0\leq i\leq n$,
+form
+\[
+ d_i^{(r)}=\frac{d_i^{(r-1)}+d_{i+1}^{(r-1)}}2,
+ \qquad 1\leq r\leq n,\quad 0\leq i\leq n-r.
+\]
+The left and right child coefficients are respectively $d_0^{(r)}$
+in increasing $r$ and $d_i^{(n-i)}$ in increasing $i$; the construction
+is applied in each coordinate for tensor data \cite{Lorentz1986}.
+For coefficient intervals, every lower average is rounded down and every
+upper average up, preserving outward enclosures. On each leaf
 all coefficient absolute sums in \eqref{cert:bernstein} must be strictly
 less than a validated lower endpoint $L_c\leq\Lambda_c(n)$.
 A leaf containing a designated corner exempts only its vertex coefficient:
@@ -324,10 +347,17 @@ $W_x,W_y,W_{xy}$. The checker constructs its own GRID or complete TREE
 norm from these new values. Its conclusion certifies the complete trees
 with these independently constructed bounds.
 
-The arithmetic starts with an exact rational Machin enclosure of $\pi$.
+The arithmetic starts with the exact rational enclosure from Machin's
+identity $\pi=16\arctan(1/5)-4\arctan(1/239)$.
 Integer argument reduction and reflection put the sine arguments in
-$[0,\pi/2]$. A Taylor polynomial with proved truncation and roundoff
-bounds then supplies sine intervals. General interval operations widen
+$[0,\pi/2]$. Let $\epsilon_{\mathrm{fp}}=2^{-53}$ be the unit roundoff,
+and let $0<t<2$ be the rounded nonzero reduced argument.
+The degree-25 Taylor polynomial, evaluated by Horner's rule (successive
+nested multiplication and addition), has error less than
+$84\epsilon_{\mathrm{fp}}t$; the implemented allowance is
+$128\epsilon_{\mathrm{fp}}t$. The arithmetic proof in the reproducibility
+package derives this bound and its integer and normal-operation guards.
+General interval operations widen
 each endpoint to an adjacent binary64 value, and summation widens every
 pairwise addition. The finite endpoints have the exact form $m2^e$ with
 integers $m,e$; conversion to rationals preserves their values.

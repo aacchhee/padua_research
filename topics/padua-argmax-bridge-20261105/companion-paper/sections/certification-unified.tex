@@ -115,7 +115,7 @@ affine coordinates carrying the rectangle to $[0,1]^2$. The phrase
 in this product basis. The parameters $\omega_a,\omega_b$ in the
 smooth interpolation estimate record the scale of the second derivative
 in each coordinate; for the phase application they will be $\pi$ and
-$\pi k$.
+$\pi\mu$.
 
 \begin{lemma}[Positive interpolation bounds]\label{cert:positive}
 Let $F(z)=\max_{\sigma}f_\sigma(z)$, where the maximum is finite.
@@ -898,8 +898,10 @@ $e^{-2id\tau_j}=-1$ gives the exact endpoint multiplier identity
 Multiplying by $e^{-idx}$ gives $-id e^{-idx}$, the derivative of
 the negative endpoint mode at an arbitrary base point $x$.
 
-For the absolute coefficient sum, the finite product for the equally
-spaced sine zeros yields, after logarithmic differentiation twice,
+For the absolute coefficient sum, use the finite sine-product
+factorization derived in the proof of Lemma~\ref{uc:master}.
+One logarithmic derivative gives the finite cotangent sum; a second,
+using $(\cot x)'=-\csc^2x$ on an interval avoiding its poles, gives
 \[
  \sum_{j=0}^{p-1}\csc^2\left(x+\frac{j\pi}{p}\right)
        =p^2\csc^2(px).
@@ -914,48 +916,6 @@ to obtain $\|T''\|_\infty\leq d^2\|T\|_\infty$.
 If the argument is rescaled so the highest frequency is $\omega$,
 the same chain rule gives $\omega^2$ in the second derivative bound.
 All norms in this calculation extend over the full real argument.
-
-The sine product and its differentiation can be made equally
-explicit. For an integer $p\geq1$, let
-$\zeta=e^{2\pi i/p}$. The numbers $1,\zeta,\ldots,\zeta^{p-1}$
-are precisely the distinct roots of $w^p-1$. Both $w^p-1$ and
-the product of the factors $w-\zeta^j$ have leading coefficient one
-(they are monic), and they have the same degree and roots. Hence
-\[
- \prod_{j=0}^{p-1}(w-\zeta^j)=w^p-1.
-\]
-Writing each sine as a difference of two exponentials and putting
-$w=e^{2ix}$ in this identity gives
-\[
- \prod_{j=0}^{p-1}\sin\left(x+\frac{j\pi}{p}\right)
-       =2^{1-p}\sin(px).
-\]
-For example, the exponential factor in the product of the numerators
-$e^{2ix}\zeta^j-1$ is
-$\prod_j\zeta^j=(-1)^{p-1}$; after the factors
-$e^{-i(x+j\pi/p)}/(2i)$ from the sine formula are included, the
-constant is exactly $2^{1-p}$. Thus this is a finite polynomial
-factorization identity, valid for every real $x$.
-
-On an interval where no factor is zero, differentiate the logarithm
-of the absolute value of each side. The derivative of
-$\log|\sin t|$ is $\cot t=\cos t/\sin t$. The first derivative
-therefore gives
-\[
- \sum_{j=0}^{p-1}\cot\left(x+\frac{j\pi}{p}\right)
-       =p\cot(px).
-\]
-Differentiating once more, using $(\cot t)'=-\csc^2t$ and the
-chain rule on the right, gives
-\[
- -\sum_{j=0}^{p-1}\csc^2\left(x+\frac{j\pi}{p}\right)
-       =-p^2\csc^2(px).
-\]
-Here $\csc t$ means $1/\sin t$. For the required choice
-$p=2d$, $x=\pi/(4d)$, every sine in the finite sum is nonzero
-and $px=\pi/2$. Hence the sum equals $4d^2$, exactly as used
-in the coefficient norm calculation. The logarithmic derivatives
-have been applied on a domain where each expression is defined.
 
 Apply this one-variable calculation with the other coordinate held
 fixed. Each complete signed board sum obeys
@@ -1031,36 +991,10 @@ number $M_*$, even while its value is unknown. The inequality
 $|f_\varepsilon|\leq S_n\leq M_*$ follows directly from the signed
 sum definition and holds before any leaf test is performed.
 
-For completeness, the reduction of the global phase plane to the
-triangle can be followed by explicit symmetries. Reindexing the
-periodic board gives, for integers $p,q$ with $p+q$ even,
-\[
- S_n(\alpha+p\pi,\beta+q\pi)=S_n(\alpha,\beta).
-\]
-Indeed the new arguments are obtained by replacing the periodic
-indices $r,s$ by $r+p,s+q$. Their odd parity is preserved because
-$p+q$ is even, so this is a permutation of the same finite board.
-The separate evenness of the cosine kernel also gives
-\[
- S_n(-\alpha,\beta)=S_n(\alpha,\beta),\qquad
- S_n(\alpha,-\beta)=S_n(\alpha,\beta),
-\]
-by the replacements $r\mapsto-r$ or $s\mapsto-s$ on that board.
-The phrase ``even lattice'' refers to the translation vectors
-$(p\pi,q\pi)$ in the first identity.
-
-Start from any real pair $(\alpha,\beta)$. Translations by $2\pi$
-in each coordinate first put the two coordinates in $[-\pi,\pi]$.
-Taking absolute values by the separate evenness then gives a pair
-$(x,y)\in[0,\pi]^2$ with the same envelope value. If $x+y\leq\pi$,
-that pair already lies in $\pi\mathcal T$. If $x+y>\pi$, translate
-by $(-\pi,-\pi)$ and reflect both signs. This gives
-$(\pi-x,\pi-y)$, whose nonnegative coordinate sum is
-$2\pi-x-y<\pi$. Thus every real pair has the envelope value of a
-point of the closed triangle. Conversely that triangle is part of
-the real plane. Its maximum and the global supremum are therefore
-the same number. This is the compactness reduction needed before
-using the unknown true norm in the interpolation argument.
+The explicit board reindexing and closed-triangle folding are proved
+following \eqref{ul:projections} in Section~\ref{sec:argmax}. Here we
+use that reduction with the mathematically existing norm $M_*$,
+before assigning any numerical bound to it.
 Consequently the derivative argument is
 valid initially with this true, possibly unknown, norm. If all leaves
 are numerical and $\theta_R<1$, a leaf containing that point gives
@@ -1342,105 +1276,13 @@ exactly at the origin. Three actual function values, together with
 the exact value at the origin and the derivative allowance, suffice
 for this conclusion through squared-variable interpolation.
 
-Here is the reason for the squared coordinates. For a complete signed
-cardinal sum put
-\[
- p_\varepsilon(A,B)=\sum_\ell\varepsilon_\ell
- L_\ell\bigl(-\cos(A/n),-\cos(B/(n+1))\bigr).
-\]
-Each such function is even separately in $A$ and $B$, because both
-physical coordinates are cosine functions. In particular its first
-and third derivatives in either inward phase vanish at zero. It is
-also a finite trigonometric polynomial of bandwidth at most $1$ in
-$A$ and $\mu$ in $B$. All real inward phases give physical coordinates
-in the square, so
-\[
- |p_\varepsilon(A,B)|\leq
- \lambda_n\bigl(-\cos(A/n),-\cos(B/(n+1))\bigr)\leq M
-\]
-holds globally. The last bound follows from the already certified
-envelope norm and the chart inequality $\lambda_n\leq S_n$.
-The trigonometric derivative estimate therefore applies through
-fourth order to every fixed signed sum.
-
-Set $u=A^2/2$, $v=B^2/2$, and write
-$h_\varepsilon(u,v)=p_\varepsilon(\sqrt{2u},\sqrt{2v})$.
-The even power series in each phase gives a smooth function of
-$u,v$ up to the closed axes. For $A>0$, differentiation gives
-\[
- (h_\varepsilon)_{uu}
-       =\frac{A(p_\varepsilon)_{AA}-(p_\varepsilon)_A}{A^3}.
-\]
-To bound this expression at small $A$, integrate the numerator rather
-than estimating its two terms separately. If
-$N(A)=A(p_\varepsilon)_{AA}-(p_\varepsilon)_A$, then
-$N'(A)=A(p_\varepsilon)_{AAA}$ and $N(0)=0$.
-Evenness also gives $(p_\varepsilon)_{AAA}(0,B)=0$, so
-\[
- \begin{aligned}
- (h_\varepsilon)_{uu}(u,v)
- &=\frac1{A^3}\int_0^A t\int_0^t
-                    (p_\varepsilon)_{AAAA}(s,B)\,ds\,dt\\
- &=\int_0^1\!\int_0^1 t^2
-          (p_\varepsilon)_{AAAA}(rtA,B)\,dr\,dt.
- \end{aligned}
-\]
-The last kernel is nonnegative and has total mass $1/3$. The fourth
-derivative bound is $M$ in $A$ and $\mu^4M$ in $B$. Consequently
-\[
- |(h_\varepsilon)_{uu}|\leq M/3,\qquad
- |(h_\varepsilon)_{vv}|\leq \mu^4M/3.
-\]
-The integral expression has a continuous value at $A=0$, namely
-$(p_\varepsilon)_{AAAA}(0,B)/3$, so the first estimate includes
-the axis. The second includes its axis by the same reasoning. This
-explicit extension explains why squared interpolation is valid at
-the origin as well as in the interior.
-
-The smoothness assertion at the closed axes can also be seen directly
-from the cosine series. In the squared variable it becomes
-\[
- \cos(\sqrt{2u}/n)
-      =\sum_{r=0}^\infty
-           \frac{(-1)^r(2u)^r}{n^{2r}(2r)!}.
-\]
-This is a power series in $u$ with infinite radius of convergence.
-On each bounded $u$ interval the factorial denominator gives
-uniform convergence of it and each fixed-order derivative series.
-The corresponding series holds for the other coordinate. A cardinal
-is a finite polynomial in these cosines, so its composition and any
-fixed signed sum have continuous derivatives in $u,v$ up to both
-axes. For example, with $B$ fixed, the even Taylor expansion reads
-\[
- h_\varepsilon(u,v)=p_\varepsilon(0,B)
-  +(p_\varepsilon)_{AA}(0,B)u
-  +\frac{(p_\varepsilon)_{AAAA}(0,B)}6u^2+O(u^3).
-\]
-Its second $u$ derivative at zero is precisely
-$(p_\varepsilon)_{AAAA}(0,B)/3$. This confirms the origin value
-of the integral expression and explains how a coordinate change
-involving a square root still gives a smooth function here.
-
-Apply Lemma~\ref{cert:positive} to these signed functions on a squared
-rectangle $[0,U]\times[0,V]$. Its curvature allowance is
-\[
- \frac M6\{u(U-u)+\mu^4v(V-v)\}.
-\]
-Suppose the vertex upper data have losses at least $cU,cV,c(U+V)$
-from the exact corner value $C$ at the other three vertices. Their
-bilinear interpolant is at most $C-c(u+v)$, because this affine
-function has exactly those four comparison values. Since
-$u(U-u)\leq Uu$ and $v(V-v)\leq Vv$ on the closed rectangle,
-\[
- \frac M6\{u(U-u)+\mu^4v(V-v)\}
- \leq\frac M6\max\{U,\mu^4V\}(u+v).
-\]
-Combining these inequalities and using $u+v=(A^2+B^2)/2$ gives
-\eqref{ul:squared-peano}. The common estimates hold for every
-$p_\varepsilon$, and taking their finite maximum gives the actual
-Lebesgue function. This derives the corner comparison from positive
-interpolation while keeping all cardinal sign changes included.
-
+Evenness in the inward phases, the double-integral extension to the
+closed axes and the nonnegative Peano-kernel argument were derived
+in the proof of Lemma~\ref{ul:corner-lemma}, giving
+\eqref{ul:squared-peano}. A global signed-cardinal bound $M$ gives
+the same squared-coordinate curvature bounds $M/3$ and $\mu^4M/3$.
+We now apply that estimate to the numerical witness rectangle,
+keeping its normalization and physical evaluation points explicit.
 The local descent uses \eqref{ul:squared-peano}. Take
 $U=\pi^2/32$, $V=9\pi^2/512$, and outward actual-function values
 $W_x,W_y,W_{xy}$ at $(\sqrt{2U},0),(0,\sqrt{2V}),
@@ -1663,10 +1505,17 @@ $W_x,W_y,W_{xy}$. The checker constructs its own GRID or complete TREE
 norm from these new values. Its conclusion certifies the complete trees
 with these independently constructed bounds.
 
-The arithmetic starts with an exact rational Machin enclosure of $\pi$.
+The arithmetic starts with the exact rational enclosure from Machin's
+identity $\pi=16\arctan(1/5)-4\arctan(1/239)$.
 Integer argument reduction and reflection put the sine arguments in
-$[0,\pi/2]$. A Taylor polynomial with proved truncation and roundoff
-bounds then supplies sine intervals. General interval operations widen
+$[0,\pi/2]$. Let $\epsilon_{\mathrm{fp}}=2^{-53}$ be the unit roundoff,
+and let $0<t<2$ be the rounded nonzero reduced argument.
+The degree-25 Taylor polynomial, evaluated by Horner's rule (successive
+nested multiplication and addition), has error less than
+$84\epsilon_{\mathrm{fp}}t$; the implemented allowance is
+$128\epsilon_{\mathrm{fp}}t$. The arithmetic proof in the reproducibility
+package derives this bound and its integer and normal-operation guards.
+General interval operations widen
 each endpoint to an adjacent binary64 value, and summation widens every
 pairwise addition. The finite endpoints have the exact form $m2^e$ with
 integers $m,e$; conversion to rationals preserves their values.
@@ -1762,17 +1611,192 @@ weights. This order retains the cancellations in the cardinal formula.
 At a removable collision the exact finite-polynomial value supplies the
 term.
 
-Here a binary64 interval is a pair of finite floating-point endpoints
-with a proved containment property. Correct rounding to nearest can put
-an individual arithmetic result on either side of its exact value.
-Moving the computed lower endpoint to the adjacent smaller value, and
-the upper endpoint to the adjacent larger value, encloses the exact
-operation. The implementation applies this widening after every basic
-interval operation and every addition in its pairwise sum. Gradual
-underflow is included in the arithmetic model. The separate rational
-Taylor and argument-reduction analysis supplies the error allowance
-for the sine evaluation. The resulting endpoint intervals can then be
-converted exactly to rational numbers for all geometric predicates.
+\paragraph{An elementary derivation of the arithmetic bounds.}
+Write $\operatorname{RN}(y)$ for the closest binary64 number to a real
+number $y$, with a tie resolved by choosing the even final binary digit.
+Positive normal numbers have 53 binary significant digits and magnitude
+at least $2^{-1022}$. Smaller positive representable numbers are
+\emph{subnormal}: they are integer multiples of $2^{-1074}$.
+Gradual underflow means that these smaller values are retained down
+to that last positive value. The unit roundoff
+$\epsilon_{\mathrm{fp}}=2^{-53}$ bounds the relative rounding error
+for a nonzero normal exact result:
+\[
+ \operatorname{RN}(y)=y(1+\delta),\qquad
+ |\delta|\leq\epsilon_{\mathrm{fp}}.
+\]
+The relative error in the subnormal range can be larger, so we
+use the relative model only after checking that the Taylor operations
+remain normal. General interval operations use adjacent-value widening,
+which also covers subnormal results. The operation
+$\operatorname{nextafter}(x,-\infty)$ gives the adjacent representable
+number below $x$, and the positive direction gives the one above it.
+Finite-value checks reject an overflow or a nonfinite endpoint.
+
+First construct $\pi$ without a floating-point trigonometric constant.
+For $q=5,239$, the alternating series gives the exact rational brackets
+\[
+ A_{80}(q)=\sum_{j=0}^{79}\frac{(-1)^j}{(2j+1)q^{2j+1}},
+ \qquad
+ A_{80}(q)\leq\arctan(1/q)
+ \leq A_{80}(q)+\frac{1}{161q^{161}}.
+\]
+Insert these brackets in Machin's identity
+$\pi=16\arctan(1/5)-4\arctan(1/239)$, reversing the bounds in
+the subtracted term. The identity itself follows by the rational tangent
+addition formula: $4\arctan(1/5)-\arctan(1/239)$ has tangent one
+and lies between zero and $4/5$, so it equals $\pi/4$.
+Round the resulting rational lower bound down and upper bound up to
+multiples of $2^{-100}$. They give $p_-\leq\pi\leq p_+$ with
+$3<p_-<p_+<22/7$. Exact rational comparison also gives
+\[
+ p_{\mathrm{fp}}=\operatorname{RN}(p_-)
+     =\frac{884279719003555}{2^{48}},\qquad
+ 1-2\epsilon_{\mathrm{fp}}\leq\frac{\pi}{p_{\mathrm{fp}}}
+                  \leq1+2\epsilon_{\mathrm{fp}}.
+\]
+Thus the value of $\pi$ used in the polynomial has an independently
+proved error bound.
+
+Every angle to be evaluated is $\pi$ times an exact integer ratio.
+Integer remainder modulo twice its denominator, followed by reflection,
+reduces its sine to a sign times $\sin\vartheta$, where
+$\vartheta=\pi r/d$ and $0\leq r\leq d/2$. The integer guards are
+checked before conversion or array multiplication: $0<d<2^{52}$ and
+all subsequent signed integer intermediates have magnitude below $2^{62}$.
+The integers $r,d$ therefore convert exactly to binary64.
+If $r=0$, the sine is exactly zero. Removable quotients use the exact
+value $R_\ell(j\pi)=\ell(-1)^{j(\ell-1)}$, rather than dividing
+two zero intervals. At a nonzero reduced argument, form
+\[
+ t=\operatorname{RN}\!\left(p_{\mathrm{fp}}
+                           \operatorname{RN}(r/d)\right).
+\]
+The two rounding factors and the preceding bound for $\pi$ imply
+\[
+ \frac{1-2\epsilon_{\mathrm{fp}}}{(1+\epsilon_{\mathrm{fp}})^2}
+ \leq\frac{\vartheta}{t}\leq
+ \frac{1+2\epsilon_{\mathrm{fp}}}{(1-\epsilon_{\mathrm{fp}})^2},
+ \qquad |\vartheta-t|<6\epsilon_{\mathrm{fp}}t.
+\]
+In particular $2^{-52}<t<2$. Since $|\cos x|\leq1$, the mean-value
+theorem gives $|\sin\vartheta-\sin t|<6\epsilon_{\mathrm{fp}}t$.
+
+The sine polynomial has degree 25:
+\[
+ P_{\mathrm{sin}}(t)
+  =t\sum_{j=0}^{12}c_j^{\mathrm{sin}}(t^2)^j,
+ \qquad c_j^{\mathrm{sin}}=\frac{(-1)^j}{(2j+1)!}.
+\]
+Taylor's formula can be taken through degree 26, whose coefficient is
+zero. Its remainder, using $t<2$, therefore satisfies
+\[
+ |\sin t-P_{\mathrm{sin}}(t)|
+ \leq\frac{t^{27}}{27!}
+ \leq\frac{2^{26}}{27!}t<\epsilon_{\mathrm{fp}}t.
+\]
+Each coefficient is rounded once to
+$\widehat c_j^{\mathrm{sin}}=\operatorname{RN}(c_j^{\mathrm{sin}})$;
+its error is at most $\epsilon_{\mathrm{fp}}/(2j+1)!$.
+Horner's rule evaluates from the highest coefficient down, with one
+multiplication and one addition per step. The actual separate operations are
+\[
+ \begin{aligned}
+ z&=\operatorname{RN}(t^2),\qquad h_{12}=\widehat c_{12}^{\mathrm{sin}},\\
+ h_j&=\operatorname{RN}\!\left(
+           \operatorname{RN}(z h_{j+1})+\widehat c_j^{\mathrm{sin}}\right)
+                  \quad(j=11,\ldots,0),\\
+ \widehat s&=\operatorname{RN}(t h_0).
+ \end{aligned}
+\]
+Here the normal-operation guard is concrete. Consecutive absolute
+Taylor coefficients have ratio at least six, while $z<4$.
+Starting at $h_{12}$, backward induction gives the sign
+$(-1)^j$ and bounds
+\[
+ \frac14|c_j^{\mathrm{sin}}|<|h_j|
+       \leq(1+\epsilon_{\mathrm{fp}})^2|c_j^{\mathrm{sin}}|.
+\]
+Indeed the upper bound at step $j+1$ makes the subtracted product
+at step $j$ at most
+$(2/3)(1+\epsilon_{\mathrm{fp}})^3|c_j^{\mathrm{sin}}|$.
+The rounded coefficient has magnitude at least
+$(1-\epsilon_{\mathrm{fp}})|c_j^{\mathrm{sin}}|$, and
+\[
+ (1-\epsilon_{\mathrm{fp}})
+ \left[1-\epsilon_{\mathrm{fp}}
+                  -\frac23(1+\epsilon_{\mathrm{fp}})^3\right]>\frac14.
+\]
+This proves the lower bound and preserves the sign; subtracting a
+positive magnitude also gives the stated upper bound after rounding.
+There is no underflow hidden in this induction: $t>2^{-52}$,
+$z>2^{-105}$ and $1/25!>2^{-85}$ put every such product above
+$2^{-192}$, and every tail is larger still. These magnitudes are
+far above $2^{-1022}$. Thus each multiplication and addition has a
+normal exact result before its relative error is used. Zero arguments
+are handled separately and their sine value is exactly zero.
+
+Expanding the Horner recurrence now counts the errors without assuming
+that they have the same sign. Each monomial acquires at most 25 factors
+from the 12 multiplications, 12 additions and final multiplication,
+12 factors from the repeated use of the rounded $t^2$, and one from
+coefficient conversion: at most 38 in total. If each factor is
+$1+\delta$ with $|\delta|\leq\epsilon_{\mathrm{fp}}$, their product
+differs from one by at most
+\[
+ \gamma_{38}=\frac{38\epsilon_{\mathrm{fp}}}
+                         {1-38\epsilon_{\mathrm{fp}}}.
+\]
+This elementary estimate follows by bounding the expanded product by
+the geometric series in $38\epsilon_{\mathrm{fp}}$; the analogous
+lower bound follows from $(1-\epsilon_{\mathrm{fp}})^{38}
+\geq1-38\epsilon_{\mathrm{fp}}$. The absolute coefficient majorant is
+\[
+ \sum_{j=0}^{12}\frac{4^j}{(2j+1)!}
+ \leq1+\frac23+\frac2{15}
+           +\frac{64/7!}{1-1/18}<2.
+\]
+The geometric tail bound uses the fact that successive terms after
+$64/7!$ have ratio at most $1/18$.
+Consequently the evaluation error is
+$|\widehat s-P_{\mathrm{sin}}(t)|\leq2\gamma_{38}t
+<77\epsilon_{\mathrm{fp}}t$. Adding this error, the Taylor remainder
+and the argument error gives
+\[
+ |\widehat s-\sin\vartheta|
+ <(77+1+6)\epsilon_{\mathrm{fp}}t
+ =84\epsilon_{\mathrm{fp}}t
+ <128\epsilon_{\mathrm{fp}}t.
+\]
+The checker uses $E=128\epsilon_{\mathrm{fp}}t=t2^{-46}$, an exact
+normal power-of-two scaling, and moves
+$\operatorname{RN}(\widehat s-E)$ one representable value down and
+$\operatorname{RN}(\widehat s+E)$ one value up. This contains the
+exact lower and upper limits. Intersecting with $[0,1]$ is valid
+because the true reduced argument lies in $[0,\pi/2]$; it does not
+require the rounded $t$ to remain on the increasing side of sine.
+The integer sign is restored by negating and exchanging endpoints
+when necessary.
+
+The remaining interval rules require only finite arithmetic and
+ordering. For addition, round the lower sum and move down, and round
+the upper sum and move up. For a product, enclose the smallest and
+largest of the four endpoint products in the same way. Division uses
+the four endpoint quotients only when the denominator interval excludes
+zero. One adjacent-value step encloses the exact operation even in
+the subnormal range. Taking an interval absolute value uses its endpoint
+signs and includes zero when the interval crosses zero.
+Pairwise summation is then justified by induction on its addition tree:
+each initial interval contains its exact summand, and the widened sum
+of two valid intervals contains the exact sum of their contents.
+An unpaired interval is carried to the next level unchanged. This
+proves enclosure of the whole finite sum for every array length.
+Endpoint half weights are widened by the same product rule.
+Finally every finite binary64 endpoint is an exact dyadic rational
+$m2^e$. Converting that pair of integers to a rational and dividing
+by the exact normalization integer $2n(n+1)$ introduces no further
+rounding. All subsequent norm and geometric inequalities therefore
+use exact rational bounds.
 
 The checker reconstructs the required phase vertices from the tree and
 the chosen norm method. At every retained exact argument it evaluates

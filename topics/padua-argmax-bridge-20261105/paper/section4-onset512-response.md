@@ -278,3 +278,19 @@ check passes 19 formal statements, 85 numbered display environments and116
 labels. The distinct mathematical review accepts the current Section4 and
 Section5 sources; final build/layout and Sol max presentation review follow.
 The developer-release/preflight identities above remain historical.
+
+
+## Final clarity follow-up
+
+The Sol max review checks the complete pair and the bounded follow-ups.
+The journal constant construction keeps every series/tail, finite bracket
+rule and consumed comparison; expanded proofs remain in the companion.
+Only duplicate companion derivations are removed, with unique telescope
+identities and endpoint matching retained. Local definitions now precede
+positive-part, zeta, Lipschitz/BV/derivative-measure and measure-order
+notation. Dominated convergence, Fubini, Tonelli and layer cake have their
+actual versions/applicability stated; the Machin identity is explicit.
+Bernstein's derivative bound is stated and cited at its first use, with
+scaled-angle factors1 andmu explained. The phase-region figure is enlarged.
+The final source pass preserves19 statements,85 numbered environments and116
+labels. Page count is recorded as build metadata rather than an objective.

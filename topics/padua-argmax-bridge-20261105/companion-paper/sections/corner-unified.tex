@@ -296,11 +296,9 @@ $x=r/m$, $s=m-r$, $\alpha_r=(1-x)/2$ and
  \qquad V_n=\sum_{r=1}^{m-1}w(r/m)
                     \sum_{\ell=0}^{r-1}B((\ell+\alpha_r)/n).
 \]
-We use a convergent difference of reciprocal sums to define $\psi$.
-For fixed $z>0$, its $k$th summand is
+For fixed $z>0$, the $k$th summand of the series below is
 $(z-1)/((k+1)(k+z))=O((k+1)^{-2})$, so the series converges
-absolutely. We use the digamma function $\psi=\Gamma'/\Gamma$, characterized here
-by its convergent harmonic series,
+absolutely. We define the digamma function $\psi$ by its convergent harmonic series:
 \begin{equation}\label{cu:psi}
  \psi(z)=-\gamma+\sum_{k=0}^\infty
           \left(\frac1{k+1}-\frac1{k+z}\right),\qquad z>0,
@@ -337,9 +335,11 @@ its complete periodic sum are
 Here the sum is over the $n$ indices $j\equiv1-r\pmod2$
 modulo $2n$. The trigonometric expression follows from
 \[
- \cot A+\cot B=\frac{\sin(A+B)}{\sin A\sin B},\quad
- 2\sin\frac{v-u}{2}\sin\frac{v+u}{2}=\cos u-\cos v,
- \quad \cot(v/2)\sin v=1+\cos v.
+ \begin{aligned}
+ \cot A+\cot B&=\frac{\sin(A+B)}{\sin A\sin B},\\
+ 2\sin\frac{v-u}{2}\sin\frac{v+u}{2}&=\cos u-\cos v,\\
+ \cot(v/2)\sin v&=1+\cos v.
+ \end{aligned}
 \] We prove the asserted
 signed sum next.
 

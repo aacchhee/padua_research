@@ -325,10 +325,11 @@ We use $\psi(t)=-\gamma+\sum_{k\geq0}\{(k+1)^{-1}-(k+t)^{-1}\}$,
 so $\mathcal C(t)=-\psi(t)-\psi(1-t)$.
 
 \paragraph{A derivative measure and a finite part.}
-A Lipschitz function satisfies $|f(w)-f(v)|\leq K|w-v|$. Its first
-derivative can still jump. Here its ordinary second derivative is $g$
+A Lipschitz function satisfies $|f(w)-f(v)|\leq K|w-v|$;
+$\operatorname{Lip}(f)$ is the least such $K$. Its first
+derivative can still jump. Here its ordinary second derivative is $f''$
 away from the cusp, and $f'$ has a downward jump of size $J_0$ at the
-joined endpoint. The notation $df'=g(w)\,dw-J_0\delta_\pi$ includes
+joined endpoint. The notation $df'=f''(w)\,dw-J_0\delta_\pi$ includes
 both changes. Integrating this measure over an interval gives the
 change of $f'$ across that interval; the point mass $\delta_\pi$
 contributes one if the cusp lies inside. Total variation adds the
@@ -557,18 +558,6 @@ The numerator's $t$ derivative has magnitude at most
 $3/4+\pi/8<23/20$, giving $|f'''|<23/40+3/40=13/20$: the numerator vanishes at $t=1/2$,
 so its modulus is at most $(23/20)(1/2-t)$; division by
 $\cos\pi t\geq2(1/2-t)$ bounds the quotient by $23/40$.
-For $0<w\leq\pi$, monotonicity of $r\cot r$ gives
-$\sin(tw)/\sin(w/2)\leq\sin\pi t$. Since $f(0)<3/5$, split
-$[0,1/2]$ at $1/4,3/8$, use respectively $\sin\pi t\leq(22/7)t$
-and $t^3\sin\pi t\leq27/512$, and discard the negative last part.
-This yields
-\[
- \frac{f'''(w)}{\sin(w/2)}
- <\frac3{40}+\frac{44}{35\cdot1024}-\frac1{16}-\frac{37}{2048}
- =-\frac{311}{71680}<0.
-\]
-Consequently $f''$ is even and decreases radially.
-
 The sine-ratio step follows from ordinary differentiation. For fixed
 $0<t<1/2$ set $R_t(w)=\sin(tw)/\sin(w/2)$. On $0<w<\pi$,
 \[
@@ -593,9 +582,14 @@ negative number smaller. Thus the first two interval contributions are
 \]
 The last interval contributes a negative amount, which may be dropped
 for an upper bound. Together with $f(0)/8<3/40$, these evaluated
-integrals give exactly the rational negative coefficient above.
-
-The sign of the third derivative says that $f''=f''$ decreases as
+integrals give
+\[
+ \frac{f'''(w)}{\sin(w/2)}
+ <\frac3{40}+\frac{44}{35\cdot1024}-\frac1{16}-\frac{37}{2048}
+ =-\frac{311}{71680}<0.
+\]
+Evenness of $f$ makes $f''$ even, and the third-derivative sign says
+that $f''$ decreases as
 $|w|$ increases from zero to $\pi$. This is the meaning of radially
 decreasing on the circle. It is the order property needed for the
 finite-part maximum. Pairing the endpoints removes the logarithmic
@@ -633,8 +627,11 @@ It follows by integrating the derivative twice. For a derivative of
 bounded variation the same identity holds with its finite measure
 $df'$ in place of $f''\,ds$; the triangular weight is continuous.
 Integrating this identity against the reciprocal-sine kernel gives
-$\mathcal{W}$. Its boundedness and the finite total variation justify the
-interchange of the two integrals. The ordinary curvature yields the
+$\mathcal{W}$. Fubini's theorem permits an exchange of integrals when
+their absolute integral is finite. Here that integral against the
+total-variation measure $|df'|$ is at most
+$\|\mathcal W\|_\infty\operatorname{Var}_{\rm per}f'<\infty$.
+The ordinary curvature yields the
 convolution term; the cusp yields the separate negative term.
 
 The layer-cake argument can be expressed using indicator functions:
@@ -647,8 +644,7 @@ therefore only decrease the centered convolution. Subtracting the
 minimum of $f''$ makes it nonnegative without changing which translate
 maximizes its convolution with $\mathcal{W}$.
 
-The finite-variation bound justifies Fubini, and $\mathcal W(\pi)=0$
-counts the atom once.
+The value $\mathcal W(\pi)=0$ counts the atom once.
 
 The final quadratic comparison also follows by integration. Since
 $f'(0)=0$, the upper measure bound gives
@@ -1160,7 +1156,7 @@ $\int_0^\pi|\log\sin t|dt=\pi\log2$.
 Write $I_L(t)+I_R(t)$ for the two folded cancellation integrals.
 The pole-profile part of the completed integral is
 $c_eH(x-y)+c_dH(x+y)$: insert the two shifted $f$ numerators in the
-definition of $\bar{L}$, reflect the second integration variable, and use
+definition of $H$ in \eqref{uc:H}, reflect the second integration variable, and use
 its periodicity. Their common endpoint value is $U_0$, so their
 counterterm is $(2U_0/\pi)\log(\epsilon/\pi)$.
 Subtracting this counterterm from the one in $C_\infty$ leaves
@@ -1499,8 +1495,6 @@ approximation and a global norm bound. The second is a lower estimate
 at the actual finite origin. The last compares $S_n$ with the exact
 finite corner $\Lambda_c$. The lower origin estimate is used only
 for $n\geq160$, which explains that restriction in the last result.
-The two-radius form of the last bound keeps distinct constants on the
-two domains, with tighter bounds on the smaller domain.
 
 \begin{theorem}[Comparison with the completed model]\label{uc:finite-bounds}
 Let $n\geq32$ be an integer. On the closed phase triangle,
@@ -1706,7 +1700,19 @@ counterterms defining $C_\infty$, leaving $C_\infty-E_\infty$.
 Finally the subtracted central logarithm contributes
 $-(d_+/\pi)\mathcal L_c$.
 
-Let $B_{\rm ord}$ denote the ordinary-row profile sum in the
+For $z=h(k+t)=\pi(k+t)/m$, the normalized singular sample is exactly
+\[
+ \frac1m\frac{U_0+(4\mathsf{a}/\pi)(L+\log z)}z
+ =\frac{D_0-B_0\log(m/n)}{k+t}
+       +B_0\frac{\log(k+t)}{k+t}.
+\]
+For either offset, the series definitions give
+\[
+ h_2(t)-h_n(t)=\sum_{k=2}^{n-1}\frac1{k+t},\qquad
+ g_2(t)-g_n(t)=\sum_{k=2}^{n-1}\frac{\log(k+t)}{k+t}.
+\]
+Pairing the offsets produces $\mathcal H_2-\mathcal H_n$ and
+$\mathcal Q_2-\mathcal Q_n$. Let $B_{\rm ord}$ denote the ordinary-row profile sum in the
 definition of $E_{\rm row}$. The finite harmonic recurrences give
 \[
  \begin{aligned}
@@ -1737,29 +1743,6 @@ This is the displayed $R_{\rm mesh}$, including both its finite upper
 index and its constant normalization.
 The same identity holds after applying
 $\delta_aX=X(x,y)-\mathsf{a}X(0,0)$.
-
-\paragraph{Algebra of the telescope.}
-The word telescope refers to cancellation of neighboring cell
-primitives. With $z=h(k+t)=\pi(k+t)/m$, the singular sample, including
-the factor $1/m$, is exactly
-\[
- \frac1m\frac{U_0+(4\mathsf{a}/\pi)(L+\log z)}z
- =\frac{D_0-B_0\log(m/n)}{k+t}
-       +B_0\frac{\log(k+t)}{k+t}.
-\]
-This is the stated expression with $Z_n=D_0-B_0\epsilon_n$.
-The identity uses $m=n+1$ in $\epsilon_n=\log(m/n)$.
-For either offset the series definitions give
-\[
- h_2(t)-h_n(t)=\sum_{k=2}^{n-1}\frac1{k+t},\qquad
- g_2(t)-g_n(t)=\sum_{k=2}^{n-1}\frac{\log(k+t)}{k+t}.
-\]
-Indeed all intermediate logarithmic cell boundaries cancel exactly.
-Pairing the two offsets produces $\mathcal H_2-\mathcal H_n$ and
-$\mathcal Q_2-\mathcal Q_n$. The lower terms combine with $E_2$;
-the upper terms and the explicit integral counterterms produce
-$R_{\rm mesh}$. The identity thus keeps the small distinction between
-$\log m$ and $\log n$ as a known term.
 
 The operator $\delta_a$ is linear for a fixed phase: it subtracts
 $\mathsf{a}$ times the origin value. Since the leading model coefficient is
@@ -2289,7 +2272,6 @@ reference part. At zero $P=0$, so this part of the absolute argument
 immediately gives the sharper origin row bound $D$.
 
 \paragraph{Absolute charges in the same telescope.}
-The remaining estimates in \eqref{uc:telescope} are
 The following phase-dependent quantities are proof intermediates.
 \begin{align}\label{uc:phase-allowance}
  D_a&=((52/\pi^2)\bar{L}+7)/n+20\bar{L}/(\pi n^2),\quad
@@ -2910,23 +2892,6 @@ On $[h/2,\pi-h/2]$,
 \begin{equation}\label{uc:origin-variation}
  \operatorname{Var}F_0'\leq L/2+(25/2)\log(2m)+37/3=:V_F.
 \end{equation}
-Here are component estimates proving this bound. The cotangent
-residual has $|(\cot z-1/z)''|<1$ on $[0,\pi/2]$;
-$0\leq d\leq1/5$, $0\leq d'\leq1/3$, $|d''|\leq5/32$.
-Thus $\operatorname{Var}(b'/\pi)\leq1/2$.
-From $f'(0)=0$, $|f'|<2$, $|f''|<1$ one obtains
-$|(2(f-f(0))/z)''|\leq8/z$ and
-$\int_0^\pi|(2fd)''|<9$. Hence
-$\operatorname{Var}P_0'\leq8\log(2m)+9$.
-Initially write $Q_0=b\log\sin z+4\int_0^1(\cot(tz)-(tz)^{-1})dt$.
-The second derivatives of the first and last regular factors cost one
-and three; the other product terms cost $(9/2)\int dz/z$.
-Centrally, $2\tan(e/2)\log\sin e$, $e=\pi-z$, costs
-$4+9\int de/e$, while $-4\log z/z$ costs two.
-Their derivatives match at $\pi/2$, giving
-$\operatorname{Var}Q_0'\leq(27/2)\log(2m)+10$ and
-\eqref{uc:origin-variation} after division by $\pi>3$.
-
 \paragraph{Derivative calculations for the signed origin bound.}
 These component bounds can be checked using ordinary derivatives.
 For $c(z)=\cot z-1/z$, the preceding partial-fraction estimate gives
@@ -2979,7 +2944,9 @@ $2\mathsf{T}_c'\cot e$, and $-\mathsf{T}_c\csc^2e$ cost respectively less than f
 $4\int de/e$, and $5\int de/e$, using
 $\mathsf{T}_c\leq2e$, $\mathsf{T}_c'\leq2$, $\mathsf{T}_c''\leq2$. The remaining function
 $-4\log z/z$ has second derivative bounded by $12/z^3$ and integral
-$18/\pi^2<2$ on that half. Adding gives
+$18/\pi^2<2$ on that half. The two representations of $Q_0$ are
+smooth at $\pi/2$, so their first derivatives agree there and add no
+variation atom. Adding gives
 $(27/2)\log(2m)+10$. Finally
 \[
  \frac L2+8\log(2m)+9+
@@ -3034,7 +3001,7 @@ Here $Q_0\leq0$ and $L>3$, so
 $F_0<-21/20+101/100=-1/25$. The central omitted integrals are
 therefore favorable. Combining the midpoint term with the initial holes,
 \[
- \frac{\pi V}{4m^2}+\frac{119\pi}{24m^2}
+ \frac{\pi V_F}{4m^2}+\frac{119\pi}{24m^2}
  =\frac\pi{8m^2}\{L+25\log(2m)+193/3\},
 \]
 which explains every part of $B_{\rm out}$.
@@ -3320,7 +3287,7 @@ The next step locates the positive samples of the retained endpoint
 rows before differentiating their contributions. The bound
 $2\mathsf{a}-P\geq17/32$ keeps the relevant numerators strictly positive.
 The lower bounds for $w\pm z$ and $\mu w\pm z$ protect their
-denominators on each of the two phase domains. The first excluded
+denominators on $\rho\leq1$. The first excluded
 index has the opposite denominator sign, proving that no positive
 sample has been missed. This exact membership is needed for the signed
 row identity: an extra or missing sample would change an order-$1/n$
@@ -3895,7 +3862,7 @@ by the exact algebra
 \]
 The inequality uses $u\geq0$ and the one-sided origin bound. In the
 table the factor $\mathsf{a}A_4$ becomes $A_4-uA_4$, and
-$\mathsf{a}\rho J_\sigma$ becomes $\rho J_\sigma-u\rho J_\sigma$.
+$\mathsf{a}\rho J_W$ becomes $\rho J_W-u\rho J_W$.
 These negative $u$ terms strengthen the final model loss. The
 unweighted allowances combine into $C_4$ and the linear phase terms.
 Replacing $P$ by $\rho=x+y$ keeps their explicit coordinate form;
