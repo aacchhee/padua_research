@@ -220,3 +220,23 @@ mechanism, signed h-expansion, finite test or second round was launched.
 ## Root disposition after distinct mathematical review —2026-11-07
 
 Root accepts the routine identity/normalization and OPEN/deferred disposition; no improved finite origin bound or O(n) evaluator is adopted. The original frozen proof prefix is preserved and identified in [independent mathematical review](../independent-checks-F02-F03.md). Novelty/priority, disclosed chronology and final Claude/readiness judgments remain separate and unwaived.
+
+
+## Dated canonical-source correction — 2026-11-08 (F-01, H-C02)
+
+Sections 1–3 above are preserved historical text. Their classification as
+only routine support and the statement that no substantive PROVED F03 result
+is offered are superseded: H depends on the exact identities, so their
+canonical PROVED record is now
+[PD-T?argmax-bridge-codex-F03-identities](F03-identities-support.md).
+Split into: that supporting result; its original-to-split mapping awaits the
+orchestrator's reviewed crosswalk application. The source and audit pins at
+`b45e29fa1fe3dbfa2517ff8043e5d9c440870530` remain historical evidence.
+
+The original target (T), E_n(0)>=0 for every integer n>=160, and the useful
+E_n(0)>=-ebar(n)/4 target remain **OPEN**, with the same accepted E08 ebar.
+The exact identities are supporting lemmas, not proved cases or conjuncts
+of either target; neither target becomes PARTIAL. H uses only the split
+identities, not the OPEN sign or proposed one-index evaluator. The H theorem
+can imply eventual positivity without an explicit onset; it supplies no
+proved n>=160 sign bound or adopted useful allowance here.

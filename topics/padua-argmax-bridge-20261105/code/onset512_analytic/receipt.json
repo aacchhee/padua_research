@@ -1,0 +1,23 @@
+{
+  "date_utc": "2026-11-08",
+  "input_commit": "b45e29fa1fe3dbfa2517ff8043e5d9c440870530",
+  "checker_sha256": "ff2859eeb9ccab91e8cfa996318e4f1129502dc90f5c2fa90754350453a51751",
+  "preregistration_sha256": "7c59d80a32c988ffe03c454fe7bc9a161c2afda0c998cd591fcc66b5ea9d665f",
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/onset512_analytic/check.py",
+  "workdir": "/workspace/padua_research",
+  "exit_code": 0,
+  "wall_seconds_observed": "0.16123836",
+  "python": "3.12.14",
+  "arithmetic": "Fraction; outward 2^-128 grid; no floating-point",
+  "assertions": "PASS",
+  "P512_max": ["0.040785", "0.040786"],
+  "P512_half": ["-0.143070", "-0.143069"],
+  "P512_vertex": ["0.147341", "0.147342"],
+  "G512_one": ["0.534264", "0.534265"],
+  "G192_halfpi_lower": ["0.098316", "0.098317"],
+  "floor295": ["0.050064", "0.050065"],
+  "kappa_K3": ["0.917166", "0.921489"],
+  "Cstar": ["1.841232", "1.847940"],
+  "independent_execution": "PENDING; developer receipt only",
+  "other_jobs": "No native, certificate, threshold, quadrature or degree job"
+}

@@ -82,7 +82,9 @@ result does not change the status of original PD-T098.
   estimate because constants disappear under differentiation.
 - H01 supplies the exact identification of D_s with its harmonic row;
   that identification is not needed to prove the abstract estimate.
-- The completed Campaign-H predecessor gate, F03 and PD-T269/270/271
+- [F03-identities-support](F03-identities-support.md), via H01 and the
+  PD-T159/PD-T226 exact rows, identifies the actual corner contribution.
+- The completed Campaign-H predecessor gate, the OPEN F03 target and PD-T269/270/271
   are scope/predecessor records, not imported analytic estimates here.
 
 ## Proof
@@ -309,3 +311,22 @@ centering lemma was accepted by [independent-checks-H-support.md](../independent
 and [independent-checks-H-main.md](../independent-checks-H-main.md); the Claude
 reconstruction is [audit-03](../audit-03.md). The status of original PD-T098 in
 shared registries follows reviewed registry application, not this note.
+
+
+## Dated dependency correction — 2026-11-08 (F-01, H-C02)
+
+The canonical exact origin reduction is now the separate **PROVED**
+[F03-identities-support](F03-identities-support.md), split from historical
+F03 sections 1–3. Its PD-T159 endpoint normalization and PD-T226 signed
+periodic/polynomial endpoint rows are explicit premises of the reduction.
+References above have been repointed accordingly. The original F03 sign and
+useful-lower targets remain **OPEN** and are not assumptions of this result;
+the proposed exact O(n) evaluator is also not assumed. H05's abstract series
+estimate itself does not require the corner identification.
+
+This corrects the source/status mapping, not the exact formulas or H theorem.
+The original prose and reviewed source pins remain available at input commit
+`b45e29fa1fe3dbfa2517ff8043e5d9c440870530`; no historical audit has been edited.
+The [distinct review](../independent-checks-onset512-response.md#f03-source-split-and-h04-majorants--accepted-focused-response)
+accepts the split and dependency map; H04's two valid majorants are also
+independently reconstructed there.

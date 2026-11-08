@@ -35,7 +35,7 @@ Thus the actual row centering does not eliminate the 1/n term. Formula
 ## Definitions and assumptions
 
 All arithmetic and integrals are exact real analysis; logarithms are
-natural. V_n is exactly the residual in F03 (8), with the same partial
+natural. V_n is exactly the residual in [F03-identities-support](F03-identities-support.md) (8), with the same partial
 rows and m=n+1. Its occurrence in the corner is exactly 4V_n/(nm).
 No signed full-row substitution or conjectured coefficient is used.
 
@@ -63,7 +63,8 @@ their own status; this supporting lemma does not complete either one.
 
 ## Depends on
 
-F03 fixes the exact object and its occurrence in the corner; the present
+[F03-identities-support](F03-identities-support.md) fixes the exact object
+and its occurrence in the corner, using PD-T159 and PD-T226; the present
 estimate for that object is self-contained. The elementary cotangent
 partial fraction and its pole-cancelled identity are also proved locally
 in PD-T269 section 4; the needed derivation and bounds are given below.
@@ -126,9 +127,9 @@ Differentiate this absolutely and uniformly convergent series on [0,1].
 Since 4k^2-t^2>=3k^2,
 
     |W'| <= (32/(9*pi))sum k^-2 < 3,
-    |W''| <= (8/pi)[(4/9)sum k^-2+(16/27)sum k^-4] < 5.     (9)
+    |W''| <= (8/pi)[(16/27)sum k^-2+(4/9)sum k^-4] < 5.     (9)
 
-The last comparison uses sum k^-4<=4/3 and pi>3.
+The last comparison uses sum k^-2<=2, sum k^-4<=4/3 and pi>3.
 
 ### 2. The exact row cells and their uniform remainder
 
@@ -302,3 +303,51 @@ finding H-C03 records that the two coefficients of the |W''| majorant are
 swapped in the display near line 129 (correct form
 (8/pi)[(16/27) sum k^-2 + (4/9) sum k^-4], still at most 4.74 < 5); that
 mathematical correction is returned to the developer and is not applied here.
+
+
+## Dated majorant alignment — 2026-11-08 (H-C03)
+
+The canonical W'' majorant in (9) above follows the audit's requested
+coefficient ordering, replacing `(4/9)sum k^-2+(16/27)sum k^-4` by
+`(16/27)sum k^-2+(4/9)sum k^-4`. Indeed, for f_k(t)=t^2/(4k^2-t^2),
+
+    f_k''(t)=8k^2(4k^2+3t^2)/(4k^2-t^2)^3
+            =8k^2/(4k^2-t^2)^2
+                         +32k^2*t^2/(4k^2-t^2)^3.
+
+On 0<=t<=1, the denominator is >=3k^2, so
+`f_k''<=8/(9k^2)+32/(27k^4)`. Multiplication by 4/pi gives
+`(8/pi)[(4/9)sum k^-2+(16/27)sum k^-4]`, which is the historical
+bound; this direct estimate is itself valid. The alternative swapped-form
+bound requested by H-C03 follows instead by bounding the numerator as
+`4k^2+3t^2<=4k^2+3` in the first displayed expression and using
+`4k^2-t^2>=3k^2`, giving
+`f_k''<=32/(27k^2)+8/(9k^4)`. Multiplication by 4/pi yields the
+new canonical form. With the displayed series bounds and pi>3 it
+is less than `(8/3)[32/27+16/27]=128/27<5`.
+The bounds |W''|<5, (15), (19) and 17/n^2 are unchanged.
+
+This is a mathematical change requiring a distinct mathematical review;
+it is not an auditor in-place MINOR fix. The historical line remains pinned
+at input commit `b45e29fa1fe3dbfa2517ff8043e5d9c440870530` and in audit-03;
+no old audit report or source pin was rewritten. This addendum records the
+actual derivation, including that the old ordering also admits a valid bound.
+
+
+## Dated dependency correction — 2026-11-08 (F-01, H-C02)
+
+The canonical exact origin reduction is now the separate **PROVED**
+[F03-identities-support](F03-identities-support.md), split from historical
+F03 sections 1–3. Its PD-T159 endpoint normalization and PD-T226 signed
+periodic/polynomial endpoint rows are explicit premises of the reduction.
+References above have been repointed accordingly. The original F03 sign and
+useful-lower targets remain **OPEN** and are not assumptions of this result;
+the proposed exact O(n) evaluator is also not assumed. H05's abstract series
+estimate itself does not require the corner identification.
+
+This corrects the source/status mapping, not the exact formulas or H theorem.
+The original prose and reviewed source pins remain available at input commit
+`b45e29fa1fe3dbfa2517ff8043e5d9c440870530`; no historical audit has been edited.
+The [distinct review](../independent-checks-onset512-response.md#f03-source-split-and-h04-majorants--accepted-focused-response)
+accepts the split and dependency map; H04's two valid majorants are also
+independently reconstructed there.

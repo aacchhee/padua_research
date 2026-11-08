@@ -28,7 +28,8 @@ was read and contains the correction exactly as in (1).
 The main singular quadrature and endpoint sums are proved below without
 numerical evidence. Applying them to the actual `D` uses H05's written
 uniform centering theorem. The full-corner consequence additionally uses
-H04 and the accepted exact F03 endpoint normalization. Neither review
+H04 and [F03-identities-support](F03-identities-support.md)'s exact endpoint
+normalization (PD-T159/PD-T226). Neither review
 acceptance nor original PD-T098 status is changed by this worker.
 
 ## Definitions and precise dependencies
@@ -42,7 +43,7 @@ Let m=n+1>=3, r=1,...,m-1, s=m-r, x=r/m, and put
     I1=integral_0^1 [w(x)/(1-x)-a/x] dx,
     I2=integral_0^1 x*w(x) dx.
 
-Here psi is H05's locally defined harmonic-series function. H01/F03's
+Here psi is H05's locally defined harmonic-series function. H01/F03-identities-support's
 exact harmonic row and its contribution are
 
     D=psi(r+(1-x)/2)+psi(s-(1-x)/2)
@@ -61,7 +62,7 @@ The exact original scalar normalization is
 
 Formula (3) keeps both actual polynomial endpoint rows and the separate
 exceptional contribution. No signed complete-row replacement is used.
-The inherited exact reduction is H01/F03's scope; the independent
+The inherited exact reduction is H01/F03-identities-support's scope; the independent
 analytic work below does not assume a finite one-index evaluator.
 
 ## 1. Elementary estimates used in this reconstruction
@@ -327,3 +328,22 @@ The registered H06 full aggregate route is consolidated into H01 rather
 than promoted as an independent novelty result. This verification cannot
 replace the repository-required Claude audit; root owns adoption,
 registry status, proof integration and the final sharp-target disposition.
+
+
+## Dated dependency correction — 2026-11-08 (F-01, H-C02)
+
+The canonical exact origin reduction is now the separate **PROVED**
+[F03-identities-support](F03-identities-support.md), split from historical
+F03 sections 1–3. Its PD-T159 endpoint normalization and PD-T226 signed
+periodic/polynomial endpoint rows are explicit premises of the reduction.
+References above have been repointed accordingly. The original F03 sign and
+useful-lower targets remain **OPEN** and are not assumptions of this result;
+the proposed exact O(n) evaluator is also not assumed. H05's abstract series
+estimate itself does not require the corner identification.
+
+This corrects the source/status mapping, not the exact formulas or H theorem.
+The original prose and reviewed source pins remain available at input commit
+`b45e29fa1fe3dbfa2517ff8043e5d9c440870530`; no historical audit has been edited.
+The [distinct review](../independent-checks-onset512-response.md#f03-source-split-and-h04-majorants--accepted-focused-response)
+accepts the split and dependency map; H04's two valid majorants are also
+independently reconstructed there.

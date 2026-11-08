@@ -122,3 +122,49 @@ D23/C02/C06/N5 for S vertex bounds and D06/C11 for the actual lambda points)
 and by G-4 (FLINT, the Python interpreter/parsing and the LP64/binary64
 conventions); that extension is returned to the developer for a reviewed
 update of this record and is not applied here. See [audit-03](../audit-03.md).
+
+## Dated dependency and replay correction — 2026-11-08 (G-1–G-5, F-01)
+
+This addendum makes the audited dependencies explicit without changing the
+statement or the accepted proof above. The original finite computation uses
+[D23 equation (2)](D23-cheap-backend.md), with the C02 row decomposition,
+N5 partial-cotangent identities and C06 error bounds, for S vertex
+enclosures. Actual lambda point enclosures use the
+[D06 four-copy rows](D06-four-copy-rows.md) and the accepted C11 row
+implementation identified by the engine freeze. These are mathematical
+evaluator premises, in addition to outward library arithmetic. The planned
+I25 checker can supply a separate direct-sum route only after its complete
+run and distinct review; that work is not presumed here.
+
+Floor provenance is D29-radius41 for 41..63, C02's 1/64 tier for 64..159,
+and C02's 1/32 tier from160, with the recorded clamped band bounds.
+The [auditor's degree table](../audit-03/g-assembly.md#34-degrees-41319-the-d32-phase-implication-d)
+checks each domain. The finite results 2..32 have registered links;
+the provisional 33..40 extension is linked directly above and was covered
+by the completed [audit-01](../audit-01.md), rather than by a nonexistent
+PROOF_STATUS row.
+
+Implementation trust includes Arb/FLINT, GMP and MPFR; the C++ compiler and
+native interface; the Python interpreter, integer/rational semantics and
+strict JSON parsing; and the recorded LP64/binary64 conventions. The
+small-degree Bernstein route separately trusts its C++/GMP checker and
+Python driver. The runtime manifest and freeze identify the implementations.
+The [elementary constant replacement](J02-elementary-constant-enclosure.md)
+now has distinct mathematical acceptance and supplies the consumed scalar
+inequalities without PD-T271; the frozen historical E12/E15/E14 records
+retain their original dependencies and pins.
+
+The later [Claude replay276](../audit-03/replay276.md), together with its
+four earlier calls, natively re-executed all280 old degrees off Syvert.
+All passed and matched retained fields on a non-pinned Ubuntu runtime.
+This supersedes the limited local-native scope described above, while
+remaining a same-engine replay rather than independent arithmetic.
+External archival custody remains pending. New sandbox certificates and
+their review have their own record; this addendum makes no completion claim
+for that campaign.
+
+The F03 exact identities are PROVED premises of the separate H corner
+expansion, under [their split supporting record](F03-identities-support.md).
+F03's original sign target remains OPEN. No claim that all F-series content
+is absent from the paper's dependency chain is intended; F07/F10 are not
+used in this assembly.

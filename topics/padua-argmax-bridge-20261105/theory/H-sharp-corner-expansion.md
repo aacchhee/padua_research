@@ -52,9 +52,12 @@ separate. No numerical premise is needed for the corner theorem.
 
 - [PD-T159](../../padua-proof-attempts-2-20261101/theory/proof-attempts-2-codex-04-corner-product-comparison.md):
   positive corner sum and exact endpoint normalization.
-- [F03](F03-origin-sign.md), routine exact partial-row/two-pole identities
-  only; its formerly unresolved sign/one-index-evaluator targets are not
-  assumptions.
+- [F03-identities-support](F03-identities-support.md): PROVED exact
+  partial-row/two-pole identities;
+  [PD-T226](../../padua-argmax-alln-20261101/theory/gated-codex-12-row-primitive-identity.md)
+  supplies the signed periodic row and polynomial endpoint rows, as identified
+  in that support record. F03's OPEN sign/useful-lower and proposed one-index
+  evaluator targets are not assumptions.
 - [H05](H05-digamma-centering.md): uniform centering of every harmonic row,
   with normalized aggregate error O(log m/m^2), including both endpoints.
 - [H01](H01-exact-sum.md): complete weighted harmonic asymptotic and exact
@@ -183,3 +186,22 @@ Root adopts (1) as PROVED and (2) as its routine consequence. The
 all-degree global transfer retains G01's computer-assisted assumptions.
 Six rounds used, fourteen unallocated; campaign stops early on success.
 Final Claude audit still covers H plus the deferred F/compact/G01 batch.
+
+
+## Dated dependency correction — 2026-11-08 (F-01, H-C02)
+
+The canonical exact origin reduction is now the separate **PROVED**
+[F03-identities-support](F03-identities-support.md), split from historical
+F03 sections 1–3. Its PD-T159 endpoint normalization and PD-T226 signed
+periodic/polynomial endpoint rows are explicit premises of the reduction.
+References above have been repointed accordingly. The original F03 sign and
+useful-lower targets remain **OPEN** and are not assumptions of this result;
+the proposed exact O(n) evaluator is also not assumed. H05's abstract series
+estimate itself does not require the corner identification.
+
+This corrects the source/status mapping, not the exact formulas or H theorem.
+The original prose and reviewed source pins remain available at input commit
+`b45e29fa1fe3dbfa2517ff8043e5d9c440870530`; no historical audit has been edited.
+The [distinct review](../independent-checks-onset512-response.md#f03-source-split-and-h04-majorants--accepted-focused-response)
+accepts the split and dependency map; H04's two valid majorants are also
+independently reconstructed there.

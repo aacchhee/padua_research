@@ -64,3 +64,16 @@ removing that old run and a fresh compact receipt pack: validate all degrees
 on Syvert, return compact evidence plus two randomly selected full histories
 for native sandbox rechecks. Unsampled complete certificates need not enter
 cold storage; their exact production and verification procedure is recorded.
+
+## Dated source clarification — 2026-11-08 (audit-03 F-01)
+
+The exact origin identities proved in F03 sections 1–3 now have their own
+[PROVED supporting record](theory/F03-identities-support.md). They are
+premises of the H corner expansion; the sign and useful-lower targets in
+the original F03 remain OPEN. Thus the description of the F campaign as
+separate paper supports does not mean that every F03 identity is absent from
+the main paper's dependency chain. F07 and F10 remain unnecessary for the
+all-degree assembly. The
+[focused distinct review](independent-checks-onset512-response.md#f03-source-split-and-h04-majorants--accepted-focused-response)
+accepts the split and dependency corrections. This clarification preserves
+the original campaign's scope, attempts and chronology.

@@ -32,7 +32,9 @@ is taken. Both integrands are understood by their finite endpoint limits.
 ## Assumptions, dependencies and status
 
 Exact real arithmetic; original corrected Padua convention throughout.
-Dependencies: F03's exact partial-cotangent and two-pole decomposition,
+Dependencies: [F03-identities-support](F03-identities-support.md)'s exact
+partial-cotangent and two-pole decomposition, PD-T226's signed periodic and
+polynomial endpoint rows,
 PD-T159's endpoint normalization, PD-T270's harmonic estimate, and H05's
 uniform centering lemma with its local psi definitions. This file proves
 the aggregate analysis and evaluates the first-correction sequences.
@@ -47,13 +49,14 @@ uniform asymptotic analysis below, subject to independent review.
 
 ## 1. Exact finite reduction and the failed collapse
 
-F03 gives exactly, with its actual endpoint rows,
+[F03-identities-support](F03-identities-support.md) gives exactly, with its
+actual endpoint rows,
 
     Lambda_c=1-2n/m+(4/(n*m))*sum_(r=1)^n w(r/m)*T_(n,r),
     T_(n,r)=(n/pi)*D_(m,r)+sum_(l=0)^(r-1) B((l+(1-r/m)/2)/n),
     B(t)=cot(pi*t)-1/(pi*t)+1/(pi*(1-t)).              (2)
 
-To identify D, the two harmonic partial sums in F03 are respectively
+To identify D, the two harmonic partial sums in F03-identities-support are respectively
 psi(r+(1-x)/2)-psi((1-x)/2) and
 psi(m-(1-x)/2)-psi(s-(1-x)/2). This proves the displayed D exactly.
 All r=1,...,n occur. In particular r=n is retained; the separate
@@ -334,3 +337,22 @@ distinct reviews [independent-checks-H-main.md](../independent-checks-H-main.md)
 Claude audit that reconstructed it independently, with high-precision
 numerical corroboration, is [audit-03](../audit-03.md). No statement,
 constant or proof text above changed.
+
+
+## Dated dependency correction — 2026-11-08 (F-01, H-C02)
+
+The canonical exact origin reduction is now the separate **PROVED**
+[F03-identities-support](F03-identities-support.md), split from historical
+F03 sections 1–3. Its PD-T159 endpoint normalization and PD-T226 signed
+periodic/polynomial endpoint rows are explicit premises of the reduction.
+References above have been repointed accordingly. The original F03 sign and
+useful-lower targets remain **OPEN** and are not assumptions of this result;
+the proposed exact O(n) evaluator is also not assumed. H05's abstract series
+estimate itself does not require the corner identification.
+
+This corrects the source/status mapping, not the exact formulas or H theorem.
+The original prose and reviewed source pins remain available at input commit
+`b45e29fa1fe3dbfa2517ff8043e5d9c440870530`; no historical audit has been edited.
+The [distinct review](../independent-checks-onset512-response.md#f03-source-split-and-h04-majorants--accepted-focused-response)
+accepts the split and dependency map; H04's two valid majorants are also
+independently reconstructed there.
