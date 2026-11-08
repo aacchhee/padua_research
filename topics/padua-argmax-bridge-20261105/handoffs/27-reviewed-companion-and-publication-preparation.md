@@ -1,6 +1,6 @@
 # Handoff 27 — Reviewed explanatory companion and publication preparation
 
-- Status: open
+- Status: superseded by 28: AC requests a Claude audit brief covering mathematics and both manuscripts
 - Previous handoff: 26-expanded-explanatory-companion.md
 - Next agent / model / effort: Codex coordinator, gpt-6.1-sol medium for routine publication preparation; Sol high for mathematical exposition; distinct Sol max for necessary focused mathematical/accessibility review per AC's preference
 - Role: orchestrator / publication preparation
