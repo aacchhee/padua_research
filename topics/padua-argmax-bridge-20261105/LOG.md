@@ -2701,3 +2701,40 @@ remain in force.
 
 - 2026-11-08, AC decisions recorded: P1–P4 accepted as recorded (original findings and records unchanged); correspondence check rename-aware now and re-baselined at the end; trust gap closed by a local replay (auditor) and the independent I25 checker (Codex); Zenodo deposit with a DOI created by AC; AI declaration left to AC (not to be edited by Codex); funding line awaits AC's confirmation. See the dated addendum in handoff 29.
 - 2026-11-08, local native replay (AC decision 3, auditor, `claude-sonnet-5-5`): preregistration sha256 `e9e0886f…` saved before any call; **276 of 276 fresh-verify calls accepted** (observed exit 0 via wait4, no timeout, ECHILD, first_failure null), every fresh receipt equal to the archive primary on all compared fields; 2312.5 child CPU-s, about 10 minutes wall on 4 shards; non-pinned Ubuntu FLINT 3.0.1/GMP 6.3.0/MPFR 4.2.1/g++ 13.3. With the four earlier replays (41, 199, 238, 511), all 280 degrees are natively re-executed off Syvert. Same engine and kernels, so not independent arithmetic. Record: [audit-03/replay276.md](audit-03/replay276.md). Size: replay record, scripts and addenda add under 20 KB of source and prose; no generated outputs committed (6.7 GB stay in scratch).
+
+## 2026-11-08 — Codex response to audit-03; sandbox-only certificates
+
+Rules read at `b45e29fa1fe3dbfa2517ff8043e5d9c440870530`:
+AGENTS.md, agents/WORKFLOW.md and agents/codex/CODEX.md. The refreshed
+topic fast-forwards to Claude's audit and decision addenda; recorded main/base
+is `f70a260e5b5f9a01209dc8a05faabdcf8db1feeb`. Codex is the
+orchestrator. Requested coordinator model is gpt-6-astra high; developers
+are gpt-6.1-sol medium (technical/notation/records) and xhigh
+(mathematical gates and independent arithmetic). A distinct gpt-6-astra
+xhigh reviewer checks the new mathematics, arithmetic and execution protocol.
+Requested model/effort allocation is recorded; independent serving metadata
+is not exposed. Root alone controls Git.
+
+AC's current instruction is to run certificates **in this sandbox with no
+Syvert calls**, allowing an external ZIP for storage. This selects the local
+alternative in handoff29. The current campaign preregisters exactly degrees
+320..510, primary and fresh verification, using the unchanged scientific
+freeze and pinned runtime. Full outputs remain outside Git. It is running;
+no completed-campaign claim is made by this checkpoint. The original return,
+frozen manuscripts and their PDFs remain preserved.
+
+Work is allocated in disjoint files: exact analytic gates/elementary constants;
+local execution/export; independent second arithmetic; F03/H records and the
+audit response; pure notation renames; and independent review. The novelty
+scope is the already-gated I25/I26/onset512 work from audit-03, not a new
+priority claim. The two gates require new all-real-degree proofs, not just
+the auditor's base-point values. The independent checker must establish its
+own finite-sum bounds and cover predicates before removing any evaluator
+premise. New claims remain subject to the distinct review and subsequent
+Claude audit required by handoff29.
+
+The funding question was sent to AC; the declaration stays unchanged pending
+the factual answer. The AI declaration, ORCID and contributions are unchanged
+as instructed. Handoff29 remains open within this session. No final IDs,
+shared registry changes, remote computation, external publication or PR
+readiness decision are made.
