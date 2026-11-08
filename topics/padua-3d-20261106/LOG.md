@@ -915,3 +915,24 @@ their corresponding runs, with publication and execution timing distinguished.
   are not affected. AC may correct this reading.
 - The frontier reassessment (an Opus 5.5 xhigh inspiration round) is in progress; its record will be
   `frontier-assessment.md`.
+
+## 2026-11-08 — Claude, claude-opus-5-5 xhigh — frontier reassessment and inspiration round
+
+- AC (verbatim): "so you mean the determinantal route is worth studying deeper?"
+  Claude's answer: yes, as a bounded decisive test (2-D Hilbert–Burch calibration, exact checks,
+  real-in-cube search, Λ), with a kill rule.
+- [Frontier assessment](frontier-assessment.md): six Opus 5.5 xhigh literature/neighbouring-field scouts
+  plus one strategy scout, reports in [frontier-2026-11-08/](frontier-2026-11-08/).
+- Disclosed deviation (recorded once, in the assessment): scouts S1–S3 ran small sanity scripts
+  themselves. These are leads only.
+- Answer to AC's deep-structure question: the structure behind 2-D Padua is discrete Fourier analysis on
+  an orbit space whose frequency body tiles (Li–Xu have Padua analogues in every dimension on A_d
+  domains). Cube total degree has the octahedral frequency body, which neither tiles nor is spectral.
+- Candidates IDEA?padua-3d-20261106-claude-01..08 recorded in the assessment.
+- Decision: **NARROW, then FREEZE**. Construction, optimization and pruning directions stop. One final
+  bounded set D1–D5 follows: spectral obstruction proof; determinantal/symmetroid test; certified n=3
+  Padua-type set; certified Λ intervals and the Lee bound; literature framing and a paper note.
+  Then PR preparation. AC may modify.
+- Literature to record (gate G6/C8): Li–Sun–Xu Cor. 4.12 (log³ on ≈1.5N in Π*_n); Li–Xu 2010;
+  Gunzburger–Teckentrup benchmark; Wang–Wang–Wang; Lev–Matolcsi; Golomb–Welch and Lee-tiling results;
+  Krieg–Pozharska–Ullrich–Ullrich; Dolbeault–Chkifa; Białas-Cież et al.
