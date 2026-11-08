@@ -202,3 +202,43 @@ build new versions into new output directories and record new identities).
 - At the session boundary commit outputs first. Then, in a separate commit, close
   this handoff as `done in <sha>` and add the next numbered handoff. Exactly one
   handoff stays open.
+
+## Dated addendum — AC decisions of 2026-11-08 (recorded once in the LOG entry of the same date)
+
+AC answered the five open items one by one. These supersede the "not yet
+decided" list above. Handoff 29 stays the open handoff.
+
+1. **P1–P4: accepted as recorded.** AC's disposition: process findings with no
+   mathematical impact, kept permanently in the history, no remedial work. The
+   records are unchanged (no waiver wording, no backdating, no deletion). P4's
+   annular component also drops out of the paper with the onset-512 plan. Link
+   AC's disposition from response-03 and at registry application; do not
+   rewrite the original findings.
+2. **Correspondence check: rename-aware now, re-baseline at the end.** Use the
+   rename-aware mode (`audit-03/code/n/notation_scan.py --baseline-rev ...
+   --rename-map ...`) to show the notation pass is rename-only, then freeze a new
+   paper and companion baseline commit after the onset-512 restructuring and
+   update `companion-paper/check_correspondence.py` to it in the same reviewed
+   commit.
+3. **Trust gap: both.** (a) The local native replay of the 276 unsampled archive
+   primaries is done by Claude as auditor, in the audit sandbox with a non-pinned
+   Ubuntu runtime (result in the LOG entry and `audit-03.md` addendum). (b) You
+   build the independent second-arithmetic checker (idea I25, prototypes
+   `audit-03/code/i/` `indep_S.py` and `rig_S.py`, at most 400 lines, written from
+   the paper only): first on degrees 41, 199, 238, 511 with corruption controls
+   (cap 60 CPU-min), then preregister the full run over all 560 certificates and
+   the new 320..510 certificates. It also re-validates the vertex keys by direct
+   finite sums, which would let G-1 be closed by removing the evaluator theorems
+   from the trusted base instead of listing them.
+4. **Data deposit: Zenodo with a DOI, created by AC.** Prepare the manifest,
+   README, the data-availability sentence and the list of files (compact returns
+   including the new 320..510 return, frozen engine and checker source, runtime
+   manifest and package pins, preregistrations, `verify_compact.py` and the
+   verification commands). AC reserves the DOI and publishes after the final
+   certificates exist. Until then keep a clearly marked placeholder in the
+   Declarations.
+5. **AI-involvement text: AC will re-edit it later. Do not change the AI
+   declaration** (the Declarations paragraph on generative AI) in this pass. The
+   funding statement ("no specific grant") still needs AC's confirmation that it
+   is accurate for this project; leave it as is and ask. Do not alter ORCID or
+   author-contribution text.
