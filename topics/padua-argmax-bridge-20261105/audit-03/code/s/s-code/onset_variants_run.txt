@@ -1,0 +1,11 @@
+n=  300 halfnear(nearcol)=-0.01161@0.271 halfnear(widecol)=-0.02091@0.281 wide[1/2,1]=+0.0304@0.510 primitive<0 from rho=0.5416666666666666 outer_crude=-0.3535@1.00
+n=  320 halfnear(nearcol)=+0.00224@0.250 halfnear(widecol)=-0.00586@0.260 wide[1/2,1]=+0.0600@0.510 primitive<0 from rho=0.5 outer_crude=-0.2320@1.00
+n=  352 halfnear(nearcol)=+0.01991@0.229 halfnear(widecol)=+0.01327@0.240 wide[1/2,1]=+0.1018@0.510 primitive<0 from rho=0.5 outer_crude=-0.0606@1.00
+n=  384 halfnear(nearcol)=+0.03362@0.208 halfnear(widecol)=+0.02810@0.219 wide[1/2,1]=+0.1381@0.510 primitive<0 from rho=0.5 outer_crude=+0.0882@1.00
+n=  416 halfnear(nearcol)=+0.04454@0.188 halfnear(widecol)=+0.03984@0.198 wide[1/2,1]=+0.1700@0.510 primitive<0 from rho=0.5 outer_crude=+0.2191@1.00
+n=  448 halfnear(nearcol)=+0.05333@0.177 halfnear(widecol)=+0.04933@0.188 wide[1/2,1]=+0.1984@0.510 primitive<0 from rho=0.5 outer_crude=+0.3356@1.00
+n=  480 halfnear(nearcol)=+0.06060@0.167 halfnear(widecol)=+0.05715@0.167 wide[1/2,1]=+0.2239@0.510 primitive<0 from rho=0.5 outer_crude=+0.4403@1.00
+n=  512 halfnear(nearcol)=+0.06667@0.156 halfnear(widecol)=+0.06364@0.156 wide[1/2,1]=+0.2470@0.510 primitive<0 from rho=0.5 outer_crude=+0.5351@1.00
+n=  640 halfnear(nearcol)=+0.08329@0.125 halfnear(widecol)=+0.08136@0.125 wide[1/2,1]=+0.3222@0.510 primitive<0 from rho=0.5 outer_crude=+0.8420@1.00
+n=  768 halfnear(nearcol)=+0.09308@0.104 halfnear(widecol)=+0.09174@0.104 wide[1/2,1]=+0.3790@0.510 primitive<0 from rho=0.5 outer_crude=+1.0729@1.00
+n= 1024 halfnear(nearcol)=+0.10392@0.083 halfnear(widecol)=+0.10312@0.083 wide[1/2,1]=+0.4616@0.500 primitive<0 from rho=0.5 outer_crude=+1.4085@1.00

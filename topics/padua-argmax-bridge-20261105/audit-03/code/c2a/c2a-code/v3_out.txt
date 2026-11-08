@@ -1,0 +1,36 @@
+kappa series K=64: 0.9197101183884925350995182  tail radius 2.9684e-41
+kappa integral   : 0.9197101183884925351
+a_p checks 0<a_p<=4^-p: True  b0<10/9 True  |b_q|<9^-q: True  |c_k|<2*4^-k: True
+9/10<kappa<23/25: True  C*= 1.84616031042393  <1847/1000: True
+H0 from origin identity: 0.310002264407314  (direct finite-part computation in v2: 0.310002264407)
+C*=B-g0+2H0 check: -4.5918e-41
+H0  = 0.310002264407  in claimed range: True
+d0  = 0.169907145094  in claimed range: True
+g0  = 0.336367482995  in claimed range: True
+j   = 0.143541926506  in claimed range: True
+t0  = 0.441271200305  in claimed range: True
+b*  = 0.427020052043  in claimed range: True
+C0  = 3.92702005204  in claimed range: True
+k0  = 1.63756028034  in claimed range: True
+v0  = 0.151431619892  in claimed range: True
+H0+v0 = 0.4614338843
+9/20-828/4925 = 5553/19700 0.28187817258883247 > 7/25: True
+(18/5)(23/50)(20/197) = 828/4925
+23/50 - (2*161/100)(18/41)/10 = 1633/5125
+g0 bound (80/197)((23/20)^2-(69/100)^2) = 0.3437157360406091  43/125= 0.344
+j lower 7/25+39/250-43/125 = 23/250
+t0 bound 2*0.6932/(157/50) = 0.4415286624203822  221/500= 0.442
+delta= 403/1000  delta^2+delta*j_lo - (221/500)^2 = 0.004121
+C_inf global bound C*-j/2+sqrt(j^2/4+t0^2) (actual constants) = 2.221459077
+log(25/16)= 0.4462871 >18/41= 0.43902439024390244 ; 2atanh(9/41) first term = 0.43902439024390244
+log(pi/2)= 0.45158271  <23/50
+2atanh(17/39) two terms 0.9270104575824497 > 37/40=0.925; log(28/11)= 0.93430924
+2atanh(1/3) three terms 0.6930041152263374 >0.69
+gamma+log(8/pi)= 1.511927321  log(8/3)= 0.98082925
+b_c=8G/pi^2= 1.225522126  79/(5pi^2)= 1.600874702
+zeta(3)<=1+1/8+1/27+1/18 = 1.2175925925925926
+sum_{l>=3 odd} 1/(l(l^2-1)) = 0.0568528194401  3/4-log2= 0.0568528194401
+(32/pi^2)(7/4-log2)= 3.426610515
+I4= 0.8740191848  319/360= 0.8861111111111111
+coefficients 4I4/(pi^2 sqrt a): rho<=1/2 -> 0.37225042301184436  rho<=1 -> 0.41124808637498994
+1679/8000 check 1679/8000

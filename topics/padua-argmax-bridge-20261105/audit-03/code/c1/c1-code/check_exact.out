@@ -1,0 +1,18 @@
+n=1: delta dev 0; Lc=2.0 other=2.0 nodecorners=['1.0', '1.0'] positive=- exact1=- exact2=-
+n=2: delta dev 1.15e-41; Lc=3.0 other=3.0 nodecorners=['1.0', '1.0'] positive=3.0 exact1=3.0 exact2=3.0
+n=3: delta dev 3.83e-41; Lc=3.7761423749154 other=3.7761423749154 nodecorners=['1.0', '1.0'] positive=3.7761423749154 exact1=3.7761423749154 exact2=3.7761423749154
+n=4: delta dev 3.44e-41; Lc=4.40972543550821 other=4.40972543550821 nodecorners=['1.0', '1.0'] positive=4.40972543550821 exact1=4.40972543550821 exact2=4.40972543550821
+n=5: delta dev 4.59e-41; Lc=4.94780574903659 other=4.94780574903659 nodecorners=['1.0', '1.0'] positive=4.94780574903659 exact1=4.94780574903659 exact2=4.94780574903659
+n=6: delta dev 7.0e-41; Lc=5.4174994301439 other=5.4174994301439 nodecorners=['1.0', '1.0'] positive=5.4174994301439 exact1=5.4174994301439 exact2=5.4174994301439
+n=7: delta dev 1.26e-40; Lc=5.83565771063625 other=5.83565771063625 nodecorners=['1.0', '1.0'] positive=5.83565771063625 exact1=5.83565771063625 exact2=5.83565771063625
+n=8: delta dev 1.1e-40; Lc=6.21345964690905 other=6.21345964690905 nodecorners=['1.0', '1.0'] positive=6.21345964690905 exact1=6.21345964690905 exact2=6.21345964690905
+n=1 cardinal matrix [[1, 0, 0], [0, 1, 0], [0, 0, 1]]; sum=1
+lambda_1 grid max (2.0, -1.0, 1.0)
+n=1 Gram [[Fraction(1, 1), Fraction(0, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(1, 1), Fraction(0, 1)], [Fraction(0, 1), Fraction(0, 1), Fraction(1, 2)]]
+n=2 nodes [(0, 0, '1.0', '1.0'), (0, 2, '1.0', '-0.5'), (1, 1, '2.07e-43', '0.5'), (1, 3, '2.07e-43', '-1.0'), (2, 0, '-1.0', '1.0'), (2, 2, '-1.0', '-0.5')]
+L_2=1.4142135623731 sqrt2=1.4142135623731
+square reference identities n=2..40 max dev 9.4e-37
+D_n closed form / row identity / collision value n=2..7 max dev 7.64e-15
+(cu:deform) max ratio |diff|/(pi^2 n/(2 l^2)) = 0.202642 at (2, 0, 1)
+cot/csc sums, signed row n, positive indices, absolute row 2P-n: max dev 2.62e-13
+two-pole decomposition / psi telescoping max dev 7.35e-40

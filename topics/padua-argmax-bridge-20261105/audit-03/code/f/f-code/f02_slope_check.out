@@ -1,0 +1,15 @@
+   n      Q_n         Q_n/log n   dQ(doubling) [->0.37456]   g_v       dg [->0.38944]   g_v-Q_n
+  128  2.526820  0.52078                          2.612619                 0.08580
+  256  2.897338  0.52250      0.37052             3.001795   0.38918       0.10446
+  512  3.269963  0.52417      0.37262             3.390720   0.38892       0.12076
+/tmp/claude-0/-home-user-padua-research/8833296e-cd9e-51d7-9205-e1ddfbc5960f/scratchpad/audit3/f-code/f02_slope_check.py:19: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  return sum(quad(f, pts[i], pts[i + 1], limit=200, epsabs=1e-13, epsrel=1e-11)[0] for i in range(len(pts) - 1))
+ 1024  3.643581  0.52566      0.37362             3.779781   0.38906       0.13620
+ 2048  4.017679  0.52694      0.37410             4.168996   0.38921       0.15132
+ 4096  4.392011  0.52803      0.37433             4.558313   0.38932       0.16630
+
+real	0m5.615s
+user	0m5.948s
+sys	0m0.068s

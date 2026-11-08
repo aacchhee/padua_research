@@ -1,0 +1,9 @@
+squared-variable second-derivative identity verified (two even test functions, three s values); weight mass int t^2 = 1/3
+h_uu=(A p_AA - p_A)/A^3 verified
+n=2: grid max 3.0000000000 at [(np.float64(-1.0), np.float64(-1.0)), (np.float64(1.0), np.float64(-1.0))]; second-largest gap 1.942e-02
+n=3: grid max 3.7761423749 at [(np.float64(-1.0), np.float64(-1.0)), (np.float64(-1.0), np.float64(1.0))]; second-largest gap 6.036e-02
+n=4: grid max 4.4097254355 at [(np.float64(-1.0), np.float64(-1.0)), (np.float64(1.0), np.float64(-1.0))]; second-largest gap 1.350e-01
+n=5: grid max 4.9478057490 at [(np.float64(-1.0), np.float64(-1.0)), (np.float64(-1.0), np.float64(1.0))]; second-largest gap 2.491e-01
+n=6: grid max 5.4174994301 at [(np.float64(-1.0), np.float64(-1.0)), (np.float64(1.0), np.float64(-1.0))]; second-largest gap 4.063e-01
+n=7: grid max 5.8356577106 at [(np.float64(-1.0), np.float64(-1.0)), (np.float64(-1.0), np.float64(1.0))]; second-largest gap 6.092e-01
+n=8: grid max 6.2134596469 at [(np.float64(-1.0), np.float64(-1.0)), (np.float64(1.0), np.float64(-1.0))]; second-largest gap 7.402e-01

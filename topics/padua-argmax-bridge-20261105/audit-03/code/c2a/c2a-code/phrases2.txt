@@ -1,0 +1,26 @@
+Similarly the first derivatives
+Fubini is valid against the finite variation measure
+The final quadratic comparison also follows by integration
+On the complement, changing each coefficient
+For clarity the logarithmic coefficient can be checked
+Integration yields
+On the central phase region, the endpoint half
+For the tail,
+Finally u
+For s ≥ v, integrating the derivative from the threshold
+The weight W can be obtained explicitly
+The bound follows from π > 25/8
+For the remaining derivative facts
+leaving the entropy formula
+Using 161/100
+Together with π 2 > 197/20
+Finiteness also follows from
+For τ = v/a ≤ 1
+The inherited certificate evaluates
+For each row index r, the bit
+Multiplication by sin πt gives a continuous periodic bound
+The symbols N, W refer to the two nested domains
+The quantity T is the quadratic-logarithmic model loss
+To derive it, integrate the numerator against
+The numerator’s t derivative has magnitude
+The sine-ratio step follows

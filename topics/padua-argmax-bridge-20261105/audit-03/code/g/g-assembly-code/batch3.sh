@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /tmp/claude-0/-home-user-padua-research/8833296e-cd9e-51d7-9205-e1ddfbc5960f/scratchpad/audit3/g-assembly-code
+{ time env PYTHONPATH=/tmp/claude-0/-home-user-padua-research/8833296e-cd9e-51d7-9205-e1ddfbc5960f/scratchpad/audit3/pylib python3 direct_sum_validate.py /home/user/padua_research/topics/padua-argmax-bridge-20261105/evidence/final-hybrid-validation/primary-41.json /home/user/padua_research/topics/padua-argmax-bridge-20261105/evidence/compact-return/primary-n199.json /home/user/padua_research/topics/padua-argmax-bridge-20261105/evidence/compact-return/primary-n238.json > direct_sum_41_199_238.json ; } 2> direct_sum.time; echo "direct exit=$?"

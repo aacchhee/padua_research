@@ -1,0 +1,19 @@
+n=41 rho=0.0000: min eligible projection over 10 phase samples = 0.56694; floors delta_n=0.01092  OK
+n=41 rho=0.1000: min eligible projection over 10 phase samples = 0.56498; floors delta_n=0.00846  OK
+n=41 rho=0.2500: min eligible projection over 10 phase samples = 0.55307; floors delta_n=0.00466  OK
+n=41 rho=0.4000: min eligible projection over 10 phase samples = 0.53789; floors delta_n=0.00195  OK
+n=41 rho=0.5000: min eligible projection over 10 phase samples = 0.53036; floors delta_n=0.00195  OK
+n=64 rho=0.0000: min eligible projection over 10 phase samples = 0.56116; floors delta_n=0.04105, tail_h=-0.05113, tail_w=-0.07686  OK
+n=64 rho=0.2500: min eligible projection over 10 phase samples = 0.54675; floors delta_n=0.02911, tail_h=-0.05009, tail_w=-0.06797  OK
+n=64 rho=0.5000: min eligible projection over 10 phase samples = 0.51819; floors delta_n=0.01588, tail_h=-0.04745, tail_w=-0.05668  OK
+n=64 rho=0.6000: min eligible projection over 10 phase samples = 0.50230; floors tail_w=-0.05149  OK
+n=64 rho=0.7000: min eligible projection over 10 phase samples = 0.48633; floors tail_w=-0.04592  OK
+n=64 rho=0.7854: min eligible projection over 10 phase samples = 0.47261; floors tail_w=-0.04085  OK
+n=160 rho=0.0000: min eligible projection over 10 phase samples = 0.55348; floors delta_n=0.05000, tail_h=0.07165, tail_w=0.04420  OK
+n=160 rho=0.2500: min eligible projection over 10 phase samples = 0.54432; floors delta_n=0.05000, tail_h=0.05293, tail_w=0.03436  OK
+n=160 rho=0.5000: min eligible projection over 10 phase samples = 0.51591; floors delta_n=0.03186, tail_h=0.03198, tail_w=0.02314  OK
+n=160 rho=0.7000: min eligible projection over 10 phase samples = 0.47809; floors tail_w=0.01317  OK
+n=160 rho=0.7854: min eligible projection over 10 phase samples = 0.46477; floors tail_w=0.00864  OK
+n=320 rho=0.0000: min eligible projection over 10 phase samples = 0.55094; floors delta_n=0.05000, tail_h=0.10247, tail_w=0.07445  OK
+n=320 rho=0.5000: min eligible projection over 10 phase samples = 0.56209; floors delta_n=0.03647, tail_h=0.05159, tail_w=0.04288  OK
+n=320 rho=0.7854: min eligible projection over 10 phase samples = 0.49791; floors tail_w=0.02069  OK

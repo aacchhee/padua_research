@@ -1,0 +1,16 @@
+p>=q : E-ledger of g == A: True ; -A+q(2t-1)+2d == -2p: True
+p<q : E-ledger of g == A: True ; -A+q(2t-1)+2d == -2p: True
+Gamma_T (G) equals ledger constant: True
+finite product identity check (m=40,tau=.3): -1.9387e-26
+max m^2|Q_tau[log z]-pred| = 1.0988 ; max m^2|Q_tau[log(pi-z)]-pred| = 3.16197 (claimed <=10)
+  Stirling r(1.0) = 0.081061467 ; 1/(12x) = 0.083333333 ; 0<r<1/(12x): True
+  Stirling r(3.0) = 0.027677926 ; 1/(12x) = 0.027777778 ; 0<r<1/(12x): True
+  Stirling r(31.0) = 0.0026880788 ; 1/(12x) = 0.002688172 ; 0<r<1/(12x): True
+  Stirling r(1000.0) = 8.3333331e-5 ; 1/(12x) = 8.3333333e-5 ; 0<r<1/(12x): True
+aggregate slack 41000(1+l)-[40000(1+l)+81l+443] =  919*l + 557 (>0 for l>0)
+120000/pi < 40000: True ; 7175*pi*(1+log(24/pi)) vs 120000: 68373.934
+sum of four hole lengths^2 / h^2 = 4*tt**2 - 4*tt + 11 ; max on [0,1] = 11 (<=13 used in (H), <=25 used in (B))
+
+real	0m1.158s
+user	0m1.086s
+sys	0m0.030s

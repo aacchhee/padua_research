@@ -1,0 +1,7 @@
+evaluations: 400
+minimum of Q - (1/5-3r/20) over samples: 1.8882522304331688
+attained at (proj, n, J, K, alpha, beta, Q, floor): ('Qv', 128, 84, 127, 0.0, -0.7853981633974483, np.float64(1.9704425059235515), 0.08219027549038277)
+
+real	0m10.106s
+user	0m10.019s
+sys	0m0.052s

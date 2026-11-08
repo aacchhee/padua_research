@@ -1,0 +1,10 @@
+A(theta) for theta>=0: -(2*theta - 1)**2/4  == -(1/2-theta)^2: True
+A0(zeta): zeta**2 - 2*zeta + 1/2  == (1-zeta)^2-1/2: True
+cell: max |M - h^2(A log h + B)|/h^2 = 4.0559e-25 ; max |M|/bound(2) = 0.84019 ; max |M_ext|/((log2)/2-1/4)h^2 = 0.656702 (<=1)
+sharpness at r=c: M/(h^2 |log h|) = 0.260795 (-> -1/4 as h->0; B(0)= 0.298287 )
+hole: max |E - ell^2(A0 log ell + B0)|/ell^2 = 1.9179e-28 ; max |E|/bound(4) = 0.89496 ; max |E_ext|/bound(5) = 0.74959 (<=1)
+hole sharpness r=0: E - P(ell) = -3.7616e-37
+
+real	0m1.520s
+user	0m1.344s
+sys	0m0.056s

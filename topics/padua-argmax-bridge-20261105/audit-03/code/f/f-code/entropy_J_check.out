@@ -1,0 +1,14 @@
+1. same-sign branch s<u: J = 2[c log(c/u)+b log(b/u)], independent of e
+   max abs deviation over 12 random (u,s,e): 1.9722e-31
+2. s>u: R=J-2(s-u)log sin e; no-root (s sin e>=u): R=2u log sin e; root regime J_s formula
+   no-root R identity max dev: 4.4373e-31 ; root-regime J_s formula max dev: 4.4926e-12
+3. F08 (1): J(u,u+v,e*) - [|v|log|v|-(1+log 2u)|v|+2v_+ log tan e*], ratio to |v| -> 0
+   u=0.1, e*=0.7: (J-pred)/|v| for v=+1e-2,+1e-3,+1e-4,-1e-2,-1e-3,-1e-4: ['0.0123', '0.00106', '0.000105', '0.0254', '0.0025', '0.00025']
+   u=0.05, e*=1.2: (J-pred)/|v| for v=+1e-2,+1e-3,+1e-4,-1e-2,-1e-3,-1e-4: ['0.569', '0.0661', '0.00616', '0.0518', '0.00502', '0.0005']
+4. F01 entropy obstruction: balanced alpha=beta=c, u=q/2, s_R(e)=|q/2-a tan(e/2)|, e0=2c
+   c=0.01563: s_R(e0)-u = 0.0
+      dJ/de along actual curve (numeric, predicted log((u+s)/(u-s)) s'): [('0.376821', '0.376814'), ('1.70486', '1.70485'), ('2.87097', '2.87096'), ('4.02385', '4.02384'), ('5.17543', '5.17542')]
+   c=0.125: s_R(e0)-u = -1.23e-32
+      dJ/de along actual curve (numeric, predicted log((u+s)/(u-s)) s'): [('1.59441', '1.5944'), ('2.77483', '2.77482'), ('3.93728', '3.93728'), ('5.09785', '5.09785'), ('6.25822', '6.25821')]
+   c=0.25: s_R(e0)-u = 2.47e-32
+      dJ/de along actual curve (numeric, predicted log((u+s)/(u-s)) s'): [('1.98187', '1.98186'), ('3.1835', '3.18349'), ('4.37335', '4.37334'), ('5.56177', '5.56176'), ('6.75002', '6.75001')]

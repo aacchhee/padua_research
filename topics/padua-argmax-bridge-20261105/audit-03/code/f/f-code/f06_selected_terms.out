@@ -1,0 +1,6 @@
+selected terms checked: 45984 ; F(b)<=0 cases: 0
+min d*t/F(b) (must be >=1): 1.1783761629722778 at ('v', 256, 1, 87, 88, 88, 0.7853981633974483, 0.0, np.float64(50.79378865209526), np.float64(43.10490168434459))
+
+real	0m4.138s
+user	0m4.214s
+sys	0m0.028s

@@ -1,0 +1,16 @@
+{
+ "n": 3,
+ "mode": "own-search",
+ "prec_bits": 256,
+ "corner_value_ball": "[3.776142374915396699201125816139798719046447916917965382117786491993821652308 +/- 8.34e-76]",
+ "corner_value_lower": "[3.776142374915396699201125816139798719046447916917965382117786491993821652307 +/- 1.59e-76]",
+ "leaves": 4,
+ "bound_leaves": 2,
+ "corner_leaves": 2,
+ "max_depth": 2,
+ "covered_area": "4",
+ "complete": true,
+ "failures": [],
+ "cardinal_sanity_ball_containment": true,
+ "cpu_seconds": 0.002
+}
