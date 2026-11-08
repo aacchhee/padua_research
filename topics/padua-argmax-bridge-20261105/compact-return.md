@@ -113,3 +113,13 @@ need not match. [Cold-storage record](cold-storage.json) records custody.
 
 These supplemental reviews do not replace the final Claude audit, waive
 existing chronology findings, assign final IDs or authorize a merge.
+
+## Dated clarification — 2026-11-08 (Claude audit-03 MINOR fix E-07)
+
+The committed `evidence/compact-return/fresh-n199.json` and
+`fresh-n238.json` are the **sandbox native fresh replays** (the two
+preregistered verify-mode calls described above), not the Syvert server
+fresh-pass receipts. Their retained proof fields equal the Syvert
+primaries'; the bytes differ. The Syvert fresh receipts for all 280 pairs are
+inside the off-Git compact return. Claude's own independent replays and
+recheck of all 560 certificates are recorded in [audit-03](audit-03.md).

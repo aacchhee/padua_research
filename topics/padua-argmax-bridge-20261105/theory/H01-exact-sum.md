@@ -322,3 +322,15 @@ the first displayed statement had omitted -a^2*log(m)/m although (13)
 and (22) retained it. The displayed statement (1) and its final deduction
 were corrected before the review hash. This is a material pre-audit
 statement correction; no earlier acceptance is claimed.
+
+## Dated status addendum — 2026-11-08 (Claude audit-03 MINOR fix H-C01)
+
+The words "OPEN during development / not yet adopted" in the status line
+above describe the state at first freeze and are historical. The enclosing
+theorem [H-sharp-corner-expansion](H-sharp-corner-expansion.md) is PROVED,
+and this file's aggregate analysis was accepted without conditions by the
+distinct reviews [independent-checks-H-main.md](../independent-checks-H-main.md) and
+[independent-checks-H-support.md](../independent-checks-H-support.md). The
+Claude audit that reconstructed it independently, with high-precision
+numerical corroboration, is [audit-03](../audit-03.md). No statement,
+constant or proof text above changed.

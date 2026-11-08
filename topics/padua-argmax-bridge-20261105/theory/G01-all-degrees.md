@@ -111,3 +111,14 @@ This establishes no minimum analytic onset, useful asymptotic constant,
 novelty/priority verdict, or F07/F10 integration. F01–F10 are separate,
 completed paper-only supports. Shared PD-T099 history/status is preserved
 until reviewed registry application; no earlier OPEN snapshot is rewritten.
+
+## Dated clarification — 2026-11-08 (Claude audit-03 MINOR fix G-6)
+
+"Both prescribed fresh native checks" above (Status section) should read
+"both fresh native checks, which were executed and independently reviewed";
+see [compact-return](../compact-return.md). The trusted-implementation list
+above is extended by audit-03 finding G-1 (the accepted evaluator theorems
+D23/C02/C06/N5 for S vertex bounds and D06/C11 for the actual lambda points)
+and by G-4 (FLINT, the Python interpreter/parsing and the LP64/binary64
+conventions); that extension is returned to the developer for a reviewed
+update of this record and is not applied here. See [audit-03](../audit-03.md).

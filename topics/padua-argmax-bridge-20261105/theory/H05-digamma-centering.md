@@ -298,3 +298,14 @@ this derivation. The first reported bound was the cruder absolute
 triangle bound 2/m^2; the subsequent SAME-shift comparison in (11)
 proves the stronger one-sided result (2). All are inside the originally
 registered support scope. Root owns Git/shared LOG/integration.
+
+## Dated status addendum — 2026-11-08 (Claude audit-03 MINOR fix H-C01)
+
+Statements above that "the full corner expansion remains a separate OPEN
+target" and that "no independent acceptance is claimed" describe the state at
+first freeze and are historical. The full expansion
+[H-sharp-corner-expansion](H-sharp-corner-expansion.md) is PROVED, and this
+centering lemma was accepted by [independent-checks-H-support.md](../independent-checks-H-support.md)
+and [independent-checks-H-main.md](../independent-checks-H-main.md); the Claude
+reconstruction is [audit-03](../audit-03.md). The status of original PD-T098 in
+shared registries follows reviewed registry application, not this note.

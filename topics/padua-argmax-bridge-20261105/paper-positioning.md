@@ -115,3 +115,15 @@ Primarypages checked on2026-11-07:
 
 No submission, editorcontact, acceptance-rate claim, timing estimate or
 fee commitment was made. Bibliometric rankings were not the basis.
+
+## Dated addendum — 2026-11-08 (Claude audit-03 MINOR fix X-17)
+
+The earlier bullet that the asymptotic result retains "its named
+computer-assisted constant dependency" is superseded for the corner
+expansion: the sharp corner expansion (Theorem 1.2) is proved entirely
+analytically ([H-sharp-corner-expansion](theory/H-sharp-corner-expansion.md),
+paper Section 3). The computer-assisted constant enclosure (PD-T271) enters
+only the explicit n >= 320 part of the location theorem, and audit-03
+([audit-03-manuscripts](audit-03-manuscripts.md), P-03) records that it can be
+replaced by a short rational enclosure. The Lambda_n asymptotics need only the
+analytic n >= 320 part together with the corner expansion.

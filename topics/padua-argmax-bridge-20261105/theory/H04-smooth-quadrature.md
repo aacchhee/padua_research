@@ -289,3 +289,16 @@ kill test BEFORE derivation. Parent-assigned Codex mathematical developer,
 inherited serving metadata not independently exposed. The initial
 zero-first-coefficient subguess was tested and disproved by (3); the
 registered expansion target is proved. No extra H round was launched.
+
+## Dated status addendum — 2026-11-08 (Claude audit-03 MINOR fix H-C01)
+
+"Distinct mathematical review has not yet occurred" in the status line above
+is historical. This supporting result was accepted without conditions by
+[independent-checks-H-support.md](../independent-checks-H-support.md) and as
+part of the integrated proof by [independent-checks-H-main.md](../independent-checks-H-main.md);
+the Claude reconstruction is [audit-03](../audit-03.md). The parent theorem is
+[H-sharp-corner-expansion](H-sharp-corner-expansion.md). Separately, audit-03
+finding H-C03 records that the two coefficients of the |W''| majorant are
+swapped in the display near line 129 (correct form
+(8/pi)[(16/27) sum k^-2 + (4/9) sum k^-4], still at most 4.74 < 5); that
+mathematical correction is returned to the developer and is not applied here.
