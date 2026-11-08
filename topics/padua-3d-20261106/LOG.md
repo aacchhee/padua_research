@@ -893,3 +893,25 @@ their corresponding runs, with publication and execution timing distinguished.
 - Final counter5/15completed,10unused; oldU1/U2/U3counts4/7/5unchanged. P1/P2/P5specific preservationroutes stop; P3/P4usefulfixed-count endpointsretained. No further experimentregistered/running; no quota spending. Widerchanged-support/block/all-degree questions remain OPEN/deferred as documented, not rejected by these tests.
 - Ordinarychat1Dcontext: computed classic Chebyshev-Lobatto and endpoint-scaled Chebyshev-root examples with barycentricweights and scalar maximization perinterval, degrees10/16/100. Numericalvalues2.42097/2.72471/3.89419 and2.06874/2.34498/3.47786 respectively; not certified exactoptima or a pruningresearchround. Classical families/readinglimits in existingBrutman/Ehlich-Zellerrecords; no newliterature/ID/priorityclaim.
 - StageAUDIT, formalClaudeaudit04stillPENDING preservinghandoff15/11/09scope, oldsource/E4decisions and explicituncovereditems. Publishalloutputs beforestatus-onlyclose16/new17. OnlyACmerges; no IDs/ranges/sharedregistry/readiness/merge/archivaldelivery.
+
+## 2026-11-08 — Claude, claude-opus-5-5 xhigh — formal combined audit 04 (handoff 17)
+
+- Role: independent auditor of Codex development. Rules read at
+  `dafb8c8410d9c81671902c382655036d54c8b698`, unchanged since `9042e1c`; audited candidate
+  `e7c9900ec7dc232d2e117cc72dd47b79c7a0fe26`; main `f70a260`.
+- Scope: the preserved [handoff 09](handoffs/09-audit.md), [11](handoffs/11-usable-audit.md) and
+  [15](handoffs/15-combined-audit.md) scopes plus [handoff 17](handoffs/17-pruning-audit.md).
+- [Audit 04](audit-04.md): eight Opus 5.5 xhigh scope reports in [audit-04/](audit-04/), with audit code
+  and [receipts](audit-04/receipts.txt). The novelty subagent read the full current `state/IDEAS.md`.
+- Outcome: no BLOCKING finding; mathematics accepted across all four batches. Seven MAJOR
+  record/disclosure/gate findings (G1–G7), so the stage is **WORK**. AC decision items are recorded
+  in audit 04: storage within the new allowance, E4, and the lattice stop(a) boundary.
+- AC (2026-11-08), verbatim:
+  - "When finished, use opus extra to reassess the 3d frontier: should this direction be frozen or is it worth pursuing some extra rounds? seems that the case is genuinely hard, but you may try to do inspiration round with literature and maybe neigboring fields before deciding."
+  - "looks like there is a huge gap between log 3d asymptotics and what is actually available of point sets. in 2D Padua group was lucky with lissajous. But I suspect that one has to look for deeper algebraic structures in 2D, not just sin/cos intersections, that may transfer to 3D. I feel that Lissajous/Chebyshev is just a well-known representation of deeper structures"
+  - "otherwise this branch becomes substantial. I authorize exceeding all limits with 100%, to be potentially discussed at PR"
+- Claude's reading of the last instruction: the storage limits (16 KiB per file and manifest cap; 5 MB
+  repository-wide) may be exceeded by up to 100%, provisionally, with discussion at PR. Round budgets
+  are not affected. AC may correct this reading.
+- The frontier reassessment (an Opus 5.5 xhigh inspiration round) is in progress; its record will be
+  `frontier-assessment.md`.
