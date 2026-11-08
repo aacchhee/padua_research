@@ -224,6 +224,17 @@ switch to the rename-aware check the editor implemented and self-tested
 (`notation_scan.py --baseline-rev ... --rename-map ...`). I recommend the
 rename-aware check.
 
+## Addendum: local native replay of the 276 unsampled primaries (AC decision 3)
+
+Done after the findings above were written. Result in
+[replay276.md](replay276.md): **276 of 276 verify calls accepted** (observed exit 0, no
+timeout, no first failure), and every fresh receipt equals the Syvert primary on all compared
+fields; 2312.5 CPU-s in total, about 10 minutes on 4 cores, non-pinned Ubuntu library stack. With the
+four earlier replays, all 280 degrees are natively re-executed off Syvert. This resolves the
+faithfulness part of E-06; independent arithmetic (idea I25) remains with Codex. The limits
+listed under "Not re-derived, or not tested" for these 276 degrees change accordingly: their
+native premises are no longer unreplayed, but they are still the same engine and Arb kernels.
+
 ## Audit-02 dispositions, checked in the code actually used
 
 PA1 fixed and confirmed by running controls on the released process guard (exit
