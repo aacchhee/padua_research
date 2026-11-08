@@ -52,10 +52,10 @@ of zero is zero. The finite collection of distinct nodes has a positive minimum
 separation. Choose $\rho>0$ so small that the closed balls of radius
 $\rho$ around distinct nodes are disjoint, and put
 \[
- \psi_B(z)=\max\{0,1-|z-B|/\rho\},\qquad
- f_*(z)=\sum_B s_B\psi_B(z),\qquad z\in Q.
+ \mathsf{h}_B(z)=\max\{0,1-|z-B|/\rho\},\qquad
+ f_*(z)=\sum_B s_B\mathsf{h}_B(z),\qquad z\in Q.
 \]
-The norm $|z-B|$ here is Euclidean distance. Each $\psi_B$ is continuous,
+The norm $|z-B|$ here is Euclidean distance. Each $\mathsf{h}_B$ is continuous,
 equals one at its own node and vanishes at the others. At any location
 at most one summand is nonzero, so $|f_*(z)|\leq1$. Thus $f_*\in C(Q)$,
 $f_*(B)=s_B$, and
@@ -89,10 +89,10 @@ frequencies after the change to angular variables.
 We use the Chebyshev polynomials $T_r(\cos t)=\cos(rt)$. Write
 $\theta_j=j\pi/n$, $\phi_k=k\pi/(n+1)$ and
 \[
- \epsilon_j=\begin{cases}1/2,&j=0,n,\\1,&\text{otherwise},\end{cases}
+ \varepsilon_j=\begin{cases}1/2,&j=0,n,\\1,&\text{otherwise},\end{cases}
  \qquad
  \eta_k=\begin{cases}1/2,&k=0,n+1,\\1,&\text{otherwise},\end{cases}
- \qquad w_{jk}=\frac{2\epsilon_j\eta_k}{n(n+1)}.
+ \qquad w_{jk}=\frac{2\varepsilon_j\eta_k}{n(n+1)}.
 \]
 The endpoint factors are the half weights familiar from the trapezoidal
 rule. Here they give an exact finite identity. A point interior to both angular grids has
@@ -177,15 +177,15 @@ The phrase \emph{cardinal kernel} in the lemma means that the corrected
 kernel, with the weight of its second node attached, produces the
 cardinal polynomial for that node. More explicitly, write temporarily
 \[
- R_n(z,B):=K_n(z,B)-T_n(z_1)T_n(B_1).
+ \widetilde K_n(z,B):=K_n(z,B)-T_n(z_1)T_n(B_1).
 \]
-The proof will show both that $R_n$ reproduces $\Pi_n$ in the
-checkerboard scalar product and that $w_B R_n(A,B)=\delta_{AB}$ at
+The proof will show both that $\widetilde K_n$ reproduces $\Pi_n$ in the
+checkerboard scalar product and that $w_B \widetilde K_n(A,B)=\delta_{AB}$ at
 nodes. The weight belongs to the sampled variable $B$, just as a
 quadrature weight belongs to the variable being summed. Later we
-express this same $R_n$ using angle sums and differences. The angular
+express this same $\widetilde K_n$ using angle sums and differences. The angular
 kernel $G_n$ introduced after the proof is the two-angle trigonometric
-sum from which those reflected copies of $R_n$ are assembled. Thus
+sum from which those reflected copies of $\widetilde K_n$ are assembled. Thus
 cardinal values, reproduction and the angular formula are linked by
 explicit finite identities.
 
@@ -399,7 +399,7 @@ coefficient differs from the continuous normalization described above.
 \noindent\textbf{Why a reproducing kernel yields the cardinal values.}
 Define the kernel with these inverse coefficients by
 \[
- R_n(z,B)=\sum_{p+q\leq n}
+ \widetilde K_n(z,B)=\sum_{p+q\leq n}
    \frac{e_{pq}(z)e_{pq}(B)}{h_p^{(n)}h_q^{(n+1)}}
         =K_n(z,B)-T_n(z_1)T_n(B_1).
 \]
@@ -407,7 +407,7 @@ For a fixed $z$, take its scalar product in the $B$ variable with
 $P(B)=\sum_{r+s\leq n}c_{rs}e_{rs}(B)$. Substituting both finite
 expansions and interchanging finite sums gives
 \begin{align*}
- &\sum_{B\in\mathcal P_n}w_B R_n(z,B)P(B)\\
+ &\sum_{B\in\mathcal P_n}w_B \widetilde K_n(z,B)P(B)\\
  &\quad=\sum_{p+q\leq n}\sum_{r+s\leq n}
     \frac{e_{pq}(z)c_{rs}}{h_p^{(n)}h_q^{(n+1)}}
        \sum_{B\in\mathcal P_n}w_Be_{pq}(B)e_{rs}(B)\\
@@ -420,20 +420,20 @@ surviving indices its value is $h_p^{(n)}h_q^{(n+1)}$, exactly
 canceling the denominator. Hence the double sum reduces to the single
 basis expansion and yields
 \[
- \sum_{B\in\mathcal P_n}w_B R_n(z,B)P(B)
+ \sum_{B\in\mathcal P_n}w_B \widetilde K_n(z,B)P(B)
       =\sum_{p+q\leq n}c_{pq}e_{pq}(z)=P(z).
 \]
 This is the reproducing property: the weighted scalar product with
-$R_n(z,\cdot)$ returns evaluation at $z$ for every $P\in\Pi_n$.
+$\widetilde K_n(z,\cdot)$ returns evaluation at $z$ for every $P\in\Pi_n$.
 
 To see the nodal delta values directly, let $F$ be the matrix with
-entries $F_{A,B}=w_B R_n(A,B)$. To obtain its matrix formula, compute
+entries $F_{A,B}=w_B \widetilde K_n(A,B)$. To obtain its matrix formula, compute
 one entry of the proposed product:
 \begin{align*}
  (ED^{-1}E^{\mathsf T}W)_{A,B}
  &=w_B\sum_{p+q\leq n}
        \frac{e_{pq}(A)e_{pq}(B)}{h_p^{(n)}h_q^{(n+1)}}\\
- &=w_BR_n(A,B)=F_{A,B}.
+ &=w_B\widetilde K_n(A,B)=F_{A,B}.
 \end{align*}
 The equality of all entries proves the formula for $F$. Associating
 matrix factors and then using $E^{\mathsf T}WE=D$ gives
@@ -442,8 +442,8 @@ matrix factors and then using $E^{\mathsf T}WE=D$ gives
  \qquad FE=ED^{-1}(E^{\mathsf T}WE)=E.
 \]
 Multiplying $FE=E$ on the right by $E^{-1}$ gives $F$ equal to the
-identity matrix. Hence $w_B R_n(A,B)=\delta_{AB}$. For fixed $B$,
-the function $w_B R_n(z,B)$ lies in $\Pi_n$ and has precisely the
+identity matrix. Hence $w_B \widetilde K_n(A,B)=\delta_{AB}$. For fixed $B$,
+the function $w_B \widetilde K_n(z,B)$ lies in $\Pi_n$ and has precisely the
 prescribed cardinal values. Uniqueness identifies it with $L_B$ and
 proves \eqref{eq:cardinal-kernel}. The exceptional coefficient in $K_n$
 was $\nu_n\nu_0=2$; subtracting one copy of its product leaves
@@ -547,14 +547,14 @@ $z=(\cos\theta,\cos\phi)$. The product-to-sum identity gives
 \]
 Applying it in both coordinates, including the corrected term, yields
 \[
- R_n(z,B)=\frac14\sum_{\sigma\in\{-1,1\}}
+ \widetilde K_n(z,B)=\frac14\sum_{\sigma\in\{-1,1\}}
                     \sum_{\tau\in\{-1,1\}}
          G_n(\theta+\sigma\alpha,\phi+\tau\beta).
 \]
 The correction $-\cos(nu)$ in $G_n$ contributes
 $-\cos(n\theta)\cos(n\alpha)$ to this average, because the sum in
 $\tau$ simply supplies two equal copies. Thus it reproduces exactly
-the correction in $R_n$. Substituting node angles $\alpha=\theta_j$
+the correction in $\widetilde K_n$. Substituting node angles $\alpha=\theta_j$
 and $\beta=\phi_k$ and multiplying by $w_{jk}$ recovers $L_B(z)$.
 
 The function $G_n$ is a trigonometric polynomial: a finite linear

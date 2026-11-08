@@ -75,7 +75,7 @@ For $u\ne v$ let $f(u,v)=(1+\cos v)/|\cos u-\cos v|$. We first obtain
        \varepsilon_j\eta_k f(\theta_j,\phi_k)+\frac1m.
 \end{equation}
 To see this directly from \eqref{eq:cardinal-kernel}, define
-$D_n(u,v)=\sum_{|p|+|q|\leq n}e^{i(pu+qv)}$. Grouping signs identifies
+$\mathcal{D}_n(u,v)=\sum_{|p|+|q|\leq n}\mathrm e^{\mathrm i(pu+qv)}$. Grouping signs identifies
 this with the product Chebyshev sum at a corner.
 
 For clarity, the Chebyshev identity being used is
@@ -85,38 +85,38 @@ frequencies gives
  \sum_{p=-P}^{P}e^{ipu}=1+2\sum_{p=1}^{P}\cos(pu).
 \]
 Applying this grouping in both coordinates shows that the diamond
-sum $D_n$ has precisely the multiplicities $\nu_p\nu_q$ in the
+sum $\mathcal{D}_n$ has precisely the multiplicities $\nu_p\nu_q$ in the
 kernel $K_n$, with total degree condition $p+q\leq n$.
 At $(1,1)$ all the factors $T_p(1)$ equal one. At another corner,
 $T_p(-1)=(-1)^p$ changes phases or reflects the node indices.
 The separate correction $T_n(z_1)T_n(B_1)$ in the cardinal formula
 remains essential after this grouping: it is the term that later
 appears as $(-1)^j$. With
-$S=(u+v)/2$, $T=(v-u)/2$, finite geometric sums give
+$u_+=(u+v)/2$, $u_-=(v-u)/2$, finite geometric sums give
 \[
- D_n(u,v)=\frac{\sin((n+1)S)\sin((n+1)T)+\sin(nS)\sin(nT)}
-                  {\sin S\sin T}.
+ \mathcal{D}_n(u,v)=\frac{\sin((n+1)u_+)\sin((n+1)u_-)+\sin(nu_+)\sin(nu_-)}
+                  {\sin u_+\sin u_-}.
 \]
 Indeed $(p,q)\mapsto(p+q,q-p)$ takes the diamond into the square
 $[-n,n]^2$ with equal coordinate parity; summing its two parity classes
 gives the displayed product.
 
 The change of variables can be checked directly. If
-$A=p+q$ and $B=q-p$, then
-$p=(A-B)/2$, $q=(A+B)/2$, and
+$i_1=p+q$ and $i_2=q-p$, then
+$p=(i_1-i_2)/2$, $q=(i_1+i_2)/2$, and
 \[
- |p|+|q|=\max(|A|,|B|),\qquad pu+qv=AS+BT.
+ |p|+|q|=\max(|i_1|,|i_2|),\qquad pu+qv=i_1u_++i_2u_-.
 \]
-The inverse indices are integers exactly when $A$ and $B$ have the
+The inverse indices are integers exactly when $i_1$ and $i_2$ have the
 same parity. Thus the diamond is the union of an even-even and an
-odd-odd rectangular grid in $(A,B)$. For a step-two progression,
+odd-odd rectangular grid in $(i_1,i_2)$. For a step-two progression,
 \[
- \sum_{h=0}^{M}e^{i(-M+2h)z}
+ \sum_{h=0}^{M}\mathrm e^{\mathrm i(-M+2h)z}
        =\frac{\sin((M+1)z)}{\sin z}.
 \]
 The two parity classes have progression lengths $n+1$ and $n$.
 Multiplying their one-dimensional sums gives the two products of
-sines in the formula for $D_n$. This derivation also explains why
+sines in the formula for $\mathcal{D}_n$. This derivation also explains why
 the apparent singularities are removable: each sine quotient was
 obtained from a finite sum of exponentials. Quotients at zero denominators have their
 continuous polynomial values. The index reflections are explicit.
@@ -134,13 +134,13 @@ of node indices about either nonnode corner therefore turns the
 checkerboard odd and leaves its weights unchanged.
 The corresponding Lebesgue sum is therefore
 $\sum_{j+k\text{ odd}}2\varepsilon_j\eta_k
- |D_n(\theta_j,\phi_k)-(-1)^j|/(nm)$.
+ |\mathcal{D}_n(\theta_j,\phi_k)-(-1)^j|/(nm)$.
 Here the mesh identities are
 $n\theta_j=j\pi$ and $m\phi_k=k\pi$. For example,
 $\sin(m\theta_j)=(-1)^j\sin\theta_j$ and
 $\sin(n\phi_k)=(-1)^{k+1}\sin\phi_k$.
 Together with $j+k$ odd, these identities reduce the numerator of
-$D_n$ to the expression below. The conversion from products of sines
+$\mathcal{D}_n$ to the expression below. The conversion from products of sines
 to cosine differences uses
 \[
  \cos u-\cos v
@@ -154,13 +154,13 @@ Once the correction is subtracted, the numerator simplifies further:
 Since $1+\cos v\geq0$ on $[0,\pi]$, taking absolute values now
 produces exactly the positive summand $2f(u,v)$.
 \[
- D_n(\theta_j,\phi_k)=(-1)^j
+ \mathcal{D}_n(\theta_j,\phi_k)=(-1)^j
        \frac{2+\cos\theta_j+\cos\phi_k}{\cos\theta_j-\cos\phi_k},
- \qquad |D_n(\theta_j,\phi_k)-(-1)^j|=2f(\theta_j,\phi_k).
+ \qquad |\mathcal{D}_n(\theta_j,\phi_k)-(-1)^j|=2f(\theta_j,\phi_k).
 \]
 Coprimality of $n,m$ leaves only the collisions $(0,0)$ and $(n,m)$.
 The odd checkerboard excludes the first. At the second,
-$D_n(\pi,\pi)=(-1)^n(2n+1)$, so the corrected absolute value $2n$
+$\mathcal{D}_n(\pi,\pi)=(-1)^n(2n+1)$, so the corrected absolute value $2n$
 with weight $1/(2nm)$ contributes $1/m$. The other entries with $k=m$
 vanish. This proves \eqref{cu:positive} and the equality of the two
 nonnode corner values. The node corners have value one by cardinality.
@@ -179,7 +179,7 @@ corrected absolute value $2n$ gives the displayed $1/m$.
 
 A removable singularity is a point at which a formula is undefined
 although the function it represents has a finite continuous extension.
-The sine-quotient representation of the finite polynomial $D_n$
+The sine-quotient representation of the finite polynomial $\mathcal{D}_n$
 has this property. The function $f$ is used only at distinct sampled
 angles; it has no joint continuous extension at $(\pi,\pi)$.
 Neighboring unequal-mesh entries can be large. We keep their Cauchy denominators
@@ -230,11 +230,11 @@ On this smaller interval $\sec^2t\leq2$, so
                    \leq2y=\pi(1-x).
 \]
 These fixed constants will control the first and last rows uniformly. For $1\leq r<m$ put
-$x=r/m$, $s=m-r$, $\alpha=(1-x)/2$ and
+$x=r/m$, $s=m-r$, $\alpha_r=(1-x)/2$ and
 \[
- T_{n,r}=\sum_{\ell=0}^{r-1}\cot\frac{\pi(\ell+\alpha)}n,
+ T_{n,r}=\sum_{\ell=0}^{r-1}\cot\frac{\pi(\ell+\alpha_r)}n,
  \qquad V_n=\sum_{r=1}^{m-1}w(r/m)
-                    \sum_{\ell=0}^{r-1}B((\ell+\alpha)/n).
+                    \sum_{\ell=0}^{r-1}B((\ell+\alpha_r)/n).
 \]
 We use a convergent difference of reciprocal sums to define $\psi$.
 For fixed $z>0$, its $k$th summand is
@@ -246,7 +246,7 @@ absolutely. For the moment define $\psi$ by its convergent harmonic series,
 \end{equation}
 and set
 \begin{equation}\label{cu:D}
- D_{m,r}=\psi(r+\alpha)+\psi(s-\alpha)-\psi(m-\alpha)-\psi(\alpha),
+ D_{m,r}=\psi(r+\alpha_r)+\psi(s-\alpha_r)-\psi(m-\alpha_r)-\psi(\alpha_r),
  \qquad \mathcal H_m=\frac4{\pi m}\sum_{r=1}^{m-1}w(r/m)D_{m,r}.
 \end{equation}
 We claim the exact identities
@@ -320,7 +320,7 @@ Its weight $\eta_0=1/2$, together with the exceptional $1/m$, yields
 $\Lambda_c=1/m+n/m+2\sum_{r=1}^{m-1}(2P_r-n)/(nm)$.
 This is the first identity in \eqref{cu:exact}. Finally, removing both
 poles in each cotangent and using $\psi(z+1)-\psi(z)=1/z$ gives
-$T_{n,r}=nD_{m,r}/\pi+\sum_{\ell<r}B((\ell+\alpha)/n)$,
+$T_{n,r}=nD_{m,r}/\pi+\sum_{\ell<r}B((\ell+\alpha_r)/n)$,
 which proves the second identity.
 
 We can spell out both pieces of this row calculation. For a fixed
@@ -350,9 +350,9 @@ listed ones. There are $r$ of them. Substitute $j=r-1-2\ell$:
 \]
 The other cotangent term in $F_r$ runs through the same $r$
 arguments in reverse order. Its prefactor $w/2$ consequently leaves
-$wT_{n,r}$ as the positive sum. If $P$ is a positive sum and $Q$
-is the magnitude of the negative sum, the signed total is $P-Q=n$,
-while the absolute total is $P+Q=2P-n$. This accounts for the
+$wT_{n,r}$ as the positive sum. If $P_+$ is a positive sum and $P_-$
+is the magnitude of the negative sum, the signed total is $P_+-P_-=n$,
+while the absolute total is $P_++P_-=2P_+-n$. This accounts for the
 subtraction in \eqref{cu:exact}.
 
 The endpoint $r=0$ can also be evaluated without a limiting row
@@ -378,20 +378,20 @@ information.
 Finally, the two-pole decomposition is an exact equality term by
 term:
 \[
- \cot\frac{\pi(\ell+\alpha)}n
- =\frac n\pi\left(\frac1{\ell+\alpha}
-                   -\frac1{n-\ell-\alpha}\right)
-      +B((\ell+\alpha)/n).
+ \cot\frac{\pi(\ell+\alpha_r)}n
+ =\frac n\pi\left(\frac1{\ell+\alpha_r}
+                   -\frac1{n-\ell-\alpha_r}\right)
+      +B((\ell+\alpha_r)/n).
 \]
 The recurrence for $\psi$ follows by shifting its convergent series:
 $\psi(z+1)-\psi(z)=1/z$. Telescoping gives
 \[
  \begin{aligned}
- \sum_{\ell=0}^{r-1}\frac1{\ell+\alpha}
-       &=\psi(r+\alpha)-\psi(\alpha),\\
- \sum_{\ell=0}^{r-1}\frac1{n-\ell-\alpha}
-       &=\psi(n+1-\alpha)-\psi(n-r+1-\alpha)\\
-       &=\psi(m-\alpha)-\psi(s-\alpha).
+ \sum_{\ell=0}^{r-1}\frac1{\ell+\alpha_r}
+       &=\psi(r+\alpha_r)-\psi(\alpha_r),\\
+ \sum_{\ell=0}^{r-1}\frac1{n-\ell-\alpha_r}
+       &=\psi(n+1-\alpha_r)-\psi(n-r+1-\alpha_r)\\
+       &=\psi(m-\alpha_r)-\psi(s-\alpha_r).
  \end{aligned}
 \]
 Their difference is $D_{m,r}$. Thus $\psi$ is simply convenient
@@ -465,7 +465,7 @@ The example illustrates the endpoint weights in a setting where
 every term can be inspected directly.
 
 The exact coefficients can also be checked for arbitrary $n$.
-Let $e$ equal one when $n$ is odd and zero when $n$ is even.
+Let $\boldsymbol1_{n\text{ odd}}$ equal one when $n$ is odd and zero when $n$ is even.
 After averaging the reflected numerator, the unnormalized reference
 sum is
 \[
@@ -474,10 +474,10 @@ sum is
        \frac{\varepsilon_j\varepsilon_k}
             {|\cos\theta_j-\cos\theta_k|}\\
  &\quad=\sum_{\substack{1\leq s<n\\s\text{ odd}}}
-    c_s\left(c_s+2\sum_{\substack{s<r<n\\r\text{ odd}}}c_r+ec_n\right)
-       +\frac e4c_n^2\\
+    c_s\left(c_s+2\sum_{\substack{s<r<n\\r\text{ odd}}}c_r+\boldsymbol1_{n\text{ odd}}c_n\right)
+       +\frac{\boldsymbol1_{n\text{ odd}}}{4}c_n^2\\
  &\quad=\left(\sum_{\substack{1\leq r<n\\r\text{ odd}}}c_r
-                                      +\frac e2c_n\right)^2.
+                                      +\frac{\boldsymbol1_{n\text{ odd}}}{2}c_n\right)^2.
  \end{aligned}
 \]
 For $s<n$, the boundary values $r=s$ and $r=2n-s$ correspond
@@ -568,21 +568,21 @@ $Q_i=|u-v_i|/2$. The order of $u,v_i$ is unchanged. For $k<j$ both $v_i<u$.
 For $k>j$ and $j<n$,
 $nk-mj=n(k-j-1)+(n-j)>0$, so both $v_i>u$.
 Thus $\cos u-\cos v_0$ and $\cos u-\cos v_1$ have the
-same sign. Put $c=\cos u$ and $c_i=\cos v_i$.
+same sign. Put $\mathsf{c}=\cos u$ and $\mathsf{c}_i=\cos v_i$.
 Writing the two fractions over a common denominator gives
 \[
- \frac{1+c_1}{c-c_1}-\frac{1+c_0}{c-c_0}
- =\frac{(1+c_1)(c-c_0)-(1+c_0)(c-c_1)}
-         {(c-c_1)(c-c_0)}
- =\frac{(1+c)(c_1-c_0)}{(c-c_1)(c-c_0)}.
+ \frac{1+\mathsf{c}_1}{\mathsf{c}-\mathsf{c}_1}-\frac{1+\mathsf{c}_0}{\mathsf{c}-\mathsf{c}_0}
+ =\frac{(1+\mathsf{c}_1)(\mathsf{c}-\mathsf{c}_0)-(1+\mathsf{c}_0)(\mathsf{c}-\mathsf{c}_1)}
+         {(\mathsf{c}-\mathsf{c}_1)(\mathsf{c}-\mathsf{c}_0)}
+ =\frac{(1+\mathsf{c})(\mathsf{c}_1-\mathsf{c}_0)}{(\mathsf{c}-\mathsf{c}_1)(\mathsf{c}-\mathsf{c}_0)}.
 \]
 The common denominator sign means that taking the absolute value
 of this signed difference gives the difference of the two absolute
 fractions in absolute value. Now
 \[
- 1+c=2\cos^2(u/2),\qquad
- c_1-c_0=2\sin V\sin(\delta/2),\qquad
- |c-c_i|=2\sin S_i\sin Q_i.
+ 1+\mathsf{c}=2\cos^2(u/2),\qquad
+ \mathsf{c}_1-\mathsf{c}_0=2\sin V\sin(\delta/2),\qquad
+ |\mathsf{c}-\mathsf{c}_i|=2\sin S_i\sin Q_i.
 \]
 Substituting these factors gives the exact difference below.
 \[
@@ -1030,10 +1030,10 @@ Taking $M\to\infty$ and then $J\to\infty$ therefore gives
 This argument needs only the finite sine product, an elementary
 sine bound, and a convergent reciprocal-square tail.
 It also gives the customary full reciprocal-square value if desired.
-Let $S=\sum_{k\geq1}k^{-2}$, which converges by integral
-comparison, and let $S_o$ be its odd-index part. The formula just
-proved gives $S_o=\psi'(1/2)/4=\pi^2/8$. The even-index
-part is $S/4$, so $S=S_o+S/4$ and $S=\pi^2/6$.
+Let $\zeta(2)=\sum_{k\geq1}k^{-2}$, which converges by integral
+comparison, and let $\zeta_{\rm odd}(2)$ be its odd-index part. The formula just
+proved gives $\zeta_{\rm odd}(2)=\psi'(1/2)/4=\pi^2/8$. The even-index
+part is $\zeta(2)/4$, so $\zeta(2)=\zeta_{\rm odd}(2)+\zeta(2)/4$ and $\zeta(2)=\pi^2/6$.
 
 The large-$z$ expansion can also be viewed directly through
 quadrature. The series defining $\psi$ is equivalent to
@@ -1484,29 +1484,29 @@ Finally, unit-cell trapezoids for $\log t/t$ give a real constant $C_K$ with
 Here is the cell calculation giving the second formula and its
 constant. Let $f(t)=\log t/t$ on $[1,\infty)$ and define
 \[
- E_j=\frac{f(j)+f(j+1)}2-\int_j^{j+1}f(t)\,dt
+ \mathsf{E}_j=\frac{f(j)+f(j+1)}2-\int_j^{j+1}f(t)\,dt
                                       \qquad(j\geq1).
 \]
 The unit-cell trapezoid bound gives
 \[
- |E_j|\leq\frac1{12}\sup_{j\leq t\leq j+1}|f''(t)|
+ |\mathsf{E}_j|\leq\frac1{12}\sup_{j\leq t\leq j+1}|f''(t)|
  \leq C\frac{1+\log j}{j^3},\qquad
  f''(t)=\frac{2\log t-3}{t^3}.
 \]
 The comparison series converges, and its tail is bounded by
 $C(1+\log m)/m^2$, as follows by integrating
 $(1+\log t)/t^3$ and treating its first term separately.
-Thus $C_K=\sum_{j=1}^{\infty}E_j$ is a finite real number,
+Thus $C_K=\sum_{j=1}^{\infty}\mathsf{E}_j$ is a finite real number,
 and
-$\sum_{j<m}E_j=C_K+O(\log m/m^2)$ for $m\geq3$.
+$\sum_{j<m}\mathsf{E}_j=C_K+O(\log m/m^2)$ for $m\geq3$.
 Summing the defining cell identity on $[1,m]$ counts each
 interior grid value once and the outer values with half weight:
 \[
  \begin{aligned}
  \sum_{r=1}^{m-1}f(r)
- &=\int_1^m f(t)\,dt+\sum_{j=1}^{m-1}E_j
+ &=\int_1^m f(t)\,dt+\sum_{j=1}^{m-1}\mathsf{E}_j
                                   +\frac{f(1)-f(m)}2\\
- &=\frac12\log^2m+\sum_{j=1}^{m-1}E_j
+ &=\frac12\log^2m+\sum_{j=1}^{m-1}\mathsf{E}_j
                                   -\frac{\log m}{2m}.
  \end{aligned}
 \]
@@ -1516,21 +1516,21 @@ from $\psi(m)=H_{m-1}-\gamma$ and \eqref{cu:psi-est}.
 Express $M_m$ as $\log m$ times \eqref{cu:w-sum}, plus
 $a\sum_{r<m}(\log r)/r+a(d_0-\log m)H_{m-1}$, plus $m^{-1}\sum R$.
 For an explicit check of the reciprocal-term cancellation, abbreviate
-$L=\log m$ and $c_v=\log(2/\pi)$. The three singular pieces
+$\mathsf{L}_m=\log m$ and $\mathsf{c}_v=\log(2/\pi)$. The three singular pieces
 of $M_m$ expand as
 \[
  \begin{aligned}
- L\frac1m\sum_{r<m}w(r/m)
-    &=aL^2+a(\gamma+c_v)L+O(L/m^2),\\
+ \mathsf{L}_m\frac1m\sum_{r<m}w(r/m)
+    &=a\mathsf{L}_m^2+a(\gamma+\mathsf{c}_v)\mathsf{L}_m+O(\mathsf{L}_m/m^2),\\
  a\sum_{r<m}\frac{\log r}{r}
-    &=\frac a2L^2+aC_K-\frac{aL}{2m}+O(L/m^2),\\
- a(d_0-L)H_{m-1}
-    &=-aL^2+a(d_0-\gamma)L+ad_0\gamma
-         -\frac{ad_0}{2m}+\frac{aL}{2m}+O(L/m^2).
+    &=\frac a2\mathsf{L}_m^2+aC_K-\frac{a\mathsf{L}_m}{2m}+O(\mathsf{L}_m/m^2),\\
+ a(d_0-\mathsf{L}_m)H_{m-1}
+    &=-a\mathsf{L}_m^2+a(d_0-\gamma)\mathsf{L}_m+ad_0\gamma
+         -\frac{ad_0}{2m}+\frac{a\mathsf{L}_m}{2m}+O(\mathsf{L}_m/m^2).
  \end{aligned}
 \]
-The $L/m$ terms cancel. The $L$ coefficient is
-$a(c_v+d_0)=ad$. The remaining quadrature piece has reciprocal
+The $\mathsf{L}_m/m$ terms cancel. The $\mathsf{L}_m$ coefficient is
+$a(\mathsf{c}_v+d_0)=ad$. The remaining quadrature piece has reciprocal
 coefficient $-(aq_0+\pi-ad_0)/(2m)$, which cancels the
 $-ad_0/(2m)$ above except for the indicated $\pi+aq_0$.
 All constant terms, including $\int R$, may now be collected in

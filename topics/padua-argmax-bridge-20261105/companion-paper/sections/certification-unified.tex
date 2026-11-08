@@ -39,9 +39,9 @@ For orientation, consider a continuous function $h$ on a closed
 interval. Finitely many observed values leave open what happens between
 them. A bound on the interpolation error adds the information that
 connects those observations to every intermediate point. For example,
-if $|h''|\leq K$ on an interval of width $d$, linear interpolation of
-the endpoint values has an error of magnitude at most $Kd^2/8$.
-Two endpoint upper bounds and the number $K$ therefore give an upper
+if $|h''|\leq M$ on an interval of width $d$, linear interpolation of
+the endpoint values has an error of magnitude at most $Md^2/8$.
+Two endpoint upper bounds and the number $M$ therefore give an upper
 bound on the whole interval. The rectangle argument below applies the
 same idea in each coordinate. The polynomial argument replaces the
 remainder estimate by an exact positive-basis expansion.
@@ -91,7 +91,7 @@ interpolation lemma is stated for a finite maximum of smooth functions.
 The full sign vector is fixed while differentiating and interpolating.
 At the end it may be chosen separately at every evaluation point.
 For instance, if $|f_\sigma|\leq M$ and a frequency estimate gives
-$|(f_\sigma)_{aa}|\leq K$ for every fixed $\sigma$, the same $K$
+$|(f_\sigma)_{aa}|\leq M$ for every fixed $\sigma$, the same $M$
 can be used before taking the maximum. Its size is governed by the
 whole signed sum. This will keep the derivative allowance independent
 of the number of cardinal functions or board points. A separate
@@ -184,8 +184,8 @@ triangles add to
 \[
  \int_u^vK_x(t)\,dt=\frac{(x-u)(v-x)}2.
 \]
-Thus $|h''|\leq K$ implies
-$h(x)\leq(Ih)(x)+K(x-u)(v-x)/2$. A convex function has
+Thus $|h''|\leq M$ implies
+$h(x)\leq(Ih)(x)+M(x-u)(v-x)/2$. A convex function has
 $h''\geq0$, in which case the signed remainder itself is nonpositive,
 as expected from the secant-line picture. The upper error estimate
 uses the absolute bound and remains valid for either curvature sign.
@@ -643,7 +643,7 @@ computation.
 \subsection{The phase certificate}
 For $41\leq n\leq319$ the common envelope is enclosed on
 $\mathcal T=\{(a,b):a,b\geq0,\ a+b\leq1\}$, with phases
-$(\alpha,\beta)=(\pi a,\pi b)$ and $k=n/(n+1)$.
+$(\alpha,\beta)=(\pi a,\pi b)$ and $\mu=n/(n+1)$.
 
 The variables $a,b$ are dimensionless phase coordinates. Thus an
 increment $\Delta a$ means an increment $\pi\Delta a$ in the radian
@@ -707,15 +707,15 @@ In the notation of \eqref{ul:primitive}, put
 \]
 Then $S_n(\pi a,\pi b)=\max_\varepsilon f_\varepsilon(a,b)$,
 and $|f_\varepsilon|\leq S_n$. Every signed board sum has frequencies
-at most $\pi,\pi k$ in these coordinates. A global norm $M$
+at most $\pi,\pi \mu$ in these coordinates. A global norm $M$
 and upper bounds at the vertices therefore give
 \begin{align}\label{cert:phase-bound}
  S_n(\pi a,\pi b)&\leq q_R(a,b),\\
  q_R&=I_RW+\frac{M\pi^2}{2}
- \{(a-a_0)(a_1-a)+k^2(b-b_0)(b_1-b)\},\notag\\
+ \{(a-a_0)(a_1-a)+\mu^2(b-b_0)(b_1-b)\},\notag\\
  \max_Rq_R&\leq V_R+\theta_RM,
  \quad V_R=\max_zW_z,\quad
- \theta_R=\frac{\pi^2}{8}\{(a_1-a_0)^2+k^2(b_1-b_0)^2\}.\notag
+ \theta_R=\frac{\pi^2}{8}\{(a_1-a_0)^2+\mu^2(b_1-b_0)^2\}.\notag
 \end{align}
 
 Here a frequency bound describes how fast an oscillating term can
@@ -735,8 +735,8 @@ $\cos(r(j\pi+\alpha)/n)$ has $\alpha$ frequencies $\pm r/n$.
 Since $r\leq n$, these have magnitude at most one. Replacing
 $\alpha$ by $\pi a$ multiplies the bound by $\pi$. In the other
 coordinate a factor with index $s\leq n$ has $\beta$ frequencies
-$\pm s/(n+1)$, of magnitude at most $k$. Replacing $\beta$ by
-$\pi b$ gives the bound $\pi k$. Finite sums, shifts by board
+$\pm s/(n+1)$, of magnitude at most $\mu$. Replacing $\beta$ by
+$\pi b$ gives the bound $\pi \mu$. Finite sums, shifts by board
 indices, and fixed signs all preserve these frequency limits.
 
 For completeness, the norm form of the derivative inequality can be
@@ -892,7 +892,7 @@ bound in \eqref{cert:phase-bound}.
 
 Trigonometric Bernstein inequalities supply
 $|(f_\varepsilon)_{aa}|\leq\pi^2M$ and
-$|(f_\varepsilon)_{bb}|\leq\pi^2k^2M$ from the global norm.
+$|(f_\varepsilon)_{bb}|\leq\pi^2\mu^2M$ from the global norm.
 The final line of \eqref{cert:phase-bound} uses positivity of the
 bilinear weights and the elementary bound
 $(a-a_0)(a_1-a)\leq(a_1-a_0)^2/4$, and similarly for $b$.
@@ -1032,7 +1032,7 @@ give
 Indeed the ten quarter-squares cover $\mathcal T$; outside vertices fold
 back to $E$ by $(a,b)\mapsto(1-a,1-b)$, a phase symmetry.
 Each square has side $1/4$, so its Peano error is at most
-$\pi^2(1+k^2)M_*/128\leq\pi^2M_*/64$. Hence
+$\pi^2(1+\mu^2)M_*/128\leq\pi^2M_*/64$. Hence
 $M_*\leq V_E+\pi^2M_*/64$, proving \eqref{cert:grid-norm}; the
 rational factor follows from $\pi<22/7$.
 The quarter-grid construction can be visualized as four rows of
@@ -1075,8 +1075,8 @@ maximum. This edge pairing follows from the translation and sign
 symmetries already proved; each kernel mesh retains its own degree.
 
 With a side width $1/4$, the coordinate product bound is $1/64$.
-Multiplying by $M_*\pi^2/2$ and adding the $k^2$ contribution
-produces $M_*\pi^2(1+k^2)/128$. Since $0<k<1$, this is at most
+Multiplying by $M_*\pi^2/2$ and adding the $\mu^2$ contribution
+produces $M_*\pi^2(1+\mu^2)/128$. Since $0<\mu<1$, this is at most
 $M_*\pi^2/64$. At a maximizing point the resulting inequality is
 \[
  \left(1-\frac{\pi^2}{64}\right)M_*\leq V_E.
@@ -1162,7 +1162,7 @@ radius and its actual center.
 
 The strict comparisons use rational enclosures throughout. For
 example, $\pi^2$ in $\theta_R$ can be replaced by $p_+^2$,
-increasing the curvature allowance. The factor $k=n/(n+1)$ and all
+increasing the curvature allowance. The factor $\mu=n/(n+1)$ and all
 midpoint widths are rational. If $V_R,M,L_c$ are rational enclosures,
 then the resulting upper bound and its difference from $L_c$ are
 rational. The two proxy thresholds are rational as well. Thus deciding
@@ -1208,7 +1208,7 @@ The corresponding value tests are also concrete. An outward rational
 upper for the constant leaf bound is
 \[
  \widehat Q_R=V_R+\frac{Mp_+^2}{8}
-       \{(a_1-a_0)^2+k^2(b_1-b_0)^2\}.
+       \{(a_1-a_0)^2+\mu^2(b_1-b_0)^2\}.
 \]
 It bounds $q_R$ on the whole rectangle. Set
 $\delta_R=\delta_n(r_R)$ using the proved finite floor.
@@ -1273,7 +1273,7 @@ Each such function is even separately in $A$ and $B$, because both
 physical coordinates are cosine functions. In particular its first
 and third derivatives in either inward phase vanish at zero. It is
 also a finite trigonometric polynomial of bandwidth at most $1$ in
-$A$ and $k$ in $B$. All real inward phases give physical coordinates
+$A$ and $\mu$ in $B$. All real inward phases give physical coordinates
 in the square, so
 \[
  |p_\varepsilon(A,B)|\leq
@@ -1307,10 +1307,10 @@ Evenness also gives $(p_\varepsilon)_{AAA}(0,B)=0$, so
  \end{aligned}
 \]
 The last kernel is nonnegative and has total mass $1/3$. The fourth
-derivative bound is $M$ in $A$ and $k^4M$ in $B$. Consequently
+derivative bound is $M$ in $A$ and $\mu^4M$ in $B$. Consequently
 \[
  |(h_\varepsilon)_{uu}|\leq M/3,\qquad
- |(h_\varepsilon)_{vv}|\leq k^4M/3.
+ |(h_\varepsilon)_{vv}|\leq \mu^4M/3.
 \]
 The integral expression has a continuous value at $A=0$, namely
 $(p_\varepsilon)_{AAAA}(0,B)/3$, so the first estimate includes
@@ -1345,7 +1345,7 @@ involving a square root still gives a smooth function here.
 Apply Lemma~\ref{cert:positive} to these signed functions on a squared
 rectangle $[0,U]\times[0,V]$. Its curvature allowance is
 \[
- \frac M6\{u(U-u)+k^4v(V-v)\}.
+ \frac M6\{u(U-u)+\mu^4v(V-v)\}.
 \]
 Suppose the vertex upper data have losses at least $cU,cV,c(U+V)$
 from the exact corner value $C$ at the other three vertices. Their
@@ -1353,8 +1353,8 @@ bilinear interpolant is at most $C-c(u+v)$, because this affine
 function has exactly those four comparison values. Since
 $u(U-u)\leq Uu$ and $v(V-v)\leq Vv$ on the closed rectangle,
 \[
- \frac M6\{u(U-u)+k^4v(V-v)\}
- \leq\frac M6\max\{U,k^4V\}(u+v).
+ \frac M6\{u(U-u)+\mu^4v(V-v)\}
+ \leq\frac M6\max\{U,\mu^4V\}(u+v).
 \]
 Combining these inequalities and using $u+v=(A^2+B^2)/2$ gives
 \eqref{ul:squared-peano}. The common estimates hold for every
@@ -1396,7 +1396,7 @@ to obtain
  \begin{gathered}
  \lambda_n(-\cos(A/n),-\cos(B/(n+1)))
  \leq\Lambda_c(n)-\frac{g}{2\pi^2}(A^2+B^2),\\
- g=q-\frac{M\pi^4}{6}\max\{u',k^4v'\}.
+ g=q-\frac{M\pi^4}{6}\max\{u',\mu^4v'\}.
  \end{gathered}
 \]
 Thus the strict test $g>0$ proves positive quadratic loss off the
@@ -1409,12 +1409,12 @@ $q u'$ equals $(q/\pi^2)U$. Similarly $qv'=(q/\pi^2)V$, and
 the diagonal loss is at least $(q/\pi^2)(U+V)$. Hence the affine
 loss coefficient in squared radian coordinates is $c=q/\pi^2$.
 The curvature cost in that coefficient is
-$(M/6)\max(U,k^4V)=(M\pi^2/6)\max(u',k^4v')$.
+$(M/6)\max(U,\mu^4V)=(M\pi^2/6)\max(u',\mu^4v')$.
 Factoring out $1/\pi^2$ leaves precisely
 \[
- c-\frac M6\max(U,k^4V)
+ c-\frac M6\max(U,\mu^4V)
    =\frac1{\pi^2}
-       \left(q-\frac{M\pi^4}{6}\max(u',k^4v')\right)
+       \left(q-\frac{M\pi^4}{6}\max(u',\mu^4v')\right)
    =\frac g{\pi^2}.
 \]
 The further factor $1/2$ comes from $u+v=(A^2+B^2)/2$.
@@ -1445,7 +1445,7 @@ point evaluations and by the interpolation rectangle.
 The rectangle is $0\leq A\leq\pi/4$,
 $0\leq B\leq3\pi/16$, which contains the inward half diamond
 $A+B\leq1/2$. Complete signed cardinal sums are even in each inward
-variable and have frequencies at most $1,k$; their absolute values are
+variable and have frequencies at most $1,\mu$; their absolute values are
 bounded by the same global $M$, since $\lambda_n\leq S_n$ in every
 chart. These are precisely the premises of the squared-variable
 interpolation argument. The parity reflection transfers the witness to

@@ -23,12 +23,12 @@ For $u\ne v$ let $f(u,v)=(1+\cos v)/|\cos u-\cos v|$. We first obtain
        \varepsilon_j\eta_k f(\theta_j,\phi_k)+\frac1m.
 \end{equation}
 To see this directly from \eqref{eq:cardinal-kernel}, define
-$D_n(u,v)=\sum_{|p|+|q|\leq n}e^{i(pu+qv)}$. Grouping signs identifies
+$\mathcal{D}_n(u,v)=\sum_{|p|+|q|\leq n}\mathrm e^{\mathrm i(pu+qv)}$. Grouping signs identifies
 this with the product Chebyshev sum at a corner. With
-$S=(u+v)/2$, $T=(v-u)/2$, finite geometric sums give
+$u_+=(u+v)/2$, $u_-=(v-u)/2$, finite geometric sums give
 \[
- D_n(u,v)=\frac{\sin((n+1)S)\sin((n+1)T)+\sin(nS)\sin(nT)}
-                  {\sin S\sin T}.
+ \mathcal{D}_n(u,v)=\frac{\sin((n+1)u_+)\sin((n+1)u_-)+\sin(nu_+)\sin(nu_-)}
+                  {\sin u_+\sin u_-}.
 \]
 Indeed $(p,q)\mapsto(p+q,q-p)$ takes the diamond into the square
 $[-n,n]^2$ with equal coordinate parity; summing its two parity classes
@@ -37,16 +37,16 @@ continuous polynomial values. Reflection of node indices about either
 nonnode corner turns the checkerboard odd and leaves its weights unchanged.
 The corresponding Lebesgue sum is therefore
 $\sum_{j+k\text{ odd}}2\varepsilon_j\eta_k
- |D_n(\theta_j,\phi_k)-(-1)^j|/(nm)$.
+ |\mathcal{D}_n(\theta_j,\phi_k)-(-1)^j|/(nm)$.
 For distinct mesh angles, product to sum gives
 \[
- D_n(\theta_j,\phi_k)=(-1)^j
+ \mathcal{D}_n(\theta_j,\phi_k)=(-1)^j
        \frac{2+\cos\theta_j+\cos\phi_k}{\cos\theta_j-\cos\phi_k},
- \qquad |D_n(\theta_j,\phi_k)-(-1)^j|=2f(\theta_j,\phi_k).
+ \qquad |\mathcal{D}_n(\theta_j,\phi_k)-(-1)^j|=2f(\theta_j,\phi_k).
 \]
 Coprimality of $n,m$ leaves only the collisions $(0,0)$ and $(n,m)$.
 The odd checkerboard excludes the first. At the second,
-$D_n(\pi,\pi)=(-1)^n(2n+1)$, so the corrected absolute value $2n$
+$\mathcal{D}_n(\pi,\pi)=(-1)^n(2n+1)$, so the corrected absolute value $2n$
 with weight $1/(2nm)$ contributes $1/m$. The other entries with $k=m$
 vanish. This proves \eqref{cu:positive} and the equality of the two
 nonnode corner values. The node corners have value one by cardinality.
@@ -59,11 +59,11 @@ one dimensional. Introduce
 \end{equation}
 Both poles have been removed from $B$; it is analytic across $[0,1]$,
 with $B(0)=1/\pi$, $B(1)=-1/\pi$. For $1\leq r<m$ put
-$x=r/m$, $s=m-r$, $\alpha=(1-x)/2$ and
+$x=r/m$, $s=m-r$, $\alpha_r=(1-x)/2$ and
 \[
- T_{n,r}=\sum_{\ell=0}^{r-1}\cot\frac{\pi(\ell+\alpha)}n,
+ T_{n,r}=\sum_{\ell=0}^{r-1}\cot\frac{\pi(\ell+\alpha_r)}n,
  \qquad V_n=\sum_{r=1}^{m-1}w(r/m)
-                    \sum_{\ell=0}^{r-1}B((\ell+\alpha)/n).
+                    \sum_{\ell=0}^{r-1}B((\ell+\alpha_r)/n).
 \]
 For the moment define $\psi$ by its convergent harmonic series,
 \begin{equation}\label{cu:psi}
@@ -72,7 +72,7 @@ For the moment define $\psi$ by its convergent harmonic series,
 \end{equation}
 and set
 \begin{equation}\label{cu:D}
- D_{m,r}=\psi(r+\alpha)+\psi(s-\alpha)-\psi(m-\alpha)-\psi(\alpha),
+ D_{m,r}=\psi(r+\alpha_r)+\psi(s-\alpha_r)-\psi(m-\alpha_r)-\psi(\alpha_r),
  \qquad \mathcal H_m=\frac4{\pi m}\sum_{r=1}^{m-1}w(r/m)D_{m,r}.
 \end{equation}
 We claim the exact identities
@@ -103,7 +103,7 @@ Its weight $\eta_0=1/2$, together with the exceptional $1/m$, yields
 $\Lambda_c=1/m+n/m+2\sum_{r=1}^{m-1}(2P_r-n)/(nm)$.
 This is the first identity in \eqref{cu:exact}. Finally, removing both
 poles in each cotangent and using $\psi(z+1)-\psi(z)=1/z$ gives
-$T_{n,r}=nD_{m,r}/\pi+\sum_{\ell<r}B((\ell+\alpha)/n)$,
+$T_{n,r}=nD_{m,r}/\pi+\sum_{\ell<r}B((\ell+\alpha_r)/n)$,
 which proves the second identity.
 
 \subsection{The square reference and its mesh defect}

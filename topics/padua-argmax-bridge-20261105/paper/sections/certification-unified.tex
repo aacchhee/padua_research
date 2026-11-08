@@ -110,7 +110,7 @@ whose maximum is two, attained only at $(-1,\pm1)$.
 \subsection{The phase certificate}
 For $41\leq n\leq319$ the common envelope is enclosed on
 $\mathcal T=\{(a,b):a,b\geq0,\ a+b\leq1\}$, with phases
-$(\alpha,\beta)=(\pi a,\pi b)$ and $k=n/(n+1)$.
+$(\alpha,\beta)=(\pi a,\pi b)$ and $\mu=n/(n+1)$.
 In the notation of \eqref{ul:primitive}, put
 \[
  f_\varepsilon(a,b)=\frac1{2\mathsf N}
@@ -118,19 +118,19 @@ In the notation of \eqref{ul:primitive}, put
 \]
 Then $S_n(\pi a,\pi b)=\max_\varepsilon f_\varepsilon(a,b)$,
 and $|f_\varepsilon|\leq S_n$. Every signed board sum has frequencies
-at most $\pi,\pi k$ in these coordinates. A global norm $M$
+at most $\pi,\pi \mu$ in these coordinates. A global norm $M$
 and upper bounds at the vertices therefore give
 \begin{align}\label{cert:phase-bound}
  S_n(\pi a,\pi b)&\leq q_R(a,b),\\
  q_R&=I_RW+\frac{M\pi^2}{2}
- \{(a-a_0)(a_1-a)+k^2(b-b_0)(b_1-b)\},\notag\\
+ \{(a-a_0)(a_1-a)+\mu^2(b-b_0)(b_1-b)\},\notag\\
  \max_Rq_R&\leq V_R+\theta_RM,
  \quad V_R=\max_zW_z,\quad
- \theta_R=\frac{\pi^2}{8}\{(a_1-a_0)^2+k^2(b_1-b_0)^2\}.\notag
+ \theta_R=\frac{\pi^2}{8}\{(a_1-a_0)^2+\mu^2(b_1-b_0)^2\}.\notag
 \end{align}
 Trigonometric Bernstein inequalities supply
 $|(f_\varepsilon)_{aa}|\leq\pi^2M$ and
-$|(f_\varepsilon)_{bb}|\leq\pi^2k^2M$ from the global norm.
+$|(f_\varepsilon)_{bb}|\leq\pi^2\mu^2M$ from the global norm.
 The final line of \eqref{cert:phase-bound} uses positivity of the
 bilinear weights and the elementary bound
 $(a-a_0)(a_1-a)\leq(a_1-a_0)^2/4$, and similarly for $b$.
@@ -160,7 +160,7 @@ give
 Indeed the ten quarter-squares cover $\mathcal T$; outside vertices fold
 back to $E$ by $(a,b)\mapsto(1-a,1-b)$, a phase symmetry.
 Each square has side $1/4$, so its Peano error is at most
-$\pi^2(1+k^2)M_*/128\leq\pi^2M_*/64$. Hence
+$\pi^2(1+\mu^2)M_*/128\leq\pi^2M_*/64$. Hence
 $M_*\leq V_E+\pi^2M_*/64$, proving \eqref{cert:grid-norm}; the
 rational factor follows from $\pi<22/7$. Either construction gives a
 validated $M\geq M_*$ to insert in every subsequent leaf test.
@@ -213,14 +213,14 @@ to obtain
  \begin{gathered}
  \lambda_n(-\cos(A/n),-\cos(B/(n+1)))
  \leq\Lambda_c(n)-\frac{g}{2\pi^2}(A^2+B^2),\\
- g=q-\frac{M\pi^4}{6}\max\{u',k^4v'\}.
+ g=q-\frac{M\pi^4}{6}\max\{u',\mu^4v'\}.
  \end{gathered}
 \]
 Thus the strict test $g>0$ proves positive quadratic loss off the
 origin. The rectangle is $0\leq A\leq\pi/4$,
 $0\leq B\leq3\pi/16$, which contains the inward half diamond
 $A+B\leq1/2$. Complete signed cardinal sums are even in each inward
-variable and have frequencies at most $1,k$; their absolute values are
+variable and have frequencies at most $1,\mu$; their absolute values are
 bounded by the same global $M$, since $\lambda_n\leq S_n$ in every
 chart. These are precisely the premises of the squared-variable
 interpolation argument. The parity reflection transfers the witness to
