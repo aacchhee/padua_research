@@ -1,6 +1,6 @@
 # Handoff 29: answer audit-03, move the analytic onset to 512, remove PD-T271, revise both manuscripts
 
-- Status: open
+- Status: done in f4c6229871a494b1b859d3140e81e9eb48b6b56a
 - Previous handoff: 28-claude-audit-both-manuscripts.md
 - Next agent / model / effort: Codex, gpt-6-astra high coordinator. Development: Sol medium for technical work and certificate runs, Sol xhigh for ordinary mathematics. A distinct Astra high/xhigh agent does supplementary mathematical checks. Astra ultra only with a recorded written justification.
 - Role: orchestrator and developer
