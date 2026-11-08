@@ -12,7 +12,9 @@ one polynomial in $\Pi_n$. Equivalently, the evaluation map
 \]
 is a bijection. The notation on the right means a real vector whose
 coordinates are indexed by the nodes. Here the domain and target have
-the same finite dimension. Consequently it suffices to prove that a
+the same finite dimension, by the node count in Section~\ref{sec:introduction};
+cosine is injective on $[0,\pi]$, so distinct index pairs give distinct nodes.
+Consequently it suffices to prove that a
 polynomial vanishing at every node must be the zero polynomial. Indeed,
 that condition makes the linear map injective; a square injective
 linear map is also surjective.
@@ -27,7 +29,8 @@ will establish that fact by computing a weighted sum of products of
 basis values. The weights are positive, which will turn a vanishing
 vector of values into a vanishing vector of coefficients.
 
-The cardinal polynomials satisfy $L_B(A)=\delta_{AB}$ for
+Here $\delta_{AB}$ is the Kronecker delta: it is one if $A=B$ and zero
+otherwise. The cardinal polynomials satisfy $L_B(A)=\delta_{AB}$ for
 $A,B\in\mathcal P_n$, and
 \[
  I_nf(z)=\sum_{B\in\mathcal P_n} f(B)L_B(z).
@@ -38,8 +41,7 @@ at a maximizing point and extending these finitely many values
 continuously to $Q$. This proves the operator-norm interpretation used
 in \eqref{eq:lebesgue-inequality}.
 
-Here $\delta_{AB}$ is the Kronecker delta: it is one if $A=B$ and zero
-otherwise. To give the norm argument in full, fix $z\in Q$. Then
+To give the norm argument in full, fix $z\in Q$. Then
 \[
  |I_nf(z)|\leq\sum_B|f(B)|\,|L_B(z)|
        \leq\|f\|_\infty\lambda_n(z).
@@ -68,7 +70,7 @@ why allowing continuous inputs supplies every bounded vector of nodal
 values needed in the operator-norm argument.
 
 \noindent\textbf{Why cosine polynomials are a convenient basis.}
-The Chebyshev identity below specifies an ordinary algebraic polynomial
+The Chebyshev identity $T_r(\cos t)=\cos(rt)$ specifies an ordinary algebraic polynomial
 in $x=\cos t$. The first examples are
 \[
  T_0(x)=1,\quad T_1(x)=x,\quad T_2(x)=2x^2-1,
@@ -81,12 +83,13 @@ coefficient. Hence $T_0,\ldots,T_n$ form a basis for one-variable
 polynomials of degree at most $n$. In two variables the products
 $T_p(x)T_q(y)$ with $p+q\leq n$ form a basis for $\Pi_n$:
 their leading monomials are nonzero multiples of $x^py^q$, and the
-remaining terms have lower total degree. Successive elimination by
-degree therefore changes between this basis and the monomial basis.
+remaining terms have lower total degree. The transition matrix to the monomial basis is triangular when ordered
+by total degree, with nonzero diagonal. Successive elimination therefore
+changes between the two bases.
 We call $(p,q)$ a \emph{mode index}; it records the two cosine
 frequencies after the change to angular variables.
 
-We use the Chebyshev polynomials $T_r(\cos t)=\cos(rt)$. Write
+Write
 $\theta_j=j\pi/n$, $\phi_k=k\pi/(n+1)$ and
 \[
  \varepsilon_j=\begin{cases}1/2,&j=0,n,\\1,&\text{otherwise},\end{cases}
@@ -95,7 +98,8 @@ $\theta_j=j\pi/n$, $\phi_k=k\pi/(n+1)$ and
  \qquad w_{jk}=\frac{2\varepsilon_j\eta_k}{n(n+1)}.
 \]
 The endpoint factors are the half weights familiar from the trapezoidal
-rule. Here they give an exact finite identity. A point interior to both angular grids has
+rule: on a uniform mesh of width $h$, the trapezoidal approximation is
+$h[g_0/2+g_1+\cdots+g_{M-1}+g_M/2]$. Here they give an exact finite identity. A point interior to both angular grids has
 weight $2/[n(n+1)]$; a point on one side has half that weight; a retained
 corner has one quarter of that interior weight. All these numbers are
 strictly positive.
@@ -116,7 +120,7 @@ the other input. For example,
    +b\langle f_2,g\rangle_{\mathcal P_n}
 \]
 for all real $a,b$. It is symmetric because exchanging $f$ and $g$
-leaves every summand unchanged. It is initially positive semidefinite
+leaves every summand unchanged. It is positive semidefinite
 on polynomials:
 $\langle p,p\rangle_{\mathcal P_n}$ is a sum of nonnegative terms,
 and it vanishes exactly when $p$ vanishes at every node. The lemma will
@@ -167,9 +171,9 @@ vanish. When $p=r>0$, the first cosine is the constant one and the
 second has nonzero frequency, giving $1/2$ after division by $\pi$.
 When $p=r=0$, the integrand itself is one. The factors $\nu_r$ are
 the reciprocals of these continuous squared norms. Sampling on an angular grid preserves this orthogonality for
-the required indices but changes the highest available frequency in
-the first coordinate. Since the two grids have sizes $n$ and $n+1$,
-that change occurs asymmetrically. The proof computes it using finite
+the required indices, while doubling the squared norm of the highest
+first-coordinate mode: $h_n^{(n)}=1$ instead of $1/2$. The corresponding
+second-coordinate mode $q=n+1$ is outside the total-degree space. The proof computes it using finite
 sums, so it also verifies exactly which continuous normalization survives
 in the sampled setting.
 
@@ -581,7 +585,7 @@ of $G_n$ produces precisely this kind of loss. Later comparisons retain
 and estimate that loss, because its size helps distinguish a corner
 from a competing point.
 
-\noindent\textbf{Why the surviving reflections preserve interpolation.}
+\noindent\textbf{Symmetry of the node set and equal corner values.}
 
 
 

@@ -5,8 +5,7 @@ The proof of Theorem~\ref{thm:main-location} compares every point with
 the exact corner value $\Lambda_c(n)=\lambda_n(-1,-1)$.  A periodic
 majorant provides one common comparison for all mesh cells.  Its
 triangle-inequality loss distinguishes an interior mesh vertex from an
-actual corner.  We retain this loss until it has paid for the possible
-increase of the majorant near the origin.
+actual corner.  This loss compensates the growth of the majorant near the origin.
 
 Put $m=n+1$ and $\mathsf N=nm$, and recall the finite angular kernel
 $G_n$ from \eqref{eq:angular-kernel}, whose highest first-coordinate
@@ -30,16 +29,21 @@ Use odd mesh charts
  \quad (\theta,\phi)\in[0,\pi]^2,
 \end{equation}
 where $0\leq J\leq n$, $0\leq K\leq m$.  These cover the closed
-square: in each angular mesh rectangle, the scaled distances to its
-two odd vertices sum to two, so one is at most one.  All ties are retained.
+square: in each angular mesh rectangle, the distances in mesh-index units to its
+two odd vertices sum to two, so one is at most one; multiplying by
+$\pi$ gives the phase radius in \eqref{ul:charts}.  A point on a tie belongs to every chart it satisfies.
 Set $\Gamma^-=\{(r,s):0\leq r<2n,\ 0\leq s<2m,\ r+s\text{ odd}\}$ and
 \begin{equation}\label{ul:primitive}
  H_{rs}=G_n((r\pi+\alpha)/n,(s\pi+\beta)/m),\qquad
  S_n(\alpha,\beta)=\frac1{2\mathsf N}\sum_{\Gamma^-}|H_{rs}|.
 \end{equation}
 The endpoint identity
-$\sum_{0\leq j\leq n,\,\sigma j\equiv r\ (2n)}e_j=1$
-and its $m$ counterpart show that summing the four absolute reflected
+$\sum_{\sigma=\pm1}\sum_{0\leq j\leq n,\,\sigma j\equiv r\ (2n)}e_j=1$
+and its $m$ counterpart give total weight one at every periodic
+index: the two endpoint preimages have half weights, while an interior
+index has one preimage of weight one. The two-coordinate weights
+factorize, and their parity is $j+k$ even exactly when $r+s$ is odd
+in the shifted odd chart. Thus summing the four absolute reflected
 terms in \eqref{ul:cardinal-reflection} gives exactly $S_n$.
 Consequently, with $g_{\sigma\eta}=G_n(\theta+\sigma a_j,\phi+\eta b_k)$,
 \begin{equation}\label{ul:defect}
@@ -61,55 +65,92 @@ $\Delta=0$ and $S_n(0,0)=\Lambda_c(n)$.
 Separate phase reflections and translations by the even lattice preserve
 $S_n$.  Reducing each phase modulo $2\pi$ and, if necessary, using
 $(x,y)\mapsto(\pi-x,\pi-y)$ reduces its global real-phase norm to
-$x,y\geq0$, $x+y\leq\pi$.  Each mesh retains its coordinate.
+$x,y\geq0$, $x+y\leq\pi$.  Throughout, $x$ refers to the $n$-mesh and $y$ to the $m$-mesh.
+
+
+The organizing identity is
+\[
+ \lambda_n-\Lambda_c=(S_n-S_n(0))-\Delta_{JK}.
+\]
+The model comparison bounds the first bracket; selected reflected
+pairs give a positive lower bound for the second. After the comparison
+theorem, two scalar gates and one corner lemma complete the analytic
+argument. Their roles are:
+\[
+\begin{array}{llll}
+\text{phase region}&\text{center}&\text{comparison}&\text{degree}\\
+\rho\leq1/2&\text{noncorner}&\lambda_n<\Lambda_c-9/1000&n\geq512\\
+1/2\leq\rho\leq1&\text{all}&S_n<\Lambda_c-1/7&n\geq512\\
+1\leq\rho\leq\pi&\text{all}&S_n<\Lambda_c-1/2&n\geq512\\
+0\leq A,B\leq\pi/4&\text{corner}&
+ \lambda_n\leq\Lambda_c-(A^2+B^2)/30&n\geq256.
+\end{array}
+\]
+The earlier far-region instance $n\geq192$, $\rho\geq\pi/2$ is
+used only by the finite certificates in Section~\ref{sec:certificates}.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[scale=0.85]
+ \fill[gray!15] (0,1)--(1,0)--(3.14,0)--(0,3.14)--cycle;
+ \fill[blue!12] (0,.5)--(.5,0)--(1,0)--(0,1)--cycle;
+ \fill[blue!30] (0,0)--(.5,0)--(0,.5)--cycle;
+ \draw (0,0)--(3.14,0)--(0,3.14)--cycle;
+ \draw (.5,0)--(0,.5) (1,0)--(0,1);
+ \draw[dashed] (0,0) rectangle (.7854,.7854);
+ \draw[->] (0,0)--(3.45,0) node[right] {$x$};
+ \draw[->] (0,0)--(0,3.4) node[above] {$y$};
+ \node[below] at (.5,0) {$\frac12$};
+ \node[below] at (1,0) {$1$};
+ \node[below] at (3.14,0) {$\pi$};
+ \node at (1.28,1.14) {absolute gate};
+ \node[anchor=west] at (1.35,.45) {$P_n$ on $\rho\leq1$};
+ \draw[->] (1.32,.45)--(.67,.21);
+\end{tikzpicture}
+\caption{The folded phase triangle. On the darkest triangle a
+noncorner chart uses $\Delta>1/20$ together with $P_n$.
+On $1/2\leq\rho\leq1$, $P_n<0$ suffices; the absolute gate covers
+$\rho\geq1$. In a corner chart the dashed $\pi/4$ square has a
+separate descent estimate.}
+\label{fig:phase-regions}
+\end{figure}
 
 \input{sections/comparison-unified}
 
-\subsection{One selected-pair argument for the reflection loss}
+\subsection{Lower bounds for the reflection loss}
 
-The following lemma supplies both the analytic tail and the finite
-certificate floors.  An eligible projection means $Q_h$ with $0<J<n$
-or $Q_v$ with $0<K<m$.  Every noncorner odd center has one.
-The finite completion uses degrees $41$--$319$; its degree-$511$
-control uses the same third floor tier.
+An eligible projection is $Q_h$ when $0<J<n$ or $Q_v$ when $0<K<m$.
+Every noncorner odd center has at least one. The finite certificate
+floors and the uniform tail floor follow from the same three-class
+selected-pair argument. The symbols $\bar m,\bar n$ below denote
+the physical and periodic mesh sizes; $L=\log n$ keeps its previous meaning.
 
 \begin{lemma}[Selected-pair floors]\label{ul:selected-pairs}
-Let \eqref{ul:charts} hold with $\rho\leq \bar{\rho}$.  Put $a_{\bar{\rho}}=1-\bar{\rho}^2/4$ and
+Let \eqref{ul:charts} hold with $\rho\leq\bar\rho\leq1/2$.
+Put $a_{\bar\rho}=1-\bar\rho^2/4$ and
 \begin{gather*}
- U_{\bar{\rho}}=347a_{\bar{\rho}}/1000-157\bar{\rho}/500,\quad V_{\bar{\rho}}=17a_{\bar{\rho}}/20-\bar{\rho}/2,
- \quad W_{\bar{\rho}}=779a_{\bar{\rho}}/750-5\bar{\rho}/6,\\
- B_n(\bar{\rho})=11711U_{\bar{\rho}}/48400-120V_{\bar{\rho}}/(157n)
-                   -250W_{\bar{\rho}}/(157n)-100V_{\bar{\rho}}/(3n^2).
+ U_{\bar\rho}=347a_{\bar\rho}/1000-157\bar\rho/500,
+ \quad V_{\bar\rho}=17a_{\bar\rho}/20-\bar\rho/2,\qquad
+ W_{\bar\rho}=779a_{\bar\rho}/750-5\bar\rho/6,\\
+ B_n(\bar\rho)=11711U_{\bar\rho}/48400-120V_{\bar\rho}/(157n)
+             -250W_{\bar\rho}/(157n)-100V_{\bar\rho}/(3n^2).
 \end{gather*}
-For $41\leq n<512$ and $\bar{\rho}\leq1/2$, every eligible projection is at least
-$\delta_n(\bar{\rho})$, where
+For $41\leq n<512$, every eligible projection is at least
+$\delta_n(\bar\rho)$, where
 \begin{equation}\label{ul:finite-floors}
- \delta_n(\bar{\rho})=
+ \delta_n(\bar\rho)=
  \begin{cases}
- \max\{1/512,\min(1/32,B_n(\bar{\rho}))\},&41\leq n<64,\\
- \max\{1/64,\min(1/20,B_n(\bar{\rho}))\},&64\leq n<160,\\
- \max\{1/32,\min(1/20,B_n(\bar{\rho}))\},&160\leq n<512.
+ \max\{1/512,\min(1/32,B_n(\bar\rho))\},&41\leq n<64,\\
+ \max\{1/64,\min(1/20,B_n(\bar\rho))\},&64\leq n<160,\\
+ \max\{1/32,\min(1/20,B_n(\bar\rho))\},&160\leq n<512.
  \end{cases}
 \end{equation}
-For the sharper tail bounds, let $n\geq64$, $p_\pi=22/7$, and define
-\begin{align*}
- \eta_{\bar{\rho}}&=a_{\bar{\rho}}[1-(4p_\pi+\bar{\rho})/n]-\bar{\rho}/2,&
- F_{\rm near}&=\frac{2\eta_{\bar{\rho}}}{p_\pi+\bar{\rho}}\frac n{n+1}(1/4-1/n),\\
- F_{\rm small}&=\frac{35}{286}(1-6/n)^2(a_{\bar{\rho}}-\bar{\rho}/2),&
- A_{\bar{\rho}}&=97a_{\bar{\rho}}/100-\bar{\rho}/2,\\
- I_h&=2303a_{\bar{\rho}}/5000-471\bar{\rho}/1250,&R_h&=4837a_{\bar{\rho}}/1875-5\bar{\rho}/3,\\
- I_w&=5369a_{\bar{\rho}}/15000-7379\bar{\rho}/30000,&R_w&=37621a_{\bar{\rho}}/15000-3\bar{\rho}/2,\\
- F_h&=\frac{539I_h}{1936}-\frac{140A_{\bar{\rho}}+400R_h}{157n}
-                                      -\frac{800A_{\bar{\rho}}}{3n^2},\\
- F_w&=\frac{539I_w}{1936}-\frac{140A_{\bar{\rho}}+400R_w}{157n}
-                                      -\frac{800A_{\bar{\rho}}}{3n^2}.
-\end{align*}
-Each eligible projection is at least
-\begin{equation}\label{ul:tail-floors}
- \min(F_{\rm near},F_{\rm small},F_h)\quad(\bar{\rho}\leq21/40),\qquad
- \min(F_{\rm near},F_{\rm small},F_w)\quad(\bar{\rho}\leq\pi/4).
+For every integer $n\geq295$ and $\rho\leq1/2$, every eligible
+projection satisfies
+\begin{equation}\label{ul:uniform-floor}
+ Q>1/20\qquad\hbox{for every eligible projection }Q.
 \end{equation}
-At fixed legal radius all these tail floors increase with $n$.
+In particular $\Delta_{JK}>1/20$ at every noncorner odd center.
 \end{lemma}
 
 \begin{proof}
@@ -144,7 +185,16 @@ at least $\bar{m}\ell/\pi-1$ rows.  These real lower bounds hold for either pari
 There are three exhaustive center classes.  If the endpoint index
 distance is $1\leq i\leq4$, select $\bar{m}/4\leq l\leq \bar{m}/2$, offsets
 $q=-(i-1),-(i-3),\ldots,i-1$, and both periodic indices
-$l+q,2\bar{n}-(l+q)$.  For $n\geq41$, $\bar{\rho}\leq1/2$ the effective angle $w$ obeys
+$l+q,2\bar{n}-(l+q)$.  Write $\xi,\zeta$ for the periodic and physical phase shifts, so
+$|\xi|+|\zeta|\leq1/2$. After endpoint reflection a selected angle is
+$w=((l+q)\pi\pm\xi)/\bar n$, with $b=l\pi/\bar m$, and
+\[
+ \bar m(w-b)=q\pi+\frac{\bar m-\bar n}{\bar n}(l+q)\pi
+                    \pm\frac{\bar m}{\bar n}\xi.
+\]
+Since $|\bar m-\bar n|=1$, its mesh-discrepancy term is at most
+$(\bar m/(2\bar n)+3/\bar n)\pi\leq24\pi/41$.
+For $n\geq41$, $\bar\rho\leq1/2$ the effective angle $w$ obeys
 \[
  |\bar{m}(w-b)|\leq(i-1)\pi+24\pi/41+(42/41)|\text{periodic phase}|
        <i\pi-|\text{physical phase}|\leq \bar{m}\theta_c.
@@ -152,18 +202,21 @@ $l+q,2\bar{n}-(l+q)$.  For $n\geq41$, $\bar{\rho}\leq1/2$ the effective angle $w
 The strict slack is at least $(17\pi-21)/41>0$.
 Also $l+q\geq8$, $l+q\leq \bar{m}/2+3<\bar{n}$, and
 $\theta_c\leq(4\pi+1/2)/\bar{m}<1/3$, so all selected branches are distinct
-and regular.  Their parity is $q\equiv1-i$ at the lower endpoint
+and regular: $[b-\theta_c,b+\theta_c]\subset(0,\pi)$,
+where cosine is strictly decreasing. Their parity is $q\equiv1-i$ at the lower endpoint
 and $\bar{m}+q\equiv1-\bar{m}+i$ at the upper endpoint, the required complementary
-center parity in both projections.  The target cosines exceed $-1/3$,
-so $A_*>3/8$.  Counting $2i$ points in at least $\bar{m}/4-1$ rows gives
+center parity in both projections; the upper condition is equivalent
+to $q\equiv1-i$, since $2\bar m$ is even. The target cosines exceed $-1/3$,
+so $A_*>3/8$. With span $W\leq2(i\pi+1/2)/\bar m$,
+the normalized count is
+$Q\geq(\bar m\bar n)^{-1}(\bar m/4-1)(2i)(2A_*/W)$.
+Thus
 \[
  Q>\frac{3i}{4(i\pi+1/2)}\frac {\bar{m}}{\bar{n}}(1/4-1/\bar{m})
  \geq\frac{37}{224(\pi+1/2)}>\frac1{32}.
 \]
 For $n\geq64$ the stronger $\theta_c<7/30$ gives $A_*\geq15/32$ and
-$Q>225/[1040(\pi+1/2)]>1/20$.  Keeping $\bar{\rho}$ and the numerator
-$\eta_{\bar{\rho}}$ instead yields $F_{\rm near}$ through $\bar{\rho}=\pi/4$; its
-straddling slack is $57\pi/128-65\bar{\rho}/64>0$.
+$Q>225/[1040(\pi+1/2)]>1/20$.
 
 For the remaining indices, $i\geq5$ implies $\theta_c>4\pi/\bar{n}$ already
 at $n=41$.  If $\theta_c<\pi/6$, select $b\in[\pi/6,\pi/3]$ and the
@@ -173,13 +226,6 @@ at least $11/16$.  Thus
 \[
  Q\geq\frac{33}{16\pi\sqrt3}(1/6-1/\bar{m})>35/656>1/20.
 \]
-For the radius-dependent tail estimate keep the correlated numerator
-$A_g=a_{\bar{\rho}}[1+\cos(\pi/3+g)]-\bar{\rho}/2$.  The function
-$A_g(1-\pi/(\bar{n}g))$ is concave on $[4\pi/\bar{n},\pi/6]$ and its lower
-endpoint value exceeds its upper endpoint value: their difference is
-at least $[1/8+(6-3\pi)/\bar{n}]a_{\bar{\rho}}+[1/8-3/\bar{n}]\bar{\rho}>0$.
-Consequently the same count gives $F_{\rm small}$ for $n\geq64$.
-
 It remains to treat $\theta_c\geq\pi/6$.  A simple full-arc count using
 $b\in[\pi/12,\pi/6]$ gives numerator at least $7/32$ and span at most
 one.  The two open arcs have lengths $2b\geq\pi/6$ and are disjoint,
@@ -214,11 +260,15 @@ $R=A(0)\log[\tan(b_+/2)/\tan(b_-/2)]-a_{\bar{\rho}}(b_+-b_-)$.
 This argument applies for $\bar{m},\bar{n}\geq41$.
 
 Take $c=5/4$, $[b_-,b_+]=[\pi/20,\pi/4]$, $\bar{\rho}\leq1/2$.
+Write $C=a_{\bar\rho}-\bar\rho/2>0$ before substituting
+endpoint bounds in $I=C(b_+-b_-)+a_{\bar\rho}(\cos b_+-\cos b_-)$.
 The elementary bounds
 $239/100<\mathcal T_c<12/5$, $\sin b_->3/20$,
 $\cos b_-<247/250$, $\cos b_+>707/1000$ and the logarithmic ratio
 $<5/3$ give $I>U_{\bar{\rho}}$, $A(b_-)<V_{\bar{\rho}}$, $R<W_{\bar{\rho}}$.  With
 $157/50<\pi<22/7$, \eqref{ul:band-formula} is precisely $Q\geq B_n(\bar{\rho})$.
+A phase satisfying $\rho\leq\bar\rho\leq1/2$ also satisfies
+$\rho\leq1/2$, so the following fixed-radius bounds apply to it.
 At $\bar{\rho}=1/2$ one can also use $I>21/125$, $A(b_-)<11/20$, $R<14/25$.
 The resulting lower bound is
 $B_n^\sharp=245931/6050000-206/(157n)-55/(3n^2)$.  Its exact margins are
@@ -227,243 +277,51 @@ $B_{160}^\sharp-1/32=88079689/182371200000$, and $B_n^\sharp$ increases with $n$
 Together with \eqref{ul:full-arc-floor} and the first two center
 classes, this proves \eqref{ul:finite-floors}.
 
-Finally take $c=2$, $b_-=\pi/100$ and $b_+=\pi/4$ or $\pi/6$.
-For the former band $A>0$ through $\bar{\rho}=21/40$; for the latter through
-$\bar{\rho}=\pi/4$.  The bounds $11/4<4\log2<14/5$,
-$\sin b_->3/100$, $A(b_-)<A_{\bar{\rho}}$, $I>I_h,I_w$ and $R<R_h,R_w$ give
-exactly \eqref{ul:tail-floors}.  The endpoint estimates use
-$\sin(\pi/4)<71/100$, $\cos(\pi/4)>707/1000$,
-$\cos(\pi/6)>433/500$ and logarithmic ratios $<10/3,<3$.
-All follow from the sine and cosine Taylor bounds and the positive
-series for $\log z$ stated below.  The displayed formulas increase
-with $n$ at fixed legal $\bar{\rho}$: their positive nearest factors increase
-and their positive reciprocal losses decrease.  The three classes
-exhaust every eligible projection, both endpoint orientations and parities.
+For the uniform tail choose $c=2$, $b_-=\pi/100$,
+$b_+=\pi/4$ and fix $\bar\rho=1/2$. The band numerator is positive:
+\[
+ A(b)\geq\frac{15}{16}(1-71/100)-\frac14=7/320>0.
+\]
+With
+\[
+ A_* =\frac{97}{100}\frac{15}{16}-\frac14,\quad
+ I_* =\frac{2303}{5000}\frac{15}{16}-\frac{471}{2500},\quad
+ R_* =\frac{4837}{1875}\frac{15}{16}-\frac56,
+\]
+the bounds $\sin(\pi/100)>3/100$, $11/4<4\log2<14/5$,
+$\cos(\pi/4)>707/1000$ and
+$\log(\tan(\pi/8)/\tan(\pi/200))<10/3$ give
+\[
+ Q\geq F_h(n):=\frac{539I_*}{1936}
+              -\frac{140A_*+400R_*}{157n}
+              -\frac{800A_*}{3n^2}.
+\]
+For example write $C=15/16-1/4>0$ before bounding
+$I=C(6\pi/25)+(15/16)(\cos(\pi/4)-\cos(\pi/100))$;
+using $6\pi/25>471/625$ and $\cos(\pi/100)<1$ yields $I>I_*$.
+Similarly $A(b_-)<A_*$ and
+$R<C(10/3)-(15/16)(471/625)=R_*$.
+The positive constants $A_*,R_*$ make $F_h$ strictly increasing,
+and substitution of $n=295$ gives $F_h(295)>50064/10^6>1/20$.
+The first two center classes already give $Q>1/20$ from $n=64$.
+This proves \eqref{ul:uniform-floor}. A phase with
+$\rho\leq\bar\rho\leq1/2$ satisfies the fixed half-radius hypothesis,
+so no monotonicity of a floor as a function of radius is required.
 \end{proof}
 
-\subsection{Exclusion near an odd vertex}
+\subsection{Corner descent and analytic localization}
 
-All remaining comparisons are scalar consequences of the common
-estimates.  Their base evaluations use
-\begin{equation}\label{ul:log-series}
- \log z=2\sum_{j\geq0}\frac{[(z-1)/(z+1)]^{2j+1}}{2j+1},
- \qquad z>1,
+\begin{lemma}[Corner descent]\label{ul:corner-lemma}
+For every integer $n\geq256$,
+\begin{equation}\label{ul:corner256}
+ \lambda_n(-\cos(A/n),-\cos(B/m))
+ \leq\Lambda_c-(A^2+B^2)/30,
+ \quad n\geq256,\quad 0\leq A,B\leq\pi/4.
 \end{equation}
-with its geometric positive tail.  In particular at $n=320$,
-$57679/10000<L<5769/1000$, $\bar{L}<6769/1000$.  Substitution into
-\eqref{uc:constants}, with $\pi^2>197/20$, gives
-\begin{equation}\label{ul:near-base}
- \begin{gathered}
- \mathfrak{T}>293/25,\quad D<27/200,\quad\mathcal M<7/400,
- \quad\bar e<249/1600,\quad C_4<677/50000,\\
- k_{Nx}<11031/20000,\quad k_{Ny}<11056/20000,\quad
- U_N>23337/2000+(21/500)\rho,\\
- k_{Wx}<583/1000,\quad k_{Wy}<117/200,\quad \mathfrak{T}-\bar e+\mathfrak{j}>2331/200.
- \end{gathered}
-\end{equation}
-For example $k_{Nx}<705963/1280000$ before rounding; the entire
-$d_\beta$ charge gives $k_{Ny}<56602113/102400000$.
-The costs decrease with real $n\geq320$.  For the mixed coefficient
-$U_N$, direct differentiation gives
-$(\mathfrak{T}+A_4+\rho J_N)'>45/(16n)-184/(15n^2)-78/n^3>0$
-on $\rho\leq1/2$; the decreasing $\bar e$ improves this direction.
-Also $\mathfrak{T}-\bar e+\mathfrak{j}$ increases.  Thus \eqref{ul:near-base} persists
-throughout the tail.
+The same estimate holds in inward phases at the other nonnode corner.
+\end{lemma}
+\begin{proof}
 
-At $n=320$, Lemma~\ref{ul:selected-pairs} gives, for $\rho\leq1/2$,
-\begin{equation}\label{ul:near-floor}
- \Delta_{JK}>L_h(\rho):=5123/50000-(4447/50000)\rho
-                                      -(1281/50000)\rho^2
-\end{equation}
-at every noncorner center.  Here the middle-class coefficients in
-$F_h=A_ha_\rho-B_h\rho$ are
-\begin{align*}
- A_h&=1241317/9680000-679/251200-77392/3768000-97/38400,\\
- B_h&=253869/2420000-35/25120-2000/150720-1/768,
-\end{align*}
-so $5123/50000<A_h<1281/12500$ and $0<B_h<4447/50000$.
-The other two classes exceed $(11/100)(a_\rho-\rho/2)$;
-their difference from $L_h$ exceeds
-$377/50000+(1697/50000)\rho-(94/50000)\rho^2>0$.
-All same-radius floors improve thereafter.
-
-Use $u\geq47(x^2+y^2)/192$, the central bound
-\eqref{uc:central-pair-bounds}, and $\sqrt x\leq5x/4+1/5$.
-For $1/8\leq\rho\leq1/2$, \eqref{uc:relative-comparison} gives
-\begin{gather*}
- S_n-\Lambda_c<C_4+\ell_xx+\ell_yy-d_xx^2-d_yy^2,
- \\
- (\ell_x,\ell_y,d_x,d_y)
- =(12531/20000,11056/20000,1911/800,24539/8000).
-\end{gather*}
-On the entire line $x+y=\rho$, the quadratic part has maximum
-\begin{equation}\label{ul:radial-quadratic}
- -\mathfrak{e}\rho^2+\mathfrak{f}\rho+\mathfrak{g},\quad
- \mathfrak{e}=\frac{d_xd_y}{d_x+d_y},\quad
- \mathfrak{f}=\frac{d_y\ell_x+d_x\ell_y}{d_x+d_y},\quad
- \mathfrak{g}=\frac{(\ell_x-\ell_y)^2}{4(d_x+d_y)}.
-\end{equation}
-Here $\mathfrak{e}>13429/10000$, $\mathfrak{f}<29714/50000$, $\mathfrak{g}<1/4000$.
-Subtracting this upper bound from \eqref{ul:near-floor} leaves
-\[
- 8867/100000-(34161/50000)\rho+(8233/6250)\rho^2>1/20000;
-\]
-completion of the square is the integer inequality
-$34161^2=1166973921<1167373536=32\cdot8233\cdot4431$.
-For $\rho\leq1/8$, the same estimates with both curvatures reduced
-to two give $S_n-\Lambda_c<77/1000$, whereas $L_h(\rho)>9/100$.
-Thus on the whole closed near diamond
-\begin{equation}\label{ul:near-exclusion}
- \lambda_n<\Lambda_c-1/20000
- \qquad(n\geq320,\ \rho\leq1/2,\ (J,K)\text{ noncorner}).
-\end{equation}
-
-On $\rho\leq1$, use instead $u\geq11(x^2+y^2)/48$ and
-$\sqrt x\leq x+1/4$.  The wide line of \eqref{uc:relative-comparison}
-gives
-$S_n-\Lambda_c<C_4+(11/16)x+(47/80)y-(9/4)x^2-(8/3)y^2$.
-Formula~\eqref{ul:radial-quadratic}, now with
-$\mathfrak{e}=72/59>61/50$, $\mathfrak{f}=3029/4720<257/400$, $\mathfrak{g}=3/5900$, yields
-\begin{equation}\label{ul:wide-polynomial}
- S_n-\Lambda_c<\mathfrak{p}(\rho)=141/10000+(257/400)\rho-(61/50)\rho^2.
-\end{equation}
-This polynomial decreases on $[1/2,1]$ and satisfies
-$\mathfrak{p}(1/2)=607/20000$, $\mathfrak{p}(3/5)=-99/2500$.
-On $1/2\leq\rho\leq3/5$ the nearest and small-angle floors exceed
-$549/10000$.  The middle floor uses $F_h$ through $\rho=21/40$,
-where it exceeds $17/500$; after that use $F_w=A_wa_\rho-B_w\rho$,
-where
-\begin{align*}
- A_w&=2893891/29040000-679/251200-75242/3768000-97/38400,\\
- B_w&=3977281/58080000-35/25120-15/1256-1/768.
-\end{align*}
-Since $37/500<A_w<3/40$, $0<B_w<27/500$, this floor is at least
-$697/20000>17/500$.  Consequently, including both seams,
-\begin{align}
- \lambda_n&<\Lambda_c-3/1000,
- &&1/2\leq\rho\leq3/5,\quad (J,K)\text{ noncorner},\label{ul:annulus}\\
- S_n&<\Lambda_c-99/2500,&&3/5\leq\rho\leq1.
- \label{ul:wide-exclusion}
-\end{align}
-This uses the middle floor on its two stated guards, and the wide
-relative estimate on its own domain, throughout $n\geq320$.
-
-\subsection{The outer diamond and the finite far guard}
-
-For $1\leq\rho\leq\pi$ set $u_1=47/384$, $v=u-u_1$ and fix
-$\bar{a}=337/384$, $\bar{w}=721/384$, $\bar{p}=12/25$, $\bar{P}=24/25$,
-$\eta=3/2$.  Actual phases satisfy
-\begin{equation}\label{ul:outer-geometry}
- v\geq0,\quad \mathsf{a}\leq \bar{a},\quad c_e+c_d\leq \bar{w},\quad
- \max(p,q)\leq \bar{p}+\eta\sqrt v,\quad d_+\leq3\sqrt v,
- \quad P\leq \bar{P}+4v.
-\end{equation}
-Indeed $c=\cos(1/2)<\bar{a}$ and $c_e+c_d\leq1+\mathsf{a}$.
-For $1/2\leq x\leq1$, put $h=x-1/2$ and use $y\geq1-x$:
-$u-(1-c)\geq47ch^2/96$ and $\sin x\leq\sin(1/2)+ch$.
-The cases $x\leq1/2$ and $x\geq1$ follow from
-$\sin(1/2)<\bar{p}$ and $u\geq11/48$, respectively; the same applies to
-$q$.  Also $|p-q|\leq2\sqrt{2v}$.
-Finally $P\leq2\sqrt{2u-u^2}$, whose tangent at $u_1$ has value
-$\sqrt{33887}/192<\bar{P}$ and slope $674/\sqrt{33887}<4$.
-
-Here are explicit majorants of the full phase allowance
-\eqref{uc:phase-allowance}; $b_0=4/\pi^2$ and $r_0=\log(5/2)+1/18$
-have the meanings in \eqref{uc:constants}.  Put
-$\hat{\varepsilon}=3\pi/(2m)$, $\hat{\ell}=-\log\sin\hat{\varepsilon}$,
-$D_a=D-10/n^2$, $C_\Gamma=1+8\bar{a}m/(3\pi)$, and
-\begin{align*}
- \Gamma_b&=\bar{p}[1+\log(1+C_\Gamma/\bar{p})],\\
- \lambda_b&=1+\log(1+C_\Gamma/\bar{p})-C_\Gamma/(\bar{p}+C_\Gamma),\\
- M_b&=\bar{p}/\pi+4\bar{a}/\pi^2,\qquad C_{B,b}=6+(4+4\bar{a}/\mathrm e)/\pi,\\
- V_b&=23+[3\Gamma_b+(2\bar{p}+6\bar{P})\hat{\ell}+26\bar{a}+20]/\pi,\\
- G_b&=7LM_b/m+V_b/(2m)+2C_{B,b}/m\\
- &\quad +(4/m)[7+(\bar{P}/\pi)(5+2\log(2m))],\\
- R_b&=\frac{21+21\bar{a}+2L+[(1+48\bar{p})\bar{L}+24\bar{p}]/\pi}{n}
-                                      +\frac{317+5/12}{n^2},\\
- D_b&=4\bar{w}/\pi+\bar{a}b_0\log\pi,\qquad Z_b=D_b+\bar{a}b_0/n,\\
- \mathcal M_b&=\frac{\bar{a}b_0(2L+2r_0)}n
- +\frac{D_b+\bar{a}b_0(L+1/n)}{4n^2-1}+\frac{\bar{a}b_0}{(2n-1)^2}\\
- &\quad+\frac{Z_b+\bar{a}b_0(\log(n+1/2)+2)}{4(n-1/2)^2},\\
- C_b&=\bar{a}D_a+10/n^2+G_b+R_b+\mathcal M_b,\\
- C_s&=\eta\left[\frac{7L}{\pi m}
-     +\frac{3\lambda_b+2\hat{\ell}}{2\pi m}+\frac{48\bar{L}+24}{\pi n}\right]\\
- &\quad +3\left[\frac{\log2+4\log\pi}{\pi m}+W_n\right],\\
- C_l&=[12\hat{\ell}+16(5+2\log(2m))]/(\pi m).
-\end{align*}
-The entropy $\Gamma(p,\mathsf{a})=p[1+\log(1+(1+8\mathsf{a}m/(3\pi))/p)]$
-increases in $\mathsf{a}$ and is concave in $p$; its tangent is
-$\Gamma_b+\lambda_b(p-\bar{p})$.  Positive majorization at an actual phase
-using \eqref{ul:outer-geometry} therefore gives
-\[
- |S_n-M_\infty|\leq C_b+\bar{P}K_D+C_s\sqrt v+(C_l+4K_D)v.
-\]
-With $\mathfrak{j}_*=23/250$, $t_*=221/500$, \eqref{uc:model-loss} and
-\eqref{uc:origin-lower} imply
-\begin{equation}\label{ul:outer-gate}
- \begin{gathered}
- \Lambda_c-S_n\geq \mathcal{G}+\mathcal{K}v-\mathcal{A}\sqrt v,\\
- \mathcal{G}=u_1(\mathfrak{T}+\mathfrak{j}_*)-t_*\bar{p}-C_b-\bar{P}K_D-\bar e,\\
- \mathcal{K}=\mathfrak{T}+\mathfrak{j}_*-C_l-4K_D,\quad \mathcal{A}=\eta t_*+C_s.
- \end{gathered}
-\end{equation}
-At $n=320$, \eqref{ul:log-series} gives the sufficient bounds
-\[
- \begin{gathered}
- K_D<1/6,\quad W_n<3/125,\quad\hat{\ell}<13/3,\quad
- \Gamma_b<18/5,\quad\lambda_b<15/2,\\
- M_b<13/25,\quad C_{B,b}<8,\quad
- \bar{a}D_a+10/n^2<3/25,\\ G_b<9/25,\quad R_b<17/50,
- \quad\mathcal M_b<2/125,\quad C_b<209/250,\\
- C_s<141/200<71/100,\quad C_l<7/20,\\
- \mathcal{G}>195191/2400000>3/40,\quad \mathcal{K}>10,\quad \mathcal{A}<7/5.
- \end{gathered}
-\]
-For instance $\sin\hat{\varepsilon}>23/(5m)$ proves the stated $\hat{\ell}$ bound;
-the three terms in the $\eta$ bracket of $C_s$ are below
-$41/1000,2/125,353/1000$.  Every cost decreases for real $n\geq320$:
-$m\hat{\ell}'\leq1<\hat{\ell}$, $m\Gamma_b'<\bar{p}\leq\Gamma_b$,
-$m\lambda_b'<1<\lambda_b$, and the remaining positive linear-log
-numerators have decreasing reciprocal quotients.  Thus $\mathcal{G},\mathcal{K}$ increase
-and $\mathcal{A}$ decreases.  Completing the square in $\sqrt v$ proves
-\begin{equation}\label{ul:outer-exclusion}
- S_n<\Lambda_c-13/500\qquad(n\geq320,\ 1\leq\rho\leq\pi).
-\end{equation}
-
-The same comparison gives a useful earlier onset on the far half.
-For $0<u\leq1$ define $A_u=1-u$, $C_u=2-u$,
-$F_u=2\sqrt{u(1-u)}$ for $u\leq1/2$ and $F_u=1$ thereafter,
-and $Q_u=\min(2,\sqrt{8u})$.  In \eqref{uc:phase-allowance}
-majorize $\mathsf{a},c_e+c_d,p,q,d_+,P$ by $A_u,C_u,F_u,F_u,F_u,Q_u$,
-and call the resulting positive allowance $\widehat C_E(n,u)$.
-Its quotient by $u$ decreases: this is immediate for the nonentropy
-terms, while the entropy quotient is
-$\Psi(F_u/u,[1+8A_um/(3\pi)]/u)$ with
-$\Psi(r,s)=r[1+\log(1+s/r)]$ increasing in each argument.
-For $\rho\geq\pi/2$, $u>u_0=7/24$.  At $n=192$, $u=u_0$,
-\eqref{ul:log-series} gives $21/4<L<421/80$, $\bar{L}<63/10$ and
-\[
- \begin{gathered}
- \mathfrak{T}>19/2,\quad\bar e<1/4,\quad K_D<13/50,\quad
- \widehat D<4/25,\quad\widehat G<7/10,\\
- \widehat C_6<31/40,\quad\widehat{\mathcal M}<1/50,\quad F_uW_n<1/30.
- \end{gathered}
-\]
-Hence $\widehat C_E<1013/600<17/10$; also $F_u<11/12$, $Q_u<31/20$.
-The anchor comparison is exactly
-\[
- u_0(19/2+23/250)-(221/500)(11/12)
-             -17/10-(13/50)(31/20)-1/4=79/2000.
-\]
-Its quotient by $u$ increases, so this gap persists for $u\geq u_0$;
-fixed-phase costs decrease with $n$ and $\mathfrak{T}$ increases.  We have proved
-the closed regional implication needed by hybrid certificates:
-\begin{equation}\label{ul:far192}
- S_n<\Lambda_c-79/2000<\Lambda_c-3/100
- \qquad(n\geq192,\ \pi/2\leq\rho\leq\pi).
-\end{equation}
-
-\subsection{Actual corners and completion of the global argument}
 
 At an actual corner the reflection loss vanishes, so a direct descent
 estimate is needed.  We use the signed-vector interpolation principle
@@ -495,8 +353,11 @@ losses exceed $\delta_A$ and the diagonal loss exceeds $\delta_D$, where
  \delta_D&=2q_h(\mathfrak{T}+\mathfrak{j})-4/15-\overline C_E-(3/2)K_D-\bar e.
 \end{align*}
 For the axes use the same radius-one relative bound, since $h<1$.
-The central estimate gives
-$E_c(h,0)<1/4$ and $E_c(0,h)\leq0$.
+The general bound \eqref{uc:central-pair-general} gives
+$E_c(h,0)<1/4$: here $p=1/\sqrt2$, $\mathsf a>17/20$,
+$p^{3/2}<3/5$, $\sqrt{\mathsf a}>9/10$, and
+$4I_4/\pi^2<9/25$, so $E_c(h,0)<6/25<1/4$.
+At the other axis, $E_c(0,h)=-B_\beta\leq0$.
 For the diagonal use the completed model on its closed
 $\rho\leq\pi/2$ domain and the full absolute error.
 Here $\mathsf{a}=p=q=1/\sqrt2$, $P<3/2$; the root convolution argument only
@@ -526,34 +387,37 @@ For $\delta=\min(\delta_A,\delta_D/2)$ we obtain
 $\delta-M(n)\pi^4/6144>49/2000$.
 Set $c=32\delta/\pi^2$ in \eqref{ul:squared-peano}; since $\mu\leq1$,
 the descent coefficient exceeds
-$(16/\pi^2)(49/2000)>49/1250>1/30$.  Thus
-\begin{equation}\label{ul:corner256}
- \lambda_n(-\cos(A/n),-\cos(B/m))
- \leq\Lambda_c-(A^2+B^2)/30,
- \quad n\geq256,\quad 0\leq A,B\leq\pi/4.
-\end{equation}
+$(16/\pi^2)(49/2000)>49/1250>1/30$, proving \eqref{ul:corner256}.
 The node-preserving parity reflection gives the same bound at the other
 nonnode corner, with each mesh in its original coordinate.
-
-\begin{proof}[Proof of Theorem~\ref{thm:main-location}]
-For $n\geq320$, choose a closed odd chart \eqref{ul:charts}.
-A noncorner center is excluded through $\rho=3/5$ by
-\eqref{ul:near-exclusion} and \eqref{ul:annulus}; every center is
-excluded for $\rho\geq3/5$ by \eqref{ul:wide-exclusion},
-\eqref{ul:outer-exclusion} and $\lambda_n\leq S_n$.
-At an actual corner with $\rho\leq3/5<\pi/4$, admissible phases
-are inward, and \eqref{ul:corner256} is strict except at its origin.
-The odd endpoint pairs are $(n,m),(0,m)$ for even $n$ and
-$(n,m),(n,0)$ for odd $n$, exactly the two corners in the theorem.
-Reflection in the first coordinate for even $n$, and in the second
-for odd $n$, permutes nodes and cardinal polynomials, so their values
-agree.  Compactness supplies the maximum.  Every seam, axis, node and
-endpoint lies in the same closed cover.
-
-Section~\ref{sec:certificates} supplies the finite degrees below $320$
-with the identical strict equality classification.  Its degree ranges
-and the analytic tail cover every integer $n\geq2$.  The limiting-constant
-enclosure used in the scalar comparison remains a trusted computational input to the global
-location proof; the corner expansion of Theorem~\ref{thm:main-expansion}
-has its separate analytic proof.
 \end{proof}
+
+\begin{theorem}[Analytic localization]\label{ul:tail-location}
+For every integer $n\geq512$, the Lebesgue function has maximum
+$\Lambda_c(n)$, attained precisely at the two nonnode corners specified
+in Theorem~\ref{thm:main-location}.
+\end{theorem}
+\begin{proof}
+Choose a closed odd chart \eqref{ul:charts}. At a noncorner center
+with $\rho\leq1/2$, Lemma~\ref{ul:selected-pairs} and
+Corollary~\ref{uc:relative-gate} give
+\[
+ \lambda_n=S_n-\Delta_{JK}
+       <\Lambda_c+41/1000-1/20=\Lambda_c-9/1000.
+\]
+For $1/2\leq\rho\leq1$, the same corollary gives
+$S_n-\Lambda_c\leq P_n(1/2)<-1/7$; for $\rho\geq1$ use
+Corollary~\ref{uc:absolute-gate}. At a corner center with
+$\rho\leq1/2$, the inward phases lie in the closed $\pi/4$ square,
+and Lemma~\ref{ul:corner-lemma} is strict away from its origin.
+Thus only odd endpoint pairs remain: $(n,m),(0,m)$ when $n$ is
+even and $(n,m),(n,0)$ when $n$ is odd. Reflection in the first
+coordinate for even $n$, or the second for odd $n$, permutes nodes and
+cardinals, so the two values agree. Continuity and compactness give
+the maximum and the stated equality set. All phase seams and chart
+ties are included in these closed estimates.
+\end{proof}
+
+Section~\ref{sec:certificates} supplies the remaining degrees
+$2\leq n\leq511$. The analytic tail uses only the elementary
+constant bounds proved above.

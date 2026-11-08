@@ -89,7 +89,9 @@ place in the square.
 The Padua points are a particularly effective interpolation set on the square.
 They contain exactly as many points as the dimension of the space of
 polynomials of total degree at most $n$, yet their Lebesgue constants grow
-only like the square of a logarithm. Their construction, interpolation
+only like the square of a logarithm. The $O(\log^2 n)$ upper bound was proved in
+\cite{BosCaliariDeMarchiVianelloXu2006}, following the numerical discovery
+in \cite{CaliariDeMarchiVianello2005}. Their construction, interpolation
 formulas and computational properties have been studied extensively;
 see \cite{CaliariDeMarchiVianello2005,BosCaliariDeMarchiVianelloXu2006,
 BosDeMarchiVianelloXu2007,Computational2008,DeMarchi2022}.
@@ -162,7 +164,7 @@ from the definition of the grid.
    \foreach \kk in {0,...,\mm} {
     \pgfmathtruncatemacro{\parity}{mod(\jj+\kk,2)}
     \ifnum\parity=0
-     \fill ({cos(180*\jj/\nn)},{cos(180*\kk/\mm)}) circle (0.028);
+     \fill ({cos(180*\jj/\nn)},{cos(180*\kk/\mm)}) circle (0.035);
     \fi
    }
   }
@@ -224,9 +226,9 @@ which identifies $\Lambda_n$ with the operator norm on $C(Q)$.
 At an interpolation point the Lebesgue function is exactly one. Away from
 the points, its individual cardinal terms can reinforce each other.
 For Padua interpolation the largest reinforcement occurs at the two corners
-that are not interpolation points. This location was observed numerically
-and posed as a question in earlier work
-\cite{CaliariDeMarchiSommarivaVianello2008poster,DeMarchi2022}.
+that are not interpolation points. This location was conjectured in
+\cite{CaliariDeMarchiSommarivaVianello2008poster} and recorded among the
+open problems in \cite[Section~3.3]{DeMarchi2022}.
 Our first result identifies these maximizers exactly.
 
 \begin{theorem}[Location of the maximum]\label{thm:main-location}
@@ -261,34 +263,11 @@ The substantive global issue is the strict comparison with every other
 point. Once it is resolved, a single scalar value
 $\Lambda_c(n)=\lambda_n(-1,-1)$ determines the full norm.
 
-The proof combines an analytic argument, valid for $n\geq320$, with
-rigorous finite certificates for the remaining degrees. The certificates
-bound the function on regions covering the square. The analytic argument
-also uses a separately certified constant enclosure in its quantitative estimates.
-These dependencies are described in Sections~\ref{sec:argmax}
-and~\ref{sec:certificates}.
-An \emph{enclosure} of a constant $c_*$ is a pair of proved bounds
-$c_-\leq c_*\leq c_+$. A certified enclosure comes with specified
-arithmetic checks establishing those inequalities. The comparison
-arguments use these bounds in whichever direction preserves the
-inequality being proved.
-
-The threshold $320$ divides the proof into a tail of degrees and a
-finite initial range. A finite certificate is a collection of exact
-inequalities whose validity implies a bound on an entire region.
-Covering the square by such regions converts finitely many checked
-inequalities into a statement about every point. The later certificate
-section derives the relevant implications, including the treatment of
-regions that touch a maximizing corner. The role of a certificate here
-is analogous to a long finite arithmetic step in a proof, with its
-input, checked inequalities and arithmetic specified explicitly.
-
-The analytic proof for large degrees still contains quantitative
-constants. One of their enclosures is separately certified, as stated
-above. Thus the distinction between the two degree ranges concerns how
-the pointwise comparison is completed. The dependency of the final
-location theorem includes the stated certified numerical premises in
-both its quantitative analysis and its finite range.
+The location proof is computer-assisted. Analytic estimates give the result
+for $n\geq512$; rigorous finite certificates cover the remaining degrees.
+The certificates bound the function on regions covering the square.
+Sections~\ref{sec:argmax} and~\ref{sec:certificates} give these arguments
+and their arithmetic assumptions.
 
 Knowing the location reduces the Lebesgue constant to a single corner
 value. Our second result describes that value much more precisely than
@@ -338,7 +317,7 @@ bounded by a quantity tending to zero independently of $t$. This is
 uniform convergence on $[0,1]$. Each summand is continuous there, so
 this part of the sum is a bounded continuous function, including both
 endpoints. The remaining term, $\ell=1$, is handled separately.
-Near the other endpoint,
+Near $t=0$,
 $\cot(\pi t/2)$ is of size $1/t$, so the factor $t^2$ makes the
 complete integrand of size $t$. Near $t=1$ the potentially singular
 term contains
@@ -373,8 +352,8 @@ explicit terms in \eqref{eq:main-expansion}, the statement is
  \quad(n\geq2)
 \]
 for one finite constant $C$ that works for every degree and both
-parities. In particular $N \mathcal{R}_n\to0$. Thus the displayed reciprocal
-term $-1/N$ is resolved at a finer scale than the error. A leading
+parities. In particular $N \mathcal{R}_n\to0$. The remainder is smaller than $1/N$, so the coefficient of
+the reciprocal term $-1/N$ is determined. A leading
 $O(\log n)$ estimate leaves the constant and reciprocal terms
 undetermined. The content of the sharp expansion lies in keeping
 track of contributions small enough to affect those terms.
@@ -389,8 +368,9 @@ example, elementary Taylor expansion gives
 \]
 The correction $(\log n)/n$ is larger than the final remainder in the
 theorem. A shift of scale therefore changes the lower-order bookkeeping.
-The midpoint scale $N$ brings the two parities into the same formula
-and leaves the simple reciprocal coefficient shown above.
+The scale $N$ absorbs the logarithmic reciprocal term, leaving the pure
+$-1/N$ correction. Both parities share one formula at each of the scales
+$n$, $m=n+1$ and $N=n+1/2$.
 
 An asymptotic expansion describes the behavior along arbitrarily large
 degrees. The theorem additionally states a uniform bound for every
@@ -399,17 +379,31 @@ remaining degrees can be absorbed by increasing a finite constant.
 That observation concerns the remainder bound for the corner value;
 the separate global location theorem still has its own pointwise proof.
 
-The corner expansion is proved entirely analytically. Its global version
-uses Theorem~\ref{thm:main-location}, with the computer-assisted dependencies
-just described.
+The corner expansion is proved analytically. Its transfer to $\Lambda_n$
+as $n\to\infty$ uses only the analytic $n\geq512$ part of
+Theorem~\ref{thm:main-location}. The finite certificates also identify the
+maximum in the remaining degrees; the same remainder constant can therefore
+be chosen for all $n\geq2$.
 
 The leading growth
 $\Lambda_n=(4/\pi^2)\log^2n+O(\log n)$ is due to
-Kolomoitsev and Lomako~\cite{KolomoitsevLomako2021}. The new expansion
-resolves the lower terms through an error smaller than $1/n$. Its square
+Kolomoitsev and Lomako~\cite[Theorem~2.1 and the following Padua consequence]{KolomoitsevLomako2021}.
+Their proof uses pointwise rhombic Lebesgue-function asymptotics of
+Kuznetsova~\cite[Theorem~1]{Kuznetsova1995}; Pimenova's earlier equal-parameter
+result concerns the corresponding odd periodic grid
+\cite[Theorem~1]{Pimenova1979}. These periodic results form the background
+for the leading Padua asymptotics.
+
+The lower-order sizes had also been anticipated numerically. De Marchi's
+empirical model was $((2/\pi)\log(n+1)+1.1)^2$
+\cite[Section~1.1, pp.~3--5]{DeMarchi2005NearOptimal}.
+Here the explicit constants are
+$b\approx1.225522125742$, $c\approx1.846160310424$, and
+$\kappa\approx0.919710118388$. Theorem~\ref{thm:main-expansion}
+identifies their exact expressions and resolves the lower terms through
+an error smaller than $1/n$. Its square
 comes from two harmonic sums; $\kappa$ measures their coupling, and the
-half-integer scale exposes the reciprocal correction. The corner calculation
-is independent of the global maximizer argument.
+half-integer scale exposes the reciprocal correction.
 
 Both proofs begin with the same corrected interpolation kernel. At the
 corner its signs give an exact positive sum. Away from the corner, reflection
@@ -445,11 +439,11 @@ nearby point with nonzero displacement and vanishes at the corner.
 
 The Padua construction and its generating-curve and ideal descriptions
 are classical~\cite{BosCaliariDeMarchiVianelloXu2006,BosDeMarchiVianelloXu2007}.
-The corner question appears in~\cite{CaliariDeMarchiSommarivaVianello2008poster,DeMarchi2022};
-related numerical geometry of local maxima is studied in
+Related numerical geometry of local maxima is studied in
 \cite{BialasCiezDeMarchiSuder2026}. Rigorous norm approximation by polynomial
 meshes, including Padua examples, was developed in~\cite{Mesh2024}; our
-finite proof also needs strict exclusion and equality classification.
+certificates add strict exclusion near the maximizing corners, identifying
+the equality set.
 For the distinct Morrow--Patterson family,
 \cite{MorrowPatterson2026} proves an $O(n^2)$ upper bound.
 
@@ -458,7 +452,6 @@ one comparison theorem and apply it to the global location in
 Section~\ref{sec:argmax}. Section~\ref{sec:certificates} completes the finite
 range and states the arithmetic and evidence dependencies.
 
-The onset $320$ is sufficient for the global location argument.
 
 \noindent\textbf{A route through the proof.}
 The normalization section begins with finite-dimensional linear algebra.

@@ -4,7 +4,7 @@
 At a corner the absolute cardinal kernel becomes a positive Cauchy sum.
 Its two meshes have sizes $n$ and $n+1$. The equal-mesh reference gives
 the leading square; the mesh displacement supplies the constant defect
-and the first correction. We retain that displacement throughout the proof.
+and the first correction.
 Put $m=n+1$ and, for the rest of this section, write
 \[
  \theta_j=j\pi/n,\quad \phi_k=k\pi/m,\qquad
@@ -15,6 +15,27 @@ Every unspecified constant below is independent of $n\geq2$ and of the
 row indices in their stated ranges. Set $A(z)=a(\log z+d)$, with the
 constants in \eqref{eq:main-constants}.
 
+
+The principal notation for this section is collected below. Row indices
+and all implied constants have the ranges stated in the formulas.
+\begin{center}
+\begin{tabular}{@{}p{0.36\linewidth}p{0.58\linewidth}@{}}
+\toprule
+Symbol & Meaning\\
+\midrule
+$m=n+1$, $N=n+1/2$ & unequal mesh size and midpoint degree\\
+$\theta_j$, $\phi_k$; $\varepsilon_j$, $\eta_k$ & angular nodes and endpoint half weights\\
+$a,d,A(z)=a(\log z+d)$ & constants of \eqref{eq:main-constants} and logarithmic model\\
+$\mathcal D_n$; $w(x),B(x)$ & diamond kernel; cotangent functions, with both poles removed from $B$\\
+$x=r/m$, $s=m-r$ & position and complementary distance of row $r$\\
+$T_{n,r},V_n,D_{m,r},\mathcal H_m$ & cotangent row sum, smooth sum, digamma row and its aggregate\\
+$H_k=\sum_{j=1}^k1/j$ & harmonic numbers\\
+\bottomrule
+\end{tabular}
+\end{center}
+The product mesh size used in Section~\ref{sec:argmax} is instead
+$\mathsf N=nm$.
+
 \subsection{An exact row formula}
 For $u\ne v$ let $f(u,v)=(1+\cos v)/|\cos u-\cos v|$. We first obtain
 \begin{equation}\label{cu:positive}
@@ -23,8 +44,25 @@ For $u\ne v$ let $f(u,v)=(1+\cos v)/|\cos u-\cos v|$. We first obtain
        \varepsilon_j\eta_k f(\theta_j,\phi_k)+\frac1m.
 \end{equation}
 To see this directly from \eqref{eq:cardinal-kernel}, define
-$\mathcal{D}_n(u,v)=\sum_{|p|+|q|\leq n}\mathrm e^{\mathrm i(pu+qv)}$. Grouping signs identifies
-this with the product Chebyshev sum at a corner. With
+$\mathcal{D}_n(u,v)=\sum_{|p|+|q|\leq n}\mathrm e^{\mathrm i(pu+qv)}$. Grouping positive and negative frequencies in each coordinate gives
+\[
+ \mathcal D_n(u,v)=\sum_{\substack{p,q\geq0\\p+q\leq n}}
+       \nu_p\nu_q\cos(pu)\cos(qv)=G_n(u,v)+\cos(nu).
+\]
+For $B=(\cos\theta_j,\cos\phi_k)$ and $z=(-1,-1)$,
+$T_p(-1)=(-1)^p$ therefore gives
+$K_n(z,B)=\mathcal D_n(\pi-\theta_j,\pi-\phi_k)$.
+Set $j'=n-j$ and $k'=m-k$. Then
+$\pi-\theta_j=\theta_{j'}$, $\pi-\phi_k=\phi_{k'}$,
+$(-1)^{n+j}=(-1)^{j'}$, and \eqref{eq:cardinal-kernel} becomes
+\[
+ L_{jk}(-1,-1)=w_{jk}
+ \{\mathcal D_n(\theta_{j'},\phi_{k'})-(-1)^{j'}\}
+ =w_{jk}G_n(\theta_{j'},\phi_{k'}).
+\]
+The reflection changes even checkerboard parity to odd and preserves
+the endpoint weights. This is the link between the interpolation kernel
+and the positive corner sum. With
 $u_+=(u+v)/2$, $u_-=(v-u)/2$, finite geometric sums give
 \[
  \mathcal{D}_n(u,v)=\frac{\sin((n+1)u_+)\sin((n+1)u_-)+\sin(nu_+)\sin(nu_-)}
@@ -38,7 +76,23 @@ nonnode corner turns the checkerboard odd and leaves its weights unchanged.
 The corresponding Lebesgue sum is therefore
 $\sum_{j+k\text{ odd}}2\varepsilon_j\eta_k
  |\mathcal{D}_n(\theta_j,\phi_k)-(-1)^j|/(nm)$.
-For distinct mesh angles, product to sum gives
+For distinct mesh angles, the product-to-sum identities are
+\[
+ \sin(tu_+)\sin(tu_-)=\tfrac12\{\cos(tu)-\cos(tv)\},
+ \qquad \sin u_+\sin u_-=\tfrac12(\cos u-\cos v).
+\]
+The four mesh cosine values are
+\[
+ \begin{gathered}
+ \cos(n\theta_j)=(-1)^j,\quad
+ \cos(m\theta_j)=(-1)^j\cos\theta_j,\\
+ \cos(m\phi_k)=(-1)^k,\quad
+ \cos(n\phi_k)=(-1)^k\cos\phi_k.
+ \end{gathered}
+\]
+Since $j+k$ is odd, the numerator of $\mathcal D_n$ is
+$\tfrac12(-1)^j(2+\cos\theta_j+\cos\phi_k)$.
+Thus
 \[
  \mathcal{D}_n(\theta_j,\phi_k)=(-1)^j
        \frac{2+\cos\theta_j+\cos\phi_k}{\cos\theta_j-\cos\phi_k},
@@ -50,27 +104,56 @@ $\mathcal{D}_n(\pi,\pi)=(-1)^n(2n+1)$, so the corrected absolute value $2n$
 with weight $1/(2nm)$ contributes $1/m$. The other entries with $k=m$
 vanish. This proves \eqref{cu:positive} and the equality of the two
 nonnode corner values. The node corners have value one by cardinality.
+For $n=2$, the nonzero weighted summands
+$\varepsilon_j\eta_k f(\theta_j,\phi_k)$ at
+$(j,k)=(0,1),(1,0),(1,2),(2,1)$ are respectively
+$3/2,1,1,1/2$. Formula~\eqref{cu:positive} gives
+$\Lambda_c(2)=(4/6)(3/2+1+1+1/2)+1/3=3$.
 
-The sign change within each row makes \eqref{cu:positive} effectively
+
+On row $k=r$ the checkerboard condition fixes $j\equiv1-r\pmod2$,
+so $(-1)^j$ is constant along the row. The sign of the denominator
+therefore determines its positive samples, making \eqref{cu:positive}
 one dimensional. Introduce
 \begin{equation}\label{cu:wB}
  w(x)=\cot(\pi x/2),\qquad
  B(x)=\cot(\pi x)-\frac1{\pi x}+\frac1{\pi(1-x)}.
 \end{equation}
-Both poles have been removed from $B$; it is analytic across $[0,1]$,
-with $B(0)=1/\pi$, $B(1)=-1/\pi$. For $1\leq r<m$ put
+Both poles have been removed from $B$; it is $C^\infty$ across $[0,1]$,
+with $B(0)=1/\pi$, $B(1)=-1/\pi$.
+For example, with $\operatorname{sinc}z=\int_0^1\cos(tz)\,dt$,
+\[
+ \cot z-1/z=-z\,
+ \frac{\int_0^1t^2\operatorname{sinc}(tz)\,dt}{\operatorname{sinc}z}.
+\]
+The denominator is nonzero near zero; differentiation of the finite
+integral proves the smooth extension after subtracting the pole.
+Reflection gives the extension at the other endpoint.
+ For $1\leq r<m$ put
 $x=r/m$, $s=m-r$, $\alpha_r=(1-x)/2$ and
 \[
  T_{n,r}=\sum_{\ell=0}^{r-1}\cot\frac{\pi(\ell+\alpha_r)}n,
  \qquad V_n=\sum_{r=1}^{m-1}w(r/m)
                     \sum_{\ell=0}^{r-1}B((\ell+\alpha_r)/n).
 \]
-For the moment define $\psi$ by its convergent harmonic series,
+We use the digamma function $\psi=\Gamma'/\Gamma$, characterized here
+by its convergent harmonic series,
 \begin{equation}\label{cu:psi}
  \psi(z)=-\gamma+\sum_{k=0}^\infty
           \left(\frac1{k+1}-\frac1{k+z}\right),\qquad z>0,
 \end{equation}
-and set
+Telescoping this series gives
+\[
+ \psi(z+1)-\psi(z)=1/z,\qquad
+ \psi(k+1)=H_k-\gamma,\qquad
+ \psi(R+1/2)=\psi(1/2)+2H_{2R}-H_R,
+\]
+where $H_k=\sum_{j=1}^k1/j$ and $k,R$ are positive integers.
+The bounds and half-integer values used below are proved in
+Section~\ref{sec:asym}. In particular \eqref{cu:psi-est} gives
+$H_k=\log k+\gamma+1/(2k)+O(k^{-2})$ by applying it at $k+1$.
+
+Set
 \begin{equation}\label{cu:D}
  D_{m,r}=\psi(r+\alpha_r)+\psi(s-\alpha_r)-\psi(m-\alpha_r)-\psi(\alpha_r),
  \qquad \mathcal H_m=\frac4{\pi m}\sum_{r=1}^{m-1}w(r/m)D_{m,r}.
@@ -80,13 +163,20 @@ We claim the exact identities
  \Lambda_c(n)=1-\frac{2n}{m}+\frac4{nm}\sum_{r=1}^{m-1}w(r/m)T_{n,r}
        =-1+\frac2m+\mathcal H_m+\frac{4V_n}{nm}.
 \end{equation}
-Here is the endpoint bookkeeping behind them. Extend a row periodically
+We now write row $k$ of \eqref{cu:positive} as $r$; its entries are
+$|F_r(\theta_j)|$. Extend a row periodically
 and sample its $n$ indices $j\equiv1-r\pmod2$ modulo $2n$. For
 $v=r\pi/m$ its signed entries satisfy
 \[
  F_r(u):=\frac{1+\cos v}{\cos u-\cos v}
    =\frac{w(r/m)}2\left(\cot\frac{v-u}{2}+\cot\frac{v+u}{2}\right),
  \qquad \sum_jF_r(j\pi/n)=n.
+\]
+The cotangent form uses
+\[
+ \cot A+\cot B=\frac{\sin(A+B)}{\sin A\sin B},\quad
+ 2\sin\frac{v-u}{2}\sin\frac{v+u}{2}=\cos u-\cos v,
+ \quad \cot(v/2)\sin v=1+\cos v.
 \]
 The last equality follows from
 $\sum_{\ell=0}^{n-1}\cot(z+\ell\pi/n)=n\cot(nz)$, the logarithmic
@@ -96,7 +186,8 @@ $j=-r+1,-r+3,\ldots,r-1$, since $r-1<nr/m<r$.
 Their sum is $P_r=w(r/m)T_{n,r}$, by symmetry and the substitution
 $j=r-1-2\ell$. Thus the absolute periodic row is $2P_r-n$.
 Folding back to $0\leq j\leq n$ divides by two and produces exactly
-$\varepsilon_j$. For $r=0$ the periodic row is $n^2$, since the derivative
+$\varepsilon_j$. The folded interior row therefore contributes
+$(4/(nm))\eta_r(2P_r-n)/2$ to the corner sum. For $r=0$ the periodic row is $n^2$, since the derivative
 of the same cotangent identity gives
 $\sum_{\ell=0}^{n-1}\csc^2((\ell+1/2)\pi/n)=n^2$.
 Its weight $\eta_0=1/2$, together with the exceptional $1/m$, yields
@@ -236,7 +327,15 @@ the local error is at most $h^3\|g''\|_\infty/12$. Taylor's formula
 at the midpoint gives the corresponding bound $h^3\|g''\|_\infty/24$.
 \end{proof}
 
-We also record the elementary estimates used below. Differentiating
+We also record the elementary estimates used below.
+We use the following termwise-differentiation criterion: if a series of
+continuously differentiable functions converges at one point of a compact
+interval and the series of derivatives converges uniformly there, then
+the sum is continuously differentiable and its derivative is that series.
+Repeated application is valid when the successive derivative series have
+the same property. For \eqref{cu:psi}, reciprocal powers give these uniform
+bounds on every compact subinterval of $(0,\infty)$.
+Differentiating
 \eqref{cu:psi} on compact subsets of $z>0$ gives
 \[
  \psi'(z)=\sum_{k\geq0}(z+k)^{-2},\quad

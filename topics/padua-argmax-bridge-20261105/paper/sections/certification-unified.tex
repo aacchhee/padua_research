@@ -48,14 +48,15 @@ $I_aI_bf_\sigma\leq I_RW$. This proves \eqref{cert:peano} for
 every signed sum, with an error independent of $\sigma$, and taking
 their maximum proves the assertion.
 Equation~\eqref{cert:bernstein} follows from the same positivity and
-partition of unity of the Bernstein basis, after the triangle inequality.
+partition of unity of the Bernstein basis, after the triangle inequality
+(see \cite{Lorentz1986} for Bernstein-form enclosures).
 \end{proof}
 
 \subsection{One polynomial certificate for the small degrees}
 For $2\leq n\leq40$ the direct certificate uses the corrected cardinal
 kernel of Lemma~\ref{lem:cardinal-kernel}. Outward rational enclosures of
 its coefficients are converted to tensor Bernstein form on the square.
-Binary midpoint subdivision uses exact de Casteljau averages. On each leaf
+Binary midpoint subdivision uses de Casteljau averages rounded outwards. On each leaf
 all coefficient absolute sums in \eqref{cert:bernstein} must be strictly
 less than a validated lower endpoint $L_c\leq\Lambda_c(n)$.
 A leaf containing a designated corner exempts only its vertex coefficient:
@@ -96,8 +97,34 @@ series in Machin's identity bracket $\pi$; alternating cosine series and
 the Chebyshev recurrence bracket the grid values. Integer operations round
 outwards at every interval step. The checker reconstructs the whole
 partition and its coefficients. Successful certificates are finite witnesses.
-The accompanying execution record identifies which degrees were newly rerun
-through the common implementation.
+The same coefficient construction and strict predicates apply throughout
+this degree range.
+
+\paragraph{A four-leaf example at degree two.}
+The six nodes are
+\[
+ (1,1),\ (1,-1/2),\ (0,1/2),\ (0,-1),\ (-1,1),\ (-1,-1/2),
+\]
+and the two nonnode corner values are $\Lambda_c(2)=3$.
+Split the square first at $x=0$ and then at $y=0$ in each child.
+On $[-1,0]\times[-1,0]$, use $s=x+1$, $t=y+1$.
+The tensor degree-$(2,2)$ sums $\sum_\ell|c_{\ell,ij}|$, with
+row index $i$ and column index $j$ increasing from zero, are exactly
+\[
+ \begin{pmatrix}
+ 3&5/3&2\\
+ 11/6&2&5/3\\
+ 1&2&5/3
+ \end{pmatrix}.
+\]
+The coefficient at index $(0,0)$ is the value at the physical vertex
+$(-1,-1)$; all eight other sums are at most $2<3$.
+Its reflected lower-right leaf has exceptional coefficient $3$ at
+index $(2,0)$, the physical vertex $(1,-1)$.
+Each upper leaf has every coefficient sum at most $5/2<3$.
+These four closed rectangles therefore give two strict leaves and two
+punctured-corner leaves, and prove the equality set directly by
+\eqref{cert:bernstein}. No numerical grid between the vertices is needed.
 
 The degree-one case is explicit. Its nodes
 are $(1,1),(1,-1),(-1,0)$, with cardinals
@@ -108,7 +135,7 @@ $(1+x+2y)/4$, $(1+x-2y)/4$, and $(1-x)/2$. Hence
 whose maximum is two, attained only at $(-1,\pm1)$.
 
 \subsection{The phase certificate}
-For $41\leq n\leq319$ the common envelope is enclosed on
+For $41\leq n\leq511$ the common envelope is enclosed on
 $\mathcal T=\{(a,b):a,b\geq0,\ a+b\leq1\}$, with phases
 $(\alpha,\beta)=(\pi a,\pi b)$ and $\mu=n/(n+1)$.
 In the notation of \eqref{ul:primitive}, put
@@ -128,7 +155,8 @@ and upper bounds at the vertices therefore give
  \quad V_R=\max_zW_z,\quad
  \theta_R=\frac{\pi^2}{8}\{(a_1-a_0)^2+\mu^2(b_1-b_0)^2\}.\notag
 \end{align}
-Trigonometric Bernstein inequalities supply
+The Bernstein inequality for functions of bounded exponential type
+\cite{Boas1954} supplies
 $|(f_\varepsilon)_{aa}|\leq\pi^2M$ and
 $|(f_\varepsilon)_{bb}|\leq\pi^2\mu^2M$ from the global norm.
 The final line of \eqref{cert:phase-bound} uses positivity of the
@@ -157,7 +185,9 @@ give
 \begin{equation}\label{cert:grid-norm}
  M_*\leq\frac{V_E}{1-\pi^2/64}<\frac{784}{663}V_E.
 \end{equation}
-Indeed the ten quarter-squares cover $\mathcal T$; outside vertices fold
+For related finite-mesh bounds on Lebesgue constants, compare
+\cite[Proposition~2.2]{Mesh2024}. Here the ten quarter-squares cover
+$\mathcal T$; outside vertices fold
 back to $E$ by $(a,b)\mapsto(1-a,1-b)$, a phase symmetry.
 Each square has side $1/4$, so its Peano error is at most
 $\pi^2(1+\mu^2)M_*/128\leq\pi^2M_*/64$. Hence
@@ -226,10 +256,20 @@ chart. These are precisely the premises of the squared-variable
 interpolation argument. The parity reflection transfers the witness to
 the other actual corner.
 
+\begin{corollary}[Analytic far leaves]\label{ul:far192}
+For every integer $n\geq192$, a phase point with $\rho\geq\pi/2$
+satisfies $S_n<\Lambda_c(n)-3/100$.
+\end{corollary}
+\begin{proof}
+Apply Corollary~\ref{uc:absolute-gate} with $\rho_1=\pi/2$.
+Its tangent condition holds at $n=192$ and persists thereafter;
+the same corollary gives $G(n,\pi/2)>3/100$.
+\end{proof}
+
 From degree 256 the analytic estimate \eqref{ul:corner256} supplies
 the same strict descent on the required diamond. An analytic far leaf
 is permitted from degree 192 only when its entire triangle intersection
-satisfies $\rho\geq\pi/2$. Equation~\eqref{ul:far192} then gives
+satisfies $\rho\geq\pi/2$. Corollary~\ref{ul:far192} then gives
 $S_n<\Lambda_c(n)-3/100$ throughout that closed intersection.
 
 To complete the implication, choose an odd chart for any point of the
@@ -243,23 +283,131 @@ maximum and equality set, including every chart tie and subdivision
 boundary.
 
 \subsection{Evidence and arithmetic}
-The retained proof inventory covers every integer $2\leq n\leq319$;
-Section~\ref{sec:argmax} covers the rest. For the phase range all 280
-primary/fresh pairs, including the control degree 511, were checked by
-exact rational reconstruction of 560 essential proofs. Native outward
-endpoints come from the frozen Arb/FLINT/MPFR/GMP implementation;
-finite binary64 endpoints are converted losslessly to rationals for the
-cover predicates. The arithmetic implementation, compiler and native
-interfaces are trusted components of this computer-assisted proof.
+\begin{proposition}[Computer-assisted finite verification]\label{cert:finite-verification}
+For every integer $2\leq n\leq40$ the retained polynomial certificate
+satisfies the coefficient and complete-partition predicates above.
+For every integer $41\leq n\leq511$ both retained phase trees have been
+recertified with independently computed bounds satisfying the norm,
+closed-cover, defect-floor and corner predicates above.
+With the arithmetic model and mathematical premises specified in
+Table~\ref{cert:trust}, these finite checks prove the maximum and exact
+two-corner equality set of Theorem~\ref{thm:main-location} for
+$2\leq n\leq511$.
+\end{proposition}
+\begin{proof}
+The polynomial checker reconstructs all coefficient enclosures and the
+complete midpoint partition for each of the 39 degrees $2,\ldots,40$.
+Bernstein positivity and the exceptional vertex identity give the strict
+comparison off the two designated corners.
+For each of the 471 degrees $41,\ldots,511$, the independent phase checker
+reconstructs both complete trees, directly encloses the finite kernel and
+cardinal sums, and certifies their strict rational comparisons. It uses
+its own vertex upper bounds, corner lower endpoint and global norm in
+every leaf and corner test. All 942 trees pass these checks.
+The phase-to-physical implication proved above then excludes every point
+except the two corner origins. At those origins the cardinal identity
+gives the exact value $\Lambda_c(n)$, and parity reflection equates the
+two values.
+\end{proof}
 
-The primary and fresh passes ran separately on the production machine.
-Locally all essential proof/account/source links were checked. Complete
-histories for two randomly selected degrees, 199 and 238, were inspected,
-and fresh native verification was run at both degrees with distinct
-review. These sample replays supplement
-the checks of all essential proofs and links. Full unsampled
-histories remain on the production machine under the selective-retention
-policy. Source pins, witness identities, checker commands and the exact
-new small-degree run inventory are in the companion reproducibility notes.
-They permit regeneration; a durable public release remains to be arranged.
-This evidence boundary is part of the theorem's computational scope.
+\paragraph{How the numerical premises are obtained.}
+The independent checker evaluates the finite primitive
+\eqref{ul:primitive} and the four-term cardinal-reflection identity
+\eqref{ul:cardinal-reflection}, using the corrected kernel of
+Lemma~\ref{lem:cardinal-kernel}. It retains every endpoint weight, the
+highest-mode coefficient one and the exact removable collision values.
+For an actual-function value the four reflected terms are added before
+taking the absolute value, preserving their cancellations. These direct
+finite sums give new vertex uppers $W_z$, an origin lower endpoint $L_c$,
+and, below degree 256, the three actual-function uppers
+$W_x,W_y,W_{xy}$. The checker constructs its own GRID or complete TREE
+norm from these new values. Its conclusion certifies the complete trees
+with these independently constructed bounds.
+
+The arithmetic starts with an exact rational Machin enclosure of $\pi$.
+Integer argument reduction and reflection put the sine arguments in
+$[0,\pi/2]$. A Taylor polynomial with proved truncation and roundoff
+bounds then supplies sine intervals. General interval operations widen
+each endpoint to an adjacent binary64 value, and summation widens every
+pairwise addition. The finite endpoints have the exact form $m2^e$ with
+integers $m,e$; conversion to rationals preserves their values.
+Normalization, the near/far proxy intersections, norm construction,
+strict leaf comparisons and corner inequalities then use exact rational
+arithmetic. This verifies the cover using the checker's own bounds
+throughout.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Mathematical and implementation premises of the finite verification.}
+\label{cert:trust}
+\begin{tabular}{@{}p{0.17\linewidth}p{0.42\linewidth}p{0.32\linewidth}@{}}
+\toprule
+Stage & Mathematical assertion checked or used & Implementation trust\\
+\midrule
+Polynomial certificates & Corrected cardinals, outward coefficient construction,
+Bernstein positivity and a complete closed-square cover &
+C++/GMP checker, 192-bit outward integer rounding, compiler and Python driver\\
+Direct phase sums & Finite angular kernel and cardinal-reflection identities,
+endpoint weights, exact collision values; rational $\pi$ and Taylor error bounds &
+Python integer/Fraction operations and conversions; guarded NumPy integer
+and array operations\\
+Interval endpoints & Enclosures of every finite term and widened pairwise sum &
+IEEE-754 binary64 $+,-,\times,/$ rounded to nearest, gradual underflow,
+finite comparisons and correct \texttt{nextafter}\\
+Closed cover & GRID or complete TREE norm, near/far overlap, finite selected-pair
+floors, strict leaf tests, squared-variable corner descent and parity &
+Exact rational checker and strict parsing; the recorded Python/NumPy
+implementation, operating system and hardware\\
+Analytic branches & The finite floor tiers, \eqref{ul:corner256} and
+Corollary~\ref{ul:far192}, with the elementary constants of
+Section~\ref{sec:argmax} & The stated rational checks\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The same finite-floor, corner and analytic-far hypotheses used in the
+mathematical reduction are checked at their exact closed guards.
+In particular the finite selected-pair floors remain premises throughout
+their stated degree tiers. Positive interpolation and the closed physical
+chart cover turn the verified rational inequalities into strict exclusion
+at every other physical point. The small-degree route retains its
+independently authored C++/GMP coefficient checker and Python driver.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Finite certificate coverage. Each phase pair supplies two trees
+recertified by the independent checker.}
+\label{cert:coverage}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Degrees & Count & Checked witnesses & Tree nodes\\
+\midrule
+$2\!:\!40$ &39&39& polynomial\\
+$41\!:\!319$ and $511$ &280&560&$51\!:\!101$\\
+$320\!:\!510$ &191&382&$51$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The last two rows give 471 phase degrees and 942 checked witnesses.
+The trees for degrees $320,\ldots,510$ each have 51 nodes, 26 leaves
+and three analytic far leaves, and use the GRID norm. The independent
+check verifies their numerical and noncorner near regions with its own
+bounds and applies the analytic corner estimate from 256.
+Section~\ref{sec:argmax} supplies the analytic proof for every $n\geq512$.
+Together these ranges cover every integer $n\geq2$.
+
+The certificate search used a separately recorded native implementation
+with Arb~\cite{Johansson2017Arb}, FLINT~\cite{FLINT},
+MPFR~\cite{Fousse2007MPFR} and GMP~\cite{GMP}. The retained trees and exact
+phase keys are inputs to the independent direct-sum checker described
+above. All 942 witnesses passed its complete revalidation, and a separate
+execution checked both witnesses at each of degrees 41, 458 and 511.
+
+All essential certificates and the independent verification records are
+retained. The compact returns additionally include complete
+numerical histories for selected degrees 199, 238, 475 and 458 for detailed
+inspection. Full histories for the other degrees remain at their recorded
+computation sites. The source package, arithmetic assumptions, runtime
+identities, file hashes and commands describe regeneration, and the
+accompanying manifest identifies the complete proof inventory.

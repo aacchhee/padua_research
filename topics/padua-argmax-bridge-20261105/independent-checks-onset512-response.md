@@ -249,10 +249,11 @@ This is inspection of the developer's actual pilot records, not a second
 independent certificate run. My own execution remains the synthetic checks.
 
 The pilot is accepted as substituted-bound recertification of the complete
-closed trees. Native S upper endpoints contained by the new intervals number
-63/64 at 41 and 44/45 at each other pilot degree; every native endpoint is
-therefore expressly **not** validated. The original lower endpoint was
-contained in each pilot. The full 942-certificate outcome remains separate.
+closed trees. The implication `new upper <= stored upper` proves 63/64 original S upper
+bounds at 41 and 44/45 at each other pilot degree. This is a bound comparison,
+not containment of the stored endpoint in the new interval. A universal native
+endpoint validation is therefore expressly **not** established. The implication
+`stored lower <= new lower` proves the original lower bound in each pilot. The full 942-certificate outcome remains separate.
 
 ### Local native campaign and compact return — accepted at recorded scope
 
@@ -396,3 +397,143 @@ package still authenticates its old verifier; this review does not relabel
 new code as historically used or repin that package. Any later operational
 release needs its own current source identity. Historical audit findings and
 the separate new-mathematics/independent-arithmetic audit obligation remain.
+
+### E-10 — focused custody-index/deposit preparation check
+
+The small custody index and deposit template are accepted as local preparation,
+with external delivery still pending. My own readback verifies all ten populated
+deposit-file identities and all four pending-local rows. The historical
+23904-byte manifest matches its exact b45e29f Git blob and SHA, so the full
+70-row historical inventory remains recoverable without committing another
+bulk copy. The inspected active index is 3050 bytes, with empty delivered
+`entries` and `total_bytes: 0`. `python3 -B tools/cold_storage.py verify padua-argmax-bridge-20261105`
+actually exited 0; with no delivered entries that establishes only compatible
+index/source metadata. Own details are in
+`/tmp/onset512-independent-review/custody-check.json`.
+
+No Windows delivery, upload, DOI reservation or remote retrieval was performed
+or inferred. Three final source/I25 deposit artifacts remain explicit placeholders.
+The derivative certificate ZIP remains distinct from the canonical provenance
+ZIP. I notified root of stale draft pilot-v1/pending-review wording for update
+with the accepted pilot and current reviews; it does not change verified bytes
+or custody. The size/index part of E-10 is addressed; durable data access still
+awaits AC's actual deposit and independent retrieval.
+
+### Prospective independent six-certificate replay
+
+After the above checks, root explicitly extended this review to one independent
+complete-cover execution of both passes at 41,458,511, after the frozen full
+campaign finishes. This adds the numerical-corner/TREE branch, a selected new
+campaign degree and the largest degree. It is not a statistical validation
+of untested inputs. Before execution I registered exact source/input hashes,
+the fresh output `local-output/argmax-bridge-20261105/i25-independent-six-20261108T111930Z`,
+and the command in `/tmp/onset512-independent-review/six-preregistration.json`,
+SHA-256 `14c096c0fb10d8400c9dbb4a69d22cc84a81fbe348e8d595a07403f96d5d50c8`.
+The frozen from-paper runner receives `--degrees 41,458,511 --cpu-limit 290`;
+its existing exact old560/new382 inventory checks run before filtering.
+
+The total allowance is 300 CPU seconds and 600 seconds wall. Child CPU is
+290 soft/291 hard, reviewer wrapper CPU is 5 soft/6 hard, child address space
+2 GiB, and the external observer kills the process group at 590 seconds.
+Observed `wait4` status and child usage are required, with default SIGCHLD;
+source pins are checked before and after. A fresh interpreter carries no
+pilot/full-run cache; exact within-degree primary/fresh reuse remains explicit.
+No native engine, compiler, Syvert call, retry or scientific source change is
+permitted. All six exact inputs, the automatic 31 arithmetic controls, exit 0
+and resource bounds are required. Outcome is **pending** at registration.
+
+### I25 — completed full outcome and actual independent replay accepted
+
+The frozen full campaign completed exactly 942 certificates: both passes for
+every n=41..511, with no failure or retry. My own `full_records.py` checked
+all 942 input hashes against the historical tar/new mirror, all 25 manifested
+output identities, four disjoint assignments and observed worker exits 0,
+unchanged source hashes, 31 arithmetic controls per worker, empty worker
+stderr and every recorded positive rational margin. Inclusive CPU is
+2519.420775278 seconds, wall 646.839168173, maximum child RSS 154176 KiB.
+The parent separately observed the outer command exit 0. Full-summary hash:
+`46944f9ae15f344bbf5d38c1cf8c2d3b20ca1e24ee4b5b708d3c2976255a7bff`;
+outer-observation hash:
+`791a460b6238f68939393baf1071cee4d6f8f10f54ce92df0e80b31c1a8382e2`.
+Own exact minima and checks are in
+`/tmp/onset512-independent-review/full-record-check.json`.
+The least near margin is approximately 0.00578243477 at 42; far margin
+0.16511789590 and actual-corner gap 31.803121593 occur at 41. These
+are the independent checker's recomputed predicates, not copied native margins.
+
+The separate six-certificate replay above then actually ran once under its
+prospective registration. Command:
+`python3 -B /tmp/onset512-independent-review/six_runner.py 14c096c0fb10d8400c9dbb4a69d22cc84a81fbe348e8d595a07403f96d5d50c8`.
+Direct `wait4` observed child exit 0, no timeout, 27.276321227 inclusive CPU
+seconds, 27.240665118 seconds wall and 152000 KiB maximum child RSS.
+All six complete closed-tree checks and 31 automatic arithmetic controls
+passed. Every mathematical result field equals the corresponding full-run
+field; timings alone differ. The exact six inputs, source pins before/after,
+Python/NumPy runtime and fresh output identities match the preregistration.
+The reviewer wrapper itself also exited 0 with empty stderr. This is an
+actual independent execution of the reviewed second checker, not another
+independent implementation or a statistical claim about the other inputs.
+
+The independent-six observation SHA-256 is
+`bd7d08e97139d78c1b699a6212508e4229a78793971fcc4198588432333ab970`;
+summary `2773d1894faefb305273e1420f0cefdec900eb37b9aba09c70d49dd0ef32c92f`;
+append-only result log
+`1b0f18c8565290903bbd5587cbea1667e51436739650cfb139e2abfe004b51f0`.
+Own post-run comparison is `six-record-check.json` in the scratch review folder.
+No native engine, compiler, library-trigonometric evaluation or Syvert call ran.
+
+The full outcome is **accepted** as recertification of all 942 complete closed
+trees with independently constructed numerical bounds. This replaces the old
+native-evaluator numerical premises for that finite range, under J03's explicit
+IEEE/NumPy/exact-rational model and the separately named analytic lemmas.
+It preserves the native computation as historical evidence. Exactly 42174 of
+43116 original S upper bounds satisfy `new upper <= stored upper`; all 942
+original origin lower bounds satisfy `stored lower <= new lower`. The 942
+remaining original S upper bounds are not validated by the weaker consistency
+test. Their new upper bounds nevertheless prove the full strict trees, which
+is the accepted alternative. No universal validation of original endpoints,
+new analytic lemma, general checker range beyond 41..511, completed external
+deposit or completed substantive Claude audit is claimed.
+
+The computational review scripts, outputs, preserved reviewer-test failures and
+actual independent-six records are retained together off Git in
+`local-output/argmax-bridge-20261105/onset512-independent-review-20261108.zip`:
+51749 bytes, SHA-256
+`96f84b294b724b74bc33c112a2633bde14fed5c9220cb11196c60dae5c12ab28`.
+Its 50 payload files and inventory passed complete ZIP readback. This is a
+small supplementary review bundle; canonical production/full-I25 evidence and
+trusted source remain separate. Original local outputs were preserved, and
+no external delivery or deposit is implied.
+
+### Focused manuscript mathematical integration — accepted at these bytes
+
+I compared the new elementary-constant and analytic-gate arguments in both
+manuscripts with the reviewed J01/J02 proofs, and the new finite-verification
+interface with J03 and the actual accepted runs. Reviewed section hashes:
+
+| Section | Paper SHA-256 | Companion SHA-256 |
+|---|---|---|
+| comparison-unified.tex | `0e22315ead9e83b75dc89fb7353089022086be91036c66bf18dffe938cefc234` | `ca7736cfa25879c4198cebd5496be62dcf55be163b41757dc8a34f27c19fa1a6` |
+| localization-unified.tex | `56f49bdffc85fe209f1c24f461d3595f948478a1e81052b5602e84a03a07ef86` | `16557b9db159ca5887db7badcf4169f6b439e5e5e7440b0cfb6bec2ae7b85868` |
+| certification-unified.tex | `74d079d655debb2c59ea8a15b5050c26b782b5fa5ed2ccb8340463ddea6c1c1b` | `ec0813dfe54c7948c14ee05b3d636fe60470bfd100e580ce2174928fac629789` |
+
+The endpoint-cancelled K=3 coefficient series, elementary pi/log/gamma/zeta
+brackets and 1/480 tail reproduce the accepted constants. The all-real-degree
+argument retains the increasing T+A4 step and the fixed positive optimizer
+segment needed for P_n(1/2). The increasing 295 half-radius floor, retained
+192 far/256 corner guards and closed seams give the advertised onset512 with
+the finite bridge ending at511. No former native constant-enclosure premise
+is reintroduced. The constant identity uses the separately proved absolute
+finite error without its later model-loss constants, avoiding circularity.
+
+The finite section now uses direct finite kernel/cardinal sums, addition of
+four reflections before absolute value, exact weights/collisions, its own
+vertex bounds/origin lower/norm and every closed-tree predicate. It states
+IEEE round-to-nearest, gradual underflow, correct nextafter and the exact
+Python/NumPy/rational interface. Selected-pair floors and the analytic branches
+remain mathematical premises. The old Arb implementation is correctly
+historical search evidence. The 942/471 counts and six independent replays
+match actual records. No numerical or mathematical mismatch remains in this
+focused integration. Root must associate these bytes with its final source
+freeze; later substantive changes require their own focused review. Build,
+layout, paired-numbering and general presentation acceptance are separate.

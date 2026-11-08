@@ -11,7 +11,9 @@ Split from / into: none. Rules and input head:
 Distinct supplementary soundness review accepted the pilot implementation and
 its focused seam correction. The reviewed v2 pilot passed all eight
 certificates, 31 arithmetic controls and 27 corruption controls. Full replay
-and the independent Claude audit are still pending.
+accepted 942 certificates for all 471 degrees 41..511; distinct review accepted
+the complete records and six separately executed arithmetic replays. The
+independent Claude audit remains pending.
 For each accepted certificate with integer degree 41..511, the checker constructs
 new rigorous intervals for the paper's finite primitive and actual Lebesgue
 function, reconstructs the complete closed midpoint partition, and proves its
@@ -184,7 +186,7 @@ A stored native upper below the new lower, or native lower above the new
 upper, rejects as a contradiction. Otherwise it reports how many new uppers
 are <= native uppers, and whether the new lower is >= the native lower.
 **The test new lower <= native upper validates no native upper.** When
-containment fails but the new strict predicates pass, only the independently
+the new upper exceeds a native upper but the new strict predicates pass, only the independently
 recertified tree is claimed. Stored verification summaries are not premises.
 
 Pilot v2 accepted both passes at 41,199,238,511 with 31 exact arithmetic and
@@ -193,12 +195,37 @@ wall 21.031955808 seconds, maximum RSS 144084 KiB. Output prefix outside Git:
 `local-output/argmax-bridge-20261105/i25-pilot-v2-20261108T105639Z`;
 outer receipt SHA256 `2de69f5d4b9e53541618630ea5c9b16222737c1eaffcf5f11ac8466ca24a961f`.
 The original reviewed v2 sources are preserved at commit `4846913`.
-The maximum strict near/far/corner tests all passed. Native S upper containment
-was 63/64 at n41 and 44/45 at each other pilot degree, for each pass; this
+All strict near/far/corner tests passed. The inequality new S upper <= native
+upper held for 63/64 at n41 and 44/45 at each other pilot degree, for each pass; this
 explicitly excludes a universal native-endpoint validation claim.
 
-Runs needed: separately preregistered 942-certificate full scope. Native replay
-by Claude is a separate result. All full outputs remain off Git. Public
+The separately preregistered full run accepted all 560 old and 382 new
+certificates, exactly two witnesses for each of the 471 integer degrees
+41..511. Each worker ran 31 arithmetic controls. Observed exit 0; inclusive
+CPU 2519.420775278 seconds, wall 646.839168173 seconds, maximum individual
+child RSS 154176 KiB. Every strict near margin exceeds 289/50000, every
+numerical far margin exceeds 33/200, and each numerical corner gap g exceeds
+159/5, by exact comparison of the recorded rational margins. Analytic far
+leaves retain their inherited gap 3/100. The full run checked 43116 S premises
+(21558 distinct function arguments) and 1290 actual-lambda premises (645
+distinct arguments); exact within-degree reuse was preregistered. New uppers
+prove 42174 of the stored S uppers by new-upper <= old-upper; one per
+certificate is not proved by that test. All 942 stored corner lowers are
+proved by old-lower <= new-lower. No native upper containment is assumed.
+
+Full output prefix: `local-output/argmax-bridge-20261105/i25-full-v1-20261108T110409Z`.
+Its full-summary.json is 5755 B, SHA256
+`46944f9ae15f344bbf5d38c1cf8c2d3b20ca1e24ee4b5b708d3c2976255a7bff`;
+the manifest identifies all worker input/output records. The small
+[RESULTS.json](../code/independent_phase_checker/RESULTS.json) records receipt
+identities and reduced exact margin bounds.
+[Distinct supplementary review](../independent-checks-onset512-response.md)
+accepted the full records and a separate both-pass replay at 41,458,511:
+six certificates, 31 arithmetic controls, exit 0, inclusive CPU 27.276321 seconds.
+Its result fields equal the campaign's fields apart from timings; this is an
+executed independent rerun, not merely inspection of the first output.
+
+Native replay by Claude is a separate result. All full outputs remain off Git. Public
 archival retrieval, Zenodo DOI and the independent Claude audit remain pending.
 
 ## History
@@ -209,8 +236,8 @@ required aliases (1,0),(3/4,1/4) were absent; their exact symmetry partners
 (0,1),(1/4,3/4) were retained. The failed run and receipt remain intact.
 The proposed v2 uses the paper's existing symmetry consistently on the seam,
 permits legitimate extra retained premises and evaluates every retained key.
-This is a material implementation correction requiring focused review before
-any new pilot. No tree, floor, threshold or numerical formula is changed.
+The material correction received focused acceptance before the successful v2
+run. No tree, floor, threshold or numerical formula was changed.
 
 2026-11-08: Codex subagent development; actual serving model/effort metadata
 unexposed. Root allocated Sol technical development and a distinct Astra review.
