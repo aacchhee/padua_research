@@ -2650,3 +2650,40 @@ clarification. Commit the outputs, then close handoff 26 and open 27 in a
 separate handoff-only commit, and push the authorized working branch.
 Handoff 27 carries the preserved original paper, the accepted 162-page
 companion, and the remaining feedback/publication scope.
+
+## 2026-11-08 — Claude brief for mathematics and both manuscripts
+
+AC asks for the Claude audit brief to cover mathematics and both
+manuscripts. Rules read at `59ffb4026ab4faca278b6de67be3e039e42314fe`;
+main/topic refreshed, base remains
+`f70a260e5b5f9a01209dc8a05faabdcf8db1feeb`. The old handoff 18
+predates the 48-page article and 162-page companion. Prepared
+claude-audit-brief-20261108.md as the current complete instruction,
+retaining the deferred scientific/evidence scope of handoffs 13/15/16.
+
+The brief requires separate verdicts for mathematical/evidence support,
+journal-paper presentation, companion pedagogy throughout, and manuscript
+agreement. It pins both source freezes and PDFs, includes standalone
+reading criteria and precise current evidence/retention limits, and gives
+fresh-output build commands. Both manuscripts remain unchanged. It
+requests audit-03.md and audit-03-manuscripts.md with section coverage,
+actionable findings and a prioritized plan. The actual Claude audit is
+the next step and has not been performed by this preparation task.
+
+Root checks 18 local brief links, output-name availability, both
+TeX/bibliography source freezes and both saved PDF hashes. Fresh remote
+metadata confirms PR 27 is open, draft and unmerged at the input head;
+its historical description is identified as stale without changing it.
+A distinct requested Astra medium reviewer accepts the brief with no
+blocking/major finding. Root applies its minor wording clarification
+that only companion TeX/bibliography, rather than later documentation,
+is pinned to the companion source freeze. This is a technical brief
+check, with no mathematical audit, build or native execution. Requested
+model allocation is recorded; serving metadata is not independently
+exposed. No novelty claim or registry/ID change is introduced.
+
+Outputs are committed first, then handoff 27 redirects to a new numbered
+Claude audit handoff. The prepared brief and handoff are pushed to the
+authorized working branch. The original paper, companion and completed
+review records retain their identities; existing PR/readiness limits
+remain in force.
