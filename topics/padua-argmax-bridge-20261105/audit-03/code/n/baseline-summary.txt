@@ -1,0 +1,4 @@
+paper: 3035 lines, 1817 math regions, 7337 symbol occurrences, 113 base symbols, 367 candidate definition sites; 18 (unit, token) pairs with >1 definition site; 60 (unit, base) pairs with >1 defined token; 61 base symbols defined in >1 unit; 92 numbered equations
+companion: 10593 lines, 5832 math regions, 18991 symbol occurrences, 125 base symbols, 578 candidate definition sites; 67 (unit, token) pairs with >1 definition site; 89 (unit, base) pairs with >1 defined token; 68 base symbols defined in >1 unit; 92 numbered equations
+PASS: current paper vs current companion: 13 statements, 90 numbered display blocks
+PASS: numbered blocks equal baseline c6e195fa5211 after 0 declared renames (both texts)

@@ -207,6 +207,23 @@ not repair chronology. AC's disposition is still required before readiness, and
 one rule should be applied to the E14-wide-signed "no violation" ruling versus
 P4.
 
+## Notation register (AC's request)
+
+[audit-03/n-notation.md](audit-03/n-notation.md) lists 61 base symbols with two or
+more meanings (229 meaning rows, 32 ranked entries) with exact definition sites,
+live ranges, affected numbered formulas, a renaming plan and draft notation tables
+for Sections 3, 4.1, 4.3 and 5. Worst: epsilon/varepsilon (seven roles; two values of
+l = -log sin epsilon in Section 4.2), T, H, C and D, k/K, j/J, a/A/B. Beyond the
+reviewers' seeds it found Euler's gamma reused as an angle in the proof of Lemma 4.6,
+the companion's kappa = 8 a_0/(3 pi), zeta as a root of unity beside Riemann zeta,
+and k = n/m and mu = n/m as two names for one number. Companion-only renames keep
+`check_correspondence.py` passing. **Any paper-wide rename fails it, even when both
+texts are renamed identically**, because the script requires the paper to be
+byte-identical to frozen commit c6e195f. That needs an AC decision: re-baseline, or
+switch to the rename-aware check the editor implemented and self-tested
+(`notation_scan.py --baseline-rev ... --rename-map ...`). I recommend the
+rename-aware check.
+
 ## Audit-02 dispositions, checked in the code actually used
 
 PA1 fixed and confirmed by running controls on the released process guard (exit
