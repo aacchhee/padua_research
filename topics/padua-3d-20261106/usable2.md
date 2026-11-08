@@ -385,7 +385,7 @@ function RMS values improve on both assessment measures. At n12 the
 absolute-value function's Sobol RMS worsens by2.15%, while the other
 seven measure/function combinations improve. Pilot n2 has worse
 exponential RMS and some worse noise outcomes; n8 absolute-value RMS
-also worsens. The n12 Gauss noise max/RMS fall8.056e-6/1.444e-6 to
+also worsens; n4 rational Sobol RMS worsens 0.33%; n2 also worsens Gauss cosine RMS (+2.47%) and Sobol absolute-value RMS (+6.45%). The n12 Gauss noise max/RMS fall8.056e-6/1.444e-6 to
 6.203e-6/1.255e-6. All outcomes remain in the two receipts. A sampled
 norm gain does not promise improvement for every function/noise draw.
 

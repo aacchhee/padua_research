@@ -122,3 +122,7 @@ assertion that temporary paths will persist. No duplicate bulk catalogue
 is committed. The small essential455-node payload is committed in
 `evidence/u2-degree12-nodes.json`; its exact theorem needs no raw retrieval
 or optimization replay. [Usage](usable-recipes.md), [report](usable-report.md).
+
+## Continuation and pruning batches — 2026-11-07 (pointer added 2026-11-08)
+
+No cold-storage delivery. U1/U2/U3 continuation and pruning P1–P5 raw outputs remain local regenerate-only; their paths, bytes and SHA-256 are in the `raw`/`raw_inventory`/`raw_details` fields of `evidence/u1c-*.json`, `evidence/u2c-*.json`, `evidence/u3c-nonunique-quality.json` and `evidence/pdpr-*.json`, with commands in the stream protocols/results. Essential payloads `evidence/pdpr-pruned12-nodes.json` and `evidence/pdpr-pruned16-nodes.json` are committed; see [pruning-artifacts.md](pruning-artifacts.md).

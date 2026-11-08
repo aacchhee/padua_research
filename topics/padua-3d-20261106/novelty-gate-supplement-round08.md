@@ -18,7 +18,7 @@ The present worker read that completed gate before writing the comparisons
 below. Its own initial broad IDEAS/INDEX outputs truncated and are **not**
 represented as an independent full-registry reading. No new comparison here
 rests on such a claim. The inherited audit03 full read is historical evidence
-of its audit scope, not a substitute for the present shared gate.
+of its audit scope, not a substitute for the present shared gate. That gate's dated coverage qualification ([novelty-gate-T8-round08.md](novelty-gate-T8-round08.md); canonical in [attempts/T8-round08.md](attempts/T8-round08.md), "Gate coverage qualification") applies to this reliance.
 
 This worker additionally searched mechanisms and synonyms across
 `state/IDEAS.md`, `literature/INDEX.md`, this topic's theory/attempts/LOG,

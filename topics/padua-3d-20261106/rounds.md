@@ -20,6 +20,9 @@ exhaustion is inferred. Remaining8/7/16rounds persist under
 [the campaign](usable-campaign.md); current outcomes/resumes are in
 [the report](usable-report.md) and three stream records.
 
+Dated 2026-11-08 auditor pointer (no count change): the table above is the first-batch state. The AC seven-round continuation completed 2/4/1 additional rounds (cumulative U1=4/10, U2=7/10, U3=5/20); see [continuation results](continuation-results.md). The separate pruning campaign completed 5/15; see [pruning results](pruning-results.md) and [summary](pruning-summary.md).
+
+
 ## Active handoff06 restart
 
 Each counter below restarted at zero at AC's instruction. A round is counted

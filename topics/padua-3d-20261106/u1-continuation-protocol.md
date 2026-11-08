@@ -172,6 +172,8 @@ calibration or held-out measurements; no data-only automatic selector or
 unseen-target model-selection guarantee is proposed. Agreement of two
 query clouds tests numerical integration stability on the same functions.
 
+(This paragraph was first committed with the C2 outcome in 0a98cea; it changes no registered gate, threshold, comparator or seed.)
+
 
 ## Executed continuation outcome ledger — 2026-11-07
 

@@ -52,6 +52,9 @@ lower set on n+1Lobatto axes. Both are separately evaluated on both meshes.
 |7|empty unique-support class|exactly deficient|709.5762/709.5762|690.0461/690.0461|26.9351/27.5622|49.8126/49.8126|
 |8|older trace exclusion|empty class|1081.4630/1081.4630|489.4338/489.4338|43.8868/45.5358|79.8213/79.8213|
 
+The n8 inherited QR value depends on floating pivot ties on the symmetric grid; an alternative tie resolution gives 35.61/35.82 (see [audit-03/T10](../audit-03/T10.md)). Every U3 loss is larger against it; n3..7 QR values are tie-invariant (audit04 note, 2026-11-08).
+
+
 Every reported solve passed condition<1e12and node residual<=1e−7.
 The frozen receipts [S](../evidence/u3-s.json),[F](../evidence/u3-f.json),
 [M](../evidence/u3-m.json),[R](../evidence/u3-r.json) carry full precision,

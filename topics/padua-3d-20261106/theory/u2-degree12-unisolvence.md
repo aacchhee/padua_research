@@ -37,6 +37,8 @@ decoding, operating on those committed inputs. No floating rank tolerance,
 condition estimate, optimizer success or continuous norm sample is a
 hypothesis of this claim.
 
+The checker's verifications are Python assert statements; the trusted execution is CPython without -O/PYTHONOPTIMIZE. The committed receipt does not record sys.flags.optimize; the independent audit rerun used default flags (audit04 note, 2026-11-08).
+
 ## Status by part
 
 Overall status: **PROVED, computer-assisted finite statement**.

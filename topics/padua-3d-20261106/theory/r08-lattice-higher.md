@@ -43,7 +43,7 @@ q1..960, combined584906253HNFs,456323923post-prune tests,
 21354010admissible and zero small cases. The scientific per-q digest is
 909f9922a468ac00745d180344299e62d35e9b17e2b16ec881bd707eece5ae39.
 Thus each decisive determinant has two actual executions; the producer's
-three disjoint completed segments constitute its full independent coverage.
+three disjoint completed segments constitute its full coverage; independence comes from the separate complete replay.
 
 Independent worker check_lattice08 separately executed the frozen core
 from q1 through960 without a subprocess timeout:584906253 total HNFs,
@@ -60,7 +60,7 @@ computer-assisted exclusion. No packing theorem is needed.
 The high cost is measured, under concurrent sessions. Fresh tails reset
 the incumbent minimum-fold pruning state, so their elapsed time cannot
 be estimated just by the fraction of determinants remaining. The n6
-global-minimum continuation similarly capped after673..703 of720 with
+global-minimum continuation q673..720 similarly capped after completing q673..703, with
 no fold<=90; it does not prove global minimum91. Its complete det<=672
 search does prove absence of <=84-node rules. No dense matrix memory
 estimate is substituted for these actual unrestricted enumeration costs.

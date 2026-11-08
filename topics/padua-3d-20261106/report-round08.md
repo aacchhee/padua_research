@@ -47,7 +47,7 @@ The largest observed degree with a positive rule on at mostN nodes is5;
 the largest observed Padua-type degree is2. Arbitrary phases, omitted
 zero masses, signed rules and general node sets are outside these exclusions.
 
-At n2, the old generators(1,3,7),(1,4,6),(1,5,8) at order19 have exactly
+At n2 (Padua-type property first reported in [Claude audit-03](audit-03.md) item 7), the old generators(1,3,7),(1,4,6),(1,5,8) at order19 have exactly
 10 nodes, exact rank10 and positive degree3 cubature with weights1/19 at
 the identity and2/19 at the other9 nodes. Their Lambda41 lower sample is
 8.13406903712. Exactly24 of T7's32 full-rank order19 groups are admissible

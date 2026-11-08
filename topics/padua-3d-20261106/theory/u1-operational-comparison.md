@@ -111,8 +111,8 @@ The OLS covariance identity residual was at most1.27e−16.
 |16|1377 /969|972.594|6001.249|34082.950|6.170|
 
 Equal-order Haar budget risks are36.1515,167.1947,458.2116,973.2206.
-They use54,250,686,1458 nodes respectively. Thus their per-observation
-variance is smaller, but after equal-budget normalization they are
+They use54,250,686,1458 nodes respectively. Thus their raw unit-noise trace tr(CC^T), with one
+observation per node, is smaller, but after equal-budget normalization they are
 slightly worse than anisotropic Haar on this finite scope. That distinction
 is preserved rather than credited entirely to taking more samples.
 

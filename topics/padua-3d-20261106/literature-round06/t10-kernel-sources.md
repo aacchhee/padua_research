@@ -15,3 +15,5 @@ Reader:Codex, Sol xhigh assigned, runtime metadata unexposed. `literature/INDEX.
 *Polyhedral summability of multiple Fourier series (and explicit formulas for Dirichlet kernels on T^n and on compact Lie groups)*, Colloq.Math.65(1)(1993),103ff; [primary archive PDF](https://eudml.org/serve/210195/accessibleLayeredPdf/0). Coverage: opening title/abstract only from successful retrieval; subsequent find failed403. Search snippet reports Theorem1 log^d bounds, but that statement remains UNVERIFIED here and is not used. This is a priority lead showing that sharp polyhedral bounds are classical; Kolomoitsev–Lomako's actual inspected theorem supplies the needed source statement.
 
 History:2026-11-06 bounded retrieval addendum after the log-four proof attempt. No claim all source proofs were checked.
+
+Audit04 note 2026-11-08: the inspected artifact is arXiv 1801.00608v1; no journal version was inspected, so "published theorem statement" above refers to the posted v1 statement.

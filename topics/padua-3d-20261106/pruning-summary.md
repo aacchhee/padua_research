@@ -48,6 +48,8 @@ repeat budget. These are research assumptions, not facts about AC's data.
 Repetition leaves each stated coefficient map fixed. Historical controls'
 construction costs and current loading costs remain separate.
 
+With one observation per site the documented unit-noise traces are 1.0595 (546), 1.3304 (restricted QR 546) and 0.6961 (full 637) at degree12, and 1.0864, 1.3584 and 0.6888 at degree16; the fixed-B values above repeat 91/214 sites twice. (Audit04 note, 2026-11-08.)
+
 ## What the five rounds established
 
 1. P1backward variance/determinant deletion: the strict full-grid-preservation

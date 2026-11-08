@@ -161,7 +161,7 @@ retained cases is unisolvent. Independently, the HNF
 `(4,0,5,5,5,10)` has determinant200,45 folded nodes, exact rational rank35,
 and actual-node rank35 over `F401`, with a root of exact order200. All120
 numerical degree7 monomial moments have error at most2.23e-16. By `q/8`,
-this establishes unisolvent minimum45 in the unshifted Haar lattice class;
+this establishes full-rank minimum 45 in the unshifted Haar lattice class;
 the exclusion uses a fresh producer execution and a separate exact rank
 implementation. See `r08-lattice-check-minrank-n4.json`.
 
@@ -170,7 +170,7 @@ The alternate implementation also completed n3 at every determinant1..184:
 fold16. Every case with at most23 nodes was ranked exactly, giving
 `(fold,rank,count)=(16,15,1),(20,17,20),(20,18,3),(22,18,68)`; none has
 rank20. The already checked24-node/rank20 witness therefore attains the
-global unisolvent minimum24 in the class, with no packing-bound dependency.
+global full-rank minimum 24 in the class, with no packing-bound dependency.
 The full computation took416.827seconds and wrote38502438 raw bytes outside
 Git. See `r08-lattice-check-minrank-n3.json`.
 
@@ -229,7 +229,7 @@ cases. Independent exact monomial ranks are
 `(5,0,6,6,6,12)` attains determinant360,75 nodes and exact rational rank56;
 its actual-node certificate over `F1801` also has rank56 with a root of
 exact order360. All220 numerical degree9 moments have error at
-most4.45e-16. The same `q/8` reduction therefore gives unisolvent minimum75
+most4.45e-16. The same `q/8` reduction therefore gives full-rank minimum 75
 in the class, without a packing-bound dependency. The fresh enumeration
 took244.794seconds. See `r08-lattice-check-minrank-n5.json`.
 

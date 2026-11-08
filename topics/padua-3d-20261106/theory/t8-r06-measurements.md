@@ -5,6 +5,8 @@ U2/U3/U4 quality screen; nearby-order half-grid diagnosis. Split from: none.
 Split into: analytic parity, fold and union-obstruction results have their
 own files and IDs; this record contains their separate measurements only.
 
+Dated 2026-11-06 split (auditor pointer added 2026-11-08, see [audit-04-fixes.md](../audit-04-fixes.md)): the Phi1 nine-witness existence statement is split into PD-T?padua-3d-20261106-codex-T8-r08-02 ([t8-r08-old-finite-existence.md](t8-r08-old-finite-existence.md)), proposed computer-assisted PROVED; every quality row here stays MEASURED.
+
 ## Statement, definitions and assumptions
 
 The preregistered finite runs below produce the stated rational node sets

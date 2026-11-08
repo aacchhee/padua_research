@@ -80,7 +80,10 @@ in the payload above. Actual checker/evidence identities inspected here:
 | [Producer/checker](../code/pdpr_certify.py) |15414|`0b4a815fba363b437d3ce19d6d8ceaeac21ecac544e8c53c00561311bb748e13`|
 | [Producer receipt](../evidence/pdpr-pruned12-check.json) |3939|`a194732c5517e16f5a4cbbab57f82ef5e43c74c98065eeae778a3b74890fca6f`|
 | [Independent checker](../pruning-review/check_certificate.py) |11170|`06f944677ab09c974b0efa8100e4400204f068b158dd81aecbff43c386b33c16`|
-| [Independent receipt](../pruning-review/certificate12.json) |9081|`14ab1f794391d7eec81b64cf7c2c18e75d68c715029e11bfd8a59702953cc32d`|
+|[Independent receipt](../pruning-review/certificate12.json) |9081|`14ab1f794391d7eec81b64cf7c2c18e75d68c715029e11bfd8a59702953cc32d`|
+
+Producer row = historical degree-12 creator revision at e761a12bcc7acfbf47dc6db77592854211931df5; the current shared checker is 16024 bytes, SHA256 `ab3b092cbf29d97ec456f6891cfc109d0f8dbe7652516ea961b301318f230241` ([compatibility](../pruning-artifacts.md#degree16-essential-artifact-and-backward-compatibility)). Audit04 note, 2026-11-08.
+
 
 The producer's portable `verify` mode also validates the payload's pinned
 [P3 receipt](../evidence/pdpr-frontier12.json), 9223 bytes, SHA256

@@ -73,7 +73,7 @@ Dated correction 2026-11-06 (response03): the old blanket q^3>N
 claim had the exceptional q=2 case wrong. The non-unisolvence argument
 above supplies the correct scope; phase-blind short-dual inference is
 still refuted exactly as before. The tabulation wording also applies
-audit03 companion T9-F7. This is disclosed for focused material re-audit.
+audit03 companion T9-F7. This is disclosed for focused material re-audit. The replaced sentence (9042e1c, line 11) read: "This counterexample concerns that criterion; q^3 exceeds the minimal total-degree cardinality and does not refute the unshifted packing theorem's cardinality conclusion for the larger translated class." Its final clause was removed with it; the packing theorem's own scope is in [t9-r06-packing-source.md](t9-r06-packing-source.md).
 
 ## Canonical claim homes and template fields — 2026-11-06 response03
 

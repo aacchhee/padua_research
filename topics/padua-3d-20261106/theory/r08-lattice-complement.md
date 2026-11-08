@@ -1,4 +1,4 @@
-# PD-T?padua-3d-20261106-codex-R08-complement — exact folded and unisolvent minima
+# PD-T?padua-3d-20261106-codex-R08-complement — exact folded and full-rank minima
 
 ID kind: PD-T. Aliases: reopened T10.1 objectives(ii)/(iii); T9 finite
 complement through6. Split from/into: none. No novelty claim.
@@ -12,9 +12,9 @@ For finite H<=T³, put X=cos(2πH), L=H^perp<=Z³ and N=binom(n+3,3).
 Restrict to zero phase and strictly positive cubature weights on every
 node of X, exact for product Chebyshev probability measure through
 degree2n−1. Then the following **global** minima hold within this class.
-The full-rank objective requires Pi_n-unisolvence; the other does not.
+The full-rank objective requires exact Pi_n evaluation rank N (Pi_n-determining; unisolvent exactly when |X|=N); the other does not.
 
-| n | N | minimum folded | minimum unisolvent folded | exact-N Padua-type? |
+| n | N | minimum folded | minimum full-rank folded | exact-N Padua-type? |
 |---|---:|---:|---:|---|
 |1|4|2|4|yes|
 |2|10|7|10|yes,24 admissible order19 HNFs|
@@ -23,7 +23,7 @@ The full-rank objective requires Pi_n-unisolvence; the other does not.
 |5|56|54|75|no|
 
 At n6, no positive degree11 rule in this unshifted full-support lattice
-class has at mostN=84 nodes. Its global folded and unisolvent minima
+class has at mostN=84 nodes. Its global folded and full-rank minima
 are not assigned values here. The minimum in the complete det<=672
 window is91, an upper bound on the global folded minimum; the additional
 partial search does not turn that91 into a global minimum.
@@ -90,7 +90,7 @@ X_z={(cos(2πjz1/19),cos(2πjz2/19),cos(2πjz3/19)):0<=j<19}.
 Each has10 distinct nodes, exact rank10, shortest dual norm4 and hence
 positive degree3 cubature. The identity node has weight1/19 and the
 other9 nodes weight2/19. These are the first three n2 survivors already
-listed in [T2](t2-finite-survivors.md), not new sets. Their exact symmetry
+listed in [T2](t2-finite-survivors.md), not new sets; their Padua-type cubature property was first reported in [Claude audit-03](../audit-03.md) item 7. Their exact symmetry
 class has the same true Lebesgue constant; the independently reproduced
 41³-mesh lower sample is8.13406903712 (MEASURED diagnostic only).
 

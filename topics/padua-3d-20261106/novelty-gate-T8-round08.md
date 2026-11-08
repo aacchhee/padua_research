@@ -136,7 +136,7 @@ The registration-time pending fields above remain history; actual outcomes:
   finalists. The finite sampled competitiveness subclaim is
   **REJECTED: failed** at n5/7 under the promised QR criterion:
   PD-N?padua-3d-20261106-codex-T8-r08-02, MEASURED. The literal two-Leja-loss
-  D2 trigger is **not met**, since n7 is the sole eligible degree>=6.
+  D2 trigger **cannot be assessed** (not fired), since n7 is the sole eligible degree>=6.
   Broader odd-degree quality remains OPEN/deferred; resume only with a
   separated structural/inverse rule and fresh preregistered degrees.
 - The cubic exact tie/lex correction is a disclosed post-run repair, not a

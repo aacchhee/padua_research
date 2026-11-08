@@ -112,7 +112,7 @@ matter and do not certify the global maximum.
 RMS function outcomes are mixed and preserved. n10 improves all four
 functions on both measures; n12 has one worse combination (absolute-value
 Sobol RMS+2.15%). Pilot n2 worsens exponential RMS and some noise outcomes;
-n8 worsens absolute-value RMS. At n12 frozen Gauss max/RMS noise change
+n8 worsens absolute-value RMS; n4 rational Sobol RMS worsens 0.33%; n2 also worsens Gauss cosine RMS (+2.47%) and Sobol absolute-value RMS (+6.45%). At n12 frozen Gauss max/RMS noise change
 8.056e-6/1.444e-6→6.203e-6/1.255e-6. No universal error improvement
 is inferred from the sampled norm objective.
 

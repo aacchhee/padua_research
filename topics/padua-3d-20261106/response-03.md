@@ -38,6 +38,8 @@ The preregistered Minkowski-original request was not made; retrieval via
 AC's papers folder remains pending. This is not needed for the explicitly
 imported Betke–Henk consequence, and is not treated as completed source work.
 
+Audit04 note (2026-11-08): AC's decision is between uniform conventions. This proposal labels all three PROVED with explicit LITERATURE dependency. Audit03's stated alternative is "CONDITIONAL fits where a hypothesis or lemma chain was not checked" ([audit-03.md](audit-03.md) E4), and [audit-03/T10.md](audit-03/T10.md) item 4 judged T10's CONDITIONAL label proper; under that reading T10-07 (KL §3 unread) and T9-r06-05 (Chkifa [7, Lemma 7] unread) would be CONDITIONAL. The Chkifa source is an author preprint with refereeing unverified ([t9-chkifa2015.md](literature-round06/t9-chkifa2015.md)), so "cited published theorem" above is not verified for that row. The theory-file labels are this proposal pending AC.
+
 ## E1–E3, E5–E6 and returned items
 
 | Finding | Disposition and concrete evidence |

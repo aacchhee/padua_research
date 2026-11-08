@@ -23,7 +23,7 @@ invented before protocols are written.
 
 The known starting evidence is in report-round08: roughly1.5Nparity
 projections have strong proved bounds, direct QR/localdet has measured
-finite results, the half-shift cubic example has sampledLambda9.79,
+finite results, the half-shift cubic example (lead from [Claude audit-03](audit-03.md), handoff08 item 7) has sampled Lambda 9.79,
 and the frozen higher-degree half-shift selector loses to controls.
 Unshifted positive lattice exclusions do not cover arbitrary phases or
 mixtures. The former killed extraction/phase selectors are not revived

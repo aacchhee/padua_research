@@ -107,7 +107,7 @@ PROVED finite classifications with actual independently written reruns.
 Two mixed folded/unfolded constructions each give N-node unisolvent
 sets at every degree3..8, with exact count/disjointness proofs and fresh
 prime certificates. Their determinant-selected sets perform poorly:
-by degree8samples are1081.46and489.43versusQR45.54. Both hit their
+by degree8samples are1081.46and489.43versusQR45.54 (the n8 QR value depends on floating pivot ties; an alternative tie resolution gives 35.61/35.82, see [audit-03/T10](audit-03/T10.md)). Both hit their
 registered n6/7Leja-loss gate; n8is explicitly post-kill validation.
 All four named selectors fail finite promising-status conditions. This
 is MEASURED, not a universal obstruction or a stability-growth theorem.

@@ -53,3 +53,5 @@ The proof uses only the explicitly defined parity grids, positive Haar weights a
 Closest literature: Cools–Poppe, Poppe–Cools and De Marchi–Vianello–Xu. The gate claims no new mechanism or priority. The extra logarithm comes precisely from the elementary Cauchy bound for a simplex kernel. Removing it requires a sharper continuous polyhedral Dirichlet L1 estimate, not a stronger sampling theorem. Independent mathematical audit remains required.
 
 History:2026-11-06 Codex Sol xhigh assigned; self-contained supporting result developed while attempting the unresolved log³ target. Metadata later clarified that this is a supporting dependency, not a conjunctive claim split.
+
+Audit04 note 2026-11-08: "log³ remains OPEN in a separate target" describes the round06 state; the current proposed label is in [t10-log3-target.md](t10-log3-target.md), pending AC's E4 decision ([../response-03.md](../response-03.md)).

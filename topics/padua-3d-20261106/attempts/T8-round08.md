@@ -74,7 +74,7 @@ and may be sensitive to near ties; no exact global argmax is asserted there.
 |H,all-degree first-unit half-shift|Exactly N nodes; half-period node trace Nmod2; every evenn>=2 singular|PROVED scoped PD-N?padua-3d-20261106-codex-T8-r08-01; all-degree construction REJECTED:refuted; otherphase/generator classes OPEN|
 |H,cubic finite class|741pairs,exactly8unisolvent; all8determinants tie|Computer-assisted PROVED finite PD-T?padua-3d-20261106-codex-T8-r08-01,independent full exact census|
 |Hdet,permitted n3/5/7|Exact full-rank selected sets; corrected samples9.7888/70.3729/136.6904|MEASURED quality; QR losses atn5/7 exclude promising status; finite competitiveness subclaim REJECTED:failed,PD-N?padua-3d-20261106-codex-T8-r08-02|
-|Literal two-Leja-loss D2|Onlyn7iseligible>=6 and loses|Trigger not met; no unrecordedn9run or growthfit|
+|Literal two-Leja-loss D2|Onlyn7iseligible>=6 and loses|Trigger cannot be assessed (not fired); no unrecordedn9run or growthfit|
 |Old finite9-witness existence split|All9original inputs replayed at2distinct fresh primes; exact ranks4through455|Separate finite PROVED proposal PD-T?padua-3d-20261106-codex-T8-r08-02; material re-audit required; old quality stays MEASURED|
 
 Full result IDs and proofs are in the linked theory files. Short labels in
@@ -83,7 +83,7 @@ polylog construction remains OPEN, not PARTIAL from supporting lemmas.
 
 ## Evidence, independence and stop
 
-- [Original half-shift receipt](../evidence/t8-r08-halfshift.json),13,097bytes,
+- [Original half-shift receipt](../evidence/t8-r08-halfshift.json),13,097bytes, SHA256 87561592b48fcdcf062568b2e5a0a5586108e33d66c6f1518d24744f2d6c755b,
   sourcehash5435a6128dfdd44d0ebeed3f3a02bcb68856352b1b9aa2386a98ba098061058c.
   Raw/tmp/padua-t8-r08-htm8g3hq/halfshift-tuples.jsonl,3,806,379bytes,
   SHA25670a2571e6e4871bbd3231be298a2942c38b4d20057d46d37256203b28be275e8.

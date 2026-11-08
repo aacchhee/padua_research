@@ -14,8 +14,8 @@ complete first-unit b<c scans at n3/5/7 yield the exact-positive selected
 sets and21^3 tensor-Lobatto sampled Lebesgue values below. At n5 andn7,
 the selected set's sampled value exceeds both the same-degree QR and
 discrete-Leja sampled controls. Thus Hdet fails the finite promising-status
-criterion at n5. The two-consecutive-Leja-loss D2 trigger is **not met**:
-only one eligible tested admissible degree>=6,n7, occurs within3..8.
+criterion at n5. The two-consecutive-Leja-loss D2 trigger **cannot be assessed** (it has not fired):
+only one eligible tested admissible degree>=6, n7, occurs within 3..8.
 
 A sampled Lebesgue value means max of the cardinal absolute sum over the
 fixed mesh, a lower bound on the true continuum maximum. No comparison
@@ -41,7 +41,7 @@ as Leja losses.
 
 ## Results
 
-| n | N | pairs accounted | selected z | sampled Lambda21 | Leja | QR | scan seconds(original/corrected) |
+| n | N | pairs accounted | selected z | sampled Lambda21 | Leja | QR | degree seconds(original/corrected) |
 |---|---:|---:|---|---:|---:|---:|---:|
 |3|20|741|(1,4,11)|9.788798269|13.174719820|8.320670615|.6001/1.4599|
 |4|35|all,analytic|none|undefined|not run|not run|0|
@@ -61,7 +61,7 @@ each degree certifies. No global or exact determinant maximizer is claimed
 at n5/7, where score ordering remains binary64-sensitive.
 
 Selected n3/5/7 condition2 values are7.64259/31.7692/54.5710; largest
-cardinal-node residual is1.16e-13, well below the1e12 condition guard.
+cardinal-node residual is 1.16e-13; all three conditions are far below the 1e12 guard.
 Every selected set has exactly N nodes and two nonzero actual-node modular
 determinants, independently replayed with distinct primes and monomial basis.
 This proves finite unisolvence by the inherited exact reduction but does

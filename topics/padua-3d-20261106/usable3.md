@@ -25,7 +25,7 @@ read. The shared gate supplies whole-registry table coverage separately.
 
 ## Existing-input replication plan only
 
-The disclosed cubic lead is the existing M40, z=(1,4,11), coherent half-shift
+The disclosed cubic lead (from [Claude audit-03](audit-03.md), handoff08 item 7) is the existing M40, z=(1,4,11), coherent half-shift
 20-node set. Its eight classified generators and exact integer DCT formula
 are inputs, not prospective discoveries. Reconstruct the coefficient matrix
 and compare direct actual-node evaluation before interpreting its sparse

@@ -59,7 +59,7 @@ The determinant, folded-count and unisolvent-fold objectives are distinct.
    q<=8(t−1). An attained folded size m and absence of smaller sizes
    through8(m−1) prove the global folded minimum. An attained full-rank
    folded size t and deficient exact ranks for every smaller fold through
-   8(t−1) prove the global unisolvent minimum. No determinant minimizer is
+   8(t−1) prove the global full-rank (rank-N) minimum. No determinant minimizer is
    automatically a folded or full-rank minimizer.
 6. Admissibility makes Haar cubature exact on Pi_(2n−1): every nonconstant
    Chebyshev term expands into nonzero frequencies of l1<=2n−1, whose

@@ -57,6 +57,8 @@ when its lower setup cost outweighs a finite iid-noise gain. Practical
 replacement is decided only by the prospective comparison, not by this
 variance theorem alone. Independent mathematical checking remains separate.
 
+2026-11-08 audit04 wording note: "fixed total replication budget" above means balanced replication, B/M observations at every node with B divisible by M, as defined in [U1 noise](u1-noise-bound.md). Separately optimized unequal integer repeats at a fixed B are a different normalization; see [U1 continuation](../u1-continuation.md).
+
 ## History
 
 2026-11-07, Codex developer, assigned Sol xhigh; prospectively registered
