@@ -287,3 +287,11 @@ evidence-retention, permanent-release and final-human-review boundaries
 remain those of the accepted article and its review records. No result
 status, numerical evidence or publication-readiness claim is enlarged
 by this companion review.
+
+## Dated pointer — 2026-11-08 (Claude audit-04 MINOR fix C4A-10)
+
+The status line above describes the companion at source freeze
+`ac945041ce73b74c2c4ec29c42ebeb8773e7a9b8` (the 162-page build). The revised
+147-page companion at freeze `24a98db4c3c4c4d0eede2e3929532956df87911b` is
+reviewed in [manuscript-onset512-solmax-review.md](../manuscript-onset512-solmax-review.md)
+and in the Claude audit [audit-04-manuscripts](../audit-04-manuscripts.md).

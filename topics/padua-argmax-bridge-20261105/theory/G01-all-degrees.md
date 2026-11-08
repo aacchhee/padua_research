@@ -226,3 +226,17 @@ bounds, without asserting that every historical native endpoint is valid.
 The exact trusted semantics and retained data are stated in J03. External
 deposit and the focused substantive Claude audit remain separate from this
 completed local verification.
+
+## Dated clarification — 2026-11-08 (Claude audit-04 MINOR fixes J2-04, J3-09)
+
+1. The sentence above that PD-T271 "remains a named computer-assisted
+   dependency of the analytic constants/branches" describes the original
+   n>=320 route. For the onset-512 route the elementary rational enclosure of
+   [J02](J02-elementary-constant-enclosure.md) replaces it; no PD-T271 or Arb
+   enclosure is consumed (audit-04, J02 review). The earlier text is kept as the
+   historical record of the 320 route.
+2. "The exact trusted semantics ... are stated in J03" and the IEEE model
+   recorded there: the IEEE binary64 model (round to nearest with gradual
+   underflow) is an **assumed** trusted semantics, not a proved one. J03 proves
+   enclosure under that assumption.
+See [audit-04](../audit-04.md).

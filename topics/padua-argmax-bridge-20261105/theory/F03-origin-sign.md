@@ -240,3 +240,12 @@ of either target; neither target becomes PARTIAL. H uses only the split
 identities, not the OPEN sign or proposed one-index evaluator. The H theorem
 can imply eventual positivity without an explicit onset; it supplies no
 proved n>=160 sign bound or adopted useful allowance here.
+
+## Dated header clarification — 2026-11-08 (Claude audit-04 MINOR fix J2-05)
+
+The header line "Split into: none" above predates the split of this record's
+exact identities into the PROVED support record
+[F03-identities-support](F03-identities-support.md) (audit-03 finding F-01).
+The sign target stated here remains OPEN and is not a premise of any other
+result; the identities are cited from the support record. No statement above
+changed.

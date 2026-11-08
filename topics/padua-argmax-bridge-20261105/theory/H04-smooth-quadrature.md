@@ -351,3 +351,13 @@ The original prose and reviewed source pins remain available at input commit
 The [distinct review](../independent-checks-onset512-response.md#f03-source-split-and-h04-majorants--accepted-focused-response)
 accepts the split and dependency map; H04's two valid majorants are also
 independently reconstructed there.
+
+## Dated note — 2026-11-08 (Claude audit-04 MINOR fix J2-06)
+
+The audit-03 addendum above said the |W''| majorant coefficients are "swapped"
+(finding H-C03). The later source correction and its distinct review show that
+both coefficient orderings are valid termwise bounds and the revised ordering is
+only weaker (about 3.71 against 3.49 when the zeta series are summed exactly);
+the crude constants 128/27 and 1088/243 are both below 5, so 36, 50 and 17/n^2
+are unchanged. The H-C03 characterization as a defect is therefore withdrawn;
+response-03's DISPUTED disposition was correct. See [audit-04](../audit-04.md).
