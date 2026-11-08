@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: formal combined Claude audit04 of pruning and preserved material · Successor: [handoffs/17-pruning-audit.md](handoffs/17-pruning-audit.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/18-final-narrowed.md](handoffs/18-final-narrowed.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -936,3 +936,4 @@ their corresponding runs, with publication and execution timing distinguished.
 - Literature to record (gate G6/C8): Li–Sun–Xu Cor. 4.12 (log³ on ≈1.5N in Π*_n); Li–Xu 2010;
   Gunzburger–Teckentrup benchmark; Wang–Wang–Wang; Lev–Matolcsi; Golomb–Welch and Lee-tiling results;
   Krieg–Pozharska–Ullrich–Ullrich; Dolbeault–Chkifa; Białas-Cież et al.
+- [Handoff 17](handoffs/17-pruning-audit.md) done in `286e310` (audit report `1cb3841`, auditor fixes `bbf4b42`, frontier assessment `286e310`); [handoff 18](handoffs/18-final-narrowed.md) opened: audit-04 response plus the final narrowed deep-structure set, then freeze. Earlier handoff links: [15](handoffs/15-combined-audit.md), [16](handoffs/16-pruning-campaign.md).

@@ -1,6 +1,6 @@
 # Handoff17 — formal combined audit04 including pruning and exact delivered sets
 
-- Status: open
+- Status: done in 286e310400398a1ab7604c209ced1a7e7c7f0b71
 - Previous: [16-pruning-campaign.md](16-pruning-campaign.md).
 - Next agent/model/effort: Claude, Opus5.5 xhigh formal mathematical/adversarial auditor when capacity returns.
 - Branch: codex/padua-3d-20261106.
