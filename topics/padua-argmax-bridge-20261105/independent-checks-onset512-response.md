@@ -144,7 +144,7 @@ heading depth and H06 filename; it made no scientific calculation or source
 change. After inspecting the actual headings/path, the corrected comparison
 above passed. No developer failure is inferred from that reviewer mistake.
 
-### Campaign and I25 — review still in progress
+### I25 — initial pilot gate and arithmetic review
 
 The I25 **pilot gate is accepted**, before any consequential pilot launch, for
 core `add4f1cb1246e71fd38f67b802a4e61dfb8ebe9244dda49326290b779030d485`,
@@ -194,9 +194,9 @@ above 1 at pi/2; intersecting that reference with the known [0,1] range fixed
 the test. The initial failure and script are retained; checker bytes never
 changed. This was a reviewer-test defect, not a hidden certificate retry.
 
-The full run still needs a separate preregistration and exact 942-input
+At this initial gate the full run still needed a separate preregistration and exact 942-input
 inventory; the pilot runner's initial additional-directory interface alone
-does not enforce that scope. Pilot outcome and full-run acceptance remain
+does not enforce that scope. Pilot outcome and full-run acceptance were
 pending. Legacy PD-T271 strings inside frozen certificate metadata are schema
 identities; J02 can replace their analytic numerical premise without editing
 the historical certificate bytes. This distinction must remain explicit.
@@ -206,4 +206,193 @@ The campaign's cheap process controls were independently executed with
 observed exit 7 stayed 7, an already reaped child was refused, inherited
 ignored SIGCHLD was refused, and cleanup left no descendants. The control
 record hash is `ccb80d7fb80f679801bb8ba864ce768ea519bc41c822073393d031856cc4efde`.
-The real campaign and compact ZIP remain pending at this boundary.
+The real campaign and compact ZIP were pending at that boundary.
+
+### I25 — preserved v1 failure, prospective v2 correction and accepted pilot
+
+The first pilot stopped at n=41 before any numeric S evaluation: the checker
+required 66 keys while the certificate retained 64. Its missing seam points
+were (3/4,1/4) and (1,0); the exact antipodal partners were present. My
+independent data-only diagnosis confirmed this. The observed exit was 1,
+about 0.684 CPU seconds. The failed output and observation remain at
+`local-output/argmax-bridge-20261105/i25-pilot-v1-20261108T105100Z*`;
+the observation hash is
+`ee84df55ca1b599c493c7b4dbaefe3060c45848b7ed3ce78d0dda80037fee2da`.
+The earlier gate acceptance did not predict that compatibility failure.
+
+Prospective amendment 02,
+`2d736f83ed3f9abe17307b5c0b1720e96e7bf188d5ccb3457bada1ab5d8b8dda`,
+canonically reflects the closed seam when a>b, consistently in the required
+keys, GRID and lookups. This uses the paper's exact antipodal identity.
+All required keys must occur; any extra retained key must lie in the triangle
+and is independently evaluated. No region, guard or arithmetic bound is
+weakened. Frozen v2 core is
+`f2d3a1e91c13f4015819a661c5cec81852e63b5e307803613353191bd84f6fa3`,
+controls `c1810bd1dc6ddcbb3501c0589f099c89fa50fd6bd2e79b77f06030d8cc114bd1`,
+and the pilot runner remains `0ad0021a40253a78935663af7aff6f548b986919acc0f50e45767097d800c019`.
+Core length is 255 lines; all three Python files total exactly 400 lines.
+Own 15 exact seam controls passed, including both directions, idempotence,
+the midpoint and lexicographic representative. I accepted this focused gate
+before v2 launch. Its 3400 CPU-second limit preserves the original total
+3600 allowance including the failed attempt and smoke work.
+
+V2 then passed all eight registered certificates, all 31 arithmetic controls
+and all 27 certificate corruptions. I independently checked the exact eight
+input byte identities against the historical tar, all recorded output hashes,
+the n/pass population, positive rational margins and observed exit 0.
+Inclusive CPU was 21.010049836 seconds, wall 21.031955808, peak RSS
+144084 KiB. Observation hash:
+`2de69f5d4b9e53541618630ea5c9b16222737c1eaffcf5f11ac8466ca24a961f`.
+Own record check is `/tmp/onset512-independent-review/pilot-v2-record-check.json`,
+hash `76a96ca9949d04abed9814f79440dfcf2debf47290c8067bb8205ac5c9a33e5e`.
+This is inspection of the developer's actual pilot records, not a second
+independent certificate run. My own execution remains the synthetic checks.
+
+The pilot is accepted as substituted-bound recertification of the complete
+closed trees. Native S upper endpoints contained by the new intervals number
+63/64 at 41 and 44/45 at each other pilot degree; every native endpoint is
+therefore expressly **not** validated. The original lower endpoint was
+contained in each pilot. The full 942-certificate outcome remains separate.
+
+### Local native campaign and compact return — accepted at recorded scope
+
+The completed population is exactly n=320..510, each with a primary and
+fresh verification pass: 191 pairs, 382 successful passes, no failed or
+unstarted case. All observed exits are 0; stage and attempt ECHILD/cleanup
+records are quiescent. The preregistration hash is
+`532e5af6af478d48546b4134635c296cd0aac5207de4df2955dda8b0fb7781a3`;
+runner `459d0728a0cb264d241bc76d270209842fc2aa55c0fadd32e23f8e3b0523af9e`
+and engine FREEZE `0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb`
+are unchanged. Own `campaign_accounting.py` checked all degree/pass records,
+registered pins, helper snapshots against the input Git bytes, summary rows
+against observed wrapper records, raw/receipt links, strict margins and the
+complete primary/fresh equality fields. The verified certificate's original
+input bytes equal the primary certificate. No native process was rerun.
+
+Inclusive wrapper CPU sums to 2825.091458 seconds; pass child CPU sums to
+2700.875169 seconds. The largest pass used 9.003991 seconds and maximum
+wrapper RSS was 112688 KiB. Every pass has completed accounting, no first
+failure, hard aggregate cap 120, and the final self-plus-waited-child limit
+at most 119. All trees have 51 nodes. The smallest stored strict margin is
+`232344484034217493/58629478430225203200`.
+Own accounting receipt hash is
+`5b4053140771cff7d4c54f8590cdfa231236e4712c0e0237ba4ea9c5caf969bb`.
+The helper snapshot remains supplemental observation, as disclosed above;
+the verified unchanged input bytes and root's no-edit epoch statement do not
+turn it into a retrospective preregistration.
+
+The canonical ZIP is
+`local-output/argmax-bridge-20261105/onset512-return-20261108.zip`,
+81602992 bytes, SHA-256
+`da63280a7e4aec86fa52e3f8384620fbf07939006ab5f6f70222fa2485816e7e`.
+Exporter/verifier source hash is
+`d1dba2340e06f8750628ef129ce52f604b09e704a085f4f63c9d190c46c129d3`.
+Its 11713 members contain all 382 essential proofs and every small history.
+The once-persisted post-completion seed
+`cb52b5324c8fa5bca69665affe22016950ca48661a429a3fa4b6e4a77bfadcdb`
+reproduces sample [475,458]; both carry complete native dependency closures.
+This is a transport/review sample, not statistical evidence. Other full
+histories remain in the local campaign directory. Trusted source/runtime
+files are authenticated separately, never by executable archive contents.
+
+My actual command `python3 -B topics/padua-argmax-bridge-20261105/code/local_onset512_campaign/return_bundle.py verify local-output/argmax-bridge-20261105/onset512-return-20261108.zip`
+observed exit 0 and empty stderr, with 191 pairs/382 proofs and both closures
+accepted. Output is `/tmp/onset512-independent-review/compact-verify.stdout`.
+The developer separately reports a successful relocated trusted-root run;
+I did not repeat that portability run. My own independent inventory/hash
+check confirmed the exact population, payload hashes and sample membership.
+Twelve mutated in-memory byte payloads through the same data-only verifier
+were all rejected: checksum, duplicate/absolute/parent names, an omitted
+certificate, wrong degree, incomplete tree, nonzero exit, altered budget,
+helper pin, summary row and missing sampled native closure. These controls
+use a synthetic ZIP-reader adapter; the positive archive check above uses
+the actual ZIP parser. No archive code was executed. Receipt:
+`/tmp/onset512-independent-review/archive-controls.json`, hash
+`4e93f44d3c0b2bf0430c70f137758a859d3b32969cb92d16bc3bbd07db847a7b`.
+
+The additional certificate-only ZIP, 945235 bytes, hash
+`c22d600cb67462918587b01f2ef5adcbf9030b825fb0f2cc79c1b9c27c7da8c8`,
+contains 382 certificates independently checked byte-equal to the canonical
+return. It is a convenience derivative, not a replacement for the evidence
+closure. Two first versions of my record-reading checks failed on assumed
+filename/null encodings; corrected readers use the actual `n320-produce.json`
+name and the string `None` for an analytic corner. Those reader
+failures are retained in scratch and caused no scientific retry or source edit.
+
+This review accepts the new finite campaign and return under the unchanged
+native evaluator trust boundary. The separate I25 full run can replace that
+numerical dependency for its accepted inputs; it does not erase the historical
+native process record or the required later substantive audit.
+
+### I25 — full 942-input gate accepted before launch
+
+Preregistration `9e4da4615cc40c7e23f8061a560e2f3fd8e696d13c64db3f0249ebb489e9cb4a`
+and prospective amendment `228fd0230efd1e76661d02c03d886b5dbf80d41df844b3e2ffd7346a90c73f18`
+were reviewed before launch. Frozen core:
+`1501ce9435a17e9cc4b0954f3ce90f47450252d58027e08468ce905528fdc8be`;
+runner `c55b77d2ea79bfa7ada07ac95ab10e439fcbf6e1245c7f25d64a7d43be24ca78`;
+launcher `8779ab2a6632143aac8038f07c4e11483aecacd23e1dd1ab8a85028d7f1e9596`;
+controls unchanged from v2. Independently comparing the accepted pilot commit
+4846913 confirms exact nonblank-byte identity of the core: only nine blank
+lines were removed. The three checker/driver/control files total 400 lines;
+the separate 53-line launcher contains orchestration only.
+
+The runner authenticates the historical tar, exact 560 old pairs, the new
+382-entry inventory `d7cea34dd64d9df329d1398c2418fbf984a9084b135cad695866a9c437551740`,
+regular filenames and every new content hash. It requires the complete raw
+942 n/pass set before filtering. My separate data check verified all 382
+mirror bytes against the accepted canonical ZIP. Four deterministic disjoint
+groups have 118,118,118,117 degrees; their union is every integer 41..511.
+Each degree keeps both passes together, with a fresh process per worker and
+no persisted cache. Failure terminates remaining process groups; no further
+admission, retry or altered thresholds is authorized.
+
+I identified that the original source-bound calculation 4*2671+80 omitted
+the four GNU timeout processes. Amendment 01, accepted by root and reviewed
+before launch, corrects the claim: 10800 CPU seconds is a measured total
+campaign budget/acceptance threshold, not a kernel aggregate cap. Worker
+2670/2671-second CPU and 2-GiB address limits, supervisor soft80, worker
+7200-second wall and outer7350-second wall limits are separately enforced.
+Inclusive final accounting includes waited timeout/worker CPU; an excess is
+failure, with preserved outputs. This clarification changes no source or
+scientific acceptance predicate. Full execution remains **pending** here.
+
+### Audit-03 E-01–E-04 — focused operational repair accepted
+
+Root added this focused scope after the native campaign became quiescent.
+I reviewed the diff from the input SHA, the reused admission/history helpers,
+and [the developer's response](compact-verifier-audit03-response.md).
+Candidate `compact_pack/verify_compact.py` has SHA-256
+`5867ac0c6d6e1d380d72c118262177a10b617631e039da11f489e45c93ff61b6`;
+control script `a256cb9abc0e0610b36880aa5eed09e3c5b90c8e9ab518cd406982ce9a8017d3`.
+
+The reader authenticates the separate trusted package before loading checker
+code; returned names cannot shadow its files. Ledger/history validation,
+summary/status/freeze/receipt and server-attempt/raw-hash links are now checked.
+Fresh tree, key sets and norm method must agree while independently recomputed
+numeric endpoints may differ. `--expect-plan all` enforces the entire original
+280-degree plan; default completed-subset verification remains explicit.
+The unchanged 24-GiB logical cap is checked before each regular payload read
+or hardlink alias addition. It is an early total limit, not a low-memory claim.
+Unsampled absent raw histories remain server-recorded identities; the reader
+does not claim to hash their absent bytes.
+
+I independently executed both exact commands in the developer response,
+using the actual old tar and complete separately trusted package, with a fresh
+control output `/tmp/onset512-independent-review/e01-e04-controls.json`.
+The direct `--expect-plan all` run observed exit 0, 5.192408 CPU seconds,
+280 pairs/560 rational proofs and complete sampled closures 199,238. The
+control run observed exit 0, 13.108591 inclusive child CPU seconds; all 30
+controls passed, including rehashed semantic corruptions, subset/full-plan
+separation and early size rejection before the second payload read.
+Both stderr files are empty. Own control receipt SHA-256:
+`7400d4f930886f73c3e031b4ed5bf59f32456bdb055c199ce503dd1c0affda85`.
+Own commands/exits/resources are in `e01-e04-*-observation.json` in that scratch
+directory. No missing-file adapter, archive executable, compiler or native
+calculation was used. Imported helper bytes match the historical release.
+
+E-01–E-04 may be closed for this source-tree candidate. The old trusted
+package still authenticates its old verifier; this review does not relabel
+new code as historically used or repin that package. Any later operational
+release needs its own current source identity. Historical audit findings and
+the separate new-mathematics/independent-arithmetic audit obligation remain.

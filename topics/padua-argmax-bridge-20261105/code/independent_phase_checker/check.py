@@ -4,15 +4,12 @@ No production imports. See theory/J03-independent-phase-checker.md for soundness
 from fractions import Fraction as F
 from math import factorial, lcm
 import numpy as np
-
 def need(ok, why):
     if not ok: raise ValueError(why)
-
 def atan_bounds(q, count=80):
     s = sum((F((-1)**j, (2*j+1)*q**(2*j+1)) for j in range(count)), F(0))
     t = F((-1)**count, (2*count+1)*q**(2*count+1))
     return min(s, s+t), max(s, s+t)
-
 A, B = atan_bounds(5), atan_bounds(239)
 PL, PH = (16*A[0]-4*B[1])*2**100, (16*A[1]-4*B[0])*2**100
 PLO, PHI = F(PL.numerator//PL.denominator,2**100),F(-(-PH.numerator//PH.denominator),2**100)
@@ -48,7 +45,6 @@ def total(a):
         hi=np.append(hh,hi[-1:]) if hi.size%2 else hh
     finite(lo,hi)
     return F(float(lo[0])),F(float(hi[0]))
-
 def sinpi(num,den):
     need(isinstance(den,int) and 0<den<2**52, 'argument denominator range')
     num=np.asarray(num,dtype=np.int64)
@@ -63,7 +59,6 @@ def sinpi(num,den):
     lo=np.where(r==0,0.,lo); hi=np.where(r==0,0.,hi)
     finite(lo,hi)
     return np.where(sign>0,lo,-hi),np.where(sign>0,hi,-lo)
-
 def ratio(k,num,den):
     need(np.max(np.abs(num),initial=0)<2**62//k, 'integer multiplication overflow')
     a,b=sinpi(k*num,den),sinpi(num,den)
@@ -72,7 +67,6 @@ def ratio(k,num,den):
     v=div(a,b)
     exact=k*np.where(((num//den)*(k-1))%2==0,1.,-1.)
     return np.where(zero,exact,v[0]),np.where(zero,exact,v[1])
-
 def kernel(n,Uv,Vv,den,cosnum,cosden,parity):
     x,y=Uv+Vv,Vv-Uv
     d=add(mul(ratio(n+1,x,den),ratio(n+1,y,den)),
@@ -80,7 +74,6 @@ def kernel(n,Uv,Vv,den,cosnum,cosden,parity):
     c=sinpi(np.array([2*cosnum+cosden],dtype=np.int64),2*cosden)
     c=(np.where(parity%2==0,c[0][0],-c[1][0]),np.where(parity%2==0,c[1][0],-c[0][0]))
     return add(d,neg(c))
-
 def geometry(n,a,b,actual=False):
     a,b=F(a),F(b); m=n+1; Q=lcm(a.denominator,b.denominator)
     aq,bq=a.numerator*(Q//a.denominator),b.numerator*(Q//b.denominator)
@@ -91,12 +84,10 @@ def geometry(n,a,b,actual=False):
     s=np.arange(m+1 if actual else 2*m,dtype=np.int64)[None,:]
     mask=(r+s)%2==(0 if actual else 1)
     return aq,bq,Q,np.broadcast_to(r,mask.shape)[mask],np.broadcast_to(s,mask.shape)[mask]
-
 def S(n,a,b):
     aq,bq,Q,r,s=geometry(n,a,b); m=n+1
     h=kernel(n,(r*Q+aq)*m,(s*Q+bq)*n,2*n*m*Q,aq,Q,r)
     lo,hi=total(absolute(h)); return lo/(2*n*m),hi/(2*n*m)
-
 def actual_lambda(n,xi,zeta):
     aq,bq,Q,j,k=geometry(n,1-F(xi),1-F(zeta),True); m=n+1
     tot=(np.zeros(j.shape),np.zeros(j.shape))

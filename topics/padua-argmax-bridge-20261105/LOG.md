@@ -2738,3 +2738,46 @@ the factual answer. The AI declaration, ORCID and contributions are unchanged
 as instructed. Handoff29 remains open within this session. No final IDs,
 shared registry changes, remote computation, external publication or PR
 readiness decision are made.
+
+### Completed local finite campaign and reviewed analytic replacement
+
+The exact Fraction gate/constant check and the distinct review's separate
+execution passed. [J01](theory/J01-onset512-gates.md) now proves the two
+all-real-degree gate transfers and the resulting integer tail from512;
+[J02](theory/J02-elementary-constant-enclosure.md) supplies the elementary
+constant inequalities previously consumed from PD-T271. The
+[focused review](independent-checks-onset512-response.md) also accepts the
+F03 support split. It confirms that both H04 majorants are valid: the new
+canonical ordering aligns with the audit, while the description of the old
+bound as erroneous is disputed with explicit derivations.
+
+The sandbox native campaign completed all191 primary/fresh pairs (382passes),
+observed EXIT0/ECHILD throughout, with no failure, timeout or cleanup kill.
+Inclusive wrapper CPU was2825.091s and engine-child CPU2700.875s; four workers
+took about13minutes elapsed and peaked at112688KiB per case. The
+[campaign record](local-onset512-summary.md) contains exact commands, output
+identities, helper-pin limitation, post-quiescence sample475/458, exporter
+and relocation checks. Both the complete81,602,992-byte ZIP and the
+945,235-byte derivative certificate dataset stay outside Git. No Syvert call
+was made; local bytes are not a claim of durable external custody.
+
+The notation-only checkpoint f77b668 preserves all formal blocks under its
+explicit rename map. Root caught decorated macro grouping errors, which the
+developer repaired before fresh48/162page builds passed in separate new
+directories. The old PDFs remain intact. Content revision of both manuscripts
+is now assigned in disjoint front/Sections1–3, Section4, and Section5 files.
+The five-section framework is retained; final matched numbering is checked
+after the coordinated revision.
+
+I25 pilotv1 stopped on a closed-seam key alias before numerical evaluation;
+its failure remains preserved. The prospective reviewed amendment applies
+the paper's antipodal seam symmetry. Pilotv2 then accepted all8 preregistered
+certificates,31 arithmetic controls and27 corruption controls, inclusive
+21.010CPU-s. Independent recertification uses its own bounds; it does not
+claim universal containment of every original native endpoint. Full942
+certificate arithmetic is a separately preregistered next run, not inferred
+from the pilot.
+
+AC answered the pending funding question: the existing no-specific-grant
+statement is accurate. Its wording is unchanged. The AI declaration,
+ORCID and contributions remain reserved to AC as previously instructed.

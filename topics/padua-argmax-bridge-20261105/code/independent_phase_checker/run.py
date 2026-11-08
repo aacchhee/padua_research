@@ -32,13 +32,23 @@ def main():
     p.add_argument('--degrees',default='41,199,238,511'); p.add_argument('--cpu-limit',type=int,default=3600)
     p.add_argument('--additional-dir'); p.add_argument('--controls',action='store_true'); args=p.parse_args()
     resource.setrlimit(resource.RLIMIT_CPU,(args.cpu_limit,args.cpu_limit+1))
+    resource.setrlimit(resource.RLIMIT_AS,(2**31,2**31))
     out=Path(args.output); out.mkdir(parents=True,exist_ok=False)
     started=time.process_time(); items=archive_inputs(args.archive)
     degrees=None if args.degrees=='all' else set(map(int,args.degrees.split(',')))
     if args.additional_dir:
-        for path in sorted(Path(args.additional_dir).glob('*.json')):
-            b=path.read_bytes(); d=json.loads(b)
-            if d.get('format')=='FINAL-HYBRID-kept-proof-v1': items.append((d['n'],path.stem,str(path),b,d))
+        root=Path(args.additional_dir); inv=root.with_name(root.name+'-inventory.json')
+        check.need(digest(inv)=='d7cea34dd64d9df329d1398c2418fbf984a9084b135cad695866a9c437551740','new inventory pin')
+        entries={x['name']:x for x in json.loads(inv.read_bytes())['files']}; paths=sorted(root.glob('*.json'))
+        check.need(len(entries)==len(paths)==382 and {x.name for x in paths}==set(entries),'new inventory names')
+        for path in paths:
+            match=re.fullmatch(r'n(\d+)-(produce|verify).json',path.name); check.need(match is not None,'new filename')
+            check.need(path.is_file() and not path.is_symlink(),'unsafe new data path')
+            b=path.read_bytes(); d=json.loads(b); row=entries[path.name]
+            check.need(len(b)==row['bytes'] and hashlib.sha256(b).hexdigest()==row['sha256'],'new content pin')
+            check.need(d['n']==int(match[1]) and d['format']=='FINAL-HYBRID-kept-proof-v1','new data identity')
+            items.append((d['n'],match[2],str(path),b,d))
+        check.need(len(items)==942 and {(n,pa) for n,pa,_,_,_ in items}=={(n,pa) for n in range(41,512) for pa in ['produce','verify']},'exact942 scope')
     items=sorted((x for x in items if degrees is None or x[0] in degrees),key=lambda x:(x[0],x[1]))
     sources={p.name:digest(p) for p in Path(__file__).parent.glob('*.py')}
     metadata={'source_hashes':sources,'archive_sha256':ARCHIVE_SHA,'CPU_limit':args.cpu_limit,

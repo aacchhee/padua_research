@@ -1,0 +1,196 @@
+{
+  "format": "padua-zenodo-deposit-plan-v1",
+  "status": "DRAFT_TEMPLATE_NOT_A_DEPOSIT_RECEIPT",
+  "prepared_utc_date": "2026-11-08",
+  "topic": "padua-argmax-bridge-20261105",
+  "doi": "PENDING_AC_RESERVATION",
+  "zenodo_record_url": null,
+  "final_source_commit": null,
+  "input_rules_commit": "b45e29fa1fe3dbfa2517ff8043e5d9c440870530",
+  "original_production_source_commit": "996fedcad4ba79a28e45a3fe3678adc12f1e5358",
+  "custody": "Local readback only. No Zenodo upload, Windows delivery or independent external retrieval claimed.",
+  "files": [
+    {
+      "role": "original_compact_return",
+      "deposit_filename": "original-compact-return.tar.gz",
+      "local_path": "local-output/argmax-bridge-20261105/actual-return-20261107/return.tar.gz",
+      "bytes": 36045486,
+      "sha256": "b00fd57f85ce6d96a6c1fa01e2307abd815088bb8fcb28b1587657ef142b109a",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "original_offline_source_runtime_package",
+      "deposit_filename": "original-padua30.zip",
+      "local_path": "local-output/argmax-bridge-20261105/compact-release-aea62883/padua30.zip",
+      "bytes": 25111335,
+      "sha256": "aac08e5f25bd27b2710de22039efd229b4ee67d8c1e3ffef9456af200e1f74d2",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "runtime_manifest",
+      "deposit_filename": "runtime_manifest.json",
+      "local_path": "local-output/argmax-bridge-20261105/compact-release-aea62883/padua30/runtime_manifest.json",
+      "bytes": 54003,
+      "sha256": "5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "official_package_and_arithmetic_pins",
+      "deposit_filename": "asset_provenance.json",
+      "local_path": "local-output/argmax-bridge-20261105/compact-release-aea62883/padua30/asset_provenance.json",
+      "bytes": 42623,
+      "sha256": "71ee5c717288f12527698e76ed17560805dd1641488e021cfe70a91ec4924a41",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "published_source_custody",
+      "deposit_filename": "SOURCE_CUSTODY.json",
+      "local_path": "local-output/argmax-bridge-20261105/compact-release-aea62883/padua30/SOURCE_CUSTODY.json",
+      "bytes": 1655,
+      "sha256": "c9051f1910898e8af6aa895a66f8d416456b7616c5886e8936409008bfa2f31e",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "unchanged_scientific_freeze",
+      "deposit_filename": "FREEZE.json",
+      "local_path": "topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/FREEZE.json",
+      "bytes": 4153,
+      "sha256": "0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "onset512_machine_preregistration",
+      "deposit_filename": "onset512-preregistration.json",
+      "local_path": "local-output/argmax-bridge-20261105/onset512-local-20261108/preregistration.json",
+      "bytes": 49782,
+      "sha256": "532e5af6af478d48546b4134635c296cd0aac5207de4df2955dda8b0fb7781a3",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "new_compact_return_320_through_510",
+      "deposit_filename": "onset512-return-20261108.zip",
+      "local_path": "local-output/argmax-bridge-20261105/onset512-return-20261108.zip",
+      "bytes": 81602992,
+      "sha256": "da63280a7e4aec86fa52e3f8384620fbf07939006ab5f6f70222fa2485816e7e",
+      "identity_status": "read_and_rehashed_2026-11-08; independent_result_review_pending",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "immutable_certificate_mirror_inventory",
+      "deposit_filename": "onset512-essential-inventory.json",
+      "local_path": "local-output/argmax-bridge-20261105/onset512-local-20261108-essential-inventory.json",
+      "bytes": 75479,
+      "sha256": "d7cea34dd64d9df329d1398c2418fbf984a9084b135cad695866a9c437551740",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "derivative_certificates_only",
+      "deposit_filename": "onset512-certificates-20261108.zip",
+      "local_path": "local-output/argmax-bridge-20261105/onset512-certificates-20261108.zip",
+      "bytes": 945235,
+      "sha256": "c22d600cb67462918587b01f2ef5adcbf9030b825fb0f2cc79c1b9c27c7da8c8",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "final_reviewed_repository_source_snapshot",
+      "deposit_filename": "PENDING-reviewed-source.zip",
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "identity_status": "PENDING_FINAL_ARTIFACT_AND_REVIEW",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "independent_I25_checker_source_and_runtime_identity",
+      "deposit_filename": "PENDING-I25-source-runtime.zip",
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "identity_status": "PENDING_FINAL_ARTIFACT_AND_REVIEW",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "independent_I25_inputs_observations_controls_outputs",
+      "deposit_filename": "PENDING-I25-evidence.zip",
+      "local_path": null,
+      "bytes": null,
+      "sha256": null,
+      "identity_status": "PENDING_FINAL_ARTIFACT_AND_REVIEW",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    }
+  ],
+  "official_packages": [
+    {
+      "package": "libflint-dev",
+      "version": "3.1.3-2",
+      "architecture": "amd64",
+      "bytes": 221848,
+      "sha256": "484b6507b41a1669c8d58562eb53afeeb3955dbdf8e47d3ba4ba63aa14109928"
+    },
+    {
+      "package": "libflint19",
+      "version": "3.1.3-2",
+      "architecture": "amd64",
+      "bytes": 3791156,
+      "sha256": "81ac3b20d8a1f125100c84b10b3825a9344080575f88769b553dfe5b008b9e4a"
+    },
+    {
+      "package": "libmpfr-dev",
+      "version": "4.2.2-1",
+      "architecture": "amd64",
+      "bytes": 268136,
+      "sha256": "43cbe73a48cce65232ad5d4219a67dfdd0974f45aa88d381ae051d64052b996a"
+    },
+    {
+      "package": "libmpfr6",
+      "version": "4.2.2-1",
+      "architecture": "amd64",
+      "bytes": 729320,
+      "sha256": "75dddce11dabc7fc543712c33dc27b7f2ee66a111763eb5eac654d010b42cd92"
+    },
+    {
+      "package": "libgmp-dev",
+      "version": "2:6.3.0+dfsg-3",
+      "architecture": "amd64",
+      "bytes": 642124,
+      "sha256": "68f392cc03f896ecc3764eb4844d2a898ff016f47dda160465f152f811152b81"
+    },
+    {
+      "package": "libgmp10",
+      "version": "2:6.3.0+dfsg-3",
+      "architecture": "amd64",
+      "bytes": 560220,
+      "sha256": "d0d0265eb01770f17afd0f7c8c0622f80479dcfbbe13653a0debeec61464e622"
+    }
+  ],
+  "required_source_paths": [
+    "topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/",
+    "topics/padua-argmax-bridge-20261105/compact_pack/",
+    "topics/padua-argmax-bridge-20261105/code/local_onset512_campaign/",
+    "topics/padua-argmax-bridge-20261105/code/independent_phase_checker/",
+    "topics/padua-argmax-bridge-20261105/code/compact_return_replay/",
+    "topics/padua-argmax-bridge-20261105/preregistration-onset512-local.md",
+    "topics/padua-argmax-bridge-20261105/evidence/compact-return/",
+    "topics/padua-argmax-bridge-20261105/audit-03/replay276.md",
+    "topics/padua-argmax-bridge-20261105/code/independent_phase_checker/PILOT-PREREGISTRATION.json",
+    "topics/padua-argmax-bridge-20261105/theory/J03-independent-phase-checker.md"
+  ],
+  "pending_items": [
+    "Fill final source/checker pins only after distinct review and commit.",
+    "Onset512 ZIP identities are rehashed; complete independent result review and independent-checker output identities before finalization.",
+    "Include I25 soundness/preregistration/full-run records when actually written.",
+    "Record final compact verification outputs, exact commands and observed scope.",
+    "AC sets deposition metadata/license, reserves DOI, uploads, publishes and verifies retrieval."
+  ],
+  "retention_limit": "Canonical compact returns retain all essential certificates and sampled complete native histories. The 945235-byte onset512 derivative contains certificates/inventory only; it does not replace the 81602992-byte canonical provenance return. Unsampled full raw histories are excluded; no all-history archival claim.",
+  "index_base_commit": "f77b6683d7601b68bae9793d7213683682bc7ecc"
+}

@@ -7,7 +7,11 @@ Split from / into: none. Rules and input head:
 
 ## Statement and status
 
-**CONDITIONAL, developer soundness argument; distinct review and pilot pending.**
+**CONDITIONAL on the explicit arithmetic model and analytic premises.**
+Distinct supplementary soundness review accepted the pilot implementation and
+its focused seam correction. The reviewed v2 pilot passed all eight
+certificates, 31 arithmetic controls and 27 corruption controls. Full replay
+and the independent Claude audit are still pending.
 For each accepted certificate with integer degree 41..511, the checker constructs
 new rigorous intervals for the paper's finite primitive and actual Lebesgue
 function, reconstructs the complete closed midpoint partition, and proves its
@@ -18,7 +22,7 @@ squared Peano and analytic corner/far lemmas. This record does not independently
 prove those analytic lemmas. It removes the native numerical evaluator premises
 only within the certificates actually accepted by a reviewed implementation.
 
-The 255-line `code/independent_phase_checker/check.py` is the core checker;
+The 246-line `code/independent_phase_checker/check.py` is the core checker;
 `controls.py` and `run.py` supply controls, data reading and accounting. No
 production evaluator, engine, row reduction, Arb, MPFR, FLINT or libm trig is
 imported. The prototypes in audit-03 were read as unreviewed guidance. In
@@ -166,6 +170,13 @@ a0+b0>=1/2, retaining its entire closed triangle intersection in the analytic
 far domain. Exact analytic metadata is checked. These are explicit analytic
 dependencies, not independent re-proofs of their estimates.
 
+Frozen analytic metadata still contains the historical string
+`computer-assisted PD-T271`. This is a pinned certificate-schema identity,
+not an insistence on retaining that numerical premise. Once adopted, the
+elementary rational inequalities in [J02](J02-elementary-constant-enclosure.md)
+supply the same constants used by the corner/far analytic lemmas; this does
+not require altering old evidence or its metadata.
+
 ## Scope, diagnostics and open items
 
 Successful replay proves the tree again with substituted independent bounds.
@@ -176,9 +187,17 @@ are <= native uppers, and whether the new lower is >= the native lower.
 containment fails but the new strict predicates pass, only the independently
 recertified tree is claimed. Stored verification summaries are not premises.
 
-Runs needed: reviewed pilot on both passes at 41,199,238,511 with corruption
-controls under the total 3600 CPU-second cap; then separately preregistered
-942-certificate full scope, after the 382 new certificates exist. Native replay
+Pilot v2 accepted both passes at 41,199,238,511 with 31 exact arithmetic and
+27 corruption controls: observed exit 0, inclusive CPU 21.010049836 seconds,
+wall 21.031955808 seconds, maximum RSS 144084 KiB. Output prefix outside Git:
+`local-output/argmax-bridge-20261105/i25-pilot-v2-20261108T105639Z`;
+outer receipt SHA256 `2de69f5d4b9e53541618630ea5c9b16222737c1eaffcf5f11ac8466ca24a961f`.
+The original reviewed v2 sources are preserved at commit `4846913`.
+The maximum strict near/far/corner tests all passed. Native S upper containment
+was 63/64 at n41 and 44/45 at each other pilot degree, for each pass; this
+explicitly excludes a universal native-endpoint validation claim.
+
+Runs needed: separately preregistered 942-certificate full scope. Native replay
 by Claude is a separate result. All full outputs remain off Git. Public
 archival retrieval, Zenodo DOI and the independent Claude audit remain pending.
 

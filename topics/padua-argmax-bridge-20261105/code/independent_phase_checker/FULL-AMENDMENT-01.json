@@ -1,0 +1,9 @@
+{
+  "status":"PROSPECTIVE resource-accounting clarification before full launch; code and inputs unchanged",
+  "prior_preregistration_sha256":"9e4da4615cc40c7e23f8061a560e2f3fd8e696d13c64db3f0249ebb489e9cb4a",
+  "reason":"Distinct review observed that4*2671+80 omits CPU used by four GNU timeout wrapper processes. Root explicitly accepted a simple observed total-budget protocol rather than a new aggregate kernel-control framework.",
+  "clarification":"10800 CPU seconds is the total campaign budget and measured acceptance threshold, not a kernel-enforced aggregate cap. Each worker Python process has enforced2670soft/2671hard CPU seconds and2GiB address limit. Supervisor soft80 is enforced. GNU timeout wrappers inherit supervisor80soft/10800hard and are not separately CPU capped; no claim of a10764 maximum across all processes is made. Their actual CPU plus reaped descendants is included in the parent RUSAGE_CHILDREN accounting.",
+  "protocol":"Exactly four jobs are admitted once; no further admission or retry. Any worker failure stops remaining groups. Final inclusive CPU is measured after all four timeout processes and their children are reaped. A total above10800 makes the campaign fail and is preserved, as already enforced by launch_full.py. Independent per-worker wall7200 and outer7350 timeout bounds remain.",
+  "scope":"No numerical, cover, threshold, source, input, assignment, cache or acceptance-scope change. Sources remain frozen at FULL-PREREGISTRATION hashes throughout execution. Nonblank bytes and AST of full core1501ce94... independently checked identical to accepted pilot-v2 coref2d3a1e... at commit4846913.",
+  "review":"Distinct focused review of this clarification required before first full launch. No full numerical process has launched."
+}

@@ -151,3 +151,35 @@ unsampled histories stay on Syvert under AC's explicit selective-retention
 direction. Neither all-history cold retention nor external durable retrieval
 of the compact return/new replay raw artifacts is claimed. Chat attachment
 and sandbox custody do not establish delivery to the Windows destination.
+
+## Dated custody-index correction — 2026-11-08 (audit-03 E-10)
+
+The active [cold-storage.json](cold-storage.json) is now a small pending-local
+index rather than the former 23,904-byte inventory. The full old manifest is
+preserved unchanged at published commit
+`b45e29fa1fe3dbfa2517ff8043e5d9c440870530`, path
+`topics/padua-argmax-bridge-20261105/cold-storage.json`, Git blob
+`96aaf1885dcb2bf1c480e102af8b5ba0ec8ff1f4`, SHA-256
+`3a8867bee698f32bf10324df0c0af8bf3d32d9192f6bcc6f48ac95de8ac2460e`.
+It contains the complete 70-row pending-local inventory and historical group
+records referenced above. This dated change supersedes only where to find
+that detailed inventory; it preserves the historical local/failed-record
+custody and does not authorize deletion or reconstruct old observations.
+The new index's source commit `f77b6683d7601b68bae9793d7213683682bc7ecc` is the
+existing preparation head, not a future publication identity.
+
+The original 36,045,486-byte return, canonical new 81,602,992-byte provenance
+ZIP, 945,235-byte certificate-only derivative and 75,479-byte mirror inventory
+were individually streamed/readback SHA-256 checked here on 2026-11-08. Their
+actual local paths and full hashes are in the small index and
+[deposit plan](zenodo-deposit/README.md); the new campaign's generation/checking
+records are in [its summary](local-onset512-summary.md). The small derivative
+cannot replace the canonical return's provenance. The mirror inventory stays
+off Git, with only its byte count/hash recorded. Whole campaign/build trees and
+failed local records remain under the earlier preservation directions.
+
+Delivered `entries` remains empty. Physical transfer to AC's authorized Padua
+cold-storage path, Zenodo publication/DOI and independent durable external
+retrieval remain **pending**. A storage-tool smoke with no delivered entries
+checks only compatibility, not delivery. The deposit template retains pending
+I25 source/full-result identities until actual reviewed artifacts exist.

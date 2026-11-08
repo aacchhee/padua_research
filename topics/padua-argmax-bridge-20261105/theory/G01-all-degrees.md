@@ -168,3 +168,24 @@ expansion, under [their split supporting record](F03-identities-support.md).
 F03's original sign target remains OPEN. No claim that all F-series content
 is absent from the paper's dependency chain is intended; F07/F10 are not
 used in this assembly.
+
+## Dated alternative proof assembly — 2026-11-08 (onset512)
+
+The simpler manuscript route now combines the preserved finite results2..40,
+the original280 phase-certificate pairs41..319 and511, the new191 pairs
+320..510 in the [sandbox campaign](../local-onset512-summary.md), and
+[J01](J01-onset512-gates.md) for every integer n>=512. These ranges cover
+every integer n>=2. J01 uses the elementary [J02](J02-elementary-constant-enclosure.md)
+inequalities, the uniform1/20 floor and the retained corner256 descent;
+its one absolute gate also supplies the finite certificates' far192 branch.
+The [distinct review](../independent-checks-onset512-response.md) accepts
+the exact gate reductions, independent Fraction execution and all new
+native-campaign/accounting/archive data at their explicit scopes. This
+provides a second complete assembly with the same equality set and native
+evaluator premises listed above. The original stronger analytic onset320
+proof remains valid and preserved; no minimum-onset claim is made.
+
+The new computation was entirely local. Its complete proof return and small
+certificate-only ZIP have pinned local identities, with external custody
+pending. The full I25 independent-arithmetic result is not inferred from
+this native run or its eight-certificate pilot.

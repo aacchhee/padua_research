@@ -107,16 +107,16 @@ links the canonical decisions.
 
 | ID | Status | Response / owner and next action |
 |---|---|---|
-| E-01 | PENDING | Verifier developer: require disjoint archive/package names and trusted provenance reads; corruption controls plus distinct code review. [Source](audit-03/e-evidence.md). |
-| E-02 | PENDING | Verifier developer: check admissions/history, fresh tree/keys, pass results and attempt/raw hashes; distinct code review and actual compact verification. [Source](audit-03/e-evidence.md). |
-| E-03 | PENDING | Verifier developer: add expected-plan coverage option while preserving partial-subset verification; review before new production use. [Source](audit-03/e-evidence.md). |
-| E-04 | PENDING | Verifier developer/root: consider streaming aggregate byte cap before allocation; preserve fail-closed sizing limitation. [Source](audit-03/e-evidence.md). |
-| E-05 | PENDING | Root: scope PA1 fix to normalized direct-parent tree; frozen engine stage_run remains unchanged and does not imply a universal process fix. [Source](audit-03/e-evidence.md). |
+| E-01 | FIXED | Disjoint archive/package namespace and trusted provenance reads; actual original-return verification and 30 focused controls pass in developer and distinct executions. [Development record](compact-verifier-audit03-response.md), [review](independent-checks-onset512-response.md). [Source](audit-03/e-evidence.md). |
+| E-02 | FIXED | Added admissions/history, retained tree/keys/method, pass-summary and attempt/raw-hash linkage checks. Both actual data-only executions accept all560 proofs; absent unsampled raw bytes remain unclaimed. Same record/review as E-01. [Source](audit-03/e-evidence.md). |
+| E-03 | FIXED | Added optional expected-plan coverage, with default subset behavior retained and explicitly tested. Same record/review as E-01. [Source](audit-03/e-evidence.md). |
+| E-04 | FIXED, scoped | Existing logical-size cap is checked before payload read or hardlink alias retention; synthetic controls pass. Payloads still stay in RAM, so this is not a low-memory streaming verifier claim. Same record/review as E-01. [Source](audit-03/e-evidence.md). |
+| E-05 | FIXED wording | The local preregistration and campaign summary scope PA1 to the normalized direct-parent tree; frozen engine stage_run is unchanged and no universal process fix is claimed. [Source](audit-03/e-evidence.md). |
 | E-06 | PENDING | Auditor replay276 completed and linked in audit-03; independent arithmetic remains with I25 developer. Same engine/kernels do not close that obligation. [Source](audit-03/e-evidence.md). |
 | E-07 | FIXED | Auditor: compact-return.md dated note identifies committed fresh receipts as sandbox replays, commit 2bb805c. [Source](audit-03/e-evidence.md). |
 | E-08 | DECISION | Root: preserve intentional historical SPEC prefix pin and its documented limitation; do not silently update old audit hash. [Source](audit-03/e-evidence.md). |
 | E-09 | DECISION | Root: preserve seed/draw provenance limitation; same-commit records cannot prove chronology, archive-fixed sample excludes outcome-based selection. [Source](audit-03/e-evidence.md). |
-| E-10 | PENDING | Root + AC: compact/record exception for 23,904-byte cold-storage manifest and complete actual custody transfer. Input generated headroom is 126,044 B; no bulk outputs authorized. [Source](audit-03/e-evidence.md). |
+| E-10 | SIZE FIXED; custody pending | Small compatible custody index preserves the entire old manifest at published Git/hash pins. Canonical and derivative new ZIPs remain local; actual Zenodo publication/retrieval awaits AC. [Custody correction](COLD_STORAGE.md#dated-custody-index-correction--2026-11-08-audit-03-e-10). [Source](audit-03/e-evidence.md). |
 
 ### f-series
 
