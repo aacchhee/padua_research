@@ -189,3 +189,40 @@ The new computation was entirely local. Its complete proof return and small
 certificate-only ZIP have pinned local identities, with external custody
 pending. The full I25 independent-arithmetic result is not inferred from
 this native run or its eight-certificate pilot.
+
+## Current direct-sum verification route — 2026-11-08 (I25 completed)
+
+[J03](J03-independent-phase-checker.md) now independently recertifies all942
+retained phase trees, two per degree41..511. It recomputes direct finite
+kernel/cardinal sums and substitutes its own upper vertices, lower origin
+bound and certified GRID/TREE norm into every closed-cover and strict-corner
+predicate. Every tree passes. The full run used2519.421CPU-s; a distinct
+reviewer separately executed both witnesses at41,458,511, all six passing.
+The [completed review](../independent-checks-onset512-response.md) checks
+the exact942-input population, code/data identities, positive margins,
+observed exits and the independent executions. The
+[short record](../code/independent_phase_checker/independent-phase-summary.md)
+pins the complete2,843,611-byte local evidence ZIP, which includes all942
+input certificates and executed source snapshots.
+
+For this route, numerical trust is Python integer/Fraction arithmetic,
+guarded NumPy operations and the explicit IEEE binary64 round-to-nearest,
+gradual-underflow and nextafter model proved in J03. Rational pi bounds,
+exact argument reduction, a Taylor sine enclosure and widened pairwise sums
+replace the accelerated evaluators. D23/C02-row/N5/C06/D06/C11 remain
+historical production premises; they are unnecessary for this direct-sum
+proof. The C02 finite-floor result, finite-cover/positive-interpolation
+reductions and analytic corner/far lemmas remain mathematical premises.
+The2..40 C++/GMP Bernstein route remains unchanged.
+
+The manuscripts specifically use the fresh unified2..16 witnesses in
+[small-degree-unification](../paper/small-degree-unification.md), with the
+accepted17..40 witnesses reused. These are alternative applications of the
+same finite implication; the historical PD-T routes in step1 remain valid.
+
+Together with J01/J02 from512 this is a complete alternative proof of the
+stated all-degree equality set. It establishes the comparisons using new
+bounds, without asserting that every historical native endpoint is valid.
+The exact trusted semantics and retained data are stated in J03. External
+deposit and the focused substantive Claude audit remain separate from this
+completed local verification.

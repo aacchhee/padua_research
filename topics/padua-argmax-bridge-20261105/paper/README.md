@@ -1,85 +1,62 @@
-# Unified Constructive Approximation draft
+# Constructive Approximation manuscript — current onset-512 revision
 
-[main.tex](main.tex) builds the current **48-page** manuscript, reduced from
-88 pages with the same Springer class, fonts and layout. The proof is
-integrated into the article; the old appendices have not been relocated
-to an uncounted supplement. [CONSOLIDATION.md](CONSOLIDATION.md) explains
-the reorganization and what was removed.
+[main.tex](main.tex) builds the current **51-page** paper. Build instructions,
+actual identities and retained historical versions are in [BUILD.md](BUILD.md).
+Current default output:
+`local-output/padua-argmax-bridge-20261105/onset512-paper-20261108/main.pdf`.
+Download copy: `padua-manuscript-20261108-131012-Oslo.pdf` in that directory.
+It is 733598 bytes, SHA-256
+`1346fc2891e2cdd5deb6db4b1a5928a2a7bac05c1838999b1a1dee1fc0db1d2c`.
 
-Build using [BUILD.md](BUILD.md). The current PDF stays outside Git:
-`local-output/padua-argmax-bridge-20261105/paper/main.pdf`.
-The original full draft is preserved by commit
-`a948b24c3faeba1e475ce64f4c7fc9d4123d42a5` and its local archived PDF.
+Final paired TeX/Bib source freeze: `24a98db4c3c4c4d0eede2e3929532956df87911b`.
+The [accepted supplemental Sol max review](../manuscript-onset512-solmax-review.md)
+accepts correctness and exposition at this source/PDF freeze, with E1/E2/E4
+resolved. [Astra reviews](../independent-checks-onset512-response.md) accept the
+analytic gates/constants, new finite campaign and independent arithmetic at
+their stated scopes. These are distinct from the next substantive Claude audit
+and PR readiness.
 
-## One proof chain
+The proof uses [J01](../theory/J01-onset512-gates.md) analytically for n>=512,
+[J02](../theory/J02-elementary-constant-enclosure.md) for elementary rational
+constant bounds, Bernstein witnesses for2..40 and
+[J03](../theory/J03-independent-phase-checker.md) for all942 complete phase
+trees at471 degrees41..511. I25 uses its own finite-sum interval bounds under
+explicit Python/Fraction, guarded NumPy and IEEE binary64 assumptions plus
+named analytic lemmas. A distinct execution accepted six certificates. This
+is not universal validation of historical native endpoints. The sharp corner
+expansion remains analytic.
 
-- `sections/introduction.tex` states the two main theorems once.
-- `sections/preliminaries.tex` fixes the corrected cardinal and angular
-  kernel, endpoint weights and exceptional mode.
-- `sections/corner-unified.tex` derives the corner expansion in one
-  argument, including the exact rows, κ and uniform first correction.
-- `sections/localization-unified.tex` gives the exact reflection geometry,
-  includes `comparison-unified.tex`, then applies one comparison to the
-  selected-pair floors and all needed closed regions.
-- `sections/comparison-unified.tex` supplies the common completed model,
-  paired cancellation estimate and single finite-row error telescope.
-- `sections/certification-unified.tex` uses one positive-interpolation
-  principle for the finite completion and states the evidence boundary.
+The off-Git I25 evidence dataset is 2,843,611 bytes, SHA-256
+`d1d03156dde4248fecaa25d0144cd73c7c5414f28b66a39099342b31f2f7e0f8`;
+[completed summary](../code/independent_phase_checker/independent-phase-summary.md)
+and [deposit plan](../zenodo-deposit/README.md) give exact sources, commands,
+942 input proofs, runtime/preregistration records and separate review bundle.
+The canonical81,602,992-byte new native provenance return and its945,235-byte
+certificate-only derivative remain distinct. Historical local native replay
+completed all280 old degrees; it used the same engine and is not second arithmetic.
 
-The analytic corner theorem is independent of argmax and numerical
-constant enclosures. The global maximizer theorem retains the explicitly
-computer-assisted finite cases and quantitative constant input. Its
-finite41–63 defect derivation is now included explicitly. Unused generic
-cutoffs, the unused512-plus finite tier, repeated theorem statements,
-historical result families, discussion and long operational inventories
-have been removed from the compiled article.
+Both current source trees and built numbers agree:19 formal statements,
+85 numbered display environments and116 labels. The retained48/162-page PDF
+hashes also match. The companion147 pages is within five times the paper51;
+AC treats page count as secondary to needed explanation. No step should appear
+without its reasoning; named tools should be stated with hypotheses or cited.
+Both use the unchanged verified publisher class/BST. All PDFs/build outputs
+remain outside Git. AI declaration, ORCID and contributions are reserved to AC;
+funding is confirmed. Source ZIP finalization, AC's Zenodo DOI/publication,
+independent durable retrieval and registry/PR preparation remain separate.
 
-## Audit and small degrees
+## Preserved versions
 
-[consolidation-audit.md](consolidation-audit.md) is the distinct **Sol max**
-correctness and redundancy audit requested by AC. It records the complete
-compressed-proof review, findings, dispositions, source identities and
-actual independent native small-degree checks. It is distinct from the
-older [review.md](review.md), which describes the superseded88-page draft.
-The broader historical research-batch audit and PR readiness remain
-separate from this requested manuscript audit.
-
-For degrees2–40, the paper now uses one corrected-cardinal Bernstein
-certificate scheme. Fresh2–16 witnesses passed independent exact native
-checking; accepted17–40 witnesses are reused. A two-literal metadata-only
-repair reports the initial degree-2 cosine seed correctly, without changing
-arithmetic, certificate data, strict predicates or the older frozen files.
-The exact failure, repair, invariance argument and checks are in
-[small-degree-unification.md](small-degree-unification.md) and its code/data
-links. Degree1 has a direct affine formula; the executable still begins
-at2 and the main theorem's n>=2 scope is unchanged.
-
-## Reproducibility and publication scope
-
-The source mathematical dependencies are the same canonical H/G01/E14,
-PD-T101/159/269/270/271 and D29/C02 records used by the earlier draft;
-[CONSOLIDATION.md](CONSOLIDATION.md) maps their reorganized roles. The
-numerical κ input is now specified by its coefficient series and analytic
-tail in the article, not only by an internal identifier. The bounded
-literature comparison remains in `../literature-refresh-20261107.md`;
-no exhaustive priority clearance is claimed.
-
-All essential phase proofs are retained, but complete local histories and
-fresh native replays cover only the two selected degrees199/238. Other
-full histories remain server-local under AC's selective-retention policy.
-The new small-degree certificates and short receipts are committed and
-indexed. The essential evidence index has396 entries/32414 bytes, below
-its reviewed32KiB limit. No raw histories, PDFs, template dependencies or
-build logs belong in Git; tracked generated outputs remain below10MB.
-
-Author information, ORCID, funding, conflicts and contributions are now
-supplied from Paper F under AC's explicit authorization; the AI disclosure
-is adapted to the actual Padua work. Final human review, permanent public
-code/evidence release and final-ID cleanup at reviewed PR preparation remain. No submission or editor contact has taken place. The
-publisher-template provenance is recorded in
-[template/README.md](template/README.md): both used files now match the
-user-supplied December2024 package byte for byte, resolving the initial
-mirror comparison limitation.
+The earlier48-page paper and162-page companion remain in their original
+`local-output/.../paper/` and `local-output/.../companion-paper/` directories;
+current build defaults protect those paths. Historical TeX/Bib freezes are
+`c6e195fa5211d4504fd2638f3c7686368e28daee` and
+`ac945041ce73b74c2c4ec29c42ebeb8773e7a9b8`. The earlier88-page source is
+preserved at `a948b24c3faeba1e475ce64f4c7fc9d4123d42a5`.
+[Consolidation](CONSOLIDATION.md), its earlier reviews and
+[small-degree unification](small-degree-unification.md) retain historical
+scope; they do not describe current page counts or the current I25 trust route.
+The dated records below remain historical checkpoints.
 
 ## Author and template update — 7 November 2026
 

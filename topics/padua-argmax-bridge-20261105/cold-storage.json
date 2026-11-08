@@ -1,7 +1,7 @@
 {
   "format": "padua-cold-storage-v1",
   "slug": "padua-argmax-bridge-20261105",
-  "source_commit": "f77b6683d7601b68bae9793d7213683682bc7ecc",
+  "source_commit": "dcb27db7d159ca0eac66e5fb48623589035a31ef",
   "entries": [],
   "total_bytes": 0,
   "index_scope": "Pending-local custody index prepared against source_commit; not an archive-delivery receipt or a claim that this commit generated every listed artifact.",
@@ -45,6 +45,20 @@
         "bytes": 75479,
         "sha256": "d7cea34dd64d9df329d1398c2418fbf984a9084b135cad695866a9c437551740",
         "record": "local-onset512-summary.md"
+      },
+      {
+        "role": "complete_I25_witnesses_and_verification",
+        "path": "local-output/argmax-bridge-20261105/i25-evidence-20261108T112304Z.zip",
+        "bytes": 2843611,
+        "sha256": "d1d03156dde4248fecaa25d0144cd73c7c5414f28b66a39099342b31f2f7e0f8",
+        "record": "code/independent_phase_checker/independent-phase-summary.md"
+      },
+      {
+        "role": "independent_computational_review",
+        "path": "local-output/argmax-bridge-20261105/onset512-independent-review-20261108.zip",
+        "bytes": 51749,
+        "sha256": "96f84b294b724b74bc33c112a2633bde14fed5c9220cb11196c60dae5c12ab28",
+        "record": "independent-checks-onset512-response.md"
       }
     ],
     "generation_and_verification_records": [
@@ -54,7 +68,7 @@
       "local-onset512-summary.md"
     ],
     "deposit_plan": "zenodo-deposit/MANIFEST.json.in",
-    "independent_I25_full_result": "PENDING",
+    "independent_I25_full_result": "ACCEPTED: 942 trees / 471 degrees; distinct six-certificate replay; explicit arithmetic/analytic premises in J03",
     "retention": "Preserve whole original local campaign/build trees and failed records; inventory pointers do not authorize pruning. Unsampled full raw histories remain at original execution locations. No all-history archive claim.",
     "completed_external_delivery_receipt": null
   }

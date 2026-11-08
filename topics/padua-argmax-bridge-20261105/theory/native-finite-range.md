@@ -1,5 +1,11 @@
 # PD-T?argmax-bridge-codex-F1 — Exact Padua corner argmax at degrees 33–40
 
+2026-11-08 provenance clarification (audit-03 G-2): the audit-pending
+sentence in the historical development section below is superseded by the
+completed [audit-01](../audit-01.md) and [audit-03 assembly review](../audit-03/g-assembly.md).
+This remains a provisional source record, rather than an already assigned
+PROOF_STATUS row. Its theorem, certificates and implementation pins are unchanged.
+
 ID kind: PD-T. Aliases: native bridge extension; accepted finite certificates.
 Split from: the finite cases of PD-T099; the remaining bridge stays OPEN.
 Split into: none.

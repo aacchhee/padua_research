@@ -183,3 +183,12 @@ cold-storage path, Zenodo publication/DOI and independent durable external
 retrieval remain **pending**. A storage-tool smoke with no delivered entries
 checks only compatibility, not delivery. The deposit template retains pending
 I25 source/full-result identities until actual reviewed artifacts exist.
+
+
+The completed I25 archive now retains all942 phase witnesses plus executed
+source snapshots and verification records in2,843,611bytes. The separate
+51,749-byte supplementary review archive preserves its own controls and six
+complete replays. Both local files were rehashed and added to the small pending
+index; neither is a claim of external delivery. The [I25 summary](code/independent_phase_checker/independent-phase-summary.md)
+gives exact identities and commands. The current preparation source is dcb27db;
+original scientific source/runtime identities remain separately recorded.

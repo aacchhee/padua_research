@@ -1,17 +1,50 @@
 # Padua argmax bridge — current research results
 
-The [Constructive Approximation manuscript draft](../topics/padua-argmax-bridge-20261105/paper/README.md) now presents the two results as one integrated 46-page article (down from88), with a single comparison argument and one small-degree Bernstein scheme. The distinct user-requested Solmax correctness/redundancy audit accepts the rewritten proof under its stated computational premises; sources, build and audit records accompany it.
+The exact parity-correct two-nonnode-corner global argmax is **PROVED,
+computer-assisted, for every integer n>=2**, under the explicit mathematical
+and implementation dependencies in
+[G01](../topics/padua-argmax-bridge-20261105/theory/G01-all-degrees.md).
+Equality corners are {(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n.
+No degree gap remains; shared PD-T099 registration stays deferred to reviewed
+PR preparation.
 
-The sharper corner expansion is now **PROVED analytically** for both parities:
-`Lambda_c=4/pi² log²N+b logN+c-1/N+O(logN/N²)`, with `N=n+1/2` and the original exact constants. [Canonical theorem](../topics/padua-argmax-bridge-20261105/theory/H-sharp-corner-expansion.md), [six-round summary](../topics/padua-argmax-bridge-20261105/campaign-H-summary.md). Distinct mathematical main/support/integration checks accept the full proof. No new numerical computation or fitted premise. The bigO constant is uniform but not numerically specified. Combining with G01 gives the global Lebesgue-constant expansion at G01's trusted scope.
+The sharp expansion is **PROVED analytically** for both parities:
+`Lambda_c=4/pi² log²N+b logN+c-1/N+O(logN/N²)`, N=n+1/2.
+[Canonical theorem](../topics/padua-argmax-bridge-20261105/theory/H-sharp-corner-expansion.md).
+The [exact F03 origin identities](../topics/padua-argmax-bridge-20261105/theory/F03-identities-support.md)
+are PROVED supporting premises of this expansion; its original sign target
+remains OPEN. F07/F10 remain separate supports.
 
-The exact parity-correct two-corner global argmax is now **PROVED, computer-assisted, for every integer n>=2**, under the explicit mathematical and implementation dependencies in [G01](../topics/padua-argmax-bridge-20261105/theory/G01-all-degrees.md). The actual Syvert return closes all273 missing finite degrees; no degree gap remains. Equality corners are {(-1,-1),(1,-1)} for even n and {(-1,-1),(-1,1)} for odd n. Shared PD-T099 registration awaits reviewed application; historical OPEN records remain preserved.
+The simpler manuscript route now uses
+[two analytic gates from512](../topics/padua-argmax-bridge-20261105/theory/J01-onset512-gates.md)
+and an [elementary constant enclosure](../topics/padua-argmax-bridge-20261105/theory/J02-elementary-constant-enclosure.md),
+with the original320 proof preserved. All191 new native primary/fresh pairs
+for320..510 passed locally. The separate
+[246-line independent checker](../topics/padua-argmax-bridge-20261105/code/independent_phase_checker/check.py)
+recertified942 trees across471 degrees41..511, with its own bounds and
+explicit IEEE/NumPy/Python trust. A distinct six-certificate replay passed.
+The39 polynomial witnesses cover2..40; the analytic proof covers n>=512.
 
-The [actual compact return](../topics/padua-argmax-bridge-20261105/compact-return.md),36,045,486B, passed developer and independent checks of all280pairs/560rational certificates, exact coverage and both randomly selected full histories. Fresh independent native replays of sampled199/238 both passed, at10.162178/11.856834CPU through summary. Full unsampled histories remain server-local; all essential witnesses are in the compact return. No complete cold-storage retrieval or independent local native replay of every degree is claimed. The final substantive Claude audit remains required before readiness.
+[Evidence and actual timings](../topics/padua-argmax-bridge-20261105/code/independent_phase_checker/independent-phase-summary.md):
+2519.421CPU-s/646.839wall-s for the full independent run;2825.091 inclusive
+CPU-s for the new native campaign. No Syvert call was made in this response.
+All942 phase witnesses plus executed source snapshots and verification records
+fit in a2,843,611-byte off-Git ZIP. Full and derivative native returns have
+separate identities. External deposit/DOI remains pending in the
+[Zenodo plan](../topics/padua-argmax-bridge-20261105/zenodo-deposit/README.md).
 
-AllTENnewF01–F10 rounds are complete, PAPER ONLY, independently mathematically accepted at exact scopes. [Summary](../topics/padua-argmax-bridge-20261105/campaign-F-summary.md). They are separate supports; the all-degree assembly uses the accepted n>=320 analytic tail and finite certificates, without integrating F07/F10 or claiming a minimum analytic onset.
+The [journal manuscript](../topics/padua-argmax-bridge-20261105/paper/README.md)
+and [elementary-analysis companion](../topics/padua-argmax-bridge-20261105/companion-paper/README.md)
+retain matched structure, theorem statements and numbered displays. New build
+and review records distinguish the revised pair from the preserved48/162-page
+versions. Final builds are51/147pages at source24a98db, with all116 built
+labels matching. The user-requested [Sol max review](../topics/padua-argmax-bridge-20261105/manuscript-onset512-solmax-review.md)
+accepts correctness and exposition, including first-use definitions and
+named-tool statements/citations. The [focused mathematical/evidence review](../topics/padua-argmax-bridge-20261105/independent-checks-onset512-response.md)
+accepts the new computation/proofs at their stated scopes; the next substantive
+Claude audit covers those changes and both manuscripts. PR27 remains draft.
 
-The [exact F03 origin identities](../topics/padua-argmax-bridge-20261105/theory/F03-identities-support.md) are PROVED supporting premises of the H expansion, now split from the original OPEN sign target. The [focused distinct review](../topics/padua-argmax-bridge-20261105/independent-checks-onset512-response.md) accepts this source correction; F07/F10 remain separate from the all-degree assembly.
+## Earlier accepted components and historical scopes
 
 All **15/15 additional analytic rounds are complete**. [Global320 theorem](../topics/padua-argmax-bridge-20261105/theory/E14-assembly320.md), [full independent acceptance](../topics/padua-argmax-bridge-20261105/independent-checks-E14-global320.md). New radius-one signed error bounds and fresh legal annular defects close the last comparison. All E01–E15 work was PAPER ONLY: no new scalar/source/native/finite-degree jobs. The global comparison retains PD-T271 as an explicit computer-assisted dependency; the scalar H maximum itself has an analytic proof.
 

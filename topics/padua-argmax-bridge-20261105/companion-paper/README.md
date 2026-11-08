@@ -1,3 +1,73 @@
+# Explanatory companion — current onset-512 revision
+
+The complete companion is **147 pages**, explaining the current 51-page paper
+for a reader with some university analysis. It retains the same five sections,
+formal statements, numbered formulas and bibliography, with intermediate
+reasoning and worked examples throughout. [BUILD.md](BUILD.md) gives exact
+current commands and historical preservation records.
+
+Current default PDF:
+`local-output/padua-argmax-bridge-20261105/onset512-companion-20261108/main.pdf`.
+Download copy: `padua-companion-20261108-131012-Oslo.pdf` in that directory.
+It is 1171187 bytes, SHA-256
+`83ca42c8052ccd760c3929ff0c30cd1667971476ae111736fe371b30e4581af2`.
+
+Final paired TeX/Bib source freeze: `24a98db4c3c4c4d0eede2e3929532956df87911b`.
+The [accepted supplemental Sol max review](../manuscript-onset512-solmax-review.md)
+accepts correctness and exposition at this source/PDF freeze, with E1/E2/E4
+resolved. [Astra reviews](../independent-checks-onset512-response.md) accept the
+analytic gates/constants, new finite campaign and independent arithmetic at
+their stated scopes. These are distinct from the next substantive Claude audit
+and PR readiness.
+
+The proof uses [J01](../theory/J01-onset512-gates.md) analytically for n>=512,
+[J02](../theory/J02-elementary-constant-enclosure.md) for elementary rational
+constant bounds, Bernstein witnesses for2..40 and
+[J03](../theory/J03-independent-phase-checker.md) for all942 complete phase
+trees at471 degrees41..511. I25 uses its own finite-sum interval bounds under
+explicit Python/Fraction, guarded NumPy and IEEE binary64 assumptions plus
+named analytic lemmas. A distinct execution accepted six certificates. This
+is not universal validation of historical native endpoints. The sharp corner
+expansion remains analytic.
+
+The off-Git I25 evidence dataset is 2,843,611 bytes, SHA-256
+`d1d03156dde4248fecaa25d0144cd73c7c5414f28b66a39099342b31f2f7e0f8`;
+[completed summary](../code/independent_phase_checker/independent-phase-summary.md)
+and [deposit plan](../zenodo-deposit/README.md) give exact sources, commands,
+942 input proofs, runtime/preregistration records and separate review bundle.
+The canonical81,602,992-byte new native provenance return and its945,235-byte
+certificate-only derivative remain distinct. Historical local native replay
+completed all280 old degrees; it used the same engine and is not second arithmetic.
+
+Both current source trees and built numbers agree:19 formal statements,
+85 numbered display environments and116 labels. The retained48/162-page PDF
+hashes also match. The companion147 pages is within five times the paper51;
+AC treats page count as secondary to needed explanation. No step should appear
+without its reasoning; named tools should be stated with hypotheses or cited.
+Both use the unchanged verified publisher class/BST. All PDFs/build outputs
+remain outside Git. AI declaration, ORCID and contributions are reserved to AC;
+funding is confirmed. Source ZIP finalization, AC's Zenodo DOI/publication,
+independent durable retrieval and registry/PR preparation remain separate.
+
+## Current build and correspondence
+
+```sh
+bash topics/padua-argmax-bridge-20261105/companion-paper/build.sh
+python3 -B topics/padua-argmax-bridge-20261105/companion-paper/check_correspondence.py
+```
+
+Artifact mode requires explicit current output directories and both preserved
+original PDF paths; see [revision record](CORRESPONDENCE-REVISION.md).
+The helper checks both exact source baselines as well as paired blocks, then
+all built numbers, actual page ratio and old PDF hashes. Builds perform no
+mathematical verification. Default output directories protect the old artifacts.
+
+## Historical companion record — superseded current instructions
+
+The following dated-development snapshot describes the original162-page
+companion and48-page paper. Its commands/page ceiling/source freeze are
+historical, not current build or artifact-check instructions.
+
 # Expanded explanatory companion
 
 This separate manuscript develops the 48-page research article for a

@@ -2781,3 +2781,72 @@ from the pilot.
 AC answered the pending funding question: the existing no-specific-grant
 statement is accurate. Its wording is unchanged. The AI declaration,
 ORCID and contributions remain reserved to AC as previously instructed.
+
+### Full independent arithmetic and the manuscript objective
+
+I25 completed all942 retained trees, two per degree41..511, with observed
+EXIT0 for all four workers:2519.420775CPU-s and646.839168wall-s. The
+distinct Astra reviewer checked exact input/output/source joins and executed
+its own prospectively registered six-certificate replay (both witnesses at
+41,458,511), EXIT0 in27.276321 inclusive CPU-s. This accepts the direct-sum
+route under its explicit IEEE/NumPy/Python semantics and retained analytic
+lemmas. It recertifies trees with new bounds; it does not claim every
+historical native endpoint was proved. The246-line core, J03 and the short
+record are committed. All942 witness files and execution/source records fit
+in a2,843,611-byte off-Git ZIP; the independent review bundle is51,749bytes.
+Both have verified local identities. No external delivery or publication is
+claimed.
+
+The first integrated source freeze is
+`dcb27db7d159ca0eac66e5fb48623589035a31ef`:19 formal statements,
+85 numbered display environments and116 matching labels. It built at50/147
+pages. The initially attributed Abel warning was actually the new corner
+trigonometric-identity display; the root log inspection identifies it and
+splits that display, with no changed formula. The distinct mathematical
+review accepts the source freeze. The requested supplementary Sol max audit
+reads both complete manuscripts and identifies explicit arithmetic teaching,
+stale aliases and duplicate proof passages for correction before its final
+verdict. New builds and the final static correspondence baseline follow
+those bounded corrections. Old manuscript sources/PDFs stay preserved.
+
+AC clarified the objective during this revision: page count is secondary;
+50 pages, or slightly more when warranted, is acceptable. The mathematics
+should be unified and less of an atlas. Constants, statements and notation
+must be sufficiently explained, and named results must be cited or defined
+in the form used. Accordingly there is no43-page target. A proposed
+journal degree-two-example cut is canceled; the example stays as conceptual
+grounding. Repetition is removed where the complete elementary derivation
+remains at first use with a clear reference. The new arithmetic explanation
+is expanded rather than treated as an asserted implementation bound. These
+are presentation changes; frozen checker code/data and completed scientific
+runs are unchanged.
+
+### Final manuscript checks
+
+At source freeze `24a98db4c3c4c4d0eede2e3929532956df87911b`, both
+manuscripts build successfully with the supplied publisher-template bytes:
+51-page paper and147-page companion. The new correspondence checker freezes
+both TeX/Bib trees to that source commit and verifies19 statement blocks,
+85 numbered display environments and116 equal built label numbers. The
+147-page companion is within five times the actual51-page article. Both
+old48/162-page PDF byte identities remain unchanged. Final logs have no
+errors, warnings, overfull boxes, undefined references/citations or multiply
+defined labels; underfull-box diagnostics remain.
+
+The requested distinct Sol max supplement is **ACCEPT** at this exact source,
+with no unresolved finding in its mathematical/expository scope. It reads
+both complete manuscripts, checks the targeted deltas and independently
+verifies final artifacts and numbering. The new arithmetic proof is fully
+explained in the companion; notation and named tools are defined/stated or
+cited at first use. Root separately inspects the final phase diagram, trust
+table and arithmetic pages. The first integrated dcb27db PDFs/aux/logs are
+preserved in the new output directories' baseline-dcb27db subdirectories.
+The scripts' defaults now build into these new revision directories, leaving
+the original output targets untouched.
+
+Current PDFs and timestamped download copies, byte counts, hashes and exact
+commands are recorded in paper/BUILD.md and companion-paper/BUILD.md. No new
+scientific or certificate run was performed for these exposition changes.
+The next required substantive audit remains Claude's focused check of the
+new mathematics/evidence and both manuscripts. Final IDs, shared registry
+application, PR readiness, DOI/publication and merge remain separate.

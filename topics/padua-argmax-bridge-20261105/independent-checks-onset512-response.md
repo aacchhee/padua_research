@@ -537,3 +537,26 @@ match actual records. No numerical or mathematical mismatch remains in this
 focused integration. Root must associate these bytes with its final source
 freeze; later substantive changes require their own focused review. Build,
 layout, paired-numbering and general presentation acceptance are separate.
+
+Frozen source association: commit
+`dcb27db7d159ca0eac66e5fb48623589035a31ef` contains the four reviewed
+localization/certification files byte-for-byte. Its comparison hashes are
+`7f80d237672fdade5545e0fafe4382b6656fafb4c30954b83d103d0deeb89e7f`
+(paper) and `8e9d186bfae04e645808791167a9f5f68e8c8bf88ab6cea6acfbf1870e01e764`
+(companion). The initial exact-hash comparison detected this delta. Independently
+restoring one trailing space on the `$k=r\pm j\in\{1,3\}$;` line reproduces
+each previously reviewed full-file hash exactly. Thus the only delta is that
+single whitespace removal in each file; mathematical acceptance carries to
+this frozen commit. Subsequent layout-only work remains root's separate scope.
+
+I also independently read-verified the final I25 evidence ZIP
+`local-output/argmax-bridge-20261105/i25-evidence-20261108T112304Z.zip`,
+2843611 bytes, SHA-256
+`d1d03156dde4248fecaa25d0144cd73c7c5414f28b66a39099342b31f2f7e0f8`:
+1025 unique members, all 1024 payload hashes/CRC checks, all 942 proof bytes
+against the actual full-run input identities, and all four full-source
+snapshots against the executed preregistration. Its included review prose is
+the earlier computational-review snapshot `af71f466013d3272064414a4ff5127a0783d89fe2d9df24e4777d8a38cea590c`;
+the canonical report later adds manuscript integration. Both are preserved
+history. The final J03/result/short-summary records accurately retain the
+arithmetic/analytic assumptions and the limited original-endpoint diagnostics.

@@ -79,7 +79,7 @@
       "local_path": "local-output/argmax-bridge-20261105/onset512-return-20261108.zip",
       "bytes": 81602992,
       "sha256": "da63280a7e4aec86fa52e3f8384620fbf07939006ab5f6f70222fa2485816e7e",
-      "identity_status": "read_and_rehashed_2026-11-08; independent_result_review_pending",
+      "identity_status": "read_and_rehashed_2026-11-08; distinct_result_review_accepted",
       "deposit_status": "PENDING_AC_UPLOAD"
     },
     {
@@ -110,21 +110,39 @@
       "deposit_status": "PENDING_AC_UPLOAD"
     },
     {
-      "role": "independent_I25_checker_source_and_runtime_identity",
-      "deposit_filename": "PENDING-I25-source-runtime.zip",
-      "local_path": null,
-      "bytes": null,
-      "sha256": null,
-      "identity_status": "PENDING_FINAL_ARTIFACT_AND_REVIEW",
+      "role": "independent_I25_sources_runtime_inputs_and_completed_evidence",
+      "deposit_filename": "i25-evidence-20261108T112304Z.zip",
+      "local_path": "local-output/argmax-bridge-20261105/i25-evidence-20261108T112304Z.zip",
+      "bytes": 2843611,
+      "sha256": "d1d03156dde4248fecaa25d0144cd73c7c5414f28b66a39099342b31f2f7e0f8",
+      "identity_status": "read_and_rehashed_2026-11-08; distinct_supplementary_review_accepted",
       "deposit_status": "PENDING_AC_UPLOAD"
     },
     {
-      "role": "independent_I25_inputs_observations_controls_outputs",
-      "deposit_filename": "PENDING-I25-evidence.zip",
-      "local_path": null,
-      "bytes": null,
-      "sha256": null,
-      "identity_status": "PENDING_FINAL_ARTIFACT_AND_REVIEW",
+      "role": "distinct_supplementary_review_evidence",
+      "deposit_filename": "onset512-independent-review-20261108.zip",
+      "local_path": "local-output/argmax-bridge-20261105/onset512-independent-review-20261108.zip",
+      "bytes": 51749,
+      "sha256": "96f84b294b724b74bc33c112a2633bde14fed5c9220cb11196c60dae5c12ab28",
+      "identity_status": "read_and_rehashed_2026-11-08; distinct_supplementary_review_accepted",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "final_journal_manuscript",
+      "deposit_filename": "padua-manuscript-20261108-131012-Oslo.pdf",
+      "local_path": "local-output/padua-argmax-bridge-20261105/onset512-paper-20261108/padua-manuscript-20261108-131012-Oslo.pdf",
+      "bytes": 733598,
+      "sha256": "1346fc2891e2cdd5deb6db4b1a5928a2a7bac05c1838999b1a1dee1fc0db1d2c",
+      "identity_status": "read_and_rehashed_2026-11-08; final_build_and_Solmax_review_accepted",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "final_explanatory_companion",
+      "deposit_filename": "padua-companion-20261108-131012-Oslo.pdf",
+      "local_path": "local-output/padua-argmax-bridge-20261105/onset512-companion-20261108/padua-companion-20261108-131012-Oslo.pdf",
+      "bytes": 1171187,
+      "sha256": "83ca42c8052ccd760c3929ff0c30cd1667971476ae111736fe371b30e4581af2",
+      "identity_status": "read_and_rehashed_2026-11-08; final_build_and_Solmax_review_accepted",
       "deposit_status": "PENDING_AC_UPLOAD"
     }
   ],
@@ -185,12 +203,43 @@
     "topics/padua-argmax-bridge-20261105/theory/J03-independent-phase-checker.md"
   ],
   "pending_items": [
-    "Fill final source/checker pins only after distinct review and commit.",
-    "Onset512 ZIP identities are rehashed; complete independent result review and independent-checker output identities before finalization.",
-    "Include I25 soundness/preregistration/full-run records when actually written.",
-    "Record final compact verification outputs, exact commands and observed scope.",
+    "Final reviewed source snapshot remains to be packaged and hashed after substantive audit; candidate paired-source freeze is recorded separately.",
+    "I25 full942/471 and independent six-certificate result are complete; retain failed pilot and original prospective preregistration strings as history.",
+    "Record final source-snapshot verification commands and observed scope.",
     "AC sets deposition metadata/license, reserves DOI, uploads, publishes and verifies retrieval."
   ],
   "retention_limit": "Canonical compact returns retain all essential certificates and sampled complete native histories. The 945235-byte onset512 derivative contains certificates/inventory only; it does not replace the 81602992-byte canonical provenance return. Unsampled full raw histories are excluded; no all-history archival claim.",
-  "index_base_commit": "f77b6683d7601b68bae9793d7213683682bc7ecc"
+  "index_base_commit": "dcb27db7d159ca0eac66e5fb48623589035a31ef",
+  "candidate_paired_source_commit": "24a98db4c3c4c4d0eede2e3929532956df87911b",
+  "I25_outcome": {
+    "certificates": 942,
+    "degrees": 471,
+    "degree_range": [
+      41,
+      511
+    ],
+    "independent_rerun_certificates": 6,
+    "independent_rerun_degrees": [
+      41,
+      458,
+      511
+    ],
+    "arithmetic_controls_per_full_worker": 31,
+    "pilot_corruptions_rejected": 27,
+    "scope": "Own-bound complete-tree recertification under J03 arithmetic and analytic premises; not universal native-endpoint validation. Independent Claude audit remains pending.",
+    "record": "topics/padua-argmax-bridge-20261105/code/independent_phase_checker/RESULTS.json"
+  },
+  "manuscript_review": {
+    "source_freeze": "24a98db4c3c4c4d0eede2e3929532956df87911b",
+    "Solmax_verdict": "ACCEPT correctness and exposition",
+    "review_sha256": "fe935ea03a245dd6301370cc02b4ac826cacec55d036b8c99942a4d00d44dff9",
+    "pages": [
+      51,
+      147
+    ],
+    "paired_statements": 19,
+    "paired_numbered_environments": 85,
+    "paired_labels": 116,
+    "original_48_162_page_PDF_hashes_preserved": true
+  }
 }

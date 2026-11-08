@@ -1,21 +1,50 @@
-# Current result — complete finite bridge,2026-11-07
+# Current result — local verification complete, 2026-11-08
 
-The [Constructive Approximation manuscript draft](paper/README.md) now presents the two results as one integrated 46-page article (down from88), with a single comparison argument and one small-degree Bernstein scheme. The distinct user-requested Solmax correctness/redundancy audit accepts the rewritten proof under its stated computational premises; sources, build and audit records accompany it.
+The exact two-nonnode-corner equality set is **PROVED, computer-assisted,
+for every integer n>=2**, at the explicit scopes in [G01](theory/G01-all-degrees.md).
+The sharp corner expansion, including -1/N and O(log N/N²) on N=n+1/2,
+is **PROVED analytically** for both parities in
+[H-sharp](theory/H-sharp-corner-expansion.md).
 
-The original sharp corner expansion, including **-1/N** and the full
-**O(logN/N²)** remainder, is now proved analytically for both parities.
-[Theorem](theory/H-sharp-corner-expansion.md), [completed Hcampaign](campaign-H-summary.md).
-Six rounds sufficed; fourteen were never allocated. Distinct mathematical
-main/support/integration checks accept the proof; finalClaudeaudit remains
-separate. No numeric fit, experiment or new arithmetic enclosure is used.
+The revised manuscript proof uses two scalar gates from512
+([J01](theory/J01-onset512-gates.md)) and elementary constant bounds
+([J02](theory/J02-elementary-constant-enclosure.md)). It retains the
+corner256 and far192 branches consumed by the finite witnesses. The original
+stronger onset320 proof remains valid;512 simplifies the regional argument.
+PD-T271 is preserved historically and is unnecessary for the new constant
+inequalities. The exact F03 identities now have their own PROVED supporting
+record; the original sign target remains OPEN.
 
-[G01](theory/G01-all-degrees.md) proves the exact parity-correct two-corner
-argmax for every integer n>=2, with explicit computer-assisted dependencies.
-The [actual return](compact-return.md) passed all280pairs and both random
-199/238full histories and fresh native rechecks. No degree gap remains.
-Final Claude audit/readiness is separate; original records below preserve
-their historical scopes. [Paper positioning](paper-positioning.md) treats
-the earlier asymptotic theory and new all-degree result as two contributions.
+All computation in this response ran in the sandbox, with **no Syvert calls**.
+The new native batch accepted191 primary/fresh pairs for320..510,382passes,
+in2825.091 inclusive CPU-seconds. The separate246-line
+[direct-sum checker](code/independent_phase_checker/check.py) then recertified
+all942 phase trees, two per degree41..511, in2519.421CPU-seconds and646.839wall-seconds.
+A distinct reviewer independently reran six certificates (41,458,511, both
+passes), all passing. The39 polynomial witnesses for2..40 complete the finite
+range below512. The [review](independent-checks-onset512-response.md) records
+actual executions and their trust boundaries.
+
+The new route uses its own bounds and complete closed covers, with Python,
+NumPy and explicitly stated IEEE arithmetic semantics. It removes the
+accelerated numerical row-evaluator premises; finite floors, positive
+interpolation and the corner/far lemmas remain. It makes no assertion that
+every old native endpoint has been independently proved.
+
+[All942 witnesses, executed checker snapshots and verification records](code/independent_phase_checker/independent-phase-summary.md)
+fit in a2,843,611-byte ZIP. The new native provenance return is81,602,992bytes;
+a945,235-byte derivative contains its382 witness files. Outputs remain off
+Git with verified local identities. The [Zenodo plan](zenodo-deposit/README.md)
+records the pending deposit and DOI; local custody is not external delivery.
+
+Both manuscripts are revised together around this proof. The final build,
+correspondence and Sol max presentation review are recorded alongside the
+[paper](paper/README.md) and [companion](companion-paper/README.md).
+The revised builds are51/147pages at24a98db, with all116 compiled label
+numbers matching and an accepted full Sol max correctness/exposition review.
+The old48/162-page artifacts and their source freezes are preserved.
+A focused substantive Claude audit of the new mathematics/evidence and both
+manuscripts remains the next audit stage; PR27 stays a draft.
 
 ---
 
