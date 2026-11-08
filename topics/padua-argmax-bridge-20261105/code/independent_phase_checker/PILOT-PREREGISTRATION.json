@@ -1,0 +1,34 @@
+{
+  "created_UTC": "2026-11-08T10:51:00Z",
+  "status": "PREREGISTERED; execution gated on distinct review",
+  "rules_input_head": "b45e29fa1fe3dbfa2517ff8043e5d9c440870530",
+  "purpose": "Independently recertify substituted own intervals and exact cover predicates, not validate every stored native endpoint",
+  "archive": "local-output/argmax-bridge-20261105/actual-return-20261107/return.tar.gz",
+  "archive_sha256": "b00fd57f85ce6d96a6c1fa01e2307abd815088bb8fcb28b1587657ef142b109a",
+  "source_sha256": {
+    "check.py": "add4f1cb1246e71fd38f67b802a4e61dfb8ebe9244dda49326290b779030d485",
+    "controls.py": "628096010388fb3a1860726092e91156e98e17f1c35055bbe31990d7a14af5ac",
+    "run.py": "0ad0021a40253a78935663af7aff6f548b986919acc0f50e45767097d800c019"
+  },
+  "degrees": [41,199,238,511],
+  "passes": ["produce","verify"],
+  "certificate_sha256": {
+    "41/produce": "20adb3487797c7e89edef744d73a22de14e138c8cd3c194a393bd08fe3a585b4",
+    "41/verify": "154e64f4346e6d51afabc05549d3719028bd58ae74ce0012f3e92de0e8e01143",
+    "199/produce": "4e58080f60980a94c485e0d8a25558ed2997f38d35ccdb7718533c66ca9becfd",
+    "199/verify": "37210bbbd8cc2bde275790c73a9427927f419e9ce8ac2b74949dd2afb40864fb",
+    "238/produce": "52f26a6ff367112122acb5acfd0f0e00b5f061c8a1849cc69383bbf4b2e53043",
+    "238/verify": "ed5398a0f78887f400a371f28cb87c83ad2a12bf04549f54621dcac455493be8",
+    "511/produce": "a209d9b671199dc27a28af5f38a47925890adba1f8cd60396518259abad5e6d6",
+    "511/verify": "a545441f704b6b1ae094216573cda6523eb1e0395c0702db3af97a5f81483d24"
+  },
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-argmax-bridge-20261105/code/independent_phase_checker/run.py --archive local-output/argmax-bridge-20261105/actual-return-20261107/return.tar.gz --degrees 41,199,238,511 --controls --cpu-limit 3500 --output local-output/argmax-bridge-20261105/i25-pilot-v1-20261108T105100Z",
+  "resources": {"total_pilot_CPU_seconds_cap":3600,"process_RLIMIT_CPU_seconds":3500,"development_smoke_allowance_seconds":100,"threads":1,"wall_seconds_cap":7200,"expected_peak_RSS_MiB":512},
+  "controls": "28 cheap exact arithmetic/endpoint/collision/cover controls and 27 single-corruption controls in controls.py; every corrupted certificate must reject",
+  "cache_policy": "No disk cache. Fresh process; exact (kind,n,Fraction a,Fraction b) reuse only within one degree across both passes; erase cache when degree changes. Recompute all structural/metadata/strict predicates for each pass. Controls may reuse the same valid intervals.",
+  "acceptance": "All eight certificates accept with own upper/lower intervals; all arithmetic controls pass and all 27 corruptions reject; strict near/far/corner predicates retain positive margins; no exceptions, cap exits or missing outputs.",
+  "failure_policy": "Record first failure and stop. No retry, hidden rescue, tree changes, floor changes or precision escalation. Any corrected candidate needs new prospective amendment and distinct focused review before a new consequential run.",
+  "prepilot_observations": "Only isolated arithmetic controls and timing points ran. S2 corner enclosed 3; actual lambda2 corner enclosed 3; endpoint node tests enclosed 1. One S point at (a,b)=(1/4,1/8) took 0.056 CPU-s at n199 and 0.399 CPU-s at n511, widths 2.83e-12 and 3.59e-12. These are feasibility observations, not certificate acceptance.",
+  "review": "PENDING distinct /root/onset512_independent_review; no consequential pilot launched at preregistration creation",
+  "full_run": "Separate preregistration only after pilot acceptance and availability of all 560 old plus 382 new essential JSON certificates; no full-run claim here"
+}

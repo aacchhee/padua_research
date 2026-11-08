@@ -1,0 +1,14 @@
+{
+  "created_UTC":"2026-11-08T10:56:39Z",
+  "status":"PROSPECTIVE pilot v2, gated on distinct focused review",
+  "prior":"PILOT-PREREGISTRATION.json and PILOT-AMENDMENT-01.json remain historical; this amendment changes only seam canonicalization, allowed extra validated keys, exact seam controls, source hashes, output path and remaining CPU cap.",
+  "failed_v1":{"output":"local-output/argmax-bridge-20261105/i25-pilot-v1-20261108T105100Z","observation_sha256":"ee84df55ca1b599c493c7b4dbaefe3060c45848b7ed3ce78d0dda80037fee2da","returncode":1,"CPU_seconds_inclusive":0.683581693,"wall_seconds":0.8769755880002776,"reason":"Conservative missing-key rejection at n41 produce before numerical evaluation. Required (1,0),(3/4,1/4) aliases have retained partners (0,1),(1/4,3/4)."},
+  "correction":"Use paper S(a,b)=S(1-a,1-b) symmetry also on closed seam a+b=1, selecting lexicographically smaller partner; apply consistently to required keys, GRID keys and W lookups. Require every canonical required key to be retained; allow additional retained triangle keys and independently evaluate all of them. No region, tree, floor, threshold or numerical formula changes.",
+  "source_sha256":{"check.py":"f2d3a1e91c13f4015819a661c5cec81852e63b5e307803613353191bd84f6fa3","controls.py":"c1810bd1dc6ddcbb3501c0589f099c89fa50fd6bd2e79b77f06030d8cc114bd1","run.py":"0ad0021a40253a78935663af7aff6f548b986919acc0f50e45767097d800c019"},
+  "controls":"31 exact arithmetic controls including both seam directions and fixed midpoint; 27 single-corruption controls unchanged. All three Python files total400 lines, core255.",
+  "inputs":"Exactly the original eight pinned archive certificates; no changes.",
+  "command":"timeout --signal=TERM --kill-after=5s 7200s env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-argmax-bridge-20261105/code/independent_phase_checker/run.py --archive local-output/argmax-bridge-20261105/actual-return-20261107/return.tar.gz --degrees 41,199,238,511 --controls --cpu-limit 3400 --output local-output/argmax-bridge-20261105/i25-pilot-v2-20261108T105639Z",
+  "resources":"One thread. Process RLIMIT_CPU3400s and wall7200s timeout. V1 CPU0.684s plus development smoke allowance100s plus v2 cap3400s is below original total3600 CPU-second pilot cap. Report actual CPU/wall and outer exit. No retry or hidden rescue.",
+  "prelaunch_check":"Data-only structural key compatibility, without numerical evaluation or certificate acceptance, independently reconstructed for all560 archive records: no missing canonical keys.31 cheap exact controls pass.",
+  "acceptance":"All eight own-bound certificates accept, all31 arithmetic controls pass and all27 corruptions reject, with positive strict margins. First failure stops and is retained. Full run still requires separate preregistration and reviewed exact942 inventory driver."
+}
