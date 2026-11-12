@@ -1,6 +1,6 @@
 # Handoff 24 — finalize PR33 under AC’s final instruction
 
-- Status: open
+- Status: done in a72f14bc08f417583d2b712df7b36215d1e48260
 - Previous handoff: [23-pr-preparation.md](23-pr-preparation.md), superseded only as to its requested Claude readiness handoff and draft boundary.
 - Agent/model/effort: Codex coordinator gpt-6-astra high; mechanical application/checks gpt-6.1-sol medium.
 - Branch: `codex/padua-3d-20261106`.
