@@ -100,3 +100,21 @@ After reading KLM 2025 (`literature-effective.md`), the orchestrator added the *
 No finite exclusion certificate was produced or submitted in session 1, so no finite exclusion is claimed.
 - The torus route cannot exclude packages on the range of record -06, a proved limitation.
 - The plain cube LP measured λ₃ ≈ 1.21 and λ₄ ≲ 1.20, against the required 1 + 3/n = 2 and 1.75. That LP cannot produce one at n = 3, 4 (MEASURED; `attempts/E3.md`).
+
+## Addendum G (2026-11-12, before any run of the explicit-γ campaign) — AC: "I authorize up to seven rounds to make gamma explicit"
+
+Target: record -05. That is, an explicit γ₁ > 0 with γ_A ≥ γ₁, and with it N ≥ (1+γ₁)n³/6 for every n (record -03 (ii′)) and an explicit package threshold.
+
+- **G1, admissibility.** A candidate φ must be shown to satisfy the hypotheses of record -02 (c):
+  - continuous, real, in L¹(ℝ³), with φ(0) = 1;
+  - φ ≤ 0 on {|ξ|₁ ≥ 2};
+  - φ̂ ≥ 0 everywhere.
+  
+  Each inequality needs a proof: an analytic argument, an exact or interval-arithmetic certificate with a stated tail bound, or a cited theorem. Sampling alone never suffices.
+- **G2, value.** γ₁ = (3/4)∫φ − 1, or a certified lower bound for it, computed in exact or interval arithmetic.
+- **G3, acceptance status.**
+  - **PROVED.** Local certificate, committed checker, and an independent rerun on a separate code path.
+  - **PROVED with LITERATURE dependency.** The certificate is a published theorem read in full text: its normalisation is transcribed and checked against record -02 (c), and its rigour is recorded.
+  - **MEASURED.** A numerical optimum without a certificate. It is never reported as γ₁.
+- **G4, sanity.** Any certified value must satisfy γ₁ ≤ 1/18 (record -04). A value above 1/18 means a bug.
+- **Kill.** Two consecutive rounds without a new certified γ₁ or a strict improvement of the certified value end the campaign. The ceiling is 7 rounds.
