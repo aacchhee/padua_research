@@ -4,7 +4,7 @@
 not independently exposed. Rules/input97c323bfae15cf3c76f40802c3ebabedceeb0c60.
 Root owns publication/counters and the combined report. No final ID or
 historical novelty claim. Provisional measured result:
-`PD-T?padua-3d-20261106-u1c-decisions`; aliases: fixed-budget oracle
+`PD-T?padua-3d-20261106-codex-u1c-decisions`; aliases: fixed-budget oracle
 calibration, degree/noise decision, fixed-allocation GLS refit.
 Main status **MEASURED**. Split from/into: none. The broad universal-best-
 design goal remains separately OPEN and is outside this measured statement.

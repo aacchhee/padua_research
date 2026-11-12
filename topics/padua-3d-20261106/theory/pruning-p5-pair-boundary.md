@@ -1,23 +1,42 @@
-# First reflection-pair deletion under fixed preservation constraints
+# PD-N?padua-3d-20261106-codex-prune-P5 — first reflection-pair deletion under fixed preservation constraints
 
-Status: **MEASURED negative**, finite registered experiment P5. This is a
+ID kind: PD-N.
+Aliases: PRUNE-pair; P5 reflection-pair screen; first atomic block barrier.
+Split from: none.
+Split into: none.
+
+## Status by part
+
+Overall status: **MEASURED**; finite registered experiment P5.
+Candidate disposition: **REJECTED: failed** for the frozen first-pair
+preservation/continuation goal only. The general pruning target is OPEN.
+Rejection reason: failed within the finite numerical scope below. This is a
 known block-deletion/design operation, not a priority or algorithmic
 novelty claim. The predecessor/formula gate is
 [pruning-next-questions.md](../pruning-next-questions.md); the complete
 prospective question is the P5 appendix of
 [pruning-protocol.md](../pruning-protocol.md).
 
-## Claim and scope
+## Statement
 
 On the original canonical anisotropic parity supports at n6/8, none of
 all 48/100 nonfixed x1-reflection pairs is feasible under P2's unchanged
 training-amplification limit 1.25 times the full-start value and physical
 integer-budget risk limit 1.10 times the full-start value. All 148 pairs
 pass the stated block-rank threshold. The numerical census finds zero
-training-feasible pairs, with 45/100 passing the noise limit separately.
+training-feasible pairs, with 45 of 48 n6 pairs and all 100 n8 pairs passing the noise limit separately.
 This closes only the tested first atomic reflection-pair escape from the
 measured singleton barrier. It does not prove impossibility for other
 blocks, supports, reflections, counts or all-subset design problems.
+
+## Definitions and assumptions
+
+Canonical anisotropic parity supports, degrees n6/8, physical unweighted
+OLS, fixed B=112/225, and P2's 985-query dense training set are fixed by
+[the P5 protocol](../pruning-protocol.md#p5-prospective-appendix--one-reflection-pair-step).
+Pair feasibility requires min eigenvalue(I−H_JJ)>1e−10, training ratio
+<=1.25, integer-risk ratio <=1.10; finite binary64 computations use the
+registered guards/ties. Sampled/searched values are lower values.
 
 For starting physical-value OLS map C, H=QQ^T, deleted pair J and retained
 indices K, the predicted map used the standard plus-sign identity
@@ -30,7 +49,24 @@ B remains the original 112/225 observations. Unit-noise trace is recorded
 separately and increases on deletion. Haar weighting is only a separate
 control; it is not substituted into physical iid covariance.
 
-## Evidence
+## Negative-result scope
+
+Attempted mechanism: IDEA?padua-3d-20261106-codex-prune-pair, atomic removal
+of one nonfixed x1-reflection pair while preserving all fixed-plane nodes.
+Parameter range: all 48/100 specified pairs on the initial n6/8 supports;
+no full block trajectory, other reflection/support or arbitrary subset.
+The statement concerns measured first-step feasibility under unchanged
+P2 constraints, not a universal lower bound or proof of impossibility.
+
+## Depends on
+
+[Pruning identities](../pruning-theory.md), the
+[parity recipe](u1-parity-recipe.md), physical-noise convention in
+[U1 OLS](u1-ordinary-ls-blue.md), and the separately measured
+[P2 singleton boundary](pruning-p2-singleton-boundary.md). No theorem about
+continuous amplification or optimal design is imported.
+
+## Proof or evidence
 
 | Quantity | n6 | n8 |
 |---|---:|---:|
@@ -60,7 +96,7 @@ Deterministic target errors are mixed: RMS and maximum regressions remain
 in the all-target report, including a 75.99% uniform-query maximum-error
 increase at n8. There is no universal approximation/noise/cost dominance.
 
-## Checks, artifacts and stopping boundary
+## Checks
 
 The [receipt](../evidence/pdpr-pair-screen.json) and
 [results](../pruning-results.md) link the original executed sources,
@@ -88,3 +124,25 @@ open; unused campaign rounds are a ceiling, not a quota.
 2026-11-07, Codex gpt-6.1-sol high developer; root owns publication,
 counters and formal handoff. The useful measured A546/A1163 tradeoffs and
 separately certified exact canonical-ID artifacts remain separate results.
+
+## Sources
+
+Known block-Woodbury/design precedents and coverage limits:
+[gate addendum](../gate-addendum-audit04.md). No new source theorem or
+algorithmic priority is claimed.
+
+## Scope and open items
+
+Only the first specified reflection-pair screen fails. Other blocks,
+supports, weights, budgets and universal subset questions remain OPEN.
+The finite campaign is frozen at 5/15 by AC's approved narrowed plan;
+resume requires an explicitly reopened, prospectively gated question.
+
+## History
+
+2026-11-07: original measured P5 negative, as above. 2026-11-12, Codex,
+gpt-6.1-sol high: audit04 G7 completes the THEORY template, introduces its
+provisional scoped PD-N home and spells out the 45/48 and 100/100 noise
+counts; all measured values and the finite claim are preserved. This is
+record repair, not a new run, theorem or mechanism. Final ID/crosswalk
+application remains PR preparation.

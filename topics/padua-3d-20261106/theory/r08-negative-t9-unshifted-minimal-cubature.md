@@ -70,3 +70,7 @@ The finite complement n<=109 is not classified by this theorem; handoff08's sepa
 ## History
 
 2026-11-06 — Codex records worker, assigned gpt-6.1-sol xhigh; runtime metadata not independently exposed. Rules/input `9042e1c42964150f30fdbe8563c12ba6c6a8692a`. Response08 completes audit03 novelty m2/m3 by splitting already named statements from combined bodies. Statements/statuses are retained; E4's source-label criterion belongs to root and AC. Old pinned bodies are unchanged by this worker.
+
+## 2026-11-12 — settled E4 convention
+
+The existing packing consequence retains **PROVED with explicit LITERATURE dependency** after the primary density normalization and local application were rechecked; only an actual independent lower-cutoff replay can remove that dependency from a finite range. [Primary checks and AC decision](../final-d5/e4-verification.md).

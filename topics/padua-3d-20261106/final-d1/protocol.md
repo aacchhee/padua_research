@@ -34,3 +34,11 @@ The proposed extra step over the deterministic-window sketch is to average trans
 
 Cheapest decisive test: analytic separation bound near zero and continuity of compactly supported sums in the vague topology. No computation planned. Kill the proposed inference if a counting expectation is exchanged through a nonuniformly bounded local count, or if deleting bad nodes costs nonnegligible critical intensity. Subsequent completeness via Bessel plus stationarity/Plancherel will be preregistered separately in R3; orthogonality plus a density slogan is insufficient.
 
+## Round 3 prospective protocol — 2026-11-12, after R2 and before R3
+
+Input: stationary-limit.md (D1-02), finite-frame.md (D1-01), directly read GL1.1 and LM1.1, and sources.md's closest-proof comparison. Await root publication/go. No R3 derivation/computation has executed.
+
+Target: prove that a stationary law of orthogonal exponential sets on O with intensity |O| contains complete spectra almost surely. Define normalized F as in R2. Use Bessel's inequality for a deterministic realization, the mean measure identity (extended by monotone convergence), and Plancherel with exp(2pi i lambda.u). All normalization constants must be written. Establish completeness using countably many rational frequency test exponentials and uniqueness of Fourier transforms of compactly supported L1 functions; do not assert it solely from Beurling density. Then apply GL1.1 only after every hypothesis is checked, and obtain an eventual uniform fixed excess by a fully quantified sequential contradiction.
+
+Cheapest decisive tests: inspect the factor |O| in the Campbell/Plancherel integral; check that simultaneous full-probability statements are countable; check that failure of an eventual excess gives n_r->infinity and N_r/dim Pi_(n_r-1)->1. If any fails, preserve the precise OPEN obligation. No computation planned. General doubling weights stay a separate OPEN extension, not a consequence of Chebyshev reflection. R4 remains the registered adversarial consistency/repair round before final closure.
+

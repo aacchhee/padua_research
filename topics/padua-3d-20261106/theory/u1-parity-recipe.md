@@ -1,4 +1,4 @@
-# PD-T?padua-3d-20261106-usable-U1-recipe — an explicit parity moment solver
+# PD-T?padua-3d-20261106-codex-usable-U1-recipe — an explicit parity moment solver
 
 ID kind: PD-T. Aliases: known parity WLS recipe; retain extra measurements.
 Split from: none; operational restatement of the known T10 parity theorem.

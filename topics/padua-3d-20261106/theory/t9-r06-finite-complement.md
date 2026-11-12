@@ -42,10 +42,10 @@ The global finite-complement problem remains different: unrestricted determinant
 
 ## Template/status clarification — 2026-11-06 response03
 
-ID kind: PD-T. Split from: none. Split into: none; the negative
+ID kind: PD-T. Split from: none. Split into: PD-N?padua-3d-20261106-codex-T9-r06-03 ([r08-negative-t9-parity-oversampling.md](r08-negative-t9-parity-oversampling.md)), all-degree full-family oversampling consequence; the negative
 oversampling consequence has the separate canonical home
 [r08-negative-t9-parity-oversampling.md](r08-negative-t9-parity-oversampling.md)
-as a corollary, not a supporting-task split. Overall **PROVED** for
+as the split-off negative corollary (not an independent supporting-task result). Overall **PROVED** for
 the local analytic family count and Gram identities. Status by part:
 local formulas PROVED; evaluations/tabulations and timed probes provide
 finite verification only. Depends on PD-T?padua-3d-20261106-codex-T10-04.
@@ -55,3 +55,5 @@ complement outside the searched finite ranges; see round08 unrestricted
 records. The old dense-memory figures never measured a lattice census.
 History: response03 supplies template fields and separates family
 verification from the actual unrestricted E3 census.
+
+History 2026-11-12, audit04 G4: reciprocal split mapping recorded for the already separated negative claim(s); statements, proof and status unchanged. Final shared crosswalk application remains PR preparation.

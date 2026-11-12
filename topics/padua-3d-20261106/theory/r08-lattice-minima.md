@@ -105,3 +105,7 @@ Unrestricted determinant minima above16 remain OPEN.
 assigned Sol xhigh. Handoff08 B5, audit03 E1; exact replication and finite
 extension of the existing audit route. Companion rank/complement results
 replace the former catalogue headline without rewriting historical runs.
+
+## 2026-11-12 — settled E4 convention
+
+The existing packing consequence retains **PROVED with explicit LITERATURE dependency** after the primary density normalization and local application were rechecked; only an actual independent lower-cutoff replay can remove that dependency from a finite range. [Primary checks and AC decision](../final-d5/e4-verification.md).

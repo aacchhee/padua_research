@@ -46,7 +46,7 @@ The proof assumes zero phase and strictly positive masses on the full cosine ima
 
 ## Status by part and dated history — 2026-11-06, response03
 
-ID kind: PD-T. Split from: none. Split into: none.
+ID kind: PD-T. Split from: none. Split into: PD-N?padua-3d-20261106-codex-T9-r06-04 ([r08-negative-t9-unshifted-minimal-cubature.md](r08-negative-t9-unshifted-minimal-cubature.md)), strictly positive unshifted minimal-cubature obstruction.
 Betke–Henk's density theorem is LITERATURE, not a locally verified proof;
 the witness and implication are local proofs. Overall: **PROVED with
 explicit LITERATURE dependency**, under the criterion proposed to AC in
@@ -62,3 +62,9 @@ Open: phases, omitted zero-weight supports, self-contained density proof.
 Canonical negative consequence: [PD-N?padua-3d-20261106-codex-T9-r06-04](r08-negative-t9-unshifted-minimal-cubature.md).
 It depends on the determinant/node bound above; it is not a claim that
 task provenance or a supporting lemma is a target partition.
+
+History 2026-11-12, audit04 G4: reciprocal split mapping recorded for the already separated negative claim(s); statements, proof and status unchanged. Final shared crosswalk application remains PR preparation.
+
+## 2026-11-12 — settled E4 convention
+
+The existing packing consequence retains **PROVED with explicit LITERATURE dependency** after the primary density normalization and local application were rechecked; only an actual independent lower-cutoff replay can remove that dependency from a finite range. [Primary checks and AC decision](../final-d5/e4-verification.md).

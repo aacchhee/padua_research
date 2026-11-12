@@ -34,3 +34,5 @@ record establishes Claude's allocation and AC's allowance of Ultra only.
 without their stop rules firing. Handoff04 authorizes restarted T7–T9
 research; it does not supply retrospective acceptance of the old stopping
 decision or of the completion-probe omission. Only AC makes those decisions.
+
+Accepted by AC 2026-11-08 (see LOG).

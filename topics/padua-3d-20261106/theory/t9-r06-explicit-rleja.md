@@ -62,3 +62,7 @@ The supporting external lemma [7,Lemma7] was not read; no local proof of
 the imported theorem is claimed. Lead: Claude audit02:168 (recollection),
 handoff06 T9.U, applying companion correction NV-F13.
 Open: a matching polylogarithmic minimal-node bound.
+
+## 2026-11-12 — settled E4 convention
+
+The R-Leja transfer retains **PROVED with explicit LITERATURE dependency** after the exact difference-operator statement and indexing were rechecked. [Primary checks and AC decision](../final-d5/e4-verification.md).

@@ -389,3 +389,17 @@ mechanism work needs its own structural/prospective scope under the remaining
 budget. No final ID/range was allocated.
 
 2026-11-07 integration clarification: registration-time disposition fields above preserve their prospective state; the completed four-route outcome table records current retained/failed/deferred dispositions and resume conditions.
+
+## Audit04 G5 — F tolerance deviation, 2026-11-12
+
+The registered F rule above says a **relative 1e−9** log-score tie tolerance.
+As executed, `select()` in `code/u3_constructions.py` applies an
+**absolute 1e−9** tolerance to the log score. This is an implementation
+threshold deviation; registration and executed source remain historical.
+[Audit04 B3 MINOR-2](audit-04/B3.md) establishes that no outcome changes:
+F's only tied labels have identical physical node sets and bit-identical
+scores; M/R best-to-runner-up gaps are at least 1.69e−2, while the largest
+relative-equivalent tolerance is 3.5e−7. Thus both tolerances choose the
+same tie set and lexicographic representative. No code change or new
+execution is claimed; ranks, measured quality, dispositions and statuses
+are unchanged. This disclosure is material under the in-doubt rule.

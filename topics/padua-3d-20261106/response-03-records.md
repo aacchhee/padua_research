@@ -203,3 +203,7 @@ existing receipts and audit reports. Code/input/raw hashes and environments
 stay in those records; a new file does not fabricate new execution metadata.
 No new checker pins prose. Root's old-file edits and source-label decisions
 are material integration work for the focused Claude re-audit.
+
+## 2026-11-12 — settled E4 convention
+
+The E4 convention is approved; earlier pending/proposal wording is historical. Existing locally proved statements and their separate source-dependent consequences keep distinct statuses. [Primary checks and AC decision](final-d5/e4-verification.md).

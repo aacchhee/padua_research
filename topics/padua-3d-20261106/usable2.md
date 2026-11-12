@@ -447,3 +447,7 @@ links pass. A focused stale-wording search found no remaining pending
 independent-execution claim. R1 source bytes remain unchanged; the exact
 pre-serialization-fix runner is additionally retained as noted above.
 No Git, shared registry, audit or old handoff file was edited by this worker.
+
+Audit04 G2 revision 2026-11-12: the unchanged C1 recipe passed on the auditor’s hardware; current recipe disposition and preserved original-run failure are recorded in [the dated continuation addendum](u2-continuation.md#audit04-g2--hardware-dependent-c1-disposition-revision-2026-11-12).
+
+Audit04 G6 addendum 2026-11-12: [closest measure-compression/frame-subsampling, classical design, direct Lebesgue-optimization and Gunzburger–Teckentrup comparisons](gate-addendum-audit04.md) qualify the known-method labels here; no original reading/timing or result is reattributed.

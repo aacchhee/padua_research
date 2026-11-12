@@ -44,7 +44,7 @@ The 10% site/risk tolerances are research choices, not AC's requirements.
 If P2 fails, relaxing a tolerance or choosing a favorable checkpoint does
 not turn it into a pass. A useful near-minimal point needs its own test.
 
-## IDEA?padua-3d-20261106-prune-next-01 — site-cost and error Pareto question
+## IDEA?padua-3d-20261106-codex-prune-next-01 — site-cost and error Pareto question
 
 Aliases: count-quality frontier; break-even site charge; fixed-degree
 pruning decision. Main question OPEN; no new selection algorithm.
@@ -98,7 +98,7 @@ pruning decision. Main question OPEN; no new selection algorithm.
   measured frontier would need its own result home.
 - **Topic / audit / history:** this topic; prospective only, no audit claimed.
 
-## IDEA?padua-3d-20261106-prune-next-02 — change support, freeze deletion rule
+## IDEA?padua-3d-20261106-codex-prune-next-02 — change support, freeze deletion rule
 
 Aliases: equal-order parity extraction; richer parity candidate grid;
 support-limited pruning. Main question OPEN.
@@ -155,12 +155,17 @@ support-limited pruning. Main question OPEN.
   equal-order Haar equal-budget risk was slightly worse than anisotropic;
   n16 equal-order OLS budget risk 946.219 was slightly below 948.532.
   Neither observation establishes a useful pruning advantage.
-- **Disposition / reason:** equal-order comparison retained; richer pool
-  deferred pending positive support evidence or a specific coverage need.
+- **Disposition / reason (audit04 G7 revision, 2026-11-12):** deferred,
+  including the equal-order comparison. P3/P4 supplied the concrete useful
+  anisotropic finite tradeoff, while no equal/richer-support advantage had
+  been established before the campaign stopped at 5/15. AC’s narrowed plan
+  freezes further pruning. Resume only after explicit reopening for a
+  concrete matched-count need plus positive support evidence or a specific
+  diagnosed coverage gap; unused rounds do not authorize execution.
 - **Canonical result:** U1/T10 proofs and negatives unchanged; no new PD-N.
 - **Topic / audit / history:** this topic; prospective only, no audit claimed.
 
-## IDEA?padua-3d-20261106-prune-next-03 — delete reflection pairs atomically
+## IDEA?padua-3d-20261106-codex-prune-next-03 — delete reflection pairs atomically
 
 Aliases: symmetry-preserving block pruning; two-row deletion;
 Woodbury pair step. Main question OPEN.
@@ -255,3 +260,5 @@ are distinct. No certificate, replay, delivered subset or size test here.
 
 Priority: Pareto triage; changed support for a matched-count need; pairs
 only after a cheap positive discriminator. Stop below fifteen when warranted.
+
+Audit04 G7 history 2026-11-12: next-01 became P3/P4, next-03 became the completed P5 screen; next-02 is deferred. Current consolidated outcomes and historical provisional aliases are in [pruning-candidates.md](pruning-candidates.md). Prospective “Actual results: none” paragraphs above remain registration-time history, not current outcomes.

@@ -30,7 +30,7 @@ Square reweighting does not change interpolation. Positive projection does
 not imply minimal interpolation. All following work is explicit finite
 operational extension of these known routes; no fresh mechanism is proposed.
 
-## IDEA?padua-3d-20261106-U1c-01 — degree/noise decision at a feasible budget
+## IDEA?padua-3d-20261106-codex-U1c-01 — degree/noise decision at a feasible budget
 
 Aliases: fixed-observation risk envelope; integer replication with degree
 selection; calibrated Chebyshev sensor-field example.
@@ -105,7 +105,7 @@ all38designs eligible, all12x7decisions agree between the two clouds.
 Root's pushed output checkpoint, not this prose, controls the counter.
 
 
-## IDEA?padua-3d-20261106-U1c-02 — re-fit GLS after feasible replication
+## IDEA?padua-3d-20261106-codex-U1c-02 — re-fit GLS after feasible replication
 
 Prospective continuation round2/global U1round4, drafted only after round1's
 positive degree/noise decision. No round2 execution is implied here.

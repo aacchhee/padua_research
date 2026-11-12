@@ -1,6 +1,6 @@
 # PD-T?padua-3d-20261106-codex-T10-09 — complete frozen extraction outcomes
 
-ID kind:PD-T. Aliases: restricted QR verification; exact subset rank. Split from:none. Split into:none. Overall status:**MEASURED**, with exact finite rank certificates and floating mesh quality.
+ID kind:PD-T. Aliases: restricted QR verification; exact subset rank. Split from:none. Split into: PD-N?padua-3d-20261106-codex-r08-T10-extract-QR ([r08-negative-t10-extract-QR.md](r08-negative-t10-extract-QR.md)), unchanged post-kill QR checks; PD-N?padua-3d-20261106-codex-r08-T10-extract-boundary ([r08-negative-t10-extract-boundary.md](r08-negative-t10-extract-boundary.md)), unchanged post-kill boundary checks. Overall status:**MEASURED**, with exact finite rank certificates and floating mesh quality.
 
 Task provenance: handoff06 T10.3 finite extraction outcome; no registered claim was split into conjuncts or cases.
 
@@ -37,3 +37,5 @@ against restricted45.458; the small inherited-order exception depends
 on mesh/ordering. Scoped failure homes are r08-negative-t10-extract-QR.md
 and r08-negative-t10-extract-boundary.md. Numerically invalid structured
 subsets do not establish exact singularity or a universal norm inequality.
+
+History 2026-11-12, audit04 G4: reciprocal split mapping recorded for the already separated negative claim(s); statements, proof and status unchanged. Final shared crosswalk application remains PR preparation.

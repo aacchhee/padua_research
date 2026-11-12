@@ -2,8 +2,8 @@
 
 ID kind: PD-T. Aliases: Phi1 finite witnesses; determinant-only F; cyclic
 U2/U3/U4 quality screen; nearby-order half-grid diagnosis. Split from: none.
-Split into: analytic parity, fold and union-obstruction results have their
-own files and IDs; this record contains their separate measurements only.
+Split into: PD-N?padua-3d-20261106-codex-r08-T8-F ([r08-negative-t8-F.md](r08-negative-t8-F.md)); PD-N?padua-3d-20261106-codex-r08-T8-U2 ([r08-negative-t8-U2.md](r08-negative-t8-U2.md)); PD-N?padua-3d-20261106-codex-r08-T8-U3 ([r08-negative-t8-U3.md](r08-negative-t8-U3.md)); PD-N?padua-3d-20261106-codex-r08-T8-U4 ([r08-negative-t8-U4.md](r08-negative-t8-U4.md)); PD-N?padua-3d-20261106-codex-r08-T8-Phi3-halfgrid ([r08-negative-t8-phi3-selectors.md](r08-negative-t8-phi3-selectors.md)); and PD-T?padua-3d-20261106-codex-T8-r08-02 ([t8-r08-old-finite-existence.md](t8-r08-old-finite-existence.md)), the nine-witness existence statement.
+Analytic parity, fold and union-obstruction claims keep their separate homes.
 
 Dated 2026-11-06 split (auditor pointer added 2026-11-08, see [audit-04-fixes.md](../audit-04-fixes.md)): the Phi1 nine-witness existence statement is split into PD-T?padua-3d-20261106-codex-T8-r08-02 ([t8-r08-old-finite-existence.md](t8-r08-old-finite-existence.md)), proposed computer-assisted PROVED; every quality row here stays MEASURED.
 
@@ -130,3 +130,5 @@ t8-r06-phase-strata.md. Root's independent checker is distinct and must
 record executed reruns before any finite-status upgrade. No final IDs or
 global registry changes are made. 2026-11-06, Codex assigned Sol xhigh,
 rules/input7afa6a54; first restarted boundary prepared for root publication.
+
+History 2026-11-12, audit04 G4: reciprocal headers now name the five already split finite-selector negatives and old-nine existence result. Historical measurements and broader OPEN target unchanged; shared crosswalk application is deferred to PR preparation.

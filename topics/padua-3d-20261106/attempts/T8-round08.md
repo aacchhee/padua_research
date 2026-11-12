@@ -58,8 +58,9 @@ a correction enforcing the existing exact-tie/lex rule, preserving history.
 
 The new correction runner independently builds all380trace-permitted
 cubic C matrices, verifies8nonzero determinants all2^49, and reruns the
-frozen screen. It changes only cubic score evaluation/ties; n5/7 selectors
-and outputs remain unchanged. It selects(1,4,11) and retains the complete
+frozen screen. It changes only cubic score evaluation/ties; the historical
+n5/7 output bytes remain unchanged. The n7 label is corrected in the dated
+audit04 addendum below; unchanged bytes do not establish selector consistency. It selects(1,4,11) and retains the complete
 8-survivor quality table. This is a **post-run repair**, not prospectively
 new selection evidence. Original source and receipt are unchanged; the new
 receipt identifies them. There is no retrofitted Lambda objective or hidden
@@ -110,3 +111,29 @@ not close the broader direction; a new separated inverse/structural idea
 and prospectively new degrees would be needed to resume. No further run
 is needed to complete this assigned3..8scope. Focused Claude re-audit must
 check the new theorem/census, tie repair and optional finite-status upgrade.
+
+## Audit04 G1 — n7 exact-tie label correction, 2026-11-12
+
+The historical receipt selects (1,17,212). Its x3-reflection is
+(1,17,28), since 212=240−28 and the half-grid angle has odd numerator:
+cos((2k+1)π(240−28)/240)=−cos((2k+1)π28/240).
+Reflection permutes polynomial columns up to signs and preserves the cube,
+so absolute determinant, rank, condition2 and continuous Lebesgue constant
+are equal; it also permutes the symmetric tensor-Lobatto query mesh.
+The eight labels in the numerically top orbit are
+(1,17,28), (1,17,212), (1,28,223), (1,44,113), (1,44,127),
+(1,113,196), (1,127,196), (1,212,223). Applying the registered exact-tie
+lexicographic interpretation within that orbit chooses **(1,17,28)**.
+This is the current n7 representative. The original source, receipt and
+rerun identities retain (1,17,212) as execution history.
+
+[Audit04 A2](../audit-04/A2.md) independently established the reflection,
+rank 120 and matching determinant, and evaluated Lambda21 as
+136.69039970499554 (historical 136.69039970499549). Exact maximality of
+this orbit over the full n7 universe remains unproved; the numerical gap
+to the next orbit is log(3). No new execution is claimed here. Lambda,
+controls, D2 assessment, negative statement and statuses are unchanged.
+The n5 representative (1,10,49) already is lexicographically first in its
+four-element tied orbit. The earlier “n5/7 selectors unchanged” description
+was too broad: it described retained output bytes, not consistency with
+mathematical ties.

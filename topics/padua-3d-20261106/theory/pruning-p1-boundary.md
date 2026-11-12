@@ -1,4 +1,4 @@
-# PD-N?padua-3d-20261106-prune-P1 — small-degree A/D pruning quality boundary
+# PD-N?padua-3d-20261106-codex-prune-P1 — small-degree A/D pruning quality boundary
 
 ID kind: PD-N. Aliases: PRUNE-A; PRUNE-D; P1backward-design failure.
 Split from: none. Split into: none. No final ID allocated.
@@ -36,8 +36,8 @@ No floating agreement is labeled a computer-assisted proof.
 
 ## Negative-result scope
 
-Attempted mechanisms: IDEA?padua-3d-20261106-prune-A and
-IDEA?padua-3d-20261106-prune-D. Parameter range: n4/6/8only, the exact
+Attempted mechanisms: IDEA?padua-3d-20261106-codex-prune-A and
+IDEA?padua-3d-20261106-codex-prune-D. Parameter range: n4/6/8only, the exact
 starting supports, physical OLS solver, one start and published thresholds.
 D's determinant objective and A's unit-noise trace objective are distinct.
 Their failure does not reject other deletion orderings, denser training,

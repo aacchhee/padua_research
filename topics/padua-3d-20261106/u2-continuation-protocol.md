@@ -284,3 +284,5 @@ mechanism or historical-novelty gate is invoked by cost granularity.
 C4 planned command:
 
 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/u2c_prefix_control.py --protocol-commit <published-C4-sha> --receipt topics/padua-3d-20261106/evidence/u2c-heldout16.json --scratch <unique-new-dir> --output topics/padua-3d-20261106/evidence/u2c-prefix-control.json`
+
+Audit04 G2 revision 2026-11-12: the unchanged C1 recipe passed on the auditor’s hardware; current recipe disposition and preserved original-run failure are recorded in [the dated continuation addendum](u2-continuation.md#audit04-g2--hardware-dependent-c1-disposition-revision-2026-11-12).

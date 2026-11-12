@@ -318,3 +318,26 @@ The current final executions'1325 actual source/input/raw identities and
 are preserved and excluded from current-source matching as documented;
 the corrected final engineering probes and actual scientific source pins
 match. No further U2 research or numerical run is pending in this worker.
+
+## Audit04 G2 — hardware-dependent C1 disposition revision, 2026-11-12
+
+The historical developer observation remains: 176 accepted steps,
+120.717693505 complete extra CPU seconds, strict C1 cost failure on that
+machine. [Audit04 B2](audit-04/B2.md) executed unchanged `u2c_transfer.py`
+separately: the trajectory agrees byte-for-byte through the developer's
+step-176 output, and 200 steps finish in **116.05 CPU seconds**, with no
+cap hit, searched norm **33.768**, and quality ratios **0.526 / 0.543**
+against one-sweep / five-sweep localdet. The auditor's full C1 gate passes.
+These are the auditor's executions, not a new developer rerun.
+
+The current disposition therefore retains C1 as **hardware-dependent
+MEASURED evidence**. Its historical `REJECTED: failed` applies only to
+the original source/hardware execution under that run's 120-second gate;
+it is withdrawn as a recipe-level rejection. No intrinsic runtime or
+quality failure, all-machine park decision or infeasibility follows.
+C2 was motivated by the original machine's budget pressure and useful
+unfinished prefix. That chronology is preserved, while its motivation
+must not be read as proof that unchanged C1 generally cannot finish.
+C2–C4 remain distinct calibrated experiments with their original gates.
+The campaign remains frozen under AC's approved narrowed plan; the
+hardware rerun does not authorize further U2 research.

@@ -85,3 +85,5 @@ round06 qualifications. The new T8 round08 gate/protocol is published before its
 experiments. The existing-route T9/T10 round08 protocols were written
 before new enumeration per worker attestation, but first published after
 the first executions. No publication-before-run claim is made for them.
+
+Accepted by AC 2026-11-08 (see LOG).

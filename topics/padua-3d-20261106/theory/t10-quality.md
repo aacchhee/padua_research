@@ -1,6 +1,6 @@
 # PD-T?padua-3d-20261106-codex-T10-02 — projection and extraction measurements
 
-ID kind: PD-T. Aliases: T10.2; T10.3. Split from:none. Split into:none. Overall status:**MEASURED**.
+ID kind: PD-T. Aliases: T10.2; T10.3. Split from:none. Split into: PD-N?padua-3d-20261106-codex-r08-T10-extract-QR ([r08-negative-t10-extract-QR.md](r08-negative-t10-extract-QR.md)), frozen QR extraction failure; PD-N?padua-3d-20261106-codex-r08-T10-extract-boundary ([r08-negative-t10-extract-boundary.md](r08-negative-t10-extract-boundary.md)), frozen boundary extraction failure. Overall status:**MEASURED**.
 
 ## Statement, definitions and assumptions
 
@@ -35,3 +35,9 @@ High command is the same producer with `--out topics/padua-3d-20261106/evidence/
 `t10-extraction-complete.md` and its separate receipts now complete the unchanged two extraction rules through n16 and provide exact finite-field full-rank witnesses for all restricted-QR subsets n2..16. The slight restricted-QR mesh win at n8 is retained; n9..16 lose. The final route outcome relies on completed finite coverage rather than interpreting structured numerical ineligibility as the handoff's literal norm kill. Earlier n6/7 measurements are unchanged.
 
 Audit04 note 2026-11-08: "log³ remains OPEN" and "conditional corollary" above are round06 labels; current proposed labels are in [t10-log3-target.md](t10-log3-target.md) and [t10-log3-corollary.md](t10-log3-corollary.md), pending AC's E4 decision ([../response-03.md](../response-03.md)). Audit03 companion T10-m5 ([../audit-03-fixes.md](../audit-03-fixes.md) §B) applies to line 15.
+
+History 2026-11-12, audit04 G4: reciprocal split mapping recorded for the already separated negative claim(s); statements, proof and status unchanged. Final shared crosswalk application remains PR preparation.
+
+## 2026-11-12 — settled E4 convention
+
+The E4 convention is approved; earlier pending/proposal wording is historical. Existing locally proved statements and their separate source-dependent consequences keep distinct statuses. [Primary checks and AC decision](../final-d5/e4-verification.md).

@@ -23,3 +23,7 @@ CONDITIONAL label are historical. The present target has one overall
 status, **PROVED with explicit LITERATURE dependency**, via T10-07;
 removing the external theorem is a distinct OPEN proof task, not a second
 status for this statement. No claim about N-node interpolation follows.
+
+## 2026-11-12 — settled E4 convention
+
+The log³ projection consequence retains **PROVED with explicit LITERATURE dependency** after the fixed-triangulation and Haar-normalization premises were rechecked. [Primary checks and AC decision](../final-d5/e4-verification.md).

@@ -1,4 +1,4 @@
-# PD-T?padua-3d-20261106-pruning-exact12 — a 546-node exact cosine determining set
+# PD-T?padua-3d-20261106-codex-pruning-exact12 — a 546-node exact cosine determining set
 
 ID kind: PD-T. Aliases: pruned12 canonical-ID witness; exact algebraic
 degree-twelve LS support. Split from: none; this exact finite rank claim

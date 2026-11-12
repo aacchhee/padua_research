@@ -116,3 +116,7 @@ deviation records; E4 adds the convention decision above.
 The new T8 gate-reading timing qualification is canonical in
 [its attempt](attempts/T8-round08.md); no retroactive full-table compliance
 or AC acceptance is asserted.
+
+## 2026-11-12 — settled E4 convention
+
+AC approved the convention on 2026-11-08 ([LOG](LOG.md)). The [exact primary statement and application checks](final-d5/e4-verification.md) support **PROVED with explicit LITERATURE dependency** for the existing packing, R-Leja and log³ consequences. Earlier proposal/pending wording above is historical. External proofs are not claimed as local proofs; no broader premise or minimal-node interpolation bound is supplied.

@@ -1,6 +1,6 @@
 # Pruning target and standard deletion identities
 
-Provisional target: `PD-T?padua-3d-20261106-pruning-target`.
+Provisional target: `PD-T?padua-3d-20261106-codex-pruning-target`.
 ID kind: PD-T. Aliases: backward elimination; adaptive row deletion;
 count versus quality. Split from:none. Split into:none. No final allocation.
 Rules/input `6d894d50efd8167c5b10f3d5b0da4d8cf214b681`.

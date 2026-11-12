@@ -21,3 +21,11 @@ Full handoffs 18/19 and AGENTS/WORKFLOW/CODEX read. Complete IDEAS headings, ide
 ## Storage and execution
 
 Every authored file <=32 KiB; total committed generated allowance 10 MB belongs to orchestrator. No third-party text in Git. Network acquisition and PDF extraction only; no scientific CPU batch planned. Failed retrievals and partial reads are recorded as such.
+
+## R1 outcome and prospective R2 preregistration — 2026-11-12
+
+R1 completed primary/coverage-labelled records in `source-records.md` and exact E4 checks in `e4-verification.md`. No numerical/scientific code executed. Failed local retrieval and missing three fulltexts are explicit. D1/D2/D4 received urgent primary statement/locator reports.
+
+**R2 preregistered now, awaiting root publication/go.** Goal: perform note-specific fulltext searches and read closest matched sections for the already developed T1 reflection-coset theorem, T4 monotone-stack exponential lower bound, T7 all-phase n2 classification and T9/T10 lattice minima/packing consequence. Include Cools–Lyness2001, Poppe–Cools2012, Cools–Poppe2011, DMVX2009, Dencker–Erb2017, lower-set/Radon–Berzolari predecessors and Lee/spectral sources. D1 is compared only after its developer reports an actual proved theorem; otherwise it stays OPEN/CONDITIONAL. Record all inaccessible texts and exact scope differences, with no exhaustive novelty/priority claim. Preserve IDEA-199 as a pre-existing Hilbert–Burch/recurrence-residual predecessor, correcting the historical scout's 'never derived' impression in the new note without editing the protected frontier record.
+
+Cheapest separation test is statement comparison: same class, parameter range, invariant and conclusion kills any proposed distinction. This is record work only; no construction or optimization run, no candidate generation, no shared registry edits. Authored gate record <=32KiB; no third-party texts in Git.

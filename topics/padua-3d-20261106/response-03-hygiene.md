@@ -31,3 +31,21 @@ python topics/padua-3d-20261106/code/r08_hygiene.py pins --out topics/padua-3d-2
 Default census input: `/tmp/padua-t10-20261106-7afa6a54/census.json`; default quality input: `/tmp/padua-t10-20261106-7afa6a54/t10-quality-raw.json`. Both can be overridden with `--census` and `--quality-raw`. The 51-path check reconstructs the inventory from source-linked committed receipts, then reads each recorded local raw path. Regeneration is required if these transient files are absent; this result does not claim cold-storage delivery or future availability. Timings are recorded per receipt; Python 3.12.14, numpy 2.3.5, scipy 1.17.0 and sympy 1.14.0 were used.
 
 All eight new JSON files are below 16 KiB (largest 8,639 bytes). No mathematical status is upgraded by this developer replay. A separate audit remains required for the material source/evidence changes. Optional broader manifest suffix/subdirectory guard hardening is outside this worker's changes; the orchestrator owns the final manifest and its regeneration.
+
+## Audit04 G3 — retirement of legacy current-pins replay, 2026-11-12
+
+The `r08_hygiene.py pins` command above and its
+`evidence/independent-r06-pins.json` input are **retired as a current-head
+replay**. The JSON's “Current code/data audit pins” label describes its
+historical revision only and is superseded by this dated note. Its bytes
+are preserved, including the v5 artifact_manifest.py identity, because the
+historical `r08-hygiene-pins.json` receipt records an actual earlier check.
+At audit04 the command fails on the newer manifest-generator hash; this
+is accepted, not a scientific failure and not evidence of a current pass.
+
+Current artifact integrity is checked by the master manifest's documented
+`artifact_manifest.py --verify` command, with the current generator and
+manifest recorded by the orchestrator. The retired command is retained
+above only under **Commands actually executed** as history; it is not an
+instruction for current verification. Other historical execution identities
+are not reattributed. No new pin-check execution is claimed.

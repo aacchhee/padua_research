@@ -1,4 +1,4 @@
-# PD-T?padua-3d-20261106-prune-P4 — measured degree16near-minimal transfer
+# PD-T?padua-3d-20261106-codex-prune-P4 — measured degree16near-minimal transfer
 
 ID kind: PD-T. Aliases: A1163; degree16calibrated frontier transfer.
 Split from: none. Split into: none. No final ID allocated.

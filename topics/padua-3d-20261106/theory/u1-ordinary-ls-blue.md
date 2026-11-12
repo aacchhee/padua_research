@@ -1,4 +1,4 @@
-# PD-T?padua-3d-20261106-usable-U1-OLS — same-node covariance comparison
+# PD-T?padua-3d-20261106-codex-usable-U1-OLS — same-node covariance comparison
 
 ID kind: PD-T. Aliases: ordinary least squares; Gauss–Markov right inverse.
 Split from: none. Split into: none. No final ID allocated.

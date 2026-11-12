@@ -1,4 +1,4 @@
-# PD-T?padua-3d-20261106-usable-U1-noise — covariance of the parity solver
+# PD-T?padua-3d-20261106-codex-usable-U1-noise — covariance of the parity solver
 
 ID kind: PD-T. Aliases: iid observation risk; fixed total sampling budget.
 Split from: none. Split into: none. No final ID allocated.

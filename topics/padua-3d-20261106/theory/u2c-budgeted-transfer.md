@@ -33,8 +33,10 @@ why literal prospective operation/checkpoint adherence is not claimed.
 ## Status by part
 
 Overall status: **MEASURED**.
-Candidate disposition: **REJECTED: failed**, solely the fixed200-step/
-120-extraCPU degree14 extension under the recorded actual implementation.
+Candidate disposition (revised 2026-11-12): **retained, hardware-dependent**.
+Historical **REJECTED: failed** applies solely to the original developer
+execution and its strict 120-extraCPU gate; it is not the current
+disposition of the fixed 200-step recipe.
 Neither the U2-AB pilot gates at degrees6/8 and holdout gates10/12 nor the general objective,
 all direct optimization, shortened schedules, or all-degree target is
 rejected. All-degree stable minimal interpolation remains OPEN.
@@ -86,7 +88,9 @@ Formal Claude audit remains pending.
 
 ## Open items
 
-The fixed120-second/200-step extension is parked. The strong finite
+Further U2 research is frozen by AC’s approved narrowed plan. The fixed
+120-second/200-step recipe is not intrinsically rejected or parked on
+mathematical or hardware-independent cost grounds. The strong finite
 benefit permitted the separately completed training-only cost calibration and
 shorter-schedule degree16 holdout, recorded in
 [u2c-shortened-transfer](u2c-shortened-transfer.md); those do not erase this
@@ -99,3 +103,14 @@ broad error/noise dominance remain unresolved.
 Input97c323bfae15cf3c76f40802c3ebabedceeb0c60. C1 actually executed
 following prospective publication; deviation discovered during execution
 is preserved in the canonical continuation record, never silently fixed.
+
+## History and independent timing scope — audit04 G2, 2026-11-12
+
+Audit04 B2's unchanged rerun completes 200 steps in 116.05 CPU seconds,
+with no cap and norm 33.768, ratios 0.526/0.543: the full C1 gate passes
+on that execution. Its trajectory through step 176 matches the original.
+The negative statement above remains MEASURED for the original run only;
+it does not assert that the recipe fails on other hardware. The current
+recipe disposition is retained hardware-dependent evidence. Canonical
+chronology and C2 interpretation: [dated continuation revision](../u2-continuation.md#audit04-g2--hardware-dependent-c1-disposition-revision-2026-11-12).
+No developer rerun was performed for this record correction.

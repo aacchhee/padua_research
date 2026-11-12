@@ -29,10 +29,10 @@ Retain all four rule records, including failed/deferred outcomes:
 
 |Provisional idea|Rule and closest predecessor|Separation / cheapest falsifier|
 |---|---|---|
-|IDEA?padua-3d-20261106-prune-A|Backward A-optimal deletion: minimize increase of tr((A^T A)^-1). Known backward design / inherited OLS risk.|Current support score, not frozen QR. A fresh QR map must agree with predicted risk and reproduce polynomials; failure invalidates the numerical path.|
-|IDEA?padua-3d-20261106-prune-D|Backward determinant deletion: minimize current leverage h_i. Known backward D-optimal design / approximate Fekete.|Different objective from A: minimize determinant loss, not iid integrated variance. Identical observed paths remain equivalent finite outcomes, not distinct gains.|
-|IDEA?padua-3d-20261106-prune-random|Seeded random deletion among currently rank-admissible rows; control only.|Same initial nodes/count/solver; no optimization claim. Rank failure is retained rather than repaired by a quality-driven restart.|
-|IDEA?padua-3d-20261106-prune-lex|Canonical-order rank-admissible deletion; deterministic control only.|Separates score benefit from deleting any rows. It is not T10's boundary priority rule.|
+|IDEA?padua-3d-20261106-codex-prune-A|Backward A-optimal deletion: minimize increase of tr((A^T A)^-1). Known backward design / inherited OLS risk.|Current support score, not frozen QR. A fresh QR map must agree with predicted risk and reproduce polynomials; failure invalidates the numerical path.|
+|IDEA?padua-3d-20261106-codex-prune-D|Backward determinant deletion: minimize current leverage h_i. Known backward D-optimal design / approximate Fekete.|Different objective from A: minimize determinant loss, not iid integrated variance. Identical observed paths remain equivalent finite outcomes, not distinct gains.|
+|IDEA?padua-3d-20261106-codex-prune-random|Seeded random deletion among currently rank-admissible rows; control only.|Same initial nodes/count/solver; no optimization claim. Rank failure is retained rather than repaired by a quality-driven restart.|
+|IDEA?padua-3d-20261106-codex-prune-lex|Canonical-order rank-admissible deletion; deterministic control only.|Separates score benefit from deleting any rows. It is not T10's boundary priority rule.|
 
 For full-column-rank current A and raw row a_i, G=A^T A,
 h_i=a_i^T G^-1 a_i, u_i=G^-1 a_i, deletion is admissible only when
@@ -185,7 +185,7 @@ its existing full curves. Noise alone permits A only5.36%/4.89%site saving
 at n6/8 under the10%fixed-B risk allowance. These observations motivate a
 distinct, cheap constraint-aware deletion question, not a threshold change.
 
-Candidate IDEA?padua-3d-20261106-prune-L: known backward deletion choosing
+Candidate IDEA?padua-3d-20261106-codex-prune-L: known backward deletion choosing
 raw-value amplification among **all currently feasible one-row deletions**.
 The closest P1A/D rules optimize noise/determinant alone; the separation is
 the actual raw-cardinal objective and feasibility search. The existing
@@ -301,7 +301,7 @@ amplification than tested minimum-count controls at the cost of33additional
 sites. Individual function regressions and the much better full-grid
 amplification remain explicit. No mathematical Pareto optimality is claimed.
 
-Candidate IDEA?padua-3d-20261106-prune-Pareto: the known A deletion rule
+Candidate IDEA?padua-3d-20261106-codex-prune-Pareto: the known A deletion rule
 at a **prespecified absolute count**, under a changed operational objective.
 The gate/next-questions note clears this as finite matched-count research,
 not a new method. Choose A by its already known lower noise at198sites;
@@ -495,7 +495,7 @@ unchanged. No full paired trajectory, broader orbit search or altered
 threshold follows automatically. This is a distinct atomic operation,
 not a renamed singleton rule or a retroactive P2success.
 
-Candidate IDEA?padua-3d-20261106-prune-pair: known symmetry-preserving
+Candidate IDEA?padua-3d-20261106-codex-prune-pair: known symmetry-preserving
 block deletion. The complete predecessor gate and standard plus-sign
 Woodbury formula are in pruning-next-questions.md. The question is whether
 a feasible **two-row final state** can escape P2's measured first-step
@@ -579,3 +579,7 @@ are not a quota; a negative screen closes this cheap route.
 Planned command:
 
 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python topics/padua-3d-20261106/code/pdpr_run.py --round pair_screen --protocol-commit <published-P5-sha> --reference topics/padua-3d-20261106/evidence/pdpr-pilot.json --pair-reference topics/padua-3d-20261106/evidence/pdpr-constrained.json --scratch <new-unique-dir> --output topics/padua-3d-20261106/evidence/pdpr-pair-screen.json`
+
+Audit04 G6 addendum 2026-11-12: [closest measure-compression/frame-subsampling, classical design, direct Lebesgue-optimization and Gunzburger–Teckentrup comparisons](gate-addendum-audit04.md) qualify the known-method labels here; no original reading/timing or result is reattributed.
+
+Audit04 G7 record completion 2026-11-12: [full IDEA records, current dispositions and provisional-ID alias map](pruning-candidates.md). Historical protocol wording remains preregistration evidence; these retrospective template fields do not establish earlier publication.

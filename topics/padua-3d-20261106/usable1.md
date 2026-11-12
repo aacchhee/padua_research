@@ -47,7 +47,7 @@ IDEA208/209 bodies in programme-ideas `ideas/candidates.md`404–448 and
 complete LIT385/386/391 baseline rows. No original-source coverage was
 enlarged. The following two records and protocol precede execution.
 
-### IDEA?padua-3d-20261106-usable-U1-C1 — operational parity WLS recipe
+### IDEA?padua-3d-20261106-codex-usable-U1-C1 — operational parity WLS recipe
 
 Aliases: retain extra measurements; anisotropic Haar moments; explicit
 three-dimensional parity least squares; corrected hyperinterpolation.
@@ -92,7 +92,7 @@ three-dimensional parity least squares; corrected hyperinterpolation.
   `theory/u1-operational-comparison.md` for finite observations.
 - Topic/history: this record, 2026-11-07; no completed audit yet.
 
-### IDEA?padua-3d-20261106-usable-U1-C2 — same-node iid-noise solver
+### IDEA?padua-3d-20261106-codex-usable-U1-C2 — same-node iid-noise solver
 
 Aliases: ordinary least squares on parity nodes; Haar-WLS versus OLS;
 Gauss–Markov covariance comparison; uniform observation noise.

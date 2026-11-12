@@ -55,3 +55,7 @@ Closest literature: Cools–Poppe, Poppe–Cools and De Marchi–Vianello–Xu. 
 History:2026-11-06 Codex Sol xhigh assigned; self-contained supporting result developed while attempting the unresolved log³ target. Metadata later clarified that this is a supporting dependency, not a conjunctive claim split.
 
 Audit04 note 2026-11-08: "log³ remains OPEN in a separate target" describes the round06 state; the current proposed label is in [t10-log3-target.md](t10-log3-target.md), pending AC's E4 decision ([../response-03.md](../response-03.md)).
+
+## 2026-11-12 — settled E4 convention
+
+The E4 convention is approved; earlier pending/proposal wording is historical. Existing locally proved statements and their separate source-dependent consequences keep distinct statuses. [Primary checks and AC decision](../final-d5/e4-verification.md).

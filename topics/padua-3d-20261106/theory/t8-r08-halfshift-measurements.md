@@ -47,7 +47,7 @@ as Leja losses.
 |4|35|all,analytic|none|undefined|not run|not run|0|
 |5|56|6105|(1,10,49)|70.372944840|26.336615338|13.857502185|1.3953/3.4098|
 |6|84|all,analytic|none|undefined|not run|not run|0|
-|7|120|28441|(1,17,212)|136.690399705|49.812587823|26.935072319|15.2479/17.8156|
+|7|120|28441|(1,17,28)|136.690399705|49.812587823|26.935072319|15.2479/17.8156|
 |8|165|all,analytic|none|undefined|not run|not run|0|
 
 The table's times include each degree's certificates/quality; the receipt
@@ -126,3 +126,13 @@ The broader T8 target remains OPEN.
 2026-11-06,Codex mathematical developer assigned gpt-6.1-sol xhigh,
 rules9042e1c, gate69694f3. The exact tie repair and this new finite negative
 record are material changes for focused Claude re-audit.
+
+## History — audit04 G1, 2026-11-12
+
+Current n7 representative is (1,17,28), the lexicographically first label
+in the exactly tied reflection orbit containing the historical executed
+(1,17,212). The table's time and quality remain those of that historical
+execution, transferred by the exact cube/mesh reflection; no new timing
+or global determinant maximality is asserted. Canonical chronology,
+full orbit and symmetry argument: [T8 attempt](../attempts/T8-round08.md#audit04-g1--n7-exact-tie-label-correction-2026-11-12).
+The finite MEASURED failure and D2 assessment remain unchanged.

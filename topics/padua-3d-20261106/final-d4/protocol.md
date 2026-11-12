@@ -90,7 +90,7 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/fd
 ```
 
 fd4_certify.py SHA256:
-83e3a32525c891da9ce49929b2b22e1712864439e1a12e3cd15f0d5b18f781cc.
+1bd5d1eb1183e11e4c89f3d303f280b7b6776d429d8b6f2316312b9e8351a8d2.
 fd4_lee.py SHA256:
 acc2328ddafeec1cc90c76e0f97ffb7257f1f5dfa74282076f8a34eaa0f2b69e.
 Producer enumerator:
@@ -98,6 +98,8 @@ e07ad9e51d5b883e7c6d813d396ef32ea0ac24eda253a73f6137f8b8f86feaa4.
 Auditor enumerator:
 d39563b9340bb0e8384031dac36e2050efb0ab6953c64e165e4006eaca9be503.
 
-Generated receipts≤32KiB each, repository allowance10MB. Scratch regenerate
+Generated receipts≤32KiB each, repository allowance10MB. Retain each QR
+set as a lossless base85 binary64 payload in evidence/fd4-qr-nN-nodes.json
+(each≤32KiB), so exact finite witnesses remain inspectable. Scratch regenerate
 only; identities retained. Do not split files to evade size limits. No
 shared registries, Git, handoffs or other-topic files are worker-owned.

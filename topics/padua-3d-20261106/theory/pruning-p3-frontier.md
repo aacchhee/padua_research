@@ -1,4 +1,4 @@
-# PD-T?padua-3d-20261106-prune-P3 — measured near-minimal tradeoff transfer
+# PD-T?padua-3d-20261106-codex-prune-P3 — measured near-minimal tradeoff transfer
 
 ID kind: PD-T. Aliases: A-fixed-count frontier;198/546-site tradeoff.
 Split from: none. Split into: none. No final ID allocated.

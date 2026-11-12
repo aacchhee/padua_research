@@ -1,4 +1,4 @@
-# PD-T?padua-3d-20261106-pruning-exact16 — a 1163-node exact cosine determining set
+# PD-T?padua-3d-20261106-codex-pruning-exact16 — a 1163-node exact cosine determining set
 
 ID kind: PD-T. Aliases: pruned16 canonical-ID witness; A1163 exact support.
 Split from: none; this finite exact-rank claim is distinct from P4's

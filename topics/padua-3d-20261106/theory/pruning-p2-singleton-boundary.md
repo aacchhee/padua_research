@@ -1,4 +1,4 @@
-# PD-N?padua-3d-20261106-prune-P2 — initial singleton feasibility boundary
+# PD-N?padua-3d-20261106-codex-prune-P2 — initial singleton feasibility boundary
 
 ID kind: PD-N. Aliases: PRUNE-L; exhaustive raw-cardinal constrained deletion.
 Split from: none. Split into: none. No final ID allocated.
@@ -35,7 +35,7 @@ enumeration is not an exact computer-assisted proof or a supremum bound.
 
 ## Negative-result scope
 
-Attempted mechanism: IDEA?padua-3d-20261106-prune-L, exhaustive feasible
+Attempted mechanism: IDEA?padua-3d-20261106-codex-prune-L, exhaustive feasible
 single-row backward removal with raw row-l1 objective. Scope: the **initial**
 n6/n8supports, prescribed training queries,25%norm and10%integer-risk
 constraints, fixed physical solver/measure/budget. It is a first-step

@@ -1,4 +1,4 @@
-# PD-T?padua-3d-20261106-usable-U1-measurements — parity accuracy, noise and cost
+# PD-T?padua-3d-20261106-codex-usable-U1-measurements — parity accuracy, noise and cost
 
 ID kind: PD-T. Aliases: usable oversampled least squares; Haar versus OLS.
 Split from: none. Split into: none. No final ID allocated.

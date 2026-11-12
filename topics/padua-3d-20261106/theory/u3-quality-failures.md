@@ -88,3 +88,5 @@ structural/competitive extension condition did not hold. All four initial
 registered routes have actual finite outcomes, without declaring the broad
 U3direction exhausted or consuming its20-round ceiling.
 2026-11-07, Codex assigned gpt-6.1-sol xhigh, rules3822720.
+
+Audit04 G5 disclosure 2026-11-12: F executed absolute rather than registered relative 1e−9 log-score ties; [canonical disclosure and outcome-invariance evidence](../usable3.md#audit04-g5--f-tolerance-deviation-2026-11-12).

@@ -109,7 +109,13 @@ def main():
             x=candidate[piv[:math.comb(n+3,3)]].copy();inputid={'generator':'QR on (2n+1)^3 rounded Lobatto grid; fd4 basis order'}
         assert len(x)==math.comb(n+3,3) and len(np.unique(x,axis=0))==len(x) and np.max(abs(x))<=1
         nodefile=a.scratch/f'n{n}-{a.family}.npy';np.save(nodefile,x)
-        row={'n':n,'family':a.family,'input':inputid,'nodes':ident(nodefile),'coordinates_sha256':hashlib.sha256(x.astype('<f8').tobytes()).hexdigest()}
+        raw=x.astype('<f8').tobytes()
+        payloadfile=TOP/'evidence'/f'fd4-{a.family}-n{n}-nodes.json'
+        payload=json.dumps({'n':n,'N':len(x),'dtype':'<f8','shape':[len(x),3],'coordinates_sha256':hashlib.sha256(raw).hexdigest(),'coordinates_base85':base64.b85encode(raw).decode()},separators=(',',':'))+'\n'
+        assert len(payload.encode())<=32768
+        if a.family=='qr': payloadfile.write_text(payload)
+        row={'n':n,'family':a.family,'input':inputid,'nodes':ident(nodefile),'coordinates_sha256':hashlib.sha256(raw).hexdigest()}
+        if a.family=='qr': row['essential_payload']=ident(payloadfile)
         row['gram']=diagnostic(x,n);row['certificate']=certificate(x,n,a.m,a.cap);row['total_seconds']=time.monotonic()-started;rows.append(row)
         payload=json.dumps(out,separators=(',',':'))+'\n';assert len(payload.encode())<=32768;a.output.write_text(payload)
         print(json.dumps({'n':n,'family':a.family,'gram':row['gram'],'certificate':row['certificate']['status'],'interval':row['certificate'].get('interval_display'),'seconds':row['total_seconds']}),flush=True)

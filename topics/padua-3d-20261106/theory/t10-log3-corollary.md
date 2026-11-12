@@ -32,3 +32,7 @@ from CONDITIONAL, based on the uniform source criterion in
 convention decision. Source coverage has not increased. A wholly local
 octahedral log³ proof remains an OPEN follow-up; minimal-node interpolation
 is also OPEN. Audit03 independently accepted applicability of Thm4.1.
+
+## 2026-11-12 — settled E4 convention
+
+The log³ projection consequence retains **PROVED with explicit LITERATURE dependency** after the fixed-triangulation and Haar-normalization premises were rechecked. [Primary checks and AC decision](../final-d5/e4-verification.md).

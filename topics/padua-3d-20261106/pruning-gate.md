@@ -149,3 +149,7 @@ other supports, other weights, or a degree-uniform interpolation theorem.
 before release of candidate-specific registration. No scientific pruning
 execution, audit acceptance, shared-registry edit or Git mutation by this
 worker. Exact identity checks are routine verification, not research rounds.
+
+Audit04 G6 addendum 2026-11-12: [closest measure-compression/frame-subsampling, classical design, direct Lebesgue-optimization and Gunzburger–Teckentrup comparisons](gate-addendum-audit04.md) qualify the known-method labels here; no original reading/timing or result is reattributed.
+
+Audit04 G7 record completion 2026-11-12: [full IDEA records, current dispositions and provisional-ID alias map](pruning-candidates.md). Historical protocol wording remains preregistration evidence; these retrospective template fields do not establish earlier publication.
