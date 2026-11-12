@@ -29,16 +29,16 @@ So the lower bound N ≥ f(0)/(8c₀) obtained from record -02 (a) and M ≤ 8N 
 
 ## Status
 
-**PROVED** (exact finite check; the reduction is record -04 (b)). The witnesses are verified by two separate code paths (Evidence). The search that found them is heuristic; that does not matter, because only the verified witnesses are used.
+**PROVED** (exact finite check; the reduction is record -04 (b′)). The witnesses are verified by two separate code paths (Evidence). The search that found them is heuristic; that does not matter, because only the verified witnesses are used.
 
 ## Depends on
 
-- Record -04 (b), with its exactness-E remark: if L avoids 0 < |k|₁ ≤ E, then every f admissible at exactness E has f(0)/c₀ ≤ [ℤ³ : L]. A lattice with minimum ℓ₁ ≥ 2n avoids both 0 < |k|₁ ≤ 2n−1 and 0 < |k|₁ ≤ 2n−2. Plain-LP polynomials are Delsarte-admissible, with vacuous sign conditions.
+- Record -04 (b′): if L avoids 0 < |k|₁ ≤ E, then every f admissible at exactness E has f(0)/c₀ ≤ [ℤ³ : L]. A lattice with minimum ℓ₁ ≥ 2n avoids both 0 < |k|₁ ≤ 2n−1 and 0 < |k|₁ ≤ 2n−2. Plain-LP polynomials are Delsarte-admissible, with vacuous sign conditions.
 - Record -02 (a), (d) and D1-01 (M ≤ 8N).
 
 ## Proof
 
-Let n ∈ S, let L_n be its witness and let f be as in the Consequence. By record -04 (b), f(0)/c₀ ≤ [ℤ³ : L_n] ≤ 8·binom(n+3,3). Hence f(0)/(8c₀) ≤ binom(n+3,3). A rule with N = binom(n+3,3) is therefore consistent with every bound of this form. ∎
+Let n ∈ S, let L_n be its witness and let f be as in the Consequence. By record -04 (b′) with E = 2n−1, f(0)/c₀ ≤ [ℤ³ : L_n] ≤ 8·binom(n+3,3). Hence f(0)/(8c₀) ≤ binom(n+3,3). A rule with N = binom(n+3,3) is therefore consistent with every bound of this form. ∎
 
 The finite facts used are |det A_n| and min_{0≠c} |A_nc|₁ ≥ 2n for each n ∈ S. They are checked as follows.
 
@@ -53,7 +53,7 @@ The finite facts used are |det A_n| and min_{0≠c} |A_nc|₁ ≥ 2n for each n 
   Each accepted witness passes an exhaustive coefficient-box test. For k = Ac with |k|₁ ≤ E, c = A⁻¹k gives |c_i| ≤ max_j |(A⁻¹)_{ij}|·E, in exact rationals, so the box covers every such k.
 - **Second, independent path.** `code/pdn_check_ball.py` enumerates the whole ℓ₁ ball |k|₁ ≤ E directly and tests membership by adj(A)k ≡ 0 (mod det A) in exact int64 arithmetic, with an overflow guard. It also recomputes |det A|. It shares no code with the search's exhaustiveness argument.
   - Negative controls: ℤ³ fails at E = 1; 7ℤ³ passes at E = 6 and fails at E = 7.
-- **Cross-check with merged results.** `topics/padua-3d-20261106/theory/r08-lattice-minima.md` gives the exact minimum det for min ℓ₁ ≥ 2n, n ≤ 16. Every witness index here is ≥ that minimum, and at n = 9, 12, 15 they are equal (1026, 2432, 4750). For n ≤ 16 the merged minima alone would give the same conclusion; this record does not depend on them.
+- **Cross-check with merged results.** `topics/padua-3d-20261106/theory/r08-lattice-minima.md` gives the exact minimum det for min ℓ₁ ≥ 2n, n ≤ 16. Every witness index here is ≥ that minimum, and at n = 3, 6, 9, 12, 15 they are equal (38, 304, 1026, 2432, 4750). For n ≤ 16 the merged minima alone would give the same conclusion; this record does not depend on them.
 - **Commands and outputs.** See the Checks section and `../evidence-manifest.json`.
 
 ## Checks
@@ -63,7 +63,7 @@ CHECKS_PLACEHOLDER
 ## Open items
 
 - Degrees not in S between 4 and the uniform threshold 110 (record -03 (iv)), if any: OPEN for this method.
-- n ≥ 110: the torus route may or may not exclude packages there; whether it does depends on the finite LP values, which are not known.
+- n ≥ 110: no lattice witness of this kind can exist. The lattice packing bound for the octahedron (Minkowski, via Betke–Henk; LITERATURE, as in `topics/padua-3d-20261106/theory/r08-lattice-minima.md`) gives det L ≥ 38n³/27 for min ℓ₁ ≥ 2n, and 38n³/27 > 8·binom(n+3,3) for n ≥ 110 (the same cubic as record -03 (iv)). So 2…109 is the most this witness method can cover. Whether the torus LP excludes packages at some n ≥ 110 depends on finite LP values that are not known (independent check E1b NOTE-1).
 
 ## History
 

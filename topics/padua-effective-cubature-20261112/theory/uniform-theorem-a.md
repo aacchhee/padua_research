@@ -1,4 +1,4 @@
-# PD-T?padua-effective-cubature-20261112-claude-03 — Theorem A in uniform form: N ≥ (1+γ_A)(2n−1)³/48 for every n, with γ_A = (3/4)D(int 2O) − 1 > 0
+# PD-T?padua-effective-cubature-20261112-claude-03 — Theorem A in uniform form: N ≥ (1+γ_A)n³/6 for every n (exactness 2n−1; (2n−1)³/48 at exactness 2n−2), with γ_A = (3/4)D(int 2O) − 1 > 0
 
 ID kind: PD-T.
 Aliases: uniform Theorem A; Delsarte proof of Theorem A; E1 main result.
@@ -80,7 +80,7 @@ D1-04's hypotheses (closed-cube nodes, positivity, exactness 2n−1) are exactly
 ## Scope
 
 - Positive weights; nodes in the closed cube; exactness 2n−2 suffices.
-- (ii′) decides no finite n ≤ 109, and by (iv) it cannot. That is all that is proved about n ≤ 109: nothing is proved about whether packages exist there. For n ≥ 110, exclusion holds only from the unknown threshold n₀(γ_A) ≥ 110 on.
+- (ii′) decides no finite n ≤ 109, and by (iv) it cannot. That is all that is proved about n ≤ 109: nothing is proved about whether packages exist there. For n ≥ 110, exclusion holds only from the package threshold n_P(γ_A) on: the least n from which (1+γ_A)m³ > (m+1)(m+2)(m+3) for all m ≥ n. It is unknown, and n_P(γ_A) ≥ 110 (independent check E1b MINOR-2: this is distinct from the n₀(γ, γ_A) of (iii)).
 - Even with γ_A = 1/18, (ii′) is weaker than the classical bound N ≥ binom(n+2,3) for every n ≤ 54 (19n² ≤ 18(n+1)(n+2) there), and first improves on it at n = 55. The (ii) form is weaker for n ≤ 82 (independent check E1-m5). "Uniform" means valid at every n with one constant, not stronger at every n.
 - n₀ in (iii) is explicit only as a function of the unknown γ_A.
 - No signed-weight conclusion is drawn.

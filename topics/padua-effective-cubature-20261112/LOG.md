@@ -63,7 +63,7 @@
   - The package threshold under γ_A ≤ 1/18 moves from 138 to **110**; the exact integer check is in -03.
   - This matches the merged lattice-class threshold of `topics/padua-3d-20261106/paper-note-draft.md` §4 (19n³/108, n ≥ 110), which is the case γ_A = 1/18.
   - -04 and -05 updated. Records -02, -03, -04 and -05 have dated history notes.
-- **-06 (PD-N).** `code/pdn_lattice_witness.py` searched for integer lattices with min ℓ₁ ≥ 2n and index ≤ 8·binom(n+3,3), using critical-lattice roundings, ±1 perturbations and the subagent's lattices. Each witness is verified by exhaustive coefficient-box enumeration. Result and range: record -06 and `evidence/pdn-lattice-witness.json`. Cross-check: the witnesses at n = 9, 12, 15 equal the merged exact minima of `r08-lattice-minima.md` (1026, 2432, 4750), and every witness is ≥ the merged minimum.
+- **-06 (PD-N).** `code/pdn_lattice_witness.py` searched for integer lattices with min ℓ₁ ≥ 2n and index ≤ 8·binom(n+3,3), using critical-lattice roundings, ±1 perturbations and the subagent's lattices. Each witness is verified by exhaustive coefficient-box enumeration. Result and range: record -06 and `evidence/pdn-lattice-witness.json`. Cross-check: the witnesses at n = 3, 6, 9, 12, 15 equal the merged exact minima of `r08-lattice-minima.md` (38, 304, 1026, 2432, 4750), and every witness is ≥ the merged minimum.
 - **Candidates.**
   - Cube LP -03: killed for n = 3, 4 (MEASURED), deferred for n ≥ 5.
   - New pending candidate -06: Delsarte extension of the cube LP.

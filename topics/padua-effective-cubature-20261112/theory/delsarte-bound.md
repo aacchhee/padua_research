@@ -1,7 +1,7 @@
-# PD-T?padua-effective-cubature-20261112-claude-02 — Delsarte LP bound for positive cube cubature, finite and continuous forms
+# PD-T?padua-effective-cubature-20261112-claude-02 — Delsarte LP bound for positive cube cubature, finite and continuous forms (exactness 2n−2: L = n−½; exactness E: L = (E+1)/2)
 
 ID kind: PD-T.
-Aliases: E1 Delsarte transference; torus Delsarte bound; M ≥ (n−1/2)³ D(2O).
+Aliases: E1 Delsarte transference; torus Delsarte bound; M ≥ (n−1/2)³ D(2O); M ≥ n³D(2O) at exactness 2n−1.
 Split from: none. It supports the separate records -03 (uniform Theorem A), -04 (cap) and -05 (explicit-constant target).
 Split into: none.
 
@@ -61,7 +61,7 @@ Overall status: **PROVED** (local elementary proof; no external theorem).
 
 ## Depends on
 
-- PD-T?padua-3d-20261106-codex-D1-01 (finite-frame.md), for the lift and its exactness for 0 < |k|₁ ≤ 2n−2 and M ≤ 8N. Its hypotheses are exactness on Π_{2n−2} and nodes in the closed cube.
+- PD-T?padua-3d-20261106-codex-D1-01 (finite-frame.md), for the lift and its exactness for 0 < |k|₁ ≤ 2n−2 and M ≤ 8N. Its hypotheses are exactness on Π_{2n−2} and nodes in the closed cube. Part (d) extends the exactness statement to general E with the same computation, written out below.
 - Elementary harmonic analysis: Fourier inversion for continuous φ with φ, φ̂ ∈ L¹; uniqueness of Fourier coefficients on L¹(𝕋³).
 
 ## Proof

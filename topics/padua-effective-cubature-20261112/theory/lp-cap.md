@@ -10,6 +10,8 @@ Split from: none. Split into: none.
 
 **(b) Finite.** Fix n and K ≥ 2n−2. Let L ⊂ ℤ³ be any sublattice with L ∩ {k : 0 < |k|₁ ≤ 2n−2} = ∅. Then every f admissible in record -02 (a) satisfies f(0)/c₀ ≤ [ℤ³ : L]. So the finite torus Delsarte optimum R^Del_{n,K}, and with it the plain optimum R_n, is at most the least such index M_lat(n).
 
+**(b′) Exactness range E.** More generally, let L avoid {0 < |k|₁ ≤ E}. Then every f that is admissible for exactness E (record -02 (d): f ≥ 0, c₀ > 0, c_k ≤ 0 for |k|₁ ≥ E+1) satisfies f(0)/c₀ ≤ [ℤ³ : L]. Case (b) is E = 2n−2.
+
 ## Status by part
 
 Overall status: **PROVED** (local; exact finite check of the lattice).
@@ -18,6 +20,7 @@ Overall status: **PROVED** (local; exact finite check of the lattice).
 |---|---|---|
 | (a) | PROVED | proof below; lattice verified by `../code/cap_critical_lattice.py`, `../evidence/cap-critical-lattice.json` |
 | (b) | PROVED | proof below (dual feasibility of lattice rules) |
+| (b′) | PROVED | the proof of (b), with E in place of 2n−2 |
 
 ## Depends on
 
@@ -43,14 +46,14 @@ The approximation of record -02 (c) extends this to all KLM-admissible φ: ψ_R 
 
   (1/M_L) Σ_{t∈G} f(t) = Σ_k c_k 1_{k∈L} = c₀ + Σ_{k∈L∖0} c_k ≤ c₀,
 
-because every k ∈ L∖0 has |k|₁ ≥ 2n−1, so c_k ≤ 0. Since 0 ∈ G and f ≥ 0, the left side is ≥ f(0)/M_L. Hence f(0)/c₀ ≤ M_L. ∎
+because every k ∈ L∖0 has |k|₁ ≥ 2n−1, so c_k ≤ 0. Since 0 ∈ G and f ≥ 0, the left side is ≥ f(0)/M_L. Hence f(0)/c₀ ≤ M_L. For (b′), replace 2n−1 by E+1. ∎
 
 ## Consequences recorded
 
 - **Asymptotics of the finite cap (proof sketch, routine).** Let s be the least multiple of 3 with s ≥ n − 1/2, so s ≤ n + 2. The lattice L_n = sBℤ³ is integral, because 3B is an integer matrix and 3 | s. Its nonzero vectors have |k|₁ ≥ 2s ≥ 2n−1, and its index is (38/27)s³. Hence R^Del_{n,K} ≤ M_lat(n) ≤ (38/27)(n+2)³ = (19/18 + O(1/n))·m_n. Exact finite values of M_lat(n) (E = 2n−2) are in `../evidence/lp-lattice.json`: exhaustive minima for n = 2…8, upper bounds for 9…16 (`../code/lp_lattice.py`, MEASURED search; the witnesses were re-verified exactly by the orchestrator).
 - **Packages, uniform bound only.** Since γ_A ≤ 1/18, the uniform bound of record -03 (ii′), N ≥ (1+γ_A)n³/6 for rules exact on Π_{2n−1}, can exclude N = binom(n+3,3) only at degrees n ≥ 110 (the (ii) form only at n ≥ 138). This is PROVED; record -03 (iv) has the arithmetic.
 - **(b) with exactness range E.** The proof of (b) uses only c_k ≤ 0 on L∖0; with exactness E (record -02 (d)) the lattice must avoid 0 < |k|₁ ≤ E. For packages E = 2n−1.
-- **Finite LPs, not proved here.** The finite LP at a fixed n is capped only by M_lat(n), not by (38/27)(n−½)³. The claim that the finite torus LPs combined with 8N ≥ M cannot exclude any 4 ≤ n ≤ 109 (the range left by the exactness-2n−1 uniform bound) therefore needs, at each such n, a witness lattice with min ℓ₁ ≥ 2n and index ≤ 8·binom(n+3,3). The margin is thin near n = 109. This finite statement is **OPEN**; its candidate home is a separate PD-N once the lattice witnesses are computed. *(Corrected 2026-11-12 after independent check E1-M1; the earlier wording called it proved.)* The witnesses are now computed for part of the range: record -06 (`limitation-torus-lp-finite.md`).
+- **Finite LPs, not proved here.** The finite LP at a fixed n is capped only by M_lat(n), not by (38/27)(n−½)³. The claim that the finite torus LPs combined with 8N ≥ M cannot exclude any 4 ≤ n ≤ 109 (the range left by the exactness-2n−1 uniform bound) therefore needs, at each such n, a witness lattice with min ℓ₁ ≥ 2n and index ≤ 8·binom(n+3,3). The margin is thin near n = 109. *(Corrected 2026-11-12 after independent check E1-M1: the earlier wording called it proved before any witness was computed.)* It is now PROVED in the separate PD-N record -06 (`limitation-torus-lp-finite.md`), for every n = 2…109, by exact witnesses. No such witness can exist for n ≥ 110, because of the packing bound det L ≥ 38n³/27 (LITERATURE, as used in `r08-lattice-minima`).
 - The S4 remark "the lattice value is 1/18" (`topics/padua-3d-20261106/frontier-2026-11-08/S4.md` L78) is reconciled: 1/18 is exactly this cap.
 
 ## Checks
