@@ -1072,3 +1072,10 @@ their corresponding runs, with publication and execution timing distinguished.
 
 - AC, verbatim: “finalize PR, no more claude needed”. This overrides handoff23’s proposed Claude readiness check. Codex completes the registry/reservation and publication checks and marks PR33 ready; no more Claude review is requested. Scientific scope, freeze and prior accepted audits are unchanged. Only AC merges.
 - [Handoff23](handoffs/23-pr-preparation.md) is superseded by [handoff24](handoffs/24-finalize-pr.md) for this finalization, within the same active session. When Codex’s preparation/readiness work is complete, close24 without another agent handoff.
+
+### Final registry application
+
+- The reserved [map](pr-preparation/final-id-map.json) assigns90PD-T/40PD-N/108IDEA/38newLIT records; six literature groups reuse existing IDs. All aliases and provisional-kind corrections remain mapped.339crosswalk entries provide permanent identities; canonical audited prose and scientific payloads retain their historical aliases. Permanent gaps T644–673/N226–245/IDEA724–755/LIT674–715 are recorded.
+- Shared registry application is strictly scoped:130proof/negative rows,108candidate rows,38newliterature rows plus6reuse addenda; dated IDEA013/029/120 and current-charter scope notes; one new paper map and this topic’s result-only RESULTS section. Other topics’ existing contents are preserved. Exact statuses, full source-dependent labels, scoped failures and remaining OPEN targets match audited records.
+- H-m7 metadata is corrected to Cools–Nuyens/DOI10.1007/978-3-540-74496-2_1 at verified institutional-index coverage; original chapter still unread. K1 is accepted as scope conformance, without dispute. Source/code/data/proofs and research quotas are unchanged.
+- A distinct Codex mechanical checker reviews mapping/diff/links and fresh reservations. This is final readiness under AC’s “no more claude” instruction, not a new scientific audit. Its process-only CURRENT sentence finding was removed before publication.

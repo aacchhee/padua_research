@@ -28,3 +28,16 @@ The independent Sol-medium scan read58 complete ledger/registry copies, includin
 [Full scan](pr-preparation/reservation-check.md) and [source-copy identities](pr-preparation/reservation-check.json) preserve every path/head/Git-blob identity and the exclusion rationale. No collision or unknown retired reservation was found. PR27’s T392–431/N146–161/IDEA490–529/LIT598–613 reservation remains unchanged.
 
 Repeat the fresh check at readiness and if main or another open PR’s ledger changes before AC merges. Only AC merges; this ledger grants no research-round extension or scientific status change.
+
+## Final assignments and permanent gaps
+
+| Namespace | Assigned | Assigned count | Permanent unused headroom | Gap count |
+|---|---|---:|---|---:|
+|PD-T|PD-T554–643|90|PD-T644–673|30|
+|PD-N|PD-N186–225|40|PD-N226–245|20|
+|IDEA|IDEA-616–723|108|IDEA-724–755|32|
+|LIT|LIT-636–673|38|LIT-674–715|42|
+
+Six additional literature groups reuse existing accepted facts, with all local aliases retained. Nine previously unnumbered but already retained source records receive identities directly; no retrospective provisional ID is invented. [Exact map](pr-preparation/final-id-map.json) and the global crosswalk give every canonical/alias/source identity. All status, disposition, scope and source-coverage wording follows the accepted canonical records.
+
+First published reservation commit: [`512f63b02ce9b7436092729f53efcc883860a10a`](https://github.com/aacchhee/padua_research/commit/512f63b02ce9b7436092729f53efcc883860a10a), linked in PR33 before assignment.
