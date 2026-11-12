@@ -21,6 +21,26 @@ Orchestrator: Claude (Opus 5.5). Read 2026-11-12. Third-party PDFs and extracts 
   - BRIEF §1.4 route E1 (plain LP ↔ T(2O)) asks whether the octahedron is a non-Turán domain. By this source that would be the first known non-Turán convex body: a major open problem, not a step to take in a topic round.
   - The Delsarte relaxation of the LP (record -02) is bounded below by (n−½)³D(int 2O) (record -02 (c)), and Theorem 6.4 proves D(int 2O) > |O|. That the finite Delsarte LP is asymptotic to D(int 2O)·n³ is not proved (independent check m7).
 
+## LIT?padua-effective-cubature-20261112-claude-02 — Dostert, Guzmán, de Oliveira Filho, Vallentin, "New upper bounds for the density of translative packings of three-dimensional convex bodies with tetrahedral symmetry"
+
+- **Locator.** [arXiv:1510.02331v3](https://arxiv.org/abs/1510.02331), 10 Jan 2017, 30 pp., with ancillary files (solutions and checkers). The PDF SHA-256 is `25a24f83…901578`. The ancillary evaluator `octa_double.func.cpp` has SHA-256 `034a1aea…7bc47`. Read by the orchestrator on 2026-11-12 (explicit-γ campaign, round 1).
+  - Full text read: pp. 1–9 (introduction, Theorem 1.1, Tables 1–2, computational strategy) and §6 (rigorous verification, Table 6, pp. 22–27).
+  - Skimmed: §§2–5 (invariant SOS, Fourier transform, SDP formulation).
+  - Ancillary files read: `README_SOSChecking`, `README_SampleChecking`, `octa.cpp`, `octa-c.dat`, `octa_double.func.cpp`.
+- **Statements used.**
+  - **Theorem 1.1** (Cohn–Elkies, as stated there, p. 3–4): let K be a convex body and f a continuous L¹ function with f̂(u) = ∫f(x)e^{−2πiu·x}dx, (i) f̂(0) ≥ 1, (ii) f̂ ≥ 0, (iii) f(x) ≤ 0 whenever K°∩(x+K°) = ∅. Then translative packings of K have density ≤ f(0)vol K.
+  - **Template (2), p. 8:** f̂(u) = g(u)e^{−π‖u‖²}, with g a B3-invariant polynomial. Then f(x) = F[g](x)e^{−π‖x‖²}, with F[g] a polynomial.
+  - **§6 and Table 6 (p. 26):** rigorous bound 0.972912750 for the regular octahedron B¹₃, with blowup factor α = 1.001. "The solutions, as well as the verification scripts and programs, can be found as ancillary files." The SOS check is a Sage script; the sample check is a C++/MPFI program. The paper says the octahedron check "took several weeks" (p. 27).
+  - **Normalisation, from `README_SOSChecking`.**
+    - The octahedron uses s = x²+y²+z²−1, i.e. K−K has circumradius 1, so K−K = {|x|₁ ≤ 1} (`octa-c.dat`: the eight facets ±x±y±z ≤ 1) and vol K = 1/6.
+    - The bound is F[g](0)·vol K·α³ with g(0) ≥ 1. So their f is ≤ 0 on {|x|₁ ≥ α}.
+- **Orchestrator transcription to record -02 (c)** (local, elementary). Put φ(ξ) = f(αξ/2)/f(0). Then φ(0) = 1, φ ≤ 0 on {|ξ|₁ ≥ 2} and φ̂ ≥ 0, and ∫φ = (2/α)³ f̂(0)/f(0) ≥ 8/(α³f(0)) = (4/3)/b with b = α³f(0)/6. Hence (3/4)∫φ − 1 ≥ 1/b − 1, with b = 0.972912750 (Table 6, nine digits). This is recorded in `theory/explicit-gamma.md`.
+- **Numerical consistency check (MEASURED, orchestrator).** The 123 invariant coefficients of F[g] in `octa_double.func.cpp` give F[g](0) = 5.8199990323. Its exact Fourier transform gives g(0) = 1.00000017. So 5.8199990/1.00000017 × (1/6) × 1.001³ = 0.972913, which matches Table 6.
+- **Coverage limits.**
+  - The SOS-verification proof and the MPFI checker were not rerun, and Sage is not installed in this sandbox.
+  - §§2–5 were not checked in detail.
+  - The ancillary files are third-party and are not committed. Local code downloads them from arXiv and checks their hashes.
+
 ## Existing records consulted (no new LIT entry)
 
 - **LIT-640 (Betke–Henk; Minkowski 1904).** Used only for the displayed lattice basis. Its determinant and minimal ℓ₁ norm are checked exactly by `code/cap_critical_lattice.py`; the optimality theorem is not used (record -04).

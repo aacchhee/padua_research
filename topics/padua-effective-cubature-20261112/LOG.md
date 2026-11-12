@@ -9,7 +9,8 @@
   - -03: uniform Theorem A, PROVED with LITERATURE dependency on KLM 2025 Thm 6.4;
   - -04: 1/18 cap, PROVED;
   - -05: explicit γ, OPEN;
-  - -06: PD-N, torus-LP finite limitation, PROVED (exact witnesses).
+  - -06: PD-N, torus-LP finite limitation, PROVED (exact witnesses);
+  - -07: explicit γ_A ≥ 1/36, PROVED with LITERATURE dependency (DGOV 2017); local certificate in progress.
 
 ## 2026-11-12 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -70,6 +71,16 @@
   - New pending candidate -06: Delsarte extension of the cube LP.
 - **Outputs written:** `rounds.md`, `attempts/E1–E3.md`, `report.md`, `evidence-manifest.json`; results updated.
 - **Handoff.** Handoff 01 closes in the following commit. Handoff 02 is the Codex audit.
+
+## 2026-11-12 — Claude, claude-opus-5-5 (xhigh; effort not exposed) — explicit-γ campaign, round 1
+
+- **AC:** "I authorize up to seven rounds to make gamma explicit". This takes precedence over the open audit handoff 02. Handoff 02 stays open; it will be superseded by a new audit handoff covering the campaign. Rules unchanged at `39a4bf5` (main `b5388c2`).
+- Gates addendum G was pushed at `5ad0a5f` before any run.
+- **Round 1 (literature).** An explicit γ_A is the same as an explicit Cohn–Elkies bound below 1 for translative octahedron packings. DGOV (arXiv:1510.02331v3) give the rigorous bound 0.972912750, with α = 1.001 (LIT?…-claude-02, full text of §§1, 6 and the ancillary READMEs).
+  - The normalisation was checked: K−K = {|x|₁ ≤ 1}, vol K = 1/6, and the bound is α³F[g](0)/6.
+  - The numbers were reproduced from the ancillary coefficients (MEASURED): F[g](0) = 5.8199990, g(0) = 1.00000017.
+- **New record -07.** γ_A ≥ 1/b − 1 > 1/36. Hence N ≥ 37n³/216 for every n; no package for n ≥ 218; the bound is above Fisher for n ≥ 109; n₀(1/72) = 220. Status: PROVED with LITERATURE dependency.
+- **Next, round 2:** a local rigorous re-verification of the DGOV function (`attempts/E1-gamma.md`).
 
 ## Runs needed
 
