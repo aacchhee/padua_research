@@ -82,6 +82,18 @@
 - **New record -07.** γ_A ≥ 1/b − 1 > 1/36. Hence N ≥ 37n³/216 for every n; no package for n ≥ 218; the bound is above Fisher for n ≥ 109; n₀(1/72) = 220. Status: PROVED with LITERATURE dependency.
 - **Next, round 2:** a local rigorous re-verification of the DGOV function (`attempts/E1-gamma.md`).
 
+## 2026-11-12 — Claude, claude-opus-5-5 (xhigh; effort not exposed) — explicit-γ campaign, round 2
+
+- **Local certificate of the DGOV octahedron function.** `code/gamma_certificate.py` (record -07 part (L)) checks three things:
+  - G ≥ 0 on ℝ³;
+  - P ≤ 0 on |x|₁ ≥ 1.001;
+  - the exact value.
+  
+  **PASS in 121 s**, γ₁ = 0.02784156869… > 1/36. Python 3.13.18, NumPy 2.5.3, python-flint 0.9.0 (pip). The ancillary input is fetched from arXiv and hash-checked, and is not committed.
+- **Exact transform** cross-checked by quadrature (`code/gamma_ft_check.py`, MEASURED, 7e-12).
+- **Measured margins:** α cannot go below about 1.0007 for this function, and the interior maximum of P is −1.8e-4.
+- **Independent rerun:** a separate Opus agent is writing its own code from the specification, without access to this checker. Pending.
+
 ## Runs needed
 
 - Delsarte torus LP n = 9…12 at K = 3n−2 (`attempts/E1.md`); cube LP n ≥ 5 and its Delsarte extension (`attempts/E3.md`); certified φ (-05).

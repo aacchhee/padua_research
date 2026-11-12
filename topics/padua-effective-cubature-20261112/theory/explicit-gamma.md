@@ -23,7 +23,7 @@ Split into: none. The local re-verification is part (L) below.
 
 ## Status by part
 
-Overall status: **PROVED with explicit LITERATURE dependency** (computer-assisted literature certificate). Part (L), the local re-verification of that certificate, is **in progress**; see Open items.
+Overall status: **PROVED (computer-assisted, local)**, independent rerun PENDING_INDEP. The certified function is the DGOV octahedron function, whose coefficients are taken from their ancillary file as data only. Its admissibility and value are re-proved locally by the certificate (L), so no DGOV theorem is a premise. Until the independent rerun is recorded, the status of (a) remains PROVED with LITERATURE dependency, via DGOV Table 6.
 
 | Part | Status | Evidence |
 |---|---|---|
@@ -31,7 +31,7 @@ Overall status: **PROVED with explicit LITERATURE dependency** (computer-assiste
 | (b) | PROVED given (a) | record -03 (ii), (ii′) |
 | (c), (d) | PROVED given (b) | exact integer arithmetic (Checks) |
 | (e) | PROVED | record -04 (a) |
-| (L) local certificate | OPEN (campaign rounds 2+) | `../attempts/E1-gamma.md` |
+| (L) local certificate | PROVED (computer-assisted; developer run PASS; independent rerun PENDING_INDEP) | `../code/gamma_certificate.py`, `../evidence/gamma-certificate.json`, Part (L) below |
 
 ## Depends on
 
@@ -60,6 +60,44 @@ Hence D(int 2O) ≥ (4/3)/b and γ_A ≥ 1/b − 1. With b ≤ 0.972913, 1/b −
 **(b).** Record -02 (d) with E = 2n−1 gives N ≥ n³D(int 2O)/8 ≥ n³(4/3)(37/36)/8 = 37n³/216. With E = 2n−2, record -02 (c) gives N ≥ (n−½)³(4/3)(37/36)/8.
 
 **(c)** follows from (b), since binom(n+2,3) = n(n+1)(n+2)/6. **(d)** follows from (b), since binom(n+3,3) = (n+1)(n+2)(n+3)/6, by the arithmetic below. ∎
+
+## Part (L) — local certificate
+
+**Statement.** Let P be the polynomial Σ c_ijk s₁^i s₂^j s₃^k of degree 26, where:
+- s_m = x₁^{2m} + x₂^{2m} + x₃^{2m};
+- the c_ijk are the 123 decimal literals of the DGOV ancillary file `octa_double.func.cpp` (SHA-256 `034a1aea…7bc47`), read as exact rationals.
+
+Let f = P·e^{−π|x|²}. Then:
+- (L1) f̂ = G·e^{−π|u|²}, with G the explicit polynomial with coefficients in ℚ[π^{−1}] computed exactly in the code;
+- (L2) G ≥ 0 on ℝ³;
+- (L3) P ≤ 0 on {|x|₁ ≥ 1001/1000};
+- (L4) γ₁ := 6G(0)/(α³P(0)) − 1 = 0.0278415686907765546… (ball radius < 10⁻⁵⁴), which is > 1/36.
+
+Hence φ(ξ) = f(αξ/2)/f(0) is Delsarte-admissible for int 2O with (3/4)∫φ − 1 = γ₁. This gives (a) with b replaced by 1/(1+γ₁), and without the literature premise.
+
+**Proof.**
+- **(L1).** This is the classical 1-D identity FT[x^n e^{−πx²}](u) = (i/2π)^n (d/du)^n e^{−πu²}, applied per monomial. All exponents are even, so G is real. The code computes it exactly in ℚ[π^{−1}], checks the B3 symmetry of G exactly, and checks the exact identity G₂₆ = −P₂₆. An independent numerical check, `../code/gamma_ft_check.py` (direct Gauss–Hermite quadrature of the transform at six points, MEASURED), agrees to a relative 7·10⁻¹².
+- **(L2), (L3).** These are checked by the computer-assisted inequality checker `../code/gamma_certificate.py`; its docstring has the rigour argument.
+  - By B3 invariance it suffices to take the fundamental domain 0 ≤ x₁ ≤ x₂ ≤ x₃.
+  - **Bounded part (|x|_∞ ≤ 4).** Branch and bound over dyadic boxes. Each box is mapped exactly to y = x², the polynomial is Taylor-shifted to the box centre, and the shift is enclosed with an a-priori floating-point error bound of 128 units in the last place on the absolute-value computation.
+  - **Tail (|x|_∞ ≥ 4).** A 2-D branch and bound on the face y₃ = 1 encloses every homogeneous part. It then checks that all coefficients of the shifted univariate polynomial in t = |x|_∞² − 16 have the required sign.
+  - The region {|x|₁ ≥ α} is handled exactly: a box is discarded only if its maximal ℓ₁ norm is < α.
+- **(L4).** Ball arithmetic (python-flint arb, 200 bits) on the exact values P(0) = c₀₀₀ and G(0) ∈ ℚ[π^{−1}].
+
+**Run (developer).** Command:
+
+  `python3 -B code/gamma_certificate.py --anc <scratch>/octa_double.func.cpp --alpha 1.001 --R 4 --RG 4 --out evidence/gamma-certificate.json` (cwd = topic directory).
+
+Results, verdict **PASS**, 2026-11-12, Python 3.13.18, NumPy 2.5.3:
+- P tail: 67164 face boxes processed, 0 failures.
+- G tail: 13033 face boxes processed, 0 failures.
+- P ≤ 0: 689111 boxes processed, 266149 certified leaves, 0 failures.
+- G ≥ 0: 236706 boxes processed, 116481 certified leaves, 0 failures.
+- Wall time 121 s.
+
+The leaf lists (3 MB) are in the session scratchpad only; they can be regenerated with `--leaves`.
+
+**Independent rerun.** PENDING_INDEP.
 
 ## Checks
 

@@ -118,3 +118,11 @@ Target: record -05. That is, an explicit γ₁ > 0 with γ_A ≥ γ₁, and with
   - **MEASURED.** A numerical optimum without a certificate. It is never reported as γ₁.
 - **G4, sanity.** Any certified value must satisfy γ₁ ≤ 1/18 (record -04). A value above 1/18 means a bug.
 - **Kill.** Two consecutive rounds without a new certified γ₁ or a strict improvement of the certified value end the campaign. The ceiling is 7 rounds.
+
+### Addendum G — interim verdict (2026-11-12, after campaign round 2)
+
+- **G1–G2: met.** The developer certificate is in `evidence/gamma-certificate.json`, verdict PASS; γ₁ = 0.0278415686907765546… > 1/36.
+- **G3:**
+  - PROVED with LITERATURE dependency, via DGOV Table 6: met (round 1).
+  - Local PROVED: the certificate and the committed checker are done; the independent rerun is pending.
+- **G4: met,** since 1/36 < γ₁ < 1/18.

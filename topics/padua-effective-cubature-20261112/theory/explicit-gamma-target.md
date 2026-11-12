@@ -1,7 +1,7 @@
 # PD-T?padua-effective-cubature-20261112-claude-05 — explicit constant for Theorem A via a certified Delsarte function (target)
 
 ID kind: PD-T. Aliases: E1 explicit γ; certified φ.
-Split from: the explicit part of BRIEF §1.7 outcome 2. Split into: none yet.
+Split from: the explicit part of BRIEF §1.7 outcome 2. Split into: record -07 (`explicit-gamma.md`), which completes the target (2026-11-12, explicit-γ campaign).
 
 ## Statement (target)
 
@@ -11,7 +11,7 @@ A sufficient finite route: a certified torus Delsarte polynomial at a single lev
 
 ## Status
 
-Overall status: **OPEN**. Existence of some admissible φ with ∫φ > 4/3 is proved (record -03 (i), LITERATURE-dependent); an explicit certified one is not.
+Overall status: **CLOSED by record -07** (2026-11-12): an explicit certified φ with (3/4)∫φ − 1 > 1/36 exists. The finite-route plan below was not needed and is kept for the record. The original OPEN wording: existence of some admissible φ with ∫φ > 4/3 is proved (record -03 (i), LITERATURE-dependent); an explicit certified one was not.
 
 ## Plan and obligations
 

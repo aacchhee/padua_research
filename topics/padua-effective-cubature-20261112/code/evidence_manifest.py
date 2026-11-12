@@ -36,11 +36,18 @@ ENTRIES = {
         "producer": "code/pdn_check_ball.py (from the full output of code/pdn_lattice_witness.py)",
         "command": "cwd = topic dir: python3 -B code/pdn_lattice_witness.py --nmin 2 --nmax 140 --extra evidence/lp-lattice.json --perturb --out <scratch>/witness-final.json; python3 -B code/pdn_check_ball.py --full <scratch>/witness-final.json --out evidence/pdn-lattice-witness.json",
         "status": "exact witnesses (each verified by exhaustive coefficient-box enumeration); input of PD-N record -06", "used_by": "theory/limitation-torus-lp-finite.md"},
+    "evidence/gamma-certificate.json": {
+        "producer": "code/gamma_certificate.py",
+        "command": "cwd = topic dir: python3 -B code/gamma_certificate.py --anc <scratch>/octa_double.func.cpp --alpha 1.001 --R 4 --RG 4 --out evidence/gamma-certificate.json  (input: arXiv:1510.02331v3 anc/octa_double.func.cpp, SHA-256 034a1aea4fafbf29743bded0812723ac8c9cf95274225213578145d016a7bc47; third-party, not committed)",
+        "status": "computer-assisted certificate of record -07 (L): PASS (developer run)", "used_by": "theory/explicit-gamma.md"},
 }
 OFFREPO = [
     {"what": "LP per-run receipts runs/n*_e*.json, lat_*.json, cube[2-4].json, torus_f_n*_e*.npz",
      "location": "session scratchpad only (not archived; AC cold storage not reachable from this cloud session)",
      "regenerate": "commands above", "archival": "PENDING"},
+    {"what": "gamma certificate leaf lists (leaves-final.npz, about 3 MB) and DGOV ancillary inputs (third-party)",
+     "location": "session scratchpad only; inputs re-downloadable from https://arxiv.org/src/1510.02331v3/anc/",
+     "regenerate": "gamma_certificate.py --leaves PATH", "archival": "PENDING (leaves); never (third-party inputs)"},
 ]
 
 

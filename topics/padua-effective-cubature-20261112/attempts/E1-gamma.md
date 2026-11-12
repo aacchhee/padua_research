@@ -17,3 +17,19 @@ AC (2026-11-12): "I authorize up to seven rounds to make gamma explicit". Claude
   2. P ≤ 0 on {|x|₁ ≥ α′}. MEASURED maximum ≈ −1.8·10⁻⁴, near ‖x‖ = 1 in edge directions, so the margin is tight.
   3. The value: (3/4)(2/α′)³G(0)/P(0) − 1.
 - **Exploration.** The exploration script is in the session scratchpad. The ancillary files are third-party: they are not committed, and the committed checker fetches them by URL and verifies their SHA-256.
+
+## Round 2 — local certificate (done, developer run)
+
+- **Code.** `code/gamma_certificate.py`, a rigorous float branch and bound. It uses Taylor-shift enclosures in y = x², with an a-priori error bound, the exact ℓ₁-region test, and a ray-shift tail test from |x|_∞ ≥ 4. Arb is used for the value.
+- **Transform check.** `code/gamma_ft_check.py` (MEASURED; quadrature cross-check of the exact transform), with agreement 7·10⁻¹².
+- **Result: PASS in 121 s.** The certified value is γ₁ = 0.02784156869… > 1/36 (`evidence/gamma-certificate.json`), at the same α = 1.001 as DGOV.
+- **Rejected before the final design (no claims):**
+  - A naive tail bound using |lower parts| fails: the lower parts are about 10⁶, against a leading part of 8.6·10⁻⁴ on the axis.
+  - Natural and mean-value enclosures are too loose because of cancellation.
+  - The tail shift test at |x|_∞ ≥ 2–3 failed under interval coefficients; it passes at 4.
+- **Margins (MEASURED):**
+  - P on |x|₁ = 1.0 has a maximum of +3.2·10⁻³, so α = 1 fails; P on |x|₁ = 1.0005 still has a positive maximum, +1.3·10⁻³.
+  - At α = 1.001 the boundary maximum is −6.1·10⁻⁴.
+  - The interior maximum is ≈ −1.8·10⁻⁴, near (0, 0.71, 0.72).
+  - So α cannot be lowered below roughly 1.0007 with this function.
+- **Independent rerun:** delegated to a separate Opus agent, with its own code path written from the specification only. Pending.

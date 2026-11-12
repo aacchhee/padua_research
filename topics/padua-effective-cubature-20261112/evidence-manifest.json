@@ -66,6 +66,15 @@
    "sha256": "54f84ddd172daf57947349a1fe998ceb7c3455f871a4c914cfbc96d9419107c8",
    "bytes": 10952,
    "producer_sha256": "eb7b1d97a487ab928ad0822e6291d401e46aa807ae2efe0aee93f0f89eefe7c9"
+  },
+  "evidence/gamma-certificate.json": {
+   "producer": "code/gamma_certificate.py",
+   "command": "cwd = topic dir: python3 -B code/gamma_certificate.py --anc <scratch>/octa_double.func.cpp --alpha 1.001 --R 4 --RG 4 --out evidence/gamma-certificate.json  (input: arXiv:1510.02331v3 anc/octa_double.func.cpp, SHA-256 034a1aea4fafbf29743bded0812723ac8c9cf95274225213578145d016a7bc47; third-party, not committed)",
+   "status": "computer-assisted certificate of record -07 (L): PASS (developer run)",
+   "used_by": "theory/explicit-gamma.md",
+   "sha256": "2fe3476a5034d74b20de3d9c192910a3d4debfa6020382a382af70b1e57d39c2",
+   "bytes": 1138,
+   "producer_sha256": "a6f841e0646956feaaa947695ebf4ac4ae1c07039da40109f7d8ee57a82b8375"
   }
  },
  "off_repository": [
@@ -74,6 +83,12 @@
    "location": "session scratchpad only (not archived; AC cold storage not reachable from this cloud session)",
    "regenerate": "commands above",
    "archival": "PENDING"
+  },
+  {
+   "what": "gamma certificate leaf lists (leaves-final.npz, about 3 MB) and DGOV ancillary inputs (third-party)",
+   "location": "session scratchpad only; inputs re-downloadable from https://arxiv.org/src/1510.02331v3/anc/",
+   "regenerate": "gamma_certificate.py --leaves PATH",
+   "archival": "PENDING (leaves); never (third-party inputs)"
   }
  ]
 }
