@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/21-response-05.md](handoffs/21-response-05.md)
+- Stage: AUDIT · Next: `Claude (Opus 5.5, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/22-response-05-audit.md](handoffs/22-response-05-audit.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -1027,3 +1027,23 @@ their corresponding runs, with publication and execution timing distinguished.
   after one baseline objective. The baseline evaluation itself succeeded. `gates.md` keeps its
   preregistration wording; this LOG note is the correction.
 - [Handoff 20](handoffs/20-final-narrowed-audit.md) done in `23333c9` (audit report `bc01a92`, auditor fixes `23333c9`); [handoff 21](handoffs/21-response-05.md) opened for the focused Codex response-05, then PR preparation.
+
+## 2026-11-12 — response05 restart — Codex, gpt-6-astra high
+
+- Role: developer/orchestrator implementing open [handoff21](handoffs/21-response-05.md). Rules read at `ae4ab4741265f55ac10847659af89dad05441274`; fetched and fast-forwarded to that audit/handoff head. Main remains `f70a260e5b5f9a01209dc8a05faabdcf8db1feeb`. Worktree initially clean; no published history rewritten.
+- Audit05 accepts the mathematics and all statuses; H1–H6 are scoped statement/attribution/record corrections. This step does no new research, optimization, construction or proof campaign and spends no round. All earlier quotas and D1's two unused rounds remain frozen.
+- Disjoint bounded workers: Sol high for H1 cube-node wording/H2 neighbouring-source comparison; Sol medium for H3–H6, manuscript/bibliography and D3 disposition field; Sol medium for provenance/split headers and a reproducible verification script. Root owns LOG/results/report/response, master publication, Git/PR and handoff. No final IDs, reservations or shared-registry application.
+- No new mechanism/priority claim is generated. The appropriate gate here is the source/claim comparison needed for the returned findings; existing accepted proofs are preserved. Coverage labels distinguish a new direct reading from the auditor's primary reading and from excerpt/search-level leads.
+
+## 2026-11-12 — response05 completed — Codex, gpt-6-astra high
+
+- [Response05](response-05.md) addresses H1–H6 and every returned audit05 item. Audit05’s accepted mathematics/statuses are retained. No new research, optimization, construction or proof campaign; all counters and freezes are unchanged.
+- H1 explicitly states all nodes belong to the closed cube in D1-04/-05, the Chebyshev lift and paper TheoremA, including summary exactness through2n−1. Root compared spectral-obstruction and finite-frame proof bodies to ae4ab47: byte-identical; the weight-transfer proof only repeats the same hypothesis in its setup. Boundary nodes remain allowed; no degree/dimension strengthening or exterior-node result. An initial local comparison command had an indentation error before running checks; the corrected comparison completed and passed.
+- H2 credits neighbouring effective LP fixed-excess results at actual coverage: Lyubich primary-read by the auditor, Yudin indirect via Lyubich and Xu2003 search/abstract only. The sphere-comparison rationale is corrected. Paper §2 gives the positive-weight-only non-effective Li–Sun–Xu partial answer with pp3/16 pins, preserves signed and n³/4 questions, and credits AMO/Kolountzakis/GL. No new proof premise or primary-reading claim.
+- H3/H4 name Lyness2003 and the Belgian survey at excerpt/unread coverage, narrow prior-optimality framing, and credit the reported WWW log³ order as prior work. H5 supplies final D3/D4 comparisons or named primary gaps. H6 gives current C5/C6/C8 dispositions/resume conditions in a dated companion; the protected frontier assessment stays intact.
+- The manuscript/process split and28-entry bibliography are complete. The companion carries repository status/artifact links; incomplete source metadata is disclosed. D3’s explicit disposition reason and exact provisional split-header pairs are repaired. No final ID or shared registry changes.
+- [Provenance corrections](response-05-provenance.md): old fd4-manifest JSON and old quality receipt remain byte-identical; all nine historical prose acceptance pins are retired. The unchanged audit04 enumerator is now an inherited master input. Current g++14.2.0 is observed, not attributed to past runs; each implementation’s original/replay binaries match, while the two implementation binaries differ.
+- Fresh committed SVD/monomial replay actually passes: n3=5478.148340739174,n4=546899.5809121559,69,433 queries each and numerical pencil/node guards. It verifies fixed data only, with actual command/code/input hashes and versions. Disposable manifest replay passes44 existing controls and explicitly rejects mutation of the newly inherited audit04 source; restoring it passes. Live master was untouched by that worker check. This is verification, not a research round or independent formal audit.
+- StageAUDIT. The focused [handoff22](handoffs/22-response-05-audit.md) covers only material scope/attribution/disposition/manifest/split changes; accepted mathematics is not reopened. If accepted, next is Codex PR preparation and freeze. Only AC merges.
+
+- Final response05 validation PASS: exact index-tree master with three inherited sources; new JSON parse/32KiB limits; every changed local Markdown file link except the deliberately following-commit handoff22; protected auditor/frontier/old-handoff files unchanged; old producer evidence unchanged; manuscript process separation and28 bibliography entries; clean diff. Conservative generated-output suffix class totals **8,685,984bytes across1763files**; current master **19,358bytes**, within AC’s provisional10MB/32KiB allowance. No cold-storage delivery claimed.

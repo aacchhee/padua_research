@@ -6,7 +6,7 @@ Split into: none. General doubling-weight extension remains a separate OPEN targ
 
 ## Statement and quantifiers
 
-There exist gamma>0 and an integer n0>=1 such that, for every integer n>=n0 and every positive cubature rule on [-1,1]^3 exact on all real polynomials of total degree at most 2n-1 for normalized product Chebyshev measure,
+There exist gamma>0 and an integer n0>=1 such that, for every integer n>=n0 and every positive cubature rule with all nodes in the closed cube [-1,1]^3 exact on all real polynomials of total degree at most 2n-1 for normalized product Chebyshev measure,
 
     N >= (1+gamma) dim Pi_(n-1)^3
        = (1+gamma) binom(n+2,3)
@@ -16,7 +16,7 @@ Here N is the number of distinct support nodes with nonzero weights. In particul
 
 ## Definitions and assumptions
 
-The measure is product_j [dx_j/(pi sqrt(1-x_j^2))]. Nodes may lie on any cube face, edge or vertex. Weights are strictly positive after zero weights are removed, and sum to one by constant exactness. Nodes, phases and support geometry are otherwise unrestricted. Pi_m^3 means total degree <=m.
+The measure is product_j [dx_j/(pi sqrt(1-x_j^2))]. All nodes lie in the closed cube [-1,1]^3; they may lie in its interior or on any face, edge or vertex. Weights are strictly positive after zero weights are removed, and sum to one by constant exactness. Within this closed cube, node locations, phases and support geometry are otherwise unrestricted. Pi_m^3 means total degree <=m.
 
 ## Status and dependencies
 
@@ -51,10 +51,12 @@ The proof is analytic. The seven exact finite controls in `../evidence/fd1-contr
 
 ## Scope, limitations and remaining verification
 
-The constants are non-effective. No finite n is ruled out by an explicit threshold here; this does not upgrade the old n<=109 complement classification. No sharp 1/4 leading constant, signed-weight result, minimal interpolation norm lower bound or impossibility of polylogarithmic interpolation follows. The argument does not cover exactness only through 2(1-eta)n for a fixed eta>0. General doubling weights require another local-limit argument and are not included.
+The constants are non-effective. Exterior-node rules are outside the statement. No finite n is ruled out by an explicit threshold here; this does not upgrade the old n<=109 complement classification. No sharp 1/4 leading constant, signed-weight result, minimal interpolation norm lower bound or impossibility of polylogarithmic interpolation follows. The argument does not cover exactness only through 2(1-eta)n for a fixed eta>0. General doubling weights require another local-limit argument and are not included.
 
 The mandatory final reconstruction still checks 2-D Padua, sphere/disk literature, the source/novelty gate and each compactness/quantifier passage. Any material gap found there must return this consequence to CONDITIONAL or OPEN as appropriate, while separately proved supporting lemmas retain their own statuses. [Superseded 2026-11-12 (audit-05): completed in D1-03/D1-04 and the R4 [reconstruction](reconstruction.md); current status in the [D1 README](README.md); this line is retained as round history.]
 
 ## History
 
 2026-11-12, Codex, assigned gpt-6.1-sol xhigh. R3 preregistration published/pushed at `613735e` before root GO. The C1 target is retained with its original Chebyshev scope and now receives this source-dependent proof. Supporting identities originated in scout S2/S4; the stationary averaging lead was supplied by root. No bare PROVED import, source-proof inheritance or exhaustive novelty claim.
+
+2026-11-12, response-05, Codex assigned gpt-6.1-sol high: explicitly added the pre-existing closed-cube node hypothesis to the statement and definitions (H1; audit-05 D1a-F1/D1b-9). The earlier wording "rule on [-1,1]^3" and "support geometry ... otherwise unrestricted" left this implicit. The arccosine lift requires it. This is a dated statement clarification for focused re-audit; exactness, quantifiers, proof and status are unchanged.

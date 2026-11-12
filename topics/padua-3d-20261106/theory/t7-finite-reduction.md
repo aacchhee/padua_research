@@ -1,7 +1,7 @@
 # PD-T?padua-3d-20261106-codex-T7-03 — finite subgroup and symbolic phase reduction
 
 ID kind: PD-T. Aliases: all-phase coset reduction, HNF phase strata.
-Split from: none. Split into: none. Supports the OPEN T7 target.
+Split from: none. Split into: PD-N?padua-3d-20261106-codex-T7-09 ([t7-one-phase-refutation.md](t7-one-phase-refutation.md)), the refuted one-phase-per-stratum inference already mapped below. Supports the OPEN T7 target.
 
 ## Statement and status
 

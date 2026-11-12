@@ -273,6 +273,7 @@ def main():
     observed = [identity(path) for path in artifacts()]
     inherited = [identity(ROOT / "tracks/lattice-unisolvence/code" / name, ROOT)
                  for name in ("c3_lebesgue.py", "c3_rank.py")]
+    inherited.append(identity(TOP / "audit-04/code/A1/aud_enum.cpp", ROOT))
     if args.verify or args.list:
         saved = json.loads(target.read_text())
         decoded = decode_manifest(saved)

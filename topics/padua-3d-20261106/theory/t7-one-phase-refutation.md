@@ -1,7 +1,7 @@
 # PD-N?padua-3d-20261106-codex-T7-09 — one sample does not decide a phase stratum
 
 ID kind: PD-N. Aliases: one generic phase per stratum; constant-rank shortcut.
-Split from: the refuted-inference paragraph of PD-T?padua-3d-20261106-codex-T7-03.
+Split from: the refuted-inference paragraph of PD-T?padua-3d-20261106-codex-T7-03 ([t7-finite-reduction.md](t7-finite-reduction.md)).
 Split into: none. The positive finite symbolic reduction keeps its PD-T ID.
 
 ## Statement, assumptions and status

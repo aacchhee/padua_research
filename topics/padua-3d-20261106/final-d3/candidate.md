@@ -44,6 +44,10 @@ Aliases: assessment C7; D3; S1 I2; unrestricted positive moment fitting;
   [Execution record](runs.md) pins the certificate, commands and results.
 - Disposition: retained, successful finite certificate; one of one rounds
   consumed. Independent reruns and formal audit completed: [supplemental](../final-check/d3-audit.md), [audit-05](../audit-05.md).
+- Disposition reason: the single registered proposal passed exact existence,
+  positivity/interiority, cubic rank-transfer and rational nonlattice
+  predicates. Retention is this successful finite certificate; sampled
+  quality and all-degree continuation remain outside its conclusion.
 - Canonical theory: [certificate theorem](theory.md); no final ID.
 - Topic / history: handoffs 19/18, approved final narrowed set;
   2026-11-12 Codex, assigned gpt-6.1-sol high, input 04ef28b.

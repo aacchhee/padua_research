@@ -18,3 +18,7 @@ D3 and D4 independent arithmetic/rerun/rejection checks belong to their distinct
 At each code/data checkpoint root generated the master from a disposable `git checkout-index --all` copy, copied the generated master back into the index, and verified the disposable exact index tree. This excludes another worker's untracked/partial files from the publication and detects missing tracked payloads. The v4–v7 codec/mutation/frozen-tree checker also actually passed after applying the approved32KiB topic allowance. No identities or inherited inputs were discarded. The master pins code/data only, not acceptance prose.
 
 The final output checkpoint additionally runs staged-tree master verification, generated-output inventory, `git diff --check` and local Markdown file-link validation. Actual final results are recorded in LOG; no external cold-storage delivery is claimed.
+
+## Response05 follow-through — 2026-11-12
+
+The historical quality receipt still lacks a command/code identity; it is unchanged. The fresh committed `code/r05_quality_replay.py` and `evidence/r05-d2-quality-replay.json` supply a reproducible execution of the fixed assessment, not a backfill or an optimizer rerun. The [canonical provenance note](response-05-provenance.md) also retires historical prose acceptance pins and records the expanded inherited-code coverage and compiler limitation.

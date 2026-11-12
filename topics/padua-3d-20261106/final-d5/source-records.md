@@ -98,3 +98,13 @@ The following provisional IDs refer to the actual statement/section comparisons 
 Additional Li–Xu coverage for D1's general-weight boundary: pp32–34 eq5.11–5.13, Lemma5.5 and definition of Δ*. Here `w(x(t))=∏_(μ<ν)sin²π(tμ−tν)`, the Jacobian is constant×√w, and Δ* is the orbit-coordinate image of the A_d simplex. The read weighted inner products are normalized `w^α dx`, α=±1/2, on that curvilinear full-dimensional domain. No general doubling theorem or cube universality premise was read or asserted.
 
 Source-dependent imports remain governed by the exact-statement/normalization/application criterion; full external proof inheritance is not claimed. In particular the log3 import uses KL independently of unread Wang–Wang–Wang, and D1's final nonspectrality uses primary-read GL1.1 independently of the broader LM corroboration.
+
+## Response-05 source boundaries — 2026-11-12
+
+No new source was acquired or opened in this record correction. Lyness, *Notes on lattice rules*, J. Complexity19 (2003),321–331, DOI10.1016/S0885-064X(03)00005-0 (ANL P1013), is now credited using **audit-05 D5 search excerpts only**: optimality reportedly holds for δ≤4 and δ≡0 mod6; appendix δ6/N38/(1,7,27) and m-copies. Fulltext/exact theorem/proof remain unread. Cools, *A Belgian View on Lattice Rules*, is **locator-only, fulltext unread**, with chapter URL in literature-3d.md. Neither is a proof premise. These are named gaps even though their reported conclusions require credit.
+
+Wang–Wang–Wang2014 retains **LIT-391 secondary plus audit-05 D5 abstract/search coverage**: O(log^d n) hyperinterpolation is reported; the abstract describes settling Caliari–De Marchi–Vianello2008's conjecture. That 2008 paper is **bibliographic/abstract context only here**. Their exact operator/hypotheses are not identified with T10 by this coverage. KL remains T10's checked source.
+
+LIT-413's full secondary baseline entry was read for D3: Noskov–Schmid, Hirao–Sawa2009, Schmid1995. None of their primary texts or classical degree-five cube-rule compendia was read. Their exact comparison with the D3 enclosure/rank/nonlattice package is a named gap, precluding any first-existence/certification claim.
+
+D1b's independent primary reading of Lyubich math/0703569v1 (§1, Thm4.1, §5, Props5.1–5.2) is attributed to that auditor, not this worker. Yudin1997 is known here through Lyubich p2 only; Xu2003 is search/abstract-level only. The effective fixed-excess context is not imported as a local theorem; see D1 sources for exact coverage and manuscript §2.

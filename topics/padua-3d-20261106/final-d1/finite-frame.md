@@ -12,7 +12,7 @@ Let mu be a probability measure on R^d for which the real polynomial space V=Pi_
     sum_i delta_i=N-D,
     sum_(j!=i) w_i w_j K(x_i,x_j)^2=p_i delta_i.
 
-For normalized product Chebyshev measure on [-1,1]^d, replace each x_i by its distinct coordinate sign orbit of theta_i=arccos(x_i) on T^d=(R/2pi Z)^d. Give each orbit atom weight w_i/s_i, where s_i is its number of distinct elements. Different cube nodes have disjoint orbits, 1<=s_i<=2^d, so the lifted rule has M=sum s_i<=2^d N distinct positive atoms t_j of masses v_j. It is exact for every character exp(i k.t) with |k|_1<=2n-2.
+For normalized product Chebyshev measure on [-1,1]^d, assume all nodes x_i lie in the closed cube [-1,1]^d and replace each x_i by its distinct coordinate sign orbit of theta_i=arccos(x_i) on T^d=(R/2pi Z)^d. Give each orbit atom weight w_i/s_i, where s_i is its number of distinct elements. Different cube nodes have disjoint orbits, 1<=s_i<=2^d, so the lifted rule has M=sum s_i<=2^d N distinct positive atoms t_j of masses v_j. It is exact for every character exp(i k.t) with |k|_1<=2n-2.
 
 Set A_n={k in Z^d: |k|_1<=n-1}, m_n=|A_n|, D_n(t)=sum_(k in A_n) exp(i k.t). Then E_(jk)=sqrt(v_j)exp(i k.t_j) satisfies E*E=I. Its rank-m_n projection P=EE* obeys
 
@@ -20,7 +20,7 @@ Set A_n={k in Z^d: |k|_1<=n-1}, m_n=|A_n|, D_n(t)=sum_(k in A_n) exp(i k.t). The
     sum eta_j=M-m_n,
     sum_(l!=j) v_j v_l |D_n(t_j-t_l)|^2=q_j eta_j.
 
-If n_r tends to infinity and N_r/binom(n_r+d-1,d) tends to one, then M_r/m_(n_r) tends to one. This includes arbitrary support locations, weights and boundary stabilizers.
+If n_r tends to infinity and N_r/binom(n_r+d-1,d) tends to one, then M_r/m_(n_r) tends to one. For the Chebyshev lift this includes arbitrary support locations within the closed cube, positive weights and boundary stabilizers.
 
 ## Status and dependencies
 
@@ -54,3 +54,5 @@ The deterministic exact controls are `../code/fd1_controls.py` and `../evidence/
 ## History
 
 2026-11-12, Codex, assigned gpt-6.1-sol xhigh. R1 preregistration published at `f9ab1c6` before development; root GO received. This is a proof of the finite sketch credited to frontier S2/S4, not a priority claim.
+
+2026-11-12, response-05, Codex assigned gpt-6.1-sol high: explicitly stated the closed-cube node hypothesis for the Chebyshev reflection lift and its squeeze conclusion (H1; audit-05 D1a-F1). The general polynomial projection identity in the opening paragraph remains valid under its original R^d assumptions; only the lift requires cube nodes. No identity, proof or status changed.

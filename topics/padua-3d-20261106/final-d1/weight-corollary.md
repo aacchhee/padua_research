@@ -6,7 +6,7 @@ Split into: none.
 
 ## Statement, definitions and assumptions
 
-Let mu be normalized product Chebyshev measure on [-1,1]^3. Fix a real polynomial p that is strictly positive everywhere on the closed cube, write k=deg p, and normalize nu=c mu/p to a probability measure, c=(integral (1/p) dmu)^(-1). There exist gamma_p>0 and n_p such that every positive degree-(2n-1) rule for nu, n>=n_p, has
+Let mu be normalized product Chebyshev measure on [-1,1]^3. Fix a real polynomial p that is strictly positive everywhere on the closed cube, write k=deg p, and normalize nu=c mu/p to a probability measure, c=(integral (1/p) dmu)^(-1). There exist gamma_p>0 and n_p such that every positive degree-(2n-1) rule for nu with all nodes in the closed cube [-1,1]^3, n>=n_p, has
 
     N >= (1+gamma_p) binom(n+2,3).
 
@@ -18,7 +18,7 @@ Overall status: **PROVED with explicit LITERATURE dependency**, inherited explic
 
 ## Proof
 
-For a positive nu-rule with nodes x_i and masses w_i, set v_i=p(x_i)w_i/c>0. Exactness gives
+For a positive nu-rule with all nodes x_i in the closed cube [-1,1]^3 and masses w_i, set v_i=p(x_i)w_i/c>0. Exactness gives
 
     sum v_i q(x_i)=integral q dmu
 
@@ -29,3 +29,5 @@ For the doubling statement, the 1-D arcsine mass of [x-r,x+r] intersected with [
 ## Limitations and history
 
 No arbitrary continuous multiplier, Jacobi parameter class, vanishing-density class or general doubling family is claimed. The broad extension remains OPEN in general-weight-open.md. No numerical work. This routine exact reweighting corollary was developed in the authorized R4 general-weight attempt after publication `f7caf42` and root GO, Codex assigned gpt-6.1-sol xhigh, 2026-11-12.
+
+2026-11-12, response-05, Codex assigned gpt-6.1-sol high: made all-node membership in the closed cube explicit in the statement and transfer setup (H1; audit-05 D1a-F1). Previously it was implicit in "rule for nu". Positivity of p is assumed only on that cube, and the same nodes pass to D1-04. This statement clarification preserves the fixed-p hypothesis, exactness loss, proof and status and is submitted for focused re-audit.

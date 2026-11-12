@@ -1,7 +1,7 @@
 # PD-T?padua-3d-20261106-codex-D4-minima — packing-free n4..7 determinant minima
 
 ID kind: PD-T. Aliases: C4 restart; R08 dependency removal n4..7.
-Split from: R08-minima, its n4..7 cases with the same exact statement.
+Split from: PD-T?padua-3d-20261106-codex-R08-minima ([r08-lattice-minima.md](../theory/r08-lattice-minima.md)), its n4..7 cases with the same exact statement.
 Split into: none. Original R08-minima wording/status is preserved in its
 canonical file; the orchestrator owns any application of this split.
 
