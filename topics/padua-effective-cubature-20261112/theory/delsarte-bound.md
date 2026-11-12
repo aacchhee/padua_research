@@ -106,7 +106,7 @@ By (b), M ≥ L³ ∫ψ_R for every R. Letting R → ∞ gives M ≥ L³ ∫φ. 
 
 - **Consistency with Fisher.** φ₀ = 1_O ∗ 1_O / |O| satisfies (b): it is supported in 2O and φ̂₀ = |1̂_O|²/|O|. It gives M ≥ (4/3)(n − 1/2)³ = m_n − (5/3)n + 5/6 (checked exactly for n = 1…5), which is strictly below the exact Fisher-type bound M ≥ m_n of D1-01. So (b) loses only O(n) relative to the projection bound. Here m_n = (4n³ − 6n² + 8n − 3)/3.
 - **Calibration.** At n = 3, (c) together with the cap of record -04 gives at most N ≥ (5/2)³ (38/27)/8 ≈ 2.75. This is consistent with the 20-node D3 rule (Q0c).
-- **Numerical LP values.** The finite LP values of (a) are MEASURED in `../evidence/lp-torus.json` (Q1/Q2). They are not premises of this record.
+- **Numerical LP values.** The finite LP values of (a) are to be MEASURED by `../code/lp_torus.py` (Q1/Q2; pending, evidence path assigned when committed). They are not premises of this record.
 
 ## Sources
 

@@ -14,7 +14,7 @@ This file is written only by the topic orchestrator. Branch `claude/padua-effect
   N ≥ (1 + γ_A)(2n − 1)³/48 for all n, with γ_A = (3/4)D(int 2O) − 1 > 0.
   This is an alternative to the D1 compactness proof of Theorem A (PD-T557), with an explicit dependence on a single constant.
   [record](../topics/padua-effective-cubature-20261112/theory/uniform-theorem-a.md)
-- **Cap (-04), PROVED.** D(int 2O) ≤ 38/27, so γ_A ≤ 1/18, from an exact check of the Betke–Henk/Minkowski lattice. Finite torus LPs are also bounded by lattice-rule counts. Consequence: these LP routes with 8N ≥ M can exclude Padua packages only for n ≥ 138.
+- **Cap (-04), PROVED.** D(int 2O) ≤ 38/27, so γ_A ≤ 1/18, from an exact check of the Betke–Henk/Minkowski lattice. Finite torus LPs are bounded by lattice-rule counts. Consequence: the uniform bound -03 can exclude Padua packages only for n ≥ 138. The finite-LP analogue for 4 ≤ n ≤ 137 is OPEN.
   [record](../topics/padua-effective-cubature-20261112/theory/lp-cap.md)
 - **Explicit γ (-05), OPEN.** Target: a certified Delsarte function with ∫φ > 4/3.
   [record](../topics/padua-effective-cubature-20261112/theory/explicit-gamma-target.md)

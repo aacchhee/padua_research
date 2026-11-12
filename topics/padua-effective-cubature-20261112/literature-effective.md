@@ -19,7 +19,7 @@ Orchestrator: Claude (Opus 5.5). Read 2026-11-12. Third-party PDFs and extracts 
 - **What was independently checked.** Nothing in the KLM proofs. Locally we prove only the elementary inequalities of records -02 and -04. The proof of Theorem 6.4 depends on the source's strong duality (Thm 5.4), the existence of extremizers (Thm 5.6), Theorem 5.8 and [KLM23, Thm 1.4]. It is inherited as LITERATURE in record -03.
 - **Bearing on the BRIEF.**
   - BRIEF §1.4 route E1 (plain LP ↔ T(2O)) asks whether the octahedron is a non-Turán domain. By this source that would be the first known non-Turán convex body: a major open problem, not a step to take in a topic round.
-  - The Delsarte relaxation of the LP (record -02) instead asymptotes to D(2O), which Theorem 6.4 proves is > |O|.
+  - The Delsarte relaxation of the LP (record -02) is bounded below by (n−½)³D(int 2O) (record -02 (c)), and Theorem 6.4 proves D(int 2O) > |O|. That the finite Delsarte LP is asymptotic to D(int 2O)·n³ is not proved (independent check m7).
 
 ## Existing records consulted (no new LIT entry)
 

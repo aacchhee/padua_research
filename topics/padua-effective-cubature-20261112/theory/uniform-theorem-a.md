@@ -36,7 +36,7 @@ Overall status: **PROVED with explicit LITERATURE dependency** (same convention 
 | Part | Status | Evidence |
 |---|---|---|
 | (i) γ_A > 0 | LITERATURE-dependent, PROVED given it | KLM Theorem 6.4 with A = O, plus "O does not tile ℝ³ by translations" (below) |
-| (ii) uniform bound | PROVED (local) | record -02 (c) and (i) |
+| (ii) uniform bound | PROVED (local) | record -02 (c); it does not depend on (i). (ii) is fully local; (i) only makes it nontrivial |
 | (iii) explicit n₀ in terms of γ_A | PROVED (local, routine) | cubic comparison |
 | (iv) cap | PROVED (local) | record -04 |
 
@@ -72,7 +72,9 @@ D1-04's hypotheses (closed-cube nodes, positivity, exactness 2n−1) are exactly
 ## Scope
 
 - Positive weights; nodes in the closed cube; exactness 2n−2 suffices.
-- This does not decide any finite n ≤ 137, and by (iv) it cannot.
+- (ii) decides no finite n ≤ 137, and by (iv) it cannot. That is all that is proved about n ≤ 137: nothing is proved about whether packages exist there. For n ≥ 138, exclusion holds only from the unknown n₀(γ_A) ≥ 138 on.
+- Even with γ_A = 1/18, (ii) is weaker than the classical bound N ≥ binom(n+2,3) for every n ≤ 82, and first improves on it at n = 83 (independent check E1-m5). "Uniform" means valid at every n with one constant, not stronger at every n.
+- n₀ in (iii) is explicit only as a function of the unknown γ_A.
 - No signed-weight conclusion is drawn.
 - The value of γ_A is OPEN.
 - No statement about T(int 2O) is made. Whether T(int 2O) > 4/3 is open in the literature: KLM p. 2 says no convex body other than tiles, balls and their products has known Turán constant, and even the regular octagon is open.
@@ -85,3 +87,9 @@ D1-04's hypotheses (closed-cube nodes, positivity, exactness 2n−1) are exactly
 ## History
 
 2026-11-12, Claude (Opus 5.5 xhigh, orchestrator). First written in session 1 of the topic. It is a development claim that requires the Codex audit.
+
+2026-11-12, orchestrator: applied the independent check `../independent-checks-E1.md`.
+- m4: (ii) is local.
+- m5: added the scope of "uniform" and of n₀.
+- m3: Venkov–McMullen is stated in the already-read Lev–Matolcsi introduction (`topics/padua-3d-20261106/final-d1/sources.md` L17), so it would give non-tiling directly. The record keeps the GL route as primary.
+- NOTE items are recorded there.

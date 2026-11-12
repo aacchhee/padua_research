@@ -21,7 +21,12 @@ Overall status: **PROVED** (local; exact finite check of the lattice).
 
 ## Depends on
 
-- Records -02 and -03 (definitions only).
+- Record -02: its proof steps (b) (periodization) and (c) (approximation) are reused, and the definition of D comes from -02 (c). Record -03 is used only for the definition of γ_A.
+- **Notation.**
+  - R_n is the plain torus LP optimum: f ≥ 0, spectrum ⊂ {|k|₁ ≤ 2n−2}.
+  - R^Del_{n,K} is the Delsarte optimum: f ≥ 0, spectrum ⊂ {|k|₁ ≤ K}, and c_k ≤ 0 for 2n−2 < |k|₁ ≤ K.
+  - Both are optima of f(0)/c₀, as in gates.md.
+  - T(U) is KLM's Turán constant (§4.2: like D, but with f = 0 off U).
 - The lattice Λ = B ℤ³ with basis columns (2/3, 1, 1/3), (−1/3, −2/3, 1), (−1, 1/3, −2/3). Betke–Henk display it as the densest lattice packing of O (LIT-640, Minkowski 1904). **Only the two finite facts below are used, and both are checked locally and exactly; the optimality in LIT-640 is not used.**
   1. |det B| = 38/27.
   2. Every nonzero λ ∈ Λ has |λ|₁ ≥ 2 (the minimum 2 is attained by 14 vectors).
@@ -42,13 +47,14 @@ because every k ∈ L∖0 has |k|₁ ≥ 2n−1, so c_k ≤ 0. Since 0 ∈ G and
 
 ## Consequences recorded
 
-- In the torus normalisation the plain LP and the Delsarte LP both have value ≤ (19/18 + o(1))·m_n asymptotically. Exact finite values of M_lat(n) are MEASURED/computed in `../evidence/lp-lattice.json`.
-- **Packages.** With γ ≤ 1/18 in record -03 (ii), N ≥ (1+γ)(2n−1)³/48 excludes N = binom(n+3,3) only for n ≥ 138. Any route through 8N ≥ M and an LP of these two kinds therefore leaves 4 ≤ n ≤ 137 undecided. This is a proved limitation of these two relaxations combined with the factor-8 conversion, not of every method.
+- **Asymptotics of the finite cap (proof sketch, routine).** Let s be the least multiple of 3 with s ≥ n − 1/2, so s ≤ n + 2. The lattice L_n = sBℤ³ is integral, because 3B is an integer matrix and 3 | s. Its nonzero vectors have |k|₁ ≥ 2s ≥ 2n−1, and its index is (38/27)s³. Hence R^Del_{n,K} ≤ M_lat(n) ≤ (38/27)(n+2)³ = (19/18 + O(1/n))·m_n. Exact finite values of M_lat(n) are computed by `../code/lp_lattice.py` (pending; see LOG).
+- **Packages, uniform bound only.** Since γ_A ≤ 1/18, the uniform bound of record -03 (ii), N ≥ (1+γ_A)(2n−1)³/48, can exclude N = binom(n+3,3) only at degrees n ≥ 138. This is PROVED; record -03 (iv) has the arithmetic.
+- **Finite LPs, not proved here.** The finite LP at a fixed n is capped only by M_lat(n), not by (38/27)(n−½)³. The claim that the finite torus LPs combined with 8N ≥ M cannot exclude any 4 ≤ n ≤ 137 therefore needs, at each such n, a witness with M_lat(n) ≤ 8·binom(n+3,3). The margin is thin near n = 137. This finite statement is **OPEN**; its candidate home is a separate PD-N once the lattice witnesses are computed. *(Corrected 2026-11-12 after independent check E1-M1; the earlier wording called it proved.)*
 - The S4 remark "the lattice value is 1/18" (`topics/padua-3d-20261106/frontier-2026-11-08/S4.md` L78) is reconciled: 1/18 is exactly this cap.
 
 ## Checks
 
-`python -B topics/padua-effective-cubature-20261112/code/cap_critical_lattice.py topics/padua-effective-cubature-20261112/evidence/cap-critical-lattice.json`. It was run by the orchestrator on 2026-11-12 with Python 3.13.18, giving verdict PASS, det −38/27, min nonzero ℓ₁ = 2, and 14 minimal vectors. The enumeration bound is in the script docstring: |c_i| ≤ 2·max row ℓ₁-norm of B^{−1} = 3.
+`python3 -B topics/padua-effective-cubature-20261112/code/cap_critical_lattice.py topics/padua-effective-cubature-20261112/evidence/cap-critical-lattice.json`. It was run by the orchestrator on 2026-11-12 with Python 3.13.18, giving verdict PASS, det −38/27, min nonzero ℓ₁ = 2, and 14 minimal vectors. The enumeration bound is in the script docstring: |c_i| ≤ 2·max row ℓ₁-norm of B^{−1} = 3.
 
 ## Scope
 

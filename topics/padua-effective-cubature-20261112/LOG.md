@@ -41,7 +41,10 @@
   - The cubature LP admits the Delsarte relaxation, with high-frequency coefficients ≤ 0 (-02).
   - Continuous transference gives N ≥ (n−½)³ D(int 2O)/8 for every n. With KLM this yields Theorem A in uniform form, N ≥ (1+γ_A)(2n−1)³/48 with γ_A > 0 (-03). This is independent of D1-02/D1-03.
   - Cap: D(int 2O) ≤ 38/27, from the exact check of the Betke–Henk/Minkowski lattice, so γ_A ≤ 1/18 (-04).
-  - Consequence: this route can exclude packages only for n ≥ 138 (exact integer check), so 4 ≤ n ≤ 137 need other methods.
+  - Consequence: the uniform bound can exclude packages only for n ≥ 138 (exact integer check). A finite-LP version for 4 ≤ n ≤ 137 is OPEN; the corrected wording follows independent check E1-M1.
+- **Independent checks** (Opus subagents).
+  - C0 (`independent-checks-C0.md`): no BLOCKING. M1 (PR #27 also claims the sharp expansion) and m1–m5 were fixed at `6680efe`.
+  - E1 (`independent-checks-E1.md`, Opus xhigh): no BLOCKING. Every proof step was reconstructed, and the lattice and the threshold 138 were rerun independently. M1 (an overclaimed finite-LP range) and m1–m7 were fixed in the following commit.
   - S4's "lattice value 1/18" is reconciled.
 - **Novelty gate.** `novelty-gate-E1.md`: one surviving variant (-01) and four deferred or pending candidates.
 - **LP code.** The Sonnet 5.5 high subagent is running the torus plain and Delsarte LPs, the lattice references and the cube LP. Results go in `evidence/lp-*.json`.
