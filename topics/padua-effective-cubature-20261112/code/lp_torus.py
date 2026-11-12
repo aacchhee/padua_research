@@ -122,7 +122,7 @@ def local_minima(F, thr, cap):
     return idx[o] * (2 * PI / N), vals[o]
 
 
-def refine(fe, T, iters=25):
+def refine(fe, T, iters=15):
     T = T.copy()
     f, g, H = fe.fg(T, hess=True)
     for _ in range(iters):
@@ -275,11 +275,11 @@ def main():
     ap.add_argument("--grid-factor", type=int, default=2)
     ap.add_argument("--fft-factor", type=int, default=12)
     ap.add_argument("--cand-thr", type=float, default=3.0)
-    ap.add_argument("--cand-cap", type=int, default=3000)
+    ap.add_argument("--cand-cap", type=int, default=800)
     ap.add_argument("--max-iter", type=int, default=200)
     ap.add_argument("--delta", type=float, default=1e-4)
     ap.add_argument("--delta-max", type=float, default=1e-2)
-    ap.add_argument("--max-boxes", type=int, default=300_000)
+    ap.add_argument("--max-boxes", type=int, default=100_000)
     ap.add_argument("--lip-N", type=int, default=128)
     ap.add_argument("--out", type=str)
     ap.add_argument("--workdir", default="/tmp/claude-0/-workspace-padua-research/e2057052-bb3b-5345-abf7-4ff7dc19c8ac/scratchpad/lp")
@@ -313,15 +313,8 @@ def main():
     # Bernstein: every line restriction of f is a 1D trig poly of frequency <= K, so |grad f|<=K*||f||_inf,
     # |Hessian|_op <= K^2 ||f||_inf;  ||f||_inf <= max_grid|f| / (1 - K h sqrt3/2).
     Kdeg = 2 * n - 2 + args.extra
-    NB = max(args.lip_N, 8 * Kdeg)
-    FB = fft_grid(sp, corb, NB)
-    hB = 2 * PI / NB
-    assert Kdeg * hB * np.sqrt(3) / 2 < 0.5
-    Minf = float(np.abs(FB).max()) / (1 - Kdeg * hB * np.sqrt(3) / 2)
-    del FB
     fe.L2_crude, fe.L1_crude = fe.L2, fe.L1
-    fe.L2 = min(fe.L2, Kdeg ** 2 * Minf)
-    fe.L1 = min(fe.L1, Kdeg * Minf)
+    Minf = None  # Bernstein variant (L<=K*||f||inf) was tried at n=3 and was not tighter than the crude sums; not used
     # (b1) pre-registered Lipschitz grid bound: min over full-torus FFT grid, L = sum_k |c_k||k|_2
     Nl = args.lip_N
     F = fft_grid(sp, corb, Nl)
