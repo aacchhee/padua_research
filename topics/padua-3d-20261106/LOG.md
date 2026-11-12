@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5, xhigh): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/20-final-narrowed-audit.md](handoffs/20-final-narrowed-audit.md)
+- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/21-response-05.md](handoffs/21-response-05.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -1026,3 +1026,4 @@ their corresponding runs, with publication and execution timing distinguished.
 - Orchestrator note (audit-05 D2 m3): the NumPy2 mechanical failure occurred on the first proposal,
   after one baseline objective. The baseline evaluation itself succeeded. `gates.md` keeps its
   preregistration wording; this LOG note is the correction.
+- [Handoff 20](handoffs/20-final-narrowed-audit.md) done in `23333c9` (audit report `bc01a92`, auditor fixes `23333c9`); [handoff 21](handoffs/21-response-05.md) opened for the focused Codex response-05, then PR preparation.
