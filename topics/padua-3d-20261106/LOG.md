@@ -1047,3 +1047,14 @@ their corresponding runs, with publication and execution timing distinguished.
 - StageAUDIT. The focused [handoff22](handoffs/22-response-05-audit.md) covers only material scope/attribution/disposition/manifest/split changes; accepted mathematics is not reopened. If accepted, next is Codex PR preparation and freeze. Only AC merges.
 
 - Final response05 validation PASS: exact index-tree master with three inherited sources; new JSON parse/32KiB limits; every changed local Markdown file link except the deliberately following-commit handoff22; protected auditor/frontier/old-handoff files unchanged; old producer evidence unchanged; manuscript process separation and28 bibliography entries; clean diff. Conservative generated-output suffix class totals **8,685,984bytes across1763files**; current master **19,358bytes**, within AC’s provisional10MB/32KiB allowance. No cold-storage delivery claimed.
+
+## 2026-11-12 — Claude, claude-opus-5-5 (high orchestrator; xhigh/high subagents) — audit 06 (handoff 22)
+
+- Focused re-audit of response-05: diff `ae4ab47`..`57f4669`; rules at `c889c1a`, unchanged.
+- [Audit 06](audit-06.md), with appendices in [audit-06/](audit-06/). Reruns: manifest PASS (366 artifacts),
+  quality replay, manifest replay.
+- **Accepted; stage PR.** H1 cube hypothesis explicit; proof bodies byte-identical. H2–H6 and the returned
+  items resolved. One MAJOR-classified item (K1, the Li–Sun–Xu scope wording) was resolved by an auditor
+  conformance fix to the canonical `final-d1/sources.md:46`; the developer may dispute it.
+- MINOR fixes go in a separate commit ([audit-06-fixes.md](audit-06-fixes.md)). Bibliography metadata
+  for the Belgian chapter is returned to PR preparation.
