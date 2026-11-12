@@ -41,3 +41,7 @@ Repeat the fresh check at readiness and if main or another open PR’s ledger ch
 Six additional literature groups reuse existing accepted facts, with all local aliases retained. Nine previously unnumbered but already retained source records receive identities directly; no retrospective provisional ID is invented. [Exact map](pr-preparation/final-id-map.json) and the global crosswalk give every canonical/alias/source identity. All status, disposition, scope and source-coverage wording follows the accepted canonical records.
 
 First published reservation commit: [`512f63b02ce9b7436092729f53efcc883860a10a`](https://github.com/aacchhee/padua_research/commit/512f63b02ce9b7436092729f53efcc883860a10a), linked in PR33 before assignment.
+
+## Readiness refresh — 2026-11-12
+
+The [final readiness check](pr-preparation/readiness.md) refreshed main f70a260e5b5f9a01209dc8a05faabdcf8db1feeb, own application050f882026ef9df729b7b78c3bc18bf4cf6c2b7e and peer PR27 head8a94ce610594e9f52a23ca6b74b5751719f0d89e against the32-PR population. Complete reads covered59 copies,47 ledger copies,17 distinct ledger blobs and25 distinct blobs overall. Foreign maxima remain T553/N185/IDEA615/LIT635; the union including this reservation is T673/N245/IDEA755/LIT715. No collision or unrecorded closed-unmerged reservation was found. All assignments and permanent gaps above remain unchanged.

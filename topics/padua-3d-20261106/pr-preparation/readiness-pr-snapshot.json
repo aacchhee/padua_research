@@ -1,0 +1,237 @@
+{
+  "source": "Root actual GitHub collection and main-branch API reads after publishing registry application",
+  "observed_utc": "2026-11-12 13:23:53 UTC",
+  "main": "f70a260e5b5f9a01209dc8a05faabdcf8db1feeb",
+  "pulls": [
+    {
+      "number": 33,
+      "state": "open",
+      "merged_at": null,
+      "branch": "codex/padua-3d-20261106",
+      "head": "050f882026ef9df729b7b78c3bc18bf4cf6c2b7e"
+    },
+    {
+      "number": 32,
+      "state": "closed",
+      "merged_at": "2026-11-06T17:48:12Z",
+      "branch": "codex/nn-mop-conditioning-20261106",
+      "head": "e5ccf4b72bd9d0033e44e952927a1cba3a33fa24"
+    },
+    {
+      "number": 31,
+      "state": "closed",
+      "merged_at": "2026-11-06T18:17:17Z",
+      "branch": "codex/padua-mz-sharp-constants-20261106",
+      "head": "c93bdbe44cc9d7471d17f1fb88fccf4b890888b1"
+    },
+    {
+      "number": 30,
+      "state": "closed",
+      "merged_at": "2026-11-06T09:12:17Z",
+      "branch": "codex/padua-lanczos-nonproduct-20261105",
+      "head": "ad1f20326771fef0bb1b055c7720a7b5f3147917"
+    },
+    {
+      "number": 29,
+      "state": "closed",
+      "merged_at": "2026-11-05T21:55:54Z",
+      "branch": "claude/elegant-lamport-wkozfa",
+      "head": "c8d6eefc5cc24b02226c1926e5d57d6d4b7535e4"
+    },
+    {
+      "number": 28,
+      "state": "closed",
+      "merged_at": "2026-11-06T11:11:23Z",
+      "branch": "codex/nn-mop-stability-20261105",
+      "head": "7838e91b3c982885bf43d35e0c1141c6ed7f3264"
+    },
+    {
+      "number": 27,
+      "state": "open",
+      "merged_at": null,
+      "branch": "codex/padua-argmax-bridge-20261105",
+      "head": "8a94ce610594e9f52a23ca6b74b5751719f0d89e"
+    },
+    {
+      "number": 26,
+      "state": "closed",
+      "merged_at": "2026-11-05T18:25:49Z",
+      "branch": "codex/padua-mz-cleanup-20261105",
+      "head": "ca341df3cc2965d11c017da6d9cb05ce9f8b6002"
+    },
+    {
+      "number": 25,
+      "state": "closed",
+      "merged_at": "2026-11-05T19:40:05Z",
+      "branch": "codex/padua-argmax-effective-2-20261105",
+      "head": "30e1b7bc9e09a5a16c22f99fb092d10bd0676845"
+    },
+    {
+      "number": 24,
+      "state": "closed",
+      "merged_at": "2026-11-05T21:47:07Z",
+      "branch": "codex/padua-lanczos-frontier-20261105",
+      "head": "d4f432598ca9669f337ecb440241b3c7335eabe5"
+    },
+    {
+      "number": 23,
+      "state": "closed",
+      "merged_at": "2026-11-05T13:43:07Z",
+      "branch": "codex/padua-mz-2d-frontier-20261105",
+      "head": "4278b7e5eecc0bdb3eb3bce1f386520b2b3a63c6"
+    },
+    {
+      "number": 22,
+      "state": "closed",
+      "merged_at": "2026-11-05T14:12:33Z",
+      "branch": "codex/nn-mop-iep-20261103",
+      "head": "905ea46a7f6a537a23a8dfc0c4d769e7afeb376c"
+    },
+    {
+      "number": 21,
+      "state": "closed",
+      "merged_at": "2026-11-05T20:27:42Z",
+      "branch": "claude/padua-literature-20261103",
+      "head": "42e18b1c65bd87fe910a1999a3511e5ff2e19ee1"
+    },
+    {
+      "number": 20,
+      "state": "closed",
+      "merged_at": "2026-11-05T13:17:56Z",
+      "branch": "codex/padua-lebesgue-followups-20261103",
+      "head": "aeb1ff8fad5fee00f69ebd6b2513b1001007e2d6"
+    },
+    {
+      "number": 19,
+      "state": "closed",
+      "merged_at": "2026-11-05T10:34:05Z",
+      "branch": "codex/padua-argmax-effective-20261103",
+      "head": "d49ab6a8c1e70c93cddf82eb7187f38118fd30a2"
+    },
+    {
+      "number": 18,
+      "state": "closed",
+      "merged_at": "2026-11-03T09:29:48Z",
+      "branch": "claude/cold-storage-20261102",
+      "head": "367c3167199bb3599e96c161136dfbdb72acb57b"
+    },
+    {
+      "number": 17,
+      "state": "closed",
+      "merged_at": "2026-11-03T10:12:04Z",
+      "branch": "claude/padua-argmax-alln-20261101",
+      "head": "ad6e3ff5339fbea4ec99b5d5ac13e7a8d559bf3f"
+    },
+    {
+      "number": 16,
+      "state": "closed",
+      "merged_at": "2026-11-01T15:49:54Z",
+      "branch": "claude/results-in-repo-20261101",
+      "head": "060d29b7b0d4ef2dcd8d95b6a2ff942e11d79ba3"
+    },
+    {
+      "number": 15,
+      "state": "closed",
+      "merged_at": "2026-11-01T19:57:50Z",
+      "branch": "codex/padua-lanczos-drift-20261101",
+      "head": "c714c80a35ccaf9e0f7df6b96bc840eba8bd83b1"
+    },
+    {
+      "number": 14,
+      "state": "closed",
+      "merged_at": "2026-11-01T15:19:41Z",
+      "branch": "codex/padua-mz-2d-20261101",
+      "head": "635ba4fd537be9a4dbc060617fbc0535db4d72ad"
+    },
+    {
+      "number": 13,
+      "state": "closed",
+      "merged_at": "2026-11-01T10:25:55Z",
+      "branch": "claude/handoff-id-rules-20261101",
+      "head": "7ce4c36fb1494fee2dd3bdc1bf39fc241c5b9e21"
+    },
+    {
+      "number": 10,
+      "state": "closed",
+      "merged_at": "2026-11-01T09:37:12Z",
+      "branch": "claude/bivariate-lanczos-20261031",
+      "head": "9fa30122fec9796ca718af210a2a13c7525038a2"
+    },
+    {
+      "number": 9,
+      "state": "closed",
+      "merged_at": "2026-11-01T11:05:27Z",
+      "branch": "codex/padua-proof-attempts-20261101",
+      "head": "752ba068589683afe644b505d673f8da1529cbf0"
+    },
+    {
+      "number": 8,
+      "state": "closed",
+      "merged_at": "2026-11-01T09:17:10Z",
+      "branch": "claude/results-track-rule-20261101",
+      "head": "6eeec5b3a3d48c4bde198d9cc6c170dd92674bdb"
+    },
+    {
+      "number": 12,
+      "state": "closed",
+      "merged_at": "2026-11-01T21:03:20Z",
+      "branch": "codex/padua-proof-attempts-2-20261101",
+      "head": "c1325c6da7ef2fb2c20760c3e020280eba1e5126"
+    },
+    {
+      "number": 11,
+      "state": "closed",
+      "merged_at": "2026-11-01T10:47:08Z",
+      "branch": "claude/mz-prior-art-20261101",
+      "head": "1406ef74a76d9160324596447a831470b93c398b"
+    },
+    {
+      "number": 6,
+      "state": "closed",
+      "merged_at": "2026-11-01T10:19:03Z",
+      "branch": "claude/programme-ideas-20261031",
+      "head": "b46b4dea18ce2c933489a211b0b6819dfd32ca70"
+    },
+    {
+      "number": 5,
+      "state": "closed",
+      "merged_at": "2026-11-01T07:14:16Z",
+      "branch": "codex/mz-postmerge-frontier-20261031",
+      "head": "da679224b50d2210689c92e5a69d5a4d181afe3c"
+    },
+    {
+      "number": 4,
+      "state": "closed",
+      "merged_at": "2026-11-01T07:14:15Z",
+      "branch": "codex/lattice-unisolvence-20261031",
+      "head": "a4331a13301ee4a9905c8204c26bff5f9fdf246e"
+    },
+    {
+      "number": 3,
+      "state": "closed",
+      "merged_at": "2026-10-31T22:20:47Z",
+      "branch": "codex/mz-constants-20261031",
+      "head": "8ee04f4e5db46dd25fe5752ce605dde27098aae6"
+    },
+    {
+      "number": 2,
+      "state": "closed",
+      "merged_at": "2026-10-31T21:42:07Z",
+      "branch": "codex/charter-unisolvence-20261031",
+      "head": "317a26597dedc9adc9cfc6a26fa00078df7d29e4"
+    },
+    {
+      "number": 1,
+      "state": "closed",
+      "merged_at": "2026-10-31T13:51:13Z",
+      "branch": "codex/initialize-padua",
+      "head": "5a5f09f9768f4c2b28a82eb85ed5be8bd3c797e5"
+    }
+  ],
+  "population": 32,
+  "open": [
+    27,
+    33
+  ],
+  "closed_unmerged": []
+}

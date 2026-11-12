@@ -1,9 +1,9 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: PR · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/23-pr-preparation.md](handoffs/23-pr-preparation.md)
-- Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
-- Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
+- Stage: PR · Agent work complete; research frozen. PR33 is ready for AC’s merge decision after final publication. Final handoff: [24](handoffs/24-finalize-pr.md); no successor required.
+- Reserved final-ID ranges: T554–673/N186–245/IDEA616–755/LIT636–715; [permanent allocations and gaps](ALLOCATIONS.md).
+- Claims: 130 final claim rows,108 ideas,38 new literature identities and six existing-fact reuse groups;339 exact crosswalk keys. [Complete final map](pr-preparation/final-id-map.json).
 
 ## 2026-11-06 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -1079,3 +1079,13 @@ their corresponding runs, with publication and execution timing distinguished.
 - Shared registry application is strictly scoped:130proof/negative rows,108candidate rows,38newliterature rows plus6reuse addenda; dated IDEA013/029/120 and current-charter scope notes; one new paper map and this topic’s result-only RESULTS section. Other topics’ existing contents are preserved. Exact statuses, full source-dependent labels, scoped failures and remaining OPEN targets match audited records.
 - H-m7 metadata is corrected to Cools–Nuyens/DOI10.1007/978-3-540-74496-2_1 at verified institutional-index coverage; original chapter still unread. K1 is accepted as scope conformance, without dispute. Source/code/data/proofs and research quotas are unchanged.
 - A distinct Codex mechanical checker reviews mapping/diff/links and fresh reservations. This is final readiness under AC’s “no more claude” instruction, not a new scientific audit. Its process-only CURRENT sentence finding was removed before publication.
+
+## 2026-11-12 — final readiness and completion
+
+Codex coordinator gpt-6-astra high completed handoff24 under AC’s instruction “finalize PR, no more claude needed”. Completed Claude audits01–06 remain the scientific review record. No further Claude audit, mathematical change or research round was added. Mechanical application and an independent Codex check supplement those audits; the checker’s runtime model/effort was not independently exposed.
+
+The published application is050f882026ef9df729b7b78c3bc18bf4cf6c2b7e. [Readiness](pr-preparation/readiness.md), [full mechanical receipt](pr-preparation/readiness.json) and [fresh API population](pr-preparation/readiness-pr-snapshot.json) record PASS: all339 crosswalk mappings,130 claim rows,108 ideas,38 new literature rows/six reuse groups, scoped dependencies and unchanged foreign registry prefixes. Fresh main f70a260e5b5f9a01209dc8a05faabdcf8db1feeb and peer PR27 head8a94ce610594e9f52a23ca6b74b5751719f0d89e yield no reservation collision across59 source copies.
+
+Canonical theory, code and scientific evidence remain unchanged from c8691c5; the paper’s H-m7 bibliography correction explicitly retains metadata-only coverage and unread chapter fulltext. The original exact-cardinality polylog interpolation target remains OPEN. Final publication updates the WORK/AUDIT/PR description and marks PR33 ready for AC’s merge decision. No agent work remains after the final handoff status commit. Only AC merges.
+
+Final verification: `python topics/padua-3d-20261106/code/artifact_manifest.py --verify` passed366 artifacts/2301750 bytes; `git diff --check` passed. All preparation JSON parses and stays within32KiB per file. A conservative JSON/JSONL/CSV/TSV/NPZ/NPY/TXT inventory totals8391451 bytes across1601 files; the broader earlier generated inventory was below8.82MB, within AC’s accepted provisional10MB allowance. No scientific rerun was needed for this documentation-only completion.
