@@ -1,14 +1,15 @@
 # Effective Theorem A (positive cube cubature excess) and the Padua Lebesgue-constant corollary: log
 
 - Branch: `claude/padua-effective-cubature-20261112` · Base: main `b5388c2` (PR #33 merged) · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Stage: WORK · Open handoff: [handoffs/01-work.md](handoffs/01-work.md) (in progress, session 1)
+- Stage: AUDIT (pending) · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md) (Codex); handoff 01 done
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims (provisional IDs `PD-T?padua-effective-cubature-20261112-claude-NN`):
   - -01: C0 corollary, PROVED (assembly);
   - -02: Delsarte bound, PROVED;
   - -03: uniform Theorem A, PROVED with LITERATURE dependency on KLM 2025 Thm 6.4;
   - -04: 1/18 cap, PROVED;
-  - -05: explicit γ, OPEN.
+  - -05: explicit γ, OPEN;
+  - -06: PD-N, torus-LP finite limitation, PROVED (exact witnesses).
 
 ## 2026-11-12 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -49,6 +50,27 @@
 - **Novelty gate.** `novelty-gate-E1.md`: one surviving variant (-01) and four deferred or pending candidates.
 - **LP code.** The Sonnet 5.5 high subagent is running the torus plain and Delsarte LPs, the lattice references and the cube LP. Results go in `evidence/lp-*.json`.
 
+## 2026-11-12 — Claude, claude-opus-5-5 (xhigh per AC prompt; effort not exposed) — session 1, numerics and closing (E1 round 3, E3 round 1)
+
+- **LP subagent** (Sonnet 5.5 high) finished. About 2 h wall on 3–5 processes. Code is `code/lp_{torus,lattice,cube,report}.py`; small evidence is `evidence/lp-*.json`; bulky receipts are in the session scratchpad only, not archived.
+- **Q1 PASS. Q2: plain-LP KILL, Delsarte INCONCLUSIVE. Q3 not exercised** (`gates.md`).
+  - Plain torus LP: ρ_n = 1 within 3e-6 for n = 2…12.
+  - Delsarte LP: ρ^Del up to 1.084 (n = 7, K = 19).
+  - Lattice minima M_lat (avoid 0 < |k|₁ ≤ 2n−2): exhaustive for n = 2…8, upper bounds for 9…16. The orchestrator re-verified all 15 witnesses independently.
+  - Cube LP: λ = 1.2034, 1.2104, 1.2010 at n = 2, 3, 4 (relaxation upper values).
+- **Strengthening, found while setting up the witnesses.** The lift of a rule exact on Π_{2n−1} is exact up to |k|₁ = 2n−1, which gives L = n in the transference (-02 (d), with proof).
+  - So -03 (ii′): N ≥ (1+γ_A)n³/6.
+  - The package threshold under γ_A ≤ 1/18 moves from 138 to **110**; the exact integer check is in -03.
+  - This matches the merged lattice-class threshold of `topics/padua-3d-20261106/paper-note-draft.md` §4 (19n³/108, n ≥ 110), which is the case γ_A = 1/18.
+  - -04 and -05 updated. Records -02, -03, -04 and -05 have dated history notes.
+- **-06 (PD-N).** `code/pdn_lattice_witness.py` searched for integer lattices with min ℓ₁ ≥ 2n and index ≤ 8·binom(n+3,3), using critical-lattice roundings, ±1 perturbations and the subagent's lattices. Each witness is verified by exhaustive coefficient-box enumeration. Result and range: record -06 and `evidence/pdn-lattice-witness.json`. Cross-check: the witnesses at n = 9, 12, 15 equal the merged exact minima of `r08-lattice-minima.md` (1026, 2432, 4750), and every witness is ≥ the merged minimum.
+- **Candidates.**
+  - Cube LP -03: killed for n = 3, 4 (MEASURED), deferred for n ≥ 5.
+  - New pending candidate -06: Delsarte extension of the cube LP.
+- **Outputs written:** `rounds.md`, `attempts/E1–E3.md`, `report.md`, `evidence-manifest.json`; results updated.
+- **Handoff.** Handoff 01 closes in the following commit. Handoff 02 is the Codex audit.
+
 ## Runs needed
 
-- Q0–Q3, C0 and E1–E3 as in handoff 01.
+- Delsarte torus LP n = 9…12 at K = 3n−2 (`attempts/E1.md`); cube LP n ≥ 5 and its Delsarte extension (`attempts/E3.md`); certified φ (-05).
+- Cold-storage archival of the scratchpad LP receipts (`runs/*.json`, `*.npz`): pending, AC's storage was not reachable from this session. They are regenerable from the committed code and commands in `evidence/lp-torus.json` and the subagent report summarised above.
