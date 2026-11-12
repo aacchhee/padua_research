@@ -126,3 +126,11 @@ Target: record -05. That is, an explicit γ₁ > 0 with γ_A ≥ γ₁, and with
   - PROVED with LITERATURE dependency, via DGOV Table 6: met (round 1).
   - Local PROVED: the certificate and the committed checker are done; the independent rerun is pending.
 - **G4: met,** since 1/36 < γ₁ < 1/18.
+
+### Addendum G — final verdict (2026-11-12)
+
+**G1–G4 met; status PROVED (computer-assisted, local).**
+- Developer checker `code/gamma_certificate.py`: PASS (`evidence/gamma-certificate.json`).
+- Independent rerun on a separate code path, `code/gamma_certificate_indep.py`: PASS (`evidence/gamma-certificate-indep.json`, `independent-checks-gamma.md`). The orchestrator replayed it with the same verdict.
+- γ₁ = 0.02784156869077655… ∈ (1/36, 1/18).
+- The campaign used 3 of 7 rounds. The improvement direction was stopped after one empty round (round 3); the kill rule was not triggered.

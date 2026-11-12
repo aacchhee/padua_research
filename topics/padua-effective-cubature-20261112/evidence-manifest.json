@@ -75,6 +75,15 @@
    "sha256": "2fe3476a5034d74b20de3d9c192910a3d4debfa6020382a382af70b1e57d39c2",
    "bytes": 1138,
    "producer_sha256": "a6f841e0646956feaaa947695ebf4ac4ae1c07039da40109f7d8ee57a82b8375"
+  },
+  "evidence/gamma-certificate-indep.json": {
+   "producer": "code/gamma_certificate_indep.py",
+   "command": "cwd = topic dir: python3 -I code/gamma_certificate_indep.py --input <scratch>/octa_double.func.cpp --out evidence/gamma-certificate-indep.json",
+   "status": "independent rerun (separate code path, Bernstein enclosures) of record -07 (L): PASS",
+   "used_by": "theory/explicit-gamma.md, independent-checks-gamma.md",
+   "sha256": "188f765eb92b9e4c994384b77042221f892a1ac16b284f600cb6bca22f16336a",
+   "bytes": 2918,
+   "producer_sha256": "635077161ada17c14c8e866ba36dc6d90ea971b52f7b47073431a6a4cc826f76"
   }
  },
  "off_repository": [

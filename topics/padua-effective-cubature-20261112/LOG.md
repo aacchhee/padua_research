@@ -1,7 +1,7 @@
 # Effective Theorem A (positive cube cubature excess) and the Padua Lebesgue-constant corollary: log
 
 - Branch: `claude/padua-effective-cubature-20261112` · Base: main `b5388c2` (PR #33 merged) · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Stage: AUDIT (pending) · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md) (Codex); handoff 01 done · Draft PR: https://github.com/aacchhee/padua_research/pull/34 (audit PENDING)
+- Stage: AUDIT (pending) · Open handoff: [handoffs/03-audit.md](handoffs/03-audit.md) (Codex); handoff 01 done, 02 superseded · Draft PR: https://github.com/aacchhee/padua_research/pull/34 (audit PENDING)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims (provisional IDs `PD-T?padua-effective-cubature-20261112-claude-NN`):
   - -01: C0 corollary, PROVED (assembly);
@@ -10,7 +10,7 @@
   - -04: 1/18 cap, PROVED;
   - -05: explicit γ, OPEN;
   - -06: PD-N, torus-LP finite limitation, PROVED (exact witnesses);
-  - -07: explicit γ_A ≥ 1/36, PROVED with LITERATURE dependency (DGOV 2017); local certificate in progress.
+  - -07: explicit γ_A > 1/36, PROVED (computer-assisted, local; independent rerun PASS).
 
 ## 2026-11-12 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -93,6 +93,16 @@
 - **Exact transform** cross-checked by quadrature (`code/gamma_ft_check.py`, MEASURED, 7e-12).
 - **Measured margins:** α cannot go below about 1.0007 for this function, and the interior maximum of P is −1.8e-4.
 - **Independent rerun:** a separate Opus agent is writing its own code from the specification, without access to this checker. Pending.
+
+## 2026-11-12 — Claude, claude-opus-5-5 (xhigh; effort not exposed) — explicit-γ campaign, rounds 3 and close
+
+- **Round 3 (improvement attempt).** The sampled LP was numerically unreliable: it fell below a known feasible point. No claim; the direction is stopped (`attempts/E1-gamma.md`).
+- **Independent rerun of the γ certificate.** A separate Opus agent wrote its own code path from the specification only: Bernstein enclosures in x-space, an exact face chart, and a tail from |x|_∞ ≥ 3.
+  - Verdict **PASS**, with strict margins: P ≤ −2.03e-5 and G ≥ 2.03e-3. γ₁ matches to 30 digits.
+  - The orchestrator replayed it with the same verdict (4.4 s).
+  - The developer's sampled margin hints were corrected by the rigorous values: max P ≈ −1.16e-4, min G ≈ 0.0864.
+- **Record -07 is now PROVED (computer-assisted, local):** γ_A > 1/36, N ≥ 37n³/216 for all n, and no package for n ≥ 218. Gates addendum G final verdict recorded.
+- **Campaign closed: 3 of 7 rounds used.** Handoff 02 is superseded by handoff 03 (the Codex audit of session 1 plus the campaign).
 
 ## Runs needed
 

@@ -23,15 +23,15 @@ Split into: none. The local re-verification is part (L) below.
 
 ## Status by part
 
-Overall status: **PROVED (computer-assisted, local)**, independent rerun PENDING_INDEP. The certified function is the DGOV octahedron function, whose coefficients are taken from their ancillary file as data only. Its admissibility and value are re-proved locally by the certificate (L), so no DGOV theorem is a premise. Until the independent rerun is recorded, the status of (a) remains PROVED with LITERATURE dependency, via DGOV Table 6.
+Overall status: **PROVED (computer-assisted, local)**, with the developer checker and an independent rerun on a separate code path both PASS. The certified function is the DGOV octahedron function, whose coefficients are taken from their ancillary file as data only. Its admissibility and value are re-proved locally by the certificate (L), so no DGOV theorem is a premise; DGOV remains the provenance and a literature cross-check (Table 6).
 
 | Part | Status | Evidence |
 |---|---|---|
-| (a) | PROVED with LITERATURE dependency | DGOV Table 6 and §6 (LIT?…-claude-02); local transcription below |
+| (a) | PROVED (computer-assisted, local) via (L); also PROVED with LITERATURE dependency via DGOV Table 6 | Part (L); LIT?…-claude-02 |
 | (b) | PROVED given (a) | record -03 (ii), (ii′) |
 | (c), (d) | PROVED given (b) | exact integer arithmetic (Checks) |
 | (e) | PROVED | record -04 (a) |
-| (L) local certificate | PROVED (computer-assisted; developer run PASS; independent rerun PENDING_INDEP) | `../code/gamma_certificate.py`, `../evidence/gamma-certificate.json`, Part (L) below |
+| (L) local certificate | PROVED (computer-assisted; developer run PASS; independent rerun PASS) | `../code/gamma_certificate.py`, `../evidence/gamma-certificate.json`, Part (L) below |
 
 ## Depends on
 
@@ -97,7 +97,19 @@ Results, verdict **PASS**, 2026-11-12, Python 3.13.18, NumPy 2.5.3:
 
 The leaf lists (3 MB) are in the session scratchpad only; they can be regenerated with `--leaves`.
 
-**Independent rerun.** PENDING_INDEP.
+**Independent rerun.** PASS. A separate Opus agent worked from the specification only, without reading the developer code: `../code/gamma_certificate_indep.py` (SHA-256 `63507716…826f76`), receipt `../evidence/gamma-certificate-indep.json`, report `../independent-checks-gamma.md`.
+- **Its method:**
+  - its own exact derivation of G via 1-D Hermite factors, evaluated with arb;
+  - degree-26 Bernstein enclosures in x-space;
+  - an exact chart for the face strip |x|₁ ∈ [α, α + 1/8], so that no box crosses the face;
+  - a tail argument from |x|_∞ ≥ 3, by expansion in t with r² = R²(1+t).
+- **Its results:**
+  - the rigorous bounds are P ≤ −2.03·10⁻⁵ on the region and G ≥ 2.03·10⁻³;
+  - γ₁ = 0.0278415686907765546295935969422 ± 2.6·10⁻³², matching the developer value;
+  - controls: α = 1 fails, with an exact point at |x|₁ = 1.000122 where P = +0.0027; the true maximum of P on the region is ≈ −1.16·10⁻⁴; the minimum of G is ≈ 0.0864.
+- **Orchestrator replay** of the independent script: the same verdict PASS in 4.4 s, 2026-11-12.
+
+Combined trust base: Python fractions, python-flint/arb, IEEE double arithmetic with the stated a-priori error bounds, and the written reductions. The two code paths share only the input file.
 
 ## Checks
 

@@ -40,6 +40,10 @@ ENTRIES = {
         "producer": "code/gamma_certificate.py",
         "command": "cwd = topic dir: python3 -B code/gamma_certificate.py --anc <scratch>/octa_double.func.cpp --alpha 1.001 --R 4 --RG 4 --out evidence/gamma-certificate.json  (input: arXiv:1510.02331v3 anc/octa_double.func.cpp, SHA-256 034a1aea4fafbf29743bded0812723ac8c9cf95274225213578145d016a7bc47; third-party, not committed)",
         "status": "computer-assisted certificate of record -07 (L): PASS (developer run)", "used_by": "theory/explicit-gamma.md"},
+    "evidence/gamma-certificate-indep.json": {
+        "producer": "code/gamma_certificate_indep.py",
+        "command": "cwd = topic dir: python3 -I code/gamma_certificate_indep.py --input <scratch>/octa_double.func.cpp --out evidence/gamma-certificate-indep.json",
+        "status": "independent rerun (separate code path, Bernstein enclosures) of record -07 (L): PASS", "used_by": "theory/explicit-gamma.md, independent-checks-gamma.md"},
 }
 OFFREPO = [
     {"what": "LP per-run receipts runs/n*_e*.json, lat_*.json, cube[2-4].json, torus_f_n*_e*.npz",

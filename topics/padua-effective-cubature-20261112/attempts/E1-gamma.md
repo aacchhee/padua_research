@@ -30,9 +30,9 @@ AC (2026-11-12): "I authorize up to seven rounds to make gamma explicit". Claude
 - **Margins (MEASURED):**
   - P on |x|₁ = 1.0 has a maximum of +3.2·10⁻³, so α = 1 fails; P on |x|₁ = 1.0005 still has a positive maximum, +1.3·10⁻³.
   - At α = 1.001 the boundary maximum is −6.1·10⁻⁴.
-  - The interior maximum is ≈ −1.8·10⁻⁴, near (0, 0.71, 0.72).
+  - The interior maximum is ≈ −1.8·10⁻⁴, near (0, 0.71, 0.72), by sampling. The independent check later proved the true maximum lies in [−1.1598·10⁻⁴, −10⁻⁴], at (0, 0.71333, 0.71333).
   - So α cannot be lowered below roughly 1.0007 with this function.
-- **Independent rerun:** delegated to a separate Opus agent, with its own code path written from the specification only. Pending.
+- **Independent rerun:** a separate Opus agent wrote its own code path from the specification only. **PASS** (`../independent-checks-gamma.md`); the orchestrator replayed it with the same verdict.
 
 ## Round 3 — bounded improvement attempt (empty; no claim)
 

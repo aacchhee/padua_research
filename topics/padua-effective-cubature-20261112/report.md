@@ -15,7 +15,7 @@ Claude (Opus 5.5 xhigh, orchestrator), 2026-11-12. Rules read at `39a4bf5`. Deve
 
   N ≥ 37n³/216 for every n ≥ 1;
 
-  no positive Padua package exists for any n ≥ 218; and N > binom(n+2,3) for n ≥ 109. Independent rerun: PENDING_INDEP.
+  no positive Padua package exists for any n ≥ 218; and N > binom(n+2,3) for n ≥ 109. An independent rerun on a separate code path (Bernstein enclosures) gives PASS.
 - **Plain-LP route (BRIEF E1 as written).** It is equivalent asymptotically to Turán's problem for the octahedron, which KLM report as open. Numerically the plain torus LP equals Fisher, ρ_n = 1 within 3·10⁻⁶ for n = 2…12. Q2 kills it (MEASURED).
 - **Finite range.** No finite exclusion was found. Exact lattice witnesses prove that the torus LP route, in any form, cannot exclude a package at any n = 2…109 (-06, PD-N). This is exactly the range left open by the uniform bound. The plain cube LP gives λ ≈ 1.2 < 1+3/n at n = 3, 4 (MEASURED).
 
@@ -57,7 +57,7 @@ Details: [gates.md](gates.md).
 
 **γ_A ≥ γ₁ = 0.02784156869… > 1/36** (record -07).
 - **Round 1.** An explicit γ_A is the same as an explicit Cohn–Elkies bound below 1 for translative packings of O/2: the Cohn–Elkies admissibility conditions are exactly Delsarte admissibility for int(K−K). DGOV (arXiv:1510.02331, Table 6) prove the bound 0.972912750 for the octahedron.
-- **Round 2.** Their function f = P·e^{−π|x|²} (P of degree 26, taken from their ancillary file as data) is re-certified locally by `code/gamma_certificate.py`: f̂ ≥ 0, f ≤ 0 on |x|₁ ≥ 1.001, and the value in ball arithmetic. Verdict PASS in 121 s; independent rerun PENDING_INDEP.
+- **Round 2.** Their function f = P·e^{−π|x|²} (P of degree 26, taken from their ancillary file as data) is re-certified locally by `code/gamma_certificate.py`: f̂ ≥ 0, f ≤ 0 on |x|₁ ≥ 1.001, and the value in ball arithmetic. Verdict PASS in 121 s. An independent rerun on a separate code path also gives PASS (5 s, Bernstein enclosures; `independent-checks-gamma.md`).
 - **Round 3.** An attempt to improve the value with a sampled LP was numerically unreliable; no claim (`attempts/E1-gamma.md`).
 
 **Explicit consequences** (rules exact on Π_{2n−1}, positive, nodes in the closed cube):
@@ -112,7 +112,7 @@ Consistency check:
 | -04 | [lp-cap.md](theory/lp-cap.md) | PROVED |
 | -05 | [explicit-gamma-target.md](theory/explicit-gamma-target.md) | CLOSED by -07 |
 | -06 | [limitation-torus-lp-finite.md](theory/limitation-torus-lp-finite.md) | PD-N, PROVED (exact witnesses) |
-| -07 | [explicit-gamma.md](theory/explicit-gamma.md) | PROVED, computer-assisted (local certificate); independent rerun PENDING_INDEP |
+| -07 | [explicit-gamma.md](theory/explicit-gamma.md) | PROVED, computer-assisted (local certificate; independent rerun PASS) |
 
 Supporting files:
 - Evidence: [evidence-manifest.json](evidence-manifest.json).

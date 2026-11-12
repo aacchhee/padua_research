@@ -18,7 +18,7 @@ This file is written only by the topic orchestrator. Branch `claude/padua-effect
   [record](../topics/padua-effective-cubature-20261112/theory/lp-cap.md)
 - **Explicit-γ target (-05):** closed by -07.
   [record](../topics/padua-effective-cubature-20261112/theory/explicit-gamma-target.md)
-- **Explicit γ (-07), PROVED (computer-assisted, local; independent rerun PENDING_INDEP).** γ_A ≥ 0.02784156869… > 1/36, via the Dostert–Guzmán–de Oliveira Filho–Vallentin Cohn–Elkies function for the octahedron, re-certified locally. Hence:
+- **Explicit γ (-07), PROVED (computer-assisted, local; independent rerun on a separate code path PASS).** γ_A ≥ 0.02784156869… > 1/36, via the Dostert–Guzmán–de Oliveira Filho–Vallentin Cohn–Elkies function for the octahedron, re-certified locally. Hence:
   - N ≥ 37n³/216 for every positive closed-cube rule exact on Π_{2n−1}, at every n;
   - **no positive Padua package exists for n ≥ 218**;
   - the bound beats Fisher for n ≥ 109.
