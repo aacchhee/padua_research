@@ -11,7 +11,7 @@ All paths below are relative to the repository root `/workspace/padua_research`;
 
 Let Λ(Pad_n) := max over the closed square [−1,1]² of λ_n, the Lebesgue function of total-degree-n interpolation at the even-checkerboard Padua points of PD-T101 (conventions below).
 
-**(i)** For every integer n with 2 ≤ n ≤ 32, and for every integer n ≥ N_* (N_* the integer of PD-T229), Λ(Pad_n) = Λ_c(n). The set of global maximizers of λ_n on [−1,1]² is exactly {(−1,−1),(1,−1)} for even n and {(−1,−1),(−1,1)} for odd n; these are the two corners that are not nodes.
+**(i)** For every integer n with 2 ≤ n ≤ 32, and, for an integer N_* whose existence is asserted by PD-T229 (no value is known), for every integer n ≥ N_*, Λ(Pad_n) = Λ_c(n). The set of global maximizers of λ_n on [−1,1]² is exactly {(−1,−1),(1,−1)} for even n and {(−1,−1),(−1,1)} for odd n; these are the two corners that are not nodes.
 
 **(ii)** For every integer n ≥ max(32, N_*), with N = n + 1/2, a = 2/π, c₁ = a(γ + log(8/π)), b = 2ac₁ (= (8/π²)(γ + log(8/π))) and c = c₁² + κ (κ as in PD-T269),
 
@@ -101,7 +101,7 @@ The statement above follows the records. Differences from BRIEF §2.1–2.3:
 6. **Maximizer sets.** BRIEF says "the two parity-correct non-node corners"; the records give them explicitly (even n: (−1,−1),(1,−1); odd n: (−1,−1),(−1,1)).
 7. **Constants.** BRIEF gives only c numerically. The records define b = 2ac₁ = (8/π²)(γ + log(8/π)) and c = c₁² + κ, with the open-endpoint enclosure (2). No numerical value of b is stated in the records, so none is given here.
 8. **PR #27 (BRIEF §2.3).** BRIEF says PR #27 would extend (i) to 2..40 and make N_* effective as ⌈exp(10¹²)⌉. See the dated note: the branch head claims more than this, and the quoted number comes from an earlier component.
-9. **Status wording inside records.** Several record bodies keep historical "required Claude audit pending" wording (for example PD-T271 L49 vs its dated header L3; PD-T229 L29). The PROOF_STATUS.md rows list Claude audit-01 for all of them. This record follows the registry rows; the auditor should confirm.
+9. **Status wording inside records.** Several record bodies keep historical "required Claude audit pending" wording (for example PD-T271 L49 vs its dated header L3; the degree-six record L30). *Corrected 2026-11-12 (m4):* PD-T229 L29 records the audit as accepted, with record fixes pending. The PROOF_STATUS.md rows list Claude audit-01 for all of them. This record follows the registry rows; the auditor should confirm.
 10. **Provisional ID.** Handoff 01 writes `PD-T?effective-cubature-claude-01`; the task assignment gives `PD-T?padua-effective-cubature-20261112-claude-01`. The latter is used. Mapping to be recorded at PR preparation.
 
 ## Priority wording
@@ -112,7 +112,7 @@ From `topics/padua-literature-20261103/p1-comparison.md` ("Priority wording for 
 
 > "Caliari, De Marchi, Sommariva and Vianello conjectured [CDMSV08] that the maximum is attained at a vertex, and De Marchi [DeM22, §3.3(2)] observed that it lies at the corners not occupied by Padua points. We prove this for 2 ≤ n ≤ 16 and for all sufficiently large n; the intermediate range remains open."
 
-The second sentence predates PD-T246 (n ≤ 32); the range there should be read as updated by (i).
+Both sentences need caveats here. The first concerns the corner value Λ_c(n), and its "remainder bound valid for all n ≥ 2" does not carry over to Λ(Pad_n), which equals Λ_c(n) only in the ranges of (i). The second predates PD-T246 (n ≤ 32), so its range should be read as updated by (i). *(m3, 2026-11-12.)*
 
 What the comparison supports, and no more: only the leading term of the Padua Lebesgue constant is published, Kolomoitsev–Lomako 2021 (LIT-379; Thm 2.1 and the unnumbered Padua sentence, p. 4), with pointwise O(log n) work going back to Kuznetsova 1995 (LIT-482, Thm 1; Pimenova 1979, LIT-484, for the m = n trigonometric case). Every published remainder found is O(log n), so none determines the second term b log n (p1 row for PD-T158, L38). The p1 comparison has no row for the constant c (PD-T271); by the same reasoning an O(log n) remainder cannot determine c. This last point is this record's inference from p1, not a p1 sentence. The second and third terms are therefore new as far as the documented search goes; the search was not exhaustive (zbMATH and MathSciNet full-text search unavailable, p1 L15). Do not claim 4/π² as new, and do not claim KL proved the corner lower bound (p1 L52).
 
@@ -122,7 +122,8 @@ Branch `codex/padua-argmax-bridge-20261105` (head `8a94ce610594e9f52a23ca6b74b57
 
 - `C01-effective-argmax.md` on that branch states N_0 = ⌈exp(10¹²)⌉ (L16, L244): this matches the BRIEF's number as an earlier effective threshold.
 - The branch's results file `results/padua-argmax-bridge-20261105.md` and `G01-all-degrees.md` claim the argmax PROVED (computer-assisted) for every n ≥ 2: finite certificates for 2..319 (inherited 2..32, native 33..40, compact returns 41..319) and an analytic tail from 320 (E14), with a later route from n ≥ 512 (J01). The same file reports a manuscript pair and says PR27 remains draft with Claude audit pending.
-- If merged and audited, it would make (i) hold for all n ≥ 2 and make the starting point of (ii) effective. The BRIEF's "2..40, exp(10¹²)" thus understates the branch head. None of these claims is verified here; update this record with a dated note when the PR merges.
+- The branch also claims the sharp corner expansion Λ_c = (4/π²)log²N + b log N + c − 1/N + O(log N/N²), PROVED analytically for both parities (results file L11–13; `H-sharp-corner-expansion.md`). Its manuscript (`paper/sections/introduction.tex` L133–149) says this also holds for Λ_n. *(Added 2026-11-12 after independent check m1.)*
+- If merged and audited, it would make (i) hold for all n ≥ 2, make the starting point of (ii) effective, and replace (ii) by a sharper expansion; its remainder constant is not stated numerically. The BRIEF's "2..40, exp(10¹²)" thus understates the branch head. None of these claims is verified here; update this record with a dated note when the PR merges.
 
 ## Open items
 
@@ -133,3 +134,5 @@ Branch `codex/padua-argmax-bridge-20261105` (head `8a94ce610594e9f52a23ca6b74b57
 ## History
 
 - 2026-11-12: written by Claude subagent (Sonnet 5.5, high effort) for orchestrator Claude Opus 5.5. Rules read at `0abf5e7d912b41c9b9248d4dc9f4580425683b53`. No computation, no Git state change.
+
+2026-11-12, orchestrator (Claude Opus 5.5 xhigh): applied the fixes from the independent check (`../independent-checks-C0.md`): M1 in the gate, and m1–m4 here. On m5: drafting was delegated to Sonnet 5.5 high as mechanical assembly of registered statements, with no new mathematics, under the WORKFLOW row "Mechanical edits". The mathematical check was done by Opus 5.5 high. The orchestrator (Opus) reviewed and owns the record.

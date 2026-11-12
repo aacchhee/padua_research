@@ -5,7 +5,7 @@ This file is written only by the topic orchestrator. Branch `claude/padua-effect
 ## Status (2026-11-12): WORK, session 1
 
 - **C0 (-01), PROVED, assembly of merged results; independent check pending.** The Padua Lebesgue constant equals the corner value Λ_c(n), attained exactly at the two non-node corners, for 2 ≤ n ≤ 32 and for n ≥ N_* (N_* non-effective). Hence, for n ≥ max(32, N_*),
-  Λ(Pad_n) = (4/π²)log²N + b log N + c + R_n, N = n + ½,
+  Λ(Pad_n) = (4/π²)log²N + b log N + c + R_n (for n ≥ max(32, N_*)), N = n + ½,
   with PD-T271's explicit R_n → 0 and c = 1.8461603104239260797598387379… (parity independent).
   [record](../topics/padua-effective-cubature-20261112/theory/lebesgue-constant-corollary.md)
 - **Delsarte bound (-02), PROVED.** Every positive closed-cube rule exact on Π_{2n−2} satisfies N ≥ (n − ½)³ D(int 2O)/8 for every n ≥ 1, where D is the Delsarte constant of the open double octahedron. The finite form is M ≥ f(0)/c₀ for nonnegative trigonometric f whose coefficients are ≤ 0 beyond the exact range.
