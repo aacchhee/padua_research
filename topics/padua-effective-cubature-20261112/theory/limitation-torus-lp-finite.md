@@ -14,7 +14,9 @@ Let S be the set of degrees listed below (`covered_E2n-1` in `../evidence/pdn-la
 
 So the lower bound N ≥ f(0)/(8c₀) obtained from record -02 (a) and M ≤ 8N never exceeds binom(n+3,3). This torus route therefore cannot exclude a positive closed-cube rule with binom(n+3,3) nodes exact on Π_{2n−1} at any n ∈ S, whatever spectrum is chosen.
 
-**S** (computed 2026-11-12; see Evidence): RANGE_PLACEHOLDER
+**S = {2, 3, …, 109}** (computed 2026-11-12; see Evidence). With record -03 (iv), this means that **no Padua package at any 4 ≤ n ≤ 109 can be excluded by the torus Delsarte route in any form**: not by the uniform bound, and not by any finite LP at that degree.
+
+For the weaker exactness E = 2n−2 (lattices with min ℓ₁ ≥ 2n−1), the witnesses cover n = 2…128. This is recorded for completeness only, because packages are exact on Π_{2n−1}.
 
 ## Assumptions and scope
 
@@ -58,11 +60,21 @@ The finite facts used are |det A_n| and min_{0≠c} |A_nc|₁ ≥ 2n for each n 
 
 ## Checks
 
-CHECKS_PLACEHOLDER
+Run by the orchestrator on 2026-11-12 (Python 3.13.18, NumPy as installed; versions recorded in the evidence file), from the topic directory.
+
+1. Search: `python3 -B code/pdn_lattice_witness.py --nmin 2 --nmax 140 --extra evidence/lp-lattice.json --perturb --out <scratch>/pdn/witness-final.json`.
+   - Script SHA-256 `819558d6…6642514`. It took 12 min 39 s of wall time.
+   - Output: covered for E = 2n−1 at n = 2…109 (108 degrees), and uncovered for every n = 110…140, as the packing bound requires. For E = 2n−2 it covered n = 2…128.
+   - The tightest case is n = 109, with index 1822682 against 8·binom(112,3) = 1823360.
+   - The full output (38.8 KB) is in the session scratchpad only and is regenerable by this command.
+2. Second path: `python3 -B code/pdn_check_ball.py --full <scratch>/pdn/witness-final.json --out evidence/pdn-lattice-witness.json`. It took 2 min 54 s. Output: `failures []` for all 139 × 2 witnesses, and a compact evidence file of 10952 bytes. The evidence records the search output's SHA-256 and the checker's SHA-256.
+3. Independent Opus check (`../independent-checks-E1b.md`, separate code `indep.py`/`rt.py`):
+   - re-verified the witnesses at n = 2…16, 47…50, 108 and 109;
+   - matched `min_l1_at_most` against brute force on 399 random matrices.
+4. Merged cross-check: every witness at n ≤ 16 is ≥ the r08 minimum (see Evidence).
 
 ## Open items
 
-- Degrees not in S between 4 and the uniform threshold 110 (record -03 (iv)), if any: OPEN for this method.
 - n ≥ 110: no lattice witness of this kind can exist. The lattice packing bound for the octahedron (Minkowski, via Betke–Henk; LITERATURE, as in `topics/padua-3d-20261106/theory/r08-lattice-minima.md`) gives det L ≥ 38n³/27 for min ℓ₁ ≥ 2n, and 38n³/27 > 8·binom(n+3,3) for n ≥ 110 (the same cubic as record -03 (iv)). So 2…109 is the most this witness method can cover. Whether the torus LP excludes packages at some n ≥ 110 depends on finite LP values that are not known (independent check E1b NOTE-1).
 
 ## History

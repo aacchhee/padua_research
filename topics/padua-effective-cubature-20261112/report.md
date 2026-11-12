@@ -13,7 +13,7 @@ Claude (Opus 5.5 xhigh, orchestrator), 2026-11-12. Rules read at `39a4bf5`. Deve
 - **Cap (-04).** γ_A ≤ 1/18, so this route excludes Padua packages only for n ≥ 110.
 - **Explicit value.** The value of γ_A is still unknown (-05, OPEN).
 - **Plain-LP route (BRIEF E1 as written).** It is equivalent asymptotically to Turán's problem for the octahedron, which KLM report as open. Numerically the plain torus LP equals Fisher, ρ_n = 1 within 3·10⁻⁶ for n = 2…12. Q2 kills it (MEASURED).
-- **Finite range.** No finite exclusion was found. Exact lattice witnesses prove that the torus LP route cannot exclude a package at any n on the witnessed range (-06, PD-N). The plain cube LP gives λ ≈ 1.2 < 1+3/n at n = 3, 4 (MEASURED).
+- **Finite range.** No finite exclusion was found. Exact lattice witnesses prove that the torus LP route, in any form, cannot exclude a package at any n = 2…109 (-06, PD-N). This is exactly the range left open by the uniform bound. The plain cube LP gives λ ≈ 1.2 < 1+3/n at n = 3, 4 (MEASURED).
 
 ## 2. C0 corollary as registered (-01, PROVED, assembly)
 
@@ -69,13 +69,13 @@ Consistency check:
   - existence at every n ≥ 4 is OPEN below Theorem A's non-explicit threshold.
 - **Proved limitations.**
   - The uniform bound decides no n ≤ 109 (-03 (iv)).
-  - The finite torus LPs (plain or Delsarte, any spectrum), combined with M ≤ 8N, decide no n in the range witnessed by exact lattices (-06; witness range in that record).
+  - The finite torus LPs (plain or Delsarte, any spectrum), combined with M ≤ 8N, decide no n = 2…109 (-06; 108 exact lattice witnesses, two code paths). No witness of this kind can exist for n ≥ 110, by the packing bound.
 - **Measured limitation.** The plain cube-native LP has λ₃ ≈ 1.210 and λ₄ ≲ 1.201, against the required 2 and 1.75 ([attempts/E3.md](attempts/E3.md)).
 
 ## 7. What remains OPEN
 
 1. The value of γ_A, or any certified lower bound γ_A ≥ γ₁ > 0 (-05).
-2. Finite exclusions for 4 ≤ n ≤ 109 (and above, until γ_A is explicit). Candidate routes:
+2. Finite exclusions for 4 ≤ n ≤ 109 (and above, until γ_A is explicit). The torus route is proved useless there (-06). Candidate routes:
    - the Delsarte extension of the cube LP (IDEA?…-claude-06, not run);
    - separation-based Cohn–Elkies strengthening (-04 candidate, deferred);
    - a sharper orbit conversion than M ≤ 8N.
@@ -110,4 +110,4 @@ Supporting files:
 - Rounds: [rounds.md](rounds.md).
 - Independent checks: [independent-checks-E1.md](independent-checks-E1.md).
 
-The independent check predates -02 (d), -03 (ii′) and -06, which therefore have only the Codex audit pending.
+Independent Opus checks: [C0](independent-checks-C0.md), [E1](independent-checks-E1.md), and [E1b](independent-checks-E1b.md) for -02 (d), -03 (ii′) and -06. None has a BLOCKING finding, and every finding is dispositioned. The Codex audit is pending (handoff 02).

@@ -18,7 +18,7 @@ This file is written only by the topic orchestrator. Branch `claude/padua-effect
   [record](../topics/padua-effective-cubature-20261112/theory/lp-cap.md)
 - **Explicit γ (-05), OPEN.** Target: a certified Delsarte function with ∫φ > 4/3.
   [record](../topics/padua-effective-cubature-20261112/theory/explicit-gamma-target.md)
-- **Torus-LP finite limitation (-06, PD-N), PROVED by exact lattice witnesses.** The finite torus LPs (plain or Delsarte, any spectrum), combined with M ≤ 8N, cannot exclude a package at any n in the witnessed range given in the record.
+- **Torus-LP finite limitation (-06, PD-N), PROVED by exact lattice witnesses.** The finite torus LPs (plain or Delsarte, any spectrum), combined with M ≤ 8N, cannot exclude a package at any n = 2…109, the full range left open by the uniform bound. There are 108 exact lattice witnesses, verified by two code paths.
   [record](../topics/padua-effective-cubature-20261112/theory/limitation-torus-lp-finite.md)
 - **Plain Turán route (BRIEF E1 as written), deferred and MEASURED-killed.**
   - Deciding it would require showing that the octahedron is a non-Turán domain, which KLM report as a major open problem.

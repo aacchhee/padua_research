@@ -33,8 +33,8 @@ ENTRIES = {
         "command": "python3 code/lp_cube.py --n 2 --tol 1e-8 --max-iter 40 --nref 60 --cand 10000; --n 3 --tol 1e-8 --max-iter 60 --nref 80 --cand 15000; --n 4 --tol 1e-7 --max-iter 60 --nref 80 --cand 15000",
         "status": "MEASURED (cut-plane relaxation values)", "used_by": "attempts/E3.md, gates.md Q1b"},
     "evidence/pdn-lattice-witness.json": {
-        "producer": "code/pdn_lattice_witness.py",
-        "command": "python3 -B code/pdn_lattice_witness.py --nmin 2 --nmax 140 --extra evidence/lp-lattice.json --perturb --out evidence/pdn-lattice-witness.json (cwd = topic dir)",
+        "producer": "code/pdn_check_ball.py (from the full output of code/pdn_lattice_witness.py)",
+        "command": "cwd = topic dir: python3 -B code/pdn_lattice_witness.py --nmin 2 --nmax 140 --extra evidence/lp-lattice.json --perturb --out <scratch>/witness-final.json; python3 -B code/pdn_check_ball.py --full <scratch>/witness-final.json --out evidence/pdn-lattice-witness.json",
         "status": "exact witnesses (each verified by exhaustive coefficient-box enumeration); input of PD-N record -06", "used_by": "theory/limitation-torus-lp-finite.md"},
 }
 OFFREPO = [

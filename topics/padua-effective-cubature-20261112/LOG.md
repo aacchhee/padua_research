@@ -63,7 +63,8 @@
   - The package threshold under γ_A ≤ 1/18 moves from 138 to **110**; the exact integer check is in -03.
   - This matches the merged lattice-class threshold of `topics/padua-3d-20261106/paper-note-draft.md` §4 (19n³/108, n ≥ 110), which is the case γ_A = 1/18.
   - -04 and -05 updated. Records -02, -03, -04 and -05 have dated history notes.
-- **-06 (PD-N).** `code/pdn_lattice_witness.py` searched for integer lattices with min ℓ₁ ≥ 2n and index ≤ 8·binom(n+3,3), using critical-lattice roundings, ±1 perturbations and the subagent's lattices. Each witness is verified by exhaustive coefficient-box enumeration. Result and range: record -06 and `evidence/pdn-lattice-witness.json`. Cross-check: the witnesses at n = 3, 6, 9, 12, 15 equal the merged exact minima of `r08-lattice-minima.md` (38, 304, 1026, 2432, 4750), and every witness is ≥ the merged minimum.
+- **-06 (PD-N).** `code/pdn_lattice_witness.py` searched for integer lattices with min ℓ₁ ≥ 2n and index ≤ 8·binom(n+3,3), using critical-lattice roundings, ±1 perturbations and the subagent's lattices. Each witness is verified by exhaustive coefficient-box enumeration, and again by direct ℓ₁-ball enumeration (`code/pdn_check_ball.py`, 0 failures). **Result: S = 2…109 for exactness 2n−1**, the full range where the uniform bound is silent; witnesses are impossible for n ≥ 110 by the packing bound. Evidence: `evidence/pdn-lattice-witness.json`.
+- **Independent check E1b** (Opus): no BLOCKING. MAJOR-1 (placeholders and missing evidence) and MINOR-1–3 fixed; dispositions in `independent-checks-E1b.md`. Cross-check: the witnesses at n = 3, 6, 9, 12, 15 equal the merged exact minima of `r08-lattice-minima.md` (38, 304, 1026, 2432, 4750), and every witness is ≥ the merged minimum.
 - **Candidates.**
   - Cube LP -03: killed for n = 3, 4 (MEASURED), deferred for n ≥ 5.
   - New pending candidate -06: Delsarte extension of the cube LP.
