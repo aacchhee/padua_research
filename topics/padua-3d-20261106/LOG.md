@@ -962,3 +962,10 @@ their corresponding runs, with publication and execution timing distinguished.
 - Corrected the audit-04 A1-W1 LOG scope to rank-N Padua-type rules; singular exact-N positive rules remain admitted. Handoffs [15](handoffs/15-combined-audit.md), [16](handoffs/16-pruning-campaign.md), [17](handoffs/17-pruning-audit.md) are historical completed steps.
 
 - D5 R1 timing disclosure: the worker authored its prospective protocol and notified root, then opened introductory/theorem excerpts of Lev–Matolcsi 1904.12262v4, Greenfeld–Lev 1602.08854v2 and ORSV 1311.3675v2 before root's requested publication pause arrived. This preceded the root gates entry/push; no mathematical application or novelty conclusion had been produced. Work paused, this timing is preserved, and remaining R1 source work follows publication. No retroactive claim of a completed prepublication gate.
+
+### D1 R1 result and prospective R2
+
+- [Finite defect/lift theorem](final-d1/finite-frame.md) PROVED locally: positive cubature gives an orthogonal projection, exact defect sum, reflection lift and nearcritical count squeeze including boundary stabilizers. This supporting theorem leaves the asymptotic target OPEN.
+- Seven deterministic exact controls passed; root separately executed `python topics/padua-3d-20261106/code/fd1_controls.py --output /tmp/padua-fd1-controls-root.json` and compared every exact result row to the producer receipt: identical. No new research round for this rerun. Protocol/code/evidence identify inputs and versions. R1 counter 1/6 at this publication.
+- R2 preregisters the separated stationary local limit only. Root suggested translation averaging as a proof step in the inherited spectral mechanism; completeness/intensity arguments still require complete written proofs.
+- Manifest allowance check: current renderer plus existing v4–v7/mutation/frozen-tree checks passed; raw technical output `/tmp/padua-final-manifest-check.json` is regenerate-only, with historical input-head field belonging to the unchanged checker fixture. Current code is identified by this commit.

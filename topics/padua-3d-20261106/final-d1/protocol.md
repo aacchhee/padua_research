@@ -24,3 +24,13 @@ Rounds 5/6 are ceiling headroom only if the limit step closes by round 4 and a g
 
 Split substantive locally proved lemmas into their own theory homes, preserving the OPEN original target. A complete consequence of checked primary theorems uses exactly **PROVED with explicit LITERATURE dependency** under handoff19; any remaining application premise uses CONDITIONAL. External novelty is bounded by stated source coverage. Evidence records include source/code/input hashes, exact commands, interpreter/library versions and elapsed times; measured checks never become universal proofs.
 
+## Round 2 prospective protocol — 2026-11-12, after R1 and before R2
+
+Input: finite-frame.md, R1 exact controls; root's independently supplied stationary-translation lead (2026-11-12 message, credited here), and the inherited S2/S4 limit sketch. This section is awaiting root publication/go. No R2 derivation or computation has executed.
+
+Target: from a hypothetical sequence of positive torus rules with M_n/m_n->1, prove a subsequential local limit supported on uniformly separated sets of pairwise orthogonal exponentials on O={u:|u|_1<=1}. Work with scaled angular coordinates lambda=n theta/(2pi), Fourier convention exp(2pi i lambda.u), so critical intensity is |O|=4/3. Remove nodes whose defects exceed a specified vanishing epsilon_n; prove discarded count=o(m_n) and normalized Dirichlet kernels uniformly small on all remaining distinct pairs.
+
+The proposed extra step over the deterministic-window sketch is to average translations over the scaled torus before taking a limit. Attempt an elementary compactness proof for laws of separated point measures; preserve exact intensity via bounded compact-window counts. Explicitly distinguish a stationary law of orthogonal sets from a single complete spectrum. If compactness, stationarity or intensity retention is unproved, label that obligation OPEN and stop this round at the precise missing claim.
+
+Cheapest decisive test: analytic separation bound near zero and continuity of compactly supported sums in the vague topology. No computation planned. Kill the proposed inference if a counting expectation is exchanged through a nonuniformly bounded local count, or if deleting bad nodes costs nonnegligible critical intensity. Subsequent completeness via Bessel plus stationarity/Plancherel will be preregistered separately in R3; orthogonality plus a density slogan is insufficient.
+

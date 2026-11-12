@@ -182,3 +182,13 @@ New counters, separate from the earlier D0–D4 labels and T/U/P campaigns. D1 s
 
 - D1 R1: [gate](final-d1/gate.md), [protocol](final-d1/protocol.md), [round record](final-d1/rounds.md). Exact finite defect/lift bridge and deterministic lattice/Padua controls, intended <30 seconds. No local-limit result authorized or preclaimed by this round.
 - D5 R1: [protocol](final-d5/protocol.md). Primary-source acquisition and exact statement coverage, record work only; no construction or expensive computation. Three urgent PDF excerpts were opened after the worker wrote its protocol but before this gates entry/publication; recorded once in LOG below. All remaining R1 reading follows this publication.
+
+### D1 R2 — prospective publication, 2026-11-12
+
+R1 completed as registered (exact finite identities plus seven deterministic controls). [R2 protocol](final-d1/protocol.md#round-2-prospective-protocol--2026-11-12-after-r1-and-before-r2) now authorizes only separation, random-translation compactness and intensity retention; no compute planned. Completeness remains a separately preregistered R3 obligation.
+
+### D2 R1 and D3 R1 — prospective publication, 2026-11-12
+
+- D2 [gate](final-d2/gate.md), [protocol](final-d2/protocol.md): ordered exact Padua Hilbert–Burch calibration then n2/3/4 random/structured EN and symmetric algebra over Q and p1000003, fixed seeds, per-child CPU25/wall30 seconds, total wall900/CPU750. `code/fd2_exact.py` SHA256 `975586453eb0294afb636481de2c515b2bcb4d7615203b9ad654c9362c993f62`. No rerouting after observed failure; a timeout is an implementation outcome.
+- D3 [protocol/gate](final-d3/protocol.md): one fixed reconstruction and exact interval certificate attempt, seed20261112, twelve starts maximum, search180/refine300/outer450 seconds. `code/fd3_certify.py` SHA256 `b8ca61f9c46610f20e81ea234ae6a583b3003095947317951d74cf72fbd780db`. Positive degree5 rule20nodes, exact rank transfer and finite-coset exclusion required; only then measured Lambda. A failure ends its one round.
+- All scientific numerical workers use one BLAS/OMP thread. Concurrent tasks mean timing stays hardware-dependent; no intrinsic impossibility follows from a cap.
