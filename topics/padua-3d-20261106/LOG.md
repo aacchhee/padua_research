@@ -1067,3 +1067,8 @@ their corresponding runs, with publication and execution timing distinguished.
 - Sol-medium workers inventory claims, ideas and literature and prepare mechanical application; a distinct Sol-medium readonly scan checks all ledgers/four registries at main and both openPRheads. Root alone reserves/publishes/assigns ranges and controls Git/PR. The inventory records introduce no new mechanism or priority claim; no fresh generation gate applies.
 - Fresh API collection confirms32PRs, open27/33,30closed allmerged and no closed-unmerged. A second root API read matches every head/state. Fetched peer27=`8a94ce610594e9f52a23ca6b74b5751719f0d89e`. Full58-copy union scan yields reserved maxima T553/N185/IDEA615/LIT635, with foreign bttb literature aliases excluded at explicit context.
 - [Reservation](ALLOCATIONS.md) records T554–673(120),N186–245(60),IDEA616–755(140),LIT636–715(80), all above the complete existing union and with permanent headroom. Reservation is published before final assignment and added to PR immediately. Other topics’ allocations remain unchanged.
+
+### AC finalization instruction — 2026-11-12
+
+- AC, verbatim: “finalize PR, no more claude needed”. This overrides handoff23’s proposed Claude readiness check. Codex completes the registry/reservation and publication checks and marks PR33 ready; no more Claude review is requested. Scientific scope, freeze and prior accepted audits are unchanged. Only AC merges.
+- [Handoff23](handoffs/23-pr-preparation.md) is superseded by [handoff24](handoffs/24-finalize-pr.md) for this finalization, within the same active session. When Codex’s preparation/readiness work is complete, close24 without another agent handoff.

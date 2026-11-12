@@ -1,6 +1,6 @@
 # Handoff 23 — padua-3d-20261106 — PR preparation, readiness check and freeze
 
-- Status: open
+- Status: superseded by 24: AC directs finalizing the PR without further Claude review
 - Previous handoff: [22-response-05-audit.md](22-response-05-audit.md)
 - Next agent / model / effort: **Codex, gpt-6-astra high** (coordinator). Use gpt-6.1-sol medium for mechanical registry edits.
 - Role: developer and orchestrator, at PR-preparation stage.
