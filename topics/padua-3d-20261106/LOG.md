@@ -1059,3 +1059,11 @@ their corresponding runs, with publication and execution timing distinguished.
 - MINOR fixes go in a separate commit ([audit-06-fixes.md](audit-06-fixes.md)). Bibliography metadata
   for the Belgian chapter is returned to PR preparation.
 - [Handoff 22](handoffs/22-response-05-audit.md) done in `65afacf` (audit report `986cafc`, auditor fixes `65afacf`); [handoff 23](handoffs/23-pr-preparation.md) opened for Codex PR preparation: reservation, final IDs, registries, readiness, then freeze.
+
+## 2026-11-12 — final PR preparation — Codex, gpt-6-astra high
+
+- Role: developer/orchestrator implementing open [handoff23](handoffs/23-pr-preparation.md); rules read at `c8691c5d4afcbb17506cb052ea48313c865eff35`. Fetched and fast-forwarded the accepted audit06/fixes/handoff head. Main remains `f70a260e5b5f9a01209dc8a05faabdcf8db1feeb`. No published history rewrite.
+- Audit06 accepted response05. K1’s scope correction conforms to the canonical closed-cube hypothesis; no dispute is raised. All audited science, E4 labels, deviations and timing/storage decisions are retained. No research, proof campaign, optimization or quota spending. All directions frozen.
+- Sol-medium workers inventory claims, ideas and literature and prepare mechanical application; a distinct Sol-medium readonly scan checks all ledgers/four registries at main and both openPRheads. Root alone reserves/publishes/assigns ranges and controls Git/PR. The inventory records introduce no new mechanism or priority claim; no fresh generation gate applies.
+- Fresh API collection confirms32PRs, open27/33,30closed allmerged and no closed-unmerged. A second root API read matches every head/state. Fetched peer27=`8a94ce610594e9f52a23ca6b74b5751719f0d89e`. Full58-copy union scan yields reserved maxima T553/N185/IDEA615/LIT635, with foreign bttb literature aliases excluded at explicit context.
+- [Reservation](ALLOCATIONS.md) records T554–673(120),N186–245(60),IDEA616–755(140),LIT636–715(80), all above the complete existing union and with permanent headroom. Reservation is published before final assignment and added to PR immediately. Other topics’ allocations remain unchanged.

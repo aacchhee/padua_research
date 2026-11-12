@@ -1754,3 +1754,7 @@ The nonnumeric provisional `PD-T?mz-sharp-codex-S3-kernel` and shorthand `S3-ker
 | PD-T381 | PD-T534/535/536, with PD-T539/540/541/542 | Existence on both parities, agreement/full-integer limits and exact inf/sup spectrum(B) characterization PROVED; decimal-values conjunct OPEN; overall PARTIAL. P1 enclosure gives no useful digits. PD-T379 remains supporting packet bounds. |
 
 The original wording and dated decomposition are preserved in each target theory record; [canonical decision](topics/padua-mz-sharp-constants-20261106/LOG.md). No PD-N is created. Unused reserved headroom PD-T549–553, IDEA-612–615 and LIT-634–635 stays permanently unused (permanent gaps of this topic’s reservation; never reallocated).
+
+## 3-D Padua reservation authority
+
+[Topic ledger](topics/padua-3d-20261106/ALLOCATIONS.md): owner codex/padua-3d-20261106, PR33; reserved PD-T554–673, PD-N186–245, IDEA-616–755, LIT-636–715. The ledger preserves the checked heads, foreign/retired ranges and permanent unused headroom. This reservation note makes no scientific assignment.
