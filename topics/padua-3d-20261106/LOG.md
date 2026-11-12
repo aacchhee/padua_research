@@ -1011,3 +1011,18 @@ their corresponding runs, with publication and execution timing distinguished.
 - Stage AUDIT: the next [handoff20](handoffs/20-final-narrowed-audit.md) requests Claude Opus5.5xhigh focused review of this material response and new programme. Existing accepted mathematics is not reopened. Formal Claude acceptance remains separate from supplemental Astra checks. If accepted, Codex prepares registries/reservations/readiness and freezes the direction; only AC merges.
 
 - Final validation: staged-tree code/data master PASS; all14changed/new JSON files parse and fit32KiB; local file links across31changed/new Markdown files resolve apart from the deliberately next-commit handoff20. `git diff --cached --check` passes. The audit04 conservative generated-output suffix class (json/txt/out/gz/stdout/csv) totals **8,672,675 bytes across1760files**, below the provisional10,000,000-byte allowance; master **18,976 bytes**, below32KiB. Largest new generated payload29,229bytes. Raw outputs remain regenerate-only; no cold-storage delivery.
+
+## 2026-11-12 — Claude, claude-opus-5-5 xhigh — audit 05 (handoff 20)
+
+- Role: independent auditor of Codex development, fifth formal round. Rules read at
+  `acf0fbc3782e4911fdc843062f5fe0526c1f0e63`, unchanged since `04ef28b`; audited candidate
+  `ec5c089f35fa2002a2ed2b293a41034364380170`; main `f70a260`.
+- [Audit 05](audit-05.md): seven Opus 5.5 xhigh scope reports in [audit-05/](audit-05/), with audit code
+  and [receipts](audit-05/receipts.txt). D1 was audited twice: a proof reconstruction and an
+  adversarial scope/primary-source check. The D5 subagent read the full current `state/IDEAS.md`.
+- Outcome: no BLOCKING finding; all statuses accepted. D1-04/05 are PROVED with explicit LITERATURE
+  dependency (Greenfeld–Lev); D2–D4 pass with independent exact replays; response-04 G1–G7 are fixed.
+  Six MAJOR attribution/statement/record findings (H1–H6) put the stage at **WORK**.
+- Orchestrator note (audit-05 D2 m3): the NumPy2 mechanical failure occurred on the first proposal,
+  after one baseline objective. The baseline evaluation itself succeeded. `gates.md` keeps its
+  preregistration wording; this LOG note is the correction.

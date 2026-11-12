@@ -1,0 +1,37 @@
+# audit-05 orchestrator receipts (Claude, 2026-11-12)
+Python 3.13.18 (venv; numpy 2.3.5, scipy 1.17.0, sympy 1.14.0); OPENBLAS_NUM_THREADS=1; no -O; candidate ec5c089f35fa2002a2ed2b293a41034364380170 in a detached worktree
+
+## sha256 of audit-05 code
+19b40d345c9d66644833c245bbf4be48a104dba350bc4839058c4117e3bde467  ./A/g1_reflect.py
+79887355b4ee8676c35fa95a40dc536c0eae455a2b4cdd3e4a05a9069971aa48  ./A/links.py
+57a1c2616ecc6a4c7b4a163b194cdf87cb5b50a73252a7e63bfac640a4b848ec  ./A/prov.py
+c2115d30141f23868510a9a850eb2f8bab715b0db2f776b2ce53371d3dfb801a  ./A/splits.py
+1d1abfc1d2ecfe907d401f228b630a9bdce06ec3e05b960f3fa63f5d1bc304d0  ./D1a/d1_sanity.py
+1701316f8fd8053bbd69f6c19baf926046d468977aec7f1467aa9e9d76353b3c  ./D2/alg_check.py
+9c914d46f1dff4148628045976f204523137ef45bb95dc2dad175a8e142e9740  ./D2/hb_basis.py
+542086a7af7c3ce2e1428713c66bec7c0405163a3130028ba853740bb0bb4902  ./D2/hb_check.py
+328235c3be01cdf3d453efc3815be98632f78ec776b2b50e4cd52d5ab610ead5  ./D2/lambda_check.py
+81594b43ac963fa47a5da176bc4afeb35b8de3bd1b27ae117a2e4c017b466dda  ./D2/real_check.py
+d199152b5513f1f08a2cf16d5254ac35a940d0de1a58b67f4cfe5f4f7a5e7f7c  ./D3/audit5_d3_verify.py
+2f63a943fb37c8ac069e1f56aff342b698eb5001ffb1c994c87007c076270dac  ./D3/lambda_check.py
+0ae75b6a8c3aa9add88095f1ac526fe4bef619afabc4a859a7e67ab4ff0d85ba  ./D3/mutations.py
+46ee1e485f860a7f4e982c86e7a12420d28e11e29015481c8af25a34590ff6ef  ./D4/beta_check.py
+cda612850714074962a45e7cca56fa8d0a4ab704b451557270acd066a1593395  ./D4/cert.cpp
+e7430349bf08f06b7b2e957301296f61bd3727b3149307b6828273cb77aff850  ./D4/compare_cert.py
+25419a89b408030805bfa574c3398d8bca3a81046552a1b392e7375edb38c511  ./D4/indep_cert.py
+51dc0c010f7ec0f06894086c6ee2c841f1d71a4e3e352b3c336e1fd7f631274e  ./D4/lee_brute.py
+5b07885b35d0062601f5915dfdef0bd205e55ff2ac7c197ae7a3de7fa2444dc1  ./D4/lee_compare.py
+790790c053634db50c5c9f252f16beccbcd829d36b2504af8a404e38dc8c335f  ./D4/lee_enum.cpp
+fe4f421d7da33047c6e8d033dddcf5ef516e612948b85cc9c1b6c258a68b57d7  ./D4/qr_check.py
+
+## handoff-20 commands (exit, seconds, command)
+{"verdict": "PASS", "artifacts": 362, "bytes": 2281441}
+exit 0
+exit 0 secs 3 :: topics/padua-3d-20261106/code/fd1_controls.py --output <out>/fd1.json
+exit 0 secs 0 :: topics/padua-3d-20261106/code/fd3_certify.py check --certificate topics/padua-3d-20261106/evidence/fd3-certificate.json --receipt <out>/fd3.json
+exit 0 secs 4 :: topics/padua-3d-20261106/code/fdc_d3_audit.py
+
+## receipt comparison (scientific fields)
+fd1-controls.json vs rerun: differences only command path, seconds, python version
+fd3-replay.json vs rerun: difference only elapsed_seconds
+fdc-d3-rational-audit.json vs rerun: differences only elapsed_seconds, python version
