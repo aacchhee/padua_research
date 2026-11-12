@@ -42,3 +42,11 @@ Target: prove that a stationary law of orthogonal exponential sets on O with int
 
 Cheapest decisive tests: inspect the factor |O| in the Campbell/Plancherel integral; check that simultaneous full-probability statements are countable; check that failure of an eventual excess gives n_r->infinity and N_r/dim Pi_(n_r-1)->1. If any fails, preserve the precise OPEN obligation. No computation planned. General doubling weights stay a separate OPEN extension, not a consequence of Chebyshev reflection. R4 remains the registered adversarial consistency/repair round before final closure.
 
+## Round 4 prospective protocol — 2026-11-12, after R3 and before R4
+
+Input: all D1 proof files, seven exact finite controls and root's separate matching execution, primary sources.md, and D5's sphere/disk source coverage. Await root publication/go. No R4 reconstruction or new calculation has executed.
+
+Target: reconstruct the full finite-to-limit-to-completeness proof adversarially, checking boundary stabilizers, discarded count, fixed separation, configuration compactness, translation invariance, preservation of mean intensity, measurable Bessel sums, rational countability, Fourier normalization and the quantifier negation. Explicitly calibrate the 2-D limit to the spectral diamond so Padua remains admissible, and compare the actual ball/sphere literature without assuming cube-to-sphere transfer. Read any newly identified closest primary asymptotic result before novelty wording. Attempt the general-doubling extension far enough to state its precise missing hypothesis/lemma, preserving it OPEN if it cannot close in this round.
+
+Cheapest decisive test: a written dependency/quantifier table and exact analytic 2-D spectrum check; no heavy computation planned. Existing exact-control reruns count as verification, not a new mechanism. Any unresolved local-limit premise at the end forces the Chebyshev consequence CONDITIONAL/OPEN and STOP after four rounds. If reconstruction closes, retain the honest source-dependent label and stop successfully at four; do not spend ceiling headroom without a concrete obligation.
+

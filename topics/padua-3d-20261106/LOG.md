@@ -981,3 +981,8 @@ their corresponding runs, with publication and execution timing distinguished.
 
 - R1 actual198.671 wall seconds: Padua Hilbert–Burch signed-minor identities at n2/3/4, with10/14/18 nonzeros; 20/24 GF/Q algebra cases complete with expected quotient dimensions10/20/35 and standard monomials. Random n2/3 characteristic polynomials squarefree. Four random n4 subprocesses hit CPU25 caps, not mathematical exclusions. Structured separating-form collisions leave radicality unresolved until the separate explicit distinct-root R2 certificate. [Receipt](evidence/fd2-exact.json) retains all cases and complete raw-output identity. D2 counter1/3.
 - Full prior-entry reading found IDEA-199 already derived Hilbert–Burch recurrence pencils; the new [D2 gate](final-d2/gate.md) corrects the scout's historical 'never derived' impression without editing the protected frontier assessment. No priority claim follows from this calibration.
+
+### D1 R3 completeness and quantified consequence
+
+- [Bessel saturation in mean](final-d1/complete-law.md) is a local PROVED supporting theorem: exact mean intensity plus orthogonality gives almost-sure completeness, with all Fourier normalizations and countable-event steps written.
+- [Eventual positive-cubature excess](final-d1/spectral-obstruction.md) now has a complete developer proof, **PROVED with explicit LITERATURE dependency** on primary-checked Greenfeld–Lev1.1. It gives existential gamma>0,n0, not a usable numeric threshold or an interpolation norm obstruction. D1 counter3/6; final R4 reconstruction and independent supplemental review remain before development closure. No priority claim or formal audit acceptance.
