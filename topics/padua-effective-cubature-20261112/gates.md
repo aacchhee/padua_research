@@ -68,3 +68,35 @@ It must not contradict D3 at n = 3: no certificate may claim N > 20 for every po
 ### Addendum (2026-11-12, before any LP run was reported) — Delsarte variant
 
 After reading KLM 2025 (`literature-effective.md`), the orchestrator added the **Delsarte torus LP** R^Del_{n,K}: the plain LP plus frequencies 2n−2 < |k|₁ ≤ K with c_k ≤ 0 (record `theory/delsarte-bound.md` (a)). Q1a and Q1b apply to it unchanged; lattice rules remain upper references by record -04 (b). The Q2 thresholds are applied to ρ^Del as written for ρ. The plain-LP Q2 literature kill condition ("T(2O) = |O|") is neither met nor refuted: KLM report that it is open.
+
+### Q1 verdict — PASS (2026-11-12, orchestrator; LP subagent runs, evidence `evidence/lp-torus.json`, `lp-lattice.json`, `lp-cube.json`)
+
+- **Q1a, torus: PASS.** For n = 2…8 the autocorrelation of 1_{A_n} has a₀ = m_n and Σa_k = m_n² in integer arithmetic, with spectrum in |k|₁ ≤ 2n−2. So f(0)/c₀ = m_n exactly (`lp_torus.py --q1a`).
+- **Q1a, cube: PASS.** For n = 2…8, G = K_{n−1}² gives ∫∫G = D in exact rationals, and G(x,x) = K(x,x)² at the tested rational points (`lp_cube.py --q1a`).
+- **Q1b: PASS, no violation.**
+  - Every torus run (plain and Delsarte, all n, e) has m_n ≤ R_upper ≤ M_lat(n), up to the 3e-6 relative stopping tolerance above m_n.
+  - M_lat(n) is an exhaustive HNF minimum for n = 2…8 and an upper bound only for n = 9…16, as the gate requires. The orchestrator re-verified every witness lattice independently (index and avoidance of 0 < |k|₁ ≤ 2n−2, exact enumeration with SymPy); all 15 PASS.
+  - Cube: λ₃ ≈ 1.2104 ≤ 1.6358 (the D3 cap of Q0c), and λ₂, λ₃, λ₄ ≥ 1.
+- **Q1c.** No rigorous lower bound above Fisher was obtained.
+  - The branch-and-bound lower bound was incomplete for every run.
+  - The only rigorous lower bound is therefore R_n ≥ m_n, from |D_n|².
+  - All LP optima are cut-plane relaxation values. Each is an upper bound for its continuum LP, up to floating-point solution error, and is MEASURED.
+- **Reproducibility caveat.** `lp_torus.py` was edited during the campaign (B&B fix, caps, threads), and four script SHA-256 values occur in `lp-torus.json`. The subagent reports that the early runs (n ≤ 5) were not recomputed under the final SHA. This affects reproducibility of the receipts, not the verdict, because nothing rigorous rests on these values.
+
+### Q2 verdict (2026-11-12, orchestrator; MEASURED)
+
+- **Plain torus LP (BRIEF E1 as written): KILL.**
+  - The measured ρ_n = R_n/m_n lies in [1, 1 + 3·10⁻⁶] for every n = 2…12. The lower end is exact (|D_n|²); the upper end is the cut-plane optimum.
+  - ρ_n − 1 is therefore zero within tolerance, which is at least as fast as any 1/n decay. So the pre-registered kill applies over the tested range n ≤ 12; the gate named n ≤ 16, and n = 13–16 were not run.
+  - The data are consistent with the conjecture T(int 2O) = |O|; record -02 (b) gives R_n ≥ (n−½)³ T(int 2O). This consistency is MEASURED only and is not a proof of anything.
+- **Delsarte torus LP: INCONCLUSIVE** (neither promising nor killed), at each schedule tested:
+  - **e = n (K = 3n−2):** ρ^Del = 1.0818, 1.0811, 1.0841, 1.0801 at n = 5…8, so it is not non-decreasing over the last four degrees. (ρ−1)·n = 0.41, 0.49, 0.59, 0.64 is increasing, so it is not killed. It was not run for n ≥ 9.
+  - **e = 4:** ρ^Del = 1.0548, 1.0493, 1.0450, 1.0412 at n = 7…10. Not promising: decreasing. Not killed: (ρ−1)·n = 0.38, 0.39, 0.41, 0.41 is increasing.
+  - **e = 2:** ρ^Del = 1.0182 at n = 8, which is < 1.02, so not promising. (ρ−1)·n increases over n = 5…8, so it is not killed.
+  - The existence question this screen was meant to inform is settled independently of the numerics: γ_A > 0 by record -03 (i), with a LITERATURE dependency. What remains is an explicit value (record -05), for which these finite values are not a premise.
+
+### Q3 verdict — not exercised (2026-11-12)
+
+No finite exclusion certificate was produced or submitted in session 1, so no finite exclusion is claimed.
+- The torus route cannot exclude packages on the range of record -06, a proved limitation.
+- The plain cube LP measured λ₃ ≈ 1.21 and λ₄ ≲ 1.20, against the required 1 + 3/n = 2 and 1.75. That LP cannot produce one at n = 3, 4 (MEASURED; `attempts/E3.md`).

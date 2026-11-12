@@ -31,7 +31,13 @@ Then, with L = n − 1/2,
 
   M ≥ (n − 1/2)³ D(int 2O),  N ≥ (n − 1/2)³ D(int 2O) / 8.
 
-The definition of D is restated here in full. Only the definition is taken from the source; no theorem of KLM is used in (a)–(c).
+**(d) Exactness range E (added 2026-11-12, after the session-1 numerics).** Let the rule be exact on Π_E for some integer E ≥ 0 (nodes in the closed cube, positive weights). Then the lift satisfies ν̂(k) = 0 for 0 < |k|₁ ≤ E. Statement (a) holds with "c_k ≤ 0 for |k|₁ ≥ E+1" in place of "|k|₁ ≥ 2n−1", and (b), (c) hold with L = (E+1)/2. For the Theorem A setting E = 2n−1 this gives L = n:
+
+  M ≥ n³ D(int 2O),  N ≥ n³ D(int 2O)/8   (rules exact on Π_{2n−1}).
+
+The case E = 2n−2 is (a)–(c) as stated above.
+
+The definition of D is restated here in full. Only the definition is taken from the source; no theorem of KLM is used in (a)–(d).
 
 ## Definitions
 
@@ -51,6 +57,7 @@ Overall status: **PROVED** (local elementary proof; no external theorem).
 | (a) finite bound | PROVED | proof below; uses D1-01 lift exactness only |
 | (b) transference | PROVED | proof below (periodization, Fourier coefficients of an L¹ function) |
 | (c) supremum form | PROVED | approximation argument below; uses KLM's definition only |
+| (d) exactness range E | PROVED | lift computation and the proofs of (a)–(c) with 2L = E+1 (below) |
 
 ## Depends on
 
@@ -102,11 +109,17 @@ So ψ_R satisfies (b). Moreover ∫ψ_R = ψ̂_R(0) = ∫ φ̂(−x) R³ ĝ(Rx) 
 
 By (b), M ≥ L³ ∫ψ_R for every R. Letting R → ∞ gives M ≥ L³ ∫φ. Taking the supremum over admissible φ gives M ≥ L³ D(int 2O). ∎
 
+**(d).** For a node x = cos θ (coordinatewise), let σ range over the 8 coordinate sign changes. The distinct points of the orbit {σθ} each have the same stabiliser size, so the lifted mass w/s spread over the s distinct points equals the average of w δ_{σθ} over all 8 σ. Hence
+
+  ν̂(k) = Σ_i w_i (1/8) Σ_σ e^{−ik·σθ_i} = Σ_i w_i Π_{j=1}^{3} cos(k_j θ_{ij}) = Σ_i w_i Π_j T_{|k_j|}(x_{ij}).
+
+The product Π_j T_{|k_j|} is a polynomial of total degree |k|₁. For 0 < |k|₁ ≤ E, exactness gives ν̂(k) = ∫ Π_j T_{|k_j|} dμ = 0, by orthogonality of the Chebyshev polynomials under the product Chebyshev measure; and ν̂(0) = Σ w_i = 1. (For E = 2n−2 this is the D1-01 statement.) The proof of (a) used only these vanishing coefficients and c_k ≤ 0 on the complement, so it holds with E in place of 2n−2. In (b), c_k = φ(k/L) ≤ 0 is needed for |k|₁ ≥ E+1 = 2L, which is |k/L|₁ ≥ 2; the rest of (b) and (c) is unchanged. ∎
+
 ## Checks
 
 - **Consistency with Fisher.** φ₀ = 1_O ∗ 1_O / |O| satisfies (b): it is supported in 2O and φ̂₀ = |1̂_O|²/|O|. It gives M ≥ (4/3)(n − 1/2)³ = m_n − (5/3)n + 5/6 (checked exactly for n = 1…5), which is strictly below the exact Fisher-type bound M ≥ m_n of D1-01. So (b) loses only O(n) relative to the projection bound. Here m_n = (4n³ − 6n² + 8n − 3)/3.
 - **Calibration.** At n = 3, (c) together with the cap of record -04 gives at most N ≥ (5/2)³ (38/27)/8 ≈ 2.75. This is consistent with the 20-node D3 rule (Q0c).
-- **Numerical LP values.** The finite LP values of (a) are to be MEASURED by `../code/lp_torus.py` (Q1/Q2; pending, evidence path assigned when committed). They are not premises of this record.
+- **Numerical LP values.** The finite LP values of (a) (E = 2n−2) were MEASURED by `../code/lp_torus.py`; see `../evidence/lp-torus.json` and the Q1/Q2 verdicts in `../gates.md`. They are not premises of this record.
 
 ## Sources
 
@@ -127,3 +140,5 @@ None for this record.
 ## History
 
 2026-11-12, Claude (Opus 5.5 xhigh, orchestrator) wrote this record. The BRIEF §1.4 plain LP required spectrum ⊂ {|k|₁ ≤ 2n−2}. The Delsarte refinement allows higher frequencies with nonpositive coefficients, which turns the asymptotic problem from Turán's T(2O) into Delsarte's D(2O). This change was made after reading KLM 2025 (see `../literature-effective.md`).
+
+2026-11-12, orchestrator: added (d). The records -02/-03 had used the exactness range 2n−2 throughout, as in D1-01. The lift of a rule exact on Π_{2n−1} is exact up to |k|₁ = 2n−1, which gives L = n instead of n − 1/2. Nothing earlier was wrong; (d) is a strengthening noticed while setting up the lattice witnesses of record -06.

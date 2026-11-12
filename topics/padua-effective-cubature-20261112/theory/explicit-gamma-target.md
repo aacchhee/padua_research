@@ -15,10 +15,10 @@ Overall status: **OPEN**. Existence of some admissible φ with ∫φ > 4/3 is pr
 
 ## Plan and obligations
 
-1. Measure ρ^Del_{n,K} for n ≤ 12–16 (by `../code/lp_torus.py`; pending) and estimate D(int 2O)/|O| (MEASURED only).
+1. Measure ρ^Del_{n,K} for n ≤ 12–16 (by `../code/lp_torus.py`) and estimate D(int 2O)/|O| (MEASURED only). Done in part, session 1: ρ^Del ≈ 1.08 at n = 5…8 with K = 3n−2 (`../evidence/lp-torus.json`); this is a finite-n value, below the finite lattice caps and not an estimate of the limit (`../gates.md` Q2).
 2. If the measured excess is ≳ 0.01, solve the continuous problem directly in a parametric class, e.g. φ = p·(1_A ∗ 1_{−A}) combinations or B3-symmetric splines on a fine grid with φ̂ ≥ 0 checked analytically. Certify φ̂ ≥ 0 with exact or interval arithmetic and an analytic tail bound.
 3. Independent rerun of the certificate (Q3).
 
 ## Scope
 
-Even if completed, this gives γ ≤ 1/18 (record -04) and no finite exclusion below n = 138.
+Even if completed, this gives γ ≤ 1/18 (record -04) and no finite exclusion below n = 110 (record -03 (iv), exactness 2n−1 form).

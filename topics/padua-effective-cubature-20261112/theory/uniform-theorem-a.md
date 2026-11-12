@@ -15,13 +15,17 @@ Let γ_A := (3/4)·D(int 2O) − 1, with D the Delsarte constant defined in reco
 
   N ≥ (1 + γ_A)(2n − 1)³/48.
 
+**(ii′)** If the rule is exact on Π_{2n−1} (the Theorem A and package setting), then
+
+  N ≥ (1 + γ_A) n³/6.
+
 **(iii)** Consequently, for every γ with 0 < γ < γ_A, there is an explicit n₀(γ, γ_A) such that N ≥ (1+γ)·binom(n+2,3) for all n ≥ n₀. Take n₀ to be the least integer such that (1 + γ_A)(n − 1/2)³ ≥ (1+γ) n(n+1)(n+2) holds for all n ≥ n₀. It exists because the two sides are cubics with leading coefficients 1+γ_A > 1+γ.
 
-A positive "Padua-package" rule (N = binom(n+3,3), exact on Π_{2n−1}) is impossible whenever
+A positive "Padua-package" rule (N = binom(n+3,3), exact on Π_{2n−1}) is impossible whenever, by (ii′),
 
-  (1 + γ_A)(n − 1/2)³ > (n+1)(n+2)(n+3).
+  (1 + γ_A) n³ > (n+1)(n+2)(n+3).
 
-**(iv)** γ_A ≤ 1/18 (record -04), so this route can give at most γ = 1/18. Even with γ_A = 1/18, (iii) excludes packages only for n ≥ 138 (computed in the Check below). So it can never close 4 ≤ n ≤ 137.
+**(iv)** γ_A ≤ 1/18 (record -04), so this route can give at most γ = 1/18. Even with γ_A = 1/18, (ii′) excludes packages only for n ≥ 110 (computed in the Check below). So the uniform bound can never close 4 ≤ n ≤ 109. *(Corrected 2026-11-12: the first version used only (ii), whose threshold is 138.)*
 
 The constant γ_A is a single, well-defined real number. Its value is not known. Every certified Delsarte function φ with ∫φ > 4/3 gives an explicit lower bound γ_A ≥ (3/4)∫φ − 1 and makes (ii)–(iii) fully explicit (target -05).
 
@@ -37,6 +41,7 @@ Overall status: **PROVED with explicit LITERATURE dependency** (same convention 
 |---|---|---|
 | (i) γ_A > 0 | LITERATURE-dependent, PROVED given it | KLM Theorem 6.4 with A = O, plus "O does not tile ℝ³ by translations" (below) |
 | (ii) uniform bound | PROVED (local) | record -02 (c); it does not depend on (i). (ii) is fully local; (i) only makes it nontrivial |
+| (ii′) exactness 2n−1 | PROVED (local) | record -02 (d) with E = 2n−1 |
 | (iii) explicit n₀ in terms of γ_A | PROVED (local, routine) | cubic comparison |
 | (iv) cap | PROVED (local) | record -04 |
 
@@ -52,7 +57,9 @@ Overall status: **PROVED with explicit LITERATURE dependency** (same convention 
 
 **(ii).** Record -02 (c) gives N ≥ (n − 1/2)³ D(int 2O)/8 = (n − 1/2)³ (4/3)(1+γ_A)/8 = (1+γ_A)(2n−1)³/48.
 
-**(iii).** (ii) and the identity binom(n+2,3) = n(n+1)(n+2)/6 give N/binom(n+2,3) ≥ (1+γ_A)(n − 1/2)³/(n(n+1)(n+2)). This ratio tends to 1+γ_A, so it is ≥ 1+γ from an explicitly computable n₀ on. The package condition is the same comparison with binom(n+3,3) = (n+1)(n+2)(n+3)/6. ∎
+**(ii′).** Record -02 (d) with E = 2n−1 gives N ≥ n³ D(int 2O)/8 = (1+γ_A) n³/6.
+
+**(iii).** (ii) and the identity binom(n+2,3) = n(n+1)(n+2)/6 give N/binom(n+2,3) ≥ (1+γ_A)(n − 1/2)³/(n(n+1)(n+2)). This ratio tends to 1+γ_A, so it is ≥ 1+γ from an explicitly computable n₀ on. The package condition is the comparison of (ii′) with binom(n+3,3) = (n+1)(n+2)(n+3)/6. ∎
 
 ## Relation to Theorem A (D1-04)
 
@@ -65,15 +72,16 @@ D1-04's hypotheses (closed-cube nodes, positivity, exactness 2n−1) are exactly
 
 ## Checks
 
-- **Arithmetic for (iv).** With γ_A = 1/18, the least n₁ such that 19(2m−1)³ > 144(m+1)(m+2)(m+3) holds for every m ≥ n₁ is n₁ = 138, by exact integer evaluation of 19(2n−1)³ > 144(n+1)(n+2)(n+3). Command run 2026-11-12 (Python 3.13):
+- **Arithmetic for (iv), current form.** With γ_A = 1/18, the package condition of (ii′) is 19n³ > 18(n+1)(n+2)(n+3), i.e. n³ − 108n² − 198n − 108 > 0. Exact integer evaluation: at n = 110, 19·110³ = 25289000 > 25286688 = 18·111·112·113; at n = 109, 24605551 < 24615360. The cubic has one sign change of coefficients, hence one positive root, which lies in (109, 110), so the inequality holds exactly for n ≥ 110. Command run 2026-11-12: `python3 -c "f=lambda m:19*m**3>18*(m+1)*(m+2)*(m+3); print(next(n for n in range(1,10**4) if all(f(m) for m in range(n,n+3000))))"`, output `110`.
+- **Arithmetic for the superseded (ii)-only form.** With γ_A = 1/18, the least n₁ such that 19(2m−1)³ > 144(m+1)(m+2)(m+3) holds for every m ≥ n₁ is n₁ = 138, by exact integer evaluation of 19(2n−1)³ > 144(n+1)(n+2)(n+3). Command run 2026-11-12 (Python 3.13):
   `python3 -c "print(next(n for n in range(1,10**4) if all(19*(2*m-1)**3>144*(m+1)*(m+2)*(m+3) for m in range(n,n+2000))))"`, output `138`. At m = 138 the two sides are 395140625 > 395115840; at m = 137 it fails. The difference is a cubic with positive leading coefficient 152 − 144 = 8, and the window m < n+2000 lies beyond its last real root, so the inequality holds for all m ≥ 138.
 - **D3.** At n = 3, (ii) gives N ≥ (1+γ_A)·125/48 ≤ 2.75; there is no conflict with the 20-node D3 rule.
 
 ## Scope
 
 - Positive weights; nodes in the closed cube; exactness 2n−2 suffices.
-- (ii) decides no finite n ≤ 137, and by (iv) it cannot. That is all that is proved about n ≤ 137: nothing is proved about whether packages exist there. For n ≥ 138, exclusion holds only from the unknown n₀(γ_A) ≥ 138 on.
-- Even with γ_A = 1/18, (ii) is weaker than the classical bound N ≥ binom(n+2,3) for every n ≤ 82, and first improves on it at n = 83 (independent check E1-m5). "Uniform" means valid at every n with one constant, not stronger at every n.
+- (ii′) decides no finite n ≤ 109, and by (iv) it cannot. That is all that is proved about n ≤ 109: nothing is proved about whether packages exist there. For n ≥ 110, exclusion holds only from the unknown threshold n₀(γ_A) ≥ 110 on.
+- Even with γ_A = 1/18, (ii′) is weaker than the classical bound N ≥ binom(n+2,3) for every n ≤ 54 (19n² ≤ 18(n+1)(n+2) there), and first improves on it at n = 55. The (ii) form is weaker for n ≤ 82 (independent check E1-m5). "Uniform" means valid at every n with one constant, not stronger at every n.
 - n₀ in (iii) is explicit only as a function of the unknown γ_A.
 - No signed-weight conclusion is drawn.
 - The value of γ_A is OPEN.
@@ -93,3 +101,5 @@ D1-04's hypotheses (closed-cube nodes, positivity, exactness 2n−1) are exactly
 - m5: added the scope of "uniform" and of n₀.
 - m3: Venkov–McMullen is stated in the already-read Lev–Matolcsi introduction (`topics/padua-3d-20261106/final-d1/sources.md` L17), so it would give non-tiling directly. The record keeps the GL route as primary.
 - NOTE items are recorded there.
+
+2026-11-12, orchestrator: added (ii′) from record -02 (d) (exactness 2n−1 gives L = n). The package threshold in (iv) moves from 138 to 110 and the Fisher crossover from 83 to 55. The 138 arithmetic is kept as a check of the superseded form. This needs the Codex audit like the rest of the record.
