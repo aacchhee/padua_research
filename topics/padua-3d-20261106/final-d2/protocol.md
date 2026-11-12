@@ -70,3 +70,36 @@ original broad target OPEN and preserve every failed/unrun obligation.
 Each JSON≤32768 bytes; generated repository allowance10MB. Raw scratch
 data live under /tmp and are regenerate-only. No external archival delivery
 or independent rerun is claimed by this developer.
+
+## Round 2 implementation freeze (before execution)
+
+Driver `code/fd2_real.py`, SHA256
+`6532327613545db69d568ebf984947654c497f041f885cac9b01ec8d52b7d03c`.
+Only py_compile was run while preparing it. ORSV input is D5's primary-read
+§2 p7 (rho,sigma)=(10,10) matrix; exact coefficients are embedded. Chart is
+x0+2x1+4x2+8x3=1. For size5/6, border couplings are .1 constant and .03*x,
+extra diagonal entries use moment-curve normals with t5/6. These are attempted
+extensions, with no inherited all-real existence theorem. Search uses all
+principal Schur charts,32 starts/chart (origin+31 uniform[−3,3]³),20 Newton
+steps/start, deterministic backtracking 1,1/2,…,1/32. Found nodes are lower
+counts; no completeness from multistart convergence.
+
+Jacobi implementation fixes precisely the Π_(n−1) multiplication sections;
+couplings from its top degree to the extra degree-n-sized block are free,
+and compatibility sets couplings from degree≤n−2 to zero. This avoids the
+stronger, unjustified assumption that the unknown degree-2n Gram is identity.
+Variables are these cross blocks and symmetric last blocks for all3 matrices.
+Analytic commutator Jacobian, scipy least_squares/LSMR,150 evaluations/start;
+two starts use seed202611120202+n and that seed+1000, perturbations .02/.2.
+Each Jacobi child CPU60s, wall75s,2GiB; progress is checkpointed before caps.
+The two start seeds refine the original seed declaration, before execution.
+
+Command: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python
+topics/padua-3d-20261106/code/fd2_real.py --output
+topics/padua-3d-20261106/evidence/fd2-real.json`.
+
+The exact natural-lattice certificate uses moment-curve planes
+x+t*y+t²*z−t³ (t0..n+2), all triples and all four-plane augmented determinants,
+and literal product-cardinal evaluation over Q. It separately closes the
+R1 baseline radicality check if its dimension equals the counted distinct
+zeros. No failed random n4 case is silently completed by that baseline.

@@ -64,7 +64,9 @@ def diagnostic(x,n):
 
 def certificate(x,n,m,cap):
     started=time.monotonic();N=len(x);A=integer(basis(x,n));W=integer(np.linalg.inv(basis(x,n)))
-    w=F(rownorm(W),S);R=np.eye(N,dtype=np.int64)*(S*S)-mul(A,W)
+    w=F(rownorm(W),S);D=mul(A,W)
+    assert S*S+int(np.max(abs(D)))<2**63
+    R=np.eye(N,dtype=np.int64)*(S*S)-D
     r0=F(rownorm(R),S*S);be=beta(n);rho=r0+N*be*w
     assert rho<1,(n,float(rho))
     grid,delta,cm=mesh(n,m);bem=be+n*n*delta;maximum=0;arg=None;done=0

@@ -90,7 +90,7 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-3d-20261106/code/fd
 ```
 
 fd4_certify.py SHA256:
-1bd5d1eb1183e11e4c89f3d303f280b7b6776d429d8b6f2316312b9e8351a8d2.
+7e1ff950b5d26338fb0cd9bbbdd7d4bb605001cd4f274c628b5dd28926fa8750.
 fd4_lee.py SHA256:
 acc2328ddafeec1cc90c76e0f97ffb7257f1f5dfa74282076f8a34eaa0f2b69e.
 Producer enumerator:
@@ -103,3 +103,7 @@ set as a lossless base85 binary64 payload in evidence/fd4-qr-nN-nodes.json
 (each≤32KiB), so exact finite witnesses remain inspectable. Scratch regenerate
 only; identities retained. Do not split files to evade size limits. No
 shared registries, Git, handoffs or other-topic files are worker-owned.
+
+Pre-run inspection correction: explicitly guard the diagonal subtraction
+I−QW against int64 overflow as well as the product and absolute sums.
+No experiment had run before this guard was added.

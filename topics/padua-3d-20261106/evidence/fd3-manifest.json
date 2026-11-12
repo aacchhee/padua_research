@@ -1,0 +1,31 @@
+{
+  "schema": "fd3-evidence-manifest-v1",
+  "rules_head": "04ef28b6139ad15b8cfc31f865c7bb9ba0d56d9b",
+  "preregistration_head": "db8c3cc",
+  "rounds": {
+    "D3_used": 1,
+    "D3_ceiling": 1
+  },
+  "files": [
+    {
+      "path": "code/fd3_certify.py",
+      "bytes": 14152,
+      "sha256": "b8ca61f9c46610f20e81ea234ae6a583b3003095947317951d74cf72fbd780db"
+    },
+    {
+      "path": "evidence/fd3-certificate.json",
+      "bytes": 5574,
+      "sha256": "3677318c6dcf793f256750c0f270eb9be8eaa1143534428fcc096e497aa18a7d"
+    },
+    {
+      "path": "evidence/fd3-producer.json",
+      "bytes": 2713,
+      "sha256": "5033371c0250f6d58fc152c11f61b40afe4328c72d1ede2c0cd58fb3e0161ba3"
+    },
+    {
+      "path": "evidence/fd3-replay.json",
+      "bytes": 1433,
+      "sha256": "0a6ff66ff4119ae99d004e55ea768338aa2c3c6ecc60b235927665abb5c6c065"
+    }
+  ]
+}
