@@ -103,3 +103,40 @@ x+t*y+t²*z−t³ (t0..n+2), all triples and all four-plane augmented determinan
 and literal product-cardinal evaluation over Q. It separately closes the
 R1 baseline radicality check if its dimension equals the counted distinct
 zeros. No failed random n4 case is silently completed by that baseline.
+
+## Round 3 implementation freeze (before execution)
+
+Driver `code/fd2_optimize.py`, SHA256
+`754a9c4c97d909412756825b21bc06509028fbf83c8ee8f30992ceaef67684a8`.
+Only py_compile was executed in preparation. The selected surviving family
+is the symmetric n+2 pencil, initialized at the exact natural-lattice
+calibration. Optimization allows **all four symmetric coefficient matrices**
+to vary (60 parameters atn3,84 atn4); it is not restricted to moving planes.
+This refines the originally optional plane parametrization before execution.
+
+At each n3/4 run four independent seeded coordinate-search trajectories
+from the same exact real baseline. Seeds are202611120203+n+1000*start,
+start0..3. Each trajectory permits500 proposal/objective attempts including
+the initial objective. Select one of the independent symmetric coefficient
+entries uniformly; add a Gaussian displacement with initial std.002, reduced
+by factor.85 every50 attempts. Accept strictly smaller training Λ. Corank-two
+nodes are tracked with principal Schur charts, at most12 Newton steps, and
+the pencil/node coordinates are normalized after each accepted perturbation.
+Reject tracking failure, second-smallest singular value>1e−7, third-smallest
+<1e−7, pair distance<1e−6, or interpolation condition>1e12. These are numerical
+guards, not exact certification of the optimized configuration or projective
+completeness. There is no source-theorem all-real inheritance for perturbed
+pencils; the displayed N distinct rank-drop points are MEASURED.
+
+Train13³; assess each trajectory's final best on41³ plus512 uniform points,
+seed202611120204+n. Baseline gets the same assessment. Each child CPU50s,
+wall60s,2GiB; total round caps remain500CPU/600wall. Every10 attempts and
+at completion save full best state under/tmp. On caps retain the last saved
+best, mark the unfinished trajectory, and assess it separately. The compact
+receipt retains every trajectory's gains/losses/caps and the two degreewise
+best matrices/nodes; other raw states are regenerate-only and hash-identified.
+No changed seed, second optimizer, cap extension or rerun after results.
+
+Command: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python
+topics/padua-3d-20261106/code/fd2_optimize.py --output
+topics/padua-3d-20261106/evidence/fd2-optimize.json`.

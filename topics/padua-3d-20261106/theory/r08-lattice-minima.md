@@ -1,7 +1,7 @@
 # PD-T?padua-3d-20261106-codex-R08-minima — unrestricted determinant minima through16
 
 ID kind: PD-T. Aliases: reopened T10.1 determinant objective.
-Split from/into: none. No priority claim.
+Split from: none. Split into: [D4-minima, packing-free n4..7 cases](../final-d4/finite-minima.md). No priority claim.
 
 ## Exact statement and status
 

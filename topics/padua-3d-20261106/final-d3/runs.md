@@ -74,7 +74,9 @@ suffice to regenerate the finite predicates without rerunning the search.
 ## Counter and next verification
 
 D3 round counter **1/1 completed successfully**, unused 0. The search
-ends. A distinct agent's actual exact replay/reconstruction and formal
-Claude audit remain required; until the independent replay the theory
-conservatively withholds the repository PROVED label. This remaining
+ends. A distinct Astra xhigh agent's actual frozen replay and separate Fraction
+reconstruction both passed, including two modular determinant checks and
+four rejected mutations; see [audit](../final-check/d3-audit.md). The
+independent-rerun obligation is discharged and the theory is PROVED.
+Formal Claude audit remains required. This remaining
 verification does not authorize further research or quality optimization.

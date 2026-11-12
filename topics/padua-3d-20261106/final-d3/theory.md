@@ -20,11 +20,11 @@ This is a single finite-degree statement, with no all-degree continuation.
 
 ## Status by part
 
-Overall status: **OPEN pending the required independent certificate rerun**.
-The finite reduction below and the exact executed interval checks support
-the statement. Developer production and replay passed; WORKFLOW requires
-an actual independent rerun before a computer-assisted PROVED label.
-No mathematical enclosure gap was observed in those executions.
+Overall status: **PROVED** (computer-assisted finite theorem). The proved
+finite reduction, committed certificate/checker, actual independent frozen
+rerun and separate exact Fraction reconstruction are documented in the
+[supplemental audit](../final-check/d3-audit.md). Formal Claude review is
+separate; no audit acceptance is inferred from the developer's label.
 The separate [Lambda record](measurements.md) is **MEASURED**.
 
 ## Definitions, assumptions and finite reduction
@@ -149,8 +149,9 @@ b=-1233507562271173/4503599627370496. Their exact D and nonintegral
 trace are recorded in both receipts. In particular the pair stays
 unchanged at the true root.
 
-Independent rerun: not yet executed at this development checkpoint. A developer replay is separate
-from the independent rerun required by WORKFLOW for PROVED status.
+Independent rerun and independent Fraction reconstruction both passed; see [D3 supplemental audit](../final-check/d3-audit.md) and its pinned receipts.
+
+Execution assumption: normal CPython with optimization disabled (`sys.flags.optimize=0`); `assert` predicates are part of the trusted checker.
 
 Trusted basis: integer arithmetic, standard Python Fraction/Decimal
 (Decimal only proposes matrices), the displayed formulas and finite
@@ -162,7 +163,7 @@ are proposal generators, not proof dependencies.
 The general all-degree Padua target stays OPEN. No quality conclusion
 follows from exact cubature or rank. No historical priority is claimed;
 the existing S1 scout mechanism and IDEA-029/120 remain predecessors.
-Runs needed: a genuinely independent exact certificate rerun and audit.
+Runs needed: focused formal Claude audit; the independent exact reruns are complete.
 The one registered producer and developer replay have completed. D3 stops
 with success after one round; no refinement of quality or higher degree is
 launched. The remaining verification obligation does not reopen research.
