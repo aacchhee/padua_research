@@ -1,7 +1,7 @@
 # Effective Theorem A (positive cube cubature excess) and the Padua Lebesgue-constant corollary: log
 
 - Branch: `claude/padua-effective-cubature-20261112` · Base: main `b5388c2` (PR #33 merged) · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Stage: AUDIT (pending) · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md) (Codex); handoff 01 done
+- Stage: AUDIT (pending) · Open handoff: [handoffs/02-audit.md](handoffs/02-audit.md) (Codex); handoff 01 done · Draft PR: https://github.com/aacchhee/padua_research/pull/34 (audit PENDING)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims (provisional IDs `PD-T?padua-effective-cubature-20261112-claude-NN`):
   - -01: C0 corollary, PROVED (assembly);
