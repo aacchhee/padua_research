@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: AUDIT · Next: `Claude (Opus 5.5, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/22-response-05-audit.md](handoffs/22-response-05-audit.md)
+- Stage: PR · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/23-pr-preparation.md](handoffs/23-pr-preparation.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -1058,3 +1058,4 @@ their corresponding runs, with publication and execution timing distinguished.
   conformance fix to the canonical `final-d1/sources.md:46`; the developer may dispute it.
 - MINOR fixes go in a separate commit ([audit-06-fixes.md](audit-06-fixes.md)). Bibliography metadata
   for the Belgian chapter is returned to PR preparation.
+- [Handoff 22](handoffs/22-response-05-audit.md) done in `65afacf` (audit report `986cafc`, auditor fixes `65afacf`); [handoff 23](handoffs/23-pr-preparation.md) opened for Codex PR preparation: reservation, final IDs, registries, readiness, then freeze.
