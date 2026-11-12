@@ -74,7 +74,7 @@ def track(A,P):
             T=Ed-np.einsum('nri,nrj->nij',Ec,Z)-np.einsum('nri,nrj->nij',Z,Ec)+np.einsum('nri,nrs,nsj->nij',Z,Eb,Z)
             J.append(T[:,(0,0,1),(0,1,1)])
         J=np.transpose(np.array(J),(1,2,0))
-        try:step=np.linalg.solve(J,-F)
+        try:step=np.linalg.solve(J,-F[...,None])[...,0]
         except np.linalg.LinAlgError:return None
         if not np.all(np.isfinite(step)) or np.max(np.abs(step))>2:return None
         P+=step
@@ -106,7 +106,9 @@ def child(n,start,path):
             'matrix':A.tolist(),'nodes':P.tolist(),'step':step,
             'cpu_seconds':time.process_time()-c0,'wall_seconds':time.monotonic()-t0},separators=(',',':')))
     save('progress')
-    while evals<500:
+    # The failed driver evaluated the baseline once per path before a NumPy2
+    # batched-RHS shape error. Deduct that call from the original500 budget.
+    while evals<499:
         B=A.copy();a,i,j=slots[int(rng.integers(len(slots)))];delta=rng.normal()*step
         B[a,i,j]+=delta
         if i!=j:B[a,j,i]+=delta

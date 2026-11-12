@@ -220,3 +220,7 @@ R3 supplied [Bessel completeness](final-d1/complete-law.md) and the [source-depe
 ### D5 R3 — prospective paper-note record round, 2026-11-12
 
 R2 [fulltext comparison](final-d5/novelty-gate.md) completed. R3 [protocol](final-d5/protocol.md) authorizes the short paper-note synthesis and final actual claim/dependency/disposition table only. No new theorem, numerical run, optimization, registry mutation or status upgrade. Incoming D1–D4 results may update this same record round before its completion. Preserve source gaps and the difference between development proof, supplemental check and formal Claude acceptance.
+
+### D2 R3 mechanical repair — prospective, before repaired execution
+
+The first R3 invocation hit NumPy2's batched solve RHS convention at each first baseline evaluation, before any proposal objective completed. All eight failures remain in `evidence/fd2-optimize-failed.json` SHA256 `9b3a7e3eac5273a5457a9aad5321b17de025f9cb961e02f2b6609e0721cecdb0`. Prospective repair uses an explicit singleton RHS axis then removes it; no scientific seed/objective/guard/cap changes. Restarted per-path budget499 plus original1 stays within500. Final code SHA256 `7b844e2c6f2796a13872390c012a08973afe98184e88be109ab83d77f46ffa47`; [protocol addendum](final-d2/protocol.md). Synthetic identity-batch sizes20/35 and compilation passed; no repaired scientific execution yet. This completes the same R3 round, with the failed execution preserved.

@@ -140,3 +140,23 @@ No changed seed, second optimizer, cap extension or rerun after results.
 Command: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python
 topics/padua-3d-20261106/code/fd2_optimize.py --output
 topics/padua-3d-20261106/evidence/fd2-optimize.json`.
+
+### R3 mechanical repair, before resumed execution
+
+The first frozen driver754a9c4c failed in all8 child processes after exactly
+one initial objective each, before evaluating any proposal objective. NumPy2
+requires an explicit singleton RHS axis for batched vector solves. Its
+ValueError and the eight initial-only checkpoints are preserved in
+`evidence/fd2-optimize-failed.json`, SHA256
+`9b3a7e3eac5273a5457a9aad5321b17de025f9cb961e02f2b6609e0721cecdb0`.
+The fix replaces solve(J,−F) with solve(J,−F[...,None])[...,0]. Synthetic
+identity-matrix batched-RHS tests at batch sizes20/35 pass; no repaired
+scientific run has yet occurred at this checkpoint.
+
+Repaired driver SHA256
+`7b844e2c6f2796a13872390c012a08973afe98184e88be109ab83d77f46ffa47`.
+The restarted path limit is499 total objectives including the repeated
+initial objective, so previous1+new499≤the original500 per path. All seeds,
+parameters, guards, meshes, objectives and per-process caps are unchanged.
+No proposed quality was observed before the repair. This is completion of
+the same still-open R3; root must publish and send a fresh run-go first.
