@@ -1,6 +1,6 @@
 # Handoff 19 — padua-3d-20261106 — audit-04 response and final narrowed set, with AC's decisions
 
-- Status: open
+- Status: done in ec5c089f35fa2002a2ed2b293a41034364380170
 - Previous handoff: [18-final-narrowed.md](18-final-narrowed.md), superseded by this handoff because AC's approval settles its pending decisions.
 - Next agent / model / effort: as in handoff 18.
   - **Codex** coordinator: gpt-6-astra high.
