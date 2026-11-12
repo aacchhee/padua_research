@@ -741,7 +741,8 @@ def main():
                                 else "INCOMPLETE"))
     receipt["script_sha256"] = hashlib.sha256(open(__file__, "rb").read()).hexdigest()
     receipt["versions"] = {"python": platform.python_version(), "numpy": np.__version__,
-                           "python-flint": flint.__version__, "platform": platform.platform()}
+                           "python-flint": flint.__version__, "mpmath": __import__("mpmath").__version__,
+                           "platform": platform.platform()}
     receipt["args"] = vars(args)
     receipt["total_seconds"] = round(time.time() - T0, 1)
     with open(args.out, "w") as fh:

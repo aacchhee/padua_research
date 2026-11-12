@@ -2,7 +2,7 @@
 
 This file is written only by the topic orchestrator. Branch `claude/padua-effective-cubature-20261112`. Provisional IDs `PD-T?padua-effective-cubature-20261112-claude-NN`; final IDs are assigned at PR preparation. Every claim here awaits the Codex audit.
 
-## Status (2026-11-12): session 1 complete, Codex audit pending (handoff 02)
+## Status (2026-11-12): session 1 and explicit-γ campaign complete (3 of 7 rounds), Codex audit pending
 
 - **C0 (-01), PROVED, assembly of merged results; independent Opus check done, no BLOCKING.** The Padua Lebesgue constant equals the corner value Λ_c(n), attained exactly at the two non-node corners, for 2 ≤ n ≤ 32 and for n ≥ N_* (N_* non-effective). Hence, for n ≥ max(32, N_*),
   Λ(Pad_n) = (4/π²)log²N + b log N + c + R_n (for n ≥ max(32, N_*)), N = n + ½,
@@ -16,8 +16,13 @@ This file is written only by the topic orchestrator. Branch `claude/padua-effect
   [record](../topics/padua-effective-cubature-20261112/theory/uniform-theorem-a.md)
 - **Cap (-04), PROVED.** D(int 2O) ≤ 38/27, so γ_A ≤ 1/18, from an exact check of the Betke–Henk/Minkowski lattice. Finite torus LPs are bounded by lattice-rule counts. Consequence: the uniform bound -03 can exclude Padua packages only for n ≥ 110, the same threshold as the merged lattice-class bound 19n³/108 (the case γ_A = 1/18).
   [record](../topics/padua-effective-cubature-20261112/theory/lp-cap.md)
-- **Explicit γ (-05), OPEN.** Target: a certified Delsarte function with ∫φ > 4/3.
+- **Explicit-γ target (-05):** closed by -07.
   [record](../topics/padua-effective-cubature-20261112/theory/explicit-gamma-target.md)
+- **Explicit γ (-07), PROVED (computer-assisted, local; independent rerun PENDING_INDEP).** γ_A ≥ 0.02784156869… > 1/36, via the Dostert–Guzmán–de Oliveira Filho–Vallentin Cohn–Elkies function for the octahedron, re-certified locally. Hence:
+  - N ≥ 37n³/216 for every positive closed-cube rule exact on Π_{2n−1}, at every n;
+  - **no positive Padua package exists for n ≥ 218**;
+  - the bound beats Fisher for n ≥ 109.
+  [record](../topics/padua-effective-cubature-20261112/theory/explicit-gamma.md)
 - **Torus-LP finite limitation (-06, PD-N), PROVED by exact lattice witnesses.** The finite torus LPs (plain or Delsarte, any spectrum), combined with M ≤ 8N, cannot exclude a package at any n = 2…109, the full range left open by the uniform bound. There are 108 exact lattice witnesses, verified by two code paths.
   [record](../topics/padua-effective-cubature-20261112/theory/limitation-torus-lp-finite.md)
 - **Plain Turán route (BRIEF E1 as written), deferred and MEASURED-killed.**

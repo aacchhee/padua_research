@@ -27,7 +27,7 @@ A positive "Padua-package" rule (N = binom(n+3,3), exact on Π_{2n−1}) is impo
 
 **(iv)** γ_A ≤ 1/18 (record -04), so this route can give at most γ = 1/18. Even with γ_A = 1/18, (ii′) excludes packages only for n ≥ 110 (computed in the Check below). So the uniform bound can never close 4 ≤ n ≤ 109. *(Corrected 2026-11-12: the first version used only (ii), whose threshold is 138.)*
 
-The constant γ_A is a single, well-defined real number. Its value is not known. Every certified Delsarte function φ with ∫φ > 4/3 gives an explicit lower bound γ_A ≥ (3/4)∫φ − 1 and makes (ii)–(iii) fully explicit (target -05).
+The constant γ_A is a single, well-defined real number. Its exact value is not known; record -07 proves 1/36 < γ_A ≤ 1/18. Every certified Delsarte function φ with ∫φ > 4/3 gives an explicit lower bound γ_A ≥ (3/4)∫φ − 1 and makes (ii)–(iii) fully explicit (target -05).
 
 ## Definitions
 
@@ -89,7 +89,7 @@ D1-04's hypotheses (closed-cube nodes, positivity, exactness 2n−1) are exactly
 
 ## Open items
 
-- Explicit lower bound for γ_A (record -05).
+- Explicit lower bound for γ_A: done, γ_A > 1/36 (record -07, 2026-11-12).
 - An independent check of the transcription of KLM Thm 6.4 and of the non-tiling route.
 
 ## History

@@ -32,6 +32,12 @@ Claude (Opus 5.5, orchestrator), 2026-11-12, at branch head `0f1d797`.
 
 One surviving mechanism (-01), recorded as a variant/new combination with no priority claim. The other candidates are deferred or pending with resume conditions. Final IDEA numbers are allocated at PR preparation.
 
+## Addendum (2026-11-12, explicit-γ campaign)
+
+| Provisional ID | Mechanism | Closest entries | Verdict |
+|---|---|---|---|
+| IDEA?padua-effective-cubature-20261112-claude-07 | Explicit cubature excess from a certified Cohn–Elkies translative-packing function: a packing bound b < 1 for K = O/2 gives γ_A ≥ 1/b − 1, via records -02 (d) and -03. The function itself is DGOV's (arXiv:1510.02331), re-certified locally. | DGOV (packing only; no cubature). Record -04 uses the same packing duality in the other direction. KLM Cor 6.5 is the qualitative version. No IDEA entry uses a Cohn–Elkies function for cubature (grep "Cohn", "packing bound" in `state/IDEAS.md`). | **Variant (new combination of known results)**, survived. No priority claim. |
+
 ## Addendum (2026-11-12, after the session-1 numerics)
 
 - -02 (plain Turán LP): the plain torus LP is measured at Fisher, ρ_n = 1 within 3e-6 for n = 2…12 (`gates.md` Q2 KILL). Disposition: unchanged, deferred, and the method is killed as a fixed-γ route. This is not a statement about T(int 2O).
