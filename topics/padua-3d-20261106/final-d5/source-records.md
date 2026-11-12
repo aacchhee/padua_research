@@ -72,11 +72,28 @@ D1 must separately construct the complete orthogonal limiting system. Small trac
 
 ## Supplemental primary leads sent to D1/D2/D4
 
-- [Antezana–Marzo–Ortega-Cerdà2101.08064v1](https://arxiv.org/pdf/2101.08064v1), §1 and Thm14/proof pp15–16: excludes sequences of orthogonal reproducing-kernel bases for ball polynomials with weight `(1-|x|²)^(a-1/2)`, a>=0, via a scaled Bessel-kernel limit. This is a close existing spectral-limit mechanism; it does not state a fixed positive excess for asymptotically minimal cubature. Full source proof/cited universality theorem unread.
+- [Antezana–Marzo–Ortega-Cerdà2101.08064v1](https://arxiv.org/pdf/2101.08064v1), §1 and Thm14/proof pp15–16: excludes sequences of orthogonal reproducing-kernel bases for ball polynomials with weight `(1-|x|²)^(a-1/2)`, a>=0, via a scaled Bessel-kernel limit. This is a close existing spectral-limit mechanism; it does not state a fixed positive excess for asymptotically minimal cubature. R2 actually reread the entire Thm14 proof; its cited universality theorem remains unread.
 - [Marzo math/0611503v1](https://arxiv.org/pdf/math/0611503v1), Thms1.6–1.7 and §5: necessary spherical MZ/interpolation densities; no complete interpolation families for p≠2. The p=2 exception is essential and gives no desired positive cubature gap by itself.
-- [Białas-Cież–Kenne–Sommariva–Vianello2311.18656v1](https://arxiv.org/pdf/2311.18656v1), Lemma1/Prop1 and proof pp3–4: degree<=n product Chebyshev mesh C_mn in each coordinate, roots or Lobatto extrema, gives meshΛ<=Λ<=sec(pi/(2m))meshΛ, dimension independent. It applies to interpolation and determining positive-weight LS. At m=3 the upper/mesh factor is1.1547;7.7% concerns a midpoint approximation's half-width. Floating mesh evaluation still needs rigorous arithmetic for a numerical certificate.
+- [Białas-Cież–Kenne–Sommariva–Vianello2311.18656v1](https://arxiv.org/pdf/2311.18656v1), Lemma1/Prop1 and proof pp3–4: degree<=n product Chebyshev mesh C_mn in each coordinate, roots or Lobatto extrema, gives meshΛ<=Λ<=sec(pi/(2m))meshΛ, dimension independent. It applies to interpolation and determining positive-weight LS. At m=3 the upper/mesh factor is1.1547; the midpoint relative half-width is about7.18%. Floating mesh evaluation still needs rigorous arithmetic for a numerical certificate.
 - [Ottem–Ranestad–Sturmfels–Vinzant1311.3675v2](https://arxiv.org/pdf/1311.3675v2), Thm1.1 p3 and §2 pp6–7: quartic4×4 pencils with all10 corank-two nodes real exist, with explicit integer matrices. Those matrices were sent directly to D2. This is topic n=2 only; no all-real5×5/6×6 theorem follows. No numerical experiment was executed by D5.
 
 ## Acquisition queries and remaining gaps
 
 Actual queries included exact titles/DOIs for Wang–Wang–Wang, Golomb–Welch and Gravier–Mollard–Payan, plus `regularity`, `pdf`, `Lee spheres`, `complete interpolation`, and sphere/cubature. Direct arXiv PDFs above succeeded; the two ScienceDirect bodies failed403, SIAM supplied metadata only. The exact Wang theorem/application, original Golomb–Welch packing proof and GMP tile definitions remain named fulltext gaps. Fulltext novelty comparisons are R2, not established by R1 metadata searches.
+
+## R2 primary coverage supplement — 2026-11-12
+
+The following provisional IDs refer to the actual statement/section comparisons in [novelty-gate.md](novelty-gate.md). These are authored coverage records, not copies of third-party texts. No local PDF bytes/hashes are claimed.
+
+| Provisional literature ID suffix | Primary identity and actual read coverage |
+|---|---|
+| D5-16 | Cools–Lyness2001, DOI10.1090/S0025-5718-01-01326-6; author-uploaded fulltext recovered through ResearchGate. §1 bounds, §2 eq2.2/Thms2.4–2.5/Def2.7, §4 all3D rows of Tables1/3, §5 limitations. AMS/CiteSeer failed. |
+| D5-17 | Poppe–Cools *In search for good Chebyshev lattices*, UNSW-hosted author preprint15pp. §1.2–1.3, §2.2, §3–§6, result tables and captions. Cools–Poppe2011 BIT predecessor remains abstract/metadata-only despite fulltext search. |
+| D5-18 | Dencker–Erb arXiv1511.04564v2,30pp. Intro, §2.1–2.3 including frequency space2.19, Thms2.7–2.8, Remark2.13; §3 lead. |
+| D5-19 | De Marchi–Vianello–Xu arXiv0805.3529v1,20pp. Intro and §2 including Thm2.2 and its proof. |
+| D5-20 | Carnicer–Sauer arXiv1610.01850v2,18pp. Intro, §2 and §3 Thm3.1/cardinal formulas/proof pp4–6. Original Berzolari/Radon papers unread. |
+| D5-21 | Kolountzakis arXiv1606.02452 (web-served PDF14pp). §1.1 spectral packing/tiling identities; density/weak-convergence definitions; entire §2 Thm1 and Lemmas1–5/proofs pp5–9. |
+
+Additional Li–Xu coverage for D1's general-weight boundary: pp32–34 eq5.11–5.13, Lemma5.5 and definition of Δ*. Here `w(x(t))=∏_(μ<ν)sin²π(tμ−tν)`, the Jacobian is constant×√w, and Δ* is the orbit-coordinate image of the A_d simplex. The read weighted inner products are normalized `w^α dx`, α=±1/2, on that curvilinear full-dimensional domain. No general doubling theorem or cube universality premise was read or asserted.
+
+Source-dependent imports remain governed by the exact-statement/normalization/application criterion; full external proof inheritance is not claimed. In particular the log3 import uses KL independently of unread Wang–Wang–Wang, and D1's final nonspectrality uses primary-read GL1.1 independently of the broader LM corroboration.

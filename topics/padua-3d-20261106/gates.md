@@ -216,3 +216,7 @@ R3 supplied [Bessel completeness](final-d1/complete-law.md) and the [source-depe
 
 - D2 R2 completed all declared real-search branches. R3 [implementation protocol](final-d2/protocol.md) authorizes full symmetric-pencil coefficient perturbations from the explicit known real baseline, four500-attempt seeded paths per degree n3/4, CPU50/wall60 each, old total500CPU/600wall. Code `fd2_optimize.py` SHA256 `754a9c4c97d909412756825b21bc06509028fbf83c8ee8f30992ceaef67684a8`. Train13³; independent assessments41³+512 fixed uniform queries. All failed/capped trajectories retained; no broad-family rejection from missed roots or no demonstrated Padua transfer.
 - D4 R1 completed all13 QR m2 certificates, retained optimized n12m2 and both Lee replays with no cap/guard failure. R2 is the already specified n12m3 tightening only, same frozen code7e1ff950 and120-second cap. No new optimizer or threshold. QRfallback witnesses are explicit dyadics; missing historical optimized endpoints remain unavailable.
+
+### D5 R3 — prospective paper-note record round, 2026-11-12
+
+R2 [fulltext comparison](final-d5/novelty-gate.md) completed. R3 [protocol](final-d5/protocol.md) authorizes the short paper-note synthesis and final actual claim/dependency/disposition table only. No new theorem, numerical run, optimization, registry mutation or status upgrade. Incoming D1–D4 results may update this same record round before its completion. Preserve source gaps and the difference between development proof, supplemental check and formal Claude acceptance.
