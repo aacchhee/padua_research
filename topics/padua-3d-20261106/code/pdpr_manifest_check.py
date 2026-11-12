@@ -137,7 +137,7 @@ def main():
     maximum = 0
     for count in range(81):
         trial = m.make_manifest(expanded[:len(rows)+count], inherited)
-        if len((json.dumps(trial, separators=(',', ':'))+'\n').encode()) < 16384:
+        if len((json.dumps(trial, separators=(',', ':'))+'\n').encode()) < 32768:
             maximum = count
     checks.append('plus40_lossless_roundtrip')
     try:
@@ -145,7 +145,7 @@ def main():
     except ValueError:
         checks.append('plus40_size_limit_rejected')
     else:
-        if larger_bytes >= 16384:
+        if larger_bytes >= 32768:
             raise AssertionError('oversized manifest accepted')
     compression_trials = {}
     for extra in (0, 30, 40):
@@ -238,8 +238,8 @@ def main():
               'v7_manifest_bytes': len(m.render_manifest(candidate).encode()),
               'v7_compact_manifest_bytes': len((json.dumps(candidate, separators=(',', ':'))+'\n').encode()),
               'v7_same_baseline_envelope_bytes': len(m.render_manifest(dict(baseline, schema=m.SCHEMA, artifacts_payload=candidate['artifacts_payload'])).encode()),
-              'plus40_manifest_bytes': larger_bytes, 'plus40_under_16KiB': larger_bytes < 16384,
-              'maximum_synthetic_extras_under_16KiB_tested_0_to_80': maximum,
+              'plus40_manifest_bytes': larger_bytes, 'plus40_under_32KiB': larger_bytes < 32768,
+              'maximum_synthetic_extras_under_32KiB_tested_0_to_80': maximum,
               'compression_metadata_bytes': compression_trials,
               'checks': checks, 'frozen_tree': frozen,
               'code_sha256': {p.name: sha(p.read_bytes()) for p in (HERE/'artifact_manifest.py', Path(__file__))}}

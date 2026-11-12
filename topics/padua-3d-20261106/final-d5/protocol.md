@@ -1,0 +1,23 @@
+# D5 framing and paper record protocol
+
+Rules/input head: `04ef28b6139ad15b8cfc31f865c7bb9ba0d56d9b` (2026-11-12).
+Owner: Codex D5 literature developer (runtime model metadata not exposed to worker).
+Authority: handoffs 18 and 19, C8. Only this directory and `../paper-note-draft.md` are writable ownership. No Git/shared registries.
+
+## Prospective RECORD rounds (ceiling 3)
+
+1. **R1 — primary acquisition and exact statement coverage.** Before opening papers, scan complete IDEAS/INDEX, then relevant full source records and local theory. Fetch named D5 sources plus directly needed D1/D2 sources, keeping third-party bytes exclusively in `/tmp/padua-d5-sources/`. Record actual URLs, bytes/hash, theorem/section coverage, exact hypotheses, normalization/application obligations and unavailable sources. Reading is record work, not a new mechanism. Priority/novelty verdicts wait for R2. No expensive computation.
+2. **R2 — note-specific fulltext novelty gate.** Preregister after R1. Compare exact reflection-coset, monotone-stack exponential, n2 classification, lattice minima/packing claims (and D1 only if proved) with closest primary texts. Retain scoped no-match wording and coverage gaps; do not assert exhaustive novelty.
+3. **R3 — paper note and disposition.** Preregister after R2. Draft concise manuscript synthesis, linking exact claim statements, dependencies and statuses. Update it to actual D1–D4 outcomes once available. No new theorem, construction/optimization round, or claim upgrade.
+
+## Label rule
+
+AC 2026-11-08 settled E4: `PROVED with explicit LITERATURE dependency` only after the exact primary statement, normalization and application are checked. Otherwise `CONDITIONAL`; never bare external PROVED. Literature attribution alone is no proof status. Finite sampled norms remain MEASURED.
+
+## Gate/read record
+
+Full handoffs 18/19 and AGENTS/WORKFLOW/CODEX read. Complete IDEAS headings, identifiers, aliases and summaries scanned; obstruction/disposition tables read in segments (including repeated historical tables). INDEX scanned before opening PDFs. Closest entries include IDEA-027/029/039/120/177–189, LIT-010/307/319–323/377–391/412–414, and the topic's T1/T2/T5/T8/T9/T10 literature/theory records. Remaining required scout/audit reading and full shortlisted local-theory reading precede R2.
+
+## Storage and execution
+
+Every authored file <=32 KiB; total committed generated allowance 10 MB belongs to orchestrator. No third-party text in Git. Network acquisition and PDF extraction only; no scientific CPU batch planned. Failed retrievals and partial reads are recorded as such.

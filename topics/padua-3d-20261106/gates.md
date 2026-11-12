@@ -173,3 +173,12 @@ but its prospective gates.md entry was missing. This row is retrospective,
 not a backdated gate. The canonical timing/allocation record is
 [response-deviations-02](response-deviations-02.md). E remains killed under
 its own n7/n9 quality rule and is not resumed by the new phase families.
+
+## 2026-11-12 — handoff 19 final programme, prospective allocation
+
+New counters, separate from the earlier D0–D4 labels and T/U/P campaigns. D1 spectral ≤6 (stop after four rounds without closing the limit), D2 determinantal ≤3, D3 cubic certificate ≤1, D4 bounds/Lee ≤2, D5 literature/paper ≤3 record rounds. No run authorized by this allocation alone: each item protocol and its specific prospective gate must be published before execution. Protocol links and run go are recorded below as they become available. Source reconnaissance and gate reading precede research execution. All old directions are frozen.
+
+### D1 R1 and D5 R1 — before execution, 2026-11-12
+
+- D1 R1: [gate](final-d1/gate.md), [protocol](final-d1/protocol.md), [round record](final-d1/rounds.md). Exact finite defect/lift bridge and deterministic lattice/Padua controls, intended <30 seconds. No local-limit result authorized or preclaimed by this round.
+- D5 R1: [protocol](final-d5/protocol.md). Primary-source acquisition and exact statement coverage, record work only; no construction or expensive computation. Three urgent PDF excerpts were opened after the worker wrote its protocol but before this gates entry/publication; recorded once in LOG below. All remaining R1 reading follows this publication.

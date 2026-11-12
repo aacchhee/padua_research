@@ -240,10 +240,11 @@ def verify_manifest(saved, observed, inherited):
 
 
 def render_manifest(output):
+    # Topic-specific allowance approved by AC, 2026-11-08; handoff 19.
     raw = json.dumps(output, indent=2) + "\n"
-    if len(raw.encode()) >= 16384:
+    if len(raw.encode()) >= 32768:
         raw = json.dumps(output, separators=(",", ":"), ensure_ascii=False) + "\n"
-    if len(raw.encode()) >= 16384:
+    if len(raw.encode()) >= 32768:
         raise ValueError("compact manifest limit exceeded")
     return raw
 

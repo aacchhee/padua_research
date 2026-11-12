@@ -537,7 +537,7 @@ their corresponding runs, with publication and execution timing distinguished.
   determinant minima through16 include5772 at16, independently enumerated
   by a different method; n4..16 use explicit imported packing. Local
   computer-assisted global folded/full-rank minima through5 and no exact-N
-  positive full-support unshifted rule at n3..7 follow from q/8 and exact
+  Padua-type (rank-N) positive full-support unshifted rule at n3..7 follow from q/8 and exact
   ranks. Small positive rules at n3/4/5 can be singular. No all-phase or
   all-degree theorem is inferred; global larger minima stay OPEN.
 - Actual higher cost is preserved: n7's producer caps after q881 and921,
@@ -951,3 +951,14 @@ their corresponding runs, with publication and execution timing distinguished.
   5. the lattice stop(a) boundary, accepted as recorded.
 - [Handoff 18](handoffs/18-final-narrowed.md) is superseded by
   [handoff 19](handoffs/19-final-narrowed-approved.md): same instruction, with these decisions settled.
+
+## 2026-11-12 — final narrowed programme restart — Codex, gpt-6-astra high
+
+- Role: developer/orchestrator carrying out open [handoff 19](handoffs/19-final-narrowed-approved.md); rules read at `04ef28b6139ad15b8cfc31f865c7bb9ba0d56d9b`. Fetched and fast-forwarded topic to that head; fetched main remains `f70a260e5b5f9a01209dc8a05faabdcf8db1feeb`. No published history rewritten.
+- AC's decisions of 2026-11-08 are settled. D1–D5 are the only active research/record programme; earlier T/U/P campaigns stay frozen, with unused quotas intact.
+- Disjoint delegated ownership: D1 spectral (Sol xhigh), D2 determinantal (Sol xhigh), D3 certificate (Sol high), D4 bounds/Lee (Sol high), D5 literature/note (Sol xhigh), audit-04 response (Sol high). Root owns Git, gates/rounds, LOG/results, master provenance and PR. All source/experiment preregistrations precede executions; root publishes them before run go. No final IDs, reservations or shared-registry application this step.
+- Full idea/source gates are performed by each mechanism owner; root integrates their completed gates and does not originate an additional mechanism. Source reading and producer-record corrections do not themselves assert novelty.
+- The manifest renderer now uses the approved topic-specific 32 KiB allowance (not a policy change). Generated output allowance, 10 MB repository-wide, remains provisional for PR discussion; no extra research rounds are implied.
+- Corrected the audit-04 A1-W1 LOG scope to rank-N Padua-type rules; singular exact-N positive rules remain admitted. Handoffs [15](handoffs/15-combined-audit.md), [16](handoffs/16-pruning-campaign.md), [17](handoffs/17-pruning-audit.md) are historical completed steps.
+
+- D5 R1 timing disclosure: the worker authored its prospective protocol and notified root, then opened introductory/theorem excerpts of Lev–Matolcsi 1904.12262v4, Greenfeld–Lev 1602.08854v2 and ORSV 1311.3675v2 before root's requested publication pause arrived. This preceded the root gates entry/push; no mathematical application or novelty conclusion had been produced. Work paused, this timing is preserved, and remaining R1 source work follows publication. No retroactive claim of a completed prepublication gate.
