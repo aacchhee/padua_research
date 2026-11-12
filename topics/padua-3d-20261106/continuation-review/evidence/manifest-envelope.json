@@ -1,0 +1,32 @@
+{
+  "scope": "AST equality outside make_manifest; only3 informational fields change inside it; exact old/new current identity payload and independent decode equality",
+  "old_commit": "d826a0fd0df617b7d0c36e782607c2b979a26048",
+  "old_code_sha256": "11dcb5d0239a7cc5ea6b583a00027c0ae50822fa2800e36dc8a723766d2fc23a",
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/code/artifact_manifest.py",
+    "bytes": 7984,
+    "sha256": "40332bb4bf5e306cf9eb49a8e24ca867e0ae7809203b65f3fc60041155ff6a92"
+  },
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/continuation-review/code/check_manifest_envelope.py",
+    "bytes": 2910,
+    "sha256": "b5751d50ec06d288c9319fd681e66102c6905ea3a8974fee1d39cfa9585b8b7f"
+  },
+  "independent_decoder": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/continuation-review/code/check_manifest.py",
+    "bytes": 4604,
+    "sha256": "1e0553630ef7b2718643d37f44dd4bb9a4a9613434695c8938e1a7d8c3dffcd4"
+  },
+  "artifact_count": 286,
+  "artifact_bytes": 1594810,
+  "map_sha256": "3320fe7b9da695e14d2c7b091efcb53b10ea79d628b681b307703752ad16a0f6",
+  "changed_fields": [
+    "artifacts_codec",
+    "format",
+    "limits"
+  ],
+  "old_compact_bytes": 16305,
+  "new_compact_bytes": 16050,
+  "saved_bytes": 255,
+  "same_identity_payload": true
+}

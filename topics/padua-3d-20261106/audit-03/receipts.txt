@@ -1,0 +1,104 @@
+# audit-03 orchestrator receipts (Claude, 2026-11-06)
+Python 3.13.18; numpy 2.3.5 scipy 1.17.0 sympy 1.14.0 mpmath 1.3.0; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1; candidate 696bca5fe8842b8b99ec298381c948206be79548 in a detached worktree
+
+## sha256 of audit-03 code (after trailing-whitespace normalization)
+2b5fbb45fa44ea8322a12354be01ac53aa51d6f1cbee9ca7bcda93472c8858d5  ./T10/check19.py
+c2831851704ed578b3397fb4835385ac4b38e109f2a8e86b367ca2bb0ce5b0ec  ./T10/crit.py
+6e3a310c0018de7c0d30f285c4d7b44a737672834098e95c87f0a7ed89fffa61  ./T10/exact_confirm.py
+919c31581d5c7e11e9042e679b14898e164ac0ae06f6e8d18774b2e8fe817cdc  ./T10/gram.py
+62fba1c6d43ef4e54a701d02a0e33c418808ac2ef98550f9a55672e3051eb37d  ./T10/hnf_search.py
+9b0c034add206e89fb1266a052af466afa8d2880787fa22e8c834ab1fec5ed92  ./T10/lebesgue.py
+7ca3b7837956c67190e4436508eb51acada155471e4e4ffe2e80329304f566e2  ./T10/lexqr.py
+2eb9ed7a489e2e97fc7c891e846a528f18291c63d5887717ebe0c177d096a979  ./T10/minfold_search.py
+7dd6c6f7ac867595dc096d09a00030bdd9b9442a8caecf0acd97669c7a1d6f06  ./T10/n2_detail.py
+c6b4e7244c6b4232622fbec793723e5684a6e19d8322747f97d1074dcafdc713  ./T10/n2_quality.py
+8e686dc37c74c5f95edeade874912a5d9711098af2a6ec19c66d93e73de41701  ./T10/n3_example.py
+e25bf3097144cfccd0e89cbafb69d44d4f961145f30795b958f238974cdf327e  ./T10/reflect.py
+157e132c62056304fc64ce493ca78a61804eafb332c10d0d8794cb175e01153a  ./T10/structured.py
+c1454adb33042aeb55ed5f758c12bdbac4d8fecb741f2bb31f0c6f7a624fa8fc  ./T10/unisolvence.py
+2d6ce08d547a1803d0935c408200ed10aad11bf44450c68563f8e6972aeb7676  ./T10/window_search.py
+b698c491d3fafd6d096decde54fff59424927c976ff0861bb5704ef1f126f3d7  ./T7/aud_census.py
+7b8390f496cde4c51fd897794b81c61ff1ada2f4bf4c8846763118810cf516b0  ./T7/aud_exact.py
+7d9b633467d5d85931d0b4815ff2c65e8196cff33c069424044a8569f625d712  ./T7/aud_groups.py
+2a55436fc817b3809a8703eb028d91d81d27ca4f3b8e63c09773dd5543c4eb2a  ./T7/aud_misc.py
+723cd19532a5b1cb7ab2faaa4e0d3b7dea8ff0f06278a13f09c75a0e7ccb48a8  ./T7/aud_n3cost.py
+3d686ff5d6531c478cb6e12dd5f5642587376588910919841adc8f7166458db1  ./T7/aud_q2.py
+a2e3937697898b57b232b34786d7ac3544bf3c1bbf1a926986403f4ad718df52  ./T7/aud_random.py
+5d064646bf983b51e1e5c695f8319acb9d2c075d3468886e8f5bd0b01be8e880  ./T7/aud_winners.py
+b5dbc34168d5e10f509a6c4065149c091f2bd8bfe5f82f6a53ffca17c468d81a  ./T7/est.py
+7b89a23269d4327ec41152c2c216b742fed9c95e287f12403870788fbdb75f3c  ./T8/m2n_probe.py
+92141a7b30068b731313dbac458fd5424aa2f982db9d3a9879fd4b91016a75e9  ./T8/t8_exact_audit.py
+b303e020ccc8549e9adfd80ef220d2709430e1e7660a9cf4e8057e3d8182e5d4  ./T8/t8_lebesgue_audit.py
+58b1b4321783979c6d90409396834f92dcede6ebd0c74286ace49973ef61fa25  ./T8/t8_named_primes_audit.py
+11965ac5dc17dc23f969f0353a47bb31376755769874ad4135746a71883089ce  ./T8/t8_theory_audit.py
+4c3510888ac02f41fd957473a9fb938c95913bddecbb1f54a36227d91c1f06fe  ./T9/a_packing.py
+b5f6c2835d94b6af208a9ed2aafa2561729c0f63deb8b16b7a46d67290ef1546  ./T9/b_witness.py
+987c0a4d607c7e3df9f658a7e3df8a0fbd25fea5812ae5d5f4995cc9c8849b4d  ./T9/c_rleja.py
+0580447a08d9d6f7e9d37b493a27e61ad15bb23c4b82f6772d8f900ccbeb98cc  ./T9/d_leja_search.py
+a9b1d1fcf7040df4d62ef50ce1c64668595e9878391a7918dc46ce0942469e15  ./T9/e_leja_conj.py
+5ab18e9f614e7823f8609c114f135587f6a217d721386fa37db9ab14014d2a6c  ./T9/f_rleja3d.py
+dc385835145c645ba18043f91e27c2c3af0d7716439622c1841cce81ff071227  ./T9/g_cmp.py
+1da8fb375d72491e0a8bc9fde3fe8deec4e5974bde5b03ab33ab6689698b7c41  ./T9/h_cmp.py
+96ed442c72c3108428afa780f545e96c0b2acd324e13fd1e4f2391d08f859c21  ./T9/i_misc.py
+58b5afad368667162bab45b75f7f936aff72b0a29af1a3a3a8749b27869acc7c  ./T9/j_census_probe.py
+457c1d5a2cd95f873a9a658f9e50d730e83a9d1362f175ed56516851f054b68f  ./T9/k_complement_probe.py
+cd29c2897536d192c74dda5cb618c9e10eb4643d82c7236f9b0020cd839fcf2d  ./novelty/arith_checks.py
+493310a754e31b4b85951e3cf5e6e067ffc9883b2f8bfb8577d13140df02ee9d  ./novelty/mindet_probe.py
+a194b7f2c69e4b1533cd80ef61700f438b6582f60d24a06d8b5dba0ab14da782  ./t8w_check.py
+
+## handoff-07 core commands (exit, seconds)
+{"verdict": "PASS", "artifacts": 154, "bytes": 728307}
+exit 0
+exit 0
+exit 0 secs 226 :: topics/padua-3d-20261106/code/independent_r06.py --t7-census --output <out>/independent-census.json
+exit 0 secs 1 :: topics/padua-3d-20261106/code/independent_r06.py --t7-primes --output <out>/independent-primes.json
+exit 0 secs 1 :: topics/padua-3d-20261106/code/independent_r06.py --t10-global --output <out>/independent-lattices.json
+exit 0 secs 1 :: topics/padua-3d-20261106/code/independent_r06.py --t9-algebra --output <out>/independent-algebra.json
+exit 0 secs 203 :: topics/padua-3d-20261106/code/t7_r06_census_finish.py --n 2 --seconds 1200 --output-dir <out>/tmp --receipt <out>/tmp/census.json
+exit 0 secs 1 :: topics/padua-3d-20261106/code/t7_r06_certificate.py --output-dir <out>/tmp --receipt <out>/tmp/certificate.json
+
+## comparison with committed receipts (scientific fields)
+== independent-r06-t7-census.json vs independent-census.json diffs 2 non-negligible 2
+    /command[3] | topics/padua-3d-20261106/evidence/independent-r06-t7-census.json -> /tmp/claude-0/-workspace-padua-research/10b30ff5-df76-597f-8b43-0ded30
+    /python | 3.12.14 -> 3.13.18
+== independent-r06-t7-primes.json vs independent-primes.json diffs 2 non-negligible 2
+    /command[3] | topics/padua-3d-20261106/evidence/independent-r06-t7-primes.json -> /tmp/claude-0/-workspace-padua-research/10b30ff5-df76-597f-8b43-0ded30
+    /python | 3.12.14 -> 3.13.18
+== independent-r06-t10-global.json vs independent-lattices.json diffs 2 non-negligible 2
+    /command[3] | topics/padua-3d-20261106/evidence/independent-r06-t10-global.json -> /tmp/claude-0/-workspace-padua-research/10b30ff5-df76-597f-8b43-0ded30
+    /python | 3.12.14 -> 3.13.18
+== independent-r06-t9-algebra.json vs independent-algebra.json diffs 2 non-negligible 2
+    /command[3] | topics/padua-3d-20261106/evidence/independent-r06-t9-algebra.json -> /tmp/claude-0/-workspace-padua-research/10b30ff5-df76-597f-8b43-0ded30
+    /python | 3.12.14 -> 3.13.18
+== t7-r06-census-n2-complete.json vs census.json diffs 8 non-negligible 8
+    /command | topics/padua-3d-20261106/code/t7_r06_census_finish.py --n 2 --seconds  -> topics/padua-3d-20261106/code/t7_r06_census_finish.py --n 2 --seconds
+    /detail/bytes | 22287 -> 22541
+    /detail/path | /tmp/padua-t7-r06-7afa6a54/census-complete-n2-detail.json -> /tmp/claude-0/-workspace-padua-research/10b30ff5-df76-597f-8b43-0ded30
+    /detail/sha256 | e98218db307837ab9f169c9dea69aa05f6c0ec538399321968ee1cb78472ca57 -> 25021ae9005dabe6af29b8432c23def87500b7d83cdef26958eb953b1eec56c3
+    /raw[0]/path | /tmp/padua-t7-r06-7afa6a54/census-complete-n2.jsonl -> /tmp/claude-0/-workspace-padua-research/10b30ff5-df76-597f-8b43-0ded30
+    /raw[1]/path | /tmp/padua-t7-r06-7afa6a54/census-complete-primes-n2.jsonl -> /tmp/claude-0/-workspace-padua-research/10b30ff5-df76-597f-8b43-0ded30
+    /seconds | 173.68799995999962 -> 202.49107883300002
+    /versions/python | 3.12.14 -> 3.13.18
+== t7-r06-certificate.json vs certificate.json diffs 3 non-negligible 3
+    /command | topics/padua-3d-20261106/code/t7_r06_certificate.py --output-dir /tmp/ -> topics/padua-3d-20261106/code/t7_r06_certificate.py --output-dir /tmp/
+    /seconds | 0.01164436100043531 -> 0.015600578999965364
+    /versions/python | 3.12.14 -> 3.13.18
+(detail sidecar embeds command, paths and seconds; both raw jsonl hashes identical)
+
+## python -I audit-03/code/t8w_check.py evidence/t8-r06-witnesses.json  (all T8 M=N witnesses, fresh primes)
+{'n': 1, 'N': 4, 'M': 4, 'z': [1, 2, 1], 'L': 1028, 'nodes': 4, 'p': 26729, 'rank': 4, 'ok': True, 'sec': 0.0}
+{'n': 3, 'N': 20, 'M': 20, 'z': [1, 2, 7], 'L': 120, 'nodes': 20, 'p': 1201, 'rank': 20, 'ok': True, 'sec': 0.0}
+{'n': 4, 'N': 35, 'M': 35, 'z': [1, 22, 25], 'L': 8995, 'nodes': 35, 'p': 197891, 'rank': 35, 'ok': True, 'sec': 0.0}
+{'n': 5, 'N': 56, 'M': 56, 'z': [1, 8, 45], 'L': 14392, 'nodes': 56, 'p': 129529, 'rank': 56, 'ok': True, 'sec': 0.0}
+{'n': 7, 'N': 120, 'M': 120, 'z': [1, 33, 92], 'L': 30840, 'nodes': 120, 'p': 370081, 'rank': 120, 'ok': True, 'sec': 0.1}
+{'n': 8, 'N': 165, 'M': 165, 'z': [1, 37, 144], 'L': 42405, 'nodes': 165, 'p': 848101, 'rank': 165, 'ok': True, 'sec': 0.3}
+{'n': 9, 'N': 220, 'M': 220, 'z': [1, 32, 101], 'L': 56540, 'nodes': 220, 'p': 678481, 'rank': 220, 'ok': True, 'sec': 0.6}
+{'n': 11, 'N': 364, 'M': 364, 'z': [1, 16, 129], 'L': 93548, 'nodes': 364, 'p': 1590317, 'rank': 364, 'ok': True, 'sec': 2.5}
+{'n': 12, 'N': 455, 'M': 455, 'z': [1, 267, 119], 'L': 116935, 'nodes': 455, 'p': 3975791, 'rank': 455, 'ok': True, 'sec': 4.4}
+ALL_OK True degrees [1, 3, 4, 5, 7, 8, 9, 11, 12]
+
+## n=2 Padua-type check: min l1 of dual lattice for the T2 order-19 survivors
+(1, 3, 7) min l1 = 4 Haar exact through degree 3
+(1, 4, 6) min l1 = 4 Haar exact through degree 3
+(1, 5, 8) min l1 = 4 Haar exact through degree 3
+(1, 7, 8) min l1 = 3 Haar exact through degree 2

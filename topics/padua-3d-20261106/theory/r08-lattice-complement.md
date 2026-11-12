@@ -1,0 +1,159 @@
+# PD-T?padua-3d-20261106-codex-R08-complement — exact folded and full-rank minima
+
+ID kind: PD-T. Aliases: reopened T10.1 objectives(ii)/(iii); T9 finite
+complement through6. Split from/into: none. No novelty claim.
+Overall status: **PROVED, computer-assisted finite result**. This result
+does not import the octahedron packing theorem. Its degree range and
+objectives are deliberately separate from the determinant-minimum table.
+
+## Exact statement
+
+For finite H<=T³, put X=cos(2πH), L=H^perp<=Z³ and N=binom(n+3,3).
+Restrict to zero phase and strictly positive cubature weights on every
+node of X, exact for product Chebyshev probability measure through
+degree2n−1. Then the following **global** minima hold within this class.
+The full-rank objective requires exact Pi_n evaluation rank N (Pi_n-determining; unisolvent exactly when |X|=N); the other does not.
+
+| n | N | minimum folded | minimum full-rank folded | exact-N Padua-type? |
+|---|---:|---:|---:|---|
+|1|4|2|4|yes|
+|2|10|7|10|yes,24 admissible order19 HNFs|
+|3|20|16|24|no|
+|4|35|35|45|no|
+|5|56|54|75|no|
+
+At n6, no positive degree11 rule in this unshifted full-support lattice
+class has at mostN=84 nodes. Its global folded and full-rank minima
+are not assigned values here. The minimum in the complete det<=672
+window is91, an upper bound on the global folded minimum; the additional
+partial search does not turn that91 into a global minimum.
+
+Thus the largest **observed** degree with a positive rule on at mostN
+nodes is5, and the largest observed degree with a Padua-type lattice set
+is2. No claim about all n>=3 follows: n3..6 are excluded in this class,
+while the remaining finite complement and arbitrary phases stay OPEN.
+The separate [higher record](r08-lattice-higher.md) proves the same
+at-mostN exclusion at n7 with its own complete verification scope.
+
+## Reduction and computational evidence
+
+Use [r08-lattice-reduction.md](r08-lattice-reduction.md). Its local
+positive-weight witness makes shortest nonzero l1>=2n necessary even for
+non-Haar strictly positive full-support weights; Haar weights make that
+condition sufficient for positive degree2n−1 cubature. Each folded node
+has positive multiplicity/q. Thus the search is not restricted merely
+to an arbitrary frozen choice of Haar weights when excluding existence.
+
+Every admissible row HNF through det8N is tested, without a cyclicity or
+symmetry restriction. Complete scopes and admissible-lattice counts:
+
+| n | det interval | all HNFs | admissible HNFs | min folded in interval |
+|---|---|---:|---:|---:|
+|1|1..32|22528|20052|2|
+|2|1..80|344574|205858|7|
+|3|1..160|2727626|964755|16|
+|4|1..280|14580438|2943865|35|
+|5|1..448|59444711|6749170|54|
+|6|1..672|200821041|12910075|91|
+
+For n1..5, these intervals exceed8*(minimum−1), so the finite fold minima
+are global by the fiber bound. The n6 interval suffices to exclude every
+at-most84-node rule; it does not exhaust folds below91.
+
+Full-rank objective: n1/2 attain the dimension boundN. At n3, the full
+det1..184 search records exact fold/rank histogram
+(16,15)x1,(20,17)x20,(20,18)x3,(22,18)x68 and nothing else below24.
+At n4, det1..352 records(35,30)x1,(39,33)x3,(43,32)x24 below45.
+At n5, det1..592 records(54,48)x1,(63,53)x3,(72,53)x3 below75.
+Every rank is rational character-incidence rank, including the deficient
+cases; no floating tolerance or modular rank defect proves singularity.
+An attained target and q<=8|X| make these exclusions global.
+
+Attaining HNFs, in tuple(a,b,c,d,e,f) convention:
+
+| n | full-rank witness | det | fold/rank |
+|---|---|---:|---|
+|1|(1,1,1,2,0,2)|4|4/4|
+|2|cyclic19,z=(1,3,7)|19|10/10|
+|3|(1,3,3,6,0,10)|60|24/20|
+|4|(4,0,5,5,5,10)|200|45/35|
+|5|(5,0,6,6,6,12)|360|75/56|
+
+The n4 minimum-fold35 witness is(4,0,4,4,4,8), det128, rank30. The n5
+minimum-fold54 witness is(5,0,5,5,5,10), det250, rank48. Their exact
+degree7/9 positive rules therefore do not give interpolation atN nodes.
+
+## n2 Padua-type sets and predecessor connection
+
+For q19 and z=(1,3,7),(1,4,6),(1,5,8), let
+X_z={(cos(2πjz1/19),cos(2πjz2/19),cos(2πjz3/19)):0<=j<19}.
+Each has10 distinct nodes, exact rank10, shortest dual norm4 and hence
+positive degree3 cubature. The identity node has weight1/19 and the
+other9 nodes weight2/19. These are the first three n2 survivors already
+listed in [T2](t2-finite-survivors.md), not new sets; their Padua-type cubature property was first reported in [Claude audit-03](../audit-03.md) item 7. Their exact symmetry
+class has the same true Lebesgue constant; the independently reproduced
+41³-mesh lower sample is8.13406903712 (MEASURED diagnostic only).
+
+Of T7's32 exact order19 full-rank survivors in
+`evidence/t7-r06-certificate.json`, exactly24 have shortest norm4 and
+give these positive degree3 rules. The other8 have shortest norm3,
+including T2's fourth generator(1,7,8); its Haar degree3 moment T111
+is1/4. It is unisolvent, but fails the positive-cubature requirement.
+All24 admissible HNFs and their link to the fixed T7 list are exactly
+regenerated by `r08_lattice_certify.py`; this explains the intersection
+without reopening the accepted all-phase n2 classification.
+
+## Commands, independent checks and trust
+
+Shared unchanged enumerator/rank core: `code/r08_lattice_enum.cpp`
+SHA256 e07ad9e51d5b883e7c6d813d396ef32ea0ac24eda253a73f6137f8b8f86feaa4,
+`code/r08_lattice.py` SHA256
+0d03590f8587f799ad5213ba2b41def2b23e80472ff7327076b4b4f19cbfbfe0.
+Frozen commands and all source/raw identities are in receipts:
+`r08-lattice-complement.json`, `r08-lattice-higher.json`,
+`r08-lattice-n3rank.json`, `r08-lattice-minrank.json`,
+`r08-lattice-n5ranktail.json`, `r08-lattice-witnesses.json`.
+The n5 minimum-rank run capped after q548 at120seconds; the separate
+q549..592 continuation completed in74.14seconds. Both raw identities
+and their disjoint contiguous coverage are retained. No original cap
+is retroactively described as a complete run.
+
+Independent worker check_lattice08 separately executed the frozen producer
+through n6, completed alternate forbidden-congruence enumeration at n2/3/4,
+and independently reconstructed all decisive deficient ranks using
+monomial Fourier coefficients rather than the producer's Chebyshev
+columns. Its exact actual-node splitting-field witnesses certify the
+full-rank sets at n2/3/4/5; n5 uses F1801 and root order360. Separate
+expanded n4/n5 producer executions cover352/592 with the same histograms.
+The n3 alternate det184 run has1710190 admissible lattices, matching the
+producer. See `independent-checks-round08-lattice.md` and its compact
+`r08-lattice-check-*` receipts for exact executed scope.
+
+All code required to regenerate remains committed; bulk per-q rows and
+exact-rank catalogues are regenerate-only in unique /tmp directories,
+with bytes/SHA256 in receipts. The raw files are not an inaccessible
+proof premise: integer enumeration and rational ranks can be regenerated
+from the stated n and determinant bounds. Trusted dependencies are in
+the finite-reduction record. No large archival delivery is claimed.
+
+## Limits and open items
+
+The broad Padua-type question for n>=3 remains OPEN. Exclusion here is
+the unshifted cosine image of a finite subgroup, with positive mass at
+every node and exact degree2n−1 cubature. It does not cover arbitrary
+phase, subsets with removed zero masses, signed rules, general nonlinear
+node sets, or any quality bound on interpolation. General strictly
+positive weights are covered only via the local necessary-condition
+witness; no unique-weight claim is made.
+
+The source-dependent all-n>=110 packing obstruction is in its own
+record; this finite search does not claim to close degrees8..109 or to
+prove a degree-uniform impossibility theorem. Counter ownership remains
+with root; this is one counted continuation for each of T9 andT10 when
+published, never a restart.
+
+## History
+
+2026-11-06; rules/input9042e1c42964150f30fdbe8563c12ba6c6a8692a; Codex,
+assigned Sol xhigh. Handoff08 B5/B6; audit03 E1/E3 corrected by actual
+unrestricted searches, measured higher scope and separate objectives.

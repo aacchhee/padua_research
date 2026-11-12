@@ -1,0 +1,68 @@
+{
+  "schema": "t3-exact-sanity-v1",
+  "python": "3.12.14",
+  "code_sha256": "f850ca5c71ec7f8252d71516261c7c68935e11163d10bafc80dd18a1b879efa7",
+  "phase_cases": [
+    {
+      "d": 2,
+      "n": 2,
+      "M": 11,
+      "z": [
+        1,
+        3
+      ],
+      "root_order": 11,
+      "phase_numerators": [
+        0,
+        0
+      ],
+      "prime": 23,
+      "primitive_root": 2,
+      "rank": 6,
+      "factorization_equal": true
+    },
+    {
+      "d": 3,
+      "n": 1,
+      "M": 7,
+      "z": [
+        1,
+        2,
+        3
+      ],
+      "root_order": 28,
+      "phase_numerators": [
+        1,
+        3,
+        5
+      ],
+      "prime": 29,
+      "primitive_root": 2,
+      "rank": 4,
+      "factorization_equal": true
+    },
+    {
+      "d": 2,
+      "n": 2,
+      "M": 8,
+      "z": [
+        1,
+        3
+      ],
+      "root_order": 16,
+      "phase_numerators": [
+        1,
+        3
+      ],
+      "prime": 17,
+      "primitive_root": 3,
+      "rank": 4,
+      "factorization_equal": true
+    }
+  ],
+  "shared_frequency_full_rank": 6,
+  "zero_index_multiplicity_preserved": true,
+  "rational_surface_substitutions": 32,
+  "all_assertions_passed": true,
+  "independent_replay": "not performed by developer"
+}

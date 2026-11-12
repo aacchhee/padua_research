@@ -1,0 +1,146 @@
+{
+  "schema": "t7-round06-v1",
+  "rules_sha": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "source_sha256": "a3960922d55067549417c5b0a72cdb462c405326ca57f0d1c7931bc0043b6748",
+  "command": "topics/padua-3d-20261106/code/t7_r06_search.py unions --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-unions.json",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "status": "MEASURED finite scope unless separate written theorem",
+  "D0": {
+    "inherited_rank": 20,
+    "actual_node": {
+      "rank": 20,
+      "prime": 5051,
+      "root": 32,
+      "root_order": 1010,
+      "matrix_sha256": "4816b86e32ef2074a0fa29c917fc3b68fe0f22899c2de84af6224aa7c961df21"
+    },
+    "outcome": "PASS"
+  },
+  "unions": [
+    {
+      "n": 3,
+      "N": 20,
+      "types": [],
+      "samples": 0,
+      "full_float_rank_count": 0,
+      "winner": null
+    },
+    {
+      "n": 4,
+      "N": 35,
+      "types": [],
+      "samples": 0,
+      "full_float_rank_count": 0,
+      "winner": null
+    },
+    {
+      "n": 5,
+      "N": 56,
+      "types": [
+        [
+          2,
+          [
+            1,
+            2,
+            14
+          ]
+        ]
+      ],
+      "samples": 128,
+      "full_float_rank_count": 4,
+      "winner": {
+        "r": 2,
+        "type": [
+          1,
+          2,
+          14
+        ],
+        "embedding": [
+          [
+            16,
+            6,
+            3
+          ],
+          [
+            11,
+            5,
+            2
+          ],
+          [
+            5,
+            2,
+            1
+          ]
+        ],
+        "phase": [
+          [
+            0.5892401439070044,
+            0.6271356441785965,
+            0.5270111833155601
+          ],
+          [
+            0.19696840701977467,
+            0.7782237278345788,
+            0.3635499013716438
+          ]
+        ],
+        "phase_mod1009": [
+          [
+            595,
+            633,
+            532
+          ],
+          [
+            199,
+            785,
+            367
+          ]
+        ],
+        "quality": {
+          "lambda21": 49.01637726965382,
+          "logabsdet_orthonormal": 93.72760142055888,
+          "condition2": 22.24378683243733,
+          "inverse_residual_inf": 2.2885069613286865e-14
+        },
+        "exact_count": 56,
+        "exact": {
+          "rank": 56,
+          "prime": 367277,
+          "root": 8192,
+          "root_order": 28252,
+          "matrix_sha256": "63da8ee32c141c47108fb31eed3c9d1c43a6803115a72340433f0a7ef755cc37"
+        },
+        "optimization_success": true,
+        "optimization_iterations": 17
+      }
+    },
+    {
+      "n": 6,
+      "N": 84,
+      "types": [
+        [
+          3,
+          [
+            1,
+            2,
+            14
+          ]
+        ]
+      ],
+      "samples": 128,
+      "full_float_rank_count": 0,
+      "winner": null
+    }
+  ],
+  "seconds": 2.0622911020000174,
+  "raw": {
+    "path": "/tmp/padua-t7-r06-7afa6a54/t7-r06-unions.jsonl",
+    "bytes": 63279,
+    "sha256": "11f3b1a22b93b2da14fd9d735cf9161701f25a3cdb619f961fe6afb8f0a016d0"
+  }
+}

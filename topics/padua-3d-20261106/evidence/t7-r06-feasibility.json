@@ -1,0 +1,495 @@
+{
+  "schema": "t7-feasibility-v1",
+  "source_sha256": "bb1fdf139f0511cd9133978f0d4dcad382e49d201637b137ad786e44c772fe92",
+  "symbolic_pilot_source_sha256": "438553553d2e6a413f951feb5af191d79f2cb45c172800e058aedf5f6b152521",
+  "command": "topics/padua-3d-20261106/code/t7_r06_feasibility.py --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-feasibility.json",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0"
+  },
+  "static_full_group_cover": [
+    {
+      "n": 2,
+      "N": 10,
+      "HNF_groups_enumerated": 344054,
+      "killed_low_projection": 30582,
+      "groups_retained": 19268,
+      "killed_high_projection": 294204,
+      "retained_by_order": {
+        "10": 112,
+        "11": 100,
+        "12": 260,
+        "13": 144,
+        "14": 252,
+        "15": 334,
+        "16": 411,
+        "17": 256,
+        "18": 658,
+        "19": 324,
+        "20": 776,
+        "21": 24,
+        "24": 544,
+        "25": 28,
+        "27": 145,
+        "28": 336,
+        "30": 594,
+        "32": 623,
+        "33": 36,
+        "35": 30,
+        "36": 1454,
+        "39": 42,
+        "40": 1300,
+        "42": 168,
+        "44": 36,
+        "45": 583,
+        "48": 998,
+        "49": 54,
+        "50": 196,
+        "51": 54,
+        "52": 42,
+        "54": 1015,
+        "55": 42,
+        "56": 282,
+        "57": 60,
+        "60": 1800,
+        "63": 51,
+        "64": 813,
+        "65": 48,
+        "66": 48,
+        "68": 54,
+        "70": 210,
+        "72": 1552,
+        "75": 391,
+        "76": 60,
+        "77": 48,
+        "78": 54,
+        "80": 1826
+      },
+      "seconds": 0.8151658679998945
+    },
+    {
+      "n": 3,
+      "N": 20,
+      "HNF_groups_enumerated": 2723067,
+      "killed_low_projection": 181771,
+      "groups_retained": 159400,
+      "killed_high_projection": 2381896,
+      "retained_by_order": {
+        "20": 776,
+        "21": 468,
+        "22": 700,
+        "23": 484,
+        "24": 1199,
+        "25": 716,
+        "26": 1008,
+        "27": 804,
+        "28": 1572,
+        "29": 784,
+        "30": 1924,
+        "31": 900,
+        "32": 2139,
+        "33": 1300,
+        "34": 1792,
+        "35": 1626,
+        "36": 3185,
+        "37": 1296,
+        "38": 2268,
+        "39": 1872,
+        "40": 4064,
+        "42": 852,
+        "44": 832,
+        "45": 370,
+        "48": 2687,
+        "49": 54,
+        "50": 580,
+        "52": 1164,
+        "54": 1573,
+        "55": 42,
+        "56": 2400,
+        "60": 4732,
+        "63": 684,
+        "64": 3087,
+        "65": 48,
+        "66": 2004,
+        "68": 1996,
+        "70": 1830,
+        "72": 7433,
+        "75": 796,
+        "76": 2496,
+        "77": 48,
+        "78": 2760,
+        "80": 6788,
+        "81": 1102,
+        "84": 2466,
+        "85": 60,
+        "88": 466,
+        "90": 3376,
+        "91": 54,
+        "92": 72,
+        "95": 66,
+        "96": 4769,
+        "98": 378,
+        "99": 1624,
+        "100": 1766,
+        "102": 204,
+        "104": 570,
+        "105": 2310,
+        "108": 6293,
+        "110": 294,
+        "112": 2934,
+        "114": 228,
+        "115": 78,
+        "116": 90,
+        "117": 2250,
+        "119": 66,
+        "120": 10534,
+        "121": 130,
+        "124": 96,
+        "125": 913,
+        "126": 1140,
+        "128": 3741,
+        "130": 336,
+        "132": 1476,
+        "133": 72,
+        "135": 610,
+        "136": 802,
+        "138": 72,
+        "140": 4284,
+        "143": 66,
+        "144": 10001,
+        "145": 96,
+        "147": 702,
+        "148": 114,
+        "150": 3682,
+        "152": 930,
+        "153": 66,
+        "154": 336,
+        "155": 102,
+        "156": 1800,
+        "160": 9650
+      },
+      "seconds": 5.60800444600045
+    }
+  ],
+  "n3_symbolic_pilot": {
+    "returncode": 0,
+    "stdout": ", 20], \"phase_stratum\": [0, -1, -1], \"count\": 20, \"rank\": 20, \"prime\": 40361, \"root\": 3, \"root_order\": 40360, \"matrix_sha256\": \"d99e12d146821aff51c12a505a6ef78be0e5eb8081ecd063c756341be3653e7a\", \"decision\": \"exact full-rank specialization\"}, {\"hnf\": [1, 1, 20, 0, 2, 5], \"orders\": [10, 4, 20], \"phase_stratum\": [1, -1, -1], \"count\": 20, \"rank\": 20, \"prime\": 40361, \"root\": 3, \"root_order\": 40360, \"matrix_sha256\": \"3daed9b2b131f32a4e9be408ae8022def0b928f1d29dfa8b58b66340a2416186\", \"decision\": \"exact full-rank specialization\"}, {\"hnf\": [1, 1, 20, 0, 2, 5], \"orders\": [10, 4, 20], \"phase_stratum\": [-1, -1, 0], \"count\": 20, \"rank\": 20, \"prime\": 40361, \"root\": 3, \"root_order\": 40360, \"matrix_sha256\": \"9b9a4ef123055ff1bff24ab28d38a89f1726e1d6dd1c0eba0cd7c92cb331fdd4\", \"decision\": \"exact full-rank specialization\"}, {\"hnf\": [1, 1, 20, 0, 2, 5], \"orders\": [10, 4, 20], \"phase_stratum\": [-1, -1, 1], \"count\": 20, \"rank\": 20, \"prime\": 40361, \"root\": 3, \"root_order\": 40360, \"matrix_sha256\": \"f516c7c9822065bf26f86dc2d581c252a05834cbb3724e4c9eb27fd90cd957ad\", \"decision\": \"exact full-rank specialization\"}, {\"hnf\": [1, 1, 20, 0, 2, 5], \"orders\": [10, 4, 20], \"phase_stratum\": [0, -1, 1], \"count\": 20, \"rank\": 20, \"prime\": 40361, \"root\": 3, \"root_order\": 40360, \"matrix_sha256\": \"a6a2c799b7bda41f1d95c8644e99ce240f417f2038f7e970ba47d5ceaa4399c8\", \"decision\": \"exact full-rank specialization\"}, {\"hnf\": [1, 1, 20, 0, 2, 5], \"orders\": [10, 4, 20], \"phase_stratum\": [1, -1, 0], \"count\": 20, \"rank\": 20, \"prime\": 40361, \"root\": 3, \"root_order\": 40360, \"matrix_sha256\": \"9d9b7d1efa5efc4f0eef27897f267e2af4a844085f1b4561c9cf29b835202af7\", \"decision\": \"exact full-rank specialization\"}, {\"hnf\": [1, 1, 20, 0, 2, 5], \"orders\": [10, 4, 20], \"phase_stratum\": [1, -1, 1], \"count\": 20, \"rank\": 20, \"prime\": 40361, \"root\": 3, \"root_order\": 40360, \"matrix_sha256\": \"058d8163ba3089bb44476f4e82a412c4e4d48294de64fa796d4c46cf70ac2331\", \"decision\": \"exact full-rank specialization\"}], \"pilot_seconds\": 120.00002930000028}}\n",
+    "stderr": "",
+    "wall_timeout": false,
+    "seconds": 120.63391638800022,
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/padua_research/topics/padua-3d-20261106/code/t7_r06_census_reduced.py",
+      "pilot",
+      "--n",
+      "3",
+      "--seconds",
+      "120",
+      "--output-dir",
+      "/tmp/padua-t7-r06-7afa6a54",
+      "--receipt",
+      "/tmp/padua-t7-r06-7afa6a54/n3-symbolic-pilot.json"
+    ],
+    "completed_receipt": {
+      "n": 3,
+      "N": 20,
+      "counts": {
+        "groups_seen": 3373,
+        "groups_killed_projection": 913,
+        "quotient_strata_seen": 726864,
+        "target_count_strata": 140138,
+        "strata_killed_fixed_trace": 77020,
+        "strata_wrong_count": 524479,
+        "strata_symbolic_deficient": 124,
+        "strata_unresolved": 36100,
+        "strata_killed_short_relation": 13416,
+        "strata_killed_projection": 62247,
+        "strata_full_rank_witness": 13478,
+        "groups_covered_prime_block": 484
+      },
+      "cursor": {
+        "order": 24,
+        "hnf_index": 62,
+        "hnf": [
+          1,
+          1,
+          24,
+          0,
+          2,
+          14
+        ],
+        "mask": 7,
+        "phase": [
+          8,
+          7,
+          0
+        ]
+      },
+      "complete": false,
+      "full_census": false,
+      "first_survivors": [
+        {
+          "hnf": [
+            1,
+            1,
+            20,
+            0,
+            2,
+            5
+          ],
+          "orders": [
+            10,
+            4,
+            20
+          ],
+          "phase_stratum": [
+            -1,
+            -1,
+            -1
+          ],
+          "count": 20,
+          "rank": 20,
+          "prime": 40361,
+          "root": 3,
+          "root_order": 40360,
+          "matrix_sha256": "f6659f4317b91c09acf7964e0b6e1bf7ce917a6bf22b67bb4e0aca867046281d",
+          "decision": "exact full-rank specialization"
+        },
+        {
+          "hnf": [
+            1,
+            1,
+            20,
+            0,
+            2,
+            5
+          ],
+          "orders": [
+            10,
+            4,
+            20
+          ],
+          "phase_stratum": [
+            0,
+            -1,
+            -1
+          ],
+          "count": 20,
+          "rank": 20,
+          "prime": 40361,
+          "root": 3,
+          "root_order": 40360,
+          "matrix_sha256": "d99e12d146821aff51c12a505a6ef78be0e5eb8081ecd063c756341be3653e7a",
+          "decision": "exact full-rank specialization"
+        },
+        {
+          "hnf": [
+            1,
+            1,
+            20,
+            0,
+            2,
+            5
+          ],
+          "orders": [
+            10,
+            4,
+            20
+          ],
+          "phase_stratum": [
+            1,
+            -1,
+            -1
+          ],
+          "count": 20,
+          "rank": 20,
+          "prime": 40361,
+          "root": 3,
+          "root_order": 40360,
+          "matrix_sha256": "3daed9b2b131f32a4e9be408ae8022def0b928f1d29dfa8b58b66340a2416186",
+          "decision": "exact full-rank specialization"
+        },
+        {
+          "hnf": [
+            1,
+            1,
+            20,
+            0,
+            2,
+            5
+          ],
+          "orders": [
+            10,
+            4,
+            20
+          ],
+          "phase_stratum": [
+            -1,
+            -1,
+            0
+          ],
+          "count": 20,
+          "rank": 20,
+          "prime": 40361,
+          "root": 3,
+          "root_order": 40360,
+          "matrix_sha256": "9b9a4ef123055ff1bff24ab28d38a89f1726e1d6dd1c0eba0cd7c92cb331fdd4",
+          "decision": "exact full-rank specialization"
+        },
+        {
+          "hnf": [
+            1,
+            1,
+            20,
+            0,
+            2,
+            5
+          ],
+          "orders": [
+            10,
+            4,
+            20
+          ],
+          "phase_stratum": [
+            -1,
+            -1,
+            1
+          ],
+          "count": 20,
+          "rank": 20,
+          "prime": 40361,
+          "root": 3,
+          "root_order": 40360,
+          "matrix_sha256": "f516c7c9822065bf26f86dc2d581c252a05834cbb3724e4c9eb27fd90cd957ad",
+          "decision": "exact full-rank specialization"
+        },
+        {
+          "hnf": [
+            1,
+            1,
+            20,
+            0,
+            2,
+            5
+          ],
+          "orders": [
+            10,
+            4,
+            20
+          ],
+          "phase_stratum": [
+            0,
+            -1,
+            1
+          ],
+          "count": 20,
+          "rank": 20,
+          "prime": 40361,
+          "root": 3,
+          "root_order": 40360,
+          "matrix_sha256": "a6a2c799b7bda41f1d95c8644e99ce240f417f2038f7e970ba47d5ceaa4399c8",
+          "decision": "exact full-rank specialization"
+        },
+        {
+          "hnf": [
+            1,
+            1,
+            20,
+            0,
+            2,
+            5
+          ],
+          "orders": [
+            10,
+            4,
+            20
+          ],
+          "phase_stratum": [
+            1,
+            -1,
+            0
+          ],
+          "count": 20,
+          "rank": 20,
+          "prime": 40361,
+          "root": 3,
+          "root_order": 40360,
+          "matrix_sha256": "9d9b7d1efa5efc4f0eef27897f267e2af4a844085f1b4561c9cf29b835202af7",
+          "decision": "exact full-rank specialization"
+        },
+        {
+          "hnf": [
+            1,
+            1,
+            20,
+            0,
+            2,
+            5
+          ],
+          "orders": [
+            10,
+            4,
+            20
+          ],
+          "phase_stratum": [
+            1,
+            -1,
+            1
+          ],
+          "count": 20,
+          "rank": 20,
+          "prime": 40361,
+          "root": 3,
+          "root_order": 40360,
+          "matrix_sha256": "058d8163ba3089bb44476f4e82a412c4e4d48294de64fa796d4c46cf70ac2331",
+          "decision": "exact full-rank specialization"
+        }
+      ],
+      "pilot_seconds": 120.00002930000028
+    },
+    "receipt_sha256": "f21d4c8e143788c5aa1ea9d44e92026814cf2aa88958aa8abcdfb0eab5aa9652",
+    "flushed_target_decisions": {
+      "exact fixed-trace obstruction": 77020,
+      "symbolic deficiency": 124,
+      "UNRESOLVED deficient sample": 36082,
+      "exact compatible short relation": 13416,
+      "exact full-rank specialization": 13478,
+      "symbolic full; sample failed": 18
+    },
+    "last_flushed_input": {
+      "hnf": [
+        3,
+        1,
+        7,
+        0,
+        6,
+        6
+      ],
+      "orders": [
+        21,
+        7,
+        7
+      ],
+      "phase_stratum": [
+        6,
+        6,
+        0
+      ],
+      "count": 20,
+      "decision": "exact compatible short relation",
+      "certificate": [
+        -3,
+        1,
+        0
+      ]
+    },
+    "raw": {
+      "path": "/tmp/padua-t7-r06-7afa6a54/census-reduced-pilot-n3-from20.jsonl",
+      "bytes": 33949181,
+      "sha256": "cde52709cf158a27d3d882e13c408b2a8af7d990a39c6cff82d5afdcde6f9fa0"
+    }
+  },
+  "full_n3_census": false,
+  "seconds": 127.54581672099994
+}

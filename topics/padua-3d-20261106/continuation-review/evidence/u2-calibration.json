@@ -1,0 +1,52 @@
+{
+  "scope": "all3 training/cost schedule reconstructions; selected3 rawnode training norm, guard and numerical validation; heuristic only, no assessment data used",
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/continuation-review/code/check_u2_calibration.py",
+    "bytes": 2630,
+    "sha256": "ded0d62fb4214f198420a317ce4802ea49f547747ceaae1e48cb86f4456a5690"
+  },
+  "basis_helper": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/continuation-review/code/check_u2.py",
+    "bytes": 7695,
+    "sha256": "259339a81abd88dd75e5c712f3708b14cf022e1e71fe2638046e2fcb1a4e0eae"
+  },
+  "input": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/evidence/u2c-calibration.json",
+    "bytes": 3091,
+    "sha256": "92b190e7ef6ee31e88071d0c677ea7715191f7880bd2977d7492ab3800a6fae4"
+  },
+  "rows": [
+    {
+      "cap": 40,
+      "training_max": 46.553342094427656,
+      "ratio": 0.749357785979745,
+      "forecast": 89.16533990733474,
+      "selected_rho": 0.32741972031857913,
+      "condition2": 26.262056157034127,
+      "residual_inf": 8.529452761896509e-13,
+      "eligible": true
+    },
+    {
+      "cap": 60,
+      "training_max": 44.034558894089784,
+      "ratio": 0.7088135475330258,
+      "forecast": 130.02507926603704,
+      "selected_rho": 0.288804837226257,
+      "condition2": 23.635764977439326,
+      "residual_inf": 8.208488070676919e-13,
+      "eligible": false
+    },
+    {
+      "cap": 80,
+      "training_max": 42.25597706921481,
+      "ratio": 0.6801841499750864,
+      "forecast": 171.14858750994625,
+      "selected_rho": 0.26123057217277146,
+      "condition2": 22.01614940850571,
+      "residual_inf": 8.441950895724339e-13,
+      "eligible": false
+    }
+  ],
+  "chosen_cap": 40,
+  "cpu_seconds": 1.1940022090000002
+}

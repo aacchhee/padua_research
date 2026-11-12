@@ -1,0 +1,333 @@
+{
+  "verdict": "PASS",
+  "scope": "Independent finite P3 audit; no timing replication, universal Pareto statement, certified norm or formal Claude approval.",
+  "rules_read_sha": "c7afc444fabab45081b087bdde583d5631a8d1a1",
+  "command": [
+    "topics/padua-3d-20261106/pruning-review/check_frontier.py",
+    "--receipt",
+    "topics/padua-3d-20261106/evidence/pdpr-frontier12.json",
+    "--scratch",
+    "/tmp/padua-pruning-review-p3-20261107a",
+    "--output",
+    "topics/padua-3d-20261106/pruning-review/frontier12.json"
+  ],
+  "started_utc": "2026-11-07T09:44:26.678435+00:00",
+  "ended_utc": "2026-11-07T09:44:38.171766+00:00",
+  "actual_cpu": 11.487690695,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "receipt": {
+    "path": "topics/padua-3d-20261106/evidence/pdpr-frontier12.json",
+    "bytes": 9223,
+    "sha256": "8eae53503c89eeb059d023f1e9effd679392fbeecd7897683475408de94b607a"
+  },
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/pruning-review/check_frontier.py",
+    "bytes": 18278,
+    "sha256": "cb69bcd6ecf5fdf82fb90e6c2c760867c90c7b9455d22ce412215c3d0921f5ed"
+  },
+  "helper": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/pruning-review/check_pilot.py",
+    "bytes": 19083,
+    "sha256": "568eaac055cbe0cdcf153c03b8e41b8d6cd9d4efa24b67bcf0e43ee464aca343"
+  },
+  "source_pins": [
+    {
+      "path": "/tmp/pdpr-frontier12-20261107a/source-c3_lebesgue.py",
+      "bytes": 6286,
+      "sha256": "bf9cdb7c057f6ddf1793d99e6d338b1c1cfa37a274e5a6ac9689085f6bb3d66e"
+    },
+    {
+      "path": "/tmp/pdpr-frontier12-20261107a/source-c3_rank.py",
+      "bytes": 7430,
+      "sha256": "a95afbb764838662358dc70d2fd5a7eddf335d3ae48254d29b717fa015143332"
+    },
+    {
+      "path": "/tmp/pdpr-frontier12-20261107a/source-pdpr_collect.py",
+      "bytes": 5481,
+      "sha256": "3117045003ab41b37b34f737edd4983ebc91f890d5076661a2955531bef32baf"
+    },
+    {
+      "path": "/tmp/pdpr-frontier12-20261107a/source-pdpr_core.py",
+      "bytes": 20203,
+      "sha256": "6e112ccccda06a942114b0ebf9728c224a76900818efa932781ed923abfe6c5c"
+    },
+    {
+      "path": "/tmp/pdpr-frontier12-20261107a/source-pdpr_run.py",
+      "bytes": 50932,
+      "sha256": "a94d55e44821e838d43e04f7c73f8ec869b6f7852b06d36a0e03d1118d0371e8"
+    },
+    {
+      "path": "/tmp/pdpr-frontier12-20261107a/source-t4_stacks.py",
+      "bytes": 9491,
+      "sha256": "0cd23793f436cd25328114e21dfda2c8c590cebbe7b88b985f7e478fc8c068b7"
+    },
+    {
+      "path": "/tmp/pdpr-frontier12-20261107a/source-t9_maxima.py",
+      "bytes": 5625,
+      "sha256": "b98fc5bae7502555a1ed903785d452140ac719f2ac8a478bfc8022c7b2d69a3e"
+    },
+    {
+      "path": "/tmp/pdpr-frontier12-20261107a/source-t9_r06_maxima.py",
+      "bytes": 5818,
+      "sha256": "7831165e8fc4ed94901b5bb83a09ad18ebf6b1fec831dbb07c76098e6e468415"
+    },
+    {
+      "path": "/tmp/pdpr-frontier12-20261107a/source-u1_usable.py",
+      "bytes": 17849,
+      "sha256": "2b8a087126189a9a161acd449260b9ec456d28813337c820a90f5fc3cc991938"
+    },
+    {
+      "path": "/tmp/pdpr-frontier12-20261107a/source-u1c_budget.py",
+      "bytes": 11461,
+      "sha256": "0adb0aefaac5fc2574c94884917362da68f7e2a0ced6379deb0065ce7ec228ea"
+    }
+  ],
+  "raw_inventory": {
+    "path": "/tmp/pdpr-frontier12-20261107a/inventory.json",
+    "bytes": 11757,
+    "sha256": "1f6e0e8cebb9e3c6bab3508ac4c5f1aa270b75d811b05da536b3967f3029e9d7"
+  },
+  "inventory_files_checked": 75,
+  "inputs": [
+    {
+      "path": "/workspace/padua_research/topics/padua-3d-20261106/evidence/pdpr-pilot.json",
+      "bytes": 16349,
+      "sha256": "1c845a1eb6c8bdf1c4cc17f159ce34fd453bd5f2f2d4c9e3f60abafda116f92e"
+    },
+    {
+      "path": "/tmp/pdpr-pilot-20261107a/details.json",
+      "bytes": 569163,
+      "sha256": "815a851b45cab04185a97628e321b3a2aded011d892bbecb40c65be4b34b1a0a"
+    },
+    {
+      "path": "/tmp/pdpr-pilot-20261107a/inventory.json",
+      "bytes": 19080,
+      "sha256": "54cb91bc1e428b536f2471db3382f89e20f205c51dc7d58d55e1cf10ed72f4f0"
+    },
+    {
+      "path": "/tmp/pdpr-pilot-20261107a/n8-A-path.npz",
+      "bytes": 109822,
+      "sha256": "71ff94482892d4d547254ac7861f6768d5ebe34f95a6ac705e532f551be0c6ea"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-3d-20261106/evidence/u2-degree12-nodes.json",
+      "bytes": 14853,
+      "sha256": "ade51c2e459b2d3161eddab564e1ada2233d2f841b5dd64bf808b2e607f7140f"
+    }
+  ],
+  "decoded_logical_object_exact": true,
+  "paths": [
+    {
+      "n": 8,
+      "primary_M": 198,
+      "checkpoint_counts_checked": [
+        225,
+        215,
+        198,
+        182,
+        174,
+        165
+      ],
+      "score_counts_checked": [
+        225,
+        224,
+        223,
+        222,
+        221,
+        220,
+        219,
+        218,
+        217,
+        216,
+        215,
+        214,
+        213,
+        212,
+        211,
+        210,
+        209,
+        208,
+        207,
+        206,
+        205,
+        204,
+        203,
+        202,
+        201,
+        200,
+        199,
+        198,
+        197,
+        196,
+        195,
+        194,
+        193,
+        192,
+        191,
+        190,
+        189,
+        188,
+        187,
+        186,
+        185,
+        184,
+        183,
+        182,
+        181,
+        180,
+        179,
+        178,
+        177,
+        176,
+        175,
+        174,
+        173,
+        172,
+        171,
+        170,
+        169,
+        168,
+        167,
+        166,
+        165
+      ],
+      "prefix_cpu_recorded": 0.06883296499999991,
+      "whole_path_support_transitions": 60,
+      "actual_frozen_rerun_and_original_P1_all_ids_equal": true
+    },
+    {
+      "n": 12,
+      "primary_M": 546,
+      "checkpoint_counts_checked": [
+        637,
+        592,
+        546,
+        501,
+        478,
+        455
+      ],
+      "score_counts_checked": [
+        637,
+        636,
+        622,
+        621,
+        606,
+        605,
+        574,
+        573,
+        547,
+        546,
+        545,
+        502,
+        501,
+        500,
+        456,
+        455
+      ],
+      "prefix_cpu_recorded": 1.1957629680000004,
+      "whole_path_support_transitions": 182
+    }
+  ],
+  "map_count": 23,
+  "original_search_values_checked": 1288,
+  "fresh_searches": 252,
+  "fresh_seeds": [
+    "2026112120+n angular",
+    "2026112130+n uniform",
+    "2026112140+n refinement"
+  ],
+  "maximum_errors": {
+    "checkpoint_map": 3.721889517135476e-15,
+    "score_excess": 8.673617379884035e-18,
+    "trace": 1.0665490180483496e-15,
+    "integer_risk": 1.191370296266485e-15,
+    "map": 4.4653715746748575e-15,
+    "norm": 1.3606147336347482e-15,
+    "variance": 3.159876820855707e-15,
+    "targets_scaled": 1.0436096431476471e-14,
+    "mse_scaled": 3.247402347028583e-15,
+    "search_values": 1.3367085216486236e-13,
+    "fresh_gradient": 2.1043802256315303e-09
+  },
+  "gate_reconstruction": [
+    {
+      "n": 8,
+      "M": 198,
+      "risk_ratio": 0.8785826719620989,
+      "original_norm_ratio": 0.806102928389977,
+      "fresh_augmented_norm_ratio": 0.806102928389977,
+      "candidate": {
+        "risk": 0.905551867971524,
+        "original_norm": 20.391915687198363,
+        "augmented_norm": 20.391915687198363
+      },
+      "minimum_controls": {
+        "globalQR": {
+          "risk": 2.044336728483072,
+          "original_norm": 45.56464839539872,
+          "augmented_norm": 45.564648395398734
+        },
+        "localdet": {
+          "risk": 1.1674251303675847,
+          "original_norm": 24.12415080606522,
+          "augmented_norm": 24.12415080606522
+        }
+      },
+      "augmented_minimum_dominance": {
+        "globalQR": false,
+        "localdet": false
+      },
+      "registered_gate_passes": true
+    },
+    {
+      "n": 12,
+      "M": 546,
+      "risk_ratio": 0.8012380304218587,
+      "original_norm_ratio": 0.8566068191379197,
+      "fresh_augmented_norm_ratio": 0.8566068191379197,
+      "candidate": {
+        "risk": 0.9310997885702001,
+        "original_norm": 35.46076772374661,
+        "augmented_norm": 35.46076772374661
+      },
+      "minimum_controls": {
+        "globalQR": {
+          "risk": 3.1935084980049426,
+          "original_norm": 117.73802953152189,
+          "augmented_norm": 117.73802953152189
+        },
+        "localdet": {
+          "risk": 1.503941747813374,
+          "original_norm": 55.67788364922667,
+          "augmented_norm": 55.677883649226686
+        },
+        "storedU2": {
+          "risk": 1.1727063571266698,
+          "original_norm": 26.00732319564544,
+          "augmented_norm": 26.00732319564544
+        }
+      },
+      "augmented_minimum_dominance": {
+        "globalQR": false,
+        "localdet": false,
+        "storedU2": false
+      },
+      "registered_gate_passes": true
+    }
+  ],
+  "fresh_metrics": {
+    "path": "/tmp/padua-pruning-review-p3-20261107a/fresh-metrics.json",
+    "bytes": 49018,
+    "sha256": "a829a01fa77668b96d325abeb71cd06e2bff3a728b35adaae554a6e78342cf00"
+  },
+  "limits": "Source/clock-placement and durable prefix contents checked; hardware timings not independently replicated. n12 score stages sampled as listed; no claim of all n12 deletion scores rerun. Full original search values are checked, with additional independently implemented searches on consequential maps. Own raw artifacts regeneration-only."
+}

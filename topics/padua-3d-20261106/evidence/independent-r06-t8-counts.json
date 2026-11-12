@@ -1,0 +1,65 @@
+{
+  "rules_input": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "command": [
+    "topics/padua-3d-20261106/code/independent_r06.py",
+    "--t8-counts",
+    "topics/padua-3d-20261106/evidence/t8-r06-near-orders.json",
+    "--output",
+    "topics/padua-3d-20261106/evidence/independent-r06-t8-counts.json"
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "sympy": "1.14.0",
+  "code_sha256": "ed352441b145a900f375eb6bf03543e186976c31824ec9baf2b882fb5d64d296",
+  "controls": {},
+  "t8_counts": [
+    {
+      "M": 21,
+      "N": 20,
+      "strata": 1140,
+      "permitted": 258
+    },
+    {
+      "M": 36,
+      "N": 35,
+      "strata": 3570,
+      "permitted": 534
+    },
+    {
+      "M": 57,
+      "N": 56,
+      "strata": 9240,
+      "permitted": 2286
+    },
+    {
+      "M": 85,
+      "N": 84,
+      "strata": 20916,
+      "permitted": 0
+    },
+    {
+      "M": 22,
+      "N": 20,
+      "strata": 1260,
+      "permitted": 0
+    },
+    {
+      "M": 23,
+      "N": 20,
+      "strata": 1386,
+      "permitted": 0
+    },
+    {
+      "M": 24,
+      "N": 20,
+      "strata": 1518,
+      "permitted": 45
+    },
+    {
+      "M": 39,
+      "N": 35,
+      "strata": 4218,
+      "permitted": 0
+    }
+  ]
+}

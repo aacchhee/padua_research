@@ -1,0 +1,64 @@
+{
+  "schema": "padua-usable-manifest-check-v1",
+  "rules_input": "38227202bc6908d5a5a874950145761a8ca4312f",
+  "command_argv": [
+    "/tmp/padua-usable-protocol-snapshot-rj1piols/topics/padua-3d-20261106/code/usable_manifest_check.py",
+    "--out",
+    "/tmp/padua-usable-protocol-snapshot-rj1piols/topics/padua-3d-20261106/evidence/usable-manifest-check.json"
+  ],
+  "source_sha256": "03c6dd32c4999535da89769a57eedd2b66a9253df68c1775c707ec6131e87d56",
+  "generator_sha256": "a66612471210e2a3510fce92824722e5c708b8ab434fbfa4245d4d3c4542d236",
+  "guard_helper_sha256": "67e51a5d11744b795c87b81f6a179ca0b320e323c99eae21a77ab729078624b3",
+  "python": "3.12.14",
+  "lossless_decode_and_every_identity_pass": true,
+  "decoded_artifacts": 206,
+  "mutation_cases": [
+    {
+      "mutation": "append byte",
+      "path": "code/t10_lattices.py",
+      "rejected": true
+    },
+    {
+      "mutation": "append byte",
+      "path": "evidence/t10-census.json",
+      "rejected": true
+    },
+    {
+      "mutation": "append byte",
+      "path": "../../tracks/lattice-unisolvence/code/c3_rank.py",
+      "rejected": true
+    },
+    {
+      "mutation": "add file",
+      "path": "code/extra.txt",
+      "rejected": true
+    },
+    {
+      "mutation": "add file",
+      "path": "code/sub/extra.cpp",
+      "rejected": true
+    },
+    {
+      "mutation": "add file",
+      "path": "code/sub/extra.py",
+      "rejected": true
+    },
+    {
+      "mutation": "add file",
+      "path": "evidence/sub/extra.json",
+      "rejected": true
+    },
+    {
+      "mutation": "add file",
+      "path": "evidence/extra.bin",
+      "rejected": true
+    }
+  ],
+  "baseline_and_restored_pass": true,
+  "helper_receipt": {
+    "path": "/tmp/padua-usable-manifest-tll_sv86/guard-template.json",
+    "bytes": 1511,
+    "sha256": "e827bbc2d7a200863fd4c9aa3319aa93d141084445703c59c53ded6a7c409b22"
+  },
+  "limits": "Code/data identities only. Prose is unpinned; bytecode caches intentionally excluded. The old helper receipt command is its historical template, not this execution command."
+}

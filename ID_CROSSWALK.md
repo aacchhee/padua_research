@@ -1754,3 +1754,355 @@ The nonnumeric provisional `PD-T?mz-sharp-codex-S3-kernel` and shorthand `S3-ker
 | PD-T381 | PD-T534/535/536, with PD-T539/540/541/542 | Existence on both parities, agreement/full-integer limits and exact inf/sup spectrum(B) characterization PROVED; decimal-values conjunct OPEN; overall PARTIAL. P1 enclosure gives no useful digits. PD-T379 remains supporting packet bounds. |
 
 The original wording and dated decomposition are preserved in each target theory record; [canonical decision](topics/padua-mz-sharp-constants-20261106/LOG.md). No PD-N is created. Unused reserved headroom PD-T549–553, IDEA-612–615 and LIT-634–635 stays permanently unused (permanent gaps of this topic’s reservation; never reallocated).
+
+## 3-D Padua reservation authority
+
+[Topic ledger](topics/padua-3d-20261106/ALLOCATIONS.md): owner codex/padua-3d-20261106, PR33; reserved PD-T554–673, PD-N186–245, IDEA-616–755, LIT-636–715. The ledger preserves the checked heads, foreign/retired ranges and permanent unused headroom. This reservation note makes no scientific assignment.
+
+## Audited three-dimensional Padua results and retained candidates
+
+[Exact final map](topics/padua-3d-20261106/pr-preparation/final-id-map.json), [reservation ledger](topics/padua-3d-20261106/ALLOCATIONS.md). Canonical theory/source records retain their audited provisional titles and aliases; the assignments below provide their permanent registry identities without rewriting frozen scientific evidence or historical audit prose. Historical kind corrections are provisional reclassifications, not renumbering of accepted final IDs. Parent/child split mappings follow the linked canonical records.
+
+| Provisional ID / retained source alias | Final ID | Canonical record | Mapping scope |
+|---|---|---|---|
+| PD-T?padua-3d-20261106-codex-D1-01 | PD-T554 | [finite-frame.md](topics/padua-3d-20261106/final-d1/finite-frame.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D1-02 | PD-T555 | [stationary-limit.md](topics/padua-3d-20261106/final-d1/stationary-limit.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D1-03 | PD-T556 | [complete-law.md](topics/padua-3d-20261106/final-d1/complete-law.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D1-04 | PD-T557 | [spectral-obstruction.md](topics/padua-3d-20261106/final-d1/spectral-obstruction.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D1-05 | PD-T558 | [weight-corollary.md](topics/padua-3d-20261106/final-d1/weight-corollary.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D1-06 | PD-T559 | [general-weight-open.md](topics/padua-3d-20261106/final-d1/general-weight-open.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D2-measured-01 | PD-T560 | [measurements.md](topics/padua-3d-20261106/final-d2/measurements.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D2-real-01 | PD-T561 | [real-calibration-theory.md](topics/padua-3d-20261106/final-d2/real-calibration-theory.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D3 | PD-T562 | [theory.md](topics/padua-3d-20261106/final-d3/theory.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D3-measured | PD-T563 | [measurements.md](topics/padua-3d-20261106/final-d3/measurements.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D4-gram | PD-T564 | [gram-diagnostics.md](topics/padua-3d-20261106/final-d4/gram-diagnostics.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D4-intervals | PD-T565 | [lebesgue-intervals.md](topics/padua-3d-20261106/final-d4/lebesgue-intervals.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D4-lee | PD-T566 | [double-lee-bound.md](topics/padua-3d-20261106/final-d4/double-lee-bound.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D4-minima | PD-T567 | [finite-minima.md](topics/padua-3d-20261106/final-d4/finite-minima.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-D4-reduction | PD-T568 | [certificate-reduction.md](topics/padua-3d-20261106/final-d4/certificate-reduction.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-R08-complement | PD-T569 | [r08-lattice-complement.md](topics/padua-3d-20261106/theory/r08-lattice-complement.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-R08-minima | PD-T570 | [r08-lattice-minima.md](topics/padua-3d-20261106/theory/r08-lattice-minima.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-R08-n7 | PD-T571 | [r08-lattice-higher.md](topics/padua-3d-20261106/theory/r08-lattice-higher.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-R08-reduction | PD-T572 | [r08-lattice-reduction.md](topics/padua-3d-20261106/theory/r08-lattice-reduction.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T1-01 | PD-T573 | [t1-reflection-classification.md](topics/padua-3d-20261106/theory/t1-reflection-classification.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T1-02 | PD-T574 | [t1-open-class.md](topics/padua-3d-20261106/theory/t1-open-class.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T10-01 | PD-T575 | [t10-census.md](topics/padua-3d-20261106/theory/t10-census.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T10-02 | PD-T576 | [t10-quality.md](topics/padua-3d-20261106/theory/t10-quality.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T10-04 | PD-T577 | [t10-parity-log4.md](topics/padua-3d-20261106/theory/t10-parity-log4.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T10-05 | PD-T578 | [t10-fold-target.md](topics/padua-3d-20261106/theory/t10-fold-target.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T10-06 | PD-T579 | [t10-log3-target.md](topics/padua-3d-20261106/theory/t10-log3-target.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T10-07 | PD-T580 | [t10-log3-corollary.md](topics/padua-3d-20261106/theory/t10-log3-corollary.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T10-08 | PD-T581 | [t10-neighborhood-search.md](topics/padua-3d-20261106/theory/t10-neighborhood-search.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T10-09 | PD-T582 | [t10-extraction-complete.md](topics/padua-3d-20261106/theory/t10-extraction-complete.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T2-02 | PD-T583 | [t2-finite-survivors.md](topics/padua-3d-20261106/theory/t2-finite-survivors.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T3-01 | PD-T584 | [t3-cyclic-rank.md](topics/padua-3d-20261106/theory/t3-cyclic-rank.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T3-02 | PD-T585 | [t3-short-relations.md](topics/padua-3d-20261106/theory/t3-short-relations.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T4-01 | PD-T586 | [t4-stack-unisolvence.md](topics/padua-3d-20261106/theory/t4-stack-unisolvence.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T4-02 | PD-T587 | [t4-stack-determinant.md](topics/padua-3d-20261106/theory/t4-stack-determinant.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T4-03 | PD-T588 | [t4-stack-upper.md](topics/padua-3d-20261106/theory/t4-stack-upper.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T4-04 | PD-T589 | [t4-quality-target.md](topics/padua-3d-20261106/theory/t4-quality-target.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T5-02 | PD-T590 | [t5-chebyshev-section-rank.md](topics/padua-3d-20261106/theory/t5-chebyshev-section-rank.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T5-04 | PD-T591 | [t5-validation-and-measurements.md](topics/padua-3d-20261106/theory/t5-validation-and-measurements.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T6-01 | PD-T592 | [t6-universal-lower-bound.md](topics/padua-3d-20261106/theory/t6-universal-lower-bound.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T6-02 | PD-T593 | [t6-fourier-lower-bound.md](topics/padua-3d-20261106/theory/t6-fourier-lower-bound.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T7-01 | PD-T594 | [t7-general-character.md](topics/padua-3d-20261106/theory/t7-general-character.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T7-02 | PD-T595 | [t7-short-relation.md](topics/padua-3d-20261106/theory/t7-short-relation.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T7-03 | PD-T596 | [t7-finite-reduction.md](topics/padua-3d-20261106/theory/t7-finite-reduction.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T7-05 | PD-T597 | [t7-ten-point.md](topics/padua-3d-20261106/theory/t7-ten-point.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T7-06 | PD-T598 | [t7-rank-two-survivor.md](topics/padua-3d-20261106/theory/t7-rank-two-survivor.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T7-R06-C-reductions | PD-T599 | [t7-r06-census-reductions.md](topics/padua-3d-20261106/theory/t7-r06-census-reductions.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T7-R06-n2 | PD-T600 | [t7-r06-n2-census.md](topics/padua-3d-20261106/theory/t7-r06-n2-census.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T7-R06-quality | PD-T601 | [t7-r06-quality.md](topics/padua-3d-20261106/theory/t7-r06-quality.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T8-01 | PD-T602 | [t8-cyclic-reduction.md](topics/padua-3d-20261106/theory/t8-cyclic-reduction.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T8-02 | PD-T603 | [t8-finite-screens.md](topics/padua-3d-20261106/theory/t8-finite-screens.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T8-03 | PD-T604 | [t8-even-parity.md](topics/padua-3d-20261106/theory/t8-even-parity.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T8-r06-01 | PD-T605 | [t8-r06-parity-admissibility.md](topics/padua-3d-20261106/theory/t8-r06-parity-admissibility.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T8-r06-02 | PD-T606 | [t8-r06-unit-coordinate-folds.md](topics/padua-3d-20261106/theory/t8-r06-unit-coordinate-folds.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T8-r06-04 | PD-T607 | [t8-r06-certification.md](topics/padua-3d-20261106/theory/t8-r06-certification.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T8-r06-05 | PD-T608 | [t8-r06-measurements.md](topics/padua-3d-20261106/theory/t8-r06-measurements.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T8-r06-06 | PD-T609 | [t8-r06-phase-strata.md](topics/padua-3d-20261106/theory/t8-r06-phase-strata.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T8-r08-01 | PD-T610 | [t8-r08-cubic-classification.md](topics/padua-3d-20261106/theory/t8-r08-cubic-classification.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T8-r08-02 | PD-T611 | [t8-r08-old-finite-existence.md](topics/padua-3d-20261106/theory/t8-r08-old-finite-existence.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T9-01 | PD-T612 | [t9-averaged-projection-lower.md](topics/padua-3d-20261106/theory/t9-averaged-projection-lower.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T9-02 | PD-T613 | [t9-squarewave-lower.md](topics/padua-3d-20261106/theory/t9-squarewave-lower.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T9-03 | PD-T614 | [t9-haar-packing-reduction.md](topics/padua-3d-20261106/theory/t9-haar-packing-reduction.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T9-04 | PD-T615 | [t9-lower-set-transfer.md](topics/padua-3d-20261106/theory/t9-lower-set-transfer.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T9-05 | PD-T616 | [t9-projection-extraction.md](topics/padua-3d-20261106/theory/t9-projection-extraction.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T9-06 | PD-T617 | [t9-measured-maxima.md](topics/padua-3d-20261106/theory/t9-measured-maxima.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T9-r06-01 | PD-T618 | [t9-r06-packing-source.md](topics/padua-3d-20261106/theory/t9-r06-packing-source.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T9-r06-02 | PD-T619 | [t9-r06-phase-weight-boundaries.md](topics/padua-3d-20261106/theory/t9-r06-phase-weight-boundaries.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T9-r06-03 | PD-T620 | [r08-t9-phase-annihilator.md](topics/padua-3d-20261106/theory/r08-t9-phase-annihilator.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T9-r06-04 | PD-T621 | [r08-t9-tetrahedron-formula.md](topics/padua-3d-20261106/theory/r08-t9-tetrahedron-formula.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T9-r06-05 | PD-T622 | [t9-r06-explicit-rleja.md](topics/padua-3d-20261106/theory/t9-r06-explicit-rleja.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-T9-r06-06 | PD-T623 | [t9-r06-finite-complement.md](topics/padua-3d-20261106/theory/t9-r06-finite-complement.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-U2-01 | PD-T624 | [u2-sampled-norm.md](topics/padua-3d-20261106/theory/u2-sampled-norm.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-U2-02 | PD-T625 | [u2-admissible-norm.md](topics/padua-3d-20261106/theory/u2-admissible-norm.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-U2-03 | PD-T626 | [u2-degree12-unisolvence.md](topics/padua-3d-20261106/theory/u2-degree12-unisolvence.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-U2C-02 | PD-T627 | [u2c-shortened-transfer.md](topics/padua-3d-20261106/theory/u2c-shortened-transfer.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-U3-01 | PD-T628 | [u3-cubic-triangular.md](topics/padua-3d-20261106/theory/u3-cubic-triangular.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-U3-02 | PD-T629 | [u3-coherent-integer-reduction.md](topics/padua-3d-20261106/theory/u3-coherent-integer-reduction.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-U3-03 | PD-T630 | [u3-sparse-classification.md](topics/padua-3d-20261106/theory/u3-sparse-classification.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-U3-04 | PD-T631 | [u3-folded-classification.md](topics/padua-3d-20261106/theory/u3-folded-classification.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-U3-05 | PD-T632 | [u3-mixed-witnesses.md](topics/padua-3d-20261106/theory/u3-mixed-witnesses.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-prune-P3 | PD-T633 | [pruning-p3-frontier.md](topics/padua-3d-20261106/theory/pruning-p3-frontier.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-prune-P4 | PD-T634 | [pruning-p4-transfer.md](topics/padua-3d-20261106/theory/pruning-p4-transfer.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-pruning-exact12 | PD-T635 | [pruning-exact12.md](topics/padua-3d-20261106/theory/pruning-exact12.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-pruning-exact16 | PD-T636 | [pruning-exact16.md](topics/padua-3d-20261106/theory/pruning-exact16.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-pruning-target | PD-T637 | [pruning-theory.md](topics/padua-3d-20261106/pruning-theory.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-r08-T9-measurements | PD-T638 | [r08-t9-measured-maxima.md](topics/padua-3d-20261106/theory/r08-t9-measured-maxima.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-u1c-decisions | PD-T639 | [u1-continuation.md](topics/padua-3d-20261106/u1-continuation.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-usable-U1-OLS | PD-T640 | [u1-ordinary-ls-blue.md](topics/padua-3d-20261106/theory/u1-ordinary-ls-blue.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-usable-U1-measurements | PD-T641 | [u1-operational-comparison.md](topics/padua-3d-20261106/theory/u1-operational-comparison.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-usable-U1-noise | PD-T642 | [u1-noise-bound.md](topics/padua-3d-20261106/theory/u1-noise-bound.md) | canonical claim |
+| PD-T?padua-3d-20261106-codex-usable-U1-recipe | PD-T643 | [u1-parity-recipe.md](topics/padua-3d-20261106/theory/u1-parity-recipe.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T1-01 | PD-N186 | [t1-minimal-obstruction.md](topics/padua-3d-20261106/theory/t1-minimal-obstruction.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T10-03 | PD-N187 | [t10-critical-folding.md](topics/padua-3d-20261106/theory/t10-critical-folding.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T2-01 | PD-N188 | [t2-cyclic-screen.md](topics/padua-3d-20261106/theory/t2-cyclic-screen.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T2-02 | PD-N189 | [t2-normalized-screen.md](topics/padua-3d-20261106/theory/t2-normalized-screen.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T3-02 | PD-N190 | [t3-degree3-extension.md](topics/padua-3d-20261106/theory/t3-degree3-extension.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T4-01 | PD-N191 | [t4-monotone-lower.md](topics/padua-3d-20261106/theory/t4-monotone-lower.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T4-02 | PD-N192 | [t4-mesh-observations.md](topics/padua-3d-20261106/theory/t4-mesh-observations.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T5-03 | PD-N193 | [t5-gaussian-grid-obstruction.md](topics/padua-3d-20261106/theory/t5-gaussian-grid-obstruction.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T7-07 | PD-N194 | [t7-survivor-cubature.md](topics/padua-3d-20261106/theory/t7-survivor-cubature.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T7-08 | PD-N195 | [t7-rank-two.md](topics/padua-3d-20261106/theory/t7-rank-two.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T7-09 | PD-N196 | [t7-one-phase-refutation.md](topics/padua-3d-20261106/theory/t7-one-phase-refutation.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T7-R06-torsion | PD-N197 | [t7-r06-torsion-obstruction.md](topics/padua-3d-20261106/theory/t7-r06-torsion-obstruction.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T8-01 | PD-N198 | [t8-phase-obstructions.md](topics/padua-3d-20261106/theory/t8-phase-obstructions.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T8-02 | PD-N199 | [t8-phase-order-obstruction.md](topics/padua-3d-20261106/theory/t8-phase-order-obstruction.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T8-03 | PD-N200 | [t8-even-family.md](topics/padua-3d-20261106/theory/t8-even-family.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T8-r06-03 | PD-N201 | [t8-r06-union-parity.md](topics/padua-3d-20261106/theory/t8-r06-union-parity.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T8-r06-07 | PD-N202 | [t8-r06-near-order-measurements.md](topics/padua-3d-20261106/theory/t8-r06-near-order-measurements.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T8-r08-01 | PD-N203 | [t8-r08-halfshift-obstruction.md](topics/padua-3d-20261106/theory/t8-r08-halfshift-obstruction.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T8-r08-02 | PD-N204 | [t8-r08-halfshift-measurements.md](topics/padua-3d-20261106/theory/t8-r08-halfshift-measurements.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T9-01 | PD-N205 | [t9-packing-conditional.md](topics/padua-3d-20261106/theory/t9-packing-conditional.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T9-r06-01 | PD-N206 | [r08-negative-t9-phase-dual.md](topics/padua-3d-20261106/theory/r08-negative-t9-phase-dual.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T9-r06-02 | PD-N207 | [r08-negative-t9-stack-mean.md](topics/padua-3d-20261106/theory/r08-negative-t9-stack-mean.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T9-r06-03 | PD-N208 | [r08-negative-t9-parity-oversampling.md](topics/padua-3d-20261106/theory/r08-negative-t9-parity-oversampling.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-T9-r06-04 | PD-N209 | [r08-negative-t9-unshifted-minimal-cubature.md](topics/padua-3d-20261106/theory/r08-negative-t9-unshifted-minimal-cubature.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-U2-01 | PD-N210 | [u2-negative-unrestricted-step.md](topics/padua-3d-20261106/theory/u2-negative-unrestricted-step.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-U2C-01 | PD-N211 | [u2c-budgeted-transfer.md](topics/padua-3d-20261106/theory/u2c-budgeted-transfer.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-U3-01 | PD-N212 | [u3-sparse-boundary.md](topics/padua-3d-20261106/theory/u3-sparse-boundary.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-U3-02 | PD-N213 | [u3-folded-boundary.md](topics/padua-3d-20261106/theory/u3-folded-boundary.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-U3-03 | PD-N214 | [u3-quality-failures.md](topics/padua-3d-20261106/theory/u3-quality-failures.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-U3-C1 | PD-N215 | [u3c-nonunique-quality-boundary.md](topics/padua-3d-20261106/theory/u3c-nonunique-quality-boundary.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-prune-P1 | PD-N216 | [pruning-p1-boundary.md](topics/padua-3d-20261106/theory/pruning-p1-boundary.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-prune-P2 | PD-N217 | [pruning-p2-singleton-boundary.md](topics/padua-3d-20261106/theory/pruning-p2-singleton-boundary.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-prune-P5 | PD-N218 | [pruning-p5-pair-boundary.md](topics/padua-3d-20261106/theory/pruning-p5-pair-boundary.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-r08-T10-extract-QR | PD-N219 | [r08-negative-t10-extract-QR.md](topics/padua-3d-20261106/theory/r08-negative-t10-extract-QR.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-r08-T10-extract-boundary | PD-N220 | [r08-negative-t10-extract-boundary.md](topics/padua-3d-20261106/theory/r08-negative-t10-extract-boundary.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-r08-T8-F | PD-N221 | [r08-negative-t8-F.md](topics/padua-3d-20261106/theory/r08-negative-t8-F.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-r08-T8-Phi3-halfgrid | PD-N222 | [r08-negative-t8-phi3-selectors.md](topics/padua-3d-20261106/theory/r08-negative-t8-phi3-selectors.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-r08-T8-U2 | PD-N223 | [r08-negative-t8-U2.md](topics/padua-3d-20261106/theory/r08-negative-t8-U2.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-r08-T8-U3 | PD-N224 | [r08-negative-t8-U3.md](topics/padua-3d-20261106/theory/r08-negative-t8-U3.md) | canonical claim |
+| PD-N?padua-3d-20261106-codex-r08-T8-U4 | PD-N225 | [r08-negative-t8-U4.md](topics/padua-3d-20261106/theory/r08-negative-t8-U4.md) | canonical claim |
+| PD-N?padua-3d-20261106-prune-P1 | PD-N216 | [pruning-p1-boundary.md](topics/padua-3d-20261106/theory/pruning-p1-boundary.md) | historical provisional alias |
+| PD-N?padua-3d-20261106-prune-P2 | PD-N217 | [pruning-p2-singleton-boundary.md](topics/padua-3d-20261106/theory/pruning-p2-singleton-boundary.md) | historical provisional alias |
+| PD-T?padua-3d-20261106-prune-P3 | PD-T633 | [pruning-p3-frontier.md](topics/padua-3d-20261106/theory/pruning-p3-frontier.md) | historical provisional alias |
+| PD-T?padua-3d-20261106-prune-P4 | PD-T634 | [pruning-p4-transfer.md](topics/padua-3d-20261106/theory/pruning-p4-transfer.md) | historical provisional alias |
+| PD-T?padua-3d-20261106-pruning-exact12 | PD-T635 | [pruning-exact12.md](topics/padua-3d-20261106/theory/pruning-exact12.md) | historical provisional alias |
+| PD-T?padua-3d-20261106-pruning-exact16 | PD-T636 | [pruning-exact16.md](topics/padua-3d-20261106/theory/pruning-exact16.md) | historical provisional alias |
+| PD-T?padua-3d-20261106-pruning-target | PD-T637 | [pruning-theory.md](topics/padua-3d-20261106/pruning-theory.md) | historical provisional alias |
+| PD-T?padua-3d-20261106-u1c-decisions | PD-T639 | [u1-continuation.md](topics/padua-3d-20261106/u1-continuation.md) | historical provisional alias |
+| PD-T?padua-3d-20261106-usable-U1-OLS | PD-T640 | [u1-ordinary-ls-blue.md](topics/padua-3d-20261106/theory/u1-ordinary-ls-blue.md) | historical provisional alias |
+| PD-T?padua-3d-20261106-usable-U1-measurements | PD-T641 | [u1-operational-comparison.md](topics/padua-3d-20261106/theory/u1-operational-comparison.md) | historical provisional alias |
+| PD-T?padua-3d-20261106-usable-U1-noise | PD-T642 | [u1-noise-bound.md](topics/padua-3d-20261106/theory/u1-noise-bound.md) | historical provisional alias |
+| PD-T?padua-3d-20261106-usable-U1-recipe | PD-T643 | [u1-parity-recipe.md](topics/padua-3d-20261106/theory/u1-parity-recipe.md) | historical provisional alias |
+| PD-T?padua-3d-20261106-codex-T2-01 | PD-T584 | [t3-cyclic-rank.md](topics/padua-3d-20261106/theory/t3-cyclic-rank.md) | historical provisional alias |
+| PD-N?padua-3d-20261106-codex-T3-01 | PD-T585 | [t3-short-relations.md](topics/padua-3d-20261106/theory/t3-short-relations.md) | historical provisional alias |
+| PD-T?padua-3d-20261106-codex-T7-04 | PD-N195 | [t7-rank-two.md](topics/padua-3d-20261106/theory/t7-rank-two.md) | historical provisional alias |
+| MEAS?padua-3d-20261106-codex-T9-r06-01 | PD-T638 | [r08-t9-measured-maxima.md](topics/padua-3d-20261106/theory/r08-t9-measured-maxima.md) | historical provisional alias |
+| IDEA?padua-3d-20261106-claude-01 | IDEA-616 | [ideas.md](topics/padua-3d-20261106/final-d1/ideas.md) | canonical candidate |
+| IDEA?padua-3d-20261106-claude-02 | IDEA-617 | [candidate.md](topics/padua-3d-20261106/final-d2/candidate.md) | canonical candidate |
+| IDEA?padua-3d-20261106-claude-03 | IDEA-618 | [candidates.md](topics/padua-3d-20261106/final-d4/candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-claude-04 | IDEA-619 | [candidates.md](topics/padua-3d-20261106/final-d4/candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-claude-05 | IDEA-620 | [frontier-dispositions-20261112.md](topics/padua-3d-20261106/frontier-dispositions-20261112.md) | canonical candidate |
+| IDEA?padua-3d-20261106-claude-06 | IDEA-621 | [frontier-dispositions-20261112.md](topics/padua-3d-20261106/frontier-dispositions-20261112.md) | canonical candidate |
+| IDEA?padua-3d-20261106-claude-07 | IDEA-622 | [candidate.md](topics/padua-3d-20261106/final-d3/candidate.md) | canonical candidate |
+| IDEA?padua-3d-20261106-claude-08 | IDEA-623 | [frontier-dispositions-20261112.md](topics/padua-3d-20261106/frontier-dispositions-20261112.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T1-01 | IDEA-624 | [t1-minimal-obstruction.md](topics/padua-3d-20261106/theory/t1-minimal-obstruction.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T1-02 | IDEA-625 | [t1-open-class.md](topics/padua-3d-20261106/theory/t1-open-class.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T1-Haar | IDEA-626 | [response-02.md](topics/padua-3d-20261106/response-02.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T1-construction | IDEA-627 | [t1-minimal-obstruction.md](topics/padua-3d-20261106/theory/t1-minimal-obstruction.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T10-01 | IDEA-628 | [t10-census.md](topics/padua-3d-20261106/theory/t10-census.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T10-02 | IDEA-629 | [candidates-round08.md](topics/padua-3d-20261106/candidates-round08.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T10-03 | IDEA-630 | [candidates-round08.md](topics/padua-3d-20261106/candidates-round08.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T2-01 | IDEA-631 | [T2.md](topics/padua-3d-20261106/attempts/T2.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T2-02 | IDEA-632 | [candidates-response-01.md](topics/padua-3d-20261106/candidates-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T2-a | IDEA-633 | [candidates-response-01.md](topics/padua-3d-20261106/candidates-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T2-c | IDEA-634 | [candidates-response-01.md](topics/padua-3d-20261106/candidates-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T2-omit-n3 | IDEA-635 | [candidates-response-01.md](topics/padua-3d-20261106/candidates-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T2-phase | IDEA-636 | [candidates-response-01.md](topics/padua-3d-20261106/candidates-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T3-01 | IDEA-637 | [T3.md](topics/padua-3d-20261106/attempts/T3.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T3-02 | IDEA-638 | [T3.md](topics/padua-3d-20261106/attempts/T3.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T4-01 | IDEA-639 | [T4.md](topics/padua-3d-20261106/attempts/T4.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T4-02 | IDEA-640 | [T4.md](topics/padua-3d-20261106/attempts/T4.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T4-03 | IDEA-641 | [candidates-deferred-response-01.md](topics/padua-3d-20261106/candidates-deferred-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T4-04 | IDEA-642 | [T4.md](topics/padua-3d-20261106/attempts/T4.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T4-monotone-polynomial | IDEA-643 | [t4-monotone-lower.md](topics/padua-3d-20261106/theory/t4-monotone-lower.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T5-01 | IDEA-644 | [candidates-T5-response-01.md](topics/padua-3d-20261106/candidates-T5-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T5-02 | IDEA-645 | [candidates-T5-response-01.md](topics/padua-3d-20261106/candidates-T5-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T5-03 | IDEA-646 | [candidates-T5-response-01.md](topics/padua-3d-20261106/candidates-T5-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T5-04 | IDEA-647 | [candidates-deferred-response-01.md](topics/padua-3d-20261106/candidates-deferred-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T5-05 | IDEA-648 | [candidates-T5-response-01.md](topics/padua-3d-20261106/candidates-T5-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T5-Lobatto-m4 | IDEA-649 | [candidates-deferred-response-01.md](topics/padua-3d-20261106/candidates-deferred-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T5-Lobatto-m5 | IDEA-650 | [candidates-deferred-response-01.md](topics/padua-3d-20261106/candidates-deferred-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T5-completion | IDEA-651 | [candidates-deferred-response-01.md](topics/padua-3d-20261106/candidates-deferred-response-01.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T5-grid-construction | IDEA-652 | [t5-gaussian-grid-obstruction.md](topics/padua-3d-20261106/theory/t5-gaussian-grid-obstruction.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T6-01 | IDEA-653 | [novelty-gate-T6.md](topics/padua-3d-20261106/novelty-gate-T6.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T6-02 | IDEA-654 | [novelty-gate-T6.md](topics/padua-3d-20261106/novelty-gate-T6.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-01 | IDEA-655 | [T7.md](topics/padua-3d-20261106/attempts/T7.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-02 | IDEA-656 | [T7.md](topics/padua-3d-20261106/attempts/T7.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-03 | IDEA-657 | [response-02.md](topics/padua-3d-20261106/response-02.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-04 | IDEA-658 | [T7.md](topics/padua-3d-20261106/attempts/T7.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-05 | IDEA-659 | [candidates-round08.md](topics/padua-3d-20261106/candidates-round08.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-06 | IDEA-660 | [response-02.md](topics/padua-3d-20261106/response-02.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-07 | IDEA-661 | [T7.md](topics/padua-3d-20261106/attempts/T7.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-08 | IDEA-662 | [t7-survivor-cubature.md](topics/padua-3d-20261106/theory/t7-survivor-cubature.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-09 | IDEA-663 | [t7-rank-two-survivor.md](topics/padua-3d-20261106/theory/t7-rank-two-survivor.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-R06-C | IDEA-664 | [candidates-round08.md](topics/padua-3d-20261106/candidates-round08.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-R06-Phi | IDEA-665 | [candidates-round08.md](topics/padua-3d-20261106/candidates-round08.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-R06-Q | IDEA-666 | [candidates-round08.md](topics/padua-3d-20261106/candidates-round08.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T7-R06-U | IDEA-667 | [candidates-round08.md](topics/padua-3d-20261106/candidates-round08.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-01 | IDEA-668 | [T8.md](topics/padua-3d-20261106/attempts/T8.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-02 | IDEA-669 | [T8.md](topics/padua-3d-20261106/attempts/T8.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-03 | IDEA-670 | [T8.md](topics/padua-3d-20261106/attempts/T8.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-04 | IDEA-671 | [T8.md](topics/padua-3d-20261106/attempts/T8.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-05 | IDEA-672 | [T8.md](topics/padua-3d-20261106/attempts/T8.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-06 | IDEA-673 | [T8.md](topics/padua-3d-20261106/attempts/T8.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-r06-Phi1 | IDEA-674 | [novelty-gate-T8-round06.md](topics/padua-3d-20261106/novelty-gate-T8-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-r06-Phi2 | IDEA-675 | [r08-negative-t8-F.md](topics/padua-3d-20261106/theory/r08-negative-t8-F.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-r06-Phi3 | IDEA-676 | [novelty-gate-T8-round06.md](topics/padua-3d-20261106/novelty-gate-T8-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-r06-Phi3b | IDEA-677 | [novelty-gate-T8-round06.md](topics/padua-3d-20261106/novelty-gate-T8-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-r06-S | IDEA-678 | [novelty-gate-T8-round06.md](topics/padua-3d-20261106/novelty-gate-T8-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-r06-U | IDEA-679 | [novelty-gate-T8-round06.md](topics/padua-3d-20261106/novelty-gate-T8-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-r08-H | IDEA-680 | [T8-round08.md](topics/padua-3d-20261106/attempts/T8-round08.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T8-r08-Hdet | IDEA-681 | [T8-round08.md](topics/padua-3d-20261106/attempts/T8-round08.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-01 | IDEA-682 | [candidates-T9-response-02.md](topics/padua-3d-20261106/candidates-T9-response-02.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-02 | IDEA-683 | [t9-haar-packing-reduction.md](topics/padua-3d-20261106/theory/t9-haar-packing-reduction.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-03 | IDEA-684 | [t9-r06-packing-source.md](topics/padua-3d-20261106/theory/t9-r06-packing-source.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-04 | IDEA-685 | [candidates-T9-response-02.md](topics/padua-3d-20261106/candidates-T9-response-02.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-05 | IDEA-686 | [candidates-T9-response-02.md](topics/padua-3d-20261106/candidates-T9-response-02.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-06 | IDEA-687 | [T9-round06.md](topics/padua-3d-20261106/attempts/T9-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-07 | IDEA-688 | [candidates-T9-response-02.md](topics/padua-3d-20261106/candidates-T9-response-02.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-08 | IDEA-689 | [candidates-T9-response-02.md](topics/padua-3d-20261106/candidates-T9-response-02.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-09 | IDEA-690 | [candidates-T9-response-02.md](topics/padua-3d-20261106/candidates-T9-response-02.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-10 | IDEA-691 | [candidates-T9-response-02.md](topics/padua-3d-20261106/candidates-T9-response-02.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-r06-01 | IDEA-692 | [T9-round06.md](topics/padua-3d-20261106/attempts/T9-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-r06-02 | IDEA-693 | [T9-round06.md](topics/padua-3d-20261106/attempts/T9-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-r06-03 | IDEA-694 | [T9-round06.md](topics/padua-3d-20261106/attempts/T9-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-r06-04 | IDEA-695 | [T9-round06.md](topics/padua-3d-20261106/attempts/T9-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-r06-05 | IDEA-696 | [T9-round06.md](topics/padua-3d-20261106/attempts/T9-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-r06-06 | IDEA-697 | [T9-round06.md](topics/padua-3d-20261106/attempts/T9-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-r06-07 | IDEA-698 | [T9-round06.md](topics/padua-3d-20261106/attempts/T9-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-r06-08 | IDEA-699 | [T9-round06.md](topics/padua-3d-20261106/attempts/T9-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-T9-r06-09 | IDEA-700 | [T9-round06.md](topics/padua-3d-20261106/attempts/T9-round06.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-U1c-01 | IDEA-701 | [u1-continuation.md](topics/padua-3d-20261106/u1-continuation.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-U1c-02 | IDEA-702 | [u1-continuation.md](topics/padua-3d-20261106/u1-continuation.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-U2-01 | IDEA-703 | [usable2.md](topics/padua-3d-20261106/usable2.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-U2-02 | IDEA-704 | [u2-continuation.md](topics/padua-3d-20261106/u2-continuation.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-U3-C1 | IDEA-705 | [u3-continuation.md](topics/padua-3d-20261106/u3-continuation.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-U3-F | IDEA-706 | [usable3.md](topics/padua-3d-20261106/usable3.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-U3-M | IDEA-707 | [usable3.md](topics/padua-3d-20261106/usable3.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-U3-R | IDEA-708 | [usable3.md](topics/padua-3d-20261106/usable3.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-U3-S | IDEA-709 | [usable3.md](topics/padua-3d-20261106/usable3.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-prune-A | IDEA-710 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-prune-D | IDEA-711 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-prune-FORCE-N | IDEA-712 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-prune-H | IDEA-713 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-prune-L | IDEA-714 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-prune-Pareto | IDEA-715 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-prune-lex | IDEA-716 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-prune-next-01 | IDEA-717 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-prune-next-02 | IDEA-718 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-prune-next-03 | IDEA-719 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-prune-pair | IDEA-720 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-prune-random | IDEA-721 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-usable-U1-C1 | IDEA-722 | [usable1.md](topics/padua-3d-20261106/usable1.md) | canonical candidate |
+| IDEA?padua-3d-20261106-codex-usable-U1-C2 | IDEA-723 | [usable1.md](topics/padua-3d-20261106/usable1.md) | canonical candidate |
+| IDEA?…T7-02 | IDEA-656 | [T7.md](topics/padua-3d-20261106/attempts/T7.md) | historical candidate alias |
+| IDEA?…T7-03 | IDEA-657 | [response-02.md](topics/padua-3d-20261106/response-02.md) | historical candidate alias |
+| IDEA?…T7-04 | IDEA-658 | [T7.md](topics/padua-3d-20261106/attempts/T7.md) | historical candidate alias |
+| IDEA?…T7-05 | IDEA-659 | [candidates-round08.md](topics/padua-3d-20261106/candidates-round08.md) | historical candidate alias |
+| IDEA?…T7-06 | IDEA-660 | [response-02.md](topics/padua-3d-20261106/response-02.md) | historical candidate alias |
+| IDEA?…T7-07 | IDEA-661 | [T7.md](topics/padua-3d-20261106/attempts/T7.md) | historical candidate alias |
+| IDEA?…T7-08 | IDEA-662 | [t7-survivor-cubature.md](topics/padua-3d-20261106/theory/t7-survivor-cubature.md) | historical candidate alias |
+| IDEA?…T7-09 | IDEA-663 | [t7-rank-two-survivor.md](topics/padua-3d-20261106/theory/t7-rank-two-survivor.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-codex-T8-r06-F | IDEA-675 | [r08-negative-t8-F.md](topics/padua-3d-20261106/theory/r08-negative-t8-F.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-U1c-01 | IDEA-701 | [u1-continuation.md](topics/padua-3d-20261106/u1-continuation.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-U1c-02 | IDEA-702 | [u1-continuation.md](topics/padua-3d-20261106/u1-continuation.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-prune-A | IDEA-710 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-prune-D | IDEA-711 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-prune-L | IDEA-714 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-prune-Pareto | IDEA-715 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-prune-lex | IDEA-716 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-prune-next-01 | IDEA-717 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-prune-next-02 | IDEA-718 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-prune-next-03 | IDEA-719 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-prune-pair | IDEA-720 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-prune-random | IDEA-721 | [pruning-candidates.md](topics/padua-3d-20261106/pruning-candidates.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-usable-U1-C1 | IDEA-722 | [usable1.md](topics/padua-3d-20261106/usable1.md) | historical candidate alias |
+| IDEA?padua-3d-20261106-usable-U1-C2 | IDEA-723 | [usable1.md](topics/padua-3d-20261106/usable1.md) | historical candidate alias |
+| LIT?padua-3d-20261106-codex-T6-01 | LIT-636 | [literature-T6.md](topics/padua-3d-20261106/literature-T6.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T6-02 | LIT-637 | [literature-T6.md](topics/padua-3d-20261106/literature-T6.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T6-03 | LIT-312 | [literature-T6.md](topics/padua-3d-20261106/literature-T6.md) | literature alias; existing fact |
+| LIT?padua-3d-20261106-codex-T7-01 | LIT-638 | [literature-T7.md](topics/padua-3d-20261106/literature-T7.md); [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T10-02 | LIT-638 | [literature-T7.md](topics/padua-3d-20261106/literature-T7.md); [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-17 | LIT-638 | [literature-T7.md](topics/padua-3d-20261106/literature-T7.md); [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T10-01 | LIT-639 | [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-16 | LIT-639 | [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T10-03 | LIT-640 | [t9-betke-henk.md](topics/padua-3d-20261106/literature-round06/t9-betke-henk.md); [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md); [e4-verification.md](topics/padua-3d-20261106/final-d5/e4-verification.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T9-r06-01 | LIT-640 | [t9-betke-henk.md](topics/padua-3d-20261106/literature-round06/t9-betke-henk.md); [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md); [e4-verification.md](topics/padua-3d-20261106/final-d5/e4-verification.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-01 | LIT-640 | [t9-betke-henk.md](topics/padua-3d-20261106/literature-round06/t9-betke-henk.md); [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md); [e4-verification.md](topics/padua-3d-20261106/final-d5/e4-verification.md) | literature alias |
+| T9-R06-LIT-BH | LIT-640 | [t9-betke-henk.md](topics/padua-3d-20261106/literature-round06/t9-betke-henk.md); [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md); [e4-verification.md](topics/padua-3d-20261106/final-d5/e4-verification.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T9-r06-02 | LIT-641 | [t9-betke-henk-erratum.md](topics/padua-3d-20261106/literature-round06/t9-betke-henk-erratum.md) | literature alias |
+| T9-R06-LIT-ERR | LIT-641 | [t9-betke-henk-erratum.md](topics/padua-3d-20261106/literature-round06/t9-betke-henk-erratum.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T10-04 | LIT-642 | [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md); [belgian-metadata.md](topics/padua-3d-20261106/pr-preparation/belgian-metadata.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T10-05 | LIT-323 | [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md) | literature alias; existing fact |
+| LIT?padua-3d-20261106-codex-T10-06 | LIT-643 | [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T10-07 | LIT-644 | [t10-sources.md](topics/padua-3d-20261106/literature-round06/t10-sources.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T10-08 | LIT-645 | [t10-kernel-sources.md](topics/padua-3d-20261106/literature-round06/t10-kernel-sources.md); [e4-verification.md](topics/padua-3d-20261106/final-d5/e4-verification.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-03 | LIT-645 | [t10-kernel-sources.md](topics/padua-3d-20261106/literature-round06/t10-kernel-sources.md); [e4-verification.md](topics/padua-3d-20261106/final-d5/e4-verification.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T10-09 | LIT-322 | [t10-kernel-sources.md](topics/padua-3d-20261106/literature-round06/t10-kernel-sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | literature alias; existing fact |
+| LIT?padua-3d-20261106-codex-D5-19 | LIT-322 | [t10-kernel-sources.md](topics/padua-3d-20261106/literature-round06/t10-kernel-sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | literature alias; existing fact |
+| LIT?padua-3d-20261106-codex-T10-10 | LIT-646 | [t10-kernel-sources.md](topics/padua-3d-20261106/literature-round06/t10-kernel-sources.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T9-r06-03 | LIT-647 | [t9-chkifa2015.md](topics/padua-3d-20261106/literature-round06/t9-chkifa2015.md); [e4-verification.md](topics/padua-3d-20261106/final-d5/e4-verification.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T9-r06-04 | LIT-647 | [t9-chkifa2015.md](topics/padua-3d-20261106/literature-round06/t9-chkifa2015.md); [e4-verification.md](topics/padua-3d-20261106/final-d5/e4-verification.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-02 | LIT-647 | [t9-chkifa2015.md](topics/padua-3d-20261106/literature-round06/t9-chkifa2015.md); [e4-verification.md](topics/padua-3d-20261106/final-d5/e4-verification.md) | literature alias |
+| T9-R06-LIT-CH | LIT-647 | [t9-chkifa2015.md](topics/padua-3d-20261106/literature-round06/t9-chkifa2015.md); [e4-verification.md](topics/padua-3d-20261106/final-d5/e4-verification.md) | literature alias |
+| T9-R06-LIT-CH-D | LIT-647 | [t9-chkifa2015.md](topics/padua-3d-20261106/literature-round06/t9-chkifa2015.md); [e4-verification.md](topics/padua-3d-20261106/final-d5/e4-verification.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T9-r06-05 | LIT-648 | [t9-chkifa2015.md](topics/padua-3d-20261106/literature-round06/t9-chkifa2015.md) | literature alias |
+| T9-R06-LIT-CH-L | LIT-648 | [t9-chkifa2015.md](topics/padua-3d-20261106/literature-round06/t9-chkifa2015.md) | literature alias |
+| LIT?padua-3d-20261106-codex-T9-r06-06 | LIT-649 | [t9-chkifa2015.md](topics/padua-3d-20261106/literature-round06/t9-chkifa2015.md) | literature alias |
+| T9-R06-LIT-CH-PRIOR | LIT-649 | [t9-chkifa2015.md](topics/padua-3d-20261106/literature-round06/t9-chkifa2015.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-04 | LIT-650 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-05 | LIT-651 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-06 | LIT-391 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | literature alias; existing fact |
+| LIT?padua-3d-20261106-codex-D5-07 | LIT-652 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-08 | LIT-653 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-09 | LIT-654 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-10 | LIT-655 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-11 | LIT-656 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-12 | LIT-657 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-13 | LIT-658 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-14 | LIT-659 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D1-GL | LIT-659 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-15 | LIT-660 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D1-LM | LIT-660 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-18 | LIT-014 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md); [literature-T1.md](topics/padua-3d-20261106/literature-T1.md) | literature alias; existing fact |
+| LIT?padua-3d-20261106-codex-D5-20 | LIT-661 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-21 | LIT-662 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D1-K | LIT-662 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D5-22 | LIT-663 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | literature alias |
+| LIT?padua-3d-20261106-codex-D1-AMO | LIT-664 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | literature alias |
+| Local source record: lsx-conjecture | LIT-010 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [H1-H5.md](topics/padua-3d-20261106/audit-06/H1-H5.md) | retained unnumbered literature record |
+| Local source record: marzo | LIT-665 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md); [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | retained unnumbered literature record |
+| Local source record: mesh | LIT-666 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [certificate-reduction.md](topics/padua-3d-20261106/final-d4/certificate-reduction.md) | retained unnumbered literature record |
+| Local source record: ottem-ranestad-sturmfels-vinzant | LIT-667 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md) | retained unnumbered literature record |
+| Local source record: lyubich | LIT-668 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md) | retained unnumbered literature record |
+| Local source record: yudin | LIT-669 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md) | retained unnumbered literature record |
+| Local source record: xu-ball | LIT-670 | [sources.md](topics/padua-3d-20261106/final-d1/sources.md) | retained unnumbered literature record |
+| Local source record: lyness-notes | LIT-671 | [source-records.md](topics/padua-3d-20261106/final-d5/source-records.md); [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | retained unnumbered literature record |
+| Local source record: anl-search-notes | LIT-672 | [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | retained unnumbered literature record |
+| Local source record: caliari-cube | LIT-673 | [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | retained unnumbered literature record |
+
+Assignments: PD-T554–643(90), PD-N186–225(40), IDEA616–723(108), LIT636–673(38 new facts); six literature groups reuse accepted facts. Permanent unused gaps: PD-T644–673, PD-N226–245, IDEA724–755, LIT674–715. No alias receives two final IDs.

@@ -1,0 +1,183 @@
+{
+  "verdict": "PASS",
+  "scope": "Independent finite P2 numerical audit, zero research rounds; no continuous theorem, novelty clearance or formal Claude approval.",
+  "rules_read_sha": "c7afc444fabab45081b087bdde583d5631a8d1a1",
+  "command": [
+    "topics/padua-3d-20261106/pruning-review/check_constrained.py",
+    "--receipt",
+    "topics/padua-3d-20261106/evidence/pdpr-constrained.json",
+    "--scratch",
+    "/tmp/padua-pruning-review-p2-20261107a",
+    "--output",
+    "topics/padua-3d-20261106/pruning-review/constrained.json"
+  ],
+  "started_utc": "2026-11-07T09:28:10.249250+00:00",
+  "ended_utc": "2026-11-07T09:28:13.844294+00:00",
+  "actual_cpu": 3.59244567,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "receipt": {
+    "path": "topics/padua-3d-20261106/evidence/pdpr-constrained.json",
+    "bytes": 6489,
+    "sha256": "4074318b3b1e72ecaaa2c5f5183b59ee6efa8bb69e1ce90e756be6c02f196bed"
+  },
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/pruning-review/check_constrained.py",
+    "bytes": 15205,
+    "sha256": "cb22bfa581323456ef7ac2d8a2fa7449b1b81967c8d51f2f12f49f8e300a0f3a"
+  },
+  "helper": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/pruning-review/check_pilot.py",
+    "bytes": 19083,
+    "sha256": "568eaac055cbe0cdcf153c03b8e41b8d6cd9d4efa24b67bcf0e43ee464aca343"
+  },
+  "producer_source_pins": [
+    {
+      "path": "/tmp/pdpr-constrained-20261107a/source-c3_lebesgue.py",
+      "bytes": 6286,
+      "sha256": "bf9cdb7c057f6ddf1793d99e6d338b1c1cfa37a274e5a6ac9689085f6bb3d66e"
+    },
+    {
+      "path": "/tmp/pdpr-constrained-20261107a/source-c3_rank.py",
+      "bytes": 7430,
+      "sha256": "a95afbb764838662358dc70d2fd5a7eddf335d3ae48254d29b717fa015143332"
+    },
+    {
+      "path": "/tmp/pdpr-constrained-20261107a/source-pdpr_collect.py",
+      "bytes": 5436,
+      "sha256": "4d86a43b23ed741ea0610131c1f13c292eb0e65208c0bbedd32306d86b70dd95"
+    },
+    {
+      "path": "/tmp/pdpr-constrained-20261107a/source-pdpr_core.py",
+      "bytes": 18789,
+      "sha256": "69c81447dd952588c6384d906fd2eeda44849c6e7482e8d281c8d484805ddb38"
+    },
+    {
+      "path": "/tmp/pdpr-constrained-20261107a/source-pdpr_run.py",
+      "bytes": 33706,
+      "sha256": "3911ee2afcfba863bddd5f3a5f1b7056f0b6bb7336f51b736e67156eb436d979"
+    },
+    {
+      "path": "/tmp/pdpr-constrained-20261107a/source-t4_stacks.py",
+      "bytes": 9491,
+      "sha256": "0cd23793f436cd25328114e21dfda2c8c590cebbe7b88b985f7e478fc8c068b7"
+    },
+    {
+      "path": "/tmp/pdpr-constrained-20261107a/source-t9_maxima.py",
+      "bytes": 5625,
+      "sha256": "b98fc5bae7502555a1ed903785d452140ac719f2ac8a478bfc8022c7b2d69a3e"
+    },
+    {
+      "path": "/tmp/pdpr-constrained-20261107a/source-t9_r06_maxima.py",
+      "bytes": 5818,
+      "sha256": "7831165e8fc4ed94901b5bb83a09ad18ebf6b1fec831dbb07c76098e6e468415"
+    },
+    {
+      "path": "/tmp/pdpr-constrained-20261107a/source-u1_usable.py",
+      "bytes": 17849,
+      "sha256": "2b8a087126189a9a161acd449260b9ec456d28813337c820a90f5fc3cc991938"
+    },
+    {
+      "path": "/tmp/pdpr-constrained-20261107a/source-u1c_budget.py",
+      "bytes": 11461,
+      "sha256": "0adb0aefaac5fc2574c94884917362da68f7e2a0ced6379deb0065ce7ec228ea"
+    }
+  ],
+  "raw_inventory": {
+    "path": "/tmp/pdpr-constrained-20261107a/inventory.json",
+    "bytes": 4125,
+    "sha256": "e4d1d33a2a249f5cc17c9b6ef74dc134de4cf62392f8fc268ccfa7cf325a91b0"
+  },
+  "raw_inventory_files_checked": 27,
+  "decoded_logical_object_exact": true,
+  "path_summaries": [
+    {
+      "n": 6,
+      "terminal_M": 112,
+      "states": 1,
+      "candidate_rows_checked": 112,
+      "stop": "no_predicted_feasible_deletion",
+      "numerical_rejections": 0,
+      "failures": [],
+      "minimum_relative_constraint_margin": 0.029564635633618053
+    },
+    {
+      "n": 8,
+      "terminal_M": 225,
+      "states": 1,
+      "candidate_rows_checked": 225,
+      "stop": "no_predicted_feasible_deletion",
+      "numerical_rejections": 0,
+      "failures": [],
+      "minimum_relative_constraint_margin": 0.06466501565016394
+    }
+  ],
+  "actual_frozen_reruns": [
+    {
+      "n": 6,
+      "count_states": 1,
+      "exact_node_ids": true,
+      "stop": "no_predicted_feasible_deletion"
+    },
+    {
+      "n": 8,
+      "count_states": 1,
+      "exact_node_ids": true,
+      "stop": "no_predicted_feasible_deletion"
+    }
+  ],
+  "terminal_all_candidate_fresh_SVD_count": 337,
+  "maximum_errors": {
+    "candidate_amp": 1.60350124868516e-14,
+    "candidate_risk": 1.4829268563439003e-15,
+    "candidate_trace": 1.4708460450336658e-15,
+    "fresh_terminal_amp": 1.539361198737778e-14,
+    "fresh_terminal_risk": 1.657537367398229e-15,
+    "map": 2.574553380616237e-15,
+    "assessed_amp": 6.56523364001199e-16,
+    "assessed_variance": 2.3713996225497202e-15,
+    "target_scaled": 6.477010886210374e-15,
+    "mse_scaled": 3.64571984998455e-15
+  },
+  "assessed_maps": 10,
+  "fresh_query_count_per_measure": 2048,
+  "fresh_seeds": [
+    "2026111720+n angular",
+    "2026111730+n uniform"
+  ],
+  "fresh_metrics": {
+    "path": "/tmp/padua-pruning-review-p2-20261107a/fresh-metrics.json",
+    "bytes": 7126,
+    "sha256": "142af9f3d7e5ecbb7777359926a3afe9e322e267728248ec456d7315d8814cb4"
+  },
+  "decisions": [
+    {
+      "n": 6,
+      "M": 112,
+      "saving": 0.0,
+      "amp_ratio": 1.0,
+      "risk_ratio": 1.0,
+      "quality": false,
+      "control_gain": false
+    },
+    {
+      "n": 8,
+      "M": 225,
+      "saving": 0.0,
+      "amp_ratio": 1.0,
+      "risk_ratio": 1.0,
+      "quality": false,
+      "control_gain": false
+    }
+  ],
+  "gate_passes": false,
+  "limits": "All candidate feasibility claims refer to this finite floating path and frozen thresholds. Actual producer timings not independently replicated. Own raw output/source snapshots local regeneration-only."
+}

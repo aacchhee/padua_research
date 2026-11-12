@@ -1,0 +1,162 @@
+# D2 prospective protocol — three rounds maximum
+
+Rules `04ef28b`; developer Codex gpt-6.1-sol xhigh. Planned 2026-11-12,
+before scientific execution. The coordinator must publish this protocol and
+the current code hashes in gates.md, then send run-go before execution.
+Every later driver is hash-published before its own execution. Each round
+executes in order; caps are implementation limits, never impossibility proofs.
+
+## Round 1: Padua calibration, then exact algebra
+
+1. Derive exact linear syzygies of rational Chebyshev Padua generators at
+   n2,3,4. Check that the (n+2)×(n+1) Hilbert–Burch matrix annihilates the
+   generator vector and its signed maximal minors reproduce the generators
+   up to one nonzero constant. Retain the actual matrices and sparsity.
+2. At n2,3,4 use p=1000003 and Q, both EN (n+3)×(n+1) and symmetric size
+   n+2. For each, attempt one random and one structured pencil in both fields.
+   Random seed `202611120201 + 100*n + 10*type + domain` (type EN=0,
+   symmetric=1; domain GF=0,Q=1). Coefficients uniform integers −2..2.
+   Structured baseline is general-position natural-lattice geometry; all
+   minors are generated. The exact algebra is a calibration, not a new family.
+3. Grevlex Groebner, quotient dimension, all degree≤n monomials standard,
+   radicality via squarefree characteristic polynomial of multiplication by
+   x+2y+3z. If that form does not separate, report inconclusive, not nonradical.
+   Each algebra subprocess: wall≤30 s, CPU≤25 s, memory≤2 GiB. Padua
+   calibration: wall≤120 s, CPU≤100 s. Round total wall≤900 s, CPU≤750 s.
+   No solver replacement or changed seed after an observed failure.
+
+## Round 2: concrete all-real searches
+
+1. Start from the primary ORSV 4×4 quartic real-node matrix, source-pinned
+   by D5, check its 10-node corank-two set, then try its specified 5×5/6×6
+   diagonal/rank-one extension. Keep original and extension provenance apart.
+2. For n3/4 test known general-position natural-lattice EN/symmetric pencils,
+   including explicit rational planes, and affinely normalize coordinates to
+   the cube. Check full count, distinctness, rank and evaluation rank.
+3. Concrete IDEA-120 probe: build tensor-product Chebyshev multiplication
+   sections on Π_(n−1), append the degree-n block to N=binom(n+3,3), and
+   minimize the three commutator residuals over symmetric last blocks with
+   fixed lower Jacobi entries. n3/4, seeds `202611120202 + n`, two starts,
+   at most150 function evaluations/start and60 CPU s/start. Extract nodes
+   only after commutator norm<1e−8 and full joint-diagonalization checks;
+   otherwise retain the failed residual, never advertise a real node set.
+4. Round wall≤600 s, CPU≤500 s, 2 GiB. Exact witnesses are retained only
+   as small rational inputs/check outputs. Floating configurations are MEASURED.
+
+## Round 3: measured matrix-parameter optimization
+
+Optimize Λ over coefficients of the surviving all-real pencil family,
+parameterizing the generating planes when that is the known calibration.
+At n3/4 use four starts, fixed seeds `202611120203+n`, 500 objective
+evaluations/start; local derivative-free optimizer or fixed-budget stochastic
+coordinate search selected and hash-published before execution. Reject
+collisions, singular triples and rank loss. Optimize on a 13³ Chebyshev mesh;
+evaluate initial and final candidates on the 41³ Chebyshev mesh, plus512
+seeded uniform points (`202611120204+n`). Normalize every candidate by its
+axis bounding box into [−1,1]³; the objective is measured on the whole cube,
+not merely the hull. Record all starts, losses and best parameters. No
+claim of global optimum or certified supremum. Wall≤600 s, CPU≤500 s.
+
+## Acceptance and stopping
+
+The ordered four steps all receive actual bounded attempts. No early kill
+before Round3. Kill the tested construction programme if no all-real-in-cube
+configuration is found at either n3 or n4. The other kill requires BOTH no
+exploitable Padua-specific 2D structure AND best measured Λ>8.10 at n3 AND
+>10.18 at n4. Finite timeouts or a failed Jacobi ansatz alone do not establish
+nonexistence. If the ceiling is reached with an unproved transfer, keep the
+original broad target OPEN and preserve every failed/unrun obligation.
+
+Each JSON≤32768 bytes; generated repository allowance10MB. Raw scratch
+data live under /tmp and are regenerate-only. No external archival delivery
+or independent rerun is claimed by this developer.
+
+## Round 2 implementation freeze (before execution)
+
+Driver `code/fd2_real.py`, SHA256
+`6532327613545db69d568ebf984947654c497f041f885cac9b01ec8d52b7d03c`.
+Only py_compile was run while preparing it. ORSV input is D5's primary-read
+§2 p7 (rho,sigma)=(10,10) matrix; exact coefficients are embedded. Chart is
+x0+2x1+4x2+8x3=1. For size5/6, border couplings are .1 constant and .03*x,
+extra diagonal entries use moment-curve normals with t5/6. These are attempted
+extensions, with no inherited all-real existence theorem. Search uses all
+principal Schur charts,32 starts/chart (origin+31 uniform[−3,3]³),20 Newton
+steps/start, deterministic backtracking 1,1/2,…,1/32. Found nodes are lower
+counts; no completeness from multistart convergence.
+
+Jacobi implementation fixes precisely the Π_(n−1) multiplication sections;
+couplings from its top degree to the extra degree-n-sized block are free,
+and compatibility sets couplings from degree≤n−2 to zero. This avoids the
+stronger, unjustified assumption that the unknown degree-2n Gram is identity.
+Variables are these cross blocks and symmetric last blocks for all3 matrices.
+Analytic commutator Jacobian, scipy least_squares/LSMR,150 evaluations/start;
+two starts use seed202611120202+n and that seed+1000, perturbations .02/.2.
+Each Jacobi child CPU60s, wall75s,2GiB; progress is checkpointed before caps.
+The two start seeds refine the original seed declaration, before execution.
+
+Command: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python
+topics/padua-3d-20261106/code/fd2_real.py --output
+topics/padua-3d-20261106/evidence/fd2-real.json`.
+
+The exact natural-lattice certificate uses moment-curve planes
+x+t*y+t²*z−t³ (t0..n+2), all triples and all four-plane augmented determinants,
+and literal product-cardinal evaluation over Q. It separately closes the
+R1 baseline radicality check if its dimension equals the counted distinct
+zeros. No failed random n4 case is silently completed by that baseline.
+
+## Round 3 implementation freeze (before execution)
+
+Driver `code/fd2_optimize.py`, SHA256
+`754a9c4c97d909412756825b21bc06509028fbf83c8ee8f30992ceaef67684a8`.
+Only py_compile was executed in preparation. The selected surviving family
+is the symmetric n+2 pencil, initialized at the exact natural-lattice
+calibration. Optimization allows **all four symmetric coefficient matrices**
+to vary (60 parameters atn3,84 atn4); it is not restricted to moving planes.
+This refines the originally optional plane parametrization before execution.
+
+At each n3/4 run four independent seeded coordinate-search trajectories
+from the same exact real baseline. Seeds are202611120203+n+1000*start,
+start0..3. Each trajectory permits500 proposal/objective attempts including
+the initial objective. Select one of the independent symmetric coefficient
+entries uniformly; add a Gaussian displacement with initial std.002, reduced
+by factor.85 every50 attempts. Accept strictly smaller training Λ. Corank-two
+nodes are tracked with principal Schur charts, at most12 Newton steps, and
+the pencil/node coordinates are normalized after each accepted perturbation.
+Reject tracking failure, second-smallest singular value>1e−7, third-smallest
+<1e−7, pair distance<1e−6, or interpolation condition>1e12. These are numerical
+guards, not exact certification of the optimized configuration or projective
+completeness. There is no source-theorem all-real inheritance for perturbed
+pencils; the displayed N distinct rank-drop points are MEASURED.
+
+Train13³; assess each trajectory's final best on41³ plus512 uniform points,
+seed202611120204+n. Baseline gets the same assessment. Each child CPU50s,
+wall60s,2GiB; total round caps remain500CPU/600wall. Every10 attempts and
+at completion save full best state under/tmp. On caps retain the last saved
+best, mark the unfinished trajectory, and assess it separately. The compact
+receipt retains every trajectory's gains/losses/caps and the two degreewise
+best matrices/nodes; other raw states are regenerate-only and hash-identified.
+No changed seed, second optimizer, cap extension or rerun after results.
+
+Command: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python
+topics/padua-3d-20261106/code/fd2_optimize.py --output
+topics/padua-3d-20261106/evidence/fd2-optimize.json`.
+
+### R3 mechanical repair, before resumed execution
+
+The first frozen driver754a9c4c failed in all8 child processes after exactly
+one initial objective each, before evaluating any proposal objective. NumPy2
+requires an explicit singleton RHS axis for batched vector solves. Its
+ValueError and the eight initial-only checkpoints are preserved in
+`evidence/fd2-optimize-failed.json`, SHA256
+`9b3a7e3eac5273a5457a9aad5321b17de025f9cb961e02f2b6609e0721cecdb0`.
+The fix replaces solve(J,−F) with solve(J,−F[...,None])[...,0]. Synthetic
+identity-matrix batched-RHS tests at batch sizes20/35 pass; no repaired
+scientific run has yet occurred at this checkpoint.
+
+Repaired driver SHA256
+`7b844e2c6f2796a13872390c012a08973afe98184e88be109ab83d77f46ffa47`.
+The restarted path limit is499 total objectives including the repeated
+initial objective, so previous1+new499≤the original500 per path. All seeds,
+parameters, guards, meshes, objectives and per-process caps are unchanged.
+No proposed quality was observed before the repair. This is completion of
+the same still-open R3; root must publish and send a fresh run-go first.

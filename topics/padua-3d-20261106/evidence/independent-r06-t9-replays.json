@@ -1,0 +1,21 @@
+{
+  "kind": "producer replay scientific field comparisons",
+  "comparisons": [
+    {
+      "family": "qr",
+      "rows": 15,
+      "reference_rows": 15,
+      "differences": [],
+      "producer_code_sha256": "7831165e8fc4ed94901b5bb83a09ad18ebf6b1fec831dbb07c76098e6e468415",
+      "reference_sha256": "b2f80834f72290f1905a3647738209a933a4a35134e3fb054e95d5a5b0ecbfb9"
+    },
+    {
+      "family": "localdet",
+      "rows": 15,
+      "reference_rows": 15,
+      "differences": [],
+      "producer_code_sha256": "7831165e8fc4ed94901b5bb83a09ad18ebf6b1fec831dbb07c76098e6e468415",
+      "reference_sha256": "469dde5293d41440f968bd0743a60425784d37b867a4095439c00209cd370f7e"
+    }
+  ]
+}

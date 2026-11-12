@@ -1,0 +1,102 @@
+{
+  "schema": "padua-r08-lattice-v1",
+  "input_sha": "9042e1c42964150f30fdbe8563c12ba6c6a8692a",
+  "kind": "n3below24",
+  "python": "3.12.14",
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-3d-20261106/code/r08_lattice.py",
+      "bytes": 6359,
+      "sha256": "0d03590f8587f799ad5213ba2b41def2b23e80472ff7327076b4b4f19cbfbfe0"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-3d-20261106/code/r08_lattice_enum.cpp",
+      "bytes": 4430,
+      "sha256": "e07ad9e51d5b883e7c6d813d396ef32ea0ac24eda253a73f6137f8b8f86feaa4"
+    }
+  ],
+  "commands": [
+    [
+      "/tmp/r08-lattice-enum",
+      "complement",
+      "3",
+      "1",
+      "184",
+      "23",
+      "/tmp/padua-r08-lattice-20261106-9042-n3rank/n3below24-n3.jsonl"
+    ]
+  ],
+  "rows": [
+    {
+      "n": 3,
+      "N": 20,
+      "completed_det_interval": [
+        1,
+        184
+      ],
+      "complete": true,
+      "summary": {
+        "type": "summary",
+        "mode": "complement",
+        "n": 3,
+        "det_lo": 1,
+        "det_hi_requested": 184,
+        "fold_cap": 23,
+        "hnf_total": 4140222,
+        "after_axis_pair_prune": 3350679,
+        "admissible": 1710190,
+        "small_count": 92,
+        "min_det": 0,
+        "min_fold": 16,
+        "min_fold_det": 54,
+        "min_fold_hnf": [
+          3,
+          0,
+          3,
+          3,
+          3,
+          6
+        ],
+        "elapsed_seconds": 1.31208
+      },
+      "raw": {
+        "path": "/tmp/padua-r08-lattice-20261106-9042-n3rank/n3below24-n3.jsonl",
+        "bytes": 27925,
+        "sha256": "29ba997def7d2a7f6fdd35e7019c70d4c90fde52ce3273001a479223cd087a54"
+      },
+      "fold_rank_hist": [
+        [
+          16,
+          15,
+          1
+        ],
+        [
+          20,
+          17,
+          20
+        ],
+        [
+          20,
+          18,
+          3
+        ],
+        [
+          22,
+          18,
+          68
+        ]
+      ],
+      "full_rank_small_count": 0,
+      "full_rank_small_examples": [],
+      "minimizer_count": 0,
+      "minimizer_fold_hist": [],
+      "minimizer_example": null,
+      "exact_rank_cases": 92
+    }
+  ],
+  "exact_rank_raw": {
+    "path": "/tmp/padua-r08-lattice-20261106-9042-n3rank/n3below24-exact-ranks.json",
+    "bytes": 6627,
+    "sha256": "11feff4a459a6320d5a3b6b4b67d28178d5682f56eb07458cddca18e0e7d7acd"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "rules_input": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "command": [
+    "topics/padua-3d-20261106/code/independent_r06.py",
+    "--t7-raw",
+    "/tmp/padua-check06-t7-sample/t7-r06-sample.jsonl",
+    "--output",
+    "topics/padua-3d-20261106/evidence/independent-r06-t7-sample.json"
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "sympy": "1.14.0",
+  "code_sha256": "ed352441b145a900f375eb6bf03543e186976c31824ec9baf2b882fb5d64d296",
+  "controls": {},
+  "t7_sample": {
+    "raw_sha256": "67ff0a1f3d0466e82730101c5d29543811c903fd2d1325a813761b4cf4f80a84",
+    "rows": 256,
+    "rank_lower_distribution": {
+      "20": 54,
+      "16": 18,
+      "7": 8,
+      "15": 42,
+      "17": 60,
+      "10": 25,
+      "14": 15,
+      "12": 25,
+      "19": 9
+    },
+    "full_rank_count": 54,
+    "best_sampled_lambda": 12.293425572605921
+  }
+}

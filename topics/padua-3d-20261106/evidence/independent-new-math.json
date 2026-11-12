@@ -1,0 +1,368 @@
+{
+  "status": "PASS",
+  "scope": "Independent exact finite sanity checks; analytic/source conclusions remain in review record",
+  "source_sha256": "5a85c50f78dba2cc1d860760f8e279c19944154225f4b477d30f3bb79ca27eae",
+  "sympy": "1.14.0",
+  "h4": {
+    "torus_count": 16,
+    "node_count": 10,
+    "abs_monomial_determinant": 256,
+    "coordinate_reflections": [
+      false,
+      false,
+      false
+    ],
+    "haar_degree3_nonzero_moments": [
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        "1/4"
+      ]
+    ],
+    "moment_matrix_rank": 10,
+    "augmented_rank": 11,
+    "weights_histogram": {
+      "1/16": 4,
+      "1/8": 6
+    }
+  },
+  "phase": {
+    "diagonal_C3_generic_fold_ranks": [
+      2,
+      3
+    ],
+    "shifted_C2_moments": [
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "shifted_C2_shortest_dual_l1": 2
+  },
+  "rank2": {
+    "group": "C5 x C5, (i,j,2i+2j)/5",
+    "order": 25,
+    "no_q_le_3": true,
+    "witness_q4": [
+      1,
+      1,
+      2
+    ]
+  },
+  "dictionary": [
+    {
+      "modulus": 4,
+      "group_order": 16,
+      "phase_twelfths": [
+        0,
+        0,
+        0
+      ],
+      "rank": 10
+    },
+    {
+      "modulus": 4,
+      "group_order": 16,
+      "phase_twelfths": [
+        1,
+        2,
+        3
+      ],
+      "rank": 15
+    },
+    {
+      "modulus": 3,
+      "group_order": 3,
+      "phase_twelfths": [
+        0,
+        0,
+        0
+      ],
+      "rank": 2
+    },
+    {
+      "modulus": 3,
+      "group_order": 3,
+      "phase_twelfths": [
+        1,
+        2,
+        3
+      ],
+      "rank": 3
+    },
+    {
+      "modulus": 3,
+      "group_order": 9,
+      "phase_twelfths": [
+        0,
+        0,
+        0
+      ],
+      "rank": 5
+    },
+    {
+      "modulus": 3,
+      "group_order": 9,
+      "phase_twelfths": [
+        1,
+        2,
+        3
+      ],
+      "rank": 9
+    },
+    {
+      "modulus": 2,
+      "group_order": 8,
+      "phase_twelfths": [
+        0,
+        0,
+        0
+      ],
+      "rank": 8
+    },
+    {
+      "modulus": 2,
+      "group_order": 8,
+      "phase_twelfths": [
+        1,
+        2,
+        3
+      ],
+      "rank": 4
+    }
+  ],
+  "packing": {
+    "conditional_density": "18/19; not verified here",
+    "threshold_polynomial_at109": -9809,
+    "threshold_polynomial_at110": 2312,
+    "padua": [
+      {
+        "n": 1,
+        "torus_order": 4,
+        "nodes": 3,
+        "shortest_dual_l1": 2
+      },
+      {
+        "n": 2,
+        "torus_order": 12,
+        "nodes": 6,
+        "shortest_dual_l1": 4
+      },
+      {
+        "n": 3,
+        "torus_order": 24,
+        "nodes": 10,
+        "shortest_dual_l1": 6
+      },
+      {
+        "n": 4,
+        "torus_order": 40,
+        "nodes": 15,
+        "shortest_dual_l1": 8
+      },
+      {
+        "n": 5,
+        "torus_order": 60,
+        "nodes": 21,
+        "shortest_dual_l1": 10
+      },
+      {
+        "n": 6,
+        "torus_order": 84,
+        "nodes": 28,
+        "shortest_dual_l1": 12
+      },
+      {
+        "n": 7,
+        "torus_order": 112,
+        "nodes": 36,
+        "shortest_dual_l1": 14
+      },
+      {
+        "n": 8,
+        "torus_order": 144,
+        "nodes": 45,
+        "shortest_dual_l1": 16
+      },
+      {
+        "n": 9,
+        "torus_order": 180,
+        "nodes": 55,
+        "shortest_dual_l1": 18
+      },
+      {
+        "n": 10,
+        "torus_order": 220,
+        "nodes": 66,
+        "shortest_dual_l1": 20
+      }
+    ]
+  },
+  "lower": {
+    "integer_map_determinant": -4,
+    "subset_checks": [
+      {
+        "n": 1,
+        "odd_harmonic": "1",
+        "weighted_cube_lower": "1/3"
+      },
+      {
+        "n": 2,
+        "odd_harmonic": "4/3",
+        "weighted_cube_lower": "64/81"
+      },
+      {
+        "n": 3,
+        "odd_harmonic": "4/3",
+        "weighted_cube_lower": "64/81"
+      },
+      {
+        "n": 4,
+        "odd_harmonic": "23/15",
+        "weighted_cube_lower": "12167/10125"
+      },
+      {
+        "n": 5,
+        "odd_harmonic": "23/15",
+        "weighted_cube_lower": "12167/10125"
+      },
+      {
+        "n": 6,
+        "odd_harmonic": "176/105",
+        "weighted_cube_lower": "5451776/3472875"
+      },
+      {
+        "n": 7,
+        "odd_harmonic": "176/105",
+        "weighted_cube_lower": "5451776/3472875"
+      },
+      {
+        "n": 8,
+        "odd_harmonic": "563/315",
+        "weighted_cube_lower": "178453547/93767625"
+      },
+      {
+        "n": 9,
+        "odd_harmonic": "563/315",
+        "weighted_cube_lower": "178453547/93767625"
+      },
+      {
+        "n": 10,
+        "odd_harmonic": "6508/3465",
+        "weighted_cube_lower": "275640248512/124804708875"
+      },
+      {
+        "n": 11,
+        "odd_harmonic": "6508/3465",
+        "weighted_cube_lower": "275640248512/124804708875"
+      },
+      {
+        "n": 12,
+        "odd_harmonic": "88069/45045",
+        "weighted_cube_lower": "683076265232509/274195945398375"
+      },
+      {
+        "n": 13,
+        "odd_harmonic": "88069/45045",
+        "weighted_cube_lower": "683076265232509/274195945398375"
+      },
+      {
+        "n": 14,
+        "odd_harmonic": "91072/45045",
+        "weighted_cube_lower": "755361111605248/274195945398375"
+      },
+      {
+        "n": 15,
+        "odd_harmonic": "91072/45045",
+        "weighted_cube_lower": "755361111605248/274195945398375"
+      },
+      {
+        "n": 16,
+        "odd_harmonic": "1593269/765765",
+        "weighted_cube_lower": "4044523085575684109/1347124679742216375"
+      },
+      {
+        "n": 17,
+        "odd_harmonic": "1593269/765765",
+        "weighted_cube_lower": "4044523085575684109/1347124679742216375"
+      },
+      {
+        "n": 18,
+        "odd_harmonic": "31037876/14549535",
+        "weighted_cube_lower": "29900329979334550957376/9239928178351862116125"
+      },
+      {
+        "n": 19,
+        "odd_harmonic": "31037876/14549535",
+        "weighted_cube_lower": "29900329979334550957376/9239928178351862116125"
+      },
+      {
+        "n": 20,
+        "odd_harmonic": "31730711/14549535",
+        "weighted_cube_lower": "31947686254376603415431/9239928178351862116125"
+      }
+    ],
+    "full_squarewave_sums": [
+      {
+        "n": 1,
+        "exact_sum": "26/27"
+      },
+      {
+        "n": 2,
+        "exact_sum": "3671/3375"
+      },
+      {
+        "n": 4,
+        "exact_sum": "40602922/31255875"
+      },
+      {
+        "n": 8,
+        "exact_sum": "29336702124404723/17961662396562885"
+      },
+      {
+        "n": 16,
+        "exact_sum": "193734512586253224116784478652604536729/91893268965418617764445120486697078125"
+      },
+      {
+        "n": 32,
+        "exact_sum": "17278309172754795417518366409311283153880559787672439955291522484609855915833/6303861355385615032837554368654156828684655504142757097840279579610371890625"
+      }
+    ],
+    "practical_lower_exact": "3/4 + 3/(2*pi)",
+    "negative_box_integral": "1/8 - 3/(4*pi)",
+    "asymptotic_coefficient": "1/(24*pi^3)"
+  },
+  "rank2_cubic_survivor": {
+    "group_generators_tenths": [
+      [
+        7,
+        7,
+        4
+      ],
+      [
+        5,
+        0,
+        5
+      ]
+    ],
+    "phase_101ths": [
+      1,
+      2,
+      4
+    ],
+    "group_order": 20,
+    "folded_nodes": 20,
+    "direct_Chebyshev_rank": 20,
+    "prime": 5051,
+    "cyclotomic_order": 1010,
+    "primitive_root": 32,
+    "exact_root_order_verified": true,
+    "producer_607_root122_order101": true,
+    "quartic_nodal_identity": true,
+    "quartic_integral_mod_prime": 1037,
+    "matrix_sha256": "b28ebf3b89dc203575f98512d9f113a6a2e630f2870850fa1d96621d506c8ac9"
+  }
+}

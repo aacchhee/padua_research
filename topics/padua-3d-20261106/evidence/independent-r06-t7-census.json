@@ -1,0 +1,131 @@
+{
+  "rules_input": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "command": [
+    "topics/padua-3d-20261106/code/independent_r06.py",
+    "--t7-census",
+    "--output",
+    "topics/padua-3d-20261106/evidence/independent-r06-t7-census.json"
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "sympy": "1.14.0",
+  "code_sha256": "ed352441b145a900f375eb6bf03543e186976c31824ec9baf2b882fb5d64d296",
+  "controls": {},
+  "t7_census": {
+    "counts": {
+      "groups_seen": 344054,
+      "groups_killed_low_projection": 30582,
+      "groups_killed_no_fold_trace": 112,
+      "groups_covered_prime_block": 824,
+      "quotient_strata_seen": 2705380,
+      "strata_wrong_count": 2510229,
+      "strata_killed_projection": 192793,
+      "target_count_strata": 2358,
+      "strata_killed_fixed_trace": 2342,
+      "strata_full_rank_witness": 4,
+      "groups_killed_high_projection": 294204,
+      "strata_killed_short_relation": 12
+    },
+    "survivors": [
+      {
+        "hnf": [
+          1,
+          4,
+          4,
+          1,
+          1,
+          0
+        ],
+        "phase_stratum": [
+          0,
+          0,
+          0
+        ],
+        "certificate": {
+          "denominator": 16144,
+          "prime": 64577,
+          "root": 81,
+          "nodes": 10,
+          "degree": 2,
+          "rank_lower": 10,
+          "matrix_sha256": "464b5c57c29ed56515052163c80c53fd3068caf1f5ad93db08356c92f59b9d95"
+        }
+      },
+      {
+        "hnf": [
+          1,
+          4,
+          4,
+          1,
+          3,
+          0
+        ],
+        "phase_stratum": [
+          0,
+          0,
+          0
+        ],
+        "certificate": {
+          "denominator": 16144,
+          "prime": 64577,
+          "root": 81,
+          "nodes": 10,
+          "degree": 2,
+          "rank_lower": 10,
+          "matrix_sha256": "464b5c57c29ed56515052163c80c53fd3068caf1f5ad93db08356c92f59b9d95"
+        }
+      },
+      {
+        "hnf": [
+          1,
+          4,
+          4,
+          3,
+          1,
+          0
+        ],
+        "phase_stratum": [
+          0,
+          0,
+          0
+        ],
+        "certificate": {
+          "denominator": 16144,
+          "prime": 64577,
+          "root": 81,
+          "nodes": 10,
+          "degree": 2,
+          "rank_lower": 10,
+          "matrix_sha256": "464b5c57c29ed56515052163c80c53fd3068caf1f5ad93db08356c92f59b9d95"
+        }
+      },
+      {
+        "hnf": [
+          1,
+          4,
+          4,
+          3,
+          3,
+          0
+        ],
+        "phase_stratum": [
+          0,
+          0,
+          0
+        ],
+        "certificate": {
+          "denominator": 16144,
+          "prime": 64577,
+          "root": 81,
+          "nodes": 10,
+          "degree": 2,
+          "rank_lower": 10,
+          "matrix_sha256": "464b5c57c29ed56515052163c80c53fd3068caf1f5ad93db08356c92f59b9d95"
+        }
+      }
+    ],
+    "unresolved": [],
+    "prime_block_separate": "independent-r06-t7-primes.json",
+    "rank_semantics": "maximum/generic stratum rank; exceptional phase loci not classified"
+  }
+}
