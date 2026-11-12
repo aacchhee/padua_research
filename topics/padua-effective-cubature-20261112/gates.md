@@ -59,8 +59,6 @@ It must not contradict D3 at n = 3: no certificate may claim N > 20 for every po
 
 ## Verdicts
 
-(none yet)
-
 ### Q0 verdict — PASS (2026-11-12, orchestrator, at commit 0abf5e7; outputs in the session scratchpad)
 
 - **Q0a.** `timeout 1200 python -B topics/padua-3d-20261106/code/fd1_controls.py --output <scratch>/fd1-controls-replay.json` took 0.6 s on Python 3.13.18 with SymPy (pip, current). Compared with `topics/padua-3d-20261106/evidence/fd1-controls.json`, every field is identical except `seconds_measured`. Code SHA-256 is `e5bf2b92…292d1c`, matching the D1-04 record.
