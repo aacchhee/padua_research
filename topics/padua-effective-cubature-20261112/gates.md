@@ -60,3 +60,13 @@ It must not contradict D3 at n = 3: no certificate may claim N > 20 for every po
 ## Verdicts
 
 (none yet)
+
+### Q0 verdict — PASS (2026-11-12, orchestrator, at commit 0abf5e7; outputs in the session scratchpad)
+
+- **Q0a.** `timeout 1200 python -B topics/padua-3d-20261106/code/fd1_controls.py --output <scratch>/fd1-controls-replay.json` took 0.6 s on Python 3.13.18 with SymPy (pip, current). Compared with `topics/padua-3d-20261106/evidence/fd1-controls.json`, every field is identical except `seconds_measured`. Code SHA-256 is `e5bf2b92…292d1c`, matching the D1-04 record.
+- **Q0b.** `python -B topics/padua-3d-20261106/code/fd3_certify.py check --certificate topics/padua-3d-20261106/evidence/fd3-certificate.json --receipt <scratch>/fd3-replay.json` returned verdict `PASS_EXACT_INTERVAL_NEWTON_AND_RANK`. Code SHA-256 is `b8ca61f9…780db`; certificate SHA-256 is `3677318c…18a7d`.
+- **Q0c.** `python -B topics/padua-effective-cubature-20261112/code/q0_d3_leverage.py --certificate topics/padua-3d-20261106/evidence/fd3-certificate.json --output topics/padua-effective-cubature-20261112/evidence/q0c-d3-leverage.json` gave Σp_j = 10.000… (= D), Σp_j² = 6.11325824, and hence the cube-LP cap **λ₃ ≤ 1.63578890**. M₃ = 160, with all 20 nodes interior. These are MEASURED values at the dyadic centres; the true rule lies within 2^−100.
+
+### Addendum (2026-11-12, before any LP run was reported) — Delsarte variant
+
+After reading KLM 2025 (`literature-effective.md`), the orchestrator added the **Delsarte torus LP** R^Del_{n,K}: the plain LP plus frequencies 2n−2 < |k|₁ ≤ K with c_k ≤ 0 (record `theory/delsarte-bound.md` (a)). Q1a and Q1b apply to it unchanged; lattice rules remain upper references by record -04 (b). The Q2 thresholds are applied to ρ^Del as written for ρ. The plain-LP Q2 literature kill condition ("T(2O) = |O|") is neither met nor refuted: KLM report that it is open.
