@@ -1,0 +1,119 @@
+{
+ "input": "octa_double.func.cpp (arXiv:1510.02331v3 ancillary)",
+ "input_sha256": "034a1aea4fafbf29743bded0812723ac8c9cf95274225213578145d016a7bc47",
+ "alpha": "1001/1000",
+ "control_run": false,
+ "pshift": "0",
+ "gshift": "0",
+ "kappa": 1e-13,
+ "bernstein_degree": 26,
+ "monomials_P": 560,
+ "V": {
+  "P0_exact": "727499879040565781817253633920900195791764321574454951343201016732753704906369/125000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "G0": "[1.00000016634359579709980445022 +/- 1.06e-30]",
+  "gamma1": "[0.0278415686907765546295935969422 +/- 2.59e-32]",
+  "gamma1_gt_1_36": true,
+  "gamma1_minus_1_36": "[6.37909129988e-5 +/- 2.32e-17]"
+ },
+ "sanity_nonproof": {
+  "ft1d_max_rel_err": 5.842535180615875e-27,
+  "ft3d_max_abs_err": 9.459100169806334e-14
+ },
+ "results": {
+  "P_bulk": {
+   "ok": true,
+   "initial_boxes": 524,
+   "processed": 940,
+   "verified": 855,
+   "max_depth": 3,
+   "worst_verified_bound": -2.026629363656835e-05,
+   "seconds": 0.1
+  },
+  "P_slab": {
+   "ok": true,
+   "initial_boxes": 15,
+   "processed": 23,
+   "verified": 22,
+   "max_depth": 1,
+   "worst_verified_bound": -0.0003536793078828414,
+   "seconds": 0.0,
+   "slab_monomials": 3654
+  },
+  "tail_P": {
+   "ok": true,
+   "R": 3,
+   "processed": 182,
+   "worst_bound_per_n": [
+    -18429012.509677902,
+    -364737951.8216448,
+    -3297316368.197735,
+    -18055790185.022842,
+    -66654947797.21166,
+    -175688166741.34985,
+    -340110526834.16223,
+    -489084842921.1089,
+    -522755167134.59393,
+    -410407887561.71356,
+    -230818909774.7189,
+    -87796825745.57796,
+    -20291619643.099033,
+    -2151934723.7186675
+   ]
+  },
+  "tail_G": {
+   "ok": true,
+   "R": 3,
+   "processed": 182,
+   "worst_bound_per_n": [
+    29619718.385857876,
+    654960177.5517633,
+    6271604091.406944,
+    34739188071.61757,
+    124696880855.89943,
+    315272356456.92035,
+    579537563975.2958,
+    782847334310.9307,
+    782428208407.4679,
+    571617540478.8098,
+    296412512855.41644,
+    103934719361.97116,
+    22098385858.205185,
+    2151934723.7186675
+   ]
+  },
+  "G_bulk": {
+   "ok": true,
+   "initial_boxes": 528,
+   "processed": 1244,
+   "verified": 1144,
+   "max_depth": 4,
+   "worst_verified_bound": 0.002030031264832185,
+   "seconds": 0.1
+  }
+ },
+ "claims": {
+  "G": true,
+  "P": true,
+  "V": true
+ },
+ "verdict": "PASS",
+ "script_sha256": "c4079e7b8b5f076762376238f276fd345189bdd56360093ceac2e9a2bc23337e",
+ "versions": {
+  "python": "3.13.18",
+  "numpy": "2.5.3",
+  "python-flint": "0.9.0",
+  "platform": "Linux-6.18.44-fc-v378-x86_64-with-glibc2.39"
+ },
+ "args": {
+  "input": "../dl/octa_double.func.cpp",
+  "out": "/workspace/padua_research/topics/padua-effective-cubature-20261112/evidence/gamma-certificate-indep.json",
+  "R": 3,
+  "RG": 3,
+  "only": "VSPTG",
+  "max_boxes": 5000000,
+  "alpha": "1001/1000",
+  "pshift": "0",
+  "gshift": "0"
+ },
+ "total_seconds": 5.3
+}

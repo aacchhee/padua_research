@@ -33,3 +33,17 @@ AC (2026-11-12): "I authorize up to seven rounds to make gamma explicit". Claude
   - The interior maximum is ≈ −1.8·10⁻⁴, near (0, 0.71, 0.72).
   - So α cannot be lowered below roughly 1.0007 with this function.
 - **Independent rerun:** delegated to a separate Opus agent, with its own code path written from the specification only. Pending.
+
+## Round 3 — bounded improvement attempt (empty; no claim)
+
+- **Idea.** Replace DGOV's SOS restriction with a sampled cut-plane LP in the same class: f = P·e^{−π|x|²}, P in B3 invariants of degree ≤ 26. Maximise 6G(0)/P(0) − 1 subject to P ≤ 0 on |x|₁ ≥ α and G ≥ 0. Code: `code/lp_gamma_explore.py`, HiGHS, raw invariant basis with column scaling.
+- **Outcome: numerically unreliable.**
+  - With α = 1.001 the cut-plane optimum fell to 0.0150 after 25 rounds and was still falling. A known feasible point of that very LP, the DGOV function, has value 0.030926 (orchestrator check: its rows satisfy all sampled constraints, max P·w < 0, min G·w > 0).
+  - An LP relaxation cannot fall below a feasible point, so the solver results are wrong. The likely cause is the ill-conditioned basis: coefficients range over ±10⁶ with heavy cancellation.
+  - No value from this run is reported.
+- **Disposition.** The improvement direction is stopped after this one empty round, with γ₁ = 1/36 (certified) kept as the campaign result. Resume conditions:
+  - a well-conditioned basis (Hermite functions or Laguerre × harmonics) with a high-precision solver (SDPA-GMP or an exact-rational LP);
+  - or a different template (not polynomial × fixed Gaussian).
+  
+  DGOV report that degrees above 26 did not improve their bound (`README_SOSChecking`). The cap remains 1/18 (record -04).
+- **Campaign rounds used:** 3 of 7. Round 1, literature: γ ≥ 1/36 with LITERATURE dependency. Round 2: local certificate. Round 3: empty.
