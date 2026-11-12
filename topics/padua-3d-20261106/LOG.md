@@ -1,7 +1,7 @@
 # Padua-type points in three dimensions: log
 
 - Branch: `codex/padua-3d-20261106` · Base: main `f70a260` (setup base `76ba421`) · Developer: Codex · Auditor: Claude (Opus 5.5 xhigh)
-- Stage: WORK · Next: `Codex (gpt-6-astra, high): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/19-final-narrowed-approved.md](handoffs/19-final-narrowed-approved.md)
+- Stage: AUDIT · Next: `Claude (Opus 5.5, xhigh): Continue codex/padua-3d-20261106.` · Open handoff at publication: [handoffs/20-final-narrowed-audit.md](handoffs/20-final-narrowed-audit.md)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims: provisional records in [report.md](report.md), [report-continuation-04.md](report-continuation-04.md), [report-round06.md](report-round06.md); no final IDs allocated.
 
@@ -999,3 +999,15 @@ their corresponding runs, with publication and execution timing distinguished.
 - D1's exact local theorem is compared with AMO and Kolountzakis as predecessor mechanisms, without an exhaustive priority claim. Some original fulltexts remain inaccessible and are labelled accordingly. D5 counter2/3 record rounds; R3 paper synthesis is prospectively registered.
 
 - D2 R3 mechanical failure: the original invocation failed at all eight baseline entries on NumPy2 batched-solve RHS shape, before proposal objectives. Failed receipt is preserved. A prospective RHS-axis fix keeps seeds/science/caps and charges original1+new499 toward each500-attempt ceiling. No quality failure/kill is inferred from this implementation defect. Repaired run awaits this publication/GO.
+
+## 2026-11-12 — final narrowed output boundary — Codex, gpt-6-astra high
+
+- [Final report](final-narrowed-report.md) and [paper note](paper-note-draft.md) integrate the completed handoff19 programme. Counters D1=4/6,D2=3/3,D3=1/1,D4=2/2,D5=3/3 RECORD; no unused quota is spent or transferred. All earlier construction/optimization/pruning directions remain frozen.
+- D1 local-limit and completeness proofs close the product-Chebyshev eventual excess theorem; [supplemental Astra xhigh audit](final-check/d1-audit.md) passes R1–R4 including the inverse-polynomial weight transfer. General full-support doubling is OPEN, with precise H1/H2 obligations. Non-effective constants give no finite cutoff and no arbitrary-interpolation obstruction.
+- D2 completes every ordered bounded attempt. Its full symmetric-matrix search has poor local measured quality and does not kill the broad family. Original NumPy2 failure and prospective within-budget repair are preserved. Root separately reproduced all20 completed algebra cases, allthree Padua syzygy/minor rows and both best-point quality assessments with another basis/SVD. [Actual checks](final-root-checks.md), [outcome](final-d2/outcome.md). Random n4 caps remain unresolved.
+- D3 finite existence theorem is PROVED after exact independent frozen/Fraction/mutation checks; measuredLambda remains separate. D4 final independent m3 and allQR/exact-arithmetic/scalar checks pass; finite intervals now PROVED with explicit LITERATURE dependency. The final optimizedn12 bound is25.961333–29.062900 outward, combining nonnested meshes. [D4 audit](final-check-d4/audit.md) also closes the explicitly recorded underflow-proof correction without a producer code/data change.
+- D5 closes primary/coverage-labelled sources, scoped fulltext comparison and paper synthesis. It credits the pre-existing n1..15 lattice candidates/reduction, Hilbert–Burch and Fourier/local-limit mechanisms, and keeps inaccessible fulltexts and priority limits explicit. No first-result claim.
+- Response04 disposes G1–G7 and every returned item. Accepted AC decisions are applied. No audit report, frontier record or old handoff instruction body is edited. No final IDs/ranges/shared-registry application/readiness/merge occurs.
+- Stage AUDIT: the next [handoff20](handoffs/20-final-narrowed-audit.md) requests Claude Opus5.5xhigh focused review of this material response and new programme. Existing accepted mathematics is not reopened. Formal Claude acceptance remains separate from supplemental Astra checks. If accepted, Codex prepares registries/reservations/readiness and freezes the direction; only AC merges.
+
+- Final validation: staged-tree code/data master PASS; all14changed/new JSON files parse and fit32KiB; local file links across31changed/new Markdown files resolve apart from the deliberately next-commit handoff20. `git diff --cached --check` passes. The audit04 conservative generated-output suffix class (json/txt/out/gz/stdout/csv) totals **8,672,675 bytes across1760files**, below the provisional10,000,000-byte allowance; master **18,976 bytes**, below32KiB. Largest new generated payload29,229bytes. Raw outputs remain regenerate-only; no cold-storage delivery.

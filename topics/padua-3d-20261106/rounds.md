@@ -168,3 +168,17 @@ Stopping rests on actual results and measured resource boundaries, not
 all-degree exhaustion. n8..109 unrestricted complement and broad phased
 Padua-type existence remain OPEN. No25-round ceiling was treated as a
 target or reset. E4/protocol decisions for AC stay in canonical records.
+
+## Final narrowed D1–D5 programme — completed 2026-11-12
+
+These are the new handoff19 counters, separate from all historical D/T/U/P counters.
+
+| Item | Completed / ceiling | Outcome |
+|---|---:|---|
+| D1 spectral |4/6|finite frame; stationary orthogonal limit; Bessel completeness/source-dependent excess theorem; adversarial consistency and bounded weight transfer|
+| D2 determinantal |3/3|ordered exact 2D/algebra; real/Jacobi probes; full matrix-parameter quality search; mechanical failed run and within-budget repair disclosed|
+| D3 cubic certificate |1/1|one fixed search and exact interval/rank/noncoset certificate; independent exact checks complete|
+| D4 bounds/Lee |2/2|elementary cutoff/restarts plus13 QR and optimizedn12m2; n12m3 tightening; all independent checks complete|
+| D5 source/note |3/3 RECORD|primary/application records; fulltext comparison; final paper synthesis|
+
+The output publication completes the counters. D1's two unused slots and every earlier unused quota remain frozen. Independent replays, mechanical repairs, proof substeps and record integration consume no additional research round. No construction, optimization or pruning is registered or running. [Final report](final-narrowed-report.md) gives exact statuses, limits and resume conditions; formal Claude audit is separate.

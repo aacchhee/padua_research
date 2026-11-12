@@ -1,7 +1,7 @@
 # D2 gate and scope
 
-Rules read at `04ef28b`: developer, Codex gpt-6.1-sol xhigh. Input head
-`04ef28b` (full SHA is recorded by the coordinator). This record precedes D2
+Rules read at `04ef28b6139ad15b8cfc31f865c7bb9ba0d56d9b`: developer,
+Codex gpt-6.1-sol xhigh. This is also the input head. This record precedes D2
 execution. Ownership is limited to this directory, `code/fd2_*.py` and
 `evidence/fd2-*.json`; no shared registry or Git operations.
 

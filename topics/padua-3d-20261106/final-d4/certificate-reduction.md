@@ -76,15 +76,44 @@ implemented Chebyshev recurrence admits errors e0=e1=0 and
 
     e_(k+1) = 2e_k+e_(k−1)+8u(1+max(e_k,e_(k−1))).
 
-Multiplication by2 is exact. The8u allowance bounds the remaining
-multiplication/subtraction even allowing earlier errors; all values stay
-in the normal finite range. With e=max(e_(n−1),e_n), two subsequent
-products give absolute error at most
-3e(1+e)²+γ2(1+e)³, γ2=2u/(1−2u). Nearest-integer rounding to2^-24
-adds at most1/(2S). β is this exact Fraction bound rounded UP to2^-40.
-The NumPy chebvander recurrence, product order and no overflow/underflow
-at the admitted degrees are trusted implementation obligations; an
-independent exact/interval checker should challenge them.
+Multiplication by2 is exact. Write eta=2^-1074 (the minimum positive
+binary64 subnormal), so a rounded operation obeys
+|fl(z)−z|<=u|z|+eta/2. If E=max(e_k,e_(k−1)), the recurrence's two
+remaining operations have total local error at most
+
+    (5u+2u²)(1+E)+(1+u/2)eta <= 8u(1+E).
+
+To obtain the first expression, the product error is bounded by
+2u(1+E)+eta/2; the subtraction error then uses
+|product−previous|<=2(1+E)(1+u)+(1+E)+eta/2.
+The final inequality follows directly from u=2^-53 and eta=2^-1074.
+Thus the code's recurrence error covers arbitrary dyadic inputs in the
+cube, including subnormals and zero. The bound is monotone and
+
+    e_k <= 8u(4^(k−1)−1)/3 < 1/2  (1<=k<=16),
+
+because e_(k+1)<=(3+8u)e_k+8u<=4e_k+8u. Hence no overflow occurs.
+
+With e=max(e_(n−1),e_n), the exact input-error term in multiplying the
+three approximate univariate values is at most(1+e)^3−1. The two rounded
+products introduce at most gamma2(1+e)^3+2eta, with
+ gamma2=2u/(1−2u). Indeed their additional absolute-underflow error is
+at most eta*((1+e)(1+u)+1)/2<=2eta since e<1/2.
+The implemented product bound is the larger
+3e(1+e)²+gamma2(1+e)^3. Its input-error slack3e²+2e³ already exceeds
+2eta for n>=4 (e>=8u), so it covers underflow. Nearest fixed-point
+quantization adds at most1/(2S). The code then rounds this exact Fraction
+bound UP to2^-40. The independent checker additionally verified the
+stronger finite arithmetic condition raw_bound+2eta<=beta(n) for every
+n4..16; see [fdq-underflow-slack.json](../evidence/fdq-underflow-slack.json)
+and code/fdq_underflow.py. It also independently checked that all actual
+retained point and mesh intermediate operations are normal or exact zero,
+[fdq-range-guards.json](../evidence/fdq-range-guards.json).
+
+The NumPy chebvander recurrence and product order are trusted code
+obligations; the installed NumPy2.3.5 source was inspected by developer
+and independent checker and matches the stated operations. These
+arithmetic bounds are separate from floating numerical eigenvalues.
 
 Scalar mpmath interval arithmetic at60 decimal digits encloses π and
 cosines with directed dyadic endpoints. True Lobatto coordinates lie

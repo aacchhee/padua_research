@@ -93,6 +93,7 @@ The following provisional IDs refer to the actual statement/section comparisons 
 | D5-19 | De Marchi–Vianello–Xu arXiv0805.3529v1,20pp. Intro and §2 including Thm2.2 and its proof. |
 | D5-20 | Carnicer–Sauer arXiv1610.01850v2,18pp. Intro, §2 and §3 Thm3.1/cardinal formulas/proof pp4–6. Original Berzolari/Radon papers unread. |
 | D5-21 | Kolountzakis arXiv1606.02452 (web-served PDF14pp). §1.1 spectral packing/tiling identities; density/weak-convergence definitions; entire §2 Thm1 and Lemmas1–5/proofs pp5–9. |
+| D5-22 | Kuperberg arXivmath/0405366v2,15pp. R2 follow-through: §3 Prop3.1/Thm3.2 and explanation p5; §6 Thm6.1/Cor6.2 pp11–13; Scholium6.5 statement/sketch p14. Uniform simplex/simple-polytope local-density result is context, not a verified transfer to Chebyshev measure. |
 
 Additional Li–Xu coverage for D1's general-weight boundary: pp32–34 eq5.11–5.13, Lemma5.5 and definition of Δ*. Here `w(x(t))=∏_(μ<ν)sin²π(tμ−tν)`, the Jacobian is constant×√w, and Δ* is the orbit-coordinate image of the A_d simplex. The read weighted inner products are normalized `w^α dx`, α=±1/2, on that curvilinear full-dimensional domain. No general doubling theorem or cube universality premise was read or asserted.
 

@@ -1,0 +1,1 @@
+{"verdict":"PASS","reviewer":"Codex root gpt-6-astra high separate exact HB replay","command":"runpy.run_path(code/fd2_exact.py); [padua(n) for n in (2,3,4)]; compare producer padua rows","source_sha256":"975586453eb0294afb636481de2c515b2bcb4d7615203b9ad654c9362c993f62","degrees":[2,3,4],"all_exact_rows_match":true,"seconds":0.45139850900022793}

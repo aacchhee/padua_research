@@ -1,0 +1,20 @@
+# Root integration and independent D2 checks — 2026-11-12
+
+Codex coordinator, gpt-6-astra high; rules/input04ef28b6139ad15b8cfc31f865c7bb9ba0d56d9b. These are supplemental checks, not formal Claude acceptance. Root did not develop D2 science. No new mechanism was generated; this verification checks the fixed producer inputs and exact existing claims.
+
+## Actually executed independent checks
+
+1. D1 controls: a separate `python topics/padua-3d-20261106/code/fd1_controls.py --output /tmp/padua-fd1-controls-root.json` run agreed on all seven exact rows. The distinct Astra reviewer also reran them into committed `evidence/fdc-d1-controls.json`. Analytic D1 proof acceptance within supplemental scope is in [its independent audit](final-check/d1-audit.md), not supplied by root's control run.
+2. D2 exact algebra: root independently executed all20 producer cases whose recorded outcome was completed, using each `n/type/family/field` and `python -B code/fd2_exact.py --child n type family field`. Every mathematical/non-timing returned field matched the frozen producer JSON exactly. Actual92.8136006seconds, single BLAS/OMP thread. Four capped random n4 cases were not repeated or upgraded. Full actual commands and input/code hashes: [receipt](evidence/fdr-d2-exact-replay.json). No new cubature or global family statement follows.
+3. D2 Hilbert–Burch: separately loaded frozen `fd2_exact.py` with `runpy.run_path`, executed `padua(n)` for n2/3/4, and compared all exact matrix/syzygy/minor rows to producer `padua`; every row matched. [Receipt](evidence/fdr-d2-padua-replay.json), actual0.4514seconds. This is a separate execution of the committed checker, not a different symbolic implementation.
+4. D2 quality: a different monomial basis and SciPy SVD inverse, instead of producer Chebyshev basis and inversion, evaluated the stored best nodes on all41³cosine-grid+512uniform queries, seed202611120204+n. For matrix M with SVD U diag(s) V*, root used V diag(1/s) U* to form cardinals. Found5478.148340739174 at n3 and546899.5809121559 at n4, agreeing within1e−6relative. Direct SVDs of every stored symmetric pencil value also pass corank-two, rank-not-lower, count and cube guards. [Receipt](evidence/fdr-d2-quality-replay.json) pins the actual input and environment. These remain MEASURED lower samples, not certified suprema or complete projective-node counts.
+
+The D2 quality computation is reproduced from the retained `best.nodes` and `best.matrix`: enumerate nonnegative monomial exponents of total degree<=n; form the node/query monomial matrices; use the SVD inverse above; take max row absolute sum. Queries are `itertools.product(cos(linspace(0,pi,41)),repeat=3)` followed by `default_rng(202611120204+n).uniform(-1,1,(512,3))`. The numerical root assessment did not rerun the optimization schedule or replace its retained failed execution.
+
+D3 and D4 independent arithmetic/rerun/rejection checks belong to their distinct Astra reviewers: [D3](final-check/d3-audit.md), [D4](final-check-d4/audit.md). Root inspected those completed reports before applying PROVED / PROVED with explicit LITERATURE dependency to the finite theories. Normal CPython optimize0 is essential for the assertion-based frozen checkers.
+
+## Publication integrity
+
+At each code/data checkpoint root generated the master from a disposable `git checkout-index --all` copy, copied the generated master back into the index, and verified the disposable exact index tree. This excludes another worker's untracked/partial files from the publication and detects missing tracked payloads. The v4–v7 codec/mutation/frozen-tree checker also actually passed after applying the approved32KiB topic allowance. No identities or inherited inputs were discarded. The master pins code/data only, not acceptance prose.
+
+The final output checkpoint additionally runs staged-tree master verification, generated-output inventory, `git diff --check` and local Markdown file-link validation. Actual final results are recorded in LOG; no external cold-storage delivery is claimed.

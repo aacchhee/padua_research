@@ -30,7 +30,14 @@ The producer protocol was published at `db8c3cc`. Audited input hashes:
 |---|---|
 | code/fd3_certify.py | b8ca61f9c46610f20e81ea234ae6a583b3003095947317951d74cf72fbd780db |
 | evidence/fd3-certificate.json | 3677318c6dcf793f256750c0f270eb9be8eaa1143534428fcc096e497aa18a7d |
-| final-d3/theory.md, read version | dfc95cd7aaa781a64c70e2d84e9caf0c163f261a372a5128eb772e21044b1b1c |
+| final-d3/theory.md, final reread version | c0e87fa4ab2c29d3b9d79cdaa170b1aa1855758d5a3b3d5e8c105e9e6efd49e9 |
+
+The original reviewed theory hash was
+`dfc95cd7aaa781a64c70e2d84e9caf0c163f261a372a5128eb772e21044b1b1c`.
+The complete final theory was reread after its audit-status and normal
+CPython execution notes were added. The frozen checker/certificate
+hashes remain unchanged; no numerical rerun is needed for those prose
+updates. Its finite proof and execution boundary agree with this audit.
 
 Executed from `/workspace/padua_research`:
 

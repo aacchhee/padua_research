@@ -99,16 +99,20 @@ The independent written proof above is the evidence for the all-n statement.
 The planned n2/3/4 exact input checks in `fd2_real.py` are supplementary;
 their actual receipts are recorded in the outcome file, not assumed here.
 The n2/3/4 R1 Groebner checks already yield dimensions10/20/35 for each
-family over Q and GF(1000003). Those exact executions alone await independent
-rerun and do not establish any random n4 statement.
+family over Q and GF(1000003). The coordinator has now actually replayed
+all20 completed pipelines with identical non-timing fields, including
+these12 structured cases
+([receipt](../evidence/fdr-d2-exact-replay.json)). This does not establish
+any random n4 statement. Its written-proof review found the argument
+coherent; formal topic audit remains separate.
 
 ## Scope and open items
 
 All-real-in-cube existence is therefore not an obstruction for the full C2
 families. The known natural lattice may have very poor Λ. Neither positive
 cubature, Chebyshev Jacobi sections, sparse higher-dimensional recurrences,
-nor a log³ bound follows. Independent audit and measured parameter search
-remain separate obligations.
+nor a log³ bound follows. The independent formal audit remains separate;
+the completed bounded measured parameter search has its own record.
 
 ## History
 

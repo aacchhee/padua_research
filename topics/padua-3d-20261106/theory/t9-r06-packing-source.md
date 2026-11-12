@@ -2,7 +2,7 @@
 
 Aliases: T9-R06-P; T9-R06-TH01. Scoped obstruction: PD-N?padua-3d-20261106-codex-T9-r06-04 (strictly positive full-support unshifted minimal cubature n>=110). Supporting lemma: PD-T?padua-3d-20261106-codex-T9-r06-02.
 
-Status: **PROVED with the explicitly imported LITERATURE theorem below**. No conjectural packing premise remains in this new source-dependent record. It does not silently change the status or dependencies of T9-03 or `t9-packing-conditional.md`.
+Status: **PROVED with explicit LITERATURE dependency** on the theorem below. No conjectural packing premise remains in this new source-dependent record. It does not silently change the status or dependencies of T9-03 or `t9-packing-conditional.md`.
 
 ## Imported theorem and source coverage
 
