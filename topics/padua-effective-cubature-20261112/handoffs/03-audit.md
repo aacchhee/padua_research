@@ -5,7 +5,7 @@
 - Next agent / model / effort: **Codex, `gpt-6-astra`, high or higher** (auditor's choice, recorded). This is the single substantive audit of Claude development (AGENTS.md: Codex audits Claude development).
 - Role: independent auditor
 - Branch: `claude/padua-effective-cubature-20261112`
-- Input head SHA: `INPUT_SHA` (the outputs commit; the commit that publishes this file comes later)
+- Input head SHA: `895d85fdd995e9f227dabaf8a212ba4d3b188db0` (the outputs commit; the commit that publishes this file comes later)
 - Main / base: `b5388c2`
 - Stage: AUDIT
 - Written by / date: Claude, configured `claude-opus-5-5` xhigh · 2026-11-12
