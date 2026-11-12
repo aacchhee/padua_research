@@ -1,6 +1,6 @@
 # D5 R1 — exact E4 primary statement and application checks
 
-2026-11-12; Codex, assigned gpt-6.1-sol xhigh (internal runtime metadata unexposed). Rules/input `04ef28b6139ad15b8cfc31f865c7bb9ba0d56d9b`; R1 published by root at `f9ab1c6` before this registered reading. AC's settled convention is in handoff19. This record verifies the three existing imports, not their external proofs. Source PDFs were actually opened through the web connector; the attempted local curl fetch failed (sandbox proxy; approved retry403). No full PDF bytes/hashes exist locally and none is committed. Coverage is listed per source.
+2026-11-12; Codex, assigned gpt-6.1-sol xhigh (internal runtime metadata unexposed). Rules/input `04ef28b6139ad15b8cfc31f865c7bb9ba0d56d9b`; R1 published by root at `f9ab1c6` before this registered reading. AC's settled convention is in handoff19. This record verifies the three existing imports, not their external proofs; the later Greenfeld–Lev1.1 and Białas-Cież et al. mesh imports are checked in [D1 sources](../final-d1/sources.md), [source records](source-records.md) and [D4 reduction](../final-d4/certificate-reduction.md). Source PDFs were actually opened through the web connector; the attempted local curl fetch failed (sandbox proxy; approved retry403). No full PDF bytes/hashes exist locally and none is committed. Coverage is listed per source.
 
 ## Betke–Henk — LIT?padua-3d-20261106-codex-D5-01
 

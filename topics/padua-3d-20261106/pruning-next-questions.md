@@ -261,4 +261,4 @@ are distinct. No certificate, replay, delivered subset or size test here.
 Priority: Pareto triage; changed support for a matched-count need; pairs
 only after a cheap positive discriminator. Stop below fifteen when warranted.
 
-Audit04 G7 history 2026-11-12: next-01 became P3/P4, next-03 became the completed P5 screen; next-02 is deferred. Current consolidated outcomes and historical provisional aliases are in [pruning-candidates.md](pruning-candidates.md). Prospective “Actual results: none” paragraphs above remain registration-time history, not current outcomes.
+Audit04 G7 history 2026-11-12: next-01 became P3/P4, next-03 became the completed P5 screen; next-02 is deferred (its earlier disposition read “equal-order comparison retained; richer pool deferred pending positive support evidence or a specific coverage need.”). Current consolidated outcomes and historical provisional aliases are in [pruning-candidates.md](pruning-candidates.md). Prospective “Actual results: none” paragraphs above remain registration-time history, not current outcomes.

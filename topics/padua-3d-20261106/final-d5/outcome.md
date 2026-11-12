@@ -19,7 +19,7 @@ Cools–Lyness2001 already supplies the shortest-dual-l1/packing reduction and t
 
 AMO's exact polynomial-kernel blow-up and Kolountzakis's packing-to-tiling compactness are close primary predecessors of D1. The local completed obligation is near-critical positive Chebyshev frames to a stationary orthogonal law with preserved critical mean intensity and completeness. D1 is source-dependent, non-effective, cube/Chebyshev-specific; neither an interpolation-norm obstruction nor the general doubling theorem follows.
 
-IDEA-199 already derived recurrence-residual Hilbert–Burch pencils/linear syzygies. The new note corrects the historical scout's overly broad 'never derived' description without editing protected history. D2's finite exact checks remain MEASURED pending independent replay; its known natural-lattice proof is separate. Its actual bounded poor-quality paths do not reject the broad matrix family.
+IDEA-199 already derived recurrence-residual Hilbert–Burch pencils/linear syzygies. The new note corrects the historical scout's overly broad 'never derived' description without editing protected history. D2's finite exact checks remain MEASURED; root's separate replay is recorded in [final-root-checks](../final-root-checks.md); its known natural-lattice proof is separate. Its actual bounded poor-quality paths do not reject the broad matrix family.
 
 D3 is a proved finite nonlattice cubic positive rule; sampledΛ≈30.0121 is MEASURED. D4 certifies the exact retained optimized n12 set by the outward interval[25.961333,29.062900], with explicit mesh-source dependency and completed supplemental replay; QR fallbacks and unavailable historical optimized sets are distinguished. Formal Claude acceptance remains separate for new final-stage results.
 
@@ -27,7 +27,7 @@ D3 is a proved finite nonlattice cubic positive rule; sampledΛ≈30.0121 is MEA
 
 Actually opened primary theorem/definition text for Li–Sun–Xu, Li–Xu, GT, KPUU, Dolbeault–Chkifa, Horak–AlBdaiwi, Bel-Afia–Meroni–Telen, GL, LM, AMO, Marzo, Białas-Cież et al., ORSV, BH, Chkifa, KL, Cools–Lyness, Poppe–Cools, Dencker–Erb, DMVX, Carnicer–Sauer, Kolountzakis and Kuperberg, at the locators in the detailed record. Cools–Lyness was recovered through the author's uploaded fulltext after publisher/CiteSeer failure. Web PDF/text reading does not imply a local PDF byte hash or full external proof verification.
 
-Wang–Wang–Wang2014 exact theorem/regularity, original Golomb–Welch fulltext, Gravier–Mollard–Payan exact tile definitions/proof and Cools–Poppe2011 fulltext remain gaps. Their metadata/abstracts are labelled as such and do not carry a proof dependency. Other unread original references and crystallographic/code predecessors prevent an exhaustive novelty verdict.
+Wang–Wang–Wang2014 exact theorem/regularity, original Golomb–Welch fulltext, Gravier–Mollard–Payan exact tile definitions/proof and Cools–Poppe2011 fulltext (beyond LIT-381's partial §3.2/Table2/§6 reading) remain gaps. Their metadata/abstracts are labelled as such and do not carry a proof dependency. Other unread original references and crystallographic/code predecessors prevent an exhaustive novelty verdict.
 
 ## Validation and stop
 

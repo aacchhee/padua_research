@@ -86,8 +86,8 @@ It is continuous and bounded on X_b. This follows from vague convergence, unifor
 
 ## What remains and what was avoided
 
-No far-field sum was passed through a limit. No deterministic 'orthogonal plus critical Beurling density implies complete' assertion was used. Neither completeness nor spectrality is a conclusion of this record; those require the separate Bessel/mean-intensity argument. It remains to show that at least one realization is complete, apply the checked spectral obstruction, and run the consistency/quantifier reconstruction. General doubling weights remain outside this torus lemma.
+No far-field sum was passed through a limit. No deterministic 'orthogonal plus critical Beurling density implies complete' assertion was used. Neither completeness nor spectrality is a conclusion of this record; those require the separate Bessel/mean-intensity argument. It remains to show that at least one realization is complete, apply the checked spectral obstruction, and run the consistency/quantifier reconstruction. General doubling weights remain outside this torus lemma. [Superseded 2026-11-12 (audit-05): completed in D1-03/D1-04 and the R4 [reconstruction](reconstruction.md); current status in the [D1 README](README.md); this line is retained as round history.]
 
 ## Checks and history
 
-Analytic R2 only, no computation. R2 protocol published/pushed at `db8c3cc` before root GO and this proof. Codex, assigned gpt-6.1-sol xhigh, 2026-11-12. The original D1 target is still recorded as OPEN pending completeness and the final source-dependent application.
+Analytic R2 only, no computation. R2 protocol published/pushed at `db8c3cc` before root GO and this proof. Codex, assigned gpt-6.1-sol xhigh, 2026-11-12. The original D1 target is still recorded as OPEN pending completeness and the final source-dependent application. [Superseded 2026-11-12 (audit-05): completed in D1-03/D1-04 and the R4 [reconstruction](reconstruction.md); current status in the [D1 README](README.md); this line is retained as round history.]

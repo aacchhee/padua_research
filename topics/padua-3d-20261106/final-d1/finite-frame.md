@@ -2,7 +2,7 @@
 
 ID kind: PD-T. Aliases: D1-FRAME; Christoffel defect sum; sign-orbit unfolding.
 Split from: C1's supporting finite identities in the frontier assessment.
-Split into: none. Original asymptotic target remains OPEN in the D1 ledger until its limit proof is complete.
+Split into: none. Original asymptotic target remains OPEN in the D1 ledger until its limit proof is complete. [Superseded 2026-11-12 (audit-05): completed in D1-03/D1-04 and the R4 [reconstruction](reconstruction.md); current status in the [D1 README](README.md); this line is retained as round history.]
 
 ## Statement, definitions and assumptions
 
@@ -49,7 +49,7 @@ In particular, boundary stabilizers cause no missing leading-order mass: this fo
 
 The first identity works for any positive-definite polynomial measure; the reflection lift uses the exact product Chebyshev measure. It does not prove a local octahedral limit for a general doubling weight. Signed weights do not supply these positive projections.
 
-The deterministic exact controls are `../code/fd1_controls.py` and `../evidence/fd1-controls.json`. They check finite examples only and are not premises of the proof. Independent execution is requested from root. Next unresolved D1 step: a separated high-leverage local limit with a complete exponential basis, including density/completeness rather than orthogonality alone.
+The deterministic exact controls are `../code/fd1_controls.py` and `../evidence/fd1-controls.json`. They check finite examples only and are not premises of the proof. Independent execution is requested from root. Next unresolved D1 step: a separated high-leverage local limit with a complete exponential basis, including density/completeness rather than orthogonality alone. [Superseded 2026-11-12 (audit-05): completed in D1-03/D1-04 and the R4 [reconstruction](reconstruction.md); current status in the [D1 README](README.md); this line is retained as round history.]
 
 ## History
 

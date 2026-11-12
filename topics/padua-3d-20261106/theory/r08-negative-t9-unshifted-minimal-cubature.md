@@ -65,7 +65,7 @@ D3: in dimension2 the unit l1 ball has area2 and the lattice-packing bound is de
 
 ## Open items
 
-The finite complement n<=109 is not classified by this theorem; handoff08's separately assigned unrestricted probes own its new evidence. Arbitrary phases and removal of the identity through zero masses are not covered. E4's exact source-dependent label is pending AC’s convention decision; it must never be shortened to bare PROVED.
+The finite complement n<=109 is not classified by this theorem; handoff08's separately assigned unrestricted probes own its new evidence. Arbitrary phases and removal of the identity through zero masses are not covered. E4's exact source-dependent label was settled by AC on 2026-11-08 (dated E4 section below); it must never be shortened to bare PROVED.
 
 ## History
 

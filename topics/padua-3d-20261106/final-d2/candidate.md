@@ -44,8 +44,7 @@ diagonal-plus-rank-one symmetroid; compatible Jacobi extension probe.
 - Cheapest decisive test: exact n2/3/4 syzygies and minor reproduction,
   followed by the declared exact algebra before numerical real/quality work.
 - Kill criterion written before testing: as [protocol.md](protocol.md).
-  All four ordered steps must be attempted. The second kill needs BOTH an
-  established absence of exploitable2D structure and quality>8.10/10.18.
+  All four ordered steps must be attempted. The second kill needs BOTH that the 2D calibration shows no exploitable structure (handoff 18 wording) and quality>8.10/10.18.
   The first needs failure to find a real cube configuration atn3 or4.
 - Test discriminability: the exact explicit configuration separates real
   existence from a random-search miss. Standard monomials and radicality
@@ -68,7 +67,7 @@ diagonal-plus-rank-one symmetroid; compatible Jacobi extension probe.
   approved freeze. Real-existence kill is false and the conjunctive
   2D/quality kill is not asserted because its 2D premise is unestablished.
 - Disposition reason: retain finite exact/real outcomes; defer the broad
-  Padua-transfer target unless actually closed. Neither generic real
+  Padua-transfer target unless actually closed; resume only under the recorded freeze conditions ([frontier](../frontier-assessment.md) resume conditions; [report](../final-narrowed-report.md)). Neither generic real
   existence nor sparse finite 2D syzygies is new Padua-quality evidence.
 - Canonical theory / negative-result ID: supporting known realization
   PD-T?padua-3d-20261106-codex-D2-real-01 in

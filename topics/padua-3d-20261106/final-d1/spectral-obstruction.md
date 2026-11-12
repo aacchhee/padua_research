@@ -53,7 +53,7 @@ The proof is analytic. The seven exact finite controls in `../evidence/fd1-contr
 
 The constants are non-effective. No finite n is ruled out by an explicit threshold here; this does not upgrade the old n<=109 complement classification. No sharp 1/4 leading constant, signed-weight result, minimal interpolation norm lower bound or impossibility of polylogarithmic interpolation follows. The argument does not cover exactness only through 2(1-eta)n for a fixed eta>0. General doubling weights require another local-limit argument and are not included.
 
-The mandatory final reconstruction still checks 2-D Padua, sphere/disk literature, the source/novelty gate and each compactness/quantifier passage. Any material gap found there must return this consequence to CONDITIONAL or OPEN as appropriate, while separately proved supporting lemmas retain their own statuses.
+The mandatory final reconstruction still checks 2-D Padua, sphere/disk literature, the source/novelty gate and each compactness/quantifier passage. Any material gap found there must return this consequence to CONDITIONAL or OPEN as appropriate, while separately proved supporting lemmas retain their own statuses. [Superseded 2026-11-12 (audit-05): completed in D1-03/D1-04 and the R4 [reconstruction](reconstruction.md); current status in the [D1 README](README.md); this line is retained as round history.]
 
 ## History
 

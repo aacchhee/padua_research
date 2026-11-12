@@ -43,7 +43,7 @@ Aliases: assessment C7; D3; S1 I2; unrestricted positive moment fitting;
   and nonlattice checks. Producer and developer replay both completed.
   [Execution record](runs.md) pins the certificate, commands and results.
 - Disposition: retained, successful finite certificate; one of one rounds
-  consumed. Independent rerun and formal audit remain verification work.
+  consumed. Independent reruns and formal audit completed: [supplemental](../final-check/d3-audit.md), [audit-05](../audit-05.md).
 - Canonical theory: [certificate theorem](theory.md); no final ID.
 - Topic / history: handoffs 19/18, approved final narrowed set;
   2026-11-12 Codex, assigned gpt-6.1-sol high, input 04ef28b.

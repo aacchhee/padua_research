@@ -40,15 +40,14 @@ the receipt. For example, atn4 the 6×5 matrix is
 [   0,    0,      0,    1,    x]
 ```
 
-The n2/3/4 matrices have10/14/18 nonzero entries, respectively, versus
-12/20/30 total. All syzygy products vanish exactly and signed maximal minors
+The n2/3/4 matrices have10/14/18 nonzero entries, respectively, versus 12/20/30 total. These counts refer to SymPy's RREF nullspace basis in the per-generator (1,x,y) unknown order. Other RREF orders give 9/13/17 or more, so sparsity is basis-dependent, not an invariant (audit-05). All syzygy products vanish exactly and signed maximal minors
 equal the generators times a nonzero rational constant. These finite exact
 executions are **MEASURED exact-arithmetic checks**; their independent
 Padua-syzygy replay also passed ([receipt](../evidence/fdr-d2-padua-replay.json)). The coordinator separately replayed the20
 algebra cases recorded below. No all-n structural theorem follows. They expose sparse Chebyshev structure,
 but neither a higher-dimensional compatible recurrence nor a successful
 3D embedding has been derived. The premise “no exploitable2D structure” is
-therefore **not established**. Sparsity alone does not settle that premise.
+therefore **not established**. Sparsity alone does not settle that premise. D2 did not construct or test a 3D analogue of the Padua Hilbert–Burch shape. R2/R3 used ORSV, tensor-Chebyshev Jacobi and natural-lattice inputs as specified, so the exploitability conjunct is undetermined (audit-05).
 
 The gate corrects a material predecessor omission: IDEA-199 already derived
 Hilbert–Burch pencils from recurrence residuals and genuine linear syzygies

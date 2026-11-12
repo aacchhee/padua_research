@@ -81,7 +81,7 @@ selected sets certified at two splitting primes. No random fallback was used.
 |---|---|---:|---|
 |3|(1,4,11)|9.788798269|reproduces the audit lead; exact determinant tie-break|
 |5|(1,10,49)|70.372944840|loses QR; excludes promising status|
-|7|(1,17,212)|136.690399705|loses QR and Leja|
+|7|(1,17,212); current label (1,17,28) by exact x3-reflection ([audit04 G1](attempts/T8-round08.md#audit04-g1--n7-exact-tie-label-correction-2026-11-12))|136.690399705|loses QR and Leja|
 
 The literal two-Leja-loss trigger did not fire: only n7 is eligible>=6
 within3..8. No asymptotic rate or universal quality rejection follows.

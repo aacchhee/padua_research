@@ -98,8 +98,7 @@ Pi_3-unisolvent. No tolerance-dependent numerical rank is used.
 
 ## Nonlattice proof
 
-The checker chooses two fixed rational coordinates a,b on the same
-axis. It verifies D=(1-a^2)(1-b^2)>0 is not a rational square and
+The checker chooses two fixed rational coordinates a,b (distinct from the torus shift in the Statement, written a0 below) on the same axis. It verifies D=(1-a^2)(1-b^2)>0 is not a rational square and
 4ab is nonintegral. Both tests use exact reduced fractions and
 integer square roots. For theta=arccos(a), phi=arccos(b),
 
@@ -163,7 +162,7 @@ are proposal generators, not proof dependencies.
 The general all-degree Padua target stays OPEN. No quality conclusion
 follows from exact cubature or rank. No historical priority is claimed;
 the existing S1 scout mechanism and IDEA-029/120 remain predecessors.
-Runs needed: focused formal Claude audit; the independent exact reruns are complete.
+Runs needed: none. The formal Claude review ([audit-05](../audit-05.md)) added a further independent exact reconstruction.
 The one registered producer and developer replay have completed. D3 stops
 with success after one round; no refinement of quality or higher degree is
 launched. The remaining verification obligation does not reopen research.

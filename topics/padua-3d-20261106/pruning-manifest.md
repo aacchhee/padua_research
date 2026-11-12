@@ -97,3 +97,5 @@ code and receipt are essential evidence in the same recursive scope as the
 campaign; future final generation must include them. Scope remains identity
 verification only: this is neither a proof nor archival delivery nor an
 independent audit.
+
+Dated note 2026-11-12: under AC's approved 32 KiB allowance (LOG 2026-11-08, 2026-11-12) `artifact_manifest.py` and `pdpr_manifest_check.py` use 32,768-byte limits; the committed receipt above records the earlier 16 KiB checker (SHA256 `165d444a…4968`). Current-checker runs are regenerate-only; at 32 KiB the plus-40 fixture fits (20,764 bytes), so the oversize-rejection control no longer fires.

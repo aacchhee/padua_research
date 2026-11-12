@@ -30,4 +30,3 @@ Mandatory controls: admit 2-D Padua; check exact defect sums on actual topic lat
 ## Dated primary follow-through, before final claim wording
 
 The primary statement/normalization/application checks and closest-proof reads are complete at the bounded coverage in sources.md: GL1.1 and LM1.1; AMO's ball-kernel blow-up proof; Kolountzakis's high-density packing compactness; Marzo's sphere p!=2 distinction; Kuperberg's lattice and positive local-density precedents. AMO/Kolountzakis remove any novelty claim for the general blow-up/compactness principles. C1 remains the assigned continuation concerning nearcritical positive Chebyshev frames. Its completed local proof and exact scope are spectral-obstruction.md; arbitrary full-support doubling remains OPEN in general-weight-open.md. External historical novelty remains unestablished.
-
