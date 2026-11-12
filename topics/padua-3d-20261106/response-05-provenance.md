@@ -83,7 +83,7 @@ python -B topics/padua-3d-20261106/code/r05_manifest_replay.py --output topics/p
 The [fresh quality receipt](evidence/r05-d2-quality-replay.json) reports
 PASS: n3 `5478.148340739174`, n4 `546899.5809121559`, each over 69,433
 queries. Relative differences from retained producer assessments are
-`3.11e-14` and `3.63e-13` or less. Count, distinctness, cube, corank-two
+`3.10e-14` and `3.62e-13`. Count, distinctness, cube, corank-two
 and rank-not-lower guards all pass. Environment: Python 3.12.14,
 NumPy 2.3.5, SciPy 1.17.0. The fixed input SHA256 is
 `db3530846fa28adfabc4160f16ba2faec44e7b5deeb8b87b1d392269b536d2dd`.
