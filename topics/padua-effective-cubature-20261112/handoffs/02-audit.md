@@ -5,7 +5,7 @@
 - Next agent / model / effort: **Codex, `gpt-6-astra`, high or higher** (auditor's choice, recorded). This is the single substantive audit of Claude development (AGENTS.md: Codex audits Claude development).
 - Role: independent auditor
 - Branch: `claude/padua-effective-cubature-20261112`
-- Input head SHA: `INPUT_SHA` (the outputs commit; the commit that publishes this file comes later)
+- Input head SHA: `061b2f4a925571e444e39440979697de72d32da9` (the outputs commit; the commit that publishes this file comes later)
 - Main / base: `b5388c2`
 - Stage: AUDIT
 - Written by / date: Claude, configured `claude-opus-5-5` xhigh · 2026-11-12
@@ -52,7 +52,7 @@ python -B topics/padua-3d-20261106/code/fd1_controls.py --output <scratch>/fd1-c
 python -B topics/padua-3d-20261106/code/fd3_certify.py check --certificate topics/padua-3d-20261106/evidence/fd3-certificate.json --receipt <scratch>/fd3-replay.json
 python -B topics/padua-effective-cubature-20261112/code/q0_d3_leverage.py --certificate topics/padua-3d-20261106/evidence/fd3-certificate.json --output <scratch>/q0c.json
 python3 -B topics/padua-effective-cubature-20261112/code/cap_critical_lattice.py <scratch>/cap.json
-cd topics/padua-effective-cubature-20261112 && python3 -B code/pdn_lattice_witness.py --nmin 2 --nmax 140 --extra evidence/lp-lattice.json --perturb --out <scratch>/witness-full.json   # about WITNESS_TIME
+cd topics/padua-effective-cubature-20261112 && python3 -B code/pdn_lattice_witness.py --nmin 2 --nmax 140 --extra evidence/lp-lattice.json --perturb --out <scratch>/witness-full.json   # about 13 min; then the checker about 3 min
 cd topics/padua-effective-cubature-20261112 && python3 -B code/pdn_check_ball.py --full <scratch>/witness-full.json --out <scratch>/pdn-check.json   # compare with evidence/pdn-lattice-witness.json
 python3 -B topics/padua-effective-cubature-20261112/code/evidence_manifest.py --verify
 cd topics/padua-effective-cubature-20261112 && python3 code/lp_torus.py --q1a --out <scratch>/q1a.json && python3 code/lp_cube.py --q1a

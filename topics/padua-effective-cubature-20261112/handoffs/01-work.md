@@ -1,6 +1,6 @@
 # Handoff 01 — padua-effective-cubature-20261112 — effective Theorem A, and the Padua Lebesgue-constant corollary
 
-- Status: open
+- Status: done in `061b2f4a925571e444e39440979697de72d32da9` (session-1 outputs; audit continues in [02-audit.md](02-audit.md))
 - Previous handoff: none (new topic)
 
 - Next agent / model / effort: **Claude** (another Claude thread, as AC requested).
