@@ -106,5 +106,15 @@
 
 ## Runs needed
 
+## 2026-11-13 — Codex — independent audit in progress
+
+- Request: `Codex (gpt-6-astra high): Continue claude/padua-effective-cubature-20261112.` Role: audit orchestrator; four bounded independent mathematical/technical checks use `gpt-6-astra`, high. The parent runtime does not expose a verifiable exact model/effort identifier; the requested model and effort are explicitly selected for all audit workers.
+- Rules read at full branch head `8b27da5ea2e0d363d2a416482b176466dc33efa9`; candidate `895d85fdd995e9f227dabaf8a212ba4d3b188db0`. Fetched current main and topic on 2026-11-13; main/base remains `b5388c25a2a5ccb8d0faf816ab87023cf347bcd3`, an ancestor of the topic. No merge needed. No IDs reserved or assigned (no range).
+- This session adds no new mechanism. The novelty-bearing development is being checked by a worker assigned the complete `state/IDEAS.md`, related entries and the development gates; the other workers have bounded proof/computation scopes.
+- [audit-work/transference.md](audit-work/transference.md): independent reconstruction accepts -02/-03/-04 with their declared dependencies; primary-source checks and cap rerun pass. Returns the -05 compact-support target closure mismatch and a sufficient-versus-necessary wording issue.
+- Full finite witness regeneration and the remaining checks are in progress; handoff 03 remains open. Generated rerun outputs stay under `/tmp/padua-audit-*`. The arXiv coefficient download is blocked in this environment; a missing replay will be reported as a limitation, never as PASS.
+
+## Runs needed (retained development list)
+
 - Delsarte torus LP n = 9…12 at K = 3n−2 (`attempts/E1.md`); cube LP n ≥ 5 and its Delsarte extension (`attempts/E3.md`); certified φ (-05).
 - Cold-storage archival of the scratchpad LP receipts (`runs/*.json`, `*.npz`): pending, AC's storage was not reachable from this session. They are regenerable from the committed code and commands in `evidence/lp-torus.json` and the subagent report summarised above.
