@@ -1440,12 +1440,22 @@ For signed Padua rules on the square, whose $x$-marginal is the
 Clenshaw--Curtis rule with doubled weights, the corresponding endpoint
 problem behaves very differently; it is treated in a companion paper.
 
-\paragraph{Reproducibility and claim identification.}
-The accompanying README gives exact compilation and numerical commands,
-artifact hashes, and links to the theory and evidence. The final
-\id{PD-T}/\id{PD-N} identifiers in theorem headings refer to the durable
-repository claims; bibliography keys use the final \id{LIT} allocation.
-These identifiers do not confer publication or audit readiness.
+\paragraph{Data and code availability}
+% Commit hash and Zenodo DOI: placeholders for AC (no deposit exists yet).
+Code and evidence are in the public repository
+\url{https://github.com/aacchhee/padua_research} at commit
+\texttt{[to be fixed at submission]}, archived as \texttt{[Zenodo DOI to be added]}.
+The certificate of Proposition~\ref{prop:edge-certified}
+(Appendix~\ref{app:certificate}) is in
+\path{topics/padua-mz-sharp-constants-20261106/}: the exact trial vector
+\path{evidence/P4-trial-J512.json}; the producer
+\path{code/P4_rayleigh.py} with the interval and scalar library
+\path{code/interval_dyadic.py}; the second checker
+\path{code/P4_check_grouped.py}; and the receipts
+\path{evidence/P4-rayleigh.json}, \path{evidence/P4-grouped-check.json} and
+\path{evidence/check-P4-independent.json}. The measurements in
+Table~\ref{tab:cc} are produced by \path{tracks/mz-constants/code/reproduce.py}.
+All other results are proved analytically.
 
 \appendix
 
