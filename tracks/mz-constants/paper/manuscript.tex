@@ -1,7 +1,7 @@
 \documentclass{siamart251216}
 \usepackage{microtype}
 \usepackage{amsmath,amssymb,mathtools,booktabs,array}
-\hypersetup{pdfsubject={Audited development draft; historical priority screened, not cleared}}
+\hypersetup{pdfsubject={Marcinkiewicz--Zygmund constants of Clenshaw--Curtis quadrature}}
 % siamart251216 defines theorem, lemma, corollary, proposition, definition on one
 % shared counter numbered within sections (Theorem 2.3, Lemma 2.4, ...).
 \newsiamremark{remark}{Remark}
@@ -209,13 +209,13 @@ appendices contain the longer proofs and the certificate.
 \paragraph{Attribution}
 The folded Chebyshev moments used below are established prior algebra:
 Trefethen's Theorem~5.2 and formulas (5.2)--(5.4) give the mode aliasing
-\cite{LIT-055}; selected coefficient-decay results of
+\cite{LIT-055}; the coefficient-decay results of
 Xiang--Bornemann provide related quadrature context \cite{LIT-056}.
-ASV equation~(7) already uses the upper-MZ factor
+In the arXiv version of \cite{LIT-045}, equation~(7) already uses the upper-MZ factor
 $1+\sqrt{1+\eta}$, together with an aliasing term, and their
 equation~(8) separates the inverse-Gram least-squares construction
 \cite{LIT-045}. The generic upper-Gram hyperinterpolation mechanism
-in Section~\ref{sec:hyper} is consequently known context; its proof is
+in Section~\ref{sec:hyper} is therefore known; its proof is
 included to identify precisely the CC input and the required reproduction.
 
 \paragraph{Converse MZ inequalities}
@@ -236,12 +236,13 @@ We compare with the following sources.
 \item Sloan--Smith's 1978 CC product-integration paper \cite{LIT-047}
 controls the sum of absolute product weights, i.e.\ a $C[-1,1]$ functional
 norm. Its companion \cite{LIT-048} develops heuristic error estimates and
-numerical tests and states no theorem. In the portions inspected we found
-no quadratic-form or nodal $\ell^2$ estimate in either paper.
-\item The weighted mean-convergence results of Erd\H{o}s--Feldheim,
-Askey, Nevai, and Smith's Lobatto theorem
-\cite{LIT-061,LIT-062,LIT-063,LIT-065} bound interpolation from
-\emph{uniform} data into weighted $L^p$. Nevai's quasi-Lagrange theorem
+numerical tests and states no theorem. Neither paper states a
+quadratic-form or nodal $\ell^2$ estimate.
+\item The weighted mean-convergence results of Askey and Nevai, and Smith's
+Lobatto theorem \cite{LIT-062,LIT-063,LIT-065}, bound interpolation from
+\emph{uniform} data into weighted $L^p$, and Erd\H{o}s--Feldheim
+\cite{LIT-061} prove mean convergence at Chebyshev abscissae in the
+Chebyshev measure. Nevai's quasi-Lagrange theorem
 includes the CC nodes. Uniform data form a stronger input norm than
 weighted nodal $\ell^2$, so these results are consistent with, and do not
 imply, logarithmic growth of the $\ell^2\to L^2$ norm.
@@ -257,7 +258,7 @@ are the CC nodes ($N=m+1$). For Lebesgue measure and $p=2$ their strict
 condition fails at its endpoint. Since the nodal side of their equivalence
 is comparable to $Q_N(p^2)$ by the weight comparison above, the necessity
 part of their criterion yields $\inf_N\lambda_-(N,N)=0$ on the full space
-$\Pn_N$. This is classical, but it is only a statement about a
+$\Pn_N$. This is known, but it is only a statement about a
 subsequence on $\Pn_N$, with no rate.
 \item Mastroianni--Russo \cite{LIT-293} and Xu \cite{LIT-296} treat
 converse inequalities at Gauss nodes without endpoint terms, and
@@ -279,35 +280,38 @@ $(1+\log N)^{-2}$ requires the separate harmonic witness of
 Theorem~\ref{thm:harmonic} for the upper bound and Theorem~\ref{thm:cardinal}
 for the lower bound.
 \item The algebraic Marcinkiewicz inequality of Mastroianni--Totik
-\cite{LIT-051} applies at CC nodes only when $n\le N/(\pi M)$ for their
-unspecified constant $M$. For every admissible $M\ge2/\pi$ this lies within
-the half-exactness range $n\le N/2$, where exactness already gives
-$\lambda_\pm(N,n)=1$. In its documented form it therefore adds nothing
-beyond exactness for the questions of Section~\ref{sec:ratio}.
+\cite{LIT-051} applies at CC nodes only when $n\le N/(\pi M)$, where the
+sampling constant $M$ is asserted to exist but is not specified. Unless
+$M<2/\pi$, this window lies within the half-exactness range $n\le N/2$,
+where exactness already gives $\lambda_\pm(N,n)=1$. Since no such value of
+$M$ is given, the inequality adds nothing beyond exactness for the
+questions of Section~\ref{sec:ratio}.
 \item The forward quadrature-sum theorem of Lubinsky--M\'at\'e--Nevai
 \cite{LIT-050} applies at CC nodes, for each fixed $l$, to every degree
 $\le lN$. It gives $\lambda_+(N,n)\le C_l$ with an unspecified constant
 depending on $l$. The threshold
 $2$ and the explicit constants of Theorem~\ref{thm:ratio-upper} and its
 endpoint corollary are not implied.
-\item The later Sloan--Smith papers \cite{LIT-297,LIT-298} relate
-product-integration convergence to mean convergence with uniform data.
-\item The interpolation book of Mastroianni--Milovanovi\'c
-\cite{LIT-049} (chapters 2, 4 and 5),
-Widom's and Widom--Wilf's Hankel asymptotics \cite{LIT-053,LIT-054},
-the Chebyshev--Legendre method \cite{LIT-058} and recent
-Chebyshev--Lobatto interpolation estimates in the Legendre norm
-\cite{LIT-295} concern uniform norms, Sobolev inputs or different matrix
-problems. Lubinsky's survey \cite{LIT-052} records genuine converse
+\item The later Sloan--Smith paper \cite{LIT-297} relates
+product-integration convergence to mean convergence with uniform data;
+Smith and Sloan \cite{LIT-298} treat product integration at Jacobi zeros.
+\item Chapter~4 of the interpolation book of Mastroianni--Milovanovi\'c
+\cite{LIT-049} treats interpolation in the uniform norm, and Widom's and
+Widom--Wilf's Hankel asymptotics \cite{LIT-053,LIT-054}, the
+Chebyshev--Legendre method \cite{LIT-058} and recent Chebyshev--Lobatto
+interpolation estimates in the Legendre norm \cite{LIT-295} concern
+different matrix problems or Sobolev inputs. Lubinsky's survey \cite{LIT-052} records genuine converse
 quadrature-sum (nodal-norm) theorems, but at Gauss nodes and weights.
 \end{itemize}
-We found no statement of the logarithmic order of $\lambda_-(N,N-1)$, of
-its limit constant, of the limit of $\lambda_+(N,N-1)$, of an all-$N$ upper
-constant below two, or of explicit fixed-ratio constants; our search was
-documented but not exhaustive. The published version of \cite{LIT-045}
-states that the CC behaviour beyond half-exactness is, to its authors'
-knowledge, not known theoretically. The arguments below do not depend on
-any of these sources.
+To our knowledge, no published result states the logarithmic order of
+$\lambda_-(N,N-1)$, its limit constant, the limit of $\lambda_+(N,N-1)$, an
+all-$N$ upper constant below two, or explicit constants beyond
+half-exactness at a fixed degree ratio. Explicit two-sided constants at
+Chebyshev--Lobatto nodes are known in a heavily oversampled regime
+\cite{LIT-490}, which for $p=2$ lies inside the half-exactness range. The
+published version of \cite{LIT-045} states that the CC behaviour beyond
+half-exactness is, to its authors' knowledge, not known theoretically. The
+arguments below do not depend on any of these sources.
 
 \section{Preliminaries}\label{sec:prelim}
 
@@ -1167,7 +1171,7 @@ Section~\ref{sec:numerics}.
 
 For $n\le N/2$, exactness gives $\lambda_\pm(N,n)=1$; the classical
 algebraic Marcinkiewicz inequality of Mastroianni--Totik \cite{LIT-051}
-yields nothing beyond this in its documented form
+yields nothing beyond this, because its sampling constant is unspecified
 (Section~\ref{sec:context}). The point of this section is the range
 $N/2<n<N$: explicit constants for every ratio below one, with an upper
 constant below two.
@@ -1291,7 +1295,7 @@ Both proofs are included because the two regimes need different estimates.
 
 \section{The three-quarter assumption and hyperinterpolation}\label{sec:hyper}
 
-An--Wu's inspected arXiv version assumes a relative squared-norm MZ error
+An and Wu assume a relative squared-norm MZ error
 $\eta<1$ in its main theorem. Its Section~4 assumes $\eta=3/4$ for the
 examples, and Corollary~4.1 retains the theorem's conditions for an
 $m$-point CC rule with $n+2\le m\le2n+1$, obtaining an error bound
@@ -1330,10 +1334,9 @@ and a full-space, subsequence version of $\lambda_-(N,N)\to0$ at the CC
 nodes follows from \cite{LIT-299} (Section~\ref{sec:context}).
 Lemma~\ref{lem:U-exact} supplies the exact CC evaluation, valid for every
 $N$ and on $\Pn_{N-1}$. The finite certificate uses no floating spectrum.
-The published An--Wu Corollary~4.1 coincides with the inspected arXiv
-formulation: it assumes $\eta=3/4$ for $m$-point CC with $n+2\le m\le2n+1$
-\cite{LIT-046}, and $m=513$, $n=511$ lies in that range. No correction
-was found in a documented search; this is not proof of absence.
+Corollary~4.1 of the published version assumes $\eta=3/4$ for $m$-point
+CC with $n+2\le m\le2n+1$ \cite{LIT-046}, and $m=513$, $n=511$ lies in
+that range. We are not aware of a published correction.
 
 \begin{proposition}[Upper-Gram hyperinterpolation estimate]\label{prop:hyper}% IDs: PD-T025
 Let $\mu$ be a finite positive measure of mass $|\mu|>0$ on a compact domain.
