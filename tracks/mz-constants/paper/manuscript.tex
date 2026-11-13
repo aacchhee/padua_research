@@ -250,7 +250,7 @@ weighted Marcinkiewicz inequalities. No claim of a first proof is made.
 The analytic arguments below do not depend on any of these sources or on
 any private proof.
 
-\section{Exact CC identities and an upper bound below two}\label{sec:upper}
+\section{Preliminaries}\label{sec:prelim}
 
 Put $T_k(\cos\theta)=\cos(k\theta)$ and
 \[
@@ -354,6 +354,48 @@ then $a^TMa=\int_0^\pi q^2\sin\theta\dd\theta
 \le\int_0^\pi q^2\dd\theta=(\pi/2)a^TEa$, proving the upper bound.
 \end{proof}
 
+\begin{lemma}[Weight comparison]\label{lem:weight-comparison}
+For $1\le j\le N-1$,
+\begin{equation}\label{eq:weightcomp}
+ \frac{\sin\theta_j}{N}\le w_j\le\frac{5\sin\theta_j}{N}.
+\end{equation}
+If $m_j=1+\min(j,N-j)$, then $w_j\ge m_j/N^2$ for all $0\le j\le N$.
+\end{lemma}
+\begin{proof}
+The absolutely convergent cosine series
+\[
+ \frac\pi2\sin\theta=1-2\sum_{r\ge1}
+                  \frac{\cos(2r\theta)}{4r^2-1}\quad(0\le\theta\le\pi)
+\]
+follows by integrating against cosine modes; absolute convergence and
+uniqueness of the cosine expansion identify the continuous function.
+For example, uniqueness follows from density of polynomials in
+$\cos\theta$ among continuous functions on $[0,\pi]$.
+Let $S_N(\theta)$ denote the bracket in \eqref{eq:weights}.
+Telescoping its tail gives
+\[
+ |S_N(\theta)-(\pi/2)\sin\theta|
+ \le\begin{cases}1/N,&N\text{ odd},\\N/(N^2-1),&N\text{ even}.
+ \end{cases}
+\]
+At interior nodes $\sin\theta_j\ge2/N$. The error is therefore at most
+$(2/3)\sin\theta_j$ for all $N\ge2$, including the even worst case $N=2$.
+Since $w_j=2S_N(\theta_j)/N$ and
+$\pi/2-2/3\ge1/2$, $\pi+4/3<5$, this proves
+\eqref{eq:weightcomp}. Moreover
+$\sin\theta_j\ge2\min(j,N-j)/N$, so
+$w_j\ge2\min(j,N-j)/N^2\ge m_j/N^2$ in the interior.
+The endpoint formulas prove the remaining cases.
+\end{proof}
+
+\section{The upper spectrum}\label{sec:upper}
+
+The upper eigenvalues are controlled by the sign structure of the defect
+matrix $D$ of Lemma~\ref{lem:identities}. Theorem~\ref{thm:upper} gives a
+threshold below two for every $N$; Theorem~\ref{thm:ratio-upper} refines it
+at each degree ratio, and Theorem~\ref{thm:five-thirds} gives a bound
+uniform in $N$.
+
 \begin{theorem}[Strict threshold and endpoint refinement; \id{PD-T014}, \id{PD-T022}]\label{thm:upper}
 For $0\ne p\in\Pn_{N-1}$,
 \[
@@ -389,6 +431,137 @@ degree-sensitive sign comparison in Theorem~\ref{thm:ratio-upper}
 $1+\rho=2-4/N+4/N^2$. At $N=2$, $\rho=0$ and exactness applies;
 at $N\ge3$ the strict case of that theorem applies.
 \end{proof}
+
+\begin{theorem}[Degree-sensitive upper estimate; \id{PD-T022}]\label{thm:ratio-upper}
+For $0\le n<N$, put $\rho=\max\{2n/N-1,0\}^2$. Then
+\[
+ Q_N(p^2)\le(1+\rho)\int_{-1}^1p^2\qquad(p\in\Pn_n).
+\]
+If $2n\le N$, every quotient equals one. If $2n>N$, the displayed
+inequality is strict for every nonzero $p$.
+\end{theorem}
+\begin{proof}
+Exactness settles $2n\le N$. Otherwise set $t=2n/N-1>0$,
+$\rho=t^2$, and $A_\rho=(1+\rho)M-R=\rho M+D/2$ on indices $0,\ldots,n$.
+Opposite-parity off-diagonal entries vanish; equal-parity unaliased entries
+are negative. For an aliased equal-parity pair let
+$s=i+j>N$, $d=|i-j|\ge2$, $r=2N-s$, $\delta=N-n>0$.
+Then $r<N$, $r-d\ge2\delta$, and
+\[
+ \frac dr\le1-\frac{2\delta}{N}=t,\qquad
+ \frac{d^2-1}{r^2-1}\le\frac{d^2}{r^2}\le\rho.
+\]
+Consequently
+\[
+ (A_\rho)_{ij}=-\frac\rho{d^2-1}
+                -\frac{1+\rho}{s^2-1}+\frac1{r^2-1}<0.
+\]
+For this matrix with nonpositive off-diagonal entries, replacement of
+coefficients $a$ by $v=|a|$ gives
+$a^TA_\rho a\ge\rho v^TMv+v^TDv/2>0$ for $a\ne0$.
+This proves the result.
+\end{proof}
+
+\begin{corollary}[Endpoint upper constant; \id{PD-T022}]\label{cor:ratio-endpoint}
+For every $N\ge2$,
+\[
+ \lambda_+(N,N-1)\le1+(1-2/N)^2=2-\frac4N+\frac4{N^2}.
+\]
+Equality holds at $N=2$; the displayed upper inequality is strict for $N\ge3$.
+\end{corollary}
+\begin{proof}
+Set $n=N-1$ in Theorem~\ref{thm:ratio-upper}. Then
+$\max\{2n/N-1,0\}=1-2/N$. The case $N=2$ has $2n=N$ and $\rho=0$;
+every $N\ge3$ has $2n>N$ and $\rho>0$. This proves the endpoint
+refinement used in Theorem~\ref{thm:upper} and \eqref{eq:main-upper}.
+\end{proof}
+
+% Source: PD-T526; topics/padua-mz-sharp-constants-20261106/theory/S2-uniform-upper.md
+\begin{theorem}[A uniform upper bound]\label{thm:five-thirds}
+For every $N\ge2$ and every nonzero $p\in\Pn_{N-1}$,
+\[
+ 0<Q_N(p^2)\le\frac53\int_{-1}^1p^2 .
+\]
+Consequently, for all $0\le n<N$,
+\[
+ \lambda_+(N,n)\le\min\Bigl\{1+\rho_{N,n},\,\frac53\Bigr\},
+ \qquad \rho_{N,n}=\max\{2n/N-1,0\}^2 .
+\]
+\end{theorem}
+
+The bound $5/3$ is not sharp; its point is that it is uniform in $N$,
+whereas the degree-sensitive bound of Corollary~\ref{cor:ratio-endpoint}
+tends to two. The proof keeps the signs of the defect, but splits it
+differently from Theorem~\ref{thm:upper}.
+
+\begin{proof}
+Write $p=\sum_{i=0}^{N-1}a_iT_i$, so that $a^TMa=\int p^2$ and
+$a^TRa=Q_N(p^2)$ with the matrices of Lemma~\ref{lem:identities} on
+the indices $0,\dots,N-1$. For a pair $(i,j)$ put $s=i+j\le2N-2$ and
+$r=2N-s\ge2$, and define
+\[
+ H_{ij}=\frac{\boldsymbol1_{s\ \mathrm{even}}}{r^2-1},\qquad
+ K_{ij}=\begin{cases}
+   H_{ij},&s\le N,\\[2pt]
+   \dfrac{\boldsymbol1_{s\ \mathrm{even}}}{s^2-1},&s>N.
+ \end{cases}
+\]
+We claim the exact identity
+\begin{equation}\label{eq:RMHK}
+ R=M-H+K .
+\end{equation}
+If $s\le N$, then $Q_N(T_s)=\mu_s$ by \eqref{eq:alias}, so $R_{ij}=M_{ij}$,
+and $H_{ij}=K_{ij}$. If $s>N$ is even, then $Q_N(T_s)=\mu_r$ and
+\eqref{eq:mass} gives
+$(M-R)_{ij}=(\mu_s-\mu_r)/2=1/(r^2-1)-1/(s^2-1)=H_{ij}-K_{ij}$.
+If $s$ is odd, every entry of $M-R$, $H$ and $K$ vanishes.
+
+The matrix $H$ is positive semidefinite. Indeed, for $i,j\le N-1$,
+\[
+ \frac12\int_0^1 x^{2N-2-i-j}(1-x^2)\dd x
+ =\frac12\Bigl(\frac1{r-1}-\frac1{r+1}\Bigr)=\frac1{r^2-1},
+\]
+and $H$ couples only indices of equal parity, so for real $a$
+\[
+ a^THa=\frac12\int_0^1(1-x^2)\Bigl[
+ \Bigl(\sum_{i\ \mathrm{even}}a_ix^{N-1-i}\Bigr)^2
+ +\Bigl(\sum_{i\ \mathrm{odd}}a_ix^{N-1-i}\Bigr)^2\Bigr]\dd x\ge0 .
+\]
+No sign property of $K$ or of $M-R$ as a matrix is used.
+
+Let $u_N=N$ for even $N$ and $u_N=N+1$ for odd $N$. Every nonzero
+entry of $K$ equals $1/(u^2-1)$ for an even integer $u\ge u_N$:
+$u=r=2N-s\ge N$ if $s\le N$, and $u=s>N$ otherwise. Hence
+$0\le K_{ij}\le1/(u_N^2-1)$. Each row of $K$ has at most
+$\lceil N/2\rceil$ nonzero entries, since $K$ couples only indices of
+equal parity. Using $2|a_ia_j|\le a_i^2+a_j^2$ and symmetry,
+\[
+ a^TKa\le\sum_{i,j}K_{ij}|a_ia_j|
+ \le\frac{\lceil N/2\rceil}{u_N^2-1}\sum_ia_i^2 .
+\]
+Lemma~\ref{lem:floor} gives $\sum_ia_i^2\le a^TEa\le N\,a^TMa$.
+Together with \eqref{eq:RMHK} and $H\succeq0$,
+\[
+ a^TRa\le a^TMa+a^TKa\le(1+\beta_N)\,a^TMa,
+\]
+where
+\[
+ \beta_N=\frac{N\lceil N/2\rceil}{u_N^2-1}
+ =\begin{cases}
+   \dfrac{N^2}{2(N^2-1)},&N\text{ even},\\[6pt]
+   \dfrac{N+1}{2(N+2)},&N\text{ odd}.
+ \end{cases}
+\]
+For even $N\ge2$ the first expression is at most its value $2/3$ at $N=2$;
+for odd $N\ge3$ the second is below $1/2$. This proves the upper
+bound, and positivity follows as in Theorem~\ref{thm:upper}.
+Restriction to $\Pn_n$ and Theorem~\ref{thm:ratio-upper} give the
+second display.
+\end{proof}
+
+Since $\beta_N\to1/2$, the proof also gives
+$\limsup_{N\to\infty}\lambda_+(N,N-1)\le3/2$; Section~\ref{sec:edge-max}
+identifies the limit.
 
 \begin{remark}[Retained alternative quantitative proof]
 The independent mass inequality of Lemma~\ref{lem:floor} (\id{PD-T015})
@@ -426,40 +599,6 @@ Write $H_s=\sum_{r=1}^s r^{-1}$ and
  K_N=4\pi^2(\pi+1)^2h_N
        \bigl(h_N+2H_{\lfloor N/2\rfloor+1}\bigr).
 \end{equation}
-
-\begin{lemma}[Weight comparison]\label{lem:weight-comparison}
-For $1\le j\le N-1$,
-\begin{equation}\label{eq:weightcomp}
- \frac{\sin\theta_j}{N}\le w_j\le\frac{5\sin\theta_j}{N}.
-\end{equation}
-If $m_j=1+\min(j,N-j)$, then $w_j\ge m_j/N^2$ for all $0\le j\le N$.
-\end{lemma}
-\begin{proof}
-The absolutely convergent cosine series
-\[
- \frac\pi2\sin\theta=1-2\sum_{r\ge1}
-                  \frac{\cos(2r\theta)}{4r^2-1}\quad(0\le\theta\le\pi)
-\]
-follows by integrating against cosine modes; absolute convergence and
-uniqueness of the cosine expansion identify the continuous function.
-For example, uniqueness follows from density of polynomials in
-$\cos\theta$ among continuous functions on $[0,\pi]$.
-Let $S_N(\theta)$ denote the bracket in \eqref{eq:weights}.
-Telescoping its tail gives
-\[
- |S_N(\theta)-(\pi/2)\sin\theta|
- \le\begin{cases}1/N,&N\text{ odd},\\N/(N^2-1),&N\text{ even}.
- \end{cases}
-\]
-At interior nodes $\sin\theta_j\ge2/N$. The error is therefore at most
-$(2/3)\sin\theta_j$ for all $N\ge2$, including the even worst case $N=2$.
-Since $w_j=2S_N(\theta_j)/N$ and
-$\pi/2-2/3\ge1/2$, $\pi+4/3<5$, this proves
-\eqref{eq:weightcomp}. Moreover
-$\sin\theta_j\ge2\min(j,N-j)/N$, so
-$w_j\ge2\min(j,N-j)/N^2\ge m_j/N^2$ in the interior.
-The endpoint formulas prove the remaining cases.
-\end{proof}
 
 \begin{theorem}[Weighted cardinal lower estimate; \id{PD-T017}]\label{thm:cardinal}
 For every $p\in\Pn_N$,
@@ -633,6 +772,148 @@ Thus this explicit constant is vacuous throughout all computationally feasible
 full-spectrum calculations considered here. The finite values in
 Table~\ref{tab:cc} do not exhibit or determine an asymptotic leading constant.
 
+\subsection{The sharp constant}\label{sec:sharp-min}
+
+Theorems~\ref{thm:cardinal} and~\ref{thm:harmonic} fix the order
+$(\log N)^{-2}$ but leave the constant open by a factor of order $10^6$.
+The exact constant comes from a one-dimensional model. Near the endpoint
+$x=1$, write $\theta=\pi t/N$, so that the node $x_k$ corresponds to
+$t=k$. For nodal data $u_k=(-1)^ka_k$ supported at $1\le k\ll N$, the
+interpolant behaves like $(2N/\pi)\,\sin(\pi t)\,t^{-1}$ times the
+partial sum $\sum_{k<t}k^{-1}\cdot(k a_k/N)$, up to a signed error
+that is bounded in the relevant norms (Lemma~\ref{lem:signed-remainder}).
+On the logarithmic scale $x=\log t/\log N$ the partial sum becomes a
+primitive, the CC energy becomes $\pi^2\log N$ times an $L^2$ norm
+and the continuous mass becomes $2(\log N)^3$ times the $L^2$ norm of
+the primitive; the factor two in the latter is the mean value $1/2$ of
+$\sin^2(\pi t)$, counted on each of the two endpoints. The constant is
+then $(\pi^2/2)$ times the reciprocal squared norm of the primitive
+operator.
+
+\begin{lemma}[The primitive operator; \id{PD-T522}]\label{lem:volterra}
+On $L^2(0,1)$ let $(Vf)(x)=\int_0^xf(s)\dd s$. Then $\norm V=2/\pi$, and
+\[
+ \inf_{0\ne f\in L^2(0,1)}\frac{\pi^2}2\,\frac{\norm f^2}{\norm{Vf}^2}
+ =\frac{\pi^4}8,
+\]
+with equality for $f(x)=\cos(\pi x/2)$.
+\end{lemma}
+
+\begin{proof}
+Put $F=Vf$ and $\alpha=\pi/2$. For $F\in C^1[0,1]$ with $F(0)=0$,
+expanding the square and integrating the cross term by parts give
+\[
+ \int_0^1|F'-\alpha\cot(\alpha x)F|^2\dd x
+ =\int_0^1|F'|^2\dd x-\alpha^2\int_0^1|F|^2\dd x ,
+\]
+because $(\alpha\cot\alpha x)^2+(\alpha\cot\alpha x)'=-\alpha^2$ and the
+boundary term $-\alpha[\cot(\alpha x)|F|^2]_0^1$ vanishes: $\cot\alpha=0$
+and $F(x)=O(x)$ at zero. Hence $\norm F^2\le(4/\pi^2)\norm{F'}^2$, and the
+inequality extends to every absolutely continuous $F$ with $F(0)=0$ and
+$F'\in L^2$ by density. Equality holds for $F(x)=\sin(\alpha x)$, whose
+derivative is $\alpha\cos(\alpha x)$.
+\end{proof}
+
+\begin{proposition}[An admissible logarithmic trial; \id{PD-T523}]\label{prop:sharp-trial}
+Through all integers $N$, and hence along each parity,
+\[
+ \limsup_{N\to\infty}(\log N)^2\,\lambda_-(N,N-1)\le\frac{\pi^4}8 .
+\]
+More precisely, let $f\in C^1$ be real, nonzero and compactly supported in
+$(0,1)$, let $L=\log N$, and define nodal values
+\[
+ u_k=\frac{(-1)^kN}{k}\,f\Bigl(\frac{\log k}L\Bigr)\quad(1\le k<N/2),\qquad
+ u_{N-k}=(-1)^{N-1}u_k,
+\]
+with $u_0=u_N=0$ and $u_{N/2}=0$ for even $N$. For all sufficiently
+large $N$ the interpolant $p_N$ of these values lies in $\Pn_{N-1}$, is
+nonzero, and
+\[
+ Q_N(p_N^2)=2\pi^2L\norm f^2\,(1+o(1)),\qquad
+ \liminf_{N\to\infty}\frac{\int_{-1}^1p_N^2}{L^3}\ge4\norm{Vf}^2 .
+\]
+\end{proposition}
+
+\begin{theorem}[The sharp endpoint constant; \id{PD-T546}]\label{thm:sharp-min}
+Through all integers $N$,
+\[
+ \lim_{N\to\infty}(\log N)^2\,\lambda_-(N,N-1)
+ =\lim_{N\to\infty}(\log N)^2\,\lambda_-(N,N)=\frac{\pi^4}8 .
+\]
+Quantitatively, let $L=\log N\ge16$ and put
+\[
+\begin{gathered}
+ J=\lfloor N/2\rfloor,\qquad k_0=\lceil L^2\rceil,\qquad
+ \alpha_J=\frac{2H_J}\pi+1,\\
+ \sigma_N=\frac{\sqrt{2\alpha_J^2+6}}{\pi\sqrt{1-2/L^2}},\qquad
+ \tau_N=160+2\sqrt{LH_{k_0}}+30\sqrt{L+5}.
+\end{gathered}
+\]
+Then every real or complex $p\in\Pn_N$ satisfies
+\begin{equation}\label{eq:sharp-finite}
+ \Bigl(\int_{-1}^1|p|^2\Bigr)^{1/2}\le(\sigma_N+\tau_N)\,
+ Q_N(|p|^2)^{1/2},
+\end{equation}
+where $\sigma_N/L\to2\sqrt2/\pi^2$ and $\tau_N/L\to0$.
+\end{theorem}
+
+\begin{proof}[Proof of Theorem~\ref{thm:sharp-min}, given \eqref{eq:sharp-finite}]
+Inequality \eqref{eq:sharp-finite} gives
+\[
+ L^2\lambda_-(N,N)\ge\Bigl(\frac{\sigma_N}L+\frac{\tau_N}L\Bigr)^{-2}.
+\]
+Since $\log(J+1)\le H_J\le1+\log J$, we have $\alpha_J/L\to2/\pi$ and
+hence $\sigma_N/L\to2\sqrt2/\pi^2$. Also $H_{k_0}=O(\log L)$, so
+$\tau_N/L\to0$. Therefore
+$\liminf L^2\lambda_-(N,N)\ge(2\sqrt2/\pi^2)^{-2}=\pi^4/8$.
+Restriction gives $\lambda_-(N,N-1)\ge\lambda_-(N,N)$, and
+Proposition~\ref{prop:sharp-trial} bounds the upper limit of the former.
+\end{proof}
+
+The proofs of Proposition~\ref{prop:sharp-trial} and of
+\eqref{eq:sharp-finite} are in Appendix~\ref{app:sharp}. They rest on
+two estimates for finitely supported sequences $g=(g_k)_{k\ge1}$,
+measured in the harmonic norm
+$\norm g_h^2=\sum_{k\ge1}|g_k|^2/k$. The first controls the signed
+part of the endpoint kernel without any regularity of $g$; the second is
+a discrete version of Lemma~\ref{lem:volterra} with the oscillation
+$\sin^2(\pi t)$ averaged uniformly.
+
+\begin{lemma}[Signed remainder; \id{PD-T544}]\label{lem:signed-remainder}
+For noninteger $t>0$ put
+\[
+ \Phi_k(t)=\frac{t^2}{k(t^2-k^2)}-\frac{\boldsymbol1_{k<t}}k,\qquad
+ (\mathcal Eg)(t)=\sin(\pi t)\sum_{k\ge1}g_k\Phi_k(t),
+\]
+extended continuously to integer $t$. Then
+\[
+ \int_0^\infty|(\mathcal Eg)(t)|^2\frac{\dd t}t\le1600\,\norm g_h^2 .
+\]
+\end{lemma}
+
+\begin{lemma}[Discrete primitive; \id{PD-T545}]\label{lem:discrete-primitive}
+Let $T\ge1$, $J=\lfloor T\rfloor$, $\alpha_J=2H_J/\pi+1$, and let $g$ be
+supported in $\{1,\dots,J\}$. With $S(t)=\sum_{k<t}g_k/k$,
+\[
+ \int_0^T\sin^2(\pi t)\,|S(t)|^2\,\frac{\dd t}t
+ \le\Bigl(\frac{\alpha_J^2}2+\frac32\Bigr)\norm g_h^2 .
+\]
+\end{lemma}
+
+Neither lemma uses smoothness, signs or cancellation of the input. The
+first is where signs are retained: the pole part of $\Phi_k$ is summed
+by an orthogonality argument, not in absolute value; an absolute
+estimate of the cardinal functions loses a logarithm. The second
+supplies the leading coefficient: $\alpha_J\sim(2/\pi)\log T$ is the
+rescaled norm of $V$, and the factor $1/2$ is the mean of $\sin^2$.
+
+\section{The endpoint maximum eigenvalue}\label{sec:edge-max}
+
+% TODO(task 3): endpoint model, Lambda_edge, PD-T528/529/530/547/548.
+This section is being written; see the topic plan.
+
+\section{Consequences at the endpoint}\label{sec:consequences}
+
 \begin{corollary}[Endpoint defect and condition number]\label{cor:endpoint}
 For $G_N=G_{N,N-1}$,
 \[
@@ -669,50 +950,6 @@ yields nothing beyond this in its documented form
 (Section~\ref{sec:context}). The point of this section is the range
 $N/2<n<N$: explicit constants for every ratio below one, with an upper
 constant below two.
-
-\begin{theorem}[Degree-sensitive upper estimate; \id{PD-T022}]\label{thm:ratio-upper}
-For $0\le n<N$, put $\rho=\max\{2n/N-1,0\}^2$. Then
-\[
- Q_N(p^2)\le(1+\rho)\int_{-1}^1p^2\qquad(p\in\Pn_n).
-\]
-If $2n\le N$, every quotient equals one. If $2n>N$, the displayed
-inequality is strict for every nonzero $p$.
-\end{theorem}
-\begin{proof}
-Exactness settles $2n\le N$. Otherwise set $t=2n/N-1>0$,
-$\rho=t^2$, and $A_\rho=(1+\rho)M-R=\rho M+D/2$ on indices $0,\ldots,n$.
-Opposite-parity off-diagonal entries vanish; equal-parity unaliased entries
-are negative. For an aliased equal-parity pair let
-$s=i+j>N$, $d=|i-j|\ge2$, $r=2N-s$, $\delta=N-n>0$.
-Then $r<N$, $r-d\ge2\delta$, and
-\[
- \frac dr\le1-\frac{2\delta}{N}=t,\qquad
- \frac{d^2-1}{r^2-1}\le\frac{d^2}{r^2}\le\rho.
-\]
-Consequently
-\[
- (A_\rho)_{ij}=-\frac\rho{d^2-1}
-                -\frac{1+\rho}{s^2-1}+\frac1{r^2-1}<0.
-\]
-For this matrix with nonpositive off-diagonal entries, replacement of
-coefficients $a$ by $v=|a|$ gives
-$a^TA_\rho a\ge\rho v^TMv+v^TDv/2>0$ for $a\ne0$.
-This proves the result.
-\end{proof}
-
-\begin{corollary}[Endpoint upper constant; \id{PD-T022}]\label{cor:ratio-endpoint}
-For every $N\ge2$,
-\[
- \lambda_+(N,N-1)\le1+(1-2/N)^2=2-\frac4N+\frac4{N^2}.
-\]
-Equality holds at $N=2$; the displayed upper inequality is strict for $N\ge3$.
-\end{corollary}
-\begin{proof}
-Set $n=N-1$ in Theorem~\ref{thm:ratio-upper}. Then
-$\max\{2n/N-1,0\}=1-2/N$. The case $N=2$ has $2n=N$ and $\rho=0$;
-every $N\ge3$ has $2n>N$ and $\rho>0$. This proves the endpoint
-refinement used in Theorem~\ref{thm:upper} and \eqref{eq:main-upper}.
-\end{proof}
 
 \begin{theorem}[Filtered lower estimate; \id{PD-T023}]\label{thm:ratio-lower}
 Put $C_0=2(1+\pi)^2$ and
@@ -998,6 +1235,334 @@ repository claims; bibliography keys use the final \id{LIT} allocation.
 These identifiers do not confer publication or audit readiness. Analytic
 proofs of the central CC statements have been included here;
 no private manuscript is a mathematical dependency.
+
+\appendix
+
+\section{Proofs for the sharp endpoint constant}\label{app:sharp}
+
+Throughout this appendix $N\ge2$, $L=\log N$, $\theta_k=k\pi/N$,
+$d_k=\min(k,N-k)$, and $c_0=c_N=2$, $c_k=1$ for $0<k<N$ (the
+reciprocal endpoint factors of the cardinal formula in the proof of
+Theorem~\ref{thm:cardinal}). For nodal data $u=(u_0,\dots,u_N)$ let
+$\mathcal I_Nu\in\Pn_N$ be its interpolant, $a_k=(-1)^ku_k$, and
+$\norm u_w^2=\sum_{k=0}^Nw_k|u_k|^2$, so that
+$\norm u_w^2=Q_N(|\mathcal I_Nu|^2)$. All $L^2$ norms of functions on
+$[-1,1]$ are with respect to $\dd x$; on $(0,1)$ or $(0,\infty)$ the
+measure is written explicitly. The harmonic norm of a finitely supported
+sequence $g=(g_k)_{k\ge1}$ is $\norm g_h^2=\sum_k|g_k|^2/k$.
+
+\subsection{\texorpdfstring{Proof of Lemma~\ref{lem:signed-remainder}}{Proof of the signed remainder lemma}}
+
+Put $\operatorname{sinc}(x)=\sin(\pi x)/(\pi x)$, $\operatorname{sinc}(0)=1$.
+For integers $k,l$,
+\begin{equation}\label{eq:sinc-orth}
+ \int_{\R}\operatorname{sinc}(t-k)\operatorname{sinc}(t-l)\dd t=\boldsymbol1_{k=l}.
+\end{equation}
+For $k=l$ this is $\int_{\R}\sin^2(\pi t)/(\pi t)^2\dd t=1$, which follows
+from $\int_0^\infty\sin(bu)\,u^{-1}\dd u=\pi/2$ ($b>0$) after one integration
+by parts. For $k\ne l$ the integer shifts give
+$\operatorname{sinc}(t-k)\operatorname{sinc}(t-l)=(-1)^{k+l}\sin^2(\pi t)/[\pi^2(t-k)(t-l)]$,
+and partial fractions reduce the integral to differences of
+$\int_{-R}^R\sin^2(\pi t)(t-k)^{-1}\dd t$, which tend to zero as
+$R\to\infty$: after the shift $t\mapsto t+k$ the integrand is odd on
+$[-R,R]$ and the two end intervals of length $|k|$ contribute $O_k(1/R)$.
+Since the product is absolutely integrable, its integral is the limit,
+zero. Consequently, for every finite sequence $(h_k)$,
+\begin{equation}\label{eq:sinc-isometry}
+ \int_{\R}\Bigl|\sum_kh_k\operatorname{sinc}(t-k)\Bigr|^2\dd t=\sum_k|h_k|^2 .
+\end{equation}
+
+For $j\in\mathbb Z$ let $\delta=2^j$, $I_j=[\delta,2\delta)$ and
+$\mathcal J_j=\{k\ge1:\delta/2<k<4\delta\}$; each $k\ge1$ lies in at most
+four sets $\mathcal J_j$. For $t\in I_j$ split $\sum_kg_k\Phi_k(t)$ into
+$k\in\mathcal J_j$ and $k\notin\mathcal J_j$. Since
+$t^2/[k(t^2-k^2)]=1/k+\tfrac12[1/(t-k)-1/(t+k)]$, one has exactly
+\begin{equation}\label{eq:Phi-split}
+ \Phi_k(t)=\frac1{2(t-k)}+\Psi_k(t),\qquad
+ \Psi_k(t)=-\frac1{2(t+k)}+\frac{\boldsymbol1_{k>t}}k .
+\end{equation}
+
+\emph{The pole part.} As $\sin(\pi t)=(-1)^k\sin(\pi(t-k))$,
+\[
+ \sin(\pi t)\sum_{k\in\mathcal J_j}\frac{g_k}{2(t-k)}
+ =\frac\pi2\sum_{k\in\mathcal J_j}(-1)^kg_k\operatorname{sinc}(t-k).
+\]
+Since $t\ge\delta$ on $I_j$ and $k<4\delta$ on $\mathcal J_j$,
+\eqref{eq:sinc-isometry} bounds its $L^2(I_j,\dd t/t)$ norm squared by
+$(\pi^2/4\delta)\sum_{\mathcal J_j}|g_k|^2\le\pi^2\sum_{\mathcal J_j}|g_k|^2/k$.
+Summing over $j$, the pole part has norm at most $2\pi<7$ times
+$\norm g_h$. This is the only place where the signs of the cardinal
+kernel matter, and they are kept.
+
+\emph{The comparable scales.} For $k\in\mathcal J_j$ and $t\in I_j$ we
+have $k>t/4$, so $|\Psi_k(t)|\le1/(2t)+4/t=9/(2t)$. A nonempty
+$\mathcal J_j$ forces $\delta\ge1/2$, whence
+$\sum_{k\in\mathcal J_j}k\le8\delta^2+2\delta\le12\delta^2\le12t^2$.
+Cauchy--Schwarz gives
+\[
+ \Bigl|\sum_{k\in\mathcal J_j}g_k\Psi_k(t)\Bigr|^2
+ \le\Bigl(\sum_{\mathcal J_j}\frac{|g_k|^2}k\Bigr)
+ \Bigl(\sum_{\mathcal J_j}k|\Psi_k(t)|^2\Bigr)
+ \le243\sum_{\mathcal J_j}\frac{|g_k|^2}k .
+\]
+Integrating over $I_j$ against $\dd t/t$ (mass $\log2$) and summing with
+the fourfold overlap bounds this part by $(972\log2)^{1/2}\norm g_h<32\norm g_h$.
+
+\emph{The separated scales.} For $k\notin\mathcal J_j$ either
+$k\le t/2$ or $k\ge2t$. The kernel $\mathcal K(t,k)=k\Phi_k(t)$ equals
+$k^2/(t^2-k^2)$ for $k<t$ and $t^2/(t^2-k^2)$ for $k>t$, so
+\[
+ |\mathcal K(t,k)|\le\tfrac43(k/t)^2\ (k\le t/2),\qquad
+ |\mathcal K(t,k)|\le\tfrac43(t/k)^2\ (k\ge2t).
+\]
+Its weighted row sums satisfy $\sum_{k\le t/2}|\mathcal K(t,k)|/k
+\le(4/3t^2)\sum_{k\le t/2}k\le1/3$ (the sum is empty unless $t\ge2$),
+and, with $n=\lceil2t\rceil$,
+$\sum_{k\ge2t}|\mathcal K(t,k)|/k\le\tfrac43t^2(n^{-3}+\tfrac12n^{-2})
+\le\tfrac1{6t}+\tfrac16\le\tfrac12$ for $t\ge1/2$, while for $t<1/2$
+it is at most $\tfrac43t^2\sum_kk^{-3}<1/2$. Its weighted column
+integrals satisfy
+$\int_0^\infty|\mathcal K(t,k)|\,\dd t/t\le\tfrac43
+(\int_0^{k/2}(t/k)^2\dd t/t+\int_{2k}^\infty(k/t)^2\dd t/t)=\tfrac13$.
+By the Schur test in the form
+$|\sum_k\mathcal K g_k/k|^2\le(\sum_k|\mathcal K|/k)(\sum_k|\mathcal K||g_k|^2/k)$,
+integrated in $\dd t/t$, this part has norm at most one.
+
+The three parts have norms below $7$, $32$ and $1$; multiplication by
+$\sin(\pi t)$ does not increase them. Hence the norm of $\mathcal E$ is at
+most $40$, which is the lemma. \qed
+
+\subsection{\texorpdfstring{Proof of Lemma~\ref{lem:discrete-primitive}}{Proof of the discrete primitive lemma}}
+
+Put $H_0=0$ and let $f=g_m$ on $(H_{m-1},H_m]$, $1\le m\le J$, so that
+$\norm f_{L^2(0,H_J)}^2=\norm g_h^2$. Its primitive
+$F(x)=\int_0^xf$ satisfies $F(H_m)=S_m:=\sum_{k\le m}g_k/k$. Let $Z$
+equal $S_m$ on $(H_{m-1},H_m]$. On that interval
+$Z-F=g_m(1/m-(x-H_{m-1}))$, so $\int|Z-F|^2=|g_m|^2/(3m^3)$ and
+$\norm{Z-F}\le\norm g_h$. Lemma~\ref{lem:volterra}, rescaled to an
+interval of length $H_J$, gives $\norm F\le(2H_J/\pi)\norm g_h$. Hence
+\begin{equation}\label{eq:Sm-sum}
+ \sum_{m=1}^J\frac{|S_m|^2}m=\norm Z^2\le\alpha_J^2\norm g_h^2 .
+\end{equation}
+For integers $m\ge1$, since $\int_m^{m+1}(\sin^2(\pi t)-\tfrac12)\dd t=0$,
+\[
+ \int_m^{m+1}\sin^2(\pi t)\frac{\dd t}t
+ =\frac12\log\Bigl(1+\frac1m\Bigr)
+ +\int_m^{m+1}\Bigl(\sin^2(\pi t)-\frac12\Bigr)\Bigl(\frac1t-\frac1m\Bigr)\dd t
+ \le\frac1{2m}+\frac1{4m^2}.
+\]
+Cauchy--Schwarz and $H_m\le1+\log m\le2\sqrt m$ give
+$|S_m|^2\le H_m\norm g_h^2\le2\sqrt m\,\norm g_h^2$, so
+$\sum_{m\ge1}|S_m|^2/m^2\le2\zeta(3/2)\norm g_h^2\le6\norm g_h^2$.
+On $(m,m+1)$ one has $S(t)=S_m$, and $S=0$ on $(0,1)$. Enlarging the
+last partial cell to a full cell and summing,
+\[
+ \int_0^T\sin^2(\pi t)|S(t)|^2\frac{\dd t}t
+ \le\sum_{m=1}^J|S_m|^2\Bigl(\frac1{2m}+\frac1{4m^2}\Bigr)
+ \le\Bigl(\frac{\alpha_J^2}2+\frac32\Bigr)\norm g_h^2. \qquad\qed
+\]
+
+\subsection{The endpoint representation of the interpolant}
+
+\begin{lemma}\label{lem:endpoint-rep}
+Let $N\ge2$.
+\begin{enumerate}
+\item[(a)] $w_k\ge(1+d_k)/N^2$ for $0\le k\le N$; for $0<k<N$,
+$w_k\ge\sin\theta_k/N$ and $|w_k-(\pi/N)\sin\theta_k|\le3/N^2$. Moreover
+$\sum_{k=0}^Nw_k^{-1}\le2N^2(L+1)$.
+\item[(b)] For $0\le t\le N/2$ and $\theta=\pi t/N$,
+\[
+ (\mathcal I_Nu)(\cos\theta)=Y_u(t)+r_u(\theta),\qquad
+ Y_u(t)=\frac{2t\sin(\pi t)}\pi\sum_{k=0}^N\frac{a_k}{c_k(t^2-k^2)},
+\]
+with poles removed by continuity, and
+$|r_u(\theta)|\le2\sqrt{2(L+1)}\,\norm u_w$.
+\item[(c)] Let $1\le\ell<N/4$ and let $u$ vanish outside
+$\{1,\dots,\ell\}\cup\{N-\ell,\dots,N-1\}$. Put $g_k=ka_k/N$ and
+$g^\flat_k=ka_{N-k}/N$ for $1\le k\le\ell$ ($g,g^\flat=0$ otherwise), and
+let $S$, $S^\flat$ be their partial sums $\sum_{k<t}g_k/k$. Define
+$P_u$ on $[-1,1]$ by
+\[
+ P_u(\cos\theta)=\frac{2N\sin(\pi t)}{\pi t}S(t),\qquad
+ P_u(-\cos\theta)=(-1)^N\frac{2N\sin(\pi t)}{\pi t}S^\flat(t),
+\]
+for $\theta=\pi t/N\in[0,\pi/2]$. Then
+$\norm g_h^2+\norm{g^\flat}_h^2\le\norm u_w^2$ and
+\[
+ \norm{\mathcal I_Nu-P_u}_{L^2(-1,1)}\le\bigl(80+6\sqrt{L+1}\bigr)\norm u_w .
+\]
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(a) The first two bounds are Lemma~\ref{lem:weight-comparison}. Its proof
+gives $|w_k-(\pi/N)\sin\theta_k|\le2/(N^2-1)$ for even $N$ and $2/N^2$
+for odd $N$, both at most $3/N^2$. Each value of $d_k$ occurs at most
+twice, so $\sum_kw_k^{-1}\le2N^2H_{\lfloor N/2\rfloor+1}\le2N^2(L+1)$.
+
+(b) By the cardinal formula in the proof of Theorem~\ref{thm:cardinal},
+\[
+ (\mathcal I_Nu)(\cos\theta)=\frac{\sin(N\theta)}N\sum_{k=0}^N\frac{a_k}{c_k}
+ \cdot\frac{-\sin\theta}{\cos\theta-\cos\theta_k} .
+\]
+With $e(z)=\cot(z/2)-2/z$, extended by $e(0)=0$,
+\[
+ \frac{-\sin\theta}{\cos\theta-\cos\phi}
+ =\frac12\Bigl[\cot\frac{\theta-\phi}2+\cot\frac{\theta+\phi}2\Bigr]
+ =\frac{2\theta}{\theta^2-\phi^2}+\frac{e(\theta-\phi)+e(\theta+\phi)}2 .
+\]
+For $\theta=\pi t/N$ and $\phi=\theta_k$ the first term contributes exactly
+$Y_u(t)$. The function $e$ is odd and nonincreasing on $(0,2\pi)$, since
+$e'(z)=2/z^2-\tfrac12\csc^2(z/2)\le0$; hence $|e|\le1+4/(3\pi)<2$ on
+$[-\pi,3\pi/2]$, which contains $\theta\pm\theta_k$ for $\theta\le\pi/2$.
+Thus $|r_u|\le(2/N)\sum_k|u_k|/c_k\le(2/N)(\sum_kw_k^{-1})^{1/2}\norm u_w$,
+and (a) gives the bound.
+
+(c) Since $k\le\ell<N/4$, (a) gives $w_k\ge k/N^2$ and
+$w_{N-k}\ge k/N^2$, so
+$\norm g_h^2+\norm{g^\flat}_h^2=\sum_{k\le\ell}k(|a_k|^2+|a_{N-k}|^2)/N^2
+\le\norm u_w^2$. Consider $x\in[0,1]$, i.e.\ $0\le t\le N/2$, and split
+$u=u^{\mathrm l}+u^{\mathrm r}$ into its parts near $x=1$ and near $x=-1$.
+For the near part, $a_k=Ng_k/k$ and
+$t/(t^2-k^2)=t^{-1}\,t^2/(t^2-k^2)$, so by \eqref{eq:Phi-split}
+\[
+ Y_{u^{\mathrm l}}(t)=\frac{2N\sin(\pi t)}{\pi t}\,S(t)
+ +\frac{2N}{\pi t}(\mathcal Eg)(t) .
+\]
+On $[0,1]$ the measure is $\dd x=\sin\theta\dd\theta\le\pi^2t\dd t/N^2$.
+Hence, by Lemma~\ref{lem:signed-remainder}, the second term has
+$L^2(0,1)$ norm at most
+$(4\int_0^\infty|\mathcal Eg|^2\dd t/t)^{1/2}\le80\norm g_h$.
+For the far part, $k\ge N-\ell\ge3N/4$ and $t\le N/2$ give
+$k^2-t^2\ge5N^2/16$, so
+$|2t/(\pi(t^2-k^2))|\le3t/N^2$ and, by (a),
+\[
+ |Y_{u^{\mathrm r}}(t)|\le\frac{3t}{N^2}\sum_k|u^{\mathrm r}_k|
+ \le\frac{3t}N\sqrt{2(L+1)}\,\norm{u^{\mathrm r}}_w .
+\]
+Its squared $L^2(0,1)$ norm is at most
+$\int_0^{N/2}18(L+1)\norm{u^{\mathrm r}}_w^2\,t^2N^{-2}\cdot\pi^2tN^{-2}\dd t
+=\tfrac{9\pi^2}{32}(L+1)\norm{u^{\mathrm r}}_w^2<3(L+1)\norm{u^{\mathrm r}}_w^2$.
+The interval $[-1,0]$ is treated by the reflection
+$(\mathcal I_Nu)(-x)=(\mathcal I_Nu^R)(x)$, $u^R_k=u_{N-k}$, which preserves
+$\norm\cdot_w$ and turns $a_{N-k}$ into $(-1)^N$ times the corresponding
+coefficient of $u^R$. On the whole interval the signed terms contribute at most
+$80(\norm g_h^2+\norm{g^\flat}_h^2)^{1/2}\le80\norm u_w$, the far parts at most
+$\sqrt{3(L+1)}\norm u_w\le2\sqrt{L+1}\norm u_w$, and the remainders of (b)
+at most $(2\cdot8(L+1))^{1/2}\norm u_w=4\sqrt{L+1}\norm u_w$.
+\end{proof}
+
+\subsection{\texorpdfstring{Proof of Proposition~\ref{prop:sharp-trial}}{Proof of the trial proposition}}
+
+Fix $0<a<b<1$ with $\operatorname{supp}f\subset(a,b)$. The nonzero
+values $u_k$, $k<N/2$, have $N^a<k<N^b$; for large $N$ we have
+$N^b<\ell:=\lfloor N/L\rfloor<N/4$, so Lemma~\ref{lem:endpoint-rep}(c)
+applies. Here $a_k=(-1)^ku_k=(N/k)f(\log k/L)$ and
+$a_{N-k}=(-1)^{N-k}(-1)^{N-1}u_k=-a_k$, so $g_k=f(\log k/L)$ and
+$g^\flat_k=-g_k$. The top Chebyshev
+coefficient of $\mathcal I_Nu$ is $N^{-1}\sum_ka_k/c_k$, which vanishes
+because $a_{N-k}=-a_k$; hence $p_N=\mathcal I_Nu\in\Pn_{N-1}$.
+
+\emph{Discrete energy.} By Lemma~\ref{lem:endpoint-rep}(a) and
+$\sin z=z(1+O(z^2))$, $w_k=(\pi^2k/N^2)(1+O(N^{2b-2}+N^{-a}))$ uniformly on
+the support. Hence
+\[
+ Q_N(p_N^2)=2\pi^2\sum_{k}\frac{f(\log k/L)^2}k\,(1+o(1))
+ =2\pi^2L\norm f^2(1+o(1)),
+\]
+where the last step compares the sum with
+$\int_1^\infty f(\log u/L)^2u^{-1}\dd u=L\norm f^2$; the function
+$u\mapsto f(\log u/L)^2/u$ vanishes for $u<N^a$ and has total variation
+$O_f(N^{-a})$ on $[N^a,\infty)$.
+
+\emph{Continuous mass.} By the same comparison,
+$|S(t)-LF(\log t/L)|\le C_fN^{-a}$ for all $t$, where $F=Vf$ is extended by
+$F(b)$ beyond $b$. Fix $0<\delta<1/2$ and let
+$I_\delta=[N^\delta,N^{1-\delta}]$. There $\theta\le\pi N^{-\delta}$ and
+$\sin\theta\dd\theta\ge(1-\pi^2N^{-2\delta}/6)\pi^2t\dd t/N^2$, so
+\begin{align*}
+ \int_0^1|P_u|^2\dd x&\ge(1-o(1))\,4\int_{I_\delta}\sin^2(\pi t)|S(t)|^2\frac{\dd t}t\\
+ &\ge(1-o(1))\,4L^2\int_{I_\delta}\sin^2(\pi t)F\Bigl(\frac{\log t}L\Bigr)^2\frac{\dd t}t-O_f(L^2N^{-a}).
+\end{align*}
+Write $\sin^2(\pi t)=\tfrac12-\tfrac12\cos(2\pi t)$. The constant part gives
+$\tfrac12L\int_\delta^{1-\delta}F^2$ after $x=\log t/L$. For the cosine part
+integrate once by parts: $\phi(t)=F(\log t/L)^2/t$ satisfies
+$|\phi|\le C_f/t$ and $|\phi'|\le C_f/t^2$, so it contributes $O_f(N^{-\delta})$.
+Thus $\int_0^1|P_u|^2\ge2L^3\int_\delta^{1-\delta}F^2\,(1-o(1))$, and the
+same holds on $[-1,0]$ since $|g^\flat|=|g|$. By
+Lemma~\ref{lem:endpoint-rep}(c) and the energy estimate,
+the difference $p_N-P_u$ has norm $O_f(L)=o(L^{3/2})$. Hence
+\[
+ \liminf_{N\to\infty}\frac{\norm{p_N}^2}{L^3}\ge4\int_\delta^{1-\delta}F^2 ,
+\]
+and we let $\delta\downarrow0$.
+In particular $p_N\ne0$ for large $N$.
+
+\emph{Conclusion.} For every admissible $f$ the variational principle gives
+\[
+ \limsup_{N\to\infty}L^2\lambda_-(N,N-1)\le\frac{\pi^2}2\,\frac{\norm f^2}{\norm{Vf}^2}.
+\]
+Choose admissible $f_j\to\cos(\pi x/2)$ in $L^2(0,1)$; as
+$V$ is bounded, the quotients tend to $\pi^4/8$ by Lemma~\ref{lem:volterra}.
+Every estimate holds for all large integers $N$, so the conclusion holds
+along both parities. \qed
+
+\subsection{\texorpdfstring{Proof of \eqref{eq:sharp-finite}}{Proof of the finite reverse bound}}
+
+Let $L\ge16$, $k_0=\lceil L^2\rceil$ and $\ell=\lfloor N/L\rfloor$; then
+$1<k_0\le\ell<N/4$ (e.g.\ $e^L/L^3$ increases for $L\ge3$ and
+$e^{16}>4\cdot16^3$). Partition the nodes into the \emph{good layers}
+$k_0\le d_k\le\ell$, the \emph{microscopic layers} $d_k<k_0$ (including
+$k=0,N$), and the \emph{bulk} $d_k>\ell$, and split $u$ accordingly. Since
+interpolation is linear and $\norm{u^{\mathrm{group}}}_w\le\norm u_w$, it
+suffices to bound each group.
+
+\emph{Good layers.} For $k_0\le k\le\ell$, $z=\pi k/N\le\pi/L$, so
+Lemma~\ref{lem:endpoint-rep}(a) gives
+$N^2w_k/k\ge\pi^2\sin z/z-3/k\ge\pi^2(1-\pi^2/(6L^2))-3/L^2\ge\pi^2(1-2/L^2)$,
+using $9<\pi^2<10$; the reflected layer is the same. Hence
+$\norm g_h^2+\norm{g^\flat}_h^2\le\norm u_w^2/(\pi^2(1-2/L^2))$. By
+$\sin\theta\dd\theta\le\pi^2t\dd t/N^2$ and Lemma~\ref{lem:discrete-primitive}
+with $T=N/2$,
+\[
+ \norm{P_u}^2\le4\int_0^{N/2}\sin^2(\pi t)\bigl(|S|^2+|S^\flat|^2\bigr)\frac{\dd t}t
+ \le(2\alpha_J^2+6)\bigl(\norm g_h^2+\norm{g^\flat}_h^2\bigr)
+ \le\sigma_N^2\norm u_w^2 .
+\]
+With Lemma~\ref{lem:endpoint-rep}(c),
+$\norm{\mathcal I_Nu}\le(\sigma_N+80+6\sqrt{L+1})\norm u_w$.
+
+\emph{Microscopic layers.} For interior indices $1\le d_k<k_0$, the bound
+$\norm g_h^2+\norm{g^\flat}_h^2\le\norm u_w^2$ of
+Lemma~\ref{lem:endpoint-rep}(c) and Cauchy--Schwarz give
+$|S(t)|^2\le H_{k_0}\norm g_h^2$, with $S=0$ for $t<1$. Since
+$\int_1^{N/2}\dd t/t\le L$, $\norm{P_u}\le2\sqrt{LH_{k_0}}\norm u_w$, and the
+interpolant has norm at most $(2\sqrt{LH_{k_0}}+80+6\sqrt{L+1})\norm u_w$.
+For the endpoint $k=0$, $c_0=2$ and the near term of $Y_u$ is
+$a_0\sin(\pi t)/(\pi t)$; its squared $L^2(0,1)$ norm is at most
+$|a_0|^2N^{-2}\int_0^{N/2}\sin^2(\pi t)\dd t/t\le(L+\pi^2/2)|u_0|^2N^{-2}
+\le(L+5)w_0|u_0|^2$ (use $|\sin\pi t|\le\pi t$ on $(0,1)$ and $w_0\ge N^{-2}$).
+The far term and the remainder obey the bounds in the proof of
+Lemma~\ref{lem:endpoint-rep}(c), since $c_k\ge1$. With the reflected
+endpoint, the two endpoint columns contribute at most
+$(\sqrt{L+5}+6\sqrt{L+1})\norm u_w\le10\sqrt{L+5}\,\norm u_w$. Altogether the
+microscopic layers contribute at most
+$(2\sqrt{LH_{k_0}}+80+20\sqrt{L+5})\norm u_w$.
+
+\emph{Bulk.} For $u$ supported in $\ell<k<N-\ell$, discrete orthogonality of
+$\cos(l\theta_k)$ under the trapezoidal rule with endpoint half weights gives
+$\int_0^\pi|(\mathcal I_Nu)(\cos\theta)|^2\dd\theta=(\pi/N)\sum_k|u_k|^2/c_k-
+(\pi/2)|b_N|^2$, where $b_N$ is the top Chebyshev coefficient. As
+$\dd x=\sin\theta\dd\theta\le\dd\theta$ and, for bulk indices,
+$w_k\ge\sin\theta_k/N\ge2d_k/N^2>2/(LN)$,
+\[
+ \norm{\mathcal I_Nu}^2\le\frac\pi N\sum_k|u_k|^2\le\frac{\pi L}2\norm u_w^2 .
+\]
+
+\emph{Assembly.} Adding the three group bounds, the coefficient of
+$\norm u_w$ is at most $\sigma_N$ plus
+$160+2\sqrt{LH_{k_0}}+6\sqrt{L+1}+20\sqrt{L+5}+\sqrt{\pi L/2}\le\tau_N$.
+Applied to $u_k=p(x_k)$ for $p\in\Pn_N$, this is \eqref{eq:sharp-finite}. \qed
 
 \bibliographystyle{siamplain}
 \bibliography{refs}

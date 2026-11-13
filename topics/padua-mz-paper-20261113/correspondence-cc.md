@@ -45,3 +45,11 @@ Rule (W1): every PROVED row is verbatim or explicitly weakened; no OPEN or MEASU
 | — | — | PD-T524 | historical CONDITIONAL prediction | | **omitted** (superseded by PD-T546) |
 
 Counts at this checkpoint: 14 numbered statements in the post-split text (12 statements + 2 unnamed remarks) all mapped; 12 planned additions; 2 omissions with reasons.
+
+## Changes log
+
+- 2026-11-13 (task 3, first integration): sections reordered as in plan-cc (§2 Preliminaries incl. weight lemma; §3 upper spectrum; §4 endpoint minimum; §5 stub; §6 consequences; §7 fixed ratio; §8 hyperinterpolation; §9 finite/open; Appendix A).
+  - Added, verbatim at record scope: Thm `thm:five-thirds` (PD-T526, with the restriction/min consequence that is a one-line corollary of PD-T526 and PD-T022), Lemma `lem:volterra` (PD-T522), Prop `prop:sharp-trial` (PD-T523), Thm `thm:sharp-min` (PD-T546 with its finite bound for L≥16), Lemmas `lem:signed-remainder` (PD-T544) and `lem:discrete-primitive` (PD-T545), Appendix A with proofs.
+  - **Proof-route change, for the audit:** the paper proves Prop. `prop:sharp-trial` (PD-T523) through the shared endpoint representation, Lemma `lem:endpoint-rep`(c). That lemma is the one-edge decomposition of the PD-T546 proof, §1–2, built on PD-T544. The record S1-sharp-one-sided instead proves a pointwise bound (D) for smooth envelopes. The statement is unchanged. The new route keeps every step: the discrete energy, the sum–integral comparison, the oscillation averaging, and the trial's degree cancellation. It replaces only the pointwise remainder by an L² remainder of size O(L), which is o(L^{3/2}).
+  - Lemma `lem:endpoint-rep` collects PD-T546 proof §1–2 (weights (3)–(4), exact formula (5), remainder (6), one-edge decomposition (7) with the signed-error and cross-edge bounds (8)). It is not a new claim.
+  - §5 is a stub, so the build is a working draft. `cor:endpoint` and `rem:rate` sit unchanged in §6 for now.

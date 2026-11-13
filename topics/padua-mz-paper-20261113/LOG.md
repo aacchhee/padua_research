@@ -45,6 +45,14 @@
 - **Baseline (task 0):** the single draft builds cleanly at 25 A4 pages, source hash equal to the 2026-11-05 record.
 - **Split (task 0a):** done by script; exact changes and the statement map are in [split-map.md](split-map.md). MZ-CC post-split 16 pp., MZ-SP 11 pp., both clean. Gate W0 PASS. Class conversion follows as a separate commit.
 
+## 2026-11-13 — Claude, claude-opus-5-5 — class conversion, plans, first MZ-CC integration
+
+- Class conversion: a Sonnet 5.5 high worker did it; the orchestrator verified it by its own rebuild (`aed79fd`). Details are in split-map.md.
+- Plans and correspondence tables written (`761e884`). Two Opus 5.5 high plan reviewers are running: review-plan-cc.md (it also independently checks the provisional corollary) and review-plan-sp.md.
+- **New provisional claim:** PD-T?mz-paper-claude-01 ([theory/cc-defect-condition-corollary.md](theory/cc-defect-condition-corollary.md)). It gives the sharp defect limit (log N)²(1−η_N)→π⁴/8, κ₂(G_N)/(log N)²→8Λ_edge/π⁴, and the hyperinterpolation factor (1+√(5/3))√2. It is a two-line consequence of PD-T526/527/530/546/547/025. Flagged for the Codex audit.
+- **BRIEF erratum:** BRIEF §0/§2 list PD-T544/545 among the signed Padua results. They are the CC signed-remainder and discrete-primitive lemmas behind π⁴/8 (P3), and they go to MZ-CC. MZ-SP uses PD-T534/535/536 and PD-T539–542.
+- MZ-CC restructured, and PD-T526/522/523/544/545/546 integrated with Appendix A (proofs). Builds clean at 23 pp. (siamart). §5 (Λ_edge) is a stub. One proof-route change for PD-T523 is recorded in correspondence-cc.md.
+
 ## Runs needed
 
 - Tasks 0–9 and gates W0–W4 as in handoff 01.
