@@ -89,7 +89,7 @@ That paragraph therefore did **not** establish that every obstruction and dispos
 **Full read actually performed, 2026-11-13, by the orchestrator (Claude Opus 5.5), retrospective.**
 - **Pinned registry.** `state/IDEAS.md` at branch head `8d7ed57`: 1278 lines, 365258 bytes, unchanged since main `b5388c2` (`git diff --exit-code b5388c2 HEAD -- state/IDEAS.md`).
 - **Inventory.** There are 35 Markdown table blocks, at body ranges 7–25, 33–48, 56–91, 108–117, 260–276, 280–289, 402–410, 416–442, 450–464, 468–476, 486–507, 511–517, 529–578, 584–633, 639–740, 746–765, 776–787, 793–816, 820–847, 851–854, 865–886, 899–913, 917–921, 929–933, 944–959, 968–973, 984–991, 1010–1019, 1023–1035, 1042–1058, 1064–1079, 1085–1112, 1122–1137, 1145–1154 and 1169–1278. These were recomputed mechanically and match `audit-work/review02-records.md`.
-- **Method.** The **whole file** was read, untruncated, in bounded ranges: 1–126, 127–295, 296–520, 521–639, 640–694, 695–744, 745–797, 800–810 and 812–860, 861–940, 941–1025, 1026–1095, 1096–1170 and 1171–1278.
+- **Method.** The **whole file** was read, untruncated, in bounded ranges: 1–126, 127–295, 296–520, 521–639, 640–694, 695–744, 745–798, 800–810 and 812–860, 861–940, 941–1025, 1026–1095, 1096–1170 and 1171–1278.
   - The two lines longer than 2000 characters (L799, IDEA-250, 2189 characters; L811, IDEA-262, 2250 characters) were read in full with `sed -n Np state/IDEAS.md | fold -w 1000`.
   - Every heading, ID, alias and summary was scanned, and every table cell was read whole, including the cells cut off before (L262, 263, 410, 422, 438, 786) and the PR19 table L899–913.
   - This includes every table with obstruction or disposition content, whatever its title ("registration", "retained candidates", "aliases").
@@ -107,3 +107,5 @@ That paragraph therefore did **not** establish that every obstruction and dispos
   - IDEA?…-01 and -07: variant / new combination, with no priority claim. S4's broad Delsarte/Cohn–Elkies proposal is credited.
   - Candidates -02 to -06: as previously dispositioned, with -02 corrected per A6.
 - **Status of this gate.** The requirement (headings, IDs, aliases and summaries inventory plus every obstruction and disposition table in full) is now met, but **retrospectively**: on 2026-11-13, after the mechanisms were generated on 2026-11-12. The gate remains not prospective. That deviation is disclosed and is not cured by this read. Audit-01's own full read is independent evidence and is not counted here.
+
+*2026-11-14, audit-03 MINOR wording fix:* the range-list endpoint 797 was corrected to 798, matching response-02's already documented read of lines 1–798. This reconciles the two records; it does not invent an additional read or backdate the retrospective completion.
