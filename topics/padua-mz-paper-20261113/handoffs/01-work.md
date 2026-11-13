@@ -1,6 +1,6 @@
 # Handoff 01 — padua-mz-paper-20261113 — split and finalize the MZ manuscripts: MZ-CC and MZ-SP
 
-- Status: open
+- Status: superseded by 02: session boundary at c41d409. Tasks 0–2 are done and task 3 is partly done; the remaining work and AC's 2026-11-13 decisions are carried into 02.
 - Previous handoff: none (new topic)
 
 - Next agent / model / effort: **Claude** (a new Claude thread).

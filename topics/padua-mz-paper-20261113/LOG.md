@@ -1,7 +1,7 @@
 # MZ paper finalization (MZ-CC and MZ-SP): log
 
 - Branch: `claude/padua-mz-paper-20261113` · Base: main `b5388c2` · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Stage: WORK · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
+- Stage: WORK · Draft PR #35 · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Open handoff: [handoffs/02-work.md](handoffs/02-work.md) (01 superseded at the session boundary)
 - Reserved final-ID ranges: none (no new mathematics expected).
 - Decided by AC: venues (MZ-CC SINUM, MZ-SP JAT); Zenodo later; companion = AC-only reading aid, arXiv and journal versions identical (2026-11-13).
 
@@ -53,6 +53,15 @@
 - **BRIEF erratum:** BRIEF §0/§2 list PD-T544/545 among the signed Padua results. They are the CC signed-remainder and discrete-primitive lemmas behind π⁴/8 (P3), and they go to MZ-CC. MZ-SP uses PD-T534/535/536 and PD-T539–542.
 - MZ-CC restructured, and PD-T526/522/523/544/545/546 integrated with Appendix A (proofs). Builds clean at 23 pp. (siamart). §5 (Λ_edge) is a stub. One proof-route change for PD-T523 is recorded in correspondence-cc.md.
 
+## 2026-11-13 — Claude, claude-opus-5-5 — §5, reviews, session boundary
+
+- MZ-CC §5 and Appendix B (`c41d409`): PD-T529 is stated weakened (qualitative), PD-T530 verbatim. The PD-T526 matrices H,K are renamed Y,Z. Builds clean at 28 siamart pp.
+- Plan reviews: [review-plan-cc.md](review-plan-cc.md) (no BLOCKING; M1–M3 accepted) and [review-plan-sp.md](review-plan-sp.md) (F1, F2, F7, F11, F12 MAJOR; F13 blocks submission). Dispositions are at the end of each plan.
+- PD-T?mz-paper-claude-01: check PASS with corrections ([check-cc-defect-corollary.md](check-cc-defect-corollary.md)). Applied: onset N≥57 via PD-T019 (exact rational check N=2…399 run by the orchestrator, proof for all N); the computer-assisted note for the numeric interval; the (c) threshold. Part (d), the interpolation norm, was added after the check and is not yet checked independently.
+- Draft PR #35 opened. Tools `tools/build.sh` and `tools/split.py` committed.
+- Questions pending with AC: plan-sp F2 (self-contained SP appendix vs MZ-CC on arXiv first) and F13 (public witness arrays). Defaults are in handoff 02.
+- Session boundary: handoff 01 superseded by [handoff 02](handoffs/02-work.md).
+
 ## Runs needed
 
-- Tasks 0–9 and gates W0–W4 as in handoff 01.
+- Remaining tasks and gates W1–W4: see handoff 02.
