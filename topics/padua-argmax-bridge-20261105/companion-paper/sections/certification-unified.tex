@@ -1420,14 +1420,8 @@ satisfies $S_n<\Lambda_c(n)-3/100$.
 \begin{proof}
 Apply Corollary~\ref{uc:absolute-gate} with $\rho_1=\pi/2$.
 Its tangent condition holds at $n=192$ and persists thereafter;
-the same corollary gives $G(n,\pi/2)>3/100$.
+the same corollary gives $\mathcal G(n,\pi/2)>3/100$.
 \end{proof}
-
-From degree 256 the analytic estimate \eqref{ul:corner256} supplies
-the same strict descent on the required diamond. An analytic far leaf
-is permitted from degree 192 only when its entire triangle intersection
-satisfies $\rho\geq\pi/2$. Corollary~\ref{ul:far192} then gives
-$S_n<\Lambda_c(n)-3/100$ throughout that closed intersection.
 
 These analytic substitutions preserve their full domain hypotheses.
 The corner estimate from degree 256 applies on the inward square
@@ -1452,17 +1446,7 @@ for eligible regions and degrees, while their proved implications
 supply exactly the strict comparisons required by the global
 argument.
 
-To complete the implication, choose an odd chart for any point of the
-physical square and fold its absolute phases into $\mathcal T$.
-The tree gives a leaf containing those phases. Its far comparison,
-noncorner near comparison, or actual-corner descent excludes the point
-strictly, except when it is the origin of an actual corner chart.
-Those origins are the two nonnode corners already identified by parity.
-Their exact common value and the closed chart cover prove the asserted
-maximum and equality set, including every chart tie and subdivision
-boundary.
-
-One can follow the conclusion at a fixed arbitrary point as follows.
+To complete the implication, fix an arbitrary physical point.
 First the closed odd-chart cover supplies a center and signed phases.
 The folding identities supply a point of $\mathcal T$ with the
 same envelope value. A complete tree supplies a leaf containing that
@@ -1484,13 +1468,8 @@ provide multiple valid ways to reach a comparison. All local bounds
 include their closed edges, so every physical point receives the
 same final strict exclusion or the identified exact corner value.
 
-This completes the finite-to-continuous implication for the phase
-certificates. The physical Bernstein certificates prove the identical
-conclusion on $2\leq n\leq40$. The phase certificates handle
-$41\leq n\leq511$, and the earlier analytic proof starts at
-$n=512$. Thus the degree ranges meet consecutively, and the exact
-equality classification is consistent across the finite and analytic
-parts of Theorem~\ref{thm:main-location}.
+The preceding argument proves the finite-to-continuous implication
+used by the verification proposition below.
 
 \subsection{Evidence and arithmetic}
 \begin{proposition}[Computer-assisted finite verification]\label{cert:finite-verification}
@@ -1531,9 +1510,11 @@ highest-mode coefficient one and the exact removable collision values.
 The evaluated product form, obtained from the sine-ratio kernel in
 Section~\ref{sec:corner}, is
 \[
- R_\ell(t)=\frac{\sin(\ell t)}{\sin t},\qquad
- G_n(u,v)=R_{n+1}(s)R_{n+1}(t)+R_n(s)R_n(t)-\cos(nu),
- \quad s=(u+v)/2,\quad t=(v-u)/2.
+ \begin{aligned}
+ R_\ell(t)&=\frac{\sin(\ell t)}{\sin t},\\
+ G_n(u,v)&=R_{n+1}(s)R_{n+1}(t)+R_n(s)R_n(t)-\cos(nu),\\
+ s&=(u+v)/2,\qquad t=(v-u)/2.
+ \end{aligned}
 \]
 At $t=j\pi$ the linked value is
 $R_\ell(j\pi)=\ell(-1)^{j(\ell-1)}$, by the ratio of the first
@@ -1572,20 +1553,26 @@ throughout.
 \centering\small
 \caption{Mathematical and implementation premises of the finite verification.}
 \label{cert:trust}
-\begin{tabular}{@{}p{.13\linewidth}p{.29\linewidth}p{.27\linewidth}p{.23\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.13\linewidth}
+>{\raggedright\arraybackslash}p{.26\linewidth}
+>{\raggedright\arraybackslash}p{.27\linewidth}
+>{\raggedright\arraybackslash}p{.24\linewidth}@{}}
 \toprule
 Stage & Proved in the text (premise) & Computed by the program & Implementation trust\\\midrule
 Polynomial certificates & Cardinal identities, Bernstein positivity, complete-cover implication & Coefficient enclosures, midpoint partitions and strict coefficient tests & C++/GMP, 192-bit outward integer rounding, compiler and Python driver\\
-Direct phase sums & Kernel and reflection identities, endpoint weights, collision values, $\pi$ and Taylor bounds & New finite-sum intervals at exact rational arguments & Python integer/\texttt{Fraction} operations and conversions (\url{https://docs.python.org/3/library/fractions.html}); guarded NumPy operations~\cite{NumPy2020}\\
+Direct phase sums & Kernel and reflection identities, endpoint weights, collision values, $\pi$ and Taylor bounds & New finite-sum intervals at exact rational arguments & Python integer/\texttt{Fraction} operations and conversions; guarded NumPy operations~\cite{NumPy2020}\\
 Interval endpoints & Rounding model and error bound derived below & Widened finite terms and pairwise sums & IEEE binary64 round-to-nearest, gradual underflow, comparisons, \texttt{nextafter}~\cite{IEEE7542019}\\
 Closed cover & Positive interpolation, selected-pair floors, corner descent, parity and chart cover & GRID/TREE norm, proxy intersections, exact polygon maxima and strict margins & Exact rational checker and strict parsing\\
-Analytic branches & Floor tiers, \eqref{ul:corner256}, Corollary~\ref{ul:far192} and elementary constants & Degree and closed-guard checks; rational base comparisons & Python integers/Fraction for \texttt{onset512\_analytic/check.py} and its receipt\\
+Analytic branches & Floor tiers, \eqref{ul:corner256}, Corollary~\ref{ul:far192} and elementary constants & Degree and closed-guard checks; rational base comparisons & Python integers and \texttt{Fraction}; recorded base-evaluation receipt\\
 \bottomrule
 \end{tabular}
 \par\smallskip\footnotesize
 The analytic lemmas are premises proved in the text; I25 checks their
 metadata and guards. The base arithmetic for their displayed constants
-is recorded in \texttt{code/onset512\_analytic/receipt.json}.
+uses \texttt{code/onset512\_analytic/}\allowbreak\texttt{check.py};
+its receipt is \texttt{code/onset512\_analytic/}\allowbreak\texttt{receipt.json}.
+The Python rational type is documented at
+\url{https://docs.python.org/3/library/fractions.html}.
 The recorded Python/NumPy runtime, operating system and hardware apply
 to every program row.
 \end{table}
@@ -1607,9 +1594,9 @@ certificate records of the same tree, each recertified by the independent checke
 \toprule
 Degrees & Count & Checked witnesses & Tree nodes\\
 \midrule
-$2\!:\!40$ &39&39& polynomial\\
-$41\!:\!319$ and $511$ &280&560&$51\!:\!101$\\
-$320\!:\!510$ &191&382&$51$\\
+2--40 &39&39& polynomial\\
+41--319 and $511$ &280&560&51--101\\
+320--510 &191&382&$51$\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1640,17 +1627,6 @@ inspection. Full histories for the other degrees remain at their recorded
 computation sites. The source package, arithmetic assumptions, runtime
 identities, file hashes and commands describe regeneration, and the
 accompanying manifest identifies the complete proof inventory.
-
-The independent calculation has three parts. The finite angular kernel
-and cardinal-reflection identities specify exactly what to sum. Interval
-arithmetic encloses every such sum. The rational cover check then verifies
-that those enclosures supply the strict inequalities proved in this
-section. For the primitive it sums the absolute values over the whole
-odd board. For an actual cardinal value it first adds the four reflected
-kernel values, then takes the absolute value and applies the two endpoint
-weights. This order retains the cancellations in the cardinal formula.
-At a removable collision the exact finite-polynomial value supplies the
-term.
 
 \paragraph{An elementary derivation of the arithmetic bounds.}
 Write $\operatorname{RN}(y)$ for the closest binary64 number to a real
@@ -1838,17 +1814,9 @@ by the exact normalization integer $2n(n+1)$ introduces no further
 rounding. All subsequent norm and geometric inequalities therefore
 use exact rational bounds.
 
-The checker reconstructs the required phase vertices from the tree and
-the chosen norm method. At every retained exact argument it evaluates
-the direct finite sum. Its origin lower endpoint bounds the true
-$\Lambda_c(n)$ from below, and its vertex uppers bound $S_n$ from above.
-Its newly certified norm supplies the derivative allowance in $q_R$.
-These quantities are substituted together, so every margin refers to
-the same rigorous calculation. On a near noncorner leaf the selected-pair
-floor supplies the additional physical defect; below degree 256 the
-three recomputed actual-function uppers supply the squared-variable
-corner test. The analytic branches use their closed guards and the
-lemmas cited in Table~\ref{cert:trust}.
+The proven interval rules supply the substituted finite-sum bounds
+used in each rational norm, proxy and corner predicate of
+Table~\ref{cert:trust}.
 
 Both certificate records at a degree have their partitions and strict predicates
 checked separately. A finite-function interval may be reused for an
@@ -1859,12 +1827,8 @@ with four workers. The separate execution of the six witnesses at degrees
 41, 458 and 511 used 27.276 CPU seconds. These are observed costs of the
 specified finite checks.
 
-The small-degree check reconstructs the initial cosine brackets,
-corrected cardinal coefficients and subdivided Bernstein coefficients
-using its stated outward integer rounding. Its independently authored
-coefficient checker uses the mathematical construction proved above.
-The same exact integer library, compiler and Python-driver assumptions
-remain attached to that part of the proof.
+The small-degree route uses the coefficient construction and
+integer-rounding premises already stated in Table~\ref{cert:trust}.
 
 The disjoint sets $\{41,\ldots,319,511\}$ and
 $\{320,\ldots,510\}$ have sizes 280 and 191. Their union is
