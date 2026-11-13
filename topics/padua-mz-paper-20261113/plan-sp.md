@@ -54,7 +54,7 @@ Applied when MZ-SP is integrated, in the next session (handoff 02):
 | Finding | Disposition |
 |---|---|
 | F1 CC recap misses w_j ≥ (1+min(j,N−j))/N² and the π−4/3 bound | **Accepted.** One CC-weight lemma is proved inside MZ-SP (about 12 lines, from the explicit weight formula). The unused d_N and the 5 sinθ upper bound are dropped. |
-| F2 central SP theorems rest on MZ-CC's λ₊<2 | **Question for AC.** Option (a): reproduce the 1.5-page proof (exact identities + sign argument) as an SP appendix, so MZ-SP is self-contained. Option (b): post MZ-CC on arXiv first and cite it. Default if unanswered: (a), recommended. |
+| F2 central SP theorems rest on MZ-CC's λ₊<2 | **AC decided (2026-11-13): MZ-CC first, MZ-SP cites it.** Original question: Option (a): reproduce the 1.5-page proof (exact identities + sign argument) as an SP appendix, so MZ-SP is self-contained. Option (b): post MZ-CC on arXiv first and cite it. Default if unanswered: (a), recommended. |
 | F3 corner operator after carriers | Accepted (already the plan's order). |
 | F4 duplicate weight estimates | Accepted only as far as possible without a new claim: proofs of PD-T295/377 stay as recorded. A unified nodal estimate would need a new record and audit, so it is not done unless page pressure requires it. |
 | F5 statement count | Accepted. |
@@ -65,7 +65,7 @@ Applied when MZ-SP is integrated, in the next session (handoff 02):
 | F10 headline wording | Accepted ("supported on 𝒳_m"; the registered 1/2<θ<1 range). |
 | F11 density lemma attribution | Accepted: cite SVZ 2008 (33) and BCDMVX 2006 Thm 2 (both read); CDMV 2008 is unread, so it is listed for AC. |
 | F12 notation register | Accepted: notation-sp.md first, before the PR #31 text goes in. |
-| F13 PD-T376 witness arrays not public | **Question for AC** (blocks submission, not writing). Options: AC's planned Zenodo deposit includes the witness arrays; or deterministic regeneration from committed code; or drop Prop 8.1. Default: keep it, with the deposit-DOI placeholder. |
+| F13 PD-T376 witness arrays not public | **AC decided (2026-11-13): they go into the Zenodo deposit.** Original question (blocks submission, not writing): Options: AC's planned Zenodo deposit includes the witness arrays; or deterministic regeneration from committed code; or drop Prop 8.1. Default: keep it, with the deposit-DOI placeholder. |
 | Forgotten: PD-T107 certified brackets m=10–40 | Accepted: replace the float Table 2 by the certified brackets, if PD-T107's scope matches; otherwise keep the table labelled MEASURED. |
 | Forgotten: reproduction remark after Thm 7.1 | Accepted: add the one-line argument; cite PD-N051 for sharpness. |
 | Unregistered Σ|w_z| → 4 corollary (SVZ 2008's unproved remark) | **Not added** in this topic. It needs registration, audit and a priority check. Reported to AC as a possible follow-up. |

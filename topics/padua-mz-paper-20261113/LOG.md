@@ -1,7 +1,7 @@
 # MZ paper finalization (MZ-CC and MZ-SP): log
 
 - Branch: `claude/padua-mz-paper-20261113` · Base: main `b5388c2` · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Stage: WORK · Draft PR #35 · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Open handoff: [handoffs/02-work.md](handoffs/02-work.md) (01 superseded at the session boundary)
+- Stage: WORK · Draft PR #35 · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Open handoff: [handoffs/03-work.md](handoffs/03-work.md) (01, 02 superseded)
 - Reserved final-ID ranges: none (no new mathematics expected).
 - Decided by AC: venues (MZ-CC SINUM, MZ-SP JAT); Zenodo later; companion = AC-only reading aid, arXiv and journal versions identical (2026-11-13).
 
@@ -61,6 +61,13 @@
 - Draft PR #35 opened. Tools `tools/build.sh` and `tools/split.py` committed.
 - Questions pending with AC: plan-sp F2 (self-contained SP appendix vs MZ-CC on arXiv first) and F13 (public witness arrays). Defaults are in handoff 02.
 - Session boundary: handoff 01 superseded by [handoff 02](handoffs/02-work.md).
+
+## 2026-11-13 21:28 — AC answers to the handoff-02 questions
+
+- AC: "1. mz-cc first, mz-sp cites. 2. I guess they go to zenodo".
+  - plan-sp F2: MZ-CC goes out first, and MZ-SP cites it for λ₊<2 and the other CC inputs. No reproduced proof.
+  - plan-sp F13: the PD-T376 witness arrays go into AC's Zenodo deposit. Prop 8.1 stays, with the deposit-DOI placeholder.
+- Handoff 02 superseded by [handoff 03](handoffs/03-work.md), which carries these changes. No manuscript change.
 
 ## Runs needed
 

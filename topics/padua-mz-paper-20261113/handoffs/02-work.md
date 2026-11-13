@@ -1,6 +1,6 @@
 # Handoff 02 — padua-mz-paper-20261113 — continue finalizing MZ-CC and MZ-SP
 
-- Status: open
+- Status: superseded by 03: AC answered the pending questions (F2: MZ-CC first, MZ-SP cites; F13: the witness arrays go to Zenodo)
 - Previous handoff: [01-work.md](01-work.md) (superseded at the session boundary; its task list and gates remain the reference)
 
 - Next agent / model / effort: **Claude**, a new session.
