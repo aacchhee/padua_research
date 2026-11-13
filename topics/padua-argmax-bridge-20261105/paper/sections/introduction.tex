@@ -5,8 +5,8 @@ the function, and how much can interpolation magnify errors in the data?
 The Lebesgue constant measures the second effect. Put $Q=[-1,1]^2$
 and let $C(Q)$ denote the continuous real functions on $Q$, with
 $\|f\|_\infty=\max_{z\in Q}|f(z)|$. Let $\Pi_n$ be the real
-polynomials of total degree at most $n$. For the interpolation operator
-$I_n:C(Q)\to\Pi_n$, its induced norm is
+polynomials of total degree at most $n$. For the Padua interpolation operator on the node set defined in
+\eqref{eq:nodes}, $I_n:C(Q)\to\Pi_n$, its induced norm is
 $\|I_n\|=\sup_{\|f\|_\infty\leq1}\|I_nf\|_\infty$.
 Writing $\Lambda_n=\|I_n\|$, we have
 \begin{equation}\label{eq:lebesgue-inequality}
@@ -41,6 +41,7 @@ We consider the following orientation of the points:
                    \cos\frac{k\pi}{n+1}\right):
  0\leq j\leq n,\quad 0\leq k\leq n+1,\quad j+k\ \hbox{even}\right\}.
 \end{equation}
+Figure~\ref{fig:padua-nodes} illustrates the two parities.
 Giving the coordinates explicitly avoids differences in the naming of the
 Padua families. All statements below refer to \eqref{eq:nodes}.
 
@@ -137,8 +138,8 @@ Let $N=n+\tfrac12$. For the points \eqref{eq:nodes}, as $n\to\infty$,
             +O\!\left(\frac{\log N}{N^2}\right).
 \end{equation}
 The constants and the remainder estimate are the same for both parities.
-More precisely, a finite constant $C$, independent of $n$, bounds the
-absolute remainder by $C\log N/N^2$ for every integer $n\geq2$.
+More precisely, a finite constant $C_{\rm rem}$, independent of $n$, bounds the
+absolute remainder by $C_{\rm rem}\log N/N^2$ for every integer $n\geq2$.
 Consequently \eqref{eq:main-expansion} also holds for $\Lambda_n$.
 \end{theorem}
 
@@ -162,7 +163,7 @@ empirical model was $((2/\pi)\log(n+1)+1.1)^2$
 \cite[Section~1.1, pp.~3--5]{DeMarchi2005NearOptimal}.
 Here the explicit constants are
 $b\approx1.225522125742$, $c\approx1.846160310424$, and
-$\kappa\approx0.919710118388$. Theorem~\ref{thm:main-expansion}
+$\kappa\approx0.919710118388$ (numerical values; not used in any proof). Theorem~\ref{thm:main-expansion}
 identifies their exact expressions and resolves the lower terms through
 an error smaller than $1/n$. Its square
 comes from two harmonic sums; $\kappa$ measures their coupling, and the
@@ -172,7 +173,8 @@ Both proofs begin with the same corrected interpolation kernel. At the
 corner its signs give an exact positive sum. Away from the corner, reflection
 writes the Lebesgue function as a periodic envelope minus the cancellation
 lost in taking absolute values. A single comparison with a completed model
-then controls that envelope and the competing reflection defects. Near an
+controls that envelope, and selected reflected pairs bound the lost
+cancellation from below. Near an
 actual maximizing corner, a positive interpolation argument proves strict
 quadratic descent. The finite certificates use that same interpolation
 principle. This organization separates the two ideas that matter: computing

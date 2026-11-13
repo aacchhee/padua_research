@@ -74,7 +74,10 @@ $h_p^{(n)}h_q^{(n+1)}$.
 There are $(n+1)(n+2)/2$ checkerboard points, the same number as the
 modes. The square evaluation matrix is invertible, proving unisolvence.
 The inverse Gram coefficients are $\nu_p\nu_q$ except at $(p,q)=(n,0)$,
-where the coefficient is one. The discrete reproducing kernel, multiplied
+where the coefficient is one. The corrected discrete reproducing kernel
+$\widetilde K_n(z,B)=K_n(z,B)-T_n(z_1)T_n(B_1)$ satisfies
+$p(z)=\sum_Bw_Bp(B)\widetilde K_n(z,B)$ for every $p\in\Pi_n$.
+This kernel, multiplied
 by $w_{jk}$, therefore has the cardinal values and gives
 \eqref{eq:cardinal-kernel}.
 \end{proof}

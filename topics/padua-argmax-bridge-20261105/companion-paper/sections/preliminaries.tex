@@ -115,11 +115,11 @@ precisely, the \emph{checkerboard scalar product} is the weighted sum
 The expression is bilinear: holding one input fixed, it is linear in
 the other input. For example,
 \[
- \langle af_1+bf_2,g\rangle_{\mathcal P_n}
- =a\langle f_1,g\rangle_{\mathcal P_n}
-   +b\langle f_2,g\rangle_{\mathcal P_n}
+ \langle sf_1+tf_2,g\rangle_{\mathcal P_n}
+ =s\langle f_1,g\rangle_{\mathcal P_n}
+   +t\langle f_2,g\rangle_{\mathcal P_n}
 \]
-for all real $a,b$. It is symmetric because exchanging $f$ and $g$
+for all real $s,t$. It is symmetric because exchanging $f$ and $g$
 leaves every summand unchanged. It is positive semidefinite
 on polynomials:
 $\langle p,p\rangle_{\mathcal P_n}$ is a sum of nonnegative terms,
@@ -172,7 +172,8 @@ second has nonzero frequency, giving $1/2$ after division by $\pi$.
 When $p=r=0$, the integrand itself is one. The factors $\nu_r$ are
 the reciprocals of these continuous squared norms. Sampling on an angular grid preserves this orthogonality for
 the required indices, while doubling the squared norm of the highest
-first-coordinate mode: $h_n^{(n)}=1$ instead of $1/2$. The corresponding
+first-coordinate mode (one instead of $1/2$; this is $h_n^{(n)}$
+in the notation defined in the proof below). The corresponding
 second-coordinate mode $q=n+1$ is outside the total-degree space. The proof computes it using finite
 sums, so it also verifies exactly which continuous normalization survives
 in the sampled setting.
@@ -189,7 +190,7 @@ nodes. The weight belongs to the sampled variable $B$, just as a
 quadrature weight belongs to the variable being summed. Later we
 express this same $\widetilde K_n$ using angle sums and differences. The angular
 kernel $G_n$ introduced after the proof is the two-angle trigonometric
-sum from which those reflected copies of $\widetilde K_n$ are assembled. Thus
+sum whose four reflected copies assemble $\widetilde K_n$. Thus
 cardinal values, reproduction and the angular formula are linked by
 explicit finite identities.
 
@@ -224,8 +225,8 @@ Recall the finite geometric-series identity
 \]
 It follows by multiplying the sum by $1-z$: all middle powers cancel.
 We use elementary complex-number notation to evaluate this sum.
-A complex number is written $a+ib$, where $a,b$ are real and $i^2=-1$;
-its real part is $\operatorname{Re}(a+ib)=a$. We use
+A complex number is written $s+it$, where $s,t$ are real and $i^2=-1$;
+its real part is $\operatorname{Re}(s+it)=s$. We use
 $e^{i\alpha}=\cos\alpha+i\sin\alpha$ for real $\alpha$. The angle
 addition formulas give $e^{i\alpha}e^{i\beta}=e^{i(\alpha+\beta)}$,
 so $(e^{i\alpha})^j=e^{ij\alpha}$ and its real part is
@@ -234,14 +235,14 @@ here.
 
 To evaluate the cosine sum, let $r$ be an integer with
 $1\leq r\leq2M-1$, set $z=e^{ir\pi/M}$, and write
-$\sigma=z^M=(-1)^r$. In this range $z\ne1$. Half weighting the two
+$\sigma_{\mathrm{geom}}=z^M=(-1)^r$. In this range $z\ne1$. Half weighting the two
 endpoints subtracts $(1+z^M)/2$ from the full geometric sum. Thus
 \[
  \sum_{j=0}^M{}'z^j
- =\frac{1-\sigma z}{1-z}-\frac{1+\sigma}2
- =\frac{(1-\sigma)(1+z)}{2(1-z)}.
+ =\frac{1-\sigma_{\mathrm{geom}} z}{1-z}-\frac{1+\sigma_{\mathrm{geom}}}2
+ =\frac{(1-\sigma_{\mathrm{geom}})(1+z)}{2(1-z)}.
 \]
-For even $r$, $\sigma=1$ and this expression is zero. For odd $r$,
+For even $r$, $\sigma_{\mathrm{geom}}=1$ and this expression is zero. For odd $r$,
 the quotient $(1+z)/(1-z)$ is purely imaginary. Writing
 $z=e^{i\alpha}$ gives
 \[
@@ -479,7 +480,7 @@ For $z=(x,y)$ and $B=(\xi,\eta)$, the uncorrected sum and the
 corrected sum are
 \[
  K_1(z,B)=1+2x\xi+2y\eta,\qquad
- R_1(z,B)=1+x\xi+2y\eta.
+ \widetilde K_1(z,B)=1+x\xi+2y\eta.
 \]
 Multiplying the corrected expression by each nodal weight gives
 \[
@@ -494,19 +495,19 @@ the nodal values and the interpolating polynomial. This example shows
 how a single normalization coefficient affects the entire construction.
 
 It also illustrates the absolute values in the Lebesgue function.
-For real $a,b$,
+For real $s,t$,
 \[
- |a+b|+|a-b|=2\max(|a|,|b|).
+ |s+t|+|s-t|=2\max(|s|,|t|).
 \]
-To prove this, first suppose $|a|\geq|b|$. If $a\geq0$, then both
-$a+b$ and $a-b$ are nonnegative and their absolute values sum to
-$2a=2|a|$. If $a<0$, both are nonpositive and the sum is $-2a=2|a|$.
-In the other case, $|b|\geq|a|$, exchange $a$ and $b$ in that
-argument; the left side is unchanged because $|b-a|=|a-b|$, and the
-answer is $2|b|$. This includes equality and zero cases.
+To prove this, first suppose $|s|\geq|t|$. If $s\geq0$, then both
+$s+t$ and $s-t$ are nonnegative and their absolute values sum to
+$2s=2|s|$. If $s<0$, both are nonpositive and the sum is $-2s=2|s|$.
+In the other case, $|t|\geq|s|$, exchange $s$ and $t$ in that
+argument; the left side is unchanged because $|t-s|=|s-t|$, and the
+answer is $2|t|$. This includes equality and zero cases.
 
 For the first two cardinal polynomials, apply the identity with
-$a=1+x$ and $b=2y$ and divide by four. On $Q$, $1+x$ and $1-x$ are
+$s=1+x$ and $t=2y$ and divide by four. On $Q$, $1+x$ and $1-x$ are
 nonnegative, so the third cardinal polynomial already has nonnegative
 value. Therefore
 \[
@@ -534,7 +535,7 @@ variables $u,v$ that lets us express the four-angle kernel as an average
 of reflected copies. Its definition below includes the same exceptional
 mode correction already determined by the scalar product.
 
-The same correction appears in the angular kernel
+The angular kernel is
 \begin{equation}\label{eq:angular-kernel}
  G_n(u,v)=\sum_{p+q\leq n}\nu_p\nu_q\cos(pu)\cos(qv)-\cos(nu).
 \end{equation}
@@ -575,9 +576,9 @@ at $z$ by the same mode evaluated at $B$. At a corner, $\theta$ and
 $\phi$ are each either zero or $\pi$, so cosine values simplify to
 signs and the two reflected contributions in a coordinate are closely
 related. At an interior point their relative signs carry additional
-information. For real numbers $a_1,\ldots,a_m$ the nonnegative quantity
+information. For real numbers $v_1,\ldots,v_q$ the nonnegative quantity
 \[
- \sum_{r=1}^m|a_r|-\left|\sum_{r=1}^m a_r\right|
+ \sum_{r=1}^q|v_r|-\left|\sum_{r=1}^q v_r\right|
 \]
 measures the cancellation lost if the absolute value is moved inside
 the sum. Applying the triangle inequality to the four reflected copies
@@ -586,9 +587,6 @@ and estimate that loss, because its size helps distinguish a corner
 from a competing point.
 
 \noindent\textbf{Symmetry of the node set and equal corner values.}
-
-
-
 The two nonnode corners in Theorem~\ref{thm:main-location} have equal
 Lebesgue values by symmetry. For even $n$, reflection in the first
 coordinate sends $j$ to $n-j$ and preserves the checkerboard. For odd
@@ -630,7 +628,9 @@ well-defined. A simple example is
 \]
 At $t=0$ the left side equals $M$, and the quotient on the right has
 that same limit. The polynomial or finite trigonometric expression
-specifies the value at the exceptional angle. This convention applies
+specifies the value at the exceptional angle. Such an apparent gap in a
+quotient formula, filled by a finite continuous limit, is called a
+\emph{removable singularity}. This convention applies
 in particular when an evaluation angle meets a node angle, or when a
 sum or difference of angles reaches an endpoint. Such events are called
 \emph{collisions} below. They are included in every closed domain on

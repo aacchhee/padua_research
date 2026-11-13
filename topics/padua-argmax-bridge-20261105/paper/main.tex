@@ -4,7 +4,7 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{amsmath,amssymb,amsfonts}
-\usepackage{booktabs}
+\usepackage{booktabs,array}
 \usepackage{url}
 \theoremstyle{thmstyleone}
 \newtheorem{theorem}{Theorem}[section]
@@ -28,12 +28,13 @@
 \abstract{The Lebesgue constant controls the stability of polynomial interpolation.
 For the Padua points of total degree $n$ on the square, we determine the maximizers of the Lebesgue function and obtain an asymptotic expansion of its maximum. The maximum is attained
 exactly at the two corners outside the interpolation set, for every $n\geq2$.
-Writing $N=n+1/2$ and $d=\gamma+\log(8/\pi)$, the expansion is
+Writing $N=n+1/2$ and $d=\gamma+\log(8/\pi)$, with $\gamma$ Euler's constant, the expansion is
 $\Lambda_n=(4/\pi^2)(\log N+d)^2+\kappa-1/N+O(\log N/N^2)$,
-where $\kappa\approx0.919710118388$ is given by a convergent integral. The corner expansion
+where $\kappa\approx0.919710118388$ is given by a convergent integral
+(the numerical value is not used in any proof). The corner expansion
 is analytic: two harmonic sums give the leading square, while a coupled
 correction accounts for the constant and the reciprocal term. The global
-maximizer proof retains the cancellation lost by a periodic majorant.
+maximizer proof quantifies the cancellation that a periodic majorant loses.
 The computer-assisted location proof combines analytic localization for
 $n\geq512$ with rigorous finite certificates below that threshold.}
 \keywords{Padua points, Lebesgue constant, bivariate interpolation, asymptotic expansion, computer-assisted proof}
@@ -43,7 +44,7 @@ $n\geq512$ with rigorous finite certificates below that threshold.}
 
 % CA requires numerical references in alphabetical author order.
 % The publisher's sn-mathphys-num style defaults to citation order.
-\nocite{MorrowPatterson2026,BialasCiezDeMarchiSuder2026,Mesh2024,Boas1954,BosCaliariDeMarchiVianelloXu2006,BosDeMarchiVianelloXu2007,CaliariDeMarchiSommarivaVianello2008poster,CaliariDeMarchiVianello2005,Computational2008,DeMarchi2005NearOptimal,DeMarchi2022,FLINT,Fousse2007MPFR,GMP,Johansson2017Arb,KolomoitsevLomako2021,Kuznetsova1995,LaguardiaRusso2022,LandonCardinalGoviaClerk2018,Lorentz1986,Pimenova1979,VanBarelChesnokov2010}
+\nocite{MorrowPatterson2026,BialasCiezDeMarchiSuder2026,Mesh2024,Boas1954,BosCaliariDeMarchiVianelloXu2006,BosDeMarchiVianelloXu2007,CaliariDeMarchiSommarivaVianello2008poster,CaliariDeMarchiVianello2005,Computational2008,DeMarchi2005NearOptimal,DeMarchi2022,FLINT,Fousse2007MPFR,GMP,NumPy2020,Higham2002,IEEE7542019,Johansson2017Arb,Katznelson2004,KolomoitsevLomako2021,Kuznetsova1995,LaguardiaRusso2022,LandonCardinalGoviaClerk2018,Lorentz1986,Pimenova1979,VanBarelChesnokov2010}
 \input{sections/introduction}
 \input{sections/preliminaries}
 \input{sections/corner-unified}
@@ -79,7 +80,8 @@ preparation remain to be completed.
 
 \bmhead{Data and code availability}
 Manuscript and checker sources are maintained at
-\url{https://github.com/aacchhee/padua_research}.
+\url{https://github.com/aacchhee/padua_research}; the reproducibility snapshot is
+\url{https://github.com/aacchhee/padua_research/tree/a433c7d}.
 The essential certificate archives and reproduction package will be
 deposited in Zenodo (\textbf{DOI pending}). The package includes the frozen
 engine, independent checker, runtime and package pins, and verification

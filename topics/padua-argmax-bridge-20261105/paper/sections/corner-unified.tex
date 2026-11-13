@@ -1,7 +1,7 @@
 \section{The corner value: from exact rows to the first correction}
 \label{sec:corner}
 
-At a corner the absolute cardinal kernel becomes a positive Cauchy sum.
+At a corner the absolute cardinal kernel becomes a positive sum of quotients $(1+\cos v)/|\cos u-\cos v|$.
 Its two meshes have sizes $n$ and $n+1$. The equal-mesh reference gives
 the leading square; the mesh displacement supplies the constant defect
 and the first correction.
@@ -49,7 +49,8 @@ $\mathcal{D}_n(u,v)=\sum_{|p|+|q|\leq n}\mathrm e^{\mathrm i(pu+qv)}$. Grouping 
  \mathcal D_n(u,v)=\sum_{\substack{p,q\geq0\\p+q\leq n}}
        \nu_p\nu_q\cos(pu)\cos(qv)=G_n(u,v)+\cos(nu).
 \]
-For $B=(\cos\theta_j,\cos\phi_k)$ and $z=(-1,-1)$,
+Write $L_{jk}:=L_B$ for $B=(\cos\theta_j,\cos\phi_k)$.
+For this node and $z=(-1,-1)$,
 $T_p(-1)=(-1)^p$ therefore gives
 $K_n(z,B)=\mathcal D_n(\pi-\theta_j,\pi-\phi_k)$.
 Set $j'=n-j$ and $k'=m-k$. Then
@@ -90,17 +91,33 @@ The four mesh cosine values are
  \cos(n\phi_k)=(-1)^k\cos\phi_k.
  \end{gathered}
 \]
-Since $j+k$ is odd, the numerator of $\mathcal D_n$ is
-$\tfrac12(-1)^j(2+\cos\theta_j+\cos\phi_k)$.
+Since $j+k$ is odd, $(-1)^k=-(-1)^j$, and the numerator is
+\[
+\tfrac12\{(-1)^j\cos\theta_j-(-1)^k\}
++\tfrac12\{(-1)^j-(-1)^k\cos\phi_k\}
+=\tfrac12(-1)^j(2+\cos\theta_j+\cos\phi_k).
+\]
 Thus
 \[
  \mathcal{D}_n(\theta_j,\phi_k)=(-1)^j
        \frac{2+\cos\theta_j+\cos\phi_k}{\cos\theta_j-\cos\phi_k},
  \qquad |\mathcal{D}_n(\theta_j,\phi_k)-(-1)^j|=2f(\theta_j,\phi_k).
 \]
-Coprimality of $n,m$ leaves only the collisions $(0,0)$ and $(n,m)$.
-The odd checkerboard excludes the first. At the second,
-$\mathcal{D}_n(\pi,\pi)=(-1)^n(2n+1)$, so the corrected absolute value $2n$
+Subtracting the correction gives
+\[
+\mathcal D_n-(-1)^j=(-1)^j
+\frac{(2+\cos\theta_j+\cos\phi_k)-(\cos\theta_j-\cos\phi_k)}
+{\cos\theta_j-\cos\phi_k}
+=(-1)^j\frac{2(1+\cos\phi_k)}{\cos\theta_j-\cos\phi_k}.
+\]
+A collision requires $jm=kn$; since $\gcd(n,m)=1$, Euclid's lemma gives
+$n\mid j$, leaving only $(0,0)$ and $(n,m)$. The odd checkerboard
+excludes the first. Each lattice shell $|p|+|q|=s\geq1$ has $4s$
+points with $(-1)^{p+q}=(-1)^s$, so
+\[
+\mathcal D_n(\pi,\pi)=1+4\sum_{s=1}^n(-1)^ss=(-1)^n(2n+1).
+\]
+Thus the corrected absolute value $2n$
 with weight $1/(2nm)$ contributes $1/m$. The other entries with $k=m$
 vanish. This proves \eqref{cu:positive} and the equality of the two
 nonnode corner values. The node corners have value one by cardinality.
@@ -121,14 +138,18 @@ one dimensional. Introduce
 \end{equation}
 Both poles have been removed from $B$; it is $C^\infty$ across $[0,1]$,
 with $B(0)=1/\pi$, $B(1)=-1/\pi$.
-For example, with $\operatorname{sinc}z=\int_0^1\cos(tz)\,dt$,
+With $\operatorname{sinc}z=\int_0^1\cos(tz)\,dt$, integration by parts gives
+$z\cos z-\sin z=-z^2\int_0^1t\sin(tz)\,dt$.
+Substituting $\sin(tz)=tz\operatorname{sinc}(tz)$ yields
 \[
  \cot z-1/z=-z\,
  \frac{\int_0^1t^2\operatorname{sinc}(tz)\,dt}{\operatorname{sinc}z}.
 \]
 The denominator is nonzero near zero; differentiation of the finite
 integral proves the smooth extension after subtracting the pole.
-Reflection gives the extension at the other endpoint.
+Reflection gives the extension at the other endpoint. Cotangent has
+poles only at integer multiples of $\pi$, so the two subtractions
+show $B\in C^\infty(-1,2)$, including the interval needed below.
  For $1\leq r<m$ put
 $x=r/m$, $s=m-r$, $\alpha_r=(1-x)/2$ and
 \[
@@ -162,8 +183,8 @@ We claim the exact identities
  \Lambda_c(n)=1-\frac{2n}{m}+\frac4{nm}\sum_{r=1}^{m-1}w(r/m)T_{n,r}
        =-1+\frac2m+\mathcal H_m+\frac{4V_n}{nm}.
 \end{equation}
-We now write row $k$ of \eqref{cu:positive} as $r$; its entries are
-$|F_r(\theta_j)|$. Extend a row periodically
+We now write row $k$ of \eqref{cu:positive} as $r$; its entries are the absolute values of the signed row function $F_r$
+defined next. Extend a row periodically
 and sample its $n$ indices $j\equiv1-r\pmod2$ modulo $2n$. For
 $v=r\pi/m$ its signed entries satisfy
 \[
@@ -181,7 +202,11 @@ The cotangent form uses
 \]
 The periodic row sum follows from
 $\sum_{\ell=0}^{n-1}\cot(z+\ell\pi/n)=n\cot(nz)$, the logarithmic
-derivative of the finite sine product; its right hand cotangent here is
+derivative of
+$\sin(nz)=2^{n-1}\prod_{\ell=0}^{n-1}\sin(z+\ell\pi/n)$;
+the constant follows by writing each sine as a difference of exponentials
+and using $\prod_{\ell=0}^{n-1}(1-X\mathrm e^{2\pi\mathrm i\ell/n})=1-X^n$.
+Its right hand cotangent here is
 $\tan(v/2)$. The positive samples have representatives
 $j=-r+1,-r+3,\ldots,r-1$, since $r-1<nr/m<r$.
 Their sum is $P_r=w(r/m)T_{n,r}$, by symmetry and the substitution
@@ -362,7 +387,11 @@ One short derivation of the partial fraction is the cosine series of
 $\cos(zs)$ on $[0,\pi]$: its constant coefficient is
 $2\sin(\pi z)/(\pi z)$ and its $k$th coefficient is
 $2(-1)^kz\sin(\pi z)/(\pi(z^2-k^2))$. The coefficients are absolutely
-summable; evaluating at $s=\pi$ gives the identity. All differentiated
+summable. Their uniformly convergent cosine series has the same
+coefficients as the continuous even periodic extension of $\cos(zs)$.
+Fourier uniqueness (a continuous periodic function with all Fourier
+coefficients zero is zero) identifies the functions
+\cite[Chapter~I]{Katznelson2004}; evaluating at $s=\pi$ gives the identity. All differentiated
 series used here converge locally uniformly away from their poles.
 
 Define the finite, endpoint-regular integrals
@@ -400,7 +429,7 @@ hence each error is $O(m^{-2})$, even for $r=1$ or $s=1$.
 Since $w(r/m)\leq am/r$, its weighted normalized error is
 $O(\log m/m^2)$.
 
-Two summable endpoint sequences must still be retained. Put
+Two summable endpoint sequences are also needed. Put
 $e_r=\psi(r+1/2)-\log r$, $u_r=r\psi'(r+1/2)-1$.
 The midpoint rule for $t^{-2}$ on $[r,\infty)$ gives
 $\psi'(r+1/2)=1/r+O(r^{-3})$: the local errors sum as
@@ -420,7 +449,7 @@ to the limit gives $S_u=1+2\log2-\pi^2/4$.
 
 Let $d_0=\gamma+2\log2$, $q_0=\pi^2/4-1$ and
 $F(x)=\log x+\log(1-x)-\psi((1-x)/2)$. Substitution of
-\eqref{cu:psi-est} into \eqref{cu:center}, keeping $e_r,u_r$ intact, yields
+\eqref{cu:psi-est} into \eqref{cu:center}, yields
 \begin{equation}\label{cu:row-expand}
  D_{m,r}=\log m+F(x)+e_r-\frac1{2m(1-x)}-\frac{x+u_r}{2m}+Q_{m,r},
  \quad |Q_{m,r}|\leq C\{s^{-2}+(ms)^{-1}+m^{-2}\}.
@@ -491,7 +520,9 @@ all degree-independent terms are absorbed into $C_H$.
 For the smooth part, the geometry of the cells supplies the correction.
 The points $(\ell+\alpha)/n$, $0\leq\ell<r$, are the midpoints of
 cells whose union is exactly $[-t/(2n),t+t/(2n)]$, where $t=r/m$.
-On $[-1/4,5/4]$ the function $B$ and its first two derivatives are bounded.
+The poles of $\cot(\pi x)$ occur only at integers; the two subtracted
+terms remove those at zero and one. Thus $B\in C^\infty(-1,2)$,
+so $B,B',B''$ are bounded on $[-1/4,5/4]$.
 The midpoint error in the sum is $O(r/n^2)=O(t/n)$; integrating the two
 short extensions of $[0,t]$ therefore gives uniformly
 \[
@@ -513,12 +544,12 @@ of $W$, and applying smooth quadrature yields
  \end{aligned}
 \]
 Since $1/m+1/(nm)=1/n$ and $\int G_B=I_B+I_2/\pi$, this is
-\eqref{cu:V}, with its stated constants. The calculation keeps the last
-row as well as both outer endpoint corrections.
+\eqref{cu:V}, with its stated constants.
 \end{proof}
 
 \begin{proof}[Proof of Theorem~\ref{thm:main-expansion}]
-Only one integral identity is needed to combine the two corrections:
+Proposition~\ref{cu:aggregate} supplies the two corrections. Only one
+integral identity is needed to combine them:
 \begin{equation}\label{cu:cancel}
  2I_B-aI_1=a^2-1+a^2\log(\pi/2).
 \end{equation}
@@ -536,12 +567,12 @@ corrections as
  2+\beta_H+\beta_B
  =-a^2-a^2(\gamma+2\log2)+2I_B-aI_1=-1-a^2d.
 \]
-Consequently, for a constant $C=-1+C_H+C_B$,
+Consequently, for a constant $C_\Lambda=-1+C_H+C_B$,
 \[
- \Lambda_c(n)=A(m)^2+C-
+ \Lambda_c(n)=A(m)^2+C_\Lambda-
        \frac{a^2\log m+1+a^2d}{m}+O(\log m/m^2).
 \]
-The limit \eqref{cu:kappa}, and $A(m)^2-A(n)^2\to0$, identify $C=\kappa$.
+The limit \eqref{cu:kappa}, and $A(m)^2-A(n)^2\to0$, identify $C_\Lambda=\kappa$.
 For $N=m-1/2$, Taylor's formula gives uniformly
 \[
  A(N)^2=A(m)^2-\frac{a^2\log m+a^2d}{m}+O(\log m/m^2),

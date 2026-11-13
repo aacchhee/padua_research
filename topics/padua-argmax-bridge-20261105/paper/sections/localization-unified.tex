@@ -9,17 +9,20 @@ actual corner.  This loss compensates the growth of the majorant near the origin
 
 Put $m=n+1$ and $\mathsf N=nm$, and recall the finite angular kernel
 $G_n$ from \eqref{eq:angular-kernel}, whose highest first-coordinate
-coefficient is one.  Write
-$a_j=j\pi/n$, $b_k=k\pi/m$, and let $e_j,f_k$ equal one at interior
+coefficient is one. In this section the node angles
+$\theta_j,\phi_k$ are written $a_j,b_k$ to distinguish them from
+phase and row-profile arguments; the endpoint weights keep the
+notation $\varepsilon_j,\eta_k$ of Section~\ref{sec:preliminaries}. Write
+$a_j=j\pi/n$, $b_k=k\pi/m$, and let $\varepsilon_j,\eta_k$ equal one at interior
 indices and $1/2$ at endpoints.  Product to sum in the cardinal formula gives
 \begin{equation}\label{ul:cardinal-reflection}
  L_{jk}(\cos\theta,\cos\phi)=\frac{w_{jk}}4
    \sum_{\sigma,\eta=\pm1}G_n(\theta+\sigma a_j,\phi+\eta b_k),
- \qquad w_{jk}=\frac{2e_jf_k}{\mathsf N}.
+ \qquad w_{jk}=\frac{2\varepsilon_j\eta_k}{\mathsf N}.
 \end{equation}
 For evaluation, with $P_n=T_{n+1}+T_n$, one may equivalently use
 $G_n(u,v)=[P_n(\cos u)-P_n(\cos v)]/(\cos u-\cos v)-\cos(nu)$.
-At a collision this means the polynomial divided difference, including
+A collision means equality of the two cosine arguments. At a collision this means the polynomial divided difference, including
 $P_n'(\cos u)$ at equality.  Every formula below includes these values.
 
 Use odd mesh charts
@@ -31,14 +34,18 @@ Use odd mesh charts
 where $0\leq J\leq n$, $0\leq K\leq m$.  These cover the closed
 square: in each angular mesh rectangle, the distances in mesh-index units to its
 two odd vertices sum to two, so one is at most one; multiplying by
-$\pi$ gives the phase radius in \eqref{ul:charts}.  A point on a tie belongs to every chart it satisfies.
+$\pi$ gives the phase radius in \eqref{ul:charts}.  The chart center is the mesh point $(J\pi/n,K\pi/m)$. Put
+$x=|\alpha|$, $y=|\beta|$ and $\rho=x+y$.
+The signed diamond is $|\alpha|+|\beta|\leq\pi$; its folded
+phase triangle is $x,y\geq0$, $x+y\leq\pi$.
+A point on a tie belongs to every chart it satisfies.
 Set $\Gamma^-=\{(r,s):0\leq r<2n,\ 0\leq s<2m,\ r+s\text{ odd}\}$ and
 \begin{equation}\label{ul:primitive}
  H_{rs}=G_n((r\pi+\alpha)/n,(s\pi+\beta)/m),\qquad
  S_n(\alpha,\beta)=\frac1{2\mathsf N}\sum_{\Gamma^-}|H_{rs}|.
 \end{equation}
 The endpoint identity
-$\sum_{\sigma=\pm1}\sum_{0\leq j\leq n,\,\sigma j\equiv r\ (2n)}e_j=1$
+$\sum_{\sigma=\pm1}\sum_{0\leq j\leq n,\,\sigma j\equiv r\ (2n )}\varepsilon_j=1$
 and its $m$ counterpart give total weight one at every periodic
 index: the two endpoint preimages have half weights, while an interior
 index has one preimage of weight one. The two-coordinate weights
@@ -64,18 +71,39 @@ At an actual nonnode corner all four reflected values coincide, so
 $\Delta=0$ and $S_n(0,0)=\Lambda_c(n)$.
 Separate phase reflections and translations by the even lattice preserve
 $S_n$.  Reducing each phase modulo $2\pi$ and, if necessary, using
-$(x,y)\mapsto(\pi-x,\pi-y)$ reduces its global real-phase norm to
+$(x,y)\mapsto(\pi-x,\pi-y)$ reduces its global real-phase norm, the supremum of $S_n$ over
+$(\alpha,\beta)\in\mathbb R^2$, to
 $x,y\geq0$, $x+y\leq\pi$.  Throughout, $x$ refers to the $n$-mesh and $y$ to the $m$-mesh.
 
 
+At $(-1,-1)$, inward phases $A,B\geq0$ parameterize
+$(-\cos(A/n),-\cos(B/m))$; the other nonnode corner uses its parity reflection.
+
+\begin{center}\small
+\begin{tabular}{@{}ll@{}}\toprule
+Symbols & Meaning\\\midrule
+$m=n+1$, $\mathsf N=nm$ & adjacent mesh size and product size\\
+$a_j,b_k$; $\varepsilon_j,\eta_k$ & node angles and endpoint weights\\
+$J,K$; $\alpha,\beta$; $x,y,\rho$ & chart center indices; signed and folded phases; radius\\
+$\Gamma^-,H_{rs},S_n$ & odd periodic indices, kernel samples, absolute envelope\\
+$\Delta_{JK}$; $\mathfrak d,Q_h,Q_v$ & reflection loss; pair defect and its projections\\
+$P_n=T_{n+1}+T_n$ & polynomial for the divided-difference kernel\\
+$A,B$ & nonnegative inward corner phases\\\bottomrule
+\end{tabular}
+\end{center}
+
 The organizing identity is
 \[
- \lambda_n-\Lambda_c=(S_n-S_n(0))-\Delta_{JK}.
+ \lambda_n-\Lambda_c=(S_n-S_n(0,0))-\Delta_{JK}.
 \]
 The model comparison bounds the first bracket; selected reflected
 pairs give a positive lower bound for the second. After the comparison
 theorem, two scalar gates and one corner lemma complete the analytic
-argument. Their roles are:
+argument. Here $A,B\geq0$ denote inward corner phases, so near $(-1,-1)$
+the physical point is $(-\cos(A/n),-\cos(B/m))$.
+The absolute gate $\mathcal G$ and relative quadratic $\mathfrak p_n$
+are defined in Corollaries~\ref{uc:absolute-gate}--\ref{uc:relative-gate}.
+Figure~\ref{fig:phase-regions} shows their domains. Their roles are:
 \[
 \begin{array}{llll}
 \text{phase region}&\text{center}&\text{comparison}&\text{degree}\\
@@ -103,13 +131,13 @@ used only by the finite certificates in Section~\ref{sec:certificates}.
  \node[below] at (.5,0) {$\frac12$};
  \node[below] at (1,0) {$1$};
  \node[below] at (3.14,0) {$\pi$};
- \node at (1.28,1.14) {absolute gate};
- \node[anchor=west] at (1.35,.45) {$P_n$ on $\rho\leq1$};
- \draw[->] (1.32,.45)--(.67,.21);
+ \node at (1.65,1.20) {absolute gate};
+ \node[anchor=west] at (1.45,.68) {$\mathfrak p_n$ on $\rho\leq1$};
+ \draw[->] (1.40,.64)--(.62,.23);
 \end{tikzpicture}
 \caption{The folded phase triangle. On the darkest triangle a
-noncorner chart uses $\Delta>1/20$ together with $P_n$.
-On $1/2\leq\rho\leq1$, $P_n<0$ suffices; the absolute gate covers
+noncorner chart uses $\Delta>1/20$ together with $\mathfrak p_n$.
+On $1/2\leq\rho\leq1$, $\mathfrak p_n<0$ suffices; the absolute gate covers
 $\rho\geq1$. In a corner chart the dashed $\pi/4$ square has a
 separate descent estimate.}
 \label{fig:phase-regions}
@@ -157,9 +185,9 @@ In particular $\Delta_{JK}>1/20$ at every noncorner odd center.
 Folding the reflected physical index in \eqref{ul:projections} leaves
 coefficient $1/\mathsf N$ on an interior physical row.  For example
 \[
- Q_v=\frac1{\mathsf N}\sum_{k=0}^mf_k
-  \sum_{r+k\equiv J\ (2)}\mathfrak d(V_+,V_-),\qquad
- V_\pm=(-1)^rG_n((r\pi+\alpha)/n,\phi\pm k\pi/m)/2.
+ Q_v=\frac1{\mathsf N}\sum_{k=0}^m\eta_k
+  \sum_{r+k\equiv J\ (2)}\mathfrak d(\mathcal V_+,\mathcal V_-),\qquad
+ \mathcal V_\pm=(-1)^rG_n((r\pi+\alpha)/n,\phi\pm k\pi/m)/2.
 \]
 The horizontal formula has physical index $j$, periodic index $s$,
 parity $s+j\equiv K\pmod2$, and common sign $(-1)^{J+j}$.
@@ -170,8 +198,8 @@ At regular denominators each half is $A(u,v)/(\cos u-\cos v)$, where
 In the horizontal projection the baseline stays $1+\cos v$ at its
 fixed actual second coordinate.  A selected periodic cosine between
 two physical cosine targets gives opposite denominator signs.  If both
-numerators exceed $A_*>0$ and the full cosine span is $W$, then
-$\mathfrak d\geq2A_*/W$.  Omitted terms, including collisions, are nonnegative.
+numerators exceed $A_*>0$ and the full cosine span is $w_{\rm span}$, then
+$\mathfrak d\geq2A_*/w_{\rm span}$.  Omitted terms, including collisions, are nonnegative.
 
 Use adjacent physical and periodic meshes $(\bar{m},\bar{n})=(m,n)$ vertically,
 $(n,m)$ horizontally, and let $\theta_c$ be the center angle's distance
@@ -185,8 +213,8 @@ at least $\bar{m}\ell/\pi-1$ rows.  These real lower bounds hold for either pari
 There are three exhaustive center classes.  If the endpoint index
 distance is $1\leq i\leq4$, select $\bar{m}/4\leq l\leq \bar{m}/2$, offsets
 $q=-(i-1),-(i-3),\ldots,i-1$, and both periodic indices
-$l+q,2\bar{n}-(l+q)$.  Write $\xi,\zeta$ for the periodic and physical phase shifts, so
-$|\xi|+|\zeta|\leq1/2$. After endpoint reflection a selected angle is
+$l+q,2\bar{n}-(l+q)$.  Write $\xi,\widetilde\xi$ for the periodic and physical phase shifts, so
+$|\xi|+|\widetilde\xi|\leq1/2$. After endpoint reflection a selected angle is
 $w=((l+q)\pi\pm\xi)/\bar n$, with $b=l\pi/\bar m$, and
 \[
  \bar m(w-b)=q\pi+\frac{\bar m-\bar n}{\bar n}(l+q)\pi
@@ -207,9 +235,9 @@ where cosine is strictly decreasing. Their parity is $q\equiv1-i$ at the lower e
 and $\bar{m}+q\equiv1-\bar{m}+i$ at the upper endpoint, the required complementary
 center parity in both projections; the upper condition is equivalent
 to $q\equiv1-i$, since $2\bar m$ is even. The target cosines exceed $-1/3$,
-so $A_*>3/8$. With span $W\leq2(i\pi+1/2)/\bar m$,
+so $A_*>3/8$. With span $w_{\rm span}\leq2(i\pi+1/2)/\bar m$,
 the normalized count is
-$Q\geq(\bar m\bar n)^{-1}(\bar m/4-1)(2i)(2A_*/W)$.
+$Q\geq(\bar m\bar n)^{-1}(\bar m/4-1)(2i)(2A_*/w_{\rm span})$.
 Thus
 \[
  Q>\frac{3i}{4(i\pi+1/2)}\frac {\bar{m}}{\bar{n}}(1/4-1/\bar{m})
@@ -243,8 +271,11 @@ band $[b_-,b_+]$.  In the open cosine band $|z-z_0|<w_b$, retain
 \]
 It lies below the actual pair defect, has maximum $cA(b)/w_b$, and
 its cosine integral is $\mathcal T_cA(b)$, where
-$\mathcal T_c=4-2c+4\log c$.  Layer cake on the two parity arcs and
-$1/\sqrt{1-z^2}\geq1$ give row sum at least
+$\mathcal T_c=4-2c+4\log c$.  For a finite set of sample points $z_j$, discrete layer cake is
+$\sum_j f(z_j)=\int_0^\infty\#\{j:f(z_j)>t\}\,dt$ for $f\geq0$.
+Apply the arc-count bound to each level set on the two parity arcs;
+the density bound
+$1/\sqrt{1-z^2}\geq1$ then gives row sum at least
 $\bar{n}\mathcal T_cA(b)/\pi-2cA(b)/w_b$.
 For positive decreasing $f$ the physical mesh sum differs from
 $(\bar{m}/\pi)\int f$ by at most $f(b_-)$.  Applying the lower version to
@@ -260,8 +291,8 @@ $R=A(0)\log[\tan(b_+/2)/\tan(b_-/2)]-a_{\bar{\rho}}(b_+-b_-)$.
 This argument applies for $\bar{m},\bar{n}\geq41$.
 
 Take $c=5/4$, $[b_-,b_+]=[\pi/20,\pi/4]$, $\bar{\rho}\leq1/2$.
-Write $C=a_{\bar\rho}-\bar\rho/2>0$ before substituting
-endpoint bounds in $I=C(b_+-b_-)+a_{\bar\rho}(\cos b_+-\cos b_-)$.
+Write $A(0)=a_{\bar\rho}-\bar\rho/2>0$ before substituting
+endpoint bounds in $I=A(0)(b_+-b_-)+a_{\bar\rho}(\cos b_+-\cos b_-)$.
 The elementary bounds
 $239/100<\mathcal T_c<12/5$, $\sin b_->3/20$,
 $\cos b_-<247/250$, $\cos b_+>707/1000$ and the logarithmic ratio
@@ -284,24 +315,24 @@ $b_+=\pi/4$ and fix $\bar\rho=1/2$. The band numerator is positive:
 \]
 With
 \[
- A_* =\frac{97}{100}\frac{15}{16}-\frac14,\quad
- I_* =\frac{2303}{5000}\frac{15}{16}-\frac{471}{2500},\quad
- R_* =\frac{4837}{1875}\frac{15}{16}-\frac56,
+ A_\sharp =\frac{97}{100}\frac{15}{16}-\frac14,\quad
+ I_\sharp =\frac{2303}{5000}\frac{15}{16}-\frac{471}{2500},\quad
+ R_\sharp =\frac{4837}{1875}\frac{15}{16}-\frac56,
 \]
 the bounds $\sin(\pi/100)>3/100$, $11/4<4\log2<14/5$,
 $\cos(\pi/4)>707/1000$ and
 $\log(\tan(\pi/8)/\tan(\pi/200))<10/3$ give
 \[
- Q\geq F_h(n):=\frac{539I_*}{1936}
-              -\frac{140A_*+400R_*}{157n}
-              -\frac{800A_*}{3n^2}.
+ Q\geq F_h(n):=\frac{539I_\sharp}{1936}
+              -\frac{140A_\sharp+400R_\sharp}{157n}
+              -\frac{800A_\sharp}{3n^2}.
 \]
-For example write $C=15/16-1/4>0$ before bounding
-$I=C(6\pi/25)+(15/16)(\cos(\pi/4)-\cos(\pi/100))$;
-using $6\pi/25>471/625$ and $\cos(\pi/100)<1$ yields $I>I_*$.
-Similarly $A(b_-)<A_*$ and
-$R<C(10/3)-(15/16)(471/625)=R_*$.
-The positive constants $A_*,R_*$ make $F_h$ strictly increasing,
+For example write $A(0)=15/16-1/4>0$ before bounding
+$I=A(0)(6\pi/25)+(15/16)(\cos(\pi/4)-\cos(\pi/100))$;
+using $6\pi/25>471/625$ and $\cos(\pi/100)<1$ yields $I>I_\sharp$.
+Similarly $A(b_-)<A_\sharp$ and
+$R<A(0)(10/3)-(15/16)(471/625)=R_\sharp$.
+The positive constants $A_\sharp,R_\sharp$ make $F_h$ strictly increasing,
 and substitution of $n=295$ gives $F_h(295)>50064/10^6>1/20$.
 The first two center classes already give $Q>1/20$ from $n=64$.
 This proves \eqref{ul:uniform-floor}. A phase with
@@ -328,9 +359,9 @@ estimate is needed.  We use the signed-vector interpolation principle
 of Lemma~\ref{cert:positive} in squared inward variables
 $s=A^2/2$, $t=B^2/2$.  If $M$ bounds every complete signed cardinal
 sum globally, we apply Bernstein's inequality in an unscaled angular
-coordinate: for a trigonometric polynomial $T$ of degree at most $d$,
+coordinate: for a trigonometric polynomial $T$ of degree at most $d_{\rm trig}$,
 \[
- \|T^{(r)}\|_\infty\leq d^r\|T\|_\infty,\qquad r=1,2,\ldots,
+ \|T^{(r)}\|_\infty\leq d_{\rm trig}^r\|T\|_\infty,\qquad r=1,2,\ldots,
 \]
 where the norm is over a full angular period \cite{Boas1954}.
 Fixing the other coordinate of a signed cardinal sum gives degree
@@ -341,7 +372,7 @@ $M/3$, $\mu^4M/3$ in the squared variables.
 Indeed for even smooth $f$,
 \[
  \frac{d^2}{ds^2}f(\sqrt{2s})
-   =\int_0^1\!\int_0^1t^2f^{(4)}(rt\sqrt{2s})\,dr\,dt.
+   =\int_0^1\!\int_0^1u_2^2f^{(4)}(u_1u_2\sqrt{2s})\,du_1\,du_2.
 \]
 The nonnegative Peano kernels therefore imply that vertex losses
 $cU,cV,c(U+V)$ at $(\sqrt{2U},0),(0,\sqrt{2V}),
@@ -355,20 +386,40 @@ The interpolation is applied to smooth signed cardinal sums before
 maximizing over signs.
 
 Take $h=\pi/4$, $q_h=7/48$, $U=V=\pi^2/32$, and $M=M(n)$ from
-\eqref{uc:analytic-norm}.  Since $(1-\cos h)/2>q_h$, the two axis
+\eqref{uc:analytic-norm}.  Recall $u=1-\mathsf a$, $p=\sin x$, $q=\sin y$ and $P=p+q$
+from the model, and the allowances \eqref{uc:constants}--\eqref{uc:uniform-allowance}.
+Since $(1-\cos h)/2>q_h$, the two axis
 losses exceed $\delta_A$ and the diagonal loss exceeds $\delta_D$, where
 \begin{align*}
  \delta_A&=q_h(\mathfrak{T}-\bar e+\mathfrak{j})-1/4-C_4-hk_{Wy},\\
  \delta_D&=2q_h(\mathfrak{T}+\mathfrak{j})-4/15-\overline C_E-(3/2)K_D-\bar e.
 \end{align*}
-For the axes use the same radius-one relative bound, since $h<1$.
+For either axis, \eqref{uc:relative-comparison} gives
+\[
+\begin{aligned}
+\Lambda_c-S_n&\geq uU_W-E_c-C_4-k_{Wx}x-k_{Wy}y,\\
+U_W&\geq\mathfrak T-\bar e+\mathfrak j,
+\quad u=(1-\cos h)/2>q_h,\\
+k_{Wy}&=k_{Wx}+d_\beta\geq k_{Wx}.
+\end{aligned}
+\]
+Thus the single coefficient $hk_{Wy}$ covers both axes; $h<1$
+permits the radius-one relative bound.
 The general bound \eqref{uc:central-pair-general} gives
 $E_c(h,0)<1/4$: here $p=1/\sqrt2$, $\mathsf a>17/20$,
 $p^{3/2}<3/5$, $\sqrt{\mathsf a}>9/10$, and
 $4I_4/\pi^2<9/25$, so $E_c(h,0)<6/25<1/4$.
 At the other axis, $E_c(0,h)=-B_\beta\leq0$.
-For the diagonal use the completed model on its closed
-$\rho\leq\pi/2$ domain and the full absolute error.
+For the diagonal the model loss, origin lower bound and absolute error give
+\[
+\begin{aligned}
+\Lambda_c-S_n
+&=[M_\infty(0)-M_\infty(h,h)]+E_n(0)-E_n(h,h)\\
+&>u(\mathfrak T+\mathfrak j)-E_c-\bar e-\overline C_E-K_DP,\\
+u&=1-\cos h>2q_h,\qquad P=\sqrt2<3/2.
+\end{aligned}
+\]
+The completed model is used on its closed $\rho\leq\pi/2$ domain.
 Here $\mathsf{a}=p=q=1/\sqrt2$, $P<3/2$; the root convolution argument only
 needs $p/2\leq \mathsf{a}$, so gives
 $E_c\leq(4I_4/\pi^2)p^{3/2}/\sqrt {\mathsf{a}}< (9/25)/\sqrt2<4/15$.
@@ -415,11 +466,12 @@ Corollary~\ref{uc:relative-gate} give
        <\Lambda_c+41/1000-1/20=\Lambda_c-9/1000.
 \]
 For $1/2\leq\rho\leq1$, the same corollary gives
-$S_n-\Lambda_c\leq P_n(1/2)<-1/7$; for $\rho\geq1$ use
+$S_n-\Lambda_c\leq \mathfrak p_n(1/2)<-1/7$; for $\rho\geq1$ use
 Corollary~\ref{uc:absolute-gate}. At a corner center with
 $\rho\leq1/2$, the inward phases lie in the closed $\pi/4$ square,
 and Lemma~\ref{ul:corner-lemma} is strict away from its origin.
-Thus only odd endpoint pairs remain: $(n,m),(0,m)$ when $n$ is
+Thus only odd endpoint pairs remain, corresponding to $(-1,-1)$
+and respectively $(1,-1)$ or $(-1,1)$: $(n,m),(0,m)$ when $n$ is
 even and $(n,m),(n,0)$ when $n$ is odd. Reflection in the first
 coordinate for even $n$, or the second for odd $n$, permutes nodes and
 cardinals, so the two values agree. Continuity and compactness give

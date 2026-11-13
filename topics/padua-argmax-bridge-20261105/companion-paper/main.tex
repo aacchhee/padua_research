@@ -1,4 +1,4 @@
-% Expanded explanatory companion to the frozen 48-page journal manuscript.
+% Expanded explanatory companion to the paired research manuscript.
 % Separate source/output tree. Build and source preservation: README.md.
 \documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
 \usepackage{graphicx}
@@ -15,7 +15,7 @@
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{definition}[theorem]{Definition}
 \hypersetup{bookmarksdepth=2,
- pdftitle={The Padua Lebesgue constant: an expanded explanatory companion},
+ pdftitle={Sharp asymptotics of the Padua Lebesgue constant and exact maximizers of the Lebesgue function: an expanded explanatory companion},
  pdfauthor={Andrey Chesnokov}}
 \raggedbottom
 \begin{document}
@@ -42,7 +42,7 @@ $n\geq512$ with rigorous finite certificates below that threshold.}
 \keywords{Padua points, Lebesgue constant, bivariate interpolation, asymptotic expansion, computer-assisted proof}
 \pacs[MSC Classification]{41A05, 41A63, 41A60, 65D05, 65G20}
 \maketitle
-\noindent\textbf{Expanded companion, 8 November 2026.}\par
+\noindent\textbf{Expanded companion, 13 November 2026.}\par
 This version follows the section, theorem and equation numbering of the
 research article and supplies explanations for a reader with
 university analysis. Additional derivations are unnumbered.\par
@@ -50,7 +50,7 @@ university analysis. Additional derivations are unnumbered.\par
 
 % CA requires numerical references in alphabetical author order.
 % The publisher's sn-mathphys-num style defaults to citation order.
-\nocite{MorrowPatterson2026,BialasCiezDeMarchiSuder2026,Mesh2024,Boas1954,BosCaliariDeMarchiVianelloXu2006,BosDeMarchiVianelloXu2007,CaliariDeMarchiSommarivaVianello2008poster,CaliariDeMarchiVianello2005,Computational2008,DeMarchi2005NearOptimal,DeMarchi2022,FLINT,Fousse2007MPFR,GMP,Johansson2017Arb,KolomoitsevLomako2021,Kuznetsova1995,LaguardiaRusso2022,LandonCardinalGoviaClerk2018,Lorentz1986,Pimenova1979,VanBarelChesnokov2010}
+\nocite{MorrowPatterson2026,BialasCiezDeMarchiSuder2026,Mesh2024,Boas1954,BosCaliariDeMarchiVianelloXu2006,BosDeMarchiVianelloXu2007,CaliariDeMarchiSommarivaVianello2008poster,CaliariDeMarchiVianello2005,Computational2008,DeMarchi2005NearOptimal,DeMarchi2022,FLINT,Fousse2007MPFR,GMP,NumPy2020,Higham2002,IEEE7542019,Johansson2017Arb,Katznelson2004,KolomoitsevLomako2021,Kuznetsova1995,LaguardiaRusso2022,LandonCardinalGoviaClerk2018,Lorentz1986,Pimenova1979,VanBarelChesnokov2010}
 \input{sections/introduction}
 \input{sections/preliminaries}
 \input{sections/corner-unified}
@@ -85,8 +85,8 @@ evidence and final manuscript content. Final human review and publication
 preparation remain to be completed.
 
 \bmhead{Data and code availability}
-Manuscript and checker sources are maintained at
-\url{https://github.com/aacchhee/padua_research}.
+Manuscript and checker sources are available in the pinned repository snapshot
+\url{https://github.com/aacchhee/padua_research/tree/a433c7d}.
 The essential certificate archives and reproduction package will be
 deposited in Zenodo (\textbf{DOI pending}). The package includes the frozen
 engine, independent checker, runtime and package pins, and verification

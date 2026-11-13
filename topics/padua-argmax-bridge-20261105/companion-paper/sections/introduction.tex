@@ -34,7 +34,7 @@ This definition asks for the largest possible output size when the input
 function has size at most one. Since interpolation uses only sampled
 values, it also measures how those values can combine between nodes.
 
-Polynomial interpolation replaces data at finitely many points by a polynomial.
+In general terms, polynomial interpolation replaces finitely many data values by a polynomial.
 Its usefulness depends on two questions: how well can polynomials approximate
 the function, and how much can interpolation magnify errors in the data?
 The Lebesgue constant measures the second effect. If $I_n$ denotes an
@@ -223,8 +223,7 @@ location. Section~\ref{sec:preliminaries} also explains why these nodal
 values may be extended to a continuous function of norm at most one,
 which identifies $\Lambda_n$ with the operator norm on $C(Q)$.
 
-At an interpolation point the Lebesgue function is exactly one. Away from
-the points, its individual cardinal terms can reinforce each other.
+Away from interpolation points, the individual cardinal terms can reinforce each other.
 For Padua interpolation the largest reinforcement occurs at the two corners
 that are not interpolation points. This location was conjectured in
 \cite{CaliariDeMarchiSommarivaVianello2008poster} and recorded among the
@@ -301,36 +300,10 @@ term. Multiplying them produces the squared logarithm, a single
 logarithm and a constant. The coupled part of the calculation supplies
 the additional constant $\kappa$.
 
-The sum in \eqref{eq:main-kappa} runs over the positive odd integers
-$1,3,5,\ldots$. The $\ell=1$ term deserves separate attention near
-$t=1$. For every $0\leq t\leq1$ and integer $\ell\geq3$,
-\[
- \ell^2-t^2\geq\ell^2-1\geq\frac89\ell^2,
- \qquad
- 0\leq\frac1{\ell(\ell^2-t^2)}\leq\frac9{8\ell^3}.
-\]
-The last bound has a convergent sum: for example,
-$\sum_{\ell=L}^{\infty}\ell^{-3}$ is at most
-$L^{-3}+\int_L^{\infty}x^{-3}\,dx=L^{-3}+1/(2L^2)$.
-It follows that the tail of the series over odd $\ell\geq3$ is
-bounded by a quantity tending to zero independently of $t$. This is
-uniform convergence on $[0,1]$. Each summand is continuous there, so
-this part of the sum is a bounded continuous function, including both
-endpoints. The remaining term, $\ell=1$, is handled separately.
-Near $t=0$,
-$\cot(\pi t/2)$ is of size $1/t$, so the factor $t^2$ makes the
-complete integrand of size $t$. Near $t=1$ the potentially singular
-term contains
-\[
- \frac{t^2\cot(\pi t/2)}{1-t^2},
- \qquad
- \lim_{t\uparrow1}
- \frac{t^2\cot(\pi t/2)}{1-t^2}=\frac\pi4.
-\]
-Indeed, $\cot(\pi t/2)=\tan(\pi(1-t)/2)$ and
-$1-t^2=(1-t)(1+t)$. These elementary endpoint checks already explain
-why the integral specifies a finite real number. The later proof gives
-the precise estimates needed for its use in the asymptotic expansion.
+The series runs over the positive odd integers. Section~\ref{sec:corner}
+proves uniform convergence of its $\ell\geq3$ tail and computes the
+continuous endpoint values of the complete integrand. In particular,
+the zero of $\cot(\pi t/2)$ cancels the $\ell=1$ pole at $t=1$.
 
 \begin{theorem}[Sharp corner expansion]\label{thm:main-expansion}
 Let $N=n+\tfrac12$. For the points \eqref{eq:nodes}, as $n\to\infty$,
@@ -339,8 +312,8 @@ Let $N=n+\tfrac12$. For the points \eqref{eq:nodes}, as $n\to\infty$,
             +O\!\left(\frac{\log N}{N^2}\right).
 \end{equation}
 The constants and the remainder estimate are the same for both parities.
-More precisely, a finite constant $C$, independent of $n$, bounds the
-absolute remainder by $C\log N/N^2$ for every integer $n\geq2$.
+More precisely, a finite constant $C_{\rm rem}$, independent of $n$, bounds the
+absolute remainder by $C_{\rm rem}\log N/N^2$ for every integer $n\geq2$.
 Consequently \eqref{eq:main-expansion} also holds for $\Lambda_n$.
 \end{theorem}
 
@@ -348,10 +321,10 @@ Consequently \eqref{eq:main-expansion} also holds for $\Lambda_n$.
 If $\mathcal{R}_n$ denotes the difference between $\Lambda_c(n)$ and the four
 explicit terms in \eqref{eq:main-expansion}, the statement is
 \[
- |\mathcal{R}_n|\leq C\frac{\log(n+1/2)}{(n+1/2)^2}
+ |\mathcal{R}_n|\leq C_{\rm rem}\frac{\log(n+1/2)}{(n+1/2)^2}
  \quad(n\geq2)
 \]
-for one finite constant $C$ that works for every degree and both
+for one finite constant $C_{\rm rem}$ that works for every degree and both
 parities. In particular $N \mathcal{R}_n\to0$. The remainder is smaller than $1/N$, so the coefficient of
 the reciprocal term $-1/N$ is determined. A leading
 $O(\log n)$ estimate leaves the constant and reciprocal terms
@@ -388,7 +361,8 @@ be chosen for all $n\geq2$.
 The leading growth
 $\Lambda_n=(4/\pi^2)\log^2n+O(\log n)$ is due to
 Kolomoitsev and Lomako~\cite[Theorem~2.1 and the following Padua consequence]{KolomoitsevLomako2021}.
-Their proof uses pointwise rhombic Lebesgue-function asymptotics of
+Their proof uses pointwise rhombic Lebesgue-function asymptotics, for Fourier sums over
+the diamond $|p|+|q|\leq n$, of
 Kuznetsova~\cite[Theorem~1]{Kuznetsova1995}; Pimenova's earlier equal-parameter
 result concerns the corresponding odd periodic grid
 \cite[Theorem~1]{Pimenova1979}. These periodic results form the background
@@ -397,10 +371,11 @@ for the leading Padua asymptotics.
 The lower-order sizes had also been anticipated numerically. De Marchi's
 empirical model was $((2/\pi)\log(n+1)+1.1)^2$
 \cite[Section~1.1, pp.~3--5]{DeMarchi2005NearOptimal}.
-Here the explicit constants are
+$b$, $c$ and $\kappa$ have numerical values
 $b\approx1.225522125742$, $c\approx1.846160310424$, and
 $\kappa\approx0.919710118388$. Theorem~\ref{thm:main-expansion}
-identifies their exact expressions and resolves the lower terms through
+identifies their exact expressions; these decimal approximations are
+illustrations and are not used in any proof. The expansion resolves the lower terms through
 an error smaller than $1/n$. Its square
 comes from two harmonic sums; $\kappa$ measures their coupling, and the
 half-integer scale exposes the reciprocal correction.
@@ -409,7 +384,8 @@ Both proofs begin with the same corrected interpolation kernel. At the
 corner its signs give an exact positive sum. Away from the corner, reflection
 writes the Lebesgue function as a periodic envelope minus the cancellation
 lost in taking absolute values. A single comparison with a completed model
-then controls that envelope and the competing reflection defects. Near an
+then controls that envelope; selected-pair floors bound the competing
+reflection defects. Near an
 actual maximizing corner, a positive interpolation argument proves strict
 quadratic descent. The finite certificates use that same interpolation
 principle. This organization separates the two ideas that matter: computing

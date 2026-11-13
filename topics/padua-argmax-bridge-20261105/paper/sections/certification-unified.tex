@@ -11,7 +11,7 @@ For any finite real vector $(h_\ell)$ the identity
 \]
 provides the signed sums. Each is smooth whenever the individual
 kernels or cardinals are smooth. The signs realizing the maximum may
-change inside a leaf; a bound valid for every complete signed sum
+change inside a leaf (a terminal rectangle of the binary subdivision tree); a bound valid for every complete signed sum
 continues to hold across all such changes.
 
 For a rectangle $R=[a_0,a_1]\times[b_0,b_1]$ with positive side lengths,
@@ -26,17 +26,34 @@ The basis functions are nonnegative and sum to one on $[0,1]$.
 Tensor Bernstein coefficients are the coefficients in the product
 basis $B_i^n(s)B_j^n(t)$.
 
+\begin{center}\small
+\begin{tabular}{@{}ll@{}}\toprule
+Symbols & Meaning\\\midrule
+$R,s,t,B_i^n$ & rectangle, normalized coordinates, Bernstein basis\\
+$F,f_\sigma$; $M,\omega_a,\omega_b$ & maximum of signed sums; norm and derivative frequencies\\
+$W_z,I_RW$ & vertex upper bounds and their bilinear interpolant\\
+$q_R,V_R,\theta_R$ & leaf quadratic, largest vertex upper, Peano coefficient\\
+$M_*,E,V_E$ & true global norm, quarter-grid, largest grid upper\\
+$L_c,\delta_R,r_R$ & corner lower endpoint, reflection floor, its guarded radius\\
+$U,V,W_x,W_y,W_{xy},g$ & squared corner rectangle, three vertex uppers, descent margin\\
+$\mathcal T,\mu$ & normalized phase triangle and mesh ratio $n/(n+1)$\\\bottomrule
+\end{tabular}
+\end{center}
+
 \begin{lemma}[Positive interpolation bounds]\label{cert:positive}
-Let $F(z)=\max_{\sigma}f_\sigma(z)$, where the maximum is finite.
+Let $M,\omega_a,\omega_b\geq0$, and let
+$F(z)=\max_{\sigma}f_\sigma(z)$, where the maximum is over a finite
+family of twice continuously differentiable functions.
 On a rectangle $R=[a_0,a_1]\times[b_0,b_1]$, suppose
 $|(f_\sigma)_{aa}|\leq M\omega_a^2$ and
 $|(f_\sigma)_{bb}|\leq M\omega_b^2$ for every $\sigma$.
-If $W_z\geq F(z)$ at its vertices, then throughout $R$,
+For each vertex $z$ choose $W_z\geq F(z)$, and let $I_RW$ be the
+bilinear interpolant of these four values. Then throughout $R$,
 \begin{equation}\label{cert:peano}
  F(a,b)\leq I_RW(a,b)+\frac M2\{
  \omega_a^2(a-a_0)(a_1-a)+\omega_b^2(b-b_0)(b_1-b)\}.
 \end{equation}
-Here $I_R$ is bilinear interpolation. For polynomial cardinals with tensor
+For polynomial cardinals with tensor
 Bernstein coefficients $c_{\ell,ij}$ on $R$, the analogous bound is
 \begin{equation}\label{cert:bernstein}
  \sum_\ell|L_\ell(z)|\leq
@@ -178,10 +195,13 @@ and upper bounds at the vertices therefore give
  \quad V_R=\max_zW_z,\quad
  \theta_R=\frac{\pi^2}{8}\{(a_1-a_0)^2+\mu^2(b_1-b_0)^2\}.\notag
 \end{align}
-The Bernstein inequality for functions of bounded exponential type
-\cite{Boas1954} supplies
+In the unscaled angles $u=\pi a/n$, $v=\pi b/m$, each signed sum
+is a $2\pi$-periodic trigonometric polynomial of degree at most $n$
+in either angle. The periodic Bernstein inequality stated in the proof
+of Lemma~\ref{ul:corner-lemma} gives, by the chain rule,
 $|(f_\varepsilon)_{aa}|\leq\pi^2M$ and
-$|(f_\varepsilon)_{bb}|\leq\pi^2\mu^2M$ from the global norm.
+$|(f_\varepsilon)_{bb}|\leq\pi^2\mu^2M$ from the global norm
+\cite{Boas1954}.
 The final line of \eqref{cert:phase-bound} uses positivity of the
 bilinear weights and the elementary bound
 $(a-a_0)(a_1-a)\leq(a_1-a_0)^2/4$, and similarly for $b$.
@@ -199,12 +219,13 @@ valid initially with this true, possibly unknown, norm. If all leaves
 are numerical and $\theta_R<1$, a leaf containing that point gives
 $M_*\leq V_R+\theta_RM_*$. Absorbing its last term and then taking
 the largest possible leaf ratio yields
+The \emph{tree norm} is
 \begin{equation}\label{cert:tree-norm}
  M_*\leq\max_R\frac{V_R}{1-\theta_R}.
 \end{equation}
 Alternatively the quarter-grid points
 $E=\{(i/4,j/4):i,j\geq0,\ i+j\leq4\}$ and their upper maximum $V_E$
-give
+give the \emph{grid norm}
 \begin{equation}\label{cert:grid-norm}
  M_*\leq\frac{V_E}{1-\pi^2/64}<\frac{784}{663}V_E.
 \end{equation}
@@ -221,6 +242,15 @@ For \eqref{cert:tree-norm}, every leaf meeting the triangle must
 supply its numerical vertex bounds. A tree using an analytic far leaf
 uses the independent grid norm \eqref{cert:grid-norm}.
 
+The independent checker maximizes the quadratic $q_R$ exactly over
+each clipped polygon $R\cap\mathcal T\cap\{\text{near/far proxy}\}$.
+It tests polygon vertices, stationary points of each edge restriction,
+and any interior critical point. These cover a quadratic maximum on a
+compact polygon: a nonvertex boundary maximum is stationary along its
+edge, and an interior maximum has zero gradient. With singular Hessian,
+the quadratic is constant in a null direction through any critical point,
+so that value also occurs on the boundary. The simpler whole-rectangle
+upper $V_R+\theta_RM$ is an alternative sufficient bound.
 On a leaf the certified upper for $q_R$ must be below $L_c$ on its far
 part. On its actual near part $\rho\leq1/2$, at a noncorner center,
 the required inequality is $q_R-\delta_R<L_c$, with the appropriate
@@ -234,7 +264,7 @@ closed rational proxies for the two parts are
  R\cap\mathcal T\cap\{a+b\geq1/(2p_+)\}.
 \]
 The first contains every actual near point, and the second every actual
-far point. Their overlap retains the seam $\rho=1/2$. Requiring the
+far point. The two proxies overlap on the seam $\rho=1/2$. Requiring the
 appropriate strict comparison on each nonempty proxy is sufficient;
 the defect floor is invoked in the physical implication only at actual
 near points. Its certified radius can be evaluated outwards as
@@ -286,7 +316,7 @@ satisfies $S_n<\Lambda_c(n)-3/100$.
 \begin{proof}
 Apply Corollary~\ref{uc:absolute-gate} with $\rho_1=\pi/2$.
 Its tangent condition holds at $n=192$ and persists thereafter;
-the same corollary gives $G(n,\pi/2)>3/100$.
+the same corollary gives $\mathcal G(n,\pi/2)>3/100$.
 \end{proof}
 
 From degree 256 the analytic estimate \eqref{ul:corner256} supplies
@@ -309,7 +339,7 @@ boundary.
 \begin{proposition}[Computer-assisted finite verification]\label{cert:finite-verification}
 For every integer $2\leq n\leq40$ the retained polynomial certificate
 satisfies the coefficient and complete-partition predicates above.
-For every integer $41\leq n\leq511$ both retained phase trees have been
+For every integer $41\leq n\leq511$ both retained certificate records have been
 recertified with independently computed bounds satisfying the norm,
 closed-cover, defect-floor and corner predicates above.
 With the arithmetic model and mathematical premises specified in
@@ -323,10 +353,13 @@ complete midpoint partition for each of the 39 degrees $2,\ldots,40$.
 Bernstein positivity and the exceptional vertex identity give the strict
 comparison off the two designated corners.
 For each of the 471 degrees $41,\ldots,511$, the independent phase checker
-reconstructs both complete trees, directly encloses the finite kernel and
+reconstructs the complete tree from both certificate records, directly encloses the finite kernel and
 cardinal sums, and certifies their strict rational comparisons. It uses
 its own vertex upper bounds, corner lower endpoint and global norm in
-every leaf and corner test. All 942 trees pass these checks.
+every leaf and corner test. All 942 certificate records pass these checks.
+At each degree the primary and fresh native passes produced the same
+tree and exact keys. Thus the checks cover 471 distinct trees, each
+recorded twice; the second record adds native replay redundancy.
 The phase-to-physical implication proved above then excludes every point
 except the two corner origins. At those origins the cardinal identity
 gives the exact value $\Lambda_c(n)$, and parity reflection equates the
@@ -337,16 +370,37 @@ two values.
 The independent checker evaluates the finite primitive
 \eqref{ul:primitive} and the four-term cardinal-reflection identity
 \eqref{ul:cardinal-reflection}, using the corrected kernel of
-Lemma~\ref{lem:cardinal-kernel}. It retains every endpoint weight, the
+Lemma~\ref{lem:cardinal-kernel}. In particular the evaluated product form is
+\[
+G_n(u,v)=R_{n+1}(s)R_{n+1}(t)+R_n(s)R_n(t)-\cos(nu),
+\quad s=(u+v)/2,\quad t=(v-u)/2,
+\]
+where $R_\ell(x)=\sin(\ell x)/\sin x$ and
+$R_\ell(j\pi)=\ell(-1)^{j(\ell-1)}$ at removable arguments.
+This is the finite sine-product kernel derived in Section~\ref{sec:corner}.
+It retains every endpoint weight, the
 highest-mode coefficient one and the exact removable collision values.
 For an actual-function value the four reflected terms are added before
 taking the absolute value, preserving their cancellations. These direct
 finite sums give new vertex uppers $W_z$, an origin lower endpoint $L_c$,
 and, below degree 256, the three actual-function uppers
-$W_x,W_y,W_{xy}$. The checker constructs its own GRID or complete TREE
-norm from these new values. Its conclusion certifies the complete trees
-with these independently constructed bounds.
+$W_x,W_y,W_{xy}$. The checker constructs its own grid norm \eqref{cert:grid-norm} or complete tree
+norm \eqref{cert:tree-norm} from these new values. Its conclusion certifies the complete trees
+with these independently constructed bounds. No stored native numerical
+endpoint is a premise or is asserted valid; only the trees and exact
+phase keys are reused.
 
+The arithmetic model is IEEE 754 binary64, rounded to nearest with ties
+to even and gradual underflow \cite{IEEE7542019}. For a normal result,
+$\operatorname{fl}(a\mathbin\circ b)=(a\mathbin\circ b)(1+\delta)$,
+$|\delta|\leq\epsilon_{\rm fp}$; subnormal operations are covered by
+outward adjacent-value widening. Products of $k$ such normal factors
+have error at most $\gamma_k=k\epsilon_{\rm fp}/(1-k\epsilon_{\rm fp})$
+\cite[Chapters~3--5]{Higham2002}. Runtime and array versions are pinned
+in the package; the array implementation is NumPy \cite{NumPy2020},
+and exact rational operations use Python's documented integer and
+\texttt{Fraction} semantics
+(\url{https://docs.python.org/3/library/fractions.html}).
 The arithmetic starts with the exact rational enclosure from Machin's
 identity $\pi=16\arctan(1/5)-4\arctan(1/239)$.
 Integer argument reduction and reflection put the sine arguments in
@@ -357,10 +411,15 @@ nested multiplication and addition), has error less than
 $84\epsilon_{\mathrm{fp}}t$; the implemented allowance is
 $128\epsilon_{\mathrm{fp}}t$. The arithmetic proof in the reproducibility
 package derives this bound and its integer and normal-operation guards.
+In outline, at most 38 normal rounding factors contribute less than
+$77\epsilon_{\rm fp}t$, the Taylor tail is bounded by
+$t\,2^{26}/27!<\epsilon_{\rm fp}t$,
+and argument error costs less than $6\epsilon_{\rm fp}t$, giving the
+$84\epsilon_{\rm fp}t$ bound.
 General interval operations widen
 each endpoint to an adjacent binary64 value, and summation widens every
-pairwise addition. The finite endpoints have the exact form $m2^e$ with
-integers $m,e$; conversion to rationals preserves their values.
+pairwise addition. The finite endpoints have the exact form $m_{\rm fp}2^{e_{\rm fp}}$ with
+integers $m_{\rm fp},e_{\rm fp}$; conversion to rationals preserves their values.
 Normalization, the near/far proxy intersections, norm construction,
 strict leaf comparisons and corner inequalities then use exact rational
 arithmetic. This verifies the cover using the checker's own bounds
@@ -370,29 +429,36 @@ throughout.
 \centering\small
 \caption{Mathematical and implementation premises of the finite verification.}
 \label{cert:trust}
-\begin{tabular}{@{}p{0.17\linewidth}p{0.42\linewidth}p{0.32\linewidth}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.13\linewidth}
+>{\raggedright\arraybackslash}p{0.26\linewidth}
+>{\raggedright\arraybackslash}p{0.27\linewidth}
+>{\raggedright\arraybackslash}p{0.24\linewidth}@{}}
 \toprule
-Stage & Mathematical assertion checked or used & Implementation trust\\
+Stage & Proved in the text (premise) & Computed by the program & Implementation trust\\
 \midrule
-Polynomial certificates & Corrected cardinals, outward coefficient construction,
-Bernstein positivity and a complete closed-square cover &
-C++/GMP checker, 192-bit outward integer rounding, compiler and Python driver\\
-Direct phase sums & Finite angular kernel and cardinal-reflection identities,
-endpoint weights, exact collision values; rational $\pi$ and Taylor error bounds &
-Python integer/Fraction operations and conversions; guarded NumPy integer
-and array operations\\
-Interval endpoints & Enclosures of every finite term and widened pairwise sum &
-IEEE-754 binary64 $+,-,\times,/$ rounded to nearest, gradual underflow,
-finite comparisons and correct \texttt{nextafter}\\
-Closed cover & GRID or complete TREE norm, near/far overlap, finite selected-pair
-floors, strict leaf tests, squared-variable corner descent and parity &
-Exact rational checker and strict parsing; the recorded Python/NumPy
-implementation, operating system and hardware\\
-Analytic branches & The finite floor tiers, \eqref{ul:corner256} and
-Corollary~\ref{ul:far192}, with the elementary constants of
-Section~\ref{sec:argmax} & The stated rational checks\\
+Polynomial & Corrected cardinals, Bernstein positivity, corner vertex identity &
+Outward coefficients, complete partition, strict coefficient margins &
+C++/GMP checker, outward integer rounding, compiler, Python driver\\
+Direct sums & Kernel and reflection identities, removable values, rational sine bounds &
+Fresh vertex uppers, origin lower, actual-function uppers below 256 &
+Python integer/Fraction conversions, guarded NumPy operations\\
+Endpoints & Interval inclusion and pairwise widening &
+Enclosures of every finite term and pairwise sum &
+IEEE 754 binary64 operations, gradual underflow, comparisons, \texttt{nextafter}\\
+Closed cover & Positive interpolation, physical chart cover, floors, squared-variable descent &
+Grid/tree norm, proxy polygons, quadratic maxima, strict margins &
+Exact rational checker and strict parsing\\
+Analytic branches & Finite floor tiers, \eqref{ul:corner256}, Corollary~\ref{ul:far192} &
+Metadata and degree guards only & None beyond guard evaluation\\
+Elementary bases & Displayed rational bracket and monotonicity arguments &
+Finite base comparisons in \texttt{onset512\_analytic/}\newline\texttt{check.py} &
+Python integers and \texttt{Fraction}; recorded receipt\\
 \bottomrule
 \end{tabular}
+\par\smallskip\footnotesize
+The recorded interpreter, libraries, operating system and hardware are
+trusted for each executed program row. The analytic branches are proved
+in the text; the phase checker does not reprove them.
 \end{table}
 
 The same finite-floor, corner and analytic-far hypotheses used in the
@@ -400,13 +466,12 @@ mathematical reduction are checked at their exact closed guards.
 In particular the finite selected-pair floors remain premises throughout
 their stated degree tiers. Positive interpolation and the closed physical
 chart cover turn the verified rational inequalities into strict exclusion
-at every other physical point. The small-degree route retains its
-independently authored C++/GMP coefficient checker and Python driver.
+at every other physical point.
 
 \begin{table}[htbp]
 \centering\small
-\caption{Finite certificate coverage. Each phase pair supplies two trees
-recertified by the independent checker.}
+\caption{Finite certificate coverage. Each phase degree has two certificate
+records of the same tree, recertified with substituted bounds.}
 \label{cert:coverage}
 \begin{tabular}{@{}lrrr@{}}
 \toprule
@@ -419,25 +484,27 @@ $320\!:\!510$ &191&382&$51$\\
 \end{tabular}
 \end{table}
 
-The last two rows give 471 phase degrees and 942 checked witnesses.
+Table~\ref{cert:coverage} gives 471 phase degrees and 942 checked records
+of 471 distinct trees.
 The trees for degrees $320,\ldots,510$ each have 51 nodes, 26 leaves
-and three analytic far leaves, and use the GRID norm. The independent
+and three analytic far leaves, and use the grid norm \eqref{cert:grid-norm}. The independent
 check verifies their numerical and noncorner near regions with its own
 bounds and applies the analytic corner estimate from 256.
-Section~\ref{sec:argmax} supplies the analytic proof for every $n\geq512$.
-Together these ranges cover every integer $n\geq2$.
+\begin{proof}[Proof of Theorem~\ref{thm:main-location}]
+For $n\geq512$, apply Theorem~\ref{ul:tail-location}; for
+$2\leq n\leq511$, apply Proposition~\ref{cert:finite-verification}.
+These ranges cover every integer $n\geq2$.
+\end{proof}
 
 The certificate search used a separately recorded native implementation
 with Arb~\cite{Johansson2017Arb}, FLINT~\cite{FLINT},
 MPFR~\cite{Fousse2007MPFR} and GMP~\cite{GMP}. The retained trees and exact
 phase keys are inputs to the independent direct-sum checker described
-above. All 942 witnesses passed its complete revalidation, and a separate
+above. All 942 records passed recertification with substituted bounds, and a separate
 execution checked both witnesses at each of degrees 41, 458 and 511.
 
-All essential certificates and the independent verification records are
-retained. The compact returns additionally include complete
-numerical histories for selected degrees 199, 238, 475 and 458 for detailed
-inspection. Full histories for the other degrees remain at their recorded
-computation sites. The source package, arithmetic assumptions, runtime
-identities, file hashes and commands describe regeneration, and the
-accompanying manifest identifies the complete proof inventory.
+The essential certificates, independent verification records, source
+identities and reproduction commands are identified by the inventories
+in the package cited in the Data and code availability statement.
+Selected native histories are auxiliary provenance; they supply no
+numerical premise to the independent recertification.
