@@ -47,3 +47,12 @@ Counts at this checkpoint: 11 numbered statements in the post-split text (incl. 
     2. Record steps tightened in the paper: PD-T535 (8) Taylor expansion about the mean; Rodrigues/generating-function equality derived; PD-T536 (10) needs m ≥ 2K, which is added; the PD-T536 §4 transfer step is made explicit as Lemma A.4.
     3. ε/γ endpoint factors are renamed ε^{(m)}, ε^{(m+1)} in the old weights and carriers text (notation only).
   - Still to do (part 2): PD-T539–542 with Appendix B, the F7 corollary (PD-T?mz-paper-claude-02), §7 remark, finite results, §9, title, abstract, introduction, status box and visible `\id`, the ratio θ→τ rename, the C₀ and M′ renames, and availability.
+- 2026-11-13/14 (handoff 04, MZ-SP part 2; Sonnet 5.5 high worker, verified by rebuild: 47 pp. elsarticle preprint 12pt, clean):
+  - `prop:elliptic-kernel` (PD-T539; **weakened**: the log-singularity sentence is dropped). `prop:positivity` (PD-T540, verbatim). `prop:rectangles` (PD-T541, verbatim, with unused moduli trimmed). `prop:enclosure` (PD-T542, verbatim, computer-assisted, "fixes no digit"; the worker reran the endpoints bit for bit). `cor:norm-lower` (PD-T?mz-paper-claude-02, verbatim). Appendix B holds the proofs of PD-T539–542.
+  - `rem:reproduction` (PD-T113, with the degree argument). **For the audit:** it adds the bound ‖f−Hf‖ ≤ (2+C_P)E_k(f), which PD-T297 and PD-T113 imply but no record states.
+  - `prop:no-quadratics` (PD-N051, exact scope).
+  - `prop:padua-brackets` merges PD-T107, PD-T298 and PD-T299 into one six-row certified table. **For the audit:** it adds "η<0.83", which is arithmetic on the brackets.
+  - `prop:padua-finite-negative` (PD-T376) stays, with its witness arrays to be archived with the deposit. The measured material is in §8.3 with the F9 labels.
+  - Front matter: new title, abstract and introduction (main results A–D with pointers), literature (BCDMVX06, SVZ08, Xu96, CDMV07, KLP18, ASV27, Wu26), and the statement that the CC inputs are proved in [MZ-CC]. The status box and visible IDs are removed. Notation follows notation-sp.md (τ, ι, M′, B⁻, **K**, ω_a, ϱ).
+  - Open for AC: the Xu96 DOI is not resolver-checked (proxy). Unread CDMV 2005 and An–Ran–Wu are not cited.
+  - Still to do: an independent check of the Appendix A/B translations (internal referee round, math) and the exposition round.
