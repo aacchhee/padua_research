@@ -1,6 +1,6 @@
 # Handoff 03 — padua-effective-cubature-20261112 — Codex audit of session 1 and the explicit-γ campaign (C0, uniform Theorem A, cap, PD-N, explicit γ ≥ 1/36)
 
-- Status: open
+- Status: done in `698f8b12ae4f492e25755a3636a1edf607403c72`
 - Previous handoff: [02-audit.md](02-audit.md) (superseded by this one before any audit was written; it covered session 1 only)
 - Next agent / model / effort: **Codex, `gpt-6-astra`, high or higher** (auditor's choice, recorded). This is the single substantive audit of Claude development (AGENTS.md: Codex audits Claude development).
 - Role: independent auditor
