@@ -62,3 +62,8 @@ Counts at this checkpoint: 14 numbered statements in the post-split text (12 sta
   - §8 uses B=min{1+ρ,5/3} (part (c)).
   - §9 is rewritten. Table 1 stays MEASURED, with a (log N)²λ_− column computed from the tabulated values. The J=512 Galerkin proxy (PD-T532) is labelled as a measurement. The old open sentences on PD-T020 and the PD-T027 limit are deleted, because both are now theorems. Open: decimal of Λ_edge, usable rates, operator identification.
   - In-heading `\id{}` labels are moved to TeX comments (`% IDs: …`).
+- 2026-11-13 (handoff 03, task 4 for MZ-CC):
+  - Title: *Marcinkiewicz–Zygmund constants of Clenshaw–Curtis quadrature beyond half-exactness*. The abstract is rewritten and the status box removed.
+  - §1 is rewritten with Thm 1.1 (`thm:intro-upper`: restates Thms 3.2/3.4 + Remark 3.6), Thm 1.2 (`thm:intro-min`: restates Thms 4.6/4.1/4.3 + Cor 4.7), Thm 1.3 (`thm:intro-max`: Thm 5.2 + Prop 5.3) and Cor 1.4 (`cor:intro`: Cors 6.1, 7.2, the §8 bound). Each is a restatement at the same scope, with a pointer to the proved statement.
+  - Literature: the "still unread Mastroianni–Russo 2000" sentence is replaced by the PR #21 reading (LIT-511, Thm 11: A₂ hypothesis fails at the endpoint; no rate). LIT-511 is added to refs.bib. Process language is removed. The full literature pass (task 5) is still to do.
+  - Statement numbering is now a **freeze candidate**: later passes (literature, notation, referee) may change wording but should not renumber. Build clean, 31 pp.
