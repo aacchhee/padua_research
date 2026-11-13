@@ -65,7 +65,7 @@ Coverage is quoted from the LIT record, not from the bib `coverage` field, where
 
 #### Replacement sentences (minimal changes)
 
-**Applied by the orchestrator, 2026-11-13:** #5 (the arXiv-version wording; AC may restore the plain wording after checking the published numbering), #8, #13, #19, #22, #23, #30, #31, #35; B.1–B.6; the L4 pdfsubject; LIT-490 added and cited; bib fixes from C (LIT-294 doi and coverage, LIT-058 coverage, LIT-511 coverage, LIT-056 doi). Not applied: LIT-489 (Wu AML), which is optional and has no natural place in MZ-CC's text.
+**Applied by the orchestrator, 2026-11-13:** #5 (resolved 2026-11-14: the published PDF, supplied by AC in Downloads\padua\papers as 1-s2.0-S0378475426004416-main.pdf and read by the orchestrator, has the factor 1+√(1+η) with an aliasing term as (7) and the inverse-Gram LS construction as (8), as in arXiv v1. The text now says "Equation (7) of [LIT-045]". The LIT-045 record should note this at PR preparation), #8, #13, #19, #22, #23, #30, #31, #35; B.1–B.6; the L4 pdfsubject; LIT-490 added and cited; bib fixes from C (LIT-294 doi and coverage, LIT-058 coverage, LIT-511 coverage, LIT-056 doi). Not applied: LIT-489 (Wu AML), which is optional and has no natural place in MZ-CC's text.
 
 - **#5, L210–213.** Preferred fix: AC checks the published PDF ([doi:10.1016/j.matcom.2026.10.001](https://doi.org/10.1016/j.matcom.2026.10.001)). If the formulas are (7) and (8) there, keep the text. Otherwise replace with
   > In the arXiv version of \cite{LIT-045}, equation~(7) already uses the upper-MZ factor $1+\sqrt{1+\eta}$, together with an aliasing term, and equation~(8) separates the inverse-Gram least-squares construction.

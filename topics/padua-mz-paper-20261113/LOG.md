@@ -91,6 +91,16 @@
 
 - Session boundary: handoff 03 superseded by [handoff 04](handoffs/04-work.md).
 
+## 2026-11-13/14 — Claude, claude-opus-5-5 — handoff 04: MZ-CC finished and frozen; MZ-SP integrated
+
+- MZ-CC:
+  - notation pass (`04967bc`; Sonnet worker, 18 rename groups, numbers unchanged);
+  - literature scope pass (`d2e8000`; Opus checker; 6 citation fixes, LIT-490 added, bib fixes);
+  - internal referee round (`6fc36e4`): [referee-cc-math.md](referee-cc-math.md) (Opus xhigh: no CRITICAL/MAJOR; certificate rerun byte-identical), [referee-cc-exposition.md](referee-cc-exposition.md) (Opus high), [response-internal-cc.md](response-internal-cc.md). Revisions were applied by a Sonnet worker; §3 is reordered, so the numbering changes are listed in the response file. The 23/15 strengthening is declined as unregistered;
+  - **frozen numbering** recorded in correspondence-cc.md (`626df68`).
+- AC (2026-11-13 23:58): "that paper is in the folder". The orchestrator was granted access to Downloads\padua\papers, staged the published ASV PDF and read it: (7) and (8) are as in arXiv v1. The MZ-CC text now says "Equation (7) of [LIT-045]".
+- MZ-SP: part 1 (`e7c8bd5`) and part 2 (`b245279`) were integrated by Sonnet workers and verified by rebuild. 47 pp., clean; details are in the correspondence-sp changes log. Its internal referee round is next.
+
 ## Runs needed
 
 - Remaining tasks and gates W1–W4: see handoff 02.
