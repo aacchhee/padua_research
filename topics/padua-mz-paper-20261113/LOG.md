@@ -3,7 +3,7 @@
 - Branch: `claude/padua-mz-paper-20261113` · Base: main `b5388c2` · Developer: Claude · Auditor: Codex (gpt-6-astra)
 - Stage: WORK · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
 - Reserved final-ID ranges: none (no new mathematics expected).
-- Open for AC: companion document only (default none). Venues are decided; the Zenodo deposit will come later, from AC.
+- Decided by AC: venues (MZ-CC SINUM, MZ-SP JAT); Zenodo later; companion = AC-only reading aid, arXiv and journal versions identical (2026-11-13).
 
 ## 2026-11-13 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -33,6 +33,16 @@
   - **MZ-CC → SIAM J. Numer. Anal.** (fallback Math. Comp.);
   - **MZ-SP → J. Approx. Theory** (fallback Adv. Comput. Math.).
 - BRIEF §0/§5 and handoff 01 task 0 were amended in place: journal classes `siamart` and `elsarticle`, a deposit-DOI placeholder, and only the companion question left for AC.
+
+## 2026-11-13 — Claude, claude-opus-5-5 (configured; effort not exposed) — task 0 / 0a: baseline and split
+
+- Rules read at branch head `c0e57a9c` (AGENTS.md, agents/WORKFLOW.md, agents/claude/CLAUDE_ROLES.md). main is still `b5388c2`; open PRs #27 and #34 are not touched. Role: orchestrator and developer (manuscript).
+- **AC answers (2026-11-13):**
+  - companion document: "companion document may be prepared only for my own reading, arxiv and journal should be the same". So the arXiv and journal versions of each paper are identical; long derivations go into each paper's appendices. Any companion is a private reading aid for AC, not submitted or posted;
+  - SIAM class files: "you can put them on repo". `siamart251216.cls` (v1.4.8, 2025-12-16) and `siamplain.bst` are committed in `tracks/mz-constants/paper/`. SIAM's class is not on CTAN; it was taken from public GitHub copies (dpo/latex-styles and danieleavitabile/project-starter, byte-identical class, SHA-256 `33f2eb09…a5c6f5`; bst `a5df7c48…c6ac7`). Check against SIAM's official macro download before submission.
+- Toolchain installed in the sandbox: `texlive-publishers` (for `elsarticle`).
+- **Baseline (task 0):** the single draft builds cleanly at 25 A4 pages, source hash equal to the 2026-11-05 record.
+- **Split (task 0a):** done by script; exact changes and the statement map are in [split-map.md](split-map.md). MZ-CC post-split 16 pp., MZ-SP 11 pp., both clean. Gate W0 PASS. Class conversion follows as a separate commit.
 
 ## Runs needed
 

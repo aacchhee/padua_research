@@ -124,7 +124,7 @@ Ask these early, in one message. Meanwhile, proceed on defaults.
 
 1. **Venue for each paper.** *Decided by AC on 2026-11-13:* MZ-CC → SIAM J. Numer. Anal. (fallback Math. Comp.); MZ-SP → J. Approx. Theory (fallback Adv. Comput. Math.).
 2. **One paper or a split.** *Decided by AC on 2026-11-13: split into MZ-CC and MZ-SP (§0).*
-3. **Companion document.** *Default:* none; long derivations go in appendices.
+3. **Companion document.** *Decided by AC on 2026-11-13:* "companion document may be prepared only for my own reading, arxiv and journal should be the same". Long derivations go in each paper's appendices; any companion is a private reading aid for AC only.
 4. **Data deposit.** *AC, 2026-11-13: Zenodo will come later.* Until AC creates it, the text says "available in the repository at commit …" for the committed checkers and receipts. Leave a clearly marked placeholder for the deposit DOI, and make no deposit claim.
 
 ## 6. Known pitfalls
