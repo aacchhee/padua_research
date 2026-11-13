@@ -56,3 +56,67 @@ Counts at this checkpoint: 11 numbered statements in the post-split text (incl. 
   - Front matter: new title, abstract and introduction (main results A–D with pointers), literature (BCDMVX06, SVZ08, Xu96, CDMV07, KLP18, ASV27, Wu26), and the statement that the CC inputs are proved in [MZ-CC]. The status box and visible IDs are removed. Notation follows notation-sp.md (τ, ι, M′, B⁻, **K**, ω_a, ϱ).
   - Open for AC: the Xu96 DOI is not resolver-checked (proxy). Unread CDMV 2005 and An–Ran–Wu are not cited.
   - Still to do: an independent check of the Appendix A/B translations (internal referee round, math) and the exposition round.
+- 2026-11-14 (internal referee round): [referee-sp-math.md](referee-sp-math.md) (Opus xhigh: no CRITICAL/MAJOR; enclosure checker rerun bit-identical; brackets match the receipts), [referee-sp-exposition.md](referee-sp-exposition.md) (Opus high), [response-internal-sp.md](response-internal-sp.md). Revisions were applied by a Sonnet worker; no theorem-like number changed. Declined: the unregistered Θ(log m) fixed-ratio statement, demoting Prop 5.8, and replacing derivations by citations. 50 pp., clean.
+
+## Frozen numbering of MZ-SP (2026-11-14, after the internal referee round)
+
+| Label | Number |
+|---|---|
+| `sec:intro` | 1 |
+| `sec:cc-recap` | 2 |
+| `lem:weight-comparison` | 2.1 |
+| `prop:cc-inputs` | 2.2 |
+| `sec:marginal` | 3 |
+| `thm:padua` | 3.1 |
+| `sec:weights` | 4 |
+| `lem:density` | 4.1 |
+| `thm:padua-weights` | 4.2 |
+| `prop:padua-odd-weights` | 4.3 |
+| `sec:carriers` | 5 |
+| `thm:padua-carriers` | 5.1 |
+| `prop:padua-odd-carriers` | 5.2 |
+| `cor:padua-ratio` | 5.3 |
+| `rem:refuted` | 5.4 |
+| `lem:fejer-cosine` | 5.5 |
+| `prop:padua-growth` | 5.6 |
+| `prop:carrier-improvement` | 5.7 |
+| `prop:carrier-ceiling` | 5.8 |
+| `sec:corner` | 6 |
+| `thm:log-reduction` | 6.1 |
+| `lem:corner-kernel` | 6.2 |
+| `thm:corner-operator` | 6.3 |
+| `rem:finite-comparison` | 6.4 |
+| `rem:two-corners` | 6.5 |
+| `sec:structure` | 6.2 |
+| `prop:elliptic-kernel` | 6.6 |
+| `prop:positivity` | 6.7 |
+| `prop:rectangles` | 6.8 |
+| `prop:enclosure` | 6.9 |
+| `cor:norm-lower` | 6.10 |
+| `sec:uniform-norm` | 7 |
+| `thm:padua-operator` | 7.1 |
+| `rem:reproduction` | 7.2 |
+| `prop:no-quadratics` | 7.3 |
+| `sec:numerics` | 8 |
+| `prop:padua-brackets` | 8.1 |
+| `prop:padua-finite-negative` | 8.2 |
+| `sec:measured` | 8.3 |
+| `sec:open` | 9 |
+| `app:corner` | A |
+| `app:reduction` | A.1 |
+| `lem:triangular-tail` | A.1 |
+| `lem:tensor-cc` | A.2 |
+| `lem:tail-estimate` | A.3 |
+| `app:kernel` | A.2 |
+| `app:operator` | A.3 |
+| `lem:finite-rank` | A.4 |
+| `app:structure` | B |
+| `app:arcsine` | B.1 |
+| `lem:arcsine` | B.1 |
+| `lem:abel` | B.2 |
+| `app:elliptic-proof` | B.2 |
+| `app:positivity-proof` | B.3 |
+| `app:rect-proof` | B.4 |
+| `app:certificate` | B.5 |
+
+Later passes (audit fixes) may change wording but should not renumber; any renumbering must be listed here.
