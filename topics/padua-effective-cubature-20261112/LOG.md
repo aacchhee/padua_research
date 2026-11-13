@@ -159,6 +159,14 @@
 - **Replays.** Developer replays of the three γ certificates from a fresh hash-checked download pass and match the committed receipts. The cross-agent replay is still missing.
 - **Next.** `response-02.md`; a narrow Codex check of the B1 closure (handoff 07). No claim changed; PR #34 stays draft.
 
+## 2026-11-14 — Codex — narrow audit 03
+
+- Request: `Codex (gpt-6-astra high): Continue claude/padua-effective-cubature-20261112.` Rules read at `e95f314d50bb4587ac1b064003f886dd15b4c68a`, candidate `cfbdcac48de747392b21de72f66174a1475b956e`. Rules unchanged; fetched main remains base `b5388c25a2a5ccb8d0faf816ab87023cf347bcd3`, an ancestor. Role: audit orchestrator with a gpt-6-astra high bounded record reviewer; prior runtime disclosure applies.
+- [audit-03.md](audit-03.md): **ACCEPTED for PR preparation**, no unresolved finding within the narrow scope. B1 correction passes registry identity, all 35-table inventory, whole-file coverage and shortlist checks; B2–B4 display/current-summary checks pass. Accepted mathematics and code/evidence are not reopened or changed. No IDs/reservations (no range) or shared-registry edits in this audit.
+- One third-round MINOR was fixed directly, separately: `52e668438142a0a54bb78cf9ac74bf833270011a` reconciles the novelty gate's range endpoint 797→798 with response-02's existing 1–798 read account. The reviewer verified the fix. It invents no reading history; the completion stays retrospective and the original prospective-gate deviation stays disclosed. Details: [review03-records.md](audit-work/review03-records.md).
+- Fresh optional input retrieval again returned HTTP403. No full Codex gamma/compact/FT replay was performed; prior independent/developer runs and earlier bounded controls remain distinct. The limitation and inherited archival pending item must remain visible through PR preparation. No new computational PASS is claimed here.
+- Next: [handoff 08](handoffs/08-pr-preparation.md), PR preparation and then the readiness check. Only AC merges; the PR remains draft until preparation/readiness requirements are met.
+
 ## Runs needed (retained development list)
 
 - Delsarte torus LP n = 9…12 at K = 3n−2 (`attempts/E1.md`); cube LP n ≥ 5 and its Delsarte extension (`attempts/E3.md`); certified φ (-05). *(2026-11-13: "certified φ (-05)" is done. The general-L¹ witness is in -07 and the compact-support witness in -05; see the response-01 entry. The other items stay deferred and unrun; the audit handoff authorises no new development.)*

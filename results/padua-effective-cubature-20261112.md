@@ -62,6 +62,10 @@ The theorem conclusions are unchanged.
 
 No claim changes. Developer replays of all three γ certificates from a fresh hash-checked download pass; a cross-agent replay is still missing.
 
+## Narrow audit disposition (2026-11-14)
+
+[Audit 03](../topics/padua-effective-cubature-20261112/audit-03.md) accepts response 02 for PR preparation. The retrospective coverage correction and B2–B4 fixes pass; a minor range-list inconsistency was corrected in a separate auditor commit. No unresolved finding remains within this narrow scope. Accepted mathematical claims are unchanged. The optional Codex coefficient-dependent replay is still unavailable (HTTP403), and existing developer/independent runs are not relabelled as fresh auditor executions.
+
 ## Next step
 
-Narrow Codex check of the B1 closure: `topics/padua-effective-cubature-20261112/handoffs/07-narrow-review.md`. No IDs are allocated, and PR #34 stays draft.
+PR preparation under `topics/padua-effective-cubature-20261112/handoffs/08-pr-preparation.md`: fresh reservations/final IDs, shared registry and RESULTS.md application, then an auditor readiness check. No IDs have yet been allocated; PR #34 remains draft. Only AC merges.
