@@ -137,7 +137,7 @@ Through all integers $N$,
  \lim_{N\to\infty}(\log N)^2\lambda_-(N,N-1)
  =\lim_{N\to\infty}(\log N)^2\lambda_-(N,N)=\frac{\pi^4}8 .
 \end{equation}
-Equivalently, interpolation at the nodes, from data normed by
+Equivalently, interpolation at the nodes, from nodal values $u_k$ normed by
 $(\sum_kw_ku_k^2)^{1/2}$ to $L^2(-1,1)$, has norm
 $(2\sqrt2/\pi^2+o(1))\log N$. Moreover
 $K_N^{-1}\le\lambda_-(N,N-1)\le128000/(\log N)^2$ for every $N\ge2$, with
@@ -164,14 +164,18 @@ Let $\eta_N=\norm{I-G_{N,N-1}}_2$.
 \begin{enumerate}
 \item $1-\eta_N=\lambda_-(N,N-1)$ for every $N\ge57$; hence
 $(\log N)^2(1-\eta_N)\to\pi^4/8$, and
-$\kappa_2(G_{N,N-1})/(\log N)^2\to8\Lambda_{\mathrm{edge}}/\pi^4$
+$\kappa_2(G_{N,N-1})/(\log N)^2\to8\Lambda_{\mathrm{edge}}/\pi^4$,
+where $\kappa_2$ denotes the spectral (2-norm) condition number
 (Corollary~\ref{cor:endpoint}).
-\item For every $0\le\theta<1$ and $0\le n\le\theta N$, the spectrum of
-$G_{N,n}$ lies in $[(1-\theta)^2/C_*,\,1+\max\{2\theta-1,0\}^2]$ with
+\item For every $0\le\vartheta<1$ and $0\le n\le\vartheta N$, the spectrum of
+$G_{N,n}$ lies in $[(1-\vartheta)^2/C_*,\,1+\max\{2\vartheta-1,0\}^2]$ with
 $C_*=12(1+\pi)^4(1+2/\pi)$ (Corollary~\ref{cor:strong}).
 \item The CC hyperinterpolant of degree $n<N$ satisfies
 $\norm{f-\mathcal L_nf}_{L^2}\le(1+\sqrt{5/3})\sqrt2\,E_k(f)$ under the
-reproduction condition of Section~\ref{sec:hyper}.
+reproduction condition of Section~\ref{sec:hyper}, where $\mathcal L_n$ is
+the hyperinterpolation operator and
+$E_k(f)=\inf_{r\in\Pn_k}\norm{f-r}_\infty$ is the best uniform
+approximation error by $\Pn_k$; both are defined there.
 \end{enumerate}
 \end{corollary}
 
@@ -379,8 +383,8 @@ For $n=N-1$ and $E=\diag(2,1,\ldots,1)$,
 \end{lemma}
 \begin{proof}
 The off-diagonal entries of $M$ are nonpositive. Let $b_0=1/2$,
-$b_i=1$ for $i\ge1$, and let $m_i$ be the least integer at least $N$
-having the parity of $i$. Put $k_i=m_i-1\in\{N-1,N\}$. Telescoping yields
+$b_i=1$ for $i\ge1$, and let $N_i$ be the least integer at least $N$
+having the parity of $i$. Put $k_i=N_i-1\in\{N-1,N\}$. Telescoping yields
 \begin{equation}\label{eq:rowfloor}
  (Mb)_0=\frac1{k_0},\qquad
  (Mb)_i=\frac12\left(\frac1{k_i-i}+\frac1{k_i+i}\right)
@@ -390,9 +394,9 @@ To verify these finite row sums, note that the absolutely convergent
 even moment series obeys
 $\sum_{h\in2\mathbb Z}\mu_{|h|}=2-4\sum_{r\ge1}(4r^2-1)^{-1}=0$.
 The infinite row weighted by $b$ is half that sum and is zero.
-Its omitted tail, beginning at $j=m_i$ in steps of two, is
+Its omitted tail, beginning at $j=N_i$ in steps of two, is
 \[
- -\sum_{j=m_i,m_i+2,\ldots}
+ -\sum_{j=N_i,N_i+2,\ldots}
  \left[\frac1{(j-i)^2-1}+\frac1{(j+i)^2-1}\right].
 \]
 Using $1/(u^2-1)=[1/(u-1)-1/(u+1)]/2$ gives
@@ -426,16 +430,16 @@ follows by integrating against cosine modes; absolute convergence and
 uniqueness of the cosine expansion identify the continuous function.
 For example, uniqueness follows from density of polynomials in
 $\cos\theta$ among continuous functions on $[0,\pi]$.
-Let $S_N(\theta)$ denote the bracket in \eqref{eq:weights}.
+Let $W_N(\theta)$ denote the bracket in \eqref{eq:weights}.
 Telescoping its tail gives
 \[
- |S_N(\theta)-(\pi/2)\sin\theta|
+ |W_N(\theta)-(\pi/2)\sin\theta|
  \le\begin{cases}1/N,&N\text{ odd},\\N/(N^2-1),&N\text{ even}.
  \end{cases}
 \]
 At interior nodes $\sin\theta_j\ge2/N$. The error is therefore at most
 $(2/3)\sin\theta_j$ for all $N\ge2$, including the even worst case $N=2$.
-Since $w_j=2S_N(\theta_j)/N$ and
+Since $w_j=2W_N(\theta_j)/N$ and
 $\pi/2-2/3\ge1/2$, $\pi+4/3<5$, this proves
 \eqref{eq:weightcomp}. Moreover
 $\sin\theta_j\ge2\min(j,N-j)/N$, so
@@ -682,11 +686,11 @@ this gives, for $t=N\theta/\pi$,
        \le\frac{\pi+1}{1+|t-k|}.
 \end{equation}
 The first bound includes the continuous value at $t=k$.
-Partition $[0,\pi]$ into cells $E_j$ defined by $|t-j|\le1/2$,
-truncated at the endpoints. On $E_j$,
+Partition $[0,\pi]$ into cells $\Omega_j$ defined by $|t-j|\le1/2$,
+truncated at the endpoints. On $\Omega_j$,
 \begin{equation}\label{eq:cell}
- |\ell_k(\cos\theta)|\le\frac{D_0}{1+|j-k|},\quad D_0=2(\pi+1),
- \qquad \int_{E_j}\sin\theta\dd\theta\le\frac{\pi^2m_j}{N^2}.
+ |\ell_k(\cos\theta)|\le\frac{C_{\mathrm c}}{1+|j-k|},\quad C_{\mathrm c}=2(\pi+1),
+ \qquad \int_{\Omega_j}\sin\theta\dd\theta\le\frac{\pi^2m_j}{N^2}.
 \end{equation}
 For the integral, use cell length at most $\pi/N$ and
 $\sin\theta\le\pi m_j/N$.
@@ -705,17 +709,17 @@ The weighted Schur inequality therefore gives
 \begin{equation}\label{eq:schur-discrete}
  \norm B_2^2\le h_N\bigl(h_N+2H_{\lfloor N/2\rfloor+1}\bigr).
 \end{equation}
-For completeness, if the weighted row and column bounds are $R,S$,
+For completeness, if the weighted row and column bounds are $\Gamma_{\mathrm r},\Gamma_{\mathrm c}$,
 then Cauchy--Schwarz gives
 $|\sum_kB_{jk}z_k|^2\le(\sum_kB_{jk}u_k)
-\sum_kB_{jk}|z_k|^2/u_k$; summing in $j$ gives $RS\sum_k|z_k|^2$.
+\sum_kB_{jk}|z_k|^2/u_k$; summing in $j$ gives $\Gamma_{\mathrm r}\Gamma_{\mathrm c}\sum_k|z_k|^2$.
 This proves the stated version without an interpolation theorem.
 
 Set $v_k=p(x_k)$. Cardinal interpolation, \eqref{eq:cell}, and
 \eqref{eq:schur-discrete} give
 \begin{align*}
  \int p^2
- &\le\frac{\pi^2D_0^2}{N^2}
+ &\le\frac{\pi^2C_{\mathrm c}^2}{N^2}
        \sum_jm_j\left(\sum_kA_{jk}|v_k|\right)^2\\
  &\le K_N\sum_k\frac{m_k}{N^2}|v_k|^2
  \le K_NQ_N(p^2).
@@ -780,40 +784,40 @@ Every term has degree at most $N-1$ and parity $N-1$.
 The endpoint values $U_r(\pm1)=(\pm1)^r(r+1)$ show that each
 bracket vanishes at both endpoints. Define
 \[
- B(\theta)=\sum_{m=1}^{M_0}\frac{\sin(2m\theta)}m,\quad
- A(\theta)=\sum_{m=1}^{M_0}\frac{\cos(2m\theta)}m,\quad
- C(\theta)=A(\theta)-H_{M_0}+\frac{2M_0}{N}.
+ \mathcal B(\theta)=\sum_{m=1}^{M_0}\frac{\sin(2m\theta)}m,\quad
+ \mathcal A(\theta)=\sum_{m=1}^{M_0}\frac{\cos(2m\theta)}m,\quad
+ \mathcal C(\theta)=\mathcal A(\theta)-H_{M_0}+\frac{2M_0}{N}.
 \]
 The sine subtraction formula gives the exact identity
 \begin{equation}\label{eq:witness-identity}
  p_N(\cos\theta)=
- \frac{\sin(N\theta)C(\theta)-\cos(N\theta)B(\theta)}{\sin\theta}.
+ \frac{\sin(N\theta)\mathcal C(\theta)-\cos(N\theta)\mathcal B(\theta)}{\sin\theta}.
 \end{equation}
 
 We record elementary bounds on these finite harmonic sums.
-For $0<\theta\le\pi/2$ let $K=\lfloor1/\sin\theta\rfloor$.
+For $0<\theta\le\pi/2$ let $\nu_\theta=\lfloor1/\sin\theta\rfloor$.
 A geometric sum bounds
 $|\sum_{m=a}^b e^{2im\theta}|\le1/\sin\theta$.
-Abel summation bounds a harmonic tail from $K+1$ to any $M_0>K$
-by $1/((K+1)\sin\theta)\le1$.
+Abel summation bounds a harmonic tail from $\nu_\theta+1$ to any $M_0>\nu_\theta$
+by $1/((\nu_\theta+1)\sin\theta)\le1$.
 The initial segment satisfies
-$|\sum_{m\le K}\sin(2m\theta)/m|\le2K\theta\le\pi$
-and $|\sum_{m\le K}\cos(2m\theta)/m|\le H_K
-\le1+\log(1/\sin\theta)$; truncate it if $M_0\le K$.
+$|\sum_{m\le\nu_\theta}\sin(2m\theta)/m|\le2\nu_\theta\theta\le\pi$
+and $|\sum_{m\le\nu_\theta}\cos(2m\theta)/m|\le H_{\nu_\theta}
+\le1+\log(1/\sin\theta)$; truncate it if $M_0\le\nu_\theta$.
 Reflection treats the other half of the interval. Thus
 \begin{equation}\label{eq:harmonic-bounds}
- |B(\theta)|\le\pi+1<5,
- \quad A(\theta)\le2+\log\frac{\pi}{2\theta}
+ |\mathcal B(\theta)|\le\pi+1<5,
+ \quad \mathcal A(\theta)\le2+\log\frac{\pi}{2\theta}
  \quad(0<\theta\le\pi/2).
 \end{equation}
 Since $H_{M_0}\ge\log(M_0+1)$, $M_0+1\ge N/2$, and $2M_0/N\le1$,
 \begin{equation}\label{eq:Cbound}
- C(\theta)\le3+\log\pi-\log(N\theta)
+ \mathcal C(\theta)\le3+\log\pi-\log(N\theta)
               \le5-\log(N\theta).
 \end{equation}
 
 At interior nodes \eqref{eq:witness-identity} becomes
-$p_N(x_k)=-(-1)^kB(\theta_k)/\sin\theta_k$.
+$p_N(x_k)=-(-1)^k\mathcal B(\theta_k)/\sin\theta_k$.
 The endpoints are zero. Lemma~\ref{lem:weight-comparison} and
 $\sin\theta_k\ge2\min(k,N-k)/N$ imply
 \begin{equation}\label{eq:witness-discrete}
@@ -822,24 +826,24 @@ $\sin\theta_k\ge2\min(k,N-k)/N$ imply
 \end{equation}
 
 Write $L=\log N$ and first suppose $L\ge128$.
-On $E=[N^{-1/2},1/4]$, \eqref{eq:Cbound} gives
-$C\le5-L/2\le-L/4$. The elementary inequality
+On $\Xi=[N^{-1/2},1/4]$, \eqref{eq:Cbound} gives
+$\mathcal C\le5-L/2\le-L/4$. The elementary inequality
 $(a-b)^2\ge a^2/2-b^2$ applied in \eqref{eq:witness-identity} yields
 \[
- \int_{-1}^1p_N^2\ge\frac{L^2}{32}I-25J,\quad
- I=\int_E\frac{\sin^2(N\theta)}{\sin\theta}\dd\theta,\quad
- J=\int_E\frac1{\sin\theta}\dd\theta.
+ \int_{-1}^1p_N^2\ge\frac{L^2}{32}X_1-25X_2,\quad
+ X_1=\int_\Xi\frac{\sin^2(N\theta)}{\sin\theta}\dd\theta,\quad
+ X_2=\int_\Xi\frac1{\sin\theta}\dd\theta.
 \]
 Using $\sin\theta\le\theta$,
 \[
- I\ge\tfrac12\log(\sqrt N/4)
-       -\tfrac12\left|\int_E\frac{\cos(2N\theta)}\theta\dd\theta\right|.
+ X_1\ge\tfrac12\log(\sqrt N/4)
+       -\tfrac12\left|\int_\Xi\frac{\cos(2N\theta)}\theta\dd\theta\right|.
 \]
 One integration by parts bounds the last absolute integral by $N^{-1/2}$:
 the endpoint terms and the integral of $\theta^{-2}$ sum to
 $1/(N\cdot N^{-1/2})$. Hence
-$I\ge L/4-\log2-1/(2\sqrt N)\ge L/8$.
-Since $\sin\theta\ge\theta/2$ on $E$, $J\le2\log(\sqrt N/4)\le L$.
+$X_1\ge L/4-\log2-1/(2\sqrt N)\ge L/8$.
+Since $\sin\theta\ge\theta/2$ on $\Xi$, $X_2\le2\log(\sqrt N/4)\le L$.
 It follows that
 \begin{equation}\label{eq:witness-continuous}
  \int p_N^2\ge\frac{L^3}{256}-25L\ge\frac{L^3}{512},
@@ -865,7 +869,9 @@ Theorems~\ref{thm:cardinal} and~\ref{thm:harmonic} fix the order
 $(\log N)^{-2}$ but leave the constant open by a factor of order $10^6$.
 The exact constant comes from a one-dimensional model. Near the endpoint
 $x=1$, write $\theta=\pi t/N$, so that the node $x_k$ corresponds to
-$t=k$. For nodal data $u_k=(-1)^ka_k$ supported at $1\le k\ll N$, the
+$t=k$. For nodal data $u_k$ supported at $1\le k\ll N$, with $a_k=(-1)^ku_k$
+(in this section and Appendix~\ref{app:sharp}, $a_k$ denotes a nodal amplitude,
+not a Chebyshev coefficient), the
 interpolant behaves like $(2N/\pi)\,\sin(\pi t)\,t^{-1}$ times the
 partial sum $\sum_{k<t}k^{-1}\cdot(k a_k/N)$, up to a signed error
 that is bounded in the relevant norms (Lemma~\ref{lem:signed-remainder}).
@@ -1031,7 +1037,7 @@ For $g\in L^2(0,1)$ put
 and, with $\operatorname{Si}(x)=\int_0^x\sin v\,v^{-1}\dd v$,
 \[
  \omega_j=2\bigl[(-1)^j+\pi j\operatorname{Si}(\pi j)\bigr]\quad(j\ge1),\qquad
- \mathsf D(g)=|\widehat g(0)|^2+\sum_{j\ge1}\omega_j|\widehat g(\pi j)|^2 .
+ \mathsf Q(g)=|\widehat g(0)|^2+\sum_{j\ge1}\omega_j|\widehat g(\pi j)|^2 .
 \]
 Let $\mathcal V_0$ be the span of the functions
 $\zeta_j(s)=2[\cos(\pi js)-(-1)^j]$, $j\ge1$. Their cosine transforms are
@@ -1043,14 +1049,14 @@ with removable singularities filled in; they satisfy
 $\chi_j(0)=-2(-1)^j$, $\chi_j(\pi k)=\delta_{jk}$ for $k\ge1$, and
 $\chi_j(\xi)=O_j(\xi^{-3})$. Thus for $g=\sum_{j\le J}u_j\zeta_j$,
 \[
- \mathsf D(g)=4\Bigl(\sum_{j=1}^J(-1)^ju_j\Bigr)^2+\sum_{j=1}^J\omega_ju_j^2,
+ \mathsf Q(g)=4\Bigl(\sum_{j=1}^J(-1)^ju_j\Bigr)^2+\sum_{j=1}^J\omega_ju_j^2,
  \qquad
  \mathsf M(g)=\int_0^\infty\xi\Bigl(\sum_{j=1}^Ju_j\chi_j(\xi)\Bigr)^2\dd\xi .
 \]
 Define
 \begin{equation}\label{eq:Lambda-edge}
  \Lambda_{\mathrm{edge}}
- =\sup_{0\ne g\in\mathcal V_0}\frac{\mathsf D(g)}{\mathsf M(g)} .
+ =\sup_{0\ne g\in\mathcal V_0}\frac{\mathsf Q(g)}{\mathsf M(g)} .
 \end{equation}
 The numerator is the limit of the rescaled CC energy and the denominator
 that of the rescaled continuous mass of the degree-$(N-1)$ polynomials
@@ -1068,7 +1074,7 @@ For every $J\ge1$ and $u\in\R^J$, with $g=\sum_ju_j\zeta_j$ and
 $p=\sum_ju_jp_{N,j}$,
 \[
  N^2\int_{-1}^1p^2\longrightarrow\mathsf M(g),\qquad
- N^2Q_N(p^2)\longrightarrow\mathsf D(g)\qquad(N\to\infty).
+ N^2Q_N(p^2)\longrightarrow\mathsf Q(g)\qquad(N\to\infty).
 \]
 The form $\mathsf M$ is positive definite on $\mathcal V_0$,
 $1\le\Lambda_{\mathrm{edge}}\le5/3$, and
@@ -1092,7 +1098,7 @@ reflected matrix $Y$ is positive semidefinite and only lower semicontinuous
 under weak convergence. Any normalized coefficient sequence produces two
 weak endpoint profiles, one for each endpoint, and these profiles are
 compared with the model through the continuum identity
-$\mathsf D=\mathsf M+\tfrac12(\mathsf Z-\mathsf Y)$ on the closure of
+$\mathsf Q=\mathsf M+\tfrac12(\mathsf Z-\mathsf Y)$ on the closure of
 $\mathcal V_0$.
 
 % Source: PD-T547; topics/padua-mz-sharp-constants-20261106/theory/P4-certified-lower.md
@@ -1102,7 +1108,7 @@ $\Lambda_{\mathrm{edge}}\ge1.0044369$.
 
 The proof (Appendix~\ref{app:certificate}) is computer-assisted: it evaluates,
 in outward rational interval arithmetic, the quotient
-$\mathsf D(g)/\mathsf M(g)$ for one explicit $g\in\mathcal V_0$ with $512$
+$\mathsf Q(g)/\mathsf M(g)$ for one explicit $g\in\mathcal V_0$ with $512$
 coefficients, using closed forms of $\mathsf M$ on $\mathcal V_0$. It is a
 lower bound only. Floating-point Galerkin computations with the same basis,
 and the eigenvalues in Table~\ref{tab:cc}, suggest that
@@ -1228,11 +1234,11 @@ Hence, using a decreasing-sum integral comparison,
 \begin{align}
  \sup_t\sum_j|H(t,j)|
  &\le\frac{C_0}{\epsilon}\sum_{k\ge0}(1+k\pi)^{-3/2}
- \le\frac{C_0}{\epsilon}(1+2/\pi)=:R,\label{eq:rowH}\\
+ \le\frac{C_0}{\epsilon}(1+2/\pi)=:\Gamma_{\mathrm r},\label{eq:rowH}\\
  \sup_j\int_0^{2\pi}|H(t,j)|\dd t
  &\le\frac{C_0}{2\epsilon}\frac2N
                  \int_0^\infty(1+u)^{-3/2}\dd u
- =\frac{2C_0}{\epsilon N}=:S.\label{eq:colH}
+ =\frac{2C_0}{\epsilon N}=:\Gamma_{\mathrm c}.\label{eq:colH}
 \end{align}
 At an antipode the node count can only decrease. Cauchy--Schwarz gives
 $|\sum_jH(t,j)z_j|^2\le(\sum_j|H(t,j)|)
@@ -1259,23 +1265,23 @@ Substitution in \eqref{eq:circlebound} proves \eqref{eq:fixedlower}.
 \end{proof}
 
 \begin{corollary}[Explicit strong constants]\label{cor:strong}% IDs: PD-T024
-For $0\le\theta<1$, set
+For $0\le\vartheta<1$, set
 \[
- A_\theta=\frac{(1-\theta)^2}{C_*},\qquad
- \rho_\theta=\max\{2\theta-1,0\}^2,\qquad
- \eta_\theta=\max\{1-A_\theta,\rho_\theta\}<1.
+ A_\vartheta=\frac{(1-\vartheta)^2}{C_*},\qquad
+ \rho_\vartheta=\max\{2\vartheta-1,0\}^2,\qquad
+ \eta_\vartheta=\max\{1-A_\vartheta,\rho_\vartheta\}<1.
 \]
-For every integer $0\le n\le\theta N$, the spectrum of $G_{N,n}$ lies
-in $[A_\theta,1+\rho_\theta]$; consequently
+For every integer $0\le n\le\vartheta N$, the spectrum of $G_{N,n}$ lies
+in $[A_\vartheta,1+\rho_\vartheta]$; consequently
 \[
- (1-\eta_\theta)\int p^2\le Q_N(p^2)
-                    \le(1+\eta_\theta)\int p^2\qquad(p\in\Pn_n).
+ (1-\eta_\vartheta)\int p^2\le Q_N(p^2)
+                    \le(1+\eta_\vartheta)\int p^2\qquad(p\in\Pn_n).
 \]
 \end{corollary}
 \begin{proof}
 The two preceding theorems give the spectral interval by monotonicity in
-$n/N$. Since $C_*>1$, $0<A_\theta<1$ and $0\le\rho_\theta<1$.
-The definition of $\eta_\theta$ gives both inequalities.
+$n/N$. Since $C_*>1$, $0<A_\vartheta<1$ and $0\le\rho_\vartheta<1$.
+The definition of $\eta_\vartheta$ gives both inequalities.
 \end{proof}
 
 The filtered estimate degenerates like $N^{-2}$ at $n=N-1$ and does not
@@ -1289,7 +1295,7 @@ An--Wu's inspected arXiv version assumes a relative squared-norm MZ error
 $\eta<1$ in its main theorem. Its Section~4 assumes $\eta=3/4$ for the
 examples, and Corollary~4.1 retains the theorem's conditions for an
 $m$-point CC rule with $n+2\le m\le2n+1$, obtaining an error bound
-$3\sqrt V E_{m-1-n}(f)$ \cite{LIT-046}.
+$3\sqrt{|\mu|} E_{m-1-n}(f)$ \cite{LIT-046}.
 The following finite calculation specifies an excluded case for that
 assumption; it does not refute the conditional implication.
 
@@ -1330,18 +1336,18 @@ formulation: it assumes $\eta=3/4$ for $m$-point CC with $n+2\le m\le2n+1$
 was found in a documented search; this is not proof of absence.
 
 \begin{proposition}[Upper-Gram hyperinterpolation estimate]\label{prop:hyper}% IDs: PD-T025
-Let $\mu$ be a finite positive measure of mass $V>0$ on a compact domain.
-Let $Q$ have positive weights of total mass $V$, and let
+Let $\mu$ be a finite positive measure of mass $|\mu|>0$ on a compact domain.
+Let $Q$ have positive weights of total mass $|\mu|$, and let
 $P_1,\ldots,P_d$ be an $L^2(\mu)$-orthonormal basis of $\Pn_n$.
-Assume $Q(p^2)\le B\norm p_2^2$ on $\Pn_n$, and define
+Assume $Q(p^2)\le\bar\lambda\norm p_2^2$ on $\Pn_n$, and define
 \[
  \mathcal L_nf=\sum_{i=1}^d Q(fP_i)P_i.
 \]
-Then $\norm{\mathcal L_nf}_2\le\sqrt{VB}\norm f_\infty$.
+Then $\norm{\mathcal L_nf}_2\le\sqrt{|\mu|\bar\lambda}\norm f_\infty$.
 If $0\le k\le n$ and $Q$ is exact on all products of a member of
 $\Pn_k$ with a member of $\Pn_n$, then
 \begin{equation}\label{eq:hypererror}
- \norm{f-\mathcal L_nf}_2\le\sqrt V(1+\sqrt B)E_k(f),\qquad
+ \norm{f-\mathcal L_nf}_2\le\sqrt{|\mu|}(1+\sqrt{\bar\lambda})E_k(f),\qquad
  E_k(f)=\inf_{r\in\Pn_k}\norm{f-r}_\infty.
 \end{equation}
 \end{proposition}
@@ -1350,7 +1356,7 @@ For $c_i=Q(fP_i)$ and any Euclidean unit vector $a$, put
 $p_a=\sum_i a_iP_i$, so $\norm{p_a}_2=1$.
 Weighted Cauchy--Schwarz gives
 $|a\cdot c|=|Q(fp_a)|\le Q(f^2)^{1/2}Q(p_a^2)^{1/2}
-\le\sqrt{VB}\norm f_\infty$.
+\le\sqrt{|\mu|\bar\lambda}\norm f_\infty$.
 Euclidean duality and orthonormality identify
 $\norm{\mathcal L_nf}_2=\norm c_2$, proving the first bound.
 For $r\in\Pn_k$, product exactness gives
@@ -1359,15 +1365,15 @@ $\mathcal L_nr=r$. Hence
 \[
  \norm{f-\mathcal L_nf}_2
  \le\norm{f-r}_2+\norm{\mathcal L_n(f-r)}_2
- \le\sqrt V(1+\sqrt B)\norm{f-r}_\infty.
+ \le\sqrt{|\mu|}(1+\sqrt{\bar\lambda})\norm{f-r}_\infty.
 \]
 Taking the infimum proves \eqref{eq:hypererror}.
 \end{proof}
 
-For CC, $V=2$, $0\le n<N$, and one may take
+For CC, $|\mu|=2$, $0\le n<N$, and one may take
 % Source: PD-T025 CC application; PD-T?mz-paper-claude-01 (c)
 \begin{equation}\label{eq:Bcc}
- B_{N,n}=\min\Bigl\{1+\rho_{N,n},\,\frac53\Bigr\},\qquad
+ \bar\lambda_{N,n}=\min\Bigl\{1+\rho_{N,n},\,\frac53\Bigr\},\qquad
  \rho_{N,n}=\max\{2n/N-1,0\}^2,
 \end{equation}
 by Theorems~\ref{thm:ratio-upper} and~\ref{thm:five-thirds}; the bound $5/3$
@@ -1375,15 +1381,15 @@ is the smaller one exactly when $n/N>(1+\sqrt{2/3})/2=0.9082\ldots$.
 Thus for every $0\le k\le\min(n,d_N-n)$,
 \begin{equation}\label{eq:CCerror}
  \norm{f-\mathcal L_nf}_{L^2(-1,1)}
- \le\sqrt2(1+\sqrt{B_{N,n}})E_k(f)
+ \le\sqrt2(1+\sqrt{\bar\lambda_{N,n}})E_k(f)
  \le\Bigl(1+\sqrt{5/3}\Bigr)\sqrt2\,E_k(f),
 \end{equation}
 and $1+\sqrt{5/3}<2.2910$.
 Using only exactness through $N$ permits $k\le\min(n,N-n)$;
 even-$N$ parity can improve that by one when $k\le n$ allows it.
 For the $513$-point, degree-$511$ example, $k=1$ already gives the
-uniform factor $(1+\sqrt{5/3})\sqrt V$ in place of the assumed
-$3\sqrt V$ factor; parity also permits $k=2$ here.
+uniform factor $(1+\sqrt{5/3})\sqrt{|\mu|}$ in place of the assumed
+$3\sqrt{|\mu|}$ factor; parity also permits $k=2$ here.
 This estimate concerns the defined quadrature hyperinterpolant. An
 inverse-Gram least-squares operator is a different construction; growth
 of $\lambda_-^{-1/2}$ does not describe the norm of $\mathcal L_n$.
@@ -1557,13 +1563,13 @@ most $40$, which is the lemma. \qed
 
 Put $H_0=0$ and let $f=g_m$ on $(H_{m-1},H_m]$, $1\le m\le J$, so that
 $\norm f_{L^2(0,H_J)}^2=\norm g_h^2$. Its primitive
-$F(x)=\int_0^xf$ satisfies $F(H_m)=S_m:=\sum_{k\le m}g_k/k$. Let $Z$
+$F(x)=\int_0^xf$ satisfies $F(H_m)=S_m:=\sum_{k\le m}g_k/k$. Let $\bar S$
 equal $S_m$ on $(H_{m-1},H_m]$. On that interval
-$Z-F=g_m(1/m-(x-H_{m-1}))$, so $\int|Z-F|^2=|g_m|^2/(3m^3)$ and
-$\norm{Z-F}\le\norm g_h$. Lemma~\ref{lem:volterra}, rescaled to an
+$\bar S-F=g_m(1/m-(x-H_{m-1}))$, so $\int|\bar S-F|^2=|g_m|^2/(3m^3)$ and
+$\norm{\bar S-F}\le\norm g_h$. Lemma~\ref{lem:volterra}, rescaled to an
 interval of length $H_J$, gives $\norm F\le(2H_J/\pi)\norm g_h$. Hence
 \begin{equation}\label{eq:Sm-sum}
- \sum_{m=1}^J\frac{|S_m|^2}m=\norm Z^2\le\alpha_J^2\norm g_h^2 .
+ \sum_{m=1}^J\frac{|S_m|^2}m=\norm{\bar S}^2\le\alpha_J^2\norm g_h^2 .
 \end{equation}
 For integers $m\ge1$, since $\int_m^{m+1}(\sin^2(\pi t)-\tfrac12)\dd t=0$,
 \[
@@ -1593,14 +1599,14 @@ $w_k\ge\sin\theta_k/N$ and $|w_k-(\pi/N)\sin\theta_k|\le3/N^2$. Moreover
 $\sum_{k=0}^Nw_k^{-1}\le2N^2(L+1)$.
 \item[(b)] For $0\le t\le N/2$ and $\theta=\pi t/N$,
 \[
- (\mathcal I_Nu)(\cos\theta)=Y_u(t)+r_u(\theta),\qquad
- Y_u(t)=\frac{2t\sin(\pi t)}\pi\sum_{k=0}^N\frac{a_k}{c_k(t^2-k^2)},
+ (\mathcal I_Nu)(\cos\theta)=\Upsilon_u(t)+r_u(\theta),\qquad
+ \Upsilon_u(t)=\frac{2t\sin(\pi t)}\pi\sum_{k=0}^N\frac{a_k}{c_k(t^2-k^2)},
 \]
 with poles removed by continuity, and
 $|r_u(\theta)|\le2\sqrt{2(L+1)}\,\norm u_w$.
-\item[(c)] Let $1\le\ell<N/4$ and let $u$ vanish outside
-$\{1,\dots,\ell\}\cup\{N-\ell,\dots,N-1\}$. Put $g_k=ka_k/N$ and
-$g^\flat_k=ka_{N-k}/N$ for $1\le k\le\ell$ ($g,g^\flat=0$ otherwise), and
+\item[(c)] Let $1\le k^\ast<N/4$ and let $u$ vanish outside
+$\{1,\dots,k^\ast\}\cup\{N-k^\ast,\dots,N-1\}$. Put $g_k=ka_k/N$ and
+$g^\flat_k=ka_{N-k}/N$ for $1\le k\le k^\ast$ ($g,g^\flat=0$ otherwise), and
 let $S$, $S^\flat$ be their partial sums $\sum_{k<t}g_k/k$. Define
 $P_u$ on $[-1,1]$ by
 \[
@@ -1633,32 +1639,32 @@ With $e(z)=\cot(z/2)-2/z$, extended by $e(0)=0$,
  =\frac{2\theta}{\theta^2-\phi^2}+\frac{e(\theta-\phi)+e(\theta+\phi)}2 .
 \]
 For $\theta=\pi t/N$ and $\phi=\theta_k$ the first term contributes exactly
-$Y_u(t)$. The function $e$ is odd and nonincreasing on $(0,2\pi)$, since
+$\Upsilon_u(t)$. The function $e$ is odd and nonincreasing on $(0,2\pi)$, since
 $e'(z)=2/z^2-\tfrac12\csc^2(z/2)\le0$; hence $|e|\le1+4/(3\pi)<2$ on
 $[-\pi,3\pi/2]$, which contains $\theta\pm\theta_k$ for $\theta\le\pi/2$.
 Thus $|r_u|\le(2/N)\sum_k|u_k|/c_k\le(2/N)(\sum_kw_k^{-1})^{1/2}\norm u_w$,
 and (a) gives the bound.
 
-(c) Since $k\le\ell<N/4$, (a) gives $w_k\ge k/N^2$ and
+(c) Since $k\le k^\ast<N/4$, (a) gives $w_k\ge k/N^2$ and
 $w_{N-k}\ge k/N^2$, so
-$\norm g_h^2+\norm{g^\flat}_h^2=\sum_{k\le\ell}k(|a_k|^2+|a_{N-k}|^2)/N^2
+$\norm g_h^2+\norm{g^\flat}_h^2=\sum_{k\le k^\ast}k(|a_k|^2+|a_{N-k}|^2)/N^2
 \le\norm u_w^2$. Consider $x\in[0,1]$, i.e.\ $0\le t\le N/2$, and split
 $u=u^{\mathrm l}+u^{\mathrm r}$ into its parts near $x=1$ and near $x=-1$.
 For the near part, $a_k=Ng_k/k$ and
 $t/(t^2-k^2)=t^{-1}\,t^2/(t^2-k^2)$, so by \eqref{eq:Phi-split}
 \[
- Y_{u^{\mathrm l}}(t)=\frac{2N\sin(\pi t)}{\pi t}\,S(t)
+ \Upsilon_{u^{\mathrm l}}(t)=\frac{2N\sin(\pi t)}{\pi t}\,S(t)
  +\frac{2N}{\pi t}(\mathcal Eg)(t) .
 \]
 On $[0,1]$ the measure is $\dd x=\sin\theta\dd\theta\le\pi^2t\dd t/N^2$.
 Hence, by Lemma~\ref{lem:signed-remainder}, the second term has
 $L^2(0,1)$ norm at most
 $(4\int_0^\infty|\mathcal Eg|^2\dd t/t)^{1/2}\le80\norm g_h$.
-For the far part, $k\ge N-\ell\ge3N/4$ and $t\le N/2$ give
+For the far part, $k\ge N-k^\ast\ge3N/4$ and $t\le N/2$ give
 $k^2-t^2\ge5N^2/16$, so
 $|2t/(\pi(t^2-k^2))|\le3t/N^2$ and, by (a),
 \[
- |Y_{u^{\mathrm r}}(t)|\le\frac{3t}{N^2}\sum_k|u^{\mathrm r}_k|
+ |\Upsilon_{u^{\mathrm r}}(t)|\le\frac{3t}{N^2}\sum_k|u^{\mathrm r}_k|
  \le\frac{3t}N\sqrt{2(L+1)}\,\norm{u^{\mathrm r}}_w .
 \]
 Its squared $L^2(0,1)$ norm is at most
@@ -1675,9 +1681,9 @@ at most $(2\cdot8(L+1))^{1/2}\norm u_w=4\sqrt{L+1}\norm u_w$.
 
 \subsection{\texorpdfstring{Proof of Proposition~\ref{prop:sharp-trial}}{Proof of the trial proposition}}
 
-Fix $0<a<b<1$ with $\operatorname{supp}f\subset(a,b)$. The nonzero
-values $u_k$, $k<N/2$, have $N^a<k<N^b$; for large $N$ we have
-$N^b<\ell:=\lfloor N/L\rfloor<N/4$, so Lemma~\ref{lem:endpoint-rep}(c)
+Fix $0<\sigma_-<\sigma_+<1$ with $\operatorname{supp}f\subset(\sigma_-,\sigma_+)$. The nonzero
+values $u_k$, $k<N/2$, have $N^{\sigma_-}<k<N^{\sigma_+}$; for large $N$ we have
+$N^{\sigma_+}<k^\ast:=\lfloor N/L\rfloor<N/4$, so Lemma~\ref{lem:endpoint-rep}(c)
 applies. Here $a_k=(-1)^ku_k=(N/k)f(\log k/L)$ and
 $a_{N-k}=(-1)^{N-k}(-1)^{N-1}u_k=-a_k$, so $g_k=f(\log k/L)$ and
 $g^\flat_k=-g_k$. The top Chebyshev
@@ -1685,7 +1691,7 @@ coefficient of $\mathcal I_Nu$ is $N^{-1}\sum_ka_k/c_k$, which vanishes
 because $a_{N-k}=-a_k$; hence $p_N=\mathcal I_Nu\in\Pn_{N-1}$.
 
 \emph{Discrete energy.} By Lemma~\ref{lem:endpoint-rep}(a) and
-$\sin z=z(1+O(z^2))$, $w_k=(\pi^2k/N^2)(1+O(N^{2b-2}+N^{-a}))$ uniformly on
+$\sin z=z(1+O(z^2))$, $w_k=(\pi^2k/N^2)(1+O(N^{2\sigma_+-2}+N^{-\sigma_-}))$ uniformly on
 the support. Hence
 \[
  Q_N(p_N^2)=2\pi^2\sum_{k}\frac{f(\log k/L)^2}k\,(1+o(1))
@@ -1693,17 +1699,17 @@ the support. Hence
 \]
 where the last step compares the sum with
 $\int_1^\infty f(\log u/L)^2u^{-1}\dd u=L\norm f^2$; the function
-$u\mapsto f(\log u/L)^2/u$ vanishes for $u<N^a$ and has total variation
-$O_f(N^{-a})$ on $[N^a,\infty)$.
+$u\mapsto f(\log u/L)^2/u$ vanishes for $u<N^{\sigma_-}$ and has total variation
+$O_f(N^{-\sigma_-})$ on $[N^{\sigma_-},\infty)$.
 
 \emph{Continuous mass.} By the same comparison,
-$|S(t)-LF(\log t/L)|\le C_fN^{-a}$ for all $t$, where $F=Vf$ is extended by
-$F(b)$ beyond $b$. Fix $0<\delta<1/2$ and let
+$|S(t)-LF(\log t/L)|\le C_fN^{-\sigma_-}$ for all $t$, where $F=Vf$ is extended by
+$F(\sigma_+)$ beyond $\sigma_+$. Fix $0<\delta<1/2$ and let
 $I_\delta=[N^\delta,N^{1-\delta}]$. There $\theta\le\pi N^{-\delta}$ and
 $\sin\theta\dd\theta\ge(1-\pi^2N^{-2\delta}/6)\pi^2t\dd t/N^2$, so
 \begin{align*}
  \int_0^1|P_u|^2\dd x&\ge(1-o(1))\,4\int_{I_\delta}\sin^2(\pi t)|S(t)|^2\frac{\dd t}t\\
- &\ge(1-o(1))\,4L^2\int_{I_\delta}\sin^2(\pi t)F\Bigl(\frac{\log t}L\Bigr)^2\frac{\dd t}t-O_f(L^2N^{-a}).
+ &\ge(1-o(1))\,4L^2\int_{I_\delta}\sin^2(\pi t)F\Bigl(\frac{\log t}L\Bigr)^2\frac{\dd t}t-O_f(L^2N^{-\sigma_-}).
 \end{align*}
 Write $\sin^2(\pi t)=\tfrac12-\tfrac12\cos(2\pi t)$. The constant part gives
 $\tfrac12L\int_\delta^{1-\delta}F^2$ after $x=\log t/L$. For the cosine part
@@ -1730,15 +1736,15 @@ along both parities. \qed
 
 \subsection{\texorpdfstring{Proof of \eqref{eq:sharp-finite}}{Proof of the finite reverse bound}}
 
-Let $L\ge16$, $k_0=\lceil L^2\rceil$ and $\ell=\lfloor N/L\rfloor$; then
-$1<k_0\le\ell<N/4$ (e.g.\ $e^L/L^3$ increases for $L\ge3$ and
+Let $L\ge16$, $k_0=\lceil L^2\rceil$ and $k^\ast=\lfloor N/L\rfloor$; then
+$1<k_0\le k^\ast<N/4$ (e.g.\ $e^L/L^3$ increases for $L\ge3$ and
 $e^{16}>4\cdot16^3$). Partition the nodes into the \emph{good layers}
-$k_0\le d_k\le\ell$, the \emph{microscopic layers} $d_k<k_0$ (including
-$k=0,N$), and the \emph{bulk} $d_k>\ell$, and split $u$ accordingly. Since
+$k_0\le d_k\le k^\ast$, the \emph{microscopic layers} $d_k<k_0$ (including
+$k=0,N$), and the \emph{bulk} $d_k>k^\ast$, and split $u$ accordingly. Since
 interpolation is linear and $\norm{u^{\mathrm{group}}}_w\le\norm u_w$, it
 suffices to bound each group.
 
-\emph{Good layers.} For $k_0\le k\le\ell$, $z=\pi k/N\le\pi/L$, so
+\emph{Good layers.} For $k_0\le k\le k^\ast$, $z=\pi k/N\le\pi/L$, so
 Lemma~\ref{lem:endpoint-rep}(a) gives
 $N^2w_k/k\ge\pi^2\sin z/z-3/k\ge\pi^2(1-\pi^2/(6L^2))-3/L^2\ge\pi^2(1-2/L^2)$,
 using $9<\pi^2<10$; the reflected layer is the same. Hence
@@ -1759,7 +1765,7 @@ Lemma~\ref{lem:endpoint-rep}(c) and Cauchy--Schwarz give
 $|S(t)|^2\le H_{k_0}\norm g_h^2$, with $S=0$ for $t<1$. Since
 $\int_1^{N/2}\dd t/t\le L$, $\norm{P_u}\le2\sqrt{LH_{k_0}}\norm u_w$, and the
 interpolant has norm at most $(2\sqrt{LH_{k_0}}+80+6\sqrt{L+1})\norm u_w$.
-For the endpoint $k=0$, $c_0=2$ and the near term of $Y_u$ is
+For the endpoint $k=0$, $c_0=2$ and the near term of $\Upsilon_u$ is
 $a_0\sin(\pi t)/(\pi t)$; its squared $L^2(0,1)$ norm is at most
 $|a_0|^2N^{-2}\int_0^{N/2}\sin^2(\pi t)\dd t/t\le(L+\pi^2/2)|u_0|^2N^{-2}
 \le(L+5)w_0|u_0|^2$ (use $|\sin\pi t|\le\pi t$ on $(0,1)$ and $w_0\ge N^{-2}$).
@@ -1770,7 +1776,7 @@ $(\sqrt{L+5}+6\sqrt{L+1})\norm u_w\le10\sqrt{L+5}\,\norm u_w$. Altogether the
 microscopic layers contribute at most
 $(2\sqrt{LH_{k_0}}+80+20\sqrt{L+5})\norm u_w$.
 
-\emph{Bulk.} For $u$ supported in $\ell<k<N-\ell$, discrete orthogonality of
+\emph{Bulk.} For $u$ supported in $k^\ast<k<N-k^\ast$, discrete orthogonality of
 $\cos(l\theta_k)$ under the trapezoidal rule with endpoint half weights gives
 $\int_0^\pi|(\mathcal I_Nu)(\cos\theta)|^2\dd\theta=(\pi/N)\sum_k|u_k|^2/c_k-
 (\pi/2)|b_N|^2$, where $b_N$ is the top Chebyshev coefficient. As
@@ -1789,7 +1795,7 @@ Applied to $u_k=p(x_k)$ for $p\in\Pn_N$, this is \eqref{eq:sharp-finite}. \qed
 
 Throughout, $\operatorname{sinc}_1(z)=\sin z/z$ with value one at zero
 (the unscaled sinc, distinct from the $\operatorname{sinc}$ of
-Appendix~\ref{app:sharp}), $a_j=\pi j$, and the microscopic variable is
+Appendix~\ref{app:sharp}), $\varpi_j=\pi j$, and the microscopic variable is
 $\xi=N\theta$. We use the matrices $M,R,Y,Z$ of
 Theorem~\ref{thm:five-thirds} on the indices $0,\dots,N-1$, written
 $M_N,R_N,Y_N,Z_N$ when the dependence on $N$ matters.
@@ -1812,27 +1818,27 @@ $\sin\frac{\theta+\theta_j}2\sin\frac{\theta-\theta_j}2
 \]
 At $\theta=\xi/N$ this is the exact factorization
 \begin{equation}\label{eq:pNj-factor}
- p_{N,j}(\cos(\xi/N))=\chi_j(\xi)\,\varrho_{N,j}(\xi),\qquad
- \varrho_{N,j}(\xi)=\frac{\operatorname{sinc}_1^2\bigl(\frac{a_j}{2N}\bigr)
+ p_{N,j}(\cos(\xi/N))=\chi_j(\xi)\,\varphi_{N,j}(\xi),\qquad
+ \varphi_{N,j}(\xi)=\frac{\operatorname{sinc}_1^2\bigl(\frac{\varpi_j}{2N}\bigr)
    \cos\frac\xi{2N}}
-  {\operatorname{sinc}_1\bigl(\frac{\xi+a_j}{2N}\bigr)
-   \operatorname{sinc}_1\bigl(\frac{\xi-a_j}{2N}\bigr)
+  {\operatorname{sinc}_1\bigl(\frac{\xi+\varpi_j}{2N}\bigr)
+   \operatorname{sinc}_1\bigl(\frac{\xi-\varpi_j}{2N}\bigr)
    \operatorname{sinc}_1\bigl(\frac\xi{2N}\bigr)} .
 \end{equation}
-For fixed $\xi$, $\varrho_{N,j}(\xi)\to1$. If $N\ge2j$ and
+For fixed $\xi$, $\varphi_{N,j}(\xi)\to1$. If $N\ge2j$ and
 $0\le\xi\le N\pi$, the three arguments in the denominator have modulus at
 most $3\pi/4$, $\pi/2$ and $\pi/2$, so the denominator is at least
 $(2\sqrt2/(3\pi))(2/\pi)^2$ and
-$0\le\varrho_{N,j}\le3\pi^3/(8\sqrt2)<9$.
+$0\le\varphi_{N,j}\le3\pi^3/(8\sqrt2)<9$.
 
 \emph{Continuous mass.} The substitution $x=\cos(\xi/N)$ gives
 \[
  N^2\int_{-1}^1p^2=\int_0^{N\pi}\xi\operatorname{sinc}_1(\xi/N)
- \Bigl(\sum_ju_j\chi_j(\xi)\varrho_{N,j}(\xi)\Bigr)^2\dd\xi .
+ \Bigl(\sum_ju_j\chi_j(\xi)\varphi_{N,j}(\xi)\Bigr)^2\dd\xi .
 \]
-From $\chi_j(\xi)=2\int_0^1[\cos(a_js)-(-1)^j]\cos(\xi s)\dd s$ we get
-$|\chi_j|\le4$, and from \eqref{eq:chi}, $|\chi_j(\xi)|\le3a_j^2/\xi^3$ for
-$\xi\ge2a_j$. Hence the integrand is dominated by the integrable function
+From $\chi_j(\xi)=2\int_0^1[\cos(\varpi_js)-(-1)^j]\cos(\xi s)\dd s$ we get
+$|\chi_j|\le4$, and from \eqref{eq:chi}, $|\chi_j(\xi)|\le3\varpi_j^2/\xi^3$ for
+$\xi\ge2\varpi_j$. Hence the integrand is dominated by the integrable function
 $81\,\xi(\sum_j|u_j||\chi_j|)^2$, and dominated convergence gives the
 limit $\mathsf M(g)$.
 
@@ -1840,10 +1846,10 @@ limit $\mathsf M(g)$.
 $-2(-1)^j$ at $x_0$ and zero elsewhere, so
 $N^2Q_N(p^2)=\sum_jN^2w_ju_j^2+4N^2w_0(\sum_j(-1)^ju_j)^2$. The endpoint
 weight satisfies $|N^2w_0-1|\le1/(N^2-1)$. For $j\ge1$ write
-$b=2\pi j$ and $w_j=(2/N)S_N(\theta_j)$ with the bracket of
+$b=2\pi j$ and $w_j=(2/N)W_N(\theta_j)$ with the bracket of
 Lemma~\ref{lem:identities}. For odd $N=2q+1$, \eqref{eq:telescope} gives
 \[
- NS_N(\theta_j)=1+\sum_{r=1}^q\frac{2N}{4r^2-1}\Bigl(1-\cos\frac{br}N\Bigr),
+ NW_N(\theta_j)=1+\sum_{r=1}^q\frac{2N}{4r^2-1}\Bigl(1-\cos\frac{br}N\Bigr),
 \]
 a Riemann sum for $1+\int_0^{1/2}F(x)\dd x$ with
 $F(x)=(1-\cos bx)/(2x^2)$: indeed $0\le F\le b^2/4$,
@@ -1851,12 +1857,12 @@ $|F'|\le b^3/12$, and the summands differ from $F(r/N)/N$ by at most
 $b^2/[4N(4r^2-1)]$. The even case is the same with an additional top term
 $O(1/N)$. Integration by parts gives
 $1+\int_0^{1/2}F=(-1)^j+\pi j\operatorname{Si}(\pi j)$, so $N^2w_j\to\omega_j$
-for both parities. Hence $N^2Q_N(p^2)\to\mathsf D(g)$.
+for both parities. Hence $N^2Q_N(p^2)\to\mathsf Q(g)$.
 
 \emph{Positivity and the bounds.} If $\mathsf M(g)=0$, then
 $\sum_ju_j\chi_j\equiv0$, and sampling at $\pi k$ gives $u=0$. Applying
 Theorem~\ref{thm:five-thirds} to $p\in\Pn_{N-1}$ and letting
-$N\to\infty$ gives $\mathsf D\le\frac53\mathsf M$ on $\mathcal V_0$, so
+$N\to\infty$ gives $\mathsf Q\le\frac53\mathsf M$ on $\mathcal V_0$, so
 $\Lambda_{\mathrm{edge}}\le5/3$. Since every $p$ above lies in
 $\Pn_{N-1}$, $\lambda_+(N,N-1)\ge N^2Q_N(p^2)/(N^2\int p^2)$, and letting
 $N\to\infty$ and then taking the supremum over $g$ gives
@@ -1864,14 +1870,14 @@ $\liminf\lambda_+(N,N-1)\ge\Lambda_{\mathrm{edge}}$.
 
 For $\Lambda_{\mathrm{edge}}\ge1$, take $g=\zeta_j$, whose quotient is
 $(\omega_j+4)/\mathsf M(\zeta_j)$. As $j\to\infty$,
-$\omega_j/a_j\to\pi$ by $\operatorname{Si}(x)\to\pi/2$. For the mass, put
-$\xi=a_j+v$; on $|v|\le a_j/2$,
-$\xi\chi_j(\xi)^2=4a_j^4\sin^2v/[\xi(\xi+a_j)^2v^2]$, whose ratio to
-$a_j\sin^2v/v^2$ is bounded and tends to one for fixed $v$. Outside this
-interval the mass is $o(a_j)$: on $\xi\le a_j/2$ use
-$|\chi_j(\xi)|\le C\min(1,1/\xi)$ (mass $O(\log a_j)$), and on
-$\xi\ge3a_j/2$ use $|\chi_j|\le Ca_j^2/\xi^3$ (mass $O(1)$). Dominated
-convergence gives $\mathsf M(\zeta_j)/a_j\to\int_{\R}(\sin v/v)^2\dd v=\pi$.
+$\omega_j/\varpi_j\to\pi$ by $\operatorname{Si}(x)\to\pi/2$. For the mass, put
+$\xi=\varpi_j+v$; on $|v|\le \varpi_j/2$,
+$\xi\chi_j(\xi)^2=4\varpi_j^4\sin^2v/[\xi(\xi+\varpi_j)^2v^2]$, whose ratio to
+$\varpi_j\sin^2v/v^2$ is bounded and tends to one for fixed $v$. Outside this
+interval the mass is $o(\varpi_j)$: on $\xi\le \varpi_j/2$ use
+$|\chi_j(\xi)|\le C\min(1,1/\xi)$ (mass $O(\log \varpi_j)$), and on
+$\xi\ge3\varpi_j/2$ use $|\chi_j|\le C\varpi_j^2/\xi^3$ (mass $O(1)$). Dominated
+convergence gives $\mathsf M(\zeta_j)/\varpi_j\to\int_{\R}(\sin v/v)^2\dd v=\pi$.
 Hence the quotients tend to one. \qed
 
 \subsection{The form domain and the continuum identity}
@@ -1910,11 +1916,11 @@ $\mathsf M(h)\to0$.
 \end{proof}
 
 \begin{lemma}\label{lem:continuum}
-The forms $\mathsf D$ and $\mathsf Y$ are finite and continuous on
+The forms $\mathsf Q$ and $\mathsf Y$ are finite and continuous on
 $\mathcal V$; $\mathsf M(g)\ge\norm g_{L^2}^2$, $|\mathsf Z(g)|\le\mathsf M(g)$,
 $\mathsf Y(g)\le3\mathsf M(g)$, and for every $g\in\mathcal V$,
 \begin{equation}\label{eq:continuum}
- \mathsf D(g)=\mathsf M(g)+\tfrac12\bigl[\mathsf Z(g)-\mathsf Y(g)\bigr],
+ \mathsf Q(g)=\mathsf M(g)+\tfrac12\bigl[\mathsf Z(g)-\mathsf Y(g)\bigr],
  \qquad
  \tfrac12\bigl[\mathsf Z(g)-\mathsf Y(g)\bigr]\le(\Lambda_{\mathrm{edge}}-1)\mathsf M(g).
 \end{equation}
@@ -1926,7 +1932,7 @@ Let $g=\sum_ju_j\zeta_j\in\mathcal V_0$ and $p=\sum_ju_jp_{N,j}$. The
 Chebyshev coefficients of $\ell_k$ are $(2\gamma_k/N)\gamma_i\cos(i\theta_k)$
 (proof of Lemma~\ref{lem:identities}), so $Np=\sum_{i<N}a_iT_i$ with
 $a_i=g(i/N)$ for $i\ge1$ and $a_0=g(0)/2$. Thus
-$a^TM_Na=N^2\int p^2\to\mathsf M(g)$ and $a^TR_Na=N^2Q_N(p^2)\to\mathsf D(g)$
+$a^TM_Na=N^2\int p^2\to\mathsf M(g)$ and $a^TR_Na=N^2Q_N(p^2)\to\mathsf Q(g)$
 by Proposition~\ref{prop:fixed-trial}. The rescaled entries
 $N^2(Z_N)_{ij}=[\max(s,2-s)^2-N^{-2}]^{-1}$, $s=(i+j)/N$, converge uniformly
 to $z$ on equal-parity pairs, which form half of all pairs; hence
@@ -1942,15 +1948,15 @@ $\mathcal V_0$.
 
 Lemma~\ref{lem:floor} gives $a^TM_Na\ge N^{-1}\sum_ia_i^2\to\norm g^2$, so
 $\mathsf M\ge\norm g^2\ge|\mathsf Z|$ on $\mathcal V_0$. Since
-$\mathsf D\ge0$, \eqref{eq:continuum} gives $\mathsf Y\le2\mathsf M+\mathsf Z
-\le3\mathsf M$; also $\mathsf D\le\Lambda_{\mathrm{edge}}\mathsf M$. Each form
+$\mathsf Q\ge0$, \eqref{eq:continuum} gives $\mathsf Y\le2\mathsf M+\mathsf Z
+\le3\mathsf M$; also $\mathsf Q\le\Lambda_{\mathrm{edge}}\mathsf M$. Each form
 is continuous for the norm of Lemma~\ref{lem:core-dense}; by that lemma they
 extend continuously to $\mathcal V$, and the extensions are the displayed
 integrals (for $\mathsf Y$: $L^2$ convergence gives pointwise convergence of
-the Laplace transforms, and the limit in $L^2(y\dd y)$ agrees; for $\mathsf D$:
+the Laplace transforms, and the limit in $L^2(y\dd y)$ agrees; for $\mathsf Q$:
 $\widehat g$ converges pointwise, and the samples converge in the weighted
 sequence space). The relations extend to $\mathcal V$. Finally
-$\mathsf Y\ge0$ and $\mathsf Z\le\mathsf M$ give $\mathsf D\le\frac32\mathsf M$.
+$\mathsf Y\ge0$ and $\mathsf Z\le\mathsf M$ give $\mathsf Q\le\frac32\mathsf M$.
 \end{proof}
 
 \subsection{\texorpdfstring{Proof of Theorem~\ref{thm:edge-limit}}{Proof of the endpoint limit theorem}}
@@ -2002,16 +2008,16 @@ up to $o(1)$, weak convergence yields
 \]
 
 \emph{The positive part.} With
-$E^{\mathrm e}_N(y)=\frac2N\sum_{i\ \mathrm{even}}a_ie^{-(1-i/N)y}$ and
-$E^{\mathrm o}_N$ the odd analogue, the substitution $x=e^{-y/N}$ in the
+$\Theta^{\mathrm e}_N(y)=\frac2N\sum_{i\ \mathrm{even}}a_ie^{-(1-i/N)y}$ and
+$\Theta^{\mathrm o}_N$ the odd analogue, the substitution $x=e^{-y/N}$ in the
 integral representation of $Y$ (proof of Theorem~\ref{thm:five-thirds}) gives
 the exact formula
 \[
  a^TY_Na=\int_0^\infty\frac N4\sinh\frac yN\,
- \bigl[E^{\mathrm e}_N(y)^2+E^{\mathrm o}_N(y)^2\bigr]\dd y .
+ \bigl[\Theta^{\mathrm e}_N(y)^2+\Theta^{\mathrm o}_N(y)^2\bigr]\dd y .
 \]
-By \eqref{eq:profile-weak}, $E^{\mathrm e}_N(y)\to\int(g^++g^-)e^{-(1-s)y}\dd s$
-and $E^{\mathrm o}_N(y)\to\int(g^+-g^-)e^{-(1-s)y}\dd s$ for each $y$, and
+By \eqref{eq:profile-weak}, $\Theta^{\mathrm e}_N(y)\to\int(g^++g^-)e^{-(1-s)y}\dd s$
+and $\Theta^{\mathrm o}_N(y)\to\int(g^+-g^-)e^{-(1-s)y}\dd s$ for each $y$, and
 $\frac N4\sinh\frac yN\ge\frac y4$. Fatou's lemma gives
 \[
  \liminf a^TY_Na\ge\tfrac12\bigl[\mathsf Y(g^+)+\mathsf Y(g^-)\bigr].
@@ -2032,64 +2038,64 @@ The bound $\Lambda_{\mathrm{edge}}\le3/2$ is Lemma~\ref{lem:continuum}. \qed
 
 \subsection{Closed forms of the model mass}
 
-Write $a_j=\pi j$, $s_j=(-1)^j$ and
+Write $\varpi_j=\pi j$, $s_j=(-1)^j$ and
 $\operatorname{Cin}(x)=\int_0^x(1-\cos v)\,v^{-1}\dd v$.
 
 \begin{lemma}\label{lem:closed-form}% IDs: PD-T548
-For $i,j\ge1$ the integrals $C_{ij}=\int_0^\infty\xi\chi_i(\xi)\chi_j(\xi)\dd\xi$
+For $i,j\ge1$ the integrals $\mathsf M_{ij}=\int_0^\infty\xi\chi_i(\xi)\chi_j(\xi)\dd\xi$
 converge absolutely, and
-\[
- C_{ij}=\frac{2s_is_j\bigl(a_i^2\operatorname{Cin}(2a_j)-a_j^2\operatorname{Cin}(2a_i)\bigr)}{a_i^2-a_j^2}\quad(i\ne j),\qquad
- C_{jj}=2\bigl[a_j\operatorname{Si}(2a_j)+\operatorname{Cin}(2a_j)\bigr].
-\]
-Hence $\mathsf M(\sum_ju_j\zeta_j)=\sum_{i,j}u_iC_{ij}u_j$ for finite $u$.
+\begin{gather*}
+ \mathsf M_{ij}=\frac{2s_is_j\bigl(\varpi_i^2\operatorname{Cin}(2\varpi_j)-\varpi_j^2\operatorname{Cin}(2\varpi_i)\bigr)}{\varpi_i^2-\varpi_j^2}\quad(i\ne j),\\
+ \mathsf M_{jj}=2\bigl[\varpi_j\operatorname{Si}(2\varpi_j)+\operatorname{Cin}(2\varpi_j)\bigr].
+\end{gather*}
+Hence $\mathsf M(\sum_ju_j\zeta_j)=\sum_{i,j}u_i\mathsf M_{ij}u_j$ for finite $u$.
 \end{lemma}
 
 \begin{proof}
 By \eqref{eq:chi}, $\chi_j$ is continuous with removable singularities,
 bounded on compact sets and $O_j(\xi^{-3})$, so $\xi\chi_i\chi_j$ is
-absolutely integrable. Let $a$ be a positive integer multiple of $\pi$ and
+absolutely integrable. Let $\varpi$ be a positive integer multiple of $\pi$ and
 $\mathcal H(x)=\int_0^x\sin^2v\,v^{-1}\dd v=\operatorname{Cin}(2x)/2$. Put
 \[
- I(a)=\int_0^\infty\frac{\sin^2t}{t(t^2-a^2)}\dd t,\qquad
- K(a)=\int_0^\infty\frac{t\sin^2t}{(t^2-a^2)^2}\dd t ,
+ I(\varpi)=\int_0^\infty\frac{\sin^2t}{t(t^2-\varpi^2)}\dd t,\qquad
+ K(\varpi)=\int_0^\infty\frac{t\sin^2t}{(t^2-\varpi^2)^2}\dd t ,
 \]
-both absolutely convergent. For $R>a$, partial fractions give
-$a^2\int_0^R\frac{\sin^2t}{t(t^2-a^2)}\dd t=\frac12\int_0^R\frac{\sin^2t}{t-a}\dd t
-+\frac12\int_0^R\frac{\sin^2t}{t+a}\dd t-\mathcal H(R)$. Since $\sin^2$ has
+both absolutely convergent. For $R>\varpi$, partial fractions give
+$\varpi^2\int_0^R\frac{\sin^2t}{t(t^2-\varpi^2)}\dd t=\frac12\int_0^R\frac{\sin^2t}{t-\varpi}\dd t
++\frac12\int_0^R\frac{\sin^2t}{t+\varpi}\dd t-\mathcal H(R)$. Since $\sin^2$ has
 period $\pi$ and $\sin^2v/v$ is odd, translation gives
-$\int_0^R\sin^2t\,(t\mp a)^{-1}\dd t=\mathcal H(R\mp a)-\mathcal H(a)$, so
-the right side equals $\frac12\mathcal H(R-a)+\frac12\mathcal H(R+a)-\mathcal H(R)-\mathcal H(a)$,
+$\int_0^R\sin^2t\,(t\mp \varpi)^{-1}\dd t=\mathcal H(R\mp \varpi)-\mathcal H(\varpi)$, so
+the right side equals $\frac12\mathcal H(R-\varpi)+\frac12\mathcal H(R+\varpi)-\mathcal H(R)-\mathcal H(\varpi)$,
 and the first three terms tend to zero as $R\to\infty$, being bounded by
-$\frac12\log\frac R{R-a}+\frac12\log\frac{R+a}R$. Thus
-$I(a)=-\operatorname{Cin}(2a)/(2a^2)$. For $i\ne j$, the identity
-$[(t^2-a^2)(t^2-b^2)]^{-1}=[(t^2-a^2)^{-1}-(t^2-b^2)^{-1}]/(a^2-b^2)$ gives
-$C_{ij}=4s_is_ja^2b^2[I(a)-I(b)]/(a^2-b^2)$ with $a=a_i$, $b=a_j$, which is
+$\frac12\log\frac R{R-\varpi}+\frac12\log\frac{R+\varpi}R$. Thus
+$I(\varpi)=-\operatorname{Cin}(2\varpi)/(2\varpi^2)$. For $i\ne j$, the identity
+$[(t^2-\varpi^2)(t^2-\varpi'^2)]^{-1}=[(t^2-\varpi^2)^{-1}-(t^2-\varpi'^2)^{-1}]/(\varpi^2-\varpi'^2)$ gives
+$\mathsf M_{ij}=4s_is_j\varpi^2\varpi'^2[I(\varpi)-I(\varpi')]/(\varpi^2-\varpi'^2)$ with $\varpi=\varpi_i$, $\varpi'=\varpi_j$, which is
 the first formula. For the diagonal, integration by parts
-($\frac{\dd}{\dd t}(t^2-a^2)^{-1}=-2t(t^2-a^2)^{-2}$, with vanishing boundary
-terms at $0$, at $a^\pm$ and at infinity) gives
-$K(a)=\frac12\int_0^\infty\sin(2t)(t^2-a^2)^{-1}\dd t$, and the same
+($\frac{\dd}{\dd t}(t^2-\varpi^2)^{-1}=-2t(t^2-\varpi^2)^{-2}$, with vanishing boundary
+terms at $0$, at $\varpi^\pm$ and at infinity) gives
+$K(\varpi)=\frac12\int_0^\infty\sin(2t)(t^2-\varpi^2)^{-1}\dd t$, and the same
 translation argument with $\sin(2v)/v$ even gives this integral as
-$\operatorname{Si}(2a)/a$. Finally
-$t^{-1}(t^2-a^2)^{-2}=a^{-4}[t^{-1}-t(t^2-a^2)^{-1}]+a^{-2}t(t^2-a^2)^{-2}$,
+$\operatorname{Si}(2\varpi)/\varpi$. Finally
+$t^{-1}(t^2-\varpi^2)^{-2}=\varpi^{-4}[t^{-1}-t(t^2-\varpi^2)^{-1}]+\varpi^{-2}t(t^2-\varpi^2)^{-2}$,
 with the bracket kept together at each cutoff, gives
-$C_{jj}=4a^2[K(a)-I(a)]=2[a\operatorname{Si}(2a)+\operatorname{Cin}(2a)]$.
+$\mathsf M_{jj}=4\varpi^2[K(\varpi)-I(\varpi)]=2[\varpi\operatorname{Si}(2\varpi)+\operatorname{Cin}(2\varpi)]$.
 \end{proof}
 
 \subsection{The finite reduction}
 
 By \eqref{eq:Lambda-edge}, for every nonzero $u\in\R^J$,
 \[
- \Lambda_{\mathrm{edge}}\ge q(u):=\frac{u^TDu}{u^TCu},\qquad
- D=\operatorname{diag}(\omega_1,\dots,\omega_J)+4ss^T,
+ \Lambda_{\mathrm{edge}}\ge q(u):=\frac{u^T\mathsf Q_Ju}{u^T\mathsf M_Ju},\qquad
+ \mathsf Q_J=\operatorname{diag}(\omega_1,\dots,\omega_J)+4ss^T,
 \]
-with $C=(C_{ij})_{i,j\le J}$ from Lemma~\ref{lem:closed-form} and
+with $\mathsf M_J=(\mathsf M_{ij})_{i,j\le J}$ from Lemma~\ref{lem:closed-form} and
 $s=(s_j)$. We take $J=512$ and a vector $u$ of binary rationals, stored
 exactly as hexadecimal binary64 strings. It was selected by a floating-point
 generalized eigensolver; the selection plays no role in the proof, because
 the bound holds for every $u$.
 
-The check encloses $u^TDu$ and $u^TCu$ in intervals with endpoints on the
+The check encloses $u^T\mathsf Q_Ju$ and $u^T\mathsf M_Ju$ in intervals with endpoints on the
 grid $2^{-256}\mathbb Z$, using unbounded integers and rounding every product
 and quotient outward. The scalar inputs are enclosed as follows.
 \begin{itemize}
@@ -2126,7 +2132,7 @@ geometric tail bound.
 
 The enclosures obtained are
 \[
- 0.999999999999999917507138\le u^TCu\le0.999999999999999917507142,
+ 0.999999999999999917507138\le u^T\mathsf M_Ju\le0.999999999999999917507142,
 \]
 \[
  1.004436918864667280457774\le q(u)\le1.004436918864667280457779,
