@@ -1,6 +1,6 @@
 # Handoff 03 — padua-mz-paper-20261113 — continue finalizing MZ-CC and MZ-SP (with AC's answers of 2026-11-13)
 
-- Status: open
+- Status: superseded by 04: session boundary at 27347e8. MZ-CC is complete to draft; the notation, literature and referee passes and all of MZ-SP are carried into 04.
 - Previous handoff: [02-work.md](02-work.md), superseded by this one after AC answered its two pending questions. [01-work.md](01-work.md)'s task list and gates remain the reference.
 
 - Next agent / model / effort: **Claude**, a new session.

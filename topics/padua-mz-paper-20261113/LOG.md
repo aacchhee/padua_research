@@ -1,7 +1,7 @@
 # MZ paper finalization (MZ-CC and MZ-SP): log
 
 - Branch: `claude/padua-mz-paper-20261113` · Base: main `b5388c2` · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Stage: WORK · Draft PR #35 · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Open handoff: [handoffs/03-work.md](handoffs/03-work.md) (01, 02 superseded)
+- Stage: WORK · Draft PR #35 · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Open handoff: [handoffs/04-work.md](handoffs/04-work.md) (01–03 superseded)
 - Reserved final-ID ranges: none (no new mathematics expected).
 - Decided by AC: venues (MZ-CC SINUM, MZ-SP JAT); Zenodo later; companion = AC-only reading aid, arXiv and journal versions identical (2026-11-13).
 
@@ -88,6 +88,8 @@
 - Independent checks (Opus 5.5 high): [check-new-corollaries-02.md](check-new-corollaries-02.md) returns PASS with editorial corrections for PD-T?mz-paper-claude-01 (d) and PASS for PD-T?mz-paper-claude-02. Record fixes are applied: the λ₋(N,N) definition, the Π_N dependency and the J₋ pointer.
 - Notation register [notation-cc.md](notation-cc.md) (Sonnet 5.5 high worker): 38 clash entries (10 H, 15 M, 13 T). The stale "H and K" at old l.571 is fixed. The other renames are left to the next session's notation pass.
 - [literature-mz-paper.md](literature-mz-paper.md): coverage table drafted for MZ-CC's 26 keys; the per-sentence scope check is pending.
+
+- Session boundary: handoff 03 superseded by [handoff 04](handoffs/04-work.md).
 
 ## Runs needed
 
