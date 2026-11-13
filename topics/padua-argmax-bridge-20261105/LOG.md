@@ -2894,3 +2894,41 @@ Next: [handoff30 — focused Claude audit of onset512 and both manuscripts](hand
 - P1–P4: unchanged, accepted as recorded by AC. Funding statement confirmed by AC. AI declaration, ORCID and contributions remain AC's.
 - Size: audit-04 adds about 0.8 MB of authored reports and source scripts and no generated outputs; the topic's conservative generated-output bound stays 9,873,956 B by the audit-03 convention (E4 computed 9,897,953 B crediting the shrink of `cold-storage.json`, or 9,917,613 B with no deletion credit; all under 10,000,000 B).
 - Stage returns to **WORK** (E4-01 and manuscript-clarity MAJORs open); PR 27 stays draft; only AC merges.
+
+## 2026-11-13 — Codex response to audit-04, handoff 31
+
+Codex orchestrates under AC's `gpt-6-astra high` continuation request; runtime
+serving identity is not independently exposed. Rules read at
+`b5388c25a2a5ccb8d0faf816ab87023cf347bcd3`, byte-identical at topic input
+`8a94ce610594e9f52a23ca6b74b5751719f0d89e`. Fetched both heads and merged
+current main `b5388c25a2a5ccb8d0faf816ab87023cf347bcd3` without conflicts at
+`941aa335e60ca7058c8a0113faa76e31217f4753`; rules reread/compared there.
+Handoff 31 remains open while this session works. No new mechanism or novelty
+claim is proposed: the novelty gate is inapplicable to correcting the audited
+reader and explaining existing proofs. No final-ID assignment or reservation;
+existing ranges unchanged, no new range.
+
+Bounded development uses distinct `gpt-6.1-sol` agents: medium for reader and
+evidence recipes, xhigh for paper and companion mathematical exposition.
+Ownership separates reader code, deposit documentation, journal sources, early
+companion sources, and comparison/certification companion sources. Only root
+controls Git. A distinct Astra supplementary review will inspect the changes;
+the required focused Claude handoff remains separate.
+
+Fresh workspace has no `local-output` or runtime/cache artifacts from the prior
+session and no evidence ZIPs. Task B is **not executed**. AC was asked for a
+retrievable location and the native-history custody decision; there is no
+inferred approval, delivery, regeneration or renewed native campaign. No Syvert
+calls. The old PDFs likewise are absent; their byte preservation cannot be
+retested here, although historical source freezes remain in Git.
+
+Executed before edits: `python3 -B
+topics/padua-argmax-bridge-20261105/code/onset512_analytic/check.py` exits 0
+with every exact-rational assertion PASS and the recorded J01/J02 brackets.
+Pinned Springer class/BST were fetched successfully with the paper build
+script's `--fetch-only` into a fresh `audit04-paper-20261113` output directory.
+Python 3.12.14 / NumPy 2.3.5: all 31 frozen arithmetic controls pass. Separately
+computed NumPy probes pass ties-to-even in both directions, normal-to-subnormal
+division, and `nextafter(0,1)` as the smallest subnormal. These four finite probes
+do not prove universal IEEE conformance; no certificate was consumed. Local
+output is `local-output/argmax-bridge-20261105/audit04-response-20261113/runtime-probes.json`.
