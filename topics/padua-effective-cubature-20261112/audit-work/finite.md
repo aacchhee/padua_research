@@ -153,8 +153,18 @@ then reran using `PYTHONPATH=/tmp/padua-audit-finite/deps` (HiGHS 1.16.0).
 9. `git show 0abf5e7:topics/padua-effective-cubature-20261112/gates.md`.
    Comparing with head shows all pre-registration definitions unchanged;
    only the `(none yet)` verdict placeholder is replaced by verdicts/addenda.
-10. Full witness generation and direct-ball rerun: RUNNING; completion to be
-    recorded before this support audit is finalized.
+10. From the topic cwd:
+    `python3 -B code/pdn_lattice_witness.py --nmin 2 --nmax 140 --extra evidence/lp-lattice.json --perturb --out /tmp/padua-audit-finite/witness-full.json`,
+    followed by
+    `python3 -B code/pdn_check_ball.py --full /tmp/padua-audit-finite/witness-full.json --out /tmp/padua-audit-finite/pdn-check.json`.
+    Both completed with exit 0. Direct-ball `check_failures=[]`: all 278
+    witness checks across 139 degrees PASS. The 139 compact rows match the
+    committed evidence exactly, including all indices, strong bases and
+    both coverage flags. Recomputed coverage is 108 degrees 2..109 for
+    E=2n-1 and 127 degrees 2..128 for E=2n-2. Strong n=109 has index
+    1822682 <= 1823360, margin 678.
+    The exclusion of all possible witnesses beyond n=109 uses the cited
+    packing literature, not the failed heuristic searches beyond that degree.
 11. From the topic cwd:
     `PYTHONPATH=/tmp/padua-audit-finite/deps OPENBLAS_NUM_THREADS=1 python3 -B code/lp_torus.py --n 5 --extra 5 --workdir /tmp/padua-audit-finite/lp --out /tmp/padua-audit-finite/n5-e5.json`.
     Completed in 134.9 seconds: upper=139.55249358897203,
@@ -170,10 +180,32 @@ SHA-256 `7d112ef215715f393e9de0cc16d22f0f9acaec0ab5e66a80ed087102a8122440`.
 It resolves the repository from its own location and accepts `--output`; its
 receipt records this code identity.
 
-## Interim verdict
+## Verdict
 
-Record -06's mathematical reduction and the committed strong witnesses pass.
+Record -06's mathematical reduction and all 278 regenerated witnesses pass
+both prescribed code paths; an independent coefficient-box check also passes
+all 139 committed strong witnesses.
 Q0 and Q1 sanity/reference checks pass. Q3's no-certificate verdict agrees with
 the evidence. Q2's Delsarte INCONCLUSIVE verdict is consistent with the data,
 while the plain-LP preregistered KILL needs the F1 correction. The finite
-computer-proof full rerun is still in progress.
+computer-proof full rerun is complete and supports the stated finite claim.
+
+## Off-repository output identities
+
+All files below are under `/tmp/padua-audit-finite/`; no raw outputs were
+added to the repository. `audit-summary.json` records the same compact verdict
+and artifact identities.
+
+| File | Bytes | SHA-256 |
+|---|---:|---|
+| fd1-controls-replay.json | 3254 | `ef6dd1292359368627a7b0df955472395780e42be15e1aa21fcd4aa5be537cf2` |
+| fd3-replay.json | 1433 | `11ec6fd9c051cc20f0211d18e906412e53da3ba2910ee60857639ce1110ba980` |
+| q0c.json | 836 | `db82bb54435bdb32c71205497420c6f21dfaf9a4f171472279988201a390d908` |
+| cap.json | 620 | `022116452d3d6e8ce3f53ef3a111ee59d153ccf63846c02b0480456204497a8e` |
+| q1a-torus.json | 2017 | `d5dc50f42e4aa33bf17162f71e75d139ea6e9858ef8533d6dc5804828cc6c5ed` |
+| q1a-cube.json | 2075 | `76783cda8761b73a9b8d1d66e8a19d11d9a46babe042498d4716c43f38bef304` |
+| lp-lattice-replay.json | 942 | `b9b6aa28d715244dd7195d388e9e3f93ee80fca6cede81cb66ecae8eaaad311c` |
+| independent_checks.json | 28813 | `c7874519fb7718a13aaa57fa9f7e5c802f7bb6b77d693ce8b9fb2965c5fc05e8` |
+| n5-e5.json | 3142 | `6d8a19cbeb0d8ca7feceb0066a653609165fd1fb389e3a10419b619d8ac75ef5` |
+| witness-full.json | 38684 | `5236d9b9fab75b2ff7bf2b211c2eb2f175452d0f7f02c80af43b832b855a4e5b` |
+| pdn-check.json | 10952 | `c03edbb9f7a4d45e6941aee15c4eafa5b8465f09292a1bd6bf882bf0cd4f866c` |

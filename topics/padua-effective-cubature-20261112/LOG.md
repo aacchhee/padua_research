@@ -1,7 +1,7 @@
 # Effective Theorem A (positive cube cubature excess) and the Padua Lebesgue-constant corollary: log
 
 - Branch: `claude/padua-effective-cubature-20261112` · Base: main `b5388c2` (PR #33 merged) · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Stage: AUDIT (pending) · Open handoff: [handoffs/03-audit.md](handoffs/03-audit.md) (Codex); handoff 01 done, 02 superseded · Draft PR: https://github.com/aacchhee/padua_research/pull/34 (audit PENDING)
+- Stage: WORK (audit 01 findings; Claude response required) · Next handoff: [handoffs/04-response.md](handoffs/04-response.md); handoff 01 done, 02 superseded, 03 closes with publication of 04 · Draft PR: https://github.com/aacchhee/padua_research/pull/34 (response required)
 - Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
 - Claims (provisional IDs `PD-T?padua-effective-cubature-20261112-claude-NN`):
   - -01: C0 corollary, PROVED (assembly);
@@ -111,6 +111,15 @@
 - This session adds no new mechanism. The novelty-bearing development is being checked by a worker assigned the complete `state/IDEAS.md`, related entries and the development gates; the other workers have bounded proof/computation scopes.
 - [audit-work/transference.md](audit-work/transference.md): independent reconstruction accepts -02/-03/-04 with their declared dependencies; primary-source checks and cap rerun pass. Returns the -05 compact-support target closure mismatch and a sufficient-versus-necessary wording issue.
 - Full finite witness regeneration and the remaining checks are in progress; handoff 03 remains open. Generated rerun outputs stay under `/tmp/padua-audit-*`. The arXiv coefficient download is blocked in this environment; a missing replay will be reported as a limitation, never as PASS.
+
+### Audit completion
+
+- [audit-01.md](audit-01.md) is complete: **six MAJOR, three MINOR, no BLOCKING**, with scoped acceptance of -01/-02/-03/-04/-06. The four bounded reports in [audit-work/](audit-work/) record actual source reads, proofs, executed commands and limitations. No development theory or result-bearing code was changed by the auditor.
+- Full n=2–140 generation and the separate direct-ball checker: **278/278 PASS**, every one of 139 compact rows identical to committed evidence. Coverage: E=2n−1 at 2–109; E=2n−2 at 2–128. Exact Q0/Q1 controls, all 15 lattice references, and the independent coefficient-box check pass. The optional n=5/e=5 LP replay reproduces the qualitative measurement (about 1.04e-5 relative difference from the old receipt), with no certified improvement over Fisher.
+- C0 assembly, local transference and cap pass; primary KLM/DGOV/GL/LM source checks match their scoped transcriptions. Full IDEAS read found no registered duplicate. Returned findings concern target scope/status, rigorous coefficient conversion in one gamma path, overclaimed report scope/cutoff equivalence, numerical kill verdict and novelty coverage/timing record, plus wording/pointers.
+- Neither complete gamma certificate was replayed in this audit: the hash-pinned ancillary bytes could not be retrieved. Code inspection and synthetic controls are distinguished from data-dependent execution in [gamma.md](audit-work/gamma.md). This is a limitation, not a theorem counterexample. The developer's prior receipts remain preserved.
+- Raw audit reruns remain local, not cold-storage archived; [finite.md](audit-work/finite.md) records their hashes/sizes/commands. The committed witness evidence and audit control source remain sufficient to regenerate those checks; gamma requires its stated third-party input. The inherited cold-storage item below remains pending.
+- The response instruction is [handoff 04](handoffs/04-response.md). Claude answers A1–A9; material changes receive focused Codex review. No readiness or merge approval, shared-registry changes, final IDs or reservations were made.
 
 ## Runs needed (retained development list)
 
