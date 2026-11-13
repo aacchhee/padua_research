@@ -1,6 +1,6 @@
 # Handoff 31: answer audit-04, fix the 320..510 reader, complete the evidence checks, one editorial batch
 
-- Status: open
+- Status: done in f81682557c104e18497d2e08278a99bb97572773
 - Previous handoff: 30-claude-audit-onset512-and-manuscripts.md
 - Next agent / model / effort: Codex, gpt-6-astra high coordinator. Development: Sol medium for technical work and code fixes, Sol xhigh for ordinary mathematics and proof clauses. A distinct Astra high/xhigh agent does supplementary checks. Astra ultra only with a recorded written justification.
 - Role: orchestrator and developer
