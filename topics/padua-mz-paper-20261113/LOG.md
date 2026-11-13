@@ -39,6 +39,7 @@
 - Rules read at branch head `c0e57a9c` (AGENTS.md, agents/WORKFLOW.md, agents/claude/CLAUDE_ROLES.md). main is still `b5388c2`; open PRs #27 and #34 are not touched. Role: orchestrator and developer (manuscript).
 - **AC answers (2026-11-13):**
   - companion document: "companion document may be prepared only for my own reading, arxiv and journal should be the same". So the arXiv and journal versions of each paper are identical; long derivations go into each paper's appendices. Any companion is a private reading aid for AC, not submitted or posted;
+  - then: "companion paper should follow the same rules as companion in padua argmax paper". The rules are summarized once in [BRIEF §5](BRIEF.md) item 3; one companion per paper, written after that paper's text freeze;
   - SIAM class files: "you can put them on repo". `siamart251216.cls` (v1.4.8, 2025-12-16) and `siamplain.bst` are committed in `tracks/mz-constants/paper/`. SIAM's class is not on CTAN; it was taken from public GitHub copies (dpo/latex-styles and danieleavitabile/project-starter, byte-identical class, SHA-256 `33f2eb09…a5c6f5`; bst `a5df7c48…c6ac7`). Check against SIAM's official macro download before submission.
 - Toolchain installed in the sandbox: `texlive-publishers` (for `elsarticle`).
 - **Baseline (task 0):** the single draft builds cleanly at 25 A4 pages, source hash equal to the 2026-11-05 record.

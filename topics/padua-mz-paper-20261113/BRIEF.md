@@ -125,6 +125,15 @@ Ask these early, in one message. Meanwhile, proceed on defaults.
 1. **Venue for each paper.** *Decided by AC on 2026-11-13:* MZ-CC → SIAM J. Numer. Anal. (fallback Math. Comp.); MZ-SP → J. Approx. Theory (fallback Adv. Comput. Math.).
 2. **One paper or a split.** *Decided by AC on 2026-11-13: split into MZ-CC and MZ-SP (§0).*
 3. **Companion document.** *Decided by AC on 2026-11-13:* "companion document may be prepared only for my own reading, arxiv and journal should be the same". Long derivations go in each paper's appendices; any companion is a private reading aid for AC only.
+   AC, same day: "companion paper should follow the same rules as companion in padua argmax paper". Those rules, from `origin/codex/padua-argmax-bridge-20261105:topics/padua-argmax-bridge-20261105/` (LOG entry of 2026-11-07, `companion-paper/README.md`), applied here per paper (companion-CC, companion-SP):
+   - a separate manuscript with its own source and output directory; the paper's sources and PDF stay intact;
+   - written for a reader with university analysis: specialist vocabulary, intermediate arguments, definitions, motivation and worked examples throughout, so that no step appears without its reasoning; named tools are stated with hypotheses or cited;
+   - exactly the same section and subsection structure, the same formal statements with the same numbers, preferably the same numbered formulas; additions are unnumbered prose and displays;
+   - the same class, bibliography style and bibliography;
+   - up to five times the paper's page count; page count is secondary to the needed explanation;
+   - a correspondence check script (model: that branch's `companion-paper/check_correspondence.py`) verifies headings, statements, numbered displays and compiled label numbers; a distinct reviewer checks mathematics and accessibility;
+   - PDFs and build outputs stay outside Git.
+   Each companion is written after its paper's text is frozen, so the numbers are stable.
 4. **Data deposit.** *AC, 2026-11-13: Zenodo will come later.* Until AC creates it, the text says "available in the repository at commit …" for the committed checkers and receipts. Leave a clearly marked placeholder for the deposit DOI, and make no deposit claim.
 
 ## 6. Known pitfalls
