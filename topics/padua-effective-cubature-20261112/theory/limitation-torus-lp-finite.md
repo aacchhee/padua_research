@@ -14,7 +14,7 @@ Let S be the set of degrees listed below (`covered_E2n-1` in `../evidence/pdn-la
 
 So the lower bound N ≥ f(0)/(8c₀) obtained from record -02 (a) and M ≤ 8N never exceeds binom(n+3,3). This torus route therefore cannot exclude a positive closed-cube rule with binom(n+3,3) nodes exact on Π_{2n−1} at any n ∈ S, whatever spectrum is chosen.
 
-**S = {2, 3, …, 109}** (computed 2026-11-12; see Evidence). With record -03 (iv), this means that **no Padua package at any 4 ≤ n ≤ 109 can be excluded by the torus Delsarte route in any form**: not by the uniform bound, and not by any finite LP at that degree.
+**S = {2, 3, …, 109}** (computed 2026-11-12; see Evidence). With record -03 (iv), this means that **no Padua package at any 4 ≤ n ≤ 109 can be excluded by the finite torus Delsarte LP (any spectrum K), combined with the conversion M ≤ 8N**: not by the uniform bound, and not by any finite LP at that degree. *(Wording narrowed 2026-11-13, audit-01 A3: the earlier text said "torus Delsarte route in any form".)*
 
 For the weaker exactness E = 2n−2 (lattices with min ℓ₁ ≥ 2n−1), the witnesses cover n = 2…128. This is recorded for completeness only, because packages are exact on Π_{2n−1}.
 

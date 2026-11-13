@@ -25,18 +25,29 @@ This file is written only by the topic orchestrator. Branch `claude/padua-effect
   [record](../topics/padua-effective-cubature-20261112/theory/explicit-gamma.md)
 - **Torus-LP finite limitation (-06, PD-N), PROVED by exact lattice witnesses.** The finite torus LPs (plain or Delsarte, any spectrum), combined with M ≤ 8N, cannot exclude a package at any n = 2…109, the full range left open by the uniform bound. There are 108 exact lattice witnesses, verified by two code paths.
   [record](../topics/padua-effective-cubature-20261112/theory/limitation-torus-lp-finite.md)
-- **Plain Turán route (BRIEF E1 as written), deferred and MEASURED-killed.**
+- **Plain Turán route (BRIEF E1 as written), deferred at discretion; not promising (MEASURED); pre-registered KILL not established** (corrected 2026-11-13).
   - Deciding it would require showing that the octahedron is a non-Turán domain, which KLM report as a major open problem.
-  - The plain torus LP measures at Fisher: ρ_n = 1 within 3e-6 for n = 2…12.
+  - The plain torus LP is indistinguishable from Fisher: ρ_n ∈ [1, 1+5.7e-6] for n = 2…12.
 - **Delsarte torus LP, MEASURED:** ρ^Del ≈ 1.08 at n = 5…8 (K = 3n−2). It has no rigorous finite certificate.
 - **Cube-native LP, MEASURED:** λ ≈ 1.20–1.21 at n = 2, 3, 4, far below the 1 + 3/n needed for an exclusion.
-- **Gates.** Q0 PASS; Q1 PASS; Q2 plain KILL, Delsarte INCONCLUSIVE; Q3 not exercised (no finite exclusion claimed).
+- **Gates.** Q0 PASS; Q1 PASS; Q2 plain not promising (KILL not established), Delsarte INCONCLUSIVE; Q3 not exercised (no finite exclusion claimed); G (explicit γ) met.
 - [Report](../topics/padua-effective-cubature-20261112/report.md).
 
 ## Audit disposition (2026-11-13)
 
 [Audit 01](../topics/padua-effective-cubature-20261112/audit-01.md) returns the topic to WORK. C0, local transference, the qualitative theorem with its literature dependencies, and the cap pass review. The finite limitation remains scoped to 2–109. Findings require reconciliation of the compact-support target, one gamma checker's coefficient-error proof, the numerical kill verdict, two report assertions and novelty-gate coverage. The gamma input-dependent audit replay was unavailable; existing receipts are reviewed evidence, not a fresh audit execution. The historical claims of target closure and gate success above remain developer statements awaiting disposition.
 
+## Response (2026-11-13)
+
+[Response 01](../topics/padua-effective-cubature-20261112/response-01.md) accepts all nine audit findings.
+- **Compact-support target (-05):** now PROVED with an explicit certified compactly supported witness (support [−2·10⁵, 2·10⁵]³, γ ≥ 0.02781 > 1/36). The earlier "CLOSED by -07" is recorded as premature.
+- **γ checker:** the developer checker was revised with certified coefficient errors and rerun (PASS). The independent checker was replayed from a fresh hash-checked download (PASS); a cross-agent replay is still pending.
+- **Plain-LP Q2:** corrected to "not promising; pre-registered KILL not established", with the route deferred at discretion.
+- **Scope and threshold:** -06 covers only 2–109 with the coarse conversion; cutoff 110 needs γ_A > 9227/166375, not γ_A = 1/18.
+- **Novelty gate:** reconstructed as not prospective, and completed retrospectively.
+
+The theorem conclusions are unchanged.
+
 ## Next step
 
-Claude response to audit 01; see the current numbered handoff linked in the topic log. Do not allocate IDs or mark the PR ready before the findings and material-change review are dispositioned.
+Focused Codex review of the material response changes: `topics/padua-effective-cubature-20261112/handoffs/05-focused-review.md`. No IDs are allocated, and PR #34 stays draft.

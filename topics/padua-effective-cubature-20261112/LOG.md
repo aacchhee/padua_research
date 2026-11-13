@@ -10,7 +10,8 @@
   - -04: 1/18 cap, PROVED;
   - -05: explicit γ, OPEN;
   - -06: PD-N, torus-LP finite limitation, PROVED (exact witnesses);
-  - -07: explicit γ_A > 1/36, PROVED (computer-assisted, local; independent rerun PASS).
+  - -07: explicit γ_A > 1/36, PROVED (computer-assisted, local; independent rerun PASS; developer checker revised 2026-11-13);
+  - -05: compact-support target, PROVED (computer-assisted, explicit cutoff; 2026-11-13).
 
 ## 2026-11-12 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -121,7 +122,19 @@
 - Raw audit reruns remain local, not cold-storage archived; [finite.md](audit-work/finite.md) records their hashes/sizes/commands. The committed witness evidence and audit control source remain sufficient to regenerate those checks; gamma requires its stated third-party input. The inherited cold-storage item below remains pending.
 - The response instruction is [handoff 04](handoffs/04-response.md). Claude answers A1–A9; material changes receive focused Codex review. No readiness or merge approval, shared-registry changes, final IDs or reservations were made.
 
+## 2026-11-13 — Claude, claude-opus-5-5 (xhigh; effort not exposed) — response to audit-01
+
+- **Request:** "Claude (Opus 5.5 xhigh): Continue claude/padua-effective-cubature-20261112." Open handoff `handoffs/04-response.md`. Rules read at `6a12cf8ba5532fec2283ec3d79e260d7173ce805` (unchanged since `39a4bf5`); base `b5388c2`.
+- **Outcome:** `response-01.md`. All nine findings are accepted, none disputed.
+  - **A1:** an explicit compact-support witness (`code/gamma_compact.py`, R = 10⁵, PASS); -05 status PROVED, with history.
+  - **A2:** `code/gamma_certificate.py` revised (certified coefficient errors, explicit powers, width/α asserts) and rerun, PASS in 138 s. The independent checker and the FT cross-check were replayed from a fresh hash-checked download, both PASS. A cross-agent replay is still pending.
+  - **A3/A7:** scope and threshold corrections.
+  - **A6:** Q2 plain LP corrected to "not promising; KILL not established", appended to gates. The 2026-11-12 entries above stay as historical.
+  - **A8:** gate timing reconstructed from Git (not prospective), and a retrospective full read of every obstruction and disposition table. No duplicate found.
+  - **A4/A5/A9:** wording, envelope (5.7e-6), B&B flags and stale pointers.
+- **Material changes** go to a focused Codex review (handoff 05). No IDs; PR #34 stays draft.
+
 ## Runs needed (retained development list)
 
-- Delsarte torus LP n = 9…12 at K = 3n−2 (`attempts/E1.md`); cube LP n ≥ 5 and its Delsarte extension (`attempts/E3.md`); certified φ (-05).
+- Delsarte torus LP n = 9…12 at K = 3n−2 (`attempts/E1.md`); cube LP n ≥ 5 and its Delsarte extension (`attempts/E3.md`); certified φ (-05). *(2026-11-13: "certified φ (-05)" is done. The general-L¹ witness is in -07 and the compact-support witness in -05; see the response-01 entry. The other items stay deferred and unrun; the audit handoff authorises no new development.)*
 - Cold-storage archival of the scratchpad LP receipts (`runs/*.json`, `*.npz`): pending, AC's storage was not reachable from this session. They are regenerable from the committed code and commands in `evidence/lp-torus.json` and the subagent report summarised above.

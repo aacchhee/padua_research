@@ -2,7 +2,7 @@
 
 ID kind: PD-T.
 Aliases: explicit Theorem A; explicit γ; certified Delsarte function for the octahedron.
-Split from: target record -05, which this completes in LITERATURE-dependent form.
+Split from: target record -05. This record gives the general-L¹ version (a Gaussian-type, not compactly supported, witness); the compact-support target of -05 is met separately by the explicit cutoff in record -05 (2026-11-13, audit-01 A1).
 Split into: none. The local re-verification is part (L) below.
 
 ## Statement
@@ -81,19 +81,25 @@ Hence φ(ξ) = f(αξ/2)/f(0) is Delsarte-admissible for int 2O with (3/4)∫φ 
   - By B3 invariance it suffices to take the fundamental domain 0 ≤ x₁ ≤ x₂ ≤ x₃.
   - **Bounded part (|x|_∞ ≤ 4).** Branch and bound over dyadic boxes. Each box is mapped exactly to y = x², the polynomial is Taylor-shifted to the box centre, and the shift is enclosed with an a-priori floating-point error bound of 128 units in the last place on the absolute-value computation.
   - **Tail (|x|_∞ ≥ 4).** A 2-D branch and bound on the face y₃ = 1 encloses every homogeneous part. It then checks that all coefficients of the shifted univariate polynomial in t = |x|_∞² − 16 have the required sign.
-  - The region {|x|₁ ≥ α} is handled exactly: a box is discarded only if its maximal ℓ₁ norm is < α.
-- **(L4).** Ball arithmetic (python-flint arb, 200 bits) on the exact values P(0) = c₀₀₀ and G(0) ∈ ℚ[π^{−1}].
+  - The region {|x|₁ ≥ α} is handled exactly: a box is discarded only if its maximal ℓ₁ norm is < α. The double α̃ used satisfies α̃ ≤ α exactly, which is asserted in code.
+  - **Coefficients (revised 2026-11-13, audit-01 A2).** Every exact coefficient (rational for P; for G, an element of ℚ[π^{−1}] evaluated as a 256-bit Arb ball) is stored as a double c̃ with a certified bound e ≥ |c − c̃|. For P the bound is exact Fraction arithmetic; for G it is the Arb abs_upper, rounded up. The enclosure adds Σ_a e_a(M+R)^a, which bounds the coefficient error term on the box since y ≥ 0. The maxima are e ≤ 2.7·10⁻¹¹ (P) and 1.8·10⁻¹² (G).
+  - All powers are formed by explicit repeated multiplication, so the floating-point rounding count of the a-priori bound is literal. The receipt records the smallest certified box width, 2⁻¹⁴ ≥ 2⁻²⁴, which confirms exact squares.
+  - The first version, script SHA `a6f841e0…8375` (run 2026-11-12), converted G's coefficients through 60-digit mpmath without a certified bound. That conversion was a gap in the stated proof, though not a counterexample. It is superseded by this revision.
+- **(L4).** Ball arithmetic (python-flint arb, 256 bits) on the exact values P(0) = c₀₀₀ and G(0) ∈ ℚ[π^{−1}].
 
 **Run (developer).** Command:
 
   `python3 -B code/gamma_certificate.py --anc <scratch>/octa_double.func.cpp --alpha 1.001 --R 4 --RG 4 --out evidence/gamma-certificate.json` (cwd = topic directory).
 
-Results, verdict **PASS**, 2026-11-12, Python 3.13.18, NumPy 2.5.3:
+Results of the revised script (SHA-256 `52c8c9d9…c6ff`), verdict **PASS**, 2026-11-13. Python 3.13.18, NumPy 2.5.3, python-flint 0.9.0. The input was freshly downloaded from `https://arxiv.org/src/1510.02331v3/anc/octa_double.func.cpp` (HTTP 200, SHA-256 `034a1aea…7bc47`). The receipt is `../evidence/gamma-certificate.json` (SHA-256 `812f9ffb…eb61`).
 - P tail: 67164 face boxes processed, 0 failures.
 - G tail: 13033 face boxes processed, 0 failures.
 - P ≤ 0: 689111 boxes processed, 266149 certified leaves, 0 failures.
 - G ≥ 0: 236706 boxes processed, 116481 certified leaves, 0 failures.
-- Wall time 121 s.
+- Wall time 138 s.
+- γ₁ = 0.02784156869077655462959359694217416… (radius 3.3·10⁻⁷²).
+
+The first version's run (2026-11-12, 121 s, same counts) is superseded; see the coefficient note above.
 
 The leaf lists (3 MB) are in the session scratchpad only; they can be regenerated with `--leaves`.
 
@@ -107,7 +113,10 @@ The leaf lists (3 MB) are in the session scratchpad only; they can be regenerate
   - the rigorous bounds are P ≤ −2.03·10⁻⁵ on the region and G ≥ 2.03·10⁻³;
   - γ₁ = 0.0278415686907765546295935969422 ± 2.6·10⁻³², matching the developer value;
   - controls: α = 1 fails, with an exact point at |x|₁ = 1.000122 where P = +0.0027; the true maximum of P on the region is ≈ −1.16·10⁻⁴; the minimum of G is ≈ 0.0864.
-- **Orchestrator replay** of the independent script: the same verdict PASS in 4.4 s, 2026-11-12.
+- **Orchestrator replays** of the independent script, same verdict PASS:
+  - 2026-11-12, 4.4 s;
+  - 2026-11-13, 5.1 s, from a fresh hash-checked download. The command was `python3 -I code/gamma_certificate_indep.py --input <scratch>/octa_double.func.cpp --out <scratch>/gamma-indep.json` (cwd = topic directory). The receipt matches the committed `../evidence/gamma-certificate-indep.json` in every field except timings, paths and the platform kernel string (output SHA-256 `18b2a819…b6`).
+- The audit (audit-01) could not download the input in its environment, so it inspected the independent code but did not replay it. These replays are the developer's, not the auditor's.
 
 Combined trust base: Python fractions, python-flint/arb, IEEE double arithmetic with the stated a-priori error bounds, and the written reductions. The two code paths share only the input file.
 
@@ -126,20 +135,22 @@ Combined trust base: Python fractions, python-flint/arb, IEEE double arithmetic 
 ## Scope
 
 - Positive weights; nodes in the closed cube; Chebyshev product measure.
-- No finite n < 218 is decided for packages. The uniform method cannot decide n ≤ 109 (record -03 (iv)), and the torus LP cannot either (record -06).
-- 110 ≤ n ≤ 217 remains OPEN: excluded if γ_A is larger than the certified 1/36, but not decided by this record.
+- No finite n < 218 is decided for packages. The uniform method cannot decide n ≤ 109 (record -03 (iv)). Nor can the finite torus LP with the coarse conversion M ≤ 8N (record -06, n = 2…109).
+- 110 ≤ n ≤ 217 remains OPEN. A larger certified constant or finite torus LP values may decide it; record -06 does not cover this range.
 - The certified value is not the optimum of the Cohn–Elkies/Delsarte LP for O; DGOV's class has degree 26.
 
 ## Open items
 
-- **(L) Local certificate.** Re-verify the DGOV function locally from its ancillary coefficients, on separate code paths:
-  - f̂ ≥ 0, i.e. g ≥ 0 on ℝ³;
-  - F[g] ≤ 0 on {|x|₁ ≥ α′};
-  - the exact value.
-  
-  A success turns (a) into PROVED (computer-assisted, local); see gates.md addendum G.
-- Improve 1/36 toward the cap 1/18 with a better certified φ (optional).
+- A cross-agent replay of the two certificate scripts, by the focused audit (handoff 05): the input must be retrievable in the auditor's environment.
+- Improving 1/36 toward the cap 1/18 with a better certified φ is optional. It is not authorised by the audit-response handoff.
+
+*(Revised 2026-11-13, audit-01 A5: the local certificate (L), listed here as future work on 2026-11-12, was completed on 2026-11-12. The list above is the current one.)*
 
 ## History
 
 2026-11-12, Claude (Opus 5.5 xhigh, orchestrator). Explicit-γ campaign round 1 (AC authorised up to seven rounds). Codex audit pending.
+
+2026-11-13, Claude (Opus 5.5 xhigh), response to audit-01 (`../response-01.md`):
+- A2: certified coefficient conversion and explicit powers; developer certificate rerun, PASS.
+- A5: stale open-item and header text corrected.
+- A1: the compact-support target is now met in record -05; this record stays the general-L¹ form.

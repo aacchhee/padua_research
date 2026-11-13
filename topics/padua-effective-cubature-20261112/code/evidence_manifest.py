@@ -39,11 +39,15 @@ ENTRIES = {
     "evidence/gamma-certificate.json": {
         "producer": "code/gamma_certificate.py",
         "command": "cwd = topic dir: python3 -B code/gamma_certificate.py --anc <scratch>/octa_double.func.cpp --alpha 1.001 --R 4 --RG 4 --out evidence/gamma-certificate.json  (input: arXiv:1510.02331v3 anc/octa_double.func.cpp, SHA-256 034a1aea4fafbf29743bded0812723ac8c9cf95274225213578145d016a7bc47; third-party, not committed)",
-        "status": "computer-assisted certificate of record -07 (L): PASS (developer run)", "used_by": "theory/explicit-gamma.md"},
+        "status": "computer-assisted certificate of record -07 (L), revised 2026-11-13 with certified coefficient errors: PASS (developer run)", "used_by": "theory/explicit-gamma.md"},
     "evidence/gamma-certificate-indep.json": {
         "producer": "code/gamma_certificate_indep.py",
         "command": "cwd = topic dir: python3 -I code/gamma_certificate_indep.py --input <scratch>/octa_double.func.cpp --out evidence/gamma-certificate-indep.json",
         "status": "independent rerun (separate code path, Bernstein enclosures) of record -07 (L): PASS", "used_by": "theory/explicit-gamma.md, independent-checks-gamma.md"},
+    "evidence/gamma-compact.json": {
+        "producer": "code/gamma_compact.py",
+        "command": "cwd = topic dir: python3 -B code/gamma_compact.py --anc <scratch>/octa_double.func.cpp --gamma-receipt evidence/gamma-certificate.json --R 100000 --out evidence/gamma-compact.json",
+        "status": "explicit compact-support witness bound for record -05 (Arb): PASS", "used_by": "theory/explicit-gamma-target.md"},
 }
 OFFREPO = [
     {"what": "LP per-run receipts runs/n*_e*.json, lat_*.json, cube[2-4].json, torus_f_n*_e*.npz",

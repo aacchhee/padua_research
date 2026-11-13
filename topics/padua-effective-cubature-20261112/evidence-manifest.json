@@ -70,11 +70,11 @@
   "evidence/gamma-certificate.json": {
    "producer": "code/gamma_certificate.py",
    "command": "cwd = topic dir: python3 -B code/gamma_certificate.py --anc <scratch>/octa_double.func.cpp --alpha 1.001 --R 4 --RG 4 --out evidence/gamma-certificate.json  (input: arXiv:1510.02331v3 anc/octa_double.func.cpp, SHA-256 034a1aea4fafbf29743bded0812723ac8c9cf95274225213578145d016a7bc47; third-party, not committed)",
-   "status": "computer-assisted certificate of record -07 (L): PASS (developer run)",
+   "status": "computer-assisted certificate of record -07 (L), revised 2026-11-13 with certified coefficient errors: PASS (developer run)",
    "used_by": "theory/explicit-gamma.md",
-   "sha256": "2fe3476a5034d74b20de3d9c192910a3d4debfa6020382a382af70b1e57d39c2",
-   "bytes": 1138,
-   "producer_sha256": "a6f841e0646956feaaa947695ebf4ac4ae1c07039da40109f7d8ee57a82b8375"
+   "sha256": "812f9ffb971d6bafe359adf2738405c7ac4f4e62d64582d53ae570822094eb61",
+   "bytes": 1403,
+   "producer_sha256": "52c8c9d9123afdeba2080ee37a456af193fb460051cf596f994a6b52d28fc6ff"
   },
   "evidence/gamma-certificate-indep.json": {
    "producer": "code/gamma_certificate_indep.py",
@@ -84,6 +84,15 @@
    "sha256": "188f765eb92b9e4c994384b77042221f892a1ac16b284f600cb6bca22f16336a",
    "bytes": 2918,
    "producer_sha256": "635077161ada17c14c8e866ba36dc6d90ea971b52f7b47073431a6a4cc826f76"
+  },
+  "evidence/gamma-compact.json": {
+   "producer": "code/gamma_compact.py",
+   "command": "cwd = topic dir: python3 -B code/gamma_compact.py --anc <scratch>/octa_double.func.cpp --gamma-receipt evidence/gamma-certificate.json --R 100000 --out evidence/gamma-compact.json",
+   "status": "explicit compact-support witness bound for record -05 (Arb): PASS",
+   "used_by": "theory/explicit-gamma-target.md",
+   "sha256": "ad6af4ba78c7e327101c35df1b9263f211da5cea573a98ab8d767b66bee3895d",
+   "bytes": 986,
+   "producer_sha256": "da16d3d169f5f80771a1f59d8cdb995d9fed8723555dd317199eda305d292ec5"
   }
  },
  "off_repository": [

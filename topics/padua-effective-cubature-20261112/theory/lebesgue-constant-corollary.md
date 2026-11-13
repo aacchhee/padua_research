@@ -127,7 +127,7 @@ Branch `codex/padua-argmax-bridge-20261105` (head `8a94ce610594e9f52a23ca6b74b57
 
 ## Open items
 
-- Independent check of this statement against the dependency records (handoff 01, C0 item 3).
+- ~~Independent check of this statement against the dependency records (handoff 01, C0 item 3).~~ Done 2026-11-12 (`../independent-checks-C0.md`), dispositioned in History. Audit-01 (2026-11-13) accepted the assembly. *(Current-status note added 2026-11-13, audit-01 A9.)*
 - Allocation of a final PD-T ID and registry row at PR preparation.
 - Optional: ask the P1 author whether c (PD-T271) should get its own row in `p1-comparison.md`.
 

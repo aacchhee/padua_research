@@ -23,8 +23,14 @@ polynomial is Taylor-shifted to the centre M (exact identity p(M+h) = sum_b D_b 
 enclosed by D_0 +- (sum_{b != 0} |D_b| R^b + E), where E = 2^-46 * sum_b Dabs_b R^b bounds the
 floating-point error of the computed shift (each D_b is formed in three stages of <= 14
 products of rounded binom(k,j) m^(k-j); total relative error < 60 u of the absolute-value
-computation Dabs; 2^-46 = 128 u). Coefficients enter as correctly rounded doubles of exact
-rationals (P) or of 60-digit values (G, which lie in Q[1/pi]).
+computation Dabs; 2^-46 = 128 u). All powers m^e and R^k are formed by explicit repeated
+multiplication (no library pow), so the rounding count above is literal.
+Coefficients (revision of 2026-11-13, audit-01 A2): each exact coefficient c (a rational for P,
+an element of Q[1/pi] for G, evaluated as an Arb ball at 256 bits) is stored as a double c~ together
+with a certified bound e >= |c - c~| (exact Fraction arithmetic for P; Arb abs_upper for G,
+rounded up). The polynomial with coefficients c~ is enclosed as above, and the coefficient error
+is added as sum_a e_a (M+R)^a >= |sum_a (c_a - c~_a) y^a| for y in the box (y >= 0). No
+correct-rounding assumption on the coefficients is used.
 Tails: for rho = |x|_inf >= R the point x = rho*y has y on the face y3 = 1, 0 <= y1 <= y2 <= 1,
 and P(x) = sum_k t^k P_2k(y) with t = rho^2. A 2-D branch and bound on the face encloses every
 homogeneous part P_2k and requires all coefficients of the shifted univariate polynomial
@@ -138,11 +144,20 @@ def tensor(coef):
     return T
 
 
+def powers(m):
+    """(nb,) -> (nb, 14): m^e by repeated multiplication (e-1 roundings for e >= 2)."""
+    out = np.ones((len(m), DEG + 1))
+    for e in range(1, DEG + 1):
+        out[:, e] = out[:, e - 1] * m
+    return out
+
+
 def shift_matrices(m):
     """m: (nb,) >= 0. Returns (nb, 14, 14) with B[j,k] = binom(k,j) m^(k-j)."""
     k = np.arange(DEG + 1)
     e = k[None, :] - k[:, None]                         # k - j
-    pw = np.where(e >= 0, m[:, None, None] ** np.maximum(e, 0)[None], 0.0)
+    pw_tab = powers(m)
+    pw = np.where(e >= 0, pw_tab[:, np.maximum(e, 0)], 0.0)
     return BINOM[None] * pw
 
 
@@ -153,9 +168,9 @@ def _shift(T, B, axis):
     return np.moveaxis(out, -1, axis)
 
 
-def taylor_enclose(Cten, Cabs, M, R, batch=4000):
-    """Rigorous enclosure of the y-polynomial (tensor Cten, any dimension d) over the boxes
-    M +- R in y-space (rows). Returns (lo, hi)."""
+def taylor_enclose(Cten, Cabs, M, R, batch=4000, Eten=None):
+    """Rigorous enclosure, over the boxes M +- R in y-space (rows, y >= 0), of the exact
+    y-polynomial whose coefficients differ from the tensor Cten by at most Eten (>= 0)."""
     d = Cten.ndim
     nb = len(M); lo = np.empty(nb); hi = np.empty(nb)
     k = np.arange(DEG + 1)
@@ -168,13 +183,17 @@ def taylor_enclose(Cten, Cabs, M, R, batch=4000):
             D = _shift(D, Bi, i + 1)
             Da = _shift(Da, np.abs(Bi), i + 1)
         W = np.ones((n,) + (1,) * d)
+        V = np.ones((n,) + (1,) * d)                  # (M+R)^a for the coefficient error
         for i in range(d):
             shp = [n] + [1] * d; shp[i + 1] = DEG + 1
-            W = W * (R[sl, i][:, None] ** k[None, :]).reshape(shp)
+            W = W * powers(R[sl, i]).reshape(shp)
+            V = V * powers(M[sl, i] + R[sl, i]).reshape(shp)
         axes = tuple(range(1, d + 1))
         D0 = D[(slice(None),) + (0,) * d]
         S = (np.abs(D) * W).sum(axes) - np.abs(D0)
         E = (GAMMA * Da * W).sum(axes)
+        if Eten is not None:                          # certified coefficient-conversion error
+            E = E + (Eten[None] * V).sum(axes)
         tot = (S + E) * (1 + 2.0 ** -40) + 1e-300
         lo[sl] = D0 - tot
         hi[sl] = D0 + tot
@@ -192,11 +211,12 @@ def in_F(L, U):
     return (np.maximum(L[:, 0], L[:, 1]) <= U[:, 1]) & (np.max(L, axis=1) <= U[:, 2])
 
 
-def bnb(Cten, want, R, region_alpha=None, max_boxes=20_000_000, min_width=2.0 ** -24, log=None):
+def bnb(Cten, want, R, region_alpha=None, max_boxes=20_000_000, min_width=2.0 ** -24, log=None,
+        Eten=None):
     """Certify poly <= 0 (want='hi') or >= 0 (want='lo') on F cap [0,R]^3 (cap |x|_1 >= alpha)."""
     Cabs = np.abs(Cten)
     L = np.zeros((1, 3)); U = np.full((1, 3), float(R))
-    certified = 0; processed = 0; failures = []; leaves = []; it = 0
+    certified = 0; processed = 0; failures = []; leaves = []; it = 0; min_leaf = float(R)
     while len(L):
         keep = in_F(L, U)
         if region_alpha is not None:
@@ -205,8 +225,11 @@ def bnb(Cten, want, R, region_alpha=None, max_boxes=20_000_000, min_width=2.0 **
         if not len(L):
             break
         M, Ry = xbox_to_y(L, U)
-        lo, hi = taylor_enclose(Cten, Cabs, M, Ry)
+        assert (U - L).min() >= min_width       # dyadic endpoints with <= 26 bits: exact squares
+        lo, hi = taylor_enclose(Cten, Cabs, M, Ry, Eten=Eten)
         ok = (hi <= 0) if want == "hi" else (lo >= 0)
+        if ok.any():
+            min_leaf = min(min_leaf, float((U[ok] - L[ok]).min()))
         certified += int(ok.sum()); processed += len(L)
         leaves.append(np.hstack([L[ok], U[ok]]))
         L, U = L[~ok], U[~ok]
@@ -225,24 +248,27 @@ def bnb(Cten, want, R, region_alpha=None, max_boxes=20_000_000, min_width=2.0 **
         if log and it % 5 == 0:
             log(f"  {want}: iter {it}, processed {processed}, certified {certified}, open {len(L)}")
     return ({"processed": processed, "certified": certified, "failures": failures[:20],
-             "n_failures": len(failures)}, np.vstack(leaves) if leaves else np.zeros((0, 6)))
+             "n_failures": len(failures), "min_leaf_width": min_leaf, "iterations": it},
+            np.vstack(leaves) if leaves else np.zeros((0, 6)))
 
 
-def tail(Cten, sign, R, log=None, min_width=2.0 ** -24, max_boxes=2_000_000):
+def tail(Cten, sign, R, log=None, min_width=2.0 ** -24, max_boxes=2_000_000, Eten=None):
     """For rho = |x|_inf >= R, x = rho*y with y on the face y3 = 1, 0 <= y1 <= y2 <= 1:
     P(x) = sum_k t^k P_2k(y), t = rho^2. On each face box enclose every P_2k (Taylor form in
     (y1^2, y2^2); y3 = 1 exactly), shift t = R^2 + s and require all shifted coefficients
     <= 0 (sign=+1) or >= 0 (sign=-1); then the sign holds for all t >= R^2."""
     t0 = float(R) ** 2
-    parts = []                                   # P_2k restricted to y3 = 1: 2-D tensors
+    parts = []; perrs = []                      # P_2k restricted to y3 = 1: 2-D tensors
+    E3 = np.zeros_like(Cten) if Eten is None else Eten
     for k in range(DEG + 1):
-        Tk = np.zeros((DEG + 1, DEG + 1))
+        Tk = np.zeros((DEG + 1, DEG + 1)); Ek = np.zeros((DEG + 1, DEG + 1))
         for a1 in range(DEG + 1):
             for a2 in range(DEG + 1 - a1):
                 a3 = k - a1 - a2
                 if 0 <= a3 <= DEG:
                     Tk[a1, a2] = Cten[a1, a2, a3]
-        parts.append(Tk)
+                    Ek[a1, a2] = E3[a1, a2, a3]
+        parts.append(Tk); perrs.append(Ek)
     L = np.array([[0.0, 0.0]]); U = np.array([[1.0, 1.0]])
     n_ok = 0; n_proc = 0
     from math import comb
@@ -254,7 +280,7 @@ def tail(Cten, sign, R, log=None, min_width=2.0 ** -24, max_boxes=2_000_000):
         if not len(L):
             break
         M, Ry = xbox_to_y(L, U)
-        enc = [taylor_enclose(Tk, np.abs(Tk), M, Ry) for Tk in parts]
+        enc = [taylor_enclose(Tk, np.abs(Tk), M, Ry, Eten=Ek) for Tk, Ek in zip(parts, perrs)]
         lo = np.stack([e[0] for e in enc], 1); hi = np.stack([e[1] for e in enc], 1)
         if sign > 0:   # upper bounds of b_j = sum_k binom(k,j) t0^(k-j) a_k, coefficients >= 0
             ok = np.all(hi @ shiftB.T + 2.0 ** -40 * (np.abs(hi) @ shiftB.T) <= 0, axis=1)
@@ -294,37 +320,45 @@ def main():
         for perm in [(1, 0, 2), (0, 2, 1)]:
             kk = tuple(k[p] for p in perm)
             assert G.get(kk) == d, "G not symmetric"
-    import mpmath as mp
-    mp.mp.dps = 60
-    Gf = {k: float(pi_poly_to_mp(d, mp)) for k, d in G.items()}
-    Pf = {k: float(v) for k, v in P.items()}
+    from flint import arb, ctx, fmpq
+    ctx.prec = 256
+    pi_b = arb.pi()
+    up = lambda v: float(v) * (1 + 2.0 ** -50) + 1e-300     # round a nonnegative bound upward
+    Pf, Pe, Gf, Ge = {}, {}, {}, {}
+    for k, v in P.items():                       # exact rational -> double, exact error
+        Pf[k] = float(v); Pe[k] = up(abs(v - Fraction(Pf[k])))
+    for k, d in G.items():                       # Q[1/pi] -> Arb ball -> double + certified error
+        b = sum(arb(fmpq(q.numerator, q.denominator)) * pi_b ** e for e, q in d.items())
+        Gf[k] = float(b.mid())
+        Ge[k] = up((b - arb(Fraction(Gf[k]).numerator) / arb(Fraction(Gf[k]).denominator)).abs_upper())
     # exact identity G_26 = -P_26
     for k, v in P.items():
         if sum(k) == 13:
             assert G[k] == {0: -v}, "top-degree identity failed"
     log(f"P terms {len(P)}, G terms {len(G)}; G symmetric; G_26 = -P_26 exactly")
     Pt, Gt = tensor(Pf), tensor(Gf)
+    PE, GE = tensor(Pe), tensor(Ge)
     R = Fraction(a.R)
     RG = Fraction(a.RG)
     alpha = Fraction(a.alpha)
     res = {"anc_sha256": sha, "anc_sha_expected": ANC_SHA, "alpha": str(alpha), "R": str(R),
            "script_sha256": hashlib.sha256(open(__file__, "rb").read()).hexdigest(),
-           "python": sys.version.split()[0], "numpy": np.__version__}
+           "python": sys.version.split()[0], "numpy": np.__version__,
+           "max_coef_err_P": max(Pe.values()), "max_coef_err_G": max(Ge.values())}
     # tails
     res["RG"] = str(RG)
-    res["tail_P"] = tail(Pt, +1, float(R))
-    res["tail_G"] = tail(Gt, -1, float(RG))
+    res["tail_P"] = tail(Pt, +1, float(R), Eten=PE)
+    res["tail_G"] = tail(Gt, -1, float(RG), Eten=GE)
     log(f"tails: P {res['tail_P']}, G {res['tail_G']}")
     # boxes
-    rP, leavesP = bnb(Pt, "hi", float(R), region_alpha=float(alpha), log=log)
+    assert Fraction(float(alpha)) <= alpha       # l1 discard threshold rounds in the safe direction
+    rP, leavesP = bnb(Pt, "hi", float(R), region_alpha=float(alpha), log=log, Eten=PE)
     log(f"P <= 0 on |x|_1 >= alpha: {rP['processed']} boxes, certified {rP['certified']}, failures {rP['n_failures']}")
-    rG, leavesG = bnb(Gt, "lo", float(RG), log=log)
+    rG, leavesG = bnb(Gt, "lo", float(RG), log=log, Eten=GE)
     log(f"G >= 0: {rG['processed']} boxes, certified {rG['certified']}, failures {rG['n_failures']}")
     res["boxes_P"], res["boxes_G"] = rP, rG
     # value with arb
-    from flint import arb, ctx, fmpq
-    ctx.prec = 200
-    pi = arb.pi()
+    pi = pi_b
     G0 = sum(arb(fmpq(q.numerator, q.denominator)) * pi ** e for e, q in G[(0, 0, 0)].items())
     P0 = arb(fmpq(P[(0, 0, 0)].numerator, P[(0, 0, 0)].denominator))
     al = arb(fmpq(alpha.numerator, alpha.denominator))

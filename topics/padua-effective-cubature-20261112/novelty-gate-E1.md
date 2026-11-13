@@ -40,5 +40,40 @@ One surviving mechanism (-01), recorded as a variant/new combination with no pri
 
 ## Addendum (2026-11-12, after the session-1 numerics)
 
-- -02 (plain Turán LP): the plain torus LP is measured at Fisher, ρ_n = 1 within 3e-6 for n = 2…12 (`gates.md` Q2 KILL). Disposition: unchanged, deferred, and the method is killed as a fixed-γ route. This is not a statement about T(int 2O).
+- -02 (plain Turán LP): the plain torus LP is measured at Fisher, ρ_n = 1 within 3e-6 for n = 2…12 (`gates.md` Q2 KILL). Disposition: unchanged, deferred, and the method is killed as a fixed-γ route. *(Corrected 2026-11-13, response-01 A6/A9: within 5.7e-6. Q2 says not promising, and its pre-registered KILL is not established. Disposition: deferred at discretion, not killed.)* This is not a statement about T(int 2O).
 - -03: updated above. -06 added; mechanism grep for "negative semidefinite"/"Delsarte" in `state/IDEAS.md` found no prior entry (same search scope as above).
+
+## Addendum (2026-11-13, response-01, audit-01 A8 / C-N3) — actual coverage and timing, and a RETROSPECTIVE completion
+
+**Timing, reconstructed from Git (not from memory alone).**
+- Records -02, -03, -04 and -05 were committed at `0f1d797` (2026-11-12 14:02:30 UTC).
+- This gate file was first committed at `689354d` (14:04:07 UTC), after them, and its header names `0f1d797` as the branch head.
+- The IDEA-07 addendum (Cohn–Elkies function for cubature) was committed at `063e5f5` (21:29 UTC), after the explicit-γ campaign rounds 1–2.
+- So neither record demonstrates a prospective gate. The reading listed in "Scope and terms" above happened during session 1, but nothing in the repository shows that it preceded the generation of the mechanisms. This gate is therefore recorded as **not prospective**.
+
+**Coverage actually recorded on 2026-11-12.**
+- All section headings of `state/IDEAS.md`.
+- One obstruction table (L106–117).
+- The Padua 3-D block (L1157–1278) row by row.
+- The selected full rows listed above.
+- The term greps listed above.
+
+This is less than the WORKFLOW requirement, which also asks for every obstruction and disposition table in full.
+
+**Retrospective completion (2026-11-13, orchestrator, at `6a12cf8`; `state/IDEAS.md` unchanged since main `b5388c2`, 1278 lines).**
+- **Tables read in full.** Every obstruction and disposition table: L5–25 (canonical dispositions), L106–117, L258–276 (obstruction) and L278–289 (seed dispositions), L400–410 (MZ obstruction memory), L412–442 (current MZ dispositions), L466–476 (lattice), L509–517 (programme ideas), L582–633 (bivariate-Lanczos seed dispositions), L768–787 (Padua MZ 2D), L849–854 (PR12 addenda) and L915–921 (scoped argmax obstructions).
+- **Display caveat.** Cells were displayed to their first 260 characters; the rows were read in that form, and no truncated remainder was needed to decide relevance.
+- **Result: no row registers a Delsarte, Turán, positive-definite/positive-type, Cohn–Elkies, packing-LP or kernel-LP mechanism for cubature lower bounds.** The nearest hits:
+  - PD-N041 (a positive-deficit lower bound for joint Ritz residuals);
+  - PD-N043 (a Fourier-basis commutation failure);
+  - PD-N047/N053 (tensor-CC and Fourier-coefficient obstructions for MZ operators).
+  
+  All are different mechanisms.
+- **Consistency with the audit.** audit-01's independent full read (all 1278 lines, `audit-work/corollary-novelty.md`) likewise found no duplicate. It notes that IDEA-168 is an orthogonal-polynomial Turán certificate, not a Delsarte positive-definite extremal problem. It also notes that S4 (`topics/padua-3d-20261106/frontier-2026-11-08/S4.md` L78) already proposes a "Delsarte/Cohn–Elkies LP" route to an explicit constant.
+- **Verdicts after the retrospective completion: unchanged.**
+  - IDEA?…-01 and -07: variant / new combination of known tools.
+  - Candidates -02 to -06: deferred or pending as recorded, with -02 corrected per A6.
+  - The new ingredients are the explicit transference inequality, the KLM strictness link, the local certificate and the compact cutoff, not the broad route that S4 proposed.
+  - No priority claim.
+
+This completion is retrospective: it does not convert the 2026-11-12 record into a prospective gate.

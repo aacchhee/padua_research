@@ -134,3 +134,22 @@ Target: record -05. That is, an explicit γ₁ > 0 with γ_A ≥ γ₁, and with
 - Independent rerun on a separate code path, `code/gamma_certificate_indep.py`: PASS (`evidence/gamma-certificate-indep.json`, `independent-checks-gamma.md`). The orchestrator replayed it with the same verdict.
 - γ₁ = 0.02784156869077655… ∈ (1/36, 1/18).
 - The campaign used 3 of 7 rounds. The improvement direction was stopped after one empty round (round 3); the kill rule was not triggered.
+
+### Q2 corrected verdict and Q1c correction (2026-11-13, response-01; audit-01 A6, A9)
+
+This entry supersedes the 2026-11-12 "Plain torus LP: KILL" verdict above, which is kept for the record.
+
+**Plain torus LP: NOT PROMISING; the pre-registered KILL is NOT established.**
+- **Promising test: fails.** ρ_n < 1.02 at every tested n ≥ 8; the largest value is 1 + 4.6·10⁻⁶ at n = 8.
+- **Kill test: not met.** The pre-registered kill needs the fitted n(ρ_n − 1) to be non-increasing over the last four tested degrees. From the stored upper values, n(ρ_n − 1) = 2.741·10⁻⁵, 2.644·10⁻⁵, 2.850·10⁻⁵, 3.247·10⁻⁵ at n = 9…12. These are not non-increasing, and no fit was supplied.
+- **Why no fit is possible.** All of these values lie at the cut-plane solver's tolerance scale, and the exact lower bound is ρ_n ≥ 1. The data therefore do not determine the sequence ρ_n − 1, and no fit is meaningful.
+- **Literature alternative.** The "T(2O) = |O|" alternative of the kill rule remains open (KLM p. 2).
+- **What was wrong on 2026-11-12.** That verdict treated values within tolerance as zero. This was a rule added after the fact, not the pre-registered one.
+- **Disposition.** The plain-LP route is deferred at the orchestrator's discretion, because it is not promising: the measured values are indistinguishable from Fisher. This is a discretionary stop, not a met KILL. It is also moot for γ: the Delsarte route (records -02, -03, -07) supersedes it, since D ≥ T.
+
+**Q1c and Q2 numerical envelope, corrected.**
+- The plain ratios lie in [1, 1 + 5.7·10⁻⁶], not [1, 1 + 3·10⁻⁶]. The maximum is 1 + 5.62·10⁻⁶ at n = 7; n = 8 and 9 are also above 3·10⁻⁶.
+- The B&B lower bound was complete in three runs (n = 2, e = 0, 2, 4), with value 6.994 < m₂ = 7. It was incomplete in all other runs. The conclusion is unchanged: no rigorous lower bound above Fisher was obtained.
+- **Reproduction command for the cube sanity control.** `--out` is required; the command in handoff 03 omitted it:
+
+  `python3 -B topics/padua-effective-cubature-20261112/code/lp_cube.py --q1a --out <scratch>/q1a-cube.json`.
