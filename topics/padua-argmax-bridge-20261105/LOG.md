@@ -3041,3 +3041,14 @@ explicitly pending. The PR stays draft; AC alone merges or publishes.
 Next: [handoff32 — focused Claude audit of response04](handoffs/32-claude-audit-response04.md).
 The prepared PR update is [pr-update-20261113.md](pr-update-20261113.md);
 remote metadata update follows the committed response and handoff.
+
+### Published handoff and PR metadata
+
+Handoff31 is done in f81682557c104e18497d2e08278a99bb97572773;
+handoff32 was published at1a2d14a0ae1f2df1035834d837839136678b17c4.
+The prepared WORK/AUDIT/PR body was successfully applied to PR27 through the
+structured GitHub update tool on2026-11-13; it remains draft, unmerged, with
+all evidence-access and budget limits explicit. The earlier session's
+automatic metadata-edit block is historical and does not describe this
+successful update. This final addendum changes only execution history,
+not the audited sources, freeze, code, claims, inputs or handoff scope.
