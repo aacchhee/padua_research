@@ -8,6 +8,10 @@ floating-point, repository evaluator, certificate or native code is used.
 from fractions import Fraction as F
 import json
 import platform
+import sys
+
+if sys.flags.optimize:
+    raise SystemExit('optimization is not permitted for the exact analytic checker')
 
 SCALE = 2**128
 
@@ -139,6 +143,7 @@ def elementary_constants():
     assert kap.lo > F(9, 10)
     assert gamma.lo > F(23, 40) and gamma.hi < F(3, 5)
     assert LOG2.lo > F(69, 100) and LOG2.hi < F(6932, 10000)
+    assert log(PI).lo > F(11, 10)
     assert log(PI).hi < F(23, 20)
     assert PI.lo**2 > F(197, 20) and PI.hi**2 < 10
     assert PI.lo > F(157, 50) and PI.hi < F(22, 7)

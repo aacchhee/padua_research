@@ -172,13 +172,13 @@ def check_members(payload, prefix, degrees, selected, helpers):
                   'essential-receipt.json', 'raw-evidence.json', 'summary.json',
                   'final-accounting.json', 'local-validation.json', 'S-build.json',
                   'lambda-build.json', 'runtime-before.json', 'runtime-after.json',
-                  'loaded-before.maps', 'loaded-after.maps'}
+                  'loaded-before.maps', 'loaded-after.maps', 'storage-dedup.json'}
     pass_files.update(stage + suffix for stage in ('controls', 'checker')
                       for suffix in ('-entry.json', '-checkpoint.json', '-descendants.json',
                                      '-supervisor.json', '.stdout', '.stderr'))
     top = {'preregistration.json', 'helper-source-pins.json', 'return-provenance.json',
            'compact-selection.json', 'pilot-admitted.json', 'remaining-admitted.json',
-           'pilot-summary.json', 'remaining-summary.json'}
+           'pilot-summary.json', 'remaining-summary.json', '.preserve.lock'}
     outside = {'README.txt', 'TRUSTED_RUNTIME_MANIFEST.json', 'TRUSTED_ASSET_PROVENANCE.json',
                Path(R.__file__).relative_to(R.ROOT).as_posix(),
                Path(__file__).resolve().relative_to(R.ROOT).as_posix()}
@@ -196,6 +196,8 @@ def check_members(payload, prefix, degrees, selected, helpers):
         parts = Path(name[len(prefix)+1:]).parts
         if len(parts) == 1:
             require(parts[0] in top, 'unregistered campaign member: ' + name)
+            if parts[0] == '.preserve.lock':
+                require(payload[name] == b'', 'preserve lock must be empty')
         elif parts[0] == 'helper-source':
             require(len(parts) == 2 and parts[1] in helper_names, 'unregistered helper source')
         else:
@@ -211,6 +213,18 @@ def check_members(payload, prefix, degrees, selected, helpers):
                         int(parts[1]) in selected, 'unsampled native history')
                 if len(parts) == 4:
                     require(parts[3] in pass_files, 'unregistered pass member')
+                    if parts[3] == 'storage-dedup.json':
+                        receipt = strict(payload[name])
+                        counts = ('immutable_paths_examined', 'paths_relinked', 'logical_bytes_relinked')
+                        require(type(receipt) is dict and set(receipt) == {*counts, 'scope'},
+                                'storage dedup receipt schema')
+                        require(all(type(receipt[key]) is int and receipt[key] >= 0 for key in counts),
+                                'storage dedup nonnegative integer counts')
+                        require(receipt['paths_relinked'] <= receipt['immutable_paths_examined'] and
+                                (receipt['paths_relinked'] != 0 or receipt['logical_bytes_relinked'] == 0),
+                                'storage dedup consistent counts')
+                        require(receipt['scope'] == 'identical bytes and paths retained; logs/JSON untouched',
+                                'storage dedup scope')
                 if len(parts) > 4:
                     require(int(parts[1]) in selected and parts[3].startswith('check-'),
                             'unregistered nested pass member')

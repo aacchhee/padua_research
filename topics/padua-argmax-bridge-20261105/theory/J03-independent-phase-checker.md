@@ -266,3 +266,18 @@ and four computed runtime probes for ties-to-even, gradual underflow and
 nextafter. All passed here on Python 3.12.14 / NumPy 2.3.5; this is finite
 runtime evidence, not proof of the full IEEE model or a certificate rerun.
 Command: `python3 -E -B topics/padua-argmax-bridge-20261105/code/independent_phase_checker/runtime_probe.py`.
+
+
+### Audit-05 runtime-probe correction — 2026-11-13
+
+E5-04 found that the earlier floating-point equality probe could report
+gradual underflow even with both FTZ and DAZ enabled: DAZ also affected
+its comparison. Thus the earlier four true results do not establish
+absence of that combined mode. The revised supplementary runtime_probe.py
+compares actual uint64 encodings for the division result and nextafter
+result. Its new tests reject FTZ and FTZ|DAZ on the probed operation.
+This remains finite, prospective evidence for those operations in that
+process, not proof of all binary64 operations/SIMD loops, a historical
+worker's mode or universal hardware/libm conformance. The frozen numerical
+checker, prior run sources and historical results are unchanged. Current
+code identities, independent controls and limits belong to response-05.

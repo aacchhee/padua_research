@@ -1,8 +1,9 @@
-"""Synthetic regression for E4-01..04; no native campaign or real-proof claim.
+"""Synthetic regression for E4-01..04 and E5-01; no native campaign or real-proof claim.
 
 Run python3 -E -B .../check_reader_repairs.py. Temporary ZIPs are rehashed after
 mutations. The positive fixture uses a marked checker/closure adapter because the
-canonical ZIP and separately trusted release are not part of this checkout.
+canonical ZIP is absent. A real storage/export roundtrip uses synthetic data.
+Only trust/checker arithmetic and sampled closure verification use marked adapters.
 """
 import contextlib
 import copy
@@ -20,6 +21,7 @@ import zipfile
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import return_bundle as B
+from storage import deduplicate
 import verify_compact as V
 
 
@@ -35,13 +37,22 @@ def rejects(call, reason):
     raise RuntimeError('unexpected acceptance: ' + reason)
 
 
-def fixture():
-    root = '/recorded'; prefix = 'out'; docs = {}; frozen = {'path': '/frozen', 'bytes': 1, 'sha256': B.sha(b'f')}
+def fixture(root='/recorded', assets=None):
+    root = str(root); prefix = 'out'; docs = {}; frozen = {'path': '/frozen', 'bytes': 1, 'sha256': B.sha(b'f')}
     pins = {'source': [], 'arithmetic_files': {}, 'freeze': frozen, 'asset_provenance': frozen}
     helper = b'# synthetic helper\n'
     helper_pin = {'path': '/original/evidence.py', 'bytes': len(helper), 'sha256': B.sha(helper), 'input_head_equal': True}
+    if assets is not None:
+        assets.mkdir()
+        (assets / 'frozen').write_bytes(b'f')
+        (assets / 'python').write_bytes(b'p')
+        (assets / 'evidence.py').write_bytes(helper)
+        frozen = B.R.identity(assets / 'frozen')
+        pins.update(freeze=frozen, asset_provenance=frozen)
+        helper_pin.update(B.R.identity(assets / 'evidence.py'))
     reg = {'degrees': list(range(320, 511)), 'pins': pins, 'runner': {'sha256': B.CAMPAIGN_RUNNER_SHA},
-           'compact_evidence': helper_pin, 'python': {'path': '/python', 'bytes': 1, 'sha256': 'p'}}
+           'compact_evidence': helper_pin, 'python': (B.R.identity(assets / 'python') if assets is not None
+                                                           else {'path': '/python', 'bytes': 1, 'sha256': 'p'})}
     def put(name, value):
         data = B.encoded(value); docs[name] = data
         return {'path': root + '/' + name, 'bytes': len(data), 'sha256': B.sha(data)}
@@ -74,7 +85,7 @@ def fixture():
                 'engine_config': config, 'result': B.LABELS[mode], 'total_CPU_through_summary': 1,
                 'final_self_limit': {'no_live_children': True, 'waited_child_CPU': 1, 'absolute_self_CPU_hard': 1}})
             put(target + '/local-validation.json', {'receipt': receipt, 'raw': raw})
-            command = ['/python', '-E', '-S', '-B', root + '/topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py',
+            command = [reg['python']['path'], '-E', '-S', '-B', root + '/topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py',
                        '--mode', mode, '--n', str(n), '--output', config['output'], '--run-once']
             if mode == 'verify': command += ['--certificate', primary['path']]
             ex = {'observed_returncode': 0, 'ECHILD': True, 'timeout': False, 'cleanup_killed': [], 'command': command}
@@ -92,6 +103,69 @@ def fixture():
                   'degrees': reg['degrees'], 'selection': selection}, pins
 
 
+def producer_roundtrip(temp, release, manifest, controls):
+    """Run real completed/export/deduplicate; adapt only trust and proof arithmetic.
+
+    This is synthetic data, never an engine invocation. Build artifacts are tiny
+    inert bytes; the real storage helper authenticates and hardlinks them.
+    """
+    tree = temp / 'producer-tree'; tree.mkdir()
+    output = tree / 'out'
+    docs, _, pins = fixture(tree, temp / 'producer-assets')
+    for name, data in docs.items():
+        if name in ('out/return-provenance.json', 'out/compact-selection.json'): continue
+        path = tree / name; path.parent.mkdir(parents=True, exist_ok=True); path.write_bytes(data)
+    # Export includes both trusted script identities; preserve their real names
+    # relative to the synthetic package instead of bypassing export's add().
+    scripts = []
+    for source in (Path(B.__file__), Path(B.R.__file__)):
+        target = tree / source.relative_to(B.R.ROOT)
+        target.parent.mkdir(parents=True, exist_ok=True); target.write_bytes(source.read_bytes()); scripts.append(target)
+    examined = relinked = 0
+    for n in range(320, 511):
+        for mode in ('produce', 'verify'):
+            target = output / 'jobs' / str(n) / mode
+            work = target / 'check-synthetic'; work.mkdir()
+            build = {'workdir': str(work), 'linked_dependency_closure': []}
+            for key in ('source_snapshot', 'preprocessed_translation_unit', 'checker_binary'):
+                path = work / key; path.write_bytes(b'inert synthetic build bytes\n')
+                build[key] = B.R.identity(path)
+            B.R.save(target / 'S-build.json', build)
+            receipt = deduplicate(output, target)
+            examined += receipt['immutable_paths_examined']; relinked += receipt['paths_relinked']
+    require(examined == 1146 and relinked > 0, 'real storage paths were not deduplicated')
+    require((output / '.preserve.lock').read_bytes() == b'', 'producer lock')
+    events = []; sampled = []
+    class ArithmeticAdapter:
+        def __init__(self, *args, read_bytes=None):
+            if read_bytes is not None:
+                events.append('checker'); require(events[-2:] == ['pins', 'checker'], 'roundtrip import order')
+            self.reader = read_bytes
+            self.checker = SimpleNamespace(verify_essential=lambda proof, freeze: proof['verification'])
+        def data(self, name): return self.reader(name)
+    def checked_pins(): events.append('pins'); return pins
+    archive = temp / 'producer-roundtrip.zip'
+    with patch.object(B.R, 'ROOT', tree), patch.object(B.R, 'RELEASE', release), \
+         patch.object(B.R, '__file__', str(scripts[1])), patch.object(B, '__file__', str(scripts[0])), \
+         patch.object(B.R, 'pins', checked_pins), patch.object(B.R, 'LocalAccess', ArithmeticAdapter), \
+         patch.object(B, 'Access', ArithmeticAdapter), patch.object(B, 'MANIFEST_SHA', B.sha(manifest)), \
+         patch.object(B, 'validate_pass', lambda a, target, n, mode, m: sampled.append((n, mode))):
+        exported = B.export(output, archive)
+        with zipfile.ZipFile(archive) as bundle:
+            require(bundle.read('out/.preserve.lock') == b'', 'export omitted produced lock')
+            receipts = [name for name in bundle.namelist() if name.endswith('/storage-dedup.json')]
+            require(len(receipts) == 382, 'export omitted produced storage receipts')
+            for name in receipts:
+                require(bundle.read(name) == (tree / name).read_bytes(), 'produced receipt bytes changed')
+        with contextlib.redirect_stdout(io.StringIO()) as captured:
+            B.verify(archive, B.sha(archive.read_bytes()))
+        result = json.loads(captured.getvalue())
+        require(result['pairs'] == 191 and result['proofs'] == 382 and len(sampled) == 4,
+                'roundtrip reader coverage')
+        require(exported['selection']['selected'] == result['sample'], 'roundtrip sample')
+    controls.append('real deduplicate/completed/export/reader roundtrip: 382 produced receipts and empty lock')
+
+
 def main():
     controls = []
     with tempfile.TemporaryDirectory(prefix='reader-repairs-') as temp:
@@ -99,6 +173,7 @@ def main():
         asset = b'{}'; manifest = B.encoded({'files': {'asset_provenance.json': {'bytes': 2, 'sha256': B.sha(asset)}}})
         (release / 'asset_provenance.json').write_bytes(asset)
         (release / 'runtime_manifest.json').write_bytes(manifest)
+        producer_roundtrip(temp, release, manifest, controls)
         docs, inventory, pins = fixture()
         docs['TRUSTED_RUNTIME_MANIFEST.json'] = manifest; docs['TRUSTED_ASSET_PROVENANCE.json'] = asset
         inventory['trusted_manifest'] = B.R.identity(release / 'runtime_manifest.json')
@@ -135,6 +210,31 @@ def main():
             result = run(docs)
             require(result['pairs'] == 191 and result['proofs'] == 382 and result['reader']['sha256'] == B.R.identity(B.__file__)['sha256'], 'verified counts/reader SHA')
             require(len(sampled) == 4, 'sample closure calls'); controls.append('positive adapted 191-pair baseline')
+            dedup = {'immutable_paths_examined': 3, 'paths_relinked': 2, 'logical_bytes_relinked': 4,
+                     'scope': 'identical bytes and paths retained; logs/JSON untouched'}
+            produced = dict(docs); produced['out/.preserve.lock'] = b''
+            member = 'out/jobs/320/produce/storage-dedup.json'
+            produced[member] = B.encoded(dedup)
+            run(produced); controls.append('allowlisted storage receipt and empty lock')
+            bad = dict(produced); bad['out/.preserve.lock'] = b'x'
+            rejects(lambda: run(bad), 'preserve lock must be empty'); controls.append('nonempty preserve lock')
+            for label, value, reason in [
+                ('missing key', {k: v for k, v in dedup.items() if k != 'scope'}, 'receipt schema'),
+                ('extra key', dict(dedup, extra=1), 'receipt schema'),
+                ('nonobject', [], 'receipt schema'),
+                ('boolean count', dict(dedup, paths_relinked=True), 'integer counts'),
+                ('float count', dict(dedup, paths_relinked=1.0), 'integer counts'),
+                ('negative count', dict(dedup, logical_bytes_relinked=-1), 'integer counts'),
+                ('too many relinks', dict(dedup, paths_relinked=4), 'consistent counts'),
+                ('bytes without relinks', dict(dedup, paths_relinked=0), 'consistent counts'),
+                ('scope', dict(dedup, scope='forged'), 'dedup scope')]:
+                bad = dict(produced); bad[member] = B.encoded(value)
+                rejects(lambda bad=bad: run(bad), reason); controls.append('storage dedup ' + label)
+            for label, data, reason in [
+                ('duplicate key', B.encoded(dedup).replace(b'"paths_relinked": 2', b'"paths_relinked": 2, "paths_relinked": 2'), 'duplicate JSON key'),
+                ('NaN', B.encoded(dedup).replace(b'"paths_relinked": 2', b'"paths_relinked": NaN'), 'nonfinite JSON')]:
+                bad = dict(produced); bad[member] = data
+                rejects(lambda bad=bad: run(bad), reason); controls.append('storage dedup ' + label)
             for name in ('../x', '/x', './x', 'a//b'):
                 rejects(lambda name=name: run({}, members=[(name, b'1')]), 'required: not path.is_absolute()'); controls.append('unsafe ' + name)
             rejects(lambda: run({}, members=[('dir/', b'')]), 'required: not path.is_absolute()'); controls.append('directory')
@@ -164,6 +264,18 @@ def main():
                 ('out/jobs/320/produce-exit.json', 'cleanup_killed', False, 'cleanup_killed'),
             ]:
                 rejects(lambda: run(mutate(name, key, value)), reason); controls.append(name + ':' + key)
+            for label, member, data, reason in [
+                ('unsampled native history', 'out/jobs/404/produce/check-abc/deps/libx.so', b'x', 'unsampled native history'),
+                ('wrong preserved hash', 'preserved-sha256/' + B.sha(b'other'), b'not-other', 'preserved object hash'),
+                ('extra helper', 'out/helper-source/extra.py', b'# extra', 'unregistered helper source'),
+                ('changed original certificate', 'out/jobs/403/verify/original-certificate.json',
+                 docs['out/jobs/403/verify/original-certificate.json'] + b' ', 'original-certificate'),
+                ('duplicate attempt key', 'out/jobs/335/attempt.json',
+                 docs['out/jobs/335/attempt.json'].replace(b'"terminal": true', b'"terminal": true, "terminal": true'), 'duplicate JSON key')]:
+                bad = dict(docs); bad[member] = data
+                rejects(lambda bad=bad: run(bad), reason); controls.append(label)
+            rejects(lambda: run(mutate('out/jobs/333/produce-exit.json', 'observed_returncode', '0')), 'integer field')
+            controls.append('string exit code')
             bad_runner = mutate('out/preregistration.json', 'runner', {'sha256': '0' * 64})
             rejects(lambda: run(bad_runner), 'preregistered campaign runner')
             controls.append('historical preregistered runner SHA')
@@ -256,6 +368,6 @@ def main():
             require(result['expect_plan'] == 'all' and result['coverage_mode'] == 'complete_plan', 'complete mode reporting')
             controls.append('compact coverage reporting and incomplete plan rejection')
     print(json.dumps({'status': 'PASS', 'controls': len(controls), 'cases': controls,
-                      'scope': 'synthetic linkage/transport controls with explicit checker/closure adapter; no actual archive or arithmetic rerun'}))
+                      'scope': 'synthetic linkage/transport controls with explicit checker/closure adapter; real synthetic storage/export roundtrip; no canonical archive or arithmetic rerun'}))
 
 if __name__ == '__main__': main()

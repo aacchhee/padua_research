@@ -3061,3 +3061,69 @@ not the audited sources, freeze, code, claims, inputs or handoff scope.
 - **Budget.** The global generated-class bound 11,751,309 B (actual sum 11,729,562 B) exceeds the 10,000,000 B cap; main alone is 9,733,758 B and this topic's own counted share is 1,995,804 B (reproduced exactly; no file outside the topic differs from main; no unrelated evidence deleted). Reported as a limitation for AC; nothing removed.
 - Auditor in-place MINOR fixes (dated addenda only, commit `acd0b1d`): `report.md` (942 records over 471 trees), local campaign README and deposit README (runner identity, the onset command fails until E5-01, 24a98db historical).
 - P1–P4, AC's funding confirmation and the reservation of the AI declaration, ORCID, contributions and draft marker are unchanged. PR 27 remains a draft. Stage returns to **WORK**.
+
+## 2026-11-13 — Codex response to audit-05, handoff33
+
+Rules read at `33b9eca8167980cad0b0a491da7de64280c9a158`, unchanged after
+fetch and fast-forward to `520b3645a4b8a584cb17eddc64defb97747cb253`.
+Current main remains `b5388c25a2a5ccb8d0faf816ab87023cf347bcd3`, already
+merged. Codex coordinates under AC's gpt-6-astra high request; runtime
+serving metadata unexposed. Stage WORK for the scoped audit-05 findings.
+No novelty content: fix an existing reader's producer compatibility and
+restore/clarify existing proof reasons; no new mechanism or ID range.
+
+Development is delegated to Sol medium for the reader and arithmetic guards,
+Sol xhigh for two disjoint paired manuscript scopes; a distinct Astra high
+review checks the evidence repairs. Root alone controls Git and writes
+shared response/log/results. Existing frozen witnesses, scientific engine
+and independent numerical checker are preserved. The handoff explicitly
+authorizes the analytic checker's optimization guard and missing log(pi)
+assertion; old executions/preregistrations/receipt remain historical.
+
+### E5-03: budget attribution correction
+
+Audit-05 reproduces the old figures but corrects their one-sided
+attribution. At33b9eca, main alone counts9,733,758bytes and this topic's
+own share is1,995,804bytes (exactly HEAD minus main), giving11,729,562
+classified bytes together. Neither original branch alone exceeded10MB;
+their union does. The 2,087byte post_audit_D09_threepoint/FREEZE.md
+exception is excluded by the general .md classifier but included under
+this topic's convention, so the corresponding actual convention total
+is11,731,649bytes. The prior conservative no-shrink bound11,751,309
+already includes that exception. These are historical input-head figures;
+current growth will be recomputed explicitly. No other topic's evidence
+is removed or relabelled. The cap exception, cold-storage destination or
+reduction of this topic's share remains AC's decision; no readiness claim.
+
+Missing onset512/I25 archives and632MiB histories remain inaccessible;
+there is no new location evidence and no repeated request to AC for the
+I25 location. The existing data-only checks stay OPEN. No new native
+campaign, Syvert call, rescue, transfer or reconstructed historical ZIP
+identity is claimed.
+
+### Evidence repairs checkpoint
+
+Sol medium implements E5-01 allowlist/schema checks for producer-written
+storage-dedup.json and the empty preserve lock. The regression uses actual
+storage.deduplicate(), completed() and export() on an inert synthetic tree,
+then reads the resulting archive with explicit trust/arithmetic/closure
+adapters;60controls pass, preserving the original40. A distinct Astra high
+independently constructs that round-trip and17 malformed-receipt/lock/member
+controls. It also tests real source/runtime pin checks, the guarded analytic
+checker under optimized and falsified copies, and seven isolated MXCSR
+mode controls. No unresolved code finding remains in its
+[supplementary report](supplementary-evidence-review-response05-20261113.md).
+One README present-custody overstatement was returned, fixed and reread.
+This establishes the specific producer compatibility fix, not acceptance
+of the absent canonical ZIP or a new proof-arithmetic run.
+
+The analytic checker now refuses optimization before a verdict and asserts
+log(pi)>11/10 exactly. All11 normal receipt fields equal the historical
+receipt on Python3.12.14; old preregistrations/receipt are unchanged. The
+runtime probe now checks actual uint64 encodings: independent FTZ|DAZ and
+FTZ tests reject computed zero underflow, and directed-rounding probes
+reject as expected. These are finite prospective probes only. Historical
+run modes, universal IEEE behavior and all SIMD operations are not certified.
+The frozen independent numerical check.py/controls.py and native engine
+remain unchanged; current analytic/runtime identities are in their README
+and deposit interface. No Syvert call or native campaign occurred.

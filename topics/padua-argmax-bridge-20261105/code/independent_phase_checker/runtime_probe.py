@@ -20,9 +20,11 @@ def main():
     checks = {
         'ties_even_down': bool((a + half)[0] == 1.0),
         'ties_even_up': bool(((a + 2*half) + half)[0] == 1 + 2.0**-51),
-        'gradual_underflow': bool((tiny/2)[0] == 2.0**-1023),
-        'smallest_subnormal': bool(np.nextafter(np.float64(0), np.float64(1))
-                                   == float.fromhex('0x0.0000000000001p-1022')),
+        # Compare integer encodings: DAZ can make zero and a subnormal
+        # compare equal in floating-point even when FTZ erased the result.
+        'gradual_underflow': int((tiny/2).view(np.uint64)[0]) == 0x0008000000000000,
+        'smallest_subnormal': int(np.nextafter(np.float64(0), np.float64(1))
+                                  .view(np.uint64)) == 0x0000000000000001,
     }
     if not all(checks.values()):
         raise SystemExit('runtime probe failed: ' + repr(checks))
