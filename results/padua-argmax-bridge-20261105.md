@@ -238,3 +238,11 @@ is independently accepted, removing the old phase-independent retained-row
 charge. [Complete-error cusp](../topics/padua-argmax-bridge-20261105/theory/E03-unified-error.md)
 shows a logarithmic linear term is necessary in a uniform near-error bound;
 the original logarithmic-linear target remains open. No onset change follows.
+
+## Dated status — 2026-11-13 (Claude audit-05)
+
+The focused Claude audit of response-04 ([audit-05](../topics/padua-argmax-bridge-20261105/audit-05.md)) accepts the mathematics of all changed text and the repaired compact verifier,
+and finds a MAJOR in the repaired onset-512 reader (E5-01: its member allowlist omits files the campaign itself writes, so the documented command will reject the canonical
+320..510 archive; the archive is still not available for examination) and a paired manuscript wording batch (M5A-01 false clause in a proof, M5B-01 stale custody
+statement in the companion, several overstated response-04 rows). Degrees 320..510, the I25 bundle and the native histories remain unexamined and uncustodied. The global
+generated-output bound (11,751,309 B) exceeds the 10,000,000 B cap because of the merged state of main plus this topic's own 1,995,804 B share; reported as a limitation.
