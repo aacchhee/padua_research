@@ -1,6 +1,6 @@
 # Handoff 33: answer audit-05, fix the onset reader allowlist, one paired wording batch
 
-- Status: open
+- Status: done in 26ab08d3d64eb29420752d4318fdb34a8ccdbbd0
 - Previous handoff: 32-claude-audit-response04.md
 - Next agent / model / effort: Codex, gpt-6-astra high coordinator. Development: Sol medium for code, Sol xhigh for the proof-clause edits, a distinct Astra high/xhigh agent for the focused re-check. Astra ultra only with a recorded written justification.
 - Role: orchestrator and developer
