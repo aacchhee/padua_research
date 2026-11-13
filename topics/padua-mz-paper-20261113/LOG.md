@@ -3,7 +3,7 @@
 - Branch: `claude/padua-mz-paper-20261113` · Base: main `b5388c2` · Developer: Claude · Auditor: Codex (gpt-6-astra)
 - Stage: WORK · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Open handoff: [handoffs/01-work.md](handoffs/01-work.md)
 - Reserved final-ID ranges: none (no new mathematics expected).
-- Open for AC: venue for each paper, companion, data deposit (BRIEF §5). The split is decided. The thread will ask, and proceeds on the defaults meanwhile.
+- Open for AC: companion document only (default none). Venues are decided; the Zenodo deposit will come later, from AC.
 
 ## 2026-11-13 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -25,6 +25,14 @@
   - **MZ-SP** (signed Padua) goes in a new `tracks/mz-constants/paper-sp/`. It takes current §6 plus PR #31's corner operator results, and cites MZ-CC.
   - MZ-CC is finished first.
   - A new task 0a splits the draft with a `split-map.md` (gate W0). Correspondence, plan, notation and response files are now per paper.
+
+## 2026-11-13 — Claude, claude-opus-5-5 (configured; effort not exposed) — venues
+
+- AC: "let's decide on venues now. zenodo will come later."
+- AC's choices, from Claude's recommended options:
+  - **MZ-CC → SIAM J. Numer. Anal.** (fallback Math. Comp.);
+  - **MZ-SP → J. Approx. Theory** (fallback Adv. Comput. Math.).
+- BRIEF §0/§5 and handoff 01 task 0 were amended in place: journal classes `siamart` and `elsarticle`, a deposit-DOI placeholder, and only the companion question left for AC.
 
 ## Runs needed
 

@@ -26,7 +26,7 @@ AC: "yes let's split. call the one MZ-CC and another one MZ-SP".
   - the CC parts of the PR #31 LIT entries (LIT-633).
 - **Open in MZ-CC:** the decimal value of Λ_edge (the PD-T027 decimal conjunct).
 - **Order:** finished and audited first.
-- **Default venue style:** neutral amsart. Candidates for AC: SIAM J. Numer. Anal., Math. Comp., IMA J. Numer. Anal., Numer. Math.
+- **Venue (AC, 2026-11-13):** **SIAM Journal on Numerical Analysis**; fallback Math. Comp. Prepare it in SIAM's journal class (`siamart`, current SIAM macros), checking SINUM's instructions for authors at the time of preparation.
 
 ### MZ-SP: the signed Padua paper
 
@@ -46,7 +46,7 @@ AC: "yes let's split. call the one MZ-CC and another one MZ-SP".
   - the first crossing;
   - effective onsets.
 - **Recap:** keep a short recap of the CC conventions and weights, about a page, and cite MZ-CC for the rest.
-- **Default venue style:** neutral amsart. Candidates for AC: J. Approx. Theory, Dolomites Res. Notes Approx., or similar. Avoid Constructive Approximation while the Padua argmax paper is there.
+- **Venue (AC, 2026-11-13):** **Journal of Approximation Theory**; fallback Adv. Comput. Math. Prepare it in Elsevier's `elsarticle` class, checking JAT's guide for authors at the time of preparation.
 
 **Measured material** (PD-T026, PD-T380, PD-T525, PD-T532, PD-T543) goes to whichever paper it describes, always labelled MEASURED.
 
@@ -122,10 +122,10 @@ That branch's notation register and correspondence-check tooling is a usable mod
 
 Ask these early, in one message. Meanwhile, proceed on defaults.
 
-1. **Venue for each paper.** Candidates are in §0. *Default:* a neutral amsart style for both, without journal-specific formatting.
+1. **Venue for each paper.** *Decided by AC on 2026-11-13:* MZ-CC → SIAM J. Numer. Anal. (fallback Math. Comp.); MZ-SP → J. Approx. Theory (fallback Adv. Comput. Math.).
 2. **One paper or a split.** *Decided by AC on 2026-11-13: split into MZ-CC and MZ-SP (§0).*
 3. **Companion document.** *Default:* none; long derivations go in appendices.
-4. **Data deposit.** Whether to create a Zenodo deposit for the certificates and witnesses. *Default:* the text says "available in the repository at commit …" for the committed checkers and receipts, and makes no claim about a deposit.
+4. **Data deposit.** *AC, 2026-11-13: Zenodo will come later.* Until AC creates it, the text says "available in the repository at commit …" for the committed checkers and receipts. Leave a clearly marked placeholder for the deposit DOI, and make no deposit claim.
 
 ## 6. Known pitfalls
 

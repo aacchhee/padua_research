@@ -38,7 +38,9 @@ Read [BRIEF.md](../BRIEF.md) first. It holds the split and its mapping (§0), th
 0. **Setup.**
    - Read the rules at the branch head and record the SHA.
    - Build the current single manuscript (pdfLaTeX, BibTeX, pdfLaTeX twice) in scratch and record pages, warnings and hashes. This is the pre-split baseline.
-   - **Send AC the remaining BRIEF §5 questions in one short message:** venue for each paper, companion, deposit. Continue on the defaults; do not wait.
+   - The venues are decided: MZ-CC → SINUM (`siamart`), MZ-SP → JAT (`elsarticle`). Zenodo comes later (BRIEF §5).
+   - **Ask AC only about a companion document.** Continue on the default (none); do not wait.
+   - Convert each paper to its journal class during task 0a or immediately after it, keeping the build clean.
 0a. **Split.**
    - Create `tracks/mz-constants/paper-sp/` with `manuscript.tex`, `refs.bib` and `README.md`. Move the §6 material and the Padua rows of §7 into it, per BRIEF §0.
    - Remove that material from `tracks/mz-constants/paper/manuscript.tex`, leaving MZ-CC.
