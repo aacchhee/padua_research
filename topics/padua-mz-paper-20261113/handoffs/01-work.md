@@ -1,4 +1,4 @@
-# Handoff 01 — padua-mz-paper-20261113 — finalize the MZ manuscript
+# Handoff 01 — padua-mz-paper-20261113 — split and finalize the MZ manuscripts: MZ-CC and MZ-SP
 
 - Status: open
 - Previous handoff: none (new topic)
@@ -18,61 +18,84 @@
 
 ## Goal
 
-Turn `tracks/mz-constants/paper/manuscript.tex` into a **submission-ready manuscript for AC's decision**:
+**AC decided on 2026-11-13 to split the draft** ("yes let's split. call the one MZ-CC and another one MZ-SP"). Produce **two submission-ready manuscripts for AC's decision**:
+
+- **MZ-CC** (Clenshaw–Curtis), in `tracks/mz-constants/paper/`;
+- **MZ-SP** (signed Padua), in a new `tracks/mz-constants/paper-sp/`.
+
+For each paper:
 - integrate the PR #31 sharp-constant results at their exact scopes;
 - restructure around the new headline results;
 - resolve the literature placeholders that predate PR #21;
 - meet AC's manuscript criteria.
 
-Read [BRIEF.md](../BRIEF.md) first. It holds the current state (§1), what to integrate (§2), the literature status (§3), the criteria (§4), the decisions reserved for AC (§5) and the pitfalls (§6).
+**MZ-CC is finished first.** MZ-SP can be drafted in parallel, but MZ-CC's text is frozen before MZ-SP is polished, so that MZ-SP's citations to MZ-CC are stable.
+
+Read [BRIEF.md](../BRIEF.md) first. It holds the split and its mapping (§0), the current single draft (§1), what to integrate (§2), the literature status (§3), the criteria (§4), the remaining decisions for AC (§5) and the pitfalls (§6).
 
 ## Tasks, in order (parallel where marked)
 
 0. **Setup.**
    - Read the rules at the branch head and record the SHA.
-   - Build the current manuscript (pdfLaTeX, BibTeX, pdfLaTeX twice) in scratch and record pages, warnings and hashes.
-   - **Send AC the BRIEF §5 questions in one short message.** Continue on the defaults; do not wait.
-1. **Correspondence table**, `correspondence.md`. For every theorem, lemma, proposition and corollary that is or will be in the paper, record:
+   - Build the current single manuscript (pdfLaTeX, BibTeX, pdfLaTeX twice) in scratch and record pages, warnings and hashes. This is the pre-split baseline.
+   - **Send AC the remaining BRIEF §5 questions in one short message:** venue for each paper, companion, deposit. Continue on the defaults; do not wait.
+0a. **Split.**
+   - Create `tracks/mz-constants/paper-sp/` with `manuscript.tex`, `refs.bib` and `README.md`. Move the §6 material and the Padua rows of §7 into it, per BRIEF §0.
+   - Remove that material from `tracks/mz-constants/paper/manuscript.tex`, leaving MZ-CC.
+   - Both must build after the split, before any other content change. Record that as the post-split baseline.
+1. **Correspondence tables**, `correspondence-cc.md` and `correspondence-sp.md`. For every theorem, lemma, proposition and corollary that is or will be in each paper, record:
    - the label;
    - the final PD ID;
    - the record's status and exact scope;
    - "in paper: verbatim / weakened / omitted".
 
    Every PROVED statement in the text must match its record. Nothing OPEN or MEASURED may appear as proved.
-2. **Restructuring plan**, `plan.md`. Write the new outline (abstract, introduction with the main theorems stated up front, then the sections and appendices), with the target length and the location of each result. Get it reviewed by one Opus reviewer before large edits.
+2. **Restructuring plans**, `plan-cc.md` and `plan-sp.md`. For each paper write the new outline: title, abstract, an introduction with the main theorems stated up front, the sections and appendices. Give the target length and the location of each result. One Opus reviewer reviews each plan before large edits.
 3. **Integration**, in parallel by section, with disjoint section ownership:
-   - **§2:** add the uniform 5/3 theorem (PD-T526), the η_N bounds (PD-T527), and the CC upper limit with its operator identification and finite brackets (PD-T530/531, with the definition material of PD-T528/529/548 and the one-sided PD-T547).
-   - **§3:** culminate in the sharp limit π⁴/8 (PD-T546/523/522). Keep the existing PD-T017/018 bounds as the explicit finite results.
-   - **§6:** add the corner operator B and the signed logarithmic limits (PD-T534/535/536/540/544/545), the certified enclosure with its honest "no useful digits" caveat (PD-T541/542), and the carrier improvements (PD-T533/537).
-   - **§7:** rewrite as "Open problems". It covers the decimal values of Λ_edge and of spec(B)'s extremes; effective onsets; anything else genuinely open. Optionally add measured tables, clearly labelled.
-   - Move long proofs to appendices where that helps the line of argument. Keep the derivations and worked examples.
-4. **Abstract, introduction and conclusion.** Rewrite them around the exact constants. State the main theorems in the introduction, with their scope.
+   - **MZ-CC:**
+     - the upper-bound section gains the uniform 5/3 theorem (PD-T526), the η_N bounds (PD-T527), and the CC upper limit with its operator identification and finite brackets (PD-T530/531, with the definition material of PD-T528/529/548 and the one-sided PD-T547);
+     - the endpoint section culminates in the sharp limit π⁴/8 (PD-T546/523/522). Keep PD-T017/018 as the explicit finite results;
+     - the fixed-ratio and hyperinterpolation sections stay, revised for coherence;
+     - a closing "Open problems" section covers the Λ_edge decimal value and anything else genuinely open, with measured tables optional and labelled.
+   - **MZ-SP:**
+     - a short CC recap citing MZ-CC;
+     - compression, the weight theorems, carriers and the ratio threshold, and the uniform coefficient norm;
+     - the corner operator B and the signed logarithmic limits (PD-T534/535/536/540/544/545);
+     - the certified enclosure with its honest "no useful digits" caveat (PD-T541/542);
+     - the carrier improvements (PD-T533/537);
+     - the finite witnesses and illustrations (PD-T376/298/299);
+     - "Open problems": the spec(B) decimals, the first crossing, effective onsets.
+   - **Both:** move long proofs to appendices where that helps the line of argument. Keep the derivations and worked examples.
+4. **Abstract, introduction and conclusion** for each paper. Rewrite them around its own headline results, and state its main theorems in the introduction, with their scope.
 5. **Literature pass.**
    - Resolve every pre-PR #21 hedge using `p2-comparison.md` and the LIT records. Cite only what has fulltext-read LIT coverage at the cited scope.
-   - Update `refs.bib`, using the MathSciNet citation-check note as a starting point.
+   - Update each paper's `refs.bib`, using the MathSciNet citation-check note as a starting point. Split the literature per BRIEF §0.
    - Give AC clickable links for any unread item the text needs.
-6. **Notation register** (`notation.md`) and a consistency pass. Every symbol must be defined before use, with one meaning, matching between text, appendices and tables.
+6. **Notation registers**, `notation-cc.md` and `notation-sp.md`, and a consistency pass. Every symbol must be defined before use, with one meaning, matching between text, appendices and tables. Shared symbols must have the same meaning in both papers.
 7. **Data and code availability.** Write an accurate statement naming the committed checkers and receipts for every computer-assisted part, at the actual commit. Make no deposit claim unless AC creates one.
-8. **Internal referee round.** Two distinct Opus reviewers:
+8. **Internal referee round, per paper** (MZ-CC first). Two distinct Opus reviewers each:
    - **(a) mathematics:** re-derive or spot-check every changed statement and proof against its record;
    - **(b) exposition and notation:** check against AC's criteria.
 
-   Answer their findings in `response-internal.md`.
+   Answer their findings in `response-internal-cc.md` and `response-internal-sp.md`.
 9. **Final build and records.**
    - A clean build: zero errors, warnings or undefined references, and no unexplained overfull boxes.
-   - Record pages, source and PDF hashes in the M7 manuscript record (append only).
-   - Update the paper README scope table.
+   - Record pages, source and PDF hashes for both papers in the M7 manuscript record (append only), noting the split.
+   - Update both README scope tables.
    - Prepare the PAPER_MAP and state/CURRENT.md updates for PR preparation. Fix PAPER_MAP's stale "No manuscript has been drafted" header.
 
 ## Gates
 
 If a criterion proves ill-posed, record why and add a new criterion as a separate dated entry.
 
-- **W0, baseline.** The current manuscript builds cleanly and matches its last recorded page count, 25 ± 1 pages. **Kill:** a broken baseline must be fixed first and recorded.
+- **W0, baseline.**
+  - The current single manuscript builds cleanly and matches its last recorded page count, 25 ± 1 pages.
+  - After task 0a, both split manuscripts build cleanly. Every numbered statement of the old draft is in exactly one of them, or explicitly dropped with a reason, in a split map, `split-map.md`.
+  - **Kill:** a broken baseline must be fixed first and recorded.
 - **W1, correspondence.** Before the final build, every numbered statement has a correspondence row. Each PROVED row is verbatim or explicitly weakened. No OPEN or MEASURED item is stated as proved. **Kill:** any mismatch blocks the final build.
 - **W2, scope.** The decimal values of PD-T027 and PD-T381 appear only as OPEN. The first-crossing language follows PD-T376. Fits are labelled MEASURED.
 - **W3, citations.** Every `\cite` resolves to a refs.bib entry with LIT coverage at the cited scope, or carries an explicit coverage note in `literature-mz-paper.md`.
-- **W4, build.** A clean final build, and an independent rebuild by a different subagent with the same page count.
+- **W4, build.** A clean final build of each paper, and an independent rebuild by a different subagent with the same page count. MZ-SP's citations to MZ-CC must match MZ-CC's frozen statement numbering, or cite by name.
 
 ## Read first
 
@@ -90,7 +113,8 @@ If a criterion proves ill-posed, record why and add a new criterion as a separat
 
 - **Where to write.**
   - Inside `topics/padua-mz-paper-20261113/` and `results/padua-mz-paper-20261113.md`.
-  - `tracks/mz-constants/paper/manuscript.tex`, `refs.bib` and `README.md`.
+  - `tracks/mz-constants/paper/` (MZ-CC: `manuscript.tex`, `refs.bib`, `README.md`).
+  - The new `tracks/mz-constants/paper-sp/` (MZ-SP: same files).
   - `topics/mz-constants/directions/M7/manuscript-record.md` (append only).
   - Shared registries (PAPER_MAP, state/CURRENT.md) only at PR preparation, edited directly and reviewed by diff.
   - Do not write to any other open branch: PR #27, PR #34.
@@ -104,12 +128,13 @@ If a criterion proves ill-posed, record why and add a new criterion as a separat
 ## Acceptance and outputs
 
 - **Files.**
-  - The revised `manuscript.tex` and `refs.bib`.
-  - `correspondence.md`, `plan.md`, `notation.md`, `literature-mz-paper.md` and `response-internal.md`.
+  - The MZ-CC and MZ-SP sources.
+  - `split-map.md`.
+  - The per-paper correspondence, plan, notation and response files, and `literature-mz-paper.md`.
   - LOG.md, `results/padua-mz-paper-20261113.md` and `report.md`.
   - The `report.md` contains:
-    - the new outline;
-    - page count and hashes;
+    - both outlines;
+    - page counts and hashes;
     - the correspondence summary;
     - what is OPEN in the paper;
     - AC's answers or the defaults used;

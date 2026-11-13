@@ -2,9 +2,60 @@
 
 Written by Claude (claude-opus-5-5), 2026-11-13. AC: "make a brief for a thread to finalize MZ paper".
 
-This is a knowledge base and plan for the finalization thread. It carries no status. The goal is a **submission-ready manuscript for AC's decision**. Submission, venue choice, cover letter, AI declaration, ORCID and contributions are AC's.
+This is a knowledge base and plan for the finalization thread. It carries no status. The goal is **two submission-ready manuscripts for AC's decision**. Submission, venue choice, cover letter, AI declaration, ORCID and contributions are AC's.
 
-## 1. The manuscript today
+## 0. AC's decision (2026-11-13): split into two papers, MZ-CC and MZ-SP
+
+AC: "yes let's split. call the one MZ-CC and another one MZ-SP".
+
+### MZ-CC: the Clenshaw–Curtis paper
+
+- **Source:** stays in `tracks/mz-constants/paper/`, which keeps continuity with the existing records.
+- **Scope:** CC as an MZ family on Π_{N−1}, with sharp endpoint constants.
+- **From the current draft:**
+  - §2: exact CC identities and the upper bound below two;
+  - §3: endpoint minimum eigenvalue;
+  - §4: fixed-ratio bounds;
+  - §5: three-quarter assumption and hyperinterpolation;
+  - the CC rows of §7.
+- **From PR #31:**
+  - PD-T546/523/522: lim (log N)² λ_min = π⁴/8;
+  - PD-T526: λ_max ≤ 5/3 for all N;
+  - PD-T527: η_N bounds;
+  - PD-T530/531 with PD-T528/529/548 and PD-T547: the λ_max → Λ_edge operator limit and finite brackets;
+  - the CC parts of the PR #31 LIT entries (LIT-633).
+- **Open in MZ-CC:** the decimal value of Λ_edge (the PD-T027 decimal conjunct).
+- **Order:** finished and audited first.
+- **Default venue style:** neutral amsart. Candidates for AC: SIAM J. Numer. Anal., Math. Comp., IMA J. Numer. Anal., Numer. Math.
+
+### MZ-SP: the signed Padua paper
+
+- **Source:** a new directory, `tracks/mz-constants/paper-sp/`, with its own `manuscript.tex`, `refs.bib`, `README.md`.
+- **Scope:** signed Padua rules beyond half-exactness.
+- **From the current draft, §6:**
+  - marginal compression PD-T021. It uses CC weights and cites MZ-CC as a preprint;
+  - exact density and logarithmic boundary weights PD-T295/T377;
+  - carriers and the sharp ratio threshold PD-N105–107/PD-T378;
+  - the uniform coefficient norm PD-T297;
+  - finite witnesses PD-T376, finite illustrations PD-T298/299, normalized bounds PD-T379.
+- **From PR #31:**
+  - the corner operator B and the signed logarithmic limits (PD-T534/535/536/540/544/545);
+  - the certified enclosure (PD-T541/542) and the carrier improvements (PD-T533/537).
+- **Open in MZ-SP:**
+  - the decimal values of spec(B)'s extremes (the PD-T381 decimal conjunct);
+  - the first crossing;
+  - effective onsets.
+- **Recap:** keep a short recap of the CC conventions and weights, about a page, and cite MZ-CC for the rest.
+- **Default venue style:** neutral amsart. Candidates for AC: J. Approx. Theory, Dolomites Res. Notes Approx., or similar. Avoid Constructive Approximation while the Padua argmax paper is there.
+
+**Measured material** (PD-T026, PD-T380, PD-T525, PD-T532, PD-T543) goes to whichever paper it describes, always labelled MEASURED.
+
+**Literature splits along the same line:**
+- CC MZ prior art (Mastroianni–Russo, An–Wu, ASV) goes to MZ-CC;
+- Padua cubature and hyperinterpolation literature goes to MZ-SP;
+- some sources appear in both.
+
+## 1. The single draft today (to be split)
 
 - **Source:** `tracks/mz-constants/paper/manuscript.tex` (1,653 lines) and `refs.bib`. Build notes are in `tracks/mz-constants/paper/README.md`. The history is in `topics/mz-constants/directions/M7/manuscript-record.md`.
 - **Title:** *Marcinkiewicz–Zygmund constants of Clenshaw–Curtis and Padua rules beyond half-exactness*.
@@ -71,8 +122,8 @@ That branch's notation register and correspondence-check tooling is a usable mod
 
 Ask these early, in one message. Meanwhile, proceed on defaults.
 
-1. **Venue.** Candidates: J. Approx. Theory; Constructive Approximation (the Padua argmax paper targets it); SIAM J. Numer. Anal.; Math. Comp.; IMA J. Numer. Anal. *Default:* write in a neutral amsart style, without journal-specific formatting.
-2. **One paper or a split.** The CC sharp constants and the signed-Padua results could be two papers. *Default:* one paper, with appendices for long proofs.
+1. **Venue for each paper.** Candidates are in §0. *Default:* a neutral amsart style for both, without journal-specific formatting.
+2. **One paper or a split.** *Decided by AC on 2026-11-13: split into MZ-CC and MZ-SP (§0).*
 3. **Companion document.** *Default:* none; long derivations go in appendices.
 4. **Data deposit.** Whether to create a Zenodo deposit for the certificates and witnesses. *Default:* the text says "available in the repository at commit …" for the committed checkers and receipts, and makes no claim about a deposit.
 
