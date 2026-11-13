@@ -246,3 +246,25 @@ and finds a MAJOR in the repaired onset-512 reader (E5-01: its member allowlist 
 320..510 archive; the archive is still not available for examination) and a paired manuscript wording batch (M5A-01 false clause in a proof, M5B-01 stale custody
 statement in the companion, several overstated response-04 rows). Degrees 320..510, the I25 bundle and the native histories remain unexamined and uncustodied. The global
 generated-output bound (11,751,309 B) exceeds the 10,000,000 B cap because of the merged state of main plus this topic's own 1,995,804 B share; reported as a limitation.
+
+
+## Response-05 verification record — 2026-11-13
+
+Existing mathematical claims/constants and their recorded statuses are
+unchanged. E5-01 producer/reader mismatch and analytic optimization/runtime
+probe defects are repaired with independent supplementary controls. The
+paired proof/exposition/custody batch builds at58/152pages, sourcefreeze
+`8937d3b723c09c004f49d3e565d0b02976713a37`,19statements/86numbered
+environments/120matching built labels. All twelve reported equation-tag
+placements were actually rendered and inspected; no log-only inference.
+[Response and limits](../topics/padua-argmax-bridge-20261105/response-05.md).
+
+At audit05 input, main alone9,733,758bytes and this topic's own classified
+share1,995,804bytes made11,729,562together; adding the2,087byte FREEZE.md
+exception gives11,731,649. Neither branch alone exceeded10MB; their union
+did. The current LOG/manifest records subsequent growth and honest share
+attribution; global budget disposition remains for AC.
+
+Next: focused Claude review of material response05 changes. Actual
+onset512/I25 archive checks, four selected data-only witnesses, native-history
+transfer/retrieval and permanent source snapshot/DOI remain OPEN.

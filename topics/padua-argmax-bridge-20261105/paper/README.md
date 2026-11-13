@@ -115,3 +115,13 @@ See BUILD.md for exact commands and identities. Earlier build/review records
 remain historical; focused Claude review of the changed analytic explanations
 is next. Missing onset512/I25 data and historical-PDF byte-access limitations
 are explicit in the topic response and execution records.
+
+
+### Response-05 current pair
+
+Active paired source: `8937d3b723c09c004f49d3e565d0b02976713a37`;
+58/152-page clean builds and120 matching built labels. BUILD.md gives exact
+identities and limitations. The cumulative notation-renames-audit05.json is
+for baseline24a98db (not for an already-renamed baseline). Structural layout
+changes and recorded-custody wording are reviewed as changes, not hidden
+as renames. Permanent source-snapshot/DOI references remain pending.

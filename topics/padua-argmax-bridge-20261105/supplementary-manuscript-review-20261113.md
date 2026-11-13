@@ -127,3 +127,15 @@ All recorded TeX/Bib hashes were checked again after these executions and remain
 | `code/onset512_analytic/check.py` | `ff2859eeb9ccab91e8cfa996318e4f1129502dc90f5c2fa90754350453a51751` |
 | `companion-paper/check_baseline_controls.py` | `ef474bb594d65abf5219e1574fabc2e2acdf3bd53ec344d555afa9ece408e309` |
 | `companion-paper/check_correspondence.py` | `bb231904779141fa684076b8afd623e141b001e8c6a04bcaa1d43a892fa7edd8` |
+
+
+## Dated correction after Claude audit-05 — 2026-11-13
+
+The preceding deletion-integrity checklist overstated survival of three
+unique one-line reasons. Audit-05 M5A-02 identifies B5's primitive
+`integral T_t = 4a log sin(t/2)`, C1's prefactor identity and wrap charge,
+and C10's amplitude bound `A cos x + B sin x <= sqrt(A^2+B^2)`.
+Those checklist rows must not be used as evidence that these lines were
+retained in ad908acb. The audit-05 response restores them explicitly;
+response-05 and the new focused review record the changed source and
+checks. The original review and its declared scope remain historical.

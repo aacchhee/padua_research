@@ -32,8 +32,9 @@ The current reader candidate, `return_bundle.py`, is
 It preserves the historical runner pin and adds the producer-written per-pass
 `storage-dedup.json` (exact schema, nonnegative integer counts and fixed scope)
 and the empty top-level `.preserve.lock` to the allowlist, addressing
-[audit-05 E5-01](../../audit-05.md). This candidate needs independent review;
-the canonical onset ZIP remains unavailable and has not been checked with it.
+[audit-05 E5-01](../../audit-05.md). The supplementary response-05 evidence review accepts this repair within its
+synthetic storage/export scope; the canonical onset ZIP remains unavailable
+and has not been checked with it.
 
 Run the synthetic regression from the repository root:
 

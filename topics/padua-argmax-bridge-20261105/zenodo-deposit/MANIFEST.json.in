@@ -254,11 +254,22 @@
     "convention": "all positive deltas; no deletion or shrink credit",
     "pre_current_batch_bytes": 9917613,
     "cap_bytes": 10000000,
-    "final_batch_bound": 11751309,
+    "final_batch_bound": 11756141,
     "current_main_merge_positive_bytes": 1827288,
-    "actual_current_classified_bytes": 11729562,
-    "post_original_topic_positive_deltas_bytes": 1833696,
-    "cap_satisfied": false
+    "actual_current_classified_bytes": 11734394,
+    "post_original_topic_positive_deltas_bytes": 1838528,
+    "cap_satisfied": false,
+    "historical_audit05_input": {
+      "main_classified_bytes": 9733758,
+      "topic_share_classified_bytes": 1995804,
+      "union_classified_bytes": 11729562,
+      "FREEZE_md_exception_bytes": 2087,
+      "union_with_exception_bytes": 11731649,
+      "conservative_bound_bytes": 11751309
+    },
+    "current_main_classified_bytes": 9733758,
+    "current_topic_classified_share_bytes": 2000636,
+    "current_actual_with_FREEZE_exception_bytes": 11736481
   },
   "verifier_provenance": {
     "original_padua30_unrepaired_verify_compact_sha256": "7c2dad53519aff616bdadd3f925ec8943963cb4bf521b410355f827b7a1899bf",
@@ -269,19 +280,26 @@
       "verify_compact.py": "2d26886fa38089815712edcceccd4ac893fea9d8e6092afbd4c0faac7b569cef",
       "runner.py": "a198b65182590be13cb91110ff976d90e7e885c778180e59699fbe9b067ccdad"
     },
-    "post_audit04_status": "Supplementary Astra reader review complete; actual pinned onset512 canonical reader rerun blocked by missing ZIP; no historical run attribution."
+    "post_audit04_status": "Supplementary Astra reader review complete; actual pinned onset512 canonical reader rerun blocked by missing ZIP; no historical run attribution.",
+    "post_audit05_repair_candidates_sha256": {
+      "return_bundle.py": "3f903e62b5c155e85603be43a60724c226b800dd9908685146fd7c5b69c2c234",
+      "onset512_analytic/check.py": "5ce8cc0701ed105fa619674993583f749046709cb02d233570e2dedc59ca1d2d",
+      "runtime_probe.py": "9f1c503e5c0b0739c1e4d85a5f2b920cc515f0d55f2c3039b66ce59278fd1751"
+    },
+    "post_audit05_status": "Specific producer allowlist and optimization/probe defects repaired; supplementary review complete within scope; actual canonical onset512 ZIP and I25 checks remain unavailable."
   },
-  "active_paired_source_commit": "ad908acb21d3589d85635618ff68f63dd01cfbca",
-  "historical_manuscript_record_note": "Existing inventory PDF identities and manuscript_review refer to historical24a98db51/147-page pair; active audit04 pair is recorded separately and is not a deposited payload.",
+  "active_paired_source_commit": "8937d3b723c09c004f49d3e565d0b02976713a37",
+  "historical_manuscript_record_note": "Inventory PDF identities and manuscript_review describe historical24a98db51/147 pair. The active response05 pair is separate and not a deposited payload.",
   "current_manuscript_revision": {
-    "source_freeze": "ad908acb21d3589d85635618ff68f63dd01cfbca",
+    "source_freeze": "8937d3b723c09c004f49d3e565d0b02976713a37",
     "pages": [
-      57,
-      150
+      58,
+      152
     ],
-    "paper_sha256": "5616921e195f999eb8fa47d5393eff89b16f89b597f941e7dd41fde00fa74830",
-    "companion_sha256": "b6898b2eba447b2bf89765d4693aa672c5c7c5e737fed3865e00c0fbe592bc94",
+    "paper_sha256": "1dc50b84b6ac6a7d92300370dde5e95b867b4e428708883c291d2b4cd089c657",
+    "companion_sha256": "9bd922db9599a46577fe5af5a19499e96f338946ad7b5a7c55f79210e5809a1c",
     "supplementary_review": "COMPLETE within declared scope; focused Claude audit pending",
     "historical_PDF_preservation_retested": false
-  }
+  },
+  "historical_response04_paired_source_commit": "ad908acb21d3589d85635618ff68f63dd01cfbca"
 }

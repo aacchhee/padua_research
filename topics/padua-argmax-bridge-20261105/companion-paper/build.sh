@@ -3,7 +3,7 @@
 set -euo pipefail
 companion_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 repo_dir=$(cd -- "$companion_dir/../../.." && pwd)
-output_dir=${PADUA_COMPANION_OUTPUT_DIR:-"$repo_dir/local-output/padua-argmax-bridge-20261105/audit04-companion-20261113"}
+output_dir=${PADUA_COMPANION_OUTPUT_DIR:-"$repo_dir/local-output/padua-argmax-bridge-20261105/audit05-companion-20261113"}
 mkdir -p "$output_dir"
 output_dir=$(cd -- "$output_dir" && pwd)
 PADUA_PAPER_OUTPUT_DIR="$output_dir" bash "$companion_dir/../paper/build.sh" --fetch-only

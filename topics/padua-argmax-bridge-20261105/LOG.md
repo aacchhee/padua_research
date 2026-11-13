@@ -3127,3 +3127,69 @@ run modes, universal IEEE behavior and all SIMD operations are not certified.
 The frozen independent numerical check.py/controls.py and native engine
 remain unchanged; current analytic/runtime identities are in their README
 and deposit interface. No Syvert call or native campaign occurred.
+
+### Paired response-05 completion
+
+Sol xhigh develops two disjoint paired source scopes. The false collision
+clause is corrected to rho>=pi-v, the companion custody statement explicitly
+records absence/unverified retrieval, and all listed lost one-line reasons
+are restored. The cell width vartheta_m is separate from indexed h_j(t);
+scoped local aliases, first-use definitions, ledger pointers, matched row
+figure/worked table and labelled base-value provenance are corrected. One
+reviewer finding catches a misleading floor295-specific base-table pointer;
+it is removed in both sources without changing any table number.
+
+The [new supplementary manuscript review](supplementary-manuscript-review-response05-20261113.md)
+reconstructs the changed analytic reasons, independently reruns the collision
+examples/sixty enclosures, checks both actual sources and reads the final
+versioned PDFs. No unchanged full proof component is re-audited just to
+repeat an earlier round. The six B5-02 tags in each PDF are inspected at
+11/20/26/40/51/55; all12placements are adjacent to multiline formulas.
+No-overfull logs alone are explicitly not used as that evidence. Phase
+figures, role spacing and row/base table placement are also rendered/viewed.
+
+Final TeX/Bib commit is8937d3b723c09c004f49d3e565d0b02976713a37.
+Both root builds exit0,58/152pages, no errors/warnings/overfull boxes or
+undefined references/citations, only underfull diagnostics. Current outputs
+have19statements,86numbered environments (87equation numbers) and120matching
+built labels. Source commands, final hashes and Oslo-timestamped PDFs are
+in BUILD records. Earlier freeze/ad908ac and57/150artifacts are preserved.
+Original PDF bytes are still absent, so historical artifact preservation
+was not retested. AC-reserved author/AI fields are byte-equal to audit input.
+
+FINAL_BASELINE is updated only after committing TeX/Bib; default current
+source, --archival and7mutation controls pass in root and independently.
+The cumulative33-entry map correctly targets24a98db; an initial root scan
+used that cumulative map against already-renamed ad908ac, a setup mismatch.
+Corrected full and incremental scans pass the actual pair but deliberately
+fail rename-only equality. Content alignment againstad908ac shows one
+certificate wording change, seven display-format changes, one newly labelled
+kernel form and nine unchanged index-shifted displays. No statement that
+those index mismatches are new mathematics is made. No permissive map hides
+these reviewed source changes.
+
+Permanent post-repair source snapshot/DOI is explicitly pending in both data
+statements; a433c7d is not cited as current. No I25/native witness regeneration
+is attempted. All remaining data/custody limits stay open in response-05.
+
+### Current budget after response-05 records
+
+Main alone still counts9,733,758bytes. This topic's own current
+classified share is2,000,636bytes, giving11,734,394together.
+The separate2,087byte FREEZE.md exception gives actual convention total
+11,736,481; the conservative no-shrink bound is11,756,141bytes.
+The prior figures in the E5-03 entry are explicitly audit-input history.
+Current growth is the new scoped rename-map input and manifest metadata;
+no other topic's evidence is removed/reclassified. The10MB cap is not met.
+AC's cap/storage/share decision and all readiness work remain open.
+
+Response-05 development is complete; stage AUDIT for material code and
+analytic-explanation changes. [response-05.md](response-05.md) gives each
+finding disposition and corrects overstated response-04 closures. Only a
+focused Claude check of changed content is next. PR27 remains draft.
+
+The final README review-status sentence is updated after supplementary
+review completion; this changes prose only, not any reviewed executable
+identity. Current evidence-index check remains396entries/32,414index bytes.
+Next: [handoff34 — focused audit of response05](handoffs/34-claude-audit-response05.md).
+The active PR body is [pr-update-20261113.md](pr-update-20261113.md).

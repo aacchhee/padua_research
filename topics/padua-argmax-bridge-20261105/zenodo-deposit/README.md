@@ -112,13 +112,15 @@ repairs have a new identity and require their own focused review; the old
 snapshot does not include them. Never attribute a repair to the original run.
 
 
-The 2026-11-13 repair candidates have these SHA-256 identities:
+The current audit-05-response repair sources have these SHA-256 identities:
 
 | Source | SHA-256 |
 |---|---|
-| `return_bundle.py` | `5e25c8a47115e114d20e64fa6ac7b2afb30dde0bfebef371f1e709857795ae2e` |
+| `return_bundle.py` | `3f903e62b5c155e85603be43a60724c226b800dd9908685146fd7c5b69c2c234` |
 | `verify_compact.py` | `2d26886fa38089815712edcceccd4ac893fea9d8e6092afbd4c0faac7b569cef` |
 | `runner.py` | `a198b65182590be13cb91110ff976d90e7e885c778180e59699fbe9b067ccdad` |
+| `onset512_analytic/check.py` | `5ce8cc0701ed105fa619674993583f749046709cb02d233570e2dedc59ca1d2d` |
+| `independent_phase_checker/runtime_probe.py` | `9f1c503e5c0b0739c1e4d85a5f2b920cc515f0d55f2c3039b66ce59278fd1751` |
 
 These identities describe the current source repair, not the historical
 executions or the a433c7d source ZIP. The distinct supplementary reader
@@ -225,8 +227,8 @@ explicit Python/Fraction, guarded NumPy and IEEE binary64 model and J03's
 analytic premises. It is not universal validation of stored native endpoints;
 `all_native_endpoints_validated` remains false. Analytic floor, folding, corner,
 far and physical-cover lemmas remain premises. Independent Claude audit and
-public deposit remain pending. Candidate paired TeX/Bib source freeze is
-`24a98db4c3c4c4d0eede2e3929532956df87911b`; it is the accepted final manuscript baseline,
+public deposit remain pending. The historical paired TeX/Bib source freeze was
+`24a98db4c3c4c4d0eede2e3929532956df87911b`; it was the then-accepted manuscript baseline,
 distinct from the prepared a433c7d historical source ZIP and from the future
 post-repair source snapshot.
 
@@ -381,3 +383,40 @@ deleted or reclassified here; global budget repair and readiness remain open.
 The onset-512 verify command in this README fails on the canonical archive until audit-05 finding E5-01 (member allowlist omits `storage-dedup.json`
 and `.preserve.lock`) is fixed and re-reviewed. The source freeze `24a98db4c3c4c4d0eede2e3929532956df87911b` named above is historical; it is
 superseded by the final paired freeze `ad908acb21d3589d85635618ff68f63dd01cfbca`. See [audit-05](../audit-05.md).
+
+
+## Audit-05 response: current verification interface
+
+E5-01 is repaired in the current reader: an empty .preserve.lock and
+producer-schema storage-dedup.json receipts are accepted and checked. A
+real storage→completion→export→reader synthetic round-trip passes, with
+explicit trust/arithmetic/closure adapters. Independent malformed receipt
+and lock controls pass. This resolves the specific producer-file mismatch;
+it is not a run on the unavailable canonical onset512 ZIP. Earlier dated
+notes saying the command fails until E5-01 is fixed describe the older code.
+
+Historical runner459d0728 performed the campaign. Current runnera198b651
+has performed no campaign and cannot continue the old runner identity.
+The reader is deliberately scoped to the one recorded320..510 campaign;
+a future campaign requires new reviewed identities and constants.
+
+For exact analytic reruns use the separately trusted source:
+
+```sh
+python3 -E -B topics/padua-argmax-bridge-20261105/code/onset512_analytic/check.py
+```
+
+The current checker refuses optimization before its verdict and explicitly
+asserts log(pi)>11/10. Its normal receipt values are unchanged. Historical
+commands and preregistrations remain historical, not current rerun recipes.
+The revised runtime probe compares actual uint64 encodings and rejects
+tested FTZ|DAZ/FTZ division behavior; it is a finite prospective probe, not
+a proof of universal IEEE behavior or a historical worker's mode.
+
+Budget attribution at the audit input: main alone9,733,758bytes; this
+topic's own classified share1,995,804bytes; union11,729,562bytes. Adding
+the topic's2,087byte FREEZE.md exception gives11,731,649bytes. The prior
+conservative bound11,751,309 already includes that exception. Neither
+original branch alone exceeded10MB; the union does. Current growth is
+recorded separately in the manifest/LOG. Nothing from another topic is
+removed or relabelled; AC's budget disposition remains open.

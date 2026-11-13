@@ -119,3 +119,15 @@ Python environment variables; explicit guards reject `-O`):
 ```
 python3 -E -B topics/padua-argmax-bridge-20261105/code/local_onset512_campaign/return_bundle.py verify local-output/argmax-bridge-20261105/onset512-return-20261108.zip
 ```
+
+
+## Audit-05 response reader — 2026-11-13
+
+The preceding response-04 reader identity is historical. Current reader
+SHA256 is3f903e62b5c155e85603be43a60724c226b800dd9908685146fd7c5b69c2c234.
+It fixes E5-01 by admitting and validating the producer's storage receipts
+and empty preserve lock. Sixty regression controls and an independently
+constructed real storage/export synthetic round-trip pass, with explicit
+non-scientific adapters. The actual canonical ZIP remains unavailable,
+so its reader rerun and new-range data acceptance remain OPEN. Historical
+campaign execution is not attributed to the new reader or current runner.

@@ -246,3 +246,33 @@ Current auxiliary-number/page/identity comparisons were executed separately;
 this distinction is deliberate, not a skipped condition reported as PASS.
 The focused Claude review, missing new-range evidence ZIPs and external
 publication/custody remain separate.
+
+
+## Response-05 final build — 2026-11-13
+
+Paired TeX/Bib source freeze: `8937d3b723c09c004f49d3e565d0b02976713a37`.
+Root executed `bash topics/padua-argmax-bridge-20261105/paper/build.sh`;
+this now defaults to a fresh audit05-paper-20261113 directory. Earlier
+audit04 outputs and timestamped copies are preserved. Both commands exit0
+under TeX Live2025/dev, pdfTeX1.40.26/latexmk4.86, with the same authenticated
+publisher dependencies. No errors, warnings, overfull boxes or undefined
+references/citations; underfull diagnostics remain.
+
+This PDF: **58 pages**, 798493 bytes, SHA256
+`1dc50b84b6ac6a7d92300370dde5e95b867b4e428708883c291d2b4cd089c657`. Fresh Oslo-timestamped copy, byte-equal to main.pdf:
+`/workspace/padua_research/local-output/padua-argmax-bridge-20261105/audit05-paper-20261113/padua-manuscript-20261113-232634-Oslo.pdf`. PDFs, renders and logs remain off Git.
+
+Both current artifacts agree on120 built labels,19 statements and86
+numbered environments. The separately committed pointer update and seven
+mutation controls pass in root and an independent reviewer; archival source
+pairing also passes. Root's current-artifact comparison and the reviewer
+confirm58/152pages and152<=5*58. The six old B5-02 displays now numbered
+11/20/26/40/51/55 have adjacent tags in each final PDF: all12placements were
+actually rendered and inspected. Figure/roles/row/base table layouts were
+also inspected; this evidence is distinct from no-overfull log checks.
+
+[Supplementary review](../supplementary-manuscript-review-response05-20261113.md)
+records exact source/PDF identities, independent analytic checks and the
+returned/fixed table-pointer issue. Original PDF bytes remain unavailable;
+full historical --artifacts mode is not claimed. Permanent post-repair
+snapshot/DOI and missing new-range archive checks remain OPEN.
