@@ -1,6 +1,6 @@
 # padua-effective-cubature-20261112 — effective Theorem A and the Padua Lebesgue-constant corollary
 
-This file is written only by the topic orchestrator. Branch `claude/padua-effective-cubature-20261112`. Provisional IDs `PD-T?padua-effective-cubature-20261112-claude-NN`; final IDs are assigned at PR preparation. Every claim here awaits the Codex audit.
+This file is written only by the topic orchestrator. Branch `claude/padua-effective-cubature-20261112`. Provisional IDs `PD-T?padua-effective-cubature-20261112-claude-NN`; final IDs are assigned at PR preparation. The development snapshot below is retained; the audit disposition follows it.
 
 ## Status (2026-11-12): session 1 and explicit-γ campaign complete (3 of 7 rounds), Codex audit pending
 
@@ -33,6 +33,10 @@ This file is written only by the topic orchestrator. Branch `claude/padua-effect
 - **Gates.** Q0 PASS; Q1 PASS; Q2 plain KILL, Delsarte INCONCLUSIVE; Q3 not exercised (no finite exclusion claimed).
 - [Report](../topics/padua-effective-cubature-20261112/report.md).
 
+## Audit disposition (2026-11-13)
+
+[Audit 01](../topics/padua-effective-cubature-20261112/audit-01.md) returns the topic to WORK. C0, local transference, the qualitative theorem with its literature dependencies, and the cap pass review. The finite limitation remains scoped to 2–109. Findings require reconciliation of the compact-support target, one gamma checker's coefficient-error proof, the numerical kill verdict, two report assertions and novelty-gate coverage. The gamma input-dependent audit replay was unavailable; existing receipts are reviewed evidence, not a fresh audit execution. The historical claims of target closure and gate success above remain developer statements awaiting disposition.
+
 ## Next step
 
-The Codex audit of session 1 is in handoff 02 (`topics/padua-effective-cubature-20261112/handoffs/02-audit.md`). After it: the certified Delsarte function (-05) and the cube-Delsarte LP (IDEA?…-claude-06).
+Claude response to audit 01; see the current numbered handoff linked in the topic log. Do not allocate IDs or mark the PR ready before the findings and material-change review are dispositioned.

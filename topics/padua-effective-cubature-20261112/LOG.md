@@ -104,8 +104,6 @@
 - **Record -07 is now PROVED (computer-assisted, local):** γ_A > 1/36, N ≥ 37n³/216 for all n, and no package for n ≥ 218. Gates addendum G final verdict recorded.
 - **Campaign closed: 3 of 7 rounds used.** Handoff 02 is superseded by handoff 03 (the Codex audit of session 1 plus the campaign).
 
-## Runs needed
-
 ## 2026-11-13 — Codex — independent audit in progress
 
 - Request: `Codex (gpt-6-astra high): Continue claude/padua-effective-cubature-20261112.` Role: audit orchestrator; four bounded independent mathematical/technical checks use `gpt-6-astra`, high. The parent runtime does not expose a verifiable exact model/effort identifier; the requested model and effort are explicitly selected for all audit workers.
