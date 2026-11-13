@@ -1,0 +1,80 @@
+{
+  "kind": "final producer replays; scientific equality excludes timings and scratch paths",
+  "checks": [
+    {
+      "label": "t7-r06-census-quality",
+      "fields_checked": [
+        "survivors_measured",
+        "orders",
+        "order16",
+        "best_lambda21",
+        "worst_lambda21"
+      ],
+      "all_equal": true,
+      "producer_sha256": "4b800e1a15ac14957690edbfe440867569630d6b2ebe05191f3d0d440e061214",
+      "reference_sha256": "2c3e1e0016cfdd6b998de594fbee370daf9434b4a269ebf076697b771f262d89"
+    },
+    {
+      "label": "t7-r06-n3-pilot-quality",
+      "fields_checked": [
+        "counts",
+        "distinct_rational_node_sets",
+        "best",
+        "worst",
+        "maximum_condition2",
+        "maximum_inverse_residual_inf",
+        "input_raw_sha256"
+      ],
+      "all_equal": true,
+      "producer_sha256": "4e5d8843ddc90bda135f396d8ce0db1b7c784ec2975848e2088c829102fd036c",
+      "reference_sha256": "cf943c51e23aa7dc25a7bac6d527adcfbad72e429db21abcd88434bcd73541d0"
+    },
+    {
+      "label": "t7-r06-final-refinements",
+      "fields_checked": [
+        "n2_controls",
+        "selected_refinements",
+        "input_sha256"
+      ],
+      "all_equal": true,
+      "producer_sha256": "6a3beea27e1f7cd9d2863fea3b781684b0754ed294c4e369f7afae6a1a6261b2",
+      "reference_sha256": "033614c2e2a9053681bda879bc5801121cd64f99f0c073643d2ab93afcf281e9"
+    },
+    {
+      "label": "t10-quality-high",
+      "fields_checked": [
+        "rows",
+        "incomplete_meshes"
+      ],
+      "all_equal": true,
+      "producer_sha256": "43d074620c0ea271dbd94a774f472dd5fb0f23c7920204da3262775207f99c1f",
+      "reference_sha256": "6d3aa1ec234dd331741cc0422aeabe2213a2250aba37e2e18402d377a62ee4d6"
+    },
+    {
+      "label": "t10-extraction",
+      "fields_checked": [
+        "rows",
+        "incomplete_meshes"
+      ],
+      "all_equal": true,
+      "producer_sha256": "fc4ab1e2471ad04a11c7ae5d0042be26cb6796c9c33bc1cd7125d822f579f1f1",
+      "reference_sha256": "232d1c9057671c0ca6da71c80d293d0d4a170a8d5177a08ba2740a91c3ad3632"
+    },
+    {
+      "label": "t10-subset-rank",
+      "fields_checked": [
+        "rows"
+      ],
+      "all_equal": true,
+      "producer_sha256": "e0c94f81421614d57cff6b2469090df0595f61599f9c21c40454caa3c4183b96",
+      "reference_sha256": "fd9de15918d0b4f855d38186b4e1e84d47b79c6ef82d9e69c62a672767946bd8"
+    },
+    {
+      "label": "t10-search",
+      "all_scientific_rows_equal": true,
+      "tested": 4941,
+      "producer_sha256": "02b6e4c3d7d5d78cf106bfcc544b78993c82fd052d97377d8b3035bdf7eda720",
+      "reference_sha256": "539368249d5198362b269bea24ee7df6dc8882cbcd12ec047af98164b9fd3db9"
+    }
+  ]
+}

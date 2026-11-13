@@ -1,0 +1,156 @@
+{
+  "rules_input": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "command": [
+    "topics/padua-3d-20261106/code/independent_r06.py",
+    "--t8",
+    "topics/padua-3d-20261106/evidence/t8-r06-phi3.json",
+    "--output",
+    "topics/padua-3d-20261106/evidence/independent-r06-t8-phi3.json"
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "sympy": "1.14.0",
+  "code_sha256": "ed352441b145a900f375eb6bf03543e186976c31824ec9baf2b882fb5d64d296",
+  "controls": {},
+  "t8": {
+    "input_sha256": "e3107c30515cbefd1f0662cd479e7c3f6ae52957ae9780755a2cefa8361b5c38",
+    "checked": [
+      {
+        "denominator": 24,
+        "prime": 73,
+        "root": 52,
+        "nodes": 10,
+        "degree": 2,
+        "rank_lower": 9,
+        "matrix_sha256": "ae9b8a56850eaa9e36cc88fd5a26b701dede2995309b561ca319af1a24b169dd",
+        "generator": [
+          1,
+          4,
+          9
+        ]
+      },
+      {
+        "denominator": 38,
+        "prime": 191,
+        "root": 166,
+        "nodes": 10,
+        "degree": 2,
+        "rank_lower": 10,
+        "matrix_sha256": "d881adb7483d939524c21b0522e747b48b7e4ed332d951d4a2641e35e4a05c2d",
+        "generator": [
+          1,
+          4,
+          6
+        ],
+        "quality": {
+          "mesh_side": 21,
+          "sampled_lambda": 8.134069037119591,
+          "inverse_residual": 3.325828792842677e-16
+        },
+        "sample_difference": 1.7763568394002505e-15
+      },
+      {
+        "denominator": 78,
+        "prime": 79,
+        "root": 3,
+        "nodes": 20,
+        "degree": 3,
+        "rank_lower": 19,
+        "matrix_sha256": "d49cb8c510c364a5616c1daa4de789eca1df7a9fa3f6c39e1403b4eef7650bdb",
+        "generator": [
+          1,
+          4,
+          11
+        ]
+      },
+      {
+        "denominator": 138,
+        "prime": 139,
+        "root": 2,
+        "nodes": 35,
+        "degree": 4,
+        "rank_lower": 35,
+        "matrix_sha256": "bd8274c1ce834b974d3ed21fd5c796a41808e61b19909ae415e78589fac6ff5f",
+        "generator": [
+          1,
+          11,
+          15
+        ],
+        "quality": {
+          "mesh_side": 21,
+          "sampled_lambda": 45.71512394796709,
+          "inverse_residual": 1.681064340291713e-15
+        },
+        "sample_difference": 4.263256414560601e-14
+      },
+      {
+        "denominator": 222,
+        "prime": 223,
+        "root": 3,
+        "nodes": 56,
+        "degree": 5,
+        "rank_lower": 55,
+        "matrix_sha256": "24c5ad095d4e5a2c312b0a2a091d5117f451c943672ce62426b5d01abb34ec81",
+        "generator": [
+          1,
+          21,
+          49
+        ]
+      },
+      {
+        "denominator": 334,
+        "prime": 2339,
+        "root": 128,
+        "nodes": 84,
+        "degree": 6,
+        "rank_lower": 84,
+        "matrix_sha256": "83b922e19cb57cf3beee8c90c83cc52a975d8d98706fa90ef78b62a61dc2be7f",
+        "generator": [
+          1,
+          45,
+          59
+        ],
+        "quality": {
+          "mesh_side": 21,
+          "sampled_lambda": 421.5907532945823,
+          "inverse_residual": 1.3923816238280906e-14
+        },
+        "sample_difference": 8.526512829121202e-13
+      },
+      {
+        "denominator": 478,
+        "prime": 479,
+        "root": 13,
+        "nodes": 120,
+        "degree": 7,
+        "rank_lower": 119,
+        "matrix_sha256": "58d91a93905f374ddc5ba8984d31934f2e49e883724120d0ec730e3354a8b4d6",
+        "generator": [
+          1,
+          153,
+          202
+        ]
+      },
+      {
+        "denominator": 658,
+        "prime": 659,
+        "root": 2,
+        "nodes": 165,
+        "degree": 8,
+        "rank_lower": 165,
+        "matrix_sha256": "c4755409b492ee28410b47ad6bf7e96c078d88d90bb429e3e465c4961ed4bfd6",
+        "generator": [
+          1,
+          154,
+          237
+        ],
+        "quality": {
+          "mesh_side": 21,
+          "sampled_lambda": 676.6788726277996,
+          "inverse_residual": 2.2910231673766654e-14
+        },
+        "sample_difference": 1.6257217794191092e-11
+      }
+    ]
+  }
+}

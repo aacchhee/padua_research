@@ -1,0 +1,146 @@
+{
+  "rules_input": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "command": [
+    "topics/padua-3d-20261106/code/independent_r06.py",
+    "--t8",
+    "topics/padua-3d-20261106/evidence/t8-r06-witnesses.json",
+    "--output",
+    "topics/padua-3d-20261106/evidence/independent-r06-t8-witnesses.json"
+  ],
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "sympy": "1.14.0",
+  "code_sha256": "ed352441b145a900f375eb6bf03543e186976c31824ec9baf2b882fb5d64d296",
+  "controls": {},
+  "t8": {
+    "input_sha256": "3482c9d054d35d5b40c03a3b7c8e8bff9fa6f421602c8556410413a4f0706f28",
+    "checked": [
+      {
+        "denominator": 1028,
+        "prime": 17477,
+        "root": 8733,
+        "nodes": 4,
+        "degree": 1,
+        "rank_lower": 4,
+        "matrix_sha256": "adbc850060220ee7e4c31b05c2c95459db8ef30b89e8878906bf2c10605e8008",
+        "generator": [
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "denominator": 120,
+        "prime": 241,
+        "root": 49,
+        "nodes": 20,
+        "degree": 3,
+        "rank_lower": 20,
+        "matrix_sha256": "df85f6d56e68ef95bb270ca598928586bb489b13974d8f67c76b6da8dd7ea312",
+        "generator": [
+          1,
+          2,
+          7
+        ]
+      },
+      {
+        "denominator": 8995,
+        "prime": 107941,
+        "root": 44130,
+        "nodes": 35,
+        "degree": 4,
+        "rank_lower": 35,
+        "matrix_sha256": "c14b980f66e817b0d2802777b22a7ecaccb413805e41f239b504da2ab4199446",
+        "generator": [
+          1,
+          22,
+          25
+        ]
+      },
+      {
+        "denominator": 14392,
+        "prime": 43177,
+        "root": 125,
+        "nodes": 56,
+        "degree": 5,
+        "rank_lower": 56,
+        "matrix_sha256": "cecf4d117f785271371a3a208a7116ba855614f223120451b0b65ae2bdf5360a",
+        "generator": [
+          1,
+          8,
+          45
+        ]
+      },
+      {
+        "denominator": 30840,
+        "prime": 30841,
+        "root": 7,
+        "nodes": 120,
+        "degree": 7,
+        "rank_lower": 120,
+        "matrix_sha256": "973ac4cb1f7ebb5154f306cd337f30b6202f72fd476c0af79fd2f513c12a5a58",
+        "generator": [
+          1,
+          33,
+          92
+        ]
+      },
+      {
+        "denominator": 42405,
+        "prime": 84811,
+        "root": 9,
+        "nodes": 165,
+        "degree": 8,
+        "rank_lower": 165,
+        "matrix_sha256": "af3e72c9b242e8ed3798a8aa52b673b6be4e7d191da9785b84260fe1fc9c2c3f",
+        "generator": [
+          1,
+          37,
+          144
+        ]
+      },
+      {
+        "denominator": 56540,
+        "prime": 113081,
+        "root": 9,
+        "nodes": 220,
+        "degree": 9,
+        "rank_lower": 220,
+        "matrix_sha256": "ee166991e3e278d21d9054ce3465eb641c92f1a0948f36205038fe4349e5c012",
+        "generator": [
+          1,
+          32,
+          101
+        ]
+      },
+      {
+        "denominator": 93548,
+        "prime": 841933,
+        "root": 269259,
+        "nodes": 364,
+        "degree": 11,
+        "rank_lower": 364,
+        "matrix_sha256": "9c414719dc39208afde0c2d06a4c71ac491e43a3d8702f09a440012071c0a30c",
+        "generator": [
+          1,
+          16,
+          129
+        ]
+      },
+      {
+        "denominator": 116935,
+        "prime": 701611,
+        "root": 298389,
+        "nodes": 455,
+        "degree": 12,
+        "rank_lower": 455,
+        "matrix_sha256": "ccf965c84b1627706e3a7ed3273eb1aad0ed549bd1128f547105195b4fe87712",
+        "generator": [
+          1,
+          267,
+          119
+        ]
+      }
+    ]
+  }
+}

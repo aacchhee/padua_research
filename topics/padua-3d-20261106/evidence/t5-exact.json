@@ -1,0 +1,314 @@
+{
+  "schema": "padua-3d-t5-exact-v1",
+  "rules_sha": "ccd9e905d19c0c625c196c4a3f3e707058ed042a",
+  "code_sha256": "9c0283e3f1967f2ea50c4d97b95797bdb65f0232df3b2bd0edb1248c27ccafb5",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "arithmetic": "exact SymPy Rational / symbolic quadratic radicals",
+  "D4": "PASS",
+  "validations": [
+    {
+      "name": "product-Gauss3-d2",
+      "dimension": 2,
+      "nodes": 9,
+      "degree": 5,
+      "checked_monomials": 21,
+      "max_exact_residual": "0",
+      "positive_weights": true
+    },
+    {
+      "name": "product-Gauss3-d3",
+      "dimension": 3,
+      "nodes": 27,
+      "degree": 5,
+      "checked_monomials": 56,
+      "max_exact_residual": "0",
+      "positive_weights": true
+    },
+    {
+      "name": "symmetric14",
+      "dimension": 3,
+      "nodes": 14,
+      "degree": 5,
+      "checked_monomials": 56,
+      "max_exact_residual": "0",
+      "positive_weights": true
+    },
+    {
+      "name": "same-parity-Lobatto-m3",
+      "dimension": 3,
+      "nodes": 16,
+      "degree": 5,
+      "checked_monomials": 56,
+      "max_exact_residual": "0",
+      "positive_weights": true
+    }
+  ],
+  "commutators": [
+    {
+      "dimension": 2,
+      "q": 0,
+      "exactness_degree": 1,
+      "section_size": 1,
+      "pairs": [
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "rank": 0,
+          "orthonormal_frobenius_squared": "0"
+        }
+      ],
+      "joint_commutator_image_dimension": 0,
+      "standard_extension_lower_bound": 1
+    },
+    {
+      "dimension": 2,
+      "q": 1,
+      "exactness_degree": 3,
+      "section_size": 3,
+      "pairs": [
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "rank": 2,
+          "orthonormal_frobenius_squared": "1/2"
+        }
+      ],
+      "joint_commutator_image_dimension": 2,
+      "standard_extension_lower_bound": 4
+    },
+    {
+      "dimension": 2,
+      "q": 2,
+      "exactness_degree": 5,
+      "section_size": 6,
+      "pairs": [
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "rank": 2,
+          "orthonormal_frobenius_squared": "1/2"
+        }
+      ],
+      "joint_commutator_image_dimension": 2,
+      "standard_extension_lower_bound": 7
+    },
+    {
+      "dimension": 2,
+      "q": 3,
+      "exactness_degree": 7,
+      "section_size": 10,
+      "pairs": [
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "rank": 4,
+          "orthonormal_frobenius_squared": "5/8"
+        }
+      ],
+      "joint_commutator_image_dimension": 4,
+      "standard_extension_lower_bound": 12
+    },
+    {
+      "dimension": 2,
+      "q": 4,
+      "exactness_degree": 9,
+      "section_size": 15,
+      "pairs": [
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "rank": 4,
+          "orthonormal_frobenius_squared": "3/4"
+        }
+      ],
+      "joint_commutator_image_dimension": 4,
+      "standard_extension_lower_bound": 17
+    },
+    {
+      "dimension": 3,
+      "q": 0,
+      "exactness_degree": 1,
+      "section_size": 1,
+      "pairs": [
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "rank": 0,
+          "orthonormal_frobenius_squared": "0"
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "rank": 0,
+          "orthonormal_frobenius_squared": "0"
+        },
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "rank": 0,
+          "orthonormal_frobenius_squared": "0"
+        }
+      ],
+      "joint_commutator_image_dimension": 0,
+      "standard_extension_lower_bound": 1
+    },
+    {
+      "dimension": 3,
+      "q": 1,
+      "exactness_degree": 3,
+      "section_size": 4,
+      "pairs": [
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "rank": 2,
+          "orthonormal_frobenius_squared": "1/2"
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "rank": 2,
+          "orthonormal_frobenius_squared": "1/2"
+        },
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "rank": 2,
+          "orthonormal_frobenius_squared": "1/2"
+        }
+      ],
+      "joint_commutator_image_dimension": 3,
+      "standard_extension_lower_bound": 5
+    },
+    {
+      "dimension": 3,
+      "q": 2,
+      "exactness_degree": 5,
+      "section_size": 10,
+      "pairs": [
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "rank": 4,
+          "orthonormal_frobenius_squared": "1"
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "rank": 4,
+          "orthonormal_frobenius_squared": "1"
+        },
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "rank": 4,
+          "orthonormal_frobenius_squared": "1"
+        }
+      ],
+      "joint_commutator_image_dimension": 5,
+      "standard_extension_lower_bound": 12
+    },
+    {
+      "dimension": 3,
+      "q": 3,
+      "exactness_degree": 7,
+      "section_size": 20,
+      "pairs": [
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "rank": 8,
+          "orthonormal_frobenius_squared": "13/8"
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "rank": 8,
+          "orthonormal_frobenius_squared": "13/8"
+        },
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "rank": 8,
+          "orthonormal_frobenius_squared": "13/8"
+        }
+      ],
+      "joint_commutator_image_dimension": 10,
+      "standard_extension_lower_bound": 24
+    },
+    {
+      "dimension": 3,
+      "q": 4,
+      "exactness_degree": 9,
+      "section_size": 35,
+      "pairs": [
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "rank": 12,
+          "orthonormal_frobenius_squared": "19/8"
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "rank": 12,
+          "orthonormal_frobenius_squared": "19/8"
+        },
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "rank": 12,
+          "orthonormal_frobenius_squared": "19/8"
+        }
+      ],
+      "joint_commutator_image_dimension": 14,
+      "standard_extension_lower_bound": 41
+    }
+  ],
+  "limitations": [
+    "No minimization of completed commutator norms.",
+    "Rank lower bound is the known DST/Moller mechanism.",
+    "Independent replay required before computer-proof acceptance."
+  ]
+}

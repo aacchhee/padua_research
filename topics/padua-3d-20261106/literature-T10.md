@@ -1,0 +1,7 @@
+# T10 literature retrieval and comparison, 2026-11-06
+
+This is a bounded primary-source gate, not a novelty claim. Search used the actual web connector (shell proxy was unavailable), including K-optimal/trigonometric degree/l1 dual lattice, Noskov/Godzina, Chebyshev lattice search, and octahedron critical lattice. Sources and exact coverage are in `literature-round06/t10-sources.md`; all extracted facts are LITERATURE, not inherited local proofs.
+
+The close predecessors already cover T10's mechanism. Cools–Lyness gives 3D K-optimal HNF seeds through enhanced degree30 and explicitly distinguishes K-optimality from unrestricted optimality. Poppe–Cools's *In search for good Chebyshev lattices* systematically searches folded counts and offsets, reporting Noskov/Godzina as its best searched 3D grids. Cools–Poppe2011 connects this framework to blending/hyperinterpolation. Cools–Nuyens supplies the shortest-dual l1 degree criterion. Lyness–Sørevik illustrates the substantial cost of higher-dimensional exhaustive K-searches. Betke–Henk gives the critical octahedron lattice/density; the fold count is a separate question. Noskov's directly retrieved 2D abstract and 3D metadata/secondary citation are retained with those limited coverage labels.
+
+Contribution sought here: exact finite replication/extension through n16, rank failures, projection-vs-raw-operator distinction, frozen extraction comparison, and a correction of the 19/18 inference if needed. No source is claimed completely read, and no known search is renamed as a new mechanism.

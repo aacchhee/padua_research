@@ -1,0 +1,41 @@
+{
+  "kind": "final T9 independently executed producer comparisons",
+  "checks": [
+    {
+      "label": "snapshots",
+      "all_scientific_fields_and_input_hashes_match": true,
+      "source_sha256": "18c14b6212e69dd891e569712477c73b44c3fa1e05b9b257d460c76215725424",
+      "reference_sha256": "e08920ab6980bbe55a8723698308fc7fbb614bc0415f33394d8b3341cfa8335b"
+    },
+    {
+      "label": "t10-owner",
+      "all_scientific_fields_and_input_hashes_match": true,
+      "source_sha256": "6938fa8230a984586a450ace5f1c4755d856f6947b1c216dca8eb0718deead8a",
+      "reference_sha256": "9c17cd71a5ad77450228051cfed9c734ed007e17a7be8cb1d5fb04a8006af212"
+    },
+    {
+      "label": "complement",
+      "all_scientific_fields_and_input_hashes_match": true,
+      "source_sha256": "4463478fff1c9e46ecb1b18ae84bd72f00886b9cf0f3d3c3464321bc4a95b990",
+      "reference_sha256": "8965cf7ed03ed911f913f2785ddfb529e1e555af07ad0b6a31d3cbce6d658706"
+    },
+    {
+      "label": "exact",
+      "all_scientific_fields_and_input_hashes_match": true,
+      "source_sha256": "0edb7b869fe8480fe1f215ad335e172adbf361095b122303a02f42546867f062",
+      "reference_sha256": "b17cef07a8a9929ab96990eb8401359f5504a36ac744e2f0ecaeac52b62cbb01"
+    },
+    {
+      "label": "weights",
+      "all_scientific_fields_and_input_hashes_match": true,
+      "source_sha256": "8e00f501b12227e8e6c3ce946fbba52808ef66ddc7983c0e6b077c078ceb0d07",
+      "reference_sha256": "9f2db252c86d6966683c75b4ecad22efe9c639171c7384cb351c5336ad8fa2c8"
+    },
+    {
+      "label": "unbalanced",
+      "all_scientific_fields_and_input_hashes_match": true,
+      "source_sha256": "198bff096a4341a48d7767763fc73abdaa4d252f3e7bce3360b0342e9068cd8d",
+      "reference_sha256": "c1a4e71aa5c7e96d84d01beb6d2a2a32991d79161c74449461ea8e2559799ac0"
+    }
+  ]
+}

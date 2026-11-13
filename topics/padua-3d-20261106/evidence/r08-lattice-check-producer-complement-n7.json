@@ -1,0 +1,81 @@
+{
+  "schema": "padua-r08-lattice-v1",
+  "input_sha": "9042e1c42964150f30fdbe8563c12ba6c6a8692a",
+  "kind": "complement",
+  "python": "3.12.14",
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-3d-20261106/code/r08_lattice.py",
+      "bytes": 6359,
+      "sha256": "0d03590f8587f799ad5213ba2b41def2b23e80472ff7327076b4b4f19cbfbfe0"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-3d-20261106/code/r08_lattice_enum.cpp",
+      "bytes": 4430,
+      "sha256": "e07ad9e51d5b883e7c6d813d396ef32ea0ac24eda253a73f6137f8b8f86feaa4"
+    }
+  ],
+  "commands": [
+    [
+      "/tmp/padua-r08-independent-lattice-9042e1c/producer-enum",
+      "complement",
+      "7",
+      "1",
+      "960",
+      "120",
+      "/tmp/padua-r08-independent-lattice-9042e1c/producer-complement-n7/complement-n7.jsonl"
+    ]
+  ],
+  "rows": [
+    {
+      "n": 7,
+      "N": 120,
+      "completed_det_interval": [
+        1,
+        960
+      ],
+      "complete": true,
+      "summary": {
+        "type": "summary",
+        "mode": "complement",
+        "n": 7,
+        "det_lo": 1,
+        "det_hi_requested": 960,
+        "fold_cap": 120,
+        "hnf_total": 584906253,
+        "after_axis_pair_prune": 456323923,
+        "admissible": 21354010,
+        "small_count": 0,
+        "min_det": 0,
+        "min_fold": 128,
+        "min_fold_det": 686,
+        "min_fold_hnf": [
+          7,
+          0,
+          7,
+          7,
+          7,
+          14
+        ],
+        "elapsed_seconds": 304.789
+      },
+      "raw": {
+        "path": "/tmp/padua-r08-independent-lattice-9042e1c/producer-complement-n7/complement-n7.jsonl",
+        "bytes": 118762,
+        "sha256": "fca25f75ff1c93ee3cbb374e429971b16b4716aca6d3da757e412243e28c99e7"
+      },
+      "fold_rank_hist": [],
+      "full_rank_small_count": 0,
+      "full_rank_small_examples": [],
+      "minimizer_count": 0,
+      "minimizer_fold_hist": [],
+      "minimizer_example": null,
+      "exact_rank_cases": 0
+    }
+  ],
+  "exact_rank_raw": {
+    "path": "/tmp/padua-r08-independent-lattice-9042e1c/producer-complement-n7/complement-exact-ranks.json",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  }
+}

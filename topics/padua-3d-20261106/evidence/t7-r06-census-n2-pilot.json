@@ -1,0 +1,59 @@
+{
+  "schema": "t7-census-pilot-v1",
+  "source_sha256": "02194c29286049338584d1ed8f84f63366d446001febe5c7602f0b006ca412aa",
+  "command": "topics/padua-3d-20261106/code/t7_r06_census.py --n 2 --seconds 120 --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-census-n2-pilot.json",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0"
+  },
+  "D0": {
+    "inherited_rank": 20,
+    "actual_node": {
+      "rank": 20,
+      "prime": 5051,
+      "root": 32,
+      "root_order": 1010,
+      "matrix_sha256": "4816b86e32ef2074a0fa29c917fc3b68fe0f22899c2de84af6224aa7c961df21"
+    },
+    "outcome": "PASS"
+  },
+  "n": 2,
+  "N": 10,
+  "coverage_complete": false,
+  "start_order": 10,
+  "counts": {
+    "groups_seen": 18,
+    "groups_killed_projection": 12,
+    "strata_counted": 41980,
+    "target_count_strata": 40964,
+    "symbolic_deficient_strata": 6,
+    "wrong_node_count": 1016
+  },
+  "unresolved_target_strata": 40958,
+  "unfinished_cursor": {
+    "order": 10,
+    "hnf_index": 17,
+    "hnf": [
+      1,
+      1,
+      10,
+      0,
+      1,
+      7
+    ],
+    "phase": [
+      19,
+      3,
+      0
+    ]
+  },
+  "first_survivors": [],
+  "raw": {
+    "path": "/tmp/padua-t7-r06-7afa6a54/census-n2-from10.jsonl",
+    "bytes": 14882035,
+    "sha256": "1e63c6e9414a32b2a730a6c335d1ad501b2e63fd66030a0d61e7d1b070ed8d48"
+  },
+  "full_census": false,
+  "seconds": 120.02099732699935
+}

@@ -1,0 +1,69 @@
+{
+  "verdict": "PASS",
+  "scope": "Supplementary identity/codec engineering check; zero research rounds; no mathematical or formal Claude approval.",
+  "rules_read_sha": "c7afc444fabab45081b087bdde583d5631a8d1a1",
+  "baseline_commit": "6d894d50efd8167c5b10f3d5b0da4d8cf214b681",
+  "python": "3.12.14",
+  "zlib": "1.3.2",
+  "command": "python topics/padua-3d-20261106/pruning-review/check_codec.py --output topics/padua-3d-20261106/pruning-review/codec.json",
+  "checker_sha256": "cfa5f69cdf7f17a065bedbed2df227e5455ac2b94af4edb8a14b399ff9a17fe3",
+  "producer_source_pins": {
+    "code/artifact_manifest.py": {
+      "path": "code/artifact_manifest.py",
+      "bytes": 11321,
+      "sha256": "cfffec87423436d035d51fdfd7c64c5af5b91b1229c0c7b59fcde4d5288ec9ea"
+    },
+    "code/pdpr_manifest_check.py": {
+      "path": "code/pdpr_manifest_check.py",
+      "bytes": 13248,
+      "sha256": "165d444a1c5daf1454147196d5b744f2f5d06bdcd68289ba3e76466907314968"
+    }
+  },
+  "baseline": {
+    "bytes": 16379,
+    "sha256": "3523daba8032c5a50ee28ec5fbfaa3fe27e8379352f1c7a4e22517d9c175c06f",
+    "artifacts": 290
+  },
+  "frozen": {
+    "artifacts": 295,
+    "map_sha256": "549a69482ff466e7c280e77a61f19df8d16bfd8af3f08966e9db3c2fb5ed3b36",
+    "manifest_bytes": 15721
+  },
+  "inherited": [
+    {
+      "path": "tracks/lattice-unisolvence/code/c3_lebesgue.py",
+      "bytes": 6286,
+      "sha256": "bf9cdb7c057f6ddf1793d99e6d338b1c1cfa37a274e5a6ac9689085f6bb3d66e",
+      "observed_sha256": "bf9cdb7c057f6ddf1793d99e6d338b1c1cfa37a274e5a6ac9689085f6bb3d66e"
+    },
+    {
+      "path": "tracks/lattice-unisolvence/code/c3_rank.py",
+      "bytes": 7430,
+      "sha256": "a95afbb764838662358dc70d2fd5a7eddf335d3ae48254d29b717fa015143332",
+      "observed_sha256": "a95afbb764838662358dc70d2fd5a7eddf335d3ae48254d29b717fa015143332"
+    }
+  ],
+  "checks": [
+    "independent_v6_v7_exact_baseline_rows_and_map",
+    "frozen_recursive_map_exact_v7_generate_list_verify",
+    "frozen_v4_list_verify",
+    "frozen_v5_list_verify",
+    "frozen_v6_list_verify",
+    "same_size_content_mutation",
+    "size_mutation",
+    "omission",
+    "recursive_suffix_independent_addition",
+    "inherited_mutation",
+    "unsupported_schema",
+    "payload_truncation",
+    "payload_extension",
+    "structurally_valid_identity_omission",
+    "producer_checker_separate_frozen_execution"
+  ],
+  "producer_rerun": {
+    "checks": 45,
+    "baseline_decoded_map_sha256": "7a3b2b5907244786fe7d317abfc9222ab1eda68624fcb5a7c989da9ea36771c8",
+    "plus40_under_16KiB": false
+  },
+  "limits": "Snapshot disposable, regeneration-only. Source code may subsequently change; pins define this run. Independent reader is for valid data, producer owns rejection checks."
+}

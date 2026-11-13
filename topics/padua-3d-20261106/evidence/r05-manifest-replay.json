@@ -1,0 +1,215 @@
+{
+  "schema": "r05-manifest-replay-v1",
+  "verdict": "PASS",
+  "started_utc": "2026-11-12T11:17:25.578815+00:00",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "topics/padua-3d-20261106/code/r05_manifest_replay.py",
+    "--output",
+    "topics/padua-3d-20261106/evidence/r05-manifest-replay.json"
+  ],
+  "scope": "Current code/data snapshot; disposable generation/verification and existing codec controls; zero research rounds.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/tmp/padua-r05-manifest-p9871hz1/topics/padua-3d-20261106/code/artifact_manifest.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/tmp/padua-r05-manifest-p9871hz1/topics/padua-3d-20261106/code/artifact_manifest.py",
+        "--verify"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/tmp/padua-r05-manifest-p9871hz1/topics/padua-3d-20261106/code/artifact_manifest.py",
+        "--verify"
+      ],
+      "returncode": 1
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/tmp/padua-r05-manifest-p9871hz1/topics/padua-3d-20261106/code/artifact_manifest.py",
+        "--verify"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/tmp/padua-r05-manifest-p9871hz1/topics/padua-3d-20261106/code/pdpr_manifest_check.py",
+        "--output",
+        "/tmp/padua-r05-manifest-p9871hz1/codec-controls.json"
+      ],
+      "returncode": 0
+    }
+  ],
+  "generated": {
+    "manifest": "/tmp/padua-r05-manifest-p9871hz1/topics/padua-3d-20261106/evidence-manifest.json",
+    "artifacts": 366,
+    "bytes": 19358
+  },
+  "verified": {
+    "verdict": "PASS",
+    "artifacts": 366,
+    "bytes": 2301684
+  },
+  "inherited_inputs": [
+    {
+      "path": "tracks/lattice-unisolvence/code/c3_lebesgue.py",
+      "bytes": 6286,
+      "sha256": "bf9cdb7c057f6ddf1793d99e6d338b1c1cfa37a274e5a6ac9689085f6bb3d66e"
+    },
+    {
+      "path": "tracks/lattice-unisolvence/code/c3_rank.py",
+      "bytes": 7430,
+      "sha256": "a95afbb764838662358dc70d2fd5a7eddf335d3ae48254d29b717fa015143332"
+    },
+    {
+      "path": "topics/padua-3d-20261106/audit-04/code/A1/aud_enum.cpp",
+      "bytes": 10115,
+      "sha256": "d39563b9340bb0e8384031dac36e2050efb0ab6953c64e165e4006eaca9be503"
+    }
+  ],
+  "audit04_source_mutation_rejected": true,
+  "live_master_unchanged": true,
+  "current_compiler_observation": {
+    "observed_utc": "2026-11-12T11:17:27.579590+00:00",
+    "command": [
+      "g++",
+      "--version"
+    ],
+    "stdout": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "limitation": "Current observation only. Historical g++ version unrecoverable. Each implementation's binary was identical between fd4-lee and fdq-lee-replay; producer and auditor binaries differ."
+  },
+  "historical_records": [
+    {
+      "path": "topics/padua-3d-20261106/evidence/fd4-manifest.json",
+      "bytes": 5386,
+      "sha256": "f4c10b53de0ad2886a244b1020e1eedfb13604c60e2ebb8004acda59f6da05be"
+    },
+    {
+      "path": "topics/padua-3d-20261106/evidence/fdr-d2-quality-replay.json",
+      "bytes": 721,
+      "sha256": "ecb066744f0e4b47e40cde778edf4e72b1971c587615af44395f3ac1b34cbb09"
+    }
+  ],
+  "source": {
+    "path": "topics/padua-3d-20261106/code/r05_manifest_replay.py",
+    "bytes": 4855,
+    "sha256": "1ba79237964a6df0eae7db4e6a85fcb14d978b3ede11c604f3a26e770942813d"
+  },
+  "controls": {
+    "verdict": "PASS",
+    "input_head": "6d894d50efd8167c5b10f3d5b0da4d8cf214b681",
+    "scope": "Technical verification; zero research rounds; no mathematical claim.",
+    "python": "3.12.14",
+    "zlib": "1.3.2",
+    "baseline_schema": "padua-3d-code-data-manifest-v7",
+    "baseline_sha256": "a7f881dabb261d543185020dad9640e71d8f087250e85ebc8456f1dec81d0db6",
+    "baseline_bytes": 19358,
+    "baseline_artifacts": 366,
+    "baseline_decoded_map_sha256": "3ed6b3ff647df5da46cf112e0928f6b100e9c96c04e33a9b48640c1d8cddf27b",
+    "baseline_payload_bytes": 18209,
+    "v7_payload_bytes": 18209,
+    "v7_manifest_bytes": 19358,
+    "v7_compact_manifest_bytes": 19212,
+    "v7_same_baseline_envelope_bytes": 19358,
+    "plus40_manifest_bytes": 21110,
+    "plus40_under_32KiB": true,
+    "maximum_synthetic_extras_under_32KiB_tested_0_to_80": 80,
+    "compression_metadata_bytes": {
+      "0": {
+        "zlib9_split": 2844,
+        "xz_combined": 2816,
+        "raw_lzma2_combined": 2759,
+        "bz2_split": 2992
+      },
+      "30": {
+        "zlib9_split": 3026,
+        "xz_combined": 2948,
+        "raw_lzma2_combined": 2892,
+        "bz2_split": 3159
+      },
+      "40": {
+        "zlib9_split": 3082,
+        "xz_combined": 2988,
+        "raw_lzma2_combined": 2931,
+        "bz2_split": 3216
+      }
+    },
+    "checks": [
+      "v4_verify",
+      "v5_verify",
+      "v6_verify",
+      "v7_roundtrip_exact_list",
+      "unsupported_schema",
+      "malformed_base85",
+      "malformed_frame",
+      "binary_version",
+      "truncated_binary",
+      "trailing_binary",
+      "noncanonical_count",
+      "oversized_count",
+      "count_mismatch",
+      "missing_terminator",
+      "invalid_utf8",
+      "invalid_path",
+      "invalid_scope",
+      "duplicate_entry",
+      "unordered_entries",
+      "noncanonical_size",
+      "oversized_size",
+      "missing_size",
+      "trailing_size",
+      "truncated_zlib",
+      "path_zlib_trailing",
+      "path_zlib_truncated",
+      "size_zlib_trailing",
+      "size_zlib_truncated",
+      "malformed_zlib",
+      "entry_omission",
+      "file_addition",
+      "bytes_mismatch",
+      "hash_mismatch",
+      "inherited_input_mismatch",
+      "plus40_lossless_roundtrip",
+      "frozen_tree_v7_generate_verify_list",
+      "frozen_tree_v5_verify_list",
+      "frozen_tree_v4_verify_list",
+      "frozen_tree_v6_verify_list",
+      "tmpcopy_cli_file_addition",
+      "tmpcopy_cli_file_omission",
+      "tmpcopy_cli_bytes_mismatch",
+      "tmpcopy_cli_hash_mismatch",
+      "tmpcopy_cli_inherited_input_change"
+    ],
+    "frozen_tree": {
+      "artifacts": 366,
+      "artifact_bytes": 2301684,
+      "manifest_bytes": 19358,
+      "map_sha256": "3ed6b3ff647df5da46cf112e0928f6b100e9c96c04e33a9b48640c1d8cddf27b",
+      "method": "Each live code/evidence and inherited file read once into disposable topic/root copy; subprocess generate/verify/list operates only on copy."
+    },
+    "code_sha256": {
+      "artifact_manifest.py": "20d9a5131245d6c7e77a047d0f6a9e4db825cc25777b0272e3b2082a9d18ae6b",
+      "pdpr_manifest_check.py": "9c7606308f12080de00cc9eb2d019443cb27ee0e7ea01437b717f19144fd46af"
+    }
+  },
+  "controls_metadata_note": "Nested input_head is the existing checker's historical constant, not this run's head; current source hashes and snapshot identities are recorded here."
+}

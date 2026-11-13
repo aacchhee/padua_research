@@ -1,0 +1,175 @@
+{
+  "schema": "t7-census-reduced-v1",
+  "source_sha256": "438553553d2e6a413f951feb5af191d79f2cb45c172800e058aedf5f6b152521",
+  "command": "topics/padua-3d-20261106/code/t7_r06_census_reduced.py pilot --n 2 --seconds 120 --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-census-n2-reduced-pilot.json",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0"
+  },
+  "D0": {
+    "inherited_rank": 20,
+    "actual_node": {
+      "rank": 20,
+      "prime": 5051,
+      "root": 32,
+      "root_order": 1010,
+      "matrix_sha256": "4816b86e32ef2074a0fa29c917fc3b68fe0f22899c2de84af6224aa7c961df21"
+    },
+    "outcome": "PASS"
+  },
+  "pilot": {
+    "n": 2,
+    "N": 10,
+    "counts": {
+      "groups_seen": 10733,
+      "groups_killed_projection": 2555,
+      "groups_killed_no_fold_trace": 112,
+      "groups_covered_prime_block": 1308,
+      "quotient_strata_seen": 2195749,
+      "strata_wrong_count": 2104939,
+      "strata_killed_projection": 88458,
+      "target_count_strata": 2352,
+      "strata_killed_fixed_trace": 2336,
+      "strata_full_rank_witness": 4,
+      "strata_killed_short_relation": 12
+    },
+    "cursor": {
+      "order": 26,
+      "hnf_index": 562,
+      "hnf": [
+        1,
+        1,
+        26,
+        0,
+        21,
+        16
+      ],
+      "mask": 7,
+      "phase": [
+        11,
+        3,
+        0
+      ]
+    },
+    "complete": false,
+    "full_census": false,
+    "first_survivors": [
+      {
+        "hnf": [
+          1,
+          4,
+          4,
+          1,
+          1,
+          0
+        ],
+        "orders": [
+          4,
+          4,
+          4
+        ],
+        "phase_stratum": [
+          0,
+          0,
+          0
+        ],
+        "count": 10,
+        "rank": 10,
+        "prime": 64577,
+        "root": 81,
+        "root_order": 16144,
+        "matrix_sha256": "531760c53c6b8716c145f46f89129c332a4346164acd68a49d50dfede9c927c3",
+        "decision": "exact full-rank specialization"
+      },
+      {
+        "hnf": [
+          1,
+          4,
+          4,
+          1,
+          3,
+          0
+        ],
+        "orders": [
+          4,
+          4,
+          4
+        ],
+        "phase_stratum": [
+          0,
+          0,
+          0
+        ],
+        "count": 10,
+        "rank": 10,
+        "prime": 64577,
+        "root": 81,
+        "root_order": 16144,
+        "matrix_sha256": "f52ff3f27cf31845d1cb9b05d117e5369ff4a662e0f7559821d7081420281c41",
+        "decision": "exact full-rank specialization"
+      },
+      {
+        "hnf": [
+          1,
+          4,
+          4,
+          3,
+          1,
+          0
+        ],
+        "orders": [
+          4,
+          4,
+          4
+        ],
+        "phase_stratum": [
+          0,
+          0,
+          0
+        ],
+        "count": 10,
+        "rank": 10,
+        "prime": 64577,
+        "root": 81,
+        "root_order": 16144,
+        "matrix_sha256": "f52ff3f27cf31845d1cb9b05d117e5369ff4a662e0f7559821d7081420281c41",
+        "decision": "exact full-rank specialization"
+      },
+      {
+        "hnf": [
+          1,
+          4,
+          4,
+          3,
+          3,
+          0
+        ],
+        "orders": [
+          4,
+          4,
+          4
+        ],
+        "phase_stratum": [
+          0,
+          0,
+          0
+        ],
+        "count": 10,
+        "rank": 10,
+        "prime": 64577,
+        "root": 81,
+        "root_order": 16144,
+        "matrix_sha256": "531760c53c6b8716c145f46f89129c332a4346164acd68a49d50dfede9c927c3",
+        "decision": "exact full-rank specialization"
+      }
+    ],
+    "pilot_seconds": 120.00007819199982
+  },
+  "seconds": 120.00407880199964,
+  "raw": {
+    "path": "/tmp/padua-t7-r06-7afa6a54/census-reduced-pilot-n2-from10.jsonl",
+    "bytes": 521014,
+    "sha256": "ea0030d78d0cabf5cfc58e9ab9e52ec4d996870f231c3b3052b6de2bcfdb05be"
+  }
+}

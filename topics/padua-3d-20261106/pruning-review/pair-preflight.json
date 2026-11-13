@@ -1,0 +1,65 @@
+{
+  "verdict": "PASS",
+  "command": [
+    "topics/padua-3d-20261106/pruning-review/check_pair_preflight.py",
+    "topics/padua-3d-20261106/pruning-review/pair-preflight.json"
+  ],
+  "started_utc": "2026-11-07T10:11:56.486331+00:00",
+  "ended_utc": "2026-11-07T10:11:56.535478+00:00",
+  "actual_cpu": 0.04914826400000005,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/pruning-review/check_pair_preflight.py",
+    "bytes": 5338,
+    "sha256": "f680ed5f631b5233cbcd87521feb3c7a94a5367ef48460ab2784191ad67b7b3b"
+  },
+  "helper": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/pruning-review/check_pilot.py",
+    "bytes": 19083,
+    "sha256": "568eaac055cbe0cdcf153c03b8e41b8d6cd9d4efa24b67bcf0e43ee464aca343"
+  },
+  "producer_sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-3d-20261106/code/pdpr_core.py",
+      "bytes": 27099,
+      "sha256": "12456d1aaa82abc242e9bd3463791be622116abb820b213058e1074f00d3f13a"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-3d-20261106/code/pdpr_run.py",
+      "bytes": 69111,
+      "sha256": "9a0b42e8e1b150f4554fa3908163cfce064897869bb68bc52e5c5240ce14f92c"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-3d-20261106/code/pdpr_collect.py",
+      "bytes": 5481,
+      "sha256": "3117045003ab41b37b34f737edd4983ebc91f890d5076661a2955531bef32baf"
+    }
+  ],
+  "random_seed": 202611070579,
+  "fresh_SVD_block_comparisons": 114,
+  "rank_rejections": 15,
+  "classification_counts": {
+    "True": 34,
+    "False": 80
+  },
+  "maximum_relative_errors": {
+    "map": 4.261268065201057e-15,
+    "cardinal": 4.2000583734155186e-15,
+    "risk": 3.924671646433296e-15,
+    "trace": 4.137214014259208e-15,
+    "amp": 3.117622681016561e-15
+  },
+  "ordering_branches": 7,
+  "cap_stops": 3,
+  "scope": "Synthetic finite preflight only: no parity candidate generation or research round. Actual singleton dense-training comparison, operational-vs-diagnostic labeling, all-controls/cap gate and provenance inspected in frozen driver.",
+  "limits": "No scientific P5 outcome or universal guarantee; formal Claude audit pending."
+}

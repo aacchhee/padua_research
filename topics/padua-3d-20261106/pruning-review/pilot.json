@@ -1,0 +1,277 @@
+{
+  "verdict": "PASS",
+  "scope": "Supplementary executed numerical audit of finite P1; no timing replication, continuous supremum, novelty clearance, or formal Claude approval.",
+  "rules_read_sha": "c7afc444fabab45081b087bdde583d5631a8d1a1",
+  "command": [
+    "topics/padua-3d-20261106/pruning-review/check_pilot.py",
+    "--receipt",
+    "topics/padua-3d-20261106/evidence/pdpr-pilot.json",
+    "--scratch",
+    "/tmp/padua-pruning-review-p1-20261107b",
+    "--output",
+    "topics/padua-3d-20261106/pruning-review/pilot.json"
+  ],
+  "started_utc": "2026-11-07T09:16:44.176679+00:00",
+  "ended_utc": "2026-11-07T09:16:49.490106+00:00",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "receipt": {
+    "path": "topics/padua-3d-20261106/evidence/pdpr-pilot.json",
+    "bytes": 16349,
+    "sha256": "1c845a1eb6c8bdf1c4cc17f159ce34fd453bd5f2f2d4c9e3f60abafda116f92e"
+  },
+  "source_pins": [
+    {
+      "path": "/tmp/pdpr-pilot-20261107a/source-c3_lebesgue.py",
+      "bytes": 6286,
+      "sha256": "bf9cdb7c057f6ddf1793d99e6d338b1c1cfa37a274e5a6ac9689085f6bb3d66e"
+    },
+    {
+      "path": "/tmp/pdpr-pilot-20261107a/source-c3_rank.py",
+      "bytes": 7430,
+      "sha256": "a95afbb764838662358dc70d2fd5a7eddf335d3ae48254d29b717fa015143332"
+    },
+    {
+      "path": "/tmp/pdpr-pilot-20261107a/source-pdpr_core.py",
+      "bytes": 11259,
+      "sha256": "fea324712e39fba7b72980c754b8a0c78b2ef26afa35355c8f66191f5cd630fb"
+    },
+    {
+      "path": "/tmp/pdpr-pilot-20261107a/source-pdpr_run.py",
+      "bytes": 19009,
+      "sha256": "04f8ef7a63fe3fa521bb54bad7e43490a8d2d8dded3b27f9fa8edd05e4929f6e"
+    },
+    {
+      "path": "/tmp/pdpr-pilot-20261107a/source-t4_stacks.py",
+      "bytes": 9491,
+      "sha256": "0cd23793f436cd25328114e21dfda2c8c590cebbe7b88b985f7e478fc8c068b7"
+    },
+    {
+      "path": "/tmp/pdpr-pilot-20261107a/source-t9_maxima.py",
+      "bytes": 5625,
+      "sha256": "b98fc5bae7502555a1ed903785d452140ac719f2ac8a478bfc8022c7b2d69a3e"
+    },
+    {
+      "path": "/tmp/pdpr-pilot-20261107a/source-t9_r06_maxima.py",
+      "bytes": 5818,
+      "sha256": "7831165e8fc4ed94901b5bb83a09ad18ebf6b1fec831dbb07c76098e6e468415"
+    },
+    {
+      "path": "/tmp/pdpr-pilot-20261107a/source-u1_usable.py",
+      "bytes": 17849,
+      "sha256": "2b8a087126189a9a161acd449260b9ec456d28813337c820a90f5fc3cc991938"
+    },
+    {
+      "path": "/tmp/pdpr-pilot-20261107a/source-u1c_budget.py",
+      "bytes": 11461,
+      "sha256": "0adb0aefaac5fc2574c94884917362da68f7e2a0ced6379deb0065ce7ec228ea"
+    }
+  ],
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/pruning-review/check_pilot.py",
+    "bytes": 19083,
+    "sha256": "568eaac055cbe0cdcf153c03b8e41b8d6cd9d4efa24b67bcf0e43ee464aca343"
+  },
+  "producer_raw_inventory": {
+    "path": "/tmp/pdpr-pilot-20261107a/inventory.json",
+    "bytes": 19080,
+    "sha256": "54cb91bc1e428b536f2471db3382f89e20f205c51dc7d58d55e1cf10ed72f4f0"
+  },
+  "inventory_files_verified": 129,
+  "decoded_logical_results_exact": true,
+  "source_frozen_n4_reruns": [
+    {
+      "rule": "A",
+      "counts": 11,
+      "node_ids_exact": true,
+      "source_core_sha256": "fea324712e39fba7b72980c754b8a0c78b2ef26afa35355c8f66191f5cd630fb"
+    },
+    {
+      "rule": "D",
+      "counts": 11,
+      "node_ids_exact": true,
+      "source_core_sha256": "fea324712e39fba7b72980c754b8a0c78b2ef26afa35355c8f66191f5cd630fb"
+    },
+    {
+      "rule": "random",
+      "counts": 11,
+      "node_ids_exact": true,
+      "source_core_sha256": "fea324712e39fba7b72980c754b8a0c78b2ef26afa35355c8f66191f5cd630fb"
+    },
+    {
+      "rule": "lex",
+      "counts": 11,
+      "node_ids_exact": true,
+      "source_core_sha256": "fea324712e39fba7b72980c754b8a0c78b2ef26afa35355c8f66191f5cd630fb"
+    }
+  ],
+  "all_path_checks": [
+    {
+      "n": 4,
+      "rule": "A",
+      "counts": 11,
+      "selected_M": 44,
+      "first_failure_M": 43,
+      "producer_guard_failures": []
+    },
+    {
+      "n": 4,
+      "rule": "D",
+      "counts": 11,
+      "selected_M": 44,
+      "first_failure_M": 43,
+      "producer_guard_failures": []
+    },
+    {
+      "n": 4,
+      "rule": "random",
+      "counts": 11,
+      "selected_M": 45,
+      "first_failure_M": 44,
+      "producer_guard_failures": []
+    },
+    {
+      "n": 4,
+      "rule": "lex",
+      "counts": 11,
+      "selected_M": 45,
+      "first_failure_M": 44,
+      "producer_guard_failures": []
+    },
+    {
+      "n": 6,
+      "rule": "A",
+      "counts": 29,
+      "selected_M": 112,
+      "first_failure_M": 111,
+      "producer_guard_failures": []
+    },
+    {
+      "n": 6,
+      "rule": "D",
+      "counts": 29,
+      "selected_M": 111,
+      "first_failure_M": 110,
+      "producer_guard_failures": []
+    },
+    {
+      "n": 6,
+      "rule": "random",
+      "counts": 29,
+      "selected_M": 112,
+      "first_failure_M": 111,
+      "producer_guard_failures": []
+    },
+    {
+      "n": 6,
+      "rule": "lex",
+      "counts": 29,
+      "selected_M": 112,
+      "first_failure_M": 111,
+      "producer_guard_failures": []
+    },
+    {
+      "n": 8,
+      "rule": "A",
+      "counts": 61,
+      "selected_M": 223,
+      "first_failure_M": 222,
+      "producer_guard_failures": []
+    },
+    {
+      "n": 8,
+      "rule": "D",
+      "counts": 61,
+      "selected_M": 222,
+      "first_failure_M": 221,
+      "producer_guard_failures": []
+    },
+    {
+      "n": 8,
+      "rule": "random",
+      "counts": 61,
+      "selected_M": 224,
+      "first_failure_M": 223,
+      "producer_guard_failures": []
+    },
+    {
+      "n": 8,
+      "rule": "lex",
+      "counts": 61,
+      "selected_M": 225,
+      "first_failure_M": 224,
+      "producer_guard_failures": [
+        {
+          "M": 165,
+          "failure": "checkpoint numerical guards",
+          "eligible": false,
+          "condition2": 4935799.080512563,
+          "reproduction_inf": 5.503038676607793e-08,
+          "qr_relative_inf": 4.940701247384867e-16,
+          "orthogonality_inf": 1.2747348477209021e-14,
+          "sigma_min": 6.298823434214775e-06
+        }
+      ]
+    }
+  ],
+  "maximum_errors": {
+    "trace": 8.396392598012084e-11,
+    "integer_risk": 8.445659093971386e-11,
+    "training": 4.2614947597387365e-11,
+    "deletion_increment": 2.8650903732002083e-08,
+    "map": 2.7424430898685274e-12,
+    "targets": 3.047534846700728e-08,
+    "calibrated_mse": 7.259426638484001e-06,
+    "score_excess": 6.661338147750939e-16,
+    "amplification": 3.722205910772821e-13,
+    "variance_max": 7.348553254753901e-13,
+    "targets_scaled": 7.908609377749865e-11,
+    "calibrated_mse_scaled": 1.0389503578812134e-11
+  },
+  "worst_error_cases": {
+    "deletion_increment": [
+      8,
+      "lex",
+      166,
+      24786110031.878113
+    ],
+    "targets": [
+      8,
+      "lex-m174",
+      "chebyshev",
+      "maximum",
+      10498.667862430173
+    ],
+    "calibrated_mse": [
+      8,
+      "lex-m174",
+      2140611.4131998057
+    ]
+  },
+  "eligible_maps_checked": 103,
+  "fresh_selected_maps": 19,
+  "fresh_query_seeds": [
+    "2026111020+n angular",
+    "2026111030+n uniform"
+  ],
+  "fresh_metrics": {
+    "path": "/tmp/padua-pruning-review-p1-20261107b/fresh-metrics.json",
+    "bytes": 14245,
+    "sha256": "71d48d773e920c1ccc987844c51d7735cff7b02537b6abdf0b37a9e74934dff4"
+  },
+  "gate_passes": {
+    "A": false,
+    "D": false
+  },
+  "actual_cpu": 5.309761206999999,
+  "checker_development": "First invocation completed calculations but failed reviewer absolute 1e-8 target/MSE and 1e-8 increment assertions. This invocation retains absolute errors and worst-case scales, compares target/MSE errors per-entry against max(1,absolute value), and uses the producer protocol 1e-7 increment tolerance. No producer outputs changed.",
+  "limits": "Own raw data and frozen copies local regeneration-only. Timing excluded from agreement. Sampled clouds give finite lower maxima. Recomputed individual errors use the stated targets; no unknown-field error estimator."
+}

@@ -1,0 +1,57 @@
+{
+  "scope": "actual n2/n3 full-sweep byte/logdet/exchange equivalence to unchanged inherited kernel; deterministic row-boundary setup/pre-next-row/postcheckpoint overshoot and raw-retention probes",
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/code/u2c_prefix_control.py",
+    "bytes": 10054,
+    "sha256": "2dd83ec281d17fbcbaea71dc0a72b056dd872eceddd342dde4a3448cb038818b"
+  },
+  "checker": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/continuation-review/code/check_u2_prefix_preflight.py",
+    "bytes": 3426,
+    "sha256": "6959d04d7083446222e46826d5204f999fe61b1d23663b58ca166a0f5eeea81f"
+  },
+  "inherited": {
+    "path": "/workspace/padua_research/topics/padua-3d-20261106/code/t9_r06_maxima.py",
+    "bytes": 5818,
+    "sha256": "7831165e8fc4ed94901b5bb83a09ad18ebf6b1fec831dbb07c76098e6e468415"
+  },
+  "equivalence": [
+    {
+      "n": 2,
+      "bitwise_same_nodes": true,
+      "same_logdet": true,
+      "exchanges": 6,
+      "rows": 10
+    },
+    {
+      "n": 3,
+      "bitwise_same_nodes": true,
+      "same_logdet": true,
+      "exchanges": 15,
+      "rows": 20
+    }
+  ],
+  "clock_cases": [
+    {
+      "case": "setup_cap",
+      "selected_rows": 0,
+      "retained_rows": 0,
+      "selected_cpu_mock": 0.0,
+      "stop": "setup_budget"
+    },
+    {
+      "case": "row_overshoot",
+      "selected_rows": 2,
+      "retained_rows": 3,
+      "selected_cpu_mock": 0.8,
+      "stop": "row_budget"
+    },
+    {
+      "case": "pre_next_row_cap",
+      "selected_rows": 1,
+      "retained_rows": 1,
+      "selected_cpu_mock": 1.0,
+      "stop": "row_budget"
+    }
+  ]
+}

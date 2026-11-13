@@ -1,0 +1,69 @@
+{
+  "schema": "t7-round06-v1",
+  "rules_sha": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "source_sha256": "4e5d8843ddc90bda135f396d8ce0db1b7c784ec2975848e2088c829102fd036c",
+  "command": "topics/padua-3d-20261106/code/t7_r06_n3_survivor_quality.py --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-n3-pilot-quality.json",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "status": "MEASURED finite scope unless separate written theorem",
+  "input_raw_sha256": "cde52709cf158a27d3d882e13c408b2a8af7d990a39c6cff82d5afdcde6f9fa0",
+  "counts": {
+    "witnesses_attempted": 13478,
+    "quality_measured": 13478
+  },
+  "distinct_rational_node_sets": 7965,
+  "best": {
+    "hnf": [
+      1,
+      2,
+      10,
+      1,
+      5,
+      6
+    ],
+    "phase_stratum": [
+      6,
+      1,
+      -1
+    ],
+    "quality": {
+      "lambda21": 12.508885864277671,
+      "logabsdet_orthonormal": 26.52788864882029,
+      "condition2": 6.715690626887764,
+      "inverse_residual_inf": 4.471051320883105e-15
+    }
+  },
+  "worst": {
+    "hnf": [
+      1,
+      1,
+      20,
+      0,
+      4,
+      13
+    ],
+    "phase_stratum": [
+      -1,
+      5,
+      0
+    ],
+    "quality": {
+      "lambda21": 2587225.5061192145,
+      "logabsdet_orthonormal": 10.449529660729835,
+      "condition2": 2296526.3640268575,
+      "inverse_residual_inf": 9.589071675590444e-10
+    }
+  },
+  "maximum_condition2": 2348089.8294565473,
+  "maximum_inverse_residual_inf": 9.589071675590444e-10,
+  "raw": {
+    "path": "/tmp/padua-t7-r06-7afa6a54/t7-r06-n3-pilot-quality.jsonl",
+    "bytes": 3074207,
+    "sha256": "0f384aebf4c34760a2f13799375320bc321e92194edbba10ef09be62a9cced4f"
+  },
+  "seconds": 8.844423602000461
+}

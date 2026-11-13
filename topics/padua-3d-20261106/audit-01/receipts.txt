@@ -1,0 +1,93 @@
+# audit-01 receipts (Claude orchestrator runs, 2026-11-06)
+python Python 3.13.18; numpy 2.3.5 scipy 1.17.0 sympy 1.14.0 mpmath 1.3.0; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+
+## sha256 of audit code
+a8d0d079847949f7a8b5f2809b28debba5394e382a416bb07a9497f18a926629  a1_lower.py
+a63ba6319a6d5b4bc69de5ef8bc0ac06fd5510e6514e0b28054d26ecee731806  a2_extrap.py
+c93ee77773d3dec57a65a05411170b26b1b58474a12ecd584785b2cb780e9831  a3_det.py
+4e19172b9cca76c9823d28fb690a65ddf1d9ed502fdde49bfbab34eb44a11cc8  a4_upper.py
+394adca36d94a743cfe87c26cf1227786711adde2bb14919a207844229dbeeba  a5_leja.py
+2516f01182db06797660e8eb0ed22701c4d5827ded6f0cdc49297f063c39c244  a6_mesh.py
+6454bc4a1dd4221e08bc717b1b216dbd6f4894c1e5e1f8c0b17dc52d6e01549b  a7_orders.py
+75f6a9b2a637df45dda37a20f2c0c51d52bc883b6fe6d33eec4a2a32629f68d7  a8_quad.py
+78c0828aaede4b5a0e072043e844c84972b6044383795d771a8f1f6ad767ca55  aud_t5.py
+b95900789d8c1ea79a83679c42bc31b43b3d00416a32fa16cf6f4f71ad08be94  aud_t5b.py
+90e67d03eb498071b2a3ec1ade6f143dc50014af8cb86a5e355b4fb24a4025e3  aud_t5c.py
+9ae696d5bf3cc75cf78848f53f7c731afb0937b2d5f9b21beb2e2b9c5498b339  aud_t6.py
+75fb126299b6b0a74b725eaf1b62b1eb8856121a218fe2c801cf04c12251fed4  aud_t6b.py
+832935b00cbc17b7ed7d3dc3f2046f59fa7f981fa87cb718069a6ae208169862  aud_t6c.py
+7b9d75f33d944b66133db98315df14d5a59afb025d795fc268d2908b70a6aeea  bf_cosets.py
+a06c12eddf60cae6fc9c28aacd07e5b819d10e341092476b7831ca4dd2ed6750  bf_fast.py
+3067cd6a85de49ad36b8d4b9635cdf401c954274981c5f2183d90bd74e776fcf  check_pred.py
+ed46fec006a816d9e0f01351536c7cce6e03301aac22b1eb362369c3424bac31  claude_t23_check.py
+a2c6daabb19fbc0eb3296574a7643066a5a6cd9d9bcd20741f51f0e672609668  extras.py
+526a28a5a0a909a01809f578081be01e6ec457dc108859c5caa9186f7cfc8061  formula_enum.py
+fbb9225c613a4aa3122c0a3521d870bf490efeddf91a15b880bb41f0d8c9b6e4  mutation_test.py
+8fe3a12c9e1d9fd202ea175a9c26be92a80623376d0ff43dfaf690c3b9a03cd6  receipt_compare.py
+a67061897cc3f8be51b3f990bf30260a52c6fae72406ac13b0167dbd4aa93d80  xcount.py
+
+## python -I topics/padua-3d-20261106/audit-01/code/claude_t23_check.py topics/padua-3d-20261106/evidence/t2-n3-null-cover.json
+AB {'laurent_zero': 171, 'field_zero_nodes': 3420, 'nonzero': 171, 'maxdeg': 3}
+C {'total': 59319, 'lt20_nodes': 1728, 'quad13': 1647, 'linear': 11112, 'cover': 44832, 'unit_triples_with_20_nodes': 55944, 'distinct_cover_pairs_used': 153}
+E {'K': {'n2_annihilator_zero': True, 'n1_rank': 4, 'n2_rank': 9}, 'T': {'n2_annihilator_zero': True, 'n1_rank': 4, 'n2_rank': 9}, 'O': {'n2_annihilator_zero': True, 'n1_rank': 4, 'n2_rank': 9}}
+F {'symbolic_identity': True, 'random_exact_cases': 39, 'degree_equals_q': 39, 'by_support': {'supp1_delta1': 5, 'supp3_delta1': 9, 'supp2_delta0': 8, 'supp2_delta1': 9, 'supp3_delta0': 6, 'supp1_delta0': 2}}
+G {'entries_checked_exactly': 260}
+D {"2": {"count": 36, "dist": {"5": 2, "6": 6, "7": 3, "8": 6, "9": 15, "10": 4}, "max": 10, "full": [[1, 3, 7], [1, 4, 6], [1, 5, 8], [1, 7, 8]]}, "3": {"count": 171, "dist": {"7": 3, "9": 4, "10": 13, "11": 3, "12": 7, "13": 2, "14": 8, "15": 31, "16": 30, "17": 24, "18": 29, "19": 17}, "max": 19, "full": [], "cover_rank_mismatches": []}, "4": {"count": 561, "dist": {"9": 3, "12": 4, "13": 2, "1
+H {'n2(1, 3, 7)': 8.1340690371, 'n2(1, 4, 6)': 8.1340690371, 'n2(1, 5, 8)': 8.1340690371, 'n2(1, 7, 8)': 7.0532561591, 'n4(1, 11, 15)': 45.715123948, 'n4(1, 15, 19)': 37.4870129676, 'n4(1, 21, 29)': 37.4870129676, 'n4(1, 25, 30)': 45.715123948}
+ALL ASSERTIONS PASSED
+exit 0
+
+## (cd topics/padua-3d-20261106/audit-01/code && python mutation_test.py ../../evidence/t2-n3-null-cover.json)
+mutations 15 caught 15 x-1 nonzero at nodes 19 of 20 (expect 19)
+coverage mutation caught
+folded column sums all 8
+
+## python topics/padua-3d-20261106/audit-01/code/formula_enum.py 2,3,4,5,6   (full cap m_j<=2N; tuple = (cosets of target size, survivors, min nodes))
+n 2 N 10 cap 20 {'0': (396, 0, 27), 'pair12': (58, 0, 12), 'pair13': (58, 0, 12), 'pair23': (58, 0, 12), 'triple': (6, 0, 13), 'plane': (60, 0, 12)} claimed lower bounds {'0': 27, 'pair': 12, 'pair_exact': 12, 'triple': 13, 'plane': 12}
+n 3 N 20 cap 40 {'0': (876, 0, 64), 'pair12': (130, 0, 32), 'pair13': (130, 0, 32), 'pair23': (130, 0, 32), 'triple': (18, 0, 32), 'plane': (108, 0, 24)} claimed lower bounds {'0': 64, 'pair': 30, 'pair_exact': 32, 'triple': 32, 'plane': 24}
+n 4 N 35 cap 70 {'0': (396, 0, 125), 'pair12': (86, 0, 60), 'pair13': (86, 0, 60), 'pair23': (86, 0, 60), 'triple': (12, 0, 62), 'plane': (91, 0, 45)} claimed lower bounds {'0': 125, 'pair': 60, 'pair_exact': 60, 'triple': 62, 'plane': 45}
+n 5 N 56 cap 112 {'0': (1548, 0, 216), 'pair12': (242, 0, 108), 'pair13': (242, 0, 108), 'pair23': (242, 0, 108), 'triple': (36, 0, 108), 'plane': (210, 0, 72)} claimed lower bounds {'0': 216, 'pair': 105, 'pair_exact': 108, 'triple': 108, 'plane': 72}
+n 6 N 84 cap 168 {'0': (2892, 0, 343), 'pair12': (479, 0, 168), 'pair13': (479, 0, 168), 'pair23': (479, 0, 168), 'triple': (90, 0, 171), 'plane': (384, 0, 112)} claimed lower bounds {'0': 343, 'pair': 168, 'pair_exact': 168, 'triple': 171, 'plane': 112}
+
+## producer reruns in detached worktree at f1a5b09: receipt comparison (scientific fields)
+{"verdict": "PASS", "artifacts": 31, "bytes": 177823}
+exit 0
+replay.py: exit 0 secs 2
+t1_reflection_enum.py: exit 0 secs 6
+t2_check_cover.py: exit 0 secs 1
+t2_generators.py: exit 0 secs 2
+t2_quality.py: exit 0 secs 0
+t2_screen.py: exit 0 secs 1
+t3_checks.py: exit 0 secs 0
+t4_stacks.py: exit 0 secs 1
+t5_exact.py: exit 0 secs 0
+t5_support.py: exit 0 secs 1
+t6_sanity.py: exit 0 secs 7
+(cd worktree && python topics/padua-3d-20261106/audit-01/code/receipt_compare.py <8 rewritten receipts>):
+== topics/padua-3d-20261106/evidence/replay.json diffs 2 float 1 float>1e-9rel 1
+   /versions/python | 3.12.14 -> 3.13.18
+   /elapsed_seconds | 2.079 -> 2.01
+== topics/padua-3d-20261106/evidence/t2-cyclic-screen.json diffs 3 float 1 float>1e-9rel 1
+   /preregistration_sha256 | 127337d24f0254397c1f778c935ff53bcaafb1dbf528f4fa526022ccd3a4239c -> 3c479089c96d0e758dc4f1be9cc7bc25cfe439d72596b459a54ef667bc2dcacd
+   /versions/python | 3.12.14 -> 3.13.18
+   /elapsed_seconds | 0.013 -> 0.012
+== topics/padua-3d-20261106/evidence/t2-generators.json diffs 2 float 1 float>1e-9rel 1
+   /versions/python | 3.12.14 -> 3.13.18
+   /seconds | 1.927 -> 1.554
+== topics/padua-3d-20261106/evidence/t2-quality.json diffs 1 float 1 float>1e-9rel 1
+   /elapsed_seconds | 0.068 -> 0.069
+== topics/padua-3d-20261106/evidence/t4-baselines.json diffs 2 float 0 float>1e-9rel 0
+   /environment/platform | Linux-6.18.57-x86_64-with-glibc2.41 -> Linux-6.18.44-fc-v242-x86_64-with-glibc2.39
+   /environment/python | 3.12.14 -> 3.13.18
+== topics/padua-3d-20261106/evidence/t4-mesh-A.json diffs 3 float 1 float>1e-9rel 1
+   /environment/platform | Linux-6.18.57-x86_64-with-glibc2.41 -> Linux-6.18.44-fc-v242-x86_64-with-glibc2.39
+   /environment/python | 3.12.14 -> 3.13.18
+   /elapsed_total_seconds | 0.618 -> 0.87
+== topics/padua-3d-20261106/evidence/t4-mesh-L.json diffs 3 float 1 float>1e-9rel 1
+   /environment/platform | Linux-6.18.57-x86_64-with-glibc2.41 -> Linux-6.18.44-fc-v242-x86_64-with-glibc2.39
+   /environment/python | 3.12.14 -> 3.13.18
+   /elapsed_total_seconds | 0.619 -> 0.87
+== topics/padua-3d-20261106/evidence/t4-mesh-M.json diffs 3 float 1 float>1e-9rel 1
+   /environment/platform | Linux-6.18.57-x86_64-with-glibc2.41 -> Linux-6.18.44-fc-v242-x86_64-with-glibc2.39
+   /environment/python | 3.12.14 -> 3.13.18
+   /elapsed_total_seconds | 0.618 -> 0.869

@@ -1,0 +1,73 @@
+# audit-04 orchestrator receipts (Claude, 2026-11-08)
+Python 3.13.18; numpy 2.3.5 scipy 1.17.0 sympy 1.14.0; OPENBLAS_NUM_THREADS=1; candidate e7c9900ec7dc232d2e117cc72dd47b79c7a0fe26 in a detached worktree
+
+## sha256 of audit-04 code
+5c1813b88471c3d9d1545219a5a0e68eb15aa3ec758e740440129d8806b7151d  ./A1/aud_brute.cpp
+d39563b9340bb0e8384031dac36e2050efb0ab6953c64e165e4006eaca9be503  ./A1/aud_enum.cpp
+838a437efbd77005b79d525f2f1d7b4d802b1e6f00ce2eda6201719d7f3f1e45  ./A1/aud_enum_v1.cpp
+3db9d7573b7e4f4ce98022a06910d62e8a081ca60b6e62dc997c56cbf04db46d  ./A1/aud_rank.py
+a30b3602c67620b9aaaa49d79af7a718390c298de0dd7ba417d7583db39793b5  ./A1/cmp_brute.py
+f8249a88ce51b242930849d3065bdd463b0385bf13cae38321c90fa9bcb67b98  ./A1/run_small.py
+e8e2e30d7240a06c8b15255b59bd1662fc830f89237ee104d7c8de06842cf334  ./A1/run_witness.py
+9cfcb519f2c4676c205414194299b3704d3763041225d8ce85d2ae47fde4c5a2  ./A1/summarize.py
+1c765705f1706055e2cc3ec347d17851a113297ae4f52b6c831c21f2f0c28d73  ./A2/aud_common.py
+c15ccf90c6215c18c657064682ef40e51f199d1b4c2369aec011b03bc7332827  ./A2/aud_n7sym.py
+0eeab3dce167f37efbe6cbce5bae0403fab04962fcd2ee830e959497be08ea32  ./A2/aud_part12.py
+ef06f75b1ccea7ed2d45d7fe8229737caf30a23e6080219cf2e55e7a89d2fe2a  ./A2/aud_part34.py
+a6a076cd2b0678e3cec6258dc5039beda38e9c7dcdc82d1336b35a502d717268  ./A2/aud_part5.py
+74ea9aaa39bcd9ced753b0f15d21c7fe785bcab903936b39a2096bd4f601f022  ./A2/aud_sharp.py
+bc9ec7a501b4972f00a959dd5ff40d09ded10ff96f883afd3bb0ace3b5ea21f3  ./A2/cmp_receipts.py
+d200ee5dbc2c47113600f84693e7a149bceb1042d7cd86ef6ebbddf3df74dfb4  ./A3/crossdecode.py
+986767916ff13c71ebccad6bda05ac54ddf815563eaaab9b57ba3a02c36c394f  ./A3/halfshift_indep.py
+feec94120cd6c152f1c390e277619f2412075e79b9b3d0f7f2148c6e10893f68  ./A3/selections_check.py
+5a07f48b3ce4f91e6b6f5f1369ffe88b91f5eef90102d2625eb8ca117d21e5da  ./B1/api_oldnew.py
+ece9ca2e8f565f636b7a4c4abcf8cde20a44f1c07cb9625741691c32343438a4  ./B1/api_u1.py
+1f47290716683927e8a7ae5d46e98b59b3127e055b6f974eb7455454257dcd06  ./B1/cont_u1.py
+b0be782704fb23d5622937d94b08541e1d4865c6b1cd056b17bfeb4a831cf670  ./B1/exact_u1.py
+d3f23d6fc2845c883d9279ac9314398b709d6023515368b57c8e4e53d7537239  ./B1/float_u1.py
+1cdaaf3e29146012346fa5bcf7772dfcea5845f2b34672315513830bc5c43313  ./B2/b2_cmp.py
+e61261d638bb4c50b755b1b343cc463d8317dc6be427af91674d2430aebadd51  ./B2/b2_dbg.py
+3e9c1dba01c83cd08d4ad39dafe91b9cc7100beff30e6f8abd1a49764153c4de  ./B2/b2_exact.py
+56a193520dba1a7eda8abb9d375dfc649e975698cbae99c39a655a2be958c765  ./B2/b2_leb.py
+ebd5dd26edcbf28286895a72937eb3ce6a63cb3fffe100c9d574c56931e23c2e  ./B2/b2_npylink.py
+4800b30ccb9a61dac31c3420ae3d2732c464a369638ce5654d42aa7d0ab56a0a  ./B2/b2_pins.py
+e6a8c9833ee33feed3933142f4319b6b0d64461763a127a99ee984cc8b088d01  ./B2/b2_trace.py
+46b38a7324a1e55baf617617b0330d1f57cfeeae22f2c73efdbe0200e1fecc2c  ./B2/b2_xres.py
+aa9b47ade21bf6b3d04f4f376675032bdea5e628707fd330ba472d604bbaa8c8  ./B3/alib.py
+dfce08226c59870952404da6cf0585a991871767619f8e1a8a96d25cdc6491c6  ./B3/aud_c_inv.py
+c6406bc272f84799489bbc4d0c8ce1e00620f48a5bd1c6b5f3eb9ef8ed728df4  ./B3/aud_cubic.py
+afab8e8e82ca4a21729d39858453d83df383f1b2fec05112569bdba906b28f14  ./B3/aud_f.py
+d42508f83ff0b098381110921050ee16e3409f648cbd9a8c76cf63f320c00f02  ./B3/aud_mr.py
+51bf3ec4ed234bbb8dbf1818df78e2ddb319504a026a4c92d4bc581659dc5565  ./B3/aud_q.py
+5789cce24010e252ac91278b52c45157d4f1c2c5d66b92702904328ba3aec4db  ./B3/aud_replay.py
+a44bf14eb4d1871d0638362592688b0d23438ba41ae4fa1da8b20a39acb44fea  ./B3/aud_s.py
+d829688e4405141508ed45ed1e12320fe7c251e28da9140280dfa0d43adbc486  ./B3/qrdiag.py
+d5085667c0f1d4b606c9e88c996e864bb4eb487a34cec1701222b6afb5bcc6c3  ./D/apath_audit.py
+fb21a95a825a7c9d5fed1155763e18233c270699825aad2c91e39892290dede8  ./D/exact_rank_audit.py
+d57aae2f6fad242780cf4593acf7624e7f52c4cbe1e2e8fce2a18a6dfd8081e5  ./D/measure_audit.py
+7972e790e1515b0a18e12be39bd49848e04d7953eba64b6a3c8df6ed97efd2f4  ./D/n8_audit.py
+6ae191ad87c2e31b564cc39452e98e34caf06e00b351e340a2034cabdb208123  ./D/p1_prefix_audit.py
+ef92b7772a18e942ec084f76e1c86d7a44f1c09b50e97849710e820fdc861aec  ./D/p2p5_audit.py
+d9dbb011aa5f5397fd9179c7de857686e1d5edf99c8c64ab48ca40f96de18d98  ./D/random_control_audit.py
+ce3f69ddf7611b2544a54964d7e389d03fb049ac6b962534b97e3c0a12a7919d  ./D/u2_audit.py
+e7f0c1631b768a32303456a9cbe197082bede034a1e08a153deea9bb4b6a445f  ./u12_check.py
+
+## orchestrator producer reruns (exit, seconds, command)
+{"verdict": "PASS", "artifacts": 310, "bytes": 1872829}
+exit 0
+{"rank": 455, "prime": 1000037, "determinant_residue": 318086, "payload_sha256": "ade51c2e459b2d3161eddab564e1ada2233d2f841b5dd64bf808b2e607f7140f"}
+exit 0 secs 3 :: topics/padua-3d-20261106/code/uc12_payload_check.py --payload topics/padua-3d-20261106/evidence/u2-degree12-nodes.json --output <out>/degree12-proof.json
+{"mode":"verify","command":["topics/padua-3d-20261106/code/pdpr_certify.py","verify","--payload","topics/padua-3d-20261106/evidence/pdpr-pruned12-nodes.json"],"started_utc":"2026-11-08T08:39:54.921294+00:00","ended_utc":"2026-11-08T08:39:55.290343+00:00","cpu":0.366169804,"wall":0.36907544900000744,"versions":{"python":"3.13.18"
+exit 0 secs 2 :: topics/padua-3d-20261106/code/pdpr_certify.py verify --payload topics/padua-3d-20261106/evidence/pdpr-pruned12-nodes.json
+{"mode":"verify","command":["topics/padua-3d-20261106/code/pdpr_certify.py","verify","--payload","topics/padua-3d-20261106/evidence/pdpr-pruned16-nodes.json"],"started_utc":"2026-11-08T08:39:55.375634+00:00","ended_utc":"2026-11-08T08:39:58.731423+00:00","cpu":3.336360495,"wall":3.355814318,"versions":{"python":"3.13.18","numpy"
+exit 0 secs 3 :: topics/padua-3d-20261106/code/pdpr_certify.py verify --payload topics/padua-3d-20261106/evidence/pdpr-pruned16-nodes.json
+{"output": "<out>/t8-old.json", "bytes": 5090, "sha256": "ae00f28c10192a6a8080e220b2dc8721acbf79fae5151b99cdcdb8801094b418", "seconds": 1.365}
+exit 0 secs 3 :: topics/padua-3d-20261106/code/t8_r08_check.py --old-witnesses topics/padua-3d-20261106/evidence/t8-r06-witnesses.json --output <out>/t8-old.json
+{"output": "<out>/t8-corrected.json", "bytes": 6180, "sha256": "59f794c7dcf554010fcb172dc30e3d1c31b0658179044539b04201a49fb3605b", "seconds": 0.95}
+exit 0 secs 1 :: topics/padua-3d-20261106/code/t8_r08_check.py --halfshift topics/padua-3d-20261106/evidence/t8-r08-halfshift-corrected.json --quality --output <out>/t8-corrected.json
+
+## python -I audit-04/code/u12_check.py evidence/u2-degree12-nodes.json   (orchestrator independent 455-node check)
+coord sha256 1dbd239694d98bee67c861633e03c311c52496af745d8cd43e7bb584ef53c534
+max denominator 2^65
+2147483647 full rank
+998244353 full rank

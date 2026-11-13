@@ -1,0 +1,304 @@
+{
+  "schema": "t7-round06-v1",
+  "rules_sha": "7afa6a54a4db4652267e38cd48658ba435d20481",
+  "source_sha256": "a3960922d55067549417c5b0a72cdb462c405326ca57f0d1c7931bc0043b6748",
+  "command": "topics/padua-3d-20261106/code/t7_r06_search.py phi --output-dir /tmp/padua-t7-r06-7afa6a54 --receipt topics/padua-3d-20261106/evidence/t7-r06-phi.json",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "status": "MEASURED finite scope unless separate written theorem",
+  "D0": {
+    "inherited_rank": 20,
+    "actual_node": {
+      "rank": 20,
+      "prime": 5051,
+      "root": 32,
+      "root_order": 1010,
+      "matrix_sha256": "4816b86e32ef2074a0fa29c917fc3b68fe0f22899c2de84af6224aa7c961df21"
+    },
+    "outcome": "PASS"
+  },
+  "phi": [
+    {
+      "n": 3,
+      "N": 20,
+      "types": [
+        [
+          1,
+          2,
+          10
+        ]
+      ],
+      "embeddings_screened": 92,
+      "torsion_kills": {
+        "(1, 2, 10)": 80
+      },
+      "screens_surviving": 12,
+      "winner": {
+        "initial_phase": [
+          0.15282569523412914,
+          0.8332556717171778,
+          0.3193132645621619
+        ],
+        "det_phase": [
+          0.18210599855457235,
+          0.8676113074951638,
+          0.28031294828172093
+        ],
+        "det_quality": {
+          "lambda21": 11.225175399983245,
+          "logabsdet_orthonormal": 26.825287617333863,
+          "condition2": 5.254507468848663,
+          "inverse_residual_inf": 3.2823107008745586e-15
+        },
+        "det_runs": [
+          {
+            "success": true,
+            "iterations": 14,
+            "objective": -26.825287617333863
+          },
+          {
+            "success": true,
+            "iterations": 11,
+            "objective": -26.446072303110668
+          }
+        ],
+        "lambda_phase": [
+          0.6262908262370231,
+          0.38795859349611705,
+          0.25183632260085725
+        ],
+        "lambda_quality": {
+          "lambda21": 9.742407380566696,
+          "logabsdet_orthonormal": 26.6326175906747,
+          "condition2": 5.355674252627059,
+          "inverse_residual_inf": 4.1103538266629885e-15
+        },
+        "type": [
+          1,
+          2,
+          10
+        ],
+        "embedding": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            -17,
+            9,
+            -8
+          ],
+          [
+            2,
+            -1,
+            1
+          ]
+        ],
+        "rationalized_exact": {
+          "rank": 20,
+          "prime": 40361,
+          "root": 9,
+          "root_order": 20180,
+          "matrix_sha256": "39d0b75d901cfbc8859fb34bdca83873e04bf1b7eb725c007d6df4a54b5231b2"
+        },
+        "rationalized_phase_mod1009": [
+          632,
+          391,
+          254
+        ],
+        "rationalized_count": 20
+      },
+      "controls": {
+        "qr": {
+          "lambda21": 8.32067061468994,
+          "logabsdet_orthonormal": 32.54429265921366,
+          "condition2": 7.381478580920907,
+          "inverse_residual_inf": 2.2132040151722843e-15
+        },
+        "leja": {
+          "lambda21": 13.174719819948162,
+          "logabsdet_orthonormal": 29.818879797456002,
+          "condition2": 18.64178900055613,
+          "inverse_residual_inf": 1.1772489554032708e-15
+        }
+      }
+    },
+    {
+      "n": 4,
+      "N": 35,
+      "types": [],
+      "embeddings_screened": 0,
+      "torsion_kills": {},
+      "screens_surviving": 0,
+      "winner": null,
+      "controls": {
+        "qr": {
+          "lambda21": 14.209348495134272,
+          "logabsdet_orthonormal": 65.63711784266903,
+          "condition2": 10.07339665987728,
+          "inverse_residual_inf": 6.855937996368085e-15
+        },
+        "leja": {
+          "lambda21": 19.498175044580467,
+          "logabsdet_orthonormal": 61.34352547955515,
+          "condition2": 24.624691280439293,
+          "inverse_residual_inf": 3.2710357515955946e-15
+        }
+      }
+    },
+    {
+      "n": 5,
+      "N": 56,
+      "types": [
+        [
+          1,
+          2,
+          28
+        ],
+        [
+          2,
+          2,
+          14
+        ]
+      ],
+      "embeddings_screened": 162,
+      "torsion_kills": {
+        "(1, 2, 28)": 107,
+        "(2, 2, 14)": 38
+      },
+      "screens_surviving": 17,
+      "winner": {
+        "initial_phase": [
+          0.362189158355921,
+          0.9840763914817996,
+          0.9470108040438913
+        ],
+        "det_phase": [
+          0.3604989246344844,
+          0.9786461024062932,
+          0.9509663940222925
+        ],
+        "det_quality": {
+          "lambda21": 64.19117807182631,
+          "logabsdet_orthonormal": 90.42776269652698,
+          "condition2": 24.37159295559896,
+          "inverse_residual_inf": 2.8671964276740407e-14
+        },
+        "det_runs": [
+          {
+            "success": true,
+            "iterations": 7,
+            "objective": -90.42776269652698
+          },
+          {
+            "success": true,
+            "iterations": 11,
+            "objective": -90.20751310784145
+          }
+        ],
+        "lambda_phase": [
+          0.8556369326163806,
+          0.612649681687376,
+          0.6508064137387326
+        ],
+        "lambda_quality": {
+          "lambda21": 47.633561824733164,
+          "logabsdet_orthonormal": 92.45625872842892,
+          "condition2": 22.311119194380172,
+          "inverse_residual_inf": 2.110761255422782e-14
+        },
+        "type": [
+          1,
+          2,
+          28
+        ],
+        "embedding": [
+          [
+            -6,
+            -9,
+            10
+          ],
+          [
+            1,
+            1,
+            -2
+          ],
+          [
+            3,
+            4,
+            -5
+          ]
+        ],
+        "rationalized_exact": {
+          "rank": 56,
+          "prime": 452033,
+          "root": 6561,
+          "root_order": 56504,
+          "matrix_sha256": "202362777a4d5525f9367d580b53e7cba12dbcb42976ff532dcba66abddd4fea"
+        },
+        "rationalized_phase_mod1009": [
+          863,
+          618,
+          657
+        ],
+        "rationalized_count": 56
+      },
+      "controls": {
+        "qr": {
+          "lambda21": 15.826663364764457,
+          "logabsdet_orthonormal": 116.54745240873152,
+          "condition2": 11.766697168741288,
+          "inverse_residual_inf": 1.4706148678603407e-14
+        },
+        "leja": {
+          "lambda21": 26.336615337884936,
+          "logabsdet_orthonormal": 108.5943232366361,
+          "condition2": 31.908218073571238,
+          "inverse_residual_inf": 7.208766470961195e-15
+        }
+      }
+    },
+    {
+      "n": 6,
+      "N": 84,
+      "types": [
+        [
+          1,
+          2,
+          42
+        ]
+      ],
+      "embeddings_screened": 126,
+      "torsion_kills": {
+        "(1, 2, 42)": 126
+      },
+      "screens_surviving": 0,
+      "winner": null,
+      "controls": {
+        "qr": {
+          "lambda21": 17.618927399923372,
+          "logabsdet_orthonormal": 190.284902255681,
+          "condition2": 13.939277402413381,
+          "inverse_residual_inf": 2.1188831156101107e-14
+        },
+        "leja": {
+          "lambda21": 40.276399373360725,
+          "logabsdet_orthonormal": 175.3422668134711,
+          "condition2": 52.90809602506202,
+          "inverse_residual_inf": 1.3581946944366928e-14
+        }
+      }
+    }
+  ],
+  "seconds": 3.2697724429999653,
+  "raw": {
+    "path": "/tmp/padua-t7-r06-7afa6a54/t7-r06-phi.jsonl",
+    "bytes": 84201,
+    "sha256": "bdd2cc646fd34ad8edc4e75a6f0a15d2412b7065416634d9d178567a597a4290"
+  }
+}

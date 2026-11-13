@@ -1,0 +1,222 @@
+{
+  "claim_status": "MEASURED finite sanity, not a computer proof",
+  "rules_sha": "ccd9e905d19c0c625c196c4a3f3e707058ed042a",
+  "command": "python topics/padua-3d-20261106/code/t6_sanity.py",
+  "exact_checks": {
+    "scope": "finite exact integer/Fraction formula sanity only",
+    "facet_matrix_d3": [
+      [
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "facet_determinant_d3": -4,
+    "support_checks": [
+      {
+        "n": 0,
+        "ball_size": 1,
+        "retained_positive_frequencies": 0
+      },
+      {
+        "n": 1,
+        "ball_size": 7,
+        "retained_positive_frequencies": 0
+      },
+      {
+        "n": 2,
+        "ball_size": 25,
+        "retained_positive_frequencies": 1
+      },
+      {
+        "n": 3,
+        "ball_size": 63,
+        "retained_positive_frequencies": 1
+      },
+      {
+        "n": 4,
+        "ball_size": 129,
+        "retained_positive_frequencies": 5
+      },
+      {
+        "n": 5,
+        "ball_size": 231,
+        "retained_positive_frequencies": 5
+      },
+      {
+        "n": 6,
+        "ball_size": 377,
+        "retained_positive_frequencies": 14
+      },
+      {
+        "n": 7,
+        "ball_size": 575,
+        "retained_positive_frequencies": 14
+      },
+      {
+        "n": 8,
+        "ball_size": 833,
+        "retained_positive_frequencies": 30
+      },
+      {
+        "n": 9,
+        "ball_size": 1159,
+        "retained_positive_frequencies": 30
+      },
+      {
+        "n": 10,
+        "ball_size": 1561,
+        "retained_positive_frequencies": 55
+      },
+      {
+        "n": 11,
+        "ball_size": 2047,
+        "retained_positive_frequencies": 55
+      },
+      {
+        "n": 12,
+        "ball_size": 2625,
+        "retained_positive_frequencies": 91
+      },
+      {
+        "n": 13,
+        "ball_size": 3303,
+        "retained_positive_frequencies": 91
+      },
+      {
+        "n": 14,
+        "ball_size": 4089,
+        "retained_positive_frequencies": 140
+      },
+      {
+        "n": 15,
+        "ball_size": 4991,
+        "retained_positive_frequencies": 140
+      },
+      {
+        "n": 16,
+        "ball_size": 6017,
+        "retained_positive_frequencies": 204
+      }
+    ],
+    "harmonic_checks": [
+      {
+        "m": 1,
+        "harmonic": "1",
+        "positive_margin_3S_minus_Hcubed": "2"
+      },
+      {
+        "m": 2,
+        "harmonic": "3/2",
+        "positive_margin_3S_minus_Hcubed": "15/4"
+      },
+      {
+        "m": 3,
+        "harmonic": "11/6",
+        "positive_margin_3S_minus_Hcubed": "137/27"
+      },
+      {
+        "m": 4,
+        "harmonic": "25/12",
+        "positive_margin_3S_minus_Hcubed": "5293/864"
+      },
+      {
+        "m": 8,
+        "harmonic": "761/280",
+        "positive_margin_3S_minus_Hcubed": "884434549/98784000"
+      },
+      {
+        "m": 16,
+        "harmonic": "2436559/720720",
+        "positive_margin_3S_minus_Hcubed": "2256673696249917547/187184432058624000"
+      },
+      {
+        "m": 32,
+        "harmonic": "586061125622639/144403552893600",
+        "positive_margin_3S_minus_Hcubed": "23052996985708990879994242725652780578241739/1505579318729418633452668854054044928000000"
+      }
+    ],
+    "general_dimension_subset": [
+      {
+        "d": 3,
+        "n": 6,
+        "retained_checked": 14
+      },
+      {
+        "d": 4,
+        "n": 6,
+        "retained_checked": 9
+      },
+      {
+        "d": 5,
+        "n": 8,
+        "retained_checked": 17
+      }
+    ],
+    "projection_multiplier_identity": "2^(-s(k))*2^s(k)=1 on B_n; outside coefficient=0"
+  },
+  "measured_fft": [
+    {
+      "n": 2,
+      "grid_axis_count": 64,
+      "status": "MEASURED",
+      "Fourier_L1_grid_average": 3.379808113783315,
+      "averaged_cosine_kernel_L1_grid_average": 1.5107066775805904,
+      "proven_Fourier_lower_evaluated_float": 0.0013438139347166456,
+      "proven_Lebesgue_lower_evaluated_float": 4.977088647098687e-05,
+      "max_imaginary_grid_error": 2.301261632515523e-15
+    },
+    {
+      "n": 4,
+      "grid_axis_count": 64,
+      "status": "MEASURED",
+      "Fourier_L1_grid_average": 5.615729939670734,
+      "averaged_cosine_kernel_L1_grid_average": 1.9045043450121621,
+      "proven_Fourier_lower_evaluated_float": 0.004535372029668679,
+      "proven_Lebesgue_lower_evaluated_float": 0.0001679767418395807,
+      "max_imaginary_grid_error": 1.3582256998725871e-14
+    },
+    {
+      "n": 8,
+      "grid_axis_count": 128,
+      "status": "MEASURED",
+      "Fourier_L1_grid_average": 9.16159601910223,
+      "averaged_cosine_kernel_L1_grid_average": 2.516391789548061,
+      "proven_Fourier_lower_evaluated_float": 0.012151095329830781,
+      "proven_Lebesgue_lower_evaluated_float": 0.00045004056777151044,
+      "max_imaginary_grid_error": 1.1247417929627631e-13
+    },
+    {
+      "n": 16,
+      "grid_axis_count": 128,
+      "status": "MEASURED",
+      "Fourier_L1_grid_average": 14.258240139475348,
+      "averaged_cosine_kernel_L1_grid_average": 3.397005104714853,
+      "proven_Fourier_lower_evaluated_float": 0.026978575611873015,
+      "proven_Lebesgue_lower_evaluated_float": 0.000999206504143445,
+      "max_imaginary_grid_error": 5.473742987471939e-13
+    },
+    {
+      "n": 32,
+      "grid_axis_count": 256,
+      "status": "MEASURED",
+      "Fourier_L1_grid_average": 21.118027356142665,
+      "averaged_cosine_kernel_L1_grid_average": 4.580780207858343,
+      "proven_Fourier_lower_evaluated_float": 0.05192424789535301,
+      "proven_Lebesgue_lower_evaluated_float": 0.0019231202924204817,
+      "max_imaginary_grid_error": 4.305888978706207e-12
+    }
+  ],
+  "numpy_version": "2.3.5",
+  "limits": "No certified quadrature, no finite-to-infinite extrapolation; analytic proofs are independent of this receipt."
+}

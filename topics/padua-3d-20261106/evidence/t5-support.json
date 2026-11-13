@@ -1,0 +1,85 @@
+{
+  "schema": "padua-3d-t5-support-v1",
+  "code_sha256": "e164fe4458a0fd48c890bf589cceb509cb3eb24eada1d6c38968c7cabb23ccf3",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "support": "{-sqrt(3)/2,0,sqrt(3)/2}^3",
+  "normalized_measure": "product arcsine probability",
+  "degree": 5,
+  "matrix_shape": [
+    56,
+    27
+  ],
+  "exact_rank": 26,
+  "nullity": 1,
+  "kernel_moment_residual": "0",
+  "parametrization": "w_x(t)=(1+t*product_i T_2(x_i))/27",
+  "groups": [
+    {
+      "chi": "-1",
+      "multiplicity": 1
+    },
+    {
+      "chi": "-1/4",
+      "multiplicity": 12
+    },
+    {
+      "chi": "1/8",
+      "multiplicity": 8
+    },
+    {
+      "chi": "1/2",
+      "multiplicity": 6
+    }
+  ],
+  "exceptional_parameters": [
+    {
+      "parameter": "-8",
+      "support": 19,
+      "nonnegative": false,
+      "nonzero_weights": [
+        "-1/9",
+        "1/3",
+        "1/9"
+      ]
+    },
+    {
+      "parameter": "-2",
+      "support": 21,
+      "nonnegative": true,
+      "nonzero_weights": [
+        "1/18",
+        "1/36",
+        "1/9"
+      ]
+    },
+    {
+      "parameter": "1",
+      "support": 26,
+      "nonnegative": true,
+      "nonzero_weights": [
+        "1/18",
+        "1/24",
+        "1/36"
+      ]
+    },
+    {
+      "parameter": "4",
+      "support": 15,
+      "nonnegative": false,
+      "nonzero_weights": [
+        "-1/9",
+        "1/18",
+        "1/9"
+      ]
+    }
+  ],
+  "nonnegative_parameter_interval": [
+    "-2",
+    "1"
+  ],
+  "sharp_minimum_nonnegative_support": 21,
+  "sharp_minimum_signed_support": 15,
+  "independent_replay": "PENDING",
+  "scope": "Only subsets of the fixed 27-point tensor Gaussian grid."
+}

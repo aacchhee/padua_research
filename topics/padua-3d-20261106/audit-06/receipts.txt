@@ -1,0 +1,16 @@
+# audit-06 orchestrator receipts (Claude, 2026-11-12)
+Python 3.13.18 venv; OPENBLAS_NUM_THREADS=1; no -O; candidate 57f4669be083ec286d84b0f1e2f14b3b50ed14ca in a detached worktree
+
+## 00.txt
+{"verdict": "PASS", "artifacts": 366, "bytes": 2301750}
+exit 0
+
+## 01.txt
+ngular": 8.21832756706958e-12, "min_third_smallest_singular": 0.001371741266710122, "cube_max": 1.0, "minimum_node_distance": 0.08998683638415254, "monomial_condition": 4580.502869562623}, {"n": 4, "count": 35, "queries": 69433, "seed": 202611120208, "reported": 546899.580912354, "monomial_svd_max": 546899.5809121559, "relative_difference": 3.622948063315425e-13, "guards": {"count": true, "corank_two": true, "rank_not_lower": true, "cube": true, "distinct_nodes": true}, "max_second_smallest_singular": 8.044288486388912e-11, "min_third_smallest_singular": 0.00038263055361501783, "cube_max": 1.0, "minimum_node_distance": 0.030926040874273458, "monomial_condition": 464044.79019426776}]}
+exit 0
+
+## 02.txt
+{"verdict": "PASS", "codec_controls": 44, "audit04_source_mutation_rejected": true, "live_master_unchanged": true}
+exit 0
+
+Live worktree unchanged after the three runs (git status empty).
