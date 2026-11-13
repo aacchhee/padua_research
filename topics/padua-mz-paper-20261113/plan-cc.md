@@ -18,7 +18,7 @@ The problem, the four results above with their exact scope, one sentence on meth
 
 ## Outline, location of each result, target length
 
-Target: about 30–34 SIAM pages including appendices (current CC part is 16 A4 pages in `article`; SIAM's text block is narrower). AC: coherence and explanation before page count.
+Target (revised after review, see dispositions): about 37–42 SIAM pages including appendices (current CC part is 16 A4 pages in `article`; SIAM's text block is narrower). AC: coherence and explanation before page count.
 
 | § | Content | Results (IDs) | Source |
 |---|---|---|---|
@@ -46,3 +46,22 @@ Keep the CC MZ prior art (ASV, An–Wu, Sloan–Smith, Erdős–Feldheim/Askey/N
 
 - Length of §5/Appendix B. If the convergence proof cannot be made readable in ≤ 8 pages, the plan reviewer may recommend presenting the fixed-J lower bound (liminf ≥ Λ_edge) with full proof and the convergence with full proof in the appendix anyway; no claim may be stated without proof in the paper.
 - Notation clashes already visible: B (Gram bound vs. kernel matrix), K_N (constant) vs K (filter kernel) vs K (transition matrix of PD-T526), C_0 (two meanings), ρ (ratio parameter vs. auxiliary weights in SP), L (log N vs. Lagrange operator L_N), H (harmonic numbers vs. matrix H of PD-T526 vs. kernel H(t,j)). Resolved in `notation-cc.md` (task 6).
+
+## Dispositions of the plan review ([review-plan-cc.md](review-plan-cc.md), Opus 5.5 high, 2026-11-13)
+
+| Finding | Disposition |
+|---|---|
+| M1 "no effective onset" is wrong | **Accepted.** 1−η_N=λ_−(N,N−1) for every N≥57, via PD-T019 + PD-T526. This is added to PD-T?mz-paper-claude-01 (a), with a proof covering all N and an exact rational check for N=2…399. The paper's open problems are only a convergence rate usable at computable N (Thms 4.5, 5.3) and the decimal value of Λ_edge. |
+| M2 "computable bracket exists" sentence | **Accepted.** Dropped. The PD-T531 omission reason now says the >0.05 widths are MEASURED float estimates (audit A8). |
+| M3 page target | **Accepted.** New target 37–42 SIAM pages including appendices, to be reported to AC. Shortenings adopted: (1) a single transfer lemma (done: `lem:endpoint-rep`); (2) Prop 5.2 weakened to qualitative fixed-J convergence, recorded as "weakened" in correspondence-cc; (3) PD-T548 moves to Appendix C; (4) §2/§3 facts are reused rather than repeated. |
+| a1 U evaluation | **Accepted.** The exact U formulas become a lemma in §4.1. §8 keeps the N=512 certificate and the An–Wu discussion. |
+| a2 fixed ratio before endpoint | Not adopted; either order is coherent. The current order keeps the endpoint results together. |
+| a3 PD-T548 location | **Accepted** (Appendix C). |
+| b1 computer-assisted label | **Accepted.** The abstract, Thm 1.3 and Cor 6.1(b) say "computer-assisted", and the computer-free interval [8/π⁴, 12/π⁴] is also stated. |
+| b2 measured items | **Accepted.** Table values and the J512 proxy are labelled MEASURED, with "no digit beyond the certified lower bound is claimed". PD-T525 appears only with the K2 warning, or not at all. |
+| b3 sharper 1+β_N | Kept as a remark inside the proof ("the proof gives 1+β_N"). No new statement. |
+| c1 analytic Λ_edge ≥ 1 | **Accepted.** Thm 5.3 stays computer-free. |
+| d1 title | **Accepted:** "Sharp" dropped. Working title: *Marcinkiewicz–Zygmund constants of Clenshaw–Curtis quadrature beyond half-exactness*. The reviewer's alternatives go to AC with the report. |
+| headline (interpolation norm) | **Accepted** as PD-T?mz-paper-claude-01 (d): ‖𝓘_N‖_{ℓ²_w→L²}/log N → 2√2/π². Stated in §4 as a corollary of Thm 4.5. |
+| e notation table | Adopted as the starting point of notation-cc.md (task 6). Already resolved in Appendix A: Φ_k, Ψ_k, 𝓔, ‖·‖_h, α_J, σ_N, τ_N, k_0, ℓ, 𝓘_N. The paper uses λ_±(N,n) throughout. |
+| f Halmos / LIT-633 / PD-N005/006/104 | Volterra norm: stated as an elementary computation, with no citation unless a LIT record is made. LIT-633: open-problem pointer at most. One-line motivating remarks from PD-N005/006/104 are allowed and get correspondence rows. |

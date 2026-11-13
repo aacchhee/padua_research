@@ -500,49 +500,49 @@ $a^TRa=Q_N(p^2)$ with the matrices of Lemma~\ref{lem:identities} on
 the indices $0,\dots,N-1$. For a pair $(i,j)$ put $s=i+j\le2N-2$ and
 $r=2N-s\ge2$, and define
 \[
- H_{ij}=\frac{\boldsymbol1_{s\ \mathrm{even}}}{r^2-1},\qquad
- K_{ij}=\begin{cases}
-   H_{ij},&s\le N,\\[2pt]
+ Y_{ij}=\frac{\boldsymbol1_{s\ \mathrm{even}}}{r^2-1},\qquad
+ Z_{ij}=\begin{cases}
+   Y_{ij},&s\le N,\\[2pt]
    \dfrac{\boldsymbol1_{s\ \mathrm{even}}}{s^2-1},&s>N.
  \end{cases}
 \]
 We claim the exact identity
 \begin{equation}\label{eq:RMHK}
- R=M-H+K .
+ R=M-Y+Z .
 \end{equation}
 If $s\le N$, then $Q_N(T_s)=\mu_s$ by \eqref{eq:alias}, so $R_{ij}=M_{ij}$,
-and $H_{ij}=K_{ij}$. If $s>N$ is even, then $Q_N(T_s)=\mu_r$ and
+and $Y_{ij}=Z_{ij}$. If $s>N$ is even, then $Q_N(T_s)=\mu_r$ and
 \eqref{eq:mass} gives
-$(M-R)_{ij}=(\mu_s-\mu_r)/2=1/(r^2-1)-1/(s^2-1)=H_{ij}-K_{ij}$.
+$(M-R)_{ij}=(\mu_s-\mu_r)/2=1/(r^2-1)-1/(s^2-1)=Y_{ij}-Z_{ij}$.
 If $s$ is odd, every entry of $M-R$, $H$ and $K$ vanishes.
 
-The matrix $H$ is positive semidefinite. Indeed, for $i,j\le N-1$,
+The matrix $Y$ is positive semidefinite. Indeed, for $i,j\le N-1$,
 \[
  \frac12\int_0^1 x^{2N-2-i-j}(1-x^2)\dd x
  =\frac12\Bigl(\frac1{r-1}-\frac1{r+1}\Bigr)=\frac1{r^2-1},
 \]
-and $H$ couples only indices of equal parity, so for real $a$
+and $Y$ couples only indices of equal parity, so for real $a$
 \[
- a^THa=\frac12\int_0^1(1-x^2)\Bigl[
+ a^TYa=\frac12\int_0^1(1-x^2)\Bigl[
  \Bigl(\sum_{i\ \mathrm{even}}a_ix^{N-1-i}\Bigr)^2
  +\Bigl(\sum_{i\ \mathrm{odd}}a_ix^{N-1-i}\Bigr)^2\Bigr]\dd x\ge0 .
 \]
-No sign property of $K$ or of $M-R$ as a matrix is used.
+No sign property of $Z$ or of $M-R$ as a matrix is used.
 
 Let $u_N=N$ for even $N$ and $u_N=N+1$ for odd $N$. Every nonzero
-entry of $K$ equals $1/(u^2-1)$ for an even integer $u\ge u_N$:
+entry of $Z$ equals $1/(u^2-1)$ for an even integer $u\ge u_N$:
 $u=r=2N-s\ge N$ if $s\le N$, and $u=s>N$ otherwise. Hence
-$0\le K_{ij}\le1/(u_N^2-1)$. Each row of $K$ has at most
-$\lceil N/2\rceil$ nonzero entries, since $K$ couples only indices of
+$0\le Z_{ij}\le1/(u_N^2-1)$. Each row of $Z$ has at most
+$\lceil N/2\rceil$ nonzero entries, since $Z$ couples only indices of
 equal parity. Using $2|a_ia_j|\le a_i^2+a_j^2$ and symmetry,
 \[
- a^TKa\le\sum_{i,j}K_{ij}|a_ia_j|
+ a^TZa\le\sum_{i,j}Z_{ij}|a_ia_j|
  \le\frac{\lceil N/2\rceil}{u_N^2-1}\sum_ia_i^2 .
 \]
 Lemma~\ref{lem:floor} gives $\sum_ia_i^2\le a^TEa\le N\,a^TMa$.
-Together with \eqref{eq:RMHK} and $H\succeq0$,
+Together with \eqref{eq:RMHK} and $Y\succeq0$,
 \[
- a^TRa\le a^TMa+a^TKa\le(1+\beta_N)\,a^TMa,
+ a^TRa\le a^TMa+a^TZa\le(1+\beta_N)\,a^TMa,
 \]
 where
 \[
@@ -909,8 +909,84 @@ rescaled norm of $V$, and the factor $1/2$ is the mean of $\sin^2$.
 
 \section{The endpoint maximum eigenvalue}\label{sec:edge-max}
 
-% TODO(task 3): endpoint model, Lambda_edge, PD-T528/529/530/547/548.
-This section is being written; see the topic plan.
+The constant polynomial shows $\lambda_+(N,N-1)\ge1$, and
+Theorem~\ref{thm:five-thirds} gives $\lambda_+(N,N-1)\le5/3$. The upper
+eigenvalue is again decided at the endpoints, now on the microscopic
+scale $\theta=\xi/N$ with $\xi$ bounded. This section identifies its limit
+as the norm of an explicit sampling operator.
+
+\paragraph{The endpoint model}
+For $g\in L^2(0,1)$ put
+\[
+ \widehat g(\xi)=\int_0^1g(s)\cos(\xi s)\dd s,\qquad
+ \mathsf M(g)=\int_0^\infty\xi\,|\widehat g(\xi)|^2\dd\xi\in[0,\infty],
+\]
+and, with $\operatorname{Si}(x)=\int_0^x\sin v\,v^{-1}\dd v$,
+\[
+ \omega_j=2\bigl[(-1)^j+\pi j\operatorname{Si}(\pi j)\bigr]\quad(j\ge1),\qquad
+ \mathsf D(g)=|\widehat g(0)|^2+\sum_{j\ge1}\omega_j|\widehat g(\pi j)|^2 .
+\]
+Let $\mathcal V_0$ be the span of the functions
+$\zeta_j(s)=2[\cos(\pi js)-(-1)^j]$, $j\ge1$. Their cosine transforms are
+\begin{equation}\label{eq:chi}
+ \chi_j(\xi):=\widehat{\zeta_j}(\xi)
+ =\frac{2(-1)^j(\pi j)^2\sin\xi}{\xi(\xi^2-(\pi j)^2)},
+\end{equation}
+with removable singularities filled in; they satisfy
+$\chi_j(0)=-2(-1)^j$, $\chi_j(\pi k)=\delta_{jk}$ for $k\ge1$, and
+$\chi_j(\xi)=O_j(\xi^{-3})$. Thus for $g=\sum_{j\le J}u_j\zeta_j$,
+\[
+ \mathsf D(g)=4\Bigl(\sum_{j=1}^J(-1)^ju_j\Bigr)^2+\sum_{j=1}^J\omega_ju_j^2,
+ \qquad
+ \mathsf M(g)=\int_0^\infty\xi\Bigl(\sum_{j=1}^Ju_j\chi_j(\xi)\Bigr)^2\dd\xi .
+\]
+Define
+\begin{equation}\label{eq:Lambda-edge}
+ \Lambda_{\mathrm{edge}}
+ =\sup_{0\ne g\in\mathcal V_0}\frac{\mathsf D(g)}{\mathsf M(g)} .
+\end{equation}
+The numerator is the limit of the rescaled CC energy and the denominator
+that of the rescaled continuous mass of the degree-$(N-1)$ polynomials
+\begin{equation}\label{eq:pNj}
+ p_{N,j}=\ell_j-2(-1)^j\ell_0\qquad(1\le j<N),
+\end{equation}
+where $\ell_k\in\Pn_N$ are the cardinal polynomials. Their two nonzero
+nodal values cancel the coefficient of $T_N$, so $p_{N,j}\in\Pn_{N-1}$.
+(Strictly alternating nodal values, by contrast, have a nonzero $T_N$
+coefficient and are not admissible.) The weights $\omega_j$ are the limits
+of $N^2w_j$, and $\chi_j(\xi)$ is the limit of $p_{N,j}(\cos(\xi/N))$.
+
+\begin{proposition}[Fixed-trial limits; \id{PD-T529}, weakened]\label{prop:fixed-trial}
+For every $J\ge1$ and $u\in\R^J$, with $g=\sum_ju_j\zeta_j$ and
+$p=\sum_ju_jp_{N,j}$,
+\[
+ N^2\int_{-1}^1p^2\longrightarrow\mathsf M(g),\qquad
+ N^2Q_N(p^2)\longrightarrow\mathsf D(g)\qquad(N\to\infty).
+\]
+The form $\mathsf M$ is positive definite on $\mathcal V_0$,
+$1\le\Lambda_{\mathrm{edge}}\le5/3$, and
+$\liminf_{N\to\infty}\lambda_+(N,N-1)\ge\Lambda_{\mathrm{edge}}$ through
+all integers $N$.
+\end{proposition}
+
+\begin{theorem}[The endpoint upper limit; \id{PD-T530}]\label{thm:edge-limit}
+Through all integers $N$,
+\[
+ \lim_{N\to\infty}\lambda_+(N,N-1)=\Lambda_{\mathrm{edge}},\qquad
+ 1\le\Lambda_{\mathrm{edge}}\le\frac32 .
+\]
+\end{theorem}
+
+The convergence is qualitative: the proof (Appendix~\ref{app:edge}) uses
+weak compactness and gives no rate. Its idea is as follows. In the
+decomposition $R=M-Y+Z$ of Theorem~\ref{thm:five-thirds}, the rescaled
+transition matrix $Z$ converges to a compact integral operator, while the
+reflected matrix $Y$ is positive semidefinite and only lower semicontinuous
+under weak convergence. Any normalized coefficient sequence produces two
+weak endpoint profiles, one for each endpoint, and these profiles are
+compared with the model through the continuum identity
+$\mathsf D=\mathsf M+\tfrac12(\mathsf Z-\mathsf Y)$ on the closure of
+$\mathcal V_0$.
 
 \section{Consequences at the endpoint}\label{sec:consequences}
 
@@ -1563,6 +1639,249 @@ $w_k\ge\sin\theta_k/N\ge2d_k/N^2>2/(LN)$,
 $\norm u_w$ is at most $\sigma_N$ plus
 $160+2\sqrt{LH_{k_0}}+6\sqrt{L+1}+20\sqrt{L+5}+\sqrt{\pi L/2}\le\tau_N$.
 Applied to $u_k=p(x_k)$ for $p\in\Pn_N$, this is \eqref{eq:sharp-finite}. \qed
+
+\section{Proofs for the endpoint upper limit}\label{app:edge}
+
+Throughout, $\operatorname{sinc}_1(z)=\sin z/z$ with value one at zero
+(the unscaled sinc, distinct from the $\operatorname{sinc}$ of
+Appendix~\ref{app:sharp}), $a_j=\pi j$, and the microscopic variable is
+$\xi=N\theta$. We use the matrices $M,R,Y,Z$ of
+Theorem~\ref{thm:five-thirds} on the indices $0,\dots,N-1$, written
+$M_N,R_N,Y_N,Z_N$ when the dependence on $N$ matters.
+
+\subsection{\texorpdfstring{Proof of Proposition~\ref{prop:fixed-trial}}{Proof of the fixed-trial proposition}}
+
+\emph{Exact profiles.} By the cardinal formula of
+Theorem~\ref{thm:cardinal},
+\[
+ \ell_0(\cos\theta)=\frac{\sin(N\theta)\cot(\theta/2)}{2N},\qquad
+ \ell_j(\cos\theta)=\frac{(-1)^j\sin\theta\sin(N\theta)}
+ {2N\sin\frac{\theta+\theta_j}2\sin\frac{\theta-\theta_j}2}.
+\]
+Using $\sin\theta=2\sin\frac\theta2\cos\frac\theta2$ and
+$\sin\frac{\theta+\theta_j}2\sin\frac{\theta-\theta_j}2
+=\sin^2\frac\theta2-\sin^2\frac{\theta_j}2$, one finds
+\[
+ p_{N,j}(\cos\theta)=\frac{(-1)^j\sin(N\theta)\cos\frac\theta2\,\sin^2\frac{\theta_j}2}
+ {N\sin\frac{\theta+\theta_j}2\sin\frac{\theta-\theta_j}2\sin\frac\theta2}.
+\]
+At $\theta=\xi/N$ this is the exact factorization
+\begin{equation}\label{eq:pNj-factor}
+ p_{N,j}(\cos(\xi/N))=\chi_j(\xi)\,\varrho_{N,j}(\xi),\qquad
+ \varrho_{N,j}(\xi)=\frac{\operatorname{sinc}_1^2\bigl(\frac{a_j}{2N}\bigr)
+   \cos\frac\xi{2N}}
+  {\operatorname{sinc}_1\bigl(\frac{\xi+a_j}{2N}\bigr)
+   \operatorname{sinc}_1\bigl(\frac{\xi-a_j}{2N}\bigr)
+   \operatorname{sinc}_1\bigl(\frac\xi{2N}\bigr)} .
+\end{equation}
+For fixed $\xi$, $\varrho_{N,j}(\xi)\to1$. If $N\ge2j$ and
+$0\le\xi\le N\pi$, the three arguments in the denominator have modulus at
+most $3\pi/4$, $\pi/2$ and $\pi/2$, so the denominator is at least
+$(2\sqrt2/(3\pi))(2/\pi)^2$ and
+$0\le\varrho_{N,j}\le3\pi^3/(8\sqrt2)<9$.
+
+\emph{Continuous mass.} The substitution $x=\cos(\xi/N)$ gives
+\[
+ N^2\int_{-1}^1p^2=\int_0^{N\pi}\xi\operatorname{sinc}_1(\xi/N)
+ \Bigl(\sum_ju_j\chi_j(\xi)\varrho_{N,j}(\xi)\Bigr)^2\dd\xi .
+\]
+From $\chi_j(\xi)=2\int_0^1[\cos(a_js)-(-1)^j]\cos(\xi s)\dd s$ we get
+$|\chi_j|\le4$, and from \eqref{eq:chi}, $|\chi_j(\xi)|\le3a_j^2/\xi^3$ for
+$\xi\ge2a_j$. Hence the integrand is dominated by the integrable function
+$81\,\xi(\sum_j|u_j||\chi_j|)^2$, and dominated convergence gives the
+limit $\mathsf M(g)$.
+
+\emph{Discrete mass.} The nodal values of $p_{N,j}$ are $1$ at $x_j$,
+$-2(-1)^j$ at $x_0$ and zero elsewhere, so
+$N^2Q_N(p^2)=\sum_jN^2w_ju_j^2+4N^2w_0(\sum_j(-1)^ju_j)^2$. The endpoint
+weight satisfies $|N^2w_0-1|\le1/(N^2-1)$. For $j\ge1$ write
+$b=2\pi j$ and $w_j=(2/N)S_N(\theta_j)$ with the bracket of
+Lemma~\ref{lem:identities}. For odd $N=2q+1$, \eqref{eq:telescope} gives
+\[
+ NS_N(\theta_j)=1+\sum_{r=1}^q\frac{2N}{4r^2-1}\Bigl(1-\cos\frac{br}N\Bigr),
+\]
+a Riemann sum for $1+\int_0^{1/2}F(x)\dd x$ with
+$F(x)=(1-\cos bx)/(2x^2)$: indeed $0\le F\le b^2/4$,
+$|F'|\le b^3/12$, and the summands differ from $F(r/N)/N$ by at most
+$b^2/[4N(4r^2-1)]$. The even case is the same with an additional top term
+$O(1/N)$. Integration by parts gives
+$1+\int_0^{1/2}F=(-1)^j+\pi j\operatorname{Si}(\pi j)$, so $N^2w_j\to\omega_j$
+for both parities. Hence $N^2Q_N(p^2)\to\mathsf D(g)$.
+
+\emph{Positivity and the bounds.} If $\mathsf M(g)=0$, then
+$\sum_ju_j\chi_j\equiv0$, and sampling at $\pi k$ gives $u=0$. Applying
+Theorem~\ref{thm:five-thirds} to $p\in\Pn_{N-1}$ and letting
+$N\to\infty$ gives $\mathsf D\le\frac53\mathsf M$ on $\mathcal V_0$, so
+$\Lambda_{\mathrm{edge}}\le5/3$. Since every $p$ above lies in
+$\Pn_{N-1}$, $\lambda_+(N,N-1)\ge N^2Q_N(p^2)/(N^2\int p^2)$, and letting
+$N\to\infty$ and then taking the supremum over $g$ gives
+$\liminf\lambda_+(N,N-1)\ge\Lambda_{\mathrm{edge}}$.
+
+For $\Lambda_{\mathrm{edge}}\ge1$, take $g=\zeta_j$, whose quotient is
+$(\omega_j+4)/\mathsf M(\zeta_j)$. As $j\to\infty$,
+$\omega_j/a_j\to\pi$ by $\operatorname{Si}(x)\to\pi/2$. For the mass, put
+$\xi=a_j+v$; on $|v|\le a_j/2$,
+$\xi\chi_j(\xi)^2=4a_j^4\sin^2v/[\xi(\xi+a_j)^2v^2]$, whose ratio to
+$a_j\sin^2v/v^2$ is bounded and tends to one for fixed $v$. Outside this
+interval the mass is $o(a_j)$: on $\xi\le a_j/2$ use
+$|\chi_j(\xi)|\le C\min(1,1/\xi)$ (mass $O(\log a_j)$), and on
+$\xi\ge3a_j/2$ use $|\chi_j|\le Ca_j^2/\xi^3$ (mass $O(1)$). Dominated
+convergence gives $\mathsf M(\zeta_j)/a_j\to\int_{\R}(\sin v/v)^2\dd v=\pi$.
+Hence the quotients tend to one. \qed
+
+\subsection{The form domain and the continuum identity}
+
+Let $\mathcal V=\{g\in L^2(0,1):\mathsf M(g)<\infty\}$ and define
+\[
+ \mathsf Y(g)=\int_0^\infty y\Bigl|\int_0^1g(s)e^{-(1-s)y}\dd s\Bigr|^2\dd y,\qquad
+ \mathsf Z(g)=\int_0^1\!\!\int_0^1z(s+r)g(s)g(r)\dd s\dd r,
+\]
+with $z(v)=\max(v,2-v)^{-2}$ on $[0,2]$, so that $0<z\le1$.
+
+\begin{lemma}\label{lem:core-dense}
+$\mathcal V_0$ is dense in $\mathcal V$ for the norm
+$(\norm g_{L^2}^2+\mathsf M(g))^{1/2}$.
+\end{lemma}
+
+\begin{proof}
+Extend $g\in\mathcal V$ evenly to $G(s)=g(|s|)$ on $(-1,1)$, zero outside.
+Its Fourier transform is $2\widehat g$, so $\mathsf M(g)$ is one eighth of
+the squared $L^2(|\xi|\dd\xi)$ norm of $\widehat G$. For $0<r<1$ the dilate
+$G(s/r)$ has transform $r\widehat G(r\xi)$; dilation is an isometry of
+$L^2(|\xi|\dd\xi)$ and strongly continuous there (check it on continuous
+functions supported in compact annuli, then approximate), and also strongly
+continuous in $L^2$. Convolving the dilate with an even smooth mollifier
+supported inside $(-1,1)$ multiplies $\widehat G$ by a function bounded by
+one that tends to one pointwise as the support shrinks, so dominated
+convergence gives approximation in both norms by even smooth functions
+vanishing near $\pm1$. On $[0,1]$ such a function has a cosine series
+$\sum_{j\ge0}b_j\cos(\pi js)$ with rapidly decreasing coefficients; since
+it vanishes at $s=1$, it equals $\sum_{j\ge1}b_j[\cos(\pi js)-(-1)^j]$, and
+the partial sums converge in $C^2[0,1]$. For a $C^2$ difference $h$ with
+$h(1)=0$, two integrations by parts give
+$|\widehat h(\xi)|\le\norm h_1$ and
+$|\widehat h(\xi)|\le(|h'(0)|+|h'(1)|+\norm{h''}_1)\xi^{-2}$, so
+$\mathsf M(h)\to0$.
+\end{proof}
+
+\begin{lemma}\label{lem:continuum}
+The forms $\mathsf D$ and $\mathsf Y$ are finite and continuous on
+$\mathcal V$; $\mathsf M(g)\ge\norm g_{L^2}^2$, $|\mathsf Z(g)|\le\mathsf M(g)$,
+$\mathsf Y(g)\le3\mathsf M(g)$, and for every $g\in\mathcal V$,
+\begin{equation}\label{eq:continuum}
+ \mathsf D(g)=\mathsf M(g)+\tfrac12\bigl[\mathsf Z(g)-\mathsf Y(g)\bigr],
+ \qquad
+ \tfrac12\bigl[\mathsf Z(g)-\mathsf Y(g)\bigr]\le(\Lambda_{\mathrm{edge}}-1)\mathsf M(g).
+\end{equation}
+Moreover $\Lambda_{\mathrm{edge}}\le3/2$.
+\end{lemma}
+
+\begin{proof}
+Let $g=\sum_ju_j\zeta_j\in\mathcal V_0$ and $p=\sum_ju_jp_{N,j}$. The
+Chebyshev coefficients of $\ell_k$ are $(2\gamma_k/N)\gamma_i\cos(i\theta_k)$
+(proof of Lemma~\ref{lem:identities}), so $Np=\sum_{i<N}a_iT_i$ with
+$a_i=g(i/N)$ for $i\ge1$ and $a_0=g(0)/2$. Thus
+$a^TM_Na=N^2\int p^2\to\mathsf M(g)$ and $a^TR_Na=N^2Q_N(p^2)\to\mathsf D(g)$
+by Proposition~\ref{prop:fixed-trial}. The rescaled entries
+$N^2(Z_N)_{ij}=[\max(s,2-s)^2-N^{-2}]^{-1}$, $s=(i+j)/N$, converge uniformly
+to $z$ on equal-parity pairs, which form half of all pairs; hence
+$a^TZ_Na\to\frac12\mathsf Z(g)$. Similarly
+$N^2(Y_N)_{ij}=[(u+v)^2-N^{-2}]^{-1}$ with $u=1-i/N$, $v=1-j/N\ge1/N$,
+and $(u+v)^2-N^{-2}\ge\frac34(u+v)^2$. As $g(1)=g'(1)=0$, $|g(s)|\le C(1-s)^2$,
+so the weighted kernel $g(1-u)g(1-v)/(u+v)^2$ is bounded and vanishes at the
+corner; Riemann sums then give
+$a^TY_Na\to\frac12\int\!\!\int g(s)g(r)(2-s-r)^{-2}=\frac12\mathsf Y(g)$, by
+$\int_0^\infty ye^{-cy}\dd y=c^{-2}$. The row $i=0$ changes these sums by
+$O(1/N)$. The identity $R=M-Y+Z$ gives \eqref{eq:continuum} on
+$\mathcal V_0$.
+
+Lemma~\ref{lem:floor} gives $a^TM_Na\ge N^{-1}\sum_ia_i^2\to\norm g^2$, so
+$\mathsf M\ge\norm g^2\ge|\mathsf Z|$ on $\mathcal V_0$. Since
+$\mathsf D\ge0$, \eqref{eq:continuum} gives $\mathsf Y\le2\mathsf M+\mathsf Z
+\le3\mathsf M$; also $\mathsf D\le\Lambda_{\mathrm{edge}}\mathsf M$. Each form
+is continuous for the norm of Lemma~\ref{lem:core-dense}; by that lemma they
+extend continuously to $\mathcal V$, and the extensions are the displayed
+integrals (for $\mathsf Y$: $L^2$ convergence gives pointwise convergence of
+the Laplace transforms, and the limit in $L^2(y\dd y)$ agrees; for $\mathsf D$:
+$\widehat g$ converges pointwise, and the samples converge in the weighted
+sequence space). The relations extend to $\mathcal V$. Finally
+$\mathsf Y\ge0$ and $\mathsf Z\le\mathsf M$ give $\mathsf D\le\frac32\mathsf M$.
+\end{proof}
+
+\subsection{\texorpdfstring{Proof of Theorem~\ref{thm:edge-limit}}{Proof of the endpoint limit theorem}}
+
+By Proposition~\ref{prop:fixed-trial} it suffices to show that
+$\limsup_N\lambda_+(N,N-1)$ is at most $\Lambda_{\mathrm{edge}}$. Let $\Lambda^*$ be a
+subsequential limit; it is finite by Theorem~\ref{thm:five-thirds}. If
+$\Lambda^*\le1$ there is nothing to prove, since $\Lambda_{\mathrm{edge}}\ge1$.
+Otherwise let $a=a^{(N)}$ be the coefficient vector of a maximizing
+polynomial $p_N=\sum_ia_iT_i$ with $a^TM_Na=\int p_N^2=1$, so that
+$a^TR_Na=\lambda_+(N,N-1)$.
+
+\emph{Endpoint profiles.} Lemma~\ref{lem:floor} gives
+$N^{-1}\sum_ia_i^2\le1$. Let $e_N$ and $o_N$ be the step functions equal to
+$a_{2k}$ and $a_{2k+1}$ on $[2k/N,\min\{(2k+2)/N,1\})$ (with $a_N=0$), so
+$\norm{e_N}^2+\norm{o_N}^2\le2$, and put $g_N^\pm=(e_N\pm o_N)/2$. Along a
+further subsequence $g_N^\pm\rightharpoonup g^\pm$ weakly in $L^2(0,1)$.
+For every $v\in C^1[0,1]$,
+\begin{equation}\label{eq:profile-weak}
+ \frac1N\sum_ia_iv(i/N)\to\int_0^1g^+v,\qquad
+ \frac1N\sum_i(-1)^ia_iv(i/N)\to\int_0^1g^-v :
+\end{equation}
+the cell quadrature errors are bounded by $\norm{v'}_\infty$ times
+$N^{-1}(N^{-1}\sum a_i^2)^{1/2}$, and for odd $N$ the final half cell costs
+$O(\norm v_\infty N^{-1/2})$ because $|a_{N-1}|\le\sqrt N$.
+
+\emph{Mass.} With $v(s)=\cos(\xi s)$, \eqref{eq:profile-weak} gives
+$N^{-1}p_N(\cos(\xi/N))\to\widehat{g^+}(\xi)$ and
+$N^{-1}p_N(-\cos(\xi/N))\to\widehat{g^-}(\xi)$ for each $\xi$, and these
+quantities are bounded by $(N^{-1}\sum_ia_i^2)^{1/2}\le1$. For fixed $T$,
+the two disjoint endpoint pieces of $\int p_N^2$ are
+\[
+ \int_0^T\xi\operatorname{sinc}_1(\xi/N)\,\bigl|N^{-1}p_N(\pm\cos(\xi/N))\bigr|^2\dd\xi .
+\]
+Dominated convergence, then $T\to\infty$, gives
+\begin{equation}\label{eq:profile-mass}
+ \mathsf M(g^+)+\mathsf M(g^-)\le1 ;
+\end{equation}
+in particular $g^\pm\in\mathcal V$.
+
+\emph{The compact part.} The rescaled kernel of $Z_N$ converges uniformly to
+$z(s+r)$, which is uniformly continuous, so the cell replacement changes the
+operator norm by $o(1)$ (with $O(N^{-1/2})$ from a final half cell). The
+integral operator with kernel $z(s+r)$ is compact. Since equal-parity pairs
+give $\frac14[\mathsf Z(e_N)+\mathsf Z(o_N)]=\frac12[\mathsf Z(g_N^+)+\mathsf Z(g_N^-)]$
+up to $o(1)$, weak convergence yields
+\[
+ a^TZ_Na\to\tfrac12\bigl[\mathsf Z(g^+)+\mathsf Z(g^-)\bigr].
+\]
+
+\emph{The positive part.} With
+$E^{\mathrm e}_N(y)=\frac2N\sum_{i\ \mathrm{even}}a_ie^{-(1-i/N)y}$ and
+$E^{\mathrm o}_N$ the odd analogue, the substitution $x=e^{-y/N}$ in the
+integral representation of $Y$ (proof of Theorem~\ref{thm:five-thirds}) gives
+the exact formula
+\[
+ a^TY_Na=\int_0^\infty\frac N4\sinh\frac yN\,
+ \bigl[E^{\mathrm e}_N(y)^2+E^{\mathrm o}_N(y)^2\bigr]\dd y .
+\]
+By \eqref{eq:profile-weak}, $E^{\mathrm e}_N(y)\to\int(g^++g^-)e^{-(1-s)y}\dd s$
+and $E^{\mathrm o}_N(y)\to\int(g^+-g^-)e^{-(1-s)y}\dd s$ for each $y$, and
+$\frac N4\sinh\frac yN\ge\frac y4$. Fatou's lemma gives
+\[
+ \liminf a^TY_Na\ge\tfrac12\bigl[\mathsf Y(g^+)+\mathsf Y(g^-)\bigr].
+\]
+No convergence of the unbounded matrix $Y_N$ itself is needed.
+
+\emph{Conclusion.} By $R_N=M_N-Y_N+Z_N$, \eqref{eq:continuum} and
+\eqref{eq:profile-mass},
+\begin{align*}
+ \Lambda^*-1=\lim a^T(Z_N-Y_N)a
+ &\le\tfrac12\sum_\pm\bigl[\mathsf Z(g^\pm)-\mathsf Y(g^\pm)\bigr]\\
+ &\le(\Lambda_{\mathrm{edge}}-1)\sum_\pm\mathsf M(g^\pm)
+ \le\Lambda_{\mathrm{edge}}-1 .
+\end{align*}
+The bound $\Lambda_{\mathrm{edge}}\le3/2$ is Lemma~\ref{lem:continuum}. \qed
 
 \bibliographystyle{siamplain}
 \bibliography{refs}
