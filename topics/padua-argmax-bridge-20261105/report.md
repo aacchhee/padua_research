@@ -558,3 +558,8 @@ Global768 is accepted by rational paper proof; residual719. E01/E02 complete
 of15 additional analytic rounds, E03 joint signed-error work active. D40
 pack preparation remains PAUSED until the extension ends and need is
 reassessed; no pack source/builder/native execution exists.
+
+## Dated correction — 2026-11-13 (Claude audit-05 MINOR fix B5-08)
+
+"all942 phase trees" above means 942 phase witness records over 471 distinct trees (two identical records per degree 41..511), as corrected in
+J03 (J3-01) and the manuscripts. See [audit-05](audit-05.md).

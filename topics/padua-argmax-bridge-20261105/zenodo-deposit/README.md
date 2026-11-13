@@ -375,3 +375,9 @@ includes the historical9,917,613baseline and1,833,696positive bytes since the
 old topic head, of which1,827,288came from current main's Padua3D topic.
 This exceeds the inherited10,000,000byte cap. No other topic's evidence is
 deleted or reclassified here; global budget repair and readiness remain open.
+
+## Dated note — 2026-11-13 (Claude audit-05 MINOR fix E5-08)
+
+The onset-512 verify command in this README fails on the canonical archive until audit-05 finding E5-01 (member allowlist omits `storage-dedup.json`
+and `.preserve.lock`) is fixed and re-reviewed. The source freeze `24a98db4c3c4c4d0eede2e3929532956df87911b` named above is historical; it is
+superseded by the final paired freeze `ad908acb21d3589d85635618ff68f63dd01cfbca`. See [audit-05](../audit-05.md).

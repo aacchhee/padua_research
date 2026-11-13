@@ -15,3 +15,9 @@ The local validator subclasses `Access` only to authenticate identities directly
 at their retained local paths and to read the separately trusted release's
 arithmetic-pin record. Every other pass check is the released `validate_pass`.
 The scientific engine, reduction and arithmetic have not been modified.
+
+## Dated note — 2026-11-13 (Claude audit-05 MINOR fix E5-08)
+
+The recorded 320..510 campaign ran runner `459d0728`; the current runner (`a198b651`) has run nothing. The repaired reader's member allowlist
+omits `storage-dedup.json` and the top-level `.preserve.lock` that the campaign writes (audit-05 finding E5-01), so the documented verify command
+rejects the canonical ZIP until that is fixed and re-reviewed. See [audit-05](../../audit-05.md).
