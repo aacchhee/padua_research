@@ -158,3 +158,10 @@ The material changes are A1, A2, A3 (scope), A6, A7 and A8 (record). Per handoff
 - the retrospective novelty addendum.
 
 Accepted claims (-01 to -04, -06's mathematics) are not reopened. No IDs are allocated; PR #34 stays draft.
+
+## Errata (2026-11-13, response-02; audit-02 B2, B3)
+
+This section is appended; the text above is unchanged.
+- **A1, "The bound" bullet.** The chain "(3/4)∫ψ_R − 1 ≥ 0.0278115257" is not supported by the coarse loss 3.0043·10⁻⁵: the subtraction gives 0.027811525690…, so the safe coarse value is 0.0278115256. The precise receipt value, 0.0278115257416687…, supports the theorem's 0.02781152574. Both are > 1/36. The theory record is corrected.
+- **A2, coefficient-error maxima.** "e ≤ 2.70·10⁻¹¹ (P)" should read e ≤ 2.71·10⁻¹¹; the receipt value is 2.70197…·10⁻¹¹. The checker uses the individual radii, so no computation changes.
+- **A8, retrospective completion.** The claim of reading "every obstruction and disposition table in full" was inaccurate: one disposition table (L899–913) was omitted, and cells were cut at 260 characters (audit-02 B1). A full untruncated read of the whole registry was performed on 2026-11-13 and is recorded in `novelty-gate-E1.md` ("Correction and completed retrospective read"). It is still retrospective, and the gate is still not prospective.

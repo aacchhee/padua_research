@@ -39,7 +39,11 @@ Let β = (3/2)·M₄ with M₄ = 1_{[−1/2,1/2]}^{∗4} the centred cubic B-spl
   ∫|φ||ξ|² = (2/α)⁵ P(0)^{−1} ∫|P(x)||x|²e^{−π|x|²}dx ≤ (2/α)⁵ P(0)^{−1} Σ_a |p_a| Σ_i m(a + e_i),
 
   where P = Σ_a p_a x^{2a} and m(b) = ∫x^{2b}e^{−π|x|²}dx = Π_i (2b_i − 1)!!/(2π)^{b_i}.
-- **Evaluation.** `../code/gamma_compact.py` evaluates this in Arb from the exact coefficients. The bound is ∫|φ||ξ|² ≤ 267048.437, so the loss is (3/4)(3/(2R²))·267048.437 ≤ 3.0043·10⁻⁵ at R = 10⁵. Hence (3/4)∫ψ_R − 1 ≥ γ₁ − 3.0043·10⁻⁵ ≥ 0.0278115257 > 1/36. ∎
+- **Evaluation.** `../code/gamma_compact.py` evaluates this in Arb from the exact coefficients. The bound is ∫|φ||ξ|² ≤ 267048.437, so the loss is (3/4)(3/(2R²))·267048.437 ≤ 3.0043·10⁻⁵ at R = 10⁵. There are two separate calculations:
+  - **Coarse, from the rounded loss:** (3/4)∫ψ_R − 1 ≥ γ₁ − 3.0043·10⁻⁵ ≥ 0.0278115256 > 1/36. The subtraction is 0.027811525690…, so 0.0278115256 is a safe rounding.
+  - **Precise, from the receipt:** with the Arb loss bound 3.00429491…·10⁻⁵, the lower bound is 0.0278115257416687…. This supports the 0.02781152574 stated in the theorem.
+
+  *(Display corrected 2026-11-13, audit-02 B2: the earlier one-line chain ended at 0.0278115257, which the coarse subtraction does not support.)* ∎
 
 **Run.** 2026-11-13, PASS:
 
