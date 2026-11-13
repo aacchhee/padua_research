@@ -92,34 +92,91 @@ $\lambda_\pm(N,n)$ for its extreme eigenvalues. Thus
  \lambda_+(N,n)=\sup_{0\ne p\in\Pn_n}
  \frac{Q_N(p^2)}{\int_{-1}^1p^2}.
 \end{equation}
-The node index $N$, point count $N+1$, and maximal algebraic degree of
-exactness $d_N$ are distinct. In these conventions
-\begin{equation}\label{eq:ade}
- d_N=\begin{cases}N,&N\text{ odd},\\N+1,&N\text{ even}.
- \end{cases}
-\end{equation}
-
-Write $\theta_j=j\pi/N$ and let $S_N(\theta)$ denote the bracket in the
-explicit weight formula
-\[
- w_j=\frac{2\gamma_j}{N}S_N(\theta_j),\qquad
- S_N(\theta)=1-\sum_{r=1}^{\lfloor(N-1)/2\rfloor}
+Let $\varepsilon^{(N)}_0=\varepsilon^{(N)}_N=1/2$ and
+$\varepsilon^{(N)}_j=1$ for $0<j<N$ be the endpoint factors of the
+Chebyshev--Gauss--Lobatto mesh with $N+1$ points, and put
+$d_j=\min(j,N-j)$. For $\theta\in[0,\pi]$ let
+\begin{equation}\label{eq:cc-bracket}
+ W_N(\theta)=1-\sum_{r=1}^{\lfloor(N-1)/2\rfloor}
       \frac{2\cos(2r\theta)}{4r^2-1}
- -\boldsymbol1_{2\mid N}\frac{\cos(N\theta)}{N^2-1},
-\]
-with $\gamma_0=\gamma_N=1/2$ and $\gamma_j=1$ otherwise.
-The following facts are proved in \citep{MZ-CC}.
+ -\boldsymbol1_{2\mid N}\frac{\cos(N\theta)}{N^2-1}.
+\end{equation}
+The only facts on the Clenshaw--Curtis weights used below are the
+following; they are proved here in a few lines.
 
-\begin{lemma}[CC weight comparison; \citealp{MZ-CC}]\label{lem:weight-comparison}
-For $0\le\theta\le\pi$,
-$|S_N(\theta)-(\pi/2)\sin\theta|\le1/N$ for odd $N$ and
-$\le N/(N^2-1)$ for even $N$. Consequently, for $1\le j\le N-1$,
-\[
- \frac{\sin\theta_j}{N}\le w_j\le\frac{5\sin\theta_j}{N}.
-\]
+\begin{lemma}[Clenshaw--Curtis weights]\label{lem:weight-comparison}
+Let $N\ge2$.
+\begin{enumerate}
+\item[(i)] $w_j=\dfrac{2\varepsilon^{(N)}_j}{N}\,W_N(\theta_j)$ for
+ $0\le j\le N$; in particular $w_0=w_N=N^{-2}$ for odd $N$ and
+ $w_0=w_N=(N^2-1)^{-1}$ for even $N$.
+\item[(ii)] For $0\le\theta\le\pi$,
+ $|W_N(\theta)-\tfrac\pi2\sin\theta|\le1/N$ for odd $N$ and
+ $\le N/(N^2-1)$ for even $N$.
+\item[(iii)] For $1\le j\le N-1$,
+ $w_j\ge(\pi-\tfrac43)\sin\theta_j/N\ge\sin\theta_j/N$.
+\item[(iv)] $w_j\ge(1+d_j)/N^2$ for $0\le j\le N$; in particular
+ $w_j>0$.
+\end{enumerate}
 \end{lemma}
+\begin{proof}
+(i) In this proof write $\varepsilon_j$ for $\varepsilon^{(N)}_j$.
+For an integer $s$ the geometric sum gives
+$\sum_{j=0}^N\varepsilon_j\cos(sj\pi/N)
+=\frac12\sum_{j=0}^{2N-1}\cos(sj\pi/N)$, which equals $N$ if $2N\mid s$
+and $0$ otherwise. With the product formula, for $0\le k,l\le N$,
+\[
+ \sum_{j=0}^N\varepsilon_j\cos(k\theta_j)\cos(l\theta_j)
+ =\frac{N\delta_{kl}}{2\varepsilon_k}.
+\]
+That is, the square matrix $\Phi=(\cos k\theta_j)_{j,k}$ satisfies
+$\Phi^{\mathsf T}\diag(\varepsilon_j)\Phi=\frac N2\diag(\varepsilon_k)^{-1}$, so
+$\frac2N\diag(\varepsilon_k)\Phi^{\mathsf T}\diag(\varepsilon_j)$ is a left
+inverse of $\Phi$, hence also a right inverse. This says that
+\[
+ \ell_j(\cos\theta)=\frac{2\varepsilon_j}{N}\sum_{k=0}^N
+ \varepsilon_k\cos(k\theta_j)\cos(k\theta).
+\]
+Since $\int_{-1}^1T_k(x)\dd x=2/(1-k^2)$ for even $k$ and $0$ for odd $k$,
+integrating gives the formula for $w_j$. The telescoping identity
+\begin{equation}\label{eq:telescope-cc}
+ \sum_{r=1}^q\frac2{4r^2-1}=1-\frac1{2q+1}
+\end{equation}
+gives $W_N(0)=W_N(\pi)=1/N$ for odd $N$ (take $q=(N-1)/2$) and
+$W_N(0)=W_N(\pi)=1/(N-1)-1/(N^2-1)=N/(N^2-1)$ for even $N$
+(take $q=N/2-1$); this is the endpoint statement.
 
-\begin{proposition}[CC spectral inputs; \citealp{MZ-CC}]\label{prop:counterexample}
+(ii) The integrals
+$\int_0^\pi\sin\theta\cos(k\theta)\dd\theta$ equal $2/(1-k^2)$ for even $k$
+and $0$ for odd $k$. These cosine coefficients of $\sin\theta$ are
+absolutely summable, so the cosine series converges uniformly, and by
+uniqueness of cosine coefficients
+\[
+ \tfrac\pi2\sin\theta=1-2\sum_{r\ge1}\frac{\cos(2r\theta)}{4r^2-1}
+ \qquad(0\le\theta\le\pi).
+\]
+With $q=\lfloor(N-1)/2\rfloor$, subtracting from \eqref{eq:cc-bracket} gives
+$W_N(\theta)-\frac\pi2\sin\theta
+=2\sum_{r>q}\cos(2r\theta)/(4r^2-1)-\boldsymbol1_{2\mid N}\cos(N\theta)/(N^2-1)$.
+For odd $N$, \eqref{eq:telescope-cc} bounds its modulus by $1/(2q+1)=1/N$.
+For even $N$ the term $r=N/2$ of the sum is $2\cos(N\theta)/(N^2-1)$, so
+the expression equals
+$\cos(N\theta)/(N^2-1)+2\sum_{r>N/2}\cos(2r\theta)/(4r^2-1)$, of modulus at
+most $1/(N^2-1)+1/(N+1)=N/(N^2-1)$.
+
+(iii), (iv) Let $1\le j\le N-1$. By concavity,
+$\sin\theta_j=\sin(\pi d_j/N)\ge2d_j/N\ge2/N$. Hence the error in (ii) is
+at most $\frac12\sin\theta_j$ for odd $N$, and at most
+$N/(N^2-1)\le4/(3N)\le\frac23\sin\theta_j$ for even $N$ (this needs
+$N\ge2$). Therefore $W_N(\theta_j)\ge(\frac\pi2-\frac23)\sin\theta_j$, and
+(i) gives the first inequality of (iii); the second holds since
+$\pi-4/3>1$. Moreover, by (iii) and
+$\sin\theta_j\ge2d_j/N$, $w_j\ge(\pi-\frac43)\,2d_j/N^2\ge2d_j/N^2
+\ge(1+d_j)/N^2$ for interior $j$, because $d_j\ge1$. At $j=0,N$,
+(i) gives $w_j\ge N^{-2}$.
+\end{proof}
+
+\begin{proposition}[CC spectral inputs; \citealp{MZ-CC}]\label{prop:cc-inputs}
 For $0\le n<N$, $\lambda_+(N,n)\le2-4/N+4/N^2<2$.
 Moreover $\lambda_-(N,N-1)\to0$ as $N\to\infty$, and
 $\lambda_-(512,511)<1/4$, so $\norm{I-G_{512,511}}_2>3/4$.
@@ -178,7 +235,7 @@ No sign condition on $W_{jk}$ was used.
 The endpoint lower eigenvalue tends to zero. Therefore
 $\norm{I-G^\Pa_{N,N-1}}_2\ge1-\lambda_-(N,N-1)$ gives the stated
 liminf after taking limits on the right.
-Proposition~\ref{prop:counterexample} gives the finite consequence.
+Proposition~\ref{prop:cc-inputs} gives the finite consequence.
 \end{proof}
 
 \subsection{Exact density and logarithmic boundary weights}
@@ -186,10 +243,10 @@ Proposition~\ref{prop:counterexample} gives the finite consequence.
 We now use the actual interpolatory Lebesgue weights, rather than an
 arbitrary degree-$N$ exact rule, and write $m=N$ to match the finite
 Padua records. Put $\theta_j=j\pi/m$, $\phi_k=k\pi/(m+1)$, and let
-$\epsilon_j,\gamma_k$ be one at interior indices and one half at the
-respective endpoints. The positive auxiliary weights
+$\varepsilon^{(m)}_j$ and $\varepsilon^{(m+1)}_k$ be the endpoint factors of the two
+Lobatto meshes (Section~\ref{sec:cc-recap}). The positive auxiliary weights
 \[
- \rho_{jk}=\frac{2\epsilon_j\gamma_k}{m(m+1)},\qquad j+k\text{ even},
+ \rho_{jk}=\frac{2\varepsilon^{(m)}_j\varepsilon^{(m+1)}_k}{m(m+1)},\qquad j+k\text{ even},
 \]
 have mass one; they are distinct from the signed weights $w_{jk}$ of
 $Q_m^\Pa$. Put $c_0=1$, $c_a=2$ for $a>0$, and
@@ -245,7 +302,7 @@ Write $m=2R$, $t_0=2$, $t_a=-4/(4a^2-1)$ for $a\ge1$, and
 \]
 Equation~\eqref{eq:padua-density} gives
 \begin{equation}\label{eq:padua-weight-exact}
- w_{jk}=\frac{2\epsilon_j\gamma_k}{m(m+1)}
+ w_{jk}=\frac{2\varepsilon^{(m)}_j\varepsilon^{(m+1)}_k}{m(m+1)}
  \{S_R(\theta_j,\phi_k)-2h_m\cos(m\theta_j)\}.
 \end{equation}
 The absolutely convergent cosine series
@@ -276,7 +333,7 @@ Using $\sin\theta_j\le\pi j/m$, $\sin\phi_k\le\pi k/m$ in
 \[
  m^{-2}\{\pi^4jk+2\pi^2(j+k)+260+256\log R+16/3\}.
 \]
-Multiplication by $2\epsilon_j\gamma_k/[m(m+1)]\le2/m^2$
+Multiplication by $2\varepsilon^{(m)}_j\varepsilon^{(m+1)}_k/[m(m+1)]\le2/m^2$
 proves \eqref{eq:padua-weight-majorant}.
 
 For fixed $j,k$, the terms other than $V_R$ in
@@ -298,7 +355,7 @@ Taking $R\to\infty$ and then $\delta\downarrow0$ gives
 \]
 Substitution into \eqref{eq:padua-weight-exact}, using
 $(-1)^j=(-1)^k$ on the checkerboard and
-$\epsilon_j\gamma_k=e_je_k$ eventually, proves
+$\varepsilon^{(m)}_j\varepsilon^{(m+1)}_k=e_je_k$ eventually, proves
 \eqref{eq:padua-weight-limit}.
 \end{proof}
 
@@ -320,7 +377,7 @@ so
  m^2|S_R(\theta_j,\phi_k)|\le\pi^4jk+
  \frac{5\pi^2}2(j+k)+\frac{25}4+400(1+\log R).
 \]
-Multiplication by $2\epsilon_j\gamma_k/[m(m+1)]\le2/m^2$
+Multiplication by $2\varepsilon^{(m)}_j\varepsilon^{(m+1)}_k/[m(m+1)]\le2/m^2$
 proves the asserted majorant. In the thin-corner limit,
 $2R\theta_j=j\pi(m-1)/m\to j\pi$ and
 $2R\phi_k=k\pi(m-1)/(m+1)\to k\pi$.
@@ -407,7 +464,7 @@ It vanishes for even $j$. The polynomial
 $h_r(\cos t)=\sin^2(rt)F_r(\cos t)^2$ has degree $4r<m$ and constant
 coefficient $D_r/2-1/[2(r+1)^2]$: the coefficient of $T_{2r}$ in
 $F_r^2$ is $2/(r+1)^2$. By \eqref{eq:padua-trapezoid},
-$\sum_j\epsilon_jU^+_{m,j}\to a/6$.
+$\sum_j\varepsilon^{(m)}_jU^+_{m,j}\to a/6$.
 
 Here each profile converges at fixed indices, and the geometric bound
 for $F_r$ gives $|F_r(\cos\theta_j)|/m\le C_a(1+j)^{-2}$
@@ -497,32 +554,87 @@ rule. Their retained registry status \texttt{OPEN} does not override
 the binding \texttt{REJECTED: refuted} dispositions. The conclusions do
 not apply to positive Chebyshev Padua cubature or tensor CC rules.
 
-% Source: PD-T379; topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md
-\begin{proposition}[Normalized one-sided growth bounds]\label{prop:padua-growth}
+\begin{lemma}[Cosine transform of the Fej\'er profile]\label{lem:fejer-cosine}
+% IDs: PD-T379
 Put
 \[
- g(u)=\left(\frac{\sin(u/2)}{u/2}\right)^4,\quad g(0)=1,
- \qquad A=\int_0^\infty u g(u)\dd u=4\log2,
+ g(u)=\Bigl(\frac{\sin(u/2)}{u/2}\Bigr)^4,\ g(0)=1,\qquad
+ h(x)=x^2\log|x|,\ h(0)=0 .
 \]
+For real $q$ let
+\begin{equation}\label{eq:delta4}
+ \Delta^4h(q)=3h(q)-2h(q+1)-2h(q-1)
+ +\tfrac12\{h(q+2)+h(q-2)\}
+\end{equation}
+(one half of the centered fourth difference of $h$ with unit step). Then
+\[
+ \int_0^\infty u\,g(u)\cos(qu)\dd u=\Delta^4h(q)\qquad(q\in\R).
+\]
+In particular $\int_0^\infty u\,g(u)\dd u=\Delta^4h(0)=4\log2$.
+\end{lemma}
+\begin{proof}
+Since $\sin^4(u/2)=(3-4\cos u+\cos2u)/8$, we have
+$u\,g(u)=2(3-4\cos u+\cos2u)/u^3$, which is integrable on $(0,\infty)$.
+By product-to-sum, $u\,g(u)\cos(qu)=2H_q(u)/u^3$ with
+$H_q(u)=\sum_tc_t\cos(tu)$, where $(t,c_t)$ runs through
+$(q,3)$, $(q\pm1,-2)$, $(q\pm2,\frac12)$. Here $\sum_tc_t=0$ and
+$\sum_tc_tt^2=0$, so $H_q(u)=O(u^4)$ and $H_q'(u)=O(u^3)$ as
+$u\downarrow0$. Integrating by parts twice on $[\delta,X]$ and letting
+$\delta\downarrow0$, $X\to\infty$ (the boundary terms $H_q/u^2$ and
+$H_q'/u$ tend to zero at $0$ by these estimates and at $\infty$ since
+$H_q,H_q'$ are bounded) gives
+$\int_0^\infty2H_q(u)u^{-3}\dd u=\int_0^\infty H_q''(u)u^{-1}\dd u$.
+Because $\sum_tc_tt^2=0$,
+$H_q''(u)=-\sum_{t\ne0}c_tt^2[\cos(tu)-\cos u]$. For $t\ne0$ and
+$\varrho>0$, differentiating in $t$ and integrating
+$t/(\varrho^2+t^2)$ gives
+$\int_0^\infty e^{-\varrho u}[\cos(tu)-\cos u]u^{-1}\dd u
+=\frac12\log\frac{\varrho^2+1}{\varrho^2+t^2}$; letting
+$\varrho\downarrow0$ (Dirichlet's test justifies the limit) yields
+$\int_0^\infty[\cos(tu)-\cos u]u^{-1}\dd u=-\log|t|$. Hence the integral
+equals $\sum_{t}c_tt^2\log|t|$, with zero frequencies contributing zero.
+This is $\Delta^4h(q)$. At $q=0$, $h(0)=h(\pm1)=0$ and $h(\pm2)=4\log2$.
+\end{proof}
+
+% Source: PD-T379; topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md
+\begin{proposition}[Normalized one-sided growth bounds]\label{prop:padua-growth}
+% IDs: PD-T379
+With $g$ as in Lemma~\ref{lem:fejer-cosine} put
 \[
  \begin{gathered}
  J_-(a)=\int_0^\infty u g(u)\cos^2(u/(2a))\dd u,\\
  J_+(a)=\int_0^\infty u g(u)\sin^2(u/(2a))\sin^2u\dd u.
  \end{gathered}
 \]
-These are finite and positive. The carriers on either parity have
-squared continuous norms tending to $A J_-(a)$ and $A J_+(a)$.
-In particular, over all integers $m$,
-\begin{equation}\label{eq:padua-growth-bounds}
+These are finite and positive, and
+$J_-(a)=\tfrac12\{4\log2+\Delta^4h(1/a)\}$.
+Let $a,b>0$ and let $p_m^-$, $p_m^+$ be the carriers of
+Theorem~\ref{thm:padua-carriers} (even $m$) and
+Proposition~\ref{prop:padua-odd-carriers} (odd $m$), for $a+b<1/2$
+respectively $2a+b<1/2$. On each parity their squared continuous norms
+tend to $4\log2\,J_-(a)$ and $4\log2\,J_+(a)$. Consequently, over all
+integers $m$ and also separately on even and odd $m$,
+\begin{equation}\label{eq:padua-growth-fixed}
  \begin{gathered}
  \limsup_{m\to\infty}\frac{\lamin(G^\Pa_{m,m-1})}{\log m}
- \le-\frac1{9A J_-(1/4)},\\
+ \le-\frac{16ab}{9\cdot4\log2\,J_-(a)}\quad(a+b<\tfrac12),\\
  \liminf_{m\to\infty}\frac{\lamax(G^\Pa_{m,m-1})}{\log m}
- \ge\frac1{36A J_+(1/8)}.
+ \ge\frac{8ab}{9\cdot4\log2\,J_+(a)}\quad(2a+b<\tfrac12).
  \end{gathered}
 \end{equation}
+In particular, with
+\[
+ \kappa^{\mathrm{car}}_-=\frac1{9\cdot4\log2\,J_-(1/4)},\qquad
+ \kappa^{\mathrm{car}}_+=\frac1{36\cdot4\log2\,J_+(1/8)},
+\]
+\begin{equation}\label{eq:padua-growth-bounds}
+ \limsup_{m\to\infty}\frac{\lamin(G^\Pa_{m,m-1})}{\log m}
+ \le-\kappa^{\mathrm{car}}_-,\qquad
+ \liminf_{m\to\infty}\frac{\lamax(G^\Pa_{m,m-1})}{\log m}
+ \ge\kappa^{\mathrm{car}}_+.
+\end{equation}
 No matching bound, sharp constant, or existence of an extremal spectral
-limit is asserted.
+limit is asserted by this proposition.
 \end{proposition}
 \begin{proof}
 Let $L=r+1$ and substitute $u=Lt$ in the continuous envelope norm.
@@ -537,23 +649,18 @@ The carrier mesh denominator is $D_m=m$ for even $m$ and $D_m=m+1$
 for odd $m$. As $D_m/L\to1/a$ and $r/L\to1$, its factors tend to
 $\cos(u/(2a))$ and $\sin(u/(2a))\sin u$. They have modulus at most
 one. Dominated convergence and product integration prove the norm
-limits. The integrands are continuous and positive on nonempty
-intervals, so their integrals are positive.
-For completeness, $u g(u)=2(3-4\cos u+\cos2u)/u^3$.
-Two integrations by parts give
-\[
- A=4\int_0^\infty\frac{\cos u-\cos2u}{u}\dd u=4\log2.
-\]
-The last identity follows by inserting $e^{-\varepsilon u}$,
-differentiating with respect to the positive cosine frequency,
-integrating back, and letting $\varepsilon\downarrow0$;
-Dirichlet tail estimates identify the ordinary improper integral.
-The cancellations at zero and the decay at infinity justify the
-integrations by parts.
+limits, with $\int_0^\infty ug=4\log2$ by Lemma~\ref{lem:fejer-cosine}.
+The integrands are continuous and positive on nonempty
+intervals, so their integrals are positive. Writing
+$\cos^2(u/(2a))=\frac12\{1+\cos(u/a)\}$, the lemma gives the stated
+expression for $J_-(a)$.
 
-The signed-energy limits divided by these norm limits give carrier
-Rayleigh coefficients $-16ab/[9A J_-(a)]$ and $8ab/[9A J_+(a)]$.
-The variational principle applies on each parity. Fix $a=1/4$ and
+The signed-energy limits \eqref{eq:padua-negative}--\eqref{eq:padua-positive}
+divided by these norm limits give carrier
+Rayleigh coefficients $-16ab/[9\cdot4\log2\,J_-(a)]$ and
+$8ab/[9\cdot4\log2\,J_+(a)]$.
+The variational principle applies on each parity, which gives
+\eqref{eq:padua-growth-fixed}. Fix $a=1/4$ and
 let $b\uparrow1/4$ through admissible values for the negative
 carrier; fix $a=1/8$ and let $b\uparrow1/4$ for the positive one.
 Their denominators are independent of $b>0$, which gives
@@ -564,10 +671,276 @@ admissible.
 The raw energy suprema are $1/9$ and $1/36$, obtained on the closures
 of $a+b<1/2$ and $2a+b<1/2$ respectively. They are not normalized
 spectral constants: the nonunit continuous packet norms must be
-divided out as above. Nor is the chosen parameter pair claimed to
-optimize the normalized packet quotient.
+divided out as above.
 
-\subsection{A uniform signed hyperinterpolation norm}
+\begin{proposition}[Strict improvement of the negative carrier constant]\label{prop:carrier-improvement}
+% IDs: PD-T533
+Put
+\[
+ \kappa_{\mathrm{new}}=\frac{16\cdot\frac{51}{200}\cdot\frac{49}{200}}
+   {9\cdot4\log2\;J_-(51/200)}.
+\]
+Over all integers $m\to\infty$,
+\[
+ \limsup_{m\to\infty}\frac{\lamin(G^\Pa_{m,m-1})}{\log m}
+ \le-\kappa_{\mathrm{new}},\qquad
+ \kappa_{\mathrm{new}}>\kappa^{\mathrm{car}}_-.
+\]
+The same bound holds separately along even and along odd $m$.
+This proposition asserts only this one-sided bound; the existence of
+the limit is Theorem~\ref{thm:corner-operator} below.
+\end{proposition}
+\begin{proof}
+For $q>2$ the function $h(x)=x^2\log x$ is smooth on $[q-2,q+2]$, with
+$h''''(x)=-2/x^2$. Four applications of the fundamental theorem of
+calculus to the centered fourth difference \eqref{eq:delta4} give
+\begin{align*}
+ \Delta^4h(q)&=\tfrac12\int_{[0,1]^4}h''''(q-2+\sigma_s)\dd s
+ =-\int_{[0,1]^4}(q-2+\sigma_s)^{-2}\dd s<0,\\
+ \sigma_s&:=s_1+s_2+s_3+s_4 .
+\end{align*}
+All arguments are positive, so we may differentiate under the integral:
+\[
+ (\Delta^4h)'(q)=2\int_{[0,1]^4}(q-2+\sigma_s)^{-3}\dd s\ge2q^{-3},
+\]
+by Jensen's inequality for the convex function $x^{-3}$, since the
+argument has mean $q$. Let $J(a)=J_-(a)=\frac12\{4\log2+\Delta^4h(1/a)\}$
+(Proposition~\ref{prop:padua-growth}). For $a\in[\frac14,\frac{51}{200}]$ we
+have $1/a>2$, and therefore
+\[
+ 0<J(a)<2\log2<\tfrac75,\qquad
+ J'(a)=-\frac{(\Delta^4h)'(1/a)}{2a^2}\le-a.
+\]
+(For $2\log2<7/5$: $\log2<7/10$ because $e^{7/10}>1+\frac7{10}+\frac{(7/10)^2}2
++\frac{(7/10)^3}6+\frac{(7/10)^4}{24}>2$.)
+Put $\varpi(a)=a(\frac12-a)$. Then $\varpi'(a)=\frac12-2a\in[-\frac1{100},0]$
+on this interval, and $\varpi(a)\,a=a^2(\frac12-a)\ge\frac1{16}\cdot\frac{49}{200}$.
+Since $\varpi'\le0$ and $0<J<\frac75$,
+\[
+ \varpi'J-\varpi J'\ge-\frac1{100}\cdot\frac75+\frac{49}{3200}
+ =\frac{21}{16000}>0 .
+\]
+Thus $\varpi/J$ is strictly increasing on $[\frac14,\frac{51}{200}]$. Now
+$\kappa_{\mathrm{new}}=\frac{16}{9\cdot4\log2}\,\varpi(\frac{51}{200})/J(\frac{51}{200})$
+and $\kappa^{\mathrm{car}}_-=\frac{16}{9\cdot4\log2}\,\varpi(\frac14)/J(\frac14)$
+because $\varpi(\frac14)=\frac1{16}$; this proves
+$\kappa_{\mathrm{new}}>\kappa^{\mathrm{car}}_-$.
+
+For $a=\frac{51}{200}$ and every fixed $0<b<\frac{49}{200}$ we have
+$a+b<\frac12$, and \eqref{eq:padua-growth-fixed} gives, on either parity
+and hence over all integers,
+$\limsup\lamin(G^\Pa_{m,m-1})/\log m\le-16ab/[9\cdot4\log2\,J(a)]$.
+Letting $b\uparrow\frac{49}{200}$ in this scalar inequality proves the
+stated bound. No negative-corner estimate is subtracted and no boundary
+parameter family is assumed admissible.
+\end{proof}
+
+\begin{proposition}[A ceiling for the scalar carrier family]\label{prop:carrier-ceiling}
+% IDs: PD-T537
+For fixed $a,b>0$ with $a+b<\frac12$ put
+$\kappa_-(a,b)=16ab/[9\cdot4\log2\,J_-(a)]$, the modulus of the
+limiting normalized Rayleigh coefficient of the negative carrier in
+\eqref{eq:padua-growth-fixed}. Then
+\begin{equation}\label{eq:carrier-ceiling}
+ \kappa_-(a,b)<U_-:=\frac1{9\cdot4\log2\,(16\log2-9\log3)}<\frac1{24}.
+\end{equation}
+In particular $\sup\kappa_-\le U_-$ over this entire scalar parameter
+domain. This bounds only the limiting trial coefficients of the negative
+carriers of Theorem~\ref{thm:padua-carriers} and
+Proposition~\ref{prop:padua-odd-carriers} (either parity), including the
+closure of the parameter domain; it is not asserted to be optimal or
+attained, it does not bound the full minimum of the Gram form, linear
+combinations, other envelopes, or the positive carriers, and it gives no
+statement for parameters that depend on $m$.
+\end{proposition}
+\begin{proof}
+By the proof of Proposition~\ref{prop:carrier-improvement},
+$(\Delta^4h)'>0$ on $(2,\infty)$, and $\Delta^4h$ is continuous on
+$[2,\infty)$. Hence $\Delta^4h(q)>\Delta^4h(2)$ for $q>2$. Since
+$1/a>2$, we get $J_-(a)>J_{\mathrm{end}}:=\frac12\{4\log2+\Delta^4h(2)\}$.
+With $h(2)=4\log2$, $h(3)=9\log3$, $h(4)=32\log2$, $h(1)=h(0)=0$,
+\[
+ \Delta^4h(2)=28\log2-18\log3,\qquad
+ J_{\mathrm{end}}=16\log2-9\log3=\log(2^{16}/3^9)>0,
+\]
+because $2^{16}=65536>19683=3^9$. Moreover $ab<a(\frac12-a)\le\frac1{16}$, so
+$16ab/9<\frac19$ and
+$\kappa_-(a,b)<\{9\cdot4\log2\,J_{\mathrm{end}}\}^{-1}=U_-$.
+For the last inequality in \eqref{eq:carrier-ceiling}: $e^2<8$ gives
+$\log2>\frac23$, hence $4\log2>\frac83$; and $2^{16}>3^{10}$ gives
+$J_{\mathrm{end}}>\log3>1$ (as $e<3$). Thus
+$9\cdot4\log2\,J_{\mathrm{end}}>24$.
+\end{proof}
+
+For orientation only, $\kappa_{\mathrm{new}}\approx0.0296$ and
+$U_-\approx0.0333$; no claim is made that either is the best value within
+the family.
+
+\section{The corner operator and logarithmic limits}\label{sec:corner}
+
+The carriers of Section~\ref{sec:padua} give one-sided bounds of order
+$\log m$ for the extreme Gram eigenvalues. The mechanism behind them is
+visible in Theorem~\ref{thm:padua-weights}: close to a corner of the square
+the signed weights are of order $m^{-4}\log m$, with signs alternating along
+the checkerboard and with the coefficient $-16e_je_k(-1)^j$, while the
+weight majorant \eqref{eq:padua-weight-majorant} controls the whole grid.
+Polynomials of degree $<m$ resolve the nodes within a bounded index distance
+of a corner through a Bessel-type kernel. This suggests that, after division
+by $\log m$, the signed Gram form is asymptotically a fixed operator built
+from this kernel, so that the sharp constants are the extremes of its
+spectrum. This section makes that precise: a uniform reduction of the
+whole-grid signed form to an explicit logarithmic form
+(Theorem~\ref{thm:log-reduction}), the limit of the Gram kernel at a corner
+(Lemma~\ref{lem:corner-kernel}), and the compact limit operator with the
+convergence of the normalized extreme eigenvalues
+(Theorem~\ref{thm:corner-operator}). The proofs are in
+Appendix~\ref{app:corner}.
+
+Throughout this section $m\ge4$, $M=m+1$, $R=\lfloor m/2\rfloor$,
+$\theta_j=j\pi/m$ $(0\le j\le m)$, $\phi_k=k\pi/M$ $(0\le k\le M)$,
+$z_{jk}=(\cos\theta_j,\cos\phi_k)$, and sums over $(j,k)$ run over the pairs
+with $j+k$ even, the nodes of $\mathcal X_m$. We write $\varepsilon^{(m)}_j$
+and $\varepsilon^{(M)}_k$ for the endpoint factors of
+Section~\ref{sec:cc-recap}, $d_j=\min(j,m-j)$ and $d'_k=\min(k,M-k)$.
+Let $\mathcal P_{m-1}$ carry the norm $\|p\|^2=\int_{[-1,1]^2}p^2\dd x\dd y$,
+so that $Q_m^\Pa(p^2)=\sum_zw_zp(z)^2$ and $\lambda^\Pa_\pm(m,m-1)$
+(the extreme eigenvalues of $G^\Pa_{m,m-1}$) are the extreme values of
+$Q_m^\Pa(p^2)/\|p\|^2$. On $\mathcal P_{m-1}$ define the quadratic form
+\begin{equation}\label{eq:L-m}
+ L_m[p]=-\frac2{mMR^2}\sum_{j+k\text{ even}}
+   \varepsilon^{(m)}_j\varepsilon^{(M)}_k
+   \bigl[\cos(2R\theta_j)+\cos(2R\phi_k)\bigr]\,p(z_{jk})^2 .
+\end{equation}
+
+\begin{theorem}[Whole-grid reduction to the logarithmic form]\label{thm:log-reduction}
+% IDs: PD-T534
+For every $m\ge4$ and every $p\in\mathcal P_{m-1}$,
+\begin{align}
+ \bigl|Q_m^\Pa(p^2)-\log R\;L_m[p]\bigr|&\le4096\,\|p\|^2,\label{eq:log-error}\\
+ |L_m[p]|&\le120\,\|p\|^2.\label{eq:L-bound}
+\end{align}
+Let $\nu_-(m)$ and $\nu_+(m)$ be the infimum and supremum of
+$L_m[p]/\|p\|^2$ over $0\ne p\in\mathcal P_{m-1}$. Then
+$|\nu_\pm(m)|\le120$ and, for each of the two signs separately,
+\begin{equation}\label{eq:log-spectral}
+ \bigl|\lambda^\Pa_\pm(m,m-1)-\log R\,\nu_\pm(m)\bigr|\le4096,\qquad
+ \Bigl|\frac{\lambda^\Pa_\pm(m,m-1)}{\log m}-\nu_\pm(m)\Bigr|
+  \le\frac{4300}{\log m}.
+\end{equation}
+\end{theorem}
+
+This is a reduction to an explicit finite family, valid for both parities
+of $m$; it is not by itself convergence to a fixed limiting operator, and the
+constant $4300$ is an asymptotic transfer bound only. The next two
+statements supply the limit.
+
+Let $\mathsf P_k$ be the Legendre polynomial with $\mathsf P_k(1)=1$, and
+let $\mathcal K_{m-1}$ be the reproducing kernel of $\mathcal P_{m-1}$ in
+$L^2([-1,1]^2,\dd x\dd y)$ (unnormalized measure of mass four):
+\begin{equation}\label{eq:repro-kernel}
+ \mathcal K_{m-1}\bigl((x,y),(x',y')\bigr)=\sum_{\substack{k,l\ge0\\k+l\le m-1}}
+  (k+\tfrac12)(l+\tfrac12)\,\mathsf P_k(x)\mathsf P_k(x')\mathsf P_l(y)\mathsf P_l(y').
+\end{equation}
+Let $J_0(z)=\sum_{r\ge0}(-1)^r(z/2)^{2r}/(r!)^2$ be the Bessel function of
+order zero, $\mathcal T=\{(a,b):a,b\ge0,\ a+b\le1\}$, and
+\begin{equation}\label{eq:K-infty}
+ \mathcal K_\infty\bigl((u,v),(u',v')\bigr)=\int_{\mathcal T}ab\,J_0(au)J_0(au')J_0(bv)J_0(bv')\dd a\dd b .
+\end{equation}
+Note $\mathcal K_\infty((0,0),(0,0))=\int_{\mathcal T}ab=1/24$.
+
+\begin{lemma}[Corner kernel limit]\label{lem:corner-kernel}
+% IDs: PD-T535
+Let $m\ge1$ be an integer, $u,v,u',v'\ge0$, shifts
+$\varsigma_u,\varsigma_v,\varsigma_{u'},\varsigma_{v'}\in[0,1]$ and corner signs
+$\mathbf s=(s_1,s_2)$, $\mathbf s'=(s_1',s_2')\in\{-1,1\}^2$. Put
+\begin{align*}
+ z_m&=\Bigl(s_1\cos\frac u{m+\varsigma_u},\ s_2\cos\frac v{m+\varsigma_v}\Bigr),\\
+ z_m'&=\Bigl(s_1'\cos\frac {u'}{m+\varsigma_{u'}},\ s_2'\cos\frac {v'}{m+\varsigma_{v'}}\Bigr),
+\end{align*}
+$S=u+v+u'+v'$,
+$\Theta=\frac14(u^2+v^2+u'^2+v'^2)+\varsigma_uu+\varsigma_vv+\varsigma_{u'}u'+\varsigma_{v'}v'$.
+Then
+\begin{equation}\label{eq:kernel-limit}
+ \Bigl|m^{-4}\mathcal K_{m-1}(z_m,z_m')-\boldsymbol1_{\mathbf s=\mathbf s'}\,
+   \mathcal K_\infty\bigl((u,v),(u',v')\bigr)\Bigr|\le\frac{3+S+\Theta/4}m .
+\end{equation}
+In particular the convergence is uniform on every cube $[0,U]^4$, with the
+constant $C_U=3+5U+U^2/4$ for arbitrary shifts, and $C_U=3+\frac92U+U^2/4$
+for the shifts $\varsigma_u=\varsigma_{u'}=0$, $\varsigma_v=\varsigma_{v'}=1$ of the
+Padua meshes. Equal corners have limit $\mathcal K_\infty$ and different
+corners (including corners differing in both coordinates) have limit zero.
+\end{lemma}
+
+\begin{theorem}[The corner operator and the logarithmic limits]\label{thm:corner-operator}
+% IDs: PD-T536
+Let $\mathcal H=L^2(\mathcal T,ab\dd a\dd b)$ with
+$\langle f,g\rangle=\int_{\mathcal T}fg\,ab\dd a\dd b$, let
+\[
+ \psi_{jk}(a,b)=J_0(\pi ja)J_0(\pi kb),\qquad e_0=\tfrac12,\ e_j=1\ (j\ge1),
+\]
+and, for integers $K\ge1$, define the finite-rank selfadjoint operator
+\begin{equation}\label{eq:B-K}
+ B_K=-16\sum_{\substack{(1+j)(1+k)\le K\\ j+k\text{ even}}}
+      e_je_k(-1)^j\,\langle\cdot,\psi_{jk}\rangle\,\psi_{jk}.
+\end{equation}
+Then $B_K$ converges in operator norm to a compact selfadjoint operator
+$B$ on $\mathcal H$, and
+\begin{equation}\label{eq:B-tail}
+ \|B-B_K\|\le\frac{120}K .
+\end{equation}
+With $c_-=\inf\sigma(B)$ and $c_+=\sup\sigma(B)$, the Gram extremes of the
+exact signed Lebesgue Padua rule of mass four on $\mathcal P_{m-1}$ satisfy,
+as $m\to\infty$ through all integers,
+\begin{equation}\label{eq:corner-limits}
+ \frac{\lambda^\Pa_-(m,m-1)}{\log m}\longrightarrow c_-<0,\qquad
+ \frac{\lambda^\Pa_+(m,m-1)}{\log m}\longrightarrow c_+>0 .
+\end{equation}
+Both limits hold over all integers and hence separately along even and odd
+$m$, with exactly the same constants. The operator $B$ and the constants
+$c_\pm$ do not depend on the finite Padua problems. No decimal enclosure or
+closed elementary evaluation of $c_\pm$ is asserted here.
+\end{theorem}
+
+The operator $B$ is the limit of the single-corner blocks; it is never used
+for a Gram bound at finite $m$ in this paper. In \eqref{eq:B-K} the infinite
+operator is defined through the truncations and \eqref{eq:B-tail}, not through
+a rearrangement of a conditionally convergent series.
+
+\begin{remark}[Finite comparison]\label{rem:finite-comparison}
+Let $I_K=\{(r,s)\in\mathbb Z_{\ge0}^2:(1+r)(1+s)\le K\}$, $N_K=2|I_K|$,
+$U=\pi(K-1)$, $C_U=3+5U+U^2/4$ and
+\[
+ E_K(m)=\frac{N_K(32+24\pi K)}{8m}+24N_K\sqrt{C_U/m}.
+\]
+For all integers $K\ge1$ and $m\ge\max(4,2K)$, and for both signs,
+\begin{equation}\label{eq:finite-comparison}
+ \Bigl|\frac{\lambda^\Pa_\pm(m,m-1)}{\log m}-c_\pm\Bigr|
+ \le\frac{4300}{\log m}+\frac{240}K+E_K(m).
+\end{equation}
+These coarse errors prove convergence with an explicit rate for each $K$;
+they do not certify the finite range in which the limit is a good
+approximation, and no such claim is made. The proof is at the end of
+Appendix~\ref{app:corner}.
+\end{remark}
+
+\begin{remark}[The two active corners]\label{rem:two-corners}
+Only two of the four corners of the square carry a nonvanishing limit
+coefficient: the corners $(\pm1,1)$ for even $m$ and $(1,\pm1)$ for odd $m$.
+Their limiting Gram blocks coincide, because the kernel limit
+\eqref{eq:K-infty} does not depend on the corner signs, and their
+coefficients are the same. Hence, for each fixed $K$, the nonzero
+eigenvalues of the finite-rank form obtained from \eqref{eq:L-m} by keeping
+the nodes within $(1+d_j)(1+d'_k)\le K$ converge, counted with multiplicity,
+to those of $B_K\oplus B_K$ (Lemma~\ref{lem:finite-rank}). The two active
+corners therefore double the multiplicity of each limiting eigenvalue,
+not its value, and $c_\pm$ are the extreme points of the spectrum of the
+single-corner operator $B$. The factor $16=2\cdot8$ in \eqref{eq:B-K} already
+contains the two strip contributions $\cos(2R\theta_j)$ and
+$\cos(2R\phi_k)$ of \eqref{eq:L-m}; there is no further factor two from the
+corners.
+\end{remark}
+
+\section{A uniform signed hyperinterpolation norm}\label{sec:uniform-norm}
 
 For a Lebesgue-orthonormal basis $P_1,\ldots,P_d$ of $\mathcal P_n$,
 define the direct signed coefficient operator
@@ -643,15 +1016,16 @@ for $p\in\mathcal P_{m-1}$. Since $\sum\rho_z=1$,
 \end{equation}
 
 Let $v_z=\rho_zg(x_z)g(y_z)\ge0$, and put $\alpha=\pi-4/3$.
-The CC interior weight estimate used in
-Lemma~\ref{lem:weight-comparison}, with its displayed error estimate,
-gives $w_{N,j}^{\CC}\ge\alpha\sin(j\pi/N)/N$.
-The bound has zero right side at endpoints as well. Hence
+Lemma~\ref{lem:weight-comparison}\,(iii) gives
+$w_{N,j}^{\CC}\ge\alpha\sin(j\pi/N)/N$ for $1\le j\le N-1$.
+The bound has zero right side at the endpoints, where $w_{N,j}^{\CC}>0$ by
+part~(iv) of the lemma. Hence
 \[
  v_{jk}\le\frac{2\pi^2}{\alpha^2}w_{m,j}^{\CC}w_{m+1,k}^{\CC}.
 \]
-Enlarge the sum to the positive tensor grid and apply the CC upper
-bound twice to obtain
+Enlarge the sum to the positive tensor grid and apply the bound
+$\lambda_+<2$ of Proposition~\ref{prop:cc-inputs} twice, once in each
+coordinate, to obtain
 $\sum_zv_zp(z)^2\le8\pi^2\|p\|_2^2/\alpha^2$.
 Reflection on the odd one of the two meshes cancels the alternating
 sine sum, while
@@ -794,13 +1168,483 @@ supplies a separate finite certificate, without claiming the first crossing.
 Sharp direct-operator
 norms and endpoint fixed-function convergence also remain separate.
 
-\paragraph{Reproducibility and claim identification.}
+\paragraph{Reproducibility and claim identification}
 The accompanying README gives exact compilation and numerical commands,
 artifact hashes, and links to the theory and evidence. The final
 \id{PD-T}/\id{PD-N} identifiers in theorem headings refer to the durable
 repository claims. These identifiers do not confer publication or audit
 readiness. Analytic proofs of the central signed Padua statements have
 been included here; no private manuscript is a mathematical dependency.
+
+\appendix
+\renewcommand{\thesection}{A}
+\section{Proofs for the corner operator}\label{app:corner}
+
+Throughout, the notation of Section~\ref{sec:corner} is in force. Let
+$t_0=2$, $t_a=-4/(4a^2-1)$ for $a\ge1$ and
+$S_R(t,s)=\sum_{a,b\ge0,\ a+b\le R}t_at_b\cos(2at)\cos(2bs)$, as in the proof
+of Theorem~\ref{thm:padua-weights}. Recall from that proof that
+$f(t)=\sum_{a\ge0}t_a\cos(2at)=\pi\sin t$ on $[0,\pi]$, that
+$T_R(t)=\sum_{a>R}t_a\cos(2at)$ satisfies $|T_R|\le\sum_{a>R}|t_a|=2/(2R+1)\le1/R$,
+and that the identity \eqref{eq:padua-triangle} holds for every integer
+$R\ge2$.
+
+\subsection{Proof of Theorem~\ref{thm:log-reduction}}\label{app:reduction}
+
+\paragraph{Weights for both parities}
+Since $h_a=0$ for odd $a$ and $c_{2a}h_{2a}=t_a$ for $a\ge0$, only even
+indices contribute to \eqref{eq:padua-density}, and
+$T_m(x_j)=\cos(m\theta_j)$. Hence for every $m\ge2$, with
+$R=\lfloor m/2\rfloor$,
+\begin{equation}\label{eq:weight-both}
+ w_{jk}=\frac{2\varepsilon^{(m)}_j\varepsilon^{(M)}_k}{mM}
+ \bigl\{S_R(\theta_j,\phi_k)-2h_m\cos(m\theta_j)\bigr\},
+\end{equation}
+where $h_m=2/(1-m^2)$ for even $m$ and $h_m=0$ for odd $m$.
+In particular $R^2|2h_m|=m^2/(m^2-1)<2$ for even $m$, and $h_m=0$ for odd $m$.
+
+\begin{lemma}[Triangular tail, uniformly on the square]\label{lem:triangular-tail}
+For an integer $R\ge2$ and $t,s\in[0,\pi]$ put $\tau=\min(t,\pi-t)$,
+$\sigma=\min(s,\pi-s)$ and
+$V_R(t,s)=\sum_{1\le a,b\le R,\ a+b>R}t_at_b\cos(2at)\cos(2bs)$. Then
+\[
+ \bigl|R^2V_R(t,s)-\log R\,[\cos(2Rt)+\cos(2Rs)]\bigr|\le53+\tfrac83R(\tau+\sigma).
+\]
+\end{lemma}
+\begin{proof}
+The cosines are unchanged if $t,s$ are replaced by $\tau,\sigma$.
+Let $L=\lfloor R/2\rfloor$, so $R/4\le L\le R/2$ for $R\ge2$. The index
+pairs split into three disjoint classes: $a\le L$ (then $b>R-a\ge R/2$),
+$b\le L$, and $a,b\ge L+1$; indeed $a,b\le L$ would give $a+b\le R$.
+
+\emph{First strip} ($1\le a\le L$, $R-a<b\le R$; exactly $a$ values of $b$,
+all $>R/2$). For such $b$, $b^2-\frac14\ge\frac3{16}R^2$ (as $R\ge2$) and
+$R^2-b^2\le2Ra$. Hence
+\[
+ |R^2t_b+1|=\frac{R^2-b^2+1/4}{b^2-1/4}\le\frac{32a}{3R}+\frac4{3R^2}\le\frac{12a}R ,
+\]
+using $a\ge1$. Also, since $|\cos x-1|\le|x|$ and $|\cos x-\cos y|\le|x-y|$,
+$|\cos(2a\tau)\cos(2b\sigma)-\cos(2R\sigma)|\le2a\tau+2(R-b)\sigma\le2a(\tau+\sigma)$.
+Therefore
+$|R^2t_b\cos(2a\tau)\cos(2b\sigma)+\cos(2R\sigma)|\le12a/R+2a(\tau+\sigma)$.
+With $|t_a|\le4/(3a^2)$, the $R^2$-weighted sum of the first strip differs
+from $-\cos(2R\sigma)\sum_{a=1}^La\,t_a$ by at most
+\[
+ \sum_{a=1}^La|t_a|\Bigl[\frac{12a}R+2a(\tau+\sigma)\Bigr]
+ \le\frac43L\Bigl[\frac{12}R+2(\tau+\sigma)\Bigr]\le8+\frac43R(\tau+\sigma).
+\]
+Next $-a\,t_a=4a/(4a^2-1)=1/a+1/[a(4a^2-1)]$, and
+$0\le\sum_{a\ge1}1/[a(4a^2-1)]\le\frac13\sum_{a\ge1}a^{-3}\le\frac12$
+(integral test). With $0\le H_L-\log L\le1$ and
+$\log2\le\log(R/L)\le\log4$ we get $|-\sum_{a\le L}at_a-\log R|<4$.
+So the first strip differs from $\log R\cos(2Rs)$ by at most
+$12+\frac43R(\tau+\sigma)$. Interchanging the roles of $a$ and $b$, the
+second strip differs from $\log R\cos(2Rt)$ by the same bound.
+
+\emph{Middle} ($a,b\ge L+1>R/2$): $|t_a|,|t_b|\le16/(3R^2)$ and there are at
+most $R^2$ pairs, so $R^2$ times the middle part has modulus at most
+$256/9<29$. Adding, $12+12+29=53$.
+\end{proof}
+
+\begin{lemma}[CC comparison on the Padua meshes]\label{lem:tensor-cc}
+Let $m\ge4$ and let $\alpha_j$ ($0\le j\le m$) and $\beta_k$
+($0\le k\le M$) be the Clenshaw--Curtis weights of the meshes with $m$ and $M$
+intervals. Then $\alpha_j\ge(1+d_j)/m^2$, $\beta_k\ge(1+d'_k)/M^2$, and for every
+$p\in\mathcal P_{m-1}$
+\begin{equation}\label{eq:tensor-bound}
+ \sum_{j=0}^m\sum_{k=0}^M\alpha_j\beta_k\,p(z_{jk})^2\le4\|p\|^2 .
+\end{equation}
+Moreover $mM/R^2\le15/2$.
+\end{lemma}
+\begin{proof}
+The lower bounds are Lemma~\ref{lem:weight-comparison}\,(iv), which also gives
+$\alpha_j,\beta_k>0$. Fix $j$. As a polynomial in $y$, $p(x_j,\cdot)$ has degree
+$\le m-1<M$, so Proposition~\ref{prop:cc-inputs} gives
+$\sum_k\beta_kp(x_j,y_k)^2\le2\int_{-1}^1p(x_j,y)^2\dd y$. Multiply by
+$\alpha_j>0$ and sum over $j$. For each fixed $y$, $p(\cdot,y)$ has degree
+$\le m-1<m$ in $x$, so again by Proposition~\ref{prop:cc-inputs}
+$\sum_j\alpha_jp(x_j,y)^2\le2\int_{-1}^1p(x,y)^2\dd x$. Integrating in $y$
+proves \eqref{eq:tensor-bound}. Finally, $mM/R^2=4+2/R\le5$ for $m=2R$ and
+$mM/R^2=4+6/R+2/R^2\le15/2$ for $m=2R+1$, $R\ge2$.
+\end{proof}
+
+\begin{lemma}[Tail estimate]\label{lem:tail-estimate}
+Let $m\ge4$, $K\ge1$, and let $\mathcal N$ be any set of nodes $z_{jk}$ with
+$(1+d_j)(1+d'_k)\ge K$. Then for every $p\in\mathcal P_{m-1}$
+\[
+ \frac4{mMR^2}\sum_{z_{jk}\in\mathcal N}\varepsilon^{(m)}_j\varepsilon^{(M)}_k\,p(z_{jk})^2
+ \le\frac{120}K\|p\|^2 .
+\]
+\end{lemma}
+\begin{proof}
+By Lemma~\ref{lem:tensor-cc}, $(1+d_j)(1+d'_k)\le m^2M^2\alpha_j\beta_k$, so
+$1\le m^2M^2\alpha_j\beta_k/K$ on $\mathcal N$. With
+$\varepsilon^{(m)}_j\varepsilon^{(M)}_k\le1$, the left side is at most
+\[
+ \frac{4mM}{KR^2}\sum_{j,k}\alpha_j\beta_kp(z_{jk})^2
+ \le\frac{4mM}{KR^2}\cdot4\|p\|^2\le\frac{120}K\|p\|^2,
+\]
+by \eqref{eq:tensor-bound} and $mM/R^2\le15/2$.
+\end{proof}
+
+\paragraph{Proof of \eqref{eq:log-error}, \eqref{eq:L-bound}, \eqref{eq:log-spectral}}
+Let $R\ge2$. Multiplying \eqref{eq:padua-triangle} by $R^2$ and using
+Lemma~\ref{lem:triangular-tail}, $|f(t)|\le\pi\tau$, $|f(s)|\le\pi\sigma$ and
+$|T_R|\le1/R$,
+\begin{equation}\label{eq:S-remainder}
+ \bigl|R^2S_R(t,s)+\log R[\cos(2Rt)+\cos(2Rs)]\bigr|
+ \le\pi^2R^2\tau\sigma+(\pi+\tfrac83)R(\tau+\sigma)+54 .
+\end{equation}
+At a node $(t,s)=(\theta_j,\phi_k)$ we have $\tau=\pi d_j/m$, $\sigma=\pi d'_k/M$
+and $R\le m/2<M/2$, so $R\tau\le\pi d_j/2$, $R\sigma\le\pi d'_k/2$, and the right
+side of \eqref{eq:S-remainder} is at most
+$\frac{\pi^4}4d_jd'_k+\frac{\pi(\pi+8/3)}2(d_j+d'_k)+54\le54(1+d_j)(1+d'_k)=:54D_{jk}$,
+because $\pi^4/4<25$ and $\pi(\pi+8/3)/2<10$. Let
+$\ell_{jk}$ be the coefficient of $p(z_{jk})^2$ in \eqref{eq:L-m}. By
+\eqref{eq:weight-both},
+\begin{multline*}
+ w_{jk}-\log R\,\ell_{jk}=\frac{2\varepsilon^{(m)}_j\varepsilon^{(M)}_k}{mMR^2}
+ \bigl\{R^2S_R+\log R[\cos(2R\theta_j)+\cos(2R\phi_k)]\\
+ -2R^2h_m\cos(m\theta_j)\bigr\},
+\end{multline*}
+so, as $R^2|2h_m|<2\le2D_{jk}$,
+\[
+ |w_{jk}-\log R\,\ell_{jk}|\le\frac{112\,\varepsilon^{(m)}_j\varepsilon^{(M)}_kD_{jk}}{mMR^2}
+ \le112\cdot\frac{mM}{R^2}\,\alpha_j\beta_k\le840\,\alpha_j\beta_k ,
+\]
+by Lemma~\ref{lem:tensor-cc} ($D_{jk}/(m^2M^2)\le\alpha_j\beta_k$). Multiplying by
+$p(z_{jk})^2$, summing over the retained nodes, enlarging the sum to all
+$(j,k)$ and using \eqref{eq:tensor-bound},
+$|Q_m^\Pa(p^2)-\log R\,L_m[p]|\le840\cdot4\|p\|^2=3360\|p\|^2\le4096\|p\|^2$.
+This is \eqref{eq:log-error} (the constants are not optimized).
+Next, $|\ell_{jk}|\le4\varepsilon^{(m)}_j\varepsilon^{(M)}_k/(mMR^2)$, and every node has
+$(1+d_j)(1+d'_k)\ge1$, so Lemma~\ref{lem:tail-estimate} with $K=1$ gives
+\eqref{eq:L-bound}. Taking the infimum and the supremum of
+\eqref{eq:log-error} over the unit sphere of $\mathcal P_{m-1}$, and using
+$\log R>0$, gives the first inequality of \eqref{eq:log-spectral}, and
+$|\nu_\pm|\le120$. Since $m/R\le5/2$,
+\begin{align*}
+ \Bigl|\frac{\lambda^\Pa_\pm}{\log m}-\nu_\pm\Bigr|
+ &\le\frac{|\lambda^\Pa_\pm-\log R\,\nu_\pm|+|\nu_\pm|\log(m/R)}{\log m}\\
+ &\le\frac{4096+120\log(5/2)}{\log m}<\frac{4300}{\log m}.\qquad\qed
+\end{align*}
+
+\subsection{Proof of Lemma~\ref{lem:corner-kernel}}\label{app:kernel}
+
+\paragraph{Step 1: classical facts, with proofs}
+Define $\mathsf P_k$ by Rodrigues' formula
+$\mathsf P_k(x)=(2^kk!)^{-1}\frac{\mathrm d^k}{\mathrm dx^k}(x^2-1)^k$.
+Expanding $(x^2-1)^k$ binomially and differentiating,
+\[
+ \mathsf P_k(x)=2^{-k}\sum_{r\le k/2}(-1)^r\frac{(2k-2r)!}{r!\,(k-r)!\,(k-2r)!}\,x^{k-2r}.
+\]
+This is the coefficient of $z^k$ in
+$(1-z(2x-z))^{-1/2}=\sum_n\binom{2n}n4^{-n}z^n(2x-z)^n$ (put $r=k-n$). Thus
+\begin{equation}\label{eq:legendre-gen}
+ \sum_{k\ge0}\mathsf P_k(x)z^k=(1-2xz+z^2)^{-1/2}.
+\end{equation}
+Consequently $\mathsf P_k(1)=1$ and $\mathsf P_k(-x)=(-1)^k\mathsf P_k(x)$.
+Integration by parts $k$ times shows that $\mathsf P_k$ is orthogonal to
+polynomials of lower degree on $[-1,1]$, since the first $k-1$ derivatives of
+$(x^2-1)^k$ vanish at $\pm1$. Its leading coefficient is
+$(2k)!/[2^k(k!)^2]$, and
+$\int_{-1}^1x^k\mathsf P_k\dd x=2^{-k}\int_{-1}^1(1-x^2)^k\dd x
+=2^{-k}2^{2k+1}(k!)^2/(2k+1)!$ (integration by parts $k$ times, and the
+recurrence for the Beta integral), so that
+$\int_{-1}^1\mathsf P_k^2\dd x=2/(2k+1)$. Hence the functions
+$\sqrt{(k+\frac12)(l+\frac12)}\,\mathsf P_k(x)\mathsf P_l(y)$, $k+l\le m-1$, form
+an orthonormal basis of $\mathcal P_{m-1}$ in $L^2([-1,1]^2)$, and
+\eqref{eq:repro-kernel} is its reproducing kernel.
+
+For $x=\cos t$ and $\mathsf q=|\sin t|$ the geometric series gives, for small $|z|$,
+$(1-zx-iz\mathsf q\cos\varphi)^{-1}=(1-zx)^{-1}\sum_n[iz\mathsf q\cos\varphi/(1-zx)]^n$.
+Since $\frac1\pi\int_0^\pi\cos^{2r}\varphi\dd\varphi=\binom{2r}r4^{-r}$ and the odd
+moments vanish,
+\begin{align*}
+ \sum_{k\ge0}z^k\frac1\pi\int_0^\pi(x+i\mathsf q\cos\varphi)^k\dd\varphi
+ &=\frac1{1-zx}\Bigl(1+\frac{z^2\mathsf q^2}{(1-zx)^2}\Bigr)^{-1/2}\\
+ &=(1-2xz+z^2)^{-1/2}.
+\end{align*}
+Comparison with \eqref{eq:legendre-gen}, and $\varphi\mapsto\pi-\varphi$ to
+fix the sign of $\sin t$, give (Laplace's integral), for every real $t$,
+\begin{equation}\label{eq:laplace}
+ \mathsf P_k(\cos t)=\frac1\pi\int_0^\pi(\cos t+i\sin t\cos\varphi)^k\dd\varphi.
+\end{equation}
+Likewise, the exponential series and the same moments give
+\begin{equation}\label{eq:bessel-rep}
+ J_0(y)=\frac1\pi\int_0^\pi e^{iy\cos\varphi}\dd\varphi=\frac1\pi\int_0^\pi\cos(y\cos\varphi)\dd\varphi.
+\end{equation}
+Since $|\cos t+i\sin t\cos\varphi|\le1$, we get $|\mathsf P_k|\le1$ on $[-1,1]$,
+and $|J_0|\le1$, $|J_0'|\le1$ on $\R$ (differentiate \eqref{eq:bessel-rep}).
+
+\paragraph{Step 2: uniform approximation for $k\le m$}
+Fix $c\in[-1,1]$ and let $X$ take the values $\pm1$ with probabilities
+$(1\pm c)/2$, so $\mathbb EX=c$ and $\mathbb E(X-c)^2=1-c^2$. From
+$|e^{iy}-1-iy|\le y^2/2$,
+\[
+ \bigl|\cos t+ic\sin t-e^{itc}\bigr|=\bigl|\mathbb E\,e^{itc}\bigl(e^{it(X-c)}-1-it(X-c)\bigr)\bigr|
+ \le\tfrac{t^2}2(1-c^2).
+\]
+Both $\cos t+ic\sin t$ and $e^{itc}$ have modulus at most one, so the difference
+of their $k$-th powers is at most $k$ times the difference. Taking
+$c=\cos\varphi$, using \eqref{eq:laplace}, \eqref{eq:bessel-rep} (with $y=kt$) and
+$\frac1\pi\int_0^\pi\sin^2\varphi\dd\varphi=\frac12$,
+\begin{equation}\label{eq:legendre-bessel}
+ |\mathsf P_k(\cos t)-J_0(kt)|\le kt^2/4\qquad(k\ge0,\ t\in\R),
+\end{equation}
+which at $k=0$ is the identity $0=0$. For $u\ge0$, $\varsigma\in[0,1]$ and
+$0\le k\le m$, put $t=u/(m+\varsigma)$. Then \eqref{eq:legendre-bessel} and
+$|J_0'|\le1$ give
+\begin{equation}\label{eq:uniform-approx}
+ \bigl|\mathsf P_k(\cos t)-J_0(ku/m)\bigr|\le\frac{ku^2}{4(m+\varsigma)^2}
+ +\frac{ku\varsigma}{m(m+\varsigma)}\le\frac{u^2/4+\varsigma u}m .
+\end{equation}
+
+\paragraph{Step 3: reduction to a triangular sum}
+By parity, $\mathsf P_k(s_1\cos t)=s_1^k\mathsf P_k(\cos t)$. Let $\xi_1=0$ if
+$s_1=s_1'$ and $\xi_1=1$ otherwise, and $\xi_2=0$ if $s_2=s_2'$ and $\xi_2=1$
+otherwise. With $w_{kl}=(k+\frac12)(l+\frac12)/m^2$,
+\[
+ m^{-4}\mathcal K_{m-1}(z_m,z_m')=m^{-2}\sum_{k+l\le m-1}w_{kl}(-1)^{\xi_1 k+\xi_2 l}\,
+ \Pi_{kl},
+\]
+where $\Pi_{kl}$ is the product of the four factors
+$\mathsf P_k(\cos\frac u{m+\varsigma_u})$, $\mathsf P_k(\cos\frac{u'}{m+\varsigma_{u'}})$,
+$\mathsf P_l(\cos\frac v{m+\varsigma_v})$, $\mathsf P_l(\cos\frac{v'}{m+\varsigma_{v'}})$.
+Let $F(a,b)=ab\,J_0(au)J_0(au')J_0(bv)J_0(bv')$. All factors involved have
+modulus at most one, so \eqref{eq:uniform-approx} and telescoping give
+\[
+ \Bigl|\Pi_{kl}-J_0(\tfrac kmu)J_0(\tfrac kmu')J_0(\tfrac lmv)J_0(\tfrac lmv')\Bigr|
+ \le\Theta/m .
+\]
+For $k+l\le m-1$ we have $(k+\frac12)+(l+\frac12)\le m$, hence
+$0\le w_{kl}\le\frac14$; the number of terms is $m(m+1)/2\le m^2$; and
+$|w_{kl}-\frac km\frac lm|=\frac{k+l}{2m^2}+\frac1{4m^2}\le\frac1{2m}$. Hence
+\begin{equation}\label{eq:kernel-reduction}
+ \Bigl|m^{-4}\mathcal K_{m-1}(z_m,z_m')-m^{-2}\sum_{k+l\le m-1}(-1)^{\xi_1 k+\xi_2 l}
+ F(\tfrac km,\tfrac lm)\Bigr|\le\frac{\Theta/4+1/2}m .
+\end{equation}
+
+\paragraph{Step 4: equal corners}
+On $[0,1]^2$, $|F|\le1$, $|\partial_aF|\le1+u+u'$ and $|\partial_bF|\le1+v+v'$
+(use $|J_0|,|J_0'|\le1$). Let $\mathcal U_m$ be the union of the cells
+$[\frac km,\frac{k+1}m]\times[\frac lm,\frac{l+1}m]$ with $k+l\le m-1$. It
+contains $\mathcal T$ up to a null set, has area $(m+1)/(2m)\le1$, and
+$\mathcal U_m\setminus\mathcal T$ has area $1/(2m)$. On each cell, $F$ differs from
+$F(\frac km,\frac lm)$ by at most $(2+S)/m$; there are at most $m^2$ cells, each of
+area $m^{-2}$, so
+$|m^{-2}\sum_{k+l\le m-1}F(\frac km,\frac lm)-\int_{\mathcal U_m}F|\le(2+S)/m$.
+Since $|F|\le1$, $|\int_{\mathcal U_m\setminus\mathcal T}F|\le1/(2m)$, whence
+\begin{equation}\label{eq:riemann}
+ \Bigl|m^{-2}\sum_{k+l\le m-1}F(\tfrac km,\tfrac lm)-\int_{\mathcal T}F\Bigr|\le\frac{5/2+S}m .
+\end{equation}
+For $\xi_1=\xi_2=0$, \eqref{eq:kernel-reduction} and \eqref{eq:riemann}
+give \eqref{eq:kernel-limit}.
+
+\paragraph{Step 5: different corners}
+Let $\xi_1=1$. For fixed $l$ pair successive terms of
+$\sum_{k=0}^{m-1-l}(-1)^kF(\frac km,\frac lm)$. By the derivative bound each
+complete pair has modulus at most $(1+u+u')/m$; there are at most $m$ pairs, and
+a possible unpaired last term has modulus at most one. So every row has modulus
+at most $2+u+u'$, also after multiplication by the row sign $(-1)^{\xi_2 l}$.
+Summing over the $m$ rows and dividing by $m^2$,
+\begin{equation}\label{eq:alternating}
+ \Bigl|m^{-2}\sum_{k+l\le m-1}(-1)^{k+\xi_2 l}F(\tfrac km,\tfrac lm)\Bigr|
+ \le\frac{2+u+u'}m .
+\end{equation}
+If $\xi_1=0$ and $\xi_2=1$ use columns and obtain $(2+v+v')/m$. With
+\eqref{eq:kernel-reduction}, the distance from $m^{-4}\mathcal K_{m-1}(z_m,z_m')$
+to $0$ is at most $(\Theta/4+\frac52+S)/m\le(3+S+\Theta/4)/m$. This proves
+\eqref{eq:kernel-limit}. The normalization is
+$\int_{\mathcal T}ab\dd a\dd b=\frac12\int_0^1a(1-a)^2\dd a=\frac1{24}$. On the cube
+$[0,U]^4$, $S\le4U$ and $\Theta\le U^2+4U$ (respectively $U^2+2U$ for the
+Padua shifts), which gives the constants $C_U$. \qed
+
+\subsection{Proof of Theorem~\ref{thm:corner-operator} and Remark~\ref{rem:finite-comparison}}\label{app:operator}
+
+Fix $K\ge1$ and an integer $m\ge\max(4,2K)$. Let
+$I_K=\{(r,s)\in\mathbb Z_{\ge0}^2:(1+r)(1+s)\le K\}$, so $r,s\le K-1$ and
+$|I_K|\le K^2$.
+
+\paragraph{Step 1: local indices, coefficients, active corners}
+Since $K-1<m/2$, the nodes with $(1+d_j)(1+d'_k)\le K$ form four disjoint
+corner patches. A \emph{patch node} is a symbol $\zeta=(\delta_x,\delta_y;r,s)$,
+with $\delta_x,\delta_y\in\{0,1\}$ and $(r,s)\in I_K$, standing for the node with
+$j=r$ if $\delta_x=0$ and $j=m-r$ if $\delta_x=1$, and with $k=s$ if
+$\delta_y=0$ and $k=M-s$ if $\delta_y=1$. Then $d_j=r$, $d'_k=s$,
+$\varepsilon^{(m)}_j=e_r$, $\varepsilon^{(M)}_k=e_s$, and
+$z_{m,\zeta}=\bigl((-1)^{\delta_x}\cos\frac{\pi r}m,\,(-1)^{\delta_y}\cos\frac{\pi s}M\bigr)$.
+The node is retained iff $r+s+m\delta_x+M\delta_y$ is even; this depends
+only on the parity of $m$. Since $2R$ is even, the reflections
+$j\mapsto m-j$, $k\mapsto M-k$ leave $\cos(2R\theta_j)$ and $\cos(2R\phi_k)$
+unchanged, so the coefficient of $p(z_{m,\zeta})^2$ in \eqref{eq:L-m} is
+$m^{-4}\gamma_m(\zeta)$, where
+\[
+ \gamma_m(\zeta)=-q_m\,e_re_s\Bigl[\cos\frac{2R\pi r}m+\cos\frac{2R\pi s}M\Bigr],\qquad
+ q_m=\frac{2m^3}{MR^2}.
+\]
+As $m\to\infty$, $q_m\to8$ and the two cosines tend to $(-1)^r$ and $(-1)^s$.
+For a retained node with $r+s$ even, $\gamma_m(\zeta)\to\gamma_\infty(\zeta):=-16e_re_s(-1)^r$;
+for $r+s$ odd the two limits cancel and $\gamma_m(\zeta)\to\gamma_\infty(\zeta):=0$.
+A retained node has $r+s\equiv m\delta_x+M\delta_y\pmod2$. So the corners
+containing retained nodes with $r+s$ even (the \emph{active corners}) are those
+with $m\delta_x+M\delta_y$ even: for even $m$ these are $\delta_y=0$, that is the
+corners $(\pm1,1)$ of the square, and for odd $m$ they are $\delta_x=0$, the
+corners $(1,\pm1)$. The corner $(1,1)$ is active for both parities. In the two
+inactive corners every retained node has $r+s$ odd and limit coefficient zero.
+Each active corner retains exactly the nodes with $(r,s)\in I_K$, $r+s$ even, and each
+inactive corner those with $r+s$ odd, so the total number of retained patch nodes
+is $N_K=2|I_K|$.
+
+We also need quantitative control. For $m\ge4$: $q_m=8m/(m+1)$ for even $m$, and
+$q_m-8=8(m^2+m-1)/[(m+1)(m-1)^2]\in(0,16/m]$ for odd $m\ge5$ (the upper bound
+is equivalent to $m^3-3m^2-m+2\ge0$). Hence $|q_m-8|\le16/m$. The first cosine
+differs from $(-1)^r$ by at most $\pi r/m$ and the second from $(-1)^s$ by at
+most $2\pi s/m$ (as $M-2R\in\{1,2\}$). For an active node this gives
+$|\gamma_m-\gamma_\infty|\le[16\cdot2+8\pi(r+2s)]/m\le(32+24\pi K)/m$. For an
+inactive node, $|\gamma_m|\le q_m\cdot3\pi(K-1)/m\le(8+16/m)\,3\pi(K-1)/m
+\le24\pi K/m$, using $m\ge2K$. Therefore the diagonal matrices
+$C_m=\diag(\gamma_m(\zeta))$ and $C_\infty=\diag(\gamma_\infty(\zeta))$, on any
+set of patch nodes, satisfy
+\begin{equation}\label{eq:coeff-diff}
+ \|C_m-C_\infty\|\le\beta_K(m):=\frac{32+24\pi K}m,\qquad\|C_\infty\|\le16 .
+\end{equation}
+
+\paragraph{Step 2: finite Gram kernels and finite-rank spectral transfer}
+Let $\mathcal H_m=\mathcal P_{m-1}$ with the norm $\|\cdot\|$, and for a patch node
+$\zeta$ let $v_{m,\zeta}=m^{-2}\mathcal K_{m-1}(\cdot,z_{m,\zeta})\in\mathcal H_m$.
+By the reproducing property $p(z_{m,\zeta})=m^2\langle p,v_{m,\zeta}\rangle$, so
+for a set $\mathcal Z$ of retained patch nodes
+\[
+ L^{\mathcal Z}_m[p]:=m^{-4}\sum_{\zeta\in\mathcal Z}\gamma_m(\zeta)p(z_{m,\zeta})^2
+ =\sum_{\zeta\in\mathcal Z}\gamma_m(\zeta)\langle p,v_{m,\zeta}\rangle^2
+\]
+is the part of \eqref{eq:L-m} coming from $\mathcal Z$, and
+$G_m(\zeta,\zeta')=\langle v_{m,\zeta},v_{m,\zeta'}\rangle=m^{-4}\mathcal K_{m-1}(z_{m,\zeta},z_{m,\zeta'})$.
+Lemma~\ref{lem:corner-kernel} applies with $u=\pi r$, $v=\pi s$, $\varsigma_u=0$,
+$\varsigma_v=1$ and the corner signs $((-1)^{\delta_x},(-1)^{\delta_y})$; as
+$u,v\le U:=\pi(K-1)$, it gives
+\begin{equation}\label{eq:gram-diff}
+ |G_m(\zeta,\zeta')-G_\infty(\zeta,\zeta')|\le C_U/m,\qquad
+ G_\infty(\zeta,\zeta')=\boldsymbol1_{(\delta_x,\delta_y)=(\delta_x',\delta_y')}\,
+ \langle\psi_{rs},\psi_{r's'}\rangle ,
+\end{equation}
+because $\mathcal K_\infty((\pi r,\pi s),(\pi r',\pi s'))=\langle\psi_{rs},\psi_{r's'}\rangle$.
+
+\begin{lemma}[Finite-rank transfer]\label{lem:finite-rank}
+Let $m\ge\max(4,2K)$ have a fixed parity, let $\mathcal Z$ be a set of retained patch
+nodes for that parity, $N=|\mathcal Z|\le N_K$, and, for a corner
+$c=(\delta_x,\delta_y)$, $\mathcal Z_{c}=\{(r,s):(c;r,s)\in\mathcal Z\}$. Let
+$B^{\mathcal Z}=\bigoplus_cB^{\mathcal Z_c}$ on $\mathcal H^{\oplus4}$, where
+$B^{\mathcal Z_c}=\sum_{(r,s)\in\mathcal Z_c}\gamma_\infty(c;r,s)\langle\cdot,\psi_{rs}\rangle\psi_{rs}$
+acts on $\mathcal H$. Let $\nu^{\mathcal Z}_-(m)$ and $\nu^{\mathcal Z}_+(m)$ be the
+infimum and the supremum of $L^{\mathcal Z}_m[p]/\|p\|^2$ over $0\ne p\in\mathcal H_m$. Then
+\[
+ \bigl|\nu^{\mathcal Z}_-(m)-\inf\sigma(B^{\mathcal Z})\bigr|\le E_K(m),\qquad
+ \bigl|\nu^{\mathcal Z}_+(m)-\sup\sigma(B^{\mathcal Z})\bigr|\le E_K(m),
+\]
+with $E_K$ as in Remark~\ref{rem:finite-comparison}. Moreover, the ordered
+eigenvalues of the $N\times N$ matrix $X_m=G_m^{1/2}C_mG_m^{1/2}$ differ from
+those of $X_\infty=G_\infty^{1/2}C_\infty G_\infty^{1/2}$ by at most $E_K(m)$,
+the nonzero eigenvalues of $L_m^{\mathcal Z}$ are those of $X_m$, and the nonzero
+eigenvalues of $B^{\mathcal Z}$ are those of $X_\infty$.
+\end{lemma}
+\begin{proof}
+Let $V_m:\R^N\to\mathcal H_m$ send the unit vector of $\zeta$ to $v_{m,\zeta}$. Then
+$L_m^{\mathcal Z}=V_mC_mV_m^*$ and $V_m^*V_m=G_m\ge0$. By the polar decomposition
+$V_m=W_mG_m^{1/2}$ with a partial isometry $W_m$, the nonzero eigenvalues of
+$V_mC_mV_m^*=W_m(G_m^{1/2}C_mG_m^{1/2})W_m^*$ are those of $X_m$. In the same way,
+with $V_\infty:\R^N\to\mathcal H^{\oplus4}$ sending the unit vector of $\zeta$ to
+$\psi_{rs}$ placed in the copy of $\mathcal H$ belonging to its corner, and with
+\eqref{eq:gram-diff}, $B^{\mathcal Z}=V_\infty C_\infty V_\infty^*$ has as nonzero
+eigenvalues those of $X_\infty$. Since $N\le N_K\le2K^2<K(2K+1)\le m(m+1)/2=\dim\mathcal H_m$,
+zero is an eigenvalue of $L_m^{\mathcal Z}$, and $0\in\sigma(B^{\mathcal Z})$ because
+$\dim\mathcal H=\infty$. Thus $\nu^{\mathcal Z}_-(m)=\min(0,\lambda_{\min}(X_m))$,
+$\inf\sigma(B^{\mathcal Z})=\min(0,\lambda_{\min}(X_\infty))$, and similarly for the
+suprema. It remains to bound $\|X_m-X_\infty\|$.
+
+The entries of $G_m$ are bounded by the largest diagonal entry, which by
+$|\mathsf P_k|\le1$ is at most the value of $m^{-4}\mathcal K_{m-1}$ at the corner
+$(1,1)$:
+$m^{-4}\sum_{k+l\le m-1}(k+\frac12)(l+\frac12)=m(m+1)(m^2+m+1)/(24m^4)<\frac18$
+for $m\ge4$. (The closed form follows by induction on $m$: the increment from
+$m-1$ to $m$ is $m(2m^2+1)/12$.) The entries of $G_\infty$ are at most
+$\int_{\mathcal T}ab=\frac1{24}$. Hence $\|G_m\|,\|G_\infty\|\le N/8$, and by
+\eqref{eq:gram-diff} $\delta:=\|G_m-G_\infty\|\le NC_U/m$.
+For positive semidefinite matrices $A,B$ with $\|A-B\|=\delta$ we have
+$\|A^{1/2}-B^{1/2}\|\le\frac4\pi\sqrt\delta\le2\sqrt\delta$. Indeed
+$A^{1/2}=\pi^{-1}\int_0^\infty t^{-1/2}A(A+t)^{-1}\dd t$ (the scalar integral after
+diagonalization). The difference of the integrands has norm at most $t^{-1/2}$,
+since both $A(A+t)^{-1}$ and $B(B+t)^{-1}$ lie between $0$ and $I$, and, by the
+resolvent identity $A(A+t)^{-1}-B(B+t)^{-1}=t(A+t)^{-1}(A-B)(B+t)^{-1}$, at most
+$\delta t^{-3/2}$. Splitting the integral at $t=\delta$ gives the claim.
+So $\|G_m^{1/2}-G_\infty^{1/2}\|\le2\sqrt{NC_U/m}$, and telescoping
+$X_m-X_\infty$ with \eqref{eq:coeff-diff},
+\begin{align*}
+ \|X_m-X_\infty\|&\le\|G_m\|\,\|C_m-C_\infty\|
+  +16\bigl(\|G_m^{1/2}\|+\|G_\infty^{1/2}\|\bigr)\|G_m^{1/2}-G_\infty^{1/2}\|\\
+ &\le\frac{N\beta_K(m)}8+\frac{64}{\sqrt8}N\sqrt{C_U/m}\le E_K(m).
+\end{align*}
+By Weyl's inequality the ordered eigenvalues of $X_m$ and $X_\infty$ differ by at
+most $\|X_m-X_\infty\|$, and $|\min(0,x)-\min(0,y)|\le|x-y|$.
+\end{proof}
+
+\paragraph{Step 3: the operator $B$ and the bound \eqref{eq:B-tail}}
+Let $K'>K$. Apply Lemma~\ref{lem:finite-rank} with $K'$ in place of $K$ and
+with $\mathcal Z=\{(0,0;r,s):K<(1+r)(1+s)\le K',\ r+s\text{ even}\}$ (nodes of the
+corner $(1,1)$, active for both parities). Then $B^{\mathcal Z}=B_{K'}-B_K$ on the
+first copy of $\mathcal H$ (the other copies vanish), because
+$\gamma_\infty=-16e_re_s(-1)^r$ for these nodes. By the lemma, the extremes of
+$L^{\mathcal Z}_m$ converge to those of $B_{K'}-B_K$ as $m\to\infty$, hence
+$\|L^{\mathcal Z}_m\|\to\|B_{K'}-B_K\|$. All nodes of $\mathcal Z$ have
+$(1+d_j)(1+d'_k)>K$ and $|\ell_{jk}|\le4\varepsilon^{(m)}_j\varepsilon^{(M)}_k/(mMR^2)$, so
+Lemma~\ref{lem:tail-estimate} gives $\|L^{\mathcal Z}_m\|\le120/K$. Therefore
+\begin{equation}\label{eq:B-cauchy}
+ \|B_{K'}-B_K\|\le120/K\qquad(K'>K).
+\end{equation}
+So $(B_K)$ is a Cauchy sequence of selfadjoint operators and converges in norm to a
+selfadjoint operator $B$. It is compact, being a norm limit of finite-rank operators,
+and letting $K'\to\infty$ in \eqref{eq:B-cauchy} gives \eqref{eq:B-tail}.
+
+\paragraph{Step 4: the limits \eqref{eq:corner-limits}}
+Put $c_-(K)=\inf\sigma(B_K)$ and $c_+(K)=\sup\sigma(B_K)$ (both include $0$);
+by \eqref{eq:B-tail}, $|c_\pm(K)-c_\pm|\le120/K$. Let $\mathcal Z_K$ be the set of
+all retained patch nodes for the parity of $m$ and $L_m^K=L_m^{\mathcal Z_K}$, the part of
+\eqref{eq:L-m} from the nodes with $(1+d_j)(1+d'_k)\le K$. By Step 1, the two
+active corners carry the same retained index set
+$\{(r,s)\in I_K:r+s\text{ even}\}$ and the same coefficients $\gamma_\infty$, while
+the two inactive corners have $\gamma_\infty=0$. Hence
+$B^{\mathcal Z_K}=B_K\oplus B_K\oplus0\oplus0$ (up to the order of the corners),
+whose extremes are those of $B_K$. Let $\nu^K_\pm(m)$ be the extremes of
+$L_m^K$. Lemma~\ref{lem:finite-rank} gives
+$\nu^K_\pm(m)\to c_\pm(K)$ as $m\to\infty$ along each parity, and
+Lemma~\ref{lem:tail-estimate} gives
+$|\nu_\pm(m)-\nu^K_\pm(m)|\le\|L_m-L_m^K\|\le120/K$. Consequently
+$\limsup_{m\to\infty}|\nu_\pm(m)-c_\pm|\le240/K$ along each parity, and
+$K\to\infty$ shows $\nu_\pm(m)\to c_\pm$ over all integers. By
+\eqref{eq:log-spectral}, $\lambda^\Pa_\pm(m,m-1)/\log m\to c_\pm$.
+
+Finally, Proposition~\ref{prop:carrier-improvement} gives
+$\limsup\lambda^\Pa_-/\log m\le-\kappa_{\mathrm{new}}$, hence
+$c_-\le-\kappa_{\mathrm{new}}<0$, and \eqref{eq:padua-growth-bounds} gives
+$c_+\ge\kappa^{\mathrm{car}}_+>0$. These two inequalities serve only for the
+signs; the identification of the limits above does not use any carrier. \qed
+
+\paragraph{Step 5: proof of \eqref{eq:finite-comparison}}
+For $m\ge\max(4,2K)$, Lemma~\ref{lem:finite-rank} with $\mathcal Z_K$ gives
+$|\nu^K_\pm(m)-c_\pm(K)|\le E_K(m)$. Combining this with
+\eqref{eq:log-spectral}, $|\nu_\pm-\nu^K_\pm|\le120/K$ and
+$|c_\pm(K)-c_\pm|\le120/K$,
+\[
+ \Bigl|\frac{\lambda^\Pa_\pm}{\log m}-c_\pm\Bigr|
+ \le\frac{4300}{\log m}+\frac{120}K+E_K(m)+\frac{120}K.\qquad\qed
+\]
+
+\paragraph{Proof of Remark~\ref{rem:two-corners}}
+It follows from Steps 1 and 4: $X_\infty=X_B\oplus X_B\oplus0\oplus0$ with the
+same $X_B$ for the two active corners, whose nonzero eigenvalues are those of
+$B_K$; Lemma~\ref{lem:finite-rank} gives the convergence, with multiplicity, of
+the eigenvalues of $X_m$ to those of $X_\infty$.
 
 \bibliographystyle{elsarticle-num}
 \bibliography{refs}

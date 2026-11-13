@@ -32,3 +32,18 @@ As [correspondence-cc.md](correspondence-cc.md), for MZ-SP. Planned numbering fr
 | (text) | Remark 5.x | PD-T028, PD-T110, PD-T116 | OPEN with binding REJECTED: refuted | | "refuted" (by PD-N105–107, PD-T377/378) → same |
 
 Counts at this checkpoint: 11 numbered statements in the post-split text (incl. the unlabeled density lemma) plus the m60/80 text result, all mapped; 8 planned additions; no omissions.
+
+## Changes log
+
+- 2026-11-13 (handoff 04, MZ-SP part 1; Sonnet 5.5 high worker, verified by the orchestrator's rebuild, 30 pp. clean):
+  - CC recap: `lem:weight-comparison` is now a lemma proved in MZ-SP (formula, endpoint weights, bracket error, π−4/3 interior bound, floor (1+d_j)/N²; the unused 5 sinθ/N bound is dropped). `prop:counterexample` is renamed `prop:cc-inputs` and cites MZ-CC (AC: MZ-CC first). Two sentences of the PD-T297 proof are repointed (π−4/3 bound; λ₊<2 via prop:cc-inputs, giving the tensor bound 4).
+  - Carriers:
+    - `lem:fejer-cosine` (auxiliary, inside the PD-T379 proof; gives J₋(a) in closed form);
+    - `prop:padua-growth` extended with the fixed-(a,b) bounds (6), which are already proved inside the PD-T379 proof (verbatim from the record's proof, now stated);
+    - new `prop:carrier-improvement` (PD-T533, verbatim, one-sided) and `prop:carrier-ceiling` (PD-T537, verbatim, with its exclusions).
+  - New §3 "corner operator": `thm:log-reduction` (PD-T534, verbatim constants 4096, 4300/log m, 120), `lem:corner-kernel` (PD-T535, verbatim), `thm:corner-operator` (PD-T536, verbatim), `rem:finite-comparison` (PD-T536 (4)), `rem:two-corners` (F8, limited to what the proof shows), and Appendix A with complete proofs.
+  - **For the audit:**
+    1. The paper's proof of PD-T534 tracks constants more tightly (intermediate 840/3360 against the record's 64/65-based constants); the statement keeps the record's 4096/4300.
+    2. Record steps tightened in the paper: PD-T535 (8) Taylor expansion about the mean; Rodrigues/generating-function equality derived; PD-T536 (10) needs m ≥ 2K, which is added; the PD-T536 §4 transfer step is made explicit as Lemma A.4.
+    3. ε/γ endpoint factors are renamed ε^{(m)}, ε^{(m+1)} in the old weights and carriers text (notation only).
+  - Still to do (part 2): PD-T539–542 with Appendix B, the F7 corollary (PD-T?mz-paper-claude-02), §7 remark, finite results, §9, title, abstract, introduction, status box and visible `\id`, the ratio θ→τ rename, the C₀ and M′ renames, and availability.
