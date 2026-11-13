@@ -3037,3 +3037,7 @@ disposition and reopens/corrects unsupported response-03 closures. TaskB's
 actual new-range data checks, native-history transfer, original-PDF byte
 access, post-audit packaging, global budget repair and publication remain
 explicitly pending. The PR stays draft; AC alone merges or publishes.
+
+Next: [handoff32 — focused Claude audit of response04](handoffs/32-claude-audit-response04.md).
+The prepared PR update is [pr-update-20261113.md](pr-update-20261113.md);
+remote metadata update follows the committed response and handoff.
