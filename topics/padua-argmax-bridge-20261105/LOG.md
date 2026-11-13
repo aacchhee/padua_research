@@ -2978,3 +2978,62 @@ bound before this response's counted-file growth is11,744,901bytes.
 No other topic's evidence is removed or relabeled to hide this excess;
 readiness and the global budget repair remain separate. Source/prose
 changes here do not by themselves supply a10MB-cap claim.
+
+### Final manuscript response and supplementary checks
+
+Bounded Sol xhigh work explains the named tools and audited proof clauses,
+restores the scalar maximum's missing reasons, defines symbols before use,
+distinguishes local aliases, and separates proof premises from runtime trust.
+All19 C4C and13 C4B duplicate pairs are consolidated. A distinct Astra high
+review directly compares those32pairs to original24a98db, finds and returns
+several missing unique reasons and h/K rename defects, then rereads every
+restoration. No finding is silently self-approved. Its
+[supplementary report](supplementary-manuscript-review-20261113.md) identifies
+its precise coverage and limits. Named-tool statements and changed analytic
+explanations still require focused Claude review.
+
+The final TeX/Bib pair is committed at
+`ad908acb21d3589d85635618ff68f63dd01cfbca`. Root final builds both exit0,
+57/150pages, no errors/warnings/overfull boxes/undefined references or
+citations; underfull diagnostics alone remain. Early intermediate companion
+builds failed on a duplicate K_sinc suffix and missing array package and
+reported overfull boxes. The developer repairs and required array dependency
+are included in the final freeze; final logs are clean. Root inspected
+rendered paper18/54 and companion91/143. All116 built labels match, with
+19statements and85numbered environments (86equation numbers). BUILD records
+give exact commands, PDF bytes/hashes and fresh Oslo-timestamped downloads.
+No old PDF bytes are present: full historical --artifacts mode was not run,
+and its preservation condition is not reported as verified. Historical
+source preservation passes separately.
+
+The old-baseline rename scanner passes the current pair and deliberately
+reports19changed numbered blocks plus3statement blocks beyond the31literal
+rename map. Those differences include moved definitions, explicit hypotheses
+and witness wording; they were reviewed as material explanations, not hidden
+as renames. New FINAL_BASELINE is installed in a separate post-source-freeze
+change. The default and --archival source checks pass. Root's first mutation
+harness attempts had bad target spelling/occurrence selection and failed;
+no scientific source was changed to accommodate them. The corrected harness
+mutates exact shared blocks in memory; all7controls pass in root and in a
+distinct Astra rerun. The reviewer independently inspects the one-line
+baseline update and records the new harness hash.
+
+Frozen analytic checker rerun passes every exact-rational check. All60new
+rational intermediate table intervals are independently reproduced through
+the existing API. Final reader controls pass40/40. AC-reserved contribution,
+ORCID and AI declaration text is byte-equal to the input in both manuscripts.
+Scientific engine/checker inputs and thresholds are unchanged. No novel
+mechanism, final-ID assignment or shared-registry application occurs.
+
+Final conservative no-shrink generated-class bound is11,751,309bytes;
+actual counted current sum11,729,562bytes. The deposit manifest records the
+calculation including current-main additions. This exceeds the inherited
+10MB cap, so no budget or PR readiness claim is made. Bulk uploads, PDFs,
+checks and logs remain off Git. No other topic's evidence is altered.
+
+Development of this response is complete: **AUDIT** for the changed proofs,
+reader and manuscripts. [response-04](response-04.md) gives each finding's
+disposition and reopens/corrects unsupported response-03 closures. TaskB's
+actual new-range data checks, native-history transfer, original-PDF byte
+access, post-audit packaging, global budget repair and publication remain
+explicitly pending. The PR stays draft; AC alone merges or publishes.

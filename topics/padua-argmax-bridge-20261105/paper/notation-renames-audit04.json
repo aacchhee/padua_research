@@ -1,0 +1,219 @@
+[
+  {
+    "from": "j_*",
+    "to": "\\mathfrak j_*",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "G(n,",
+    "to": "\\mathcal G(n,",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "P_n",
+    "to": "\\mathfrak p_n",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "P_{512}",
+    "to": "\\mathfrak p_{512}",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "U=",
+    "to": "U_*=",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "11U/",
+    "to": "11U_*/",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "G(n,",
+    "to": "\\mathcal G(n,",
+    "files": [
+      "certification-unified.tex"
+    ]
+  },
+  {
+    "from": "e_j",
+    "to": "\\varepsilon_j",
+    "files": [
+      "localization-unified.tex"
+    ]
+  },
+  {
+    "from": "f_k",
+    "to": "\\eta_k",
+    "files": [
+      "localization-unified.tex"
+    ]
+  },
+  {
+    "from": "P_n(",
+    "to": "\\mathfrak p_n(",
+    "files": [
+      "localization-unified.tex"
+    ]
+  },
+  {
+    "from": "\\mathfrak a_p",
+    "to": "\\mathfrak a_i",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "t^{2p}",
+    "to": "t^{2i}",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "\\sum_{p\\geq0}",
+    "to": "\\sum_{i\\geq0}",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "\\mathfrak b_q",
+    "to": "\\mathfrak b_\\ell ",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "t^{2q}",
+    "to": "t^{2\\ell}",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "\\sum_{q\\geq0}",
+    "to": "\\sum_{\\ell\\geq0}",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "\\sum_{\\ell\\geq1,\\ \\ell\\text{ odd}}",
+    "to": "\\sum_{r\\geq1,\\ r\\text{ odd}}",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "\\frac1{\\ell(\\ell^2-t^2)}",
+    "to": "\\frac1{r(r^2-t^2)}",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "J-1",
+    "to": "J_{\\log}-1",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "2J+1",
+    "to": "2J_{\\log}+1",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "w^{2j+1}",
+    "to": "w_{\\log}^{2j+1}",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "w^{2J",
+    "to": "w_{\\log}^{2J",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "1-w^2",
+    "to": "1-w_{\\log}^2",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "\\log z-",
+    "to": "\\log z_{\\log}-",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "F_0(h(",
+    "to": "F_0(h_m(",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "$C$,",
+    "to": "$C_{\\rm rem}$,",
+    "files": [
+      "introduction.tex"
+    ]
+  },
+  {
+    "from": "$C\\log",
+    "to": "$C_{\\rm rem}\\log",
+    "files": [
+      "introduction.tex"
+    ]
+  },
+  {
+    "from": "\\Theta=\\mathfrak T",
+    "to": "\\mathfrak T_*=\\mathfrak T",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "\\Theta(",
+    "to": "\\mathfrak T_*(",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "/\\Theta",
+    "to": "/\\mathfrak T_*",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  },
+  {
+    "from": "2\\Theta",
+    "to": "2\\mathfrak T_*",
+    "files": [
+      "comparison-unified.tex"
+    ]
+  }
+]

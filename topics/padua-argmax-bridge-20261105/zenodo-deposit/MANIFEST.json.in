@@ -8,7 +8,7 @@
   "final_source_commit": null,
   "input_rules_commit": "b45e29fa1fe3dbfa2517ff8043e5d9c440870530",
   "original_production_source_commit": "996fedcad4ba79a28e45a3fe3678adc12f1e5358",
-  "custody": "Historical 2026-11-08 local readback only. Off-Git archives unavailable in 2026-11-13 workspace. No Zenodo upload, Windows delivery or independent external retrieval claimed.",
+  "custody": "Historical 2026-11-08 package identities retained. Original return and padua30 supplied/authenticated on 2026-11-13; onset512 and I25 ZIPs still unavailable. No Zenodo upload, Windows delivery or durable external retrieval claimed.",
   "files": [
     {
       "role": "original_compact_return",
@@ -246,15 +246,19 @@
     "original_48_162_page_PDF_hashes_preserved": true
   },
   "manuscript_source_freeze": "24a98db4c3c4c4d0eede2e3929532956df87911b",
-  "local_package_status": "HISTORICALLY_PREPARED_20261108; archives unavailable in fresh workspace; post-repair snapshot/review and AC DOI/publication pending",
+  "local_package_status": "Original return and padua30 recovered; onset512/I25 missing; post-repair final source packaging and AC DOI/publication pending",
   "small_bundle_recheck_recipe": "RECHECK-SMALL-BUNDLE.md",
-  "revision_note_2026_11_13": "Historical 2026-11-08 file identities preserved; off-Git archives unavailable in fresh workspace; no new archive rehash, repaired-reader canonical run, or delivery claimed.",
+  "revision_note_2026_11_13": "Root and distinct reviewer authenticate original uploaded package/return and accept 280 pairs through repaired compact verifier; actual repaired onset512 canonical reader run remains blocked.",
   "historical_pre_audit04_source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6",
   "generated_output_bound": {
     "convention": "all positive deltas; no deletion or shrink credit",
     "pre_current_batch_bytes": 9917613,
     "cap_bytes": 10000000,
-    "final_batch_bound": "PENDING_ORCHESTRATOR_RECOMPUTATION"
+    "final_batch_bound": 11751309,
+    "current_main_merge_positive_bytes": 1827288,
+    "actual_current_classified_bytes": 11729562,
+    "post_original_topic_positive_deltas_bytes": 1833696,
+    "cap_satisfied": false
   },
   "verifier_provenance": {
     "original_padua30_unrepaired_verify_compact_sha256": "7c2dad53519aff616bdadd3f925ec8943963cb4bf521b410355f827b7a1899bf",
@@ -265,6 +269,19 @@
       "verify_compact.py": "2d26886fa38089815712edcceccd4ac893fea9d8e6092afbd4c0faac7b569cef",
       "runner.py": "a198b65182590be13cb91110ff976d90e7e885c778180e59699fbe9b067ccdad"
     },
-    "post_audit04_status": "Distinct focused review pending; actual pinned canonical reader rerun blocked by missing archives; no historical run attribution."
+    "post_audit04_status": "Supplementary Astra reader review complete; actual pinned onset512 canonical reader rerun blocked by missing ZIP; no historical run attribution."
+  },
+  "active_paired_source_commit": "ad908acb21d3589d85635618ff68f63dd01cfbca",
+  "historical_manuscript_record_note": "Existing inventory PDF identities and manuscript_review refer to historical24a98db51/147-page pair; active audit04 pair is recorded separately and is not a deposited payload.",
+  "current_manuscript_revision": {
+    "source_freeze": "ad908acb21d3589d85635618ff68f63dd01cfbca",
+    "pages": [
+      57,
+      150
+    ],
+    "paper_sha256": "5616921e195f999eb8fa47d5393eff89b16f89b597f941e7dd41fde00fa74830",
+    "companion_sha256": "b6898b2eba447b2bf89765d4693aa672c5c7c5e737fed3865e00c0fbe592bc94",
+    "supplementary_review": "COMPLETE within declared scope; focused Claude audit pending",
+    "historical_PDF_preservation_retested": false
   }
 }

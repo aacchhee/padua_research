@@ -12,7 +12,7 @@ import subprocess
 
 HISTORICAL_PAPER = 'c6e195fa5211d4504fd2638f3c7686368e28daee'
 HISTORICAL_COMPANION = 'ac945041ce73b74c2c4ec29c42ebeb8773e7a9b8'
-FINAL_BASELINE = '24a98db4c3c4c4d0eede2e3929532956df87911b'
+FINAL_BASELINE = 'ad908acb21d3589d85635618ff68f63dd01cfbca'
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[2]
 ORIGINAL = HERE.with_name('paper')

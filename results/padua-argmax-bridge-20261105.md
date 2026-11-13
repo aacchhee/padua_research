@@ -21,7 +21,7 @@ and an [elementary constant enclosure](../topics/padua-argmax-bridge-20261105/th
 with the original320 proof preserved. All191 new native primary/fresh pairs
 for320..510 passed locally. The separate
 [246-line independent checker](../topics/padua-argmax-bridge-20261105/code/independent_phase_checker/check.py)
-recertified942 trees across471 degrees41..511, with its own bounds and
+recertified942 witness records encoding471 distinct trees across degrees41..511, with its own bounds and
 explicit IEEE/NumPy/Python trust. A distinct six-certificate replay passed.
 The39 polynomial witnesses cover2..40; the analytic proof covers n>=512.
 
@@ -35,14 +35,28 @@ separate identities. External deposit/DOI remains pending in the
 
 The [journal manuscript](../topics/padua-argmax-bridge-20261105/paper/README.md)
 and [elementary-analysis companion](../topics/padua-argmax-bridge-20261105/companion-paper/README.md)
-retain matched structure, theorem statements and numbered displays. New build
-and review records distinguish the revised pair from the preserved48/162-page
-versions. Final builds are51/147pages at source24a98db, with all116 built
-labels matching. The user-requested [Sol max review](../topics/padua-argmax-bridge-20261105/manuscript-onset512-solmax-review.md)
-accepts correctness and exposition, including first-use definitions and
-named-tool statements/citations. The [focused mathematical/evidence review](../topics/padua-argmax-bridge-20261105/independent-checks-onset512-response.md)
-accepts the new computation/proofs at their stated scopes; the next substantive
-Claude audit covers those changes and both manuscripts. PR27 remains draft.
+retain matched structure, theorem statements and numbered displays. Audit-04
+accepted the mathematics but requested reader and exposition revisions. The
+2026-11-13 response repairs the reader, explains the audited proof steps and
+clarifies all trust boundaries. The historical51/147-page freeze24a98db and
+48/162-page source freezes remain preserved; new revision build/freeze records
+are in the manuscript BUILD files: current57/150-page sources are frozen at
+`ad908acb21d3589d85635618ff68f63dd01cfbca`, with116built labels matching.
+Supplementary review is bounded to the
+changed proofs and selected exposition, not a replacement for focused Claude
+review.
+
+Current verification limitation: the supplied original return and padua30
+package are authenticated. The repaired compact verifier passes all560
+certificates /280pairs (41..319 plus511) in root and independent runs.
+The canonical onset512 return and I25 ZIP remain unavailable, so audit-04's
+320..510 data checks and repaired canonical reader rerun are unexecuted.
+Historical all-degree proof records and claimed statuses are unchanged;
+current evidence review and durable retrieval remain incomplete.
+[Execution and gaps](../topics/padua-argmax-bridge-20261105/reader-repair-execution-20261113.md).
+Current next step: focused Claude review of the changed analytic explanations
+and repaired reader; new-range data checks await the two missing ZIPs.
+Global output-budget repair and durable external custody remain open.
 
 ## Earlier accepted components and historical scopes
 

@@ -105,3 +105,13 @@ The resulting draft has 48 pages with the same journal class and layout.
 [section5-expansion-review.md](section5-expansion-review.md) records the
 accepted focused Sol max review; BUILD.md records the current artifact and fresh
 timestamped download copy.
+
+
+### Current audit-04 revision, 2026-11-13
+
+The active paired TeX/Bib freeze is `ad908acb21d3589d85635618ff68f63dd01cfbca`.
+The current pair builds at57/150pages, with all116 built labels matching.
+See BUILD.md for exact commands and identities. Earlier build/review records
+remain historical; focused Claude review of the changed analytic explanations
+is next. Missing onset512/I25 data and historical-PDF byte-access limitations
+are explicit in the topic response and execution records.

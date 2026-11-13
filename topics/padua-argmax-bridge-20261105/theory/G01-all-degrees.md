@@ -249,3 +249,15 @@ distinct trees, each supplied in two witness records. Shared cached bounds
 mean the second witness is not an independent arithmetic derivation.
 The [J03 dated clarification](J03-independent-phase-checker.md) records
 the exit-observation limitation and the audit's actual data coverage.
+
+
+### Current evidence-access limitation, 2026-11-13
+
+The recorded all-degree conclusion relies on the historical finite witnesses.
+Root and a distinct reviewer now reran the supplied original archive for
+41..319 plus511 with the repaired compact reader. The canonical onset512
+return and I25 bundle are unavailable; audit-04's320..510 data checks and
+the repaired canonical reader run remain unexecuted. This is a current
+verification/retrieval limitation, not a new claim of proof completion. The
+historical claim, status and proof constants are preserved. See the
+[execution/gap record](../reader-repair-execution-20261113.md).

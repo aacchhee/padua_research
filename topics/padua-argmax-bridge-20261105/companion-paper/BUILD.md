@@ -118,3 +118,37 @@ review report hashes; it performed no new build or scientific run. The unchanged
 publisher-template identities remain in the template lock/provenance records.
 The next substantive Claude audit, source-ZIP packaging, AC DOI/publication,
 durable retrieval and PR readiness are separate from build acceptance.
+
+
+## Audit-04 response build — 2026-11-13
+
+Final paired TeX/Bib source freeze: `ad908acb21d3589d85635618ff68f63dd01cfbca`.
+Codex root executed `bash topics/padua-argmax-bridge-20261105/companion-paper/build.sh`
+after the final proof, notation and layout fixes. The script now defaults to
+a fresh audit04-companion-20261113 output directory, preserving earlier build
+targets. Both final commands exit0. TeX Live2025/dev pdfTeX1.40.26 and
+latexmk4.86; pinned publisher class/BST identities unchanged. The final logs
+have no errors, warnings, undefined references/citations, multiply-defined
+labels or overfull boxes; underfull diagnostics remain. The fixed
+SOURCE_DATE_EPOCH is retained for reproducibility.
+
+This PDF has **150 pages**, **1216528 bytes**, SHA-256
+`b6898b2eba447b2bf89765d4693aa672c5c7c5e737fed3865e00c0fbe592bc94`. Fresh download copy:
+`/workspace/padua_research/local-output/padua-argmax-bridge-20261105/audit04-companion-20261113/padua-companion-20261113-212438-Oslo.pdf`. Its bytes equal the corresponding `main.pdf`.
+Both PDFs and build logs remain off Git.
+
+The final source checker and all7 paired-mutation controls pass in root and
+a distinct Astra high rerun. Current built outputs have all116 labels equal
+and19 statements/85 numbered display environments;150<=5*57. Root checked
+rendered paper pages18/54 and companion pages91/143 (phase diagram, row/pole
+illustration and trust tables). The [supplementary manuscript review](../supplementary-manuscript-review-20261113.md)
+records selected proof reconstruction, all32 audited duplicate-pair integrity
+checks, all60 rational-table enclosures and its actual limits.
+
+Historical48/162 and51/147 source freezes remain in Git. The original PDF
+bytes are absent in this workspace: the full `--artifacts` preservation mode
+was not run and historical PDF preservation is **not independently retested**.
+Current auxiliary-number/page/identity comparisons were executed separately;
+this distinction is deliberate, not a skipped condition reported as PASS.
+The focused Claude review, missing new-range evidence ZIPs and external
+publication/custody remain separate.

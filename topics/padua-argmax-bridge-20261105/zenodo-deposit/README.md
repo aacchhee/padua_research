@@ -21,10 +21,12 @@ Zenodo retrieval.
 ## Current access and historical scope — 2026-11-13
 
 All 2026-11-08 packaging, rehash, local availability and acceptance statements
-below are historical records. The canonical return, I25 bundle, offline runtime
-package and other off-Git archives are unavailable in this fresh workspace.
-No fresh rehash, repaired-reader canonical rerun, upload, delivery or retrieval
-is claimed. Audit-04 remains the source of the outstanding evidence checks.
+below are historical records. AC subsequently supplied the original return
+and padua30 runtime package; both were authenticated, and root plus a distinct
+reviewer reran the repaired compact verifier on all 280 original pairs.
+The canonical onset-512 return and I25 bundle remain unavailable. No repaired
+canonical onset-512 reader run, upload, delivery or durable retrieval is claimed.
+See [the execution record](../reader-repair-execution-20261113.md). Audit-04 remains the source of the outstanding evidence checks.
 The a433c7d ZIP is a prepared historical snapshot; it predates audit-04 repairs
 and is not a final reviewed source snapshot for the repaired code. A new source
 snapshot and inventory must be created after the repair review; preserve the
@@ -119,8 +121,9 @@ The 2026-11-13 repair candidates have these SHA-256 identities:
 | `runner.py` | `a198b65182590be13cb91110ff976d90e7e885c778180e59699fbe9b067ccdad` |
 
 These identities describe the current source repair, not the historical
-executions or the a433c7d source ZIP. Distinct focused review is pending;
-the actual pinned canonical archive rerun remains blocked by absent inputs.
+executions or the a433c7d source ZIP. The distinct supplementary reader
+review accepts the repaired code within its stated scope; the actual pinned
+onset-512 canonical archive rerun remains blocked by its missing ZIP.
 The reader defaults to canonical archive SHA-256 `da63280a7e4aec86fa52e3f8384620fbf07939006ab5f6f70222fa2485816e7e`
 and independently pins runtime manifest SHA-256
 `5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16`.
@@ -348,8 +351,27 @@ external retrieval remain AC's tasks.
 ## Generated-output bound convention — 2026-11-13
 
 Use the audit-03 convention: sum all positive generated-output deltas and give
-no deletion or shrink credit. Audit-04 E4-07 gives **9,917,613 B before the
-current repair batch**, leaving 82,387 B under the 10,000,000 B cap. The former
+no deletion or shrink credit. Audit-04 E4-07 gives **9,917,613 B before merging current main and this repair batch**. The former
 9,897,953 B value credited the cold-storage.json shrink and is not the chosen
 bound. The orchestrator must add any chargeable positive deltas from this batch;
-this baseline does not claim a final post-edit bound.
+this baseline does not claim a final post-edit bound. Merging current main
+adds 1,827,288 counted bytes from the already-published Padua3D topic, so
+the inherited bound becomes 11,744,901 B before this batch's positive deltas.
+The current global total exceeds 10,000,000 B; unrelated evidence is preserved.
+The topic LOG records this limitation; no budget/readiness acceptance is claimed.
+
+
+### Final response accounting and revision record
+
+The active paired source freeze is `ad908acb21d3589d85635618ff68f63dd01cfbca`;
+current PDFs have57/150pages. Their BUILD records give fresh off-Git paths
+and hashes. Historical inventory rows still identify the earlier prepared
+51/147-page PDFs; they are not silently relabelled as current artifacts. A
+post-Claude source/deposit update remains pending.
+
+The audited conservative classification gives an actual current counted sum
+of11,729,562bytes and a no-shrink-credit bound of11,751,309bytes. The latter
+includes the historical9,917,613baseline and1,833,696positive bytes since the
+old topic head, of which1,827,288came from current main's Padua3D topic.
+This exceeds the inherited10,000,000byte cap. No other topic's evidence is
+deleted or reclassified here; global budget repair and readiness remain open.

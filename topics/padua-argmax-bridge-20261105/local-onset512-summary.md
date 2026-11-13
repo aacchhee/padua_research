@@ -97,12 +97,14 @@ the 81.6 MB ZIP remains the canonical review artifact. No native call was added.
 The executions above describe the historical reader, before audit-04 E4-01.
 That reader used removable assertions and could accept a zero-certificate ZIP
 under Python optimization. Its historical acceptance is not evidence of a
-repaired-reader run. The current repair requires a distinct focused review
-and a rerun on the actual pinned canonical ZIP and complete trusted runtime.
-Those archives are unavailable in this fresh workspace; no repaired-reader
-canonical run or fresh archive rehash is claimed here. The off-Git paths above
-are historical locators, not current custody receipts. Native-history transfer,
-regeneration, or acceptance of the custody gap remains AC's decision.
+repaired-reader run. The repair has a distinct supplementary reader review; it still requires
+a rerun on the actual pinned canonical onset-512 ZIP. AC supplied and root
+authenticated padua30 plus the original return; the repaired compact verifier
+passed that old return in root and independent runs. The onset-512 canonical
+ZIP remains unavailable; no repaired canonical onset-512 run is claimed here. The off-Git paths above
+are historical locators, not current custody receipts. AC requests native-history
+retention and transfer if the prior workspace is accessible; it is not
+accessible through the connected tools. No transfer or accepted gap is claimed.
 
 Repaired reader candidate SHA-256:
 `5e25c8a47115e114d20e64fa6ac7b2afb30dde0bfebef371f1e709857795ae2e`.
