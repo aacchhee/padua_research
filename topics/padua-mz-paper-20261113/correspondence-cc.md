@@ -67,3 +67,116 @@ Counts at this checkpoint: 14 numbered statements in the post-split text (12 sta
   - §1 is rewritten with Thm 1.1 (`thm:intro-upper`: restates Thms 3.2/3.4 + Remark 3.6), Thm 1.2 (`thm:intro-min`: restates Thms 4.6/4.1/4.3 + Cor 4.7), Thm 1.3 (`thm:intro-max`: Thm 5.2 + Prop 5.3) and Cor 1.4 (`cor:intro`: Cors 6.1, 7.2, the §8 bound). Each is a restatement at the same scope, with a pointer to the proved statement.
   - Literature: the "still unread Mastroianni–Russo 2000" sentence is replaced by the PR #21 reading (LIT-511, Thm 11: A₂ hypothesis fails at the endpoint; no rate). LIT-511 is added to refs.bib. Process language is removed. The full literature pass (task 5) is still to do.
   - Statement numbering is now a **freeze candidate**: later passes (literature, notation, referee) may change wording but should not renumber. Build clean, 31 pp.
+
+## Frozen numbering of MZ-CC (2026-11-13, after the internal referee round)
+
+Build at the commit that adds this section. Theorem-like statements and sections (`siamart`, shared counter within sections):
+
+| Label | Number | Page |
+|---|---|---|
+| `sec:context` | 1 | 1 |
+| `sec:context@cref` | [section][1][]1 | [1][1][]1 |
+| `thm:intro-upper` | 1.1 | 2 |
+| `thm:intro-upper@cref` | [theorem][1][1]1.1 | [1][2][]2 |
+| `thm:intro-min` | 1.2 | 2 |
+| `thm:intro-min@cref` | [theorem][2][1]1.2 | [1][2][]2 |
+| `thm:intro-max` | 1.3 | 2 |
+| `thm:intro-max@cref` | [theorem][3][1]1.3 | [1][2][]2 |
+| `cor:intro` | 1.4 | 2 |
+| `cor:intro@cref` | [corollary][4][1]1.4 | [1][2][]2 |
+| `sec:prelim` | 2 | 5 |
+| `sec:prelim@cref` | [section][2][]2 | [1][5][]5 |
+| `lem:identities` | 2.1 | 5 |
+| `lem:identities@cref` | [lemma][1][2]2.1 | [1][5][]5 |
+| `lem:floor` | 2.2 | 6 |
+| `lem:floor@cref` | [lemma][2][2]2.2 | [1][6][]6 |
+| `lem:weight-comparison` | 2.3 | 6 |
+| `lem:weight-comparison@cref` | [lemma][3][2]2.3 | [1][6][]6 |
+| `lem:schur` | 2.4 | 7 |
+| `lem:schur@cref` | [lemma][4][2]2.4 | [1][7][]7 |
+| `sec:upper` | 3 | 7 |
+| `sec:upper@cref` | [section][3][]3 | [1][7][]7 |
+| `thm:ratio-upper` | 3.1 | 7 |
+| `thm:ratio-upper@cref` | [theorem][1][3]3.1 | [1][7][]7 |
+| `cor:ratio-endpoint` | 3.2 | 8 |
+| `cor:ratio-endpoint@cref` | [corollary][2][3]3.2 | [1][7][]8 |
+| `thm:upper` | 3.2 | 8 |
+| `thm:upper@cref` | [corollary][2][3]3.2 | [1][7][]8 |
+| `thm:five-thirds` | 3.3 | 8 |
+| `thm:five-thirds@cref` | [theorem][3][3]3.3 | [1][8][]8 |
+| `rem:sign-boundary` | 3.4 | 9 |
+| `rem:sign-boundary@cref` | [remark][4][3]3.4 | [1][9][]9 |
+| `sec:endpoint` | 4 | 9 |
+| `sec:endpoint@cref` | [section][4][]4 | [1][9][]9 |
+| `sec:order-min` | 4.1 | 9 |
+| `sec:order-min@cref` | [subsection][1][4]4.1 | [1][9][]9 |
+| `thm:cardinal` | 4.1 | 9 |
+| `thm:cardinal@cref` | [theorem][1][4]4.1 | [1][9][]9 |
+| `lem:U-exact` | 4.2 | 10 |
+| `lem:U-exact@cref` | [lemma][2][4]4.2 | [1][10][]10 |
+| `thm:harmonic` | 4.3 | 11 |
+| `thm:harmonic@cref` | [theorem][3][4]4.3 | [1][11][]11 |
+| `sec:sharp-min` | 4.2 | 12 |
+| `sec:sharp-min@cref` | [subsection][2][4]4.2 | [1][12][]12 |
+| `lem:volterra` | 4.4 | 12 |
+| `lem:volterra@cref` | [lemma][4][4]4.4 | [1][12][]12 |
+| `prop:sharp-trial` | 4.5 | 13 |
+| `prop:sharp-trial@cref` | [proposition][5][4]4.5 | [1][13][]13 |
+| `thm:sharp-min` | 4.6 | 13 |
+| `thm:sharp-min@cref` | [theorem][6][4]4.6 | [1][13][]13 |
+| `cor:interp-norm` | 4.7 | 14 |
+| `cor:interp-norm@cref` | [corollary][7][4]4.7 | [1][13][]14 |
+| `lem:signed-remainder` | 4.8 | 14 |
+| `lem:signed-remainder@cref` | [lemma][8][4]4.8 | [1][14][]14 |
+| `lem:discrete-primitive` | 4.9 | 14 |
+| `lem:discrete-primitive@cref` | [lemma][9][4]4.9 | [1][14][]14 |
+| `sec:edge-max` | 5 | 14 |
+| `sec:edge-max@cref` | [section][5][]5 | [1][14][]14 |
+| `prop:fixed-trial` | 5.1 | 15 |
+| `prop:fixed-trial@cref` | [proposition][1][5]5.1 | [1][15][]15 |
+| `thm:edge-limit` | 5.2 | 16 |
+| `thm:edge-limit@cref` | [theorem][2][5]5.2 | [1][15][]16 |
+| `prop:edge-certified` | 5.3 | 16 |
+| `prop:edge-certified@cref` | [proposition][3][5]5.3 | [1][16][]16 |
+| `sec:consequences` | 6 | 16 |
+| `sec:consequences@cref` | [section][6][]6 | [1][16][]16 |
+| `cor:endpoint` | 6.1 | 16 |
+| `cor:endpoint@cref` | [corollary][1][6]6.1 | [1][16][]16 |
+| `rem:rate` | 6.2 | 16 |
+| `rem:rate@cref` | [remark][2][6]6.2 | [1][16][]16 |
+| `sec:ratio` | 7 | 17 |
+| `sec:ratio@cref` | [section][7][]7 | [1][16][]17 |
+| `thm:ratio-lower` | 7.1 | 17 |
+| `thm:ratio-lower@cref` | [theorem][1][7]7.1 | [1][17][]17 |
+| `cor:strong` | 7.2 | 18 |
+| `cor:strong@cref` | [corollary][2][7]7.2 | [1][18][]18 |
+| `sec:hyper` | 8 | 18 |
+| `sec:hyper@cref` | [section][8][]8 | [1][18][]18 |
+| `prop:counterexample` | 8.1 | 19 |
+| `prop:counterexample@cref` | [proposition][1][8]8.1 | [1][18][]19 |
+| `prop:hyper` | 8.2 | 19 |
+| `prop:hyper@cref` | [proposition][2][8]8.2 | [1][19][]19 |
+| `sec:numerics` | 9 | 20 |
+| `sec:numerics@cref` | [section][9][]9 | [1][20][]20 |
+| `app:sharp` | A | 21 |
+| `app:sharp@cref` | [appendix][1][2147483647]A | [1][21][]21 |
+| `lem:endpoint-rep` | A.1 | 23 |
+| `lem:endpoint-rep@cref` | [lemma][1][2147483647,1]A.1 | [1][22][]23 |
+| `app:edge` | B | 25 |
+| `app:edge@cref` | [appendix][2][2147483647]B | [1][25][]25 |
+| `app:edge-fixed` | B.1 | 26 |
+| `app:edge-fixed@cref` | [subappendix][1][2147483647,2]B.1 | [1][26][]26 |
+| `app:edge-continuum` | B.2 | 27 |
+| `app:edge-continuum@cref` | [subappendix][2][2147483647,2]B.2 | [1][27][]27 |
+| `lem:core-dense` | B.1 | 27 |
+| `lem:core-dense@cref` | [lemma][1][2147483647,2]B.1 | [1][27][]27 |
+| `lem:continuum` | B.2 | 27 |
+| `lem:continuum@cref` | [lemma][2][2147483647,2]B.2 | [1][27][]27 |
+| `app:edge-limit` | B.3 | 28 |
+| `app:edge-limit@cref` | [subappendix][3][2147483647,2]B.3 | [1][28][]28 |
+| `app:certificate` | C | 29 |
+| `app:certificate@cref` | [appendix][3][2147483647]C | [1][29][]29 |
+| `lem:closed-form` | C.1 | 29 |
+| `lem:closed-form@cref` | [lemma][1][2147483647,3]C.1 | [1][29][]29 |
+
+Later passes (audit fixes) may change wording but should not renumber; any renumbering must be listed here.
