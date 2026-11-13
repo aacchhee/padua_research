@@ -69,6 +69,26 @@
   - plan-sp F13: the PD-T376 witness arrays go into AC's Zenodo deposit. Prop 8.1 stays, with the deposit-DOI placeholder.
 - Handoff 02 superseded by [handoff 03](handoffs/03-work.md), which carries these changes. No manuscript change.
 
+## 2026-11-13 — Claude, claude-opus-5-5 — handoff 03: MZ-CC completed to draft
+
+- Rules: unchanged since `c0e57a9`; main still `b5388c2`.
+- MZ-CC (`34b9315`, `604e667`, `767f5d7`, then this commit) contains every result in plan-cc, with proofs:
+  - PD-T547 and Appendix C (PD-T548);
+  - the U lemma moved to §4.1;
+  - the interpolation-norm corollary;
+  - Cor 6.1 (defect, condition number, N≥57);
+  - B=min{1+ρ,5/3};
+  - new §9 (measurements and open problems);
+  - new title, abstract and introduction with Thms 1.1–1.3 and Cor 1.4;
+  - LIT-511 sentence (Mastroianni–Russo 2000, from the PR #21 reading);
+  - data and code availability with placeholders for commit and DOI;
+  - bibliography reading-coverage notes moved out of print (`coverage` field).
+
+  The status box is removed, and in-heading IDs are now TeX comments. Clean build, 30 siamart pp. Statement numbering is a freeze candidate.
+- Independent checks (Opus 5.5 high): [check-new-corollaries-02.md](check-new-corollaries-02.md) returns PASS with editorial corrections for PD-T?mz-paper-claude-01 (d) and PASS for PD-T?mz-paper-claude-02. Record fixes are applied: the λ₋(N,N) definition, the Π_N dependency and the J₋ pointer.
+- Notation register [notation-cc.md](notation-cc.md) (Sonnet 5.5 high worker): 38 clash entries (10 H, 15 M, 13 T). The stale "H and K" at old l.571 is fixed. The other renames are left to the next session's notation pass.
+- [literature-mz-paper.md](literature-mz-paper.md): coverage table drafted for MZ-CC's 26 keys; the per-sentence scope check is pending.
+
 ## Runs needed
 
 - Remaining tasks and gates W1–W4: see handoff 02.

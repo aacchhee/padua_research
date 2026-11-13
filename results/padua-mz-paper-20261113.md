@@ -25,13 +25,14 @@ Plan: [BRIEF](../topics/padua-mz-paper-20261113/BRIEF.md) and [handoff 01](../to
   - the uniform bound λ_max ≤ 5/3 (PD-T526);
   - the sharp limit (log N)²λ_min → π⁴/8 with its finite bound (PD-T546, PD-T523, PD-T522/544/545; Appendix A);
   - λ_max → Λ_edge ∈ [1,3/2] (PD-T530, PD-T529 weakened; Appendix B).
-  It builds clean at 28 pp.; the introduction and §6/§8/§9 are still to rewrite.
+  Since handoff 03, MZ-CC is complete to draft (30 siamart pp.): it also has the certified Λ_edge ≥ 1.0044369 (Appendix C), the interpolation-norm and defect/condition corollaries, and a new title, abstract, introduction, §9 and availability statement. Still to do: the notation pass, the literature scope check and the internal referee round.
 - New provisional claim PD-T?mz-paper-claude-01 ([record](../topics/padua-mz-paper-20261113/theory/cc-defect-condition-corollary.md)), PROVED by the developer:
   - 1−η_N = λ_min(G_{N,N−1}) for every N ≥ 57, and (log N)²(1−η_N) → π⁴/8;
   - κ₂(G_N)/(log N)² → 8Λ_edge/π⁴;
   - ‖𝓘_N‖_{ℓ²_w→L²}/log N → 2√2/π²;
   - CC hyperinterpolation factor (1+√(5/3))√2.
-  An independent check passed for (a)–(c); (d) is pending. Codex audit pending.
+  Independent checks passed for (a)–(d). Codex audit pending.
+- New provisional claim PD-T?mz-paper-claude-02 ([record](../topics/padua-mz-paper-20261113/theory/sp-corner-norm-lower.md)): ‖B‖ = −c₋ ≥ c_new = 0.02964… and c₊ ≥ 0.01277…, both analytic, for MZ-SP. Independent check PASS; Codex audit pending.
 - MZ-SP: post-split text in `elsarticle`; integration not started.
 
 ## Next step

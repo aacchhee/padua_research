@@ -7,7 +7,7 @@ Split into: none.
 
 ## Statement
 
-Lebesgue Clenshaw–Curtis rule Q_N at x_k=cos(kπ/N), 0≤k≤N, unnormalized dx on [−1,1], natural logarithm. For N≥2 let G_N=G_{N,N−1} be the Gram matrix on Π_{N−1} in an L²(dx)-orthonormal basis, λ_−(N), λ_+(N) its extreme eigenvalues, η_N=‖I−G_N‖_2 and κ_2(G_N)=λ_+(N)/λ_−(N).
+Lebesgue Clenshaw–Curtis rule Q_N at x_k=cos(kπ/N), 0≤k≤N, unnormalized dx on [−1,1], natural logarithm. For 0≤n≤N, λ_−(N,n) denotes the smallest Rayleigh quotient Q_N(p²)/∫p² on Π_n. For N≥2 let G_N=G_{N,N−1} be the Gram matrix on Π_{N−1} in an L²(dx)-orthonormal basis, λ_−(N), λ_+(N) its extreme eigenvalues, η_N=‖I−G_N‖_2 and κ_2(G_N)=λ_+(N)/λ_−(N).
 
 (a) For every N≥2 with λ_−(N)≤1/3 one has 1−η_N=λ_−(N). This holds for every N≥57, and
 
@@ -29,18 +29,18 @@ As in PD-T013, PD-T025, PD-T526, PD-T527, PD-T530 and PD-T546. Λ_edge is the va
 
 ## Status by part
 
-Overall status: **PROVED** (developer: Claude; independent check pending, flagged for the Codex audit).
+Overall status: **PROVED** (developer: Claude; independent checks PASS with corrections, applied; flagged for the Codex audit).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
 | (a) exact identity when λ_−≤1/3, and the limit π⁴/8 | PROVED | Proof below; independent check pending |
 | (b) condition-number limit | PROVED | Proof below; independent check pending |
 | (c) hyperinterpolation factor | PROVED | Proof below; independent check pending |
-| (d) interpolation-norm form | PROVED | Proof below; added after the review, so its independent check is pending (Codex audit) |
+| (d) interpolation-norm form | PROVED | Proof below; independent check PASS ([check-new-corollaries-02.md](../check-new-corollaries-02.md)) |
 
 ## Depends on
 
-PD-T013 (positivity of weights, exactness on constants, unisolvence), PD-T019 (exact U_{N−1} quotient), PD-T017 (λ_−>0), PD-T025 (general upper-Gram estimate with any admissible B), PD-T022 (B=1+ρ), PD-T526 (λ_+(N)≤5/3 on Π_{N−1}), PD-T527 (identity 1−η_N=min(λ_−,2−λ_+)), PD-T530 (λ_+(N)→Λ_edge), PD-T546 ((log N)²λ_−(N)→π⁴/8), PD-T547 (Λ_edge≥1.0044369; **computer-assisted**). Only the numerical interval in (b) uses PD-T547; without it, PD-T530's [1,3/2] gives the computer-free interval [8/π⁴, 12/π⁴] = [0.08213…, 0.12319…].
+PD-T013 (positivity of weights, exactness on constants, unisolvence), PD-T019 (exact U_{N−1} quotient), PD-T017 (λ_−>0), PD-T025 (general upper-Gram estimate with any admissible B), PD-T022 (B=1+ρ), PD-T526 (λ_+(N)≤5/3 on Π_{N−1}), PD-T527 (identity 1−η_N=min(λ_−,2−λ_+)), PD-T530 (λ_+(N)→Λ_edge), PD-T546 ((log N)²λ_−(N,N−1)→π⁴/8, and its Π_N clause (log N)²λ_−(N,N)→π⁴/8, used in (d)), PD-T547 (Λ_edge≥1.0044369; **computer-assisted**). Only the numerical interval in (b) uses PD-T547; without it, PD-T530's [1,3/2] gives the computer-free interval [8/π⁴, 12/π⁴] = [0.08213…, 0.12319…].
 
 ## Checks
 
@@ -67,6 +67,8 @@ None beyond the repository results listed.
 ## History of this record
 
 2026-11-13: (a) onset N≥57, part (d), the computer-assisted note and the (c) threshold were added after the independent check [check-cc-defect-corollary.md](../check-cc-defect-corollary.md) (PASS with corrections). These are changes to a provisional record before audit.
+
+2026-11-13 (later): definition of λ_−(N,n) and the Π_N dependency of (d) added after the second check (check-new-corollaries-02.md, PASS with editorial corrections). The order of parts (c), (d) in the Statement is kept, with (d) placed before (c), to avoid renumbering references; the labels are what matter.
 
 ## Open items
 

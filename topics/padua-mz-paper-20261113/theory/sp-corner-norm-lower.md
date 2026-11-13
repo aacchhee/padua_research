@@ -7,7 +7,7 @@ Split into: none.
 
 ## Statement
 
-Let B be the compact selfadjoint corner operator of PD-T536, with c₋ = inf σ(B) and c₊ = sup σ(B). Let c_new be the constant of PD-T533, c_new = 16(51/200)(49/200)/[9 A J(51/200)] with A = 4 log 2 and J as in PD-T533/PD-T537. Let c₊^(379) = 1/[36 A J₊(1/8)] be the positive constant of PD-T379. Then
+Let B be the compact selfadjoint corner operator of PD-T536, with c₋ = inf σ(B) and c₊ = sup σ(B). Let c_new be the constant of PD-T533, c_new = 16(51/200)(49/200)/[9 A J(51/200)] with A = 4 log 2 and J = J₋ of PD-T379, as used in PD-T533. Let c₊^(379) = 1/[36 A J₊(1/8)] be the positive constant of PD-T379. Then
 
 (a) ‖B‖ = −c₋ ≥ c_new (c_new = 0.0296417…, rounded orientation; exact closed form above);
 
@@ -21,12 +21,12 @@ Exactly those of PD-T536, PD-T540, PD-T533 and PD-T379: the signed Lebesgue Padu
 
 ## Status by part
 
-Overall status: **PROVED** (developer: Claude; independent check pending, flagged for the Codex audit).
+Overall status: **PROVED** (developer: Claude; independent check PASS, [check-new-corollaries-02.md](../check-new-corollaries-02.md); flagged for the Codex audit).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| (a) | PROVED | Proof below; independent check pending |
-| (b) | PROVED | Proof below; independent check pending |
+| (a) | PROVED | Proof below; independent check PASS |
+| (b) | PROVED | Proof below; independent check PASS |
 
 ## Depends on
 
@@ -41,6 +41,8 @@ Analytic. Floating evaluation of c_new = 0.029641768762… (Python, double preci
 (a) By PD-T536, λ₋(m,m−1)/log m → c₋. By PD-T533, the upper limit of the same sequence is at most −c_new. Hence c₋ ≤ −c_new, and PD-T540 gives ‖B‖ = −c₋ ≥ c_new.
 
 (b) By PD-T536, λ₊(m,m−1)/log m → c₊; by PD-T379, its lower limit is at least c₊^(379). Hence c₊ ≥ c₊^(379).
+
+Note (check): PD-T536 §4 already records c₋ ≤ −c_new and c₊ ≥ c₊^(379) inside its proof; this record's new content is the ‖B‖ form and the comparison with PD-T542. Values (50-digit, checker): c_new = 0.0296417687627523788…, c₊^(379) = 0.0127788864395583976….
 
 ## Scope
 
