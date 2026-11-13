@@ -268,3 +268,7 @@ attribution; global budget disposition remains for AC.
 Next: focused Claude review of material response05 changes. Actual
 onset512/I25 archive checks, four selected data-only witnesses, native-history
 transfer/retrieval and permanent source snapshot/DOI remain OPEN.
+
+## Dated status — 2026-11-13 (Claude audit-06)
+
+The focused Claude audit of response-05 ([audit-06](../topics/padua-argmax-bridge-20261105/audit-06.md)) accepts the E5-01 reader-allowlist repair (synthetic storage compatibility, with a real deduplicate/export round-trip), the analytic optimization guard, the finite per-process runtime probe and the changed analytic explanations, with no BLOCKING or MAJOR finding, and returns a MINOR wording batch. The canonical 320..510 return, the I25 data checks, the native-history custody, the post-repair snapshot and DOI, and the global generated-output budget (bound 11,756,141 B against the 10,000,000 B cap) remain OPEN with AC.
