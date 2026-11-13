@@ -134,6 +134,22 @@
   - **A4/A5/A9:** wording, envelope (5.7e-6), B&B flags and stale pointers.
 - **Material changes** go to a focused Codex review (handoff 05). No IDs; PR #34 stays draft.
 
+## 2026-11-13 — Codex — focused review of response 01
+
+- Request: `Codex (gpt-6-astra high): Continue claude/padua-effective-cubature-20261112.` Role: independent audit orchestrator; bounded mathematical/code/record reviews use the same explicitly selected `gpt-6-astra high` audit workers. The runtime metadata disclosure in the first audit entry still applies.
+- Rules read at `4200087fbb30727a196e0ae86be29236f7d18917`; response candidate `6c178e9d657419467c8b6eed2909ffa1347a32eb`. Fetched main/topic and fast-forwarded the clean checkout; current main remains base `b5388c25a2a5ccb8d0faf816ab87023cf347bcd3`, an ancestor of the topic. Rules are unchanged. No IDs/reservations (no range).
+- Open step: [handoff 05](handoffs/05-focused-review.md). Review is restricted to response A1–A9 changes and their dependencies; accepted -01 through -04 and -06 mathematics are not reopened. No new mechanism or priority claim is generated; the retrospective novelty-coverage claim is being checked against the registry.
+- `evidence_manifest.py --verify`: all ten evidence size/hashes PASS. Separate comparison of all ten producer hashes and the compact receipt's gamma-receipt hash also PASS. Corrected cube `--q1a --out /tmp/padua-review02/q1a-cube.json`: exact controls PASS for n=2–8. These are executed checks, distinct from certificate inspection.
+- Bounded review reports and the final verdict will be recorded in `audit-02.md`; full gamma/compact input-dependent runs remain subject to actual input retrieval. Generated outputs stay outside Git under `/tmp/padua-review02*` or the review workers' named scratch paths.
+
+### Focused review completion
+
+- [audit-02.md](audit-02.md): **WORK, one MAJOR and three MINOR**. The remaining MAJOR is the retrospective full-table-read assertion: the stated list omits disposition tables and admits truncated cells. Timing/prospectivity correction is accepted; no new duplicate or theorem counterexample is found.
+- A1 compact-support repair and A2 certified coefficient-radius repair pass their scoped analytic/code inspections and bounded independent controls. A3–A7 pass the assigned focused checks. Minor corrections concern the compact proof's rounded display chain, an inward-rounded coefficient-error upper bound, and current LOG synchronization including duplicate -05 statuses. Development theory/result-bearing code was not edited by this audit.
+- Three bounded reports and two reproducible audit-control sources are in `audit-work/review02-*`, `audit-work/review02_gamma_controls.py` and `audit-work/compact-controls.py`. Controls check exact spline identities, fixed receipt arithmetic, actual compact-script arithmetic on synthetic inputs, six coefficient conversions, six exact Taylor boxes, coefficient-error-only bounds and tail-radius propagation. All final controls pass; these are not real DGOV coefficient runs.
+- Fresh input retrieval still returns HTTP403. Neither complete gamma certificate, the real compact moment check nor the Fourier cross-check was executed by this focused audit. Prior receipts remain preserved; the missing replay is recorded as a coverage limitation under handoff 05, not a fresh PASS or a counterexample. Detailed commands/versions/identities are in the bounded reports.
+- The next instruction is [handoff 06](handoffs/06-response.md): Claude answers B1–B4. No PR preparation, ID reservation/allocation or shared-registry update is authorized by the present review verdict; PR #34 stays draft. Only the changed response scope is eligible for any subsequent focused review.
+
 ## Runs needed (retained development list)
 
 - Delsarte torus LP n = 9…12 at K = 3n−2 (`attempts/E1.md`); cube LP n ≥ 5 and its Delsarte extension (`attempts/E3.md`); certified φ (-05). *(2026-11-13: "certified φ (-05)" is done. The general-L¹ witness is in -07 and the compact-support witness in -05; see the response-01 entry. The other items stay deferred and unrun; the audit handoff authorises no new development.)*
