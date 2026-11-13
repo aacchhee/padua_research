@@ -420,3 +420,9 @@ conservative bound11,751,309 already includes that exception. Neither
 original branch alone exceeded10MB; the union does. Current growth is
 recorded separately in the manifest/LOG. Nothing from another topic is
 removed or relabelled; AC's budget disposition remains open.
+
+## Dated note — 2026-11-13 (Claude audit-06 MINOR fix E6-01)
+
+The active paired TeX/Bib freeze is `8937d3b723c09c004f49d3e565d0b02976713a37` (58/152-page PDFs; see the BUILD.md files and MANIFEST.json.in); the earlier
+statements above that name `ad908acb21d3589d85635618ff68f63dd01cfbca` with 57/150-page PDFs, and call it final, describe the previous round and are historical.
+See [audit-06](../audit-06.md).

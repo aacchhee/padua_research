@@ -60,3 +60,9 @@ The supplementary reviewer directly compared all19 C4C and13 C4B listed
 pairs against original24a98db, including initial edits, and reread every
 flagged restoration. Its report records this bounded deletion-integrity
 coverage; this does not replace the focused Claude mathematical audit.
+
+## Dated correction — 2026-11-13 (Claude audit-06 MINOR fix M6-04)
+
+Rows C1 (line 9), C10 (line 18) and B5 (line 37) above claim their one-line reasons were retained in the 24a98db-to-ad908acb consolidation. The audits (audit-05 M5A-02, audit-06) found that
+three of those reasons were lost and restored only in the 8937d3b freeze (response-05); these rows are not evidence that the omitted lines survived the old freeze. See [audit-05](audit-05.md),
+[audit-06](audit-06.md). No earlier text was edited.
