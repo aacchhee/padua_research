@@ -1042,7 +1042,7 @@ For an illustrative absorption inequality, suppose a leaf containing
 a maximizer gave $V_R=7$ and $\theta_R=1/8$. Then
 $M_*\leq7+M_*/8$ implies $M_*\leq8$. The same algebra works for
 arbitrary validated vertex values with $\theta_R<1$. This example
-only illustrates the rearrangement; the retained certificates have
+only illustrates the rearrangement; the recorded certificates have
 their own recorded inputs. A numerical upper $M$ can be rounded
 upward from the largest leaf ratio and then used as an already
 established constant in subsequent local tests.
@@ -1052,7 +1052,7 @@ must provide their numerical vertex premises in this construction.
 Any one of them might contain $z_*$. A missing local premise would
 leave open the corresponding possibility for the maximizing point.
 An analytic comparison on a far region has a different form and a
-different dependency, so the retained hybrid construction uses the
+different dependency, so the recorded hybrid construction uses the
 independent grid norm when such a region is represented analytically.
 Alternatively the quarter-grid points
 $E=\{(i/4,j/4):i,j\geq0,\ i+j\leq4\}$ and their upper maximum $V_E$
@@ -1183,7 +1183,7 @@ domain hypothesis, so its use in the final implication is tied to
 the actual near case. The enclosing near proxy provides an
 arithmetically convenient sufficient test for that case.
 
-I25 computes the exact maximum of the quadratic $q_R$ on each
+The independent phase checker computes the exact maximum of the quadratic $q_R$ on each
 nonempty clipped polygon $R\cap\mathcal T\cap\text{proxy}$.
 It checks polygon vertices, stationary points on every edge, and
 interior critical points. A maximum of a differentiable function in
@@ -1432,7 +1432,7 @@ $\mathcal T$ to $a+b\geq1/2$. This guard differs from the
 near/far division at $\rho=1/2$ used in the numerical predicates.
 The analytic far estimate can therefore replace a numerical far
 leaf only when its entire relevant closed domain satisfies the
-stronger half-$\pi$ guard. In the retained rectangle predicate, a
+stronger half-$\pi$ guard. In the recorded rectangle predicate, a
 lower-left sum at least $1/2$ ensures that condition on the whole
 rectangle and hence on its triangle intersection.
 
@@ -1473,9 +1473,9 @@ used by the verification proposition below.
 
 \subsection{Evidence and arithmetic}
 \begin{proposition}[Computer-assisted finite verification]\label{cert:finite-verification}
-For every integer $2\leq n\leq40$ the retained polynomial certificate
+For every integer $2\leq n\leq40$ the recorded polynomial certificate
 satisfies the coefficient and complete-partition predicates above.
-For every integer $41\leq n\leq511$ both retained certificate records have been
+For every integer $41\leq n\leq511$ both recorded certificate records have been
 recertified with independently computed bounds satisfying the norm,
 closed-cover, defect-floor and corner predicates above.
 With the arithmetic model and mathematical premises specified in
@@ -1493,7 +1493,7 @@ reconstructs the complete tree in each certificate record, directly encloses the
 cardinal sums, and certifies their strict rational comparisons. It uses
 its own vertex upper bounds, corner lower endpoint and global norm in
 every leaf and corner test. At each degree the primary and fresh
-native passes produced the same tree and exact phase keys; I25 checks
+native passes produced the same tree and exact phase keys; the independent phase checker checks
 both records, so its 942 checks cover 471 distinct trees.
 The phase-to-physical implication proved above then excludes every point
 except the two corner origins. At those origins the cardinal identity
@@ -1511,12 +1511,12 @@ The evaluated product form, obtained from the sine-ratio kernel in
 Section~\ref{sec:corner}, is
 \[
  \begin{aligned}
- R_\ell(t)&=\frac{\sin(\ell t)}{\sin t},\\
- G_n(u,v)&=R_{n+1}(s)R_{n+1}(t)+R_n(s)R_n(t)-\cos(nu),\\
- s&=(u+v)/2,\qquad t=(v-u)/2.
+ R_\ell(\xi)&=\frac{\sin(\ell\xi)}{\sin\xi},\\
+ G_n(u,v)&=R_{n+1}(u_+)R_{n+1}(u_-)+R_n(u_+)R_n(u_-)-\cos(nu),\\
+ u_+&=(u+v)/2,\qquad u_-=(v-u)/2.
  \end{aligned}
 \]
-At $t=j\pi$ the linked value is
+At $\xi=j\pi$ the linked value is
 $R_\ell(j\pi)=\ell(-1)^{j(\ell-1)}$, by the ratio of the first
 nonzero derivatives of numerator and denominator.
 For an actual-function value the four reflected terms are added before
@@ -1561,13 +1561,13 @@ throughout.
 Stage & Proved in the text (premise) & Computed by the program & Implementation trust\\\midrule
 Polynomial certificates & Cardinal identities, Bernstein positivity, complete-cover implication & Coefficient enclosures, midpoint partitions and strict coefficient tests & C++/GMP, 192-bit outward integer rounding, compiler and Python driver\\
 Direct phase sums & Kernel and reflection identities, endpoint weights, collision values, $\pi$ and Taylor bounds & New finite-sum intervals at exact rational arguments & Python integer/\texttt{Fraction} operations and conversions; guarded NumPy operations~\cite{NumPy2020}\\
-Interval endpoints & Rounding model and error bound derived below & Widened finite terms and pairwise sums & IEEE binary64 round-to-nearest, gradual underflow, comparisons, \texttt{nextafter}~\cite{IEEE7542019}\\
+Interval endpoints & Error bound derived below (under the assumed IEEE model) & Widened finite terms and pairwise sums & IEEE binary64 round-to-nearest, gradual underflow, comparisons, \texttt{nextafter}~\cite{IEEE7542019}\\
 Closed cover & Positive interpolation, selected-pair floors, corner descent, parity and chart cover & GRID/TREE norm, proxy intersections, exact polygon maxima and strict margins & Exact rational checker and strict parsing\\
 Analytic branches & Floor tiers, \eqref{ul:corner256}, Corollary~\ref{ul:far192} and elementary constants & Degree and closed-guard checks; rational base comparisons & Python integers and \texttt{Fraction}; recorded base-evaluation receipt\\
 \bottomrule
 \end{tabular}
 \par\smallskip\footnotesize
-The analytic lemmas are premises proved in the text; I25 checks their
+The analytic lemmas are premises proved in the text; the independent phase checker checks their
 metadata and guards. The base arithmetic for their displayed constants
 uses \texttt{code/onset512\_analytic/}\allowbreak\texttt{check.py};
 its receipt is \texttt{code/onset512\_analytic/}\allowbreak\texttt{receipt.json}.
@@ -1601,17 +1601,21 @@ Degrees & Count & Checked witnesses & Tree nodes\\
 \end{tabular}
 \end{table}
 
-The last two rows give 471 phase degrees and 942 checked witnesses.
+The last two rows of Table~\ref{cert:coverage} give 471 phase degrees
+and 942 checked records of 471 distinct trees.
 The trees for degrees $320,\ldots,510$ each have 51 nodes, 26 leaves
 and three analytic far leaves, and use the GRID norm. The independent
 check verifies their numerical and noncorner near regions with its own
 bounds and applies the analytic corner estimate from 256.
-Section~\ref{sec:argmax} supplies the analytic proof for every $n\geq512$.
-Together these ranges cover every integer $n\geq2$.
+\begin{proof}[Proof of Theorem~\ref{thm:main-location}]
+For $n\geq512$, apply Theorem~\ref{ul:tail-location}; for
+$2\leq n\leq511$, apply Proposition~\ref{cert:finite-verification}.
+These ranges cover every integer $n\geq2$.
+\end{proof}
 
 The certificate search used a separately recorded native implementation
 with Arb~\cite{Johansson2017Arb}, FLINT~\cite{FLINT},
-MPFR~\cite{Fousse2007MPFR} and GMP~\cite{GMP}. The retained trees and exact
+MPFR~\cite{Fousse2007MPFR} and GMP~\cite{GMP}. The recorded trees and exact
 phase keys are inputs to the independent direct-sum checker described
 above. All 942 witnesses passed its recertification with substituted
 bounds. No stored native numerical endpoint is a premise or is
@@ -1620,13 +1624,15 @@ A phase key is the exact rational argument identifying a finite sum.
 A separate
 execution checked both certificate records at each of degrees 41, 458 and 511.
 
-All essential certificates and the independent verification records are
-retained. The compact returns additionally include complete
-numerical histories for selected degrees 199, 238, 475 and 458 for detailed
-inspection. Full histories for the other degrees remain at their recorded
-computation sites. The source package, arithmetic assumptions, runtime
-identities, file hashes and commands describe regeneration, and the
-accompanying manifest identifies the complete proof inventory.
+The essential certificates, independent verification records, source
+identities and reproduction commands are identified by the package inventories.
+These inventories record past computation and do not establish current custody.
+At this version, the canonical onset-512 return archive and the independent
+phase-checker evidence bundle are unavailable. Data-only checks of the four
+witnesses at degrees 320, 384, 458 and 510 therefore remain open.
+Present availability of the unsampled native histories (about 632 MiB) is
+unverified. Selected native histories are auxiliary provenance; they supply no
+numerical premise to the independent recertification.
 
 \paragraph{An elementary derivation of the arithmetic bounds.}
 Write $\operatorname{RN}(y)$ for the closest binary64 number to a real

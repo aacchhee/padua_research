@@ -66,7 +66,9 @@ and their two half weights add to one.  This simple observation is also
 responsible for the exact normalization of the periodic sum below.
 
 For evaluation, with $P_n=T_{n+1}+T_n$, one may equivalently use
-$G_n(u,v)=[P_n(\cos u)-P_n(\cos v)]/(\cos u-\cos v)-\cos(nu)$.
+\begin{equation}\label{eq:kernel-evaluation}
+ G_n(u,v)=\frac{P_n(\cos u)-P_n(\cos v)}{\cos u-\cos v}-\cos(nu).
+\end{equation}
 At a collision this means the polynomial divided difference, including
 $P_n'(\cos u)$ at equality.  Every formula below includes these values.
 
@@ -89,9 +91,11 @@ most $\pi$:
 
 Use odd mesh charts
 \begin{equation}\label{ul:charts}
- \theta=(J\pi+\alpha)/n,\quad \phi=(K\pi+\beta)/m,
- \quad J+K\text{ odd},\quad |\alpha|+|\beta|\leq\pi,
- \quad (\theta,\phi)\in[0,\pi]^2,
+ \begin{aligned}
+ \theta&=(J\pi+\alpha)/n,\qquad \phi=(K\pi+\beta)/m,\\
+ J+K&\text{ odd},\qquad |\alpha|+|\beta|\leq\pi,
+       \qquad (\theta,\phi)\in[0,\pi]^2.
+ \end{aligned}
 \end{equation}
 where $0\leq J\leq n$, $0\leq K\leq m$.  These cover the closed
 square: in each angular mesh rectangle, the distances in mesh-index units to its
@@ -307,7 +311,7 @@ pairs give a positive lower bound for the second. After the comparison
 theorem, two scalar gates and one corner lemma complete the analytic
 argument. Their roles are:
 \[
-\begin{array}{llll}
+\begin{array}{l@{\quad}l@{\quad}l@{\quad}l}
 \text{phase region}&\text{center}&\text{comparison}&\text{degree}\\
 \rho\leq1/2&\text{noncorner}&\lambda_n<\Lambda_c-9/1000&n\geq512\\
 1/2\leq\rho\leq1&\text{all}&S_n<\Lambda_c-1/7&n\geq512\\
@@ -987,7 +991,7 @@ $M/3$, $\mu^4M/3$ in the squared variables.
 Indeed for even smooth $f$,
 \[
  \frac{d^2}{ds^2}f(\sqrt{2s})
-   =\int_0^1\!\int_0^1u_1^2f^{(4)}(u_2u_1\sqrt{2s})\,du_2\,du_1.
+   =\int_0^1\!\int_0^1v_1^2f^{(4)}(v_2v_1\sqrt{2s})\,dv_2\,dv_1.
 \]
 This identity also explains the apparent singularity at $s=0$.
 Differentiating $f(\sqrt{2s})$ twice directly produces negative
@@ -996,11 +1000,11 @@ form makes the cancellation explicit.  Evenness gives $f'(0)=0$,
 and the fundamental theorem of calculus gives
 
 \[
- \frac{f'(A)}A=\int_0^1f''(u_1A)\,du_1.
+ \frac{f'(A)}A=\int_0^1f''(v_1A)\,dv_1.
 \]
 
 Differentiate with respect to $s=A^2/2$ and use $f'''(0)=0$ to
-write the resulting $f'''(u_1A)$ as an integral of $f^{(4)}$.
+write the resulting $f'''(v_1A)$ as an integral of $f^{(4)}$.
 The displayed double integral results.  It extends continuously to
 $A=0$.  Its nonnegative weight has integral $1/3$, which gives the
 factor $M/3$ from a fourth-derivative bound $M$.
@@ -1105,7 +1109,8 @@ needs $p/2\leq \mathsf{a}$, so gives
 $E_c\leq(4I_4/\pi^2)p^{3/2}/\sqrt {\mathsf{a}}< (9/25)/\sqrt2<4/15$.
 
 At $n=256$, \eqref{ul:log-series} gives $277/50<L<111/20$,
-$\bar{L}<131/20$.  Positive substitution gives
+$\bar{L}<131/20$. Table~\ref{uc:base-values} records the base enclosures.
+Positive substitution gives
 \begin{gather*}
  \mathfrak{T}>107/10,\quad\bar e<1/5,\quad K_D<1/5,\quad
  \overline C_E<3/2,\\ C_4<9/500,\quad
@@ -1192,7 +1197,8 @@ $S_n-\Lambda_c\leq \mathfrak p_n(1/2)<-1/7$; for $\rho\geq1$ use
 Corollary~\ref{uc:absolute-gate}. At a corner center with
 $\rho\leq1/2$, the inward phases lie in the closed $\pi/4$ square,
 and Lemma~\ref{ul:corner-lemma} is strict away from its origin.
-Thus only odd endpoint pairs remain: $(n,m),(0,m)$ when $n$ is
+Thus only odd endpoint pairs remain, corresponding to $(-1,-1)$
+and respectively $(1,-1)$ or $(-1,1)$: $(n,m),(0,m)$ when $n$ is
 even and $(n,m),(n,0)$ when $n$ is odd. Reflection in the first
 coordinate for even $n$, or the second for odd $n$, permutes nodes and
 cardinals, so the two values agree. Continuity and compactness give

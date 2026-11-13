@@ -33,10 +33,11 @@ For the Padua points of total degree $n$ on the square, we determine the maximiz
 exactly at the two corners outside the interpolation set, for every $n\geq2$.
 Writing $N=n+1/2$ and $d=\gamma+\log(8/\pi)$, where $\gamma$ is Euler's constant, the expansion is
 $\Lambda_n=(4/\pi^2)(\log N+d)^2+\kappa-1/N+O(\log N/N^2)$,
-where $\kappa\approx0.919710118388$ is given by a convergent integral. The corner expansion
+where $\kappa\approx0.919710118388$ is given by a convergent integral
+(the numerical value is not used in any proof). The corner expansion
 is analytic: two harmonic sums give the leading square, while a coupled
 correction accounts for the constant and the reciprocal term. The global
-maximizer proof retains the cancellation lost by a periodic majorant.
+maximizer proof quantifies the cancellation that a periodic majorant loses.
 The computer-assisted location proof combines analytic localization for
 $n\geq512$ with rigorous finite certificates below that threshold.}
 \keywords{Padua points, Lebesgue constant, bivariate interpolation, asymptotic expansion, computer-assisted proof}
@@ -85,13 +86,15 @@ evidence and final manuscript content. Final human review and publication
 preparation remain to be completed.
 
 \bmhead{Data and code availability}
-Manuscript and checker sources are available in the pinned repository snapshot
-\url{https://github.com/aacchhee/padua_research/tree/a433c7d}.
+Manuscript and checker sources are maintained at
+\url{https://github.com/aacchhee/padua_research}.
+A permanent post-repair source snapshot for this version is being prepared.
 The essential certificate archives and reproduction package will be
 deposited in Zenodo (\textbf{DOI pending}). The package includes the frozen
 engine, independent checker, runtime and package pins, and verification
 commands. Section~\ref{sec:certificates} gives the finite verification scope;
-the archive inventories distinguish essential witnesses and retained histories.
+the archive inventories distinguish essential witnesses and auxiliary native histories.
+Current retrieval limitations are stated there.
 
 \bibliography{references}
 \end{document}

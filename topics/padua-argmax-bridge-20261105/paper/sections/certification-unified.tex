@@ -218,8 +218,7 @@ absolute value at most $M_*$. Consequently the derivative argument is
 valid initially with this true, possibly unknown, norm. If all leaves
 are numerical and $\theta_R<1$, a leaf containing that point gives
 $M_*\leq V_R+\theta_RM_*$. Absorbing its last term and then taking
-the largest possible leaf ratio yields
-The \emph{tree norm} is
+the largest possible leaf ratio yields the \emph{tree norm}
 \begin{equation}\label{cert:tree-norm}
  M_*\leq\max_R\frac{V_R}{1-\theta_R}.
 \end{equation}
@@ -337,9 +336,9 @@ boundary.
 
 \subsection{Evidence and arithmetic}
 \begin{proposition}[Computer-assisted finite verification]\label{cert:finite-verification}
-For every integer $2\leq n\leq40$ the retained polynomial certificate
+For every integer $2\leq n\leq40$ the recorded polynomial certificate
 satisfies the coefficient and complete-partition predicates above.
-For every integer $41\leq n\leq511$ both retained certificate records have been
+For every integer $41\leq n\leq511$ both recorded certificate records have been
 recertified with independently computed bounds satisfying the norm,
 closed-cover, defect-floor and corner predicates above.
 With the arithmetic model and mathematical premises specified in
@@ -372,10 +371,12 @@ The independent checker evaluates the finite primitive
 \eqref{ul:cardinal-reflection}, using the corrected kernel of
 Lemma~\ref{lem:cardinal-kernel}. In particular the evaluated product form is
 \[
-G_n(u,v)=R_{n+1}(s)R_{n+1}(t)+R_n(s)R_n(t)-\cos(nu),
-\quad s=(u+v)/2,\quad t=(v-u)/2,
+\begin{aligned}
+G_n(u,v)&=R_{n+1}(u_+)R_{n+1}(u_-)+R_n(u_+)R_n(u_-)-\cos(nu),\\
+u_+&=(u+v)/2,\qquad u_-=(v-u)/2,
+\end{aligned}
 \]
-where $R_\ell(x)=\sin(\ell x)/\sin x$ and
+where $R_\ell(\xi)=\sin(\ell\xi)/\sin\xi$ and
 $R_\ell(j\pi)=\ell(-1)^{j(\ell-1)}$ at removable arguments.
 This is the finite sine-product kernel derived in Section~\ref{sec:corner}.
 It retains every endpoint weight, the
@@ -391,7 +392,8 @@ endpoint is a premise or is asserted valid; only the trees and exact
 phase keys are reused.
 
 The arithmetic model is IEEE 754 binary64, rounded to nearest with ties
-to even and gradual underflow \cite{IEEE7542019}. For a normal result,
+to even and gradual underflow \cite{IEEE7542019}. Let
+$\epsilon_{\mathrm{fp}}=2^{-53}$ be the unit roundoff. For a normal result,
 $\operatorname{fl}(a\mathbin\circ b)=(a\mathbin\circ b)(1+\delta)$,
 $|\delta|\leq\epsilon_{\rm fp}$; subnormal operations are covered by
 outward adjacent-value widening. Products of $k$ such normal factors
@@ -404,13 +406,14 @@ and exact rational operations use Python's documented integer and
 The arithmetic starts with the exact rational enclosure from Machin's
 identity $\pi=16\arctan(1/5)-4\arctan(1/239)$.
 Integer argument reduction and reflection put the sine arguments in
-$[0,\pi/2]$. Let $\epsilon_{\mathrm{fp}}=2^{-53}$ be the unit roundoff,
-and let $0<t<2$ be the rounded nonzero reduced argument.
+$[0,\pi/2]$. Let $0<t<2$ be the rounded nonzero reduced argument.
 The degree-25 Taylor polynomial, evaluated by Horner's rule (successive
 nested multiplication and addition), has error less than
 $84\epsilon_{\mathrm{fp}}t$; the implemented allowance is
-$128\epsilon_{\mathrm{fp}}t$. The arithmetic proof in the reproducibility
-package derives this bound and its integer and normal-operation guards.
+$128\epsilon_{\mathrm{fp}}t$. The elementary derivation in the expanded
+companion, Section~\ref{sec:certificates}, paragraph ``An elementary
+derivation of the arithmetic bounds'', proves this bound and its integer
+and normal-operation guards.
 In outline, at most 38 normal rounding factors contribute less than
 $77\epsilon_{\rm fp}t$, the Taylor tail is bounded by
 $t\,2^{26}/27!<\epsilon_{\rm fp}t$,
@@ -498,13 +501,17 @@ These ranges cover every integer $n\geq2$.
 
 The certificate search used a separately recorded native implementation
 with Arb~\cite{Johansson2017Arb}, FLINT~\cite{FLINT},
-MPFR~\cite{Fousse2007MPFR} and GMP~\cite{GMP}. The retained trees and exact
+MPFR~\cite{Fousse2007MPFR} and GMP~\cite{GMP}. The recorded trees and exact
 phase keys are inputs to the independent direct-sum checker described
 above. All 942 records passed recertification with substituted bounds, and a separate
 execution checked both witnesses at each of degrees 41, 458 and 511.
 
 The essential certificates, independent verification records, source
-identities and reproduction commands are identified by the inventories
-in the package cited in the Data and code availability statement.
-Selected native histories are auxiliary provenance; they supply no
+identities and reproduction commands are identified by the package inventories.
+These inventories record past computation and do not establish current custody.
+At this version, the canonical onset-512 return archive and the independent
+phase-checker evidence bundle are unavailable. Data-only checks of the four
+witnesses at degrees 320, 384, 458 and 510 therefore remain open.
+Present availability of the unsampled native histories (about 632 MiB) is
+unverified. Selected native histories are auxiliary provenance; they supply no
 numerical premise to the independent recertification.

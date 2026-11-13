@@ -21,15 +21,19 @@ indices and $1/2$ at endpoints.  Product to sum in the cardinal formula gives
  \qquad w_{jk}=\frac{2\varepsilon_j\eta_k}{\mathsf N}.
 \end{equation}
 For evaluation, with $P_n=T_{n+1}+T_n$, one may equivalently use
-$G_n(u,v)=[P_n(\cos u)-P_n(\cos v)]/(\cos u-\cos v)-\cos(nu)$.
+\begin{equation}\label{eq:kernel-evaluation}
+ G_n(u,v)=\frac{P_n(\cos u)-P_n(\cos v)}{\cos u-\cos v}-\cos(nu).
+\end{equation}
 A collision means equality of the two cosine arguments. At a collision this means the polynomial divided difference, including
 $P_n'(\cos u)$ at equality.  Every formula below includes these values.
 
 Use odd mesh charts
 \begin{equation}\label{ul:charts}
- \theta=(J\pi+\alpha)/n,\quad \phi=(K\pi+\beta)/m,
- \quad J+K\text{ odd},\quad |\alpha|+|\beta|\leq\pi,
- \quad (\theta,\phi)\in[0,\pi]^2,
+ \begin{aligned}
+ \theta&=(J\pi+\alpha)/n,\qquad \phi=(K\pi+\beta)/m,\\
+ J+K&\text{ odd},\qquad |\alpha|+|\beta|\leq\pi,
+       \qquad (\theta,\phi)\in[0,\pi]^2.
+ \end{aligned}
 \end{equation}
 where $0\leq J\leq n$, $0\leq K\leq m$.  These cover the closed
 square: in each angular mesh rectangle, the distances in mesh-index units to its
@@ -99,13 +103,12 @@ The organizing identity is
 The model comparison bounds the first bracket; selected reflected
 pairs give a positive lower bound for the second. After the comparison
 theorem, two scalar gates and one corner lemma complete the analytic
-argument. Here $A,B\geq0$ denote inward corner phases, so near $(-1,-1)$
-the physical point is $(-\cos(A/n),-\cos(B/m))$.
+argument.
 The absolute gate $\mathcal G$ and relative quadratic $\mathfrak p_n$
 are defined in Corollaries~\ref{uc:absolute-gate}--\ref{uc:relative-gate}.
 Figure~\ref{fig:phase-regions} shows their domains. Their roles are:
 \[
-\begin{array}{llll}
+\begin{array}{l@{\quad}l@{\quad}l@{\quad}l}
 \text{phase region}&\text{center}&\text{comparison}&\text{degree}\\
 \rho\leq1/2&\text{noncorner}&\lambda_n<\Lambda_c-9/1000&n\geq512\\
 1/2\leq\rho\leq1&\text{all}&S_n<\Lambda_c-1/7&n\geq512\\
@@ -131,9 +134,10 @@ used only by the finite certificates in Section~\ref{sec:certificates}.
  \node[below] at (.5,0) {$\frac12$};
  \node[below] at (1,0) {$1$};
  \node[below] at (3.14,0) {$\pi$};
- \node at (1.65,1.20) {absolute gate};
- \node[anchor=west] at (1.45,.68) {$\mathfrak p_n$ on $\rho\leq1$};
- \draw[->] (1.40,.64)--(.62,.23);
+ \node[anchor=west,fill=white,inner sep=2pt] at (2.15,1.6) {absolute gate};
+ \draw[->] (2.1,1.6)--(1.25,1.35);
+ \node[anchor=west,fill=white,inner sep=2pt] at (1.45,.65) {$\mathfrak p_n$ on $\rho\leq1$};
+ \draw[->] (1.42,.62)--(.67,.21);
 \end{tikzpicture}
 \caption{The folded phase triangle. On the darkest triangle a
 noncorner chart uses $\Delta>1/20$ together with $\mathfrak p_n$.
@@ -372,7 +376,7 @@ $M/3$, $\mu^4M/3$ in the squared variables.
 Indeed for even smooth $f$,
 \[
  \frac{d^2}{ds^2}f(\sqrt{2s})
-   =\int_0^1\!\int_0^1u_2^2f^{(4)}(u_1u_2\sqrt{2s})\,du_1\,du_2.
+   =\int_0^1\!\int_0^1v_2^2f^{(4)}(v_1v_2\sqrt{2s})\,dv_1\,dv_2.
 \]
 The nonnegative Peano kernels therefore imply that vertex losses
 $cU,cV,c(U+V)$ at $(\sqrt{2U},0),(0,\sqrt{2V}),
@@ -403,14 +407,19 @@ U_W&\geq\mathfrak T-\bar e+\mathfrak j,
 k_{Wy}&=k_{Wx}+d_\beta\geq k_{Wx}.
 \end{aligned}
 \]
-Thus the single coefficient $hk_{Wy}$ covers both axes; $h<1$
-permits the radius-one relative bound.
+Here $A_4+\rho J_W\geq0$. The positivity
+$\mathfrak T-\bar e+\mathfrak j>0$ for $n\geq256$ follows from the
+base bounds below and monotonicity, so replacing $u$ by $q_h$ preserves
+the lower bound. Thus the single coefficient $hk_{Wy}$ covers both axes;
+$h<1$ permits the radius-one relative bound.
 The general bound \eqref{uc:central-pair-general} gives
 $E_c(h,0)<1/4$: here $p=1/\sqrt2$, $\mathsf a>17/20$,
 $p^{3/2}<3/5$, $\sqrt{\mathsf a}>9/10$, and
 $4I_4/\pi^2<9/25$, so $E_c(h,0)<6/25<1/4$.
 At the other axis, $E_c(0,h)=-B_\beta\leq0$.
-For the diagonal the model loss, origin lower bound and absolute error give
+For the diagonal, Lemma~\ref{uc:master}, \eqref{uc:origin-lower}
+and \eqref{uc:global-error} give the model loss, origin lower bound
+and absolute error:
 \[
 \begin{aligned}
 \Lambda_c-S_n
@@ -425,7 +434,8 @@ needs $p/2\leq \mathsf{a}$, so gives
 $E_c\leq(4I_4/\pi^2)p^{3/2}/\sqrt {\mathsf{a}}< (9/25)/\sqrt2<4/15$.
 
 At $n=256$, \eqref{ul:log-series} gives $277/50<L<111/20$,
-$\bar{L}<131/20$.  Positive substitution gives
+$\bar{L}<131/20$. Table~\ref{uc:base-values} records the base enclosures.
+Positive substitution gives
 \begin{gather*}
  \mathfrak{T}>107/10,\quad\bar e<1/5,\quad K_D<1/5,\quad
  \overline C_E<3/2,\\ C_4<9/500,\quad

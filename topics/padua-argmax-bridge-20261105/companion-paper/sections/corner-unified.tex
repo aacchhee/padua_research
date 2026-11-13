@@ -333,8 +333,11 @@ $\log(k+1)-1/(2(k+1))=\log k+1/(2k)+O(k^{-2})$.
 
 Set
 \begin{equation}\label{cu:D}
- D_{m,r}=\psi(r+\alpha_r)+\psi(s-\alpha_r)-\psi(m-\alpha_r)-\psi(\alpha_r),
- \qquad \mathcal H_m=\frac4{\pi m}\sum_{r=1}^{m-1}w(r/m)D_{m,r}.
+ \begin{aligned}
+ D_{m,r}&=\psi(r+\alpha_r)+\psi(s-\alpha_r)
+          -\psi(m-\alpha_r)-\psi(\alpha_r),\\
+ \mathcal H_m&=\frac4{\pi m}\sum_{r=1}^{m-1}w(r/m)D_{m,r}.
+ \end{aligned}
 \end{equation}
 We claim the exact identities
 \begin{equation}\label{cu:exact}
@@ -501,7 +504,7 @@ The constant in the answer can be identified before calculating any
 first corrections. Define
 \[
  L_n=\frac2n\sum_{\substack{1\leq r\leq n\\r\text{ odd}}}
- \delta_r\csc\frac{r\pi}{2n},\qquad \delta_r=\begin{cases}1/2,&r=n,\\1,&r<n.\end{cases}
+ d_r\csc\frac{r\pi}{2n},\qquad d_r=\begin{cases}1/2,&r=n,\\1,&r<n.\end{cases}
 \]
 The equal-mesh corner sum is exactly a square:
 \begin{equation}\label{cu:square}
@@ -821,9 +824,9 @@ Summing the previous estimates gives
 Here $E_{n,L_0,\delta}$ is the sum of the finitely many interior
 Riemann-sum errors and local Taylor errors; its convergence is for
 fixed $L_0,\delta$, with $n>L_0/\delta$. The bound on $h$ also proves absolute convergence of
-$\kappa=4\sum_{\ell\text{ odd}}\sum_{\sigma=\pm1}\int_0^1h_{\sigma,\ell}$.
-Consequently $|\kappa-\kappa_{L_0}|\leq C\sum_{\ell>L_0}\ell^{-2}$.
-The triangle inequality now bounds $|\Delta_n-\kappa|$ by the two
+$\kappa_\infty=4\sum_{\ell\text{ odd}}\sum_{\sigma=\pm1}\int_0^1h_{\sigma,\ell}(t)\,dt$.
+Consequently $|\kappa_\infty-\kappa_{L_0}|\leq C\sum_{\ell>L_0}\ell^{-2}$.
+The triangle inequality now bounds $|\Delta_n-\kappa_\infty|$ by the two
 tails, the endpoint-strip error, and the interior error above. Given a target
 error $\epsilon>0$, first choose $L_0$ so that the two tail bounds
 together are less than $\epsilon/3$. Next choose $\delta>0$
@@ -833,13 +836,6 @@ This proves convergence of the complete sum using constants
 independent of $n$. In particular it proves convergence of the
 entire integer sequence, without a parity restriction.
 
-The pairing below identifies this limit with $\kappa$ of
-\eqref{eq:main-kappa}. Since $L_n^2-A(n)^2\to0$ and the scalar
-normalization error tends to zero, we have proved
-\begin{equation}\label{cu:kappa}
- \Lambda_c(n)-A(n)^2\longrightarrow\kappa
-\end{equation}
-
 Pairing orientations is an algebraic cancellation with a useful
 interpretation. Each orientation has a displacement of opposite sign,
 so their linear effects cancel. Their combined denominator satisfies
@@ -848,7 +844,13 @@ so their linear effects cancel. Their combined denominator satisfies
  =\frac{2t^2}{\ell(\ell^2-t^2)}.
 \]
 Multiplying by $4w(t)/\pi$ gives precisely the integrand and
-coefficient in $\kappa$. Thus $\kappa$ measures the surviving
+coefficient in $\kappa$ of \eqref{eq:main-kappa}, so
+$\kappa_\infty=\kappa$. Since $L_n^2-A(n)^2\to0$ and the scalar
+normalization error tends to zero, we have proved
+\begin{equation}\label{cu:kappa}
+ \Lambda_c(n)-A(n)^2\longrightarrow\kappa
+\end{equation}
+Thus $\kappa$ measures the surviving
 coupled effect of the two meshes. It is not an arbitrary additive
 constant fitted after the leading square is found.
 
@@ -1017,8 +1019,8 @@ comparison for $(z+t)^{-2}$ imply, uniformly for $z\geq1$,
  \psi(z)=\log z-\frac1{2z}+O(z^{-2}),\qquad
  \psi'(z)=z^{-1}+O(z^{-2}).
 \end{equation}
-A derivation of \eqref{cu:psi-est} follows after the half-integer
-calculation below.
+A derivation of \eqref{cu:psi-est} follows the calculation of
+$\psi'(1/2)$ below and precedes the calculation of $\psi(1/2)$.
 The reciprocal-square value needed here follows directly from
 the finite cosecant-square identity already proved. Taking its
 half-step argument and dividing by $M^2$ gives, for every positive
@@ -1062,8 +1064,7 @@ comparison, and let $\zeta_{\rm odd}(2)$ be its odd-index part. The formula just
 proved gives $\zeta_{\rm odd}(2)=\psi'(1/2)/4=\pi^2/8$. The even-index
 part is $\zeta(2)/4$, so $\zeta(2)=\zeta_{\rm odd}(2)+\zeta(2)/4$ and $\zeta(2)=\pi^2/6$.
 
-The large-$z$ expansion can also be viewed directly through
-quadrature. The series defining $\psi$ is equivalent to
+We derive the large-$z$ expansion directly through quadrature. The series defining $\psi$ is equivalent to
 \[
  \psi(z)=\lim_{J\to\infty}
        \left(\log J-\sum_{k=0}^{J-1}\frac1{z+k}\right),
@@ -1074,7 +1075,10 @@ $f(t)=1/(z+t)$ gives
  \sum_{k=0}^{J-1}f(k)
  =\int_0^J f(t)\,dt+\frac{f(0)-f(J)}2+O(z^{-2}),
 \]
-where the bound is independent of $J$. Since
+where each unit-cell trapezoid error is at most
+$\tfrac18\int|f''|$. The total error is therefore at most
+$\tfrac18\int_0^\infty2(z+t)^{-3}dt=1/(8z^2)$,
+independently of $J$. Since
 $\int_0^J f=\log(z+J)-\log z$, passage to the limit yields
 $\log z-1/(2z)+O(z^{-2})$ for $\psi(z)$.
 For $\psi'$, the integral of $(z+t)^{-2}$ is $1/z$, and the
@@ -1193,7 +1197,12 @@ $e_r=\psi(r+1/2)-\log r$, $u_r=r\psi'(r+1/2)-1$.
 We prove $e_r,u_r=O(r^{-2})$ and hence convergence of
 $S_e=\sum e_r/r$, $S_u=\sum u_r/r$.
 
-To check the infinite-interval midpoint estimate, apply the cell
+The half-integer derivative estimate we need is
+\[
+ \left|\psi'(r+1/2)-\frac1r\right|\leq\frac1{3r^3},
+ \qquad r\geq1,
+\]
+so $\psi'(r+1/2)=1/r+O(r^{-3})$. To prove it, apply the cell
 bound just proved to $f(t)=t^{-2}$ on
 $[r+k,r+k+1]$. Its second derivative is $6t^{-4}$, so
 \[
@@ -1255,8 +1264,11 @@ Let $d_0=\gamma+2\log2$, $q_0=\pi^2/4-1$ and
 $F(x)=\log x+\log(1-x)-\psi((1-x)/2)$. Substitution of
 \eqref{cu:psi-est} into \eqref{cu:center}, keeping $e_r,u_r$ intact, yields
 \begin{equation}\label{cu:row-expand}
- D_{m,r}=\log m+F(x)+e_r-\frac1{2m(1-x)}-\frac{x+u_r}{2m}+Q_{m,r},
- \quad |Q_{m,r}|\leq C\{s^{-2}+(ms)^{-1}+m^{-2}\}.
+ \begin{aligned}
+ D_{m,r}&=\log m+F(x)+e_r-\frac1{2m(1-x)}
+                 -\frac{x+u_r}{2m}+Q_{m,r},\\
+ |Q_{m,r}|&\leq C\{s^{-2}+(ms)^{-1}+m^{-2}\}.
+ \end{aligned}
 \end{equation}
 To see each term of the row expansion, start with
 $\psi(r+1/2)=\log r+e_r$ and
@@ -1399,7 +1411,8 @@ and $b(0)=\pi/2$. Set
  L(y)=\log(1-y)-\psi(1+y/2),\qquad
  P_1(y)=a\frac{\log(1-y)+d_0}{1-y}.
 \]
-Both are smooth at zero. The exact formula for $F$ gives
+Both are smooth at zero. The recurrence
+$\psi(y/2)=\psi(1+y/2)-2/y$ in the exact formula for $F$ gives
 \[
  \begin{aligned}
  R(1-y)&=A_1(y)+yb(y)\log y,\\
@@ -1689,8 +1702,8 @@ computed it. Subtract $A(n)^2$ from its result. Since
                          =O(\log n/n),
 \]
 and the remaining reciprocal terms tend to zero, that difference
-tends to $C_\Lambda$. The earlier independent mesh comparison proves that
-the same difference tends to $\kappa$. Uniqueness of a real limit
+tends to $C_\Lambda$. The independent mesh comparison \eqref{cu:kappa}
+proves that the same difference tends to $\kappa$. Uniqueness of a real limit
 therefore gives $C_\Lambda=\kappa$.
 The reciprocal coefficient before shifting from $m$ to $N$ has the
 following ledger; the harmonic contribution's logarithmic part is listed

@@ -175,8 +175,11 @@ $H_k=\log k+\gamma+1/(2k)+O(k^{-2})$ by applying it at $k+1$.
 
 Set
 \begin{equation}\label{cu:D}
- D_{m,r}=\psi(r+\alpha_r)+\psi(s-\alpha_r)-\psi(m-\alpha_r)-\psi(\alpha_r),
- \qquad \mathcal H_m=\frac4{\pi m}\sum_{r=1}^{m-1}w(r/m)D_{m,r}.
+ \begin{aligned}
+ D_{m,r}&=\psi(r+\alpha_r)+\psi(s-\alpha_r)
+          -\psi(m-\alpha_r)-\psi(\alpha_r),\\
+ \mathcal H_m&=\frac4{\pi m}\sum_{r=1}^{m-1}w(r/m)D_{m,r}.
+ \end{aligned}
 \end{equation}
 We claim the exact identities
 \begin{equation}\label{cu:exact}
@@ -451,8 +454,11 @@ Let $d_0=\gamma+2\log2$, $q_0=\pi^2/4-1$ and
 $F(x)=\log x+\log(1-x)-\psi((1-x)/2)$. Substitution of
 \eqref{cu:psi-est} into \eqref{cu:center}, yields
 \begin{equation}\label{cu:row-expand}
- D_{m,r}=\log m+F(x)+e_r-\frac1{2m(1-x)}-\frac{x+u_r}{2m}+Q_{m,r},
- \quad |Q_{m,r}|\leq C\{s^{-2}+(ms)^{-1}+m^{-2}\}.
+ \begin{aligned}
+ D_{m,r}&=\log m+F(x)+e_r-\frac1{2m(1-x)}
+                 -\frac{x+u_r}{2m}+Q_{m,r},\\
+ |Q_{m,r}|&\leq C\{s^{-2}+(ms)^{-1}+m^{-2}\}.
+ \end{aligned}
 \end{equation}
 Indeed $\psi(s)-\psi(m)$ contributes
 $\log(s/m)-1/(2s)+1/(2m)$, whereas the derivative bracket is
