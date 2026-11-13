@@ -240,3 +240,12 @@ completed local verification.
    underflow) is an **assumed** trusted semantics, not a proved one. J03 proves
    enclosure under that assumption.
 See [audit-04](../audit-04.md).
+
+
+## Witness-count clarification — 2026-11-13
+
+Audit-04 J3-01 corrects “two trees per degree” above: J03 recertified 471
+distinct trees, each supplied in two witness records. Shared cached bounds
+mean the second witness is not an independent arithmetic derivation.
+The [J03 dated clarification](J03-independent-phase-checker.md) records
+the exit-observation limitation and the audit's actual data coverage.

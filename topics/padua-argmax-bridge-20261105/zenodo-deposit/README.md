@@ -10,13 +10,25 @@ development, serving model/effort metadata unexposed. This adds no research or
 novelty claim and requires no novelty search.
 
 [MANIFEST.json.in](MANIFEST.json.in) is valid JSON with explicit null/PENDING
-fields for AC's DOI. The reviewed source snapshot is prepared below. Completed I25
+fields for AC's DOI. The historical source snapshot is recorded below. Completed I25
 source/runtime/evidence identities and known original/new
 return identities are filled. It must be completed and saved as the final MANIFEST.json after the
-missing files, source freeze and reviews exist. A placeholder filename has no
+current audit repairs, focused reviews and final source packaging are complete. A placeholder filename has no
 verified identity. The original and new file identities were read back and SHA-256
 checked locally on 2026-11-08; this does not establish an AC Windows copy or
 Zenodo retrieval.
+
+## Current access and historical scope — 2026-11-13
+
+All 2026-11-08 packaging, rehash, local availability and acceptance statements
+below are historical records. The canonical return, I25 bundle, offline runtime
+package and other off-Git archives are unavailable in this fresh workspace.
+No fresh rehash, repaired-reader canonical rerun, upload, delivery or retrieval
+is claimed. Audit-04 remains the source of the outstanding evidence checks.
+The a433c7d ZIP is a prepared historical snapshot; it predates audit-04 repairs
+and is not a final reviewed source snapshot for the repaired code. A new source
+snapshot and inventory must be created after the repair review; preserve the
+old snapshot's identity and provenance.
 
 ## Files to deposit
 
@@ -29,9 +41,9 @@ Zenodo retrieval.
 | onset512-return-20261108.zip | Canonical local provenance return, 81,602,992 B: all 191 pairs / 382 certificates for 320..510, small histories and sampled full native closures (475, 458). Locally rehashed; distinct finite-result/archive review accepted at the recorded native-evaluator scope. |
 | onset512-certificates-20261108.zip | 945,235-byte derivative: exactly 382 immutable certificates, inventory and brief README. Locally rehashed; complete provenance is in the canonical 81.6 MB return. |
 | onset512-essential-inventory.json | 75,479-byte mirror inventory, included off Git/deposit only; hash/bytes recorded here and in the small custody index. No bulk inventory copy added to Git. |
-| padua-manuscript-20261108-131012-Oslo.pdf | Final51-page accepted journal PDF,733598 B; exact identity below. |
-| padua-companion-20261108-131012-Oslo.pdf | Final147-page accepted companion PDF,1171187 B; exact identity below. |
-| padua-research-source-a433c7d-20261108.zip | Complete tracked repository snapshot at a433c7d:22,105,198bytes, all6,900 file names/sizes and ZIP CRCs checked. It includes final manuscript source24a98db, checker/proof sources and reviews; the original runtime package is separately retained. |
+| padua-manuscript-20261108-131012-Oslo.pdf | Historical 51-page journal PDF,733598 B; exact identity below. |
+| padua-companion-20261108-131012-Oslo.pdf | Historical 147-page companion PDF,1171187 B; exact identity below. |
+| padua-research-source-a433c7d-20261108.zip | Complete tracked repository snapshot at a433c7d:22,105,198bytes, all6,900 file names/sizes and ZIP CRCs checked. It includes historical manuscript source24a98db, checker/proof sources and reviews; the original runtime package is separately retained. |
 | i25-evidence-20261108T112304Z.zip | 2,843,611-byte completed I25 evidence: all 942 proof inputs, executed full/pilot sources, runtime identities, preregistrations/amendments, logs, receipts and controls, including failed v1 and independent six-certificate replay. Locally rehashed. |
 | onset512-independent-review-20261108.zip | Separate 51,749-byte supplementary review evidence package. Locally rehashed; not the canonical native return or the I25 full evidence ZIP. |
 | README.md, MANIFEST.json | Completed deposit instructions and exact final file list, with AC's DOI and retrieval date once real. |
@@ -57,7 +69,7 @@ The [completed finite campaign summary](../local-onset512-summary.md) records
 quiescence, sampling, archive generation and developer/portable verification.
 This local rehash is an identity check, not a new mathematical/result audit.
 
-## Verified original and new identities
+## Recorded original and new identities — 2026-11-08
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
@@ -85,6 +97,38 @@ not imply that the host compiler, glibc or Python were identical everywhere.
 The local onset preregistration records its own Python and runtime identities.
 Do not overwrite those historical runtime distinctions.
 
+The unchanged `original-padua30.zip` contains the **unrepaired historical**
+`verify_compact.py`, SHA-256
+`7c2dad53519aff616bdadd3f925ec8943963cb4bf521b410355f827b7a1899bf`.
+Audit-04 demonstrated acceptance of altered attempt status, summary receipt
+path and trusted-source shadowing (H1–H3). Preserve that original package for
+provenance and invoke the separately trusted reviewed source-tree verifier.
+The audit-03 repaired verifier included in the a433c7d snapshot has SHA-256
+`5867ac0c6d6e1d380d72c118262177a10b617631e039da11f489e45c93ff61b6`;
+it passed the audit-04 review at that historical identity. Further E4-04
+repairs have a new identity and require their own focused review; the old
+snapshot does not include them. Never attribute a repair to the original run.
+
+
+The 2026-11-13 repair candidates have these SHA-256 identities:
+
+| Source | SHA-256 |
+|---|---|
+| `return_bundle.py` | `5e25c8a47115e114d20e64fa6ac7b2afb30dde0bfebef371f1e709857795ae2e` |
+| `verify_compact.py` | `2d26886fa38089815712edcceccd4ac893fea9d8e6092afbd4c0faac7b569cef` |
+| `runner.py` | `a198b65182590be13cb91110ff976d90e7e885c778180e59699fbe9b067ccdad` |
+
+These identities describe the current source repair, not the historical
+executions or the a433c7d source ZIP. Distinct focused review is pending;
+the actual pinned canonical archive rerun remains blocked by absent inputs.
+The reader defaults to canonical archive SHA-256 `da63280a7e4aec86fa52e3f8384620fbf07939006ab5f6f70222fa2485816e7e`
+and independently pins runtime manifest SHA-256
+`5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16`.
+It reports verified counts and its own source identity. The compact verifier
+reports `expect_plan` and `coverage_mode`; use `--expect-plan all` for the
+complete original plan. The historical preregistration's runner identity is
+preserved separately; the repaired runner is not attributed to that campaign.
+
 ## Verification commands
 
 The small I25 bundle contains every phase witness. A [data-only recheck
@@ -93,13 +137,13 @@ trusted checker source, without the native-history archives. Git-based
 manuscript preservation checks use a clone containing the cited commits.
 
 The scientific verifier commands below are instructions, **not newly executed
-scientific checks for this custody edit**. Preparation read/rehashed existing
-files and inspected source; the nonmutating storage-tool smoke recorded below
-was actually executed. Use the final reviewed
+scientific checks for this 2026-11-13 edit**. The 2026-11-08 preparation recorded
+readback of existing files and a nonmutating storage-tool smoke, as described
+below. Those historical actions were not repeated in this fresh workspace. Use the final reviewed
 repository source and a fresh scratch layout. The original package is a trusted
 input supplied separately from the return; never execute source found inside
 a returned data archive. Keep the deposited original package bytes unchanged.
-The reviewed source-tree verifier's invocation against the unchanged original
+The source-tree verifier's prospective invocation against the unchanged original
 trusted package, from the repository root, is:
 
 ```sh
@@ -120,10 +164,10 @@ coverage list, not merely PASS: exactly integers 41..319 and control 511, all
 E-01–E-04 review actually reran this command and all 30 corruption/behavior
 controls; see [the verifier record](../compact-verifier-audit03-response.md).
 
-The local onset ZIP verifier currently has this interface, inspected in source:
+The prospective repaired local onset ZIP verifier uses:
 
 ```sh
-python3 -B topics/padua-argmax-bridge-20261105/code/local_onset512_campaign/return_bundle.py \
+python3 -E -B topics/padua-argmax-bridge-20261105/code/local_onset512_campaign/return_bundle.py \
   verify local-output/argmax-bridge-20261105/onset512-return-20261108.zip
 ```
 
@@ -134,18 +178,21 @@ the extracted arithmetic tree is absent. Its runner fixes the trusted package
 at `local-output/argmax-bridge-20261105/compact-release-aea62883/padua30` and checks
 the extracted arithmetic paths from asset_provenance.json. Deposit the final
 reviewed setup instructions for that exact layout with the source snapshot.
-The inspected verifier's success label is `accepted_pending_independent_review`,
+The historical verifier's success label was `accepted_pending_independent_review`,
 191 pairs/382 proofs; that label does not constitute distinct audit acceptance.
 The label is historical program wording: the separate
-[finite-result/archive review](../independent-checks-onset512-response.md) is now
-accepted. Do not infer a pending current result from that unchanged label.
+[finite-result/archive review](../independent-checks-onset512-response.md)
+recorded acceptance on 2026-11-08. Audit-04 subsequently required the repaired
+reader review and canonical rerun; the historical label resolves neither.
 
 Independent I25 source is under `code/independent_phase_checker/`. The
 [completed summary](../code/independent_phase_checker/independent-phase-summary.md),
 [RESULTS.json](../code/independent_phase_checker/RESULTS.json) and
-[J03](../theory/J03-independent-phase-checker.md) record **942 accepted complete
-trees for all 471 degrees 41..511**, both passes per degree. All four workers
-exited 0 and passed 31 arithmetic controls each; inclusive CPU was
+[J03](../theory/J03-independent-phase-checker.md) record **471 distinct complete trees for degrees 41..511**, each recorded twice
+in 942 separately checked witnesses. All four workers
+reported stdlib returncode 0 and passed 31 arithmetic controls each;
+942 accepted rows over the exact union establish completeness. The historical
+launcher did not independently authenticate waitpid exit status (E4-05); inclusive CPU was
 2519.420775278 s and wall time 646.839168173 s. Distinct review independently
 executed six certificates, both passes at 41,458,511, plus 31 controls, exit 0.
 The reviewed pilot rejected all 27 corruptions. Failed v1 is retained with the
@@ -177,25 +224,30 @@ analytic premises. It is not universal validation of stored native endpoints;
 far and physical-cover lemmas remain premises. Independent Claude audit and
 public deposit remain pending. Candidate paired TeX/Bib source freeze is
 `24a98db4c3c4c4d0eede2e3929532956df87911b`; it is the accepted final manuscript baseline,
-not the future reviewed repository source ZIP or its unknown hash.
+distinct from the prepared a433c7d historical source ZIP and from the future
+post-repair source snapshot.
 
 For final deposit integrity, from the directory containing completed MANIFEST.json:
 
 ```sh
-python3 - <<'PY'
-import hashlib, json
+python3 -E - <<'PY'
+import hashlib, json, sys
 from pathlib import Path
+def need(condition, message):
+    if not condition:
+        raise ValueError(message)
+need(sys.flags.optimize == 0, 'optimized Python is unsupported')
 m = json.loads(Path('MANIFEST.json').read_text())
-assert m['status'] == 'COMPLETE_DEPOSIT_FILE_INVENTORY'
+need(m['status'] == 'COMPLETE_DEPOSIT_FILE_INVENTORY', 'incomplete deposit inventory')
 for row in m['files']:
-    assert row['bytes'] is not None and row['sha256'] is not None
+    need(row['bytes'] is not None and row['sha256'] is not None, 'missing file identity')
     path = Path(row['deposit_filename'])
-    assert path.is_file()
+    need(path.is_file(), f'missing file: {path}')
     h = hashlib.sha256()
     with path.open('rb') as f:
         for block in iter(lambda: f.read(1048576), b''):
             h.update(block)
-    assert path.stat().st_size == row['bytes'] and h.hexdigest() == row['sha256'], path
+    need(path.stat().st_size == row['bytes'] and h.hexdigest() == row['sha256'], f'file identity: {path}')
 print('all listed deposit files match their recorded identities')
 PY
 ```
@@ -250,7 +302,8 @@ four payload identities were checked separately by streamed SHA-256 readback.
 The full 75,479-byte mirror inventory remains off Git. E-10's per-file size
 issue is repaired by this index; P-01/G-8's actual durable data-access obligation
 still awaits AC's deposit and independent retrieval. The I25 source/runtime/full-result package identities are now populated above;
-the final reviewed repository source ZIP, AC DOI and external custody remain pending.
+the a433c7d source ZIP was subsequently packaged as recorded below; a new
+post-repair reviewed source snapshot, AC DOI and external custody remain pending.
 
 ## Final manuscript acceptance — 2026-11-08
 
@@ -260,8 +313,9 @@ built numbers matching and original48/162-page hashes preserved.
 [Sol max review](../manuscript-onset512-solmax-review.md) accepts correctness
 and exposition; report SHA-256
 `fe935ea03a245dd6301370cc02b4ac826cacec55d036b8c99942a4d00d44dff9`.
-Its acceptance does not supply the still-unpackaged final reviewed SOURCE ZIP,
-its unknown identity, AC’s DOI/publication or completed external custody.
+This historical review predates audit-04 findings. The a433c7d source ZIP was
+subsequently packaged as recorded below; post-repair review/source packaging,
+AC’s DOI/publication and completed external custody remain pending.
 
 
 ## Prepared source snapshot — 2026-11-08
@@ -286,5 +340,16 @@ scope. The snapshot contains the tracked source tree; Git history, PDFs,
 I25/native data returns and runtime package are separately listed inputs.
 Use the adjacent current deposit inventory for this ZIP's identity: the
 inventory inside its older source tree necessarily precedes packaging itself.
-All15 listed deposit payloads now exist locally. DOI/publication and durable
+All 15 listed deposit payloads were reported locally present on 2026-11-08;
+that statement does not establish availability in the 2026-11-13 workspace. DOI/publication and durable
 external retrieval remain AC's tasks.
+
+
+## Generated-output bound convention — 2026-11-13
+
+Use the audit-03 convention: sum all positive generated-output deltas and give
+no deletion or shrink credit. Audit-04 E4-07 gives **9,917,613 B before the
+current repair batch**, leaving 82,387 B under the 10,000,000 B cap. The former
+9,897,953 B value credited the cold-storage.json shrink and is not the chosen
+bound. The orchestrator must add any chargeable positive deltas from this batch;
+this baseline does not claim a final post-edit bound.

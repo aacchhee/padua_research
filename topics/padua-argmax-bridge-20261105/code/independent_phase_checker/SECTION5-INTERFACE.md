@@ -46,3 +46,10 @@ constant bounds supplied by J02 once adopted. Historical `PD-T271` strings in
 frozen certificate metadata are schema identities. Native Arb production
 remains evidence provenance, while the independent proof route validates the
 tree without trusting its stored numerical endpoints.
+
+
+### Witness-count correction, 2026-11-13
+
+Audit-04 J3-01: 942 witness records encode 471 distinct trees, each recorded
+twice. Separate record checks share per-degree interval results; they are
+not two independent arithmetic derivations. See the J03 dated addendum.

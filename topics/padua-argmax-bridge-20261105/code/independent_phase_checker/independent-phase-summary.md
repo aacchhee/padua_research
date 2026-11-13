@@ -52,3 +52,15 @@ preserved history. The current I25 outcome is completed and accepted as
 described above. The v1 pilot conservatively rejected seam aliases before
 numerical evaluation; the reviewed v2 correction and successful execution
 are retained alongside that failure, without retrospective rewriting.
+
+
+## Audit-04 clarification — 2026-11-13
+
+The 942 witness records encode 471 distinct trees, each checked twice; the
+second pass reuses the degree's independently computed interval cache.
+Historical “workers exited 0” means the Popen interface returned 0, subject
+to E4-05's ECHILD limitation; exact witness population and acceptance checks
+were additional conditions. See the [J03 addendum](../../theory/J03-independent-phase-checker.md).
+The frozen four run sources, preregistrations and RESULTS.json are unchanged.
+The current workspace lacks the three external evidence ZIPs; none of the
+audit-04 new-range data checks has been executed in this session.

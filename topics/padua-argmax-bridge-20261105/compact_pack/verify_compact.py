@@ -20,7 +20,7 @@ def check_pair(access, group, n, run):
             attempt['ECHILD'] is True and attempt['cleanup_killed'] == [] and
             attempt['status'] == 'awaits_independent_result_review', 'completed attempt status')
     wrapper = access.json(prefix + '/wrapper-exit.json')
-    require(wrapper['observed_returncode'] == 0 and not wrapper.get('timeout') and not wrapper.get('supervisor_cleanup'), 'observed wrapper EXIT0')
+    require(type(wrapper['observed_returncode']) is int and wrapper['observed_returncode'] == 0 and not wrapper.get('timeout') and not wrapper.get('supervisor_cleanup'), 'observed wrapper EXIT0')
     started = access.json(prefix + '/started.json')
     require(started['n'] == n and started['identity'] == run['identity'] and
             started['core'] in run['provenance']['selected_cores'], 'started run identity')
@@ -48,7 +48,7 @@ def check_pair(access, group, n, run):
         registration = access.json(base + '/preregistration.json')
         require(registration['engine_config'] == config and registration['freeze'] == proof['freeze'] == summary['freeze'], 'preregistered inputs')
         exit_record = access.json(prefix + '/' + mode + '-exit.json'); records.append(exit_record)
-        require(exit_record['mode'] == mode and exit_record['observed_returncode'] == 0 and
+        require(exit_record['mode'] == mode and type(exit_record['observed_returncode']) is int and exit_record['observed_returncode'] == 0 and
                 exit_record['ECHILD'] is True and exit_record['cleanup_killed'] == [], 'observed pass EXIT0')
         expected_command = [exit_record['command'][0], '-E', '-S', '-B', str(access.absolute / ENGINE / 'engine.py'),
                             '--mode', mode, '--n', str(n), '--output', str(access.absolute / base), '--run-once']
@@ -189,7 +189,9 @@ def verify_payloads(payloads, package, m, frozen, expected_manifest_sha, expect_
                 validate_attempt(access, group, n, run); access.closure(run['provenance']); sample_seen.add(n)
     require(validation_seen == set(validations), 'exact server validation coverage')
     require(seen == set(completed) and sample_seen == set(selected), 'exact compact/sample coverage')
-    return {'rationally_checked_pairs': len(completed), 'completed_degrees': completed,
+    return {'expect_plan': expect_plan,
+            'coverage_mode': 'complete_plan' if expect_plan is not None else 'completed_subset',
+            'rationally_checked_pairs': len(completed), 'completed_degrees': completed,
             'sampled_full_histories_checked': selected,
             'scope': 'unsampled full raw histories checked on producing server only; independent fresh sample native reruns remain separate'}
 

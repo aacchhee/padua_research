@@ -1,6 +1,6 @@
 # Local onset-512 certificate campaign
 
-Status: **finite computation and distinct result review accepted** under the
+Historical status (2026-11-08): **finite computation and distinct result review accepted** under the
 unchanged native-evaluator trust boundary. The [review](independent-checks-onset512-response.md#local-native-campaign-and-compact-return--accepted-at-recorded-scope)
 independently checks all accounting and archive data; it makes no additional
 native replay claim. The next substantive Claude audit remains separate.
@@ -9,7 +9,7 @@ The [preregistration](preregistration-onset512-local.md) fixes all 191 degrees
 Rules/input HEAD is `b45e29fa1fe3dbfa2517ff8043e5d9c440870530`.
 Technical work requested as Codex Sol medium; serving metadata are unexposed.
 
-All output is outside Git at
+The historical output location outside Git was
 `local-output/argmax-bridge-20261105/onset512-local-20261108/`.
 All **191 pairs / 382 passes** completed, with observed engine and wrapper
 exit 0, ECHILD, no timeout, failure or cleanup kill. Full trusted compact
@@ -44,8 +44,8 @@ The compact return is outside Git:
 `da63280a7e4aec86fa52e3f8384620fbf07939006ab5f6f70222fa2485816e7e`.
 It contains all 382 essential proofs, all small JSON/log/provenance records,
 trusted-source/runtime hash manifests and two complete sampled native histories.
-All other complete native histories remain in the local campaign tree (632 MiB
-reported by `du -sh`). No bulk proof evidence has been added to Git.
+The 2026-11-08 record reports other complete native histories in the local
+campaign tree (632 MiB by `du -sh`); their present availability is unverified. No bulk proof evidence has been added to Git.
 
 After complete coverage, validation receipts and quiescence were checked,
 `os.urandom(32)` supplied seed
@@ -92,8 +92,28 @@ a brief README, and was checked byte-for-byte against the mirror inventory both
 before writing and after reading. It is not the complete provenance return;
 the 81.6 MB ZIP remains the canonical review artifact. No native call was added.
 
-Verification command, from the trusted repository:
+## Reader repair and current access — 2026-11-13
+
+The executions above describe the historical reader, before audit-04 E4-01.
+That reader used removable assertions and could accept a zero-certificate ZIP
+under Python optimization. Its historical acceptance is not evidence of a
+repaired-reader run. The current repair requires a distinct focused review
+and a rerun on the actual pinned canonical ZIP and complete trusted runtime.
+Those archives are unavailable in this fresh workspace; no repaired-reader
+canonical run or fresh archive rehash is claimed here. The off-Git paths above
+are historical locators, not current custody receipts. Native-history transfer,
+regeneration, or acceptance of the custody gap remains AC's decision.
+
+Repaired reader candidate SHA-256:
+`5e25c8a47115e114d20e64fa6ac7b2afb30dde0bfebef371f1e709857795ae2e`.
+The separately pinned runtime manifest is
+`5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16`;
+the default canonical ZIP pin is the `da63280a…` identity recorded above.
+Counts and reader identity are computed/reported by the repaired reader.
+
+Prospective verification command, from the trusted repository (`-E` ignores
+Python environment variables; explicit guards reject `-O`):
 
 ```
-python3 -B topics/padua-argmax-bridge-20261105/code/local_onset512_campaign/return_bundle.py verify local-output/argmax-bridge-20261105/onset512-return-20261108.zip
+python3 -E -B topics/padua-argmax-bridge-20261105/code/local_onset512_campaign/return_bundle.py verify local-output/argmax-bridge-20261105/onset512-return-20261108.zip
 ```

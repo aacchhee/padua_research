@@ -5,10 +5,10 @@
   "topic": "padua-argmax-bridge-20261105",
   "doi": "PENDING_AC_RESERVATION",
   "zenodo_record_url": null,
-  "final_source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6",
+  "final_source_commit": null,
   "input_rules_commit": "b45e29fa1fe3dbfa2517ff8043e5d9c440870530",
   "original_production_source_commit": "996fedcad4ba79a28e45a3fe3678adc12f1e5358",
-  "custody": "Local readback only. No Zenodo upload, Windows delivery or independent external retrieval claimed.",
+  "custody": "Historical 2026-11-08 local readback only. Off-Git archives unavailable in 2026-11-13 workspace. No Zenodo upload, Windows delivery or independent external retrieval claimed.",
   "files": [
     {
       "role": "original_compact_return",
@@ -101,7 +101,7 @@
       "deposit_status": "PENDING_AC_UPLOAD"
     },
     {
-      "role": "final_reviewed_repository_source_snapshot",
+      "role": "historical_pre_audit04_repository_source_snapshot",
       "deposit_filename": "padua-research-source-a433c7d-20261108.zip",
       "local_path": "local-output/argmax-bridge-20261105/padua-research-source-a433c7d-20261108.zip",
       "bytes": 22105198,
@@ -129,7 +129,7 @@
       "deposit_status": "PENDING_AC_UPLOAD"
     },
     {
-      "role": "final_journal_manuscript",
+      "role": "historical_20261108_journal_manuscript",
       "deposit_filename": "padua-manuscript-20261108-131012-Oslo.pdf",
       "local_path": "local-output/padua-argmax-bridge-20261105/onset512-paper-20261108/padua-manuscript-20261108-131012-Oslo.pdf",
       "bytes": 733598,
@@ -138,7 +138,7 @@
       "deposit_status": "PENDING_AC_UPLOAD"
     },
     {
-      "role": "final_explanatory_companion",
+      "role": "historical_20261108_explanatory_companion",
       "deposit_filename": "padua-companion-20261108-131012-Oslo.pdf",
       "local_path": "local-output/padua-argmax-bridge-20261105/onset512-companion-20261108/padua-companion-20261108-131012-Oslo.pdf",
       "bytes": 1171187,
@@ -204,9 +204,9 @@
     "topics/padua-argmax-bridge-20261105/theory/J03-independent-phase-checker.md"
   ],
   "pending_items": [
-    "Final reviewed source snapshot remains to be packaged and hashed after substantive audit; candidate paired-source freeze is recorded separately.",
-    "I25 full942/471 and independent six-certificate result are complete; retain failed pilot and original prospective preregistration strings as history.",
-    "Record final source-snapshot verification commands and observed scope.",
+    "Prepared historical source snapshot a433c7d is packaged and pinned above; it predates audit-04 repairs. Create and hash a new final reviewed source snapshot after the repair review.",
+    "Rerun repaired canonical reader and preregistered blocked evidence checks when canonical return, I25 bundle and complete trusted runtime are supplied; no fresh execution claimed.",
+    "I25 full942/471 and independent six-certificate results are historical records; retain failed pilot and original prospective preregistration strings unchanged.",
     "AC sets deposition metadata/license, reserves DOI, uploads, publishes and verifies retrieval."
   ],
   "retention_limit": "Canonical compact returns retain all essential certificates and sampled complete native histories. The 945235-byte onset512 derivative contains certificates/inventory only; it does not replace the 81602992-byte canonical provenance return. Unsampled full raw histories are excluded; no all-history archival claim.",
@@ -228,7 +228,9 @@
     "arithmetic_controls_per_full_worker": 31,
     "pilot_corruptions_rejected": 27,
     "scope": "Own-bound complete-tree recertification under J03 arithmetic and analytic premises; not universal native-endpoint validation. Independent Claude audit remains pending.",
-    "record": "topics/padua-argmax-bridge-20261105/code/independent_phase_checker/RESULTS.json"
+    "record": "topics/padua-argmax-bridge-20261105/code/independent_phase_checker/RESULTS.json",
+    "distinct_trees": 471,
+    "witnesses_per_tree": 2
   },
   "manuscript_review": {
     "source_freeze": "24a98db4c3c4c4d0eede2e3929532956df87911b",
@@ -244,6 +246,25 @@
     "original_48_162_page_PDF_hashes_preserved": true
   },
   "manuscript_source_freeze": "24a98db4c3c4c4d0eede2e3929532956df87911b",
-  "local_package_status": "PREPARED_AND_READBACK_VERIFIED; AC DOI/publication pending",
-  "small_bundle_recheck_recipe": "RECHECK-SMALL-BUNDLE.md"
+  "local_package_status": "HISTORICALLY_PREPARED_20261108; archives unavailable in fresh workspace; post-repair snapshot/review and AC DOI/publication pending",
+  "small_bundle_recheck_recipe": "RECHECK-SMALL-BUNDLE.md",
+  "revision_note_2026_11_13": "Historical 2026-11-08 file identities preserved; off-Git archives unavailable in fresh workspace; no new archive rehash, repaired-reader canonical run, or delivery claimed.",
+  "historical_pre_audit04_source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6",
+  "generated_output_bound": {
+    "convention": "all positive deltas; no deletion or shrink credit",
+    "pre_current_batch_bytes": 9917613,
+    "cap_bytes": 10000000,
+    "final_batch_bound": "PENDING_ORCHESTRATOR_RECOMPUTATION"
+  },
+  "verifier_provenance": {
+    "original_padua30_unrepaired_verify_compact_sha256": "7c2dad53519aff616bdadd3f925ec8943963cb4bf521b410355f827b7a1899bf",
+    "historical_audit03_repaired_verify_compact_sha256": "5867ac0c6d6e1d380d72c118262177a10b617631e039da11f489e45c93ff61b6",
+    "warning": "Original package verifier is unrepaired and accepts audit-04 H1-H3; invoke a separately trusted reviewed source-tree verifier. Post-audit04 repair identity/review must be recorded separately.",
+    "post_audit04_repair_candidates_sha256": {
+      "return_bundle.py": "5e25c8a47115e114d20e64fa6ac7b2afb30dde0bfebef371f1e709857795ae2e",
+      "verify_compact.py": "2d26886fa38089815712edcceccd4ac893fea9d8e6092afbd4c0faac7b569cef",
+      "runner.py": "a198b65182590be13cb91110ff976d90e7e885c778180e59699fbe9b067ccdad"
+    },
+    "post_audit04_status": "Distinct focused review pending; actual pinned canonical reader rerun blocked by missing archives; no historical run attribution."
+  }
 }

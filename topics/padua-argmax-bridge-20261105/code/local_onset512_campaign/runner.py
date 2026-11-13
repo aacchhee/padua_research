@@ -10,12 +10,16 @@ import signal
 import sys
 import time
 
+if sys.flags.optimize:
+    raise RuntimeError("optimized Python is unsupported; use python3 -E -B")
+
 ROOT = Path(__file__).resolve().parents[4]
 TOPIC = ROOT / 'topics/padua-argmax-bridge-20261105'
 sys.path.insert(0, str(TOPIC / 'compact_pack'))
 from process_guard import normalize_startup
 from ownership import subreaper, cleanup
-from evidence import Access, validate_pass
+from evidence import Access, validate_pass, require
+from common import strict
 from storage import deduplicate
 ENGINE = TOPIC / 'code/final_hybrid_engine'
 RELEASE = ROOT / 'local-output/argmax-bridge-20261105/compact-release-aea62883/padua30'
@@ -25,22 +29,22 @@ def identity(path):
     path = Path(path).resolve(); data = path.read_bytes()
     return {'path': str(path), 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
 
-def read(path): return json.loads(Path(path).read_text())
+def read(path): return strict(Path(path).read_bytes())
 
 def save(path, value):
     with Path(path).open('x') as f:
         json.dump(value, f, indent=2, allow_nan=False); f.write('\n'); f.flush(); os.fsync(f.fileno())
 
 def pins():
-    assert identity(ENGINE / 'FREEZE.json')['sha256'] == FREEZE
+    require(identity(ENGINE / 'FREEZE.json')['sha256'] == FREEZE, "required: identity(ENGINE / 'FREEZE.json')['sha256'] == FREEZE")
     rows = read(ENGINE / 'FREEZE.json')['code_data']
     for row in rows:
         got = identity(ROOT / row['path'])
-        assert all(got[k] == row[k] for k in ('bytes', 'sha256')), row['path']
+        require(all(got[k] == row[k] for k in ('bytes', 'sha256')), row['path'])
     assets = read(RELEASE / 'asset_provenance.json')
     for path, row in assets['arithmetic_files'].items():
         got = identity(ROOT / path)
-        assert all(got[k] == row[k] for k in ('bytes', 'sha256')), path
+        require(all(got[k] == row[k] for k in ('bytes', 'sha256')), path)
     return {'freeze': identity(ENGINE / 'FREEZE.json'), 'source': rows,
             'asset_provenance': identity(RELEASE / 'asset_provenance.json'),
             'arithmetic_files': assets['arithmetic_files']}
@@ -53,7 +57,7 @@ class LocalAccess(Access):
 
     def identity(self, row):
         got = identity(row['path'])
-        assert got == row, 'retained identity changed: ' + row['path']
+        require(got == row, 'retained identity changed: ' + row['path'])
         return Path(row['path']).read_bytes()
 
 def observe(command, stdout, stderr, wall=1050, env=None):
@@ -90,8 +94,8 @@ def observe(command, stdout, stderr, wall=1050, env=None):
 def worker(n, directory, output, core, parent):
     normalize_startup(); subreaper()
     libc = ctypes.CDLL(None, use_errno=True)
-    assert libc.prctl(1, signal.SIGTERM, 0, 0, 0) == 0
-    assert os.getppid() == parent
+    require(libc.prctl(1, signal.SIGTERM, 0, 0, 0) == 0, 'required: libc.prctl(1, signal.SIGTERM, 0, 0, 0) == 0')
+    require(os.getppid() == parent, 'required: os.getppid() == parent')
     os.sched_setaffinity(0, {core})
     resource.setrlimit(resource.RLIMIT_AS, (2*1024**3, 2*1024**3))
     resource.setrlimit(resource.RLIMIT_CPU, (260, 260))
@@ -112,15 +116,15 @@ def worker(n, directory, output, core, parent):
             env['LD_LIBRARY_PATH'] = str(ROOT/'local-output/argmax-bridge-20261105/phase-checker/runtime/extracted/usr/lib/x86_64-linux-gnu')
             rec = observe(command, directory/(mode+'.stdout'), directory/(mode+'.stderr'), env=env)
             save(directory/(mode+'-exit.json'), rec); passes.append(rec)
-            assert rec['observed_returncode'] == 0 and not rec['timeout'] and not rec['cleanup_killed'], rec
+            require(rec['observed_returncode'] == 0 and not rec['timeout'] and not rec['cleanup_killed'], rec)
             proof = validate_pass(access, target.relative_to(ROOT).as_posix(), n, mode, manifest)
             proofs.append(json.loads(proof))
             save(target/'local-validation.json', {'receipt': identity(target/'essential-receipt.json'),
                  'raw': identity(target/'raw-evidence.json'), 'validation': 'full compact validate_pass accepted'})
             deduplicate(output, target)
         for key in ('tree', 'S_upper_rows', 'lambda_upper_rows', 'norm', 'verification', 'floor', 'corner', 'analytic_far', 'origin_lower_hex'):
-            assert proofs[0][key] == proofs[1][key], 'fresh mismatch: '+key
-        assert (directory/'produce/essential-receipt.json').read_bytes() == (directory/'verify/original-certificate.json').read_bytes()
+            require(proofs[0][key] == proofs[1][key], 'fresh mismatch: '+key)
+        require((directory/'produce/essential-receipt.json').read_bytes() == (directory/'verify/original-certificate.json').read_bytes(), "required: (directory/'produce/essential-receipt.json').read_bytes() == (directory/'verify/original-certificate.json').read_bytes()")
         pins()
     except BaseException as error:
         failure = repr(error)
@@ -150,9 +154,9 @@ def prereg(output):
 
 def run(output, stage):
     normalize_startup(); subreaper(); reg = read(output/'preregistration.json')
-    assert identity(__file__) == reg['runner']; assert pins() == reg['pins']
+    require(identity(__file__) == reg['runner'], "required: identity(__file__) == reg['runner']"); require(pins() == reg['pins'], "required: pins() == reg['pins']")
     degrees = [320] if stage == 'pilot' else list(range(321,511))
-    if stage == 'remaining': assert read(output/'jobs/320/attempt.json')['failure'] is None
+    if stage == 'remaining': require(read(output/'jobs/320/attempt.json')['failure'] is None, "required: read(output/'jobs/320/attempt.json')['failure'] is None")
     lease = output/(stage+'-admitted.json'); save(lease, {'degrees': degrees, 'preregistration': identity(output/'preregistration.json')})
     cores = sorted(os.sched_getaffinity(0))[:4]; active = {}; results = []; failed = False
     started = time.monotonic()
@@ -183,12 +187,12 @@ def run(output, stage):
         killed = cleanup()
         save(output/(stage+'-summary.json'), {'results':results, 'unstarted':degrees, 'failed':failed,
              'cleanup_killed': killed, 'ECHILD':True, 'quiescent':True, 'wall_seconds':time.monotonic()-started})
-    assert not failed and not degrees and not killed
+    require(not failed and not degrees and not killed, 'required: not failed and not degrees and not killed')
 
 def controls(output):
     output.mkdir(exist_ok=False); normalize_startup(); subreaper()
     rec = observe([sys.executable,'-c','raise SystemExit(7)'],output/'exit7.stdout',output/'exit7.stderr')
-    assert rec['observed_returncode'] == 7 and rec['ECHILD'] and not rec['cleanup_killed']
+    require(rec['observed_returncode'] == 7 and rec['ECHILD'] and not rec['cleanup_killed'], "required: rec['observed_returncode'] == 7 and rec['ECHILD'] and not rec['cleanup_killed']")
     pid = os.fork()
     if pid == 0: os._exit(0)
     os.wait4(pid,0)
@@ -199,7 +203,7 @@ def controls(output):
     try: normalize_startup()
     except RuntimeError: ignored_refused = True
     else: ignored_refused = False
-    assert missing_refused and ignored_refused
+    require(missing_refused and ignored_refused, 'required: missing_refused and ignored_refused')
     save(output/'controls.json',{'exit7':rec,'external_reap_refused':missing_refused,'ignored_SIGCHLD_refused':ignored_refused,'pins':pins()})
 
 if __name__ == '__main__':

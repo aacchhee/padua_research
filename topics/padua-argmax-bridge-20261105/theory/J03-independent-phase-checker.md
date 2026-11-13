@@ -243,3 +243,26 @@ run. No tree, floor, threshold or numerical formula was changed.
 unexposed. Root allocated Sol technical development and a distinct Astra review.
 Cheap isolated arithmetic and timing controls preceded the consequential pilot;
 they establish feasibility only, not a certificate proof.
+
+
+## Audit-04 clarification — 2026-11-13
+
+J3-01: the 942 witnesses represent 471 distinct trees, each recorded in a
+produce and verify witness. Checking both records with a shared per-degree
+cache is not two independent numerical derivations. The original run and
+its frozen source/results remain unchanged. [Audit-04](../audit-04.md)
+independently reran the available old-return degrees; its new-range data
+checks remain pending because the canonical archives were unavailable.
+
+E4-05: historical worker exit codes were obtained through Python's Popen
+interface, which can report zero on ECHILD. They are observations from that
+interface, not an independent waitpid-level proof of normal worker exits.
+The completed run also required all 942 accepted rows and the exact degree/
+pass population; this clarification changes no stored record or theorem.
+The frozen launcher has not been rewritten or retrospectively rerun.
+
+J3-05: the supplementary `runtime_probe.py` executes 31 arithmetic controls
+and four computed runtime probes for ties-to-even, gradual underflow and
+nextafter. All passed here on Python 3.12.14 / NumPy 2.3.5; this is finite
+runtime evidence, not proof of the full IEEE model or a certificate rerun.
+Command: `python3 -E -B topics/padua-argmax-bridge-20261105/code/independent_phase_checker/runtime_probe.py`.

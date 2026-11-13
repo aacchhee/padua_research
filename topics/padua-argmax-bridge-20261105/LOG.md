@@ -2932,3 +2932,49 @@ computed NumPy probes pass ties-to-even in both directions, normal-to-subnormal
 division, and `nextafter(0,1)` as the smallest subnormal. These four finite probes
 do not prove universal IEEE conformance; no certificate was consumed. Local
 output is `local-output/argmax-bridge-20261105/audit04-response-20261113/runtime-probes.json`.
+
+AC's 2026-11-13 reply requests retention and transfer of native histories
+from the prior workspace if available. They are absent from this environment's
+accessible /workspace, /tmp, /mnt, /media and home paths; no transfer or deletion
+was performed. AC identified `C:\Users\andreyac\Downloads` as a possible
+archive folder. It is not mounted here and no local-computer filesystem tool
+is connected. Attaching the archives or providing a reachable download URL
+remains necessary for Task B. This is an access limitation, not permission to
+accept the custody gap or regenerate a scientific campaign.
+
+### Reader repair and recovered original return
+
+Task A E4-01..04 code repairs are complete, with 40 synthetic regression
+controls and distinct Astra high supplementary review. Explicit checks
+replace asserts, optimized Python is refused, external manifest/archive pins
+and source authentication precede checker construction, and unsampled pair
+linkage/types/namespaces are checked. The reviewer found and development
+fixed a parser adapter discrepancy; independent malformed-data controls
+then passed on the production parser path. The compact verifier rejects
+boolean exit statuses and reports the enforced coverage plan.
+
+AC supplied padua30.zip and two split parts of the original return. Root
+and reviewer authenticated the package and joined tar against their old
+pins, then independently ran the repaired compact verifier once each:
+280 pairs / 560 certificates, exactly41..319 plus511, full sampled histories
+199/238, both observed exit0. No native campaign or fresh native evaluation.
+Root additionally ran three positive endpoint-substitution controls at n41.
+Commands, pins, actual exits and remaining gaps are in
+[reader-repair-execution-20261113.md](reader-repair-execution-20261113.md);
+[supplementary review](supplementary-reader-review-20261113.md).
+
+The I25 ZIP and canonical onset512 ZIP remain unavailable; AC does not know
+where the former is. Tool discovery exposes prior-chat summaries but no
+prior-workspace filesystem or remote execution/recovery facility. Do not
+claim the missing archive recovered, the new-range checks completed, or the
+native-history custody transfer fulfilled.
+
+Generated-class accounting needs an explicit inherited limitation: merging
+current main brings the audited size script's head total from9,895,866 to
+11,723,154bytes (+1,827,288 entirely from already-published Padua3D files).
+The old9,917,613 no-deletion-credit bound therefore is a historical pre-main
+baseline, not the current repository total. The resulting conservative
+bound before this response's counted-file growth is11,744,901bytes.
+No other topic's evidence is removed or relabeled to hide this excess;
+readiness and the global budget repair remain separate. Source/prose
+changes here do not by themselves supply a10MB-cap claim.
