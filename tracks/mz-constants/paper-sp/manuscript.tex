@@ -1,9 +1,5 @@
-\documentclass[11pt]{article}
-\usepackage[a4paper,margin=27mm]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\documentclass[preprint,12pt,a4paper]{elsarticle}
 \usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array}
-\usepackage[numbers,sort&compress]{natbib}
 \usepackage[hidelinks]{hyperref}
 \usepackage{microtype}
 \hypersetup{pdftitle={Marcinkiewicz--Zygmund constants of signed Padua rules beyond half-exactness},
@@ -24,19 +20,19 @@
 \newcommand{\dd}{\,\mathrm d}
 \newcommand{\id}[1]{\textnormal{\texttt{#1}}}
 \DeclareMathOperator{\diag}{diag}
-\title{Marcinkiewicz--Zygmund constants of signed Padua rules\texorpdfstring{\\}{ }beyond half-exactness}
-\author{Research development draft\thanks{Authorship and submission venue to be decided by AC. This document is not for submission.}}
 \date{13 November 2026}
+\journal{Journal of Approximation Theory}
+\biboptions{sort&compress}
+\emergencystretch=2em % narrower elsarticle text block
+% elsarticle's preprint footer (\ps@pprintTitle) contains a stray space that makes the
+% footer box 2.6pt overfull on page 1; tolerate it inside the output routine only.
+\makeatletter\pretocmd{\@outputpage}{\hfuzz=3pt }{}{}\makeatother
 \begin{document}
-\maketitle
-\begin{center}\small
-\textbf{Development status.} Post-split baseline of the signed Padua part
-(old Section~6 and the Padua parts of old Section~7) of the single MZ
-development draft of 5 November 2026; split by AC's decision of
-13 November 2026. The companion Clenshaw--Curtis paper is cited as
-\citep{MZ-CC}. No statement or proof below was changed by the split.
-\end{center}
-
+% Placeholder authors, keywords and MSC codes: for AC's review before any submission.
+\begin{frontmatter}
+\title{Marcinkiewicz--Zygmund constants of signed Padua rules\texorpdfstring{\\}{ }beyond half-exactness\tnoteref{t1}}
+\tnotetext[t1]{Authorship and submission venue to be decided by AC. This document is not for submission.}
+\author{[Authors to be decided by AC]}
 \begin{abstract}
 For signed Lebesgue Padua rules, we prove the exact
 factor-two Clenshaw--Curtis marginal and its spectral compression consequence;
@@ -48,6 +44,20 @@ this sharp half-exactness threshold. Nevertheless the direct signed
 coefficient hyperinterpolant has a uniform $C\to L^2$ norm below thirty.
 Analytic proofs are included.
 \end{abstract}
+
+\begin{keyword}
+Padua points \sep Marcinkiewicz--Zygmund inequalities \sep signed cubature \sep hyperinterpolation \sep Gram matrix
+\MSC[2020] 41A10 \sep 41A63 \sep 65D32 \sep 41A17
+\end{keyword}
+\end{frontmatter}
+
+\begin{center}\small
+\textbf{Development status.} Post-split baseline of the signed Padua part
+(old Section~6 and the Padua parts of old Section~7) of the single MZ
+development draft of 5 November 2026; split by AC's decision of
+13 November 2026. The companion Clenshaw--Curtis paper is cited as
+\citep{MZ-CC}. No statement or proof below was changed by the split.
+\end{center}
 
 % Split glue (MZ-SP baseline): the CC conventions and the three CC inputs
 % used below, recapped from MZ-CC; see split-map.md.
@@ -463,9 +473,11 @@ the all-integer conclusions.
 For $0\le\theta\le1/2$ and $n\le\theta m$, exactness gives
 $G^\Pa_{m,n}=I$. For every fixed $1/2<\theta<1$,
 \[
+ \begin{gathered}
  \lamin(G^\Pa_{m,\lfloor\theta m\rfloor})\to-\infty,\qquad
- \lamax(G^\Pa_{m,\lfloor\theta m\rfloor})\to+\infty
+ \lamax(G^\Pa_{m,\lfloor\theta m\rfloor})\to+\infty\\
  \quad(m\to\infty\text{ through all integers}).
+ \end{gathered}
 \]
 Thus there is no uniform strong signed MZ constant $\eta_\theta<1$
 above half-exactness.
@@ -493,17 +505,21 @@ Put
  \qquad A=\int_0^\infty u g(u)\dd u=4\log2,
 \]
 \[
- J_-(a)=\int_0^\infty u g(u)\cos^2(u/(2a))\dd u,\qquad
+ \begin{gathered}
+ J_-(a)=\int_0^\infty u g(u)\cos^2(u/(2a))\dd u,\\
  J_+(a)=\int_0^\infty u g(u)\sin^2(u/(2a))\sin^2u\dd u.
+ \end{gathered}
 \]
 These are finite and positive. The carriers on either parity have
 squared continuous norms tending to $A J_-(a)$ and $A J_+(a)$.
 In particular, over all integers $m$,
 \begin{equation}\label{eq:padua-growth-bounds}
+ \begin{gathered}
  \limsup_{m\to\infty}\frac{\lamin(G^\Pa_{m,m-1})}{\log m}
- \le-\frac1{9A J_-(1/4)},\qquad
+ \le-\frac1{9A J_-(1/4)},\\
  \liminf_{m\to\infty}\frac{\lamax(G^\Pa_{m,m-1})}{\log m}
  \ge\frac1{36A J_+(1/8)}.
+ \end{gathered}
 \end{equation}
 No matching bound, sharp constant, or existence of an extremal spectral
 limit is asserted.
@@ -516,7 +532,7 @@ The exact identity
  \left\{\frac{\sin(u/2)}{L\sin(u/(2L))}\right\}^2
 \]
 gives a squared-norm integrand tending to $u g(u)$ and bounded by
-$u\min(1,\pi^4/u^4)$, extended by zero beyond $L\pi$.
+$u\min(1,\allowbreak\pi^4/u^4)$, extended by zero beyond $L\pi$.
 The carrier mesh denominator is $D_m=m$ for even $m$ and $D_m=m+1$
 for odd $m$. As $D_m/L\to1/a$ and $r/L\to1$, its factors tend to
 $\cos(u/(2a))$ and $\sin(u/(2a))\sin u$. They have modulus at most
@@ -571,10 +587,12 @@ $w_zp(z)$ as bounded continuous data at the finitely many distinct nodes.
 \begin{theorem}[Uniform coefficient norm; \id{PD-T297}]\label{thm:padua-operator}
 For every $m\ge2$ and $0\le n<m$,
 \[
- 2\le\|H_{m,n}\|_{C\to L^2}\le C_{\Pa}<30,\qquad
+ \begin{gathered}
+ 2\le\|H_{m,n}\|_{C\to L^2}\le C_{\Pa}<30,\\
  C_{\Pa}=\frac{4\sqrt2\,\pi}{\pi-4/3}
        +\frac{68}{3}\left(\frac12+\frac1\pi\right)
        =28.3763348311\ldots.
+ \end{gathered}
 \]
 \end{theorem}
 \begin{proof}
@@ -784,6 +802,6 @@ repository claims. These identifiers do not confer publication or audit
 readiness. Analytic proofs of the central signed Padua statements have
 been included here; no private manuscript is a mathematical dependency.
 
-\bibliographystyle{plainnat}
+\bibliographystyle{elsarticle-num}
 \bibliography{refs}
 \end{document}

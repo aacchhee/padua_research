@@ -1,19 +1,16 @@
-\documentclass[11pt]{article}
-\usepackage[a4paper,margin=27mm]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array}
-\usepackage[numbers,sort&compress]{natbib}
-\usepackage[hidelinks]{hyperref}
+\documentclass{siamart251216}
 \usepackage{microtype}
-\hypersetup{pdftitle={Marcinkiewicz--Zygmund constants of Clenshaw--Curtis rules beyond half-exactness},
- pdfauthor={Research development draft},pdfsubject={Audited development draft; historical priority screened, not cleared}}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{corollary}[theorem]{Corollary}
-\theoremstyle{remark}
-\newtheorem{remark}[theorem]{Remark}
+\usepackage{amsmath,amssymb,mathtools,booktabs,array}
+\hypersetup{pdfsubject={Audited development draft; historical priority screened, not cleared}}
+% siamart251216 defines theorem, lemma, corollary, proposition, definition on one
+% shared counter numbered within sections (Theorem 2.3, Lemma 2.4, ...).
+\newsiamremark{remark}{Remark}
+% Layout tuning for the narrower SIAM text block (no change to content):
+\emergencystretch=2em
+\hbadness=1500 % tolerates one slightly loose line (badness 1168) in Sec. 4
+\raggedbottom
+\usepackage{etoolbox}
+\AtBeginEnvironment{thebibliography}{\hbadness=5000 }% class sets \sloppy here; one entry has badness 4060
 \newcommand{\Pn}{\Pi}
 \newcommand{\R}{\mathbb R}
 \newcommand{\CC}{\mathrm{CC}}
@@ -24,25 +21,13 @@
 \newcommand{\dd}{\,\mathrm d}
 \newcommand{\id}[1]{\textnormal{\texttt{#1}}}
 \DeclareMathOperator{\diag}{diag}
+\headers{Marcinkiewicz--Zygmund constants of Clenshaw--Curtis rules}{[Authors to be decided by AC]}
 \title{Marcinkiewicz--Zygmund constants of Clenshaw--Curtis\texorpdfstring{\\}{ }rules beyond half-exactness}
-\author{Research development draft\thanks{Authorship and submission venue to be decided by AC. This document is not for submission.}}
-\date{5 November 2026}
+% Placeholder authors, keywords and MSC codes: for AC's review before any submission.
+\author{[Authors to be decided by AC]\thanks{Authorship and submission venue to be decided by AC. This document is not for submission.}}
+% \date{5 November 2026}  % siamart sets no date
 \begin{document}
 \maketitle
-\begin{center}\small
-\textbf{Development status.} Independent Astra reconstruction accepted the analytic
-M1--M3 results within its stated scope. Claude audits~01--02 accepted the scientific
-statements and response within their recorded scopes. The prior-art corrections
-are closed by Codex audit~03. The even-degree signed Padua results and
-uniform operator bound were accepted in the PR~23 audit; the present
-odd-degree extensions,
-normalized growth bounds, finite witnesses and manuscript integration
-were accepted at their stated scopes in Claude cleanup audit~01.
-The accompanying editorial dispositions are recorded in the cleanup response.
-No historical novelty clearance is claimed.
-Historical priority: \textbf{screened, not cleared} (documented, non-exhaustive search; some fulltexts pending); see Section~\ref{sec:context}.
-\end{center}
-
 \begin{abstract}
 For the Lebesgue Clenshaw--Curtis rule on the $N+1$ Chebyshev extrema,
 we prove that its squared-polynomial norm ratio is less than two through
@@ -70,6 +55,29 @@ two-sided logarithmic order, of a threshold below two, or of the explicit
 constants.
 \end{abstract}
 
+% Placeholder keywords and MSC codes: for AC's review.
+\begin{keywords}
+Marcinkiewicz--Zygmund inequalities, Clenshaw--Curtis quadrature, Gram matrix, hyperinterpolation, Chebyshev extrema
+\end{keywords}
+
+\begin{MSCcodes}
+65D32, 41A17, 41A10, 65F35
+\end{MSCcodes}
+
+\begin{center}\small
+\textbf{Development status.} Independent Astra reconstruction accepted the analytic
+M1--M3 results within its stated scope. Claude audits~01--02 accepted the scientific
+statements and response within their recorded scopes. The prior-art corrections
+are closed by Codex audit~03. The even-degree signed Padua results and
+uniform operator bound were accepted in the PR~23 audit; the present
+odd-degree extensions,
+normalized growth bounds, finite witnesses and manuscript integration
+were accepted at their stated scopes in Claude cleanup audit~01.
+The accompanying editorial dispositions are recorded in the cleanup response.
+No historical novelty clearance is claimed.
+Historical priority: \textbf{screened, not cleared} (documented, non-exhaustive search; some fulltexts pending); see Section~\ref{sec:context}.
+\end{center}
+
 \section{Problem, conventions, and relation to the literature}\label{sec:context}
 
 Let $Q(f)=\sum_j w_j f(x_j)$ approximate a finite positive measure $\mu$,
@@ -90,7 +98,7 @@ degree $\lfloor d/2\rfloor$. We call this the half-exactness range.
 An, Sommariva, and Vianello (ASV) investigate the role of these constants
 and numerically examine their behavior beyond half-exactness for several
 rules, including Clenshaw--Curtis (CC) on the interval and Padua rules on
-the square \citep{LIT-045}. Their inspected introduction and
+the square \cite{LIT-045}. Their inspected introduction and
 Sections~3.1--3.2 distinguish degree-dependent weak constants from strong
 constants uniform along a sampling regime. The displayed experiments use
 exactness degrees $m=1,\ldots,20$ and approximation degrees
@@ -121,7 +129,7 @@ exactness $d_N$ are distinct. In these conventions
  \end{cases}
 \end{equation}
 ASV use an exactness-degree parameter; An--Wu's CC parameter $m$ counts
-points \citep{LIT-046}. We will keep these meanings separate.
+points \cite{LIT-046}. We will keep these meanings separate.
 
 For orientation, our principal CC conclusions are
 \begin{align}
@@ -142,12 +150,12 @@ test shows below. These results do not depend on a finite eigenvalue fit.
 \paragraph{Attribution and coverage limits.}
 The folded Chebyshev moments used below are established prior algebra:
 Trefethen's Theorem~5.2 and formulas (5.2)--(5.4) give the mode aliasing
-\citep{LIT-055}; selected coefficient-decay results of
-Xiang--Bornemann provide related quadrature context \citep{LIT-056}.
+\cite{LIT-055}; selected coefficient-decay results of
+Xiang--Bornemann provide related quadrature context \cite{LIT-056}.
 ASV equation~(7) already uses the upper-MZ factor
 $1+\sqrt{1+\eta}$, together with an aliasing term, and their
 equation~(8) separates the inverse-Gram least-squares construction
-\citep{LIT-045}. The generic upper-Gram hyperinterpolation mechanism
+\cite{LIT-045}. The generic upper-Gram hyperinterpolation mechanism
 in Section~\ref{sec:hyper} is consequently known context; its proof is
 included to identify precisely the CC input and the required reproduction.
 
@@ -168,23 +176,23 @@ We have inspected the following sources. Their coverage differs
 (complete text, selected sections, or a keyword screen) and is recorded per
 source with the source identifiers.
 \begin{itemize}
-\item Sloan--Smith's 1978 CC product-integration paper \citep{LIT-047}
+\item Sloan--Smith's 1978 CC product-integration paper \cite{LIT-047}
 controls the sum of absolute product weights, i.e.\ a $C[-1,1]$ functional
-norm. Its companion \citep{LIT-048} develops heuristic error estimates and
+norm. Its companion \cite{LIT-048} develops heuristic error estimates and
 numerical tests and states no theorem. In the portions inspected we found
 no quadratic-form or nodal $\ell^2$ estimate in either paper.
 \item The weighted mean-convergence results of Erd\H{o}s--Feldheim,
 Askey, Nevai, and Smith's Lobatto theorem
-\citep{LIT-061,LIT-062,LIT-063,LIT-065} bound interpolation from
+\cite{LIT-061,LIT-062,LIT-063,LIT-065} bound interpolation from
 \emph{uniform} data into weighted $L^p$. Nevai's quasi-Lagrange theorem
 includes the CC nodes. Uniform data form a stronger input norm than
 weighted nodal $\ell^2$, so these results are consistent with, and do not
 imply, logarithmic growth of the $\ell^2\to L^2$ norm.
 \item Lubinsky's converse inequalities on the full interpolation space
-\citep{LIT-064} require an exponent in an open range. For CC nodes,
+\cite{LIT-064} require an exponent in an open range. For CC nodes,
 Lebesgue measure and $p=2$, the nodal polynomial
 $\sin\theta\sin N\theta$ sits exactly at the excluded endpoint.
-\item Mastroianni, Milovanovi\'c and Notarangelo \citep{LIT-299}
+\item Mastroianni, Milovanovi\'c and Notarangelo \cite{LIT-299}
 characterize, for interpolation at the zeros of $p_m((1-x^2)^\alpha)$
 together with $\pm1$, when the weighted $L^p$ norm of $P\in\Pn_{m+1}$ is
 equivalent to a nodal sum plus an endpoint term. With $\alpha=1/2$ these
@@ -194,9 +202,9 @@ is comparable to $Q_N(p^2)$ by the weight comparison above, the necessity
 part of their criterion yields $\inf_N\lambda_-(N,N)=0$ on the full space
 $\Pn_N$. This is classical, but it is only a statement about a
 subsequence on $\Pn_N$, with no rate.
-\item Mastroianni--Russo \citep{LIT-293} and Xu \citep{LIT-296} treat
+\item Mastroianni--Russo \cite{LIT-293} and Xu \cite{LIT-296} treat
 converse inequalities at Gauss nodes without endpoint terms, and
-K\"onig--Nielsen \citep{LIT-294} treat same-weight Jacobi nodes. At the
+K\"onig--Nielsen \cite{LIT-294} treat same-weight Jacobi nodes. At the
 zeros of $U_{N-1}$ with Lebesgue measure and $p=2$, the Mastroianni--Russo
 condition requires $(1-x^2)^{-1/2}\in L^2$, which fails logarithmically.
 These are analogous borderline phenomena; we do not derive the CC
@@ -209,33 +217,33 @@ $(1+\log N)^{-2}$ requires the separate harmonic witness of
 Theorem~\ref{thm:harmonic} for the upper bound and Theorem~\ref{thm:cardinal}
 for the lower bound.
 \item The algebraic Marcinkiewicz inequality of Mastroianni--Totik
-\citep{LIT-051} applies at CC nodes only when $n\le N/(\pi M)$ for their
+\cite{LIT-051} applies at CC nodes only when $n\le N/(\pi M)$ for their
 unspecified constant $M$. For every admissible $M\ge2/\pi$ this lies within
 the half-exactness range $n\le N/2$, where exactness already gives
 $\lambda_\pm(N,n)=1$. In its documented form it therefore adds nothing
 beyond exactness for the questions of Section~\ref{sec:ratio}.
 \item The forward quadrature-sum theorem of Lubinsky--M\'at\'e--Nevai
-\citep{LIT-050} applies at CC nodes, for each fixed $l$, to every degree
+\cite{LIT-050} applies at CC nodes, for each fixed $l$, to every degree
 $\le lN$. It gives $\lambda_+(N,n)\le C_l$ with an unspecified constant
 depending on $l$. The threshold
 $2$ and the explicit constants of Theorem~\ref{thm:ratio-upper} and its
 endpoint corollary are not implied.
-\item The later Sloan--Smith papers \citep{LIT-297,LIT-298} relate
+\item The later Sloan--Smith papers \cite{LIT-297,LIT-298} relate
 product-integration convergence to mean convergence with uniform data.
 \item The interpolation book of Mastroianni--Milovanovi\'c
-\citep{LIT-049} (chapters 2, 4 and 5),
-Widom's and Widom--Wilf's Hankel asymptotics \citep{LIT-053,LIT-054},
-the Chebyshev--Legendre method \citep{LIT-058} and recent
+\cite{LIT-049} (chapters 2, 4 and 5),
+Widom's and Widom--Wilf's Hankel asymptotics \cite{LIT-053,LIT-054},
+the Chebyshev--Legendre method \cite{LIT-058} and recent
 Chebyshev--Lobatto interpolation estimates in the Legendre norm
-\citep{LIT-295} concern uniform norms, Sobolev inputs or different matrix
-problems. Lubinsky's survey \citep{LIT-052} records genuine converse
+\cite{LIT-295} concern uniform norms, Sobolev inputs or different matrix
+problems. Lubinsky's survey \cite{LIT-052} records genuine converse
 quadrature-sum (nodal-norm) theorems, but at Gauss nodes and weights.
 \end{itemize}
 We found no statement of the two-sided order
 $\lambda_-(N,N-1)\asymp(1+\log N)^{-2}$, of the parity-compatible witness
 in $\Pn_{N-1}$, of an all-$N$ upper constant below two, or of explicit
 fixed-ratio constants. The search is documented but not exhaustive.
-The published version of \citep{LIT-045} states that the CC behaviour
+The published version of \cite{LIT-045} states that the CC behaviour
 beyond half-exactness is, to its authors' knowledge, not known
 theoretically. Still unread is a 2000 paper of Mastroianni--Russo on
 weighted Marcinkiewicz inequalities. No claim of a first proof is made.
@@ -271,9 +279,11 @@ for even $N$. For $0\le k\le2N$,
 For $0\le i,j\le n\le N$, the continuous and discrete Chebyshev
 mass matrices satisfy
 \begin{equation}\label{eq:mass}
+\begin{gathered}
  M_{ij}=\frac{\mu_{|i-j|}+\mu_{i+j}}2,\quad
- R_{ij}=\frac{\mu_{|i-j|}+Q_N(T_{i+j})}2,\quad
+ R_{ij}=\frac{\mu_{|i-j|}+Q_N(T_{i+j})}2,\\
  D:=2(M-R),\quad D_{ij}=\mu_{i+j}-Q_N(T_{i+j}).
+\end{gathered}
 \end{equation}
 For $n<N$, $D$ is entrywise nonnegative, with positive entries precisely
 when $i+j>N$ is even.
@@ -654,7 +664,7 @@ endpoint upper gap would be additional information.
 \section{Explicit bounds at each fixed degree ratio}\label{sec:ratio}
 
 For $n\le N/2$, exactness gives $\lambda_\pm(N,n)=1$; the classical
-algebraic Marcinkiewicz inequality of Mastroianni--Totik \citep{LIT-051}
+algebraic Marcinkiewicz inequality of Mastroianni--Totik \cite{LIT-051}
 yields nothing beyond this in its documented form
 (Section~\ref{sec:context}). The point of this section is the range
 $N/2<n<N$: explicit constants for every ratio below one, with an upper
@@ -827,7 +837,7 @@ An--Wu's inspected arXiv version assumes a relative squared-norm MZ error
 $\eta<1$ in its main theorem. Its Section~4 assumes $\eta=3/4$ for the
 examples, and Corollary~4.1 retains the theorem's conditions for an
 $m$-point CC rule with $n+2\le m\le2n+1$, obtaining an error bound
-$3\sqrt V E_{m-1-n}(f)$ \citep{LIT-046}.
+$3\sqrt V E_{m-1-n}(f)$ \cite{LIT-046}.
 The following finite calculation specifies an excluded case for that
 assumption; it does not refute the conditional implication.
 
@@ -870,9 +880,9 @@ Thus $\lambda_-(512,511)<1/4$ and the defect exceeds $3/4$.
 
 The growth $\int_{-1}^1U_m^2\asymp\log m$ behind this witness is an
 elementary computation. Analogous borderline mechanisms appear in classical
-converse Marcinkiewicz--Zygmund characterizations \citep{LIT-293,LIT-294},
+converse Marcinkiewicz--Zygmund characterizations \cite{LIT-293,LIT-294},
 and a full-space, subsequence version of $\lambda_-(N,N)\to0$ at the CC
-nodes follows from \citep{LIT-299} (Section~\ref{sec:context}). The
+nodes follows from \cite{LIT-299} (Section~\ref{sec:context}). The
 proposition supplies the exact CC evaluation, valid for every $N$ and on
 $\Pn_{N-1}$.
 This simple witness gives only an $O(1/\log N)$ quotient asymptotically;
@@ -880,7 +890,7 @@ the harmonic combination in Theorem~\ref{thm:harmonic} is needed for
 the squared logarithm. The finite certificate uses no floating spectrum.
 The published An--Wu Corollary~4.1 coincides with the inspected arXiv
 formulation: it assumes $\eta=3/4$ for $m$-point CC with $n+2\le m\le2n+1$
-\citep{LIT-046}, and $m=513$, $n=511$ lies in that range. No correction
+\cite{LIT-046}, and $m=513$, $n=511$ lies in that range. No correction
 was found in a documented search; this is not proof of absence.
 
 \begin{proposition}[Upper-Gram hyperinterpolation estimate; \id{PD-T025}]\label{prop:hyper}
@@ -989,6 +999,6 @@ These identifiers do not confer publication or audit readiness. Analytic
 proofs of the central CC statements have been included here;
 no private manuscript is a mathematical dependency.
 
-\bibliographystyle{plainnat}
+\bibliographystyle{siamplain}
 \bibliography{refs}
 \end{document}

@@ -77,3 +77,10 @@ The development-status box is unchanged here; it is rewritten in task 4.
 | MZ-SP post-split | 11 (A4) | clean, 0 warnings | `0a27b897…0b1aea` |
 
 Gate W0: **PASS** (25 = recorded 25; both split manuscripts build cleanly; every numbered statement is mapped above).
+
+## Class conversion (2026-11-13, separate commit)
+
+By a Sonnet 5.5 high worker, verified by the orchestrator's own rebuild:
+- **MZ-CC:** `\documentclass{siamart251216}`, `siamplain`, `\citep`/`\citealp` → `\cite` (29 places), `\newsiamremark`. The theorem counter is shared within sections, as before. SIAM equation numbering is (s.n). Placeholder keywords/MSC (65D32, 41A17, 41A10, 65F35) are for AC. Layout settings are in the preamble only (`\emergencystretch`, `\raggedbottom`, `\hbadness=1500`, and bibliography `\hbadness`). The only body change is that the `eq:mass` display is wrapped in `gathered` with one line break. 16 pages (486×720 pt), clean.
+- **MZ-SP:** `\documentclass[preprint,12pt,a4paper]{elsarticle}`, `elsarticle-num`, `\journal{Journal of Approximation Theory}`, `\biboptions{sort&compress}`, frontmatter/tnote. Placeholder keywords/MSC (41A10, 41A63, 65D32, 41A17) are for AC. An `\hfuzz` workaround applies inside the output routine for elsarticle's preprint-footer overfull box. Body changes: four overfull displays are wrapped in `gathered` with a line break, and one `\allowbreak` was added. 15 A4 pages, clean.
+- Every theorem-like label keeps its post-split number (14 CC, 9 SP labels compared). The development-status boxes now follow the abstract and keywords. They are removed in task 4.
