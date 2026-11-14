@@ -426,3 +426,15 @@ removed or relabelled; AC's budget disposition remains open.
 The active paired TeX/Bib freeze is `8937d3b723c09c004f49d3e565d0b02976713a37` (58/152-page PDFs; see the BUILD.md files and MANIFEST.json.in); the earlier
 statements above that name `ad908acb21d3589d85635618ff68f63dd01cfbca` with 57/150-page PDFs, and call it final, describe the previous round and are historical.
 See [audit-06](../audit-06.md).
+
+
+## AC-directed paper-evidence regeneration — 2026-11-14
+
+AC requires replacement of every missing paper-dependent input/output and
+permits historical-only artifacts to be forgotten. The missing historical
+onset512/I25 archive identities and old PDF bytes are therefore no longer
+reproduction targets. New native and independent executions have separate
+preregistrations and frozen inputs; see [regeneration-20261114.md](../regeneration-20261114.md)
+for their current outcome and the complete delivery record. The dated
+statements above describe earlier checkpoints and do not certify the new
+run. No permanent storage, external retrieval or DOI is asserted here.

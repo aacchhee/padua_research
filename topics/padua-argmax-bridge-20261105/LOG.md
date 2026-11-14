@@ -3286,3 +3286,42 @@ call preceded the committed freeze. Operational controls pass; actual n=320
 pilot exits 0 for both passes, full validation and field equality pass,
 with no timeout/cleanup kill. Remaining 321..510 admitted once afterward.
 Independent I25 source review is still prospective at this entry.
+
+Native replacement generation completed: all 191 pairs / 382 passes. Root
+independently checked exact 320..510 population, all raw waitstatus/observed
+codes zero, terminal attempts, ECHILD, no timeout or cleanup kill. Engine-child
+CPU 2,918.823368 s; wrapper inclusive CPU 3,050.723502 s; maximum reported
+wrapper RSS 112,708 KiB. Pilot wall 13.034295 s; remaining wall 807.073238 s.
+Every original raw history is retained. No native call was retried.
+
+The first data-only export invocation stopped before artifact creation:
+restricting its affinity to one core conflicted with the frozen wrapper's
+four-core preflight identity. The corrected invocation restores the original
+allowed affinity; exporter still uses one Python process. Source/prereg/native
+outputs unchanged; failed export logs and wait4 receipt are retained. This
+is an operational export correction, not a repeated scientific campaign.
+
+Two further data-only export integration failures are preserved: frozen
+source rows use repository-relative paths while the generic identity check
+expected absolute spelling; then a recorded python3 invocation was compared
+to the canonical python3.12 binary pathname. Narrow reviewed fixes preserve
+canonical bytes/hash identity and exact observed command arrays. Root commits
+`8e86fd6` and `c13ba8f` precede corrected export; all three failed attempts
+precede archive creation and change no native output. Direct staging uses
+the unchanged full validator independently of export, with exact command,
+CPU/tool completion records and immutable identity inventory retained.
+
+New I25 input freeze `0e3d9f28…` committed in `164a04cb` before numerical
+launch; exact staged inventory `3d670da1…`. Root and distinct reviewer each
+compare every new input byte to native outputs. All ten source pins, actual
+Python/NumPy identity and original old-return hash pass. The four-worker full
+run is launched once with saved exact outer-driver source, direct wait4 status
+and internal per-worker observations. No historical I25 output is reused.
+
+Polynomial executable replacement is separately preregistered `ba643bbc`:
+fresh compile, strict n2 and n17 checks all exit zero. All 39 certificates and
+52 frozen source/input identities remain unchanged. All accepted compact
+polynomial receipts survive; no full 39-degree replay is necessary or claimed.
+Actual executable and 14 compiler/header/runtime files (41,412,808 bytes)
+are retained for delivery and independently readback-verified. The new binary
+happens to match historical `e35d6a80…`, but is a fresh build, not recovery.
