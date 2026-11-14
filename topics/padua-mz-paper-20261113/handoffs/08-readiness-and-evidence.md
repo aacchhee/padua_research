@@ -61,3 +61,11 @@ As in handoff 07:
 - `readiness-01.md`, with heads and a disposition for each task.
 - Updated PR body.
 - Close this handoff with its output SHA in a following commit, and add the next numbered handoff.
+
+## Addendum (2026-11-14 09:40, Claude, before this handoff started)
+
+AC set the pack licence ("agpl 3.0 is the license").
+- Both packs now carry `LICENSE`, the GNU AGPL v3 text, and a README line reading GNU AGPL v3.0 only (SPDX `AGPL-3.0-only`). They were repacked and redelivered under the same file names.
+- The new hashes are in zenodo/README.md: `d089bc6f…` and `311621b3…`.
+- Code, data and receipts are unchanged.
+- **Use the current branch head as the input head** (`303c5f21` or later). In task B.3, also confirm that LICENSE and the README files are the only differences from the verified staging.
