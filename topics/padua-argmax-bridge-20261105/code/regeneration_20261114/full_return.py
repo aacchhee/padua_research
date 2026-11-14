@@ -124,6 +124,9 @@ def export(archive):
     for name in json_names:
         for identity in identities(R.strict(sources[files[name]['sha256']].read_bytes())):
             path = Path(identity['path'])
+            if not path.is_absolute():
+                safe(path.as_posix()); path = R.ROOT / path
+            identity = {**identity, 'path': str(path)}
             if str(path) in verified_dependencies:
                 need(verified_dependencies[str(path)] == identity, 'consistent repeated dependency identity')
                 continue
