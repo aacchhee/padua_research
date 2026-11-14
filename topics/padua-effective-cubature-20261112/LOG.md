@@ -1,7 +1,7 @@
 # Effective Theorem A (positive cube cubature excess) and the Padua Lebesgue-constant corollary: log
 
 - Branch: `claude/padua-effective-cubature-20261112` · Base: main `b5388c2` (PR #33 merged) · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Stage: READINESS (Codex readiness check pending) · Open handoff: [handoffs/09-readiness.md](handoffs/09-readiness.md) (Codex); 01/03/04/05/06/07/08 done, 02 superseded · Draft PR: https://github.com/aacchhee/padua_research/pull/34 (draft; preparation/readiness pending)
+- Stage: PR (readiness passed; ready for AC review/merge decision) · Open handoff: none (all assigned agent work complete; 01/03–09 done, 02 superseded) · PR: https://github.com/aacchhee/padua_research/pull/34 (ready for review; only AC merges)
 - Reserved final-ID ranges: PD-T674–683, PD-N246–250, IDEA-756–765, LIT-716–720 ([ledger](ALLOCATIONS.md)); assigned PD-T674–679, PD-N246, IDEA-756–762, LIT-716–717.
 - Claims (provisional IDs `PD-T?padua-effective-cubature-20261112-claude-NN`):
   - -01 (PD-T674): C0 corollary, PROVED (assembly);
@@ -186,6 +186,7 @@
 - The shared diff preserves accepted statements/statuses/mappings, other-topic content and scoped candidate dispositions. Eligible MINOR summary/map wording fixes are in separate commits `10938c33791a31a2dfb33c77a556a5a24f7ed416` and `9de44d23524bf426a529d8d0fffb1d307cdc4d2a`; independently checked, no material scientific change. Validation: 16 unique maps, 63 valid links, table formatting and 10/10 evidence hashes PASS.
 - The optional full Codex coefficient replay remains unavailable (HTTP403); no scientific rerun or new computational PASS is claimed. Existing independent/developer evidence, arithmetic trust assumptions, retrospective gate history and archival pending item remain disclosed.
 - Handoff 09's agent work is complete. Publish the ready-for-review state after a final live reservation-source check; only AC merges. No new agent handoff is required for the merge decision. Refresh reservations if relevant main/peer ledger/identifier content changes before merge; this session does not monitor future changes.
+- Publication complete: the final live check retained main and PR27, and fetched PR35 `8687dfd48d854faf9a19289365bfebbf1a5220d2`; all its ledger/ID-registry blobs are unchanged from the full scan. The PR population remains 34 with no closed-unmerged item. Readiness outputs `2bce5d50ad5ef94297359a4ff3bdcf40b5af1669` were pushed, PR #34's description was updated and GitHub marked it ready for review. No merge performed. Handoff 09 closes against that output commit; there is no open agent handoff or further assigned development.
 
 ## Runs needed (retained development list)
 

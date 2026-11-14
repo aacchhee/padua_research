@@ -1,6 +1,6 @@
 # Handoff 09 — padua-effective-cubature-20261112 — Codex readiness check (registry/ID diff and reservation refresh)
 
-- Status: open
+- Status: done in `2bce5d50ad5ef94297359a4ff3bdcf40b5af1669`
 - Previous handoff: [08-pr-preparation.md](08-pr-preparation.md)
 - Next agent / model / effort: **Codex, gpt-6-astra, high**
 - Role: independent auditor (readiness check)

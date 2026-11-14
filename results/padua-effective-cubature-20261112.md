@@ -88,4 +88,4 @@ No claim changes. Developer replays of all three γ certificates from a fresh ha
 
 ## Next step
 
-AC review and merge decision on PR #34 after publication of the ready-for-review state. Refresh the reservation snapshot if main or another open PR's allocation/identifier sources change before merge. No further scientific development is assigned; only AC merges.
+AC review and merge decision on ready-for-review PR #34. Refresh the reservation snapshot if main or another open PR's allocation/identifier sources change before merge. No further scientific development is assigned; only AC merges.
