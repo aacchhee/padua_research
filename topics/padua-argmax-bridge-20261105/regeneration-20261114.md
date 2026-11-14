@@ -123,11 +123,16 @@ remain. Changed final pages were actually rendered and independently inspected.
 
 [Supplementary review](supplementary-regeneration-review-20261114.md) records
 exact executed sources, inputs, observations, hashes and final PDF inspection.
-The complete downloadable package is being sealed from these verified inputs,
-including source snapshot, all proof inputs, new full histories/results,
+The complete downloadable package is sealed: **296,189,961 bytes**, SHA256
+`d3452a176a220a649ca889cacd43c9c0d96fb75e12ae84849d0a07ee6b7d354c`.
+It contains the source snapshot, all proof inputs, new full histories/results,
 required runtime bytes, current PDFs, commands and exact configuration/plan.
-The final [delivery receipt](regeneration-delivery.json) will identify actual
-package bytes after build/readback. No permanent external storage, DOI or
+Independent verification and fresh extraction rehash all 2,771 logical files
+and permissions, all 942 proof/result links and the required source/runtime
+census. [Delivery receipt](regeneration-delivery.json) and
+[completed delivery review](delivery-review-20261114.md) record actual bytes.
+These later custody receipts deliberately sit outside the scientific source
+snapshot and ZIP, avoiding a self-referential hash. No permanent external storage, DOI or
 Windows transfer is asserted; a compatible host ABI/toolchain remains an
 explicit reproduction requirement. Historical-only missing artifacts are
 retired as acceptance requirements, not silently claimed recovered.

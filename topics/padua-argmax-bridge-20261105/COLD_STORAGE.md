@@ -213,6 +213,8 @@ polynomial executable rebuild are complete and independently checked.
 No missing historical onset/I25 ZIP, old PDF byte identity or old 632 MiB
 auxiliary-history transfer is required by this paper version. Historical
 records above remain historical; none is a current custody receipt.
-The complete source/data/runtime/PDF package is being sealed locally;
-external permanent custody and DOI remain unassigned. No Windows delivery
+The complete source/data/runtime/PDF package is sealed locally: 296,189,961
+bytes, SHA256 d3452a176a220a649ca889cacd43c9c0d96fb75e12ae84849d0a07ee6b7d354c.
+Independent verify and fresh extraction pass; external permanent custody
+and DOI remain unassigned. No Windows delivery
 is inferred from this local record.

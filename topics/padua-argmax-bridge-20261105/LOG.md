@@ -3359,3 +3359,48 @@ are below 16 KiB individually; no unrelated evidence is removed or reclassified.
 Large scientific outputs and the downloadable package stay outside Git.
 AC's cap/storage/share and publication choices remain open; no permanent
 location or DOI is invented. Final delivery metadata growth is counted later.
+
+## 2026-11-14 — Final concrete delivery closure
+
+Scientific source snapshot `be4197237cfbd45388a436400e278323e22da16e`
+was archived and pushed before packaging: 19,114,119 bytes,
+SHA256 fd4b2c01cd8643be4999d109f45f1c10a2a0bb229ceb02c392e2fb89b4a34dd6.
+The managed environment briefly reattached with the same ID; ready status
+and all generated files were verified. No scientific computation was repeated.
+A distinct final delivery reviewer was dispatched as Astra high, fork none;
+effective runtime metadata remains unexposed. It leaves the completed
+numerical/source/layout report unchanged and writes a separate delivery review.
+
+The concrete plan is independently recomputed byte-identically before first
+outer build: 2,771 logical files / 470,111,629 bytes, 2,703 unique objects /
+404,559,092 bytes, all ten roles. The reviewer compares all 8,137 regular
+scientific-source files to Git blob identities/executable bits and checks all
+39 polynomial inputs. Config and exact plan are embedded without self-reference.
+The first outer build exits zero and its full integrity check passes.
+
+Complete downloadable ZIP: **296,189,961 bytes**, SHA256
+`d3452a176a220a649ca889cacd43c9c0d96fb75e12ae84849d0a07ee6b7d354c`.
+A distinct reviewer independently hashes it, verifies it, freshly extracts it
+and rehashes all 2,771 logical files/modes and exact config/plan controls.
+It checks all 942 proof/input/result links, six replay field equalities,
+1,652 runtime payload mappings, 39 polynomial identities, full native
+inventory/census and both current PDF/source identities. All PASS. No archive
+code or new numerical science executes in this custody check.
+[Delivery review](delivery-review-20261114.md) and
+[small delivery receipt](regeneration-delivery.json) record actual bytes and
+host ABI/toolchain limits. Review scripts/small receipts are retained beside
+the package, outside the already frozen ZIP; no circular self-hash is claimed.
+Local custody and download availability are established, not Windows transfer,
+permanent external storage or a DOI. AC should retain the delivered package.
+
+Final repository accounting: main 9,733,758 bytes; topic classified share
+2,045,583; union 11,779,341; with the 2,087-byte exception 11,781,428;
+conservative no-shrink bound 11,801,088 against 10,000,000. The cap is unmet;
+neither branch alone exceeds it. New evidence files remain below 16 KiB each.
+No unrelated evidence is removed/reclassified. All paper-dependent missing
+data have been replaced or were present; historical-only archives/PDFs and
+old auxiliary histories are retired as requirements under AC's instruction.
+Stage AUDIT for the focused material regeneration/code/dependency delta,
+then PR once accepted; PR 27 remains draft pending that review and AC's
+budget/storage/publication decisions. No range or final-ID change.
+Next: [handoff 36 — focused regeneration audit](handoffs/36-claude-audit-regenerated-evidence.md).
