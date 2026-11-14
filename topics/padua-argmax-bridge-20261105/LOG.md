@@ -3602,3 +3602,30 @@ source-code size is not constrained by that evidence norm. No unrelated output
 is deleted/reclassified. AC's budget, DOI and author/AI/draft/publication choices
 remain, while retained-path disclosure is explicitly resolved. No upload.
 Next: [handoff 39 — focused response-07 diff review](handoffs/39-claude-review-response07.md).
+
+## 2026-11-14 — Focused Claude audit-08 of response-07 (handoff 39)
+
+Orchestrator `claude-sonnet-5-5`; three independent Claude Opus 5.5 reviewers
+(instructed xhigh; runtime effort not observable). Rules read at `50070f5`
+(`agents/` unchanged since `d6dd673`). AC supplied the exact new public ZIP in
+the session (SHA256 `b341e6a1…adbaa`, 5,149,206 B, recomputed; exactly nine
+members differ from the audit-07 package). Report: [audit-08](audit-08.md)
+with M8/E8/P8 reports and scripts.
+
+Result: accepted. Audit-07's MAJOR (data statements describing a package the
+public kit is not) is resolved in both manuscripts and in the rebuilt kit; no
+BLOCKING or MAJOR. TeX hunks are wording/provenance only (formal blocks equal
+those of the earlier freeze; empty rename map); builds 59/152 pp, shipped PDFs
+text-identical to rebuilds; correspondence 19/86/120, archival 13/90/113 and
+current-aux 120, 7 baseline controls; delivered ZIP census passes with an
+independent checker; README commands verbatim, 6 new phase degrees (12
+records) and polynomial 5/21/28/34 replay; the new strict-JSON, manifest and
+polynomial hash/count checks reject the cases audit-07 accepted; budget
+reproduced (bound 11,870,763 B vs 10,000,000). MINOR items returned for one
+final freeze together with AC's own edits (M8-02 "full native histories",
+M8-03 trust-footnote sentence, M8-01 vacuous label mode, P8-01 empty degree
+selection, E8-01 README wording). In-place fixes (separate commit): PR record,
+deposit README and public-package pointer notes. Readiness is not offered:
+registry application/final-ID assignment and the readiness check are still
+ahead, and AC's decisions are open. Next:
+[handoff 40](handoffs/40-pr-preparation.md).

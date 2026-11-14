@@ -300,3 +300,13 @@ non-mathematical MAJOR finding remains: the manuscripts' data statements
 describe a deposit different from the public kit. AC decisions (package
 naming, path disclosure, budget, DOI, declarations) remain open; no
 readiness is offered.
+
+## Dated status — 2026-11-14 (Claude audit-08)
+
+The focused Claude review ([audit-08](../topics/padua-argmax-bridge-20261105/audit-08.md))
+accepts the rebuilt public verification kit and the response-07 manuscript
+descriptions: the shipped data statements now describe the public kit and the
+separately held preservation archive; no theorem, range or premise changed;
+the delivered ZIP's integrity, new verifier checks and independent replays
+pass. Remaining: one final paired freeze with AC's own edits, registry
+application at PR preparation, and AC's budget and publication decisions.
