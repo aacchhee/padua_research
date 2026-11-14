@@ -2125,3 +2125,14 @@ Assignments: PD-T554–643(90), PD-N186–225(40), IDEA616–723(108), LIT636–
 | LIT?padua-effective-cubature-20261112-claude-02 | LIT-717 | [literature-effective.md](topics/padua-effective-cubature-20261112/literature-effective.md) | literature record |
 
 Assignments: PD-T674–679 (6), PD-N246 (1), IDEA-756–762 (7), LIT-716–717 (2). Permanent unused gaps: PD-T680–683, PD-N247–250, IDEA-763–765, LIT-718–720. No alias receives two final IDs.
+
+## MZ-CC and MZ-SP manuscripts — PR35
+
+[Topic ledger](topics/padua-mz-paper-20261113/ALLOCATIONS.md): owner claude/padua-mz-paper-20261113, PR35; reserved PD-T684–689. [Exact final map](topics/padua-mz-paper-20261113/pr-preparation/final-id-map.json). The theory records keep their provisional titles as aliases; audit and check reports keep the provisional IDs.
+
+| Provisional ID / retained alias | Final ID | Canonical record | Mapping scope |
+|---|---|---|---|
+| PD-T?mz-paper-claude-01 | PD-T684 | [cc-defect-condition-corollary.md](topics/padua-mz-paper-20261113/theory/cc-defect-condition-corollary.md) | canonical claim |
+| PD-T?mz-paper-claude-02 | PD-T685 | [sp-corner-norm-lower.md](topics/padua-mz-paper-20261113/theory/sp-corner-norm-lower.md) | canonical claim |
+
+Assignments: PD-T684–685 (2). Permanent unused gaps: PD-T686–689. No PD-N, IDEA or LIT ID is assigned. No alias receives two final IDs.

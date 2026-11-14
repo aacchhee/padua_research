@@ -1,0 +1,36 @@
+{
+  "status": "MEASURED",
+  "rigorous_enclosures": false,
+  "command": [
+    "g1_minimum.py",
+    "--m",
+    "1101",
+    "--output",
+    "/tmp/regen/out/scan-m1101.json",
+    "--vector-dir",
+    "/tmp/regen/vectors"
+  ],
+  "code_sha256": "247bf4fa323abf2668fd4575b3ee8b363afa9ff75ecc1884eb41eda2a8433cb3",
+  "operator_code_sha256": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+  "seed": 20261105,
+  "tolerance": 2e-11,
+  "ncv": 40,
+  "exploratory_scope": "m>1000 requested post hoc by orchestrator on 2026-11-05 after lower corner branch observed",
+  "results": [
+    {
+      "m": 1101,
+      "n": 1100,
+      "dimension": 606651,
+      "minimum": -0.03506683436127429,
+      "residual_2_float": 1.5339312613879178e-15,
+      "matvecs": 122,
+      "seconds": 30.724748832000003,
+      "peak_rss_kib": 378044,
+      "vector": {
+        "path": "/tmp/regen/vectors/m1101-n1100-min.npy",
+        "sha256": "a407bd0cc499a2a86b892cf5d834a2d6217c4d97b91a4205a7f0ae309572592a",
+        "bytes": 4853336
+      }
+    }
+  ]
+}

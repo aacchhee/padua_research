@@ -1,19 +1,16 @@
-\documentclass[11pt]{article}
-\usepackage[a4paper,margin=27mm]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array}
-\usepackage[numbers,sort&compress]{natbib}
-\usepackage[hidelinks]{hyperref}
+\documentclass{siamart251216}
 \usepackage{microtype}
-\hypersetup{pdftitle={Marcinkiewicz--Zygmund constants of Clenshaw--Curtis and Padua rules beyond half-exactness},
- pdfauthor={Research development draft},pdfsubject={Audited development draft; historical priority screened, not cleared}}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{corollary}[theorem]{Corollary}
-\theoremstyle{remark}
-\newtheorem{remark}[theorem]{Remark}
+\usepackage{amsmath,amssymb,mathtools,booktabs,array}
+\hypersetup{pdfsubject={Marcinkiewicz--Zygmund constants of Clenshaw--Curtis quadrature}}
+% siamart251216 defines theorem, lemma, corollary, proposition, definition on one
+% shared counter numbered within sections (Theorem 2.3, Lemma 2.4, ...).
+\newsiamremark{remark}{Remark}
+% Layout tuning for the narrower SIAM text block (no change to content):
+\emergencystretch=2em
+\hbadness=1500 % tolerates one slightly loose line (badness 1168) in Sec. 4
+\raggedbottom
+\usepackage{etoolbox}
+\AtBeginEnvironment{thebibliography}{\hbadness=5000 }% class sets \sloppy here; one entry has badness 4060
 \newcommand{\Pn}{\Pi}
 \newcommand{\R}{\mathbb R}
 \newcommand{\CC}{\mathrm{CC}}
@@ -24,177 +21,249 @@
 \newcommand{\dd}{\,\mathrm d}
 \newcommand{\id}[1]{\textnormal{\texttt{#1}}}
 \DeclareMathOperator{\diag}{diag}
-\title{Marcinkiewicz--Zygmund constants of Clenshaw--Curtis\texorpdfstring{\\}{ }and Padua rules beyond half-exactness}
-\author{Research development draft\thanks{Authorship and submission venue to be decided by AC. This document is not for submission.}}
-\date{5 November 2026}
+\headers{MZ constants of Clenshaw--Curtis quadrature}{[Authors to be decided by AC]}
+\title{Marcinkiewicz--Zygmund constants of Clenshaw--Curtis\texorpdfstring{\\}{ }quadrature beyond half-exactness}
+% Placeholder authors, keywords and MSC codes: for AC's review before any submission.
+\author{[Authors to be decided by AC]\thanks{Authorship and submission venue to be decided by AC. This document is not for submission.}}
+% \date{5 November 2026}  % siamart sets no date
 \begin{document}
 \maketitle
-\begin{center}\small
-\textbf{Development status.} Independent Astra reconstruction accepted the analytic
-M1--M3 results within its stated scope. Claude audits~01--02 accepted the scientific
-statements and response within their recorded scopes. The prior-art corrections
-are closed by Codex audit~03. The even-degree signed Padua results and
-uniform operator bound were accepted in the PR~23 audit; the present
-odd-degree extensions,
-normalized growth bounds, finite witnesses and manuscript integration
-were accepted at their stated scopes in Claude cleanup audit~01.
-The accompanying editorial dispositions are recorded in the cleanup response.
-No historical novelty clearance is claimed.
-Historical priority: \textbf{screened, not cleared} (documented, non-exhaustive search; some fulltexts pending); see Section~\ref{sec:context}.
-\end{center}
-
 \begin{abstract}
-For the Lebesgue Clenshaw--Curtis rule on the $N+1$ Chebyshev extrema,
-we prove that its squared-polynomial norm ratio is less than two through
-degree $N-1$. An absolute-coefficient comparison for a matrix with
-nonpositive off-diagonal entries gives the explicit upper bound
-$2-4/N+4/N^2$ by specializing its degree-sensitive form.
-At degree $N-1$, weighted estimates for cardinal
-interpolation and a parity-compatible harmonic combination of second-kind
-Chebyshev polynomials give a minimum Gram eigenvalue of order
-$(1+\log N)^{-2}$. Thus the Gram condition number has order
-$(1+\log N)^2$, while its deviation from the identity tends to one.
-A filtered Fej\'er reconstruction also supplies explicit, nonsharp strong
-Marcinkiewicz--Zygmund constants for every fixed degree ratio below one.
-The upper bound yields a uniform hyperinterpolation error factor
-$(1+\sqrt2)\sqrt V$ under the stated reproduction condition.
-An exact witness at $N=512$ excludes a uniform defect bound of $3/4$
-covering that endpoint case, without contradicting a conditional theorem
-of An and Wu. For signed Lebesgue Padua rules, we prove the exact
-factor-two Clenshaw--Curtis marginal and its spectral compression consequence;
-the actual signed Gram form has divergent negative and positive extrema
-as the construction degree tends to infinity, at every fixed degree ratio
-above one half.
-Explicit parity carriers and logarithmic boundary-weight asymptotics prove
-this sharp half-exactness threshold. Nevertheless the direct signed
-coefficient hyperinterpolant has a uniform $C\to L^2$ norm below thirty.
-Analytic proofs are included. For CC, the qualitative facts that the
-minimum eigenvalue on the full interpolation space is not bounded below
-and that the maximum eigenvalue is bounded follow from classical weighted
-Marcinkiewicz--Zygmund results. In a
-documented but non-exhaustive search we found no prior statement of the
-two-sided logarithmic order, of a threshold below two, or of the explicit
-constants.
+For Clenshaw--Curtis (CC) quadrature with respect to Lebesgue measure on
+$[-1,1]$, with the $N+1$ Chebyshev extrema as nodes, we study the Gram matrix
+$G_{N,n}$ of the rule on polynomials of degree at most $n$, beyond the
+half-exactness range $n\le N/2$ in which it is the identity. Its extreme
+eigenvalues are the optimal Marcinkiewicz--Zygmund constants. We prove that
+for $n<N$ all eigenvalues lie in
+$(0,\min\{1+\rho_{N,n},5/3\}]$ with $\rho_{N,n}=\max\{2n/N-1,0\}^2$, strictly
+below $1+\rho_{N,n}$ when $n>N/2$, whereas the largest eigenvalue exceeds two
+at $n=N$. At the endpoint degrees $n=N-1$ and $n=N$ the smallest eigenvalue
+satisfies $(\log N)^2\lambda_{\min}\to\pi^4/8$; at $n=N$ this says that
+interpolation from CC-weighted nodal $\ell^2$ data to $L^2$ has norm
+$(2\sqrt2/\pi^2+o(1))\log N$. The largest eigenvalue of $G_{N,N-1}$ converges
+to the squared norm $\Lambda_{\mathrm{edge}}$ of an explicit endpoint sampling
+operator, with $1.0044369\le\Lambda_{\mathrm{edge}}\le3/2$; the lower bound is
+computer-assisted. Consequently the Marcinkiewicz--Zygmund defect
+$\eta_N=\norm{I-G_{N,N-1}}_2$ satisfies $(\log N)^2(1-\eta_N)\to\pi^4/8$, and
+the condition number of $G_{N,N-1}$ grows like
+$(8\Lambda_{\mathrm{edge}}/\pi^4)(\log N)^2$.
+We also give explicit strong constants at every fixed degree ratio below one,
+and a uniform error factor for CC hyperinterpolation. The proofs use the sign
+structure of the Chebyshev mass and defect matrices, a discrete primitive
+estimate with a signed sinc remainder, and a weak-compactness argument for
+the endpoint operator. The decimal value of $\Lambda_{\mathrm{edge}}$ is
+left open.
 \end{abstract}
 
-\section{Problem, conventions, and relation to the literature}\label{sec:context}
+% Placeholder keywords and MSC codes: for AC's review.
+\begin{keywords}
+Marcinkiewicz--Zygmund inequalities, Clenshaw--Curtis quadrature, Gram matrix, hyperinterpolation, Chebyshev extrema
+\end{keywords}
 
-Let $Q(f)=\sum_j w_j f(x_j)$ approximate a finite positive measure $\mu$,
-and let $G=(Q(P_iP_j))_{ij}$ in a real $L^2(\mu)$-orthonormal basis
-of a polynomial space. The basis-independent quantity
+\begin{MSCcodes}
+65D32, 41A17, 41A10, 65F35
+\end{MSCcodes}
+
+
+
+\section{Introduction}\label{sec:context}
+
+Let $Q(f)=\sum_j w_j f(x_j)$ approximate integration against a finite
+positive measure $\mu$, and let $G=(Q(P_iP_j))_{ij}$, where $(P_i)$ is a real
+$L^2(\mu)$-orthonormal basis of a polynomial space. The basis-independent quantity
 \begin{equation}\label{eq:eta}
  \eta=\norm{I-G}_2
  =\max\{1-\lamin(G),\lamax(G)-1\}
 \end{equation}
-is the smallest nonnegative constant in
+is the smallest nonnegative constant in the Marcinkiewicz--Zygmund (MZ)
+inequality
 \[
- |Q(p^2)-\norm p_{L^2(\mu)}^2|\le\eta\norm p_{L^2(\mu)}^2.
+ |Q(p^2)-\norm p_{L^2(\mu)}^2|\le\eta\norm p_{L^2(\mu)}^2 .
 \]
 In particular, $\eta<1$ means that every Gram eigenvalue lies in $(0,2)$.
 If $Q$ is exact through degree $d$, exactness alone gives $G=I$ through
-degree $\lfloor d/2\rfloor$. We call this the half-exactness range.
+degree $\lfloor d/2\rfloor$, the \emph{half-exactness range}. Beyond it the
+constants carry information about the rule. An, Sommariva and Vianello (ASV)
+study their role in polynomial approximation and examine them numerically
+for several rules, including Clenshaw--Curtis (CC) on the interval
+\cite{LIT-045}. They distinguish degree-dependent weak constants from strong
+constants uniform along a sampling regime, and they report the CC behaviour
+beyond half-exactness as not known theoretically. This paper settles the
+question qualitatively at every degree ratio below one and sharply, as
+$N\to\infty$, at the endpoint degree $n=N-1$, up to the decimal value of one
+constant.
 
-An, Sommariva, and Vianello (ASV) investigate the role of these constants
-and numerically examine their behavior beyond half-exactness for several
-rules, including Clenshaw--Curtis (CC) on the interval and Padua rules on
-the square \citep{LIT-045}. Their inspected introduction and
-Sections~3.1--3.2 distinguish degree-dependent weak constants from strong
-constants uniform along a sampling regime. The displayed experiments use
-exactness degrees $m=1,\ldots,20$ and approximation degrees
-$n=0,\ldots,30$. The present questions are the all-$N$ CC upper threshold,
-its endpoint lower spectrum, and uniformity at every fixed ratio $n/N<1$.
-These questions are narrower than a classification of all interpolatory rules.
-
-Throughout the CC analysis,
+\paragraph{Setting}
+Throughout,
 \begin{equation}\label{eq:nodes}
  N\ge2,\qquad \theta_j=\frac{j\pi}{N},\quad x_j=\cos\theta_j,
  \quad 0\le j\le N,
  \qquad Q_N(f)=\sum_{j=0}^N w_j f(x_j),
 \end{equation}
 where $w_j=\int_{-1}^1\ell_j(x)\dd x$ and $\ell_j\in\Pn_N$ is
-the cardinal polynomial at $x_j$. The measure is unnormalized Lebesgue
+the cardinal polynomial at $x_j$; here $\Pn_n$ denotes the real polynomials
+of degree at most $n$ (complex coefficients are allowed only in
+Theorem~\ref{thm:sharp-min}, where this is said explicitly).
+The measure is unnormalized Lebesgue
 measure $\dd x$. Write $G_{N,n}$ for the Gram matrix on $\Pn_n$ and
-$\lambda_\pm(N,n)$ for its extreme eigenvalues. Thus
+$\lambda_\pm(N,n)$ for its extreme eigenvalues, so that
 \begin{equation}\label{eq:variational}
  \lambda_-(N,n)=\inf_{0\ne p\in\Pn_n}
  \frac{Q_N(p^2)}{\int_{-1}^1p^2},\qquad
  \lambda_+(N,n)=\sup_{0\ne p\in\Pn_n}
  \frac{Q_N(p^2)}{\int_{-1}^1p^2}.
 \end{equation}
-The node index $N$, point count $N+1$, and maximal algebraic degree of
-exactness $d_N$ are distinct. In these conventions
+We call $Q_N(p^2)$ the \emph{discrete energy} and $\int_{-1}^1p^2$ the
+\emph{continuous mass} of $p$.
+The node index $N$, the point count $N+1$ and the maximal algebraic degree
+of exactness $d_N$ are distinct:
 \begin{equation}\label{eq:ade}
  d_N=\begin{cases}N,&N\text{ odd},\\N+1,&N\text{ even}.
  \end{cases}
 \end{equation}
-ASV use an exactness-degree parameter; An--Wu's CC parameter $m$ counts
-points \citep{LIT-046}. We will keep these meanings separate.
+Thus $G_{N,n}=I$ for $n\le N/2$, and the interesting
+range is $N/2<n\le N$. Natural logarithms are used throughout.
 
-For orientation, our principal CC conclusions are
-\begin{align}
- &0<\lambda_-(N,n)\le\lambda_+(N,n)
-       \le 2-\frac4N+\frac4{N^2}<2, &&0\le n<N,\label{eq:main-upper}\\
- &\lambda_-(N,N-1)\asymp (1+\log N)^{-2},\label{eq:main-endpoint}\\
- &\frac{(1-n/N)^2}{C_*}\le\lambda_-(N,n)
-       \le\lambda_+(N,n)\le1+\max\{2n/N-1,0\}^2,
-       &&0\le n<N,\label{eq:main-ratio}
-\end{align}
-with $C_*=12(1+\pi)^4(1+2/\pi)$. All constants are deliberately nonsharp.
-The upper constant in \eqref{eq:main-upper} is the endpoint corollary
-of the degree-sensitive estimate \eqref{eq:main-ratio}; it equals the
-exact quotient one when $N=2$, and the upper inequality is strict for $N\ge3$.
-At full degree $N$ the upper threshold fails, as an explicit $T_N$
-test shows below. For the signed Padua rule the picture is different: Section~\ref{sec:padua}
-proves divergence of both spectral extrema along all construction degrees
-above half-exactness, alongside a uniform bound for its direct coefficient
-operator. These results do not depend on a finite eigenvalue fit.
+\subsection{Main results}
 
-\paragraph{Attribution and coverage limits.}
-The folded Chebyshev moments used below are established prior algebra:
-Trefethen's Theorem~5.2 and formulas (5.2)--(5.4) give the mode aliasing
-\citep{LIT-055}; selected coefficient-decay results of
-Xiang--Bornemann provide related quadrature context \citep{LIT-056}.
-ASV equation~(7) already uses the upper-MZ factor
+The first result concerns the whole range below full degree.
+
+\begin{theorem}[Upper spectrum]\label{thm:intro-upper}
+For $0\le n<N$, with $\rho_{N,n}=\max\{2n/N-1,0\}^2$,
+\begin{equation}\label{eq:main-upper}
+ 0<\lambda_-(N,n)\le\lambda_+(N,n)\le\min\Bigl\{1+\rho_{N,n},\,\frac53\Bigr\}<2 .
+\end{equation}
+At full degree, $\lambda_+(N,N)>2$.
+\end{theorem}
+
+This is Theorems~\ref{thm:ratio-upper} and~\ref{thm:five-thirds},
+Corollary~\ref{cor:ratio-endpoint} and
+Remark~\ref{rem:sign-boundary}. At the endpoint degree $n=N-1$ the two
+extreme eigenvalues are determined asymptotically.
+
+\begin{theorem}[Endpoint minimum]\label{thm:intro-min}
+As $N\to\infty$ through all integers (not only along even or odd $N$),
+\begin{equation}\label{eq:main-endpoint}
+ \lim_{N\to\infty}(\log N)^2\lambda_-(N,N-1)
+ =\lim_{N\to\infty}(\log N)^2\lambda_-(N,N)=\frac{\pi^4}8 .
+\end{equation}
+Equivalently, interpolation at the nodes, from nodal values $u_k$ normed by
+$(\sum_kw_ku_k^2)^{1/2}$ to $L^2(-1,1)$, has norm
+$(2\sqrt2/\pi^2+o(1))\log N$. Moreover
+$K_N^{-1}\le\lambda_-(N,N-1)\le128000/(\log N)^2$ for every $N\ge2$, with
+$K_N=O((\log N)^2)$ explicit in \eqref{eq:KN}.
+\end{theorem}
+
+This is Theorems~\ref{thm:sharp-min}, \ref{thm:cardinal}
+and~\ref{thm:harmonic} and Corollary~\ref{cor:interp-norm}.
+
+\begin{theorem}[Endpoint maximum]\label{thm:intro-max}
+Through all integers $N$, $\lambda_+(N,N-1)\to\Lambda_{\mathrm{edge}}$, where
+$\Lambda_{\mathrm{edge}}$ is the squared norm \eqref{eq:Lambda-edge} of an
+explicit endpoint sampling operator, and
+$1.0044369\le\Lambda_{\mathrm{edge}}\le3/2$. The lower bound $1.0044369$ is
+computer-assisted.
+\end{theorem}
+
+This is Theorem~\ref{thm:edge-limit} and
+Proposition~\ref{prop:edge-certified}. Combining the three theorems gives the
+MZ defect and the condition number at the endpoint.
+
+\begin{corollary}\label{cor:intro}
+Let $\eta_N=\norm{I-G_{N,N-1}}_2$.
+\begin{enumerate}
+\item $1-\eta_N=\lambda_-(N,N-1)$ for every $N\ge57$; hence
+$(\log N)^2(1-\eta_N)\to\pi^4/8$, and
+$\kappa_2(G_{N,N-1})/(\log N)^2\to8\Lambda_{\mathrm{edge}}/\pi^4$,
+where $\kappa_2$ denotes the spectral (2-norm) condition number
+(Corollary~\ref{cor:endpoint}).
+\item For every $0\le\vartheta<1$ and $0\le n\le\vartheta N$, the spectrum of
+$G_{N,n}$ lies in $[(1-\vartheta)^2/C_*,\,1+\max\{2\vartheta-1,0\}^2]$ with
+$C_*=12(1+\pi)^4(1+2/\pi)$ (Corollary~\ref{cor:strong}).
+\item For $f\in C[-1,1]$, $0\le n<N$ and every $0\le k\le\min\{n,d_N-n\}$,
+the CC hyperinterpolant satisfies
+$\norm{f-\mathcal L_nf}_{L^2}\le(1+\sqrt{5/3})\sqrt2\,E_k(f)$, where
+$\mathcal L_n$ is the hyperinterpolation operator and
+$E_k(f)=\inf_{r\in\Pn_k}\norm{f-r}_\infty$ is the best uniform
+approximation error by $\Pn_k$; both are defined in
+Section~\ref{sec:hyper}, where this is \eqref{eq:CCerror}.
+\end{enumerate}
+\end{corollary}
+
+We do not claim that the constants $5/3$ and $C_*$ are optimal. The
+constants $\pi^4/8$ and $\Lambda_{\mathrm{edge}}$ are sharp: they are the
+limits.
+
+\paragraph{Methods}
+The upper bounds use the sign structure of the defect between continuous and
+discrete Chebyshev mass matrices (Section~\ref{sec:upper}). The endpoint
+minimum is a converse MZ problem at a borderline. Near an endpoint, on the
+scale $\theta=\pi t/N$, interpolation acts like a discrete Hilbert transform
+(the kernel $1/(t-k)$ in \eqref{eq:Phi-split}).
+Its leading part is a discrete primitive on the logarithmic scale, which is
+controlled by the norm $2/\pi$ of the Volterra (primitive) operator $V$; the remainder is
+controlled with its signs kept (Section~\ref{sec:endpoint},
+Appendix~\ref{app:sharp}). The endpoint maximum is decided on the microscopic
+scale $\theta=\xi/N$: a compact transition part converges, and a positive
+reflected part is only lower semicontinuous (Section~\ref{sec:edge-max},
+Appendix~\ref{app:edge}). The fixed-ratio lower bound uses a filtered
+Fej\'er reconstruction (Section~\ref{sec:ratio}).
+
+\paragraph{Outline}
+Section~\ref{sec:prelim} collects exact CC identities and weight bounds.
+Sections~\ref{sec:upper}--\ref{sec:consequences} prove the results above;
+Section~\ref{sec:ratio} treats fixed degree ratios, and
+Section~\ref{sec:hyper} hyperinterpolation and an assumption of An and Wu.
+Section~\ref{sec:numerics} lists computed values and open problems. The
+appendices contain the longer proofs and the certificate.
+
+\subsection{Relation to the literature}
+
+\paragraph{Prior ingredients}
+The folded Chebyshev moments used below are classical:
+Trefethen's results give the mode aliasing
+\cite[Thm.~5.2 and (5.2)--(5.4)]{LIT-055}; the coefficient-decay results of
+Xiang--Bornemann provide related quadrature context \cite{LIT-056}.
+Equation~(7) of \cite{LIT-045} already uses the upper-MZ factor
 $1+\sqrt{1+\eta}$, together with an aliasing term, and their
 equation~(8) separates the inverse-Gram least-squares construction
-\citep{LIT-045}. The generic upper-Gram hyperinterpolation mechanism
-in Section~\ref{sec:hyper} is consequently known context; its proof is
+\cite{LIT-045}. The generic upper-Gram hyperinterpolation mechanism
+in Section~\ref{sec:hyper} is therefore known; its proof is
 included to identify precisely the CC input and the required reproduction.
 
-\paragraph{Historical sources inspected.}
-Writing $L_N$ for Lagrange interpolation at the $N+1$ nodes, positivity of
+\paragraph{Converse MZ inequalities}
+Writing $\mathcal I_N$ for interpolation at the $N+1$ nodes, positivity of
 the weights and uniqueness of interpolation give
 \[
  \sup_{0\ne p\in\Pn_n}\frac{\int_{-1}^1p^2}{Q_N(p^2)}=\frac1{\lambda_-(N,n)},
 \]
-i.e.\ $\lambda_-(N,n)^{-1/2}$ is the norm of $L_N$ from nodal data of
+i.e.\ $\lambda_-(N,n)^{-1/2}$ is the norm of $\mathcal I_N$ from nodal data of
 degree $\le n$ with the CC-weighted $\ell^2$ norm to $L^2(\dd x)$.
 Moreover, $\tfrac12\Delta_N(x_j)\le w_j\le5\Delta_N(x_j)$ with
 $\Delta_N(x)=\sqrt{1-x^2}/N+N^{-2}$ (from Lemma~\ref{lem:weight-comparison} and the endpoint weights $w_0=w_N\in\{N^{-2},(N^2-1)^{-1}\}$
 below), so CC weights may be exchanged with Christoffel-type weights at a
 cost of absolute constants. In this language our endpoint result concerns
 a borderline converse Marcinkiewicz--Zygmund inequality.
-We have inspected the following sources. Their coverage differs
-(complete text, selected sections, or a keyword screen) and is recorded per
-source with the source identifiers.
+We compare with the following sources.
 \begin{itemize}
-\item Sloan--Smith's 1978 CC product-integration paper \citep{LIT-047}
+\item Sloan--Smith's 1978 CC product-integration paper \cite{LIT-047}
 controls the sum of absolute product weights, i.e.\ a $C[-1,1]$ functional
-norm. Its companion \citep{LIT-048} develops heuristic error estimates and
-numerical tests and states no theorem. In the portions inspected we found
-no quadratic-form or nodal $\ell^2$ estimate in either paper.
-\item The weighted mean-convergence results of Erd\H{o}s--Feldheim,
-Askey, Nevai, and Smith's Lobatto theorem
-\citep{LIT-061,LIT-062,LIT-063,LIT-065} bound interpolation from
-\emph{uniform} data into weighted $L^p$. Nevai's quasi-Lagrange theorem
-includes the CC nodes. Uniform data form a stronger input norm than
+norm. Its companion \cite{LIT-048} develops heuristic error estimates and
+numerical tests and states no theorem. Neither paper states a
+quadratic-form or nodal $\ell^2$ estimate.
+\item The weighted mean-convergence results of Askey and Nevai, and Smith's
+Lobatto theorem \cite{LIT-062,LIT-063,LIT-065}, bound interpolation from
+\emph{uniform} data into weighted $L^p$, and Erd\H{o}s--Feldheim
+\cite{LIT-061} prove mean convergence at Chebyshev abscissae in the
+Chebyshev measure. Nevai's quasi-Lagrange theorem
+\cite[Thm.~6]{LIT-063} includes the CC nodes. Uniform data form a stronger input norm than
 weighted nodal $\ell^2$, so these results are consistent with, and do not
 imply, logarithmic growth of the $\ell^2\to L^2$ norm.
 \item Lubinsky's converse inequalities on the full interpolation space
-\citep{LIT-064} require an exponent in an open range. For CC nodes,
+\cite{LIT-064} require an exponent in an open range. For CC nodes,
 Lebesgue measure and $p=2$, the nodal polynomial
 $\sin\theta\sin N\theta$ sits exactly at the excluded endpoint.
-\item Mastroianni, Milovanovi\'c and Notarangelo \citep{LIT-299}
+\item Mastroianni, Milovanovi\'c and Notarangelo \cite{LIT-299}
 characterize, for interpolation at the zeros of $p_m((1-x^2)^\alpha)$
 together with $\pm1$, when the weighted $L^p$ norm of $P\in\Pn_{m+1}$ is
 equivalent to a nodal sum plus an endpoint term. With $\alpha=1/2$ these
@@ -202,57 +271,61 @@ are the CC nodes ($N=m+1$). For Lebesgue measure and $p=2$ their strict
 condition fails at its endpoint. Since the nodal side of their equivalence
 is comparable to $Q_N(p^2)$ by the weight comparison above, the necessity
 part of their criterion yields $\inf_N\lambda_-(N,N)=0$ on the full space
-$\Pn_N$. This is classical, but it is only a statement about a
+$\Pn_N$. This is known, but it is only a statement about a
 subsequence on $\Pn_N$, with no rate.
-\item Mastroianni--Russo \citep{LIT-293} and Xu \citep{LIT-296} treat
+\item Mastroianni--Russo \cite{LIT-293} and Xu \cite{LIT-296} treat
 converse inequalities at Gauss nodes without endpoint terms, and
-K\"onig--Nielsen \citep{LIT-294} treat same-weight Jacobi nodes. At the
+K\"onig--Nielsen \cite{LIT-294} treat same-weight Jacobi nodes. At the
 zeros of $U_{N-1}$ with Lebesgue measure and $p=2$, the Mastroianni--Russo
 condition requires $(1-x^2)^{-1/2}\in L^2$, which fails logarithmically.
 These are analogous borderline phenomena; we do not derive the CC
 statements from them.
-\item The exact CC evaluation in Proposition~\ref{prop:counterexample},
+\item Mastroianni and Russo's extended converse theorem \cite[Thm.~11]{LIT-511}
+covers the CC nodes for even $N$ on $\Pn_N$. For Lebesgue measure and $p=2$
+its $A_2$ hypothesis fails exactly at the power-weight endpoint, and the
+paper states no rate for the lower constant; its forward theorem gives
+boundedness of the upper constant, as does \cite{LIT-050}.
+\item The exact CC evaluation in Lemma~\ref{lem:U-exact},
 $Q_N(U_{N-1}^2)=O(1)$ while $\int U_{N-1}^2\asymp\log N$ (an elementary
 computation), gives the single-$U$ upper bound
-$\lambda_-(N,N-1)=O(1/\log N)$ and hence vanishing for every $N$. The order
+$\lambda_-(N,N-1)=O(1/\log N)$, hence $\lambda_-(N,N-1)\to0$ along all $N$,
+not only along a subsequence. The order
 $(1+\log N)^{-2}$ requires the separate harmonic witness of
 Theorem~\ref{thm:harmonic} for the upper bound and Theorem~\ref{thm:cardinal}
 for the lower bound.
 \item The algebraic Marcinkiewicz inequality of Mastroianni--Totik
-\citep{LIT-051} applies at CC nodes only when $n\le N/(\pi M)$ for their
-unspecified constant $M$. For every admissible $M\ge2/\pi$ this lies within
-the half-exactness range $n\le N/2$, where exactness already gives
-$\lambda_\pm(N,n)=1$. In its documented form it therefore adds nothing
-beyond exactness for the questions of Section~\ref{sec:ratio}.
+\cite{LIT-051} applies at CC nodes only when $n\le N/(\pi M_{\mathrm{MT}})$, where the
+sampling constant $M_{\mathrm{MT}}$ is asserted to exist but is not specified.
+Unless $M_{\mathrm{MT}}<2/\pi$, this window lies within the half-exactness
+range $n\le N/2$, where exactness already gives $\lambda_\pm(N,n)=1$. Since no
+such value of $M_{\mathrm{MT}}$ is given, the inequality yields no explicit
+information beyond exactness for the questions of Section~\ref{sec:ratio}.
 \item The forward quadrature-sum theorem of Lubinsky--M\'at\'e--Nevai
-\citep{LIT-050} applies at CC nodes, for each fixed $l$, to every degree
+\cite{LIT-050} applies at CC nodes, for each fixed $l$, to every degree
 $\le lN$. It gives $\lambda_+(N,n)\le C_l$ with an unspecified constant
 depending on $l$. The threshold
 $2$ and the explicit constants of Theorem~\ref{thm:ratio-upper} and its
 endpoint corollary are not implied.
-\item The later Sloan--Smith papers \citep{LIT-297,LIT-298} relate
-product-integration convergence to mean convergence with uniform data.
+\item The later Sloan--Smith paper \cite{LIT-297} relates
+product-integration convergence to mean convergence with uniform data;
+Smith and Sloan \cite{LIT-298} treat product integration at Jacobi zeros.
 \item The interpolation book of Mastroianni--Milovanovi\'c
-\citep{LIT-049} (chapters 2, 4 and 5),
-Widom's and Widom--Wilf's Hankel asymptotics \citep{LIT-053,LIT-054},
-the Chebyshev--Legendre method \citep{LIT-058} and recent
-Chebyshev--Lobatto interpolation estimates in the Legendre norm
-\citep{LIT-295} concern uniform norms, Sobolev inputs or different matrix
-problems. Lubinsky's survey \citep{LIT-052} records genuine converse
+\cite[Chap.~4]{LIT-049} treats interpolation in the uniform norm, and Widom's and
+Widom--Wilf's Hankel asymptotics \cite{LIT-053,LIT-054}, the
+Chebyshev--Legendre method \cite{LIT-058} and recent Chebyshev--Lobatto
+interpolation estimates in the Legendre norm \cite{LIT-295} concern
+different matrix problems or Sobolev inputs. Lubinsky's survey \cite{LIT-052} records genuine converse
 quadrature-sum (nodal-norm) theorems, but at Gauss nodes and weights.
 \end{itemize}
-We found no statement of the two-sided order
-$\lambda_-(N,N-1)\asymp(1+\log N)^{-2}$, of the parity-compatible witness
-in $\Pn_{N-1}$, of an all-$N$ upper constant below two, or of explicit
-fixed-ratio constants. The search is documented but not exhaustive.
-The published version of \citep{LIT-045} states that the CC behaviour
-beyond half-exactness is, to its authors' knowledge, not known
-theoretically. Still unread is a 2000 paper of Mastroianni--Russo on
-weighted Marcinkiewicz inequalities. No claim of a first proof is made.
-The analytic arguments below do not depend on any of these sources or on
-any private proof.
+To our knowledge, no published result states the logarithmic order of
+$\lambda_-(N,N-1)$, its limit constant, the limit of $\lambda_+(N,N-1)$, an
+all-$N$ upper constant below two, or explicit constants beyond
+half-exactness at a fixed degree ratio. Explicit two-sided constants at
+Chebyshev--Lobatto nodes are known in a heavily oversampled regime
+\cite{LIT-490}, which for $p=2$ lies inside the half-exactness range. The
+arguments below do not depend on any of these sources.
 
-\section{Exact CC identities and an upper bound below two}\label{sec:upper}
+\section{Preliminaries}\label{sec:prelim}
 
 Put $T_k(\cos\theta)=\cos(k\theta)$ and
 \[
@@ -263,7 +336,7 @@ Put $T_k(\cos\theta)=\cos(k\theta)$ and
 The moment formula follows directly by integrating
 $\sin\theta\cos(k\theta)$; $k=0,1$ can be checked separately.
 
-\begin{lemma}[Exact identities; \id{PD-T013}]\label{lem:identities}
+\begin{lemma}[Exact identities]\label{lem:identities}% IDs: PD-T013
 Set $\gamma_0=\gamma_N=1/2$ and $\gamma_j=1$ otherwise. Then
 \begin{equation}\label{eq:weights}
  w_j=\frac{2\gamma_j}{N}\left[
@@ -272,18 +345,28 @@ Set $\gamma_0=\gamma_N=1/2$ and $\gamma_j=1$ otherwise. Then
  -\boldsymbol1_{2\mid N}\frac{\cos(N\theta_j)}{N^2-1}
  \right]>0.
 \end{equation}
+Write $W_N(\theta)$ for the bracket with $\theta_j$ replaced by a variable
+$\theta$, so that $w_j=(2\gamma_j/N)W_N(\theta_j)$.
 The endpoint weights equal $N^{-2}$ for odd $N$ and $(N^2-1)^{-1}$
 for even $N$. For $0\le k\le2N$,
 \begin{equation}\label{eq:alias}
  Q_N(T_k)=\begin{cases}\mu_k,&k\le N,\\\mu_{2N-k},&N<k\le2N.
  \end{cases}
 \end{equation}
+The interpolant $\sum_ju_j\ell_j\in\Pn_N$ of nodal data $u$ has
+$T_N$-coefficient
+\begin{equation}\label{eq:topcoeff}
+ \frac1N\sum_{j=0}^N(-1)^j\gamma_ju_j;
+\end{equation}
+in particular it lies in $\Pn_{N-1}$ if and only if this sum vanishes.
 For $0\le i,j\le n\le N$, the continuous and discrete Chebyshev
 mass matrices satisfy
 \begin{equation}\label{eq:mass}
+\begin{gathered}
  M_{ij}=\frac{\mu_{|i-j|}+\mu_{i+j}}2,\quad
- R_{ij}=\frac{\mu_{|i-j|}+Q_N(T_{i+j})}2,\quad
+ R_{ij}=\frac{\mu_{|i-j|}+Q_N(T_{i+j})}2,\\
  D:=2(M-R),\quad D_{ij}=\mu_{i+j}-Q_N(T_{i+j}).
+\end{gathered}
 \end{equation}
 For $n<N$, $D$ is entrywise nonnegative, with positive entries precisely
 when $i+j>N$ is even.
@@ -299,7 +382,9 @@ Thus
  \ell_j(\cos\theta)=\frac{2\gamma_j}{N}
        \sum_{k=0}^N\gamma_k\cos(k\theta_j)\cos(k\theta).
 \]
-Integration proves \eqref{eq:weights}. The telescoping identity
+Integration proves \eqref{eq:weights}, and the coefficient of $T_N$ in
+$\ell_j$ is $(2\gamma_j/N)\gamma_N\cos(N\theta_j)=(-1)^j\gamma_j/N$, which
+gives \eqref{eq:topcoeff}. The telescoping identity
 \begin{equation}\label{eq:telescope}
  \sum_{r=1}^q\frac2{4r^2-1}=1-\frac1{2q+1}
 \end{equation}
@@ -316,7 +401,7 @@ for even $N$ the moment $N+2$ aliases to $N-2$ and differs from it.
 This also proves the maximality assertion \eqref{eq:ade}.
 \end{proof}
 
-\begin{lemma}[Coefficient mass floor; \id{PD-T015}]\label{lem:floor}
+\begin{lemma}[Coefficient mass floor]\label{lem:floor}% IDs: PD-T015
 For $n=N-1$ and $E=\diag(2,1,\ldots,1)$,
 \begin{equation}\label{eq:floor}
  \frac1N E\preceq M\preceq\frac\pi2 E.
@@ -324,8 +409,8 @@ For $n=N-1$ and $E=\diag(2,1,\ldots,1)$,
 \end{lemma}
 \begin{proof}
 The off-diagonal entries of $M$ are nonpositive. Let $b_0=1/2$,
-$b_i=1$ for $i\ge1$, and let $m_i$ be the least integer at least $N$
-having the parity of $i$. Put $k_i=m_i-1\in\{N-1,N\}$. Telescoping yields
+$b_i=1$ for $i\ge1$, and let $N_i$ be the least integer at least $N$
+having the parity of $i$. Put $k_i=N_i-1\in\{N-1,N\}$. Telescoping yields
 \begin{equation}\label{eq:rowfloor}
  (Mb)_0=\frac1{k_0},\qquad
  (Mb)_i=\frac12\left(\frac1{k_i-i}+\frac1{k_i+i}\right)
@@ -335,9 +420,9 @@ To verify these finite row sums, note that the absolutely convergent
 even moment series obeys
 $\sum_{h\in2\mathbb Z}\mu_{|h|}=2-4\sum_{r\ge1}(4r^2-1)^{-1}=0$.
 The infinite row weighted by $b$ is half that sum and is zero.
-Its omitted tail, beginning at $j=m_i$ in steps of two, is
+Its omitted tail, beginning at $j=N_i$ in steps of two, is
 \[
- -\sum_{j=m_i,m_i+2,\ldots}
+ -\sum_{j=N_i,N_i+2,\ldots}
  \left[\frac1{(j-i)^2-1}+\frac1{(j+i)^2-1}\right].
 \]
 Using $1/(u^2-1)=[1/(u-1)-1/(u+1)]/2$ gives
@@ -354,79 +439,6 @@ then $a^TMa=\int_0^\pi q^2\sin\theta\dd\theta
 \le\int_0^\pi q^2\dd\theta=(\pi/2)a^TEa$, proving the upper bound.
 \end{proof}
 
-\begin{theorem}[Strict threshold and endpoint refinement; \id{PD-T014}, \id{PD-T022}]\label{thm:upper}
-For $0\ne p\in\Pn_{N-1}$,
-\[
- 0<Q_N(p^2)\le\left(2-\frac4N+\frac4{N^2}\right)\int_{-1}^1p^2
- <2\int_{-1}^1p^2.
-\]
-The same bound holds on every $\Pn_n$ with $n<N$.
-For $N=2$ every quotient equals one; for $N\ge3$ the upper inequality is strict.
-\end{theorem}
-\begin{proof}
-Set $A=2M-R=M+D/2$. We show that its off-diagonal entries are
-nonpositive. Opposite parities give zero. For distinct equal-parity indices,
-write $d=|i-j|\ge2$ and $s=i+j$. If $s\le N$, $A_{ij}=M_{ij}<0$.
-Otherwise let $r=2N-s$. Since $i,j\le N-1$,
-$r-d=2(N-\max(i,j))\ge2$, and
-\begin{equation}\label{eq:zentry}
- A_{ij}=-\frac1{d^2-1}-\frac2{s^2-1}+\frac1{r^2-1}<0.
-\end{equation}
-Write $p=\sum_i a_iT_i$ and $v_i=|a_i|$. The off-diagonal signs imply
-$a^TAa\ge v^TAv$: diagonal terms agree and $a_i a_j\le v_i v_j$.
-Since $D$ is entrywise nonnegative,
-\[
- 2\int p^2-Q_N(p^2)\ge v^TMv+\tfrac12v^TDv\ge v^TMv.
-\]
-This is positive for $v\ne0$, proving the qualitative threshold of
-\id{PD-T014} without the coefficient floor. Positivity of $Q_N(p^2)$ follows from
-positive weights and the impossibility that a nonzero polynomial of
-degree at most $N$ vanish at all $N+1$ nodes. Restriction proves the rest.
-
-The explicit endpoint refinement is the $n=N-1$ corollary of the independent
-degree-sensitive sign comparison in Theorem~\ref{thm:ratio-upper}
-(\id{PD-T022}): $\rho=(1-2/N)^2$ and
-$1+\rho=2-4/N+4/N^2$. At $N=2$, $\rho=0$ and exactness applies;
-at $N\ge3$ the strict case of that theorem applies.
-\end{proof}
-
-\begin{remark}[Retained alternative quantitative proof]
-The independent mass inequality of Lemma~\ref{lem:floor} (\id{PD-T015})
-also gives
-$v^TMv\ge N^{-1}v^TEv=N^{-1}a^TEa\ge2(\pi N)^{-1}a^TMa$
-in the preceding sign argument, proving the historical bound
-\[
- Q_N(p^2)\le\left(2-\frac2{\pi N}\right)\int_{-1}^1p^2.
-\]
-That proof remains valid, but its constant is quantitatively superseded
-by Theorem~\ref{thm:upper}, since $4-4/N\ge2>2/\pi$ for every $N\ge2$.
-The mass inequality retains its independent statement and proof.
-\end{remark}
-
-\begin{remark}[The sign argument and its boundary]
-Entrywise nonnegativity of $D$ does not mean $D\succeq0$.
-For $N\ge5$, take $i=\lfloor N/2\rfloor$ and $j=i+2\le N-1$.
-Then $D_{ii}=0$, $D_{ij}>0$, and the corresponding principal determinant
-is $-D_{ij}^2<0$ (\id{PD-N002}). The proof uses the signs of $A$, not
-positive semidefiniteness of the defect. Nor can one extend the theorem
-to $\Pn_N$: since $T_N(x_j)^2=1$,
-\begin{equation}\label{eq:full}
- \frac{Q_N(T_N^2)}{\int_{-1}^1T_N^2}
- =\frac{2(4N^2-1)}{4N^2-2}>2
- \qquad(\id{PD-T016}).
-\end{equation}
-Here $\int T_N^2=1-1/(4N^2-1)$ by the product identity.
-\end{remark}
-
-\section{The endpoint minimum eigenvalue}\label{sec:endpoint}
-
-Write $H_s=\sum_{r=1}^s r^{-1}$ and
-\begin{equation}\label{eq:KN}
- h_N=2H_{N+1}-1,\qquad
- K_N=4\pi^2(\pi+1)^2h_N
-       \bigl(h_N+2H_{\lfloor N/2\rfloor+1}\bigr).
-\end{equation}
-
 \begin{lemma}[Weight comparison]\label{lem:weight-comparison}
 For $1\le j\le N-1$,
 \begin{equation}\label{eq:weightcomp}
@@ -442,18 +454,16 @@ The absolutely convergent cosine series
 \]
 follows by integrating against cosine modes; absolute convergence and
 uniqueness of the cosine expansion identify the continuous function.
-For example, uniqueness follows from density of polynomials in
-$\cos\theta$ among continuous functions on $[0,\pi]$.
-Let $S_N(\theta)$ denote the bracket in \eqref{eq:weights}.
-Telescoping its tail gives
+(Uniqueness follows from density of polynomials in $\cos\theta$.)
+Telescoping the tail of $W_N$ of Lemma~\ref{lem:identities} gives
 \[
- |S_N(\theta)-(\pi/2)\sin\theta|
+ |W_N(\theta)-(\pi/2)\sin\theta|
  \le\begin{cases}1/N,&N\text{ odd},\\N/(N^2-1),&N\text{ even}.
  \end{cases}
 \]
 At interior nodes $\sin\theta_j\ge2/N$. The error is therefore at most
 $(2/3)\sin\theta_j$ for all $N\ge2$, including the even worst case $N=2$.
-Since $w_j=2S_N(\theta_j)/N$ and
+Since $w_j=2W_N(\theta_j)/N$ and
 $\pi/2-2/3\ge1/2$, $\pi+4/3<5$, this proves
 \eqref{eq:weightcomp}. Moreover
 $\sin\theta_j\ge2\min(j,N-j)/N$, so
@@ -461,7 +471,210 @@ $w_j\ge2\min(j,N-j)/N^2\ge m_j/N^2$ in the interior.
 The endpoint formulas prove the remaining cases.
 \end{proof}
 
-\begin{theorem}[Weighted cardinal lower estimate; \id{PD-T017}]\label{thm:cardinal}
+\begin{lemma}[Weighted Schur test]\label{lem:schur}
+Let $B\ge0$ be a measurable kernel on $X\times Y$, where $X$ and $Y$ carry
+$\sigma$-finite measures, and let $\varphi>0$ on $X$ and $\psi>0$ on $Y$.
+If $\int B(x,y)\psi(y)\dd y\le\Gamma_{\mathrm r}\varphi(x)$ for all $x$ and
+$\int B(x,y)\varphi(x)\dd x\le\Gamma_{\mathrm c}\psi(y)$ for all $y$, then
+$(Bh)(x)=\int B(x,y)h(y)\dd y$ satisfies
+$\norm{Bh}_{L^2(X)}^2\le\Gamma_{\mathrm r}\Gamma_{\mathrm c}\norm h_{L^2(Y)}^2$.
+\end{lemma}
+\begin{proof}
+Cauchy--Schwarz gives
+\[
+ |(Bh)(x)|^2\le\Bigl(\int B\psi\dd y\Bigr)\int\frac{B|h|^2}{\psi}\dd y
+ \le\Gamma_{\mathrm r}\varphi(x)\int\frac{B(x,y)|h(y)|^2}{\psi(y)}\dd y .
+\]
+Integrating in $x$ and using the column bound proves the claim.
+\end{proof}
+
+\section{The upper spectrum}\label{sec:upper}
+
+The upper eigenvalues are controlled by the sign structure of the defect
+matrix $D$ of Lemma~\ref{lem:identities}. Theorem~\ref{thm:ratio-upper} gives
+a degree-sensitive bound at every degree ratio; its endpoint case,
+Corollary~\ref{cor:ratio-endpoint}, is a threshold below two for every $N$;
+and Theorem~\ref{thm:five-thirds} gives a bound uniform in $N$.
+
+\begin{theorem}[Degree-sensitive upper estimate]\label{thm:ratio-upper}% IDs: PD-T022
+For $0\le n<N$, put $\rho=\max\{2n/N-1,0\}^2$. Then
+\[
+ Q_N(p^2)\le(1+\rho)\int_{-1}^1p^2\qquad(p\in\Pn_n).
+\]
+If $2n\le N$, every quotient equals one. If $2n>N$, the displayed
+inequality is strict for every nonzero $p$.
+\end{theorem}
+\begin{proof}
+Exactness settles $2n\le N$. Otherwise $\sqrt\rho=2n/N-1>0$; put
+$A_\rho=(1+\rho)M-R=\rho M+D/2$ on indices $0,\ldots,n$.
+Opposite-parity off-diagonal entries vanish; equal-parity unaliased entries
+($i+j\le N$) equal $\rho M_{ij}<0$. For an aliased equal-parity pair let
+$s=i+j>N$, $d=|i-j|\ge2$, $r=2N-s$, $\delta=N-n>0$.
+Then $r<N$, $r-d=2(N-\max(i,j))\ge2\delta$, and
+\[
+ \frac dr\le1-\frac{2\delta}{N}=\sqrt\rho,\qquad
+ \frac{d^2-1}{r^2-1}\le\frac{d^2}{r^2}\le\rho.
+\]
+Consequently
+\[
+ (A_\rho)_{ij}=-\frac\rho{d^2-1}
+                -\frac{1+\rho}{s^2-1}+\frac1{r^2-1}<0.
+\]
+Write $p=\sum_ia_iT_i$ and $v_i=|a_i|$. The off-diagonal entries of
+$A_\rho$ are nonpositive, so $a_ia_j\le v_iv_j$ gives
+$a^TA_\rho a\ge v^TA_\rho v=\rho v^TMv+\tfrac12v^TDv>0$ for $a\ne0$: the
+diagonal terms agree, $D$ is entrywise nonnegative
+(Lemma~\ref{lem:identities}), and $M$ is positive definite. This proves
+the result.
+\end{proof}
+
+\begin{corollary}[Endpoint upper constant and strict threshold]\label{cor:ratio-endpoint}\label{thm:upper}% IDs: PD-T014, PD-T022
+For every $N\ge2$ and every nonzero $p\in\Pn_{N-1}$,
+\[
+ 0<Q_N(p^2)\le\left(2-\frac4N+\frac4{N^2}\right)\int_{-1}^1p^2
+ <2\int_{-1}^1p^2,
+\]
+and the same holds on every $\Pn_n$ with $n<N$. Consequently
+$\lambda_+(N,N-1)\le1+(1-2/N)^2=2-4/N+4/N^2$. For $N=2$ every quotient
+equals one and equality holds; for $N\ge3$ the middle inequality, and hence
+the bound for $\lambda_+(N,N-1)$, is strict.
+\end{corollary}
+\begin{proof}
+Set $n=N-1$ in Theorem~\ref{thm:ratio-upper}. Then
+$\max\{2n/N-1,0\}=1-2/N$, so $\rho=(1-2/N)^2$ and
+$1+\rho=2-4/N+4/N^2<2$. The case $N=2$ has $2n=N$ and $\rho=0$, so exactness
+applies; every $N\ge3$ has $2n>N$ and the strict case applies, and the
+supremum over the unit sphere of the finite-dimensional space is attained.
+Positivity of $Q_N(p^2)$ follows from the positive weights of
+Lemma~\ref{lem:identities} and the impossibility that a nonzero polynomial
+of degree at most $N$ vanish at all $N+1$ nodes. Restriction proves the
+statement on $\Pn_n$, $n<N$.
+\end{proof}
+
+% Source: PD-T526; topics/padua-mz-sharp-constants-20261106/theory/S2-uniform-upper.md
+\begin{theorem}[A uniform upper bound]\label{thm:five-thirds}
+For every $N\ge2$ and every nonzero $p\in\Pn_{N-1}$,
+\[
+ 0<Q_N(p^2)\le\frac53\int_{-1}^1p^2 .
+\]
+Consequently, for all $0\le n<N$,
+\[
+ \lambda_+(N,n)\le\min\Bigl\{1+\rho_{N,n},\,\frac53\Bigr\},
+ \qquad \rho_{N,n}=\max\{2n/N-1,0\}^2 .
+\]
+\end{theorem}
+
+We do not claim that $5/3$ is optimal; its point is that it is uniform in
+$N$, whereas the degree-sensitive bound of
+Corollary~\ref{cor:ratio-endpoint} tends to two. The proof keeps the signs
+of the defect, but splits it differently from
+Theorem~\ref{thm:ratio-upper}; it also uses the mass inequality of
+Lemma~\ref{lem:floor}.
+
+\begin{proof}
+Write $p=\sum_{i=0}^{N-1}a_iT_i$, so that $a^TMa=\int p^2$ and
+$a^TRa=Q_N(p^2)$ with the matrices of Lemma~\ref{lem:identities} on
+the indices $0,\dots,N-1$. For a pair $(i,j)$ put $s=i+j\le2N-2$ and
+$r=2N-s\ge2$, and define
+\[
+ Y_{ij}=\frac{\boldsymbol1_{s\ \mathrm{even}}}{r^2-1},\qquad
+ Z_{ij}=\begin{cases}
+   Y_{ij},&s\le N,\\[2pt]
+   \dfrac{\boldsymbol1_{s\ \mathrm{even}}}{s^2-1},&s>N.
+ \end{cases}
+\]
+We claim the exact identity
+\begin{equation}\label{eq:RMHK}
+ R=M-Y+Z .
+\end{equation}
+If $s\le N$, then $Q_N(T_s)=\mu_s$ by \eqref{eq:alias}, so $R_{ij}=M_{ij}$,
+and $Y_{ij}=Z_{ij}$. If $s>N$ is even, then $Q_N(T_s)=\mu_r$ and
+\eqref{eq:mass} gives
+$(M-R)_{ij}=(\mu_s-\mu_r)/2=1/(r^2-1)-1/(s^2-1)=Y_{ij}-Z_{ij}$.
+If $s$ is odd, every entry of $M-R$, $Y$ and $Z$ vanishes.
+
+The matrix $Y$ is positive semidefinite. Indeed, for $i,j\le N-1$,
+\[
+ \frac12\int_0^1 x^{2N-2-i-j}(1-x^2)\dd x
+ =\frac12\Bigl(\frac1{r-1}-\frac1{r+1}\Bigr)=\frac1{r^2-1},
+\]
+and $Y$ couples only indices of equal parity, so for real $a$
+\[
+ a^TYa=\frac12\int_0^1(1-x^2)\Bigl[
+ \Bigl(\sum_{i\ \mathrm{even}}a_ix^{N-1-i}\Bigr)^2
+ +\Bigl(\sum_{i\ \mathrm{odd}}a_ix^{N-1-i}\Bigr)^2\Bigr]\dd x\ge0 .
+\]
+No sign property of $Z$ or of $M-R$ as a matrix is used.
+
+Let $N_{\mathrm e}=N$ for even $N$ and $N_{\mathrm e}=N+1$ for odd $N$. Every
+nonzero entry of $Z$ equals $1/(m^2-1)$ for an even integer $m\ge N_{\mathrm e}$:
+$m=r=2N-s\ge N$ if $s\le N$, and $m=s>N$ otherwise. Hence
+$0\le Z_{ij}\le1/(N_{\mathrm e}^2-1)$. Each row of $Z$ has at most
+$\lceil N/2\rceil$ nonzero entries, since $Z$ couples only indices of
+equal parity. Using $2|a_ia_j|\le a_i^2+a_j^2$ and symmetry,
+\[
+ a^TZa\le\sum_{i,j}Z_{ij}|a_ia_j|
+ \le\frac{\lceil N/2\rceil}{N_{\mathrm e}^2-1}\sum_ia_i^2 .
+\]
+Lemma~\ref{lem:floor} gives $\sum_ia_i^2\le a^TEa\le N\,a^TMa$.
+Together with \eqref{eq:RMHK} and $Y\succeq0$,
+\[
+ a^TRa\le a^TMa+a^TZa\le(1+\beta_N)\,a^TMa,
+\]
+where
+\[
+ \beta_N=\frac{N\lceil N/2\rceil}{N_{\mathrm e}^2-1}
+ =\begin{cases}
+   \dfrac{N^2}{2(N^2-1)},&N\text{ even},\\[6pt]
+   \dfrac{N+1}{2(N+2)},&N\text{ odd}.
+ \end{cases}
+\]
+For even $N\ge2$ the first expression is at most its value $2/3$ at $N=2$;
+for odd $N\ge3$ the second is below $1/2$. This proves the upper
+bound, and positivity follows as in Corollary~\ref{cor:ratio-endpoint}.
+Restriction to $\Pn_n$ and Theorem~\ref{thm:ratio-upper} give the
+second display.
+\end{proof}
+
+Since $\beta_N\to1/2$, the proof also gives
+$\limsup_{N\to\infty}\lambda_+(N,N-1)\le3/2$; Section~\ref{sec:edge-max}
+identifies the limit.
+
+\begin{remark}[The sign argument and its boundary]\label{rem:sign-boundary}% IDs: PD-N002, PD-T016
+Entrywise nonnegativity of $D$ does not mean $D\succeq0$.
+For $N\ge5$, take $i=\lfloor N/2\rfloor$ and $j=i+2\le N-1$.
+Then $D_{ii}=0$, $D_{ij}>0$, and the corresponding principal determinant
+is $-D_{ij}^2<0$.% IDs: PD-N002
+ The proof of Theorem~\ref{thm:ratio-upper} uses the signs of $A_\rho$, not
+positive semidefiniteness of the defect. Nor can one extend the theorem
+to $\Pn_N$: since $T_N(x_j)^2=1$,
+\begin{equation}\label{eq:full}
+ \frac{Q_N(T_N^2)}{\int_{-1}^1T_N^2}
+ =\frac{2(4N^2-1)}{4N^2-2}>2
+ .% IDs: PD-T016
+\end{equation}
+Here $\int T_N^2=1-1/(4N^2-1)$ by the product identity.
+\end{remark}
+
+\section{The endpoint minimum eigenvalue}\label{sec:endpoint}
+
+This section determines $\lambda_-(N,N-1)$. Theorem~\ref{thm:cardinal}
+(weighted cardinal estimate) and Theorem~\ref{thm:harmonic} (harmonic
+witness) fix the order $(\log N)^{-2}$ for every $N$ with explicit constants.
+Section~\ref{sec:sharp-min} identifies the limit $\pi^4/8$ by a
+one-dimensional model near the endpoints; the longer proofs are in
+Appendix~\ref{app:sharp}.
+
+\subsection{The order of magnitude}\label{sec:order-min}
+
+Write $H_s=\sum_{r=1}^s r^{-1}$ and
+\begin{equation}\label{eq:KN}
+ h_N=2H_{N+1}-1,\qquad
+ K_N=4\pi^2(\pi+1)^2h_N
+       \bigl(h_N+2H_{\lfloor N/2\rfloor+1}\bigr).
+\end{equation}
+
+\begin{theorem}[Weighted cardinal lower estimate]\label{thm:cardinal}% IDs: PD-T017
 For every $p\in\Pn_N$,
 \begin{equation}\label{eq:cardinal-result}
  \int_{-1}^1p^2\le K_N Q_N(p^2).
@@ -478,7 +691,7 @@ The nodal polynomial $(1-x^2)T_N'(x)$ yields
       {c_kN(\cos\theta-\cos\theta_k)},\qquad
  c_0=c_N=2,\quad c_k=1\ (0<k<N),
 \]
-with continuous nodal extension. Factor the cosine difference and use
+so that $c_k=1/\gamma_k$, with continuous nodal extension. Factor the cosine difference and use
 $\sin\theta\le2\sin((\theta+\theta_k)/2)$ and
 $|\sin((\theta-\theta_k)/2)|\ge|\theta-\theta_k|/\pi$.
 Together with $|\sin(N\theta)|\le\min\{1,N|\theta-\theta_k|\}$,
@@ -488,40 +701,36 @@ this gives, for $t=N\theta/\pi$,
        \le\frac{\pi+1}{1+|t-k|}.
 \end{equation}
 The first bound includes the continuous value at $t=k$.
-Partition $[0,\pi]$ into cells $E_j$ defined by $|t-j|\le1/2$,
-truncated at the endpoints. On $E_j$,
+Partition $[0,\pi]$ into cells $\Omega_j$ defined by $|t-j|\le1/2$,
+truncated at the endpoints. On $\Omega_j$,
 \begin{equation}\label{eq:cell}
- |\ell_k(\cos\theta)|\le\frac{D_0}{1+|j-k|},\quad D_0=2(\pi+1),
- \qquad \int_{E_j}\sin\theta\dd\theta\le\frac{\pi^2m_j}{N^2}.
+ |\ell_k(\cos\theta)|\le\frac{C_{\mathrm c}}{1+|j-k|},\quad C_{\mathrm c}=2(\pi+1),
+ \qquad \int_{\Omega_j}\sin\theta\dd\theta\le\frac{\pi^2m_j}{N^2}.
 \end{equation}
 For the integral, use cell length at most $\pi/N$ and
 $\sin\theta\le\pi m_j/N$.
 
 Put $A_{jk}=(1+|j-k|)^{-1}$, $B_{jk}=\sqrt{m_j/m_k}\,A_{jk}$,
-and $u_j=m_j^{-1/2}$. Because $m_j\le m_k+|j-k|$,
+and $\psi_j=m_j^{-1/2}$. Because $m_j\le m_k+|j-k|$,
 \begin{align*}
- \sum_k B_{jk}\frac{u_k}{u_j}
+ \sum_k B_{jk}\frac{\psi_k}{\psi_j}
  &=m_j\sum_k\frac{A_{jk}}{m_k}
  \le\sum_k A_{jk}+\sum_k\frac1{m_k}
  \le h_N+2H_{\lfloor N/2\rfloor+1},\\
- \sum_j B_{jk}\frac{u_j}{u_k}&=\sum_j A_{jk}\le h_N.
+ \sum_j B_{jk}\frac{\psi_j}{\psi_k}&=\sum_j A_{jk}\le h_N.
 \end{align*}
 The harmonic bounds deliberately overcount distances near the endpoints.
-The weighted Schur inequality therefore gives
+The weighted Schur test (Lemma~\ref{lem:schur}, with counting measure and
+$\varphi=\psi$) therefore gives
 \begin{equation}\label{eq:schur-discrete}
  \norm B_2^2\le h_N\bigl(h_N+2H_{\lfloor N/2\rfloor+1}\bigr).
 \end{equation}
-For completeness, if the weighted row and column bounds are $R,S$,
-then Cauchy--Schwarz gives
-$|\sum_kB_{jk}z_k|^2\le(\sum_kB_{jk}u_k)
-\sum_kB_{jk}|z_k|^2/u_k$; summing in $j$ gives $RS\sum_k|z_k|^2$.
-This proves the stated version without an interpolation theorem.
 
 Set $v_k=p(x_k)$. Cardinal interpolation, \eqref{eq:cell}, and
 \eqref{eq:schur-discrete} give
 \begin{align*}
  \int p^2
- &\le\frac{\pi^2D_0^2}{N^2}
+ &\le\frac{\pi^2C_{\mathrm c}^2}{N^2}
        \sum_jm_j\left(\sum_kA_{jk}|v_k|\right)^2\\
  &\le K_N\sum_k\frac{m_k}{N^2}|v_k|^2
  \le K_NQ_N(p^2).
@@ -530,191 +739,491 @@ The last inequality is Lemma~\ref{lem:weight-comparison}.
 Finally $H_s\le1+\log s$ gives the asserted order.
 \end{proof}
 
-The matching upper estimate needs a degree-$N-1$ test polynomial.
-Strictly alternating nodal values with positive amplitudes instead represent
-a full degree-$N$ interpolant. We enforce both degree and endpoint cancellation
-explicitly.
+The matching upper estimate needs a test polynomial of degree $N-1$.
+The simplest is the second-kind Chebyshev polynomial
+$U_{N-1}(\cos\theta)=\sin(N\theta)/\sin\theta$, which vanishes at every
+interior node.
 
-\begin{theorem}[Parity-compatible harmonic witness; \id{PD-T018}]\label{thm:harmonic}
+% Source: PD-T019 (formulas); tracks/mz-constants/theory/m2-u-witness.md
+\begin{lemma}[An exact evaluation]\label{lem:U-exact}% IDs: PD-T019
+For $S_N=\sum_{j=1}^N(2j-1)^{-1}$,
+\begin{equation}\label{eq:Uexact}
+ \int_{-1}^1U_{N-1}^2=2S_N,\qquad
+ Q_N(U_{N-1}^2)=
+ \begin{cases}2,&N\text{ odd},\\2N^2/(N^2-1),&N\text{ even}.
+ \end{cases}
+\end{equation}
+Consequently $\lambda_-(N,N-1)\le q_N$, where $q_N=1/S_N$ for odd $N$ and
+$q_N=N^2/[(N^2-1)S_N]$ for even $N$; and $q_N<1/3$ for every $N\ge57$.
+\end{lemma}
+
+\begin{proof}
+The finite trigonometric product identity
+$U_r^2=\sum_{s=0}^rU_{2s}$ follows by summing the geometric sine series.
+Also $\int_{-1}^1U_{2s}=\int_0^\pi\sin((2s+1)\theta)\dd\theta
+=2/(2s+1)$, giving the continuous formula.
+All interior nodal values of $U_{N-1}$ vanish; its endpoint values have
+absolute value $N$. The endpoint weights of Lemma~\ref{lem:identities}
+prove the discrete formula. Exact rational addition gives
+$S_{57}>3$ and $S_{58}>3\cdot58^2/(58^2-1)$. Since $S_N$ increases and
+$N^2/(N^2-1)$ decreases, $q_N<1/3$ for all odd $N\ge57$ and all even
+$N\ge58$. (For $N=56$ one has $q_N>1/3$.)
+\end{proof}
+
+Since $S_N=\frac12\log N+O(1)$, the lemma gives only
+$\lambda_-(N,N-1)=O(1/\log N)$. The squared logarithm needs a
+combination of many $U_r$. Alternating nodal data $(-1)^k|v_k|$ are the
+natural candidates, but by \eqref{eq:topcoeff} they generally have a nonzero
+$T_N$-coefficient and so do not define an element of $\Pn_{N-1}$. The witness
+below is a combination of $U_r$ of parity $N-1$. It lies in $\Pn_{N-1}$ by
+construction, and each term vanishes at both endpoints.
+
+\begin{theorem}[Parity-compatible harmonic witness]\label{thm:harmonic}% IDs: PD-T018
 For every $N\ge2$,
 \begin{equation}\label{eq:harmonic-result}
  \lambda_-(N,N-1)\le\frac{128000}{(\log N)^2}.
 \end{equation}
-Together with Theorem~\ref{thm:cardinal}, this proves
-\eqref{eq:main-endpoint}.
+Together with Theorem~\ref{thm:cardinal}, this gives
+$\lambda_-(N,N-1)\asymp(1+\log N)^{-2}$.
 \end{theorem}
 \begin{proof}
 Let $U_r(\cos\theta)=\sin((r+1)\theta)/\sin\theta$.
 For $N\ge3$ put $M_0=\lfloor(N-1)/2\rfloor$ and
 \begin{equation}\label{eq:witness}
- p_N=\sum_{m=1}^{M_0}\frac{
+ \mathfrak p_N=\sum_{m=1}^{M_0}\frac{
  U_{N-1-2m}-(1-2m/N)U_{N-1}}m.
 \end{equation}
 Every term has degree at most $N-1$ and parity $N-1$.
 The endpoint values $U_r(\pm1)=(\pm1)^r(r+1)$ show that each
 bracket vanishes at both endpoints. Define
 \[
- B(\theta)=\sum_{m=1}^{M_0}\frac{\sin(2m\theta)}m,\quad
- A(\theta)=\sum_{m=1}^{M_0}\frac{\cos(2m\theta)}m,\quad
- C(\theta)=A(\theta)-H_{M_0}+\frac{2M_0}{N}.
+ \mathcal B(\theta)=\sum_{m=1}^{M_0}\frac{\sin(2m\theta)}m,\quad
+ \mathcal A(\theta)=\sum_{m=1}^{M_0}\frac{\cos(2m\theta)}m,\quad
+ \mathcal C(\theta)=\mathcal A(\theta)-H_{M_0}+\frac{2M_0}{N}.
 \]
 The sine subtraction formula gives the exact identity
 \begin{equation}\label{eq:witness-identity}
- p_N(\cos\theta)=
- \frac{\sin(N\theta)C(\theta)-\cos(N\theta)B(\theta)}{\sin\theta}.
+ \mathfrak p_N(\cos\theta)=
+ \frac{\sin(N\theta)\mathcal C(\theta)-\cos(N\theta)\mathcal B(\theta)}{\sin\theta}.
 \end{equation}
 
 We record elementary bounds on these finite harmonic sums.
-For $0<\theta\le\pi/2$ let $K=\lfloor1/\sin\theta\rfloor$.
+For $0<\theta\le\pi/2$ let $\varkappa_\theta=\lfloor1/\sin\theta\rfloor$.
 A geometric sum bounds
 $|\sum_{m=a}^b e^{2im\theta}|\le1/\sin\theta$.
-Abel summation bounds a harmonic tail from $K+1$ to any $M_0>K$
-by $1/((K+1)\sin\theta)\le1$.
+Abel summation bounds a harmonic tail from $\varkappa_\theta+1$ to any $M_0>\varkappa_\theta$
+by $1/((\varkappa_\theta+1)\sin\theta)\le1$.
 The initial segment satisfies
-$|\sum_{m\le K}\sin(2m\theta)/m|\le2K\theta\le\pi$
-and $|\sum_{m\le K}\cos(2m\theta)/m|\le H_K
-\le1+\log(1/\sin\theta)$; truncate it if $M_0\le K$.
+$|\sum_{m\le\varkappa_\theta}\sin(2m\theta)/m|\le2\varkappa_\theta\theta\le\pi$
+and $|\sum_{m\le\varkappa_\theta}\cos(2m\theta)/m|\le H_{\varkappa_\theta}
+\le1+\log(1/\sin\theta)$; truncate it if $M_0\le\varkappa_\theta$.
 Reflection treats the other half of the interval. Thus
 \begin{equation}\label{eq:harmonic-bounds}
- |B(\theta)|\le\pi+1<5,
- \quad A(\theta)\le2+\log\frac{\pi}{2\theta}
+ |\mathcal B(\theta)|\le\pi+1<5,
+ \quad \mathcal A(\theta)\le2+\log\frac{\pi}{2\theta}
  \quad(0<\theta\le\pi/2).
 \end{equation}
 Since $H_{M_0}\ge\log(M_0+1)$, $M_0+1\ge N/2$, and $2M_0/N\le1$,
 \begin{equation}\label{eq:Cbound}
- C(\theta)\le3+\log\pi-\log(N\theta)
+ \mathcal C(\theta)\le3+\log\pi-\log(N\theta)
               \le5-\log(N\theta).
 \end{equation}
 
 At interior nodes \eqref{eq:witness-identity} becomes
-$p_N(x_k)=-(-1)^kB(\theta_k)/\sin\theta_k$.
+$\mathfrak p_N(x_k)=-(-1)^k\mathcal B(\theta_k)/\sin\theta_k$.
 The endpoints are zero. Lemma~\ref{lem:weight-comparison} and
 $\sin\theta_k\ge2\min(k,N-k)/N$ imply
 \begin{equation}\label{eq:witness-discrete}
- Q_N(p_N^2)\le\frac{125}{N}\sum_{k=1}^{N-1}\frac1{\sin\theta_k}
+ Q_N(\mathfrak p_N^2)\le\frac{125}{N}\sum_{k=1}^{N-1}\frac1{\sin\theta_k}
  \le125H_{\lfloor N/2\rfloor}\le125(1+\log N).
 \end{equation}
 
 Write $L=\log N$ and first suppose $L\ge128$.
-On $E=[N^{-1/2},1/4]$, \eqref{eq:Cbound} gives
-$C\le5-L/2\le-L/4$. The elementary inequality
+On $\Xi=[N^{-1/2},1/4]$, \eqref{eq:Cbound} gives
+$\mathcal C\le5-L/2\le-L/4$. The elementary inequality
 $(a-b)^2\ge a^2/2-b^2$ applied in \eqref{eq:witness-identity} yields
 \[
- \int_{-1}^1p_N^2\ge\frac{L^2}{32}I-25J,\quad
- I=\int_E\frac{\sin^2(N\theta)}{\sin\theta}\dd\theta,\quad
- J=\int_E\frac1{\sin\theta}\dd\theta.
+ \int_{-1}^1\mathfrak p_N^2\ge\frac{L^2}{32}X_1-25X_2,\quad
+ X_1=\int_\Xi\frac{\sin^2(N\theta)}{\sin\theta}\dd\theta,\quad
+ X_2=\int_\Xi\frac1{\sin\theta}\dd\theta.
 \]
 Using $\sin\theta\le\theta$,
 \[
- I\ge\tfrac12\log(\sqrt N/4)
-       -\tfrac12\left|\int_E\frac{\cos(2N\theta)}\theta\dd\theta\right|.
+ X_1\ge\tfrac12\log(\sqrt N/4)
+       -\tfrac12\left|\int_\Xi\frac{\cos(2N\theta)}\theta\dd\theta\right|.
 \]
 One integration by parts bounds the last absolute integral by $N^{-1/2}$:
 the endpoint terms and the integral of $\theta^{-2}$ sum to
 $1/(N\cdot N^{-1/2})$. Hence
-$I\ge L/4-\log2-1/(2\sqrt N)\ge L/8$.
-Since $\sin\theta\ge\theta/2$ on $E$, $J\le2\log(\sqrt N/4)\le L$.
+$X_1\ge L/4-\log2-1/(2\sqrt N)\ge L/8$.
+Since $\sin\theta\ge\theta/2$ on $\Xi$, $X_2\le2\log(\sqrt N/4)\le L$.
 It follows that
 \begin{equation}\label{eq:witness-continuous}
- \int p_N^2\ge\frac{L^3}{256}-25L\ge\frac{L^3}{512},
+ \int \mathfrak p_N^2\ge\frac{L^3}{256}-25L\ge\frac{L^3}{512},
 \end{equation}
-where $L^2\ge128^2>12800$ suffices. This also proves $p_N\ne0$.
+where $L^2\ge128^2>12800$ suffices. This also proves $\mathfrak p_N\ne0$.
 Equations~\eqref{eq:witness-discrete}--\eqref{eq:witness-continuous}
 give a quotient at most $250\cdot512/L^2$.
 For $0<L<128$, the constant polynomial gives
 $\lambda_-(N,N-1)\le1<128000/L^2$.
-This covers every remaining $N$, without an unperformed finite check.
+This covers every remaining $N$; no finite computation is needed.
 \end{proof}
 
-The witness estimate starts at $\log N\ge128$, but
-$128000/(\log N)^2<1$ exactly when
-$\log N>\sqrt{128000}\approx357.7709$.
-Thus this explicit constant is vacuous throughout all computationally feasible
-full-spectrum calculations considered here. The finite values in
-Table~\ref{tab:cc} do not exhibit or determine an asymptotic leading constant.
+The constant $128000$ serves only to fix the order:
+$128000/(\log N)^2<1$ requires $\log N>\sqrt{128000}\approx357.77$. For $N$
+in the range of Table~\ref{tab:cc} the constant polynomial gives the better
+bound, and the table does not determine the leading constant.
 
-\begin{corollary}[Endpoint defect and condition number]\label{cor:endpoint}
-For $G_N=G_{N,N-1}$,
+\subsection{The sharp constant}\label{sec:sharp-min}
+
+Theorems~\ref{thm:cardinal} and~\ref{thm:harmonic} fix the order
+$(\log N)^{-2}$ but leave the constant open: as $N\to\infty$ the lower and
+upper bounds for $(\log N)^2\lambda_-(N,N-1)$ differ by a factor of about
+$7\cdot10^{8}$ (here $K_N\sim32\pi^2(\pi+1)^2(\log N)^2$, against $128000$).
+The exact constant comes from a one-dimensional model. Near the endpoint
+$x=1$, write $\theta=\pi t/N$, so that the node $x_k$ corresponds to
+$t=k$. For nodal data $u_k$ supported at $1\le k\ll N$, with $a_k=(-1)^ku_k$
+(in this section and Appendix~\ref{app:sharp}, $a_k$ denotes a nodal amplitude,
+not a Chebyshev coefficient) and $g_k=ka_k/N$, the
+interpolant behaves like $(2N/\pi)\,\sin(\pi t)\,t^{-1}$ times the
+partial sum $\sum_{k<t}g_k/k$, up to a signed error
+that is bounded in the relevant norms (Lemma~\ref{lem:signed-remainder}).
+The discrete energy is controlled by the harmonic norm of $g$: since
+$w_k\approx\pi^2k/N^2$ (Lemma~\ref{lem:endpoint-rep}(a)),
+$\sum_kw_k|u_k|^2\approx\pi^2\sum_k|g_k|^2/k$.
+On the logarithmic scale $y=\log t/\log N$ the partial sum becomes a
+primitive, the discrete energy $Q_N(p^2)$ becomes $\pi^2\log N$ times a
+squared $L^2$ norm, and the continuous mass becomes $2(\log N)^3$ times the
+squared $L^2$ norm of the primitive; the factor two in the latter is the mean
+value $1/2$ of $\sin^2(\pi t)$, counted on each of the two endpoints. The
+constant is then $(\pi^2/2)$ times the reciprocal squared norm of the
+Volterra operator $V$ below. This heuristic is made precise in
+Lemma~\ref{lem:endpoint-rep}.
+
+\begin{lemma}[The Volterra (primitive) operator]\label{lem:volterra}% IDs: PD-T522
+On $L^2(0,1)$ let $(Vf)(y)=\int_0^yf(s)\dd s$. Then $\norm V=2/\pi$, and
 \[
- \norm{I-G_N}_2\longrightarrow1,\qquad
- \kappa_2(G_N)\asymp(1+\log N)^2.
+ \inf_{0\ne f\in L^2(0,1)}\frac{\pi^2}2\,\frac{\norm f^2}{\norm{Vf}^2}
+ =\frac{\pi^4}8,
+\]
+with equality for $f(y)=\cos(\pi y/2)$.
+\end{lemma}
+
+\begin{proof}
+Put $F=Vf$ and $\alpha=\pi/2$. (That $\norm V=2/\pi$ is classical; we include
+the short proof for completeness.) For $F\in C^1[0,1]$ with $F(0)=0$,
+expanding the square and integrating the cross term by parts give
+\[
+ \int_0^1|F'-\alpha\cot(\alpha y)F|^2\dd y
+ =\int_0^1|F'|^2\dd y-\alpha^2\int_0^1|F|^2\dd y ,
+\]
+because $(\alpha\cot\alpha y)^2+(\alpha\cot\alpha y)'=-\alpha^2$ and the
+boundary term $-\alpha[\cot(\alpha y)|F|^2]_0^1$ vanishes: $\cot\alpha=0$
+and $F(y)=O(y)$ at zero. Hence $\norm F^2\le(4/\pi^2)\norm{F'}^2$, and the
+inequality extends to every absolutely continuous $F$ with $F(0)=0$ and
+$F'\in L^2$ by density. Equality holds for $F(y)=\sin(\alpha y)$, whose
+derivative is $\alpha\cos(\alpha y)$.
+\end{proof}
+
+\begin{proposition}[An admissible logarithmic trial]\label{prop:sharp-trial}% IDs: PD-T523
+Through all integers $N$, and hence along each parity,
+\[
+ \limsup_{N\to\infty}(\log N)^2\,\lambda_-(N,N-1)\le\frac{\pi^4}8 .
+\]
+More precisely, let $f\in C^1$ be real, nonzero and compactly supported in
+$(0,1)$, let $L=\log N$, and define nodal values
+\[
+ u_k=\frac{(-1)^kN}{k}\,f\Bigl(\frac{\log k}L\Bigr)\quad(1\le k<N/2),\qquad
+ u_{N-k}=(-1)^{N-1}u_k,
+\]
+with $u_0=u_N=0$ and $u_{N/2}=0$ for even $N$. For all sufficiently
+large $N$ the interpolant $p_N$ of these values lies in $\Pn_{N-1}$, is
+nonzero, and
+\[
+ Q_N(p_N^2)=2\pi^2L\norm f^2\,(1+o(1)),\qquad
+ \liminf_{N\to\infty}\frac{\int_{-1}^1p_N^2}{L^3}\ge4\norm{Vf}^2 .
+\]
+\end{proposition}
+
+\begin{theorem}[The sharp endpoint constant]\label{thm:sharp-min}% IDs: PD-T546
+Through all integers $N$,
+\[
+ \lim_{N\to\infty}(\log N)^2\,\lambda_-(N,N-1)
+ =\lim_{N\to\infty}(\log N)^2\,\lambda_-(N,N)=\frac{\pi^4}8 .
+\]
+Quantitatively, let $L=\log N\ge16$ and put
+\[
+\begin{gathered}
+ J=\lfloor N/2\rfloor,\qquad k_0=\lceil L^2\rceil,\qquad
+ \alpha_J=\frac{2H_J}\pi+1,\\
+ \sigma_N=\frac{\sqrt{2\alpha_J^2+6}}{\pi\sqrt{1-2/L^2}},\qquad
+ \tau_N=160+2\sqrt{LH_{k_0}}+30\sqrt{L+5}.
+\end{gathered}
+\]
+Then every real or complex $p\in\Pn_N$ satisfies
+\begin{equation}\label{eq:sharp-finite}
+ \Bigl(\int_{-1}^1|p|^2\Bigr)^{1/2}\le(\sigma_N+\tau_N)\,
+ Q_N(|p|^2)^{1/2},
+\end{equation}
+where $\sigma_N/L\to2\sqrt2/\pi^2$ and $\tau_N/L\to0$.
+\end{theorem}
+
+\begin{proof}[Proof of Theorem~\ref{thm:sharp-min}, given \eqref{eq:sharp-finite}]
+Inequality \eqref{eq:sharp-finite} gives
+\[
+ L^2\lambda_-(N,N)\ge\Bigl(\frac{\sigma_N}L+\frac{\tau_N}L\Bigr)^{-2}.
+\]
+Since $\log(J+1)\le H_J\le1+\log J$, we have $\alpha_J/L\to2/\pi$ and
+hence $\sigma_N/L\to2\sqrt2/\pi^2$. Also $H_{k_0}=O(\log L)$, so
+$\tau_N/L\to0$. Therefore
+$\liminf L^2\lambda_-(N,N)\ge(2\sqrt2/\pi^2)^{-2}=\pi^4/8$.
+Restriction gives $\lambda_-(N,N-1)\ge\lambda_-(N,N)$, and
+Proposition~\ref{prop:sharp-trial} bounds the upper limit of the former.
+\end{proof}
+
+In the language of Section~\ref{sec:context}, Theorem~\ref{thm:sharp-min}
+is a sharp converse Marcinkiewicz--Zygmund statement.
+
+% Source: PD-T684 (provisional PD-T?mz-paper-claude-01) (d); topics/padua-mz-paper-20261113/theory/cc-defect-condition-corollary.md
+\begin{corollary}[Interpolation from weighted nodal data]\label{cor:interp-norm}
+Let $\mathcal I_N$ map nodal data $u\in\R^{N+1}$, normed by
+$\norm u_w=(\sum_kw_ku_k^2)^{1/2}$, to its interpolant in $\Pn_N$, normed in
+$L^2(-1,1)$. Then $\norm{\mathcal I_N}=\lambda_-(N,N)^{-1/2}$ and
+\[
+ \lim_{N\to\infty}\frac{\norm{\mathcal I_N}}{\log N}=\frac{2\sqrt2}{\pi^2}.
 \]
 \end{corollary}
+
 \begin{proof}
-The two endpoint theorems give $\lambda_-(N,N-1)\to0$ and its
-two-sided logarithmic order. The constant polynomial has norm ratio one,
-so $\lambda_-\le1\le\lambda_+$; Theorem~\ref{thm:upper} gives
-$\lambda_+<2$. Therefore
-$1-\lambda_-\le\norm{I-G_N}_2<1$, which proves the limit, and
-$\lambda_-^{-1}\le\kappa_2(G_N)<2\lambda_-^{-1}$ proves the order.
+Interpolation is a bijection, and $\norm u_w^2=Q_N(p^2)$ for
+$p=\mathcal I_Nu$, so
+$\norm{\mathcal I_N}^2=\sup_{0\ne p\in\Pn_N}\int p^2/Q_N(p^2)=\lambda_-(N,N)^{-1}$.
+Theorem~\ref{thm:sharp-min} gives the limit.
 \end{proof}
 
-\begin{remark}[A rate that has not been proved]\label{rem:rate}
-The exact identity
+The proofs of Proposition~\ref{prop:sharp-trial} and of
+\eqref{eq:sharp-finite} are in Appendix~\ref{app:sharp}. They rest on
+two estimates for finitely supported sequences $g=(g_k)_{k\ge1}$,
+measured in the harmonic norm
+$\norm g_h^2=\sum_{k\ge1}|g_k|^2/k$. The first controls the signed
+part of the endpoint kernel without any regularity of $g$; the second is
+a discrete version of Lemma~\ref{lem:volterra} with the oscillation
+$\sin^2(\pi t)$ averaged uniformly.
+
+\begin{lemma}[Signed remainder]\label{lem:signed-remainder}% IDs: PD-T544
+For noninteger $t>0$ put
 \[
- 1-\norm{I-G_N}_2=\min\{\lambda_-(N,N-1),\,2-\lambda_+(N,N-1)\}
+ \Phi_k(t)=\frac{t^2}{k(t^2-k^2)}-\frac{\boldsymbol1_{k<t}}k,\qquad
+ (\mathcal Eg)(t)=\sin(\pi t)\sum_{k\ge1}g_k\Phi_k(t),
 \]
-limits what follows from the endpoint lower spectrum. The guaranteed gap in
-our upper bounds is only of order $N^{-1}$. The arguments do \emph{not} prove
-$1-\norm{I-G_N}_2\asymp(\log N)^{-2}$ or eventual dominance of
-$1-\lambda_-$ in \eqref{eq:eta}. A sufficiently strong uniform
-endpoint upper gap would be additional information.
+extended continuously to integer $t$. Then
+\[
+ \int_0^\infty|(\mathcal Eg)(t)|^2\frac{\dd t}t\le1600\,\norm g_h^2 .
+\]
+\end{lemma}
+
+\begin{lemma}[Discrete primitive]\label{lem:discrete-primitive}% IDs: PD-T545
+Let $T\ge1$, $J=\lfloor T\rfloor$, $\alpha_J=2H_J/\pi+1$, and let $g$ be
+supported in $\{1,\dots,J\}$. With $S(t)=\sum_{k<t}g_k/k$,
+\[
+ \int_0^T\sin^2(\pi t)\,|S(t)|^2\,\frac{\dd t}t
+ \le\Bigl(\frac{\alpha_J^2}2+\frac32\Bigr)\norm g_h^2 .
+\]
+\end{lemma}
+
+Neither lemma assumes smoothness or a sign pattern of $g$. In
+Lemma~\ref{lem:signed-remainder} the signs of the kernel are kept: the pole
+part of $\Phi_k$ is summed by the orthogonality \eqref{eq:sinc-orth} of
+shifted sinc functions, whereas estimating the cardinal functions in absolute
+value would lose a factor $\log N$. Lemma~\ref{lem:discrete-primitive}
+supplies the leading coefficient: $\alpha_J\sim(2/\pi)\log T$ is the
+rescaled norm of $V$, and the factor $1/2$ is the mean of $\sin^2$.
+
+\section{The endpoint maximum eigenvalue}\label{sec:edge-max}
+
+The constant polynomial shows $\lambda_+(N,N-1)\ge1$, and
+Theorem~\ref{thm:five-thirds} gives $\lambda_+(N,N-1)\le5/3$. The upper
+eigenvalue is again decided at the endpoints, now on the microscopic
+scale $\theta=\xi/N$ with $\xi$ bounded. This section identifies its limit
+as the squared norm of an explicit sampling operator.
+
+\paragraph{Heuristic}
+Write $p=\sum_{i<N}a_iT_i\in\Pn_{N-1}$ and suppose that the coefficients vary
+on the scale $N$, $a_i\approx N^{-1}g(i/N)$ with $g$ a function on $[0,1]$, so
+that $s=i/N$ is the rescaled Chebyshev index. Near $x=1$, at
+$\theta=\xi/N$, one has
+$p(\cos(\xi/N))=\sum_ia_i\cos(i\xi/N)\approx\widehat g(\xi)$, where
+$\widehat g(\xi)=\int_0^1g(s)\cos(\xi s)\dd s$, and
+$\dd x=\sin\theta\dd\theta\approx\xi\dd\xi/N^2$, so $N^2\int p^2$ near $x=1$
+tends to the form $\mathsf M(g)$ defined below. The nodes $x_j$ sit at
+$\xi=\pi j$, and $N^2w_j\to\omega_j$ (Appendix~\ref{app:edge-fixed}), so
+$N^2Q_N(p^2)$ tends to the form $\mathsf Q(g)$ below, the term
+$|\widehat g(0)|^2$ coming from the endpoint node $x_0$ (weight
+$\approx N^{-2}$). Degree at most $N-1$ means $a_N=0$, that is $g(1)=0$; the
+functions $\zeta_j$ below, which vanish at $s=1$, are the coefficient profiles
+of the admissible polynomials $p_{N,j}$. The endpoint $x=-1$ gives a second,
+independent profile, and both endpoints are handled together in
+Appendix~\ref{app:edge-limit}.
+
+\paragraph{The endpoint model}
+For $g\in L^2(0,1)$ put
+\[
+ \widehat g(\xi)=\int_0^1g(s)\cos(\xi s)\dd s,\qquad
+ \mathsf M(g)=\int_0^\infty\xi\,|\widehat g(\xi)|^2\dd\xi\in[0,\infty],
+\]
+and, with $\operatorname{Si}(x)=\int_0^x\sin v\,v^{-1}\dd v$,
+\[
+ \omega_j=2\bigl[(-1)^j+\pi j\operatorname{Si}(\pi j)\bigr]\quad(j\ge1),\qquad
+ \mathsf Q(g)=|\widehat g(0)|^2+\sum_{j\ge1}\omega_j|\widehat g(\pi j)|^2 .
+\]
+Let $\mathcal V_0$ be the span of the functions
+$\zeta_j(s)=2[\cos(\pi js)-(-1)^j]$, $j\ge1$. Their cosine transforms are
+\begin{equation}\label{eq:chi}
+ \chi_j(\xi):=\widehat{\zeta_j}(\xi)
+ =\frac{2(-1)^j(\pi j)^2\sin\xi}{\xi(\xi^2-(\pi j)^2)},
+\end{equation}
+with removable singularities filled in; they satisfy
+$\chi_j(0)=-2(-1)^j$, $\chi_j(\pi k)=\delta_{jk}$ for $k\ge1$ (which is what
+makes the nodal sampling diagonal), and
+$\chi_j(\xi)=O_j(\xi^{-3})$. Thus for $g=\sum_{j\le\mathsf J}u_j\zeta_j$,
+\[
+ \mathsf Q(g)=4\Bigl(\sum_{j=1}^{\mathsf J}(-1)^ju_j\Bigr)^2+\sum_{j=1}^{\mathsf J}\omega_ju_j^2,
+ \qquad
+ \mathsf M(g)=\int_0^\infty\xi\Bigl(\sum_{j=1}^{\mathsf J}u_j\chi_j(\xi)\Bigr)^2\dd\xi .
+\]
+Define
+\begin{equation}\label{eq:Lambda-edge}
+ \Lambda_{\mathrm{edge}}
+ =\sup_{0\ne g\in\mathcal V_0}\frac{\mathsf Q(g)}{\mathsf M(g)} .
+\end{equation}
+Equivalently, $\Lambda_{\mathrm{edge}}$ is the squared norm of the sampling
+map
+\[
+ g\mapsto\bigl(\widehat g(0),\,\omega_1^{1/2}\widehat g(\pi),\,
+ \omega_2^{1/2}\widehat g(2\pi),\dots\bigr)
+\]
+from $\mathcal V_0$, normed by $\mathsf M^{1/2}$, to $\ell^2$; by Lemmas~\ref{lem:core-dense}
+and~\ref{lem:continuum} this map extends continuously, with the same norm,
+to the form domain $\mathcal V$ of Appendix~\ref{app:edge-continuum}, so the
+supremum may equally be taken over $\mathcal V$.
+The numerator is the limit of the rescaled discrete energy and the denominator
+that of the rescaled continuous mass of the degree-$(N-1)$ polynomials
+\begin{equation}\label{eq:pNj}
+ p_{N,j}=\ell_j-2(-1)^j\ell_0\qquad(1\le j<N),
+\end{equation}
+where $\ell_k\in\Pn_N$ are the cardinal polynomials. Their two nonzero
+nodal values cancel the coefficient \eqref{eq:topcoeff} of $T_N$, so
+$p_{N,j}\in\Pn_{N-1}$. (Strictly alternating nodal values, by contrast, have
+a nonzero $T_N$ coefficient and are not admissible.) The weights $\omega_j$ are the limits
+of $N^2w_j$, and $\chi_j(\xi)$ is the limit of $p_{N,j}(\cos(\xi/N))$.
+
+\begin{proposition}[Fixed-trial limits]\label{prop:fixed-trial}% IDs: PD-T529 (weakened)
+For every $\mathsf J\ge1$ and $u\in\R^{\mathsf J}$, with $g=\sum_ju_j\zeta_j$ and
+$p=\sum_ju_jp_{N,j}$,
+\[
+ N^2\int_{-1}^1p^2\longrightarrow\mathsf M(g),\qquad
+ N^2Q_N(p^2)\longrightarrow\mathsf Q(g)\qquad(N\to\infty).
+\]
+The form $\mathsf M$ is positive definite on $\mathcal V_0$,
+$1\le\Lambda_{\mathrm{edge}}\le5/3$, and
+$\liminf_{N\to\infty}\lambda_+(N,N-1)\ge\Lambda_{\mathrm{edge}}$ through
+all integers $N$.
+\end{proposition}
+
+\begin{theorem}[The endpoint upper limit]\label{thm:edge-limit}% IDs: PD-T530
+Through all integers $N$,
+\[
+ \lim_{N\to\infty}\lambda_+(N,N-1)=\Lambda_{\mathrm{edge}},\qquad
+ 1\le\Lambda_{\mathrm{edge}}\le\frac32 .
+\]
+\end{theorem}
+
+The convergence is qualitative: the proof (Appendix~\ref{app:edge}) uses
+weak compactness and gives no rate. Its idea is as follows. In the
+decomposition $R=M-Y+Z$ of Theorem~\ref{thm:five-thirds}, the rescaled
+transition matrix $Z$ converges to a compact integral operator, while the
+reflected matrix $Y$ is positive semidefinite and only lower semicontinuous
+under weak convergence. Any normalized coefficient sequence produces two
+weak endpoint profiles, one for each endpoint, and these profiles are
+compared with the model through the continuum identity
+$\mathsf Q=\mathsf M+\tfrac12(\mathsf Z-\mathsf Y)$ on the closure of
+$\mathcal V_0$, where the Laplace-type form $\mathsf Y$ and the compact form
+$\mathsf Z$ are defined in Appendix~\ref{app:edge-continuum}.
+
+% Source: PD-T547; topics/padua-mz-sharp-constants-20261106/theory/P4-certified-lower.md
+\begin{proposition}[A certified lower bound]\label{prop:edge-certified}% IDs: PD-T547
+$\Lambda_{\mathrm{edge}}\ge1.0044369$.
+\end{proposition}
+
+The proof (Appendix~\ref{app:certificate}) is computer-assisted: it evaluates,
+in outward rational interval arithmetic, the quotient
+$\mathsf Q(g)/\mathsf M(g)$ for one explicit $g\in\mathcal V_0$ with $512$
+coefficients, using closed forms of $\mathsf M$ on $\mathcal V_0$. It is a
+lower bound only. Floating-point Galerkin computations on the spans of
+$\zeta_1,\dots,\zeta_{\mathsf J}$ give values that still increase at
+$\mathsf J=2048$ ($1.00443692$, $1.00443695$, $1.00443697$ for
+$\mathsf J=512,1024,2048$). Together with Table~\ref{tab:cc} they suggest
+$\Lambda_{\mathrm{edge}}\approx1.004437$. These are measurements, and no
+digit beyond the certified bound is claimed. Determining the decimal value of
+$\Lambda_{\mathrm{edge}}$ is left open (Section~\ref{sec:numerics}).
+
+\section{Consequences at the endpoint}\label{sec:consequences}
+
+Write $G_N=G_{N,N-1}$ and $\eta_N=\norm{I-G_N}_2$. Since the extreme
+eigenvalues determine the distance from the identity,
+\begin{equation}\label{eq:defect-identity}
+ 1-\eta_N=\min\{\lambda_-(N,N-1),\,2-\lambda_+(N,N-1)\}.
+\end{equation}
+
+% Sources: PD-T527; PD-T684 (provisional PD-T?mz-paper-claude-01) (a)(b); topics/padua-mz-paper-20261113/theory/cc-defect-condition-corollary.md
+\begin{corollary}[Defect and condition number at the endpoint]\label{cor:endpoint}% IDs: PD-T527
+For every $N\ge2$, with $K_N$ from \eqref{eq:KN},
+\[
+ K_N^{-1}\le1-\eta_N\le\min\{1,128000/(\log N)^2\}.
+\]
+For every $N\ge57$, $1-\eta_N=\lambda_-(N,N-1)$. Consequently
+\[
+ \lim_{N\to\infty}(\log N)^2(1-\eta_N)=\frac{\pi^4}8,\qquad
+ \lim_{N\to\infty}\frac{\kappa_2(G_N)}{(\log N)^2}=\frac{8\Lambda_{\mathrm{edge}}}{\pi^4}.
+\]
+The last limit lies in $[8/\pi^4,12/\pi^4]$, and in
+$[8\cdot1.0044369/\pi^4,\,12/\pi^4]\subset[0.08249,0.12320]$ by the
+computer-assisted Proposition~\ref{prop:edge-certified}.
+\end{corollary}
+
+\begin{proof}
+By Theorem~\ref{thm:five-thirds}, $2-\lambda_+(N,N-1)\ge1/3$. Moreover
+$K_N$ is increasing in $N$ and $K_2>10^4$, so $K_N^{-1}<1/3$. Together with
+Theorems~\ref{thm:cardinal} and~\ref{thm:harmonic}, the constant polynomial
+($\lambda_-\le1$) and \eqref{eq:defect-identity}, this gives the two-sided
+bound. If $\lambda_-(N,N-1)\le1/3$, \eqref{eq:defect-identity} reduces to
+$1-\eta_N=\lambda_-(N,N-1)$; Lemma~\ref{lem:U-exact} gives this for
+$N\ge57$. The first limit is then Theorem~\ref{thm:sharp-min}. Since
+$\lambda_->0$, $\kappa_2(G_N)=\lambda_+/\lambda_-$, and the second limit follows
+from Theorems~\ref{thm:sharp-min} and~\ref{thm:edge-limit}. The intervals use
+$1\le\Lambda_{\mathrm{edge}}\le3/2$ and Proposition~\ref{prop:edge-certified}.
+\end{proof}
+
+\begin{remark}[What remains open at the endpoint]\label{rem:rate}
+The endpoint constants $\pi^4/8$ and $\Lambda_{\mathrm{edge}}$ are determined
+as limits, but the proofs give no rate of convergence that is usable at
+computable $N$: the finite bound \eqref{eq:sharp-finite} is coarse, and
+Theorem~\ref{thm:edge-limit} is qualitative. The decimal value of
+$\Lambda_{\mathrm{edge}}$ is known only through the one-sided
+Proposition~\ref{prop:edge-certified} and the measurements of
+Section~\ref{sec:numerics}.
 \end{remark}
 
 \section{Explicit bounds at each fixed degree ratio}\label{sec:ratio}
 
 For $n\le N/2$, exactness gives $\lambda_\pm(N,n)=1$; the classical
-algebraic Marcinkiewicz inequality of Mastroianni--Totik \citep{LIT-051}
-yields nothing beyond this in its documented form
-(Section~\ref{sec:context}). The point of this section is the range
+algebraic Marcinkiewicz inequality of Mastroianni--Totik \cite{LIT-051}
+yields no explicit information beyond this, because its sampling constant is
+unspecified (Section~\ref{sec:context}). The point of this section is the range
 $N/2<n<N$: explicit constants for every ratio below one, with an upper
 constant below two.
 
-\begin{theorem}[Degree-sensitive upper estimate; \id{PD-T022}]\label{thm:ratio-upper}
-For $0\le n<N$, put $\rho=\max\{2n/N-1,0\}^2$. Then
-\[
- Q_N(p^2)\le(1+\rho)\int_{-1}^1p^2\qquad(p\in\Pn_n).
-\]
-If $2n\le N$, every quotient equals one. If $2n>N$, the displayed
-inequality is strict for every nonzero $p$.
-\end{theorem}
-\begin{proof}
-Exactness settles $2n\le N$. Otherwise set $t=2n/N-1>0$,
-$\rho=t^2$, and $A_\rho=(1+\rho)M-R=\rho M+D/2$ on indices $0,\ldots,n$.
-Opposite-parity off-diagonal entries vanish; equal-parity unaliased entries
-are negative. For an aliased equal-parity pair let
-$s=i+j>N$, $d=|i-j|\ge2$, $r=2N-s$, $\delta=N-n>0$.
-Then $r<N$, $r-d\ge2\delta$, and
-\[
- \frac dr\le1-\frac{2\delta}{N}=t,\qquad
- \frac{d^2-1}{r^2-1}\le\frac{d^2}{r^2}\le\rho.
-\]
-Consequently
-\[
- (A_\rho)_{ij}=-\frac\rho{d^2-1}
-                -\frac{1+\rho}{s^2-1}+\frac1{r^2-1}<0.
-\]
-For this matrix with nonpositive off-diagonal entries, replacement of
-coefficients $a$ by $v=|a|$ gives
-$a^TA_\rho a\ge\rho v^TMv+v^TDv/2>0$ for $a\ne0$.
-This proves the result.
-\end{proof}
-
-\begin{corollary}[Endpoint upper constant; \id{PD-T022}]\label{cor:ratio-endpoint}
-For every $N\ge2$,
-\[
- \lambda_+(N,N-1)\le1+(1-2/N)^2=2-\frac4N+\frac4{N^2}.
-\]
-Equality holds at $N=2$; the displayed upper inequality is strict for $N\ge3$.
-\end{corollary}
-\begin{proof}
-Set $n=N-1$ in Theorem~\ref{thm:ratio-upper}. Then
-$\max\{2n/N-1,0\}=1-2/N$. The case $N=2$ has $2n=N$ and $\rho=0$;
-every $N\ge3$ has $2n>N$ and $\rho>0$. This proves the endpoint
-refinement used in Theorem~\ref{thm:upper} and \eqref{eq:main-upper}.
-\end{proof}
-
-\begin{theorem}[Filtered lower estimate; \id{PD-T023}]\label{thm:ratio-lower}
+\begin{theorem}[Filtered lower estimate]\label{thm:ratio-lower}% IDs: PD-T023
 Put $C_0=2(1+\pi)^2$ and
 $C_*=3C_0^2(1+2/\pi)=12(1+\pi)^4(1+2/\pi)$.
 For $N\ge2$, $0\le n<N$, and $p\in\Pn_n$,
@@ -747,7 +1256,7 @@ including the boundary $|k|=n$. Finite Fourier expansion gives
 \end{equation}
 Indeed the grid average of $e^{i(l-k)t_j}$ vanishes unless $l-k$ is
 a multiple of $2N$. Since $|l-k|\le n+N-1<2N$, only $l=k$ remains;
-its multiplier is one. No continuous sampling theorem is assumed.
+its multiplier is one. The identity is purely algebraic.
 
 Let $d=d(t,0)$. The geometric-sum formula gives
 $mF_m(t)\le m^2$ and $mF_m(t)\le\pi^2/d^2$ because
@@ -776,16 +1285,16 @@ Hence, using a decreasing-sum integral comparison,
 \begin{align}
  \sup_t\sum_j|H(t,j)|
  &\le\frac{C_0}{\epsilon}\sum_{k\ge0}(1+k\pi)^{-3/2}
- \le\frac{C_0}{\epsilon}(1+2/\pi)=:R,\label{eq:rowH}\\
+ \le\frac{C_0}{\epsilon}(1+2/\pi)=:\Gamma_{\mathrm r},\label{eq:rowH}\\
  \sup_j\int_0^{2\pi}|H(t,j)|\dd t
  &\le\frac{C_0}{2\epsilon}\frac2N
                  \int_0^\infty(1+u)^{-3/2}\dd u
- =\frac{2C_0}{\epsilon N}=:S.\label{eq:colH}
+ =\frac{2C_0}{\epsilon N}=:\Gamma_{\mathrm c}.\label{eq:colH}
 \end{align}
-At an antipode the node count can only decrease. Cauchy--Schwarz gives
-$|\sum_jH(t,j)z_j|^2\le(\sum_j|H(t,j)|)
-\sum_j|H(t,j)||z_j|^2$.
-Integrating and using \eqref{eq:rowH}--\eqref{eq:colH} proves
+At an antipode the node count can only decrease. The weighted Schur test
+(Lemma~\ref{lem:schur}, applied to the kernel $|H(t,j)|$ with counting
+measure in $j$, $\dd t$ on the circle and $\varphi=\psi=1$) and
+\eqref{eq:rowH}--\eqref{eq:colH} prove
 \begin{equation}\label{eq:circlebound}
  \int_0^{2\pi}\nu(t)|q(t)|^2\dd t
  \le\frac{2C_0^2(1+2/\pi)}{\epsilon^2N}
@@ -806,24 +1315,24 @@ Finally $2\int_{-1}^1p^2=\int_0^{2\pi}|\sin t|q(t)^2\dd t
 Substitution in \eqref{eq:circlebound} proves \eqref{eq:fixedlower}.
 \end{proof}
 
-\begin{corollary}[Explicit strong constants; \id{PD-T024}]\label{cor:strong}
-For $0\le\theta<1$, set
+\begin{corollary}[Explicit strong constants]\label{cor:strong}% IDs: PD-T024
+For $0\le\vartheta<1$, set
 \[
- A_\theta=\frac{(1-\theta)^2}{C_*},\qquad
- \rho_\theta=\max\{2\theta-1,0\}^2,\qquad
- \eta_\theta=\max\{1-A_\theta,\rho_\theta\}<1.
+ A_\vartheta=\frac{(1-\vartheta)^2}{C_*},\qquad
+ \rho_\vartheta=\max\{2\vartheta-1,0\}^2,\qquad
+ \eta_\vartheta=\max\{1-A_\vartheta,\rho_\vartheta\}<1.
 \]
-For every integer $0\le n\le\theta N$, the spectrum of $G_{N,n}$ lies
-in $[A_\theta,1+\rho_\theta]$; consequently
+For every integer $0\le n\le\vartheta N$, the spectrum of $G_{N,n}$ lies
+in $[A_\vartheta,1+\rho_\vartheta]$; consequently
 \[
- (1-\eta_\theta)\int p^2\le Q_N(p^2)
-                    \le(1+\eta_\theta)\int p^2\qquad(p\in\Pn_n).
+ (1-\eta_\vartheta)\int p^2\le Q_N(p^2)
+                    \le(1+\eta_\vartheta)\int p^2\qquad(p\in\Pn_n).
 \]
 \end{corollary}
 \begin{proof}
 The two preceding theorems give the spectral interval by monotonicity in
-$n/N$. Since $C_*>1$, $0<A_\theta<1$ and $0\le\rho_\theta<1$.
-The definition of $\eta_\theta$ gives both inequalities.
+$n/N$. Since $C_*>1$, $0<A_\vartheta<1$ and $0\le\rho_\vartheta<1$.
+The definition of $\eta_\vartheta$ gives both inequalities.
 \end{proof}
 
 The filtered estimate degenerates like $N^{-2}$ at $n=N-1$ and does not
@@ -831,36 +1340,24 @@ replace the sharper endpoint theorem. Conversely the endpoint cardinal
 argument does not supply a constant independent of $N$ at a fixed ratio.
 Both proofs are included because the two regimes need different estimates.
 
-\section{The three-quarter assumption and hyperinterpolation}\label{sec:hyper}
+\section{Hyperinterpolation and the three-quarter assumption of An and Wu}\label{sec:hyper}
 
-An--Wu's inspected arXiv version assumes a relative squared-norm MZ error
-$\eta<1$ in its main theorem. Its Section~4 assumes $\eta=3/4$ for the
-examples, and Corollary~4.1 retains the theorem's conditions for an
+An and Wu assume a relative squared-norm MZ error
+$\eta<1$ in their main theorem. Their Section~4 assumes $\eta=3/4$ for the
+examples, and their Corollary~4.1 retains the theorem's conditions for an
 $m$-point CC rule with $n+2\le m\le2n+1$, obtaining an error bound
-$3\sqrt V E_{m-1-n}(f)$ \citep{LIT-046}.
+$3\sqrt{|\mu|} E_{m-1-n}(f)$ \cite[Sect.~4, Cor.~4.1]{LIT-046}. In this
+notation $m$ counts the CC points, so $m=N+1$.
 The following finite calculation specifies an excluded case for that
 assumption; it does not refute the conditional implication.
 
-\begin{proposition}[An exact endpoint witness; \id{PD-T019}, \id{PD-N004}]\label{prop:counterexample}
-For $S_N=\sum_{j=1}^N(2j-1)^{-1}$,
-\begin{equation}\label{eq:Uexact}
- \int_{-1}^1U_{N-1}^2=2S_N,\qquad
- Q_N(U_{N-1}^2)=
- \begin{cases}2,&N\text{ odd},\\2N^2/(N^2-1),&N\text{ even}.
- \end{cases}
-\end{equation}
-In particular $\norm{I-G_{512,511}}_2>3/4$. This case has $513$ CC
-points, so An--Wu's point-count notation is $m=513$, $n=511$.
+\begin{proposition}[An exact endpoint witness]\label{prop:counterexample}% IDs: PD-T019, PD-N004
+$\lambda_-(512,511)<1/4$; in particular $\norm{I-G_{512,511}}_2>3/4$.
+This case has $513$ CC points, so An--Wu's point-count notation is
+$m=513$, $n=511$.
 \end{proposition}
 \begin{proof}
-The finite trigonometric product identity
-$U_r^2=\sum_{s=0}^rU_{2s}$ follows by summing the geometric sine series.
-Also $\int_{-1}^1U_{2s}=\int_0^\pi\sin((2s+1)\theta)\dd\theta
-=2/(2s+1)$, giving the continuous formula.
-All interior nodal values of $U_{N-1}$ vanish; its endpoint values have
-absolute value $N$. The endpoint weights prove the discrete formula.
-
-For a short exact certificate at $N=512$, direct rational addition gives
+We use Lemma~\ref{lem:U-exact}. To obtain the sharper bound at $N=512$, direct rational addition gives
 $S_8>201/100$. Monotonicity of $1/(2t-1)$ gives
 \[
  S_{512}\ge S_8+\int_9^{513}\frac{\dd t}{2t-1}
@@ -878,776 +1375,875 @@ Since $4\cdot512^2/(512^2-1)<401/100$, \eqref{eq:Uexact} yields
 Thus $\lambda_-(512,511)<1/4$ and the defect exceeds $3/4$.
 \end{proof}
 
-The growth $\int_{-1}^1U_m^2\asymp\log m$ behind this witness is an
-elementary computation. Analogous borderline mechanisms appear in classical
-converse Marcinkiewicz--Zygmund characterizations \citep{LIT-293,LIT-294},
-and a full-space, subsequence version of $\lambda_-(N,N)\to0$ at the CC
-nodes follows from \citep{LIT-299} (Section~\ref{sec:context}). The
-proposition supplies the exact CC evaluation, valid for every $N$ and on
-$\Pn_{N-1}$.
-This simple witness gives only an $O(1/\log N)$ quotient asymptotically;
-the harmonic combination in Theorem~\ref{thm:harmonic} is needed for
-the squared logarithm. The finite certificate uses no floating spectrum.
-The published An--Wu Corollary~4.1 coincides with the inspected arXiv
-formulation: it assumes $\eta=3/4$ for $m$-point CC with $n+2\le m\le2n+1$
-\citep{LIT-046}, and $m=513$, $n=511$ lies in that range. No correction
-was found in a documented search; this is not proof of absence.
+Lemma~\ref{lem:U-exact} alone gives $q_{512}<1/3$; the certificate above
+gives the sharper value needed for the threshold $3/4$. The pair $m=513$,
+$n=511$ lies in the range $n+2\le m\le2n+1$ of Corollary~4.1 of
+\cite{LIT-046}. We are not aware of a published correction. Analogous
+borderline mechanisms appear in classical converse Marcinkiewicz--Zygmund
+characterizations \cite{LIT-293,LIT-294}, and a full-space, subsequence
+version of $\lambda_-(N,N)\to0$ at the CC nodes follows from \cite{LIT-299}
+(Section~\ref{sec:context}). Lemma~\ref{lem:U-exact} supplies the exact CC
+evaluation, valid for every $N$ and on $\Pn_{N-1}$; the proof above uses only
+exact rational inequalities.
 
-\begin{proposition}[Upper-Gram hyperinterpolation estimate; \id{PD-T025}]\label{prop:hyper}
-Let $\mu$ be a finite positive measure of mass $V>0$ on a compact domain.
-Let $Q$ have positive weights of total mass $V$, and let
+\begin{proposition}[Upper-Gram hyperinterpolation estimate]\label{prop:hyper}% IDs: PD-T025
+Let $\mu$ be a finite positive measure of mass $|\mu|>0$ on a compact
+domain $\Omega$, and let $f\in C(\Omega)$. Let $\norm\cdot_2$ denote the
+$L^2(\mu)$ norm. Let $Q$ have positive weights of total mass $|\mu|$, and let
 $P_1,\ldots,P_d$ be an $L^2(\mu)$-orthonormal basis of $\Pn_n$.
-Assume $Q(p^2)\le B\norm p_2^2$ on $\Pn_n$, and define
+Assume $Q(p^2)\le\bar\lambda\norm p_2^2$ on $\Pn_n$, and define
 \[
  \mathcal L_nf=\sum_{i=1}^d Q(fP_i)P_i.
 \]
-Then $\norm{\mathcal L_nf}_2\le\sqrt{VB}\norm f_\infty$.
+Then $\norm{\mathcal L_nf}_2\le\sqrt{|\mu|\bar\lambda}\norm f_\infty$.
 If $0\le k\le n$ and $Q$ is exact on all products of a member of
 $\Pn_k$ with a member of $\Pn_n$, then
 \begin{equation}\label{eq:hypererror}
- \norm{f-\mathcal L_nf}_2\le\sqrt V(1+\sqrt B)E_k(f),\qquad
+ \norm{f-\mathcal L_nf}_2\le\sqrt{|\mu|}(1+\sqrt{\bar\lambda})E_k(f),\qquad
  E_k(f)=\inf_{r\in\Pn_k}\norm{f-r}_\infty.
 \end{equation}
 \end{proposition}
 \begin{proof}
-For $c_i=Q(fP_i)$ and any Euclidean unit vector $a$, put
+For $\hat f_i=Q(fP_i)$ and any Euclidean unit vector $a$, put
 $p_a=\sum_i a_iP_i$, so $\norm{p_a}_2=1$.
 Weighted Cauchy--Schwarz gives
-$|a\cdot c|=|Q(fp_a)|\le Q(f^2)^{1/2}Q(p_a^2)^{1/2}
-\le\sqrt{VB}\norm f_\infty$.
+$|a\cdot\hat f|=|Q(fp_a)|\le Q(f^2)^{1/2}Q(p_a^2)^{1/2}
+\le\sqrt{|\mu|\bar\lambda}\norm f_\infty$.
 Euclidean duality and orthonormality identify
-$\norm{\mathcal L_nf}_2=\norm c_2$, proving the first bound.
+$\norm{\mathcal L_nf}_2=\norm{\hat f}_2$, proving the first bound.
 For $r\in\Pn_k$, product exactness gives
 $Q(rP_i)=\int rP_i\dd\mu$, and since $k\le n$,
 $\mathcal L_nr=r$. Hence
 \[
  \norm{f-\mathcal L_nf}_2
  \le\norm{f-r}_2+\norm{\mathcal L_n(f-r)}_2
- \le\sqrt V(1+\sqrt B)\norm{f-r}_\infty.
+ \le\sqrt{|\mu|}(1+\sqrt{\bar\lambda})\norm{f-r}_\infty.
 \]
 Taking the infimum proves \eqref{eq:hypererror}.
 \end{proof}
 
-For CC, $V=2$, $0\le n<N$, and one may take
+For CC, $|\mu|=2$, $0\le n<N$, and one may take
+% Source: PD-T025 CC application; PD-T684 (provisional PD-T?mz-paper-claude-01) (c)
 \begin{equation}\label{eq:Bcc}
- B_{N,n}=1+\rho_{N,n}=1+\max\{2n/N-1,0\}^2<2.
+ \bar\lambda_{N,n}=\min\Bigl\{1+\rho_{N,n},\,\frac53\Bigr\},\qquad
+ \rho_{N,n}=\max\{2n/N-1,0\}^2,
 \end{equation}
-Indeed $n\le N-1$ gives $1+\rho_{N,n}\le2-4/N+4/N^2<2-2/(\pi N)$;
-the minimum of the two earlier bounds always selects $1+\rho_{N,n}$.
+by Theorems~\ref{thm:ratio-upper} and~\ref{thm:five-thirds}; the bound $5/3$
+is the smaller one exactly when $n/N>(1+\sqrt{2/3})/2=0.9082\ldots$.
 Thus for every $0\le k\le\min(n,d_N-n)$,
 \begin{equation}\label{eq:CCerror}
  \norm{f-\mathcal L_nf}_{L^2(-1,1)}
- \le\sqrt2(1+\sqrt{B_{N,n}})E_k(f)
- \le(1+\sqrt2)\sqrt2\,E_k(f).
+ \le\sqrt2(1+\sqrt{\bar\lambda_{N,n}})E_k(f)
+ \le\Bigl(1+\sqrt{5/3}\Bigr)\sqrt2\,E_k(f),
 \end{equation}
-Using only exactness through $N$ permits $k\le\min(n,N-n)$;
-even-$N$ parity can improve that by one when $k\le n$ allows it.
+and $1+\sqrt{5/3}<2.2910$.
 For the $513$-point, degree-$511$ example, $k=1$ already gives the
-uniform factor $(1+\sqrt2)\sqrt V$ in place of the assumed
-$3\sqrt V$ factor; parity also permits $k=2$ here.
+uniform factor $(1+\sqrt{5/3})\sqrt{|\mu|}$ in place of the assumed
+$3\sqrt{|\mu|}$ factor; parity also permits $k=2$ here.
 This estimate concerns the defined quadrature hyperinterpolant. An
 inverse-Gram least-squares operator is a different construction; growth
 of $\lambda_-^{-1/2}$ does not describe the norm of $\mathcal L_n$.
 Neither the general mechanism nor the validity of An--Wu's conditional
 theorem is challenged by this CC application.
 
-\section{Signed Padua rules beyond half-exactness}\label{sec:padua}
+% Signed Padua material (old Section 6 and the Padua parts of old Section 7) moved to ../paper-sp/ (MZ-SP); see topics/padua-mz-paper-20261113/split-map.md.
+\section{Numerical illustrations and open problems}\label{sec:numerics}
 
-\subsection{The marginal compression}
+% MEASURED: PD-T026 (Table); PD-T532 (J=512 model proxy). No proof role.
+Table~\ref{tab:cc} lists extreme eigenvalues of $G_{N,N-1}$ computed in
+double precision from the generalized eigenproblem in the Chebyshev basis.
+As a consistency check on smaller cases, for $N=3,4,5,9,10,21,40,81$, each at
+$n=\lfloor N/2\rfloor,N-1,N$, this pencil and a separately assembled Legendre
+Gram matrix agree in their extreme eigenvalues to within $1.35\cdot10^{-13}$.
+The values are floating-point computations; no result of this paper depends
+on them.
 
-Let $\mathcal P_n$ denote bivariate polynomials of total degree at most $n$.
-For a construction index $N\ge2$, use the Padua support
-\begin{equation}\label{eq:padua}
- \mathcal X_N=\left\{\left(\cos\frac{j\pi}{N},
-                   \cos\frac{k\pi}{N+1}\right):
-    0\le j\le N,\ 0\le k\le N+1,\ j+k\text{ even}\right\}.
+\begin{table}[htbp]
+\centering
+\caption{Computed extreme eigenvalues of $G_{N,N-1}$ for the CC rule with
+$N+1$ points (double precision, rounded).}\label{tab:cc}
+\begin{tabular}{rrrrr}\toprule
+$N$ & $\lambda_-$ & $\lambda_+$ & $\eta_N$ & $(\log N)^2\lambda_-$\\\midrule
+40   & 0.259849025 & 1.004471121 & 0.740150975 & 3.54\\
+80   & 0.216153284 & 1.004439735 & 0.783846716 & 4.15\\
+160  & 0.182490277 & 1.004439101 & 0.817509723 & 4.70\\
+320  & 0.156015184 & 1.004437801 & 0.843984816 & 5.19\\
+640  & 0.134833488 & 1.004437222 & 0.865166512 & 5.63\\
+1280 & 0.117635156 & 1.004437035 & 0.882364844 & 6.02\\\bottomrule
+\end{tabular}
+\end{table}
+
+Two features of the table deserve comment. First, $(\log N)^2\lambda_-$ is
+still far below its limit $\pi^4/8=12.176\ldots$ at $N=1280$: the
+convergence in Theorem~\ref{thm:sharp-min} is slow, and finite tables of
+this size do not reveal the leading constant. Second, $\lambda_+$ is
+already close to $1.004437$. A floating-point Galerkin computation of the
+model quotient \eqref{eq:Lambda-edge} on the span of $\zeta_1,\dots,\zeta_{512}$
+gives $1.00443691886\ldots$ (and $1.0044369671\ldots$ on
+$\zeta_1,\dots,\zeta_{2048}$, so the value for $512$ is not converged),
+consistent with both the table and
+Proposition~\ref{prop:edge-certified}. Neither observation certifies a
+digit beyond that proposition.
+
+The following questions remain open.
+\begin{enumerate}
+\item A certified two-sided enclosure, and hence the decimal value, of
+$\Lambda_{\mathrm{edge}}$.
+\item Rates of convergence in Theorems~\ref{thm:sharp-min}
+and~\ref{thm:edge-limit} that are usable at computable $N$.
+\item An identification of the endpoint sampling operator behind
+$\Lambda_{\mathrm{edge}}$ with a classical operator whose norm can be
+computed, for instance of Toeplitz-plus-Hankel or Wiener--Hopf type.
+\end{enumerate}
+For signed Padua rules on the square, whose $x$-marginal is the
+Clenshaw--Curtis rule with doubled weights, the corresponding endpoint
+problem behaves very differently; it is treated in the companion paper \cite{MZ-SP}.
+
+\paragraph{Data and code availability}
+% Commit hash and Zenodo DOI: placeholders for AC. The archive is built (topics/padua-mz-paper-20261113/zenodo/) but not deposited; F1 of the topic audit.
+The code and data files supporting this paper are in the public repository
+\url{https://github.com/aacchhee/padua_research} (commit
+\texttt{[to be fixed at submission]}): the exact trial vector of
+Appendix~\ref{app:certificate}, the interval-arithmetic program that produces
+the enclosures there, an independent exact-rational program that recomputes
+them, their output logs, and the script that computes Table~\ref{tab:cc}. These
+files, the output of the table script and a script that re-runs and compares
+all of them form an evidence archive prepared for deposit
+(\texttt{[Zenodo DOI to be added]}). Code and data are released under the GNU
+Affero General Public License, version~3 or later. In the repository, the
+certificate programs are \path{code/P4_rayleigh.py} and
+\path{code/P4_check_grouped.py} under
+\path{topics/padua-mz-sharp-constants-20261106/}, and the table script is
+\path{tracks/mz-constants/code/reproduce.py}. All other results are proved
+analytically.
+
+\appendix
+
+\section{Proofs for the sharp endpoint constant}\label{app:sharp}
+
+Throughout this appendix $N\ge2$, $L=\log N$, $\theta_k=k\pi/N$,
+$d_k=\min(k,N-k)$, and $c_0=c_N=2$, $c_k=1$ for $0<k<N$ (the
+reciprocal endpoint factors of the cardinal formula in the proof of
+Theorem~\ref{thm:cardinal}). For nodal data $u=(u_0,\dots,u_N)$ let
+$\mathcal I_Nu\in\Pn_N$ be its interpolant, $a_k=(-1)^ku_k$, and
+$\norm u_w^2=\sum_{k=0}^Nw_k|u_k|^2$, so that
+$\norm u_w^2=Q_N(|\mathcal I_Nu|^2)$. All $L^2$ norms of functions on
+$[-1,1]$ are with respect to $\dd x$; on $(0,1)$ or $(0,\infty)$ the
+measure is written explicitly. The harmonic norm of a finitely supported
+sequence $g=(g_k)_{k\ge1}$ is $\norm g_h^2=\sum_k|g_k|^2/k$.
+
+Sections A.1 and A.2 prove Lemmas~\ref{lem:signed-remainder}
+and~\ref{lem:discrete-primitive}. Section A.3 gives Lemma~\ref{lem:endpoint-rep}
+(named Lemma A.1 by the numbering of this appendix), the representation of
+the interpolant near the endpoints that reduces both directions to those two
+lemmas. Section A.4 proves Proposition~\ref{prop:sharp-trial} (the trial
+bound) and Section A.5 the finite reverse bound \eqref{eq:sharp-finite}.
+
+\subsection{\texorpdfstring{Proof of Lemma~\ref{lem:signed-remainder}}{Proof of the signed remainder lemma}}
+
+Put $\operatorname{sinc}(x)=\sin(\pi x)/(\pi x)$, $\operatorname{sinc}(0)=1$.
+For integers $k,l$,
+\begin{equation}\label{eq:sinc-orth}
+ \int_{\R}\operatorname{sinc}(t-k)\operatorname{sinc}(t-l)\dd t=\boldsymbol1_{k=l}.
 \end{equation}
-Suppose real weights $W_{jk}$ define a rule $Q_N^\Pa$ exact on
-$\mathcal P_N$ for unnormalized Lebesgue measure $\dd x\dd y$ on the
-square. This assumption applies to the interpolatory rule obtained by
-integrating its interpolation basis or solving its exact moment equations.
-The following implication needs neither positivity of the weights nor a
-separate existence or uniqueness theorem for that construction.
-
-\begin{theorem}[Marginal and compression; \id{PD-T021}]\label{thm:padua}
-At each $x$-coordinate the total weight equals
-\begin{equation}\label{eq:marginal}
- \sum_{k:j+k\,\mathrm{even}}W_{jk}=2w_j,\qquad0\le j\le N.
-\end{equation}
-Let $G^\Pa_{N,n}$ be the real symmetric Gram matrix on $\mathcal P_n$
-in a Lebesgue-orthonormal basis. For $0\le n\le N$,
-\begin{align}
- \lamin(G^\Pa_{N,n})&\le\lambda_-(N,n),&
- \lamax(G^\Pa_{N,n})&\ge\lambda_+(N,n),\label{eq:padua-extreme}\\
- \norm{I-G^\Pa_{N,n}}_2&\ge\norm{I-G_{N,n}}_2.&&\label{eq:padua-eta}
-\end{align}
-In particular,
-$\liminf_{N\to\infty}\norm{I-G^\Pa_{N,N-1}}_2\ge1$,
-and the Padua defect at $N=512,n=511$ exceeds $3/4$.
-\end{theorem}
-\begin{proof}
-Write $a_j=\sum_kW_{jk}$. Exactness on univariate $q(x)\in\Pn_N$ gives
-$\sum_j a_jq(x_j)=2\int_{-1}^1q=\sum_j2w_jq(x_j)$.
-Taking $q=\ell_j$ proves \eqref{eq:marginal}.
-Define $Jq(x,y)=q(x)/\sqrt2$. Then
-$\int_{[-1,1]^2}(Jq)^2=\int_{-1}^1q^2$, so $J$ is an isometry from
-$\Pn_n$ into $\mathcal P_n$. The exact marginal gives for $p,q\in\Pn_n$
-\[
- Q_N^\Pa((Jp)(Jq))=\tfrac12\sum_j a_jp(x_j)q(x_j)=Q_N(pq).
-\]
-This step uses the marginal rather than cubature exactness for the product,
-whose degree can exceed $N$. In orthonormal coordinates,
-$J^*G^\Pa_{N,n}J=G_{N,n}$ and $J^*J=I$.
-The symmetric variational principle proves \eqref{eq:padua-extreme},
-and compression of $I-G^\Pa_{N,n}$ proves \eqref{eq:padua-eta}.
-No sign condition on $W_{jk}$ was used.
-The endpoint lower eigenvalue tends to zero. Therefore
-$\norm{I-G^\Pa_{N,N-1}}_2\ge1-\lambda_-(N,N-1)$ gives the stated
-liminf after taking limits on the right.
-Proposition~\ref{prop:counterexample} gives the finite consequence.
-\end{proof}
-
-\subsection{Exact density and logarithmic boundary weights}
-
-We now use the actual interpolatory Lebesgue weights, rather than an
-arbitrary degree-$N$ exact rule, and write $m=N$ to match the finite
-Padua records. Put $\theta_j=j\pi/m$, $\phi_k=k\pi/(m+1)$, and let
-$\epsilon_j,\gamma_k$ be one at interior indices and one half at the
-respective endpoints. The positive auxiliary weights
-\[
- \rho_{jk}=\frac{2\epsilon_j\gamma_k}{m(m+1)},\qquad j+k\text{ even},
-\]
-have mass one; they are distinct from the signed weights $w_{jk}$ of
-$Q_m^\Pa$. Put $c_0=1$, $c_a=2$ for $a>0$, and
-$h_a=\int_{-1}^1T_a(x)\dd x$. Thus $h_a=0$ for odd $a$ and
-$h_a=2/(1-a^2)$ for even $a$.
-
-\begin{lemma}[Integrated cardinal density; \id{PD-T101}, \id{PD-T111}]
-The signed weights satisfy $w_z=\rho_z d_m(z)$, where
-\begin{equation}\label{eq:padua-density}
- d_m(x,y)=\sum_{a+b\le m}c_ah_ac_bh_bT_a(x)T_b(y)-2h_mT_m(x).
-\end{equation}
-\end{lemma}
-\begin{proof}
-Finite cosine sums on the two Lobatto grids show that
-$\sqrt{c_ac_b}T_a(x)T_b(y)$, $a+b\le m$, are orthogonal for $\rho$,
-with squared norm one except that $(a,b)=(m,0)$ has squared norm two.
-Indeed the checkerboard sum is the full tensor sum plus its alternating
-sum. A nonzero alternating product would require combined frequencies
-at least $m$ and $m+1$, hence total degree at least $2m+1$;
-products under consideration have degree at most $2m$. In the full tensor
-sum only the highest $x$ mode has the exceptional Lobatto norm.
-Their discrete reproducing kernel consequently gives the cardinal function
-at $z=(x_j,y_k)$ as
-\[
- L_z(x,y)=\rho_z\left\{\sum_{a+b\le m}c_ac_b
- T_a(x)T_a(x_j)T_b(y)T_b(y_k)-T_m(x)T_m(x_j)\right\}.
-\]
-There are exactly $\dim\mathcal P_m$ orthogonal functions and nodes,
-so this kernel is cardinal. Integrating it proves
-\eqref{eq:padua-density}; the constant $y$ factor in the exceptional
-term has integral two.
-\end{proof}
-
-\begin{theorem}[Boundary weight limit; \id{PD-T295}]\label{thm:padua-weights}
-Let $e_0=1/2$ and $e_j=1$ for $j\ge1$. For fixed nonnegative integers
-$j,k$ with $j+k$ even,
-\begin{equation}\label{eq:padua-weight-limit}
- \lim_{\substack{m\to\infty\\m\text{ even}}}
- \frac{m^4w_{jk}}{\log m}=-16e_je_k(-1)^j.
-\end{equation}
-Moreover, for every even $m\ge4$ and every retained node,
-\begin{equation}\label{eq:padua-weight-majorant}
- |w_{jk}|\le\frac{4096}{m^4}
-       \bigl\{(1+j)(1+k)+\log(m+1)\bigr\}.
-\end{equation}
-The indices in this majorant are distances from the corner $(1,1)$;
-the fixed-index limit is not asserted uniformly across the grid.
-\end{theorem}
-\begin{proof}
-Write $m=2R$, $t_0=2$, $t_a=-4/(4a^2-1)$ for $a\ge1$, and
-\[
- S_R(t,s)=\sum_{a+b\le R}t_at_b\cos(2at)\cos(2bs).
-\]
-Equation~\eqref{eq:padua-density} gives
-\begin{equation}\label{eq:padua-weight-exact}
- w_{jk}=\frac{2\epsilon_j\gamma_k}{m(m+1)}
- \{S_R(\theta_j,\phi_k)-2h_m\cos(m\theta_j)\}.
-\end{equation}
-The absolutely convergent cosine series
-$f(t)=\pi\sin t=\sum_{a\ge0}t_a\cos(2at)$ on $[0,\pi]$
-follows by integrating its coefficients. Equality follows from uniqueness
-of cosine coefficients, or from density of polynomials in $\cos t$.
-Let $T_R(t)=\sum_{a>R}t_a\cos(2at)$ and
-\[
- V_R(t,s)=\sum_{\substack{1\le a,b\le R\\a+b>R}}
-               t_at_b\cos(2at)\cos(2bs).
-\]
-Absolute convergence gives
-\begin{equation}\label{eq:padua-triangle}
- S_R=f(t)f(s)-f(t)T_R(s)-f(s)T_R(t)+T_R(t)T_R(s)-V_R(t,s).
-\end{equation}
-Telescoping yields $|T_R|\le2/(2R+1)\le R^{-1}$.
-Since $|t_a|\le4/(3a^2)$, split the omitted triangle into $a\le R/2$,
-$b\le R/2$, and $a,b>R/2$. In the first strip there are at most $a$
-choices of $b$, all greater than $R/2$, so it contributes at most
-$64H_{\lfloor R/2\rfloor}/(9R^2)$; the second contributes the same.
-The last part contributes at most $256/(9R^2)$. Hence
-\[
- |V_R|\le64(1+\log R)/R^2.
-\]
-Using $\sin\theta_j\le\pi j/m$, $\sin\phi_k\le\pi k/m$ in
-\eqref{eq:padua-triangle}, the bracket in
-\eqref{eq:padua-weight-exact} has absolute value at most
-\[
- m^{-2}\{\pi^4jk+2\pi^2(j+k)+260+256\log R+16/3\}.
-\]
-Multiplication by $2\epsilon_j\gamma_k/[m(m+1)]\le2/m^2$
-proves \eqref{eq:padua-weight-majorant}.
-
-For fixed $j,k$, the terms other than $V_R$ in
-\eqref{eq:padua-triangle} are $O_{j,k}(R^{-2})$. To evaluate $V_R$,
-fix $0<\delta<1/2$. In its strip $a\le\delta R$, $R-a<b\le R$,
-\[
- R^2t_b\cos(2b\phi_k)=-(-1)^k+O_k(\delta)+o_R(1),
- \quad \cos(2a\theta_j)=1+O_j(\delta^2),
-\]
-uniformly, while
-$\sum_{a\le\delta R}a t_a=-\log R+O_\delta(1)$.
-Thus this strip contributes $(-1)^k+O_{j,k}(\delta)+o_R(1)$
-to $R^2V_R/\log R$. The strip $b\le\delta R$ contributes
-$(-1)^j$ in the same way. The middle has absolute value at most
-$16/(9\delta^4R^2)$, hence gives zero after this normalization.
-Taking $R\to\infty$ and then $\delta\downarrow0$ gives
-\[
- R^2V_R/\log R\longrightarrow(-1)^j+(-1)^k.
-\]
-Substitution into \eqref{eq:padua-weight-exact}, using
-$(-1)^j=(-1)^k$ on the checkerboard and
-$\epsilon_j\gamma_k=e_je_k$ eventually, proves
-\eqref{eq:padua-weight-limit}.
-\end{proof}
-
-% Source: PD-T377; topics/padua-mz-cleanup-20261105/theory/odd-weight-asymptotic.md
-\begin{proposition}[Odd construction degrees]\label{prop:padua-odd-weights}
-The fixed-index limit \eqref{eq:padua-weight-limit} also holds as $m$
-tends to infinity through odd integers. For every odd $m\ge5$, the
-whole-grid bound \eqref{eq:padua-weight-majorant} holds with $8192$
-in place of $4096$.
-\end{proposition}
-\begin{proof}
-Put $R=(m-1)/2$. Formula~\eqref{eq:padua-density} still gives
-\eqref{eq:padua-weight-exact} with this $R$, and the exceptional term
-is zero since $h_m=0$. The decomposition
-\eqref{eq:padua-triangle} and its bounds hold for every integer $R\ge2$,
-independently of the relation between $m$ and $R$. Now $m/R\le5/2$,
-so
-\[
- m^2|S_R(\theta_j,\phi_k)|\le\pi^4jk+
- \frac{5\pi^2}2(j+k)+\frac{25}4+400(1+\log R).
-\]
-Multiplication by $2\epsilon_j\gamma_k/[m(m+1)]\le2/m^2$
-proves the asserted majorant. In the thin-corner limit,
-$2R\theta_j=j\pi(m-1)/m\to j\pi$ and
-$2R\phi_k=k\pi(m-1)/(m+1)\to k\pi$.
-Thus the two strips again give $(-1)^j+(-1)^k$ after normalization
-by $R^2/\log R$, with the same negligible middle. Since
-$m/R\to2$, \eqref{eq:padua-weight-limit} follows. No coordinate
-interchange in the cardinal density is used.
-\end{proof}
-
-\subsection{Two signed carriers and the exact ratio threshold}
-
-Define the degree-$r$ Fej\'er polynomial by
-\begin{equation}\label{eq:padua-fejer}
- F_r(\cos t)=\frac1{r+1}
-  \left(\frac{\sin((r+1)t/2)}{\sin(t/2)}\right)^2
- =1+2\sum_{\ell=1}^r\left(1-\frac\ell{r+1}\right)\cos(\ell t).
-\end{equation}
-Its value at $t=0$ is $r+1$. All norms in this subsection use
-unnormalized Lebesgue measure.
-
-\begin{theorem}[Signed countersequences; \id{PD-N105}, \id{PD-N106}]\label{thm:padua-carriers}
-Fix $a,b>0$ and put $r=\lfloor am\rfloor$, $s=\lfloor bm\rfloor$.
-Along even $m$, if $a+b<1/2$, the polynomials
-\[
- p_m^-(x,y)=T_{m/2}(x)F_r(x)F_s(y)
-\]
-have degree at most $m-1$ eventually and satisfy
-\begin{equation}\label{eq:padua-negative}
- Q_m^\Pa((p_m^-)^2)/\log m\longrightarrow-16ab/9.
-\end{equation}
-If $2a+b<1/2$, the polynomials
-\[
- p_m^+(x,y)=\tfrac12\{T_{m/2-r}(x)-T_{m/2+r}(x)\}F_r(x)F_s(y)
-\]
-also have degree at most $m-1$ eventually and satisfy
-\begin{equation}\label{eq:padua-positive}
- Q_m^\Pa((p_m^+)^2)/\log m\longrightarrow8ab/9.
-\end{equation}
-Both sequences are nonzero and have squared norm at most $C_0^2$,
-where $C_0=(1+\pi^4)/2$. Consequently
-\[
- \lamin(G^\Pa_{m,m-1})\longrightarrow-\infty,\qquad
- \lamax(G^\Pa_{m,m-1})\longrightarrow+\infty
- \quad(m\text{ even}).
-\]
-\end{theorem}
-\begin{proof}
-The degrees are $m/2+r+s$ and $m/2+2r+s$ respectively, so the
-strict parameter inequalities give admissibility. The second carrier
-factor at $x=\cos t$ equals $\sin(mt/2)\sin(rt)$ and has modulus
-at most one, as does $T_{m/2}$. For $L=r+1$,
-\[
- |F_r(\cos t)|\le\min\{L,\pi^2/(Lt^2)\}.
-\]
-Splitting its squared integral at $1/L$ and using $\sin t\le t$
-gives $\|F_r\|_2^2\le(1+\pi^4)/2=C_0$. Product integration proves
-the asserted norm bound; the nonzero leading coefficients prove
-nonvanishing.
-
-For a mesh denominator $M$ and endpoint halfweights $c_j$, elementary
-cosine sums give, for every cosine polynomial $h$ of degree $<M$,
-\begin{equation}\label{eq:padua-trapezoid}
- \sum_{j=0}^M c_jh(j\pi/M)=M\widehat h_0,\qquad
- \sum_{j=0}^M c_j(-1)^jh(j\pi/M)=0.
-\end{equation}
-The constant cosine coefficient of $F_r^2$ is
-\[
- D_r=1+2\sum_{\ell=1}^r(1-\ell/(r+1))^2
-     =1+\frac{r(2r+1)}{3(r+1)},\qquad D_r/r\to2/3.
-\]
-For the negative carrier, the $x$ profile
-$U_{m,j}=\cos^2(j\pi/2)[F_r(\cos\theta_j)/m]^2$
-vanishes at odd $j$ and has weighted sum $D_r/(2m)\to a/3$.
-The $y$ profile $V_{m,k}=[F_s(\cos\phi_k)/m]^2$ has weighted sum
-$(m+1)D_s/m^2\to2b/3$ and alternating sum zero. These identities use
-$2r<m$, $2s<m+1$, which hold eventually.
-
-For the positive carrier replace the $x$ profile by
-\[
- U^+_{m,j}=\sin^2(j\pi/2)\sin^2(r\theta_j)
-                      [F_r(\cos\theta_j)/m]^2.
-\]
-It vanishes for even $j$. The polynomial
-$h_r(\cos t)=\sin^2(rt)F_r(\cos t)^2$ has degree $4r<m$ and constant
-coefficient $D_r/2-1/[2(r+1)^2]$: the coefficient of $T_{2r}$ in
-$F_r^2$ is $2/(r+1)^2$. By \eqref{eq:padua-trapezoid},
-$\sum_j\epsilon_jU^+_{m,j}\to a/6$.
-
-Here each profile converges at fixed indices, and the geometric bound
-for $F_r$ gives $|F_r(\cos\theta_j)|/m\le C_a(1+j)^{-2}$
-on the entire mesh, with the analogous $y$ bound. Together with
-\eqref{eq:padua-weight-majorant}, the normalized signed summand is
-bounded by a constant times $(1+j)^{-3}(1+k)^{-3}$. Extend arrays by
-zero outside their grids and apply dominated convergence. The finite
-profile identities therefore also identify their infinite limiting
-sums. For the negative carrier only even $j$ and even $k$ remain,
-so \eqref{eq:padua-weight-limit} gives
-$-16(a/3)(b/3)=-16ab/9$. For the positive carrier only odd $j$ and
-odd $k$ remain, giving $16(a/6)(b/3)=8ab/9$.
-This proves \eqref{eq:padua-negative}--\eqref{eq:padua-positive}.
-The continuous norms are positive and bounded above by $C_0^2$;
-the variational principle then gives the two divergences. No finite
-threshold is inferred from these limits.
-\end{proof}
-
-% Source: PD-T378; topics/padua-mz-cleanup-20261105/theory/odd-carriers.md
-\begin{proposition}[Odd-degree carriers]\label{prop:padua-odd-carriers}
-For odd $m$ put $M=m+1$, $r=\lfloor am\rfloor$, $s=\lfloor bm\rfloor$.
-Under the respective parameter conditions of
-Theorem~\ref{thm:padua-carriers}, replace its polynomials by
-\[
- \widetilde p_m^-(x,y)=T_{M/2}(y)F_r(y)F_s(x),
-\]
-\[
- \widetilde p_m^+(x,y)=\tfrac12
-    \{T_{M/2-r}(y)-T_{M/2+r}(y)\}F_r(y)F_s(x).
-\]
-Their degrees are at most $m-1$ eventually, their squared norms are
-positive and at most $C_0^2$, and their signed-energy limits divided
-by $\log m$ are respectively $-16ab/9$ and $8ab/9$.
-Consequently both spectral divergences of
-Theorem~\ref{thm:padua-carriers} hold over all integers $m\to\infty$.
-\end{proposition}
-\begin{proof}
-The even mesh denominator is now $M$ in the $y$ coordinate. The
-carrier values there are exactly $\cos(k\pi/2)$ and
-$\sin(k\pi/2)\sin(r\phi_k)$. Their degrees are
-$M/2+r+s$ and $M/2+2r+s$; the extra half in $M/2=m/2+1/2$ is
-absorbed by the strict parameter inequalities. Polynomiality,
-nonvanishing and the norm bounds follow just as before.
-
-On the $y$ mesh the weighted profile sums are
-$MD_r/(2m^2)\to a/3$ for the negative carrier, supported on even $k$,
-and $M\{D_r/2-1/[2(r+1)^2]\}/(2m^2)\to a/6$ for the positive
-carrier, supported on odd $k$. The unmodulated $x$ envelope has
-weighted sum $D_s/m\to2b/3$ and alternating sum zero, so each of
-its parity sums tends to $b/3$. These identities follow from
-\eqref{eq:padua-trapezoid}, since $2s<m$ and respectively $2r<M$
-or $4r<M$ eventually. The same profile decay and
-Proposition~\ref{prop:padua-odd-weights} justify dominated convergence
-in the complete signed sums. Even-even samples give
-$-16(b/3)(a/3)$, and odd-odd samples give $16(b/3)(a/6)$.
-The positive bounded norm and variational principle give both
-odd-degree divergences. Combining the two parity subsequences proves
-the all-integer conclusions.
-\end{proof}
-
-% Sources: PD-N107 and PD-T378; topics/padua-mz-cleanup-20261105/theory/odd-carriers.md
-\begin{corollary}[Sharp half-degree threshold]\label{cor:padua-ratio}
-For $0\le\theta\le1/2$ and $n\le\theta m$, exactness gives
-$G^\Pa_{m,n}=I$. For every fixed $1/2<\theta<1$,
-\[
- \lamin(G^\Pa_{m,\lfloor\theta m\rfloor})\to-\infty,\qquad
- \lamax(G^\Pa_{m,\lfloor\theta m\rfloor})\to+\infty
- \quad(m\to\infty\text{ through all integers}).
-\]
-Thus there is no uniform strong signed MZ constant $\eta_\theta<1$
-above half-exactness.
-\end{corollary}
-\begin{proof}
-For the first statement $2n\le m$. For the second set
-$a=b=(\theta-1/2)/4$ in the two carriers. Their even-m degrees are
-bounded respectively by $(1/2+2a)m<\theta m$ and
-$(1/2+3a)m<\theta m$; on odd $m$ add $1/2$ to each bound.
-This overhead is harmless eventually because both inequalities are strict.
-The even-m proof and its odd-m extension therefore apply.
-\end{proof}
-
-The positivity and upper-threshold assertions formerly posed in
-\id{PD-T028}, \id{PD-T110} and \id{PD-T116} are refuted for this signed
-rule. Their retained registry status \texttt{OPEN} does not override
-the binding \texttt{REJECTED: refuted} dispositions. The conclusions do
-not apply to positive Chebyshev Padua cubature or tensor CC rules.
-
-% Source: PD-T379; topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md
-\begin{proposition}[Normalized one-sided growth bounds]\label{prop:padua-growth}
-Put
-\[
- g(u)=\left(\frac{\sin(u/2)}{u/2}\right)^4,\quad g(0)=1,
- \qquad A=\int_0^\infty u g(u)\dd u=4\log2,
-\]
-\[
- J_-(a)=\int_0^\infty u g(u)\cos^2(u/(2a))\dd u,\qquad
- J_+(a)=\int_0^\infty u g(u)\sin^2(u/(2a))\sin^2u\dd u.
-\]
-These are finite and positive. The carriers on either parity have
-squared continuous norms tending to $A J_-(a)$ and $A J_+(a)$.
-In particular, over all integers $m$,
-\begin{equation}\label{eq:padua-growth-bounds}
- \limsup_{m\to\infty}\frac{\lamin(G^\Pa_{m,m-1})}{\log m}
- \le-\frac1{9A J_-(1/4)},\qquad
- \liminf_{m\to\infty}\frac{\lamax(G^\Pa_{m,m-1})}{\log m}
- \ge\frac1{36A J_+(1/8)}.
-\end{equation}
-No matching bound, sharp constant, or existence of an extremal spectral
-limit is asserted.
-\end{proposition}
-\begin{proof}
-Let $L=r+1$ and substitute $u=Lt$ in the continuous envelope norm.
-The exact identity
-\[
- F_r(\cos(u/L))/L=
- \left\{\frac{\sin(u/2)}{L\sin(u/(2L))}\right\}^2
-\]
-gives a squared-norm integrand tending to $u g(u)$ and bounded by
-$u\min(1,\pi^4/u^4)$, extended by zero beyond $L\pi$.
-The carrier mesh denominator is $D_m=m$ for even $m$ and $D_m=m+1$
-for odd $m$. As $D_m/L\to1/a$ and $r/L\to1$, its factors tend to
-$\cos(u/(2a))$ and $\sin(u/(2a))\sin u$. They have modulus at most
-one. Dominated convergence and product integration prove the norm
-limits. The integrands are continuous and positive on nonempty
-intervals, so their integrals are positive.
-For completeness, $u g(u)=2(3-4\cos u+\cos2u)/u^3$.
-Two integrations by parts give
-\[
- A=4\int_0^\infty\frac{\cos u-\cos2u}{u}\dd u=4\log2.
-\]
-The last identity follows by inserting $e^{-\varepsilon u}$,
-differentiating with respect to the positive cosine frequency,
-integrating back, and letting $\varepsilon\downarrow0$;
-Dirichlet tail estimates identify the ordinary improper integral.
-The cancellations at zero and the decay at infinity justify the
-integrations by parts.
-
-The signed-energy limits divided by these norm limits give carrier
-Rayleigh coefficients $-16ab/[9A J_-(a)]$ and $8ab/[9A J_+(a)]$.
-The variational principle applies on each parity. Fix $a=1/4$ and
-let $b\uparrow1/4$ through admissible values for the negative
-carrier; fix $a=1/8$ and let $b\uparrow1/4$ for the positive one.
-Their denominators are independent of $b>0$, which gives
-\eqref{eq:padua-growth-bounds}. No boundary-value packet is assumed
-admissible.
-\end{proof}
-
-The raw energy suprema are $1/9$ and $1/36$, obtained on the closures
-of $a+b<1/2$ and $2a+b<1/2$ respectively. They are not normalized
-spectral constants: the nonunit continuous packet norms must be
-divided out as above. Nor is the chosen parameter pair claimed to
-optimize the normalized packet quotient.
-
-\subsection{A uniform signed hyperinterpolation norm}
-
-For a Lebesgue-orthonormal basis $P_1,\ldots,P_d$ of $\mathcal P_n$,
-define the direct signed coefficient operator
-\[
- H_{m,n}f=\sum_{i=1}^dQ_m^\Pa(fP_i)P_i.
-\]
-It is distinct from inverse-Gram least squares. Euclidean duality gives
-\begin{equation}\label{eq:padua-L1-norm}
- \|H_{m,n}\|_{C\to L^2}
- =\sup_{\substack{p\in\mathcal P_n\\\|p\|_2=1}}
-          \sum_z|w_z|\,|p(z)|.
-\end{equation}
-Indeed the inequality in one direction follows by duality and the
-triangle inequality. Equality follows by assigning the signs of
-$w_zp(z)$ as bounded continuous data at the finitely many distinct nodes.
-
-\begin{theorem}[Uniform coefficient norm; \id{PD-T297}]\label{thm:padua-operator}
-For every $m\ge2$ and $0\le n<m$,
-\[
- 2\le\|H_{m,n}\|_{C\to L^2}\le C_{\Pa}<30,\qquad
- C_{\Pa}=\frac{4\sqrt2\,\pi}{\pi-4/3}
-       +\frac{68}{3}\left(\frac12+\frac1\pi\right)
-       =28.3763348311\ldots.
-\]
-\end{theorem}
-\begin{proof}
-Let $g(x)=\pi\sqrt{1-x^2}$, $R=\lfloor m/2\rfloor$, and $M=2R+1$.
-The absolutely convergent coefficients $t_r$ used above have
-$\sum|t_r|=4$. Since $\sum_{j=0}^q t_j=2/(2q+1)$, summing the triangle first in
-its second coordinate gives
-\[
- A_R=\frac4M-8\sum_{i=1}^R
-       \frac1{(2i-1)(2i+1)(M-2i)}.
-\]
-Partial fractions, followed by the sums over $2i-1$, $2i+1$ and $M-2i$,
-give
-\[
- A_R:=\sum_{r+s\le R}t_rt_s
- =\frac8{M(M+1)}-\frac{16}{M^2-1}
-              \sum_{i=1}^R\frac1{2i-1}\ge-\frac4M.
-\]
-For the last inequality use
-$\sum_{i=1}^R(2i-1)^{-1}\le(R+2)/3\le R(R+2)/M$.
-Changing signed coefficients to absolute values affects only the two
-nonzero coordinate axes. Their total change is $16-16/M$; hence
-\[
- \sum_{r+s>R}|t_rt_s|=16/M-A_R\le20/M\le20/m.
-\]
-The exceptional term of \eqref{eq:padua-density} vanishes for odd $m$;
-for even $m$, $2|h_m|=4/(m^2-1)\le8/(3m)$. Consequently
-\begin{equation}\label{eq:padua-density-tail}
- \|d_m-g\otimes g\|_\infty\le68/(3m).
+For $k=l$ this is $\int_{\R}\sin^2(\pi t)/(\pi t)^2\dd t=1$, which follows
+from $\int_0^\infty\sin(bu)\,u^{-1}\dd u=\pi/2$ ($b>0$) after one integration
+by parts. For $k\ne l$ the integer shifts give
+$\operatorname{sinc}(t-k)\operatorname{sinc}(t-l)=(-1)^{k+l}\sin^2(\pi t)/[\pi^2(t-k)(t-l)]$,
+and partial fractions reduce the integral to differences of
+$\int_{-R}^R\sin^2(\pi t)(t-k)^{-1}\dd t$, which tend to zero as
+$R\to\infty$: after the shift $t\mapsto t+k$ the integrand is odd on
+$[-R,R]$ and the two end intervals of length $|k|$ contribute $O_k(1/R)$.
+Since the product is absolutely integrable, its integral is the limit,
+zero. Consequently, for every finite sequence $(h_k)$,
+\begin{equation}\label{eq:sinc-isometry}
+ \int_{\R}\Bigl|\sum_kh_k\operatorname{sinc}(t-k)\Bigr|^2\dd t=\sum_k|h_k|^2 .
 \end{equation}
 
-Put $\dd\nu=\dd x/(\pi\sqrt{1-x^2})$ and $\kappa=1/2+1/\pi$.
-For a univariate polynomial $q$ of degree $\le m-1$, the Legendre
-expansion gives $\|q\|_\infty^2\le m^2\|q\|_2^2/2$.
-In $\pi^{-1}\int_0^\pi q(\cos t)^2\dd t$, the middle interval
-$[1/m,\pi-1/m]$ contributes at most $(m/2)\|q\|_2^2$ because
-$\sin t\ge2/(\pi m)$; the two remaining intervals contribute at most
-$(m/\pi)\|q\|_2^2$. Thus
-\[
- \int q^2\dd\nu\le\kappa m\int q^2\dd x.
-\]
-Apply this in both coordinates. Discrete cosine orthogonality below
-the exceptional mode gives
-$\sum_z\rho_zp(z)^2=\int p^2\dd(\nu\otimes\nu)$
-for $p\in\mathcal P_{m-1}$. Since $\sum\rho_z=1$,
-\begin{equation}\label{eq:padua-raw-L1}
- \sum_z\rho_z|p(z)|\le\kappa m\|p\|_2.
+For $j\in\mathbb Z$ let $\delta=2^j$, $I_j=[\delta,2\delta)$ and
+$\mathcal J_j=\{k\ge1:\delta/2<k<4\delta\}$; each $k\ge1$ lies in at most
+three sets $\mathcal J_j$ (we use the weaker bound four below, which only
+enlarges the constants). For $t\in I_j$ split $\sum_kg_k\Phi_k(t)$ into
+$k\in\mathcal J_j$ and $k\notin\mathcal J_j$. Since
+$t^2/[k(t^2-k^2)]=1/k+\tfrac12[1/(t-k)-1/(t+k)]$, one has exactly
+\begin{equation}\label{eq:Phi-split}
+ \Phi_k(t)=\frac1{2(t-k)}+\Psi_k(t),\qquad
+ \Psi_k(t)=-\frac1{2(t+k)}+\frac{\boldsymbol1_{k>t}}k .
 \end{equation}
 
-Let $v_z=\rho_zg(x_z)g(y_z)\ge0$, and put $\alpha=\pi-4/3$.
-The CC interior weight estimate used in
-Lemma~\ref{lem:weight-comparison}, with its displayed error estimate,
-gives $w_{N,j}^{\CC}\ge\alpha\sin(j\pi/N)/N$.
-The bound has zero right side at endpoints as well. Hence
+\emph{The pole part.} As $\sin(\pi t)=(-1)^k\sin(\pi(t-k))$,
 \[
- v_{jk}\le\frac{2\pi^2}{\alpha^2}w_{m,j}^{\CC}w_{m+1,k}^{\CC}.
+ \sin(\pi t)\sum_{k\in\mathcal J_j}\frac{g_k}{2(t-k)}
+ =\frac\pi2\sum_{k\in\mathcal J_j}(-1)^kg_k\operatorname{sinc}(t-k).
 \]
-Enlarge the sum to the positive tensor grid and apply the CC upper
-bound twice to obtain
-$\sum_zv_zp(z)^2\le8\pi^2\|p\|_2^2/\alpha^2$.
-Reflection on the odd one of the two meshes cancels the alternating
-sine sum, while
-$\sum_{j=1}^{N-1}\sin(j\pi/N)=\cot(\pi/(2N))$.
-It follows that
-\[
- \sum_zv_z=\frac{\pi^2}{m(m+1)}
- \cot\frac\pi{2m}\cot\frac\pi{2(m+1)}\le4.
-\]
+Since $t\ge\delta$ on $I_j$ and $k<4\delta$ on $\mathcal J_j$,
+\eqref{eq:sinc-isometry} bounds its $L^2(I_j,\dd t/t)$ norm squared by
+$(\pi^2/4\delta)\sum_{\mathcal J_j}|g_k|^2\le\pi^2\sum_{\mathcal J_j}|g_k|^2/k$.
+Summing over $j$, the pole part has norm at most $2\pi<7$ times
+$\norm g_h$. This is the only place where the signs of the cardinal
+kernel matter, and they are kept.
+
+\emph{The comparable scales.} For $k\in\mathcal J_j$ and $t\in I_j$ we
+have $k>t/4$, so $|\Psi_k(t)|\le1/(2t)+4/t=9/(2t)$. A nonempty
+$\mathcal J_j$ forces $\delta\ge1/2$, whence
+$\sum_{k\in\mathcal J_j}k\le8\delta^2+2\delta\le12\delta^2\le12t^2$.
 Cauchy--Schwarz gives
-$\sum_zv_z|p(z)|\le4\sqrt2\pi\|p\|_2/\alpha$.
-Finally \eqref{eq:padua-density-tail} implies
-$|w_z|\le v_z+[68/(3m)]\rho_z$. Combine this with
-\eqref{eq:padua-raw-L1} and \eqref{eq:padua-L1-norm} for the upper
-bound. Exactness reproduces the constant one, whose $L^2$ norm on
-the square is two, proving the lower bound.
+\[
+ \Bigl|\sum_{k\in\mathcal J_j}g_k\Psi_k(t)\Bigr|^2
+ \le\Bigl(\sum_{\mathcal J_j}\frac{|g_k|^2}k\Bigr)
+ \Bigl(\sum_{\mathcal J_j}k|\Psi_k(t)|^2\Bigr)
+ \le243\sum_{\mathcal J_j}\frac{|g_k|^2}k .
+\]
+Integrating over $I_j$ against $\dd t/t$ (mass $\log2$) and summing with
+the fourfold overlap bounds this part by $(972\log2)^{1/2}\norm g_h<32\norm g_h$.
+
+\emph{The separated scales.} For $k\notin\mathcal J_j$ either
+$k\le t/2$ or $k\ge2t$. The kernel $\mathcal K(t,k)=k\Phi_k(t)$ equals
+$k^2/(t^2-k^2)$ for $k<t$ and $t^2/(t^2-k^2)$ for $k>t$, so
+\[
+ |\mathcal K(t,k)|\le\tfrac43(k/t)^2\ (k\le t/2),\qquad
+ |\mathcal K(t,k)|\le\tfrac43(t/k)^2\ (k\ge2t).
+\]
+Its weighted row sums satisfy $\sum_{k\le t/2}|\mathcal K(t,k)|/k
+\le(4/3t^2)\sum_{k\le t/2}k\le1/3$ (the sum is empty unless $t\ge2$),
+and, with $n=\lceil2t\rceil$,
+$\sum_{k\ge2t}|\mathcal K(t,k)|/k\le\tfrac43t^2(n^{-3}+\tfrac12n^{-2})
+\le\tfrac1{6t}+\tfrac16\le\tfrac12$ for $t\ge1/2$, while for $t<1/2$
+it is at most $\tfrac43t^2\sum_kk^{-3}<1/2$. Its weighted column
+integrals satisfy
+$\int_0^\infty|\mathcal K(t,k)|\,\dd t/t\le\tfrac43
+(\int_0^{k/2}(t/k)^2\dd t/t+\int_{2k}^\infty(k/t)^2\dd t/t)=\tfrac13$.
+By the weighted Schur test (Lemma~\ref{lem:schur}, with the measure
+$\dd t/t$ on $t$, the measure $1/k$ on the index $k$, and
+$\varphi=\psi=1$), the row sums, at most $1/3+1/2$, and the column integrals,
+equal to $1/3$ at most, show that this part has norm at most one.
+
+The three parts have norms below $7$, $32$ and $1$; multiplication by
+$\sin(\pi t)$ does not increase them. Hence the norm of $\mathcal E$ is at
+most $40$, which is the lemma. \qed
+
+\subsection{\texorpdfstring{Proof of Lemma~\ref{lem:discrete-primitive}}{Proof of the discrete primitive lemma}}
+
+Put $H_0=0$ and let $f=g_m$ on $(H_{m-1},H_m]$, $1\le m\le J$, so that
+$\norm f_{L^2(0,H_J)}^2=\norm g_h^2$. Its primitive
+$F(x)=\int_0^xf$ satisfies $F(H_m)=S_m:=\sum_{k\le m}g_k/k$. Let $\bar S$
+equal $S_m$ on $(H_{m-1},H_m]$. On that interval
+$\bar S-F=g_m(1/m-(x-H_{m-1}))$, so $\int|\bar S-F|^2=|g_m|^2/(3m^3)$ and
+$\norm{\bar S-F}\le\norm g_h$. Lemma~\ref{lem:volterra}, rescaled to an
+interval of length $H_J$, gives $\norm F\le(2H_J/\pi)\norm g_h$. Hence
+\begin{equation}\label{eq:Sm-sum}
+ \sum_{m=1}^J\frac{|S_m|^2}m=\norm{\bar S}^2\le\alpha_J^2\norm g_h^2 .
+\end{equation}
+For integers $m\ge1$, since $\int_m^{m+1}(\sin^2(\pi t)-\tfrac12)\dd t=0$,
+\[
+ \int_m^{m+1}\sin^2(\pi t)\frac{\dd t}t
+ =\frac12\log\Bigl(1+\frac1m\Bigr)
+ +\int_m^{m+1}\Bigl(\sin^2(\pi t)-\frac12\Bigr)\Bigl(\frac1t-\frac1m\Bigr)\dd t
+ \le\frac1{2m}+\frac1{4m^2}.
+\]
+Cauchy--Schwarz and $H_m\le1+\log m\le2\sqrt m$ give
+$|S_m|^2\le H_m\norm g_h^2\le2\sqrt m\,\norm g_h^2$, so
+$\sum_{m\ge1}|S_m|^2/m^2\le2\zeta(3/2)\norm g_h^2\le6\norm g_h^2$.
+On $(m,m+1)$ one has $S(t)=S_m$, and $S=0$ on $(0,1)$. Enlarging the
+last partial cell to a full cell and summing,
+\[
+ \int_0^T\sin^2(\pi t)|S(t)|^2\frac{\dd t}t
+ \le\sum_{m=1}^J|S_m|^2\Bigl(\frac1{2m}+\frac1{4m^2}\Bigr)
+ \le\Bigl(\frac{\alpha_J^2}2+\frac32\Bigr)\norm g_h^2. \qquad\qed
+\]
+
+\subsection{The endpoint representation of the interpolant}
+
+\begin{lemma}[Endpoint representation of the interpolant]\label{lem:endpoint-rep}
+Let $N\ge2$.
+\begin{enumerate}
+\item[(a)] $w_k\ge(1+d_k)/N^2$ for $0\le k\le N$; for $0<k<N$,
+$w_k\ge\sin\theta_k/N$ and $|w_k-(\pi/N)\sin\theta_k|\le3/N^2$. Moreover
+$\sum_{k=0}^Nw_k^{-1}\le2N^2(L+1)$.
+\item[(b)] For $0\le t\le N/2$ and $\theta=\pi t/N$,
+\[
+ (\mathcal I_Nu)(\cos\theta)=\Upsilon_u(t)+r_u(\theta),\qquad
+ \Upsilon_u(t)=\frac{2t\sin(\pi t)}\pi\sum_{k=0}^N\frac{a_k}{c_k(t^2-k^2)},
+\]
+with poles removed by continuity, and
+$|r_u(\theta)|\le2\sqrt{2(L+1)}\,\norm u_w$.
+\item[(c)] Let $1\le k^\ast<N/4$ and let $u$ vanish outside
+$\{1,\dots,k^\ast\}\cup\{N-k^\ast,\dots,N-1\}$. Put $g_k=ka_k/N$ and
+$g^\flat_k=ka_{N-k}/N$ for $1\le k\le k^\ast$ ($g,g^\flat=0$ otherwise), and
+let $S$, $S^\flat$ be their partial sums $\sum_{k<t}g_k/k$. Define
+$P_u$ on $[-1,1]$ by
+\[
+ P_u(\cos\theta)=\frac{2N\sin(\pi t)}{\pi t}S(t),\qquad
+ P_u(-\cos\theta)=(-1)^N\frac{2N\sin(\pi t)}{\pi t}S^\flat(t),
+\]
+for $\theta=\pi t/N\in[0,\pi/2]$. Then
+$\norm g_h^2+\norm{g^\flat}_h^2\le\norm u_w^2$ and
+\[
+ \norm{\mathcal I_Nu-P_u}_{L^2(-1,1)}\le\bigl(80+6\sqrt{L+1}\bigr)\norm u_w .
+\]
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(a) The first two bounds are Lemma~\ref{lem:weight-comparison}. Its proof
+gives $|w_k-(\pi/N)\sin\theta_k|\le2/(N^2-1)$ for even $N$ and $2/N^2$
+for odd $N$, both at most $3/N^2$. Each value of $d_k$ occurs at most
+twice, so $\sum_kw_k^{-1}\le2N^2H_{\lfloor N/2\rfloor+1}\le2N^2(L+1)$.
+
+(b) By the cardinal formula in the proof of Theorem~\ref{thm:cardinal},
+\[
+ (\mathcal I_Nu)(\cos\theta)=\frac{\sin(N\theta)}N\sum_{k=0}^N\frac{a_k}{c_k}
+ \cdot\frac{-\sin\theta}{\cos\theta-\cos\theta_k} .
+\]
+With $e(z)=\cot(z/2)-2/z$, extended by $e(0)=0$,
+\[
+ \frac{-\sin\theta}{\cos\theta-\cos\phi}
+ =\frac12\Bigl[\cot\frac{\theta-\phi}2+\cot\frac{\theta+\phi}2\Bigr]
+ =\frac{2\theta}{\theta^2-\phi^2}+\frac{e(\theta-\phi)+e(\theta+\phi)}2 .
+\]
+For $\theta=\pi t/N$ and $\phi=\theta_k$ the first term contributes exactly
+$\Upsilon_u(t)$. The function $e$ is odd and nonincreasing on $(0,2\pi)$, since
+$e'(z)=2/z^2-\tfrac12\csc^2(z/2)\le0$; hence $|e|\le1+4/(3\pi)<2$ on
+$[-\pi,3\pi/2]$, which contains $\theta\pm\theta_k$ for $\theta\le\pi/2$.
+Thus $|r_u|\le(2/N)\sum_k|u_k|/c_k\le(2/N)(\sum_kw_k^{-1})^{1/2}\norm u_w$,
+and (a) gives the bound.
+
+(c) Since $k\le k^\ast<N/4$, (a) gives $w_k\ge k/N^2$ and
+$w_{N-k}\ge k/N^2$, so
+$\norm g_h^2+\norm{g^\flat}_h^2=\sum_{k\le k^\ast}k(|a_k|^2+|a_{N-k}|^2)/N^2
+\le\norm u_w^2$. Consider $x\in[0,1]$, i.e.\ $0\le t\le N/2$, and split
+$u=u^{+}+u^{-}$ into its parts near $x=1$ and near $x=-1$.
+For the near part, $a_k=Ng_k/k$ and
+$t/(t^2-k^2)=t^{-1}\,t^2/(t^2-k^2)$, so by \eqref{eq:Phi-split}
+\[
+ \Upsilon_{u^{+}}(t)=\frac{2N\sin(\pi t)}{\pi t}\,S(t)
+ +\frac{2N}{\pi t}(\mathcal Eg)(t) .
+\]
+On $[0,1]$ the measure is $\dd x=\sin\theta\dd\theta\le\pi^2t\dd t/N^2$.
+Hence, by Lemma~\ref{lem:signed-remainder}, the second term has
+$L^2(0,1)$ norm at most
+$(4\int_0^\infty|\mathcal Eg|^2\dd t/t)^{1/2}\le80\norm g_h$.
+For the far part, $k\ge N-k^\ast\ge3N/4$ and $t\le N/2$ give
+$k^2-t^2\ge5N^2/16$, so
+$|2t/(\pi(t^2-k^2))|\le3t/N^2$ and, by (a),
+\[
+ |\Upsilon_{u^{-}}(t)|\le\frac{3t}{N^2}\sum_k|u^{-}_k|
+ \le\frac{3t}N\sqrt{2(L+1)}\,\norm{u^{-}}_w .
+\]
+Its squared $L^2(0,1)$ norm is at most
+$\int_0^{N/2}18(L+1)\norm{u^{-}}_w^2\,t^2N^{-2}\cdot\pi^2tN^{-2}\dd t
+=\tfrac{9\pi^2}{32}(L+1)\norm{u^{-}}_w^2<3(L+1)\norm{u^{-}}_w^2$.
+The interval $[-1,0]$ is treated by the reflection
+$(\mathcal I_Nu)(-x)=(\mathcal I_Nu^R)(x)$, $u^R_k=u_{N-k}$, which preserves
+$\norm\cdot_w$ and turns $a_{N-k}$ into $(-1)^N$ times the corresponding
+coefficient of $u^R$. On the whole interval the signed terms contribute at most
+$80(\norm g_h^2+\norm{g^\flat}_h^2)^{1/2}\le80\norm u_w$, the far parts at most
+$\sqrt{3(L+1)}\norm u_w\le2\sqrt{L+1}\norm u_w$, and the remainders of (b)
+at most $(2\cdot8(L+1))^{1/2}\norm u_w=4\sqrt{L+1}\norm u_w$.
 \end{proof}
 
-Uniformity of this operator norm does not require signed Gram positivity
-or an upper signed MZ inequality. Reproduction is guaranteed on
-$\mathcal P_k$ when $0\le k\le\min(n,m-n)$. At $n=m-1$ this only
-supplies $k\le1$; the uniform norm alone is not a fixed-function
-convergence theorem at that endpoint.
+\subsection{\texorpdfstring{Proof of Proposition~\ref{prop:sharp-trial}}{Proof of the trial proposition}}
 
-\section{Finite observations and unresolved sharpenings}\label{sec:numerics}
+Fix $0<y_-<y_+<1$ with $\operatorname{supp}f\subset(y_-,y_+)$. The nonzero
+values $u_k$, $k<N/2$, have $N^{y_-}<k<N^{y_+}$; for large $N$ we have
+$N^{y_+}<k^\ast:=\lfloor N/L\rfloor<N/4$, so Lemma~\ref{lem:endpoint-rep}(c)
+applies. Here $a_k=(-1)^ku_k=(N/k)f(\log k/L)$ and
+$a_{N-k}=(-1)^{N-k}(-1)^{N-1}u_k=-a_k$, so $g_k=f(\log k/L)$ and
+$g^\flat_k=-g_k$. The top Chebyshev
+coefficient of $\mathcal I_Nu$ is $N^{-1}\sum_ka_k/c_k$ by \eqref{eq:topcoeff}, which vanishes
+because $a_{N-k}=-a_k$; hence $p_N=\mathcal I_Nu\in\Pn_{N-1}$.
 
-% Companion MEASURED record: PD-T380; topics/padua-mz-cleanup-20261105/theory/finite-measurements.md (campaign rows not reproduced here).
-Tables~\ref{tab:cc}--\ref{tab:padua} reproduce bounded float64 observations
-(\id{PD-T026}), not asymptotic proofs. The producer runs with Python,
-NumPy, and SciPy and pins its code and supplied input hashes in the evidence
-manifest. An independent Astra agent separately reran the bounded suite.
-On the checked CC cases $N=3,4,5,9,10,21,40,81$, each at
-$n=\lfloor N/2\rfloor,N-1,N$, the generalized Chebyshev pencil and a
-separately assembled Legendre Gram matrix agreed in extreme eigenvalues
-within $1.35\cdot10^{-13}$. This validates only the recorded numerical
-scope. The analytic theorems above do not use this comparison as proof.
+\emph{Discrete energy.} By Lemma~\ref{lem:endpoint-rep}(a) and
+$\sin z=z(1+O(z^2))$, $w_k=(\pi^2k/N^2)(1+O(N^{2y_+-2}+N^{-y_-}))$ uniformly on
+the support. Hence
+\[
+ Q_N(p_N^2)=2\pi^2\sum_{k}\frac{f(\log k/L)^2}k\,(1+o(1))
+ =2\pi^2L\norm f^2(1+o(1)),
+\]
+where the last step compares the sum with
+$\int_1^\infty f(\log u/L)^2u^{-1}\dd u=L\norm f^2$; the function
+$u\mapsto f(\log u/L)^2/u$ vanishes for $u<N^{y_-}$ and has total variation
+$O_f(N^{-y_-})$ on $[N^{y_-},\infty)$.
 
-\begin{table}[htbp]
-\centering
-\caption{Measured CC spectra on $\Pn_{N-1}$, using $N+1$ points.
-Values are rounded from the reproduced output.}\label{tab:cc}
-\begin{tabular}{rccc}\toprule
-$N$ & $\lambda_-$ & $\lambda_+$ & $\eta$\\\midrule
-40   & .259849025 & 1.004471121 & .740150975\\
-80   & .216153284 & 1.004439735 & .783846716\\
-160  & .182490277 & 1.004439101 & .817509723\\
-320  & .156015184 & 1.004437801 & .843984816\\
-640  & .134833488 & 1.004437222 & .865166512\\
-1280 & .117635156 & 1.004437035 & .882364844\\\bottomrule
-\end{tabular}
-\end{table}
+\emph{Continuous mass.} By the same comparison,
+$|S(t)-LF(\log t/L)|\le C_fN^{-y_-}$ for all $t$, where $F=Vf$ is extended by
+$F(y_+)$ beyond $y_+$. Fix $0<\delta<1/2$ and let
+$I_\delta=[N^\delta,N^{1-\delta}]$. There $\theta\le\pi N^{-\delta}$ and
+$\sin\theta\dd\theta\ge(1-\pi^2N^{-2\delta}/6)\pi^2t\dd t/N^2$, so
+\begin{align*}
+ \int_0^1|P_u|^2\dd x&\ge(1-o(1))\,4\int_{I_\delta}\sin^2(\pi t)|S(t)|^2\frac{\dd t}t\\
+ &\ge(1-o(1))\,4L^2\int_{I_\delta}\sin^2(\pi t)F\Bigl(\frac{\log t}L\Bigr)^2\frac{\dd t}t-O_f(L^2N^{-y_-}).
+\end{align*}
+Write $\sin^2(\pi t)=\tfrac12-\tfrac12\cos(2\pi t)$. The constant part gives
+$\tfrac12L\int_\delta^{1-\delta}F^2$ after the substitution $y=\log t/L$. For the cosine part
+integrate once by parts: $\phi(t)=F(\log t/L)^2/t$ satisfies
+$|\phi|\le C_f/t$ and $|\phi'|\le C_f/t^2$, so it contributes $O_f(N^{-\delta})$.
+Thus $\int_0^1|P_u|^2\ge2L^3\int_\delta^{1-\delta}F^2\,(1-o(1))$, and the
+same holds on $[-1,0]$ since $|g^\flat|=|g|$. By
+Lemma~\ref{lem:endpoint-rep}(c) and the energy estimate,
+the difference $p_N-P_u$ has norm $O_f(L)=o(L^{3/2})$. Hence
+\[
+ \liminf_{N\to\infty}\frac{\norm{p_N}^2}{L^3}\ge4\int_\delta^{1-\delta}F^2 ,
+\]
+and we let $\delta\downarrow0$.
+In particular $p_N\ne0$ for large $N$.
 
-\begin{table}[htbp]
-\centering
-\caption{Measured signed Padua spectra on total degree $n=m-1$;
-$m$ is the Padua construction degree in this table.}\label{tab:padua}
-\begin{tabular}{rrcccc}\toprule
-$m$ & $n$ & $\lamin(G^\Pa_{m,n})$ & $\lamax(G^\Pa_{m,n})$ & $\eta$ & negative weights\\\midrule
-10 & 9  & .356191383 & 1.634856615 & .643808617 & 2\\
-20 & 19 & .272233005 & 1.723313732 & .727766995 & 2\\
-30 & 29 & .236705530 & 1.757929856 & .763294470 & 2\\
-40 & 39 & .214817029 & 1.778088624 & .785182971 & 2\\\bottomrule
-\end{tabular}
-\end{table}
+\emph{Conclusion.} For every admissible $f$ the variational principle gives
+\[
+ \limsup_{N\to\infty}L^2\lambda_-(N,N-1)\le\frac{\pi^2}2\,\frac{\norm f^2}{\norm{Vf}^2}.
+\]
+Choose admissible $f_j\to\cos(\pi y/2)$ in $L^2(0,1)$; as
+$V$ is bounded, the quotients tend to $\pi^4/8$ by Lemma~\ref{lem:volterra}.
+Every estimate holds for all large integers $N$, so the conclusion holds
+along both parities. \qed
 
-The separately checked Padua marginals at construction degrees $10,20,31$
-(covering odd and even degrees)
-obeyed $\max_j|a_j-2w_j|<8.73\cdot10^{-16}$.
-The two negative weights in each listed Padua experiment underscore the
-need to retain a signed-form argument. Finite positive eigenvalues alone
-give no all-degree positive-definiteness theorem.
+\subsection{\texorpdfstring{Proof of \eqref{eq:sharp-finite}}{Proof of the finite reverse bound}}
 
-The accepted exact rational-pencil computations give the following
-strict finite brackets, independently reconstructed with exact arithmetic
-(\id{PD-T298}, \id{PD-T299}):
-\begin{center}
-\begin{tabular}{rccc}\toprule
-$m$ & $n$ & $\lamin(G^\Pa_{m,n})$ & $\lamax(G^\Pa_{m,n})$\\\midrule
-60 & 59 & $(0.188593,0.188594)$ & $(1.802011,1.802012)$\\
-80 & 79 & $(0.172730,0.172731)$ & $(1.816497,1.816498)$\\\bottomrule
-\end{tabular}
-\end{center}
-Here the decimal endpoints are exact rationals. In the product-Chebyshev
-basis let $H$ and $Q$ be the exact continuous and quadrature Gram
-matrices. At each proposed endpoint $t$, an integer congruence transforms
-a positive multiple of $Q-tH$ into a symmetric strictly diagonally
-dominant matrix. Turning off its off-diagonal entries preserves
-nonsingularity, so its diagonal signs give its inertia. Nonsingularity
-also proves the proposed square congruence matrix invertible.
-Since $H$ is positive definite, negative inertia counts eigenvalues below
-$t$: the exact counts are $0,1$ at the minimum endpoints and $d-1,d$ at
-the maximum endpoints. Both producer and independent reconstruction
-accepted these checks at each of the two degrees. This is a
-computer-assisted finite result under the recorded GMP/FLINT and checker
-trust; the repository provides the code and short receipts. It asserts
-neither positivity between untested degrees nor an all-degree bound.
-The finite brackets are compatible with the later divergence in
-Theorem~\ref{thm:padua-carriers}.
+Let $L\ge16$, $k_0=\lceil L^2\rceil$ and $k^\ast=\lfloor N/L\rfloor$; then
+$1<k_0\le k^\ast<N/4$ (e.g.\ $e^L/L^3$ increases for $L\ge3$ and
+$e^{16}>4\cdot16^3$). Partition the nodes into the \emph{good layers}
+$k_0\le d_k\le k^\ast$, the \emph{microscopic layers} $d_k<k_0$ (including
+$k=0,N$), and the \emph{bulk} $d_k>k^\ast$, and split $u$ accordingly. Since
+interpolation is linear and $\norm{u^{\mathrm{group}}}_w\le\norm u_w$, it
+suffices to bound each group.
 
-% Source: PD-T376; topics/padua-mz-cleanup-20261105/theory/finite-indefiniteness.md
-\begin{proposition}[Finite negative witnesses]\label{prop:padua-finite-negative}
-For each row there is a nonzero rational-coefficient polynomial
-$p\in\mathcal P_{m-1}$ whose signed Rayleigh quotient belongs to the
-displayed strict rational interval:
-\begin{center}
-\begin{tabular}{rrc}\toprule
-$m$ & $n$ & $Q_m^\Pa(p^2)/\int_{[-1,1]^2}p^2$\\\midrule
-1101 & 1100 & $(-35067/10^6,-35066/10^6)$\\
-1240 & 1239 & $(-273/10^7,-270/10^7)$\\
-1600 & 1599 & $(-23415/10^6,-23414/10^6)$\\\bottomrule
-\end{tabular}
-\end{center}
-Consequently the signed Gram form on $\mathcal P_{m-1}$ is indefinite
-at each displayed construction degree.
-This computer-assisted result was accepted at its stated scope in
-Claude cleanup audit~01.
-\end{proposition}
-\begin{proof}[Certificate reduction and trust]
-The stored witness consists of dyadic coefficients multiplying
-unnormalized Legendre products, hence is an exact rational polynomial.
-Its exact continuous squared norm is computed by Legendre orthogonality
-and is positive. The producer encloses its sampled signed energy using
-outward Arb tables, FLINT exact integer/rational arithmetic for
-fixed-point tensor contractions and norms, and explicit table-error bounds. The weight density is exactly
-\eqref{eq:padua-density}, including its exceptional mode.
-For $m=1600$ its accepted energy enclosure is
-$[-0.0234144\pm4.95\cdot10^{-8}]$, with norm enclosed near
-$1.00000000000000031419$. The same producer and independent-check
-construction at $m=1101$ and $1240$ gives the other displayed intervals.
-A separate checker evaluates the same pinned witness through outward
-node tables and floating tensor contractions with analytic forward-error
-bounds; it obtains a strictly negative enclosure independently.
-This latter path assumes the recorded IEEE binary64 rounding and
-standard BLAS dot-product error model. The exact witness, producer,
-checker, receipts and computational assumptions are identified in the
-repository evidence record. Only the small evidence receipts are
-committed; the witness arrays and exact norm files are staged separately,
-with external cold-storage delivery pending. No eigensolver accuracy is
-an acceptance premise. The variational principle gives a negative Gram direction,
-whereas the constant one has positive energy $Q_m^\Pa(1)=4$.
-Thus each form is indefinite. The displayed intervals bound trial
-Rayleigh quotients, not minimum eigenvalues. The degree $m=1240$ is
-the smallest even construction degree certified negative in this
-campaign; this is not a proof of positivity at every smaller degree
-or an identification of the first mathematical crossing.
+\emph{Good layers.} For $k_0\le k\le k^\ast$, $z=\pi k/N\le\pi/L$, so
+Lemma~\ref{lem:endpoint-rep}(a) gives
+$N^2w_k/k\ge\pi^2\sin z/z-3/k\ge\pi^2(1-\pi^2/(6L^2))-3/L^2\ge\pi^2(1-2/L^2)$,
+using $9<\pi^2<10$; the reflected layer is the same. Hence
+$\norm g_h^2+\norm{g^\flat}_h^2\le\norm u_w^2/(\pi^2(1-2/L^2))$. By
+$\sin\theta\dd\theta\le\pi^2t\dd t/N^2$ and Lemma~\ref{lem:discrete-primitive}
+with $T=N/2$,
+\[
+ \norm{P_u}^2\le4\int_0^{N/2}\sin^2(\pi t)\bigl(|S|^2+|S^\flat|^2\bigr)\frac{\dd t}t
+ \le(2\alpha_J^2+6)\bigl(\norm g_h^2+\norm{g^\flat}_h^2\bigr)
+ \le\sigma_N^2\norm u_w^2 .
+\]
+With Lemma~\ref{lem:endpoint-rep}(c),
+$\norm{\mathcal I_Nu}\le(\sigma_N+80+6\sqrt{L+1})\norm u_w$.
+
+\emph{Microscopic layers.} For interior indices $1\le d_k<k_0$, the bound
+$\norm g_h^2+\norm{g^\flat}_h^2\le\norm u_w^2$ of
+Lemma~\ref{lem:endpoint-rep}(c) and Cauchy--Schwarz give
+$|S(t)|^2\le H_{k_0}\norm g_h^2$, with $S=0$ for $t<1$. Since
+$\int_1^{N/2}\dd t/t\le L$, $\norm{P_u}\le2\sqrt{LH_{k_0}}\norm u_w$, and the
+interpolant has norm at most $(2\sqrt{LH_{k_0}}+80+6\sqrt{L+1})\norm u_w$.
+For the endpoint $k=0$, $c_0=2$ and the near term of $\Upsilon_u$ is
+$a_0\sin(\pi t)/(\pi t)$; its squared $L^2(0,1)$ norm is at most
+$|a_0|^2N^{-2}\int_0^{N/2}\sin^2(\pi t)\dd t/t\le(L+\pi^2/2)|u_0|^2N^{-2}
+\le(L+5)w_0|u_0|^2$ (use $|\sin\pi t|\le\pi t$ on $(0,1)$ and $w_0\ge N^{-2}$).
+The far term and the remainder obey the bounds in the proof of
+Lemma~\ref{lem:endpoint-rep}(c), since $c_k\ge1$. With the reflected
+endpoint, the two endpoint columns contribute at most
+$(\sqrt{L+5}+6\sqrt{L+1})\norm u_w\le10\sqrt{L+5}\,\norm u_w$. Altogether the
+microscopic layers contribute at most
+$(2\sqrt{LH_{k_0}}+80+20\sqrt{L+5})\norm u_w$.
+
+\emph{Bulk.} For $u$ supported in $k^\ast<k<N-k^\ast$, discrete orthogonality of
+$\cos(l\theta_k)$ under the trapezoidal rule with endpoint half weights gives
+$\int_0^\pi|(\mathcal I_Nu)(\cos\theta)|^2\dd\theta=(\pi/N)\sum_k|u_k|^2/c_k-
+(\pi/2)|b_N|^2$, where $b_N$ is the top Chebyshev coefficient \eqref{eq:topcoeff}. As
+$\dd x=\sin\theta\dd\theta\le\dd\theta$ and, for bulk indices,
+$w_k\ge\sin\theta_k/N\ge2d_k/N^2>2/(LN)$,
+\[
+ \norm{\mathcal I_Nu}^2\le\frac\pi N\sum_k|u_k|^2\le\frac{\pi L}2\norm u_w^2 .
+\]
+
+\emph{Assembly.} Adding the three group bounds, the coefficient of
+$\norm u_w$ is at most $\sigma_N$ plus
+$160+2\sqrt{LH_{k_0}}+6\sqrt{L+1}+20\sqrt{L+5}+\sqrt{\pi L/2}\le\tau_N$.
+Applied to $u_k=p(x_k)$ for $p\in\Pn_N$, this is \eqref{eq:sharp-finite}. \qed
+
+\section{Proofs for the endpoint upper limit}\label{app:edge}
+
+Throughout, $\operatorname{sinc}_1(z)=\sin z/z$ with value one at zero
+(the unscaled sinc, distinct from the $\operatorname{sinc}$ of
+Appendix~\ref{app:sharp}), $\varpi_j=\pi j$, and the microscopic variable is
+$\xi=N\theta$. We use the matrices $M,R,Y,Z$ of
+Theorem~\ref{thm:five-thirds} on the indices $0,\dots,N-1$, written
+$M_N,R_N,Y_N,Z_N$ when the dependence on $N$ matters.
+
+Section B.1 proves Proposition~\ref{prop:fixed-trial} by explicit profiles of
+the trial polynomials $p_{N,j}$. Section B.2 extends the model forms from
+$\mathcal V_0$ to their form domain $\mathcal V$ and proves the continuum
+identity $\mathsf Q=\mathsf M+\tfrac12(\mathsf Z-\mathsf Y)$, the limit of
+$R=M-Y+Z$. Section B.3 proves Theorem~\ref{thm:edge-limit}: a maximizing
+sequence yields weak endpoint profiles $g^\pm$; $Z_N$ converges because it is
+compact, and $Y_N$ is controlled by Fatou's lemma because it is positive. The
+dictionary between matrices and model forms is as follows. For
+$g\in\mathcal V_0$ and $p=\sum_ju_jp_{N,j}$, the coefficient vector of $Np$ is
+$a_i=g(i/N)$ for $i\ge1$ and $a_0=g(0)/2$ (see the proof of
+Lemma~\ref{lem:continuum}), and as $N\to\infty$
+\begin{gather*}
+ a^TM_Na\to\mathsf M(g),\qquad
+ a^TR_Na\to\mathsf Q(g),\\
+ a^TY_Na\to\tfrac12\mathsf Y(g),\qquad
+ a^TZ_Na\to\tfrac12\mathsf Z(g),
+\end{gather*}
+where the factor $1/2$ in the last two limits records that equal-parity pairs
+are half of all pairs.
+
+\subsection{\texorpdfstring{Proof of Proposition~\ref{prop:fixed-trial}}{Proof of the fixed-trial proposition}}\label{app:edge-fixed}
+
+\emph{Exact profiles.} By the cardinal formula of
+Theorem~\ref{thm:cardinal},
+\[
+ \ell_0(\cos\theta)=\frac{\sin(N\theta)\cot(\theta/2)}{2N},\qquad
+ \ell_j(\cos\theta)=\frac{(-1)^j\sin\theta\sin(N\theta)}
+ {2N\sin\frac{\theta+\theta_j}2\sin\frac{\theta-\theta_j}2}.
+\]
+Using $\sin\theta=2\sin\frac\theta2\cos\frac\theta2$ and
+$\sin\frac{\theta+\theta_j}2\sin\frac{\theta-\theta_j}2
+=\sin^2\frac\theta2-\sin^2\frac{\theta_j}2$, one finds
+\[
+ p_{N,j}(\cos\theta)=\frac{(-1)^j\sin(N\theta)\cos\frac\theta2\,\sin^2\frac{\theta_j}2}
+ {N\sin\frac{\theta+\theta_j}2\sin\frac{\theta-\theta_j}2\sin\frac\theta2}.
+\]
+At $\theta=\xi/N$ this is the exact factorization
+\begin{equation}\label{eq:pNj-factor}
+ p_{N,j}(\cos(\xi/N))=\chi_j(\xi)\,\varphi_{N,j}(\xi),\qquad
+ \varphi_{N,j}(\xi)=\frac{\operatorname{sinc}_1^2\bigl(\frac{\varpi_j}{2N}\bigr)
+   \cos\frac\xi{2N}}
+  {\operatorname{sinc}_1\bigl(\frac{\xi+\varpi_j}{2N}\bigr)
+   \operatorname{sinc}_1\bigl(\frac{\xi-\varpi_j}{2N}\bigr)
+   \operatorname{sinc}_1\bigl(\frac\xi{2N}\bigr)} .
+\end{equation}
+For fixed $\xi$, $\varphi_{N,j}(\xi)\to1$. If $N\ge2j$ and
+$0\le\xi\le N\pi$, the three arguments in the denominator have modulus at
+most $3\pi/4$, $\pi/2$ and $\pi/2$, so the denominator is at least
+$(2\sqrt2/(3\pi))(2/\pi)^2$ and
+$0\le\varphi_{N,j}\le3\pi^3/(8\sqrt2)<9$.
+
+\emph{Continuous mass.} The substitution $x=\cos(\xi/N)$ gives
+\[
+ N^2\int_{-1}^1p^2=\int_0^{N\pi}\xi\operatorname{sinc}_1(\xi/N)
+ \Bigl(\sum_ju_j\chi_j(\xi)\varphi_{N,j}(\xi)\Bigr)^2\dd\xi .
+\]
+From $\chi_j(\xi)=2\int_0^1[\cos(\varpi_js)-(-1)^j]\cos(\xi s)\dd s$ we get
+$|\chi_j|\le4$, and from \eqref{eq:chi}, $|\chi_j(\xi)|\le3\varpi_j^2/\xi^3$ for
+$\xi\ge2\varpi_j$. Hence the integrand is dominated by the integrable function
+$81\,\xi(\sum_j|u_j||\chi_j|)^2$, and dominated convergence gives the
+limit $\mathsf M(g)$.
+
+\emph{Discrete energy.} The nodal values of $p_{N,j}$ are $1$ at $x_j$,
+$-2(-1)^j$ at $x_0$ and zero elsewhere, so
+$N^2Q_N(p^2)=\sum_jN^2w_ju_j^2+4N^2w_0(\sum_j(-1)^ju_j)^2$. The endpoint
+weight satisfies $|N^2w_0-1|\le1/(N^2-1)$. For $j\ge1$ write
+$b=2\pi j$ and $w_j=(2/N)W_N(\theta_j)$ with $W_N$ of
+Lemma~\ref{lem:identities}. For odd $N=2q+1$, \eqref{eq:telescope} gives
+\[
+ NW_N(\theta_j)=1+\sum_{r=1}^q\frac{2N}{4r^2-1}\Bigl(1-\cos\frac{br}N\Bigr),
+\]
+a Riemann sum for $1+\int_0^{1/2}F(x)\dd x$ with
+$F(x)=(1-\cos bx)/(2x^2)$: indeed $0\le F\le b^2/4$,
+$|F'|\le b^3/12$, and the summands differ from $F(r/N)/N$ by at most
+$b^2/[4N(4r^2-1)]$. The even case is the same with an additional top term
+$O(1/N)$. Integration by parts gives
+$1+\int_0^{1/2}F=(-1)^j+\pi j\operatorname{Si}(\pi j)$, so $N^2w_j\to\omega_j$
+for both parities. Hence $N^2Q_N(p^2)\to\mathsf Q(g)$.
+
+\emph{Positivity and the bounds.} If $\mathsf M(g)=0$, then
+$\sum_ju_j\chi_j\equiv0$, and sampling at $\pi k$ gives $u=0$. Applying
+Theorem~\ref{thm:five-thirds} to $p\in\Pn_{N-1}$ and letting
+$N\to\infty$ gives $\mathsf Q\le\frac53\mathsf M$ on $\mathcal V_0$, so
+$\Lambda_{\mathrm{edge}}\le5/3$. Since every $p$ above lies in
+$\Pn_{N-1}$, $\lambda_+(N,N-1)\ge N^2Q_N(p^2)/(N^2\int p^2)$, and letting
+$N\to\infty$ and then taking the supremum over $g$ gives
+$\liminf\lambda_+(N,N-1)\ge\Lambda_{\mathrm{edge}}$.
+
+For $\Lambda_{\mathrm{edge}}\ge1$, take $g=\zeta_j$, whose quotient is
+$(\omega_j+4)/\mathsf M(\zeta_j)$. As $j\to\infty$,
+$\omega_j/\varpi_j\to\pi$ by $\operatorname{Si}(x)\to\pi/2$. For the mass, put
+$\xi=\varpi_j+v$; on $|v|\le \varpi_j/2$,
+$\xi\chi_j(\xi)^2=4\varpi_j^4\sin^2v/[\xi(\xi+\varpi_j)^2v^2]$, whose ratio to
+$\varpi_j\sin^2v/v^2$ is bounded and tends to one for fixed $v$. Outside this
+interval the mass is $o(\varpi_j)$: on $\xi\le \varpi_j/2$ use
+$|\chi_j(\xi)|\le C\min(1,1/\xi)$ (mass $O(\log \varpi_j)$), and on
+$\xi\ge3\varpi_j/2$ use $|\chi_j|\le C\varpi_j^2/\xi^3$ (mass $O(1)$). Dominated
+convergence gives $\mathsf M(\zeta_j)/\varpi_j\to\int_{\R}(\sin v/v)^2\dd v=\pi$.
+Hence the quotients tend to one. \qed
+
+\subsection{The form domain and the continuum identity}\label{app:edge-continuum}
+
+Let $\mathcal V=\{g\in L^2(0,1):\mathsf M(g)<\infty\}$ and define
+\[
+ \mathsf Y(g)=\int_0^\infty y\Bigl|\int_0^1g(s)e^{-(1-s)y}\dd s\Bigr|^2\dd y,\qquad
+ \mathsf Z(g)=\int_0^1\!\!\int_0^1z(s+r)g(s)g(r)\dd s\dd r,
+\]
+with $z(v)=\max(v,2-v)^{-2}$ on $[0,2]$, so that $0<z\le1$.
+
+\begin{lemma}[Density of the core]\label{lem:core-dense}
+$\mathcal V_0$ is dense in $\mathcal V$ for the norm
+$(\norm g_{L^2}^2+\mathsf M(g))^{1/2}$.
+\end{lemma}
+
+\begin{proof}
+Extend $g\in\mathcal V$ evenly to $G(s)=g(|s|)$ on $(-1,1)$, zero outside.
+Its Fourier transform is $2\widehat g$, so $\mathsf M(g)$ is one eighth of
+the squared $L^2(|\xi|\dd\xi)$ norm of $\widehat G$. For $0<r<1$ the dilate
+$G(s/r)$ has transform $r\widehat G(r\xi)$; dilation is an isometry of
+$L^2(|\xi|\dd\xi)$ and strongly continuous there (check it on continuous
+functions supported in compact annuli, then approximate), and also strongly
+continuous in $L^2$. Convolving the dilate with an even smooth mollifier
+supported inside $(-1,1)$ multiplies $\widehat G$ by a function bounded by
+one that tends to one pointwise as the support shrinks, so dominated
+convergence gives approximation in both norms by even smooth functions
+vanishing near $\pm1$. On $[0,1]$ such a function has a cosine series
+$\sum_{j\ge0}b_j\cos(\pi js)$ with rapidly decreasing coefficients; since
+it vanishes at $s=1$, it equals $\sum_{j\ge1}b_j[\cos(\pi js)-(-1)^j]$, and
+the partial sums converge in $C^2[0,1]$. For a $C^2$ difference $h$ with
+$h(1)=0$, two integrations by parts give
+$|\widehat h(\xi)|\le\norm h_1$ and
+$|\widehat h(\xi)|\le(|h'(0)|+|h'(1)|+\norm{h''}_1)\xi^{-2}$, so
+$\mathsf M(h)\to0$.
 \end{proof}
 
-Several sharper questions remain separate from the proved comparisons.
-First, neither existence nor value of
-$\lim_{N\to\infty}(\log N)^2\lambda_-(N,N-1)$ is proved
-(\id{PD-T020}). Second, the apparent upper limit near $1.004437$,
-its existence and exact value, and a uniform endpoint bound $B<2$ are
-open (\id{PD-T027}). Table~\ref{tab:cc} stops at $N=1280$;
-the supplied $N=20480$ output has not been reproduced and supplies no
-claim here. Third, for the signed Padua rule, Theorem~\ref{thm:padua-carriers}
-refutes the universal positivity and upper-threshold conjectures and the
-proposed positive endpoint orders and convergence of the defect to one.
-% OPEN sharp-growth target: PD-T381; topics/padua-mz-cleanup-20261105/theory/sharp-growth-open.md
-The sharp growth constants and effective onset estimates remain separate
-quantitative questions. The present odd-degree extension completes the
-qualitative parity classification; Proposition~\ref{prop:padua-growth}
-gives only one-sided normalized logarithmic bounds. The analytic carriers
-give no explicit onset. Proposition~\ref{prop:padua-finite-negative}
-supplies a separate finite certificate, without claiming the first crossing.
-Sharp direct-operator
-norms and endpoint fixed-function convergence also remain separate.
-These mathematical questions are distinct from historical priority and
-the review of the present manuscript integration.
+\begin{lemma}[Continuum identity]\label{lem:continuum}
+The forms $\mathsf Q$ and $\mathsf Y$ are finite and continuous on
+$\mathcal V$; $\mathsf M(g)\ge\norm g_{L^2}^2$, $|\mathsf Z(g)|\le\mathsf M(g)$,
+$\mathsf Y(g)\le3\mathsf M(g)$, and for every $g\in\mathcal V$,
+\begin{equation}\label{eq:continuum}
+ \mathsf Q(g)=\mathsf M(g)+\tfrac12\bigl[\mathsf Z(g)-\mathsf Y(g)\bigr],
+ \qquad
+ \tfrac12\bigl[\mathsf Z(g)-\mathsf Y(g)\bigr]\le(\Lambda_{\mathrm{edge}}-1)\mathsf M(g).
+\end{equation}
+Moreover $\Lambda_{\mathrm{edge}}\le3/2$.
+\end{lemma}
 
-\paragraph{Reproducibility and claim identification.}
-The accompanying README gives exact compilation and numerical commands,
-artifact hashes, and links to the theory and evidence. The final
-\id{PD-T}/\id{PD-N} identifiers in theorem headings refer to the durable
-repository claims; bibliography keys use the final \id{LIT} allocation.
-These identifiers do not confer publication or audit readiness. Analytic
-proofs of the central CC and Padua statements have been included here;
-no private manuscript is a mathematical dependency.
+\begin{proof}
+Let $g=\sum_ju_j\zeta_j\in\mathcal V_0$ and $p=\sum_ju_jp_{N,j}$. The
+Chebyshev coefficients of $\ell_k$ are $(2\gamma_k/N)\gamma_i\cos(i\theta_k)$
+(proof of Lemma~\ref{lem:identities}), so $Np=\sum_{i<N}a_iT_i$ with
+$a_i=g(i/N)$ for $i\ge1$ and $a_0=g(0)/2$. Thus
+$a^TM_Na=N^2\int p^2\to\mathsf M(g)$ and $a^TR_Na=N^2Q_N(p^2)\to\mathsf Q(g)$
+by Proposition~\ref{prop:fixed-trial}. The rescaled entries
+$N^2(Z_N)_{ij}=[\max(s,2-s)^2-N^{-2}]^{-1}$, $s=(i+j)/N$, converge uniformly
+to $z$ on equal-parity pairs, which form half of all pairs; hence
+$a^TZ_Na\to\frac12\mathsf Z(g)$. Similarly
+$N^2(Y_N)_{ij}=[(u+v)^2-N^{-2}]^{-1}$ with $u=1-i/N$, $v=1-j/N\ge1/N$,
+and $(u+v)^2-N^{-2}\ge\frac34(u+v)^2$. As $g(1)=g'(1)=0$, $|g(s)|\le C(1-s)^2$,
+so the weighted kernel $g(1-u)g(1-v)/(u+v)^2$ is bounded and vanishes at the
+corner; Riemann sums then give
+$a^TY_Na\to\frac12\int\!\!\int g(s)g(r)(2-s-r)^{-2}=\frac12\mathsf Y(g)$, by
+$\int_0^\infty ye^{-cy}\dd y=c^{-2}$. The row $i=0$ changes these sums by
+$O(1/N)$. The identity $R=M-Y+Z$ gives \eqref{eq:continuum} on
+$\mathcal V_0$.
 
-\bibliographystyle{plainnat}
+Lemma~\ref{lem:floor} gives $a^TM_Na\ge N^{-1}\sum_ia_i^2\to\norm g^2$, so
+$\mathsf M\ge\norm g^2\ge|\mathsf Z|$ on $\mathcal V_0$. Since
+$\mathsf Q\ge0$, \eqref{eq:continuum} gives $\mathsf Y\le2\mathsf M+\mathsf Z
+\le3\mathsf M$; also $\mathsf Q\le\Lambda_{\mathrm{edge}}\mathsf M$. Each form
+is continuous for the norm of Lemma~\ref{lem:core-dense}; by that lemma they
+extend continuously to $\mathcal V$, and the extensions are the displayed
+integrals (for $\mathsf Y$: $L^2$ convergence gives pointwise convergence of
+the Laplace transforms, and the limit in $L^2(y\dd y)$ agrees; for $\mathsf Q$:
+$\widehat g$ converges pointwise, and the samples converge in the weighted
+sequence space). The relations extend to $\mathcal V$. Finally
+$\mathsf Y\ge0$ and $\mathsf Z\le\mathsf M$ give $\mathsf Q\le\frac32\mathsf M$.
+\end{proof}
+
+The second relation in \eqref{eq:continuum} restates
+$\mathsf Q\le\Lambda_{\mathrm{edge}}\mathsf M$, the definition
+\eqref{eq:Lambda-edge}, extended to $\mathcal V$ by continuity.
+
+\subsection{\texorpdfstring{Proof of Theorem~\ref{thm:edge-limit}}{Proof of the endpoint limit theorem}}\label{app:edge-limit}
+
+By Proposition~\ref{prop:fixed-trial} it suffices to show that
+$\limsup_N\lambda_+(N,N-1)$ is at most $\Lambda_{\mathrm{edge}}$. Let $\Lambda^*$ be a
+subsequential limit; it is finite by Theorem~\ref{thm:five-thirds}. If
+$\Lambda^*\le1$ there is nothing to prove, since $\Lambda_{\mathrm{edge}}\ge1$.
+Otherwise let $a=a^{(N)}$ be the coefficient vector of a maximizing
+polynomial $p_N=\sum_ia_iT_i$ with $a^TM_Na=\int p_N^2=1$, so that
+$a^TR_Na=\lambda_+(N,N-1)$.
+
+\emph{Endpoint profiles.} Lemma~\ref{lem:floor} gives
+$N^{-1}\sum_ia_i^2\le1$. Let $e_N$ and $o_N$ be the step functions equal to
+$a_{2k}$ and $a_{2k+1}$ on $[2k/N,\min\{(2k+2)/N,1\})$ (with $a_N=0$), so
+$\norm{e_N}^2+\norm{o_N}^2\le2$, and put $g_N^\pm=(e_N\pm o_N)/2$. Along a
+further subsequence $g_N^\pm\rightharpoonup g^\pm$ weakly in $L^2(0,1)$.
+For every $v\in C^1[0,1]$,
+\begin{equation}\label{eq:profile-weak}
+ \frac1N\sum_ia_iv(i/N)\to\int_0^1g^+v,\qquad
+ \frac1N\sum_i(-1)^ia_iv(i/N)\to\int_0^1g^-v :
+\end{equation}
+the cell quadrature errors are bounded by $\norm{v'}_\infty$ times
+$N^{-1}(N^{-1}\sum a_i^2)^{1/2}$, and for odd $N$ the final half cell costs
+$O(\norm v_\infty N^{-1/2})$ because $|a_{N-1}|\le\sqrt N$. Thus $g^+$ is the
+profile at $x=1$ and $g^-$ the profile at $x=-1$, because
+$T_i(-x)=(-1)^iT_i(x)$; this is why the model has a single endpoint and the
+bounds below sum over $\pm$.
+
+\emph{Mass.} With $v(s)=\cos(\xi s)$, \eqref{eq:profile-weak} gives
+$N^{-1}p_N(\cos(\xi/N))\to\widehat{g^+}(\xi)$ and
+$N^{-1}p_N(-\cos(\xi/N))\to\widehat{g^-}(\xi)$ for each $\xi$, and these
+quantities are bounded by $(N^{-1}\sum_ia_i^2)^{1/2}\le1$. For fixed $T$,
+the two disjoint endpoint pieces of $\int p_N^2$ are
+\[
+ \int_0^T\xi\operatorname{sinc}_1(\xi/N)\,\bigl|N^{-1}p_N(\pm\cos(\xi/N))\bigr|^2\dd\xi .
+\]
+Dominated convergence, then $T\to\infty$, gives
+\begin{equation}\label{eq:profile-mass}
+ \mathsf M(g^+)+\mathsf M(g^-)\le1 ;
+\end{equation}
+in particular $g^\pm\in\mathcal V$.
+
+\emph{The compact part.} The rescaled kernel of $Z_N$ converges uniformly to
+$z(s+r)$, which is uniformly continuous, so the cell replacement changes the
+operator norm by $o(1)$ (with $O(N^{-1/2})$ from a final half cell). The
+integral operator with kernel $z(s+r)$ is compact. Since equal-parity pairs
+give $\frac14[\mathsf Z(e_N)+\mathsf Z(o_N)]=\frac12[\mathsf Z(g_N^+)+\mathsf Z(g_N^-)]$
+up to $o(1)$, weak convergence yields
+\[
+ a^TZ_Na\to\tfrac12\bigl[\mathsf Z(g^+)+\mathsf Z(g^-)\bigr].
+\]
+
+\emph{The positive part.} With
+$\Theta^{\mathrm e}_N(y)=\frac2N\sum_{i\ \mathrm{even}}a_ie^{-(1-i/N)y}$ and
+$\Theta^{\mathrm o}_N$ the odd analogue, the substitution $x=e^{-y/N}$ in the
+integral representation of $Y$ (proof of Theorem~\ref{thm:five-thirds}) gives
+the exact formula
+\[
+ a^TY_Na=\int_0^\infty\frac N4\sinh\frac yN\,
+ \bigl[\Theta^{\mathrm e}_N(y)^2+\Theta^{\mathrm o}_N(y)^2\bigr]\dd y .
+\]
+By \eqref{eq:profile-weak}, $\Theta^{\mathrm e}_N(y)\to\int(g^++g^-)e^{-(1-s)y}\dd s$
+and $\Theta^{\mathrm o}_N(y)\to\int(g^+-g^-)e^{-(1-s)y}\dd s$ for each $y$, and
+$\frac N4\sinh\frac yN\ge\frac y4$. Fatou's lemma gives
+\[
+ \liminf a^TY_Na\ge\tfrac12\bigl[\mathsf Y(g^+)+\mathsf Y(g^-)\bigr].
+\]
+No convergence of the unbounded matrix $Y_N$ itself is needed.
+
+\emph{Conclusion.} By $R_N=M_N-Y_N+Z_N$, \eqref{eq:continuum} and
+\eqref{eq:profile-mass},
+\begin{align*}
+ \Lambda^*-1=\lim a^T(Z_N-Y_N)a
+ &\le\tfrac12\sum_\pm\bigl[\mathsf Z(g^\pm)-\mathsf Y(g^\pm)\bigr]\\
+ &\le(\Lambda_{\mathrm{edge}}-1)\sum_\pm\mathsf M(g^\pm)
+ \le\Lambda_{\mathrm{edge}}-1 .
+\end{align*}
+The bound $\Lambda_{\mathrm{edge}}\le3/2$ is Lemma~\ref{lem:continuum}. \qed
+
+\section{The certificate for Proposition~\ref{prop:edge-certified}}\label{app:certificate}
+
+\subsection{Closed forms of the model mass}
+
+Write $\varpi_j=\pi j$, $s_j=(-1)^j$,
+$\operatorname{Cin}(x)=\int_0^x(1-\cos v)\,v^{-1}\dd v$ and
+$\operatorname{Ci}(x)=-\int_x^\infty\cos v\,v^{-1}\dd v$.
+
+\begin{lemma}\label{lem:closed-form}% IDs: PD-T548
+For $i,j\ge1$ the integrals $\mathsf M_{ij}=\int_0^\infty\xi\chi_i(\xi)\chi_j(\xi)\dd\xi$
+converge absolutely, and
+\begin{gather*}
+ \mathsf M_{ij}=\frac{2s_is_j\bigl(\varpi_i^2\operatorname{Cin}(2\varpi_j)-\varpi_j^2\operatorname{Cin}(2\varpi_i)\bigr)}{\varpi_i^2-\varpi_j^2}\quad(i\ne j),\\
+ \mathsf M_{jj}=2\bigl[\varpi_j\operatorname{Si}(2\varpi_j)+\operatorname{Cin}(2\varpi_j)\bigr].
+\end{gather*}
+Hence $\mathsf M(\sum_ju_j\zeta_j)=\sum_{i,j}u_i\mathsf M_{ij}u_j$ for finite $u$.
+\end{lemma}
+
+\begin{proof}
+By \eqref{eq:chi}, $\chi_j$ is continuous with removable singularities,
+bounded on compact sets and $O_j(\xi^{-3})$, so $\xi\chi_i\chi_j$ is
+absolutely integrable. Let $\varpi$ be a positive integer multiple of $\pi$ and
+$\mathcal H(x)=\int_0^x\sin^2v\,v^{-1}\dd v=\operatorname{Cin}(2x)/2$. Put
+\[
+ I(\varpi)=\int_0^\infty\frac{\sin^2t}{t(t^2-\varpi^2)}\dd t,\qquad
+ K(\varpi)=\int_0^\infty\frac{t\sin^2t}{(t^2-\varpi^2)^2}\dd t ,
+\]
+both absolutely convergent. For $R>\varpi$, partial fractions give
+$\varpi^2\int_0^R\frac{\sin^2t}{t(t^2-\varpi^2)}\dd t=\frac12\int_0^R\frac{\sin^2t}{t-\varpi}\dd t
++\frac12\int_0^R\frac{\sin^2t}{t+\varpi}\dd t-\mathcal H(R)$. Since $\sin^2$ has
+period $\pi$ and $\sin^2v/v$ is odd, translation gives
+$\int_0^R\sin^2t\,(t\mp \varpi)^{-1}\dd t=\mathcal H(R\mp \varpi)-\mathcal H(\varpi)$, so
+the right side equals $\frac12\mathcal H(R-\varpi)+\frac12\mathcal H(R+\varpi)-\mathcal H(R)-\mathcal H(\varpi)$,
+and the first three terms tend to zero as $R\to\infty$, being bounded by
+$\frac12\log\frac R{R-\varpi}+\frac12\log\frac{R+\varpi}R$. Thus
+$I(\varpi)=-\operatorname{Cin}(2\varpi)/(2\varpi^2)$. For $i\ne j$, the identity
+$[(t^2-\varpi^2)(t^2-\varpi'^2)]^{-1}=[(t^2-\varpi^2)^{-1}-(t^2-\varpi'^2)^{-1}]/(\varpi^2-\varpi'^2)$ gives
+$\mathsf M_{ij}=4s_is_j\varpi^2\varpi'^2[I(\varpi)-I(\varpi')]/(\varpi^2-\varpi'^2)$ with $\varpi=\varpi_i$, $\varpi'=\varpi_j$, which is
+the first formula. For the diagonal, integration by parts
+($\frac{\dd}{\dd t}(t^2-\varpi^2)^{-1}=-2t(t^2-\varpi^2)^{-2}$, with vanishing boundary
+terms at $0$, at $\varpi^\pm$ and at infinity) gives
+$K(\varpi)=\frac12\int_0^\infty\sin(2t)(t^2-\varpi^2)^{-1}\dd t$, and the same
+translation argument with $\sin(2v)/v$ even gives this integral as
+$\operatorname{Si}(2\varpi)/\varpi$. Finally
+$t^{-1}(t^2-\varpi^2)^{-2}=\varpi^{-4}[t^{-1}-t(t^2-\varpi^2)^{-1}]+\varpi^{-2}t(t^2-\varpi^2)^{-2}$,
+with the bracket kept together at each cutoff, gives
+$\mathsf M_{jj}=4\varpi^2[K(\varpi)-I(\varpi)]=2[\varpi\operatorname{Si}(2\varpi)+\operatorname{Cin}(2\varpi)]$.
+\end{proof}
+
+\subsection{The finite reduction}
+
+By \eqref{eq:Lambda-edge}, for every nonzero $u\in\R^{\mathsf J}$,
+\[
+ \Lambda_{\mathrm{edge}}\ge q(u):=\frac{u^T\mathsf Q_{\mathsf J}u}{u^T\mathsf M_{\mathsf J}u},\qquad
+ \mathsf Q_{\mathsf J}=\operatorname{diag}(\omega_1,\dots,\omega_{\mathsf J})+4ss^T,
+\]
+with $\mathsf M_{\mathsf J}=(\mathsf M_{ij})_{i,j\le\mathsf J}$ from Lemma~\ref{lem:closed-form} and
+$s=(s_j)$. We take $\mathsf J=512$ and a vector $u$ of binary rationals, stored
+exactly as hexadecimal binary64 strings. It was selected by a floating-point
+generalized eigensolver; the selection plays no role in the proof, because
+the bound holds for every $u$.
+
+The computation encloses $u^T\mathsf Q_{\mathsf J}u$ and $u^T\mathsf M_{\mathsf J}u$ in intervals with endpoints on the
+grid $2^{-256}\mathbb Z$, using unbounded integers and rounding every product
+and quotient outward. The scalar inputs are enclosed as follows.
+\begin{itemize}
+\item $\pi$: Machin's formula $\pi=16\arctan\frac15-4\arctan\frac1{239}$ with
+alternating arctangent series.
+\item $\operatorname{Si}(x)$ for $x=n\pi$, $n<16$, and $\operatorname{Cin}(x)$
+for $x\le16\pi$: the entire series
+\[
+ \operatorname{Si}(x)=\sum_{k\ge0}\frac{(-1)^kx^{2k+1}}{(2k+1)(2k+1)!},\qquad
+ \operatorname{Cin}(x)=\sum_{k\ge1}\frac{(-1)^{k+1}x^{2k}}{(2k)(2k)!},
+\]
+summed until the ratio of successive absolute terms is at most $1/2$, after
+which the ratios decrease, and twice the next term is below $2^{-128}$; the
+tail is then bounded by twice the next term.
+\item $x=n\pi$ with $n\ge16$: with
+$F(x)=\int_0^\infty e^{-xt}(1+t^2)^{-1}\dd t$ and
+$G(x)=\int_0^\infty te^{-xt}(1+t^2)^{-1}\dd t$ one has
+$\operatorname{Si}(x)=\frac\pi2-\cos x\,F(x)-\sin x\,G(x)$ and
+$\operatorname{Ci}(x)=\sin x\,F(x)-\cos x\,G(x)$ (differentiate, using
+$F'=-G$, $G'=F-1/x$, and compare limits at $0$ and $\infty$), so
+$\operatorname{Si}(n\pi)=\frac\pi2-(-1)^nF(n\pi)$ and
+$\operatorname{Ci}(n\pi)=-(-1)^nG(n\pi)$. Expanding $(1+t^2)^{-1}$ to
+$20$ terms leaves remainders of sign $(-1)^{20}$ bounded by $40!/x^{41}$ and
+$41!/x^{42}$. (At $x=16\pi$ these remainders are below $2\cdot10^{-22}$,
+which dominates the final interval widths.)
+\item $\operatorname{Cin}(2\pi j)$ for $j\ge8$: from
+$\operatorname{Cin}(x)=\gamma_{\mathrm E}+\log x-\operatorname{Ci}(x)$, where $\gamma_{\mathrm E}$ is Euler's constant, the identity
+$\operatorname{Cin}(2\pi j)=\operatorname{Cin}(16\pi)+\log(j/8)+\operatorname{Ci}(16\pi)-\operatorname{Ci}(2\pi j)$,
+in which Euler's constant cancels; logarithms of rationals by power-of-two
+reduction and $\log q=2\sum_kz^{2k+1}/(2k+1)$, $z=(q-1)/(q+1)\le1/3$, with a
+geometric tail bound.
+\end{itemize}
+
+\subsection{Result, code and checks}
+
+The enclosures obtained are
+\[
+ 0.999999999999999917507138\le u^T\mathsf M_{\mathsf J}u\le0.999999999999999917507142,
+\]
+\[
+ 1.004436918864667280457774\le q(u)\le1.004436918864667280457779,
+\]
+the decimals being outward roundings of the exact dyadic endpoints. The
+exact comparison of the lower endpoint with $10044369/10^7$ passes, which
+proves Proposition~\ref{prop:edge-certified}. The upper endpoint bounds
+$q(u)$ only, not $\Lambda_{\mathrm{edge}}$.
+
+The trial vector, the enclosure program, a second program that assembles the
+quadratic forms independently in exact rational arithmetic (sharing the scalar
+enclosures), and their output logs are in the repository named in the data
+availability statement. Both programs pass the exact comparison with
+$10044369/10^7$, and their enclosures overlap; an independent re-run of the
+second program reproduces the verdict. The trusted base consists of the
+formulas of Lemma~\ref{lem:closed-form} and Section~\ref{sec:edge-max}, the
+scalar bounds above, exact integer and rational arithmetic, exact parsing of
+binary64 strings, and the published code.
+
+\bibliographystyle{siamplain}
 \bibliography{refs}
 \end{document}

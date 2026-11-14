@@ -32,3 +32,16 @@ The first campaign registers scoped proofs, measured checks, open targets and so
 `Codex (Sol 6.1 xhigh): New topic: define the Padua campaign around <research question>, with <scope and constraints>. Establish the literature baseline, success criteria and cheapest decisive first tests before developing new ideas.`
 
 No automation, CI or repository permissions are configured by this scaffold.
+
+## Licence
+
+Copyright (C) 2026 Andrey Chesnokov.
+
+Everything in this repository — code, data, evidence, records and manuscript sources — is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version (SPDX `AGPL-3.0-or-later`). It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License in [LICENSE](LICENSE) for more details.
+
+Exceptions: material by others keeps its own terms. These are
+- the SIAM LaTeX macros `tracks/mz-constants/paper/siamart251216.cls` and `tracks/mz-constants/paper/siamplain.bst`, under SIAM's distribution conditions stated in their headers;
+- short quotations from published sources in the literature records, which remain their authors'.
+
+Third-party code used by the campaigns is referenced by URL and hash and is not committed (see the topics' `external-code.md` files).
+

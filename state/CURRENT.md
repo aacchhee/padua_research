@@ -28,8 +28,8 @@ scopes. IDEA-071's deferred route is resolved via P3; IDEA-386's genuine
 one-dimensional continuation and IDEA-470's full-form resume condition are
 met. Decimal certification and practical rates are unassigned mathematical
 frontiers; completed registration/preparation creates no new campaign.
-The manuscript insert remains a proposal, and literature coverage supplies
-no novelty clearance.
+The manuscript insert is integrated into the split MZ-CC/MZ-SP drafts
+(PR35, section below); literature coverage still supplies no novelty clearance.
 
 ## Signed Padua MZ — accepted frontier and cleanup
 
@@ -323,3 +323,18 @@ Scope addendum,2026-11-12: the earlier charter paragraph describing3D Padua as o
 - **Finite range.** PD-N246 rules out the finite torus LP with M≤8N on n=2…109.
 - **Frontier.** Package existence for 4≤n≤217 and the value of γ_A in (1/36,1/18] remain OPEN. The deferred routes are the cube-Delsarte LP (IDEA-761), separation strengthening (IDEA-759) and a sharper orbit conversion. Audits 01–03 did not execute a full Codex γ/compact/FT replay because input retrieval returned HTTP403.
 - **Lebesgue corollary.** PD-T674 assembles the Padua Lebesgue-constant corollary at its finite and eventual ranges; PD-T099's effective bridge remains OPEN.
+
+## MZ-CC and MZ-SP manuscripts — PR35, 2026-11-14
+
+[Results](../results/padua-mz-paper-20261113.md); scope tables in the [MZ-CC README](../tracks/mz-constants/paper/README.md) and [MZ-SP README](../tracks/mz-constants/paper-sp/README.md).
+- **Split.** The 2026-11-05 MZ draft is now two complete internal drafts with frozen statement numbers:
+  - MZ-CC for SIAM J. Numer. Anal., 32 pp.;
+  - MZ-SP for J. Approx. Theory, 50 pp.; it cites MZ-CC, which goes out first.
+
+  The PR31 results are integrated at their registered scopes; PD-T531 is omitted.
+- **New results.**
+  - PD-T684 (PROVED): sharp endpoint defect (log N)²(1−η_N) → π⁴/8, with 1−η_N = λ₋ for N ≥ 57; κ₂/(log N)² → 8Λ_edge/π⁴; interpolation-norm limit 2√2/π²; uniform CC hyperinterpolation factor (1+√(5/3))√2.
+  - PD-T685 (PROVED): ‖B‖ ≥ 0.02964… and c₊ ≥ 0.01277…, analytic lower bounds only.
+- **Unchanged OPEN items.** The decimal values of Λ_edge (PD-T027) and of c_± (PD-T381) stay OPEN.
+- **Audit.** [Audit-01](../topics/padua-mz-paper-20261113/audit-01.md) found no unsupported analytic theorem; [response-01](../topics/padua-mz-paper-20261113/response-01.md) fixed its wording and metadata findings.
+- **Evidence.** The PD-T376 witness arrays and exact norms were regenerated on 2026-11-14 from the frozen commit with byte-identical payloads, and were independently replayed. Each paper's evidence archive (code, receipts, data outside Git, verification script; AGPL-3.0-or-later) is prepared for deposit: [zenodo/README.md](../topics/padua-mz-paper-20261113/zenodo/README.md).

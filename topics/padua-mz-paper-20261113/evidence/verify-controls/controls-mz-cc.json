@@ -1,0 +1,44 @@
+{
+ "scope": "verifier outcome controls with stubbed numerical programs; not certificate runs",
+ "interpreter_invocation": "PY=venv/bin/python bash verify.sh ... from the pack root",
+ "results": [
+  {
+   "pack": "mz-cc",
+   "mode": "agree",
+   "args": [
+    "out"
+   ],
+   "exit": 0,
+   "expected_exit": 0,
+   "summary": [
+    "ALL REQUIRED CHECKS AGREE"
+   ],
+   "expected_summary": [
+    "ALL REQUIRED CHECKS AGREE"
+   ],
+   "pass_": true,
+   "differ_lines": [],
+   "stderr_tail": ""
+  },
+  {
+   "pack": "mz-cc",
+   "mode": "required_fails",
+   "args": [
+    "out"
+   ],
+   "exit": 1,
+   "expected_exit": 1,
+   "summary": [
+    "REQUIRED CHECKS FAILED (see DIFFER/FAILED lines above)"
+   ],
+   "expected_summary": [
+    "REQUIRED CHECKS FAILED (see DIFFER/FAILED lines above)"
+   ],
+   "pass_": true,
+   "differ_lines": [
+    "DIFFER /tmp/mz-verify-control-uak6eq4e/padua-mz-cc-evidence/out/P4-rayleigh.json vs topics/padua-mz-sharp-constants-20261106/evidence/P4-rayleigh.json"
+   ],
+   "stderr_tail": ""
+  }
+ ]
+}

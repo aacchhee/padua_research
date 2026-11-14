@@ -41,3 +41,11 @@ Reader: Claude, Opus 5.5. PDF supplied by AC (NTNU access), text via pdftotext; 
 - Differences in theoretical content: Proposition 2.1 (eigenvalue characterization of the weak MZ constants A=λ_min(G), B=λ_max(G)). Theorem 2.1 (pp. 736–737): for a k-point Gaussian rule and n≥k, η≥1, with worst-case polynomial ±ψ_n; Remark 2.5 covers the tensor-product extension. Whether these were already in arXiv v1 was not checked line by line; the earlier record does not list them.
 - CC (§3.1, p. 738): experiments m≤20, n≤30 show η<1 for ⌊m/2⌋<n≤m−1. The authors write that this behaviour is, to their knowledge, "not known" and "could deserve further study". §3.6 (p. 742) guesses the cause lies in special properties of Chebyshev polynomials, "beyond the scope of the present paper". Padua: η<1 up to n=m−1 observed.
 - Relation: still the numerical predecessor. No all-N CC or Padua theorem; the authors explicitly flag the CC behaviour as theoretically open as of October 2026. **Verdict: RELATED** (numerical predecessor; PD-T014/017/018/022/024 not anticipated). Reference [4] is Lubinsky's survey.
+
+## 2026-11-13 published-version equation check (topic padua-mz-paper-20261113)
+
+Reader: Claude, Opus 5.5 (orchestrator). AC supplied the published PDF (`1-s2.0-S0378475426004416-main.pdf`, Downloads\padua\papers) on 2026-11-13 ("that paper is in the folder", 23:58). It was staged and read in the session only, not committed.
+- Equation (7) of the published version has the upper-MZ factor 1+√(1+η) together with an aliasing term, and equation (8) separates the inverse-Gram least-squares construction, as in arXiv v1. The published numbering of (7)–(8) therefore matches the arXiv locators recorded above.
+- Coverage added: equations (7)–(8) and their surrounding text in the published version. The earlier published-version coverage (§§1–2, §3.1, §3.6, keyword screen) is unchanged, and this is still not a complete line-by-line audit of the source.
+- Use: MZ-CC (PR35) cites "Equation (7) of [LIT-045]" for the published version. The verdict (RELATED, numerical predecessor) is unchanged.
+- Provenance: topics/padua-mz-paper-20261113/LOG.md (AC's message of 2026-11-13) and literature-mz-paper.md item #5.
