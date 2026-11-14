@@ -1,0 +1,52 @@
+{
+  "status": "MEASURED",
+  "rigorous_enclosures": false,
+  "command": [
+    "g1_minimum.py",
+    "--m",
+    "1240",
+    "1600",
+    "--output",
+    "/tmp/regen/out/scan-m1240-1600.json",
+    "--vector-dir",
+    "/tmp/regen/vectors"
+  ],
+  "code_sha256": "247bf4fa323abf2668fd4575b3ee8b363afa9ff75ecc1884eb41eda2a8433cb3",
+  "operator_code_sha256": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241",
+  "seed": 20261105,
+  "tolerance": 2e-11,
+  "ncv": 40,
+  "exploratory_scope": "m>1000 requested post hoc by orchestrator on 2026-11-05 after lower corner branch observed",
+  "results": [
+    {
+      "m": 1240,
+      "n": 1239,
+      "dimension": 769420,
+      "minimum": -2.7148072763036893e-05,
+      "residual_2_float": 1.5901990067931491e-15,
+      "matvecs": 162,
+      "seconds": 57.793901051999995,
+      "peak_rss_kib": 458160,
+      "vector": {
+        "path": "/tmp/regen/vectors/m1240-n1239-min.npy",
+        "sha256": "b8f1520220565635c4601c8cc5f0cd3e24d986aecbe559dcc25033fe19e47c7d",
+        "bytes": 6155488
+      }
+    },
+    {
+      "m": 1600,
+      "n": 1599,
+      "dimension": 1280800,
+      "minimum": -0.02341441659034573,
+      "residual_2_float": 1.9495891181726347e-13,
+      "matvecs": 122,
+      "seconds": 85.196065785,
+      "peak_rss_kib": 750012,
+      "vector": {
+        "path": "/tmp/regen/vectors/m1600-n1599-min.npy",
+        "sha256": "a23cb0e6e241993e5458474c64f153c965e8dc5047c2f1dfe08c7bc293e0a338",
+        "bytes": 10246528
+      }
+    }
+  ]
+}

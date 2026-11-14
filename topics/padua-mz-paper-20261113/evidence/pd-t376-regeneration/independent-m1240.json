@@ -1,0 +1,37 @@
+{
+  "status": "rigorous forward-error sign enclosure under stated IEEE BLAS model",
+  "accepted": true,
+  "sign": "negative",
+  "m": 1240,
+  "n": 1239,
+  "witness_sha256": "dee2ec73f5e4fd43478e3ac10676bab24b42b1d7a6178ae12e7be57182bacb49",
+  "code_sha256": "60c1e6db62fbd1c422fae2fa29476afad2796aa503a1225d7f507745fa08361f",
+  "command": [
+    "topics/padua-mz-cleanup-20261105/code/independent_witness.py",
+    "--witness",
+    "/tmp/regen/cert-m1240/witness.json.gz",
+    "--output",
+    "/tmp/regen/out/independent-m1240.json"
+  ],
+  "python": "3.12.3",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "q_center": -2.7148059718313734e-05,
+  "q_enclosure": "[-2.7e-5 +/- 2.30e-7]",
+  "q_absolute_error": "[8.1904575677322175931e-8 +/- 8.69e-28]",
+  "relative_width_upper": "[0.0060 +/- 5.22e-5]",
+  "polynomial_error_max": "[5.488274132000663079313109e-8 +/- 5.99e-33]",
+  "weight_error_max": "[3.0171039008415341508e-18 +/- 5.29e-38]",
+  "coefficient_l1": "[194239.60185288935087742634433283228645 +/- 4.51e-33]",
+  "positive_norm_summand_lower": "[8.5596886417210482358043464114885658602e-35 +/- 7.47e-73]",
+  "retained_nodes": 770661,
+  "ball_table_seconds": 9.316116520999998,
+  "total_seconds": 12.610744785999998,
+  "arithmetic_assumptions": [
+    "Arb outward intervals",
+    "binary64 round-to-nearest scalar operations",
+    "each BLAS dot product satisfies standard gamma_k error model; FMA permitted",
+    "no overflow; absolute underflow allowance included"
+  ],
+  "independent_path": "ball node tables plus floating tensor contractions with analytic l1 forward bounds"
+}
