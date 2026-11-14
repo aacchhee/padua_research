@@ -1,0 +1,307 @@
+{
+  "rules_read_head": "82e75e586d19a570d42648accbd3b99179991774",
+  "scope": "compile and strict n2/n17 replay only; all 39 retained input identities inventoried",
+  "certificates": {
+    "2": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n2.json.gz",
+    "3": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n3.json.gz",
+    "4": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n4.json.gz",
+    "5": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n5.json.gz",
+    "6": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n6.json.gz",
+    "7": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n7.json.gz",
+    "8": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n8.json.gz",
+    "9": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n9.json.gz",
+    "10": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n10.json.gz",
+    "11": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n11.json.gz",
+    "12": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n12.json.gz",
+    "13": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n13.json.gz",
+    "14": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n14.json.gz",
+    "15": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n15.json.gz",
+    "16": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n16.json.gz",
+    "17": "topics/padua-argmax-effective-20261103/evidence/n17.json.gz",
+    "18": "topics/padua-argmax-effective-20261103/evidence/n18.json.gz",
+    "19": "topics/padua-argmax-effective-20261103/evidence/n19.json.gz",
+    "20": "topics/padua-argmax-effective-20261103/evidence/n20.json.gz",
+    "21": "topics/padua-argmax-effective-20261103/evidence/n21.json.gz",
+    "22": "topics/padua-argmax-effective-20261103/evidence/n22.json.gz",
+    "23": "topics/padua-argmax-effective-20261103/evidence/n23.json.gz",
+    "24": "topics/padua-argmax-effective-20261103/evidence/n24.json.gz",
+    "25": "topics/padua-argmax-effective-20261103/evidence/n25.json.gz",
+    "26": "topics/padua-argmax-effective-20261103/evidence/n26.json.gz",
+    "27": "topics/padua-argmax-effective-20261103/evidence/n27.json.gz",
+    "28": "topics/padua-argmax-effective-20261103/evidence/n28.json.gz",
+    "29": "topics/padua-argmax-effective-20261103/evidence/n29.json.gz",
+    "30": "topics/padua-argmax-effective-20261103/evidence/n30.json.gz",
+    "31": "topics/padua-argmax-effective-20261103/evidence/n31.json.gz",
+    "32": "topics/padua-argmax-effective-20261103/evidence/n32.json.gz",
+    "33": "topics/padua-argmax-bridge-20261105/evidence/n33.json.gz",
+    "34": "topics/padua-argmax-bridge-20261105/evidence/n34.json.gz",
+    "35": "topics/padua-argmax-bridge-20261105/evidence/n35.json.gz",
+    "36": "topics/padua-argmax-bridge-20261105/evidence/n36.json.gz",
+    "37": "topics/padua-argmax-bridge-20261105/evidence/n37.json.gz",
+    "38": "topics/padua-argmax-bridge-20261105/evidence/n38.json.gz",
+    "39": "topics/padua-argmax-bridge-20261105/evidence/n39.json.gz",
+    "40": "topics/padua-argmax-bridge-20261105/evidence/n40.json.gz"
+  },
+  "inputs": [
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/part3/finite_bernstein.py",
+      "bytes": 6311,
+      "sha256": "a3133c6c22a365380f6c2ab14f6d31f60153d0df902b325cfcfbeeccc1bed74f"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/part3/finite_general.py",
+      "bytes": 6984,
+      "sha256": "b20b7f88ddfc0bbc92e68096063ef626664028c2a379c34d16dc9f84e17aa74a"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/part3/finite_general_run.py",
+      "bytes": 3367,
+      "sha256": "fe1647086b2db5c47d75e24d386cc6456782bb6ea36bc25acd39b75bd4752511"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/part3/finite_n2_exact.py",
+      "bytes": 5177,
+      "sha256": "8c74170cadee19cfd805734c13182e47734958d7495a8a0109c582631fc7cab0"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/regeneration_polynomial_20261114/replay.py",
+      "bytes": 8240,
+      "sha256": "01cbe3229c4369bfb61aa7ffa8e03550a357e5a87c2f06939e281077ddb7bd76"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/METADATA-FREEZE.json",
+      "bytes": 1285,
+      "sha256": "99ec898e46825b1a8e3b3bf8ec1d6bb5dce6c3620d19020903e044c8b52723d6"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n10.json.gz",
+      "bytes": 2659,
+      "sha256": "65641b2032068d81b6cf046a999b3265fd4f738c9a5e6126df20fc46d04230bb"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n11.json.gz",
+      "bytes": 2707,
+      "sha256": "cbd9c6e1b284dacb9dda4897e47258248aef1b4b3f39e3dc58f7cd32a66c61b3"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n12.json.gz",
+      "bytes": 2788,
+      "sha256": "b7cce1bb25bddea75a9bc2045711d8c24dde7df69816ebd61ade1dd03721e5a7"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n13.json.gz",
+      "bytes": 2846,
+      "sha256": "fc9d18f3399015671eb39efaf55248427f11bdd4a424bef77336ca506a27ad54"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n14.json.gz",
+      "bytes": 2892,
+      "sha256": "e62ee4cf3c13fb124b259cc38c2bdbc90043c077ec861064f91830795e171220"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n15.json.gz",
+      "bytes": 3458,
+      "sha256": "77f11b1ff3163ecd8191adad5b420fefae95c66787a917f654310e3ab0a05947"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n16.json.gz",
+      "bytes": 3760,
+      "sha256": "9d31653b721275a8cc4204a55f7b8040cb227cd754d7fd63df619492f6814c1b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n2.json.gz",
+      "bytes": 1592,
+      "sha256": "fdfca9b09065568b8f43a5334c780d0d3978b56325e0435d76d9a83a9d49564d"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n3.json.gz",
+      "bytes": 1632,
+      "sha256": "19c05534f058bee2b35c4bfc08293bfc77db5ae8ae562b6b573dee7d1710c818"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n4.json.gz",
+      "bytes": 1911,
+      "sha256": "53add2deffcd77476fae957809ba21cdf1470360bb2434741f45b3936588a6eb"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n5.json.gz",
+      "bytes": 1929,
+      "sha256": "7d5b6f8dc8835b472ab318d153642c4e413b74556abbf0b057c7a1279721acb3"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n6.json.gz",
+      "bytes": 2005,
+      "sha256": "4f564364b81762989a25a7a6c7f9b190f31f1497309c16045e979adcfb420974"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n7.json.gz",
+      "bytes": 2159,
+      "sha256": "72f4969a78b2b1afae3fd12ec883f45622a172af656a11c36a406934a063a96b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n8.json.gz",
+      "bytes": 2327,
+      "sha256": "9308b08eb7a915fb16b459eaa0a844c63dbaabfbec04b06c1a5a289606712de0"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/certificates/n9.json.gz",
+      "bytes": 2532,
+      "sha256": "1525a175907a5b26eef7a9865f58f42684ef50ebfeab1a2675d55caf52419826"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/check.py",
+      "bytes": 2107,
+      "sha256": "dfb3d3621fa2888e96033d8121f6486e9957fcdc54b40da219eb977bd6dd37b4"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/common-witness-index.json",
+      "bytes": 7632,
+      "sha256": "802cba59975329c21b78dc9bce63b4f8a372b8340328af4205f91158a04b59d8"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/metadata-patch.json",
+      "bytes": 771,
+      "sha256": "92f2353736cbde53dfb635031a4749a55bda8535c21608b6815287c8fa3ceab8"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/metadata_kernel.cpp",
+      "bytes": 6842,
+      "sha256": "9b07d16a691261772e3057323dd3fb7e4934adf5bd2d6cb150f0f825db173667"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n33.json.gz",
+      "bytes": 8141,
+      "sha256": "090f650ae5d52d72716857e8a67a8fac7c330fa208ff81487368e1ef89d82f90"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n34.json.gz",
+      "bytes": 8253,
+      "sha256": "8c4866e2bda66e331e4940f17ace71b9caeb8ecf0bdd091bf026d215b21acb2d"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n35.json.gz",
+      "bytes": 8485,
+      "sha256": "cdf5058f476692d1fc3847b8b59ca44ffe9cecd9ffc3271a2d47b733464935bb"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n36.json.gz",
+      "bytes": 8679,
+      "sha256": "067fcf2af8eb2f112f65f2689ecd7102b87f1b2cb31b2508d97ba09be0d9f22c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n37.json.gz",
+      "bytes": 8905,
+      "sha256": "425fb779e3d476efe221f6d1bef118cb1752fa9f538a46110b7ea2b44f2cefae"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n38.json.gz",
+      "bytes": 8973,
+      "sha256": "fcb900fab6b596b7d258668e0de49a4bf9b76bc9d3f4c879ebb358d7b792f1d2"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n39.json.gz",
+      "bytes": 9186,
+      "sha256": "af0c1dfdf4ea59560c23e83ebd4136b9b7ce783a253d1165f0cdbd1ace01d8f6"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n40.json.gz",
+      "bytes": 9663,
+      "sha256": "37cb278ad498d9f531634b2dca470426a86339b5d83cd437bfb2dd093afa374f"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+      "bytes": 6428,
+      "sha256": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/code/native_checker/kernel.cpp",
+      "bytes": 6752,
+      "sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n17.json.gz",
+      "bytes": 4003,
+      "sha256": "7ec44ce35cc20b12386e115749ef21c073b4362f066f4d92063ae43da7d756f8"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n18.json.gz",
+      "bytes": 4223,
+      "sha256": "9c4227c10e2b784d2640c0e03eb9c2aa0060aec032fc2b0915dd95740bcbf74c"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n19.json.gz",
+      "bytes": 4358,
+      "sha256": "702304597c3e1bf0e388d91c755e7490a56b2e34c64c83d7f2d12f7dbec4a712"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n20.json.gz",
+      "bytes": 4571,
+      "sha256": "3b794b02a088c5ccc6e2c2d0caee5cae509dc806ccf10a2ec14edef3e635b357"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n21.json.gz",
+      "bytes": 4652,
+      "sha256": "2b9403247a28ce32bb2fc31ebf1761448d11069f7a9beccbf86f5fae5229c713"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n22.json.gz",
+      "bytes": 4798,
+      "sha256": "8cf22962290ffe9889738942b8e3a37142147c5a94f6b2ed5d2b4e52f87c8d21"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n23.json.gz",
+      "bytes": 5060,
+      "sha256": "128ee9b2eb6f96d4d35af13d3a519c7e0a5bf1a0b6ff4eb0344386d38172c79b"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n24.json.gz",
+      "bytes": 5096,
+      "sha256": "1f64d40557604a83565d1b995a181cd8636ea75ebc42eb86e6e94b65c70e5c5e"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n25.json.gz",
+      "bytes": 5316,
+      "sha256": "c721bc4f0747a002bc9e9a37228ce1a33afa2aab547a08373f4126fe830a2a01"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n26.json.gz",
+      "bytes": 5329,
+      "sha256": "21ccc394eeb3e6f0546365502df8f1c04192c29ccf4f6602f8f8827279fd8f2b"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n27.json.gz",
+      "bytes": 5399,
+      "sha256": "50ad3151f0a6f155b78f4d030e2a59b5d57fba8780a54fe3c43dd7cab0a4db59"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n28.json.gz",
+      "bytes": 5626,
+      "sha256": "6fc8a749fb74240c0ca3665c88351d0c6ea79866435073076e36288bc1b5d95a"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n29.json.gz",
+      "bytes": 6839,
+      "sha256": "907e156d0df5dbc590fe21e4b40e7f975a4581e5fa4f818581da223c6a7afbaf"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n30.json.gz",
+      "bytes": 7639,
+      "sha256": "a8136343b1c50158296ac5316b1939c5bf1ff6bb4f6fd0e055bdfb44307d775d"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n31.json.gz",
+      "bytes": 8022,
+      "sha256": "0bf42842aa10ce7b5f5feba81c249c6ec79f3d0b5c834e7a7edc305839df643a"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/evidence/n32.json.gz",
+      "bytes": 8083,
+      "sha256": "e17a8712fb257a219436e44e977eaa6a1e0287ba6a64a86c78e34009f984c609"
+    },
+    {
+      "path": "topics/padua-proof-attempts-20261101/theory/proof-attempts-codex-01-padua-corner.md",
+      "bytes": 10507,
+      "sha256": "ea59aa077a4d021fc69354383f69340f21d17d87d3a28c6ecaaf302cc763612c"
+    }
+  ]
+}
