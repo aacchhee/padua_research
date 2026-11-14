@@ -1,6 +1,6 @@
 # Handoff 04 — padua-xu-lebesgue-20261114 — readiness check for PR #36
 
-- Status: open
+- Status: done in 4027941b34deb512ba80bcb733606e3b9f4eb25a
 - Previous handoff: [03-response-pr-preparation.md](03-response-pr-preparation.md) (done; see its status line)
 
 - Next agent / model / effort: **Claude, Opus 5.5, high**, an auditor **distinct from the developer**: a fresh thread, or a fresh subagent spawned by the orchestrator. Which one is AC's choice (handoff 03). If it is a subagent, the orchestrator only relays and commits its outputs, and the deviation is recorded as for audit-01.

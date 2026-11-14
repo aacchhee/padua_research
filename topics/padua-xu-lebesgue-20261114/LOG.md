@@ -2,7 +2,7 @@
 
 - Branch: `claude/padua-xu-lebesgue-20261114` · Base: main `99a9b1d` (PR #34 merged)
 - Developer: Claude (researcher Fable 5.2 xhigh, per-round downgrade to Opus 5.5 xhigh allowed) · Auditor: Claude, Opus 5.5 xhigh, distinct thread (AC ruling 2026-11-14)
-- Stage: PR · Open handoff: [04-readiness.md](handoffs/04-readiness.md) · PR: [#36](https://github.com/aacchhee/padua_research/pull/36) (draft; audit-01 accepted with MINOR findings)
+- Stage: PR · Assigned readiness complete; no open handoff · PR: [#36](https://github.com/aacchhee/padua_research/pull/36) · [readiness-01](readiness-01.md) accepted; only AC merges
 - Claims: see results file and audit-01 §6. Provisional IDs: `PD-T?padua-xu-lebesgue-20261114-claude-NN`.
 
 ## 2026-11-14 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -118,3 +118,9 @@
 - Orchestrator model/effort identifiers are not exposed by this runtime; no more specific model trailer is inferred. Readiness auditor: `gpt-6-astra` high (explicit tool selection).
 - Scope: response and registry diffs, current reservation union and PR metadata; no new ideas or novelty claim. No new novelty gate is required for this bounded readiness step.
 - Readiness MINOR R-m1 corrected by the orchestrator: IDEA-773’s final-map disposition now says “partial progress without a PARTIAL status”, matching the canonical registry; PD-T705 remains OPEN. Auditor reviewed the one-line diff and classified it as non-material wording alignment. PR metadata now carries the exact PD-T708 scope, clickable allocation ledger, approved model and full base/input head.
+
+## 2026-11-14 — readiness complete
+
+- Independent `gpt-6-astra` high readiness report and reservation refresh committed unchanged in `4027941b34deb512ba80bcb733606e3b9f4eb25a`. Verdict **READY**; no unresolved readiness findings. One mechanical map wording fix is in `782dfa95`; no mathematical status, scientific code or evidence changed.
+- Checks: 48 unique in-range final mappings, 23 audited statuses, 239 new relative-link file targets, Markdown table structure, cyclotomic explanatory argument, whitespace and full main/open/closed-unmerged reservation union. No scientific reruns were performed or claimed at readiness.
+- [Handoff 04](handoffs/04-readiness.md) is complete in the report commit. Assigned readiness work is complete; no successor handoff. PR publication changes only readiness metadata and draft status. Future X2 research or manuscripts require AC’s decision; only AC merges.
