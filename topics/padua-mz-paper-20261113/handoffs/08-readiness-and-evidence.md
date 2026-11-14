@@ -1,6 +1,6 @@
 # Handoff 08 — readiness check of PR35 plus a focused check of the regenerated PD-T376 evidence and Zenodo packs
 
-- Status: open
+- Status: done in 36838f501c8d69c5f3f580285d5e609b40a087c1
 - Previous handoff: [07-readiness.md](07-readiness.md). It was superseded before it started; its tasks 1–4 are carried over unchanged as task A below.
 - Next agent / model / effort: **Codex, gpt-6-astra high**. Task B is a focused evidence audit of computer-assisted certificate inputs, which is above a plain protocol check. Task A alone would be medium.
 - Branch: `claude/padua-mz-paper-20261113` · Draft PR #35.
