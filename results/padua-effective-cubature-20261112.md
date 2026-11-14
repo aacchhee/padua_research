@@ -82,6 +82,10 @@ No claim changes. Developer replays of all three γ certificates from a fresh ha
 
 [Audit 03](../topics/padua-effective-cubature-20261112/audit-03.md) accepts response 02 for PR preparation. The retrospective coverage correction and B2–B4 fixes pass; a minor range-list inconsistency was corrected in a separate auditor commit. No unresolved finding remains within this narrow scope. Accepted mathematical claims are unchanged. The optional Codex coefficient-dependent replay is still unavailable (HTTP403), and existing developer/independent runs are not relabelled as fresh auditor executions.
 
+## Readiness disposition (2026-11-14)
+
+[Readiness 01](../topics/padua-effective-cubature-20261112/readiness-01.md) passes the registry/ID diff and refreshed reservation union after separately committed MINOR summary/map fixes. Final assignments are PD-T674–679, PD-N246, IDEA-756–762 and LIT-716–717; unused reserved headroom remains permanent gaps. No unresolved readiness finding or collision was found. Accepted scientific claims are unchanged, and the unavailable optional Codex coefficient replay and pending archival limitation remain disclosed.
+
 ## Next step
 
-Codex readiness check of the registry/ID diff and the reservation refresh: `topics/padua-effective-cubature-20261112/handoffs/09-readiness.md`. PR #34 stays draft; only AC merges.
+AC review and merge decision on PR #34 after publication of the ready-for-review state. Refresh the reservation snapshot if main or another open PR's allocation/identifier sources change before merge. No further scientific development is assigned; only AC merges.

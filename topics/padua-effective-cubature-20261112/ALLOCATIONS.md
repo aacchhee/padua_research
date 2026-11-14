@@ -58,3 +58,9 @@ No collision and no unknown retired reservation was found. The check is repeated
 | LIT | LIT-716–717 | 2 | LIT-718–720 | 3 |
 
 The exact map is `pr-preparation/final-id-map.json`, and the global crosswalk section is "Effective positive-cube cubature excess and Padua Lebesgue corollary — PR34" in `ID_CROSSWALK.md`. Assignments were made only after the reservation commit `de39dabc7301b0de1463aaf2dab99365c4d7789e` was pushed and linked from the PR body.
+
+## Readiness refresh — 2026-11-14
+
+[Readiness 01](readiness-01.md) and its independent reservation report confirm the same uncontested reservation and assignments. Heads checked: main `b5388c25a2a5ccb8d0faf816ab87023cf347bcd3`; PR27 initially `b918c1d5bedba60e8255d7d2b985dd6c70f4690a`, then `4ed88e9b811180fa9f88fd629b4f93027c7bfe95` with identical ledger/ID-registry blobs; PR34 preparation `b4e00bdaf2ea391489523c28a7f25f0f4fc24c49` plus the two reviewed MINOR summary/map fixes; PR35 `be28d3267bf6117878190b10f2d29840e524eac7`.
+
+All 34 PRs were enumerated: open 27/34/35, 31 closed all merged, no closed-unmerged reservation. The full scan read 66 ledger copies and 16 canonical registry copies. Foreign maxima remain T673/N245/IDEA755/LIT715; including this reservation the union is T683/N250/IDEA765/LIT720. No collision or unknown retired range was found. Ranges, publication priority and permanent gaps are unchanged. Repeat the refresh if main or another open PR's allocation/identifier sources change before AC merges.

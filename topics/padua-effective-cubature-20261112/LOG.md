@@ -179,6 +179,14 @@
 - **Shared registries.** PROOF_STATUS, IDEAS, INDEX, CROSSWALK, RESULTS and CURRENT updated by appended or inserted entries only. Validation is recorded in `pr-preparation/record.md`.
 - **Next.** Codex readiness check (handoff 09). PR #34 stays draft.
 
+## 2026-11-14 — Codex — readiness 01
+
+- Request: `Codex (gpt-6-astra high): Continue claude/padua-effective-cubature-20261112.` Rules read at `b4e00bdaf2ea391489523c28a7f25f0f4fc24c49`, preparation candidate `47892f13411132488a82e9dcd512d80dc543cd71`. Rules unchanged; fetched main remains base `b5388c25a2a5ccb8d0faf816ab87023cf347bcd3`, an ancestor. Two gpt-6-astra high bounded readiness reviewers; prior runtime disclosure applies.
+- [readiness-01.md](readiness-01.md): **READY for AC review/merge decision**, no unresolved readiness finding. Current reservation population is open PR27/34/35, all closed PRs merged. Full union scan: 82 complete ledger/registry copies, no overlap, foreign maxima T673/N245/IDEA755/LIT715; this topic's ranges remain uncontested with priority commit de39dabc7301b0de1463aaf2dab99365c4d7789e. PR27 advanced again during the check; its new ledger/registry blobs remain identical. Exact heads and limits are in the readiness report/ledger.
+- The shared diff preserves accepted statements/statuses/mappings, other-topic content and scoped candidate dispositions. Eligible MINOR summary/map wording fixes are in separate commits `10938c33791a31a2dfb33c77a556a5a24f7ed416` and `9de44d23524bf426a529d8d0fffb1d307cdc4d2a`; independently checked, no material scientific change. Validation: 16 unique maps, 63 valid links, table formatting and 10/10 evidence hashes PASS.
+- The optional full Codex coefficient replay remains unavailable (HTTP403); no scientific rerun or new computational PASS is claimed. Existing independent/developer evidence, arithmetic trust assumptions, retrospective gate history and archival pending item remain disclosed.
+- Handoff 09's agent work is complete. Publish the ready-for-review state after a final live reservation-source check; only AC merges. No new agent handoff is required for the merge decision. Refresh reservations if relevant main/peer ledger/identifier content changes before merge; this session does not monitor future changes.
+
 ## Runs needed (retained development list)
 
 - Delsarte torus LP n = 9…12 at K = 3n−2 (`attempts/E1.md`); cube LP n ≥ 5 and its Delsarte extension (`attempts/E3.md`); certified φ (-05). *(2026-11-13: "certified φ (-05)" is done. The general-L¹ witness is in -07 and the compact-support witness in -05; see the response-01 entry. The other items stay deferred and unrun; the audit handoff authorises no new development.)*
