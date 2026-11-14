@@ -82,3 +82,14 @@
 
 - AC chose "Audit now" through the in-app question. The X2 argmax stays OPEN, and its continuation (P1 tail; W1–W3) is deferred until after the audit.
 - Handoff 01: done in `971beb7`. [Handoff 02](handoffs/02-audit.md) is open: the single substantive audit, Claude Opus 5.5 xhigh, fresh thread. Stage → AUDIT.
+
+## 2026-11-14 15:30 — handoff 02 started (orchestrator thread, Opus 5.5)
+
+- Rules re-read at branch head `72f90b5` (unchanged since `2d60e22`).
+- AC's prompt for handoff 02 arrived in the developer-orchestrator thread. Asked in the app, AC chose "Fresh subagent from here".
+- **Disclosed deviation** from handoff 02 ("fresh thread") and from AC's earlier "distinct thread" ruling:
+  - the audit is run by a newly spawned Claude Opus 5.5 xhigh subagent;
+  - its only input is handoff 02 and the repository; it has no access to the development conversation;
+  - it writes `audit-01.md` and its own scripts;
+  - this thread only commits its outputs and does not edit them.
+  CLAUDE_ROLES' "auditor must be a different agent from the developer" is met at the agent level. Independence is weaker than with a separate thread because the developer orchestrator relays and commits the audit.
