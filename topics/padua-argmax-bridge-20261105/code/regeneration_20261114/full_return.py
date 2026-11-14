@@ -186,6 +186,7 @@ def verify(archive, archive_sha):
         for name, value in files.items():
             safe(name)
             need(set(value) == {'bytes', 'sha256'} and type(value['bytes']) is int and value['bytes'] >= 0 and len(value['sha256']) == 64 and all(c in '0123456789abcdef' for c in value['sha256']), 'inventory identity shape')
+        need(all(files[name] == manifest[name] for name in set(files) & set(manifest)), 'no archive trusted-source shadowing')
         for value in files.values():
             need(bundle.getinfo('sha256/' + value['sha256']).file_size == value['bytes'], 'every retained file byte count')
         cache = OrderedDict(); cache_bytes = 0; budget = 128*1024**2
