@@ -30,3 +30,10 @@ Every pass receives full unchanged `validate_pass` validation, exact rational re
 Independent I25 reconstruction is a separate delegated execution with its own preregistration. New local campaign/result inventory and a separately reviewed reader/profile will identify this generation explicitly, without changing historical archive/default runner pins or using synthetic proof adapters. Mathematical adoption remains pending that independent reconstruction and review. Large outputs stay outside Git; only small necessary evidence summaries and manifests may be committed under workflow limits.
 
 The freeze commit gate is an orchestrator operational requirement; the wrapper enforces the frozen identities without invoking Git.
+
+## Dated amendment clarification — 2026-11-14
+
+Commit `4ed88e9` made a developer-metadata/whitespace correction after the
+`b918c1d` native freeze. This prose amendment changes no scientific scope,
+caps or executed code. The immutable machine preregistration and source
+identities pinned by frozen-inputs.json remained the operative inputs.

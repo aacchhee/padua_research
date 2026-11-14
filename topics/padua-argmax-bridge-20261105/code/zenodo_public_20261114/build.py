@@ -27,8 +27,26 @@ def copy(source,name=None):
 def identity(name,b,source,**extra):
     return dict(path=name,bytes=len(b),sha256=sha(b),source=source,**extra)
 def main():
-    parser=argparse.ArgumentParser(description=__doc__); parser.add_argument('--source-commit',required=True); args=parser.parse_args()
+    global OUTPUT, PACKAGE
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--source-commit',required=True)
+    parser.add_argument('--pdf-identities',type=Path,required=True,help='Current manuscript identities: source_freeze and manuscripts paper/companion path, bytes, sha256')
+    parser.add_argument('--output',type=Path,required=True,help='New sibling output directory; existing output is never overwritten')
+    args=parser.parse_args()
+    OUTPUT=args.output.resolve(); PACKAGE=OUTPUT/'padua-reproducibility'
+    if OUTPUT.exists(): raise RuntimeError('no output directory overwrite')
     if re.fullmatch(r'[0-9a-f]{40}',args.source_commit) is None: raise ValueError('source commit must be full SHA')
+    pdf_identities=json.loads(args.pdf_identities.read_bytes())
+    manuscript_freeze=pdf_identities['source_freeze']
+    if re.fullmatch(r'[0-9a-f]{40}',manuscript_freeze) is None: raise ValueError('manuscript source freeze must be full SHA')
+    if set(pdf_identities['manuscripts'])!={'paper','companion'}: raise ValueError('manuscript identity scope')
+    manuscript_bytes={}
+    for role,row in pdf_identities['manuscripts'].items():
+        p=Path(row['path'])
+        if not p.is_absolute(): raise ValueError('PDF identity path must be absolute')
+        b=p.read_bytes()
+        if type(row['bytes']) is not int or len(b)!=row['bytes'] or sha(b)!=row['sha256']: raise ValueError('current PDF identity '+role)
+        manuscript_bytes[role]=b
     OUTPUT.mkdir(parents=True,exist_ok=True)
     if PACKAGE.exists(): raise RuntimeError('no package overwrite')
     PACKAGE.mkdir()
@@ -87,16 +105,14 @@ def main():
     for n in range(33,41): copy(TOPIC/f'evidence/independent-n{n}.json',f'polynomial/receipts/n{n:04d}.json')
     for name in ('check.py','base_table.py','receipt.json'): copy(TOPIC/'code/onset512_analytic'/name,'analytic/'+name)
     for role,source in [('paper','paper'),('companion','companion-paper')]: copy(TOPIC/source/'sections/comparison-unified.tex',f'analytic/tables/{role}.tex')
-    delivery=json.loads((TOPIC/'regeneration-delivery.json').read_bytes())
     for role in ('paper','companion'):
-        row=delivery['manuscripts'][role]; b=Path(row['path']).read_bytes()
-        if sha(b)!=row['sha256']: raise ValueError('PDF identity')
-        save(f'papers/{role}.pdf',b)
-        SOURCES[f'papers/{role}.pdf']=dict(path=row['path'],sha256=row['sha256'])
+        row=pdf_identities['manuscripts'][role]
+        save(f'papers/{role}.pdf',manuscript_bytes[role])
+        SOURCES[f'papers/{role}.pdf']=dict(path=row['path'],bytes=row['bytes'],sha256=row['sha256'],source_freeze=manuscript_freeze)
     copy(HERE/'verify.py','verify.py')
     for name in ('README.md','README.txt'): copy(HERE/'README.txt',name)
     payload=[identity(p.relative_to(PACKAGE).as_posix(),p.read_bytes(),SOURCES.get(p.relative_to(PACKAGE).as_posix(),dict(generated_by='code/zenodo_public_20261114/build.py'))) for p in sorted(PACKAGE.rglob('*')) if p.is_file()]
-    manifest=dict(format='padua-public-reproducibility-v1',scientific_source_base_commit=SOURCE,public_adapter_source_commit=args.source_commit,public_adapter_sha256=sha((HERE/'verify.py').read_bytes()),builder_sha256=sha(Path(__file__).read_bytes()),phase_inputs=phase,polynomial_inputs=poly,payload=payload,expected_results_source='local-output/argmax-bridge-20261105/i25-regeneration-20261114/full-v1/worker-{0,1,2,3}/observations.jsonl; CPU_seconds omitted; all other fields retained',scope='finite certificate inputs 2 through 511 plus exact analytic checker for the degree >=512 reduction; premises in paired PDFs',license='No standalone license grant supplied in repository; owner publication metadata pending')
+    manifest=dict(format='padua-public-reproducibility-v1',scientific_source_base_commit=SOURCE,public_adapter_source_commit=args.source_commit,manuscript_source_freeze=manuscript_freeze,public_adapter_sha256=sha((HERE/'verify.py').read_bytes()),builder_sha256=sha(Path(__file__).read_bytes()),phase_inputs=phase,polynomial_inputs=poly,payload=payload,expected_results_source='local-output/argmax-bridge-20261105/i25-regeneration-20261114/full-v1/worker-{0,1,2,3}/observations.jsonl; CPU_seconds omitted; all other fields retained',scope='finite certificate inputs 2 through 511 plus exact analytic checker for the degree >=512 reduction; premises in paired PDFs',license='No standalone license grant supplied in this package; owner publication metadata pending')
     save('MANIFEST.json',(json.dumps(manifest,indent=2,sort_keys=True)+'\n').encode())
     sums=''.join(sha(p.read_bytes())+'  '+p.relative_to(PACKAGE).as_posix()+'\n' for p in sorted(PACKAGE.rglob('*')) if p.is_file())
     save('SHA256SUMS',sums.encode())
@@ -104,7 +120,11 @@ def main():
     if archive_out.exists(): raise RuntimeError('no ZIP overwrite')
     with zipfile.ZipFile(archive_out,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
         for p in sorted(PACKAGE.rglob('*')):
-            if p.is_file(): z.write(p,p.relative_to(OUTPUT).as_posix())
+            if p.is_file():
+                info=zipfile.ZipInfo.from_file(p,p.relative_to(OUTPUT).as_posix())
+                info.create_system=3; info.external_attr=(0o100644 << 16)
+                info.compress_type=zipfile.ZIP_DEFLATED
+                z.writestr(info,p.read_bytes(),compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
     report=dict(zip_bytes=archive_out.stat().st_size,zip_sha256=sha(archive_out.read_bytes()),files=sum(p.is_file() for p in PACKAGE.rglob('*')),expanded_bytes=sum(p.stat().st_size for p in PACKAGE.rglob('*') if p.is_file()),phase_records=len(phase),polynomial_certificates=len(poly))
     (OUTPUT/'build-receipt.json').write_text(json.dumps(report,indent=2)+'\n'); print(json.dumps(report))
 if __name__=='__main__': main()

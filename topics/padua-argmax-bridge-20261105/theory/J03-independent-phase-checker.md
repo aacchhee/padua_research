@@ -309,3 +309,12 @@ Missing historical I25/onset archives are no longer paper dependencies;
 historical records above remain historical. Runtime probes remain finite
 per-process evidence, not universal IEEE/libm/SIMD guarantees. No result
 statement, threshold or premise changes.
+
+### Recorded pair-equality field clarification — 2026-11-14
+
+The frozen result field `independent_primary_fresh_pairs_equal` counts
+agreement of the two result rows produced by the independent-checker route.
+Its finite-function interval cache is shared within a degree. Thus 471 equal
+pairs are not 942 independent numerical bound derivations; every input's
+structure and strict predicates are still checked. No frozen result or core
+is renamed or changed by this clarification.

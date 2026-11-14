@@ -3537,3 +3537,31 @@ with AC: which package(s) the data statements name; disclosure of absolute
 paths and internal process text inside the pinned public inputs (P7-02);
 global budget; DOI/AI declaration/ORCID/draft marker. Next:
 [handoff 38](handoffs/38-answer-audit07.md).
+
+## 2026-11-14 — Codex response to audit-07 (handoff 38)
+
+Rules read at `d6dd6730e5413a238f5c55630d0d907fb5e41563`, unchanged after
+fetch/fast-forward to `9d3f5e0f8b270d039d78d4ebc0df53269a7892ab`.
+Main remains `99a9b1d161e41a80c4fd425b63022c681fbe8779`, already merged.
+Claude accepts the mathematics, regenerated evidence and public replays;
+P7-01/E7-01/M7-01 is one MAJOR publication-description mismatch, not a
+mathematical finding. This response is one paired prose/tooling/package
+batch; no novelty content, new ID range, theorem/premise/threshold change,
+native generation or full numerical campaign. Sol medium develops the
+bounded changes; distinct Astra high reviews the delta, configured through
+agent dispatch with effective serving metadata unexposed. Root controls Git.
+
+AC's previous instructions identify the new small archive as the public
+Zenodo candidate and the large archive as preservation in cold storage.
+Those instructions authorize describing the two artifacts accurately;
+no extra wording approval is inferred necessary. No upload/DOI is authorized.
+For P7-02, AC explicitly selects "Retain with explicit disclosure" in this
+session. All checksum-bound inputs/provenance remain byte-identical; the
+README will disclose the embedded home/workspace/runtime paths and internal
+process text plainly. That disclosure choice is resolved, with no sanitization.
+
+Six paired TeX files are corrected. A distinct reviewer independently confirms
+all 19 statements and 86 numbered display blocks per tree remain byte-identical.
+All other requested wording fixes ride in the same new source freeze. Actual
+build/aux/code/ZIP results will be recorded only after execution. Old public
+and preservation archive bytes remain unchanged.

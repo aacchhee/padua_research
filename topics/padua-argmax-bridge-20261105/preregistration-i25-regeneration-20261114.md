@@ -32,3 +32,12 @@ A distinct agent reviews source/preregistration/freeze before launch. After succ
 ## Concrete input freeze — before execution
 
 After successful native campaign and full unchanged validate_pass on all382 native passes, direct data-only staging supplied exactly382 immutable bytecopies. The concrete inventory is112328bytes, SHA256 `3d670da1914987a9033a2b4a3e36c53264dc1e72eaa41dcfb3eb704080c6990f`. The path uses `-direct-essentials` because separate native-export staging had data-path/affinity failures; no numerical campaign was rerun. `input-freeze.json` records this newly authenticated inventory, unchanged checker/driver sources and actual runtime byte identities. Distinct review and root commit gate execution.
+
+## Dated amendment clarification — 2026-11-14
+
+The census-detail amendment in `4ed88e9` and concrete staging-path/input-freeze
+amendment in `164a04c` preceded the full numerical launch. The concrete input
+section above was added at that freeze, on 2026-11-14. The recorded input JSON
+and its ten code/runtime pins are unchanged. The exact historical direct-stage
+body is now retained as code/regeneration_i25_20261114/stage_inputs_20261114.py;
+its later Git addition is code preservation, not a new staging execution.
