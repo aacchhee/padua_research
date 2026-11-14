@@ -1,7 +1,7 @@
 # MZ paper finalization (MZ-CC and MZ-SP): log
 
 - Branch: `claude/padua-mz-paper-20261113` · Base: main `99a9b1d` (merged at `fa956de`) · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- PR #35 · Stage: PR (agent readiness PASS) · Focused check: [readiness-02.md](readiness-02.md). Handoff transition is recorded below; remaining publication decisions belong to AC.
+- PR #35 · Stage: PR (agent readiness PASS) · Focused check: [readiness-02.md](readiness-02.md). Open handoff: [11-owner-finalization.md](handoffs/11-owner-finalization.md), after AC's publication/frozen-text decisions.
 - Reserved final-ID range: PD-T684–689; assigned PD-T684/685, permanent gaps PD-T686–689. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Decided by AC: venues (MZ-CC SINUM, MZ-SP JAT); Zenodo later; companion = AC-only reading aid, arXiv and journal versions identical (2026-11-13).
 
@@ -256,7 +256,7 @@ Claude, claude-opus-5-5 (configured xhigh).
 - Reconstructed replacement manifests at the pinned pack source: all 1,046 repository members and both corrected verifier/template sets match. Remaining container/runtime/log-byte limits are recorded once in readiness-02. The source and scientific registry content is unchanged; no new allocation is made.
 - Live main remains `99a9b1d`; PR27 advanced to `50070f52` but all ledgers and four registries are unchanged from the previous fully checked head. The existing allocation-union refresh therefore remains applicable under handoff 10.
 - One MINOR index-only log-location correction was made separately at `6d3307f9`: console logs are inside the packs, while the environment record is in Git. No packaged file or delivered archive identity changes. The focused report/checker/receipt are in `readiness-02.md` and `audit-support/readiness02-*`.
-- Agent work is ready for review. AC's deposit, placeholders/frozen-text confirmation, SIAM repository-file decision, any subsequent companion instruction and merge remain reserved. Only AC merges.
+- Agent work is ready for review. Output: `a087aadee3a28a7e2fff2fb513949a1c643aaa57`; handoff 10 is closed there and [handoff 11](handoffs/11-owner-finalization.md) records the remaining AC-controlled finalization. AC's deposit, placeholders/frozen-text confirmation, SIAM repository-file decision, any subsequent companion instruction and merge remain reserved. Only AC merges.
 
 ## Runs needed
 

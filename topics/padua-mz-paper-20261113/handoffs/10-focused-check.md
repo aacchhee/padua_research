@@ -1,6 +1,6 @@
 # Handoff 10 — focused check of the verifier fixes (P1, P2, R1) and the replacement packs
 
-- Status: open
+- Status: done in a087aadee3a28a7e2fff2fb513949a1c643aaa57
 - Previous handoff: [09-verifier-response.md](09-verifier-response.md), done in `ccaf2cae3ac937a1f2b2a3dbd2c425059032e8cf`.
 - Next agent / model / effort: **Codex, gpt-6-astra medium**: a protocol and technical check of shell entrypoints, records and archive differences. Raise the effort only if a finding touches a certificate.
 - Branch: `claude/padua-mz-paper-20261113` · Draft PR #35.
