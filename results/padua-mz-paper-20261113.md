@@ -1,8 +1,8 @@
 # padua-mz-paper-20261113 — finalizing the MZ papers (MZ-CC, MZ-SP)
 
-This file is written only by the topic orchestrator. Branch `claude/padua-mz-paper-20261113`; draft PR #35.
+This file is written only by the topic orchestrator. Branch `claude/padua-mz-paper-20261113`; PR #35.
 
-## Status (2026-11-14): WORK, draft PR #35; both papers complete internal drafts, Codex audit pending
+## Status (2026-11-14): PR; agent readiness PASS, publication decisions reserved to AC
 
 Target: split *Marcinkiewicz–Zygmund constants of Clenshaw–Curtis and Padua rules beyond half-exactness* (AC, 2026-11-13) into two submission-ready manuscripts for AC's decision:
 
@@ -21,10 +21,10 @@ Plan: [BRIEF](../topics/padua-mz-paper-20261113/BRIEF.md) and [handoff 01](../to
 ## Results so far (current, 2026-11-14, PR preparation)
 
 **Status.**
-- PR35 is draft. Codex [audit-01](../topics/padua-mz-paper-20261113/audit-01.md) is answered by [response-01](../topics/padua-mz-paper-20261113/response-01.md).
+- Agent work is ready for review under [readiness-02](../topics/padua-mz-paper-20261113/readiness-02.md); only AC merges. Codex [audit-01](../topics/padua-mz-paper-20261113/audit-01.md) is answered by [response-01](../topics/padua-mz-paper-20261113/response-01.md).
 - Final IDs are assigned from the reserved range PD-T684–689 ([ledger](../topics/padua-mz-paper-20261113/ALLOCATIONS.md)).
 - The shared registries are updated.
-- [Readiness-01](../topics/padua-mz-paper-20261113/readiness-01.md) passed the response, the merge, the reservation and the registry application, and independently replayed the regenerated PD-T376 witnesses. It found two verifier-entrypoint defects and one registry-hygiene item, all fixed in [response-readiness-01](../topics/padua-mz-paper-20261113/response-readiness-01.md). A focused check of those fixes is pending.
+- [Readiness-01](../topics/padua-mz-paper-20261113/readiness-01.md) passed the response, the merge, the reservation and the registry application, and independently replayed the regenerated PD-T376 witnesses. Its two verifier-entrypoint defects and registry-hygiene item are fixed in [response-readiness-01](../topics/padua-mz-paper-20261113/response-readiness-01.md) and accepted in readiness-02. All eight fresh outcome controls and real CC runs with relative/bare interpreters pass; replacement source/manifests are checked at the stated reconstruction scope. No new scientific claim or status is introduced.
 
 Details: [report for AC](../topics/padua-mz-paper-20261113/report.md), [LOG](../topics/padua-mz-paper-20261113/LOG.md), and the scope tables in the two READMEs.
 

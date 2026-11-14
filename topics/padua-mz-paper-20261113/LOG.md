@@ -1,7 +1,7 @@
 # MZ paper finalization (MZ-CC and MZ-SP): log
 
 - Branch: `claude/padua-mz-paper-20261113` · Base: main `99a9b1d` (merged at `fa956de`) · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Draft PR #35 · Stage: WORK (readiness verifier findings) · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Open handoff: [09-verifier-response.md](handoffs/09-verifier-response.md). Readiness: [readiness-01.md](readiness-01.md).
+- PR #35 · Stage: PR (agent readiness PASS) · Focused check: [readiness-02.md](readiness-02.md). Handoff transition is recorded below; remaining publication decisions belong to AC.
 - Reserved final-ID range: PD-T684–689; assigned PD-T684/685, permanent gaps PD-T686–689. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Decided by AC: venues (MZ-CC SINUM, MZ-SP JAT); Zenodo later; companion = AC-only reading aid, arXiv and journal versions identical (2026-11-13).
 
@@ -249,8 +249,17 @@ Claude, claude-opus-5-5 (configured xhigh).
   - CC `729fb953…4073` (959,748 B);
   - SP `e8dfc5af…7166` (40,710,337 B).
 
+## 2026-11-14 — Codex, gpt-6-astra medium — focused readiness check PASS
+
+- Rules/input `b2e47412e74d2082d2c4e5587baf89cf7b25ab3a`, pack source `52030d1`; [readiness-02.md](readiness-02.md) accepts P1/P2/R1 with no unresolved focused finding. Model/effort are the configured assignment; serving metadata are not independently exposed. No accepted mathematical result, witness or numerical producer was reopened.
+- Independently executed all eight real-shell outcome controls on freshly staged pack copies; expected exits and summaries pass, including optional mismatch exit 2 and required/program failure exit 1. Full real CC runs pass with both relative virtualenv and bare PATH interpreters. SP optional entrypoint/outcome logic is exercised by the controls; its unchanged full numerical suite remains the accepted readiness-01 execution, not a new run here.
+- Reconstructed replacement manifests at the pinned pack source: all 1,046 repository members and both corrected verifier/template sets match. Remaining container/runtime/log-byte limits are recorded once in readiness-02. The source and scientific registry content is unchanged; no new allocation is made.
+- Live main remains `99a9b1d`; PR27 advanced to `50070f52` but all ledgers and four registries are unchanged from the previous fully checked head. The existing allocation-union refresh therefore remains applicable under handoff 10.
+- One MINOR index-only log-location correction was made separately at `6d3307f9`: console logs are inside the packs, while the environment record is in Git. No packaged file or delivered archive identity changes. The focused report/checker/receipt are in `readiness-02.md` and `audit-support/readiness02-*`.
+- Agent work is ready for review. AC's deposit, placeholders/frozen-text confirmation, SIAM repository-file decision, any subsequent companion instruction and merge remain reserved. Only AC merges.
+
 ## Runs needed
 
-- Claude response to readiness P1/P2/R1; follow the next open handoff. Then a focused check of the changed verifier outcomes, entrypoint commands and replacement pack identities; no repeated proof audit is indicated.
+- No further audit or scientific rerun is requested for the accepted scope. A material change requires only the proportionate focused check defined by WORKFLOW.
 - AC: upload the two packs to Zenodo; fill in the DOIs and the commit hash.
 - The earlier missing-input replay obligation is resolved by the independently regenerated exact witness payloads and actual replay above. The unread original SP ZIP's compressed identity remains a separate access limitation.
