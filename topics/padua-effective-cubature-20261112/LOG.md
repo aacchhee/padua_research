@@ -167,6 +167,10 @@
 - Fresh optional input retrieval again returned HTTP403. No full Codex gamma/compact/FT replay was performed; prior independent/developer runs and earlier bounded controls remain distinct. The limitation and inherited archival pending item must remain visible through PR preparation. No new computational PASS is claimed here.
 - Next: [handoff 08](handoffs/08-pr-preparation.md), PR preparation and then the readiness check. Only AC merges; the PR remains draft until preparation/readiness requirements are met.
 
+## 2026-11-14 — AC authorization
+
+- AC: "yes I approve this PR34 and all other writes to this branch". This approves the prepared audit-03 PR #34 update and records standing authorization for further writes to `claude/padua-effective-cubature-20261112`. The open work instruction remains handoff 08; only AC merges under the repository rules.
+
 ## Runs needed (retained development list)
 
 - Delsarte torus LP n = 9…12 at K = 3n−2 (`attempts/E1.md`); cube LP n ≥ 5 and its Delsarte extension (`attempts/E3.md`); certified φ (-05). *(2026-11-13: "certified φ (-05)" is done. The general-L¹ witness is in -07 and the compact-support witness in -05; see the response-01 entry. The other items stay deferred and unrun; the audit handoff authorises no new development.)*
