@@ -15,6 +15,7 @@ import zipfile
 
 import campaign as C
 R = C.R
+PYTHON_INVOCATION = '/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3'
 from evidence import Access, identities, safe, validate_pass
 
 COMPARE = ('tree', 'S_upper_rows', 'lambda_upper_rows', 'norm', 'verification',
@@ -68,7 +69,7 @@ def validate(reader, root, prefix, frozen):
             ex = get(case + '/' + mode + '-exit.json'); exits.append(ex)
             need(type(ex['observed_returncode']) is int and ex['observed_returncode'] == 0 and ex['ECHILD'] is True and ex['timeout'] is False and ex['cleanup_killed'] == [], 'observed pass terminal EXIT0')
             need(type(ex['waitstatus']) is int and os.waitstatus_to_exitcode(ex['waitstatus']) == ex['observed_returncode'], 'pass raw waitstatus linkage')
-            command = [prereg['python']['path'], '-E', '-S', '-B', root + '/topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py', '--mode', mode, '--n', str(n), '--output', root + '/' + target, '--run-once']
+            command = [PYTHON_INVOCATION, '-E', '-S', '-B', root + '/topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py', '--mode', mode, '--n', str(n), '--output', root + '/' + target, '--run-once']
             if mode == 'verify': command += ['--certificate', root + '/' + case + '/produce/essential-receipt.json']
             need(ex['command'] == command, 'exact observed engine command')
             local = get(target + '/local-validation.json')
