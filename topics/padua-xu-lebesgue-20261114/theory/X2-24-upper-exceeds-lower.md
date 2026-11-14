@@ -11,7 +11,7 @@ For every even n ≥ 2, for the Morrow–Patterson points MP_n and interpolation
 
 λ_n(1, 1) = λ_n(−1, 1) = (n + 1) + 2 Σ_{(p,q)∈𝒩∖B} A_{p,q} > n + 1 = λ_n(1, −1) = λ_n(−1, −1),
 
-where A_{p,q} > 0 on 𝒩∖B (notation of X2-23) and 𝒩∖B ≠ ∅. Consequently Λ_n := max_Q λ_n ≥ λ_n(1,1) > n + 1.
+where A_{p,q} ≥ 0 on 𝒩∖B (notation of X2-23) and A_{p,q} > 0 for at least one node of 𝒩∖B. Consequently Λ_n := max_Q λ_n ≥ λ_n(1,1) > n + 1.
 
 ## Definitions
 

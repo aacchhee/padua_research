@@ -46,3 +46,20 @@
 - T0 kill test: the vertex value is not a Padua corner value. It coincides with PD-T159's F_n, so the vertex expansion alone is a corollary of merged PD-T159 + PD-T270. The new parts are the identification, the exact global constant and the argmax.
 - Orchestrator's independent numerical check (not the researcher's scripts): the Sonnet path-B vertex values in `evidence/xu-vertex-values.json` equal L_n² to < 1.2e−28 for all 400 tested n ≤ 401.
 - Next: an independent Opus check; a novelty re-gate (Li–Sun–Xu 2009 §3.3 lift; BdMV proof; Dencker–Erb), running.
+
+## 2026-11-14 — round X2-2 result (Fable 5.2 xhigh researcher)
+
+- Developer claims, all audit pending:
+  - **PROVED:**
+    - X2-21: corner kernel; re-derives Beberok (2);
+    - X2-22: λ_n(±1,−1) = n+1;
+    - X2-23: exact closed form and sign band at (±1,1);
+    - X2-24: λ(±1,1) > n+1;
+    - X2-25: λ_n(1,1) = c*(n+5/2)² − (n+1) + O(log²n), with explicit two-sided bounds; c* = 0.51695365336… in closed form, certified enclosure;
+    - X2-26: Λ_n > c*n² for every even n ≥ 2;
+    - **X2-N29**: λ(x,y) ≠ λ(−x,−y), and Λ_n is not attained at (±1,−1), every even n ≥ 2 (negative answer to BBDM §7.1);
+    - **X2-N30**: no vertex value equals (n+1)(n+2)/2.
+  - **MEASURED:** X2-27.
+  - **OPEN:** X2-28, the argmax at (±1,1), with plan P1–P5.
+- Computer-assisted parts: X2-26 and X2-N30 at small n, and the c* enclosure. They need an independent rerun (`code/mp/research/x2_corner_checks.py`, `x2_corner_arb.py`).
+- Next: an independent Opus check of the X2 records; round X2-3 (Fable) on the argmax.
