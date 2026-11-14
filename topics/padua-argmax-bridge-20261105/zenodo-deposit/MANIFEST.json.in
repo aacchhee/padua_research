@@ -246,7 +246,7 @@
     "original_48_162_page_PDF_hashes_preserved": true
   },
   "manuscript_source_freeze": "24a98db4c3c4c4d0eede2e3929532956df87911b",
-  "local_package_status": "All paper-dependent evidence present/regenerated; complete 296,189,961 byte package independently verified/extracted; external storage/DOI pending",
+  "local_package_status": "Preservation archive unchanged; AC reports cold storage. Separate reviewed public candidate 5138944 B; no Zenodo upload/DOI.",
   "small_bundle_recheck_recipe": "RECHECK-SMALL-BUNDLE.md",
   "revision_note_2026_11_13": "Root and distinct reviewer authenticate original uploaded package/return and accept 280 pairs through repaired compact verifier; actual repaired onset512 canonical reader run remains blocked.",
   "historical_pre_audit04_source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6",
@@ -254,10 +254,10 @@
     "convention": "all positive deltas; no deletion or shrink credit",
     "pre_current_batch_bytes": 9917613,
     "cap_bytes": 10000000,
-    "final_batch_bound": 11801088,
-    "current_main_merge_positive_bytes": 1827288,
-    "actual_current_classified_bytes": 11778834,
-    "post_original_topic_positive_deltas_bytes": 1883475,
+    "final_batch_bound": 11864226,
+    "current_main_merge_positive_bytes": 1881011,
+    "actual_current_classified_bytes": 11841948,
+    "post_original_topic_positive_deltas_bytes": 1946613,
     "cap_satisfied": false,
     "historical_audit05_input": {
       "main_classified_bytes": 9733758,
@@ -267,9 +267,9 @@
       "union_with_exception_bytes": 11731649,
       "conservative_bound_bytes": 11751309
     },
-    "current_main_classified_bytes": 9733758,
-    "current_topic_classified_share_bytes": 2045076,
-    "current_actual_with_FREEZE_exception_bytes": 11780921
+    "current_main_classified_bytes": 9787481,
+    "current_topic_classified_share_bytes": 2054467,
+    "current_actual_with_FREEZE_exception_bytes": 11844035
   },
   "verifier_provenance": {
     "original_padua30_unrepaired_verify_compact_sha256": "7c2dad53519aff616bdadd3f925ec8943963cb4bf521b410355f827b7a1899bf",
@@ -302,5 +302,10 @@
     "historical_PDF_preservation_retested": false
   },
   "historical_response04_paired_source_commit": "ad908acb21d3589d85635618ff68f63dd01cfbca",
-  "paper_evidence_generation": "regeneration-20261114.md"
+  "paper_evidence_generation": "regeneration-20261114.md",
+  "public_reproducibility_package": {
+    "record": "zenodo-public-delivery.json",
+    "bytes": 5138944,
+    "sha256": "15885d34498b7f20c20f4b97453babfa85a09d46490dbcb14c051b429e2ee036"
+  }
 }

@@ -84,9 +84,15 @@
     "source_freeze": "e861c752218fc0a6648d4a4a67fea616ba5cbdd1",
     "record": "regeneration-20261114.md",
     "delivery_receipt": "regeneration-delivery.json",
-    "status": "Complete new paper-dependent package present locally, independently verified/freshly extracted; external permanent custody pending",
+    "status": "Preservation archive independently verified locally; AC reports cold-storage copy, external retrieval not retested",
     "historical_missing_artifacts_required": false,
     "package_bytes": 296189961,
     "package_sha256": "d3452a176a220a649ca889cacd43c9c0d96fb75e12ae84849d0a07ee6b7d354c"
+  },
+  "zenodo_public_candidate": {
+    "record": "zenodo-public-delivery.json",
+    "bytes": 5138944,
+    "sha256": "15885d34498b7f20c20f4b97453babfa85a09d46490dbcb14c051b429e2ee036",
+    "status": "Local reviewed public candidate; no upload or DOI assigned"
   }
 }

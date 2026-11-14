@@ -438,3 +438,22 @@ preregistrations and frozen inputs; see [regeneration-20261114.md](../regenerati
 for their current outcome and the complete delivery record. The dated
 statements above describe earlier checkpoints and do not certify the new
 run. No permanent storage, external retrieval or DOI is asserted here.
+
+## Public-facing Zenodo candidate — 2026-11-14
+
+Use the separate **5,138,944-byte** ordinary ZIP for the public deposit,
+SHA256 `15885d34498b7f20c20f4b97453babfa85a09d46490dbcb14c051b429e2ee036`.
+[Public package description](../zenodo-public-package-20261114.md),
+[readable root guide](../code/zenodo_public_20261114/README.txt),
+[receipt](../zenodo-public-delivery.json) and
+[standalone review](../zenodo-public-review-20261114.md) describe the exact candidate.
+It presents one current dataset by degree, all 942 phase records and 39
+polynomial inputs, minimal checker dependencies, expected scientific results,
+analytic checks/tables and the two PDFs. A normal unzip exposes README.txt
+and README.md; no hash-object unpacker or historical tar is required.
+
+The larger 296 MB archive is a separate preservation bundle; AC reports it
+is now in cold storage. It remains unchanged and is not the suggested normal
+Zenodo download. The public candidate omits native histories, OS/runtime and
+compiler binaries, the full repository, and internal audit/custody records.
+No upload, DOI assignment or new license/authorship metadata is claimed.

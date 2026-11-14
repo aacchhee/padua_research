@@ -3452,3 +3452,54 @@ CPU 300 s, wall 600 s, address 2 GiB, one core and explicit signal/cleanup/wait4
 Distinct reviewer plans phase 458 (both records) under 120 CPU/180 wall/2 GiB and
 structural negative controls, from fresh ordinary extraction while denying
 original-repository reads. No full 942 or full 39 rerun is claimed or requested.
+
+Public adapter/build source committed before execution at
+`77e4f1e73f59098ee280d9ed681a33d823e5e7aa` after distinct static review.
+The new normal ZIP is 5,138,944 bytes, 1,019 ordinary files / 10,213,669
+expanded bytes, SHA256
+`15885d34498b7f20c20f4b97453babfa85a09d46490dbcb14c051b429e2ee036`.
+It has identical plain README.txt and README.md at the package root; 942
+ordinary phase JSON inputs total 5,553,537 bytes and 39 polynomial inputs
+196,496 bytes. Thirty-two necessary mapped source files are unchanged;
+two compact polynomial accepted-summary transformations retain only the
+scientific rows and explicit source mappings. No original tar, repository
+clone, native producer, OS/runtime binary or internal audit history is
+required by the standalone public replay.
+
+Developer quick command passes once: phase 41/511 both records, fresh
+polynomial kernel and 2/17 strict checks, exact analytic assertions and both
+60-entry tables. Direct wait status zero, no cleanup/error, CPU 26.515693 s,
+wall 38.006790 s. Distinct review verifies all 942 source/expected-record links,
+all 39 input identities, ordinary extraction/root guides and seven structural
+negative controls. A fresh separate phase 458 replay passes both records,
+raw wait status zero, CPU 12.345528 s, wall 23.696574 s, zero attempts to read
+original workspace files. No new full 942 or full 39 run is claimed. The
+unchanged core's existing full 942 outcome remains the recorded full outcome.
+Actual scopes and receipts: zenodo-public-package-20261114.md and the distinct
+zenodo-public-review-20261114.md; artifact metadata zenodo-public-delivery.json.
+
+The old preservation ZIP was independently rehashed unchanged at d3452a17…;
+AC's external cold-storage report is acknowledged without inventing a locator
+or claiming a retrieval test. The public candidate has not been uploaded to
+Zenodo; license, DOI, author/funding metadata and publication remain AC's.
+The public package/guide are staged for direct small downloads. Existing
+paper sources/PDFs, theorem statements, ranges and numerical premises do not
+change. The focused audit handoff will encompass this additional public
+adapter/package delta, rather than claiming the already pending Claude audit
+has been performed. No new ID range or final-ID assignment.
+
+Public candidate remains local and unuploaded. It is staged for download as
+/workspace/shared/downloads/padua-zenodo-20261114.zip, with its readable guide
+as Padua-Zenodo-README.txt. The source packet is a public verification kit;
+the older large bundle is preservation, now owner-reported in cold storage.
+
+After reconciling main and adding the small public recipe/receipt: main
+9,787,481 bytes; topic share 2,054,467; union 11,841,948; with the 2,087-byte
+exception 11,844,035; conservative no-shrink bound 11,864,226. New main adds
+53,723 classified bytes. Neither branch alone exceeds 10 MB, but their union
+does; no shrink credit or unrelated evidence removal is used. New public ZIP
+and bulk inputs stay outside Git. COLD_STORAGE.md is 16,064 bytes and deposit
+manifest 16,043; all newly added source/receipt files respect the individual
+limit. AC's budget/publication decisions are not inferred from packaging.
+
+Next: [handoff 37 — focused audit including public verification kit](handoffs/37-claude-audit-public-reproduction.md).

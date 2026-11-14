@@ -136,3 +136,17 @@ snapshot and ZIP, avoiding a self-referential hash. No permanent external storag
 Windows transfer is asserted; a compatible host ABI/toolchain remains an
 explicit reproduction requirement. Historical-only missing artifacts are
 retired as acceptance requirements, not silently claimed recovered.
+
+### Reader-facing publication candidate
+
+The complete preservation ZIP described above remains unchanged; AC reports
+it is now in cold storage. The separate public Zenodo candidate is a normal
+5,138,944-byte ZIP with plain root README files and ordinary directories.
+It contains all current mathematical inputs and minimal checker sources,
+expected results and the PDFs, without the large preservation-only payload.
+[Public package](zenodo-public-package-20261114.md),
+[receipt](zenodo-public-delivery.json),
+[independent public-reader review](zenodo-public-review-20261114.md).
+The original 560 and regenerated 382 phase records are one current
+942-record dataset covering all 471 phase degrees; their origin is provenance,
+not an old-versus-current division of the public dataset.

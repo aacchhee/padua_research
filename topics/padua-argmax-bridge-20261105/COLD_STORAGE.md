@@ -204,9 +204,9 @@ its local path and commands; delivered entries remain empty.
 
 ## Current paper evidence — 2026-11-14
 
-All paper-dependent evidence is present or regenerated. The complete
-296,189,961-byte package is independently verified and freshly extracted;
-[receipt](regeneration-delivery.json), [review](delivery-review-20261114.md)
-and [scope](regeneration-20261114.md) give identities and current data.
-AC retires missing historical-only artifacts as requirements. The records
-above are historical. No Windows transfer, permanent custody or DOI is claimed.
+All required evidence is present. AC reports the verified 296,189,961-byte
+[preservation archive](regeneration-delivery.json) is now in cold storage;
+external retrieval is not retested. The separate 5,138,944-byte
+[Zenodo candidate](zenodo-public-delivery.json) has ordinary files and a
+[root README](code/zenodo_public_20261114/README.txt).
+Historical entries above remain historical. No Zenodo upload or DOI is claimed.
