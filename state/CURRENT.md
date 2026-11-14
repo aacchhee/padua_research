@@ -317,9 +317,9 @@ Scope addendum,2026-11-12: the earlier charter paragraph describing3D Padua as o
 
 ## Effective cube-cubature excess and Padua Lebesgue corollary — PR34, 2026-11-14
 
-[Results](../results/padua-effective-cubature-20261112.md).
-- **Explicit excess.** PD-T679 (PROVED, computer-assisted) makes the PD-T557 excess explicit: γ_A>1/36, N≥37n³/216 at every n, no positive Padua package for n≥218. PD-T678 supplies a compactly supported witness.
+[Results](../results/padua-effective-cubature-20261112.md). Cubature statements in this section use normalized product-Chebyshev measure with all nodes in the closed cube [−1,1]³.
+- **Explicit excess.** PD-T679 (PROVED, computer-assisted) makes the PD-T557 excess explicit: γ_A>1/36, N≥37n³/216 at every n for rules exact on Π_(2n−1), no positive Padua package for n≥218. PD-T678 supplies a compactly supported witness.
 - **Supporting results.** PD-T675 (Delsarte transference) and PD-T676 (uniform form, LITERATURE dependency LIT-716) support it. PD-T677 caps this route at γ≤1/18.
 - **Finite range.** PD-N246 rules out the finite torus LP with M≤8N on n=2…109.
-- **Frontier.** Package existence for 4≤n≤217 and the value of γ_A in (1/36,1/18] remain OPEN. The deferred routes are the cube-Delsarte LP (IDEA-761), separation strengthening (IDEA-759) and a sharper orbit conversion. A cross-agent replay of the γ certificates awaits retrievable input.
+- **Frontier.** Package existence for 4≤n≤217 and the value of γ_A in (1/36,1/18] remain OPEN. The deferred routes are the cube-Delsarte LP (IDEA-761), separation strengthening (IDEA-759) and a sharper orbit conversion. Audits 01–03 did not execute a full Codex γ/compact/FT replay because input retrieval returned HTTP403.
 - **Lebesgue corollary.** PD-T674 assembles the Padua Lebesgue-constant corollary at its finite and eventual ranges; PD-T099's effective bridge remains OPEN.

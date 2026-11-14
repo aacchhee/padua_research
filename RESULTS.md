@@ -598,7 +598,7 @@ The general exact-cardinality polylog interpolation problem remains OPEN. Resear
 
 ## padua-effective-cubature-20261112
 
-For positive product-Chebyshev cubature with all nodes in the closed cube:
+For positive cubature for normalized product-Chebyshev measure with all nodes in the closed cube:
 - **PD-T679, PROVED (computer-assisted).** γ_A>1/36. Every rule exact on Π_(2n−1) has N≥37n³/216 for every n≥1, exceeds dimΠ_(n−1) for n≥109, and no positive Padua package (N=binom(n+3,3)) exists for n≥218. This makes the PD-T557 excess explicit.
   - The certificate re-proves locally, from its coefficients taken as data, the Dostert–Guzmán–de Oliveira Filho–Vallentin octahedron Cohn–Elkies function (LIT-717). There are two independent code paths, both PASS. A cross-agent replay was blocked by HTTP 403 on the third-party input.
   - PD-T678 gives an explicit compactly supported witness with the same γ>1/36.
