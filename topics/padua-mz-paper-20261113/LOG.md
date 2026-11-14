@@ -1,7 +1,7 @@
 # MZ paper finalization (MZ-CC and MZ-SP): log
 
 - Branch: `claude/padua-mz-paper-20261113` · Base: main `99a9b1d` (merged at `fa956de`) · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Draft PR #35 · Stage: PR readiness and focused evidence check in progress · Open handoff: [08-readiness-and-evidence.md](handoffs/08-readiness-and-evidence.md). Substantive audit: [audit-01.md](audit-01.md).
+- Draft PR #35 · Stage: WORK (readiness verifier findings) · Readiness: [readiness-01.md](readiness-01.md). Handoff transition is recorded below. Substantive audit: [audit-01.md](audit-01.md).
 - Reserved final-ID range: PD-T684–689; assigned PD-T684/685, permanent gaps PD-T686–689. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Decided by AC: venues (MZ-CC SINUM, MZ-SP JAT); Zenodo later; companion = AC-only reading aid, arXiv and journal versions identical (2026-11-13).
 
@@ -222,8 +222,16 @@ Claude, claude-opus-5-5 (configured xhigh).
 - New findings under review: the optional SP `--regenerate` mismatch path can print `ALL CHECKS AGREE` and return zero (executable isolated control); minor pending-process text remains in shared records. Neither is a refutation of the accepted mathematics. Support records are in `audit-support/readiness-*.md`.
 - Fresh builds pass at 32/50 pages; all compiled label values match the previous audit builds. The frozen non-cref tables match 52/56 entries. The original uploaded CC ZIP matches its recorded SHA256 and every manifest member; its full verifier passes. The SP pack and independent witness replay are still running; no final disposition is claimed by this checkpoint.
 
+## 2026-11-14 — Codex, gpt-6-astra high — readiness and focused evidence check complete
+
+- [Readiness 01](readiness-01.md): original audit F1–F5 resolved; ID/registry scientific scope and reservation refresh pass; **two new MAJOR verifier findings and one MINOR shared-record cleanup remain**. P1: optional regeneration can disagree but return success; P2: the documented relative virtualenv interpreter fails after the scripts change directory. Both have executed isolated controls; P2 was also reproduced on the actual uploaded CC pack. No theorem, producer, manuscript, developer receipt or shared registry was changed.
+- **Regenerated witnesses independently accepted:** all three original source-vector, decompressed payload and exact-norm hashes match; all three exact producers and independent checkers accept negative energy. This execution resolves the prior missing-input replay limitation for the regenerated pinned inputs. Details and compact receipts are in `audit-support/readiness-witness-replay.*`.
+- **Full default pack checks pass:** uploaded CC ZIP hash/CRC and all377 manifest members pass; four CC verifier comparisons agree. Independently rebuilt SP pack has all25 comparisons agree, including all six exact bracket producers and independent Fraction-pencil checks, both rectangle checks and both measured suites. Finalized fallback ZIP has all706 manifest members pass (707 total files). Receipt: `audit-support/readiness-reruns.json`.
+- **Access limitation and provenance boundary:** the user uploaded both delivered ZIPs. CC is independently read byte-for-byte. The SP ZIP exceeds the executor transfer limit of32MiB; its original compressed bytes, delivered measurement JSON metadata and delivered console log were not read. The handoff-authorized fallback reconstructs the archive from pinned source and independently regenerated exact inputs. The fallback identity is separate, with a fresh verification log; no original-SP-ZIP hash or new physical-device delivery is asserted.
+- Fresh builds remain32/50 pages, with no final warnings or Type3 fonts. All actual compiled label values equal the earlier audit builds, and the frozen ordinary tables match52/56 entries. The completed scoped reports and controls are committed; the next handoff returns the verifier/entrypoint fixes and shared record cleanup to Claude, with a bounded follow-up rather than another mathematical audit.
+
 ## Runs needed
 
-- Codex readiness check plus a focused check of the evidence change ([handoff 08](handoffs/08-readiness-and-evidence.md); handoff 07 superseded before it started).
+- Claude response to readiness P1/P2/R1; follow the next open handoff. Then a focused check of the changed verifier outcomes, entrypoint commands and replacement pack identities; no repeated proof audit is indicated.
 - AC: upload the two packs to Zenodo; fill in the DOIs and the commit hash.
-- A byte-pinned PD-T376 witness replay requires retrieval of the exact missing package named in report §6.2. No receipt alone supplies it; no archival delivery is claimed.
+- The earlier missing-input replay obligation is resolved by the independently regenerated exact witness payloads and actual replay above. The unread original SP ZIP's compressed identity remains a separate access limitation.
