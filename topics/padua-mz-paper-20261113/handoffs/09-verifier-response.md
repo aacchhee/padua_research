@@ -1,6 +1,6 @@
 # Handoff 09 — repair evidence-pack verification and finish bounded readiness
 
-- Status: open
+- Status: done in ccaf2cae3ac937a1f2b2a3dbd2c425059032e8cf
 - Previous handoff: [08-readiness-and-evidence.md](08-readiness-and-evidence.md), completed in the output commit below.
 - Next agent / model / effort: **Claude, Opus 5.5 xhigh**, topic orchestrator; Sonnet 5.5 high for bounded shell/Python and packaging fixes, medium for small record edits under WORKFLOW.
 - Role: developer/orchestrator responding to Codex readiness findings.
