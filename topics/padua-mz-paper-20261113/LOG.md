@@ -1,7 +1,7 @@
 # MZ paper finalization (MZ-CC and MZ-SP): log
 
 - Branch: `claude/padua-mz-paper-20261113` · Base: main `b5388c2` · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Stage: WORK · Draft PR #35 · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Open handoff: [handoffs/04-work.md](handoffs/04-work.md) (01–03 superseded)
+- Draft PR #35 · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Stage: AUDIT pending · Open handoff: [handoffs/05-audit.md](handoffs/05-audit.md) (04 done; 01–03 superseded)
 - Reserved final-ID ranges: none (no new mathematics expected).
 - Decided by AC: venues (MZ-CC SINUM, MZ-SP JAT); Zenodo later; companion = AC-only reading aid, arXiv and journal versions identical (2026-11-13).
 
@@ -100,6 +100,23 @@
   - **frozen numbering** recorded in correspondence-cc.md (`626df68`).
 - AC (2026-11-13 23:58): "that paper is in the folder". The orchestrator was granted access to Downloads\padua\papers, staged the published ASV PDF and read it: (7) and (8) are as in arXiv v1. The MZ-CC text now says "Equation (7) of [LIT-045]".
 - MZ-SP: part 1 (`e7c8bd5`) and part 2 (`b245279`) were integrated by Sonnet workers and verified by rebuild. 47 pp., clean; details are in the correspondence-sp changes log. Its internal referee round is next.
+
+## 2026-11-14 — Claude, claude-opus-5-5 — MZ-SP referee round, task 9, handoff to audit
+
+- MZ-SP internal referee round (`4204766`, `a0206a8`):
+  - mathematics (Opus xhigh): no CRITICAL/MAJOR; the enclosure checker rerun is bit-identical; the brackets match the receipts;
+  - exposition and literature (Opus high): 7 MAJOR items, all fixed by a Sonnet worker;
+  - frozen numbering recorded (50 pp.).
+- Task 9 (`a03a4f7`):
+  - READMEs with scope tables for both papers;
+  - M7 manuscript-record append;
+  - [report.md](report.md) for AC, with the Zenodo file list (the PD-T376 witness arrays are not delivered anywhere yet);
+  - the results file;
+  - an independent clean rebuild by a separate subagent at `a0206a8`: MZ-CC 32 pp., MZ-SP 50 pp., zero warnings, no Type 3 fonts, no process language in the PDFs;
+  - the duplicated phrase in MZ-SP fixed.
+- Final-ID reservation is deferred to PR preparation (WORKFLOW: reserve normally at PR preparation; a draft PR needs none).
+- Companions (AC's rules) are deferred until after the audit and AC's confirmation of the frozen texts.
+- Handoff 04 done; [handoff 05](handoffs/05-audit.md) opens the single substantive Codex audit.
 
 ## Runs needed
 

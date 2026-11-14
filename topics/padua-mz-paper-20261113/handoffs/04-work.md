@@ -1,6 +1,6 @@
 # Handoff 04 — padua-mz-paper-20261113 — finish MZ-CC (notation, literature, referee, freeze), then MZ-SP
 
-- Status: open
+- Status: done in a03a4f7: both papers are complete internal drafts with frozen numbering, referee rounds and task 9 records. The companions are deferred until after the audit (see 05).
 - Previous handoff: [03-work.md](03-work.md), superseded at the session boundary. AC's answers recorded there are repeated below. [01-work.md](01-work.md)'s task list and gates remain the reference.
 
 - Next agent / model / effort: **Claude**, a new session.
