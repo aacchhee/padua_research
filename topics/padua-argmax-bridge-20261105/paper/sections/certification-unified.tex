@@ -398,8 +398,9 @@ $\operatorname{fl}(a\mathbin\circ b)=(a\mathbin\circ b)(1+\delta)$,
 $|\delta|\leq\epsilon_{\rm fp}$; subnormal operations are covered by
 outward adjacent-value widening. Products of $k$ such normal factors
 have error at most $\gamma_k=k\epsilon_{\rm fp}/(1-k\epsilon_{\rm fp})$
-\cite[Chapters~3--5]{Higham2002}. Runtime and array versions are pinned
-in the package; the array implementation is NumPy \cite{NumPy2020},
+\cite[Chapters~3--5]{Higham2002}. The source and runtime identities for the new phase recertification are
+pinned in \path{code/regeneration_i25_20261114/input-freeze.json};
+the array implementation is NumPy \cite{NumPy2020},
 and exact rational operations use Python's documented integer and
 \texttt{Fraction} semantics
 (\url{https://docs.python.org/3/library/fractions.html}).
@@ -499,27 +500,27 @@ $2\leq n\leq511$, apply Proposition~\ref{cert:finite-verification}.
 These ranges cover every integer $n\geq2$.
 \end{proof}
 
-The certificate search used a separately recorded native implementation
-with Arb~\cite{Johansson2017Arb}, FLINT~\cite{FLINT},
-MPFR~\cite{Fousse2007MPFR} and GMP~\cite{GMP}. The recorded trees and exact
-phase keys are inputs to the independent direct-sum checker described
-above. All 942 records passed recertification with substituted bounds, and a separate
-execution checked both witnesses at each of degrees 41, 458 and 511.
+The certificate trees were constructed by a separately recorded native
+implementation using Arb~\cite{Johansson2017Arb}, FLINT~\cite{FLINT},
+MPFR~\cite{Fousse2007MPFR} and GMP~\cite{GMP}.
+The inputs used for this version combine the 560 authenticated certificate
+records for degrees $41,\ldots,319$ and $511$ with 382 newly generated
+records for degrees $320,\ldots,510$. The latter were generated in a new
+primary and fresh native pass at each degree.
+A new execution of the independent direct-sum checker recertified all
+942 records, using the recorded trees and exact rational phase keys with
+its own substituted numerical bounds. No stored native numerical endpoint
+is a premise of this recertification. A separate fresh execution rechecked
+both records at each of degrees 41, 458 and 511, with all scientific
+result fields agreeing with the full run.
 
-The essential certificates, independent verification records, source
-identities and reproduction commands are identified by the package inventories.
-These inventories record past computation and do not establish current custody.
-At this version, the output archive of the degree 320--510 certificate run
-and the stored outputs of the independent phase checker are unavailable.
-For $320\leq n\leq510$, the verification stated in
-Proposition~\ref{cert:finite-verification} therefore rests on recorded
-executions whose outputs cannot currently be re-examined.
-A planned independent re-inspection of stored outputs at the four sampled
-degrees 320, 384, 458 and 510 remains open: it covers both certificate
-records per degree (eight records in total), comparing the producer outputs
-with the independent checker's verification outputs without rerunning the
-certificate search. The separate historical execution at degree 458
-reported above is distinct from this pending re-inspection of stored outputs.
-Present availability of the unsampled native histories (about 632 MiB) is
-unverified. Selected native histories are auxiliary provenance; they supply no
-numerical premise to the independent recertification.
+The reproduction record \path{regeneration-20261114.md} identifies the
+new native and independent-checker executions, their input and output
+inventories, source and runtime identities, and reproduction commands.
+Paths here are relative to
+\path{topics/padua-argmax-bridge-20261105/} in the source repository.
+The independent checker's exact source, runtime and input pins are in
+\path{code/regeneration_i25_20261114/input-freeze.json};
+the native campaign freeze is
+\path{code/regeneration_20261114/frozen-inputs.json}.
+These new outputs provide the phase evidence used in this version.

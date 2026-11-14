@@ -1573,8 +1573,12 @@ uses \texttt{code/onset512\_analytic/}\allowbreak\texttt{check.py};
 its receipt is \texttt{code/onset512\_analytic/}\allowbreak\texttt{receipt.json}.
 The Python rational type is documented at
 \url{https://docs.python.org/3/library/fractions.html}.
-The recorded Python/NumPy runtime, operating system and hardware apply
-to every program row.
+The Python/NumPy source and runtime identities of each phase-checker
+worker are checked against
+\path{code/regeneration_i25_20261114/input-freeze.json} and recorded
+with its outputs. Finite runtime probes supplement the implementation
+assumptions; they do not prove universal IEEE conformance.
+The polynomial checker uses its separately recorded C++/GMP environment.
 \end{table}
 
 The same finite-floor, corner and analytic-far hypotheses used in the
@@ -1613,34 +1617,30 @@ $2\leq n\leq511$, apply Proposition~\ref{cert:finite-verification}.
 These ranges cover every integer $n\geq2$.
 \end{proof}
 
-The certificate search used a separately recorded native implementation
-with Arb~\cite{Johansson2017Arb}, FLINT~\cite{FLINT},
-MPFR~\cite{Fousse2007MPFR} and GMP~\cite{GMP}. The recorded trees and exact
-phase keys are inputs to the independent direct-sum checker described
-above. All 942 witnesses passed its recertification with substituted
-bounds. No stored native numerical endpoint is a premise or is
-asserted valid; only the trees and exact phase keys are reused.
-A phase key is the exact rational argument identifying a finite sum.
-A separate
-execution checked both certificate records at each of degrees 41, 458 and 511.
+The certificate trees were constructed by a separately recorded native
+implementation using Arb~\cite{Johansson2017Arb}, FLINT~\cite{FLINT},
+MPFR~\cite{Fousse2007MPFR} and GMP~\cite{GMP}.
+The inputs used for this version combine the 560 authenticated certificate
+records for degrees $41,\ldots,319$ and $511$ with 382 newly generated
+records for degrees $320,\ldots,510$. The latter were generated in a new
+primary and fresh native pass at each degree.
+A new execution of the independent direct-sum checker recertified all
+942 records, using the recorded trees and exact rational phase keys with
+its own substituted numerical bounds. No stored native numerical endpoint
+is a premise of this recertification. A separate fresh execution rechecked
+both records at each of degrees 41, 458 and 511, with all scientific
+result fields agreeing with the full run.
 
-The essential certificates, independent verification records, source
-identities and reproduction commands are identified by the package inventories.
-These inventories record past computation and do not establish current custody.
-At this version, the output archive of the degree 320--510 certificate run
-and the stored outputs of the independent phase checker are unavailable.
-For $320\leq n\leq510$, the verification stated in
-Proposition~\ref{cert:finite-verification} therefore rests on recorded
-executions whose outputs cannot currently be re-examined.
-A planned independent re-inspection of stored outputs at the four sampled
-degrees 320, 384, 458 and 510 remains open: it covers both certificate
-records per degree (eight records in total), comparing the producer outputs
-with the independent checker's verification outputs without rerunning the
-certificate search. The separate historical execution at degree 458
-reported above is distinct from this pending re-inspection of stored outputs.
-Present availability of the unsampled native histories (about 632 MiB) is
-unverified. Selected native histories are auxiliary provenance; they supply no
-numerical premise to the independent recertification.
+The reproduction record \path{regeneration-20261114.md} identifies the
+new native and independent-checker executions, their input and output
+inventories, source and runtime identities, and reproduction commands.
+Paths here are relative to
+\path{topics/padua-argmax-bridge-20261105/} in the source repository.
+The independent checker's exact source, runtime and input pins are in
+\path{code/regeneration_i25_20261114/input-freeze.json};
+the native campaign freeze is
+\path{code/regeneration_20261114/frozen-inputs.json}.
+These new outputs provide the phase evidence used in this version.
 
 \paragraph{An elementary derivation of the arithmetic bounds.}
 Write $\operatorname{RN}(y)$ for the closest binary64 number to a real
@@ -1837,11 +1837,13 @@ Table~\ref{cert:trust}.
 Both certificate records at a degree have their partitions and strict predicates
 checked separately. A finite-function interval may be reused for an
 identical function and exact rational argument shared by those witnesses.
-The full check covers all 942 inputs, with a fresh within-degree cache at
-each degree. It used 2519.421 CPU seconds and 646.839 seconds wall time
-with four workers. The separate execution of the six witnesses at degrees
-41, 458 and 511 used 27.276 CPU seconds. These are observed costs of the
-specified finite checks.
+The new full check covers all 942 inputs, with a fresh within-degree
+cache at each degree. Its four-worker launcher measured 2770.544476 CPU
+seconds and 768.464785 seconds wall time. The separate fresh rechecks of
+both records at degrees 41, 458 and 511 used 28.165805 CPU seconds in total.
+These are observed costs of the new executions; their commands, process
+accounting and output identities are recorded in
+\path{regeneration-20261114.md}.
 
 The small-degree route uses the coefficient construction and
 integer-rounding premises already stated in Table~\ref{cert:trust}.
@@ -1854,9 +1856,13 @@ The 39 polynomial certificates supply $2,\ldots,40$. Each successful
 witness proves a statement on a closed continuous region through its
 complete cover and strict comparisons.
 
-The source and runtime identities make these finite calculations
-reproducible. A file hash identifies the bytes of a source, input or
-result record. The kernel identities, interval analysis and verified
-cover predicates give those bytes their mathematical meaning. The
-reproducibility package being prepared records the full inventories and commands for
-fresh executions with their own recorded paths and timings.
+A file hash identifies the bytes of a source, input or result record.
+The kernel identities, interval analysis and verified cover predicates
+give those bytes their mathematical meaning. The reproduction record
+\path{regeneration-20261114.md} identifies the new executions and the
+commands, inventories and implementation requirements needed to repeat
+them. The reproduction package includes the retained polynomial
+certificates, rebuilt polynomial checker, new phase certificates and
+independent verification outputs. The rebuild was checked on degrees
+2 and 17; the accepted records for all 39 polynomial certificates are
+retained, and no new full 39-degree replay is claimed.
