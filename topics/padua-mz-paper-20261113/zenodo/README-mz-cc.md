@@ -2,7 +2,8 @@
 
 Andrey Chesnokov. Supplementary code and data for the paper (MZ-CC).
 Source repository: https://github.com/aacchhee/padua_research, commit `{COMMIT}`.
-[Paper reference and DOI: to be added by the author.] [Licence: to be chosen by the author.]
+[Paper reference and DOI: to be added by the author.]
+Licence: GNU Affero General Public License v3.0 only (SPDX `AGPL-3.0-only`), for the code and data in this archive; full text in `LICENSE`.
 
 The paper's results are proved analytically. The exceptions are the one-sided bound Λ_edge ≥ 1.0044369 (Prop. 5.3, Appendix C), which is computer-assisted, and Table 1, which is a measurement. This archive lets you re-run both.
 
@@ -17,6 +18,7 @@ The paper's results are proved analytically. The exceptions are the one-sided bo
 | `verify.sh` | Re-runs everything below and compares the results with the committed receipts. |
 | `tools/compare_receipts.py` | The comparison. It ignores run-specific fields (timings, paths, versions); exact numerators, denominators, enclosures and code hashes must agree. |
 | `VERIFICATION-2026-11-14.log` | Console log of `verify.sh` run on a copy of this pack before packing |
+| `LICENSE` | GNU AGPL v3.0 (the author's choice, 2026-11-14) |
 | `requirements.txt` | The pinned Python stack. |
 | `MANIFEST-SHA256.txt` | SHA-256 of every file in the archive. |
 

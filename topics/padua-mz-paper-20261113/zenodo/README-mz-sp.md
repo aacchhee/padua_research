@@ -2,7 +2,8 @@
 
 Andrey Chesnokov. Supplementary code and data for the paper (MZ-SP).
 Source repository: https://github.com/aacchhee/padua_research, commit `{COMMIT}`.
-[Paper reference and DOI: to be added by the author.] [Licence: to be chosen by the author.]
+[Paper reference and DOI: to be added by the author.]
+Licence: GNU Affero General Public License v3.0 only (SPDX `AGPL-3.0-only`), for the code and data in this archive; full text in `LICENSE`.
 
 The paper's results are proved analytically, except the following:
 - **Computer-assisted:**
@@ -28,6 +29,7 @@ This archive holds the programs, their outputs and the large witness files of Pr
 | `verify.sh` | Re-runs the checks below and compares the results with the committed receipts |
 | `tools/compare_receipts.py` | The comparison. It ignores run-specific fields (timings, paths, versions, gzip container hashes); exact values, signs, enclosures and code/payload hashes must agree. |
 | `VERIFICATION-2026-11-14.log` | Console log of `verify.sh` run on a copy of this pack before packing |
+| `LICENSE` | GNU AGPL v3.0 (the author's choice, 2026-11-14) |
 | `requirements.txt`, `MANIFEST-SHA256.txt` | Pinned Python stack; SHA-256 of every file |
 
 ## Map from the paper to the files (paths under `repository/`)

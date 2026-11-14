@@ -136,6 +136,11 @@ Ask these early, in one message. Meanwhile, proceed on defaults.
    Each companion is written after its paper's text is frozen, so the numbers are stable.
 4. **Data deposit.** *AC, 2026-11-13: Zenodo will come later.* Until AC creates it, the text says "available in the repository at commit …" for the committed checkers and receipts. Leave a clearly marked placeholder for the deposit DOI, and make no deposit claim.
 
+5. **Evidence packs and licence.** *AC, 2026-11-14 08:32: "Regenerate the witness commit, and pack all needed evidence for zenodo, one pack per paper. If something is easier to regenerate, no worries, just regenerate."* *AC, 2026-11-14 09:31: "agpl 3.0 is the license".*
+   - The packs are listed in `zenodo/README.md`.
+   - Their licence is GNU AGPL v3.0, recorded as SPDX `AGPL-3.0-only` because AC named version 3.0 without "or later".
+   - AC uploads the packs.
+
 ## 6. Known pitfalls
 
 - **Do not overclaim the open parts.**

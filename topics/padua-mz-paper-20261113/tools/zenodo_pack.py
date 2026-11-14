@@ -9,7 +9,7 @@
                 together with every file those programs read or hash;
   data/         files that are not in Git (DATA must hold them, see DATA_FILES);
   tools/        compare_receipts.py;
-  verify.sh, requirements.txt, README.md (template with the commit filled in).
+  verify.sh, requirements.txt, LICENSE (AGPL-3.0, AC 2026-11-14), README.md (template with the commit filled in).
 `finalize` writes MANIFEST-SHA256.txt (all files except itself) and a
 deterministic zip (sorted members, fixed timestamps and modes) next to the
 directory, then prints its size and SHA-256.
@@ -94,6 +94,7 @@ def stage(a):
     shutil.copyfile(ZEN / 'compare_receipts.py', root / 'tools/compare_receipts.py')
     shutil.copyfile(ZEN / f'verify-{a.pack}.sh', root / 'verify.sh')
     shutil.copyfile(ZEN / 'requirements.txt', root / 'requirements.txt')
+    shutil.copyfile(ZEN / 'LICENSE', root / 'LICENSE')
     readme = (ZEN / f'README-{a.pack}.md').read_text().replace('{COMMIT}', rev)
     (root / 'README.md').write_text(readme)
     print(root, rev)

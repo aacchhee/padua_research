@@ -194,6 +194,15 @@ Claude, claude-opus-5-5 (configured xhigh).
   - Manifests and hashes are in [zenodo/README.md](zenodo/README.md).
   - Agents create no deposit: AC uploads the packs to Zenodo.
 
+## 2026-11-14 09:31 — AC: "agpl 3.0 is the license"
+
+- Both Zenodo packs now carry `LICENSE` and a licence line in their README.
+  - `LICENSE` is the GNU AGPL v3 text. It was fetched from a public GitHub copy, because gnu.org is blocked here, and it is identical to SPDX `AGPL-3.0-only` up to whitespace.
+  - The README line reads: GNU AGPL v3.0 only, SPDX `AGPL-3.0-only`. AC said "3.0" without "or later"; if AC wants "or later", only the README line and the Zenodo field change.
+- Recorded in BRIEF §5 item 5.
+- The packs were restaged and repacked. Code, data and receipts are unchanged from the verified copies; only the README and LICENSE differ. They were redelivered to AC's `zenodo_evidence` folder under the same names. New hashes are in [zenodo/README.md](zenodo/README.md).
+- The repository itself still has no LICENSE file. Adding one would licence the whole repository, which is AC's separate decision.
+
 ## Runs needed
 
 - Codex readiness check plus a focused check of the evidence change ([handoff 08](handoffs/08-readiness-and-evidence.md); handoff 07 superseded before it started).
