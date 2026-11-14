@@ -54,3 +54,25 @@ No collision and no unknown retired reservation was found. The check is repeated
 | LIT | LIT-721–731 | 11 | LIT-732–745 | 14 |
 
 The exact map is `pr-preparation/final-id-map.json` (the LIT entries list each source and its record), and the global crosswalk section is "Xu-points Lebesgue conjecture and Morrow–Patterson Lebesgue function — PR36" in `ID_CROSSWALK.md`. Assignments were made only after the reservation commit `91a0116eb9e83afe86a25c70d68684f364b316c5` was pushed and linked from the PR body. Ten existing LIT entries (LIT-378, LIT-486, LIT-379, LIT-314, LIT-307/LIT-010/LIT-650, LIT-331, LIT-320, LIT-380, LIT-389/LIT-024, LIT-388) received dated addenda and no new ID. No accepted ID was renumbered and no alias received two final IDs.
+
+## Readiness refresh — 2026-11-14
+
+Independent Codex auditor, gpt-6-astra high; approved model substitution is recorded in LOG. [Readiness-01](readiness-01.md) records the response/registry review and complete reservation check. No new range or assignment is made by this refresh.
+
+| Scope | Checked head |
+| --- | --- |
+| main | `99a9b1d161e41a80c4fd425b63022c681fbe8779` |
+| PR27, open draft | `fd82e593cd73019601fb00dea9844db09f8601c0` |
+| PR35, open | `a045b8e9b2b4d92813a9b8e2832b2f8254e7397e` |
+| PR36, open draft input | `b361e675e5e77c2b8829f2af8a08d17469229c34` |
+
+The current all-PR collection contains 35 PRs: open 27/35/36, 32 closed and merged, no closed-unmerged PR. The final `git ls-remote` check confirms these heads and main. A complete read-only inventory consumed 87 source copies (71 ledgers, 16 canonical registries; 20 distinct ledger blobs, 31 distinct blobs overall), retaining historical/retired blocks and permanent gaps. The context-checked test-fixture, unregistered prose and foreign-source aliases described above are not Padua reservations.
+
+| Namespace | Highest foreign reserved/used | Own reservation | Assigned | Permanent unused |
+| --- | ---: | --- | --- | --- |
+| PD-T | 689 | 690–719 | 690–709 | 710–719 |
+| PD-N | 250 | 251–257 | 251–253 | 254–257 |
+| IDEA | 765 | 766–795 | 766–779 | 780–795 |
+| LIT | 720 | 721–745 | 721–731 | 732–745 |
+
+**PASS:** no foreign overlap and no unknown retired reservation. Full union maxima: T719/N257/IDEA795/LIT745. First-publication priority remains `91a0116eb9e83afe86a25c70d68684f364b316c5`, the sole ledger-addition commit, an ancestor of the checked input and linked from PR36. Every range, assignment and permanent gap above is unchanged. Repeat the union check if main or a peer's reservation/identifier sources change before AC merges. Only AC merges.
