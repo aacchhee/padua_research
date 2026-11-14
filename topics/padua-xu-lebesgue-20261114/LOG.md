@@ -2,7 +2,7 @@
 
 - Branch: `claude/padua-xu-lebesgue-20261114` · Base: main `99a9b1d` (PR #34 merged)
 - Developer: Claude (researcher Fable 5.2 xhigh, per-round downgrade to Opus 5.5 xhigh allowed) · Auditor: Claude, Opus 5.5 xhigh, distinct thread (AC ruling 2026-11-14)
-- Stage: PR · Open handoff: [03-response-pr-preparation.md](handoffs/03-response-pr-preparation.md) · PR: [#36](https://github.com/aacchhee/padua_research/pull/36) (draft; audit-01 accepted with MINOR findings)
+- Stage: PR · Open handoff: [04-readiness.md](handoffs/04-readiness.md) · PR: [#36](https://github.com/aacchhee/padua_research/pull/36) (draft; audit-01 accepted with MINOR findings)
 - Claims: see results file and audit-01 §6. Provisional IDs: `PD-T?padua-xu-lebesgue-20261114-claude-NN`.
 
 ## 2026-11-14 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -103,3 +103,10 @@
 - Handoff 02: done in `2789267`. [Handoff 03](handoffs/03-response-pr-preparation.md), the MINOR-only response plus PR preparation, was written by the auditor (audit-01 §8.3). It was committed with only its input-SHA placeholder filled in.
 
 - 2026-11-14 correction (orchestrator, response to audit-01 A-m2; the entry "round X2-3 result" above, bullet X2-33, is left unchanged): that line overstates the scope. X2-33 (c) proves that every maximizer satisfies sin θ₁, sin θ₂ ≤ ϑ_n for every even n ≥ 2; this is non-trivial only for n ≥ 1030, where ϑ_n < 1 and ϑ_n ≤ 21.5 log²(n+2)/n (ϑ_10 ≈ 36.8 > 13.3 at small n). The maximizers lie in the four vertex boxes. The results file was corrected accordingly.
+
+## 2026-11-14 — handoff 03 done (orchestrator, Opus 5.5)
+
+- Reservation published in `91a0116`: PD-T690–719, PD-N251–257, IDEA-766–795, LIT-721–745, above the union T689/N250/IDEA765/LIT720 of main, PR27 and PR35.
+- [response-01.md](response-01.md) and the non-material MINOR fixes are in `80a744e`. The edits were drafted by a Sonnet 5.5 high subagent; the orchestrator reviewed the diff (deletions were stale process text only) and the new cyclotomic proof.
+- Registry edits and final IDs are in `0e97396`: PD-T690–709, PD-N251–253, IDEA-766–779, LIT-721–731. Drafted by Sonnet 5.5 high. The orchestrator's review fixed table pipe escaping in two PROOF_STATUS rows and resolved the BCDMV Table 7 locator to p. 320; audit-01's p. 323 is a slip.
+- The PR #36 body is updated. Handoff 03: done in `0e97396`. [Handoff 04](handoffs/04-readiness.md), the readiness check, is open.
