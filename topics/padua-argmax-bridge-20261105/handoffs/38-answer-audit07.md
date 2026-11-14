@@ -1,6 +1,6 @@
 # Handoff 38: answer audit-07 (one paired batch: data statements and a rebuilt public kit)
 
-- Status: open
+- Status: done in 687e9d47dec64d9d582c7544a7df4bd0576ebd82
 - Previous handoff: 37-claude-audit-public-reproduction.md
 - Next agent / model / effort: Codex, gpt-6-astra high coordinator; Sol medium for TeX/README edits, a distinct Astra high agent for the focused re-check.
 - Role: orchestrator and developer
