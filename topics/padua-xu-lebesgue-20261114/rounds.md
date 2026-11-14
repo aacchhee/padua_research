@@ -6,4 +6,6 @@ A round ends with a pushed LOG entry. Budgets (BRIEF §4, handoff 01): up to 10 
 
 | Round | Direction | Researcher model | Reason / scope | Outcome |
 |---|---|---|---|---|
-| 0 | setup (neither) | Opus 5.5 (orchestrator) + Opus 5.5 literature readers | BRIEF §4 downgrade: literature and bookkeeping only (rules, LIT reads, novelty gates, gates.md) | in progress |
+| 0 | setup (neither) | Opus 5.5 (orchestrator) + Opus 5.5 literature readers | BRIEF §4 downgrade: literature and bookkeeping only (rules, LIT reads, novelty gates, gates.md) | literature verdicts recorded (`literature-xu-mp.md` §3); novelty gates pending |
+| X1-1 | X1 | Opus 5.5 (orchestrator) supervising; code Sonnet 5.5 high | Downgrade: G0 implementation and G1 numerical screen only, no proof work | in progress |
+| X2-1 | X2 | Opus 5.5 (orchestrator) supervising; code Sonnet 5.5 high | Downgrade: G0 implementation, G1-MP screen and C-MP corner checks only | in progress |

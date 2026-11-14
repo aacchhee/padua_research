@@ -9,6 +9,7 @@ Status words used:
 - **GARBLED**: the text layer is ambiguous, and a reconstruction is given.
 - **VERIFIED-NUM**: the reader checked the item numerically with a throwaway script in /tmp, not committed. The script is described in §8.
 - **UNVERIFIED**: not seen in any source.
+- **VERIFIED-JOURNAL**: checked against the Xu 1996 journal PDF. Update 2026-11-14: the orchestrator staged this PDF locally (outside the repo, not copied). I read its text with pdftotext and viewed rendered images of pp. 225, 226 and 228.
 
 Paraphrases only. Every quote is under 15 words.
 
@@ -29,10 +30,9 @@ URL read: author preprint https://pages.uoregon.edu/yuan/paper/JAT96.pdf. The pr
 
 Sections read: §2, equations (2.1)–(2.21), at preprint pp. 2–9; Theorem 3.1 and 3.3 statements.
 
-Gaps:
-- The preprint text layer is GARBLED in (2.1), (2.2), (2.5) summation limits, (2.15), (2.16), (2.20) and (2.21).
-- The digest reproduced (2.15) and (2.20) with K_{n−1} where BCDMV say it should be K_{n+1}. That is consistent with the misprint BCDMV report; see S3.
-- The journal version was not re-read here. It was read in full by AC's 2026-11-05 supplied copy, but that note records only locators, not formulas.
+Journal version, now read: JAT 87 (1996) pp. 222–230, the whole of §2, from a local copy staged by the orchestrator. I used pdftotext on pp. 222–230 and checked page images of pp. 225 (2.7), 226 (2.8)–(2.10) and 228 (2.14)–(2.16). Every §2 locator below now carries a journal page and is VERIFIED-JOURNAL.
+
+Remaining gaps: the journal §§1 and 3 were not re-read for this note.
 
 ### S2. BdMV 2006
 
@@ -91,7 +91,7 @@ See §6. In the citation lists below, "digest" means a WebFetch digest of the fu
 
 | Source | Degree parameter | 1-D nodes | Parities treated | Node-set name |
 |---|---|---|---|---|
-| Xu 1996 | n: cubature degree 2n−1; Π_{n−1} ⊂ V_n² ⊂ Π_n | z_k = z_{k,n} = cos(kπ/n), 0 ≤ k ≤ n (preprint p. 4; no "Lobatto" name) | n = 2m, eq. (2.14); n = 2m−1, eq. (2.19) | x_{i,j} = (z_i, z_j) |
+| Xu 1996 | n: cubature degree 2n−1; Π_{n−1} ⊂ V_n² ⊂ Π_n | z_k = z_{k,n} = cos(kπ/n), 0 ≤ k ≤ n (journal p. 224; no "Lobatto" name) | n = 2m, eq. (2.14); n = 2m−1, eq. (2.19) | x_{i,j} = (z_i, z_j) |
 | BdMV 2006 | same n as Xu | z_k = cos(kπ/n), k = 0..n, n = 2m (eq. (2), preprint p. 4) | even n only ("for simplicity's sake", p. 4). Odd n is mentioned only in the intro (N = (n+1)²/2, p. 3). | x_{2i,2j+1}, x_{2i+1,2j} (eqs. (3)–(4)) |
 | BCDMV 2006 | same n as Xu | z_k = z_{k,n} = cos(kπ/n), k = 0..n, n = 2m (eq. (1), p. 312) | even n only | X_N, eq. (2), p. 312 |
 | ETNA 2006 | same n | ξ_k = cos(kπ/n), n = 2m (p. 3) | even n only (p. 3) | z_{2i,2j+1}, z_{2i+1,2j} |
@@ -99,9 +99,14 @@ See §6. In the citation lists below, "digest" means a WebFetch digest of the fu
 | Xu 2017 survey (arXiv 1709.00651) | n = 2m (nodes (10)); n = 2m−1 (nodes (11)) | same | both | **kernel index shifts**: K*_n = K_{n−1} + Σ Q_j Q_j there, so K_{n−1} reproduces Π_{n−1}. In Xu 1996 and BCDMV, K_n reproduces Π_{n−1}. |
 
 Convention flags:
-- **(C1) Reproducing kernel index.** In Xu 1996 and in BdMV, BCDMV and ETNA, K_n(x,y) = Σ_{k=0}^{n−1} P_k(x)ᵀP_k(y) (Xu preprint p. 3), so K_n reproduces Π_{n−1}. Xu's 2017 survey shifts this index by one. All formulas below use the 1996/BCDMV convention.
-- **(C2) Normalisation.** Xu writes orthonormal products P^n_k(x,y) = T̂_{n−k}(x) T̂_k(y), with T̂_0 = 1 and T̂_k = √2 cos kθ (preprint pp. 2–3). The correction term in K*_n uses **unscaled** T_n(t) = cos(n arccos t). BCDMV p. 313 state this explicitly as one of their corrections to Xu. VERIFIED-NUM.
-- **(C3) Measure.** W_0(x,y) = π⁻² (1−x²)^{−1/2} (1−y²)^{−1/2} on [−1,1]², normalised to mass 1 (Xu preprint p. 2).
+- **(C1) Reproducing kernel index.** In Xu 1996 and in BdMV, BCDMV and ETNA, K_n(x,y) = Σ_{k=0}^{n−1} P_k(x)ᵀP_k(y), so K_n reproduces Π_{n−1}. Xu's 2017 survey shifts this index by one. All formulas below use the 1996/BCDMV convention.
+  - Source of the definition: Xu journal p. 223, first display. VERIFIED-JOURNAL.
+  - **Internal inconsistency in Xu.** On p. 229 Xu writes P_nᵀ(x)P_n(y) = K_n(x,y) − K_{n−1}(x,y). With the p. 223 definition the correct identity is K_{n+1} − K_n. This explains the K_{n−1} misprint in (2.15), (2.18) and (2.20).
+- **(C2) Normalisation.** Xu's own T_k are **orthonormal**: T_0 = 1 and T_k = √2 cos kθ. Xu warns explicitly that they differ from the usual ones by a factor √2 (journal p. 222). P^n_k(x,y) = T_{n−k}(x) T_k(y) (p. 222).
+  - The correction term in K*_n must use **unscaled** T_n(t) = cos(n arccos t).
+  - Xu's own derivation on p. 229 writes P^n_0(x) = √2 T_n(x), which only makes sense if T_n there is unscaled.
+  - BCDMV p. 313 correct this explicitly. VERIFIED-JOURNAL and VERIFIED-NUM.
+- **(C3) Measure.** W_0(x,y) = π⁻² (1−x²)^{−1/2} (1−y²)^{−1/2} on [−1,1]², normalised to mass 1 (journal p. 222).
 - Every paper used here uses the same n for the same node set, **except** Erb et al., who write XU_{2n} and XU_{2n+1}.
 
 ---
@@ -115,11 +120,13 @@ Notation (1996/BCDMV convention):
 
 ### 3.1 Node sets
 
+Status: VERIFIED-JOURNAL. (2.14) is on p. 228 (page image checked); (2.19) on p. 229; z_k = cos(kπ/n), 0 ≤ k ≤ n, on p. 224; the Möller bound (2.3) on p. 223.
+
 - **n = 2m (even).** Xu (2.14), journal p. 228 (preprint p. 8); BCDMV (2), p. 312; BdMV (3)–(4).
   - X_n = {x_{2i,2j+1}: 0 ≤ i ≤ m, 0 ≤ j ≤ m−1} ∪ {x_{2i+1,2j}: 0 ≤ i ≤ m−1, 0 ≤ j ≤ m}.
   - Equivalently, X_n = {x_{a,b}: 0 ≤ a,b ≤ n, a+b odd}.
   - N = n(n+2)/2 = dim Π_{n−1} + n/2. This is minimal: it attains Möller's lower bound (2.3) for degree 2n−1. READ, VERIFIED-NUM.
-- **n = 2m−1 (odd).** Xu (2.19), journal pp. 229–230 (preprint p. 9).
+- **n = 2m−1 (odd).** Xu (2.19), journal p. 229 (preprint p. 9).
   - X_n = {x_{2i,2j}: 0 ≤ i,j ≤ m−1} ∪ {x_{2i+1,2j+1}: 0 ≤ i,j ≤ m−1}.
   - The even indices are 0..n−1 and the odd indices are 1..n. Equivalently, X_n = {x_{a,b}: 0 ≤ a,b ≤ n, a+b even}.
   - N = (n+1)²/2 = dim Π_{n−1} + (n+1)/2, one more than the lower bound. READ, VERIFIED-NUM.
@@ -141,7 +148,7 @@ A vertex (±1, ±1) is x_{a,b} with a, b ∈ {0, n}.
 
 ### 3.3 Interpolation space V_n² (Xu's Π*_n)
 
-Xu (2.11), journal p. 227 (preprint p. 7) defines it abstractly: V_n² = Π_{n−1}² ⊕ span{V⁺P_n}, where V⁺ is a Moore–Penrose inverse built from the node-annihilating combinations of the degree-n orthonormal vector P_n. Xu 2017 survey eq. (6) gives the same in words: Π_{n−1} plus orthonormal degree-n polynomials not spanned by those vanishing on the nodes.
+Xu (2.11), journal p. 227 (preprint p. 7) defines it abstractly: V_n² = Π_{n−1}² ⊕ span{V⁺P_n}, where V⁺ is the Moore–Penrose inverse of V, and the columns of V span the degree-n directions complementary to the node-annihilating combinations UᵀP_n (journal pp. 225–227). Xu 2017 survey eq. (6) gives the same in words: Π_{n−1} plus orthonormal degree-n polynomials not spanned by those vanishing on the nodes.
 
 Explicit product-Chebyshev form below: reader derivation plus VERIFIED-NUM. It agrees with Dencker–Erb arXiv 1711.00557 §9.2 eq. (9.2): for m = (n,n), the degree-n coefficients satisfy c_{(γ₁,γ₂)} = (−1)^{κ₂−κ₁} c_{(γ₂,γ₁)}, and the middle index is excluded when the parities differ.
 
@@ -156,11 +163,20 @@ Explicit product-Chebyshev form below: reader derivation plus VERIFIED-NUM. It a
   - V_n² = Π_{n−1} ⊕ span{T_{n−j}(x)T_j(y) + T_j(x)T_{n−j}(y): 0 ≤ j ≤ (n−1)/2}, i.e. (n+1)/2 extra functions.
   - j = 0 gives T_n(x) + T_n(y).
 - Dimension check: n(n+1)/2 + n/2 = n(n+2)/2, and n(n+1)/2 + (n+1)/2 = (n+1)²/2. Both match N.
+
+**Journal check** (VERIFIED-JOURNAL):
+- (2.11), p. 227: V_n² = Π_{n−1} ∪ span{V⁺P_n}, with V⁺ = (VᵀV)⁻¹Vᵀ. K*_n = K_n + [V⁺P_n(x)]ᵀ V⁺P_n(y), also p. 227.
+- **n even.** The image of (2.7) (p. 225) and V⁺ (p. 228) show rows (√2/2, 0, …, 0, −√2/2) and (…, 1, 0, −1, …). These are the antisymmetric combinations P^n_k − P^n_{n−k}, which agrees with the explicit space above.
+- **n odd.** The p. 230 derivation uses [P^n_0 + P^n_n], i.e. symmetric combinations, which agrees with the explicit space above.
+
+**Xu misprints in the U and V matrices** (none affects (2.12)–(2.21)):
+- (2.8), p. 226, image checked. The printed Uᵀ rows are (1, …, −1), and its "more transparent" form is T_{n−k+1}(x)T_{k−1}(y) − T_{k−1}(x)T_{n−k+1}(y), 1 ≤ k ≤ n/2+1. Neither vanishes on the (2.14) nodes: k = 1 gives T_n(x) − T_n(y), which is ±2 there and is in fact the correction direction. And Uᵀ V ≠ 0 with (2.7) as printed. The sign must be **+**.
+- The odd-case matrices (2.9) (p. 226) and V⁺ (p. 230) are printed with mixed or antisymmetric signs, which is inconsistent with the p. 230 derivation. The transparent form of (2.10), with antisymmetric combinations vanishing on the (2.19) nodes, is correct.
 - BCDMV and BdMV state only Π_{n−1} ⊂ V_n² ⊂ Π_n (BCDMV p. 312).
 
 ### 3.4 Kernel and fundamental Lagrange polynomials
 
-**Compact kernel.** Xu (2.1)–(2.2), journal p. 223; BCDMV (6)–(7), p. 313. READ (GARBLED in the Xu preprint, clean in BCDMV), VERIFIED-NUM against the orthonormal sum.
+**Compact kernel.** Xu (2.1)–(2.2), journal p. 223; BCDMV (6)–(7), p. 313. VERIFIED-JOURNAL (identical in Xu and BCDMV), and VERIFIED-NUM against the orthonormal sum.
 
 K_n(x,y) = D_n(θ₁+φ₁, θ₂+φ₂) + D_n(θ₁+φ₁, θ₂−φ₂) + D_n(θ₁−φ₁, θ₂+φ₂) + D_n(θ₁−φ₁, θ₂−φ₂),
 
@@ -174,7 +190,13 @@ At cos α = cos β this is a removable singularity. BCDMV (9)–(10), pp. 313–
 
 Note that ½[K_n + K_{n+1}] = K_n + ½·(degree-n orthonormal block).
 
-**Misprint flag.** BCDMV p. 313 say Xu's (2.15), (2.16) and (2.18) contain misprints: K_{n−1} should be K_{n+1}, T_n should be unscaled, and the r = n, s = n cases of (2.16) are wrong. The Xu preprint digest indeed shows K_{n−1}. The reader checked numerically that the K_{n−1} version is **not** cardinal: off-diagonal entries are O(1) for both parities, n = 2..8. The odd-case formula (2.20) shows the same K_{n−1}, so it needs the same correction, though BCDMV discuss only the even case.
+**Misprint flag** (VERIFIED-JOURNAL). BCDMV p. 313 say Xu's (2.15), (2.16) and (2.18) contain misprints. The journal confirms it.
+- **(2.15), p. 228** (image checked) prints ½[K_n + K_{n−1}](x, x_{k,l}) − ½(−1)^k [T_n(x) − T_n(y)].
+- **(2.18), p. 229** prints ½[K_n + K_{n−1}](x_{k,l}, x_{k,l}) − 1.
+- **(2.20), p. 229** prints ½[K_n + K_{n−1}] − ½(−1)^k [T_n(x) + T_n(y)].
+- All three need K_{n−1} → K_{n+1}. The cause is the p. 229 identity noted under C1. T_n must also be unscaled (C2).
+- The K_{n−1} version is **not** cardinal: off-diagonal entries are O(1) for both parities, n = 2..8 (VERIFIED-NUM). BCDMV discuss only the even case, but the odd case (2.20) needs the same correction.
+- The sign pattern −½(−1)^k(T_n(x) ∓ T_n(y)) is as printed: minus for even n, plus for odd n.
 
 **Fundamental polynomials.** Xu (2.12), journal p. 227; BCDMV (3), p. 312.
 
@@ -184,13 +206,33 @@ Note that ½[K_n + K_{n+1}] = K_n + ½·(degree-n orthonormal block).
 - General form: K*_n(x_{r,s}, x_{r,s}) = ½[K_n + K_{n+1}](x_{r,s}, x_{r,s}) − 1.
 - Explicit values, with β = number of indices in {r, s} lying in {0, n}: K*_n(x_{r,s}, x_{r,s}) = (n²/2) · 2^β.
   - n even: β ∈ {0, 1}, giving n²/2 (interior) or n² (edge). BCDMV (8).
-  - n odd: β = 2 also occurs at the corner nodes (1,1) and (−1,−1), giving 2n². Xu (2.21) is GARBLED; the values are VERIFIED-NUM.
+  - n odd: β = 2 also occurs at the corner nodes (1,1) and (−1,−1), giving 2n².
+
+**Journal check** (VERIFIED-JOURNAL):
+- **(2.16), p. 228** (image checked) prints:
+  - K* = n² at x_{0,2j+1} and at x_{2i+1,0};
+  - K* = n²/2 at x_{2i,2j+1} for i > 0, and at x_{2i+1,2j} for j > 0.
+
+  It therefore wrongly gives n²/2 to the edge nodes x_{n,2j+1} (i = m) and x_{2i+1,n} (j = m). This is the "r = n, s = n" misprint BCDMV correct; the correct value is n².
+- **(2.21), p. 229** prints, for x_{2i,2j}:
+  - n²/2 if 0 < i, j ≤ m−1;
+  - n² if i = 0 or j = 0, with i+j > 0;
+  - 2n² if i = j = 0.
+
+  For x_{2i+1,2j+1} the boundary is at i or j = m−1 (since 2(m−1)+1 = n), and 2n² at i = j = m−1. This **agrees** with the β rule; no misprint. VERIFIED-NUM.
 
 ### 3.5 Cubature weights
 
 - Rule: λ_{r,s} = 1/K*_n(x_{r,s}, x_{r,s}) (Xu (2.13), p. 227).
-- **n even:** λ = 2/n² for interior nodes and 1/n² for edge nodes. This is (2.4), journal p. 223–224 (preprint p. 4), a double sum over the two sub-lattices with halved end terms.
-- **n odd:** λ = 2/n², 1/n² or 1/(2n²), the last at the two corner nodes. This is (2.5); its summation limits are GARBLED in the preprint.
+- **n even:** λ = 2/n² for interior nodes and 1/n² for edge nodes. This is (2.4), journal p. 224:
+  - (2/n²) Σ''_{i=0}^{n/2} Σ_{j=0}^{n/2−1} f(z_{2i}, z_{2j+1}) + (2/n²) Σ_{i=0}^{n/2−1} Σ''_{j=0}^{n/2} f(z_{2i+1}, z_{2j});
+  - Σ'' means the first and last terms are halved.
+  - VERIFIED-JOURNAL.
+- **n odd:** λ = 2/n², 1/n² or 1/(2n²), the last at the two corner nodes. This is (2.5), journal p. 224:
+  - (2/n²) Σ'_{i=0}^{(n−1)/2} Σ'_{j=0}^{(n−1)/2} f(z_{2i}, z_{2j}) + (2/n²) Σ'_{i=0}^{(n−1)/2} Σ'_{j=0}^{(n−1)/2} f(z_{n−2i}, z_{n−2j});
+  - Σ' means only the first term is halved;
+  - z_{n−2i} runs over the odd indices.
+  - VERIFIED-JOURNAL. Xu calls (2.5) "given explicitly for the first time" (p. 224).
 - Both rules are exact on Π_{2n−1} for W_0 with total mass 1: VERIFIED-NUM for n = 5, 6, 7 (error ≤ 1e−15).
 
 ### 3.6 Lebesgue function and constant
@@ -413,9 +455,15 @@ Self-contained specification. Tags: [X96] Xu 1996, [BCDMV], [BdMV], [DE17] Denck
    - cubature exactness on Π_{2n−1};
    - λ(1,1) reproduces BCDMV Table 7.
 8. **Disagreements and flags.**
-   - (F1) Xu 1996 printed K_{n−1} (and possibly a scaled T_n) in (2.15)/(2.18)/(2.20). The correct form has K_{n+1} and unscaled T_n (BCDMV p. 313, and numerics).
+   - (F1) Xu 1996 prints K_{n−1} in (2.15), (2.18) and (2.20) (journal pp. 228–229, VERIFIED-JOURNAL), with orthonormal T_n by its own p. 222 convention. The correct form has K_{n+1} and unscaled T_n (BCDMV p. 313, and numerics).
+   - (F1b) Also misprinted:
+     - (2.16), p. 228: the edge nodes with i = m or j = m are given n²/2; correct is n².
+     - (2.8), p. 226: Uᵀ and its transparent form need "+" for even n.
+     - The odd-case matrices (2.9) and V⁺ (pp. 226, 230) have inconsistent signs.
+
+     (2.4), (2.5), (2.14), (2.19) and (2.21) are correct as printed.
    - (F2) Xu 2017 uses the shifted kernel index.
-   - (F3) The odd-n formulas come only from Xu 1996, whose preprint is garbled; the odd case is validated only by numerics.
+   - (F3) The odd-n formulas come only from Xu 1996. The journal (2.19)–(2.21) is now read (VERIFIED-JOURNAL), and the K_{n+1} correction for odd n is validated by numerics; no secondary source treats odd n.
    - (F4) The relation symbol in (17) is unresolved (BCDMV text layer). ETNA (2.15) uses "≤ A_n ∼".
    - (F5) The BdMV constant is a reconstruction (§4.2).
 
@@ -423,7 +471,7 @@ Self-contained specification. Tags: [X96] Xu 1996, [BCDMV], [BdMV], [DE17] Denck
 
 ## 9. Items NOT read (for the orchestrator's institutional browser)
 
-1. Xu 1996, journal version §2, pp. 223–230: confirm the printed (2.5) limits, (2.15), (2.16), (2.20), (2.21). DOI 10.1006/jath.1996.0102; https://www.sciencedirect.com/science/article/pii/S0021904596901021.
+1. Done 2026-11-14: Xu 1996 journal §2, pp. 222–230, read from the locally staged PDF. See S1 and §3.
 2. BdMV, JAT 141 (2006) 134–141: Theorem 1 exact form and its page, and whether any remark on vertices or odd n appears. DOI 10.1016/j.jat.2006.01.005; https://www.sciencedirect.com/science/article/pii/S0021904506000220.
 3. BCDMV, Computing 76 (2006), p. 319 page image: the relation symbol in (17). DOI 10.1007/s00607-005-0137-z. The author PDF is fine if rendered as an image.
 4. Della Vecchia–Mastroianni–Vértesi, Studia Sci. Math. Hungar. 46 (2009) 97–102: which two node sets, and the lower-bound constant. DOI 10.1556/SSCMath.2008.1078.
