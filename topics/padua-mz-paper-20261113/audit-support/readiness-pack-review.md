@@ -18,6 +18,18 @@ Source SHA256: `d6d158ee6a05ae5f088e0fbe8916dd820da96f0f0d3320041719aad2468f95f7
 
 Required response: either propagate regeneration-identity failures into the advertised all-checks/exit disposition, or explicitly split required archived-certificate verification from optional regeneration diagnostics and make its final report accurate. The unchanged archived-witness replay remains a valid certificate route; this finding does not invalidate PD-T376 or assert an actual mismatch in the supplied witnesses. It is a focused verifier defect, not grounds to rerun the whole mathematical audit. Fixing result-bearing verifier acceptance is material and belongs to development, not an auditor's MINOR wording fix.
 
+## Finding P2 — MAJOR: the documented relative interpreter fails after the script changes directory
+
+Both pack READMEs document `PY=venv/bin/python bash verify.sh` after creating the venv in the pack root. Both verifier scripts retain PY verbatim and then `cd "$HERE/repository"` before their first Python invocation (CC lines 8–16; SP lines 13–32). Consequently `venv/bin/python` is resolved relative to `repository/`, rather than the pack root, and the advertised invocation exits 127 even though the interpreter exists at the documented location. This is a verifier usability failure, not a scientific certificate failure.
+
+The root auditor confirmed this on the actual uploaded CC pack with a valid relative symlink to the runtime interpreter: exit 127, `No such file or directory`, at the first Python command. This worker also executed the unchanged **both** verifier scripts in minimal temporary fixtures with a valid `venv/bin/python` symlink. The SP fixture supplies correctly hashed dummy payloads/norm files, so its shell-only identity precheck passes before reaching Python. Both executions fail 127 solely at relative interpreter resolution. No scientific computation is claimed for these fixtures. Reproduce:
+
+```sh
+python topics/padua-mz-paper-20261113/audit-support/pack_relative_python_control.py
+```
+
+Required response: resolve a relative PY to an absolute executable before changing directory, or document/use an absolute interpreter path such as `PY="$PWD/venv/bin/python"`. Verify the exact advertised command in a fresh extraction. Retain support for ordinary PATH names such as `python3`. The same repair applies to both README commands and/or both scripts; no theorem changes or expensive certificate repetitions are required merely to test interpreter resolution.
+
 ## Comparator inspection
 
 Read all of `zenodo/compare_receipts.py` and both verifier scripts. The recursive walker compares dict-key unions and list lengths, so a missing or extra nonignored field fails. Compared fields include source/code hashes, exact arithmetic endpoints, `sign`, `accepted`, `strict_positive_lower`, `finite_threshold_pass`, `q_center`, `q_absolute_error`, exact inertia counts and strict-dominance margins. I executed direct `ignored(path)` probes confirming these remain significant.
@@ -62,4 +74,4 @@ The manuscript-named producer/checker paths, their runtime/hash dependencies, ex
 
 ## Limits
 
-No archive ZIP was retrieved from AC's device, no full verify script or numerical producer was run by this worker, and no external licence authority was queried. Only the isolated shell failure control and manifest/blob/path/hash/ignore probes described above were executed. The root's independent numerical and packaging runs supply that separate coverage. No other finding was identified in this bounded review.
+No archive ZIP was retrieved from AC's device, no full numerical verify run or producer was executed by this worker, and no external licence authority was queried. Executions were the isolated mismatch control, unchanged-script relative-interpreter controls, and the manifest/blob/path/hash/ignore probes described above. The root's independent numerical and packaging runs supply the separate science coverage. No finding beyond P1–P2 was identified in this bounded review.
