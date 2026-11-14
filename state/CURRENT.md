@@ -314,3 +314,12 @@ PD-T562 is the PROVED finite20-node positive precision-five, cubic-unisolvent no
 The main exact-cardinality polylog interpolation target remains OPEN. Further construction/optimization/pruning campaigns are frozen. C5’s quantitative reflection-invariant n³/4 target is not subsumed by non-effective PD-T557; IDEA-620/IDEA-621 retain precise deferred resume conditions. Record-only C8 is completed with named source gaps (IDEA-623). [Dated dispositions](../topics/padua-3d-20261106/frontier-dispositions-20261112.md), [paper note](../topics/padua-3d-20261106/paper-note-draft.md).
 
 Scope addendum,2026-11-12: the earlier charter paragraph describing3D Padua as out of scope is historical to that campaign. AC separately authorized this3D topic on2026-11-06; IDEA-013/IDEA-029/IDEA-120 preserve dated addenda and their original wording. This authorization changes none of the other exclusions or unresolved targets.
+
+## Effective cube-cubature excess and Padua Lebesgue corollary — PR34, 2026-11-14
+
+[Results](../results/padua-effective-cubature-20261112.md). Cubature statements in this section use positive weights and normalized product-Chebyshev measure with all nodes in the closed cube [−1,1]³.
+- **Explicit excess.** PD-T679 (PROVED, computer-assisted) makes the PD-T557 excess explicit: γ_A>1/36, N≥37n³/216 at every n for rules exact on Π_(2n−1), no positive Padua package for n≥218. PD-T678 supplies a compactly supported witness.
+- **Supporting results.** PD-T675 (Delsarte transference) and PD-T676 (uniform form, LITERATURE dependency LIT-716) support it. PD-T677 caps this route at γ≤1/18.
+- **Finite range.** PD-N246 rules out the finite torus LP with M≤8N on n=2…109.
+- **Frontier.** Package existence for 4≤n≤217 and the value of γ_A in (1/36,1/18] remain OPEN. The deferred routes are the cube-Delsarte LP (IDEA-761), separation strengthening (IDEA-759) and a sharper orbit conversion. Audits 01–03 did not execute a full Codex γ/compact/FT replay because input retrieval returned HTTP403.
+- **Lebesgue corollary.** PD-T674 assembles the Padua Lebesgue-constant corollary at its finite and eventual ranges; PD-T099's effective bridge remains OPEN.
