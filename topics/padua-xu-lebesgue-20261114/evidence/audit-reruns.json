@@ -1,0 +1,67 @@
+{
+ "label": "audit-01 reruns of developer code (copy of the topic at the audited SHA, run in /tmp/audit/tc; outputs not committed)",
+ "audited_sha": "971beb79b8edb93835b20d1b9148e93d4ba3aba4",
+ "inspected_head": "46dcd9227aa24fa88ab657b4e15318062219d73f",
+ "auditor": "Claude Opus 5.5 (claude-opus-5-5), xhigh, independent audit subagent (audit-01)",
+ "date": "2026-11-14",
+ "env": {
+  "python": "3.13.18",
+  "python-flint": "0.9.0",
+  "mpmath": "1.4.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "machine": "2 cores, linux"
+ },
+ "runs": [
+  {
+   "command": "python3 code/mp/research/x2r3_first_variation_arb.py --band --nmin 2 --nmax 3000 --out /tmp/audit/out/fv_band_2_3000.json",
+   "script_sha256": "9289060ffaa970dd3e8e131a6f18371c5fcafc0e3467984ac36fe5befd45b25e",
+   "wall_seconds": 99.0,
+   "output_sha256": "0bed8871411b231381f3587acc7547969334a65f4d73db0ee3feb040203ff13b",
+   "output_bytes": 758427,
+   "output_sha256_with_dev_wall_seconds_105.7": "25db45028e782806e5361ec588cecb66297afca301eef2dfbeb1fa34425fc05a",
+   "matches_pinned_full_output_sha256_25db4502": true,
+   "flags": {
+    "count": 1500,
+    "all_signs_certified": true,
+    "all_Dx_pos": true,
+    "all_Dy_pos": true,
+    "min_Dx_over_M4_lower": 0.019340359539719576,
+    "min_Dy_over_M4_lower": 0.027351398762243292,
+    "all_band_Tx_positive": true,
+    "Ty_nonpositive_only_at_(1,2)": true
+   }
+  },
+  {
+   "command": "python3 code/mp/research/x2r3_first_variation_arb.py --full --nmin 2 --nmax 24",
+   "result": "identical to evidence/mp-fv_full_2_24.json except wall_seconds"
+  },
+  {
+   "command": "python3 code/mp/research/x2_corner_arb.py --nmax 60 --out /tmp/a/arb.json",
+   "result": "identical to evidence/mp-x2-corner-arb.json except the 'command' field and timing"
+  },
+  {
+   "command": "python3 code/xu/g0_check.py --nmax 12 --out /tmp/audit/out/xu-g0.json",
+   "wall": "2 min 27 s",
+   "result": "G0_PASS True; identical to evidence/xu-g0.json except 'command' and timing"
+  },
+  {
+   "command": "(cd code/mp) python3 g0_check.py --out /tmp/audit/out/mp-g0.json",
+   "wall": "91 s",
+   "result": "identical to evidence/mp-g0.json except 'command' and timing"
+  },
+  {
+   "command": "(cd code/mp) python3 cmp_check.py --out /tmp/audit/out/mp-cmp-check.json",
+   "wall": "58 s",
+   "result": "ALL_rows_consistent True; identical to evidence/mp-cmp-check.json except 'command' and timing"
+  },
+  {
+   "command": "python3 -I code/xu/independent/ic_x1_{a_vandermonde 10 500, b_grid 16, c_1d, d_enclosure, e_signs}.py",
+   "result": "all exit 0 (17, 75, 18, 114, 4 s); outputs reproduce independent-checks-X1.md section 2 (0 violations/failures)"
+  },
+  {
+   "command": "python3 -I code/mp/independent/ic_x2_{cstar --J 800 --JR 300, arb_finite --nmax 60 --extra 100,200,400,1000, stepB, vandermonde --nmax 20 --dps 60, bracket}.py",
+   "result": "all exit 0 (5, 4, 1, 245, 105 s); c* in [0.51695365336672179537, 0.51695365336697862536]; all flags true; bracket all_inside true (248 n <= 5000, min margins 9.28 / 19.11)"
+  }
+ ]
+}
