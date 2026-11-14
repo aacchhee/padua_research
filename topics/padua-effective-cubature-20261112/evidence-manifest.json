@@ -1,0 +1,112 @@
+{
+ "schema": "padua-effective-cubature-evidence-manifest-v1",
+ "generate": "python3 -B topics/padua-effective-cubature-20261112/code/evidence_manifest.py",
+ "verify": "python3 -B topics/padua-effective-cubature-20261112/code/evidence_manifest.py --verify",
+ "limit_bytes_per_file": 16384,
+ "files": {
+  "evidence/q0c-d3-leverage.json": {
+   "producer": "code/q0_d3_leverage.py",
+   "command": "python -B topics/padua-effective-cubature-20261112/code/q0_d3_leverage.py --certificate topics/padua-3d-20261106/evidence/fd3-certificate.json --output topics/padua-effective-cubature-20261112/evidence/q0c-d3-leverage.json",
+   "status": "MEASURED (50-digit floating evaluation at certified dyadic centres)",
+   "used_by": "gates.md Q0c, Q1b",
+   "sha256": "e45a0780d063ad8abef0bac07cdbb0581e7983b1093bccc545c4bc682ae6c16c",
+   "bytes": 874,
+   "producer_sha256": "73ae74c1763c6806d8721fbe89c29200ded22947033bc709b554805489e7dff1"
+  },
+  "evidence/cap-critical-lattice.json": {
+   "producer": "code/cap_critical_lattice.py",
+   "command": "python3 -B topics/padua-effective-cubature-20261112/code/cap_critical_lattice.py topics/padua-effective-cubature-20261112/evidence/cap-critical-lattice.json",
+   "status": "exact finite check (PROVED input of record -04 (a))",
+   "used_by": "theory/lp-cap.md",
+   "sha256": "cdfec994aa5d80b115e70ecd365cfd61aea75032d1db60250ec8c84ebec41a52",
+   "bytes": 663,
+   "producer_sha256": "0516daa4af249dfe23f0861f3c0bc9eaba12b09330bd4d9dd9458b519b9a2f44"
+  },
+  "evidence/lp-torus.json": {
+   "producer": "code/lp_torus.py (runs) + code/lp_report.py (aggregation)",
+   "command": "per run: python3 code/lp_torus.py --n N --extra E --out <scratch>/runs/nN_eE.json (cwd = topic dir); aggregate: python3 code/lp_report.py --scratch <scratch> --evidence evidence",
+   "status": "MEASURED (cut-plane LP optima; four lp_torus.py SHA-256 values across runs, listed in the file)",
+   "used_by": "gates.md Q1, Q2",
+   "sha256": "b14dc86a12c5afd84da0d3a3b7146987f56cc1a421ed7d7ee2759b723b63f977",
+   "bytes": 8241,
+   "producer_sha256": "81b7fcd38b7a668a0bc9e93a15b3e980573c62340d50e18dca1b6fe13edd75d1"
+  },
+  "evidence/lp-torus-delsarte-best.json": {
+   "producer": "code/lp_torus.py + code/lp_report.py",
+   "command": "python3 code/lp_torus.py --n 8 --extra 8 --out <scratch>/runs/n8_e8.json; then lp_report.py as above",
+   "status": "MEASURED (n=8, K=22 Delsarte polynomial coefficients; nonnegativity not certified)",
+   "used_by": "attempts/E1.md",
+   "sha256": "462ac5a329a7a5751e8f4ce25c27763db38af1187ac347668fc614604664af30",
+   "bytes": 10877,
+   "producer_sha256": "81b7fcd38b7a668a0bc9e93a15b3e980573c62340d50e18dca1b6fe13edd75d1"
+  },
+  "evidence/lp-lattice.json": {
+   "producer": "code/lp_lattice.py + code/lp_report.py",
+   "command": "python3 code/lp_lattice.py --mode exhaust --ns 2..8; --mode rank1 --ns 9; --mode rank1 --ns 10..16 --start-factor 1.09 --dmax-factor 1.25 --samples 3000000",
+   "status": "witnesses exact (re-verified by orchestrator); minimality MEASURED-exhaustive n=2..8 by the producer only; n=9..16 upper bounds",
+   "used_by": "gates.md Q1b, theory/lp-cap.md, code/pdn_lattice_witness.py --extra",
+   "sha256": "e64e3fbcc0c22d02dc6746b888e1c76aa125e3e65740bf56372f2d2e9916d0e0",
+   "bytes": 3445,
+   "producer_sha256": "c9d334071a1efa824336d636eae3e532e54760732e8bedd59737823124c73624"
+  },
+  "evidence/lp-cube.json": {
+   "producer": "code/lp_cube.py + code/lp_report.py",
+   "command": "python3 code/lp_cube.py --n 2 --tol 1e-8 --max-iter 40 --nref 60 --cand 10000; --n 3 --tol 1e-8 --max-iter 60 --nref 80 --cand 15000; --n 4 --tol 1e-7 --max-iter 60 --nref 80 --cand 15000",
+   "status": "MEASURED (cut-plane relaxation values)",
+   "used_by": "attempts/E3.md, gates.md Q1b",
+   "sha256": "193879cd0a86ba3fdd42088fa893e576daf93aa45f7fb07888172b3403f310ae",
+   "bytes": 3923,
+   "producer_sha256": "6c4722af4aa261d2a90d308aeaca648f1c6911a2de427f9671c628b7023134b1"
+  },
+  "evidence/pdn-lattice-witness.json": {
+   "producer": "code/pdn_check_ball.py (from the full output of code/pdn_lattice_witness.py)",
+   "command": "cwd = topic dir: python3 -B code/pdn_lattice_witness.py --nmin 2 --nmax 140 --extra evidence/lp-lattice.json --perturb --out <scratch>/witness-final.json; python3 -B code/pdn_check_ball.py --full <scratch>/witness-final.json --out evidence/pdn-lattice-witness.json",
+   "status": "exact witnesses (each verified by exhaustive coefficient-box enumeration); input of PD-N record -06",
+   "used_by": "theory/limitation-torus-lp-finite.md",
+   "sha256": "54f84ddd172daf57947349a1fe998ceb7c3455f871a4c914cfbc96d9419107c8",
+   "bytes": 10952,
+   "producer_sha256": "eb7b1d97a487ab928ad0822e6291d401e46aa807ae2efe0aee93f0f89eefe7c9"
+  },
+  "evidence/gamma-certificate.json": {
+   "producer": "code/gamma_certificate.py",
+   "command": "cwd = topic dir: python3 -B code/gamma_certificate.py --anc <scratch>/octa_double.func.cpp --alpha 1.001 --R 4 --RG 4 --out evidence/gamma-certificate.json  (input: arXiv:1510.02331v3 anc/octa_double.func.cpp, SHA-256 034a1aea4fafbf29743bded0812723ac8c9cf95274225213578145d016a7bc47; third-party, not committed)",
+   "status": "computer-assisted certificate of record -07 (L), revised 2026-11-13 with certified coefficient errors: PASS (developer run)",
+   "used_by": "theory/explicit-gamma.md",
+   "sha256": "812f9ffb971d6bafe359adf2738405c7ac4f4e62d64582d53ae570822094eb61",
+   "bytes": 1403,
+   "producer_sha256": "52c8c9d9123afdeba2080ee37a456af193fb460051cf596f994a6b52d28fc6ff"
+  },
+  "evidence/gamma-certificate-indep.json": {
+   "producer": "code/gamma_certificate_indep.py",
+   "command": "cwd = topic dir: python3 -I code/gamma_certificate_indep.py --input <scratch>/octa_double.func.cpp --out evidence/gamma-certificate-indep.json",
+   "status": "independent rerun (separate code path, Bernstein enclosures) of record -07 (L): PASS",
+   "used_by": "theory/explicit-gamma.md, independent-checks-gamma.md",
+   "sha256": "188f765eb92b9e4c994384b77042221f892a1ac16b284f600cb6bca22f16336a",
+   "bytes": 2918,
+   "producer_sha256": "635077161ada17c14c8e866ba36dc6d90ea971b52f7b47073431a6a4cc826f76"
+  },
+  "evidence/gamma-compact.json": {
+   "producer": "code/gamma_compact.py",
+   "command": "cwd = topic dir: python3 -B code/gamma_compact.py --anc <scratch>/octa_double.func.cpp --gamma-receipt evidence/gamma-certificate.json --R 100000 --out evidence/gamma-compact.json",
+   "status": "explicit compact-support witness bound for record -05 (Arb): PASS",
+   "used_by": "theory/explicit-gamma-target.md",
+   "sha256": "ad6af4ba78c7e327101c35df1b9263f211da5cea573a98ab8d767b66bee3895d",
+   "bytes": 986,
+   "producer_sha256": "da16d3d169f5f80771a1f59d8cdb995d9fed8723555dd317199eda305d292ec5"
+  }
+ },
+ "off_repository": [
+  {
+   "what": "LP per-run receipts runs/n*_e*.json, lat_*.json, cube[2-4].json, torus_f_n*_e*.npz",
+   "location": "session scratchpad only (not archived; AC cold storage not reachable from this cloud session)",
+   "regenerate": "commands above",
+   "archival": "PENDING"
+  },
+  {
+   "what": "gamma certificate leaf lists (leaves-final.npz, about 3 MB) and DGOV ancillary inputs (third-party)",
+   "location": "session scratchpad only; inputs re-downloadable from https://arxiv.org/src/1510.02331v3/anc/",
+   "regenerate": "gamma_certificate.py --leaves PATH",
+   "archival": "PENDING (leaves); never (third-party inputs)"
+  }
+ ]
+}

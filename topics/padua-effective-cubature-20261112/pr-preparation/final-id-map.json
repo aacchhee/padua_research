@@ -1,0 +1,111 @@
+{
+ "schema": "padua-effective-cubature-final-id-map-v1",
+ "topic": "padua-effective-cubature-20261112",
+ "reservation_commit": "de39dabc7301b0de1463aaf2dab99365c4d7789e",
+ "provisional_prefix": "padua-effective-cubature-20261112-claude",
+ "claims": [
+  [
+   "PD-T?…-01",
+   "PD-T674",
+   "theory/lebesgue-constant-corollary.md",
+   "PROVED"
+  ],
+  [
+   "PD-T?…-02",
+   "PD-T675",
+   "theory/delsarte-bound.md",
+   "PROVED"
+  ],
+  [
+   "PD-T?…-03",
+   "PD-T676",
+   "theory/uniform-theorem-a.md",
+   "PROVED with explicit LITERATURE dependency"
+  ],
+  [
+   "PD-T?…-04",
+   "PD-T677",
+   "theory/lp-cap.md",
+   "PROVED"
+  ],
+  [
+   "PD-T?…-05",
+   "PD-T678",
+   "theory/explicit-gamma-target.md",
+   "PROVED (computer-assisted)"
+  ],
+  [
+   "PD-N?…-06",
+   "PD-N246",
+   "theory/limitation-torus-lp-finite.md",
+   "PROVED"
+  ],
+  [
+   "PD-T?…-07",
+   "PD-T679",
+   "theory/explicit-gamma.md",
+   "PROVED (computer-assisted)"
+  ]
+ ],
+ "ideas": [
+  [
+   "IDEA?…-01",
+   "IDEA-756",
+   "novelty-gate-E1.md"
+  ],
+  [
+   "IDEA?…-02",
+   "IDEA-757",
+   "novelty-gate-E1.md"
+  ],
+  [
+   "IDEA?…-03",
+   "IDEA-758",
+   "novelty-gate-E1.md"
+  ],
+  [
+   "IDEA?…-04",
+   "IDEA-759",
+   "novelty-gate-E1.md"
+  ],
+  [
+   "IDEA?…-05",
+   "IDEA-760",
+   "novelty-gate-E1.md"
+  ],
+  [
+   "IDEA?…-06",
+   "IDEA-761",
+   "novelty-gate-E1.md"
+  ],
+  [
+   "IDEA?…-07",
+   "IDEA-762",
+   "novelty-gate-E1.md"
+  ]
+ ],
+ "literature": [
+  [
+   "LIT?…-01",
+   "LIT-716",
+   "Kolountzakis–Lev–Matolcsi arXiv:2510.10172v1",
+   "literature-effective.md"
+  ],
+  [
+   "LIT?…-02",
+   "LIT-717",
+   "Dostert–Guzmán–de Oliveira Filho–Vallentin arXiv:1510.02331v3",
+   "literature-effective.md"
+  ]
+ ],
+ "aliases": {
+  "PD-T?effective-cubature-claude-01": "PD-T?…-01 (handoff-01 short form)"
+ },
+ "unused_gaps": {
+  "PD-T": "PD-T680–683",
+  "PD-N": "PD-N247–250",
+  "IDEA": "IDEA-763–765",
+  "LIT": "LIT-718–720"
+ },
+ "note": "'…' abbreviates the provisional prefix above. The -06 slot is the negative record PD-N?…-06 (no PD-T?…-06 exists)."
+}
