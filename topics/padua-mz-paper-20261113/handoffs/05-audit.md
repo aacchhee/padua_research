@@ -1,6 +1,6 @@
 # Handoff 05 — substantive audit of the MZ-CC and MZ-SP manuscripts
 
-- Status: open
+- Status: done in f9bf997447922645bba9f411d470e0d1ec4d82ce
 - Previous handoff: [04-work.md](04-work.md)
 - Next agent / model / effort: **Codex, gpt-6-astra, high or higher**. Supplementary subagent checks are welcome; they do not replace this audit.
 - Role: independent substantive auditor. Claude developed this topic (handoffs 01–04); Codex audits. This is the single substantive audit of the topic.
