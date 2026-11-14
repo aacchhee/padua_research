@@ -3274,3 +3274,15 @@ Delegated Sol medium new-campaign setup and I25 regeneration; distinct Astra
 high reviews prerequisites, source identity, outputs and independent replay.
 Root freezes preregistrations before native calls. No core engine, arithmetic,
 threshold, registry or final-ID change is authorized by regeneration itself.
+
+Native replacement campaign preregistered and pushed in
+`b918c1d5bedba60e8255d7d2b985dd6c70f4690a` before execution. Independent
+Astra confirms authentic padua30 archive, release manifests, all 180 arithmetic
+files and 13 frozen source/data rows; the new wrapper uses unchanged runner
+`a198b651…` and engine freeze `0d9ce0a5…`. Compact tracked freeze pins the
+52,392-byte full machine preregistration (`1d6a4967…`), retained off Git.
+Earlier data-only preparation bytes are retained separately; no scientific
+call preceded the committed freeze. Operational controls pass; actual n=320
+pilot exits 0 for both passes, full validation and field equality pass,
+with no timeout/cleanup kill. Remaining 321..510 admitted once afterward.
+Independent I25 source review is still prospective at this entry.
