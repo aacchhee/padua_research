@@ -1,6 +1,6 @@
 # MZ-CC: Marcinkiewicz–Zygmund constants of Clenshaw–Curtis quadrature beyond half-exactness
 
-**Status (2026-11-14).** Complete internal draft in SIAM's `siamart` class, 32 pages. It has passed two internal referee rounds (mathematics, Opus 5.5 xhigh: no CRITICAL or MAJOR finding, the Λ_edge certificate rerun byte-identical; exposition, Opus 5.5 high), answered in [response-internal-cc.md](../../../topics/padua-mz-paper-20261113/response-internal-cc.md). The **Codex audit is pending**. Not submitted. Authorship, venue, cover letter, AI declaration, ORCID, contributions, funding and submission are AC's; the manuscript carries placeholders for them. Venue chosen by AC (2026-11-13): SIAM J. Numer. Anal., fallback Math. Comp.
+**Status (2026-11-14).** Complete internal draft in SIAM's `siamart` class, 32 pages. It has passed two internal referee rounds (mathematics, Opus 5.5 xhigh: no CRITICAL or MAJOR finding, the Λ_edge certificate rerun byte-identical; exposition, Opus 5.5 high), answered in [response-internal-cc.md](../../../topics/padua-mz-paper-20261113/response-internal-cc.md). The Codex [audit-01](../../../topics/padua-mz-paper-20261113/audit-01.md) is answered in [response-01](../../../topics/padua-mz-paper-20261113/response-01.md) (wording and metadata only); the readiness check is pending. Not submitted. Authorship, venue, cover letter, AI declaration, ORCID, contributions, funding and submission are AC's; the manuscript carries placeholders for them. Venue chosen by AC (2026-11-13): SIAM J. Numer. Anal., fallback Math. Comp.
 
 This is the first of two papers split from the single 2026-11-05 draft (AC, 2026-11-13). The signed Padua material is in [MZ-SP](../paper-sp/README.md), which cites this paper for three CC spectral inputs. Reading order for AC: MZ-CC first (arXiv first, then MZ-SP).
 
@@ -35,7 +35,7 @@ Last build (2026-11-14, head `a0206a8`, pdfTeX 1.40.25 / TeX Live 2023 Debian): 
 
 ## Mathematical scope
 
-Numbers are the **frozen numbering** (checked against the compiled `.aux` on 2026-11-14; later passes may change wording but must not renumber, see [correspondence-cc.md](../../../topics/padua-mz-paper-20261113/correspondence-cc.md)). Statuses are those of the registry records at `b5388c2` unless marked provisional. "PROVED" means a complete proof is in the paper or its appendix at the scope stated. Nothing here is an audit statement.
+Numbers are the **frozen numbering** (checked against the compiled `.aux` on 2026-11-14; later passes may change wording but must not renumber, see [correspondence-cc.md](../../../topics/padua-mz-paper-20261113/correspondence-cc.md)). Statuses are those of the registry records at `b5388c2`, plus PD-T684, registered at PR35 preparation (provisional alias PD-T?mz-paper-claude-01). "PROVED" means a complete proof is in the paper or its appendix at the scope stated. Nothing here is an audit statement.
 
 | No. (label) | PD ID(s) | Status | Exact scope |
 |---|---|---|---|
@@ -49,22 +49,22 @@ Numbers are the **frozen numbering** (checked against the compiled `.aux` on 202
 | Thm 3.3 (`thm:five-thirds`) | PD-T526 | PROVED | λ₊(N,n) ≤ min{1+ρ_{N,n}, 5/3} for all N ≥ 2, n<N. 5/3 is **not** claimed optimal |
 | Rem 3.4 | PD-N002, PD-T016 | PROVED | D is not PSD for N ≥ 5; Q_N(T_N²)/∫T_N² = 2(4N²−1)/(4N²−2) > 2 |
 | Thm 4.1 (`thm:cardinal`) | PD-T017 | PROVED | ∫p² ≤ K_N Q_N(p²) on Π_N, K_N = O((log N)²) explicit |
-| Lem 4.2 (`lem:U-exact`) | PD-T019; PD-T?mz-paper-claude-01 (a), onset part | PROVED | Exact U_{N−1} quotient; q_N < 1/3 for every N ≥ 57 (the 57 is the new part) |
+| Lem 4.2 (`lem:U-exact`) | PD-T019; PD-T684 (a), onset part | PROVED | Exact U_{N−1} quotient; q_N < 1/3 for every N ≥ 57 (the 57 is the new part) |
 | Thm 4.3 (`thm:harmonic`) | PD-T018 | PROVED | λ₋(N,N−1) ≤ 128000/(log N)² for all N ≥ 2. The constant is far from π⁴/8 (factor ≈ 7·10⁸ in K_N) |
 | Lem 4.4 (`lem:volterra`) | PD-T522 | PROVED | ‖V‖ = 2/π on L²(0,1); quotient π⁴/8 attained at cos(πy/2) |
 | Prop 4.5 (`prop:sharp-trial`) | PD-T523 | PROVED | limsup (log N)²λ₋(N,N−1) ≤ π⁴/8 through all N. **Proof route differs from the record** (through Lem A.1(c)); statement unchanged; flagged for the audit |
 | Thm 4.6 (`thm:sharp-min`) | PD-T546 (with PD-T523) | PROVED | lim (log N)²λ₋(N,N−1) = lim (log N)²λ₋(N,N) = π⁴/8 through all integers N, with the finite bound (σ_N+τ_N), L=log N ≥ 16. **Closes PD-T020** |
-| Cor 4.7 (`cor:interp-norm`) | PD-T?mz-paper-claude-01 (d) | PROVED, provisional | ‖𝓘_N‖_{ℓ²_w→L²} = λ₋(N,N)^{−1/2}; ‖𝓘_N‖/log N → 2√2/π² |
+| Cor 4.7 (`cor:interp-norm`) | PD-T684 (d) | PROVED | ‖𝓘_N‖_{ℓ²_w→L²} = λ₋(N,N)^{−1/2}; ‖𝓘_N‖/log N → 2√2/π² |
 | Lem 4.8, 4.9 | PD-T544, PD-T545 | PROVED | Signed-remainder bound; discrete-primitive bound (lemmas of the π⁴/8 proof; proofs in Appendix A) |
 | Prop 5.1 (`prop:fixed-trial`) | PD-T529 (**weakened**) | PROVED | Qualitative fixed-J limits, positive definiteness of the model form, 1 ≤ Λ_edge ≤ 5/3, liminf λ₊(N,N−1) ≥ Λ_edge. Explicit constants of PD-T529 are dropped (they serve only the omitted PD-T531) |
 | Thm 5.2 (`thm:edge-limit`) | PD-T530 (definition PD-T528) | PROVED | lim λ₊(N,N−1) = Λ_edge ∈ [1, 3/2] through all N, qualitative (no rate) |
 | Prop 5.3 (`prop:edge-certified`) | PD-T547; Lem C.1 = PD-T548 | PROVED, **computer-assisted** | Λ_edge ≥ 1.0044369, **one-sided**. Trust base listed in Appendix C |
-| Cor 6.1 (`cor:endpoint`) | PD-T527; PD-T?mz-paper-claude-01 (a)(b) | PROVED (a)(b provisional) | K_N⁻¹ ≤ 1−η_N ≤ min{1, 128000/log²N}; 1−η_N = λ₋(N,N−1) for N ≥ 57; (log N)²(1−η_N) → π⁴/8; κ₂(G_N)/(log N)² → 8Λ_edge/π⁴ ∈ [0.08249, 0.12320] (the lower end is computer-assisted via Prop 5.3) |
+| Cor 6.1 (`cor:endpoint`) | PD-T527; PD-T684 (a)(b) | PROVED | K_N⁻¹ ≤ 1−η_N ≤ min{1, 128000/log²N}; 1−η_N = λ₋(N,N−1) for N ≥ 57; (log N)²(1−η_N) → π⁴/8; κ₂(G_N)/(log N)² → 8Λ_edge/π⁴ ∈ [0.08249, 0.12320] (the lower end is computer-assisted via Prop 5.3) |
 | Rem 6.2 (`rem:rate`) | none | remark | No rate usable at computable N; decimal of Λ_edge open |
 | Thm 7.1 (`thm:ratio-lower`) | PD-T023 | PROVED | ∫p² ≤ C_*(1−n/N)⁻²Q_N(p²) on Π_n, C_* = 12(1+π)⁴(1+2/π); degenerates like N⁻² at n = N−1 |
 | Cor 7.2 (`cor:strong`) | PD-T024 | PROVED | Spectrum of G_{N,n} in [(1−ϑ)²/C_*, 1+max{2ϑ−1,0}²] for n ≤ ϑN, ϑ<1; C_* not claimed optimal |
 | Prop 8.1 (`prop:counterexample`) | PD-T019, PD-N004 | PROVED | λ₋(512,511) < 1/4, so ‖I−G_{512,511}‖ > 3/4 (An–Wu's m=513, n=511); their conditional theorem stays valid |
-| Prop 8.2, eq. (8.3) (`prop:hyper`) | PD-T025; CC application with PD-T?mz-paper-claude-01 (c) | PROVED (c provisional) | Upper-Gram hyperinterpolation estimate for any positive rule; CC factor √2(1+√B), B = min{1+ρ_{N,n}, 5/3}, so (1+√(5/3))√2 < 2.2910·√2 |
+| Prop 8.2, eq. (8.3) (`prop:hyper`) | PD-T025; CC application with PD-T684 (c) | PROVED | Upper-Gram hyperinterpolation estimate for any positive rule; CC factor √2(1+√B), B = min{1+ρ_{N,n}, 5/3}, so (1+√(5/3))√2 < 2.2910·√2 |
 | App. A (Lem A.1 `lem:endpoint-rep`; proofs of 4.5, 4.8, 4.9, (4.6) finite bound) | PD-T546 proof §1–2, PD-T523, PD-T544, PD-T545 | PROVED | Endpoint representation of the interpolant and the long proofs of §4.2 |
 | App. B (Lem B.1, B.2; B.1–B.3) | PD-T529, PD-T530 proofs | PROVED | Core density, continuum identity, proof of Thm 5.2 |
 | App. C (Lem C.1; certificate) | PD-T548, PD-T547 | PROVED, computer-assisted | Closed forms of the model mass; finite reduction; enclosures 1.004436918864667280457774 ≤ q(u) ≤ …779 for the J = 512 trial vector; exact comparison with 10044369/10⁷ passes; the upper endpoint bounds q(u) only, not Λ_edge |

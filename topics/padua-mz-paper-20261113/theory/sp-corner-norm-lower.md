@@ -1,6 +1,6 @@
 # PD-T?mz-paper-claude-02 — analytic lower bounds for the corner-operator extrema
 
-ID kind: PD-T (provisional; final ID at PR preparation).
+ID kind: PD-T. **Final ID: PD-T685**, assigned at PR35 preparation on 2026-11-14 from the reserved range PD-T684–689 ([ledger](../ALLOCATIONS.md), [map](../pr-preparation/final-id-map.json)). The title keeps the provisional ID PD-T?mz-paper-claude-02 as an alias.
 Aliases: ‖B‖ ≥ c_new; corner norm carrier bound; combined corner enclosure.
 Split from: none. Combines PD-T533/PD-T379 (carrier bounds) with PD-T536/PD-T540 (limits are the spectral extrema of B; c₋=−‖B‖). Suggested by the MZ-SP plan review, finding F7.
 Split into: none.
@@ -50,8 +50,9 @@ One-sided lower bounds only. No upper bound on ‖B‖ beyond PD-T542's 0.47781�
 
 ## Open items
 
-None mathematical. Independent check: PASS ([check-new-corollaries-02.md](../check-new-corollaries-02.md)). Codex audit-01 (2026-11-14) reconstructed it and found no defect. A final ID is assigned at PR preparation.
+None mathematical. Independent check: PASS ([check-new-corollaries-02.md](../check-new-corollaries-02.md)). Codex audit-01 (2026-11-14) reconstructed it and found no defect. Final ID assigned at PR preparation (see the ID line above).
 
 ## History
 
 2026-11-13: created in topic padua-mz-paper-20261113 during the MZ-SP plan dispositions (review F7).
+2026-11-14: final ID assigned at PR35 preparation (PD-T684 for -01, PD-T685 for -02); statement, scope and status unchanged.

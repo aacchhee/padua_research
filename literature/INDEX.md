@@ -729,3 +729,11 @@ These LITERATURE records distinguish reported source statements from local proof
 - **LIT-010 (lsx-conjecture).** LSX n^3/6+O(n^2) cube cubature question, n^3/4+O(n^2) conjecture; real nonzero weights and nodes in R^d. Cube-positive local result does not settle exterior nodes or signed weights. Existing LIT-307 is an overlapping historical statement; no new provisional alias is invented. Coverage: Developer primary introduction; D1b/audit06 independent primaryp1,p3,p16. Existing LIT-307 overlap retained. [source record 1](../topics/padua-3d-20261106/final-d1/sources.md); [source record 2](../topics/padua-3d-20261106/final-d5/source-records.md); [source record 3](../topics/padua-3d-20261106/audit-06/H1-H5.md).
 
 LIT-636 records the precise DEKL Fourier-simplex theorem beyond the historical aggregate LIT-380. LIT-650 records Li–Sun–Xu’s superspace interpolation construction separately from the conjecture under LIT-010. Chkifa’s source-header alias resolves with the difference-bound fact LIT-647, while the prefix bound LIT-648 and reported prior multivariate bound LIT-649 remain distinct. The sources indexed only through metadata, abstracts, search excerpts or secondary attribution retain those explicit limits.
+
+### MZ-CC and MZ-SP manuscripts — same-source addenda, PR35 (2026-11-14)
+
+- **LIT-045 — published-version equation check.** AC supplied the published PDF (MCS 252 (2027) 733–745) on 2026-11-13. The orchestrator read it; equations (7)–(8) match arXiv v1. Coverage is extended to those equations; the verdict is unchanged. [Record](records/mz-an-sommariva-vianello-2026.md).
+- **LIT-056 — DOI addendum.** Journal DOI 10.1137/120869845, from metadata only; no new reading. [Record](records/mz-quadrature-aliasing-screen.md).
+
+No new LIT ID is assigned. The MZ-CC/MZ-SP citation scope check is in [literature-mz-paper.md](../topics/padua-mz-paper-20261113/literature-mz-paper.md).
+

@@ -1,0 +1,21 @@
+{
+ "schema": "padua-mz-paper-final-id-map-v1",
+ "topic": "padua-mz-paper-20261113",
+ "branch": "claude/padua-mz-paper-20261113",
+ "pr": 35,
+ "reservation": {"namespace": "PD-T", "range": "PD-T684-689", "count": 6},
+ "reservation_commit": "88824fb82e0ec691ad0a4296b4bcd4bc960399f7",
+ "claims": [
+  {"provisional": "PD-T?mz-paper-claude-01", "final": "PD-T684",
+   "record": "topics/padua-mz-paper-20261113/theory/cc-defect-condition-corollary.md",
+   "status": "PROVED (part (b) numerical interval uses computer-assisted PD-T547)",
+   "manuscript": "MZ-CC Lem 4.2 onset, Cor 4.7, Cor 6.1, Prop 8.2 CC application"},
+  {"provisional": "PD-T?mz-paper-claude-02", "final": "PD-T685",
+   "record": "topics/padua-mz-paper-20261113/theory/sp-corner-norm-lower.md",
+   "status": "PROVED",
+   "manuscript": "MZ-SP Cor 6.10"}
+ ],
+ "assigned": "PD-T684-685",
+ "permanent_gaps": "PD-T686-689",
+ "other_namespaces": "none reserved or assigned; LIT-045 and LIT-056 receive dated addenda only"
+}

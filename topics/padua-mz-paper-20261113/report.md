@@ -2,6 +2,12 @@
 
 Branch `claude/padua-mz-paper-20261113`, draft PR #35, base `b5388c2`, head `a0206a8` at the time of writing (2026-11-14). Written by Claude Sonnet 5.5 (documentation developer) from the topic records. Day-to-day history is in the [LOG](LOG.md); nothing here is an audit statement. **The Codex audit of both papers is pending.** Nothing is submitted.
 
+> **Update (2026-11-14, PR preparation).** This report was written before the audit; its sections are kept as written, except that the IDs in §3 now show the final IDs.
+> - Codex [audit-01](audit-01.md) returned F1–F5. [Response-01](response-01.md) accepts and fixes all five, as wording and metadata only.
+> - The two provisional claims are now **PD-T684** and **PD-T685** (reserved range PD-T684–689, [ledger](ALLOCATIONS.md)). The shared registries are updated.
+> - The readiness check is pending.
+> - Still open for AC: the PD-T376 package (§6.2), which must be retrieved and replayed, or the scope of Prop 8.2 decided; and §5.
+
 ## 1. What was done
 
 AC split the 2026-11-05 draft into two papers (2026-11-13) and chose venues. The orchestrator integrated the PR #31 results (PD-T522–T548) and the literature of PR #21, rewrote both introductions around exact constants, ran notation and literature scope passes, and ran two internal referee rounds per paper (mathematics Opus 5.5 xhigh: no CRITICAL or MAJOR finding in either paper, both certificates rerun bit-identically; exposition Opus 5.5 high). Both papers are complete internal drafts with frozen statement numbering (checked against the compiled `.aux` on 2026-11-14: 52 and 56 labels, no mismatch). Fresh builds are clean; hashes are in the [manuscript record](../mz-constants/directions/M7/manuscript-record.md). The scope tables are in the two READMEs ([MZ-CC](../../tracks/mz-constants/paper/README.md), [MZ-SP](../../tracks/mz-constants/paper-sp/README.md)).
@@ -21,8 +27,8 @@ AC split the 2026-11-05 draft into two papers (2026-11-13) and chose venues. The
 
 ## 3. New provisional claims (two records, flagged for the audit)
 
-- **PD-T?mz-paper-claude-01** ([record](theory/cc-defect-condition-corollary.md); checks [1](check-cc-defect-corollary.md), [2](check-new-corollaries-02.md), PASS with corrections applied). (a) 1−η_N = λ₋(N,N−1) for every N ≥ 57 and (log N)²(1−η_N) → π⁴/8; (b) κ₂(G_N)/(log N)² → 8Λ_edge/π⁴, the numerical interval inheriting the computer-assisted PD-T547; (c) hyperinterpolation factor with B = min{1+ρ, 5/3}; (d) ‖𝓘_N‖ = λ₋(N,N)^{−1/2}, ‖𝓘_N‖/log N → 2√2/π². All are short consequences of PD-T017/019/022/025/526/527/530/546/547. Appears in MZ-CC as Lem 4.2 (N ≥ 57 part), Cor 4.7, Cor 6.1, eq. (8.3).
-- **PD-T?mz-paper-claude-02** ([record](theory/sp-corner-norm-lower.md); check PASS). ‖B‖ = −c₋ ≥ c_new ≈ 0.0296418 and c₊ ≥ 0.0127789 (analytic, from PD-T533/379 with PD-T536/540). Appears in MZ-SP as Cor 6.10.
+- **PD-T684** (provisional PD-T?mz-paper-claude-01) ([record](theory/cc-defect-condition-corollary.md); checks [1](check-cc-defect-corollary.md), [2](check-new-corollaries-02.md), PASS with corrections applied). (a) 1−η_N = λ₋(N,N−1) for every N ≥ 57 and (log N)²(1−η_N) → π⁴/8; (b) κ₂(G_N)/(log N)² → 8Λ_edge/π⁴, the numerical interval inheriting the computer-assisted PD-T547; (c) hyperinterpolation factor with B = min{1+ρ, 5/3}; (d) ‖𝓘_N‖ = λ₋(N,N)^{−1/2}, ‖𝓘_N‖/log N → 2√2/π². All are short consequences of PD-T017/019/022/025/526/527/530/546/547. Appears in MZ-CC as Lem 4.2 (N ≥ 57 part), Cor 4.7, Cor 6.1, eq. (8.3).
+- **PD-T685** (provisional PD-T?mz-paper-claude-02) ([record](theory/sp-corner-norm-lower.md); check PASS). ‖B‖ = −c₋ ≥ c_new ≈ 0.0296418 and c₊ ≥ 0.0127789 (analytic, from PD-T533/379 with PD-T536/540). Appears in MZ-SP as Cor 6.10.
 
 Other items for the audit, from the responses: the PD-T523 proof-route change (MZ-CC Prop 4.5 via Lem A.1(c)); Lemma 2.4 (Schur test, unregistered); the statement of PD-T529 weakened; PD-T539 weakened (MZ-SP Prop 6.6); the explicit bound (2+C_P)E_k(f) in MZ-SP Rem 7.2 and "η < 0.83" in Prop 8.1 (arithmetic not stated in any record); tighter constants inside the PD-T534 proof. Final IDs for the two provisional claims are to be reserved at PR preparation by the WORKFLOW procedure; none was reserved here.
 

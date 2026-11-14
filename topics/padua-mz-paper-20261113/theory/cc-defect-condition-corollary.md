@@ -1,6 +1,6 @@
 # PD-T?mz-paper-claude-01 — sharp CC endpoint defect, condition-number asymptotics and a uniform hyperinterpolation factor
 
-ID kind: PD-T (provisional; final ID at PR preparation).
+ID kind: PD-T. **Final ID: PD-T684**, assigned at PR35 preparation on 2026-11-14 from the reserved range PD-T684–689 ([ledger](../ALLOCATIONS.md), [map](../pr-preparation/final-id-map.json)). The title keeps the provisional ID PD-T?mz-paper-claude-01 as an alias.
 Aliases: sharp eta deficit; CC Gram condition number asymptotic; five-thirds hyperinterpolation factor.
 Split from: none. It sharpens the open item of PD-T527 ("no limiting leading coefficient") and closes the "eventual dominance" question of the manuscript remark `rem:rate`, using results proved after PD-T527 was written.
 Split into: none.
@@ -72,8 +72,9 @@ None beyond the repository results listed.
 
 ## Open items
 
-None mathematical. Independent checks: PASS (both check files). Codex audit-01 (2026-11-14) reconstructed parts (a)–(d) and found no defect. A final ID is assigned at PR preparation.
+None mathematical. Independent checks: PASS (both check files). Codex audit-01 (2026-11-14) reconstructed parts (a)–(d) and found no defect. Final ID assigned at PR preparation (see the ID line above).
 
 ## History
 
 2026-11-13: created in topic padua-mz-paper-20261113 (manuscript finalization), as the only new mathematical statement so far; flagged for audit in the topic log.
+2026-11-14: final ID assigned at PR35 preparation (PD-T684 for -01, PD-T685 for -02); statement, scope and status unchanged.

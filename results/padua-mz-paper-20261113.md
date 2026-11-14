@@ -18,7 +18,67 @@ MZ-CC comes first. The work:
 
 Plan: [BRIEF](../topics/padua-mz-paper-20261113/BRIEF.md) and [handoff 01](../topics/padua-mz-paper-20261113/handoffs/01-work.md).
 
-## Results so far (current, 2026-11-14)
+## Results so far (current, 2026-11-14, PR preparation)
+
+**Status.**
+- PR35 is draft. Codex [audit-01](../topics/padua-mz-paper-20261113/audit-01.md) is answered by [response-01](../topics/padua-mz-paper-20261113/response-01.md).
+- Final IDs are assigned from the reserved range PD-T684–689 ([ledger](../topics/padua-mz-paper-20261113/ALLOCATIONS.md)).
+- The shared registries are updated.
+- The readiness check is pending.
+
+Details: [report for AC](../topics/padua-mz-paper-20261113/report.md), [LOG](../topics/padua-mz-paper-20261113/LOG.md), and the scope tables in the two READMEs.
+
+- **Two complete internal drafts.**
+  - Each passed two internal referee rounds and one Codex audit; certificates and brackets rerun; frozen numbering verified (52/56 labels).
+  - Clean builds: MZ-CC 32 pp. (`siamart251216`), MZ-SP 50 pp. (`elsarticle`).
+  - No PDF in Git. Not submitted.
+  - **MZ-CC** ([README](../tracks/mz-constants/paper/README.md)), SIAM J. Numer. Anal.:
+    - PROVED:
+      - uniform λ₊ ≤ 5/3 (PD-T526);
+      - lim (log N)²λ₋(N,N−1) = π⁴/8 (PD-T546/523/522/544/545);
+      - lim λ₊(N,N−1) = Λ_edge ∈ [1, 3/2] (PD-T530; PD-T529 weakened);
+      - Λ_edge ≥ 1.0044369, computer-assisted and one-sided (PD-T547/548);
+      - PD-T527, PD-T013–019 and PD-T022–025, each at its own scope;
+      - PD-T684.
+    - Open: the decimal of Λ_edge (PD-T027) and rates.
+    - MEASURED: Table 1 (PD-T026), the J-Galerkin proxy (PD-T532).
+  - **MZ-SP** ([README](../tracks/mz-constants/paper-sp/README.md)), J. Approx. Theory:
+    - PROVED:
+      - marginal compression (PD-T021);
+      - weights (PD-T295/377);
+      - carriers and threshold (PD-N105–107, PD-T378);
+      - normalized bounds (PD-T379/533/537);
+      - corner-operator limits (PD-T534/535/536/539/540);
+      - coefficient norm (PD-T297);
+      - PD-N051;
+      - PD-T685.
+    - Computer-assisted: the ‖B‖ enclosure (PD-T541/542), brackets m = 10…80, and the negative trial quotients at m = 1101/1240/1600 (PD-T376).
+    - Open: the decimals of c_± (PD-T381), the first sign change and effective onsets.
+- **New registered results.**
+  - **PD-T684** (was PD-T?mz-paper-claude-01, [record](../topics/padua-mz-paper-20261113/theory/cc-defect-condition-corollary.md)), PROVED:
+    - 1−η_N = λ₋ for N ≥ 57, and (log N)²(1−η_N) → π⁴/8;
+    - κ₂/(log N)² → 8Λ_edge/π⁴;
+    - ‖𝓘_N‖/log N → 2√2/π²;
+    - hyperinterpolation factor (1+√(5/3))√2.
+  - **PD-T685** (was PD-T?mz-paper-claude-02, [record](../topics/padua-mz-paper-20261113/theory/sp-corner-norm-lower.md)), PROVED: ‖B‖ ≥ 0.02964… and c₊ ≥ 0.01277…, lower bounds only.
+
+  Both have independent checks PASS and a Codex reconstruction PASS.
+- **Audit response.** All five findings (F1–F5) are accepted and fixed, as wording and metadata only:
+  - archive and deposit claims;
+  - the m = 1600 parenthesis;
+  - the signed supremum;
+  - notation;
+  - stale metadata.
+- **Unresolved, for AC.** The PD-T376 witness arrays and exact norm files are not retrieved and not replayed, and the papers now say so. Before submission AC must retrieve the exact package (report §6.2) or decide the publication scope of MZ-SP Prop 8.2.
+- **Declined strengthenings (candidates only):** sup λ₊(N,N−1) ≤ 23/15 (MZ-CC); |λ^P_±(m,⌊τm⌋)| ≍ log m (MZ-SP).
+- **For AC:**
+  - the Zenodo deposit (file list in report §6);
+  - placeholders and decisions (report §5);
+  - companions, deferred until AC confirms the frozen texts.
+
+## History: results at 2026-11-14 before PR preparation (superseded, kept)
+
+### Results so far (2026-11-14, after audit-01, as written then)
 
 Manuscript state at head `a0206a8` (later wording cleanup at `a03a4f7`); independent audit at `be28d3267bf6117878190b10f2d29840e524eac7`. Details: [audit-01](../topics/padua-mz-paper-20261113/audit-01.md), [report for AC](../topics/padua-mz-paper-20261113/report.md), [LOG](../topics/padua-mz-paper-20261113/LOG.md), scope tables in the two READMEs.
 

@@ -141,6 +141,23 @@
 - F2: the m=1600 parenthesis now says "agrees with the certified trial quotient; Prop 8.2 gives only an upper bound for the true minimum". F3: "infimum −1/9 and supremum 1/36". F4: four notation fixes. F5: historical-table notes in both correspondence files; the provisional theory records reconciled to PASS.
 - Rebuilds: CC 32 pp., SP 50 pp., zero warnings; frozen labels 104/104 and 56/56 unchanged.
 
+## 2026-11-14 — Claude, claude-opus-5-5 (configured xhigh) — PR preparation
+
+- Response committed and pushed at `a1a2949`.
+- Merged main `99a9b1d` (PR34) into the branch with a no-ff merge `fa956de`; it was clean, with no conflicts. Published history was not rewritten; the shallow clone had to be unshallowed first.
+- **Reservation.**
+  - Fresh union check at main `99a9b1d`, PR27 `656c15b` and PR35 `fa956de`. There are 34 PRs in all: 27 and 35 open, no closed-unmerged PR. 17 ledgers and the four registries were read at each head. The union maximum is T683 (the PR34 ledger); PD-T999 is a documented fixture.
+  - Reserved PD-T684–689 (6) in [ALLOCATIONS.md](ALLOCATIONS.md), commit `88824fb`, pushed and linked from the PR35 body before any assignment.
+- **Assignments.** PD-T?mz-paper-claude-01 → PD-T684 and PD-T?mz-paper-claude-02 → PD-T685; PD-T686–689 are permanent gaps. Map: [pr-preparation/final-id-map.json](pr-preparation/final-id-map.json).
+- **Registries applied.**
+  - PROOF_STATUS: two rows.
+  - ID_CROSSWALK: PR35 section.
+  - PAPER_MAP: the MZ section is replaced by the MZ-CC and MZ-SP rows, and the pre-split row is noted as superseded.
+  - state/CURRENT.md: PR35 section; the stale "manuscript insert remains a proposal" line now points to the integration.
+  - RESULTS.md: a section for this topic.
+  - Literature: LIT-045 (published equations (7)–(8) checked) and LIT-056 (journal DOI, metadata only) addenda in the records and INDEX. No new LIT, IDEA or PD-N ID.
+- **Topic files.** The current files now carry the final IDs: the theory records' ID lines and history, the TeX comments (no printed change), README scope tables and statuses, the report update block, correspondence notes, results, and the M7 record. Historical handoffs, checks, referee reports and plans keep the provisional IDs.
+
 ## Runs needed
 
 - PR preparation (final IDs, registries) and the Codex readiness check; see the open handoff.

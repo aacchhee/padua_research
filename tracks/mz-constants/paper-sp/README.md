@@ -1,6 +1,6 @@
 # MZ-SP: Marcinkiewicz–Zygmund constants of signed Padua rules beyond half-exactness
 
-**Status (2026-11-14).** Complete internal draft in Elsevier's `elsarticle` class (preprint, 12 pt, A4), 50 pages. It has passed two internal referee rounds (mathematics, Opus 5.5 xhigh: no CRITICAL or MAJOR finding, the ‖B‖ enclosure certificate rerun bit-identical, brackets match the receipts; exposition, Opus 5.5 high), answered in [response-internal-sp.md](../../../topics/padua-mz-paper-20261113/response-internal-sp.md). The **Codex audit is pending**. Not submitted. Authorship, venue, cover letter, AI declaration, ORCID, CRediT, funding and submission are AC's; the manuscript carries placeholders. Venue chosen by AC (2026-11-13): Journal of Approximation Theory, fallback Adv. Comput. Math.; the class and options follow JAT's usual `elsarticle` template, to be re-checked against JAT's guide for authors at submission.
+**Status (2026-11-14).** Complete internal draft in Elsevier's `elsarticle` class (preprint, 12 pt, A4), 50 pages. It has passed two internal referee rounds (mathematics, Opus 5.5 xhigh: no CRITICAL or MAJOR finding, the ‖B‖ enclosure certificate rerun bit-identical, brackets match the receipts; exposition, Opus 5.5 high), answered in [response-internal-sp.md](../../../topics/padua-mz-paper-20261113/response-internal-sp.md). The Codex [audit-01](../../../topics/padua-mz-paper-20261113/audit-01.md) is answered in [response-01](../../../topics/padua-mz-paper-20261113/response-01.md) (wording and metadata only); the readiness check is pending. Not submitted. Authorship, venue, cover letter, AI declaration, ORCID, CRediT, funding and submission are AC's; the manuscript carries placeholders. Venue chosen by AC (2026-11-13): Journal of Approximation Theory, fallback Adv. Comput. Math.; the class and options follow JAT's usual `elsarticle` template, to be re-checked against JAT's guide for authors at submission.
 
 The paper depends on [MZ-CC](../paper/README.md), which is to go out first (AC, 2026-11-13: "mz-cc first, mz-sp cites"). Three CC spectral inputs (λ₊ ≤ 2−4/N+4/N², λ₋(N,N−1) → 0, λ₋(512,511) < 1/4) are **cited** from MZ-CC (Cor 3.2, Thm 4.3, Prop 8.1), not reproved. The bibliography entry `MZ-CC` is a placeholder until the arXiv identifier exists.
 
@@ -34,7 +34,7 @@ Last build (2026-11-14, head `a0206a8`, pdfTeX 1.40.25 / TeX Live 2023 Debian): 
 
 ## Mathematical scope
 
-Numbers are the **frozen numbering** (checked against the compiled `.aux` on 2026-11-14; wording may change, numbers must not, see [correspondence-sp.md](../../../topics/padua-mz-paper-20261113/correspondence-sp.md)). Statuses are those of the registry records at `b5388c2`, unless marked provisional. Q^P_m is the interpolatory signed Padua rule for Lebesgue measure (total mass four), Gram matrices on total-degree spaces 𝒫_n.
+Numbers are the **frozen numbering** (checked against the compiled `.aux` on 2026-11-14; wording may change, numbers must not, see [correspondence-sp.md](../../../topics/padua-mz-paper-20261113/correspondence-sp.md)). Statuses are those of the registry records at `b5388c2`, plus PD-T685, registered at PR35 preparation (provisional alias PD-T?mz-paper-claude-02). Q^P_m is the interpolatory signed Padua rule for Lebesgue measure (total mass four), Gram matrices on total-degree spaces 𝒫_n.
 
 | No. (label) | PD ID(s) | Status | Exact scope |
 |---|---|---|---|
@@ -61,7 +61,7 @@ Numbers are the **frozen numbering** (checked against the compiled `.aux` on 202
 | Prop 6.7 (`prop:positivity`) | PD-T540 | PROVED | c₋ = −‖B‖ simple, eigenfunction > 0 a.e.; 0 < c₊ < ‖B‖ |
 | Prop 6.8 (`prop:rectangles`) | PD-T541 | PROVED | Rectangle upper and lower certificates for ‖B‖ |
 | Prop 6.9 (`prop:enclosure`) | PD-T542 | PROVED, **computer-assisted** | 0.013164946500379018110831 ≤ ‖B‖ ≤ 0.477809279990884889210594; fixes no decimal digit |
-| Cor 6.10 (`cor:norm-lower`) | PD-T?mz-paper-claude-02 | PROVED, provisional | ‖B‖ = −c₋ ≥ κ_new (≈ 0.0296418) and c₊ ≥ κ^car₊ (≈ 0.0127789); lower bounds only |
+| Cor 6.10 (`cor:norm-lower`) | PD-T685 | PROVED | ‖B‖ = −c₋ ≥ κ_new (≈ 0.0296418) and c₊ ≥ κ^car₊ (≈ 0.0127789); lower bounds only |
 | Thm 7.1 (`thm:padua-operator`) | PD-T297 | PROVED | Direct signed coefficient operator H_{m,n}: 2 ≤ ‖H_{m,n}‖_{C→L²} ≤ 28.3763348311… < 30 for every m ≥ 2, 0 ≤ n < m, with no sign condition on the Gram form |
 | Rem 7.2 (`rem:reproduction`) | PD-T113 | PROVED | H_{m,n}q = q for q ∈ 𝒫_k, k ≤ min(n,m−n); ‖f−H f‖ ≤ (2+C_P)E_k(f). **The explicit bound is implied by PD-T297 and PD-T113 but stated in no record; for the audit** |
 | Prop 7.3 (`prop:no-quadratics`) | PD-N051 | PROVED | H_{m,m−1} reproduces 𝒫₁ but not 𝒫₂, m ≥ 3; no fixed-function error bound with k ≥ 2 |

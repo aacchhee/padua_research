@@ -50,3 +50,14 @@ The reservation's priority is the pushed commit that first adds this ledger. Loc
 **Foreign or non-ID strings excluded, with context checked:** `PD-T999` is the test-fixture string in `topics/bivariate-lanczos-20261031/audit-05/check_integration_independent.py`, already documented in the PR34 ledger. None of these overlaps the new range.
 
 No collision and no unknown retired reservation was found. The check is repeated at readiness, and again if main or another open PR's ledger changes before AC merges. Only AC merges.
+
+## Final assignments and permanent gaps (2026-11-14)
+
+| Namespace | Assigned | Count | Permanent unused headroom | Gap count |
+|---|---|---:|---|---:|
+| PD-T | PD-T684–685 | 2 | PD-T686–689 | 4 |
+
+- PD-T?mz-paper-claude-01 → **PD-T684** ([record](theory/cc-defect-condition-corollary.md)).
+- PD-T?mz-paper-claude-02 → **PD-T685** ([record](theory/sp-corner-norm-lower.md)).
+
+The exact map is [pr-preparation/final-id-map.json](pr-preparation/final-id-map.json). The global crosswalk section is "MZ-CC and MZ-SP manuscripts — PR35" in `ID_CROSSWALK.md`. Assignments were made only after the reservation commit `88824fb82e0ec691ad0a4296b4bcd4bc960399f7` was pushed and linked from the PR body.

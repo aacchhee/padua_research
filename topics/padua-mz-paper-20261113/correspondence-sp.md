@@ -1,6 +1,8 @@
 # MZ-SP correspondence table (task 1; gate W1)
 
 > **Status of this file (2026-11-14, response to audit-01 F5).** The table immediately below is the **historical planning table** of 2026-11-13. It uses post-split numbering and planned locations, and its "now → target" column shows the state at that time. It is kept unchanged as a record. The **current mapping** is the *Frozen numbering* table at the end of this file (label → number) together with the scope table in [tracks/mz-constants/paper-sp/README.md](../../tracks/mz-constants/paper-sp/README.md) (frozen number → PD IDs → status → exact scope, verbatim/weakened). Every departure from a record's scope is listed in the *Changes log* below and in response-internal-sp.md.
+>
+> **Final IDs (PR preparation, 2026-11-14).** PD-T?mz-paper-claude-01 = **PD-T684** and PD-T?mz-paper-claude-02 = **PD-T685** ([ledger](ALLOCATIONS.md)). The historical tables below keep the provisional IDs.
 
 As [correspondence-cc.md](correspondence-cc.md), for MZ-SP. Planned numbering from [plan-sp.md](plan-sp.md).
 

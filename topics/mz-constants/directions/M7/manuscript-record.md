@@ -140,3 +140,8 @@ Content added since the 2026-11-05 draft: the PR #31 results (PD-T522–PD-T548 
 PDF bytes can change on rebuild (timestamps and identifiers); the source hashes identify the drafts. The `.cls` and `.bst` hashes agree with the 2026-11-13 record in the split map; SIAM's official macro download is to replace them before submission. `elsarticle.cls` and `elsarticle-num.bst` come from `texlive-publishers` and are not in Git.
 
 Open items for AC (full list in [report.md](../../../padua-mz-paper-20261113/report.md)): placeholders, unread sources with links, DOI checks, the Zenodo file list (the PD-T376 witness arrays and exact-norm files are **not yet delivered**: AC's cold-storage destination is not reachable from the sandbox, and the staging directory `/tmp/mz-cleanup` no longer exists in this session), and arXiv order (MZ-CC, then MZ-SP).
+
+**PR preparation (2026-11-14).**
+- Codex [audit-01](../../../padua-mz-paper-20261113/audit-01.md) is answered by [response-01](../../../padua-mz-paper-20261113/response-01.md), as wording and metadata only.
+- The two provisional claims are registered as PD-T684 (MZ-CC) and PD-T685 (MZ-SP) ([ledger](../../../padua-mz-paper-20261113/ALLOCATIONS.md)). Both manuscripts' TeX comments and both READMEs now carry the final IDs; the printed text is unchanged.
+- The PD-T376 witness package remains unretrieved and unreplayed; this is an open submission obligation for AC.
