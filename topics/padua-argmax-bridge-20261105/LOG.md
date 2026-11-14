@@ -3417,3 +3417,38 @@ final receipt remain outside that immutable archive. Handoff36's input-head
 figures describe its pinned output checkpoint; this entry records the later
 custody correction. All newly added proof input/output JSON files remain
 below 16 KiB. No numerical check needs repetition for this prose shortening.
+
+## 2026-11-14 — Zenodo-oriented public package
+
+AC reports the previous 296,189,961-byte preservation archive is now in cold
+storage and requests a new Zenodo-oriented one. This is a public-reproducibility
+packaging task, not another native or full numerical campaign. Rules read at
+`656c15b758c3cf49782adb3af8b1bced361179e6`; model allocation is Sol medium
+technical development and distinct Astra high focused review, with effective
+serving metadata unexposed. No novelty, theorem/range change or ID allocation.
+
+Fetched main `99a9b1d161e41a80c4fd425b63022c681fbe8779`, merged without
+conflict in `5f0e8e4a859db189781ff4712c4d7902f8e4f47d`. Only unrelated
+accepted cubature work/registries advanced; rules and all paper computational
+dependencies are unchanged. No other topic's evidence is removed or altered.
+The previous complete archive and its receipts stay intact. AC's cold-storage
+report is recorded as owner-reported custody; location/retrieval are not
+independently verified and no destination or DOI is invented.
+
+The old/new labels describe origins of current phase witnesses, not obsolete
+versus current data. All 942 ordinary JSON inputs are required to reproduce
+the paper's reported two checks at every degree 41..511. The public layout
+presents one uniform dataset; the 39 polynomial inputs cover 2..40. Source
+mapping remains machine-readable provenance. The public candidate uses a
+normal ZIP with root README.txt/README.md, ordinary certificate directories,
+minimal unchanged arithmetic checker closure, exact analytic checks/tables,
+compact expected results and paper PDFs. It omits the preserved native traces,
+producer/runtime binaries, full unrelated repository and internal audit trail.
+
+Bounded prospective verification: full byte/inventory checks for 942 phase and
+39 polynomial inputs; quick actual phase 41/511 and polynomial 2/17 with fresh
+kernel compilation plus analytic checks. The reviewed observer caps per-process
+CPU 300 s, wall 600 s, address 2 GiB, one core and explicit signal/cleanup/wait4 records.
+Distinct reviewer plans phase 458 (both records) under 120 CPU/180 wall/2 GiB and
+structural negative controls, from fresh ordinary extraction while denying
+original-repository reads. No full 942 or full 39 rerun is claimed or requested.
