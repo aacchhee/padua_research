@@ -4,13 +4,13 @@ AC decided on 2026-11-14: "pack all needed evidence for zenodo, one pack per pap
 
 | Pack | Paper | Bytes | SHA-256 | Files | Manifest |
 |---|---|---:|---|---:|---|
-| `padua-zenodo-mz-cc-20261114.zip` | MZ-CC | 973,963 | `04a6aed58dc440d910cfd6e12b5f3a71963c23ec476e7a1ef8e12c4d99836dff` | 379 | [MANIFEST](MANIFEST-padua-zenodo-mz-cc-20261114.txt) |
-| `padua-zenodo-mz-sp-20261114.zip` | MZ-SP | 40,696,348 | `03bf1e945068cf5f5d910904eeae301e081b2c307cc2ed9a0e3793ec5583a027` | 706 | [MANIFEST](MANIFEST-padua-zenodo-mz-sp-20261114.txt) |
+| `padua-zenodo-mz-cc-20261114.zip` | MZ-CC | 986,039 | `d089bc6fdc2a71453bc3abfee6abe3965acc25ff7aebbdc4e2e5d4442e05d520` | 380 | [MANIFEST](MANIFEST-padua-zenodo-mz-cc-20261114.txt) |
+| `padua-zenodo-mz-sp-20261114.zip` | MZ-SP | 40,708,422 | `311621b37e9b2210bc51fcc56a34f70f5a52c673c2102f7930c41b7fe9447760` | 707 | [MANIFEST](MANIFEST-padua-zenodo-mz-sp-20261114.txt) |
 
-Both packs were staged at commit `3f6095fae42898387d40ceb4996b9518305dfecd` and contain:
+Both packs were staged at commit `bde6787341a154117ddba71d10ccdc8ce1b023e7`. They carry the **licence GNU AGPL v3.0** (SPDX `AGPL-3.0-only`; AC, 2026-11-14) and contain:
 - `repository/`: a `git archive` of the directories that the paper names, plus every file those programs read or hash;
 - `data/`: the files that are not in Git;
-- `verify.sh`, `tools/compare_receipts.py`, `requirements.txt`;
+- `verify.sh`, `tools/compare_receipts.py`, `requirements.txt`, `LICENSE`;
 - `README.md` (from [README-mz-cc.md](README-mz-cc.md) and [README-mz-sp.md](README-mz-sp.md));
 - `VERIFICATION-2026-11-14.log`;
 - `MANIFEST-SHA256.txt`.
@@ -35,7 +35,7 @@ Not included, because neither paper uses them: the positive controls at m = 60 a
 
 ## Verification before packing
 
-`verify.sh` was run on staged copies at `ed385e9`; between `ed385e9` and `3f6095f` only README files changed.
+`verify.sh` was run on staged copies at `ed385e9`. Between `ed385e9` and `bde6787` only README files changed and `LICENSE` was added.
 - **MZ-CC:** the P4 producer and grouped checker, and Table 1. All agree.
 - **MZ-SP:** 25 comparisons, all agreeing:
   - payload identities;
@@ -45,3 +45,5 @@ Not included, because neither paper uses them: the positive controls at m = 60 a
   - measurement item (1).
 
 An earlier staging also ran `--regenerate`, which reproduced the vectors and witness payloads from scratch. Each pack's `MANIFEST-SHA256.txt` was checked after unzipping.
+
+History: the first delivery of 2026-11-14 had no LICENSE (`04a6aed5…`, `03bf1e94…`). It was replaced in AC's folder by the files above.
