@@ -55,3 +55,10 @@ A written proof of Λ_MP(n) ≥ c·n² for every admissible n ≥ n₀ with c > 
 ## Verdicts
 
 (none yet)
+
+## Addendum 2026-11-14 (before any run): G1-MP screen and X2 corner checks
+
+Pre-registered by the orchestrator after the literature verdict in `literature-xu-mp.md` §3 (X2 lower bound already published). Same rules as G1, applied to MP points, n even, 2 ≤ n ≤ 60:
+- grid M = max(64, 12n) in angles, symmetry reduction only by x ↦ −x (Lemma S / BBDM Lemma 15); refinement and classification as in G1 steps 2–3; report per n the four vertex values, the best non-vertex candidate, and g_n relative to max(λ(1,1), λ(−1,1)).
+- **Corner check (C-MP):** λ_n at the four vertices by G0 path A (interval, ≥ 256 bits) for every even n ≤ 30. "BBDM corner symmetry refuted at n" means certified λ_n(1,1) ≠ λ_n(1,−1) (disjoint enclosures). A refutation is registered as a PD-N only with a committed checker and an independent rerun on path B (as in G1's kill clause).
+- No numerical observation sets a constant (G5).
