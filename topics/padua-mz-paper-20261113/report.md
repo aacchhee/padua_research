@@ -6,7 +6,8 @@ Branch `claude/padua-mz-paper-20261113`, draft PR #35, base `b5388c2`, head `a02
 > - Codex [audit-01](audit-01.md) returned F1–F5. [Response-01](response-01.md) accepts and fixes all five, as wording and metadata only.
 > - The two provisional claims are now **PD-T684** and **PD-T685** (reserved range PD-T684–689, [ledger](ALLOCATIONS.md)). The shared registries are updated.
 > - The readiness check is pending.
-> - Still open for AC: the PD-T376 package (§6.2), which must be retrieved and replayed, or the scope of Prop 8.2 decided; and §5.
+> - **PD-T376 package (§6.2): resolved 2026-11-14.** The witnesses were regenerated from `39479ff` with byte-identical payloads and norms, and replayed by both checkers. Both papers' evidence is packed for Zenodo ([zenodo/README.md](zenodo/README.md)). AC uploads the packs.
+> - Still open for AC: §5 and the deposit itself.
 
 ## 1. What was done
 

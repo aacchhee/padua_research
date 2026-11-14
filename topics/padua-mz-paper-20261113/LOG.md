@@ -159,8 +159,37 @@
 - **Topic files.** The current files now carry the final IDs: the theory records' ID lines and history, the TeX comments (no printed change), README scope tables and statuses, the report update block, correspondence notes, results, and the M7 record. Historical handoffs, checks, referee reports and plans keep the provisional IDs.
 - Handoff 06 done in `06e544d`; [handoff 07](handoffs/07-readiness.md) opens the Codex readiness check (gpt-6-astra medium).
 
+## 2026-11-14 08:32 — AC: "there are no mz cleanup files. Regenerate the witness commit, and pack all needed evidence for zenodo, one pack per paper. If something is easier to regenerate, no worries, just regenerate"
+
+Claude, claude-opus-5-5 (configured xhigh).
+
+- **PD-T376 witnesses regenerated, byte-identical payloads.**
+  - Used a detached worktree at the frozen commit `39479ff` (fetched from GitHub; its code equals main's) and a venv with Python 3.12.3, NumPy 2.3.5, SciPy 1.17.0 and python-flint 0.9.0, single-threaded.
+  - `g1_minimum.py` reproduced the three source-vector SHA-256s exactly: a407bd0c…, b8f15202… and a23cb0e6….
+  - `rigorous_witness.py --vector` then gave decompressed witness JSON and exact-norm files equal to the pinned identities, at m=1101/1240/1600. Only the gzip containers differ (zlib).
+  - The producer (sign negative) and `independent_witness.py` (accepted, negative) agree field-for-field with the original receipts. A comparator was used; it ignores timings, paths and versions only.
+  - Receipts are in [evidence/pd-t376-regeneration/](evidence/pd-t376-regeneration/).
+  - This is a reconstruction of the pinned evidence, not a new witness; the mathematics is unchanged.
+- **Zenodo packs.** One per paper, built by [tools/zenodo_pack.py](tools/zenodo_pack.py); index in [zenodo/README.md](zenodo/README.md).
+  - Each pack holds the repository directories the availability statements name, plus every file the programs read or hash (`git archive`).
+  - It also holds data outside Git:
+    - MZ-CC: the Table 1 output, regenerated and agreeing with the historical blob `2b52b432`.
+    - MZ-SP: the witnesses, norm files, source vectors, regeneration receipts and measurement item (1).
+  - Plus `verify.sh`, the comparator, pinned requirements, a README and a SHA-256 manifest.
+  - The protocol files that the P4 and P1 receipts hash were later extended in PR31, so the hashed versions (`d03e74dc` and `c1e6e59d`, fetched from refs/pull/31/head) are archived and checked.
+- **Verification on the staged packs (copies), before packing.**
+  - MZ-CC: P4 producer and grouped checker agree; Table 1 agrees.
+  - MZ-SP: payload identities; producer replay and independent checker at all three m; all six bracket certificates with independent checks; both P1 instances; measurement item (1). All agree.
+  - An earlier run with `--regenerate` also reproduced the vectors and witness payloads from scratch.
+  - Result: ALL CHECKS AGREE.
+- **Manuscripts.**
+  - Availability statements: the files form an evidence archive prepared for deposit (DOI placeholder). In MZ-SP the witness arrays and norm files are now stated to be in that archive.
+  - Builds: 32/50 pp., zero warnings, frozen labels 52/52 and 56/56.
+  - This is an evidence-availability change. The readiness handoff asks for a focused check of it.
+- **Delivery.** Agents create no deposit: AC uploads the packs to Zenodo.
+
 ## Runs needed
 
 - Codex readiness check ([handoff 07](handoffs/07-readiness.md)).
-- PD-T376 package: AC retrieves it and the committed checkers are replayed, or AC decides the scope of Prop 8.2.
+- AC: upload the two packs to Zenodo; fill in the DOIs and the commit hash.
 - A byte-pinned PD-T376 witness replay requires retrieval of the exact missing package named in report §6.2. No receipt alone supplies it; no archival delivery is claimed.
