@@ -3,7 +3,7 @@
 set -euo pipefail
 paper_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 repo_dir=$(cd -- "$paper_dir/../../.." && pwd)
-output_dir=${PADUA_PAPER_OUTPUT_DIR:-"$repo_dir/local-output/padua-argmax-bridge-20261105/regenerated-paper-20261114"}
+output_dir=${PADUA_PAPER_OUTPUT_DIR:-"$repo_dir/local-output/padua-argmax-bridge-20261105/response07-paper-20261114"}
 mkdir -p "$output_dir/template"
 output_dir=$(cd -- "$output_dir" && pwd)
 python3 - "$paper_dir/template/dependencies.json" "$output_dir/template" <<'PY'

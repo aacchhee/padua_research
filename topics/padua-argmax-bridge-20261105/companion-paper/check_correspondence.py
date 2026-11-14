@@ -2,6 +2,7 @@
 
 Default mode checks the final revised TeX/Bib baseline. --archival checks the
 historical source pair in Git and, with --artifacts, the original PDFs.
+--built-labels compares current built aux numbers without historical PDFs.
 This checks source preservation/numbering, not mathematical correctness.
 """
 from pathlib import Path
@@ -12,7 +13,7 @@ import subprocess
 
 HISTORICAL_PAPER = 'c6e195fa5211d4504fd2638f3c7686368e28daee'
 HISTORICAL_COMPANION = 'ac945041ce73b74c2c4ec29c42ebeb8773e7a9b8'
-FINAL_BASELINE = 'e861c752218fc0a6648d4a4a67fea616ba5cbdd1'
+FINAL_BASELINE = '5f435be21f29f6fbf48e6d8cba15346117d7e151'
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[2]
 ORIGINAL = HERE.with_name('paper')
@@ -125,6 +126,15 @@ def preserved_pdf(path, kind):
     require(pdf_pages(path) == pages, 'Historical ' + kind + ' PDF page count changed')
 
 
+def built_labels(paper_output, companion_output, all_labels):
+    require(paper_output != companion_output, 'Paper and companion output directories must be separate')
+    left = aux_numbers(paper_output / 'main.aux'); right = aux_numbers(companion_output / 'main.aux')
+    for key in all_labels:
+        require(key in left and key in right, 'Missing built label: ' + key)
+        require(left[key] == right[key], 'Built number differs: ' + key)
+    print(f'PASS: all {len(all_labels)} built label numbers match (current aux comparison).')
+
+
 def artifacts(paper_output, companion_output, all_labels, archival=False, original_paper=None, original_companion=None):
     require(paper_output != companion_output, 'Paper and companion output directories must be separate')
     if archival:
@@ -135,10 +145,7 @@ def artifacts(paper_output, companion_output, all_labels, archival=False, origin
         require({paper_output / 'main.pdf', companion_output / 'main.pdf'}.isdisjoint(
                 {original_paper, original_companion}), 'New output must not reuse original PDF paths')
         preserved_pdf(original_paper, 'paper'); preserved_pdf(original_companion, 'companion')
-    left = aux_numbers(paper_output / 'main.aux'); right = aux_numbers(companion_output / 'main.aux')
-    for key in all_labels:
-        require(key in left and key in right, 'Missing built label: ' + key)
-        require(left[key] == right[key], 'Built number differs: ' + key)
+    built_labels(paper_output, companion_output, all_labels)
     paper_pages = pdf_pages(paper_output / 'main.pdf'); companion_pages = pdf_pages(companion_output / 'main.pdf')
     require(companion_pages <= 5 * paper_pages, f'Companion exceeds 5 x actual paper pages: {companion_pages} > 5 x {paper_pages}')
     print(f'PASS: historical 48/162-page PDFs preserved; all {len(all_labels)} built label numbers match; companion {companion_pages} <= 5 x paper {paper_pages}.')
@@ -147,16 +154,20 @@ def artifacts(paper_output, companion_output, all_labels, archival=False, origin
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--archival', action='store_true', help='Read historical paired TeX/Bib source from its fixed Git commits')
-    parser.add_argument('--artifacts', action='store_true')
+    modes = parser.add_mutually_exclusive_group()
+    modes.add_argument('--artifacts', action='store_true', help='Preserve historical PDF identities and compare built labels')
+    modes.add_argument('--built-labels', action='store_true', help='Compare current aux labels only; no historical PDFs required')
     parser.add_argument('--paper-output', type=Path)
     parser.add_argument('--companion-output', type=Path)
     parser.add_argument('--original-paper-pdf', type=Path)
     parser.add_argument('--original-companion-pdf', type=Path)
     args = parser.parse_args()
-    if args.artifacts and (args.paper_output is None or args.companion_output is None):
-        parser.error('--artifacts requires explicit --paper-output and --companion-output')
+    if (args.artifacts or args.built_labels) and (args.paper_output is None or args.companion_output is None):
+        parser.error('--artifacts/--built-labels requires explicit --paper-output and --companion-output')
     if args.artifacts and not args.archival and (args.original_paper_pdf is None or args.original_companion_pdf is None):
         parser.error('current --artifacts requires --original-paper-pdf and --original-companion-pdf')
+    if args.archival and args.built_labels:
+        parser.error('--built-labels compares the current source pair; omit --archival')
     if args.archival:
         paper = git_sources(ORIGINAL, HISTORICAL_PAPER); companion = git_sources(HERE, HISTORICAL_COMPANION)
         revision = HISTORICAL_PAPER + ' / ' + HISTORICAL_COMPANION
@@ -169,6 +180,8 @@ def main():
         revision = FINAL_BASELINE
     all_labels, claims, displays = compare_pair(paper, companion)
     print(f'PASS: paired TeX/Bib source baseline {revision}; same headings, {claims} statements, {displays} numbered display environments, {len(all_labels)} labels and bibliography.')
+    if args.built_labels:
+        built_labels(args.paper_output.resolve(), args.companion_output.resolve(), all_labels)
     if args.artifacts:
         artifacts(args.paper_output.resolve(), args.companion_output.resolve(), all_labels, args.archival,
                   args.original_paper_pdf.resolve() if args.original_paper_pdf else None,
