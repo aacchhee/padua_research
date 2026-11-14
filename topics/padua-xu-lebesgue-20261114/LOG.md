@@ -63,3 +63,5 @@
   - **OPEN:** X2-28, the argmax at (±1,1), with plan P1–P5.
 - Computer-assisted parts: X2-26 and X2-N30 at small n, and the c* enclosure. They need an independent rerun (`code/mp/research/x2_corner_checks.py`, `x2_corner_arb.py`).
 - Next: an independent Opus check of the X2 records; round X2-3 (Fable) on the argmax.
+- 2026-11-14 correction (independent check X2, m2): "c* in closed form" above means an explicit convergent integral/Si-series, not an elementary closed form. M1 fixed: arb evidence committed (`evidence/mp-x2-corner-arb.json`) and pinned in X2-25/26/N30.
+- Independent checks: `independent-checks-X1.md` confirms all X1 records (minor fixes F1, F2, F4 applied); `independent-checks-X2.md` confirms X2-21…N30 (M1 fixed; m1 and m2 fixed; m3 and m4 left as notes for the audit). Full-text reads of Harris PAMS 2010 and Li–Sun–Xu 2009 found no prior statement of Λ^Xu = L_n² (lit-notes/X1-novelty-exact-constant.md addendum).

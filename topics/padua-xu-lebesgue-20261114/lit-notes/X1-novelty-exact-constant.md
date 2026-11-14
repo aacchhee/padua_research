@@ -257,3 +257,50 @@ Suggested wording:
 - Credit Ehlich–Zeller for the 1D ingredients.
 - Claim exactness and the argmax only.
 - Read Xu's 2025 book before any priority statement.
+
+---
+
+## Full-text addendum (2026-11-14)
+
+Reader: Claude (Opus 5.5), literature subagent. Scope: two items re-read in full text (not abstracts) to settle whether either states or immediately implies (a) Λ^Xu_n = L_n² with L_n = (1/n) Σ_{k=1}^n cot((2k−1)π/(4n)), (b) a pointwise bound λ_n ≤ ω_n(u) ω_n(v), or (c) the location of the maximum of the Lebesgue function. Earlier text in this file is unchanged; corrections to it are flagged below.
+
+**Access method and its limits.** Direct download (curl) of both PDFs was refused by the proxy (CONNECT 403). Both full PDFs were therefore read through WebFetch, which passes the whole document to an intermediate model and returns quotes/answers, not raw text. Several targeted passes were made per paper (keyword sweeps, theorem-statement extraction, reference list). This is full-document coverage at the level of model-mediated queries; I did not see the raw text myself. One untargeted pass on Li–Sun–Xu produced a summary asserting a 2D "Lebesgue constant of order log n" in §3; two independent targeted passes (keyword sweep of the whole PDF; §3.3-specific pass) both found no such statement, and the claim is treated as an intermediate-model error. The ar5iv HTML (905k characters) was opened but only the first 100k characters (through the start of §3.1) were returned; it agrees with the PDF on what it covers.
+
+### A1. L. A. Harris, "Bivariate Lagrange interpolation at the Chebyshev nodes", Proc. Amer. Math. Soc. 138 (2010) 4447–4453, DOI 10.1090/S0002-9939-2010-10581-6
+
+**Title check.** The title in the task brief ("Lagrange polynomials, reproducing kernels and cubature in two dimensions") is a *different* Harris paper, J. Approx. Theory 195 (2015) 43–56 (see §3 above). The PAMS 138 paper is "Bivariate Lagrange interpolation at the Chebyshev nodes" (AMS article page: received 5 Apr 2009, revised 6 Mar 2010, published electronically 15 Jul 2010; communicated by W. Van Assche; MR2680069; MSC 65D05, 65D32; 33C50, 41A05, 42B05). Full text obtained from https://www.ams.org/proc/2010-138-12/S0002-9939-2010-10581-6/S0002-9939-2010-10581-6.pdf (the /journals/ URL variant failed).
+
+**Coverage:** pp. 4447–4453, all seven pages incl. references [1]–[8].
+
+**Content (locators from the PDF):**
+- §1 (pp. 4447–4449): nodes h_n = cos(nπ/m), n = 0..m; index sets Q_k = {(n,q): 0 ≤ n,q ≤ m, n − q ≡ k mod 2}, N^k = {(h_n, h_q): (n,q) ∈ Q_k}. N^0 / N^1 are the two parity classes, i.e. the Xu (Morrow–Patterson–Xu-type) Chebyshev-extrema node sets.
+- Lemma 1.1: P_{n,q}(s,t) = (2/m²) c_n c_q G_m(s,t,h_n,h_q), G_m a double Chebyshev sum minus ½[T_m(s)T_m(u) + T_m(t)T_m(v)]; Lagrange property on N^k. Stated as "obtained from [8]" (Xu, JAT 87, 1996). Not written in rotated or product form.
+- Lemma 1.2: p = Σ p(h_n,h_q) P_{n,q} + p_k, p_k a combination of V_i(s,t) = T_{m−i}(s)T_i(t) − (−1)^k T_i(s)T_{m−i}(t) (1.3).
+- §2, Thm 2.1 (p. 4449): explicit correction term (1/2^{m−1}) Σ'' a_i V_i for deg p ≤ m; Cor. 2.2 (no extra term iff a_{m−i} = (−1)^k a_i); Cor. 2.3 (p. 4450): (2/m²) Σ c_n c_q p(h_n,h_q) cubature exact to degree 2m−1 for the product Chebyshev weight.
+- §3, Thm 3.1 (p. 4451): unisolvence on triangular subsets Q^Δ_k for symmetric (k even) / skew-symmetric (k odd) polynomials; Cor. 3.2: Σ over Q^Δ_k equals Σ over Q_k for p ∈ S_k; alternate proof of Thm 2.1.
+- Words "Lebesgue", "norm", "bound", "maximum", "estimate", "log" do not occur. No sums of |P_{n,q}|, no convergence statement, no univariate Lebesgue constant, no cotangent sums. Motivation cited is Markov-type inequalities ([5], [6]).
+
+**Verdict A1:** NOT FOUND for (a), (b), (c), and nothing that immediately implies them. Harris 2010 is an algebraic interpolation/cubature paper on exactly the Xu node sets; it supplies no analytic estimate. Supporting check: Harris's 2019 Dublin talk slides ("Bivariate interpolation and cubature on the even-odd product nodes") also mention no Lebesgue constants or operator norms. The JAT 195 (2015) paper remains abstract-only (no free full text found).
+
+### A2. H. Li, J. Sun, Y. Xu, "Cubature formula and interpolation on the cubic domain", Numer. Math. Theor. Meth. Appl. 2(2) (2009) 119–152; arXiv 0808.0180 (read: arXiv PDF)
+
+**Coverage:** whole arXiv PDF (≥ 25 pp. judging by figure placement; §1–§4 and references [1]–[20]); journal pagination not seen. Locators are arXiv numbering.
+
+**Abstract (quoted):** "Several cubature formulas on the cubic domains are derived using the discrete Fourier analysis associated with lattice tiling, as developed in [10]." Main results: a new derivation of the Gaussian-type cubature for product Chebyshev weights "and associated interpolation polynomials on [−1,1]²", new results on [−1,1]³, compact formulas for fundamental interpolation polynomials based on n³/4 + O(n²) nodes. No Lebesgue statement in the abstract.
+
+**§3 (d = 2), confirming and refining §3 of this file:**
+- (3.5) Ξ_n = {(2k₁,2k₂): 0 ≤ k₁,k₂ ≤ n/2} ∪ {(2k₁+1,2k₂+1): 0 ≤ k₁,k₂ ≤ (n−1)/2}; (3.6) Γ_n = {(z_{k₁}, z_{k₂}): (k₁,k₂) ∈ Ξ_n}, z_k = cos(kπ/n). (Same-parity Xu points.)
+- Prop. 3.6 (I_n interpolates on X_n with kernel Φ_n), Lemma 3.7 (three-case formula for I*_n f: interior / edge / other boundary points), Lemma 3.8: Φ*_n = 2[D_n + D_{n−1}] − ¼(cos 2πn x₁ + cos 2πn x₂), with (3.17) D_n(x) = ½ [cos π(2n+1)x₁ cos πx₁ − cos π(2n+1)x₂ cos πx₂] / [cos 2πx₁ − cos 2πx₂].
+- Thm 3.9, Thm 3.10: ℓ*_k(t) = ½ P[D_n + D_{n−1}](x) − ¼[(−1)^{k₁} T_{k₁}(t₁) + (−1)^{k₂} T_{k₂}(t₂)] (as returned; cf. the T_{k_i} vs T_n remark in §3 above — not resolved here).
+- Closing remark of §3: L_n f lies in a subspace Π*_n ⊂ Π²_n of dimension |Ξ_n| and is unique there; "In the case of n is odd, this interpolation polynomial was defined and studied in [19]", with a one-point-less scheme for even n; "Recently the interpolation polynomials in [19] have been tested and studied numerically in [3, 4]", where [3] = BCDMV Computing 76 (2006), [4] = BCDMV ETNA 25 (2006).
+- No occurrence of "Lebesgue", "norm", "log n", "maximum" in §3. No kernel written as a product of 1D functions of x₁ ± x₂ or (θ₁ ± θ₂)/2 (D_n is a ratio of differences in x₁ and x₂). Corners of [−1,1]² appear only in the node/weight classification (Γ_n^v), never in relation to the Lebesgue function.
+
+**Rest of paper:** "Lebesgue" occurs once, §4.6 (3D): "the Lebesgue constant of this interpolation process remains at the order of (log n)³". Operator norms: Thm 4.9 ‖I*_n‖_∞ ≤ c(log n)³ (§4.5) and Cor. 4.12 ‖L_n‖_∞ ≤ c(log n)³, c unspecified, proof by enlarging the index set to a cube of 1D Dirichlet-type sums (Zygmund [20]). §4.3 (proof of Thm 4.6) has a 3D "products D^O_n D^O_n D^O_n, D^O_n D^E_n D^E_n" decomposition of the rhombic-dodecahedron partial sum, explicitly "not a simple product of sums" in one term; it is for the kernel's closed form, not a Lebesgue bound, and is 3D.
+
+**Correction to §3 above.** The earlier line "BdMV appears only as bibliography entry [5]" is incomplete: [5] (BdMV, JAT 141 (2006)) is also cited in the Introduction, together with [18], for the statement that interpolation polynomials based on these cubature nodes "turn out to possess several desirable features". No Lebesgue content is attached to that citation in this paper.
+
+**Verdict A2:** NOT FOUND for (a), (b), (c). No 2D Lebesgue constant or operator-norm statement of any kind; the only analytic bound is 3D, O((log n)³) with unspecified constant, and its proof method (cube of 1D Dirichlet sums over an enlarged index set) does not yield an exact constant or a pointwise product majorant in 2D. Structural precursor status of §3.3 (lattice interpolation + even symmetrization ⇒ Xu interpolation) is unchanged: PARTIALLY KNOWN as stated in §6.
+
+**Net effect on §6:** no change to the summary table. Neither paper threatens the plausibly-new items (exact Λ^Xu_n = L_n², pointwise λ_n ≤ ω_n(u)ω_n(v), argmax at non-node vertices). Xu's 2025 book remains the outstanding check.
+
+Query log (addendum): A-Q1 curl AMS PDF / arXiv PDF (proxy 403); A-Q2 WebFetch AMS /journals/ PDF (failed); A-Q3 WebFetch AMS article page (metadata, references); A-Q4 WebFetch AMS /proc/ PDF ×2 (full text, keyword + statements); A-Q5 WebFetch arXiv 0808.0180 PDF ×4 (summary, keyword sweep, §3.3 statements, intro/Ξ_n/closing paragraph); A-Q6 WebFetch ar5iv 0808.0180 (first 100k chars only); A-Q7 WebSearch Harris PAMS title, JAT 2015 title; A-Q8 WebFetch Harris Dublin 2019 slides; A-Q9 WebFetch arXiv abs 2107.06380 (Cao–Ghimire–Wang, unrelated to the question).

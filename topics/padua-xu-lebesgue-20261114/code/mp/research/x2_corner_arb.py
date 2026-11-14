@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""X2 round 2: rigorous ball-arithmetic (python-flint arb) enclosures used by theory/X2-25, X2-26, X2-N31, X2-N32.
+"""X2 round 2: rigorous ball-arithmetic (python-flint arb) enclosures used by theory/X2-25, X2-26, X2-N30 (record IDs renamed 2026-11-14: former X2-N31/N32 drafts).
 
 What is enclosed (all formulas are PROVED in the theory records; this script only evaluates them):
-  (1) lambda_n(1,1) for even n <= NMAX from the closed form of theory/X2-23, Theorem 1(c):
+  (1) lambda_n(1,1) for even n <= NMAX from the closed form of theory/X2-23 (statement part (c)):
         lambda_n(1,1) = (16/N) * sum over nodes of  X(1-X)Y(1-Y) |(M-1/2)X - (M+3/2)Y| / |X-Y|^3,
         M = n+2, N = M(M+1), X = sin^2(pi p'/(2M)), Y = sin^2(pi q'/(2M+2)), 1<=p'<=M-1, 1<=q'<=M, p' = q' mod 2,
         with X - Y = sin(pi s/(2N)) sin(pi r/(2N)), r = p'(M+1) - q'M, s = p'(M+1) + q'M  (no cancellation).

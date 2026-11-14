@@ -75,3 +75,5 @@ A lower bound for Λ_n through the vertex value, for every even n ≥ 2. Togethe
 ## History
 
 - 2026-11-14, Claude Fable 5.2 (xhigh), researcher subagent of round X2-2; uncommitted at writing. First version.
+
+2026-11-14 (orchestrator addendum, after independent check finding M1): the ball-arithmetic evidence for this record's computer-assisted parts is committed at `evidence/mp-x2-corner-arb.json` (SHA-256 `4f6657ba496a051c1bbfe8e64f3b5266ecd8607fddaf3d3b37c3f126add27b99`). It was produced by `python3 code/mp/research/x2_corner_arb.py --nmax 60 --out evidence/mp-x2-corner-arb.json`, script SHA-256 `48ac5a4f61a8ad66319f8e2a469a3d2b6b42219bb60acd9b5edd13d3e9101045`; that differs from the developer's version only in docstring record IDs. All flags are true. An independent rerun with separate code (Opus 5.5 checker, `code/mp/independent/`) confirmed the finite ranges through n = 60 and the c* enclosure; see `independent-checks-X2.md`. The float checks of `x2_corner_checks.py` are regenerable and are not committed (23 KB).
