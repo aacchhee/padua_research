@@ -31,6 +31,9 @@ bash topics/padua-argmax-bridge-20261105/companion-paper/build.sh
 python3 topics/padua-argmax-bridge-20261105/companion-paper/check_correspondence.py --artifacts
 ```
 
+> **Dated note, 2026-11-14 (Claude audit-07, in-place MINOR fix).** `--artifacts` also needs the retired historical PDFs and fails without them; the 120 built-label equality can instead be reproduced by comparing the numbers in the built `.aux` files of the paper and companion (the `labels.py` helper in [audit-07/code/m7-code](../audit-07/code/m7-code/labels.py) does this). The current identities are 59 and 152 pages. See [audit-07 M7-03](../audit-07/m7-manuscripts.md).
+
+
 The root integrated build produces **162 pages** with the original
 Springer class, fonts and layout. The companion uses a separate source
 directory and output/template directory. The same pinned class/BST bytes

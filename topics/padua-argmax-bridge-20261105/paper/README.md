@@ -1,5 +1,8 @@
 # Constructive Approximation manuscript — current onset-512 revision
 
+> **Dated note, 2026-11-14 (Claude audit-07, in-place fix).** The next paragraphs describe the 2026-11-08 onset-512 state and are historical where they say "current". The current state is the paired freeze `e861c752` with pointer `3e2805e`: 59-page paper, 152-page companion, 19 statements, 86 numbered environments and 120 labels, rebuilt on newly regenerated evidence ([regeneration-20261114.md](../regeneration-20261114.md)); the dated tail of this file and [BUILD.md](BUILD.md) give the identities. Stored native endpoints are not validated or used as premises. See [audit-07 E7-04](../audit-07/e7-evidence.md).
+
+
 [main.tex](main.tex) builds the current **51-page** paper. Build instructions,
 actual identities and retained historical versions are in [BUILD.md](BUILD.md).
 Current default output:

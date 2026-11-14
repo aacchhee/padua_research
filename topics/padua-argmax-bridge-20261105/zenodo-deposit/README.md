@@ -457,3 +457,7 @@ is now in cold storage. It remains unchanged and is not the suggested normal
 Zenodo download. The public candidate omits native histories, OS/runtime and
 compiler binaries, the full repository, and internal audit/custody records.
 No upload, DOI assignment or new license/authorship metadata is claimed.
+
+## Dated addendum, 2026-11-14 (Claude audit-07, in-place MINOR fix)
+
+The file list above describes the earlier preservation plan and includes artifacts that are retired as acceptance requirements. The current deposit candidates are the 5,138,944-byte public verification kit (SHA256 `15885d34498b7f20c20f4b97453babfa85a09d46490dbcb14c051b429e2ee036`, described in [zenodo-public-package-20261114.md](../zenodo-public-package-20261114.md)) and the separate 296,189,961-byte preservation archive. Neither has been uploaded and no DOI exists. Which of them is named in the manuscripts' data statements is an open finding ([audit-07 P7-01](../audit-07.md)); a historical row above is not an instruction to deposit it. Source: [audit-07 M7-04](../audit-07/m7-manuscripts.md).

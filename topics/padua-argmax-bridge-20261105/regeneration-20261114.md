@@ -150,3 +150,5 @@ expected results and the PDFs, without the large preservation-only payload.
 The original 560 and regenerated 382 phase records are one current
 942-record dataset covering all 471 phase degrees; their origin is provenance,
 not an old-versus-current division of the public dataset.
+
+**Dated addendum, 2026-11-14 (Claude audit-07, in-place MINOR fix).** Precision for the sentence "Independently substituted upper bounds are below 42,174 of the stored S uppers": the test in `check.py` is non-strict (at most). The independently substituted upper bounds are at most the stored upper for 42,174 of the 43,116 S checks; the other 942 stored S uppers are not validated by this test, which is why the record says it does not validate every stored native endpoint. Source: [audit-07 E7-06](audit-07/e7-evidence.md).
