@@ -14,20 +14,20 @@ identities and protocol limits are recorded in the topic LOG.
 
 | Finding | Disposition | Concrete change / evidence |
 |---|---|---|
-| E5-01 MAJOR | Repaired; supplementary reviewed; actual canonical run OPEN | Reader admits the producer's empty preserve lock and exact storage-receipt schema, checking actual nonnegative integers and consistent counts. The regression calls real deduplicate/completed/export before reading the archive:60 controls, preserving the original40. A distinct reviewer constructs its own round-trip plus17 rejections. Both use explicit non-scientific trust/arithmetic/closure adapters. |
+| E5-01 MAJOR | Repaired; supplementary reviewed; actual canonical run OPEN | Reader admits the producer's empty preserve lock and exact storage-receipt schema, checking actual nonnegative integers and consistent counts. The regression calls real deduplicate/completed/export before reading the archive: 60 controls, preserving the original 40. A distinct reviewer constructs its own round-trip plus 17 rejections. Both use explicit non-scientific trust/arithmetic/closure adapters. |
 | E5-02 | Repaired; supplementary reviewed | Analytic checker refuses optimization before a verdict and explicitly asserts exact log(pi)>11/10. Normal receipt values are unchanged. Current prospective command is python3 -E -B; historical commands/preregistrations remain historical. Falsified normal copies reject and optimized copies cannot print PASS. |
-| E5-03 | Corrected attribution; budget disposition OPEN | At audit input, main alone9,733,758bytes, this topic's own classified share1,995,804bytes, union11,729,562bytes. The topic's2,087byte FREEZE.md exception makes actual convention total11,731,649; prior conservative bound11,751,309 already included it. Neither branch alone exceeded10MB; their union did. Current growth is separately recomputed in LOG/manifest. |
+| E5-03 | Corrected attribution; budget disposition OPEN | At audit input, main alone 9,733,758 bytes, this topic's own classified share 1,995,804 bytes, union 11,729,562 bytes. The topic's 2,087 byte FREEZE.md exception makes actual convention total 11,731,649; prior conservative bound 11,751,309 already included it. Neither branch alone exceeded 10 MB; their union did. Current growth is separately recomputed in LOG/manifest. |
 | E5-04 | Repaired prospectively; historical scope corrected | Runtime probe compares actual uint64 encodings. Independent FTZ and FTZ|DAZ controls reject zero division results; directed rounding rejects a tie probe. This does not certify all operations/SIMD loops or historical worker modes. J03's dated correction withdraws the earlier floating-comparison detection claim. |
 | E5-05 NOTE | Retained | Compact verifier needs no optimization guard; no removable assert is on its checked path. No change. |
 | E5-06 NOTE | Retained data-only scope | ZIP mode metadata and inventoried extra data are not executed/extracted. No unrelated transport redesign in this response. |
 | E5-07 NOTE | Retained producer limitation | Export-side completed() equality remains broader than reader acceptance. Reader enforces typed integer zero. The actual round-trip tests compatibility, not a claim that producer admission is a proof. |
-| E5-08 | Corrected current interface | Campaign README names historical459d0728 and currenta198b651, which ran no campaign. Present-custody wording is corrected. Deposit README distinguishes repaired E5-01 from its earlier dated warning and labels earlier freezes historical. |
-| E5-09 NOTE | Retained | Reader is deliberately bound to the recorded320..510 campaign, historical runner and default archive pin. Future campaigns need new reviewed identities; no old run is attributed to new code. |
+| E5-08 | Corrected current interface | Campaign README names historical 459d0728 and current a198b651, which ran no campaign. Present-custody wording is corrected. Deposit README distinguishes repaired E5-01 from its earlier dated warning and labels earlier freezes historical. |
+| E5-09 NOTE | Retained | Reader is deliberately bound to the recorded 320..510 campaign, historical runner and default archive pin. Future campaigns need new reviewed identities; no old run is attributed to new code. |
 
 The [supplementary evidence review](supplementary-evidence-review-response05-20261113.md)
 records exact code hashes and independently executed controls. It also
-authenticates the real13 source/180 arithmetic pins and rejects identity
-mismatches. The developer's compatibility check accepts all3,978 authentic
+authenticates the real 13 source/180 arithmetic pins and rejects identity
+mismatches. The developer's compatibility check accepts all 3,978 authentic
 old-return JSON records. No actual onset512 archive or new-range numerical
 witness was supplied in this response.
 
@@ -39,7 +39,7 @@ review's scope, not substituted for the required Claude review.
 | Finding | Disposition | Concrete change |
 |---|---|---|
 | M5A-01 MAJOR | Developed; supplementary checked | Both false collision implications are rho>=pi-v; the right-endpoint collision equation and a<=Pv/2 charge are preserved. Comma splice removed. Auditor counterexamples independently rerun. |
-| M5A-02 | Developed | Companion prefactor2a*tau(v/2)/(pi²nu), early tau definition, wrap cost and summed charge, logarithmic primitive and amplitude-minimum reason restored explicitly. |
+| M5A-02 | Developed | Companion prefactor 2a*tau(v/2)/(pi²nu), early tau definition, wrap cost and summed charge, logarithmic primitive and amplitude-minimum reason restored explicitly. |
 | M5A-03 | Developed | Sine chord and alternating remainder rule, true numerator bound at first use, pole decomposition/sum-to-seven, domination, amplitude and concavity reasons supplied. |
 | M5A-04 | Developed | Outer cell width is vartheta_m in both texts, separately introduced from h_j(t). Indexed tail family and other meshes preserved. |
 | M5A-05 | Developed scoped | Paper radial/central e variables, residual and algebraic r variables, path parameter and paired half-amplitude are separated in their defining scopes. Companion logarithmic offsets and half-angle dummy renamed. Symbol table and factor-four envelope explanation corrected. |
@@ -48,11 +48,11 @@ review's scope, not substituted for the required Claude review.
 | M5A-08 | Developed | Merge artifact, parity-versus-positivity explanation and dangling sentence corrected. |
 | M5A-09 | Developed | Matched numbered kernel-evaluation form is cited, with the cosine-correction cancellation stated. |
 | M5A-10 NOTE | Decision: retain | Both valid termwise maxima remain; no threshold/bound change. Tight polynomial bound still relies on exact arithmetic. |
-| M5B-01 MAJOR | Developed | Both texts distinguish recorded witness checks from current retrieval. Companion no longer says absent files are retained or remain at computation sites; missing onset512/I25 files, four OPEN data checks and unverified632MiB custody are explicit. |
+| M5B-01 MAJOR | Developed | Both texts distinguish recorded witness checks from current retrieval. Companion no longer says absent files are retained or remain at computation sites; missing onset512/I25 files, four OPEN data checks and unverified 632 MiB custody are explicit. |
 | M5B-02 | Developed | Companion now contains the all-degrees proof assembly and citations, physical-corner names and abstract qualification of illustrative digits. |
 | M5B-03 | Developed | Companion trust table treats IEEE rounding as an assumption, with enclosure under that assumption. |
-| M5B-04 | Developed | Restored trapezoid1/(8z²), endpoint psi recurrence, half-integer psi-prime estimate, kappa reference and identification order. |
-| M5B-05 | Developed; supplementary recomputed | Sixty unchanged base-table entries follow definitions, are labelled/cited, and have exact-API versus stored-receipt provenance. Explicit log-pi assertion added to checker. A misleading floor295-specific table pointer was returned, removed and reread: the table contains coefficients at295, not F_h(295). |
+| M5B-04 | Developed | Restored trapezoid 1/(8z²), endpoint psi recurrence, half-integer psi-prime estimate, kappa reference and identification order. |
+| M5B-05 | Developed; supplementary recomputed | Sixty unchanged base-table entries follow definitions, are labelled/cited, and have exact-API versus stored-receipt provenance. Explicit log-pi assertion added to checker. A misleading floor 295-specific table pointer was returned, removed and reread: the table contains coefficients at 295, not F_h(295). |
 | M5B-06 | Developed; rendered checked | Paper phase figure uses the companion's white-filled labels and corrected arrow placement. |
 | M5B-07 | Developed | eps_fp and node weight defined before use; kernel-ratio argument and rounding dummy separated; unexplained I25 label replaced by descriptive checker name. |
 | M5B-E1..E6 | Developed | Broken tree-norm sentence, duplicate inward-phase/A-prime sentences, corner-chain reasons/citations, quadrature dummies, weight notation and explicit companion arithmetic pointer corrected. |
@@ -68,11 +68,11 @@ No comparison constant or theorem threshold changes.
 | Finding | Disposition | Evidence / remaining condition |
 |---|---|---|
 | B5-01 | Developed; rendered verified | Phase labels are inspected in final PDFs, not inferred from log cleanliness. |
-| B5-02 | Developed; all12 rendered placements verified | cu:D11, cu:row-expand20, ul:charts26, completed-model40, scalar-constants51 and uniform-allowance55 have tags beside multiline formulas in each text. No fallback decision is claimed. |
+| B5-02 | Developed; all 12 rendered placements verified | cu:D 11, cu:row-expand 20, ul:charts 26, completed-model 40, scalar-constants 51 and uniform-allowance 55 have tags beside multiline formulas in each text. No fallback decision is claimed. |
 | B5-03 | Developed | Companion states the explicit Machin partial-sum definition and pi bracket. |
-| B5-04 | Stale citation removed; permanent identifier OPEN | Neither text calls a433c7d the current sources. Permanent post-repair snapshot/DOI is explicitly pending, as allowed by handoff33; no unverified current snapshot is cited. |
+| B5-04 | Stale citation removed; permanent identifier OPEN | Neither text calls a433c7d the current sources. Permanent post-repair snapshot/DOI is explicitly pending, as allowed by handoff 33; no unverified current snapshot is cited. |
 | B5-05 / B4-09 | Developed; rendered checked | Roles columns spaced; figures/tables read in final PDFs. |
-| B5-06 NOTE | Corrected interpretation | Historical index counts were not counts of changed mathematics. Cumulative rename map is for24a98db; content alignment distinguishes inserted/moved displays and unchanged index shifts. |
+| B5-06 NOTE | Corrected interpretation | Historical index counts were not counts of changed mathematics. Cumulative rename map is for 24a98db; content alignment distinguishes inserted/moved displays and unchanged index shifts. |
 | B5-07 NOTE | Retained precise control scope | Seven controls test byte-strict preservation; bibliography/main comments are not semantic mutation tests. Full artifact mode still requires unavailable originals and is not reported as run. Current artifacts are compared separately. |
 | B5-08 | Already fixed by auditor | report.md dated record correction preserved. |
 | B5-09 | Developed; rendered checked | Pole-offset arrows and sampled-point label have actual distinct positions. |
@@ -80,9 +80,9 @@ No comparison constant or theorem threshold changes.
 | B5-11 NOTE | Retained scope | Shared bibliography, table-row differences and unconfirmed Math-Net provenance remain as scoped in audit05; no fabricated primary-source check. |
 | B5-12 NOTE | AC reserved | AI declaration, ORCID, contributions and draft marker unchanged; AC's funding confirmation stands. |
 
-Root builds exit0 at58/152pages, with no errors, warnings, undefined
+Root builds exit 0 at 58/152 pages, with no errors, warnings, undefined
 references/citations or overfull boxes; underfull diagnostics remain.
-Current pairing is19 statements/86 numbered environments/120 matching
+Current pairing is 19 statements/86 numbered environments/120 matching
 built labels. One previously unnumbered kernel form now has a shared
 number/label; three shared exposition labels identify the figure and tables.
 Historical source freezes remain in Git. Original PDF bytes remain absent,

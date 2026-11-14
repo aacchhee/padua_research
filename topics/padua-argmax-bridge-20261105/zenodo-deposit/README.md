@@ -366,16 +366,16 @@ The topic LOG records this limitation; no budget/readiness acceptance is claimed
 ### Final response accounting and revision record
 
 The active paired source freeze is `ad908acb21d3589d85635618ff68f63dd01cfbca`;
-current PDFs have57/150pages. Their BUILD records give fresh off-Git paths
+current PDFs have 57/150 pages. Their BUILD records give fresh off-Git paths
 and hashes. Historical inventory rows still identify the earlier prepared
 51/147-page PDFs; they are not silently relabelled as current artifacts. A
 post-Claude source/deposit update remains pending.
 
 The audited conservative classification gives an actual current counted sum
-of11,729,562bytes and a no-shrink-credit bound of11,751,309bytes. The latter
-includes the historical9,917,613baseline and1,833,696positive bytes since the
-old topic head, of which1,827,288came from current main's Padua3D topic.
-This exceeds the inherited10,000,000byte cap. No other topic's evidence is
+of 11,729,562 bytes and a no-shrink-credit bound of 11,751,309 bytes. The latter
+includes the historical 9,917,613 baseline and 1,833,696 positive bytes since the
+old topic head, of which 1,827,288 came from current main's Padua3D topic.
+This exceeds the inherited 10,000,000 byte cap. No other topic's evidence is
 deleted or reclassified here; global budget repair and readiness remain open.
 
 ## Dated note — 2026-11-13 (Claude audit-05 MINOR fix E5-08)
@@ -395,9 +395,9 @@ and lock controls pass. This resolves the specific producer-file mismatch;
 it is not a run on the unavailable canonical onset512 ZIP. Earlier dated
 notes saying the command fails until E5-01 is fixed describe the older code.
 
-Historical runner459d0728 performed the campaign. Current runnera198b651
+Historical runner 459d0728 performed the campaign. Current runner a198b651
 has performed no campaign and cannot continue the old runner identity.
-The reader is deliberately scoped to the one recorded320..510 campaign;
+The reader is deliberately scoped to the one recorded 320..510 campaign;
 a future campaign requires new reviewed identities and constants.
 
 For exact analytic reruns use the separately trusted source:
@@ -413,11 +413,11 @@ The revised runtime probe compares actual uint64 encodings and rejects
 tested FTZ|DAZ/FTZ division behavior; it is a finite prospective probe, not
 a proof of universal IEEE behavior or a historical worker's mode.
 
-Budget attribution at the audit input: main alone9,733,758bytes; this
-topic's own classified share1,995,804bytes; union11,729,562bytes. Adding
-the topic's2,087byte FREEZE.md exception gives11,731,649bytes. The prior
-conservative bound11,751,309 already includes that exception. Neither
-original branch alone exceeded10MB; the union does. Current growth is
+Budget attribution at the audit input: main alone 9,733,758 bytes; this
+topic's own classified share 1,995,804 bytes; union 11,729,562 bytes. Adding
+the topic's 2,087 byte FREEZE.md exception gives 11,731,649 bytes. The prior
+conservative bound 11,751,309 already includes that exception. Neither
+original branch alone exceeded 10 MB; the union does. Current growth is
 recorded separately in the manifest/LOG. Nothing from another topic is
 removed or relabelled; AC's budget disposition remains open.
 

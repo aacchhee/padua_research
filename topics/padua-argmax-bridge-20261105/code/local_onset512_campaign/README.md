@@ -35,6 +35,8 @@ and the empty top-level `.preserve.lock` to the allowlist, addressing
 [audit-05 E5-01](../../audit-05.md). The supplementary response-05 evidence review accepts this repair within its
 synthetic storage/export scope; the canonical onset ZIP remains unavailable
 and has not been checked with it.
+Storage-receipt counts are checked for internal consistency only; they are
+not cross-checked against the pass build manifest or dependency files.
 
 Run the synthetic regression from the repository root:
 
@@ -45,6 +47,8 @@ python3 -E -B topics/padua-argmax-bridge-20261105/code/local_onset512_campaign/c
 The roundtrip calls the real `deduplicate()`, `completed()` and `export()` on
 inert synthetic data, retains the actual empty lock and all 382 storage receipts
 in the produced archive, and checks that archive with the reader. Trust pins,
-proof arithmetic and sampled closure verification use explicit adapters; this
+proof arithmetic and sampled closure verification use explicit adapters. The
+fixture also relocates the runner root and trusted release paths and both
+script locations via `ROOT`, `RELEASE` and `__file__` adapters; this
 is a storage/export compatibility control, not a canonical-data or arithmetic
 rerun. No native engine or campaign runs in this test.

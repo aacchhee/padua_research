@@ -3083,9 +3083,9 @@ assertion; old executions/preregistrations/receipt remain historical.
 ### E5-03: budget attribution correction
 
 Audit-05 reproduces the old figures but corrects their one-sided
-attribution. At33b9eca, main alone counts9,733,758bytes and this topic's
+attribution. At33b9eca, main alone counts 9,733,758 bytes and this topic's
 own share is1,995,804bytes (exactly HEAD minus main), giving11,729,562
-classified bytes together. Neither original branch alone exceeded10MB;
+classified bytes together. Neither original branch alone exceeded 10 MB;
 their union does. The 2,087byte post_audit_D09_threepoint/FREEZE.md
 exception is excluded by the general .md classifier but included under
 this topic's convention, so the corresponding actual convention total
@@ -3107,8 +3107,8 @@ Sol medium implements E5-01 allowlist/schema checks for producer-written
 storage-dedup.json and the empty preserve lock. The regression uses actual
 storage.deduplicate(), completed() and export() on an inert synthetic tree,
 then reads the resulting archive with explicit trust/arithmetic/closure
-adapters;60controls pass, preserving the original40. A distinct Astra high
-independently constructs that round-trip and17 malformed-receipt/lock/member
+adapters; 60 controls pass, preserving the original 40. A distinct Astra high
+independently constructs that round-trip and 17 malformed-receipt/lock/member
 controls. It also tests real source/runtime pin checks, the guarded analytic
 checker under optimized and falsified copies, and seven isolated MXCSR
 mode controls. No unresolved code finding remains in its
@@ -3118,7 +3118,7 @@ This establishes the specific producer compatibility fix, not acceptance
 of the absent canonical ZIP or a new proof-arithmetic run.
 
 The analytic checker now refuses optimization before a verdict and asserts
-log(pi)>11/10 exactly. All11 normal receipt fields equal the historical
+log(pi)>11/10 exactly. All 11 normal receipt fields equal the historical
 receipt on Python3.12.14; old preregistrations/receipt are unchanged. The
 runtime probe now checks actual uint64 encodings: independent FTZ|DAZ and
 FTZ tests reject computed zero underflow, and directed-rounding probes
@@ -3144,25 +3144,25 @@ reconstructs the changed analytic reasons, independently reruns the collision
 examples/sixty enclosures, checks both actual sources and reads the final
 versioned PDFs. No unchanged full proof component is re-audited just to
 repeat an earlier round. The six B5-02 tags in each PDF are inspected at
-11/20/26/40/51/55; all12placements are adjacent to multiline formulas.
+11/20/26/40/51/55; all 12 placements are adjacent to multiline formulas.
 No-overfull logs alone are explicitly not used as that evidence. Phase
 figures, role spacing and row/base table placement are also rendered/viewed.
 
-Final TeX/Bib commit is8937d3b723c09c004f49d3e565d0b02976713a37.
-Both root builds exit0,58/152pages, no errors/warnings/overfull boxes or
+Final TeX/Bib commit is 8937d3b723c09c004f49d3e565d0b02976713a37.
+Both root builds exit 0, 58/152 pages, no errors/warnings/overfull boxes or
 undefined references/citations, only underfull diagnostics. Current outputs
-have19statements,86numbered environments (87equation numbers) and120matching
+have 19 statements, 86 numbered environments (87 equation numbers) and 120 matching
 built labels. Source commands, final hashes and Oslo-timestamped PDFs are
 in BUILD records. Earlier freeze/ad908ac and57/150artifacts are preserved.
 Original PDF bytes are still absent, so historical artifact preservation
 was not retested. AC-reserved author/AI fields are byte-equal to audit input.
 
 FINAL_BASELINE is updated only after committing TeX/Bib; default current
-source, --archival and7mutation controls pass in root and independently.
-The cumulative33-entry map correctly targets24a98db; an initial root scan
+source, --archival and 7 mutation controls pass in root and independently.
+The cumulative 33-entry map correctly targets 24a98db; an initial root scan
 used that cumulative map against already-renamed ad908ac, a setup mismatch.
 Corrected full and incremental scans pass the actual pair but deliberately
-fail rename-only equality. Content alignment againstad908ac shows one
+fail rename-only equality. Content alignment against ad908ac shows one
 certificate wording change, seven display-format changes, one newly labelled
 kernel form and nine unchanged index-shifted displays. No statement that
 those index mismatches are new mathematics is made. No permissive map hides
@@ -3174,13 +3174,13 @@ is attempted. All remaining data/custody limits stay open in response-05.
 
 ### Current budget after response-05 records
 
-Main alone still counts9,733,758bytes. This topic's own current
-classified share is2,000,636bytes, giving11,734,394together.
-The separate2,087byte FREEZE.md exception gives actual convention total
-11,736,481; the conservative no-shrink bound is11,756,141bytes.
+Main alone still counts 9,733,758 bytes. This topic's own current
+classified share is 2,000,636 bytes, giving 11,734,394 together.
+The separate 2,087 byte FREEZE.md exception gives actual convention total
+11,736,481; the conservative no-shrink bound is 11,756,141 bytes.
 The prior figures in the E5-03 entry are explicitly audit-input history.
 Current growth is the new scoped rename-map input and manifest metadata;
-no other topic's evidence is removed/reclassified. The10MB cap is not met.
+no other topic's evidence is removed/reclassified. The 10 MB cap is not met.
 AC's cap/storage/share decision and all readiness work remain open.
 
 Response-05 development is complete; stage AUDIT for material code and
@@ -3190,7 +3190,7 @@ focused Claude check of changed content is next. PR27 remains draft.
 
 The final README review-status sentence is updated after supplementary
 review completion; this changes prose only, not any reviewed executable
-identity. Current evidence-index check remains396entries/32,414index bytes.
+identity. Current evidence-index check remains 396 entries/32,414 index bytes.
 Next: [handoff34 — focused audit of response05](handoffs/34-claude-audit-response05.md).
 The active PR body is [pr-update-20261113.md](pr-update-20261113.md).
 
@@ -3201,3 +3201,76 @@ The active PR body is [pr-update-20261113.md](pr-update-20261113.md).
 - MINOR/EDITORIAL batch returns to development (new paired freeze): M6-01 bare `w` vs w_r (companion 2270–2274, paper 1006–1009), M6-02 the paper never identifies the companion it points to, M6-03 undefined custody terms and the four-witness/458 ambiguity (evidence-status wording), B6-01/B6-02 layout, M6-05..07 editorial.
 - Auditor in-place MINOR fixes (dated addenda only, commit `b32370e`): deposit README active freeze 8937d3b (E6-01); `manuscript-duplicate-dispositions-20261113.md` rows C1, C10, B5 (M6-04).
 - **Still OPEN, not closed by this audit:** the canonical `onset512-return-20261108.zip` run of the repaired reader, the 320/384/458/510 I25 data checks, historical PDF bytes, the 632 MiB native histories and their custody, the post-repair snapshot and DOI, the global generated-output budget (11,756,141 B bound against 10,000,000 B; AC's decision). P1–P4, AC's funding confirmation and the reservation of the AI declaration, ORCID, contributions and draft marker unchanged. PR 27 stays a draft; no readiness; only AC merges.
+
+## 2026-11-14 — Codex response to audit-06, handoff 35
+
+Rules read at `5b1a4942af498e60e9da4c8860c57cb4f67be4ef`, unchanged
+after fetch and fast-forward to `f4e8d8d313b1fec0cd4976de98524552fbdc94dd`.
+Main remains `b5388c25a2a5ccb8d0faf816ab87023cf347bcd3`, already merged.
+Audit-06 accepts the code and changed mathematics with no major finding.
+This is a bounded wording/provenance response, not a new proof campaign.
+No novelty content, final-ID assignment or new reservation; no new range.
+
+Codex coordinates under AC's Astra high request; runtime serving metadata
+is unexposed. Sol medium handles paired wording, manually selected record
+spacing and the optional read-only base-table reproduction CLI. A distinct
+Astra high supplies the focused check. Root alone controls Git and writes
+the LOG, results and PR record. Existing numerical checkers, engine,
+witnesses, assertion guard and thresholds remain unchanged. No native
+campaign or missing-witness regeneration is performed.
+
+E6-02/E6-04 decisions: keep the accepted runtime probe and producer
+regression code unchanged. DAZ alone is not detected; storage receipts are
+checked for internal consistency, not against build/dependency counts.
+The campaign README lists root/release/script relocation among its
+synthetic adapters. Optional extra probe/producer test branches are not
+claimed as executed. M6-11 is addressed by a separate read-only exact-API
+CLI, not a modification to result-bearing arithmetic.
+
+E6-06 spacing uses only manually selected literal replacements and verifies
+unchanged non-whitespace content, numbers and hashes. One initial inventory
+check falsely treated the newly introduced word boundaries before SHA
+strings as changed hashes; it stopped before writing a file. Direct
+non-whitespace identity and explicit reviewed boundaries are the correct
+checks. Earlier auditor addenda remain intact. Historical handoff 34's
+instruction body is not rewritten: AGENTS.md and WORKFLOW require it to
+remain unchanged. Its formatting is historical; current/new records use
+proper spacing instead. No conflicting action or new approval is needed.
+Budget, unavailable archives, custody and AC publication decisions remain
+open; no storage destination or DOI is invented.
+
+The response-06 wording checkpoint is committed at `36ac77252fb490e58b807767a6bd52f6f3f3dff4`;
+source pointer and read-only table CLI at `cc2f9ad10c2b5baf29af1887e681b851e9e9dc60`,
+both pushed. Final builds are 59/152 pages, with 120 equal built labels;
+source/archival checks, seven baseline controls and copied nine-type mutation
+harness meet their expected outcomes. [response-06.md](response-06.md) gives
+all finding dispositions; the distinct supplementary review records exact
+identities and independent reconstruction. The previous-baseline scanner
+correctly flags two paired wording/punctuation changes, not unexplained
+symbol renames; the new-baseline scan passes. Fake constant-as-rename still
+shows why map matching cannot establish mathematical preservation.
+
+### AC steering — regenerate paper-dependent missing evidence
+
+AC rejected continued reliance on missing computational data and explicitly
+instructed: “they have to be regenerated”, then “All missing things have to
+be regenerated”, qualified by “if the paper relies on them. Just historical
+data can be forgotten”. This overrides handoff 35's earlier no-campaign
+restriction. New evidence must replace missing dependencies; new executions
+will not be represented as recovered historical executions or exact old ZIPs.
+Historical PDF/native-archive byte preservation is no longer an acceptance
+requirement unless a mathematical/reproducibility dependency needs the data.
+Old audit records remain immutable and historical unavailable locators are
+not custody receipts. No permanent destination or cap exception is inferred.
+
+Recovery attempt before regeneration: current accessible filesystem paths,
+attachments and task artifacts show the recovered original return/package,
+not the missing onset512/I25 ZIPs or old campaign histories. Connected task
+history and environment metadata expose no cross-sandbox filesystem restore.
+No claim that a provider backup is nonexistent is made. Cloud runtime skill
+used for environment access guidance; no external messages were sent.
+
+Delegated Sol medium new-campaign setup and I25 regeneration; distinct Astra
+high reviews prerequisites, source identity, outputs and independent replay.
+Root freezes preregistrations before native calls. No core engine, arithmetic,
+threshold, registry or final-ID change is authorized by regeneration itself.

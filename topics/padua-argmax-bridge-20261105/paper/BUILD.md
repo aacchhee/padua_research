@@ -220,8 +220,8 @@ Final paired TeX/Bib source freeze: `ad908acb21d3589d85635618ff68f63dd01cfbca`.
 Codex root executed `bash topics/padua-argmax-bridge-20261105/paper/build.sh`
 after the final proof, notation and layout fixes. The script now defaults to
 a fresh audit04-paper-20261113 output directory, preserving earlier build
-targets. Both final commands exit0. TeX Live2025/dev pdfTeX1.40.26 and
-latexmk4.86; pinned publisher class/BST identities unchanged. The final logs
+targets. Both final commands exit 0. TeX Live 2025/dev pdfTeX 1.40.26 and
+latexmk 4.86; pinned publisher class/BST identities unchanged. The final logs
 have no errors, warnings, undefined references/citations, multiply-defined
 labels or overfull boxes; underfull diagnostics remain. The fixed
 SOURCE_DATE_EPOCH is retained for reproducibility.
@@ -231,15 +231,15 @@ This PDF has **57 pages**, **786999 bytes**, SHA-256
 `/workspace/padua_research/local-output/padua-argmax-bridge-20261105/audit04-paper-20261113/padua-manuscript-20261113-212438-Oslo.pdf`. Its bytes equal the corresponding `main.pdf`.
 Both PDFs and build logs remain off Git.
 
-The final source checker and all7 paired-mutation controls pass in root and
-a distinct Astra high rerun. Current built outputs have all116 labels equal
-and19 statements/85 numbered display environments;150<=5*57. Root checked
-rendered paper pages18/54 and companion pages91/143 (phase diagram, row/pole
+The final source checker and all 7 paired-mutation controls pass in root and
+a distinct Astra high rerun. Current built outputs have all 116 labels equal
+and 19 statements/85 numbered display environments; 150<=5*57. Root checked
+rendered paper pages 18/54 and companion pages 91/143 (phase diagram, row/pole
 illustration and trust tables). The [supplementary manuscript review](../supplementary-manuscript-review-20261113.md)
-records selected proof reconstruction, all32 audited duplicate-pair integrity
-checks, all60 rational-table enclosures and its actual limits.
+records selected proof reconstruction, all 32 audited duplicate-pair integrity
+checks, all 60 rational-table enclosures and its actual limits.
 
-Historical48/162 and51/147 source freezes remain in Git. The original PDF
+Historical 48/162 and 51/147 source freezes remain in Git. The original PDF
 bytes are absent in this workspace: the full `--artifacts` preservation mode
 was not run and historical PDF preservation is **not independently retested**.
 Current auxiliary-number/page/identity comparisons were executed separately;
@@ -253,8 +253,8 @@ publication/custody remain separate.
 Paired TeX/Bib source freeze: `8937d3b723c09c004f49d3e565d0b02976713a37`.
 Root executed `bash topics/padua-argmax-bridge-20261105/paper/build.sh`;
 this now defaults to a fresh audit05-paper-20261113 directory. Earlier
-audit04 outputs and timestamped copies are preserved. Both commands exit0
-under TeX Live2025/dev, pdfTeX1.40.26/latexmk4.86, with the same authenticated
+audit04 outputs and timestamped copies are preserved. Both commands exit 0
+under TeX Live 2025/dev, pdfTeX 1.40.26/latexmk 4.86, with the same authenticated
 publisher dependencies. No errors, warnings, overfull boxes or undefined
 references/citations; underfull diagnostics remain.
 
@@ -262,12 +262,12 @@ This PDF: **58 pages**, 798493 bytes, SHA256
 `1dc50b84b6ac6a7d92300370dde5e95b867b4e428708883c291d2b4cd089c657`. Fresh Oslo-timestamped copy, byte-equal to main.pdf:
 `/workspace/padua_research/local-output/padua-argmax-bridge-20261105/audit05-paper-20261113/padua-manuscript-20261113-232634-Oslo.pdf`. PDFs, renders and logs remain off Git.
 
-Both current artifacts agree on120 built labels,19 statements and86
+Both current artifacts agree on 120 built labels, 19 statements and 86
 numbered environments. The separately committed pointer update and seven
 mutation controls pass in root and an independent reviewer; archival source
 pairing also passes. Root's current-artifact comparison and the reviewer
-confirm58/152pages and152<=5*58. The six old B5-02 displays now numbered
-11/20/26/40/51/55 have adjacent tags in each final PDF: all12placements were
+confirm 58/152 pages and 152<=5*58. The six old B5-02 displays now numbered
+11/20/26/40/51/55 have adjacent tags in each final PDF: all 12 placements were
 actually rendered and inspected. Figure/roles/row/base table layouts were
 also inspected; this evidence is distinct from no-overfull log checks.
 
@@ -276,3 +276,22 @@ records exact source/PDF identities, independent analytic checks and the
 returned/fixed table-pointer issue. Original PDF bytes remain unavailable;
 full historical --artifacts mode is not claimed. Permanent post-repair
 snapshot/DOI and missing new-range archive checks remain OPEN.
+
+
+## Response-06 build checkpoint — 2026-11-14
+
+Paired source freeze `36ac77252fb490e58b807767a6bd52f6f3f3dff4`;
+source pointer installed separately in `cc2f9ad`. Root executed this tree's
+`build.sh` with the fresh audit06 default directory: exit 0, **59 pages**,
+803703 bytes, SHA256 `d978c5fe064421be6f38bb776c29190fbbbc62e3859d15945f29701d61a33ec4`.
+Byte-equal timestamped copy: `/workspace/padua_research/local-output/padua-argmax-bridge-20261105/audit06-paper-20261114/padua-manuscript-20261114-010343-Oslo.pdf`.
+
+Both artifacts match on 120 built labels, 19 statements and 86 numbered
+environments; 152 <= 5 * 59. No overfull boxes, undefined references/citations
+or badness-10000 hboxes; other underfull diagnostics remain. A distinct
+reviewer inspected the affected final pages. Seven baseline controls and
+the copied nine-type mutation harness behave as expected; current and
+archival source checks pass. Historical PDF preservation mode was not run.
+[Response-06](../response-06.md) and its linked review give exact scope.
+This checkpoint predates AC-authorized paper-evidence regeneration; it
+does not certify the later campaign or establish deposition/readiness.

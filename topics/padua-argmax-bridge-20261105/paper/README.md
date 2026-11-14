@@ -110,7 +110,7 @@ timestamped download copy.
 ### Current audit-04 revision, 2026-11-13
 
 The active paired TeX/Bib freeze is `ad908acb21d3589d85635618ff68f63dd01cfbca`.
-The current pair builds at57/150pages, with all116 built labels matching.
+The current pair builds at 57/150 pages, with all 116 built labels matching.
 See BUILD.md for exact commands and identities. Earlier build/review records
 remain historical; focused Claude review of the changed analytic explanations
 is next. Missing onset512/I25 data and historical-PDF byte-access limitations
@@ -120,8 +120,17 @@ are explicit in the topic response and execution records.
 ### Response-05 current pair
 
 Active paired source: `8937d3b723c09c004f49d3e565d0b02976713a37`;
-58/152-page clean builds and120 matching built labels. BUILD.md gives exact
+58/152-page clean builds and 120 matching built labels. BUILD.md gives exact
 identities and limitations. The cumulative notation-renames-audit05.json is
-for baseline24a98db (not for an already-renamed baseline). Structural layout
+for baseline 24a98db (not for an already-renamed baseline). Structural layout
 changes and recorded-custody wording are reviewed as changes, not hidden
 as renames. Permanent source-snapshot/DOI references remain pending.
+
+
+### Response-06 build checkpoint — 2026-11-14
+
+The current paired freeze is `36ac77252fb490e58b807767a6bd52f6f3f3dff4`,
+59/152 pages with 120 matching built labels. Earlier “active” records above
+are historical. BUILD.md and response-06.md record identities and scope.
+AC subsequently authorized regeneration of missing paper-dependent evidence;
+this source checkpoint precedes that work.

@@ -253,15 +253,15 @@ generated-output bound (11,751,309 B) exceeds the 10,000,000 B cap because of th
 Existing mathematical claims/constants and their recorded statuses are
 unchanged. E5-01 producer/reader mismatch and analytic optimization/runtime
 probe defects are repaired with independent supplementary controls. The
-paired proof/exposition/custody batch builds at58/152pages, sourcefreeze
-`8937d3b723c09c004f49d3e565d0b02976713a37`,19statements/86numbered
-environments/120matching built labels. All twelve reported equation-tag
+paired proof/exposition/custody batch builds at 58/152 pages, source freeze
+`8937d3b723c09c004f49d3e565d0b02976713a37`, 19 statements/86 numbered
+environments/120 matching built labels. All twelve reported equation-tag
 placements were actually rendered and inspected; no log-only inference.
 [Response and limits](../topics/padua-argmax-bridge-20261105/response-05.md).
 
-At audit05 input, main alone9,733,758bytes and this topic's own classified
-share1,995,804bytes made11,729,562together; adding the2,087byte FREEZE.md
-exception gives11,731,649. Neither branch alone exceeded10MB; their union
+At audit05 input, main alone 9,733,758 bytes and this topic's own classified
+share 1,995,804 bytes made 11,729,562 together; adding the 2,087 byte FREEZE.md
+exception gives 11,731,649. Neither branch alone exceeded 10 MB; their union
 did. The current LOG/manifest records subsequent growth and honest share
 attribution; global budget disposition remains for AC.
 
