@@ -62,3 +62,11 @@ Pre-registered by the orchestrator after the literature verdict in `literature-x
 - grid M = max(64, 12n) in angles, symmetry reduction only by x ↦ −x (Lemma S / BBDM Lemma 15); refinement and classification as in G1 steps 2–3; report per n the four vertex values, the best non-vertex candidate, and g_n relative to max(λ(1,1), λ(−1,1)).
 - **Corner check (C-MP):** λ_n at the four vertices by G0 path A (interval, ≥ 256 bits) for every even n ≤ 30. "BBDM corner symmetry refuted at n" means certified λ_n(1,1) ≠ λ_n(1,−1) (disjoint enclosures). A refutation is registered as a PD-N only with a committed checker and an independent rerun on path B (as in G1's kill clause).
 - No numerical observation sets a constant (G5).
+
+### Verdicts (2026-11-14, developer runs; independent rerun by the auditor still required)
+
+- **G0 Xu: PASS** (n = 1..12, both parities). All G0 checks ran (path A arb 256-bit vs path B mpmath to ~1e−59; δ property; published BCDMV Table 7 values at n = 34, 48, 62, 76 reproduced at the vertex; Lemma S invariances numerically confirmed). Evidence: `evidence/xu-g0.json`; command `python3 code/xu/g0_check.py --nmax 12` (3 min 6 s). Developer: Sonnet 5.5 high.
+- **G0 MP: PASS** (even n = 2..12). Evidence: `evidence/mp-g0.json`. Developer: Sonnet 5.5 high.
+- **G1 Xu: "vertex conjecture supported"** for n = 2..60, both parities (MEASURED). min g_n = 0.0697 at n = 60; g_n decreases slowly (0.207 at n = 4, 0.13 at n = 12, 0.081 at n = 40). The runner-up is always the **edge midpoint** family (exactly the midpoint for n ≡ 0 mod 4); the best interior local maximum ratio is 0.866 at n = 60. No kill flag. Evidence: `evidence/xu-g1-summary.json`; command `python3 code/xu/g1_screen.py --nmin 2 --nmax 60`.
+- **G1-MP: argmax at (±1,1) only** for even n = 2..60 (MEASURED). No local maximum reaches 0.9·λ(1,1); the best non-vertex local maximum is on the edge x = ±1 near y = −1 at ≈ 0.403·λ(1,1); g_n ≈ 0.597 for n ≥ 8. Evidence: `evidence/mp-g1-summary.json`.
+- **C-MP:** Path-A enclosures for even n ≤ 30 contain n+1 at (±1,−1) and certify λ(1,1) ≠ λ(1,−1) at every tested n. Path-B checker: `evidence/mp-cmp-check.json`. A PD-N needs the theory record and the auditor's rerun.

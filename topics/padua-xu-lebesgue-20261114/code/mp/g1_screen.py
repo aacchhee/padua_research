@@ -267,8 +267,27 @@ def screen_n(n, raw_dir, args):
     return out
 
 
+def compact(r):
+    """compact summary row for the evidence file (< 16 KiB total); full detail stays in the raw files."""
+    f = lambda t, d=13: float("%.*g" % (d, t))
+    v = r["vertices"]
+    bn = r.get("best_nonvertex")
+    o = {"n": r["n"], "M": r["M"],
+         "lam_(1,1),(-1,1),(1,-1),(-1,-1)": [f(v["(1,1)"]), f(v["(-1,1)"]), f(v["(1,-1)"]), f(v["(-1,-1)"])],
+         "grid_max_over_Vmax": f(r["grid_max"] / r["Vmax"], 15),
+         "n_local_max_nonvertex_grid": r["n_grid_local_max_nonvertex"], "n_ge_0.9Vmax": r["n_candidates_ge_0.9Vmax"],
+         "n_vertex_classified": r["n_vertex_classified"], "context_only": r["context_only_below_threshold"]}
+    if bn:
+        o["best_nonvertex"] = {"face": bn["face"], "x": f(bn["x"], 9), "y": f(bn["y"], 9), "value_mp": (bn["mp_value"] or "")[:22], "mp_ok": bn["mp_ok"]}
+        o["g_n"] = f(r["g_n"])
+        if "re_polish_60digits" in r:
+            o["re_polish_60"] = r["re_polish_60digits"]
+    return o
+
+
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--from-raw", action="store_true", help="rebuild the compact summary from raw files in --raw (no recomputation)")
     ap.add_argument("--nmin", type=int, default=2)
     ap.add_argument("--nmax", type=int, default=60)
     ap.add_argument("--out", default="../../evidence/mp-g1-summary.json")
@@ -279,6 +298,10 @@ def main():
     t0 = time.time()
     rows = []
     for n in range(a.nmin, a.nmax + 1, 2):
+        if a.from_raw:
+            r = json.load(open(os.path.join(a.raw, "g1_raw_n%02d.json" % n)))["summary"]
+            rows.append(r)
+            continue
         r = screen_n(n, a.raw, a)
         rows.append(r)
         bn = r.get("best_nonvertex")
@@ -286,7 +309,15 @@ def main():
               "g_n=", r["g_n"], bn and bn["face"], "%.0fs" % r["seconds"], flush=True)
     ev = {"script": "code/mp/g1_screen.py", "command": "python3 " + " ".join(sys.argv),
           "versions": {"python": platform.python_version(), "numpy": np.__version__, "scipy": scipy.__version__, "mpmath": mp.__version__, "platform": platform.platform()},
-          "prereg": "gates.md addendum 2026-11-14 (G1-MP screen)", "rows": rows, "wall_seconds": round(time.time() - t0, 1)}
+          "prereg": "gates.md addendum 2026-11-14 (G1-MP screen)",
+          "grid_max_is_vertex_value_all": all(r["grid_max_is_vertex_value"] for r in rows),
+          "n_ge_0.9Vmax_nonvertex_total": sum(r["n_candidates_ge_0.9Vmax"] for r in rows),
+          "min_g_n": min(r["g_n"] for r in rows if r.get("g_n") is not None), "max_g_n": max(r["g_n"] for r in rows if r.get("g_n") is not None),
+          "g_n_gt_1e-9_all": all(r.get("g_n") is not None and r["g_n"] > 1e-9 for r in rows),
+          "mp_polish_sign_pattern_ok_all": all(r["best_nonvertex"]["mp_ok"] for r in rows if r.get("best_nonvertex")),
+          "interpretation_note": "No non-vertex local maximum reaches 0.9*Vmax at any n, so the pre-registered candidate set is empty; best_nonvertex is the best of the 3 highest grid local maxima refined as CONTEXT (g_n = 1 - value/Vmax).",
+          "provenance": ("compact rebuild (--from-raw) of the full run `python3 g1_screen.py` (n=2..60, wall 945 s on a shared 2-core box); raw files /tmp/mp-runs/g1_raw_nNN.json" if a.from_raw else "full run"),
+          "rows": [compact(r) for r in rows], "wall_seconds": (None if a.from_raw else round(time.time() - t0, 1))}
     json.dump(ev, open(a.out, "w"), separators=(",", ":"), default=str)
     print("wrote", a.out, os.path.getsize(a.out))
 

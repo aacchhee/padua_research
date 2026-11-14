@@ -368,6 +368,20 @@ def run_n(n, digits, raw_dir, xexact_check=True):
             nonv.append((i, j, f))
             if len(nonv) >= 6:
                 break
+    # additionally refine the top-3 INTERIOR local-maximum orbits regardless of threshold (structure report)
+    have = set(canon_idx(n, i, j, M) for (i, j, f) in reps)
+    ints = [e for e in grid_local_max(L, 0.0) if e[2] == "int"]
+    ints.sort(key=lambda e: -L[e[0], e[1]])
+    added = 0
+    for (i, j, f) in ints:
+        key = canon_idx(n, i, j, M)
+        if key in have:
+            continue
+        have.add(key)
+        reps.append((i, j, f))
+        added += 1
+        if added >= 3:
+            break
     pol = Polisher(n, digits)
     results = []
     vtx_ang = [(0.0, 0.0), (0.0, PI), (PI, 0.0), (PI, PI)]
@@ -417,6 +431,15 @@ def run_n(n, digits, raw_dir, xexact_check=True):
         out["g_n_str"] = g.str(12, radius=False)
         out["best_nonvertex"] = fmt_class(best, n)
         out["classes"] = [fmt_class(r, n) for r in classes[:6]]
+        ints_c = [r for r in classes if r["face"] == "int"]
+        if ints_c:
+            bi = fmt_class(ints_c[0], n)
+            bi["ratio_to_vertex"] = float((ints_c[0]["lam"] / vmin).mid())
+            out["best_interior"] = bi
+        edges_c = [r for r in classes if r["face"] != "int"]
+        out["n_edge_classes"] = len(edges_c)
+        out["n_interior_classes"] = len(ints_c)
+        out["raw_classes_all"] = [fmt_class(r, n) for r in classes]
         if float(g.mid()) < 1e-6:
             pol60 = Polisher(n, 60)
             P = pol60.polish(float(best["th"]), float(best["ph"]), best["face"])
@@ -466,13 +489,15 @@ def fmt_class(r, n):
 
 def compact(o, digits_keep=20):
     """Compact per-n record for the summary file."""
-    c = dict(n=o["n"], M=o["M"], v=[x[:22] for x in o["vertex_lam"]][:2], nloc=o["ncand_grid"], nnv=o["n_nonvertex_orbits"],
-             g=o.get("g_n"), t=o["seconds"])
+    c = dict(n=o["n"], M=o["M"], v=o["min_vertex_lam"][:22], nloc=o["ncand_grid"], nnv=o["n_nonvertex_orbits"],
+             ne=o.get("n_edge_classes"), ni=o.get("n_interior_classes"), g=o.get("g_n"), t=o["seconds"])
     if o.get("best_nonvertex"):
         b = o["best_nonvertex"]
         c["best"] = [b["face"], b["th_pi"], b["ph_pi"], b["lam"][:22], int(b["locmax_Q"])]
-        c["top"] = [[x["face"], round(x["th_pi"], 5), round(x["ph_pi"], 5), x["lam"][:10], int(x["locmax_Q"])]
-                    for x in o["classes"][1:3]]
+        c["top"] = [[x["face"], round(x["th_pi"], 4), round(x["ph_pi"], 4), x["lam"][:9]] for x in o["classes"][1:2]]
+        if o.get("best_interior"):
+            bi = o["best_interior"]
+            c["bi"] = [round(bi["th_pi"], 4), round(bi["ph_pi"], 4), bi["lam"][:9], round(bi["ratio_to_vertex"], 4)]
     if "repolish60" in o:
         c["g60"] = o["repolish60"]["g_n"][:14]
     if "pathA_grid_crosscheck_max_abs_diff" in o:
@@ -493,7 +518,7 @@ def main():
     os.makedirs(a.raw, exist_ok=True)
     summ = dict(what="G1 screen, X1 Xu points (MEASURED only); keys: n, M, v=vertex lambda (V*), nloc=#grid local maxima >=0.9V*, "
                      "nnv=#distinct non-vertex orbits refined, g=g_n, best=[face,theta/pi,phi/pi,lambda,locmaxQ], "
-                     "top=2nd/3rd non-vertex classes, g60=60-digit g_n if g<1e-6, pA=pathA grid cross-check, t=seconds",
+                     "top=2nd non-vertex class [face,th/pi,ph/pi,lambda], bi=best interior local max [th/pi,ph/pi,lambda,ratio to vertex], ne/ni=#edge/#interior non-vertex orbits refined, g60=60-digit g_n if g<1e-6, pA=pathA grid cross-check, t=seconds",
                 command=" ".join(sys.argv),
                 versions=dict(python=platform.python_version(), numpy=np.__version__, scipy=__import__("scipy").__version__,
                               mpmath=mp.__version__, python_flint=flint.__version__),
