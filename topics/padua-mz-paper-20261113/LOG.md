@@ -1,8 +1,8 @@
 # MZ paper finalization (MZ-CC and MZ-SP): log
 
-- Branch: `claude/padua-mz-paper-20261113` · Base: main `b5388c2` · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Draft PR #35 · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Stage: WORK (audit findings) · Open handoff: [06-response-and-preparation.md](handoffs/06-response-and-preparation.md). Audit: [audit-01.md](audit-01.md).
-- Reserved final-ID ranges: none (no new mathematics expected).
+- Branch: `claude/padua-mz-paper-20261113` · Base: main `99a9b1d` (merged at `fa956de`) · Developer: Claude · Auditor: Codex (gpt-6-astra)
+- Draft PR #35 · Stage: PR readiness and focused evidence check in progress · Open handoff: [08-readiness-and-evidence.md](handoffs/08-readiness-and-evidence.md). Substantive audit: [audit-01.md](audit-01.md).
+- Reserved final-ID range: PD-T684–689; assigned PD-T684/685, permanent gaps PD-T686–689. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Decided by AC: venues (MZ-CC SINUM, MZ-SP JAT); Zenodo later; companion = AC-only reading aid, arXiv and journal versions identical (2026-11-13).
 
 ## 2026-11-13 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -214,6 +214,13 @@ Claude, claude-opus-5-5 (configured xhigh).
 - **SIAM terms, flagged for AC.** The SIAM class header allows distribution only together with the full SIAM macro package (8 files, including a PDF), and forbids distributing the file alone. The repository currently carries 2 of the 8. The MZ-CC Zenodo pack therefore omits them, and its README says where to get them. The repository copy is AC's decision: remove the files and fetch them at build time, or add the full package (which conflicts with the no-PDF rule).
 - **Manuscripts.** Both availability statements add "Code and data are released under the GNU Affero General Public License, version 3 or later." Builds: 32/50 pp., zero warnings, frozen labels 52/52 and 56/56.
 - **Packs.** The README licence lines now read `AGPL-3.0-or-later`. Both packs were repacked and redelivered: cc `6aa35fc7…2a48` (959,099 B), sp `f04f65b5…6b2b` (40,708,593 B). The device sizes match; details are in [zenodo/README.md](zenodo/README.md).
+
+## 2026-11-14 — Codex, gpt-6-astra high — readiness checkpoint
+
+- Rules/input head `9705c75876a74ac6bcce5625d20a45e3676c1992`; handoff 08 is in progress. Source rules are unchanged from the earlier audit. Bounded supplementary reviewers cover registry/response, allocation union and pack acceptance semantics; only this orchestrator controls Git.
+- Response F1–F5, the clean main merge, final-ID scientific content and licence notices pass the bounded diff review. The live allocation refresh finds no collision at main `99a9b1d`, PR27 `9d3f5e0` and PR35 `9705c75`; all 19 distinct ledgers were read, and all four registries scanned at each head.
+- New findings under review: the optional SP `--regenerate` mismatch path can print `ALL CHECKS AGREE` and return zero (executable isolated control); minor pending-process text remains in shared records. Neither is a refutation of the accepted mathematics. Support records are in `audit-support/readiness-*.md`.
+- Fresh builds pass at 32/50 pages; all compiled label values match the previous audit builds. The frozen non-cref tables match 52/56 entries. The original uploaded CC ZIP matches its recorded SHA256 and every manifest member; its full verifier passes. The SP pack and independent witness replay are still running; no final disposition is claimed by this checkpoint.
 
 ## Runs needed
 
