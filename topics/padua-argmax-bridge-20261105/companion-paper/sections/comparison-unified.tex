@@ -333,8 +333,8 @@ modulus of the first omitted term.
 These finite rational evaluations, the later $K=3$ evaluation of
 $\kappa$, and the gate base comparisons are executed with Python
 integers and \texttt{Fraction} by
-\texttt{code/onset512\_analytic/check.py}; the reproducibility package
-retains \texttt{code/onset512\_analytic/receipt.json}. No floating-point decimal is a premise.
+\texttt{code/onset512\_analytic/check.py}; the repository contains its
+executed receipt at \path{code/onset512_analytic/receipt.json}. No floating-point decimal is a premise.
 
 \paragraph{From reciprocal sums to a scalar profile.}
 Near a pole an absolute cotangent behaves like the reciprocal of its
@@ -1655,8 +1655,10 @@ At regular samples, angle addition and the divided-difference kernel
  &=C_-(v_r)\cot((u-v_r)/2)+C_+(v_r)\cot((u+v_r)/2).
  \end{aligned}
 \]
-Here $\cos(nu)=(-1)^{\delta_r}\cos x$, so the term
-$-\cos(nu)$ in the kernel cancels the corresponding constant term.
+Here $\cos(nu)=(-1)^{\delta_r}\cos x$.
+Writing $1+\cos u=(1+\cos v_r)+(\cos u-\cos v_r)$ in the divided
+difference isolates the constant $(-1)^{\delta_r}\cos x/2$ in
+$G_n(u,v_r)/2$, which the term $-\cos(nu)/2$ cancels.
 For the last equality use the cotangent sum and difference identities
 and $\sin v\cot(v/2)=1+\cos v$. The two fractional pole offsets are
 \[
@@ -1782,7 +1784,9 @@ Its linked sinc continuation is specified below. Set
 $\mathcal H_j=h_j(t)+h_j(1-t)$, $\mathcal Q_j=g_j(t)+g_j(1-t)$,
 $E_2=C_2+D_0\mathcal H_2+B_0\mathcal Q_2$,
 $\Delta_2=E_\infty-E_2$, $\epsilon_n=\log(m/n)$,
-$Z_n=D_0-B_0\epsilon_n$, and
+$Z_n=D_0-B_0\epsilon_n$, and define the operators below.
+The subscript $\tau$ in $Q_\tau$ is a local mesh offset, distinct from
+the function $\tau(w)=w\cot w$ used in the endpoint estimates.
 \begin{align*}
  F_s(L,z)&=\mathcal{V}(L,v_s(z))-
  \frac{U_0+(4\mathsf{a}/\pi)(L+\log z)}z-\frac{d_+}\pi\log(\pi-z),\\
@@ -2267,12 +2271,12 @@ The unwrapped offset increases strictly with the row label, so there
 is at most one such row in each channel. Each uses
 $|\Xi_j|\leq2P/(\pi m\nu)\leq P/(\pi m)$, giving the two-channel
 charge $2P/(\pi n)$.
-The half-line residual is at most $16|w|/\pi$ per row and
-$w\leq \mathsf{a}m/(\pi\nu)$, producing its $32/\pi^2$ harmonic factor.
-For a central reference, its variation is $8|w\cot v|$.
+The half-line residual is at most $16|w_r|/\pi$ per row and
+$|w_r|\leq \mathsf{a}m/(\pi\nu)$, producing its $32/\pi^2$ harmonic factor.
+For a central reference, its variation is $8|w_r\cot v_r|$.
 Centered-cell quadrature therefore gives
-$|T_0|\leq4|w|/|\sin v|=\mathsf a/\sin^2(v/2)\leq2\mathsf a$,
-with the linked limiting value at $v=\pi$.
+$|T_0|\leq4|w_r|/|\sin v_r|=\mathsf a/\sin^2(v_r/2)\leq2\mathsf a$,
+with the linked limiting value at $v_r=\pi$.
 The central angular interval has length $\pi$ and row spacing
 $\pi/m$, so it contains at most $m+1$ rows. Each reference error
 is at most $2\mathsf{a}$, giving $2\mathsf{a}(m+1)/(nm)<3\mathsf{a}/n$. Adding the ledger gives $20+32=52$ and
@@ -3036,7 +3040,7 @@ $d(z)=\{c(z/4)-c(z/2)\}/2$,
  |b''|\leq\tfrac12,\qquad |d''|\leq\tfrac1{32}+\tfrac18=\tfrac5{32}.
 \]
 Also $d$ increases and $0\leq d\leq1/2-1/\pi<1/5$.
-Writing $\chi=z/2$, direct differentiation gives
+Writing $\chi=z/2$ locally (distinct from the test function of Section~\ref{sec:argmax}), direct differentiation gives
 \[
  d'(z)=\frac{\sin^2\chi-\chi^2\cos \chi}{4\chi^2\sin^2\chi}.
 \]
@@ -3882,7 +3886,9 @@ $y$, which explains the separate $y(17L+27)/m^2$ term and the
 small difference between the $x$ and $y$ coefficients at the end.
 
 The finite cancellation in the shift can be written explicitly.
-Put $\eta=\vartheta_m t=y/m$ and $z_j=\vartheta_m j$. Regrouping the actual finite sum gives
+Put $\eta=\vartheta_m t=y/m$ and $z_j=\vartheta_m j$.
+Here $\eta$ is a local displacement, distinct from the pole offsets $\eta_\pm$.
+Regrouping the actual finite sum gives
 \[
  \begin{aligned}
  \frac {m} {\mathsf{a}}\mathrm{Shift}={}&F_0(2\vartheta_m+\eta)-F_0(2\vartheta_m)
@@ -4135,8 +4141,8 @@ strictly decreases too. These facts prove \eqref{uc:relative-gate-bounds}.
 Since the vertex is $<1/2$, $\mathfrak p_n$ decreases on $[1/2,1]$.
 \end{proof}
 
-Table~\ref{uc:base-values} was computed with the exact interval routines of
-\texttt{code/onset512\_analytic/check.py}; these 60 intermediate values
+Table~\ref{uc:base-values} was composed from the exact interval routines in
+\path{code/onset512_analytic/check.py}; these 60 intermediate values
 are not part of its executed \texttt{receipt.json}. The quantities
 $U_*,d_x,d_y,\ell_x,\ell_y$ are defined in
 Corollary~\ref{uc:relative-gate}; entries below 512 evaluate those same
@@ -4180,3 +4186,4 @@ $\ell_x$ & $[0.731765,0.731766]$ & $[0.483830,0.483831]$\\
 $\ell_y$ & $[0.629020,0.629021]$ & $[0.380171,0.380172]$\\
 \bottomrule\end{tabular}
 \end{table}
+\clearpage

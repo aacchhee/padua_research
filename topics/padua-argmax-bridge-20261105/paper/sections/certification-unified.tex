@@ -338,7 +338,7 @@ boundary.
 \begin{proposition}[Computer-assisted finite verification]\label{cert:finite-verification}
 For every integer $2\leq n\leq40$ the recorded polynomial certificate
 satisfies the coefficient and complete-partition predicates above.
-For every integer $41\leq n\leq511$ both recorded certificate records have been
+For every integer $41\leq n\leq511$ both certificate records have been
 recertified with independently computed bounds satisfying the norm,
 closed-cover, defect-floor and corner predicates above.
 With the arithmetic model and mathematical premises specified in
@@ -410,10 +410,10 @@ $[0,\pi/2]$. Let $0<t<2$ be the rounded nonzero reduced argument.
 The degree-25 Taylor polynomial, evaluated by Horner's rule (successive
 nested multiplication and addition), has error less than
 $84\epsilon_{\mathrm{fp}}t$; the implemented allowance is
-$128\epsilon_{\mathrm{fp}}t$. The elementary derivation in the expanded
-companion, Section~\ref{sec:certificates}, paragraph ``An elementary
-derivation of the arithmetic bounds'', proves this bound and its integer
-and normal-operation guards.
+$128\epsilon_{\mathrm{fp}}t$. The elementary derivation in Section 5 of
+the expanded companion identified in the data and code availability statement,
+paragraph ``An elementary derivation of the arithmetic bounds'', proves
+this bound and its integer and normal-operation guards.
 In outline, at most 38 normal rounding factors contribute less than
 $77\epsilon_{\rm fp}t$, the Taylor tail is bounded by
 $t\,2^{26}/27!<\epsilon_{\rm fp}t$,
@@ -509,9 +509,17 @@ execution checked both witnesses at each of degrees 41, 458 and 511.
 The essential certificates, independent verification records, source
 identities and reproduction commands are identified by the package inventories.
 These inventories record past computation and do not establish current custody.
-At this version, the canonical onset-512 return archive and the independent
-phase-checker evidence bundle are unavailable. Data-only checks of the four
-witnesses at degrees 320, 384, 458 and 510 therefore remain open.
+At this version, the output archive of the degree 320--510 certificate run
+and the stored outputs of the independent phase checker are unavailable.
+For $320\leq n\leq510$, the verification stated in
+Proposition~\ref{cert:finite-verification} therefore rests on recorded
+executions whose outputs cannot currently be re-examined.
+A planned independent re-inspection of stored outputs at the four sampled
+degrees 320, 384, 458 and 510 remains open: it covers both certificate
+records per degree (eight records in total), comparing the producer outputs
+with the independent checker's verification outputs without rerunning the
+certificate search. The separate historical execution at degree 458
+reported above is distinct from this pending re-inspection of stored outputs.
 Present availability of the unsampled native histories (about 632 MiB) is
 unverified. Selected native histories are auxiliary provenance; they supply no
 numerical premise to the independent recertification.

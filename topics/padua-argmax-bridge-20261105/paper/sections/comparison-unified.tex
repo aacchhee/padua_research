@@ -126,8 +126,8 @@ modulus of the first omitted term.
 These finite rational comparisons, the $K=3$ kappa series below and the
 scalar-gate base values are evaluated by
 \texttt{code/onset512\_analytic/check.py}, using Python integers and
-\texttt{Fraction}; its executed receipt is
-\texttt{code/onset512\_analytic/receipt.json} in the reproducibility package.
+\texttt{Fraction}; the repository contains its executed receipt at
+\path{code/onset512_analytic/receipt.json}.
 
 The scalar reciprocal pair and its continuous periodic profile are
 \begin{align}\label{uc:scalar-definitions}
@@ -585,8 +585,10 @@ For example $H_0>9/20-828/4925>7/25$;
 $C_0>39/10$, $b_*>2/5$ give $d_*>39/250$;
 and $g_0<(80/197)((23/20)^2-(69/100)^2)<43/125$.
 Thus $\mathfrak j>7/25+39/250-43/125=23/250$.
-Finally $u\geq(1-\cos x)/2$ yields
-$C_\infty\leq C_*-\mathfrak j/2+\sqrt{\mathfrak j^2/4+t_0^2}$.
+Finally $u\geq(1-\cos x)/2$ gives
+$C_\infty\leq C_*-\mathfrak j/2+(\mathfrak j/2)\cos x+t_0\sin x$.
+Cauchy--Schwarz bounds the last two terms by
+$\sqrt{\mathfrak j^2/4+t_0^2}$, since $\cos^2x+\sin^2x=1$.
 For $\delta=9/4-C_*>249/625$,
 \[
  \delta^2+\delta\mathfrak j-t_0^2>
@@ -754,8 +756,10 @@ At regular samples, angle addition and the divided-difference kernel
  &=C_-(v_r)\cot((u-v_r)/2)+C_+(v_r)\cot((u+v_r)/2).
  \end{aligned}
 \]
-Here $\cos(nu)=(-1)^{\delta_r}\cos x$, so the term
-$-\cos(nu)$ in the kernel cancels the corresponding constant term.
+Here $\cos(nu)=(-1)^{\delta_r}\cos x$.
+Writing $1+\cos u=(1+\cos v_r)+(\cos u-\cos v_r)$ in the divided
+difference isolates the constant $(-1)^{\delta_r}\cos x/2$ in
+$G_n(u,v_r)/2$, which the term $-\cos(nu)/2$ cancels.
 For the last equality use the cotangent sum and difference identities
 and $\sin v\cot(v/2)=1+\cos v$. The two fractional pole offsets are
 \[
@@ -844,7 +848,9 @@ Its linked sinc continuation is specified below. Set
 $\mathcal H_j=h_j(t)+h_j(1-t)$, $\mathcal Q_j=g_j(t)+g_j(1-t)$,
 $E_2=C_2+D_0\mathcal H_2+B_0\mathcal Q_2$,
 $\Delta_2=E_\infty-E_2$, $\epsilon_n=\log(m/n)$,
-$Z_n=D_0-B_0\epsilon_n$, and
+$Z_n=D_0-B_0\epsilon_n$, and define the operators below.
+The subscript $\tau$ in $Q_\tau$ is a local mesh offset, distinct from
+the function $\tau(w)=w\cot w$ used in the endpoint estimates.
 \begin{align*}
  F_s(L,z)&=\mathcal{V}(L,v_s(z))-
  \frac{U_0+(4\mathsf{a}/\pi)(L+\log z)}z-\frac{d_+}\pi\log(\pi-z),\\
@@ -1001,12 +1007,12 @@ Their missing infinite tails cost $2\mathsf{a}/n$. An exact collision occurs
 when an actual pole offset is zero or one. This forces $\rho\geq\pi-v$
 (one of $x-y$, $y-x$, or $x+y$ equals $\pi-v$), hence
 $\mathsf a\leq Pv/2$ as above. Each channel's offset increases strictly
-with the row index, so it has at most one such row. Its normalized
+with the row index, so it has at most one such row. Its normalized reference satisfies
 $|\Xi_j|\leq2P/(\pi m\nu)\leq P/(\pi m)$, and there are at most
 two such rows (one per pole channel), costing $2P/(\pi n)$, and the residual in \eqref{uc:halfline} costs
 $32\mathsf{a}H_n/(\pi^2n)$. Centrally the reference variation is
-$8|w\cot v|$, so centered-cell quadrature gives
-$|T_0|\leq4|w|/|\sin v|=\mathsf{a}/\sin^2(v/2)\leq2\mathsf{a}$;
+$8|w_r\cot v_r|$, so centered-cell quadrature gives
+$|T_0|\leq4|w_r|/|\sin v_r|=\mathsf{a}/\sin^2(v_r/2)\leq2\mathsf{a}$;
 its normalized sum costs $3\mathsf{a}/n$. These are all the terms in
 \eqref{uc:reference-match}.
 
@@ -1870,8 +1876,8 @@ strictly decreases too. These facts prove \eqref{uc:relative-gate-bounds}.
 Since the vertex is $<1/2$, $\mathfrak p_n$ decreases on $[1/2,1]$.
 \end{proof}
 
-Table~\ref{uc:base-values} was computed with the exact interval routines of
-\texttt{code/onset512\_analytic/check.py}; these 60 intermediate values
+Table~\ref{uc:base-values} was composed from the exact interval routines in
+\path{code/onset512_analytic/check.py}; these 60 intermediate values
 are not part of its executed \texttt{receipt.json}. The quantities
 $U_*,d_x,d_y,\ell_x,\ell_y$ are defined in
 Corollary~\ref{uc:relative-gate}; entries below 512 evaluate those same
@@ -1915,3 +1921,4 @@ $\ell_x$ & $[0.731765,0.731766]$ & $[0.483830,0.483831]$\\
 $\ell_y$ & $[0.629020,0.629021]$ & $[0.380171,0.380172]$\\
 \bottomrule\end{tabular}
 \end{table}
+\clearpage
