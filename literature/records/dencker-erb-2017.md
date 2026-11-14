@@ -66,3 +66,5 @@ Unchanged: direct prior source for the positive checkerboard resonance (discrete
 ## History
 
 2026-11-03: journal read and compared (P2 reader).
+
+2026-11-14 (padua-xu-lebesgue-20261114): addendum for LIT-380's companion paper Dencker–Erb–Kolomoitsev–Lomako (J. Complexity 43 (2017); arXiv 1608.03451v2), read as a digest of the first about 100k characters: pairwise relatively prime parameters are required, which excludes (n,n), the Xu points. See the [INDEX addendum](../INDEX.md).

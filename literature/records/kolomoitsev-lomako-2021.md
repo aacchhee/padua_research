@@ -28,3 +28,5 @@
 ## History
 
 2026-11-03: record file created by topic padua-literature-20261103. Earlier readings remain in INDEX addenda for LIT-379.
+
+2026-11-14 (padua-xu-lebesgue-20261114): addendum. Theorem 2.1 requires n = lm + p with 1 ≤ p < m, so it excludes the Xu points (m = n). Xu points occur only in the introduction. See the [INDEX addendum for LIT-379](../INDEX.md).

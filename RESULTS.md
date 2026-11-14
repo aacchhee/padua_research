@@ -633,3 +633,26 @@ All seven candidates (IDEA-756–762) and the literature records LIT-716/717 are
 
 [Results](results/padua-mz-paper-20261113.md) · [report](topics/padua-mz-paper-20261113/report.md) · [final-ID map](topics/padua-mz-paper-20261113/pr-preparation/final-id-map.json)
 
+## padua-xu-lebesgue-20261114
+
+Xu points (interpolation of degree n at the Chebyshev–Lobatto parity nodes of Xu 1996) and Morrow–Patterson (MP) points (n even). All records were confirmed at their stated status by [audit-01](topics/padua-xu-lebesgue-20261114/audit-01.md).
+
+**Xu points: BCDMV Conjecture (17) resolved in sharpened form.**
+- **PD-T693, PROVED.** Λ^Xu_n = L_n² for every n ≥ 1, where L_n = (1/n)Σcot((2k−1)π/(4n)) is the Lebesgue constant of the n Chebyshev zeros. The mechanism is the exact tensor lift of PD-T690 and the pointwise bound λ_n(x) ≤ ω_n(u)ω_n(v) (PD-T691, PD-T692).
+- **PD-T694, PROVED.** The maximizers are exactly the non-node vertices for every n ≥ 2: all four vertices for even n, and (1,−1), (−1,1) for odd n (a variant outside the published even-n conjecture). No finite certificate is needed.
+- **PD-T696, PROVED.** Λ^Xu_n = (4/π²)log²n + b log n + c + R_n with b = (8/π²)(γ+log(8/π)), c = (4/π²)(γ+log(8/π))², 0 < R_n < (log n+1.55)/(18n²) (n⁻⁴ enclosure of L_n in PD-T695). Reading "≲" in (17) as an asymptotic upper bound, the ratio tends to 1; the literal inequality fails at every n. The vertex expansion alone also follows from PD-T159 + PD-T270.
+- **PD-T697, MEASURED.** The edge-centre deficit L_n² − λ_n(0,1) tends to about 0.8913.
+
+**Morrow–Patterson points.**
+- **PD-T698–PD-T701, PROVED.** Closed forms at the vertices: λ_n(±1,−1) = n+1, λ_n(±1,1) given by an explicit sign-band sum and strictly larger than n+1, for every even n ≥ 2.
+- **PD-T702, PROVED (computer-assisted enclosure).** λ_n(1,1) = c*(n+5/2)² − (n+1) + O(log²n) with c* = (2/π)∫₀^∞|sin2τ|·|d/dτ(sinτ/τ)²|dτ = 0.51695365336…, certified enclosure [0.5169536533663, 0.5169536533677]. **PD-T703, PROVED (computer-assisted: ball arithmetic n ≤ 16):** Λ_n > c*n² for every even n ≥ 2, strengthening the existential constant of the published lower bound (Beberok 2025, LIT-721).
+- **PD-N251, PD-N252, PROVED negatives.** The MP Lebesgue function is not centrally symmetric (λ_n(1,1) ≠ λ_n(−1,−1)), Λ_n is not attained at (±1,−1), and no vertex value equals (n+1)(n+2)/2, for every even n ≥ 2 (n ≥ 6 for the vertex value above the dimension). This answers both open problems of BBDM §7.1 negatively and refutes their reported corner value (LIT-378).
+- **PD-T704, MEASURED.** The remainder λ_n(1,1)+(n+1)−c*(n+5/2)² is negative and decreasing, with a log² trend.
+- **PD-T706, PD-T707.** First-variation closed forms at (±1,1) (PROVED) and strict local maxima at (±1,1) for every even n ≤ 3000 (PROVED, computer-assisted; independent rerun and a separate code path in audit-01).
+- **PD-T708, PROVED.** Far-field bounds localizing every maximizer to the four vertex boxes (non-trivial for n ≥ 1030). **PD-T709, PROVED (tool):** translation formula and averaged shifted-lattice bound.
+- **PD-N253, MEASURED negative.** The zero shift does not maximize the shifted-lattice sum Ξ_n for M = n+2 ∈ {62,102,202} (REJECTED: failed within that scope).
+- **PD-T705, OPEN.** The argmax {(±1,1)} and lim Λ_n/n² = c*. Remaining steps: strict local maxima for n > 3000 (IDEA-779) and the scaling-limit, profile and matching steps W1–W3 (IDEA-776).
+
+Candidates IDEA-766–779 and source records LIT-721–731 are registered; LIT-378 is upgraded with page locators and corrections. Novelty is stated only as "not found in the documented search".
+
+[Results](results/padua-xu-lebesgue-20261114.md) · [report](topics/padua-xu-lebesgue-20261114/report.md) · [final-ID map](topics/padua-xu-lebesgue-20261114/pr-preparation/final-id-map.json) · [audit-01](topics/padua-xu-lebesgue-20261114/audit-01.md)

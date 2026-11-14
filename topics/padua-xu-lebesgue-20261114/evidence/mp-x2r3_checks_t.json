@@ -1,0 +1,12 @@
+{
+ "script": "code/mp/research/x2r3_checks.py",
+ "label": "MEASURED (float64/mpmath); not certificates",
+ "transl": {
+  "four_term_diamond_formula_max_err": "2.9558e-29",
+  "box_average_formula_max_err_(quad)": "1.5777e-30",
+  "rotated_product_form_max_err": "1.2425e-29",
+  "Gt_closed_form_vs_double_sum_rel_err": 3.591607826649995e-14,
+  "Xi(0,0)_minus_lam11_n=20": 1.3642420526593924e-12,
+  "wall_seconds": 43.4
+ }
+}

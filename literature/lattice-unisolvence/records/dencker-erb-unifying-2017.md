@@ -22,3 +22,5 @@ See [search log](../search-log.md). Related frozen baseline entries and existing
 ## History
 
 2026-10-31: bounded campaign inspection recorded.
+
+2026-11-14 (padua-xu-lebesgue-20261114): addendum. §9.2 of arXiv 1711.00557v1 places the Morrow–Patterson–Xu points in the LC framework (m = (m,m)); no Lebesgue statement (digest of the whole text). See the [INDEX addendum for LIT-320](../../INDEX.md).
