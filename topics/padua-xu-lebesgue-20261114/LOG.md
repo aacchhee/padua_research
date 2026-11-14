@@ -2,7 +2,7 @@
 
 - Branch: `claude/padua-xu-lebesgue-20261114` · Base: main `99a9b1d` (PR #34 merged)
 - Developer: Claude (researcher Fable 5.2 xhigh, per-round downgrade to Opus 5.5 xhigh allowed) · Auditor: Claude, Opus 5.5 xhigh, distinct thread (AC ruling 2026-11-14)
-- Stage: WORK · Open handoff: [01-work.md](handoffs/01-work.md) · PR: none yet
+- Stage: WORK · Open handoff: [01-work.md](handoffs/01-work.md) · PR: [#36](https://github.com/aacchhee/padua_research/pull/36) (draft, audit PENDING)
 - Claims: none yet. Provisional IDs will be `PD-T?padua-xu-lebesgue-20261114-claude-NN`.
 
 ## 2026-11-14 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -28,3 +28,8 @@
 - AC rulings of 2026-11-14 (Fable for mathematical development; Opus 5.5 xhigh Claude auditor in place of Codex; per-round downgrade; 10 rounds per direction) are recorded in the setup entry above and apply.
 - `gates.md` (G0–G5) written and pushed before any run.
 - Literature reads delegated to two Opus 5.5 readers (X1: Xu 1996, BdMV 2006, BCDMV 2006 §§1–2,4, Kolomoitsev–Lomako 2021 on Xu points, forward citations; X2: Beberok–Białas-Cież–De Marchi arXiv 2412.14595, Morrow–Patterson 1978, Caliari–De Marchi–Vianello 2005, forward citations). Outputs `lit-notes/X1-sources.md`, `lit-notes/X2-sources.md`; merged into `literature-xu-mp.md` by the orchestrator.
+- AC, mid-session messages: re-authorized literature fetching without asking; authorized the institutional browser on the NTNU network and filing into `Downloads\padua\papers` (folder access to `Downloads` granted by AC through the permission prompt). AC solved one ScienceDirect captcha himself; the orchestrator never solved one.
+- Literature verdicts: `literature-xu-mp.md` §3–§4. The X2 lower bound is published (Beberok, JAT 2025), so the X2 targets shift to the exact corner values, BBDM §7.1 and the sharp constant. Conj. (17) uses "≲" (BCDMV p. 319 page image).
+- Novelty gates written (`novelty-gate-X1.md`, `novelty-gate-X2.md`). Draft PR #36 opened.
+- G0 for both families: the developer evidence reports PASS (`evidence/xu-g0.json`, `evidence/mp-g0.json`). C-MP Path-A enclosures for even n ≤ 30: λ(±1,−1) contains n+1 and λ(1,1) ≠ λ(1,−1), certified at every n. Path-B checker output is in `evidence/mp-cmp-check.json`; independent review still to do.
+- Rounds X1-2 and X2-2 started on Fable 5.2 xhigh (`rounds.md`).
