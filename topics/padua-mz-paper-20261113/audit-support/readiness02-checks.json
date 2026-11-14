@@ -1,0 +1,172 @@
+{
+  "rules_input": "b2e47412e74d2082d2c4e5587baf89cf7b25ab3a",
+  "pack_source": "52030d1d22d6397a02c2831145a962e02105973b",
+  "model_effort": "Codex gpt-6-astra medium (configured assignment)",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "checker_sha256": "7d633542dd7c06611e76b8159ee617b227fcc62ce21ef9999f80418feb203e7e",
+  "controls": {
+    "cc": [
+      {
+        "mode": "agree",
+        "args": [
+          "out"
+        ],
+        "exit": 0,
+        "summary": [
+          "ALL REQUIRED CHECKS AGREE"
+        ],
+        "pass_": true
+      },
+      {
+        "mode": "required_fails",
+        "args": [
+          "out"
+        ],
+        "exit": 1,
+        "summary": [
+          "REQUIRED CHECKS FAILED (see DIFFER/FAILED lines above)"
+        ],
+        "pass_": true
+      }
+    ],
+    "sp": [
+      {
+        "mode": "agree",
+        "args": [
+          "out"
+        ],
+        "exit": 0,
+        "summary": [
+          "ALL REQUIRED CHECKS AGREE"
+        ],
+        "pass_": true
+      },
+      {
+        "mode": "agree",
+        "args": [
+          "out",
+          "--regenerate"
+        ],
+        "exit": 0,
+        "summary": [
+          "ALL REQUIRED CHECKS AGREE",
+          "OPTIONAL REGENERATION REPRODUCED THE ARCHIVED WITNESSES (0 source-vector difference(s) noted)"
+        ],
+        "pass_": true
+      },
+      {
+        "mode": "vector_differs",
+        "args": [
+          "out",
+          "--regenerate"
+        ],
+        "exit": 0,
+        "summary": [
+          "ALL REQUIRED CHECKS AGREE",
+          "OPTIONAL REGENERATION REPRODUCED THE ARCHIVED WITNESSES (3 source-vector difference(s) noted)"
+        ],
+        "pass_": true
+      },
+      {
+        "mode": "payload_differs",
+        "args": [
+          "out",
+          "--regenerate"
+        ],
+        "exit": 2,
+        "summary": [
+          "ALL REQUIRED CHECKS AGREE",
+          "OPTIONAL REGENERATION DID NOT REPRODUCE THE ARCHIVED WITNESSES (see above; the archived certificates are unaffected)"
+        ],
+        "pass_": true
+      },
+      {
+        "mode": "required_fails",
+        "args": [
+          "out",
+          "--regenerate"
+        ],
+        "exit": 1,
+        "summary": [
+          "REQUIRED CHECKS FAILED (see DIFFER/FAILED lines above)",
+          "OPTIONAL REGENERATION REPRODUCED THE ARCHIVED WITNESSES (0 source-vector difference(s) noted)"
+        ],
+        "pass_": true
+      },
+      {
+        "mode": "producer_crash",
+        "args": [
+          "out"
+        ],
+        "exit": 1,
+        "summary": [
+          "REQUIRED CHECKS FAILED (see DIFFER/FAILED lines above)"
+        ],
+        "pass_": true
+      }
+    ]
+  },
+  "manifests": {
+    "cc": {
+      "rows": 377,
+      "repository_members_pass": 368,
+      "exact_hash_matches": 375,
+      "runtime_container_differences": [
+        "data/table1/reproduction.json"
+      ],
+      "original_delivered_log_unavailable": [
+        "VERIFICATION-2026-11-14.log"
+      ],
+      "new_verifier_and_template_hashes_match": true
+    },
+    "sp": {
+      "rows": 706,
+      "repository_members_pass": 678,
+      "exact_hash_matches": 700,
+      "runtime_container_differences": [
+        "data/measurements/reproduction-marginal.json",
+        "data/measurements/reproduction-padua.json",
+        "data/witnesses/cert-m1101/witness.json.gz",
+        "data/witnesses/cert-m1240/witness.json.gz",
+        "data/witnesses/cert-m1600/witness.json.gz"
+      ],
+      "original_delivered_log_unavailable": [
+        "VERIFICATION-2026-11-14.log"
+      ],
+      "new_verifier_and_template_hashes_match": true
+    }
+  },
+  "real_cc_runs": {
+    "relative_venv": {
+      "comparisons_agree": 4,
+      "summary": "ALL REQUIRED CHECKS AGREE",
+      "stdout_sha256": "c98a9f51cb8bf5289c77155805c375cb5b065e2992f5f7b565c2992233ef9b5b"
+    },
+    "bare_PATH_python3": {
+      "comparisons_agree": 4,
+      "summary": "ALL REQUIRED CHECKS AGREE",
+      "stdout_sha256": "eaba3c465a04088bf906401104149074a8741980f30c99509e9a27281131c0ac"
+    }
+  },
+  "scientific_paths_unchanged_from_readiness01": [
+    "topics/padua-mz-cleanup-20261105",
+    "topics/padua-mz-2d-frontier-20261105",
+    "topics/padua-mz-sharp-constants-20261106",
+    "tracks/mz-constants"
+  ],
+  "reservation_reuse": {
+    "main": "99a9b1d161e41a80c4fd425b63022c681fbe8779",
+    "previous_PR27": "9d3f5e0f8b270d039d78d4ebc0df53269a7892ab",
+    "current_PR27": "50070f520b3d5cfe9afbc75f10fdb1bc664b7b71",
+    "previous_PR35": "9705c75876a74ac6bcce5625d20a45e3676c1992",
+    "current_PR35": "b2e47412e74d2082d2c4e5587baf89cf7b25ab3a",
+    "ledger_and_four_registry_changes": []
+  },
+  "limitations": [
+    "Replacement delivered ZIP bytes and their original console logs were not available",
+    "SP numerical certificate suite not repeated; accepted readiness-01 executions remain unchanged",
+    "Stubbed controls test shell outcomes, not numerical claims",
+    "Fresh venv used system site packages plus /tmp/mz-python, not a fresh pip installation"
+  ]
+}

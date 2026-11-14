@@ -741,6 +741,12 @@ These LITERATURE records distinguish reported source statements from local proof
 
 LIT-636 records the precise DEKL Fourier-simplex theorem beyond the historical aggregate LIT-380. LIT-650 records Li–Sun–Xu’s superspace interpolation construction separately from the conjecture under LIT-010. Chkifa’s source-header alias resolves with the difference-bound fact LIT-647, while the prefix bound LIT-648 and reported prior multivariate bound LIT-649 remain distinct. The sources indexed only through metadata, abstracts, search excerpts or secondary attribution retain those explicit limits.
 
+### MZ-CC and MZ-SP manuscripts — same-source addenda, PR35 (2026-11-14)
+
+- **LIT-045 — published-version equation check.** AC supplied the published PDF (MCS 252 (2027) 733–745) on 2026-11-13. The orchestrator read it; equations (7)–(8) match arXiv v1. Coverage is extended to those equations; the verdict is unchanged. [Record](records/mz-an-sommariva-vianello-2026.md).
+- **LIT-056 — DOI addendum.** Journal DOI 10.1137/120869845, from metadata only; no new reading. [Record](records/mz-quadrature-aliasing-screen.md).
+
+No new LIT ID is assigned. The MZ-CC/MZ-SP citation scope check is in [literature-mz-paper.md](../topics/padua-mz-paper-20261113/literature-mz-paper.md).
 
 ### Existing source facts — primary-reading addenda, 2026-11-14 (padua-xu-lebesgue-20261114)
 

@@ -1,0 +1,85 @@
+{
+  "input_head": "9705c75876a74ac6bcce5625d20a45e3676c1992",
+  "pack_source_head": "90860ecdc12d9887f7d31c3b0440d3b14e8d6169",
+  "model": "Codex, gpt-6-astra high (configured assignment)",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "checker_sha256": "1d807a6d0f9f5b42b6dd7ff9b6b27d30e6c48067938bd5137f04d2ba0b2b1972",
+  "builds": {
+    "cc": {
+      "pages": 32,
+      "final_log_issues": [],
+      "type3_fonts": false,
+      "all_compiled_label_values_unchanged": 212,
+      "frozen_non_cref_labels_pass": 52,
+      "pdf_sha256": "7c3af3f224f1d6b5403ad89311861bfb0d0eab9b9e49e71e5cb78c4e3ad1b741"
+    },
+    "sp": {
+      "pages": 50,
+      "final_log_issues": [],
+      "type3_fonts": false,
+      "all_compiled_label_values_unchanged": 116,
+      "frozen_non_cref_labels_pass": 56,
+      "pdf_sha256": "f86cf3e44e78927767109dd21e162c01af9743c0bfbc9147ca939ec64e276ed1"
+    }
+  },
+  "pack_runs": {
+    "uploaded_cc": {
+      "all_required_default_checks_agree": true,
+      "agree_lines": 4,
+      "stdout_sha256": "eea270dd88a7208767fef293822c70e6d483e5ab7eefba91b1f18c17ddfd8536"
+    },
+    "rebuilt_cc": {
+      "all_required_default_checks_agree": true,
+      "agree_lines": 4,
+      "stdout_sha256": "13c297297c58477e552305e19a60f1eb9f5cee7125827e6e29598e91c46031b4"
+    },
+    "rebuilt_sp": {
+      "all_required_default_checks_agree": true,
+      "agree_lines": 25,
+      "stdout_sha256": "03dc15d62811e2cdbc0521bee1d7c74c95fbbf9903faeb7b0877363ffc9f9f43"
+    }
+  },
+  "uploaded_cc_zip": {
+    "bytes": 959099,
+    "sha256": "6aa35fc712154bd51da88f3348b821f6d8436b0fbce43e1b998b353d771a2a48",
+    "manifest_rows_pass": 377
+  },
+  "uploaded_sp_zip": {
+    "direct_transfer": "unavailable: exceeds executor 32 MiB transfer limit",
+    "recorded_bytes_not_independently_read": 40708593,
+    "recorded_sha256_not_independently_read": "f04f65b59954528ffa59886743da5296495a9d6908f36695dc7515cad6e16b2b",
+    "fallback": "rebuilt from pinned source and independently regenerated exact data"
+  },
+  "measured_results_against_historical_blob": {
+    "padua": "all numerical result fields agree",
+    "marginal": "all numerical result fields agree",
+    "scope": "existing comparator runtime-field exclusions; original delivered JSON metadata not asserted"
+  },
+  "rebuilt_sp_against_delivered_manifest": {
+    "rows": 706,
+    "exact_hash_matches": 700,
+    "run_or_container_differences": [
+      "VERIFICATION-2026-11-14.log",
+      "data/measurements/reproduction-marginal.json",
+      "data/measurements/reproduction-padua.json",
+      "data/witnesses/cert-m1101/witness.json.gz",
+      "data/witnesses/cert-m1240/witness.json.gz",
+      "data/witnesses/cert-m1600/witness.json.gz"
+    ],
+    "original_members_unavailable": [],
+    "note": "gzip payloads/norms checked against original pins by separate witness checker; fresh measured receipts verified, original delivered measurement/log bytes not read"
+  },
+  "rebuilt_sp_zip": {
+    "bytes": 40663564,
+    "sha256": "ce82918021625105b5f9f41e5a7c1c19de9e0dd7b74aaffcb451e23cd7b88b44",
+    "manifest_rows_pass": 706,
+    "same_files_as_verified_staging": true
+  },
+  "scientific_code_sha256": {
+    "topics/padua-mz-paper-20261113/zenodo/verify-mz-cc.sh": "dc60bb5e0eede2eed33456f3a41df7de9078c37b861bf5a1a2c7d7a9da376060",
+    "topics/padua-mz-paper-20261113/zenodo/verify-mz-sp.sh": "d6d158ee6a05ae5f088e0fbe8916dd820da96f0f0d3320041719aad2468f95f7",
+    "topics/padua-mz-paper-20261113/zenodo/compare_receipts.py": "249b0437f7636710dfaca51073d9a77ecf2b97d0ba831de0fd7d8d817aa5311e",
+    "topics/padua-mz-paper-20261113/tools/zenodo_pack.py": "104a0a9bea02b1e2da2e9b3e1250f505be46b35e4f3645b53bc5b64c83dbb492"
+  }
+}

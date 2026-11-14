@@ -1,0 +1,190 @@
+{
+  "audit_input_head": "9705c75876a74ac6bcce5625d20a45e3676c1992",
+  "frozen_code_commit": "39479ffca76052ea79f90c2e5e0c4bfc80bf1584",
+  "auditor": "Codex gpt-6-astra high (inherited configured assignment)",
+  "scope": "Fresh source-vector generation, exact polynomial reconstruction, producer and independent checker; no new mathematical result",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "python_flint": "0.9.0",
+  "flint": "3.6.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "thread_environment": "OPENBLAS_NUM_THREADS=OMP_NUM_THREADS=MKL_NUM_THREADS=1",
+  "code_identity": {
+    "topics/padua-mz-cleanup-20261105/code/g1_minimum.py": {
+      "equals_frozen39479ff": true,
+      "sha256": "247bf4fa323abf2668fd4575b3ee8b363afa9ff75ecc1884eb41eda2a8433cb3"
+    },
+    "topics/padua-mz-cleanup-20261105/code/g1_spectral.py": {
+      "equals_frozen39479ff": true,
+      "sha256": "f246b7a436fa9e6133153a87fd5af887d80f6fb0ab12dc2208fbd9ade223c241"
+    },
+    "topics/padua-mz-cleanup-20261105/code/rigorous_witness.py": {
+      "equals_frozen39479ff": true,
+      "sha256": "11f7cabcfb3c431a26224eb0d8df49db5d7de65c4685f979a9037d835a1cd498"
+    },
+    "topics/padua-mz-cleanup-20261105/code/independent_witness.py": {
+      "equals_frozen39479ff": true,
+      "sha256": "60c1e6db62fbd1c422fae2fa29476afad2796aa503a1225d7f507745fa08361f"
+    },
+    "tracks/mz-constants/code/mz2d_spectra.py": {
+      "equals_frozen39479ff": true,
+      "sha256": "623acdf06e4ad1c50c3c0562f47f037b8efa15fcc332c2f1ee7a7d0f88ee8b76"
+    }
+  },
+  "summary_checker_sha256": "ac157800df9f40d92829a023b863db93e0df52502c1815dac6992432ac49ac62",
+  "scan_command": [
+    "topics/padua-mz-cleanup-20261105/code/g1_minimum.py",
+    "--m",
+    "1101",
+    "1240",
+    "1600",
+    "--output",
+    "/tmp/mz-readiness-data/audit-receipts/scan.json",
+    "--vector-dir",
+    "/tmp/mz-readiness-data/source-vectors"
+  ],
+  "witnesses": [
+    {
+      "m": 1101,
+      "n": 1100,
+      "source_vector_sha256": "a407bd0cc499a2a86b892cf5d834a2d6217c4d97b91a4205a7f0ae309572592a",
+      "source_vector_matches_original": true,
+      "payload_sha256": "71bcbc676272a19765c2e859c9116856ae7b5e2680eee332d042f4a3cf62e19e",
+      "payload_bytes": 9956905,
+      "payload_matches_original": true,
+      "exact_norm_sha256": "f651dff771fd67b5b3a9afb89e8f8c01c9b7a842a93cbe3b7658b04e69270f14",
+      "exact_norm_matches_original": true,
+      "gzip_sha256": "22913a3271c0cd826ff062a1f880c3539ef937b0141820dab381b53181662813",
+      "gzip_bytes": 4196078,
+      "gzip_matches_original": true,
+      "producer_sign": "negative",
+      "positive_exact_norm": true,
+      "producer_energy_enclosure": "[-0.0350668 +/- 4.18e-8]",
+      "producer_rayleigh_enclosure": "[-0.0350668 +/- 4.18e-8]",
+      "independent_sign": "negative",
+      "independent_accepted": true,
+      "independent_q_enclosure": "[-0.0350668 +/- 9.22e-8]",
+      "original_receipt_comparisons_pass": true,
+      "scan_seconds": 31.231786947999353,
+      "producer_seconds": 28.513353382997593,
+      "independent_seconds": 12.02603948199976,
+      "producer_command": [
+        "topics/padua-mz-cleanup-20261105/code/rigorous_witness.py",
+        "--m",
+        "1101",
+        "--vector",
+        "/tmp/mz-readiness-data/source-vectors/m1101-n1100-min.npy",
+        "--scratch",
+        "/tmp/mz-readiness-data/witnesses/cert-m1101",
+        "--output",
+        "/tmp/mz-readiness-data/audit-receipts/producer-m1101.json"
+      ],
+      "independent_command": [
+        "topics/padua-mz-cleanup-20261105/code/independent_witness.py",
+        "--witness",
+        "/tmp/mz-readiness-data/witnesses/cert-m1101/witness.json.gz",
+        "--output",
+        "/tmp/mz-readiness-data/audit-receipts/independent-m1101.json"
+      ],
+      "producer_receipt_sha256": "74e5e41e1415c1c70ac1ca41e3c1a0f0bdca68b8e9024af24c654a939d40bc9c",
+      "independent_receipt_sha256": "1ad1c46fb8a5f34dee59aa975cb87f539621ac3259c9ad90469271376305d534"
+    },
+    {
+      "m": 1240,
+      "n": 1239,
+      "source_vector_sha256": "b8f1520220565635c4601c8cc5f0cd3e24d986aecbe559dcc25033fe19e47c7d",
+      "source_vector_matches_original": true,
+      "payload_sha256": "899c680efe9fdd6ea013ce28e906bb273fbcc10633ee949df0fc47403abd9b3d",
+      "payload_bytes": 12801774,
+      "payload_matches_original": true,
+      "exact_norm_sha256": "a9895473f6a97a3bca7a4b20144326a118f85d74157e00a32291eb11241f7daf",
+      "exact_norm_matches_original": true,
+      "gzip_sha256": "1a9faac5677ac4dde63749a6acac38d95ee88a5082445e6ba6b59cc297d35e4e",
+      "gzip_bytes": 5365436,
+      "gzip_matches_original": true,
+      "producer_sign": "negative",
+      "positive_exact_norm": true,
+      "producer_energy_enclosure": "[-2.71e-5 +/- 6.00e-8]",
+      "producer_rayleigh_enclosure": "[-2.71e-5 +/- 6.00e-8]",
+      "independent_sign": "negative",
+      "independent_accepted": true,
+      "independent_q_enclosure": "[-2.7e-5 +/- 2.30e-7]",
+      "original_receipt_comparisons_pass": true,
+      "scan_seconds": 57.6835161850031,
+      "producer_seconds": 36.32770899400202,
+      "independent_seconds": 15.714740299001278,
+      "producer_command": [
+        "topics/padua-mz-cleanup-20261105/code/rigorous_witness.py",
+        "--m",
+        "1240",
+        "--vector",
+        "/tmp/mz-readiness-data/source-vectors/m1240-n1239-min.npy",
+        "--scratch",
+        "/tmp/mz-readiness-data/witnesses/cert-m1240",
+        "--output",
+        "/tmp/mz-readiness-data/audit-receipts/producer-m1240.json"
+      ],
+      "independent_command": [
+        "topics/padua-mz-cleanup-20261105/code/independent_witness.py",
+        "--witness",
+        "/tmp/mz-readiness-data/witnesses/cert-m1240/witness.json.gz",
+        "--output",
+        "/tmp/mz-readiness-data/audit-receipts/independent-m1240.json"
+      ],
+      "producer_receipt_sha256": "6a73d659ac8e1d41f1f19b4f386765920f3ef97a47858cb1ee93d8facf118371",
+      "independent_receipt_sha256": "13db9d476e1506a4581e50634f70989bba936a573f0f49777cc45349aa3d5e52"
+    },
+    {
+      "m": 1600,
+      "n": 1599,
+      "source_vector_sha256": "a23cb0e6e241993e5458474c64f153c965e8dc5047c2f1dfe08c7bc293e0a338",
+      "source_vector_matches_original": true,
+      "payload_sha256": "6bcf531c197b828cd67e1e3518a5404c6aa9bffeb456a9d26ee1b7ee96b1ec0f",
+      "payload_bytes": 20861351,
+      "payload_matches_original": true,
+      "exact_norm_sha256": "d6b405a856e735ac4df1d9db0295fbc093af66ee620d29c52ef553d6c1d3f6fa",
+      "exact_norm_matches_original": true,
+      "gzip_sha256": "16d89f2c8600364aac3962c4164f0e0875c4fa866fc61269fd6f849e8f1fdad6",
+      "gzip_bytes": 8692559,
+      "gzip_matches_original": true,
+      "producer_sign": "negative",
+      "positive_exact_norm": true,
+      "producer_energy_enclosure": "[-0.0234144 +/- 4.95e-8]",
+      "producer_rayleigh_enclosure": "[-0.0234144 +/- 4.96e-8]",
+      "independent_sign": "negative",
+      "independent_accepted": true,
+      "independent_q_enclosure": "[-0.023414 +/- 5.91e-7]",
+      "original_receipt_comparisons_pass": true,
+      "scan_seconds": 88.37711036299879,
+      "producer_seconds": 67.1206643810001,
+      "independent_seconds": 26.669189713000378,
+      "producer_command": [
+        "topics/padua-mz-cleanup-20261105/code/rigorous_witness.py",
+        "--m",
+        "1600",
+        "--vector",
+        "/tmp/mz-readiness-data/source-vectors/m1600-n1599-min.npy",
+        "--scratch",
+        "/tmp/mz-readiness-data/witnesses/cert-m1600",
+        "--output",
+        "/tmp/mz-readiness-data/audit-receipts/producer-m1600.json"
+      ],
+      "independent_command": [
+        "topics/padua-mz-cleanup-20261105/code/independent_witness.py",
+        "--witness",
+        "/tmp/mz-readiness-data/witnesses/cert-m1600/witness.json.gz",
+        "--output",
+        "/tmp/mz-readiness-data/audit-receipts/independent-m1600.json"
+      ],
+      "producer_receipt_sha256": "1c5be128e39ca9a7ccc3c005a9a9ee16787d8888422c53688d48e5a77334f413",
+      "independent_receipt_sha256": "6f6f453691e313f4d649ec496053e80a9a55c5127af1468bdc5ecc41652d5f34"
+    }
+  ],
+  "limitations": [
+    "Scratch files are regenerated local outputs, not a verified delivery to AC",
+    "Independent checker assumes its stated IEEE BLAS gamma_k model",
+    "Gzip-container identities may differ with zlib; decompressed JSON identity is decisive"
+  ],
+  "verdict": "PASS: all three vectors, exact payloads and norms match; both sign paths accept"
+}

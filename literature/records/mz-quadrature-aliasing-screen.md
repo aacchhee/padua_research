@@ -21,6 +21,7 @@
 - Statement: for Chebyshev coefficients O(m^(-s-1)), s>0, the CC error is O(N^(-s-1)). Section 3 gives exact folded Chebyshev-mode aliasing and corresponding moments.
 - Locator: introduction theorem; §3 *Convergence rate of Clenshaw–Curtis quadrature*.
 - Relation/gap: closest coefficient-aliasing literature; does not in inspected portions state a sharp CC squared-polynomial MZ constant. Coefficient-decay constants for an N-dependent p² require separate control.
+- DOI addendum (2026-11-13, topic padua-mz-paper-20261113): the journal version is DOI 10.1137/120869845 (SIAM epubs page found by web search; metadata only). No new fulltext reading; coverage unchanged. The MZ-CC bibliography (PR35) cites the journal version with this DOI.
 
 ### LIT-057 — Hale–Townsend 2014 transform
 
@@ -37,3 +38,4 @@
 ## History
 
 2026-10-31: selected primary-source statements; all campaign claims retain their own proof statuses elsewhere.
+2026-11-13: LIT-056 journal DOI added from metadata only (topic padua-mz-paper-20261113).

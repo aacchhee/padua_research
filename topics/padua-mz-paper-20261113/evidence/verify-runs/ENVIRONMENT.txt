@@ -1,0 +1,15 @@
+# Environment of the documented-command runs (2026-11-14)
+Each pack copy: python3.12 -m venv venv && venv/bin/pip install -r requirements.txt (quiet; no errors), then
+  MZ-CC: PY=venv/bin/python bash verify.sh
+  MZ-SP: PY=venv/bin/python bash verify.sh out --regenerate
+Pack copies staged with zenodo_pack.py at repository commit 58697024 plus the working-tree verifier/README templates later committed unchanged.
+
+## venv (both packs identical)
+3.12.3 Linux-6.18.44-fc-v470-x86_64-with-glibc2.39
+mpmath==1.3.0
+numpy==2.3.5
+python-flint==0.9.0
+scipy==1.17.0
+sympy==1.14.0
+cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Version: 2:6.3.0+dfsg-2ubuntu6.1
