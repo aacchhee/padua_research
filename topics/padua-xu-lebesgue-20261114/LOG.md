@@ -2,7 +2,7 @@
 
 - Branch: `claude/padua-xu-lebesgue-20261114` · Base: main `99a9b1d` (PR #34 merged)
 - Developer: Claude (researcher Fable 5.2 xhigh, per-round downgrade to Opus 5.5 xhigh allowed) · Auditor: Claude, Opus 5.5 xhigh, distinct thread (AC ruling 2026-11-14)
-- Stage: WORK · Open handoff: [01-work.md](handoffs/01-work.md) · PR: [#36](https://github.com/aacchhee/padua_research/pull/36) (draft, audit PENDING)
+- Stage: AUDIT · Open handoff: [02-audit.md](handoffs/02-audit.md) · PR: [#36](https://github.com/aacchhee/padua_research/pull/36) (draft, audit PENDING)
 - Claims: none yet. Provisional IDs will be `PD-T?padua-xu-lebesgue-20261114-claude-NN`.
 
 ## 2026-11-14 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
@@ -77,3 +77,8 @@
 - Still OPEN: the argmax at (±1,1) for every n, or eventually; lim Λ_n/n² = c*; and the P1 tail n > 3000.
 - The researcher proposes two further jobs: the P1 tail (Fable), and W1+W2 for the sharp constant (Fable, with Sonnet tooling).
 - Budget used: X1 2/10 rounds (direction complete); X2 3/10.
+
+## 2026-11-14 — session 1 close (orchestrator)
+
+- AC chose "Audit now" through the in-app question. The X2 argmax stays OPEN, and its continuation (P1 tail; W1–W3) is deferred until after the audit.
+- Handoff 01: done in `971beb7`. [Handoff 02](handoffs/02-audit.md) is open: the single substantive audit, Claude Opus 5.5 xhigh, fresh thread. Stage → AUDIT.

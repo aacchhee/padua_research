@@ -1,6 +1,6 @@
 # Handoff 01 — padua-xu-lebesgue-20261114 — Xu-points Lebesgue conjecture (X1) and Morrow–Patterson lower bound (X2)
 
-- Status: open
+- Status: done in 971beb79b8edb93835b20d1b9148e93d4ba3aba4
 - Previous handoff: none (new topic)
 
 - Next agent / model / effort: **Claude**. The orchestrator and the researcher both run on **Fable 5.2 xhigh**. Per-round downgrade to Opus 5.5 xhigh is allowed (BRIEF §4).
