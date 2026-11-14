@@ -1,0 +1,90 @@
+{
+  "base": "99a9b1d161e41a80c4fd425b63022c681fbe8779",
+  "previous_topic": "a045b8e9b2b4d92813a9b8e2832b2f8254e7397e",
+  "main": "3bedf04ba872474aba25f93f5642f5ee83676670",
+  "merge": "2a3e40420abd8084e4e7f522d032b8785549e618",
+  "peer_PR27": "fd82e593cd73019601fb00dea9844db09f8601c0",
+  "model_effort": "Codex gpt-6-astra medium (configured assignment)",
+  "incoming_paths": 135,
+  "nonconflict_paths_exactly_main": 130,
+  "shared_additions_preserved": {
+    "ID_CROSSWALK.md": {
+      "own_added_nonblank_lines_retained": 7,
+      "main_added_nonblank_lines_retained": 54
+    },
+    "PROOF_STATUS.md": {
+      "own_added_nonblank_lines_retained": 2,
+      "main_added_nonblank_lines_retained": 27
+    },
+    "RESULTS.md": {
+      "own_added_nonblank_lines_retained": 14,
+      "main_added_nonblank_lines_retained": 18
+    },
+    "literature/INDEX.md": {
+      "own_added_nonblank_lines_retained": 4,
+      "main_added_nonblank_lines_retained": 22
+    },
+    "state/CURRENT.md": {
+      "own_added_nonblank_lines_retained": 14,
+      "main_added_nonblank_lines_retained": 6
+    }
+  },
+  "protected_paths_unchanged": [
+    "tracks/mz-constants",
+    "topics/padua-mz-paper-20261113",
+    "LICENSE",
+    "README.md",
+    "AGENTS.md",
+    "agents/WORKFLOW.md",
+    "agents/codex/CODEX.md"
+  ],
+  "canonical_rows_checked": [
+    "PD-T684",
+    "PD-T685",
+    "PD-T690",
+    "PD-T691",
+    "PD-T692",
+    "PD-T693",
+    "PD-T694",
+    "PD-T695",
+    "PD-T696",
+    "PD-T697",
+    "PD-T698",
+    "PD-T699",
+    "PD-T700",
+    "PD-T701",
+    "PD-T702",
+    "PD-T703",
+    "PD-T704",
+    "PD-T705",
+    "PD-T706",
+    "PD-T707",
+    "PD-T708",
+    "PD-T709",
+    "PD-N251",
+    "PD-N252",
+    "PD-N253"
+  ],
+  "new_duplicate_canonical_PD_rows": [],
+  "preexisting_duplicate_row_labels_preserved": [
+    "PD-T140"
+  ],
+  "allocation_source_copies_scanned": 67,
+  "distinct_ledger_blobs": 20,
+  "union_maxima": {
+    "PD-T": 719,
+    "PD-N": 257,
+    "IDEA": 795,
+    "LIT": 745
+  },
+  "allocation_scope": "Existing ranges retained; PR36 T690\u2013719 follows PR35 T684\u2013689; no new allocation",
+  "pr_population": {
+    "total": 35,
+    "open": [
+      27,
+      35
+    ],
+    "closed_unmerged": []
+  },
+  "scientific_reruns": "not needed: protected manuscripts, code, exact evidence and pack bytes unchanged"
+}

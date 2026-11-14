@@ -1,6 +1,6 @@
 # MZ paper finalization (MZ-CC and MZ-SP): log
 
-- Branch: `claude/padua-mz-paper-20261113` · Base: main `99a9b1d` (merged at `fa956de`) · Developer: Claude · Auditor: Codex (gpt-6-astra)
+- Branch: `claude/padua-mz-paper-20261113` · Base: main `3bedf04b` (PR36, merged at `2a3e4042`) · Developer: Claude · Auditor: Codex (gpt-6-astra)
 - PR #35 · Stage: PR (agent readiness PASS) · Focused check: [readiness-02.md](readiness-02.md). Open handoff: [11-owner-finalization.md](handoffs/11-owner-finalization.md), after AC's publication/frozen-text decisions.
 - Reserved final-ID range: PD-T684–689; assigned PD-T684/685, permanent gaps PD-T686–689. See [ALLOCATIONS.md](ALLOCATIONS.md).
 - Decided by AC: venues (MZ-CC SINUM, MZ-SP JAT); Zenodo later; companion = AC-only reading aid, arXiv and journal versions identical (2026-11-13).
@@ -268,6 +268,13 @@ Claude, claude-opus-5-5 (configured xhigh).
   - A float port is exact on P_m with two negative weights, and its spectra at m = 10 and 20 match our Q^P_m to about 1e−14; the two families are reflections of each other.
   - Dropping the §8.1 conditional is left to AC; a suggested sentence is in the file.
 - Handoff 11 stays open for AC's decisions.
+
+## 2026-11-14 — Codex, gpt-6-astra medium — update after PR36 merge
+
+- AC: “pr36 merged, update this one”. Fast-forwarded to current topic `a045b8e9`, preserving the new ASV source-identification note, then merged main `3bedf04b` as `2a3e4042`. Rules unchanged; configured model/effort medium, serving metadata not independently exposed.
+- Resolved five shared-file append conflicts by retaining both PR35 and PR36 additions. [Integration record](main-update-pr36.md) and [checker receipt](audit-support/pr36-integration.json): 135 incoming paths accounted for, 130 exact main blobs, all additions in the five shared sections preserved, canonical result rows retained and no new duplicate label.
+- MZ manuscripts, scientific code/evidence and prepared archive bytes are unchanged. Existing readiness PASS remains applicable; no scientific rerun or new audit is needed. Allocation sources refreshed against new main and PR27 `fd82e593`; existing ranges are disjoint, union T719/N257/IDEA795/LIT745.
+- Remaining AC decisions and finalization instruction are unchanged; the following handoff updates only the base/context for the next session. Only AC merges.
 
 ## Runs needed
 
