@@ -759,7 +759,7 @@ For real $q$ let
  \Delta^4\upsilon(q)=3\upsilon(q)-2\upsilon(q+1)-2\upsilon(q-1)
  +\tfrac12\{\upsilon(q+2)+\upsilon(q-2)\}
 \end{equation}
-(one half of the centered fourth difference of $h$ with unit step). Then
+(one half of the centered fourth difference of $\upsilon$ with unit step). Then
 \[
  \int_0^\infty u\,g(u)\cos(qu)\dd u=\Delta^4\upsilon(q)\qquad(q\in\R).
 \]
@@ -861,8 +861,8 @@ Their denominators are independent of $b>0$, which gives
 \eqref{eq:padua-growth-bounds}.
 \end{proof}
 
-The limits $-16ab/9$ and $8ab/9$ of the unnormalized energies have suprema $1/9$
-and $1/36$ over the parameter domains $a+b<1/2$ and $2a+b<1/2$, approached on
+The limits $-16ab/9$ and $8ab/9$ of the unnormalized energies have infimum $-1/9$
+and supremum $1/36$, respectively, over the parameter domains $a+b<1/2$ and $2a+b<1/2$, approached on
 their closures. They are not Rayleigh quotients, since the carriers do not have
 unit norm.
 
@@ -1593,8 +1593,9 @@ at each displayed construction degree.
 \end{proposition}
 The displayed intervals bound trial Rayleigh quotients, not minimum
 eigenvalues. No first sign change is identified: the proposition says nothing
-about positivity at smaller degrees. The witness data are archived with the deposit
-(see the data and code availability statement; DOI to be added).
+about positivity at smaller degrees. The programs and the small certificate files
+are in the public repository; the witness coefficient arrays and exact norm files
+are not (see the data and code availability statement).
 
 \begin{proof}[Proof (computer-assisted)]
 The witness is
@@ -1633,8 +1634,10 @@ not enclosures and no proof uses them.
  Sommariva, Vianello and Zanovello \cite{SVZ08}. The exact marginal identity
  \eqref{eq:marginal} holds to within $8.73\cdot10^{-16}$ at $m=10,20,31$.
 \item[(2)] The minimum of the Gram spectrum on $\mathcal P_{m-1}$, at the
- following degrees (at $m=1600$ it lies in the interval of
- Proposition~\ref{prop:padua-finite-negative}):
+ following degrees (at $m=1600$ the computed minimum agrees, to the displayed
+ precision, with the certified trial quotient of
+ Proposition~\ref{prop:padua-finite-negative}; that proposition gives only an
+ upper bound for the true minimum):
 \begin{center}
 \begin{tabular}{rcc}\toprule
 $m$ & $\lambda^\Pa_-(m,m-1)$ & weight of the minimizer in mode~2\\\midrule
@@ -1707,7 +1710,8 @@ Clenshaw--Curtis rules on the square, are not covered by any statement in this p
 % Commit hash and Zenodo DOI: placeholders for AC (no deposit exists yet).
 Code and data are in the public repository
 \url{https://github.com/aacchhee/padua_research} at commit
-\texttt{[to be fixed at submission]}, archived as \texttt{[Zenodo DOI to be added]}.
+\texttt{[to be fixed at submission]}; an archived copy is planned
+(\texttt{[Zenodo DOI to be added]}).
 Paths are relative to the repository root. All results not listed below are
 proved analytically in this paper.
 
@@ -1735,8 +1739,9 @@ committed. In the files of the second program the enclosure of the energy is
 \texttt{q\_enclosure} field is rounded for display and must not be used. The witness
 arrays themselves are not in the repository: the three exact integer coefficient
 arrays $C_{ab}$ for $m=1101,1240,1600$ (compressed JSON files of about $4.2$,
-$5.4$ and $8.7$ MB) and the exact rational norm files are archived with the
-deposit.
+$5.4$ and $8.7$ MB) and the exact rational norm files, whose SHA-256 identities are
+recorded in the committed payload-identity file, are to be included in the planned
+archive; until then they are not publicly available.
 
 \emph{Propositions~\ref{prop:rectangles} and~\ref{prop:enclosure}} (enclosure of
 $\|B\|$). The checker is
@@ -2158,7 +2163,7 @@ $m^{-4}\sum_{k+l\le m-1}(k+\frac12)(l+\frac12)=m(m+1)(m^2+m+1)/(24m^4)<\frac18$
 for $m\ge4$. (The closed form follows by induction on $m$: the increment from
 $m-1$ to $m$ is $m(2m^2+1)/12$.) The entries of $G_\infty$ are at most
 $\int_{\mathcal T}ab=\frac1{24}$. Hence $\|G_m\|,\|G_\infty\|\le N_{\mathcal Z}/8$, and by
-\eqref{eq:gram-diff} $\delta:=\|G_m-G_\infty\|\le NC_U/m$.
+\eqref{eq:gram-diff} $\delta:=\|G_m-G_\infty\|\le N_{\mathcal Z}C_U/m$.
 For positive semidefinite matrices $Y_1,Y_2$ with $\|Y_1-Y_2\|=\delta$ we have
 $\|Y_1^{1/2}-Y_2^{1/2}\|\le\frac4\pi\sqrt\delta\le2\sqrt\delta$. Indeed
 $Y_1^{1/2}=\pi^{-1}\int_0^\infty t^{-1/2}Y_1(Y_1+t)^{-1}\dd t$ (the scalar integral after
@@ -2166,7 +2171,7 @@ diagonalization). The difference of the integrands has norm at most $t^{-1/2}$,
 since both $Y_1(Y_1+t)^{-1}$ and $Y_2(Y_2+t)^{-1}$ lie between $0$ and $I$, and, by the
 resolvent identity $Y_1(Y_1+t)^{-1}-Y_2(Y_2+t)^{-1}=t(Y_1+t)^{-1}(Y_1-Y_2)(Y_2+t)^{-1}$, at most
 $\delta t^{-3/2}$. Splitting the integral at $t=\delta$ gives the claim.
-So $\|G_m^{1/2}-G_\infty^{1/2}\|\le2\sqrt{NC_U/m}$, and telescoping
+So $\|G_m^{1/2}-G_\infty^{1/2}\|\le2\sqrt{N_{\mathcal Z}C_U/m}$, and telescoping
 $X_m-X_\infty$ with \eqref{eq:coeff-diff},
 \begin{align*}
  \|X_m-X_\infty\|&\le\|G_m\|\,\|C_m-C_\infty\|
@@ -2225,7 +2230,7 @@ $|\nu^K_\pm(m)-c_\pm(K)|\le \mathcal E_K(m)$. Combining this with
 $|c_\pm(K)-c_\pm|\le120/K$,
 \[
  \Bigl|\frac{\lambda^\Pa_\pm}{\log m}-c_\pm\Bigr|
- \le\frac{4300}{\log m}+\frac{120}K+E_K(m)+\frac{120}K.\qquad\qed
+ \le\frac{4300}{\log m}+\frac{120}K+\mathcal E_K(m)+\frac{120}K.\qquad\qed
 \]
 
 \paragraph{Proof of Remark~\ref{rem:two-corners}}

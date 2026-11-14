@@ -1,5 +1,7 @@
 # MZ-CC correspondence table (task 1; gate W1)
 
+> **Status of this file (2026-11-14, response to audit-01 F5).** The table immediately below is the **historical planning table** of 2026-11-13. It uses post-split numbering and planned locations, and its "now → target" column shows the state at that time. It is kept unchanged as a record. The **current mapping** is the *Frozen numbering* table at the end of this file (label → number) together with the scope table in [tracks/mz-constants/paper/README.md](../../tracks/mz-constants/paper/README.md) (frozen number → PD IDs → status → exact scope, verbatim/weakened). Every departure from a record's scope is listed in the *Changes log* below and in response-internal-cc.md.
+
 Every numbered statement that is, or will be, in MZ-CC. Status from `PROOF_STATUS.md` at `b5388c2` (unchanged on this branch). "Planned §" refers to [plan-cc.md](plan-cc.md). "In paper" is one of **verbatim** (statement equals the record's scope), **weakened** (explicitly weaker; reason given), **omitted** (reason given), or **to add** (not yet in the text). This table is updated whenever the text changes; the final state is checked before the final build.
 
 Rule (W1): every PROVED row is verbatim or explicitly weakened; no OPEN or MEASURED item appears as proved.

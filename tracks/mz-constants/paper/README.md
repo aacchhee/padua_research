@@ -87,7 +87,7 @@ Declined strengthening, recorded as a candidate and **not** in the paper: sup_N 
 
 ## Placeholders reserved for AC
 
-Authors and `\thanks`, keywords and MSC codes (suggested additions 41A05, 42C05), funding footnote, commit hash and Zenodo DOI in the data and code availability statement (no deposit exists; the text makes no deposit claim), AI declaration, ORCID, contributions. Before an arXiv upload, remove the `% IDs:` / `% Source:` TeX comments, three of which carry the provisional ID `PD-T?mz-paper-claude-01` (the comments are public in the TeX source). Confirm "252 (2027)" for LIT-045 and the editor and series data of LIT-052.
+Authors and `\thanks`, keywords and MSC codes (suggested additions 41A05, 42C05), funding footnote, commit hash and Zenodo DOI in the data and code availability statement (no deposit exists; after audit F1 the text says only that an archived copy is planned, and names the committed repository files), AI declaration, ORCID, contributions. Before an arXiv upload, remove the `% IDs:` / `% Source:` TeX comments, three of which carry the provisional ID `PD-T?mz-paper-claude-01` (the comments are public in the TeX source). Confirm "252 (2027)" for LIT-045 and the editor and series data of LIT-052.
 
 ## Records
 

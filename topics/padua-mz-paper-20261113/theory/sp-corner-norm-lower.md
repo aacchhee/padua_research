@@ -21,7 +21,7 @@ Exactly those of PD-T536, PD-T540, PD-T533 and PD-T379: the signed Lebesgue Padu
 
 ## Status by part
 
-Overall status: **PROVED** (developer: Claude; independent check PASS, [check-new-corollaries-02.md](../check-new-corollaries-02.md); flagged for the Codex audit).
+Overall status: **PROVED** (developer: Claude; independent check PASS, [check-new-corollaries-02.md](../check-new-corollaries-02.md); reconstructed in Codex audit-01).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
@@ -50,7 +50,7 @@ One-sided lower bounds only. No upper bound on ‖B‖ beyond PD-T542's 0.47781�
 
 ## Open items
 
-Independent check; Codex audit of the topic.
+None mathematical. Independent check: PASS ([check-new-corollaries-02.md](../check-new-corollaries-02.md)). Codex audit-01 (2026-11-14) reconstructed it and found no defect. A final ID is assigned at PR preparation.
 
 ## History
 

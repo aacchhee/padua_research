@@ -1500,15 +1500,14 @@ Clenshaw--Curtis rule with doubled weights, the corresponding endpoint
 problem behaves very differently; it is treated in the companion paper \cite{MZ-SP}.
 
 \paragraph{Data and code availability}
-% Commit hash and Zenodo DOI: placeholders for AC (no deposit exists yet).
-The code and data files supporting this paper are archived at
-\texttt{[Zenodo DOI to be added]}
-(repository \url{https://github.com/aacchhee/padua_research}, commit
-\texttt{[to be fixed at submission]}). The archive contains the exact trial
-vector of Appendix~\ref{app:certificate}, the interval-arithmetic program that
-produces the enclosures there, an independent exact-rational program that
-recomputes them, their output logs, and the script that computes
-Table~\ref{tab:cc}; a README lists the files. In the repository, the
+% Commit hash and Zenodo DOI: placeholders for AC (no deposit exists yet; F1 of the topic audit).
+The code and data files supporting this paper are in the public repository
+\url{https://github.com/aacchhee/padua_research} (commit
+\texttt{[to be fixed at submission]}): the exact trial vector of
+Appendix~\ref{app:certificate}, the interval-arithmetic program that produces
+the enclosures there, an independent exact-rational program that recomputes
+them, their output logs, and the script that computes Table~\ref{tab:cc}. An
+archived copy is planned (\texttt{[Zenodo DOI to be added]}). In the repository, the
 certificate programs are \path{code/P4_rayleigh.py} and
 \path{code/P4_check_grouped.py} under
 \path{topics/padua-mz-sharp-constants-20261106/}, and the table script is
@@ -2178,7 +2177,7 @@ By \eqref{eq:Lambda-edge}, for every nonzero $u\in\R^{\mathsf J}$,
  \Lambda_{\mathrm{edge}}\ge q(u):=\frac{u^T\mathsf Q_{\mathsf J}u}{u^T\mathsf M_{\mathsf J}u},\qquad
  \mathsf Q_{\mathsf J}=\operatorname{diag}(\omega_1,\dots,\omega_{\mathsf J})+4ss^T,
 \]
-with $\mathsf M_{\mathsf J}=(\mathsf M_{ij})_{i,j\le J}$ from Lemma~\ref{lem:closed-form} and
+with $\mathsf M_{\mathsf J}=(\mathsf M_{ij})_{i,j\le\mathsf J}$ from Lemma~\ref{lem:closed-form} and
 $s=(s_j)$. We take $\mathsf J=512$ and a vector $u$ of binary rationals, stored
 exactly as hexadecimal binary64 strings. It was selected by a floating-point
 generalized eigensolver; the selection plays no role in the proof, because
@@ -2234,13 +2233,13 @@ $q(u)$ only, not $\Lambda_{\mathrm{edge}}$.
 
 The trial vector, the enclosure program, a second program that assembles the
 quadratic forms independently in exact rational arithmetic (sharing the scalar
-enclosures), and their output logs are in the archive listed in the data
+enclosures), and their output logs are in the repository named in the data
 availability statement. Both programs pass the exact comparison with
 $10044369/10^7$, and their enclosures overlap; an independent re-run of the
 second program reproduces the verdict. The trusted base consists of the
 formulas of Lemma~\ref{lem:closed-form} and Section~\ref{sec:edge-max}, the
 scalar bounds above, exact integer and rational arithmetic, exact parsing of
-binary64 strings, and the archived code.
+binary64 strings, and the published code.
 
 \bibliographystyle{siamplain}
 \bibliography{refs}

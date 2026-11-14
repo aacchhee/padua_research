@@ -29,14 +29,14 @@ As in PD-T013, PD-T025, PD-T526, PD-T527, PD-T530 and PD-T546. Λ_edge is the va
 
 ## Status by part
 
-Overall status: **PROVED** (developer: Claude; independent checks PASS with corrections, applied; flagged for the Codex audit).
+Overall status: **PROVED** (developer: Claude; independent checks PASS with corrections, applied; reconstructed in Codex audit-01).
 
 | Mathematical part | Status | Evidence / remaining gap |
 |---|---|---|
-| (a) exact identity when λ_−≤1/3, and the limit π⁴/8 | PROVED | Proof below; independent check pending |
-| (b) condition-number limit | PROVED | Proof below; independent check pending |
-| (c) hyperinterpolation factor | PROVED | Proof below; independent check pending |
-| (d) interpolation-norm form | PROVED | Proof below; independent check PASS ([check-new-corollaries-02.md](../check-new-corollaries-02.md)) |
+| (a) exact identity when λ_−≤1/3, and the limit π⁴/8 | PROVED | Proof below; independent check PASS with corrections applied ([check-cc-defect-corollary.md](../check-cc-defect-corollary.md)); reconstructed in Codex audit-01 |
+| (b) condition-number limit | PROVED | Proof below; independent check PASS with corrections applied ([check-cc-defect-corollary.md](../check-cc-defect-corollary.md)); reconstructed in Codex audit-01 |
+| (c) hyperinterpolation factor | PROVED | Proof below; independent check PASS with corrections applied ([check-cc-defect-corollary.md](../check-cc-defect-corollary.md)); reconstructed in Codex audit-01 |
+| (d) interpolation-norm form | PROVED | Proof below; independent check PASS ([check-new-corollaries-02.md](../check-new-corollaries-02.md)); reconstructed in Codex audit-01 |
 
 ## Depends on
 
@@ -72,7 +72,7 @@ None beyond the repository results listed.
 
 ## Open items
 
-Independent check (subagent) and the Codex audit of the MZ paper topic.
+None mathematical. Independent checks: PASS (both check files). Codex audit-01 (2026-11-14) reconstructed parts (a)–(d) and found no defect. A final ID is assigned at PR preparation.
 
 ## History
 

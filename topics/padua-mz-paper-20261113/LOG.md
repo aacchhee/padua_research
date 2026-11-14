@@ -134,7 +134,14 @@
 - DOIs: BCDMVX06 10.1016/j.jat.2006.03.008 is confirmed from the DOI printed on the PDF. Xu96 is JAT 87, article no. 0102, consistent with 10.1006/jath.1996.0102.
 - The folder also holds the De Marchi survey "Padua points and 'fake' nodes" (CMA 5 (2022) 14–36). Its LIT coverage is "read in part", so it is not used here. report.md §5 updated.
 
+## 2026-11-14 — Claude, claude-opus-5-5 (configured xhigh) — response to audit-01
+
+- Rules `c0e57a9`; response input `303a564`. [Response 01](response-01.md) answers F1–F5 individually; all are accepted and fixed, as wording and metadata only. No theorem, proof, bound, status or evidence changed.
+- F1: present-tense archive claims replaced in both manuscripts and both READMEs. The files are in the public repository at the commit fixed at submission, and an archived copy is planned. The PD-T376 witness arrays and exact norm files are stated as not publicly available. **Unresolved, for AC:** retrieve the exact package and replay it, or decide the publication scope of Prop 8.2.
+- F2: the m=1600 parenthesis now says "agrees with the certified trial quotient; Prop 8.2 gives only an upper bound for the true minimum". F3: "infimum −1/9 and supremum 1/36". F4: four notation fixes. F5: historical-table notes in both correspondence files; the provisional theory records reconciled to PASS.
+- Rebuilds: CC 32 pp., SP 50 pp., zero warnings; frozen labels 104/104 and 56/56 unchanged.
+
 ## Runs needed
 
-- Reply to audit F1–F5 and rebuild after wording repairs; see the next open handoff.
+- PR preparation (final IDs, registries) and the Codex readiness check; see the open handoff.
 - A byte-pinned PD-T376 witness replay requires retrieval of the exact missing package named in report §6.2. No receipt alone supplies it; no archival delivery is claimed.

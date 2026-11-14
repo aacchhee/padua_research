@@ -83,7 +83,7 @@ Declined, recorded as a candidate and **not** in the paper: |λ^P_±(m,⌊τm⌋
 
 ## Placeholders reserved for AC
 
-Author names and affiliations, CRediT, declarations, `\date`, funding, commit hash and Zenodo DOI in the data and code availability section and after Prop 8.2 ("DOI to be added"; no deposit exists, no deposit claim is made), the MZ-CC arXiv identifier in `refs.bib`, MSC (47B38, 65G20 added; AC to confirm). The witness arrays of Prop 8.2 are in no repository: they belong to AC's Zenodo deposit. Before an arXiv upload, remove the `% IDs:` TeX comments (one carries the provisional ID `PD-T?mz-paper-claude-02`; all comments are public in the source). The DOIs of BCDMVX06 and Xu96 are to be resolver-checked by AC.
+Author names and affiliations, CRediT, declarations, `\date`, funding, commit hash and Zenodo DOI in the data and code availability section and with the archived copy "planned" (no deposit exists; after audit F1 the text no longer claims that anything is archived), the MZ-CC arXiv identifier in `refs.bib`, MSC (47B38, 65G20 added; AC to confirm). The witness arrays and exact norm files of Prop 8.2 are not publicly available. They are not in Git, no delivered copy was found, and the audit could not replay them. Before submission, AC must either retrieve the exact package (identities in report §6.2) so its committed checkers can be replayed and it can go into the planned Zenodo deposit, or decide the publication scope of Prop 8.2. Before an arXiv upload, remove the `% IDs:` TeX comments (one carries the provisional ID `PD-T?mz-paper-claude-02`; all comments are public in the source). The DOIs of BCDMVX06 and Xu96 are to be resolver-checked by AC.
 
 ## Records
 
