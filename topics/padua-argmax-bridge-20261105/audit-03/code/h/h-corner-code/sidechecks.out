@@ -1,0 +1,18 @@
+2 square: -4.59e-41  deform max ratio: 0.202642  H03(1)-row: 1.38e-40  H03(2)-row: 1.38e-40  H03(3) signed-sum resid: -7.35e-40
+3 square: -4.59e-41  deform max ratio: 0.191053  H03(1)-row: -4.59e-41  H03(2)-row: -2.76e-40  H03(3) signed-sum resid: -7.35e-40
+4 square: 0.0  deform max ratio: 0.184592  H03(1)-row: 0.0  H03(2)-row: -7.35e-40  H03(3) signed-sum resid: -1.91e-38
+5 square: 0.0  deform max ratio: 0.180598  H03(1)-row: 9.18e-41  H03(2)-row: -4.59e-40  H03(3) signed-sum resid: -4.56e-38
+6 square: 9.18e-41  deform max ratio: 0.177902  H03(1)-row: 9.18e-41  H03(2)-row: -7.35e-40  H03(3) signed-sum resid: -7.64e-38
+7 square: 2.76e-40  deform max ratio: 0.175965  H03(1)-row: 9.18e-41  H03(2)-row: -7.35e-40  H03(3) signed-sum resid: 2.64e-38
+8 square: -9.18e-41  deform max ratio: 0.174508  H03(1)-row: 9.18e-41  H03(2)-row: 1.56e-39  H03(3) signed-sum resid: 4.7e-37
+9 square: 0.0  deform max ratio: 0.173372  H03(1)-row: 1.84e-40  H03(2)-row: 2.2e-39  H03(3) signed-sum resid: 2.35e-37
+10 square: -1.84e-40  deform max ratio: 0.172463  H03(1)-row: -2.76e-40  H03(2)-row: -7.35e-40  H03(3) signed-sum resid: 9.76e-37
+11 square: 9.18e-41  deform max ratio: 0.171718  H03(1)-row: 1.84e-40  H03(2)-row: -1.38e-39  H03(3) signed-sum resid: 6.11e-37
+12 square: -1.84e-40  deform max ratio: 0.171097  H03(1)-row: 0.0  H03(2)-row: 2.76e-40  H03(3) signed-sum resid: -2.94e-37
+13 square: 2.76e-40  deform max ratio: 0.170571  H03(1)-row: -9.18e-41  H03(2)-row: -2.48e-39  H03(3) signed-sum resid: -2.13e-36
+14 square: 9.18e-41  deform max ratio: 0.17012  H03(1)-row: 1.84e-40  H03(2)-row: 1.84e-40  H03(3) signed-sum resid: 3.06e-37
+15 square: -4.59e-40  deform max ratio: 0.16973  H03(1)-row: -3.67e-40  H03(2)-row: -1.84e-38  H03(3) signed-sum resid: -6.76e-36
+24 square: -5.51e-40  deform max ratio: 0.167678  H03(1)-row: 0.0  H03(2)-row: 1.74e-38  H03(3) signed-sum resid: -9.03e-36
+31 square: 1.1e-39  deform max ratio: 0.166905  H03(1)-row: -9.18e-40  H03(2)-row: 2.41e-38  H03(3) signed-sum resid: 3.74e-35
+H04: sup|W'| ~ 1.5708  sup|W''| ~ 3.14159 (claimed <3, <5)
+H04: sup|B'| on [-1/4,5/4] ~ 0.986509  sup|B''| ~ 1.5912 (claimed <=3, <=5)

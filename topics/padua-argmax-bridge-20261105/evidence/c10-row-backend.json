@@ -1,0 +1,192 @@
+{
+  "scope": "MEASURED C10 backend validation and fixed point-cost pilot only",
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C10/partial.cpp",
+      "bytes": 7688,
+      "sha256": "209fa24300219884b97ce267e898b085593534d97ecc31640909c4c772061ac5"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C10/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C10/controls.cpp",
+      "bytes": 2015,
+      "sha256": "72a66e861a0c7bb2dbc7b9573f70e8c8b3a7e9eacfa55eec41959cfecb65c8c8"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C10/control.py",
+      "bytes": 4525,
+      "sha256": "ab3fdfbefba57c135ed4f9e11eb2dc4713b4733be42a61793d542d0d60dac127"
+    }
+  ],
+  "frozen_old_sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C07/point.cpp",
+      "bytes": 6568,
+      "sha256": "8913a96d79f7d687c201f5e38efa5cceec5a18bdc88ed0ada8f578056e7e575e"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C06/partial.cpp",
+      "bytes": 6804,
+      "sha256": "f381738049d793e81a93626bef11eeb1d2a0ff49d0027b6518dd3fec8ff0bcf0"
+    }
+  ],
+  "builder": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+    "bytes": 5703,
+    "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+  },
+  "raw_manifest": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c10-row-backend/check-3suvdexq/controls.json",
+    "bytes": 52214,
+    "sha256": "0065aa88259f1195a274d691a1f6898b8b9feafda6eaa26cc906239a6e1d4188"
+  },
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c10-row-backend/check-3suvdexq/libphase_checker.so",
+    "bytes": 141848,
+    "sha256": "538c7fa24ba72853a2579f9cbe6030a99c6184898d9c4e132ff2979ef281cfcd"
+  },
+  "partial_cases": [
+    {
+      "n": 2,
+      "q": 2,
+      "y": "0.5",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 1.1590152589422934e-24,
+      "old_radius": 1.1590152589422934e-24
+    },
+    {
+      "n": 3,
+      "q": 2,
+      "y": "1",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 2.2894128598329766e-25,
+      "old_radius": 2.2894128598329766e-25
+    },
+    {
+      "n": 7,
+      "q": 6,
+      "y": "1e-30",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 2.55420518252668e-17,
+      "old_radius": 2.55420518252668e-17
+    },
+    {
+      "n": 7,
+      "q": 1,
+      "y": "6.999999999999999999999999999999",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 12196974444544.0,
+      "old_radius": 12196974444544.0
+    },
+    {
+      "n": 33,
+      "q": 31,
+      "y": "0.5",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 2.423734671716399e-28,
+      "old_radius": 2.423734671716399e-28
+    },
+    {
+      "n": 33,
+      "q": 32,
+      "y": "0.25",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 2.5019196597918505e-28,
+      "old_radius": 2.5019196597918505e-28
+    },
+    {
+      "n": 64,
+      "q": 33,
+      "y": "0.5",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 1.8237830893664587e-29,
+      "old_radius": 1.8237830893664587e-29
+    },
+    {
+      "n": 64,
+      "q": 8,
+      "y": "[0.5 +/- 0.01]",
+      "rc": 0,
+      "contains_endpoint_hull": true,
+      "overlaps_old": true,
+      "new_radius": 0.9959157165139914,
+      "old_radius": 0.9959157165139914
+    }
+  ],
+  "exact_moment_checks": 784,
+  "profile": {
+    "old_cpu_seconds": 0.004001,
+    "new_cpu_seconds": 0.0,
+    "overlapping_moments": 98,
+    "input": "n128 q96 y1/2; one call each"
+  },
+  "points": [
+    {
+      "n": 32,
+      "alpha_pi": "1/12",
+      "beta_pi": "1/16",
+      "rc": 0,
+      "cpu_seconds": 0.16194099999999967,
+      "wall_seconds": 0.1620977540005697,
+      "lower": 10.837661142251891,
+      "upper": 10.837661142251893,
+      "radius": 5.318598735445192e-29,
+      "counts": [
+        128,
+        0,
+        140,
+        0,
+        4,
+        62
+      ]
+    },
+    {
+      "n": 128,
+      "alpha_pi": "1/12",
+      "beta_pi": "1/16",
+      "rc": 0,
+      "cpu_seconds": 0.6877249999999999,
+      "wall_seconds": 0.6882362010001088,
+      "lower": 17.060896841022608,
+      "upper": 17.06089684102261,
+      "radius": 3.238262516276731e-31,
+      "counts": [
+        512,
+        0,
+        588,
+        0,
+        6,
+        254
+      ]
+    }
+  ],
+  "total_cpu_seconds": 3.4197980000000006,
+  "total_wall_seconds": 3.4221522959996946,
+  "closure_entries": {
+    "headers": 203,
+    "toolchain": 4,
+    "toolchain_dependency_closure": 13,
+    "linked_dependency_closure": 8,
+    "actual_loaded_before": 8,
+    "actual_loaded_after": 8
+  },
+  "result": "PASS"
+}

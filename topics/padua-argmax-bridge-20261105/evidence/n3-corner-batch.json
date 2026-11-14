@@ -1,0 +1,91 @@
+{
+  "schema": "n3-corner-batch-producer-v1",
+  "rules_input_sha": "c000899f3fb10d6ba0f1725341a045fe11ec943a",
+  "status": "COMPLETE PRODUCER; independent range replay PENDING",
+  "claim_status": "CONDITIONAL pending distinct exact/outward range reconstruction",
+  "input_range": {
+    "first": 2,
+    "last": 128,
+    "step": 1,
+    "count": 127
+  },
+  "predeclared_common_kappa": "1/16000",
+  "scaled_phase_square_radius": "1/128",
+  "precision_bits": 256,
+  "total_child_cpu_cap_seconds": 1200,
+  "counters": {
+    "requested": 127,
+    "attempted": 127,
+    "completed": 127,
+    "passed_common_target": 127,
+    "failed_common_target": 0,
+    "arithmetic_or_process_errors": 0,
+    "unrun": 0,
+    "nonzero_cardinals": 362045,
+    "zero_cardinals_omitted": 4096
+  },
+  "all_ran_and_passed": true,
+  "failure": null,
+  "minimum_producer_kappa": "62766754903414500520426082384448017989234458937242388271583814704618996507603/773946533566206611330731790179898724566627752992312031830103344190218641261072962",
+  "minimum_degree": 128,
+  "minimum_kappa_decimal_diagnostic": 8.10996007879208e-05,
+  "total_child_cpu_seconds_diagnostic": 5.246695,
+  "summed_native_cpu_seconds_diagnostic": 4.758418000000001,
+  "wall_seconds_diagnostic": 5.360594814000251,
+  "source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_corner_bounds.c",
+    "sha256": "a0497ca1219850e28f2bf51e72cb4fc8f78cde238b81fd678262d646511402bd",
+    "bytes": 9519
+  },
+  "wrapper": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_corner_batch.py",
+    "sha256": "24bb25e239eca33e4625172e79b2aa5823ed378abb8e370735ae86f8703970a0",
+    "bytes": 8985
+  },
+  "binary": {
+    "path": "local-output/argmax-bridge-20261105/N3-corner-batch/r01/n3_corner_bounds",
+    "sha256": "a0a6225e0b2c16c11fc7dd4b4a8312ee8671ebad33cf24428271e2a7a3f10a91",
+    "bytes": 30984
+  },
+  "official_mpfr_header": {
+    "path": "local-output/argmax-bridge-20261105/N3/runtime/extracted/usr/include/mpfr.h",
+    "sha256": "588c2bd606cba060afb49cd024f9119e996089a341a99d1dc7e0367622335a13",
+    "bytes": 57588
+  },
+  "build_command": [
+    "cc",
+    "-O2",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-I",
+    "local-output/argmax-bridge-20261105/N3/runtime/extracted/usr/include",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_corner_bounds.c",
+    "-Wl,-l:libmpfr.so.6",
+    "-lgmp",
+    "-o",
+    "local-output/argmax-bridge-20261105/N3-corner-batch/r01/n3_corner_bounds"
+  ],
+  "producer_argv_template": [
+    "local-output/argmax-bridge-20261105/N3-corner-batch/r01/n3_corner_bounds",
+    "{n=2..128}",
+    "256"
+  ],
+  "runtime_versions": {
+    "gmp_version": "6.3.0",
+    "mpfr_version": "4.2.2"
+  },
+  "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "bulk_raw_output": {
+    "path": "local-output/argmax-bridge-20261105/N3-corner-batch/r01/corner-bounds-n2-128.jsonl",
+    "sha256": "58d3586adae81360b296740c984e122affab08514e1e3e0481803b26a5404d2f",
+    "bytes": 235648
+  },
+  "developer_checks": "exact rational assembly, complete integer input iteration, mask counts, n2 mass3/energy331/18 control, common-kappa and phase-square predicates",
+  "independent_replay": "PENDING; reconstruct from integer range and fixed threshold with distinct arithmetic, not bulk endpoint replay",
+  "storage": "Full per-degree endpoints local only; short aggregate receipt only in Git",
+  "model": "Codex parent-assigned gpt-6.1-sol xhigh; serving metadata unexposed"
+}

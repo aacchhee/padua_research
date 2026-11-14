@@ -1,0 +1,30 @@
+{
+  "SPEC_sha256": "1628eef03203e17c141ab2a901ce7b384cd8caab4c7d19c75de1d14a325fb031",
+  "all_retained_theta_valid": true,
+  "author_controls_calls": 0,
+  "canonical_required_keys": 41,
+  "cpu_through_pre_serialization": 0.046707,
+  "frozen_author_manifest_sha256": "c25384c68de1691de2342d1d012c3f0d08e99458dfffa3652dfe36befed607bc",
+  "full_orbit_keys_match": true,
+  "leaves": 31,
+  "native_calls": 0,
+  "nodes": 61,
+  "origin_present": true,
+  "outside_leaves": 2,
+  "primary_lock_consumed": false,
+  "retained_leaves": 29,
+  "source_sha256": "954b5506cc08b2da5417a392d64a15ccd87878b07d89ec64e3ccd133ccb4988e",
+  "status": "PASS_METADATA_SYNTHETIC_ONLY",
+  "synthetic_final_limit": {
+    "absolute_self_CPU_hard": 586,
+    "additional_reaped": [],
+    "integer_enforcement_reserve_CPU": 1,
+    "no_live_children": true,
+    "scope": "No subsequent children; waited-child CPU fixed. Absolute self limit bounds final serialization/write/return.",
+    "self_CPU_at_tightening": 1.25,
+    "waited_child_CPU": 12.75
+  },
+  "tangent_leaves": 2,
+  "utc": "2026-11-06T20:37:27Z",
+  "whole_process_CPU_cap": 2
+}

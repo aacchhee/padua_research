@@ -1,0 +1,17 @@
+{
+ "cmd": [
+  "python3",
+  "topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+  "topics/padua-argmax-bridge-20261105/evidence/n37.json.gz",
+  "--binary",
+  "/tmp/claude-0/-home-user-padua-research/8833296e-cd9e-51d7-9205-e1ddfbc5960f/scratchpad/audit/assembly-run/kernel",
+  "--output",
+  "/tmp/claude-0/-home-user-padua-research/8833296e-cd9e-51d7-9205-e1ddfbc5960f/scratchpad/audit/assembly-run/replay-n37.json"
+ ],
+ "exit": 0,
+ "stdout": "{\"accepted\": true, \"all_supplied_bounds_verified\": true, \"binary_sha256\": \"e596d4318713da76e2a145ee90e7e7ab3614ab0378b3a8b9828395948d17d9c7\", \"certificate_sha256\": \"425fb779e3d476efe221f6d1bef118cb1752fa9f538a46110b7ea2b44f2cefae\", \"checker_sha256\": \"b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e\", \"complete_partition\": true, \"counts\": {\"bound\": 316, \"corner\": 2, \"splits\": 317}, \"format\": \"padua-native-independent-check-v1\", \"kernel_sha256\": \"b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0\", \"n\": 37, \"seconds\": 840.651054235}\n",
+ "stderr": "",
+ "cpu_user": 815.525378,
+ "cpu_sys": 18.069366,
+ "wall": 840.708998649
+}

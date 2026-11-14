@@ -1,0 +1,198 @@
+{
+  "schema": "n3-bootstrap-energy-v1",
+  "rules_input_sha": "88e702321cd5d9c3395a551fc8a55a2f7cb8bc10",
+  "status": "COMPLETE_PRODUCER",
+  "claim_status": "CONDITIONAL pending distinct fresh GMP reconstruction for the new threshold",
+  "target": "For each integer2<=n<=128: 4E<=3*n^4*ell, hence W_n<=(3/4)*n^4*Lambda_c",
+  "command": [
+    "python",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_bootstrap_energy.py",
+    "--output-dir",
+    "local-output/argmax-bridge-20261105/N3-bootstrap/r01",
+    "--mpfr-include",
+    "local-output/argmax-bridge-20261105/N3/runtime/extracted/usr/include",
+    "--receipt",
+    "topics/padua-argmax-bridge-20261105/evidence/n3-bootstrap-energy.json"
+  ],
+  "range": {
+    "first": 2,
+    "last": 128,
+    "step": 1,
+    "count": 127
+  },
+  "precision_bits": 256,
+  "total_child_cpu_cap_seconds": 1200,
+  "counters": {
+    "requested": 127,
+    "attempted": 127,
+    "completed": 127,
+    "passed_new_threshold": 127,
+    "failed_new_threshold": 0,
+    "arithmetic_or_process_errors": 0,
+    "unrun": 0,
+    "nonzero_cardinals": 362045,
+    "zero_cardinals_omitted": 4096
+  },
+  "all_ran_and_passed": true,
+  "failure": null,
+  "old_endpoint_countertests": [
+    {
+      "input": {
+        "path": "local-output/argmax-bridge-20261105/N3-corner-batch/r01/corner-bounds-n2-128.jsonl",
+        "bytes": 235648,
+        "sha256": "58d3586adae81360b296740c984e122affab08514e1e3e0481803b26a5404d2f"
+      },
+      "status": "EXACT_ENDPOINT_COUNTERTEST_PASS",
+      "count": 127,
+      "maximum_normalized_energy_upper": "66540245724916077578475687565756419269847855771401088015729965810102857484127/173688133855974293135356477513031861779904976998460846059186376011869694459888",
+      "maximum_degree": 2,
+      "gap_below_three_quarters": "63725854667064642273041670569017477065080876977444546528659816198799413360789/173688133855974293135356477513031861779904976998460846059186376011869694459888",
+      "scope": "Old identified endpoints only; not fresh independent acceptance of the new threshold"
+    },
+    {
+      "input": {
+        "path": "local-output/argmax-bridge-20261105/check-corner-range/own-n2-128.jsonl",
+        "bytes": 363463,
+        "sha256": "47f3d233b5fd7bc46dca8c45a0de2ecc09be4d36988ab83b16f87c44a843bd20"
+      },
+      "status": "EXACT_ENDPOINT_COUNTERTEST_PASS",
+      "count": 127,
+      "maximum_normalized_energy_upper": "123277345133638878887750063177948196338768613517113394667402745496441774832065112481150566463701250960150015140547968967572014866965397629229709383917075771/321787390318622330389776599956940307059504779694217441065365474649322336721765127443244983156005682264560764596475665220490093187486717678714407576146015224",
+      "maximum_degree": 2,
+      "gap_below_three_quarters": "118063197605327868904582386789757033955859971253549686131621360490549977709258733101283170903303010738270558306808779947795555023649640629806096298192435647/321787390318622330389776599956940307059504779694217441065365474649322336721765127443244983156005682264560764596475665220490093187486717678714407576146015224",
+      "scope": "Old identified endpoints only; not fresh independent acceptance of the new threshold"
+    }
+  ],
+  "maximum_producer_normalized_energy_upper": "66540245724916077578475687565756419269847855771401088015729965810102857484127/173688133855974293135356477513031861779904976998460846059186376011869694459888",
+  "maximum_degree": 2,
+  "gap_below_three_quarters": "63725854667064642273041670569017477065080876977444546528659816198799413360789/173688133855974293135356477513031861779904976998460846059186376011869694459888",
+  "maximum_decimal_diagnostic": 0.38310185185185186,
+  "exact_n2_controls": {
+    "corner": "3",
+    "energy": "331/18"
+  },
+  "total_child_cpu_seconds": 5.048074,
+  "summed_native_cpu_seconds_diagnostic": 4.4683470000000005,
+  "wall_seconds": 5.229232865000085,
+  "start_utc": "2026-11-06T07:43:56.452006+00:00",
+  "stop_utc": "2026-11-06T07:44:01.681216+00:00",
+  "wrapper": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/n3_bootstrap_energy.py",
+    "bytes": 13788,
+    "sha256": "5680d6b1688114a423cb4c692f2e253216d9e0ab40ef9bf2b0df94c986bb5587"
+  },
+  "frozen_inputs": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_corner_bounds.c",
+      "bytes": 9519,
+      "sha256": "a0497ca1219850e28f2bf51e72cb4fc8f78cde238b81fd678262d646511402bd"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp",
+      "bytes": 5725,
+      "sha256": "3646f4e8b6b16957b9e1114f95ad2f0a7c18eec4687b49d5e6f1947a25eea6e3"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-corner-batch.json",
+      "bytes": 3601,
+      "sha256": "97e20cc877ad5afd0c9dfe96c1e399a42d820b38c18626e2b69bfa54f6acfc88"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/independent-corner-range.json",
+      "bytes": 6262,
+      "sha256": "e685674c028bc99e42d547e8b84a2ce5a7e7e67c3cc69f6c29a55ecbcffd23c0"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3-corner-batch/r01/corner-bounds-n2-128.jsonl",
+      "bytes": 235648,
+      "sha256": "58d3586adae81360b296740c984e122affab08514e1e3e0481803b26a5404d2f"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/check-corner-range/own-n2-128.jsonl",
+      "bytes": 363463,
+      "sha256": "47f3d233b5fd7bc46dca8c45a0de2ecc09be4d36988ab83b16f87c44a843bd20"
+    }
+  ],
+  "official_mpfr_header": {
+    "path": "local-output/argmax-bridge-20261105/N3/runtime/extracted/usr/include/mpfr.h",
+    "bytes": 57588,
+    "sha256": "588c2bd606cba060afb49cd024f9119e996089a341a99d1dc7e0367622335a13"
+  },
+  "compiled_source": {
+    "path": "local-output/argmax-bridge-20261105/N3-bootstrap/r01/n3_corner_bounds.c",
+    "bytes": 9519,
+    "sha256": "a0497ca1219850e28f2bf51e72cb4fc8f78cde238b81fd678262d646511402bd"
+  },
+  "binary": {
+    "path": "local-output/argmax-bridge-20261105/N3-bootstrap/r01/n3_corner_bounds",
+    "bytes": 30984,
+    "sha256": "a0a6225e0b2c16c11fc7dd4b4a8312ee8671ebad33cf24428271e2a7a3f10a91"
+  },
+  "compiler_binary": {
+    "path": "/usr/bin/x86_64-linux-gnu-gcc-14",
+    "bytes": 1162264,
+    "sha256": "a23ecab8ff08f09ad8c80602c2c5df7f49e09c25905cb8975902e101bf72635f"
+  },
+  "build_command": [
+    "cc",
+    "-O2",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-I",
+    "local-output/argmax-bridge-20261105/N3/runtime/extracted/usr/include",
+    "local-output/argmax-bridge-20261105/N3-bootstrap/r01/n3_corner_bounds.c",
+    "-Wl,-l:libmpfr.so.6",
+    "-lgmp",
+    "-o",
+    "local-output/argmax-bridge-20261105/N3-bootstrap/r01/n3_corner_bounds"
+  ],
+  "producer_argv_template": [
+    "local-output/argmax-bridge-20261105/N3-bootstrap/r01/n3_corner_bounds",
+    "{n=2..128}",
+    "256"
+  ],
+  "runtime_versions": {
+    "gmp_version": "6.3.0",
+    "mpfr_version": "4.2.2"
+  },
+  "linked_runtime_libraries": [
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libmpfr.so.6.2.2",
+      "bytes": 794992,
+      "sha256": "4e3ccf5b442fc91054b0153140fe62939009f98ca1367f45de62376d5b18d28c"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0",
+      "bytes": 566080,
+      "sha256": "d15e1585c6c267296459570c8ac217ca9123044bcd4e896d2f686b32333445d2"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/libc.so.6",
+      "bytes": 1995216,
+      "sha256": "9792e3cbb541c8f44c7acf5f14f4022ea62998ecc787d326bed4d8b6547dfd92"
+    },
+    {
+      "path": "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+      "bytes": 225672,
+      "sha256": "c8438e4fde1934e61c88311633f00949ff645d5c04cdb8671fa3d78164d2f307"
+    }
+  ],
+  "build_runtime_output": {
+    "path": "local-output/argmax-bridge-20261105/N3-bootstrap/r01/build-runtime.json",
+    "bytes": 1463,
+    "sha256": "446f7c5f149975c4ff5081e9de78b201371b2b0266f0c43c14a683de64e7ca3d"
+  },
+  "bulk_raw_output": {
+    "path": "local-output/argmax-bridge-20261105/N3-bootstrap/r01/bootstrap-energy-n2-128.jsonl",
+    "bytes": 326594,
+    "sha256": "07cc4aa04ea6e2a5f2b2f7b654d2dc2968012ccf73cec3b9e781b620478155e0"
+  },
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "independent_new_threshold_reconstruction": "PENDING; old kappa replay does not discharge it",
+  "scope": "Finite energy helper only; no all-n energy, pointwise patch predicate, global degree, phase rerun or cost-law claim",
+  "storage": "Original per-degree stdout/CPU/hash/count/margin retained in local JSONL; only this aggregate receipt essential",
+  "model": "Codex developer, parent allocation inherited; serving model/effort metadata unexposed"
+}

@@ -1,0 +1,323 @@
+{
+  "scope": "exact two local fresh native verify calls; original120CPU/pass and native/stage limits; outer wrapper did not apply server2GiB AS or260CPU; no primary or rescue/retry",
+  "results": [
+    {
+      "n": 199,
+      "exit": {
+        "n": 199,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-E",
+          "-S",
+          "-B",
+          "/workspace/padua_research/local-output/argmax-bridge-20261105/compact-release-aea62883/padua30/topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py",
+          "--mode",
+          "verify",
+          "--n",
+          "199",
+          "--output",
+          "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/verify-n199",
+          "--run-once",
+          "--certificate",
+          "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/primary-n199.json"
+        ],
+        "observed_returncode": 0,
+        "SIGCHLD": "SIG_DFL",
+        "ECHILD": true,
+        "cleanup_killed": [],
+        "wall_seconds": 10.16306461399654,
+        "first_failure": null
+      },
+      "account": {
+        "result": "FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW",
+        "first_failure": null,
+        "total_CPU_through_summary": 10.162177999999999,
+        "complete": true,
+        "engine_config": {
+          "n": 199,
+          "mode": "verify",
+          "output": "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/verify-n199",
+          "certificate": "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/primary-n199.json",
+          "certificate_identity": {
+            "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/primary-n199.json",
+            "bytes": 5680,
+            "sha256": "4e58080f60980a94c485e0d8a25558ed2997f38d35ccdb7718533c66ca9becfd"
+          }
+        },
+        "final_self_limit": {
+          "waited_child_CPU": 9.788376,
+          "self_CPU_at_tightening": 0.364249,
+          "absolute_self_CPU_hard": 109,
+          "integer_enforcement_reserve_CPU": 1,
+          "additional_reaped": [],
+          "no_live_children": true,
+          "scope": "No subsequent children; waited-child CPU fixed. Absolute self limit bounds final serialization/write/return."
+        },
+        "hard_aggregate_cap": 120,
+        "execution_role": "FINAL HYBRID single-degree produce or independent fresh retained-point verification; execution agent records actual identity separately",
+        "scope": "After persisted provisional evidence/summary and freeze checks; final serialization/write/return bounded by tightened absolute self hard limit. Observed EXIT0 additionally required."
+      },
+      "verification": {
+        "n": 199,
+        "nodes": 51,
+        "leaves": 26,
+        "S_premises": 45,
+        "norm_method": "GRID",
+        "M": "24",
+        "R_tree": null,
+        "L": "1386106313058861/70368744177664",
+        "leaf_counts": {
+          "NEAR": 6,
+          "FAR": 17,
+          "ANALYTIC_FAR": 3
+        },
+        "minimum_strict_margins": {
+          "NEAR": "55619284613275443347772411/16212391157921639248691200000",
+          "FAR": "12786314120069883/8620171161763840000",
+          "ANALYTIC_FAR": "3/100"
+        },
+        "minimum_used_floor": "162289370858111/4814721260800000",
+        "corner": {
+          "u_prime": "1/32",
+          "v_prime": "9/512",
+          "losses": [
+            "153057631880329/70368744177664",
+            "87632614564619/70368744177664",
+            "958327171311633/281474976710656"
+          ],
+          "q": "153057631880329/2199023255552",
+          "threshold": "29282/2401",
+          "gap": "303099575175596265/5279854836580352",
+          "radial_squared_coefficient_lower": "2504955166740465/862017116176384"
+        },
+        "floor": {
+          "tier": "accepted C02: max(1/32,min(1/20,B_n(r_B)))",
+          "domain": "actual noncorner signed rho<=r_B<=1/2 only"
+        },
+        "analytic_far": {
+          "kind": "ANALYTIC_E15_192",
+          "minimum_degree": 192,
+          "closed_normalized_guard": "abs(alpha/pi)+abs(beta/pi)>=1/2",
+          "primitive_gap": "3/100",
+          "comparison": "S_n<true Lambda_c-3/100; physical lambda<=S_n",
+          "dependencies": [
+            "E15 general E09 u-majorant",
+            "E08 full-phase absolute and one-sided origin",
+            "E07 Hmax/E06 map",
+            "computer-assisted PD-T271",
+            "D32 physical signed chart"
+          ]
+        }
+      },
+      "artifacts": {
+        "essential-receipt.json": {
+          "bytes": 5801,
+          "sha256": "2bc59c54cabc399244403705fe68ac6d78f7db8bc49d7a7134f71a8d58b445fa"
+        },
+        "final-accounting.json": {
+          "bytes": 1481,
+          "sha256": "05d4940c91111a561d3e24e275fd49c5f667939c1f1609aa02d663b79d707ced"
+        },
+        "raw-evidence.json": {
+          "bytes": 158392,
+          "sha256": "0ea31da950c58e36de667e39df248efdeabdb8f1b462af782f93a7ca3af4dc38"
+        },
+        "original-certificate.json": {
+          "bytes": 5680,
+          "sha256": "4e58080f60980a94c485e0d8a25558ed2997f38d35ccdb7718533c66ca9becfd"
+        }
+      },
+      "S_calls": 45,
+      "lambda_calls": 3,
+      "stages": [
+        {
+          "stage": "controls",
+          "returncode": 0,
+          "stop": null,
+          "accounting_complete": true,
+          "inclusive_CPU_with_supervision": 0.07034199999999999,
+          "complete": true,
+          "checkpoint": {
+            "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/verify-n199/controls-checkpoint.json",
+            "bytes": 859,
+            "sha256": "0b54acd717a786f66e4c24edc4a61669fe05ab96c65a812ea31f07a33fcbd628"
+          },
+          "first_failure": null
+        },
+        {
+          "stage": "checker",
+          "returncode": 0,
+          "stop": null,
+          "accounting_complete": true,
+          "inclusive_CPU_with_supervision": 10.03355,
+          "complete": true,
+          "checkpoint": {
+            "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/verify-n199/checker-checkpoint.json",
+            "bytes": 50960,
+            "sha256": "f06c77381f86823ae12586255228397a74e08481e62bcc95e87b035f22b5c4be"
+          },
+          "first_failure": null
+        }
+      ]
+    },
+    {
+      "n": 238,
+      "exit": {
+        "n": 238,
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-E",
+          "-S",
+          "-B",
+          "/workspace/padua_research/local-output/argmax-bridge-20261105/compact-release-aea62883/padua30/topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/engine.py",
+          "--mode",
+          "verify",
+          "--n",
+          "238",
+          "--output",
+          "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/verify-n238",
+          "--run-once",
+          "--certificate",
+          "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/primary-n238.json"
+        ],
+        "observed_returncode": 0,
+        "SIGCHLD": "SIG_DFL",
+        "ECHILD": true,
+        "cleanup_killed": [],
+        "wall_seconds": 11.763267012007418,
+        "first_failure": null
+      },
+      "account": {
+        "result": "FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW",
+        "first_failure": null,
+        "total_CPU_through_summary": 11.856834,
+        "complete": true,
+        "engine_config": {
+          "n": 238,
+          "mode": "verify",
+          "output": "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/verify-n238",
+          "certificate": "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/primary-n238.json",
+          "certificate_identity": {
+            "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/primary-n238.json",
+            "bytes": 5681,
+            "sha256": "52f26a6ff367112122acb5acfd0f0e00b5f061c8a1849cc69383bbf4b2e53043"
+          }
+        },
+        "final_self_limit": {
+          "waited_child_CPU": 11.3803,
+          "self_CPU_at_tightening": 0.466765,
+          "absolute_self_CPU_hard": 107,
+          "integer_enforcement_reserve_CPU": 1,
+          "additional_reaped": [],
+          "no_live_children": true,
+          "scope": "No subsequent children; waited-child CPU fixed. Absolute self limit bounds final serialization/write/return."
+        },
+        "hard_aggregate_cap": 120,
+        "execution_role": "FINAL HYBRID single-degree produce or independent fresh retained-point verification; execution agent records actual identity separately",
+        "scope": "After persisted provisional evidence/summary and freeze checks; final serialization/write/return bounded by tightened absolute self hard limit. Observed EXIT0 additionally required."
+      },
+      "verification": {
+        "n": 238,
+        "nodes": 51,
+        "leaves": 26,
+        "S_premises": 45,
+        "norm_method": "GRID",
+        "M": "25",
+        "R_tree": null,
+        "L": "2912814225659673/140737488355328",
+        "leaf_counts": {
+          "NEAR": 6,
+          "FAR": 17,
+          "ANALYTIC_FAR": 3
+        },
+        "minimum_strict_margins": {
+          "NEAR": "4151924067275706182332495537437/662308976131480605650478694400000",
+          "FAR": "2285731366052180443/787828475089779687424",
+          "ANALYTIC_FAR": "3/100"
+        },
+        "minimum_used_floor": "8588867239753/245957958400000",
+        "corner": {
+          "u_prime": "1/32",
+          "v_prime": "9/512",
+          "losses": [
+            "324286493025965/140737488355328",
+            "46423299899561/35184372088832",
+            "507696106597719/140737488355328"
+          ],
+          "q": "324286493025965/4398046511104",
+          "threshold": "366025/28812",
+          "gap": "1933386865709315495/31679129019482112",
+          "radial_squared_coefficient_lower": "1933386865709315495/625824426344054784"
+        },
+        "floor": {
+          "tier": "accepted C02: max(1/32,min(1/20,B_n(r_B)))",
+          "domain": "actual noncorner signed rho<=r_B<=1/2 only"
+        },
+        "analytic_far": {
+          "kind": "ANALYTIC_E15_192",
+          "minimum_degree": 192,
+          "closed_normalized_guard": "abs(alpha/pi)+abs(beta/pi)>=1/2",
+          "primitive_gap": "3/100",
+          "comparison": "S_n<true Lambda_c-3/100; physical lambda<=S_n",
+          "dependencies": [
+            "E15 general E09 u-majorant",
+            "E08 full-phase absolute and one-sided origin",
+            "E07 Hmax/E06 map",
+            "computer-assisted PD-T271",
+            "D32 physical signed chart"
+          ]
+        }
+      },
+      "artifacts": {
+        "essential-receipt.json": {
+          "bytes": 5812,
+          "sha256": "de740bcb43442864fad9eab033d3948367a9f1212e30433a9b6e1565a542c198"
+        },
+        "final-accounting.json": {
+          "bytes": 1471,
+          "sha256": "3f0629673644dfdda0de901b5212732a7cb8a9b296de80a4f35f46fd6e8c5c8f"
+        },
+        "raw-evidence.json": {
+          "bytes": 158460,
+          "sha256": "63416714d9b7dac4859bc501872c277d5ad5dc000b5fd66f1f16495546ad4dde"
+        },
+        "original-certificate.json": {
+          "bytes": 5681,
+          "sha256": "52f26a6ff367112122acb5acfd0f0e00b5f061c8a1849cc69383bbf4b2e53043"
+        }
+      },
+      "S_calls": 45,
+      "lambda_calls": 3,
+      "stages": [
+        {
+          "stage": "controls",
+          "returncode": 0,
+          "stop": null,
+          "accounting_complete": true,
+          "inclusive_CPU_with_supervision": 0.066526,
+          "complete": true,
+          "checkpoint": {
+            "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/verify-n238/controls-checkpoint.json",
+            "bytes": 847,
+            "sha256": "6d6ea4cf30b830e658a87fbf89174f4ffc5c5f3c088059bffec874dc042cc647"
+          },
+          "first_failure": null
+        },
+        {
+          "stage": "checker",
+          "returncode": 0,
+          "stop": null,
+          "accounting_complete": true,
+          "inclusive_CPU_with_supervision": 11.72993,
+          "complete": true,
+          "checkpoint": {
+            "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/actual-return-20261107/verify-n238/checker-checkpoint.json",
+            "bytes": 51050,
+            "sha256": "7054210caf55131c1d821b06061f1c147afaa3fd10822701212e5410c92e6f8a"
+          },
+          "first_failure": null
+        }
+      ]
+    }
+  ]
+}

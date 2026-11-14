@@ -1,0 +1,220 @@
+{
+  "format": "paper-regeneration-native-execution-v1",
+  "status": "EXECUTED FINITE EVIDENCE; independent I25 and audit adoption separate",
+  "rules_input_head": "cc2f9ad10c2b5baf29af1887e681b851e9e9dc60",
+  "native_preregistration_freeze_commit": "b918c1d5bedba60e8255d7d2b985dd6c70f4690a",
+  "campaign_id": "padua-argmax-paper-regeneration-20261114",
+  "degrees": {
+    "first": 320,
+    "last": 510,
+    "count": 191
+  },
+  "native_passes": 382,
+  "native_failures": 0,
+  "native_retries": 0,
+  "preregistration": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regeneration-20261114/preregistration.json",
+    "bytes": 52392,
+    "sha256": "1d6a496783496af9ae4d6c5fa4ffd4b090b04cd3ccb92e6ee7df47a1079815c0"
+  },
+  "runner": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/local_onset512_campaign/runner.py",
+    "bytes": 12283,
+    "sha256": "a198b65182590be13cb91110ff976d90e7e885c778180e59699fbe9b067ccdad"
+  },
+  "campaign_wrapper": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/regeneration_20261114/campaign.py",
+    "bytes": 5428,
+    "sha256": "d715d658063b0c3fbc83271945eba8fee103b8d9d557282206c5330ba5a70a4a"
+  },
+  "frozen_engine": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/FREEZE.json",
+    "bytes": 4153,
+    "sha256": "0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb"
+  },
+  "controls": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regeneration-20261114-controls/controls.json",
+    "bytes": 44840,
+    "sha256": "6c59f764a60d565571b7971f32ab6e783ddb1b62a8fec3961e3fb1c065c43620"
+  },
+  "caps": {
+    "pass_cpu": 120,
+    "pass_wall": 1050,
+    "case_cpu": 260,
+    "case_AS": 2147483648
+  },
+  "native_observed": {
+    "primary_fresh_fields_equal": true,
+    "all_full_validate_pass_accepted": true,
+    "all_observed_returncode_zero": true,
+    "all_ECHILD": true,
+    "all_cleanup_empty": true,
+    "stages_quiescent": true,
+    "all_unstarted_empty": true,
+    "native_child_CPU_seconds": 2918.823368,
+    "wrapper_inclusive_CPU_seconds": 3050.723502,
+    "pilot_wall_seconds": 13.034295360001124,
+    "remaining_wall_seconds": 807.0732377210006,
+    "max_pass_wall_seconds": 9.919799292001699,
+    "max_pass_child_CPU_seconds": 9.535508,
+    "max_pass_rss_kib": 112708
+  },
+  "stage_summaries": {
+    "pilot": {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regeneration-20261114/pilot-summary.json",
+      "bytes": 290,
+      "sha256": "63851ea029834dcbffad120a6a1705f59e985d92cb06942e0a92fc493c6e34e3"
+    },
+    "remaining": {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regeneration-20261114/remaining-summary.json",
+      "bytes": 23383,
+      "sha256": "bb4e51025b31896adf25b7c08256a403dcb56352e6e3df4d6e209cd053124043"
+    }
+  },
+  "full_return": {
+    "archive": {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/full-return-20261114.zip",
+      "bytes": 164004073,
+      "sha256": "c172d9a0b3a6338b90dc4c9bfa072a965ebfc3a3ea6901774d099f4ce4a69a34"
+    },
+    "evidence_inventory": {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regeneration-20261114/evidence-inventory.json",
+      "bytes": 436527,
+      "sha256": "22b88d5f6e113fd627d054fb31f1745e3516aa71b35cba4c230fb3ff505fbf94"
+    },
+    "files": 14741,
+    "unique_blobs": 8628
+  },
+  "retention": {
+    "logical_paths": 14741,
+    "logical_bytes": 6024953433,
+    "unique_blobs": 8628,
+    "unique_blob_bytes": 732421636,
+    "inventory_bytes": 3193076,
+    "histories_pruned": false,
+    "transport_history_sampling": false
+  },
+  "direct_staging": {
+    "inventory": {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regeneration-20261114-direct-essentials-inventory.json",
+      "bytes": 112328,
+      "sha256": "3d670da1914987a9033a2b4a3e36c53264dc1e72eaa41dcfb3eb704080c6990f"
+    },
+    "receipt": {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regeneration-20261114-direct-essentials-staging-receipt.json",
+      "bytes": 792,
+      "sha256": "9854815b3f379091db09292aacfd44b9abb9e3f548ca40518d4c86c9c3234978"
+    },
+    "observation": {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regeneration-20261114-direct-stage-observation.json",
+      "bytes": 1526,
+      "sha256": "9760339cf696c16973c71ec3f5e72849b1adc44a38588091b0ca9ec57d76ef33"
+    }
+  },
+  "export_attempts": {
+    "01": {
+      "accounting": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regeneration-20261114-export-accounting.json",
+        "bytes": 622,
+        "sha256": "6f26a4cb0feb05446570f449e9a3ff257c8a6f16e86c7bf526f76115584c3b62"
+      },
+      "observed_returncode": 1,
+      "waitstatus": 256,
+      "ECHILD": true,
+      "wall_seconds": 0.11797309100074926,
+      "CPU_seconds": 0.11677,
+      "maxrss_kib": 43392
+    },
+    "02": {
+      "accounting": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regeneration-20261114-export-02-accounting.json",
+        "bytes": 747,
+        "sha256": "df86e8da652b708160e9d0ff9e09efcf4bf1d456bb7f557db446bced72a51272"
+      },
+      "observed_returncode": 1,
+      "waitstatus": 256,
+      "ECHILD": true,
+      "wall_seconds": 18.221670418999565,
+      "CPU_seconds": 18.170175,
+      "maxrss_kib": 85532
+    },
+    "03": {
+      "accounting": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regeneration-20261114-export-03-accounting.json",
+        "bytes": 748,
+        "sha256": "707af49c1565d6b2ff7ffdca86be767eae7ad1332a942df893fb35372ad0d416"
+      },
+      "observed_returncode": 1,
+      "waitstatus": 256,
+      "ECHILD": true,
+      "wall_seconds": 18.671073544999672,
+      "CPU_seconds": 18.626237,
+      "maxrss_kib": 105464
+    },
+    "04": {
+      "accounting": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regeneration-20261114-export-04-accounting.json",
+        "bytes": 1007,
+        "sha256": "6b8a0b947ff33f90092f5db63c89ede46483e6e07720e90f9f8e4fadebffa604"
+      },
+      "observed_returncode": 0,
+      "waitstatus": 0,
+      "ECHILD": true,
+      "wall_seconds": 232.21761083899764,
+      "CPU_seconds": 185.266909,
+      "maxrss_kib": 201028
+    }
+  },
+  "executed_export_reader": {
+    "sha256": "cf64fbe86cfe66c9c435cb1865be9c26ed16677326c0e6a236bbd10fde7dbcef",
+    "commit": "c13ba8faee54427eaf247973b5d37a817a1f194a"
+  },
+  "final_reader_guard": {
+    "sha256": "94ca2a7659dd7aedd8602538446249e9362bf77e2451989d1ef504b674f5a861",
+    "commit": "36498af97ce7a4f7adacfb8db87e7093b7c43771",
+    "scope": "one global trusted-name identity guard; actual archive has zero overlap; independently checked guard and mutation separately from executed cf64 reconstruction"
+  },
+  "canonical_execution_record": "native-execution.md",
+  "independent_archive_readback": {
+    "pairs": 191,
+    "proofs": 382,
+    "observed_returncode": 0,
+    "historical_workspace_read_attempts": 0,
+    "executed_reader_sha256": "cf64fbe86cfe66c9c435cb1865be9c26ed16677326c0e6a236bbd10fde7dbcef",
+    "evidence": {
+      "native-relocated-readback.stdout": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/native-relocated-readback.stdout",
+        "bytes": 702,
+        "sha256": "b17b78d34465317ce09d459da2fe3276f0c4e267d824cfa531b497e2baeea9ff"
+      },
+      "native-relocated-readback.stderr": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/native-relocated-readback.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "native-relocated-readback.observation.json": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/native-relocated-readback.observation.json",
+        "bytes": 733,
+        "sha256": "2a0c56d274e0796abb23cf258f015ce271ce1c6a99bdf1411eeae2c70f3e1559"
+      }
+    },
+    "final_reader_controls": {
+      "native-data-controls-results.json": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/native-data-controls-results.json",
+        "bytes": 838,
+        "sha256": "fe8f4f8c75a046e85533823f5abc9c456dace54823e70b539dfe1a6e7fbfa38e"
+      },
+      "native-data-controls.observation.json": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/native-data-controls.observation.json",
+        "bytes": 762,
+        "sha256": "dd19ac3432c33e3bfbf645aae4da5683d823a90126faa2e08d47576b2cd326d3"
+      },
+      "native-unused-shadow-control.json": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/native-unused-shadow-control.json",
+        "bytes": 330,
+        "sha256": "109b7357db6167b39ec5490509c0760612a48d32d878c5b9fe3ada4b205f2796"
+      }
+    },
+    "scope": "full relocated baseline executed cf64; reviewed one-line global guard and final-reader actual-archive controls checked separately"
+  }
+}

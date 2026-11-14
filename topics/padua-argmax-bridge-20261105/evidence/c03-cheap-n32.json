@@ -1,0 +1,144 @@
+{
+  "format": "C03-cheap-known-n32-v1",
+  "status": "PASS",
+  "accepted": true,
+  "source_commit": "e8fad1671fb736247e4c510284f6f935e6345efb",
+  "supervisor": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C03/replay.py",
+    "bytes": 22974,
+    "sha256": "0e53a602103b6b5bf0afb80d338329ab8e3c442d7ab86e2051d3a88e9a447d37"
+  },
+  "prototype": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C03/prototype.cpp",
+    "bytes": 16881,
+    "sha256": "9e357b25efde553211563bb69147644c67b7752bc703bf05ac502141c82e0861"
+  },
+  "candidate": {
+    "sha256": "97c339181652d37e7e3c34522959f1b7157b8ea26d3f0ab83c0ebc1c3901528e",
+    "bytes": 21338
+  },
+  "supervisor_argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C03/replay.py",
+    "--run-once",
+    "--source-commit",
+    "e8fad1671fb736247e4c510284f6f935e6345efb"
+  ],
+  "process_exit_status": 0,
+  "watchdog_stopped": false,
+  "errors": [],
+  "total_cpu_seconds": 46.08976645,
+  "total_subprocess_cpu_seconds": 45.228637,
+  "supervisor_cpu_seconds": 0.8611294500000001,
+  "wall_seconds": 45.46042339899941,
+  "total_cpu_limit_seconds": 180,
+  "watchdog_trigger_seconds": 176,
+  "observed_group_plus_supervisor_peak_seconds": 45.88468044,
+  "worker_rlimit_cpu": [
+    178,
+    179
+  ],
+  "checked_leaves": 364,
+  "total_leaves": 364,
+  "pending": 0,
+  "complete": true,
+  "failed_leaves_count": 0,
+  "first_failed_leaf": null,
+  "native_calls": 333,
+  "native_cpu_seconds": 43.008296124,
+  "native_counts": [
+    9741780.0,
+    21585196.0,
+    17900.0,
+    0.0,
+    288.0,
+    0.0,
+    45.0,
+    999.0,
+    8439552.0,
+    655240.0,
+    0.0,
+    0.0
+  ],
+  "counter_order": [
+    "base_ratio",
+    "sin_cos",
+    "base_pole",
+    "base_fallback",
+    "lazy_S",
+    "analytic_floor",
+    "profiles",
+    "boards",
+    "outer_ratio",
+    "endpoint_refinements",
+    "centered_refinements",
+    "ODE_caps"
+  ],
+  "source_runtime_checks_complete": true,
+  "closure_entries_rehashed_after": 254,
+  "baseline_comparison": {
+    "old_accepted": true,
+    "old_checked_leaves": 364,
+    "old_total_cpu_seconds": 139.40540900000002,
+    "scope": "same frozen candidate; changed kernel; no new degree",
+    "raw_comparison_available": true,
+    "same_complete_leaf_order": true,
+    "weakened_bound_counts_by_output_index": {
+      "1": 332,
+      "0": 324,
+      "2": 226
+    },
+    "old_valid_now_failed": 0
+  },
+  "prior_failed_C02": {
+    "receipt": {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/evidence/c02-cheap-n32.json",
+      "bytes": 4417,
+      "sha256": "924e8ebbe15ff8fd9a46e1d6c6887ae77e47fa4533af548df864fcea19bf3f41"
+    },
+    "accepted": false,
+    "checked_leaves": 364,
+    "failed_leaves_count": 76,
+    "total_cpu_seconds": 31.965007579999998
+  },
+  "selected_variant": 0,
+  "mode_switches": 0,
+  "no_max_leaves": true,
+  "retries": 0,
+  "producer_run": false,
+  "tree_refinement": false,
+  "new_candidate": false,
+  "new_degree_certified": false,
+  "full_record": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C03/n32/checker-report.json",
+    "bytes": 163748,
+    "sha256": "18e6ec06d169335345c0f7a42663a39fc10046eff72d5edbe7a53991b8caa755"
+  },
+  "launch_record": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C03/n32/launch.json",
+    "bytes": 4078,
+    "sha256": "1f5e7b3c0b8628bdc1b56cd8d86af13978a0d4d6ccc3933962fbeee8a05dc0ee"
+  },
+  "stdout": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C03/n32/stdout.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C03/n32/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "worker_accounting": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C03/n32/worker-accounting.json",
+    "bytes": 152,
+    "sha256": "78ec55e44aa85f153391456a02315c95c0b76dbd71f57f65d7d2f94c6c9b9f85"
+  },
+  "native_trace": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C03/n32/native-calls.jsonl",
+    "bytes": 128323,
+    "sha256": "bda630812248f6fdaeffa6711e56e504789a8ad97654ca9755ac7008fdb8af87"
+  },
+  "scope": "one mode0 replay of original known n32 candidate; failed predicates retained; no rescue or mode switch",
+  "actual_loaded_closure_location": "full_record.build_provenance.loaded_dependency_closure"
+}

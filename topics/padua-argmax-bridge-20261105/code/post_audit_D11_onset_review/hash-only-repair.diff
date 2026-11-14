@@ -1,0 +1,11 @@
+--- check-first-failed.py
++++ check.py
+@@ -70,7 +70,7 @@
+ # Evidence comparison only, after independently reconstructing every value.
+ author_path=base/'code/post_audit_D11_onset/budget-16000.json'
+ author_raw=author_path.read_bytes()
+-assert hashlib.sha256(author_raw).hexdigest()=='34675d877186c34f16a40c2dc5b2470c27ec2fbb40f62b338c2dd24e96583afb47'
++assert hashlib.sha256(author_raw).hexdigest()=='34675d877186c34f16a40c2dc5b2470c27ec2fbb40f62b338c2dd24e96583afb'
+ author=json.loads(author_raw)
+ assert set(v)==set(author['values'])
+ contained={k:D(author['values'][k][0])<=x.lo<=x.hi<=D(author['values'][k][1]) for k,x in v.items()}

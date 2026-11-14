@@ -1,0 +1,16 @@
+pole-error: max n^2*|err| = 0.6773 at (1000, np.float64(0.9999)) (claimed <5; component sum pi^2/3+pi/4+1/(2pi)=4.2344)
+paired tail |brace|*3k^3 max = 0.9925
+c''(0.300) direct -0.0411647985 series -0.0411647985
+c''(1.000) direct -0.1863671214 series -0.1863671214
+c''(1.571) direct -0.5160245509 series -0.5160245509
+16/pi^3 = 0.5160245509311919
+half-line defect max = 0.31753 at (400, np.float64(1.5684401323047041), np.float64(0.999))  4/pi = 1.27324
+psi estimate: min 8.333334022836425e-10  max ratio to 1/(8w^2) 0.6666672103057832
+row identity max deviation (n=7): 3.510081114654895e-12 ;  max |offset - eta| mod 1: 0.4691548951156671
+singular-sample identity max dev: 5.551115123125783e-17
+n=32 y=1e-06: sum over r not in A6 = 99.68, all rows = 6.6e+07, bound 4mH_n/pi = 170.53
+n=32 y=0.5: sum over r not in A6 = 98.99, all rows = 285, bound 4mH_n/pi = 170.53
+n=32 y=3.1: sum over r not in A6 = 99.68, all rows = 6.6e+07, bound 4mH_n/pi = 170.53
+n=100 y=1e-06: sum over r not in A6 = 448.90, all rows = 2.02e+08, bound 4mH_n/pi = 667.08
+n=100 y=0.5: sum over r not in A6 = 446.79, all rows = 1.02e+03, bound 4mH_n/pi = 667.08
+n=100 y=3.1: sum over r not in A6 = 448.90, all rows = 2.02e+08, bound 4mH_n/pi = 667.08

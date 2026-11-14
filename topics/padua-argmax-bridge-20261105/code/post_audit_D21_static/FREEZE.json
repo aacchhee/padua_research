@@ -1,0 +1,86 @@
+{
+  "status": "UNEXECUTED first source freeze; source and generic-math audit pending; no run authorized by this file",
+  "implementation_rules_head": "ca8d52aa2a48c941473846ab884cccb25f1bdb9f",
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D21_static/controller.py --run-once",
+  "degree": 6912,
+  "code_data": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D21_static/build.py",
+      "bytes": 5545,
+      "sha256": "892af560cbd534a24bb78cbdf2801cd6c8f31eefbcfb969631e42e6f05ba4424"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D21_static/checker.py",
+      "bytes": 3784,
+      "sha256": "d3f6b8c02ace3862bc3700fada7da7c6ddc3bf6fea1c2864a3337099adda0e95"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D21_static/controller.py",
+      "bytes": 12290,
+      "sha256": "b948fa992bd43410c3a64c660a2023a45436fc400d2840edbf11f5140a158493"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D21_static/controls.py",
+      "bytes": 2025,
+      "sha256": "97eef514854bf970a722dce113966ff6c462547315664f16a08b9d91258430e9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D21_static/runtime.py",
+      "bytes": 5491,
+      "sha256": "a67eb8097e530962cfcdf3e4727c8dccf3c257e296916706520555df11706f8f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/partial.cpp",
+      "bytes": 7688,
+      "sha256": "bde1ce4850849dd402acc91eb3cee7d40883bbd51d5f7cff13334abc0f4ee23c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D09_threepoint/controller.py",
+      "bytes": 16019,
+      "sha256": "5642ad6fdf2c28165fc8d17ce8e62330ed695e7b64bb1242c13312d53d47fd73"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/setup.py",
+      "bytes": 1131,
+      "sha256": "ff6babcf65f90c42d35353bd306f89d96ac293c6783508b03bef175ab5a60391"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/d19-pruned-tree.json",
+      "bytes": 113,
+      "sha256": "5ff335b5e8c3a813b934f38b0938cf80bf29f546749651cd749e5ffc41c753d1"
+    }
+  ],
+  "contract": {
+    "tree": "unchanged supplied D19 113-byte midpoint certificate; degree2048 in input is provenance only",
+    "fresh_oracle": "unchanged C11 S-only at6912, all canonical corners of nonempty/tangent leaves",
+    "old_endpoint_or_norm_inputs": false,
+    "lambda_calls": 0,
+    "FLOAT_calls": 0,
+    "global_norm": "ceil(max_B max_vertex(U)/(1-theta_B)) from this fresh cover only",
+    "near_noncorner_defect": "1/16 at n>=4096 on actual rho<=1/2 only",
+    "actual_corner": "accepted D17 analytic coefficient1/8 at n>=4096",
+    "controls_CPU": 2,
+    "checker_CPU": 580,
+    "whole_inclusive_CPU": 600,
+    "aggregate_safety_CPU": 590,
+    "completed_call_stop_CPU": 25,
+    "unfinished_call_stop_CPU": 30,
+    "controls_wall_seconds": 15,
+    "checker_wall_seconds": 1800,
+    "whole_wall_seconds": 1900,
+    "retry_or_precision_cap_case_tree_degree_rescue": false,
+    "required_acceptance": "final-accounting complete/accepted AND actual primary return0 AND no first failure; independent replay remains required",
+    "essential_receipt_bytes_strictly_less_than": 16384,
+    "raw_outputs": "off Git; AC-selected cold archive pending"
+  },
+  "static_checks_performed": [
+    "Python AST syntax only",
+    "input tree byte size113 and preorder length61 (metadata only)"
+  ],
+  "scientific_or_native_runs": 0
+}

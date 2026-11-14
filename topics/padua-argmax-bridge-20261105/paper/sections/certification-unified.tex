@@ -1,0 +1,533 @@
+\section{Finite completion by positive interpolation}
+\label{sec:certificates}
+The remaining degrees require a bound on the whole square, including a
+strict comparison arbitrarily close to each maximizing corner. Both finite
+methods use the same principle: interpolate a smooth signed sum with positive
+weights, bound its interpolation error, and only then maximize over signs.
+For any finite real vector $(h_\ell)$ the identity
+\[
+ \sum_\ell|h_\ell|=\max_{\varepsilon_\ell\in\{-1,1\}}
+                         \sum_\ell\varepsilon_\ell h_\ell
+\]
+provides the signed sums. Each is smooth whenever the individual
+kernels or cardinals are smooth. The signs realizing the maximum may
+change inside a leaf (a terminal rectangle of the binary subdivision tree); a bound valid for every complete signed sum
+continues to hold across all such changes.
+
+For a rectangle $R=[a_0,a_1]\times[b_0,b_1]$ with positive side lengths,
+the normalized coordinates of $(a,b)\in R$ and the degree-$n$
+Bernstein basis are
+\[
+ s=\frac{a-a_0}{a_1-a_0},\qquad
+ t=\frac{b-b_0}{b_1-b_0},\qquad
+ B_i^n(s)=\binom ni s^i(1-s)^{n-i},\quad 0\leq i\leq n.
+\]
+The basis functions are nonnegative and sum to one on $[0,1]$.
+Tensor Bernstein coefficients are the coefficients in the product
+basis $B_i^n(s)B_j^n(t)$.
+
+\begin{center}\small
+\begin{tabular}{@{}ll@{}}\toprule
+Symbols & Meaning\\\midrule
+$R,s,t,B_i^n$ & rectangle, normalized coordinates, Bernstein basis\\
+$F,f_\sigma$; $M,\omega_a,\omega_b$ & maximum of signed sums; norm and derivative frequencies\\
+$W_z,I_RW$ & vertex upper bounds and their bilinear interpolant\\
+$q_R,V_R,\theta_R$ & leaf quadratic, largest vertex upper, Peano coefficient\\
+$M_*,E,V_E$ & true global norm, quarter-grid, largest grid upper\\
+$L_c,\delta_R,r_R$ & corner lower endpoint, reflection floor, its guarded radius\\
+$U,V,W_x,W_y,W_{xy},g$ & squared corner rectangle, three vertex uppers, descent margin\\
+$\mathcal T,\mu$ & normalized phase triangle and mesh ratio $n/(n+1)$\\\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{lemma}[Positive interpolation bounds]\label{cert:positive}
+Let $M,\omega_a,\omega_b\geq0$, and let
+$F(z)=\max_{\sigma}f_\sigma(z)$, where the maximum is over a finite
+family of twice continuously differentiable functions.
+On a rectangle $R=[a_0,a_1]\times[b_0,b_1]$, suppose
+$|(f_\sigma)_{aa}|\leq M\omega_a^2$ and
+$|(f_\sigma)_{bb}|\leq M\omega_b^2$ for every $\sigma$.
+For each vertex $z$ choose $W_z\geq F(z)$, and let $I_RW$ be the
+bilinear interpolant of these four values. Then throughout $R$,
+\begin{equation}\label{cert:peano}
+ F(a,b)\leq I_RW(a,b)+\frac M2\{
+ \omega_a^2(a-a_0)(a_1-a)+\omega_b^2(b-b_0)(b_1-b)\}.
+\end{equation}
+For polynomial cardinals with tensor
+Bernstein coefficients $c_{\ell,ij}$ on $R$, the analogous bound is
+\begin{equation}\label{cert:bernstein}
+ \sum_\ell|L_\ell(z)|\leq
+ \sum_{i,j}\left(\sum_\ell|c_{\ell,ij}|\right)B_i^n(s)B_j^n(t),
+ \qquad (s,t)\in[0,1]^2.
+\end{equation}
+\end{lemma}
+\begin{proof}
+The one-dimensional linear interpolation remainder is an integral against
+a Peano kernel of one sign, whose mass is $(a-a_0)(a_1-a)/2$.
+Let $I_a,I_b$ denote the two linear interpolation operators. The identity
+\[
+ f_\sigma-I_aI_bf_\sigma
+   =(f_\sigma-I_af_\sigma)+I_a(f_\sigma-I_bf_\sigma)
+\]
+separates the two errors. The first is bounded by
+$M\omega_a^2(a-a_0)(a_1-a)/2$; positivity of $I_a$ bounds the second
+by $M\omega_b^2(b-b_0)(b_1-b)/2$. At the four vertices,
+$f_\sigma\leq F\leq W$, so positivity also gives
+$I_aI_bf_\sigma\leq I_RW$. This proves \eqref{cert:peano} for
+every signed sum, with an error independent of $\sigma$, and taking
+their maximum proves the assertion.
+Equation~\eqref{cert:bernstein} follows from the same positivity and
+partition of unity of the Bernstein basis, after the triangle inequality
+(see \cite{Lorentz1986} for Bernstein-form enclosures).
+\end{proof}
+
+\subsection{One polynomial certificate for the small degrees}
+For $2\leq n\leq40$ the direct certificate uses the corrected cardinal
+kernel of Lemma~\ref{lem:cardinal-kernel}. Outward rational enclosures of
+its coefficients are converted to tensor Bernstein form on the square.
+Binary midpoint subdivision uses de Casteljau averaging: starting from
+one-variable Bernstein coefficients $d_i^{(0)}=d_i$, $0\leq i\leq n$,
+form
+\[
+ d_i^{(r)}=\frac{d_i^{(r-1)}+d_{i+1}^{(r-1)}}2,
+ \qquad 1\leq r\leq n,\quad 0\leq i\leq n-r.
+\]
+The left and right child coefficients are respectively $d_0^{(r)}$
+in increasing $r$ and $d_i^{(n-i)}$ in increasing $i$; the construction
+is applied in each coordinate for tensor data \cite{Lorentz1986}.
+For coefficient intervals, every lower average is rounded down and every
+upper average up, preserving outward enclosures. On each leaf
+all coefficient absolute sums in \eqref{cert:bernstein} must be strictly
+less than a validated lower endpoint $L_c\leq\Lambda_c(n)$.
+A leaf containing a designated corner exempts only its vertex coefficient:
+that coefficient is exactly the polynomial value there, with absolute sum
+$\Lambda_c(n)$; every other coefficient sum must be less than $L_c$.
+Write $C=\Lambda_c(n)$, let $w_*$ be the exceptional
+vertex weight, and let $D_R$ be the largest validated coefficient sum
+among the other indices. The corner predicate gives $D_R<L_c\leq C$,
+so the upper bound on this leaf is
+\[
+ Cw_*+D_R(1-w_*)=C-(C-D_R)(1-w_*).
+\]
+Here $w_*$ is a product of endpoint Bernstein weights, and $w_*<1$
+at every point other than the designated vertex. This proves the
+required strict comparison however close the point is to that vertex.
+At the vertex itself the cardinal formula supplies the exact value $C$.
+On an ordinary leaf the largest validated coefficient sum is already
+strictly less than $L_c$, giving the comparison everywhere on the leaf.
+
+The partition is specified by a rooted binary tree: every internal node
+splits its closed rectangle at the midpoint of one coordinate, and both
+children must be present. Starting with $[-1,1]^2$, this reconstructs a
+cover of the entire square. Shared edges belong to both adjacent leaves;
+the same inequalities hold there. The designated corner vertices are
+exactly the two nonnode corners in Theorem~\ref{thm:main-location}.
+Their node-preserving reflection gives their common value $C$.
+Thus the leaf predicates prove both the maximum and its exact equality
+set on the full square.
+
+All coefficient enclosures are reconstructed by the checker. The identities
+\[
+ T_{r+1}(x)=2xT_r(x)-T_{r-1}(x),\qquad
+ s^r=\sum_{i=r}^n\frac{\binom{i}{r}}{\binom nr}B_i^n(s)
+\]
+reduce construction and basis conversion to exact integer and rational
+operations once the cosine arguments are bracketed. Alternating arctangent
+series in Machin's identity bracket $\pi$; alternating cosine series and
+the Chebyshev recurrence bracket the grid values. Integer operations round
+outwards at every interval step. The checker reconstructs the whole
+partition and its coefficients. Successful certificates are finite witnesses.
+The same coefficient construction and strict predicates apply throughout
+this degree range.
+
+\paragraph{A four-leaf example at degree two.}
+The six nodes are
+\[
+ (1,1),\ (1,-1/2),\ (0,1/2),\ (0,-1),\ (-1,1),\ (-1,-1/2),
+\]
+and the two nonnode corner values are $\Lambda_c(2)=3$.
+Split the square first at $x=0$ and then at $y=0$ in each child.
+On $[-1,0]\times[-1,0]$, use $s=x+1$, $t=y+1$.
+The tensor degree-$(2,2)$ sums $\sum_\ell|c_{\ell,ij}|$, with
+row index $i$ and column index $j$ increasing from zero, are exactly
+\[
+ \begin{pmatrix}
+ 3&5/3&2\\
+ 11/6&2&5/3\\
+ 1&2&5/3
+ \end{pmatrix}.
+\]
+The coefficient at index $(0,0)$ is the value at the physical vertex
+$(-1,-1)$; all eight other sums are at most $2<3$.
+Its reflected lower-right leaf has exceptional coefficient $3$ at
+index $(2,0)$, the physical vertex $(1,-1)$.
+Each upper leaf has every coefficient sum at most $5/2<3$.
+These four closed rectangles therefore give two strict leaves and two
+punctured-corner leaves, and prove the equality set directly by
+\eqref{cert:bernstein}. No numerical grid between the vertices is needed.
+
+The degree-one case is explicit. Its nodes
+are $(1,1),(1,-1),(-1,0)$, with cardinals
+$(1+x+2y)/4$, $(1+x-2y)/4$, and $(1-x)/2$. Hence
+\[
+ \lambda_1(x,y)=\max\{1,|y|+(1-x)/2\},
+\]
+whose maximum is two, attained only at $(-1,\pm1)$.
+
+\subsection{The phase certificate}
+For $41\leq n\leq511$ the common envelope is enclosed on
+$\mathcal T=\{(a,b):a,b\geq0,\ a+b\leq1\}$, with phases
+$(\alpha,\beta)=(\pi a,\pi b)$ and $\mu=n/(n+1)$.
+In the notation of \eqref{ul:primitive}, put
+\[
+ f_\varepsilon(a,b)=\frac1{2\mathsf N}
+       \sum_{\Gamma^-}\varepsilon_{rs}H_{rs}(\pi a,\pi b).
+\]
+Then $S_n(\pi a,\pi b)=\max_\varepsilon f_\varepsilon(a,b)$,
+and $|f_\varepsilon|\leq S_n$. Every signed board sum has frequencies
+at most $\pi,\pi \mu$ in these coordinates. A global norm $M$
+and upper bounds at the vertices therefore give
+\begin{align}\label{cert:phase-bound}
+ S_n(\pi a,\pi b)&\leq q_R(a,b),\\
+ q_R&=I_RW+\frac{M\pi^2}{2}
+ \{(a-a_0)(a_1-a)+\mu^2(b-b_0)(b_1-b)\},\notag\\
+ \max_Rq_R&\leq V_R+\theta_RM,
+ \quad V_R=\max_zW_z,\quad
+ \theta_R=\frac{\pi^2}{8}\{(a_1-a_0)^2+\mu^2(b_1-b_0)^2\}.\notag
+\end{align}
+In the unscaled angles $u=\pi a/n$, $v=\pi b/m$, each signed sum
+is a $2\pi$-periodic trigonometric polynomial of degree at most $n$
+in either angle. The periodic Bernstein inequality stated in the proof
+of Lemma~\ref{ul:corner-lemma} gives, by the chain rule,
+$|(f_\varepsilon)_{aa}|\leq\pi^2M$ and
+$|(f_\varepsilon)_{bb}|\leq\pi^2\mu^2M$ from the global norm
+\cite{Boas1954}.
+The final line of \eqref{cert:phase-bound} uses positivity of the
+bilinear weights and the elementary bound
+$(a-a_0)(a_1-a)\leq(a_1-a_0)^2/4$, and similarly for $b$.
+Thus $V_R+\theta_RM$ is a simple certified upper for the whole leaf.
+The complete midpoint tree covers the triangle; a rectangle
+is discarded only if its lower-left coordinate sum exceeds one.
+Tangencies and shared boundaries remain in the cover.
+
+The norm premise is itself certified. Let $M_*$ be the global real-phase
+supremum of $S_n$. The folding symmetries established in
+Section~\ref{sec:argmax} reduce this supremum to $\mathcal T$.
+Compactness supplies a maximizing point, and every signed sum has
+absolute value at most $M_*$. Consequently the derivative argument is
+valid initially with this true, possibly unknown, norm. If all leaves
+are numerical and $\theta_R<1$, a leaf containing that point gives
+$M_*\leq V_R+\theta_RM_*$. Absorbing its last term and then taking
+the largest possible leaf ratio yields the \emph{tree norm}
+\begin{equation}\label{cert:tree-norm}
+ M_*\leq\max_R\frac{V_R}{1-\theta_R}.
+\end{equation}
+Alternatively the quarter-grid points
+$E=\{(i/4,j/4):i,j\geq0,\ i+j\leq4\}$ and their upper maximum $V_E$
+give the \emph{grid norm}
+\begin{equation}\label{cert:grid-norm}
+ M_*\leq\frac{V_E}{1-\pi^2/64}<\frac{784}{663}V_E.
+\end{equation}
+For related finite-mesh bounds on Lebesgue constants, compare
+\cite[Proposition~2.2]{Mesh2024}. Here the ten quarter-squares cover
+$\mathcal T$; outside vertices fold
+back to $E$ by $(a,b)\mapsto(1-a,1-b)$, a phase symmetry.
+Each square has side $1/4$, so its Peano error is at most
+$\pi^2(1+\mu^2)M_*/128\leq\pi^2M_*/64$. Hence
+$M_*\leq V_E+\pi^2M_*/64$, proving \eqref{cert:grid-norm}; the
+rational factor follows from $\pi<22/7$. Either construction gives a
+validated $M\geq M_*$ to insert in every subsequent leaf test.
+For \eqref{cert:tree-norm}, every leaf meeting the triangle must
+supply its numerical vertex bounds. A tree using an analytic far leaf
+uses the independent grid norm \eqref{cert:grid-norm}.
+
+The independent checker maximizes the quadratic $q_R$ exactly over
+each clipped polygon $R\cap\mathcal T\cap\{\text{near/far proxy}\}$.
+It tests polygon vertices, stationary points of each edge restriction,
+and any interior critical point. These cover a quadratic maximum on a
+compact polygon: a nonvertex boundary maximum is stationary along its
+edge, and an interior maximum has zero gradient. With singular Hessian,
+the quadratic is constant in a null direction through any critical point,
+so that value also occurs on the boundary. The simpler whole-rectangle
+upper $V_R+\theta_RM$ is an alternative sufficient bound.
+On a leaf the certified upper for $q_R$ must be below $L_c$ on its far
+part. On its actual near part $\rho\leq1/2$, at a noncorner center,
+the required inequality is $q_R-\delta_R<L_c$, with the appropriate
+proved reflection floor $\delta_R$. The floor's radius is
+$\min\{1/2,\pi(a_1+b_1)\}$; it is used only where its physical guard
+holds. To make the guard explicit, write $p_-\leq\pi\leq p_+$ for the
+positive rational bracket. Since $\rho=\pi(a+b)$ on $\mathcal T$,
+closed rational proxies for the two parts are
+\[
+ R\cap\mathcal T\cap\{a+b\leq1/(2p_-)\},\qquad
+ R\cap\mathcal T\cap\{a+b\geq1/(2p_+)\}.
+\]
+The first contains every actual near point, and the second every actual
+far point. The two proxies overlap on the seam $\rho=1/2$. Requiring the
+appropriate strict comparison on each nonempty proxy is sufficient;
+the defect floor is invoked in the physical implication only at actual
+near points. Its certified radius can be evaluated outwards as
+$r_R=\min\{1/2,p_+(a_1+b_1)\}$ and substituted in
+\eqref{ul:finite-floors}. Every noncorner odd center has an eligible
+projection, so \eqref{ul:defect} gives there
+\[
+ \lambda_n=S_n-\Delta_{JK}\leq q_R-\delta_n(r_R)<L_c
+                                                   \leq\Lambda_c(n).
+\]
+On the actual far part $\lambda_n\leq S_n\leq q_R<L_c$.
+Actual corners are covered by a direct descent witness.
+
+The local descent uses \eqref{ul:squared-peano}. Take
+$U=\pi^2/32$, $V=9\pi^2/512$, and outward actual-function values
+$W_x,W_y,W_{xy}$ at $(\sqrt{2U},0),(0,\sqrt{2V}),
+(\sqrt{2U},\sqrt{2V})$. With $u'=U/\pi^2$, $v'=V/\pi^2$, set
+\[
+ q=\min\left\{\frac{L_c-W_x}{u'},\frac{L_c-W_y}{v'},
+                         \frac{L_c-W_{xy}}{u'+v'}\right\}.
+\]
+For the other three vertices the losses relative to the exact corner
+value are at least $L_c-W_x$, $L_c-W_y$, and $L_c-W_{xy}$.
+They are therefore at least $(q/\pi^2)U$, $(q/\pi^2)V$, and
+$(q/\pi^2)(U+V)$, respectively. At the origin the value is exactly
+$\Lambda_c(n)$. Apply \eqref{ul:squared-peano} with $c=q/\pi^2$
+to obtain
+\[
+ \begin{gathered}
+ \lambda_n(-\cos(A/n),-\cos(B/(n+1)))
+ \leq\Lambda_c(n)-\frac{g}{2\pi^2}(A^2+B^2),\\
+ g=q-\frac{M\pi^4}{6}\max\{u',\mu^4v'\}.
+ \end{gathered}
+\]
+Thus the strict test $g>0$ proves positive quadratic loss off the
+origin. The rectangle is $0\leq A\leq\pi/4$,
+$0\leq B\leq3\pi/16$, which contains the inward half diamond
+$A+B\leq1/2$. Complete signed cardinal sums are even in each inward
+variable and have frequencies at most $1,\mu$; their absolute values are
+bounded by the same global $M$, since $\lambda_n\leq S_n$ in every
+chart. These are precisely the premises of the squared-variable
+interpolation argument. The parity reflection transfers the witness to
+the other actual corner.
+
+\begin{corollary}[Analytic far leaves]\label{ul:far192}
+For every integer $n\geq192$, a phase point with $\rho\geq\pi/2$
+satisfies $S_n<\Lambda_c(n)-3/100$.
+\end{corollary}
+\begin{proof}
+Apply Corollary~\ref{uc:absolute-gate} with $\rho_1=\pi/2$.
+Its tangent condition holds at $n=192$ and persists thereafter;
+the same corollary gives $\mathcal G(n,\pi/2)>3/100$.
+\end{proof}
+
+From degree 256 the analytic estimate \eqref{ul:corner256} supplies
+the same strict descent on the required diamond. An analytic far leaf
+is permitted from degree 192 only when its entire triangle intersection
+satisfies $\rho\geq\pi/2$. Corollary~\ref{ul:far192} then gives
+$S_n<\Lambda_c(n)-3/100$ throughout that closed intersection.
+
+To complete the implication, choose an odd chart for any point of the
+physical square and fold its absolute phases into $\mathcal T$.
+The tree gives a leaf containing those phases. Its far comparison,
+noncorner near comparison, or actual-corner descent excludes the point
+strictly, except when it is the origin of an actual corner chart.
+Those origins are the two nonnode corners already identified by parity.
+Their exact common value and the closed chart cover prove the asserted
+maximum and equality set, including every chart tie and subdivision
+boundary.
+
+\subsection{Evidence and arithmetic}
+\begin{proposition}[Computer-assisted finite verification]\label{cert:finite-verification}
+For every integer $2\leq n\leq40$ the recorded polynomial certificate
+satisfies the coefficient and complete-partition predicates above.
+For every integer $41\leq n\leq511$ both certificate records have been
+recertified with independently computed bounds satisfying the norm,
+closed-cover, defect-floor and corner predicates above.
+With the arithmetic model and mathematical premises specified in
+Table~\ref{cert:trust}, these finite checks prove the maximum and exact
+two-corner equality set of Theorem~\ref{thm:main-location} for
+$2\leq n\leq511$.
+\end{proposition}
+\begin{proof}
+The polynomial checker reconstructs all coefficient enclosures and the
+complete midpoint partition for each of the 39 degrees $2,\ldots,40$.
+Bernstein positivity and the exceptional vertex identity give the strict
+comparison off the two designated corners.
+For each of the 471 degrees $41,\ldots,511$, the independent phase checker
+reconstructs the complete tree from both certificate records, directly encloses the finite kernel and
+cardinal sums, and certifies their strict rational comparisons. It uses
+its own vertex upper bounds, corner lower endpoint and global norm in
+every leaf and corner test. All 942 certificate records pass these checks.
+At each degree the primary and fresh native passes produced the same
+tree and exact keys. Thus the checks cover 471 distinct trees, each
+recorded twice; the second record adds native replay redundancy.
+The phase-to-physical implication proved above then excludes every point
+except the two corner origins. At those origins the cardinal identity
+gives the exact value $\Lambda_c(n)$, and parity reflection equates the
+two values.
+\end{proof}
+
+\paragraph{How the numerical premises are obtained.}
+The independent checker evaluates the finite primitive
+\eqref{ul:primitive} and the four-term cardinal-reflection identity
+\eqref{ul:cardinal-reflection}, using the corrected kernel of
+Lemma~\ref{lem:cardinal-kernel}. In particular the evaluated product form is
+\[
+\begin{aligned}
+G_n(u,v)&=R_{n+1}(u_+)R_{n+1}(u_-)+R_n(u_+)R_n(u_-)-\cos(nu),\\
+u_+&=(u+v)/2,\qquad u_-=(v-u)/2,
+\end{aligned}
+\]
+where $R_\ell(\xi)=\sin(\ell\xi)/\sin\xi$ and
+$R_\ell(j\pi)=\ell(-1)^{j(\ell-1)}$ at removable arguments.
+This is the finite sine-product kernel derived in Section~\ref{sec:corner}.
+It retains every endpoint weight, the
+highest-mode coefficient one and the exact removable collision values.
+For an actual-function value the four reflected terms are added before
+taking the absolute value, preserving their cancellations. These direct
+finite sums give new vertex uppers $W_z$, an origin lower endpoint $L_c$,
+and, below degree 256, the three actual-function uppers
+$W_x,W_y,W_{xy}$. The checker constructs its own grid norm \eqref{cert:grid-norm} or complete tree
+norm \eqref{cert:tree-norm} from these new values. Its conclusion certifies the complete trees
+with these independently constructed bounds. No stored native numerical
+endpoint is a premise or is asserted valid; only the trees and exact
+phase keys are reused.
+
+The arithmetic model is IEEE 754 binary64, rounded to nearest with ties
+to even and gradual underflow \cite{IEEE7542019}. Let
+$\epsilon_{\mathrm{fp}}=2^{-53}$ be the unit roundoff. For a normal result,
+$\operatorname{fl}(a\mathbin\circ b)=(a\mathbin\circ b)(1+\delta)$,
+$|\delta|\leq\epsilon_{\rm fp}$; subnormal operations are covered by
+outward adjacent-value widening. Products of $k$ such normal factors
+have error at most $\gamma_k=k\epsilon_{\rm fp}/(1-k\epsilon_{\rm fp})$
+\cite[Chapters~3--5]{Higham2002}. The source and runtime identities for the new phase recertification are
+pinned in \path{code/regeneration_i25_20261114/input-freeze.json};
+the array implementation is NumPy \cite{NumPy2020},
+and exact rational operations use Python's documented integer and
+\texttt{Fraction} semantics
+(\url{https://docs.python.org/3/library/fractions.html}).
+The arithmetic starts with the exact rational enclosure from Machin's
+identity $\pi=16\arctan(1/5)-4\arctan(1/239)$.
+Integer argument reduction and reflection put the sine arguments in
+$[0,\pi/2]$. Let $0<t<2$ be the rounded nonzero reduced argument.
+The degree-25 Taylor polynomial, evaluated by Horner's rule (successive
+nested multiplication and addition), has error less than
+$84\epsilon_{\mathrm{fp}}t$; the implemented allowance is
+$128\epsilon_{\mathrm{fp}}t$. The elementary derivation in Section 5 of
+the expanded companion identified in the data and code availability statement,
+paragraph ``An elementary derivation of the arithmetic bounds'', proves
+this bound and its integer and normal-operation guards.
+In outline, at most 38 normal rounding factors contribute less than
+$77\epsilon_{\rm fp}t$, the Taylor tail is bounded by
+$t\,2^{26}/27!<\epsilon_{\rm fp}t$,
+and argument error costs less than $6\epsilon_{\rm fp}t$, giving the
+$84\epsilon_{\rm fp}t$ bound.
+General interval operations widen
+each endpoint to an adjacent binary64 value, and summation widens every
+pairwise addition. The finite endpoints have the exact form $m_{\rm fp}2^{e_{\rm fp}}$ with
+integers $m_{\rm fp},e_{\rm fp}$; conversion to rationals preserves their values.
+Normalization, the near/far proxy intersections, norm construction,
+strict leaf comparisons and corner inequalities then use exact rational
+arithmetic. This verifies the cover using the checker's own bounds
+throughout.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Mathematical and implementation premises of the finite verification.}
+\label{cert:trust}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.13\linewidth}
+>{\raggedright\arraybackslash}p{0.26\linewidth}
+>{\raggedright\arraybackslash}p{0.27\linewidth}
+>{\raggedright\arraybackslash}p{0.24\linewidth}@{}}
+\toprule
+Stage & Proved in the text (premise) & Computed by the program & Implementation trust\\
+\midrule
+Polynomial & Corrected cardinals, Bernstein positivity, corner vertex identity &
+Outward coefficients, complete partition, strict coefficient margins &
+C++/GMP checker, outward integer rounding, compiler, Python driver\\
+Direct sums & Kernel and reflection identities, removable values, rational sine bounds &
+Fresh vertex uppers, origin lower, actual-function uppers below 256 &
+Python integer/Fraction conversions, guarded NumPy operations\\
+Endpoints & Interval inclusion and pairwise widening &
+Enclosures of every finite term and pairwise sum &
+IEEE 754 binary64 operations, gradual underflow, comparisons, \texttt{nextafter}\\
+Closed cover & Positive interpolation, physical chart cover, floors, squared-variable descent &
+Grid/tree norm, proxy polygons, quadratic maxima, strict margins &
+Exact rational checker and strict parsing\\
+Analytic branches & Finite floor tiers, \eqref{ul:corner256}, Corollary~\ref{ul:far192} &
+Metadata and degree guards only & None beyond guard evaluation\\
+Elementary bases & Displayed rational bracket and monotonicity arguments &
+Finite base comparisons in \texttt{onset512\_analytic/}\newline\texttt{check.py} &
+Python integers and \texttt{Fraction}; recorded receipt\\
+\bottomrule
+\end{tabular}
+\par\smallskip\footnotesize
+The Python/NumPy source and runtime identities of each phase-checker
+worker are checked against
+\path{code/regeneration_i25_20261114/input-freeze.json} and recorded
+with its outputs. Finite runtime probes supplement the implementation
+assumptions; they do not prove universal IEEE conformance.
+The polynomial checker uses its separately recorded C++/GMP environment.
+The analytic branches are proved in the text; the phase checker does not
+reprove them.
+\end{table}
+
+The same finite-floor, corner and analytic-far hypotheses used in the
+mathematical reduction are checked at their exact closed guards.
+In particular the finite selected-pair floors remain premises throughout
+their stated degree tiers. Positive interpolation and the closed physical
+chart cover turn the verified rational inequalities into strict exclusion
+at every other physical point.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Finite certificate coverage. Each phase degree has two certificate
+records of the same tree, recertified with substituted bounds.}
+\label{cert:coverage}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Degrees & Count & Checked witnesses & Tree nodes\\
+\midrule
+2--40 &39&39& polynomial\\
+41--319 and $511$ &280&560&51--101\\
+320--510 &191&382&$51$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{cert:coverage} gives 471 phase degrees and 942 checked records
+of 471 distinct trees.
+The trees for degrees $320,\ldots,510$ each have 51 nodes, 26 leaves
+and three analytic far leaves, and use the grid norm \eqref{cert:grid-norm}. The independent
+check verifies their numerical and noncorner near regions with its own
+bounds and applies the analytic corner estimate from 256.
+\begin{proof}[Proof of Theorem~\ref{thm:main-location}]
+For $n\geq512$, apply Theorem~\ref{ul:tail-location}; for
+$2\leq n\leq511$, apply Proposition~\ref{cert:finite-verification}.
+These ranges cover every integer $n\geq2$.
+\end{proof}
+
+The certificate trees were constructed by a separately recorded native
+implementation using Arb~\cite{Johansson2017Arb}, FLINT~\cite{FLINT},
+MPFR~\cite{Fousse2007MPFR} and GMP~\cite{GMP}.
+The inputs used for this version combine the 560 authenticated certificate
+records for degrees $41,\ldots,319$ and $511$ with 382 newly generated
+records for degrees $320,\ldots,510$. The latter were generated in a new
+primary and fresh native pass at each degree.
+A new execution of the independent direct-sum checker recertified all
+942 records, using the recorded trees and exact rational phase keys with
+its own substituted numerical bounds. No stored native numerical endpoint
+is a premise of this recertification. A separate fresh execution rechecked
+both records at each of degrees 41, 458 and 511, with all scientific
+result fields agreeing with the full run.
+The polynomial checker was freshly compiled and rechecked on degrees
+2 and 17; the accepted records for all 39 polynomial certificates are
+retained, and no new full 39-degree replay is claimed.
+
+The reproduction record \path{regeneration-20261114.md} identifies the
+new native and independent-checker executions, their input and output
+inventories, source and runtime identities, and reproduction commands.
+The independent checker's exact source, runtime and input pins are in
+\path{code/regeneration_i25_20261114/input-freeze.json};
+the freeze of the 2026 native campaign for degrees $320,\ldots,510$ is
+\path{code/regeneration_20261114/frozen-inputs.json}.
+The new independent-checker outputs, together with the 942 input records
+described above, provide the phase evidence used in this version.

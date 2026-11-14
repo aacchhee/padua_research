@@ -1,0 +1,192 @@
+{
+  "schema": "independent-corner-replay-v2",
+  "status": "PASS independent exact finite replay; analytic local reduction separately reviewed",
+  "rules_sha": "3dda890275a7599caa707b0fb8c0b6e6f6a80643",
+  "reviewer": "Distinct Codex /root/check_rows; assigned gpt-6-astra high; serving metadata not independently exposed",
+  "arithmetic": "GMP exact integers with directed dyadic quantization at512bits; exact Machin arctangent rationals and Taylor cosine remainder; no MPFR or developer kernel",
+  "build_command": [
+    "g++",
+    "-O2",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp",
+    "-lgmpxx",
+    "-lgmp",
+    "-o",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/check-corner/check_corner_exact"
+  ],
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "command": "python topics/padua-argmax-bridge-20261105/code/check_corner_receipt.py --run",
+  "execution_started_utc": "2026-11-05T21:25:32.662157+00:00",
+  "execution_finished_utc": "2026-11-05T21:25:34.232417+00:00",
+  "execution_commands": [
+    [
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/check-corner/check_corner_exact",
+      "2"
+    ],
+    [
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/check-corner/check_corner_exact",
+      "33"
+    ],
+    [
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/check-corner/check_corner_exact",
+      "64"
+    ],
+    [
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/check-corner/check_corner_exact",
+      "128"
+    ]
+  ],
+  "gmp_runtime_version": "6.3.0",
+  "linked_runtime": "\tlinux-vdso.so.1 (0x00007fd4312bc000)\n\tlibgmp.so.10 => /lib/x86_64-linux-gnu/libgmp.so.10 (0x00007fd4311fa000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fd430f94000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007fd430f67000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd430d73000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fd430c81000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fd4312be000)\n",
+  "supersedes": {
+    "receipt_sha256": "28050ad27ecccb011faf0df4958744041e3843e3cd1581ca921b830e1504983f",
+    "source_sha256": "84cbbe858b52711c99713b05f6b538eb352efb73aa41c2c1eac715288362bfa6",
+    "status": "initial PASS withdrawn",
+    "reason": "two_w divided by 2 before canonicalization, violating GMP canonical-operand contract",
+    "correction": "canonicalize immediately after two_w construction, before any arithmetic",
+    "historical_archive": "local-output/argmax-bridge-20261105/check-corner/initial-withdrawn"
+  },
+  "comparison_with_withdrawn_outputs": [
+    {
+      "file": "n2-control.json",
+      "initial_sha256": "ef90742b93d1c3d7d4273c1081374bf3b5e263125c51eca7908bac2d4e56039d",
+      "corrected_sha256": "ef90742b93d1c3d7d4273c1081374bf3b5e263125c51eca7908bac2d4e56039d",
+      "byte_identical": true
+    },
+    {
+      "file": "n33.json",
+      "initial_sha256": "efd13d849783bdf240b2a24e207a2a43604b216de1654bcc1e3fa773e4a383c9",
+      "corrected_sha256": "efd13d849783bdf240b2a24e207a2a43604b216de1654bcc1e3fa773e4a383c9",
+      "byte_identical": true
+    },
+    {
+      "file": "n64.json",
+      "initial_sha256": "8078622e8dcc7e35a0cd34b1ffe3918a62e51aad508bf9df04f59c14c5fcea58",
+      "corrected_sha256": "8078622e8dcc7e35a0cd34b1ffe3918a62e51aad508bf9df04f59c14c5fcea58",
+      "byte_identical": true
+    },
+    {
+      "file": "n128.json",
+      "initial_sha256": "67db2f1155764cb2384909913e88dee12b824d262d9ea0a25512ad5f9595df2d",
+      "corrected_sha256": "67db2f1155764cb2384909913e88dee12b824d262d9ea0a25512ad5f9595df2d",
+      "byte_identical": true
+    }
+  ],
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp",
+      "sha256": "3646f4e8b6b16957b9e1114f95ad2f0a7c18eec4687b49d5e6f1947a25eea6e3",
+      "bytes": 5725
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/check_corner_receipt.py",
+      "sha256": "59e6aeec23433c877b99ec86aee71eaa03b514697dcd0ba1df711dc0f643dfe4",
+      "bytes": 7683
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N3-corner-radius-reduction.md",
+      "sha256": "8cf89c491a4d82df81a69bd1024139d1224bd1f43fd91b1d1fe58a1dd519aee4",
+      "bytes": 3683
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N3-corner-bounds.md",
+      "sha256": "7241cd4221643473cf34c9a36e502d1095a916a0b2f67075d2fb4093d2142fe6",
+      "bytes": 6319
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-corner-bounds.json",
+      "sha256": "fe843711ff66e4a89f7856fc952441537a69d2907a5c78a6a844d61fec3e9c46",
+      "bytes": 10114
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_corner_bounds.c",
+      "sha256": "a0497ca1219850e28f2bf51e72cb4fc8f78cde238b81fd678262d646511402bd",
+      "bytes": 9519
+    }
+  ],
+  "binary": {
+    "path": "local-output/argmax-bridge-20261105/check-corner/check_corner_exact",
+    "sha256": "b3b0efdbef5cb74694b7a9327850570ed28ccf5f264d879a1147712fcecd525c",
+    "bytes": 54968
+  },
+  "rows": [
+    {
+      "degree": 33,
+      "own_interval_inside_producer": {
+        "corner_lower": true,
+        "corner_upper": true,
+        "energy_lower": true,
+        "energy_upper": true
+      },
+      "nonzero_cardinals": 579,
+      "zero_cardinals_omitted": 16,
+      "kappa_approx_diagnostic": 8.592443849760094e-05,
+      "certified_common_kappa": "1/12500",
+      "certified_scaled_phase_box": "1/128",
+      "exact_assembly_pass": true,
+      "raw": {
+        "path": "local-output/argmax-bridge-20261105/check-corner/n33.json",
+        "sha256": "efd13d849783bdf240b2a24e207a2a43604b216de1654bcc1e3fa773e4a383c9",
+        "bytes": 2921
+      }
+    },
+    {
+      "degree": 64,
+      "own_interval_inside_producer": {
+        "corner_lower": true,
+        "corner_upper": true,
+        "energy_lower": true,
+        "energy_upper": true
+      },
+      "nonzero_cardinals": 2113,
+      "zero_cardinals_omitted": 32,
+      "kappa_approx_diagnostic": 8.268390232855796e-05,
+      "certified_common_kappa": "1/12500",
+      "certified_scaled_phase_box": "1/128",
+      "exact_assembly_pass": true,
+      "raw": {
+        "path": "local-output/argmax-bridge-20261105/check-corner/n64.json",
+        "sha256": "8078622e8dcc7e35a0cd34b1ffe3918a62e51aad508bf9df04f59c14c5fcea58",
+        "bytes": 2930
+      }
+    },
+    {
+      "degree": 128,
+      "own_interval_inside_producer": {
+        "corner_lower": true,
+        "corner_upper": true,
+        "energy_lower": true,
+        "energy_upper": true
+      },
+      "nonzero_cardinals": 8321,
+      "zero_cardinals_omitted": 64,
+      "kappa_approx_diagnostic": 8.10996007879208e-05,
+      "certified_common_kappa": "1/12500",
+      "certified_scaled_phase_box": "1/128",
+      "exact_assembly_pass": true,
+      "raw": {
+        "path": "local-output/argmax-bridge-20261105/check-corner/n128.json",
+        "sha256": "67db2f1155764cb2384909913e88dee12b824d262d9ea0a25512ad5f9595df2d",
+        "bytes": 2940
+      }
+    }
+  ],
+  "rational_control": {
+    "degree": 2,
+    "corner": "3",
+    "energy": "331/18",
+    "zero_cardinals": 1,
+    "method": "independent direct rational coefficient kernel and physical endpoint derivatives",
+    "raw": {
+      "path": "local-output/argmax-bridge-20261105/check-corner/n2-control.json",
+      "sha256": "ef90742b93d1c3d7d4273c1081374bf3b5e263125c51eca7908bac2d4e56039d",
+      "bytes": 2876
+    }
+  },
+  "limits": "Only the three finite local radii. No full-degree cover, B2/B3 pass, global argmax extension, external novelty or required Claude audit. Raw output off Git; archival pending, all regenerating source included."
+}

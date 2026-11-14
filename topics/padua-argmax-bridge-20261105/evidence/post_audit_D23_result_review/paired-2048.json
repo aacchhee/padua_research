@@ -1,0 +1,130 @@
+{
+  "CPU_before_receipt": 8.499126,
+  "N": 2048,
+  "SPEC": {
+    "bytes": 3598,
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D23_result_review/SPEC.md",
+    "sha256": "ba546272f7b607cfe171c55f1ce04ba31f075478600545cf1599ee4c154130b0"
+  },
+  "build_CPU": {
+    "baseline": 1.9239999999999997,
+    "candidate": 1.954695
+  },
+  "builds": {
+    "baseline": {
+      "bytes": 44193,
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D23-result-review/baseline-build.json",
+      "sha256": "84ce7e7f1390dd7aca4e2803b1e4118eecdba1adb828d75fa173eb74c06ebbf7"
+    },
+    "candidate": {
+      "bytes": 44777,
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D23-result-review/candidate-build.json",
+      "sha256": "6b0291315c3d1d31eb560190eef515aca4a260c9709a91743fc1d9015b8194cc"
+    }
+  },
+  "calls": [
+    {
+      "inclusive_CPU": 2.615699,
+      "label": "baseline-cold-n2048",
+      "raw": {
+        "counts": [
+          8192,
+          0,
+          9804,
+          0,
+          6,
+          4094
+        ],
+        "hex": [
+          "0x1.10ad91b801f5bp+5",
+          "0x1.10ad91b801f5cp+5",
+          "0x1.6ba5cbc800000p-59"
+        ],
+        "returncode": 0
+      }
+    },
+    {
+      "inclusive_CPU": 0.48883100000000024,
+      "label": "candidate-cold-n2048",
+      "raw": {
+        "counts": [
+          8192,
+          0,
+          9804,
+          0,
+          6,
+          4094
+        ],
+        "hex": [
+          "0x1.10ad91b79f307p+5",
+          "0x1.10ad91b863639p+5",
+          "0x1.8866236800000p-29",
+          "0x1.0000000000000p+0"
+        ],
+        "returncode": 0
+      }
+    }
+  ],
+  "comparison": {
+    "all_counters_equal": true,
+    "all_required_overlaps": true,
+    "both_coefficient_tables_cold": true,
+    "candidate_width": "401817/70368744177664",
+    "formal_candidate_radius_gate": true,
+    "n": 2048,
+    "new_raw_equals_primary": true,
+    "new_upper_minus_fresh_old_lower": "199535/70368744177664",
+    "new_upper_minus_primary_old_lower": "199535/70368744177664",
+    "old_raw_equals_primary": true,
+    "old_width": "1/140737488355328",
+    "phase_pi": [
+      "1/12",
+      "1/16"
+    ]
+  },
+  "freeze": {
+    "bytes": 4440,
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/FREEZE.json",
+    "sha256": "f8714eba9bc2d979d4d6c95f1a1276089aefe77a754511356f6d682d1d72af6f"
+  },
+  "pair_CPU": {
+    "baseline-cold-n2048": 2.615699,
+    "candidate-cold-n2048": 0.48883100000000024
+  },
+  "primary_evidence_review": {
+    "primary_CPU_checkpoint": 8.446031,
+    "primary_calls_reviewed": 24,
+    "primary_controls_rerun": false,
+    "primary_moment_comparisons": 18,
+    "primary_unique_identity_checks": 236
+  },
+  "raw_checkpoint": {
+    "bytes": 1702,
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D23-result-review/checker-checkpoint.json",
+    "sha256": "1c4118c9fa30f67cc4f377f9ccce365357d99fa365e81218ad5ae7f31ac835be"
+  },
+  "scope": "Two fresh cold-table calls only; primary24 controls reviewed as source/evidence, not rerun.",
+  "source": {
+    "bytes": 12297,
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D23_result_review/controller.py",
+    "sha256": "4dc0fdebec093ec44036772773595b106fe35dc47913bd46d75e8561112cb464"
+  },
+  "stages": [
+    {
+      "accounting_complete": true,
+      "checkpoint": {
+        "bytes": 1702,
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D23-result-review/checker-checkpoint.json",
+        "sha256": "1c4118c9fa30f67cc4f377f9ccce365357d99fa365e81218ad5ae7f31ac835be"
+      },
+      "complete": true,
+      "first_failure": null,
+      "inclusive_CPU_with_supervision": 8.451175,
+      "returncode": 0,
+      "stage": "checker",
+      "stop": null
+    }
+  ],
+  "status": "PROVISIONAL_REQUIRES_FINAL_ACCOUNT_AND_EXIT0",
+  "within_replay_old_over_new_ratio": 5.350927007493385
+}

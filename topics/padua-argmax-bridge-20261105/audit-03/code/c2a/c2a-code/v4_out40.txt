@@ -1,0 +1,25 @@
+H0 = 0.3100022644073144  C* = 1.846160310423926  j = 0.14354192650599568
+points: 906  violations: 0
+0<=b<=rho                          min slack -1.110e-16 at (0.0000, 0.8750)
+Bb>=1679y^2/8000                   min slack 0.000e+00 at (0.0000, 0.0000)
+Cinf-C*<=-ju+t0p-(H0+v0)z          min slack -1.110e-15 at (0.0000, 0.0000)
+Cinf<9/4                           min slack 4.001e-01 at (0.1571, 0.0000)
+Ec(0,y)=-Bb                        min slack 9.828e-09 at (0.0000, 0.7500)
+Ec<=3x^1.5/8-Bb                    min slack -1.858e-12 at (0.0000, 0.4712)
+Ec<=4I4 p^1.5/(pi^2 sqrt a)-Bb     min slack -5.879e-11 at (0.0000, 1.4923)
+Ec<=5x^1.5/12-Bb                   min slack -1.027e-11 at (0.0000, 0.5498)
+Einf<=a/3+B-d0u-v0z                min slack 0.000e+00 at (0.0000, 0.0000)
+aD<=7u/2                           min slack 0.000e+00 at (0.0000, 0.0000)
+b>=y                               min slack -2.220e-16 at (0.0000, 1.5708)
+bfull-bc<=3u/pi^2                  min slack 0.000e+00 at (0.0000, 0.0000)
+bfull<79/(5pi^2)                   min slack 3.276e-01 at (1.5708, 1.5708)
+central-decomp |Ec - cancel|       min slack 1.000e-08 at (0.0000, 1.5708)
+regular-loss                       min slack -1.110e-15 at (0.0000, 0.0000)
+xp+yq<=4u                          min slack 0.000e+00 at (0.0000, 0.0000)
+weighted-C min slack 0.0
+coef (0.30,0.20): integral -1.071521160774 closed -1.071521160774 | bfull-2D0-integral/pi = -3.06e-14 | sup|subtracted integrand| = 0.6220
+coef (1.00,0.40): integral -0.497300156669 closed -0.497300156669 | bfull-2D0-integral/pi = 1.22e-13 | sup|subtracted integrand| = 0.2847
+coef (0.20,2.50): integral 0.599954691317 closed 0.599954691317 | bfull-2D0-integral/pi = 6.21e-14 | sup|subtracted integrand| = 0.3085
+coef (1.50,1.50): integral 1.585167371958 closed 1.585167371958 | bfull-2D0-integral/pi = 1.01e-14 | sup|subtracted integrand| = 0.5785
+coef (0.00,0.00): integral -1.149945916186 closed -1.149945916186 | bfull-2D0-integral/pi = 4.44e-15 | sup|subtracted integrand| = 0.8106
+coef (3.14,0.00): integral 0.000000000000 closed 0.000000000000 | bfull-2D0-integral/pi = -8.63e-32 | sup|subtracted integrand| = 0.0000

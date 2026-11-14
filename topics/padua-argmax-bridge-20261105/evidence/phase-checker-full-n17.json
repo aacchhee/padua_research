@@ -1,0 +1,112 @@
+{
+  "status": "MEASURED full-leaf replay; NOT ACCEPTED",
+  "rules_sha": "c000899f3fb10d6ba0f1725341a045fe11ec943a",
+  "degree": 17,
+  "candidate_sha256": "64f7befd86658c8d9f29b05c1cb5a0162e611b726b161e737610547bed218c4b",
+  "candidate_bytes": 81585,
+  "candidate_path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-phase-compact.json",
+  "replay_path": "local-output/argmax-bridge-20261105/phase-checker/n17-full-r3-replay.json",
+  "replay_sha256": "021ded297f360245fb30a884efe7a3670321e4a736c22873abaa6079cc0257d7",
+  "replay_bytes": 570121,
+  "accepted": false,
+  "complete": true,
+  "checked_leaves": 1288,
+  "total_leaves": 1288,
+  "pending": 0,
+  "passed_leaves": 924,
+  "failed_leaves": 364,
+  "all_kind_counts": {
+    "outside": 32,
+    "far": 524,
+    "corner-orbit-plus-defect": 704,
+    "local-corner-plus-defect": 28
+  },
+  "failed_kind_counts": {
+    "far": 184,
+    "corner-orbit-plus-defect": 180
+  },
+  "cpu_seconds": 60.60368947,
+  "independent_constants": [
+    8.6179478249936,
+    8.617947824993601,
+    3.141592653589793,
+    3.1415926535897936
+  ],
+  "example_failed_leaves": [
+    {
+      "root": 0,
+      "path": "01010",
+      "kind": "far",
+      "valid": false,
+      "bounds": [
+        12.86916394136224,
+        11.398460326270724,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    },
+    {
+      "root": 0,
+      "path": "01011",
+      "kind": "far",
+      "valid": false,
+      "bounds": [
+        12.325859333286811,
+        11.353138120070279,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    },
+    {
+      "root": 0,
+      "path": "10100",
+      "kind": "far",
+      "valid": false,
+      "bounds": [
+        12.456521910755805,
+        10.950801382649118,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ]
+    }
+  ],
+  "kernel_source": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-r6twy06j/arb_kernel.cpp",
+    "bytes": 5635,
+    "sha256": "236116452dc7aae66e39cbf8800fe847cffe931ac0ce8a9682397313de7c43a6"
+  },
+  "preprocessed_translation_unit": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-r6twy06j/kernel.ii",
+    "bytes": 1269261,
+    "sha256": "808e0e5971a582114663b8557fb0769900c83bddb2d55f29b5736da4f09c026b"
+  },
+  "checker_binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-checker/check-r6twy06j/libphase_checker.so",
+    "bytes": 38224,
+    "sha256": "e44379b090a1889cf43f2fc37defebd2c8e1327522b6153b477faddf876e3f32"
+  },
+  "checker_python_sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check.py",
+      "bytes": 9994,
+      "sha256": "8713026a1b5a872f0e8dd33c311eafef2cf310f42ae2eebb4055ad224b8acfae"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5284,
+      "sha256": "a8a805ba27e880a3a5cf1db7d0707dab4a982d7a988b493c822015518ee2e2c2"
+    }
+  ],
+  "receipt_build_closure": "full source/header/toolchain/runtime/loaded-dependency manifest in pinned replay receipt",
+  "interpretation": "Finite cosine polynomial interval dependency is too wide on broad producer leaves; this is an enclosure failure, not a pointwise counterexample.",
+  "remaining": "Independent source/math review, tighter independently implemented enclosure or validated internal leaf refinement, and successful complete replay before acceptance."
+}

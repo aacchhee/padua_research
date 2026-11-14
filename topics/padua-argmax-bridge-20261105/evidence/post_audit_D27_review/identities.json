@@ -1,0 +1,69 @@
+{
+  "N": 1024,
+  "checked_before_scalar_arithmetic": true,
+  "cpu_cap_seconds": 10,
+  "input_identities": {
+    "code/post_audit_D08_review/check.py": {
+      "bytes": 8577,
+      "sha256": "37e58bc880259c27cd2282dab48231f11822452d6fd2db876c846d1b9a008485"
+    },
+    "code/post_audit_D27_corner/SPEC.md": {
+      "bytes": 2263,
+      "sha256": "106baa1c04632e6ab26e4220addc6e5aaa01b3b5d3250b88f17ceacc3f30717f"
+    },
+    "code/post_audit_D27_corner/budget-1024.json": {
+      "bytes": 5742,
+      "sha256": "252e48bb9031f013bb54774f7eab18a8452e579be267bcd5f6df0deb540609ad"
+    },
+    "code/post_audit_D27_corner/evaluate.py": {
+      "bytes": 4480,
+      "sha256": "2d700d172f3c4c86493751289a96fb9e066fa6173c3c599df1a60b9028f9297f"
+    },
+    "code/post_audit_D27_review/SPEC.md": {
+      "bytes": 2565,
+      "sha256": "af9c976a8b094c56e4c7e626b6a5623b9f43c78d584713c86ed5d55b164ff154"
+    },
+    "code/post_audit_D27_review/check.py": {
+      "bytes": 7838,
+      "sha256": "eb9496b89c6382b5e7029de3fe8fbb6eb8fb1bc5ef1bf5bc6e204439703b6a26"
+    }
+  },
+  "interval_count": 34,
+  "interval_keys": [
+    "Cnew",
+    "D04_constant",
+    "E0",
+    "E6",
+    "F",
+    "G0",
+    "Gg",
+    "H",
+    "KD",
+    "L",
+    "MA",
+    "Mmodel",
+    "Mnew",
+    "Paxis_upper",
+    "Qg",
+    "T",
+    "U",
+    "VB",
+    "W",
+    "axis_allowance",
+    "b",
+    "central_rows",
+    "constant_gap",
+    "criterion",
+    "delta",
+    "diagonal_allowance",
+    "diagonal_lower",
+    "endpoint_rows",
+    "g",
+    "hr",
+    "mesh",
+    "q",
+    "r",
+    "radial_coefficient"
+  ],
+  "prerelease_report_sha256": "1473ba56312ab3817fa323c66b16caf0a21b3d1e69c3b0bdb6b1d1d692858055"
+}

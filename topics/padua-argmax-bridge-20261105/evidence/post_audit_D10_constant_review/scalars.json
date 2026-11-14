@@ -1,0 +1,24 @@
+{
+  "cpu_seconds": 0.0,
+  "majorant_derivatives": [
+    "5/9",
+    "5/4",
+    "15/8",
+    "75/32",
+    "165/32"
+  ],
+  "positive_slacks": {
+    "H_increment": "960953/183035904",
+    "c_minus_one_third": "179/2500",
+    "far_22": "1696/81375",
+    "far_constant": "290509/35755500",
+    "far_phase_floor": "67/768000",
+    "far_square_floor": "3/8000",
+    "fourth_derivative": "17/864",
+    "global_8over3": "7181/295500",
+    "near_linear": "35/1152",
+    "weighted_square": "117/31250"
+  },
+  "source_sha256": "34e5415e7546387037a74303871709de89892c55bf61b618cd970d71ccdde4a1",
+  "status": "PASS_EXACT_FRACTION_CONTROLS"
+}

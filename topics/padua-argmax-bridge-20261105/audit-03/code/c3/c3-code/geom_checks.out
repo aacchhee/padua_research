@@ -1,0 +1,22 @@
+n=2: cardinal delta max err 4.26e-16; divided-difference form max diff 9.09e-13; #nodes=6 dim=6
+n=3: cardinal delta max err 5.18e-16; divided-difference form max diff 2.98e-13; #nodes=10 dim=10
+n=4: cardinal delta max err 3.00e-16; divided-difference form max diff 5.27e-12; #nodes=15 dim=15
+n=5: cardinal delta max err 1.05e-15; divided-difference form max diff 6.25e-13; #nodes=21 dim=21
+n=2: every mesh rectangle has exactly two odd vertices, opposite; L1 distances sum to 2 (exact); fine-grid uncovered points=0; tie points=72
+n=3: every mesh rectangle has exactly two odd vertices, opposite; L1 distances sum to 2 (exact); fine-grid uncovered points=0; tie points=142
+n=4: every mesh rectangle has exactly two odd vertices, opposite; L1 distances sum to 2 (exact); fine-grid uncovered points=0; tie points=235
+n=5: every mesh rectangle has exactly two odd vertices, opposite; L1 distances sum to 2 (exact); fine-grid uncovered points=0; tie points=351
+n=6: every mesh rectangle has exactly two odd vertices, opposite; L1 distances sum to 2 (exact); fine-grid uncovered points=0; tie points=490
+n=7: every mesh rectangle has exactly two odd vertices, opposite; L1 distances sum to 2 (exact); fine-grid uncovered points=0; tie points=652
+n=8: every mesh rectangle has exactly two odd vertices, opposite; L1 distances sum to 2 (exact); fine-grid uncovered points=0; tie points=837
+n=2: max |sum_jk w/4 sum|g| - S_n(periodic)|=1.33e-15; min(Delta - eligible projection) over 34 = -9.437e-16 (>= -1e-12 expected)
+n=3: max |sum_jk w/4 sum|g| - S_n(periodic)|=1.78e-15; min(Delta - eligible projection) over 39 = -4.441e-16 (>= -1e-12 expected)
+n=4: max |sum_jk w/4 sum|g| - S_n(periodic)|=2.22e-15; min(Delta - eligible projection) over 35 = -1.110e-15 (>= -1e-12 expected)
+n=5: max |sum_jk w/4 sum|g| - S_n(periodic)|=2.66e-15; min(Delta - eligible projection) over 37 = -1.110e-15 (>= -1e-12 expected)
+n=6: max |sum_jk w/4 sum|g| - S_n(periodic)|=5.33e-15; min(Delta - eligible projection) over 46 = 1.166e-15 (>= -1e-12 expected)
+n=3: S_n symmetry max err 2.66e-15; S_n(0,0)=3.776142374915 vs Lambda_c=3.776142374915
+n=4: S_n symmetry max err 3.55e-15; S_n(0,0)=4.409725435508 vs Lambda_c=4.409725435508
+n=6: S_n symmetry max err 6.22e-15; S_n(0,0)=5.417499430144 vs Lambda_c=5.417499430144
+vertical half-kernel V = A(u,v)/(cos u - cos v) with a=(cos al+cos be)/2: max err 3.13e-13
+horizontal half-kernel with common sign (-1)^(J+j): max err 3.86e-13
+endpoint identity (sum over j AND sigma) holds for n<=11: True; with sigma fixed at +1 it fails at r=0 (value 0.5)

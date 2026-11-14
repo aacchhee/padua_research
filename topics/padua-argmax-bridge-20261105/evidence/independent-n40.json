@@ -1,0 +1,75 @@
+{
+  "accepted": true,
+  "all_supplied_bounds_verified": true,
+  "binary_sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605",
+  "build": {
+    "argv": [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/kernel.cpp",
+      "-lgmpxx",
+      "-lgmp",
+      "-o",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/check-native-37-40/kernel"
+    ],
+    "binary_sha256": "f17fed2e69a98c952d1ad5e72de03c08b2ceb07970c49fc0db1b35396fe3e605",
+    "child_system_seconds": 0.130517,
+    "child_user_seconds": 1.6287869999999998,
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+    "cpu_seconds": 1.7593039999999998,
+    "cwd": "/workspace/padua_research",
+    "exit_status": 0,
+    "gmp_package": "2:6.3.0+dfsg-3",
+    "input_head": "bda45a4c1392bea87de0841b6b23e5c35b2a694b",
+    "python": "3.12.14",
+    "source_sha256": {
+      "check.py": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e",
+      "kernel.cpp": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0"
+    },
+    "started_utc": "2026-11-06T05:59:11.540816+00:00",
+    "wall_seconds": 1.75993857200001
+  },
+  "certificate_bytes": 9663,
+  "certificate_sha256": "37cb278ad498d9f531634b2dca470426a86339b5d83cd437bfb2dd093afa374f",
+  "checker_sha256": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e",
+  "complete_partition": true,
+  "counts": {
+    "bound": 350,
+    "corner": 2,
+    "splits": 351
+  },
+  "cpu_accounting": "RUSAGE_CHILDREN user+system delta for driver and its waited-for native child",
+  "cpu_limit_per_process_seconds": 1790,
+  "execution": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/padua_research/topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/native-37-40/n40.json.gz",
+      "--binary",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/check-native-37-40/kernel",
+      "--output",
+      "/workspace/padua_research/local-output/argmax-bridge-20261105/check-native-37-40/replay-n40.json"
+    ],
+    "child_system_seconds": 21.581418,
+    "child_user_seconds": 1345.39125,
+    "cpu_seconds": 1366.9726679999999,
+    "cwd": "/workspace/padua_research",
+    "exit_status": 0,
+    "started_utc": "2026-11-06T06:28:06.774457+00:00",
+    "wall_seconds": 1367.457986809
+  },
+  "format": "padua-native-independent-check-v1",
+  "independent_execution": true,
+  "input_head": "bda45a4c1392bea87de0841b6b23e5c35b2a694b",
+  "kernel_sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+  "n": 40,
+  "native_exit_status": 0,
+  "native_exit_status_basis": "unchanged driver subprocess.run(check=True) completed",
+  "no_arithmetic_cache": true,
+  "producer_accepted": false,
+  "raw_receipt_sha256": "0b940477a9f212ae95e805927b758e5fc92f7608b497609f2e09ecc87112fbe1",
+  "runner_sha256": "37f85f705afa1bd71daa2bf33ffc72b59c1dd63f48a9f6c8d6a303e3aac82424",
+  "seconds": 1367.416693362,
+  "source_hashes_checked_before_and_after": true
+}

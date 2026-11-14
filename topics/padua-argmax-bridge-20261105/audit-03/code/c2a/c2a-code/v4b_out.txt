@@ -1,0 +1,5 @@
+envelope lhs/rhs                                             max 0.2537 at (0.0, 1.5708, np.float64(0.0), 'R')
+|N-U0|/(12t/pi)                                              max 0.0796 at (0.0, 1.2566, np.float64(0.7854))
+pole remainder |N/(2sin(t/2))-U0/t| - (6+pi t/6)             max -5.7374 at (0.0, 1.4661, np.float64(0.0))
+|I-4w log sin t|/(P/4*(11+8log(4pi/t)))                      max 0.3898 at (0.0, 0.1047, np.float64(0.0))
+|2a cot log sin - 4a log t/t|/(a t(1+|log t|))               max 0.4544 at (0.733, 1.7802, np.float64(0.7854))

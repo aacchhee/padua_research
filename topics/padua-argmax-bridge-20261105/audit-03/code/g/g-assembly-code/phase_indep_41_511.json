@@ -1,0 +1,100 @@
+[
+ {
+  "file": "primary-41.json",
+  "n": 41,
+  "method": "TREE",
+  "M": "13",
+  "V_E": 12.013761057860448,
+  "grid_bound": 14.206317751678116,
+  "L": 12.013755516338083,
+  "leaves": 51,
+  "counts": {
+   "OUTSIDE": 3,
+   "FAR": 43,
+   "NEAR": 5,
+   "ANALYTIC_FAR": 0
+  },
+  "min_far_margin": "2696645921418835/6082392771740565504",
+  "min_near_margin": "227275782874007484172251803/151745991585839089031577600000",
+  "corner": {
+   "kind": "three actual points",
+   "q": "13193614527403/343597383680",
+   "threshold": "190333/28812",
+   "radial_coeff_lower": "78684125233892449/48892533308129280"
+  },
+  "S_keys": 64,
+  "ok": true
+ },
+ {
+  "file": "fresh-41.json",
+  "n": 41,
+  "method": "TREE",
+  "M": "13",
+  "V_E": 12.013761057860448,
+  "grid_bound": 14.206317751678116,
+  "L": 12.013755516338083,
+  "leaves": 51,
+  "counts": {
+   "OUTSIDE": 3,
+   "FAR": 43,
+   "NEAR": 5,
+   "ANALYTIC_FAR": 0
+  },
+  "min_far_margin": "2696645921418835/6082392771740565504",
+  "min_near_margin": "227275782874007484172251803/151745991585839089031577600000",
+  "corner": {
+   "kind": "three actual points",
+   "q": "13193614527403/343597383680",
+   "threshold": "190333/28812",
+   "radial_coeff_lower": "78684125233892449/48892533308129280"
+  },
+  "S_keys": 64,
+  "ok": true
+ },
+ {
+  "file": "primary-511.json",
+  "n": 511,
+  "method": "GRID",
+  "M": "30",
+  "V_E": 25.255613537653964,
+  "grid_bound": 29.864858240604388,
+  "L": 25.255613532489082,
+  "leaves": 26,
+  "counts": {
+   "OUTSIDE": 0,
+   "FAR": 17,
+   "NEAR": 6,
+   "ANALYTIC_FAR": 3
+  },
+  "min_far_margin": "119262731471225/13792273858822144",
+  "min_near_margin": "339656542857811/68961369294110720",
+  "corner": {
+   "kind": "E12 analytic (n>=256)"
+  },
+  "S_keys": 45,
+  "ok": true
+ },
+ {
+  "file": "fresh-511.json",
+  "n": 511,
+  "method": "GRID",
+  "M": "30",
+  "V_E": 25.255613537653964,
+  "grid_bound": 29.864858240604388,
+  "L": 25.255613532489082,
+  "leaves": 26,
+  "counts": {
+   "OUTSIDE": 0,
+   "FAR": 17,
+   "NEAR": 6,
+   "ANALYTIC_FAR": 3
+  },
+  "min_far_margin": "119262731471225/13792273858822144",
+  "min_near_margin": "339656542857811/68961369294110720",
+  "corner": {
+   "kind": "E12 analytic (n>=256)"
+  },
+  "S_keys": 45,
+  "ok": true
+ }
+]

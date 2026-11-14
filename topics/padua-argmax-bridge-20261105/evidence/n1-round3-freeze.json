@@ -1,0 +1,80 @@
+{
+  "kind": "analytic-development-freeze; not computational proof evidence",
+  "round": 3,
+  "source_head": "c000899f3fb10d6ba0f1725341a045fe11ec943a",
+  "developer": "/root/n1; Codex",
+  "requested_model_effort": "gpt-6-astra ultra; parent authorization; runtime metadata not independently exposed",
+  "files": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N1-endpoint-tail.md",
+      "bytes": 8499,
+      "sha256": "dead6c1d4b75aac5ced2ac37154c678bd38f331f03013a978e1ae63b1fe7496c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N1-regularized-pole.md",
+      "bytes": 6532,
+      "sha256": "f030f230fa8b0c8d5f5d8fda223327fb2d7fda035ebc938b7d25f58d6a683cdd"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N1-joint-endpoint-profile.md",
+      "bytes": 8539,
+      "sha256": "aa05e4469b71e0d97228e4d418955bc32e7bf0946a7534ce2a3ecee1b3ce77f6"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/ideas/N1-endpoint.md",
+      "bytes": 8734,
+      "sha256": "ed168e4d7fe30b027f3a59a4db25e6967d35f8f8be03232d59d5b20c514247e6"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/novelty-gate-N1.md",
+      "bytes": 4886,
+      "sha256": "d7cad44b93a2cb8bef486fb8a16296962c1318cd25a8d43db8b7d9d0567228c3"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/attempts/N1.md",
+      "bytes": 11176,
+      "sha256": "f10cc279b5ff38fba63065e66f3b01c1d7c290bb2701fdf3a5104091ddf5a43d"
+    }
+  ],
+  "claims": [
+    {
+      "id": "PD-T?argmax-bridge-codex-N1-03",
+      "status": "PROVED (developer analytic proof; distinct review pending)",
+      "scope": "Boundary-uniform cancellation-integral perturbation and count-free endpoint tail"
+    },
+    {
+      "id": "PD-T?argmax-bridge-codex-N1-04",
+      "status": "PROVED (developer analytic proof; distinct review pending)",
+      "scope": "All-integer pole norm error <=5/n^2 and periodic constant-profile sup/Lipschitz bounds"
+    },
+    {
+      "id": "PD-T?argmax-bridge-codex-N1-05",
+      "status": "PROVED (developer analytic proof; distinct review pending)",
+      "scope": "Exact logarithmic coefficient separation and degree/log-degree-independent joint endpoint residual tail"
+    }
+  ],
+  "supplemental_check": {
+    "agent": "/root/n1/endpoint_check",
+    "scope": "Independent analytic reconstruction of the three exact proposed estimates, communicated in messages; not review of frozen files or audit approval",
+    "result": "No gap found",
+    "computation": "none"
+  },
+  "mathematical_runs": [],
+  "fits": [],
+  "prior_theory_identity_checks": {
+    "round1": {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N1-row-model.md",
+      "bytes": 8673,
+      "sha256": "d087ad8374c9e8274c5d228a47a7f796a8c64d412255a7362c0ea68863c14250"
+    },
+    "round2": {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N1-cancellation-quadrature.md",
+      "bytes": 11015,
+      "sha256": "beb762e90788758d8c31a8c13af40a2d6eb7ca3d4f0e9f9043a5f12d0b8d1534"
+    },
+    "round2_after_removing_only_parent_rho_definition_sha256": "5be3cca27524eea360668386636388dd109e85165b4c87fcaeb8769953e9052a"
+  },
+  "remaining": "Full compact profile, singular endpoint sum, exceptional h charts, central chart, interior outer quadrature and usable n1 remain OPEN. No B3 PASS or B4 authorization.",
+  "next_round": "GO only for the specific uniform endpoint-sum/exceptional-row proof test, after parent review and push; parent authorization required before starting another round.",
+  "replay": "sha256sum the six listed files and two prior theorem files; compare the listed digests. Mathematical validation requires independent reading of the analytic proofs."
+}

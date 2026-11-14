@@ -1,0 +1,311 @@
+{
+  "format": "padua-zenodo-deposit-plan-v1",
+  "status": "DRAFT_TEMPLATE_NOT_A_DEPOSIT_RECEIPT",
+  "prepared_utc_date": "2026-11-08",
+  "topic": "padua-argmax-bridge-20261105",
+  "doi": "PENDING_AC_RESERVATION",
+  "zenodo_record_url": null,
+  "final_source_commit": null,
+  "input_rules_commit": "b45e29fa1fe3dbfa2517ff8043e5d9c440870530",
+  "original_production_source_commit": "996fedcad4ba79a28e45a3fe3678adc12f1e5358",
+  "custody": "Historical 2026-11-08 package identities retained. Original return and padua30 supplied/authenticated on 2026-11-13; onset512 and I25 ZIPs still unavailable. No Zenodo upload, Windows delivery or durable external retrieval claimed.",
+  "files": [
+    {
+      "role": "original_compact_return",
+      "deposit_filename": "original-compact-return.tar.gz",
+      "local_path": "local-output/argmax-bridge-20261105/actual-return-20261107/return.tar.gz",
+      "bytes": 36045486,
+      "sha256": "b00fd57f85ce6d96a6c1fa01e2307abd815088bb8fcb28b1587657ef142b109a",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "original_offline_source_runtime_package",
+      "deposit_filename": "original-padua30.zip",
+      "local_path": "local-output/argmax-bridge-20261105/compact-release-aea62883/padua30.zip",
+      "bytes": 25111335,
+      "sha256": "aac08e5f25bd27b2710de22039efd229b4ee67d8c1e3ffef9456af200e1f74d2",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "runtime_manifest",
+      "deposit_filename": "runtime_manifest.json",
+      "local_path": "local-output/argmax-bridge-20261105/compact-release-aea62883/padua30/runtime_manifest.json",
+      "bytes": 54003,
+      "sha256": "5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "official_package_and_arithmetic_pins",
+      "deposit_filename": "asset_provenance.json",
+      "local_path": "local-output/argmax-bridge-20261105/compact-release-aea62883/padua30/asset_provenance.json",
+      "bytes": 42623,
+      "sha256": "71ee5c717288f12527698e76ed17560805dd1641488e021cfe70a91ec4924a41",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "published_source_custody",
+      "deposit_filename": "SOURCE_CUSTODY.json",
+      "local_path": "local-output/argmax-bridge-20261105/compact-release-aea62883/padua30/SOURCE_CUSTODY.json",
+      "bytes": 1655,
+      "sha256": "c9051f1910898e8af6aa895a66f8d416456b7616c5886e8936409008bfa2f31e",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "unchanged_scientific_freeze",
+      "deposit_filename": "FREEZE.json",
+      "local_path": "topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/FREEZE.json",
+      "bytes": 4153,
+      "sha256": "0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "onset512_machine_preregistration",
+      "deposit_filename": "onset512-preregistration.json",
+      "local_path": "local-output/argmax-bridge-20261105/onset512-local-20261108/preregistration.json",
+      "bytes": 49782,
+      "sha256": "532e5af6af478d48546b4134635c296cd0aac5207de4df2955dda8b0fb7781a3",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "new_compact_return_320_through_510",
+      "deposit_filename": "onset512-return-20261108.zip",
+      "local_path": "local-output/argmax-bridge-20261105/onset512-return-20261108.zip",
+      "bytes": 81602992,
+      "sha256": "da63280a7e4aec86fa52e3f8384620fbf07939006ab5f6f70222fa2485816e7e",
+      "identity_status": "read_and_rehashed_2026-11-08; distinct_result_review_accepted",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "immutable_certificate_mirror_inventory",
+      "deposit_filename": "onset512-essential-inventory.json",
+      "local_path": "local-output/argmax-bridge-20261105/onset512-local-20261108-essential-inventory.json",
+      "bytes": 75479,
+      "sha256": "d7cea34dd64d9df329d1398c2418fbf984a9084b135cad695866a9c437551740",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "derivative_certificates_only",
+      "deposit_filename": "onset512-certificates-20261108.zip",
+      "local_path": "local-output/argmax-bridge-20261105/onset512-certificates-20261108.zip",
+      "bytes": 945235,
+      "sha256": "c22d600cb67462918587b01f2ef5adcbf9030b825fb0f2cc79c1b9c27c7da8c8",
+      "identity_status": "read_and_rehashed_2026-11-08",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "historical_pre_audit04_repository_source_snapshot",
+      "deposit_filename": "padua-research-source-a433c7d-20261108.zip",
+      "local_path": "local-output/argmax-bridge-20261105/padua-research-source-a433c7d-20261108.zip",
+      "bytes": 22105198,
+      "sha256": "66acbadb34ba51a5a2c99bd34a681deef6de433da193202830d00c0aa0f4cc03",
+      "identity_status": "git_archive_EXIT0; all ZIP CRCs and exact6900-file Git tree name/size inventory pass; six critical source/freeze files match Git bytes",
+      "deposit_status": "PENDING_AC_UPLOAD",
+      "source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6"
+    },
+    {
+      "role": "independent_I25_sources_runtime_inputs_and_completed_evidence",
+      "deposit_filename": "i25-evidence-20261108T112304Z.zip",
+      "local_path": "local-output/argmax-bridge-20261105/i25-evidence-20261108T112304Z.zip",
+      "bytes": 2843611,
+      "sha256": "d1d03156dde4248fecaa25d0144cd73c7c5414f28b66a39099342b31f2f7e0f8",
+      "identity_status": "read_and_rehashed_2026-11-08; distinct_supplementary_review_accepted",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "distinct_supplementary_review_evidence",
+      "deposit_filename": "onset512-independent-review-20261108.zip",
+      "local_path": "local-output/argmax-bridge-20261105/onset512-independent-review-20261108.zip",
+      "bytes": 51749,
+      "sha256": "96f84b294b724b74bc33c112a2633bde14fed5c9220cb11196c60dae5c12ab28",
+      "identity_status": "read_and_rehashed_2026-11-08; distinct_supplementary_review_accepted",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "historical_20261108_journal_manuscript",
+      "deposit_filename": "padua-manuscript-20261108-131012-Oslo.pdf",
+      "local_path": "local-output/padua-argmax-bridge-20261105/onset512-paper-20261108/padua-manuscript-20261108-131012-Oslo.pdf",
+      "bytes": 733598,
+      "sha256": "1346fc2891e2cdd5deb6db4b1a5928a2a7bac05c1838999b1a1dee1fc0db1d2c",
+      "identity_status": "read_and_rehashed_2026-11-08; final_build_and_Solmax_review_accepted",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    },
+    {
+      "role": "historical_20261108_explanatory_companion",
+      "deposit_filename": "padua-companion-20261108-131012-Oslo.pdf",
+      "local_path": "local-output/padua-argmax-bridge-20261105/onset512-companion-20261108/padua-companion-20261108-131012-Oslo.pdf",
+      "bytes": 1171187,
+      "sha256": "83ca42c8052ccd760c3929ff0c30cd1667971476ae111736fe371b30e4581af2",
+      "identity_status": "read_and_rehashed_2026-11-08; final_build_and_Solmax_review_accepted",
+      "deposit_status": "PENDING_AC_UPLOAD"
+    }
+  ],
+  "official_packages": [
+    {
+      "package": "libflint-dev",
+      "version": "3.1.3-2",
+      "architecture": "amd64",
+      "bytes": 221848,
+      "sha256": "484b6507b41a1669c8d58562eb53afeeb3955dbdf8e47d3ba4ba63aa14109928"
+    },
+    {
+      "package": "libflint19",
+      "version": "3.1.3-2",
+      "architecture": "amd64",
+      "bytes": 3791156,
+      "sha256": "81ac3b20d8a1f125100c84b10b3825a9344080575f88769b553dfe5b008b9e4a"
+    },
+    {
+      "package": "libmpfr-dev",
+      "version": "4.2.2-1",
+      "architecture": "amd64",
+      "bytes": 268136,
+      "sha256": "43cbe73a48cce65232ad5d4219a67dfdd0974f45aa88d381ae051d64052b996a"
+    },
+    {
+      "package": "libmpfr6",
+      "version": "4.2.2-1",
+      "architecture": "amd64",
+      "bytes": 729320,
+      "sha256": "75dddce11dabc7fc543712c33dc27b7f2ee66a111763eb5eac654d010b42cd92"
+    },
+    {
+      "package": "libgmp-dev",
+      "version": "2:6.3.0+dfsg-3",
+      "architecture": "amd64",
+      "bytes": 642124,
+      "sha256": "68f392cc03f896ecc3764eb4844d2a898ff016f47dda160465f152f811152b81"
+    },
+    {
+      "package": "libgmp10",
+      "version": "2:6.3.0+dfsg-3",
+      "architecture": "amd64",
+      "bytes": 560220,
+      "sha256": "d0d0265eb01770f17afd0f7c8c0622f80479dcfbbe13653a0debeec61464e622"
+    }
+  ],
+  "required_source_paths": [
+    "topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/",
+    "topics/padua-argmax-bridge-20261105/compact_pack/",
+    "topics/padua-argmax-bridge-20261105/code/local_onset512_campaign/",
+    "topics/padua-argmax-bridge-20261105/code/independent_phase_checker/",
+    "topics/padua-argmax-bridge-20261105/code/compact_return_replay/",
+    "topics/padua-argmax-bridge-20261105/preregistration-onset512-local.md",
+    "topics/padua-argmax-bridge-20261105/evidence/compact-return/",
+    "topics/padua-argmax-bridge-20261105/audit-03/replay276.md",
+    "topics/padua-argmax-bridge-20261105/code/independent_phase_checker/PILOT-PREREGISTRATION.json",
+    "topics/padua-argmax-bridge-20261105/theory/J03-independent-phase-checker.md"
+  ],
+  "pending_items": [
+    "Prepared historical source snapshot a433c7d is packaged and pinned above; it predates audit-04 repairs. Create and hash a new final reviewed source snapshot after the repair review.",
+    "Rerun repaired canonical reader and preregistered blocked evidence checks when canonical return, I25 bundle and complete trusted runtime are supplied; no fresh execution claimed.",
+    "I25 full942/471 and independent six-certificate results are historical records; retain failed pilot and original prospective preregistration strings unchanged.",
+    "AC sets deposition metadata/license, reserves DOI, uploads, publishes and verifies retrieval."
+  ],
+  "retention_limit": "Canonical compact returns retain all essential certificates and sampled complete native histories. The 945235-byte onset512 derivative contains certificates/inventory only; it does not replace the 81602992-byte canonical provenance return. Unsampled full raw histories are excluded; no all-history archival claim.",
+  "index_base_commit": "dcb27db7d159ca0eac66e5fb48623589035a31ef",
+  "candidate_paired_source_commit": "24a98db4c3c4c4d0eede2e3929532956df87911b",
+  "I25_outcome": {
+    "certificates": 942,
+    "degrees": 471,
+    "degree_range": [
+      41,
+      511
+    ],
+    "independent_rerun_certificates": 6,
+    "independent_rerun_degrees": [
+      41,
+      458,
+      511
+    ],
+    "arithmetic_controls_per_full_worker": 31,
+    "pilot_corruptions_rejected": 27,
+    "scope": "Own-bound complete-tree recertification under J03 arithmetic and analytic premises; not universal native-endpoint validation. Independent Claude audit remains pending.",
+    "record": "topics/padua-argmax-bridge-20261105/code/independent_phase_checker/RESULTS.json",
+    "distinct_trees": 471,
+    "witnesses_per_tree": 2
+  },
+  "manuscript_review": {
+    "source_freeze": "24a98db4c3c4c4d0eede2e3929532956df87911b",
+    "Solmax_verdict": "ACCEPT correctness and exposition",
+    "review_sha256": "fe935ea03a245dd6301370cc02b4ac826cacec55d036b8c99942a4d00d44dff9",
+    "pages": [
+      51,
+      147
+    ],
+    "paired_statements": 19,
+    "paired_numbered_environments": 85,
+    "paired_labels": 116,
+    "original_48_162_page_PDF_hashes_preserved": true
+  },
+  "manuscript_source_freeze": "24a98db4c3c4c4d0eede2e3929532956df87911b",
+  "local_package_status": "Preservation unchanged in owner-reported cold storage; new 5,149,206 B public candidate checked; owner accepts disclosed paths; no upload/DOI",
+  "small_bundle_recheck_recipe": "RECHECK-SMALL-BUNDLE.md",
+  "revision_note_2026_11_13": "Root and distinct reviewer authenticate original uploaded package/return and accept 280 pairs through repaired compact verifier; actual repaired onset512 canonical reader run remains blocked.",
+  "historical_pre_audit04_source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6",
+  "generated_output_bound": {
+    "convention": "all positive deltas; no deletion or shrink credit",
+    "pre_current_batch_bytes": 9917613,
+    "cap_bytes": 10000000,
+    "final_batch_bound": 11870763,
+    "current_main_merge_positive_bytes": 1881011,
+    "actual_current_classified_bytes": 11848485,
+    "post_original_topic_positive_deltas_bytes": 1953150,
+    "cap_satisfied": false,
+    "historical_audit05_input": {
+      "main_classified_bytes": 9733758,
+      "topic_share_classified_bytes": 1995804,
+      "union_classified_bytes": 11729562,
+      "FREEZE_md_exception_bytes": 2087,
+      "union_with_exception_bytes": 11731649,
+      "conservative_bound_bytes": 11751309
+    },
+    "current_main_classified_bytes": 9787481,
+    "current_topic_classified_share_bytes": 2061004,
+    "current_actual_with_FREEZE_exception_bytes": 11850572
+  },
+  "verifier_provenance": {
+    "original_padua30_unrepaired_verify_compact_sha256": "7c2dad53519aff616bdadd3f925ec8943963cb4bf521b410355f827b7a1899bf",
+    "historical_audit03_repaired_verify_compact_sha256": "5867ac0c6d6e1d380d72c118262177a10b617631e039da11f489e45c93ff61b6",
+    "warning": "Original package verifier is unrepaired and accepts audit-04 H1-H3; invoke a separately trusted reviewed source-tree verifier. Post-audit04 repair identity/review must be recorded separately.",
+    "post_audit04_repair_candidates_sha256": {
+      "return_bundle.py": "5e25c8a47115e114d20e64fa6ac7b2afb30dde0bfebef371f1e709857795ae2e",
+      "verify_compact.py": "2d26886fa38089815712edcceccd4ac893fea9d8e6092afbd4c0faac7b569cef",
+      "runner.py": "a198b65182590be13cb91110ff976d90e7e885c778180e59699fbe9b067ccdad"
+    },
+    "post_audit04_status": "Supplementary Astra reader review complete; actual pinned onset512 canonical reader rerun blocked by missing ZIP; no historical run attribution.",
+    "post_audit05_repair_candidates_sha256": {
+      "return_bundle.py": "3f903e62b5c155e85603be43a60724c226b800dd9908685146fd7c5b69c2c234",
+      "onset512_analytic/check.py": "5ce8cc0701ed105fa619674993583f749046709cb02d233570e2dedc59ca1d2d",
+      "runtime_probe.py": "9f1c503e5c0b0739c1e4d85a5f2b920cc515f0d55f2c3039b66ce59278fd1751"
+    },
+    "post_audit05_status": "Specific producer allowlist and optimization/probe defects repaired; supplementary review complete within scope; actual canonical onset512 ZIP and I25 checks remain unavailable."
+  },
+  "active_paired_source_commit": "5f435be21f29f6fbf48e6d8cba15346117d7e151",
+  "historical_manuscript_record_note": "Historical inventory describes the 24a98db 51/147-page pair; current e861c752 59/152-page pair is separate, permanent deposition pending.",
+  "current_manuscript_revision": {
+    "source_freeze": "5f435be21f29f6fbf48e6d8cba15346117d7e151",
+    "pages": [
+      59,
+      152
+    ],
+    "paper_sha256": "d51627f5b42a647233ae76f95a25754d6b0dff7fbe2ca156d563473ee20c8d39",
+    "companion_sha256": "9de87206d4988dd2997016ba9885f2ec5cd59a110ab36abac5576d50dfa877fc",
+    "supplementary_review": "Response07 PDF/ZIP delta supplementary PASS; focused Claude check pending",
+    "historical_PDF_preservation_retested": false
+  },
+  "historical_response04_paired_source_commit": "ad908acb21d3589d85635618ff68f63dd01cfbca",
+  "paper_evidence_generation": "regeneration-20261114.md",
+  "public_reproducibility_package": {
+    "record": "zenodo-public-response07-delivery.json",
+    "bytes": 5149206,
+    "sha256": "b341e6a1c6875550b58576b2cb167766f5a3cf9a4e4fc620b1134d2c490adbaa"
+  }
+}

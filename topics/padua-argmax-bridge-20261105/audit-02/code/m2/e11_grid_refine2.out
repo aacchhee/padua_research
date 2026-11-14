@@ -1,0 +1,5 @@
+max |J_closed - I_direct (all kinks as breakpoints)|: 1.1184e-16
+E11(2): max over x>0 grid pts (N=12, closed rho<=pi/2) of (Ec-rhs)/(kappa p^1.5/sqrt a): -0.454782 at ['0.1309', '0.261799'] (<0 expected)
+exit=0
+0m0.000s 0m0.002s
+0m7.848s 0m0.008s

@@ -1,0 +1,263 @@
+{
+  "status": "REGENERATED FULL OUTCOME ACCEPTED by distinct supplementary review; separate Claude audit remains distinct",
+  "scope": "Independent substituted-bound complete-tree recertification under existing J03 arithmetic/analytic premises; no universal validation of stored native upper endpoints",
+  "rules_input_head": "cc2f9ad10c2b5baf29af1887e681b851e9e9dc60",
+  "execution_freeze_commit": "164a04cb4a15eadfed7ebb22571231643bb33546",
+  "developer": {
+    "agent": "Codex",
+    "instructed_selected_model": "gpt-6.1-sol",
+    "instructed_selected_effort": "medium",
+    "serving_model_effective_effort": "unexposed"
+  },
+  "inputs": {
+    "old_archive_sha256": "b00fd57f85ce6d96a6c1fa01e2307abd815088bb8fcb28b1587657ef142b109a",
+    "old_certificates": 560,
+    "old_degree_intervals": [
+      [
+        41,
+        319
+      ],
+      [
+        511,
+        511
+      ]
+    ],
+    "new_certificates": 382,
+    "new_degree_interval": [
+      320,
+      510
+    ],
+    "new_inventory": "local-output/argmax-bridge-20261105/regeneration-20261114-direct-essentials-inventory.json",
+    "new_inventory_sha256": "3d670da1914987a9033a2b4a3e36c53264dc1e72eaa41dcfb3eb704080c6990f"
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+    "python_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+    "numpy": "2.3.5",
+    "numpy_core_extension": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/_core/_multiarray_umath.cpython-312-x86_64-linux-gnu.so",
+    "numpy_core_sha256": "ba96467ae494babaf7c3458b09cc03c4200c2e10010860d80e452ffb8b01c8cd"
+  },
+  "source_sha256": {
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/independent_phase_checker/check.py": "1501ce9435a17e9cc4b0954f3ce90f47450252d58027e08468ce905528fdc8be",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/independent_phase_checker/controls.py": "c1810bd1dc6ddcbb3501c0589f099c89fa50fd6bd2e79b77f06030d8cc114bd1",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/independent_phase_checker/runtime_probe.py": "9f1c503e5c0b0739c1e4d85a5f2b920cc515f0d55f2c3039b66ce59278fd1751",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/independent_phase_checker/accept_controls.py": "c0ab77e611b78c840c8ac02cad1431c20bb018be9a2770605f2aeae450a4e908",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/worker.py": "2a0c032506485376884ce286870a7db964dcba2203d0627686f43fc311cc0cb4",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/launch.py": "132f74ee5c401525f572ebd523bb8ed1866846903fe774e2ecb280578fba504b",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/freeze.py": "28dae4eb0b68b151b45fc2257c9c104a1b48d4822466c5d70d4bf87312a6f709",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/runtime_identity.py": "1bd5b93cdbed1a1eab1a8aa29b4f330e570a7e9d06be46c7de46b27ff849c352",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/records.py": "1e84c80e560013121a03bda136bba0ead942235c27b4a2ff69923c4c8427dfb9",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/compact_pack/process_guard.py": "05d2da2ff1a48a8298067c40d9ece7fe45ea26d59c36a9b6dbe1704e20507779"
+  },
+  "full": {
+    "certificates": 942,
+    "degrees": 471,
+    "degree_range": [
+      41,
+      511
+    ],
+    "worker_exits": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "launcher_CPU_seconds_inclusive": 2770.544475981,
+    "launcher_wall_seconds": 768.4647849210014,
+    "maximum_individual_child_RSS_KiB": 154544,
+    "observed_outer_wait_status": 0,
+    "observed_outer_exit": 0,
+    "outer_CPU_seconds_inclusive": 2770.6015452270003,
+    "outer_wall_seconds": 768.5210304360007,
+    "arithmetic_controls_per_worker": 31,
+    "supplemental_arithmetic_controls_in_runtime_probe_per_worker": 31,
+    "runtime_probes_per_worker": 4,
+    "corruptions_rejected": 27
+  },
+  "new_range_census": [
+    {
+      "nodes": 51,
+      "leaves": 26,
+      "analytic_far_leaves": 3,
+      "norm_method": "GRID",
+      "degrees": 191
+    }
+  ],
+  "primary_fresh_scientific_pairs_equal": 471,
+  "independent_primary_fresh_pairs_equal": 471,
+  "exact_minima": {
+    "near_min": {
+      "exact": "129974045865190639156401680927837162720162089659328355893168227001362367161946530875444969281612776696194360166479200929124711137361077730306094558530209530480811845199530091370878205732934550001768873899449/22477390757682832635133582394405147266120121630614914834708250407295141618201445929376482012990196672196465463900669984863119360638639950892265267931078099315141045023302464772036899119564336907141985075200000",
+      "degrees": [
+        42
+      ]
+    },
+    "far_min": {
+      "exact": "18345960442759669907064602104021582295435912700969640803235800333759794250625543028702203440701354505953655758626752559267056973912204570137375757451567676790558571570628372424054455049740375662519/111108249912857846547490649628788647933059315846498661351442259047310078202279054872800432495160668867949558908571461811766167212840023758283425552429729142827852840839939026407698741414724800348160",
+      "degrees": [
+        41
+      ]
+    },
+    "corner_gap": {
+      "exact": "113133480805211147386707800287266848445779781398805534112350290710776450431510749828868087226309338858158144307877477772028933413/3557307432052525273109994251351349158076602700201538311275516329570396164090400429721799438678717876586100209709656946874777600",
+      "degrees": [
+        41
+      ]
+    },
+    "floor_min": {
+      "exact": "1/512",
+      "degrees": [
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    "M": {
+      "exact": "13",
+      "degrees": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ]
+    }
+  },
+  "strict_bounds_greater_than": {
+    "near_min": "289/50000",
+    "far_min": "33/200",
+    "corner_gap": "159/5"
+  },
+  "M_max": "30",
+  "premises": {
+    "S_checks": 43116,
+    "distinct_S_keys": 21558,
+    "actual_lambda_checks": 1290,
+    "distinct_actual_lambda_keys": 645,
+    "native_S_uppers_contained": 42174,
+    "native_S_uppers_total": 43116,
+    "native_lowers_contained": 942
+  },
+  "all_native_endpoints_validated": false,
+  "cache": "Fresh processes; exact function/degree/rational-argument reuse only within one degree across both passes; no disk/pilot or cross-degree reuse. Every structure and strict predicate rerun per certificate.",
+  "distinct_supplementary_checks": {
+    "degrees": [
+      41,
+      458,
+      511
+    ],
+    "certificates": 6,
+    "fresh_process_per_degree": true,
+    "observed_wait_statuses": [
+      0,
+      0,
+      0
+    ],
+    "observed_exits": [
+      0,
+      0,
+      0
+    ],
+    "all_scientific_fields_equal_full_except_CPU": true,
+    "positive_substitution_controls": 3,
+    "positive_control_observed_exit": 0,
+    "scope": "Supplementary independent reruns; does not replace separate Claude audit"
+  },
+  "artifacts": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/input-freeze.json",
+      "bytes": 2792,
+      "sha256": "0e3d9f284d670ae23319408253ae2ef9a84ed79c50ddffc4ea5b321dcd7be6ca"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/i25-regeneration-20261114/outer-driver.py",
+      "bytes": 1881,
+      "sha256": "f18860895195eba31c7290e042bf9af91ee99c7c0e367d77f5f4b8a667fb5811"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/i25-regeneration-20261114/full-v1.driver-observation.json",
+      "bytes": 953,
+      "sha256": "5f332a9237dff523cda03dcb3266fba74051b25d9adb895aef1a654c29030918"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/i25-regeneration-20261114/full-v1/full-summary.json",
+      "bytes": 6805,
+      "sha256": "a927eb1592fb054f9d7192088f722cd7551d1e7d555e717058ebaafca95635b3"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/i25-regeneration-20261114/full-v1/outer-observation.json",
+      "bytes": 14894,
+      "sha256": "6969371c1aca182cc8053f877347fa2d33dbf7c9ec0ef004593c87a2bc8a845e"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/i25-regeneration-20261114/full-record-check.json",
+      "bytes": 21882,
+      "sha256": "e0d20a592b1aed72d444a03fe92feeb3b6445a72785a8bf411d6900e62659911"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/i25-independent-output-review.json",
+      "bytes": 2582,
+      "sha256": "e2b5601a689d80c063027d2aaee4517d44cec002952bb23d4dbffe2fe068ba76"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/positive-controls.observation.json",
+      "bytes": 577,
+      "sha256": "d91b93993a0c087ce800a4643ba00f50b4d6a8ce6169aee9030a0f2392c2bd0e"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/positive-controls.stdout",
+      "bytes": 279,
+      "sha256": "97546337aece8476ba2c66ca1aa1d93fbf14eddea00f34b286518a0de86e3a97"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/positive-runtime-probe.json",
+      "bytes": 319,
+      "sha256": "30b80c0d472fc2dc4ec88f897ad22a7b533c56040e357ba96f79bdacc4e4dc89"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/i25-regeneration-20261114/full-v1/worker-0/observations.jsonl",
+      "bytes": 326194,
+      "sha256": "efe6a1e04641f0b9dda57d14b7c4ca816b5dc95f09e54ef8a5334021de484ab4"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/i25-regeneration-20261114/full-v1/worker-1/observations.jsonl",
+      "bytes": 325369,
+      "sha256": "3a3dec50fbb26617f07bddadb7353c1b4b6cf43bac6478fe1f3e8ee61acab482"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/i25-regeneration-20261114/full-v1/worker-2/observations.jsonl",
+      "bytes": 326046,
+      "sha256": "4db11db65963f11efb63d2b08bd9dd570c9b510797aa3353be61fdb9f9741137"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/i25-regeneration-20261114/full-v1/worker-3/observations.jsonl",
+      "bytes": 320004,
+      "sha256": "8b280b314a9b571af6029ff57cbaa1471cbdf189ce1c4dfad208ff018d049abe"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/i25-n41.observation.json",
+      "bytes": 1211,
+      "sha256": "91d037c0ade8240bce570dba34dac7ce587c80593cdef840407290226feaa86d"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/i25-n458.observation.json",
+      "bytes": 1215,
+      "sha256": "6df8e9ea9f4013966f59dabee588bc887793a5a6f93a0e60cf0dee1fe5a6507c"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/independent-regeneration-review-20261114/i25-n511.observation.json",
+      "bytes": 1224,
+      "sha256": "b55005f4ec69afa1222acc0e17a18931811c33e8478922d3dc798790b05003d0"
+    }
+  ],
+  "regenerate_records_command": "python3 -E -B topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/records.py --freeze topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/input-freeze.json --full local-output/argmax-bridge-20261105/i25-regeneration-20261114/full-v1 --output NEW_OUTPUT_JSON",
+  "retention": "Full raw histories, sources, inputs, per-case records and new artifact identities retained offGit; delivery packaging and AC cold-storage/public archival destination handled by orchestrator. Historical receipts remain unchanged."
+}

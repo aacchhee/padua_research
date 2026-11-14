@@ -1,0 +1,7 @@
+S0 current recipes                                   common onset n = 320
+S1 ideal radial optimisation only                    common onset n = 312
+S2 S1 + floors x2                                    common onset n = 307
+S3 S2 + outer seam 1.25 (rel-wide ext c=1.25)        common onset n = 254
+S4 S3 with floors x4                                 common onset n = 248
+S5 recipes, all finite-error charges x0.5            common onset n = 195
+S6 recipes, errors x0.25, floors x2                  common onset n = 120

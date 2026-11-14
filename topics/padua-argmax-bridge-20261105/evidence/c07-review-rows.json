@@ -1,0 +1,62 @@
+{
+  "scope": "C07 guarded rational-phase point S only",
+  "sources": {
+    "point.cpp": {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C07/point.cpp",
+      "bytes": 6568,
+      "sha256": "8913a96d79f7d687c201f5e38efa5cceec5a18bdc88ed0ada8f578056e7e575e"
+    },
+    "reference.cpp": {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C07/reference.cpp",
+      "bytes": 1740,
+      "sha256": "dc9c3e5f208a9919437e572d71e0bc3834f493db7ea8689b777fac6566ba8470"
+    },
+    "control.py": {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C07/control.py",
+      "bytes": 2705,
+      "sha256": "17cac7535df1f2b7c7c9436a140e3844ae2638cca191cb1ba18e5faad710c8d4"
+    }
+  },
+  "review_source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C07_review/review.cpp",
+    "bytes": 2563,
+    "sha256": "2019e7e1f1c15fe2a8424a5acf294ff2d5e0ef15c31ae222db86b29dca659e4f"
+  },
+  "driver": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C07_review/control.py",
+    "bytes": 4229,
+    "sha256": "74062930394ce950a58ab55b83275d70de7f17b7311d8e1a44235539a88d36e1"
+  },
+  "builder": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+    "bytes": 5703,
+    "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+  },
+  "raw_manifest": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c07-review-rows/check-2cg0uoi_/review.json",
+    "bytes": 54319,
+    "sha256": "14964cc41152dd468528a74e73ee2a4ceb60dc77a7be8f13241d3bdaa8183305"
+  },
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c07-review-rows/check-2cg0uoi_/libphase_checker.so",
+    "bytes": 112488,
+    "sha256": "22e04f816fed69d3c0bd57f6d3c9fc63f6d7901f38dd01252a2b66f44092fdf1"
+  },
+  "compiler": "x86_64-linux-gnu-g++-14 (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14",
+  "cases": 40,
+  "finite_reference_containments": 26,
+  "exact_vertex_converse_containments": 6,
+  "valid_point_guard_failures": 0,
+  "invalid_rejections": 8,
+  "root_checks": 21,
+  "cpu_seconds": 13.338906000000001,
+  "closure_entries": {
+    "headers": 196,
+    "toolchain": 4,
+    "toolchain_dependency_closure": 13,
+    "linked_dependency_closure": 8,
+    "actual_loaded_closure": 8
+  },
+  "result": "PASS"
+}

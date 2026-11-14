@@ -1,0 +1,33 @@
+{
+  "scope": "staged index before round3 source snapshot; excludes this receipt itself",
+  "source_head": "c000899f3fb10d6ba0f1725341a045fe11ec943a",
+  "topic_evidence_files": 54,
+  "topic_evidence_bytes": 263887,
+  "largest_topic_evidence": [
+    "topics/padua-argmax-bridge-20261105/evidence/b0-replay.json",
+    15937
+  ],
+  "generated_evidence_over_16KiB": [],
+  "tracked_topic_raw_binaries_or_thirdparty_packages": [],
+  "conservative_repository_artifact_suffix_bytes": 4359817,
+  "conservative_artifact_file_count": 915,
+  "artifact_suffixes": [
+    ".a",
+    ".bin",
+    ".csv",
+    ".deb",
+    ".gz",
+    ".json",
+    ".jsonl",
+    ".log",
+    ".npy",
+    ".npz",
+    ".pdf",
+    ".png",
+    ".so",
+    ".svg",
+    ".tsv",
+    ".zip"
+  ],
+  "qualification": "Upper inventory includes handwritten manifests and static data; source/prose excluded. Main reconciliation will be checked separately."
+}

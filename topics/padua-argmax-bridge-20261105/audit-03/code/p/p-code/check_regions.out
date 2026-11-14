@@ -1,0 +1,28 @@
+/tmp/claude-0/-home-user-padua-research/8833296e-cd9e-51d7-9205-e1ddfbc5960f/scratchpad/audit3/p-code/check_regions.py:19: RuntimeWarning: divide by zero encountered in divide
+  H = 2 * Afun(u, v, al, be) / (np.cos(u) - np.cos(v))
+n=192 Lambda_c=19.500993 S_n(0)-Lambda_c=inf
+   rho<=1/2  max S_n-Lambda_c= inf at (0.000,0.000); wide polynomial P(rho)= 0.01410
+   1/2..3/5  max S_n-Lambda_c=-0.47273 at (0.299,0.249); wide polynomial P(rho)=-0.00055
+   3/5..1    max S_n-Lambda_c=-0.66099 at (0.349,0.299); wide polynomial P(rho)=-0.08209
+   1..pi     max S_n-Lambda_c= inf at (0.000,3.142); wide polynomial P(rho)=-10.00834
+   pi/2..pi  max S_n-Lambda_c= inf at (0.000,3.142); wide polynomial P(rho)=-10.00834
+n=256 Lambda_c=21.111257 S_n(0)-Lambda_c=inf
+   rho<=1/2  max S_n-Lambda_c= inf at (0.000,0.000); wide polynomial P(rho)= 0.01410
+   1/2..3/5  max S_n-Lambda_c=-0.52149 at (0.299,0.249); wide polynomial P(rho)=-0.00055
+   3/5..1    max S_n-Lambda_c=-0.72875 at (0.349,0.299); wide polynomial P(rho)=-0.08209
+   1..pi     max S_n-Lambda_c= inf at (0.000,3.142); wide polynomial P(rho)=-10.00834
+   pi/2..pi  max S_n-Lambda_c= inf at (0.000,3.142); wide polynomial P(rho)=-10.00834
+n=320 Lambda_c=22.406710 S_n(0)-Lambda_c=inf
+   rho<=1/2  max S_n-Lambda_c= inf at (0.000,0.000); wide polynomial P(rho)= 0.01410
+   1/2..3/5  max S_n-Lambda_c=-0.56106 at (0.299,0.249); wide polynomial P(rho)=-0.00055
+   3/5..1    max S_n-Lambda_c=-0.78375 at (0.349,0.299); wide polynomial P(rho)=-0.08209
+   1..pi     max S_n-Lambda_c= inf at (0.000,3.142); wide polynomial P(rho)=-10.00834
+   pi/2..pi  max S_n-Lambda_c= inf at (0.000,3.142); wide polynomial P(rho)=-10.00834
+/tmp/claude-0/-home-user-padua-research/8833296e-cd9e-51d7-9205-e1ddfbc5960f/scratchpad/audit3/p-code/check_regions.py:45: RuntimeWarning: invalid value encountered in divide
+  G = (Pu - Pv) / (cu - cv) - np.cos(n * u)
+/tmp/claude-0/-home-user-padua-research/8833296e-cd9e-51d7-9205-e1ddfbc5960f/scratchpad/audit3/p-code/check_regions.py:45: RuntimeWarning: divide by zero encountered in divide
+  G = (Pu - Pv) / (cu - cv) - np.cos(n * u)
+n=320 noncorner chart max lambda-Lambda_c (bound: < -1/20000 for rho<=1/2, -3/1000 to 3/5): [((1, 0), np.float64(-3.7766554581927174)), ((0, 1), np.float64(-3.810448285670347)), ((5, 8), np.float64(-4.912743945480724)), ((160, 161), np.float64(-4.001095633588836))]
+n=256 corner chart max [lambda - Lc + (A^2+B^2)/30] (must be <=0): -0.00039
+n=320 corner chart max [lambda - Lc + (A^2+B^2)/30] (must be <=0): -0.00042
+cpu_s 32.422412749

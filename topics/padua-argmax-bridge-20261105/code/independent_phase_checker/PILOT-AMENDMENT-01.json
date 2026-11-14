@@ -1,0 +1,10 @@
+{
+  "created_UTC":"2026-11-08T10:53:48Z",
+  "reason":"Distinct review requested an enforced observed wall cap and pinned runtime identities before the first consequential pilot.",
+  "prior_preregistration_sha256":"e1fa7ab9788b0ebde8847ec12755444b8452d5f064a0e5bf6c2faf9ae7844398",
+  "code_and_inputs":"Unchanged from PILOT-PREREGISTRATION.json; no certificate pilot has run.",
+  "command":"timeout --signal=TERM --kill-after=5s 7200s env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python topics/padua-argmax-bridge-20261105/code/independent_phase_checker/run.py --archive local-output/argmax-bridge-20261105/actual-return-20261107/return.tar.gz --degrees 41,199,238,511 --controls --cpu-limit 3500 --output local-output/argmax-bridge-20261105/i25-pilot-v1-20261108T105100Z",
+  "runtime":{"python":"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]","numpy":"2.3.5","platform":"Linux-6.18.57-x86_64-with-glibc2.41","machine":"x86_64","binary64_itemsize":8,"epsilon_hex":"0x1.0000000000000p-52","smallest_subnormal_hex":"0x0.0000000000001p-1022","RN_even_hex":"0x1.0000000000000p+0","RN_next_even_hex":"0x1.0000000000002p+0","one_tenth_hex":"0x1.999999999999ap-4"},
+  "assumptions":"Correctly rounded IEEE binary64 RN separate NumPy ufunc basic operations with gradual underflow and correct nextafter, plus Python integer/Fraction and guarded NumPy int64/index operations. These remain explicit trusted implementation assumptions; smoke checks do not prove hardware conformance.",
+  "accounting":"Observe outer timeout return code and retain output hashes/sizes, full runtime version and resource usage after the command. Timeout/nonzero/missing final summary fails the preregistered pilot. No retry or rescue."
+}

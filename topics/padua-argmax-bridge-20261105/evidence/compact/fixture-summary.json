@@ -1,0 +1,45 @@
+{
+  "source_candidate": "aea62883f826df05504a62ba084e0d7becb7bc5df35e4ceeef5f1eaf130c1ee6",
+  "fixture01": {
+    "status": "failed/incomplete",
+    "exit": 137,
+    "completion": "3aca70",
+    "retained": "local-output/argmax-bridge-20261105/compact-fixture-01"
+  },
+  "fixture02": {
+    "exit": 0,
+    "tool_session": 56768,
+    "completion": "c6eebc",
+    "receipt_path": "local-output/argmax-bridge-20261105/compact-fixture-02/receipt.json",
+    "receipt_bytes": 62857,
+    "receipt_sha256": "07a7804ba9d3f26a9d576a6aa91c4b17061c7d2cc41638f3ead8b827aa0040ce",
+    "self_CPU_seconds": 40.471014673,
+    "wall_seconds": 40.460193767998135,
+    "allocated_before_bytes": 222720000,
+    "allocated_after_bytes": 160194560,
+    "original_and_scientific_bytes_unchanged": true,
+    "repeat_selection_stable": true,
+    "fixture_only_sample": [
+      511,
+      41
+    ],
+    "bundle_bytes": 40184709,
+    "bundle_sha256": "a94c95c704992764decffb0a4dd0f9e0960048c4b3ecc56248d429770b7b77dd",
+    "hardlink_members": 58,
+    "rational_pairs_checked": 2,
+    "full_histories_checked": [
+      511,
+      41
+    ]
+  },
+  "independent_data_review": {
+    "exit": 0,
+    "completion": "b87698",
+    "self_CPU_seconds": 1.099,
+    "original_and_copy_files_rehashed": 645,
+    "tar_members": 404,
+    "all_inventory_hashes_match": true
+  },
+  "scope": "old known41/511 copy fixture with explicit historical schema/profile and forced eligibility; no new native or residual degree; production target profile not executed",
+  "report": "independent-checks-compact-pack.md"
+}

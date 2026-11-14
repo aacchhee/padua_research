@@ -1,0 +1,11 @@
+n=  192 CbarE=1.821 far[pi/2,pi] uniform gate=+0.0994 at 0.84,0.73  outer[1,pi]=-1.3394  max wide-upper(rho<=1/2)=0.2382  widepoly(1/2)=+0.2746
+n=  200 CbarE=1.756 far[pi/2,pi] uniform gate=+0.2334 at 0.84,0.73  outer[1,pi]=-1.2369  max wide-upper(rho<=1/2)=0.2189  widepoly(1/2)=+0.2517
+n=  224 CbarE=1.585 far[pi/2,pi] uniform gate=+0.5920 at 0.84,0.73  outer[1,pi]=-0.9666  max wide-upper(rho<=1/2)=0.1733  widepoly(1/2)=+0.1913
+n=  256 CbarE=1.405 far[pi/2,pi] uniform gate=+0.9909 at 0.81,0.76  outer[1,pi]=-0.6726  max wide-upper(rho<=1/2)=0.1322  widepoly(1/2)=+0.1257
+n=  320 CbarE=1.149 far[pi/2,pi] uniform gate=+1.6097 at 0.81,0.76  outer[1,pi]=-0.2322  max wide-upper(rho<=1/2)=0.0848  widepoly(1/2)=+0.0276
+n=  384 CbarE=0.974 far[pi/2,pi] uniform gate=+2.0785 at 0.81,0.76  outer[1,pi]=+0.0878  max wide-upper(rho<=1/2)=0.0596  widepoly(1/2)=-0.0437
+n=  448 CbarE=0.847 far[pi/2,pi] uniform gate=+2.4539 at 0.81,0.76  outer[1,pi]=+0.3351  max wide-upper(rho<=1/2)=0.0445  widepoly(1/2)=-0.0987
+n=  512 CbarE=0.750 far[pi/2,pi] uniform gate=+2.7662 at 0.81,0.76  outer[1,pi]=+0.5345  max wide-upper(rho<=1/2)=0.0347  widepoly(1/2)=-0.1431
+n=  640 CbarE=0.613 far[pi/2,pi] uniform gate=+3.2663 at 0.81,0.76  outer[1,pi]=+0.8418  max wide-upper(rho<=1/2)=0.0232  widepoly(1/2)=-0.2116
+n=  768 CbarE=0.519 far[pi/2,pi] uniform gate=+3.6589 at 0.81,0.76  outer[1,pi]=+1.0729  max wide-upper(rho<=1/2)=0.0169  widepoly(1/2)=-0.2632
+n= 1024 CbarE=0.399 far[pi/2,pi] uniform gate=+4.2573 at 0.81,0.76  outer[1,pi]=+1.4089  max wide-upper(rho<=1/2)=0.0104  widepoly(1/2)=-0.3386

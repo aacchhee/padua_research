@@ -1,0 +1,41 @@
+{
+  "status": "UNEXECUTED D33 first preparation freeze; distinct prerelease audit/publication/root release required",
+  "rules_input": "eb9329c28be18d77eeb817f634202d626ee11f92",
+  "N": 2048,
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D33_budget/evaluate.py --run-once",
+  "CPU_soft": 4,
+  "CPU_hard": 5,
+  "CPU_scope": "whole process lifetime including startup/imports/helpers/controls/serialization/output/return; no children",
+  "precision": 50,
+  "pi": "exact Fraction alternating Machin70 terms at1/5 and20 at1/239",
+  "helper_definitions_only": ["directed", "I", "ilog", "atan_bounds"],
+  "gates": {
+    "inner": "(191/6144)*(T-11)-Cbase-A*(1-191/6144)-Kinner*sqrt(191/768)-E0",
+    "outer": "(2277/32768)*(T-25/2)-Cnew-KD*sqrt(2277/4096)-E0",
+    "required": "BOTH strictly positive lower endpoints; all25 controls and T.lower>25/2"
+  },
+  "component_intervals_including_minimum": 39,
+  "inner_rows": "accepted D30 wide B6; A=14/n+90/n^2; Kinner=KD+(10+L)/n+4/n^2",
+  "outer_rows": "OLD accepted D20 GLOBAL E6=(193+21L)/n+21600/n^2 retained in Cnew",
+  "other_charges": "unchanged D20 Cbase/global outer/ordinary/mesh and D16 ACTUAL-origin E0",
+  "output_directory": "local-output/argmax-bridge-20261105/post-audit-D33/budget",
+  "exclusive_directory_consumes_attempt_even_on_failure": true,
+  "retry_fallback_scan_source_precision_parameter_cap_rescue": false,
+  "native_phase_board_quadrature_degree_calls": 0,
+  "scientific_or_control_runs_performed": 0,
+  "D31_near_source_or_endpoint_called": false,
+  "global_status": "OPEN pending D33 pair and separately D31 near endpoint/fresh result review",
+  "code_data": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D33_budget/evaluate.py",
+      "bytes": 9447,
+      "sha256": "54eea39070b022bce6571d1418184a94be9e4b2603dc6e7aac6ae5f1146188c5"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D06_model_budget/evaluate.py",
+      "bytes": 6126,
+      "sha256": "9ab068b7928d9976db4b5b26cddc902eb063e592f296dcfb143e999869301413"
+    }
+  ],
+  "prose_policy": "Audit records identify SPEC/theory hashes; executable pins code/data only"
+}

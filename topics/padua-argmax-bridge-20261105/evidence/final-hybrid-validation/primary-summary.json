@@ -1,0 +1,53 @@
+{
+  "source_commit": "a916e550f324dc7548f472575bedd302feecaa9d",
+  "freeze_sha256": "0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb",
+  "status": "PRIMARY_COMPLETE_FRESH_PENDING",
+  "cases": [
+    {
+      "n": 41,
+      "observed_exit_code": 0,
+      "CPU_through_summary": 6.8873999999999995,
+      "norm": {
+        "method": "TREE",
+        "M": "13"
+      },
+      "unique_S": 64,
+      "actual_calls": 3,
+      "nodes": 101,
+      "analytic_far_leaves": 0,
+      "receipt": {
+        "bytes": 6494,
+        "sha256": "faca30653a59e0c4416ff61ddb53c8ccda17c3b6a098163666c47e3cd3bb0697"
+      },
+      "raw": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/final-hybrid-validation/primary-n41/raw-evidence.json",
+        "bytes": 180345,
+        "sha256": "2cf0e7945013eceae108469ceee106751047a21eead8db1a4ca978fbcfb641f5"
+      }
+    },
+    {
+      "n": 511,
+      "observed_exit_code": 0,
+      "CPU_through_summary": 7.353712999999999,
+      "norm": {
+        "method": "GRID",
+        "M": "30"
+      },
+      "unique_S": 45,
+      "actual_calls": 0,
+      "nodes": 51,
+      "analytic_far_leaves": 3,
+      "receipt": {
+        "bytes": 5996,
+        "sha256": "c53691109f203e3e925eea1d5c8efeba6d4b5104f53e21c2651e1a92a8b99d37"
+      },
+      "raw": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/final-hybrid-validation/primary-n511/raw-evidence.json",
+        "bytes": 111972,
+        "sha256": "99a0cfd84c4331ca713ef5725f21c75f70f56c6d89045bb352634aad078a39b0"
+      }
+    }
+  ],
+  "CPU_checkpoint_sum": 14.241112999999999,
+  "scope": "Two already-proved implementation controls, no residual-degree campaign or Syvert2 runtime law; each whole envelope120CPU."
+}

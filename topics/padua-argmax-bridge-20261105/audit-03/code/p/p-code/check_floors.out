@@ -1,0 +1,10 @@
+half-formula validation max err (n=7): 4.4941828036826337e-13
+n=41 worst ratio actual/floor=54.340 at rho=0.02 dir=(0, 1)  actual=0.56687 finite=0.010431847729195257 tail=None
+n=42 worst ratio actual/floor=45.234 at rho=0.02 dir=(0, 1)  actual=0.56693 finite=0.01253327212568436 tail=None
+n=63 worst ratio actual/floor=17.832 at rho=0.2 dir=(0, 1)  actual=0.55146 finite=0.030925013252066733 tail=None
+n=64 worst ratio actual/floor=13.972 at rho=0.02 dir=(0, 1)  actual=0.56087 finite=0.04014172399074123 tail=-0.051102973538341964
+n=100 worst ratio actual/floor=11.128 at rho=0.02 dir=(0, 1)  actual=0.55640 finite=0.05 tail=0.027097385383631174
+n=159 worst ratio actual/floor=7.925 at rho=0.02 dir=(0, 1)  actual=0.55332 finite=0.05 tail=0.0698170614200601
+n=160 worst ratio actual/floor=7.878 at rho=0.02 dir=(0, 1)  actual=0.55327 finite=0.05 tail=0.07023186832896752
+n=320 worst ratio actual/floor=5.471 at rho=0.02 dir=(0, 1)  actual=0.55077 finite=0.05 tail=0.10067782709661244
+cpu_s 62.642541863999995

@@ -1,0 +1,110 @@
+{
+  "source_freeze_sha256": "0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb",
+  "result": "BOTH_KNOWN_CASE_VALIDATIONS_INDEPENDENTLY_ACCEPTED",
+  "cases": [
+    {
+      "n": 41,
+      "CPU_through_summary": 6.2876650000000005,
+      "receipt": {
+        "bytes": 6492,
+        "sha256": "a2af589a86427a27060e6ad5a90a3c1f8777b21d717d63d2f4211088ecb21b50"
+      },
+      "raw": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/final-hybrid-validation/verify-n41/raw-evidence.json",
+        "bytes": 166112,
+        "sha256": "9cb7b351619630df11460bed7c9b461fd0ab2979c2999fff9c58829bab9336af"
+      },
+      "verification": {
+        "nodes": 101,
+        "S_premises": 64,
+        "norm_method": "TREE",
+        "M": "13",
+        "leaf_counts": {
+          "NEAR": 5,
+          "FAR": 43,
+          "OUTSIDE": 3
+        }
+      },
+      "direct_observation": {
+        "n": 41,
+        "mode": "verify",
+        "reviewer": "/root/d13_support_review",
+        "requested_model_effort": "Astra high; serving metadata unexposed",
+        "release_commit": "42221bc0ccb5b0263cf1c77090bd97c2680fa29a",
+        "tool_session": 73378,
+        "initial_chunk": "ca9e79",
+        "completion_chunk": "e36d37",
+        "observed_exit_code": 0,
+        "direct_exit_observed": true,
+        "final_accounting": {
+          "bytes": 1527,
+          "sha256": "b758cdacfe9af89fc4baad61d27e0c4fb226e99684ad8b0807d914c13024a978",
+          "complete": true,
+          "first_failure": null,
+          "result": "FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW"
+        },
+        "receipt": {
+          "bytes": 6492,
+          "sha256": "a2af589a86427a27060e6ad5a90a3c1f8777b21d717d63d2f4211088ecb21b50"
+        },
+        "CPU_through_summary": 6.2876650000000005,
+        "no_retry": true,
+        "scope": "Sole preregistered fresh41 run. Actual EXIT0 and accepted final account observed before fresh511 launch. CPU is an inclusive checkpoint, not exact exit CPU."
+      }
+    },
+    {
+      "n": 511,
+      "CPU_through_summary": 7.531237,
+      "receipt": {
+        "bytes": 5994,
+        "sha256": "0c00807f5c25136af9aa4ebb85f8a114e6962dc3a460c18af9c0bd41d1ff5141"
+      },
+      "raw": {
+        "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/final-hybrid-validation/verify-n511/raw-evidence.json",
+        "bytes": 105991,
+        "sha256": "99ef3bafaf5454e10a56276b25d2e988688c25c060f11f0a37a096f3e2ba5719"
+      },
+      "verification": {
+        "nodes": 51,
+        "S_premises": 45,
+        "norm_method": "GRID",
+        "M": "30",
+        "leaf_counts": {
+          "NEAR": 6,
+          "FAR": 17,
+          "ANALYTIC_FAR": 3
+        }
+      },
+      "direct_observation": {
+        "n": 511,
+        "mode": "verify",
+        "reviewer": "/root/d13_support_review",
+        "requested_model_effort": "Astra high; serving metadata unexposed",
+        "release_commit": "42221bc0ccb5b0263cf1c77090bd97c2680fa29a",
+        "tool_session": 14855,
+        "initial_chunk": "d37acb",
+        "completion_chunk": "224b30",
+        "observed_exit_code": 0,
+        "direct_exit_observed": true,
+        "final_accounting": {
+          "bytes": 1510,
+          "sha256": "724ea281d8d1752d73ba17f1e14e7f3669bdffb1b9babab567979a3d6c639a3b",
+          "complete": true,
+          "first_failure": null,
+          "result": "FRESH_RETAINED_PROOF_VERIFY_ACCEPTED_PENDING_RESULT_REVIEW"
+        },
+        "receipt": {
+          "bytes": 5994,
+          "sha256": "0c00807f5c25136af9aa4ebb85f8a114e6962dc3a460c18af9c0bd41d1ff5141"
+        },
+        "CPU_through_summary": 7.531237,
+        "no_retry": true,
+        "scope": "Sole preregistered fresh511 run, after fresh41 accepted account and direct EXIT0. CPU is an inclusive checkpoint, not exact exit CPU."
+      }
+    }
+  ],
+  "fresh_CPU_checkpoint_sum": 13.818902000000001,
+  "all_four_CPU_checkpoint_sum": 28.060015,
+  "result_report_sha256": "f812fd447e8d2868bf550874d2cf2459222414129a5e18f957b77d2bfc62bafe",
+  "scope": "Exactly41+511; no new residual degree, cost law or Syvert2 measurement."
+}

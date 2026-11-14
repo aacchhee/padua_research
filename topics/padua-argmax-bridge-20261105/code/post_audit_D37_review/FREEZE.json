@@ -1,0 +1,47 @@
+{
+  "CPU_hard": 10,
+  "CPU_soft": 9,
+  "Machin_terms": [
+    100,
+    32
+  ],
+  "N": 1024,
+  "code_data": [
+    {
+      "bytes": 14010,
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D37_review/verify.py",
+      "sha256": "633070f0d55a758be8e6605b888e74b25f2c997220b9c4c66b360166c3246a99"
+    },
+    {
+      "bytes": 8437,
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D37_review/SPEC.md",
+      "sha256": "347dfd99eafef3ab0f719664389120001a5ffd6d82100ed067aadd726f9b12f2"
+    },
+    {
+      "bytes": 8965,
+      "path": "local-output/argmax-bridge-20261105/post-audit-D37/budget/budget-1024.json",
+      "sha256": "b893df4ec4ebb1668600783617200c7a224203bbc7d8071f76c46084f3e1d1fd"
+    },
+    {
+      "bytes": 11786,
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D37_budget/evaluate.py",
+      "sha256": "2f5fa327a1c93063e4602a8cad06779601c89c86dcecc1e89cb4e1fba070d1eb"
+    },
+    {
+      "bytes": 2469,
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D37_budget/FREEZE.json",
+      "sha256": "4cf0bf3ef7d41eed5b04ceee9ac26426cee84f2c7578b4f8f868b84a9d9f51b5"
+    },
+    {
+      "bytes": 6126,
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D06_model_budget/evaluate.py",
+      "sha256": "9ab068b7928d9976db4b5b26cddc902eb063e592f296dcfb143e999869301413"
+    }
+  ],
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D37_review/verify.py --run-once",
+  "first_attempt_only": true,
+  "log_terms": 90,
+  "no_retry": true,
+  "primary_input_head": "ea078d27790b515e5d2d4043e2e681973d5a1345",
+  "scale_digits": 65
+}

@@ -1,0 +1,30 @@
+{
+  "launch_attempts": [
+    {
+      "tool_chunk": "6962cd",
+      "exit_code": 127,
+      "command_prefix": "/usr/bin/time",
+      "failure": "/usr/bin/time: No such file or directory",
+      "python_started": false,
+      "scientific_execution_count": 0
+    },
+    {
+      "tool_chunk": "c7f352",
+      "exit_code": 0,
+      "timing_method": "Bash reserved-word time",
+      "final_user_seconds_as_reported": "0.104",
+      "final_system_seconds_as_reported": "0.000",
+      "final_elapsed_seconds_as_reported": "0.104",
+      "scientific_execution_count": 1,
+      "status": "ACCEPT_INDEPENDENT_D27_N1024",
+      "cpu_seconds_through_pre_serialization": 0.096387
+    }
+  ],
+  "N": 1024,
+  "soft_cpu_seconds": 9,
+  "hard_cpu_seconds": 10,
+  "native_jobs": 0,
+  "scientific_retries": 0,
+  "source_or_precision_changes_after_freeze": false,
+  "scalars_sha256": "fca88ecf2cd2891d1a902d4342849f620dd93e5f59b38848d2ebf751a0bddd80"
+}

@@ -1,0 +1,51 @@
+{
+  "rules_source_head": "0cd099fd2e3944ac8436a890b7ee707a298255b3",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-effective-20261103/code/native_producer/producer.c",
+      "bytes": 9360,
+      "sha256": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/code/native_producer/run.py",
+      "bytes": 5072,
+      "sha256": "718cf9fc39653766c86fe862398a4670d4426215a994f2cb9063d482554fa934"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/code/native_checker/check.py",
+      "bytes": 6428,
+      "sha256": "b6c7320db2f7cfebf27fe33aa38ffdd45ff719870e3d23e15f845b6e8026eb2e"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/code/native_checker/kernel.cpp",
+      "bytes": 6752,
+      "sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/part3/finite_bernstein.py",
+      "bytes": 6311,
+      "sha256": "a3133c6c22a365380f6c2ab14f6d31f60153d0df902b325cfcfbeeccc1bed74f"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/part3/finite_general.py",
+      "bytes": 6984,
+      "sha256": "b20b7f88ddfc0bbc92e68096063ef626664028c2a379c34d16dc9f84e17aa74a"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/part3/finite_general_run.py",
+      "bytes": 3367,
+      "sha256": "fe1647086b2db5c47d75e24d386cc6456782bb6ea36bc25acd39b75bd4752511"
+    },
+    {
+      "path": "topics/padua-argmax-alln-20261101/code/part3/finite_n2_exact.py",
+      "bytes": 5177,
+      "sha256": "8c74170cadee19cfd805734c13182e47734958d7495a8a0109c582631fc7cab0"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/produce.py",
+      "bytes": 5088,
+      "sha256": "da1473b894c8a1d1ce87fc658271dc98a14f3e444beef5769e942fd173774227"
+    }
+  ],
+  "scientific_executions_at_freeze": 0
+}

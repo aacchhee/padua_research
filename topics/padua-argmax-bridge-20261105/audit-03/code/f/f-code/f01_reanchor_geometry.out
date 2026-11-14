@@ -1,0 +1,13 @@
+cos(5/8) upper 79729/98304 = 79729 /98304 < 13/16: True
+cos(5/8) lower 103/128 <= 1-x^2/2: True
+sin(5/8) lower 1795/3072 > 1/2: True ; upper 460145/786432 < 3/5: True
+743/1536 = 1/2 - (5/8)^2/24: True ; 1536*4*c<=6144<6687: True
+S(3/16)=sqrt87/8=1.165922 <6/5; S'(3/16)=26/sqrt87=2.787493 <3
+n=32: max[p,q - cap]=-0.04837  max[|p-q|-3sqrt v]=-0.06233  max[P-(6/5+3v)]=-0.03442  max[CE+KD P - envelope]=-0.2522  (all must be <=0)
+n=33: max[p,q - cap]=-0.04837  max[|p-q|-3sqrt v]=-0.06233  max[P-(6/5+3v)]=-0.03442  max[CE+KD P - envelope]=-0.246  (all must be <=0)
+n=64: max[p,q - cap]=-0.04837  max[|p-q|-3sqrt v]=-0.06233  max[P-(6/5+3v)]=-0.03442  max[CE+KD P - envelope]=-0.1432  (all must be <=0)
+n=128: max[p,q - cap]=-0.04837  max[|p-q|-3sqrt v]=-0.06233  max[P-(6/5+3v)]=-0.03442  max[CE+KD P - envelope]=-0.08011  (all must be <=0)
+n=256: max[p,q - cap]=-0.04837  max[|p-q|-3sqrt v]=-0.06233  max[P-(6/5+3v)]=-0.03442  max[CE+KD P - envelope]=-0.04428  (all must be <=0)
+n=257: max[p,q - cap]=-0.04837  max[|p-q|-3sqrt v]=-0.06233  max[P-(6/5+3v)]=-0.03442  max[CE+KD P - envelope]=-0.04413  (all must be <=0)
+n=1000: max[p,q - cap]=-0.04837  max[|p-q|-3sqrt v]=-0.06233  max[P-(6/5+3v)]=-0.03442  max[CE+KD P - envelope]=-0.01344  (all must be <=0)
+n=100000: max[p,q - cap]=-0.04837  max[|p-q|-3sqrt v]=-0.06233  max[P-(6/5+3v)]=-0.03442  max[CE+KD P - envelope]=-0.0002054  (all must be <=0)

@@ -1,0 +1,134 @@
+{
+  "schema": "padua-known-integration-observer-v1",
+  "command": [
+    "/bin/bash",
+    "/workspace/p02/run_rehearsal",
+    "--workers",
+    "2"
+  ],
+  "started_utc": "2026-11-07T07:15:49.087937+00:00",
+  "observer_source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/audit02_observer/observe.py",
+    "bytes": 12058,
+    "sha256": "137b48c16a730e362e03dac37751ab00600b3d3cac1b29f006fbe5643ec93544"
+  },
+  "expected_source_commit": "ffe4d42ba176d56db2e77c228bce28eda0872298",
+  "expected_manifest_sha256": "583435701282d0f22aa8d2d9429e735ed8c125b9cf285c3f6ac57983157c2eb4",
+  "ops_candidate_sha256": "836dcbf098ecb391b740fa884e594e260b74705e88d26339dcc5cba9bbbf673f",
+  "waits": [
+    {
+      "pid": 217750,
+      "raw_status": 0,
+      "decoded_exit": 0,
+      "user_cpu_seconds": 27.180529,
+      "system_cpu_seconds": 2.494658,
+      "reported_maxrss_kib": 159900
+    }
+  ],
+  "signals": [],
+  "first_failure": null,
+  "root_raw_wait_status": 0,
+  "root_decoded_exit": 0,
+  "ECHILD": true,
+  "inherited_SIGCHLD": "<Handlers.SIG_DFL: 0>",
+  "manifest": {
+    "path": "/workspace/p02/runtime_manifest.json",
+    "bytes": 52438,
+    "sha256": "583435701282d0f22aa8d2d9429e735ed8c125b9cf285c3f6ac57983157c2eb4"
+  },
+  "input_pins": {
+    "run_rehearsal": {
+      "path": "/workspace/p02/run_rehearsal",
+      "bytes": 106,
+      "sha256": "7358f5b3c4d3206e4745bab673f8242cf62acb34276ec2980307a816dce75d8b"
+    },
+    "plan.json": {
+      "path": "/workspace/p02/plan.json",
+      "bytes": 8910,
+      "sha256": "efda93bee2a1bc482e641a7726a359c0234d5753977855cbc4daa2e5944e3b67"
+    },
+    "asset_provenance.json": {
+      "path": "/workspace/p02/asset_provenance.json",
+      "bytes": 42623,
+      "sha256": "71ee5c717288f12527698e76ed17560805dd1641488e021cfe70a91ec4924a41"
+    },
+    "SOURCE_CUSTODY.json": {
+      "path": "/workspace/p02/SOURCE_CUSTODY.json",
+      "bytes": 1665,
+      "sha256": "c45562991c97748d234972d487c2290a9fd1852faa3188107b0698dd2026d64f"
+    },
+    "topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/FREEZE.json": {
+      "path": "/workspace/p02/topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/FREEZE.json",
+      "bytes": 4153,
+      "sha256": "0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb"
+    }
+  },
+  "before": {
+    "free_disk_bytes": 29038583808,
+    "tree_file_bytes": 49750145,
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "cpu_max": "400000 100000",
+    "memory_max": "17179869184",
+    "rlimit_cpu": [
+      -1,
+      -1
+    ]
+  },
+  "child_pid": 217750,
+  "ended_utc": "2026-11-07T07:16:05.394034+00:00",
+  "wall_seconds": 16.305957878008485,
+  "waited_cpu_seconds": 29.675187,
+  "maximum_reported_wait4_maxrss_kib": 159900,
+  "rss_scope": "maximum of individual wait4 reports; NOT concurrent aggregate RSS",
+  "after": {
+    "free_disk_bytes": 28866080768,
+    "tree_file_bytes": 221218570,
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "cpu_max": "400000 100000",
+    "memory_max": "17179869184",
+    "rlimit_cpu": [
+      -1,
+      -1
+    ]
+  },
+  "post_input_pins": {
+    "run_rehearsal": {
+      "path": "/workspace/p02/run_rehearsal",
+      "bytes": 106,
+      "sha256": "7358f5b3c4d3206e4745bab673f8242cf62acb34276ec2980307a816dce75d8b"
+    },
+    "plan.json": {
+      "path": "/workspace/p02/plan.json",
+      "bytes": 8910,
+      "sha256": "efda93bee2a1bc482e641a7726a359c0234d5753977855cbc4daa2e5944e3b67"
+    },
+    "asset_provenance.json": {
+      "path": "/workspace/p02/asset_provenance.json",
+      "bytes": 42623,
+      "sha256": "71ee5c717288f12527698e76ed17560805dd1641488e021cfe70a91ec4924a41"
+    },
+    "SOURCE_CUSTODY.json": {
+      "path": "/workspace/p02/SOURCE_CUSTODY.json",
+      "bytes": 1665,
+      "sha256": "c45562991c97748d234972d487c2290a9fd1852faa3188107b0698dd2026d64f"
+    },
+    "topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/FREEZE.json": {
+      "path": "/workspace/p02/topics/padua-argmax-bridge-20261105/code/final_hybrid_engine/FREEZE.json",
+      "bytes": 4153,
+      "sha256": "0d9ce0a5dbb7fb37cf1a05f07040b72d046b61b8d36b6a5a8bf137eb7d9914eb"
+    }
+  },
+  "complete": true
+}

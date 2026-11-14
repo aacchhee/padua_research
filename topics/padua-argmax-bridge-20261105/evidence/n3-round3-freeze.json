@@ -1,0 +1,78 @@
+{
+  "schema": "n3-round3-freeze-v1",
+  "rules_input": "c000899f3fb10d6ba0f1725341a045fe11ec943a",
+  "scope": "Complete n17 outward producer; negative independent whole-tree enclosure calibration. No proof promotion or new accepted degree. No round4 mathematical run started.",
+  "files": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/attempts/N3.md",
+      "bytes": 13283,
+      "sha256": "09e12897c93a48b96bcad569c00b06b125947e302fafa923b716feb9a6b3cb88"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/ideas/N3-round3.md",
+      "bytes": 2512,
+      "sha256": "6698aa2345201c0e244ed147e8cea0b50f6d82d47c4e098a44203dc4bae90477"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N3-phase-n17.md",
+      "bytes": 4017,
+      "sha256": "4d9da85d659919d487c5592e38d97291b1dd24b134e1bd6e02b98a51f9fdfd65"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_full.py",
+      "bytes": 8417,
+      "sha256": "9c6460f4407498d08bd26f36fe8f7b56290a5fb33eb06e49fa6d5735a84b7b29"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_compact_candidate.py",
+      "bytes": 2605,
+      "sha256": "2e90bbb1d130ba1560a00b1712bad187b6303288cdb3c28fdcfae6bec200e3ad"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_full_receipt.py",
+      "bytes": 3867,
+      "sha256": "699d7ce2a710795d0ccf160a76e76c696fb0e332cffe59070fbc6c0522f37b75"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_full_result.py",
+      "bytes": 3605,
+      "sha256": "e420733b9e9048177e54938add6a2a3be6bc3f0ac926fa491c6982f9d7be2071"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_premise_impact_v3.py",
+      "bytes": 5931,
+      "sha256": "fe85f3205df503c799fefa5306da2c5fa0742bb0513b548454b30de33fddcec0"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-full-n17-build.json",
+      "bytes": 9946,
+      "sha256": "8a6f84304f545ef39ed82f12bb00b83e2934a1f710444f615cfaf4011bcf6791"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-full-n17-producer.json",
+      "bytes": 4388,
+      "sha256": "46ba9c02c71a34f891e1ef2781fa6fec3803a9b45952ab9b7d4fd694f378d30c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-full-n17-result.json",
+      "bytes": 4095,
+      "sha256": "9f4f48681bc63f82f2caadad91bf3721fa8206346dae7fa4e008d328508bb4f6"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-premise-impact-v3.json",
+      "bytes": 9099,
+      "sha256": "3f4997f6c8817a88bc0670cbf5b8a7f912feebc943b032fb66af914986747814"
+    }
+  ],
+  "essential_gzip_to_copy": {
+    "path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-phase-compact.json.gz",
+    "bytes": 5266,
+    "sha256": "80dcb2db069332e018653931bdb94e3995ceca5c9d96741fd1b87110474267a6"
+  },
+  "destination_requested": "topics/padua-argmax-bridge-20261105/evidence/n3-phase-n17.json.gz",
+  "accepted": false,
+  "complete_candidate": true,
+  "independent_checked_leaves": 1288,
+  "independent_failed_leaves": 364,
+  "preservation": "Historical round1/round2 receipts unchanged. Full raw identities in producer/result summaries; local bulk archival pending."
+}

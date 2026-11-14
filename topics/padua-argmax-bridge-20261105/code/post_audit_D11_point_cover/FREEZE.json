@@ -1,0 +1,84 @@
+{
+  "status": "SOURCE RELEASE CANDIDATE UNEXECUTED; distinct source audit and root release required",
+  "input_head": "5ecf97801631192fd10d84089c5a8c79bfb95138",
+  "code_data": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/checker.py",
+      "bytes": 6865,
+      "sha256": "659902969bc64b96def1c55cb7d30b05a592f7e23a637a3de94b7e077a1f6a5a"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/controller.py",
+      "bytes": 6557,
+      "sha256": "947c7bf7ae7f446a40d4eb7acf93664ced42068e00b7ce13a9a1dd24d2872007"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/controls.py",
+      "bytes": 3499,
+      "sha256": "8e3bf97f9e430487b5a067c68a2caccf5ce5b50ad6bfa1065d13dbb23f7ff9c1"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/producer.py",
+      "bytes": 2480,
+      "sha256": "b99f6dd854bffc93d69c11380bfac7e5994f49ba455044ba169accbb0d1f5b2f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/runtime.py",
+      "bytes": 9452,
+      "sha256": "3e0e2515ef5b825d9cc07e46d8a7d3c736d441adc996c58464989e97657d7947"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/SOURCES.json",
+      "bytes": 3145,
+      "sha256": "0c9297f4cc6166d841440392f32f1c5e8a1abe479e2f3ba4a19a8371fcb27c2a"
+    }
+  ],
+  "review_provenance_non_enforced": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/D10-cover-contract.md",
+      "bytes": 16710,
+      "sha256": "777f5815cc6d737d1e45c43d3069ad9bf801a2f8226aeef76c4097dd3ef043dd"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/independent-checks-D10-cover-contract.md",
+      "bytes": 13616,
+      "sha256": "bbe827a02277d9dcdee9dca89861b9374e199e86674fdb1954a7308b2d49421b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/D09-corner-patch-512.md",
+      "bytes": 12806,
+      "sha256": "9e162298c58410f73462e20f7d2ff8f82f6296a4ea1107bc635b1ac6b9fd08c1"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/independent-checks-D09-threepoint-result.md",
+      "bytes": 13934,
+      "sha256": "a54927a81158f8f1094057c0fc1f21b2e39bd922f8c0784567d3cabada2e85ca"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/D09-global-norm.md",
+      "bytes": 11083,
+      "sha256": "e84cfecd7d1f1eeab3dd56a4c78380b5fef6dfe0d011ed3a71386193ce7b2dea"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/independent-checks-D09-global-norm.md",
+      "bytes": 11076,
+      "sha256": "6e721695a76c0a8b622ec4a04420a87b761ebec8d063ed45256333170bf4accc"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/C02-defect-dense-band.md",
+      "bytes": 15433,
+      "sha256": "d28bbc8f7ae3823ff220b452630b0c30c939b9851fa0c151d2ac5962a301dec7"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/independent-checks-C11-rows.md",
+      "bytes": 8573,
+      "sha256": "7ae2cf9f09404cefce149612c1915ee8433b6190084eebb30f2b34e9b70da154"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/SPEC.md",
+      "bytes": 9112,
+      "sha256": "9993904b92226a64936a8affb9189e5c7d61ddb953000fc4f66f9d65a341eb78"
+    }
+  ],
+  "runtime_note": "Code/data and registered FREEZE equality enforced at start/end. Prose passive provenance only. No execution performed; source audit and root release pending."
+}

@@ -1,0 +1,31 @@
+{
+  "author_replay_cpu_seconds": 0.077154451,
+  "author_script_sha256": "9ab068b7928d9976db4b5b26cddc902eb063e592f296dcfb143e999869301413",
+  "checks": {
+    "analytic_rational_thresholds": 6,
+    "byte_identical_fresh_replay": 1,
+    "exact_interval_primitive": 12,
+    "exact_log_series_containment": 8,
+    "exact_machin_decimal_conversion": 1,
+    "independent_measured_component": 520,
+    "independent_uniform_component_control": 104,
+    "log_one": 1,
+    "original_evidence_unchanged": 1
+  },
+  "cpu_seconds": 0.314731976,
+  "precision_control_digits": 160,
+  "replay_csv_sha256": "52dfbb5b3babe61f71a76566428eb40e44b0145a56892874543af97fa0bd0566",
+  "review_script_sha256": "b5c6f6ef38f67886888e4b17614aa99ac5519b0fb3196a49e1b1e214abfc1098",
+  "scope": "scalar formula/source controls only; no native/kernel/board/quadrature/degree extension",
+  "status": "PASS",
+  "uniform_totals": {
+    "512": "4.400114125755",
+    "1000": "2.360338946680",
+    "2048": "1.213897610297",
+    "4096": "0.637902667878",
+    "10000": "0.277965464778",
+    "20000": "0.145523804161",
+    "50000": "0.061683200166",
+    "100000": "0.032158091315"
+  }
+}

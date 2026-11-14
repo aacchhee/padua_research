@@ -1,0 +1,145 @@
+PASS log2 lower cert = 842/1215+2/15309 :: 53056/76545
+PASS log2 tail cert <= 1/78732 (their tail uses odd denom 9) :: own tail 1/78732 vs 1/78732
+PASS log2 their tail value
+PASS log(5/4) lower cert = 488/2187
+PASS log(5/4) their tail value
+PASS 6931/10000<log2 :: slack=5321/153090000 (~3.476e-05)
+PASS log2<69315/100000 :: slack=7003/2755620000 (~2.541e-06)
+PASS 2231/10000<log5/4 :: slack=803/21870000 (~3.672e-05)
+PASS log5/4<22315/100000 :: slack=281/43740000 (~6.424e-06)
+PASS 57679/10000<L320 :: slack=16063/51030000 (~3.148e-04)
+PASS L320<5769/1000 :: slack=23311/34445250 (~6.768e-04)
+PASS H<6769/1000
+PASS pi^2>197/20 from 157/50 :: 24649/2500
+PASS b=4/pi^2<41/100 :: 80/197
+PASS hr=log(5/2)+1/18<1 :: 0.97184658987814
+PASS T>293/25 (E14-halfnear (7)) :: slack=7452509/12100000000 (~6.159e-04)
+PASS T numerator 567277810036/48400000000 :: 141819452509/12100000000
+PASS D<27/200 :: slack=14806053/15835648000 (~9.350e-04)
+PASS D cert form equals ours
+PASS Mesh three tails <14/n^2 :: tails*n^2=3.7331
+PASS Mesh<7/400 (with their 41/100 lead) :: slack=567/32000000 (~1.772e-05)
+PASS ebar<249/1600 :: 249/1600
+PASS ebar<5/32 (outer)
+PASS C4<677/50000 :: slack=2617/1004800000 (~2.604e-06)
+INFO (own exploratory variant, NOT a claim of the record; record uses pi>157/50): C4 with pi>3 bound 0.013576692708333333 vs 677/50000 0.01354
+PASS C4 excess over 1/80 = 16678/16076800 <13/12500 (record cert, pi>157/50)
+PASS kNx<11031/20000 :: slack=21/1280000 (~1.641e-05)
+PASS kNx cert =705963/1280000 :: 705963/1280000
+PASS kNy<11056/20000 :: slack=4607/102400000 (~4.499e-05)
+PASS kNy cert =56602113/102400000 :: 56602113/102400000
+PASS H>27/4
+PASS JN>2171/51200 :: 2171/51200
+PASS JN>21/500
+PASS U0>23337/2000 (halfnear (8)) :: slack=3/8000 (~3.750e-04)
+PASS beta0=5037/24000=1679/8000
+PASS 47/192 cosine constant
+PASS kappa<638/1773<9/25 :: 638/1773
+PASS halfnear 3/8 >= kappa/cos(1/4) using cos(1/4)>=31/32 :: slack=1561/439704 (~3.550e-03)
+PASS annular 5/12 >= kappa/cos(1/2) using cos(1/2)>=7/8 :: slack=269/49644 (~5.419e-03)
+PASS Ah exact = stated four-piece form :: 169881893/1657920000
+PASS Bh exact = stated :: 73727297/828960000
+PASS Aw exact = stated :: 123439013/1657920000
+PASS Bw exact = stated :: 929839/17270000
+PASS 5123/50000<Ah<1281/12500 :: Ah=0.1024669
+PASS 0<Bh<4447/50000 :: Bh=0.0889395
+PASS 37/500<Aw<3/40 :: Aw=0.0744541
+PASS 0<Bw<27/500 :: Bw=0.0538413
+PASS 74451<1e6Aw<74455 :: 74454.143
+PASS 53839<1e6Bw<53843 :: 53841.285
+PASS 158/321 factor
+PASS Fh>Lh coefficientwise (r>=0)
+PASS [grid] Fn-(11/100)(a-r/2)>0 on [0,1/2] :: min~1.209e-02
+PASS [grid] Fs-(11/100)(a-r/2)>0 on [0,1/2] :: min~5.384e-03
+PASS Fs coef (35/286)(157/160)^2>11/100 :: 0.11783148492132867
+PASS (11/100)(a-r/2)-Lh identity
+PASS 377+1697r-94r^2>0 on [0,1/2]
+PASS 1-(4p+1/2)/320>959/1000 :: 4297/4480
+PASS p+1/2<=51/14
+PASS (158/321)/(51/14)>27/200 (442400>442017)
+PASS (47/192)U>1143/400 on r>=1/8 :: slack=7/51200 (~1.367e-04)
+PASS d1=1911/800,d2=24539/8000
+PASS l1=12531/20000
+PASS tangent coeffs 15/32,3/40
+PASS e>13429/10000 :: slack=25883/872980000 (~2.965e-05)
+PASS f<29714/50000 :: slack=80927/4364900000 (~1.854e-05)
+PASS g<1/4000 :: slack=273/349192000 (~7.818e-07)
+PASS halfnear exact e,g
+PASS C4+g<1379/100000 :: slack=273/349192000 (~7.818e-07)
+PASS min_r[Lh-upper]>1/20000 :: min=211651/2634560000 (~8.033637e-05); slack 3.034e-05
+PASS integer comparison 34161^2<32*8233*4431
+PASS both curvatures >2 for r<=1/8 :: 2.3876015625
+PASS l1,l2<=627/1000
+PASS upper at r=1/8 <77/1000 :: 0.07629
+PASS Lh(1/8)>9/100 :: 0.0909421875
+PASS r<=1/8 gap >13/1000
+PASS kWx cert =373019/640000 :: 373019/640000
+PASS kWx<583/1000 :: slack=101/640000 (~1.578e-04)
+PASS kWy cert =59808113/102400000 :: 59808113/102400000
+PASS kWy<117/200 :: slack=95887/102400000 (~9.364e-04)
+PASS leading numerator 372069/2000
+PASS constants 6+10+11+50+1/2=155/2
+PASS 148+4=152
+PASS T-ebar+j>2331/200 :: slack=11/8000 (~1.375e-03)
+PASS (11/48)(2331/200)>8/3 slack 41/9600
+PASS 11/48 cosine const on x<=1
+PASS d1=9/4
+PASS l1=kWx+5/48<11/16 :: slack=1/3000 (~3.333e-04)
+PASS kWy<47/80
+PASS e=72/59>61/50 :: slack=1/2950 (~3.390e-04)
+PASS f=3029/4720<257/400 :: slack=9/11800 (~7.627e-04)
+PASS g=3/5900
+PASS C4+g<141/10000 :: slack=19/368750 (~5.153e-05)
+PASS P(1/2)=607/20000
+PASS P(3/5)=-99/2500
+PASS P(1) :: P(1)=-2817/5000 ~-0.5634
+PASS P decreasing for r>=1/2 (vertex<1/2) :: 0.26331967213114754
+PASS 1-(4p+3/5)/320=10739/11200>19/20
+PASS p+3/5<4
+PASS 158/(4*321)>3/25
+PASS (3/25)(19/20)-(9/100) = 3/125
+PASS 3a/125-3r/200>0 at r=3/5
+PASS (9/100)(a-r/2) at 3/5 = 549/10000
+PASS Fs coef at 320 (35/286)(157/160)^2>11/100>9/100
+PASS exact Fn(3/5) at 320 >17/500 :: value~0.075293, slack~4.129e-02
+PASS exact Fs(3/5) at 320 >17/500 :: value~0.071877, slack~3.788e-02
+PASS exact Fh(21/40) at 320 >17/500 :: value~0.048713, slack~1.471e-02
+PASS exact Fw(3/5) at 320 >17/500 :: value~0.035448, slack~1.448e-03
+PASS Fh(rB) lower bound (9) :: ~0.048706
+PASS Fw lower (10) at 3/5 = 697/20000
+PASS 37/500*a_r - 27r/500 >= FwL (37/2000<=3/160)
+PASS annular gap 17/500-607/20000=73/20000>3/1000
+PASS A0>0 on [0,3/5] (decreasing, value at 3/5) :: 0.5827
+PASS Rh>0 on [0,3/5] (decreasing, value at 3/5) :: 1.3476
+PASS Rw>0 on [0,3/5] (decreasing, value at 3/5) :: 1.3823
+PASS Ih>0 on [0,3/5] (decreasing, value at 3/5) :: 0.1931
+PASS Iw>0 on [0,3/5] (decreasing, value at 3/5) :: 0.1781
+PASS eta(3/5,320)>0
+PASS 4L^2/pi^2-ebar>1 at 320 (pi^2<10) :: ~13.307
+PASS Gb = 195191/2400000 :: 195191/2400000
+PASS Gb>3/40 :: slack=15191/2400000 (~6.330e-03)
+PASS K>10 :: 10.795333333333334
+PASS A<7/5 :: 1.373
+PASS F>=13/500 from 3/40-(7/5)^2/40
+PASS F with own sharper K,A >13/500 :: ~0.03767
+PASS Cb sum 3/25+9/25+17/50+2/125=209/250
+PASS Cs (3/2)(41/100)+3(3/500+3/125)=141/200<71/100
+PASS t*>=t0: 221/500 > 2log2/pi (log2<69315/100000, pi>157/50) :: 0.4414968152866242
+PASS u1<1-cos(1/2): 1-cos(1/2)>1/8-1/384 = 47/384 exactly (alt. series lower)
+PASS cos(pi/4)<17/24 (576<578)
+PASS q0=(1-17/24)/2 = 7/48
+PASS delta_A>2293/4200 :: 2293/4200
+PASS FA = 2729/21000 >1/8
+PASS delta_D=881/1000 :: 881/1000
+PASS FD=49/1000
+PASS min(FA,FD/2)=49/2000
+PASS (8/5)(49/2000)=49/1250>1/30
+PASS 16/pi^2>8/5
+PASS rU>pi^4/6144: 125*22^4<2*7^4*6144
+PASS 8(q0-rU)=779/750>1
+PASS 3q0+(79/5)rU=6903/10000<7/10
+PASS log2 256-cert: tail after x^5 term <=1/6804 :: 1/6804
+PASS 8*log2 in (277/50,111/20)
+PASS T256>107/10 :: 6501467/605000
+
+FAILS: []

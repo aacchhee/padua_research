@@ -1,0 +1,13 @@
+{
+  "source_commit": "1e62afbeca25ae85a94c508905b9bdfd67fac49d",
+  "tool_session": 85887,
+  "initial_chunk": "d9d450",
+  "completion_chunk": "dbfb3f",
+  "observed_exit_code": 0,
+  "no_rerun": true,
+  "receipt": {
+    "bytes": 4770,
+    "sha256": "280a988d54f15e4c0185c486c1458b85334ed581afd913a4024ed2c4a593add9"
+  },
+  "scope": "DATA_ONLY_NO_NATIVE exact four saved passes; no new degree/build/compiler/network"
+}

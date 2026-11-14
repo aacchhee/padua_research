@@ -1,0 +1,461 @@
+{
+  "format": "C02-mpfr-bounded-v1",
+  "status": "MEASURED; selected-case tightness gate FAIL1of2",
+  "rules_head": "4b728b04216a5490910780bc609a82b853058426",
+  "developer": "Codex; requested gpt-6.1-sol medium; serving metadata unexposed",
+  "assertions": 635,
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C02_mpfr/producer.c",
+      "bytes": 6259,
+      "sha256": "3c5240cc991162fd0b859a7de81a9f37d7d44107ebe8ec315899c0761f0feb04"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C02_mpfr/c02_interval.h",
+      "bytes": 5412,
+      "sha256": "e9841471f2372cc93dd6d97b79332c0501514008623f1ffa4a24c913ecf5d6df"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C02_mpfr/build.py",
+      "bytes": 3463,
+      "sha256": "db75e288ac58c95156c54cf2a7245158c9adac56269eab33d81c60bb085f06b7"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_C02_mpfr/controls_v2.py",
+      "bytes": 5933,
+      "sha256": "6263be7b675d45111c26d8c9e49556c10fecc202e6f00ec5ffaab2dfbaa17561"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/phase-r9/bounded-report.json",
+      "bytes": 59437,
+      "sha256": "fd2fb12d20460390c5a212120d22d964cafcbe0b19571fab19916649ef6f4f9d"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C01/profile.json",
+      "bytes": 58016,
+      "sha256": "3cb5ae233c12a306478284764af33c9a14abc71468d4e82572c42a0b703edfcb"
+    }
+  ],
+  "constants": [
+    {
+      "n": 32,
+      "bounds": [
+        3.141592653589793,
+        3.1415926535897936,
+        10.993594541096453,
+        10.993594541104466
+      ],
+      "cpu": 0.19989531599999988,
+      "counts": [
+        8448.0,
+        35892.0,
+        143568.0,
+        4.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "n": 64,
+      "bounds": [
+        3.141592653589793,
+        3.1415926535897936,
+        13.973207805336509,
+        13.97320780536591
+      ],
+      "cpu": 0.8275101280000001,
+      "counts": [
+        33280.0,
+        141428.0,
+        565712.0,
+        4.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "n": 128,
+      "bounds": [
+        3.141592653589793,
+        3.1415926535897936,
+        17.346056800008643,
+        17.34605680013145
+      ],
+      "cpu": 3.6028180929999998,
+      "counts": [
+        132096.0,
+        561396.0,
+        2245584.0,
+        4.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "boxes": [
+    {
+      "n": 32,
+      "box": [
+        -0.29452431127404316,
+        -0.1963495408493621,
+        -0.1963495408493621,
+        0.0
+      ],
+      "reference": [
+        11.174094925592955,
+        11.13400010303907,
+        0.4055197168017104,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "saved n32 former failure",
+      "root": 0,
+      "path": "111111011",
+      "status": 0,
+      "bounds": [
+        11.423706806619034,
+        11.38832829015549,
+        0.4136264866783589,
+        1.0,
+        12.85744394053217,
+        12.826413385182997
+      ],
+      "counts": [
+        16896.0,
+        73884.0,
+        295536.0,
+        12.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cpu": 0.4237711080000002,
+      "lc": 10.993594541096453,
+      "strict_S": false,
+      "strict_S_minus_defect": false
+    },
+    {
+      "n": 32,
+      "box": [
+        0.0,
+        0.09817477042468105,
+        -0.1963495408493621,
+        0.0
+      ],
+      "reference": [
+        11.222000368124668,
+        11.203263246144903,
+        0.39771335296366644,
+        10.993594541100443,
+        10.993594541100444,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "saved n32 former failure",
+      "root": 2,
+      "path": "010101010",
+      "status": 0,
+      "bounds": [
+        11.390534437743051,
+        11.373733252373508,
+        0.41414905430336973,
+        1.0,
+        12.406965323985293,
+        12.405165952698203
+      ],
+      "counts": [
+        16896.0,
+        73872.0,
+        295488.0,
+        16.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cpu": 0.4518081389999997,
+      "lc": 10.993594541096453,
+      "strict_S": false,
+      "strict_S_minus_defect": true
+    },
+    {
+      "n": 64,
+      "box": [
+        0.125,
+        0.1328125,
+        0.25,
+        0.2578125
+      ],
+      "reference": [
+        13.804216557606926,
+        13.784364046174396,
+        0.545910696198033,
+        13.973207805351173,
+        13.973207805351175,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "same narrow synthetic",
+      "status": 0,
+      "bounds": [
+        13.80918672549618,
+        13.80918672549618,
+        0.0,
+        0.0,
+        13.997594186755189,
+        13.997594186755189
+      ],
+      "counts": [
+        66560.0,
+        291194.0,
+        1164776.0,
+        2.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "cpu": 1.6991923019999997,
+      "lc": 13.973207805336509,
+      "strict_S": true,
+      "strict_S_minus_defect": true
+    },
+    {
+      "n": 64,
+      "box": [
+        0.0,
+        0.25,
+        0.0,
+        0.25
+      ],
+      "kind": "full half-radius synthetic",
+      "status": 0,
+      "bounds": [
+        15.211597258445797,
+        15.148319601575691,
+        0.00048828125,
+        1.0,
+        16.819348676697206,
+        16.805191447779723
+      ],
+      "counts": [
+        66560.0,
+        291068.0,
+        1164272.0,
+        44.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "cpu": 1.8141193770000008,
+      "lc": 13.973207805336509,
+      "strict_S": false,
+      "strict_S_minus_defect": false
+    },
+    {
+      "n": 128,
+      "box": [
+        0.125,
+        0.1328125,
+        0.25,
+        0.2578125
+      ],
+      "reference": [
+        17.12591196322084,
+        17.101031716308903,
+        0.5384801500877558,
+        17.346056800070027,
+        17.34605680007003,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "kind": "same narrow synthetic",
+      "status": 0,
+      "bounds": [
+        17.131227773725097,
+        17.131227773725097,
+        0.0,
+        0.0,
+        17.33605608794556,
+        17.33605608794556
+      ],
+      "counts": [
+        264192.0,
+        1155834.0,
+        4623336.0,
+        2.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "cpu": 7.559110654000001,
+      "lc": 17.346056800008643,
+      "strict_S": true,
+      "strict_S_minus_defect": true
+    },
+    {
+      "n": 128,
+      "box": [
+        0.0,
+        0.25,
+        0.0,
+        0.25
+      ],
+      "kind": "full half-radius synthetic",
+      "status": 0,
+      "bounds": [
+        18.839428112913957,
+        18.763661631001234,
+        0.00048828125,
+        1.0,
+        20.654771895379877,
+        20.63508861807038
+      ],
+      "counts": [
+        264192.0,
+        1155588.0,
+        4622352.0,
+        84.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "cpu": 7.687640420999998,
+      "lc": 17.346056800008643,
+      "strict_S": false,
+      "strict_S_minus_defect": false
+    }
+  ],
+  "ratio_counts": [
+    84.0,
+    126.0,
+    432.0,
+    36.0,
+    18.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "counter_order": [
+    "ratio_pairs",
+    "scalar_trig_calls",
+    "directed_MPFR_endpoint_calls",
+    "pole_charts",
+    "global_fallbacks",
+    "lazy_S_skips",
+    "analytic_floor_skips",
+    "projected_scans"
+  ],
+  "first_build_failure": {
+    "status": "FAIL",
+    "assertions": 0,
+    "own_cpu_before_receipt_serialization": 5.859769416,
+    "child_cpu": 105.34852,
+    "wall_before_receipt_serialization": 109.04690681899956,
+    "receipt": {
+      "path": "local-output/argmax-bridge-20261105/cheap-C02-mpfr/controls.json",
+      "bytes": 711295590,
+      "sha256": "02867c1923d71dc1cda7771f547860b0dc8fca15ba4ed4eed4cf057f70a1f9d3"
+    },
+    "reason": "libm remainder symbol conflict; missing -x none caused explicit ELF library to be parsed as C",
+    "snapshots": [
+      {
+        "path": "local-output/argmax-bridge-20261105/cheap-C02-mpfr/first-producer.c",
+        "bytes": 6259,
+        "sha256": "3c5240cc991162fd0b859a7de81a9f37d7d44107ebe8ec315899c0761f0feb04"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/cheap-C02-mpfr/first-c02_interval.h",
+        "bytes": 5400,
+        "sha256": "f0dc0341288536f4413247e55637c43cb911e53d24f916e7d79f36a2dfc218ac"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/cheap-C02-mpfr/first-build.py",
+        "bytes": 3399,
+        "sha256": "3f06d018ef1236a251b43f7c61fc346806626ee1d8324cd62c1bf4d31cde6888"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/cheap-C02-mpfr/first-controls.py",
+        "bytes": 5896,
+        "sha256": "e1fa88dc09555ad526d32969d0e35732924d8828007ae6b6337335e69c78503f"
+      }
+    ]
+  },
+  "corrected_run": {
+    "status": "MEASURED",
+    "failure": null,
+    "own_cpu": 25.707637100000003,
+    "child_cpu": 0.588394,
+    "wall": 26.309877124000195,
+    "exit_status": 0
+  },
+  "corrected_receipt": {
+    "path": "local-output/argmax-bridge-20261105/cheap-C02-mpfr/controls-v2.json",
+    "bytes": 44779,
+    "sha256": "4242fee78c5ed13b1d1b9fe3b2d823466e21832c389ab472b10347bcbf8e371f"
+  },
+  "compiler_version": "x86_64-linux-gnu-gcc-14 (Debian 14.2.0-19) 14.2.0",
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C02-mpfr/build-ombegbwa/producer.so",
+    "bytes": 45968,
+    "sha256": "df55450ce4fb5b7ce2dbec230c9b86d515ede450ed158f64358a86feee3eda07"
+  },
+  "preprocessed": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C02-mpfr/build-ombegbwa/producer.i",
+    "bytes": 135356,
+    "sha256": "a3c06c3a1f33cfbabec4e5393fcd3e1d5ec3732166ccdafcac87d083bf9a1607"
+  },
+  "compile_command": [
+    "/usr/bin/x86_64-linux-gnu-gcc-14",
+    "-O3",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-fmax-errors=5",
+    "-fPIC",
+    "-shared",
+    "-x",
+    "cpp-output",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C02-mpfr/build-ombegbwa/producer.i",
+    "-x",
+    "none",
+    "/lib/x86_64-linux-gnu/libmpfr.so.6",
+    "-lm",
+    "-o",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/cheap-C02-mpfr/build-ombegbwa/producer.so"
+  ],
+  "closure_entry_counts": {
+    "tools": 4,
+    "tool_runtime_closure": 13,
+    "headers": 42,
+    "linked_runtime_closure": 5,
+    "actual_loaded_mappings": 13
+  },
+  "metered_cpu_subtotal": 137.504320516,
+  "full_producer_run": false,
+  "new_degree_certificate": false,
+  "limitations": [
+    "No full candidate generation or new certificate.",
+    "Selected n32 first leaf loses strictness; second remains strict.",
+    "Both broad synthetic boxes remain non-strict.",
+    "Failed-build JSON/terminal serialization follows ownCPU sampling and was not separately metered; metered subtotal is not exact whole executionCPU.",
+    "First failure raw receipt is unusually large due pathological GCC diagnostics; kept ignored local, never committed.",
+    "No measured comparison to unchanged old MPFR backend; earlier baseline used independent Arb."
+  ],
+  "receipt_hashing_own_cpu": 0.470319412
+}

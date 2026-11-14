@@ -1,0 +1,154 @@
+{
+  "stage": "N3 round2 main files frozen; finite float criteria complete; full outward proof OPEN",
+  "rules_input": "3dda890275a7599caa707b0fb8c0b6e6f6a80643",
+  "historical_round1_commit": "3dda890275a7599caa707b0fb8c0b6e6f6a80643",
+  "developer": "Codex requested Sol medium; serving metadata not independently exposed",
+  "float_counts": {
+    "33": 2028,
+    "64": 1908,
+    "128": 1794
+  },
+  "float_cpu_seconds": {
+    "33": 12.223261275999999,
+    "64": 47.46418704999999,
+    "128": 162.65457397
+  },
+  "float_scope": "All covers complete in MEASURED binary64. Original conditional receipt unchanged; corrected independent corner premise verified by input-impact guard without mathematical rerun. No universal growth law.",
+  "files": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/attempts/N3.md",
+      "bytes": 10047,
+      "sha256": "3c8e8a84e8b2b93e1d14fb89f9a41f159222f20a0e9aff96c23e906cce2cb521"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/ideas/N3-round2.md",
+      "bytes": 2222,
+      "sha256": "e82fe214a669ffd39d6c6e9e28b9ff994ce132755057d1c0f65b68d061171636"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N3-round2-measurements.md",
+      "bytes": 4283,
+      "sha256": "e96e593980b6e4e78bc0c7b7b4f07b2205bcf567c1b8ca6671f4ca2c930ac6ad"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N3-enclosure-spec.md",
+      "bytes": 2982,
+      "sha256": "afa3fedbeea8e7dc1994280c9b13be0391e2ad18613dbddd3a9cf0cd3b5c932f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_meanvalue.c",
+      "bytes": 3606,
+      "sha256": "4739e36d05d75ce4389118364a2e2a693d2b14d87a8b79e84aa5199d6bb6a86a"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_float_v2.py",
+      "bytes": 9957,
+      "sha256": "5ebe7167abf7e98d0b8fc0b0df98418e53b34a61513254a41dcd5165c35138c3"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_float_v3.py",
+      "bytes": 10355,
+      "sha256": "5031d423d292ea41c41b12f9385a492e7b2b3b98620e7d46994ed925856dab3a"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_frontier_diagnose.py",
+      "bytes": 3849,
+      "sha256": "30147ce8599eaaa214ff5a3143600532c19a776873b95c4737725d118d0ed004"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward.c",
+      "bytes": 4830,
+      "sha256": "cfeae9fe2b61e9c7ec2c4d943762ac988e64fa02652ccfe4342430c4ee5f22dd"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_interval.h",
+      "bytes": 4215,
+      "sha256": "6dca513ddbd94264d454872c9f5e753e355d15b49152dc4b19d51cff7635131b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_run.py",
+      "bytes": 4919,
+      "sha256": "9110c663e749afb86240250a3cc77f7b824df556804c11481ac65c1239370e87"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_receipt.py",
+      "bytes": 2750,
+      "sha256": "a851c416b02c71b16b791df80b9afe3c89d9f0e62266c0fe12fe91a04cec89b6"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_phase_samples.py",
+      "bytes": 2800,
+      "sha256": "2fb1f18f1fea453fabb6a425423bf74ef4dfa59c274db7ea0ceff5883590fab5"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_round2_impact.py",
+      "bytes": 4032,
+      "sha256": "6221924d413604528f04208bce35b4a9e5fd641292ba9c5caf720e56ff59c94b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-float-v2.json",
+      "bytes": 6111,
+      "sha256": "329f4a161932d7a003367fa2afb3819838c60b90e49c461ac92784c4b527d711"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-frontier-diagnosis.json",
+      "bytes": 6086,
+      "sha256": "324b12df1c53f6cbe33f4dead36b8f440ae4e143b175c0269630bfbc8e4cba6f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-round2-impact.json",
+      "bytes": 2813,
+      "sha256": "6eb9b977884b9914e75f188eb9ef65e7030df6becdfe510d5cea5e339be709ac"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-round2-impact-initial.json",
+      "bytes": 2680,
+      "sha256": "e7609063a454f08be61307e9923e8b1026f534ca5aa95053d28c265c349606c9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-outward-bounded.json",
+      "bytes": 3853,
+      "sha256": "c11e56a67ada438fb8d6d4f88b04fe66fda19ce9a80ac0063d71cc37aa9faf7c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-phase-samples.json",
+      "bytes": 2694,
+      "sha256": "f8d4db7f87a03a6757da863af430e95b1222eaa9320868bca870607396b6a329"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-phase-sample-far.json",
+      "bytes": 3146,
+      "sha256": "c9b48003767936f5b29ef5e941944b57c6a3487b6757542e6281280dd577609a"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-phase-sample-defect.json",
+      "bytes": 3820,
+      "sha256": "c0ffd540ea58144e362e6867bcc03fb064aad1d3150e0e17778fe3865857aa83"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-phase-sample-local.json",
+      "bytes": 3823,
+      "sha256": "4bb3143427b11e4e81205395ccdf3745e4eaf78f4daa4351eb4aba3c7b45fe15"
+    }
+  ],
+  "independent_references": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/independent-corner-replay.json",
+      "bytes": 7892,
+      "sha256": "573afc5d5ae229b0fa1d47df9b6bf334e47e0e437288a3543826838e5403cb4b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/phase-checker-calibration.json",
+      "bytes": 7694,
+      "sha256": "a5bd4c558b0ccbc4d7f901a8f1eac89b376065a838cbb43781cd07c93e9322ec"
+    }
+  ],
+  "current_corner_premise": "Restored PASS after independent checker canonicalization fix and actual n2/33/64/128 rerun; all source/raw identities checked. Initial impact receipt preserved but superseded.",
+  "outward_scope": "32-visit partial calibration n17/24/32; three narrow n17 leaf predicates independently verified. All covers incomplete; producer accepted=false. No full outward run.",
+  "limits": [
+    "No new global argmax degree is established by these phase measurements.",
+    "Independent references own their statuses; this developer does not approve its own code.",
+    "Parent will publish exact checked source bytes before dated theory status promotion; later prose/status edits must reference the checked historical source commit.",
+    "V3 duplicate was terminated before degree completion and supplies no result; no more native jobs launched after36."
+  ]
+}

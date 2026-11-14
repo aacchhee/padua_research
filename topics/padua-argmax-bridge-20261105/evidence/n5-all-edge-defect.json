@@ -1,0 +1,32 @@
+{
+  "kind": "MEASURED developer selected-block checks; analytic theorem independent",
+  "input_head": "c000899f3fb10d6ba0f1725341a045fe11ec943a",
+  "python": "3.12.14",
+  "mpmath": "1.3.0",
+  "decimal_digits": 80,
+  "cases": 56,
+  "category_counts": {
+    "near": 32,
+    "small": 16,
+    "middle": 8
+  },
+  "exact_rational_budgets_passed": true,
+  "all_diagnostics_passed": true,
+  "min_selected_defect_over_case_floor": "11.8382054813763072773165237505",
+  "max_finite_polynomial_quotient_error": "2.003860985e-77",
+  "sources": {
+    "code/n5_all_edge_defect.py": "81ebfb554c297fd444ca2bfa8e6c50459538a3e81949fa32543532a220922381",
+    "code/n5_central_edge_defect.py": "c0c6280c88a15c265bd8a20d0bf78d9048203ae37f385abf3ca0b558c6ead6ac",
+    "theory/N5-all-edge-defect.md": "1c1492b50b9ab89b9a94d88a01caccc889d4547df677210152b91521a2df6fda",
+    "ideas/N5-all-edge-defect.md": "1ad83c8788fa8542cbeea60cf424b28d43c046f0c104dafb5f8c923d8c1d944e",
+    "novelty-gate-N5.md": "21c535b2faca5f542bc178e1d309b8f4057e2db109cc78f5a5312e4751268752",
+    "theory/N1-row-model.md": "d087ad8374c9e8274c5d228a47a7f796a8c64d412255a7362c0ea68863c14250"
+  },
+  "cpu_seconds": 0.82655798,
+  "independent_review": "PENDING; execution is by developer",
+  "bulk_output": {
+    "path": "local-output/argmax-bridge-20261105/N5/all-edge-defect-cases.json",
+    "bytes": 27301,
+    "sha256": "d230e247378973da6721a4ee6775d739a9c7f184eb257fd5d3859f4242042004"
+  }
+}

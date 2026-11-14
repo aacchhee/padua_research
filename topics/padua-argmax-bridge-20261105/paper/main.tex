@@ -1,0 +1,97 @@
+% Constructive Approximation development manuscript.
+% Publisher template provenance and build: BUILD.md. Draft status: README.md.
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs,array}
+\usepackage{url}
+\theoremstyle{thmstyleone}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{thmstyletwo}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{definition}[theorem]{Definition}
+\hypersetup{bookmarksdepth=2,
+ pdftitle={Sharp asymptotics of the Padua Lebesgue constant and exact maximizers of the Lebesgue function},
+ pdfauthor={Andrey Chesnokov}}
+\raggedbottom
+\begin{document}
+\title[Padua Lebesgue constants]{Sharp asymptotics of the Padua Lebesgue constant and exact maximizers of the Lebesgue function}
+\author*{\fnm{Andrey} \sur{Chesnokov}}
+\email{andrey.chesnokov@ntnu.no}
+\affil{\orgdiv{Department of Mathematical Sciences},
+ \orgname{Norwegian University of Science and Technology},
+ \orgaddress{\postcode{7491} \city{Trondheim}, \country{Norway}}}
+\abstract{The Lebesgue constant controls the stability of polynomial interpolation.
+For the Padua points of total degree $n$ on the square, we determine the maximizers of the Lebesgue function and obtain an asymptotic expansion of its maximum. The maximum is attained
+exactly at the two corners outside the interpolation set, for every $n\geq2$.
+Writing $N=n+1/2$ and $d=\gamma+\log(8/\pi)$, with $\gamma$ Euler's constant, the expansion is
+$\Lambda_n=(4/\pi^2)(\log N+d)^2+\kappa-1/N+O(\log N/N^2)$,
+where $\kappa\approx0.919710118388$ is given by a convergent integral
+(the numerical value is not used in any proof). The corner expansion
+is analytic: two harmonic sums give the leading square, while a coupled
+correction accounts for the constant and the reciprocal term. The global
+maximizer proof quantifies the cancellation that a periodic majorant loses.
+The computer-assisted location proof combines analytic localization for
+$n\geq512$ with rigorous finite certificates below that threshold.}
+\keywords{Padua points, Lebesgue constant, bivariate interpolation, asymptotic expansion, computer-assisted proof}
+\pacs[MSC Classification]{41A05, 41A63, 41A60, 65D05, 65G20}
+\maketitle
+\noindent\textbf{Development draft, 8 November 2026.}
+
+% CA requires numerical references in alphabetical author order.
+% The publisher's sn-mathphys-num style defaults to citation order.
+\nocite{MorrowPatterson2026,BialasCiezDeMarchiSuder2026,Mesh2024,Boas1954,BosCaliariDeMarchiVianelloXu2006,BosDeMarchiVianelloXu2007,CaliariDeMarchiSommarivaVianello2008poster,CaliariDeMarchiVianello2005,Computational2008,DeMarchi2005NearOptimal,DeMarchi2022,FLINT,Fousse2007MPFR,GMP,NumPy2020,Higham2002,IEEE7542019,Johansson2017Arb,Katznelson2004,KolomoitsevLomako2021,Kuznetsova1995,LaguardiaRusso2022,LandonCardinalGoviaClerk2018,Lorentz1986,Pimenova1979,VanBarelChesnokov2010}
+\input{sections/introduction}
+\input{sections/preliminaries}
+\input{sections/corner-unified}
+\input{sections/localization-unified}
+\input{sections/certification-unified}
+\backmatter
+\section*{Declarations}
+\bmhead{Funding}
+This research received no specific grant from funding agencies in the
+public, commercial, or not-for-profit sectors.
+
+\bmhead{Competing interests}
+The author declares that he has no known competing financial interests or
+personal relationships that could have appeared to influence the work
+reported in this paper.
+
+\bmhead{Author contributions}
+Andrey Chesnokov: Conceptualization, Methodology, Software, Validation,
+Formal analysis, Writing -- original draft, Writing -- review \& editing.
+ORCID: \url{https://orcid.org/0009-0004-4687-1810}.
+
+\bmhead{Declaration of generative AI and AI-assisted technologies}
+Anthropic Claude Opus 5.5 and OpenAI GPT-6 Astra and GPT-6.1 Sol were used
+within an
+author-designed AI-assisted knowledge base and research workflow, with
+extensive use of GPT-6.1 Sol in the Padua project. Their assistance covered
+mathematical argument development and checking, literature searches,
+code writing and review, manuscript drafting and editing, and structured
+audits. The author is responsible for reviewing and verifying the
+mathematical arguments, literature attributions, code, computational
+evidence and final manuscript content. Final human review and publication
+preparation remain to be completed.
+
+\bmhead{Data and code availability}
+Manuscript and checker sources are maintained at
+\url{https://github.com/aacchhee/padua_research}.
+The expanded explanatory companion, \emph{Sharp asymptotics of the Padua Lebesgue constant and exact maximizers of the Lebesgue function: an expanded explanatory companion}, is maintained with these sources.
+The public verification kit for this version contains the 942 phase
+certificate inputs (560 retained and 382 new), the 39 retained polynomial
+certificates, minimal unchanged checker sources, expected results, exact
+analytic checkers, verification commands and both manuscript PDFs.
+A separate preservation archive, held by the author in cold storage,
+contains the full native histories, runtime payloads and versioned source
+snapshot. The public kit is intended for deposit in Zenodo; it has not
+yet been deposited and no DOI has been assigned.
+Section~\ref{sec:certificates} states the finite verification scope and
+its implementation assumptions.
+
+\bibliography{references}
+\end{document}

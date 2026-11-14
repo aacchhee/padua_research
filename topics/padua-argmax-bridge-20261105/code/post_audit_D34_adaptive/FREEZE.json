@@ -1,0 +1,128 @@
+{
+  "status": "UNEXECUTED first D34 source freeze; distinct executable source/math-contract audit, publication and root release pending",
+  "preparation_input_head": "4f8c169171e55b7d5f00f57a8b3ce8340a498960",
+  "requested_developer": "Codex gpt-6.1-sol medium; actual serving metadata independently unexposed",
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D34_adaptive/controller.py --run-once",
+  "code_data": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D34_adaptive/build.py",
+      "bytes": 5690,
+      "sha256": "72b7d43950a6a19408efe375394eef2a0ebfa1aed700a8b806dab3f52c66ffe8"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D34_adaptive/checker.py",
+      "bytes": 8114,
+      "sha256": "7f54fc433f39fc56ae09855a33ab6cdbc3ff78d0c39f1820ccca2d6eea041520"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D34_adaptive/controller.py",
+      "bytes": 16328,
+      "sha256": "00bf8e1ec13d5f56f91f11079191b843ceffadb377892d27febc3574d4eafb40"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D34_adaptive/controls.py",
+      "bytes": 2617,
+      "sha256": "d75abde3685d8d3724a5b2631fd1cfcd81db43f5cde8504e2250d99f8e425998"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D34_adaptive/producer.py",
+      "bytes": 1605,
+      "sha256": "4db0a8c8325bf87cf69ecef92eaebd8f28161ef7b994b74f0d976e0ea57b6262"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D34_adaptive/runtime.py",
+      "bytes": 6365,
+      "sha256": "795ed78e58c4a6b17de823ec3c7ffdf745b752b77fd81e93b9c39c9028fead74"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D23_backend/partial.cpp",
+      "bytes": 7685,
+      "sha256": "eacfe084dac836560489244f7a3d579b476973790ac9d61962e565acf1c87461"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D07_fourcopy_point/point.cpp",
+      "bytes": 9698,
+      "sha256": "03dc79bbbc7563ba9066137c0a52467624c810a758f865f9931511c82985ff6f"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/point.cpp",
+      "bytes": 6550,
+      "sha256": "6e2f1920ca293ac5a34f01c6369d94345b0d0c9b8a03d3e58ef15d453fbcf1d9"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/cheap_rows_C11/partial.cpp",
+      "bytes": 7688,
+      "sha256": "bde1ce4850849dd402acc91eb3cee7d40883bbd51d5f7cff13334abc0f4ee23c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D09_threepoint/controller.py",
+      "bytes": 16019,
+      "sha256": "5642ad6fdf2c28165fc8d17ce8e62330ed695e7b64bb1242c13312d53d47fd73"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/phase_checker/setup.py",
+      "bytes": 1131,
+      "sha256": "ff6babcf65f90c42d35353bd306f89d96ac293c6783508b03bef175ab5a60391"
+    }
+  ],
+  "contract": {
+    "degree": 41,
+    "S_source": "unchanged accepted D23 point/partial J2 K8 LH4 WD16 P160 CP640 MP640; no160+ small-error corollary below160",
+    "actual_source": "unchanged D07 point.cpp with ORIGINAL C11 partial tails; literal guards unchanged",
+    "coarse_grid": "13 distinct canonical quarter-triangle keys, sorted, all fresh",
+    "coarse_norm": "ceil(784*max_grid_upper/663), global D14 proof",
+    "actual_physical_turn_keys": [
+      [
+        "1/164",
+        "0"
+      ],
+      [
+        "0",
+        "1/224"
+      ],
+      [
+        "1/164",
+        "1/224"
+      ]
+    ],
+    "corner_criterion": "q=min(loss_x/(1/32),loss_y/(9/512),loss_xy/(1/32+9/512)); require q>M*p_hi^4*max(1/32,kappa^4*9/512)/6 = M*p_hi^4/192",
+    "floor": "accepted D29 max(1/512,min(1/32,B_41(r_B))) at r_B=min(1/2,p_hi*(ah+bh)), actual noncorner near subset only",
+    "producer": "exact S cache only; coarse M throughout; complete closed midpoint tree; larger squared weighted width, ties a; lower-child-first DFS",
+    "max_unique_S_calls_including_grid_and_unused": 256,
+    "max_actual_lambda_calls": 3,
+    "max_nodes": 2047,
+    "max_depth": 18,
+    "final_norm": "predeclared min(valid coarse M,valid ceil Rtree), TREE wins ties; recompute ALL phase and actual-corner predicates once before acceptance",
+    "retained_premises": "ALL final S corner uppers + origin lower +3actual uppers; GRID selection also retains13grid uppers; TREE proof independent of omitted grid",
+    "FLOAT_calls": 0,
+    "polygon_optimizer_or_pruning": false,
+    "controls_CPU": 2,
+    "checker_CPU": 100,
+    "whole_inclusive_CPU": 120,
+    "aggregate_safety_CPU": 110,
+    "completed_call_stop_CPU": 10,
+    "unfinished_call_stop_CPU": 15,
+    "supervisor_poll_seconds": 0.25,
+    "controls_wall_seconds": 15,
+    "checker_wall_seconds": 900,
+    "whole_wall_seconds": 1000,
+    "final_self_limit": "after ECHILD, fixed waited-child c and no more children; absolute selfHard<=floor(120-c)-1 so c+selfHard<=119",
+    "retry_or_source_precision_order_tail_cap_seed_case_tree_degree_rescue": false,
+    "essential_certificate_bytes_strictly_less_than": 16384,
+    "whole_raw": "one untruncated off-Git raw-evidence.json, all native lowers/uppers/radii/counters/costs/cache/unusedpoints/trace/controls/build/runtime/maps; hash+bytes retained; manifested binaries/TUs off Git",
+    "acceptance": "all final norm/floor/phase/corner predicates and identities, complete accepted atomic final-accounting with no first failure AND directly observed actual EXIT0",
+    "accepted_final_result": "EXACT_ADAPTIVE41_PRIMARY_ACCEPTED_PENDING_FRESH_REPLAY",
+    "new_degree_claim": "prohibited until independent FRESH replay of ALL kept proof points and full final verification/result review"
+  },
+  "preparation_checks": [
+    "static Python AST syntax for6sourcefiles",
+    "read-only source/guard/include and exact mathematical-formula matching",
+    "no source copies/edits of D23,D07,C11 or any previous freeze"
+  ],
+  "module_import_control_compiler_native_scientific_execution": false
+}

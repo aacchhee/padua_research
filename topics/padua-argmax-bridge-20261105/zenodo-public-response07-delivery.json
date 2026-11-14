@@ -1,0 +1,116 @@
+{
+  "format": "padua-zenodo-public-response07-v1",
+  "date": "2026-11-14",
+  "status": "Rebuilt public candidate; bounded developer and distinct supplementary checks PASS; focused Claude delta review pending",
+  "artifact": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/zenodo-public-response07-20261114/padua-reproducibility-20261114.zip",
+    "bytes": 5149206,
+    "sha256": "b341e6a1c6875550b58576b2cb167766f5a3cf9a4e4fc620b1134d2c490adbaa",
+    "file_count": 1019,
+    "expanded_bytes": 10229741,
+    "modes": "regular 0644"
+  },
+  "source_checkpoint": "dce3260b88c11a964168a64c34b168ac37f2a11c",
+  "manuscripts": {
+    "source_freeze": "5f435be21f29f6fbf48e6d8cba15346117d7e151",
+    "pointer_commit": "daa77deb6371a12f6a6e36ff7b894ebb71a7f232",
+    "manuscripts": {
+      "paper": {
+        "path": "/workspace/padua_research/local-output/padua-argmax-bridge-20261105/response07-paper-20261114/padua-manuscript-20261114-105928-Oslo.pdf",
+        "bytes": 812804,
+        "sha256": "d51627f5b42a647233ae76f95a25754d6b0dff7fbe2ca156d563473ee20c8d39",
+        "pages": 59
+      },
+      "companion": {
+        "path": "/workspace/padua_research/local-output/padua-argmax-bridge-20261105/response07-companion-20261114/padua-companion-20261114-105928-Oslo.pdf",
+        "bytes": 1223870,
+        "sha256": "9de87206d4988dd2997016ba9885f2ec5cd59a110ab36abac5576d50dfa877fc",
+        "pages": 152
+      }
+    }
+  },
+  "public_adapter_sha256": "92319b6401f4c3de99880aeaf9af11d13a0e1fb21cd3a1c2c99c2e9ec1a44b6c",
+  "builder_sha256": "fabac559df9e0f2e87919e430cd93a5751e033bd29f210075d2bd08cabf1e9d4",
+  "contents": {
+    "phase_records": 942,
+    "polynomial_inputs": 39,
+    "unchanged_files_from_previous_ZIP": 1010,
+    "changed_files": 9,
+    "changed_paths": [
+      "MANIFEST.json",
+      "SHA256SUMS",
+      "README.md",
+      "README.txt",
+      "verify.py",
+      "analytic/tables/paper.tex",
+      "analytic/tables/companion.tex",
+      "papers/paper.pdf",
+      "papers/companion.pdf"
+    ]
+  },
+  "checks": {
+    "source_statements_displays_labels": [
+      19,
+      86,
+      120
+    ],
+    "built_labels_equal": 120,
+    "baseline_controls": 7,
+    "mutation_scenarios": 13,
+    "empty_rename_map": "PASS against e861c752",
+    "developer_smoke": {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-E",
+        "-B",
+        "/workspace/padua_research/local-output/argmax-bridge-20261105/zenodo-public-response07-20261114/padua-reproducibility/verify.py",
+        "--degrees",
+        "41,511",
+        "--polynomial-degrees",
+        "2,17",
+        "--analytic"
+      ],
+      "verify_sha256": "92319b6401f4c3de99880aeaf9af11d13a0e1fb21cd3a1c2c99c2e9ec1a44b6c",
+      "CPU_limit_per_process": 300,
+      "wall_limit_seconds": 600,
+      "returncode": 0,
+      "wait_status": 0,
+      "CPU_seconds": 24.861645,
+      "wall_seconds": 25.04661200800183,
+      "maximum_RSS_KiB": 153380,
+      "cleanup": false,
+      "scope": "phase 41 and 511 both records; polynomial fresh build, 2 and 17; analytic gates and tables; no full rerun"
+    },
+    "independent_README_smoke": {
+      "waitstatus": 0,
+      "CPU_seconds": 25.855,
+      "wall_seconds": 25.914,
+      "maximum_RSS_KiB": 154468,
+      "environment": "Python 3.13.5 / NumPy 2.2.4 / g++ 14.2.0"
+    },
+    "negative_subset": 9,
+    "report": "supplementary-review-response07-20261114.md",
+    "new_full_942_or_full_39_or_native_campaign": false
+  },
+  "disclosure": {
+    "owner_choice": "Retain with explicit disclosure",
+    "pinned_input_bytes_changed": false,
+    "README_discloses": "home/workspace/runtime paths and internal process text in retained inputs/provenance"
+  },
+  "prior_artifacts_unchanged": {
+    "public": {
+      "bytes": 5138944,
+      "sha256": "15885d34498b7f20c20f4b97453babfa85a09d46490dbcb14c051b429e2ee036"
+    },
+    "preservation": {
+      "bytes": 296189961,
+      "sha256": "d3452a176a220a649ca889cacd43c9c0d96fb75e12ae84849d0a07ee6b7d354c"
+    }
+  },
+  "publication": {
+    "uploaded": false,
+    "DOI": null,
+    "license_authorship_metadata": "Reserved to owner"
+  },
+  "response": "response-07.md"
+}

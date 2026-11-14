@@ -1,0 +1,24 @@
+{
+  "result": "ACCEPT_INDEPENDENT_D34_N41",
+  "complete": true,
+  "first_failure": null,
+  "returncode": 0,
+  "stop": null,
+  "CPU_through_payload": 6.447666,
+  "final_limit": {
+    "waited_children_CPU": 6.2453959999999995,
+    "self_CPU_at_tightening": 0.19550099999999998,
+    "self_hard": 112,
+    "no_children": true
+  },
+  "freeze": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D34_result_review/FREEZE.sha256",
+    "bytes": 1017,
+    "sha256": "0ab0598faa5d43630f6bdde4e16c1ea6c6844aa84561493ab3d3006ca08c1090"
+  },
+  "raw": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D34/independent-result/raw-evidence.json",
+    "bytes": 202928,
+    "sha256": "c19937204d7c045a72e28fa1671280408c10f908014ed3e70becf6f27d6b9778"
+  }
+}

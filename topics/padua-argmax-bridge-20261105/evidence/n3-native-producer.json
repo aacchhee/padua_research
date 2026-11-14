@@ -1,0 +1,238 @@
+{
+  "status": "Exact producer inventory only; no developer self-approval",
+  "rules_input": "98d6c00d8a474cf97602c9cfdea631a837191ac0",
+  "source_revision": "98d6c00d8a474cf97602c9cfdea631a837191ac0 (producer sources unmodified)",
+  "developer": "Codex; requested Sol medium; serving metadata not exposed",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "compiler": "gcc (Debian 14.2.0-19) 14.2.0",
+  "gmp_version": "6.3.0",
+  "sources": [
+    {
+      "path": "topics/padua-argmax-effective-20261103/code/native_producer/producer.c",
+      "bytes": 9360,
+      "sha256": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff"
+    },
+    {
+      "path": "topics/padua-argmax-effective-20261103/code/native_producer/run.py",
+      "bytes": 5072,
+      "sha256": "718cf9fc39653766c86fe862398a4670d4426215a994f2cb9063d482554fa934"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_native_receipt.py",
+      "bytes": 2979,
+      "sha256": "44990cb6b9e65ee8fe788663be91e7bde71ee6ce77dec7b228d56825f7209577"
+    }
+  ],
+  "degrees": [
+    {
+      "n": 33,
+      "certificate": {
+        "path": "local-output/argmax-bridge-20261105/N3/n33.json.gz",
+        "bytes": 8141,
+        "sha256": "090f650ae5d52d72716857e8a67a8fac7c330fa208ff81487368e1ef89d82f90"
+      },
+      "complete": true,
+      "producer_accepted": false,
+      "independent_replay": "PENDING (separate agent owns acceptance)",
+      "statistics": {
+        "bound": 284,
+        "corner": 2,
+        "maximum_depth": 11,
+        "splits": 285,
+        "visited": 571
+      },
+      "pending": 0,
+      "leaves": 286,
+      "seconds": {
+        "setup_seconds": 18.383827,
+        "search_seconds": 150.092476,
+        "total_seconds": 169.25770484500003
+      },
+      "provenance": {
+        "binary_sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312",
+        "driver_sha256": "718cf9fc39653766c86fe862398a4670d4426215a994f2cb9063d482554fa934",
+        "input_sha256": "31b21f5c327a99a10fc385104f166234d452a499bfad6ae23024a16294063f2d",
+        "kind": "C/GMP native exact hot path",
+        "reference_sources_are_schema_dependencies": true,
+        "source_sha256": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff"
+      },
+      "inputs": [
+        {
+          "path": "local-output/argmax-bridge-20261105/N3/native33/n33-input.txt",
+          "bytes": 21242,
+          "sha256": "31b21f5c327a99a10fc385104f166234d452a499bfad6ae23024a16294063f2d"
+        },
+        {
+          "path": "local-output/argmax-bridge-20261105/N3/native33/producer-build.c",
+          "bytes": 9360,
+          "sha256": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff"
+        },
+        {
+          "path": "local-output/argmax-bridge-20261105/N3/native33/native-producer",
+          "bytes": 31112,
+          "sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312"
+        }
+      ],
+      "command": "python topics/padua-argmax-effective-20261103/code/native_producer/run.py --n 33 --seconds 900 --output local-output/argmax-bridge-20261105/N3/n33.json.gz --work local-output/argmax-bridge-20261105/N3/native33"
+    },
+    {
+      "n": 34,
+      "certificate": {
+        "path": "local-output/argmax-bridge-20261105/N3/n34.json.gz",
+        "bytes": 8253,
+        "sha256": "8c4866e2bda66e331e4940f17ace71b9caeb8ecf0bdd091bf026d215b21acb2d"
+      },
+      "complete": true,
+      "producer_accepted": false,
+      "independent_replay": "PENDING (separate agent owns acceptance)",
+      "statistics": {
+        "bound": 288,
+        "corner": 2,
+        "maximum_depth": 11,
+        "splits": 289,
+        "visited": 579
+      },
+      "pending": 0,
+      "leaves": 290,
+      "seconds": {
+        "setup_seconds": 22.836969,
+        "search_seconds": 219.477895,
+        "total_seconds": 243.15009741100005
+      },
+      "provenance": {
+        "binary_sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312",
+        "driver_sha256": "718cf9fc39653766c86fe862398a4670d4426215a994f2cb9063d482554fa934",
+        "input_sha256": "6b483bdb9274c7c035456f65dd2d7a1a8cb1b25818fd36decf7e0312049ecda3",
+        "kind": "C/GMP native exact hot path",
+        "reference_sources_are_schema_dependencies": true,
+        "source_sha256": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff"
+      },
+      "inputs": [
+        {
+          "path": "local-output/argmax-bridge-20261105/N3/native34/n34-input.txt",
+          "bytes": 22326,
+          "sha256": "6b483bdb9274c7c035456f65dd2d7a1a8cb1b25818fd36decf7e0312049ecda3"
+        },
+        {
+          "path": "local-output/argmax-bridge-20261105/N3/native34/producer-build.c",
+          "bytes": 9360,
+          "sha256": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff"
+        },
+        {
+          "path": "local-output/argmax-bridge-20261105/N3/native34/native-producer",
+          "bytes": 31112,
+          "sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312"
+        }
+      ],
+      "command": "python topics/padua-argmax-effective-20261103/code/native_producer/run.py --n 34 --seconds 900 --output local-output/argmax-bridge-20261105/N3/n34.json.gz --work local-output/argmax-bridge-20261105/N3/native34"
+    },
+    {
+      "n": 35,
+      "certificate": {
+        "path": "local-output/argmax-bridge-20261105/N3/n35.json.gz",
+        "bytes": 8485,
+        "sha256": "cdf5058f476692d1fc3847b8b59ca44ffe9cecd9ffc3271a2d47b733464935bb"
+      },
+      "complete": true,
+      "producer_accepted": false,
+      "independent_replay": "PENDING (separate agent owns acceptance)",
+      "statistics": {
+        "bound": 298,
+        "corner": 2,
+        "maximum_depth": 11,
+        "splits": 299,
+        "visited": 599
+      },
+      "pending": 0,
+      "leaves": 300,
+      "seconds": {
+        "setup_seconds": 27.487994,
+        "search_seconds": 262.394524,
+        "total_seconds": 356.9634336900001
+      },
+      "provenance": {
+        "binary_sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312",
+        "driver_sha256": "718cf9fc39653766c86fe862398a4670d4426215a994f2cb9063d482554fa934",
+        "input_sha256": "c7f8b7f79fda40500df6509f0e8c3cb3e4e2009a4e5c93b5e690c7dd14d76a22",
+        "kind": "C/GMP native exact hot path",
+        "reference_sources_are_schema_dependencies": true,
+        "source_sha256": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff"
+      },
+      "inputs": [
+        {
+          "path": "local-output/argmax-bridge-20261105/N3/native35/n35-input.txt",
+          "bytes": 24114,
+          "sha256": "c7f8b7f79fda40500df6509f0e8c3cb3e4e2009a4e5c93b5e690c7dd14d76a22"
+        },
+        {
+          "path": "local-output/argmax-bridge-20261105/N3/native35/producer-build.c",
+          "bytes": 9360,
+          "sha256": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff"
+        },
+        {
+          "path": "local-output/argmax-bridge-20261105/N3/native35/native-producer",
+          "bytes": 31112,
+          "sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312"
+        }
+      ],
+      "command": "python topics/padua-argmax-effective-20261103/code/native_producer/run.py --n 35 --seconds 900 --output local-output/argmax-bridge-20261105/N3/n35.json.gz --work local-output/argmax-bridge-20261105/N3/native35"
+    },
+    {
+      "n": 36,
+      "certificate": {
+        "path": "local-output/argmax-bridge-20261105/N3/n36.json.gz",
+        "bytes": 8679,
+        "sha256": "067fcf2af8eb2f112f65f2689ecd7102b87f1b2cb31b2508d97ba09be0d9f22c"
+      },
+      "complete": true,
+      "producer_accepted": false,
+      "independent_replay": "PENDING (separate agent owns acceptance)",
+      "statistics": {
+        "bound": 306,
+        "corner": 2,
+        "maximum_depth": 12,
+        "splits": 307,
+        "visited": 615
+      },
+      "pending": 0,
+      "leaves": 308,
+      "seconds": {
+        "setup_seconds": 30.539833,
+        "search_seconds": 311.4286,
+        "total_seconds": 419.605946291
+      },
+      "provenance": {
+        "binary_sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312",
+        "driver_sha256": "718cf9fc39653766c86fe862398a4670d4426215a994f2cb9063d482554fa934",
+        "input_sha256": "8ae903bb898b8ed9ed7a747252cedd84bc28bc703f3bd41533f43dd96adf3ff7",
+        "kind": "C/GMP native exact hot path",
+        "reference_sources_are_schema_dependencies": true,
+        "source_sha256": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff"
+      },
+      "inputs": [
+        {
+          "path": "local-output/argmax-bridge-20261105/N3/native36/n36-input.txt",
+          "bytes": 24248,
+          "sha256": "8ae903bb898b8ed9ed7a747252cedd84bc28bc703f3bd41533f43dd96adf3ff7"
+        },
+        {
+          "path": "local-output/argmax-bridge-20261105/N3/native36/producer-build.c",
+          "bytes": 9360,
+          "sha256": "ae3002a995c199660ad8c31dd2c7577a8416208ab8b3868c0795ebe728ab72ff"
+        },
+        {
+          "path": "local-output/argmax-bridge-20261105/N3/native36/native-producer",
+          "bytes": 31112,
+          "sha256": "5d288fa3af75641e74b6ead67ab28b65eee6f7d144bf134c981eeebb4241e312"
+        }
+      ],
+      "command": "python topics/padua-argmax-effective-20261103/code/native_producer/run.py --n 36 --seconds 900 --output local-output/argmax-bridge-20261105/N3/n36.json.gz --work local-output/argmax-bridge-20261105/N3/native36"
+    }
+  ],
+  "limits": [
+    "PD-T210 unchanged; complete producer output is not checker acceptance.",
+    "Generated raw artifacts retained locally; archival transfer pending.",
+    "No larger degree or all-degree statement follows from this inventory."
+  ]
+}

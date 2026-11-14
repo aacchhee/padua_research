@@ -1,0 +1,19 @@
+max |J_closed - I_direct| on 6 parameter triples: 3.9225e-6
+max (E-Z) over 7 samples (<=0 expected): 1.05879e-21 ; max|E-Z| for s>=v (0 expected): 1.2705e-21
+I4 = 0.87401918476404 < 319/360 = 0.886111111111111 ; kappa = 0.354226633305615
+grid points (closed rho<=pi/2, N=10): 66
+max [Ec - (kappa p^1.5/sqrt a - Bbeta)] (E11 (2), <=0 expected): 0.0 at ['0.0', '0.0']
+max [Ec - E10 (2) rhs] on rho<=1 subset (<=0 expected): 0.0 at ['0.0', '0.0']
+max |Ec(0,y)+Bbeta(0,y)| at y=0.3,1,pi/2 (0 expected): 2.1176e-22 ; Ec(0,pi/2) = -0.1859823349
+axis ratio Ec(x,0)/[kappa p^1.5/sqrt a] at x= 0.01 : 0.7668651835
+axis ratio Ec(x,0)/[kappa p^1.5/sqrt a] at x= 0.001 : 0.9057465005
+axis ratio Ec(x,0)/[kappa p^1.5/sqrt a] at x= 0.0001 : 0.963645759
+rho<= 0.5 : max [Ec - ( 0.375 x^1.5 - Bbeta)] = 0.0 (<=0 expected)
+rho<= 1.0 : max [Ec - ( 0.4167 x^1.5 - Bbeta)] = 0.0 (<=0 expected)
+rho<= 1.25 : max [Ec - ( 0.45 x^1.5 - Bbeta)] = 0.0 (<=0 expected)
+K(k)*sqrt(2k) at k=0.01,0.3,0.9: ['0.990761', '0.678976', '0.0743853']
+F(v,a) direct / bound 4sqrt2 I4 v^1.5/sqrt a at ('0.25', '0.9') : 0.92351794
+F(v,a) direct / bound 4sqrt2 I4 v^1.5/sqrt a at ('0.5', '0.5') : 0.70896126
+exit=0
+0m0.002s 0m0.000s
+0m21.178s 0m0.040s

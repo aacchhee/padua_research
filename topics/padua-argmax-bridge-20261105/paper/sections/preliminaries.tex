@@ -1,0 +1,112 @@
+\section{The interpolation operator and its normalization}\label{sec:preliminaries}
+Put $Q=[-1,1]^2$ and let $\Pi_n$ be the real polynomials of total degree
+at most $n$. Here $\delta_{AB}$ is one if $A=B$ and zero otherwise.
+The cardinal polynomials satisfy $L_B(A)=\delta_{AB}$ for
+$A,B\in\mathcal P_n$, and
+\[
+ I_nf(z)=\sum_{B\in\mathcal P_n} f(B)L_B(z).
+\]
+The triangle inequality gives $\|I_n\|\leq\max_Q\lambda_n$; equality
+follows by prescribing at the nodes the signs of the cardinal values
+at a maximizing point and extending these finitely many values
+continuously to $Q$. This proves the operator-norm interpretation used
+in \eqref{eq:lebesgue-inequality}.
+
+We use the Chebyshev polynomials $T_r(\cos t)=\cos(rt)$. Write
+$\theta_j=j\pi/n$, $\phi_k=k\pi/(n+1)$ and
+\[
+ \varepsilon_j=\begin{cases}1/2,&j=0,n,\\1,&\text{otherwise},\end{cases}
+ \qquad
+ \eta_k=\begin{cases}1/2,&k=0,n+1,\\1,&\text{otherwise},\end{cases}
+ \qquad w_{jk}=\frac{2\varepsilon_j\eta_k}{n(n+1)}.
+\]
+For the kernel formula below, set $\nu_0=1$ and $\nu_r=2$ for $r>0$;
+these are the mode multiplicities. For $x_j=\cos\theta_j$ and
+$y_k=\cos\phi_k$, the checkerboard scalar product is
+\[
+ \langle F,G\rangle_n=
+ \sum_{\substack{0\leq j\leq n,\ 0\leq k\leq n+1\\j+k\ \mathrm{even}}}
+ w_{jk}F(x_j,y_k)G(x_j,y_k).
+\]
+The Gram matrix of the basis $e_{pq}(x,y)=T_p(x)T_q(y)$,
+$p,q\geq0$, $p+q\leq n$, has entries
+$\langle e_{pq},e_{rs}\rangle_n$.
+A node set is \emph{unisolvent for $\Pi_n$} if every assignment of
+nodal values has exactly one interpolating polynomial in $\Pi_n$.
+A kernel here is a function of two points formed from products of basis
+values. Write $z=(z_1,z_2)$ and $B=(B_1,B_2)$. For
+$B=(\cos\theta_j,\cos\phi_k)\in\mathcal P_n$, write $w_B=w_{jk}$. Define
+\[
+ K_n(z,B)=\sum_{p+q\leq n}\nu_p\nu_q
+ T_p(z_1)T_p(B_1)T_q(z_2)T_q(B_2).
+\]
+
+\begin{lemma}[Cardinal kernel]\label{lem:cardinal-kernel}
+The set $\mathcal P_n$ is unisolvent for $\Pi_n$, and for
+$B=(\cos\theta_j,\cos\phi_k)\in\mathcal P_n$,
+\begin{equation}\label{eq:cardinal-kernel}
+ L_B(z)=w_{jk}\bigl[K_n(z,B)-T_n(z_1)T_n(B_1)\bigr].
+\end{equation}
+In particular the coefficient of the highest first-coordinate mode is
+one.
+\end{lemma}
+\begin{proof}
+For $M\geq1$ let
+\[
+ Q_M(g)=\frac1M\sum_{j=0}^M{}'g(j\pi/M),
+\]
+where the prime gives weight $1/2$ to each endpoint. Finite geometric
+sums show that $Q_M(\cos rt)=0$ for $1\leq r\leq2M-1$ and
+$Q_M(1)=Q_M(\cos2Mt)=1$. Consequently
+\[
+ Q_M(\cos pt\cos rt)=\delta_{pr}h_p^{(M)},\qquad
+ h_p^{(M)}=\begin{cases}1,&p=0,M,\\1/2,&0<p<M.\end{cases}
+\]
+Multiplication by $(-1)^j$ sends the mode $p$ to $M-p$ on this grid.
+In the checkerboard scalar product the identity
+$2\mathbf1_{j+k\,\mathrm{even}}=1+(-1)^{j+k}$ splits the Gram matrix
+of the modes $T_p(x)T_q(y)$, $p+q\leq n$, into a tensor product part
+and an alternating part. The alternating part could be nonzero only
+if $p+r=n$ and $q+s=n+1$. Their sum contradicts
+$(p+q)+(r+s)\leq2n$, so that part vanishes.
+The Gram matrix is therefore diagonal and positive, with diagonal
+$h_p^{(n)}h_q^{(n+1)}$.
+
+There are $(n+1)(n+2)/2$ checkerboard points, the same number as the
+modes. The square evaluation matrix is invertible, proving unisolvence.
+The inverse Gram coefficients are $\nu_p\nu_q$ except at $(p,q)=(n,0)$,
+where the coefficient is one. The corrected discrete reproducing kernel
+$\widetilde K_n(z,B)=K_n(z,B)-T_n(z_1)T_n(B_1)$ satisfies
+$p(z)=\sum_Bw_Bp(B)\widetilde K_n(z,B)$ for every $p\in\Pi_n$.
+This kernel, multiplied
+by $w_{jk}$, therefore has the cardinal values and gives
+\eqref{eq:cardinal-kernel}.
+\end{proof}
+
+In angular coordinates $z=(\cos\theta,\cos\phi)$, products of
+Chebyshev modes become products of cosines. The angular kernel is the
+finite trigonometric sum in two free angles $u,v$, whose reflected
+copies express the corrected polynomial kernel by product-to-sum.
+The same correction appears in the angular kernel
+\begin{equation}\label{eq:angular-kernel}
+ G_n(u,v)=\sum_{p+q\leq n}\nu_p\nu_q\cos(pu)\cos(qv)-\cos(nu).
+\end{equation}
+At a corner it gives the exact signed row sums; in the interior its
+reflections give the cancellation comparison. Thus the two arguments
+start from one normalized kernel.
+
+
+
+The two nonnode corners in Theorem~\ref{thm:main-location} have equal
+Lebesgue values by symmetry. For even $n$, reflection in the first
+coordinate sends $j$ to $n-j$ and preserves the checkerboard. For odd
+$n$, reflection in the second coordinate sends $k$ to $n+1-k$ and
+preserves it. Uniqueness of interpolation carries these symmetries to
+the cardinal polynomials and hence to $\lambda_n$.
+
+\begin{remark}
+All formulas involving trigonometric quotients are interpreted by their
+continuous polynomial limits at removable singularities. The maximization
+and certificate domains include all nodes, edges and collisions of angular
+coordinates.
+\end{remark}

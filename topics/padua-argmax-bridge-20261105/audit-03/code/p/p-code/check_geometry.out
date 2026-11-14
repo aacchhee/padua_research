@@ -1,0 +1,12 @@
+outer-geometry minimal slacks (>=0 required): {'v>=0': 4e-05, 'a0-a': 4e-05, 'w0-(ce+cd)': 4e-05, 'p0+eta sqrt v - max(p,q)': 0.00503, '3sqrt v - d+': 0.00882, 'P0+4v-P': 0.00124, '2sqrt(2v)-|p-q|': 0.00621}
+literal x>=1 route: p0+eta*sqrt(11/48-u1)=0.9701 vs max sin x on [1,pi] = 1 -> insufficient
+x-dependent route max_{x in[1,pi]} sin x - eta*sqrt((1-cos x)/2-u1) = 0.3498 (< p0=0.48 needed)
+(uc:weighted-C) min slack over theta grid: 0.0
+cancellation lemma (v,s,e, quad-closed, R, R<=0, |R|<=max(2v,s+v)log2):
+   (1.0, 0.3, 0.7, -1.501618190399175e-09, -1.294893278069265, True, True)
+   (1.0, 0.9, 1.2, 4.338303064349244e-09, -0.39703048669174507, True, True)
+   (0.5, 1.2, 0.3, 2.172851668904549e-09, -1.0357130394047722, True, True)
+   (0.5, 1.2, 1.4, -4.0047407260594174e-10, -0.014657163341885061, True, True)
+   (0.8, 2.0, 0.2, 9.168465779223772e-09, -1.8251305154200335, True, True)
+   (0.3, 0.31, 0.05, -1.1609918454867123e-08, -0.051000892009181405, True, True)
+cpu_s 6.880063283

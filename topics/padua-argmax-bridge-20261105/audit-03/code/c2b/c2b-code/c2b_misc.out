@@ -1,0 +1,17 @@
+f_j - 4a/(w^2-z^2) all j                   worst=4.485e-14
+(c_e+c_d)/w                                worst=1
+|h_2(t)|/r0                                worst=0.9495
+far 1/(6K)                                 worst=0.4135
+far |H_h-1|/u^2                            worst=0.1487
+(1/z-cot z)/(pi z/6)                       worst=0.774
+-log(sin z/z)/(z^2/3)                      worst=0.5491
+|f_a'|/a                                   worst=0.3789
+|f_a|/(a z)                                worst=0.3479
+prefactor err/(w/(20m^2))                  worst=0.8342
+prefactor err >=0 viol                     worst=-4.167e-09
+(1-tau)/(2t^2/5) |t|<1                     worst=0.8948
+(1-u cot u)/u^2                            worst=0.3479
+|(u cot u)'|/(2u)                          worst=0.3634
+||L_n'||_1/((9/8) n H_n)                   worst=0.434
+cot(v/2)/(8/(3v0))                         worst=0.8919
+|cot diff|/(8pi^2 y/(9 m v0^2))            worst=0.2822

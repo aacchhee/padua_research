@@ -1,0 +1,239 @@
+{
+  "status": "MEASURED primary exact finite-cover acceptance; independent fresh native replay and mathematical application pending",
+  "release_commit": "e13a538bda80e6cc785f4835937b2ca338bc1d6f",
+  "generating_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/controller.py --run-once",
+  "metadata_command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/receipt_postprocess.py --run-once",
+  "freeze": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/FREEZE.json",
+    "bytes": 3539,
+    "sha256": "3c361e44db34babd168cdca0c785fe101abb80c5441cbf9e1c7314e52c73c8c1"
+  },
+  "sources": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/SOURCES.json",
+    "bytes": 3145,
+    "sha256": "0c9297f4cc6166d841440392f32f1c5e8a1abe479e2f3ba4a19a8371fcb27c2a"
+  },
+  "postprocessor": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/post_audit_D11_point_cover/receipt_postprocess.py",
+    "bytes": 11191,
+    "sha256": "0f70ad0a5f70871b063c588f6ca54700ca4e26bd7ff7829db0d2c41f996165dd"
+  },
+  "essential_certificate": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/evidence/d12-point-cover-tree.json",
+    "bytes": 147,
+    "sha256": "62a0f35a51730ab57b0a0931122b9cab7c6ca1d113ea38dc779a059ade3eda2e"
+  },
+  "corner_computational_premise": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/evidence/d09-threepoint.json",
+    "bytes": 11236,
+    "sha256": "34553e6d91dc77285f1bbb277a0f519c5a8a5da5f27a8f43501c7caf13631509"
+  },
+  "verification": {
+    "nodes": 83,
+    "internal_nodes": 41,
+    "leaves": 42,
+    "leaf_counts": {
+      "NEAR": 8,
+      "FAR": 31,
+      "OUTSIDE": 3
+    },
+    "distinct_canonical_vertices": 53,
+    "max_depth": 12,
+    "minimum_strict_margin_by_required_predicate": {
+      "NEAR": "19706796211663228105/3629698919152364814336",
+      "FAR": "935713367702180327/453712364894045601792"
+    },
+    "minimum_strict_margin": "935713367702180327/453712364894045601792",
+    "retained_endpoint_hex_replay": "PASS; no fresh point evaluation",
+    "native_count_columns": [
+      "retained",
+      "direct",
+      "blocks",
+      "maxdirect",
+      "maxblocks",
+      "ordinary"
+    ],
+    "native_count_sums": [
+      106496,
+      5128,
+      138692,
+      28,
+      266,
+      53144
+    ],
+    "native_count_maxima": [
+      2048,
+      513,
+      4084,
+      3,
+      6,
+      1022
+    ],
+    "completed_native_calls": 53,
+    "maximum_completed_call_CPU": 0.9920010000000019,
+    "source_build_mapped_identity_recheck": "PASS",
+    "distinct_identity_rows_checked": 270
+  },
+  "CPU": {
+    "producer_inclusive": 4.503105000000001,
+    "checker_inclusive": 40.079552,
+    "primary_sample": 44.626053,
+    "primary_through_summary_sample": 44.626205,
+    "primary_final_write_note": "Final tiny accounting write/print outside last sample; bounded by supervisor RLIMIT_CPU398.",
+    "root_pure_preflight": 0.05421,
+    "shared_pure_reserved": 2,
+    "primary_gate": 400,
+    "metadata_separate_hard_cap": 2,
+    "metadata_before_receipt_serialization": 0.284488
+  },
+  "wall_seconds": 41.286454515000514,
+  "accounting_complete": true,
+  "raw_artifacts": [
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/certificate.json",
+      "bytes": 147,
+      "sha256": "62a0f35a51730ab57b0a0931122b9cab7c6ca1d113ea38dc779a059ade3eda2e"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/checker-build.json",
+      "bytes": 50768,
+      "sha256": "1b17a58ccb7c86d8e1f91e670f2d21c3b7e041cddb3ccaf3aa753ed7ffba823c"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/checker-checkpoint.json",
+      "bytes": 37857,
+      "sha256": "b1747afae4b6cbd6f53eb4604e214056b8aa128ffbbbf2033a39b714e7658bb8"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/checker-descendants.json",
+      "bytes": 39,
+      "sha256": "edf0ccaf341a3a41bbfc8ae7e6916bc157abaf8622030de42e3144624fabe4a9"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/checker-entry.json",
+      "bytes": 261,
+      "sha256": "9d9726b8deca162994dc3ab3cbffd9d090b2124c0aed87ec4bac23b6307e8e13"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/checker-loaded-after.maps",
+      "bytes": 11235,
+      "sha256": "ed19388cbdc29af01046b4c083cc95c56029fa0f325027c3dbba4144f3554609"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/checker-loaded-before.maps",
+      "bytes": 11235,
+      "sha256": "56227e3552288e842d749d4d08ce9734a5f3cb392fa1b7f4ede0120c29b19c8a"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/checker-runtime-after.json",
+      "bytes": 4929,
+      "sha256": "0e12c88e90aee31cc201cc045019db0b4168ee090a7081be2e81c9a6edebc6ad"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/checker-runtime-before.json",
+      "bytes": 4998,
+      "sha256": "370621a17b329267e6fc9d052266206859b68e826ffaa6142e357d46eade246b"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/checker-supervisor.json",
+      "bytes": 410,
+      "sha256": "daf8a7ff3e6aa98f71a8a009b29a7cb440fc2293de369bb731a0404ca36d4cb8"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/checker.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/checker.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/final-accounting.json",
+      "bytes": 250,
+      "sha256": "f68b98fc4682a18261246228a4e0b2577a02e8c3ff39b5c069dec7a31f014289"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/preregistration.json",
+      "bytes": 878,
+      "sha256": "ae82b20d5dac80cf8e2aa6763640741bfc4799dad9cdfb869f994434b6949249"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/producer-build.json",
+      "bytes": 24273,
+      "sha256": "487dfd4b20eb854a45a2d9d8b960f5faff213ac0a143291279c22461c7b62700"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/producer-checkpoint.json",
+      "bytes": 19038,
+      "sha256": "a03d098e4a66636b464b70a42fca6e2581c03c0fe2cfea02f3c6b2e273917414"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/producer-descendants.json",
+      "bytes": 39,
+      "sha256": "edf0ccaf341a3a41bbfc8ae7e6916bc157abaf8622030de42e3144624fabe4a9"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/producer-entry.json",
+      "bytes": 261,
+      "sha256": "e274d55a163a7f6cc16e2e846162f74618c0eaf1b01e0e4d42b0b8a12f1cb2de"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/producer-loaded-after.maps",
+      "bytes": 6972,
+      "sha256": "d68538e025b38cf972270438eb7648822244c735b84d54f9e45dfd5bfab78220"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/producer-loaded-before.maps",
+      "bytes": 6972,
+      "sha256": "65e1c27a9ef762b742ff914fa263185f7d3404f8d73a8a61e8da5d1d0a9cf4c6"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/producer-runtime-after.json",
+      "bytes": 2628,
+      "sha256": "e1dd8d83b16a3316900178f4035fef79d5808e5fa8a199c25648a1e4c0c8d21c"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/producer-runtime-before.json",
+      "bytes": 2697,
+      "sha256": "7926ebabe72506a3547b7b8bb56c5f3bad9bb89a47a1ba26006e2b95c0d9436e"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/producer-supervisor.json",
+      "bytes": 420,
+      "sha256": "ac24e2644fbfff5930a0b5e17b65d700c41da7998327f8b3af8199a75952113a"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/producer.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/producer.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover/summary.json",
+      "bytes": 1567,
+      "sha256": "13522816f21d0d19a065f6adcfc8903269878c36cd0a89c2b7513f3ccc60d1de"
+    }
+  ],
+  "retention_retrieval": {
+    "location": "/workspace/padua_research/local-output/argmax-bridge-20261105/post-audit-D11/point-cover",
+    "retention": "Keep full raw caches/builds/maps locally; AC-selected cold-storage export pending, no permanent retrieval claim.",
+    "essential_scope": "Clean-clone fresh checker needs repository code/freeze/dependencies, essential tree and accepted repository D09 receipt; old raw cache and old binaries are not proof premises.",
+    "fresh_checker_command": "Pending independent reviewer-owned fixed-certificate fresh-build command; primary command above is consumed and MUST NOT be rerun.",
+    "no_splitting": "Raw producer19038B/checker37857B caches remain whole off Git."
+  },
+  "attempt_before_addendum": {
+    "bytes": 3643,
+    "sha256": "1fdf44e3940032acd5fb9be1f7b5b386d3fddb86241195cd8b4057c2dedc6427"
+  },
+  "attempt_after_addendum": {
+    "bytes": 4700,
+    "sha256": "177d764edb07e50c1ccb70f85458d63533a7a07771559aa87b197830451a3fe4"
+  },
+  "limitations": "No native rerun in postprocess; endpoints are retained data. No global theorem adoption, new degree or historical speedup comparison. Compiler/runtime identities are checked, no hermeticity claim."
+}

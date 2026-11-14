@@ -1,0 +1,251 @@
+{
+  "status": "PASS input-impact verification only; no new mathematical execution",
+  "rules_input": "c000899f3fb10d6ba0f1725341a045fe11ec943a",
+  "command": "python topics/padua-argmax-bridge-20261105/code/n3_premise_impact_v3.py --source-ref c000899f3fb10d6ba0f1725341a045fe11ec943a",
+  "source": {
+    "path": "topics/padua-argmax-bridge-20261105/code/n3_premise_impact_v3.py",
+    "bytes": 5931,
+    "sha256": "fe85f3205df503c799fefa5306da2c5fa0742bb0513b548454b30de33fddcec0"
+  },
+  "float_receipt": {
+    "path": "topics/padua-argmax-bridge-20261105/evidence/n3-float-v2.json",
+    "bytes": 6111,
+    "sha256": "329f4a161932d7a003367fa2afb3819838c60b90e49c461ac92784c4b527d711"
+  },
+  "corner_independent_receipt": {
+    "path": "topics/padua-argmax-bridge-20261105/evidence/independent-corner-replay.json",
+    "bytes": 7892,
+    "sha256": "573afc5d5ae229b0fa1d47df9b6bf334e47e0e437288a3543826838e5403cb4b"
+  },
+  "verified_float_file_identities": [
+    "topics/padua-argmax-bridge-20261105/code/n3_meanvalue.c",
+    "topics/padua-argmax-bridge-20261105/code/n3_float_v2.py",
+    "topics/padua-argmax-effective-2-20261105/code/box_pilot.c",
+    "topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+    "topics/padua-argmax-effective-2-20261105/code/phase_probe.py",
+    "topics/padua-argmax-effective-2-20261105/attempts/H1.md",
+    "topics/padua-argmax-effective-2-20261105/theory/phase-structure.md",
+    "topics/padua-argmax-effective-2-20261105/theory/defect-radius-extension.md",
+    "topics/padua-argmax-effective-2-20261105/theory/corner-n2-local-radius.md",
+    "local-output/argmax-bridge-20261105/N3/float-v2/box-trace.jsonl",
+    "local-output/argmax-bridge-20261105/N3/float-v2/box-frontiers.json",
+    "local-output/argmax-bridge-20261105/N3/float-v2/box-validation.json"
+  ],
+  "source_ref": "c000899f3fb10d6ba0f1725341a045fe11ec943a",
+  "source_resolutions": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_meanvalue.c",
+      "resolution": "current",
+      "identity": {
+        "bytes": 3606,
+        "sha256": "4739e36d05d75ce4389118364a2e2a693d2b14d87a8b79e84aa5199d6bb6a86a"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_float_v2.py",
+      "resolution": "current",
+      "identity": {
+        "bytes": 9957,
+        "sha256": "5ebe7167abf7e98d0b8fc0b0df98418e53b34a61513254a41dcd5165c35138c3"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/box_pilot.c",
+      "resolution": "current",
+      "identity": {
+        "bytes": 4359,
+        "sha256": "92f111e0c58c59de32490118a30d88b26de356a93e0ec7251928059e1f2f4d0b"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+      "resolution": "current",
+      "identity": {
+        "bytes": 1510,
+        "sha256": "692d4afd89d3bbda3bac3daaeef7c56aa4ecdde0f9cdd32b9fefa0e296adc365"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.py",
+      "resolution": "current",
+      "identity": {
+        "bytes": 7620,
+        "sha256": "a2d85ffd293c50095fc6e451a6a4473b17b63bbb54123f397dcec148b08495d9"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/attempts/H1.md",
+      "resolution": "current",
+      "identity": {
+        "bytes": 8653,
+        "sha256": "05ee5522c80b00ffd76f844042d5515dfba6a19f0c86183fad0b8f792b3835cf"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/theory/phase-structure.md",
+      "resolution": "current",
+      "identity": {
+        "bytes": 17238,
+        "sha256": "378548a0635206c8e61111c8ddb24b51f4b7ef1bf3cb16640da16dcf94a9e718"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/theory/defect-radius-extension.md",
+      "resolution": "current",
+      "identity": {
+        "bytes": 11139,
+        "sha256": "243077d9af371f8b19c1e28b9872e44900d73daafe4d509a0d6a5a3815403d97"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/theory/corner-n2-local-radius.md",
+      "resolution": "current",
+      "identity": {
+        "bytes": 7735,
+        "sha256": "fc358b11db799b272a89f8910797ffdf2fb03309161ae2cdfc5a4dfb24aeb045"
+      }
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/float-v2/box-trace.jsonl",
+      "resolution": "current",
+      "identity": {
+        "bytes": 1342850,
+        "sha256": "0dd0028879e0fbe40b9af6220e7cb6e6961178ad115c90bd4b6b1a7f32792192"
+      }
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/float-v2/box-frontiers.json",
+      "resolution": "current",
+      "identity": {
+        "bytes": 27,
+        "sha256": "d48626a54eac6602daa47a64ff4342f0d17bdf6a9858139ed7664116e3283ac0"
+      }
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/N3/float-v2/box-validation.json",
+      "resolution": "current",
+      "identity": {
+        "bytes": 69331,
+        "sha256": "14e6f43a4595239c6cdd96b73065f107c5a32f14f4a5feb9c36ed36049593dc9"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp",
+      "resolution": "current",
+      "identity": {
+        "bytes": 5725,
+        "sha256": "3646f4e8b6b16957b9e1114f95ad2f0a7c18eec4687b49d5e6f1947a25eea6e3"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/check_corner_receipt.py",
+      "resolution": "current",
+      "identity": {
+        "bytes": 7683,
+        "sha256": "59e6aeec23433c877b99ec86aee71eaa03b514697dcd0ba1df711dc0f643dfe4"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N3-corner-radius-reduction.md",
+      "resolution": "current",
+      "identity": {
+        "bytes": 3683,
+        "sha256": "8cf89c491a4d82df81a69bd1024139d1224bd1f43fd91b1d1fe58a1dd519aee4"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N3-corner-bounds.md",
+      "resolution": "historical Markdown only",
+      "source_ref": "c000899f3fb10d6ba0f1725341a045fe11ec943a",
+      "pinned_identity": {
+        "bytes": 6319,
+        "sha256": "7241cd4221643473cf34c9a36e502d1095a916a0b2f67075d2fb4093d2142fe6"
+      },
+      "current_identity": {
+        "bytes": 7355,
+        "sha256": "818b8aed8e83fb67ec9d9355f6ae0348eeb589125b8ee8962cbba8d0958dedac"
+      },
+      "historical_identity": {
+        "bytes": 6319,
+        "sha256": "7241cd4221643473cf34c9a36e502d1095a916a0b2f67075d2fb4093d2142fe6"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/evidence/n3-corner-bounds.json",
+      "resolution": "current",
+      "identity": {
+        "bytes": 10114,
+        "sha256": "fe843711ff66e4a89f7856fc952441537a69d2907a5c78a6a844d61fec3e9c46"
+      }
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_corner_bounds.c",
+      "resolution": "current",
+      "identity": {
+        "bytes": 9519,
+        "sha256": "a0497ca1219850e28f2bf51e72cb4fc8f78cde238b81fd678262d646511402bd"
+      }
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/check-corner/n33.json",
+      "resolution": "current",
+      "identity": {
+        "bytes": 2921,
+        "sha256": "efd13d849783bdf240b2a24e207a2a43604b216de1654bcc1e3fa773e4a383c9"
+      }
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/check-corner/n64.json",
+      "resolution": "current",
+      "identity": {
+        "bytes": 2930,
+        "sha256": "8078622e8dcc7e35a0cd34b1ffe3918a62e51aad508bf9df04f59c14c5fcea58"
+      }
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/check-corner/n128.json",
+      "resolution": "current",
+      "identity": {
+        "bytes": 2940,
+        "sha256": "67db2f1155764cb2384909913e88dee12b824d262d9ea0a25512ad5f9595df2d"
+      }
+    }
+  ],
+  "negative_controls": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/n3_meanvalue.c",
+      "incorrect_pin_rejected": true
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/N3-corner-bounds.md",
+      "incorrect_pin_rejected": true
+    }
+  ],
+  "patch_interface": {
+    "degrees": [
+      33,
+      64,
+      128
+    ],
+    "phase_square": "1/128",
+    "common_kappa": "1/12500"
+  },
+  "completed_float_counts": {
+    "33": 2028,
+    "64": 1908,
+    "128": 1794
+  },
+  "cpu_seconds": {
+    "33": 12.223261275999999,
+    "64": 47.46418704999999,
+    "128": 162.65457397
+  },
+  "interpretation": "Frozen v2 conditional corner premise is now independently verified; original execution status and timings are unchanged.",
+  "superseded_guard": "n3-round2-impact-initial.json refers only to the initial checker, before its rational-canonicalization fix.",
+  "limits": [
+    "This guard trusts the named different-agent corner acceptance; it does not replay that arithmetic.",
+    "B2 float timing and finite count criteria hold at the three named degrees; no universal count law is proved.",
+    "Floating phase leaves are not outward certificates. No full-phase checker or global argmax extension follows.",
+    "An unnecessary v3 repeat was terminated before any degree completion; it supplies no evidence."
+  ]
+}

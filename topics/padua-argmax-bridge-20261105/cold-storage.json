@@ -1,0 +1,98 @@
+{
+  "format": "padua-cold-storage-v1",
+  "slug": "padua-argmax-bridge-20261105",
+  "source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6",
+  "entries": [],
+  "total_bytes": 0,
+  "index_scope": "Pending-local custody index prepared against source_commit; not an archive-delivery receipt or a claim that this commit generated every listed artifact.",
+  "historical_pending_manifest": {
+    "source_commit": "b45e29fa1fe3dbfa2517ff8043e5d9c440870530",
+    "path": "topics/padua-argmax-bridge-20261105/cold-storage.json",
+    "git_blob": "96aaf1885dcb2bf1c480e102af8b5ba0ec8ff1f4",
+    "bytes": 23904,
+    "sha256": "3a8867bee698f32bf10324df0c0af8bf3d32d9192f6bcc6f48ac95de8ac2460e",
+    "scope": "Complete former pending-local inventory (70 file rows plus historical group records); prior custody, failures, generation and checking references preserved unchanged in Git."
+  },
+  "pending_local": {
+    "status": "Local byte identities rehashed 2026-11-08; physical cold-storage delivery, Zenodo upload and durable external retrieval remain pending.",
+    "authorized_destination": "Downloads\\padua\\cold_storage\\padua-argmax-bridge-20261105\\",
+    "verified_utc_date": "2026-11-08",
+    "files": [
+      {
+        "role": "original_compact_return",
+        "path": "local-output/argmax-bridge-20261105/actual-return-20261107/return.tar.gz",
+        "bytes": 36045486,
+        "sha256": "b00fd57f85ce6d96a6c1fa01e2307abd815088bb8fcb28b1587657ef142b109a",
+        "record": "compact-return.md"
+      },
+      {
+        "role": "canonical_onset512_provenance_return",
+        "path": "local-output/argmax-bridge-20261105/onset512-return-20261108.zip",
+        "bytes": 81602992,
+        "sha256": "da63280a7e4aec86fa52e3f8384620fbf07939006ab5f6f70222fa2485816e7e",
+        "record": "local-onset512-summary.md"
+      },
+      {
+        "role": "derivative_certificates_only",
+        "path": "local-output/argmax-bridge-20261105/onset512-certificates-20261108.zip",
+        "bytes": 945235,
+        "sha256": "c22d600cb67462918587b01f2ef5adcbf9030b825fb0f2cc79c1b9c27c7da8c8",
+        "record": "local-onset512-summary.md"
+      },
+      {
+        "role": "immutable_certificate_mirror_inventory",
+        "path": "local-output/argmax-bridge-20261105/onset512-local-20261108-essential-inventory.json",
+        "bytes": 75479,
+        "sha256": "d7cea34dd64d9df329d1398c2418fbf984a9084b135cad695866a9c437551740",
+        "record": "local-onset512-summary.md"
+      },
+      {
+        "role": "complete_I25_witnesses_and_verification",
+        "path": "local-output/argmax-bridge-20261105/i25-evidence-20261108T112304Z.zip",
+        "bytes": 2843611,
+        "sha256": "d1d03156dde4248fecaa25d0144cd73c7c5414f28b66a39099342b31f2f7e0f8",
+        "record": "code/independent_phase_checker/independent-phase-summary.md"
+      },
+      {
+        "role": "independent_computational_review",
+        "path": "local-output/argmax-bridge-20261105/onset512-independent-review-20261108.zip",
+        "bytes": 51749,
+        "sha256": "96f84b294b724b74bc33c112a2633bde14fed5c9220cb11196c60dae5c12ab28",
+        "record": "independent-checks-onset512-response.md"
+      },
+      {
+        "role": "complete_repository_source_snapshot",
+        "path": "local-output/argmax-bridge-20261105/padua-research-source-a433c7d-20261108.zip",
+        "bytes": 22105198,
+        "sha256": "66acbadb34ba51a5a2c99bd34a681deef6de433da193202830d00c0aa0f4cc03",
+        "source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6",
+        "record": "zenodo-deposit/README.md"
+      }
+    ],
+    "generation_and_verification_records": [
+      "compact-return.md",
+      "compact-delivery.md",
+      "preregistration-onset512-local.md",
+      "local-onset512-summary.md"
+    ],
+    "deposit_plan": "zenodo-deposit/MANIFEST.json.in",
+    "independent_I25_full_result": "ACCEPTED: 942 trees / 471 degrees; distinct six-certificate replay; explicit arithmetic/analytic premises in J03",
+    "retention": "Preserve whole original local campaign/build trees and failed records; inventory pointers do not authorize pruning. Unsampled full raw histories remain at original execution locations. No all-history archive claim.",
+    "completed_external_delivery_receipt": null
+  },
+  "current_paper_evidence_2026_11_14": {
+    "source_freeze": "e861c752218fc0a6648d4a4a67fea616ba5cbdd1",
+    "record": "regeneration-20261114.md",
+    "delivery_receipt": "regeneration-delivery.json",
+    "status": "Preservation archive independently verified locally; AC reports cold-storage copy, external retrieval not retested",
+    "historical_missing_artifacts_required": false,
+    "package_bytes": 296189961,
+    "package_sha256": "d3452a176a220a649ca889cacd43c9c0d96fb75e12ae84849d0a07ee6b7d354c"
+  },
+  "zenodo_public_candidate": {
+    "record": "zenodo-public-response07-delivery.json",
+    "bytes": 5149206,
+    "sha256": "b341e6a1c6875550b58576b2cb167766f5a3cf9a4e4fc620b1134d2c490adbaa",
+    "status": "Response07 rebuilt local candidate, supplementary checks PASS; owner accepts paths with disclosure; no upload"
+  }
+}

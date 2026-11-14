@@ -1,0 +1,44 @@
+{
+  "scope": "point-S integration only; final focused22-case rerun after80.659CPU initial72-case suite",
+  "cases": 22,
+  "success": 22,
+  "contains": 22,
+  "cpu_seconds": 4.2990960000000005,
+  "raw_manifest": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c07-rows/check-p8uhwohf/controls.json",
+    "bytes": 51829,
+    "sha256": "b379a18214b48da01c82e090931c14fdbe7cc00370b77bc58745c5cc90d43ea6"
+  },
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C07/point.cpp",
+      "bytes": 6568,
+      "sha256": "8913a96d79f7d687c201f5e38efa5cceec5a18bdc88ed0ada8f578056e7e575e"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C07/reference.cpp",
+      "bytes": 1740,
+      "sha256": "dc9c3e5f208a9919437e572d71e0bc3834f493db7ea8689b777fac6566ba8470"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C07/control.py",
+      "bytes": 2705,
+      "sha256": "17cac7535df1f2b7c7c9436a140e3844ae2638cca191cb1ba18e5faad710c8d4"
+    }
+  ],
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c07-rows/check-p8uhwohf/libphase_checker.so",
+    "bytes": 103424,
+    "sha256": "e6e59b464b744b63da1da38818d708a6631d4f19dbb56ee7d0aa2672e967db45"
+  },
+  "max_direct": 1,
+  "max_combined_blocks": 4,
+  "reference_relation_note": "contains is comparator validation count:18 production balls contain512-bit reference;4 exact vertices use reference containing exact output1",
+  "production_contains_reference": 18,
+  "exact_vertex_reference_contains_output": 4,
+  "total_development_cpu_upper_bound_seconds": 86,
+  "first_suite_manifest": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c07-rows/check-r0z5v7r5/controls.json",
+    "sha256": "31e0c2c66c9b9084e06c259452ecb26a5cf05cdc1cd81e4a58c0c99abf02253e"
+  }
+}

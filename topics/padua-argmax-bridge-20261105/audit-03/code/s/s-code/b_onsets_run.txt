@@ -1,0 +1,28 @@
+--- architecture B at N0=512 ---
+B1 near: 1/20 - (C4+g+f^2/(4e))  [noncorner rho<=1/2]      = [+0.009214, +0.009214]   > 0: True
+B2 wide: -P(1/2) [all centres, 1/2<=rho<=1]                = [+0.143070, +0.143070]   > 0: True
+B2 vertex f/(2e) (<1/2 => P decreasing on [1/2,1])         = [+0.147341, +0.147341]
+B3 outer crude: u1(T+j)-t0-CbarE-2KD-ebar [rho>=1]         = [+0.195409, +0.195409]   > 0: True
+B3 outer closed form G(512, rho1=1)                        = [+0.534421, +0.534421]   > 0: True
+B5 F_near(512,1/2)                                         = [+0.090190, +0.090190]   > [0.050000000000000000000000000000000000000000000000000000000000 +/- 7.01e-62]: True
+B5 F_small(512,1/2)                                        = [+0.082174, +0.082174]   > [0.050000000000000000000000000000000000000000000000000000000000 +/- 7.01e-62]: True
+B5 F_h(512,1/2)                                            = [+0.058061, +0.058061]   > [0.050000000000000000000000000000000000000000000000000000000000 +/- 7.01e-62]: True
+corner absolute at 512: dA(h,0) - M pi^4/6144              = [+0.343666, +0.343666]   > 0: True
+corner absolute at 512: dA(0,h) - M pi^4/6144              = [+0.656207, +0.656207]   > 0: True
+corner absolute at 512: dD/2 - M pi^4/6144                 = [+0.925983, +0.925983]   > 0: True
+--- far192 by the closed-form uniform gate ---
+G(192, rho1=pi/2) (certificates need > 3/100)              = [+0.098958, +0.098958]   > [0.030000000000000000000000000000000000000000000000000000000000 +/- 3.82e-62]: True
+G(256, rho1=pi/2) (certificates need > 3/100)              = [+0.990376, +0.990376]   > [0.030000000000000000000000000000000000000000000000000000000000 +/- 3.82e-62]: True
+G(320, rho1=pi/2) (certificates need > 3/100)              = [+1.609325, +1.609325]   > [0.030000000000000000000000000000000000000000000000000000000000 +/- 3.82e-62]: True
+--- scalar values for the report ---
+n=192: CbarE~1.8214 ebar~0.2411 KD~0.2542 T~9.6045 M~24.199
+n=256: CbarE~1.4052 ebar~0.1874 KD~0.1993 T~10.7766 M~25.393
+n=320: CbarE~1.1487 ebar~0.1541 KD~0.1648 T~11.7319 M~26.448
+n=384: CbarE~0.9739 ebar~0.1312 KD~0.1410 T~12.5424 M~27.383
+n=512: CbarE~0.7503 ebar~0.1018 KD~0.1101 T~13.8761 M~28.980
+uniform 1/20 floor from (ul:tail-floors) at r=1/2 holds from n = 295
+near gate  max P(rho<=1/2) < 1/20 (wide column, relaxed) from n = 457
+wide gate  P(1/2)<0 and vertex<1/2 from n = 343
+outer crude (u1(T+j)-t0-CE-2KD-ebar>0) from n = 453
+outer closed form G(n,1)>0 from n = 365
+far closed form G(n,pi/2)>3/100 from n = 189

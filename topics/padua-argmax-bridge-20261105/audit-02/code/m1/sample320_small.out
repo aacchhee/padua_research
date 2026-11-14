@@ -1,0 +1,19 @@
+selftest (closed form vs direct D_n, partition of unity, cardinality n=5,6): PASS
+n=320: Lambda_c=lambda(-1,-1)=22.4067100682, S(0)=22.4067100682, |diff|=0.00e+00
+   second parity corner lambda=22.4067100682, |diff|=7.11e-15
+   nodes: max|lambda-1| over 5 random nodes = 4.56e-13
+   noncorner rho<=1/2 lambda gap>1/20000: samples=20, min observed gap(excess)=2.271313
+   noncorner 1/2<=rho<=3/5 lambda gap>3/1000: samples=20, min observed gap(excess)=2.366906
+   all 3/5<=rho<=1 S gap>99/2500: samples=20, min observed gap(excess)=0.696086
+   all 1<=rho<=pi S gap>13/500: samples=20, min observed gap(excess)=2.296713
+   corner squares lambda<=Lc-(A^2+B^2)/30: samples=20, min observed gap(excess)=0.000002
+n=321: Lambda_c=lambda(-1,-1)=22.4251113062, S(0)=22.4251113062, |diff|=0.00e+00
+   second parity corner lambda=22.4251113062, |diff|=3.91e-14
+   nodes: max|lambda-1| over 5 random nodes = 4.65e-13
+   noncorner rho<=1/2 lambda gap>1/20000: samples=20, min observed gap(excess)=3.009375
+   noncorner 1/2<=rho<=3/5 lambda gap>3/1000: samples=20, min observed gap(excess)=2.459962
+   all 3/5<=rho<=1 S gap>99/2500: samples=20, min observed gap(excess)=0.756189
+   all 1<=rho<=pi S gap>13/500: samples=20, min observed gap(excess)=3.415652
+   corner squares lambda<=Lc-(A^2+B^2)/30: samples=20, min observed gap(excess)=0.000000
+CPU seconds: 5.1
+OVERALL PASS

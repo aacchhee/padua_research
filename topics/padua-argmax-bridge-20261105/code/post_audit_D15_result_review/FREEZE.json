@@ -1,0 +1,76 @@
+{
+  "status": "FROZEN_BEFORE_FIRST_REPLAY",
+  "input_head": "0768cb93c4f829faf5f38d47cdd7e33faad8bf64",
+  "files": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_result_review/run.py",
+      "bytes": 12226,
+      "sha256": "2e509c3fa1b059742e981b535786f31eaa427c91fdf4d73235f9fbfeaf57d8fd"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_result_review/verify.py",
+      "bytes": 4981,
+      "sha256": "b8aa10bfca004852f1458ce14b2fc78dae521f48beb0e0c1456d4f46ef243004"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/FREEZE.json",
+      "bytes": 1601,
+      "sha256": "cb38e21b38de2da2fee2738da25c73a248d362826c4038e021f0e961a8e5143b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D15_model_free_cover/SOURCES.json",
+      "bytes": 2902,
+      "sha256": "c9b232cceab301eae8c500fb9c3984702c21bef89f144b89d087f01a5cf1ab4f"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover/essential-receipt.json",
+      "bytes": 11491,
+      "sha256": "6be2926071f43d2a619784c16b15c980e6952eaa3cfe4bab0703c14dcc6b3481"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover/certificate.json",
+      "bytes": 142,
+      "sha256": "bff8e2281d4e98f3d8a90a4a811162cbf9b275a1eda182111daac25e3033c685"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover/checker-checkpoint.json",
+      "bytes": 44148,
+      "sha256": "b149199afa36d0c31709b8beba8450562cf65af4b167f4886d86a703d22d211e"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover/final-accounting.json",
+      "bytes": 868,
+      "sha256": "a62661d8578080d3d28584188752bd173ba7145c4bdc794eff55a6caade4ae95"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover/checker-build.json",
+      "bytes": 50838,
+      "sha256": "18205612891fd84d8ab611a73dc2c7825885d66c4ed2d8d29cfaf7d45b5efcf8"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover/checker-runtime-before.json",
+      "bytes": 5033,
+      "sha256": "fe2e737b76b32226e1cca87d1e0a509a28cfe37d96d04627bf3c0bf1bb410bde"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover/checker-runtime-after.json",
+      "bytes": 4964,
+      "sha256": "660cf3d5673adb1822af2c0273a43471f296ea77a6c6588e3bf41c952493e07f"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover/producer-build.json",
+      "bytes": 24323,
+      "sha256": "9e6e2a0bd9afbd4cb4f0d3af60da76e343c07a8db6e20f5b8e7f46835de25ed2"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover/producer-runtime-before.json",
+      "bytes": 2702,
+      "sha256": "810149ebb48ea6c293c5597bdec6ee2c29205b190aa021d7e2a7d4eb924fcd17"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/post-audit-D15/model-free-cover/producer-runtime-after.json",
+      "bytes": 2633,
+      "sha256": "008c73735f017b0cfbc10297c476f2de7a08a54952d6105cf4506ccad44642ce"
+    }
+  ]
+}

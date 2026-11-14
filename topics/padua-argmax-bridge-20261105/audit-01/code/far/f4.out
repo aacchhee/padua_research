@@ -1,0 +1,6 @@
+al=0.25 be=0.25  r0 err=1.94e-05 (bound 2.88e-04)  max row err=7.07e-06 (bound e_row 3.71e-02)  total=7.194e-04 (bound e_rows 4.717e+00)
+al=1.00 be=0.70  r0 err=1.31e-05 (bound 2.88e-04)  max row err=1.85e-05 (bound e_row 3.71e-02)  total=1.861e-03 (bound e_rows 4.717e+00)
+al=0.10 be=2.90  r0 err=6.17e-08 (bound 2.88e-04)  max row err=7.42e-06 (bound e_row 3.71e-02)  total=7.208e-04 (bound e_rows 4.717e+00)
+al=2.00 be=0.30  r0 err=5.32e-06 (bound 2.88e-04)  max row err=8.74e-06 (bound e_row 3.71e-02)  total=8.853e-04 (bound e_rows 4.717e+00)
+al=0.37 be=0.00  r0 err=1.93e-05 (bound 2.88e-04)  max row err=3.55e-06 (bound e_row 3.71e-02)  total=5.724e-05 (bound e_rows 4.717e+00)
+cpu 2.507405259

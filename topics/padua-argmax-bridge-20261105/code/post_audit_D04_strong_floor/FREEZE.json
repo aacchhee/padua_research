@@ -1,0 +1,73 @@
+{
+  "status": "PREPARATION ONLY; controller and native code not executed",
+  "input_head": "5264178be22cc80f61952ff4cc534e2866073d44",
+  "files": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D04_strong_floor/CASES.json",
+      "bytes": 2702,
+      "sha256": "8d09c9e7c187201bba19ea3c62b8187c77c9f13f378e73efa915d74e937aa49a"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D04_strong_floor/SOURCES.json",
+      "bytes": 1296,
+      "sha256": "99fdce6b92165eabf3a24388730bf989e9cf5d5140cf0686fb4e1b201c5b4c5a"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D04_strong_floor/build.py",
+      "bytes": 3476,
+      "sha256": "459cffb34ecbccb5c5e81042600c7e0e838d6399841c2094602e36a1ae32a0d3"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D04_strong_floor/c08_interval.h",
+      "bytes": 6575,
+      "sha256": "275936b502180f2d92af94eb2138815114ba75afb9c258cadffa44e580be0a03"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D04_strong_floor/controller.py",
+      "bytes": 14180,
+      "sha256": "3a33f45a191681d198e3947b192f4ec79f1de5ba72f5ddeda2aab09de1091e1b"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D04_strong_floor/predicates.py",
+      "bytes": 2062,
+      "sha256": "3ac60e7fcf5a97acfb362907d01dfb7e16275eabfffbab6537248e3ffe11b595"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D04_strong_floor/producer.c",
+      "bytes": 6352,
+      "sha256": "b90f0571c1ca623e70b440bc5e43d23d65811d7ae5455f31416bb7c489f68c77"
+    }
+  ],
+  "review_provenance_non_enforced": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D04_strong_floor/SPEC.md",
+      "bytes": 10534,
+      "sha256": "42f98526e4f4addb48647c63cda8e3c03a41dbe4b5a43d7e9674454ff2a636d7"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D04_strong_floor/producer.diff",
+      "bytes": 639,
+      "sha256": "fcc806e9b09a140b432114cf0d4c87507e1b540b6e147771e62c1fe98d69efc2"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/ideas/D04-strong-floor-adoption.md",
+      "bytes": 3723,
+      "sha256": "1b20c5bc5a7b39b0a3910647bc49e50d82ca04c891f8c637f534ace133d1d13c"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/attempts/D04-strong-floor-adoption.md",
+      "bytes": 3323,
+      "sha256": "3286cd61415b68c03113f961488f90526a7b2f1fb8f518dff6d8f4a71e78cd4c"
+    },
+    {
+      "path": "state/IDEAS.md",
+      "bytes": 291332,
+      "sha256": "68bf789c82967944421e6fc54f8164dbdb91d1096fa10694008261fbd54f9e9d"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/theory/C02-defect-dense-band.md",
+      "bytes": 15433,
+      "sha256": "d28bbc8f7ae3823ff220b452630b0c30c939b9851fa0c151d2ac5962a301dec7"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+The task of the comparison model
+A phase is an angular displacement
+Write g(C, D; t) for this integrand
+What is being cancelled
+The actual integration intervals
+Differentiating the remainder explicitly
+From reciprocal sums to a scalar profile
+A derivative measure and a finite part
+staying positive, and h
+A table for the scalar derivative bounds
+Differentiating the three terms of
+For the remaining derivative facts an endpoint-cancelled
+To derive it, integrate the numerator against
+Pairing endpoints in
+The layer-cake argument
+The row profile
+The completed model is
+Uniform control near an endpoint
+For the pole numerator
+This proves the coefficient in
+Keeping phase losses together
+Obtaining the infinite cotangent formula
+by partial fractions. Therefore
+The summand identity is
+This displays separately the endpoint pole
+Here is the multiplication explicitly
+then aD
+The finite-part counterterms cancel the endpoint logarithms
+A cutoff calculation for the completed constant
+The coarse certified input
+Reducing the constant enclosure to a finite sum
+Why the central power is three halves
+The paired central roots
+second Tonelli interchange
+From a continuous model to the actual board
+Reading the five-term decomposition
+The two meshes and their linked collision values
+At regular samples the exact polynomial identity is
+Collecting the finite sums and the completed integral
+Pole norms and the matched endpoint reference
+Cell kernels and the numerical pole allowance
+two endpoint distance indices
+Matching the endpoint tail
+We now identify the endpoint reference

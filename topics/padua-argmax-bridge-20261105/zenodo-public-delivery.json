@@ -1,0 +1,75 @@
+{
+  "format": "padua-zenodo-public-candidate-v1",
+  "date": "2026-11-14",
+  "status": "Prepared local candidate; reviewed and bounded standalone checks passed; not uploaded",
+  "artifact": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/zenodo-public-20261114/padua-reproducibility-20261114.zip",
+    "bytes": 5138944,
+    "sha256": "15885d34498b7f20c20f4b97453babfa85a09d46490dbcb14c051b429e2ee036",
+    "file_count": 1019,
+    "expanded_bytes": 10213669,
+    "layout": "Ordinary ZIP, padua-reproducibility/README.txt and README.md; ordinary input/source/result directories"
+  },
+  "source_checkpoint": "77e4f1e73f59098ee280d9ed681a33d823e5e7aa",
+  "contents": {
+    "phase_records": 942,
+    "phase_degrees": [
+      41,
+      511
+    ],
+    "polynomial_records": 39,
+    "polynomial_degrees": [
+      2,
+      40
+    ],
+    "unchanged_mapped_source_files": 32,
+    "compact_polynomial_summary_transforms": 2,
+    "expected_scientific_rows": 942,
+    "paper_and_companion_PDFs": true,
+    "root_plain_text_guide": true,
+    "embedded_OS_runtime_or_compiler_binaries": false,
+    "native_producer_or_raw_histories": false
+  },
+  "verification": {
+    "all_input_source_byte_identities": "PASS",
+    "data_only_structural_negative_controls": 7,
+    "developer_quick": {
+      "phase_degrees": [
+        41,
+        511
+      ],
+      "phase_records": 4,
+      "polynomial_degrees": [
+        2,
+        17
+      ],
+      "fresh_kernel_build": true,
+      "analytic_checks_and_two_base_tables": "PASS",
+      "observed_waitstatus": 0,
+      "CPU_seconds": 26.515693,
+      "wall_seconds": 38.00679
+    },
+    "independent": {
+      "phase_degree": 458,
+      "phase_records": 2,
+      "observed_waitstatus": 0,
+      "CPU_seconds": 12.345528,
+      "wall_seconds": 23.696574,
+      "original_workspace_read_attempts": 0
+    },
+    "new_full_942_or_39_numerical_rerun": false,
+    "report": "zenodo-public-review-20261114.md"
+  },
+  "preservation_archive": {
+    "bytes": 296189961,
+    "sha256": "d3452a176a220a649ca889cacd43c9c0d96fb75e12ae84849d0a07ee6b7d354c",
+    "unchanged": true,
+    "custody": "AC reports now in cold storage; external locator/retrieval not independently checked"
+  },
+  "publication": {
+    "Zenodo_upload": false,
+    "DOI": null,
+    "license_and_author_metadata": "Owner controlled; no new license grant or authorship invented"
+  },
+  "scope_record": "zenodo-public-package-20261114.md"
+}

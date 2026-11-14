@@ -1,0 +1,18 @@
+{
+  "result": "INDEPENDENT_CHEAP_STATIC_REPLAY_ACCEPTED_PENDING_RESULT_REVIEW",
+  "first_failure": null,
+  "total_CPU_through_summary": 74.034199,
+  "complete": true,
+  "final_self_limit": {
+    "waited_child_CPU": 72.27051900000001,
+    "self_CPU_at_tightening": 1.761457,
+    "absolute_self_CPU_hard": 126,
+    "integer_enforcement_reserve_CPU": 1,
+    "additional_reaped": [],
+    "no_live_children": true,
+    "scope": "No subsequent children; waited-child CPU fixed. Absolute self limit bounds final serialization/write/return."
+  },
+  "hard_aggregate_cap": 200,
+  "execution_role": "Independent replay by root-assigned Codex result reviewer, requested gpt-6-astra high; actual serving metadata unexposed",
+  "scope": "Inclusive sample after persisted provisional summary/output and freeze recheck, before final-account serialization and atomic last write. Final serialization/write/return bounded by tightened absolute self limit; acceptance additionally requires process return0."
+}

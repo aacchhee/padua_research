@@ -1,0 +1,515 @@
+{
+  "status": "MEASURED finite floating diagnostics only",
+  "rules_read_sha": "274630887938c573a041cacb306d59c6c0cb2e18",
+  "command": "OPENBLAS_NUM_THREADS=1 B0_PASS=1 python topics/padua-argmax-bridge-20261105/code/margin_b1.py",
+  "compile_command": [
+    "cc",
+    "-O3",
+    "-std=c11",
+    "-shared",
+    "-fPIC",
+    "/workspace/padua_research/topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+    "/workspace/padua_research/topics/padua-argmax-effective-2-20261105/code/projection_probe.c",
+    "-lm",
+    "-o",
+    "/workspace/padua_research/local-output/argmax-bridge-20261105/b1/b1.so"
+  ],
+  "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "schedule": {
+    "near_radii": [
+      0.0,
+      0.00025,
+      0.0005,
+      0.001,
+      0.002,
+      0.004,
+      0.008,
+      0.016,
+      0.032,
+      0.064,
+      0.1
+    ],
+    "far_radii": [
+      0.1,
+      0.125,
+      0.25,
+      0.5,
+      1.0,
+      1.5707963267948966,
+      2.0,
+      2.5,
+      3.141592653589793
+    ],
+    "directions": [
+      [
+        -1.0,
+        -0.0
+      ],
+      [
+        -0.75,
+        -0.25
+      ],
+      [
+        -0.75,
+        0.25
+      ],
+      [
+        -0.5,
+        -0.5
+      ],
+      [
+        -0.5,
+        0.5
+      ],
+      [
+        -0.25,
+        -0.75
+      ],
+      [
+        -0.25,
+        0.75
+      ],
+      [
+        -0.0,
+        -1.0
+      ],
+      [
+        -0.0,
+        1.0
+      ],
+      [
+        0.25,
+        -0.75
+      ],
+      [
+        0.25,
+        0.75
+      ],
+      [
+        0.5,
+        -0.5
+      ],
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.75,
+        -0.25
+      ],
+      [
+        0.75,
+        0.25
+      ],
+      [
+        1.0,
+        -0.0
+      ]
+    ],
+    "shell_k": [
+      0,
+      23
+    ],
+    "shell_radii": "lo, (lo+hi)/2, hi"
+  },
+  "sources": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/margin_b1.py",
+      "bytes": 8775,
+      "sha256": "1a769e31aa767307136516eac44d8f39e37b577a5850366300616b4a88cf9b0d"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.c",
+      "bytes": 1510,
+      "sha256": "692d4afd89d3bbda3bac3daaeef7c56aa4ecdde0f9cdd32b9fefa0e296adc365"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/projection_probe.c",
+      "bytes": 1310,
+      "sha256": "b27b82c2a29cf3b5a337729562f79b07878a8d4d115792be72fe40755153203e"
+    },
+    {
+      "path": "topics/padua-argmax-effective-2-20261105/code/phase_probe.py",
+      "bytes": 7620,
+      "sha256": "a2d85ffd293c50095fc6e451a6a4473b17b63bbb54123f397dcec148b08495d9"
+    }
+  ],
+  "raw": [
+    {
+      "path": "local-output/argmax-bridge-20261105/b1/samples.jsonl",
+      "bytes": 3530581,
+      "sha256": "fd131abb02bdb8d09010b856c84830894e31216ca60b4cc0faec251afd4ddcd6"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/b1/details.json",
+      "bytes": 51114,
+      "sha256": "77ca24c5387f3986ac6cdb2ea0af801cb55303efff985ca7c7a13482aea43d08"
+    },
+    {
+      "path": "local-output/argmax-bridge-20261105/b1/validation.json",
+      "bytes": 266089,
+      "sha256": "d494f9d63e1b8daa04a6ee536c3e2485d0c6100ad0a681fc7f4dbabd968b0da3"
+    }
+  ],
+  "validation": {
+    "points": 1672,
+    "lambda_max_abs_error": 7.993605777301127e-15,
+    "S_max_abs_error": 3.730349362740526e-14,
+    "max_projection_minus_direct_defect": 7.327471962526033e-15
+  },
+  "degrees": [
+    {
+      "n": 33,
+      "Lambda_corner": 11.117523283576109,
+      "selected_centers": 19,
+      "far_S_points": 144,
+      "far_selected_lambda_points": 1782,
+      "far_S_margin_sample_min": 0.00603897461444447,
+      "far_selected_lambda_margin_sample_min": 0.009168547762328672,
+      "near_phases": 161,
+      "near_center_phase_samples": 90923,
+      "near_S_excess_sample_max": 0.00010182482717446817,
+      "near_analytic_margin_sample_min": null,
+      "near_projection_margin_sample_min": 0.5744065262815596,
+      "wall_seconds": 0.9128912240000204,
+      "cpu_seconds": 0.912755971,
+      "shell_summary": {
+        "shells": 24,
+        "points": 720,
+        "margin_sample_min": -7.105427357601002e-15,
+        "positive_minimum_shells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "nonpositive_minimum_shells": [
+          23
+        ]
+      }
+    },
+    {
+      "n": 48,
+      "Lambda_corner": 12.688784049140628,
+      "selected_centers": 19,
+      "far_S_points": 144,
+      "far_selected_lambda_points": 1782,
+      "far_S_margin_sample_min": 0.007570560148851158,
+      "far_selected_lambda_margin_sample_min": 0.010815572194387002,
+      "near_phases": 161,
+      "near_center_phase_samples": 190253,
+      "near_S_excess_sample_max": 7.79110855972931e-05,
+      "near_analytic_margin_sample_min": 4.4159226902706905e-05,
+      "near_projection_margin_sample_min": 0.5665294687812565,
+      "wall_seconds": 1.8508297420000304,
+      "cpu_seconds": 1.850357756,
+      "shell_summary": {
+        "shells": 24,
+        "points": 720,
+        "margin_sample_min": 0.0,
+        "positive_minimum_shells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "nonpositive_minimum_shells": [
+          23
+        ]
+      }
+    },
+    {
+      "n": 64,
+      "Lambda_corner": 13.973207805351175,
+      "selected_centers": 19,
+      "far_S_points": 144,
+      "far_selected_lambda_points": 1782,
+      "far_S_margin_sample_min": 0.00880533798909866,
+      "far_selected_lambda_margin_sample_min": 0.012176307791833096,
+      "near_phases": 161,
+      "near_center_phase_samples": 336133,
+      "near_S_excess_sample_max": 5.947254119220702e-05,
+      "near_analytic_margin_sample_min": 6.259777130779298e-05,
+      "near_projection_margin_sample_min": 0.5611517122047613,
+      "wall_seconds": 3.325690418000022,
+      "cpu_seconds": 3.3251148870000002,
+      "shell_summary": {
+        "shells": 24,
+        "points": 720,
+        "margin_sample_min": -1.0658141036401503e-14,
+        "positive_minimum_shells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "nonpositive_minimum_shells": [
+          23
+        ]
+      }
+    },
+    {
+      "n": 96,
+      "Lambda_corner": 15.898513997081436,
+      "selected_centers": 19,
+      "far_S_points": 144,
+      "far_selected_lambda_points": 1782,
+      "far_S_margin_sample_min": 0.010702566914934764,
+      "far_selected_lambda_margin_sample_min": 0.014236384449713313,
+      "near_phases": 161,
+      "near_center_phase_samples": 751541,
+      "near_S_excess_sample_max": 3.607163950825054e-05,
+      "near_analytic_margin_sample_min": 8.599867299174946e-05,
+      "near_projection_margin_sample_min": 0.5570810917816734,
+      "wall_seconds": 7.292438054000002,
+      "cpu_seconds": 7.28624476,
+      "shell_summary": {
+        "shells": 24,
+        "points": 720,
+        "margin_sample_min": -1.2434497875801753e-14,
+        "positive_minimum_shells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "nonpositive_minimum_shells": [
+          23
+        ]
+      }
+    },
+    {
+      "n": 128,
+      "Lambda_corner": 17.34605680007003,
+      "selected_centers": 19,
+      "far_S_points": 144,
+      "far_selected_lambda_points": 1782,
+      "far_S_margin_sample_min": 0.012161479952016663,
+      "far_selected_lambda_margin_sample_min": 0.01579909437331395,
+      "near_phases": 161,
+      "near_center_phase_samples": 1331813,
+      "near_S_excess_sample_max": 2.970124979029265e-05,
+      "near_analytic_margin_sample_min": 9.236906270970735e-05,
+      "near_projection_margin_sample_min": 0.5547373874231486,
+      "wall_seconds": 12.621961626999962,
+      "cpu_seconds": 12.621179435,
+      "shell_summary": {
+        "shells": 24,
+        "points": 720,
+        "margin_sample_min": -3.552713678800501e-15,
+        "positive_minimum_shells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "nonpositive_minimum_shells": [
+          23
+        ]
+      }
+    },
+    {
+      "n": 192,
+      "Lambda_corner": 19.500992539058846,
+      "selected_centers": 19,
+      "far_S_points": 144,
+      "far_selected_lambda_points": 1782,
+      "far_S_margin_sample_min": 0.014304567798131274,
+      "far_selected_lambda_margin_sample_min": 0.018144178171837666,
+      "near_phases": 161,
+      "near_center_phase_samples": 2986949,
+      "near_S_excess_sample_max": 2.2658456906299307e-05,
+      "near_analytic_margin_sample_min": 9.941185559370069e-05,
+      "near_projection_margin_sample_min": 0.5526325421402014,
+      "wall_seconds": 31.887804588999984,
+      "cpu_seconds": 31.881250973999997,
+      "shell_summary": {
+        "shells": 24,
+        "points": 720,
+        "margin_sample_min": -2.1316282072803006e-14,
+        "positive_minimum_shells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "nonpositive_minimum_shells": [
+          23
+        ]
+      }
+    },
+    {
+      "n": 256,
+      "Lambda_corner": 21.111257233386183,
+      "selected_centers": 19,
+      "far_S_points": 144,
+      "far_selected_lambda_points": 1782,
+      "far_S_margin_sample_min": 0.015936263594554134,
+      "far_selected_lambda_margin_sample_min": 0.019909229022243125,
+      "near_phases": 161,
+      "near_center_phase_samples": 5301541,
+      "near_S_excess_sample_max": 1.7438543530090556e-05,
+      "near_analytic_margin_sample_min": 0.00010463176896990944,
+      "near_projection_margin_sample_min": 0.5515712898909214,
+      "wall_seconds": 60.529892700000005,
+      "cpu_seconds": 60.519141762000004,
+      "shell_summary": {
+        "shells": 24,
+        "points": 720,
+        "margin_sample_min": -1.1723955140041653e-13,
+        "positive_minimum_shells": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "nonpositive_minimum_shells": [
+          22,
+          23
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Finite sampling only; continuous extrema unresolved.",
+    "Floating rounding errors unbounded; no certificates or counterexamples.",
+    "Far actual lambda uses selected centers only.",
+    "n33 analytic defect inapplicable.",
+    "Developer cross-formula validation is not an independent agent rerun."
+  ]
+}

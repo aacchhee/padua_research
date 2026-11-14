@@ -1,0 +1,45 @@
+{
+  "source_commit": "996fedcad4ba79a28e45a3fe3678adc12f1e5358",
+  "archive": {
+    "bytes": 36045486,
+    "sha256": "b00fd57f85ce6d96a6c1fa01e2307abd815088bb8fcb28b1587657ef142b109a",
+    "local_path": "local-output/argmax-bridge-20261105/actual-return-20261107/return.tar.gz"
+  },
+  "manifest_sha256": "5b89fa66e742952497f99a49110a965ada2828b1861917268d3074af0eb22a16",
+  "coverage": {
+    "pairs": 280,
+    "residual": 273,
+    "controls": 7,
+    "returned_degrees": "41..319 and511",
+    "never_started": [],
+    "unfinished": []
+  },
+  "selection": {
+    "seed_hex": "7c79b8e401d9a32f8233f8371c441cd28d82dedd60e46e7c73d211ab099d01d2",
+    "sampled_degrees": [
+      199,
+      238
+    ]
+  },
+  "data_only_checks": {
+    "developer": "PASS",
+    "independent": "PASS"
+  },
+  "fresh_native_checks": {
+    "degrees": [
+      199,
+      238
+    ],
+    "observed_exits": [
+      0,
+      0
+    ],
+    "CPU_through_summary": [
+      10.162178,
+      11.856834
+    ],
+    "independent_result_review": "PASS",
+    "wrapper_resource_scope": "see LOG actual-return resource disclosure"
+  },
+  "retention": "All essential witnesses in compact return; unsampled full histories server-local. Complete return and fresh raw histories off Git; external cold retrieval not verified."
+}

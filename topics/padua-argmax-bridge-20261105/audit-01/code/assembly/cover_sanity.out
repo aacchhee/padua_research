@@ -1,0 +1,8 @@
+2 Lc=3.000000000000 max-over-square-sample=3.000000000000
+3 Lc=3.776142374915 max-over-square-sample=3.776142374915
+4 Lc=4.409725435508 max-over-square-sample=4.409725435508
+5 Lc=4.947805749037 max-over-square-sample=4.947805749037
+6 Lc=5.417499430144 max-over-square-sample=5.417499430144
+7 Lc=5.835657710636 max-over-square-sample=5.835657710636
+8 Lc=6.213459646909 max-over-square-sample=6.213459646909
+worst {'card': np.float64(2.0785842183259874e-15), 'ident': np.float64(8.881784197001252e-15), 'negdelta': 0, 'rho': 0, 'sym': np.float64(4.440892098500626e-15)}

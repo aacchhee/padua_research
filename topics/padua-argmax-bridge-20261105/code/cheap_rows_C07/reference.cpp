@@ -1,0 +1,8 @@
+#include "point.cpp"
+// Independent direct finite cosine polynomial at512; never called in production.
+static B referenceS(long n,const Q&a,const Q&b){const long RP=512;B p;arb_const_pi(p.x,RP);B sum;long m=n+1;
+ for(long r=0;r<2*m;r++)for(long k=0;k<n;k++){long delta=(1-r)%2;if(delta<0)delta+=2;Q uf=(Q(delta+2*k)+a)/Q(n),vf=(Q(r)+b)/Q(m);B u,v,cu,cv;arb_set_fmpq(u.x,uf.x,RP);arb_mul(u.x,u.x,p.x,RP);arb_set_fmpq(v.x,vf.x,RP);arb_mul(v.x,v.x,p.x,RP);arb_cos(cu.x,u.x,RP);arb_cos(cv.x,v.x,RP);
+  std::vector<B> cx(n+1),cy(n+1),d(n+1);cx[0]=B(1);cy[0]=B(1);cx[1]=cu;cy[1]=cv;d[0]=B(1);for(long j=1;j<=n;j++){if(j>1){arb_mul(cx[j].x,cu.x,cx[j-1].x,RP);arb_mul_2exp_si(cx[j].x,cx[j].x,1);arb_sub(cx[j].x,cx[j].x,cx[j-2].x,RP);arb_mul(cy[j].x,cv.x,cy[j-1].x,RP);arb_mul_2exp_si(cy[j].x,cy[j].x,1);arb_sub(cy[j].x,cy[j].x,cy[j-2].x,RP);}arb_mul_2exp_si(d[j].x,cy[j].x,1);arb_add(d[j].x,d[j].x,d[j-1].x,RP);}
+  B g,term;for(long j=0;j<=n;j++){arb_mul(term.x,cx[j].x,d[n-j].x,RP);if(j)arb_mul_2exp_si(term.x,term.x,1);arb_add(g.x,g.x,term.x,RP);}arb_sub(g.x,g.x,cx[n].x,RP);arb_abs(g.x,g.x);arb_add(sum.x,sum.x,g.x,RP);
+ }arb_div_si(sum.x,sum.x,2*n*m,RP);return sum;}
+extern "C" int c07_compare(long n,const char*astr,const char*bstr,double*out,long*counts){try{Q a,b;if(fmpq_set_str(a.x,astr,10)||fmpq_set_str(b.x,bstr,10))return 2;fmpq_canonicalise(a.x);fmpq_canonicalise(b.x);Stats st;B ans=pointS(n,a,b,st),ref=referenceS(n,a,b);out[0]=arb_contains(ans.x,ref.x)|| (arb_is_exact(ans.x)&&arb_contains(ref.x,ans.x));out[1]=mag_get_d(arb_radref(ans.x));out[2]=arb_overlaps(ans.x,ref.x);long values[]={st.retained,st.direct,st.blocks,st.maxdirect,st.maxblocks,st.ordinary};for(int i=0;i<6;i++)counts[i]=values[i];return 0;}catch(...){return 1;}}

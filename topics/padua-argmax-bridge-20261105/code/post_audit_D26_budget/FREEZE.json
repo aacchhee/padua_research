@@ -1,0 +1,33 @@
+{
+  "status": "UNEXECUTED D26 first source freeze; D24 accepted; new D26 math/source review and root release pending",
+  "rules_input": "0174900a19087d728f3f947b52f205e5b76b0a41",
+  "N": 4096,
+  "command": "python3 topics/padua-argmax-bridge-20261105/code/post_audit_D26_budget/evaluate.py --run-once",
+  "CPU_soft": 4,
+  "CPU_hard": 5,
+  "CPU_scope": "whole process including startup/imports/helpers/serialization/output/return; no children",
+  "precision": 50,
+  "pi": "exact Fraction alternating Machin 70 terms at1/5 and20 at1/239",
+  "helper_definitions_only": ["directed", "I", "ilog", "atan_bounds"],
+  "far_coefficient": "25/2",
+  "gate": "(191/6144)*(T-25/2)-Cnew-KD*sqrt(191/768)-E0",
+  "error_telescope": "unchanged accepted D20 full-profile Cnew/KD and D16 actual-origin E0",
+  "output_directory": "local-output/argmax-bridge-20261105/post-audit-D26/budget",
+  "exclusive_directory_consumes_first_attempt": true,
+  "retry_fallback_rescue_scan": false,
+  "native_phase_board_quadrature_degree_calls": 0,
+  "scientific_or_control_runs_performed": 0,
+  "code_data": [
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D26_budget/evaluate.py",
+      "bytes": 7935,
+      "sha256": "57d94154dd577fc8fa79a0e24d689bfdc51b4ccee28156a69109f375106ee173"
+    },
+    {
+      "path": "topics/padua-argmax-bridge-20261105/code/post_audit_D06_model_budget/evaluate.py",
+      "bytes": 6126,
+      "sha256": "9ab068b7928d9976db4b5b26cddc902eb063e592f296dcfb143e999869301413"
+    }
+  ],
+  "prose_policy": "SPEC and mathematical records identified in audit handoff, not hash-pinned by executable checker"
+}

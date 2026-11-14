@@ -1,0 +1,18 @@
+{
+  "base_path": "topics/padua-argmax-effective-20261103/code/native_checker/kernel.cpp",
+  "base_sha256": "b0c871e7711219edfe3ce01480d8d1de3503a20d9b59f82b63a00eff248bc6e0",
+  "result_path": "topics/padua-argmax-bridge-20261105/code/small_degree_unification/metadata_kernel.cpp",
+  "result_sha256": "9b07d16a691261772e3057323dd3fb7e4934adf5bd2d6cb150f0f825db173667",
+  "replacements": [
+    {
+      "old": "auto x=axis(n,pl,ph),y=axis(n+1,pl,ph);int m=n+1;",
+      "new": "auto x=axis(n,pl,ph),y=axis(n+1,pl,ph);I initial_x_seed={grid(cosb(ph/n).first).l,grid(cosb(pl/n).second).h};int m=n+1;",
+      "occurrences": 1
+    },
+    {
+      "old": "<<x[1].l<<\",\"<<x[1].h<<",
+      "new": "<<initial_x_seed.l<<\",\"<<initial_x_seed.h<<",
+      "occurrences": 1
+    }
+  ]
+}

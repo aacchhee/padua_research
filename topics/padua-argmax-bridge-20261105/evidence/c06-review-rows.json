@@ -1,0 +1,51 @@
+{
+  "scope": "C06 partial cotangent only; independent endpoint-image interval and exact-moment controls",
+  "source_hashes": {
+    "partial.cpp": "f381738049d793e81a93626bef11eeb1d2a0ff49d0027b6518dd3fec8ff0bcf0",
+    "partial.h": "b053eafcf79a77ab4d8fd921c8bb1c25a5e4b15312ecdeee0518855579b3771d",
+    "control.py": "8a7d48848510915508528a3849fef11f5b01341319ce2103466bdaba608064aa"
+  },
+  "review_source": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C06_review/review.cpp",
+    "bytes": 1731,
+    "sha256": "e7b0790d166b547d19bec2f79b4c7558dc4bf187624c7ae349d3db33b9da6d2d"
+  },
+  "driver": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/cheap_rows_C06_review/control.py",
+    "bytes": 4241,
+    "sha256": "cd231c2849e33dfba93178201c179a9c59654f18409eb2f31d1c01aaa7d9b266"
+  },
+  "builder": {
+    "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot_r9.py",
+    "bytes": 5703,
+    "sha256": "6e29f5990515d50829aa7978ebeeb97dcb49e8f62716d62d37fc8ddc69e82bfa"
+  },
+  "raw_manifest": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c06-review-rows/check-t0i44d6x/review.json",
+    "bytes": 59894,
+    "sha256": "a3ce297902ee261c0d7957a1fc8ab0ea52ef5c46c518b8139dc44dbf3ef8e882"
+  },
+  "binary": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/c06-review-rows/check-t0i44d6x/libphase_checker.so",
+    "bytes": 72992,
+    "sha256": "d28408e409c2b4df8bf0676467b5bc6260b76a875120d2a87fb1625c07a0f519"
+  },
+  "compiler": "x86_64-linux-gnu-g++-14 (Debian 14.2.0-19) 14.2.0",
+  "python": "3.12.14",
+  "long_bits": 64,
+  "cases": 76,
+  "endpoint_image_containments": 54,
+  "invalid_rejections": 15,
+  "empty_cases": 5,
+  "max_integer_symmetry_cases": 2,
+  "moment_checks": 784,
+  "cpu_seconds": 2.6852910000000003,
+  "closure_entries": {
+    "headers": 182,
+    "toolchain": 4,
+    "toolchain_dependency_closure": 13,
+    "linked_dependency_closure": 8,
+    "actual_loaded_closure": 8
+  },
+  "result": "PASS"
+}

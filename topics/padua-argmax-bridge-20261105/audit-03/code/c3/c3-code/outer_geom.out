@@ -1,0 +1,14 @@
+min v: 3.9383242655108286e-05
+a0-a min: 3.938324265506665e-05  w0-(ce+cd) min: 3.940002579327917e-05
+p0+eta sqrt v - max(p,q) min: 0.00502382467808099
+3 sqrt v - d+ min: 0.008820027504833378  2sqrt(2v)-|p-q| min: 0.006205558081573026
+P0+4v-P min: 0.0012419439048989567  2sqrt(2u-u^2)-P min: -2.220446049250313e-16
+u>=11/48 alone gives p0+eta*sqrt(v) >= 0.9701370981674413  but sin x can reach 1 for x in [1,pi]
+min over x in [1,pi] of p0+eta*sqrt((1-cos x)/2-u1)-sin x: 0.13022941268873234
+over x>=1: min u = 0.22987983976117243 ; at x=pi/2,y=0 u= 0.5
+p<=F_u min slack -7.556889142223966e-14
+q<=F_u min slack -7.556889142223966e-14
+d+<=F_u min slack -7.556889142223966e-14
+P<=Q_u min slack 0.0
+ce+cd<=2-u min slack -2.220446049250313e-16
+far: min u on rho in [pi/2,pi]: 0.2928936065280947  vs 7/24= 0.2916666666666667

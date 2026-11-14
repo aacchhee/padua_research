@@ -1,0 +1,16 @@
+{
+  "topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/producer.c": "270eb7b0f073efcb996c7c832f6e946d37b0e6f780fdac63fc66591332560a5e",
+  "topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/c08_interval.h": "275936b502180f2d92af94eb2138815114ba75afb9c258cadffa44e580be0a03",
+  "topics/padua-argmax-bridge-20261105/code/cheap_C08_mpfr/build.py": "fff281f0c765025ec182937aff38398e7eedfd11b66bfeb36f105734b730d81f",
+  "topics/padua-argmax-bridge-20261105/code/n3_bootstrap_r8.py": "9058deac09eec2ddd7cfae4815fdf79d702e52099de13820e44af4f82db0a12c",
+  "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r8.py": "3c71ada8e49829cb897ee1c064fcdc70d08c846afcb1fb067c6c84673e205bb9",
+  "topics/padua-argmax-bridge-20261105/code/phase_checker/check_r6.py": "437378a5d0fe21d4d0ef30b1c9843274d2cb98fc9f408e9bad5683ec9f1e73dc",
+  "topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb",
+  "topics/padua-argmax-bridge-20261105/code/check_corner_exact.cpp": "3646f4e8b6b16957b9e1114f95ad2f0a7c18eec4687b49d5e6f1947a25eea6e3",
+  "topics/padua-argmax-bridge-20261105/code/check_corner_range.py": "66fc2d9583260572125bd6c70a943577f94f1dd1ce2755a2c47ad96fffa9a982",
+  "topics/padua-argmax-bridge-20261105/code/check_bootstrap_energy.py": "915c6c7c40e8c9e0c748cf50c2fe278f6760d79a9e725939aed1553269030972",
+  "topics/padua-argmax-bridge-20261105/evidence/independent-bootstrap-energy.json": "f0c48ea7f55e3a926b36537ebe46724b4305cacb9f1254c6417b2abd9676425b",
+  "topics/padua-argmax-bridge-20261105/evidence/independent-corner-range.json": "e685674c028bc99e42d547e8b84a2ce5a7e7e67c3cc69f6c29a55ecbcffd23c0",
+  "topics/padua-argmax-bridge-20261105/evidence/n3-corner-batch.json": "97e20cc877ad5afd0c9dfe96c1e399a42d820b38c18626e2b69bfa54f6acfc88",
+  "topics/padua-argmax-bridge-20261105/evidence/independent-corner-replay.json": "573afc5d5ae229b0fa1d47df9b6bf334e47e0e437288a3543826838e5403cb4b"
+}

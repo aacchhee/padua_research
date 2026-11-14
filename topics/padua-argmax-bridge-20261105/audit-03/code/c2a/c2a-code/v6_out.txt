@@ -1,0 +1,6 @@
+(0.4,0.3) n=  1000  M_inf=28.35603290  E_inf+cut integral=28.35603319  diff=-2.96e-07  diff*n/L=-0.000
+(0.4,0.3) n= 10000  M_inf=45.27143802  E_inf+cut integral=45.27143800  diff=1.30e-08  diff*n/L=0.000
+(0.4,0.3) n=100000  M_inf=66.21880546  E_inf+cut integral=66.21880551  diff=-5.20e-08  diff*n/L=-0.000
+(1.2,0.5) n=  1000  M_inf=21.46974044  E_inf+cut integral=21.46974060  diff=-1.52e-07  diff*n/L=-0.000
+(1.2,0.5) n= 10000  M_inf=33.46215518  E_inf+cut integral=33.46215518  diff=8.83e-09  diff*n/L=0.000
+(1.2,0.5) n=100000  M_inf=48.11892685  E_inf+cut integral=48.11892687  diff=-1.11e-08  diff*n/L=-0.000

@@ -1,0 +1,89 @@
+{
+  "format": "paper-dependent-evidence-delivery-v1",
+  "date": "2026-11-14",
+  "status": "COMPLETE; independently verified and freshly extracted",
+  "scientific_source_commit": "be4197237cfbd45388a436400e278323e22da16e",
+  "paired_TeX_Bib_freeze": "e861c752218fc0a6648d4a4a67fea616ba5cbdd1",
+  "source_snapshot": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regenerated-delivery-20261114/padua-paper-source-be419723-20261114.tar.gz",
+    "bytes": 19114119,
+    "sha256": "fd4b2c01cd8643be4999d109f45f1c10a2a0bb229ceb02c392e2fb89b4a34dd6"
+  },
+  "complete_package": {
+    "path": "/workspace/padua_research/local-output/argmax-bridge-20261105/regenerated-delivery-20261114/padua-paper-evidence-20261114.zip",
+    "bytes": 296189961,
+    "sha256": "d3452a176a220a649ca889cacd43c9c0d96fb75e12ae84849d0a07ee6b7d354c",
+    "profile": "full",
+    "logical_files": 2771,
+    "logical_bytes": 470111629,
+    "unique_blobs": 2703,
+    "unique_bytes": 404559092
+  },
+  "native_component": {
+    "logical_path": "native/full-return-20261114.zip",
+    "bytes": 164004073,
+    "sha256": "c172d9a0b3a6338b90dc4c9bfa072a965ebfc3a3ea6901774d099f4ce4a69a34",
+    "degrees": 191,
+    "passes": 382,
+    "all_new_histories_retained": true,
+    "logical_files": 14741,
+    "unique_objects": 8628
+  },
+  "independent_phase": {
+    "degrees": 471,
+    "input_records": 942,
+    "old_authenticated_inputs": 560,
+    "new_inputs": 382,
+    "accepted_records": 942,
+    "separate_replay_records": 6,
+    "positive_substitution_controls": 3,
+    "source_results": "code/regeneration_i25_20261114/RESULTS.json"
+  },
+  "polynomial": {
+    "complete_inputs_present": 39,
+    "accepted_original_receipts_present": true,
+    "rebuilt_executable_bytes": 67584,
+    "rebuilt_executable_sha256": "e35d6a80952d98edc1927f827346cc436d9f0da31837f9d000918aadada137c7",
+    "new_strict_check_degrees": [
+      2,
+      17
+    ],
+    "new_full_39_replay": false
+  },
+  "manuscripts": {
+    "paper": {
+      "pages": 59,
+      "bytes": 804080,
+      "sha256": "b0abf068834066e4494cbf9cedecbe2f2c94871233d16f2463816eb2c4501749",
+      "path": "/workspace/padua_research/local-output/padua-argmax-bridge-20261105/regenerated-paper-20261114/padua-manuscript-20261114-015102-Oslo.pdf"
+    },
+    "companion": {
+      "pages": 152,
+      "bytes": 1223975,
+      "sha256": "3c7a114a9eb33f6211b8e1d522033cf0f0fbbc1a938e206ba1341792feb920ec",
+      "path": "/workspace/padua_research/local-output/padua-argmax-bridge-20261105/regenerated-companion-20261114/padua-companion-20261114-015102-Oslo.pdf"
+    },
+    "built_labels_equal": 120,
+    "mutation_scenarios": 13,
+    "mutation_harness_sha256": "190d2cf8a0e00117600aba2495b6a47c6561e9cb60e54e8b0b0b38aa08b318a4"
+  },
+  "delivery_integrity": {
+    "builder_sha256": "e41d2ee849429dd91030e900a9c9abb2f46fb9b8da404cc829380d325197f182",
+    "configuration_sha256": "f7f1f51dceee2d79fcebe577e58439bad0084cc48fa9113e006277c847879057",
+    "accepted_plan_sha256": "0124def1b7e8734d6d20ccc52fb1a44a154f285a6a1bc144a8734a66fa59ddc1",
+    "builder_tool_exit": 0,
+    "builder_verify": "PASS",
+    "independent_verify_exit": 0,
+    "independent_fresh_extract_exit": 0,
+    "independent_all_logical_bytes_and_modes": "PASS",
+    "independent_report": "delivery-review-20261114.md",
+    "sidecar_receipts": "/workspace/padua_research/local-output/argmax-bridge-20261105/regenerated-delivery-20261114/delivery-verification"
+  },
+  "custody": {
+    "current": "Present locally and downloadable in this task; external permanent custody unassigned",
+    "Windows_transfer_verified": false,
+    "permanent_DOI": null,
+    "absent_historical_artifacts_required_by_current_paper": false
+  },
+  "scope": "New paper-dependent evidence, not reconstructed historical identities. Existing arithmetic/analytic premises remain explicit; runtime bytes require compatible host ABI and selected tools are not a complete OS/toolchain. Later delivery receipt is outside scientific snapshot/package to avoid self-reference."
+}

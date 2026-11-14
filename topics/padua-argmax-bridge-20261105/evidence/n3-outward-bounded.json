@@ -1,0 +1,103 @@
+{
+  "status": "MEASURED bounded outward calibration; no complete phase cover or independent acceptance",
+  "command": "python topics/padua-argmax-bridge-20261105/code/n3_outward_run.py --degrees 17 24 32 --seconds 30 --boxes 32 --work local-output/argmax-bridge-20261105/N3/outward-calibration-v1 --execute",
+  "collector_command": "python topics/padua-argmax-bridge-20261105/code/n3_outward_receipt.py",
+  "collector_source": {
+    "path": "topics/padua-argmax-bridge-20261105/code/n3_outward_receipt.py",
+    "bytes": 2750,
+    "sha256": "a851c416b02c71b16b791df80b9afe3c89d9f0e62266c0fe12fe91a04cec89b6"
+  },
+  "runs": [
+    {
+      "n": 17,
+      "complete": false,
+      "accepted": false,
+      "statistics": {
+        "visited": 32,
+        "splits": 31,
+        "counts": {
+          "split": 31,
+          "outside": 1
+        },
+        "cpu_seconds": 7.528207882
+      },
+      "pending": 34,
+      "leaves": 1,
+      "output": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-calibration-v1/n17-phase.json",
+        "bytes": 2770,
+        "sha256": "d207cb3117cd68ca57d3830a68c8113e2f057fbba71db519b63d28788ecf2e07"
+      }
+    },
+    {
+      "n": 24,
+      "complete": false,
+      "accepted": false,
+      "statistics": {
+        "visited": 32,
+        "splits": 31,
+        "counts": {
+          "split": 31,
+          "outside": 1
+        },
+        "cpu_seconds": 9.437926868999998
+      },
+      "pending": 34,
+      "leaves": 1,
+      "output": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-calibration-v1/n24-phase.json",
+        "bytes": 2776,
+        "sha256": "a8b1262420dfa34eafc25a2590d2dd00057487733956a8b613de5f2c3ef17460"
+      }
+    },
+    {
+      "n": 32,
+      "complete": false,
+      "accepted": false,
+      "statistics": {
+        "visited": 32,
+        "splits": 31,
+        "counts": {
+          "split": 31,
+          "outside": 1
+        },
+        "cpu_seconds": 14.312805390000001
+      },
+      "pending": 34,
+      "leaves": 1,
+      "output": {
+        "path": "local-output/argmax-bridge-20261105/N3/outward-calibration-v1/n32-phase.json",
+        "bytes": 2779,
+        "sha256": "6c75ed30ac0a7c3ed66f81c75dc9a635fe1e0bfd50aeb8f520f0a5f6b0874bb4"
+      }
+    }
+  ],
+  "sample_leaf_receipt": {
+    "path": "topics/padua-argmax-bridge-20261105/evidence/n3-phase-samples.json",
+    "bytes": 2694,
+    "sha256": "f8d4db7f87a03a6757da863af430e95b1222eaa9320868bca870607396b6a329"
+  },
+  "canceled_duplicate": {
+    "status": "Terminated by coordinator instruction before any completed degree; no result used",
+    "command": "OPENBLAS_NUM_THREADS=1 python topics/padua-argmax-bridge-20261105/code/n3_float_v3.py --degrees 33 64 128 --seconds 600 --corner-replay topics/padua-argmax-bridge-20261105/evidence/independent-corner-replay.json",
+    "reason": "Duplicate campaign solely for premise metadata was unnecessary; separate input-impact check used.",
+    "raw": [
+      {
+        "path": "local-output/argmax-bridge-20261105/N3/float-v3/box-trace.jsonl",
+        "bytes": 389609,
+        "sha256": "88fe49323953d22d6c5b0bcd850f028824eed21fb36c5368e6b2a932b4342675"
+      },
+      {
+        "path": "local-output/argmax-bridge-20261105/N3/float-v3/box-validation.json",
+        "bytes": 69331,
+        "sha256": "14e6f43a4595239c6cdd96b73065f107c5a32f14f4a5feb9c36ed36049593dc9"
+      }
+    ],
+    "completed_degrees": []
+  },
+  "notes": [
+    "First outward invocation failed before mathematical execution because a relative work path could not be recorded relative to repository root; driver now resolves work path.",
+    "Each calibration has only one outside leaf; narrow far/defect/local leaves are separate explicit partial prefix trees.",
+    "Every calibration preserves pending paths and producer accepted=false; independent phase checker owns acceptance."
+  ]
+}

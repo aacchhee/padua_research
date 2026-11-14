@@ -1,0 +1,16 @@
+{
+ "n": 17,
+ "mode": "replay:n17.json.gz",
+ "prec_bits": 256,
+ "corner_value_ball": "[8.6179478249936012736161095210198838816597589010486244419082750214106499964 +/- 8.50e-74]",
+ "corner_value_lower": "[8.617947824993601273616109521019883881659758901048624441908275021410649996315 +/- 2.04e-77]",
+ "leaves": 106,
+ "bound_leaves": 104,
+ "corner_leaves": 2,
+ "max_depth": 8,
+ "covered_area": "4",
+ "complete": true,
+ "failures": [],
+ "cardinal_sanity_ball_containment": true,
+ "cpu_seconds": 11.272
+}

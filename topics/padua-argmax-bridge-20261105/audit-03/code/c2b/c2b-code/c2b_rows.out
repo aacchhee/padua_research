@@ -1,0 +1,16 @@
+f_j at (1,-pi+1e-7,0), j=-6..6 even: [-0. -0. -0.  1. -0. -0. -0.]
+n=32: E_ret(0)*m = 0.444897  lower bound 22/45-71m/n^2 = -1.799197
+n=33: E_ret(0)*m = 0.447333  lower bound 22/45-71m/n^2 = -1.727824
+n=160: E_ret(0)*m = 0.501052  lower bound 22/45-71m/n^2 = 0.042365
+n=161: E_ret(0)*m = 0.508354  lower bound 22/45-71m/n^2 = 0.045156
+PF |sum|f_j|-ell_r|                           worst = 2.026e-06
+far f_j - 4a/(w^2-z^2) (max abs)              worst = 1.004e-16
+positive reference set mismatch               worst = 0.000e+00
+e_r identity |actual-formula|                 worst = 8.730e-14
+e_r identity rel                              worst = 1.786e-10
+count opposite-sign samples - |P| (chart)     worst = 0.000e+00
+closest row e_0 |actual-formula|              worst = 3.174e-10
+closest row opposite-sign samples             worst = 0.000e+00
+J_cen(0) - 2/m (scaled by m)                  worst = 3.336e-03
+E_ret(0) |actual-formula| *m                  worst = 5.265e-03
+sum 1/|sin v_r| / (2 m H_n)                   worst = 5.239e-01

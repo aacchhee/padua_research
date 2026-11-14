@@ -1,0 +1,291 @@
+{
+  "status": "bounded gate PASS",
+  "input_head": "3888dd37c362a0689943f33e6b7e44c1dd1c3050",
+  "candidate_sha256": "64f7befd86658c8d9f29b05c1cb5a0162e611b726b161e737610547bed218c4b",
+  "candidate_bytes": 81585,
+  "baseline_receipt_sha256": "021ded297f360245fb30a884efe7a3670321e4a736c22873abaa6079cc0257d7",
+  "disjoint_intersection_rejected": true,
+  "R4_1_reproducer_finite_exact": true,
+  "nonfinite_candidate_fallbacks": 2,
+  "finite_candidate_contradiction_rejected": true,
+  "arbitrary_source_variant_rejected": true,
+  "strict_json_rejections": [
+    "duplicate",
+    "nested duplicate",
+    "NaN",
+    "overflow"
+  ],
+  "leaf_gate": [
+    {
+      "root": 0,
+      "path": "01010",
+      "kind": "far",
+      "valid": true,
+      "box": [
+        -3.1415926535897936,
+        -2.3561944901923453,
+        -0.7853981633974484,
+        -0.3926990816987242
+      ],
+      "old_bounds": [
+        12.86916394136224,
+        11.398460326270724,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "hybrid_bounds": [
+        7.432628467777676,
+        5.954040899406666,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "combined_bounds": [
+        7.432628467777676,
+        5.954040899406666,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "cpu_seconds_two_calls": 0.15086857200000003
+    },
+    {
+      "root": 0,
+      "path": "1100111",
+      "kind": "corner-orbit-plus-defect",
+      "valid": true,
+      "box": [
+        -0.9817477042468106,
+        -0.7853981633974484,
+        -1.1780972450961726,
+        -0.7853981633974484
+      ],
+      "old_bounds": [
+        9.165157458361277,
+        8.812266180655259,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "hybrid_bounds": [
+        7.9676085254921505,
+        7.694568453989627,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "combined_bounds": [
+        7.9676085254921505,
+        7.694568453989627,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "cpu_seconds_two_calls": 0.16340549299999996
+    },
+    {
+      "root": 0,
+      "path": "11011111",
+      "kind": "corner-orbit-plus-defect",
+      "valid": true,
+      "box": [
+        -0.9817477042468106,
+        -0.7853981633974484,
+        -0.1963495408493621,
+        0.0
+      ],
+      "old_bounds": [
+        8.843523044070748,
+        8.592540147308648,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "hybrid_bounds": [
+        8.275407985171162,
+        8.12265417924467,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "combined_bounds": [
+        8.275407985171162,
+        8.12265417924467,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "cpu_seconds_two_calls": 0.19998655199999993
+    },
+    {
+      "root": 3,
+      "path": "0011000",
+      "kind": "corner-orbit-plus-defect",
+      "valid": true,
+      "box": [
+        0.7853981633974484,
+        0.9817477042468106,
+        0.7853981633974484,
+        1.1780972450961726
+      ],
+      "old_bounds": [
+        9.16515749507929,
+        8.81226618065673,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "hybrid_bounds": [
+        7.9676085441427125,
+        7.694568453365071,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "combined_bounds": [
+        7.9676085441427125,
+        7.694568453365071,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "cpu_seconds_two_calls": 0.15420575000000003
+    },
+    {
+      "root": 0,
+      "path": "1111111111101111",
+      "kind": "corner-orbit-plus-defect",
+      "valid": true,
+      "box": [
+        -0.012271846303085131,
+        0.0,
+        -0.06135923151542566,
+        -0.049087385212340524
+      ],
+      "old_bounds": [
+        8.618202873184309,
+        8.617490704157147,
+        0.0,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "hybrid_bounds": [
+        8.616364533784965,
+        8.615885355124734,
+        0.421587417135256,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "combined_bounds": [
+        8.616364533784965,
+        8.615885355124734,
+        0.421587417135256,
+        8.6179478249936,
+        8.617947824993601,
+        3.141592653589793,
+        3.1415926535897936
+      ],
+      "cpu_seconds_two_calls": 0.1460218069999999
+    }
+  ],
+  "sources": [
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/arb_kernel.cpp",
+      "bytes": 5635,
+      "sha256": "236116452dc7aae66e39cbf8800fe847cffe931ac0ce8a9682397313de7c43a6"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build.sh",
+      "bytes": 475,
+      "sha256": "d406128df4c836f49ca65531fb43ab17f8f575e22abfd3c3a11d88e3349fd7b4"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/build_snapshot.py",
+      "bytes": 5609,
+      "sha256": "19a5a7c2296768853b94672b9b5dc4cf16c9ae87c37abbcde073ffaf89246bfb"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/check.py",
+      "bytes": 10145,
+      "sha256": "88dde644a77a286e547679b0547c4d35814a4dda7373575208246882d9a26820"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/controls.py",
+      "bytes": 5452,
+      "sha256": "564ab1cacd0606d3fd3e7f71eec2621c8f1eb7c6a78b003acbc4676de89568ff"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_controls.py",
+      "bytes": 7108,
+      "sha256": "e388f935f70dadfc342f4b9f9523e577fb018a65fef485cdf815ca3d05e71164"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel.cpp",
+      "bytes": 9033,
+      "sha256": "9a976e77d861c291468d6bfa4d2104c6c42ace953781ce1c5ff1a43073505d7d"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_kernel_v2.cpp",
+      "bytes": 10891,
+      "sha256": "17fea91d4fa02e4183823e5d70b44705e96da7acfd26b04a0f3ed1cac443d9a2"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/hybrid_v2_controls.py",
+      "bytes": 9043,
+      "sha256": "e8224a0ccd735d676178a44d1db3959ba4bd647f3ac5a40ca46770b99d4cf09a"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/provenance_controls.py",
+      "bytes": 3658,
+      "sha256": "983a63abddbcb2f83f22116070be9af956d89a9fc4b8df445787da57293ca810"
+    },
+    {
+      "path": "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/phase_checker/setup.py",
+      "bytes": 1131,
+      "sha256": "ff6babcf65f90c42d35353bd306f89d96ac293c6783508b03bef175ab5a60391"
+    }
+  ],
+  "checker_cpu_seconds": 1.310750968,
+  "compiler_child_cpu_seconds": 1.9330669999999999,
+  "scope": "bounded controls only; numerical reference comparisons are diagnostic, separate source/math review required before full original-tree replay",
+  "ratio_controls_count": 75,
+  "primitive_controls_count": 4,
+  "full_receipt": {
+    "path": "local-output/argmax-bridge-20261105/phase-checker/round5/hybrid-v2-bounded-full.json",
+    "bytes": 129798,
+    "sha256": "fa3a966fa84893860f58c85f2d7d0907a4edc2a9dfb2ac716bc578af3ce26bcd"
+  },
+  "kernel_variant": "round5",
+  "default_kernel_variant": "baseline",
+  "default_binary_sha256": "63b47d988893d97d652997db53543f98c68b94eb1ebcabd715cb2561cb01dc33",
+  "binary_sha256": "489b719e5b77095f03fcf1239ef9e8debbfcbbcde39ce7ef1adfd585492f399a"
+}

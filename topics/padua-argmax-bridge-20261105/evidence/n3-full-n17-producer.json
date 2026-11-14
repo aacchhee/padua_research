@@ -1,0 +1,98 @@
+{
+  "status": "Complete outward producer candidate; independent whole-tree replay and source review own acceptance",
+  "rules_input": "c000899f3fb10d6ba0f1725341a045fe11ec943a",
+  "command": "python topics/padua-argmax-bridge-20261105/code/n3_outward_full.py --degrees 17 --seconds 600 --work local-output/argmax-bridge-20261105/N3/outward-full-n17-r3 --execute",
+  "collector_command": "python topics/padua-argmax-bridge-20261105/code/n3_full_receipt.py",
+  "collector_source": {
+    "path": "topics/padua-argmax-bridge-20261105/code/n3_full_receipt.py",
+    "bytes": 3867,
+    "sha256": "699d7ce2a710795d0ccf160a76e76c696fb0e332cffe59070fbc6c0522f37b75"
+  },
+  "producer_receipt": {
+    "path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-producer-receipt.json",
+    "bytes": 2328,
+    "sha256": "a99fdbc6f8ddee79bab0157a698e2e9472923e3e905fdd97fedeafc11013cd21"
+  },
+  "producer_original_statistics": {
+    "visited": 2572,
+    "splits": 1284,
+    "counts": {
+      "split": 1284,
+      "outside": 32,
+      "far": 524,
+      "corner-orbit-plus-defect": 704,
+      "local-corner-plus-defect": 28
+    },
+    "cpu_seconds": 222.37106893
+  },
+  "corner_patch": "Inherited T251/T369 only",
+  "original_candidate": {
+    "path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-phase.json",
+    "bytes": 192042,
+    "sha256": "df22e182e0c3719ed2d6604e2892cb3980da311a78f30f6500aa5e9507db0983"
+  },
+  "original_gzip": {
+    "path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-phase.json.gz",
+    "bytes": 26303,
+    "sha256": "1cf11d2f634d4dfe19d1a181279867fd53d50ff18ba2bfbd0d8a241eb2e73936"
+  },
+  "compact_projection": {
+    "original_candidate": {
+      "path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-phase.json",
+      "bytes": 192042,
+      "sha256": "df22e182e0c3719ed2d6604e2892cb3980da311a78f30f6500aa5e9507db0983"
+    },
+    "compact_candidate": {
+      "path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-phase-compact.json",
+      "bytes": 81585,
+      "sha256": "64f7befd86658c8d9f29b05c1cb5a0162e611b726b161e737610547bed218c4b"
+    },
+    "compressed_compact": {
+      "path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/n17-phase-compact.json.gz",
+      "bytes": 5266,
+      "sha256": "80dcb2db069332e018653931bdb94e3995ceca5c9d96741fd1b87110474267a6"
+    },
+    "compression_decompressed_sha256": "64f7befd86658c8d9f29b05c1cb5a0162e611b726b161e737610547bed218c4b",
+    "complete": true,
+    "accepted": false,
+    "leaves": 1288
+  },
+  "projection_source": {
+    "path": "topics/padua-argmax-bridge-20261105/code/n3_compact_candidate.py",
+    "bytes": 2605,
+    "sha256": "2e90bbb1d130ba1560a00b1712bad187b6303288cdb3c28fdcfae6bec200e3ad"
+  },
+  "projection_identity_helper": {
+    "path": "topics/padua-argmax-bridge-20261105/code/n3_native_receipt.py",
+    "bytes": 2979,
+    "sha256": "44990cb6b9e65ee8fe788663be91e7bde71ee6ce77dec7b228d56825f7209577"
+  },
+  "build_manifest_original": {
+    "path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/build/build-manifest.json",
+    "bytes": 9946,
+    "sha256": "8a6f84304f545ef39ed82f12bb00b83e2934a1f710444f615cfaf4011bcf6791"
+  },
+  "build_manifest_preserved": {
+    "path": "topics/padua-argmax-bridge-20261105/evidence/n3-full-n17-build.json",
+    "bytes": 9946,
+    "sha256": "8a6f84304f545ef39ed82f12bb00b83e2934a1f710444f615cfaf4011bcf6791"
+  },
+  "closure_after_run": {
+    "verified_file_identities": 53,
+    "all_match": true,
+    "loaded_binary": {
+      "path": "local-output/argmax-bridge-20261105/N3/outward-full-n17-r3/build/n3_outward.so",
+      "bytes": 37208,
+      "sha256": "13d0060f45c7ca9fb58f52be5cc36da8796763b741857316fcbe4ed824d7c9b8"
+    },
+    "scope": "Compiler, actual discovered headers, snapshot sources and linked runtime files; checked against pre-run manifest."
+  },
+  "complete": true,
+  "accepted_by_producer": false,
+  "limits": [
+    "Only overlap n17; no extension of the accepted finite range.",
+    "Compact candidate omits only numeric leaf diagnostics ignored by the independent checker; it requires its own exact-byte replay.",
+    "Full original diagnostics remain local; essential compact gzip and manifest fit individual evidence size limits.",
+    "The independent checker and mathematical/source review must accept before proof promotion."
+  ]
+}
