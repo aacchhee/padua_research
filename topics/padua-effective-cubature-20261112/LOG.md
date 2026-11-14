@@ -2,15 +2,15 @@
 
 - Branch: `claude/padua-effective-cubature-20261112` · Base: main `b5388c2` (PR #33 merged) · Developer: Claude · Auditor: Codex (gpt-6-astra)
 - Stage: PR preparation (audit 03 accepted; readiness still required) · Open handoff: [handoffs/08-pr-preparation.md](handoffs/08-pr-preparation.md) (Claude); 01/03/04/05/06/07 done, 02 superseded · Draft PR: https://github.com/aacchhee/padua_research/pull/34 (draft; preparation/readiness pending)
-- Reserved final-ID ranges: none. Reserve when first needed (PR #29 rules).
+- Reserved final-ID ranges: PD-T674–683, PD-N246–250, IDEA-756–765, LIT-716–720 ([ledger](ALLOCATIONS.md)); assigned PD-T674–679, PD-N246, IDEA-756–762, LIT-716–717.
 - Claims (provisional IDs `PD-T?padua-effective-cubature-20261112-claude-NN`):
-  - -01: C0 corollary, PROVED (assembly);
-  - -02: Delsarte bound, PROVED;
-  - -03: uniform Theorem A, PROVED with LITERATURE dependency on KLM 2025 Thm 6.4;
-  - -04: 1/18 cap, PROVED;
-  - -05: explicit γ — compact-support target, PROVED (computer-assisted, explicit cutoff; 2026-11-13). Status history: OPEN 2026-11-12 (session 1); "CLOSED by -07" 2026-11-12 (premature, audit-01 A1).
-  - -06: PD-N, torus-LP finite limitation, PROVED (exact witnesses);
-  - -07: explicit γ_A > 1/36, PROVED (computer-assisted, local; independent rerun PASS; developer checker revised 2026-11-13);
+  - -01 (PD-T674): C0 corollary, PROVED (assembly);
+  - -02 (PD-T675): Delsarte bound, PROVED;
+  - -03 (PD-T676): uniform Theorem A, PROVED with LITERATURE dependency on KLM 2025 Thm 6.4;
+  - -04 (PD-T677): 1/18 cap, PROVED;
+  - -05 (PD-T678): explicit γ — compact-support target, PROVED (computer-assisted, explicit cutoff; 2026-11-13). Status history: OPEN 2026-11-12 (session 1); "CLOSED by -07" 2026-11-12 (premature, audit-01 A1).
+  - -06 (PD-N246): PD-N, torus-LP finite limitation, PROVED (exact witnesses);
+  - -07 (PD-T679): explicit γ_A > 1/36, PROVED (computer-assisted, local; independent rerun PASS; developer checker revised 2026-11-13);
 
 ## 2026-11-12 — Claude, claude-opus-5-5 (configured; effort not exposed) — topic setup
 
@@ -170,6 +170,14 @@
 ## 2026-11-14 — AC authorization
 
 - AC: "yes I approve this PR34 and all other writes to this branch". This approves the prepared audit-03 PR #34 update and records standing authorization for further writes to `claude/padua-effective-cubature-20261112`. The open work instruction remains handoff 08; only AC merges under the repository rules.
+
+## 2026-11-14 — Claude, configured claude-opus-5-5 (AC prompt: Sonnet 5.5 high; effort not exposed) — PR preparation (handoff 08)
+
+- **Request.** "Claude (Sonnet 5.5 high): Continue claude/padua-effective-cubature-20261112." Open handoff `handoffs/08-pr-preparation.md`. Rules read at `40179a5` (unchanged); main `b5388c2`, ancestor; no merge needed.
+- **Reservation.** Fresh union check against main, PR27 and PR35 (no closed-unmerged PRs). Published reservation PD-T674–683, PD-N246–250, IDEA-756–765, LIT-716–720 in `ALLOCATIONS.md`, commit `de39dab`, linked from the PR body.
+- **Assignment.** PD-T674–679, PD-N246, IDEA-756–762, LIT-716/717 (`pr-preparation/final-id-map.json`).
+- **Shared registries.** PROOF_STATUS, IDEAS, INDEX, CROSSWALK, RESULTS and CURRENT updated by appended or inserted entries only. Validation is recorded in `pr-preparation/record.md`.
+- **Next.** Codex readiness check (handoff 09). PR #34 stays draft.
 
 ## Runs needed (retained development list)
 

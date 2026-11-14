@@ -2,6 +2,22 @@
 
 This file is written only by the topic orchestrator. Branch `claude/padua-effective-cubature-20261112`. Provisional IDs `PD-T?padua-effective-cubature-20261112-claude-NN`; final IDs are assigned at PR preparation. The development snapshot below is retained; the audit disposition follows it.
 
+## Final IDs (assigned at PR preparation, 2026-11-14)
+
+| Provisional | Final | Status |
+|---|---|---|
+| -01 Lebesgue corollary | PD-T674 | PROVED (assembly) |
+| -02 Delsarte bound | PD-T675 | PROVED |
+| -03 uniform Theorem A | PD-T676 | PROVED with explicit LITERATURE dependency |
+| -04 cap γ_A ≤ 1/18 | PD-T677 | PROVED |
+| -05 compact-support explicit witness | PD-T678 | PROVED (computer-assisted) |
+| -06 torus-LP finite limitation | PD-N246 | PROVED |
+| -07 explicit γ_A > 1/36 | PD-T679 | PROVED (computer-assisted) |
+| IDEA -01…-07 | IDEA-756…762 | as dispositioned |
+| LIT -01, -02 | LIT-716, LIT-717 | literature records |
+
+Ledger: `topics/padua-effective-cubature-20261112/ALLOCATIONS.md`. The provisional labels below are kept as written in the audited records.
+
 ## Status (2026-11-12): session 1 and explicit-γ campaign complete (3 of 7 rounds), Codex audit pending
 
 - **C0 (-01), PROVED, assembly of merged results; independent Opus check done, no BLOCKING.** The Padua Lebesgue constant equals the corner value Λ_c(n), attained exactly at the two non-node corners, for 2 ≤ n ≤ 32 and for n ≥ N_* (N_* non-effective). Hence, for n ≥ max(32, N_*),
@@ -68,4 +84,4 @@ No claim changes. Developer replays of all three γ certificates from a fresh ha
 
 ## Next step
 
-PR preparation under `topics/padua-effective-cubature-20261112/handoffs/08-pr-preparation.md`: fresh reservations/final IDs, shared registry and RESULTS.md application, then an auditor readiness check. No IDs have yet been allocated; PR #34 remains draft. Only AC merges.
+Codex readiness check of the registry/ID diff and the reservation refresh: `topics/padua-effective-cubature-20261112/handoffs/09-readiness.md`. PR #34 stays draft; only AC merges.

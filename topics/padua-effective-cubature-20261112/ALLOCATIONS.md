@@ -47,3 +47,14 @@ The reservation's priority is the pushed commit that first adds this ledger. Loc
 None of these overlaps the new ranges.
 
 No collision and no unknown retired reservation was found. The check is repeated at readiness, and again if main or another open PR's ledger changes before AC merges. Only AC merges.
+
+## Final assignments and permanent gaps (2026-11-14)
+
+| Namespace | Assigned | Count | Permanent unused headroom | Gap count |
+|---|---|---:|---|---:|
+| PD-T | PD-T674–679 | 6 | PD-T680–683 | 4 |
+| PD-N | PD-N246 | 1 | PD-N247–250 | 4 |
+| IDEA | IDEA-756–762 | 7 | IDEA-763–765 | 3 |
+| LIT | LIT-716–717 | 2 | LIT-718–720 | 3 |
+
+The exact map is `pr-preparation/final-id-map.json`, and the global crosswalk section is "Effective positive-cube cubature excess and Padua Lebesgue corollary — PR34" in `ID_CROSSWALK.md`. Assignments were made only after the reservation commit `de39dabc7301b0de1463aaf2dab99365c4d7789e` was pushed and linked from the PR body.

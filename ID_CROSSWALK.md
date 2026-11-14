@@ -2106,3 +2106,22 @@ The original wording and dated decomposition are preserved in each target theory
 | Local source record: caliari-cube | LIT-673 | [novelty-gate.md](topics/padua-3d-20261106/final-d5/novelty-gate.md) | retained unnumbered literature record |
 
 Assignments: PD-T554–643(90), PD-N186–225(40), IDEA616–723(108), LIT636–673(38 new facts); six literature groups reuse accepted facts. Permanent unused gaps: PD-T644–673, PD-N226–245, IDEA724–755, LIT674–715. No alias receives two final IDs.
+
+## Effective positive-cube cubature excess and Padua Lebesgue corollary — PR34
+
+[Topic ledger](topics/padua-effective-cubature-20261112/ALLOCATIONS.md): owner claude/padua-effective-cubature-20261112, PR34; reserved PD-T674–683, PD-N246–250, IDEA-756–765, LIT-716–720. [Exact final map](topics/padua-effective-cubature-20261112/pr-preparation/final-id-map.json). Canonical theory and source records retain their audited provisional titles and aliases; the assignments below give their permanent registry identities without rewriting audited evidence or audit prose.
+
+| Provisional ID / retained alias | Final ID | Canonical record | Mapping scope |
+|---|---|---|---|
+| PD-T?padua-effective-cubature-20261112-claude-01; PD-T?effective-cubature-claude-01 (handoff-01 short form) | PD-T674 | [lebesgue-constant-corollary.md](topics/padua-effective-cubature-20261112/theory/lebesgue-constant-corollary.md) | canonical claim |
+| PD-T?padua-effective-cubature-20261112-claude-02 | PD-T675 | [delsarte-bound.md](topics/padua-effective-cubature-20261112/theory/delsarte-bound.md) | canonical claim |
+| PD-T?padua-effective-cubature-20261112-claude-03 | PD-T676 | [uniform-theorem-a.md](topics/padua-effective-cubature-20261112/theory/uniform-theorem-a.md) | canonical claim |
+| PD-T?padua-effective-cubature-20261112-claude-04 | PD-T677 | [lp-cap.md](topics/padua-effective-cubature-20261112/theory/lp-cap.md) | canonical claim |
+| PD-T?padua-effective-cubature-20261112-claude-05 | PD-T678 | [explicit-gamma-target.md](topics/padua-effective-cubature-20261112/theory/explicit-gamma-target.md) | canonical claim; split into PD-T679 (general-L¹ form) |
+| PD-N?padua-effective-cubature-20261112-claude-06 | PD-N246 | [limitation-torus-lp-finite.md](topics/padua-effective-cubature-20261112/theory/limitation-torus-lp-finite.md) | canonical negative |
+| PD-T?padua-effective-cubature-20261112-claude-07 | PD-T679 | [explicit-gamma.md](topics/padua-effective-cubature-20261112/theory/explicit-gamma.md) | canonical claim; split from PD-T678's target |
+| IDEA?padua-effective-cubature-20261112-claude-01 … IDEA?padua-effective-cubature-20261112-claude-07 | IDEA-756 … IDEA-762 (in order) | [novelty-gate-E1.md](topics/padua-effective-cubature-20261112/novelty-gate-E1.md) | retained candidates |
+| LIT?padua-effective-cubature-20261112-claude-01 | LIT-716 | [literature-effective.md](topics/padua-effective-cubature-20261112/literature-effective.md) | literature record |
+| LIT?padua-effective-cubature-20261112-claude-02 | LIT-717 | [literature-effective.md](topics/padua-effective-cubature-20261112/literature-effective.md) | literature record |
+
+Assignments: PD-T674–679 (6), PD-N246 (1), IDEA-756–762 (7), LIT-716–717 (2). Permanent unused gaps: PD-T680–683, PD-N247–250, IDEA-763–765, LIT-718–720. No alias receives two final IDs.

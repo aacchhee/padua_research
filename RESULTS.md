@@ -595,3 +595,22 @@ For normalized product-Chebyshev measure, **PD-T557 — PROVED with explicit LIT
 The general exact-cardinality polylog interpolation problem remains OPEN. Research directions are frozen, with quantitative C5/C6 resume conditions and completed record-only C8 in IDEA-620/IDEA-621/IDEA-623. All108 candidates, aliases and38 newly indexed literature facts are retained.
 
 [Paper](topics/padua-3d-20261106/paper-note-draft.md) · [repository companion](topics/padua-3d-20261106/paper-repository-context.md) · [complete result report](topics/padua-3d-20261106/final-narrowed-report.md) · [final-ID map](topics/padua-3d-20261106/pr-preparation/final-id-map.json) · [accepted audit05](topics/padua-3d-20261106/audit-05.md) · [accepted audit06](topics/padua-3d-20261106/audit-06.md).
+
+## padua-effective-cubature-20261112
+
+For positive product-Chebyshev cubature with all nodes in the closed cube:
+- **PD-T679, PROVED (computer-assisted).** γ_A>1/36. Every rule exact on Π_(2n−1) has N≥37n³/216 for every n≥1, exceeds dimΠ_(n−1) for n≥109, and no positive Padua package (N=binom(n+3,3)) exists for n≥218. This makes the PD-T557 excess explicit.
+  - The certificate re-proves locally, from its coefficients taken as data, the Dostert–Guzmán–de Oliveira Filho–Vallentin octahedron Cohn–Elkies function (LIT-717). There are two independent code paths, both PASS. A cross-agent replay was blocked by HTTP 403 on the third-party input.
+  - PD-T678 gives an explicit compactly supported witness with the same γ>1/36.
+- **PD-T675, PROVED.** A local Delsarte transference bound N≥((E+1)/2)³·D(int 2O)/8 at exactness E.
+- **PD-T676, PROVED with explicit LITERATURE dependency.** With Kolountzakis–Lev–Matolcsi Thm 6.4 (LIT-716), PD-T676 gives a uniform excess N≥(1+γ_A)n³/6 at every n, governed by one Delsarte constant.
+- **PD-T677, PROVED.** γ_A≤1/18. So this route alone decides no package degree n≤109.
+- **PD-N246, PROVED.** The finite torus LPs with M≤8N cannot exclude any n=2…109 (exact lattice witnesses).
+- **Open.** Package existence for 4≤n≤217 remains OPEN.
+- **Measured.** The plain torus LP is indistinguishable from Fisher (MEASURED; its pre-registered KILL was not established, so the route is deferred). The Delsarte torus LP is ≈1.08 at n=5…8; the cube-native LP is ≈1.2 at n=2…4.
+
+**PD-T674, PROVED (assembly).** The Padua Lebesgue constant equals the corner value for 2≤n≤32 and every n≥N_* (existential), with the explicit three-term expansion for n≥max(32,N_*).
+
+All seven candidates (IDEA-756–762) and the literature records LIT-716/717 are retained. The novelty gate was completed retrospectively, and the S4 route attribution is kept.
+
+[Results](results/padua-effective-cubature-20261112.md) · [report](topics/padua-effective-cubature-20261112/report.md) · [final-ID map](topics/padua-effective-cubature-20261112/pr-preparation/final-id-map.json) · [audits 01–03](topics/padua-effective-cubature-20261112/audit-03.md)
