@@ -5,6 +5,7 @@ receipts. Every pass receives the separately trusted compact validate_pass.
 """
 import argparse
 import hashlib
+from collections import OrderedDict
 import json
 import os
 import stat
@@ -183,17 +184,28 @@ def verify(archive, archive_sha):
             need(set(value) == {'bytes', 'sha256'} and type(value['bytes']) is int and value['bytes'] >= 0 and len(value['sha256']) == 64 and all(c in '0123456789abcdef' for c in value['sha256']), 'inventory identity shape')
         for value in files.values():
             need(bundle.getinfo('sha256/' + value['sha256']).file_size == value['bytes'], 'every retained file byte count')
+        cache = OrderedDict(); cache_bytes = 0; budget = 128*1024**2
+        def blob(sha):
+            nonlocal cache_bytes
+            if sha in cache:
+                data = cache.pop(sha); cache[sha] = data; return data
+            data = bundle.read('sha256/' + sha)
+            need(len(data) == bundle.getinfo('sha256/' + sha).file_size and digest(data) == sha, 'archived object identity')
+            if len(data) <= budget:
+                while cache and cache_bytes + len(data) > budget:
+                    cache_bytes -= len(cache.popitem(last=False)[1])
+                cache[sha] = data; cache_bytes += len(data)
+            return data
         # Authenticate every archive object, even files unused by proof parsing.
-        for sha in {v['sha256'] for v in files.values()}:
-            need(digest(bundle.read('sha256/' + sha)) == sha, 'archived object digest')
+        for sha in {v['sha256'] for v in files.values()}: blob(sha)
         def reader(name):
             safe(name)
             if name in manifest:
                 need(name not in files or files[name] == manifest[name], 'no trusted source shadowing')
                 path = R.RELEASE / name if name == 'asset_provenance.json' else R.ROOT / name
                 data = path.read_bytes(); need(row(data) == manifest[name], 'trusted release identity'); return data
-            value = files[name]; data = bundle.read('sha256/' + value['sha256'])
-            need(row(data) == value, 'archive retained identity'); return data
+            value = files[name]; data = blob(value['sha256'])
+            need(len(data) == value['bytes'], 'archive retained byte count'); return data
         result = validate(reader, inventory['root'], inventory['output'], R.read(C.SNAPSHOT))
         need(result == R.strict(reader(inventory['output'] + '/evidence-inventory.json')), 'readback full validation inventory equality')
     print(json.dumps({'status': 'accepted_full_raw_readback_pending_independent_I25_and_audit',
