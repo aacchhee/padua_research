@@ -1,6 +1,6 @@
 # Handoff 37: focused audit of regenerated evidence and public verification kit
 
-- Status: open
+- Status: done in 3ad9beec7f9b5b91c6ef4cf486c86b752b379d94
 - Previous handoff: 36-claude-audit-regenerated-evidence.md (superseded by AC's public-package request; its pending audit is incorporated here)
 - Next agent / model / effort: Claude, Opus 5.5 xhigh; disclose actual dispatch and runtime-unexposed metadata
 - Role: independent auditor; Codex developed the changes
