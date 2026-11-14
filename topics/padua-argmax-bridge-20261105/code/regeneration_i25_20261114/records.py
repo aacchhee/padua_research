@@ -42,12 +42,12 @@ def main():
         if {k:v for k,v in rows[n,'produce'].items() if k not in ['pass','CPU_seconds']}!={k:v for k,v in rows[n,'verify'].items() if k not in ['pass','CPU_seconds']}: raise ValueError('independent pair mismatch '+str(n))
     census=Counter()
     for n in range(320,511):
-        t=data[n,'produce']['tree']['preorder']; census[len(t),sum(c not in 'ab' for c in t)]+=1
+        t=data[n,'produce']['tree']['preorder']; census[len(t),sum(c not in 'ab' for c in t),t.count('f'),data[n,'produce']['norm']['method']]+=1
     minima={}
     for field in ['near_min','far_min','corner_gap','floor_min','M']:
         values=[(Fraction(r[field]),r['n'],r['pass']) for r in rows.values() if r[field] not in [None,'None']]
         m=min(v[0] for v in values); minima[field]={'exact':str(m),'degrees':sorted({n for v,n,mode in values if v==m})}
-    result={'certificates':len(rows),'degrees':471,'new_range_tree_node_leaf_census':[{'nodes':nodes,'leaves':leaves,'degrees':count} for (nodes,leaves),count in sorted(census.items())],
+    result={'certificates':len(rows),'degrees':471,'new_range_tree_node_leaf_census':[{'nodes':nodes,'leaves':leaves,'analytic_far_leaves':far,'norm_method':method,'degrees':count} for (nodes,leaves,far,method),count in sorted(census.items())],
             'primary_fresh_scientific_pairs_equal':471,'independent_primary_fresh_pairs_equal':471,'minima':minima,
             'S_checks':sum(r['S_keys'] for r in rows.values()),'distinct_S_keys':sum(r['S_keys'] for (n,m),r in rows.items() if m=='produce'),
             'actual_lambda_checks':sum(r['lambda_keys'] for r in rows.values()),'distinct_actual_lambda_keys':sum(r['lambda_keys'] for (n,m),r in rows.items() if m=='produce'),
