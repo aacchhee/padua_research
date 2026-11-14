@@ -42,7 +42,7 @@ Each pack's `VERIFICATION-2026-11-14.log` is the console log of the **documented
   - the regeneration reproduced all three source vectors, payloads and exact norms, and the producer reports a negative sign each time;
   - exit 0.
 
-Copies of both logs and the environment are in [../evidence/verify-runs/](../evidence/verify-runs/). The outcome logic is tested separately, with stubbed programs, by [../tools/verify_controls.py](../tools/verify_controls.py): 8 scenarios, all passing ([../evidence/verify-controls/](../evidence/verify-controls/)). After unzipping, each pack's `MANIFEST-SHA256.txt` was checked.
+Each pack contains its console log as `VERIFICATION-2026-11-14.log`; the [environment record](../evidence/verify-runs/ENVIRONMENT.txt) is in Git. The outcome logic is tested separately, with stubbed programs, by [../tools/verify_controls.py](../tools/verify_controls.py): 8 scenarios, all passing ([../evidence/verify-controls/](../evidence/verify-controls/)). After unzipping, each pack's `MANIFEST-SHA256.txt` was checked.
 
 History: three earlier deliveries on 2026-11-14 were replaced in AC's folder by the files above. Their contents are superseded:
 1. without a LICENSE (`04a6aed5…`, `03bf1e94…`);
