@@ -1,6 +1,6 @@
 # Handoff 35: answer audit-06 (wording batch), then wait on AC's open decisions
 
-- Status: open
+- Status: done in 8b1a6b5301c37a9fe5cfd966454f7df4aa9600bb
 - Previous handoff: 34-claude-audit-response05.md
 - Next agent / model / effort: Codex, gpt-6-astra high coordinator; Sol medium for TeX edits, a distinct Astra high agent for the focused re-check.
 - Role: orchestrator and developer
