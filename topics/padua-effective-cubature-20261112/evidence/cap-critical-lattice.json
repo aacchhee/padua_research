@@ -1,0 +1,31 @@
+{
+ "schema": "cap-critical-lattice-v1",
+ "code_sha256": "0516daa4af249dfe23f0861f3c0bc9eaba12b09330bd4d9dd9458b519b9a2f44",
+ "command": "topics/padua-effective-cubature-20261112/code/cap_critical_lattice.py topics/padua-effective-cubature-20261112/evidence/cap-critical-lattice.json",
+ "basis_columns": [
+  [
+   "2/3",
+   "1",
+   "1/3"
+  ],
+  [
+   "-1/3",
+   "-2/3",
+   "1"
+  ],
+  [
+   "-1",
+   "1/3",
+   "-2/3"
+  ]
+ ],
+ "det": "-38/27",
+ "abs_det": "38/27",
+ "enumeration_radius": 3,
+ "coefficient_bound": "3",
+ "min_nonzero_l1": "2",
+ "number_of_minimal_vectors": 14,
+ "verdict": "PASS",
+ "density_of_O_packing": "18/19",
+ "delsarte_cap_over_volume": "19/18"
+}
