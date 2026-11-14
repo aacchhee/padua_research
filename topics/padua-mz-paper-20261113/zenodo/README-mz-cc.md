@@ -40,11 +40,17 @@ The finite reduction is in Appendix C. The certified enclosure is 1.004436918864
 
 ## How to verify
 
+Run these from the directory this README is in:
+
 ```sh
 python3.12 -m venv venv && venv/bin/pip install -r requirements.txt
-PY=venv/bin/python bash verify.sh            # about 1 minute; ends with "ALL CHECKS AGREE"
+PY=venv/bin/python bash verify.sh            # about 1 minute
 sha256sum -c MANIFEST-SHA256.txt             # integrity of the archive itself
 ```
+
+`PY` may be a relative path like the one above (it is resolved against the directory you run the command from), an absolute path, or a command on your `PATH`; the default is `python3`.
+
+The last line of the output is either `ALL REQUIRED CHECKS AGREE` (exit status 0) or `REQUIRED CHECKS FAILED` (exit status 1). The lines starting with `DIFFER` or `FAILED` above it say which check failed.
 
 Run BLAS single-threaded (`verify.sh` sets this). The certificate uses exact or outward-rounded arithmetic, so its result does not depend on the platform. Table 1 is floating-point and was reproduced bit-for-bit on Linux x86-64 with the pinned stack.
 

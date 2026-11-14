@@ -61,18 +61,31 @@ The P2 runs at m = 3000 are long and are not part of `verify.sh`. Their commands
 
 ## How to verify
 
+Run these from the directory this README is in:
+
 ```sh
 python3.12 -m venv venv && venv/bin/pip install -r requirements.txt   # plus: a C compiler and libgmp-dev
-PY=venv/bin/python bash verify.sh                  # about 20 minutes (2 cores); ends with "ALL CHECKS AGREE"
-PY=venv/bin/python bash verify.sh out --regenerate # also rebuilds the witnesses from scratch (+5 minutes)
+PY=venv/bin/python bash verify.sh                      # required checks, about 20 minutes on 2 cores
+PY=venv/bin/python bash verify.sh out --regenerate     # the same, then the optional regeneration (+5 minutes)
 sha256sum -c MANIFEST-SHA256.txt
 ```
 
-`verify.sh` does the following:
-1. Checks the witness payloads against the pinned identities.
-2. Replays the exact producer on each archived witness and runs the independent checker. Both must report a negative energy, and their receipts must agree with the committed ones.
-3. Re-runs all six bracket certificates and both rectangle instances.
-4. Repeats measurement item (1).
+`PY` may be a relative path like the one above (it is resolved against the directory you run the command from), an absolute path, or a command on your `PATH`; the default is `python3`. Output goes to `verify-out/`, or to the directory given (`out` above).
+
+How to read the outcome:
+- **`ALL REQUIRED CHECKS AGREE`** (exit status 0): every replay of the archived certificates and every measurement comparison agrees with the committed receipts.
+- **`REQUIRED CHECKS FAILED`** (exit status 1): at least one did not. The lines starting with `DIFFER` or `FAILED` say which.
+- **With `--regenerate`, one more line follows:**
+  - `OPTIONAL REGENERATION REPRODUCED THE ARCHIVED WITNESSES`: the regenerated payloads and exact norms equal the archived ones.
+  - `OPTIONAL REGENERATION DID NOT REPRODUCE THE ARCHIVED WITNESSES` (exit status 2 when the required checks agree): they do not.
+
+The regeneration starts with a floating-point eigensolver, so on another platform its vectors may differ. Such a difference is reported as a `NOTE`, not a failure. A differing vector usually also gives a differing witness, for which the exact producer reports the sign of the new trial quotient. None of this affects the archived certificates. Those are replayed exactly in the required checks, and the certificate does not rely on how the witness was found.
+
+The required checks:
+1. Check the witness payloads against the pinned identities.
+2. Replay the exact producer on each archived witness and run the independent checker. Both must report a negative energy, and their receipts must agree with the committed ones.
+3. Re-run all six bracket certificates and both rectangle instances.
+4. Repeat measurement item (1).
 
 ## Provenance
 

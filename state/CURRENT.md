@@ -336,6 +336,5 @@ Scope addendum,2026-11-12: the earlier charter paragraph describing3D Padua as o
   - PD-T684 (PROVED): sharp endpoint defect (log N)²(1−η_N) → π⁴/8, with 1−η_N = λ₋ for N ≥ 57; κ₂/(log N)² → 8Λ_edge/π⁴; interpolation-norm limit 2√2/π²; uniform CC hyperinterpolation factor (1+√(5/3))√2.
   - PD-T685 (PROVED): ‖B‖ ≥ 0.02964… and c₊ ≥ 0.01277…, analytic lower bounds only.
 - **Unchanged OPEN items.** The decimal values of Λ_edge (PD-T027) and of c_± (PD-T381) stay OPEN.
-- **Audit.** Codex audit-01 is answered by response-01 (wording and metadata only).
-- **Evidence.** The PD-T376 witness arrays were regenerated on 2026-11-14 with byte-identical payloads and norms. One Zenodo pack per paper is ready, verified and delivered to AC. AC deposits them.
-- **Reserved for AC.** Authorship, declarations, commit hash, the Zenodo deposit and submission. Companions are deferred until AC confirms the frozen texts. Only AC merges.
+- **Audit.** [Audit-01](../topics/padua-mz-paper-20261113/audit-01.md) found no unsupported analytic theorem; [response-01](../topics/padua-mz-paper-20261113/response-01.md) fixed its wording and metadata findings.
+- **Evidence.** The PD-T376 witness arrays and exact norms were regenerated on 2026-11-14 from the frozen commit with byte-identical payloads, and were independently replayed. Each paper's evidence archive (code, receipts, data outside Git, verification script; AGPL-3.0-or-later) is prepared for deposit: [zenodo/README.md](../topics/padua-mz-paper-20261113/zenodo/README.md).

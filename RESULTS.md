@@ -615,7 +615,7 @@ All seven candidates (IDEA-756–762) and the literature records LIT-716/717 are
 
 [Results](results/padua-effective-cubature-20261112.md) · [report](topics/padua-effective-cubature-20261112/report.md) · [final-ID map](topics/padua-effective-cubature-20261112/pr-preparation/final-id-map.json) · [audits 01–03](topics/padua-effective-cubature-20261112/audit-03.md)
 
-## padua-mz-paper-20261113 — MZ-CC and MZ-SP manuscripts (PR #35, draft)
+## padua-mz-paper-20261113 — MZ-CC and MZ-SP manuscripts (PR #35)
 
 - **Split.** The MZ draft is now two complete internal drafts with frozen statement numbers:
   - MZ-CC (SIAM J. Numer. Anal., 32 pp.);
@@ -628,9 +628,8 @@ All seven candidates (IDEA-756–762) and the literature records LIT-716/717 are
   - Interpolation norm ~ (2√2/π²) log N.
   - CC hyperinterpolation factor (1+√(5/3))√2.
 - **PD-T685, PROVED.** ‖B‖ ≥ 0.02964… and c₊ ≥ 0.01277…; lower bounds only.
-- **Audit.** Codex audit-01 is answered by response-01 (wording and metadata only); the readiness check is pending.
-- **Evidence.** The PD-T376 witness arrays were regenerated with byte-identical payloads. One verified Zenodo pack per paper was delivered to AC; it is not deposited yet.
-- **Open for AC.** Upload the packs, then fill in the DOIs, the commit hash and the other placeholders.
+- **Audit.** Codex [audit-01](topics/padua-mz-paper-20261113/audit-01.md) found no unsupported theorem; [response-01](topics/padua-mz-paper-20261113/response-01.md) fixed its wording and metadata findings.
+- **Evidence.** The PD-T376 witness arrays and exact norms were regenerated from the frozen commit with byte-identical payloads, and were independently replayed. Each paper has an evidence archive (code, receipts, data outside Git and a verification script) prepared for deposit; see [zenodo/README.md](topics/padua-mz-paper-20261113/zenodo/README.md).
 
 [Results](results/padua-mz-paper-20261113.md) · [report](topics/padua-mz-paper-20261113/report.md) · [final-ID map](topics/padua-mz-paper-20261113/pr-preparation/final-id-map.json)
 

@@ -230,6 +230,22 @@ Claude, claude-opus-5-5 (configured xhigh).
 - **Access limitation and provenance boundary:** the user uploaded both delivered ZIPs. CC is independently read byte-for-byte. The SP ZIP exceeds the executor transfer limit of 32 MiB; its original compressed bytes, delivered measurement JSON metadata and delivered console log were not read. The handoff-authorized fallback reconstructs the archive from pinned source and independently regenerated exact inputs. The fallback identity is separate, with a fresh verification log; no original-SP-ZIP hash or new physical-device delivery is asserted.
 - Fresh builds remain 32/50 pages, with no final warnings or Type 3 fonts. All actual compiled label values equal the earlier audit builds, and the frozen ordinary tables match 52/56 entries. Readiness output: `36838f501c8d69c5f3f580285d5e609b40a087c1`; handoff 08 is closed there, and [handoff 09](handoffs/09-verifier-response.md) returns the fixes to Claude for a bounded follow-up rather than another mathematical audit.
 
+## 2026-11-14 — Claude, claude-opus-5-5 (configured xhigh) — response to readiness-01 (P1, P2, R1)
+
+- Rules `c0e57a9`, unchanged; input `58697024` (handoff 09). [Response](response-readiness-01.md).
+- **P1.** `verify-mz-sp.sh` separates the required checks, which alone decide the main verdict, from the optional `--regenerate` diagnostics:
+  - a differing source vector is a NOTE;
+  - a differing payload or exact norm is a DIFFER, giving its own summary line and exit status 2.
+  - A program that exits nonzero now counts as a failure through a `run` helper; the scripts no longer use `set -e`.
+
+  CC uses the same helper and wording. Arguments may come in any order.
+- **P2.** A path-like `PY` is resolved against the invocation directory before `cd repository`; the READMEs document the three forms of `PY` and how to read the outcome.
+- **Controls.** [tools/verify_controls.py](tools/verify_controls.py) runs the unmodified `verify.sh` with stubbed numerical programs and the documented relative virtualenv. All 8 scenarios pass ([evidence/verify-controls/](evidence/verify-controls/)): agree, notes only, regenerated-payload mismatch (exit 2), required mismatch (exit 1), producer crash (exit 1).
+- **Actual documented commands** in fresh pack copies, each with a fresh venv installed by `pip install -r requirements.txt` ([evidence/verify-runs/](evidence/verify-runs/)):
+  - CC: 4/4 agree, exit 0;
+  - SP with `--regenerate`: 25 required checks agree, plus the three vectors, payloads and norms reproduced with negative signs, exit 0.
+- **R1.** Process and AC-task clauses are removed from this topic's sections of RESULTS.md, state/CURRENT.md and PAPER_MAP.md. Scientific content, OPEN items, audit links and evidence facts are kept.
+
 ## Runs needed
 
 - Claude response to readiness P1/P2/R1; follow the next open handoff. Then a focused check of the changed verifier outcomes, entrypoint commands and replacement pack identities; no repeated proof audit is indicated.

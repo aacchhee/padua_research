@@ -1,0 +1,143 @@
+{
+ "scope": "verifier outcome controls with stubbed numerical programs; not certificate runs",
+ "interpreter_invocation": "PY=venv/bin/python bash verify.sh ... from the pack root",
+ "results": [
+  {
+   "pack": "mz-sp",
+   "mode": "agree",
+   "args": [
+    "out"
+   ],
+   "exit": 0,
+   "expected_exit": 0,
+   "summary": [
+    "ALL REQUIRED CHECKS AGREE"
+   ],
+   "expected_summary": [
+    "ALL REQUIRED CHECKS AGREE"
+   ],
+   "pass_": true,
+   "differ_lines": [],
+   "stderr_tail": ""
+  },
+  {
+   "pack": "mz-sp",
+   "mode": "agree",
+   "args": [
+    "out",
+    "--regenerate"
+   ],
+   "exit": 0,
+   "expected_exit": 0,
+   "summary": [
+    "ALL REQUIRED CHECKS AGREE",
+    "OPTIONAL REGENERATION REPRODUCED THE ARCHIVED WITNESSES (0 source-vector difference(s) noted)"
+   ],
+   "expected_summary": [
+    "ALL REQUIRED CHECKS AGREE",
+    "OPTIONAL REGENERATION REPRODUCED THE ARCHIVED WITNESSES (0 source-vector difference(s) noted)"
+   ],
+   "pass_": true,
+   "differ_lines": [],
+   "stderr_tail": ""
+  },
+  {
+   "pack": "mz-sp",
+   "mode": "vector_differs",
+   "args": [
+    "out",
+    "--regenerate"
+   ],
+   "exit": 0,
+   "expected_exit": 0,
+   "summary": [
+    "ALL REQUIRED CHECKS AGREE",
+    "OPTIONAL REGENERATION REPRODUCED THE ARCHIVED WITNESSES (3 source-vector difference(s) noted)"
+   ],
+   "expected_summary": [
+    "ALL REQUIRED CHECKS AGREE",
+    "OPTIONAL REGENERATION REPRODUCED THE ARCHIVED WITNESSES (3 source-vector difference(s) noted)"
+   ],
+   "pass_": true,
+   "differ_lines": [
+    "NOTE   regenerated source vector m=1101 differs from the archived one (floating point, platform-dependent; not a premise of any certificate)",
+    "NOTE   regenerated source vector m=1240 differs from the archived one (floating point, platform-dependent; not a premise of any certificate)",
+    "NOTE   regenerated source vector m=1600 differs from the archived one (floating point, platform-dependent; not a premise of any certificate)"
+   ],
+   "stderr_tail": ""
+  },
+  {
+   "pack": "mz-sp",
+   "mode": "payload_differs",
+   "args": [
+    "out",
+    "--regenerate"
+   ],
+   "exit": 2,
+   "expected_exit": 2,
+   "summary": [
+    "ALL REQUIRED CHECKS AGREE",
+    "OPTIONAL REGENERATION DID NOT REPRODUCE THE ARCHIVED WITNESSES (see above; the archived certificates are unaffected)"
+   ],
+   "expected_summary": [
+    "ALL REQUIRED CHECKS AGREE",
+    "OPTIONAL REGENERATION DID NOT REPRODUCE THE ARCHIVED WITNESSES (see above; the archived certificates are unaffected)"
+   ],
+   "pass_": true,
+   "differ_lines": [
+    "NOTE   regenerated source vector m=1101 differs from the archived one (floating point, platform-dependent; not a premise of any certificate)",
+    "DIFFER regenerated witness payload or exact norm m=1101 differs from the archived one",
+    "NOTE   regenerated source vector m=1240 differs from the archived one (floating point, platform-dependent; not a premise of any certificate)",
+    "DIFFER regenerated witness payload or exact norm m=1240 differs from the archived one",
+    "NOTE   regenerated source vector m=1600 differs from the archived one (floating point, platform-dependent; not a premise of any certificate)",
+    "DIFFER regenerated witness payload or exact norm m=1600 differs from the archived one"
+   ],
+   "stderr_tail": ""
+  },
+  {
+   "pack": "mz-sp",
+   "mode": "required_fails",
+   "args": [
+    "out",
+    "--regenerate"
+   ],
+   "exit": 1,
+   "expected_exit": 1,
+   "summary": [
+    "REQUIRED CHECKS FAILED (see DIFFER/FAILED lines above)",
+    "OPTIONAL REGENERATION REPRODUCED THE ARCHIVED WITNESSES (0 source-vector difference(s) noted)"
+   ],
+   "expected_summary": [
+    "REQUIRED CHECKS FAILED (see DIFFER/FAILED lines above)",
+    "OPTIONAL REGENERATION REPRODUCED THE ARCHIVED WITNESSES (0 source-vector difference(s) noted)"
+   ],
+   "pass_": true,
+   "differ_lines": [
+    "DIFFER /tmp/mz-verify-control-mprm81sy/padua-mz-sp-evidence/out/independent-m1240.json vs topics/padua-mz-cleanup-20261105/evidence/witness-independent-m1240.json"
+   ],
+   "stderr_tail": ""
+  },
+  {
+   "pack": "mz-sp",
+   "mode": "producer_crash",
+   "args": [
+    "out"
+   ],
+   "exit": 1,
+   "expected_exit": 1,
+   "summary": [
+    "REQUIRED CHECKS FAILED (see DIFFER/FAILED lines above)"
+   ],
+   "expected_summary": [
+    "REQUIRED CHECKS FAILED (see DIFFER/FAILED lines above)"
+   ],
+   "pass_": true,
+   "differ_lines": [
+    "FAILED (exit 3; log /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/out/producer-m1101.log): /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/venv/bin/python topics/padua-mz-cleanup-20261105/code/rigorous_witness.py --m 1101 --witness /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/data/witnesses/cert-m1101/witness.json.gz --scratch /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/out/replay-m1101 --output /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/out/producer-m1101.json",
+    "FAILED (exit 3; log /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/out/producer-m1240.log): /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/venv/bin/python topics/padua-mz-cleanup-20261105/code/rigorous_witness.py --m 1240 --witness /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/data/witnesses/cert-m1240/witness.json.gz --scratch /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/out/replay-m1240 --output /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/out/producer-m1240.json",
+    "FAILED (exit 3; log /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/out/producer-m1600.log): /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/venv/bin/python topics/padua-mz-cleanup-20261105/code/rigorous_witness.py --m 1600 --witness /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/data/witnesses/cert-m1600/witness.json.gz --scratch /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/out/replay-m1600 --output /tmp/mz-verify-control-z6ynij55/padua-mz-sp-evidence/out/producer-m1600.json"
+   ],
+   "stderr_tail": ""
+  }
+ ]
+}
