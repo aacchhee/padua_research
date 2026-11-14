@@ -317,7 +317,7 @@ Scope addendum,2026-11-12: the earlier charter paragraph describing3D Padua as o
 
 ## Effective cube-cubature excess and Padua Lebesgue corollary — PR34, 2026-11-14
 
-[Results](../results/padua-effective-cubature-20261112.md). Cubature statements in this section use normalized product-Chebyshev measure with all nodes in the closed cube [−1,1]³.
+[Results](../results/padua-effective-cubature-20261112.md). Cubature statements in this section use positive weights and normalized product-Chebyshev measure with all nodes in the closed cube [−1,1]³.
 - **Explicit excess.** PD-T679 (PROVED, computer-assisted) makes the PD-T557 excess explicit: γ_A>1/36, N≥37n³/216 at every n for rules exact on Π_(2n−1), no positive Padua package for n≥218. PD-T678 supplies a compactly supported witness.
 - **Supporting results.** PD-T675 (Delsarte transference) and PD-T676 (uniform form, LITERATURE dependency LIT-716) support it. PD-T677 caps this route at γ≤1/18.
 - **Finite range.** PD-N246 rules out the finite torus LP with M≤8N on n=2…109.
