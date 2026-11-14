@@ -288,3 +288,15 @@ No unavailable historical archive is a dependency of the current paper.
 [Current record](../topics/padua-argmax-bridge-20261105/regeneration-20261114.md)
 and [completed supplementary review](../topics/padua-argmax-bridge-20261105/supplementary-regeneration-review-20261114.md)
 state exact evidence and implementation limits.
+
+## Dated status — 2026-11-14 (Claude audit-07)
+
+The focused Claude audit ([audit-07](../topics/padua-argmax-bridge-20261105/audit-07.md))
+accepts the regenerated evidence and the public verification kit's data and
+replays (independent census, 10 of 471 phase degrees and polynomial degrees
+2, 9, 16, 17, 33 replayed, fresh builds 59/152 pages with text equal to the
+shipped PDFs). No theorem statement, range or premise changed. One
+non-mathematical MAJOR finding remains: the manuscripts' data statements
+describe a deposit different from the public kit. AC decisions (package
+naming, path disclosure, budget, DOI, declarations) remain open; no
+readiness is offered.

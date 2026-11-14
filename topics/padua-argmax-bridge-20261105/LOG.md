@@ -3503,3 +3503,37 @@ manifest 16,043; all newly added source/receipt files respect the individual
 limit. AC's budget/publication decisions are not inferred from packaging.
 
 Next: [handoff 37 — focused audit including public verification kit](handoffs/37-claude-audit-public-reproduction.md).
+
+## 2026-11-14 — Focused Claude audit-07 of the regenerated evidence and the public verification kit (handoff 37)
+
+Orchestrator `claude-sonnet-5-5`; three independent Claude Opus 5.5 reviewers
+(instructed xhigh; runtime effort not observable). Rules read at `d6dd673`,
+unchanged from `5b1a494`. AC supplied the exact public ZIP in the session
+(SHA256 `15885d34…2ee036`, 5,138,944 B, recomputed, 1,019 files); it is not in
+Git and the native/preservation archives were not reachable (recorded, not
+re-examined). Report: [audit-07](audit-07.md) with E7/P7/M7 reports and scripts.
+
+Result: accepted for the mathematics, the regenerated evidence and the public
+replays; no BLOCKING; one MAJOR publication-coherence finding (P7-01 = E7-01
+= M7-01: both data statements describe a package with a source snapshot,
+native outputs and runtime dependencies, which the public kit does not
+contain). Independent census PASS (942 + 39 inputs, hashes, expected rows,
+mapped sources); public `verify.py` integrity, quick command, 7 further
+degrees (14 records), polynomial 9 and 33, controls and analytic checks PASS
+on Python 3.13.18/NumPy 2.5.3; 31 negative controls behave as the README
+states (tampered endpoints rejected by replay; consistently refreshed
+checksum/manifest swaps accepted by design); manuscripts differ from audit-06
+only in wording (two numbered blocks by one word and one comma), builds
+59/152 pp, text equals the shipped PDFs, correspondence 19/86/120 and 7
+baseline controls PASS. Budget reproduced exactly; the sentences "neither
+branch alone exceeds the cap" and "all new tracked source/receipt files are
+under 16 KiB" are corrected by dated addenda (the topic tree including main
+counts 11,841,948 B; `delivery.py` is 19,169 B).
+
+In-place MINOR fixes (separate commit `820fe13`): pr-update, deposit README,
+both manuscript READMEs, companion BUILD.md, campaign README and the
+comparison wording in `regeneration-20261114.md`, each by dated note. Open
+with AC: which package(s) the data statements name; disclosure of absolute
+paths and internal process text inside the pinned public inputs (P7-02);
+global budget; DOI/AI declaration/ORCID/draft marker. Next:
+[handoff 38](handoffs/38-answer-audit07.md).
