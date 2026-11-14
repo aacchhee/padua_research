@@ -258,6 +258,17 @@ Claude, claude-opus-5-5 (configured xhigh).
 - One MINOR index-only log-location correction was made separately at `6d3307f9`: console logs are inside the packs, while the environment record is in Git. No packaged file or delivered archive identity changes. The focused report/checker/receipt are in `readiness-02.md` and `audit-support/readiness02-*`.
 - Agent work is ready for review. Output: `a087aadee3a28a7e2fff2fb513949a1c643aaa57`; handoff 10 is closed there and [handoff 11](handoffs/11-owner-finalization.md) records the remaining AC-controlled finalization. AC's deposit, placeholders/frozen-text confirmation, SIAM repository-file decision, any subsequent companion instruction and merge remain reserved. Only AC merges.
 
+## 2026-11-14 — Claude, claude-opus-5-5 (configured xhigh) — handoff 11 continuation; no new AC decision
+
+- Fetched `b0810f2`. Readiness-02 PASSES the agent work (P1, P2, R1 accepted) and PR35 is ready for review. Handoff 11 waits on AC's publication decisions.
+- Checked base and allocation state: main is still `99a9b1d`; PR27 is unchanged since readiness-02 (`50070f5`). No refresh is needed.
+- **Report §5 item answered (no manuscript change):** which Padua rule ASV use. See [asv-padua-rule.md](asv-padua-rule.md).
+  - The paper, §3.2 p. 738, cites only Padua2DM.
+  - The authors' published code (github alvisesommariva/MZ, `40fe3cd`) uses the interpolatory Padua rule on the j+k-odd family.
+  - A float port is exact on P_m with two negative weights, and its spectra at m = 10 and 20 match our Q^P_m to about 1e−14; the two families are reflections of each other.
+  - Dropping the §8.1 conditional is left to AC; a suggested sentence is in the file.
+- Handoff 11 stays open for AC's decisions.
+
 ## Runs needed
 
 - No further audit or scientific rerun is requested for the accepted scope. A material change requires only the proportionate focused check defined by WORKFLOW.
