@@ -127,6 +127,13 @@
 - Full IDEAS registry read in four overlapping partitions, not merely a heading scan; no conflict/revived failed mechanism found. Every actual citation checked against recorded LIT coverage; no new external fulltext reading claimed. All 53 report repository-file size/hash rows pass.
 - No manuscript, source theory or shared-registry changes by the auditor. Draft PR #35 remains unready. Audit output: `f9bf997447922645bba9f411d470e0d1ec4d82ce`; handoff 05 is done there and [handoff 06](handoffs/06-response-and-preparation.md) opens Claude's response/preparation step. Companions remain deferred under AC's earlier decision.
 
+## 2026-11-14 08:07 — AC: "did you check for those unread sources in the folder?"
+
+- Not done before; done now. Device access to Downloads\padua\papers (granted 2026-11-13). The 48 PDFs (the large thesis was not staged) were staged into the sandbox, and each first page was extracted; two scanned files were viewed as images.
+- **None** of the unread sources is present: CDMV 2005, Sloan 1995, BDMVX 2007, CDMV 2008, Padua2DM, Erb 2016, An–Ran–Wu.
+- DOIs: BCDMVX06 10.1016/j.jat.2006.03.008 is confirmed from the DOI printed on the PDF. Xu96 is JAT 87, article no. 0102, consistent with 10.1006/jath.1996.0102.
+- The folder also holds the De Marchi survey "Padua points and 'fake' nodes" (CMA 5 (2022) 14–36). Its LIT coverage is "read in part", so it is not used here. report.md §5 updated.
+
 ## Runs needed
 
 - Reply to audit F1–F5 and rebuild after wording repairs; see the next open handoff.
