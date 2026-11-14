@@ -175,7 +175,7 @@
    "final": "IDEA-773",
    "label": "X2-C3",
    "title": "Sharp MP constant lim Lambda/n^2 = c* and argmax {(+-1,1)}",
-   "disposition": "PARTIAL progress: corner constant PROVED (PD-T702); argmax and limit OPEN (PD-T705)"
+   "disposition": "partial progress without a PARTIAL status: corner constant PROVED (PD-T702); argmax and limit OPEN (PD-T705)"
   },
   {
    "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-48",

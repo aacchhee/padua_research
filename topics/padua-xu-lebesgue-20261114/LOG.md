@@ -110,3 +110,11 @@
 - [response-01.md](response-01.md) and the non-material MINOR fixes are in `80a744e`. The edits were drafted by a Sonnet 5.5 high subagent; the orchestrator reviewed the diff (deletions were stale process text only) and the new cyclotomic proof.
 - Registry edits and final IDs are in `0e97396`: PD-T690–709, PD-N251–253, IDEA-766–779, LIT-721–731. Drafted by Sonnet 5.5 high. The orchestrator's review fixed table pipe escaping in two PROOF_STATUS rows and resolved the BCDMV Table 7 locator to p. 320; audit-01's p. 323 is a slip.
 - The PR #36 body is updated. Handoff 03: done in `0e97396`. [Handoff 04](handoffs/04-readiness.md), the readiness check, is open.
+
+## 2026-11-14 — handoff 04 started (Codex orchestrator)
+
+- Rules read at `b361e675e5e77c2b8829f2af8a08d17469229c34`: AGENTS.md, agents/WORKFLOW.md and agents/codex/CODEX.md. Fresh clone; fetched main `99a9b1d161e41a80c4fd425b63022c681fbe8779` and topic `b361e675e5e77c2b8829f2af8a08d17469229c34`; both unchanged. No base reconciliation needed.
+- Handoff 04 requires Claude Opus 5.5 high, unavailable in this runtime. Before audit work, AC explicitly approved the proposed substitution: **“Use GPT-6 Astra high.”** A fresh `gpt-6-astra` high subagent, with no inherited conversation, performs readiness. The orchestrator relays and commits its report, owns Git and PR metadata, and does not approve its own development. Handoff 04’s instruction body is preserved.
+- Orchestrator model/effort identifiers are not exposed by this runtime; no more specific model trailer is inferred. Readiness auditor: `gpt-6-astra` high (explicit tool selection).
+- Scope: response and registry diffs, current reservation union and PR metadata; no new ideas or novelty claim. No new novelty gate is required for this bounded readiness step.
+- Readiness MINOR R-m1 corrected by the orchestrator: IDEA-773’s final-map disposition now says “partial progress without a PARTIAL status”, matching the canonical registry; PD-T705 remains OPEN. Auditor reviewed the one-line diff and classified it as non-material wording alignment. PR metadata now carries the exact PD-T708 scope, clickable allocation ledger, approved model and full base/input head.
