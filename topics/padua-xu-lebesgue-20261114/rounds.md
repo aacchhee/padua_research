@@ -1,0 +1,14 @@
+# Round ledger — padua-xu-lebesgue-20261114
+
+A round ends with a pushed LOG entry. Budgets (BRIEF §4, handoff 01): up to 10 rounds for X1 and up to 10 for X2; two consecutive rounds without recorded progress end a direction. The researcher model of each round is recorded here **before** the round starts, with a one-line reason when it is the Opus downgrade. Independent checks, technical fixes, replays and certificate code (Sonnet) consume no round.
+
+## Session 1 (2026-11-14), handoff 01. Orchestrator: Claude Opus 5.5 (thread model; see LOG, model check)
+
+| Round | Direction | Researcher model | Reason / scope | Outcome |
+|---|---|---|---|---|
+| 0 | setup (neither) | Opus 5.5 (orchestrator) + Opus 5.5 literature readers | BRIEF §4 downgrade: literature and bookkeeping only (rules, LIT reads, novelty gates, gates.md) | literature verdicts recorded (`literature-xu-mp.md` §3); novelty gates pending |
+| X1-1 | X1 | Opus 5.5 (orchestrator) supervising; code Sonnet 5.5 high | Downgrade: G0 implementation and G1 numerical screen only, no proof work | G0 PASS; G1 supports vertex conjecture n ≤ 60 (MEASURED) |
+| X2-1 | X2 | Opus 5.5 (orchestrator) supervising; code Sonnet 5.5 high | Downgrade: G0 implementation, G1-MP screen and C-MP corner checks only | G0 PASS; C-MP asymmetry certified n ≤ 30; argmax (±1,1) n ≤ 60 (MEASURED) |
+| X2-2 | X2 | **Fable 5.2 xhigh** (subagent) | Proof round: exact corner values (λ(±1,−1) = n+1; closed form at (±1,1)) and the sharp constant lim λ_n(1,1)/n²: genuine asymptotic analysis of a singular lattice sum, so no downgrade | developer PROVED (audit pending): X2-21 kernel, X2-22 λ(±1,−1)=n+1, X2-23 closed form at (±1,1), X2-24, X2-25 λ(1,1)=c*(n+5/2)²−(n+1)+O(log²n) with c* given by an explicit convergent integral/series, X2-26 Λ>c*n²; PD-N X2-N29 (BBDM symmetry false), X2-N30 (no vertex value equals dim); X2-27 MEASURED; argmax X2-28 OPEN |
+| X2-3 | X2 | **Fable 5.2 xhigh** (subagent) | Argmax at (±1,1): local strict maximum (P1), scaling profiles with error bounds, and lim Λ_n/n² = c* (P2–P3), toward an eventual/all-n argmax. Localization with new profiles, so no downgrade | progress, target still OPEN: X2-31 first variation (PROVED), X2-32 strict local max at (±1,1) for even n ≤ 3000 (PROVED computer-assisted; independent rerun pending), X2-33 far-field localization for every n (PROVED), X2-34 translation formula (PROVED tool), X2-N35 (MEASURED negative: zero shift not maximal). Argmax and lim Λ/n² = c* OPEN; plan W1–W3 and P1-tail in the X2-28 addendum |
+| X1-2 | X1 | **Fable 5.2 xhigh** (subagent) | Proof round: novelty kill test vs Padua corner values, closed form of λ^Xu_n at the vertices, sharp expansion (G2); new kernel, so no downgrade | developer PROVED (audit pending): tensor lift X1-01, Λ^Xu_n = L_n² (X1-04), argmax = V* for every n ≥ 2 (X1-05), expansion (X1-07); X1-08 MEASURED. The researcher recommends no further X1 Fable round |
