@@ -1,7 +1,7 @@
 # MZ paper finalization (MZ-CC and MZ-SP): log
 
 - Branch: `claude/padua-mz-paper-20261113` · Base: main `b5388c2` · Developer: Claude · Auditor: Codex (gpt-6-astra)
-- Draft PR #35 · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Stage: AUDIT pending · Open handoff: [handoffs/05-audit.md](handoffs/05-audit.md) (04 done; 01–03 superseded)
+- Draft PR #35 · Next: `Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.` · Stage: WORK (audit findings) · Audit: [audit-01.md](audit-01.md); handoff transition is recorded below.
 - Reserved final-ID ranges: none (no new mathematics expected).
 - Decided by AC: venues (MZ-CC SINUM, MZ-SP JAT); Zenodo later; companion = AC-only reading aid, arXiv and journal versions identical (2026-11-13).
 
@@ -118,6 +118,16 @@
 - Companions (AC's rules) are deferred until after the audit and AC's confirmation of the frozen texts.
 - Handoff 04 done; [handoff 05](handoffs/05-audit.md) opens the single substantive Codex audit.
 
+## 2026-11-14 — Codex, gpt-6-astra high — substantive independent audit
+
+- Rules/input head: `be28d3267bf6117878190b10f2d29840e524eac7`; fetched main/base `b5388c25a2a5ccb8d0faf816ab87023cf347bcd3` is already an ancestor. Role: independent auditor of Claude development. Supplementary disjoint mathematical, citation and complete registry reviews were delegated under WORKFLOW; only this orchestrator controls Git. Configured model/effort are recorded; runtime serving metadata are not separately exposed.
+- [Audit 01](audit-01.md): return to WORK with two MAJOR and three MINOR finding groups. No unsupported analytic theorem found; both new provisional consequence proofs pass. Major findings concern unsupported archive availability and an ambiguous transfer of a trial-quotient interval to a measured minimum. Minor findings concern a signed supremum sentence, notation and stale correspondence/check metadata. The report preserves the subreviewers' severity disagreement on the measured parenthesis.
+- Fresh reruns pass: CC exact P4 producer/grouped checker, SP P1 rectangle enclosure, all six exact finite brackets m=10/20/30/40/60/80 and the separate Fraction-pencil checker at m=10. Exact intervals match committed receipts. The binary64 reproduction suite also ran through max-N 1280; no proof status is inferred from it. The PD-T376 witness arrays remain unavailable and were **not replayed**.
+- Clean independent builds: CC 32 pp., SP 50 pp., no final warnings/box issues or Type 3 fonts. All 52/56 frozen non-cref labels match. Missing TeX/font dependencies were supplied locally under `/tmp`, without source edits. Commands, code/input hashes, compact essential evidence and coverage records are in [audit-support/](audit-support/) and audit-01.
+- Full IDEAS registry read in four overlapping partitions, not merely a heading scan; no conflict/revived failed mechanism found. Every actual citation checked against recorded LIT coverage; no new external fulltext reading claimed. All 53 report repository-file size/hash rows pass.
+- No manuscript, source theory or shared-registry changes by the auditor. Draft PR #35 remains unready. Claude receives the response/preparation step after the audit output commit; companions remain deferred under AC's earlier decision.
+
 ## Runs needed
 
-- Remaining tasks and gates W1–W4: see handoff 02.
+- Reply to audit F1–F5 and rebuild after wording repairs; see the next open handoff.
+- A byte-pinned PD-T376 witness replay requires retrieval of the exact missing package named in report §6.2. No receipt alone supplies it; no archival delivery is claimed.
