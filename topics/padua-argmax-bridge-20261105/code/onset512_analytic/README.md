@@ -27,3 +27,17 @@ executions are not retroactively attributed to the new guarded source.
 The sixty manuscript base-table entries are evaluated using this module's
 exact interval API; they are not sixty fields in receipt.json. The table's
 own explanation distinguishes those evaluations from the stored receipt.
+
+
+## Reproduce all sixty base-table values
+
+```sh
+python3 -E -B topics/padua-argmax-bridge-20261105/code/onset512_analytic/base_table.py
+```
+
+This read-only command computes all fifteen derived quantities at the four
+listed degrees through the unchanged exact interval API and verifies both
+labelled manuscript tables. Use `--format text` for a readable table. It
+does not rewrite TeX, generate witnesses, or claim the stored receipt
+contains these sixty values. The parser targets the existing two-column
+panel format.

@@ -281,3 +281,13 @@ process, not proof of all binary64 operations/SIMD loops, a historical
 worker's mode or universal hardware/libm conformance. The frozen numerical
 checker, prior run sources and historical results are unchanged. Current
 code identities, independent controls and limits belong to response-05.
+
+
+### Audit-06 probe scope note — 2026-11-14
+
+The accepted bit-pattern probe detects the tested FTZ and FTZ+DAZ cases,
+but does not detect DAZ alone (which affects subnormal input operands).
+The nextafter check exercises the library result, not a general rounding
+mode guarantee. These finite per-process probes do not establish the
+historical workers' mode or universal binary64/SIMD behavior. No runtime
+probe or historical checker execution changes with this clarification.
