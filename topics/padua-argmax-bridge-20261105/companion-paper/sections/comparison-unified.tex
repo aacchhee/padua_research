@@ -330,6 +330,8 @@ The bounds for $\pi$ also give $25/8<\pi<22/7$.
 Alternating Taylor sums enclose sine and cosine whenever their omitted
 terms decrease in modulus; the error has the sign and at most the
 modulus of the first omitted term.
+Repository paths below are relative to
+\path{topics/padua-argmax-bridge-20261105/}.
 These finite rational evaluations, the later $K=3$ evaluation of
 $\kappa$, and the gate base comparisons are executed with Python
 integers and \texttt{Fraction} by
@@ -3040,7 +3042,7 @@ $d(z)=\{c(z/4)-c(z/2)\}/2$,
  |b''|\leq\tfrac12,\qquad |d''|\leq\tfrac1{32}+\tfrac18=\tfrac5{32}.
 \]
 Also $d$ increases and $0\leq d\leq1/2-1/\pi<1/5$.
-Writing $\chi=z/2$ locally (distinct from the test function of Section~\ref{sec:argmax}), direct differentiation gives
+Writing $\chi=z/2$ locally (distinct from the test function in the earlier measure-inequality paragraph), direct differentiation gives
 \[
  d'(z)=\frac{\sin^2\chi-\chi^2\cos \chi}{4\chi^2\sin^2\chi}.
 \]
@@ -4142,8 +4144,9 @@ Since the vertex is $<1/2$, $\mathfrak p_n$ decreases on $[1/2,1]$.
 \end{proof}
 
 Table~\ref{uc:base-values} was composed from the exact interval routines in
-\path{code/onset512_analytic/check.py}; these 60 intermediate values
-are not part of its executed \texttt{receipt.json}. The quantities
+\path{code/onset512_analytic/check.py}; the command-line checker
+\path{code/onset512_analytic/base_table.py} reproduces these 60 entries.
+They are not part of the gate checker's executed \texttt{receipt.json}. The quantities
 $U_*,d_x,d_y,\ell_x,\ell_y$ are defined in
 Corollary~\ref{uc:relative-gate}; entries below 512 evaluate those same
 coefficient formulas.

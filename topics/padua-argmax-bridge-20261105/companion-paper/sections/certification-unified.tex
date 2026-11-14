@@ -1634,13 +1634,12 @@ result fields agreeing with the full run.
 The reproduction record \path{regeneration-20261114.md} identifies the
 new native and independent-checker executions, their input and output
 inventories, source and runtime identities, and reproduction commands.
-Paths here are relative to
-\path{topics/padua-argmax-bridge-20261105/} in the source repository.
 The independent checker's exact source, runtime and input pins are in
 \path{code/regeneration_i25_20261114/input-freeze.json};
-the native campaign freeze is
+the freeze of the 2026 native campaign for degrees $320,\ldots,510$ is
 \path{code/regeneration_20261114/frozen-inputs.json}.
-These new outputs provide the phase evidence used in this version.
+The new independent-checker outputs, together with the 942 input records
+described above, provide the phase evidence used in this version.
 
 \paragraph{An elementary derivation of the arithmetic bounds.}
 Write $\operatorname{RN}(y)$ for the closest binary64 number to a real
@@ -1838,9 +1837,9 @@ Both certificate records at a degree have their partitions and strict predicates
 checked separately. A finite-function interval may be reused for an
 identical function and exact rational argument shared by those witnesses.
 The new full check covers all 942 inputs, with a fresh within-degree
-cache at each degree. Its four-worker launcher measured 2770.544476 CPU
-seconds and 768.464785 seconds wall time. The separate fresh rechecks of
-both records at degrees 41, 458 and 511 used 28.165805 CPU seconds in total.
+cache at each degree. Its four-worker launcher measured about 2771 CPU
+seconds and 768 seconds wall time. The separate fresh rechecks of
+both records at degrees 41, 458 and 511 used about 28 CPU seconds in total.
 These are observed costs of the new executions; their commands, process
 accounting and output identities are recorded in
 \path{regeneration-20261114.md}.
@@ -1861,8 +1860,9 @@ The kernel identities, interval analysis and verified cover predicates
 give those bytes their mathematical meaning. The reproduction record
 \path{regeneration-20261114.md} identifies the new executions and the
 commands, inventories and implementation requirements needed to repeat
-them. The reproduction package includes the retained polynomial
-certificates, rebuilt polynomial checker, new phase certificates and
-independent verification outputs. The rebuild was checked on degrees
-2 and 17; the accepted records for all 39 polynomial certificates are
-retained, and no new full 39-degree replay is claimed.
+them. The public verification kit includes the 39 retained polynomial
+certificates, the 942 phase certificate inputs (560 retained and 382 new),
+minimal unchanged checker sources and expected verification results.
+The kit compiles the polynomial checker afresh; a fresh compilation was
+checked on degrees 2 and 17. The accepted records for all 39 polynomial
+certificates are retained, and no new full 39-degree replay is claimed.

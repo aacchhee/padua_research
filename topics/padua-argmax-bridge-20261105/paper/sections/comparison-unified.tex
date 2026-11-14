@@ -123,6 +123,8 @@ $\log((1+t)/(1-t))>2t$, with $t=1/(2M+2)$.
 Alternating Taylor sums enclose sine and cosine whenever their omitted
 terms decrease in modulus; the error has the sign and at most the
 modulus of the first omitted term.
+Repository paths below are relative to
+\path{topics/padua-argmax-bridge-20261105/}.
 These finite rational comparisons, the $K=3$ kappa series below and the
 scalar-gate base values are evaluated by
 \texttt{code/onset512\_analytic/check.py}, using Python integers and
@@ -1877,8 +1879,9 @@ Since the vertex is $<1/2$, $\mathfrak p_n$ decreases on $[1/2,1]$.
 \end{proof}
 
 Table~\ref{uc:base-values} was composed from the exact interval routines in
-\path{code/onset512_analytic/check.py}; these 60 intermediate values
-are not part of its executed \texttt{receipt.json}. The quantities
+\path{code/onset512_analytic/check.py}; the command-line checker
+\path{code/onset512_analytic/base_table.py} reproduces these 60 entries.
+They are not part of the gate checker's executed \texttt{receipt.json}. The quantities
 $U_*,d_x,d_y,\ell_x,\ell_y$ are defined in
 Corollary~\ref{uc:relative-gate}; entries below 512 evaluate those same
 coefficient formulas.

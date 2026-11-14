@@ -460,9 +460,14 @@ Python integers and \texttt{Fraction}; recorded receipt\\
 \bottomrule
 \end{tabular}
 \par\smallskip\footnotesize
-The recorded interpreter, libraries, operating system and hardware are
-trusted for each executed program row. The analytic branches are proved
-in the text; the phase checker does not reprove them.
+The Python/NumPy source and runtime identities of each phase-checker
+worker are checked against
+\path{code/regeneration_i25_20261114/input-freeze.json} and recorded
+with its outputs. Finite runtime probes supplement the implementation
+assumptions; they do not prove universal IEEE conformance.
+The polynomial checker uses its separately recorded C++/GMP environment.
+The analytic branches are proved in the text; the phase checker does not
+reprove them.
 \end{table}
 
 The same finite-floor, corner and analytic-far hypotheses used in the
@@ -513,14 +518,16 @@ its own substituted numerical bounds. No stored native numerical endpoint
 is a premise of this recertification. A separate fresh execution rechecked
 both records at each of degrees 41, 458 and 511, with all scientific
 result fields agreeing with the full run.
+The polynomial checker was freshly compiled and rechecked on degrees
+2 and 17; the accepted records for all 39 polynomial certificates are
+retained, and no new full 39-degree replay is claimed.
 
 The reproduction record \path{regeneration-20261114.md} identifies the
 new native and independent-checker executions, their input and output
 inventories, source and runtime identities, and reproduction commands.
-Paths here are relative to
-\path{topics/padua-argmax-bridge-20261105/} in the source repository.
 The independent checker's exact source, runtime and input pins are in
 \path{code/regeneration_i25_20261114/input-freeze.json};
-the native campaign freeze is
+the freeze of the 2026 native campaign for degrees $320,\ldots,510$ is
 \path{code/regeneration_20261114/frozen-inputs.json}.
-These new outputs provide the phase evidence used in this version.
+The new independent-checker outputs, together with the 942 input records
+described above, provide the phase evidence used in this version.
