@@ -202,19 +202,11 @@ byte comparisons pass. The [deposit record](zenodo-deposit/README.md) gives
 its local path and commands; delivered entries remain empty.
 
 
-## Current paper-dependent evidence — 2026-11-14
+## Current paper evidence — 2026-11-14
 
-AC authorized regeneration of missing evidence needed by the paper and
-permits historical-only artifacts to be forgotten. The new native campaign,
-full independent recertification, complete-history archive and scoped
-polynomial executable rebuild are complete and independently checked.
-[Current generation](regeneration-20261114.md) and
-[delivery receipt](regeneration-delivery.json) identify the replacement data.
-No missing historical onset/I25 ZIP, old PDF byte identity or old 632 MiB
-auxiliary-history transfer is required by this paper version. Historical
-records above remain historical; none is a current custody receipt.
-The complete source/data/runtime/PDF package is sealed locally: 296,189,961
-bytes, SHA256 d3452a176a220a649ca889cacd43c9c0d96fb75e12ae84849d0a07ee6b7d354c.
-Independent verify and fresh extraction pass; external permanent custody
-and DOI remain unassigned. No Windows delivery
-is inferred from this local record.
+All paper-dependent evidence is present or regenerated. The complete
+296,189,961-byte package is independently verified and freshly extracted;
+[receipt](regeneration-delivery.json), [review](delivery-review-20261114.md)
+and [scope](regeneration-20261114.md) give identities and current data.
+AC retires missing historical-only artifacts as requirements. The records
+above are historical. No Windows transfer, permanent custody or DOI is claimed.

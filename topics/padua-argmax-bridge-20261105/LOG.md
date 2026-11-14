@@ -3404,3 +3404,16 @@ Stage AUDIT for the focused material regeneration/code/dependency delta,
 then PR once accepted; PR 27 remains draft pending that review and AC's
 budget/storage/publication decisions. No range or final-ID change.
 Next: [handoff 36 — focused regeneration audit](handoffs/36-claude-audit-regenerated-evidence.md).
+
+Final custody-only size correction: the newly appended COLD_STORAGE note
+made that existing inventory prose file 16,595 bytes. Its new section is
+condensed to links (16,088 bytes total), preserving every historical entry,
+all evidence and all scope/custody facts. No source, PDF or package byte
+changes. Actual classification becomes main 9,733,758 + topic 2,045,076 =
+11,778,834; with exception 11,780,921. The conservative bound deliberately
+stays 11,801,088: no 507-byte shrink credit. The scientific snapshot keeps
+its exact historical source bytes; this later metadata-only correction and
+final receipt remain outside that immutable archive. Handoff36's input-head
+figures describe its pinned output checkpoint; this entry records the later
+custody correction. All newly added proof input/output JSON files remain
+below 16 KiB. No numerical check needs repetition for this prose shortening.

@@ -256,7 +256,7 @@
     "cap_bytes": 10000000,
     "final_batch_bound": 11801088,
     "current_main_merge_positive_bytes": 1827288,
-    "actual_current_classified_bytes": 11779341,
+    "actual_current_classified_bytes": 11778834,
     "post_original_topic_positive_deltas_bytes": 1883475,
     "cap_satisfied": false,
     "historical_audit05_input": {
@@ -268,8 +268,8 @@
       "conservative_bound_bytes": 11751309
     },
     "current_main_classified_bytes": 9733758,
-    "current_topic_classified_share_bytes": 2045583,
-    "current_actual_with_FREEZE_exception_bytes": 11781428
+    "current_topic_classified_share_bytes": 2045076,
+    "current_actual_with_FREEZE_exception_bytes": 11780921
   },
   "verifier_provenance": {
     "original_padua30_unrepaired_verify_compact_sha256": "7c2dad53519aff616bdadd3f925ec8943963cb4bf521b410355f827b7a1899bf",
