@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-04 — Global product bound and the exact Xu Lebesgue constant: Λ^Xu_n = L_n²
+# PD-T693 — Global product bound and the exact Xu Lebesgue constant: Λ^Xu_n = L_n²
 
 ID kind: PD-T.
-Aliases: X1-04; T3; sharp global upper bound; Λ^Xu_n = (Lebesgue constant of n Chebyshev zeros)²; first part of BCDMV Conjecture (17).
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-04; X1-04; T3; sharp global upper bound; Λ^Xu_n = (Lebesgue constant of n Chebyshev zeros)²; first part of BCDMV Conjecture (17).
 Split from: round X1-2 target T3 (sharp global upper bound) and BRIEF §1.2 outcome 3.
 Split into: none. The maximizer set is X1-05; the expansion is X1-07.
 

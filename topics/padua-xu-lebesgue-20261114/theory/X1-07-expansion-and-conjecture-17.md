@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-07 — Sharp expansion of the Xu Lebesgue constant; verdict on BCDMV Conjecture (17)
+# PD-T696 — Sharp expansion of the Xu Lebesgue constant; verdict on BCDMV Conjecture (17)
 
 ID kind: PD-T.
-Aliases: X1-07; T2; G2 expansion; Xu vertex expansion; Conjecture (17) of BCDMV 2006; relation to the Padua corner value.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-07; X1-07; T2; G2 expansion; Xu vertex expansion; Conjecture (17) of BCDMV 2006; relation to the Padua corner value.
 Split from: round X1-2 target T2 and BRIEF §1.2 outcomes 1 and 3.
 Split into: the exact value is X1-03/X1-04, the maximizer set X1-05, the one-dimensional enclosure X1-06; this record only combines them.
 

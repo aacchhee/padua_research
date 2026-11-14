@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-22 — λ_n(±1, −1) = n + 1 for Morrow–Patterson points
+# PD-T699 — λ_n(±1, −1) = n + 1 for Morrow–Patterson points
 
 ID kind: PD-T.
-Aliases: X2-22; lower-vertex value; target T1 of round X2-2.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-22; X2-22; lower-vertex value; target T1 of round X2-2.
 Split from: none.
 Split into: none.
 

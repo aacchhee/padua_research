@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-01 — Tensor lift of the Xu fundamental functions
+# PD-T690 — Tensor lift of the Xu fundamental functions
 
 ID kind: PD-T.
-Aliases: X1-01; rotated-torus lift; Xu interpolation as symmetrized tensor trigonometric interpolation; fiber-sum formula.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-01; X1-01; rotated-torus lift; Xu interpolation as symmetrized tensor trigonometric interpolation; fiber-sum formula.
 Split from: none (supporting identity for round X1-2 targets T1–T4).
 Split into: none.
 

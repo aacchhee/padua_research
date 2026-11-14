@@ -24,3 +24,5 @@ Registration (2026-11-05 PR21 final registration): LIT-486. Original provisional
 ## History
 
 2026-11-03: created by topic padua-literature-20261103.
+
+2026-11-14 (padua-xu-lebesgue-20261114): addendum. Conjecture (17), p. 319, was checked on a rendered page image (orchestrator and audit-01): the relation is "≲" with n → ∞, the setting is even n (§2, p. 312), and the vertex sentence is as stated above. The reading was extended to §§1–5 at text-layer level (closing the gap "§§1–2 and 4 not read"). The page of Table 7 is p. 320 (verified by the orchestrator on the Springer PDF's journal pagination, 2026-11-14; audit-01's "p. 323" is a slip). Details: [INDEX addendum for LIT-486](../INDEX.md) and [PD-T696](../../PROOF_STATUS.md).

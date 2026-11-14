@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-05 — The maximizers of the Xu Lebesgue function are exactly the non-node vertices
+# PD-T694 — The maximizers of the Xu Lebesgue function are exactly the non-node vertices
 
 ID kind: PD-T.
-Aliases: X1-05; G3 for X1; argmax part of BCDMV Conjecture (17); X1-C2 / X1-C3 of the novelty gate.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-05; X1-05; G3 for X1; argmax part of BCDMV Conjecture (17); X1-C2 / X1-C3 of the novelty gate.
 Split from: BRIEF §1.2 outcome 1 (argmax set for every n) and round X1-2 target T4 (which asked only for a plan).
 Split into: none.
 

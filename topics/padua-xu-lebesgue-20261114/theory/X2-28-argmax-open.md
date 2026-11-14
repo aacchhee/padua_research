@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-28 — where is the Morrow–Patterson Lebesgue constant attained? (OPEN; plan, tools and measured support)
+# PD-T705 — where is the Morrow–Patterson Lebesgue constant attained? (OPEN; plan, tools and measured support)
 
 ID kind: PD-T.
-Aliases: X2-28; MP argmax problem; target T5 of round X2-2; second half of novelty-gate candidate X2-C3.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-28; X2-28; MP argmax problem; target T5 of round X2-2; second half of novelty-gate candidate X2-C3.
 Split from: none.
 Split into: none yet. Proved supporting results live under their own IDs (X2-21 … X2-26, PD-N…-29, -30).
 

@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-08 — Size of the cancellation deficit away from the vertices (edge centre and near-vertex points)
+# PD-T697 — Size of the cancellation deficit away from the vertices (edge centre and near-vertex points)
 
 ID kind: PD-T (measured claim with its own home; no proof claim).
-Aliases: X1-08; edge-centre competitor; localization margin; second-highest local maxima of λ^Xu_n.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-08; X1-08; edge-centre competitor; localization margin; second-highest local maxima of λ^Xu_n.
 Split from: round X1-2 target T4 and the orchestrator's mid-round request (2026-11-14): "an expansion of λ^Xu_n(1, 0) (or the edge-centre maximum) to second order would quantify the localization margin".
 Split into: none.
 

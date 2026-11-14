@@ -1,7 +1,7 @@
-# PD-N?padua-xu-lebesgue-20261114-claude-30 — no vertex value of the Morrow–Patterson Lebesgue function equals (n+1)(n+2)/2
+# PD-N252 — no vertex value of the Morrow–Patterson Lebesgue function equals (n+1)(n+2)/2
 
 ID kind: PD-N.
-Aliases: X2-N30; target T4(c) of round X2-2; flag F1 of `lit-notes/X2-sources.md`.
+Aliases: PD-N?padua-xu-lebesgue-20261114-claude-30; X2-N30; target T4(c) of round X2-2; flag F1 of `lit-notes/X2-sources.md`.
 Split from: none.
 Split into: none.
 

@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-03 — Exact Xu Lebesgue function at the non-node vertices: λ_n(v) = L_n²
+# PD-T692 — Exact Xu Lebesgue function at the non-node vertices: λ_n(v) = L_n²
 
 ID kind: PD-T.
-Aliases: X1-03; T1; vertex closed form; G2 closed form; Xu vertex value = square of the Chebyshev Lebesgue constant.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-03; X1-03; T1; vertex closed form; G2 closed form; Xu vertex value = square of the Chebyshev Lebesgue constant.
 Split from: round X1-2 target T1 (closed form at the vertices, signs of every ℓ_ξ(v)).
 Split into: none. The expansion is X1-07; the one-dimensional constant is X1-06.
 

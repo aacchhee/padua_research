@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-26 — Λ_n ≥ λ_n(±1,1) > c* n² for every even n ≥ 2 (explicit, vertex-sharp lower bound for Morrow–Patterson points)
+# PD-T703 — Λ_n ≥ λ_n(±1,1) > c* n² for every even n ≥ 2 (explicit, vertex-sharp lower bound for Morrow–Patterson points)
 
 ID kind: PD-T.
-Aliases: X2-26; explicit MP lower bound; target T4(b) of round X2-2; gate G4 with an explicit constant.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-26; X2-26; explicit MP lower bound; target T4(b) of round X2-2; gate G4 with an explicit constant.
 Split from: none.
 Split into: none.
 

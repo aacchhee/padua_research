@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-27 — measured behaviour of the remainder R_n = λ_n(1,1) + (n+1) − c*(n+5/2)² (Morrow–Patterson points)
+# PD-T704 — measured behaviour of the remainder R_n = λ_n(1,1) + (n+1) − c*(n+5/2)² (Morrow–Patterson points)
 
 ID kind: PD-T.
-Aliases: X2-27; remainder of the vertex expansion; measured companion of X2-25.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-27; X2-27; remainder of the vertex expansion; measured companion of X2-25.
 Split from: none (a distinct measured claim, kept apart from the proved X2-25).
 Split into: none.
 

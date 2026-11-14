@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-06 — Exact series and two-sided n⁻⁴ enclosure for the Chebyshev-zero Lebesgue constant L_n
+# PD-T695 — Exact series and two-sided n⁻⁴ enclosure for the Chebyshev-zero Lebesgue constant L_n
 
 ID kind: PD-T.
-Aliases: X1-06; one-dimensional lemma of G2; sharpening of PD-T270; L_n = A_n + π/(72n²) − O(n⁻⁴).
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-06; X1-06; one-dimensional lemma of G2; sharpening of PD-T270; L_n = A_n + π/(72n²) − O(n⁻⁴).
 Split from: round X1-2 target T2 (the one-dimensional lemma of the vertex expansion).
 Split into: none.
 

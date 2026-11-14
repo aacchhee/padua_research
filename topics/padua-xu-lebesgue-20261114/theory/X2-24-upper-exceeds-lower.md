@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-24 — λ_n(±1, 1) > n + 1 = λ_n(±1, −1) for every even n ≥ 2
+# PD-T701 — λ_n(±1, 1) > n + 1 = λ_n(±1, −1) for every even n ≥ 2
 
 ID kind: PD-T.
-Aliases: X2-24; vertex inequality; first half of target T4(a) of round X2-2.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-24; X2-24; vertex inequality; first half of target T4(a) of round X2-2.
 Split from: none.
 Split into: none. The negative consequences for the published open questions are registered separately as PD-N?padua-xu-lebesgue-20261114-claude-29.
 

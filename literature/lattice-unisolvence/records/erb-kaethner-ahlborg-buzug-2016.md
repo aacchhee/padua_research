@@ -22,3 +22,5 @@ See [search log](../search-log.md), C1 follow-up, and [candidate screen](../cand
 ## History
 
 2026-10-31: primary node simplification and interpolation theorem excerpts inspected.
+
+2026-11-14 (padua-xu-lebesgue-20261114): addendum. Digest of the full arXiv 1411.7589 text: Remark 1 (Lisa_{n,0} and XU_{2n}) and §6 (XU_{2n+1}, ((2/π) log(2n+2))², numerics to n = 60). No theorem on Lebesgue constants. See the [INDEX addendum for LIT-331](../../INDEX.md).

@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-21 — Morrow–Patterson fundamental polynomials at the four vertices (closed forms)
+# PD-T698 — Morrow–Patterson fundamental polynomials at the four vertices (closed forms)
 
 ID kind: PD-T.
-Aliases: X2-21; "corner kernel"; MP corner closed forms; re-derivation and extension of Beberok 2025 eq. (2).
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-21; X2-21; "corner kernel"; MP corner closed forms; re-derivation and extension of Beberok 2025 eq. (2).
 Split from: none.
 Split into: none. Used by X2-22 (`…-claude-22`), X2-23 (`…-claude-23`), X2-24, X2-25, X2-26, PD-N…-29, PD-N…-30.
 

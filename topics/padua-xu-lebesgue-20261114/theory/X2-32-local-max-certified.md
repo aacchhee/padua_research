@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-32 — (±1,1) are strict local maxima of the Morrow–Patterson Lebesgue function for every even n with 2 ≤ n ≤ 3000 (computer-assisted)
+# PD-T707 — (±1,1) are strict local maxima of the Morrow–Patterson Lebesgue function for every even n with 2 ≤ n ≤ 3000 (computer-assisted)
 
 ID kind: PD-T.
-Aliases: X2-32; P1 finite range; first-variation certificate.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-32; X2-32; P1 finite range; first-variation certificate.
 Split from: X2-28 plan item P1 ("(±1,1) are strict local maxima for every even n ≥ 2"), parameter range 2 ≤ n ≤ 3000.
 Split into: none. The range n > 3000 stays OPEN (X2-28 addendum).
 

@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-02 — The one-dimensional factor: Lebesgue function of 2n equispaced trigonometric nodes
+# PD-T691 — The one-dimensional factor: Lebesgue function of 2n equispaced trigonometric nodes
 
 ID kind: PD-T.
-Aliases: X1-02; ω_n; midpoint maximum; L_n is the Chebyshev-zero Lebesgue constant.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-02; X1-02; ω_n; midpoint maximum; L_n is the Chebyshev-zero Lebesgue constant.
 Split from: none (one-dimensional lemma for X1-03, X1-04, X1-05).
 Split into: none.
 

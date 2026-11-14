@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-31 — first variation of the Morrow–Patterson Lebesgue function at the upper vertices: closed forms, band representation, local-maximum criterion
+# PD-T706 — first variation of the Morrow–Patterson Lebesgue function at the upper vertices: closed forms, band representation, local-maximum criterion
 
 ID kind: PD-T.
-Aliases: X2-31; first variation at (±1,1); D_x, D_y; step P1 (closed-form part) of the argmax plan of X2-28.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-31; X2-31; first variation at (±1,1); D_x, D_y; step P1 (closed-form part) of the argmax plan of X2-28.
 Split from: X2-28 (plan item P1), exact-formula part.
 Split into: none. The sign of D_x, D_y for 2 ≤ n ≤ 3000 is X2-32; the sign for n > 3000 is OPEN (X2-28 addendum).
 

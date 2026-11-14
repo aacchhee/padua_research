@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-25 — λ_n(±1,1) = c*(n+5/2)² − (n+1) + O(log² n) for Morrow–Patterson points, with explicit constants
+# PD-T702 — λ_n(±1,1) = c*(n+5/2)² − (n+1) + O(log² n) for Morrow–Patterson points, with explicit constants
 
 ID kind: PD-T.
-Aliases: X2-25; upper-vertex asymptotics; sharp vertex constant c*; target T3 of round X2-2.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-25; X2-25; upper-vertex asymptotics; sharp vertex constant c*; target T3 of round X2-2.
 Split from: none.
 Split into: none. Consequences are registered separately: X2-26 (explicit lower bound for Λ_n), PD-N…-30 (vertex value versus (n+1)(n+2)/2). The measured finer behaviour of the remainder is X2-27 (MEASURED).
 

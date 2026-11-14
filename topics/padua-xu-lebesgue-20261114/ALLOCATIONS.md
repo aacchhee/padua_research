@@ -42,3 +42,15 @@ The reservation's priority is the pushed commit that first adds this ledger. Loc
 **Foreign or non-ID strings excluded, with context checked against PR34's ledger notes:** `PD-T999` (test fixture), `PD-N303/N304` (prose only), and four-digit `LIT-1658…1750` (bttb-research aliases). None of these overlaps the new ranges.
 
 No collision and no unknown retired reservation was found. The check is repeated at readiness, and again if main or another open PR's ledger changes before AC merges. Only AC merges.
+
+
+## Final assignments and permanent gaps (2026-11-14)
+
+| Namespace | Assigned | Count | Permanent unused headroom | Gap count |
+|---|---|---:|---|---:|
+| PD-T | PD-T690–709 | 20 | PD-T710–719 | 10 |
+| PD-N | PD-N251–253 | 3 | PD-N254–257 | 4 |
+| IDEA | IDEA-766–779 | 14 | IDEA-780–795 | 16 |
+| LIT | LIT-721–731 | 11 | LIT-732–745 | 14 |
+
+The exact map is `pr-preparation/final-id-map.json` (the LIT entries list each source and its record), and the global crosswalk section is "Xu-points Lebesgue conjecture and Morrow–Patterson Lebesgue function — PR36" in `ID_CROSSWALK.md`. Assignments were made only after the reservation commit `91a0116eb9e83afe86a25c70d68684f364b316c5` was pushed and linked from the PR body. Ten existing LIT entries (LIT-378, LIT-486, LIT-379, LIT-314, LIT-307/LIT-010/LIT-650, LIT-331, LIT-320, LIT-380, LIT-389/LIT-024, LIT-388) received dated addenda and no new ID. No accepted ID was renumbered and no alias received two final IDs.

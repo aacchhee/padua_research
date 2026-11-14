@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-23 — sign structure and closed forms of λ_n(±1, 1) for Morrow–Patterson points
+# PD-T700 — sign structure and closed forms of λ_n(±1, 1) for Morrow–Patterson points
 
 ID kind: PD-T.
-Aliases: X2-23; upper-vertex closed form; band formula; one-sum formula; target T2 of round X2-2.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-23; X2-23; upper-vertex closed form; band formula; one-sum formula; target T2 of round X2-2.
 Split from: none.
 Split into: none.
 

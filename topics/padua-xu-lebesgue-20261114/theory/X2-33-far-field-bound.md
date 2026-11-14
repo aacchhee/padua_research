@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-33 — far-field bounds for the Morrow–Patterson Lebesgue function and localization of its maximizers near the vertices
+# PD-T708 — far-field bounds for the Morrow–Patterson Lebesgue function and localization of its maximizers near the vertices
 
 ID kind: PD-T.
-Aliases: X2-33; far-field bound; localization of the MP argmax; step P4 ("outside the windows") of the X2-28 plan, with explicit constants.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-33; X2-33; far-field bound; localization of the MP argmax; step P4 ("outside the windows") of the X2-28 plan, with explicit constants.
 Split from: X2-28 plan item P4.
 Split into: none.
 

@@ -1,7 +1,7 @@
-# PD-N?padua-xu-lebesgue-20261114-claude-29 — the Morrow–Patterson Lebesgue function is not centrally symmetric and its maximum is not attained at the lower vertices (negative answer to BBDM §7.1)
+# PD-N251 — the Morrow–Patterson Lebesgue function is not centrally symmetric and its maximum is not attained at the lower vertices (negative answer to BBDM §7.1)
 
 ID kind: PD-N.
-Aliases: X2-N29; novelty-gate candidate X2-C2; target T4(a) of round X2-2; C-MP corner check (gates addendum 2026-11-14).
+Aliases: PD-N?padua-xu-lebesgue-20261114-claude-29; X2-N29; novelty-gate candidate X2-C2; target T4(a) of round X2-2; C-MP corner check (gates addendum 2026-11-14).
 Split from: none.
 Split into: none.
 

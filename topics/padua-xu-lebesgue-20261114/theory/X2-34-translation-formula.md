@@ -1,7 +1,7 @@
-# PD-T?padua-xu-lebesgue-20261114-claude-34 — translation (product) formula for the Morrow–Patterson fundamental polynomials and the averaged shifted-lattice bound
+# PD-T709 — translation (product) formula for the Morrow–Patterson fundamental polynomials and the averaged shifted-lattice bound
 
 ID kind: PD-T.
-Aliases: X2-34; translation formula; box-average formula; averaged bound; Ξ-functional; tool for steps P2–P4 of the X2-28 plan.
+Aliases: PD-T?padua-xu-lebesgue-20261114-claude-34; X2-34; translation formula; box-average formula; averaged bound; Ξ-functional; tool for steps P2–P4 of the X2-28 plan.
 Split from: none.
 Split into: none.
 

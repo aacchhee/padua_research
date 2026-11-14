@@ -323,3 +323,12 @@ Scope addendum,2026-11-12: the earlier charter paragraph describing3D Padua as o
 - **Finite range.** PD-N246 rules out the finite torus LP with M≤8N on n=2…109.
 - **Frontier.** Package existence for 4≤n≤217 and the value of γ_A in (1/36,1/18] remain OPEN. The deferred routes are the cube-Delsarte LP (IDEA-761), separation strengthening (IDEA-759) and a sharper orbit conversion. Audits 01–03 did not execute a full Codex γ/compact/FT replay because input retrieval returned HTTP403.
 - **Lebesgue corollary.** PD-T674 assembles the Padua Lebesgue-constant corollary at its finite and eventual ranges; PD-T099's effective bridge remains OPEN.
+
+
+## Xu-points Lebesgue conjecture and Morrow–Patterson Lebesgue function — PR36, 2026-11-14
+
+[Results](../results/padua-xu-lebesgue-20261114.md); records in [PROOF_STATUS.md](../PROOF_STATUS.md) (PD-T690–PD-T709, PD-N251–PD-N253); [audit-01](../topics/padua-xu-lebesgue-20261114/audit-01.md).
+- **Xu points: closed.** BCDMV Conjecture (17) is resolved in sharpened form: Λ^Xu_n = L_n² for every n ≥ 1 (PD-T693) with the maximizers exactly the non-node vertices for every n ≥ 2 (PD-T694) and the three-term expansion with explicit remainder (PD-T696). Only the measured edge-deficit limit ≈ 0.8913 (PD-T697, heuristic constant) is left, as a MEASURED claim, not a frontier of this line.
+- **Morrow–Patterson points: exact corner theory proved.** λ_n(±1,−1) = n+1 and λ_n(±1,1) = c*(n+5/2)² − (n+1) + O(log²n), with Λ_n > c*n² for every even n (PD-T699–PD-T703), and negative answers to both BBDM §7.1 problems (PD-N251, PD-N252). The published lower bound is Beberok 2025 (LIT-721).
+- **Frontier (OPEN, PD-T705).** The argmax {(±1,1)} and lim Λ_n/n² = c*. Proved so far: strict local maxima at (±1,1) for even n ≤ 3000 (PD-T707) and localization of every maximizer to the four vertex boxes for n ≥ 1030 (PD-T708). Remaining: the tail n > 3000 of the local-maximum step (IDEA-779) and the programme W1–W3 (scaling limit with error, profile inequality, matching region; IDEA-776, tool PD-T709). The pointwise zero-shift mechanism is closed (PD-N253, IDEA-777).
+- **Deferred.** MPX variants (IDEA-774, no defining source found); MP for odd n and the extended MP points; reading of Beberok 2025 for page locators and of Xu JAT 164 (2012)/214 (2017) for variant definitions. Coverage limits of the novelty statements: Xu's CUP 2025 book body, Szili–Vértesi 2009 and Della Vecchia–Mastroianni–Vértesi 2009 (abstract only, LIT-730) are unread.

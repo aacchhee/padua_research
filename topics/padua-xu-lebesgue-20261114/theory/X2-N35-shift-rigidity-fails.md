@@ -1,7 +1,7 @@
-# PD-N?padua-xu-lebesgue-20261114-claude-35 — the unshifted lattice does not maximise the shifted-lattice sum Ξ_n (pointwise "shift rigidity" fails)
+# PD-N253 — the unshifted lattice does not maximise the shifted-lattice sum Ξ_n (pointwise "shift rigidity" fails)
 
 ID kind: PD-N.
-Aliases: X2-N35; shift rigidity; J(ψ) is not maximal at ψ = 0.
+Aliases: PD-N?padua-xu-lebesgue-20261114-claude-35; X2-N35; shift rigidity; J(ψ) is not maximal at ψ = 0.
 Split from: none.
 Split into: none.
 
