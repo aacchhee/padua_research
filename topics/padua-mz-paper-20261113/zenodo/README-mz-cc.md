@@ -13,6 +13,7 @@ The paper's results are proved analytically. The exceptions are the one-sided bo
 | `repository/` | The repository directories that the paper's availability statement names, at the commit above (`git archive`). It also holds every file the programs read or hash, and the paper source (`tracks/mz-constants/paper/`). Paths in the paper are relative to this directory. |
 | `data/table1/reproduction.json` | Output of the Table 1 script, regenerated for this archive (2026-11-14). |
 | `data/table1/reproduction-historical-2b52b432.json` | The original output (Git blob at commit `2b52b432`, SHA-256 `b85b06fa…6d40`). It agrees with the regenerated file in every number. |
+| `data/protocol-history/attempts-P4-d03e74dc.md` | The preregistered protocol of the certificate, as hashed in the producer receipt. Commit `d03e74dc` is in the merged pull request #31; the repository copy was later extended with results. |
 | `verify.sh` | Re-runs everything below and compares the results with the committed receipts. |
 | `tools/compare_receipts.py` | The comparison. It ignores run-specific fields (timings, paths, versions); exact numerators, denominators, enclosures and code hashes must agree. |
 | `requirements.txt` | The pinned Python stack. |

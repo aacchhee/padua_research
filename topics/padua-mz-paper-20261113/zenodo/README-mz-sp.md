@@ -24,6 +24,7 @@ This archive holds the programs, their outputs and the large witness files of Pr
 | `data/source-vectors/m*-min.npy` | The float eigenvector proposals that the witnesses were rounded from (binary64; not part of any proof) |
 | `data/regeneration-receipts/` | Receipts of the 2026-11-14 regeneration (see Provenance) |
 | `data/measurements/reproduction-{padua,marginal}.json` | Section 8.3 item (1), regenerated for this archive |
+| `data/protocol-history/*-c1e6e59d.md` | The versions of the rectangle protocol and of its finite reduction that the receipts of Props. 6.8 and 6.9 hash. Commit `c1e6e59d` is in the merged pull request #31; the repository copies were later extended. |
 | `verify.sh` | Re-runs the checks below and compares the results with the committed receipts |
 | `tools/compare_receipts.py` | The comparison. It ignores run-specific fields (timings, paths, versions, gzip container hashes); exact values, signs, enclosures and code/payload hashes must agree. |
 | `requirements.txt`, `MANIFEST-SHA256.txt` | Pinned Python stack; SHA-256 of every file |
@@ -59,7 +60,7 @@ The P2 runs at m = 3000 are long and are not part of `verify.sh`. Their commands
 
 ```sh
 python3.12 -m venv venv && venv/bin/pip install -r requirements.txt   # plus: a C compiler and libgmp-dev
-PY=venv/bin/python bash verify.sh                  # about 15 minutes; ends with "ALL CHECKS AGREE"
+PY=venv/bin/python bash verify.sh                  # about 20 minutes (2 cores); ends with "ALL CHECKS AGREE"
 PY=venv/bin/python bash verify.sh out --regenerate # also rebuilds the witnesses from scratch (+5 minutes)
 sha256sum -c MANIFEST-SHA256.txt
 ```

@@ -46,6 +46,7 @@ DATA_FILES = {
     'mz-cc': {
         'data/table1/reproduction.json': 'table1/reproduction.json',
         'data/table1/reproduction-historical-2b52b432.json': 'table1/reproduction-historical-2b52b432.json',
+        'data/protocol-history/attempts-P4-d03e74dc.md': 'protocol-history/attempts-P4-d03e74dc.md',
     },
     'mz-sp': {
         **{f'data/witnesses/cert-m{m}/{f}': f'witnesses/cert-m{m}/{f}'
@@ -59,6 +60,8 @@ DATA_FILES = {
                      'independent-m1101.json', 'independent-m1240.json', 'independent-m1600.json')},
         'data/measurements/reproduction-padua.json': 'measurements/reproduction-padua.json',
         'data/measurements/reproduction-marginal.json': 'measurements/reproduction-marginal.json',
+        'data/protocol-history/ideas-P1-numeric-protocol-c1e6e59d.md': 'protocol-history/ideas-P1-numeric-protocol-c1e6e59d.md',
+        'data/protocol-history/theory-P1-rectangle-certificate-c1e6e59d.md': 'protocol-history/theory-P1-rectangle-certificate-c1e6e59d.md',
     },
 }
 NAME = {'mz-cc': 'padua-mz-cc-evidence', 'mz-sp': 'padua-mz-sp-evidence'}
