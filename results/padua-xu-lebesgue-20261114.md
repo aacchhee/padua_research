@@ -26,9 +26,14 @@ Only the topic orchestrator writes this file. Branch `claude/padua-xu-lebesgue-2
 - **-N29** λ(x,y) ≠ λ(−x,−y), and Λ_n is not attained at (±1,−1), for every even n ≥ 2. This answers both BBDM §7.1 open problems negatively. PROVED negative.
 - **-N30** No vertex value equals (n+1)(n+2)/2 (BBDM's reported corner value). PROVED negative.
 - **-27** Remainder of -25. MEASURED.
-- **-28** Argmax = {(±1,1)}. OPEN (G1-MP screen n ≤ 60 supports it, gap ≈ 40%). Round X2-3 in progress.
+- **-28** Argmax = {(±1,1)}. OPEN (G1-MP screen n ≤ 60 supports it, gap ≈ 40%).
+- **-31** First variation at (±1,1), closed form. PROVED.
+- **-32** (±1,1) are strict local maxima for every even n ≤ 3000. PROVED, computer-assisted; independent rerun pending.
+- **-33** Far-field localization: every maximizer lies within angle ≤ 21.5 log²(n+2)/n of the vertex lines, for every n. PROVED.
+- **-34** Translation formula. PROVED tool.
+- **-N35** Zero shift not maximal. MEASURED.
 - G0/G1 screens and C-MP certificates: `topics/padua-xu-lebesgue-20261114/gates.md` (verdicts).
 
 ## Next step
 
-X2-3 (argmax and lim Λ_n/n² = c*), then the handoff for the Opus 5.5 xhigh audit.
+Decision for AC: more X2 rounds (P1 tail; W1–W3 for the argmax and the sharp constant), or the audit now.

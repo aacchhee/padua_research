@@ -110,3 +110,29 @@ Next unresolved step: P1.
 ## History
 
 - 2026-11-14, Claude Fable 5.2 (xhigh), researcher subagent of round X2-2; uncommitted at writing. First version. The G1-MP screen is the orchestrator's (developer run), reported to the researcher during the round.
+
+## Round X2-3 addendum (2026-11-14, Claude Fable 5.2 xhigh, researcher subagent; earlier text unchanged)
+
+Overall status of the target stays **OPEN**. New records of this round: X2-31 (PROVED), X2-32 (PROVED, computer-assisted, rerun pending), X2-33 (PROVED), X2-34 (PROVED), PD-N…-35 (MEASURED). Working history: `attempts/X2-round3.md`.
+
+| Plan item | Status after round X2-3 | Record / gap |
+|---|---|---|
+| P1 closed-form first variation | PROVED | X2-31 |
+| P1 sign, even 2 ≤ n ≤ 3000 (strict local maxima at (±1,1)) | PROVED, computer-assisted; independent rerun pending | X2-32 |
+| P1 sign, even n > 3000 | OPEN | item P1-tail below |
+| P4 far field: maximizers confined to four vertex boxes of angular size ϑ_n ≤ 21.5 log²(n+2)/n (n ≥ 1030) | PROVED | X2-33 |
+| P2/P3 inside the upper boxes: λ_n ≤ λ_n(1,1) | OPEN | item W-top |
+| inside the lower boxes: λ_n < c*n² | OPEN | item W-bot |
+| lim Λ_n/n² = c* | OPEN | needs W-top (non-strict, with o(n²) error) and W-bot |
+
+"P1 for every even n ≥ 2" is thus PARTIAL in the sense of the workflow (range n ≤ 3000 PROVED under X2-32, range n > 3000 OPEN); the argmax target itself is OPEN.
+
+**Measured (not proved), supporting P1-tail.** (i) D_x/M⁴ and D_y/M⁴ increase to ≈ 0.05123 (certified values 0.051195 and 0.051235 at n = 3000); the heuristic limit is d := (8/π)∫_{h̃>0} k₂ dτ = 0.0512373057615 (60 bumps), k₂(τ) := sin²τ cos τ·m₄(τ)/24, m₄(τ) := ∫_{−1}^{1}(1 − s⁴)cos(τs) ds; it comes from 𝒦_top = −h̃ + (ξ²+ζ²)k₂ + … . (ii) T_a > 0 at every band node and T'_a > 0 at every band node except (p,q) = (1,2), every even n ≤ 3000 (ball arithmetic). (iii) The Chebyshev-U coefficients of the band polynomial Π_B := −Σ_B(−1)^pℓ_a on the two edges through (1,1) are all positive for even n ≤ 120 (float64): P_n(x,1) = −U_n(x) + 2Σ_i b_iU_i(x), P_n(1,y) = −(n+1) + 2Σ_j b'_jU_j(y) with b_i, b'_j > 0. If b'_j ≥ 0 were proved, D_y > 0 would follow at once (U_j'(1) ≥ 0).
+
+**P1-tail (OPEN): exact reduction.** By X2-31 (remark), on B: T_a = −8(1+ε)(1−X)(1−Y)·H/(Nε⁵Y), H := a₀(ε) + a₁(ε)Y. It suffices to prove, for M ≥ M₁ (any M₁ ≤ 3002): (X1) H ≤ M⁻⁴ at every band node (measured: (H − M⁻⁴)/Y < 0 on B for all tested M ≤ 400); (X2) −H ≥ h₀ > 0 on the first superdiagonal q = p + 1 for θ = π(M−p)/(2M+2) in a fixed interval, where H → −8θ²cos²θ·E(θ), E(θ) := 1 − θcot θ/3 − 2(1 − θ cot θ)/θ² > 0; (X3) elementary bounds for the prefactor; and the analogues for N_y with the node (1,2) treated separately. The obstruction is the far end of the first superdiagonal (nodes near (−1,−1)), where the node curve is tangent to the zero set of the leading form of H: H = M⁻⁴ − (2/3)M⁻²θ² − (8/15)θ⁴ + …; any proof must keep second-order terms there. On the first superdiagonal, ε + 1 = [(1+r)·₂F₁(−r/2, 1 + r/2; 3/2; Y)]² with r = 1/M and Y = sin²θ, which turns (X1), (X2) into one-variable inequalities in Y with parameter r.
+
+**Revised plan for the boxes (items W).** Tools: X2-34 (b) (averaged bound) and the heuristic limit Ξ_n(φ₁/M, φ₂/M)/M² → |cos((φ₁+φ₂)/2)| J((φ₂−φ₁)/2) (PD-N…-35).
+- W1: prove this limit as an upper bound with explicit error, uniformly for |φ_i| ≤ Mϑ_n (single-kernel lattice sum with the absolute value inside; a first-order Riemann-sum bound suffices; the weights sin w sin v change by a factor 1 + O(ϑ_n)).
+- W2: prove B(ξ,ζ) := E_{u,u'∈[−1,1]}|cos((uξ+u'ζ)/2)|·J((uξ−u'ζ)/2) ≤ c*, with B < c* − δ(r₀) for max(ξ,ζ) ≥ r₀ (measured: B = 0.5155, 0.4951, 0.4355, 0.2840, 0.3575, 0.3262 at (ξ,0), ξ = 0.25, 1, 2, 4, 8, 16; B ≥ L_top at all 11 test points); one-parameter function J, so a certified enclosure of J on [0, π] plus an elementary averaging argument is enough. Lower boxes: the same with the even lattice gives the bound (max J)·sup E|sin((uξ+u'ζ)/2)| ≤ 0.5606·0.78 < c* (to be certified).
+- W3: matching region max(ξ,ζ) ≤ r₀: quantitative P1 (D_x, D_y ≥ d₀M⁴) plus control of sign flips of the shifted kernels in the box (the averaged bound is exact to second order at the vertex, X2-34 remark).
+W1 + W2 give lim Λ_n/n² = c*; W1–W3 with P1-tail and finite certificates (gate G3) give the argmax.

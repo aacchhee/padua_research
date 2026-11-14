@@ -65,3 +65,15 @@
 - Next: an independent Opus check of the X2 records; round X2-3 (Fable) on the argmax.
 - 2026-11-14 correction (independent check X2, m2): "c* in closed form" above means an explicit convergent integral/Si-series, not an elementary closed form. M1 fixed: arb evidence committed (`evidence/mp-x2-corner-arb.json`) and pinned in X2-25/26/N30.
 - Independent checks: `independent-checks-X1.md` confirms all X1 records (minor fixes F1, F2, F4 applied); `independent-checks-X2.md` confirms X2-21…N30 (M1 fixed; m1 and m2 fixed; m3 and m4 left as notes for the audit). Full-text reads of Harris PAMS 2010 and Li–Sun–Xu 2009 found no prior statement of Λ^Xu = L_n² (lit-notes/X1-novelty-exact-constant.md addendum).
+
+## 2026-11-14 — round X2-3 result (Fable 5.2 xhigh researcher; one server restart, resumed from transcript, nothing lost)
+
+- New developer records, audit pending:
+  - X2-31: first variation at (±1,1) in closed form. PROVED.
+  - X2-32: (±1,1) are strict local maxima for every even 2 ≤ n ≤ 3000. PROVED computer-assisted (arb). Evidence summary in `evidence/mp-x2r3-first-variation.json`; the full 758 KB output is regenerable in about 106 s, so only its hash and command are committed. An independent rerun is still needed.
+  - X2-33: far-field localization for every even n ≥ 2. Every maximizer has sin θ₁, sin θ₂ ≤ ϑ_n ≤ 21.5 log²(n+2)/n, and ϑ_n < 1 for n ≥ 1030. PROVED.
+  - X2-34: translation (box-average) formula. PROVED tool.
+  - X2-N35: the zero shift does not maximize the box kernel. MEASURED negative.
+- Still OPEN: the argmax at (±1,1) for every n, or eventually; lim Λ_n/n² = c*; and the P1 tail n > 3000.
+- The researcher proposes two further jobs: the P1 tail (Fable), and W1+W2 for the sharp constant (Fable, with Sonnet tooling).
+- Budget used: X1 2/10 rounds (direction complete); X2 3/10.
