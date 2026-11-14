@@ -54,7 +54,8 @@ What is *not* refuted: the symmetry λ_n(x, y) = λ_n(−x, y) (BBDM Lemma 1; tr
 - Path-A certificate (orchestrator; python-flint ball arithmetic on a Vandermonde solve, independent of the closed forms): for every even n ≤ 30 the enclosures of λ_n(1,1) and λ_n(1,−1) are disjoint (`claim_lam(1,1)_ne_lam(1,-1): true`), e.g. n = 2: 5.8455592331681269… versus 3.
 - `python3 code/mp/research/x2_corner_arb.py --nmax 60`: `gt_n+1: true` for every even n ≤ 60 (closed form, ball arithmetic).
 - `python3 code/mp/research/x2_corner_checks.py ident`: λ_n(±1,−1) − (n+1) = O(1e−38), λ_n(−1,1) − λ_n(1,1) = O(1e−37) (40 digits).
-- Independent rerun: pending (auditor).
+- Independent rerun: done in audit-01 §2.1 (R1–R8). Per-record verdict: audit-01 §6.
+- 2026-11-14 (orchestrator, response to audit-01 A-m6): `evidence/mp-cmp-identify.json` (600-digit evaluation of λ_n(1,−1) − (n+1) and PSLQ relations for λ_n(1,1), n ≤ 10; MEASURED, not proofs) is context for the asymmetry claim; the certified inequality used here is the path-A and path-B evidence cited above.
 
 ## Sources
 

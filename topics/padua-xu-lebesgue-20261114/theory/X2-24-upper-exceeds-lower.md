@@ -40,7 +40,7 @@ Candidate / claim disposition: none.
 
 - `python3 code/mp/research/x2_corner_arb.py --nmax 60`: flag `gt_n+1` true for every even n ≤ 60 (ball arithmetic).
 - `evidence/mp-cmp-certificate.json` (path A, independent): `claim_lam(1,1)_ne_lam(1,-1)` true for every even n ≤ 30.
-- Independent rerun: pending (auditor).
+- Independent rerun: done in audit-01 §2.1 (R1–R8). Per-record verdict: audit-01 §6.
 
 ## Sources
 

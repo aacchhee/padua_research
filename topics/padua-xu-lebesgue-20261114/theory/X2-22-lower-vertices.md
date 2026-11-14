@@ -44,7 +44,8 @@ Candidate / claim disposition: none.
 
 - `python3 code/mp/research/x2_corner_checks.py ident`: |λ_n(1,−1) − (n+1)| and |λ_n(−1,−1) − (n+1)| ≤ 7e−38 for n ∈ {2,4,6,8,10,12,16,20,24,30} (closed forms, 40 digits; for n ≤ 12 the closed forms are also compared with the defining kernel sums).
 - The path-A interval certificate `evidence/mp-cmp-certificate.json` (orchestrator, independent code path, even n ≤ 30) has enclosures of λ_n(±1,−1) containing n + 1 (width 2e−45); confirmed by the same run (`pathA_(1,-1)_contains_n+1: True`).
-- Independent rerun: pending (auditor).
+- Independent rerun: done in audit-01 §2.1 (R1–R8). Per-record verdict: audit-01 §6.
+- 2026-11-14 (orchestrator, response to audit-01 A-m6): `evidence/mp-cmp-identify.json` (`python3 code/mp/cmp_identify.py --nmax 10 --dps 600`, MEASURED) gives |λ_n(1,−1) − (n+1)| ≤ 4.5e−600 at 600 digits for n = 2, 4, 6, 8, 10 and records PSLQ relations for λ_n(1,1) over the basis {c₁ⁱc₂ʲ}, c₁ = cos(π/(n+2)), c₂ = cos(π/(n+3)) (field F = ℚ(c₁, c₂), `code/mp/cmp_identify.py`); it adds no claim to this record (the identity is proved above for every even n) and is context for X2-N29.
 
 ## Sources
 

@@ -52,7 +52,7 @@ Nothing outside this file.
 ## Checks
 
 - `python3 code/mp/research/x2_corner_checks.py ident` (mpmath, 40 digits; run 2026-11-14, python 3.13.18, mpmath 1.4.1, numpy 2.5.3). Output: orthonormality max error 6.0e−41 (n = 2, 4, 6, all index pairs); corner-kernel formula max relative error 1.5e−37 (n ∈ {2,3,4,7,10,15}, 30 random points, seed 20261114); four vertex closed forms against the defining kernel sums at every node, n ≤ 12: max abs error 7.5e−38.
-- Independent rerun: pending (auditor).
+- Independent rerun: done in audit-01 §2.1 (R1–R8). Per-record verdict: audit-01 §6.
 
 ## Sources
 

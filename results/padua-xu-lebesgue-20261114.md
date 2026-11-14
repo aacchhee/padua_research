@@ -1,6 +1,6 @@
 # padua-xu-lebesgue-20261114: Xu-points Lebesgue conjecture and Morrow–Patterson Lebesgue function
 
-Only the topic orchestrator writes this file. Branch `claude/padua-xu-lebesgue-20261114`, draft [PR #36](https://github.com/aacchhee/padua_research/pull/36). Provisional IDs `PD-T?padua-xu-lebesgue-20261114-claude-NN`; final IDs are assigned at PR preparation. Every PROVED claim below is **developer PROVED**: an independent Opus subagent check has confirmed it, but the formal Opus 5.5 xhigh audit is still pending.
+Only the topic orchestrator writes this file. Branch `claude/padua-xu-lebesgue-20261114`, draft [PR #36](https://github.com/aacchhee/padua_research/pull/36). Provisional IDs `PD-T?padua-xu-lebesgue-20261114-claude-NN`; final IDs are assigned at PR preparation. Every claim below was audited in [audit-01](../topics/padua-xu-lebesgue-20261114/audit-01.md) (Claude Opus 5.5 xhigh; 0 BLOCKING, 0 MAJOR, 9 MINOR), which confirmed each at its stated status. Independent subagent checks before the audit covered X1-01…08 and X2-21…N30 (`independent-checks-X1.md`, `independent-checks-X2.md`); X2-31…N35 were checked only in audit-01. 2026-11-14 (response to audit-01 A-m3): process text updated; no statement or status changed.
 
 ## X1: Xu points (BCDMV 2006, Conjecture (17))
 
@@ -28,8 +28,8 @@ Only the topic orchestrator writes this file. Branch `claude/padua-xu-lebesgue-2
 - **-27** Remainder of -25. MEASURED.
 - **-28** Argmax = {(±1,1)}. OPEN (G1-MP screen n ≤ 60 supports it, gap ≈ 40%).
 - **-31** First variation at (±1,1), closed form. PROVED.
-- **-32** (±1,1) are strict local maxima for every even n ≤ 3000. PROVED, computer-assisted; independent rerun pending.
-- **-33** Far-field localization: every maximizer lies within angle ≤ 21.5 log²(n+2)/n of the vertex lines, for every n. PROVED.
+- **-32** (±1,1) are strict local maxima for every even n ≤ 3000. PROVED, computer-assisted; independent rerun done in audit-01 §2.1 (R5 identical apart from the timing field; separate code path at 109 values of n up to 3000).
+- **-33** Far-field localization: every maximizer satisfies sin θ₁, sin θ₂ ≤ ϑ_n for every even n ≥ 2 (non-trivial only for n ≥ 1030, where ϑ_n ≤ 21.5 log²(n+2)/n); maximizers lie in the four vertex boxes. PROVED.
 - **-34** Translation formula. PROVED tool.
 - **-N35** Zero shift not maximal. MEASURED.
 - G0/G1 screens and C-MP certificates: `topics/padua-xu-lebesgue-20261114/gates.md` (verdicts).
@@ -37,3 +37,5 @@ Only the topic orchestrator writes this file. Branch `claude/padua-xu-lebesgue-2
 ## Next step
 
 Decision for AC: more X2 rounds (P1 tail; W1–W3 for the argmax and the sharp constant), or the audit now.
+
+2026-11-14 (response to audit-01 A-m3): the audit has been run (audit-01, accepted with MINOR findings); the decision above on further X2 rounds is not taken here. The MINOR-only response is [response-01.md](../topics/padua-xu-lebesgue-20261114/response-01.md).

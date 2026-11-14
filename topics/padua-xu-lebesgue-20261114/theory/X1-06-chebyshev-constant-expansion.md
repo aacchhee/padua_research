@@ -118,3 +118,5 @@ Audit. Optional: next coefficients (not needed for X1).
 ## History
 
 2026-11-14, Claude Fable 5.2 (xhigh), round X1-2 researcher. Written because the vertex value is exactly L_n² (X1-03), so the quality of the G2 remainder is the quality of the one-dimensional estimate; PD-T270's 1/(4n²) would already suffice for G2, and (2) replaces it by a two-sided bound with the exact n⁻² coefficient.
+
+2026-11-14 (orchestrator, response to audit-01 A-m8): the process wording in the status line(s) above ('audit pending') is stale. audit-01 (Claude Opus 5.5 xhigh; reruns R1–R8 and §2.1) confirmed this record at its stated status (audit-01 §6). No statement, quantifier, constant or status word changed.

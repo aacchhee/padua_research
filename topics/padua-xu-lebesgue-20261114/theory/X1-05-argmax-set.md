@@ -91,3 +91,5 @@ In both cases F(ξ₀) contains two (necessarily distinct) elements whose terms 
 2026-11-14, Claude Fable 5.2 (xhigh), round X1-2 researcher. The assigned target T4 was a plan for an argmax localization modelled on PR #27 (analytic corner expansion, localization away from the corners, finite certificates). That architecture is not needed for Xu points: the product bound of X1-04 confines maximizers to the complementary checkerboard, and a two-term sign cancellation excludes every non-vertex point of it. No lemma of the unmerged PR #27 is used.
 
 2026-11-14 (orchestrator, MINOR wording fix after independent check F1): the ratios in Checks are stated as maxima over the complementary grid points only. The proof is unaffected.
+
+2026-11-14 (orchestrator, response to audit-01 A-m8): the process wording in the status line(s) above ('audit pending') is stale. audit-01 (Claude Opus 5.5 xhigh; reruns R1–R8 and §2.1) confirmed this record at its stated status (audit-01 §6). No statement, quantifier, constant or status word changed.

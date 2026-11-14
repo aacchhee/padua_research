@@ -55,7 +55,8 @@ X2-21 parts 1–3 (reproduction, corner kernel G_n = ¼Q_{XY}, lattice values of
 
 - `/tmp/x2r3/explore1.py` (scratch, mpmath 40 digits, n ∈ {2,4,6,8}, all nodes): closed forms (a) against Σ i(i+1)(i+2)/3·(j+1)U_iU_j and the y-analogue: max relative error 4.3e−35.
 - `python3 code/mp/research/x2r3_first_variation_arb.py --full --nmin 2 --nmax 24` (python-flint 0.9.0, 192 bits; 2026-11-14; 0.2 s): for every node of every even n ≤ 24 the ball of the closed form overlaps the ball of the defining sum (`all_closed_forms_overlap: true`); D_x, D_y from the defining sums over all nodes agree with the band representation (c) (`--band`) to all printed digits, e.g. n = 2: D_x = 4.9511320421682110891, D_y = 7.0019580831342828584; n = 24: D_x = 20690.069773390533628, D_y = 22566.557068445872937.
-- Independent rerun: pending (auditor).
+- Independent rerun: done in audit-01 §2.1 (R1–R8). Per-record verdict: audit-01 §6.
+- 2026-11-14 (orchestrator, response to audit-01 A-m6): the `--full --nmin 2 --nmax 24` run above is committed as `evidence/mp-fv_full_2_24.json` (no command or version fields of its own; the command and versions are those quoted in this Checks list; audit-01 R6 reproduced it apart from `wall_seconds`). For the pinned hash of the band run (`evidence/mp-x2r3-first-variation.json`) and the timing-field substitution see X2-32, dated note under Checks.
 
 ## Sources
 

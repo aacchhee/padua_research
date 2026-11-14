@@ -45,7 +45,7 @@ Candidate / claim disposition: none.
 ## Checks
 
 - `python3 code/mp/research/x2_corner_arb.py --nmax 60` (python-flint 0.9.0, 256 bits; 2026-11-14): `cstar_ge_0.51695: true`, `cstar_le_0.51696: true`; `threshold_g(20)>0: true` (g(18) = −0.2419 < 0, so the analytic range starts at M = 20); flag `gt_cstar_n^2: true` for every even n ≤ 60, i.e. the ball of λ_n(1,1) − c*n² is positive (the ball of c* is the certified enclosure).
-- Independent rerun: pending (auditor).
+- Independent rerun: done in audit-01 §2.1 (R1–R8). Per-record verdict: audit-01 §6.
 
 ## Sources
 
@@ -77,3 +77,7 @@ A lower bound for Λ_n through the vertex value, for every even n ≥ 2. Togethe
 - 2026-11-14, Claude Fable 5.2 (xhigh), researcher subagent of round X2-2; uncommitted at writing. First version.
 
 2026-11-14 (orchestrator addendum, after independent check finding M1): the ball-arithmetic evidence for this record's computer-assisted parts is committed at `evidence/mp-x2-corner-arb.json` (SHA-256 `4f6657ba496a051c1bbfe8e64f3b5266ecd8607fddaf3d3b37c3f126add27b99`). It was produced by `python3 code/mp/research/x2_corner_arb.py --nmax 60 --out evidence/mp-x2-corner-arb.json`, script SHA-256 `48ac5a4f61a8ad66319f8e2a469a3d2b6b42219bb60acd9b5edd13d3e9101045`; that differs from the developer's version only in docstring record IDs. All flags are true. An independent rerun with separate code (Opus 5.5 checker, `code/mp/independent/`) confirmed the finite ranges through n = 60 and the c* enclosure; see `independent-checks-X2.md`. The float checks of `x2_corner_checks.py` are regenerable and are not committed (23 KB).
+
+2026-11-14 (orchestrator, response to audit-01 A-m8): the process wording in the status line(s) above ('independent rerun of the finite part pending') is stale. audit-01 (Claude Opus 5.5 xhigh; reruns R1–R8 and §2.1) confirmed this record at its stated status (audit-01 §6). No statement, quantifier, constant or status word changed.
+
+2026-11-14 (orchestrator, response to audit-01 A-m7): The comparison constant ≈ 7.5·10⁻⁴ (Beberok, JAT 311 (2025) 106191, final display of the proof of Thm 0.1) is (as transcribed by the orchestrator from the ScienceDirect HTML; display not re-checked; page/equation locator pending). The transcription in `lit-notes/X2-sources.md` §1b reads "(n/2+n+2)²" in the denominator; `literature-xu-mp.md` §3.1 and this record write the simplified "(3n/2+2)²", an arithmetic normalisation of that transcription (§8 item 1 of the lit-note flags the re-check). Nothing in the statement or proof of this record depends on the number; it is only the comparison with the published constant.

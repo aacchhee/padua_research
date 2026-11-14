@@ -77,3 +77,5 @@ Subtracting gives (1), and Δ_n ≥ 0 by the triangle inequality. X1-02 (c) give
 ## History
 
 2026-11-14, Claude Fable 5.2 (xhigh), round X1-2 researcher. T3 was assigned as "attempt a sharp global upper bound, PROVED or OPEN"; the lift of X1-01 turns the global bound into a triangle inequality, with no asymptotic analysis.
+
+2026-11-14 (orchestrator, response to audit-01 A-m8): the process wording in the status line(s) above ('audit pending') is stale. audit-01 (Claude Opus 5.5 xhigh; reruns R1–R8 and §2.1) confirmed this record at its stated status (audit-01 §6). No statement, quantifier, constant or status word changed.

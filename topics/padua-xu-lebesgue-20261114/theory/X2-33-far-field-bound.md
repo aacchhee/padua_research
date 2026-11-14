@@ -46,11 +46,14 @@ X2-21 Lemma 1 (closed form of the diamond sum), X2-21 definitions; X2-26 for (c)
 - `python3 code/mp/research/x2r3_checks.py transl` (mpmath 30 digits, n = 2, 4, 6): four-term diamond formula (K1) against the kernel double sum at all nodes, two points: max error 3.0e−29; rotated product form (R) of D_M: 1.2e−29.
 - `python3 code/mp/research/x2r3_checks.py farfield` (float64; angle grids 41² (n ≤ 100), 25² (n = 200) on [0.02, π−0.02]²): max λ_n/bound(a) = 0.070, 0.089, 0.108, 0.113 and max λ_n/bound(b) = 0.0070, 0.0056, 0.0034, 0.0015 for n = 10, 40, 100, 200; `bounds_hold_on_grid: true`.
 - Arithmetic for (c): ϑ_n = 1.0226 (n = 1000), 0.9991 (n = 1030), 0.5905 (n = 2000), 0.1596 (n = 10⁴), 0.0230 (n = 10⁵).
-- Independent rerun: pending.
+- Independent rerun: done in audit-01 §2.1 (R1–R8). Per-record verdict: audit-01 §6.
+- 2026-11-14 (orchestrator, response to audit-01 A-m6): the `transl` run (four-term diamond formula (K1) and rotated product form (R)) and the `farfield` run quoted above are committed as `evidence/mp-x2r3_checks_t.json` and `evidence/mp-x2r3_checks_c.json` respectively (float64/mpmath, labelled MEASURED in the files; they add no claim to this record). The audit-01 float64 spot check of Lemma (d) and of the bounds (a), (b) is in `evidence/audit-x2-separate-path.json`, section `farfield_spot` (MEASURED).
 
 ## Sources
 
 LITERATURE (context, not used): BBDM, Constr. Approx. 63 (2026), Thm 4 (Λ_n = O(n²), no constant; proof read at structure level only).
+
+2026-11-14 (orchestrator, response to audit-01 A-m1): closest registry entries: PD-T216, PD-T218, PD-T223, PD-T225 (Padua eventual localization by projected defects and cancellation, non-effective thresholds) and IDEA-326–328; none of them is used as a lemma here. Separation and verdict: `novelty-gate-X2.md`, Round X2-3 addendum, row X2-R3-C1.
 
 ## Proof or evidence
 

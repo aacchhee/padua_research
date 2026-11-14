@@ -94,3 +94,5 @@ All factors are positive, so R_n > 0, and R_n < 2A_nε_n + ε_n² = πA_n/(36n²
 2026-11-14, Claude Fable 5.2 (xhigh), round X1-2 researcher. The assigned form "λ^Xu_n(v) = (4/π²)log²N + b log N + c + R_n, choose N" is met with N = n: because λ_n(v) is an exact square of a one-dimensional sum with an even expansion in 1/n, no 1/n term occurs and the remainder is O(log n / n²) with an explicit sign.
 
 2026-11-14 (orchestrator, MINOR wording fixes after independent check F2/F4, `independent-checks-X1.md`): (d) split into its asymptotic part (d1) and its every-n part (d2), with the reading of "≲" made explicit; (e) restricted to n ≥ 2, where Λ_c is defined. No change of mathematical content.
+
+2026-11-14 (orchestrator, response to audit-01 A-m8): the process wording in the status line(s) above ('audit pending') is stale. audit-01 (Claude Opus 5.5 xhigh; reruns R1–R8 and §2.1) confirmed this record at its stated status (audit-01 §6). No statement, quantifier, constant or status word changed.

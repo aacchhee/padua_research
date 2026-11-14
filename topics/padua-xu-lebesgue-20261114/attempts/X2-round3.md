@@ -53,3 +53,5 @@ Researcher: Claude Fable 5.2 (xhigh), subagent; 2026-11-14; rules read at `fc0d6
 Scratch explorations `/tmp/x2r3/explore1–9.py` (sympy was installed into /tmp/x2r3/pylib for two symbolic expansions only) are not committed; their content is summarised in §2.
 
 Runs needed: independent rerun of X2-32 (auditor); ball-arithmetic certificate of one instance of X2-N35.
+
+2026-11-14 (orchestrator, response to audit-01 A-m8; earlier text unchanged): the stale process wording above ('rerun pending' in §0; 'Runs needed: independent rerun of X2-32 (auditor); ball-arithmetic certificate of one instance of X2-N35' in §5) is superseded. Both were done by audit-01 (§2.1): X2-32 by a byte-identical rerun (apart from the timing field) and a separate code path at 109 values of n up to 3000; X2-N35 by an Arb certificate at M = 62, 102, 202 (`evidence/audit-x2-separate-path.json`; the record's status stays MEASURED).

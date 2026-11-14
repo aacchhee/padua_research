@@ -46,7 +46,8 @@ X2-23 (closed form evaluated), X2-25 (definition of c*, proved bounds used only 
 - `python3 code/mp/research/x2_corner_checks.py decomp`: the decomposition (item 3) for M ∈ {4,…,1202}.
 - `python3 code/mp/research/x2_corner_arb.py --nmax 60`: R_n in ball arithmetic for every even n ≤ 60 (agrees with the float values to all printed digits, e.g. R_30 = −4.4900863, R_60 = −5.8301628).
 - Float64 accuracy: the band terms are evaluated from X − Y = sin(πs/(2N)) sin(πr/(2N)) with integer r, s, so there is no cancellation; λ_n(1,1) for n ≤ 60 agrees with the ball-arithmetic values to ≥ 12 significant digits. For n = 6400 the absolute error of R_n is estimated below 1e−6 (not certified).
-- Independent rerun: pending.
+- Independent rerun: done in audit-01 §2.1 (R1–R8). Per-record verdict: audit-01 §6.
+- 2026-11-14 (orchestrator, response to audit-01 A-m6): further float values of λ_n(1,1) for even n ≤ 2000 (longdouble sum of Beberok's closed form; mp30 spot checks, max relative error 9.7e−17) and the derived ratios λ_n(1,1)/n² (0.5177426 at n = 2000) and λ_n(1,1)/((n+1)(n+2)/2) (1.03393 at n = 2000, slowly decreasing after n ≈ 500; the file's flag `monotone_increasing_ratio_lam/T_up_to_2000` is false) are committed as `evidence/mp-corner-values.json` (`python3 code/mp/corner_values.py`, 1248 s; MEASURED; orientation only, no constant is taken from it, G5). Its thinned value list has the full-list hash `e7b55a6b…` (see the file).
 
 ## Sources
 

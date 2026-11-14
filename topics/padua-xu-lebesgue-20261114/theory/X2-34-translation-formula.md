@@ -50,11 +50,14 @@ X2-33 Step 0, formula (K1) (which rests on X2-21 definitions only); X2-23 (f) fo
 ## Checks
 
 - `python3 code/mp/research/x2r3_checks.py transl` (mpmath 30 digits; 2026-11-14): (a) at all nodes of n = 2, two points (θ₁,θ₂) ∈ {(0.3, 1.1), (2.0, 0.7)}, by two-dimensional quadrature of the double sum: max error 1.6e−30 (43 s); closed form of G̃ (float64) against the double sum: relative error 3.6e−14; Ξ_20(0,0) − λ_20(1,1) = 1.4e−12 (float64).
-- Independent rerun: pending.
+- Independent rerun: done in audit-01 §2.1 (R1–R8). Per-record verdict: audit-01 §6.
+- 2026-11-14 (orchestrator, response to audit-01 A-m6): the `transl` run quoted above is committed as `evidence/mp-x2r3_checks_t.json` (MEASURED; adds no claim). The 'jensen' and 'shift' measurements that motivate the Scope remark are in `evidence/mp-x2r3_checks_c.json` and `evidence/mp-x2r3_checks_b.json` (see X2-28 addendum W2 and X2-N35).
 
 ## Sources
 
 None used. The formula is the bivariate form of the classical product formula for Chebyshev polynomials of the second kind, U_i(cos θ)U_i(cos w)/(i+1) = (2 sin θ sin w)⁻¹∫_{w−θ}^{w+θ} U_i(cos α) sin α dα (textbook; not used as a lemma, the proof below is direct).
+
+2026-11-14 (orchestrator, response to audit-01 A-m1): closest registry entries: IDEA-316 / PD-N079 (shifted-lattice primitive maximal at the coset, a supremum statement; REJECTED: refuted for the Padua primitive), IDEA-206, IDEA-327 and PD-T215. The averaged bound (b) is a box mean, not a supremum over shifts; see X2-N35 and `novelty-gate-X2.md`, Round X2-3 addendum, row X2-R3-C2. No priority claim.
 
 ## Proof or evidence
 
@@ -79,3 +82,5 @@ Asymptotics of Ξ_n(φ₁/M, φ₂/M) with explicit error (X2-28 addendum, item 
 ## History
 
 - 2026-11-14, Claude Fable 5.2 (xhigh), researcher subagent of round X2-3; uncommitted at writing. First version.
+
+2026-11-14 (orchestrator, response to audit-01 A-m9): X2-23 (f) is listed under Depends on above and is used in (c) for every even n ≥ 2 (not only for n ≤ 3000; there is no independent certificate of ℓ_a(1,1) ≠ 0 outside n ≤ 3000, X2-32). Its dependency statement is corrected, and the cyclotomic fact behind it proved self-contained, in the dated addendum of X2-23. Statement and status of this record unchanged.

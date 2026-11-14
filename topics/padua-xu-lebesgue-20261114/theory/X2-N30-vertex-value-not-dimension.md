@@ -53,7 +53,8 @@ Not refuted: that (n+1)(n+2)/2 is a good *approximation* of λ_n(±1, 1) for mod
 - `python3 code/mp/research/x2_corner_arb.py --nmax 60` (2026-11-14): `lt_dim_n2_n4: true`; `gt_dim_n>=6: true` for every even 6 ≤ n ≤ 60; λ_n(1,1) − d_n = −0.15444077, −0.15916453, +0.025027606, +0.38784525, +0.91845198, +1.6088138 for n = 2, …, 12 and +26.736967 at n = 40; `threshold_f(44)>0: true` (f(42) = −0.8918 < 0, so the analytic range starts at M = 44, n = 42).
 - Path-A certificate `evidence/mp-cmp-certificate.json`: `claim_lam(1,1)_gt_(n+1)(n+2)/2` false for n = 2, 4 and true for n = 6, with enclosures of width 2e−45 (independent code path).
 - Agreement with the published table CDMV 2005, Table 4 (values 649, 1264, 2082, 3102 at n = 34, 48, 62, 76; d_n = 630, 1225, 2016, 3003): LITERATURE, reproduced as upper-vertex values by the literature subagent (`lit-notes/X2-sources.md` §6.2); these published values already exceed d_n.
-- Independent rerun: pending (auditor).
+- Independent rerun: done in audit-01 §2.1 (R1–R8). Per-record verdict: audit-01 §6.
+- 2026-11-14 (orchestrator, response to audit-01 A-m6): the MEASURED ratio λ_n(1,1)/((n+1)(n+2)/2) ≈ 1.0339 for n up to 2000 quoted in the literature note (`literature-xu-mp.md` §3, item 2; limit 2c* ≈ 1.0339) is committed in `evidence/mp-corner-values.json` (analysis table). It is context only; the claims of this record do not depend on it.
 
 ## Sources
 
@@ -78,3 +79,7 @@ Vertex values only, every even n ≥ 2.
 - 2026-11-14, Claude Fable 5.2 (xhigh), researcher subagent of round X2-2; uncommitted at writing. First version.
 
 2026-11-14 (orchestrator addendum, after independent check finding M1): the ball-arithmetic evidence for this record's computer-assisted parts is committed at `evidence/mp-x2-corner-arb.json` (SHA-256 `4f6657ba496a051c1bbfe8e64f3b5266ecd8607fddaf3d3b37c3f126add27b99`). It was produced by `python3 code/mp/research/x2_corner_arb.py --nmax 60 --out evidence/mp-x2-corner-arb.json`, script SHA-256 `48ac5a4f61a8ad66319f8e2a469a3d2b6b42219bb60acd9b5edd13d3e9101045`; that differs from the developer's version only in docstring record IDs. All flags are true. An independent rerun with separate code (Opus 5.5 checker, `code/mp/independent/`) confirmed the finite ranges through n = 60 and the c* enclosure; see `independent-checks-X2.md`. The float checks of `x2_corner_checks.py` are regenerable and are not committed (23 KB).
+
+2026-11-14 (orchestrator, response to audit-01 A-m8): the process wording in the status line(s) above ('independent rerun of the finite part pending') is stale. audit-01 (Claude Opus 5.5 xhigh; reruns R1–R8 and §2.1) confirmed this record at its stated status (audit-01 §6). No statement, quantifier, constant or status word changed.
+
+2026-11-14 (orchestrator, response to audit-01 n3; optional remark, no new claim): since Λ_n ≥ λ_n(1,1) and (ii) gives λ_n(1,1) > d_n for every even n ≥ 6, the reported value d_n = (n+1)(n+2)/2 is also not the Lebesgue constant Λ_n itself for n ≥ 6 (Λ_n > d_n). For n ∈ {2, 4} only the vertex values are covered by this record. This is a one-line consequence of (ii); the Scope above (vertex values only) is unchanged.

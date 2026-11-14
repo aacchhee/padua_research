@@ -103,3 +103,5 @@ Audit only.
 ## History
 
 2026-11-14, Claude Fable 5.2 (xhigh), round X1-2 researcher. First obtained from the BCDMV kernel at (1,1) and the observation that the resulting positive sum is PD-T159's same-mesh reference F_n = L_n² (T0, `attempts/X1-round2.md`); then re-proved from the lift so that no literature kernel formula and no Padua record is a proof input.
+
+2026-11-14 (orchestrator, response to audit-01 A-m8): the process wording in the status line(s) above ('audit pending') is stale. audit-01 (Claude Opus 5.5 xhigh; reruns R1–R8 and §2.1) confirmed this record at its stated status (audit-01 §6). No statement, quantifier, constant or status word changed.

@@ -29,10 +29,12 @@ Source: Beberok–Białas-Cież–De Marchi, Constr. Approx. 63 (2026) 31–65 (
 - n even. x_m = cos(mπ/(n+2)), m = 1..n+1. y_k = cos(2kπ/(n+3)) for m odd and cos((2k−1)π/(n+3)) for m even, k = 1..n/2+1. |MP_n| = dim Π_n. MP_n = Pad_{n+2} minus its edge points.
 - ℓ_{m,k}(x, y) = ω_{m,k} Σ_{i+j≤n} U_i(x_m)U_j(y_k)U_i(x)U_j(y), with 1/ω_{m,k} = Σ_{i+j≤n} U_i(x_m)² U_j(y_k)². Equivalently, in the published form, weights 8 sin²w_m sin²v_k/((n+2)(n+3)) times the kernel.
 - **Symmetry.** BBDM Lemma 15: λ_n(x, y) = λ_n(−x, y) (also from Lemma S). The node set is *not* invariant under (x, y) ↦ (−x, −y): the image of a node with m odd has an odd numerator in its y-angle, which is the even-m pattern.
+  - 2026-11-14 (orchestrator, response to audit-01 n4): the x-symmetry is **Lemma 1 (p. 45; cited as Lemma 15 in their §7.1)** of BBDM (locators: `lit-notes/X2-sources.md`, BBDM entry for Lemma 1). Wherever this topic writes "BBDM Lemma 15" (this section, `gates.md` G1-MP addendum, X2-31 (e) and Sources) the same lemma is meant.
 
 ## 3. Literature verdicts that change the targets (2026-11-14)
 
 1. **X2 lower bound is already published.** Beberok, "A lower bound for the Lebesgue constant of the Morrow–Patterson points", JAT 311 (2025) 106191 ([doi](https://doi.org/10.1016/j.jat.2025.106191)), Theorem 0.1: Λ_MP(n) ≥ c n² for an existential c. The proof works at the point (1,1). It gives a closed form for the kernel at (1,1), eq. (2), and its final display yields, for n ≥ 8, Λ_MP(n) ≥ (√3−1)²(n/4−1)(2n+5)(n+2)(n+3)/(16π²(3n/2+2)²), a constant of about 7.5·10⁻⁴. BRIEF target X2.1 is therefore **LITERATURE, not new**. Any X2 result must go beyond it: a sharp constant, the exact corner values, or the argmax location.
+   - 2026-11-14 (orchestrator, response to audit-01 A-m7): the displayed lower bound and the constant ≈ 7.5·10⁻⁴ are (as transcribed by the orchestrator from the ScienceDirect HTML; display not re-checked; page/equation locator pending). The lit-note transcription (`lit-notes/X2-sources.md` §1b) has the denominator "(n/2+n+2)²"; the "(3n/2+2)²" above is its simplification. Re-check the display and add locators before any manuscript or LIT record uses this number.
 2. **BBDM's stated open problems** (Constr. Approx. 63 (2026), §7 p. 63 and §7.1 p. 64):
    - prove λ(x, y) = λ(−x, −y);
    - prove that the Lebesgue constant is attained at each corner.

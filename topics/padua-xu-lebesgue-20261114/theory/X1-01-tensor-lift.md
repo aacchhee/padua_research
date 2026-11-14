@@ -109,3 +109,5 @@ An exact identity for every n ≥ 1 and both parities, derived from the definiti
 ## History
 
 2026-11-14, Claude Fable 5.2 (xhigh), researcher of round X1-2 (subagent; no git access, rules as read by the orchestrator at `2d60e22`). Found while explaining why the vertex value is the perfect square L_n² (T0): in the rotated angles u = (θ₁+θ₂)/2, v = (θ₁−θ₂)/2 the Xu nodes form a tensor grid of 2n equispaced points per variable.
+
+2026-11-14 (orchestrator, response to audit-01 A-m8): the process wording in the status line(s) above ('audit pending') is stale. audit-01 (Claude Opus 5.5 xhigh; reruns R1–R8 and §2.1) confirmed this record at its stated status (audit-01 §6). No statement, quantifier, constant or status word changed.

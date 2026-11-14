@@ -29,7 +29,7 @@ Overall status: OPEN.
 | Grid maximum of λ_n equals the vertex value at (±1,1); no other local maximum reaches 0.9·λ_n(1,1); even 2 ≤ n ≤ 60 | MEASURED (orchestrator's G1-MP screen) | `evidence/mp-g1-summary.json`: `grid_max_is_vertex_value_all: true`, relative gap g_n ∈ [0.444, 0.599]; best non-vertex local maximum on the edge x = ±1 near the lower vertex, ≈ 0.403·λ_n(1,1) |
 | Lemma K: four-term closed form of ℓ_{p,q}(cos θ₁, cos θ₂) | PROVED (minor supporting step, proof below; not part of the target's statement) | numerical check 1.1e−28 |
 | Scaling limits L_top, L_bot (formulas below) | OPEN (heuristic derivation; conjecture) | MEASURED agreement at n = 100, 400 to 3 digits |
-| First variation at (1,1): D_x := Σ sgn(ℓ_a(1,1)) ∂_xℓ_a(1,1) > 0 and D_y > 0 | MEASURED for n ∈ {2,4,6,8,10,20,30,40,60,80} | D_x/M⁴ from 0.0193 to 0.0495, D_y/M⁴ from 0.0274 to 0.0509; no proof |
+| First variation at (1,1): D_x := Σ sgn(ℓ_a(1,1)) ∂_xℓ_a(1,1) > 0 and D_y > 0 | MEASURED for n ∈ {2,4,6,8,10,20,30,40,60,80} | D_x/M⁴ from 0.0193 to 0.0495, D_y/M⁴ from 0.0274 to 0.0509; no proof. 2026-11-14 (orchestrator, response to audit-01 A-m4): superseded by X2-32 (PROVED, computer-assisted, even n ≤ 3000; n > 3000 OPEN); the MEASURED label of this row is kept as the historical status |
 
 PARTIAL is not used: the proved items are supporting lemmas, not conjuncts of the target.
 
@@ -57,7 +57,7 @@ X2-21 (Lemma 1 for Lemma K), X2-23 (f) (ℓ_a(1,1) ≠ 0, used in the local-maxi
 
   (c) On the grid {0.25, 0.75, …, 11.75}² the largest value of L_top is 0.5122 at (0.25, 0.25) (c* = 0.51695; L_top(0.01, 0.011) = 0.5154 with the quadrature truncated at T = 200); along the edge ζ ≈ 0: L_top = 0.509, 0.490, 0.423, 0.230, 0.143, 0.093, 0.041 at ξ = 0.5, 1, 2, 4, 8, 16, 32. sup L_bot on the same grid ≈ 0.2083 at (0.25, 5.25); on the edge ξ ≈ 0 the maximum is 0.2088 at ζ = 5.0, i.e. 0.4038·c*, matching the G1 observation 0.403. L_top is not monotone along every coordinate line (flag `Ltop_on_grid_decreasing…: false`). (d) First variation: D_x, D_y > 0 for all sampled n.
 - Quadrature caveat: the L values use a midpoint rule with step 0.004–0.01 truncated at T = 200–600; integrands decay like τ⁻²; estimated absolute error ≤ 2e−3. Not certified.
-- Independent rerun: pending.
+- Independent rerun: done in audit-01 §2.1 (R1–R8). Per-record verdict: audit-01 §6.
 
 ## Sources
 
@@ -125,7 +125,7 @@ Overall status of the target stays **OPEN**. New records of this round: X2-31 (P
 | inside the lower boxes: λ_n < c*n² | OPEN | item W-bot |
 | lim Λ_n/n² = c* | OPEN | needs W-top (non-strict, with o(n²) error) and W-bot |
 
-"P1 for every even n ≥ 2" is thus PARTIAL in the sense of the workflow (range n ≤ 3000 PROVED under X2-32, range n > 3000 OPEN); the argmax target itself is OPEN.
+"P1 for every even n ≥ 2" is thus plan progress (not a registered target) (range n ≤ 3000 PROVED under X2-32, range n > 3000 OPEN); the argmax target itself is OPEN.
 
 **Measured (not proved), supporting P1-tail.** (i) D_x/M⁴ and D_y/M⁴ increase to ≈ 0.05123 (certified values 0.051195 and 0.051235 at n = 3000); the heuristic limit is d := (8/π)∫_{h̃>0} k₂ dτ = 0.0512373057615 (60 bumps), k₂(τ) := sin²τ cos τ·m₄(τ)/24, m₄(τ) := ∫_{−1}^{1}(1 − s⁴)cos(τs) ds; it comes from 𝒦_top = −h̃ + (ξ²+ζ²)k₂ + … . (ii) T_a > 0 at every band node and T'_a > 0 at every band node except (p,q) = (1,2), every even n ≤ 3000 (ball arithmetic). (iii) The Chebyshev-U coefficients of the band polynomial Π_B := −Σ_B(−1)^pℓ_a on the two edges through (1,1) are all positive for even n ≤ 120 (float64): P_n(x,1) = −U_n(x) + 2Σ_i b_iU_i(x), P_n(1,y) = −(n+1) + 2Σ_j b'_jU_j(y) with b_i, b'_j > 0. If b'_j ≥ 0 were proved, D_y > 0 would follow at once (U_j'(1) ≥ 0).
 
@@ -136,3 +136,7 @@ Overall status of the target stays **OPEN**. New records of this round: X2-31 (P
 - W2: prove B(ξ,ζ) := E_{u,u'∈[−1,1]}|cos((uξ+u'ζ)/2)|·J((uξ−u'ζ)/2) ≤ c*, with B < c* − δ(r₀) for max(ξ,ζ) ≥ r₀ (measured: B = 0.5155, 0.4951, 0.4355, 0.2840, 0.3575, 0.3262 at (ξ,0), ξ = 0.25, 1, 2, 4, 8, 16; B ≥ L_top at all 11 test points); one-parameter function J, so a certified enclosure of J on [0, π] plus an elementary averaging argument is enough. Lower boxes: the same with the even lattice gives the bound (max J)·sup E|sin((uξ+u'ζ)/2)| ≤ 0.5606·0.78 < c* (to be certified).
 - W3: matching region max(ξ,ζ) ≤ r₀: quantitative P1 (D_x, D_y ≥ d₀M⁴) plus control of sign flips of the shifted kernels in the box (the averaged bound is exact to second order at the vertex, X2-34 remark).
 W1 + W2 give lim Λ_n/n² = c*; W1–W3 with P1-tail and finite certificates (gate G3) give the argmax.
+
+2026-11-14 (orchestrator, response to audit-01 A-m4 and A-m8): (i) the word PARTIAL in the paragraph after the Round X2-3 table was replaced in place by "plan progress (not a registered target)": "P1 for every even n ≥ 2" is a plan item, not a registered target, so no PARTIAL status is claimed; registering P1 as its own target would be a material change and is not taken here. (ii) The MEASURED first-variation row of the status table is annotated "superseded by X2-32". (iii) The wording 'rerun pending' / 'independent rerun pending' in the Round X2-3 addendum (its first paragraph and the P1 rows of its table) is stale: audit-01 §2.1 confirmed X2-32 (R5 and the auditor's separate code path). The target stays OPEN; no statement or status word changed.
+
+2026-11-14 (orchestrator, response to audit-01 A-m6): the MEASURED round-X2-3 quantities quoted in the addendum above come from `python3 code/mp/research/x2r3_checks.py` runs whose outputs are committed (float64/mpmath, labelled MEASURED in the files; no claim added): the heuristic limit d = 0.0512373057615 and the positivity of the band U-coefficients (n ≤ 120) in `evidence/mp-x2r3_checks_b.json` (`dlimit`, `ucoef`); the averaged-bound table B(ξ,ζ) of item W2 in `evidence/mp-x2r3_checks_c.json` (`jensen`); the second-code-path run for n ≤ 24 in `evidence/mp-fv_full_2_24.json`. The certified D_x/M⁴, D_y/M⁴ values are in `evidence/mp-x2r3-first-variation.json` (n ≤ 3000) and, from the auditor's separate path, in `evidence/audit-x2-separate-path.json`.

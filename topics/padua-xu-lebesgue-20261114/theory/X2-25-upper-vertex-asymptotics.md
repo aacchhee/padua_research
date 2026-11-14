@@ -66,7 +66,7 @@ All runs 2026-11-14 on the topic machine (python 3.13.18, numpy 2.5.3, mpmath 1.
 - `python3 code/mp/research/x2_corner_arb.py --nmax 60`: c* ∈ [0.516953653366381…, 0.516953653367681…] (200 terms, all roots a_j enclosed by certified sign changes); for every even n ≤ 60 the ball for R_n := λ_n(1,1) + (n+1) − c*(n+5/2)² lies inside the proved interval (flag `two_sided_X2-25`); e.g. R_2 = −1.62275, R_10 = −2.85556, R_30 = −4.49009, R_60 = −5.83016.
 - `python3 code/mp/research/x2_corner_checks.py decomp` (float64, M ∈ {4,6,8,10,12,16,22,32,52,102,202,402,802,1202}): all node-wise inequalities of Step B hold at every node (S ≥ V̂; S ≤ V̂/(1−ε_s); 0 ≤ e₁ ≤ bound; 𝓜 ≤ c_M ĥ; 𝓜 ≥ c_M ĥ − L_c − L_s; L_c, L_s ≤ bounds; ε_s < ¼ on V̂ < 1), and all block bounds of Steps C–D hold with room: Σe₁ ∈ [0.567, 0.815] (bound 2.012); ΣL_s ∈ [1.38, 1.78] (bound 4.28); ΣL_c from 0.275 (M=4) to 6.41 (M=1202) (bound 2.45 … 18.44); 2c_M·|Σ_{r≥1}ĥ(ηr) − I/η| ≤ 0.149 (bound 3.63); 2c_M·Σ_miss from 1.53 to 2.30 (bound 3.33 … 8.22). `all_checks: True` for every M.
 - `python3 code/mp/research/x2_corner_checks.py table`: R_n = −1.623, −2.000, −2.325, −2.606, −2.856, −3.807, −4.490, −5.456, −6.971, −8.703, −10.641, −12.787, −15.140, −17.686, −20.420 for n = 2, 4, 6, 8, 10, 20, 30, 50, 100, 200, 400, 800, 1600, 3200, 6400 (float64 band sums); all inside the proved interval.
-- Independent rerun: pending (auditor).
+- Independent rerun: done in audit-01 §2.1 (R1–R8). Per-record verdict: audit-01 §6.
 
 ## Sources
 
@@ -215,3 +215,5 @@ A two-sided explicit estimate of the vertex value λ_n(±1,1) for every even n �
 - 2026-11-14, Claude Fable 5.2 (xhigh), researcher subagent of round X2-2; uncommitted at writing. First version.
 
 2026-11-14 (orchestrator addendum, after independent check finding M1): the ball-arithmetic evidence for this record's computer-assisted parts is committed at `evidence/mp-x2-corner-arb.json` (SHA-256 `4f6657ba496a051c1bbfe8e64f3b5266ecd8607fddaf3d3b37c3f126add27b99`). It was produced by `python3 code/mp/research/x2_corner_arb.py --nmax 60 --out evidence/mp-x2-corner-arb.json`, script SHA-256 `48ac5a4f61a8ad66319f8e2a469a3d2b6b42219bb60acd9b5edd13d3e9101045`; that differs from the developer's version only in docstring record IDs. All flags are true. An independent rerun with separate code (Opus 5.5 checker, `code/mp/independent/`) confirmed the finite ranges through n = 60 and the c* enclosure; see `independent-checks-X2.md`. The float checks of `x2_corner_checks.py` are regenerable and are not committed (23 KB).
+
+2026-11-14 (orchestrator, response to audit-01 A-m8): the process wording in the status line(s) above ('independent rerun pending') is stale. audit-01 (Claude Opus 5.5 xhigh; reruns R1–R8 and §2.1) confirmed this record at its stated status (audit-01 §6). No statement, quantifier, constant or status word changed.

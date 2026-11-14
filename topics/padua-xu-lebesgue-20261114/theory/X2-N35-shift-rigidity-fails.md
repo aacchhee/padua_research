@@ -48,11 +48,14 @@ X2-34 (definition of Ξ_n).
 ## Checks
 
 - `python3 code/mp/research/x2r3_checks.py shift` (float64; 2026-11-14; 10 s). M = 202, (Mφ₁, Mφ₂) ↦ Ξ/M² [heuristic]: (0,0) 0.5144 [0.5170]; (0.9,−0.9) 0.5553 [0.5606]; (−0.9,0.9) 0.4837 [0.4843]; (1.8,0) 0.3404 [0.3485]; (0,1.8) 0.2939 [0.3010]; (0.6,0.6) 0.4200 [0.4267]; (−0.6,0.6) 0.4774 [0.4777]; (π,π) 0.5071 [0.5170]; (π,0) 0.0047 [0]; (0,π) 0.0079 [0]. Scan Ξ(s/M, −s/M)/M² against J(−s), s = −1.5…1.5: agreement within 0.006. `Jmax_on_grid` 0.560585, `Jmin_on_grid` 0.477408, `J(0)` 0.516954.
-- Independent rerun: pending.
+- Independent rerun: done in audit-01 §2.1 (R1–R8): the auditor's ball-arithmetic certificate of Ξ_n(a)/Ξ_n(0) > 1 at M = 62, 102, 202 is in `evidence/audit-x2-separate-path.json` (see the dated note under Checks). Per-record verdict: audit-01 §6.
+- 2026-11-14 (orchestrator, response to audit-01 A-m5; status unchanged, MEASURED): accuracy note and the missing M = 62, 102 values. (i) The developer's float64 closed form of G̃ cancels catastrophically near x = y. At M = 102 the recorded ratio Ξ_n(a)/Ξ_n(0) = 1.0752491 (`evidence/mp-x2r3_checks_b.json`, shift rows) differs from the certified 1.0752352 ± 2.6e−8. Per audit-01 A-m5 the cause is the node (p,q) = (43,44), where x − y = −4.3e−6 and the float64 closed form gives 72661.5 against a true G̃ = 72566.1 (auditor's finding; not re-derived here). The conclusion Ξ_n(a) > Ξ_n(0) is unaffected. (ii) The Statement lists M ∈ {62, 102, 202}, while the Checks above quote only M = 202. The developer's float64 values at a = (0.9/M, −0.9/M) are in `evidence/mp-x2r3_checks_b.json`: Ξ_n(a)/M² = 0.543423 (M = 62), 0.550158 (M = 102), 0.555322 (M = 202) and Ξ_n(a)/Ξ_n(0) = 1.0698576, 1.0752491, 1.0796016. (iii) Ball-arithmetic values from the defining sums for G̃ (auditor's script `code/audit/audit_x2_misc.py xi`, committed output `evidence/audit-x2-separate-path.json`, section `xi_certificate`): Ξ_n(0) = 1952.52004567117 ± 3.8e−13 (= λ_60(1,1)), 5323.27284670304 ± 2.3e−12 (= λ_100(1,1)), 20988.6274884779 ± 1.3e−11; Ξ_n(a)/Ξ_n(0) = 1.0698576 ± 3.9e−8 (M = 62), 1.0752352 ± 2.6e−8 (M = 102), 1.0796015 ± 4.8e−8 (M = 202), each flagged `certified_Xi_shift_gt_Xi0: true`. The status of this record stays MEASURED (the Statement is the developer's float64 claim); upgrading it to PROVED at these M (audit-01 n2) would be a status change and is not taken here.
 
 ## Sources
 
 None.
+
+2026-11-14 (orchestrator, response to audit-01 A-m1): this record is the Morrow–Patterson variant of IDEA-316 (shifted-lattice primitive maximal at the coset), which PD-N079 refutes for the Padua primitive for every fixed n ≥ 3 (see also IDEA-333). The MP kernel differs (Ξ_n is built from G̃ with absolute values on the MP lattice), so PD-N079 does not transfer and the test here was legitimate; the result is REJECTED: failed, with MEASURED scope as stated above. See `novelty-gate-X2.md`, Round X2-3 addendum, row X2-R3-C3.
 
 ## Proof or evidence
 

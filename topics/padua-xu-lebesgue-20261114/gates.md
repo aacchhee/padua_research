@@ -70,3 +70,28 @@ Pre-registered by the orchestrator after the literature verdict in `literature-x
 - **G1 Xu: "vertex conjecture supported"** for n = 2..60, both parities (MEASURED). min g_n = 0.0697 at n = 60; g_n decreases slowly (0.207 at n = 4, 0.13 at n = 12, 0.081 at n = 40). The runner-up is always the **edge midpoint** family (exactly the midpoint for n ≡ 0 mod 4); the best interior local maximum ratio is 0.866 at n = 60. No kill flag. Evidence: `evidence/xu-g1-summary.json`; command `python3 code/xu/g1_screen.py --nmin 2 --nmax 60`.
 - **G1-MP: argmax at (±1,1) only** for even n = 2..60 (MEASURED). No local maximum reaches 0.9·λ(1,1); the best non-vertex local maximum is on the edge x = ±1 near y = −1 at ≈ 0.403·λ(1,1); g_n ≈ 0.597 for n ≥ 8. Evidence: `evidence/mp-g1-summary.json`.
 - **C-MP:** Path-A enclosures for even n ≤ 30 contain n+1 at (±1,−1) and certify λ(1,1) ≠ λ(1,−1) at every tested n. Path-B checker: `evidence/mp-cmp-check.json`. A PD-N needs the theory record and the auditor's rerun.
+
+## Dated addendum — 2026-11-14 (orchestrator, response to audit-01 A-m8 and A-m6; earlier text unchanged)
+
+**Stale process text in the Verdicts above.** "independent rerun by the auditor still required" (section heading) and "A PD-N needs the theory record and the auditor's rerun" (C-MP line) are done: audit-01 §2 (R1–R3) reran G0 Xu, G0 MP and `cmp_check.py` and reproduced `evidence/xu-g0.json`, `evidence/mp-g0.json` and `evidence/mp-cmp-check.json` (`ALL_rows_consistent True`); the C-MP refutation clause (independent rerun on path B) is met by R3 plus the auditor's defining-sum values at (±1, ±1) for n ≤ 30 (audit-01 §4, Gates). The G0 PASS and G1 / G1-MP verdicts stand as pre-registered; no verdict text was changed.
+
+**Evidence index** (every file in `evidence/` and the record(s) it supports; added to make each file referenced from a record):
+
+| Evidence file | Produced by | Supports |
+|---|---|---|
+| `xu-g0.json` | `code/xu/g0_check.py --nmax 12` | G0 Xu (this file); audit-01 R1 |
+| `mp-g0.json` | `code/mp/g0_check.py` | G0 MP (this file); audit-01 R2 |
+| `xu-g1-summary.json` | `code/xu/g1_screen.py` | G1 Xu (this file); X1-03, X1-04, X1-05, X1-08 (Checks) |
+| `xu-vertex-values.json` | `code/xu/vertex_values.py` | MEASURED values of λ_n at V*, n ≤ 401 (30 digits); numerical companion of X1-03 (not cited there) |
+| `mp-g1-summary.json` | `code/mp/g1_screen.py` | G1-MP (this file); X2-28 (status table, MEASURED row) |
+| `mp-cmp-certificate.json` | `code/mp/cmp_generate.py` (path A) | C-MP (this file); X2-22, X2-23, X2-24, X2-N29, X2-N30 (Checks) |
+| `mp-cmp-check.json` | `code/mp/cmp_check.py` (path B) | C-MP (this file); X2-N29; audit-01 R3 |
+| `mp-cmp-identify.json` | `code/mp/cmp_identify.py --nmax 10 --dps 600` | MEASURED context for X2-22 and X2-N29 (dated notes there) |
+| `mp-corner-values.json` | `code/mp/corner_values.py` (+ `corner_analysis.py`) | MEASURED context for X2-27 and X2-N30 (dated notes there) |
+| `mp-x2-corner-arb.json` | `code/mp/research/x2_corner_arb.py --nmax 60` | X2-25, X2-26, X2-27, X2-N30 (pinned in those records); audit-01 R4 |
+| `mp-x2r3-first-variation.json` | `code/mp/research/x2r3_first_variation_arb.py --band --nmin 2 --nmax 3000` | X2-32 (timing-field note under Checks); audit-01 R5 |
+| `mp-fv_full_2_24.json` | same script, `--full --nmin 2 --nmax 24` | X2-31 and X2-32 (dated notes under Checks); audit-01 R6 |
+| `mp-x2r3_checks_b.json` | `code/mp/research/x2r3_checks.py dlimit shift ucoef` | X2-N35 (`shift`); X2-28 addendum (`dlimit`, `ucoef`) |
+| `mp-x2r3_checks_c.json` | same script, `farfield jensen` | X2-33 (`farfield`); X2-28 addendum W2 (`jensen`) |
+| `mp-x2r3_checks_t.json` | same script, `transl` | X2-33 (Step 0 formulas), X2-34 (Checks) |
+| `audit-reruns.json`, `audit-x2-separate-path.json`, `audit-x1.json` | `code/audit/*.py` (auditor) | audit-01 §2, §2.1; X2-32 (separate path), X2-N35 (`xi_certificate`), X2-33 (`farfield_spot`), X1 (`audit-x1.json`) |

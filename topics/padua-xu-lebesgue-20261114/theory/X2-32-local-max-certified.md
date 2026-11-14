@@ -42,7 +42,11 @@ X2-31 (a), (c), (d); X2-23 (a), (b) (closed form and sign rule of A_{p,q}); X2-2
 - Same run, extra flags (measured facts, not needed for the statement): `all_band_Tx_positive: true` (T_a > 0 at every band node, every n ≤ 3000) and `Ty_nonpositive_only_at_(1,2): true` (T'_a > 0 at every band node except the node (p,q) = (1,2), where T'_a < 0).
 - `… --full --nmin 2 --nmax 24` (0.2 s): D_x, D_y from the defining kernel sums over all nodes, with signs of ℓ_a(1,1) certified node by node, agree with the band path to all printed digits; all positive.
 - Output JSON is in /tmp/x2r3 (not committed; regenerable in 2 minutes).
-- Independent rerun: pending (auditor; a rerun on a separate code path for all n ≤ 3000 would need the `--full` path, which costs O(n⁴) per n, or an independent implementation of the band path).
+- Independent rerun: done in audit-01 §2.1 (R5 byte-identical rerun apart from the timing field; separate code path `code/audit/audit_x2_fv_sep.py` at 109 values of n up to 3000, and in full-sum mode for n ≤ 80). Per-record verdict: audit-01 §6.
+- 2026-11-14 (orchestrator, response to audit-01 A-m6 and A-m4):
+  - **Pinned hash.** The `full_output.sha256` pinned in `evidence/mp-x2r3-first-variation.json` (`25db45028e782806e5361ec588cecb66297afca301eef2dfbeb1fa34425fc05a`; 758 428 bytes) covers the non-deterministic `wall_seconds` field (105.7 in the committed run). A rerun reproduces the output byte for byte once that field is substituted by 105.7: in audit-01 §2.1 (R5) the auditor's rerun (`wall_seconds` 99.0, SHA-256 `0bed8871…`, 758 427 bytes) matched the pinned hash exactly after the substitution. The pinned evidence file is not rewritten.
+  - **Second code path.** `evidence/mp-fv_full_2_24.json` is the output of `python3 code/mp/research/x2r3_first_variation_arb.py --full --nmin 2 --nmax 24` (python 3.13.18, python-flint 0.9.0, 192 bits, as in the Checks above). It has no command or version field of its own; audit-01 R6 reproduced it apart from `wall_seconds`. It supports the "second code path, even n ≤ 24" row of the status table (and the `--full` check of X2-31).
+  - **Split from.** "X2-28 plan item P1" in the header refers to a plan item, not to a registered target; no PARTIAL or other status is implied for it (audit-01 A-m4).
 
 ## Sources
 
@@ -64,3 +68,5 @@ Finite range only. Nothing is claimed for n > 3000 or about global maxima.
 ## History
 
 - 2026-11-14, Claude Fable 5.2 (xhigh), researcher subagent of round X2-3; uncommitted at writing. First version.
+
+2026-11-14 (orchestrator, response to audit-01 A-m8): the process wording in the status line(s) above ('independent rerun pending; rerun pending') is stale. audit-01 (Claude Opus 5.5 xhigh; reruns R1–R8 and §2.1) confirmed this record at its stated status (audit-01 §6). No statement, quantifier, constant or status word changed.
