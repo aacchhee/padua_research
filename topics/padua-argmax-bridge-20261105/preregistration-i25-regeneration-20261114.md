@@ -20,11 +20,15 @@ Acceptance: all four workers exit0; exactly942 unique accepted (n,pass) pairs;31
 
 First failure stops remaining worker process groups. Exceptions and TERM/HUP/INT enter finally cleanup: terminate owned groups, wait4-reap for two seconds, then kill and reap remaining owned children. ProcessLookupError on kill races is harmless; missing child statuses are recorded as failures. Failure observations are written before nonzero exit. Preserve all failure outputs. No rescue, precision escalation, floor/tree alteration or silent retry; any correction requires a dated prospective amendment reviewed before another run.
 
-Commands from repository root (the essential directory is `local-output/argmax-bridge-20261105/regeneration-20261114-essentials`, populated by byte-preserving data-only copies after campaign validation):
+Commands from repository root (the essential directory is `local-output/argmax-bridge-20261105/regeneration-20261114-direct-essentials`, populated by byte-preserving data-only copies after campaign validation):
 
 ```
-python3 -E -B topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/freeze.py --additional-dir local-output/argmax-bridge-20261105/regeneration-20261114-essentials --output topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/input-freeze.json
+python3 -E -B topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/freeze.py --additional-dir local-output/argmax-bridge-20261105/regeneration-20261114-direct-essentials --output topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/input-freeze.json
 timeout --signal=TERM --kill-after=5s 7350s env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -E -B topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/launch.py --freeze topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/input-freeze.json --output local-output/argmax-bridge-20261105/i25-regeneration-20261114/full-v1
 ```
 
 A distinct agent reviews source/preregistration/freeze before launch. After success, that agent independently reruns both passes for41,458,511 with fresh processes/cache using worker.py, --freeze input-freeze.json and the same frozen inventory, CPU120/wall180/address2GiB, preserving separate outputs; compare every scientific result field except timings with full observations. Distinct agent also reruns unchanged `independent_phase_checker/accept_controls.py` on authenticated old archive (CPU60/wall90); its source SHA is recorded before that run. These checks supplement the required separate Claude audit; no self-approval is claimed. Only a concise new summary/identities enter Git; cold storage remains pending AC's chosen reachable destination.
+
+## Concrete input freeze — before execution
+
+After successful native campaign and full unchanged validate_pass on all382 native passes, direct data-only staging supplied exactly382 immutable bytecopies. The concrete inventory is112328bytes, SHA256 `3d670da1914987a9033a2b4a3e36c53264dc1e72eaa41dcfb3eb704080c6990f`. The path uses `-direct-essentials` because separate native-export staging had data-path/affinity failures; no numerical campaign was rerun. `input-freeze.json` records this newly authenticated inventory, unchanged checker/driver sources and actual runtime byte identities. Distinct review and root commit gate execution.

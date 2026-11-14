@@ -1,0 +1,26 @@
+{
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+    "python_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+    "numpy": "2.3.5",
+    "numpy_core_extension": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/_core/_multiarray_umath.cpython-312-x86_64-linux-gnu.so",
+    "numpy_core_sha256": "ba96467ae494babaf7c3458b09cc03c4200c2e10010860d80e452ffb8b01c8cd"
+  },
+  "additional_dir": "local-output/argmax-bridge-20261105/regeneration-20261114-direct-essentials",
+  "inventory": "local-output/argmax-bridge-20261105/regeneration-20261114-direct-essentials-inventory.json",
+  "inventory_sha256": "3d670da1914987a9033a2b4a3e36c53264dc1e72eaa41dcfb3eb704080c6990f",
+  "sources": {
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/independent_phase_checker/check.py": "1501ce9435a17e9cc4b0954f3ce90f47450252d58027e08468ce905528fdc8be",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/independent_phase_checker/controls.py": "c1810bd1dc6ddcbb3501c0589f099c89fa50fd6bd2e79b77f06030d8cc114bd1",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/independent_phase_checker/runtime_probe.py": "9f1c503e5c0b0739c1e4d85a5f2b920cc515f0d55f2c3039b66ce59278fd1751",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/independent_phase_checker/accept_controls.py": "c0ab77e611b78c840c8ac02cad1431c20bb018be9a2770605f2aeae450a4e908",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/worker.py": "2a0c032506485376884ce286870a7db964dcba2203d0627686f43fc311cc0cb4",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/launch.py": "132f74ee5c401525f572ebd523bb8ed1866846903fe774e2ecb280578fba504b",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/freeze.py": "28dae4eb0b68b151b45fc2257c9c104a1b48d4822466c5d70d4bf87312a6f709",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/runtime_identity.py": "1bd5b93cdbed1a1eab1a8aa29b4f330e570a7e9d06be46c7de46b27ff849c352",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/code/regeneration_i25_20261114/records.py": "1e84c80e560013121a03bda136bba0ead942235c27b4a2ff69923c4c8427dfb9",
+    "/workspace/padua_research/topics/padua-argmax-bridge-20261105/compact_pack/process_guard.py": "05d2da2ff1a48a8298067c40d9ece7fe45ea26d59c36a9b6dbe1704e20507779"
+  },
+  "old_archive_sha256": "b00fd57f85ce6d96a6c1fa01e2307abd815088bb8fcb28b1587657ef142b109a"
+}
