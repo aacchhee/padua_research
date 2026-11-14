@@ -206,7 +206,7 @@ its local path and commands; delivered entries remain empty.
 
 All required evidence is present. AC reports the verified 296,189,961-byte
 [preservation archive](regeneration-delivery.json) is now in cold storage;
-external retrieval is not retested. The separate 5,138,944-byte
-[Zenodo candidate](zenodo-public-delivery.json) has ordinary files and a
+external retrieval is not retested. The separate 5,149,206-byte
+[Zenodo candidate](zenodo-public-response07-delivery.json) has ordinary files and a
 [root README](code/zenodo_public_20261114/README.txt).
 Historical entries above remain historical. No Zenodo upload or DOI is claimed.

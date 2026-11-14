@@ -147,3 +147,13 @@ identities. Earlier active-freeze descriptions above are historical.
 The paper now uses regenerated 320–510 evidence and new full 41–511
 independent outputs; see [regeneration record](../regeneration-20261114.md).
 No unavailable historical archive is a dependency of this version.
+
+
+### Response-07 current artifacts — 2026-11-14
+
+Paired source `5f435be21f29f6fbf48e6d8cba15346117d7e151`, 59/152 pages, 19 statements/86 numbered
+environments/120 matching built labels. The public kit and separately held
+preservation archive are now described distinctly in both data statements.
+BUILD.md documents --built-labels over current aux files without retired PDFs.
+[New public kit](../zenodo-public-response07-delivery.json) and
+[response-07](../response-07.md) supersede earlier active-build pointers.

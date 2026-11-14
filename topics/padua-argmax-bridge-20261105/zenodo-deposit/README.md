@@ -461,3 +461,18 @@ No upload, DOI assignment or new license/authorship metadata is claimed.
 ## Dated addendum, 2026-11-14 (Claude audit-07, in-place MINOR fix)
 
 The file list above describes the earlier preservation plan and includes artifacts that are retired as acceptance requirements. The current deposit candidates are the 5,138,944-byte public verification kit (SHA256 `15885d34498b7f20c20f4b97453babfa85a09d46490dbcb14c051b429e2ee036`, described in [zenodo-public-package-20261114.md](../zenodo-public-package-20261114.md)) and the separate 296,189,961-byte preservation archive. Neither has been uploaded and no DOI exists. Which of them is named in the manuscripts' data statements is an open finding ([audit-07 P7-01](../audit-07.md)); a historical row above is not an instruction to deposit it. Source: [audit-07 M7-04](../audit-07/m7-manuscripts.md).
+
+## Current response-07 public candidate — 2026-11-14
+
+The current candidate supersedes the earlier 5,138,944-byte ZIP as a proposed
+publication artifact, while preserving it unchanged. The rebuilt normal ZIP is
+**5,149,206 bytes**, SHA256
+`b341e6a1c6875550b58576b2cb167766f5a3cf9a4e4fc620b1134d2c490adbaa`.
+It includes the corrected PDFs and README/adapter changes listed in
+[response-07](../response-07.md), with exact identities in the
+[new receipt](../zenodo-public-response07-delivery.json).
+The preservation archive remains separate in owner-reported cold storage.
+AC chooses retaining the checksum-bound paths/process text with explicit
+README disclosure; no sanitized derivative is claimed. No upload or DOI is
+assigned. License/author/funding/AI/draft metadata and the global repository
+budget remain owner-controlled decisions, not inferred permissions.

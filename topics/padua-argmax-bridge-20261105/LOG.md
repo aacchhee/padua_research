@@ -3565,3 +3565,40 @@ all 19 statements and 86 numbered display blocks per tree remain byte-identical.
 All other requested wording fixes ride in the same new source freeze. Actual
 build/aux/code/ZIP results will be recorded only after execution. Old public
 and preservation archive bytes remain unchanged.
+
+Final response-07 checks: source freeze 5f435be and separate pointer daa77deb
+build at 59/152 pages, PDF hashes d51627f5…/9de87206…. Source 19/86/120,
+current --built-labels 120, archival 13/90/113, baseline controls 7 and copied
+13-scenario harness all meet expected outcomes. Only HEAD/BASELINE changed
+in the copied audit-06 harness; SHA256 c571617de1d7afab4fa068b3f4fe80ee44b6e6e4f6b54acc9a097f9cae1f9b2e.
+Empty-map scanner confirms formal blocks equal e861c752. Distinct review
+renders changed final pages and independently repeats current source/aux gates.
+
+The first new public build from frozen code dce3260 includes explicit new
+PDF identity input; the historical preservation receipt is not changed.
+New ZIP 5,149,206 B SHA256 b341e6a1c6875550b58576b2cb167766f5a3cf9a4e4fc620b1134d2c490adbaa.
+Exactly 9 paths differ, 1,010 files and every 942/39 certificate input remain
+byte-identical; all 1,019 ZIP file modes 0644. Both README guides disclose AC's
+retention choice, trust anchor, resources and actual commands. Developer
+bounded quick smoke waitstatus 0, CPU 24.861645 s/wall 25.046612 s; distinct fresh
+extraction/README quick wait 0, CPU 25.855 s/wall 25.914 s on Python 3.13.5/NumPy 2.2.4.
+Nine selected/new negative controls reject as intended. No full 942/full 39 or
+native campaign is repeated. The completed supplementary review records exact
+scope and identities; the next Claude check is data statements+ZIP delta only.
+
+E7 notes: exact 1775-byte historical direct-staging body is now committed,
+not executed again; native/I25 prose amendments are dated, machine freezes
+unchanged. J03 documents shared within-degree cache and pair-equality scope.
+Native 112,708 KiB is pass RSS, not total/summed memory. Timeout-wrapper wait4
+boundary and executed cf64 versus final 94ca readback distinction remain
+explicit; no extra retrospective execution or endpoint validation is claimed.
+
+Final generated-output accounting: main 9,787,481 bytes; topic incremental
+share 2,061,004; whole topic-branch tree including main 11,848,485; with 2,087-byte
+exception 11,850,572; conservative no-shrink bound 11,870,763 against 10,000,000.
+The whole topic tree exceeds the cap even though main alone and the incremental
+share separately do not. All new receipt/evidence files stay under 16 KiB;
+source-code size is not constrained by that evidence norm. No unrelated output
+is deleted/reclassified. AC's budget, DOI and author/AI/draft/publication choices
+remain, while retained-path disclosure is explicitly resolved. No upload.
+Next: [handoff 39 — focused response-07 diff review](handoffs/39-claude-review-response07.md).

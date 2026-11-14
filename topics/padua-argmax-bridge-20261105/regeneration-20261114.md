@@ -152,3 +152,17 @@ The original 560 and regenerated 382 phase records are one current
 not an old-versus-current division of the public dataset.
 
 **Dated addendum, 2026-11-14 (Claude audit-07, in-place MINOR fix).** Precision for the sentence "Independently substituted upper bounds are below 42,174 of the stored S uppers": the test in `check.py` is non-strict (at most). The independently substituted upper bounds are at most the stored upper for 42,174 of the 43,116 S checks; the other 942 stored S uppers are not validated by this test, which is why the record says it does not validate every stored native endpoint. Source: [audit-07 E7-06](audit-07/e7-evidence.md).
+
+
+### Response-07 publication alignment — 2026-11-14
+
+Both current data statements distinguish the public verification kit from
+the separately preserved full archive. The new kit carries the corrected
+59/152-page PDFs, stricter standalone adapter, readable trust/resource guide
+and explicit path/process disclosure selected by AC. All 942 phase and
+39 polynomial input bytes remain unchanged.
+[Response-07](response-07.md), [new public artifact](zenodo-public-response07-delivery.json)
+and [focused supplementary review](supplementary-review-response07-20261114.md)
+record exact identities and bounded checks. Earlier public ZIP 15885d34 and
+preservation ZIP d3452a17 remain unchanged. For native resource terminology,
+112,708 KiB is the recorded maximum pass RSS, not summed campaign memory.

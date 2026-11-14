@@ -224,3 +224,26 @@ diagnostics remain. Distinct review visually inspects affected final pages.
 The new paper evidence is available and recertified; historical-only PDF
 byte preservation is no longer required by AC. [Regeneration record](../regeneration-20261114.md)
 and its review distinguish actual verification from storage/ABI assumptions.
+
+
+## Response-07 publication-coherence build — 2026-11-14
+
+Current paired TeX/Bib freeze `5f435be21f29f6fbf48e6d8cba15346117d7e151`, installed separately
+in `daa77deb6371a12f6a6e36ff7b894ebb71a7f232`. Root's fresh build.sh exits 0: **152 pages**,
+1223870 bytes, SHA256 `9de87206d4988dd2997016ba9885f2ec5cd59a110ab36abac5576d50dfa877fc`.
+Byte-equal current copy: `/workspace/padua_research/local-output/padua-argmax-bridge-20261105/response07-companion-20261114/padua-companion-20261114-105928-Oslo.pdf`.
+The public ZIP is rebuilt from explicitly hash-validated new PDFs, never by
+rewriting the old preservation receipt. The current built labels compare via:
+
+```sh
+python3 -E -B topics/padua-argmax-bridge-20261105/companion-paper/check_correspondence.py --built-labels --paper-output local-output/padua-argmax-bridge-20261105/response07-paper-20261114 --companion-output local-output/padua-argmax-bridge-20261105/response07-companion-20261114
+```
+
+Actual source 19/86/120 and current aux 120 PASS; default, archival source
+13/90/113, seven baseline controls and 13 mutation scenarios behave as expected.
+Empty rename map preserves formal blocks exactly against e861c752. Current
+ratio 152 <= 5 * 59; old-PDF --artifacts preservation is not run. Changed pages
+were rendered and independently inspected; no errors/overfull/undefined or
+multiply-defined diagnostics. [Response-07](../response-07.md),
+[new receipt](../zenodo-public-response07-delivery.json) and its review give
+exact adapter/PDF/ZIP identities and bounded command scopes.

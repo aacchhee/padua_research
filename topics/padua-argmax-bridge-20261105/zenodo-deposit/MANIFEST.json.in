@@ -246,7 +246,7 @@
     "original_48_162_page_PDF_hashes_preserved": true
   },
   "manuscript_source_freeze": "24a98db4c3c4c4d0eede2e3929532956df87911b",
-  "local_package_status": "Preservation archive unchanged; AC reports cold storage. Separate reviewed public candidate 5138944 B; no Zenodo upload/DOI.",
+  "local_package_status": "Preservation unchanged in owner-reported cold storage; new 5,149,206 B public candidate checked; owner accepts disclosed paths; no upload/DOI",
   "small_bundle_recheck_recipe": "RECHECK-SMALL-BUNDLE.md",
   "revision_note_2026_11_13": "Root and distinct reviewer authenticate original uploaded package/return and accept 280 pairs through repaired compact verifier; actual repaired onset512 canonical reader run remains blocked.",
   "historical_pre_audit04_source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6",
@@ -254,10 +254,10 @@
     "convention": "all positive deltas; no deletion or shrink credit",
     "pre_current_batch_bytes": 9917613,
     "cap_bytes": 10000000,
-    "final_batch_bound": 11864226,
+    "final_batch_bound": 11870763,
     "current_main_merge_positive_bytes": 1881011,
-    "actual_current_classified_bytes": 11841948,
-    "post_original_topic_positive_deltas_bytes": 1946613,
+    "actual_current_classified_bytes": 11848485,
+    "post_original_topic_positive_deltas_bytes": 1953150,
     "cap_satisfied": false,
     "historical_audit05_input": {
       "main_classified_bytes": 9733758,
@@ -268,8 +268,8 @@
       "conservative_bound_bytes": 11751309
     },
     "current_main_classified_bytes": 9787481,
-    "current_topic_classified_share_bytes": 2054467,
-    "current_actual_with_FREEZE_exception_bytes": 11844035
+    "current_topic_classified_share_bytes": 2061004,
+    "current_actual_with_FREEZE_exception_bytes": 11850572
   },
   "verifier_provenance": {
     "original_padua30_unrepaired_verify_compact_sha256": "7c2dad53519aff616bdadd3f925ec8943963cb4bf521b410355f827b7a1899bf",
@@ -288,24 +288,24 @@
     },
     "post_audit05_status": "Specific producer allowlist and optimization/probe defects repaired; supplementary review complete within scope; actual canonical onset512 ZIP and I25 checks remain unavailable."
   },
-  "active_paired_source_commit": "e861c752218fc0a6648d4a4a67fea616ba5cbdd1",
+  "active_paired_source_commit": "5f435be21f29f6fbf48e6d8cba15346117d7e151",
   "historical_manuscript_record_note": "Historical inventory describes the 24a98db 51/147-page pair; current e861c752 59/152-page pair is separate, permanent deposition pending.",
   "current_manuscript_revision": {
-    "source_freeze": "e861c752218fc0a6648d4a4a67fea616ba5cbdd1",
+    "source_freeze": "5f435be21f29f6fbf48e6d8cba15346117d7e151",
     "pages": [
       59,
       152
     ],
-    "paper_sha256": "b0abf068834066e4494cbf9cedecbe2f2c94871233d16f2463816eb2c4501749",
-    "companion_sha256": "3c7a114a9eb33f6211b8e1d522033cf0f0fbbc1a938e206ba1341792feb920ec",
-    "supplementary_review": "Regeneration and final source/layout COMPLETE within scope; focused Claude audit pending",
+    "paper_sha256": "d51627f5b42a647233ae76f95a25754d6b0dff7fbe2ca156d563473ee20c8d39",
+    "companion_sha256": "9de87206d4988dd2997016ba9885f2ec5cd59a110ab36abac5576d50dfa877fc",
+    "supplementary_review": "Response07 PDF/ZIP delta supplementary PASS; focused Claude check pending",
     "historical_PDF_preservation_retested": false
   },
   "historical_response04_paired_source_commit": "ad908acb21d3589d85635618ff68f63dd01cfbca",
   "paper_evidence_generation": "regeneration-20261114.md",
   "public_reproducibility_package": {
-    "record": "zenodo-public-delivery.json",
-    "bytes": 5138944,
-    "sha256": "15885d34498b7f20c20f4b97453babfa85a09d46490dbcb14c051b429e2ee036"
+    "record": "zenodo-public-response07-delivery.json",
+    "bytes": 5149206,
+    "sha256": "b341e6a1c6875550b58576b2cb167766f5a3cf9a4e4fc620b1134d2c490adbaa"
   }
 }
