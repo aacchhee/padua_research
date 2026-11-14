@@ -24,7 +24,7 @@ Plan: [BRIEF](../topics/padua-mz-paper-20261113/BRIEF.md) and [handoff 01](../to
 - PR35 is draft. Codex [audit-01](../topics/padua-mz-paper-20261113/audit-01.md) is answered by [response-01](../topics/padua-mz-paper-20261113/response-01.md).
 - Final IDs are assigned from the reserved range PD-T684–689 ([ledger](../topics/padua-mz-paper-20261113/ALLOCATIONS.md)).
 - The shared registries are updated.
-- The readiness check is pending.
+- [Readiness-01](../topics/padua-mz-paper-20261113/readiness-01.md) passed the response, the merge, the reservation and the registry application, and independently replayed the regenerated PD-T376 witnesses. It found two verifier-entrypoint defects and one registry-hygiene item, all fixed in [response-readiness-01](../topics/padua-mz-paper-20261113/response-readiness-01.md). A focused check of those fixes is pending.
 
 Details: [report for AC](../topics/padua-mz-paper-20261113/report.md), [LOG](../topics/padua-mz-paper-20261113/LOG.md), and the scope tables in the two READMEs.
 
@@ -119,4 +119,4 @@ Manuscript state at head `a0206a8` (later wording cleanup at `a03a4f7`); indepen
 
 ## Next step
 
-Readiness check and focused evidence check by Codex ([handoff 08](../topics/padua-mz-paper-20261113/handoffs/08-readiness-and-evidence.md)): `Codex (gpt-6-astra medium): Continue claude/padua-mz-paper-20261113.`
+Focused check of the verifier fixes by Codex ([handoff 10](../topics/padua-mz-paper-20261113/handoffs/10-focused-check.md)): `Codex (gpt-6-astra medium): Continue claude/padua-mz-paper-20261113.`

@@ -245,6 +245,9 @@ Claude, claude-opus-5-5 (configured xhigh).
   - CC: 4/4 agree, exit 0;
   - SP with `--regenerate`: 25 required checks agree, plus the three vectors, payloads and norms reproduced with negative signs, exit 0.
 - **R1.** Process and AC-task clauses are removed from this topic's sections of RESULTS.md, state/CURRENT.md and PAPER_MAP.md. Scientific content, OPEN items, audit links and evidence facts are kept.
+- **Packs.** Restaged at `52030d1`, unzipped and manifest-checked, then sent as session files and written to `Downloads\zenodo_evidence\`; the device sizes match. They replace the `6aa35fc7…`/`f04f65b5…` versions:
+  - CC `729fb953…4073` (959,748 B);
+  - SP `e8dfc5af…7166` (40,710,337 B).
 
 ## Runs needed
 

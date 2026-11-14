@@ -7,6 +7,7 @@ Branch `claude/padua-mz-paper-20261113`, draft PR #35, base `b5388c2`, head `a02
 > - The two provisional claims are now **PD-T684** and **PD-T685** (reserved range PD-T684–689, [ledger](ALLOCATIONS.md)). The shared registries are updated.
 > - The readiness check is pending.
 > - **PD-T376 package (§6.2): resolved 2026-11-14.** The witnesses were regenerated from `39479ff` with byte-identical payloads and norms, and replayed by both checkers. Both papers' evidence is packed for Zenodo ([zenodo/README.md](zenodo/README.md)). AC uploads the packs.
+> - Readiness-01 (Codex) found two verifier defects and one registry-hygiene item, all fixed in [response-readiness-01](response-readiness-01.md); the packs were rebuilt. A focused check is pending.
 > - Still open for AC: §5 and the deposit itself.
 
 ## 1. What was done

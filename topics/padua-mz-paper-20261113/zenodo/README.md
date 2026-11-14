@@ -4,10 +4,10 @@ AC decided on 2026-11-14: "pack all needed evidence for zenodo, one pack per pap
 
 | Pack | Paper | Bytes | SHA-256 | Files | Manifest |
 |---|---|---:|---|---:|---|
-| `padua-zenodo-mz-cc-20261114.zip` | MZ-CC | 959,099 | `6aa35fc712154bd51da88f3348b821f6d8436b0fbce43e1b998b353d771a2a48` | 378 | [MANIFEST](MANIFEST-padua-zenodo-mz-cc-20261114.txt) |
-| `padua-zenodo-mz-sp-20261114.zip` | MZ-SP | 40,708,593 | `f04f65b59954528ffa59886743da5296495a9d6908f36695dc7515cad6e16b2b` | 707 | [MANIFEST](MANIFEST-padua-zenodo-mz-sp-20261114.txt) |
+| `padua-zenodo-mz-cc-20261114.zip` | MZ-CC | 959,748 | `729fb953ebda51fc2d10ce6886b1b6d55f6c45fbd029776ec020c3675c0a4073` | 378 | [MANIFEST](MANIFEST-padua-zenodo-mz-cc-20261114.txt) |
+| `padua-zenodo-mz-sp-20261114.zip` | MZ-SP | 40,710,337 | `e8dfc5af868b193ef4622850cafad3a5e34ca4b7b557f33bb57cd0fde9347166` | 707 | [MANIFEST](MANIFEST-padua-zenodo-mz-sp-20261114.txt) |
 
-Both packs were staged at commit `90860ecdc12d9887f7d31c3b0440d3b14e8d6169`. They carry the **licence GNU AGPL version 3 or later** (SPDX `AGPL-3.0-or-later`; AC, 2026-11-14), as does the repository. The MZ-CC pack omits SIAM's `siamart251216.cls` and `siamplain.bst`, because SIAM's terms forbid distributing them without the full macro package. Each pack contains:
+Both packs were staged at commit `52030d1d22d6397a02c2831145a962e02105973b`, with the verifiers corrected after readiness-01 (P1, P2; see [response-readiness-01](../response-readiness-01.md)). They carry the **licence GNU AGPL version 3 or later** (SPDX `AGPL-3.0-or-later`; AC, 2026-11-14), as does the repository. The MZ-CC pack omits SIAM's `siamart251216.cls` and `siamplain.bst`, because SIAM's terms forbid distributing them without the full macro package. Each pack contains:
 - `repository/`: a `git archive` of the directories that the paper names, plus every file those programs read or hash;
 - `data/`: the files that are not in Git;
 - `verify.sh`, `tools/compare_receipts.py`, `requirements.txt`, `LICENSE`;
@@ -35,15 +35,16 @@ Not included, because neither paper uses them: the positive controls at m = 60 a
 
 ## Verification before packing
 
-`verify.sh` was run on staged copies at `ed385e9`. Between `ed385e9` and `90860ec`, the changes are: README files, `LICENSE`, the licence sentence in each manuscript source, and the omitted SIAM files. No code, evidence or data changed.
-- **MZ-CC:** the P4 producer and grouped checker, and Table 1. All agree.
-- **MZ-SP:** 25 comparisons, all agreeing:
-  - payload identities;
-  - producer replay and independent checker at m = 1101, 1240 and 1600;
-  - all six bracket certificates, each with its independent check;
-  - both P1 instances, with the protocol hashes;
-  - measurement item (1).
+Each pack's `VERIFICATION-2026-11-14.log` is the console log of the **documented command**, run on a fresh copy of that pack. The copy was identical to the pack except for the commit line in README.md (`58697024`). Each copy had a fresh `python3.12 -m venv venv && venv/bin/pip install -r requirements.txt`.
+- **MZ-CC:** `PY=venv/bin/python bash verify.sh` gave 4/4 checks agree and `ALL REQUIRED CHECKS AGREE`, exit 0.
+- **MZ-SP:** `PY=venv/bin/python bash verify.sh out --regenerate` gave:
+  - 25/25 required checks agree;
+  - the regeneration reproduced all three source vectors, payloads and exact norms, and the producer reports a negative sign each time;
+  - exit 0.
 
-An earlier staging also ran `--regenerate`, which reproduced the vectors and witness payloads from scratch. Each pack's `MANIFEST-SHA256.txt` was checked after unzipping.
+Copies of both logs and the environment are in [../evidence/verify-runs/](../evidence/verify-runs/). The outcome logic is tested separately, with stubbed programs, by [../tools/verify_controls.py](../tools/verify_controls.py): 8 scenarios, all passing ([../evidence/verify-controls/](../evidence/verify-controls/)). After unzipping, each pack's `MANIFEST-SHA256.txt` was checked.
 
-History: two earlier deliveries on 2026-11-14 were replaced in AC's folder by the files above. The first had no LICENSE (`04a6aed5…`, `03bf1e94…`); the second said `AGPL-3.0-only` (`d089bc6f…`, `311621b3…`).
+History: three earlier deliveries on 2026-11-14 were replaced in AC's folder by the files above. Their contents are superseded:
+1. without a LICENSE (`04a6aed5…`, `03bf1e94…`);
+2. `AGPL-3.0-only` (`d089bc6f…`, `311621b3…`);
+3. AGPL-3.0-or-later, but with the verifier defects P1 and P2 found in readiness-01 (`6aa35fc7…`, `f04f65b5…`).
