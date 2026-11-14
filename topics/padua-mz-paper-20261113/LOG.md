@@ -203,6 +203,18 @@ Claude, claude-opus-5-5 (configured xhigh).
 - The packs were restaged and repacked. Code, data and receipts are unchanged from the verified copies; only the README and LICENSE differ. They were redelivered to AC's `zenodo_evidence` folder under the same names. New hashes are in [zenodo/README.md](zenodo/README.md): cc `d089bc6f…d520` (986,039 B), sp `311621b3…7760` (40,708,422 B). The device sizes match.
 - The repository itself still has no LICENSE file. Adding one would licence the whole repository, which is AC's separate decision.
 
+## 2026-11-14 09:35 — AC: "-or later, and licence everything under that"
+
+- **Repository.** The root `LICENSE` holds the GNU AGPL v3 text, and README.md has a Licence section: Copyright (C) 2026 Andrey Chesnokov, `AGPL-3.0-or-later`, with the standard notice. It covers code, data, evidence, records and manuscript sources. It is on this branch only and reaches main when AC merges.
+- **Exceptions written into the notice:**
+  - the SIAM macros `siamart251216.cls` and `siamplain.bst`, which keep SIAM's conditions;
+  - short quotations from published sources in the literature records.
+
+  Third-party code is not committed: the external-code records keep it out of Git. A search of all tracked files found no other third-party files: no other .cls/.bst/.sty and no foreign licence headers.
+- **SIAM terms, flagged for AC.** The SIAM class header allows distribution only together with the full SIAM macro package (8 files, including a PDF), and forbids distributing the file alone. The repository currently carries 2 of the 8. The MZ-CC Zenodo pack therefore omits them, and its README says where to get them. The repository copy is AC's decision: remove the files and fetch them at build time, or add the full package (which conflicts with the no-PDF rule).
+- **Manuscripts.** Both availability statements add "Code and data are released under the GNU Affero General Public License, version 3 or later." Builds: 32/50 pp., zero warnings, frozen labels 52/52 and 56/56.
+- **Packs.** The README licence lines now read `AGPL-3.0-or-later`. Both packs were repacked and redelivered; hashes are in [zenodo/README.md](zenodo/README.md).
+
 ## Runs needed
 
 - Codex readiness check plus a focused check of the evidence change ([handoff 08](handoffs/08-readiness-and-evidence.md); handoff 07 superseded before it started).

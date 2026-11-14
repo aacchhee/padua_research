@@ -64,6 +64,7 @@ DATA_FILES = {
         'data/protocol-history/theory-P1-rectangle-certificate-c1e6e59d.md': 'protocol-history/theory-P1-rectangle-certificate-c1e6e59d.md',
     },
 }
+EXCLUDE = {'mz-cc': ['tracks/mz-constants/paper/siamart251216.cls', 'tracks/mz-constants/paper/siamplain.bst']}
 NAME = {'mz-cc': 'padua-mz-cc-evidence', 'mz-sp': 'padua-mz-sp-evidence'}
 
 
@@ -84,6 +85,11 @@ def stage(a):
     tar = subprocess.run(['git', 'archive', '--format=tar', rev, *REPO_PATHS[a.pack]], check=True, capture_output=True).stdout
     with tarfile.open(fileobj=io.BytesIO(tar)) as t:
         t.extractall(root / 'repository', filter='data')
+    # Third-party files that may not be redistributed alone (SIAM's macro licence): omit from the pack.
+    for rel in EXCLUDE.get(a.pack, []):
+        f = root / 'repository' / rel
+        if f.exists():
+            f.unlink()
     for dst, src in DATA_FILES[a.pack].items():
         s = Path(a.data) / src
         if not s.is_file():

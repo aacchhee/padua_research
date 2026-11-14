@@ -3,7 +3,7 @@
 Andrey Chesnokov. Supplementary code and data for the paper (MZ-CC).
 Source repository: https://github.com/aacchhee/padua_research, commit `{COMMIT}`.
 [Paper reference and DOI: to be added by the author.]
-Licence: GNU Affero General Public License v3.0 only (SPDX `AGPL-3.0-only`), for the code and data in this archive; full text in `LICENSE`.
+Licence: GNU Affero General Public License, version 3 or (at your option) any later version (SPDX `AGPL-3.0-or-later`), for everything in this archive authored by Andrey Chesnokov. The full text is in `LICENSE`. Short quotations from published sources keep their authors' terms.
 
 The paper's results are proved analytically. The exceptions are the one-sided bound Λ_edge ≥ 1.0044369 (Prop. 5.3, Appendix C), which is computer-assisted, and Table 1, which is a measurement. This archive lets you re-run both.
 
@@ -11,14 +11,14 @@ The paper's results are proved analytically. The exceptions are the one-sided bo
 
 | Path | What it is |
 |---|---|
-| `repository/` | The repository directories that the paper's availability statement names, at the commit above (`git archive`). It also holds every file the programs read or hash, and the paper source (`tracks/mz-constants/paper/`). Paths in the paper are relative to this directory. |
+| `repository/` | The repository directories that the paper's availability statement names, at the commit above (`git archive`). It also holds every file the programs read or hash, and the paper source (`tracks/mz-constants/paper/`). That directory omits SIAM's class `siamart251216.cls` and style `siamplain.bst`, because SIAM permits distributing them only together with the full SIAM macro package. To build the PDF, download that package from SIAM's author resources. Paths in the paper are relative to this directory. |
 | `data/table1/reproduction.json` | Output of the Table 1 script, regenerated for this archive (2026-11-14). |
 | `data/table1/reproduction-historical-2b52b432.json` | The original output (Git blob at commit `2b52b432`, SHA-256 `b85b06fa…6d40`). It agrees with the regenerated file in every number. |
 | `data/protocol-history/attempts-P4-d03e74dc.md` | The preregistered protocol of the certificate, as hashed in the producer receipt. Commit `d03e74dc` is in the merged pull request #31; the repository copy was later extended with results. |
 | `verify.sh` | Re-runs everything below and compares the results with the committed receipts. |
 | `tools/compare_receipts.py` | The comparison. It ignores run-specific fields (timings, paths, versions); exact numerators, denominators, enclosures and code hashes must agree. |
 | `VERIFICATION-2026-11-14.log` | Console log of `verify.sh` run on a copy of this pack before packing |
-| `LICENSE` | GNU AGPL v3.0 (the author's choice, 2026-11-14) |
+| `LICENSE` | GNU AGPL v3 text; this archive is licensed under version 3 or later |
 | `requirements.txt` | The pinned Python stack. |
 | `MANIFEST-SHA256.txt` | SHA-256 of every file in the archive. |
 

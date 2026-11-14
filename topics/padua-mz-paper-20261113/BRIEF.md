@@ -138,7 +138,8 @@ Ask these early, in one message. Meanwhile, proceed on defaults.
 
 5. **Evidence packs and licence.** *AC, 2026-11-14 08:32: "Regenerate the witness commit, and pack all needed evidence for zenodo, one pack per paper. If something is easier to regenerate, no worries, just regenerate."* *AC, 2026-11-14 09:31: "agpl 3.0 is the license".*
    - The packs are listed in `zenodo/README.md`.
-   - Their licence is GNU AGPL v3.0, recorded as SPDX `AGPL-3.0-only` because AC named version 3.0 without "or later".
+   - Their licence was first recorded as SPDX `AGPL-3.0-only`, because AC named version 3.0 without "or later".
+   - *AC, 2026-11-14 09:35: "-or later, and licence everything under that".* The licence is therefore **AGPL-3.0-or-later**, for the packs and for the whole repository (root `LICENSE` and README notice), with third-party material excepted. Both availability statements state it.
    - AC uploads the packs.
 
 ## 6. Known pitfalls
