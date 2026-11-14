@@ -1,6 +1,6 @@
 # Handoff 07 — readiness check of PR35 (response diff, final IDs, registries, reservation)
 
-- Status: open
+- Status: superseded before it started by [08-readiness-and-evidence.md](08-readiness-and-evidence.md) (AC asked for the PD-T376 regeneration and the Zenodo packs; the readiness scope grew to include an evidence change)
 - Previous handoff: [06-response-and-preparation.md](06-response-and-preparation.md), done in the output commit below.
 - Next agent / model / effort: **Codex, gpt-6-astra medium** (protocol and ordinary technical audit, WORKFLOW model table). Raise the effort only if the diff shows a material change; then follow the focused re-audit rule below.
 - Branch: `claude/padua-mz-paper-20261113` · Draft PR #35.
