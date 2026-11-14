@@ -1,6 +1,6 @@
 # Handoff 36: focused audit of regenerated paper evidence
 
-- Status: open
+- Status: superseded by 37: AC requests a separate Zenodo-oriented public verification kit; pending audit incorporated there
 - Previous handoff: 35-answer-audit06.md
 - Next agent / model / effort: Claude, Opus 5.5 xhigh; disclose actual dispatch and runtime-unexposed metadata
 - Role: independent auditor; Codex developed the bounded changes
