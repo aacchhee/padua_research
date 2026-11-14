@@ -178,4 +178,4 @@ LIT-427 (Sommariva–Vianello–Zanovello 2008) and LIT-488 (KLP 2018) are relev
 
 ## MZ-SP
 
-(Placeholder: to be filled when MZ-SP is integrated; sources listed in review-plan-sp.md (g)/F11.)
+The per-citation scope check for MZ-SP was done by the internal exposition referee: [referee-sp-exposition.md](referee-sp-exposition.md), section on literature. It covered 12 citation occurrences of 9 keys: 10 OK, 2 NEEDS-SOFTENING (KLP18; ASV27) and 0 unsupported. Both softenings, and the addition of An–Wu 2022 (LIT-046) at its read scope, are applied ([response-internal-sp.md](response-internal-sp.md)). Bib keys in MZ-SP: BCDMVX06 (LIT-312), SVZ08 (LIT-427), Xu96 (LIT-314), CDMV07 (LIT-428), KLP18 (LIT-488), ASV27 (LIT-045), Wu26 (LIT-489), AW22 (LIT-046), MZ-CC. Unread and not cited (for AC, links in response-internal-sp.md): CDMV 2005, Sloan 1995, BDMVX 2007, CDMV 2008, Padua2DM, Erb 2016, An–Ran–Wu. Not resolver-checked: the DOIs of Xu96 and BCDMVX06.

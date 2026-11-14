@@ -106,3 +106,37 @@ integration rehearsals and the distinct Astra medium protocol review passed;
 PR26 is prepared for AC review after accepted Claude audit-01 and response-01.
 Assigned agent work is complete. Only AC merges; physical Padua cold-storage
 delivery remains pending, and no submission or novelty clearance is claimed.
+
+## 2026-11-14 — split into MZ-CC and MZ-SP (topic padua-mz-paper-20261113)
+
+Written by Claude Sonnet 5.5 (documentation developer, high effort) at repository head `a0206a801e1d032175405db6ac7505e0691559fc` (branch `claude/padua-mz-paper-20261113`, draft PR #35, base `b5388c2`). No Git state changed by this entry. This section is appended; every earlier section above, including the single-draft build receipts and its "not for submission" language, remains the historical record of the 25-page draft of 2026-11-05.
+
+**Decision (AC, 2026-11-13).** The single draft *Marcinkiewicz–Zygmund constants of Clenshaw–Curtis and Padua rules beyond half-exactness* was split ("yes let's split. call the one MZ-CC and another one MZ-SP"). Venues (AC, same day): MZ-CC to SIAM J. Numer. Anal. (fallback Math. Comp.); MZ-SP to J. Approx. Theory (fallback Adv. Comput. Math.). MZ-CC goes out first and MZ-SP cites it. Zenodo deposit later, created by AC. Split statement map: [split-map](../../../padua-mz-paper-20261113/split-map.md); log: [LOG](../../../padua-mz-paper-20261113/LOG.md).
+
+| Paper | Source directory | Title | Class | Pages |
+|---|---|---|---|---:|
+| MZ-CC | `tracks/mz-constants/paper/` | *Marcinkiewicz–Zygmund constants of Clenshaw–Curtis quadrature beyond half-exactness* | `siamart251216` | 32 (486 × 720 pt) |
+| MZ-SP | `tracks/mz-constants/paper-sp/` | *Marcinkiewicz–Zygmund constants of signed Padua rules beyond half-exactness* | `elsarticle` preprint 12 pt | 50 (A4) |
+
+Content added since the 2026-11-05 draft: the PR #31 results (PD-T522–PD-T548 at their registered scopes, PD-T531 omitted) in MZ-CC, the corner operator results and certificates (PD-T533–PD-T542) in MZ-SP, and two provisional claims proposed by this topic (PD-T?mz-paper-claude-01 in MZ-CC, PD-T?mz-paper-claude-02 in MZ-SP; independent checks PASS; no final ID yet). Scope tables with frozen statement numbers: [MZ-CC README](../../../../tracks/mz-constants/paper/README.md) and [MZ-SP README](../../../../tracks/mz-constants/paper-sp/README.md).
+
+**Referee rounds (internal, both papers).** Mathematics: Opus 5.5 xhigh ([MZ-CC](../../../padua-mz-paper-20261113/referee-cc-math.md), [MZ-SP](../../../padua-mz-paper-20261113/referee-sp-math.md)): no CRITICAL or MAJOR finding in either; the Λ_edge certificate (MZ-CC) and the ‖B‖ enclosure (MZ-SP) were rerun bit-identically. Exposition: Opus 5.5 high ([MZ-CC](../../../padua-mz-paper-20261113/referee-cc-exposition.md), [MZ-SP](../../../padua-mz-paper-20261113/referee-sp-exposition.md)). Responses by Sonnet 5.5 high workers under the orchestrator's dispositions: [response-internal-cc](../../../padua-mz-paper-20261113/response-internal-cc.md), [response-internal-sp](../../../padua-mz-paper-20261113/response-internal-sp.md). Frozen statement numbers are recorded in correspondence-cc.md and correspondence-sp.md; the compiled `.aux` of the builds below matches them (52 and 56 frozen labels, no mismatch).
+
+**Audit state.** The Codex audit of both papers (correspondence, both provisional claims, the PD-T523 proof-route change, exposition, citations, builds) is **PENDING**. Historical priority is screened, not cleared. Neither paper is submitted; authorship, declarations, deposit and submission are AC's. **No PDF is committed**; the PDFs below are scratch.
+
+**Fresh builds (2026-11-14).** `bash topics/padua-mz-paper-20261113/tools/build.sh <dir> <out>` (`pdflatex; bibtex; pdflatex; pdflatex`; pdfTeX 3.141592653-2.6-1.40.25, TeX Live 2023 Debian; BibTeX 0.99d), outputs in `/tmp/t9-cc` and `/tmp/t9-sp`. Both builds: zero LaTeX and BibTeX warnings, no over- or underfull boxes, no undefined references or citations.
+
+| Artifact | Bytes | SHA-256 |
+|---|---:|---|
+| `tracks/mz-constants/paper/manuscript.tex` | 106627 | `4bdac891390f6db35695e1552320b6fd7259044f81e7a5953c7526f5c7f6f0b0` |
+| `tracks/mz-constants/paper/refs.bib` | 9849 | `c2e3007a46fe10f2b7b3e7df8891ab4f7a06577cbf96ee6cf1cf0c26c2a6b224` |
+| `tracks/mz-constants/paper/siamart251216.cls` | 73808 | `33f2eb091c8bcbda9baed2e868489460da868047b0a518b4ce1b2f2c15fda530` |
+| `tracks/mz-constants/paper/siamplain.bst` | 20596 | `a5df7c482dc7d4459f08b91c28437c3779284dcd82591acf1c977de7508ac6c7` |
+| `/tmp/t9-cc/manuscript.pdf` (MZ-CC, 32 pp., scratch) | 579549 | `b7941411bc0a6dddbba299dd707f152996426bd79ae2ff196bf9b0223e6a735d` |
+| `tracks/mz-constants/paper-sp/manuscript.tex` | 138824 | `da76c6c0c14700cf3abfb3d633711fdec66ac2a736f122c221fcf4f7d4437336` |
+| `tracks/mz-constants/paper-sp/refs.bib` | 3347 | `bc40f600c58a7d4fc5749394578ae956963ba26825de513880c73f58b464b7a8` |
+| `/tmp/t9-sp/manuscript.pdf` (MZ-SP, 50 pp., scratch) | 585418 | `c2f4b68d7ef1045c728d2ff3cd6a8b85f775af0d50e12a8df23e7e991804cc8c` |
+
+PDF bytes can change on rebuild (timestamps and identifiers); the source hashes identify the drafts. The `.cls` and `.bst` hashes agree with the 2026-11-13 record in the split map; SIAM's official macro download is to replace them before submission. `elsarticle.cls` and `elsarticle-num.bst` come from `texlive-publishers` and are not in Git.
+
+Open items for AC (full list in [report.md](../../../padua-mz-paper-20261113/report.md)): placeholders, unread sources with links, DOI checks, the Zenodo file list (the PD-T376 witness arrays and exact-norm files are **not yet delivered**: AC's cold-storage destination is not reachable from the sandbox, and the staging directory `/tmp/mz-cleanup` no longer exists in this session), and arXiv order (MZ-CC, then MZ-SP).

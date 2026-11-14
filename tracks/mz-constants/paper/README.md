@@ -1,140 +1,94 @@
-# M7 complete proof manuscript
+# MZ-CC: Marcinkiewicz–Zygmund constants of Clenshaw–Curtis quadrature beyond half-exactness
 
-Title: *Marcinkiewicz–Zygmund constants of Clenshaw–Curtis and Padua rules beyond half-exactness*.
+**Status (2026-11-14).** Complete internal draft in SIAM's `siamart` class, 32 pages. It has passed two internal referee rounds (mathematics, Opus 5.5 xhigh: no CRITICAL or MAJOR finding, the Λ_edge certificate rerun byte-identical; exposition, Opus 5.5 high), answered in [response-internal-cc.md](../../../topics/padua-mz-paper-20261113/response-internal-cc.md). The **Codex audit is pending**. Not submitted. Authorship, venue, cover letter, AI declaration, ORCID, contributions, funding and submission are AC's; the manuscript carries placeholders for them. Venue chosen by AC (2026-11-13): SIAM J. Numer. Anal., fallback Math. Comp.
 
-This is a complete development draft with analytic proofs, finite computer-assisted illustrations, and bibliography (25 A4 pages after the 2026-11-05 signed-Padua and cleanup-result integration), not a submission-ready paper. Cleanup Claude audit-01 accepted the new mathematics and manuscript translation at their stated scopes; response-01 records the completed editorial dispositions. Preparation checks pending: PR readiness awaits the orchestrator’s preparation and protocol checks; the even-degree source results and uniform operator bound were accepted in PR #23. Independent Astra reconstruction and Claude audits 01–02 accepted the analytic M1/M2/M3 claims and scientific response within their recorded scopes. Codex audit-03 closes the literature-response corrections and final integration checks for PR #11. Historical priority remains screened, not cleared: the classical result is a qualitative full-space consequence conditional on its cited source; the single-U upper bound and the separate squared-log theorem are distinguished. The documented search is non-exhaustive and its source-specific reading limits remain. Authorship and venue remain AC’s decisions.
+This is the first of two papers split from the single 2026-11-05 draft (AC, 2026-11-13). The signed Padua material is in [MZ-SP](../paper-sp/README.md), which cites this paper for three CC spectral inputs. Reading order for AC: MZ-CC first (arXiv first, then MZ-SP).
 
-- [LaTeX source](manuscript.tex)
-- [Bibliography](refs.bib)
-- [Preserved original v1 PDF](../../../local-output/mz-constants/paper-v1-preserved/manuscript.pdf) and [preservation manifest](../../../local-output/mz-constants/paper-v1-preserved/preservation-manifest.json) (ignored; external archival pending AC's destination)
-- [Response-01 PDF destination](../../../local-output/mz-constants/paper-response-01/manuscript.pdf) (compiled after all scientific and literature response edits; 15 A4 pages)
-- [Development/readiness record](../../../topics/mz-constants/directions/M7/manuscript-record.md)
-- [Independent scientific audit and source-reading coverage](../../../topics/mz-constants/independent-astra-01.md)
-- [Literature search and unresolved full-text gaps](../../../topics/mz-constants/literature-search.md)
-- [Original MZ final ID allocation / storage record](../../../topics/mz-constants/COLD_STORAGE.md)
-- [Cleanup final ID allocation map](../../../topics/padua-mz-cleanup-20261105/preparation/final-id-map.json)
+## Files
 
-Only final PD/LIT identifiers occur in the manuscript and bibliography. The manuscript synthesizes the accepted analytic claims; writing it does not upgrade audit, historical novelty, or the OPEN sharpenings. No private theorem or third-party full-text extract is included.
+| File | Role |
+|---|---|
+| [manuscript.tex](manuscript.tex) | LaTeX source (`siamart251216`, bibliography style `siamplain`) |
+| [refs.bib](refs.bib) | Bibliography; the `coverage` field records what was read of each source |
+| [siamart251216.cls](siamart251216.cls), [siamplain.bst](siamplain.bst) | SIAM macros v1.4.8 (2025-12-16). SIAM's class is not on CTAN; these are byte-identical public GitHub copies, committed at AC's request. **Replace them by SIAM's official macro download before submission** and rebuild |
+
+Not in Git: any PDF, build output, or the private companion reading aid (BRIEF §5 item 3).
+
+## Build
+
+From the repository root, with a scratch output directory (it copies the sources, runs `pdflatex; bibtex; pdflatex; pdflatex`, and prints pages, log issues and hashes):
+
+```sh
+bash topics/padua-mz-paper-20261113/tools/build.sh tracks/mz-constants/paper /tmp/mz-cc
+```
+
+Explicit sequence (the same, in a scratch directory that holds a copy of the four source files):
+
+```sh
+pdflatex -interaction=nonstopmode -halt-on-error manuscript.tex
+bibtex manuscript
+pdflatex -interaction=nonstopmode -halt-on-error manuscript.tex
+pdflatex -interaction=nonstopmode -halt-on-error manuscript.tex
+```
+
+Last build (2026-11-14, head `a0206a8`, pdfTeX 1.40.25 / TeX Live 2023 Debian): **32 pages** (486 × 720 pt), zero LaTeX and BibTeX warnings, no over- or underfull boxes, no undefined references. Hashes of source and PDF are in the [manuscript record](../../../topics/mz-constants/directions/M7/manuscript-record.md) (PDF bytes change on every rebuild; the source hashes identify the draft). Avoid `\S` in the text: in `siamart` it loads a bitmap TS1 font and breaks microtype font expansion.
 
 ## Mathematical scope
 
-| Manuscript content | Durable claim | Scope |
-|---|---|---|
-| Exact CC weights, aliasing, parity exactness | PD-T013 | N indexes N+1 nodes; ADE is N for odd N, N+1 for even N |
-| Upper spectrum below two and coefficient floor | PD-T014, PD-T015, PD-T022 | Endpoint bound lambda_plus(N,N−1)≤2−4/N+4/N² from PD-T022; N=2 exact value 1, N≥3 strict. Retained independent qualitative sign proof and mass-floor inequality/alternative weaker bound 2−2/(pi N) |
-| Full-degree T_N obstruction | PD-T016 | Explicit quotient greater than two at degree N |
-| Endpoint lower and upper comparisons | PD-T017, PD-T018 | Cardinal lower bound on the full space Π_N, hence Π_(N−1); harmonic-U upper comparison on Π_(N−1), giving order (1+log N)^−2. The constant 128000/log²N is below 1 only for log N>sqrt(128000)≈357.7709; finite tables determine no asymptotic leading constant |
-| Exact U witness and three-quarter counterexample | PD-T019, PD-N004 | N=512, 513 points, degree n=511; conditional An–Wu theorem remains valid |
-| Fixed-ratio upper/lower bounds and strong constants | PD-T022–PD-T024 | Complete explicit filtered Fejér weighted Schur proof; every fixed theta<1 |
-| Hyperinterpolation application | PD-T025 | Positive rules, stated reproduction degree; B=1+rho_(N,n) and uniform CC error factor (1+sqrt(2))*sqrt(V). Generic upper-Gram mechanism already appears in ASV |
-| Padua marginal/compression | PD-T021 | Exact marginal 2w_CC and isometric compression, valid for signed weights; retained as the first subsection of §6 |
-| Signed Padua weight limit and carriers | PD-T295, PD-N105–PD-N107 | Full proofs: even-m fixed-node logarithmic weight asymptotics with whole-grid domination; opposite-sign polynomial carriers; both Gram extrema diverge at every fixed ratio above 1/2 along even m |
-| Both-parity completion | [PD-T377: odd weight theorem](../../../topics/padua-mz-cleanup-20261105/theory/odd-weight-asymptotic.md), [PD-T378: odd carriers](../../../topics/padua-mz-cleanup-20261105/theory/odd-carriers.md) | Odd-m fixed-index limit and majorant; carriers use the even y mesh m+1; endpoint and every fixed ratio >1/2 have extrema diverging over all integers m. Accepted at the stated scope in cleanup Claude audit-01; editorial dispositions in the topic response |
-| Normalized growth bounds | [PD-T379: exact carrier norms](../../../topics/padua-mz-cleanup-20261105/theory/growth-carrier-bounds.md) | Explicit one-sided bounds with exact integral constants; raw 1/9 and 1/36 are energy coefficients, not normalized spectral constants. No sharp law claimed |
-| Finite negative witness | [PD-T376: finite indefiniteness](../../../topics/padua-mz-cleanup-20261105/theory/finite-indefiniteness.md) | Construction degrees 1101, 1240 and 1600: dyadic Legendre polynomials with negative rational trial-Rayleigh intervals; producer and separate forward-error checks. Computer-assisted result accepted at the stated scope in cleanup Claude audit-01; only small receipts are committed and bulk delivery remains pending |
-| Uniform signed coefficient operator | PD-T297 | Full weighted-L1/density-tail proof; every m≥2 and 0≤n<m; 2≤norm≤28.3763348311…<30, independently of signed Gram positivity |
-| Exact finite Padua illustrations | PD-T298, PD-T299 | Strict rational brackets at m=60 and m=80; computer-assisted inertia reduction and repository checker trust are explicit |
-| Numerical tables | PD-T026 (MEASURED) | CC N=40,...,1280; Padua construction degrees 10,20,30,40; independent replay recorded separately |
-| Companion campaign measurements | [PD-T380](../../../topics/padua-mz-cleanup-20261105/theory/finite-measurements.md) (MEASURED) | The companion record has 23 float minimum rows and diagnostic fits; those additional rows are not reproduced in this manuscript and establish no first-crossing theorem |
-| Retained sharpenings | PD-T020, PD-T027, [PD-T381](../../../topics/padua-mz-cleanup-20261105/theory/sharp-growth-open.md) (OPEN) | CC leading minimum-eigenvalue constant and sharp upper limit/uniform endpoint gap; sharp Padua growth constants, first finite crossing/effective onset estimates, and sharp operator norms remain separate quantitative tasks |
-| Rejected signed Padua conjectures | PD-T028, PD-T110, PD-T116 | Registry status OPEN is retained by AC, with binding REJECTED: refuted dispositions; positive endpoint orders, all-m positivity, upper threshold, and defect convergence to one must not be relied on |
+Numbers are the **frozen numbering** (checked against the compiled `.aux` on 2026-11-14; later passes may change wording but must not renumber, see [correspondence-cc.md](../../../topics/padua-mz-paper-20261113/correspondence-cc.md)). Statuses are those of the registry records at `b5388c2` unless marked provisional. "PROVED" means a complete proof is in the paper or its appendix at the scope stated. Nothing here is an audit statement.
 
-The CC endpoint defect tends to one, and the condition number has logarithmic squared order. The draft does **not** assert a logarithmic squared rate for `1−eta` or eventual binding of the minimum-eigenvalue side; the proved upper gap is insufficient for those claims. The decimal near 1.004437 is a measured lead, not a proved limit. No N=20480 run is claimed as reproduced.
+| No. (label) | PD ID(s) | Status | Exact scope |
+|---|---|---|---|
+| Thm 1.1–1.3, Cor 1.4 | restatements of 3.1, 3.3, 4.1–4.7, 5.2, 5.3, 6.1, 7.2, (8.3) | PROVED | Introduction summaries, each with a pointer to the proved statement; no extra claim |
+| Lem 2.1 (`lem:identities`) | PD-T013 | PROVED | CC weights, positivity, aliasing, defect and mass matrices |
+| Lem 2.2 (`lem:floor`) | PD-T015 | PROVED | (1/N)E ⪯ M ⪯ (π/2)E on Π_{N−1} |
+| Lem 2.3 (`lem:weight-comparison`) | part of PD-T017 proof | PROVED (routine) | sin θ_j/N ≤ w_j ≤ 5 sin θ_j/N; w_j ≥ (1+d_j)/N² |
+| Lem 2.4 (`lem:schur`) | none registered | PROVED (routine) | Weighted Schur test; **include in the audit** |
+| Thm 3.1 (`thm:ratio-upper`) | PD-T022 | PROVED | Q_N(p²) ≤ (1+ρ)∫p² on Π_n, n<N, ρ = max{2n/N−1,0}²; strict if 2n>N |
+| Cor 3.2 (`cor:ratio-endpoint`, also `thm:upper`) | PD-T014, PD-T022 | PROVED | λ₊(N,N−1) ≤ 2−4/N+4/N² < 2; equality at N=2, strict for N ≥ 3 |
+| Thm 3.3 (`thm:five-thirds`) | PD-T526 | PROVED | λ₊(N,n) ≤ min{1+ρ_{N,n}, 5/3} for all N ≥ 2, n<N. 5/3 is **not** claimed optimal |
+| Rem 3.4 | PD-N002, PD-T016 | PROVED | D is not PSD for N ≥ 5; Q_N(T_N²)/∫T_N² = 2(4N²−1)/(4N²−2) > 2 |
+| Thm 4.1 (`thm:cardinal`) | PD-T017 | PROVED | ∫p² ≤ K_N Q_N(p²) on Π_N, K_N = O((log N)²) explicit |
+| Lem 4.2 (`lem:U-exact`) | PD-T019; PD-T?mz-paper-claude-01 (a), onset part | PROVED | Exact U_{N−1} quotient; q_N < 1/3 for every N ≥ 57 (the 57 is the new part) |
+| Thm 4.3 (`thm:harmonic`) | PD-T018 | PROVED | λ₋(N,N−1) ≤ 128000/(log N)² for all N ≥ 2. The constant is far from π⁴/8 (factor ≈ 7·10⁸ in K_N) |
+| Lem 4.4 (`lem:volterra`) | PD-T522 | PROVED | ‖V‖ = 2/π on L²(0,1); quotient π⁴/8 attained at cos(πy/2) |
+| Prop 4.5 (`prop:sharp-trial`) | PD-T523 | PROVED | limsup (log N)²λ₋(N,N−1) ≤ π⁴/8 through all N. **Proof route differs from the record** (through Lem A.1(c)); statement unchanged; flagged for the audit |
+| Thm 4.6 (`thm:sharp-min`) | PD-T546 (with PD-T523) | PROVED | lim (log N)²λ₋(N,N−1) = lim (log N)²λ₋(N,N) = π⁴/8 through all integers N, with the finite bound (σ_N+τ_N), L=log N ≥ 16. **Closes PD-T020** |
+| Cor 4.7 (`cor:interp-norm`) | PD-T?mz-paper-claude-01 (d) | PROVED, provisional | ‖𝓘_N‖_{ℓ²_w→L²} = λ₋(N,N)^{−1/2}; ‖𝓘_N‖/log N → 2√2/π² |
+| Lem 4.8, 4.9 | PD-T544, PD-T545 | PROVED | Signed-remainder bound; discrete-primitive bound (lemmas of the π⁴/8 proof; proofs in Appendix A) |
+| Prop 5.1 (`prop:fixed-trial`) | PD-T529 (**weakened**) | PROVED | Qualitative fixed-J limits, positive definiteness of the model form, 1 ≤ Λ_edge ≤ 5/3, liminf λ₊(N,N−1) ≥ Λ_edge. Explicit constants of PD-T529 are dropped (they serve only the omitted PD-T531) |
+| Thm 5.2 (`thm:edge-limit`) | PD-T530 (definition PD-T528) | PROVED | lim λ₊(N,N−1) = Λ_edge ∈ [1, 3/2] through all N, qualitative (no rate) |
+| Prop 5.3 (`prop:edge-certified`) | PD-T547; Lem C.1 = PD-T548 | PROVED, **computer-assisted** | Λ_edge ≥ 1.0044369, **one-sided**. Trust base listed in Appendix C |
+| Cor 6.1 (`cor:endpoint`) | PD-T527; PD-T?mz-paper-claude-01 (a)(b) | PROVED (a)(b provisional) | K_N⁻¹ ≤ 1−η_N ≤ min{1, 128000/log²N}; 1−η_N = λ₋(N,N−1) for N ≥ 57; (log N)²(1−η_N) → π⁴/8; κ₂(G_N)/(log N)² → 8Λ_edge/π⁴ ∈ [0.08249, 0.12320] (the lower end is computer-assisted via Prop 5.3) |
+| Rem 6.2 (`rem:rate`) | none | remark | No rate usable at computable N; decimal of Λ_edge open |
+| Thm 7.1 (`thm:ratio-lower`) | PD-T023 | PROVED | ∫p² ≤ C_*(1−n/N)⁻²Q_N(p²) on Π_n, C_* = 12(1+π)⁴(1+2/π); degenerates like N⁻² at n = N−1 |
+| Cor 7.2 (`cor:strong`) | PD-T024 | PROVED | Spectrum of G_{N,n} in [(1−ϑ)²/C_*, 1+max{2ϑ−1,0}²] for n ≤ ϑN, ϑ<1; C_* not claimed optimal |
+| Prop 8.1 (`prop:counterexample`) | PD-T019, PD-N004 | PROVED | λ₋(512,511) < 1/4, so ‖I−G_{512,511}‖ > 3/4 (An–Wu's m=513, n=511); their conditional theorem stays valid |
+| Prop 8.2, eq. (8.3) (`prop:hyper`) | PD-T025; CC application with PD-T?mz-paper-claude-01 (c) | PROVED (c provisional) | Upper-Gram hyperinterpolation estimate for any positive rule; CC factor √2(1+√B), B = min{1+ρ_{N,n}, 5/3}, so (1+√(5/3))√2 < 2.2910·√2 |
+| App. A (Lem A.1 `lem:endpoint-rep`; proofs of 4.5, 4.8, 4.9, (4.6) finite bound) | PD-T546 proof §1–2, PD-T523, PD-T544, PD-T545 | PROVED | Endpoint representation of the interpolant and the long proofs of §4.2 |
+| App. B (Lem B.1, B.2; B.1–B.3) | PD-T529, PD-T530 proofs | PROVED | Core density, continuum identity, proof of Thm 5.2 |
+| App. C (Lem C.1; certificate) | PD-T548, PD-T547 | PROVED, computer-assisted | Closed forms of the model mass; finite reduction; enclosures 1.004436918864667280457774 ≤ q(u) ≤ …779 for the J = 512 trial vector; exact comparison with 10044369/10⁷ passes; the upper endpoint bounds q(u) only, not Λ_edge |
 
-## Build and checks
+**Omitted on purpose:** PD-T531 (finite brackets L_N ≤ λ₊ ≤ U_N; long proof, no digits at practical N; existence of the limit is Thm 5.2) and PD-T524 (historical conditional prediction, superseded by PD-T546). **Not claimed:** optimality of 5/3, of C_*, or of 128000.
 
-Run from the repository root `/workspace/padua_research`:
+### Measured items (Section 9, labelled as such; no proof uses them)
 
-```sh
-mkdir -p local-output/mz-constants/paper-response-01
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory=local-output/mz-constants/paper-response-01 tracks/mz-constants/paper/manuscript.tex
-BIBINPUTS=tracks/mz-constants/paper: bibtex local-output/mz-constants/paper-response-01/manuscript
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory=local-output/mz-constants/paper-response-01 tracks/mz-constants/paper/manuscript.tex
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory=local-output/mz-constants/paper-response-01 tracks/mz-constants/paper/manuscript.tex
-```
+- Table 1: extreme eigenvalues of G_{N,N−1}, N = 40…1280, double precision, with a (log N)²λ₋ column (PD-T026, MEASURED). Consistency check at N = 3, 4, 5, 9, 10, 21, 40, 81 to within 1.35·10⁻¹³.
+- J-Galerkin proxy of the model quotient: 1.00443691886… (J = 512), 1.0044369671… (J = 2048, so J = 512 is not converged) (PD-T532, MEASURED). **Not a certified decimal.**
+- PD-T525 fits are not used.
 
-The original v1 sequence, using `local-output/mz-constants/paper/`, was executed successfully on 2026-10-31, followed by incremental recompilation after wording/metadata and bibliography-coverage edits. The commands above use a distinct response-01 destination; that new build was executed successfully after integration of the scientific and literature response edits. Tool versions: pdfTeX 3.141592653-2.6-1.40.26 and BibTeX 0.99d, TeX Live 2025/dev/Debian. Final-pass log and BibTeX log contain no warnings, overfull/underfull boxes, undefined citations/references, or TeX errors. Initial passes had the expected unresolved references before BibTeX and repeat LaTeX passes; those were resolved.
+### Open (stated as open problems in Section 9)
 
-The preserved original v1 PDF has 14 A4 pages. Pages 1 and 9 were rendered with `pdftoppm` and visually inspected for layout before the final wording/metadata edits; the final compilation was checked again by its logs. No plot or heavy numerical run was needed for manuscript synthesis. Local build artifacts, rendered pages, text extraction, and the build manifest stay under ignored `local-output/mz-constants/paper/`.
+1. A two-sided certified enclosure, hence the decimal value, of Λ_edge (the decimal conjunct of PD-T027, whose other conjuncts are PROVED by PD-T526 and PD-T530).
+2. Rates in Thms 4.6 and 5.2 usable at computable N.
+3. Identification of the endpoint sampling operator with a classical operator (Toeplitz-plus-Hankel or Wiener–Hopf type) whose norm can be computed.
 
-The original v1 artifact SHA-256 identities and byte sizes are recorded in `manuscript-record.md` and the ignored original `build-manifest.json`; the preserved PDF has SHA-256 `a594ea305fc0f91bb3a2c49d9c6311288440fcffa6eb9e1e95177748d34d3155` (419412 bytes). The ignored preservation manifest records its copied source, bibliography, README and original build manifest. Response source hashes and the explicit statement changes are recorded in `topics/mz-constants/scientific-response-01.md`; the integrated response build and exact artifact identities are recorded below. PDF byte hashes can change on rebuild because TeX embeds timestamps and an output identifier; the source hashes identify the retained draft.
+Declined strengthening, recorded as a candidate and **not** in the paper: sup_N λ₊(N,N−1) ≤ 23/15 (referee F2; see [report.md](../../../topics/padua-mz-paper-20261113/report.md)).
 
-## Numerical provenance
+## Placeholders reserved for AC
 
-Tables are transcribed, rounded, and checked against [the bounded reproduction](../COLD_STORAGE.md) and [its durable measured record](../theory/reproduced-spectra.md). The manuscript worker reviewed these existing outputs; it did not rerun the numerical suite and does not call that review an independent execution.
+Authors and `\thanks`, keywords and MSC codes (suggested additions 41A05, 42C05), funding footnote, commit hash and Zenodo DOI in the data and code availability statement (no deposit exists; the text makes no deposit claim), AI declaration, ORCID, contributions. Before an arXiv upload, remove the `% IDs:` / `% Source:` TeX comments, three of which carry the provisional ID `PD-T?mz-paper-claude-01` (the comments are public in the TeX source). Confirm "252 (2027)" for LIT-045 and the editor and series data of LIT-052.
 
-The producer command, already executed by the reproduction developer and separately replayed by Astra, is:
+## Records
 
-```sh
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python tracks/mz-constants/code/reproduce.py --suite all --max-N 1280 --output tracks/mz-constants/evidence/reproduction.json
-```
-
-Python 3.12.14, NumPy 2.3.5, and SciPy 1.17.0 are recorded in that output. The separate replay and comparisons are linked by the independent audit. Finite agreement and signed Padua tables remain MEASURED. The universal results use the written analytic proofs.
-
-## Review handoff
-
-Audit-01 requested the stronger endpoint corollary from PD-T022; the response preserves the original PD-T014 quantitative proof and PD-T015 mass inequality, and updates the headline bound and B=1+rho throughout. That added corollary and its manuscript translation require focused independent re-audit against the response file hashes. Complete historical duplicate comparison remains pending. No submission, publication, merge, or external archival is authorized or claimed by this directory.
-
-## Integrated response-01 build receipt
-
-The root executed the four commands above after integrating M1, M2 and L1–L3. pdfinfo reports 15 A4 pages. The final LaTeX/BibTeX logs have no warnings, undefined references, overfull or underfull boxes. The original v1 PDF remains preserved separately.
-
-| Artifact | Bytes | SHA-256 |
-|---|---:|---|
-| tracks/mz-constants/paper/manuscript.tex | 42631 | c0037cf857895111b98282e400dd4c0af4d87b4cfdc5abba16f53071c58134af |
-| tracks/mz-constants/paper/refs.bib | 6321 | ea5fbd9afabb30b090003199084aa1fd3448928dc00538375cc23cd678cae6c5 |
-| local-output/mz-constants/paper-response-01/manuscript.pdf | 430932 | a34288ce1a0093c06299ba13ef06d023d11bfd80ace4bbe20535e0200a3a6c83 |
-
-These hashes identify the actual response build; timestamps may change PDF bytes on regeneration. Focused independent review remains separate from compilation.
-
-## 2026-11-01 prior-art revision (topic mz-prior-art-20261101)
-
-Claude Opus 5.5 revised the status line, the last abstract sentence, the §1 related-work paragraph, a remark after Proposition 5.1 (PD-T019/PD-N004), and the opening of §4. It also updated bibliography notes and added LIT-058 and LIT-293–295. No theorem, proof or status changed. Build: `pdflatex; bibtex; pdflatex; pdflatex` on manuscript.tex: no errors and no warnings in the log; 16 A4 pages after the first pass, 17 after the second pass (LIT-050/296–298 added). Page 3 was rendered with pdftoppm and inspected. Build products are not committed. Codex audit of this revision: PENDING.
-
-Response-01 to the PR #11 Codex audit (2026-11-01) revised the abstract's last sentence, the §1 source list (Sloan–Smith coverage, Mastroianni–Totik, Lubinsky–Máté–Nevai constant, Gauss-node versus CC attribution, new LIT-299, survey wording), the §4 opening and the remark after Prop. 5.1. Build: pdflatex/bibtex/pdflatex/pdflatex gives 17 A4 pages with no errors, warnings or over/underfull boxes. manuscript.tex SHA-256 d1ae93ae7044250877b359f560ee9b609d6a87e37a5667e7a0aaab8fb85742b2. No theorem or status changed.
-
-Response-02 (audit-02 R1, 2026-11-01) revised the §1 bullet to separate the single-U upper bound O(1/log N) from the squared-log order (Theorems 3.2/3.3). Rebuilt on the main-merged tree: 17 pp., clean. manuscript.tex SHA-256 aa152cc6d76659934f49b6ecea43bc3cd79676c2ddd2801023937140958888f1.
-
-## PR #11 final readiness (2026-11-01)
-
-[Audit-03](../../../topics/mz-prior-art-20261101/audit-03.md) and [final preparation](../../../topics/mz-prior-art-20261101/pr-prep.md) close the assigned agent work after integrating current main. Earlier dated pending-review lines above are historical build records. The scientific response was accepted in [Claude audit-02](../../../topics/mz-constants/audit-02.md); no mathematical statement, proof or PD status is changed by the present status cleanup. The current manuscript build and hashes are recorded in the final preparation receipt. Only AC decides merge and submission.
-
-## 2026-11-05 signed Padua integration (topic padua-mz-cleanup-20261105)
-
-Section 6 now retains the exact compression and adds the accepted signed-weight asymptotic, both carrier countersequences, the sharp half-exactness ratio threshold, and the uniform direct signed coefficient norm. The abstract, introduction and section 7 distinguish these conclusions from the remaining quantitative questions. The finite m60/m80 brackets are explicitly computer-assisted illustrations, rather than asymptotic premises. Bibliography content is unchanged; no unmerged PR #21 source or historical priority claim was added. Thus no `% LIT pending PR21` sentence is needed. This pass contains no new C1 finite-witness or C2 odd-m claim.
-
-The manuscript worker executed the following in the sandbox, preserving original v1 and response-01 artifacts:
-
-```sh
-mkdir -p /tmp/padua-mz-cleanup-paper
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/tmp/padua-mz-cleanup-paper tracks/mz-constants/paper/manuscript.tex
-(cd /tmp/padua-mz-cleanup-paper && BIBINPUTS=/workspace/padua_research/tracks/mz-constants/paper: bibtex manuscript)
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/tmp/padua-mz-cleanup-paper tracks/mz-constants/paper/manuscript.tex
-pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/tmp/padua-mz-cleanup-paper tracks/mz-constants/paper/manuscript.tex
-```
-
-pdfTeX 1.40.26 and BibTeX 0.99d (TeX Live 2025/dev/Debian) produced 22 A4 pages. Final LaTeX/BibTeX logs have zero warning, overfull/underfull, undefined-reference or error markers. Page 16 was rendered and visually checked; text extraction was also executed. No spectral experiment was rerun by the manuscript worker. Exact source/artifact hashes and claim-to-section mapping are in [manuscript changes](../../../topics/padua-mz-cleanup-20261105/manuscript-changes.md). Build outputs stay under `/tmp/padua-mz-cleanup-paper`; the PDF is not committed or represented as delivered cold storage.
-
-## 2026-11-05 cleanup-result extension (intermediate 24-page build)
-
-The preceding 22-page accepted-result receipt is historical and preserved. The current 24-page draft additionally proves the odd-m weight extension, switches the polynomial carrier to the even y mesh m+1 for odd m, and completes the all-integer divergence and sharp ratio classification. A separate proposition derives the exact continuous carrier norm limits and one-sided normalized logarithmic spectral bounds. It explicitly distinguishes raw energy suprema from normalized Rayleigh coefficients. Section 7 includes the m1600 dyadic finite negative witness, its rational trial-quotient interval, the exact-integer/Arb producer and the independent forward-error check under its stated IEEE/BLAS model; the displayed interval is not a minimum-eigenvalue bracket. These cleanup results and their manuscript translation await Claude audit. No m1240 result is included in this build.
-
-The existing build sequence was rerun for the changed source (bibliography unchanged), giving 24 A4 pages and zero final warnings, undefined references, overfull/underfull boxes or error markers. Page 22 was rendered and visually checked. Current input and PDF hashes are appended in [manuscript changes](../../../topics/padua-mz-cleanup-20261105/manuscript-changes.md); earlier build hashes remain historical. New results are identified by source-path comments until the orchestrator assigns final IDs.
-
-## 2026-11-05 three-witness extension (historical build)
-
-The final current draft is 25 A4 pages and includes the finite certificates at construction degrees 1101, 1240 and 1600, each with producer and independent acceptance. Only the small evidence receipts are committed; the witness arrays and exact norm files are staged separately, with external cold-storage delivery pending. The table gives exact rational **trial-Rayleigh** intervals, never minimum-eigenvalue brackets. Construction degree 1240 is the smallest even degree certified negative in this campaign, with no assertion of positivity at every smaller degree or first mathematical crossing. The worker inspected the committed finite theory and all six receipts; no independent numerical rerun is claimed by this manuscript translation. The current source/PDF receipt follows the preserved 22- and 24-page historical receipts in `manuscript-changes.md`. Final compilation and `git diff --check` pass with no warning, undefined-reference or layout markers; final page 22 was rendered and visually checked. Bibliography remains unchanged and Claude audit remains pending.
-
-## 2026-11-05 cleanup audit response (historical build)
-
-Cleanup Claude audit-01 accepted the mathematics and translation at their stated scopes. The editorial response clarifies committed small receipts versus separately staged witnesses/exact norms, labels Padua tables with the minimum/maximum eigenvalues of the signed Padua Gram matrix, and names FLINT exact integer/rational arithmetic alongside Arb and the alternate IEEE/BLAS assumptions. External cold-storage delivery remains pending. The intermediate 24-page source is explicitly scratch-only in the change record.
-
-The response builds cleanly to 25 A4 pages, with no final warning, error, undefined-reference or layout markers. Bibliography bytes, mathematical statements, proof content and numerical/certificate identities are unchanged. Current source/PDF hashes and commands are in [manuscript changes](../../../topics/padua-mz-cleanup-20261105/manuscript-changes.md). Earlier dated pending-review/build statements above are historical. PR preparation and final IDs remain separate; no submission or merge authorization is inferred.
-
-## 2026-11-05 final-ID preparation (current build)
-
-The final allocation is PD-T376 (finite witnesses), PD-T377 (odd weights), PD-T378 (odd carriers), PD-T379 (normalized one-sided bounds), PD-T380 (companion MEASURED campaign record), and PD-T381 (OPEN sharp-growth target). Only seven TeX comment lines changed for identification: five replacements and two insertions. Mathematics, hypotheses, numerical values, labels, bibliography and citation set remain unchanged. The extra 23 measured campaign rows are linked as a companion record and are not reproduced in the paper. The OPEN target remains distinct from its PROVED supporting bounds.
-
-A fresh `pdflatex; bibtex; pdflatex; pdflatex` build in `/tmp/padua-mz-preparation-paper` produced **25 A4 pages**, with zero final warnings/errors, unresolved references/citations or layout messages and no provisional IDs in the source. Its layout-preserving PDF text is byte-identical to the audited-response build. Current source: 73673 bytes, SHA-256 `75067c43ce96e825b2a7cc81589ad5a7b1aa4728ab5848939ed21b3433aad0b3`. Current PDF: 510218 bytes, SHA-256 `225356bdb1fde444932f14f544998afd65d20f179a113a3b24cdb563e3b33091`. Exact commands and reversible comment edits are in [manuscript changes](../../../topics/padua-mz-cleanup-20261105/manuscript-changes.md). All earlier build receipts are historical. PDF bytes can change on regeneration; generated output remains outside Git and preserved earlier artifacts were untouched.
-
-Cleanup Claude audit-01 accepted the scientific and manuscript-translation scopes; response-01 records the completed editorial dispositions. **Preparation checks PASS**: the [independent Astra protocol review](../../../topics/padua-mz-cleanup-20261105/preparation/protocol-check-01.md) and all nine refreshed-head integration rehearsals passed. PR26 is ready for AC review; assigned agent work is complete. This build confers no merge, submission or historical-priority clearance. External delivery of bulk certificate payloads remains pending.
+[Topic log](../../../topics/padua-mz-paper-20261113/LOG.md) · [BRIEF](../../../topics/padua-mz-paper-20261113/BRIEF.md) · [split map](../../../topics/padua-mz-paper-20261113/split-map.md) · [plan](../../../topics/padua-mz-paper-20261113/plan-cc.md) and [plan review](../../../topics/padua-mz-paper-20261113/review-plan-cc.md) · [correspondence table and frozen numbering](../../../topics/padua-mz-paper-20261113/correspondence-cc.md) · [notation register](../../../topics/padua-mz-paper-20261113/notation-cc.md) · [literature scope check](../../../topics/padua-mz-paper-20261113/literature-mz-paper.md) · referee reports [mathematics](../../../topics/padua-mz-paper-20261113/referee-cc-math.md) and [exposition](../../../topics/padua-mz-paper-20261113/referee-cc-exposition.md) · [provisional claim 01](../../../topics/padua-mz-paper-20261113/theory/cc-defect-condition-corollary.md) with checks [1](../../../topics/padua-mz-paper-20261113/check-cc-defect-corollary.md) and [2](../../../topics/padua-mz-paper-20261113/check-new-corollaries-02.md) · [topic report for AC](../../../topics/padua-mz-paper-20261113/report.md) (open questions, Zenodo file list) · [manuscript record](../../../topics/mz-constants/directions/M7/manuscript-record.md) (history of the single draft since 2026-10-31, and the current builds and hashes).
