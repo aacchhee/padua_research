@@ -1,6 +1,6 @@
 # Handoff 11 — AC publication decisions and finalization
 
-- Status: open
+- Status: superseded by 12: AC requested the PR36 main update; owner-finalization tasks remain unchanged at the new base
 - Previous handoff: [10-focused-check.md](10-focused-check.md), done in the output commit below.
 - Next agent / model / effort: **Claude, Opus 5.5 xhigh**, topic orchestrator after AC supplies the relevant decisions; Sonnet 5.5 medium/high for bounded metadata/build/pack mechanics under WORKFLOW.
 - Role: finalization, not another audit or research campaign.
