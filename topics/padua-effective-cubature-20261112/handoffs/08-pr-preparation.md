@@ -1,6 +1,6 @@
 # Handoff 08 — padua-effective-cubature-20261112 — PR preparation after accepted audit 03
 
-- Status: open
+- Status: done in `47892f13411132488a82e9dcd512d80dc543cd71` (PR preparation; readiness check in [09-readiness.md](09-readiness.md))
 - Previous handoff: [07-narrow-review.md](07-narrow-review.md)
 - Next agent / model / effort: **Claude, Sonnet 5.5, high** (technical PR preparation under WORKFLOW's model allocation)
 - Role: topic orchestrator / PR preparer
