@@ -186,10 +186,16 @@ Claude, claude-opus-5-5 (configured xhigh).
   - Availability statements: the files form an evidence archive prepared for deposit (DOI placeholder). In MZ-SP the witness arrays and norm files are now stated to be in that archive.
   - Builds: 32/50 pp., zero warnings, frozen labels 52/52 and 56/56.
   - This is an evidence-availability change. The readiness handoff asks for a focused check of it.
-- **Delivery.** Agents create no deposit: AC uploads the packs to Zenodo.
+- **Delivery.**
+  - Two deterministic zips, using the existing `padua-zenodo-*-20261114.zip` naming in AC's folder:
+    - `padua-zenodo-mz-cc-20261114.zip`: 973,963 B, `04a6aed5…6dff`;
+    - `padua-zenodo-mz-sp-20261114.zip`: 40,696,348 B, `03bf1e94…a027`.
+  - Both were sent as session files and written to `Downloads\padua\zenodo_evidence\`, after AC granted folder access. The device sizes match.
+  - Manifests and hashes are in [zenodo/README.md](zenodo/README.md).
+  - Agents create no deposit: AC uploads the packs to Zenodo.
 
 ## Runs needed
 
-- Codex readiness check ([handoff 07](handoffs/07-readiness.md)).
+- Codex readiness check plus a focused check of the evidence change ([handoff 08](handoffs/08-readiness-and-evidence.md); handoff 07 superseded before it started).
 - AC: upload the two packs to Zenodo; fill in the DOIs and the commit hash.
 - A byte-pinned PD-T376 witness replay requires retrieval of the exact missing package named in report §6.2. No receipt alone supplies it; no archival delivery is claimed.

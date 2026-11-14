@@ -337,5 +337,5 @@ Scope addendum,2026-11-12: the earlier charter paragraph describing3D Padua as o
   - PD-T685 (PROVED): ‖B‖ ≥ 0.02964… and c₊ ≥ 0.01277…, analytic lower bounds only.
 - **Unchanged OPEN items.** The decimal values of Λ_edge (PD-T027) and of c_± (PD-T381) stay OPEN.
 - **Audit.** Codex audit-01 is answered by response-01 (wording and metadata only).
-- **Open obligation before submission.** The exact PD-T376 witness arrays and norm files are not retrieved or replayed. AC must either retrieve them or decide the publication scope of MZ-SP Prop 8.2.
+- **Evidence.** The PD-T376 witness arrays were regenerated on 2026-11-14 with byte-identical payloads and norms. One Zenodo pack per paper is ready, verified and delivered to AC. AC deposits them.
 - **Reserved for AC.** Authorship, declarations, commit hash, the Zenodo deposit and submission. Companions are deferred until AC confirms the frozen texts. Only AC merges.

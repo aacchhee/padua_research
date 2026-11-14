@@ -629,7 +629,8 @@ All seven candidates (IDEA-756–762) and the literature records LIT-716/717 are
   - CC hyperinterpolation factor (1+√(5/3))√2.
 - **PD-T685, PROVED.** ‖B‖ ≥ 0.02964… and c₊ ≥ 0.01277…; lower bounds only.
 - **Audit.** Codex audit-01 is answered by response-01 (wording and metadata only); the readiness check is pending.
-- **Open for AC.** The PD-T376 witness arrays and norm files are not retrieved or replayed. AC retrieves them or decides the scope of MZ-SP Prop 8.2. Placeholders and the deposit are also AC's.
+- **Evidence.** The PD-T376 witness arrays were regenerated with byte-identical payloads. One verified Zenodo pack per paper was delivered to AC; it is not deposited yet.
+- **Open for AC.** Upload the packs, then fill in the DOIs, the commit hash and the other placeholders.
 
 [Results](results/padua-mz-paper-20261113.md) · [report](topics/padua-mz-paper-20261113/report.md) · [final-ID map](topics/padua-mz-paper-20261113/pr-preparation/final-id-map.json)
 

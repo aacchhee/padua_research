@@ -69,10 +69,13 @@ Details: [report for AC](../topics/padua-mz-paper-20261113/report.md), [LOG](../
   - the signed supremum;
   - notation;
   - stale metadata.
-- **Unresolved, for AC.** The PD-T376 witness arrays and exact norm files are not retrieved and not replayed, and the papers now say so. Before submission AC must retrieve the exact package (report §6.2) or decide the publication scope of MZ-SP Prop 8.2.
+- **PD-T376 evidence restored (2026-11-14, AC's decision).**
+  - The witness arrays and norm files were regenerated from the frozen commit `39479ff`. The source vectors and the pinned payload and norm SHA-256 all reproduce exactly.
+  - Both checkers accept the witnesses, and their receipts agree with the originals.
+- **Zenodo packs, one per paper.** Both are verified (ALL CHECKS AGREE) and delivered to AC, but not deposited. See [zenodo/README.md](../topics/padua-mz-paper-20261113/zenodo/README.md).
 - **Declined strengthenings (candidates only):** sup λ₊(N,N−1) ≤ 23/15 (MZ-CC); |λ^P_±(m,⌊τm⌋)| ≍ log m (MZ-SP).
 - **For AC:**
-  - the Zenodo deposit (file list in report §6);
+  - upload the two packs to Zenodo, then fill in the DOIs and the commit hash;
   - placeholders and decisions (report §5);
   - companions, deferred until AC confirms the frozen texts.
 
@@ -116,4 +119,4 @@ Manuscript state at head `a0206a8` (later wording cleanup at `a03a4f7`); indepen
 
 ## Next step
 
-Readiness check by Codex ([handoff 07](../topics/padua-mz-paper-20261113/handoffs/07-readiness.md)): `Codex (gpt-6-astra medium): Continue claude/padua-mz-paper-20261113.`
+Readiness check and focused evidence check by Codex ([handoff 08](../topics/padua-mz-paper-20261113/handoffs/08-readiness-and-evidence.md)): `Codex (gpt-6-astra medium): Continue claude/padua-mz-paper-20261113.`
