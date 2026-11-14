@@ -476,3 +476,7 @@ AC chooses retaining the checksum-bound paths/process text with explicit
 README disclosure; no sanitized derivative is claimed. No upload or DOI is
 assigned. License/author/funding/AI/draft metadata and the global repository
 budget remain owner-controlled decisions, not inferred permissions.
+
+## Dated addendum, 2026-11-14 (Claude audit-08, in-place MINOR fix)
+
+`MANIFEST.json.in` (hash-pinned, not edited) still calls the pair `e861c752`/`3e2805e` current. The current paired TeX/Bib freeze is `5f435be21f29f6fbf48e6d8cba15346117d7e151` with current-label tooling and pointer `daa77deb6371a12f6a6e36ff7b894ebb71a7f232`; the current public kit is the 5,149,206-byte ZIP (SHA256 `b341e6a1c6875550b58576b2cb167766f5a3cf9a4e4fc620b1134d2c490adbaa`) of [zenodo-public-response07-delivery.json](../zenodo-public-response07-delivery.json). Source: [audit-08 E8-03](../audit-08/e8-records-kit-source.md).
