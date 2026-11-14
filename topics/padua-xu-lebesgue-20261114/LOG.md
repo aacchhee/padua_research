@@ -33,3 +33,16 @@
 - Novelty gates written (`novelty-gate-X1.md`, `novelty-gate-X2.md`). Draft PR #36 opened.
 - G0 for both families: the developer evidence reports PASS (`evidence/xu-g0.json`, `evidence/mp-g0.json`). C-MP Path-A enclosures for even n ≤ 30: λ(±1,−1) contains n+1 and λ(1,1) ≠ λ(1,−1), certified at every n. Path-B checker output is in `evidence/mp-cmp-check.json`; independent review still to do.
 - Rounds X1-2 and X2-2 started on Fable 5.2 xhigh (`rounds.md`).
+
+## 2026-11-14 — round X1-2 result (Fable 5.2 xhigh researcher; orchestrator Opus 5.5)
+
+- Developer claims (all PROVED, audit pending; theory/X1-01 … X1-07):
+  - **tensor lift** (X1-01);
+  - **Λ^Xu_n = L_n²** exactly for every n ≥ 1, where L_n = (1/n)Σ cot((2k−1)π/(4n)) is the Lebesgue constant of the n zeros of T_n (X1-03, X1-04);
+  - **argmax = V*** for every n ≥ 2 (X1-05);
+  - a 1-D enclosure sharpening PD-T270 (X1-06);
+  - the expansion with b, c explicit, N = n, n₂ = 1, and the verdict on Conj. (17) (X1-07): both parts hold in the asymptotic sense with uniqueness of maximizers; the literal inequality is false.
+- MEASURED: edge-centre deficit (X1-08).
+- T0 kill test: the vertex value is not a Padua corner value. It coincides with PD-T159's F_n, so the vertex expansion alone is a corollary of merged PD-T159 + PD-T270. The new parts are the identification, the exact global constant and the argmax.
+- Orchestrator's independent numerical check (not the researcher's scripts): the Sonnet path-B vertex values in `evidence/xu-vertex-values.json` equal L_n² to < 1.2e−28 for all 400 tested n ≤ 401.
+- Next: an independent Opus check; a novelty re-gate (Li–Sun–Xu 2009 §3.3 lift; BdMV proof; Dencker–Erb), running.

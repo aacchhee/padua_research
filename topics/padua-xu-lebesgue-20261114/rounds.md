@@ -7,7 +7,7 @@ A round ends with a pushed LOG entry. Budgets (BRIEF §4, handoff 01): up to 10 
 | Round | Direction | Researcher model | Reason / scope | Outcome |
 |---|---|---|---|---|
 | 0 | setup (neither) | Opus 5.5 (orchestrator) + Opus 5.5 literature readers | BRIEF §4 downgrade: literature and bookkeeping only (rules, LIT reads, novelty gates, gates.md) | literature verdicts recorded (`literature-xu-mp.md` §3); novelty gates pending |
-| X1-1 | X1 | Opus 5.5 (orchestrator) supervising; code Sonnet 5.5 high | Downgrade: G0 implementation and G1 numerical screen only, no proof work | in progress |
-| X2-1 | X2 | Opus 5.5 (orchestrator) supervising; code Sonnet 5.5 high | Downgrade: G0 implementation, G1-MP screen and C-MP corner checks only | in progress |
+| X1-1 | X1 | Opus 5.5 (orchestrator) supervising; code Sonnet 5.5 high | Downgrade: G0 implementation and G1 numerical screen only, no proof work | G0 PASS; G1 supports vertex conjecture n ≤ 60 (MEASURED) |
+| X2-1 | X2 | Opus 5.5 (orchestrator) supervising; code Sonnet 5.5 high | Downgrade: G0 implementation, G1-MP screen and C-MP corner checks only | G0 PASS; C-MP asymmetry certified n ≤ 30; argmax (±1,1) n ≤ 60 (MEASURED) |
 | X2-2 | X2 | **Fable 5.2 xhigh** (subagent) | Proof round: exact corner values (λ(±1,−1) = n+1; closed form at (±1,1)) and the sharp constant lim λ_n(1,1)/n²: genuine asymptotic analysis of a singular lattice sum, so no downgrade | in progress |
-| X1-2 | X1 | **Fable 5.2 xhigh** (subagent) | Proof round: novelty kill test vs Padua corner values, closed form of λ^Xu_n at the vertices, sharp expansion (G2); new kernel, so no downgrade | in progress |
+| X1-2 | X1 | **Fable 5.2 xhigh** (subagent) | Proof round: novelty kill test vs Padua corner values, closed form of λ^Xu_n at the vertices, sharp expansion (G2); new kernel, so no downgrade | developer PROVED (audit pending): tensor lift X1-01, Λ^Xu_n = L_n² (X1-04), argmax = V* for every n ≥ 2 (X1-05), expansion (X1-07); X1-08 MEASURED. The researcher recommends no further X1 Fable round |

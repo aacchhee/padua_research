@@ -35,18 +35,22 @@ def main():
     ap.add_argument("--nmax", type=int, default=2000); ap.add_argument("--dps", type=int, default=40)
     ap.add_argument("--out", default="/tmp/x1r2/1d_check.json")
     a = ap.parse_args()
+    os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     mp.mp.dps = a.dps
     out = {}
     # (a)
-    worst = mp.mpf(0)
+    worst = mp.mpf(0); dev = mp.mpf(0)
     for n in list(range(1, 13)) + [20, 50, 101]:
-        lo, hi = series_bracket(n, 4000)
         L = X.Lcheb(n); An = X.A(n)
         target = (L - An) * mp.pi / 4
+        lo, hi = series_bracket(n, 2000)                      # rigorous-style bracket by partial sums
         assert lo < target < hi, (n, lo, target, hi)
         worst = max(worst, hi - lo)
-    out["a_series_bracket_ok"] = True; out["a_bracket_width_max"] = mp.nstr(worst, 5)
-    print("(a) exact series brackets (L_n - A_n) pi/4 for n in 1..12,20,50,101; max bracket width", mp.nstr(worst, 5))
+        acc = mp.nsum(lambda j: (-1) ** (int(j) - 1) * G(n * j), [1, mp.inf])   # accelerated value
+        dev = max(dev, abs(acc - target))
+    out["a_series_bracket_ok"] = True; out["a_bracket_width_max"] = mp.nstr(worst, 5); out["a_accelerated_dev"] = mp.nstr(dev, 5)
+    print("(a) exact series: partial sums bracket (L_n - A_n) pi/4 for n in 1..12,20,50,101 (max width %s); accelerated sum deviates by at most %s"
+          % (mp.nstr(worst, 5), mp.nstr(dev, 5)))
     # (b)
     minlo = None; minhi = None
     ns = list(range(1, min(a.nmax, 400) + 1)) + list(range(400, a.nmax + 1, 37))

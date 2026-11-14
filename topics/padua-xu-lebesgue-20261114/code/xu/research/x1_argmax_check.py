@@ -32,6 +32,7 @@ def main():
     ap.add_argument("--gm", type=int, default=6); ap.add_argument("--dps", type=int, default=30)
     ap.add_argument("--out", default="/tmp/x1r2/argmax_check.json")
     a = ap.parse_args()
+    os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     mp.mp.dps = a.dps
     rows = []
     for n in range(2, a.nmax + 1):

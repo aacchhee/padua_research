@@ -39,6 +39,7 @@ def main():
     ap.add_argument("--nmin", type=int, default=2); ap.add_argument("--nmax", type=int, default=40)
     ap.add_argument("--dps", type=int, default=60); ap.add_argument("--out", default="/tmp/x1r2/t0_pslq.json")
     a = ap.parse_args()
+    os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     mp.mp.dps = a.dps
     pad = {m: padua_corner(m) for m in range(1, a.nmax + 5)}
     rows = []; rel_padua = 0; rel_L = 0; min_gap = None

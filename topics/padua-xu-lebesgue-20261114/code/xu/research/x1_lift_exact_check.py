@@ -27,6 +27,7 @@ def main():
     ap.add_argument("--pts", type=int, default=3); ap.add_argument("--prec", type=int, default=512)
     ap.add_argument("--out", default="/tmp/x1r2/lift_exact.json")
     a = ap.parse_args()
+    os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     ctx.prec = a.prec
     rng = random.Random(20261114)
     pi = arb.pi()

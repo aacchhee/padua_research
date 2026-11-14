@@ -18,6 +18,7 @@ def main():
     ap.add_argument("--pts", type=int, default=6); ap.add_argument("--dps", type=int, default=40)
     ap.add_argument("--out", default="/tmp/x1r2/lift_check.json")
     a = ap.parse_args()
+    os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     mp.mp.dps = a.dps
     rng = random.Random(20261114)
     rows = []

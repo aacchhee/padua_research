@@ -20,6 +20,7 @@ def main():
     ap.add_argument("--ngen", type=int, default=12); ap.add_argument("--dps", type=int, default=60)
     ap.add_argument("--out", default="/tmp/x1r2/vertex_check.json")
     a = ap.parse_args()
+    os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     mp.mp.dps = a.dps
     worst = mp.mpf(0); worst_gen = mp.mpf(0); sign_fail = 0; rows = []
     for n in range(a.nmin, a.nmax + 1):

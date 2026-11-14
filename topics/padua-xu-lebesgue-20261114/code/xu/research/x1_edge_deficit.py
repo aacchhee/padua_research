@@ -56,6 +56,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--kmax", type=int, default=10); ap.add_argument("--out", default="/tmp/x1r2/edge_deficit.json")
     a = ap.parse_args()
+    os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     rows = []; prev = None
     for k in range(2, a.kmax + 1):
         n = 2 ** k
