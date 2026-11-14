@@ -18,8 +18,8 @@ remains OPEN. F07/F10 remain separate supports.
 The simpler manuscript route now uses
 [two analytic gates from512](../topics/padua-argmax-bridge-20261105/theory/J01-onset512-gates.md)
 and an [elementary constant enclosure](../topics/padua-argmax-bridge-20261105/theory/J02-elementary-constant-enclosure.md),
-with the original320 proof preserved. All191 new native primary/fresh pairs
-for320..510 passed locally. The separate
+with the original320 proof preserved. All 191 new native primary/fresh pairs
+for 320..510 passed locally. The separate
 [246-line independent checker](../topics/padua-argmax-bridge-20261105/code/independent_phase_checker/check.py)
 recertified942 witness records encoding471 distinct trees across degrees41..511, with its own bounds and
 explicit IEEE/NumPy/Python trust. A distinct six-certificate replay passed.
@@ -64,7 +64,7 @@ All **15/15 additional analytic rounds are complete**. [Global320 theorem](../to
 
 The [scalar H theorem](../topics/padua-argmax-bridge-20261105/theory/E07-f-monotonicity.md) gives a unique period maximum at0. The [paired-root theorem](../topics/padua-argmax-bridge-20261105/theory/E11-central-pair.md) removes artificial positive entropy charges while retaining the exact negative beta baseline and genuine fractional alpha cusp. Its closed model domain is not a finite-error guard extension.
 
-Accepted cost components: [both closed pi/4 corner squares from256](../topics/padua-argmax-bridge-20261105/theory/E12-corner256.md), loss1/30; [closed far primitive region from192](../topics/padua-argmax-bridge-20261105/theory/E15-analytic-far192.md), gap3/100 at rho>=pi/2. The new hybrid checker passed independent local primary/fresh validation on known41 and511:28.060015CPU checkpoints over all4 calls. At511 the primary has45S/zero actual calls/three analytic far leaves in7.353713CPU. Frozen native/D36 sources remain intact; no residual degree or Syvert2 runtime law follows. [Source/result review](../topics/padua-argmax-bridge-20261105/independent-checks-final-hybrid-engine.md).
+Accepted cost components: [both closed pi/4 corner squares from256](../topics/padua-argmax-bridge-20261105/theory/E12-corner256.md), loss1/30; [closed far primitive region from192](../topics/padua-argmax-bridge-20261105/theory/E15-analytic-far192.md), gap3/100 at rho>=pi/2. The new hybrid checker passed independent local primary/fresh validation on known41 and 511:28.060015CPU checkpoints over all4 calls. At511 the primary has45S/zero actual calls/three analytic far leaves in7.353713CPU. Frozen native/D36 sources remain intact; no residual degree or Syvert2 runtime law follows. [Source/result review](../topics/padua-argmax-bridge-20261105/independent-checks-final-hybrid-engine.md).
 
 Historical first release, superseded by the actual compact return above: the **Syvert2 pack was prepared and independently inspected** after research completion:25,104,521-byte offline ZIP, exact7known+273open worklist, full frozen source/dependency closure. [Delivery record](../topics/padua-argmax-bridge-20261105/syvert2-delivery.md).67 recorded synthetic control events, four genuine saved-proof data checks and actual239-entry ZIP inspection passed. Earlier operational failures are preserved. No residual campaign or remote numerical run occurred. Next: INTERIM Claude audit with OWN gap-closing ideas, then Codex implementation; branch WORK. Canonical unwaived research procedural findings remain linked in LOG. INTERIM Claude audit-02 (2026-11-07) found no BLOCKING/MAJOR mathematical finding, four MAJOR pack findings (PA1–PA4) to resolve before any Syvert2 release, and twelve MINOR record findings; see [audit-02](../topics/padua-argmax-bridge-20261105/audit-02-interim.md) and [Claude's ideas](../topics/padua-argmax-bridge-20261105/audit-02-ideas.md).
 
@@ -272,3 +272,19 @@ transfer/retrieval and permanent source snapshot/DOI remain OPEN.
 ## Dated status — 2026-11-13 (Claude audit-06)
 
 The focused Claude audit of response-05 ([audit-06](../topics/padua-argmax-bridge-20261105/audit-06.md)) accepts the E5-01 reader-allowlist repair (synthetic storage compatibility, with a real deduplicate/export round-trip), the analytic optimization guard, the finite per-process runtime probe and the changed analytic explanations, with no BLOCKING or MAJOR finding, and returns a MINOR wording batch. The canonical 320..510 return, the I25 data checks, the native-history custody, the post-repair snapshot and DOI, and the global generated-output budget (bound 11,756,141 B against the 10,000,000 B cap) remain OPEN with AC.
+
+
+## Paper-dependent evidence replacement — 2026-11-14
+
+Existing theorem statements, ranges and premises are unchanged. All 191
+new primary/fresh pairs at 320–510 succeed; every new native history is
+retained and all 382 proofs pass an independent relocated readback without
+original-workspace reads. A new full independent execution recertifies all
+942 records for 471 degrees, with exact input identities, scientific pair
+equality and unchanged claimed margin bounds; distinct fresh six-record
+checks agree. All 39 polynomial inputs and accepted receipts survive; the
+missing checker executable is rebuilt and strictly checked at 2/17.
+No unavailable historical archive is a dependency of the current paper.
+[Current record](../topics/padua-argmax-bridge-20261105/regeneration-20261114.md)
+and [completed supplementary review](../topics/padua-argmax-bridge-20261105/supplementary-regeneration-review-20261114.md)
+state exact evidence and implementation limits.

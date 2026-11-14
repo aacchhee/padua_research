@@ -79,5 +79,12 @@
     "independent_I25_full_result": "ACCEPTED: 942 trees / 471 degrees; distinct six-certificate replay; explicit arithmetic/analytic premises in J03",
     "retention": "Preserve whole original local campaign/build trees and failed records; inventory pointers do not authorize pruning. Unsampled full raw histories remain at original execution locations. No all-history archive claim.",
     "completed_external_delivery_receipt": null
+  },
+  "current_paper_evidence_2026_11_14": {
+    "source_freeze": "e861c752218fc0a6648d4a4a67fea616ba5cbdd1",
+    "record": "regeneration-20261114.md",
+    "delivery_receipt": "regeneration-delivery.json",
+    "status": "All paper-dependent evidence present/newly regenerated; local complete delivery being sealed; external custody pending",
+    "historical_missing_artifacts_required": false
   }
 }

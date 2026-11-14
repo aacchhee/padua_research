@@ -291,3 +291,21 @@ The nextafter check exercises the library result, not a general rounding
 mode guarantee. These finite per-process probes do not establish the
 historical workers' mode or universal binary64/SIMD behavior. No runtime
 probe or historical checker execution changes with this clarification.
+
+
+### Replacement paper evidence — 2026-11-14
+
+The current paper uses authenticated 560 original records for 41–319 and 511
+plus 382 newly generated records for 320–510. A new frozen full execution
+recertifies all 942 records / 471 degrees with unchanged numerical core and
+the existing explicit arithmetic/analytic premises. Four actual worker
+wait statuses are zero; exact scientific primary/fresh pairs agree. New
+near/far/corner margins exceed 289/50000, 33/200, 159/5 respectively. A distinct
+fresh six-record replay and substitution controls pass.
+[Current results](../code/regeneration_i25_20261114/RESULTS.json),
+[scope and complete evidence](../regeneration-20261114.md),
+[distinct review](../supplementary-regeneration-review-20261114.md).
+Missing historical I25/onset archives are no longer paper dependencies;
+historical records above remain historical. Runtime probes remain finite
+per-process evidence, not universal IEEE/libm/SIMD guarantees. No result
+statement, threshold or premise changes.

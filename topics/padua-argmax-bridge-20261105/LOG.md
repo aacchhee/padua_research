@@ -3325,3 +3325,37 @@ polynomial receipts survive; no full 39-degree replay is necessary or claimed.
 Actual executable and 14 compiler/header/runtime files (41,412,808 bytes)
 are retained for delivery and independently readback-verified. The new binary
 happens to match historical `e35d6a80…`, but is a fresh build, not recovery.
+
+New I25 full outcome completes successfully: 942 accepted records / 471
+exact degrees, all four direct wait4 statuses zero; root independently joins
+all observation rows to the exact degree/pass population. Launcher inclusive
+CPU 2,770.544475981 s, wall 768.464784921 s. Distinct fresh checks at 41/458/511
+(two records each) match every scientific field, CPU excluded; positive
+substitution controls and same-process finite probes pass. New RESULTS.json
+is independently reviewed and committed at `d9cd260`. Exact margins and
+population counts agree; numerical core and existing premises unchanged.
+
+Final paired TeX/Bib freeze `e861c752218fc0a6648d4a4a67fea616ba5cbdd1`,
+separate pointer `3e2805e5da5b5125308692dec7103faae659b01e`. Source 19/86/120
+and 120 matching built labels; fresh PDFs 59/152 pages. Seven baseline controls
+and 13 adapted scenarios meet expected outcomes; nine paired mutation types
+reject, unmodified/README-only pass. The adapted harness changes only HEAD
+and BASELINE; SHA256 190d2cf8a0e00117600aba2495b6a47c6561e9cb60e54e8b0b0b38aa08b318a4.
+Empty-map scan shows every formal block unchanged from 36ac772; new evidence
+and timing paragraphs are actual material provenance updates, not renames.
+The distinct reviewer inspected the changed final pages, source freeze and
+both actual PDFs; no unresolved bounded finding. Full report ready before
+source snapshot, with outer delivery verification explicitly pending to avoid
+a self-referential archive/hash. All proof-dependent missing data are now
+replaced or present; old historical-only custody/PDF/ZIP items are retired.
+
+Scientific source-snapshot checkpoint budget (before outer delivery receipt):
+main alone 9,733,758 bytes; topic share 2,041,259; union 11,775,017;
+with the 2,087-byte FREEZE.md exception 11,777,104; conservative no-shrink
+bound 11,796,764 against 10,000,000. Neither branch alone exceeds the cap;
+the union does. Growth is the new explicit input/output freeze/receipt data,
+small metadata and current custody record. All new generated evidence files
+are below 16 KiB individually; no unrelated evidence is removed or reclassified.
+Large scientific outputs and the downloadable package stay outside Git.
+AC's cap/storage/share and publication choices remain open; no permanent
+location or DOI is invented. Final delivery metadata growth is counted later.

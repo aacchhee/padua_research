@@ -295,3 +295,23 @@ archival source checks pass. Historical PDF preservation mode was not run.
 [Response-06](../response-06.md) and its linked review give exact scope.
 This checkpoint predates AC-authorized paper-evidence regeneration; it
 does not certify the later campaign or establish deposition/readiness.
+
+
+## Paper-dependent evidence regeneration — 2026-11-14
+
+Current paired freeze `e861c752218fc0a6648d4a4a67fea616ba5cbdd1`;
+separate pointer `3e2805e`. Root fresh build.sh exits 0 in regenerated
+output directory: **59 pages**, 804080 bytes, SHA256
+`b0abf068834066e4494cbf9cedecbe2f2c94871233d16f2463816eb2c4501749`. Byte-equal timestamped copy:
+`/workspace/padua_research/local-output/padua-argmax-bridge-20261105/regenerated-paper-20261114/padua-manuscript-20261114-015102-Oslo.pdf`.
+Both artifacts match on 120 built labels, 19 statements and 86 numbered
+environments; 152 <= 5 * 59. Seven baseline controls and adapted nine-type
+mutation harness behave as expected (13 scenarios; source changes reject,
+unmodified/README-only pass). Harness SHA256
+`190d2cf8a0e00117600aba2495b6a47c6561e9cb60e54e8b0b0b38aa08b318a4`.
+The empty-map scanner confirms formal blocks unchanged from 36ac772.
+No overfull, undefined or badness-10000 hbox diagnostics; other underfull
+diagnostics remain. Distinct review visually inspects affected final pages.
+The new paper evidence is available and recertified; historical-only PDF
+byte preservation is no longer required by AC. [Regeneration record](../regeneration-20261114.md)
+and its review distinguish actual verification from storage/ABI assumptions.

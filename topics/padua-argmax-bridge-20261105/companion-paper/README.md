@@ -23,7 +23,7 @@ and PR readiness.
 The proof uses [J01](../theory/J01-onset512-gates.md) analytically for n>=512,
 [J02](../theory/J02-elementary-constant-enclosure.md) for elementary rational
 constant bounds, Bernstein witnesses for2..40 and
-[J03](../theory/J03-independent-phase-checker.md) for all942 complete phase
+[J03](../theory/J03-independent-phase-checker.md) for all 942 complete phase
 trees at471 degrees41..511. I25 uses its own finite-sum interval bounds under
 explicit Python/Fraction, guarded NumPy and IEEE binary64 assumptions plus
 named analytic lemmas. A distinct execution accepted six certificates. This
@@ -167,3 +167,13 @@ The current paired freeze is `36ac77252fb490e58b807767a6bd52f6f3f3dff4`,
 are historical. BUILD.md and response-06.md record identities and scope.
 AC subsequently authorized regeneration of missing paper-dependent evidence;
 this source checkpoint precedes that work.
+
+
+### Current paper-evidence generation — 2026-11-14
+
+Current paired source is `e861c752218fc0a6648d4a4a67fea616ba5cbdd1`,
+59/152 pages, 120 matching built labels. BUILD.md records current artifact
+identities. Earlier active-freeze descriptions above are historical.
+The paper now uses regenerated 320–510 evidence and new full 41–511
+independent outputs; see [regeneration record](../regeneration-20261114.md).
+No unavailable historical archive is a dependency of this version.

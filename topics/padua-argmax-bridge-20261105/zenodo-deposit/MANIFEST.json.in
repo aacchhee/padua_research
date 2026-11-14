@@ -246,7 +246,7 @@
     "original_48_162_page_PDF_hashes_preserved": true
   },
   "manuscript_source_freeze": "24a98db4c3c4c4d0eede2e3929532956df87911b",
-  "local_package_status": "Original return and padua30 recovered; onset512/I25 missing; post-repair final source packaging and AC DOI/publication pending",
+  "local_package_status": "All current paper-dependent evidence present/regenerated and verified; complete delivery being sealed; permanent storage/DOI pending",
   "small_bundle_recheck_recipe": "RECHECK-SMALL-BUNDLE.md",
   "revision_note_2026_11_13": "Root and distinct reviewer authenticate original uploaded package/return and accept 280 pairs through repaired compact verifier; actual repaired onset512 canonical reader run remains blocked.",
   "historical_pre_audit04_source_commit": "a433c7dfc61d1ed61799a7d919beb8334a2593b6",
@@ -254,10 +254,10 @@
     "convention": "all positive deltas; no deletion or shrink credit",
     "pre_current_batch_bytes": 9917613,
     "cap_bytes": 10000000,
-    "final_batch_bound": 11756141,
+    "final_batch_bound": 11796764,
     "current_main_merge_positive_bytes": 1827288,
-    "actual_current_classified_bytes": 11734394,
-    "post_original_topic_positive_deltas_bytes": 1838528,
+    "actual_current_classified_bytes": 11775017,
+    "post_original_topic_positive_deltas_bytes": 1879151,
     "cap_satisfied": false,
     "historical_audit05_input": {
       "main_classified_bytes": 9733758,
@@ -268,8 +268,8 @@
       "conservative_bound_bytes": 11751309
     },
     "current_main_classified_bytes": 9733758,
-    "current_topic_classified_share_bytes": 2000636,
-    "current_actual_with_FREEZE_exception_bytes": 11736481
+    "current_topic_classified_share_bytes": 2041259,
+    "current_actual_with_FREEZE_exception_bytes": 11777104
   },
   "verifier_provenance": {
     "original_padua30_unrepaired_verify_compact_sha256": "7c2dad53519aff616bdadd3f925ec8943963cb4bf521b410355f827b7a1899bf",
@@ -288,18 +288,19 @@
     },
     "post_audit05_status": "Specific producer allowlist and optimization/probe defects repaired; supplementary review complete within scope; actual canonical onset512 ZIP and I25 checks remain unavailable."
   },
-  "active_paired_source_commit": "8937d3b723c09c004f49d3e565d0b02976713a37",
-  "historical_manuscript_record_note": "Inventory PDF identities and manuscript_review describe historical24a98db51/147 pair. The active response05 pair is separate and not a deposited payload.",
+  "active_paired_source_commit": "e861c752218fc0a6648d4a4a67fea616ba5cbdd1",
+  "historical_manuscript_record_note": "Inventory PDF identities describe historical24a98db51/147 pair. Active response06 pair is separate; no deposition asserted.",
   "current_manuscript_revision": {
-    "source_freeze": "8937d3b723c09c004f49d3e565d0b02976713a37",
+    "source_freeze": "e861c752218fc0a6648d4a4a67fea616ba5cbdd1",
     "pages": [
-      58,
+      59,
       152
     ],
-    "paper_sha256": "1dc50b84b6ac6a7d92300370dde5e95b867b4e428708883c291d2b4cd089c657",
-    "companion_sha256": "9bd922db9599a46577fe5af5a19499e96f338946ad7b5a7c55f79210e5809a1c",
-    "supplementary_review": "COMPLETE within declared scope; focused Claude audit pending",
+    "paper_sha256": "b0abf068834066e4494cbf9cedecbe2f2c94871233d16f2463816eb2c4501749",
+    "companion_sha256": "3c7a114a9eb33f6211b8e1d522033cf0f0fbbc1a938e206ba1341792feb920ec",
+    "supplementary_review": "Regeneration and final source/layout COMPLETE within scope; focused Claude audit pending",
     "historical_PDF_preservation_retested": false
   },
-  "historical_response04_paired_source_commit": "ad908acb21d3589d85635618ff68f63dd01cfbca"
+  "historical_response04_paired_source_commit": "ad908acb21d3589d85635618ff68f63dd01cfbca",
+  "paper_evidence_generation": "regeneration-20261114.md"
 }

@@ -64,3 +64,16 @@ were additional conditions. See the [J03 addendum](../../theory/J03-independent-
 The frozen four run sources, preregistrations and RESULTS.json are unchanged.
 The current workspace lacks the three external evidence ZIPs; none of the
 audit-04 new-range data checks has been executed in this session.
+
+
+## Current regenerated paper outcome — 2026-11-14
+
+A newly frozen execution recertifies all 942 records / 471 degrees using
+unchanged numerical core, authenticated 560 old inputs and382 new native
+inputs. Four observed wait statuses are zero; distinct fresh six-record
+replay and three positive substitution controls agree. This replaces the
+missing historical I25 bundle as the current paper dependency.
+[New results](../regeneration_i25_20261114/RESULTS.json) and
+[complete scope/delivery record](../../regeneration-20261114.md).
+The dated records above and original RESULTS.json remain historical; new
+outputs are not presented as recovered old bytes.

@@ -131,3 +131,17 @@ constructed real storage/export synthetic round-trip pass, with explicit
 non-scientific adapters. The actual canonical ZIP remains unavailable,
 so its reader rerun and new-range data acceptance remain OPEN. Historical
 campaign execution is not attributed to the new reader or current runner.
+
+
+## Current replacement paper evidence — 2026-11-14
+
+AC requires missing paper-dependent data to be regenerated and permits
+historical-only artifacts to be forgotten. The new 191-pair/382-pass
+campaign and full 942-record independent check complete successfully;
+all new histories are retained in the 164,004,073-byte full return,
+SHA256 c172d9a0b3a6338b90dc4c9bfa072a965ebfc3a3ea6901774d099f4ce4a69a34.
+Distinct relocated full readback and six-record numerical replay pass.
+[Current outcome, exact identities and delivery](regeneration-20261114.md).
+The missing historical ZIP and old 632 MiB histories are no longer acceptance
+requirements or dependencies of this paper version. No historical recovery
+or external custody is claimed.
