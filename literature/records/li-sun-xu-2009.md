@@ -25,3 +25,5 @@ See [search log](../SEARCH-charter-unisolvence-20261031.md). Imported prior sear
 ## History
 
 2026-10-31: Step0 import under explicit task override; provisional ID only.
+
+2026-11-14 (padua-xu-lebesgue-20261114): addendum. §3 (d = 2) read as arXiv 0808.0180 digests: lattice derivation of the Xu interpolation (Prop. 3.6, Lemmas 3.7–3.8, Thms 3.9–3.10), no 2D Lebesgue statement; the only Lebesgue-type bound is 3D, c(log n)³. This is the same paper as LIT-307 and LIT-010 and supplies no new ID. See the [INDEX addendum](../INDEX.md).

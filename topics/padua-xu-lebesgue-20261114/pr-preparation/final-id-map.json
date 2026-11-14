@@ -1,0 +1,309 @@
+{
+ "topic": "padua-xu-lebesgue-20261114",
+ "reservation_commit": "91a0116eb9e83afe86a25c70d68684f364b316c5",
+ "PD-T": [
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-01",
+   "final": "PD-T690",
+   "record": "theory/X1-01-tensor-lift.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-02",
+   "final": "PD-T691",
+   "record": "theory/X1-02-trig-lebesgue-function.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-03",
+   "final": "PD-T692",
+   "record": "theory/X1-03-vertex-value.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-04",
+   "final": "PD-T693",
+   "record": "theory/X1-04-exact-lebesgue-constant.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-05",
+   "final": "PD-T694",
+   "record": "theory/X1-05-argmax-set.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-06",
+   "final": "PD-T695",
+   "record": "theory/X1-06-chebyshev-constant-expansion.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-07",
+   "final": "PD-T696",
+   "record": "theory/X1-07-expansion-and-conjecture-17.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-08",
+   "final": "PD-T697",
+   "record": "theory/X1-08-edge-deficit-measured.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-21",
+   "final": "PD-T698",
+   "record": "theory/X2-21-corner-kernel.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-22",
+   "final": "PD-T699",
+   "record": "theory/X2-22-lower-vertices.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-23",
+   "final": "PD-T700",
+   "record": "theory/X2-23-upper-vertex-closed-form.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-24",
+   "final": "PD-T701",
+   "record": "theory/X2-24-upper-exceeds-lower.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-25",
+   "final": "PD-T702",
+   "record": "theory/X2-25-upper-vertex-asymptotics.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-26",
+   "final": "PD-T703",
+   "record": "theory/X2-26-explicit-lower-bound.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-27",
+   "final": "PD-T704",
+   "record": "theory/X2-27-vertex-remainder-measured.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-28",
+   "final": "PD-T705",
+   "record": "theory/X2-28-argmax-open.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-31",
+   "final": "PD-T706",
+   "record": "theory/X2-31-first-variation-closed-form.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-32",
+   "final": "PD-T707",
+   "record": "theory/X2-32-local-max-certified.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-33",
+   "final": "PD-T708",
+   "record": "theory/X2-33-far-field-bound.md"
+  },
+  {
+   "provisional": "PD-T?padua-xu-lebesgue-20261114-claude-34",
+   "final": "PD-T709",
+   "record": "theory/X2-34-translation-formula.md"
+  }
+ ],
+ "PD-N": [
+  {
+   "provisional": "PD-N?padua-xu-lebesgue-20261114-claude-29",
+   "final": "PD-N251",
+   "record": "theory/X2-N29-no-central-symmetry.md"
+  },
+  {
+   "provisional": "PD-N?padua-xu-lebesgue-20261114-claude-30",
+   "final": "PD-N252",
+   "record": "theory/X2-N30-vertex-value-not-dimension.md"
+  },
+  {
+   "provisional": "PD-N?padua-xu-lebesgue-20261114-claude-35",
+   "final": "PD-N253",
+   "record": "theory/X2-N35-shift-rigidity-fails.md"
+  }
+ ],
+ "IDEA": [
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-40",
+   "final": "IDEA-766",
+   "label": "X1-C1",
+   "title": "Closed form and sharp expansion of the Xu vertex value",
+   "disposition": "PROVED outcome (PD-T692, PD-T696); vertex expansion alone is a corollary of PD-T159 + PD-T270"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-41",
+   "final": "IDEA-767",
+   "label": "X1-C2",
+   "title": "Argmax of the Xu Lebesgue function = non-node vertices (BCDMV Conj. 17, second part)",
+   "disposition": "PROVED outcome (PD-T694)"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-42",
+   "final": "IDEA-768",
+   "label": "X1-C3",
+   "title": "Odd-n Xu variant (V* = {(1,-1),(-1,1)})",
+   "disposition": "PROVED outcome (PD-T693, PD-T694)"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-43",
+   "final": "IDEA-769",
+   "label": "X1-M1",
+   "title": "Tensor lift of Xu interpolation and exact constant Lambda = L_n^2",
+   "disposition": "PROVED outcome (PD-T690, PD-T693)"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-44",
+   "final": "IDEA-770",
+   "label": "X2.1",
+   "title": "BRIEF target: explicit c n^2 lower bound for MP points",
+   "disposition": "known: Beberok, JAT 311 (2025) 106191, Thm 0.1 (LITERATURE); explicit-constant strengthening PROVED as PD-T703"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-45",
+   "final": "IDEA-771",
+   "label": "X2-C1",
+   "title": "Exact MP vertex values",
+   "disposition": "PROVED outcome (PD-T699, PD-T700)"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-46",
+   "final": "IDEA-772",
+   "label": "X2-C2",
+   "title": "Negative answer to BBDM sec. 7.1 (central symmetry; all-corner attainment; corner value dim)",
+   "disposition": "retained successful candidate; PROVED negatives PD-N251, PD-N252 (REJECTED: refuted applies to BBDM statements)"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-47",
+   "final": "IDEA-773",
+   "label": "X2-C3",
+   "title": "Sharp MP constant lim Lambda/n^2 = c* and argmax {(+-1,1)}",
+   "disposition": "partial progress without a PARTIAL status: corner constant PROVED (PD-T702); argmax and limit OPEN (PD-T705)"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-48",
+   "final": "IDEA-774",
+   "label": "X2-C4",
+   "title": "MPX variants",
+   "disposition": "deferred: no defining source found"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-49",
+   "final": "IDEA-775",
+   "label": "X2-R3a",
+   "title": "Far-field localization of MP maximizers",
+   "disposition": "PROVED outcome (PD-T708)"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-50",
+   "final": "IDEA-776",
+   "label": "X2-R3b",
+   "title": "Averaged shifted-lattice (box) bound / W1-W3 programme for the MP argmax and sharp constant",
+   "disposition": "OPEN (tool PD-T709)"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-51",
+   "final": "IDEA-777",
+   "label": "X2-R3c",
+   "title": "Zero-shift maximality of the MP box kernel (MP variant of IDEA-316)",
+   "disposition": "REJECTED: failed (PD-N253, MEASURED scope)"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-52",
+   "final": "IDEA-778",
+   "label": "X2-R3d",
+   "title": "First-variation band certificate at (+-1,1)",
+   "disposition": "PROVED for even n <= 3000 (PD-T706, PD-T707)"
+  },
+  {
+   "provisional": "IDEA?padua-xu-lebesgue-20261114-claude-53",
+   "final": "IDEA-779",
+   "label": "X2-R3e",
+   "title": "P1 tail: strict local maxima at (+-1,1) for n > 3000",
+   "disposition": "OPEN (plan in PD-T705 addendum)"
+  }
+ ],
+ "LIT": [
+  {
+   "provisional": "none used (source label: Beberok, JAT 311 (2025) 106191, Thm 0.1 (existential lower bound))",
+   "final": "LIT-721",
+   "record": "literature/records/beberok-2025.md",
+   "coverage": "as read by the orchestrator (HTML); locators pending"
+  },
+  {
+   "provisional": "none used (source label: Beberok 2025 eq. (2) corner kernel and final display (as transcribed))",
+   "final": "LIT-722",
+   "record": "literature/records/beberok-2025.md",
+   "coverage": "as read by the orchestrator (HTML); display not re-checked"
+  },
+  {
+   "provisional": "none used (source label: Bos–De Marchi–Vianello, JAT 141 (2006) 134–141, Thm 1)",
+   "final": "LIT-723",
+   "record": "literature/records/bdmv-2006.md",
+   "coverage": "complete journal full text"
+  },
+  {
+   "provisional": "none used (source label: BdMV proof method and absent statements)",
+   "final": "LIT-724",
+   "record": "literature/records/bdmv-2006.md",
+   "coverage": "complete journal full text"
+  },
+  {
+   "provisional": "none used (source label: Xu, JAT 164 (2012) 6–30: Cor. 5.2, §6.2, Thms 6.1, 6.6)",
+   "final": "LIT-725",
+   "record": "literature/records/xu-2012.md",
+   "coverage": "WebFetch digest of arXiv 1102.0055"
+  },
+  {
+   "provisional": "none used (source label: Harris, Proc. AMS 138 (2010) 4447–4453)",
+   "final": "LIT-726",
+   "record": "literature/records/harris-2010.md",
+   "coverage": "all pages via WebFetch digests"
+  },
+  {
+   "provisional": "none used (source label: Erb, Appl. Math. Comput. 289 (2016) 409–425, Thm 11)",
+   "final": "LIT-727",
+   "record": "literature/records/erb-2016.md",
+   "coverage": "WebFetch digest of arXiv 1503.00895, partly truncated"
+  },
+  {
+   "provisional": "none used (source label: Bos–Caliari–De Marchi–Vianello, ETNA 25 (2006) 1–16, §2)",
+   "final": "LIT-728",
+   "record": "literature/records/bcdmv-etna-2006.md",
+   "coverage": "§2 via WebFetch digest"
+  },
+  {
+   "provisional": "none used (source label: Caliari–De Marchi–Vianello, Appl. Math. Comput. 165 (2005) 261–274, §§3.3–3.5)",
+   "final": "LIT-729",
+   "record": "literature/records/cdmv-2005.md",
+   "coverage": "WebFetch digest of selected sections"
+  },
+  {
+   "provisional": "none used (source label: Della Vecchia–Mastroianni–Vértesi, Studia Sci. Math. Hungar. 46 (2009) 97–102)",
+   "final": "LIT-730",
+   "record": "literature/records/della-vecchia-mastroianni-vertesi-2009.md",
+   "coverage": "abstract only"
+  },
+  {
+   "provisional": "none used (source label: Smith, Ann. Math. Inform. 33 (2006) 109–123, §2.2)",
+   "final": "LIT-731",
+   "record": "literature/records/smith-2006.md",
+   "coverage": "WebFetch digest"
+  }
+ ],
+ "LIT_addenda_existing": [
+  "LIT-378 (upgrade from UNVERIFIED, locators pp. 32, 45, 53, 63, 64; corrections)",
+  "LIT-486",
+  "LIT-379",
+  "LIT-314",
+  "LIT-307/LIT-010/LIT-650",
+  "LIT-331",
+  "LIT-320",
+  "LIT-380",
+  "LIT-389/LIT-024",
+  "LIT-388"
+ ],
+ "unused_gaps": {
+  "PD-T": "PD-T710–719",
+  "PD-N": "PD-N254–257",
+  "IDEA": "IDEA-780–795",
+  "LIT": "LIT-732–745"
+ }
+}

@@ -2125,3 +2125,63 @@ Assignments: PD-T554–643(90), PD-N186–225(40), IDEA616–723(108), LIT636–
 | LIT?padua-effective-cubature-20261112-claude-02 | LIT-717 | [literature-effective.md](topics/padua-effective-cubature-20261112/literature-effective.md) | literature record |
 
 Assignments: PD-T674–679 (6), PD-N246 (1), IDEA-756–762 (7), LIT-716–717 (2). Permanent unused gaps: PD-T680–683, PD-N247–250, IDEA-763–765, LIT-718–720. No alias receives two final IDs.
+
+
+## Xu-points Lebesgue conjecture and Morrow–Patterson Lebesgue function — PR36
+
+[Topic ledger](topics/padua-xu-lebesgue-20261114/ALLOCATIONS.md): owner claude/padua-xu-lebesgue-20261114, PR36; reserved PD-T690–719, PD-N251–257, IDEA-766–795, LIT-721–745. [Exact final map](topics/padua-xu-lebesgue-20261114/pr-preparation/final-id-map.json). Canonical theory records keep their audited titles; their header lines now show the final ID with the provisional ID and the topic label (X1-NN, X2-NN, X2-NNN) as aliases. No audited statement or status text was rewritten.
+
+| Provisional ID / alias | Final ID | Canonical record | Mapping scope |
+|---|---|---|---|
+| PD-T?padua-xu-lebesgue-20261114-claude-01 | PD-T690 | [X1-01-tensor-lift.md](topics/padua-xu-lebesgue-20261114/theory/X1-01-tensor-lift.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-02 | PD-T691 | [X1-02-trig-lebesgue-function.md](topics/padua-xu-lebesgue-20261114/theory/X1-02-trig-lebesgue-function.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-03 | PD-T692 | [X1-03-vertex-value.md](topics/padua-xu-lebesgue-20261114/theory/X1-03-vertex-value.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-04 | PD-T693 | [X1-04-exact-lebesgue-constant.md](topics/padua-xu-lebesgue-20261114/theory/X1-04-exact-lebesgue-constant.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-05 | PD-T694 | [X1-05-argmax-set.md](topics/padua-xu-lebesgue-20261114/theory/X1-05-argmax-set.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-06 | PD-T695 | [X1-06-chebyshev-constant-expansion.md](topics/padua-xu-lebesgue-20261114/theory/X1-06-chebyshev-constant-expansion.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-07 | PD-T696 | [X1-07-expansion-and-conjecture-17.md](topics/padua-xu-lebesgue-20261114/theory/X1-07-expansion-and-conjecture-17.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-08 | PD-T697 | [X1-08-edge-deficit-measured.md](topics/padua-xu-lebesgue-20261114/theory/X1-08-edge-deficit-measured.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-21 | PD-T698 | [X2-21-corner-kernel.md](topics/padua-xu-lebesgue-20261114/theory/X2-21-corner-kernel.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-22 | PD-T699 | [X2-22-lower-vertices.md](topics/padua-xu-lebesgue-20261114/theory/X2-22-lower-vertices.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-23 | PD-T700 | [X2-23-upper-vertex-closed-form.md](topics/padua-xu-lebesgue-20261114/theory/X2-23-upper-vertex-closed-form.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-24 | PD-T701 | [X2-24-upper-exceeds-lower.md](topics/padua-xu-lebesgue-20261114/theory/X2-24-upper-exceeds-lower.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-25 | PD-T702 | [X2-25-upper-vertex-asymptotics.md](topics/padua-xu-lebesgue-20261114/theory/X2-25-upper-vertex-asymptotics.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-26 | PD-T703 | [X2-26-explicit-lower-bound.md](topics/padua-xu-lebesgue-20261114/theory/X2-26-explicit-lower-bound.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-27 | PD-T704 | [X2-27-vertex-remainder-measured.md](topics/padua-xu-lebesgue-20261114/theory/X2-27-vertex-remainder-measured.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-28 | PD-T705 | [X2-28-argmax-open.md](topics/padua-xu-lebesgue-20261114/theory/X2-28-argmax-open.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-31 | PD-T706 | [X2-31-first-variation-closed-form.md](topics/padua-xu-lebesgue-20261114/theory/X2-31-first-variation-closed-form.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-32 | PD-T707 | [X2-32-local-max-certified.md](topics/padua-xu-lebesgue-20261114/theory/X2-32-local-max-certified.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-33 | PD-T708 | [X2-33-far-field-bound.md](topics/padua-xu-lebesgue-20261114/theory/X2-33-far-field-bound.md) | canonical claim |
+| PD-T?padua-xu-lebesgue-20261114-claude-34 | PD-T709 | [X2-34-translation-formula.md](topics/padua-xu-lebesgue-20261114/theory/X2-34-translation-formula.md) | canonical claim |
+| PD-N?padua-xu-lebesgue-20261114-claude-29 | PD-N251 | [X2-N29-no-central-symmetry.md](topics/padua-xu-lebesgue-20261114/theory/X2-N29-no-central-symmetry.md) | canonical claim |
+| PD-N?padua-xu-lebesgue-20261114-claude-30 | PD-N252 | [X2-N30-vertex-value-not-dimension.md](topics/padua-xu-lebesgue-20261114/theory/X2-N30-vertex-value-not-dimension.md) | canonical claim |
+| PD-N?padua-xu-lebesgue-20261114-claude-35 | PD-N253 | [X2-N35-shift-rigidity-fails.md](topics/padua-xu-lebesgue-20261114/theory/X2-N35-shift-rigidity-fails.md) | canonical claim |
+| IDEA?padua-xu-lebesgue-20261114-claude-40 (X1-C1) | IDEA-766 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X1.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-41 (X1-C2) | IDEA-767 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X1.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-42 (X1-C3) | IDEA-768 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X1.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-43 (X1-M1) | IDEA-769 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X1.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-44 (X2.1) | IDEA-770 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X2.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-45 (X2-C1) | IDEA-771 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X2.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-46 (X2-C2) | IDEA-772 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X2.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-47 (X2-C3) | IDEA-773 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X2.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-48 (X2-C4) | IDEA-774 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X2.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-49 (X2-R3a) | IDEA-775 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X2.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-50 (X2-R3b) | IDEA-776 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X2.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-51 (X2-R3c) | IDEA-777 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X2.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-52 (X2-R3d) | IDEA-778 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X2.md) | retained candidate |
+| IDEA?padua-xu-lebesgue-20261114-claude-53 (X2-R3e) | IDEA-779 | [novelty gate X1/X2](topics/padua-xu-lebesgue-20261114/novelty-gate-X2.md) | retained candidate |
+| none used (source label: Beberok, JAT 311 (2025) 106191, Thm 0.1 (existential lower bound)) | LIT-721 | [beberok-2025.md](literature/records/beberok-2025.md) | literature record |
+| none used (source label: Beberok 2025 eq. (2) corner kernel and final display (as transcribed)) | LIT-722 | [beberok-2025.md](literature/records/beberok-2025.md) | literature record |
+| none used (source label: Bos–De Marchi–Vianello, JAT 141 (2006) 134–141, Thm 1) | LIT-723 | [bdmv-2006.md](literature/records/bdmv-2006.md) | literature record |
+| none used (source label: BdMV proof method and absent statements) | LIT-724 | [bdmv-2006.md](literature/records/bdmv-2006.md) | literature record |
+| none used (source label: Xu, JAT 164 (2012) 6–30: Cor. 5.2, §6.2, Thms 6.1, 6.6) | LIT-725 | [xu-2012.md](literature/records/xu-2012.md) | literature record |
+| none used (source label: Harris, Proc. AMS 138 (2010) 4447–4453) | LIT-726 | [harris-2010.md](literature/records/harris-2010.md) | literature record |
+| none used (source label: Erb, Appl. Math. Comput. 289 (2016) 409–425, Thm 11) | LIT-727 | [erb-2016.md](literature/records/erb-2016.md) | literature record |
+| none used (source label: Bos–Caliari–De Marchi–Vianello, ETNA 25 (2006) 1–16, §2) | LIT-728 | [bcdmv-etna-2006.md](literature/records/bcdmv-etna-2006.md) | literature record |
+| none used (source label: Caliari–De Marchi–Vianello, Appl. Math. Comput. 165 (2005) 261–274, §§3.3–3.5) | LIT-729 | [cdmv-2005.md](literature/records/cdmv-2005.md) | literature record |
+| none used (source label: Della Vecchia–Mastroianni–Vértesi, Studia Sci. Math. Hungar. 46 (2009) 97–102) | LIT-730 | [della-vecchia-mastroianni-vertesi-2009.md](literature/records/della-vecchia-mastroianni-vertesi-2009.md) | literature record |
+| none used (source label: Smith, Ann. Math. Inform. 33 (2006) 109–123, §2.2) | LIT-731 | [smith-2006.md](literature/records/smith-2006.md) | literature record |
+
+Split and support relations (no original registered claim was narrowed): PD-T706 (X2-31, exact formulas), PD-T707 (X2-32, P1 for even n ≤ 3000) and PD-T708 (X2-33, plan item P4) are split from plan items of PD-T705 (X2-28), which keeps the original target OPEN under its own ID. PD-T692, PD-T693 and PD-T694 are split from the round X1-2 targets T1, T3, T4 (no earlier registered ID). PD-N251 and PD-N252 are the PD-N records of candidate IDEA-772; PD-N253 is the PD-N record of IDEA-777.
+
+Assignments: PD-T690–709 (20), PD-N251–253 (3), IDEA-766–779 (14), LIT-721–731 (11). Permanent unused gaps: PD-T710–719, PD-N254–257, IDEA-780–795, LIT-732–745. No alias receives two final IDs. Existing LIT entries with addenda and no new ID: LIT-378, LIT-486, LIT-379, LIT-314, LIT-307/LIT-010/LIT-650, LIT-331, LIT-320, LIT-380, LIT-389/LIT-024, LIT-388 (see the 2026-11-14 section at the end of [literature/INDEX.md](literature/INDEX.md)).
