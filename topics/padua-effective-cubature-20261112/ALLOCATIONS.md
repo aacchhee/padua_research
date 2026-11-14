@@ -1,0 +1,49 @@
+# Allocation ledger — padua-effective-cubature-20261112
+
+Owner: `claude/padua-effective-cubature-20261112`, [PR34](https://github.com/aacchhee/padua_research/pull/34). This topic has no separate integration batch. Authority is the fresh-range procedure in agents/WORKFLOW.md (rules read at `40179a5bae9a0619e7615c877f7afc246452d5c8`). Earlier foreign ownership, reservations, retired ranges and permanent gaps remain unchanged, and no accepted ID is renumbered.
+
+## Reservation — 2026-11-14
+
+| Namespace | Reserved range | Count | Owner |
+|---|---|---:|---|
+| PD-T | PD-T674–683 | 10 | claude/padua-effective-cubature-20261112 |
+| PD-N | PD-N246–250 | 5 | claude/padua-effective-cubature-20261112 |
+| IDEA | IDEA-756–765 | 10 | claude/padua-effective-cubature-20261112 |
+| LIT | LIT-716–720 | 5 | claude/padua-effective-cubature-20261112 |
+
+The ranges include headroom over the provisional inventory: 6 PD-T, 1 PD-N, 7 IDEA and 2 LIT, verified by a grep of every provisional ID in the topic. Every unused ID remains a permanent gap. No range is shifted, reused or enlarged retrospectively.
+
+The reservation's priority is the pushed commit that first adds this ledger. Locate it with `git log --diff-filter=A --format=%H -- topics/padua-effective-cubature-20261112/ALLOCATIONS.md`; it is also linked from the PR body.
+
+## Fresh union check (at reservation)
+
+| Scope | Checked head |
+|---|---|
+| main | `b5388c25a2a5ccb8d0faf816ab87023cf347bcd3` |
+| PR34, this topic before reservation | `40179a5bae9a0619e7615c877f7afc246452d5c8` |
+| PR27 (open draft), `codex/padua-argmax-bridge-20261105` | `f4e8d8d313b1fec0cd4976de98524552fbdc94dd` |
+| PR35 (open draft), `claude/padua-mz-paper-20261113` | `a0206a801e1d032175405db6ac7505e0691559fc` |
+
+**PR population.** I read the GitHub all-PR collection (state all, 34 records) on 2026-11-14:
+- open: PR27, PR34 and PR35;
+- every closed PR is merged, so no closed-unmerged reservation needs reconstruction.
+
+**Sources read at each head.**
+- Every `topics/*/ALLOCATIONS.md` ledger: 16 on main and PR35, 17 on PR27, the extra one being PR27's own ledger.
+- All four canonical registries: `PROOF_STATUS.md`, `state/IDEAS.md`, `literature/INDEX.md` and `ID_CROSSWALK.md`.
+- PR35 adds no ledger and changes none of the four registries relative to main.
+
+**Results.**
+- **Reserved maxima.** The highest reservation is PR33's, recorded on main in `topics/padua-3d-20261106/ALLOCATIONS.md` as PD-T554–673, PD-N186–245, IDEA-616–755 and LIT-636–715. Its readiness refresh states the union T673/N245/IDEA755/LIT715.
+- **PR27.** Its ledger (T392–431/N146–161/IDEA490–529/LIT598–613) lies below that.
+- **Highest assigned registry IDs.** PROOF_STATUS T643/N225; IDEAS IDEA-723; crosswalk T644/N226/IDEA723/LIT673; INDEX below 716 apart from the foreign references noted below.
+- **New ranges.** They start strictly above the union maxima T673/N245/IDEA755/LIT715.
+
+**Foreign or non-ID strings excluded, with context checked:**
+- `PD-T999` is a test-fixture string in `topics/bivariate-lanczos-20261031/audit-05/check_integration_independent.py`.
+- `PD-N303/N304` occurs only in the prose of `topics/padua-literature-20261103/audit-support/p3.md` L15 and has no registry row.
+- Four-digit `LIT-1658…1750` are bttb-research record aliases, as earlier ledgers record.
+
+None of these overlaps the new ranges.
+
+No collision and no unknown retired reservation was found. The check is repeated at readiness, and again if main or another open PR's ledger changes before AC merges. Only AC merges.
