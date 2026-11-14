@@ -148,11 +148,12 @@ class FloatModel:
     def lam_angles(self, th, ph):
         return self.lam(np.cos(th), np.cos(ph))
 
-    def grid_rows(self, th_vals, ph_vals):
-        """lambda on the product grid: rows th_vals (len R), cols ph_vals (len S) -> (R,S)."""
+    def grid_rows(self, th_vals, ph_vals, xscale=1.0, yscale=1.0):
+        """lambda_MP on the product grid x=xscale*cos(th), y=yscale*cos(ph): rows th_vals, cols ph_vals -> (R,S).
+        (xscale, yscale) = (cos(pi/(n+2)), cos(pi/(n+3))) gives the EMP Lebesgue function on Q."""
         n = self.n
-        A = U_float(np.cos(th_vals), n).T            # (R, n+1)  index i
-        B = U_float(np.cos(ph_vals), n)              # (n+1, S)  index j
+        A = U_float(xscale * np.cos(th_vals), n).T   # (R, n+1)  index i
+        B = U_float(yscale * np.cos(ph_vals), n)     # (n+1, S)  index j
         out = np.empty((len(th_vals), len(ph_vals)))
         Cperm = self.Cc.transpose(1, 0, 2).reshape(n + 1, self.N * (n + 1))   # (i, a*j)
         for r in range(len(th_vals)):
