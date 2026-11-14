@@ -8,7 +8,9 @@
         L_bot(xi,ze) = (1/pi) int_R |K_bot| dtau,
         K_bot = 2 sin(tau) cos^2(tau) [sin(a)(sinc(tau+b)-sinc(tau-b)) - sin(b)(sinc(tau+a)-sinc(tau-a))]/(a^2-b^2),
       a = (xi+ze)/2, b = (xi-ze)/2  (heuristic derivation in theory/X2-28; NOT proved);
-  (c) scans L_top and L_bot on a grid (quadrature: midpoint rule, step h, truncated at T; truncation error ~ O(1/T)).
+  (c) scans L_top and L_bot on a grid (quadrature: midpoint rule, step h, truncated at T; truncation error ~ O(1/T));
+  (d) first variation at the vertex (1,1): D_x = sum_a sgn(l_a(1,1)) d/dx l_a(1,1), D_y likewise (float64 kernel sums,
+      U_i(1) = i+1, U_i'(1) = i(i+1)(i+2)/3); near (1,1) lambda_n coincides with the polynomial sum_a sgn(l_a(1,1)) l_a.
 Usage: python3 x2_corner_scaling_limits.py [--out /tmp/x2r2/x2_scaling.json]
 """
 import sys, json, os, time
@@ -49,6 +51,30 @@ def Lbot(xi, ze, T=600.0, h=0.004):
     a = (xi + ze) / 2; b = (xi - ze) / 2
     G = np.sin(a) * (sinc(tau + b) - sinc(tau - b)) - np.sin(b) * (sinc(tau + a) - sinc(tau - a))
     return float(1 / np.pi * np.sum(np.abs(2 * np.sin(tau) * np.cos(tau) ** 2 * G / (a * a - b * b))) * h)
+
+
+def U_all(x, n):
+    u = np.empty((n + 1,) + x.shape); u[0] = 1.0
+    if n >= 1: u[1] = 2 * x
+    for i in range(2, n + 1): u[i] = 2 * x * u[i - 1] - u[i - 2]
+    return u
+
+
+def first_variation(n):
+    M = n + 2; N = M * (M + 1)
+    p = np.arange(1, M)[:, None] * np.ones((1, M), dtype=int); q = np.arange(1, M + 1)[None, :] * np.ones((M - 1, 1), dtype=int)
+    mask = ((p + q) % 2 == 1); p = p[mask]; q = q[mask]
+    w = np.pi * p / M; v = np.pi * q / (M + 1)
+    om = 8 * np.sin(w) ** 2 * np.sin(v) ** 2 / N
+    Ux = U_all(np.cos(w), n); Uy = U_all(np.cos(v), n)
+    i = np.arange(n + 1); u1 = i + 1.0; du1 = i * (i + 1.0) * (i + 2.0) / 3.0
+    K = np.zeros_like(w); Kx = np.zeros_like(w); Ky = np.zeros_like(w)
+    for a in range(n + 1):
+        cu = (u1[:n + 1 - a, None] * Uy[:n + 1 - a]).sum(axis=0)
+        cd = (du1[:n + 1 - a, None] * Uy[:n + 1 - a]).sum(axis=0)
+        K += u1[a] * Ux[a] * cu; Kx += du1[a] * Ux[a] * cu; Ky += u1[a] * Ux[a] * cd
+    sg = np.sign(om * K)
+    return float(np.abs(om * K).sum()), float((sg * om * Kx).sum()), float((sg * om * Ky).sum())
 
 
 def main():
@@ -104,6 +130,12 @@ def main():
     bot = np.array([[Lbot(x, z, T=200.0, h=0.01) for z in g] for x in g])
     i, j = np.unravel_index(np.argmax(bot), bot.shape)
     res["Lbot_grid_max"] = {"xi": float(g[i]), "ze": float(g[j]), "value": float(bot[i, j])}
+    fv = []
+    for n in (2, 4, 6, 8, 10, 20, 30, 40, 60, 80):
+        lam, dx, dy = first_variation(n)
+        fv.append({"n": n, "lam11": lam, "Dx": dx, "Dy": dy, "Dx/M^4": dx / (n + 2) ** 4, "Dy/M^4": dy / (n + 2) ** 4})
+    res["first_variation"] = fv
+    res["first_variation_all_positive"] = bool(all(r["Dx"] > 0 and r["Dy"] > 0 for r in fv))
     res["wall_seconds"] = round(time.time() - t0, 1)
     print(json.dumps({k: v for k, v in res.items() if k != "comparison"}, indent=1))
     os.makedirs(os.path.dirname(out), exist_ok=True)

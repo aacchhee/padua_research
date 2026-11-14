@@ -47,3 +47,21 @@ Source: Beberok–Białas-Cież–De Marchi, Constr. Approx. 63 (2026) 31–65 (
 - **BdMV, JAT 141 (2006) 134–141, Theorem 1** (journal PDF): Λ^Xu_n ≤ 8((2/π) log n + 5)² + 4. This confirms the reader's reconstruction (X1-sources F5). The introduction places the Xu space in the even-n setting, with N = n(n+2)/2.
 - **Della Vecchia–Mastroianni–Vértesi, Studia Sci. Math. Hungar. 46 (2009) 97–102** ([doi](https://doi.org/10.1556/SSCMath.2008.1078)). Only the abstract is accessible (NTNU has no subscription): exact order (log n)² for "two sets of nodes", which are not named there. Order only, with no constant. Not used.
 - **Szili–Vértesi, JAT 159 (2009) 154–164** and **Morrow–Patterson 1978**: not obtained (download not completed; SIAM backfile not licensed). Not used.
+
+## 5. Novelty re-gate for the X1 round-2 claims (2026-11-14)
+
+Opus 5.5 checker; full record in [lit-notes/X1-novelty-exact-constant.md](lit-notes/X1-novelty-exact-constant.md).
+- **Known method, inequality only.**
+  - BdMV 2006 (proof of Thm 1, pp. 137–140) uses the rotation (θ₁ ± θ₂)/2 and enlarges the sum to a product of two 1D sums. Its leading coefficient is 32/π², nothing is said about vertices, and nothing is sharp.
+  - Li–Sun–Xu, NMTMA 2 (2009), §3.3 derives Xu interpolation from rhombus-lattice trigonometric interpolation plus symmetrization. The X1-01 lift refines this. The paper has no Lebesgue statement.
+  - Xu, JAT 164 (2012), Cor. 5.2: ‖L‖ ≤ (1D constant)² for a *different* (symmetric-polynomial) interpolation. Its §6.2 states that the Xu-type case "cannot be deduced" from the 1D constant, and Thm 6.6 gives only O(log² n).
+- **Classical 1D facts.** The cotangent formula for L_n, the maximum at ±1, and the expansion (2/π)(log n + γ + log(8/π)) + O(n⁻²): Ehlich–Zeller 1966, Günttner 1980, Shivakumar–Wong 1982, and Smith, Ann. Math. Inform. 33 (2006) §2.2. X1-02 and X1-06 re-prove them, and X1-06's two-sided n⁻⁴ enclosure is a refinement. Neither is claimed as new.
+- **Not found in the documented search**, so plausibly new:
+  - the exact identity Λ^Xu_n = L_n² for both parities;
+  - the exact fiber-sum lift with the pointwise bound λ_n ≤ ω_n(u)ω_n(v);
+  - the maximizer set V* for every n ≥ 2;
+  - hence BCDMV Conj. (17) in sharpened form.
+- **Coverage limits.**
+  - Xu, *Minimal Cubature Rules* (CUP 2025, [doi](https://doi.org/10.1017/9781009663939)): NTNU has no Cambridge Core access. All eleven chapter summaries were read on 2026-11-14 by the orchestrator; none mentions interpolation or Lebesgue constants. The chapter bodies are unread.
+  - Della Vecchia–Mastroianni–Vértesi 2009 (abstract only: order (log n)²) and Szili–Vértesi 2009 are unread.
+  - The arXiv reads were WebFetch digests.

@@ -172,7 +172,7 @@ By the bijection of Step A, Σ_{𝒩₊} ĥ(τ̃) = Σ_{r∈R₊} ĥ(ηr) =: �
 Σ_miss ≤ 1.1119/(M+1) + 0.4053 (0.307 + log M)/(M+1) + 0.386/M³. (D1)
 
 Write r = 2jM + ρ, 0 ≤ ρ ≤ 2M − 1; then ηr = j(π − 2ς) + ηρ because 2Mη = π − 2ς; also ηM = π/2 − ς and 2ς < η = ς(2M+1)/M, η − ς = π/(4M).
-- Points in (0, π/2) = (a_0, b_0): r = 1, …, M (j = 0); only r = M is not in R₊, and ĥ(ηM) = ĥ(π/2 − ς) ≤ 4 sin ς/(π/2 − ς)³ ≤ 1.4157 ς = 1.1119/(M+1) (Lemma C(ii), ς ≤ π/20).
+- Points in (0, π/2) = (a_0, b_0): r = 1, …, M (j = 0); only r = M is not in R₊, and ĥ(ηM) = ĥ(π/2 − ς) ≤ 4 sin ς/(π/2 − ς)³ ≤ 1.41571 ς < 1.1119/(M+1) (Lemma C(ii), ς ≤ π/20, 4/(π/2 − π/20)³ < 1.41571).
 - Points in (a_i, b_i), 1 ≤ i ≤ M/2 − 1. They have j = i (block j − 1 = i − 1 ends below iπ; block i + 1 starts at (i+1)π − 2(i+1)ς ≥ b_i). Those not in R₊ have ρ ≤ 2i or ρ ≥ M. If ρ ≤ 2i: ηr ≤ iπ + 2i(η − ς) = iπ + iπ/(2M) < iπ + π/4 < b_i − 1/(iπ) < a_i, so ĥ(ηr) = 0. If ρ = M + k ≥ M: ηr < b_i forces kη < (2i+1)ς, so 0 ≤ k ≤ i, and b_i − ηr = (2i+1)ς − kη ≤ (2i + 1 − 2k)ς; by Lemma C(ii) the contribution is ≤ (4/(iπ)³) Σ_{k=0}^{i} (2i+1−2k)ς = 4(i+1)²ς/(iπ)³ ≤ 16ς/(π³ i). Summing over i: ≤ (16ς/π³)(1 + log(M/2)) ≤ (4/(π²(M+1)))(0.307 + log M).
 - Points in (a_i, b_i), i ≥ M/2 (all of them, in R₊ or not): at most (b_i − a_i)/η + 1 < (2M+1)/(iπ²) + 1 points, each with ĥ ≤ 4/(iπ)⁴; with Σ_{i≥m} i⁻⁵ ≤ ¾m⁻⁴ and Σ_{i≥m} i⁻⁴ ≤ (5/6)m⁻³ for m = M/2 ≥ 2 the total is ≤ (0.1124 + 0.2738)/M³.
 This proves (D1). Dividing (R1) by η:
