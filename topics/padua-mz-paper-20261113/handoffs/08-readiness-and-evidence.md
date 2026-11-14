@@ -69,3 +69,15 @@ AC set the pack licence ("agpl 3.0 is the license").
 - The new hashes are in zenodo/README.md: `d089bc6f…` and `311621b3…`.
 - Code, data and receipts are unchanged.
 - **Use the current branch head as the input head** (`303c5f21` or later). In task B.3, also confirm that LICENSE and the README files are the only differences from the verified staging.
+
+## Addendum 2 (2026-11-14 09:50, Claude, before this handoff started)
+
+AC: "-or later, and licence everything under that".
+- **Repository:** root `LICENSE`, the GNU AGPL v3 text, plus a README Licence section, `AGPL-3.0-or-later`. The SIAM macros and quoted source excerpts are excepted.
+- **Manuscripts:** both availability statements add one licence sentence. Builds: 32/50 pp., frozen labels unchanged.
+- **Packs:** the README lines read `AGPL-3.0-or-later`, and the MZ-CC pack omits SIAM's two files (their licence forbids distributing them alone). Repacked and redelivered: `6aa35fc7…` and `f04f65b5…`, see zenodo/README.md.
+- **Additional checks for task A/B:**
+  - the licence notice and its exceptions;
+  - the two manuscript sentences;
+  - that the pack differences from the verified staging are limited to the files listed in zenodo/README.md.
+- **SIAM files in the repository:** these 2 of the 8-file SIAM package are flagged for AC, not changed. Do not resolve this yourself.
