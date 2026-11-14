@@ -21,9 +21,9 @@ Let n ≥ 1 and v ∈ V* (all four vertices for n even; (1,−1), (−1,1) for n
 
 **(c) A clean explicit bound.** Λ^Xu_n ≤ ((2/π) log n + 1)² for every n ≥ 1, with equality only for n = 1.
 
-**(d) Conjecture (17) of BCDMV 2006 (n even).** Both parts hold for every even n ≥ 2, in the following precise sense: Λ^Xu_n / ((2/π) log(n+1))² → 1 as n → ∞, and max_Q λ_n is attained exactly at the four vertices. The literal inequality Λ^Xu_n ≤ ((2/π) log(n+1))² is false for every n ≥ 1; the difference is b log n + O(1) → +∞. The same statements hold for odd n ≥ 3 with the two non-node vertices in place of the four vertices (variant, outside the published conjecture).
+**(d) Conjecture (17) of BCDMV 2006 (n even), with "≲" read as an asymptotic upper bound.** The two parts hold in the following precise senses: (d1, asymptotic) Λ^Xu_n / ((2/π) log(n+1))² → 1 as n → ∞ through the even integers; (d2, every n) for every even n ≥ 2, max_Q λ_n is attained exactly at the four vertices. The literal inequality Λ^Xu_n ≤ ((2/π) log(n+1))² is false for every n ≥ 1; the difference is b log n + O(1) → +∞. The same statements hold for odd n ≥ 3 with the two non-node vertices in place of the four vertices (variant, outside the published conjecture).
 
-**(e) Relation to the Padua corner value.** With Λ_c(n) the Padua corner value and κ the constant of PD-T269: Λ_c(n) − Λ^Xu_n → κ as n → ∞ (all integers n), and for n ≥ 32, |Λ_c(n) − Λ^Xu_n − κ| ≤ 604 n^{−1/5} + ((log n + 2)² + 1)/(n+1).
+**(e) Relation to the Padua corner value.** With Λ_c(n) the Padua corner value and κ the constant of PD-T269: Λ_c(n) − Λ^Xu_n → κ as n → ∞ (all integers n ≥ 2, where Λ_c(n) is defined), and for n ≥ 32, |Λ_c(n) − Λ^Xu_n − κ| ≤ 604 n^{−1/5} + ((log n + 2)² + 1)/(n+1).
 
 Decimal values (certified enclosures, `code/xu/research/x1_constants.py`):
  c₁ = 0.962522826760713007798132068363…, b = 1.225522125742012093966888999272…, c = 0.926450192035433544660320512157….
@@ -92,3 +92,5 @@ All factors are positive, so R_n > 0, and R_n < 2A_nε_n + ε_n² = πA_n/(36n²
 ## History
 
 2026-11-14, Claude Fable 5.2 (xhigh), round X1-2 researcher. The assigned form "λ^Xu_n(v) = (4/π²)log²N + b log N + c + R_n, choose N" is met with N = n: because λ_n(v) is an exact square of a one-dimensional sum with an even expansion in 1/n, no 1/n term occurs and the remainder is O(log n / n²) with an explicit sign.
+
+2026-11-14 (orchestrator, MINOR wording fixes after independent check F2/F4, `independent-checks-X1.md`): (d) split into its asymptotic part (d1) and its every-n part (d2), with the reading of "≲" made explicit; (e) restricted to n ≥ 2, where Λ_c is defined. No change of mathematical content.

@@ -43,7 +43,7 @@ X1-01 (lift formula, Γ-invariant fibers), X1-02 (b) incl. (χ), and (c) (equali
 ## Checks
 
 `python3 code/xu/research/x1_argmax_check.py --nmax 12 --fmax 24` (run 2026-11-14, 24 s):
-- mpmath 30 digits, general Path B kernel, every point (aπ/n, bπ/n) with a + b ≡ n (mod 2), n = 2..12: λ_n = L_n² at V* (deviation ≤ 3.9e−30) and λ_n < L_n² elsewhere; largest non-vertex ratio λ_n/L_n² per n: 0.5, 0.76, 0.7929, 0.7978, 0.7944, 0.8242, 0.8385, 0.8464, 0.8511, 0.8614, 0.8678 (n = 2..12), at the centre of Q for n = 2 and at an edge point for n ≥ 3; `witness_failures: 0` (the two explicit lifts of the proof lie over one node and have d-products of opposite signs, for every non-vertex complementary point).
+- mpmath 30 digits, general Path B kernel, every point (aπ/n, bπ/n) with a + b ≡ n (mod 2), n = 2..12: λ_n = L_n² at V* (deviation ≤ 3.9e−30) and λ_n < L_n² elsewhere; largest non-vertex ratio λ_n/L_n² **over these complementary grid points only** (off-grid local maxima can be larger, e.g. 0.7757 at n = 3, 0.8002 at n = 5, 0.7997 at n = 6; independent check F1) per n: 0.5, 0.76, 0.7929, 0.7978, 0.7944, 0.8242, 0.8385, 0.8464, 0.8511, 0.8614, 0.8678 (n = 2..12), at the centre of Q for n = 2 and at an edge point for n ≥ 3; `witness_failures: 0` (the two explicit lifts of the proof lie over one node and have d-products of opposite signs, for every non-vertex complementary point).
 - float64 grids with 6n+1 points per axis, n = 2..24: the set of grid points within 1e−9 of the grid maximum is exactly V*.
 - `evidence/xu-g1-summary.json` (orchestrator's G1 screen, n = 2..60): vertex conjecture supported, relative gaps g_n between 0.5 and 0.0697.
 
@@ -89,3 +89,5 @@ In both cases F(ξ₀) contains two (necessarily distinct) elements whose terms 
 ## History
 
 2026-11-14, Claude Fable 5.2 (xhigh), round X1-2 researcher. The assigned target T4 was a plan for an argmax localization modelled on PR #27 (analytic corner expansion, localization away from the corners, finite certificates). That architecture is not needed for Xu points: the product bound of X1-04 confines maximizers to the complementary checkerboard, and a two-term sign cancellation excludes every non-vertex point of it. No lemma of the unmerged PR #27 is used.
+
+2026-11-14 (orchestrator, MINOR wording fix after independent check F1): the ratios in Checks are stated as maxima over the complementary grid points only. The proof is unaffected.
