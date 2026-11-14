@@ -1,6 +1,6 @@
 # Handoff 06 — respond to the MZ manuscript audit and prepare the PR
 
-- Status: open
+- Status: done in 06e544dc9361de3a8c7e7495b43cb6603880b63e
 - Previous handoff: [05-audit.md](05-audit.md), done in the output commit below.
 - Next agent / model / effort: **Claude, Opus 5.5 xhigh**, orchestrator and manuscript developer. Sonnet 5.5 high may perform bounded LaTeX/record mechanics; Sonnet 5.5 medium for small mechanical edits. Use the repository's available-model policy and record actual metadata.
 - Branch: `claude/padua-mz-paper-20261113` · Draft PR #35.

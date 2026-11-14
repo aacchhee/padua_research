@@ -157,8 +157,10 @@
   - RESULTS.md: a section for this topic.
   - Literature: LIT-045 (published equations (7)–(8) checked) and LIT-056 (journal DOI, metadata only) addenda in the records and INDEX. No new LIT, IDEA or PD-N ID.
 - **Topic files.** The current files now carry the final IDs: the theory records' ID lines and history, the TeX comments (no printed change), README scope tables and statuses, the report update block, correspondence notes, results, and the M7 record. Historical handoffs, checks, referee reports and plans keep the provisional IDs.
+- Handoff 06 done in `06e544d`; [handoff 07](handoffs/07-readiness.md) opens the Codex readiness check (gpt-6-astra medium).
 
 ## Runs needed
 
-- PR preparation (final IDs, registries) and the Codex readiness check; see the open handoff.
+- Codex readiness check ([handoff 07](handoffs/07-readiness.md)).
+- PD-T376 package: AC retrieves it and the committed checkers are replayed, or AC decides the scope of Prop 8.2.
 - A byte-pinned PD-T376 witness replay requires retrieval of the exact missing package named in report §6.2. No receipt alone supplies it; no archival delivery is claimed.

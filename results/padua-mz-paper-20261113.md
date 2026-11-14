@@ -116,4 +116,4 @@ Manuscript state at head `a0206a8` (later wording cleanup at `a03a4f7`); indepen
 
 ## Next step
 
-`Claude (Opus 5.5 xhigh): Continue claude/padua-mz-paper-20261113.`
+Readiness check by Codex ([handoff 07](../topics/padua-mz-paper-20261113/handoffs/07-readiness.md)): `Codex (gpt-6-astra medium): Continue claude/padua-mz-paper-20261113.`
