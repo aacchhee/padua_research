@@ -11,12 +11,12 @@
   tools/        compare_receipts.py;
   verify.sh, requirements.txt, README.md (template with the commit filled in).
 `finalize` writes MANIFEST-SHA256.txt (all files except itself) and a
-deterministic <pack-name>.tar.gz (sorted members, fixed mtime/owner, gzip -n)
-next to the directory, then prints its size and SHA-256.
+deterministic zip (sorted members, fixed timestamps and modes) next to the
+directory, then prints its size and SHA-256.
 
 Run from the repository root. Only the orchestrator runs it; it changes no Git state.
 """
-import argparse, gzip, hashlib, io, os, shutil, subprocess, sys, tarfile
+import argparse, hashlib, io, shutil, subprocess, sys, tarfile, zipfile
 from pathlib import Path
 
 TOPIC = Path('topics/padua-mz-paper-20261113')
@@ -104,23 +104,20 @@ def finalize(a):
     files = sorted(p for p in root.rglob('*') if p.is_file() and p.name != 'MANIFEST-SHA256.txt')
     lines = [f'{sha(p)}  {p.relative_to(root).as_posix()}' for p in files]
     (root / 'MANIFEST-SHA256.txt').write_text('\n'.join(lines) + '\n')
-    out = root.parent / f'{root.name}.tar.gz'
-    members = sorted([root] + [p for p in root.rglob('*')], key=lambda p: p.relative_to(root.parent).as_posix())
-    raw = io.BytesIO()
-    with tarfile.open(fileobj=raw, mode='w', format=tarfile.PAX_FORMAT) as t:
-        for p in members:
-            ti = t.gettarinfo(str(p), arcname=p.relative_to(root.parent).as_posix())
-            ti.mtime = 1794614400  # 2026-11-14T00:00:00Z, fixed
-            ti.uid = ti.gid = 0
-            ti.uname = ti.gname = ''
-            ti.mode = 0o755 if (p.is_dir() or p.suffix == '.sh') else 0o644
-            if p.is_file():
-                with open(p, 'rb') as f:
-                    t.addfile(ti, f)
+    out = root.parent / f'{a.name or root.name}.zip'
+    members = sorted([p for p in root.rglob('*')], key=lambda p: p.relative_to(root.parent).as_posix())
+    with zipfile.ZipFile(out, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as z:
+        for p in [root] + members:
+            name = p.relative_to(root.parent).as_posix() + ('/' if p.is_dir() else '')
+            zi = zipfile.ZipInfo(name, date_time=(2026, 11, 14, 0, 0, 0))
+            mode = 0o755 if (p.is_dir() or p.suffix == '.sh') else 0o644
+            zi.external_attr = ((0o040000 if p.is_dir() else 0o100000) | mode) << 16
+            zi.create_system = 3
+            if p.is_dir():
+                z.writestr(zi, b'')
             else:
-                t.addfile(ti)
-    with open(out, 'wb') as f, gzip.GzipFile(fileobj=f, mode='wb', mtime=0, filename='') as g:
-        g.write(raw.getvalue())
+                zi.compress_type = zipfile.ZIP_DEFLATED
+                z.writestr(zi, p.read_bytes(), compress_type=zipfile.ZIP_DEFLATED, compresslevel=9)
     print(out, out.stat().st_size, sha(out), f'{len(files) + 1} files')
 
 
@@ -129,7 +126,7 @@ def main():
     sp = ap.add_subparsers(dest='cmd', required=True)
     s = sp.add_parser('stage'); s.add_argument('--pack', choices=list(NAME), required=True)
     s.add_argument('--rev', default='HEAD'); s.add_argument('--data', required=True); s.add_argument('--out', required=True)
-    f = sp.add_parser('finalize'); f.add_argument('--dir', required=True)
+    f = sp.add_parser('finalize'); f.add_argument('--dir', required=True); f.add_argument('--name', help='zip file stem (default: directory name)')
     a = ap.parse_args()
     stage(a) if a.cmd == 'stage' else finalize(a)
 

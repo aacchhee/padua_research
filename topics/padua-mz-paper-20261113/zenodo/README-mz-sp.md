@@ -27,6 +27,7 @@ This archive holds the programs, their outputs and the large witness files of Pr
 | `data/protocol-history/*-c1e6e59d.md` | The versions of the rectangle protocol and of its finite reduction that the receipts of Props. 6.8 and 6.9 hash. Commit `c1e6e59d` is in the merged pull request #31; the repository copies were later extended. |
 | `verify.sh` | Re-runs the checks below and compares the results with the committed receipts |
 | `tools/compare_receipts.py` | The comparison. It ignores run-specific fields (timings, paths, versions, gzip container hashes); exact values, signs, enclosures and code/payload hashes must agree. |
+| `VERIFICATION-2026-11-14.log` | Console log of `verify.sh` run on a copy of this pack before packing |
 | `requirements.txt`, `MANIFEST-SHA256.txt` | Pinned Python stack; SHA-256 of every file |
 
 ## Map from the paper to the files (paths under `repository/`)

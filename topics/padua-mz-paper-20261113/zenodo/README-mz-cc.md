@@ -16,6 +16,7 @@ The paper's results are proved analytically. The exceptions are the one-sided bo
 | `data/protocol-history/attempts-P4-d03e74dc.md` | The preregistered protocol of the certificate, as hashed in the producer receipt. Commit `d03e74dc` is in the merged pull request #31; the repository copy was later extended with results. |
 | `verify.sh` | Re-runs everything below and compares the results with the committed receipts. |
 | `tools/compare_receipts.py` | The comparison. It ignores run-specific fields (timings, paths, versions); exact numerators, denominators, enclosures and code hashes must agree. |
+| `VERIFICATION-2026-11-14.log` | Console log of `verify.sh` run on a copy of this pack before packing |
 | `requirements.txt` | The pinned Python stack. |
 | `MANIFEST-SHA256.txt` | SHA-256 of every file in the archive. |
 
